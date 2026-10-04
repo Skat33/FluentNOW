@@ -12,7 +12,10 @@
 | driving | 77 | 6 | 4 | 19 | 31 | 19 | 4 | 0 | 0 błędów, 0 ostrzeżeń |
 | directions | 65 | 5 | 14 | 30 | 15 | 4 | 2 | 0 | 0 błędów, 0 ostrzeżeń |
 | sightseeing | 63 | 5 | 5 | 14 | 25 | 17 | 2 | 0 | 0 błędów, 0 ostrzeżeń |
+| beach-vacation | 63 | 5 | 5 | 19 | 22 | 14 | 3 | 0 | 0 błędów, 0 ostrzeżeń |
+| camping-hiking | 62 | 5 | 1 | 18 | 26 | 12 | 5 | 0 | 0 błędów, 0 ostrzeżeń |
+| border-immigration | 63 | 5 | 1 | 7 | 23 | 21 | 11 | 0 | 0 błędów, 0 ostrzeżeń |
 
 ## W toku / nierozpoczęte
 
-beach-vacation, camping-hiking, border-immigration, car-rental
+car-rental

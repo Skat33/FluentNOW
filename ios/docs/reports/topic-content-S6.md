@@ -12,3 +12,4 @@
 | cybersecurity | 62 | 5 | 1 | 10 | 23 | 18 | 10 | 0 |
 | banking | 67 | 5 | 2 | 15 | 27 | 18 | 5 | 0 |
 | shopping-clothes | 62 | 5 | 8 | 17 | 23 | 12 | 2 | 0 |
+| online-shopping | 62 | 5 | 3 | 13 | 27 | 13 | 5 | 1 |

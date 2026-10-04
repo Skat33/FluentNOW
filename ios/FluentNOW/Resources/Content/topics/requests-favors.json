@@ -1,0 +1,2638 @@
+{
+  "schemaVersion": 1,
+  "id": "requests-favors",
+  "namePl": "Prośby i przysługi",
+  "nameEn": "Requests and Favors",
+  "group": "communication",
+  "symbol": "hand.raised",
+  "summaryPl": "Uprzejme prośby i pytania o przysługę, proponowanie pomocy, zgadzanie się, dziękowanie i grzeczna odmowa.",
+  "aliases": [
+    "prośby",
+    "przysługi",
+    "prośba",
+    "przysługa",
+    "proszenie o pomoc",
+    "odmowa",
+    "propozycje",
+    "requests",
+    "favors",
+    "asking for help"
+  ],
+  "categories": [
+    {
+      "id": "requests-favors.asking",
+      "namePl": "Uprzejme prośby",
+      "scenePl": "Proszenie przyjaciółki o pomoc w ostatniej chwili przed wyjazdem na lotnisko",
+      "entries": [
+        {
+          "id": "requests-favors.can-you",
+          "term": "can you",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "czy możesz",
+          "definition": "A simple, informal way to ask someone to do something.",
+          "register": "neutralny",
+          "contextPl": "Codzienne prośby wśród znajomych",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you feed my cat while I'm away?",
+              "pl": "Czy możesz karmić mojego kota, kiedy mnie nie będzie?",
+              "focusEn": "Can you",
+              "focusPl": "Czy możesz"
+            },
+            {
+              "en": "Can you help me close this suitcase? It's too full.",
+              "pl": "Możesz mi pomóc zamknąć tę walizkę? Jest za pełna.",
+              "focusEn": "Can you",
+              "focusPl": "Możesz"
+            }
+          ],
+          "acceptedAnswers": [
+            "can you",
+            "could you"
+          ],
+          "acceptedTranslations": [
+            "czy możesz",
+            "możesz",
+            "dasz radę"
+          ]
+        },
+        {
+          "id": "requests-favors.could-you",
+          "term": "could you",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "czy mógłbyś",
+          "definition": "A more polite way to ask someone to do something.",
+          "register": "neutralny",
+          "contextPl": "Grzeczniejsza forma prośby",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you water my plants on Saturday?",
+              "pl": "Czy mogłabyś podlać moje kwiaty w sobotę?",
+              "focusEn": "Could you",
+              "focusPl": "Czy mogłabyś"
+            },
+            {
+              "en": "Could you drive me to the airport at six?",
+              "pl": "Czy mógłbyś zawieźć mnie na lotnisko na szóstą?",
+              "focusEn": "Could you",
+              "focusPl": "Czy mógłbyś"
+            }
+          ],
+          "acceptedAnswers": [
+            "could you",
+            "can you",
+            "would you"
+          ],
+          "acceptedTranslations": [
+            "czy mógłbyś",
+            "czy mogłabyś",
+            "czy mógłby pan"
+          ]
+        },
+        {
+          "id": "requests-favors.would-you-mind",
+          "term": "would you mind",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "czy miałbyś coś przeciwko",
+          "definition": "A very polite way to ask someone to do something.",
+          "register": "neutralny",
+          "contextPl": "Bardzo grzeczna prośba",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po „would you mind” używamy formy -ing: „Would you mind waiting?”. Odpowiedź „No, not at all” oznacza zgodę.",
+          "examples": [
+            {
+              "en": "Would you mind checking my mail while I'm gone?",
+              "pl": "Czy miałabyś coś przeciwko, żeby sprawdzać moją pocztę pod moją nieobecność?",
+              "focusEn": "Would you mind",
+              "focusPl": "Czy miałabyś coś przeciwko"
+            },
+            {
+              "en": "Would you mind keeping my spare key for a week?",
+              "pl": "Czy mógłbyś przechować mój zapasowy klucz przez tydzień?",
+              "focusEn": "Would you mind",
+              "focusPl": "Czy mógłbyś"
+            }
+          ],
+          "acceptedAnswers": [
+            "would you mind",
+            "do you mind"
+          ],
+          "acceptedTranslations": [
+            "czy miałbyś coś przeciwko",
+            "czy mogłabyś",
+            "czy nie sprawi ci kłopotu"
+          ]
+        },
+        {
+          "id": "requests-favors.do-me-a-favor",
+          "term": "do me a favor",
+          "ipa": "/ˌduː mi ə ˈfeɪvər/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zrobić mi przysługę",
+          "definition": "To do something helpful for someone when they ask.",
+          "register": "neutralny",
+          "contextPl": "Prośba o przysługę",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska „favor”; w BrE „favour”.",
+          "examples": [
+            {
+              "en": "Can you do me a favor and pick up my dry cleaning?",
+              "pl": "Możesz zrobić mi przysługę i odebrać moje rzeczy z pralni?",
+              "focusEn": "do me a favor",
+              "focusPl": "zrobić mi przysługę"
+            },
+            {
+              "en": "She did me a huge favor and took me to the airport at five.",
+              "pl": "Zrobiła mi ogromną przysługę i zawiozła mnie na lotnisko na piątą.",
+              "focusEn": "did me a huge favor",
+              "focusPl": "Zrobiła mi ogromną przysługę"
+            }
+          ],
+          "acceptedAnswers": [
+            "do me a favor",
+            "do someone a favor",
+            "do a favor"
+          ],
+          "acceptedTranslations": [
+            "zrobić mi przysługę",
+            "wyświadczyć przysługę",
+            "pomóc"
+          ]
+        },
+        {
+          "id": "requests-favors.ask-a-favor",
+          "term": "ask a favor",
+          "ipa": "/ˌæsk ə ˈfeɪvər/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "poprosić o przysługę",
+          "definition": "To ask someone to help you.",
+          "register": "neutralny",
+          "contextPl": "Wstęp do prośby",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Częste: „Can I ask you a favor?”.",
+          "examples": [
+            {
+              "en": "Can I ask you a favor? I need someone to watch my dog.",
+              "pl": "Mogę poprosić cię o przysługę? Potrzebuję kogoś, kto popilnuje psa.",
+              "focusEn": "ask you a favor",
+              "focusPl": "poprosić cię o przysługę"
+            },
+            {
+              "en": "I hate to ask a favor so late, but my ride canceled.",
+              "pl": "Nie lubię prosić o przysługę tak późno, ale mój transport odwołał.",
+              "focusEn": "ask a favor",
+              "focusPl": "prosić o przysługę"
+            }
+          ],
+          "acceptedAnswers": [
+            "ask a favor",
+            "ask you a favor",
+            "ask for a favor"
+          ],
+          "acceptedTranslations": [
+            "poprosić o przysługę",
+            "prosić o przysługę",
+            "prosić o pomoc"
+          ]
+        },
+        {
+          "id": "requests-favors.i-was-wondering-if",
+          "term": "I was wondering if",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zastanawiałem się, czy",
+          "definition": "A very polite, indirect way to begin a request.",
+          "register": "neutralny",
+          "contextPl": "Delikatne wprowadzenie prośby",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I was wondering if you could take me to the airport tomorrow.",
+              "pl": "Zastanawiałam się, czy mogłabyś zawieźć mnie jutro na lotnisko.",
+              "focusEn": "I was wondering if",
+              "focusPl": "Zastanawiałam się, czy"
+            },
+            {
+              "en": "I was wondering if I could leave my bike at your place.",
+              "pl": "Zastanawiałem się, czy mógłbym zostawić u ciebie rower.",
+              "focusEn": "I was wondering if",
+              "focusPl": "Zastanawiałem się, czy"
+            }
+          ],
+          "acceptedAnswers": [
+            "I was wondering if",
+            "I wonder if"
+          ],
+          "acceptedTranslations": [
+            "zastanawiałem się, czy",
+            "chciałam zapytać, czy",
+            "czy byłaby możliwość"
+          ]
+        },
+        {
+          "id": "requests-favors.would-it-be-possible",
+          "term": "would it be possible",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czy byłoby możliwe",
+          "definition": "A polite way to ask if something can be done.",
+          "register": "neutralny",
+          "contextPl": "Uprzejme pytanie o możliwość",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Would it be possible to borrow your big suitcase?",
+              "pl": "Czy byłoby możliwe, żebym pożyczył twoją dużą walizkę?",
+              "focusEn": "Would it be possible",
+              "focusPl": "Czy byłoby możliwe"
+            },
+            {
+              "en": "Would it be possible for you to call me when you get home?",
+              "pl": "Czy mógłbyś zadzwonić do mnie, kiedy wrócisz do domu?",
+              "focusEn": "Would it be possible",
+              "focusPl": "Czy mógłbyś"
+            }
+          ],
+          "acceptedAnswers": [
+            "would it be possible",
+            "is it possible"
+          ],
+          "acceptedTranslations": [
+            "czy byłoby możliwe",
+            "czy dałoby się",
+            "czy jest możliwość"
+          ]
+        },
+        {
+          "id": "requests-favors.is-there-any-chance",
+          "term": "is there any chance",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czy jest szansa",
+          "definition": "A polite way to ask if something might be possible.",
+          "register": "potoczny",
+          "contextPl": "Ostrożna prośba, gdy nie jesteśmy pewni zgody",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is there any chance you could give me a ride on Friday?",
+              "pl": "Jest szansa, że podwieziesz mnie w piątek?",
+              "focusEn": "Is there any chance",
+              "focusPl": "Jest szansa"
+            },
+            {
+              "en": "Is there any chance you're free to help me pack tonight?",
+              "pl": "Jest jakaś szansa, że masz dziś wieczorem czas pomóc mi się spakować?",
+              "focusEn": "Is there any chance",
+              "focusPl": "Jest jakaś szansa"
+            }
+          ],
+          "acceptedAnswers": [
+            "is there any chance",
+            "any chance"
+          ],
+          "acceptedTranslations": [
+            "czy jest szansa",
+            "czy jest możliwość",
+            "czy dałoby się"
+          ]
+        },
+        {
+          "id": "requests-favors.if-its-not-too-much-trouble",
+          "term": "if it's not too much trouble",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "jeśli to nie kłopot",
+          "definition": "A polite phrase used to make a request softer.",
+          "register": "neutralny",
+          "contextPl": "Łagodzenie prośby",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If it's not too much trouble, could you check the windows are closed?",
+              "pl": "Jeśli to nie kłopot, mogłabyś sprawdzić, czy okna są zamknięte?",
+              "focusEn": "If it's not too much trouble",
+              "focusPl": "Jeśli to nie kłopot"
+            },
+            {
+              "en": "She said she'd help, if it wasn't too much trouble for her.",
+              "pl": "Powiedziała, że pomoże, jeśli nie sprawi jej to kłopotu.",
+              "focusEn": "if it wasn't too much trouble",
+              "focusPl": "jeśli nie sprawi jej to kłopotu"
+            }
+          ],
+          "acceptedAnswers": [
+            "if it's not too much trouble",
+            "if it isn't too much trouble",
+            "if you don't mind"
+          ],
+          "acceptedTranslations": [
+            "jeśli to nie kłopot",
+            "jeśli nie sprawi to kłopotu",
+            "jeśli możesz"
+          ]
+        },
+        {
+          "id": "requests-favors.i-hate-to-ask",
+          "term": "I hate to ask",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "głupio mi prosić",
+          "definition": "A phrase used before asking for something you feel bad about asking for.",
+          "register": "neutralny",
+          "contextPl": "Prośba połączona z zakłopotaniem",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I hate to ask, but could you lend me twenty dollars for a taxi?",
+              "pl": "Głupio mi prosić, ale mogłabyś pożyczyć mi dwadzieścia dolarów na taksówkę?",
+              "focusEn": "I hate to ask",
+              "focusPl": "Głupio mi prosić"
+            },
+            {
+              "en": "I hate to ask again, but can you feed the cat on Sunday too?",
+              "pl": "Głupio mi znowu prosić, ale możesz nakarmić kota także w niedzielę?",
+              "focusEn": "I hate to ask",
+              "focusPl": "Głupio mi znowu prosić"
+            }
+          ],
+          "acceptedAnswers": [
+            "I hate to ask",
+            "I hate to bother you",
+            "sorry to ask"
+          ],
+          "acceptedTranslations": [
+            "głupio mi prosić",
+            "nie chcę się narzucać",
+            "przykro mi, że proszę"
+          ]
+        },
+        {
+          "id": "requests-favors.give-someone-a-hand",
+          "term": "give someone a hand",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pomóc komuś",
+          "definition": "To help someone, especially with a physical task.",
+          "register": "potoczny",
+          "contextPl": "Prośba o pomoc przy czymś konkretnym",
+          "natural": "",
+          "forms": "give – gave – given",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you give me a hand with these bags?",
+              "pl": "Możesz pomóc mi z tymi torbami?",
+              "focusEn": "give me a hand",
+              "focusPl": "pomóc mi"
+            },
+            {
+              "en": "My neighbor gave me a hand carrying the suitcase downstairs.",
+              "pl": "Sąsiad pomógł mi znieść walizkę na dół.",
+              "focusEn": "gave me a hand",
+              "focusPl": "pomógł mi"
+            }
+          ],
+          "acceptedAnswers": [
+            "give someone a hand",
+            "give me a hand",
+            "lend a hand"
+          ],
+          "acceptedTranslations": [
+            "pomóc komuś",
+            "pomóc",
+            "dać pomocną dłoń"
+          ]
+        },
+        {
+          "id": "requests-favors.help-out",
+          "term": "help out",
+          "ipa": "/ˌhɛlp ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pomóc",
+          "definition": "To help someone, especially when they are busy or in trouble.",
+          "register": "neutralny",
+          "contextPl": "Pomoc w trudnej sytuacji",
+          "natural": "",
+          "forms": "help – helped – helped",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks for helping me out at the last minute.",
+              "pl": "Dzięki, że mi pomogłaś w ostatniej chwili.",
+              "focusEn": "helping me out",
+              "focusPl": "mi pomogłaś"
+            },
+            {
+              "en": "My brother can't help out this weekend; he's working.",
+              "pl": "Mój brat nie może pomóc w ten weekend, pracuje.",
+              "focusEn": "help out",
+              "focusPl": "pomóc"
+            }
+          ],
+          "acceptedAnswers": [
+            "help out",
+            "help"
+          ],
+          "acceptedTranslations": [
+            "pomóc",
+            "wesprzeć",
+            "wyręczyć",
+            "pomagać"
+          ]
+        },
+        {
+          "id": "requests-favors.borrow",
+          "term": "borrow",
+          "ipa": "/ˈbɑːroʊ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pożyczyć od kogoś",
+          "definition": "To take and use something that belongs to someone else, and give it back later.",
+          "register": "neutralny",
+          "contextPl": "Prośba o pożyczenie rzeczy",
+          "natural": "",
+          "forms": "borrow – borrowed – borrowed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Borrow” = pożyczyć od kogoś; „lend” = pożyczyć komuś.",
+          "examples": [
+            {
+              "en": "Can I borrow your phone charger for the trip?",
+              "pl": "Mogę pożyczyć twoją ładowarkę na wyjazd?",
+              "focusEn": "borrow",
+              "focusPl": "pożyczyć"
+            },
+            {
+              "en": "I borrowed my sister's suitcase because mine broke.",
+              "pl": "Pożyczyłem walizkę od siostry, bo moja się zepsuła.",
+              "focusEn": "borrowed",
+              "focusPl": "Pożyczyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "borrow"
+          ],
+          "acceptedTranslations": [
+            "pożyczyć od kogoś",
+            "pożyczać",
+            "wypożyczyć"
+          ]
+        },
+        {
+          "id": "requests-favors.lend",
+          "term": "lend",
+          "ipa": "/lɛnd/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pożyczyć komuś",
+          "definition": "To give something to someone for a short time.",
+          "register": "neutralny",
+          "contextPl": "Pożyczanie rzeczy innym",
+          "natural": "",
+          "forms": "lend – lent – lent",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you lend me your umbrella? It's raining hard.",
+              "pl": "Mogłabyś pożyczyć mi parasol? Mocno pada.",
+              "focusEn": "lend",
+              "focusPl": "pożyczyć"
+            },
+            {
+              "en": "She lent me her car for the whole weekend.",
+              "pl": "Pożyczyła mi samochód na cały weekend.",
+              "focusEn": "lent",
+              "focusPl": "Pożyczyła"
+            }
+          ],
+          "acceptedAnswers": [
+            "lend"
+          ],
+          "acceptedTranslations": [
+            "pożyczyć komuś",
+            "pożyczać",
+            "użyczyć"
+          ]
+        },
+        {
+          "id": "requests-favors.give-someone-a-ride",
+          "term": "give someone a ride",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "podwieźć kogoś",
+          "definition": "To take someone somewhere in your car.",
+          "register": "neutralny",
+          "contextPl": "Prośba o podwiezienie",
+          "natural": "",
+          "forms": "give – gave – given",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W BrE „give someone a lift”.",
+          "examples": [
+            {
+              "en": "Can you give me a ride to the airport tomorrow morning?",
+              "pl": "Możesz podwieźć mnie jutro rano na lotnisko?",
+              "focusEn": "give me a ride",
+              "focusPl": "podwieźć mnie"
+            },
+            {
+              "en": "My friend gave me a ride, so I didn't need a taxi.",
+              "pl": "Przyjaciółka mnie podwiozła, więc nie potrzebowałem taksówki.",
+              "focusEn": "gave me a ride",
+              "focusPl": "mnie podwiozła"
+            }
+          ],
+          "acceptedAnswers": [
+            "give someone a ride",
+            "give me a ride",
+            "give someone a lift",
+            "drive"
+          ],
+          "acceptedTranslations": [
+            "podwieźć kogoś",
+            "zawieźć",
+            "podrzucić"
+          ]
+        },
+        {
+          "id": "requests-favors.keep-an-eye-on",
+          "term": "keep an eye on",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mieć oko na",
+          "definition": "To watch or look after something or someone.",
+          "register": "neutralny",
+          "contextPl": "Prośba o pilnowanie domu, dzieci, rzeczy",
+          "natural": "",
+          "forms": "keep – kept – kept",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you keep an eye on my apartment while I'm away?",
+              "pl": "Czy mogłabyś mieć oko na moje mieszkanie, kiedy mnie nie będzie?",
+              "focusEn": "keep an eye on",
+              "focusPl": "mieć oko na"
+            },
+            {
+              "en": "My neighbor kept an eye on the house all week.",
+              "pl": "Sąsiadka przez cały tydzień pilnowała domu.",
+              "focusEn": "kept an eye on",
+              "focusPl": "pilnowała"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep an eye on"
+          ],
+          "acceptedTranslations": [
+            "mieć oko na",
+            "pilnować",
+            "doglądać",
+            "uważać na"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "requests-favors.offers",
+      "namePl": "Propozycje pomocy",
+      "scenePl": "Kolega z pracy ma zły dzień przy biurku, a ty proponujesz mu pomoc",
+      "entries": [
+        {
+          "id": "requests-favors.can-i-help",
+          "term": "can I help",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "czy mogę pomóc",
+          "definition": "A simple question offering help to someone.",
+          "register": "neutralny",
+          "contextPl": "Proponowanie pomocy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You look stressed. Can I help with anything?",
+              "pl": "Wyglądasz na zestresowanego. Mogę w czymś pomóc?",
+              "focusEn": "Can I help",
+              "focusPl": "Mogę w czymś pomóc"
+            },
+            {
+              "en": "When I asked if I could help, he showed me the broken spreadsheet.",
+              "pl": "Kiedy zapytałem, czy mogę pomóc, pokazał mi zepsuty arkusz.",
+              "focusEn": "if I could help",
+              "focusPl": "czy mogę pomóc"
+            }
+          ],
+          "acceptedAnswers": [
+            "can I help",
+            "can I help you",
+            "how can I help"
+          ],
+          "acceptedTranslations": [
+            "czy mogę pomóc",
+            "mogę w czymś pomóc",
+            "pomóc ci"
+          ]
+        },
+        {
+          "id": "requests-favors.let-me",
+          "term": "let me",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pozwól, że",
+          "definition": "A friendly way to offer to do something for someone.",
+          "register": "neutralny",
+          "contextPl": "Przejmowanie zadania od kogoś",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let me carry those boxes for you.",
+              "pl": "Pozwól, że poniosę te pudła za ciebie.",
+              "focusEn": "Let me",
+              "focusPl": "Pozwól, że"
+            },
+            {
+              "en": "Let me take a look at your report before the meeting.",
+              "pl": "Daj, że rzucę okiem na twój raport przed spotkaniem.",
+              "focusEn": "Let me",
+              "focusPl": "Daj, że"
+            }
+          ],
+          "acceptedAnswers": [
+            "let me",
+            "allow me"
+          ],
+          "acceptedTranslations": [
+            "pozwól, że",
+            "daj, że",
+            "pozwól mi"
+          ]
+        },
+        {
+          "id": "requests-favors.do-you-want-me-to",
+          "term": "do you want me to",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "chcesz, żebym",
+          "definition": "A question used to offer help.",
+          "register": "neutralny",
+          "contextPl": "Pytanie, czy pomoc jest potrzebna",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you want me to call the client for you?",
+              "pl": "Chcesz, żebym zadzwonił za ciebie do klienta?",
+              "focusEn": "Do you want me to",
+              "focusPl": "Chcesz, żebym"
+            },
+            {
+              "en": "I asked if he wanted me to finish the slides.",
+              "pl": "Zapytałem, czy chce, żebym skończył slajdy.",
+              "focusEn": "if he wanted me to",
+              "focusPl": "czy chce, żebym"
+            }
+          ],
+          "acceptedAnswers": [
+            "do you want me to",
+            "would you like me to",
+            "should I"
+          ],
+          "acceptedTranslations": [
+            "chcesz, żebym",
+            "czy mam",
+            "może ja"
+          ]
+        },
+        {
+          "id": "requests-favors.would-you-like-me-to",
+          "term": "would you like me to",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czy chciałbyś, żebym",
+          "definition": "A polite way to offer to do something for someone.",
+          "register": "neutralny",
+          "contextPl": "Grzeczna propozycja pomocy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Would you like me to stay late and help you?",
+              "pl": "Chciałbyś, żebym został dłużej i ci pomógł?",
+              "focusEn": "Would you like me to",
+              "focusPl": "Chciałbyś, żebym"
+            },
+            {
+              "en": "Would you like me to order lunch for both of us?",
+              "pl": "Czy chcesz, żebym zamówił lunch dla nas obu?",
+              "focusEn": "Would you like me to",
+              "focusPl": "Czy chcesz, żebym"
+            }
+          ],
+          "acceptedAnswers": [
+            "would you like me to",
+            "do you want me to"
+          ],
+          "acceptedTranslations": [
+            "czy chciałbyś, żebym",
+            "czy mam",
+            "może mógłbym"
+          ]
+        },
+        {
+          "id": "requests-favors.offer",
+          "term": "offer",
+          "ipa": "/ˈɔːfər/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zaproponować",
+          "definition": "To say you are willing to do something for someone.",
+          "register": "neutralny",
+          "contextPl": "Proponowanie pomocy lub rzeczy",
+          "natural": "",
+          "forms": "offer – offered – offered",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I offered to help him with the presentation.",
+              "pl": "Zaproponowałem, że pomogę mu przy prezentacji.",
+              "focusEn": "offered",
+              "focusPl": "Zaproponowałem"
+            },
+            {
+              "en": "Nobody else offered to stay late, so I did.",
+              "pl": "Nikt inny nie zaproponował, że zostanie dłużej, więc ja to zrobiłem.",
+              "focusEn": "offered",
+              "focusPl": "zaproponował"
+            }
+          ],
+          "acceptedAnswers": [
+            "offer",
+            "volunteer"
+          ],
+          "acceptedTranslations": [
+            "zaproponować",
+            "proponować",
+            "zaoferować",
+            "oferować"
+          ]
+        },
+        {
+          "id": "requests-favors.need-a-hand",
+          "term": "need a hand",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "potrzebujesz pomocy",
+          "definition": "An informal way to ask if someone needs help.",
+          "register": "potoczny",
+          "contextPl": "Swobodna propozycja pomocy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Need a hand with that printer?",
+              "pl": "Potrzebujesz pomocy z tą drukarką?",
+              "focusEn": "Need a hand",
+              "focusPl": "Potrzebujesz pomocy"
+            },
+            {
+              "en": "I saw him struggling and asked if he needed a hand.",
+              "pl": "Widziałem, że się męczy, i zapytałem, czy potrzebuje pomocy.",
+              "focusEn": "needed a hand",
+              "focusPl": "potrzebuje pomocy"
+            }
+          ],
+          "acceptedAnswers": [
+            "need a hand",
+            "do you need a hand",
+            "need any help",
+            "need help"
+          ],
+          "acceptedTranslations": [
+            "potrzebujesz pomocy",
+            "pomóc ci",
+            "pomóc w czymś"
+          ]
+        },
+        {
+          "id": "requests-favors.ill-do-it",
+          "term": "I'll do it",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "ja to zrobię",
+          "definition": "A short way to say you will take care of something.",
+          "register": "neutralny",
+          "contextPl": "Zgłaszanie się do zadania",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't worry about the copies; I'll do it.",
+              "pl": "Nie martw się kopiami, ja to zrobię.",
+              "focusEn": "I'll do it",
+              "focusPl": "ja to zrobię"
+            },
+            {
+              "en": "When nobody wanted to call the client, I just said I'll do it and picked up the phone.",
+              "pl": "Kiedy nikt nie chciał dzwonić do klienta, po prostu powiedziałem, że ja to zrobię, i podniosłem słuchawkę.",
+              "focusEn": "I'll do it",
+              "focusPl": "ja to zrobię"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'll do it",
+            "I'll take care of it",
+            "I've got it"
+          ],
+          "acceptedTranslations": [
+            "ja to zrobię",
+            "zajmę się tym",
+            "zrobię to"
+          ]
+        },
+        {
+          "id": "requests-favors.my-pleasure",
+          "term": "my pleasure",
+          "ipa": "/maɪ ˈplɛʒər/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "cała przyjemność po mojej stronie",
+          "definition": "A polite answer when someone thanks you.",
+          "register": "neutralny",
+          "contextPl": "Odpowiedź na podziękowanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks for your help! My pleasure!",
+              "pl": "Dzięki za pomoc! Cała przyjemność po mojej stronie!",
+              "focusEn": "My pleasure",
+              "focusPl": "Cała przyjemność po mojej stronie"
+            },
+            {
+              "en": "He thanked me for fixing his spreadsheet, and I said it was my pleasure.",
+              "pl": "Podziękował mi za naprawienie arkusza, a ja odpowiedziałem, że to była przyjemność.",
+              "focusEn": "my pleasure",
+              "focusPl": "to była przyjemność"
+            }
+          ],
+          "acceptedAnswers": [
+            "my pleasure",
+            "it's my pleasure",
+            "it was my pleasure"
+          ],
+          "acceptedTranslations": [
+            "cała przyjemność po mojej stronie",
+            "nie ma za co",
+            "proszę bardzo",
+            "to przyjemność"
+          ]
+        },
+        {
+          "id": "requests-favors.no-problem",
+          "term": "no problem",
+          "ipa": "/ˌnoʊ ˈprɑːbləm/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "nie ma problemu",
+          "definition": "A friendly way to agree to a request or to answer thanks.",
+          "register": "potoczny",
+          "contextPl": "Zgoda lub odpowiedź na podziękowanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you send me that file? No problem.",
+              "pl": "Możesz mi wysłać ten plik? Nie ma problemu.",
+              "focusEn": "No problem",
+              "focusPl": "Nie ma problemu"
+            },
+            {
+              "en": "He thanked me twice, and I told him it was no problem.",
+              "pl": "Dwa razy mi podziękował, a ja powiedziałem, że nie ma sprawy.",
+              "focusEn": "no problem",
+              "focusPl": "nie ma sprawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "no problem",
+            "no worries",
+            "sure thing"
+          ],
+          "acceptedTranslations": [
+            "nie ma problemu",
+            "nie ma sprawy",
+            "nie ma za co",
+            "jasne"
+          ]
+        },
+        {
+          "id": "requests-favors.anytime",
+          "term": "anytime",
+          "ipa": "/ˈɛniˌtaɪm/",
+          "pos": "przysłówek",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zawsze chętnie",
+          "definition": "A friendly answer to thanks, meaning you are happy to help again.",
+          "register": "potoczny",
+          "contextPl": "Odpowiedź na podziękowanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks for covering for me! Anytime.",
+              "pl": "Dzięki, że mnie zastąpiłeś! Zawsze do usług.",
+              "focusEn": "Anytime",
+              "focusPl": "Zawsze do usług"
+            },
+            {
+              "en": "She thanked me for the coffee, and I told her I'd do it again anytime.",
+              "pl": "Podziękowała mi za kawę, a ja powiedziałem, że zawsze chętnie zrobię to znowu.",
+              "focusEn": "anytime",
+              "focusPl": "zawsze chętnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "anytime",
+            "any time"
+          ],
+          "acceptedTranslations": [
+            "zawsze chętnie",
+            "zawsze do usług",
+            "nie ma sprawy"
+          ]
+        },
+        {
+          "id": "requests-favors.i-owe-you-one",
+          "term": "I owe you one",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mam u ciebie dług",
+          "definition": "An informal way to say you will do something for someone who helped you.",
+          "register": "potoczny",
+          "contextPl": "Podziękowanie z obietnicą rewanżu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks for finishing my report; I owe you one.",
+              "pl": "Dzięki za dokończenie raportu, mam u ciebie dług.",
+              "focusEn": "I owe you one",
+              "focusPl": "mam u ciebie dług"
+            },
+            {
+              "en": "He said he owed me one after I covered his shift.",
+              "pl": "Powiedział, że jest mi winien przysługę, bo wziąłem za niego zmianę.",
+              "focusEn": "he owed me one",
+              "focusPl": "jest mi winien przysługę"
+            }
+          ],
+          "acceptedAnswers": [
+            "I owe you one",
+            "I owe you",
+            "I owe you big"
+          ],
+          "acceptedTranslations": [
+            "mam u ciebie dług",
+            "jestem ci winien",
+            "zrewanżuję się"
+          ]
+        },
+        {
+          "id": "requests-favors.return-the-favor",
+          "term": "return the favor",
+          "ipa": "/rɪˌtɜːrn ðə ˈfeɪvər/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odwdzięczyć się",
+          "definition": "To do something helpful for someone who helped you before.",
+          "register": "neutralny",
+          "contextPl": "Rewanżowanie się za pomoc",
+          "natural": "",
+          "forms": "return – returned – returned",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You helped me last month, so let me return the favor.",
+              "pl": "Pomogłeś mi w zeszłym miesiącu, więc pozwól, że się odwdzięczę.",
+              "focusEn": "return the favor",
+              "focusPl": "się odwdzięczę"
+            },
+            {
+              "en": "She returned the favor by bringing me lunch.",
+              "pl": "Odwdzięczyła się, przynosząc mi lunch.",
+              "focusEn": "returned the favor",
+              "focusPl": "Odwdzięczyła się"
+            }
+          ],
+          "acceptedAnswers": [
+            "return the favor",
+            "return a favor",
+            "repay"
+          ],
+          "acceptedTranslations": [
+            "odwdzięczyć się",
+            "zrewanżować się",
+            "odwzajemnić przysługę"
+          ]
+        },
+        {
+          "id": "requests-favors.lifesaver",
+          "term": "lifesaver",
+          "ipa": "/ˈlaɪfˌseɪvər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wybawca",
+          "definition": "A person or thing that helps you a lot in a difficult situation.",
+          "register": "potoczny",
+          "contextPl": "Entuzjastyczne podziękowanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks for fixing my laptop; you're a lifesaver!",
+              "pl": "Dzięki za naprawienie laptopa, jesteś moim wybawcą!",
+              "focusEn": "lifesaver",
+              "focusPl": "wybawcą"
+            },
+            {
+              "en": "That extra charger was a real lifesaver during the long meeting.",
+              "pl": "Ta dodatkowa ładowarka była prawdziwym wybawieniem na długim spotkaniu.",
+              "focusEn": "lifesaver",
+              "focusPl": "wybawieniem"
+            }
+          ],
+          "acceptedAnswers": [
+            "lifesaver",
+            "life saver"
+          ],
+          "acceptedTranslations": [
+            "wybawca",
+            "wybawienie",
+            "zbawca",
+            "ratunek"
+          ]
+        },
+        {
+          "id": "requests-favors.its-the-least-i-can-do",
+          "term": "it's the least I can do",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "to najmniej, co mogę zrobić",
+          "definition": "A polite way to say that your help is small compared to what the other person did.",
+          "register": "neutralny",
+          "contextPl": "Skromna odpowiedź na podziękowanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't thank me; it's the least I can do after you helped me last week.",
+              "pl": "Nie dziękuj, to najmniej, co mogę zrobić po tym, jak pomogłeś mi w zeszłym tygodniu.",
+              "focusEn": "it's the least I can do",
+              "focusPl": "to najmniej, co mogę zrobić"
+            },
+            {
+              "en": "She brought him coffee and said it was the least she could do.",
+              "pl": "Przyniosła mu kawę i powiedziała, że to najmniej, co może zrobić.",
+              "focusEn": "it was the least she could do",
+              "focusPl": "to najmniej, co może zrobić"
+            }
+          ],
+          "acceptedAnswers": [
+            "it's the least I can do",
+            "the least I can do"
+          ],
+          "acceptedTranslations": [
+            "to najmniej, co mogę zrobić",
+            "to drobiazg",
+            "to nic takiego"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "requests-favors.agreeing",
+      "namePl": "Zgadzanie się na prośbę",
+      "scenePl": "Przyjaciel prosi o pomoc w przeprowadzce w sobotę, a ty się zgadzasz",
+      "entries": [
+        {
+          "id": "requests-favors.sure",
+          "term": "sure",
+          "ipa": "/ʃʊr/",
+          "pos": "przysłówek",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "jasne",
+          "definition": "An informal way to say yes.",
+          "register": "potoczny",
+          "contextPl": "Swobodna zgoda",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you help me on Saturday? Sure, what time?",
+              "pl": "Pomożesz mi w sobotę? Jasne, o której?",
+              "focusEn": "Sure",
+              "focusPl": "Jasne"
+            },
+            {
+              "en": "I said sure before he even finished asking.",
+              "pl": "Powiedziałem jasne, zanim zdążył dokończyć pytanie.",
+              "focusEn": "sure",
+              "focusPl": "jasne"
+            }
+          ],
+          "acceptedAnswers": [
+            "sure",
+            "of course",
+            "yes"
+          ],
+          "acceptedTranslations": [
+            "jasne",
+            "pewnie",
+            "oczywiście",
+            "jasna sprawa"
+          ]
+        },
+        {
+          "id": "requests-favors.of-course",
+          "term": "of course",
+          "ipa": "/əv ˈkɔːrs/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "oczywiście",
+          "definition": "Used to say yes politely and warmly.",
+          "register": "neutralny",
+          "contextPl": "Chętna zgoda na prośbę",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Of course I'll help you move; just tell me when.",
+              "pl": "Oczywiście, że pomogę ci w przeprowadzce, tylko powiedz kiedy.",
+              "focusEn": "Of course",
+              "focusPl": "Oczywiście"
+            },
+            {
+              "en": "When he asked to borrow my car, I said of course without thinking.",
+              "pl": "Kiedy poprosił o pożyczenie samochodu, bez zastanowienia powiedziałem, że oczywiście.",
+              "focusEn": "of course",
+              "focusPl": "oczywiście"
+            }
+          ],
+          "acceptedAnswers": [
+            "of course",
+            "sure",
+            "certainly"
+          ],
+          "acceptedTranslations": [
+            "oczywiście",
+            "jasne",
+            "naturalnie",
+            "pewnie"
+          ]
+        },
+        {
+          "id": "requests-favors.absolutely",
+          "term": "absolutely",
+          "ipa": "/ˌæbsəˈluːtli/",
+          "pos": "przysłówek",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "absolutnie",
+          "definition": "A strong way to say yes.",
+          "register": "neutralny",
+          "contextPl": "Entuzjastyczna zgoda",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you bring your truck? Absolutely!",
+              "pl": "Możesz przyjechać swoim pickupem? Jasne, że tak!",
+              "focusEn": "Absolutely",
+              "focusPl": "Jasne, że tak"
+            },
+            {
+              "en": "She said absolutely when I asked her to keep the boxes for a week.",
+              "pl": "Powiedziała pewnie, kiedy poprosiłem, żeby przechowała pudła przez tydzień.",
+              "focusEn": "absolutely",
+              "focusPl": "pewnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "absolutely",
+            "definitely",
+            "of course"
+          ],
+          "acceptedTranslations": [
+            "absolutnie",
+            "oczywiście",
+            "jak najbardziej",
+            "pewnie"
+          ]
+        },
+        {
+          "id": "requests-favors.i-dont-mind",
+          "term": "I don't mind",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "nie mam nic przeciwko",
+          "definition": "A phrase that means you are happy to do something or that it is not a problem.",
+          "register": "neutralny",
+          "contextPl": "Zgoda bez entuzjazmu lub z uprzejmości",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I don't mind driving; I like my new car.",
+              "pl": "Nie mam nic przeciwko prowadzeniu, lubię swoje nowe auto.",
+              "focusEn": "I don't mind",
+              "focusPl": "Nie mam nic przeciwko"
+            },
+            {
+              "en": "He asked if I could start at seven, and I said I didn't mind.",
+              "pl": "Zapytał, czy mogę zacząć o siódmej, a ja powiedziałem, że nie ma problemu.",
+              "focusEn": "I didn't mind",
+              "focusPl": "nie ma problemu"
+            }
+          ],
+          "acceptedAnswers": [
+            "I don't mind",
+            "I don't mind at all"
+          ],
+          "acceptedTranslations": [
+            "nie mam nic przeciwko",
+            "nie przeszkadza mi to",
+            "mogę"
+          ]
+        },
+        {
+          "id": "requests-favors.not-at-all",
+          "term": "not at all",
+          "ipa": "/ˌnɑːt ət ˈɔːl/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ależ skąd",
+          "definition": "A polite answer that means something is not a problem for you.",
+          "register": "neutralny",
+          "contextPl": "Odpowiedź na „Would you mind…?”",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na pytanie „Would you mind…?” odpowiedź „Not at all” oznacza zgodę.",
+          "examples": [
+            {
+              "en": "Would you mind carrying the lamp? Not at all.",
+              "pl": "Mógłbyś zanieść lampę? Ależ skąd, jasne.",
+              "focusEn": "Not at all",
+              "focusPl": "Ależ skąd"
+            },
+            {
+              "en": "When he apologized for asking, I said “Not at all” and grabbed a box.",
+              "pl": "Kiedy przeprosił, że prosi, powiedziałem „Nie ma sprawy” i chwyciłem pudło.",
+              "focusEn": "Not at all",
+              "focusPl": "Nie ma sprawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "not at all",
+            "no, not at all"
+          ],
+          "acceptedTranslations": [
+            "ależ skąd",
+            "wcale nie",
+            "nie ma sprawy"
+          ]
+        },
+        {
+          "id": "requests-favors.go-ahead",
+          "term": "go ahead",
+          "ipa": "/ˌɡoʊ əˈhɛd/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "śmiało",
+          "definition": "Used to give someone permission to do something.",
+          "register": "potoczny",
+          "contextPl": "Wyrażanie zgody na czyjąś prośbę",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I use your phone? Go ahead.",
+              "pl": "Mogę skorzystać z twojego telefonu? Śmiało.",
+              "focusEn": "Go ahead",
+              "focusPl": "Śmiało"
+            },
+            {
+              "en": "I told him to go ahead and take the blue boxes.",
+              "pl": "Powiedziałem mu, żeby śmiało wziął niebieskie pudła.",
+              "focusEn": "go ahead",
+              "focusPl": "śmiało"
+            }
+          ],
+          "acceptedAnswers": [
+            "go ahead",
+            "sure",
+            "feel free"
+          ],
+          "acceptedTranslations": [
+            "śmiało",
+            "proszę bardzo",
+            "bierz",
+            "nie krępuj się"
+          ]
+        },
+        {
+          "id": "requests-favors.count-me-in",
+          "term": "count me in",
+          "ipa": "/ˌkaʊnt mi ˈɪn/",
+          "pos": "idiom",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wchodzę w to",
+          "definition": "An informal way to say you want to take part.",
+          "register": "potoczny",
+          "contextPl": "Deklaracja udziału",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "count me out",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You need help on Saturday? Count me in!",
+              "pl": "Potrzebujesz pomocy w sobotę? Możesz na mnie liczyć!",
+              "focusEn": "Count me in",
+              "focusPl": "Możesz na mnie liczyć"
+            },
+            {
+              "en": "Three friends said “Count me in” right away.",
+              "pl": "Trzech przyjaciół od razu powiedziało: „Wchodzę w to”.",
+              "focusEn": "Count me in",
+              "focusPl": "Wchodzę w to"
+            }
+          ],
+          "acceptedAnswers": [
+            "count me in",
+            "I'm in"
+          ],
+          "acceptedTranslations": [
+            "wchodzę w to",
+            "możesz na mnie liczyć",
+            "jestem",
+            "piszę się"
+          ]
+        },
+        {
+          "id": "requests-favors.happy-to-help",
+          "term": "happy to help",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "chętnie pomogę",
+          "definition": "A friendly way to say you are willing to help.",
+          "register": "neutralny",
+          "contextPl": "Uprzejma zgoda",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Of course I'll carry the couch; happy to help.",
+              "pl": "Jasne, że poniosę kanapę, chętnie pomogę.",
+              "focusEn": "happy to help",
+              "focusPl": "chętnie pomogę"
+            },
+            {
+              "en": "She said she was happy to help and brought extra tape.",
+              "pl": "Powiedziała, że chętnie pomoże, i przyniosła dodatkową taśmę.",
+              "focusEn": "happy to help",
+              "focusPl": "chętnie pomoże"
+            }
+          ],
+          "acceptedAnswers": [
+            "happy to help",
+            "I'm happy to help",
+            "glad to help"
+          ],
+          "acceptedTranslations": [
+            "chętnie pomogę",
+            "z przyjemnością pomogę",
+            "z chęcią"
+          ]
+        },
+        {
+          "id": "requests-favors.why-not",
+          "term": "why not",
+          "ipa": "/ˌwaɪ ˈnɑːt/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "czemu nie",
+          "definition": "Used to agree to a suggestion.",
+          "register": "potoczny",
+          "contextPl": "Zgoda na propozycję",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Want to grab pizza after we move the boxes? Why not?",
+              "pl": "Pizza po przeniesieniu pudeł? Czemu nie?",
+              "focusEn": "Why not",
+              "focusPl": "Czemu nie"
+            },
+            {
+              "en": "When he asked me to stay for dinner, I thought, why not?",
+              "pl": "Kiedy zaprosił mnie, żebym został na kolację, pomyślałem: czemu nie?",
+              "focusEn": "why not",
+              "focusPl": "czemu nie"
+            }
+          ],
+          "acceptedAnswers": [
+            "why not",
+            "sure",
+            "sounds good"
+          ],
+          "acceptedTranslations": [
+            "czemu nie",
+            "dlaczego nie",
+            "w sumie czemu nie"
+          ]
+        },
+        {
+          "id": "requests-favors.you-can-count-on-me",
+          "term": "you can count on me",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "możesz na mnie liczyć",
+          "definition": "A promise that you will help or do what you say.",
+          "register": "neutralny",
+          "contextPl": "Zapewnienie o pomocy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll be there at eight; you can count on me.",
+              "pl": "Będę o ósmej, możesz na mnie liczyć.",
+              "focusEn": "you can count on me",
+              "focusPl": "możesz na mnie liczyć"
+            },
+            {
+              "en": "He told me I could count on him if anything went wrong.",
+              "pl": "Powiedział, że mogę na niego liczyć, jeśli coś pójdzie nie tak.",
+              "focusEn": "I could count on him",
+              "focusPl": "mogę na niego liczyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "you can count on me",
+            "count on me",
+            "you can rely on me"
+          ],
+          "acceptedTranslations": [
+            "możesz na mnie liczyć",
+            "polegaj na mnie",
+            "możesz na mnie polegać"
+          ]
+        },
+        {
+          "id": "requests-favors.by-all-means",
+          "term": "by all means",
+          "ipa": "/ˌbaɪ ˌɔːl ˈmiːnz/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "ależ oczywiście",
+          "definition": "A formal or polite way to say yes or give permission.",
+          "register": "formalny",
+          "contextPl": "Bardzo uprzejma zgoda",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "May I park in your driveway? By all means.",
+              "pl": "Mogę zaparkować na twoim podjeździe? Ależ oczywiście.",
+              "focusEn": "By all means",
+              "focusPl": "Ależ oczywiście"
+            },
+            {
+              "en": "By all means, take my ladder; I don't need it this weekend.",
+              "pl": "Oczywiście, weź moją drabinę, w ten weekend jej nie potrzebuję.",
+              "focusEn": "By all means",
+              "focusPl": "Oczywiście"
+            }
+          ],
+          "acceptedAnswers": [
+            "by all means",
+            "of course",
+            "certainly"
+          ],
+          "acceptedTranslations": [
+            "ależ oczywiście",
+            "jak najbardziej",
+            "oczywiście",
+            "proszę bardzo"
+          ]
+        },
+        {
+          "id": "requests-favors.thats-no-trouble",
+          "term": "that's no trouble",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "to żaden kłopot",
+          "definition": "A polite way to say that helping is easy for you.",
+          "register": "neutralny",
+          "contextPl": "Uspokajanie osoby, która prosi o pomoc",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Driving you home is no trouble; it's on my way.",
+              "pl": "Odwiezienie cię do domu to żaden kłopot, mam po drodze.",
+              "focusEn": "no trouble",
+              "focusPl": "żaden kłopot"
+            },
+            {
+              "en": "He kept apologizing, but I said it was no trouble at all.",
+              "pl": "Ciągle przepraszał, ale powiedziałem, że to żaden kłopot.",
+              "focusEn": "no trouble",
+              "focusPl": "żaden kłopot"
+            }
+          ],
+          "acceptedAnswers": [
+            "that's no trouble",
+            "no trouble",
+            "it's no trouble"
+          ],
+          "acceptedTranslations": [
+            "to żaden kłopot",
+            "żaden problem",
+            "nie ma sprawy"
+          ]
+        },
+        {
+          "id": "requests-favors.sounds-good",
+          "term": "sounds good",
+          "ipa": "/ˌsaʊndz ˈɡʊd/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "brzmi dobrze",
+          "definition": "An informal way to agree to a plan or suggestion.",
+          "register": "potoczny",
+          "contextPl": "Akceptacja propozycji lub planu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Meet at my place at eight? Sounds good.",
+              "pl": "Spotkanie u mnie o ósmej? Brzmi dobrze.",
+              "focusEn": "Sounds good",
+              "focusPl": "Brzmi dobrze"
+            },
+            {
+              "en": "He suggested a break for pizza at noon, and I said that sounded good.",
+              "pl": "Zaproponował przerwę na pizzę w południe, a ja powiedziałem, że pasuje mi.",
+              "focusEn": "sounded good",
+              "focusPl": "pasuje mi"
+            }
+          ],
+          "acceptedAnswers": [
+            "sounds good",
+            "sounds great",
+            "sounds like a plan"
+          ],
+          "acceptedTranslations": [
+            "brzmi dobrze",
+            "pasuje mi",
+            "w porządku",
+            "zgoda"
+          ]
+        },
+        {
+          "id": "requests-favors.no-worries",
+          "term": "no worries",
+          "ipa": "/ˌnoʊ ˈwɜːriz/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "nie ma sprawy",
+          "definition": "An informal way to say that something is not a problem or to answer thanks.",
+          "register": "potoczny",
+          "contextPl": "Swobodna zgoda lub odpowiedź na przeprosiny i podziękowania",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You need me an hour later? No worries.",
+              "pl": "Potrzebujesz mnie godzinę później? Nie ma sprawy.",
+              "focusEn": "No worries",
+              "focusPl": "Nie ma sprawy"
+            },
+            {
+              "en": "He apologized for asking so late, but I told him no worries.",
+              "pl": "Przepraszał, że prosi tak późno, ale powiedziałem mu, że nie ma problemu.",
+              "focusEn": "no worries",
+              "focusPl": "nie ma problemu"
+            }
+          ],
+          "acceptedAnswers": [
+            "no worries",
+            "no problem"
+          ],
+          "acceptedTranslations": [
+            "nie ma sprawy",
+            "nie ma problemu",
+            "luz",
+            "spoko"
+          ]
+        },
+        {
+          "id": "requests-favors.will-do",
+          "term": "will do",
+          "ipa": "/ˈwɪl ˌduː/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "się robi",
+          "definition": "A short, informal way to say you will do what someone asked.",
+          "register": "potoczny",
+          "contextPl": "Krótkie potwierdzenie przyjęcia prośby",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bring the tape and the scissors? Will do.",
+              "pl": "Przynieść taśmę i nożyczki? Się robi.",
+              "focusEn": "Will do",
+              "focusPl": "Się robi"
+            },
+            {
+              "en": "When he asked me to grab extra boxes, I just texted back will do.",
+              "pl": "Kiedy poprosił, żebym wziął dodatkowe pudła, odpisałem tylko się robi.",
+              "focusEn": "will do",
+              "focusPl": "się robi"
+            }
+          ],
+          "acceptedAnswers": [
+            "will do",
+            "OK",
+            "sure"
+          ],
+          "acceptedTranslations": [
+            "się robi",
+            "dobra",
+            "zrobię to",
+            "jasne"
+          ]
+        },
+        {
+          "id": "requests-favors.id-be-glad-to",
+          "term": "I'd be glad to",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "chętnie",
+          "definition": "A polite way to agree to help.",
+          "register": "neutralny",
+          "contextPl": "Uprzejma, chętna zgoda",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Help you move the piano? I'd be glad to.",
+              "pl": "Pomóc ci przenieść pianino? Bardzo chętnie.",
+              "focusEn": "I'd be glad to",
+              "focusPl": "Bardzo chętnie"
+            },
+            {
+              "en": "I told him I'd be glad to help with the heavy boxes.",
+              "pl": "Powiedziałem mu, że chętnie pomogę przy ciężkich pudłach.",
+              "focusEn": "I'd be glad to",
+              "focusPl": "chętnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'd be glad to",
+            "I'd be happy to",
+            "I would be glad to"
+          ],
+          "acceptedTranslations": [
+            "chętnie",
+            "z przyjemnością",
+            "bardzo chętnie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "requests-favors.refusing",
+      "namePl": "Grzeczna odmowa",
+      "scenePl": "Znajomy dzwoni z prośbą o pożyczenie samochodu i pomoc w weekend, a ty musisz odmówić",
+      "entries": [
+        {
+          "id": "requests-favors.im-afraid",
+          "term": "I'm afraid",
+          "ipa": "/aɪm əˈfreɪd/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "obawiam się, że",
+          "definition": "A polite phrase used before giving bad news or saying no.",
+          "register": "neutralny",
+          "contextPl": "Łagodzenie odmowy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm afraid I can't lend you my car this weekend.",
+              "pl": "Obawiam się, że nie mogę pożyczyć ci samochodu w ten weekend.",
+              "focusEn": "I'm afraid",
+              "focusPl": "Obawiam się"
+            },
+            {
+              "en": "I'm afraid I'm busy on Saturday; I have a family dinner.",
+              "pl": "Niestety w sobotę jestem zajęty, mam rodzinny obiad.",
+              "focusEn": "I'm afraid",
+              "focusPl": "Niestety"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'm afraid",
+            "I'm afraid not"
+          ],
+          "acceptedTranslations": [
+            "obawiam się, że",
+            "niestety",
+            "przykro mi, ale"
+          ]
+        },
+        {
+          "id": "requests-favors.unfortunately",
+          "term": "unfortunately",
+          "ipa": "/ʌnˈfɔːrtʃənətli/",
+          "pos": "przysłówek",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "niestety",
+          "definition": "Used to say that something is sad or disappointing.",
+          "register": "neutralny",
+          "contextPl": "Uprzejme wprowadzenie odmowy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Unfortunately, I need my car for work on Monday.",
+              "pl": "Niestety w poniedziałek potrzebuję samochodu do pracy.",
+              "focusEn": "Unfortunately",
+              "focusPl": "Niestety"
+            },
+            {
+              "en": "I told him that, unfortunately, I couldn't help this time.",
+              "pl": "Powiedziałem mu, że niestety tym razem nie mogę pomóc.",
+              "focusEn": "unfortunately",
+              "focusPl": "niestety"
+            }
+          ],
+          "acceptedAnswers": [
+            "unfortunately",
+            "sadly"
+          ],
+          "acceptedTranslations": [
+            "niestety",
+            "na nieszczęście",
+            "szkoda, ale"
+          ]
+        },
+        {
+          "id": "requests-favors.id-love-to-but",
+          "term": "I'd love to, but",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "bardzo bym chciał, ale",
+          "definition": "A friendly way to refuse an invitation or request.",
+          "register": "neutralny",
+          "contextPl": "Ciepła odmowa",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd love to, but I'm working all weekend.",
+              "pl": "Bardzo bym chciał, ale pracuję cały weekend.",
+              "focusEn": "I'd love to, but",
+              "focusPl": "Bardzo bym chciał, ale"
+            },
+            {
+              "en": "She said she'd love to, but she already had plans.",
+              "pl": "Powiedziała, że bardzo by chciała, ale ma już plany.",
+              "focusEn": "she'd love to, but",
+              "focusPl": "bardzo by chciała, ale"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'd love to, but",
+            "I would love to, but",
+            "I'd like to, but"
+          ],
+          "acceptedTranslations": [
+            "bardzo bym chciał, ale",
+            "chętnie, ale",
+            "z przyjemnością, ale"
+          ]
+        },
+        {
+          "id": "requests-favors.i-wish-i-could",
+          "term": "I wish I could",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "chciałbym móc",
+          "definition": "A phrase that shows you are sorry you cannot do something.",
+          "register": "neutralny",
+          "contextPl": "Odmowa z wyrazem żalu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I wish I could help, but my back still hurts.",
+              "pl": "Chciałbym móc pomóc, ale wciąż boli mnie kręgosłup.",
+              "focusEn": "I wish I could",
+              "focusPl": "Chciałbym móc"
+            },
+            {
+              "en": "I told him I wished I could lend him the car.",
+              "pl": "Powiedziałem mu, że żałuję, że nie mogę pożyczyć mu samochodu.",
+              "focusEn": "I wished I could",
+              "focusPl": "żałuję, że nie mogę"
+            }
+          ],
+          "acceptedAnswers": [
+            "I wish I could",
+            "wish I could"
+          ],
+          "acceptedTranslations": [
+            "chciałbym móc",
+            "szkoda, że nie mogę",
+            "żałuję, że nie mogę"
+          ]
+        },
+        {
+          "id": "requests-favors.say-no",
+          "term": "say no",
+          "ipa": "/ˌseɪ ˈnoʊ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odmówić",
+          "definition": "To refuse a request.",
+          "register": "neutralny",
+          "contextPl": "Mówienie „nie”",
+          "natural": "",
+          "forms": "say – said – said",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's hard for me to say no to friends.",
+              "pl": "Trudno mi odmawiać przyjaciołom.",
+              "focusEn": "say no",
+              "focusPl": "odmawiać"
+            },
+            {
+              "en": "I said no politely and offered to help another day.",
+              "pl": "Grzecznie odmówiłem i zaproponowałem pomoc w inny dzień.",
+              "focusEn": "said no",
+              "focusPl": "odmówiłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "say no",
+            "refuse",
+            "decline"
+          ],
+          "acceptedTranslations": [
+            "odmówić",
+            "odmawiać",
+            "powiedzieć nie"
+          ]
+        },
+        {
+          "id": "requests-favors.not-this-time",
+          "term": "not this time",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "nie tym razem",
+          "definition": "A gentle way to refuse while suggesting you may agree in the future.",
+          "register": "neutralny",
+          "contextPl": "Odmowa zostawiająca otwartą furtkę",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, not this time; I promised my wife we'd stay home.",
+              "pl": "Przykro mi, nie tym razem, obiecałem żonie, że zostaniemy w domu.",
+              "focusEn": "not this time",
+              "focusPl": "nie tym razem"
+            },
+            {
+              "en": "He asked to borrow money again, and my answer was not this time.",
+              "pl": "Znowu poprosił o pożyczkę, a moja odpowiedź brzmiała: nie tym razem.",
+              "focusEn": "not this time",
+              "focusPl": "nie tym razem"
+            }
+          ],
+          "acceptedAnswers": [
+            "not this time",
+            "maybe next time"
+          ],
+          "acceptedTranslations": [
+            "nie tym razem",
+            "może następnym razem",
+            "tym razem nie"
+          ]
+        },
+        {
+          "id": "requests-favors.take-a-rain-check",
+          "term": "take a rain check",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przełożyć na inny raz",
+          "definition": "To politely refuse an invitation now, but suggest doing it another time.",
+          "register": "potoczny",
+          "contextPl": "Przełożenie spotkania lub propozycji",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I take a rain check on dinner? I'm exhausted.",
+              "pl": "Możemy przełożyć kolację na inny raz? Jestem wykończony.",
+              "focusEn": "take a rain check",
+              "focusPl": "przełożyć kolację na inny raz"
+            },
+            {
+              "en": "She took a rain check on the movie but promised to come next week.",
+              "pl": "Przełożyła kino na inny termin, ale obiecała przyjść w przyszłym tygodniu.",
+              "focusEn": "took a rain check",
+              "focusPl": "Przełożyła kino na inny termin"
+            }
+          ],
+          "acceptedAnswers": [
+            "take a rain check",
+            "rain check"
+          ],
+          "acceptedTranslations": [
+            "przełożyć na inny raz",
+            "przełożyć na kiedy indziej",
+            "umówić się innym razem"
+          ]
+        },
+        {
+          "id": "requests-favors.ill-have-to-pass",
+          "term": "I'll have to pass",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "tym razem odpuszczę",
+          "definition": "An informal way to say no to an offer or invitation.",
+          "register": "potoczny",
+          "contextPl": "Grzeczna odmowa udziału",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks for asking, but I'll have to pass this weekend.",
+              "pl": "Dzięki za propozycję, ale w ten weekend muszę odpuścić.",
+              "focusEn": "I'll have to pass",
+              "focusPl": "muszę odpuścić"
+            },
+            {
+              "en": "When he asked me to help paint, I said I'd have to pass.",
+              "pl": "Kiedy poprosił mnie o pomoc w malowaniu, powiedziałem, że tym razem odpuszczę.",
+              "focusEn": "I'd have to pass",
+              "focusPl": "tym razem odpuszczę"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'll have to pass",
+            "I'll pass",
+            "pass"
+          ],
+          "acceptedTranslations": [
+            "tym razem odpuszczę",
+            "muszę odmówić",
+            "odpuszczę"
+          ]
+        },
+        {
+          "id": "requests-favors.im-not-comfortable-with",
+          "term": "I'm not comfortable with",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nie czuję się z tym dobrze",
+          "definition": "A polite way to say you do not want to do something because it feels wrong.",
+          "register": "neutralny",
+          "contextPl": "Odmowa z powodów osobistych",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm not comfortable with lending my car to anyone.",
+              "pl": "Nie czuję się dobrze z pożyczaniem komukolwiek samochodu.",
+              "focusEn": "I'm not comfortable with",
+              "focusPl": "Nie czuję się dobrze z"
+            },
+            {
+              "en": "I told him I wasn't comfortable with giving him my bank card.",
+              "pl": "Powiedziałem mu, że nie czuję się dobrze z myślą o daniu mu mojej karty.",
+              "focusEn": "I wasn't comfortable with",
+              "focusPl": "nie czuję się dobrze z myślą o"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'm not comfortable with",
+            "I'm not comfortable"
+          ],
+          "acceptedTranslations": [
+            "nie czuję się z tym dobrze",
+            "nie odpowiada mi",
+            "wolałbym nie"
+          ]
+        },
+        {
+          "id": "requests-favors.id-rather-not",
+          "term": "I'd rather not",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wolałbym nie",
+          "definition": "A polite way to say you do not want to do something.",
+          "register": "neutralny",
+          "contextPl": "Delikatna odmowa",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd rather not drive that far at night.",
+              "pl": "Wolałbym nie jechać tak daleko w nocy.",
+              "focusEn": "I'd rather not",
+              "focusPl": "Wolałbym nie"
+            },
+            {
+              "en": "She said she'd rather not lend her laptop again.",
+              "pl": "Powiedziała, że wolałaby nie pożyczać znowu laptopa.",
+              "focusEn": "she'd rather not",
+              "focusPl": "wolałaby nie"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'd rather not",
+            "I would rather not",
+            "I'd prefer not to"
+          ],
+          "acceptedTranslations": [
+            "wolałbym nie",
+            "raczej nie",
+            "nie bardzo chcę"
+          ]
+        },
+        {
+          "id": "requests-favors.impose",
+          "term": "impose",
+          "ipa": "/ɪmˈpoʊz/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "narzucać się",
+          "definition": "To ask someone for too much help or time in a way that may be unfair to them.",
+          "register": "formalny",
+          "contextPl": "Obawa, że prośba jest zbyt duża",
+          "natural": "",
+          "forms": "impose – imposed – imposed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I don't want to impose, but could I stay at your place for one night?",
+              "pl": "Nie chcę się narzucać, ale czy mógłbym przenocować u ciebie jedną noc?",
+              "focusEn": "impose",
+              "focusPl": "się narzucać"
+            },
+            {
+              "en": "He felt he was imposing, so he stopped asking for rides.",
+              "pl": "Czuł, że się narzuca, więc przestał prosić o podwożenie.",
+              "focusEn": "imposing",
+              "focusPl": "się narzuca"
+            }
+          ],
+          "acceptedAnswers": [
+            "impose",
+            "impose on"
+          ],
+          "acceptedTranslations": [
+            "narzucać się",
+            "nadużywać czyjejś uprzejmości",
+            "być ciężarem"
+          ]
+        },
+        {
+          "id": "requests-favors.too-much-to-ask",
+          "term": "too much to ask",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "za dużo wymagać",
+          "definition": "Used to say that a request is more than is reasonable.",
+          "register": "neutralny",
+          "contextPl": "Ocena, czy prośba nie jest przesadna",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Lending you my car for two weeks is too much to ask.",
+              "pl": "Pożyczenie ci samochodu na dwa tygodnie to za dużo.",
+              "focusEn": "too much to ask",
+              "focusPl": "za dużo"
+            },
+            {
+              "en": "I hope it's not too much to ask, but could you help me again on Sunday?",
+              "pl": "Mam nadzieję, że nie proszę o zbyt wiele, ale mógłbyś pomóc mi znowu w niedzielę?",
+              "focusEn": "too much to ask",
+              "focusPl": "proszę o zbyt wiele"
+            }
+          ],
+          "acceptedAnswers": [
+            "too much to ask"
+          ],
+          "acceptedTranslations": [
+            "za dużo wymagać",
+            "prosić o zbyt wiele",
+            "przesada"
+          ]
+        },
+        {
+          "id": "requests-favors.no-way",
+          "term": "no way",
+          "ipa": "/ˌnoʊ ˈweɪ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "nie ma mowy",
+          "definition": "A very informal and strong way to say no.",
+          "register": "potoczny",
+          "contextPl": "Stanowcza, potoczna odmowa",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Lend you my new car for a road trip? No way!",
+              "pl": "Pożyczyć ci nowe auto na wycieczkę? Nie ma mowy!",
+              "focusEn": "No way",
+              "focusPl": "Nie ma mowy"
+            },
+            {
+              "en": "He asked me to drive him at four a.m., and my answer was no way.",
+              "pl": "Poprosił, żebym zawiózł go o czwartej rano, a moja odpowiedź brzmiała: nie ma mowy.",
+              "focusEn": "no way",
+              "focusPl": "nie ma mowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "no way",
+            "absolutely not"
+          ],
+          "acceptedTranslations": [
+            "nie ma mowy",
+            "w życiu",
+            "wykluczone"
+          ]
+        },
+        {
+          "id": "requests-favors.out-of-the-question",
+          "term": "out of the question",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wykluczone",
+          "definition": "Impossible or not allowed.",
+          "register": "neutralny",
+          "contextPl": "Stanowcza, ale formalniejsza odmowa",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Lending money to him again is out of the question.",
+              "pl": "Ponowne pożyczanie mu pieniędzy jest wykluczone.",
+              "focusEn": "out of the question",
+              "focusPl": "wykluczone"
+            },
+            {
+              "en": "My parents said borrowing the car that night was out of the question.",
+              "pl": "Rodzice powiedzieli, że pożyczenie auta tamtego wieczoru nie wchodzi w grę.",
+              "focusEn": "out of the question",
+              "focusPl": "nie wchodzi w grę"
+            }
+          ],
+          "acceptedAnswers": [
+            "out of the question"
+          ],
+          "acceptedTranslations": [
+            "wykluczone",
+            "nie wchodzi w grę",
+            "nie ma mowy"
+          ]
+        },
+        {
+          "id": "requests-favors.i-cant-make-it",
+          "term": "I can't make it",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "nie dam rady przyjść",
+          "definition": "Used to say that you cannot come to something.",
+          "register": "neutralny",
+          "contextPl": "Odmowa udziału w spotkaniu lub pomocy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, I can't make it on Saturday; I'm out of town.",
+              "pl": "Przepraszam, w sobotę nie dam rady, wyjeżdżam z miasta.",
+              "focusEn": "I can't make it",
+              "focusPl": "nie dam rady"
+            },
+            {
+              "en": "I texted him that I couldn't make it to help him paint.",
+              "pl": "Napisałem mu, że nie dam rady przyjść pomóc przy malowaniu.",
+              "focusEn": "I couldn't make it",
+              "focusPl": "nie dam rady przyjść"
+            }
+          ],
+          "acceptedAnswers": [
+            "I can't make it",
+            "can't make it",
+            "I won't make it"
+          ],
+          "acceptedTranslations": [
+            "nie dam rady przyjść",
+            "nie mogę przyjść",
+            "nie dam rady"
+          ]
+        },
+        {
+          "id": "requests-favors.maybe-another-time",
+          "term": "maybe another time",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "może innym razem",
+          "definition": "A polite way to refuse now but suggest a future possibility.",
+          "register": "neutralny",
+          "contextPl": "Łagodna odmowa",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm too tired tonight; maybe another time.",
+              "pl": "Dziś jestem zbyt zmęczony, może innym razem.",
+              "focusEn": "maybe another time",
+              "focusPl": "może innym razem"
+            },
+            {
+              "en": "He couldn't lend me the ladder, but he said maybe another time.",
+              "pl": "Nie mógł mi pożyczyć drabiny, ale powiedział, że może innym razem.",
+              "focusEn": "maybe another time",
+              "focusPl": "może innym razem"
+            }
+          ],
+          "acceptedAnswers": [
+            "maybe another time",
+            "another time",
+            "maybe next time"
+          ],
+          "acceptedTranslations": [
+            "może innym razem",
+            "kiedy indziej",
+            "może następnym razem"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -35,7 +35,7 @@ final class ModelCodingTests: XCTestCase {
     }
 
     func testLenientNumbersAndStrings() throws {
-        let word = try decode(Word.self, #"{"id":"w","en":"x","level":5,"created":"oops","important":1,"meanings":[{"id":"m","translation":"t","usedExamples":[0,1.0,"a",2]}]}"#)
+        let word = try decode(Word.self, #"{"id":"w","en":"x","level":5,"created":"oops","important":"no","meanings":[{"id":"m","translation":"t","usedExamples":[0,1.0,"a",2]}]}"#)
         XCTAssertEqual(word.level, "5")
         XCTAssertEqual(word.created, 0)
         XCTAssertFalse(word.important)

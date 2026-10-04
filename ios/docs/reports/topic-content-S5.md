@@ -15,3 +15,5 @@
 | coworkers | 69 | 5 | 2 | 9 | 19 | 30 | 9 | 0 |
 | salary-benefits | 73 | 5 | 0 | 4 | 27 | 29 | 13 | 0 |
 | customer-service | 67 | 5 | 1 | 14 | 29 | 17 | 6 | 0 |
+| complaints-problems | 70 | 5 | 4 | 11 | 24 | 28 | 3 | 0 |
+| requests-favors | 62 | 4 | 7 | 27 | 18 | 9 | 1 | 0 |

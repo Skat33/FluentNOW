@@ -1,0 +1,3083 @@
+{
+  "schemaVersion": 1,
+  "id": "diet-nutrition",
+  "namePl": "Dieta i odżywianie",
+  "nameEn": "Diet and Nutrition",
+  "group": "food",
+  "symbol": "leaf",
+  "summaryPl": "Składniki odżywcze, zdrowe odżywianie, diety, alergie i nietolerancje, waga oraz suplementy.",
+  "aliases": [
+    "dieta",
+    "odżywianie",
+    "zdrowe jedzenie",
+    "zdrowe odżywianie",
+    "alergie pokarmowe",
+    "odchudzanie",
+    "kalorie",
+    "diet",
+    "nutrition",
+    "healthy eating"
+  ],
+  "categories": [
+    {
+      "id": "diet-nutrition.nutrients",
+      "namePl": "Składniki odżywcze",
+      "scenePl": "Czytanie etykiety z wartościami odżywczymi na opakowaniu płatków w sklepie",
+      "entries": [
+        {
+          "id": "diet-nutrition.calorie",
+          "term": "calorie",
+          "ipa": "/ˈkæləri/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kaloria",
+          "definition": "A unit for measuring how much energy food gives you.",
+          "register": "neutralny",
+          "contextPl": "Liczenie energii z jedzenia",
+          "natural": "",
+          "forms": "calories",
+          "collocations": "count calories; low in calories; empty calories",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This cereal has two hundred calories per bowl.",
+              "pl": "Te płatki mają dwieście kalorii na miskę.",
+              "focusEn": "calories",
+              "focusPl": "kalorii"
+            },
+            {
+              "en": "Granola has more calories than you'd think.",
+              "pl": "Granola ma więcej kalorii, niż można by pomyśleć.",
+              "focusEn": "calories",
+              "focusPl": "kalorii"
+            }
+          ],
+          "acceptedAnswers": [
+            "calorie"
+          ],
+          "acceptedTranslations": [
+            "kaloria"
+          ]
+        },
+        {
+          "id": "diet-nutrition.fat",
+          "term": "fat",
+          "ipa": "/fæt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "tłuszcz",
+          "definition": "A substance in food like oil or butter that gives energy.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie zawartości tłuszczu",
+          "natural": "",
+          "forms": "fats",
+          "collocations": "low-fat; healthy fats; high in fat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How much fat is in one serving?",
+              "pl": "Ile tłuszczu jest w jednej porcji?",
+              "focusEn": "fat",
+              "focusPl": "tłuszczu"
+            },
+            {
+              "en": "The low-fat version has more sugar.",
+              "pl": "Wersja o obniżonej zawartości tłuszczu ma więcej cukru.",
+              "focusEn": "fat",
+              "focusPl": "tłuszczu"
+            }
+          ],
+          "acceptedAnswers": [
+            "fat"
+          ],
+          "acceptedTranslations": [
+            "tłuszcz"
+          ]
+        },
+        {
+          "id": "diet-nutrition.protein",
+          "term": "protein",
+          "ipa": "/ˈproʊtiːn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "białko",
+          "definition": "A nutrient in meat, eggs and beans that the body uses to build muscle.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie zawartości białka",
+          "natural": "",
+          "forms": "",
+          "collocations": "high in protein; a source of protein",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Białko jajka to „egg white”, a składnik odżywczy to „protein”.",
+          "examples": [
+            {
+              "en": "This yogurt has fifteen grams of protein.",
+              "pl": "Ten jogurt ma piętnaście gramów białka.",
+              "focusEn": "protein",
+              "focusPl": "białka"
+            },
+            {
+              "en": "I'm looking for a cereal with more protein and less sugar.",
+              "pl": "Szukam płatków z większą ilością białka i mniejszą ilością cukru.",
+              "focusEn": "protein",
+              "focusPl": "białka"
+            }
+          ],
+          "acceptedAnswers": [
+            "protein"
+          ],
+          "acceptedTranslations": [
+            "białko",
+            "proteina"
+          ]
+        },
+        {
+          "id": "diet-nutrition.carbs",
+          "term": "carbs",
+          "ipa": "/kɑːrbz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "węglowodany",
+          "definition": "Short for carbohydrates: nutrients in bread, pasta and sugar that give energy.",
+          "register": "potoczny",
+          "contextPl": "Rozmowy o diecie i etykietach",
+          "natural": "carbohydrates",
+          "forms": "",
+          "collocations": "cut carbs; low in carbs",
+          "synonyms": "carbohydrates",
+          "antonyms": "",
+          "notePl": "Potoczny skrót od „carbohydrates”.",
+          "examples": [
+            {
+              "en": "Most of the calories in this cereal come from carbs.",
+              "pl": "Większość kalorii w tych płatkach pochodzi z węglowodanów.",
+              "focusEn": "carbs",
+              "focusPl": "węglowodanów"
+            },
+            {
+              "en": "Bread and pasta are full of carbs.",
+              "pl": "Chleb i makaron są pełne węglowodanów.",
+              "focusEn": "carbs",
+              "focusPl": "węglowodanów"
+            }
+          ],
+          "acceptedAnswers": [
+            "carbs",
+            "carbohydrates",
+            "carb"
+          ],
+          "acceptedTranslations": [
+            "węglowodany",
+            "węgle"
+          ]
+        },
+        {
+          "id": "diet-nutrition.added-sugar",
+          "term": "added sugar",
+          "ipa": "/ˌædɪd ˈʃʊɡər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dodany cukier",
+          "definition": "Sugar put into food when it is made, not found in it naturally.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie słodzonych produktów",
+          "natural": "",
+          "forms": "added sugars",
+          "collocations": "no added sugar; high in added sugar",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Check the label to see how much added sugar there is.",
+              "pl": "Sprawdź na etykiecie, ile jest dodanego cukru.",
+              "focusEn": "added sugar",
+              "focusPl": "dodanego cukru"
+            },
+            {
+              "en": "This \"healthy\" granola has twelve grams of added sugar.",
+              "pl": "Ta „zdrowa” granola ma dwanaście gramów dodanego cukru.",
+              "focusEn": "added sugar",
+              "focusPl": "dodanego cukru"
+            }
+          ],
+          "acceptedAnswers": [
+            "added sugar",
+            "added sugars"
+          ],
+          "acceptedTranslations": [
+            "dodany cukier",
+            "cukier dodany"
+          ]
+        },
+        {
+          "id": "diet-nutrition.fiber",
+          "term": "fiber",
+          "ipa": "/ˈfaɪbər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "błonnik",
+          "definition": "The part of plant food that helps digestion.",
+          "register": "neutralny",
+          "contextPl": "Zdrowe pieczywo i płatki",
+          "natural": "",
+          "forms": "",
+          "collocations": "high in fiber; dietary fiber",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska: „fiber” (brytyjska: „fibre”).",
+          "examples": [
+            {
+              "en": "Oatmeal is high in fiber and keeps you full.",
+              "pl": "Owsianka ma dużo błonnika i daje uczucie sytości.",
+              "focusEn": "fiber",
+              "focusPl": "błonnika"
+            },
+            {
+              "en": "Look for bread with at least three grams of fiber.",
+              "pl": "Szukaj chleba z co najmniej trzema gramami błonnika.",
+              "focusEn": "fiber",
+              "focusPl": "błonnika"
+            }
+          ],
+          "acceptedAnswers": [
+            "fiber"
+          ],
+          "acceptedTranslations": [
+            "błonnik",
+            "włókno pokarmowe"
+          ]
+        },
+        {
+          "id": "diet-nutrition.nutrition-facts",
+          "term": "nutrition facts",
+          "ipa": "/nuːˈtrɪʃən ˌfækts/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wartości odżywcze",
+          "definition": "The label on food that lists calories and nutrients.",
+          "register": "neutralny",
+          "contextPl": "Etykieta na opakowaniu",
+          "natural": "nutrition label",
+          "forms": "",
+          "collocations": "read the nutrition facts",
+          "synonyms": "nutrition label",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The nutrition facts are on the side of the box.",
+              "pl": "Wartości odżywcze są na boku pudełka.",
+              "focusEn": "nutrition facts",
+              "focusPl": "Wartości odżywcze"
+            },
+            {
+              "en": "I always read the nutrition facts before I buy snacks.",
+              "pl": "Zawsze czytam wartości odżywcze, zanim kupię przekąski.",
+              "focusEn": "nutrition facts",
+              "focusPl": "wartości odżywcze"
+            }
+          ],
+          "acceptedAnswers": [
+            "nutrition facts",
+            "nutrition label"
+          ],
+          "acceptedTranslations": [
+            "wartości odżywcze",
+            "tabela wartości odżywczych"
+          ]
+        },
+        {
+          "id": "diet-nutrition.serving-size",
+          "term": "serving size",
+          "ipa": "/ˈsɜːrvɪŋ ˌsaɪz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wielkość porcji",
+          "definition": "The amount of food the nutrition label is based on.",
+          "register": "neutralny",
+          "contextPl": "Czytanie etykiety",
+          "natural": "",
+          "forms": "serving sizes",
+          "collocations": "check the serving size",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The serving size is only half a cup.",
+              "pl": "Wielkość porcji to tylko pół szklanki.",
+              "focusEn": "serving size",
+              "focusPl": "Wielkość porcji"
+            },
+            {
+              "en": "Watch the serving size; the bag has three servings.",
+              "pl": "Uważaj na wielkość porcji, w torebce są trzy porcje.",
+              "focusEn": "serving size",
+              "focusPl": "wielkość porcji"
+            }
+          ],
+          "acceptedAnswers": [
+            "serving size"
+          ],
+          "acceptedTranslations": [
+            "wielkość porcji",
+            "porcja"
+          ]
+        },
+        {
+          "id": "diet-nutrition.sodium",
+          "term": "sodium",
+          "ipa": "/ˈsoʊdiəm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "sód",
+          "definition": "A part of salt; too much is bad for blood pressure.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie zawartości soli",
+          "natural": "",
+          "forms": "",
+          "collocations": "high in sodium; low-sodium",
+          "synonyms": "salt",
+          "antonyms": "",
+          "notePl": "Na amerykańskich etykietach sól podaje się jako „sodium”.",
+          "examples": [
+            {
+              "en": "Canned soup is often very high in sodium.",
+              "pl": "Zupa z puszki często ma bardzo dużo sodu.",
+              "focusEn": "sodium",
+              "focusPl": "sodu"
+            },
+            {
+              "en": "This brand has less sodium than the others.",
+              "pl": "Ta marka ma mniej sodu niż inne.",
+              "focusEn": "sodium",
+              "focusPl": "sodu"
+            }
+          ],
+          "acceptedAnswers": [
+            "sodium",
+            "salt"
+          ],
+          "acceptedTranslations": [
+            "sód",
+            "sól"
+          ]
+        },
+        {
+          "id": "diet-nutrition.calcium",
+          "term": "calcium",
+          "ipa": "/ˈkælsiəm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wapń",
+          "definition": "A mineral in milk and other foods that keeps bones strong.",
+          "register": "neutralny",
+          "contextPl": "Minerały w produktach",
+          "natural": "",
+          "forms": "",
+          "collocations": "rich in calcium; a source of calcium",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Milk and yogurt are good sources of calcium.",
+              "pl": "Mleko i jogurt to dobre źródła wapnia.",
+              "focusEn": "calcium",
+              "focusPl": "wapnia"
+            },
+            {
+              "en": "This orange juice has added calcium.",
+              "pl": "Ten sok pomarańczowy ma dodatek wapnia.",
+              "focusEn": "calcium",
+              "focusPl": "wapnia"
+            }
+          ],
+          "acceptedAnswers": [
+            "calcium"
+          ],
+          "acceptedTranslations": [
+            "wapń"
+          ]
+        },
+        {
+          "id": "diet-nutrition.iron",
+          "term": "iron",
+          "ipa": "/ˈaɪərn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "żelazo",
+          "definition": "A mineral in food that the blood needs.",
+          "register": "neutralny",
+          "contextPl": "Minerały w produktach",
+          "natural": "",
+          "forms": "",
+          "collocations": "rich in iron; iron levels",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This cereal says it has ninety percent of your daily iron.",
+              "pl": "Na tych płatkach jest napisane, że pokrywają dziewięćdziesiąt procent dziennego zapotrzebowania na żelazo.",
+              "focusEn": "iron",
+              "focusPl": "żelazo"
+            },
+            {
+              "en": "Spinach and beans are good sources of iron.",
+              "pl": "Szpinak i fasola to dobre źródła żelaza.",
+              "focusEn": "iron",
+              "focusPl": "żelaza"
+            }
+          ],
+          "acceptedAnswers": [
+            "iron"
+          ],
+          "acceptedTranslations": [
+            "żelazo"
+          ]
+        },
+        {
+          "id": "diet-nutrition.cholesterol",
+          "term": "cholesterol",
+          "ipa": "/kəˈlɛstəˌrɔːl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "cholesterol",
+          "definition": "A fatty substance in the blood and in some foods.",
+          "register": "neutralny",
+          "contextPl": "Zdrowie serca i etykiety",
+          "natural": "",
+          "forms": "",
+          "collocations": "high cholesterol; zero cholesterol",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Eggs have cholesterol, but they're still healthy.",
+              "pl": "Jajka zawierają cholesterol, ale i tak są zdrowe.",
+              "focusEn": "cholesterol",
+              "focusPl": "cholesterol"
+            },
+            {
+              "en": "The label shows zero cholesterol for this oat milk.",
+              "pl": "Etykieta pokazuje zero cholesterolu w tym mleku owsianym.",
+              "focusEn": "cholesterol",
+              "focusPl": "cholesterolu"
+            }
+          ],
+          "acceptedAnswers": [
+            "cholesterol"
+          ],
+          "acceptedTranslations": [
+            "cholesterol"
+          ]
+        },
+        {
+          "id": "diet-nutrition.saturated-fat",
+          "term": "saturated fat",
+          "ipa": "/ˌsætʃəreɪtɪd ˈfæt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "tłuszcze nasycone",
+          "definition": "A type of fat found in butter and meat that is less healthy.",
+          "register": "specjalistyczny",
+          "contextPl": "Czytanie etykiety",
+          "natural": "",
+          "forms": "saturated fats",
+          "collocations": "high in saturated fat",
+          "synonyms": "",
+          "antonyms": "unsaturated fat",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Butter is high in saturated fat.",
+              "pl": "Masło ma dużo tłuszczów nasyconych.",
+              "focusEn": "saturated fat",
+              "focusPl": "tłuszczów nasyconych"
+            },
+            {
+              "en": "Compare the saturated fat in these two brands of cookies.",
+              "pl": "Porównaj tłuszcze nasycone w tych dwóch markach ciastek.",
+              "focusEn": "saturated fat",
+              "focusPl": "tłuszcze nasycone"
+            }
+          ],
+          "acceptedAnswers": [
+            "saturated fat"
+          ],
+          "acceptedTranslations": [
+            "tłuszcze nasycone",
+            "tłuszcz nasycony"
+          ]
+        },
+        {
+          "id": "diet-nutrition.daily-value",
+          "term": "daily value",
+          "ipa": "/ˌdeɪli ˈvæljuː/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dzienne zapotrzebowanie",
+          "definition": "How much of a nutrient you should get each day, shown as a percent on labels.",
+          "register": "specjalistyczny",
+          "contextPl": "Procenty na etykiecie",
+          "natural": "",
+          "forms": "daily values",
+          "collocations": "percent daily value",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "One cup gives you twenty percent of the daily value of vitamin C.",
+              "pl": "Jedna szklanka pokrywa dwadzieścia procent dziennego zapotrzebowania na witaminę C.",
+              "focusEn": "daily value",
+              "focusPl": "dziennego zapotrzebowania"
+            },
+            {
+              "en": "The percent daily value is listed next to each nutrient.",
+              "pl": "Procent dziennego zapotrzebowania podano obok każdego składnika.",
+              "focusEn": "daily value",
+              "focusPl": "dziennego zapotrzebowania"
+            }
+          ],
+          "acceptedAnswers": [
+            "daily value",
+            "percent daily value"
+          ],
+          "acceptedTranslations": [
+            "dzienne zapotrzebowanie",
+            "dzienna wartość"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diet-nutrition.healthy-eating",
+      "namePl": "Zdrowe odżywianie",
+      "scenePl": "Rozmowa z dietetyczką w gabinecie o codziennym jadłospisie",
+      "entries": [
+        {
+          "id": "diet-nutrition.healthy",
+          "term": "healthy",
+          "ipa": "/ˈhɛlθi/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "zdrowy",
+          "definition": "Good for your body.",
+          "register": "neutralny",
+          "contextPl": "Ocena jedzenia i nawyków",
+          "natural": "",
+          "forms": "healthier – healthiest",
+          "collocations": "healthy food; healthy snacks",
+          "synonyms": "",
+          "antonyms": "unhealthy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your breakfast is pretty healthy, but lunch needs work.",
+              "pl": "Twoje śniadanie jest całkiem zdrowe, ale nad lunchem trzeba popracować.",
+              "focusEn": "healthy",
+              "focusPl": "zdrowe"
+            },
+            {
+              "en": "Try to keep healthy snacks at your desk.",
+              "pl": "Staraj się trzymać przy biurku zdrowe przekąski.",
+              "focusEn": "healthy",
+              "focusPl": "zdrowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "healthy"
+          ],
+          "acceptedTranslations": [
+            "zdrowy"
+          ]
+        },
+        {
+          "id": "diet-nutrition.diet",
+          "term": "diet",
+          "ipa": "/ˈdaɪət/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dieta",
+          "definition": "The food that a person usually eats.",
+          "register": "neutralny",
+          "contextPl": "Ogólny sposób odżywiania",
+          "natural": "",
+          "forms": "diets",
+          "collocations": "a healthy diet; a poor diet",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Diet” to też ogólnie sposób żywienia, nie tylko odchudzanie.",
+          "examples": [
+            {
+              "en": "Your diet should include more vegetables and fish.",
+              "pl": "Twoja dieta powinna obejmować więcej warzyw i ryb.",
+              "focusEn": "diet",
+              "focusPl": "dieta"
+            },
+            {
+              "en": "A good diet matters more than any supplement.",
+              "pl": "Dobra dieta jest ważniejsza niż jakikolwiek suplement.",
+              "focusEn": "diet",
+              "focusPl": "dieta"
+            }
+          ],
+          "acceptedAnswers": [
+            "diet"
+          ],
+          "acceptedTranslations": [
+            "dieta",
+            "sposób odżywiania"
+          ]
+        },
+        {
+          "id": "diet-nutrition.unhealthy",
+          "term": "unhealthy",
+          "ipa": "/ʌnˈhɛlθi/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "niezdrowy",
+          "definition": "Bad for your health.",
+          "register": "neutralny",
+          "contextPl": "Ocena jedzenia i nawyków",
+          "natural": "",
+          "forms": "unhealthier – unhealthiest",
+          "collocations": "unhealthy food; an unhealthy habit",
+          "synonyms": "",
+          "antonyms": "healthy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Eating dinner at midnight is an unhealthy habit.",
+              "pl": "Jedzenie kolacji o północy to niezdrowy nawyk.",
+              "focusEn": "unhealthy",
+              "focusPl": "niezdrowy"
+            },
+            {
+              "en": "Not all fats are unhealthy, the dietitian explained.",
+              "pl": "Nie wszystkie tłuszcze są niezdrowe, wyjaśniła dietetyczka.",
+              "focusEn": "unhealthy",
+              "focusPl": "niezdrowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "unhealthy"
+          ],
+          "acceptedTranslations": [
+            "niezdrowy"
+          ]
+        },
+        {
+          "id": "diet-nutrition.eat-healthy",
+          "term": "eat healthy",
+          "ipa": "/ˌiːt ˈhɛlθi/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zdrowo się odżywiać",
+          "definition": "To choose food that is good for you.",
+          "register": "neutralny",
+          "contextPl": "Cele żywieniowe",
+          "natural": "",
+          "forms": "ate – eaten",
+          "collocations": "try to eat healthy",
+          "synonyms": "eat well",
+          "antonyms": "",
+          "notePl": "Gramatycznie poprawniej „eat healthily”, ale w mowie amerykańskiej dominuje „eat healthy”.",
+          "examples": [
+            {
+              "en": "I want to eat healthy, but I don't have time to cook.",
+              "pl": "Chcę zdrowo się odżywiać, ale nie mam czasu gotować.",
+              "focusEn": "eat healthy",
+              "focusPl": "zdrowo się odżywiać"
+            },
+            {
+              "en": "Eating healthy doesn't have to be expensive.",
+              "pl": "Zdrowe odżywianie nie musi być drogie.",
+              "focusEn": "Eating healthy",
+              "focusPl": "Zdrowe odżywianie"
+            }
+          ],
+          "acceptedAnswers": [
+            "eat healthy",
+            "eat healthily",
+            "eat well"
+          ],
+          "acceptedTranslations": [
+            "zdrowo się odżywiać",
+            "jeść zdrowo"
+          ]
+        },
+        {
+          "id": "diet-nutrition.junk-food",
+          "term": "junk food",
+          "ipa": "/ˈdʒʌŋk ˌfuːd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "śmieciowe jedzenie",
+          "definition": "Unhealthy food with lots of fat, sugar or salt.",
+          "register": "potoczny",
+          "contextPl": "Niezdrowe przekąski i fast food",
+          "natural": "",
+          "forms": "",
+          "collocations": "eat junk food; cut out junk food",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I eat too much junk food when I'm stressed.",
+              "pl": "Kiedy jestem zestresowany, jem za dużo śmieciowego jedzenia.",
+              "focusEn": "junk food",
+              "focusPl": "śmieciowego jedzenia"
+            },
+            {
+              "en": "Try replacing junk food with fruit and nuts.",
+              "pl": "Spróbuj zastąpić niezdrowe jedzenie owocami i orzechami.",
+              "focusEn": "junk food",
+              "focusPl": "niezdrowe jedzenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "junk food"
+          ],
+          "acceptedTranslations": [
+            "śmieciowe jedzenie",
+            "niezdrowe jedzenie"
+          ]
+        },
+        {
+          "id": "diet-nutrition.balanced-diet",
+          "term": "balanced diet",
+          "ipa": "/ˌbælənst ˈdaɪət/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zbilansowana dieta",
+          "definition": "A diet with the right amounts of different kinds of food.",
+          "register": "neutralny",
+          "contextPl": "Zalecenia dietetyka",
+          "natural": "",
+          "forms": "",
+          "collocations": "eat a balanced diet",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A balanced diet includes protein, carbs, and healthy fats.",
+              "pl": "Zbilansowana dieta obejmuje białko, węglowodany i zdrowe tłuszcze.",
+              "focusEn": "balanced diet",
+              "focusPl": "Zbilansowana dieta"
+            },
+            {
+              "en": "You don't need pills if you eat a balanced diet.",
+              "pl": "Nie potrzebujesz tabletek, jeśli stosujesz zbilansowaną dietę.",
+              "focusEn": "balanced diet",
+              "focusPl": "zbilansowaną dietę"
+            }
+          ],
+          "acceptedAnswers": [
+            "balanced diet"
+          ],
+          "acceptedTranslations": [
+            "zbilansowana dieta",
+            "zrównoważona dieta"
+          ]
+        },
+        {
+          "id": "diet-nutrition.cut-back-on",
+          "term": "cut back on",
+          "ipa": "/ˌkʌt ˈbæk ɑːn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ograniczyć",
+          "definition": "To eat or drink less of something.",
+          "register": "neutralny",
+          "contextPl": "Zmiana nawyków",
+          "natural": "",
+          "forms": "cut – cut",
+          "collocations": "cut back on sugar; cut back on coffee",
+          "synonyms": "reduce",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You should cut back on soda and candy.",
+              "pl": "Powinieneś ograniczyć napoje gazowane i słodycze.",
+              "focusEn": "cut back on",
+              "focusPl": "ograniczyć"
+            },
+            {
+              "en": "I've cut back on sugar, and I feel much better.",
+              "pl": "Ograniczyłem cukier i czuję się dużo lepiej.",
+              "focusEn": "cut back on",
+              "focusPl": "Ograniczyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "cut back on",
+            "cut down on"
+          ],
+          "acceptedTranslations": [
+            "ograniczyć",
+            "ograniczać",
+            "jeść mniej"
+          ]
+        },
+        {
+          "id": "diet-nutrition.skip-a-meal",
+          "term": "skip a meal",
+          "ipa": "/ˌskɪp ə ˈmiːl/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pominąć posiłek",
+          "definition": "To not eat a meal you would usually eat.",
+          "register": "neutralny",
+          "contextPl": "Nieregularne jedzenie",
+          "natural": "",
+          "forms": "skipped",
+          "collocations": "skip meals; skip breakfast",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Try not to skip meals, especially breakfast.",
+              "pl": "Staraj się nie pomijać posiłków, zwłaszcza śniadania.",
+              "focusEn": "skip meals",
+              "focusPl": "pomijać posiłków"
+            },
+            {
+              "en": "When I skip meals, I end up snacking all evening.",
+              "pl": "Kiedy pomijam posiłki, cały wieczór podjadam.",
+              "focusEn": "skip meals",
+              "focusPl": "pomijam posiłki"
+            }
+          ],
+          "acceptedAnswers": [
+            "skip a meal",
+            "skip meals"
+          ],
+          "acceptedTranslations": [
+            "pominąć posiłek",
+            "pomijać posiłki"
+          ]
+        },
+        {
+          "id": "diet-nutrition.dietitian",
+          "term": "dietitian",
+          "ipa": "/ˌdaɪəˈtɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dietetyk",
+          "definition": "An expert in food and healthy eating who gives advice.",
+          "register": "neutralny",
+          "contextPl": "Wizyta u specjalisty od żywienia",
+          "natural": "nutritionist",
+          "forms": "dietitians",
+          "collocations": "see a dietitian",
+          "synonyms": "nutritionist",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My dietitian asked me to write down everything I eat.",
+              "pl": "Dietetyczka poprosiła mnie, żebym zapisywał wszystko, co jem.",
+              "focusEn": "dietitian",
+              "focusPl": "Dietetyczka"
+            },
+            {
+              "en": "The dietitian made me a simple meal plan.",
+              "pl": "Dietetyk przygotował mi prosty plan posiłków.",
+              "focusEn": "dietitian",
+              "focusPl": "Dietetyk"
+            }
+          ],
+          "acceptedAnswers": [
+            "dietitian",
+            "nutritionist"
+          ],
+          "acceptedTranslations": [
+            "dietetyk",
+            "dietetyczka"
+          ]
+        },
+        {
+          "id": "diet-nutrition.processed-food",
+          "term": "processed food",
+          "ipa": "/ˌprɑːsɛst ˈfuːd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "żywność przetworzona",
+          "definition": "Food changed in a factory, often with added salt, sugar or chemicals.",
+          "register": "neutralny",
+          "contextPl": "Unikanie gotowych produktów",
+          "natural": "",
+          "forms": "processed foods",
+          "collocations": "eat less processed food",
+          "synonyms": "",
+          "antonyms": "whole foods",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Processed food often has a lot of salt and sugar.",
+              "pl": "Żywność przetworzona często ma dużo soli i cukru.",
+              "focusEn": "Processed food",
+              "focusPl": "Żywność przetworzona"
+            },
+            {
+              "en": "Cooking at home helps you eat less processed food.",
+              "pl": "Gotowanie w domu pomaga jeść mniej przetworzonej żywności.",
+              "focusEn": "processed food",
+              "focusPl": "przetworzonej żywności"
+            }
+          ],
+          "acceptedAnswers": [
+            "processed food",
+            "processed foods"
+          ],
+          "acceptedTranslations": [
+            "żywność przetworzona",
+            "przetworzone jedzenie"
+          ]
+        },
+        {
+          "id": "diet-nutrition.nutritious",
+          "term": "nutritious",
+          "ipa": "/nuːˈtrɪʃəs/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pożywny",
+          "definition": "Full of things the body needs to be healthy.",
+          "register": "neutralny",
+          "contextPl": "Ocena wartości jedzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "a nutritious meal; cheap and nutritious",
+          "synonyms": "healthy",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Oatmeal is cheap and very nutritious.",
+              "pl": "Owsianka jest tania i bardzo pożywna.",
+              "focusEn": "nutritious",
+              "focusPl": "pożywna"
+            },
+            {
+              "en": "Make your snacks nutritious, not just tasty.",
+              "pl": "Niech twoje przekąski będą wartościowe, a nie tylko smaczne.",
+              "focusEn": "nutritious",
+              "focusPl": "wartościowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "nutritious"
+          ],
+          "acceptedTranslations": [
+            "pożywny",
+            "wartościowy",
+            "odżywczy"
+          ]
+        },
+        {
+          "id": "diet-nutrition.overeat",
+          "term": "overeat",
+          "ipa": "/ˌoʊvərˈiːt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przejadać się",
+          "definition": "To eat more than you need.",
+          "register": "neutralny",
+          "contextPl": "Złe nawyki żywieniowe",
+          "natural": "",
+          "forms": "overate – overeaten",
+          "collocations": "tend to overeat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I tend to overeat when I watch TV.",
+              "pl": "Mam skłonność do przejadania się przy telewizorze.",
+              "focusEn": "overeat",
+              "focusPl": "przejadania się"
+            },
+            {
+              "en": "Eating slowly can stop you from overeating.",
+              "pl": "Powolne jedzenie może powstrzymać cię przed przejadaniem się.",
+              "focusEn": "overeating",
+              "focusPl": "przejadaniem się"
+            }
+          ],
+          "acceptedAnswers": [
+            "overeat"
+          ],
+          "acceptedTranslations": [
+            "przejadać się",
+            "przejeść się"
+          ]
+        },
+        {
+          "id": "diet-nutrition.portion-control",
+          "term": "portion control",
+          "ipa": "/ˈpɔːrʃən kənˌtroʊl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "kontrola porcji",
+          "definition": "Eating sensible amounts of food at each meal.",
+          "register": "neutralny",
+          "contextPl": "Odchudzanie bez ścisłej diety",
+          "natural": "",
+          "forms": "",
+          "collocations": "practice portion control",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Portion control is easier with smaller plates.",
+              "pl": "Kontrola porcji jest łatwiejsza z mniejszymi talerzami.",
+              "focusEn": "Portion control",
+              "focusPl": "Kontrola porcji"
+            },
+            {
+              "en": "You don't need a strict diet, just better portion control.",
+              "pl": "Nie potrzebujesz ścisłej diety, tylko lepszej kontroli porcji.",
+              "focusEn": "portion control",
+              "focusPl": "kontroli porcji"
+            }
+          ],
+          "acceptedAnswers": [
+            "portion control"
+          ],
+          "acceptedTranslations": [
+            "kontrola porcji",
+            "kontrola wielkości porcji"
+          ]
+        },
+        {
+          "id": "diet-nutrition.everything-in-moderation",
+          "term": "everything in moderation",
+          "ipa": "/ˈɛvriθɪŋ ɪn ˌmɑːdəˈreɪʃən/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wszystko z umiarem",
+          "definition": "Used to say you can enjoy anything if you do not have too much.",
+          "register": "neutralny",
+          "contextPl": "Zdroworozsądkowa zasada żywienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can still have dessert; it's everything in moderation.",
+              "pl": "Nadal możesz jeść desery, wszystko z umiarem.",
+              "focusEn": "everything in moderation",
+              "focusPl": "wszystko z umiarem"
+            },
+            {
+              "en": "My dietitian's favorite rule is everything in moderation.",
+              "pl": "Ulubiona zasada mojej dietetyczki to: wszystko z umiarem.",
+              "focusEn": "everything in moderation",
+              "focusPl": "wszystko z umiarem"
+            }
+          ],
+          "acceptedAnswers": [
+            "everything in moderation",
+            "all things in moderation"
+          ],
+          "acceptedTranslations": [
+            "wszystko z umiarem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diet-nutrition.diets",
+      "namePl": "Diety i sposoby żywienia",
+      "scenePl": "Rozmowa ze znajomymi przy wspólnym obiedzie o tym, kto co je",
+      "entries": [
+        {
+          "id": "diet-nutrition.on-a-diet",
+          "term": "on a diet",
+          "ipa": "/ˌɑːn ə ˈdaɪət/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "na diecie",
+          "definition": "Eating less or eating special food, usually to lose weight.",
+          "register": "neutralny",
+          "contextPl": "Odmawianie jedzenia z powodu diety",
+          "natural": "",
+          "forms": "",
+          "collocations": "be on a diet; go on a diet",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "No cake for me, thanks; I'm on a diet.",
+              "pl": "Dla mnie bez ciasta, dzięki, jestem na diecie.",
+              "focusEn": "on a diet",
+              "focusPl": "na diecie"
+            },
+            {
+              "en": "My brother has been on a diet since January.",
+              "pl": "Mój brat jest na diecie od stycznia.",
+              "focusEn": "on a diet",
+              "focusPl": "na diecie"
+            }
+          ],
+          "acceptedAnswers": [
+            "on a diet"
+          ],
+          "acceptedTranslations": [
+            "na diecie",
+            "odchudzać się"
+          ]
+        },
+        {
+          "id": "diet-nutrition.vegetarian",
+          "term": "vegetarian",
+          "ipa": "/ˌvɛdʒəˈtɛriən/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wegetarianin",
+          "definition": "A person who does not eat meat or fish.",
+          "register": "neutralny",
+          "contextPl": "Mówienie o swojej diecie",
+          "natural": "veggie",
+          "forms": "vegetarians",
+          "collocations": "a strict vegetarian",
+          "synonyms": "",
+          "antonyms": "meat-eater",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've been a vegetarian for ten years.",
+              "pl": "Jestem wegetarianinem od dziesięciu lat.",
+              "focusEn": "vegetarian",
+              "focusPl": "wegetarianinem"
+            },
+            {
+              "en": "Is there anything here for the vegetarians at the table?",
+              "pl": "Jest tu coś dla wegetarian przy stole?",
+              "focusEn": "vegetarians",
+              "focusPl": "wegetarian"
+            }
+          ],
+          "acceptedAnswers": [
+            "vegetarian"
+          ],
+          "acceptedTranslations": [
+            "wegetarianin",
+            "wegetarianka"
+          ]
+        },
+        {
+          "id": "diet-nutrition.vegan",
+          "term": "vegan",
+          "ipa": "/ˈviːɡən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "weganin",
+          "definition": "A person who eats no animal products, such as meat, eggs or dairy.",
+          "register": "neutralny",
+          "contextPl": "Mówienie o swojej diecie",
+          "natural": "",
+          "forms": "vegans",
+          "collocations": "a strict vegan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She's a strict vegan, so she skipped the cheese plate.",
+              "pl": "Jest ścisłą weganką, więc odpuściła deskę serów.",
+              "focusEn": "vegan",
+              "focusPl": "weganką"
+            },
+            {
+              "en": "More of my friends are becoming vegans every year.",
+              "pl": "Co roku coraz więcej moich znajomych zostaje weganami.",
+              "focusEn": "vegans",
+              "focusPl": "weganami"
+            }
+          ],
+          "acceptedAnswers": [
+            "vegan"
+          ],
+          "acceptedTranslations": [
+            "weganin",
+            "weganka"
+          ]
+        },
+        {
+          "id": "diet-nutrition.cut-out",
+          "term": "cut out",
+          "ipa": "/ˌkʌt ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odstawić",
+          "definition": "To stop eating something completely.",
+          "register": "neutralny",
+          "contextPl": "Eliminowanie produktów z diety",
+          "natural": "",
+          "forms": "cut – cut",
+          "collocations": "cut out sugar; cut out bread",
+          "synonyms": "give up",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I cut out sugar completely last month.",
+              "pl": "W zeszłym miesiącu całkowicie odstawiłem cukier.",
+              "focusEn": "cut out",
+              "focusPl": "odstawiłem"
+            },
+            {
+              "en": "If you cut out bread, eat more vegetables instead.",
+              "pl": "Jeśli wyeliminujesz chleb, jedz w zamian więcej warzyw.",
+              "focusEn": "cut out",
+              "focusPl": "wyeliminujesz"
+            }
+          ],
+          "acceptedAnswers": [
+            "cut out",
+            "give up"
+          ],
+          "acceptedTranslations": [
+            "odstawić",
+            "wyeliminować",
+            "zrezygnować z"
+          ]
+        },
+        {
+          "id": "diet-nutrition.plant-based",
+          "term": "plant-based",
+          "ipa": "/ˌplænt ˈbeɪst/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "roślinny",
+          "definition": "Made mostly or only from plants, not animals.",
+          "register": "neutralny",
+          "contextPl": "Dieta oparta na roślinach",
+          "natural": "",
+          "forms": "",
+          "collocations": "plant-based diet; plant-based burger",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're trying to eat more plant-based meals.",
+              "pl": "Staramy się jeść więcej roślinnych posiłków.",
+              "focusEn": "plant-based",
+              "focusPl": "roślinnych"
+            },
+            {
+              "en": "This plant-based burger tastes surprisingly good.",
+              "pl": "Ten roślinny burger smakuje zaskakująco dobrze.",
+              "focusEn": "plant-based",
+              "focusPl": "roślinny"
+            }
+          ],
+          "acceptedAnswers": [
+            "plant-based",
+            "plant based"
+          ],
+          "acceptedTranslations": [
+            "roślinny",
+            "wegański"
+          ]
+        },
+        {
+          "id": "diet-nutrition.low-carb",
+          "term": "low-carb",
+          "ipa": "/ˌloʊ ˈkɑːrb/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "niskowęglowodanowy",
+          "definition": "Containing very few carbohydrates.",
+          "register": "potoczny",
+          "contextPl": "Diety ograniczające węglowodany",
+          "natural": "",
+          "forms": "",
+          "collocations": "low-carb diet; low-carb option",
+          "synonyms": "",
+          "antonyms": "high-carb",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm on a low-carb diet, so no bread for me.",
+              "pl": "Jestem na diecie niskowęglowodanowej, więc dla mnie bez chleba.",
+              "focusEn": "low-carb",
+              "focusPl": "niskowęglowodanowej"
+            },
+            {
+              "en": "Is there a low-carb option instead of rice?",
+              "pl": "Jest jakaś niskowęglowodanowa opcja zamiast ryżu?",
+              "focusEn": "low-carb",
+              "focusPl": "niskowęglowodanowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "low-carb",
+            "low carb"
+          ],
+          "acceptedTranslations": [
+            "niskowęglowodanowy",
+            "z małą ilością węglowodanów"
+          ]
+        },
+        {
+          "id": "diet-nutrition.keto",
+          "term": "keto",
+          "ipa": "/ˈkiːtoʊ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "keto",
+          "definition": "A diet with very few carbs and a lot of fat.",
+          "register": "potoczny",
+          "contextPl": "Popularne diety",
+          "natural": "",
+          "forms": "",
+          "collocations": "do keto; go keto; keto diet",
+          "synonyms": "ketogenic diet",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He's doing keto, so he only ate the meat and salad.",
+              "pl": "Jest na keto, więc zjadł tylko mięso i sałatkę.",
+              "focusEn": "keto",
+              "focusPl": "keto"
+            },
+            {
+              "en": "Keto is hard to follow when you love pasta.",
+              "pl": "Keto trudno stosować, kiedy kocha się makaron.",
+              "focusEn": "Keto",
+              "focusPl": "Keto"
+            }
+          ],
+          "acceptedAnswers": [
+            "keto",
+            "ketogenic diet"
+          ],
+          "acceptedTranslations": [
+            "keto",
+            "dieta ketogeniczna"
+          ]
+        },
+        {
+          "id": "diet-nutrition.dairy-free",
+          "term": "dairy-free",
+          "ipa": "/ˌdɛri ˈfriː/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bez nabiału",
+          "definition": "Containing no milk or milk products.",
+          "register": "neutralny",
+          "contextPl": "Dieta bez mleka i serów",
+          "natural": "",
+          "forms": "",
+          "collocations": "dairy-free dessert; go dairy-free",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The dessert is dairy-free, so Tom can have some.",
+              "pl": "Deser jest bez nabiału, więc Tom może trochę zjeść.",
+              "focusEn": "dairy-free",
+              "focusPl": "bez nabiału"
+            },
+            {
+              "en": "I've been dairy-free for a month, and my skin looks better.",
+              "pl": "Od miesiąca nie jem nabiału i moja cera wygląda lepiej.",
+              "focusEn": "dairy-free",
+              "focusPl": "nie jem nabiału"
+            }
+          ],
+          "acceptedAnswers": [
+            "dairy-free",
+            "dairy free"
+          ],
+          "acceptedTranslations": [
+            "bez nabiału",
+            "bezmleczny"
+          ]
+        },
+        {
+          "id": "diet-nutrition.cheat-day",
+          "term": "cheat day",
+          "ipa": "/ˈtʃiːt ˌdeɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dzień bez diety",
+          "definition": "A day when someone on a diet allows themselves to eat anything.",
+          "register": "potoczny",
+          "contextPl": "Przerwa od diety",
+          "natural": "",
+          "forms": "cheat days",
+          "collocations": "have a cheat day",
+          "synonyms": "cheat meal",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sunday is my cheat day, so pass the fries.",
+              "pl": "Niedziela to mój dzień bez diety, więc podaj frytki.",
+              "focusEn": "cheat day",
+              "focusPl": "dzień bez diety"
+            },
+            {
+              "en": "She saves pizza for her cheat day.",
+              "pl": "Pizzę zostawia sobie na cheat day.",
+              "focusEn": "cheat day",
+              "focusPl": "cheat day"
+            }
+          ],
+          "acceptedAnswers": [
+            "cheat day",
+            "cheat meal"
+          ],
+          "acceptedTranslations": [
+            "dzień bez diety",
+            "cheat day"
+          ]
+        },
+        {
+          "id": "diet-nutrition.go-vegan",
+          "term": "go vegan",
+          "ipa": "/ˌɡoʊ ˈviːɡən/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przejść na weganizm",
+          "definition": "To start eating no animal products.",
+          "register": "neutralny",
+          "contextPl": "Zmiana sposobu żywienia",
+          "natural": "",
+          "forms": "went – gone",
+          "collocations": "decide to go vegan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My daughter decided to go vegan after a school project.",
+              "pl": "Córka postanowiła przejść na weganizm po projekcie szkolnym.",
+              "focusEn": "go vegan",
+              "focusPl": "przejść na weganizm"
+            },
+            {
+              "en": "Since we went vegan, we cook a lot more at home.",
+              "pl": "Odkąd przeszliśmy na weganizm, dużo więcej gotujemy w domu.",
+              "focusEn": "went vegan",
+              "focusPl": "przeszliśmy na weganizm"
+            }
+          ],
+          "acceptedAnswers": [
+            "go vegan"
+          ],
+          "acceptedTranslations": [
+            "przejść na weganizm",
+            "zostać weganinem"
+          ]
+        },
+        {
+          "id": "diet-nutrition.intermittent-fasting",
+          "term": "intermittent fasting",
+          "ipa": "/ˌɪntərˌmɪtənt ˈfæstɪŋ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "post przerywany",
+          "definition": "Eating only during certain hours of the day.",
+          "register": "specjalistyczny",
+          "contextPl": "Modne metody żywienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "try intermittent fasting",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With intermittent fasting, I don't eat until noon.",
+              "pl": "Przy poście przerywanym nie jem do południa.",
+              "focusEn": "intermittent fasting",
+              "focusPl": "poście przerywanym"
+            },
+            {
+              "en": "My coworker swears intermittent fasting gave her more energy.",
+              "pl": "Moja koleżanka z pracy przysięga, że post przerywany dał jej więcej energii.",
+              "focusEn": "intermittent fasting",
+              "focusPl": "post przerywany"
+            }
+          ],
+          "acceptedAnswers": [
+            "intermittent fasting"
+          ],
+          "acceptedTranslations": [
+            "post przerywany",
+            "IF"
+          ]
+        },
+        {
+          "id": "diet-nutrition.fad-diet",
+          "term": "fad diet",
+          "ipa": "/ˈfæd ˌdaɪət/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "modna dieta",
+          "definition": "A popular diet that promises fast results but usually does not last.",
+          "register": "neutralny",
+          "contextPl": "Krytyka diet cud",
+          "natural": "",
+          "forms": "fad diets",
+          "collocations": "try a fad diet",
+          "synonyms": "crash diet",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "That juice cleanse is just another fad diet.",
+              "pl": "To oczyszczanie sokami to po prostu kolejna modna dieta.",
+              "focusEn": "fad diet",
+              "focusPl": "modna dieta"
+            },
+            {
+              "en": "Fad diets work for a month, and then the weight comes back.",
+              "pl": "Modne diety działają przez miesiąc, a potem waga wraca.",
+              "focusEn": "Fad diets",
+              "focusPl": "Modne diety"
+            }
+          ],
+          "acceptedAnswers": [
+            "fad diet",
+            "crash diet"
+          ],
+          "acceptedTranslations": [
+            "modna dieta",
+            "dieta cud"
+          ]
+        },
+        {
+          "id": "diet-nutrition.pescatarian",
+          "term": "pescatarian",
+          "ipa": "/ˌpɛskəˈtɛriən/",
+          "pos": "rzeczownik",
+          "level": "C2",
+          "frequency": "rare",
+          "translation": "peskatarianin",
+          "definition": "A person who eats fish but no other meat.",
+          "register": "neutralny",
+          "contextPl": "Mniej znane diety",
+          "natural": "",
+          "forms": "pescatarians",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm a pescatarian, so I'll have the salmon.",
+              "pl": "Jestem peskatarianinem, więc wezmę łososia.",
+              "focusEn": "pescatarian",
+              "focusPl": "peskatarianinem"
+            },
+            {
+              "en": "As a pescatarian, she eats fish but no other meat.",
+              "pl": "Jako peskatarianka je ryby, ale żadnego innego mięsa.",
+              "focusEn": "pescatarian",
+              "focusPl": "peskatarianka"
+            }
+          ],
+          "acceptedAnswers": [
+            "pescatarian"
+          ],
+          "acceptedTranslations": [
+            "peskatarianin",
+            "peskatarianka"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diet-nutrition.allergies",
+      "namePl": "Alergie i nietolerancje",
+      "scenePl": "Gospodarz przyjęcia pyta gości o alergie przed przygotowaniem kolacji",
+      "entries": [
+        {
+          "id": "diet-nutrition.avoid",
+          "term": "avoid",
+          "ipa": "/əˈvɔɪd/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "unikać",
+          "definition": "To stay away from something, such as a food that makes you sick.",
+          "register": "neutralny",
+          "contextPl": "Rezygnacja z niektórych produktów",
+          "natural": "",
+          "forms": "avoided",
+          "collocations": "avoid dairy; avoid eating",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is there anything you need to avoid eating?",
+              "pl": "Czy jest coś, czego musisz unikać w jedzeniu?",
+              "focusEn": "avoid",
+              "focusPl": "unikać"
+            },
+            {
+              "en": "I avoid shellfish because it makes me sick.",
+              "pl": "Unikam skorupiaków, bo źle się po nich czuję.",
+              "focusEn": "avoid",
+              "focusPl": "Unikam"
+            }
+          ],
+          "acceptedAnswers": [
+            "avoid"
+          ],
+          "acceptedTranslations": [
+            "unikać",
+            "omijać"
+          ]
+        },
+        {
+          "id": "diet-nutrition.allergy",
+          "term": "allergy",
+          "ipa": "/ˈælərdʒi/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "alergia",
+          "definition": "A condition that makes you sick when you eat or touch a certain thing.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o alergie gości",
+          "natural": "",
+          "forms": "allergies",
+          "collocations": "food allergy; peanut allergy; have an allergy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Does anyone have a food allergy I should know about?",
+              "pl": "Czy ktoś ma alergię pokarmową, o której powinienem wiedzieć?",
+              "focusEn": "allergy",
+              "focusPl": "alergię"
+            },
+            {
+              "en": "My son's peanut allergy is pretty serious.",
+              "pl": "Alergia mojego syna na orzeszki ziemne jest dość poważna.",
+              "focusEn": "allergy",
+              "focusPl": "Alergia"
+            }
+          ],
+          "acceptedAnswers": [
+            "allergy"
+          ],
+          "acceptedTranslations": [
+            "alergia",
+            "uczulenie"
+          ]
+        },
+        {
+          "id": "diet-nutrition.peanut",
+          "term": "peanut",
+          "ipa": "/ˈpiːnʌt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "orzeszek ziemny",
+          "definition": "A small nut that grows underground, a common allergy.",
+          "register": "neutralny",
+          "contextPl": "Częsty alergen",
+          "natural": "",
+          "forms": "peanuts",
+          "collocations": "peanut butter; peanut allergy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is there any peanut butter in this sauce?",
+              "pl": "Czy w tym sosie jest masło z orzeszków ziemnych?",
+              "focusEn": "peanut",
+              "focusPl": "orzeszków ziemnych"
+            },
+            {
+              "en": "I made the cookies without peanuts, just in case.",
+              "pl": "Upiekłem ciastka bez orzeszków ziemnych, na wszelki wypadek.",
+              "focusEn": "peanuts",
+              "focusPl": "orzeszków ziemnych"
+            }
+          ],
+          "acceptedAnswers": [
+            "peanut"
+          ],
+          "acceptedTranslations": [
+            "orzeszek ziemny",
+            "orzech ziemny",
+            "fistaszek"
+          ]
+        },
+        {
+          "id": "diet-nutrition.gluten",
+          "term": "gluten",
+          "ipa": "/ˈɡluːtən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gluten",
+          "definition": "A protein in wheat and some other grains.",
+          "register": "neutralny",
+          "contextPl": "Dieta bezglutenowa",
+          "natural": "",
+          "forms": "",
+          "collocations": "gluten-free; contain gluten",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Does this soup have any gluten in it?",
+              "pl": "Czy w tej zupie jest gluten?",
+              "focusEn": "gluten",
+              "focusPl": "gluten"
+            },
+            {
+              "en": "I made a separate pasta without gluten for Anna.",
+              "pl": "Zrobiłem osobny makaron bez glutenu dla Anny.",
+              "focusEn": "gluten",
+              "focusPl": "glutenu"
+            }
+          ],
+          "acceptedAnswers": [
+            "gluten"
+          ],
+          "acceptedTranslations": [
+            "gluten"
+          ]
+        },
+        {
+          "id": "diet-nutrition.reaction",
+          "term": "reaction",
+          "ipa": "/riˈækʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "reakcja",
+          "definition": "The way your body responds to something you ate, such as swelling or a rash.",
+          "register": "neutralny",
+          "contextPl": "Opis objawów alergii",
+          "natural": "",
+          "forms": "reactions",
+          "collocations": "an allergic reaction; a bad reaction",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She had a bad reaction to shrimp last year.",
+              "pl": "W zeszłym roku miała silną reakcję na krewetki.",
+              "focusEn": "reaction",
+              "focusPl": "reakcję"
+            },
+            {
+              "en": "What kind of reaction do you get from eggs?",
+              "pl": "Jaką reakcję masz po jajkach?",
+              "focusEn": "reaction",
+              "focusPl": "reakcję"
+            }
+          ],
+          "acceptedAnswers": [
+            "reaction"
+          ],
+          "acceptedTranslations": [
+            "reakcja",
+            "reakcja alergiczna"
+          ]
+        },
+        {
+          "id": "diet-nutrition.intolerance",
+          "term": "intolerance",
+          "ipa": "/ɪnˈtɑːlərəns/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nietolerancja",
+          "definition": "A problem digesting a certain food, milder than an allergy.",
+          "register": "neutralny",
+          "contextPl": "Problemy trawienne",
+          "natural": "",
+          "forms": "intolerances",
+          "collocations": "lactose intolerance; food intolerance",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Nietolerancja to nie alergia: zwykle daje problemy żołądkowe, a nie groźną reakcję.",
+          "examples": [
+            {
+              "en": "It's not an allergy, just a mild lactose intolerance.",
+              "pl": "To nie alergia, tylko łagodna nietolerancja laktozy.",
+              "focusEn": "intolerance",
+              "focusPl": "nietolerancja"
+            },
+            {
+              "en": "Do any of you have a food intolerance?",
+              "pl": "Czy ktoś z was ma nietolerancję pokarmową?",
+              "focusEn": "intolerance",
+              "focusPl": "nietolerancję"
+            }
+          ],
+          "acceptedAnswers": [
+            "intolerance"
+          ],
+          "acceptedTranslations": [
+            "nietolerancja",
+            "nietolerancja pokarmowa"
+          ]
+        },
+        {
+          "id": "diet-nutrition.lactose-intolerant",
+          "term": "lactose intolerant",
+          "ipa": "/ˌlæktoʊs ɪnˈtɑːlərənt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "z nietolerancją laktozy",
+          "definition": "Unable to digest the sugar in milk well.",
+          "register": "neutralny",
+          "contextPl": "Problemy z nabiałem",
+          "natural": "",
+          "forms": "",
+          "collocations": "be lactose intolerant",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm lactose intolerant, so I'll skip the cheese sauce.",
+              "pl": "Mam nietolerancję laktozy, więc odpuszczę sos serowy.",
+              "focusEn": "lactose intolerant",
+              "focusPl": "Mam nietolerancję laktozy"
+            },
+            {
+              "en": "My husband is lactose intolerant, but he can eat hard cheese.",
+              "pl": "Mój mąż ma nietolerancję laktozy, ale może jeść twarde sery.",
+              "focusEn": "lactose intolerant",
+              "focusPl": "ma nietolerancję laktozy"
+            }
+          ],
+          "acceptedAnswers": [
+            "lactose intolerant"
+          ],
+          "acceptedTranslations": [
+            "z nietolerancją laktozy",
+            "mieć nietolerancję laktozy"
+          ]
+        },
+        {
+          "id": "diet-nutrition.dietary-restrictions",
+          "term": "dietary restrictions",
+          "ipa": "/ˈdaɪəˌtɛri rɪˈstrɪkʃənz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ograniczenia dietetyczne",
+          "definition": "Foods a person cannot or will not eat for health or personal reasons.",
+          "register": "formalny",
+          "contextPl": "Planowanie menu dla gości",
+          "natural": "",
+          "forms": "",
+          "collocations": "any dietary restrictions",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do any of your guests have dietary restrictions?",
+              "pl": "Czy ktoś z twoich gości ma ograniczenia dietetyczne?",
+              "focusEn": "dietary restrictions",
+              "focusPl": "ograniczenia dietetyczne"
+            },
+            {
+              "en": "I'm planning the menu, so tell me about any dietary restrictions.",
+              "pl": "Planuję menu, więc powiedz mi o ewentualnych ograniczeniach dietetycznych.",
+              "focusEn": "dietary restrictions",
+              "focusPl": "ograniczeniach dietetycznych"
+            }
+          ],
+          "acceptedAnswers": [
+            "dietary restrictions",
+            "dietary restriction"
+          ],
+          "acceptedTranslations": [
+            "ograniczenia dietetyczne",
+            "wymagania dietetyczne"
+          ]
+        },
+        {
+          "id": "diet-nutrition.sensitive-to",
+          "term": "sensitive to",
+          "ipa": "/ˈsɛnsətɪv tuː/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wrażliwy na",
+          "definition": "Easily affected by a certain food.",
+          "register": "neutralny",
+          "contextPl": "Łagodne problemy po jedzeniu",
+          "natural": "",
+          "forms": "",
+          "collocations": "sensitive to spicy food; sensitive to garlic",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm sensitive to spicy food, so go easy on the chili.",
+              "pl": "Jestem wrażliwy na ostre jedzenie, więc nie przesadzaj z chili.",
+              "focusEn": "sensitive to",
+              "focusPl": "wrażliwy na"
+            },
+            {
+              "en": "Some guests are sensitive to garlic, so I used very little.",
+              "pl": "Niektórzy goście są wrażliwi na czosnek, więc dodałem bardzo mało.",
+              "focusEn": "sensitive to",
+              "focusPl": "wrażliwi na"
+            }
+          ],
+          "acceptedAnswers": [
+            "sensitive to"
+          ],
+          "acceptedTranslations": [
+            "wrażliwy na"
+          ]
+        },
+        {
+          "id": "diet-nutrition.may-contain",
+          "term": "may contain",
+          "ipa": "/meɪ kənˈteɪn/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "może zawierać",
+          "definition": "A warning on food labels that a product might have traces of an allergen.",
+          "register": "formalny",
+          "contextPl": "Ostrzeżenia na etykietach",
+          "natural": "",
+          "forms": "",
+          "collocations": "may contain nuts",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The label says this chocolate may contain nuts.",
+              "pl": "Na etykiecie jest napisane, że ta czekolada może zawierać orzechy.",
+              "focusEn": "may contain",
+              "focusPl": "może zawierać"
+            },
+            {
+              "en": "Anything marked \"may contain\" is off the table for my son.",
+              "pl": "Wszystko z napisem „może zawierać” odpada dla mojego syna.",
+              "focusEn": "may contain",
+              "focusPl": "może zawierać"
+            }
+          ],
+          "acceptedAnswers": [
+            "may contain"
+          ],
+          "acceptedTranslations": [
+            "może zawierać"
+          ]
+        },
+        {
+          "id": "diet-nutrition.rash",
+          "term": "rash",
+          "ipa": "/ræʃ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wysypka",
+          "definition": "Red spots on the skin, sometimes caused by an allergy.",
+          "register": "neutralny",
+          "contextPl": "Objaw alergii pokarmowej",
+          "natural": "",
+          "forms": "rashes",
+          "collocations": "an itchy rash; break out in a rash",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Strawberries give me an itchy rash.",
+              "pl": "Po truskawkach dostaję swędzącej wysypki.",
+              "focusEn": "rash",
+              "focusPl": "wysypki"
+            },
+            {
+              "en": "If you see a rash, tell me right away.",
+              "pl": "Jeśli zobaczysz wysypkę, od razu mi powiedz.",
+              "focusEn": "rash",
+              "focusPl": "wysypkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "rash"
+          ],
+          "acceptedTranslations": [
+            "wysypka"
+          ]
+        },
+        {
+          "id": "diet-nutrition.trace",
+          "term": "trace",
+          "ipa": "/treɪs/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "śladowa ilość",
+          "definition": "A very small amount of something.",
+          "register": "formalny",
+          "contextPl": "Ostrzeżenia dla alergików",
+          "natural": "",
+          "forms": "traces",
+          "collocations": "traces of nuts; a trace of",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Even a trace of peanuts can be dangerous for him.",
+              "pl": "Nawet śladowa ilość orzeszków ziemnych może być dla niego groźna.",
+              "focusEn": "trace",
+              "focusPl": "śladowa ilość"
+            },
+            {
+              "en": "This snack is made in a factory with nuts, so it may have traces.",
+              "pl": "Ta przekąska powstaje w fabryce, w której są orzechy, więc może zawierać ich śladowe ilości.",
+              "focusEn": "traces",
+              "focusPl": "śladowe ilości"
+            }
+          ],
+          "acceptedAnswers": [
+            "trace"
+          ],
+          "acceptedTranslations": [
+            "śladowa ilość",
+            "ślad"
+          ]
+        },
+        {
+          "id": "diet-nutrition.celiac-disease",
+          "term": "celiac disease",
+          "ipa": "/ˈsiːliæk dɪˌziːz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "celiakia",
+          "definition": "A disease in which a person cannot eat gluten without damage to the gut.",
+          "register": "specjalistyczny",
+          "contextPl": "Choroba wymagająca diety bezglutenowej",
+          "natural": "",
+          "forms": "",
+          "collocations": "have celiac disease",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska „celiac” (brytyjska „coeliac”).",
+          "examples": [
+            {
+              "en": "Even a few crumbs can make someone with celiac disease sick.",
+              "pl": "Nawet kilka okruchów może zaszkodzić komuś z celiakią.",
+              "focusEn": "celiac disease",
+              "focusPl": "celiakią"
+            },
+            {
+              "en": "My cousin has celiac disease, so I bought special bread.",
+              "pl": "Moja kuzynka ma celiakię, więc kupiłem specjalny chleb.",
+              "focusEn": "celiac disease",
+              "focusPl": "celiakię"
+            }
+          ],
+          "acceptedAnswers": [
+            "celiac disease",
+            "celiac"
+          ],
+          "acceptedTranslations": [
+            "celiakia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diet-nutrition.weight",
+      "namePl": "Waga i odchudzanie",
+      "scenePl": "Rozmowa z trenerką na siłowni o celach przed nowym planem żywienia",
+      "entries": [
+        {
+          "id": "diet-nutrition.weight",
+          "term": "weight",
+          "ipa": "/weɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "waga",
+          "definition": "How heavy a person is.",
+          "register": "neutralny",
+          "contextPl": "Mówienie o celach sylwetkowych",
+          "natural": "",
+          "forms": "",
+          "collocations": "healthy weight; lose weight; gain weight",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My goal is to get to a healthy weight by summer.",
+              "pl": "Moim celem jest osiągnięcie zdrowej wagi do lata.",
+              "focusEn": "weight",
+              "focusPl": "wagi"
+            },
+            {
+              "en": "Your weight can change a little from day to day.",
+              "pl": "Waga może się trochę zmieniać z dnia na dzień.",
+              "focusEn": "weight",
+              "focusPl": "Waga"
+            }
+          ],
+          "acceptedAnswers": [
+            "weight"
+          ],
+          "acceptedTranslations": [
+            "waga"
+          ]
+        },
+        {
+          "id": "diet-nutrition.lose-weight",
+          "term": "lose weight",
+          "ipa": "/ˌluːz ˈweɪt/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "schudnąć",
+          "definition": "To become thinner and lighter.",
+          "register": "neutralny",
+          "contextPl": "Cel odchudzania",
+          "natural": "",
+          "forms": "lost – lost",
+          "collocations": "lose weight fast; try to lose weight",
+          "synonyms": "slim down",
+          "antonyms": "gain weight",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I want to lose weight without feeling hungry all day.",
+              "pl": "Chcę schudnąć, nie będąc głodnym przez cały dzień.",
+              "focusEn": "lose weight",
+              "focusPl": "schudnąć"
+            },
+            {
+              "en": "She lost weight slowly by walking and eating less sugar.",
+              "pl": "Chudła powoli dzięki spacerom i jedzeniu mniejszej ilości cukru.",
+              "focusEn": "lost weight",
+              "focusPl": "Chudła"
+            }
+          ],
+          "acceptedAnswers": [
+            "lose weight"
+          ],
+          "acceptedTranslations": [
+            "schudnąć",
+            "chudnąć"
+          ]
+        },
+        {
+          "id": "diet-nutrition.gain-weight",
+          "term": "gain weight",
+          "ipa": "/ˌɡeɪn ˈweɪt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przytyć",
+          "definition": "To become heavier.",
+          "register": "neutralny",
+          "contextPl": "Przybieranie na wadze",
+          "natural": "put on weight",
+          "forms": "gained",
+          "collocations": "gain weight easily",
+          "synonyms": "put on weight",
+          "antonyms": "lose weight",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I gained weight over the holidays.",
+              "pl": "Przytyłem w czasie świąt.",
+              "focusEn": "gained weight",
+              "focusPl": "Przytyłem"
+            },
+            {
+              "en": "Some athletes need to gain weight and build muscle.",
+              "pl": "Niektórzy sportowcy muszą przytyć i zbudować mięśnie.",
+              "focusEn": "gain weight",
+              "focusPl": "przytyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "gain weight",
+            "put on weight"
+          ],
+          "acceptedTranslations": [
+            "przytyć",
+            "tyć"
+          ]
+        },
+        {
+          "id": "diet-nutrition.appetite",
+          "term": "appetite",
+          "ipa": "/ˈæpəˌtaɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "apetyt",
+          "definition": "The feeling of wanting to eat.",
+          "register": "neutralny",
+          "contextPl": "Głód i jedzenie",
+          "natural": "",
+          "forms": "appetites",
+          "collocations": "a big appetite; lose your appetite",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Exercise usually gives me a bigger appetite.",
+              "pl": "Ćwiczenia zwykle zwiększają mi apetyt.",
+              "focusEn": "appetite",
+              "focusPl": "apetyt"
+            },
+            {
+              "en": "I lose my appetite when I'm stressed.",
+              "pl": "Kiedy jestem zestresowany, tracę apetyt.",
+              "focusEn": "appetite",
+              "focusPl": "apetyt"
+            }
+          ],
+          "acceptedAnswers": [
+            "appetite"
+          ],
+          "acceptedTranslations": [
+            "apetyt"
+          ]
+        },
+        {
+          "id": "diet-nutrition.overweight",
+          "term": "overweight",
+          "ipa": "/ˌoʊvərˈweɪt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "z nadwagą",
+          "definition": "Heavier than is healthy.",
+          "register": "neutralny",
+          "contextPl": "Opis wagi",
+          "natural": "",
+          "forms": "",
+          "collocations": "a little overweight; seriously overweight",
+          "synonyms": "",
+          "antonyms": "underweight",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My doctor says I'm a little overweight.",
+              "pl": "Lekarz mówi, że mam lekką nadwagę.",
+              "focusEn": "overweight",
+              "focusPl": "nadwagę"
+            },
+            {
+              "en": "Being overweight puts extra stress on your knees.",
+              "pl": "Nadwaga dodatkowo obciąża kolana.",
+              "focusEn": "Being overweight",
+              "focusPl": "Nadwaga"
+            }
+          ],
+          "acceptedAnswers": [
+            "overweight"
+          ],
+          "acceptedTranslations": [
+            "z nadwagą",
+            "mieć nadwagę",
+            "nadwaga"
+          ]
+        },
+        {
+          "id": "diet-nutrition.burn-calories",
+          "term": "burn calories",
+          "ipa": "/ˌbɜːrn ˈkæləriz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "spalać kalorie",
+          "definition": "To use up energy from food through activity.",
+          "register": "neutralny",
+          "contextPl": "Ćwiczenia i odchudzanie",
+          "natural": "",
+          "forms": "burned",
+          "collocations": "burn more calories",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A thirty-minute run burns about three hundred calories.",
+              "pl": "Trzydziestominutowy bieg spala około trzystu kalorii.",
+              "focusEn": "burns about three hundred calories",
+              "focusPl": "spala około trzystu kalorii"
+            },
+            {
+              "en": "Walking is an easy way to burn calories every day.",
+              "pl": "Chodzenie to łatwy sposób, żeby codziennie spalać kalorie.",
+              "focusEn": "burn calories",
+              "focusPl": "spalać kalorie"
+            }
+          ],
+          "acceptedAnswers": [
+            "burn calories"
+          ],
+          "acceptedTranslations": [
+            "spalać kalorie",
+            "spalić kalorie"
+          ]
+        },
+        {
+          "id": "diet-nutrition.scale",
+          "term": "scale",
+          "ipa": "/skeɪl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "waga",
+          "definition": "A machine for weighing yourself.",
+          "register": "neutralny",
+          "contextPl": "Ważenie się",
+          "natural": "",
+          "forms": "scales",
+          "collocations": "step on the scale; bathroom scale",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA zwykle „scale”, w Wielkiej Brytanii „scales”.",
+          "examples": [
+            {
+              "en": "Don't step on the scale every single day.",
+              "pl": "Nie staj na wadze codziennie.",
+              "focusEn": "scale",
+              "focusPl": "wadze"
+            },
+            {
+              "en": "The scale at the gym says I've lost three pounds.",
+              "pl": "Waga na siłowni pokazuje, że schudłem trzy funty.",
+              "focusEn": "scale",
+              "focusPl": "Waga"
+            }
+          ],
+          "acceptedAnswers": [
+            "scale",
+            "scales"
+          ],
+          "acceptedTranslations": [
+            "waga",
+            "waga łazienkowa"
+          ]
+        },
+        {
+          "id": "diet-nutrition.craving",
+          "term": "craving",
+          "ipa": "/ˈkreɪvɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zachcianka",
+          "definition": "A very strong wish to eat a particular food.",
+          "register": "neutralny",
+          "contextPl": "Walka z ochotą na słodycze",
+          "natural": "",
+          "forms": "cravings",
+          "collocations": "sugar cravings; a craving for chocolate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I get sugar cravings every afternoon around three.",
+              "pl": "Codziennie około trzeciej po południu mam ochotę na słodkie.",
+              "focusEn": "cravings",
+              "focusPl": "ochotę na słodkie"
+            },
+            {
+              "en": "Protein at breakfast helps with cravings later.",
+              "pl": "Białko na śniadanie pomaga później w walce z zachciankami.",
+              "focusEn": "cravings",
+              "focusPl": "zachciankami"
+            }
+          ],
+          "acceptedAnswers": [
+            "craving"
+          ],
+          "acceptedTranslations": [
+            "zachcianka",
+            "ochota",
+            "chętka"
+          ]
+        },
+        {
+          "id": "diet-nutrition.metabolism",
+          "term": "metabolism",
+          "ipa": "/məˈtæbəˌlɪzəm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "metabolizm",
+          "definition": "The way your body turns food into energy.",
+          "register": "neutralny",
+          "contextPl": "Tempo spalania energii",
+          "natural": "",
+          "forms": "metabolisms",
+          "collocations": "a fast metabolism; slow metabolism",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My metabolism has slowed down since I turned forty.",
+              "pl": "Mój metabolizm zwolnił, odkąd skończyłem czterdzieści lat.",
+              "focusEn": "metabolism",
+              "focusPl": "metabolizm"
+            },
+            {
+              "en": "Building muscle can speed up your metabolism.",
+              "pl": "Budowanie mięśni może przyspieszyć metabolizm.",
+              "focusEn": "metabolism",
+              "focusPl": "metabolizm"
+            }
+          ],
+          "acceptedAnswers": [
+            "metabolism"
+          ],
+          "acceptedTranslations": [
+            "metabolizm",
+            "przemiana materii"
+          ]
+        },
+        {
+          "id": "diet-nutrition.slim-down",
+          "term": "slim down",
+          "ipa": "/ˌslɪm ˈdaʊn/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wyszczupleć",
+          "definition": "To become thinner.",
+          "register": "neutralny",
+          "contextPl": "Odchudzanie przed ważnym wydarzeniem",
+          "natural": "",
+          "forms": "slimmed down",
+          "collocations": "slim down before summer",
+          "synonyms": "lose weight",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to slim down a bit before the wedding.",
+              "pl": "Chciałabym trochę wyszczupleć przed weselem.",
+              "focusEn": "slim down",
+              "focusPl": "wyszczupleć"
+            },
+            {
+              "en": "He slimmed down by cutting out late-night snacks.",
+              "pl": "Wyszczuplał, rezygnując z podjadania późnym wieczorem.",
+              "focusEn": "slimmed down",
+              "focusPl": "Wyszczuplał"
+            }
+          ],
+          "acceptedAnswers": [
+            "slim down"
+          ],
+          "acceptedTranslations": [
+            "wyszczupleć",
+            "schudnąć"
+          ]
+        },
+        {
+          "id": "diet-nutrition.calorie-deficit",
+          "term": "calorie deficit",
+          "ipa": "/ˈkæləri ˌdɛfəsɪt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "deficyt kaloryczny",
+          "definition": "Eating fewer calories than your body uses.",
+          "register": "specjalistyczny",
+          "contextPl": "Podstawa odchudzania",
+          "natural": "",
+          "forms": "",
+          "collocations": "be in a calorie deficit",
+          "synonyms": "",
+          "antonyms": "calorie surplus",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "To lose weight, you need a small calorie deficit.",
+              "pl": "Żeby schudnąć, potrzebujesz niewielkiego deficytu kalorycznego.",
+              "focusEn": "calorie deficit",
+              "focusPl": "deficytu kalorycznego"
+            },
+            {
+              "en": "A huge calorie deficit will just make you tired and hungry.",
+              "pl": "Ogromny deficyt kaloryczny sprawi tylko, że będziesz zmęczony i głodny.",
+              "focusEn": "calorie deficit",
+              "focusPl": "deficyt kaloryczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "calorie deficit"
+          ],
+          "acceptedTranslations": [
+            "deficyt kaloryczny",
+            "ujemny bilans kaloryczny"
+          ]
+        },
+        {
+          "id": "diet-nutrition.plateau",
+          "term": "plateau",
+          "ipa": "/plæˈtoʊ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zastój",
+          "definition": "A time when your weight stops changing even though you keep trying.",
+          "register": "neutralny",
+          "contextPl": "Brak postępów w odchudzaniu",
+          "natural": "",
+          "forms": "plateaus",
+          "collocations": "hit a plateau",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've hit a plateau; my weight hasn't changed in weeks.",
+              "pl": "Mam zastój, waga nie zmieniła się od tygodni.",
+              "focusEn": "plateau",
+              "focusPl": "zastój"
+            },
+            {
+              "en": "Plateaus are normal, so don't give up now.",
+              "pl": "Zastoje są normalne, więc nie poddawaj się teraz.",
+              "focusEn": "Plateaus",
+              "focusPl": "Zastoje"
+            }
+          ],
+          "acceptedAnswers": [
+            "plateau"
+          ],
+          "acceptedTranslations": [
+            "zastój",
+            "stagnacja"
+          ]
+        },
+        {
+          "id": "diet-nutrition.yo-yo-dieting",
+          "term": "yo-yo dieting",
+          "ipa": "/ˈjoʊ joʊ ˌdaɪətɪŋ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "efekt jo-jo",
+          "definition": "Losing weight and gaining it back again many times.",
+          "register": "neutralny",
+          "contextPl": "Skutek drastycznych diet",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Years of yo-yo dieting made her want a slower plan.",
+              "pl": "Lata efektu jo-jo sprawiły, że chciała wolniejszego planu.",
+              "focusEn": "yo-yo dieting",
+              "focusPl": "efektu jo-jo"
+            },
+            {
+              "en": "Yo-yo dieting can be harder on your body than staying the same weight.",
+              "pl": "Efekt jo-jo może bardziej szkodzić organizmowi niż utrzymywanie stałej wagi.",
+              "focusEn": "Yo-yo dieting",
+              "focusPl": "Efekt jo-jo"
+            }
+          ],
+          "acceptedAnswers": [
+            "yo-yo dieting",
+            "yo-yo diet"
+          ],
+          "acceptedTranslations": [
+            "efekt jo-jo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diet-nutrition.vitamins-supplements",
+      "namePl": "Witaminy i suplementy",
+      "scenePl": "Rozmowa z dietetyczką o tym, czego brakuje w diecie i czy potrzebne są suplementy",
+      "entries": [
+        {
+          "id": "diet-nutrition.vitamin",
+          "term": "vitamin",
+          "ipa": "/ˈvaɪtəmɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "witamina",
+          "definition": "A natural substance in food that the body needs to stay healthy.",
+          "register": "neutralny",
+          "contextPl": "Składniki potrzebne organizmowi",
+          "natural": "",
+          "forms": "vitamins",
+          "collocations": "vitamin C; vitamin D; take vitamins",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA wymowa /ˈvaɪtəmɪn/, w Wielkiej Brytanii /ˈvɪtəmɪn/.",
+          "examples": [
+            {
+              "en": "Oranges are full of vitamin C.",
+              "pl": "Pomarańcze są pełne witaminy C.",
+              "focusEn": "vitamin",
+              "focusPl": "witaminy"
+            },
+            {
+              "en": "Do you get enough vitamins from your food?",
+              "pl": "Czy dostarczasz sobie wystarczająco dużo witamin z jedzeniem?",
+              "focusEn": "vitamins",
+              "focusPl": "witamin"
+            }
+          ],
+          "acceptedAnswers": [
+            "vitamin"
+          ],
+          "acceptedTranslations": [
+            "witamina"
+          ]
+        },
+        {
+          "id": "diet-nutrition.stay-hydrated",
+          "term": "stay hydrated",
+          "ipa": "/ˌsteɪ ˈhaɪdreɪtɪd/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dbać o nawodnienie",
+          "definition": "To drink enough water so your body does not dry out.",
+          "register": "neutralny",
+          "contextPl": "Picie wody w ciągu dnia",
+          "natural": "drink plenty of water",
+          "forms": "stayed",
+          "collocations": "stay hydrated at work",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Stay hydrated, especially on days when you work out.",
+              "pl": "Pij dużo wody, zwłaszcza w dni, kiedy ćwiczysz.",
+              "focusEn": "Stay hydrated",
+              "focusPl": "Pij dużo wody"
+            },
+            {
+              "en": "I carry a water bottle to stay hydrated at work.",
+              "pl": "Noszę butelkę z wodą, żeby dbać o nawodnienie w pracy.",
+              "focusEn": "stay hydrated",
+              "focusPl": "dbać o nawodnienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "stay hydrated",
+            "keep hydrated"
+          ],
+          "acceptedTranslations": [
+            "dbać o nawodnienie",
+            "pić dużo wody",
+            "nawadniać się"
+          ]
+        },
+        {
+          "id": "diet-nutrition.supplement",
+          "term": "supplement",
+          "ipa": "/ˈsʌpləmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "suplement",
+          "definition": "A pill or powder taken to add vitamins or other things to your diet.",
+          "register": "neutralny",
+          "contextPl": "Uzupełnianie diety",
+          "natural": "",
+          "forms": "supplements",
+          "collocations": "take a supplement; dietary supplement",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You probably don't need that supplement if you eat fish twice a week.",
+              "pl": "Prawdopodobnie nie potrzebujesz tego suplementu, jeśli jesz ryby dwa razy w tygodniu.",
+              "focusEn": "supplement",
+              "focusPl": "suplementu"
+            },
+            {
+              "en": "Supplements can't replace a healthy diet.",
+              "pl": "Suplementy nie zastąpią zdrowej diety.",
+              "focusEn": "Supplements",
+              "focusPl": "Suplementy"
+            }
+          ],
+          "acceptedAnswers": [
+            "supplement"
+          ],
+          "acceptedTranslations": [
+            "suplement",
+            "suplement diety"
+          ]
+        },
+        {
+          "id": "diet-nutrition.nutrient",
+          "term": "nutrient",
+          "ipa": "/ˈnuːtriənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "składnik odżywczy",
+          "definition": "A substance in food that helps living things grow and stay healthy.",
+          "register": "neutralny",
+          "contextPl": "Wartość odżywcza jedzenia",
+          "natural": "",
+          "forms": "nutrients",
+          "collocations": "essential nutrients; packed with nutrients",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Vegetables are packed with important nutrients.",
+              "pl": "Warzywa są pełne ważnych składników odżywczych.",
+              "focusEn": "nutrients",
+              "focusPl": "składników odżywczych"
+            },
+            {
+              "en": "Which nutrient am I missing if I'm always tired?",
+              "pl": "Jakiego składnika odżywczego mi brakuje, jeśli ciągle jestem zmęczony?",
+              "focusEn": "nutrient",
+              "focusPl": "składnika odżywczego"
+            }
+          ],
+          "acceptedAnswers": [
+            "nutrient"
+          ],
+          "acceptedTranslations": [
+            "składnik odżywczy",
+            "substancja odżywcza"
+          ]
+        },
+        {
+          "id": "diet-nutrition.multivitamin",
+          "term": "multivitamin",
+          "ipa": "/ˌmʌltiˈvaɪtəmɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "multiwitamina",
+          "definition": "A pill containing many different vitamins.",
+          "register": "neutralny",
+          "contextPl": "Codzienne suplementy",
+          "natural": "",
+          "forms": "multivitamins",
+          "collocations": "a daily multivitamin",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A daily multivitamin won't hurt, but food comes first.",
+              "pl": "Codzienna multiwitamina nie zaszkodzi, ale jedzenie jest najważniejsze.",
+              "focusEn": "multivitamin",
+              "focusPl": "multiwitamina"
+            },
+            {
+              "en": "I take a multivitamin with breakfast.",
+              "pl": "Biorę multiwitaminę do śniadania.",
+              "focusEn": "multivitamin",
+              "focusPl": "multiwitaminę"
+            }
+          ],
+          "acceptedAnswers": [
+            "multivitamin"
+          ],
+          "acceptedTranslations": [
+            "multiwitamina",
+            "witaminy"
+          ]
+        },
+        {
+          "id": "diet-nutrition.protein-powder",
+          "term": "protein powder",
+          "ipa": "/ˈproʊtiːn ˌpaʊdər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odżywka białkowa",
+          "definition": "A powder mixed with milk or water to add protein to your diet.",
+          "register": "neutralny",
+          "contextPl": "Suplementy dla ćwiczących",
+          "natural": "",
+          "forms": "",
+          "collocations": "a scoop of protein powder",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do I really need protein powder after the gym?",
+              "pl": "Czy naprawdę potrzebuję odżywki białkowej po siłowni?",
+              "focusEn": "protein powder",
+              "focusPl": "odżywki białkowej"
+            },
+            {
+              "en": "Greek yogurt has as much protein as a scoop of protein powder.",
+              "pl": "Jogurt grecki ma tyle białka co miarka odżywki białkowej.",
+              "focusEn": "protein powder",
+              "focusPl": "odżywki białkowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "protein powder",
+            "protein shake"
+          ],
+          "acceptedTranslations": [
+            "odżywka białkowa",
+            "białko w proszku"
+          ]
+        },
+        {
+          "id": "diet-nutrition.immune-system",
+          "term": "immune system",
+          "ipa": "/ɪˈmjuːn ˌsɪstəm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "układ odpornościowy",
+          "definition": "The parts of the body that fight illness.",
+          "register": "neutralny",
+          "contextPl": "Odporność a dieta",
+          "natural": "",
+          "forms": "",
+          "collocations": "boost your immune system; a weak immune system",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Vitamin C may help your immune system a little.",
+              "pl": "Witamina C może trochę wspomóc układ odpornościowy.",
+              "focusEn": "immune system",
+              "focusPl": "układ odpornościowy"
+            },
+            {
+              "en": "A good diet keeps your immune system strong.",
+              "pl": "Dobra dieta wzmacnia układ odpornościowy.",
+              "focusEn": "immune system",
+              "focusPl": "układ odpornościowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "immune system"
+          ],
+          "acceptedTranslations": [
+            "układ odpornościowy",
+            "odporność"
+          ]
+        },
+        {
+          "id": "diet-nutrition.deficiency",
+          "term": "deficiency",
+          "ipa": "/dɪˈfɪʃənsi/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "niedobór",
+          "definition": "A lack of something the body needs.",
+          "register": "specjalistyczny",
+          "contextPl": "Wyniki badań krwi",
+          "natural": "",
+          "forms": "deficiencies",
+          "collocations": "vitamin D deficiency; iron deficiency",
+          "synonyms": "lack",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A blood test showed a vitamin D deficiency.",
+              "pl": "Badanie krwi wykazało niedobór witaminy D.",
+              "focusEn": "deficiency",
+              "focusPl": "niedobór"
+            },
+            {
+              "en": "Iron deficiency can make you feel weak and tired.",
+              "pl": "Niedobór żelaza może powodować osłabienie i zmęczenie.",
+              "focusEn": "deficiency",
+              "focusPl": "Niedobór"
+            }
+          ],
+          "acceptedAnswers": [
+            "deficiency"
+          ],
+          "acceptedTranslations": [
+            "niedobór",
+            "brak"
+          ]
+        },
+        {
+          "id": "diet-nutrition.gut-health",
+          "term": "gut health",
+          "ipa": "/ˈɡʌt ˌhɛlθ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zdrowie jelit",
+          "definition": "How well your stomach and intestines are working.",
+          "register": "neutralny",
+          "contextPl": "Jedzenie dobre dla trawienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "good for gut health",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Yogurt and fiber are good for gut health.",
+              "pl": "Jogurt i błonnik są dobre dla zdrowia jelit.",
+              "focusEn": "gut health",
+              "focusPl": "zdrowia jelit"
+            },
+            {
+              "en": "My dietitian talks a lot about gut health.",
+              "pl": "Moja dietetyczka dużo mówi o zdrowiu jelit.",
+              "focusEn": "gut health",
+              "focusPl": "zdrowiu jelit"
+            }
+          ],
+          "acceptedAnswers": [
+            "gut health"
+          ],
+          "acceptedTranslations": [
+            "zdrowie jelit"
+          ]
+        },
+        {
+          "id": "diet-nutrition.probiotic",
+          "term": "probiotic",
+          "ipa": "/ˌproʊbaɪˈɑːtɪk/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "probiotyk",
+          "definition": "Good bacteria in food or pills that help digestion.",
+          "register": "specjalistyczny",
+          "contextPl": "Wsparcie dla jelit",
+          "natural": "",
+          "forms": "probiotics",
+          "collocations": "take a probiotic",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Should I take a probiotic after antibiotics?",
+              "pl": "Czy powinienem brać probiotyk po antybiotykach?",
+              "focusEn": "probiotic",
+              "focusPl": "probiotyk"
+            },
+            {
+              "en": "Kefir is a natural source of probiotics.",
+              "pl": "Kefir to naturalne źródło probiotyków.",
+              "focusEn": "probiotics",
+              "focusPl": "probiotyków"
+            }
+          ],
+          "acceptedAnswers": [
+            "probiotic"
+          ],
+          "acceptedTranslations": [
+            "probiotyk"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -10,7 +10,9 @@
 | family | 94 | 6 | 19 | 10 | 32 | 27 | 6 | 0 |
 | personality | 93 | 6 | 5 | 10 | 35 | 38 | 5 | 0 |
 | appearance | 82 | 5 | 12 | 15 | 26 | 23 | 6 | 0 |
+| emotions | 86 | 6 | 6 | 15 | 33 | 26 | 6 | 0 |
+| daily-routine | 91 | 6 | 28 | 21 | 30 | 9 | 3 | 0 |
 
 ## Nierozpoczęte
 
-emotions, daily-routine, weather, clothes-fashion, small-talk, opinions-agreeing
+weather, clothes-fashion, small-talk, opinions-agreeing

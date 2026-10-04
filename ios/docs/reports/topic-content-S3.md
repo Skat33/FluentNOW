@@ -10,6 +10,8 @@
 | fruits-vegetables | 85 | 6 | 11/22/26/17/9/0 |
 | meat-fish-dairy | 88 | 6 | 9/22/30/19/8/0 |
 | drinks-bar | 75 | 6 | 9/14/23/18/11/0 |
+| diet-nutrition | 77 | 6 | 1/13/20/28/14/1 |
+| house-rooms | 81 | 6 | 17/22/24/15/3/0 |
 
 ## Do zrobienia
-diet-nutrition, house-rooms, furniture-household, cleaning-chores, renting-apartment
+furniture-household, cleaning-chores, renting-apartment

@@ -1,0 +1,3257 @@
+{
+  "schemaVersion": 1,
+  "id": "house-rooms",
+  "namePl": "Dom i pomieszczenia",
+  "nameEn": "House and Rooms",
+  "group": "home",
+  "symbol": "house",
+  "summaryPl": "Pomieszczenia, części domu, rodzaje mieszkań, opis lokum, instalacje i zwroty przy przyjmowaniu gości.",
+  "aliases": [
+    "dom",
+    "mieszkanie",
+    "pokoje",
+    "pomieszczenia",
+    "nieruchomość",
+    "opis mieszkania",
+    "house",
+    "home",
+    "rooms",
+    "apartment"
+  ],
+  "categories": [
+    {
+      "id": "house-rooms.rooms",
+      "namePl": "Pomieszczenia",
+      "scenePl": "Oprowadzanie gościa po nowym domu",
+      "entries": [
+        {
+          "id": "house-rooms.room",
+          "term": "room",
+          "ipa": "/ruːm/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pokój",
+          "definition": "One of the separate areas inside a house.",
+          "register": "neutralny",
+          "contextPl": "Mówienie o częściach mieszkania",
+          "natural": "",
+          "forms": "rooms",
+          "collocations": "a big room; a five-room house",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This room gets the most sun in the afternoon.",
+              "pl": "Ten pokój jest najbardziej nasłoneczniony po południu.",
+              "focusEn": "room",
+              "focusPl": "pokój"
+            },
+            {
+              "en": "How many rooms does the house have?",
+              "pl": "Ile pokoi ma dom?",
+              "focusEn": "rooms",
+              "focusPl": "pokoi"
+            }
+          ],
+          "acceptedAnswers": [
+            "room"
+          ],
+          "acceptedTranslations": [
+            "pokój",
+            "pomieszczenie"
+          ]
+        },
+        {
+          "id": "house-rooms.home",
+          "term": "home",
+          "ipa": "/hoʊm/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "dom",
+          "definition": "The place where you live and feel you belong.",
+          "register": "neutralny",
+          "contextPl": "Miejsce zamieszkania",
+          "natural": "",
+          "forms": "homes",
+          "collocations": "at home; feel like home; a new home",
+          "synonyms": "house",
+          "antonyms": "",
+          "notePl": "„Home” to miejsce, gdzie się mieszka (także mieszkanie); „house” to budynek.",
+          "examples": [
+            {
+              "en": "Come in and welcome to our new home!",
+              "pl": "Wejdź i witaj w naszym nowym domu!",
+              "focusEn": "home",
+              "focusPl": "domu"
+            },
+            {
+              "en": "It's small, but it really feels like home.",
+              "pl": "Jest mały, ale naprawdę czuję się tu jak w domu.",
+              "focusEn": "home",
+              "focusPl": "jak w domu"
+            }
+          ],
+          "acceptedAnswers": [
+            "home"
+          ],
+          "acceptedTranslations": [
+            "dom",
+            "mieszkanie"
+          ]
+        },
+        {
+          "id": "house-rooms.house",
+          "term": "house",
+          "ipa": "/haʊs/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "dom",
+          "definition": "A building where a family lives.",
+          "register": "neutralny",
+          "contextPl": "Mówienie o budynku",
+          "natural": "",
+          "forms": "houses",
+          "collocations": "buy a house; an old house",
+          "synonyms": "home",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We bought this house two months ago.",
+              "pl": "Kupiliśmy ten dom dwa miesiące temu.",
+              "focusEn": "house",
+              "focusPl": "dom"
+            },
+            {
+              "en": "The house is older than it looks.",
+              "pl": "Dom jest starszy, niż wygląda.",
+              "focusEn": "house",
+              "focusPl": "Dom"
+            }
+          ],
+          "acceptedAnswers": [
+            "house"
+          ],
+          "acceptedTranslations": [
+            "dom"
+          ]
+        },
+        {
+          "id": "house-rooms.kitchen",
+          "term": "kitchen",
+          "ipa": "/ˈkɪtʃən/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "kuchnia",
+          "definition": "The room where food is cooked.",
+          "register": "neutralny",
+          "contextPl": "Pomieszczenia w domu",
+          "natural": "",
+          "forms": "kitchens",
+          "collocations": "a big kitchen; kitchen table",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kitchen is the first room on the left.",
+              "pl": "Kuchnia to pierwsze pomieszczenie po lewej.",
+              "focusEn": "kitchen",
+              "focusPl": "Kuchnia"
+            },
+            {
+              "en": "We spend most evenings together in the kitchen.",
+              "pl": "Większość wieczorów spędzamy razem w kuchni.",
+              "focusEn": "kitchen",
+              "focusPl": "kuchni"
+            }
+          ],
+          "acceptedAnswers": [
+            "kitchen"
+          ],
+          "acceptedTranslations": [
+            "kuchnia"
+          ]
+        },
+        {
+          "id": "house-rooms.living-room",
+          "term": "living room",
+          "ipa": "/ˈlɪvɪŋ ˌruːm/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "salon",
+          "definition": "The main room where people relax and watch TV.",
+          "register": "neutralny",
+          "contextPl": "Pomieszczenia w domu",
+          "natural": "family room",
+          "forms": "living rooms",
+          "collocations": "in the living room",
+          "synonyms": "family room; lounge",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii też „lounge” lub „sitting room”.",
+          "examples": [
+            {
+              "en": "This is the living room, where we watch movies.",
+              "pl": "To salon, gdzie oglądamy filmy.",
+              "focusEn": "living room",
+              "focusPl": "salon"
+            },
+            {
+              "en": "The living room has a big window facing the park.",
+              "pl": "Salon ma duże okno wychodzące na park.",
+              "focusEn": "living room",
+              "focusPl": "Salon"
+            }
+          ],
+          "acceptedAnswers": [
+            "living room",
+            "family room"
+          ],
+          "acceptedTranslations": [
+            "salon",
+            "pokój dzienny",
+            "duży pokój"
+          ]
+        },
+        {
+          "id": "house-rooms.bedroom",
+          "term": "bedroom",
+          "ipa": "/ˈbɛdˌruːm/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "sypialnia",
+          "definition": "A room for sleeping.",
+          "register": "neutralny",
+          "contextPl": "Pomieszczenia w domu",
+          "natural": "",
+          "forms": "bedrooms",
+          "collocations": "a two-bedroom apartment; the kids' bedroom",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our bedroom is upstairs at the end of the hall.",
+              "pl": "Nasza sypialnia jest na górze, na końcu korytarza.",
+              "focusEn": "bedroom",
+              "focusPl": "sypialnia"
+            },
+            {
+              "en": "The kids share the bedroom next to the bathroom.",
+              "pl": "Dzieci dzielą sypialnię obok łazienki.",
+              "focusEn": "bedroom",
+              "focusPl": "sypialnię"
+            }
+          ],
+          "acceptedAnswers": [
+            "bedroom"
+          ],
+          "acceptedTranslations": [
+            "sypialnia"
+          ]
+        },
+        {
+          "id": "house-rooms.bathroom",
+          "term": "bathroom",
+          "ipa": "/ˈbæθˌruːm/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "łazienka",
+          "definition": "A room with a toilet, sink and a bath or shower.",
+          "register": "neutralny",
+          "contextPl": "Pomieszczenia w domu",
+          "natural": "restroom",
+          "forms": "bathrooms",
+          "collocations": "use the bathroom; a full bathroom",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA „bathroom” to też grzecznie toaleta.",
+          "examples": [
+            {
+              "en": "The bathroom is right there, if you need it.",
+              "pl": "Łazienka jest tam, gdybyś potrzebował.",
+              "focusEn": "bathroom",
+              "focusPl": "Łazienka"
+            },
+            {
+              "en": "We redid the bathroom with new tiles last year.",
+              "pl": "W zeszłym roku wyremontowaliśmy łazienkę i położyliśmy nowe płytki.",
+              "focusEn": "bathroom",
+              "focusPl": "łazienkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "bathroom",
+            "restroom"
+          ],
+          "acceptedTranslations": [
+            "łazienka",
+            "toaleta"
+          ]
+        },
+        {
+          "id": "house-rooms.dining-room",
+          "term": "dining room",
+          "ipa": "/ˈdaɪnɪŋ ˌruːm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "jadalnia",
+          "definition": "A room where people eat meals.",
+          "register": "neutralny",
+          "contextPl": "Pomieszczenia w domu",
+          "natural": "",
+          "forms": "dining rooms",
+          "collocations": "dining room table",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We only use the dining room for holidays.",
+              "pl": "Jadalni używamy tylko w święta.",
+              "focusEn": "dining room",
+              "focusPl": "Jadalni"
+            },
+            {
+              "en": "The dining room table seats eight people.",
+              "pl": "Przy stole w jadalni mieści się osiem osób.",
+              "focusEn": "dining room",
+              "focusPl": "jadalni"
+            }
+          ],
+          "acceptedAnswers": [
+            "dining room"
+          ],
+          "acceptedTranslations": [
+            "jadalnia"
+          ]
+        },
+        {
+          "id": "house-rooms.hallway",
+          "term": "hallway",
+          "ipa": "/ˈhɔːlˌweɪ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "korytarz",
+          "definition": "A narrow space that connects rooms.",
+          "register": "neutralny",
+          "contextPl": "Przejście między pokojami",
+          "natural": "hall",
+          "forms": "hallways",
+          "collocations": "down the hallway; upstairs hallway",
+          "synonyms": "hall; corridor",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hang your coat in the hallway.",
+              "pl": "Powieś płaszcz w przedpokoju.",
+              "focusEn": "hallway",
+              "focusPl": "przedpokoju"
+            },
+            {
+              "en": "The hallway upstairs leads to three bedrooms.",
+              "pl": "Korytarz na piętrze prowadzi do trzech sypialni.",
+              "focusEn": "hallway",
+              "focusPl": "Korytarz"
+            }
+          ],
+          "acceptedAnswers": [
+            "hallway",
+            "hall"
+          ],
+          "acceptedTranslations": [
+            "korytarz",
+            "przedpokój"
+          ]
+        },
+        {
+          "id": "house-rooms.closet",
+          "term": "closet",
+          "ipa": "/ˈklɑːzɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "szafa wnękowa",
+          "definition": "A small room or space built into a wall for storing clothes or things.",
+          "register": "neutralny",
+          "contextPl": "Miejsce na ubrania i rzeczy",
+          "natural": "",
+          "forms": "closets",
+          "collocations": "walk-in closet; hall closet",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA „closet” to szafa w ścianie; mebel to „wardrobe” lub „dresser”.",
+          "examples": [
+            {
+              "en": "Each bedroom has its own closet.",
+              "pl": "Każda sypialnia ma własną szafę wnękową.",
+              "focusEn": "closet",
+              "focusPl": "szafę wnękową"
+            },
+            {
+              "en": "The vacuum is in the closet under the stairs.",
+              "pl": "Odkurzacz jest w schowku pod schodami.",
+              "focusEn": "closet",
+              "focusPl": "schowku"
+            }
+          ],
+          "acceptedAnswers": [
+            "closet"
+          ],
+          "acceptedTranslations": [
+            "szafa wnękowa",
+            "schowek",
+            "garderoba"
+          ]
+        },
+        {
+          "id": "house-rooms.basement",
+          "term": "basement",
+          "ipa": "/ˈbeɪsmənt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "piwnica",
+          "definition": "The part of a house below the ground.",
+          "register": "neutralny",
+          "contextPl": "Przechowywanie rzeczy",
+          "natural": "",
+          "forms": "basements",
+          "collocations": "finished basement; in the basement",
+          "synonyms": "cellar",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The basement is where we keep old toys and tools.",
+              "pl": "W piwnicy trzymamy stare zabawki i narzędzia.",
+              "focusEn": "basement",
+              "focusPl": "piwnicy"
+            },
+            {
+              "en": "We turned the basement into a playroom.",
+              "pl": "Przerobiliśmy piwnicę na pokój zabaw.",
+              "focusEn": "basement",
+              "focusPl": "piwnicę"
+            }
+          ],
+          "acceptedAnswers": [
+            "basement",
+            "cellar"
+          ],
+          "acceptedTranslations": [
+            "piwnica",
+            "suterena"
+          ]
+        },
+        {
+          "id": "house-rooms.garage",
+          "term": "garage",
+          "ipa": "/ɡəˈrɑːʒ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "garaż",
+          "definition": "A building or part of a house for keeping a car.",
+          "register": "neutralny",
+          "contextPl": "Miejsce na samochód",
+          "natural": "",
+          "forms": "garages",
+          "collocations": "two-car garage; park in the garage",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The garage is big enough for two cars.",
+              "pl": "Garaż jest wystarczająco duży na dwa samochody.",
+              "focusEn": "garage",
+              "focusPl": "Garaż"
+            },
+            {
+              "en": "My husband's bikes take up half the garage.",
+              "pl": "Rowery męża zajmują pół garażu.",
+              "focusEn": "garage",
+              "focusPl": "garażu"
+            }
+          ],
+          "acceptedAnswers": [
+            "garage"
+          ],
+          "acceptedTranslations": [
+            "garaż"
+          ]
+        },
+        {
+          "id": "house-rooms.attic",
+          "term": "attic",
+          "ipa": "/ˈætɪk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "strych",
+          "definition": "The space under the roof of a house.",
+          "register": "neutralny",
+          "contextPl": "Przechowywanie starych rzeczy",
+          "natural": "",
+          "forms": "attics",
+          "collocations": "in the attic",
+          "synonyms": "loft",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The attic is full of boxes from our last move.",
+              "pl": "Strych jest pełen pudeł z ostatniej przeprowadzki.",
+              "focusEn": "attic",
+              "focusPl": "Strych"
+            },
+            {
+              "en": "Watch your head; the attic ceiling is very low.",
+              "pl": "Uważaj na głowę, na strychu jest bardzo niski sufit.",
+              "focusEn": "attic",
+              "focusPl": "strychu"
+            }
+          ],
+          "acceptedAnswers": [
+            "attic",
+            "loft"
+          ],
+          "acceptedTranslations": [
+            "strych",
+            "poddasze"
+          ]
+        },
+        {
+          "id": "house-rooms.laundry-room",
+          "term": "laundry room",
+          "ipa": "/ˈlɔːndri ˌruːm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pralnia",
+          "definition": "A room with a washer and dryer.",
+          "register": "neutralny",
+          "contextPl": "Pranie w domu",
+          "natural": "",
+          "forms": "laundry rooms",
+          "collocations": "",
+          "synonyms": "utility room",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The washer and dryer are in the laundry room.",
+              "pl": "Pralka i suszarka są w pralni.",
+              "focusEn": "laundry room",
+              "focusPl": "pralni"
+            },
+            {
+              "en": "The laundry room is small, but it has a window.",
+              "pl": "Pralnia jest mała, ale ma okno.",
+              "focusEn": "laundry room",
+              "focusPl": "Pralnia"
+            }
+          ],
+          "acceptedAnswers": [
+            "laundry room",
+            "utility room"
+          ],
+          "acceptedTranslations": [
+            "pralnia"
+          ]
+        },
+        {
+          "id": "house-rooms.guest-room",
+          "term": "guest room",
+          "ipa": "/ˈɡɛst ˌruːm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pokój gościnny",
+          "definition": "A bedroom for visitors.",
+          "register": "neutralny",
+          "contextPl": "Nocowanie gości",
+          "natural": "spare room",
+          "forms": "guest rooms",
+          "collocations": "stay in the guest room",
+          "synonyms": "spare room",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You'll sleep in the guest room upstairs.",
+              "pl": "Będziesz spać w pokoju gościnnym na górze.",
+              "focusEn": "guest room",
+              "focusPl": "pokoju gościnnym"
+            },
+            {
+              "en": "We turned the guest room into a home office.",
+              "pl": "Przerobiliśmy pokój gościnny na domowe biuro.",
+              "focusEn": "guest room",
+              "focusPl": "pokój gościnny"
+            }
+          ],
+          "acceptedAnswers": [
+            "guest room",
+            "spare room"
+          ],
+          "acceptedTranslations": [
+            "pokój gościnny"
+          ]
+        },
+        {
+          "id": "house-rooms.master-bedroom",
+          "term": "master bedroom",
+          "ipa": "/ˌmæstər ˈbɛdruːm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "główna sypialnia",
+          "definition": "The largest bedroom, usually with its own bathroom.",
+          "register": "neutralny",
+          "contextPl": "Opis domu w ogłoszeniu",
+          "natural": "primary bedroom",
+          "forms": "master bedrooms",
+          "collocations": "",
+          "synonyms": "primary bedroom",
+          "antonyms": "",
+          "notePl": "W ogłoszeniach coraz częściej „primary bedroom”.",
+          "examples": [
+            {
+              "en": "The master bedroom has its own bathroom.",
+              "pl": "Główna sypialnia ma własną łazienkę.",
+              "focusEn": "master bedroom",
+              "focusPl": "Główna sypialnia"
+            },
+            {
+              "en": "The master bedroom looks out over the backyard.",
+              "pl": "Główna sypialnia ma widok na ogród za domem.",
+              "focusEn": "master bedroom",
+              "focusPl": "Główna sypialnia"
+            }
+          ],
+          "acceptedAnswers": [
+            "master bedroom",
+            "primary bedroom"
+          ],
+          "acceptedTranslations": [
+            "główna sypialnia",
+            "sypialnia rodziców"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "house-rooms.parts-of-house",
+      "namePl": "Części domu",
+      "scenePl": "Obchodzenie domu z pośrednikiem przed jego zakupem",
+      "entries": [
+        {
+          "id": "house-rooms.door",
+          "term": "door",
+          "ipa": "/dɔːr/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "drzwi",
+          "definition": "A board that opens and closes the entrance to a room or building.",
+          "register": "neutralny",
+          "contextPl": "Wejścia do domu i pokoi",
+          "natural": "",
+          "forms": "doors",
+          "collocations": "front door; back door; open the door",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The back door opens right onto the yard.",
+              "pl": "Tylne drzwi otwierają się prosto na podwórko.",
+              "focusEn": "door",
+              "focusPl": "drzwi"
+            },
+            {
+              "en": "This door sticks a little in the summer.",
+              "pl": "Te drzwi latem trochę się zacinają.",
+              "focusEn": "door",
+              "focusPl": "drzwi"
+            }
+          ],
+          "acceptedAnswers": [
+            "door"
+          ],
+          "acceptedTranslations": [
+            "drzwi"
+          ]
+        },
+        {
+          "id": "house-rooms.window",
+          "term": "window",
+          "ipa": "/ˈwɪndoʊ/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "okno",
+          "definition": "An opening in a wall with glass in it.",
+          "register": "neutralny",
+          "contextPl": "Oględziny domu",
+          "natural": "",
+          "forms": "windows",
+          "collocations": "open a window; window faces east",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "All the windows were replaced five years ago.",
+              "pl": "Wszystkie okna wymieniono pięć lat temu.",
+              "focusEn": "windows",
+              "focusPl": "okna"
+            },
+            {
+              "en": "This window faces east, so you get morning sun.",
+              "pl": "To okno wychodzi na wschód, więc rano jest słońce.",
+              "focusEn": "window",
+              "focusPl": "okno"
+            }
+          ],
+          "acceptedAnswers": [
+            "window"
+          ],
+          "acceptedTranslations": [
+            "okno"
+          ]
+        },
+        {
+          "id": "house-rooms.floor",
+          "term": "floor",
+          "ipa": "/flɔːr/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "podłoga",
+          "definition": "The flat surface you walk on inside a building.",
+          "register": "neutralny",
+          "contextPl": "Oględziny wnętrz",
+          "natural": "",
+          "forms": "floors",
+          "collocations": "wooden floors; kitchen floor",
+          "synonyms": "",
+          "antonyms": "ceiling",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The wooden floors are original from 1950.",
+              "pl": "Drewniane podłogi są oryginalne z 1950 roku.",
+              "focusEn": "floors",
+              "focusPl": "podłogi"
+            },
+            {
+              "en": "The kitchen floor is tile, so it's easy to clean.",
+              "pl": "Podłoga w kuchni jest z płytek, więc łatwo ją sprzątać.",
+              "focusEn": "floor",
+              "focusPl": "Podłoga"
+            }
+          ],
+          "acceptedAnswers": [
+            "floor"
+          ],
+          "acceptedTranslations": [
+            "podłoga"
+          ]
+        },
+        {
+          "id": "house-rooms.wall",
+          "term": "wall",
+          "ipa": "/wɔːl/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "ściana",
+          "definition": "One of the sides of a room or building.",
+          "register": "neutralny",
+          "contextPl": "Oględziny wnętrz",
+          "natural": "",
+          "forms": "walls",
+          "collocations": "knock down a wall; paint the walls",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We could knock down this wall to open up the kitchen.",
+              "pl": "Moglibyśmy wyburzyć tę ścianę, żeby otworzyć kuchnię.",
+              "focusEn": "wall",
+              "focusPl": "ścianę"
+            },
+            {
+              "en": "There's a small crack in the bedroom wall.",
+              "pl": "Na ścianie w sypialni jest małe pęknięcie.",
+              "focusEn": "wall",
+              "focusPl": "ścianie"
+            }
+          ],
+          "acceptedAnswers": [
+            "wall"
+          ],
+          "acceptedTranslations": [
+            "ściana",
+            "mur"
+          ]
+        },
+        {
+          "id": "house-rooms.stairs",
+          "term": "stairs",
+          "ipa": "/stɛrz/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "schody",
+          "definition": "A set of steps that go from one floor to another.",
+          "register": "neutralny",
+          "contextPl": "Poruszanie się między piętrami",
+          "natural": "staircase",
+          "forms": "",
+          "collocations": "go up the stairs; under the stairs; steep stairs",
+          "synonyms": "staircase; steps",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The stairs to the second floor are a little steep.",
+              "pl": "Schody na piętro są trochę strome.",
+              "focusEn": "stairs",
+              "focusPl": "Schody"
+            },
+            {
+              "en": "There's a closet under the stairs.",
+              "pl": "Pod schodami jest schowek.",
+              "focusEn": "stairs",
+              "focusPl": "schodami"
+            }
+          ],
+          "acceptedAnswers": [
+            "stairs",
+            "staircase",
+            "steps"
+          ],
+          "acceptedTranslations": [
+            "schody"
+          ]
+        },
+        {
+          "id": "house-rooms.roof",
+          "term": "roof",
+          "ipa": "/ruːf/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "dach",
+          "definition": "The top covering of a building.",
+          "register": "neutralny",
+          "contextPl": "Stan techniczny domu",
+          "natural": "",
+          "forms": "roofs",
+          "collocations": "a new roof; the roof leaks",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The roof is only three years old.",
+              "pl": "Dach ma zaledwie trzy lata.",
+              "focusEn": "roof",
+              "focusPl": "Dach"
+            },
+            {
+              "en": "Ask the owners if the roof has ever leaked.",
+              "pl": "Zapytaj właścicieli, czy dach kiedykolwiek przeciekał.",
+              "focusEn": "roof",
+              "focusPl": "dach"
+            }
+          ],
+          "acceptedAnswers": [
+            "roof"
+          ],
+          "acceptedTranslations": [
+            "dach"
+          ]
+        },
+        {
+          "id": "house-rooms.ceiling",
+          "term": "ceiling",
+          "ipa": "/ˈsiːlɪŋ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "sufit",
+          "definition": "The top surface of a room.",
+          "register": "neutralny",
+          "contextPl": "Oględziny wnętrz",
+          "natural": "",
+          "forms": "ceilings",
+          "collocations": "high ceilings; low ceiling",
+          "synonyms": "",
+          "antonyms": "floor",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The ceilings in this old house are really high.",
+              "pl": "Sufity w tym starym domu są naprawdę wysokie.",
+              "focusEn": "ceilings",
+              "focusPl": "Sufity"
+            },
+            {
+              "en": "There's a water stain on the bathroom ceiling.",
+              "pl": "Na suficie w łazience jest plama od wody.",
+              "focusEn": "ceiling",
+              "focusPl": "suficie"
+            }
+          ],
+          "acceptedAnswers": [
+            "ceiling"
+          ],
+          "acceptedTranslations": [
+            "sufit"
+          ]
+        },
+        {
+          "id": "house-rooms.yard",
+          "term": "yard",
+          "ipa": "/jɑːrd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "podwórko",
+          "definition": "The area of grass around a house.",
+          "register": "neutralny",
+          "contextPl": "Teren wokół domu",
+          "natural": "",
+          "forms": "yards",
+          "collocations": "front yard; big yard; mow the yard",
+          "synonyms": "lawn",
+          "antonyms": "",
+          "notePl": "W USA „yard” to trawnik wokół domu; „garden” to raczej grządki i kwiaty.",
+          "examples": [
+            {
+              "en": "The yard is big enough for a swing set.",
+              "pl": "Podwórko jest wystarczająco duże na huśtawki.",
+              "focusEn": "yard",
+              "focusPl": "Podwórko"
+            },
+            {
+              "en": "Who takes care of the yard, you or a service?",
+              "pl": "Kto dba o ogródek, wy czy jakaś firma?",
+              "focusEn": "yard",
+              "focusPl": "ogródek"
+            }
+          ],
+          "acceptedAnswers": [
+            "yard"
+          ],
+          "acceptedTranslations": [
+            "podwórko",
+            "ogródek",
+            "trawnik"
+          ]
+        },
+        {
+          "id": "house-rooms.fence",
+          "term": "fence",
+          "ipa": "/fɛns/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "płot",
+          "definition": "A wall of wood or metal around a yard.",
+          "register": "neutralny",
+          "contextPl": "Teren wokół domu",
+          "natural": "",
+          "forms": "fences",
+          "collocations": "a wooden fence; fenced yard",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The fence around the backyard is brand new.",
+              "pl": "Płot wokół ogrodu za domem jest zupełnie nowy.",
+              "focusEn": "fence",
+              "focusPl": "Płot"
+            },
+            {
+              "en": "Our dog can't get past this fence.",
+              "pl": "Nasz pies nie przejdzie przez ten płot.",
+              "focusEn": "fence",
+              "focusPl": "płot"
+            }
+          ],
+          "acceptedAnswers": [
+            "fence"
+          ],
+          "acceptedTranslations": [
+            "płot",
+            "ogrodzenie"
+          ]
+        },
+        {
+          "id": "house-rooms.balcony",
+          "term": "balcony",
+          "ipa": "/ˈbælkəni/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "balkon",
+          "definition": "A small platform outside an upstairs window or door.",
+          "register": "neutralny",
+          "contextPl": "Przestrzeń na zewnątrz",
+          "natural": "",
+          "forms": "balconies",
+          "collocations": "a small balcony; on the balcony",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bedroom has a small balcony over the street.",
+              "pl": "Sypialnia ma mały balkon nad ulicą.",
+              "focusEn": "balcony",
+              "focusPl": "balkon"
+            },
+            {
+              "en": "We could put plants and two chairs on the balcony.",
+              "pl": "Na balkonie moglibyśmy postawić rośliny i dwa krzesła.",
+              "focusEn": "balcony",
+              "focusPl": "balkonie"
+            }
+          ],
+          "acceptedAnswers": [
+            "balcony"
+          ],
+          "acceptedTranslations": [
+            "balkon"
+          ]
+        },
+        {
+          "id": "house-rooms.backyard",
+          "term": "backyard",
+          "ipa": "/ˌbækˈjɑːrd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ogród za domem",
+          "definition": "The area of land behind a house.",
+          "register": "neutralny",
+          "contextPl": "Teren wokół domu",
+          "natural": "",
+          "forms": "backyards",
+          "collocations": "in the backyard; a fenced backyard",
+          "synonyms": "",
+          "antonyms": "front yard",
+          "notePl": "W Wielkiej Brytanii „back garden”.",
+          "examples": [
+            {
+              "en": "The backyard has a small patio and a grill.",
+              "pl": "W ogrodzie za domem jest małe patio i grill.",
+              "focusEn": "backyard",
+              "focusPl": "ogrodzie za domem"
+            },
+            {
+              "en": "Kids can play safely in the fenced backyard.",
+              "pl": "Dzieci mogą bezpiecznie bawić się w ogrodzonym ogrodzie za domem.",
+              "focusEn": "backyard",
+              "focusPl": "ogrodzie za domem"
+            }
+          ],
+          "acceptedAnswers": [
+            "backyard",
+            "back yard"
+          ],
+          "acceptedTranslations": [
+            "ogród za domem",
+            "podwórko za domem"
+          ]
+        },
+        {
+          "id": "house-rooms.porch",
+          "term": "porch",
+          "ipa": "/pɔːrtʃ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ganek",
+          "definition": "A covered area outside the front door of a house.",
+          "register": "neutralny",
+          "contextPl": "Wejście do domu",
+          "natural": "",
+          "forms": "porches",
+          "collocations": "front porch; sit on the porch",
+          "synonyms": "veranda",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I love the big front porch with the rocking chairs.",
+              "pl": "Uwielbiam duży ganek z bujanymi fotelami.",
+              "focusEn": "porch",
+              "focusPl": "ganek"
+            },
+            {
+              "en": "Packages are left on the porch when you're not home.",
+              "pl": "Paczki zostawia się na ganku, kiedy nie ma cię w domu.",
+              "focusEn": "porch",
+              "focusPl": "ganku"
+            }
+          ],
+          "acceptedAnswers": [
+            "porch",
+            "veranda"
+          ],
+          "acceptedTranslations": [
+            "ganek",
+            "weranda"
+          ]
+        },
+        {
+          "id": "house-rooms.driveway",
+          "term": "driveway",
+          "ipa": "/ˈdraɪvˌweɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "podjazd",
+          "definition": "A short private road from the street to a house or garage.",
+          "register": "neutralny",
+          "contextPl": "Parkowanie przy domu",
+          "natural": "",
+          "forms": "driveways",
+          "collocations": "park in the driveway",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's room for two cars in the driveway.",
+              "pl": "Na podjeździe zmieszczą się dwa samochody.",
+              "focusEn": "driveway",
+              "focusPl": "podjeździe"
+            },
+            {
+              "en": "The driveway needs to be repaved soon.",
+              "pl": "Podjazd trzeba będzie wkrótce wyremontować.",
+              "focusEn": "driveway",
+              "focusPl": "Podjazd"
+            }
+          ],
+          "acceptedAnswers": [
+            "driveway"
+          ],
+          "acceptedTranslations": [
+            "podjazd"
+          ]
+        },
+        {
+          "id": "house-rooms.fireplace",
+          "term": "fireplace",
+          "ipa": "/ˈfaɪərˌpleɪs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kominek",
+          "definition": "A place in a wall where you can have a fire.",
+          "register": "neutralny",
+          "contextPl": "Ogrzewanie i klimat domu",
+          "natural": "",
+          "forms": "fireplaces",
+          "collocations": "a working fireplace; gas fireplace",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The living room has a working fireplace.",
+              "pl": "W salonie jest działający kominek.",
+              "focusEn": "fireplace",
+              "focusPl": "kominek"
+            },
+            {
+              "en": "Is the fireplace wood-burning or gas?",
+              "pl": "Kominek jest na drewno czy na gaz?",
+              "focusEn": "fireplace",
+              "focusPl": "Kominek"
+            }
+          ],
+          "acceptedAnswers": [
+            "fireplace"
+          ],
+          "acceptedTranslations": [
+            "kominek"
+          ]
+        },
+        {
+          "id": "house-rooms.chimney",
+          "term": "chimney",
+          "ipa": "/ˈtʃɪmni/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "komin",
+          "definition": "A pipe that takes smoke from a fireplace up through the roof.",
+          "register": "neutralny",
+          "contextPl": "Stan techniczny domu",
+          "natural": "",
+          "forms": "chimneys",
+          "collocations": "clean the chimney",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The chimney was cleaned before the house went on sale.",
+              "pl": "Komin wyczyszczono, zanim dom wystawiono na sprzedaż.",
+              "focusEn": "chimney",
+              "focusPl": "Komin"
+            },
+            {
+              "en": "Smoke from the fireplace goes up the chimney.",
+              "pl": "Dym z kominka uchodzi kominem.",
+              "focusEn": "chimney",
+              "focusPl": "kominem"
+            }
+          ],
+          "acceptedAnswers": [
+            "chimney"
+          ],
+          "acceptedTranslations": [
+            "komin"
+          ]
+        },
+        {
+          "id": "house-rooms.deck",
+          "term": "deck",
+          "ipa": "/dɛk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "drewniany taras",
+          "definition": "A wooden floor built outside a house for sitting and eating.",
+          "register": "neutralny",
+          "contextPl": "Przestrzeń na zewnątrz",
+          "natural": "patio",
+          "forms": "decks",
+          "collocations": "a back deck; on the deck",
+          "synonyms": "patio",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The deck out back is perfect for summer dinners.",
+              "pl": "Drewniany taras z tyłu domu jest idealny na letnie kolacje.",
+              "focusEn": "deck",
+              "focusPl": "Drewniany taras"
+            },
+            {
+              "en": "The wood on the deck needs to be stained.",
+              "pl": "Drewno na tarasie trzeba zaimpregnować.",
+              "focusEn": "deck",
+              "focusPl": "tarasie"
+            }
+          ],
+          "acceptedAnswers": [
+            "deck",
+            "patio"
+          ],
+          "acceptedTranslations": [
+            "drewniany taras",
+            "taras"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "house-rooms.types-of-housing",
+      "namePl": "Rodzaje mieszkań",
+      "scenePl": "Przeglądanie ogłoszeń nieruchomości w aplikacji na telefonie",
+      "entries": [
+        {
+          "id": "house-rooms.apartment",
+          "term": "apartment",
+          "ipa": "/əˈpɑːrtmənt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "mieszkanie",
+          "definition": "A set of rooms for living in, inside a larger building.",
+          "register": "neutralny",
+          "contextPl": "Szukanie lokum",
+          "natural": "",
+          "forms": "apartments",
+          "collocations": "a two-bedroom apartment; apartment building",
+          "synonyms": "flat",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii „flat”.",
+          "examples": [
+            {
+              "en": "This apartment has two bedrooms and a balcony.",
+              "pl": "To mieszkanie ma dwie sypialnie i balkon.",
+              "focusEn": "apartment",
+              "focusPl": "mieszkanie"
+            },
+            {
+              "en": "Look, here's an apartment right near the subway.",
+              "pl": "Zobacz, tu jest mieszkanie tuż przy metrze.",
+              "focusEn": "apartment",
+              "focusPl": "mieszkanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "apartment",
+            "flat"
+          ],
+          "acceptedTranslations": [
+            "mieszkanie"
+          ]
+        },
+        {
+          "id": "house-rooms.neighborhood",
+          "term": "neighborhood",
+          "ipa": "/ˈneɪbərˌhʊd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "okolica",
+          "definition": "The area around a home.",
+          "register": "neutralny",
+          "contextPl": "Wybór miejsca do życia",
+          "natural": "",
+          "forms": "neighborhoods",
+          "collocations": "a safe neighborhood; quiet neighborhood",
+          "synonyms": "area",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska: „neighborhood” (brytyjska: „neighbourhood”).",
+          "examples": [
+            {
+              "en": "This neighborhood has great schools and parks.",
+              "pl": "Ta okolica ma świetne szkoły i parki.",
+              "focusEn": "neighborhood",
+              "focusPl": "okolica"
+            },
+            {
+              "en": "Is it a safe neighborhood at night?",
+              "pl": "Czy to bezpieczna okolica w nocy?",
+              "focusEn": "neighborhood",
+              "focusPl": "okolica"
+            }
+          ],
+          "acceptedAnswers": [
+            "neighborhood",
+            "area"
+          ],
+          "acceptedTranslations": [
+            "okolica",
+            "dzielnica",
+            "osiedle"
+          ]
+        },
+        {
+          "id": "house-rooms.floor-2",
+          "term": "floor",
+          "ipa": "/flɔːr/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "piętro",
+          "definition": "One level of a building.",
+          "register": "neutralny",
+          "contextPl": "Lokalizacja mieszkania w budynku",
+          "natural": "story",
+          "forms": "",
+          "collocations": "on the third floor; top floor",
+          "synonyms": "story; level",
+          "antonyms": "",
+          "notePl": "W USA „first floor” to parter, więc „third floor” to polskie drugie piętro.",
+          "examples": [
+            {
+              "en": "The apartment is on the third floor, with no elevator.",
+              "pl": "Mieszkanie jest na drugim piętrze, bez windy.",
+              "focusEn": "floor",
+              "focusPl": "piętrze"
+            },
+            {
+              "en": "First-floor apartments here come with small patios.",
+              "pl": "Mieszkania na parterze mają tu małe patio.",
+              "focusEn": "floor",
+              "focusPl": "parterze"
+            }
+          ],
+          "acceptedAnswers": [
+            "floor",
+            "story"
+          ],
+          "acceptedTranslations": [
+            "piętro",
+            "kondygnacja"
+          ]
+        },
+        {
+          "id": "house-rooms.downtown",
+          "term": "downtown",
+          "ipa": "/ˌdaʊnˈtaʊn/",
+          "pos": "przysłówek",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "w centrum",
+          "definition": "In or to the center of a city.",
+          "register": "neutralny",
+          "contextPl": "Lokalizacja mieszkania",
+          "natural": "",
+          "forms": "",
+          "collocations": "live downtown; downtown apartment",
+          "synonyms": "city center",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Apartments downtown are smaller and more expensive.",
+              "pl": "Mieszkania w centrum są mniejsze i droższe.",
+              "focusEn": "downtown",
+              "focusPl": "w centrum"
+            },
+            {
+              "en": "This place is a ten-minute walk from downtown.",
+              "pl": "To miejsce jest dziesięć minut pieszo od centrum.",
+              "focusEn": "downtown",
+              "focusPl": "centrum"
+            }
+          ],
+          "acceptedAnswers": [
+            "downtown",
+            "city center"
+          ],
+          "acceptedTranslations": [
+            "w centrum",
+            "do centrum",
+            "centrum"
+          ]
+        },
+        {
+          "id": "house-rooms.suburbs",
+          "term": "suburbs",
+          "ipa": "/ˈsʌbɜːrbz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przedmieścia",
+          "definition": "Areas with houses outside the center of a city.",
+          "register": "neutralny",
+          "contextPl": "Wybór między miastem a przedmieściami",
+          "natural": "",
+          "forms": "",
+          "collocations": "in the suburbs; move to the suburbs",
+          "synonyms": "",
+          "antonyms": "city",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Houses in the suburbs come with bigger yards.",
+              "pl": "Domy na przedmieściach mają większe ogródki.",
+              "focusEn": "suburbs",
+              "focusPl": "przedmieściach"
+            },
+            {
+              "en": "We'd rather live in the suburbs than in the city.",
+              "pl": "Wolelibyśmy mieszkać na przedmieściach niż w mieście.",
+              "focusEn": "suburbs",
+              "focusPl": "przedmieściach"
+            }
+          ],
+          "acceptedAnswers": [
+            "suburbs",
+            "suburb"
+          ],
+          "acceptedTranslations": [
+            "przedmieścia",
+            "peryferie"
+          ]
+        },
+        {
+          "id": "house-rooms.studio",
+          "term": "studio",
+          "ipa": "/ˈstuːdioʊ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kawalerka",
+          "definition": "A small apartment with one main room.",
+          "register": "neutralny",
+          "contextPl": "Małe mieszkanie dla jednej osoby",
+          "natural": "studio apartment",
+          "forms": "studios",
+          "collocations": "a studio apartment",
+          "synonyms": "studio apartment",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A studio is all I need right now.",
+              "pl": "Kawalerka to wszystko, czego teraz potrzebuję.",
+              "focusEn": "studio",
+              "focusPl": "Kawalerka"
+            },
+            {
+              "en": "This studio has a tiny kitchen in the corner.",
+              "pl": "Ta kawalerka ma malutką kuchnię w rogu.",
+              "focusEn": "studio",
+              "focusPl": "kawalerka"
+            }
+          ],
+          "acceptedAnswers": [
+            "studio",
+            "studio apartment"
+          ],
+          "acceptedTranslations": [
+            "kawalerka"
+          ]
+        },
+        {
+          "id": "house-rooms.condo",
+          "term": "condo",
+          "ipa": "/ˈkɑːndoʊ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mieszkanie własnościowe",
+          "definition": "An apartment that you own in a building with shared areas.",
+          "register": "neutralny",
+          "contextPl": "Kupno mieszkania w apartamentowcu",
+          "natural": "",
+          "forms": "condos",
+          "collocations": "buy a condo; condo fees",
+          "synonyms": "condominium",
+          "antonyms": "",
+          "notePl": "Skrót od „condominium”; mieszkanie na własność, nie na wynajem.",
+          "examples": [
+            {
+              "en": "We're looking to buy a condo, not rent.",
+              "pl": "Chcemy kupić mieszkanie, a nie wynajmować.",
+              "focusEn": "condo",
+              "focusPl": "mieszkanie"
+            },
+            {
+              "en": "The condo fees cover the pool and the gym.",
+              "pl": "Opłaty wspólnotowe za to mieszkanie obejmują basen i siłownię.",
+              "focusEn": "condo",
+              "focusPl": "mieszkanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "condo",
+            "condominium"
+          ],
+          "acceptedTranslations": [
+            "mieszkanie własnościowe",
+            "mieszkanie"
+          ]
+        },
+        {
+          "id": "house-rooms.square-feet",
+          "term": "square feet",
+          "ipa": "/ˌskwɛr ˈfiːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stopy kwadratowe",
+          "definition": "A unit for measuring floor space; one square foot is about 0.09 square meters.",
+          "register": "neutralny",
+          "contextPl": "Powierzchnia w ogłoszeniach",
+          "natural": "",
+          "forms": "",
+          "collocations": "eight hundred square feet",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "800 stóp kwadratowych to ok. 74 m².",
+          "examples": [
+            {
+              "en": "The apartment is about eight hundred square feet.",
+              "pl": "Mieszkanie ma około ośmiuset stóp kwadratowych.",
+              "focusEn": "square feet",
+              "focusPl": "stóp kwadratowych"
+            },
+            {
+              "en": "How many square feet is the living room?",
+              "pl": "Ile stóp kwadratowych ma salon?",
+              "focusEn": "square feet",
+              "focusPl": "stóp kwadratowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "square feet",
+            "sq ft",
+            "square foot"
+          ],
+          "acceptedTranslations": [
+            "stopy kwadratowe"
+          ]
+        },
+        {
+          "id": "house-rooms.single-family-home",
+          "term": "single-family home",
+          "ipa": "/ˌsɪŋɡəl ˌfæməli ˈhoʊm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dom jednorodzinny",
+          "definition": "A house built for one family, not attached to other houses.",
+          "register": "neutralny",
+          "contextPl": "Szukanie domu z ogrodem",
+          "natural": "",
+          "forms": "single-family homes",
+          "collocations": "",
+          "synonyms": "detached house",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Single-family homes in this area start at four hundred thousand.",
+              "pl": "Domy jednorodzinne w tej okolicy kosztują od czterystu tysięcy.",
+              "focusEn": "Single-family homes",
+              "focusPl": "Domy jednorodzinne"
+            },
+            {
+              "en": "We want a single-family home with a yard for the dog.",
+              "pl": "Chcemy dom jednorodzinny z ogródkiem dla psa.",
+              "focusEn": "single-family home",
+              "focusPl": "dom jednorodzinny"
+            }
+          ],
+          "acceptedAnswers": [
+            "single-family home",
+            "detached house"
+          ],
+          "acceptedTranslations": [
+            "dom jednorodzinny",
+            "dom wolnostojący"
+          ]
+        },
+        {
+          "id": "house-rooms.townhouse",
+          "term": "townhouse",
+          "ipa": "/ˈtaʊnˌhaʊs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dom szeregowy",
+          "definition": "A house joined to other similar houses in a row.",
+          "register": "neutralny",
+          "contextPl": "Tańsza alternatywa dla domu wolnostojącego",
+          "natural": "",
+          "forms": "townhouses",
+          "collocations": "",
+          "synonyms": "row house",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This townhouse shares walls with the houses on both sides.",
+              "pl": "Ten dom szeregowy dzieli ściany z domami po obu stronach.",
+              "focusEn": "townhouse",
+              "focusPl": "dom szeregowy"
+            },
+            {
+              "en": "Townhouses are cheaper than detached homes here.",
+              "pl": "Domy szeregowe są tu tańsze niż wolnostojące.",
+              "focusEn": "Townhouses",
+              "focusPl": "Domy szeregowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "townhouse",
+            "row house"
+          ],
+          "acceptedTranslations": [
+            "dom szeregowy",
+            "szeregowiec"
+          ]
+        },
+        {
+          "id": "house-rooms.listing",
+          "term": "listing",
+          "ipa": "/ˈlɪstɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ogłoszenie",
+          "definition": "An advertisement for a home that is for sale or rent.",
+          "register": "neutralny",
+          "contextPl": "Przeglądanie ofert",
+          "natural": "",
+          "forms": "listings",
+          "collocations": "a new listing; real estate listings",
+          "synonyms": "ad",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This listing has photos, but no floor plan.",
+              "pl": "To ogłoszenie ma zdjęcia, ale nie ma rzutu mieszkania.",
+              "focusEn": "listing",
+              "focusPl": "ogłoszenie"
+            },
+            {
+              "en": "I saved three listings to show you tonight.",
+              "pl": "Zapisałem trzy ogłoszenia, żeby ci je dziś pokazać.",
+              "focusEn": "listings",
+              "focusPl": "ogłoszenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "listing"
+          ],
+          "acceptedTranslations": [
+            "ogłoszenie",
+            "oferta"
+          ]
+        },
+        {
+          "id": "house-rooms.floor-plan",
+          "term": "floor plan",
+          "ipa": "/ˈflɔːr ˌplæn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rzut mieszkania",
+          "definition": "A drawing that shows the layout of rooms from above.",
+          "register": "neutralny",
+          "contextPl": "Analiza układu mieszkania",
+          "natural": "",
+          "forms": "floor plans",
+          "collocations": "open floor plan",
+          "synonyms": "layout",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The floor plan shows the bedrooms on one side.",
+              "pl": "Rzut mieszkania pokazuje sypialnie po jednej stronie.",
+              "focusEn": "floor plan",
+              "focusPl": "Rzut mieszkania"
+            },
+            {
+              "en": "Can you send us the floor plan before the viewing?",
+              "pl": "Może pan przesłać nam rzut mieszkania przed oglądaniem?",
+              "focusEn": "floor plan",
+              "focusPl": "rzut mieszkania"
+            }
+          ],
+          "acceptedAnswers": [
+            "floor plan",
+            "layout"
+          ],
+          "acceptedTranslations": [
+            "rzut mieszkania",
+            "układ pomieszczeń",
+            "plan mieszkania"
+          ]
+        },
+        {
+          "id": "house-rooms.high-rise",
+          "term": "high-rise",
+          "ipa": "/ˈhaɪ ˌraɪz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wieżowiec",
+          "definition": "A very tall building with many floors.",
+          "register": "neutralny",
+          "contextPl": "Mieszkanie w centrum miasta",
+          "natural": "",
+          "forms": "high-rises",
+          "collocations": "a downtown high-rise",
+          "synonyms": "tower",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'd love a view from a high-rise downtown.",
+              "pl": "Chcielibyśmy mieć widok z wieżowca w centrum.",
+              "focusEn": "high-rise",
+              "focusPl": "wieżowca"
+            },
+            {
+              "en": "This high-rise has a doorman and a rooftop pool.",
+              "pl": "Ten wieżowiec ma portiera i basen na dachu.",
+              "focusEn": "high-rise",
+              "focusPl": "wieżowiec"
+            }
+          ],
+          "acceptedAnswers": [
+            "high-rise",
+            "high rise"
+          ],
+          "acceptedTranslations": [
+            "wieżowiec",
+            "wysokościowiec"
+          ]
+        },
+        {
+          "id": "house-rooms.fixer-upper",
+          "term": "fixer-upper",
+          "ipa": "/ˈfɪksər ˌʌpər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dom do remontu",
+          "definition": "A house in poor condition that is cheap because it needs repairs.",
+          "register": "potoczny",
+          "contextPl": "Tańsza oferta wymagająca pracy",
+          "natural": "",
+          "forms": "fixer-uppers",
+          "collocations": "buy a fixer-upper",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This one's a fixer-upper, but the price is amazing.",
+              "pl": "To dom do remontu, ale cena jest niesamowita.",
+              "focusEn": "fixer-upper",
+              "focusPl": "dom do remontu"
+            },
+            {
+              "en": "We don't have time for a fixer-upper.",
+              "pl": "Nie mamy czasu na dom do remontu.",
+              "focusEn": "fixer-upper",
+              "focusPl": "dom do remontu"
+            }
+          ],
+          "acceptedAnswers": [
+            "fixer-upper",
+            "fixer upper"
+          ],
+          "acceptedTranslations": [
+            "dom do remontu",
+            "ruina do remontu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "house-rooms.describing",
+      "namePl": "Opis mieszkania",
+      "scenePl": "Opowiadanie znajomej przez telefon o nowym mieszkaniu",
+      "entries": [
+        {
+          "id": "house-rooms.quiet",
+          "term": "quiet",
+          "ipa": "/ˈkwaɪət/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "cichy",
+          "definition": "Without much noise.",
+          "register": "neutralny",
+          "contextPl": "Opis okolicy i mieszkania",
+          "natural": "",
+          "forms": "quieter – quietest",
+          "collocations": "a quiet street; quiet neighbors",
+          "synonyms": "",
+          "antonyms": "noisy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The street is surprisingly quiet at night.",
+              "pl": "Ulica jest w nocy zaskakująco cicha.",
+              "focusEn": "quiet",
+              "focusPl": "cicha"
+            },
+            {
+              "en": "Our new neighbors are quiet and friendly.",
+              "pl": "Nasi nowi sąsiedzi są cisi i mili.",
+              "focusEn": "quiet",
+              "focusPl": "cisi"
+            }
+          ],
+          "acceptedAnswers": [
+            "quiet"
+          ],
+          "acceptedTranslations": [
+            "cichy",
+            "spokojny"
+          ]
+        },
+        {
+          "id": "house-rooms.dark",
+          "term": "dark",
+          "ipa": "/dɑːrk/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "ciemny",
+          "definition": "Without much light.",
+          "register": "neutralny",
+          "contextPl": "Opis wnętrza",
+          "natural": "",
+          "forms": "darker – darkest",
+          "collocations": "a dark room",
+          "synonyms": "",
+          "antonyms": "bright",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bedroom is a bit dark, but it's quiet.",
+              "pl": "Sypialnia jest trochę ciemna, ale cicha.",
+              "focusEn": "dark",
+              "focusPl": "ciemna"
+            },
+            {
+              "en": "The old apartment was so dark that we kept the lights on all day.",
+              "pl": "Stare mieszkanie było tak ciemne, że przez cały dzień mieliśmy zapalone światło.",
+              "focusEn": "dark",
+              "focusPl": "ciemne"
+            }
+          ],
+          "acceptedAnswers": [
+            "dark"
+          ],
+          "acceptedTranslations": [
+            "ciemny"
+          ]
+        },
+        {
+          "id": "house-rooms.bright",
+          "term": "bright",
+          "ipa": "/braɪt/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "jasny",
+          "definition": "Full of light.",
+          "register": "neutralny",
+          "contextPl": "Opis wnętrza",
+          "natural": "",
+          "forms": "brighter – brightest",
+          "collocations": "a bright room; bright and airy",
+          "synonyms": "light; sunny",
+          "antonyms": "dark",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The living room is really bright in the morning.",
+              "pl": "Salon jest rano naprawdę jasny.",
+              "focusEn": "bright",
+              "focusPl": "jasny"
+            },
+            {
+              "en": "After living in a basement, I wanted a bright place.",
+              "pl": "Po mieszkaniu w suterenie chciałam czegoś jasnego.",
+              "focusEn": "bright",
+              "focusPl": "jasnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "bright"
+          ],
+          "acceptedTranslations": [
+            "jasny",
+            "widny"
+          ]
+        },
+        {
+          "id": "house-rooms.noisy",
+          "term": "noisy",
+          "ipa": "/ˈnɔɪzi/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "głośny",
+          "definition": "Full of noise.",
+          "register": "neutralny",
+          "contextPl": "Narzekanie na hałas",
+          "natural": "",
+          "forms": "noisier – noisiest",
+          "collocations": "a noisy street; noisy neighbors",
+          "synonyms": "loud",
+          "antonyms": "quiet",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The only problem is the noisy bar downstairs.",
+              "pl": "Jedyny problem to głośny bar na dole.",
+              "focusEn": "noisy",
+              "focusPl": "głośny"
+            },
+            {
+              "en": "It gets noisy on weekends when people go out.",
+              "pl": "W weekendy robi się głośno, kiedy ludzie wychodzą.",
+              "focusEn": "noisy",
+              "focusPl": "głośno"
+            }
+          ],
+          "acceptedAnswers": [
+            "noisy"
+          ],
+          "acceptedTranslations": [
+            "głośny",
+            "hałaśliwy",
+            "głośno"
+          ]
+        },
+        {
+          "id": "house-rooms.view",
+          "term": "view",
+          "ipa": "/vjuː/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "widok",
+          "definition": "What you can see from a window or place.",
+          "register": "neutralny",
+          "contextPl": "Opis otoczenia mieszkania",
+          "natural": "",
+          "forms": "views",
+          "collocations": "a great view; a view of the river",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We have an amazing view of the river from the bedroom.",
+              "pl": "Z sypialni mamy niesamowity widok na rzekę.",
+              "focusEn": "view",
+              "focusPl": "widok"
+            },
+            {
+              "en": "The view isn't great; we look right at a parking lot.",
+              "pl": "Widok nie jest najlepszy, patrzymy prosto na parking.",
+              "focusEn": "view",
+              "focusPl": "Widok"
+            }
+          ],
+          "acceptedAnswers": [
+            "view"
+          ],
+          "acceptedTranslations": [
+            "widok"
+          ]
+        },
+        {
+          "id": "house-rooms.tiny",
+          "term": "tiny",
+          "ipa": "/ˈtaɪni/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "malutki",
+          "definition": "Very small.",
+          "register": "neutralny",
+          "contextPl": "Opis wielkości pomieszczeń",
+          "natural": "",
+          "forms": "tinier – tiniest",
+          "collocations": "a tiny kitchen; a tiny apartment",
+          "synonyms": "small",
+          "antonyms": "huge",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bathroom is tiny, but everything works.",
+              "pl": "Łazienka jest malutka, ale wszystko działa.",
+              "focusEn": "tiny",
+              "focusPl": "malutka"
+            },
+            {
+              "en": "My tiny studio feels bigger now that it's painted white.",
+              "pl": "Moja malutka kawalerka wydaje się większa, odkąd jest pomalowana na biało.",
+              "focusEn": "tiny",
+              "focusPl": "malutka"
+            }
+          ],
+          "acceptedAnswers": [
+            "tiny"
+          ],
+          "acceptedTranslations": [
+            "malutki",
+            "maleńki",
+            "ciasny"
+          ]
+        },
+        {
+          "id": "house-rooms.sunny",
+          "term": "sunny",
+          "ipa": "/ˈsʌni/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "nasłoneczniony",
+          "definition": "Getting a lot of sunlight.",
+          "register": "neutralny",
+          "contextPl": "Opis położenia mieszkania",
+          "natural": "",
+          "forms": "sunnier – sunniest",
+          "collocations": "a sunny balcony; a sunny room",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The balcony is sunny all afternoon.",
+              "pl": "Balkon jest nasłoneczniony przez całe popołudnie.",
+              "focusEn": "sunny",
+              "focusPl": "nasłoneczniony"
+            },
+            {
+              "en": "My plants love the sunny kitchen window.",
+              "pl": "Moje rośliny uwielbiają słoneczny parapet w kuchni.",
+              "focusEn": "sunny",
+              "focusPl": "słoneczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "sunny"
+          ],
+          "acceptedTranslations": [
+            "nasłoneczniony",
+            "słoneczny"
+          ]
+        },
+        {
+          "id": "house-rooms.modern",
+          "term": "modern",
+          "ipa": "/ˈmɑːdərn/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "nowoczesny",
+          "definition": "New and using the latest design.",
+          "register": "neutralny",
+          "contextPl": "Opis wystroju",
+          "natural": "",
+          "forms": "",
+          "collocations": "a modern kitchen; modern design",
+          "synonyms": "",
+          "antonyms": "old-fashioned",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The building is old, but the inside is very modern.",
+              "pl": "Budynek jest stary, ale wnętrze jest bardzo nowoczesne.",
+              "focusEn": "modern",
+              "focusPl": "nowoczesne"
+            },
+            {
+              "en": "I love the modern kitchen with the white cabinets.",
+              "pl": "Uwielbiam nowoczesną kuchnię z białymi szafkami.",
+              "focusEn": "modern",
+              "focusPl": "nowoczesną"
+            }
+          ],
+          "acceptedAnswers": [
+            "modern"
+          ],
+          "acceptedTranslations": [
+            "nowoczesny"
+          ]
+        },
+        {
+          "id": "house-rooms.spacious",
+          "term": "spacious",
+          "ipa": "/ˈspeɪʃəs/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przestronny",
+          "definition": "Having a lot of space.",
+          "register": "neutralny",
+          "contextPl": "Opis wielkości mieszkania",
+          "natural": "roomy",
+          "forms": "",
+          "collocations": "a spacious kitchen; bright and spacious",
+          "synonyms": "roomy",
+          "antonyms": "cramped",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kitchen is much more spacious than our old one.",
+              "pl": "Kuchnia jest dużo bardziej przestronna niż nasza stara.",
+              "focusEn": "spacious",
+              "focusPl": "przestronna"
+            },
+            {
+              "en": "It's a spacious two-bedroom with a big closet.",
+              "pl": "To przestronne mieszkanie z dwiema sypialniami i dużą szafą.",
+              "focusEn": "spacious",
+              "focusPl": "przestronne"
+            }
+          ],
+          "acceptedAnswers": [
+            "spacious",
+            "roomy"
+          ],
+          "acceptedTranslations": [
+            "przestronny",
+            "obszerny"
+          ]
+        },
+        {
+          "id": "house-rooms.cramped",
+          "term": "cramped",
+          "ipa": "/kræmpt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ciasny",
+          "definition": "Too small for the people or things in it.",
+          "register": "neutralny",
+          "contextPl": "Narzekanie na brak miejsca",
+          "natural": "",
+          "forms": "",
+          "collocations": "a cramped apartment; feel cramped",
+          "synonyms": "tight",
+          "antonyms": "spacious",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Three people in one bedroom felt really cramped.",
+              "pl": "Trzy osoby w jednej sypialni to było naprawdę ciasno.",
+              "focusEn": "cramped",
+              "focusPl": "ciasno"
+            },
+            {
+              "en": "The new place isn't cramped like our last apartment.",
+              "pl": "Nowe mieszkanie nie jest ciasne jak nasze poprzednie.",
+              "focusEn": "cramped",
+              "focusPl": "ciasne"
+            }
+          ],
+          "acceptedAnswers": [
+            "cramped"
+          ],
+          "acceptedTranslations": [
+            "ciasny",
+            "ciasno"
+          ]
+        },
+        {
+          "id": "house-rooms.renovated",
+          "term": "renovated",
+          "ipa": "/ˈrɛnəˌveɪtɪd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wyremontowany",
+          "definition": "Repaired and improved to look new.",
+          "register": "neutralny",
+          "contextPl": "Stan mieszkania",
+          "natural": "",
+          "forms": "",
+          "collocations": "fully renovated; a renovated kitchen",
+          "synonyms": "updated",
+          "antonyms": "run-down",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's an old building, but the apartment is fully renovated.",
+              "pl": "To stary budynek, ale mieszkanie jest całkowicie wyremontowane.",
+              "focusEn": "renovated",
+              "focusPl": "wyremontowane"
+            },
+            {
+              "en": "The renovated kitchen was the main reason we chose it.",
+              "pl": "Wyremontowana kuchnia była głównym powodem, dla którego je wybraliśmy.",
+              "focusEn": "renovated",
+              "focusPl": "Wyremontowana"
+            }
+          ],
+          "acceptedAnswers": [
+            "renovated",
+            "remodeled"
+          ],
+          "acceptedTranslations": [
+            "wyremontowany",
+            "odnowiony"
+          ]
+        },
+        {
+          "id": "house-rooms.charming",
+          "term": "charming",
+          "ipa": "/ˈtʃɑːrmɪŋ/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "uroczy",
+          "definition": "Pleasant and attractive, often in an old-fashioned way.",
+          "register": "neutralny",
+          "contextPl": "Opis klimatu domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "a charming old house",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W ogłoszeniach „charming” bywa eufemizmem: małe lub stare.",
+          "examples": [
+            {
+              "en": "It's an old house, but it's really charming.",
+              "pl": "To stary dom, ale naprawdę uroczy.",
+              "focusEn": "charming",
+              "focusPl": "uroczy"
+            },
+            {
+              "en": "The listing called it charming, which usually means small.",
+              "pl": "W ogłoszeniu nazwano je uroczym, co zwykle oznacza, że jest małe.",
+              "focusEn": "charming",
+              "focusPl": "uroczym"
+            }
+          ],
+          "acceptedAnswers": [
+            "charming"
+          ],
+          "acceptedTranslations": [
+            "uroczy",
+            "czarujący"
+          ]
+        },
+        {
+          "id": "house-rooms.open-floor-plan",
+          "term": "open floor plan",
+          "ipa": "/ˌoʊpən ˈflɔːr ˌplæn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "otwarty układ",
+          "definition": "A layout where the kitchen, dining and living areas are one big space.",
+          "register": "neutralny",
+          "contextPl": "Opis układu mieszkania",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "open concept",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It has an open floor plan, so I can cook and talk to guests.",
+              "pl": "Ma otwarty układ, więc mogę gotować i rozmawiać z gośćmi.",
+              "focusEn": "open floor plan",
+              "focusPl": "otwarty układ"
+            },
+            {
+              "en": "With an open floor plan, the place feels much bigger.",
+              "pl": "Dzięki otwartemu układowi mieszkanie wydaje się dużo większe.",
+              "focusEn": "open floor plan",
+              "focusPl": "otwartemu układowi"
+            }
+          ],
+          "acceptedAnswers": [
+            "open floor plan",
+            "open concept",
+            "open-plan"
+          ],
+          "acceptedTranslations": [
+            "otwarty układ",
+            "aneks kuchenny z salonem"
+          ]
+        },
+        {
+          "id": "house-rooms.drafty",
+          "term": "drafty",
+          "ipa": "/ˈdræfti/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nieszczelny",
+          "definition": "Letting cold air come in through gaps.",
+          "register": "neutralny",
+          "contextPl": "Zimne, stare okna i drzwi",
+          "natural": "",
+          "forms": "draftier – draftiest",
+          "collocations": "drafty windows; a drafty old house",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska: „drafty” (brytyjska: „draughty”).",
+          "examples": [
+            {
+              "en": "The old windows are drafty, so it's cold in winter.",
+              "pl": "Stare okna są nieszczelne, więc zimą jest zimno.",
+              "focusEn": "drafty",
+              "focusPl": "nieszczelne"
+            },
+            {
+              "en": "The hallway is a little drafty near the front door.",
+              "pl": "W przedpokoju przy drzwiach wejściowych trochę wieje.",
+              "focusEn": "drafty",
+              "focusPl": "wieje"
+            }
+          ],
+          "acceptedAnswers": [
+            "drafty"
+          ],
+          "acceptedTranslations": [
+            "nieszczelny",
+            "z przeciągami",
+            "wieje"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "house-rooms.fixtures",
+      "namePl": "Instalacje i łazienka",
+      "scenePl": "Sprawdzanie łazienki, ogrzewania i światła w nowym domu w dniu odbioru kluczy",
+      "entries": [
+        {
+          "id": "house-rooms.shower",
+          "term": "shower",
+          "ipa": "/ˈʃaʊər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "prysznic",
+          "definition": "A place where you wash under falling water.",
+          "register": "neutralny",
+          "contextPl": "Wyposażenie łazienki",
+          "natural": "",
+          "forms": "showers",
+          "collocations": "take a shower; walk-in shower",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The shower has great water pressure.",
+              "pl": "Prysznic ma świetne ciśnienie wody.",
+              "focusEn": "shower",
+              "focusPl": "Prysznic"
+            },
+            {
+              "en": "Let me check if the shower gets hot enough.",
+              "pl": "Sprawdzę, czy pod prysznicem leci wystarczająco gorąca woda.",
+              "focusEn": "shower",
+              "focusPl": "prysznicem"
+            }
+          ],
+          "acceptedAnswers": [
+            "shower"
+          ],
+          "acceptedTranslations": [
+            "prysznic"
+          ]
+        },
+        {
+          "id": "house-rooms.toilet",
+          "term": "toilet",
+          "ipa": "/ˈtɔɪlət/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "toaleta",
+          "definition": "A bowl with a seat that you use to get rid of body waste.",
+          "register": "neutralny",
+          "contextPl": "Wyposażenie łazienki",
+          "natural": "",
+          "forms": "toilets",
+          "collocations": "flush the toilet",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA w mowie częściej „bathroom” niż „toilet” o pomieszczeniu.",
+          "examples": [
+            {
+              "en": "The toilet keeps running after you flush it.",
+              "pl": "Woda w toalecie ciągle leci po spłukaniu.",
+              "focusEn": "toilet",
+              "focusPl": "toalecie"
+            },
+            {
+              "en": "There's a second toilet next to the laundry room.",
+              "pl": "Obok pralni jest druga toaleta.",
+              "focusEn": "toilet",
+              "focusPl": "toaleta"
+            }
+          ],
+          "acceptedAnswers": [
+            "toilet"
+          ],
+          "acceptedTranslations": [
+            "toaleta",
+            "sedes",
+            "muszla klozetowa"
+          ]
+        },
+        {
+          "id": "house-rooms.sink",
+          "term": "sink",
+          "ipa": "/sɪŋk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "umywalka",
+          "definition": "A basin with a faucet for washing hands or dishes.",
+          "register": "neutralny",
+          "contextPl": "Łazienka i kuchnia",
+          "natural": "",
+          "forms": "sinks",
+          "collocations": "bathroom sink; kitchen sink",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W kuchni „sink” to zlew, w łazience umywalka.",
+          "examples": [
+            {
+              "en": "The bathroom sink drains really slowly.",
+              "pl": "Woda w umywalce w łazience bardzo wolno spływa.",
+              "focusEn": "sink",
+              "focusPl": "umywalce"
+            },
+            {
+              "en": "The kitchen sink is big enough for large pots.",
+              "pl": "Zlew w kuchni jest wystarczająco duży na duże garnki.",
+              "focusEn": "sink",
+              "focusPl": "Zlew"
+            }
+          ],
+          "acceptedAnswers": [
+            "sink"
+          ],
+          "acceptedTranslations": [
+            "umywalka",
+            "zlew",
+            "zlewozmywak"
+          ]
+        },
+        {
+          "id": "house-rooms.bathtub",
+          "term": "bathtub",
+          "ipa": "/ˈbæθˌtʌb/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wanna",
+          "definition": "A long container you fill with water and sit in to wash.",
+          "register": "neutralny",
+          "contextPl": "Wyposażenie łazienki",
+          "natural": "tub",
+          "forms": "bathtubs",
+          "collocations": "take a bath in the bathtub",
+          "synonyms": "tub",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii zwykle „bath”.",
+          "examples": [
+            {
+              "en": "I'm so happy this place has a real bathtub.",
+              "pl": "Tak się cieszę, że jest tu prawdziwa wanna.",
+              "focusEn": "bathtub",
+              "focusPl": "wanna"
+            },
+            {
+              "en": "The bathtub needs new caulk around the edges.",
+              "pl": "Wanna potrzebuje nowego silikonu wokół krawędzi.",
+              "focusEn": "bathtub",
+              "focusPl": "Wanna"
+            }
+          ],
+          "acceptedAnswers": [
+            "bathtub",
+            "tub",
+            "bath"
+          ],
+          "acceptedTranslations": [
+            "wanna"
+          ]
+        },
+        {
+          "id": "house-rooms.faucet",
+          "term": "faucet",
+          "ipa": "/ˈfɔːsɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kran",
+          "definition": "The device that controls the flow of water into a sink.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie wody",
+          "natural": "tap",
+          "forms": "faucets",
+          "collocations": "a dripping faucet; kitchen faucet",
+          "synonyms": "tap",
+          "antonyms": "",
+          "notePl": "W USA „faucet”, w Wielkiej Brytanii „tap”.",
+          "examples": [
+            {
+              "en": "The kitchen faucet drips all night.",
+              "pl": "Kran w kuchni kapie całą noc.",
+              "focusEn": "faucet",
+              "focusPl": "Kran"
+            },
+            {
+              "en": "Turn the faucet to the left for hot water.",
+              "pl": "Przekręć kran w lewo, żeby leciała ciepła woda.",
+              "focusEn": "faucet",
+              "focusPl": "kran"
+            }
+          ],
+          "acceptedAnswers": [
+            "faucet",
+            "tap"
+          ],
+          "acceptedTranslations": [
+            "kran",
+            "bateria"
+          ]
+        },
+        {
+          "id": "house-rooms.light-switch",
+          "term": "light switch",
+          "ipa": "/ˈlaɪt ˌswɪtʃ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "włącznik światła",
+          "definition": "A small button or lever on the wall that turns a light on or off.",
+          "register": "neutralny",
+          "contextPl": "Elektryka w domu",
+          "natural": "",
+          "forms": "light switches",
+          "collocations": "flip the light switch",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Where's the light switch for the hallway?",
+              "pl": "Gdzie jest włącznik światła w przedpokoju?",
+              "focusEn": "light switch",
+              "focusPl": "włącznik światła"
+            },
+            {
+              "en": "The light switch is on the wrong side of the door.",
+              "pl": "Włącznik światła jest po złej stronie drzwi.",
+              "focusEn": "light switch",
+              "focusPl": "Włącznik światła"
+            }
+          ],
+          "acceptedAnswers": [
+            "light switch",
+            "switch"
+          ],
+          "acceptedTranslations": [
+            "włącznik światła",
+            "kontakt",
+            "wyłącznik"
+          ]
+        },
+        {
+          "id": "house-rooms.heating",
+          "term": "heating",
+          "ipa": "/ˈhiːtɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ogrzewanie",
+          "definition": "The system that keeps a building warm.",
+          "register": "neutralny",
+          "contextPl": "Ciepło w domu",
+          "natural": "heat",
+          "forms": "",
+          "collocations": "central heating; turn on the heating",
+          "synonyms": "heat",
+          "antonyms": "",
+          "notePl": "W USA często mówi się po prostu „the heat”.",
+          "examples": [
+            {
+              "en": "The heating works, but it takes a while to warm up.",
+              "pl": "Ogrzewanie działa, ale chwilę trwa, zanim się nagrzeje.",
+              "focusEn": "heating",
+              "focusPl": "Ogrzewanie"
+            },
+            {
+              "en": "Is the heating gas or electric?",
+              "pl": "Ogrzewanie jest gazowe czy elektryczne?",
+              "focusEn": "heating",
+              "focusPl": "Ogrzewanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "heating",
+            "heat"
+          ],
+          "acceptedTranslations": [
+            "ogrzewanie"
+          ]
+        },
+        {
+          "id": "house-rooms.air-conditioning",
+          "term": "air conditioning",
+          "ipa": "/ˌɛr kənˈdɪʃənɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "klimatyzacja",
+          "definition": "A system that keeps a building cool.",
+          "register": "neutralny",
+          "contextPl": "Chłodzenie w lecie",
+          "natural": "AC",
+          "forms": "",
+          "collocations": "turn on the air conditioning; central air",
+          "synonyms": "AC",
+          "antonyms": "",
+          "notePl": "Potocznie „AC” lub „air”.",
+          "examples": [
+            {
+              "en": "Luckily, the bedroom has air conditioning.",
+              "pl": "Na szczęście sypialnia ma klimatyzację.",
+              "focusEn": "air conditioning",
+              "focusPl": "klimatyzację"
+            },
+            {
+              "en": "Turn on the air conditioning; it's ninety degrees in here.",
+              "pl": "Włącz klimatyzację, jest tu ponad trzydzieści stopni.",
+              "focusEn": "air conditioning",
+              "focusPl": "klimatyzację"
+            }
+          ],
+          "acceptedAnswers": [
+            "air conditioning",
+            "AC",
+            "air conditioner"
+          ],
+          "acceptedTranslations": [
+            "klimatyzacja"
+          ]
+        },
+        {
+          "id": "house-rooms.tile",
+          "term": "tile",
+          "ipa": "/taɪl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "płytka",
+          "definition": "A flat square piece of hard material used to cover floors and walls.",
+          "register": "neutralny",
+          "contextPl": "Wykończenie łazienki i kuchni",
+          "natural": "",
+          "forms": "tiles",
+          "collocations": "bathroom tile; floor tiles",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bathroom tile is old, but it's clean.",
+              "pl": "Płytki w łazience są stare, ale czyste.",
+              "focusEn": "tile",
+              "focusPl": "Płytki"
+            },
+            {
+              "en": "One tile near the shower is cracked.",
+              "pl": "Jedna płytka obok prysznica jest pęknięta.",
+              "focusEn": "tile",
+              "focusPl": "płytka"
+            }
+          ],
+          "acceptedAnswers": [
+            "tile"
+          ],
+          "acceptedTranslations": [
+            "płytka",
+            "kafelek"
+          ]
+        },
+        {
+          "id": "house-rooms.radiator",
+          "term": "radiator",
+          "ipa": "/ˈreɪdiˌeɪtər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "grzejnik",
+          "definition": "A metal device that heats a room with hot water or steam.",
+          "register": "neutralny",
+          "contextPl": "Ogrzewanie w starszych budynkach",
+          "natural": "",
+          "forms": "radiators",
+          "collocations": "",
+          "synonyms": "heater",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The radiator under the window makes a ticking noise.",
+              "pl": "Grzejnik pod oknem stuka.",
+              "focusEn": "radiator",
+              "focusPl": "Grzejnik"
+            },
+            {
+              "en": "Don't put anything on the radiator; it gets very hot.",
+              "pl": "Nie kładź niczego na kaloryferze, bardzo się nagrzewa.",
+              "focusEn": "radiator",
+              "focusPl": "kaloryferze"
+            }
+          ],
+          "acceptedAnswers": [
+            "radiator",
+            "heater"
+          ],
+          "acceptedTranslations": [
+            "grzejnik",
+            "kaloryfer"
+          ]
+        },
+        {
+          "id": "house-rooms.thermostat",
+          "term": "thermostat",
+          "ipa": "/ˈθɜːrməˌstæt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "termostat",
+          "definition": "A device that controls the temperature in a home.",
+          "register": "neutralny",
+          "contextPl": "Ustawianie temperatury",
+          "natural": "",
+          "forms": "thermostats",
+          "collocations": "set the thermostat; turn up the thermostat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA temperaturę ustawia się w stopniach Fahrenheita (68°F ≈ 20°C).",
+          "examples": [
+            {
+              "en": "Set the thermostat to sixty-eight at night.",
+              "pl": "Ustaw termostat na dwadzieścia stopni na noc.",
+              "focusEn": "thermostat",
+              "focusPl": "termostat"
+            },
+            {
+              "en": "The thermostat is in the hallway by the bedroom.",
+              "pl": "Termostat jest w przedpokoju przy sypialni.",
+              "focusEn": "thermostat",
+              "focusPl": "Termostat"
+            }
+          ],
+          "acceptedAnswers": [
+            "thermostat"
+          ],
+          "acceptedTranslations": [
+            "termostat"
+          ]
+        },
+        {
+          "id": "house-rooms.water-heater",
+          "term": "water heater",
+          "ipa": "/ˈwɔːtər ˌhiːtər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "bojler",
+          "definition": "A tank that heats water for the house.",
+          "register": "neutralny",
+          "contextPl": "Ciepła woda w domu",
+          "natural": "",
+          "forms": "water heaters",
+          "collocations": "",
+          "synonyms": "boiler",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The water heater is only two years old.",
+              "pl": "Bojler ma dopiero dwa lata.",
+              "focusEn": "water heater",
+              "focusPl": "Bojler"
+            },
+            {
+              "en": "If the shower is cold, the water heater might be off.",
+              "pl": "Jeśli prysznic jest zimny, może bojler jest wyłączony.",
+              "focusEn": "water heater",
+              "focusPl": "bojler"
+            }
+          ],
+          "acceptedAnswers": [
+            "water heater",
+            "hot water heater"
+          ],
+          "acceptedTranslations": [
+            "bojler",
+            "podgrzewacz wody"
+          ]
+        },
+        {
+          "id": "house-rooms.breaker-box",
+          "term": "breaker box",
+          "ipa": "/ˈbreɪkər ˌbɑːks/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "skrzynka z bezpiecznikami",
+          "definition": "A metal box with switches that control the electricity in a house.",
+          "register": "specjalistyczny",
+          "contextPl": "Awaria prądu w domu",
+          "natural": "fuse box",
+          "forms": "breaker boxes",
+          "collocations": "check the breaker box",
+          "synonyms": "fuse box; electrical panel",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The breaker box is in the basement next to the water heater.",
+              "pl": "Skrzynka z bezpiecznikami jest w piwnicy obok bojlera.",
+              "focusEn": "breaker box",
+              "focusPl": "Skrzynka z bezpiecznikami"
+            },
+            {
+              "en": "If the power goes out, check the breaker box first.",
+              "pl": "Jeśli zabraknie prądu, najpierw sprawdź skrzynkę z bezpiecznikami.",
+              "focusEn": "breaker box",
+              "focusPl": "skrzynkę z bezpiecznikami"
+            }
+          ],
+          "acceptedAnswers": [
+            "breaker box",
+            "fuse box",
+            "electrical panel"
+          ],
+          "acceptedTranslations": [
+            "skrzynka z bezpiecznikami",
+            "rozdzielnia elektryczna",
+            "bezpieczniki"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "house-rooms.home-life",
+      "namePl": "Goście i życie w domu",
+      "scenePl": "Przyjmowanie gości w nowym domu podczas parapetówki",
+      "entries": [
+        {
+          "id": "house-rooms.make-yourself-at-home",
+          "term": "make yourself at home",
+          "ipa": "/ˌmeɪk jʊrˈsɛlf ət ˈhoʊm/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "czuj się jak u siebie",
+          "definition": "A friendly way to tell a guest to relax and be comfortable.",
+          "register": "neutralny",
+          "contextPl": "Witanie gości w domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Come in, take your shoes off, and make yourself at home.",
+              "pl": "Wejdź, zdejmij buty i czuj się jak u siebie.",
+              "focusEn": "make yourself at home",
+              "focusPl": "czuj się jak u siebie"
+            },
+            {
+              "en": "Make yourself at home; there are drinks in the fridge.",
+              "pl": "Czuj się jak u siebie, w lodówce są napoje.",
+              "focusEn": "Make yourself at home",
+              "focusPl": "Czuj się jak u siebie"
+            }
+          ],
+          "acceptedAnswers": [
+            "make yourself at home",
+            "make yourselves at home"
+          ],
+          "acceptedTranslations": [
+            "czuj się jak u siebie",
+            "rozgość się"
+          ]
+        },
+        {
+          "id": "house-rooms.housewarming-party",
+          "term": "housewarming party",
+          "ipa": "/ˈhaʊsˌwɔːrmɪŋ ˌpɑːrti/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "parapetówka",
+          "definition": "A party to celebrate moving into a new home.",
+          "register": "neutralny",
+          "contextPl": "Świętowanie nowego mieszkania",
+          "natural": "housewarming",
+          "forms": "housewarming parties",
+          "collocations": "throw a housewarming party",
+          "synonyms": "housewarming",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks for coming to our housewarming party!",
+              "pl": "Dzięki, że przyszliście na naszą parapetówkę!",
+              "focusEn": "housewarming party",
+              "focusPl": "parapetówkę"
+            },
+            {
+              "en": "Guests usually bring a small gift to a housewarming party.",
+              "pl": "Goście zwykle przynoszą mały prezent na parapetówkę.",
+              "focusEn": "housewarming party",
+              "focusPl": "parapetówkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "housewarming party",
+            "housewarming"
+          ],
+          "acceptedTranslations": [
+            "parapetówka",
+            "parapetówa"
+          ]
+        },
+        {
+          "id": "house-rooms.give-a-tour",
+          "term": "give a tour",
+          "ipa": "/ˌɡɪv ə ˈtʊr/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oprowadzić",
+          "definition": "To show someone around a place.",
+          "register": "neutralny",
+          "contextPl": "Pokazywanie domu gościom",
+          "natural": "show around",
+          "forms": "gave – given",
+          "collocations": "give someone a tour of the house",
+          "synonyms": "show around",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let me give you a tour of the house.",
+              "pl": "Pozwól, że oprowadzę cię po domu.",
+              "focusEn": "give you a tour",
+              "focusPl": "oprowadzę"
+            },
+            {
+              "en": "We gave everyone a quick tour before dinner.",
+              "pl": "Przed kolacją wszystkich szybko oprowadziliśmy.",
+              "focusEn": "gave everyone a quick tour",
+              "focusPl": "oprowadziliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "give a tour",
+            "show around"
+          ],
+          "acceptedTranslations": [
+            "oprowadzić",
+            "oprowadzać"
+          ]
+        },
+        {
+          "id": "house-rooms.feel-at-home",
+          "term": "feel at home",
+          "ipa": "/ˌfiːl ət ˈhoʊm/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czuć się jak w domu",
+          "definition": "To feel comfortable and relaxed in a place.",
+          "register": "neutralny",
+          "contextPl": "Zadomowienie w nowym miejscu",
+          "natural": "",
+          "forms": "felt – felt",
+          "collocations": "make someone feel at home",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After a month here, we finally feel at home.",
+              "pl": "Po miesiącu wreszcie czujemy się tu jak w domu.",
+              "focusEn": "feel at home",
+              "focusPl": "czujemy się tu jak w domu"
+            },
+            {
+              "en": "The warm colors make everyone feel at home.",
+              "pl": "Ciepłe kolory sprawiają, że każdy czuje się jak w domu.",
+              "focusEn": "feel at home",
+              "focusPl": "czuje się jak w domu"
+            }
+          ],
+          "acceptedAnswers": [
+            "feel at home"
+          ],
+          "acceptedTranslations": [
+            "czuć się jak w domu",
+            "czuć się swobodnie"
+          ]
+        },
+        {
+          "id": "house-rooms.be-my-guest",
+          "term": "be my guest",
+          "ipa": "/ˌbiː maɪ ˈɡɛst/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "proszę bardzo",
+          "definition": "Used to give someone permission to do or take something.",
+          "register": "potoczny",
+          "contextPl": "Uprzejme pozwolenie gościom",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "go ahead",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you want more cake, be my guest.",
+              "pl": "Jeśli chcesz więcej ciasta, nie krępuj się.",
+              "focusEn": "be my guest",
+              "focusPl": "nie krępuj się"
+            },
+            {
+              "en": "You want to try the new hot tub? Be my guest!",
+              "pl": "Chcesz wypróbować nową wannę z hydromasażem? Proszę bardzo!",
+              "focusEn": "Be my guest",
+              "focusPl": "Proszę bardzo"
+            }
+          ],
+          "acceptedAnswers": [
+            "be my guest",
+            "go ahead"
+          ],
+          "acceptedTranslations": [
+            "proszę bardzo",
+            "nie krępuj się",
+            "śmiało"
+          ]
+        },
+        {
+          "id": "house-rooms.home-sweet-home",
+          "term": "home sweet home",
+          "ipa": "/ˌhoʊm ˌswiːt ˈhoʊm/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dom, słodki dom",
+          "definition": "Said when you are happy to be back in your own home.",
+          "register": "neutralny",
+          "contextPl": "Radość z powrotu do domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After the party, I sat on the couch and sighed: home sweet home.",
+              "pl": "Po imprezie usiadłem na kanapie i westchnąłem: dom, słodki dom.",
+              "focusEn": "home sweet home",
+              "focusPl": "dom, słodki dom"
+            },
+            {
+              "en": "Our friends gave us a little sign for the door that says home sweet home.",
+              "pl": "Znajomi dali nam tabliczkę na drzwi z napisem „dom, słodki dom”.",
+              "focusEn": "home sweet home",
+              "focusPl": "dom, słodki dom"
+            }
+          ],
+          "acceptedAnswers": [
+            "home sweet home"
+          ],
+          "acceptedTranslations": [
+            "dom, słodki dom",
+            "domowe pielesze"
+          ]
+        },
+        {
+          "id": "house-rooms.homesick",
+          "term": "homesick",
+          "ipa": "/ˈhoʊmˌsɪk/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "tęskniący za domem",
+          "definition": "Sad because you are away from home.",
+          "register": "neutralny",
+          "contextPl": "Tęsknota za domem rodzinnym",
+          "natural": "",
+          "forms": "",
+          "collocations": "feel homesick; get homesick",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My sister came home from college and said she'd been homesick all semester.",
+              "pl": "Siostra przyjechała z uczelni i powiedziała, że cały semestr tęskniła za domem.",
+              "focusEn": "homesick",
+              "focusPl": "tęskniła za domem"
+            },
+            {
+              "en": "Seeing our new house made Grandma a little homesick for her old one.",
+              "pl": "Widok naszego nowego domu sprawił, że babcia trochę zatęskniła za swoim starym.",
+              "focusEn": "homesick",
+              "focusPl": "zatęskniła"
+            }
+          ],
+          "acceptedAnswers": [
+            "homesick"
+          ],
+          "acceptedTranslations": [
+            "tęskniący za domem",
+            "stęskniony za domem"
+          ]
+        },
+        {
+          "id": "house-rooms.settle-in",
+          "term": "settle in",
+          "ipa": "/ˌsɛtəl ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zadomowić się",
+          "definition": "To become comfortable in a new home.",
+          "register": "neutralny",
+          "contextPl": "Pierwsze tygodnie w nowym miejscu",
+          "natural": "",
+          "forms": "settled in",
+          "collocations": "settle in quickly",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're still settling in, so excuse the boxes.",
+              "pl": "Jeszcze się urządzamy, więc wybaczcie pudła.",
+              "focusEn": "settling in",
+              "focusPl": "się urządzamy"
+            },
+            {
+              "en": "Have the kids settled in to their new rooms?",
+              "pl": "Dzieci zadomowiły się już w nowych pokojach?",
+              "focusEn": "settled in",
+              "focusPl": "zadomowiły się"
+            }
+          ],
+          "acceptedAnswers": [
+            "settle in"
+          ],
+          "acceptedTranslations": [
+            "zadomowić się",
+            "urządzić się",
+            "przyzwyczaić się"
+          ]
+        }
+      ]
+    }
+  ]
+}
