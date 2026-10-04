@@ -1,0 +1,3876 @@
+{
+  "schemaVersion": 1,
+  "id": "symptoms-illness",
+  "namePl": "Objawy i choroby",
+  "nameEn": "Symptoms and Illnesses",
+  "group": "health",
+  "symbol": "thermometer.medium",
+  "summaryPl": "Przeziębienie i grypa, bóle i osłabienie, żołądek, alergie, częste choroby i zgłaszanie choroby w pracy.",
+  "aliases": [
+    "objawy",
+    "choroby",
+    "choroba",
+    "przeziębienie",
+    "grypa",
+    "dolegliwości",
+    "alergia",
+    "symptoms",
+    "illness",
+    "sick",
+    "cold",
+    "flu"
+  ],
+  "categories": [
+    {
+      "id": "symptoms-illness.cold-flu",
+      "namePl": "Przeziębienie i grypa",
+      "scenePl": "Dom: chory leży w łóżku z przeziębieniem, a domownicy się nim opiekują",
+      "entries": [
+        {
+          "id": "symptoms-illness.sick",
+          "term": "sick",
+          "ipa": "/sɪk/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "chory",
+          "definition": "Not healthy; having an illness.",
+          "register": "neutralny",
+          "contextPl": "Ogólne określenie bycia chorym",
+          "natural": "",
+          "forms": "sicker; sickest",
+          "collocations": "get sick; feel sick; call in sick",
+          "synonyms": "ill",
+          "antonyms": "healthy; well",
+          "notePl": "W amerykańskim angielskim „sick” to podstawowe słowo; „ill” brzmi bardziej oficjalnie.",
+          "examples": [
+            {
+              "en": "I stayed home from work because I was sick.",
+              "pl": "Zostałem w domu zamiast iść do pracy, bo byłem chory.",
+              "focusEn": "sick",
+              "focusPl": "chory"
+            },
+            {
+              "en": "You look really sick. Go back to bed, and I'll make you some tea.",
+              "pl": "Wyglądasz na bardzo chorego. Wracaj do łóżka, zrobię ci herbaty.",
+              "focusEn": "sick",
+              "focusPl": "chorego"
+            }
+          ],
+          "acceptedAnswers": [
+            "sick",
+            "ill"
+          ],
+          "acceptedTranslations": [
+            "chory",
+            "chora"
+          ]
+        },
+        {
+          "id": "symptoms-illness.cold",
+          "term": "cold",
+          "ipa": "/koʊld/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przeziębienie",
+          "definition": "A common mild illness that gives you a runny nose and sore throat.",
+          "register": "neutralny",
+          "contextPl": "Najczęstsza lekka infekcja",
+          "natural": "",
+          "forms": "colds",
+          "collocations": "have a cold; catch a cold; bad cold; common cold",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I think I'm getting a cold, so I'm going to bed early.",
+              "pl": "Chyba łapie mnie przeziębienie, więc wcześnie idę spać.",
+              "focusEn": "cold",
+              "focusPl": "przeziębienie"
+            },
+            {
+              "en": "My daughter brought a cold home from school, and now we all have it.",
+              "pl": "Córka przyniosła przeziębienie ze szkoły i teraz wszyscy je mamy.",
+              "focusEn": "cold",
+              "focusPl": "przeziębienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "cold",
+            "common cold"
+          ],
+          "acceptedTranslations": [
+            "przeziębienie",
+            "katar"
+          ]
+        },
+        {
+          "id": "symptoms-illness.flu",
+          "term": "flu",
+          "ipa": "/fluː/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "grypa",
+          "definition": "An illness like a bad cold, with fever, body aches and tiredness.",
+          "register": "neutralny",
+          "contextPl": "Infekcja cięższa niż przeziębienie",
+          "natural": "",
+          "forms": "",
+          "collocations": "have the flu; flu season; stomach flu",
+          "synonyms": "influenza",
+          "antonyms": "",
+          "notePl": "Zwykle z „the”: have the flu.",
+          "examples": [
+            {
+              "en": "It's not just a cold; I think it's the flu.",
+              "pl": "To nie zwykłe przeziębienie; chyba mam grypę.",
+              "focusEn": "flu",
+              "focusPl": "grypę"
+            },
+            {
+              "en": "He's been in bed with the flu since Tuesday.",
+              "pl": "Od wtorku leży w łóżku z grypą.",
+              "focusEn": "flu",
+              "focusPl": "grypą"
+            }
+          ],
+          "acceptedAnswers": [
+            "flu",
+            "influenza"
+          ],
+          "acceptedTranslations": [
+            "grypa"
+          ]
+        },
+        {
+          "id": "symptoms-illness.fever",
+          "term": "fever",
+          "ipa": "/ˈfiːvər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "gorączka",
+          "definition": "A body temperature that is higher than normal.",
+          "register": "neutralny",
+          "contextPl": "Podwyższona temperatura",
+          "natural": "",
+          "forms": "fevers",
+          "collocations": "have a fever; high fever; run a fever; the fever breaks",
+          "synonyms": "temperature",
+          "antonyms": "",
+          "notePl": "„Run a fever” = mieć gorączkę.",
+          "examples": [
+            {
+              "en": "She has a fever, so she's staying home today.",
+              "pl": "Ma gorączkę, więc zostaje dziś w domu.",
+              "focusEn": "fever",
+              "focusPl": "gorączkę"
+            },
+            {
+              "en": "My fever finally broke last night, and I woke up soaked.",
+              "pl": "Wczoraj w nocy gorączka w końcu spadła i obudziłem się cały mokry.",
+              "focusEn": "fever",
+              "focusPl": "gorączka"
+            }
+          ],
+          "acceptedAnswers": [
+            "fever",
+            "temperature"
+          ],
+          "acceptedTranslations": [
+            "gorączka",
+            "temperatura"
+          ]
+        },
+        {
+          "id": "symptoms-illness.cough",
+          "term": "cough",
+          "ipa": "/kɔːf/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kaszel",
+          "definition": "The act or sound of pushing air out of your throat suddenly.",
+          "register": "neutralny",
+          "contextPl": "Objaw przeziębienia i infekcji",
+          "natural": "",
+          "forms": "coughs",
+          "collocations": "bad cough; dry cough; cough drops; cough syrup",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Ten sam wyraz jest też czasownikiem: to cough – kaszleć.",
+          "examples": [
+            {
+              "en": "That cough sounds terrible. Do you want some honey?",
+              "pl": "Ten kaszel brzmi okropnie. Chcesz trochę miodu?",
+              "focusEn": "cough",
+              "focusPl": "kaszel"
+            },
+            {
+              "en": "My cough kept me up half the night.",
+              "pl": "Kaszel nie dawał mi spać przez pół nocy.",
+              "focusEn": "cough",
+              "focusPl": "Kaszel"
+            }
+          ],
+          "acceptedAnswers": [
+            "cough"
+          ],
+          "acceptedTranslations": [
+            "kaszel"
+          ]
+        },
+        {
+          "id": "symptoms-illness.sore-throat",
+          "term": "sore throat",
+          "ipa": "/ˌsɔːr ˈθroʊt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ból gardła",
+          "definition": "Pain in your throat, especially when you swallow.",
+          "register": "neutralny",
+          "contextPl": "Typowy początek przeziębienia",
+          "natural": "",
+          "forms": "sore throats",
+          "collocations": "have a sore throat; scratchy throat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I woke up with a sore throat and could barely swallow.",
+              "pl": "Obudziłem się z bólem gardła i ledwo mogłem przełykać.",
+              "focusEn": "sore throat",
+              "focusPl": "bólem gardła"
+            },
+            {
+              "en": "Drink some warm tea with lemon for your sore throat.",
+              "pl": "Wypij ciepłą herbatę z cytryną na ból gardła.",
+              "focusEn": "sore throat",
+              "focusPl": "ból gardła"
+            }
+          ],
+          "acceptedAnswers": [
+            "sore throat"
+          ],
+          "acceptedTranslations": [
+            "ból gardła",
+            "bolące gardło"
+          ]
+        },
+        {
+          "id": "symptoms-illness.runny-nose",
+          "term": "runny nose",
+          "ipa": "/ˌrʌni ˈnoʊz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "katar",
+          "definition": "A nose that keeps producing liquid because of a cold or allergy.",
+          "register": "neutralny",
+          "contextPl": "Objaw przeziębienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "have a runny nose",
+          "synonyms": "",
+          "antonyms": "stuffy nose",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Pass me the tissues; I have a runny nose that won't stop.",
+              "pl": "Podaj mi chusteczki; mam katar, który nie chce przejść.",
+              "focusEn": "runny nose",
+              "focusPl": "katar"
+            },
+            {
+              "en": "The baby has a runny nose, but no fever.",
+              "pl": "Maluch ma katar, ale nie ma gorączki.",
+              "focusEn": "runny nose",
+              "focusPl": "katar"
+            }
+          ],
+          "acceptedAnswers": [
+            "runny nose"
+          ],
+          "acceptedTranslations": [
+            "katar",
+            "cieknący nos",
+            "leci z nosa"
+          ]
+        },
+        {
+          "id": "symptoms-illness.stuffy-nose",
+          "term": "stuffy nose",
+          "ipa": "/ˌstʌfi ˈnoʊz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zatkany nos",
+          "definition": "A nose that is blocked so you cannot breathe through it easily.",
+          "register": "neutralny",
+          "contextPl": "Niedrożny nos przy przeziębieniu",
+          "natural": "",
+          "forms": "",
+          "collocations": "have a stuffy nose",
+          "synonyms": "stuffed-up nose; congestion",
+          "antonyms": "runny nose",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I can't smell anything with this stuffy nose.",
+              "pl": "Z tym zatkanym nosem nic nie czuję.",
+              "focusEn": "stuffy nose",
+              "focusPl": "zatkanym nosem"
+            },
+            {
+              "en": "I slept on two pillows because of my stuffy nose.",
+              "pl": "Spałem na dwóch poduszkach przez zatkany nos.",
+              "focusEn": "stuffy nose",
+              "focusPl": "zatkany nos"
+            }
+          ],
+          "acceptedAnswers": [
+            "stuffy nose",
+            "stuffed-up nose",
+            "blocked nose"
+          ],
+          "acceptedTranslations": [
+            "zatkany nos",
+            "niedrożny nos"
+          ]
+        },
+        {
+          "id": "symptoms-illness.sneeze",
+          "term": "sneeze",
+          "ipa": "/sniːz/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kichać",
+          "definition": "To push air out of your nose and mouth suddenly and loudly.",
+          "register": "neutralny",
+          "contextPl": "Objaw przeziębienia lub alergii",
+          "natural": "",
+          "forms": "sneezed",
+          "collocations": "sneeze a lot; cover your mouth when you sneeze",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po kichnięciu mówi się „Bless you!”.",
+          "examples": [
+            {
+              "en": "I've been sneezing all morning, so I'm staying in bed.",
+              "pl": "Od rana kicham, więc zostaję w łóżku.",
+              "focusEn": "sneezing",
+              "focusPl": "kicham"
+            },
+            {
+              "en": "Cover your mouth when you sneeze, please.",
+              "pl": "Zasłaniaj usta, kiedy kichasz, proszę.",
+              "focusEn": "sneeze",
+              "focusPl": "kichasz"
+            }
+          ],
+          "acceptedAnswers": [
+            "sneeze"
+          ],
+          "acceptedTranslations": [
+            "kichać",
+            "kichnąć"
+          ]
+        },
+        {
+          "id": "symptoms-illness.blow-your-nose",
+          "term": "blow your nose",
+          "ipa": "/ˌbloʊ jər ˈnoʊz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wydmuchać nos",
+          "definition": "To clear your nose by pushing air through it into a tissue.",
+          "register": "neutralny",
+          "contextPl": "Czynność przy katarze",
+          "natural": "",
+          "forms": "blow – blew – blown",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Here's a tissue. Blow your nose and try to get some sleep.",
+              "pl": "Masz chusteczkę. Wydmuchaj nos i spróbuj się przespać.",
+              "focusEn": "Blow your nose",
+              "focusPl": "Wydmuchaj nos"
+            },
+            {
+              "en": "My nose is red from blowing my nose all day.",
+              "pl": "Nos mam czerwony od wydmuchiwania nosa przez cały dzień.",
+              "focusEn": "blowing my nose",
+              "focusPl": "wydmuchiwania nosa"
+            }
+          ],
+          "acceptedAnswers": [
+            "blow your nose",
+            "blow my nose"
+          ],
+          "acceptedTranslations": [
+            "wydmuchać nos",
+            "wydmuchiwać nos"
+          ]
+        },
+        {
+          "id": "symptoms-illness.catch-a-cold",
+          "term": "catch a cold",
+          "ipa": "/ˌkætʃ ə ˈkoʊld/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przeziębić się",
+          "definition": "To become sick with a cold.",
+          "register": "neutralny",
+          "contextPl": "Zachorowanie na przeziębienie",
+          "natural": "",
+          "forms": "catch – caught – caught",
+          "collocations": "",
+          "synonyms": "get a cold",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Put on a sweater, or you'll catch a cold.",
+              "pl": "Włóż sweter, bo się przeziębisz.",
+              "focusEn": "catch a cold",
+              "focusPl": "się przeziębisz"
+            },
+            {
+              "en": "I must have caught a cold when I walked home in the rain.",
+              "pl": "Musiałem się przeziębić, kiedy wracałem do domu w deszczu.",
+              "focusEn": "caught a cold",
+              "focusPl": "się przeziębić"
+            }
+          ],
+          "acceptedAnswers": [
+            "catch a cold",
+            "get a cold",
+            "catch cold"
+          ],
+          "acceptedTranslations": [
+            "przeziębić się",
+            "przeziębiać się",
+            "złapać przeziębienie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.come-down-with",
+          "term": "come down with",
+          "ipa": "/ˌkʌm ˈdaʊn wɪð/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zachorować na",
+          "definition": "To start to have an illness, usually not a serious one.",
+          "register": "potoczny",
+          "contextPl": "Początek choroby",
+          "natural": "",
+          "forms": "come – came – come",
+          "collocations": "come down with the flu; come down with something",
+          "synonyms": "catch",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I think I'm coming down with something; my throat is scratchy.",
+              "pl": "Chyba coś mnie bierze; drapie mnie w gardle.",
+              "focusEn": "coming down with",
+              "focusPl": "coś mnie bierze"
+            },
+            {
+              "en": "Half the family came down with the flu over the holidays.",
+              "pl": "Połowa rodziny zachorowała na grypę w święta.",
+              "focusEn": "came down with",
+              "focusPl": "zachorowała na"
+            }
+          ],
+          "acceptedAnswers": [
+            "come down with"
+          ],
+          "acceptedTranslations": [
+            "zachorować na",
+            "złapać",
+            "rozchorować się",
+            "coś mnie bierze"
+          ]
+        },
+        {
+          "id": "symptoms-illness.chills",
+          "term": "chills",
+          "ipa": "/tʃɪlz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dreszcze",
+          "definition": "A feeling of cold with shaking, often when you have a fever.",
+          "register": "neutralny",
+          "contextPl": "Objaw gorączki",
+          "natural": "",
+          "forms": "",
+          "collocations": "have the chills; fever and chills",
+          "synonyms": "shivers",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I have the chills even under two blankets.",
+              "pl": "Mam dreszcze nawet pod dwoma kocami.",
+              "focusEn": "chills",
+              "focusPl": "dreszcze"
+            },
+            {
+              "en": "First came the chills, and then my fever went up.",
+              "pl": "Najpierw przyszły dreszcze, a potem skoczyła mi gorączka.",
+              "focusEn": "chills",
+              "focusPl": "dreszcze"
+            }
+          ],
+          "acceptedAnswers": [
+            "chills",
+            "the chills",
+            "shivers"
+          ],
+          "acceptedTranslations": [
+            "dreszcze"
+          ]
+        },
+        {
+          "id": "symptoms-illness.temperature",
+          "term": "temperature",
+          "ipa": "/ˈtemprətʃər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "temperatura",
+          "definition": "A body heat that is higher than normal; a fever.",
+          "register": "neutralny",
+          "contextPl": "Mierzenie gorączki w domu",
+          "natural": "",
+          "forms": "temperatures",
+          "collocations": "have a temperature; take your temperature",
+          "synonyms": "fever",
+          "antonyms": "",
+          "notePl": "W USA mierzy się w stopniach Fahrenheita: 98.6°F to normalna temperatura ciała.",
+          "examples": [
+            {
+              "en": "Do you still have a temperature?",
+              "pl": "Czy masz jeszcze temperaturę?",
+              "focusEn": "temperature",
+              "focusPl": "temperaturę"
+            },
+            {
+              "en": "His temperature went up again after dinner.",
+              "pl": "Po kolacji znowu podskoczyła mu temperatura.",
+              "focusEn": "temperature",
+              "focusPl": "temperatura"
+            }
+          ],
+          "acceptedAnswers": [
+            "temperature",
+            "fever"
+          ],
+          "acceptedTranslations": [
+            "temperatura",
+            "gorączka"
+          ]
+        },
+        {
+          "id": "symptoms-illness.tissue",
+          "term": "tissue",
+          "ipa": "/ˈtɪʃuː/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "chusteczka",
+          "definition": "A soft paper handkerchief that you use once.",
+          "register": "neutralny",
+          "contextPl": "Chusteczki higieniczne przy katarze",
+          "natural": "",
+          "forms": "tissues",
+          "collocations": "box of tissues; paper tissue",
+          "synonyms": "Kleenex",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you bring me a box of tissues?",
+              "pl": "Możesz mi przynieść pudełko chusteczek?",
+              "focusEn": "tissues",
+              "focusPl": "chusteczek"
+            },
+            {
+              "en": "There were used tissues all over the nightstand.",
+              "pl": "Na szafce nocnej leżało pełno zużytych chusteczek.",
+              "focusEn": "tissues",
+              "focusPl": "chusteczek"
+            }
+          ],
+          "acceptedAnswers": [
+            "tissue"
+          ],
+          "acceptedTranslations": [
+            "chusteczka",
+            "chusteczka higieniczna"
+          ]
+        },
+        {
+          "id": "symptoms-illness.contagious",
+          "term": "contagious",
+          "ipa": "/kənˈteɪdʒəs/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zaraźliwy",
+          "definition": "Able to pass an illness to other people.",
+          "register": "neutralny",
+          "contextPl": "Ryzyko zarażenia domowników",
+          "natural": "",
+          "forms": "",
+          "collocations": "highly contagious; still contagious",
+          "synonyms": "infectious",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Stay away from the baby; you might still be contagious.",
+              "pl": "Trzymaj się z dala od dziecka; możesz jeszcze być zaraźliwy.",
+              "focusEn": "contagious",
+              "focusPl": "zaraźliwy"
+            },
+            {
+              "en": "The doctor said he's not contagious anymore, so he can go back to school tomorrow.",
+              "pl": "Lekarz powiedział, że już nie zaraża, więc jutro może wrócić do szkoły.",
+              "focusEn": "contagious",
+              "focusPl": "zaraża"
+            }
+          ],
+          "acceptedAnswers": [
+            "contagious",
+            "infectious"
+          ],
+          "acceptedTranslations": [
+            "zaraźliwy",
+            "zakaźny",
+            "zarażać"
+          ]
+        },
+        {
+          "id": "symptoms-illness.germ",
+          "term": "germ",
+          "ipa": "/dʒɜːrm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zarazek",
+          "definition": "A very small living thing that can make you sick.",
+          "register": "neutralny",
+          "contextPl": "Higiena w domu podczas choroby",
+          "natural": "",
+          "forms": "germs",
+          "collocations": "spread germs; kill germs",
+          "synonyms": "bacteria",
+          "antonyms": "",
+          "notePl": "Zwykle w liczbie mnogiej: germs.",
+          "examples": [
+            {
+              "en": "Wash your hands so you don't spread germs around the house.",
+              "pl": "Myj ręce, żeby nie roznosić zarazków po domu.",
+              "focusEn": "germs",
+              "focusPl": "zarazków"
+            },
+            {
+              "en": "I wiped the doorknobs to get rid of the germs.",
+              "pl": "Przetarłem klamki, żeby pozbyć się zarazków.",
+              "focusEn": "germs",
+              "focusPl": "zarazków"
+            }
+          ],
+          "acceptedAnswers": [
+            "germ",
+            "germs"
+          ],
+          "acceptedTranslations": [
+            "zarazek",
+            "zarazki",
+            "bakterie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.achy",
+          "term": "achy",
+          "ipa": "/ˈeɪki/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "obolały",
+          "definition": "Having small pains all over your body.",
+          "register": "potoczny",
+          "contextPl": "Bóle mięśni przy grypie",
+          "natural": "",
+          "forms": "achier; achiest",
+          "collocations": "feel achy; achy all over",
+          "synonyms": "sore",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I feel achy all over, like I ran a marathon.",
+              "pl": "Jestem cały obolały, jakbym przebiegł maraton.",
+              "focusEn": "achy",
+              "focusPl": "obolały"
+            },
+            {
+              "en": "She stayed on the couch all day, tired and achy.",
+              "pl": "Cały dzień leżała na kanapie, zmęczona i obolała.",
+              "focusEn": "achy",
+              "focusPl": "obolała"
+            }
+          ],
+          "acceptedAnswers": [
+            "achy",
+            "sore"
+          ],
+          "acceptedTranslations": [
+            "obolały",
+            "obolała",
+            "połamany"
+          ]
+        },
+        {
+          "id": "symptoms-illness.virus",
+          "term": "virus",
+          "ipa": "/ˈvaɪrəs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wirus",
+          "definition": "A tiny thing that causes illnesses like colds and flu.",
+          "register": "neutralny",
+          "contextPl": "Przyczyna przeziębienia i grypy",
+          "natural": "",
+          "forms": "viruses",
+          "collocations": "catch a virus; stomach virus",
+          "synonyms": "bug",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The doctor said it's just a virus and it'll pass in a few days.",
+              "pl": "Lekarz powiedział, że to tylko wirus i za kilka dni przejdzie.",
+              "focusEn": "virus",
+              "focusPl": "wirus"
+            },
+            {
+              "en": "My son picked up a virus at daycare.",
+              "pl": "Syn złapał jakiegoś wirusa w żłobku.",
+              "focusEn": "virus",
+              "focusPl": "wirusa"
+            }
+          ],
+          "acceptedAnswers": [
+            "virus",
+            "bug"
+          ],
+          "acceptedTranslations": [
+            "wirus"
+          ]
+        },
+        {
+          "id": "symptoms-illness.sinus-infection",
+          "term": "sinus infection",
+          "ipa": "/ˈsaɪnəs ɪnˌfekʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zapalenie zatok",
+          "definition": "An infection in the spaces inside your face around your nose.",
+          "register": "neutralny",
+          "contextPl": "Powikłanie przeziębienia",
+          "natural": "",
+          "forms": "sinus infections",
+          "collocations": "get a sinus infection",
+          "synonyms": "sinusitis",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My cold turned into a sinus infection, and my whole face hurts.",
+              "pl": "Przeziębienie przeszło w zapalenie zatok i boli mnie cała twarz.",
+              "focusEn": "sinus infection",
+              "focusPl": "zapalenie zatok"
+            },
+            {
+              "en": "With a sinus infection, it hurts every time I bend over.",
+              "pl": "Przy zapaleniu zatok boli mnie za każdym razem, gdy się schylam.",
+              "focusEn": "sinus infection",
+              "focusPl": "zapaleniu zatok"
+            }
+          ],
+          "acceptedAnswers": [
+            "sinus infection",
+            "sinusitis"
+          ],
+          "acceptedTranslations": [
+            "zapalenie zatok"
+          ]
+        },
+        {
+          "id": "symptoms-illness.bless-you",
+          "term": "bless you",
+          "ipa": "/ˈbles juː/",
+          "pos": "wykrzyknik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "na zdrowie",
+          "definition": "What you say to someone who has just sneezed.",
+          "register": "neutralny",
+          "contextPl": "Reakcja na kichnięcie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Nie mylić z toastem – „na zdrowie” przy piciu to „cheers”.",
+          "examples": [
+            {
+              "en": "You sneezed three times in a row. Bless you!",
+              "pl": "Kichnąłeś trzy razy z rzędu. Na zdrowie!",
+              "focusEn": "Bless you",
+              "focusPl": "Na zdrowie"
+            },
+            {
+              "en": "Every time I sneezed, my roommate called out bless you from the kitchen.",
+              "pl": "Za każdym razem, gdy kichałem, współlokator wołał z kuchni „na zdrowie”.",
+              "focusEn": "bless you",
+              "focusPl": "na zdrowie"
+            }
+          ],
+          "acceptedAnswers": [
+            "bless you",
+            "God bless you"
+          ],
+          "acceptedTranslations": [
+            "na zdrowie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "symptoms-illness.aches-tiredness",
+      "namePl": "Bóle i osłabienie",
+      "scenePl": "Biuro w ciągu dnia: pracownik źle się czuje i rozmawia o tym z kolegą",
+      "entries": [
+        {
+          "id": "symptoms-illness.headache",
+          "term": "headache",
+          "ipa": "/ˈhedeɪk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ból głowy",
+          "definition": "A pain in your head.",
+          "register": "neutralny",
+          "contextPl": "Najczęstsza dolegliwość w ciągu dnia",
+          "natural": "",
+          "forms": "headaches",
+          "collocations": "have a headache; bad headache; splitting headache",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've had a headache since this morning's meeting.",
+              "pl": "Od porannego zebrania mam ból głowy.",
+              "focusEn": "headache",
+              "focusPl": "ból głowy"
+            },
+            {
+              "en": "The bright screen is giving me a headache.",
+              "pl": "Ten jasny ekran przyprawia mnie o ból głowy.",
+              "focusEn": "headache",
+              "focusPl": "ból głowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "headache"
+          ],
+          "acceptedTranslations": [
+            "ból głowy"
+          ]
+        },
+        {
+          "id": "symptoms-illness.tired",
+          "term": "tired",
+          "ipa": "/taɪərd/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "zmęczony",
+          "definition": "Needing rest or sleep.",
+          "register": "neutralny",
+          "contextPl": "Zmęczenie w pracy",
+          "natural": "",
+          "forms": "more tired; most tired",
+          "collocations": "feel tired; so tired; tired of",
+          "synonyms": "sleepy; worn out",
+          "antonyms": "rested",
+          "notePl": "„Tired of” = mający czegoś dość.",
+          "examples": [
+            {
+              "en": "I'm so tired I can't focus on this report.",
+              "pl": "Jestem tak zmęczony, że nie mogę się skupić na tym raporcie.",
+              "focusEn": "tired",
+              "focusPl": "zmęczony"
+            },
+            {
+              "en": "You look tired. Did you sleep at all last night?",
+              "pl": "Wyglądasz na zmęczonego. Spałeś w ogóle tej nocy?",
+              "focusEn": "tired",
+              "focusPl": "zmęczonego"
+            }
+          ],
+          "acceptedAnswers": [
+            "tired",
+            "worn out"
+          ],
+          "acceptedTranslations": [
+            "zmęczony",
+            "zmęczona"
+          ]
+        },
+        {
+          "id": "symptoms-illness.back-pain",
+          "term": "back pain",
+          "ipa": "/ˈbæk ˌpeɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ból pleców",
+          "definition": "Pain in your back, often from sitting or lifting.",
+          "register": "neutralny",
+          "contextPl": "Dolegliwość pracy siedzącej",
+          "natural": "",
+          "forms": "",
+          "collocations": "lower back pain; chronic back pain",
+          "synonyms": "backache",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sitting at this desk all day gives me back pain.",
+              "pl": "Od siedzenia cały dzień przy tym biurku mam bóle pleców.",
+              "focusEn": "back pain",
+              "focusPl": "bóle pleców"
+            },
+            {
+              "en": "My back pain is so bad I can't sit in this chair.",
+              "pl": "Ból pleców jest tak silny, że nie mogę siedzieć na tym krześle.",
+              "focusEn": "back pain",
+              "focusPl": "Ból pleców"
+            }
+          ],
+          "acceptedAnswers": [
+            "back pain",
+            "backache"
+          ],
+          "acceptedTranslations": [
+            "ból pleców",
+            "bóle pleców"
+          ]
+        },
+        {
+          "id": "symptoms-illness.stomachache",
+          "term": "stomachache",
+          "ipa": "/ˈstʌməkeɪk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ból brzucha",
+          "definition": "A pain in your stomach.",
+          "register": "neutralny",
+          "contextPl": "Dolegliwość po jedzeniu lub ze stresu",
+          "natural": "",
+          "forms": "stomachaches",
+          "collocations": "have a stomachache",
+          "synonyms": "bellyache",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I skipped lunch because I had a stomachache.",
+              "pl": "Pominąłem lunch, bo miałem ból brzucha.",
+              "focusEn": "stomachache",
+              "focusPl": "ból brzucha"
+            },
+            {
+              "en": "Do you have anything for a stomachache in your desk?",
+              "pl": "Masz w biurku coś na ból brzucha?",
+              "focusEn": "stomachache",
+              "focusPl": "ból brzucha"
+            }
+          ],
+          "acceptedAnswers": [
+            "stomachache",
+            "stomach ache",
+            "bellyache"
+          ],
+          "acceptedTranslations": [
+            "ból brzucha",
+            "ból żołądka"
+          ]
+        },
+        {
+          "id": "symptoms-illness.exhausted",
+          "term": "exhausted",
+          "ipa": "/ɪɡˈzɔːstɪd/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wyczerpany",
+          "definition": "Extremely tired.",
+          "register": "neutralny",
+          "contextPl": "Silne zmęczenie",
+          "natural": "",
+          "forms": "",
+          "collocations": "completely exhausted; physically exhausted",
+          "synonyms": "worn out; drained",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "By three o'clock I was completely exhausted.",
+              "pl": "O trzeciej byłem kompletnie wyczerpany.",
+              "focusEn": "exhausted",
+              "focusPl": "wyczerpany"
+            },
+            {
+              "en": "She's been exhausted for weeks and keeps nodding off at her desk.",
+              "pl": "Od tygodni jest wyczerpana i ciągle przysypia przy biurku.",
+              "focusEn": "exhausted",
+              "focusPl": "wyczerpana"
+            }
+          ],
+          "acceptedAnswers": [
+            "exhausted",
+            "worn out"
+          ],
+          "acceptedTranslations": [
+            "wyczerpany",
+            "wyczerpana",
+            "wykończony"
+          ]
+        },
+        {
+          "id": "symptoms-illness.dizzy",
+          "term": "dizzy",
+          "ipa": "/ˈdɪzi/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mający zawroty głowy",
+          "definition": "Feeling as if everything is spinning and you might fall.",
+          "register": "neutralny",
+          "contextPl": "Zawroty głowy",
+          "natural": "",
+          "forms": "dizzier; dizziest",
+          "collocations": "feel dizzy; get dizzy; dizzy spell",
+          "synonyms": "lightheaded",
+          "antonyms": "",
+          "notePl": "„I feel dizzy” = kręci mi się w głowie.",
+          "examples": [
+            {
+              "en": "I stood up too fast from my chair and got dizzy.",
+              "pl": "Za szybko wstałem z krzesła i zakręciło mi się w głowie.",
+              "focusEn": "dizzy",
+              "focusPl": "zakręciło mi się w głowie"
+            },
+            {
+              "en": "If you feel dizzy, sit down and put your head between your knees.",
+              "pl": "Jeśli kręci ci się w głowie, usiądź i włóż głowę między kolana.",
+              "focusEn": "dizzy",
+              "focusPl": "kręci ci się w głowie"
+            }
+          ],
+          "acceptedAnswers": [
+            "dizzy",
+            "lightheaded"
+          ],
+          "acceptedTranslations": [
+            "mający zawroty głowy",
+            "kręci mi się w głowie",
+            "zawroty głowy",
+            "oszołomiony"
+          ]
+        },
+        {
+          "id": "symptoms-illness.weak",
+          "term": "weak",
+          "ipa": "/wiːk/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "słaby",
+          "definition": "Without much strength or energy.",
+          "register": "neutralny",
+          "contextPl": "Osłabienie po chorobie",
+          "natural": "",
+          "forms": "weaker; weakest",
+          "collocations": "feel weak; weak from",
+          "synonyms": "",
+          "antonyms": "strong",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I still feel weak after being sick last week.",
+              "pl": "Po zeszłotygodniowej chorobie wciąż czuję się słaby.",
+              "focusEn": "weak",
+              "focusPl": "słaby"
+            },
+            {
+              "en": "When I walked to the printer, my legs felt weak.",
+              "pl": "Kiedy szedłem do drukarki, miałem słabe nogi.",
+              "focusEn": "weak",
+              "focusPl": "słabe"
+            }
+          ],
+          "acceptedAnswers": [
+            "weak"
+          ],
+          "acceptedTranslations": [
+            "słaby",
+            "osłabiony"
+          ]
+        },
+        {
+          "id": "symptoms-illness.sore",
+          "term": "sore",
+          "ipa": "/sɔːr/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "obolały",
+          "definition": "Painful, especially from use or tired muscles.",
+          "register": "neutralny",
+          "contextPl": "Bolące mięśnie, oczy, szyja",
+          "natural": "",
+          "forms": "sorer; sorest",
+          "collocations": "sore neck; sore eyes; sore muscles",
+          "synonyms": "achy",
+          "antonyms": "",
+          "notePl": "„Sore” opisuje bolące miejsce: my neck is sore – boli mnie szyja.",
+          "examples": [
+            {
+              "en": "I have a really sore neck from looking down at my laptop.",
+              "pl": "Mam strasznie obolałą szyję od patrzenia w dół na laptopa.",
+              "focusEn": "sore",
+              "focusPl": "obolałą"
+            },
+            {
+              "en": "My eyes get sore after a long day at the computer.",
+              "pl": "Po długim dniu przy komputerze bolą mnie oczy.",
+              "focusEn": "sore",
+              "focusPl": "bolą"
+            }
+          ],
+          "acceptedAnswers": [
+            "sore",
+            "achy"
+          ],
+          "acceptedTranslations": [
+            "obolały",
+            "bolący",
+            "boleć"
+          ]
+        },
+        {
+          "id": "symptoms-illness.worn-out",
+          "term": "worn out",
+          "ipa": "/ˌwɔːrn ˈaʊt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wykończony",
+          "definition": "Very tired after work or effort.",
+          "register": "potoczny",
+          "contextPl": "Zmęczenie po długim dniu",
+          "natural": "",
+          "forms": "",
+          "collocations": "totally worn out; feel worn out",
+          "synonyms": "exhausted; beat",
+          "antonyms": "rested",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After this long week, I'm totally worn out.",
+              "pl": "Po tym długim tygodniu jestem totalnie wykończony.",
+              "focusEn": "worn out",
+              "focusPl": "wykończony"
+            },
+            {
+              "en": "You look worn out. Why don't you take the afternoon off?",
+              "pl": "Wyglądasz na wykończonego. Może weźmiesz wolne popołudnie?",
+              "focusEn": "worn out",
+              "focusPl": "wykończonego"
+            }
+          ],
+          "acceptedAnswers": [
+            "worn out",
+            "exhausted",
+            "beat"
+          ],
+          "acceptedTranslations": [
+            "wykończony",
+            "wyczerpany",
+            "padnięty"
+          ]
+        },
+        {
+          "id": "symptoms-illness.pass-out",
+          "term": "pass out",
+          "ipa": "/ˌpæs ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zemdleć",
+          "definition": "To suddenly become unconscious for a short time.",
+          "register": "potoczny",
+          "contextPl": "Utrata przytomności",
+          "natural": "",
+          "forms": "passed out",
+          "collocations": "pass out from the heat",
+          "synonyms": "faint",
+          "antonyms": "come to",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A guy from accounting passed out in the elevator this morning.",
+              "pl": "Facet z księgowości zemdlał dziś rano w windzie.",
+              "focusEn": "passed out",
+              "focusPl": "zemdlał"
+            },
+            {
+              "en": "Drink some water and sit down before you pass out.",
+              "pl": "Napij się wody i usiądź, zanim zemdlejesz.",
+              "focusEn": "pass out",
+              "focusPl": "zemdlejesz"
+            }
+          ],
+          "acceptedAnswers": [
+            "pass out",
+            "faint"
+          ],
+          "acceptedTranslations": [
+            "zemdleć",
+            "mdleć",
+            "stracić przytomność",
+            "tracić przytomność"
+          ]
+        },
+        {
+          "id": "symptoms-illness.faint",
+          "term": "faint",
+          "ipa": "/feɪnt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "zemdleć",
+          "definition": "To become unconscious for a short time, for example from heat or shock.",
+          "register": "neutralny",
+          "contextPl": "Omdlenie",
+          "natural": "",
+          "forms": "fainted",
+          "collocations": "almost faint; feel faint",
+          "synonyms": "pass out",
+          "antonyms": "",
+          "notePl": "Bardziej książkowe niż „pass out”.",
+          "examples": [
+            {
+              "en": "He almost fainted in the middle of his presentation.",
+              "pl": "Prawie zemdlał w środku prezentacji.",
+              "focusEn": "fainted",
+              "focusPl": "zemdlał"
+            },
+            {
+              "en": "I felt like I was going to faint, so I sat down on the floor.",
+              "pl": "Czułem, że zaraz zemdleję, więc usiadłem na podłodze.",
+              "focusEn": "faint",
+              "focusPl": "zemdleję"
+            }
+          ],
+          "acceptedAnswers": [
+            "faint",
+            "pass out"
+          ],
+          "acceptedTranslations": [
+            "zemdleć",
+            "mdleć",
+            "omdleć"
+          ]
+        },
+        {
+          "id": "symptoms-illness.migraine",
+          "term": "migraine",
+          "ipa": "/ˈmaɪɡreɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "migrena",
+          "definition": "A very bad headache, often with sickness and sensitivity to light.",
+          "register": "neutralny",
+          "contextPl": "Silny, nawracający ból głowy",
+          "natural": "",
+          "forms": "migraines",
+          "collocations": "get migraines; have a migraine",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I get a migraine whenever I stare at the screen too long.",
+              "pl": "Dostaję migreny za każdym razem, gdy zbyt długo patrzę w ekran.",
+              "focusEn": "migraine",
+              "focusPl": "migreny"
+            },
+            {
+              "en": "She left the office early because of a migraine.",
+              "pl": "Wyszła wcześniej z biura z powodu migreny.",
+              "focusEn": "migraine",
+              "focusPl": "migreny"
+            }
+          ],
+          "acceptedAnswers": [
+            "migraine"
+          ],
+          "acceptedTranslations": [
+            "migrena"
+          ]
+        },
+        {
+          "id": "symptoms-illness.lightheaded",
+          "term": "lightheaded",
+          "ipa": "/ˌlaɪtˈhedɪd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bliski omdlenia",
+          "definition": "Feeling weak and as if you might faint.",
+          "register": "neutralny",
+          "contextPl": "Słabość z głodu, gorąca, zmęczenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "feel lightheaded",
+          "synonyms": "dizzy; faint",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I skipped breakfast, and now I feel a little lightheaded.",
+              "pl": "Nie zjadłem śniadania i teraz robi mi się trochę słabo.",
+              "focusEn": "lightheaded",
+              "focusPl": "słabo"
+            },
+            {
+              "en": "She got lightheaded in the hot conference room and had to step outside.",
+              "pl": "W dusznej sali konferencyjnej zrobiło jej się słabo i musiała wyjść.",
+              "focusEn": "lightheaded",
+              "focusPl": "słabo"
+            }
+          ],
+          "acceptedAnswers": [
+            "lightheaded",
+            "light-headed"
+          ],
+          "acceptedTranslations": [
+            "bliski omdlenia",
+            "słabo",
+            "zamroczony"
+          ]
+        },
+        {
+          "id": "symptoms-illness.cramp",
+          "term": "cramp",
+          "ipa": "/kræmp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "skurcz",
+          "definition": "A sudden painful tightening of a muscle.",
+          "register": "neutralny",
+          "contextPl": "Skurcz mięśnia",
+          "natural": "",
+          "forms": "cramps",
+          "collocations": "leg cramp; get a cramp; stomach cramps",
+          "synonyms": "spasm",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I got a cramp in my leg from sitting too long.",
+              "pl": "Od zbyt długiego siedzenia złapał mnie skurcz w nodze.",
+              "focusEn": "cramp",
+              "focusPl": "skurcz"
+            },
+            {
+              "en": "She stood up and stretched her calf to get rid of the cramp.",
+              "pl": "Wstała i rozciągnęła łydkę, żeby pozbyć się skurczu.",
+              "focusEn": "cramp",
+              "focusPl": "skurczu"
+            }
+          ],
+          "acceptedAnswers": [
+            "cramp",
+            "spasm"
+          ],
+          "acceptedTranslations": [
+            "skurcz",
+            "kurcz"
+          ]
+        },
+        {
+          "id": "symptoms-illness.run-down",
+          "term": "run-down",
+          "ipa": "/ˌrʌn ˈdaʊn/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "osłabiony",
+          "definition": "Tired and weak, so you get sick easily.",
+          "register": "potoczny",
+          "contextPl": "Ogólne osłabienie od przepracowania",
+          "natural": "",
+          "forms": "",
+          "collocations": "feel run-down; a bit run-down",
+          "synonyms": "worn out",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've been feeling run-down since I started working late every night.",
+              "pl": "Czuję się osłabiony, odkąd co wieczór pracuję do późna.",
+              "focusEn": "run-down",
+              "focusPl": "osłabiony"
+            },
+            {
+              "en": "When you're run-down, you catch every bug going around the office.",
+              "pl": "Kiedy jest się osłabionym, łapie się każdego wirusa krążącego po biurze.",
+              "focusEn": "run-down",
+              "focusPl": "osłabionym"
+            }
+          ],
+          "acceptedAnswers": [
+            "run-down",
+            "run down"
+          ],
+          "acceptedTranslations": [
+            "osłabiony",
+            "wyczerpany",
+            "bez sił"
+          ]
+        },
+        {
+          "id": "symptoms-illness.feverish",
+          "term": "feverish",
+          "ipa": "/ˈfiːvərɪʃ/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "rozpalony",
+          "definition": "Feeling hot and unwell, as if you have a fever.",
+          "register": "neutralny",
+          "contextPl": "Pierwsze oznaki gorączki",
+          "natural": "",
+          "forms": "",
+          "collocations": "feel feverish",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your forehead feels hot. Do you feel feverish?",
+              "pl": "Masz gorące czoło. Czujesz się rozpalony?",
+              "focusEn": "feverish",
+              "focusPl": "rozpalony"
+            },
+            {
+              "en": "By noon I felt feverish and had to go home.",
+              "pl": "Koło południa poczułem się rozpalony i musiałem iść do domu.",
+              "focusEn": "feverish",
+              "focusPl": "rozpalony"
+            }
+          ],
+          "acceptedAnswers": [
+            "feverish"
+          ],
+          "acceptedTranslations": [
+            "rozpalony",
+            "gorączkujący",
+            "podgorączkowy"
+          ]
+        },
+        {
+          "id": "symptoms-illness.eye-strain",
+          "term": "eye strain",
+          "ipa": "/ˈaɪ ˌstreɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "zmęczenie oczu",
+          "definition": "Tired, sore eyes from looking at a screen or reading too long.",
+          "register": "neutralny",
+          "contextPl": "Praca przy komputerze",
+          "natural": "",
+          "forms": "",
+          "collocations": "cause eye strain; reduce eye strain",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Too many hours in front of the monitor can cause eye strain.",
+              "pl": "Zbyt wiele godzin przed monitorem może powodować zmęczenie oczu.",
+              "focusEn": "eye strain",
+              "focusPl": "zmęczenie oczu"
+            },
+            {
+              "en": "I bought special glasses to help with eye strain at work.",
+              "pl": "Kupiłem specjalne okulary, żeby zmniejszyć zmęczenie oczu w pracy.",
+              "focusEn": "eye strain",
+              "focusPl": "zmęczenie oczu"
+            }
+          ],
+          "acceptedAnswers": [
+            "eye strain",
+            "eyestrain"
+          ],
+          "acceptedTranslations": [
+            "zmęczenie oczu",
+            "przemęczenie oczu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "symptoms-illness.stomach",
+      "namePl": "Żołądek i zatrucia",
+      "scenePl": "Noc po kolacji w restauracji: problemy żołądkowe w domu",
+      "entries": [
+        {
+          "id": "symptoms-illness.throw-up",
+          "term": "throw up",
+          "ipa": "/ˌθroʊ ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wymiotować",
+          "definition": "To bring food from your stomach out through your mouth.",
+          "register": "potoczny",
+          "contextPl": "Najczęstsze słowo na wymioty w mowie",
+          "natural": "",
+          "forms": "throw – threw – thrown",
+          "collocations": "throw up all night",
+          "synonyms": "vomit; be sick",
+          "antonyms": "",
+          "notePl": "Codzienne, potoczne słowo; „vomit” brzmi bardziej medycznie.",
+          "examples": [
+            {
+              "en": "I threw up twice after we got home from the restaurant.",
+              "pl": "Zwymiotowałem dwa razy po powrocie z restauracji.",
+              "focusEn": "threw up",
+              "focusPl": "Zwymiotowałem"
+            },
+            {
+              "en": "I feel like I'm going to throw up. Can you grab a bucket?",
+              "pl": "Chyba zaraz zwymiotuję. Możesz przynieść wiadro?",
+              "focusEn": "throw up",
+              "focusPl": "zwymiotuję"
+            }
+          ],
+          "acceptedAnswers": [
+            "throw up",
+            "vomit"
+          ],
+          "acceptedTranslations": [
+            "wymiotować",
+            "zwymiotować"
+          ]
+        },
+        {
+          "id": "symptoms-illness.upset-stomach",
+          "term": "upset stomach",
+          "ipa": "/ʌpˌset ˈstʌmək/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rozstrój żołądka",
+          "definition": "A mild stomach illness that makes you feel sick.",
+          "register": "neutralny",
+          "contextPl": "Lekkie problemy żołądkowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "have an upset stomach; settle an upset stomach",
+          "synonyms": "stomach trouble",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've had an upset stomach ever since that seafood dinner.",
+              "pl": "Od tamtej kolacji z owocami morza mam rozstrój żołądka.",
+              "focusEn": "upset stomach",
+              "focusPl": "rozstrój żołądka"
+            },
+            {
+              "en": "She drank some ginger tea to settle her upset stomach.",
+              "pl": "Wypiła herbatę z imbirem, żeby uspokoić rozstrojony żołądek.",
+              "focusEn": "upset stomach",
+              "focusPl": "rozstrojony żołądek"
+            }
+          ],
+          "acceptedAnswers": [
+            "upset stomach"
+          ],
+          "acceptedTranslations": [
+            "rozstrój żołądka",
+            "rozstrojony żołądek",
+            "niestrawność"
+          ]
+        },
+        {
+          "id": "symptoms-illness.food-poisoning",
+          "term": "food poisoning",
+          "ipa": "/ˈfuːd ˌpɔɪzənɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zatrucie pokarmowe",
+          "definition": "An illness caused by eating bad or old food.",
+          "register": "neutralny",
+          "contextPl": "Choroba po zjedzeniu nieświeżego jedzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "get food poisoning; a bad case of food poisoning",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I think I got food poisoning from the chicken.",
+              "pl": "Chyba mam zatrucie pokarmowe po tym kurczaku.",
+              "focusEn": "food poisoning",
+              "focusPl": "zatrucie pokarmowe"
+            },
+            {
+              "en": "My husband had the same dish, so it's probably food poisoning.",
+              "pl": "Mąż jadł to samo danie, więc to pewnie zatrucie pokarmowe.",
+              "focusEn": "food poisoning",
+              "focusPl": "zatrucie pokarmowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "food poisoning"
+          ],
+          "acceptedTranslations": [
+            "zatrucie pokarmowe",
+            "zatrucie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.sick-to-your-stomach",
+          "term": "sick to your stomach",
+          "ipa": "/ˌsɪk tə jər ˈstʌmək/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "niedobrze",
+          "definition": "Feeling that you might throw up.",
+          "register": "potoczny",
+          "contextPl": "Mdłości",
+          "natural": "",
+          "forms": "",
+          "collocations": "feel sick to your stomach",
+          "synonyms": "nauseous",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I felt sick to my stomach the whole drive home.",
+              "pl": "Przez całą drogę do domu było mi niedobrze.",
+              "focusEn": "sick to my stomach",
+              "focusPl": "niedobrze"
+            },
+            {
+              "en": "The smell of the leftovers made me sick to my stomach.",
+              "pl": "Od zapachu resztek jedzenia zrobiło mi się niedobrze.",
+              "focusEn": "sick to my stomach",
+              "focusPl": "niedobrze"
+            }
+          ],
+          "acceptedAnswers": [
+            "sick to your stomach",
+            "sick to my stomach"
+          ],
+          "acceptedTranslations": [
+            "niedobrze",
+            "niedobrze mi",
+            "mdli mnie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.nauseous",
+          "term": "nauseous",
+          "ipa": "/ˈnɔːʃəs/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "mający mdłości",
+          "definition": "Feeling that you are going to throw up.",
+          "register": "neutralny",
+          "contextPl": "Mdłości",
+          "natural": "",
+          "forms": "",
+          "collocations": "feel nauseous; make someone nauseous",
+          "synonyms": "queasy",
+          "antonyms": "",
+          "notePl": "W USA „nauseous” znaczy „mający mdłości”, nie „obrzydliwy”.",
+          "examples": [
+            {
+              "en": "I woke up at two in the morning feeling nauseous.",
+              "pl": "Obudziłem się o drugiej w nocy z mdłościami.",
+              "focusEn": "nauseous",
+              "focusPl": "mdłościami"
+            },
+            {
+              "en": "Even the smell of food makes me nauseous right now.",
+              "pl": "Teraz nawet zapach jedzenia przyprawia mnie o mdłości.",
+              "focusEn": "nauseous",
+              "focusPl": "mdłości"
+            }
+          ],
+          "acceptedAnswers": [
+            "nauseous",
+            "queasy"
+          ],
+          "acceptedTranslations": [
+            "mający mdłości",
+            "mdłości",
+            "mdli mnie",
+            "niedobrze mi"
+          ]
+        },
+        {
+          "id": "symptoms-illness.diarrhea",
+          "term": "diarrhea",
+          "ipa": "/ˌdaɪəˈriːə/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "biegunka",
+          "definition": "An illness in which you go to the toilet often and your waste is liquid.",
+          "register": "neutralny",
+          "contextPl": "Objaw zatrucia lub grypy żołądkowej",
+          "natural": "",
+          "forms": "",
+          "collocations": "have diarrhea",
+          "synonyms": "",
+          "antonyms": "constipation",
+          "notePl": "Pisownia amerykańska; brytyjska to „diarrhoea”.",
+          "examples": [
+            {
+              "en": "I've had diarrhea all night and feel completely drained.",
+              "pl": "Całą noc mam biegunkę i czuję się kompletnie wypompowany.",
+              "focusEn": "diarrhea",
+              "focusPl": "biegunkę"
+            },
+            {
+              "en": "Keep drinking water, because diarrhea can dry you out fast.",
+              "pl": "Pij dalej wodę, bo biegunka może cię szybko odwodnić.",
+              "focusEn": "diarrhea",
+              "focusPl": "biegunka"
+            }
+          ],
+          "acceptedAnswers": [
+            "diarrhea"
+          ],
+          "acceptedTranslations": [
+            "biegunka",
+            "rozwolnienie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.stomach-bug",
+          "term": "stomach bug",
+          "ipa": "/ˈstʌmək ˌbʌɡ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "grypa żołądkowa",
+          "definition": "A short illness that causes vomiting and diarrhea.",
+          "register": "potoczny",
+          "contextPl": "Wirusowa infekcja żołądka",
+          "natural": "",
+          "forms": "stomach bugs",
+          "collocations": "catch a stomach bug",
+          "synonyms": "stomach flu",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It might not be the food; there's a stomach bug going around.",
+              "pl": "To może nie jedzenie; krąży grypa żołądkowa.",
+              "focusEn": "stomach bug",
+              "focusPl": "grypa żołądkowa"
+            },
+            {
+              "en": "The whole family caught the stomach bug that weekend.",
+              "pl": "Cała rodzina złapała w ten weekend grypę żołądkową.",
+              "focusEn": "stomach bug",
+              "focusPl": "grypę żołądkową"
+            }
+          ],
+          "acceptedAnswers": [
+            "stomach bug",
+            "stomach flu",
+            "stomach virus"
+          ],
+          "acceptedTranslations": [
+            "grypa żołądkowa",
+            "jelitówka"
+          ]
+        },
+        {
+          "id": "symptoms-illness.heartburn",
+          "term": "heartburn",
+          "ipa": "/ˈhɑːrtbɜːrn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zgaga",
+          "definition": "A burning feeling in your chest caused by stomach acid.",
+          "register": "neutralny",
+          "contextPl": "Pieczenie po ciężkim lub ostrym jedzeniu",
+          "natural": "",
+          "forms": "",
+          "collocations": "get heartburn; bad heartburn",
+          "synonyms": "acid reflux",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Spicy food always gives me heartburn at night.",
+              "pl": "Po ostrym jedzeniu zawsze mam w nocy zgagę.",
+              "focusEn": "heartburn",
+              "focusPl": "zgagę"
+            },
+            {
+              "en": "I sat up in bed because the heartburn was so bad.",
+              "pl": "Usiadłem na łóżku, bo zgaga była okropna.",
+              "focusEn": "heartburn",
+              "focusPl": "zgaga"
+            }
+          ],
+          "acceptedAnswers": [
+            "heartburn",
+            "acid reflux"
+          ],
+          "acceptedTranslations": [
+            "zgaga"
+          ]
+        },
+        {
+          "id": "symptoms-illness.bloated",
+          "term": "bloated",
+          "ipa": "/ˈbloʊtɪd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wzdęty",
+          "definition": "Feeling that your stomach is too full and swollen.",
+          "register": "neutralny",
+          "contextPl": "Uczucie przejedzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "feel bloated",
+          "synonyms": "full",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I ate too much, and now I feel bloated.",
+              "pl": "Zjadłem za dużo i teraz czuję się wzdęty.",
+              "focusEn": "bloated",
+              "focusPl": "wzdęty"
+            },
+            {
+              "en": "After that heavy pasta, my stomach was bloated for hours.",
+              "pl": "Po tym ciężkim makaronie miałem wzdęty brzuch przez kilka godzin.",
+              "focusEn": "bloated",
+              "focusPl": "wzdęty"
+            }
+          ],
+          "acceptedAnswers": [
+            "bloated"
+          ],
+          "acceptedTranslations": [
+            "wzdęty",
+            "mieć wzdęcia",
+            "przejedzony"
+          ]
+        },
+        {
+          "id": "symptoms-illness.dehydrated",
+          "term": "dehydrated",
+          "ipa": "/diːˈhaɪdreɪtɪd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odwodniony",
+          "definition": "Not having enough water in your body.",
+          "register": "neutralny",
+          "contextPl": "Skutek wymiotów i biegunki",
+          "natural": "",
+          "forms": "",
+          "collocations": "get dehydrated; severely dehydrated",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After throwing up all night, I was badly dehydrated.",
+              "pl": "Po całej nocy wymiotowania byłem mocno odwodniony.",
+              "focusEn": "dehydrated",
+              "focusPl": "odwodniony"
+            },
+            {
+              "en": "Sip water slowly so you don't get dehydrated.",
+              "pl": "Pij wodę małymi łykami, żebyś się nie odwodnił.",
+              "focusEn": "dehydrated",
+              "focusPl": "odwodnił"
+            }
+          ],
+          "acceptedAnswers": [
+            "dehydrated"
+          ],
+          "acceptedTranslations": [
+            "odwodniony",
+            "odwodnić się"
+          ]
+        },
+        {
+          "id": "symptoms-illness.vomit",
+          "term": "vomit",
+          "ipa": "/ˈvɑːmɪt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wymiotować",
+          "definition": "To bring food up from your stomach through your mouth.",
+          "register": "formalny",
+          "contextPl": "Język medyczny, rozmowa z lekarzem",
+          "natural": "",
+          "forms": "vomited",
+          "collocations": "",
+          "synonyms": "throw up",
+          "antonyms": "",
+          "notePl": "Słowo bardziej oficjalne niż „throw up”.",
+          "examples": [
+            {
+              "en": "If he keeps vomiting, we'll take him to urgent care.",
+              "pl": "Jeśli dalej będzie wymiotował, zawieziemy go na pogotowie.",
+              "focusEn": "vomiting",
+              "focusPl": "wymiotował"
+            },
+            {
+              "en": "The nurse on the phone asked how many times I had vomited.",
+              "pl": "Pielęgniarka przez telefon zapytała, ile razy wymiotowałem.",
+              "focusEn": "vomited",
+              "focusPl": "wymiotowałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "vomit",
+            "throw up"
+          ],
+          "acceptedTranslations": [
+            "wymiotować",
+            "zwymiotować"
+          ]
+        },
+        {
+          "id": "symptoms-illness.keep-food-down",
+          "term": "keep food down",
+          "ipa": "/ˌkiːp ˈfuːd ˌdaʊn/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "utrzymać jedzenie w żołądku",
+          "definition": "To eat or drink without throwing it up.",
+          "register": "potoczny",
+          "contextPl": "Powrót do jedzenia po wymiotach",
+          "natural": "",
+          "forms": "keep – kept – kept",
+          "collocations": "can't keep anything down",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I couldn't keep anything down, not even water.",
+              "pl": "Nie mogłem niczego utrzymać w żołądku, nawet wody.",
+              "focusEn": "keep anything down",
+              "focusPl": "utrzymać w żołądku"
+            },
+            {
+              "en": "Once you can keep food down, try some plain toast.",
+              "pl": "Kiedy już będziesz w stanie utrzymać jedzenie w żołądku, spróbuj zwykłego tosta.",
+              "focusEn": "keep food down",
+              "focusPl": "utrzymać jedzenie w żołądku"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep food down",
+            "keep anything down"
+          ],
+          "acceptedTranslations": [
+            "utrzymać jedzenie w żołądku",
+            "utrzymać coś w żołądku"
+          ]
+        },
+        {
+          "id": "symptoms-illness.indigestion",
+          "term": "indigestion",
+          "ipa": "/ˌɪndɪˈdʒestʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "niestrawność",
+          "definition": "Pain or discomfort after eating, when food is hard to digest.",
+          "register": "neutralny",
+          "contextPl": "Dolegliwość po ciężkim posiłku",
+          "natural": "",
+          "forms": "",
+          "collocations": "get indigestion; suffer from indigestion",
+          "synonyms": "upset stomach",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Rich food late at night always gives me indigestion.",
+              "pl": "Tłuste jedzenie późnym wieczorem zawsze powoduje u mnie niestrawność.",
+              "focusEn": "indigestion",
+              "focusPl": "niestrawność"
+            },
+            {
+              "en": "I took something for my indigestion and went back to bed.",
+              "pl": "Wziąłem coś na niestrawność i wróciłem do łóżka.",
+              "focusEn": "indigestion",
+              "focusPl": "niestrawność"
+            }
+          ],
+          "acceptedAnswers": [
+            "indigestion"
+          ],
+          "acceptedTranslations": [
+            "niestrawność"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "symptoms-illness.allergies-skin",
+      "namePl": "Alergie i skóra",
+      "scenePl": "Wiosenny piknik w parku i powrót do domu: alergia, ukąszenia i podrażnienia skóry",
+      "entries": [
+        {
+          "id": "symptoms-illness.allergy",
+          "term": "allergy",
+          "ipa": "/ˈælərdʒi/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "alergia",
+          "definition": "A bad reaction of your body to something like food, pollen or animals.",
+          "register": "neutralny",
+          "contextPl": "Uczulenie na jedzenie, pyłki, zwierzęta",
+          "natural": "",
+          "forms": "allergies",
+          "collocations": "have an allergy; food allergy; allergy to",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po „allergy” używamy „to”: an allergy to nuts.",
+          "examples": [
+            {
+              "en": "I'm sorry, I can't eat that; I have a nut allergy.",
+              "pl": "Przepraszam, nie mogę tego zjeść; mam alergię na orzechy.",
+              "focusEn": "allergy",
+              "focusPl": "alergię"
+            },
+            {
+              "en": "She has a serious allergy to bees, so she always carries her medicine.",
+              "pl": "Ma poważną alergię na pszczoły, więc zawsze nosi przy sobie leki.",
+              "focusEn": "allergy",
+              "focusPl": "alergię"
+            }
+          ],
+          "acceptedAnswers": [
+            "allergy"
+          ],
+          "acceptedTranslations": [
+            "alergia",
+            "uczulenie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.itchy",
+          "term": "itchy",
+          "ipa": "/ˈɪtʃi/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "swędzący",
+          "definition": "Making you want to scratch your skin.",
+          "register": "neutralny",
+          "contextPl": "Swędzenie skóry i oczu",
+          "natural": "",
+          "forms": "itchier; itchiest",
+          "collocations": "itchy eyes; itchy skin; itchy rash",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„My arm is itchy” = swędzi mnie ręka.",
+          "examples": [
+            {
+              "en": "My eyes are so itchy I can't stop rubbing them.",
+              "pl": "Oczy mnie tak swędzą, że nie mogę przestać ich trzeć.",
+              "focusEn": "itchy",
+              "focusPl": "swędzą"
+            },
+            {
+              "en": "I sat on the grass, and now my legs are red and itchy.",
+              "pl": "Siedziałem na trawie i teraz mam czerwone, swędzące nogi.",
+              "focusEn": "itchy",
+              "focusPl": "swędzące"
+            }
+          ],
+          "acceptedAnswers": [
+            "itchy"
+          ],
+          "acceptedTranslations": [
+            "swędzący",
+            "swędzieć",
+            "swędzi"
+          ]
+        },
+        {
+          "id": "symptoms-illness.rash",
+          "term": "rash",
+          "ipa": "/ræʃ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wysypka",
+          "definition": "An area of red spots on the skin.",
+          "register": "neutralny",
+          "contextPl": "Zmiany skórne",
+          "natural": "",
+          "forms": "rashes",
+          "collocations": "get a rash; itchy rash; skin rash",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A red rash appeared on her neck after we walked through the tall grass.",
+              "pl": "Po przejściu przez wysoką trawę na szyi pojawiła się jej czerwona wysypka.",
+              "focusEn": "rash",
+              "focusPl": "wysypka"
+            },
+            {
+              "en": "Don't scratch the rash, or it'll get worse.",
+              "pl": "Nie drap wysypki, bo się pogorszy.",
+              "focusEn": "rash",
+              "focusPl": "wysypki"
+            }
+          ],
+          "acceptedAnswers": [
+            "rash"
+          ],
+          "acceptedTranslations": [
+            "wysypka"
+          ]
+        },
+        {
+          "id": "symptoms-illness.bite",
+          "term": "bite",
+          "ipa": "/baɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ukąszenie",
+          "definition": "A small wound or red spot where an insect or animal bit you.",
+          "register": "neutralny",
+          "contextPl": "Ukąszenia komarów i owadów",
+          "natural": "",
+          "forms": "bites",
+          "collocations": "mosquito bite; bug bite; insect bite",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This mosquito bite on my ankle won't stop itching.",
+              "pl": "To ugryzienie komara na kostce ciągle swędzi.",
+              "focusEn": "bite",
+              "focusPl": "ugryzienie"
+            },
+            {
+              "en": "Put some cream on the bite so it doesn't swell.",
+              "pl": "Posmaruj ukąszenie kremem, żeby nie spuchło.",
+              "focusEn": "bite",
+              "focusPl": "ukąszenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "bite",
+            "bug bite"
+          ],
+          "acceptedTranslations": [
+            "ukąszenie",
+            "ugryzienie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.seasonal-allergies",
+          "term": "seasonal allergies",
+          "ipa": "/ˈsiːzənəl ˈælərdʒiz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "alergia sezonowa",
+          "definition": "Allergies to pollen that happen at certain times of the year.",
+          "register": "neutralny",
+          "contextPl": "Katar sienny wiosną i latem",
+          "natural": "",
+          "forms": "",
+          "collocations": "have seasonal allergies; seasonal allergies kick in",
+          "synonyms": "hay fever",
+          "antonyms": "",
+          "notePl": "W USA częściej mówi się „seasonal allergies” niż „hay fever”.",
+          "examples": [
+            {
+              "en": "My seasonal allergies start as soon as they cut the grass.",
+              "pl": "Moja alergia sezonowa zaczyna się, gdy tylko skoszą trawę.",
+              "focusEn": "seasonal allergies",
+              "focusPl": "alergia sezonowa"
+            },
+            {
+              "en": "I brought extra tissues to the park because of my seasonal allergies.",
+              "pl": "Wziąłem do parku dodatkowe chusteczki z powodu alergii sezonowej.",
+              "focusEn": "seasonal allergies",
+              "focusPl": "alergii sezonowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "seasonal allergies",
+            "hay fever",
+            "spring allergies"
+          ],
+          "acceptedTranslations": [
+            "alergia sezonowa",
+            "katar sienny",
+            "alergia na pyłki"
+          ]
+        },
+        {
+          "id": "symptoms-illness.pollen",
+          "term": "pollen",
+          "ipa": "/ˈpɑːlən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pyłek",
+          "definition": "Fine yellow powder from plants that can cause allergies.",
+          "register": "neutralny",
+          "contextPl": "Przyczyna alergii wiosennej",
+          "natural": "",
+          "forms": "",
+          "collocations": "pollen count; pollen allergy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The pollen count is high today, so take your allergy pill before we go.",
+              "pl": "Stężenie pyłków jest dziś wysokie, więc weź tabletkę na alergię, zanim wyjdziemy.",
+              "focusEn": "pollen",
+              "focusPl": "pyłków"
+            },
+            {
+              "en": "The picnic blanket was covered in yellow pollen.",
+              "pl": "Koc piknikowy był pokryty żółtym pyłkiem.",
+              "focusEn": "pollen",
+              "focusPl": "pyłkiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "pollen"
+          ],
+          "acceptedTranslations": [
+            "pyłek",
+            "pyłki"
+          ]
+        },
+        {
+          "id": "symptoms-illness.sting",
+          "term": "sting",
+          "ipa": "/stɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "użądlenie",
+          "definition": "A small painful wound from a bee or wasp.",
+          "register": "neutralny",
+          "contextPl": "Użądlenia pszczół i os",
+          "natural": "",
+          "forms": "stings",
+          "collocations": "bee sting; wasp sting",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The spot where the bee sting was got red and puffy within an hour.",
+              "pl": "Miejsce po użądleniu pszczoły w ciągu godziny zrobiło się czerwone i spuchnięte.",
+              "focusEn": "sting",
+              "focusPl": "użądleniu"
+            },
+            {
+              "en": "I put ice on the sting while we packed up the blanket.",
+              "pl": "Przyłożyłem lód do użądlenia, gdy pakowaliśmy koc.",
+              "focusEn": "sting",
+              "focusPl": "użądlenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "sting",
+            "bee sting"
+          ],
+          "acceptedTranslations": [
+            "użądlenie",
+            "ukąszenie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.sunburn",
+          "term": "sunburn",
+          "ipa": "/ˈsʌnbɜːrn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oparzenie słoneczne",
+          "definition": "Red, painful skin from too much sun.",
+          "register": "neutralny",
+          "contextPl": "Za długie leżenie na słońcu",
+          "natural": "",
+          "forms": "sunburns",
+          "collocations": "get a sunburn; bad sunburn",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I fell asleep on the blanket and got a bad sunburn.",
+              "pl": "Zasnąłem na kocu i dostałem paskudnego oparzenia słonecznego.",
+              "focusEn": "sunburn",
+              "focusPl": "oparzenia słonecznego"
+            },
+            {
+              "en": "My sunburn hurt so much I couldn't put on my backpack.",
+              "pl": "Oparzenie słoneczne bolało tak bardzo, że nie mogłem założyć plecaka.",
+              "focusEn": "sunburn",
+              "focusPl": "Oparzenie słoneczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "sunburn",
+            "sunburned"
+          ],
+          "acceptedTranslations": [
+            "oparzenie słoneczne",
+            "spalona skóra",
+            "poparzenie słoneczne"
+          ]
+        },
+        {
+          "id": "symptoms-illness.watery-eyes",
+          "term": "watery eyes",
+          "ipa": "/ˌwɔːtəri ˈaɪz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "łzawiące oczy",
+          "definition": "Eyes that keep producing tears because of allergy or irritation.",
+          "register": "neutralny",
+          "contextPl": "Objaw alergii",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "teary eyes",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Between the sneezing and the watery eyes, I could barely see.",
+              "pl": "Przez kichanie i łzawiące oczy ledwo cokolwiek widziałem.",
+              "focusEn": "watery eyes",
+              "focusPl": "łzawiące oczy"
+            },
+            {
+              "en": "The freshly cut grass gave me watery eyes within minutes.",
+              "pl": "Po kilku minutach od świeżo skoszonej trawy miałem łzawiące oczy.",
+              "focusEn": "watery eyes",
+              "focusPl": "łzawiące oczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "watery eyes",
+            "teary eyes"
+          ],
+          "acceptedTranslations": [
+            "łzawiące oczy",
+            "łzawienie oczu"
+          ]
+        },
+        {
+          "id": "symptoms-illness.scratch",
+          "term": "scratch",
+          "ipa": "/skrætʃ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "drapać",
+          "definition": "To rub your skin with your nails because it itches.",
+          "register": "neutralny",
+          "contextPl": "Drapanie swędzących miejsc",
+          "natural": "",
+          "forms": "scratched",
+          "collocations": "scratch a bite; try not to scratch",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Try not to scratch; you'll only make it worse.",
+              "pl": "Staraj się nie drapać, tylko pogorszysz sprawę.",
+              "focusEn": "scratch",
+              "focusPl": "drapać"
+            },
+            {
+              "en": "He scratched his arm the whole way home from the park.",
+              "pl": "Przez całą drogę z parku drapał się w rękę.",
+              "focusEn": "scratched",
+              "focusPl": "drapał"
+            }
+          ],
+          "acceptedAnswers": [
+            "scratch"
+          ],
+          "acceptedTranslations": [
+            "drapać",
+            "podrapać",
+            "drapać się"
+          ]
+        },
+        {
+          "id": "symptoms-illness.swelling",
+          "term": "swelling",
+          "ipa": "/ˈswelɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "obrzęk",
+          "definition": "A part of the body that has become bigger because of injury or allergy.",
+          "register": "neutralny",
+          "contextPl": "Opuchlizna po ukąszeniu lub alergii",
+          "natural": "",
+          "forms": "",
+          "collocations": "the swelling goes down; reduce swelling",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The swelling around the sting went down by evening.",
+              "pl": "Obrzęk wokół użądlenia zszedł do wieczora.",
+              "focusEn": "swelling",
+              "focusPl": "Obrzęk"
+            },
+            {
+              "en": "If the swelling spreads to your face, we're calling 911.",
+              "pl": "Jeśli obrzęk przejdzie na twarz, dzwonimy pod 911.",
+              "focusEn": "swelling",
+              "focusPl": "obrzęk"
+            }
+          ],
+          "acceptedAnswers": [
+            "swelling"
+          ],
+          "acceptedTranslations": [
+            "obrzęk",
+            "opuchlizna",
+            "opuchnięcie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.allergic-reaction",
+          "term": "allergic reaction",
+          "ipa": "/əˌlɜːrdʒɪk riˈækʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "reakcja alergiczna",
+          "definition": "The way your body reacts badly to something you are allergic to.",
+          "register": "neutralny",
+          "contextPl": "Nagła reakcja na alergen",
+          "natural": "",
+          "forms": "allergic reactions",
+          "collocations": "have an allergic reaction; severe allergic reaction",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I think she's having an allergic reaction to something in the salad.",
+              "pl": "Chyba ma reakcję alergiczną na coś w sałatce.",
+              "focusEn": "allergic reaction",
+              "focusPl": "reakcję alergiczną"
+            },
+            {
+              "en": "Luckily, the allergic reaction was mild, and a pill helped.",
+              "pl": "Na szczęście reakcja alergiczna była łagodna i tabletka pomogła.",
+              "focusEn": "allergic reaction",
+              "focusPl": "reakcja alergiczna"
+            }
+          ],
+          "acceptedAnswers": [
+            "allergic reaction"
+          ],
+          "acceptedTranslations": [
+            "reakcja alergiczna",
+            "uczulenie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.break-out-in",
+          "term": "break out in",
+          "ipa": "/ˌbreɪk ˈaʊt ɪn/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dostać wysypki",
+          "definition": "To suddenly get spots or a rash on your skin.",
+          "register": "neutralny",
+          "contextPl": "Nagłe pojawienie się wysypki",
+          "natural": "",
+          "forms": "break – broke – broken",
+          "collocations": "break out in a rash; break out in hives",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My son broke out in red spots after we ate lunch on the grass.",
+              "pl": "Po lunchu na trawie syna obsypało czerwonymi krostkami.",
+              "focusEn": "broke out in",
+              "focusPl": "obsypało"
+            },
+            {
+              "en": "I always break out in a rash when I touch that plant.",
+              "pl": "Zawsze dostaję wysypki, kiedy dotknę tej rośliny.",
+              "focusEn": "break out in",
+              "focusPl": "dostaję"
+            }
+          ],
+          "acceptedAnswers": [
+            "break out in",
+            "break out"
+          ],
+          "acceptedTranslations": [
+            "dostać wysypki",
+            "obsypać",
+            "wysypać"
+          ]
+        },
+        {
+          "id": "symptoms-illness.blister",
+          "term": "blister",
+          "ipa": "/ˈblɪstər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pęcherz",
+          "definition": "A small bubble of liquid under the skin, often from rubbing.",
+          "register": "neutralny",
+          "contextPl": "Otarcia od butów",
+          "natural": "",
+          "forms": "blisters",
+          "collocations": "get a blister; pop a blister",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My new sandals gave me a blister on the walk to the park.",
+              "pl": "Od nowych sandałów zrobił mi się pęcherz w drodze do parku.",
+              "focusEn": "blister",
+              "focusPl": "pęcherz"
+            },
+            {
+              "en": "Don't pop the blister; just cover it with a bandage.",
+              "pl": "Nie przekłuwaj pęcherza, po prostu zaklej go plastrem.",
+              "focusEn": "blister",
+              "focusPl": "pęcherza"
+            }
+          ],
+          "acceptedAnswers": [
+            "blister"
+          ],
+          "acceptedTranslations": [
+            "pęcherz",
+            "bąbel",
+            "otarcie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.hives",
+          "term": "hives",
+          "ipa": "/haɪvz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "pokrzywka",
+          "definition": "Itchy raised red spots on the skin, usually from an allergy.",
+          "register": "neutralny",
+          "contextPl": "Reakcja skórna na alergen",
+          "natural": "",
+          "forms": "",
+          "collocations": "break out in hives; get hives",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik zawsze w liczbie mnogiej.",
+          "examples": [
+            {
+              "en": "Strawberries give me hives all over my arms.",
+              "pl": "Po truskawkach dostaję pokrzywki na całych rękach.",
+              "focusEn": "hives",
+              "focusPl": "pokrzywki"
+            },
+            {
+              "en": "Within minutes of eating the salad, he was covered in hives.",
+              "pl": "Kilka minut po zjedzeniu sałatki był cały w pokrzywce.",
+              "focusEn": "hives",
+              "focusPl": "pokrzywce"
+            }
+          ],
+          "acceptedAnswers": [
+            "hives"
+          ],
+          "acceptedTranslations": [
+            "pokrzywka",
+            "bąble"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "symptoms-illness.illnesses",
+      "namePl": "Choroby i schorzenia",
+      "scenePl": "Kawa z sąsiadką: rozmowa o chorobach w rodzinie i wśród znajomych",
+      "entries": [
+        {
+          "id": "symptoms-illness.illness",
+          "term": "illness",
+          "ipa": "/ˈɪlnəs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "choroba",
+          "definition": "The state of being sick, or a particular sickness.",
+          "register": "neutralny",
+          "contextPl": "Ogólnie o chorowaniu",
+          "natural": "",
+          "forms": "illnesses",
+          "collocations": "serious illness; long illness; mental illness",
+          "synonyms": "sickness",
+          "antonyms": "health",
+          "notePl": "„Illness” to stan chorowania; „disease” to konkretna jednostka chorobowa.",
+          "examples": [
+            {
+              "en": "After a long illness, my aunt is finally back on her feet.",
+              "pl": "Po długiej chorobie ciotka w końcu stanęła na nogi.",
+              "focusEn": "illness",
+              "focusPl": "chorobie"
+            },
+            {
+              "en": "Over coffee, my neighbor told me her illness is under control now.",
+              "pl": "Przy kawie sąsiadka powiedziała mi, że jej choroba jest teraz pod kontrolą.",
+              "focusEn": "illness",
+              "focusPl": "choroba"
+            }
+          ],
+          "acceptedAnswers": [
+            "illness",
+            "sickness"
+          ],
+          "acceptedTranslations": [
+            "choroba",
+            "chorowanie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.disease",
+          "term": "disease",
+          "ipa": "/dɪˈziːz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "choroba",
+          "definition": "A specific illness with known causes and symptoms.",
+          "register": "neutralny",
+          "contextPl": "Konkretne jednostki chorobowe",
+          "natural": "",
+          "forms": "diseases",
+          "collocations": "heart disease; rare disease; infectious disease",
+          "synonyms": "condition",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My friend explained that the disease affects her joints.",
+              "pl": "Przyjaciółka wyjaśniła, że ta choroba atakuje jej stawy.",
+              "focusEn": "disease",
+              "focusPl": "choroba"
+            },
+            {
+              "en": "Doctors caught the disease early, so his treatment went well.",
+              "pl": "Lekarze wcześnie wykryli chorobę, więc leczenie poszło dobrze.",
+              "focusEn": "disease",
+              "focusPl": "chorobę"
+            }
+          ],
+          "acceptedAnswers": [
+            "disease"
+          ],
+          "acceptedTranslations": [
+            "choroba",
+            "schorzenie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.infection",
+          "term": "infection",
+          "ipa": "/ɪnˈfekʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zakażenie",
+          "definition": "An illness caused by bacteria or a virus entering the body.",
+          "register": "neutralny",
+          "contextPl": "Infekcje bakteryjne i wirusowe",
+          "natural": "",
+          "forms": "infections",
+          "collocations": "get an infection; bad infection; fight an infection",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Her cut got red and hot, and it turned out to be an infection.",
+              "pl": "Skaleczenie zrobiło się czerwone i gorące; okazało się, że to zakażenie.",
+              "focusEn": "infection",
+              "focusPl": "zakażenie"
+            },
+            {
+              "en": "He finally got over the infection after a week of antibiotics.",
+              "pl": "Po tygodniu antybiotyku w końcu wyszedł z infekcji.",
+              "focusEn": "infection",
+              "focusPl": "infekcji"
+            }
+          ],
+          "acceptedAnswers": [
+            "infection"
+          ],
+          "acceptedTranslations": [
+            "zakażenie",
+            "infekcja"
+          ]
+        },
+        {
+          "id": "symptoms-illness.ear-infection",
+          "term": "ear infection",
+          "ipa": "/ˈɪr ɪnˌfekʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zapalenie ucha",
+          "definition": "An infection inside the ear that causes pain and sometimes fever.",
+          "register": "neutralny",
+          "contextPl": "Częsta choroba dzieci",
+          "natural": "",
+          "forms": "ear infections",
+          "collocations": "get an ear infection",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My son keeps getting ear infections every winter.",
+              "pl": "Mój syn co zimę łapie zapalenia ucha.",
+              "focusEn": "ear infections",
+              "focusPl": "zapalenia ucha"
+            },
+            {
+              "en": "Little kids often get an ear infection after a cold, she said.",
+              "pl": "Małe dzieci często dostają zapalenia ucha po przeziębieniu – powiedziała.",
+              "focusEn": "ear infection",
+              "focusPl": "zapalenia ucha"
+            }
+          ],
+          "acceptedAnswers": [
+            "ear infection"
+          ],
+          "acceptedTranslations": [
+            "zapalenie ucha",
+            "infekcja ucha"
+          ]
+        },
+        {
+          "id": "symptoms-illness.strep-throat",
+          "term": "strep throat",
+          "ipa": "/ˌstrep ˈθroʊt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "angina",
+          "definition": "A throat infection caused by bacteria, with fever and pain when swallowing.",
+          "register": "neutralny",
+          "contextPl": "Bakteryjna infekcja gardła",
+          "natural": "",
+          "forms": "",
+          "collocations": "have strep throat; strep test",
+          "synonyms": "strep",
+          "antonyms": "",
+          "notePl": "W USA potocznie samo „strep”.",
+          "examples": [
+            {
+              "en": "Two kids in my daughter's class have strep throat.",
+              "pl": "Dwoje dzieci z klasy mojej córki ma anginę.",
+              "focusEn": "strep throat",
+              "focusPl": "anginę"
+            },
+            {
+              "en": "I thought it was a cold, but it turned out to be strep throat.",
+              "pl": "Myślałem, że to przeziębienie, ale okazało się, że to angina.",
+              "focusEn": "strep throat",
+              "focusPl": "angina"
+            }
+          ],
+          "acceptedAnswers": [
+            "strep throat",
+            "strep"
+          ],
+          "acceptedTranslations": [
+            "angina",
+            "angina paciorkowcowa",
+            "zapalenie gardła"
+          ]
+        },
+        {
+          "id": "symptoms-illness.pneumonia",
+          "term": "pneumonia",
+          "ipa": "/nuːˈmoʊnjə/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zapalenie płuc",
+          "definition": "A serious infection of the lungs.",
+          "register": "neutralny",
+          "contextPl": "Poważna infekcja płuc",
+          "natural": "",
+          "forms": "",
+          "collocations": "get pneumonia; be hospitalized with pneumonia",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Początkowe „p” jest nieme.",
+          "examples": [
+            {
+              "en": "My grandma was in the hospital with pneumonia last winter.",
+              "pl": "Zeszłej zimy babcia leżała w szpitalu z zapaleniem płuc.",
+              "focusEn": "pneumonia",
+              "focusPl": "zapaleniem płuc"
+            },
+            {
+              "en": "His cough got so bad that it turned into pneumonia.",
+              "pl": "Jego kaszel tak się pogorszył, że przeszedł w zapalenie płuc.",
+              "focusEn": "pneumonia",
+              "focusPl": "zapalenie płuc"
+            }
+          ],
+          "acceptedAnswers": [
+            "pneumonia"
+          ],
+          "acceptedTranslations": [
+            "zapalenie płuc"
+          ]
+        },
+        {
+          "id": "symptoms-illness.asthma",
+          "term": "asthma",
+          "ipa": "/ˈæzmə/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "astma",
+          "definition": "A condition that makes it hard to breathe at times.",
+          "register": "neutralny",
+          "contextPl": "Przewlekła choroba dróg oddechowych",
+          "natural": "",
+          "forms": "",
+          "collocations": "have asthma; asthma attack; asthma inhaler",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„th” jest nieme: /ˈæzmə/.",
+          "examples": [
+            {
+              "en": "My nephew has asthma, so he always carries an inhaler.",
+              "pl": "Mój siostrzeniec ma astmę, więc zawsze nosi przy sobie inhalator.",
+              "focusEn": "asthma",
+              "focusPl": "astmę"
+            },
+            {
+              "en": "Her asthma gets worse in cold weather.",
+              "pl": "Jej astma nasila się, kiedy jest zimno.",
+              "focusEn": "asthma",
+              "focusPl": "astma"
+            }
+          ],
+          "acceptedAnswers": [
+            "asthma"
+          ],
+          "acceptedTranslations": [
+            "astma"
+          ]
+        },
+        {
+          "id": "symptoms-illness.diabetes",
+          "term": "diabetes",
+          "ipa": "/ˌdaɪəˈbiːtiːz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "cukrzyca",
+          "definition": "A disease in which the body cannot control the level of sugar in the blood.",
+          "register": "neutralny",
+          "contextPl": "Choroba przewlekła wymagająca kontroli cukru",
+          "natural": "",
+          "forms": "",
+          "collocations": "have diabetes; type 2 diabetes",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My dad has diabetes, so he checks his blood sugar every morning.",
+              "pl": "Tata ma cukrzycę, więc co rano sprawdza poziom cukru we krwi.",
+              "focusEn": "diabetes",
+              "focusPl": "cukrzycę"
+            },
+            {
+              "en": "She found out she had diabetes after a routine blood test.",
+              "pl": "Dowiedziała się, że ma cukrzycę, po rutynowym badaniu krwi.",
+              "focusEn": "diabetes",
+              "focusPl": "cukrzycę"
+            }
+          ],
+          "acceptedAnswers": [
+            "diabetes"
+          ],
+          "acceptedTranslations": [
+            "cukrzyca"
+          ]
+        },
+        {
+          "id": "symptoms-illness.high-blood-pressure",
+          "term": "high blood pressure",
+          "ipa": "/ˌhaɪ ˈblʌd ˌpreʃər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nadciśnienie",
+          "definition": "Blood pressure that is higher than is healthy.",
+          "register": "neutralny",
+          "contextPl": "Częsta choroba dorosłych",
+          "natural": "",
+          "forms": "",
+          "collocations": "have high blood pressure; pills for high blood pressure",
+          "synonyms": "hypertension",
+          "antonyms": "low blood pressure",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My mom takes pills for high blood pressure.",
+              "pl": "Mama bierze tabletki na nadciśnienie.",
+              "focusEn": "high blood pressure",
+              "focusPl": "nadciśnienie"
+            },
+            {
+              "en": "My neighbor cut back on salt because of her high blood pressure.",
+              "pl": "Sąsiadka ograniczyła sól z powodu nadciśnienia.",
+              "focusEn": "high blood pressure",
+              "focusPl": "nadciśnienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "high blood pressure",
+            "hypertension"
+          ],
+          "acceptedTranslations": [
+            "nadciśnienie",
+            "wysokie ciśnienie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.cancer",
+          "term": "cancer",
+          "ipa": "/ˈkænsər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nowotwór",
+          "definition": "A serious disease in which cells in the body grow in an uncontrolled way.",
+          "register": "neutralny",
+          "contextPl": "Poważna choroba, badania profilaktyczne",
+          "natural": "",
+          "forms": "cancers",
+          "collocations": "beat cancer; cancer screening",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My uncle beat cancer and just celebrated five years in good health.",
+              "pl": "Mój wujek pokonał raka i właśnie świętował pięć lat w zdrowiu.",
+              "focusEn": "cancer",
+              "focusPl": "raka"
+            },
+            {
+              "en": "She goes for regular checkups because cancer runs in her family.",
+              "pl": "Chodzi na regularne badania, bo w jej rodzinie zdarzały się nowotwory.",
+              "focusEn": "cancer",
+              "focusPl": "nowotwory"
+            }
+          ],
+          "acceptedAnswers": [
+            "cancer"
+          ],
+          "acceptedTranslations": [
+            "nowotwór",
+            "rak",
+            "nowotwory"
+          ]
+        },
+        {
+          "id": "symptoms-illness.chronic",
+          "term": "chronic",
+          "ipa": "/ˈkrɑːnɪk/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "przewlekły",
+          "definition": "Lasting a long time or coming back again and again.",
+          "register": "neutralny",
+          "contextPl": "Choroby długotrwałe",
+          "natural": "",
+          "forms": "",
+          "collocations": "chronic pain; chronic illness; chronic condition",
+          "synonyms": "long-term",
+          "antonyms": "acute",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She has chronic back pain and can't sit for long.",
+              "pl": "Ma przewlekły ból pleców i nie może długo siedzieć.",
+              "focusEn": "chronic",
+              "focusPl": "przewlekły"
+            },
+            {
+              "en": "Living with a chronic illness takes a lot of patience, she told me over coffee.",
+              "pl": "Życie z przewlekłą chorobą wymaga dużo cierpliwości – powiedziała mi przy kawie.",
+              "focusEn": "chronic",
+              "focusPl": "przewlekłą"
+            }
+          ],
+          "acceptedAnswers": [
+            "chronic",
+            "long-term"
+          ],
+          "acceptedTranslations": [
+            "przewlekły",
+            "chroniczny"
+          ]
+        },
+        {
+          "id": "symptoms-illness.condition",
+          "term": "condition",
+          "ipa": "/kənˈdɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "schorzenie",
+          "definition": "A long-term health problem.",
+          "register": "neutralny",
+          "contextPl": "Ogólne określenie problemu zdrowotnego",
+          "natural": "",
+          "forms": "conditions",
+          "collocations": "heart condition; skin condition; medical condition",
+          "synonyms": "disease",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He has a heart condition, so he can't do heavy exercise.",
+              "pl": "Ma schorzenie serca, więc nie może intensywnie ćwiczyć.",
+              "focusEn": "condition",
+              "focusPl": "schorzenie"
+            },
+            {
+              "en": "Her skin condition flares up when she's stressed.",
+              "pl": "Jej choroba skóry zaostrza się, kiedy jest zestresowana.",
+              "focusEn": "condition",
+              "focusPl": "choroba"
+            }
+          ],
+          "acceptedAnswers": [
+            "condition",
+            "medical condition"
+          ],
+          "acceptedTranslations": [
+            "schorzenie",
+            "choroba",
+            "dolegliwość",
+            "problem zdrowotny"
+          ]
+        },
+        {
+          "id": "symptoms-illness.flare-up",
+          "term": "flare up",
+          "ipa": "/ˌfler ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "zaostrzyć się",
+          "definition": "To suddenly become worse again, used about an illness.",
+          "register": "neutralny",
+          "contextPl": "Nawrót objawów choroby przewlekłej",
+          "natural": "",
+          "forms": "flared up",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My grandma's arthritis always flares up when it rains.",
+              "pl": "Kiedy pada, babci zawsze zaostrza się artretyzm.",
+              "focusEn": "flares up",
+              "focusPl": "zaostrza się"
+            },
+            {
+              "en": "Her asthma flared up during the move, so she had to rest.",
+              "pl": "Podczas przeprowadzki zaostrzyła się jej astma, więc musiała odpocząć.",
+              "focusEn": "flared up",
+              "focusPl": "zaostrzyła się"
+            }
+          ],
+          "acceptedAnswers": [
+            "flare up"
+          ],
+          "acceptedTranslations": [
+            "zaostrzyć się",
+            "zaostrzać się",
+            "nasilić się",
+            "odezwać się"
+          ]
+        },
+        {
+          "id": "symptoms-illness.chickenpox",
+          "term": "chickenpox",
+          "ipa": "/ˈtʃɪkɪnpɑːks/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "ospa wietrzna",
+          "definition": "A common childhood illness with a fever and itchy red spots.",
+          "register": "neutralny",
+          "contextPl": "Choroba wieku dziecięcego",
+          "natural": "",
+          "forms": "",
+          "collocations": "have chickenpox; catch chickenpox",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Both of my kids had chickenpox the same month.",
+              "pl": "Oboje moich dzieci miało ospę w tym samym miesiącu.",
+              "focusEn": "chickenpox",
+              "focusPl": "ospę"
+            },
+            {
+              "en": "If you had chickenpox as a child, you probably won't get it again.",
+              "pl": "Jeśli przechodziłeś ospę wietrzną w dzieciństwie, raczej znowu nie zachorujesz.",
+              "focusEn": "chickenpox",
+              "focusPl": "ospę wietrzną"
+            }
+          ],
+          "acceptedAnswers": [
+            "chickenpox",
+            "chicken pox"
+          ],
+          "acceptedTranslations": [
+            "ospa wietrzna",
+            "ospa"
+          ]
+        },
+        {
+          "id": "symptoms-illness.flu-shot",
+          "term": "flu shot",
+          "ipa": "/ˈfluː ˌʃɑːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "szczepienie na grypę",
+          "definition": "An injection that protects you from the flu.",
+          "register": "potoczny",
+          "contextPl": "Coroczne szczepienie",
+          "natural": "",
+          "forms": "flu shots",
+          "collocations": "get a flu shot",
+          "synonyms": "flu vaccine",
+          "antonyms": "",
+          "notePl": "„Shot” to potoczne słowo na zastrzyk lub szczepienie.",
+          "examples": [
+            {
+              "en": "Did you get your flu shot this year?",
+              "pl": "Zrobiłeś sobie w tym roku szczepienie na grypę?",
+              "focusEn": "flu shot",
+              "focusPl": "szczepienie na grypę"
+            },
+            {
+              "en": "My neighbor reminded me that the flu shot is free at the pharmacy.",
+              "pl": "Sąsiadka przypomniała mi, że szczepienie na grypę jest darmowe w aptece.",
+              "focusEn": "flu shot",
+              "focusPl": "szczepienie na grypę"
+            }
+          ],
+          "acceptedAnswers": [
+            "flu shot",
+            "flu vaccine"
+          ],
+          "acceptedTranslations": [
+            "szczepienie na grypę",
+            "szczepionka na grypę",
+            "szczepionka przeciw grypie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.immune-system",
+          "term": "immune system",
+          "ipa": "/ɪˈmjuːn ˌsɪstəm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "układ odpornościowy",
+          "definition": "The parts of your body that fight illness.",
+          "register": "neutralny",
+          "contextPl": "Odporność organizmu",
+          "natural": "",
+          "forms": "",
+          "collocations": "weak immune system; boost your immune system",
+          "synonyms": "immunity",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Her immune system is weak, so she catches everything.",
+              "pl": "Ma słaby układ odpornościowy, więc łapie wszystko.",
+              "focusEn": "immune system",
+              "focusPl": "układ odpornościowy"
+            },
+            {
+              "en": "My neighbor swears that ginger tea helps her immune system.",
+              "pl": "Sąsiadka przysięga, że herbata z imbirem wzmacnia jej układ odpornościowy.",
+              "focusEn": "immune system",
+              "focusPl": "układ odpornościowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "immune system",
+            "immunity"
+          ],
+          "acceptedTranslations": [
+            "układ odpornościowy",
+            "odporność"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "symptoms-illness.sick-at-work",
+      "namePl": "Zgłaszanie choroby i powrót do zdrowia",
+      "scenePl": "Telefon do szefa, by zgłosić chorobę, i powrót do pracy po kilku dniach",
+      "entries": [
+        {
+          "id": "symptoms-illness.feel-better",
+          "term": "feel better",
+          "ipa": "/ˌfiːl ˈbetər/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "czuć się lepiej",
+          "definition": "To be less sick or in less pain than before.",
+          "register": "neutralny",
+          "contextPl": "Poprawa samopoczucia",
+          "natural": "",
+          "forms": "feel – felt – felt",
+          "collocations": "feel better soon; feel a lot better",
+          "synonyms": "",
+          "antonyms": "feel worse",
+          "notePl": "„Feel better soon!” to typowe życzenie dla chorego.",
+          "examples": [
+            {
+              "en": "I feel better today, but I'm still a little tired.",
+              "pl": "Dziś czuję się lepiej, ale wciąż jestem trochę zmęczony.",
+              "focusEn": "feel better",
+              "focusPl": "czuję się lepiej"
+            },
+            {
+              "en": "Feel better soon, and don't worry about the meeting.",
+              "pl": "Zdrowiej szybko i nie przejmuj się spotkaniem.",
+              "focusEn": "Feel better",
+              "focusPl": "Zdrowiej"
+            }
+          ],
+          "acceptedAnswers": [
+            "feel better"
+          ],
+          "acceptedTranslations": [
+            "czuć się lepiej",
+            "poczuć się lepiej",
+            "zdrowiej"
+          ]
+        },
+        {
+          "id": "symptoms-illness.get-over",
+          "term": "get over",
+          "ipa": "/ˌɡet ˈoʊvər/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wyjść z choroby",
+          "definition": "To become healthy again after an illness.",
+          "register": "neutralny",
+          "contextPl": "Powrót do zdrowia",
+          "natural": "",
+          "forms": "get – got – gotten",
+          "collocations": "get over a cold; get over the flu",
+          "synonyms": "recover from",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It took me almost two weeks to get over the flu.",
+              "pl": "Prawie dwa tygodnie zajęło mi wyjście z grypy.",
+              "focusEn": "get over",
+              "focusPl": "wyjście z"
+            },
+            {
+              "en": "I'm still getting over a cold, so I'll keep my distance.",
+              "pl": "Wciąż dochodzę do siebie po przeziębieniu, więc będę trzymać dystans.",
+              "focusEn": "getting over",
+              "focusPl": "dochodzę do siebie"
+            }
+          ],
+          "acceptedAnswers": [
+            "get over",
+            "recover from"
+          ],
+          "acceptedTranslations": [
+            "wyjść z choroby",
+            "dojść do siebie",
+            "wyleczyć się",
+            "przejść chorobę"
+          ]
+        },
+        {
+          "id": "symptoms-illness.call-in-sick",
+          "term": "call in sick",
+          "ipa": "/ˌkɔːl ɪn ˈsɪk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zgłosić chorobę",
+          "definition": "To phone your workplace to say you are too sick to come.",
+          "register": "neutralny",
+          "contextPl": "Zgłaszanie nieobecności w pracy",
+          "natural": "",
+          "forms": "call – called – called",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I had to call in sick because I could barely get out of bed.",
+              "pl": "Musiałem zgłosić w pracy chorobę, bo ledwo mogłem wstać z łóżka.",
+              "focusEn": "call in sick",
+              "focusPl": "zgłosić w pracy chorobę"
+            },
+            {
+              "en": "Three people called in sick on Monday, so the office was quiet.",
+              "pl": "W poniedziałek trzy osoby zgłosiły chorobę, więc w biurze było cicho.",
+              "focusEn": "called in sick",
+              "focusPl": "zgłosiły chorobę"
+            }
+          ],
+          "acceptedAnswers": [
+            "call in sick"
+          ],
+          "acceptedTranslations": [
+            "zgłosić chorobę",
+            "zgłaszać chorobę",
+            "wziąć zwolnienie",
+            "zadzwonić, że jest się chorym"
+          ]
+        },
+        {
+          "id": "symptoms-illness.sick-day",
+          "term": "sick day",
+          "ipa": "/ˈsɪk ˌdeɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dzień chorobowego",
+          "definition": "A day when you do not go to work because you are sick.",
+          "register": "neutralny",
+          "contextPl": "Dni wolne z powodu choroby",
+          "natural": "",
+          "forms": "sick days",
+          "collocations": "take a sick day; use your sick days",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA pracownicy mają zwykle określoną liczbę płatnych „sick days” w roku.",
+          "examples": [
+            {
+              "en": "I'm taking a sick day today, but I'll check my email if I can.",
+              "pl": "Biorę dziś dzień chorobowego, ale sprawdzę maile, jeśli dam radę.",
+              "focusEn": "sick day",
+              "focusPl": "dzień chorobowego"
+            },
+            {
+              "en": "I've already used three sick days this year.",
+              "pl": "W tym roku wykorzystałem już trzy dni chorobowego.",
+              "focusEn": "sick days",
+              "focusPl": "dni chorobowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "sick day"
+          ],
+          "acceptedTranslations": [
+            "dzień chorobowego",
+            "dzień zwolnienia",
+            "chorobowe"
+          ]
+        },
+        {
+          "id": "symptoms-illness.out-sick",
+          "term": "out sick",
+          "ipa": "/ˌaʊt ˈsɪk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "na zwolnieniu",
+          "definition": "Away from work or school because of illness.",
+          "register": "neutralny",
+          "contextPl": "Nieobecność kolegi z powodu choroby",
+          "natural": "",
+          "forms": "",
+          "collocations": "be out sick",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Maria is out sick today, so I'll handle her calls.",
+              "pl": "Maria jest dziś na zwolnieniu, więc przejmę jej telefony.",
+              "focusEn": "out sick",
+              "focusPl": "na zwolnieniu"
+            },
+            {
+              "en": "After being out sick for a week, I had two hundred emails waiting.",
+              "pl": "Po tygodniu na zwolnieniu czekało na mnie dwieście maili.",
+              "focusEn": "out sick",
+              "focusPl": "na zwolnieniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "out sick"
+          ],
+          "acceptedTranslations": [
+            "na zwolnieniu",
+            "na zwolnieniu lekarskim",
+            "na chorobowym"
+          ]
+        },
+        {
+          "id": "symptoms-illness.bug",
+          "term": "bug",
+          "ipa": "/bʌɡ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wirus",
+          "definition": "A minor illness that spreads easily from person to person.",
+          "register": "potoczny",
+          "contextPl": "Potoczne określenie infekcji",
+          "natural": "",
+          "forms": "bugs",
+          "collocations": "catch a bug; stomach bug; something going around",
+          "synonyms": "virus",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a bug going around the office, so wash your hands.",
+              "pl": "Po biurze krąży jakiś wirus, więc myjcie ręce.",
+              "focusEn": "bug",
+              "focusPl": "wirus"
+            },
+            {
+              "en": "I caught some kind of bug and won't be in tomorrow.",
+              "pl": "Złapałem jakieś choróbsko i jutro mnie nie będzie.",
+              "focusEn": "bug",
+              "focusPl": "choróbsko"
+            }
+          ],
+          "acceptedAnswers": [
+            "bug",
+            "virus"
+          ],
+          "acceptedTranslations": [
+            "wirus",
+            "choróbsko",
+            "infekcja"
+          ]
+        },
+        {
+          "id": "symptoms-illness.go-around",
+          "term": "go around",
+          "ipa": "/ˌɡoʊ əˈraʊnd/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "krążyć",
+          "definition": "To spread from person to person, used about illnesses.",
+          "register": "potoczny",
+          "contextPl": "Choroby krążące w pracy i szkole",
+          "natural": "",
+          "forms": "go – went – gone",
+          "collocations": "something going around",
+          "synonyms": "spread",
+          "antonyms": "",
+          "notePl": "Zwykle w formie ciągłej: „There's a lot of flu going around”.",
+          "examples": [
+            {
+              "en": "The flu is going around at my kid's school too.",
+              "pl": "W szkole mojego dziecka też krąży grypa.",
+              "focusEn": "going around",
+              "focusPl": "krąży"
+            },
+            {
+              "en": "Half the team caught whatever was going around last month.",
+              "pl": "Połowa zespołu złapała to, co krążyło w zeszłym miesiącu.",
+              "focusEn": "going around",
+              "focusPl": "krążyło"
+            }
+          ],
+          "acceptedAnswers": [
+            "go around",
+            "spread"
+          ],
+          "acceptedTranslations": [
+            "krążyć",
+            "panować",
+            "szerzyć się"
+          ]
+        },
+        {
+          "id": "symptoms-illness.spread",
+          "term": "spread",
+          "ipa": "/spred/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zarazić",
+          "definition": "To pass an illness to other people.",
+          "register": "neutralny",
+          "contextPl": "Ochrona współpracowników przed zarażeniem",
+          "natural": "",
+          "forms": "spread – spread – spread",
+          "collocations": "spread germs; spread a cold",
+          "synonyms": "pass on",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I stayed home so I wouldn't spread my cold to the whole team.",
+              "pl": "Zostałem w domu, żeby nie zarazić przeziębieniem całego zespołu.",
+              "focusEn": "spread",
+              "focusPl": "zarazić"
+            },
+            {
+              "en": "Colds spread fast in an open office.",
+              "pl": "Przeziębienia szybko się rozprzestrzeniają w otwartym biurze.",
+              "focusEn": "spread",
+              "focusPl": "się rozprzestrzeniają"
+            }
+          ],
+          "acceptedAnswers": [
+            "spread",
+            "pass on"
+          ],
+          "acceptedTranslations": [
+            "zarazić",
+            "zarażać",
+            "roznosić",
+            "rozprzestrzeniać się"
+          ]
+        },
+        {
+          "id": "symptoms-illness.feel-awful",
+          "term": "feel awful",
+          "ipa": "/ˌfiːl ˈɔːfəl/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "czuć się okropnie",
+          "definition": "To feel very sick or bad.",
+          "register": "potoczny",
+          "contextPl": "Bardzo złe samopoczucie",
+          "natural": "feel terrible",
+          "forms": "feel – felt – felt",
+          "collocations": "",
+          "synonyms": "feel terrible; feel lousy",
+          "antonyms": "feel great",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I feel awful; I don't think I can make it in today.",
+              "pl": "Czuję się okropnie; chyba nie dam rady dziś przyjść.",
+              "focusEn": "feel awful",
+              "focusPl": "Czuję się okropnie"
+            },
+            {
+              "en": "He looked pale and said he felt awful, so the boss sent him home.",
+              "pl": "Był blady i powiedział, że czuje się okropnie, więc szef wysłał go do domu.",
+              "focusEn": "felt awful",
+              "focusPl": "czuje się okropnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "feel awful",
+            "feel terrible",
+            "feel lousy"
+          ],
+          "acceptedTranslations": [
+            "czuć się okropnie",
+            "czuć się fatalnie",
+            "czuć się strasznie"
+          ]
+        },
+        {
+          "id": "symptoms-illness.shake-off",
+          "term": "shake off",
+          "ipa": "/ˌʃeɪk ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pozbyć się",
+          "definition": "To get rid of a minor illness.",
+          "register": "potoczny",
+          "contextPl": "Walka z uporczywym przeziębieniem",
+          "natural": "",
+          "forms": "shake – shook – shaken",
+          "collocations": "can't shake off a cold",
+          "synonyms": "get over",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I can't seem to shake off this cough.",
+              "pl": "Nie mogę się pozbyć tego kaszlu.",
+              "focusEn": "shake off",
+              "focusPl": "pozbyć"
+            },
+            {
+              "en": "She shook off the cold in two days and was back at her desk on Thursday.",
+              "pl": "W dwa dni pozbyła się przeziębienia i w czwartek wróciła do biurka.",
+              "focusEn": "shook off",
+              "focusPl": "pozbyła się"
+            }
+          ],
+          "acceptedAnswers": [
+            "shake off",
+            "shake"
+          ],
+          "acceptedTranslations": [
+            "pozbyć się",
+            "wyleczyć się",
+            "zwalczyć"
+          ]
+        },
+        {
+          "id": "symptoms-illness.fight-off",
+          "term": "fight off",
+          "ipa": "/ˌfaɪt ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zwalczyć",
+          "definition": "To stop an illness from developing in your body.",
+          "register": "neutralny",
+          "contextPl": "Organizm broni się przed infekcją",
+          "natural": "",
+          "forms": "fight – fought – fought",
+          "collocations": "fight off a cold; fight off an infection",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm trying to fight off a cold before the big presentation.",
+              "pl": "Próbuję zwalczyć przeziębienie przed ważną prezentacją.",
+              "focusEn": "fight off",
+              "focusPl": "zwalczyć"
+            },
+            {
+              "en": "My body fought off the virus faster than I expected.",
+              "pl": "Mój organizm zwalczył wirusa szybciej, niż się spodziewałem.",
+              "focusEn": "fought off",
+              "focusPl": "zwalczył"
+            }
+          ],
+          "acceptedAnswers": [
+            "fight off"
+          ],
+          "acceptedTranslations": [
+            "zwalczyć",
+            "zwalczać",
+            "pokonać"
+          ]
+        },
+        {
+          "id": "symptoms-illness.back-on-your-feet",
+          "term": "back on your feet",
+          "ipa": "/ˌbæk ɑːn jər ˈfiːt/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "z powrotem na nogach",
+          "definition": "Healthy and active again after an illness.",
+          "register": "potoczny",
+          "contextPl": "Powrót do pracy po chorobie",
+          "natural": "",
+          "forms": "",
+          "collocations": "get back on your feet; be back on your feet",
+          "synonyms": "recovered",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's great to see you back on your feet after the flu.",
+              "pl": "Super widzieć cię z powrotem na nogach po grypie.",
+              "focusEn": "back on your feet",
+              "focusPl": "z powrotem na nogach"
+            },
+            {
+              "en": "I told my boss I should be back on my feet by Monday.",
+              "pl": "Powiedziałem szefowi, że do poniedziałku powinienem stanąć na nogi.",
+              "focusEn": "back on my feet",
+              "focusPl": "stanąć na nogi"
+            }
+          ],
+          "acceptedAnswers": [
+            "back on your feet",
+            "back on my feet"
+          ],
+          "acceptedTranslations": [
+            "z powrotem na nogach",
+            "stanąć na nogi",
+            "wrócić do formy"
+          ]
+        },
+        {
+          "id": "symptoms-illness.sick-as-a-dog",
+          "term": "sick as a dog",
+          "ipa": "/ˌsɪk əz ə ˈdɔːɡ/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bardzo chory",
+          "definition": "Very sick.",
+          "register": "potoczny",
+          "contextPl": "Żartobliwe podkreślenie ciężkiej choroby",
+          "natural": "",
+          "forms": "",
+          "collocations": "be sick as a dog",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I was sick as a dog all weekend, so I missed the deadline.",
+              "pl": "Cały weekend byłem chory jak pies, więc przegapiłem termin.",
+              "focusEn": "sick as a dog",
+              "focusPl": "chory jak pies"
+            },
+            {
+              "en": "Don't come in tomorrow; you sound sick as a dog.",
+              "pl": "Nie przychodź jutro; brzmisz, jakbyś był ciężko chory.",
+              "focusEn": "sick as a dog",
+              "focusPl": "ciężko chory"
+            }
+          ],
+          "acceptedAnswers": [
+            "sick as a dog",
+            "as sick as a dog"
+          ],
+          "acceptedTranslations": [
+            "bardzo chory",
+            "chory jak pies",
+            "ciężko chory"
+          ]
+        }
+      ]
+    }
+  ]
+}

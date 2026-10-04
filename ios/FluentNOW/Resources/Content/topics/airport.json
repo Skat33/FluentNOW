@@ -1,0 +1,4290 @@
+{
+  "schemaVersion": 1,
+  "id": "airport",
+  "namePl": "Lotnisko",
+  "nameEn": "Airport",
+  "group": "travel",
+  "symbol": "airplane.departure",
+  "summaryPl": "Odprawa, kontrola bezpieczeństwa, bramki, bagaż, przesiadki i opóźnienia.",
+  "aliases": [
+    "lotnisko",
+    "port lotniczy",
+    "odprawa",
+    "terminal",
+    "airport",
+    "lot",
+    "wylot",
+    "przylot"
+  ],
+  "categories": [
+    {
+      "id": "airport.check-in",
+      "namePl": "Odprawa",
+      "scenePl": "Stanowisko odprawy linii lotniczej w hali odlotów",
+      "entries": [
+        {
+          "id": "airport.check-in",
+          "term": "check-in",
+          "ipa": "/ˈtʃek ɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odprawa",
+          "definition": "The process of showing your ticket and leaving your bags with the airline before a flight.",
+          "register": "neutralny",
+          "contextPl": "Odprawa przed lotem",
+          "natural": "",
+          "forms": "check-ins",
+          "collocations": "online check-in; check-in counter; check-in desk",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik pisze się z łącznikiem; czasownik „check in” – bez.",
+          "examples": [
+            {
+              "en": "The check-in line for our flight was already long at six a.m.",
+              "pl": "Kolejka do odprawy na nasz lot była długa już o szóstej rano.",
+              "focusEn": "check-in",
+              "focusPl": "odprawy"
+            },
+            {
+              "en": "The agent at the counter said online check-in had closed an hour ago.",
+              "pl": "Pracownica przy stanowisku powiedziała, że odprawa online zamknęła się godzinę temu.",
+              "focusEn": "check-in",
+              "focusPl": "odprawa"
+            }
+          ],
+          "acceptedAnswers": [
+            "check-in",
+            "checkin"
+          ],
+          "acceptedTranslations": [
+            "odprawa",
+            "odprawa biletowo-bagażowa"
+          ]
+        },
+        {
+          "id": "airport.check-in-2",
+          "term": "check in",
+          "ipa": "/ˌtʃek ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odprawić się",
+          "definition": "To show your ticket and give your bags to the airline before a flight.",
+          "register": "neutralny",
+          "contextPl": "Odprawa przed lotem",
+          "natural": "",
+          "forms": "checks in – checked in – checked in",
+          "collocations": "check in online; check in early; check in for a flight",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „check-in” (odprawa).",
+          "examples": [
+            {
+              "en": "We checked in online, so we only had to drop off our bags at the counter.",
+              "pl": "Odprawiliśmy się online, więc przy stanowisku musieliśmy tylko nadać bagaże.",
+              "focusEn": "checked in",
+              "focusPl": "Odprawiliśmy się"
+            },
+            {
+              "en": "The agent told us to check in at the desk at the far end of the hall.",
+              "pl": "Pracownik kazał nam odprawić się przy stanowisku na samym końcu hali.",
+              "focusEn": "check in",
+              "focusPl": "odprawić się"
+            }
+          ],
+          "acceptedAnswers": [
+            "check in"
+          ],
+          "acceptedTranslations": [
+            "odprawić się",
+            "odprawiać się",
+            "zgłosić się do odprawy"
+          ]
+        },
+        {
+          "id": "airport.passport",
+          "term": "passport",
+          "ipa": "/ˈpæspɔːrt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "paszport",
+          "definition": "An official document that shows who you are and lets you travel to other countries.",
+          "register": "neutralny",
+          "contextPl": "Dokumenty podróżne",
+          "natural": "",
+          "forms": "passports",
+          "collocations": "show your passport; valid passport; passport number",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The agent asked for my passport and typed my name into the computer.",
+              "pl": "Pracownica poprosiła o mój paszport i wpisała moje nazwisko do komputera.",
+              "focusEn": "passport",
+              "focusPl": "paszport"
+            },
+            {
+              "en": "At the counter, the agent checked that my passport was valid for six more months.",
+              "pl": "Przy stanowisku pracownik sprawdził, czy mój paszport jest ważny jeszcze przez pół roku.",
+              "focusEn": "passport",
+              "focusPl": "paszport"
+            }
+          ],
+          "acceptedAnswers": [
+            "passport"
+          ],
+          "acceptedTranslations": [
+            "paszport"
+          ]
+        },
+        {
+          "id": "airport.ticket",
+          "term": "ticket",
+          "ipa": "/ˈtɪkɪt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "bilet",
+          "definition": "A document or code that shows you have paid for a seat on a flight.",
+          "register": "neutralny",
+          "contextPl": "Rezerwacja lotu",
+          "natural": "",
+          "forms": "tickets",
+          "collocations": "plane ticket; one-way ticket; round-trip ticket; book a ticket",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I showed my ticket on my phone at the check-in counter.",
+              "pl": "Pokazałem bilet na telefonie przy stanowisku odprawy.",
+              "focusEn": "ticket",
+              "focusPl": "bilet"
+            },
+            {
+              "en": "The agent said my ticket included one checked bag and a free snack.",
+              "pl": "Pracownik powiedział, że mój bilet obejmuje jeden bagaż rejestrowany i darmową przekąskę.",
+              "focusEn": "ticket",
+              "focusPl": "bilet"
+            }
+          ],
+          "acceptedAnswers": [
+            "ticket"
+          ],
+          "acceptedTranslations": [
+            "bilet",
+            "bilet lotniczy"
+          ]
+        },
+        {
+          "id": "airport.boarding-pass",
+          "term": "boarding pass",
+          "ipa": "/ˈbɔːrdɪŋ ˌpæs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "karta pokładowa",
+          "definition": "A document that allows a passenger to get on a plane.",
+          "register": "neutralny",
+          "contextPl": "Odprawa i wejście na pokład",
+          "natural": "",
+          "forms": "boarding passes",
+          "collocations": "print a boarding pass; mobile boarding pass; show your boarding pass",
+          "synonyms": "boarding card",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The agent handed me my boarding pass and circled the gate number.",
+              "pl": "Pracownica podała mi kartę pokładową i zakreśliła numer bramki.",
+              "focusEn": "boarding pass",
+              "focusPl": "kartę pokładową"
+            },
+            {
+              "en": "I didn't need to print anything because my boarding pass was on my phone.",
+              "pl": "Nie musiałem niczego drukować, bo moja karta pokładowa była w telefonie.",
+              "focusEn": "boarding pass",
+              "focusPl": "karta pokładowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "boarding pass",
+            "boarding card"
+          ],
+          "acceptedTranslations": [
+            "karta pokładowa",
+            "karta wejścia na pokład"
+          ]
+        },
+        {
+          "id": "airport.airline",
+          "term": "airline",
+          "ipa": "/ˈerlaɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "linia lotnicza",
+          "definition": "A company that carries passengers or goods by plane.",
+          "register": "neutralny",
+          "contextPl": "Odprawa",
+          "natural": "",
+          "forms": "airlines",
+          "collocations": "airline counter; airline staff; budget airline",
+          "synonyms": "carrier",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Each airline has its own check-in counters in this part of the terminal.",
+              "pl": "Każda linia lotnicza ma w tej części terminalu własne stanowiska odprawy.",
+              "focusEn": "airline",
+              "focusPl": "linia lotnicza"
+            },
+            {
+              "en": "We stood in the wrong line because I forgot which airline we were flying with.",
+              "pl": "Staliśmy w złej kolejce, bo zapomniałem, którą linią lotniczą lecimy.",
+              "focusEn": "airline",
+              "focusPl": "linią lotniczą"
+            }
+          ],
+          "acceptedAnswers": [
+            "airline"
+          ],
+          "acceptedTranslations": [
+            "linia lotnicza",
+            "przewoźnik"
+          ]
+        },
+        {
+          "id": "airport.counter",
+          "term": "counter",
+          "ipa": "/ˈkaʊntər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "stanowisko",
+          "definition": "A long desk where airline staff serve passengers.",
+          "register": "neutralny",
+          "contextPl": "Odprawa",
+          "natural": "",
+          "forms": "counters",
+          "collocations": "check-in counter; ticket counter; at the counter",
+          "synonyms": "desk",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There was nobody at the counter when we got to the airport at four a.m.",
+              "pl": "Kiedy przyjechaliśmy na lotnisko o czwartej rano, przy stanowisku nie było nikogo.",
+              "focusEn": "counter",
+              "focusPl": "stanowisku"
+            },
+            {
+              "en": "The woman at the counter printed a new ticket with the correct name.",
+              "pl": "Kobieta przy stanowisku wydrukowała nowy bilet z poprawnym nazwiskiem.",
+              "focusEn": "counter",
+              "focusPl": "stanowisku"
+            }
+          ],
+          "acceptedAnswers": [
+            "counter"
+          ],
+          "acceptedTranslations": [
+            "stanowisko",
+            "stanowisko odprawy",
+            "okienko"
+          ]
+        },
+        {
+          "id": "airport.window-seat",
+          "term": "window seat",
+          "ipa": "/ˈwɪndoʊ ˌsiːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "miejsce przy oknie",
+          "definition": "A seat on a plane that is next to a window.",
+          "register": "neutralny",
+          "contextPl": "Wybór miejsca",
+          "natural": "",
+          "forms": "window seats",
+          "collocations": "ask for a window seat; get a window seat",
+          "synonyms": "",
+          "antonyms": "aisle seat",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could I have a window seat if there's one available?",
+              "pl": "Czy mógłbym dostać miejsce przy oknie, jeśli jest jakieś wolne?",
+              "focusEn": "window seat",
+              "focusPl": "miejsce przy oknie"
+            },
+            {
+              "en": "The agent moved me to a window seat in row twelve.",
+              "pl": "Pracownica przeniosła mnie na miejsce przy oknie w dwunastym rzędzie.",
+              "focusEn": "window seat",
+              "focusPl": "miejsce przy oknie"
+            }
+          ],
+          "acceptedAnswers": [
+            "window seat"
+          ],
+          "acceptedTranslations": [
+            "miejsce przy oknie",
+            "miejsce koło okna"
+          ]
+        },
+        {
+          "id": "airport.aisle-seat",
+          "term": "aisle seat",
+          "ipa": "/ˈaɪl ˌsiːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "miejsce przy przejściu",
+          "definition": "A seat on a plane that is next to the narrow walkway between rows.",
+          "register": "neutralny",
+          "contextPl": "Wybór miejsca",
+          "natural": "",
+          "forms": "aisle seats",
+          "collocations": "prefer an aisle seat; request an aisle seat",
+          "synonyms": "",
+          "antonyms": "window seat",
+          "notePl": "W „aisle” nie wymawia się „s”: /aɪl/.",
+          "examples": [
+            {
+              "en": "I asked for an aisle seat because I have long legs.",
+              "pl": "Poprosiłem o miejsce przy przejściu, bo mam długie nogi.",
+              "focusEn": "aisle seat",
+              "focusPl": "miejsce przy przejściu"
+            },
+            {
+              "en": "The agent said there was only one aisle seat left near the back.",
+              "pl": "Pracownik powiedział, że zostało już tylko jedno miejsce przy przejściu z tyłu samolotu.",
+              "focusEn": "aisle seat",
+              "focusPl": "miejsce przy przejściu"
+            }
+          ],
+          "acceptedAnswers": [
+            "aisle seat"
+          ],
+          "acceptedTranslations": [
+            "miejsce przy przejściu",
+            "miejsce od strony przejścia"
+          ]
+        },
+        {
+          "id": "airport.confirmation-number",
+          "term": "confirmation number",
+          "ipa": "/ˌkɑːnfərˈmeɪʃn ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "numer rezerwacji",
+          "definition": "A code that identifies your flight booking.",
+          "register": "neutralny",
+          "contextPl": "Rezerwacja lotu",
+          "natural": "",
+          "forms": "confirmation numbers",
+          "collocations": "enter your confirmation number; six-letter confirmation number",
+          "synonyms": "confirmation code, booking reference",
+          "antonyms": "",
+          "notePl": "W USA mówi się „confirmation number/code”; „booking reference” jest bardziej brytyjskie.",
+          "examples": [
+            {
+              "en": "The agent couldn't find our names, so she asked for the confirmation number.",
+              "pl": "Pracownica nie mogła znaleźć naszych nazwisk, więc poprosiła o numer rezerwacji.",
+              "focusEn": "confirmation number",
+              "focusPl": "numer rezerwacji"
+            },
+            {
+              "en": "I found the confirmation number in the email from the airline.",
+              "pl": "Znalazłem numer rezerwacji w mailu od linii lotniczej.",
+              "focusEn": "confirmation number",
+              "focusPl": "numer rezerwacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "confirmation number",
+            "confirmation code",
+            "booking reference"
+          ],
+          "acceptedTranslations": [
+            "numer rezerwacji",
+            "kod rezerwacji"
+          ]
+        },
+        {
+          "id": "airport.kiosk",
+          "term": "kiosk",
+          "ipa": "/ˈkiːɑːsk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kiosk samoobsługowy",
+          "definition": "A machine where you can check in and print boarding passes yourself.",
+          "register": "neutralny",
+          "contextPl": "Odprawa samoobsługowa",
+          "natural": "",
+          "forms": "kiosks",
+          "collocations": "self-service kiosk; check-in kiosk",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kiosk printed my boarding pass and two bag tags.",
+              "pl": "Kiosk wydrukował moją kartę pokładową i dwie przywieszki na bagaż.",
+              "focusEn": "kiosk",
+              "focusPl": "Kiosk"
+            },
+            {
+              "en": "If the kiosk can't find your booking, an agent at the counter will help you.",
+              "pl": "Jeśli kiosk nie znajdzie twojej rezerwacji, pomoże ci pracownik przy stanowisku.",
+              "focusEn": "kiosk",
+              "focusPl": "kiosk"
+            }
+          ],
+          "acceptedAnswers": [
+            "kiosk"
+          ],
+          "acceptedTranslations": [
+            "kiosk samoobsługowy",
+            "automat do odprawy",
+            "kiosk"
+          ]
+        },
+        {
+          "id": "airport.flight-number",
+          "term": "flight number",
+          "ipa": "/ˈflaɪt ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "numer lotu",
+          "definition": "The letters and numbers that identify a particular flight.",
+          "register": "neutralny",
+          "contextPl": "Rezerwacja lotu",
+          "natural": "",
+          "forms": "flight numbers",
+          "collocations": "check the flight number",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I read our flight number to the agent from the screen above the counter.",
+              "pl": "Odczytałem pracownikowi numer lotu z ekranu nad stanowiskiem.",
+              "focusEn": "flight number",
+              "focusPl": "numer lotu"
+            },
+            {
+              "en": "The flight number on my ticket didn't match the one on the check-in screen.",
+              "pl": "Numer lotu na moim bilecie nie zgadzał się z tym na ekranie odprawy.",
+              "focusEn": "flight number",
+              "focusPl": "Numer lotu"
+            }
+          ],
+          "acceptedAnswers": [
+            "flight number"
+          ],
+          "acceptedTranslations": [
+            "numer lotu"
+          ]
+        },
+        {
+          "id": "airport.upgrade",
+          "term": "upgrade",
+          "ipa": "/ˈʌpɡreɪd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zmiana klasy na wyższą",
+          "definition": "A move to a better class of seat, sometimes for free.",
+          "register": "neutralny",
+          "contextPl": "Wybór miejsca",
+          "natural": "",
+          "forms": "upgrades",
+          "collocations": "get an upgrade; free upgrade; pay for an upgrade",
+          "synonyms": "",
+          "antonyms": "downgrade",
+          "notePl": "Czasownik: „to upgrade” /ʌpˈɡreɪd/ – akcent przesuwa się.",
+          "examples": [
+            {
+              "en": "The agent offered us an upgrade to business class for two hundred dollars.",
+              "pl": "Pracownica zaproponowała nam zmianę klasy na wyższą na biznesową za dwieście dolarów.",
+              "focusEn": "upgrade",
+              "focusPl": "zmianę klasy na wyższą"
+            },
+            {
+              "en": "I always ask about an upgrade when I check in, just in case.",
+              "pl": "Przy odprawie zawsze pytam o zmianę klasy na wyższą, tak na wszelki wypadek.",
+              "focusEn": "upgrade",
+              "focusPl": "zmianę klasy na wyższą"
+            }
+          ],
+          "acceptedAnswers": [
+            "upgrade"
+          ],
+          "acceptedTranslations": [
+            "zmiana klasy na wyższą",
+            "upgrade",
+            "awans do wyższej klasy"
+          ]
+        },
+        {
+          "id": "airport.one-way",
+          "term": "one-way",
+          "ipa": "/ˌwʌn ˈweɪ/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "w jedną stronę",
+          "definition": "Taking you to a place but not back again.",
+          "register": "neutralny",
+          "contextPl": "Rezerwacja lotu",
+          "natural": "",
+          "forms": "",
+          "collocations": "one-way ticket; one-way flight",
+          "synonyms": "",
+          "antonyms": "round-trip",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The agent asked why I had only a one-way ticket to Toronto.",
+              "pl": "Pracownik zapytał, dlaczego mam do Toronto bilet tylko w jedną stronę.",
+              "focusEn": "one-way",
+              "focusPl": "w jedną stronę"
+            },
+            {
+              "en": "Some countries won't let you board with a one-way ticket.",
+              "pl": "Niektóre kraje nie pozwolą ci wejść na pokład z biletem w jedną stronę.",
+              "focusEn": "one-way",
+              "focusPl": "w jedną stronę"
+            }
+          ],
+          "acceptedAnswers": [
+            "one-way",
+            "one way"
+          ],
+          "acceptedTranslations": [
+            "w jedną stronę"
+          ]
+        },
+        {
+          "id": "airport.round-trip",
+          "term": "round-trip",
+          "ipa": "/ˌraʊnd ˈtrɪp/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "w obie strony",
+          "definition": "Taking you to a place and back again.",
+          "register": "neutralny",
+          "contextPl": "Rezerwacja lotu",
+          "natural": "",
+          "forms": "",
+          "collocations": "round-trip ticket; round-trip flight",
+          "synonyms": "return",
+          "antonyms": "one-way",
+          "notePl": "„Round-trip ticket” to wersja amerykańska; Brytyjczycy mówią „return ticket”.",
+          "examples": [
+            {
+              "en": "We bought round-trip tickets, so our return flight was already booked.",
+              "pl": "Kupiliśmy bilety w obie strony, więc lot powrotny był już zarezerwowany.",
+              "focusEn": "round-trip",
+              "focusPl": "w obie strony"
+            },
+            {
+              "en": "The agent checked the return date on my round-trip ticket.",
+              "pl": "Pracownica sprawdziła datę powrotu na moim bilecie w obie strony.",
+              "focusEn": "round-trip",
+              "focusPl": "w obie strony"
+            }
+          ],
+          "acceptedAnswers": [
+            "round-trip",
+            "round trip",
+            "return"
+          ],
+          "acceptedTranslations": [
+            "w obie strony",
+            "powrotny",
+            "tam i z powrotem"
+          ]
+        },
+        {
+          "id": "airport.id",
+          "term": "ID",
+          "ipa": "/ˌaɪˈdiː/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dowód tożsamości",
+          "definition": "An official card or document that shows who you are.",
+          "register": "potoczny",
+          "contextPl": "Dokumenty podróżne",
+          "natural": "",
+          "forms": "IDs",
+          "collocations": "photo ID; show your ID; government-issued ID",
+          "synonyms": "identification",
+          "antonyms": "",
+          "notePl": "Skrót od „identification”; zawsze wielkimi literami.",
+          "examples": [
+            {
+              "en": "For domestic flights, you just need a photo ID at the counter.",
+              "pl": "Na lotach krajowych wystarczy przy stanowisku dowód tożsamości ze zdjęciem.",
+              "focusEn": "ID",
+              "focusPl": "dowód tożsamości"
+            },
+            {
+              "en": "The agent compared my ID with the name on the reservation.",
+              "pl": "Pracownik porównał mój dowód tożsamości z nazwiskiem w rezerwacji.",
+              "focusEn": "ID",
+              "focusPl": "dowód tożsamości"
+            }
+          ],
+          "acceptedAnswers": [
+            "ID",
+            "identification",
+            "photo ID"
+          ],
+          "acceptedTranslations": [
+            "dowód tożsamości",
+            "dokument tożsamości",
+            "dowód"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airport.baggage",
+      "namePl": "Bagaż",
+      "scenePl": "Nadawanie bagażu przy stanowisku odprawy, z wagą i taśmą obok",
+      "entries": [
+        {
+          "id": "airport.luggage",
+          "term": "luggage",
+          "ipa": "/ˈlʌɡɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "bagaż",
+          "definition": "The bags and suitcases you take with you when you travel.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "(niepoliczalny) a piece of luggage",
+          "collocations": "check your luggage; carry-on luggage; lost luggage",
+          "synonyms": "baggage, bags",
+          "antonyms": "",
+          "notePl": "Rzeczownik niepoliczalny: „a piece of luggage”, nigdy „a luggage”.",
+          "examples": [
+            {
+              "en": "We put all our luggage on the belt next to the check-in desk.",
+              "pl": "Położyliśmy cały nasz bagaż na taśmie obok stanowiska odprawy.",
+              "focusEn": "luggage",
+              "focusPl": "bagaż"
+            },
+            {
+              "en": "Is this all your luggage, or is someone bringing more?",
+              "pl": "Czy to cały pana bagaż, czy ktoś jeszcze coś doniesie?",
+              "focusEn": "luggage",
+              "focusPl": "bagaż"
+            }
+          ],
+          "acceptedAnswers": [
+            "luggage",
+            "baggage"
+          ],
+          "acceptedTranslations": [
+            "bagaż",
+            "bagaże"
+          ]
+        },
+        {
+          "id": "airport.suitcase",
+          "term": "suitcase",
+          "ipa": "/ˈsuːtkeɪs/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "walizka",
+          "definition": "A large case with a handle that you pack your clothes in for a trip.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "suitcases",
+          "collocations": "pack a suitcase; roll a suitcase; hard-shell suitcase",
+          "synonyms": "bag, case",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please lift your suitcase onto the scale.",
+              "pl": "Proszę postawić walizkę na wadze.",
+              "focusEn": "suitcase",
+              "focusPl": "walizkę"
+            },
+            {
+              "en": "My suitcase was too heavy, so I moved my shoes into my backpack.",
+              "pl": "Moja walizka była za ciężka, więc przełożyłem buty do plecaka.",
+              "focusEn": "suitcase",
+              "focusPl": "walizka"
+            }
+          ],
+          "acceptedAnswers": [
+            "suitcase"
+          ],
+          "acceptedTranslations": [
+            "walizka"
+          ]
+        },
+        {
+          "id": "airport.carry-on",
+          "term": "carry-on",
+          "ipa": "/ˈkæri ˌɑːn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "bagaż podręczny",
+          "definition": "A small bag that you are allowed to take with you into the plane cabin.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "carry-ons",
+          "collocations": "carry-on bag; carry-on allowance; one carry-on",
+          "synonyms": "hand luggage",
+          "antonyms": "checked bag",
+          "notePl": "W USA najczęściej „carry-on”; brytyjskie „hand luggage” też jest zrozumiałe.",
+          "examples": [
+            {
+              "en": "The agent asked if my backpack was my only carry-on.",
+              "pl": "Pracownik zapytał, czy plecak to mój jedyny bagaż podręczny.",
+              "focusEn": "carry-on",
+              "focusPl": "bagaż podręczny"
+            },
+            {
+              "en": "Your carry-on has to fit in the metal frame next to the counter.",
+              "pl": "Twój bagaż podręczny musi zmieścić się w metalowej ramce obok stanowiska.",
+              "focusEn": "carry-on",
+              "focusPl": "bagaż podręczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "carry-on",
+            "carry-on bag",
+            "carry on",
+            "hand luggage"
+          ],
+          "acceptedTranslations": [
+            "bagaż podręczny",
+            "podręczny bagaż"
+          ]
+        },
+        {
+          "id": "airport.checked-bag",
+          "term": "checked bag",
+          "ipa": "/ˌtʃekt ˈbæɡ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "bagaż rejestrowany",
+          "definition": "A bag you give to the airline so it travels in the hold of the plane.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "checked bags",
+          "collocations": "first checked bag; checked bag fee",
+          "synonyms": "checked luggage",
+          "antonyms": "carry-on",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your fare includes one checked bag up to fifty pounds.",
+              "pl": "Pana taryfa obejmuje jeden bagaż rejestrowany do pięćdziesięciu funtów.",
+              "focusEn": "checked bag",
+              "focusPl": "bagaż rejestrowany"
+            },
+            {
+              "en": "I paid thirty-five dollars at the desk for my second checked bag.",
+              "pl": "Za drugi bagaż rejestrowany zapłaciłem przy stanowisku trzydzieści pięć dolarów.",
+              "focusEn": "checked bag",
+              "focusPl": "bagaż rejestrowany"
+            }
+          ],
+          "acceptedAnswers": [
+            "checked bag",
+            "checked luggage",
+            "checked baggage"
+          ],
+          "acceptedTranslations": [
+            "bagaż rejestrowany",
+            "bagaż nadawany"
+          ]
+        },
+        {
+          "id": "airport.weigh",
+          "term": "weigh",
+          "ipa": "/weɪ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ważyć",
+          "definition": "To measure how heavy something is, or to have a particular weight.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "weighs – weighed – weighed",
+          "collocations": "weigh a bag; weigh too much",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Weigh” znaczy zarówno „ważyć coś”, jak i „ważyć ileś”.",
+          "examples": [
+            {
+              "en": "The agent weighed both of our suitcases before printing the tags.",
+              "pl": "Pracownica zważyła obie nasze walizki przed wydrukowaniem przywieszek.",
+              "focusEn": "weighed",
+              "focusPl": "zważyła"
+            },
+            {
+              "en": "The screen showed that my bag weighs fifty-three pounds.",
+              "pl": "Wyświetlacz pokazał, że moja torba waży pięćdziesiąt trzy funty.",
+              "focusEn": "weighs",
+              "focusPl": "waży"
+            }
+          ],
+          "acceptedAnswers": [
+            "weigh"
+          ],
+          "acceptedTranslations": [
+            "ważyć",
+            "zważyć"
+          ]
+        },
+        {
+          "id": "airport.scale",
+          "term": "scale",
+          "ipa": "/skeɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "waga",
+          "definition": "A machine for measuring how heavy something is.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "scales",
+          "collocations": "put it on the scale; luggage scale",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W tym znaczeniu „scale” to waga (urządzenie), nie „skala”.",
+          "examples": [
+            {
+              "en": "Put your bag on the scale with the handle facing up.",
+              "pl": "Połóż torbę na wadze rączką do góry.",
+              "focusEn": "scale",
+              "focusPl": "wadze"
+            },
+            {
+              "en": "The scale at the counter said my suitcase was two pounds over the limit.",
+              "pl": "Waga przy stanowisku pokazała, że moja walizka przekracza limit o dwa funty.",
+              "focusEn": "scale",
+              "focusPl": "Waga"
+            }
+          ],
+          "acceptedAnswers": [
+            "scale"
+          ],
+          "acceptedTranslations": [
+            "waga"
+          ]
+        },
+        {
+          "id": "airport.overweight",
+          "term": "overweight",
+          "ipa": "/ˌoʊvərˈweɪt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "za ciężki",
+          "definition": "Heavier than the airline allows.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "",
+          "collocations": "overweight bag; overweight baggage fee",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Polskie „nadwaga bagażu” – „overweight baggage”.",
+          "examples": [
+            {
+              "en": "If your bag is overweight, you'll have to pay an extra fee.",
+              "pl": "Jeśli twoja torba jest za ciężka, będziesz musiał dopłacić.",
+              "focusEn": "overweight",
+              "focusPl": "za ciężka"
+            },
+            {
+              "en": "The agent told me my suitcase was overweight and asked me to repack it.",
+              "pl": "Pracownik powiedział mi, że moja walizka jest za ciężka, i poprosił o przepakowanie jej.",
+              "focusEn": "overweight",
+              "focusPl": "za ciężka"
+            }
+          ],
+          "acceptedAnswers": [
+            "overweight",
+            "over the limit"
+          ],
+          "acceptedTranslations": [
+            "za ciężki",
+            "z nadwagą",
+            "przekraczający limit wagi"
+          ]
+        },
+        {
+          "id": "airport.weight-limit",
+          "term": "weight limit",
+          "ipa": "/ˈweɪt ˌlɪmɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "limit wagi",
+          "definition": "The heaviest weight that a bag is allowed to be.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "weight limits",
+          "collocations": "go over the weight limit; under the weight limit",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The weight limit for checked bags on this flight is fifty pounds.",
+              "pl": "Limit wagi bagażu rejestrowanego na tym locie to pięćdziesiąt funtów.",
+              "focusEn": "weight limit",
+              "focusPl": "Limit wagi"
+            },
+            {
+              "en": "My bag was just under the weight limit, so I didn't have to pay.",
+              "pl": "Moja torba mieściła się tuż poniżej limitu wagi, więc nie musiałem płacić.",
+              "focusEn": "weight limit",
+              "focusPl": "limitu wagi"
+            }
+          ],
+          "acceptedAnswers": [
+            "weight limit"
+          ],
+          "acceptedTranslations": [
+            "limit wagi",
+            "dopuszczalna waga"
+          ]
+        },
+        {
+          "id": "airport.baggage-allowance",
+          "term": "baggage allowance",
+          "ipa": "/ˈbæɡɪdʒ əˌlaʊəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "limit bagażu",
+          "definition": "The amount of luggage you may take on a flight without paying extra.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "baggage allowances",
+          "collocations": "free baggage allowance; exceed the baggage allowance",
+          "synonyms": "luggage allowance",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The agent explained that my baggage allowance didn't include a checked bag.",
+              "pl": "Pracownica wyjaśniła, że mój limit bagażu nie obejmuje bagażu rejestrowanego.",
+              "focusEn": "baggage allowance",
+              "focusPl": "limit bagażu"
+            },
+            {
+              "en": "Our baggage allowance is one carry-on and one personal item each.",
+              "pl": "Nasz limit bagażu to jeden bagaż podręczny i jedna rzecz osobista na osobę.",
+              "focusEn": "baggage allowance",
+              "focusPl": "limit bagażu"
+            }
+          ],
+          "acceptedAnswers": [
+            "baggage allowance",
+            "luggage allowance"
+          ],
+          "acceptedTranslations": [
+            "limit bagażu",
+            "dozwolony bagaż",
+            "przysługujący bagaż"
+          ]
+        },
+        {
+          "id": "airport.baggage-fee",
+          "term": "baggage fee",
+          "ipa": "/ˈbæɡɪdʒ ˌfiː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "opłata za bagaż",
+          "definition": "Money an airline charges for the bags you check.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "baggage fees",
+          "collocations": "pay a baggage fee; excess baggage fee",
+          "synonyms": "bag fee",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I had to pay a baggage fee because I had the cheapest ticket.",
+              "pl": "Musiałem zapłacić opłatę za bagaż, bo miałem najtańszy bilet.",
+              "focusEn": "baggage fee",
+              "focusPl": "opłatę za bagaż"
+            },
+            {
+              "en": "The agent said the baggage fee is lower if you pay online.",
+              "pl": "Pracownik powiedział, że opłata za bagaż jest niższa, jeśli zapłaci się online.",
+              "focusEn": "baggage fee",
+              "focusPl": "opłata za bagaż"
+            }
+          ],
+          "acceptedAnswers": [
+            "baggage fee",
+            "bag fee"
+          ],
+          "acceptedTranslations": [
+            "opłata za bagaż",
+            "opłata bagażowa"
+          ]
+        },
+        {
+          "id": "airport.bag-tag",
+          "term": "bag tag",
+          "ipa": "/ˈbæɡ ˌtæɡ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przywieszka bagażowa",
+          "definition": "A paper label with a code that the airline attaches to a checked bag.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "bag tags",
+          "collocations": "print a bag tag; attach a bag tag",
+          "synonyms": "baggage tag, luggage tag",
+          "antonyms": "",
+          "notePl": "„Luggage tag” to też prywatna przywieszka z adresem właściciela.",
+          "examples": [
+            {
+              "en": "The agent put a bag tag on my suitcase and gave me the receipt.",
+              "pl": "Pracownik przyczepił do mojej walizki przywieszkę bagażową i dał mi potwierdzenie.",
+              "focusEn": "bag tag",
+              "focusPl": "przywieszkę bagażową"
+            },
+            {
+              "en": "Keep the sticker from your bag tag in case your luggage gets lost.",
+              "pl": "Zachowaj naklejkę z przywieszki bagażowej na wypadek, gdyby bagaż zaginął.",
+              "focusEn": "bag tag",
+              "focusPl": "przywieszki bagażowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "bag tag",
+            "baggage tag",
+            "luggage tag"
+          ],
+          "acceptedTranslations": [
+            "przywieszka bagażowa",
+            "przywieszka",
+            "zawieszka na bagaż"
+          ]
+        },
+        {
+          "id": "airport.personal-item",
+          "term": "personal item",
+          "ipa": "/ˌpɜːrsənl ˈaɪtəm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rzecz osobista",
+          "definition": "A small bag such as a purse or laptop bag that fits under the seat.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "personal items",
+          "collocations": "one personal item; fit under the seat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Mniejsza torba poza bagażem podręcznym, która musi zmieścić się pod siedzeniem.",
+          "examples": [
+            {
+              "en": "The agent said my purse counts as a personal item.",
+              "pl": "Pracownica powiedziała, że moja torebka liczy się jako rzecz osobista.",
+              "focusEn": "personal item",
+              "focusPl": "rzecz osobista"
+            },
+            {
+              "en": "You can bring a carry-on and one personal item, like a laptop bag.",
+              "pl": "Możesz zabrać bagaż podręczny i jedną rzecz osobistą, na przykład torbę na laptopa.",
+              "focusEn": "personal item",
+              "focusPl": "rzecz osobistą"
+            }
+          ],
+          "acceptedAnswers": [
+            "personal item"
+          ],
+          "acceptedTranslations": [
+            "rzecz osobista",
+            "mały bagaż osobisty"
+          ]
+        },
+        {
+          "id": "airport.bag-drop",
+          "term": "bag drop",
+          "ipa": "/ˈbæɡ ˌdrɑːp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "punkt nadawania bagażu",
+          "definition": "A counter where passengers who checked in online leave their bags.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "bag drops",
+          "collocations": "bag drop counter; self-service bag drop",
+          "synonyms": "baggage drop",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Since we checked in online, we went straight to the bag drop.",
+              "pl": "Ponieważ odprawiliśmy się online, poszliśmy prosto do punktu nadawania bagażu.",
+              "focusEn": "bag drop",
+              "focusPl": "punktu nadawania bagażu"
+            },
+            {
+              "en": "The line at the bag drop was much shorter than the regular check-in line.",
+              "pl": "Kolejka do punktu nadawania bagażu była dużo krótsza niż zwykła kolejka do odprawy.",
+              "focusEn": "bag drop",
+              "focusPl": "punktu nadawania bagażu"
+            }
+          ],
+          "acceptedAnswers": [
+            "bag drop",
+            "baggage drop"
+          ],
+          "acceptedTranslations": [
+            "punkt nadawania bagażu",
+            "nadanie bagażu",
+            "stanowisko nadania bagażu"
+          ]
+        },
+        {
+          "id": "airport.drop-off",
+          "term": "drop off",
+          "ipa": "/ˌdrɑːp ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "nadać, zostawić",
+          "definition": "To leave something with someone so they can take care of it.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "drops off – dropped off – dropped off",
+          "collocations": "drop off your bags; drop off luggage",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Inne znaczenie: „drop someone off” – podwieźć kogoś.",
+          "examples": [
+            {
+              "en": "We only need to drop off one bag, the rest is carry-on.",
+              "pl": "Musimy nadać tylko jedną torbę, reszta to bagaż podręczny.",
+              "focusEn": "drop off",
+              "focusPl": "nadać"
+            },
+            {
+              "en": "After we dropped off our suitcases, we had time for coffee.",
+              "pl": "Po tym, jak zostawiliśmy walizki, mieliśmy czas na kawę.",
+              "focusEn": "dropped off",
+              "focusPl": "zostawiliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "drop off"
+          ],
+          "acceptedTranslations": [
+            "nadać, zostawić",
+            "oddać",
+            "nadać bagaż",
+            "zostawiać"
+          ]
+        },
+        {
+          "id": "airport.repack",
+          "term": "repack",
+          "ipa": "/ˌriːˈpæk/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "przepakować",
+          "definition": "To pack a bag again, often in a different way.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "repacked",
+          "collocations": "repack your bag; repack at the counter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I had to repack my bag right there on the floor by the counter.",
+              "pl": "Musiałem przepakować torbę na podłodze tuż przy stanowisku.",
+              "focusEn": "repack",
+              "focusPl": "przepakować"
+            },
+            {
+              "en": "If you repack and move some things to your carry-on, you won't pay extra.",
+              "pl": "Jeśli się przepakujesz i przełożysz część rzeczy do bagażu podręcznego, nie zapłacisz więcej.",
+              "focusEn": "repack",
+              "focusPl": "przepakujesz"
+            }
+          ],
+          "acceptedAnswers": [
+            "repack"
+          ],
+          "acceptedTranslations": [
+            "przepakować",
+            "przepakowywać"
+          ]
+        },
+        {
+          "id": "airport.oversized",
+          "term": "oversized",
+          "ipa": "/ˌoʊvərˈsaɪzd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "ponadwymiarowy",
+          "definition": "Bigger than the normal or allowed size.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "",
+          "collocations": "oversized baggage; oversized items",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Skis and golf bags go to the oversized baggage counter.",
+              "pl": "Narty i torby golfowe nadaje się przy stanowisku bagażu ponadwymiarowego.",
+              "focusEn": "oversized",
+              "focusPl": "ponadwymiarowego"
+            },
+            {
+              "en": "My bike box was oversized, so I paid an extra hundred dollars.",
+              "pl": "Karton z moim rowerem był ponadwymiarowy, więc zapłaciłem dodatkowe sto dolarów.",
+              "focusEn": "oversized",
+              "focusPl": "ponadwymiarowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "oversized",
+            "oversize"
+          ],
+          "acceptedTranslations": [
+            "ponadwymiarowy",
+            "wielkogabarytowy",
+            "za duży"
+          ]
+        },
+        {
+          "id": "airport.fragile",
+          "term": "fragile",
+          "ipa": "/ˈfrædʒl/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "kruchy",
+          "definition": "Easily broken, so it has to be handled carefully.",
+          "register": "neutralny",
+          "contextPl": "Bagaż",
+          "natural": "",
+          "forms": "",
+          "collocations": "fragile items; fragile sticker",
+          "synonyms": "delicate",
+          "antonyms": "sturdy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is there anything fragile in this suitcase?",
+              "pl": "Czy w tej walizce jest coś delikatnego?",
+              "focusEn": "fragile",
+              "focusPl": "delikatnego"
+            },
+            {
+              "en": "The agent put a red fragile sticker on the box with our wine glasses.",
+              "pl": "Pracownica nakleiła na pudło z kieliszkami czerwoną naklejkę „Uwaga, kruche”.",
+              "focusEn": "fragile",
+              "focusPl": "Uwaga, kruche"
+            }
+          ],
+          "acceptedAnswers": [
+            "fragile"
+          ],
+          "acceptedTranslations": [
+            "kruchy",
+            "delikatny",
+            "łatwo tłukący się"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airport.security",
+      "namePl": "Kontrola bezpieczeństwa",
+      "scenePl": "Punkt kontroli bezpieczeństwa z taśmą, skanerem i plastikowymi kuwetami",
+      "entries": [
+        {
+          "id": "airport.security",
+          "term": "security",
+          "ipa": "/sɪˈkjʊrəti/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kontrola bezpieczeństwa",
+          "definition": "The area at an airport where passengers and bags are checked for dangerous items.",
+          "register": "neutralny",
+          "contextPl": "Kontrola przed wejściem do strefy odlotów",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "go through security; airport security; security check",
+          "synonyms": "security check, screening",
+          "antonyms": "",
+          "notePl": "W mowie samo „security” oznacza miejsce i procedurę kontroli.",
+          "examples": [
+            {
+              "en": "It took us forty minutes to get through security this morning.",
+              "pl": "Przejście przez kontrolę bezpieczeństwa zajęło nam dziś rano czterdzieści minut.",
+              "focusEn": "security",
+              "focusPl": "kontrolę bezpieczeństwa"
+            },
+            {
+              "en": "At security, they asked me to open my bag and show them the cables.",
+              "pl": "Na kontroli bezpieczeństwa poproszono mnie, żebym otworzył torbę i pokazał kable.",
+              "focusEn": "security",
+              "focusPl": "kontroli bezpieczeństwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "security",
+            "security check"
+          ],
+          "acceptedTranslations": [
+            "kontrola bezpieczeństwa",
+            "kontrola",
+            "bramki bezpieczeństwa"
+          ]
+        },
+        {
+          "id": "airport.security-line",
+          "term": "security line",
+          "ipa": "/sɪˈkjʊrəti ˌlaɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kolejka do kontroli",
+          "definition": "The line of passengers waiting to be checked at security.",
+          "register": "neutralny",
+          "contextPl": "Kontrola przed wejściem do strefy odlotów",
+          "natural": "",
+          "forms": "security lines",
+          "collocations": "long security line; wait in the security line",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA kolejka to „line”, w Wielkiej Brytanii „queue”.",
+          "examples": [
+            {
+              "en": "The security line went all the way back to the check-in area.",
+              "pl": "Kolejka do kontroli ciągnęła się aż do strefy odprawy.",
+              "focusEn": "security line",
+              "focusPl": "Kolejka do kontroli"
+            },
+            {
+              "en": "We waited in the security line for almost an hour before a holiday weekend.",
+              "pl": "Przed świątecznym weekendem staliśmy w kolejce do kontroli prawie godzinę.",
+              "focusEn": "security line",
+              "focusPl": "kolejce do kontroli"
+            }
+          ],
+          "acceptedAnswers": [
+            "security line",
+            "security queue"
+          ],
+          "acceptedTranslations": [
+            "kolejka do kontroli",
+            "kolejka do kontroli bezpieczeństwa"
+          ]
+        },
+        {
+          "id": "airport.go-through-security",
+          "term": "go through security",
+          "ipa": "/ˌɡoʊ θruː sɪˈkjʊrəti/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przejść przez kontrolę bezpieczeństwa",
+          "definition": "To be checked by airport security before going to the gates.",
+          "register": "neutralny",
+          "contextPl": "Kontrola przed wejściem do strefy odlotów",
+          "natural": "",
+          "forms": "went through – gone through",
+          "collocations": "go through security quickly",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can't take that water bottle when you go through security.",
+              "pl": "Nie możesz wziąć tej butelki z wodą, kiedy będziesz przechodzić przez kontrolę bezpieczeństwa.",
+              "focusEn": "go through security",
+              "focusPl": "przechodzić przez kontrolę bezpieczeństwa"
+            },
+            {
+              "en": "Let's say goodbye here, because only passengers can go through security.",
+              "pl": "Pożegnajmy się tutaj, bo tylko pasażerowie mogą przejść przez kontrolę bezpieczeństwa.",
+              "focusEn": "go through security",
+              "focusPl": "przejść przez kontrolę bezpieczeństwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "go through security",
+            "get through security"
+          ],
+          "acceptedTranslations": [
+            "przejść przez kontrolę bezpieczeństwa",
+            "przechodzić przez kontrolę",
+            "przejść kontrolę"
+          ]
+        },
+        {
+          "id": "airport.bin",
+          "term": "bin",
+          "ipa": "/bɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kuweta",
+          "definition": "A plastic tray in which you put your things to go through the X-ray machine.",
+          "register": "neutralny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "bins",
+          "collocations": "put it in a bin; grab a bin",
+          "synonyms": "tray",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Put your jacket, belt and phone in a bin and push it forward.",
+              "pl": "Włóż kurtkę, pasek i telefon do kuwety i przesuń ją do przodu.",
+              "focusEn": "bin",
+              "focusPl": "kuwety"
+            },
+            {
+              "en": "I almost left my wallet in the gray bin after the scanner.",
+              "pl": "Prawie zostawiłem portfel w szarej kuwecie za skanerem.",
+              "focusEn": "bin",
+              "focusPl": "kuwecie"
+            }
+          ],
+          "acceptedAnswers": [
+            "bin",
+            "tray"
+          ],
+          "acceptedTranslations": [
+            "kuweta",
+            "pojemnik",
+            "plastikowy pojemnik"
+          ]
+        },
+        {
+          "id": "airport.take-off",
+          "term": "take off",
+          "ipa": "/ˌteɪk ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zdjąć",
+          "definition": "To remove a piece of clothing or something you are wearing.",
+          "register": "neutralny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "takes off – took off – taken off",
+          "collocations": "take off your shoes; take off your belt; take off your jacket",
+          "synonyms": "remove",
+          "antonyms": "put on",
+          "notePl": "Inne znaczenie: o samolocie – „wystartować”.",
+          "examples": [
+            {
+              "en": "Do I need to take off my shoes, or can I keep them on?",
+              "pl": "Czy muszę zdjąć buty, czy mogę zostać w nich?",
+              "focusEn": "take off",
+              "focusPl": "zdjąć"
+            },
+            {
+              "en": "The officer asked me to take off my watch and walk through again.",
+              "pl": "Funkcjonariusz poprosił mnie, żebym zdjął zegarek i przeszedł jeszcze raz.",
+              "focusEn": "take off",
+              "focusPl": "zdjął"
+            }
+          ],
+          "acceptedAnswers": [
+            "take off",
+            "remove"
+          ],
+          "acceptedTranslations": [
+            "zdjąć",
+            "zdejmować"
+          ]
+        },
+        {
+          "id": "airport.take-out",
+          "term": "take out",
+          "ipa": "/ˌteɪk ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wyjąć",
+          "definition": "To remove something from a bag, pocket or container.",
+          "register": "neutralny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "takes out – took out – taken out",
+          "collocations": "take out your laptop; take out liquids",
+          "synonyms": "",
+          "antonyms": "put back",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please take out any laptops and tablets and put them in a separate bin.",
+              "pl": "Proszę wyjąć laptopy i tablety i włożyć je do osobnej kuwety.",
+              "focusEn": "take out",
+              "focusPl": "wyjąć"
+            },
+            {
+              "en": "I forgot to take out my toothpaste, so they searched my whole bag.",
+              "pl": "Zapomniałem wyjąć pastę do zębów, więc przeszukali mi całą torbę.",
+              "focusEn": "take out",
+              "focusPl": "wyjąć"
+            }
+          ],
+          "acceptedAnswers": [
+            "take out",
+            "remove"
+          ],
+          "acceptedTranslations": [
+            "wyjąć",
+            "wyjmować"
+          ]
+        },
+        {
+          "id": "airport.liquids",
+          "term": "liquids",
+          "ipa": "/ˈlɪkwɪdz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "płyny",
+          "definition": "Drinks, creams, gels and other things that can be poured, which are limited at security.",
+          "register": "neutralny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "liquid – liquids",
+          "collocations": "liquids and gels; carry-on liquids",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na kontroli zwykle mówi się w liczbie mnogiej: „liquids”.",
+          "examples": [
+            {
+              "en": "All liquids must be in containers of three point four ounces or less.",
+              "pl": "Wszystkie płyny muszą być w pojemnikach o pojemności do stu mililitrów.",
+              "focusEn": "liquids",
+              "focusPl": "płyny"
+            },
+            {
+              "en": "The officer asked if I had any liquids in my backpack.",
+              "pl": "Funkcjonariusz zapytał, czy mam w plecaku jakieś płyny.",
+              "focusEn": "liquids",
+              "focusPl": "płyny"
+            }
+          ],
+          "acceptedAnswers": [
+            "liquids",
+            "liquid"
+          ],
+          "acceptedTranslations": [
+            "płyny",
+            "płyn"
+          ]
+        },
+        {
+          "id": "airport.metal-detector",
+          "term": "metal detector",
+          "ipa": "/ˈmetl dɪˌtektər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wykrywacz metali",
+          "definition": "A frame you walk through that makes a sound if you carry metal.",
+          "register": "neutralny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "metal detectors",
+          "collocations": "walk through the metal detector; set off the metal detector",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My belt buckle made the metal detector beep.",
+              "pl": "Przez sprzączkę od paska wykrywacz metali zapiszczał.",
+              "focusEn": "metal detector",
+              "focusPl": "wykrywacz metali"
+            },
+            {
+              "en": "Please walk through the metal detector one person at a time.",
+              "pl": "Proszę przechodzić przez wykrywacz metali pojedynczo.",
+              "focusEn": "metal detector",
+              "focusPl": "wykrywacz metali"
+            }
+          ],
+          "acceptedAnswers": [
+            "metal detector"
+          ],
+          "acceptedTranslations": [
+            "wykrywacz metali",
+            "bramka do wykrywania metali",
+            "bramka"
+          ]
+        },
+        {
+          "id": "airport.body-scanner",
+          "term": "body scanner",
+          "ipa": "/ˈbɑːdi ˌskænər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "skaner ciała",
+          "definition": "A machine that shows an image of your body to find hidden objects.",
+          "register": "neutralny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "body scanners",
+          "collocations": "step into the body scanner; full-body scanner",
+          "synonyms": "full-body scanner",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Step into the body scanner and raise your arms above your head.",
+              "pl": "Proszę wejść do skanera ciała i podnieść ręce nad głowę.",
+              "focusEn": "body scanner",
+              "focusPl": "skanera ciała"
+            },
+            {
+              "en": "The body scanner showed something in my pocket, but it was just a receipt.",
+              "pl": "Skaner ciała wykrył coś w mojej kieszeni, ale to był tylko paragon.",
+              "focusEn": "body scanner",
+              "focusPl": "Skaner ciała"
+            }
+          ],
+          "acceptedAnswers": [
+            "body scanner"
+          ],
+          "acceptedTranslations": [
+            "skaner ciała",
+            "skaner"
+          ]
+        },
+        {
+          "id": "airport.x-ray-machine",
+          "term": "X-ray machine",
+          "ipa": "/ˈeks reɪ məˌʃiːn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "prześwietlarka",
+          "definition": "A machine that shows what is inside bags without opening them.",
+          "register": "neutralny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "X-ray machines",
+          "collocations": "put your bag through the X-ray machine",
+          "synonyms": "scanner",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My bag went through the X-ray machine twice because of the charger.",
+              "pl": "Moja torba przejechała przez prześwietlarkę dwa razy z powodu ładowarki.",
+              "focusEn": "X-ray machine",
+              "focusPl": "prześwietlarkę"
+            },
+            {
+              "en": "Keep your bag flat on the belt before it goes into the X-ray machine.",
+              "pl": "Połóż torbę płasko na taśmie, zanim wjedzie do prześwietlarki.",
+              "focusEn": "X-ray machine",
+              "focusPl": "prześwietlarki"
+            }
+          ],
+          "acceptedAnswers": [
+            "X-ray machine",
+            "scanner"
+          ],
+          "acceptedTranslations": [
+            "prześwietlarka",
+            "skaner bagażu",
+            "rentgen bagażu"
+          ]
+        },
+        {
+          "id": "airport.set-off",
+          "term": "set off",
+          "ipa": "/ˌset ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "uruchomić (alarm)",
+          "definition": "To make an alarm or a detector start making a sound.",
+          "register": "neutralny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "sets off – set off – set off",
+          "collocations": "set off the alarm; set off the metal detector",
+          "synonyms": "trigger",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The metal clips on my jeans set off the alarm again.",
+              "pl": "Metalowe nity w moich dżinsach znowu uruchomiły alarm.",
+              "focusEn": "set off",
+              "focusPl": "uruchomiły"
+            },
+            {
+              "en": "If you set off the detector, an officer will check you by hand.",
+              "pl": "Jeśli uruchomisz alarm bramki, funkcjonariusz sprawdzi cię ręcznie.",
+              "focusEn": "set off",
+              "focusPl": "uruchomisz"
+            }
+          ],
+          "acceptedAnswers": [
+            "set off",
+            "trigger"
+          ],
+          "acceptedTranslations": [
+            "uruchomić (alarm)",
+            "uruchamiać",
+            "włączyć alarm",
+            "wywołać alarm"
+          ]
+        },
+        {
+          "id": "airport.pat-down",
+          "term": "pat-down",
+          "ipa": "/ˈpæt ˌdaʊn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "kontrola osobista",
+          "definition": "A search in which an officer touches the outside of your clothes with their hands.",
+          "register": "neutralny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "pat-downs",
+          "collocations": "get a pat-down; private pat-down",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik: „to pat someone down”.",
+          "examples": [
+            {
+              "en": "I got a pat-down because the scanner showed something on my back.",
+              "pl": "Poddano mnie kontroli osobistej, bo skaner coś pokazał na moich plecach.",
+              "focusEn": "pat-down",
+              "focusPl": "kontroli osobistej"
+            },
+            {
+              "en": "You can ask for a private pat-down in a separate room.",
+              "pl": "Można poprosić o kontrolę osobistą w osobnym pomieszczeniu.",
+              "focusEn": "pat-down",
+              "focusPl": "kontrolę osobistą"
+            }
+          ],
+          "acceptedAnswers": [
+            "pat-down",
+            "pat down"
+          ],
+          "acceptedTranslations": [
+            "kontrola osobista",
+            "przeszukanie",
+            "rewizja osobista"
+          ]
+        },
+        {
+          "id": "airport.security-officer",
+          "term": "security officer",
+          "ipa": "/sɪˈkjʊrəti ˌɑːfɪsər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "funkcjonariusz kontroli bezpieczeństwa",
+          "definition": "A person whose job is to check passengers and bags at the airport.",
+          "register": "neutralny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "security officers",
+          "collocations": "ask a security officer",
+          "synonyms": "screener, security agent",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A security officer asked whose bag this was.",
+              "pl": "Funkcjonariusz kontroli bezpieczeństwa zapytał, czyja to torba.",
+              "focusEn": "security officer",
+              "focusPl": "Funkcjonariusz kontroli bezpieczeństwa"
+            },
+            {
+              "en": "The security officer let me keep my bottle of baby formula.",
+              "pl": "Funkcjonariusz kontroli bezpieczeństwa pozwolił mi zatrzymać butelkę z mlekiem dla dziecka.",
+              "focusEn": "security officer",
+              "focusPl": "Funkcjonariusz kontroli bezpieczeństwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "security officer",
+            "security agent",
+            "officer"
+          ],
+          "acceptedTranslations": [
+            "funkcjonariusz kontroli bezpieczeństwa",
+            "pracownik ochrony",
+            "kontroler"
+          ]
+        },
+        {
+          "id": "airport.empty-your-pockets",
+          "term": "empty your pockets",
+          "ipa": "/ˌempti jʊr ˈpɑːkɪts/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "opróżnij kieszenie",
+          "definition": "To take everything out of your pockets.",
+          "register": "neutralny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "emptied",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please empty your pockets before you step into the scanner.",
+              "pl": "Proszę opróżnić kieszenie przed wejściem do skanera.",
+              "focusEn": "empty your pockets",
+              "focusPl": "opróżnić kieszenie"
+            },
+            {
+              "en": "I forgot to empty my pockets and the alarm went off.",
+              "pl": "Zapomniałem opróżnić kieszenie i włączył się alarm.",
+              "focusEn": "empty my pockets",
+              "focusPl": "opróżnić kieszenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "empty your pockets",
+            "empty my pockets"
+          ],
+          "acceptedTranslations": [
+            "opróżnij kieszenie",
+            "opróżnić kieszenie",
+            "wyjąć wszystko z kieszeni"
+          ]
+        },
+        {
+          "id": "airport.prohibited-item",
+          "term": "prohibited item",
+          "ipa": "/proʊˈhɪbɪtɪd ˌaɪtəm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "przedmiot zakazany",
+          "definition": "Something that you are not allowed to take on a plane.",
+          "register": "formalny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "prohibited items",
+          "collocations": "list of prohibited items",
+          "synonyms": "banned item",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A pocketknife is a prohibited item, so they took it away.",
+              "pl": "Scyzoryk to przedmiot zakazany, więc go zabrali.",
+              "focusEn": "prohibited item",
+              "focusPl": "przedmiot zakazany"
+            },
+            {
+              "en": "The sign by the line shows every prohibited item with a little picture.",
+              "pl": "Tablica przy kolejce pokazuje każdy przedmiot zakazany na małym obrazku.",
+              "focusEn": "prohibited item",
+              "focusPl": "przedmiot zakazany"
+            }
+          ],
+          "acceptedAnswers": [
+            "prohibited item",
+            "banned item",
+            "forbidden item"
+          ],
+          "acceptedTranslations": [
+            "przedmiot zakazany",
+            "przedmiot zabroniony",
+            "rzecz zakazana"
+          ]
+        },
+        {
+          "id": "airport.toiletries",
+          "term": "toiletries",
+          "ipa": "/ˈtɔɪlətriz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kosmetyki",
+          "definition": "Things like toothpaste, shampoo and soap that you use to wash and take care of yourself.",
+          "register": "neutralny",
+          "contextPl": "Kontrola bezpieczeństwa",
+          "natural": "",
+          "forms": "(liczba mnoga)",
+          "collocations": "travel-size toiletries; toiletries bag",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Put all your toiletries in one clear plastic bag.",
+              "pl": "Włóż wszystkie kosmetyki do jednej przezroczystej plastikowej torebki.",
+              "focusEn": "toiletries",
+              "focusPl": "kosmetyki"
+            },
+            {
+              "en": "They threw away half my toiletries because the bottles were too big.",
+              "pl": "Wyrzucili połowę moich kosmetyków, bo butelki były za duże.",
+              "focusEn": "toiletries",
+              "focusPl": "kosmetyków"
+            }
+          ],
+          "acceptedAnswers": [
+            "toiletries"
+          ],
+          "acceptedTranslations": [
+            "kosmetyki",
+            "przybory toaletowe",
+            "kosmetyki w podróży"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airport.terminal-gate",
+      "namePl": "Terminal i bramka",
+      "scenePl": "Strefa odlotów po kontroli: tablice odlotów, sklepy i poczekalnia przy bramce",
+      "entries": [
+        {
+          "id": "airport.terminal",
+          "term": "terminal",
+          "ipa": "/ˈtɜːrmɪnl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "terminal",
+          "definition": "A large building at an airport where passengers start or end their journeys.",
+          "register": "neutralny",
+          "contextPl": "Poruszanie się po lotnisku",
+          "natural": "",
+          "forms": "terminals",
+          "collocations": "Terminal 2; international terminal; domestic terminal",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our flight leaves from Terminal C, so we took the shuttle train.",
+              "pl": "Nasz lot odlatuje z terminalu C, więc pojechaliśmy kolejką.",
+              "focusEn": "Terminal",
+              "focusPl": "terminalu"
+            },
+            {
+              "en": "The terminal was so big that it took us twenty minutes to find our gate.",
+              "pl": "Terminal był tak duży, że znalezienie naszej bramki zajęło nam dwadzieścia minut.",
+              "focusEn": "terminal",
+              "focusPl": "Terminal"
+            }
+          ],
+          "acceptedAnswers": [
+            "terminal"
+          ],
+          "acceptedTranslations": [
+            "terminal"
+          ]
+        },
+        {
+          "id": "airport.gate",
+          "term": "gate",
+          "ipa": "/ɡeɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "bramka",
+          "definition": "The door in an airport through which passengers go to get on a plane.",
+          "register": "neutralny",
+          "contextPl": "Wejście na pokład",
+          "natural": "",
+          "forms": "gates",
+          "collocations": "departure gate; gate number; at the gate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na lotnisku „gate” to bramka/wyjście do samolotu, nie „brama”.",
+          "examples": [
+            {
+              "en": "Boarding starts at the gate thirty minutes before departure.",
+              "pl": "Wejście na pokład zaczyna się przy bramce trzydzieści minut przed odlotem.",
+              "focusEn": "gate",
+              "focusPl": "bramce"
+            },
+            {
+              "en": "We ran to gate B22 and got there just as the doors were closing.",
+              "pl": "Pobiegliśmy do bramki B22 i dotarliśmy tam, kiedy właśnie zamykano drzwi.",
+              "focusEn": "gate",
+              "focusPl": "bramki"
+            }
+          ],
+          "acceptedAnswers": [
+            "gate",
+            "departure gate"
+          ],
+          "acceptedTranslations": [
+            "bramka",
+            "wyjście",
+            "wyjście do samolotu"
+          ]
+        },
+        {
+          "id": "airport.board",
+          "term": "board",
+          "ipa": "/bɔːrd/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wejść na pokład",
+          "definition": "To get on a plane, train or ship.",
+          "register": "neutralny",
+          "contextPl": "Wejście na pokład",
+          "natural": "",
+          "forms": "boards – boarded – boarded",
+          "collocations": "board a plane; start boarding; board at gate 12",
+          "synonyms": "get on",
+          "antonyms": "get off",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Passengers with small children may board first.",
+              "pl": "Pasażerowie z małymi dziećmi mogą wejść na pokład jako pierwsi.",
+              "focusEn": "board",
+              "focusPl": "wejść na pokład"
+            },
+            {
+              "en": "We boarded twenty minutes late because the crew was still cleaning the plane.",
+              "pl": "Weszliśmy na pokład dwadzieścia minut później, bo załoga jeszcze sprzątała samolot.",
+              "focusEn": "boarded",
+              "focusPl": "Weszliśmy na pokład"
+            }
+          ],
+          "acceptedAnswers": [
+            "board",
+            "get on"
+          ],
+          "acceptedTranslations": [
+            "wejść na pokład",
+            "wsiadać",
+            "wsiąść",
+            "wchodzić na pokład"
+          ]
+        },
+        {
+          "id": "airport.boarding",
+          "term": "boarding",
+          "ipa": "/ˈbɔːrdɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wejście na pokład",
+          "definition": "The process of passengers getting on a plane.",
+          "register": "neutralny",
+          "contextPl": "Wejście na pokład",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "boarding time; boarding begins; boarding gate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na tablicy: „Boarding” – trwa wejście na pokład.",
+          "examples": [
+            {
+              "en": "Boarding begins at 9:15, so don't go too far from the gate.",
+              "pl": "Wejście na pokład zaczyna się o 9:15, więc nie odchodź za daleko od bramki.",
+              "focusEn": "Boarding",
+              "focusPl": "Wejście na pokład"
+            },
+            {
+              "en": "The screen at the gate said boarding was delayed by fifteen minutes.",
+              "pl": "Ekran przy bramce pokazywał, że wejście na pokład jest opóźnione o piętnaście minut.",
+              "focusEn": "boarding",
+              "focusPl": "wejście na pokład"
+            }
+          ],
+          "acceptedAnswers": [
+            "boarding"
+          ],
+          "acceptedTranslations": [
+            "wejście na pokład",
+            "boarding"
+          ]
+        },
+        {
+          "id": "airport.departures",
+          "term": "departures",
+          "ipa": "/dɪˈpɑːrtʃərz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "odloty",
+          "definition": "The part of an airport for people who are leaving, or a list of flights that are leaving.",
+          "register": "neutralny",
+          "contextPl": "Poruszanie się po lotnisku",
+          "natural": "",
+          "forms": "departure – departures",
+          "collocations": "departures hall; departures board; departures level",
+          "synonyms": "",
+          "antonyms": "arrivals",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Follow the signs for departures on the upper level.",
+              "pl": "Idź za znakami do odlotów na górnym poziomie.",
+              "focusEn": "departures",
+              "focusPl": "odlotów"
+            },
+            {
+              "en": "Our flight was at the top of the departures list on the screen.",
+              "pl": "Nasz lot był na samej górze listy odlotów na ekranie.",
+              "focusEn": "departures",
+              "focusPl": "odlotów"
+            }
+          ],
+          "acceptedAnswers": [
+            "departures",
+            "departure"
+          ],
+          "acceptedTranslations": [
+            "odloty",
+            "hala odlotów"
+          ]
+        },
+        {
+          "id": "airport.departure-board",
+          "term": "departure board",
+          "ipa": "/dɪˈpɑːrtʃər ˌbɔːrd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "tablica odlotów",
+          "definition": "A large screen that shows flight times, gates and delays.",
+          "register": "neutralny",
+          "contextPl": "Poruszanie się po lotnisku",
+          "natural": "",
+          "forms": "departure boards",
+          "collocations": "check the departure board",
+          "synonyms": "departures screen",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I checked the departure board and saw that our gate had changed.",
+              "pl": "Sprawdziłem tablicę odlotów i zobaczyłem, że nasza bramka się zmieniła.",
+              "focusEn": "departure board",
+              "focusPl": "tablicę odlotów"
+            },
+            {
+              "en": "Let's look at the departure board before we buy coffee.",
+              "pl": "Spójrzmy na tablicę odlotów, zanim kupimy kawę.",
+              "focusEn": "departure board",
+              "focusPl": "tablicę odlotów"
+            }
+          ],
+          "acceptedAnswers": [
+            "departure board",
+            "departures board",
+            "departure screen"
+          ],
+          "acceptedTranslations": [
+            "tablica odlotów",
+            "tablica z odlotami",
+            "ekran odlotów"
+          ]
+        },
+        {
+          "id": "airport.gate-change",
+          "term": "gate change",
+          "ipa": "/ˈɡeɪt ˌtʃeɪndʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zmiana bramki",
+          "definition": "A situation in which a flight will leave from a different gate than planned.",
+          "register": "neutralny",
+          "contextPl": "Wejście na pokład",
+          "natural": "",
+          "forms": "gate changes",
+          "collocations": "last-minute gate change; announce a gate change",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's been a gate change, so we need to go to gate 40.",
+              "pl": "Była zmiana bramki, więc musimy iść do bramki 40.",
+              "focusEn": "gate change",
+              "focusPl": "zmiana bramki"
+            },
+            {
+              "en": "I missed the announcement about the gate change because I had my headphones on.",
+              "pl": "Przegapiłem komunikat o zmianie bramki, bo miałem założone słuchawki.",
+              "focusEn": "gate change",
+              "focusPl": "zmianie bramki"
+            }
+          ],
+          "acceptedAnswers": [
+            "gate change"
+          ],
+          "acceptedTranslations": [
+            "zmiana bramki",
+            "zmiana wyjścia"
+          ]
+        },
+        {
+          "id": "airport.announcement",
+          "term": "announcement",
+          "ipa": "/əˈnaʊnsmənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "komunikat",
+          "definition": "A spoken message over the speakers at an airport.",
+          "register": "neutralny",
+          "contextPl": "Poruszanie się po lotnisku",
+          "natural": "",
+          "forms": "announcements",
+          "collocations": "make an announcement; listen for announcements; boarding announcement",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Did you hear that announcement? I think they called our flight.",
+              "pl": "Słyszałeś ten komunikat? Chyba wywołali nasz lot.",
+              "focusEn": "announcement",
+              "focusPl": "komunikat"
+            },
+            {
+              "en": "The announcement at the gate was too quiet to understand.",
+              "pl": "Komunikat przy bramce był za cichy, żeby go zrozumieć.",
+              "focusEn": "announcement",
+              "focusPl": "Komunikat"
+            }
+          ],
+          "acceptedAnswers": [
+            "announcement"
+          ],
+          "acceptedTranslations": [
+            "komunikat",
+            "ogłoszenie"
+          ]
+        },
+        {
+          "id": "airport.final-call",
+          "term": "final call",
+          "ipa": "/ˌfaɪnl ˈkɔːl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ostatnie wezwanie",
+          "definition": "The last announcement telling passengers to go to the gate before it closes.",
+          "register": "neutralny",
+          "contextPl": "Wejście na pokład",
+          "natural": "",
+          "forms": "final calls",
+          "collocations": "final call for flight 208; last call",
+          "synonyms": "last call",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This is the final call for passengers on flight 208 to Miami.",
+              "pl": "To ostatnie wezwanie dla pasażerów lotu 208 do Miami.",
+              "focusEn": "final call",
+              "focusPl": "ostatnie wezwanie"
+            },
+            {
+              "en": "We heard our names in the final call while we were still in the restroom line.",
+              "pl": "Usłyszeliśmy swoje nazwiska w ostatnim wezwaniu, kiedy jeszcze staliśmy w kolejce do toalety.",
+              "focusEn": "final call",
+              "focusPl": "ostatnim wezwaniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "final call",
+            "last call"
+          ],
+          "acceptedTranslations": [
+            "ostatnie wezwanie",
+            "ostatnie wezwanie do wyjścia"
+          ]
+        },
+        {
+          "id": "airport.boarding-group",
+          "term": "boarding group",
+          "ipa": "/ˈbɔːrdɪŋ ˌɡruːp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "grupa wejścia na pokład",
+          "definition": "A number on your boarding pass that shows when you can get on the plane.",
+          "register": "neutralny",
+          "contextPl": "Wejście na pokład",
+          "natural": "",
+          "forms": "boarding groups",
+          "collocations": "boarding group 3; wait for your boarding group",
+          "synonyms": "boarding zone",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're in boarding group five, so we'll be some of the last on the plane.",
+              "pl": "Jesteśmy w grupie wejścia na pokład numer pięć, więc wejdziemy prawie na końcu.",
+              "focusEn": "boarding group",
+              "focusPl": "grupie wejścia na pokład"
+            },
+            {
+              "en": "The agent asked passengers to wait until their boarding group was called.",
+              "pl": "Pracownica poprosiła pasażerów, żeby czekali, aż wywołają ich grupę wejścia na pokład.",
+              "focusEn": "boarding group",
+              "focusPl": "grupę wejścia na pokład"
+            }
+          ],
+          "acceptedAnswers": [
+            "boarding group",
+            "boarding zone"
+          ],
+          "acceptedTranslations": [
+            "grupa wejścia na pokład",
+            "grupa boardingowa"
+          ]
+        },
+        {
+          "id": "airport.now-boarding",
+          "term": "now boarding",
+          "ipa": "/ˌnaʊ ˈbɔːrdɪŋ/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "trwa wejście na pokład",
+          "definition": "Words used in announcements and on screens when passengers can get on the plane.",
+          "register": "neutralny",
+          "contextPl": "Wejście na pokład",
+          "natural": "",
+          "forms": "",
+          "collocations": "now boarding all groups",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The screen at our gate already said now boarding.",
+              "pl": "Na ekranie przy naszej bramce był już napis „trwa wejście na pokład”.",
+              "focusEn": "now boarding",
+              "focusPl": "trwa wejście na pokład"
+            },
+            {
+              "en": "We are now boarding passengers in groups one and two.",
+              "pl": "Trwa wejście na pokład pasażerów z grup pierwszej i drugiej.",
+              "focusEn": "now boarding",
+              "focusPl": "Trwa wejście na pokład"
+            }
+          ],
+          "acceptedAnswers": [
+            "now boarding"
+          ],
+          "acceptedTranslations": [
+            "trwa wejście na pokład",
+            "trwa boarding"
+          ]
+        },
+        {
+          "id": "airport.lounge",
+          "term": "lounge",
+          "ipa": "/laʊndʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "salonik",
+          "definition": "A comfortable room at an airport, often for business-class passengers or members.",
+          "register": "neutralny",
+          "contextPl": "Udogodnienia na lotnisku",
+          "natural": "",
+          "forms": "lounges",
+          "collocations": "airport lounge; VIP lounge; lounge access",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Bywa też zwykłą poczekalnią przy bramce: „departure lounge”.",
+          "examples": [
+            {
+              "en": "We waited in the lounge with free snacks and quiet seats.",
+              "pl": "Czekaliśmy w saloniku z darmowymi przekąskami i cichymi fotelami.",
+              "focusEn": "lounge",
+              "focusPl": "saloniku"
+            },
+            {
+              "en": "My credit card gives me free access to the lounge in this terminal.",
+              "pl": "Moja karta kredytowa daje mi darmowy wstęp do saloniku w tym terminalu.",
+              "focusEn": "lounge",
+              "focusPl": "saloniku"
+            }
+          ],
+          "acceptedAnswers": [
+            "lounge",
+            "airport lounge"
+          ],
+          "acceptedTranslations": [
+            "salonik",
+            "saloniki",
+            "poczekalnia"
+          ]
+        },
+        {
+          "id": "airport.duty-free",
+          "term": "duty-free",
+          "ipa": "/ˌduːti ˈfriː/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wolnocłowy",
+          "definition": "Sold at an airport without the usual taxes.",
+          "register": "neutralny",
+          "contextPl": "Udogodnienia na lotnisku",
+          "natural": "",
+          "forms": "",
+          "collocations": "duty-free shop; duty-free shopping",
+          "synonyms": "tax-free",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I bought a bottle of perfume at the duty-free shop near our gate.",
+              "pl": "Kupiłem butelkę perfum w sklepie wolnocłowym niedaleko naszej bramki.",
+              "focusEn": "duty-free",
+              "focusPl": "wolnocłowym"
+            },
+            {
+              "en": "Everything in the duty-free area was more expensive than I expected.",
+              "pl": "Wszystko w strefie wolnocłowej było droższe, niż się spodziewałem.",
+              "focusEn": "duty-free",
+              "focusPl": "wolnocłowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "duty-free",
+            "duty free",
+            "tax-free"
+          ],
+          "acceptedTranslations": [
+            "wolnocłowy",
+            "bezcłowy"
+          ]
+        },
+        {
+          "id": "airport.restroom",
+          "term": "restroom",
+          "ipa": "/ˈrestruːm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "toaleta",
+          "definition": "A room with toilets in a public building.",
+          "register": "neutralny",
+          "contextPl": "Udogodnienia na lotnisku",
+          "natural": "",
+          "forms": "restrooms",
+          "collocations": "find a restroom; men's restroom; women's restroom",
+          "synonyms": "bathroom",
+          "antonyms": "",
+          "notePl": "W USA w miejscach publicznych mówi się „restroom” albo „bathroom”, rzadko „toilet”.",
+          "examples": [
+            {
+              "en": "Is there a restroom near gate 15?",
+              "pl": "Czy jest jakaś toaleta niedaleko bramki 15?",
+              "focusEn": "restroom",
+              "focusPl": "toaleta"
+            },
+            {
+              "en": "I'll watch our bags while you go to the restroom.",
+              "pl": "Popilnuję naszych toreb, a ty idź do toalety.",
+              "focusEn": "restroom",
+              "focusPl": "toalety"
+            }
+          ],
+          "acceptedAnswers": [
+            "restroom",
+            "bathroom"
+          ],
+          "acceptedTranslations": [
+            "toaleta",
+            "ubikacja"
+          ]
+        },
+        {
+          "id": "airport.moving-walkway",
+          "term": "moving walkway",
+          "ipa": "/ˌmuːvɪŋ ˈwɔːkweɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "ruchomy chodnik",
+          "definition": "A flat moving belt that carries people along long hallways.",
+          "register": "neutralny",
+          "contextPl": "Poruszanie się po lotnisku",
+          "natural": "",
+          "forms": "moving walkways",
+          "collocations": "stand on the moving walkway",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na nagraniach często słychać: „The moving walkway is ending”.",
+          "examples": [
+            {
+              "en": "We took the moving walkway all the way to the end of the concourse.",
+              "pl": "Pojechaliśmy ruchomym chodnikiem aż do końca hali.",
+              "focusEn": "moving walkway",
+              "focusPl": "ruchomym chodnikiem"
+            },
+            {
+              "en": "Please stand to the right on the moving walkway.",
+              "pl": "Prosimy stać po prawej stronie na ruchomym chodniku.",
+              "focusEn": "moving walkway",
+              "focusPl": "ruchomym chodniku"
+            }
+          ],
+          "acceptedAnswers": [
+            "moving walkway"
+          ],
+          "acceptedTranslations": [
+            "ruchomy chodnik",
+            "chodnik ruchomy"
+          ]
+        },
+        {
+          "id": "airport.priority-boarding",
+          "term": "priority boarding",
+          "ipa": "/praɪˌɔːrəti ˈbɔːrdɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "pierwszeństwo wejścia na pokład",
+          "definition": "A service that lets certain passengers get on the plane first.",
+          "register": "neutralny",
+          "contextPl": "Wejście na pokład",
+          "natural": "",
+          "forms": "",
+          "collocations": "pay for priority boarding",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Families with strollers can use priority boarding.",
+              "pl": "Rodziny z wózkami mogą skorzystać z pierwszeństwa wejścia na pokład.",
+              "focusEn": "priority boarding",
+              "focusPl": "pierwszeństwa wejścia na pokład"
+            },
+            {
+              "en": "I paid for priority boarding so I could find space for my bag.",
+              "pl": "Zapłaciłem za pierwszeństwo wejścia na pokład, żeby znaleźć miejsce na torbę.",
+              "focusEn": "priority boarding",
+              "focusPl": "pierwszeństwo wejścia na pokład"
+            }
+          ],
+          "acceptedAnswers": [
+            "priority boarding"
+          ],
+          "acceptedTranslations": [
+            "pierwszeństwo wejścia na pokład",
+            "priorytetowy boarding"
+          ]
+        },
+        {
+          "id": "airport.jet-bridge",
+          "term": "jet bridge",
+          "ipa": "/ˈdʒet ˌbrɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "rękaw",
+          "definition": "A covered moving hallway that connects the gate to the door of the plane.",
+          "register": "specjalistyczny",
+          "contextPl": "Wejście na pokład",
+          "natural": "",
+          "forms": "jet bridges",
+          "collocations": "walk down the jet bridge",
+          "synonyms": "jetway",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It was freezing in the jet bridge while we waited to get on the plane.",
+              "pl": "W rękawie było lodowato, kiedy czekaliśmy na wejście do samolotu.",
+              "focusEn": "jet bridge",
+              "focusPl": "rękawie"
+            },
+            {
+              "en": "The jet bridge got stuck, so we had to wait at the gate.",
+              "pl": "Rękaw się zablokował, więc musieliśmy czekać przy bramce.",
+              "focusEn": "jet bridge",
+              "focusPl": "Rękaw"
+            }
+          ],
+          "acceptedAnswers": [
+            "jet bridge",
+            "jetway"
+          ],
+          "acceptedTranslations": [
+            "rękaw",
+            "rękaw lotniczy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airport.delays-connections",
+      "namePl": "Opóźnienia i przesiadki",
+      "scenePl": "Zatłoczona bramka po komunikacie o opóźnieniu, kolejka do stanowiska obsługi pasażerów",
+      "entries": [
+        {
+          "id": "airport.delay",
+          "term": "delay",
+          "ipa": "/dɪˈleɪ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "opóźnienie",
+          "definition": "A period of time by which a flight is later than planned.",
+          "register": "neutralny",
+          "contextPl": "Opóźnienia lotów",
+          "natural": "",
+          "forms": "delays",
+          "collocations": "two-hour delay; weather delay; long delay",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a two-hour delay because of the storm in Chicago.",
+              "pl": "Jest dwugodzinne opóźnienie z powodu burzy w Chicago.",
+              "focusEn": "delay",
+              "focusPl": "opóźnienie"
+            },
+            {
+              "en": "The agent apologized for the delay and gave everyone a snack voucher.",
+              "pl": "Pracownica przeprosiła za opóźnienie i dała wszystkim bony na przekąski.",
+              "focusEn": "delay",
+              "focusPl": "opóźnienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "delay"
+          ],
+          "acceptedTranslations": [
+            "opóźnienie"
+          ]
+        },
+        {
+          "id": "airport.delayed",
+          "term": "delayed",
+          "ipa": "/dɪˈleɪd/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "opóźniony",
+          "definition": "Leaving or arriving later than planned.",
+          "register": "neutralny",
+          "contextPl": "Opóźnienia lotów",
+          "natural": "",
+          "forms": "",
+          "collocations": "flight is delayed; delayed by an hour",
+          "synonyms": "",
+          "antonyms": "on time",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our flight is delayed again, so we'll miss dinner with your parents.",
+              "pl": "Nasz lot znowu jest opóźniony, więc nie zdążymy na kolację z twoimi rodzicami.",
+              "focusEn": "delayed",
+              "focusPl": "opóźniony"
+            },
+            {
+              "en": "The board says every flight to Boston is delayed by at least an hour.",
+              "pl": "Na tablicy widać, że każdy lot do Bostonu jest opóźniony co najmniej o godzinę.",
+              "focusEn": "delayed",
+              "focusPl": "opóźniony"
+            }
+          ],
+          "acceptedAnswers": [
+            "delayed"
+          ],
+          "acceptedTranslations": [
+            "opóźniony",
+            "spóźniony"
+          ]
+        },
+        {
+          "id": "airport.on-time",
+          "term": "on time",
+          "ipa": "/ˌɑːn ˈtaɪm/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "punktualnie",
+          "definition": "At the planned time, not late.",
+          "register": "neutralny",
+          "contextPl": "Opóźnienia lotów",
+          "natural": "",
+          "forms": "",
+          "collocations": "leave on time; arrive on time; right on time",
+          "synonyms": "on schedule",
+          "antonyms": "delayed",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Good news, our flight is still showing on time.",
+              "pl": "Dobra wiadomość: nasz lot wciąż jest na tablicy jako „o czasie”.",
+              "focusEn": "on time",
+              "focusPl": "o czasie"
+            },
+            {
+              "en": "Even with the snow, we took off almost on time.",
+              "pl": "Mimo śniegu wystartowaliśmy prawie punktualnie.",
+              "focusEn": "on time",
+              "focusPl": "punktualnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "on time"
+          ],
+          "acceptedTranslations": [
+            "punktualnie",
+            "planowo",
+            "o czasie",
+            "zgodnie z planem"
+          ]
+        },
+        {
+          "id": "airport.cancel",
+          "term": "cancel",
+          "ipa": "/ˈkænsl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odwołać",
+          "definition": "To say that something that was planned will not happen.",
+          "register": "neutralny",
+          "contextPl": "Odwołane loty",
+          "natural": "",
+          "forms": "cancels – canceled – canceled",
+          "collocations": "cancel a flight; flight canceled",
+          "synonyms": "call off",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The airline canceled our flight an hour before boarding.",
+              "pl": "Linia lotnicza odwołała nasz lot godzinę przed wejściem na pokład.",
+              "focusEn": "canceled",
+              "focusPl": "odwołała"
+            },
+            {
+              "en": "If they cancel the last flight tonight, we'll need a hotel.",
+              "pl": "Jeśli odwołają dziś ostatni lot, będziemy potrzebować hotelu.",
+              "focusEn": "cancel",
+              "focusPl": "odwołają"
+            }
+          ],
+          "acceptedAnswers": [
+            "cancel",
+            "call off"
+          ],
+          "acceptedTranslations": [
+            "odwołać",
+            "odwoływać",
+            "anulować"
+          ]
+        },
+        {
+          "id": "airport.cancellation",
+          "term": "cancellation",
+          "ipa": "/ˌkænsəˈleɪʃn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odwołanie",
+          "definition": "A decision that a flight or other planned event will not happen.",
+          "register": "neutralny",
+          "contextPl": "Odwołane loty",
+          "natural": "",
+          "forms": "cancellations",
+          "collocations": "flight cancellation; last-minute cancellation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia: „cancellation” ma dwa „l” także w amerykańskim angielskim.",
+          "examples": [
+            {
+              "en": "After the cancellation, hundreds of people lined up at the service desk.",
+              "pl": "Po odwołaniu lotu setki ludzi ustawiły się w kolejce do stanowiska obsługi.",
+              "focusEn": "cancellation",
+              "focusPl": "odwołaniu"
+            },
+            {
+              "en": "The airline sent a text about the cancellation while we were at the gate.",
+              "pl": "Linia lotnicza wysłała SMS-a o odwołaniu lotu, kiedy byliśmy przy bramce.",
+              "focusEn": "cancellation",
+              "focusPl": "odwołaniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "cancellation"
+          ],
+          "acceptedTranslations": [
+            "odwołanie",
+            "anulowanie",
+            "odwołanie lotu"
+          ]
+        },
+        {
+          "id": "airport.miss",
+          "term": "miss",
+          "ipa": "/mɪs/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "spóźnić się na",
+          "definition": "To arrive too late to get on a plane, train or bus.",
+          "register": "neutralny",
+          "contextPl": "Spóźnienie na lot",
+          "natural": "",
+          "forms": "misses – missed – missed",
+          "collocations": "miss a flight; miss a connection",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Polskie „spóźnić się na lot”; nie mylić z „tęsknić” (I miss you).",
+          "examples": [
+            {
+              "en": "If we don't leave now, we're going to miss our flight.",
+              "pl": "Jeśli zaraz nie wyjdziemy, spóźnimy się na samolot.",
+              "focusEn": "miss",
+              "focusPl": "spóźnimy się na"
+            },
+            {
+              "en": "We missed the plane by five minutes because the security line was so long.",
+              "pl": "Spóźniliśmy się na samolot o pięć minut, bo kolejka do kontroli była tak długa.",
+              "focusEn": "missed",
+              "focusPl": "Spóźniliśmy się na"
+            }
+          ],
+          "acceptedAnswers": [
+            "miss",
+            "miss out"
+          ],
+          "acceptedTranslations": [
+            "spóźnić się na",
+            "nie zdążyć na"
+          ]
+        },
+        {
+          "id": "airport.connecting-flight",
+          "term": "connecting flight",
+          "ipa": "/kəˌnektɪŋ ˈflaɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "lot przesiadkowy",
+          "definition": "A second flight that you take to continue your journey to your final destination.",
+          "register": "neutralny",
+          "contextPl": "Przesiadki",
+          "natural": "",
+          "forms": "connecting flights",
+          "collocations": "catch a connecting flight; make a connecting flight",
+          "synonyms": "connection",
+          "antonyms": "direct flight",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our first flight was late, so we had to run for our connecting flight.",
+              "pl": "Nasz pierwszy lot się spóźnił, więc musieliśmy biec na lot przesiadkowy.",
+              "focusEn": "connecting flight",
+              "focusPl": "lot przesiadkowy"
+            },
+            {
+              "en": "The agent said our connecting flight leaves from the same terminal.",
+              "pl": "Pracownik powiedział, że nasz lot przesiadkowy odlatuje z tego samego terminalu.",
+              "focusEn": "connecting flight",
+              "focusPl": "lot przesiadkowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "connecting flight",
+            "connection"
+          ],
+          "acceptedTranslations": [
+            "lot przesiadkowy",
+            "lot z przesiadką",
+            "kolejny lot"
+          ]
+        },
+        {
+          "id": "airport.layover",
+          "term": "layover",
+          "ipa": "/ˈleɪoʊvər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przesiadka",
+          "definition": "The time you spend at an airport between two flights.",
+          "register": "neutralny",
+          "contextPl": "Przesiadki",
+          "natural": "",
+          "forms": "layovers",
+          "collocations": "long layover; three-hour layover; layover in Dallas",
+          "synonyms": "stopover",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We have a four-hour layover in Denver, so let's get some real food.",
+              "pl": "Mamy czterogodzinną przesiadkę w Denver, więc zjedzmy coś porządnego.",
+              "focusEn": "layover",
+              "focusPl": "przesiadkę"
+            },
+            {
+              "en": "With such a short layover, we won't have time to leave the gate area.",
+              "pl": "Przy tak krótkiej przesiadce nie zdążymy wyjść ze strefy przy bramce.",
+              "focusEn": "layover",
+              "focusPl": "przesiadce"
+            }
+          ],
+          "acceptedAnswers": [
+            "layover",
+            "stopover"
+          ],
+          "acceptedTranslations": [
+            "przesiadka",
+            "międzylądowanie",
+            "przerwa między lotami"
+          ]
+        },
+        {
+          "id": "airport.connection",
+          "term": "connection",
+          "ipa": "/kəˈnekʃn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "połączenie przesiadkowe",
+          "definition": "A flight you change to during a journey.",
+          "register": "neutralny",
+          "contextPl": "Przesiadki",
+          "natural": "",
+          "forms": "connections",
+          "collocations": "tight connection; miss a connection; make a connection",
+          "synonyms": "connecting flight",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm worried we'll miss our connection in Atlanta.",
+              "pl": "Martwię się, że nie zdążymy na przesiadkę w Atlancie.",
+              "focusEn": "connection",
+              "focusPl": "przesiadkę"
+            },
+            {
+              "en": "Passengers with tight connections were allowed off the plane first.",
+              "pl": "Pasażerowie z krótkimi przesiadkami mogli wysiąść jako pierwsi.",
+              "focusEn": "connections",
+              "focusPl": "przesiadkami"
+            }
+          ],
+          "acceptedAnswers": [
+            "connection",
+            "connecting flight"
+          ],
+          "acceptedTranslations": [
+            "połączenie przesiadkowe",
+            "przesiadka"
+          ]
+        },
+        {
+          "id": "airport.rebook",
+          "term": "rebook",
+          "ipa": "/ˌriːˈbʊk/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przebukować",
+          "definition": "To book a new flight after the original one was canceled or missed.",
+          "register": "neutralny",
+          "contextPl": "Odwołane loty",
+          "natural": "",
+          "forms": "rebooked",
+          "collocations": "rebook a flight; get rebooked; rebook for free",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The agent rebooked us on the first flight tomorrow morning.",
+              "pl": "Pracownica przebukowała nas na pierwszy lot jutro rano.",
+              "focusEn": "rebooked",
+              "focusPl": "przebukowała"
+            },
+            {
+              "en": "You can rebook for free in the app if your flight is canceled.",
+              "pl": "Możesz przebukować lot za darmo w aplikacji, jeśli zostanie odwołany.",
+              "focusEn": "rebook",
+              "focusPl": "przebukować"
+            }
+          ],
+          "acceptedAnswers": [
+            "rebook"
+          ],
+          "acceptedTranslations": [
+            "przebukować",
+            "zmienić rezerwację",
+            "przerezerwować"
+          ]
+        },
+        {
+          "id": "airport.standby",
+          "term": "standby",
+          "ipa": "/ˈstændbaɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "lista oczekujących",
+          "definition": "A list of passengers waiting to get a seat if someone does not show up.",
+          "register": "neutralny",
+          "contextPl": "Odwołane loty",
+          "natural": "",
+          "forms": "",
+          "collocations": "be on standby; standby list; fly standby",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Fly standby” – lecieć z listy oczekujących.",
+          "examples": [
+            {
+              "en": "They put us on standby for the next flight to Seattle.",
+              "pl": "Wpisano nas na listę oczekujących na następny lot do Seattle.",
+              "focusEn": "standby",
+              "focusPl": "listę oczekujących"
+            },
+            {
+              "en": "Our names were at the top of the standby list on the screen.",
+              "pl": "Nasze nazwiska były na samej górze listy oczekujących na ekranie.",
+              "focusEn": "standby",
+              "focusPl": "listy oczekujących"
+            }
+          ],
+          "acceptedAnswers": [
+            "standby",
+            "standby list"
+          ],
+          "acceptedTranslations": [
+            "lista oczekujących",
+            "lista rezerwowa"
+          ]
+        },
+        {
+          "id": "airport.overbooked",
+          "term": "overbooked",
+          "ipa": "/ˌoʊvərˈbʊkt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "przepełniony",
+          "definition": "Having sold more tickets than there are seats.",
+          "register": "neutralny",
+          "contextPl": "Problemy z rezerwacją",
+          "natural": "",
+          "forms": "",
+          "collocations": "overbooked flight",
+          "synonyms": "oversold",
+          "antonyms": "",
+          "notePl": "O locie, na który sprzedano więcej biletów, niż jest miejsc (overbooking).",
+          "examples": [
+            {
+              "en": "The flight was overbooked, so they asked for volunteers to take a later one.",
+              "pl": "Lot był przepełniony, więc szukano chętnych na późniejszy.",
+              "focusEn": "overbooked",
+              "focusPl": "przepełniony"
+            },
+            {
+              "en": "Our flight is overbooked, so some passengers at this gate won't get a seat.",
+              "pl": "Nasz lot jest przepełniony, więc część pasażerów przy tej bramce nie dostanie miejsca.",
+              "focusEn": "overbooked",
+              "focusPl": "przepełniony"
+            }
+          ],
+          "acceptedAnswers": [
+            "overbooked",
+            "oversold"
+          ],
+          "acceptedTranslations": [
+            "przepełniony",
+            "z nadkompletem rezerwacji",
+            "z overbookingiem"
+          ]
+        },
+        {
+          "id": "airport.voucher",
+          "term": "voucher",
+          "ipa": "/ˈvaʊtʃər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bon",
+          "definition": "A piece of paper or code that you can use instead of money.",
+          "register": "neutralny",
+          "contextPl": "Odwołane loty",
+          "natural": "",
+          "forms": "vouchers",
+          "collocations": "meal voucher; travel voucher; hotel voucher",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The airline gave us a twenty-dollar meal voucher for the delay.",
+              "pl": "Linia lotnicza dała nam bon na posiłek o wartości dwudziestu dolarów z powodu opóźnienia.",
+              "focusEn": "voucher",
+              "focusPl": "bon"
+            },
+            {
+              "en": "We got a hotel voucher because the next flight wasn't until morning.",
+              "pl": "Dostaliśmy bon na hotel, bo następny lot był dopiero rano.",
+              "focusEn": "voucher",
+              "focusPl": "bon"
+            }
+          ],
+          "acceptedAnswers": [
+            "voucher"
+          ],
+          "acceptedTranslations": [
+            "bon",
+            "voucher",
+            "kupon"
+          ]
+        },
+        {
+          "id": "airport.stranded",
+          "term": "stranded",
+          "ipa": "/ˈstrændɪd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "uziemiony",
+          "definition": "Unable to leave a place, for example because flights are canceled.",
+          "register": "neutralny",
+          "contextPl": "Odwołane loty",
+          "natural": "",
+          "forms": "",
+          "collocations": "be stranded; get stranded; stranded passengers",
+          "synonyms": "stuck",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hundreds of passengers were stranded at the airport overnight because of the snow.",
+              "pl": "Przez śnieg setki pasażerów zostały uziemione na lotnisku na całą noc.",
+              "focusEn": "stranded",
+              "focusPl": "uziemione"
+            },
+            {
+              "en": "We were stranded in the terminal with no hotel rooms left in the city.",
+              "pl": "Byliśmy uziemieni w terminalu, a w mieście nie było już wolnych pokoi hotelowych.",
+              "focusEn": "stranded",
+              "focusPl": "uziemieni"
+            }
+          ],
+          "acceptedAnswers": [
+            "stranded",
+            "stuck"
+          ],
+          "acceptedTranslations": [
+            "uziemiony",
+            "unieruchomiony",
+            "utknięty"
+          ]
+        },
+        {
+          "id": "airport.compensation",
+          "term": "compensation",
+          "ipa": "/ˌkɑːmpenˈseɪʃn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "odszkodowanie",
+          "definition": "Money that you receive because something went wrong.",
+          "register": "formalny",
+          "contextPl": "Reklamacje i roszczenia",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "ask for compensation; claim compensation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We asked the agent if we could get compensation for the eight-hour delay.",
+              "pl": "Zapytaliśmy pracownika, czy możemy dostać odszkodowanie za ośmiogodzinne opóźnienie.",
+              "focusEn": "compensation",
+              "focusPl": "odszkodowanie"
+            },
+            {
+              "en": "The airline offered compensation in the form of travel credit.",
+              "pl": "Linia lotnicza zaproponowała rekompensatę w formie środków na kolejną podróż.",
+              "focusEn": "compensation",
+              "focusPl": "rekompensatę"
+            }
+          ],
+          "acceptedAnswers": [
+            "compensation"
+          ],
+          "acceptedTranslations": [
+            "odszkodowanie",
+            "rekompensata"
+          ]
+        },
+        {
+          "id": "airport.get-bumped",
+          "term": "get bumped",
+          "ipa": "/ˌɡet ˈbʌmpt/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "stracić miejsce w samolocie",
+          "definition": "To lose your seat on a flight because the airline sold too many tickets.",
+          "register": "potoczny",
+          "contextPl": "Problemy z rezerwacją",
+          "natural": "",
+          "forms": "got bumped",
+          "collocations": "get bumped from a flight; get bumped to a later flight",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Bump” to też przenieść na wyższą klasę: „get bumped up to first class”.",
+          "examples": [
+            {
+              "en": "We got bumped from our flight, but they paid us four hundred dollars each.",
+              "pl": "Straciliśmy miejsca w samolocie przez nadkomplet, ale każdy dostał czterysta dolarów.",
+              "focusEn": "got bumped",
+              "focusPl": "Straciliśmy miejsca w samolocie"
+            },
+            {
+              "en": "If you check in late, you're more likely to get bumped.",
+              "pl": "Jeśli odprawisz się późno, łatwiej stracić miejsce w samolocie.",
+              "focusEn": "get bumped",
+              "focusPl": "stracić miejsce w samolocie"
+            }
+          ],
+          "acceptedAnswers": [
+            "get bumped"
+          ],
+          "acceptedTranslations": [
+            "stracić miejsce w samolocie",
+            "nie zostać wpuszczonym na pokład"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airport.arrivals",
+      "namePl": "Przylot i odbiór bagażu",
+      "scenePl": "Hala przylotów z taśmami bagażowymi i wyjściem do postoju taksówek",
+      "entries": [
+        {
+          "id": "airport.arrivals",
+          "term": "arrivals",
+          "ipa": "/əˈraɪvlz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przyloty",
+          "definition": "The part of an airport where passengers come out after landing.",
+          "register": "neutralny",
+          "contextPl": "Przylot",
+          "natural": "",
+          "forms": "arrival – arrivals",
+          "collocations": "arrivals hall; arrivals level; meet at arrivals",
+          "synonyms": "",
+          "antonyms": "departures",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll wait for you at arrivals, next to the coffee stand.",
+              "pl": "Poczekam na ciebie w hali przylotów, obok stoiska z kawą.",
+              "focusEn": "arrivals",
+              "focusPl": "hali przylotów"
+            },
+            {
+              "en": "The arrivals area was full of people holding signs with names.",
+              "pl": "Strefa przylotów była pełna ludzi trzymających kartki z nazwiskami.",
+              "focusEn": "arrivals",
+              "focusPl": "przylotów"
+            }
+          ],
+          "acceptedAnswers": [
+            "arrivals",
+            "arrival"
+          ],
+          "acceptedTranslations": [
+            "przyloty",
+            "hala przylotów"
+          ]
+        },
+        {
+          "id": "airport.arrive",
+          "term": "arrive",
+          "ipa": "/əˈraɪv/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "przylecieć",
+          "definition": "To reach a place at the end of a journey.",
+          "register": "neutralny",
+          "contextPl": "Przylot",
+          "natural": "",
+          "forms": "arrives – arrived – arrived",
+          "collocations": "arrive at the airport; arrive in Chicago; arrive early",
+          "synonyms": "get in, land",
+          "antonyms": "depart",
+          "notePl": "Mówimy „arrive in” (miasto, kraj) i „arrive at” (lotnisko, budynek).",
+          "examples": [
+            {
+              "en": "Our flight arrived twenty minutes early, so nobody was there to meet us.",
+              "pl": "Nasz samolot przyleciał dwadzieścia minut przed czasem, więc nikt na nas nie czekał.",
+              "focusEn": "arrived",
+              "focusPl": "przyleciał"
+            },
+            {
+              "en": "Text me when you arrive and I'll drive up to the door.",
+              "pl": "Napisz, kiedy przylecisz, to podjadę pod drzwi.",
+              "focusEn": "arrive",
+              "focusPl": "przylecisz"
+            }
+          ],
+          "acceptedAnswers": [
+            "arrive",
+            "get in"
+          ],
+          "acceptedTranslations": [
+            "przylecieć",
+            "przylatywać",
+            "przybyć",
+            "dotrzeć"
+          ]
+        },
+        {
+          "id": "airport.baggage-claim",
+          "term": "baggage claim",
+          "ipa": "/ˈbæɡɪdʒ ˌkleɪm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odbiór bagażu",
+          "definition": "The area where passengers collect their checked bags after a flight.",
+          "register": "neutralny",
+          "contextPl": "Przylot i bagaż",
+          "natural": "",
+          "forms": "",
+          "collocations": "baggage claim area; meet at baggage claim",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA często umawiamy się „at baggage claim” – przy taśmach z bagażem.",
+          "examples": [
+            {
+              "en": "Let's meet at baggage claim after you land.",
+              "pl": "Spotkajmy się przy odbiorze bagażu, jak wylądujesz.",
+              "focusEn": "baggage claim",
+              "focusPl": "odbiorze bagażu"
+            },
+            {
+              "en": "We waited at baggage claim for almost an hour before the bags came out.",
+              "pl": "Czekaliśmy przy odbiorze bagażu prawie godzinę, zanim pojawiły się walizki.",
+              "focusEn": "baggage claim",
+              "focusPl": "odbiorze bagażu"
+            }
+          ],
+          "acceptedAnswers": [
+            "baggage claim"
+          ],
+          "acceptedTranslations": [
+            "odbiór bagażu",
+            "hala odbioru bagażu",
+            "taśmy bagażowe"
+          ]
+        },
+        {
+          "id": "airport.carousel",
+          "term": "carousel",
+          "ipa": "/ˌkerəˈsel/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "taśma bagażowa",
+          "definition": "A moving belt from which passengers collect their bags.",
+          "register": "neutralny",
+          "contextPl": "Przylot i bagaż",
+          "natural": "",
+          "forms": "carousels",
+          "collocations": "baggage carousel; carousel 4",
+          "synonyms": "belt",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bags from our flight will come out on carousel number six.",
+              "pl": "Bagaże z naszego lotu pojawią się na taśmie bagażowej numer sześć.",
+              "focusEn": "carousel",
+              "focusPl": "taśmie bagażowej"
+            },
+            {
+              "en": "I watched every suitcase go around the carousel, but mine never came.",
+              "pl": "Patrzyłem, jak każda walizka objeżdża taśmę bagażową, ale mojej nie było.",
+              "focusEn": "carousel",
+              "focusPl": "taśmę bagażową"
+            }
+          ],
+          "acceptedAnswers": [
+            "carousel",
+            "belt",
+            "baggage carousel"
+          ],
+          "acceptedTranslations": [
+            "taśma bagażowa",
+            "karuzela bagażowa",
+            "taśmociąg"
+          ]
+        },
+        {
+          "id": "airport.pick-up",
+          "term": "pick up",
+          "ipa": "/ˌpɪk ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odebrać",
+          "definition": "To collect someone or something from a place, often by car.",
+          "register": "neutralny",
+          "contextPl": "Odbiór z lotniska",
+          "natural": "",
+          "forms": "picks up – picked up – picked up",
+          "collocations": "pick someone up from the airport; pick up your bags",
+          "synonyms": "collect",
+          "antonyms": "drop off",
+          "notePl": "„Pick someone up” – odebrać kogoś (np. samochodem).",
+          "examples": [
+            {
+              "en": "Is anyone coming to pick up your parents from the airport?",
+              "pl": "Czy ktoś przyjedzie odebrać twoich rodziców z lotniska?",
+              "focusEn": "pick up",
+              "focusPl": "odebrać"
+            },
+            {
+              "en": "Don't forget to pick up your bags before you go through the exit.",
+              "pl": "Nie zapomnij odebrać bagażu, zanim przejdziesz przez wyjście.",
+              "focusEn": "pick up",
+              "focusPl": "odebrać"
+            }
+          ],
+          "acceptedAnswers": [
+            "pick up",
+            "collect"
+          ],
+          "acceptedTranslations": [
+            "odebrać",
+            "odbierać"
+          ]
+        },
+        {
+          "id": "airport.lost-luggage",
+          "term": "lost luggage",
+          "ipa": "/ˌlɔːst ˈlʌɡɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zagubiony bagaż",
+          "definition": "Bags that did not arrive with the passenger.",
+          "register": "neutralny",
+          "contextPl": "Problemy z bagażem",
+          "natural": "",
+          "forms": "",
+          "collocations": "report lost luggage; lost luggage office",
+          "synonyms": "lost baggage",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We went to the lost luggage office because my suitcase never showed up.",
+              "pl": "Poszliśmy do biura zagubionego bagażu, bo moja walizka się nie pojawiła.",
+              "focusEn": "lost luggage",
+              "focusPl": "zagubionego bagażu"
+            },
+            {
+              "en": "The woman at the desk said most lost luggage arrives on the next flight.",
+              "pl": "Pani przy okienku powiedziała, że większość zagubionego bagażu przylatuje następnym samolotem.",
+              "focusEn": "lost luggage",
+              "focusPl": "zagubionego bagażu"
+            }
+          ],
+          "acceptedAnswers": [
+            "lost luggage",
+            "lost baggage"
+          ],
+          "acceptedTranslations": [
+            "zagubiony bagaż",
+            "zaginiony bagaż"
+          ]
+        },
+        {
+          "id": "airport.damaged",
+          "term": "damaged",
+          "ipa": "/ˈdæmɪdʒd/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "uszkodzony",
+          "definition": "Broken or harmed in some way.",
+          "register": "neutralny",
+          "contextPl": "Problemy z bagażem",
+          "natural": "",
+          "forms": "",
+          "collocations": "damaged bag; arrive damaged",
+          "synonyms": "broken",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My suitcase came out damaged, with one wheel completely gone.",
+              "pl": "Moja walizka wyjechała uszkodzona, bez jednego kółka.",
+              "focusEn": "damaged",
+              "focusPl": "uszkodzona"
+            },
+            {
+              "en": "You should report a damaged bag before you leave baggage claim.",
+              "pl": "Uszkodzony bagaż trzeba zgłosić przed opuszczeniem hali odbioru bagażu.",
+              "focusEn": "damaged",
+              "focusPl": "Uszkodzony"
+            }
+          ],
+          "acceptedAnswers": [
+            "damaged",
+            "broken"
+          ],
+          "acceptedTranslations": [
+            "uszkodzony",
+            "zniszczony"
+          ]
+        },
+        {
+          "id": "airport.claim",
+          "term": "claim",
+          "ipa": "/kleɪm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zgłoszenie szkody",
+          "definition": "An official request for money or help because something was lost or damaged.",
+          "register": "neutralny",
+          "contextPl": "Problemy z bagażem",
+          "natural": "",
+          "forms": "claims",
+          "collocations": "file a claim; claim form; baggage claim number",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Tu: formalne zgłoszenie szkody; „baggage claim” to też miejsce odbioru bagażu.",
+          "examples": [
+            {
+              "en": "I had to fill out a claim for my broken suitcase at the baggage office.",
+              "pl": "W biurze bagażowym musiałem wypełnić zgłoszenie dotyczące zniszczonej walizki.",
+              "focusEn": "claim",
+              "focusPl": "zgłoszenie"
+            },
+            {
+              "en": "Keep your bag tag, because you'll need the number for your claim.",
+              "pl": "Zachowaj przywieszkę, bo numer z niej będzie potrzebny do zgłoszenia.",
+              "focusEn": "claim",
+              "focusPl": "zgłoszenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "claim",
+            "report"
+          ],
+          "acceptedTranslations": [
+            "zgłoszenie szkody",
+            "reklamacja"
+          ]
+        },
+        {
+          "id": "airport.curb",
+          "term": "curb",
+          "ipa": "/kɜːrb/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "krawężnik",
+          "definition": "The edge of the sidewalk where cars stop to let people in or out.",
+          "register": "neutralny",
+          "contextPl": "Odbiór z lotniska",
+          "natural": "",
+          "forms": "curbs",
+          "collocations": "at the curb; curbside pickup",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska; po brytyjsku „kerb”. „Curbside” – przy krawężniku.",
+          "examples": [
+            {
+              "en": "I'll pull up to the curb outside door four.",
+              "pl": "Podjadę pod krawężnik przed wyjściem numer cztery.",
+              "focusEn": "curb",
+              "focusPl": "krawężnik"
+            },
+            {
+              "en": "You can't wait at the curb here, the officer will make you drive around.",
+              "pl": "Nie można tu czekać przy krawężniku, funkcjonariusz każe ci zrobić kółko.",
+              "focusEn": "curb",
+              "focusPl": "krawężniku"
+            }
+          ],
+          "acceptedAnswers": [
+            "curb"
+          ],
+          "acceptedTranslations": [
+            "krawężnik",
+            "miejsce przy krawężniku"
+          ]
+        },
+        {
+          "id": "airport.ground-transportation",
+          "term": "ground transportation",
+          "ipa": "/ˌɡraʊnd ˌtrænspərˈteɪʃn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "transport naziemny",
+          "definition": "Taxis, buses, trains and shuttles that take people to and from the airport.",
+          "register": "formalny",
+          "contextPl": "Odbiór z lotniska",
+          "natural": "",
+          "forms": "",
+          "collocations": "follow signs to ground transportation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na tablicach w USA: „Ground Transportation” – tu znajdziesz taksówki, autobusy i shuttle.",
+          "examples": [
+            {
+              "en": "Follow the signs for ground transportation to find the taxi line.",
+              "pl": "Idź za oznaczeniami transportu naziemnego, żeby znaleźć postój taksówek.",
+              "focusEn": "ground transportation",
+              "focusPl": "transportu naziemnego"
+            },
+            {
+              "en": "The ground transportation area is on the lower level, past baggage claim.",
+              "pl": "Strefa transportu naziemnego jest na dolnym poziomie, za odbiorem bagażu.",
+              "focusEn": "ground transportation",
+              "focusPl": "transportu naziemnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "ground transportation"
+          ],
+          "acceptedTranslations": [
+            "transport naziemny",
+            "dojazd z lotniska",
+            "transport z lotniska"
+          ]
+        },
+        {
+          "id": "airport.shuttle",
+          "term": "shuttle",
+          "ipa": "/ˈʃʌtl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bus dowozowy",
+          "definition": "A bus or van that regularly takes people between two places, such as an airport and a hotel.",
+          "register": "neutralny",
+          "contextPl": "Odbiór z lotniska",
+          "natural": "",
+          "forms": "shuttles",
+          "collocations": "hotel shuttle; airport shuttle; shuttle bus",
+          "synonyms": "shuttle bus",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The hotel shuttle picks up guests outside arrivals every thirty minutes.",
+              "pl": "Hotelowy bus dowozowy zabiera gości sprzed hali przylotów co pół godziny.",
+              "focusEn": "shuttle",
+              "focusPl": "bus dowozowy"
+            },
+            {
+              "en": "We took the rental car shuttle from the terminal to the parking lot.",
+              "pl": "Pojechaliśmy z terminalu na parking busem dowozowym wypożyczalni samochodów.",
+              "focusEn": "shuttle",
+              "focusPl": "busem dowozowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "shuttle",
+            "shuttle bus"
+          ],
+          "acceptedTranslations": [
+            "bus dowozowy",
+            "autobus wahadłowy",
+            "busik hotelowy",
+            "shuttle"
+          ]
+        },
+        {
+          "id": "airport.cell-phone-lot",
+          "term": "cell phone lot",
+          "ipa": "/ˈsel foʊn ˌlɑːt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "parking dla oczekujących",
+          "definition": "A free parking area where drivers wait until the passenger they are picking up calls them.",
+          "register": "neutralny",
+          "contextPl": "Odbiór z lotniska",
+          "natural": "",
+          "forms": "cell phone lots",
+          "collocations": "wait in the cell phone lot",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Typowo amerykański zwyczaj: kierowca czeka na parkingu, aż pasażer zadzwoni z hali przylotów.",
+          "examples": [
+            {
+              "en": "I'm waiting in the cell phone lot, so call me when you have your bags.",
+              "pl": "Czekam na parkingu dla oczekujących, więc zadzwoń, jak będziesz mieć bagaż.",
+              "focusEn": "cell phone lot",
+              "focusPl": "parkingu dla oczekujących"
+            },
+            {
+              "en": "The cell phone lot is only three minutes from the arrivals door.",
+              "pl": "Parking dla oczekujących jest tylko trzy minuty od wyjścia z hali przylotów.",
+              "focusEn": "cell phone lot",
+              "focusPl": "Parking dla oczekujących"
+            }
+          ],
+          "acceptedAnswers": [
+            "cell phone lot"
+          ],
+          "acceptedTranslations": [
+            "parking dla oczekujących",
+            "darmowy parking dla odbierających"
+          ]
+        },
+        {
+          "id": "airport.lost-and-found",
+          "term": "lost and found",
+          "ipa": "/ˌlɔːst ən ˈfaʊnd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "biuro rzeczy znalezionych",
+          "definition": "An office where things that people have left behind are kept.",
+          "register": "neutralny",
+          "contextPl": "Problemy z bagażem",
+          "natural": "",
+          "forms": "",
+          "collocations": "check lost and found; turn something in to lost and found",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA bez rodzajnika: „Call lost and found”.",
+          "examples": [
+            {
+              "en": "I left my jacket on the plane, so I called lost and found.",
+              "pl": "Zostawiłem kurtkę w samolocie, więc zadzwoniłem do biura rzeczy znalezionych.",
+              "focusEn": "lost and found",
+              "focusPl": "biura rzeczy znalezionych"
+            },
+            {
+              "en": "Someone turned in my phone to the airport lost and found by baggage claim.",
+              "pl": "Ktoś oddał mój telefon do lotniskowego biura rzeczy znalezionych przy odbiorze bagażu.",
+              "focusEn": "lost and found",
+              "focusPl": "biura rzeczy znalezionych"
+            }
+          ],
+          "acceptedAnswers": [
+            "lost and found",
+            "lost property"
+          ],
+          "acceptedTranslations": [
+            "biuro rzeczy znalezionych",
+            "rzeczy znalezione"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airport.phrases",
+      "namePl": "Zwroty i idiomy",
+      "scenePl": "Rozmowy w samochodzie w drodze na lotnisko i w terminalu przed odlotem",
+      "entries": [
+        {
+          "id": "airport.make-it",
+          "term": "make it",
+          "ipa": "/ˈmeɪk ɪt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zdążyć",
+          "definition": "To arrive in time for something.",
+          "register": "potoczny",
+          "contextPl": "Pośpiech przed lotem",
+          "natural": "",
+          "forms": "made it",
+          "collocations": "make it to the gate; make it on time; barely make it",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„We made it!” – Zdążyliśmy!",
+          "examples": [
+            {
+              "en": "Do you think we'll make it to the gate before they close the doors?",
+              "pl": "Myślisz, że zdążymy do bramki, zanim zamkną drzwi?",
+              "focusEn": "make it",
+              "focusPl": "zdążymy"
+            },
+            {
+              "en": "We made it with only five minutes to spare.",
+              "pl": "Zdążyliśmy, mając zaledwie pięć minut zapasu.",
+              "focusEn": "made it",
+              "focusPl": "Zdążyliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "make it"
+          ],
+          "acceptedTranslations": [
+            "zdążyć",
+            "dotrzeć na czas",
+            "zdążać"
+          ]
+        },
+        {
+          "id": "airport.running-late",
+          "term": "running late",
+          "ipa": "/ˌrʌnɪŋ ˈleɪt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "spóźniać się",
+          "definition": "Later than you planned to be.",
+          "register": "potoczny",
+          "contextPl": "Pośpiech przed lotem",
+          "natural": "",
+          "forms": "run late – ran late",
+          "collocations": "be running late; running a little late",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Forma ciągła: „I'm running late”, a nie „I run late”.",
+          "examples": [
+            {
+              "en": "Sorry, I'm running late, the traffic to the airport is terrible.",
+              "pl": "Przepraszam, spóźniam się, na drodze na lotnisko są straszne korki.",
+              "focusEn": "running late",
+              "focusPl": "spóźniam się"
+            },
+            {
+              "en": "Our driver was running late, so we almost missed check-in.",
+              "pl": "Nasz kierowca się spóźniał, więc prawie nie zdążyliśmy na odprawę.",
+              "focusEn": "running late",
+              "focusPl": "się spóźniał"
+            }
+          ],
+          "acceptedAnswers": [
+            "running late"
+          ],
+          "acceptedTranslations": [
+            "spóźniać się",
+            "być spóźnionym",
+            "mieć opóźnienie"
+          ]
+        },
+        {
+          "id": "airport.catch-a-flight",
+          "term": "catch a flight",
+          "ipa": "/ˌkætʃ ə ˈflaɪt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zdążyć na samolot",
+          "definition": "To get on a flight, or to leave to take one.",
+          "register": "potoczny",
+          "contextPl": "Pośpiech przed lotem",
+          "natural": "",
+          "forms": "caught a flight",
+          "collocations": "catch an early flight; catch a connecting flight",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„I have a flight to catch” – muszę zdążyć na samolot.",
+          "examples": [
+            {
+              "en": "Sorry, I can't talk now, I have a flight to catch.",
+              "pl": "Przepraszam, nie mogę teraz rozmawiać, muszę zdążyć na samolot.",
+              "focusEn": "flight to catch",
+              "focusPl": "muszę zdążyć na samolot"
+            },
+            {
+              "en": "If we hurry, we can still catch a flight to Dallas tonight.",
+              "pl": "Jeśli się pospieszymy, jeszcze dziś zdążymy na samolot do Dallas.",
+              "focusEn": "catch a flight",
+              "focusPl": "zdążymy na samolot"
+            }
+          ],
+          "acceptedAnswers": [
+            "catch a flight"
+          ],
+          "acceptedTranslations": [
+            "zdążyć na samolot",
+            "złapać samolot",
+            "polecieć"
+          ]
+        },
+        {
+          "id": "airport.fly-out",
+          "term": "fly out",
+          "ipa": "/ˌflaɪ ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wylatywać",
+          "definition": "To leave a place by plane.",
+          "register": "potoczny",
+          "contextPl": "Plany podróży",
+          "natural": "",
+          "forms": "flies out – flew out – flown out",
+          "collocations": "fly out of Newark; fly out tomorrow; fly out early",
+          "synonyms": "leave",
+          "antonyms": "fly in",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We fly out tomorrow at seven, so let's get to the airport by five.",
+              "pl": "Wylatujemy jutro o siódmej, więc bądźmy na lotnisku do piątej.",
+              "focusEn": "fly out",
+              "focusPl": "Wylatujemy"
+            },
+            {
+              "en": "Our cousins flew out of this terminal last week, so we know where to park.",
+              "pl": "Nasi kuzyni wylatywali z tego terminalu w zeszłym tygodniu, więc wiemy, gdzie zaparkować.",
+              "focusEn": "flew out",
+              "focusPl": "wylatywali"
+            }
+          ],
+          "acceptedAnswers": [
+            "fly out"
+          ],
+          "acceptedTranslations": [
+            "wylatywać",
+            "wylecieć",
+            "odlecieć"
+          ]
+        },
+        {
+          "id": "airport.see-off",
+          "term": "see off",
+          "ipa": "/ˌsiː ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "odprowadzić",
+          "definition": "To go with someone to the place where they leave and say goodbye.",
+          "register": "neutralny",
+          "contextPl": "Pożegnania na lotnisku",
+          "natural": "",
+          "forms": "sees off – saw off – seen off",
+          "collocations": "see someone off at the airport",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Dopełnienie zwykle w środku: „see someone off”.",
+          "examples": [
+            {
+              "en": "My parents came to the airport to see me off.",
+              "pl": "Rodzice przyjechali na lotnisko, żeby mnie odprowadzić.",
+              "focusEn": "see me off",
+              "focusPl": "mnie odprowadzić"
+            },
+            {
+              "en": "We can only see you off until security.",
+              "pl": "Możemy cię odprowadzić tylko do kontroli bezpieczeństwa.",
+              "focusEn": "see you off",
+              "focusPl": "cię odprowadzić"
+            }
+          ],
+          "acceptedAnswers": [
+            "see off"
+          ],
+          "acceptedTranslations": [
+            "odprowadzić",
+            "odprowadzać",
+            "pożegnać na lotnisku"
+          ]
+        },
+        {
+          "id": "airport.cut-it-close",
+          "term": "cut it close",
+          "ipa": "/ˌkʌt ɪt ˈkloʊs/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zostawić sobie mało czasu",
+          "definition": "To leave yourself very little time to do something.",
+          "register": "potoczny",
+          "contextPl": "Pośpiech przed lotem",
+          "natural": "",
+          "forms": "cut it close – cutting it close",
+          "collocations": "really cut it close",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też „cut it fine” (bardziej brytyjskie).",
+          "examples": [
+            {
+              "en": "Leaving forty minutes before the flight is really cutting it close.",
+              "pl": "Wyjście czterdzieści minut przed lotem to naprawdę liczenie czasu na styk.",
+              "focusEn": "cutting it close",
+              "focusPl": "liczenie czasu na styk"
+            },
+            {
+              "en": "We cut it close and reached the gate as the last group was boarding.",
+              "pl": "Zostawiliśmy sobie mało czasu i dotarliśmy do bramki, kiedy wchodziła ostatnia grupa.",
+              "focusEn": "cut it close",
+              "focusPl": "Zostawiliśmy sobie mało czasu"
+            }
+          ],
+          "acceptedAnswers": [
+            "cut it close",
+            "cut it fine"
+          ],
+          "acceptedTranslations": [
+            "zostawić sobie mało czasu",
+            "robić coś na styk",
+            "liczyć czas na styk"
+          ]
+        },
+        {
+          "id": "airport.have-a-safe-flight",
+          "term": "have a safe flight",
+          "ipa": "/ˌhæv ə ˌseɪf ˈflaɪt/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "szczęśliwego lotu",
+          "definition": "A friendly thing to say to someone who is going to fly.",
+          "register": "neutralny",
+          "contextPl": "Pożegnania na lotnisku",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hug me one more time and have a safe flight!",
+              "pl": "Przytul mnie jeszcze raz i szczęśliwego lotu!",
+              "focusEn": "have a safe flight",
+              "focusPl": "szczęśliwego lotu"
+            },
+            {
+              "en": "The agent at the counter smiled and told me to have a safe flight.",
+              "pl": "Pracownica przy stanowisku uśmiechnęła się i życzyła mi szczęśliwego lotu.",
+              "focusEn": "have a safe flight",
+              "focusPl": "szczęśliwego lotu"
+            }
+          ],
+          "acceptedAnswers": [
+            "have a safe flight",
+            "safe flight",
+            "have a good flight"
+          ],
+          "acceptedTranslations": [
+            "szczęśliwego lotu",
+            "udanego lotu",
+            "bezpiecznego lotu",
+            "dobrego lotu"
+          ]
+        },
+        {
+          "id": "airport.travel-light",
+          "term": "travel light",
+          "ipa": "/ˌtrævl ˈlaɪt/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "podróżować z małym bagażem",
+          "definition": "To take very few bags or things with you on a trip.",
+          "register": "neutralny",
+          "contextPl": "Plany podróży",
+          "natural": "",
+          "forms": "traveled light",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I always travel light, so I never wait at baggage claim.",
+              "pl": "Zawsze podróżuję z małym bagażem, więc nigdy nie czekam na odbiór bagażu.",
+              "focusEn": "travel light",
+              "focusPl": "podróżuję z małym bagażem"
+            },
+            {
+              "en": "If you travel light, you can skip the check-in line completely.",
+              "pl": "Jeśli podróżujesz z małym bagażem, możesz zupełnie ominąć kolejkę do odprawy.",
+              "focusEn": "travel light",
+              "focusPl": "podróżujesz z małym bagażem"
+            }
+          ],
+          "acceptedAnswers": [
+            "travel light",
+            "pack light"
+          ],
+          "acceptedTranslations": [
+            "podróżować z małym bagażem",
+            "podróżować na lekko",
+            "mieć mało bagażu"
+          ]
+        },
+        {
+          "id": "airport.head-to",
+          "term": "head to",
+          "ipa": "/ˈhed tuː/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "kierować się do",
+          "definition": "To go toward a place.",
+          "register": "potoczny",
+          "contextPl": "Poruszanie się po lotnisku",
+          "natural": "",
+          "forms": "heads – headed – headed",
+          "collocations": "head to the gate; head to security",
+          "synonyms": "go to",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We should head to the gate, they're boarding in ten minutes.",
+              "pl": "Powinniśmy ruszać do bramki, za dziesięć minut zaczyna się wejście na pokład.",
+              "focusEn": "head to",
+              "focusPl": "ruszać do"
+            },
+            {
+              "en": "After check-in, we headed to security.",
+              "pl": "Po odprawie skierowaliśmy się do kontroli bezpieczeństwa.",
+              "focusEn": "headed to",
+              "focusPl": "skierowaliśmy się do"
+            }
+          ],
+          "acceptedAnswers": [
+            "head to",
+            "go to"
+          ],
+          "acceptedTranslations": [
+            "kierować się do",
+            "iść do",
+            "udać się do",
+            "ruszać do"
+          ]
+        },
+        {
+          "id": "airport.in-transit",
+          "term": "in transit",
+          "ipa": "/ɪn ˈtrænzɪt/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "w tranzycie",
+          "definition": "Traveling through a place on the way to somewhere else.",
+          "register": "formalny",
+          "contextPl": "Przesiadki",
+          "natural": "",
+          "forms": "",
+          "collocations": "passengers in transit; in transit through Frankfurt",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Passengers in transit should follow the green signs to their next flight.",
+              "pl": "Pasażerowie w tranzycie powinni iść za zielonymi znakami do kolejnego lotu.",
+              "focusEn": "in transit",
+              "focusPl": "w tranzycie"
+            },
+            {
+              "en": "I was in transit for twelve hours and never left the airport.",
+              "pl": "Byłem w tranzycie dwanaście godzin i ani razu nie wyszedłem z lotniska.",
+              "focusEn": "in transit",
+              "focusPl": "w tranzycie"
+            }
+          ],
+          "acceptedAnswers": [
+            "in transit"
+          ],
+          "acceptedTranslations": [
+            "w tranzycie",
+            "tranzytem",
+            "w trakcie przesiadki"
+          ]
+        }
+      ]
+    }
+  ]
+}

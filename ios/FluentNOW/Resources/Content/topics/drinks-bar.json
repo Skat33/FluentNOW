@@ -1,0 +1,3026 @@
+{
+  "schemaVersion": 1,
+  "id": "drinks-bar",
+  "namePl": "Napoje i bar",
+  "nameEn": "Drinks and Bars",
+  "group": "food",
+  "symbol": "wineglass",
+  "summaryPl": "Napoje bezalkoholowe, zamawianie przy barze, piwo i wino, koktajle, toasty i skutki picia.",
+  "aliases": [
+    "napoje",
+    "bar",
+    "pub",
+    "piwo",
+    "wino",
+    "drinki",
+    "koktajle",
+    "picie",
+    "drinks",
+    "bar",
+    "pub",
+    "beverages"
+  ],
+  "categories": [
+    {
+      "id": "drinks-bar.soft-drinks",
+      "namePl": "Napoje bezalkoholowe",
+      "scenePl": "Zamawianie napojów do lunchu w barze z kanapkami",
+      "entries": [
+        {
+          "id": "drinks-bar.drink",
+          "term": "drink",
+          "ipa": "/drɪŋk/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "napój",
+          "definition": "A liquid that you can drink.",
+          "register": "neutralny",
+          "contextPl": "Wybór czegoś do picia",
+          "natural": "",
+          "forms": "drinks",
+          "collocations": "a cold drink; soft drink",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I get a cold drink with my sandwich?",
+              "pl": "Mogę prosić zimny napój do kanapki?",
+              "focusEn": "drink",
+              "focusPl": "napój"
+            },
+            {
+              "en": "Drinks are in the cooler by the register.",
+              "pl": "Napoje są w lodówce przy kasie.",
+              "focusEn": "Drinks",
+              "focusPl": "Napoje"
+            }
+          ],
+          "acceptedAnswers": [
+            "drink"
+          ],
+          "acceptedTranslations": [
+            "napój",
+            "coś do picia"
+          ]
+        },
+        {
+          "id": "drinks-bar.water",
+          "term": "water",
+          "ipa": "/ˈwɔːtər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "woda",
+          "definition": "The clear liquid that people drink to live.",
+          "register": "neutralny",
+          "contextPl": "Najprostszy napój",
+          "natural": "",
+          "forms": "",
+          "collocations": "a bottle of water; a glass of water",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Just a bottle of water for me, thanks.",
+              "pl": "Dla mnie tylko butelka wody, dzięki.",
+              "focusEn": "water",
+              "focusPl": "wody"
+            },
+            {
+              "en": "Can I get a cup of water with ice?",
+              "pl": "Mogę prosić kubek wody z lodem?",
+              "focusEn": "water",
+              "focusPl": "wody"
+            }
+          ],
+          "acceptedAnswers": [
+            "water"
+          ],
+          "acceptedTranslations": [
+            "woda"
+          ]
+        },
+        {
+          "id": "drinks-bar.juice",
+          "term": "juice",
+          "ipa": "/dʒuːs/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "sok",
+          "definition": "The liquid from fruit or vegetables.",
+          "register": "neutralny",
+          "contextPl": "Napoje owocowe",
+          "natural": "",
+          "forms": "juices",
+          "collocations": "orange juice; apple juice; fresh-squeezed juice",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is the orange juice here fresh-squeezed?",
+              "pl": "Czy sok pomarańczowy jest tu świeżo wyciskany?",
+              "focusEn": "juice",
+              "focusPl": "sok"
+            },
+            {
+              "en": "My son wants apple juice with his grilled cheese.",
+              "pl": "Syn chce sok jabłkowy do tostu z serem.",
+              "focusEn": "juice",
+              "focusPl": "sok"
+            }
+          ],
+          "acceptedAnswers": [
+            "juice"
+          ],
+          "acceptedTranslations": [
+            "sok"
+          ]
+        },
+        {
+          "id": "drinks-bar.ice",
+          "term": "ice",
+          "ipa": "/aɪs/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "lód",
+          "definition": "Frozen water, put in drinks to make them cold.",
+          "register": "neutralny",
+          "contextPl": "Prośba o napój z lodem lub bez",
+          "natural": "",
+          "forms": "",
+          "collocations": "no ice; light ice; extra ice",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could I have that with no ice, please?",
+              "pl": "Mogę prosić bez lodu?",
+              "focusEn": "ice",
+              "focusPl": "lodu"
+            },
+            {
+              "en": "There's so much ice in this cup that there's hardly any soda.",
+              "pl": "W tym kubku jest tyle lodu, że prawie nie ma napoju.",
+              "focusEn": "ice",
+              "focusPl": "lodu"
+            }
+          ],
+          "acceptedAnswers": [
+            "ice"
+          ],
+          "acceptedTranslations": [
+            "lód",
+            "kostki lodu"
+          ]
+        },
+        {
+          "id": "drinks-bar.soda",
+          "term": "soda",
+          "ipa": "/ˈsoʊdə/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "napój gazowany",
+          "definition": "A sweet carbonated drink with bubbles.",
+          "register": "neutralny",
+          "contextPl": "Napoje słodzone",
+          "natural": "pop",
+          "forms": "sodas",
+          "collocations": "a can of soda; diet soda",
+          "synonyms": "soft drink; pop",
+          "antonyms": "",
+          "notePl": "W części USA mówi się „pop”, na Południu nawet „coke” o każdym takim napoju.",
+          "examples": [
+            {
+              "en": "What kinds of soda do you have?",
+              "pl": "Jakie macie napoje gazowane?",
+              "focusEn": "soda",
+              "focusPl": "napoje gazowane"
+            },
+            {
+              "en": "A large soda costs only a dollar more.",
+              "pl": "Duży napój gazowany kosztuje tylko dolara więcej.",
+              "focusEn": "soda",
+              "focusPl": "napój gazowany"
+            }
+          ],
+          "acceptedAnswers": [
+            "soda",
+            "pop",
+            "soft drink"
+          ],
+          "acceptedTranslations": [
+            "napój gazowany"
+          ]
+        },
+        {
+          "id": "drinks-bar.lemonade",
+          "term": "lemonade",
+          "ipa": "/ˌlɛməˈneɪd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "lemoniada",
+          "definition": "A cold drink made from lemon juice, water and sugar.",
+          "register": "neutralny",
+          "contextPl": "Orzeźwiające napoje",
+          "natural": "",
+          "forms": "",
+          "collocations": "homemade lemonade; pink lemonade",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA „lemonade” to niegazowana lemoniada z cytryn.",
+          "examples": [
+            {
+              "en": "The homemade lemonade is perfect on a hot day.",
+              "pl": "Domowa lemoniada jest idealna na upalny dzień.",
+              "focusEn": "lemonade",
+              "focusPl": "lemoniada"
+            },
+            {
+              "en": "I'll have a strawberry lemonade with my wrap.",
+              "pl": "Wezmę lemoniadę truskawkową do wrapa.",
+              "focusEn": "lemonade",
+              "focusPl": "lemoniadę"
+            }
+          ],
+          "acceptedAnswers": [
+            "lemonade"
+          ],
+          "acceptedTranslations": [
+            "lemoniada"
+          ]
+        },
+        {
+          "id": "drinks-bar.iced-tea",
+          "term": "iced tea",
+          "ipa": "/ˌaɪst ˈtiː/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "mrożona herbata",
+          "definition": "Cold tea served with ice.",
+          "register": "neutralny",
+          "contextPl": "Popularny napój do posiłków w USA",
+          "natural": "",
+          "forms": "",
+          "collocations": "sweet tea; unsweetened iced tea",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is the iced tea sweetened or unsweetened?",
+              "pl": "Mrożona herbata jest słodzona czy niesłodzona?",
+              "focusEn": "iced tea",
+              "focusPl": "Mrożona herbata"
+            },
+            {
+              "en": "In the South, people drink sweet iced tea with every meal.",
+              "pl": "Na Południu ludzie piją słodką mrożoną herbatę do każdego posiłku.",
+              "focusEn": "iced tea",
+              "focusPl": "mrożoną herbatę"
+            }
+          ],
+          "acceptedAnswers": [
+            "iced tea"
+          ],
+          "acceptedTranslations": [
+            "mrożona herbata",
+            "herbata z lodem"
+          ]
+        },
+        {
+          "id": "drinks-bar.sparkling-water",
+          "term": "sparkling water",
+          "ipa": "/ˌspɑːrklɪŋ ˈwɔːtər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "woda gazowana",
+          "definition": "Water with bubbles in it.",
+          "register": "neutralny",
+          "contextPl": "Wybór wody",
+          "natural": "seltzer",
+          "forms": "",
+          "collocations": "a can of sparkling water",
+          "synonyms": "seltzer; club soda",
+          "antonyms": "still water",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have sparkling water, or just still?",
+              "pl": "Macie wodę gazowaną, czy tylko niegazowaną?",
+              "focusEn": "sparkling water",
+              "focusPl": "wodę gazowaną"
+            },
+            {
+              "en": "I switched from soda to sparkling water with lemon.",
+              "pl": "Przerzuciłem się z napojów gazowanych na wodę gazowaną z cytryną.",
+              "focusEn": "sparkling water",
+              "focusPl": "wodę gazowaną"
+            }
+          ],
+          "acceptedAnswers": [
+            "sparkling water",
+            "seltzer",
+            "club soda"
+          ],
+          "acceptedTranslations": [
+            "woda gazowana",
+            "woda z bąbelkami"
+          ]
+        },
+        {
+          "id": "drinks-bar.tap-water",
+          "term": "tap water",
+          "ipa": "/ˈtæp ˌwɔːtər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "woda z kranu",
+          "definition": "Water that comes from a faucet.",
+          "register": "neutralny",
+          "contextPl": "Darmowa woda w lokalu",
+          "natural": "",
+          "forms": "",
+          "collocations": "a glass of tap water",
+          "synonyms": "",
+          "antonyms": "bottled water",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Tap water is fine; I don't need a bottle.",
+              "pl": "Woda z kranu wystarczy, nie potrzebuję butelki.",
+              "focusEn": "Tap water",
+              "focusPl": "Woda z kranu"
+            },
+            {
+              "en": "Is the tap water safe to drink here?",
+              "pl": "Czy woda z kranu nadaje się tu do picia?",
+              "focusEn": "tap water",
+              "focusPl": "woda z kranu"
+            }
+          ],
+          "acceptedAnswers": [
+            "tap water"
+          ],
+          "acceptedTranslations": [
+            "woda z kranu",
+            "kranówka"
+          ]
+        },
+        {
+          "id": "drinks-bar.smoothie",
+          "term": "smoothie",
+          "ipa": "/ˈsmuːði/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "koktajl owocowy",
+          "definition": "A thick cold drink made from blended fruit, often with yogurt or milk.",
+          "register": "neutralny",
+          "contextPl": "Zdrowe napoje",
+          "natural": "",
+          "forms": "smoothies",
+          "collocations": "banana smoothie; green smoothie",
+          "synonyms": "shake",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll get a banana smoothie instead of coffee.",
+              "pl": "Wezmę koktajl bananowy zamiast kawy.",
+              "focusEn": "smoothie",
+              "focusPl": "koktajl"
+            },
+            {
+              "en": "The green smoothie has spinach, apple, and ginger.",
+              "pl": "Zielone smoothie ma szpinak, jabłko i imbir.",
+              "focusEn": "smoothie",
+              "focusPl": "smoothie"
+            }
+          ],
+          "acceptedAnswers": [
+            "smoothie"
+          ],
+          "acceptedTranslations": [
+            "koktajl owocowy",
+            "smoothie",
+            "koktajl"
+          ]
+        },
+        {
+          "id": "drinks-bar.diet-soda",
+          "term": "diet soda",
+          "ipa": "/ˌdaɪət ˈsoʊdə/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "napój bez cukru",
+          "definition": "A carbonated soft drink made with sweeteners instead of sugar.",
+          "register": "neutralny",
+          "contextPl": "Napoje bez kalorii",
+          "natural": "diet",
+          "forms": "",
+          "collocations": "a can of diet soda",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is this regular or diet soda?",
+              "pl": "To zwykły napój gazowany czy wersja bez cukru?",
+              "focusEn": "diet soda",
+              "focusPl": "wersja bez cukru"
+            },
+            {
+              "en": "She always orders a diet soda with her burger.",
+              "pl": "Do burgera zawsze zamawia napój bez cukru.",
+              "focusEn": "diet soda",
+              "focusPl": "napój bez cukru"
+            }
+          ],
+          "acceptedAnswers": [
+            "diet soda",
+            "diet"
+          ],
+          "acceptedTranslations": [
+            "napój bez cukru",
+            "napój light",
+            "napój dietetyczny"
+          ]
+        },
+        {
+          "id": "drinks-bar.energy-drink",
+          "term": "energy drink",
+          "ipa": "/ˈɛnərdʒi ˌdrɪŋk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "napój energetyczny",
+          "definition": "A drink with a lot of caffeine and sugar that gives you energy.",
+          "register": "neutralny",
+          "contextPl": "Napoje pobudzające",
+          "natural": "",
+          "forms": "energy drinks",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Energy drinks are in the cooler next to the water.",
+              "pl": "Napoje energetyczne są w lodówce obok wody.",
+              "focusEn": "Energy drinks",
+              "focusPl": "Napoje energetyczne"
+            },
+            {
+              "en": "I grabbed an energy drink with my lunch to stay awake.",
+              "pl": "Do lunchu wziąłem napój energetyczny, żeby nie zasnąć.",
+              "focusEn": "energy drink",
+              "focusPl": "napój energetyczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "energy drink"
+          ],
+          "acceptedTranslations": [
+            "napój energetyczny",
+            "energetyk"
+          ]
+        },
+        {
+          "id": "drinks-bar.unsweetened",
+          "term": "unsweetened",
+          "ipa": "/ˌʌnˈswiːtənd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "niesłodzony",
+          "definition": "With no sugar added.",
+          "register": "neutralny",
+          "contextPl": "Wybór napoju bez cukru",
+          "natural": "",
+          "forms": "",
+          "collocations": "unsweetened tea; unsweetened almond milk",
+          "synonyms": "",
+          "antonyms": "sweetened",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have any unsweetened iced tea today?",
+              "pl": "Macie dziś niesłodzoną mrożoną herbatę?",
+              "focusEn": "unsweetened",
+              "focusPl": "niesłodzoną"
+            },
+            {
+              "en": "The unsweetened lemonade was way too sour for me.",
+              "pl": "Niesłodzona lemoniada była dla mnie zdecydowanie za kwaśna.",
+              "focusEn": "unsweetened",
+              "focusPl": "Niesłodzona"
+            }
+          ],
+          "acceptedAnswers": [
+            "unsweetened"
+          ],
+          "acceptedTranslations": [
+            "niesłodzony",
+            "bez cukru"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drinks-bar.at-the-bar",
+      "namePl": "Przy barze",
+      "scenePl": "Zamawianie drinków przy barze w piątek wieczorem",
+      "entries": [
+        {
+          "id": "drinks-bar.bar",
+          "term": "bar",
+          "ipa": "/bɑːr/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "bar",
+          "definition": "A place where drinks are sold, or the long counter where they are served.",
+          "register": "neutralny",
+          "contextPl": "Wyjście do lokalu",
+          "natural": "",
+          "forms": "bars",
+          "collocations": "sit at the bar; a sports bar",
+          "synonyms": "pub",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's sit at the bar instead of a table.",
+              "pl": "Usiądźmy przy barze zamiast przy stoliku.",
+              "focusEn": "bar",
+              "focusPl": "barze"
+            },
+            {
+              "en": "This bar gets really crowded after nine.",
+              "pl": "Ten bar robi się naprawdę zatłoczony po dziewiątej.",
+              "focusEn": "bar",
+              "focusPl": "bar"
+            }
+          ],
+          "acceptedAnswers": [
+            "bar"
+          ],
+          "acceptedTranslations": [
+            "bar",
+            "pub",
+            "lada"
+          ]
+        },
+        {
+          "id": "drinks-bar.drink-2",
+          "term": "drink",
+          "ipa": "/drɪŋk/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "drink",
+          "definition": "An alcoholic drink.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie alkoholu w barze",
+          "natural": "",
+          "forms": "drinks",
+          "collocations": "order a drink; strong drinks; get a drink",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "These drinks are much stronger than they look.",
+              "pl": "Te drinki są dużo mocniejsze, niż wyglądają.",
+              "focusEn": "drinks",
+              "focusPl": "drinki"
+            },
+            {
+              "en": "The drinks here are strong but expensive.",
+              "pl": "Drinki są tu mocne, ale drogie.",
+              "focusEn": "drinks",
+              "focusPl": "Drinki"
+            }
+          ],
+          "acceptedAnswers": [
+            "drink"
+          ],
+          "acceptedTranslations": [
+            "drink",
+            "kieliszek",
+            "coś do picia"
+          ]
+        },
+        {
+          "id": "drinks-bar.beer",
+          "term": "beer",
+          "ipa": "/bɪr/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "piwo",
+          "definition": "An alcoholic drink made from grain and hops.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie piwa",
+          "natural": "",
+          "forms": "beers",
+          "collocations": "a cold beer; a glass of beer",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll have a beer; what do you have on tap?",
+              "pl": "Wezmę piwo, co macie z beczki?",
+              "focusEn": "beer",
+              "focusPl": "piwo"
+            },
+            {
+              "en": "Two beers and a glass of water, please.",
+              "pl": "Poproszę dwa piwa i szklankę wody.",
+              "focusEn": "beers",
+              "focusPl": "piwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "beer"
+          ],
+          "acceptedTranslations": [
+            "piwo"
+          ]
+        },
+        {
+          "id": "drinks-bar.wine",
+          "term": "wine",
+          "ipa": "/waɪn/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "wino",
+          "definition": "An alcoholic drink made from grapes.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie wina",
+          "natural": "",
+          "forms": "wines",
+          "collocations": "red wine; white wine; a glass of wine",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you serve wine by the glass?",
+              "pl": "Podajecie wino na kieliszki?",
+              "focusEn": "wine",
+              "focusPl": "wino"
+            },
+            {
+              "en": "The bar has a short list of red and white wine.",
+              "pl": "Bar ma krótką listę czerwonego i białego wina.",
+              "focusEn": "wine",
+              "focusPl": "wina"
+            }
+          ],
+          "acceptedAnswers": [
+            "wine"
+          ],
+          "acceptedTranslations": [
+            "wino"
+          ]
+        },
+        {
+          "id": "drinks-bar.bartender",
+          "term": "bartender",
+          "ipa": "/ˈbɑːrˌtɛndər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "barman",
+          "definition": "A person who makes and serves drinks at a bar.",
+          "register": "neutralny",
+          "contextPl": "Obsługa przy barze",
+          "natural": "",
+          "forms": "bartenders",
+          "collocations": "ask the bartender; tip the bartender",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii częściej „barman” lub „barmaid”.",
+          "examples": [
+            {
+              "en": "Wave at the bartender so she sees us.",
+              "pl": "Pomachaj do barmanki, żeby nas zauważyła.",
+              "focusEn": "bartender",
+              "focusPl": "barmanki"
+            },
+            {
+              "en": "Our bartender recommended a local beer.",
+              "pl": "Barman polecił nam lokalne piwo.",
+              "focusEn": "bartender",
+              "focusPl": "Barman"
+            }
+          ],
+          "acceptedAnswers": [
+            "bartender"
+          ],
+          "acceptedTranslations": [
+            "barman",
+            "barmanka"
+          ]
+        },
+        {
+          "id": "drinks-bar.id",
+          "term": "ID",
+          "ipa": "/ˌaɪˈdiː/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "dowód",
+          "definition": "A card that shows who you are and how old you are.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie wieku przed sprzedażą alkoholu",
+          "natural": "",
+          "forms": "IDs",
+          "collocations": "show your ID; check someone's ID",
+          "synonyms": "identification",
+          "antonyms": "",
+          "notePl": "W USA alkohol można kupić od 21 lat, więc dowód sprawdza się bardzo często.",
+          "examples": [
+            {
+              "en": "Can I see your ID, please?",
+              "pl": "Mogę zobaczyć pani dowód?",
+              "focusEn": "ID",
+              "focusPl": "dowód"
+            },
+            {
+              "en": "The bouncer checks everyone's ID at the door.",
+              "pl": "Bramkarz sprawdza dowody wszystkich przy drzwiach.",
+              "focusEn": "ID",
+              "focusPl": "dowody"
+            }
+          ],
+          "acceptedAnswers": [
+            "ID",
+            "identification"
+          ],
+          "acceptedTranslations": [
+            "dowód",
+            "dowód osobisty",
+            "dokument tożsamości"
+          ]
+        },
+        {
+          "id": "drinks-bar.on-tap",
+          "term": "on tap",
+          "ipa": "/ɑːn ˈtæp/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "z beczki",
+          "definition": "Served from a large container through a tap, not from a bottle.",
+          "register": "neutralny",
+          "contextPl": "Piwo z nalewaka",
+          "natural": "",
+          "forms": "",
+          "collocations": "beer on tap; what's on tap",
+          "synonyms": "on draft",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What beers do you have on tap tonight?",
+              "pl": "Jakie piwa macie dziś z beczki?",
+              "focusEn": "on tap",
+              "focusPl": "z beczki"
+            },
+            {
+              "en": "Everything on tap is brewed in this state.",
+              "pl": "Wszystko z nalewaka jest warzone w tym stanie.",
+              "focusEn": "on tap",
+              "focusPl": "z nalewaka"
+            }
+          ],
+          "acceptedAnswers": [
+            "on tap",
+            "on draft"
+          ],
+          "acceptedTranslations": [
+            "z beczki",
+            "z nalewaka"
+          ]
+        },
+        {
+          "id": "drinks-bar.happy-hour",
+          "term": "happy hour",
+          "ipa": "/ˈhæpi ˌaʊər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "happy hour",
+          "definition": "A time, usually after work, when drinks in a bar are cheaper.",
+          "register": "neutralny",
+          "contextPl": "Tańsze drinki po pracy",
+          "natural": "",
+          "forms": "happy hours",
+          "collocations": "during happy hour; happy hour specials",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Happy hour ends at seven, so let's order now.",
+              "pl": "Happy hour kończy się o siódmej, więc zamówmy teraz.",
+              "focusEn": "Happy hour",
+              "focusPl": "Happy hour"
+            },
+            {
+              "en": "During happy hour, all beers are half price.",
+              "pl": "W czasie happy hour wszystkie piwa są o połowę tańsze.",
+              "focusEn": "happy hour",
+              "focusPl": "happy hour"
+            }
+          ],
+          "acceptedAnswers": [
+            "happy hour"
+          ],
+          "acceptedTranslations": [
+            "happy hour",
+            "godziny tańszych drinków"
+          ]
+        },
+        {
+          "id": "drinks-bar.round",
+          "term": "round",
+          "ipa": "/raʊnd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kolejka",
+          "definition": "Drinks bought for everyone in a group at one time.",
+          "register": "potoczny",
+          "contextPl": "Stawianie drinków całej grupie",
+          "natural": "",
+          "forms": "rounds",
+          "collocations": "buy a round; another round; this round is on me",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Put your wallet away; this round is on me.",
+              "pl": "Schowaj portfel, tę kolejkę ja stawiam.",
+              "focusEn": "round",
+              "focusPl": "kolejkę"
+            },
+            {
+              "en": "We ordered another round before the band started.",
+              "pl": "Zamówiliśmy kolejną kolejkę, zanim zaczął grać zespół.",
+              "focusEn": "round",
+              "focusPl": "kolejkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "round"
+          ],
+          "acceptedTranslations": [
+            "kolejka",
+            "runda"
+          ]
+        },
+        {
+          "id": "drinks-bar.tab",
+          "term": "tab",
+          "ipa": "/tæb/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rachunek",
+          "definition": "A bill for drinks that you pay at the end of the night.",
+          "register": "potoczny",
+          "contextPl": "Płacenie w barze na koniec",
+          "natural": "",
+          "forms": "tabs",
+          "collocations": "open a tab; close out a tab; put it on my tab",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you want to open a tab or pay now?",
+              "pl": "Chce pan otworzyć rachunek, czy zapłacić od razu?",
+              "focusEn": "tab",
+              "focusPl": "rachunek"
+            },
+            {
+              "en": "I closed my tab and left a tip for the bartender.",
+              "pl": "Zamknąłem rachunek i zostawiłem napiwek dla barmana.",
+              "focusEn": "tab",
+              "focusPl": "rachunek"
+            }
+          ],
+          "acceptedAnswers": [
+            "tab"
+          ],
+          "acceptedTranslations": [
+            "rachunek",
+            "otwarty rachunek"
+          ]
+        },
+        {
+          "id": "drinks-bar.bouncer",
+          "term": "bouncer",
+          "ipa": "/ˈbaʊnsər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "bramkarz",
+          "definition": "A person who controls who enters a bar or club.",
+          "register": "potoczny",
+          "contextPl": "Wejście do klubu lub baru",
+          "natural": "",
+          "forms": "bouncers",
+          "collocations": "",
+          "synonyms": "doorman",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bouncer wouldn't let him in without an ID.",
+              "pl": "Bramkarz nie wpuścił go bez dowodu.",
+              "focusEn": "bouncer",
+              "focusPl": "Bramkarz"
+            },
+            {
+              "en": "Two bouncers stood at the door all night.",
+              "pl": "Dwóch bramkarzy stało przy drzwiach całą noc.",
+              "focusEn": "bouncers",
+              "focusPl": "bramkarzy"
+            }
+          ],
+          "acceptedAnswers": [
+            "bouncer",
+            "doorman"
+          ],
+          "acceptedTranslations": [
+            "bramkarz",
+            "ochroniarz"
+          ]
+        },
+        {
+          "id": "drinks-bar.bar-stool",
+          "term": "bar stool",
+          "ipa": "/ˈbɑːr ˌstuːl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "stołek barowy",
+          "definition": "A tall seat at a bar.",
+          "register": "neutralny",
+          "contextPl": "Miejsce przy barze",
+          "natural": "",
+          "forms": "bar stools",
+          "collocations": "sit on a bar stool",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We grabbed two bar stools near the TV.",
+              "pl": "Zajęliśmy dwa stołki barowe blisko telewizora.",
+              "focusEn": "bar stools",
+              "focusPl": "stołki barowe"
+            },
+            {
+              "en": "Is this bar stool free, or are you saving it?",
+              "pl": "Ten stołek barowy jest wolny, czy go pan komuś trzyma?",
+              "focusEn": "bar stool",
+              "focusPl": "stołek barowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "bar stool"
+          ],
+          "acceptedTranslations": [
+            "stołek barowy",
+            "hoker"
+          ]
+        },
+        {
+          "id": "drinks-bar.last-call",
+          "term": "last call",
+          "ipa": "/ˌlæst ˈkɔːl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "ostatnie zamówienia",
+          "definition": "The final chance to order drinks before a bar closes.",
+          "register": "neutralny",
+          "contextPl": "Zamykanie baru",
+          "natural": "",
+          "forms": "",
+          "collocations": "it's last call",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii „last orders”.",
+          "examples": [
+            {
+              "en": "It's last call, so order now if you want another drink.",
+              "pl": "To ostatnie zamówienia, więc zamów teraz, jeśli chcesz jeszcze drinka.",
+              "focusEn": "last call",
+              "focusPl": "ostatnie zamówienia"
+            },
+            {
+              "en": "The bartender rang a bell for last call at one thirty.",
+              "pl": "Barman zadzwonił dzwonkiem na ostatnie zamówienia o pierwszej trzydzieści.",
+              "focusEn": "last call",
+              "focusPl": "ostatnie zamówienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "last call",
+            "last orders"
+          ],
+          "acceptedTranslations": [
+            "ostatnie zamówienia",
+            "ostatnia kolejka"
+          ]
+        },
+        {
+          "id": "drinks-bar.cover-charge",
+          "term": "cover charge",
+          "ipa": "/ˈkʌvər ˌtʃɑːrdʒ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "opłata za wejście",
+          "definition": "Money you pay to enter a bar or club, often when there is music.",
+          "register": "neutralny",
+          "contextPl": "Wejście do lokalu z muzyką na żywo",
+          "natural": "cover",
+          "forms": "",
+          "collocations": "pay a cover charge; no cover",
+          "synonyms": "entrance fee",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a ten-dollar cover charge on weekends.",
+              "pl": "W weekendy jest dziesięć dolarów opłaty za wejście.",
+              "focusEn": "cover charge",
+              "focusPl": "opłaty za wejście"
+            },
+            {
+              "en": "The cover charge includes one free drink.",
+              "pl": "Opłata za wejście obejmuje jednego darmowego drinka.",
+              "focusEn": "cover charge",
+              "focusPl": "Opłata za wejście"
+            }
+          ],
+          "acceptedAnswers": [
+            "cover charge",
+            "cover",
+            "entrance fee"
+          ],
+          "acceptedTranslations": [
+            "opłata za wejście",
+            "wejściówka",
+            "bilet wstępu"
+          ]
+        },
+        {
+          "id": "drinks-bar.dive-bar",
+          "term": "dive bar",
+          "ipa": "/ˈdaɪv ˌbɑːr/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "podrzędna knajpa",
+          "definition": "A cheap, simple bar that is not fancy but often friendly.",
+          "register": "slangowy",
+          "contextPl": "Mały, tani lokal",
+          "natural": "",
+          "forms": "dive bars",
+          "collocations": "a local dive bar",
+          "synonyms": "dive",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's a dive bar, but the music and people are great.",
+              "pl": "To podrzędna knajpa, ale muzyka i ludzie są świetni.",
+              "focusEn": "dive bar",
+              "focusPl": "podrzędna knajpa"
+            },
+            {
+              "en": "We ended the night at a little dive bar near the station.",
+              "pl": "Zakończyliśmy wieczór w małej spelunie przy dworcu.",
+              "focusEn": "dive bar",
+              "focusPl": "spelunie"
+            }
+          ],
+          "acceptedAnswers": [
+            "dive bar",
+            "dive"
+          ],
+          "acceptedTranslations": [
+            "podrzędna knajpa",
+            "speluna",
+            "mordownia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drinks-bar.beer-wine",
+      "namePl": "Piwo i wino",
+      "scenePl": "Wieczór przy winie i piwie z przyjaciółmi w winiarni z małym browarem",
+      "entries": [
+        {
+          "id": "drinks-bar.red-wine",
+          "term": "red wine",
+          "ipa": "/ˌrɛd ˈwaɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "czerwone wino",
+          "definition": "Wine made from dark grapes.",
+          "register": "neutralny",
+          "contextPl": "Wybór wina",
+          "natural": "",
+          "forms": "",
+          "collocations": "a glass of red wine; dry red wine",
+          "synonyms": "",
+          "antonyms": "white wine",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A glass of red wine for me, please.",
+              "pl": "Dla mnie kieliszek czerwonego wina.",
+              "focusEn": "red wine",
+              "focusPl": "czerwonego wina"
+            },
+            {
+              "en": "This red wine is smooth and not too heavy.",
+              "pl": "To czerwone wino jest łagodne i niezbyt ciężkie.",
+              "focusEn": "red wine",
+              "focusPl": "czerwone wino"
+            }
+          ],
+          "acceptedAnswers": [
+            "red wine",
+            "red"
+          ],
+          "acceptedTranslations": [
+            "czerwone wino"
+          ]
+        },
+        {
+          "id": "drinks-bar.white-wine",
+          "term": "white wine",
+          "ipa": "/ˌwaɪt ˈwaɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "białe wino",
+          "definition": "Wine made from green grapes, usually served cold.",
+          "register": "neutralny",
+          "contextPl": "Wybór wina",
+          "natural": "",
+          "forms": "",
+          "collocations": "a glass of white wine; chilled white wine",
+          "synonyms": "",
+          "antonyms": "red wine",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "White wine should be served cold.",
+              "pl": "Białe wino powinno się podawać schłodzone.",
+              "focusEn": "White wine",
+              "focusPl": "Białe wino"
+            },
+            {
+              "en": "She ordered a crisp white wine to start.",
+              "pl": "Na początek zamówiła rześkie białe wino.",
+              "focusEn": "white wine",
+              "focusPl": "białe wino"
+            }
+          ],
+          "acceptedAnswers": [
+            "white wine",
+            "white"
+          ],
+          "acceptedTranslations": [
+            "białe wino"
+          ]
+        },
+        {
+          "id": "drinks-bar.pint",
+          "term": "pint",
+          "ipa": "/paɪnt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kufel",
+          "definition": "A glass of beer of about 470 milliliters.",
+          "register": "potoczny",
+          "contextPl": "Zamawianie piwa",
+          "natural": "",
+          "forms": "pints",
+          "collocations": "a pint of beer; grab a pint",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Amerykańska pinta to ok. 0,47 l.",
+          "examples": [
+            {
+              "en": "A pint of the local IPA, please.",
+              "pl": "Poproszę kufel lokalnego IPA.",
+              "focusEn": "pint",
+              "focusPl": "kufel"
+            },
+            {
+              "en": "A pint costs six dollars during happy hour.",
+              "pl": "Kufel kosztuje sześć dolarów w czasie happy hour.",
+              "focusEn": "pint",
+              "focusPl": "Kufel"
+            }
+          ],
+          "acceptedAnswers": [
+            "pint"
+          ],
+          "acceptedTranslations": [
+            "kufel",
+            "pinta"
+          ]
+        },
+        {
+          "id": "drinks-bar.draft-beer",
+          "term": "draft beer",
+          "ipa": "/ˌdræft ˈbɪr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "piwo z beczki",
+          "definition": "Beer served from a large container through a tap.",
+          "register": "neutralny",
+          "contextPl": "Piwo z nalewaka",
+          "natural": "",
+          "forms": "draft beers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "bottled beer",
+          "notePl": "Pisownia amerykańska: „draft” (brytyjska: „draught”).",
+          "examples": [
+            {
+              "en": "Draft beer tastes fresher than bottled beer.",
+              "pl": "Piwo z beczki smakuje świeżej niż butelkowe.",
+              "focusEn": "Draft beer",
+              "focusPl": "Piwo z beczki"
+            },
+            {
+              "en": "They have twenty draft beers and a few ciders.",
+              "pl": "Mają dwadzieścia piw z beczki i kilka cydrów.",
+              "focusEn": "draft beers",
+              "focusPl": "piw z beczki"
+            }
+          ],
+          "acceptedAnswers": [
+            "draft beer",
+            "draught beer"
+          ],
+          "acceptedTranslations": [
+            "piwo z beczki",
+            "piwo lane"
+          ]
+        },
+        {
+          "id": "drinks-bar.sip",
+          "term": "sip",
+          "ipa": "/sɪp/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sączyć",
+          "definition": "To drink slowly, taking a little at a time.",
+          "register": "neutralny",
+          "contextPl": "Powolne picie",
+          "natural": "",
+          "forms": "sipped",
+          "collocations": "sip wine; sip slowly",
+          "synonyms": "",
+          "antonyms": "gulp",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She sipped her wine slowly while we talked.",
+              "pl": "Sączyła powoli wino, kiedy rozmawialiśmy.",
+              "focusEn": "sipped",
+              "focusPl": "Sączyła"
+            },
+            {
+              "en": "Just sip it first; this beer is pretty strong.",
+              "pl": "Najpierw tylko łyknij, to piwo jest dość mocne.",
+              "focusEn": "sip",
+              "focusPl": "łyknij"
+            }
+          ],
+          "acceptedAnswers": [
+            "sip"
+          ],
+          "acceptedTranslations": [
+            "sączyć",
+            "popijać",
+            "łyknąć"
+          ]
+        },
+        {
+          "id": "drinks-bar.wine-list",
+          "term": "wine list",
+          "ipa": "/ˈwaɪn ˌlɪst/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "karta win",
+          "definition": "A list of the wines a restaurant or bar sells.",
+          "register": "neutralny",
+          "contextPl": "Wybór wina w lokalu",
+          "natural": "",
+          "forms": "wine lists",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could we see the wine list, please?",
+              "pl": "Czy możemy prosić o kartę win?",
+              "focusEn": "wine list",
+              "focusPl": "kartę win"
+            },
+            {
+              "en": "The wine list here is long, so ask the server.",
+              "pl": "Karta win jest tu długa, więc zapytaj kelnera.",
+              "focusEn": "wine list",
+              "focusPl": "Karta win"
+            }
+          ],
+          "acceptedAnswers": [
+            "wine list"
+          ],
+          "acceptedTranslations": [
+            "karta win"
+          ]
+        },
+        {
+          "id": "drinks-bar.cider",
+          "term": "cider",
+          "ipa": "/ˈsaɪdər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "cydr",
+          "definition": "An alcoholic drink made from apples.",
+          "register": "neutralny",
+          "contextPl": "Alternatywa dla piwa",
+          "natural": "hard cider",
+          "forms": "ciders",
+          "collocations": "hard cider; apple cider",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA samo „cider” bywa niealkoholowym sokiem jabłkowym; alkoholowy to „hard cider”.",
+          "examples": [
+            {
+              "en": "If you don't like beer, try the hard cider.",
+              "pl": "Jeśli nie lubisz piwa, spróbuj cydru.",
+              "focusEn": "cider",
+              "focusPl": "cydru"
+            },
+            {
+              "en": "This cider is sweet and tastes like fresh apples.",
+              "pl": "Ten cydr jest słodki i smakuje jak świeże jabłka.",
+              "focusEn": "cider",
+              "focusPl": "cydr"
+            }
+          ],
+          "acceptedAnswers": [
+            "cider",
+            "hard cider"
+          ],
+          "acceptedTranslations": [
+            "cydr"
+          ]
+        },
+        {
+          "id": "drinks-bar.dry",
+          "term": "dry",
+          "ipa": "/draɪ/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wytrawny",
+          "definition": "Of wine: not sweet.",
+          "register": "neutralny",
+          "contextPl": "Opis smaku wina",
+          "natural": "",
+          "forms": "drier – driest",
+          "collocations": "dry wine; extra dry",
+          "synonyms": "",
+          "antonyms": "sweet",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I prefer a dry white wine, not a sweet one.",
+              "pl": "Wolę wytrawne białe wino, nie słodkie.",
+              "focusEn": "dry",
+              "focusPl": "wytrawne"
+            },
+            {
+              "en": "Is this rosé dry or a little sweet?",
+              "pl": "To różowe wino jest wytrawne czy trochę słodkie?",
+              "focusEn": "dry",
+              "focusPl": "wytrawne"
+            }
+          ],
+          "acceptedAnswers": [
+            "dry"
+          ],
+          "acceptedTranslations": [
+            "wytrawny"
+          ]
+        },
+        {
+          "id": "drinks-bar.craft-beer",
+          "term": "craft beer",
+          "ipa": "/ˌkræft ˈbɪr/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "piwo rzemieślnicze",
+          "definition": "Beer made in small amounts by a small, independent brewery.",
+          "register": "neutralny",
+          "contextPl": "Piwo z małych browarów",
+          "natural": "",
+          "forms": "craft beers",
+          "collocations": "local craft beer",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This place only serves craft beer from small breweries.",
+              "pl": "Ten lokal podaje tylko piwo rzemieślnicze z małych browarów.",
+              "focusEn": "craft beer",
+              "focusPl": "piwo rzemieślnicze"
+            },
+            {
+              "en": "Craft beer is more expensive, but it has more flavor.",
+              "pl": "Piwo kraftowe jest droższe, ale ma więcej smaku.",
+              "focusEn": "Craft beer",
+              "focusPl": "Piwo kraftowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "craft beer"
+          ],
+          "acceptedTranslations": [
+            "piwo rzemieślnicze",
+            "piwo kraftowe"
+          ]
+        },
+        {
+          "id": "drinks-bar.brewery",
+          "term": "brewery",
+          "ipa": "/ˈbruːəri/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "browar",
+          "definition": "A place where beer is made.",
+          "register": "neutralny",
+          "contextPl": "Miejsce produkcji piwa",
+          "natural": "",
+          "forms": "breweries",
+          "collocations": "a local brewery; brewery tour",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This brewery makes its beer right behind the bar.",
+              "pl": "Ten browar warzy piwo tuż za barem.",
+              "focusEn": "brewery",
+              "focusPl": "browar"
+            },
+            {
+              "en": "We visited a small brewery and tried six beers.",
+              "pl": "Odwiedziliśmy mały browar i spróbowaliśmy sześciu piw.",
+              "focusEn": "brewery",
+              "focusPl": "browar"
+            }
+          ],
+          "acceptedAnswers": [
+            "brewery"
+          ],
+          "acceptedTranslations": [
+            "browar"
+          ]
+        },
+        {
+          "id": "drinks-bar.house-wine",
+          "term": "house wine",
+          "ipa": "/ˈhaʊs ˌwaɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wino domowe",
+          "definition": "The basic, cheaper wine a restaurant or bar offers.",
+          "register": "neutralny",
+          "contextPl": "Tańsze wino w lokalu",
+          "natural": "",
+          "forms": "house wines",
+          "collocations": "the house red; the house white",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The house wine is cheap and actually pretty good.",
+              "pl": "Wino domowe jest tanie i właściwie całkiem dobre.",
+              "focusEn": "house wine",
+              "focusPl": "Wino domowe"
+            },
+            {
+              "en": "Two glasses of the house wine, please.",
+              "pl": "Poproszę dwa kieliszki wina domowego.",
+              "focusEn": "house wine",
+              "focusPl": "wina domowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "house wine"
+          ],
+          "acceptedTranslations": [
+            "wino domowe",
+            "wino stołowe"
+          ]
+        },
+        {
+          "id": "drinks-bar.wine-tasting",
+          "term": "wine tasting",
+          "ipa": "/ˈwaɪn ˌteɪstɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "degustacja wina",
+          "definition": "An event where you try small amounts of different wines.",
+          "register": "neutralny",
+          "contextPl": "Wydarzenia w winiarni",
+          "natural": "",
+          "forms": "wine tastings",
+          "collocations": "go to a wine tasting",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The wine bar holds a wine tasting every Thursday.",
+              "pl": "Winiarnia organizuje degustację wina w każdy czwartek.",
+              "focusEn": "wine tasting",
+              "focusPl": "degustację wina"
+            },
+            {
+              "en": "At the wine tasting, we tried five different reds.",
+              "pl": "Na degustacji wina spróbowaliśmy pięciu różnych czerwonych.",
+              "focusEn": "wine tasting",
+              "focusPl": "degustacji wina"
+            }
+          ],
+          "acceptedAnswers": [
+            "wine tasting"
+          ],
+          "acceptedTranslations": [
+            "degustacja wina",
+            "degustacja win"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drinks-bar.cocktails",
+      "namePl": "Koktajle i mocne alkohole",
+      "scenePl": "Barman przygotowuje koktajle za barem",
+      "entries": [
+        {
+          "id": "drinks-bar.shake",
+          "term": "shake",
+          "ipa": "/ʃeɪk/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wstrząsnąć",
+          "definition": "To move a container up and down quickly to mix what is inside.",
+          "register": "neutralny",
+          "contextPl": "Przygotowanie koktajlu w shakerze",
+          "natural": "",
+          "forms": "shook – shaken",
+          "collocations": "shake with ice; shaken, not stirred",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Shake it with ice for about fifteen seconds.",
+              "pl": "Wstrząśnij to z lodem przez około piętnaście sekund.",
+              "focusEn": "Shake",
+              "focusPl": "Wstrząśnij"
+            },
+            {
+              "en": "He shook the drink hard and strained it into a glass.",
+              "pl": "Mocno wstrząsnął drinkiem i przecedził go do kieliszka.",
+              "focusEn": "shook",
+              "focusPl": "wstrząsnął"
+            }
+          ],
+          "acceptedAnswers": [
+            "shake"
+          ],
+          "acceptedTranslations": [
+            "wstrząsnąć",
+            "wstrząsać",
+            "potrząsać"
+          ]
+        },
+        {
+          "id": "drinks-bar.cocktail",
+          "term": "cocktail",
+          "ipa": "/ˈkɑːkˌteɪl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "koktajl",
+          "definition": "A mixed alcoholic drink.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie drinków",
+          "natural": "",
+          "forms": "cocktails",
+          "collocations": "order a cocktail; cocktail menu",
+          "synonyms": "mixed drink",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What's the most popular cocktail on your menu?",
+              "pl": "Jaki jest najpopularniejszy koktajl w waszym menu?",
+              "focusEn": "cocktail",
+              "focusPl": "koktajl"
+            },
+            {
+              "en": "The bartender mixed the cocktail and poured it into a glass.",
+              "pl": "Barman przygotował koktajl i przelał go do kieliszka.",
+              "focusEn": "cocktail",
+              "focusPl": "koktajl"
+            }
+          ],
+          "acceptedAnswers": [
+            "cocktail",
+            "mixed drink"
+          ],
+          "acceptedTranslations": [
+            "koktajl",
+            "drink"
+          ]
+        },
+        {
+          "id": "drinks-bar.shot",
+          "term": "shot",
+          "ipa": "/ʃɑːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kieliszek",
+          "definition": "A small amount of strong alcohol drunk in one go.",
+          "register": "potoczny",
+          "contextPl": "Szybkie wypicie mocnego alkoholu",
+          "natural": "",
+          "forms": "shots",
+          "collocations": "a shot of tequila; do a shot",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's do one shot to celebrate, then switch to water.",
+              "pl": "Wypijmy jeden kieliszek na uczczenie, a potem przejdźmy na wodę.",
+              "focusEn": "shot",
+              "focusPl": "kieliszek"
+            },
+            {
+              "en": "He poured three shots of tequila for the birthday girl and her friends.",
+              "pl": "Nalał trzy kieliszki tequili dla solenizantki i jej przyjaciółek.",
+              "focusEn": "shots",
+              "focusPl": "kieliszki"
+            }
+          ],
+          "acceptedAnswers": [
+            "shot"
+          ],
+          "acceptedTranslations": [
+            "kieliszek",
+            "shot",
+            "kielonek"
+          ]
+        },
+        {
+          "id": "drinks-bar.nonalcoholic",
+          "term": "nonalcoholic",
+          "ipa": "/ˌnɑːnælkəˈhɔːlɪk/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bezalkoholowy",
+          "definition": "Not containing alcohol.",
+          "register": "neutralny",
+          "contextPl": "Napoje dla niepijących",
+          "natural": "",
+          "forms": "",
+          "collocations": "nonalcoholic beer; nonalcoholic drinks",
+          "synonyms": "alcohol-free",
+          "antonyms": "alcoholic",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have any nonalcoholic beer on the menu?",
+              "pl": "Macie w karcie jakieś piwo bezalkoholowe?",
+              "focusEn": "nonalcoholic",
+              "focusPl": "bezalkoholowe"
+            },
+            {
+              "en": "All the nonalcoholic drinks are on the back page.",
+              "pl": "Wszystkie napoje bezalkoholowe są na ostatniej stronie.",
+              "focusEn": "nonalcoholic",
+              "focusPl": "bezalkoholowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "nonalcoholic",
+            "non-alcoholic",
+            "alcohol-free"
+          ],
+          "acceptedTranslations": [
+            "bezalkoholowy"
+          ]
+        },
+        {
+          "id": "drinks-bar.whiskey",
+          "term": "whiskey",
+          "ipa": "/ˈwɪski/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "whisky",
+          "definition": "A strong alcoholic drink made from grain.",
+          "register": "neutralny",
+          "contextPl": "Mocne alkohole",
+          "natural": "",
+          "forms": "whiskeys",
+          "collocations": "a glass of whiskey; Irish whiskey",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia „whiskey” (USA, Irlandia), „whisky” (Szkocja).",
+          "examples": [
+            {
+              "en": "This bar has more than fifty kinds of whiskey.",
+              "pl": "Ten bar ma ponad pięćdziesiąt rodzajów whisky.",
+              "focusEn": "whiskey",
+              "focusPl": "whisky"
+            },
+            {
+              "en": "A small glass of whiskey warms you up in winter.",
+              "pl": "Mała szklaneczka whisky rozgrzewa zimą.",
+              "focusEn": "whiskey",
+              "focusPl": "whisky"
+            }
+          ],
+          "acceptedAnswers": [
+            "whiskey",
+            "whisky"
+          ],
+          "acceptedTranslations": [
+            "whisky"
+          ]
+        },
+        {
+          "id": "drinks-bar.on-the-rocks",
+          "term": "on the rocks",
+          "ipa": "/ɑːn ðə ˈrɑːks/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "z lodem",
+          "definition": "Served with ice cubes.",
+          "register": "potoczny",
+          "contextPl": "Sposób podania mocnego alkoholu",
+          "natural": "",
+          "forms": "",
+          "collocations": "whiskey on the rocks",
+          "synonyms": "",
+          "antonyms": "neat",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll have a whiskey on the rocks.",
+              "pl": "Poproszę whisky z lodem.",
+              "focusEn": "on the rocks",
+              "focusPl": "z lodem"
+            },
+            {
+              "en": "Do you want that straight or on the rocks?",
+              "pl": "Podać to czyste czy z lodem?",
+              "focusEn": "on the rocks",
+              "focusPl": "z lodem"
+            }
+          ],
+          "acceptedAnswers": [
+            "on the rocks"
+          ],
+          "acceptedTranslations": [
+            "z lodem",
+            "z kostkami lodu"
+          ]
+        },
+        {
+          "id": "drinks-bar.liquor",
+          "term": "liquor",
+          "ipa": "/ˈlɪkər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "mocny alkohol",
+          "definition": "Strong alcoholic drinks such as vodka, rum or whiskey.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje alkoholi w barze",
+          "natural": "booze",
+          "forms": "",
+          "collocations": "hard liquor; liquor store",
+          "synonyms": "spirits",
+          "antonyms": "",
+          "notePl": "„Liquor” to alkohol wysokoprocentowy; likier to „liqueur”.",
+          "examples": [
+            {
+              "en": "The top shelf has the most expensive liquor.",
+              "pl": "Na górnej półce stoi najdroższy mocny alkohol.",
+              "focusEn": "liquor",
+              "focusPl": "mocny alkohol"
+            },
+            {
+              "en": "This cocktail has three kinds of liquor in it.",
+              "pl": "W tym koktajlu są trzy rodzaje mocnego alkoholu.",
+              "focusEn": "liquor",
+              "focusPl": "mocnego alkoholu"
+            }
+          ],
+          "acceptedAnswers": [
+            "liquor",
+            "spirits",
+            "hard liquor"
+          ],
+          "acceptedTranslations": [
+            "mocny alkohol",
+            "alkohol wysokoprocentowy"
+          ]
+        },
+        {
+          "id": "drinks-bar.mocktail",
+          "term": "mocktail",
+          "ipa": "/ˈmɑːkˌteɪl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "koktajl bezalkoholowy",
+          "definition": "A drink that looks and tastes like a cocktail but has no alcohol.",
+          "register": "potoczny",
+          "contextPl": "Drinki dla niepijących",
+          "natural": "",
+          "forms": "mocktails",
+          "collocations": "mocktail menu",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bar has a whole menu of mocktails for drivers.",
+              "pl": "Bar ma całą kartę koktajli bezalkoholowych dla kierowców.",
+              "focusEn": "mocktails",
+              "focusPl": "koktajli bezalkoholowych"
+            },
+            {
+              "en": "This mint mocktail tastes just like a mojito.",
+              "pl": "Ten miętowy koktajl bezalkoholowy smakuje zupełnie jak mojito.",
+              "focusEn": "mocktail",
+              "focusPl": "koktajl bezalkoholowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "mocktail"
+          ],
+          "acceptedTranslations": [
+            "koktajl bezalkoholowy",
+            "drink bezalkoholowy"
+          ]
+        },
+        {
+          "id": "drinks-bar.neat",
+          "term": "neat",
+          "ipa": "/niːt/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "czysty",
+          "definition": "Of a strong drink: served alone, without ice or water.",
+          "register": "neutralny",
+          "contextPl": "Sposób podania whisky",
+          "natural": "",
+          "forms": "",
+          "collocations": "whiskey neat",
+          "synonyms": "straight up",
+          "antonyms": "on the rocks",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He drinks his whiskey neat, with nothing added.",
+              "pl": "Pije whisky czystą, bez żadnych dodatków.",
+              "focusEn": "neat",
+              "focusPl": "czystą"
+            },
+            {
+              "en": "Would you like the bourbon neat or with a splash of water?",
+              "pl": "Bourbon podać czysty czy z odrobiną wody?",
+              "focusEn": "neat",
+              "focusPl": "czysty"
+            }
+          ],
+          "acceptedAnswers": [
+            "neat",
+            "straight"
+          ],
+          "acceptedTranslations": [
+            "czysty",
+            "bez lodu"
+          ]
+        },
+        {
+          "id": "drinks-bar.garnish",
+          "term": "garnish",
+          "ipa": "/ˈɡɑːrnɪʃ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dekoracja",
+          "definition": "A small piece of fruit or herb added to make a drink look nice.",
+          "register": "specjalistyczny",
+          "contextPl": "Wykończenie koktajlu",
+          "natural": "",
+          "forms": "garnishes",
+          "collocations": "a lime garnish; as a garnish",
+          "synonyms": "decoration",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The garnish is a slice of orange and a cherry.",
+              "pl": "Dekoracją jest plaster pomarańczy i wisienka.",
+              "focusEn": "garnish",
+              "focusPl": "Dekoracją"
+            },
+            {
+              "en": "She added a sprig of mint as a garnish.",
+              "pl": "Dodała gałązkę mięty jako dekorację.",
+              "focusEn": "garnish",
+              "focusPl": "dekorację"
+            }
+          ],
+          "acceptedAnswers": [
+            "garnish"
+          ],
+          "acceptedTranslations": [
+            "dekoracja",
+            "ozdoba"
+          ]
+        },
+        {
+          "id": "drinks-bar.mixer",
+          "term": "mixer",
+          "ipa": "/ˈmɪksər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dodatek do drinka",
+          "definition": "A non-alcoholic drink, like tonic or juice, mixed with liquor.",
+          "register": "specjalistyczny",
+          "contextPl": "Składniki koktajli",
+          "natural": "",
+          "forms": "mixers",
+          "collocations": "tonic as a mixer",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Tonic and soda are the most common mixers.",
+              "pl": "Tonik i woda sodowa to najczęstsze dodatki do drinków.",
+              "focusEn": "mixers",
+              "focusPl": "dodatki do drinków"
+            },
+            {
+              "en": "Which mixer goes best with gin?",
+              "pl": "Jaki dodatek do drinka najlepiej pasuje do ginu?",
+              "focusEn": "mixer",
+              "focusPl": "dodatek do drinka"
+            }
+          ],
+          "acceptedAnswers": [
+            "mixer"
+          ],
+          "acceptedTranslations": [
+            "dodatek do drinka",
+            "składnik drinka"
+          ]
+        },
+        {
+          "id": "drinks-bar.top-shelf",
+          "term": "top-shelf",
+          "ipa": "/ˌtɑːp ˈʃɛlf/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "z najwyższej półki",
+          "definition": "Of the best and most expensive quality.",
+          "register": "potoczny",
+          "contextPl": "Droższe alkohole w barze",
+          "natural": "",
+          "forms": "",
+          "collocations": "top-shelf liquor; top-shelf tequila",
+          "synonyms": "premium",
+          "antonyms": "cheap",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Top-shelf tequila costs twice as much.",
+              "pl": "Tequila z najwyższej półki kosztuje dwa razy więcej.",
+              "focusEn": "Top-shelf",
+              "focusPl": "z najwyższej półki"
+            },
+            {
+              "en": "He only orders top-shelf vodka in his drinks.",
+              "pl": "Do drinków zamawia tylko wódkę z najwyższej półki.",
+              "focusEn": "top-shelf",
+              "focusPl": "z najwyższej półki"
+            }
+          ],
+          "acceptedAnswers": [
+            "top-shelf",
+            "top shelf"
+          ],
+          "acceptedTranslations": [
+            "z najwyższej półki",
+            "najlepszy",
+            "najdroższy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drinks-bar.socializing",
+      "namePl": "Toasty i wspólne wyjścia",
+      "scenePl": "Spotkanie ze znajomymi w barze po pracy",
+      "entries": [
+        {
+          "id": "drinks-bar.cheers",
+          "term": "cheers",
+          "ipa": "/tʃɪrz/",
+          "pos": "wykrzyknik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "na zdrowie",
+          "definition": "What people say when they raise their glasses before drinking.",
+          "register": "neutralny",
+          "contextPl": "Toast przy kieliszku",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii „cheers” znaczy też „dzięki”.",
+          "examples": [
+            {
+              "en": "Cheers, everyone, and happy Friday to all of us!",
+              "pl": "Na zdrowie wszystkim i udanego piątku nam wszystkim!",
+              "focusEn": "Cheers",
+              "focusPl": "Na zdrowie"
+            },
+            {
+              "en": "\"Cheers!\" we all said, raising our beers.",
+              "pl": "„Na zdrowie!” – powiedzieliśmy wszyscy, unosząc piwa.",
+              "focusEn": "Cheers",
+              "focusPl": "Na zdrowie"
+            }
+          ],
+          "acceptedAnswers": [
+            "cheers"
+          ],
+          "acceptedTranslations": [
+            "na zdrowie",
+            "zdrowie"
+          ]
+        },
+        {
+          "id": "drinks-bar.go-out-for-drinks",
+          "term": "go out for drinks",
+          "ipa": "/ˌɡoʊ aʊt fər ˈdrɪŋks/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wyjść na drinka",
+          "definition": "To go to a bar with friends or coworkers.",
+          "register": "neutralny",
+          "contextPl": "Umawianie się na wieczór",
+          "natural": "grab a drink",
+          "forms": "went – gone",
+          "collocations": "go out for drinks after work",
+          "synonyms": "grab a drink",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you want to go out for drinks after work?",
+              "pl": "Chcesz wyjść na drinka po pracy?",
+              "focusEn": "go out for drinks",
+              "focusPl": "wyjść na drinka"
+            },
+            {
+              "en": "We went out for drinks to celebrate her promotion.",
+              "pl": "Wyszliśmy na drinka, żeby uczcić jej awans.",
+              "focusEn": "went out for drinks",
+              "focusPl": "Wyszliśmy na drinka"
+            }
+          ],
+          "acceptedAnswers": [
+            "go out for drinks",
+            "grab a drink",
+            "go for a drink"
+          ],
+          "acceptedTranslations": [
+            "wyjść na drinka",
+            "iść na drinka",
+            "wyskoczyć na piwo"
+          ]
+        },
+        {
+          "id": "drinks-bar.what-are-you-having",
+          "term": "what are you having",
+          "ipa": "/ˌwʌt ər jə ˈhævɪŋ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "co pijesz?",
+          "definition": "A question asking what drink someone wants, often before buying it for them.",
+          "register": "potoczny",
+          "contextPl": "Zamawianie dla znajomych",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hey, what are you having? I'm buying.",
+              "pl": "Hej, co pijesz? Ja stawiam.",
+              "focusEn": "what are you having",
+              "focusPl": "co pijesz"
+            },
+            {
+              "en": "What are you having tonight, the usual?",
+              "pl": "Co pan dziś pije, to co zwykle?",
+              "focusEn": "What are you having",
+              "focusPl": "Co pan dziś pije"
+            }
+          ],
+          "acceptedAnswers": [
+            "what are you having",
+            "what'll you have"
+          ],
+          "acceptedTranslations": [
+            "co pijesz?",
+            "co pan pije?",
+            "co zamawiasz?"
+          ]
+        },
+        {
+          "id": "drinks-bar.buy-someone-a-drink",
+          "term": "buy someone a drink",
+          "ipa": "/ˌbaɪ ˌsʌmwʌn ə ˈdrɪŋk/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "postawić komuś drinka",
+          "definition": "To pay for someone else's drink.",
+          "register": "neutralny",
+          "contextPl": "Zapraszanie kogoś na drinka",
+          "natural": "",
+          "forms": "bought – bought",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let me buy you a drink to say thanks.",
+              "pl": "Pozwól, że postawię ci drinka w podziękowaniu.",
+              "focusEn": "buy you a drink",
+              "focusPl": "postawię ci drinka"
+            },
+            {
+              "en": "A stranger at the bar bought us a drink for my birthday.",
+              "pl": "Nieznajomy przy barze postawił nam drinka z okazji moich urodzin.",
+              "focusEn": "bought us a drink",
+              "focusPl": "postawił nam drinka"
+            }
+          ],
+          "acceptedAnswers": [
+            "buy someone a drink",
+            "buy you a drink"
+          ],
+          "acceptedTranslations": [
+            "postawić komuś drinka",
+            "stawiać komuś drinka"
+          ]
+        },
+        {
+          "id": "drinks-bar.toast",
+          "term": "toast",
+          "ipa": "/toʊst/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "toast",
+          "definition": "A few words said before people drink together to honor someone.",
+          "register": "neutralny",
+          "contextPl": "Świętowanie przy kieliszku",
+          "natural": "",
+          "forms": "toasts",
+          "collocations": "make a toast; raise a toast",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Make a toast to someone” = wznieść toast za kogoś.",
+          "examples": [
+            {
+              "en": "Let's make a toast to Maria's new job!",
+              "pl": "Wznieśmy toast za nową pracę Marii!",
+              "focusEn": "toast",
+              "focusPl": "toast"
+            },
+            {
+              "en": "He gave a short, funny toast before we drank.",
+              "pl": "Wzniósł krótki, zabawny toast, zanim wypiliśmy.",
+              "focusEn": "toast",
+              "focusPl": "toast"
+            }
+          ],
+          "acceptedAnswers": [
+            "toast"
+          ],
+          "acceptedTranslations": [
+            "toast"
+          ]
+        },
+        {
+          "id": "drinks-bar.the-usual",
+          "term": "the usual",
+          "ipa": "/ðə ˈjuːʒuəl/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "to co zwykle",
+          "definition": "The drink or food that you always order.",
+          "register": "potoczny",
+          "contextPl": "Zamawianie przez stałego bywalca",
+          "natural": "",
+          "forms": "",
+          "collocations": "the usual, please",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"The usual?\" the bartender asked as I sat down.",
+              "pl": "„To co zwykle?” – zapytał barman, gdy usiadłem.",
+              "focusEn": "The usual",
+              "focusPl": "To co zwykle"
+            },
+            {
+              "en": "I'll have the usual: a pint of the house lager.",
+              "pl": "Poproszę to co zwykle: kufel domowego lagera.",
+              "focusEn": "the usual",
+              "focusPl": "to co zwykle"
+            }
+          ],
+          "acceptedAnswers": [
+            "the usual",
+            "usual"
+          ],
+          "acceptedTranslations": [
+            "to co zwykle",
+            "jak zawsze"
+          ]
+        },
+        {
+          "id": "drinks-bar.after-work-drinks",
+          "term": "after-work drinks",
+          "ipa": "/ˌæftər wɜːrk ˈdrɪŋks/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "drinki po pracy",
+          "definition": "Drinks with coworkers at a bar after the workday.",
+          "register": "neutralny",
+          "contextPl": "Integracja ze współpracownikami",
+          "natural": "",
+          "forms": "",
+          "collocations": "go for after-work drinks",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The whole team came to after-work drinks on Friday.",
+              "pl": "Cały zespół przyszedł w piątek na drinki po pracy.",
+              "focusEn": "after-work drinks",
+              "focusPl": "drinki po pracy"
+            },
+            {
+              "en": "After-work drinks are a good way to meet coworkers.",
+              "pl": "Drinki po pracy to dobry sposób na poznanie współpracowników.",
+              "focusEn": "After-work drinks",
+              "focusPl": "Drinki po pracy"
+            }
+          ],
+          "acceptedAnswers": [
+            "after-work drinks",
+            "after work drinks"
+          ],
+          "acceptedTranslations": [
+            "drinki po pracy",
+            "drink po pracy"
+          ]
+        },
+        {
+          "id": "drinks-bar.designated-driver",
+          "term": "designated driver",
+          "ipa": "/ˌdɛzɪɡneɪtɪd ˈdraɪvər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "trzeźwy kierowca",
+          "definition": "The person in a group who does not drink so they can drive everyone home.",
+          "register": "neutralny",
+          "contextPl": "Bezpieczny powrót do domu",
+          "natural": "",
+          "forms": "designated drivers",
+          "collocations": "be the designated driver",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm the designated driver tonight, so just soda for me.",
+              "pl": "Dziś jestem trzeźwym kierowcą, więc dla mnie tylko napój.",
+              "focusEn": "designated driver",
+              "focusPl": "trzeźwym kierowcą"
+            },
+            {
+              "en": "We always pick a designated driver before we go out.",
+              "pl": "Zanim wyjdziemy, zawsze ustalamy, kto będzie trzeźwym kierowcą.",
+              "focusEn": "designated driver",
+              "focusPl": "trzeźwym kierowcą"
+            }
+          ],
+          "acceptedAnswers": [
+            "designated driver",
+            "DD"
+          ],
+          "acceptedTranslations": [
+            "trzeźwy kierowca",
+            "kierowca, który nie pije"
+          ]
+        },
+        {
+          "id": "drinks-bar.clink-glasses",
+          "term": "clink glasses",
+          "ipa": "/ˌklɪŋk ˈɡlæsɪz/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "stuknąć się kieliszkami",
+          "definition": "To touch glasses together before drinking.",
+          "register": "neutralny",
+          "contextPl": "Toast przy stole lub barze",
+          "natural": "",
+          "forms": "clinked",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We clinked glasses to celebrate the end of the project.",
+              "pl": "Stuknęliśmy się kieliszkami, żeby uczcić koniec projektu.",
+              "focusEn": "clinked glasses",
+              "focusPl": "Stuknęliśmy się kieliszkami"
+            },
+            {
+              "en": "Everyone stood up to clink glasses with the boss.",
+              "pl": "Wszyscy wstali, żeby stuknąć się kieliszkami z szefem.",
+              "focusEn": "clink glasses",
+              "focusPl": "stuknąć się kieliszkami"
+            }
+          ],
+          "acceptedAnswers": [
+            "clink glasses"
+          ],
+          "acceptedTranslations": [
+            "stuknąć się kieliszkami",
+            "trącić się kieliszkami"
+          ]
+        },
+        {
+          "id": "drinks-bar.bar-hopping",
+          "term": "bar hopping",
+          "ipa": "/ˈbɑːr ˌhɑːpɪŋ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "chodzenie od baru do baru",
+          "definition": "Going from one bar to another during one night.",
+          "register": "potoczny",
+          "contextPl": "Wieczorne wyjście na miasto",
+          "natural": "",
+          "forms": "",
+          "collocations": "go bar hopping",
+          "synonyms": "pub crawl",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We went bar hopping downtown for her birthday.",
+              "pl": "Na jej urodziny chodziliśmy od baru do baru w centrum.",
+              "focusEn": "bar hopping",
+              "focusPl": "chodziliśmy od baru do baru"
+            },
+            {
+              "en": "Bar hopping gets expensive after the third place.",
+              "pl": "Chodzenie od baru do baru robi się drogie po trzecim lokalu.",
+              "focusEn": "Bar hopping",
+              "focusPl": "Chodzenie od baru do baru"
+            }
+          ],
+          "acceptedAnswers": [
+            "bar hopping",
+            "pub crawl",
+            "barhopping"
+          ],
+          "acceptedTranslations": [
+            "chodzenie od baru do baru"
+          ]
+        },
+        {
+          "id": "drinks-bar.nightcap",
+          "term": "nightcap",
+          "ipa": "/ˈnaɪtˌkæp/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "kieliszek na dobranoc",
+          "definition": "A last drink before going to bed.",
+          "register": "neutralny",
+          "contextPl": "Ostatni drink wieczoru",
+          "natural": "",
+          "forms": "nightcaps",
+          "collocations": "have a nightcap",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's have one nightcap and then head home.",
+              "pl": "Wypijmy jeszcze jeden kieliszek na dobranoc i wracajmy do domu.",
+              "focusEn": "nightcap",
+              "focusPl": "kieliszek na dobranoc"
+            },
+            {
+              "en": "He ordered a small brandy as a nightcap.",
+              "pl": "Zamówił małą brandy na dobranoc.",
+              "focusEn": "nightcap",
+              "focusPl": "na dobranoc"
+            }
+          ],
+          "acceptedAnswers": [
+            "nightcap"
+          ],
+          "acceptedTranslations": [
+            "kieliszek na dobranoc",
+            "drink na dobranoc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drinks-bar.effects",
+      "namePl": "Skutki picia",
+      "scenePl": "Następny poranek po imprezie i rozmowa o wczorajszym wieczorze",
+      "entries": [
+        {
+          "id": "drinks-bar.drink-3",
+          "term": "drink",
+          "ipa": "/drɪŋk/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pić",
+          "definition": "To drink alcohol, especially regularly.",
+          "register": "neutralny",
+          "contextPl": "Mówienie o piciu alkoholu",
+          "natural": "",
+          "forms": "drank – drunk",
+          "collocations": "drink a lot; not drink at all; drink responsibly",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Samo „Do you drink?” oznacza pytanie o alkohol.",
+          "examples": [
+            {
+              "en": "I don't drink on weeknights anymore.",
+              "pl": "W dni robocze już nie piję.",
+              "focusEn": "drink",
+              "focusPl": "piję"
+            },
+            {
+              "en": "How much did we drink last night?",
+              "pl": "Ile wczoraj wypiliśmy?",
+              "focusEn": "drink",
+              "focusPl": "wypiliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "drink"
+          ],
+          "acceptedTranslations": [
+            "pić",
+            "wypić",
+            "pić alkohol"
+          ]
+        },
+        {
+          "id": "drinks-bar.alcohol",
+          "term": "alcohol",
+          "ipa": "/ˈælkəˌhɔːl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "alkohol",
+          "definition": "Drinks such as beer, wine and liquor that can make people drunk.",
+          "register": "neutralny",
+          "contextPl": "Rozmowa o piciu",
+          "natural": "",
+          "forms": "",
+          "collocations": "drink alcohol; no alcohol",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm not drinking any alcohol this week.",
+              "pl": "W tym tygodniu nie piję żadnego alkoholu.",
+              "focusEn": "alcohol",
+              "focusPl": "alkoholu"
+            },
+            {
+              "en": "Alcohol makes me sleep badly, even after one glass.",
+              "pl": "Po alkoholu źle śpię, nawet po jednym kieliszku.",
+              "focusEn": "Alcohol",
+              "focusPl": "alkoholu"
+            }
+          ],
+          "acceptedAnswers": [
+            "alcohol"
+          ],
+          "acceptedTranslations": [
+            "alkohol"
+          ]
+        },
+        {
+          "id": "drinks-bar.drunk",
+          "term": "drunk",
+          "ipa": "/drʌŋk/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pijany",
+          "definition": "Not able to think or move normally because of alcohol.",
+          "register": "neutralny",
+          "contextPl": "Opisywanie stanu po alkoholu",
+          "natural": "",
+          "forms": "",
+          "collocations": "get drunk; a little drunk",
+          "synonyms": "wasted",
+          "antonyms": "sober",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He got really drunk at the party last night.",
+              "pl": "Wczoraj na imprezie bardzo się upił.",
+              "focusEn": "drunk",
+              "focusPl": "upił"
+            },
+            {
+              "en": "I wasn't drunk; I only had two beers.",
+              "pl": "Nie byłem pijany, wypiłem tylko dwa piwa.",
+              "focusEn": "drunk",
+              "focusPl": "pijany"
+            }
+          ],
+          "acceptedAnswers": [
+            "drunk"
+          ],
+          "acceptedTranslations": [
+            "pijany",
+            "upity"
+          ]
+        },
+        {
+          "id": "drinks-bar.have-too-much-to-drink",
+          "term": "have too much to drink",
+          "ipa": "/ˌhæv ˌtuː ˈmʌtʃ tə ˈdrɪŋk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wypić za dużo",
+          "definition": "To drink more alcohol than is good for you.",
+          "register": "neutralny",
+          "contextPl": "Przyznanie się do nadmiaru",
+          "natural": "",
+          "forms": "had – had",
+          "collocations": "",
+          "synonyms": "overdo it",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I think I had too much to drink last night.",
+              "pl": "Chyba wczoraj wypiłem za dużo.",
+              "focusEn": "had too much to drink",
+              "focusPl": "wypiłem za dużo"
+            },
+            {
+              "en": "If you've had too much to drink, don't drive.",
+              "pl": "Jeśli wypiłeś za dużo, nie prowadź.",
+              "focusEn": "had too much to drink",
+              "focusPl": "wypiłeś za dużo"
+            }
+          ],
+          "acceptedAnswers": [
+            "have too much to drink",
+            "had too much to drink"
+          ],
+          "acceptedTranslations": [
+            "wypić za dużo",
+            "przesadzić z alkoholem"
+          ]
+        },
+        {
+          "id": "drinks-bar.hangover",
+          "term": "hangover",
+          "ipa": "/ˈhæŋˌoʊvər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kac",
+          "definition": "Feeling sick and tired the morning after drinking too much.",
+          "register": "neutralny",
+          "contextPl": "Poranek po imprezie",
+          "natural": "",
+          "forms": "hangovers",
+          "collocations": "a terrible hangover; hangover cure",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I have a terrible hangover this morning.",
+              "pl": "Mam dziś rano straszliwego kaca.",
+              "focusEn": "hangover",
+              "focusPl": "kaca"
+            },
+            {
+              "en": "Water and a big breakfast helped my hangover a little.",
+              "pl": "Woda i duże śniadanie trochę pomogły mi na kaca.",
+              "focusEn": "hangover",
+              "focusPl": "kaca"
+            }
+          ],
+          "acceptedAnswers": [
+            "hangover"
+          ],
+          "acceptedTranslations": [
+            "kac"
+          ]
+        },
+        {
+          "id": "drinks-bar.sober",
+          "term": "sober",
+          "ipa": "/ˈsoʊbər/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "trzeźwy",
+          "definition": "Not drunk.",
+          "register": "neutralny",
+          "contextPl": "Opisywanie stanu bez alkoholu",
+          "natural": "",
+          "forms": "",
+          "collocations": "stay sober; completely sober",
+          "synonyms": "",
+          "antonyms": "drunk",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I stayed sober because I had to drive everyone home.",
+              "pl": "Zostałem trzeźwy, bo musiałem odwieźć wszystkich do domu.",
+              "focusEn": "sober",
+              "focusPl": "trzeźwy"
+            },
+            {
+              "en": "She's been sober for two years and feels great.",
+              "pl": "Jest trzeźwa od dwóch lat i czuje się świetnie.",
+              "focusEn": "sober",
+              "focusPl": "trzeźwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "sober"
+          ],
+          "acceptedTranslations": [
+            "trzeźwy"
+          ]
+        },
+        {
+          "id": "drinks-bar.regret",
+          "term": "regret",
+          "ipa": "/rɪˈɡrɛt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "żałować",
+          "definition": "To feel sorry about something you did.",
+          "register": "neutralny",
+          "contextPl": "Refleksja po zbyt długiej imprezie",
+          "natural": "",
+          "forms": "regretted",
+          "collocations": "regret something; instantly regret",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I regret that last round of shots.",
+              "pl": "Żałuję tej ostatniej kolejki kieliszków.",
+              "focusEn": "regret",
+              "focusPl": "Żałuję"
+            },
+            {
+              "en": "You'll regret mixing beer and wine, trust me.",
+              "pl": "Pożałujesz mieszania piwa z winem, uwierz mi.",
+              "focusEn": "regret",
+              "focusPl": "Pożałujesz"
+            }
+          ],
+          "acceptedAnswers": [
+            "regret"
+          ],
+          "acceptedTranslations": [
+            "żałować",
+            "pożałować"
+          ]
+        },
+        {
+          "id": "drinks-bar.tipsy",
+          "term": "tipsy",
+          "ipa": "/ˈtɪpsi/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wstawiony",
+          "definition": "Slightly drunk.",
+          "register": "potoczny",
+          "contextPl": "Lekki stan po alkoholu",
+          "natural": "buzzed",
+          "forms": "tipsier – tipsiest",
+          "collocations": "a little tipsy",
+          "synonyms": "buzzed",
+          "antonyms": "sober",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After two glasses of wine, I was a little tipsy.",
+              "pl": "Po dwóch kieliszkach wina byłam trochę wstawiona.",
+              "focusEn": "tipsy",
+              "focusPl": "wstawiona"
+            },
+            {
+              "en": "We were tipsy, so we took a taxi home.",
+              "pl": "Byliśmy wstawieni, więc wróciliśmy do domu taksówką.",
+              "focusEn": "tipsy",
+              "focusPl": "wstawieni"
+            }
+          ],
+          "acceptedAnswers": [
+            "tipsy",
+            "buzzed"
+          ],
+          "acceptedTranslations": [
+            "wstawiony",
+            "podchmielony",
+            "na rauszu"
+          ]
+        },
+        {
+          "id": "drinks-bar.crash",
+          "term": "crash",
+          "ipa": "/kræʃ/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przenocować",
+          "definition": "To sleep somewhere, often unplanned, like on a friend's couch.",
+          "register": "slangowy",
+          "contextPl": "Nocowanie u znajomych po imprezie",
+          "natural": "",
+          "forms": "crashed",
+          "collocations": "crash on someone's couch; crash at a friend's place",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I crashed on my friend's couch after the party.",
+              "pl": "Po imprezie przekimałem się u kumpla na kanapie.",
+              "focusEn": "crashed",
+              "focusPl": "przekimałem się"
+            },
+            {
+              "en": "You were too tired to go home, so you crashed here.",
+              "pl": "Byłeś zbyt zmęczony, żeby wracać do domu, więc przenocowałeś tutaj.",
+              "focusEn": "crashed",
+              "focusPl": "przenocowałeś"
+            }
+          ],
+          "acceptedAnswers": [
+            "crash"
+          ],
+          "acceptedTranslations": [
+            "przenocować",
+            "paść",
+            "przekimać się"
+          ]
+        },
+        {
+          "id": "drinks-bar.cut-off",
+          "term": "cut off",
+          "ipa": "/ˌkʌt ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "przestać nalewać",
+          "definition": "Of a bartender: to refuse to serve someone more alcohol.",
+          "register": "potoczny",
+          "contextPl": "Barman odmawia kolejnego drinka",
+          "natural": "",
+          "forms": "cut – cut",
+          "collocations": "cut someone off",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bartender cut him off after his fifth beer.",
+              "pl": "Barman przestał mu nalewać po piątym piwie.",
+              "focusEn": "cut him off",
+              "focusPl": "przestał mu nalewać"
+            },
+            {
+              "en": "If you get too loud, they'll cut you off.",
+              "pl": "Jeśli będziesz za głośny, przestaną ci nalewać.",
+              "focusEn": "cut you off",
+              "focusPl": "przestaną ci nalewać"
+            }
+          ],
+          "acceptedAnswers": [
+            "cut off"
+          ],
+          "acceptedTranslations": [
+            "przestać nalewać",
+            "odmówić sprzedaży alkoholu"
+          ]
+        },
+        {
+          "id": "drinks-bar.lightweight",
+          "term": "lightweight",
+          "ipa": "/ˈlaɪtˌweɪt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "osoba o słabej głowie",
+          "definition": "Someone who gets drunk after only a little alcohol.",
+          "register": "slangowy",
+          "contextPl": "Żartowanie z odporności na alkohol",
+          "natural": "",
+          "forms": "lightweights",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm such a lightweight; one beer and I'm done.",
+              "pl": "Mam taką słabą głowę, jedno piwo i koniec.",
+              "focusEn": "lightweight",
+              "focusPl": "słabą głowę"
+            },
+            {
+              "en": "Don't call me a lightweight just because I switched to water.",
+              "pl": "Nie mów, że mam słabą głowę, tylko dlatego, że przerzuciłem się na wodę.",
+              "focusEn": "lightweight",
+              "focusPl": "mam słabą głowę"
+            }
+          ],
+          "acceptedAnswers": [
+            "lightweight"
+          ],
+          "acceptedTranslations": [
+            "osoba o słabej głowie",
+            "słaba głowa"
+          ]
+        },
+        {
+          "id": "drinks-bar.pace-yourself",
+          "term": "pace yourself",
+          "ipa": "/ˌpeɪs jʊrˈsɛlf/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nie szarżować",
+          "definition": "To do something slowly so you do not do too much too soon.",
+          "register": "potoczny",
+          "contextPl": "Rada, by pić wolniej",
+          "natural": "",
+          "forms": "paced myself",
+          "collocations": "pace yourself tonight",
+          "synonyms": "take it easy",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Next time, pace yourself and drink water between beers.",
+              "pl": "Następnym razem nie szarżuj i pij wodę między piwami.",
+              "focusEn": "pace yourself",
+              "focusPl": "nie szarżuj"
+            },
+            {
+              "en": "I should have paced myself at the wedding.",
+              "pl": "Powinienem był bardziej się pilnować na weselu.",
+              "focusEn": "paced myself",
+              "focusPl": "bardziej się pilnować"
+            }
+          ],
+          "acceptedAnswers": [
+            "pace yourself",
+            "take it easy"
+          ],
+          "acceptedTranslations": [
+            "nie szarżować",
+            "nie przesadzać",
+            "rozłożyć siły"
+          ]
+        }
+      ]
+    }
+  ]
+}

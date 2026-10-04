@@ -1,0 +1,3589 @@
+{
+  "schemaVersion": 1,
+  "id": "flight",
+  "namePl": "Na pokładzie samolotu",
+  "nameEn": "On the Plane",
+  "group": "travel",
+  "symbol": "airplane",
+  "summaryPl": "Miejsce w kabinie, załoga, bezpieczeństwo, turbulencje, posiłki i samopoczucie w czasie lotu.",
+  "aliases": [
+    "samolot",
+    "lot",
+    "na pokładzie",
+    "kabina",
+    "stewardesa",
+    "turbulencje",
+    "flight",
+    "plane",
+    "airplane"
+  ],
+  "categories": [
+    {
+      "id": "flight.cabin-seat",
+      "namePl": "Kabina i miejsce",
+      "scenePl": "Kabina samolotu podczas zajmowania miejsc, pasażerowie upychają torby w schowkach",
+      "entries": [
+        {
+          "id": "flight.plane",
+          "term": "plane",
+          "ipa": "/pleɪn/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "samolot",
+          "definition": "A vehicle with wings and engines that flies through the air.",
+          "register": "neutralny",
+          "contextPl": "Podróż samolotem",
+          "natural": "",
+          "forms": "planes",
+          "collocations": "get on the plane; get off the plane; on the plane",
+          "synonyms": "airplane, aircraft",
+          "antonyms": "",
+          "notePl": "Po amerykańsku pełna forma to „airplane”; „aeroplane” jest brytyjskie.",
+          "examples": [
+            {
+              "en": "The plane was so full that there was no room for my bag.",
+              "pl": "Samolot był tak pełny, że nie było miejsca na moją torbę.",
+              "focusEn": "plane",
+              "focusPl": "Samolot"
+            },
+            {
+              "en": "I always feel a little nervous when I first get on the plane.",
+              "pl": "Zawsze trochę się denerwuję, kiedy wsiadam do samolotu.",
+              "focusEn": "plane",
+              "focusPl": "samolotu"
+            }
+          ],
+          "acceptedAnswers": [
+            "plane",
+            "airplane",
+            "aircraft"
+          ],
+          "acceptedTranslations": [
+            "samolot"
+          ]
+        },
+        {
+          "id": "flight.seat",
+          "term": "seat",
+          "ipa": "/siːt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "miejsce",
+          "definition": "A place where one person sits on a plane.",
+          "register": "neutralny",
+          "contextPl": "Miejsce w samolocie",
+          "natural": "",
+          "forms": "seats",
+          "collocations": "take your seat; find your seat; switch seats",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Excuse me, I think you're in my seat.",
+              "pl": "Przepraszam, chyba siedzi pan na moim miejscu.",
+              "focusEn": "seat",
+              "focusPl": "miejscu"
+            },
+            {
+              "en": "Could we switch seats so I can sit next to my daughter?",
+              "pl": "Moglibyśmy zamienić się miejscami, żebym mogła usiąść obok córki?",
+              "focusEn": "seats",
+              "focusPl": "miejscami"
+            }
+          ],
+          "acceptedAnswers": [
+            "seat"
+          ],
+          "acceptedTranslations": [
+            "miejsce",
+            "fotel",
+            "siedzenie"
+          ]
+        },
+        {
+          "id": "flight.row",
+          "term": "row",
+          "ipa": "/roʊ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "rząd",
+          "definition": "A line of seats across the plane.",
+          "register": "neutralny",
+          "contextPl": "Miejsce w samolocie",
+          "natural": "",
+          "forms": "rows",
+          "collocations": "row 24; the back row; exit row",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My seat is in row 31, near the back of the plane.",
+              "pl": "Moje miejsce jest w rzędzie 31, blisko tyłu samolotu.",
+              "focusEn": "row",
+              "focusPl": "rzędzie"
+            },
+            {
+              "en": "The whole row was empty, so I lay down and slept.",
+              "pl": "Cały rząd był pusty, więc się położyłem i spałem.",
+              "focusEn": "row",
+              "focusPl": "rząd"
+            }
+          ],
+          "acceptedAnswers": [
+            "row"
+          ],
+          "acceptedTranslations": [
+            "rząd"
+          ]
+        },
+        {
+          "id": "flight.aisle",
+          "term": "aisle",
+          "ipa": "/aɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przejście",
+          "definition": "The narrow walkway between the rows of seats.",
+          "register": "neutralny",
+          "contextPl": "Miejsce w samolocie",
+          "natural": "",
+          "forms": "aisles",
+          "collocations": "block the aisle; walk down the aisle",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W „aisle” litera „s” jest niema.",
+          "examples": [
+            {
+              "en": "Please keep your bag out of the aisle while we're boarding.",
+              "pl": "Prosimy nie zostawiać torby w przejściu podczas wsiadania.",
+              "focusEn": "aisle",
+              "focusPl": "przejściu"
+            },
+            {
+              "en": "A little boy kept running up and down the aisle during the flight.",
+              "pl": "Mały chłopiec przez cały lot biegał tam i z powrotem po przejściu.",
+              "focusEn": "aisle",
+              "focusPl": "przejściu"
+            }
+          ],
+          "acceptedAnswers": [
+            "aisle"
+          ],
+          "acceptedTranslations": [
+            "przejście",
+            "przejście między fotelami"
+          ]
+        },
+        {
+          "id": "flight.middle-seat",
+          "term": "middle seat",
+          "ipa": "/ˌmɪdl ˈsiːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "środkowe miejsce",
+          "definition": "The seat between the window seat and the aisle seat.",
+          "register": "neutralny",
+          "contextPl": "Miejsce w samolocie",
+          "natural": "",
+          "forms": "middle seats",
+          "collocations": "stuck in the middle seat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I got stuck in the middle seat between two very tall men.",
+              "pl": "Utknąłem na środkowym miejscu między dwoma bardzo wysokimi mężczyznami.",
+              "focusEn": "middle seat",
+              "focusPl": "środkowym miejscu"
+            },
+            {
+              "en": "Nobody wants the middle seat on a five-hour flight.",
+              "pl": "Nikt nie chce środkowego miejsca na pięciogodzinnym locie.",
+              "focusEn": "middle seat",
+              "focusPl": "środkowego miejsca"
+            }
+          ],
+          "acceptedAnswers": [
+            "middle seat"
+          ],
+          "acceptedTranslations": [
+            "środkowe miejsce",
+            "miejsce pośrodku"
+          ]
+        },
+        {
+          "id": "flight.overhead-bin",
+          "term": "overhead bin",
+          "ipa": "/ˌoʊvərhed ˈbɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "schowek nad głową",
+          "definition": "A closed space above the seats where passengers put their bags.",
+          "register": "neutralny",
+          "contextPl": "Bagaż w kabinie",
+          "natural": "",
+          "forms": "overhead bins",
+          "collocations": "put your bag in the overhead bin; the overhead bins are full",
+          "synonyms": "overhead compartment",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you help me lift my suitcase into the overhead bin?",
+              "pl": "Mógłby mi pan pomóc włożyć walizkę do schowka nad głową?",
+              "focusEn": "overhead bin",
+              "focusPl": "schowka nad głową"
+            },
+            {
+              "en": "By the time we got on, every overhead bin was already full.",
+              "pl": "Zanim weszliśmy, każdy schowek nad głową był już pełny.",
+              "focusEn": "overhead bin",
+              "focusPl": "schowek nad głową"
+            }
+          ],
+          "acceptedAnswers": [
+            "overhead bin",
+            "overhead compartment"
+          ],
+          "acceptedTranslations": [
+            "schowek nad głową",
+            "schowek bagażowy",
+            "półka na bagaż"
+          ]
+        },
+        {
+          "id": "flight.seat-belt",
+          "term": "seat belt",
+          "ipa": "/ˈsiːt ˌbelt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pas bezpieczeństwa",
+          "definition": "A strap that holds you in your seat for safety.",
+          "register": "neutralny",
+          "contextPl": "Bezpieczeństwo na pokładzie",
+          "natural": "",
+          "forms": "seat belts",
+          "collocations": "fasten your seat belt; unfasten your seat belt; keep your seat belt on",
+          "synonyms": "seatbelt",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please make sure your seat belt is fastened low and tight.",
+              "pl": "Prosimy upewnić się, że pas bezpieczeństwa jest zapięty nisko i ciasno.",
+              "focusEn": "seat belt",
+              "focusPl": "pas bezpieczeństwa"
+            },
+            {
+              "en": "The man next to me couldn't find the other half of his seat belt.",
+              "pl": "Mężczyzna obok mnie nie mógł znaleźć drugiej połowy swojego pasa bezpieczeństwa.",
+              "focusEn": "seat belt",
+              "focusPl": "pasa bezpieczeństwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "seat belt",
+            "seatbelt"
+          ],
+          "acceptedTranslations": [
+            "pas bezpieczeństwa",
+            "pas"
+          ]
+        },
+        {
+          "id": "flight.fasten",
+          "term": "fasten",
+          "ipa": "/ˈfæsn/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zapiąć",
+          "definition": "To close or attach something, like a seat belt, so it holds firmly.",
+          "register": "neutralny",
+          "contextPl": "Bezpieczeństwo na pokładzie",
+          "natural": "",
+          "forms": "fastens – fastened – fastened",
+          "collocations": "fasten your seat belt; keep it fastened",
+          "synonyms": "buckle",
+          "antonyms": "unfasten",
+          "notePl": "„t” w „fasten” jest nieme.",
+          "examples": [
+            {
+              "en": "Please fasten your seat belt and put your bag under the seat.",
+              "pl": "Proszę zapiąć pas i włożyć torbę pod siedzenie.",
+              "focusEn": "fasten",
+              "focusPl": "zapiąć"
+            },
+            {
+              "en": "I fastened my daughter's seat belt before the plane started moving.",
+              "pl": "Zapiąłem córce pas, zanim samolot ruszył.",
+              "focusEn": "fastened",
+              "focusPl": "Zapiąłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "fasten",
+            "buckle"
+          ],
+          "acceptedTranslations": [
+            "zapiąć",
+            "zapinać"
+          ]
+        },
+        {
+          "id": "flight.tray-table",
+          "term": "tray table",
+          "ipa": "/ˈtreɪ ˌteɪbl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stolik",
+          "definition": "A small folding table on the back of the seat in front of you.",
+          "register": "neutralny",
+          "contextPl": "Miejsce w samolocie",
+          "natural": "",
+          "forms": "tray tables",
+          "collocations": "put your tray table up; lower your tray table",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please put your tray table up, we're about to land.",
+              "pl": "Prosimy złożyć stolik, za chwilę lądujemy.",
+              "focusEn": "tray table",
+              "focusPl": "stolik"
+            },
+            {
+              "en": "I put my laptop on the tray table and tried to finish my work.",
+              "pl": "Położyłem laptopa na stoliku i próbowałem skończyć pracę.",
+              "focusEn": "tray table",
+              "focusPl": "stoliku"
+            }
+          ],
+          "acceptedAnswers": [
+            "tray table"
+          ],
+          "acceptedTranslations": [
+            "stolik",
+            "rozkładany stolik"
+          ]
+        },
+        {
+          "id": "flight.recline",
+          "term": "recline",
+          "ipa": "/rɪˈklaɪn/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odchylić oparcie",
+          "definition": "To lean the back of your seat backward.",
+          "register": "neutralny",
+          "contextPl": "Miejsce w samolocie",
+          "natural": "",
+          "forms": "reclines – reclined – reclined",
+          "collocations": "recline your seat; fully recline",
+          "synonyms": "lean back",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you mind if I recline my seat a little?",
+              "pl": "Nie ma pan nic przeciwko, jeśli trochę odchylę oparcie?",
+              "focusEn": "recline",
+              "focusPl": "odchylę oparcie"
+            },
+            {
+              "en": "The person in front of me reclined so far that I couldn't open my laptop.",
+              "pl": "Osoba przede mną tak bardzo odchyliła oparcie, że nie mogłem otworzyć laptopa.",
+              "focusEn": "reclined",
+              "focusPl": "odchyliła oparcie"
+            }
+          ],
+          "acceptedAnswers": [
+            "recline",
+            "lean back"
+          ],
+          "acceptedTranslations": [
+            "odchylić oparcie",
+            "odchylać fotel",
+            "rozłożyć fotel"
+          ]
+        },
+        {
+          "id": "flight.legroom",
+          "term": "legroom",
+          "ipa": "/ˈleɡruːm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "miejsce na nogi",
+          "definition": "The space in front of your seat for your legs.",
+          "register": "neutralny",
+          "contextPl": "Miejsce w samolocie",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "extra legroom; not much legroom",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I paid extra for a seat with more legroom.",
+              "pl": "Dopłaciłem za fotel, przy którym jest więcej miejsca na nogi.",
+              "focusEn": "legroom",
+              "focusPl": "miejsca na nogi"
+            },
+            {
+              "en": "There's almost no legroom in these new seats.",
+              "pl": "W tych nowych fotelach prawie nie ma miejsca na nogi.",
+              "focusEn": "legroom",
+              "focusPl": "miejsca na nogi"
+            }
+          ],
+          "acceptedAnswers": [
+            "legroom"
+          ],
+          "acceptedTranslations": [
+            "miejsce na nogi",
+            "przestrzeń na nogi"
+          ]
+        },
+        {
+          "id": "flight.armrest",
+          "term": "armrest",
+          "ipa": "/ˈɑːrmrest/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "podłokietnik",
+          "definition": "The part of a seat where you rest your arm.",
+          "register": "neutralny",
+          "contextPl": "Miejsce w samolocie",
+          "natural": "",
+          "forms": "armrests",
+          "collocations": "share the armrest; lift the armrest",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The man in the middle seat took both armrests for the whole flight.",
+              "pl": "Mężczyzna na środkowym miejscu zajął oba podłokietniki na cały lot.",
+              "focusEn": "armrests",
+              "focusPl": "podłokietniki"
+            },
+            {
+              "en": "You can lift the armrest if the seat next to you is empty.",
+              "pl": "Można podnieść podłokietnik, jeśli miejsce obok jest wolne.",
+              "focusEn": "armrest",
+              "focusPl": "podłokietnik"
+            }
+          ],
+          "acceptedAnswers": [
+            "armrest"
+          ],
+          "acceptedTranslations": [
+            "podłokietnik",
+            "oparcie na rękę"
+          ]
+        },
+        {
+          "id": "flight.window-shade",
+          "term": "window shade",
+          "ipa": "/ˈwɪndoʊ ˌʃeɪd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "roleta okienna",
+          "definition": "A plastic cover you slide down over the window of a plane.",
+          "register": "neutralny",
+          "contextPl": "Miejsce w samolocie",
+          "natural": "",
+          "forms": "window shades",
+          "collocations": "open the window shade; close the window shade",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you close the window shade? The sun is in my eyes.",
+              "pl": "Mógłby pan zasunąć roletę okienną? Słońce świeci mi w oczy.",
+              "focusEn": "window shade",
+              "focusPl": "roletę okienną"
+            },
+            {
+              "en": "Please open your window shade for takeoff and landing.",
+              "pl": "Prosimy otworzyć roletę okienną na czas startu i lądowania.",
+              "focusEn": "window shade",
+              "focusPl": "roletę okienną"
+            }
+          ],
+          "acceptedAnswers": [
+            "window shade"
+          ],
+          "acceptedTranslations": [
+            "roleta okienna",
+            "zasłonka okna",
+            "osłona okna"
+          ]
+        },
+        {
+          "id": "flight.cabin",
+          "term": "cabin",
+          "ipa": "/ˈkæbɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kabina",
+          "definition": "The inside part of a plane where the passengers sit.",
+          "register": "neutralny",
+          "contextPl": "Wnętrze samolotu",
+          "natural": "",
+          "forms": "cabins",
+          "collocations": "main cabin; cabin crew; cabin temperature",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's really cold in the cabin, so I asked for a blanket.",
+              "pl": "W kabinie jest naprawdę zimno, więc poprosiłem o koc.",
+              "focusEn": "cabin",
+              "focusPl": "kabinie"
+            },
+            {
+              "en": "The lights in the cabin went down after the meal.",
+              "pl": "Po posiłku w kabinie przygaszono światła.",
+              "focusEn": "cabin",
+              "focusPl": "kabinie"
+            }
+          ],
+          "acceptedAnswers": [
+            "cabin"
+          ],
+          "acceptedTranslations": [
+            "kabina",
+            "kabina pasażerska"
+          ]
+        },
+        {
+          "id": "flight.economy",
+          "term": "economy",
+          "ipa": "/ɪˈkɑːnəmi/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "klasa ekonomiczna",
+          "definition": "The cheapest class of seats on a plane.",
+          "register": "neutralny",
+          "contextPl": "Klasy podróży",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "fly economy; economy class; economy seats",
+          "synonyms": "coach",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We always fly economy because it's much cheaper.",
+              "pl": "Zawsze latamy klasą ekonomiczną, bo jest dużo tańsza.",
+              "focusEn": "economy",
+              "focusPl": "klasą ekonomiczną"
+            },
+            {
+              "en": "The seats in economy were narrow, but the crew was very friendly.",
+              "pl": "Fotele w klasie ekonomicznej były wąskie, ale załoga była bardzo miła.",
+              "focusEn": "economy",
+              "focusPl": "klasie ekonomicznej"
+            }
+          ],
+          "acceptedAnswers": [
+            "economy",
+            "economy class",
+            "coach"
+          ],
+          "acceptedTranslations": [
+            "klasa ekonomiczna",
+            "ekonomiczna"
+          ]
+        },
+        {
+          "id": "flight.first-class",
+          "term": "first class",
+          "ipa": "/ˌfɜːrst ˈklæs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pierwsza klasa",
+          "definition": "The most expensive and comfortable seats on a plane.",
+          "register": "neutralny",
+          "contextPl": "Klasy podróży",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "fly first class; first-class seat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Jako przymiotnik z łącznikiem: „a first-class seat”.",
+          "examples": [
+            {
+              "en": "The curtain to first class was closed during the whole flight.",
+              "pl": "Zasłona do pierwszej klasy była zasłonięta przez cały lot.",
+              "focusEn": "first class",
+              "focusPl": "pierwszej klasy"
+            },
+            {
+              "en": "In first class, the seats turn into real beds.",
+              "pl": "W pierwszej klasie fotele zamieniają się w prawdziwe łóżka.",
+              "focusEn": "first class",
+              "focusPl": "pierwszej klasie"
+            }
+          ],
+          "acceptedAnswers": [
+            "first class"
+          ],
+          "acceptedTranslations": [
+            "pierwsza klasa"
+          ]
+        },
+        {
+          "id": "flight.business-class",
+          "term": "business class",
+          "ipa": "/ˈbɪznəs ˌklæs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "klasa biznesowa",
+          "definition": "Comfortable seats that cost more than economy but less than first class.",
+          "register": "neutralny",
+          "contextPl": "Klasy podróży",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "fly business class; business-class seat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My company paid for business class because the flight was eleven hours.",
+              "pl": "Moja firma zapłaciła za klasę biznesową, bo lot trwał jedenaście godzin.",
+              "focusEn": "business class",
+              "focusPl": "klasę biznesową"
+            },
+            {
+              "en": "Passengers in business class got off the plane first.",
+              "pl": "Pasażerowie klasy biznesowej wysiedli z samolotu jako pierwsi.",
+              "focusEn": "business class",
+              "focusPl": "klasy biznesowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "business class"
+          ],
+          "acceptedTranslations": [
+            "klasa biznesowa",
+            "biznes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flight.crew-safety",
+      "namePl": "Załoga i bezpieczeństwo",
+      "scenePl": "Pokaz zasad bezpieczeństwa przed startem i praca załogi w czasie lotu",
+      "entries": [
+        {
+          "id": "flight.flight-attendant",
+          "term": "flight attendant",
+          "ipa": "/ˈflaɪt əˌtendənt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "steward, stewardesa",
+          "definition": "A person whose job is to look after passengers on a plane.",
+          "register": "neutralny",
+          "contextPl": "Załoga samolotu",
+          "natural": "",
+          "forms": "flight attendants",
+          "collocations": "ask a flight attendant; call a flight attendant",
+          "synonyms": "cabin crew member",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The flight attendant helped an older woman find her seat.",
+              "pl": "Stewardesa pomogła starszej pani znaleźć miejsce.",
+              "focusEn": "flight attendant",
+              "focusPl": "Stewardesa"
+            },
+            {
+              "en": "I asked a flight attendant for a glass of water.",
+              "pl": "Poprosiłem stewardesę o szklankę wody.",
+              "focusEn": "flight attendant",
+              "focusPl": "stewardesę"
+            }
+          ],
+          "acceptedAnswers": [
+            "flight attendant",
+            "stewardess",
+            "steward"
+          ],
+          "acceptedTranslations": [
+            "steward, stewardesa",
+            "stewardesa",
+            "steward",
+            "członek personelu pokładowego"
+          ]
+        },
+        {
+          "id": "flight.pilot",
+          "term": "pilot",
+          "ipa": "/ˈpaɪlət/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pilot",
+          "definition": "A person who flies a plane.",
+          "register": "neutralny",
+          "contextPl": "Załoga samolotu",
+          "natural": "",
+          "forms": "pilots",
+          "collocations": "the pilot announced; co-pilot",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The pilot said we would land fifteen minutes early.",
+              "pl": "Pilot powiedział, że wylądujemy piętnaście minut przed czasem.",
+              "focusEn": "pilot",
+              "focusPl": "Pilot"
+            },
+            {
+              "en": "Our pilot made a very smooth landing, and everyone clapped.",
+              "pl": "Nasz pilot wylądował bardzo łagodnie i wszyscy zaczęli klaskać.",
+              "focusEn": "pilot",
+              "focusPl": "pilot"
+            }
+          ],
+          "acceptedAnswers": [
+            "pilot"
+          ],
+          "acceptedTranslations": [
+            "pilot"
+          ]
+        },
+        {
+          "id": "flight.captain",
+          "term": "captain",
+          "ipa": "/ˈkæptɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kapitan",
+          "definition": "The pilot who is in charge of the plane.",
+          "register": "neutralny",
+          "contextPl": "Załoga samolotu",
+          "natural": "",
+          "forms": "captains",
+          "collocations": "this is your captain speaking",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W komunikatach: „This is your captain speaking”.",
+          "examples": [
+            {
+              "en": "This is your captain speaking, we're about to begin our descent.",
+              "pl": "Mówi kapitan, za chwilę rozpoczynamy zniżanie.",
+              "focusEn": "captain",
+              "focusPl": "kapitan"
+            },
+            {
+              "en": "The captain turned on the seat belt sign because of the storm ahead.",
+              "pl": "Kapitan włączył sygnalizację zapięcia pasów z powodu burzy przed nami.",
+              "focusEn": "captain",
+              "focusPl": "Kapitan"
+            }
+          ],
+          "acceptedAnswers": [
+            "captain"
+          ],
+          "acceptedTranslations": [
+            "kapitan",
+            "kapitan samolotu"
+          ]
+        },
+        {
+          "id": "flight.crew",
+          "term": "crew",
+          "ipa": "/kruː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "załoga",
+          "definition": "All the people who work on a plane during a flight.",
+          "register": "neutralny",
+          "contextPl": "Załoga samolotu",
+          "natural": "",
+          "forms": "crews",
+          "collocations": "cabin crew; flight crew; crew member",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik zbiorowy: „the crew is/are”.",
+          "examples": [
+            {
+              "en": "The crew will now come through the cabin to collect any trash.",
+              "pl": "Załoga przejdzie teraz przez kabinę, żeby zebrać śmieci.",
+              "focusEn": "crew",
+              "focusPl": "Załoga"
+            },
+            {
+              "en": "The crew was very patient with all the crying babies on board.",
+              "pl": "Załoga była bardzo cierpliwa wobec wszystkich płaczących dzieci na pokładzie.",
+              "focusEn": "crew",
+              "focusPl": "Załoga"
+            }
+          ],
+          "acceptedAnswers": [
+            "crew"
+          ],
+          "acceptedTranslations": [
+            "załoga",
+            "personel pokładowy"
+          ]
+        },
+        {
+          "id": "flight.on-board",
+          "term": "on board",
+          "ipa": "/ˌɑːn ˈbɔːrd/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "na pokładzie",
+          "definition": "On or in a plane, ship or train.",
+          "register": "neutralny",
+          "contextPl": "Na pokładzie",
+          "natural": "",
+          "forms": "",
+          "collocations": "welcome on board; everyone on board; bring on board",
+          "synonyms": "aboard",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Welcome on board our flight to Phoenix.",
+              "pl": "Witamy na pokładzie samolotu lecącego do Phoenix.",
+              "focusEn": "on board",
+              "focusPl": "na pokładzie"
+            },
+            {
+              "en": "There were three doctors on board when the man felt sick.",
+              "pl": "Kiedy mężczyzna źle się poczuł, na pokładzie było trzech lekarzy.",
+              "focusEn": "on board",
+              "focusPl": "na pokładzie"
+            }
+          ],
+          "acceptedAnswers": [
+            "on board",
+            "aboard",
+            "onboard"
+          ],
+          "acceptedTranslations": [
+            "na pokładzie"
+          ]
+        },
+        {
+          "id": "flight.emergency-exit",
+          "term": "emergency exit",
+          "ipa": "/ɪˈmɜːrdʒənsi ˌeɡzɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wyjście awaryjne",
+          "definition": "A door used to leave the plane quickly when there is danger.",
+          "register": "neutralny",
+          "contextPl": "Bezpieczeństwo na pokładzie",
+          "natural": "",
+          "forms": "emergency exits",
+          "collocations": "nearest emergency exit; emergency exit row",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W rzędzie przy wyjściu awaryjnym („exit row”) trzeba umieć pomóc w ewakuacji.",
+          "examples": [
+            {
+              "en": "Please take a moment to find the emergency exit nearest to you.",
+              "pl": "Prosimy poświęcić chwilę na zlokalizowanie najbliższego wyjścia awaryjnego.",
+              "focusEn": "emergency exit",
+              "focusPl": "wyjścia awaryjnego"
+            },
+            {
+              "en": "We sat next to the emergency exit, so we had a lot of legroom.",
+              "pl": "Siedzieliśmy obok wyjścia awaryjnego, więc mieliśmy dużo miejsca na nogi.",
+              "focusEn": "emergency exit",
+              "focusPl": "wyjścia awaryjnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "emergency exit"
+          ],
+          "acceptedTranslations": [
+            "wyjście awaryjne",
+            "wyjście ewakuacyjne"
+          ]
+        },
+        {
+          "id": "flight.safety-demonstration",
+          "term": "safety demonstration",
+          "ipa": "/ˈseɪfti ˌdemənˌstreɪʃn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pokaz zasad bezpieczeństwa",
+          "definition": "A short show by the crew explaining what to do in an emergency.",
+          "register": "neutralny",
+          "contextPl": "Bezpieczeństwo na pokładzie",
+          "natural": "",
+          "forms": "safety demonstrations",
+          "collocations": "watch the safety demonstration",
+          "synonyms": "safety briefing",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please pay attention to the safety demonstration even if you fly often.",
+              "pl": "Prosimy zwrócić uwagę na pokaz zasad bezpieczeństwa, nawet jeśli często państwo latają.",
+              "focusEn": "safety demonstration",
+              "focusPl": "pokaz zasad bezpieczeństwa"
+            },
+            {
+              "en": "Most people were looking at their phones during the safety demonstration.",
+              "pl": "Podczas pokazu zasad bezpieczeństwa większość ludzi patrzyła w telefony.",
+              "focusEn": "safety demonstration",
+              "focusPl": "pokazu zasad bezpieczeństwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "safety demonstration",
+            "safety briefing",
+            "safety video"
+          ],
+          "acceptedTranslations": [
+            "pokaz zasad bezpieczeństwa",
+            "instrukcja bezpieczeństwa"
+          ]
+        },
+        {
+          "id": "flight.life-vest",
+          "term": "life vest",
+          "ipa": "/ˈlaɪf ˌvest/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kamizelka ratunkowa",
+          "definition": "A vest that fills with air and helps you float in water.",
+          "register": "neutralny",
+          "contextPl": "Bezpieczeństwo na pokładzie",
+          "natural": "",
+          "forms": "life vests",
+          "collocations": "put on your life vest; inflate the life vest",
+          "synonyms": "life jacket",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your life vest is under your seat.",
+              "pl": "Twoja kamizelka ratunkowa jest pod siedzeniem.",
+              "focusEn": "life vest",
+              "focusPl": "kamizelka ratunkowa"
+            },
+            {
+              "en": "The flight attendant showed us how to inflate the life vest by pulling the red tabs.",
+              "pl": "Stewardesa pokazała nam, jak napompować kamizelkę ratunkową, pociągając za czerwone uchwyty.",
+              "focusEn": "life vest",
+              "focusPl": "kamizelkę ratunkową"
+            }
+          ],
+          "acceptedAnswers": [
+            "life vest",
+            "life jacket"
+          ],
+          "acceptedTranslations": [
+            "kamizelka ratunkowa"
+          ]
+        },
+        {
+          "id": "flight.oxygen-mask",
+          "term": "oxygen mask",
+          "ipa": "/ˈɑːksɪdʒən ˌmæsk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "maska tlenowa",
+          "definition": "A mask that drops from the ceiling and gives you air if there is a problem.",
+          "register": "neutralny",
+          "contextPl": "Bezpieczeństwo na pokładzie",
+          "natural": "",
+          "forms": "oxygen masks",
+          "collocations": "put on your oxygen mask first",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If the oxygen masks drop, put yours on before helping others.",
+              "pl": "Jeśli wypadną maski tlenowe, załóż swoją, zanim pomożesz innym.",
+              "focusEn": "oxygen masks",
+              "focusPl": "maski tlenowe"
+            },
+            {
+              "en": "The flight attendant held up an oxygen mask and pulled it over her face.",
+              "pl": "Stewardesa podniosła maskę tlenową i założyła ją na twarz.",
+              "focusEn": "oxygen mask",
+              "focusPl": "maskę tlenową"
+            }
+          ],
+          "acceptedAnswers": [
+            "oxygen mask"
+          ],
+          "acceptedTranslations": [
+            "maska tlenowa"
+          ]
+        },
+        {
+          "id": "flight.seat-belt-sign",
+          "term": "seat belt sign",
+          "ipa": "/ˈsiːt belt ˌsaɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sygnalizacja zapięcia pasów",
+          "definition": "A light above your seat that shows when you must wear your seat belt.",
+          "register": "neutralny",
+          "contextPl": "Bezpieczeństwo na pokładzie",
+          "natural": "",
+          "forms": "seat belt signs",
+          "collocations": "the seat belt sign is on; turn off the seat belt sign",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please stay in your seat while the seat belt sign is on.",
+              "pl": "Prosimy pozostać na miejscach, dopóki świeci się sygnalizacja zapięcia pasów.",
+              "focusEn": "seat belt sign",
+              "focusPl": "sygnalizacja zapięcia pasów"
+            },
+            {
+              "en": "As soon as the seat belt sign went off, there was a line for the bathroom.",
+              "pl": "Gdy tylko zgasła sygnalizacja zapięcia pasów, ustawiła się kolejka do toalety.",
+              "focusEn": "seat belt sign",
+              "focusPl": "sygnalizacja zapięcia pasów"
+            }
+          ],
+          "acceptedAnswers": [
+            "seat belt sign"
+          ],
+          "acceptedTranslations": [
+            "sygnalizacja zapięcia pasów",
+            "znak zapięcia pasów",
+            "kontrolka pasów"
+          ]
+        },
+        {
+          "id": "flight.upright-position",
+          "term": "upright position",
+          "ipa": "/ˌʌpraɪt pəˈzɪʃn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pozycja pionowa",
+          "definition": "The straight-up position of your seat back, required for takeoff and landing.",
+          "register": "formalny",
+          "contextPl": "Komunikaty załogi",
+          "natural": "",
+          "forms": "",
+          "collocations": "return your seat to the upright position",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Typowy komunikat: „Please return your seat backs to their full upright position”.",
+          "examples": [
+            {
+              "en": "Please return your seat to the upright position for landing.",
+              "pl": "Prosimy ustawić oparcie fotela w pozycji pionowej do lądowania.",
+              "focusEn": "upright position",
+              "focusPl": "pozycji pionowej"
+            },
+            {
+              "en": "The flight attendant reminded me to keep my seat in the upright position during takeoff.",
+              "pl": "Stewardesa przypomniała mi, żebym podczas startu trzymał oparcie w pozycji pionowej.",
+              "focusEn": "upright position",
+              "focusPl": "pozycji pionowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "upright position"
+          ],
+          "acceptedTranslations": [
+            "pozycja pionowa",
+            "pionowe ustawienie oparcia"
+          ]
+        },
+        {
+          "id": "flight.airplane-mode",
+          "term": "airplane mode",
+          "ipa": "/ˈerpleɪn ˌmoʊd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "tryb samolotowy",
+          "definition": "A phone setting that turns off calls and mobile data.",
+          "register": "neutralny",
+          "contextPl": "Telefon na pokładzie",
+          "natural": "",
+          "forms": "",
+          "collocations": "switch to airplane mode; put your phone on airplane mode",
+          "synonyms": "flight mode",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please switch your phones to airplane mode before we take off.",
+              "pl": "Prosimy przełączyć telefony w tryb samolotowy przed startem.",
+              "focusEn": "airplane mode",
+              "focusPl": "tryb samolotowy"
+            },
+            {
+              "en": "I forgot to turn off airplane mode after we landed, so my messages didn't come.",
+              "pl": "Po wylądowaniu zapomniałem wyłączyć tryb samolotowy, więc nie dochodziły do mnie wiadomości.",
+              "focusEn": "airplane mode",
+              "focusPl": "tryb samolotowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "airplane mode",
+            "flight mode"
+          ],
+          "acceptedTranslations": [
+            "tryb samolotowy"
+          ]
+        },
+        {
+          "id": "flight.call-button",
+          "term": "call button",
+          "ipa": "/ˈkɔːl ˌbʌtn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przycisk przywołania",
+          "definition": "A button above your seat that you press to ask a flight attendant for help.",
+          "register": "neutralny",
+          "contextPl": "Obsługa na pokładzie",
+          "natural": "",
+          "forms": "call buttons",
+          "collocations": "press the call button; push the call button",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you need anything, just press the call button above your head.",
+              "pl": "Jeśli będzie pan czegoś potrzebować, proszę nacisnąć przycisk przywołania nad głową.",
+              "focusEn": "call button",
+              "focusPl": "przycisk przywołania"
+            },
+            {
+              "en": "My son pressed the call button by accident three times.",
+              "pl": "Mój syn trzy razy przez przypadek nacisnął przycisk przywołania.",
+              "focusEn": "call button",
+              "focusPl": "przycisk przywołania"
+            }
+          ],
+          "acceptedAnswers": [
+            "call button"
+          ],
+          "acceptedTranslations": [
+            "przycisk przywołania",
+            "przycisk wezwania stewardesy"
+          ]
+        },
+        {
+          "id": "flight.lavatory",
+          "term": "lavatory",
+          "ipa": "/ˈlævətɔːri/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "toaleta pokładowa",
+          "definition": "A small bathroom on a plane.",
+          "register": "formalny",
+          "contextPl": "Wnętrze samolotu",
+          "natural": "",
+          "forms": "lavatories",
+          "collocations": "the lavatory is occupied; forward lavatory",
+          "synonyms": "bathroom, restroom",
+          "antonyms": "",
+          "notePl": "W komunikatach i na tabliczkach; w rozmowie pasażerowie mówią „bathroom”.",
+          "examples": [
+            {
+              "en": "Smoking is not allowed in the lavatory.",
+              "pl": "W toalecie nie wolno palić.",
+              "focusEn": "lavatory",
+              "focusPl": "toalecie"
+            },
+            {
+              "en": "The lavatory at the back of the plane was out of order.",
+              "pl": "Toaleta z tyłu samolotu była nieczynna.",
+              "focusEn": "lavatory",
+              "focusPl": "Toaleta"
+            }
+          ],
+          "acceptedAnswers": [
+            "lavatory",
+            "bathroom",
+            "restroom"
+          ],
+          "acceptedTranslations": [
+            "toaleta pokładowa",
+            "toaleta",
+            "ubikacja"
+          ]
+        },
+        {
+          "id": "flight.in-case-of-emergency",
+          "term": "in case of emergency",
+          "ipa": "/ɪn ˌkeɪs əv ɪˈmɜːrdʒənsi/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "w razie niebezpieczeństwa",
+          "definition": "If something dangerous or unexpected happens.",
+          "register": "formalny",
+          "contextPl": "Komunikaty załogi",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "in an emergency",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "In case of emergency, the floor lights will show you the way to the exits.",
+              "pl": "W razie niebezpieczeństwa światła w podłodze wskażą drogę do wyjść.",
+              "focusEn": "In case of emergency",
+              "focusPl": "W razie niebezpieczeństwa"
+            },
+            {
+              "en": "The card in the seat pocket explains what to do in case of emergency.",
+              "pl": "Karta w kieszeni fotela wyjaśnia, co robić w razie niebezpieczeństwa.",
+              "focusEn": "in case of emergency",
+              "focusPl": "w razie niebezpieczeństwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "in case of emergency",
+            "in an emergency"
+          ],
+          "acceptedTranslations": [
+            "w razie niebezpieczeństwa",
+            "w nagłym wypadku",
+            "w sytuacji awaryjnej"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flight.takeoff-landing",
+      "namePl": "Start, lot i lądowanie",
+      "scenePl": "Samolot na pasie startowym, potem w powietrzu nad chmurami i przy podchodzeniu do lądowania",
+      "entries": [
+        {
+          "id": "flight.take-off",
+          "term": "take off",
+          "ipa": "/ˌteɪk ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wystartować",
+          "definition": "To leave the ground and begin to fly.",
+          "register": "neutralny",
+          "contextPl": "Start samolotu",
+          "natural": "",
+          "forms": "takes off – took off – taken off",
+          "collocations": "take off on time; be about to take off",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Inne znaczenie: „zdjąć” (ubranie).",
+          "examples": [
+            {
+              "en": "We waited on the runway for half an hour before we finally took off.",
+              "pl": "Czekaliśmy na pasie pół godziny, zanim w końcu wystartowaliśmy.",
+              "focusEn": "took off",
+              "focusPl": "wystartowaliśmy"
+            },
+            {
+              "en": "My ears always hurt right after we take off.",
+              "pl": "Zawsze bolą mnie uszy zaraz po tym, jak wystartujemy.",
+              "focusEn": "take off",
+              "focusPl": "wystartujemy"
+            }
+          ],
+          "acceptedAnswers": [
+            "take off"
+          ],
+          "acceptedTranslations": [
+            "wystartować",
+            "startować"
+          ]
+        },
+        {
+          "id": "flight.takeoff",
+          "term": "takeoff",
+          "ipa": "/ˈteɪkɔːf/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "start",
+          "definition": "The moment when a plane leaves the ground.",
+          "register": "neutralny",
+          "contextPl": "Start samolotu",
+          "natural": "",
+          "forms": "takeoffs",
+          "collocations": "during takeoff; ready for takeoff; smooth takeoff",
+          "synonyms": "",
+          "antonyms": "landing",
+          "notePl": "Rzeczownik pisany łącznie; czasownik „take off” – osobno.",
+          "examples": [
+            {
+              "en": "My daughter held my hand tightly during takeoff.",
+              "pl": "Podczas startu córka mocno trzymała mnie za rękę.",
+              "focusEn": "takeoff",
+              "focusPl": "startu"
+            },
+            {
+              "en": "Flight attendants, please prepare the cabin for takeoff.",
+              "pl": "Personel pokładowy, proszę przygotować kabinę do startu.",
+              "focusEn": "takeoff",
+              "focusPl": "startu"
+            }
+          ],
+          "acceptedAnswers": [
+            "takeoff"
+          ],
+          "acceptedTranslations": [
+            "start",
+            "start samolotu"
+          ]
+        },
+        {
+          "id": "flight.land",
+          "term": "land",
+          "ipa": "/lænd/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wylądować",
+          "definition": "To come down out of the air onto the ground.",
+          "register": "neutralny",
+          "contextPl": "Lądowanie",
+          "natural": "",
+          "forms": "lands – landed – landed",
+          "collocations": "land safely; land on time; land in Boston",
+          "synonyms": "touch down",
+          "antonyms": "take off",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We landed in Boston just before midnight.",
+              "pl": "Wylądowaliśmy w Bostonie tuż przed północą.",
+              "focusEn": "landed",
+              "focusPl": "Wylądowaliśmy"
+            },
+            {
+              "en": "Text me as soon as you land, okay?",
+              "pl": "Napisz do mnie, jak tylko wylądujesz, dobrze?",
+              "focusEn": "land",
+              "focusPl": "wylądujesz"
+            }
+          ],
+          "acceptedAnswers": [
+            "land"
+          ],
+          "acceptedTranslations": [
+            "wylądować",
+            "lądować"
+          ]
+        },
+        {
+          "id": "flight.landing",
+          "term": "landing",
+          "ipa": "/ˈlændɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "lądowanie",
+          "definition": "The moment when a plane comes down onto the ground.",
+          "register": "neutralny",
+          "contextPl": "Lądowanie",
+          "natural": "",
+          "forms": "landings",
+          "collocations": "smooth landing; hard landing; emergency landing",
+          "synonyms": "",
+          "antonyms": "takeoff",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "That was the smoothest landing I've ever had.",
+              "pl": "To było najłagodniejsze lądowanie, jakie przeżyłem.",
+              "focusEn": "landing",
+              "focusPl": "lądowanie"
+            },
+            {
+              "en": "The wind was so strong that the landing felt like a car crash.",
+              "pl": "Wiatr był tak silny, że lądowanie przypominało stłuczkę samochodową.",
+              "focusEn": "landing",
+              "focusPl": "lądowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "landing"
+          ],
+          "acceptedTranslations": [
+            "lądowanie"
+          ]
+        },
+        {
+          "id": "flight.runway",
+          "term": "runway",
+          "ipa": "/ˈrʌnweɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pas startowy",
+          "definition": "The long road at an airport where planes take off and land.",
+          "register": "neutralny",
+          "contextPl": "Start i lądowanie",
+          "natural": "",
+          "forms": "runways",
+          "collocations": "on the runway; wait on the runway",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our plane is third in line for the runway.",
+              "pl": "Nasz samolot jest trzeci w kolejce do pasa startowego.",
+              "focusEn": "runway",
+              "focusPl": "pasa startowego"
+            },
+            {
+              "en": "Snow trucks were clearing the runway while we sat waiting.",
+              "pl": "Pługi odśnieżały pas startowy, a my siedzieliśmy i czekaliśmy.",
+              "focusEn": "runway",
+              "focusPl": "pas startowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "runway"
+          ],
+          "acceptedTranslations": [
+            "pas startowy",
+            "pas"
+          ]
+        },
+        {
+          "id": "flight.turbulence",
+          "term": "turbulence",
+          "ipa": "/ˈtɜːrbjələns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "turbulencje",
+          "definition": "Sudden movements of a plane caused by changes in the wind.",
+          "register": "neutralny",
+          "contextPl": "W powietrzu",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "hit turbulence; light turbulence; a bit of turbulence",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po angielsku liczba pojedyncza: „some turbulence”, nie „turbulences”.",
+          "examples": [
+            {
+              "en": "We're expecting some turbulence, so please stay in your seats.",
+              "pl": "Spodziewamy się turbulencji, więc prosimy pozostać na miejscach.",
+              "focusEn": "turbulence",
+              "focusPl": "turbulencji"
+            },
+            {
+              "en": "The turbulence was so bad that my coffee spilled all over the tray table.",
+              "pl": "Turbulencje były tak silne, że kawa wylała mi się na cały stolik.",
+              "focusEn": "turbulence",
+              "focusPl": "Turbulencje"
+            }
+          ],
+          "acceptedAnswers": [
+            "turbulence"
+          ],
+          "acceptedTranslations": [
+            "turbulencje"
+          ]
+        },
+        {
+          "id": "flight.bumpy",
+          "term": "bumpy",
+          "ipa": "/ˈbʌmpi/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "niespokojny",
+          "definition": "Shaking a lot because of turbulence.",
+          "register": "potoczny",
+          "contextPl": "W powietrzu",
+          "natural": "",
+          "forms": "bumpier – bumpiest",
+          "collocations": "bumpy flight; bumpy ride; bumpy landing",
+          "synonyms": "rough",
+          "antonyms": "smooth",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's going to be a bumpy ride for the next twenty minutes.",
+              "pl": "Przez najbliższe dwadzieścia minut lot będzie niespokojny.",
+              "focusEn": "bumpy",
+              "focusPl": "niespokojny"
+            },
+            {
+              "en": "The flight was so bumpy that I couldn't sleep at all.",
+              "pl": "Lot był tak niespokojny, że w ogóle nie mogłem spać.",
+              "focusEn": "bumpy",
+              "focusPl": "niespokojny"
+            }
+          ],
+          "acceptedAnswers": [
+            "bumpy"
+          ],
+          "acceptedTranslations": [
+            "niespokojny",
+            "trzęsący",
+            "wyboisty"
+          ]
+        },
+        {
+          "id": "flight.smooth",
+          "term": "smooth",
+          "ipa": "/smuːð/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "spokojny, łagodny",
+          "definition": "Without shaking or problems.",
+          "register": "neutralny",
+          "contextPl": "W powietrzu",
+          "natural": "",
+          "forms": "smoother – smoothest",
+          "collocations": "smooth flight; smooth landing",
+          "synonyms": "calm",
+          "antonyms": "bumpy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks for a smooth flight, captain!",
+              "pl": "Dziękujemy za spokojny lot, kapitanie!",
+              "focusEn": "smooth",
+              "focusPl": "spokojny"
+            },
+            {
+              "en": "The landing was so smooth that I didn't feel us touch the ground.",
+              "pl": "Lądowanie było tak łagodne, że nie poczułem, kiedy dotknęliśmy ziemi.",
+              "focusEn": "smooth",
+              "focusPl": "łagodne"
+            }
+          ],
+          "acceptedAnswers": [
+            "smooth"
+          ],
+          "acceptedTranslations": [
+            "spokojny, łagodny",
+            "gładki",
+            "spokojny"
+          ]
+        },
+        {
+          "id": "flight.altitude",
+          "term": "altitude",
+          "ipa": "/ˈæltɪtuːd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wysokość",
+          "definition": "How high a plane is above the ground or the sea.",
+          "register": "neutralny",
+          "contextPl": "W powietrzu",
+          "natural": "",
+          "forms": "altitudes",
+          "collocations": "cruising altitude; high altitude; reach altitude",
+          "synonyms": "height",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We've reached our cruising altitude of thirty-five thousand feet.",
+              "pl": "Osiągnęliśmy wysokość przelotową trzydziestu pięciu tysięcy stóp.",
+              "focusEn": "altitude",
+              "focusPl": "wysokość"
+            },
+            {
+              "en": "At this altitude, the air in the cabin is very dry.",
+              "pl": "Na tej wysokości powietrze w kabinie jest bardzo suche.",
+              "focusEn": "altitude",
+              "focusPl": "wysokości"
+            }
+          ],
+          "acceptedAnswers": [
+            "altitude",
+            "height"
+          ],
+          "acceptedTranslations": [
+            "wysokość",
+            "wysokość przelotowa",
+            "pułap"
+          ]
+        },
+        {
+          "id": "flight.descent",
+          "term": "descent",
+          "ipa": "/dɪˈsent/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "zniżanie",
+          "definition": "The part of a flight when a plane goes down toward the airport.",
+          "register": "neutralny",
+          "contextPl": "Lądowanie",
+          "natural": "",
+          "forms": "descents",
+          "collocations": "begin our descent; during the descent",
+          "synonyms": "",
+          "antonyms": "climb",
+          "notePl": "Typowy komunikat: „We are beginning our descent into…”.",
+          "examples": [
+            {
+              "en": "We are now beginning our descent into Seattle.",
+              "pl": "Rozpoczynamy zniżanie przed lądowaniem w Seattle.",
+              "focusEn": "descent",
+              "focusPl": "zniżanie"
+            },
+            {
+              "en": "My ears popped several times during the descent.",
+              "pl": "Podczas zniżania kilka razy zatkały mi się uszy.",
+              "focusEn": "descent",
+              "focusPl": "zniżania"
+            }
+          ],
+          "acceptedAnswers": [
+            "descent"
+          ],
+          "acceptedTranslations": [
+            "zniżanie",
+            "schodzenie do lądowania",
+            "obniżanie lotu"
+          ]
+        },
+        {
+          "id": "flight.flight-time",
+          "term": "flight time",
+          "ipa": "/ˈflaɪt ˌtaɪm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czas lotu",
+          "definition": "How long a flight takes from takeoff to landing.",
+          "register": "neutralny",
+          "contextPl": "W powietrzu",
+          "natural": "",
+          "forms": "",
+          "collocations": "total flight time; estimated flight time",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our flight time today will be two hours and forty minutes.",
+              "pl": "Nasz dzisiejszy czas lotu wyniesie dwie godziny i czterdzieści minut.",
+              "focusEn": "flight time",
+              "focusPl": "czas lotu"
+            },
+            {
+              "en": "Because of the strong wind, the flight time was shorter than planned.",
+              "pl": "Z powodu silnego wiatru czas lotu był krótszy, niż planowano.",
+              "focusEn": "flight time",
+              "focusPl": "czas lotu"
+            }
+          ],
+          "acceptedAnswers": [
+            "flight time"
+          ],
+          "acceptedTranslations": [
+            "czas lotu"
+          ]
+        },
+        {
+          "id": "flight.nonstop",
+          "term": "nonstop",
+          "ipa": "/ˌnɑːnˈstɑːp/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bezpośredni",
+          "definition": "Flying from one place to another without landing on the way.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje lotów",
+          "natural": "",
+          "forms": "",
+          "collocations": "nonstop flight; fly nonstop",
+          "synonyms": "direct",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This is a nonstop flight, so we won't land until we reach Honolulu.",
+              "pl": "To lot bezpośredni, więc nie wylądujemy aż do Honolulu.",
+              "focusEn": "nonstop",
+              "focusPl": "bezpośredni"
+            },
+            {
+              "en": "A nonstop flight is more expensive, but I hate changing planes.",
+              "pl": "Lot bezpośredni jest droższy, ale nie znoszę przesiadek.",
+              "focusEn": "nonstop",
+              "focusPl": "bezpośredni"
+            }
+          ],
+          "acceptedAnswers": [
+            "nonstop",
+            "direct",
+            "non-stop"
+          ],
+          "acceptedTranslations": [
+            "bezpośredni",
+            "bez przesiadek",
+            "bez międzylądowania"
+          ]
+        },
+        {
+          "id": "flight.red-eye",
+          "term": "red-eye",
+          "ipa": "/ˈred aɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nocny lot",
+          "definition": "A flight that leaves late at night and arrives early in the morning.",
+          "register": "potoczny",
+          "contextPl": "Rodzaje lotów",
+          "natural": "",
+          "forms": "red-eyes",
+          "collocations": "take the red-eye; red-eye flight",
+          "synonyms": "overnight flight",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We took the red-eye from Los Angeles and landed in New York at six a.m.",
+              "pl": "Polecieliśmy nocnym lotem z Los Angeles i wylądowaliśmy w Nowym Jorku o szóstej rano.",
+              "focusEn": "red-eye",
+              "focusPl": "nocnym lotem"
+            },
+            {
+              "en": "Nobody slept on the red-eye because the baby behind us cried all night.",
+              "pl": "Nikt nie spał podczas nocnego lotu, bo dziecko za nami płakało całą noc.",
+              "focusEn": "red-eye",
+              "focusPl": "nocnego lotu"
+            }
+          ],
+          "acceptedAnswers": [
+            "red-eye",
+            "red eye",
+            "red-eye flight"
+          ],
+          "acceptedTranslations": [
+            "nocny lot",
+            "lot nocny"
+          ]
+        },
+        {
+          "id": "flight.taxi",
+          "term": "taxi",
+          "ipa": "/ˈtæksi/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "kołować",
+          "definition": "To move slowly along the ground before takeoff or after landing.",
+          "register": "specjalistyczny",
+          "contextPl": "Start i lądowanie",
+          "natural": "",
+          "forms": "taxis – taxied – taxied",
+          "collocations": "taxi to the runway; taxi to the gate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "O samolocie poruszającym się po ziemi; nie mylić z taksówką.",
+          "examples": [
+            {
+              "en": "The plane taxied for almost twenty minutes before takeoff.",
+              "pl": "Samolot kołował prawie dwadzieścia minut przed startem.",
+              "focusEn": "taxied",
+              "focusPl": "kołował"
+            },
+            {
+              "en": "Please stay seated while we taxi to the gate.",
+              "pl": "Prosimy pozostać na miejscach, gdy kołujemy do stanowiska.",
+              "focusEn": "taxi",
+              "focusPl": "kołujemy"
+            }
+          ],
+          "acceptedAnswers": [
+            "taxi"
+          ],
+          "acceptedTranslations": [
+            "kołować",
+            "kołowanie"
+          ]
+        },
+        {
+          "id": "flight.emergency-landing",
+          "term": "emergency landing",
+          "ipa": "/ɪˌmɜːrdʒənsi ˈlændɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "lądowanie awaryjne",
+          "definition": "A sudden landing because of a problem with the plane or a passenger.",
+          "register": "neutralny",
+          "contextPl": "Lądowanie",
+          "natural": "",
+          "forms": "emergency landings",
+          "collocations": "make an emergency landing",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The plane made an emergency landing because a passenger had a heart attack.",
+              "pl": "Samolot wykonał lądowanie awaryjne, bo jeden z pasażerów miał zawał serca.",
+              "focusEn": "emergency landing",
+              "focusPl": "lądowanie awaryjne"
+            },
+            {
+              "en": "The captain calmly explained that it was not an emergency landing, just a short stop.",
+              "pl": "Kapitan spokojnie wyjaśnił, że to nie jest lądowanie awaryjne, tylko krótki postój.",
+              "focusEn": "emergency landing",
+              "focusPl": "lądowanie awaryjne"
+            }
+          ],
+          "acceptedAnswers": [
+            "emergency landing"
+          ],
+          "acceptedTranslations": [
+            "lądowanie awaryjne",
+            "awaryjne lądowanie"
+          ]
+        },
+        {
+          "id": "flight.touch-down",
+          "term": "touch down",
+          "ipa": "/ˌtʌtʃ ˈdaʊn/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "przyziemić",
+          "definition": "To land on the ground at the end of a flight.",
+          "register": "neutralny",
+          "contextPl": "Lądowanie",
+          "natural": "",
+          "forms": "touches down – touched down – touched down",
+          "collocations": "touch down safely; touch down in Denver",
+          "synonyms": "land",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We touched down in Denver right on time.",
+              "pl": "Wylądowaliśmy w Denver punktualnie co do minuty.",
+              "focusEn": "touched down",
+              "focusPl": "Wylądowaliśmy"
+            },
+            {
+              "en": "People started turning on their phones as soon as we touched down.",
+              "pl": "Ludzie zaczęli włączać telefony, gdy tylko przyziemiliśmy.",
+              "focusEn": "touched down",
+              "focusPl": "przyziemiliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "touch down",
+            "land"
+          ],
+          "acceptedTranslations": [
+            "przyziemić",
+            "wylądować",
+            "dotknąć ziemi"
+          ]
+        },
+        {
+          "id": "flight.circle",
+          "term": "circle",
+          "ipa": "/ˈsɜːrkl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "krążyć",
+          "definition": "To fly around in circles while waiting to land.",
+          "register": "neutralny",
+          "contextPl": "Lądowanie",
+          "natural": "",
+          "forms": "circles – circled – circled",
+          "collocations": "circle the airport; circle above the city",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We had to circle above the airport for thirty minutes because of fog.",
+              "pl": "Musieliśmy krążyć nad lotniskiem przez trzydzieści minut z powodu mgły.",
+              "focusEn": "circle",
+              "focusPl": "krążyć"
+            },
+            {
+              "en": "The plane circled the city twice before it was allowed to land.",
+              "pl": "Samolot dwukrotnie okrążył miasto, zanim pozwolono mu wylądować.",
+              "focusEn": "circled",
+              "focusPl": "okrążył"
+            }
+          ],
+          "acceptedAnswers": [
+            "circle"
+          ],
+          "acceptedTranslations": [
+            "krążyć",
+            "zataczać koła",
+            "okrążyć",
+            "okrążać"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flight.service",
+      "namePl": "Posiłki i obsługa",
+      "scenePl": "Wózek z napojami przesuwa się przejściem, stewardesa obsługuje kolejne rzędy",
+      "entries": [
+        {
+          "id": "flight.snack",
+          "term": "snack",
+          "ipa": "/snæk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przekąska",
+          "definition": "A small amount of food eaten between meals.",
+          "register": "neutralny",
+          "contextPl": "Posiłki na pokładzie",
+          "natural": "",
+          "forms": "snacks",
+          "collocations": "free snacks; snacks for purchase",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The only snack on this flight was a small bag of pretzels.",
+              "pl": "Jedyną przekąską na tym locie była mała paczka precelków.",
+              "focusEn": "snack",
+              "focusPl": "przekąską"
+            },
+            {
+              "en": "Would you like a snack with your coffee?",
+              "pl": "Czy podać panu przekąskę do kawy?",
+              "focusEn": "snack",
+              "focusPl": "przekąskę"
+            }
+          ],
+          "acceptedAnswers": [
+            "snack"
+          ],
+          "acceptedTranslations": [
+            "przekąska"
+          ]
+        },
+        {
+          "id": "flight.drink",
+          "term": "drink",
+          "ipa": "/drɪŋk/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "napój",
+          "definition": "A liquid such as water, juice or soda that you drink.",
+          "register": "neutralny",
+          "contextPl": "Posiłki na pokładzie",
+          "natural": "",
+          "forms": "drinks",
+          "collocations": "free drinks; drink service; something to drink",
+          "synonyms": "beverage",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The flight attendant will come by with drinks in a few minutes.",
+              "pl": "Stewardesa za kilka minut przyjdzie z napojami.",
+              "focusEn": "drinks",
+              "focusPl": "napojami"
+            },
+            {
+              "en": "Can I get you a drink before the cart moves on?",
+              "pl": "Podać panu jakiś napój, zanim wózek pojedzie dalej?",
+              "focusEn": "drink",
+              "focusPl": "napój"
+            }
+          ],
+          "acceptedAnswers": [
+            "drink"
+          ],
+          "acceptedTranslations": [
+            "napój",
+            "coś do picia"
+          ]
+        },
+        {
+          "id": "flight.meal",
+          "term": "meal",
+          "ipa": "/miːl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "posiłek",
+          "definition": "Food that is served at one time, like lunch or dinner.",
+          "register": "neutralny",
+          "contextPl": "Posiłki na pokładzie",
+          "natural": "",
+          "forms": "meals",
+          "collocations": "in-flight meal; hot meal; meal service",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Dinner on this flight is a hot meal with chicken or pasta.",
+              "pl": "Kolacja na tym locie to ciepły posiłek z kurczakiem lub makaronem.",
+              "focusEn": "meal",
+              "focusPl": "posiłek"
+            },
+            {
+              "en": "I slept through the meal and woke up hungry over the ocean.",
+              "pl": "Przespałem posiłek i obudziłem się głodny nad oceanem.",
+              "focusEn": "meal",
+              "focusPl": "posiłek"
+            }
+          ],
+          "acceptedAnswers": [
+            "meal"
+          ],
+          "acceptedTranslations": [
+            "posiłek"
+          ]
+        },
+        {
+          "id": "flight.beverage",
+          "term": "beverage",
+          "ipa": "/ˈbevərɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "napój",
+          "definition": "A drink, a word used mostly in official announcements and menus.",
+          "register": "formalny",
+          "contextPl": "Komunikaty załogi",
+          "natural": "",
+          "forms": "beverages",
+          "collocations": "beverage service; hot beverages; complimentary beverages",
+          "synonyms": "drink",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll begin our beverage service shortly.",
+              "pl": "Wkrótce rozpoczniemy serwowanie napojów.",
+              "focusEn": "beverage",
+              "focusPl": "napojów"
+            },
+            {
+              "en": "Hot beverages are not served during turbulence.",
+              "pl": "Napoje gorące nie są podawane podczas turbulencji.",
+              "focusEn": "beverages",
+              "focusPl": "Napoje"
+            }
+          ],
+          "acceptedAnswers": [
+            "beverage",
+            "drink"
+          ],
+          "acceptedTranslations": [
+            "napój"
+          ]
+        },
+        {
+          "id": "flight.cart",
+          "term": "cart",
+          "ipa": "/kɑːrt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wózek",
+          "definition": "A small table on wheels used to bring food and drinks down the aisle.",
+          "register": "neutralny",
+          "contextPl": "Obsługa na pokładzie",
+          "natural": "",
+          "forms": "carts",
+          "collocations": "beverage cart; food cart; duty-free cart",
+          "synonyms": "trolley",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I waited for the cart to pass before I went to the bathroom.",
+              "pl": "Poczekałem, aż wózek przejedzie, zanim poszedłem do toalety.",
+              "focusEn": "cart",
+              "focusPl": "wózek"
+            },
+            {
+              "en": "The drink cart hit my elbow because I had it in the aisle.",
+              "pl": "Wózek z napojami uderzył mnie w łokieć, bo trzymałem go w przejściu.",
+              "focusEn": "cart",
+              "focusPl": "Wózek"
+            }
+          ],
+          "acceptedAnswers": [
+            "cart",
+            "trolley"
+          ],
+          "acceptedTranslations": [
+            "wózek",
+            "wózek z napojami"
+          ]
+        },
+        {
+          "id": "flight.complimentary",
+          "term": "complimentary",
+          "ipa": "/ˌkɑːmpləˈmentri/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bezpłatny",
+          "definition": "Given free of charge.",
+          "register": "formalny",
+          "contextPl": "Komunikaty załogi",
+          "natural": "",
+          "forms": "",
+          "collocations": "complimentary drinks; complimentary snacks",
+          "synonyms": "free",
+          "antonyms": "",
+          "notePl": "W USA bardzo częste w komunikatach i menu.",
+          "examples": [
+            {
+              "en": "Soft drinks and coffee are complimentary on all flights.",
+              "pl": "Napoje bezalkoholowe i kawa są bezpłatne na wszystkich lotach.",
+              "focusEn": "complimentary",
+              "focusPl": "bezpłatne"
+            },
+            {
+              "en": "We'll be offering a complimentary snack after takeoff.",
+              "pl": "Po starcie zaproponujemy państwu bezpłatną przekąskę.",
+              "focusEn": "complimentary",
+              "focusPl": "bezpłatną"
+            }
+          ],
+          "acceptedAnswers": [
+            "complimentary",
+            "free"
+          ],
+          "acceptedTranslations": [
+            "bezpłatny",
+            "gratisowy",
+            "darmowy"
+          ]
+        },
+        {
+          "id": "flight.for-purchase",
+          "term": "for purchase",
+          "ipa": "/fər ˈpɜːrtʃəs/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "płatny, do kupienia",
+          "definition": "Available if you pay for it.",
+          "register": "formalny",
+          "contextPl": "Obsługa na pokładzie",
+          "natural": "",
+          "forms": "",
+          "collocations": "available for purchase; snacks for purchase",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sandwiches and wine are available for purchase.",
+              "pl": "Kanapki i wino są dostępne do kupienia.",
+              "focusEn": "for purchase",
+              "focusPl": "do kupienia"
+            },
+            {
+              "en": "The menu in the seat pocket lists everything for purchase on this flight.",
+              "pl": "Menu w kieszeni fotela zawiera wszystko, co na tym locie jest do kupienia.",
+              "focusEn": "for purchase",
+              "focusPl": "do kupienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "for purchase"
+          ],
+          "acceptedTranslations": [
+            "płatny, do kupienia",
+            "na sprzedaż",
+            "odpłatnie"
+          ]
+        },
+        {
+          "id": "flight.blanket",
+          "term": "blanket",
+          "ipa": "/ˈblæŋkɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "koc",
+          "definition": "A large warm cover that you put over your body.",
+          "register": "neutralny",
+          "contextPl": "Obsługa na pokładzie",
+          "natural": "",
+          "forms": "blankets",
+          "collocations": "ask for a blanket; extra blanket",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could I have a blanket? It's freezing in here.",
+              "pl": "Czy mogę prosić o koc? Strasznie tu zimno.",
+              "focusEn": "blanket",
+              "focusPl": "koc"
+            },
+            {
+              "en": "There was a thin blanket and a pillow on every seat on the night flight.",
+              "pl": "Na nocnym locie na każdym fotelu leżał cienki koc i poduszka.",
+              "focusEn": "blanket",
+              "focusPl": "koc"
+            }
+          ],
+          "acceptedAnswers": [
+            "blanket"
+          ],
+          "acceptedTranslations": [
+            "koc",
+            "kocyk"
+          ]
+        },
+        {
+          "id": "flight.pillow",
+          "term": "pillow",
+          "ipa": "/ˈpɪloʊ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "poduszka",
+          "definition": "A soft thing that you rest your head on.",
+          "register": "neutralny",
+          "contextPl": "Obsługa na pokładzie",
+          "natural": "",
+          "forms": "pillows",
+          "collocations": "neck pillow; small pillow",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I brought my own neck pillow because the ones on board are tiny.",
+              "pl": "Wziąłem własną poduszkę pod szyję, bo te na pokładzie są malutkie.",
+              "focusEn": "pillow",
+              "focusPl": "poduszkę"
+            },
+            {
+              "en": "The flight attendant gave my son a pillow so he could sleep.",
+              "pl": "Stewardesa dała mojemu synowi poduszkę, żeby mógł spać.",
+              "focusEn": "pillow",
+              "focusPl": "poduszkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "pillow"
+          ],
+          "acceptedTranslations": [
+            "poduszka",
+            "poduszeczka"
+          ]
+        },
+        {
+          "id": "flight.headphones",
+          "term": "headphones",
+          "ipa": "/ˈhedfoʊnz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "słuchawki",
+          "definition": "A device you wear over your ears to listen to sound privately.",
+          "register": "neutralny",
+          "contextPl": "Rozrywka na pokładzie",
+          "natural": "",
+          "forms": "(liczba mnoga)",
+          "collocations": "plug in your headphones; free headphones",
+          "synonyms": "earbuds",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The flight attendant handed out free headphones for the movies.",
+              "pl": "Stewardesa rozdawała darmowe słuchawki do filmów.",
+              "focusEn": "headphones",
+              "focusPl": "słuchawki"
+            },
+            {
+              "en": "Please use headphones if you watch videos during the flight.",
+              "pl": "Prosimy korzystać ze słuchawek podczas oglądania filmów w trakcie lotu.",
+              "focusEn": "headphones",
+              "focusPl": "słuchawek"
+            }
+          ],
+          "acceptedAnswers": [
+            "headphones",
+            "earphones",
+            "earbuds"
+          ],
+          "acceptedTranslations": [
+            "słuchawki"
+          ]
+        },
+        {
+          "id": "flight.in-flight-entertainment",
+          "term": "in-flight entertainment",
+          "ipa": "/ˌɪn flaɪt ˌentərˈteɪnmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "rozrywka pokładowa",
+          "definition": "The movies, shows and games you can watch on a plane.",
+          "register": "neutralny",
+          "contextPl": "Rozrywka na pokładzie",
+          "natural": "",
+          "forms": "",
+          "collocations": "in-flight entertainment system; free in-flight entertainment",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The in-flight entertainment wasn't working, so I read a book the whole way.",
+              "pl": "Rozrywka pokładowa nie działała, więc przez cały lot czytałem książkę.",
+              "focusEn": "in-flight entertainment",
+              "focusPl": "Rozrywka pokładowa"
+            },
+            {
+              "en": "You can find movies and games on the in-flight entertainment screen.",
+              "pl": "Filmy i gry znajdziesz na ekranie rozrywki pokładowej.",
+              "focusEn": "in-flight entertainment",
+              "focusPl": "rozrywki pokładowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "in-flight entertainment"
+          ],
+          "acceptedTranslations": [
+            "rozrywka pokładowa",
+            "system rozrywki pokładowej"
+          ]
+        },
+        {
+          "id": "flight.refill",
+          "term": "refill",
+          "ipa": "/ˈriːfɪl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dolewka",
+          "definition": "A second serving of a drink in the same cup.",
+          "register": "potoczny",
+          "contextPl": "Posiłki na pokładzie",
+          "natural": "",
+          "forms": "refills",
+          "collocations": "get a refill; free refills",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik: „to refill” /ˌriːˈfɪl/ – dolać.",
+          "examples": [
+            {
+              "en": "Could I get a refill on my coffee when you have a minute?",
+              "pl": "Mogłabym prosić o dolewkę kawy, kiedy będzie pani miała chwilę?",
+              "focusEn": "refill",
+              "focusPl": "dolewkę"
+            },
+            {
+              "en": "The flight attendant came back with the pot and offered everyone a refill.",
+              "pl": "Stewardesa wróciła z dzbankiem i zaproponowała wszystkim dolewkę.",
+              "focusEn": "refill",
+              "focusPl": "dolewkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "refill"
+          ],
+          "acceptedTranslations": [
+            "dolewka",
+            "dolanie",
+            "dolewka kawy"
+          ]
+        },
+        {
+          "id": "flight.seat-pocket",
+          "term": "seat pocket",
+          "ipa": "/ˈsiːt ˌpɑːkɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kieszeń w oparciu fotela",
+          "definition": "The pocket on the back of the seat in front of you.",
+          "register": "neutralny",
+          "contextPl": "Miejsce w samolocie",
+          "natural": "",
+          "forms": "seat pockets",
+          "collocations": "in the seat pocket in front of you",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Komunikaty często mówią „seat-back pocket”.",
+          "examples": [
+            {
+              "en": "The safety card is in the seat pocket in front of you.",
+              "pl": "Karta bezpieczeństwa znajduje się w kieszeni w oparciu fotela przed państwem.",
+              "focusEn": "seat pocket",
+              "focusPl": "kieszeni w oparciu fotela"
+            },
+            {
+              "en": "I left my glasses in the seat pocket and only noticed at baggage claim.",
+              "pl": "Zostawiłem okulary w kieszeni w oparciu fotela i zauważyłem to dopiero przy odbiorze bagażu.",
+              "focusEn": "seat pocket",
+              "focusPl": "kieszeni w oparciu fotela"
+            }
+          ],
+          "acceptedAnswers": [
+            "seat pocket",
+            "seat-back pocket"
+          ],
+          "acceptedTranslations": [
+            "kieszeń w oparciu fotela",
+            "kieszeń fotela"
+          ]
+        },
+        {
+          "id": "flight.vegetarian-meal",
+          "term": "vegetarian meal",
+          "ipa": "/ˌvedʒəˈteriən ˌmiːl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "posiłek wegetariański",
+          "definition": "A meal without meat or fish, often ordered before the flight.",
+          "register": "neutralny",
+          "contextPl": "Posiłki na pokładzie",
+          "natural": "",
+          "forms": "vegetarian meals",
+          "collocations": "order a vegetarian meal; special meal",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Inne posiłki specjalne: „gluten-free meal”, „kosher meal”.",
+          "examples": [
+            {
+              "en": "I ordered a vegetarian meal when I booked, and it came first.",
+              "pl": "Zamówiłem posiłek wegetariański przy rezerwacji i dostałem go jako pierwszy.",
+              "focusEn": "vegetarian meal",
+              "focusPl": "posiłek wegetariański"
+            },
+            {
+              "en": "Sorry, we don't have any extra vegetarian meals on this flight.",
+              "pl": "Niestety, nie mamy na tym locie dodatkowych posiłków wegetariańskich.",
+              "focusEn": "vegetarian meals",
+              "focusPl": "posiłków wegetariańskich"
+            }
+          ],
+          "acceptedAnswers": [
+            "vegetarian meal",
+            "special meal"
+          ],
+          "acceptedTranslations": [
+            "posiłek wegetariański",
+            "danie wegetariańskie"
+          ]
+        },
+        {
+          "id": "flight.trash",
+          "term": "trash",
+          "ipa": "/træʃ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "śmieci",
+          "definition": "Things you throw away, like cups and wrappers.",
+          "register": "neutralny",
+          "contextPl": "Obsługa na pokładzie",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "pick up trash; trash bag",
+          "synonyms": "garbage",
+          "antonyms": "",
+          "notePl": "Po brytyjsku: „rubbish”.",
+          "examples": [
+            {
+              "en": "The flight attendants came through the cabin to collect trash before landing.",
+              "pl": "Przed lądowaniem stewardesy przeszły przez kabinę, żeby zebrać śmieci.",
+              "focusEn": "trash",
+              "focusPl": "śmieci"
+            },
+            {
+              "en": "Can I give you my trash? There's no room on my tray table.",
+              "pl": "Mogę oddać pani moje śmieci? Nie mam już miejsca na stoliku.",
+              "focusEn": "trash",
+              "focusPl": "śmieci"
+            }
+          ],
+          "acceptedAnswers": [
+            "trash",
+            "garbage"
+          ],
+          "acceptedTranslations": [
+            "śmieci",
+            "odpadki"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flight.comfort",
+      "namePl": "Samopoczucie w czasie lotu",
+      "scenePl": "Długi nocny lot nad oceanem: przygaszone światła, ciasne fotele i pasażerowie próbujący zasnąć",
+      "entries": [
+        {
+          "id": "flight.jet-lag",
+          "term": "jet lag",
+          "ipa": "/ˈdʒet ˌlæɡ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zmęczenie po zmianie strefy czasowej",
+          "definition": "The tired feeling after a long flight to a different time zone.",
+          "register": "neutralny",
+          "contextPl": "Samopoczucie po długim locie",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "have jet lag; get over jet lag; bad jet lag",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przymiotnik: „jet-lagged” – rozbity po zmianie stref.",
+          "examples": [
+            {
+              "en": "I try to sleep on the plane so the jet lag isn't so bad.",
+              "pl": "Staram się spać w samolocie, żeby zmęczenie po zmianie strefy czasowej nie było takie dokuczliwe.",
+              "focusEn": "jet lag",
+              "focusPl": "zmęczenie po zmianie strefy czasowej"
+            },
+            {
+              "en": "The man next to me said he gets terrible jet lag after flights to Asia.",
+              "pl": "Mężczyzna obok mnie powiedział, że po lotach do Azji ma straszny jet lag.",
+              "focusEn": "jet lag",
+              "focusPl": "jet lag"
+            }
+          ],
+          "acceptedAnswers": [
+            "jet lag"
+          ],
+          "acceptedTranslations": [
+            "zmęczenie po zmianie strefy czasowej",
+            "jet lag",
+            "zespół nagłej zmiany strefy czasowej"
+          ]
+        },
+        {
+          "id": "flight.fall-asleep",
+          "term": "fall asleep",
+          "ipa": "/ˌfɔːl əˈsliːp/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zasnąć",
+          "definition": "To start sleeping.",
+          "register": "neutralny",
+          "contextPl": "Sen w samolocie",
+          "natural": "",
+          "forms": "fell asleep – fallen asleep",
+          "collocations": "fall asleep on the plane; can't fall asleep",
+          "synonyms": "drift off",
+          "antonyms": "wake up",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I fell asleep before takeoff and woke up over Greenland.",
+              "pl": "Zasnąłem przed startem i obudziłem się nad Grenlandią.",
+              "focusEn": "fell asleep",
+              "focusPl": "Zasnąłem"
+            },
+            {
+              "en": "It's hard to fall asleep sitting up in a narrow seat.",
+              "pl": "Trudno zasnąć na siedząco w wąskim fotelu.",
+              "focusEn": "fall asleep",
+              "focusPl": "zasnąć"
+            }
+          ],
+          "acceptedAnswers": [
+            "fall asleep"
+          ],
+          "acceptedTranslations": [
+            "zasnąć",
+            "zasypiać"
+          ]
+        },
+        {
+          "id": "flight.nap",
+          "term": "nap",
+          "ipa": "/næp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "drzemka",
+          "definition": "A short sleep during the day.",
+          "register": "neutralny",
+          "contextPl": "Sen w samolocie",
+          "natural": "",
+          "forms": "naps",
+          "collocations": "take a nap; short nap; quick nap",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I took a short nap after the meal.",
+              "pl": "Po posiłku uciąłem sobie krótką drzemkę.",
+              "focusEn": "nap",
+              "focusPl": "drzemkę"
+            },
+            {
+              "en": "Let's try to get a nap before we land, we have a long day ahead.",
+              "pl": "Spróbujmy złapać drzemkę przed lądowaniem, czeka nas długi dzień.",
+              "focusEn": "nap",
+              "focusPl": "drzemkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "nap"
+          ],
+          "acceptedTranslations": [
+            "drzemka",
+            "krótki sen"
+          ]
+        },
+        {
+          "id": "flight.airsick",
+          "term": "airsick",
+          "ipa": "/ˈersɪk/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "cierpiący na chorobę lokomocyjną",
+          "definition": "Feeling sick in your stomach because of the movement of a plane.",
+          "register": "neutralny",
+          "contextPl": "Samopoczucie w czasie lotu",
+          "natural": "",
+          "forms": "",
+          "collocations": "get airsick; feel airsick",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Ogólnie: „motion sick”; w samochodzie: „carsick”.",
+          "examples": [
+            {
+              "en": "My little boy gets airsick, so we always sit over the wings.",
+              "pl": "Mój synek cierpi na chorobę lokomocyjną w samolocie, więc zawsze siadamy nad skrzydłami.",
+              "focusEn": "airsick",
+              "focusPl": "cierpi na chorobę lokomocyjną"
+            },
+            {
+              "en": "I felt a little airsick during the turbulence and closed my eyes.",
+              "pl": "Podczas turbulencji zrobiło mi się trochę niedobrze i zamknąłem oczy.",
+              "focusEn": "airsick",
+              "focusPl": "niedobrze"
+            }
+          ],
+          "acceptedAnswers": [
+            "airsick",
+            "motion sick"
+          ],
+          "acceptedTranslations": [
+            "cierpiący na chorobę lokomocyjną",
+            "mający mdłości w samolocie",
+            "niedobrze"
+          ]
+        },
+        {
+          "id": "flight.airsickness-bag",
+          "term": "airsickness bag",
+          "ipa": "/ˈersɪknəs ˌbæɡ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "torebka na wypadek mdłości",
+          "definition": "A paper bag in the seat pocket for people who feel sick.",
+          "register": "neutralny",
+          "contextPl": "Samopoczucie w czasie lotu",
+          "natural": "",
+          "forms": "airsickness bags",
+          "collocations": "use the airsickness bag",
+          "synonyms": "sick bag, barf bag",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The airsickness bag is in the seat pocket, just in case.",
+              "pl": "Torebka na wypadek mdłości jest w kieszeni fotela, tak na wszelki wypadek.",
+              "focusEn": "airsickness bag",
+              "focusPl": "Torebka na wypadek mdłości"
+            },
+            {
+              "en": "The flight attendant brought an extra airsickness bag for the woman in 14C.",
+              "pl": "Stewardesa przyniosła dodatkową torebkę na wypadek mdłości dla pani z miejsca 14C.",
+              "focusEn": "airsickness bag",
+              "focusPl": "torebkę na wypadek mdłości"
+            }
+          ],
+          "acceptedAnswers": [
+            "airsickness bag",
+            "sick bag",
+            "barf bag"
+          ],
+          "acceptedTranslations": [
+            "torebka na wypadek mdłości",
+            "torebka higieniczna",
+            "torebka na wymioty"
+          ]
+        },
+        {
+          "id": "flight.ears-pop",
+          "term": "ears pop",
+          "ipa": "/ˈɪrz ˌpɑːp/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zatykają się uszy",
+          "definition": "Said when the air pressure changes and you feel a sudden change in your ears.",
+          "register": "potoczny",
+          "contextPl": "Samopoczucie w czasie lotu",
+          "natural": "",
+          "forms": "ears pop – ears popped",
+          "collocations": "my ears are popping",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Żucie gumy lub ziewanie pomaga, gdy „uszy się zatykają”.",
+          "examples": [
+            {
+              "en": "My ears popped as soon as we started going down.",
+              "pl": "Zatkały mi się uszy, gdy tylko zaczęliśmy schodzić w dół.",
+              "focusEn": "My ears popped",
+              "focusPl": "Zatkały mi się uszy"
+            },
+            {
+              "en": "I chewed gum all through the descent, but my ears popped anyway.",
+              "pl": "Przez całe zniżanie żułem gumę, ale i tak zatkały mi się uszy.",
+              "focusEn": "my ears popped",
+              "focusPl": "zatkały mi się uszy"
+            }
+          ],
+          "acceptedAnswers": [
+            "ears pop",
+            "my ears popped",
+            "ears popped",
+            "my ears are popping"
+          ],
+          "acceptedTranslations": [
+            "zatykają się uszy",
+            "zatkały mi się uszy",
+            "zatkało mi uszy"
+          ]
+        },
+        {
+          "id": "flight.earplugs",
+          "term": "earplugs",
+          "ipa": "/ˈɪrplʌɡz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zatyczki do uszu",
+          "definition": "Small soft pieces you put in your ears to block noise.",
+          "register": "neutralny",
+          "contextPl": "Sen w samolocie",
+          "natural": "",
+          "forms": "earplug – earplugs",
+          "collocations": "wear earplugs; a pair of earplugs",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I can't sleep on a plane without earplugs.",
+              "pl": "Nie umiem spać w samolocie bez zatyczek do uszu.",
+              "focusEn": "earplugs",
+              "focusPl": "zatyczek do uszu"
+            },
+            {
+              "en": "The noise of the engines was so loud that I put in my earplugs.",
+              "pl": "Hałas silników był tak głośny, że włożyłem zatyczki do uszu.",
+              "focusEn": "earplugs",
+              "focusPl": "zatyczki do uszu"
+            }
+          ],
+          "acceptedAnswers": [
+            "earplugs"
+          ],
+          "acceptedTranslations": [
+            "zatyczki do uszu",
+            "stopery",
+            "stoperki"
+          ]
+        },
+        {
+          "id": "flight.eye-mask",
+          "term": "eye mask",
+          "ipa": "/ˈaɪ ˌmæsk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "opaska na oczy",
+          "definition": "A soft cover you wear over your eyes to block light while you sleep.",
+          "register": "neutralny",
+          "contextPl": "Sen w samolocie",
+          "natural": "",
+          "forms": "eye masks",
+          "collocations": "wear an eye mask; sleep mask",
+          "synonyms": "sleep mask",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I put on my eye mask as soon as the cabin lights went down.",
+              "pl": "Założyłem opaskę na oczy, gdy tylko przygaszono światła w kabinie.",
+              "focusEn": "eye mask",
+              "focusPl": "opaskę na oczy"
+            },
+            {
+              "en": "The kit on the night flight came with socks, a toothbrush and an eye mask.",
+              "pl": "Zestaw na nocny lot zawierał skarpetki, szczoteczkę do zębów i opaskę na oczy.",
+              "focusEn": "eye mask",
+              "focusPl": "opaskę na oczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "eye mask",
+            "sleep mask"
+          ],
+          "acceptedTranslations": [
+            "opaska na oczy",
+            "maska do spania"
+          ]
+        },
+        {
+          "id": "flight.stretch-your-legs",
+          "term": "stretch your legs",
+          "ipa": "/ˌstretʃ jʊr ˈleɡz/",
+          "pos": "idiom",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rozprostować nogi",
+          "definition": "To walk around after sitting for a long time.",
+          "register": "neutralny",
+          "contextPl": "Długi lot",
+          "natural": "",
+          "forms": "stretched",
+          "collocations": "get up and stretch your legs",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "On long flights, I get up every two hours to stretch my legs.",
+              "pl": "Na długich lotach co dwie godziny wstaję, żeby rozprostować nogi.",
+              "focusEn": "stretch my legs",
+              "focusPl": "rozprostować nogi"
+            },
+            {
+              "en": "The captain turned off the seat belt sign, so you can stretch your legs.",
+              "pl": "Kapitan wyłączył sygnalizację zapięcia pasów, więc można rozprostować nogi.",
+              "focusEn": "stretch your legs",
+              "focusPl": "rozprostować nogi"
+            }
+          ],
+          "acceptedAnswers": [
+            "stretch your legs"
+          ],
+          "acceptedTranslations": [
+            "rozprostować nogi",
+            "rozprostować kości"
+          ]
+        },
+        {
+          "id": "flight.cramped",
+          "term": "cramped",
+          "ipa": "/kræmpt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ciasny",
+          "definition": "Without enough space to move comfortably.",
+          "register": "neutralny",
+          "contextPl": "Długi lot",
+          "natural": "",
+          "forms": "",
+          "collocations": "cramped seats; feel cramped",
+          "synonyms": "tight",
+          "antonyms": "roomy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The seats were so cramped that I couldn't cross my legs.",
+              "pl": "Fotele były tak ciasne, że nie mogłem założyć nogi na nogę.",
+              "focusEn": "cramped",
+              "focusPl": "ciasne"
+            },
+            {
+              "en": "After ten hours in a cramped seat, my back really hurt.",
+              "pl": "Po dziesięciu godzinach w ciasnym fotelu naprawdę bolały mnie plecy.",
+              "focusEn": "cramped",
+              "focusPl": "ciasnym"
+            }
+          ],
+          "acceptedAnswers": [
+            "cramped"
+          ],
+          "acceptedTranslations": [
+            "ciasny",
+            "ścieśniony",
+            "zatłoczony"
+          ]
+        },
+        {
+          "id": "flight.fear-of-flying",
+          "term": "fear of flying",
+          "ipa": "/ˌfɪr əv ˈflaɪɪŋ/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "strach przed lataniem",
+          "definition": "A strong feeling of being afraid to travel by plane.",
+          "register": "neutralny",
+          "contextPl": "Samopoczucie w czasie lotu",
+          "natural": "",
+          "forms": "",
+          "collocations": "have a fear of flying; get over a fear of flying",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My wife has a fear of flying, so I hold her hand during takeoff.",
+              "pl": "Moja żona ma strach przed lataniem, więc trzymam ją za rękę podczas startu.",
+              "focusEn": "fear of flying",
+              "focusPl": "strach przed lataniem"
+            },
+            {
+              "en": "The turbulence didn't help with my fear of flying.",
+              "pl": "Turbulencje nie pomogły mi w walce ze strachem przed lataniem.",
+              "focusEn": "fear of flying",
+              "focusPl": "strachem przed lataniem"
+            }
+          ],
+          "acceptedAnswers": [
+            "fear of flying"
+          ],
+          "acceptedTranslations": [
+            "strach przed lataniem",
+            "lęk przed lataniem"
+          ]
+        },
+        {
+          "id": "flight.dehydrated",
+          "term": "dehydrated",
+          "ipa": "/ˌdiːˈhaɪdreɪtɪd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odwodniony",
+          "definition": "Not having enough water in your body.",
+          "register": "neutralny",
+          "contextPl": "Samopoczucie w czasie lotu",
+          "natural": "",
+          "forms": "",
+          "collocations": "get dehydrated; feel dehydrated",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The air on planes is so dry that it's easy to get dehydrated.",
+              "pl": "Powietrze w samolotach jest tak suche, że łatwo się odwodnić.",
+              "focusEn": "dehydrated",
+              "focusPl": "odwodnić"
+            },
+            {
+              "en": "I felt dehydrated after the long flight, so I kept asking for water.",
+              "pl": "Po długim locie czułem się odwodniony, więc ciągle prosiłem o wodę.",
+              "focusEn": "dehydrated",
+              "focusPl": "odwodniony"
+            }
+          ],
+          "acceptedAnswers": [
+            "dehydrated"
+          ],
+          "acceptedTranslations": [
+            "odwodniony"
+          ]
+        },
+        {
+          "id": "flight.time-difference",
+          "term": "time difference",
+          "ipa": "/ˈtaɪm ˌdɪfrəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "różnica czasu",
+          "definition": "The number of hours between the time in one place and the time in another.",
+          "register": "neutralny",
+          "contextPl": "Zmiana stref czasowych",
+          "natural": "",
+          "forms": "time differences",
+          "collocations": "a six-hour time difference",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With the six-hour time difference, we'll land at breakfast time.",
+              "pl": "Przy sześciogodzinnej różnicy czasu wylądujemy w porze śniadania.",
+              "focusEn": "time difference",
+              "focusPl": "różnicy czasu"
+            },
+            {
+              "en": "I changed the time on my watch during the flight because of the time difference.",
+              "pl": "W czasie lotu przestawiłem zegarek z powodu różnicy czasu.",
+              "focusEn": "time difference",
+              "focusPl": "różnicy czasu"
+            }
+          ],
+          "acceptedAnswers": [
+            "time difference"
+          ],
+          "acceptedTranslations": [
+            "różnica czasu"
+          ]
+        },
+        {
+          "id": "flight.time-zone",
+          "term": "time zone",
+          "ipa": "/ˈtaɪm ˌzoʊn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "strefa czasowa",
+          "definition": "An area of the world that has the same official time.",
+          "register": "neutralny",
+          "contextPl": "Zmiana stref czasowych",
+          "natural": "",
+          "forms": "time zones",
+          "collocations": "cross time zones; different time zone",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We crossed four time zones on the way to Hawaii.",
+              "pl": "W drodze na Hawaje przelecieliśmy przez cztery strefy czasowe.",
+              "focusEn": "time zones",
+              "focusPl": "strefy czasowe"
+            },
+            {
+              "en": "My phone updated to the new time zone as soon as we landed.",
+              "pl": "Mój telefon przestawił się na nową strefę czasową, gdy tylko wylądowaliśmy.",
+              "focusEn": "time zone",
+              "focusPl": "strefę czasową"
+            }
+          ],
+          "acceptedAnswers": [
+            "time zone"
+          ],
+          "acceptedTranslations": [
+            "strefa czasowa"
+          ]
+        },
+        {
+          "id": "flight.restless",
+          "term": "restless",
+          "ipa": "/ˈrestləs/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "niespokojny",
+          "definition": "Unable to stay still or relax.",
+          "register": "neutralny",
+          "contextPl": "Długi lot",
+          "natural": "",
+          "forms": "",
+          "collocations": "feel restless; restless kids",
+          "synonyms": "fidgety",
+          "antonyms": "calm",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After eight hours in the air, the kids were getting restless.",
+              "pl": "Po ośmiu godzinach w powietrzu dzieci zaczęły robić się niespokojne.",
+              "focusEn": "restless",
+              "focusPl": "niespokojne"
+            },
+            {
+              "en": "I felt restless and kept walking to the back of the plane.",
+              "pl": "Byłem niespokojny i co chwilę chodziłem na tył samolotu.",
+              "focusEn": "restless",
+              "focusPl": "niespokojny"
+            }
+          ],
+          "acceptedAnswers": [
+            "restless"
+          ],
+          "acceptedTranslations": [
+            "niespokojny",
+            "niemogący usiedzieć w miejscu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flight.announcements",
+      "namePl": "Komunikaty i wysiadanie",
+      "scenePl": "Komunikaty z głośników kabiny i wysiadanie z samolotu po dotarciu do stanowiska",
+      "entries": [
+        {
+          "id": "flight.welcome-aboard",
+          "term": "welcome aboard",
+          "ipa": "/ˌwelkəm əˈbɔːrd/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "witamy na pokładzie",
+          "definition": "A greeting the crew says to passengers at the start of a flight.",
+          "register": "neutralny",
+          "contextPl": "Komunikaty załogi",
+          "natural": "",
+          "forms": "",
+          "collocations": "welcome aboard flight 302",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Good morning and welcome aboard our flight to Orlando.",
+              "pl": "Dzień dobry, witamy na pokładzie samolotu lecącego do Orlando.",
+              "focusEn": "welcome aboard",
+              "focusPl": "witamy na pokładzie"
+            },
+            {
+              "en": "The flight attendant at the door said welcome aboard to every passenger.",
+              "pl": "Stewardesa przy drzwiach witała na pokładzie każdego pasażera.",
+              "focusEn": "welcome aboard",
+              "focusPl": "witała na pokładzie"
+            }
+          ],
+          "acceptedAnswers": [
+            "welcome aboard"
+          ],
+          "acceptedTranslations": [
+            "witamy na pokładzie",
+            "witamy na pokładzie samolotu"
+          ]
+        },
+        {
+          "id": "flight.remain-seated",
+          "term": "remain seated",
+          "ipa": "/rɪˌmeɪn ˈsiːtɪd/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pozostać na miejscach",
+          "definition": "To stay in your seat, a phrase used in announcements.",
+          "register": "formalny",
+          "contextPl": "Komunikaty załogi",
+          "natural": "",
+          "forms": "remained seated",
+          "collocations": "please remain seated; remain seated until",
+          "synonyms": "stay seated",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please remain seated until the plane has come to a complete stop.",
+              "pl": "Prosimy pozostać na miejscach do całkowitego zatrzymania samolotu.",
+              "focusEn": "remain seated",
+              "focusPl": "pozostać na miejscach"
+            },
+            {
+              "en": "Passengers were asked to remain seated while the medical team came on board.",
+              "pl": "Pasażerów poproszono, żeby pozostali na miejscach, gdy na pokład wchodził zespół medyczny.",
+              "focusEn": "remain seated",
+              "focusPl": "pozostali na miejscach"
+            }
+          ],
+          "acceptedAnswers": [
+            "remain seated",
+            "stay seated"
+          ],
+          "acceptedTranslations": [
+            "pozostać na miejscach",
+            "nie wstawać",
+            "zostać na miejscu"
+          ]
+        },
+        {
+          "id": "flight.local-time",
+          "term": "local time",
+          "ipa": "/ˌloʊkl ˈtaɪm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czas miejscowy",
+          "definition": "The time in the place where you are arriving.",
+          "register": "neutralny",
+          "contextPl": "Komunikaty załogi",
+          "natural": "",
+          "forms": "",
+          "collocations": "the local time is; arrive at 6 p.m. local time",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The local time in Chicago is ten twenty-five in the evening.",
+              "pl": "Czas miejscowy w Chicago to dwudziesta druga dwadzieścia pięć.",
+              "focusEn": "local time",
+              "focusPl": "Czas miejscowy"
+            },
+            {
+              "en": "We'll arrive at around noon local time.",
+              "pl": "Przylecimy około południa czasu miejscowego.",
+              "focusEn": "local time",
+              "focusPl": "czasu miejscowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "local time"
+          ],
+          "acceptedTranslations": [
+            "czas miejscowy",
+            "czas lokalny"
+          ]
+        },
+        {
+          "id": "flight.get-off",
+          "term": "get off",
+          "ipa": "/ˌɡet ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wysiąść",
+          "definition": "To leave a plane, bus or train.",
+          "register": "neutralny",
+          "contextPl": "Wysiadanie z samolotu",
+          "natural": "",
+          "forms": "gets off – got off – gotten off",
+          "collocations": "get off the plane; get off first",
+          "synonyms": "leave, deplane",
+          "antonyms": "get on",
+          "notePl": "W AmE imiesłów: „gotten”.",
+          "examples": [
+            {
+              "en": "We had to wait twenty minutes to get off the plane.",
+              "pl": "Musieliśmy czekać dwadzieścia minut, żeby wysiąść z samolotu.",
+              "focusEn": "get off",
+              "focusPl": "wysiąść"
+            },
+            {
+              "en": "Let the people in front of us get off first.",
+              "pl": "Niech ludzie przed nami wysiądą pierwsi.",
+              "focusEn": "get off",
+              "focusPl": "wysiądą"
+            }
+          ],
+          "acceptedAnswers": [
+            "get off",
+            "deplane"
+          ],
+          "acceptedTranslations": [
+            "wysiąść",
+            "wysiadać"
+          ]
+        },
+        {
+          "id": "flight.deplane",
+          "term": "deplane",
+          "ipa": "/ˌdiːˈpleɪn/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wysiąść z samolotu",
+          "definition": "To get off a plane, a word used mostly by airline staff.",
+          "register": "formalny",
+          "contextPl": "Komunikaty załogi",
+          "natural": "",
+          "forms": "deplanes – deplaned – deplaned",
+          "collocations": "begin to deplane; deplane from the front door",
+          "synonyms": "get off",
+          "antonyms": "board",
+          "notePl": "Słowo z komunikatów linii lotniczych; w rozmowie mówimy „get off the plane”.",
+          "examples": [
+            {
+              "en": "We will deplane from the front door only.",
+              "pl": "Będziemy wysiadać z samolotu wyłącznie przednimi drzwiami.",
+              "focusEn": "deplane",
+              "focusPl": "wysiadać z samolotu"
+            },
+            {
+              "en": "Please wait for your row before you start to deplane.",
+              "pl": "Prosimy poczekać na swój rząd, zanim zaczną państwo wysiadać z samolotu.",
+              "focusEn": "deplane",
+              "focusPl": "wysiadać z samolotu"
+            }
+          ],
+          "acceptedAnswers": [
+            "deplane",
+            "get off"
+          ],
+          "acceptedTranslations": [
+            "wysiąść z samolotu",
+            "opuścić pokład",
+            "wysiadać z samolotu"
+          ]
+        },
+        {
+          "id": "flight.excuse-me",
+          "term": "excuse me",
+          "ipa": "/ɪkˈskjuːz ˌmiː/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "przepraszam",
+          "definition": "A polite phrase used to get past someone or get their attention.",
+          "register": "neutralny",
+          "contextPl": "Grzeczności na pokładzie",
+          "natural": "",
+          "forms": "",
+          "collocations": "excuse me, can I get by?",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Używane, żeby kogoś przepuścił lub zwrócił uwagę; „sorry” – gdy przepraszamy za coś.",
+          "examples": [
+            {
+              "en": "Excuse me, I need to get to the window seat.",
+              "pl": "Przepraszam, muszę przejść na miejsce przy oknie.",
+              "focusEn": "Excuse me",
+              "focusPl": "Przepraszam"
+            },
+            {
+              "en": "Excuse me, could you help me get my bag down from the bin?",
+              "pl": "Przepraszam, mógłby pan pomóc mi zdjąć torbę ze schowka?",
+              "focusEn": "Excuse me",
+              "focusPl": "Przepraszam"
+            }
+          ],
+          "acceptedAnswers": [
+            "excuse me",
+            "pardon me"
+          ],
+          "acceptedTranslations": [
+            "przepraszam",
+            "przepraszam bardzo"
+          ]
+        },
+        {
+          "id": "flight.get-by",
+          "term": "get by",
+          "ipa": "/ˌɡet ˈbaɪ/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przejść obok",
+          "definition": "To move past someone in a narrow space.",
+          "register": "potoczny",
+          "contextPl": "Grzeczności na pokładzie",
+          "natural": "",
+          "forms": "gets by – got by – gotten by",
+          "collocations": "can I get by?; let someone get by",
+          "synonyms": "get past",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, can I get by? I need to use the bathroom.",
+              "pl": "Przepraszam, mogę przejść? Muszę skorzystać z toalety.",
+              "focusEn": "get by",
+              "focusPl": "przejść"
+            },
+            {
+              "en": "The cart was blocking the aisle, so nobody could get by.",
+              "pl": "Wózek blokował przejście, więc nikt nie mógł przejść.",
+              "focusEn": "get by",
+              "focusPl": "przejść"
+            }
+          ],
+          "acceptedAnswers": [
+            "get by",
+            "get past"
+          ],
+          "acceptedTranslations": [
+            "przejść obok",
+            "przecisnąć się"
+          ]
+        },
+        {
+          "id": "flight.on-behalf-of",
+          "term": "on behalf of",
+          "ipa": "/ɑːn bɪˈhæf əv/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "w imieniu",
+          "definition": "As a representative of someone.",
+          "register": "formalny",
+          "contextPl": "Komunikaty załogi",
+          "natural": "",
+          "forms": "",
+          "collocations": "on behalf of the crew; on behalf of the airline",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "On behalf of the whole crew, thank you for flying with us.",
+              "pl": "W imieniu całej załogi dziękujemy za wspólny lot.",
+              "focusEn": "On behalf of",
+              "focusPl": "W imieniu"
+            },
+            {
+              "en": "The captain apologized for the delay on behalf of the airline.",
+              "pl": "Kapitan przeprosił za opóźnienie w imieniu linii lotniczej.",
+              "focusEn": "on behalf of",
+              "focusPl": "w imieniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "on behalf of"
+          ],
+          "acceptedTranslations": [
+            "w imieniu"
+          ]
+        },
+        {
+          "id": "flight.come-to-a-complete-stop",
+          "term": "come to a complete stop",
+          "ipa": "/ˌkʌm tu ə kəmˌpliːt ˈstɑːp/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "całkowicie się zatrzymać",
+          "definition": "To stop moving completely.",
+          "register": "formalny",
+          "contextPl": "Komunikaty załogi",
+          "natural": "",
+          "forms": "came to a complete stop",
+          "collocations": "until the aircraft comes to a complete stop",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Fragment typowego komunikatu po lądowaniu.",
+          "examples": [
+            {
+              "en": "Keep your seat belt on until the plane has come to a complete stop.",
+              "pl": "Prosimy nie odpinać pasów, dopóki samolot całkowicie się nie zatrzyma.",
+              "focusEn": "come to a complete stop",
+              "focusPl": "całkowicie się nie zatrzyma"
+            },
+            {
+              "en": "Some people stood up before the plane came to a complete stop.",
+              "pl": "Niektórzy wstali, zanim samolot całkowicie się zatrzymał.",
+              "focusEn": "came to a complete stop",
+              "focusPl": "całkowicie się zatrzymał"
+            }
+          ],
+          "acceptedAnswers": [
+            "come to a complete stop"
+          ],
+          "acceptedTranslations": [
+            "całkowicie się zatrzymać",
+            "zatrzymać się całkowicie"
+          ]
+        },
+        {
+          "id": "flight.connecting-gate",
+          "term": "connecting gate",
+          "ipa": "/kəˌnektɪŋ ˈɡeɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "bramka do lotu przesiadkowego",
+          "definition": "The gate where your next flight leaves from.",
+          "register": "neutralny",
+          "contextPl": "Komunikaty załogi",
+          "natural": "",
+          "forms": "connecting gates",
+          "collocations": "connecting gate information",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Załoga często podaje ją w komunikacie przed lądowaniem.",
+          "examples": [
+            {
+              "en": "The flight attendant read out the connecting gate for passengers going to Dallas.",
+              "pl": "Stewardesa odczytała bramkę do lotu przesiadkowego dla pasażerów lecących do Dallas.",
+              "focusEn": "connecting gate",
+              "focusPl": "bramkę do lotu przesiadkowego"
+            },
+            {
+              "en": "You can check your connecting gate on the screen in front of you.",
+              "pl": "Swoją bramkę do lotu przesiadkowego sprawdzisz na ekranie przed sobą.",
+              "focusEn": "connecting gate",
+              "focusPl": "bramkę do lotu przesiadkowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "connecting gate"
+          ],
+          "acceptedTranslations": [
+            "bramka do lotu przesiadkowego",
+            "bramka przesiadkowa"
+          ]
+        }
+      ]
+    }
+  ]
+}

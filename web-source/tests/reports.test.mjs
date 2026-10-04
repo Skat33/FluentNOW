@@ -1,0 +1,56 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {env,sqlite,setOwner} from './fixtures/gemini-runtime.mjs';
+import {submitReport,claimReports,resolveReport,ownedReports,REPORT_INTERVAL} from '../lib/report-store.ts';
+import {vocabularyTarget,productionTarget,practiceTarget,correctionKey,installCorrections,correctedProduction,correctedPractice,validateCorrection} from '../lib/report-corrections.ts';
+import {localGrade,starterPractice} from '../lib/tutor-local.ts';
+import {starterProduction} from '../lib/production.ts';
+import {POST,GET} from '../app/api/reports/route.ts';
+import {POST as reviewPost} from '../app/api/report-review/route.ts';
+const objects=new Map();env.AUDIO={async put(k,v){objects.set(k,new TextDecoder().decode(v));},async delete(k){objects.delete(k);},async get(){return null;}};
+const report=(target)=>({id:crypto.randomUUID(),created:Date.now(),status:'local',mode:'Słownictwo',question:target.context,answer:'zadomowić się',expected:target.expected,comment:'Moja odpowiedź jest poprawna.',target});
+const target=vocabularyTarget('settle in','przyzwyczaić się do nowego miejsca',3,'It took a week to settle in.',['przyzwyczaić się do nowego miejsca']);
+const patch={context:target.context,prompt:'',expected:[...target.expected,'zadomowić się'],translation:'',explanation:'Settle in w tym kontekście oznacza zadomowić się w nowym miejscu.'};
+test('durable reports are account-scoped, idempotent, throttled hourly and corrected without AI on answer',async()=>{
+ const now=Date.now(),r=report(target);await submitReport('A',r,now);await submitReport('A',r,now);
+ assert.equal((await ownedReports('A')).reports.length,1);assert.equal((await ownedReports('B')).reports.length,0);assert.ok(objects.has(`reports/${r.id}.json`));
+ await assert.rejects(submitReport('B',r),/conflict/);
+ const run=await claimReports(now);assert.equal(run.claimed,true);assert.equal(run.reports.length,1);
+ assert.equal((await claimReports(now+1000)).claimed,false);
+ await assert.rejects(resolveReport({id:r.id,token:run.token,verdict:'confirmed',reason:'reason',patch,verified:false},now+1000));
+ await resolveReport({id:r.id,token:run.token,verdict:'confirmed',reason:'Zweryfikowano znaczenie i kierunek tłumaczenia.',patch,verified:true},now+1000);
+ const result=await ownedReports('A');assert.equal(result.reports[0].status,'corrected');assert.equal(result.corrections.length,1);
+ installCorrections(result.corrections);
+ assert.equal(localGrade('zadomowic sie',{en:target.term},{translation:target.meaning},3,target.context).verdict,'correct');
+ assert.equal(localGrade('zadomowic sie',{en:target.term},{translation:'uregulować rachunek'},3,target.context).verdict,'incorrect');
+ installCorrections([]);
+ const r2=report(target);await submitReport('A',r2,now+2000);
+ const next=await claimReports(now+REPORT_INTERVAL);assert.equal(next.claimed,true);
+ await resolveReport({id:r2.id,token:next.token,verdict:'dismissed',reason:'Odpowiedź zmienia znaczenie.',verified:true},now+REPORT_INTERVAL+1000);
+ assert.ok(!objects.has(`reports/${r2.id}.json`));assert.ok(!(await ownedReports('A')).reports.some(r=>r.id===r2.id));
+ await submitReport('A',r2);assert.ok(!objects.has(`reports/${r2.id}.json`),'old outbox must not resurrect a dismissed report');
+});
+test('uncertain reports persist, stale decisions cannot change data, abandoned claims retry next hour',async()=>{
+ sqlite.prepare('DELETE FROM report_runs').run();const now=Date.now(),r=report(target);await submitReport('A',r);
+ const run=await claimReports(now);await assert.rejects(resolveReport({id:r.id,token:crypto.randomUUID(),verdict:'dismissed',reason:'x',verified:true},now));
+ await resolveReport({id:r.id,token:run.token,verdict:'uncertain',reason:'Potrzebny kontekst.',verified:false},now);
+ assert.equal((await ownedReports('A')).reports.find(x=>x.id===r.id).status,'uncertain');assert.ok(objects.has(`reports/${r.id}.json`));
+ const pending=report(target);await submitReport('A',pending);const next=await claimReports(now+REPORT_INTERVAL);assert.ok(next.reports.some(x=>x.id===pending.id));
+ const retried=await claimReports(now+2*REPORT_INTERVAL);assert.ok(retried.reports.some(x=>x.id===pending.id));
+ await assert.rejects(resolveReport({id:pending.id,token:next.token,verdict:'dismissed',reason:'x',verified:true},now+2*REPORT_INTERVAL));
+});
+test('report API requires account and same origin; browser cannot invoke service reviewer',async()=>{
+ setOwner(null);assert.equal((await GET(new Request('https://fluent.example/api/reports'))).status,401);
+ setOwner('A');assert.equal((await POST(new Request('https://fluent.example/api/reports',{method:'POST',body:'{}'}))).status,403);
+ assert.equal((await reviewPost(new Request('https://fluent.example/api/report-review',{method:'POST'}))).status,403);
+});
+test('correction validator preserves grammar schemas and detects ambiguous choices',()=>{
+ const q=starterProduction('B1').items[0],t=productionTarget(q);
+ const p={context:q.context,prompt:q.rule,expected:[q.answer,...q.acceptedAnswers],translation:q.translation,explanation:q.explanation};
+ validateCorrection(t,p);installCorrections([{key:correctionKey(t),target:t,patch:p,updated:Date.now()}]);assert.deepEqual(correctedProduction(q).answer,q.answer);installCorrections([]);
+ assert.throws(()=>validateCorrection(t,{...p,context:'The gap is gone.'}));
+ assert.throws(()=>validateCorrection(target,{...patch,context:'A different sentence.'}));
+ const item=starterPractice('grammar','B1').items[0],pt=practiceTarget(item);
+ const pp={context:item.context,prompt:item.prompt,expected:[item.options[item.answer]],translation:item.translation,explanation:item.explanation};
+ validateCorrection(pt,pp);assert.throws(()=>validateCorrection(pt,{...pp,expected:item.options.slice(0,2)}));
+});

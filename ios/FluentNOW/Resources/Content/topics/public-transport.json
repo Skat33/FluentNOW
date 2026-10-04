@@ -1,0 +1,2504 @@
+{
+  "schemaVersion": 1,
+  "id": "public-transport",
+  "namePl": "Komunikacja miejska",
+  "nameEn": "Public Transportation",
+  "group": "travel",
+  "symbol": "bus",
+  "summaryPl": "Autobus, metro, tramwaj, taksówka i przejazdy na aplikację w mieście.",
+  "aliases": [
+    "komunikacja miejska",
+    "autobus",
+    "metro",
+    "tramwaj",
+    "taksówka",
+    "transport publiczny",
+    "public transportation",
+    "bus",
+    "subway"
+  ],
+  "categories": [
+    {
+      "id": "public-transport.bus",
+      "namePl": "Autobus",
+      "scenePl": "Przystanek autobusowy w centrum miasta i jazda zatłoczonym autobusem miejskim",
+      "entries": [
+        {
+          "id": "public-transport.bus",
+          "term": "bus",
+          "ipa": "/bʌs/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "autobus",
+          "definition": "A large vehicle that carries many passengers along a fixed route.",
+          "register": "neutralny",
+          "contextPl": "Komunikacja miejska",
+          "natural": "",
+          "forms": "buses",
+          "collocations": "take the bus; catch the bus; by bus; city bus",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I usually take the bus to work because parking downtown is expensive.",
+              "pl": "Zwykle jeżdżę do pracy autobusem, bo parkowanie w centrum jest drogie.",
+              "focusEn": "bus",
+              "focusPl": "autobusem"
+            },
+            {
+              "en": "The bus was so full that the driver didn't stop for us.",
+              "pl": "Autobus był tak pełny, że kierowca się dla nas nie zatrzymał.",
+              "focusEn": "bus",
+              "focusPl": "Autobus"
+            }
+          ],
+          "acceptedAnswers": [
+            "bus"
+          ],
+          "acceptedTranslations": [
+            "autobus"
+          ]
+        },
+        {
+          "id": "public-transport.bus-stop",
+          "term": "bus stop",
+          "ipa": "/ˈbʌs ˌstɑːp/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "przystanek autobusowy",
+          "definition": "A place on a street where buses stop for passengers.",
+          "register": "neutralny",
+          "contextPl": "Komunikacja miejska",
+          "natural": "",
+          "forms": "bus stops",
+          "collocations": "wait at the bus stop; the next bus stop",
+          "synonyms": "stop",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's wait at the bus stop across from the bank.",
+              "pl": "Poczekajmy na przystanku autobusowym naprzeciwko banku.",
+              "focusEn": "bus stop",
+              "focusPl": "przystanku autobusowym"
+            },
+            {
+              "en": "The bus stop has a little roof, so we didn't get wet.",
+              "pl": "Przystanek autobusowy ma mały daszek, więc nie zmokliśmy.",
+              "focusEn": "bus stop",
+              "focusPl": "Przystanek autobusowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "bus stop",
+            "stop"
+          ],
+          "acceptedTranslations": [
+            "przystanek autobusowy",
+            "przystanek"
+          ]
+        },
+        {
+          "id": "public-transport.bus-driver",
+          "term": "bus driver",
+          "ipa": "/ˈbʌs ˌdraɪvər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "kierowca autobusu",
+          "definition": "A person whose job is to drive a bus.",
+          "register": "neutralny",
+          "contextPl": "Komunikacja miejska",
+          "natural": "",
+          "forms": "bus drivers",
+          "collocations": "ask the bus driver; thank the bus driver",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA wielu pasażerów mówi kierowcy „Thank you” przy wysiadaniu.",
+          "examples": [
+            {
+              "en": "I asked the bus driver if this bus goes to the hospital.",
+              "pl": "Zapytałem kierowcę autobusu, czy ten autobus jedzie do szpitala.",
+              "focusEn": "bus driver",
+              "focusPl": "kierowcę autobusu"
+            },
+            {
+              "en": "The bus driver waited for the old man to sit down before driving off.",
+              "pl": "Kierowca autobusu poczekał, aż starszy pan usiądzie, i dopiero wtedy ruszył.",
+              "focusEn": "bus driver",
+              "focusPl": "Kierowca autobusu"
+            }
+          ],
+          "acceptedAnswers": [
+            "bus driver"
+          ],
+          "acceptedTranslations": [
+            "kierowca autobusu",
+            "kierowca"
+          ]
+        },
+        {
+          "id": "public-transport.route",
+          "term": "route",
+          "ipa": "/ruːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "trasa, linia",
+          "definition": "The fixed way a bus travels between stops.",
+          "register": "neutralny",
+          "contextPl": "Komunikacja miejska",
+          "natural": "",
+          "forms": "routes",
+          "collocations": "bus route; route 12; on this route",
+          "synonyms": "line",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Which bus route goes to the airport?",
+              "pl": "Która linia autobusowa jedzie na lotnisko?",
+              "focusEn": "route",
+              "focusPl": "linia"
+            },
+            {
+              "en": "The route changed last month, so the bus doesn't stop here anymore.",
+              "pl": "Trasa zmieniła się w zeszłym miesiącu, więc autobus już się tu nie zatrzymuje.",
+              "focusEn": "route",
+              "focusPl": "Trasa"
+            }
+          ],
+          "acceptedAnswers": [
+            "route",
+            "line"
+          ],
+          "acceptedTranslations": [
+            "trasa, linia",
+            "linia"
+          ]
+        },
+        {
+          "id": "public-transport.exact-change",
+          "term": "exact change",
+          "ipa": "/ɪɡˌzækt ˈtʃeɪndʒ/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odliczona kwota",
+          "definition": "The exact amount of money, because the driver cannot give you change.",
+          "register": "neutralny",
+          "contextPl": "Opłaty za przejazd",
+          "natural": "",
+          "forms": "",
+          "collocations": "exact change only; have exact change",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W wielu amerykańskich autobusach kierowca nie wydaje reszty.",
+          "examples": [
+            {
+              "en": "The sign next to the driver says the bus takes exact change only.",
+              "pl": "Tabliczka przy kierowcy informuje, że w autobusie płaci się tylko odliczoną kwotą.",
+              "focusEn": "exact change",
+              "focusPl": "odliczoną kwotą"
+            },
+            {
+              "en": "Do you have exact change? The bus doesn't take twenty-dollar bills.",
+              "pl": "Masz odliczoną kwotę? W autobusie nie przyjmują dwudziestodolarówek.",
+              "focusEn": "exact change",
+              "focusPl": "odliczoną kwotę"
+            }
+          ],
+          "acceptedAnswers": [
+            "exact change"
+          ],
+          "acceptedTranslations": [
+            "odliczona kwota",
+            "odliczone pieniądze",
+            "bez reszty"
+          ]
+        },
+        {
+          "id": "public-transport.fare",
+          "term": "fare",
+          "ipa": "/fer/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "opłata za przejazd",
+          "definition": "The money you pay to ride a bus or subway.",
+          "register": "neutralny",
+          "contextPl": "Opłaty za przejazd",
+          "natural": "",
+          "forms": "fares",
+          "collocations": "bus fare; pay the fare; the fare is two dollars",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bus fare is two seventy-five, and you can pay with your phone.",
+              "pl": "Opłata za przejazd autobusem to dwa siedemdziesiąt pięć i można zapłacić telefonem.",
+              "focusEn": "fare",
+              "focusPl": "Opłata za przejazd"
+            },
+            {
+              "en": "I tapped my card on the reader to pay the fare.",
+              "pl": "Przyłożyłem kartę do czytnika, żeby uiścić opłatę za przejazd.",
+              "focusEn": "fare",
+              "focusPl": "opłatę za przejazd"
+            }
+          ],
+          "acceptedAnswers": [
+            "fare"
+          ],
+          "acceptedTranslations": [
+            "opłata za przejazd",
+            "cena biletu",
+            "bilet"
+          ]
+        },
+        {
+          "id": "public-transport.stop-request",
+          "term": "stop request",
+          "ipa": "/ˈstɑːp rɪˌkwest/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "przycisk „na żądanie”",
+          "definition": "A button or cord you press or pull to tell the driver you want to get off.",
+          "register": "neutralny",
+          "contextPl": "Wysiadanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "press the stop request; pull the cord",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W starszych autobusach w USA ciągnie się linkę: „pull the cord”.",
+          "examples": [
+            {
+              "en": "Press the stop request button before your stop, or the driver won't stop.",
+              "pl": "Naciśnij przycisk „na żądanie” przed swoim przystankiem, inaczej kierowca się nie zatrzyma.",
+              "focusEn": "stop request",
+              "focusPl": "przycisk „na żądanie”"
+            },
+            {
+              "en": "The stop request light came on, so the bus pulled over at the next corner.",
+              "pl": "Zapaliła się lampka przycisku „na żądanie”, więc autobus zatrzymał się na najbliższym rogu.",
+              "focusEn": "stop request",
+              "focusPl": "przycisku „na żądanie”"
+            }
+          ],
+          "acceptedAnswers": [
+            "stop request",
+            "stop button",
+            "pull the cord"
+          ],
+          "acceptedTranslations": [
+            "przycisk „na żądanie”",
+            "sygnał do zatrzymania",
+            "przystanek na żądanie"
+          ]
+        },
+        {
+          "id": "public-transport.crowded",
+          "term": "crowded",
+          "ipa": "/ˈkraʊdɪd/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zatłoczony",
+          "definition": "Full of people.",
+          "register": "neutralny",
+          "contextPl": "Komunikacja miejska",
+          "natural": "",
+          "forms": "",
+          "collocations": "crowded bus; really crowded; get crowded",
+          "synonyms": "packed, full",
+          "antonyms": "empty",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bus is always crowded after school.",
+              "pl": "Autobus po lekcjach zawsze jest zatłoczony.",
+              "focusEn": "crowded",
+              "focusPl": "zatłoczony"
+            },
+            {
+              "en": "It was so crowded that I couldn't reach the door at my stop.",
+              "pl": "Było tak tłoczno, że na swoim przystanku nie mogłem dostać się do drzwi.",
+              "focusEn": "crowded",
+              "focusPl": "tłoczno"
+            }
+          ],
+          "acceptedAnswers": [
+            "crowded"
+          ],
+          "acceptedTranslations": [
+            "zatłoczony",
+            "pełny",
+            "przepełniony",
+            "tłoczno"
+          ]
+        },
+        {
+          "id": "public-transport.next-bus",
+          "term": "next bus",
+          "ipa": "/ˌnekst ˈbʌs/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "następny autobus",
+          "definition": "The bus that will come after the one that just left.",
+          "register": "neutralny",
+          "contextPl": "Komunikacja miejska",
+          "natural": "",
+          "forms": "",
+          "collocations": "when is the next bus?; the next bus is in ten minutes",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We just missed it, but the next bus comes in ten minutes.",
+              "pl": "Właśnie nam uciekł, ale następny autobus przyjedzie za dziesięć minut.",
+              "focusEn": "next bus",
+              "focusPl": "następny autobus"
+            },
+            {
+              "en": "The screen at the stop shows when the next bus will arrive.",
+              "pl": "Wyświetlacz na przystanku pokazuje, kiedy przyjedzie następny autobus.",
+              "focusEn": "next bus",
+              "focusPl": "następny autobus"
+            }
+          ],
+          "acceptedAnswers": [
+            "next bus"
+          ],
+          "acceptedTranslations": [
+            "następny autobus",
+            "kolejny autobus"
+          ]
+        },
+        {
+          "id": "public-transport.bus-lane",
+          "term": "bus lane",
+          "ipa": "/ˈbʌs ˌleɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "buspas",
+          "definition": "A part of the road that only buses may use.",
+          "register": "neutralny",
+          "contextPl": "Komunikacja miejska",
+          "natural": "",
+          "forms": "bus lanes",
+          "collocations": "dedicated bus lane; drive in the bus lane",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks to the new bus lane, the bus is faster than a car at rush hour.",
+              "pl": "Dzięki nowemu buspasowi autobus jest w godzinach szczytu szybszy niż samochód.",
+              "focusEn": "bus lane",
+              "focusPl": "buspasowi"
+            },
+            {
+              "en": "A delivery truck was parked in the bus lane, so our bus had to go around it.",
+              "pl": "W buspasie stała ciężarówka dostawcza, więc nasz autobus musiał ją ominąć.",
+              "focusEn": "bus lane",
+              "focusPl": "buspasie"
+            }
+          ],
+          "acceptedAnswers": [
+            "bus lane"
+          ],
+          "acceptedTranslations": [
+            "buspas",
+            "pas autobusowy"
+          ]
+        },
+        {
+          "id": "public-transport.bus-shelter",
+          "term": "bus shelter",
+          "ipa": "/ˈbʌs ˌʃeltər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wiata przystankowa",
+          "definition": "A small structure with a roof at a bus stop.",
+          "register": "neutralny",
+          "contextPl": "Komunikacja miejska",
+          "natural": "",
+          "forms": "bus shelters",
+          "collocations": "wait in the bus shelter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We waited for the bus inside the bus shelter because of the rain.",
+              "pl": "Czekaliśmy na autobus pod wiatą przystankową, bo padał deszcz.",
+              "focusEn": "bus shelter",
+              "focusPl": "wiatą przystankową"
+            },
+            {
+              "en": "Someone had put an ad for a lost dog on the bus shelter.",
+              "pl": "Ktoś przykleił na wiacie przystankowej ogłoszenie o zaginionym psie.",
+              "focusEn": "bus shelter",
+              "focusPl": "wiacie przystankowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "bus shelter"
+          ],
+          "acceptedTranslations": [
+            "wiata przystankowa",
+            "wiata",
+            "zadaszenie przystanku"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "public-transport.subway",
+      "namePl": "Metro",
+      "scenePl": "Stacja metra w godzinach szczytu: bramki, peron i zatłoczony wagon",
+      "entries": [
+        {
+          "id": "public-transport.subway",
+          "term": "subway",
+          "ipa": "/ˈsʌbweɪ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "metro",
+          "definition": "An underground train system in a city.",
+          "register": "neutralny",
+          "contextPl": "Metro",
+          "natural": "",
+          "forms": "subways",
+          "collocations": "take the subway; subway line; on the subway",
+          "synonyms": "metro",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's faster to take the subway than a taxi at this time of day.",
+              "pl": "O tej porze szybciej jest pojechać metrem niż taksówką.",
+              "focusEn": "subway",
+              "focusPl": "metrem"
+            },
+            {
+              "en": "The subway was so hot that everyone was fanning themselves.",
+              "pl": "W metrze było tak gorąco, że wszyscy się wachlowali.",
+              "focusEn": "subway",
+              "focusPl": "metrze"
+            }
+          ],
+          "acceptedAnswers": [
+            "subway",
+            "metro"
+          ],
+          "acceptedTranslations": [
+            "metro",
+            "kolejka podziemna"
+          ]
+        },
+        {
+          "id": "public-transport.subway-station",
+          "term": "subway station",
+          "ipa": "/ˈsʌbweɪ ˌsteɪʃn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "stacja metra",
+          "definition": "A place where subway trains stop for passengers.",
+          "register": "neutralny",
+          "contextPl": "Metro",
+          "natural": "",
+          "forms": "subway stations",
+          "collocations": "the nearest subway station",
+          "synonyms": "station",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Excuse me, where's the nearest subway station from here?",
+              "pl": "Przepraszam, gdzie jest stąd najbliższa stacja metra?",
+              "focusEn": "subway station",
+              "focusPl": "stacja metra"
+            },
+            {
+              "en": "The entrance to the subway station is right next to the coffee shop.",
+              "pl": "Wejście do stacji metra jest tuż obok kawiarni.",
+              "focusEn": "subway station",
+              "focusPl": "stacji metra"
+            }
+          ],
+          "acceptedAnswers": [
+            "subway station",
+            "station",
+            "metro station"
+          ],
+          "acceptedTranslations": [
+            "stacja metra"
+          ]
+        },
+        {
+          "id": "public-transport.line",
+          "term": "line",
+          "ipa": "/laɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "linia",
+          "definition": "One route of a subway or bus system, often with a color or number.",
+          "register": "neutralny",
+          "contextPl": "Metro",
+          "natural": "",
+          "forms": "lines",
+          "collocations": "the red line; take the blue line; switch lines",
+          "synonyms": "route",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Take the red line and get off at Park Street.",
+              "pl": "Pojedź czerwoną linią i wysiądź na Park Street.",
+              "focusEn": "line",
+              "focusPl": "linią"
+            },
+            {
+              "en": "We had to switch lines twice to get to the stadium.",
+              "pl": "Żeby dojechać na stadion, musieliśmy dwa razy zmieniać linie.",
+              "focusEn": "lines",
+              "focusPl": "linie"
+            }
+          ],
+          "acceptedAnswers": [
+            "line",
+            "route"
+          ],
+          "acceptedTranslations": [
+            "linia"
+          ]
+        },
+        {
+          "id": "public-transport.subway-map",
+          "term": "subway map",
+          "ipa": "/ˈsʌbweɪ ˌmæp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "plan metra",
+          "definition": "A map showing all the subway lines and stations.",
+          "register": "neutralny",
+          "contextPl": "Metro",
+          "natural": "",
+          "forms": "subway maps",
+          "collocations": "look at the subway map",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I looked at the subway map on the wall to find our stop.",
+              "pl": "Spojrzałem na plan metra na ścianie, żeby znaleźć nasz przystanek.",
+              "focusEn": "subway map",
+              "focusPl": "plan metra"
+            },
+            {
+              "en": "The subway map looks confusing, but it's easy once you know the colors.",
+              "pl": "Plan metra wygląda na skomplikowany, ale jest prosty, kiedy zna się kolory.",
+              "focusEn": "subway map",
+              "focusPl": "Plan metra"
+            }
+          ],
+          "acceptedAnswers": [
+            "subway map"
+          ],
+          "acceptedTranslations": [
+            "plan metra",
+            "mapa metra"
+          ]
+        },
+        {
+          "id": "public-transport.turnstile",
+          "term": "turnstile",
+          "ipa": "/ˈtɜːrnstaɪl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bramka obrotowa",
+          "definition": "A gate with turning metal bars that lets one person through at a time.",
+          "register": "neutralny",
+          "contextPl": "Metro",
+          "natural": "",
+          "forms": "turnstiles",
+          "collocations": "go through the turnstile; jump the turnstile",
+          "synonyms": "gate",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My card didn't work, and the turnstile wouldn't turn.",
+              "pl": "Moja karta nie zadziałała i bramka obrotowa się nie obróciła.",
+              "focusEn": "turnstile",
+              "focusPl": "bramka obrotowa"
+            },
+            {
+              "en": "It's hard to get a big suitcase through the turnstile.",
+              "pl": "Trudno przepchnąć dużą walizkę przez bramkę obrotową.",
+              "focusEn": "turnstile",
+              "focusPl": "bramkę obrotową"
+            }
+          ],
+          "acceptedAnswers": [
+            "turnstile",
+            "gate",
+            "fare gate"
+          ],
+          "acceptedTranslations": [
+            "bramka obrotowa",
+            "kołowrót",
+            "bramka"
+          ]
+        },
+        {
+          "id": "public-transport.tap",
+          "term": "tap",
+          "ipa": "/tæp/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przyłożyć kartę",
+          "definition": "To touch a card or phone briefly against a reader to pay.",
+          "register": "neutralny",
+          "contextPl": "Metro",
+          "natural": "",
+          "forms": "taps – tapped – tapped",
+          "collocations": "tap your card; tap to pay; tap in",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też „swipe” – przeciągnąć kartę przez czytnik.",
+          "examples": [
+            {
+              "en": "Just tap your phone on the reader at the gate.",
+              "pl": "Po prostu przyłóż telefon do czytnika przy bramce.",
+              "focusEn": "tap",
+              "focusPl": "przyłóż"
+            },
+            {
+              "en": "I tapped my card twice by mistake and paid two fares.",
+              "pl": "Przez pomyłkę dwa razy przyłożyłem kartę i zapłaciłem za dwa przejazdy.",
+              "focusEn": "tapped",
+              "focusPl": "przyłożyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "tap"
+          ],
+          "acceptedTranslations": [
+            "przyłożyć kartę",
+            "przyłożyć",
+            "zbliżyć"
+          ]
+        },
+        {
+          "id": "public-transport.fare-card",
+          "term": "fare card",
+          "ipa": "/ˈfer ˌkɑːrd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "karta miejska",
+          "definition": "A plastic card you put money on to pay for subway and bus rides.",
+          "register": "neutralny",
+          "contextPl": "Opłaty za przejazd",
+          "natural": "",
+          "forms": "fare cards",
+          "collocations": "reload your fare card; buy a fare card",
+          "synonyms": "transit card",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I put twenty dollars on my fare card at the machine.",
+              "pl": "Doładowałem kartę miejską w automacie kwotą dwudziestu dolarów.",
+              "focusEn": "fare card",
+              "focusPl": "kartę miejską"
+            },
+            {
+              "en": "My fare card is almost empty, so I need to add money.",
+              "pl": "Na mojej karcie miejskiej prawie nic nie ma, więc muszę ją doładować.",
+              "focusEn": "fare card",
+              "focusPl": "karcie miejskiej"
+            }
+          ],
+          "acceptedAnswers": [
+            "fare card",
+            "transit card"
+          ],
+          "acceptedTranslations": [
+            "karta miejska",
+            "bilet elektroniczny",
+            "karta na przejazdy"
+          ]
+        },
+        {
+          "id": "public-transport.uptown",
+          "term": "uptown",
+          "ipa": "/ˌʌpˈtaʊn/",
+          "pos": "przysłówek",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "w kierunku północnej części miasta",
+          "definition": "Toward the northern or residential part of a city.",
+          "register": "neutralny",
+          "contextPl": "Metro",
+          "natural": "",
+          "forms": "",
+          "collocations": "uptown train; head uptown",
+          "synonyms": "",
+          "antonyms": "downtown",
+          "notePl": "Na peronach metra w Nowym Jorku: „Uptown” i „Downtown” oznaczają kierunek jazdy.",
+          "examples": [
+            {
+              "en": "Make sure you're on the uptown side of the platform.",
+              "pl": "Upewnij się, że jesteś na peronie w kierunku północnej części miasta.",
+              "focusEn": "uptown",
+              "focusPl": "w kierunku północnej części miasta"
+            },
+            {
+              "en": "We took the train uptown to see the park.",
+              "pl": "Pojechaliśmy pociągiem w kierunku północnej części miasta, żeby zobaczyć park.",
+              "focusEn": "uptown",
+              "focusPl": "w kierunku północnej części miasta"
+            }
+          ],
+          "acceptedAnswers": [
+            "uptown",
+            "uptown train"
+          ],
+          "acceptedTranslations": [
+            "w kierunku północnej części miasta",
+            "na północ",
+            "w górę miasta"
+          ]
+        },
+        {
+          "id": "public-transport.downtown",
+          "term": "downtown",
+          "ipa": "/ˌdaʊnˈtaʊn/",
+          "pos": "przysłówek",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "do centrum",
+          "definition": "To or in the center of a city, where the businesses and stores are.",
+          "register": "neutralny",
+          "contextPl": "Metro",
+          "natural": "",
+          "forms": "",
+          "collocations": "go downtown; downtown train; work downtown",
+          "synonyms": "",
+          "antonyms": "uptown",
+          "notePl": "„Downtown” to po amerykańsku centrum (biznesowe) miasta.",
+          "examples": [
+            {
+              "en": "This train goes downtown, so get off at the third stop.",
+              "pl": "Ten pociąg jedzie do centrum, więc wysiądź na trzecim przystanku.",
+              "focusEn": "downtown",
+              "focusPl": "do centrum"
+            },
+            {
+              "en": "I take the subway downtown every day for work.",
+              "pl": "Codziennie jeżdżę metrem do centrum do pracy.",
+              "focusEn": "downtown",
+              "focusPl": "do centrum"
+            }
+          ],
+          "acceptedAnswers": [
+            "downtown"
+          ],
+          "acceptedTranslations": [
+            "do centrum",
+            "w centrum",
+            "śródmieście"
+          ]
+        },
+        {
+          "id": "public-transport.stand-clear-of-the-closing-doors",
+          "term": "stand clear of the closing doors",
+          "ipa": "/ˌstænd ˈklɪr əv ðə ˌkloʊzɪŋ ˈdɔːrz/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "proszę odsunąć się od drzwi",
+          "definition": "An announcement telling passengers to move away from doors that are closing.",
+          "register": "formalny",
+          "contextPl": "Komunikaty w metrze",
+          "natural": "",
+          "forms": "",
+          "collocations": "please stand clear of the closing doors",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Typowy komunikat w metrze przed zamknięciem drzwi.",
+          "examples": [
+            {
+              "en": "\"Please stand clear of the closing doors,\" said the voice as we ran down the stairs.",
+              "pl": "„Prosimy odsunąć się od drzwi” – rozległ się głos, kiedy zbiegaliśmy po schodach.",
+              "focusEn": "stand clear of the closing doors",
+              "focusPl": "odsunąć się od drzwi"
+            },
+            {
+              "en": "A man kept his bag in the doorway, so the conductor told him to stand clear of the closing doors.",
+              "pl": "Mężczyzna trzymał torbę w drzwiach, więc pracownik metra kazał mu odsunąć się od drzwi.",
+              "focusEn": "stand clear of the closing doors",
+              "focusPl": "odsunąć się od drzwi"
+            }
+          ],
+          "acceptedAnswers": [
+            "stand clear of the closing doors",
+            "stand clear of the doors"
+          ],
+          "acceptedTranslations": [
+            "proszę odsunąć się od drzwi",
+            "odsunąć się od drzwi",
+            "uwaga",
+            "drzwi się zamykają"
+          ]
+        },
+        {
+          "id": "public-transport.packed",
+          "term": "packed",
+          "ipa": "/pækt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zapchany",
+          "definition": "Extremely full of people.",
+          "register": "potoczny",
+          "contextPl": "Godziny szczytu",
+          "natural": "",
+          "forms": "",
+          "collocations": "packed train; totally packed; packed like sardines",
+          "synonyms": "crowded, full",
+          "antonyms": "empty",
+          "notePl": "„Packed like sardines” – ściśnięci jak sardynki.",
+          "examples": [
+            {
+              "en": "The eight a.m. train is always packed with people going to work.",
+              "pl": "Pociąg o ósmej rano jest zawsze zapchany ludźmi jadącymi do pracy.",
+              "focusEn": "packed",
+              "focusPl": "zapchany"
+            },
+            {
+              "en": "The car was so packed that I couldn't even hold the pole.",
+              "pl": "Wagon był tak zapchany, że nie mogłem nawet złapać się drążka.",
+              "focusEn": "packed",
+              "focusPl": "zapchany"
+            }
+          ],
+          "acceptedAnswers": [
+            "packed",
+            "crowded"
+          ],
+          "acceptedTranslations": [
+            "zapchany",
+            "zatłoczony",
+            "nabity"
+          ]
+        },
+        {
+          "id": "public-transport.rush-hour",
+          "term": "rush hour",
+          "ipa": "/ˈrʌʃ ˌaʊər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "godziny szczytu",
+          "definition": "The busy time of day when most people travel to or from work.",
+          "register": "neutralny",
+          "contextPl": "Godziny szczytu",
+          "natural": "",
+          "forms": "rush hours",
+          "collocations": "during rush hour; morning rush hour; avoid rush hour",
+          "synonyms": "peak hours",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Try not to take the subway during rush hour with your suitcase.",
+              "pl": "Staraj się nie jeździć metrem z walizką w godzinach szczytu.",
+              "focusEn": "rush hour",
+              "focusPl": "godzinach szczytu"
+            },
+            {
+              "en": "At rush hour, trains come every two minutes.",
+              "pl": "W godzinach szczytu pociągi przyjeżdżają co dwie minuty.",
+              "focusEn": "rush hour",
+              "focusPl": "godzinach szczytu"
+            }
+          ],
+          "acceptedAnswers": [
+            "rush hour",
+            "peak hours"
+          ],
+          "acceptedTranslations": [
+            "godziny szczytu",
+            "szczyt"
+          ]
+        },
+        {
+          "id": "public-transport.hold-on",
+          "term": "hold on",
+          "ipa": "/ˌhoʊld ˈɑːn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "trzymać się",
+          "definition": "To hold something tightly so you do not fall.",
+          "register": "neutralny",
+          "contextPl": "Godziny szczytu",
+          "natural": "",
+          "forms": "holds on – held on – held on",
+          "collocations": "hold on to the pole; hold on tight",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też „Hold on!” – Chwileczkę!",
+          "examples": [
+            {
+              "en": "Hold on to the pole, the train is about to stop suddenly.",
+              "pl": "Trzymaj się drążka, pociąg zaraz gwałtownie zahamuje.",
+              "focusEn": "Hold on",
+              "focusPl": "Trzymaj się"
+            },
+            {
+              "en": "I held on to the strap with one hand and my coffee with the other.",
+              "pl": "Jedną ręką trzymałem się uchwytu, a w drugiej miałem kawę.",
+              "focusEn": "held on",
+              "focusPl": "trzymałem się"
+            }
+          ],
+          "acceptedAnswers": [
+            "hold on"
+          ],
+          "acceptedTranslations": [
+            "trzymać się",
+            "przytrzymać się",
+            "złapać się"
+          ]
+        },
+        {
+          "id": "public-transport.platform-gap",
+          "term": "platform gap",
+          "ipa": "/ˈplætfɔːrm ˌɡæp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "szczelina między peronem a pociągiem",
+          "definition": "The space between the edge of the platform and the train.",
+          "register": "neutralny",
+          "contextPl": "Komunikaty w metrze",
+          "natural": "",
+          "forms": "",
+          "collocations": "watch the platform gap",
+          "synonyms": "gap",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Watch out for the platform gap when you get off.",
+              "pl": "Uważaj na szczelinę między peronem a pociągiem przy wysiadaniu.",
+              "focusEn": "platform gap",
+              "focusPl": "szczelinę między peronem a pociągiem"
+            },
+            {
+              "en": "My phone fell into the platform gap as I got on the train.",
+              "pl": "Telefon wpadł mi w szczelinę między peronem a pociągiem, kiedy wsiadałem.",
+              "focusEn": "platform gap",
+              "focusPl": "szczelinę między peronem a pociągiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "platform gap",
+            "gap"
+          ],
+          "acceptedTranslations": [
+            "szczelina między peronem a pociągiem",
+            "odstęp między peronem a wagonem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "public-transport.taxi",
+      "namePl": "Taksówka",
+      "scenePl": "Łapanie taksówki na ulicy wieczorem i rozmowa z taksówkarzem w czasie kursu",
+      "entries": [
+        {
+          "id": "public-transport.taxi",
+          "term": "taxi",
+          "ipa": "/ˈtæksi/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "taksówka",
+          "definition": "A car with a driver that you pay to take you somewhere.",
+          "register": "neutralny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "taxis",
+          "collocations": "take a taxi; call a taxi; taxi driver",
+          "synonyms": "cab",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's raining, let's just take a taxi home.",
+              "pl": "Pada, po prostu weźmy taksówkę do domu.",
+              "focusEn": "taxi",
+              "focusPl": "taksówkę"
+            },
+            {
+              "en": "The taxi smelled like pine trees and old coffee.",
+              "pl": "W taksówce pachniało choinką i starą kawą.",
+              "focusEn": "taxi",
+              "focusPl": "taksówce"
+            }
+          ],
+          "acceptedAnswers": [
+            "taxi",
+            "cab",
+            "taxicab"
+          ],
+          "acceptedTranslations": [
+            "taksówka",
+            "taxi"
+          ]
+        },
+        {
+          "id": "public-transport.cab",
+          "term": "cab",
+          "ipa": "/kæb/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "taksówka",
+          "definition": "A taxi.",
+          "register": "potoczny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "cabs",
+          "collocations": "grab a cab; hail a cab; cab driver",
+          "synonyms": "taxi",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's grab a cab, we're already late for dinner.",
+              "pl": "Złapmy taksówkę, już jesteśmy spóźnieni na kolację.",
+              "focusEn": "cab",
+              "focusPl": "taksówkę"
+            },
+            {
+              "en": "The cab driver knew a shortcut through the park.",
+              "pl": "Kierowca taksówki znał skrót przez park.",
+              "focusEn": "cab",
+              "focusPl": "taksówki"
+            }
+          ],
+          "acceptedAnswers": [
+            "cab",
+            "taxi"
+          ],
+          "acceptedTranslations": [
+            "taksówka",
+            "taxi"
+          ]
+        },
+        {
+          "id": "public-transport.hail",
+          "term": "hail",
+          "ipa": "/heɪl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zatrzymać taksówkę",
+          "definition": "To wave your arm to make a taxi stop for you.",
+          "register": "neutralny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "hails – hailed – hailed",
+          "collocations": "hail a cab; hail a taxi",
+          "synonyms": "flag down",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's almost impossible to hail a cab here on a Friday night.",
+              "pl": "W piątkowy wieczór prawie nie da się tu zatrzymać taksówki.",
+              "focusEn": "hail",
+              "focusPl": "zatrzymać"
+            },
+            {
+              "en": "I stood on the corner and hailed the first taxi with its light on.",
+              "pl": "Stanąłem na rogu i zatrzymałem pierwszą taksówkę z zapalonym światłem.",
+              "focusEn": "hailed",
+              "focusPl": "zatrzymałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "hail",
+            "flag down"
+          ],
+          "acceptedTranslations": [
+            "zatrzymać taksówkę",
+            "złapać taksówkę",
+            "zatrzymać",
+            "zatrzymywać"
+          ]
+        },
+        {
+          "id": "public-transport.taxi-stand",
+          "term": "taxi stand",
+          "ipa": "/ˈtæksi ˌstænd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "postój taksówek",
+          "definition": "A place where taxis wait for passengers.",
+          "register": "neutralny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "taxi stands",
+          "collocations": "wait at the taxi stand",
+          "synonyms": "cab stand",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a taxi stand in front of the theater.",
+              "pl": "Przed teatrem jest postój taksówek.",
+              "focusEn": "taxi stand",
+              "focusPl": "postój taksówek"
+            },
+            {
+              "en": "We waited at the taxi stand for twenty minutes, but no cabs came.",
+              "pl": "Czekaliśmy na postoju taksówek dwadzieścia minut, ale żadna taksówka nie przyjechała.",
+              "focusEn": "taxi stand",
+              "focusPl": "postoju taksówek"
+            }
+          ],
+          "acceptedAnswers": [
+            "taxi stand",
+            "cab stand",
+            "taxi rank"
+          ],
+          "acceptedTranslations": [
+            "postój taksówek"
+          ]
+        },
+        {
+          "id": "public-transport.meter",
+          "term": "meter",
+          "ipa": "/ˈmiːtər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "taksometr",
+          "definition": "A machine in a taxi that shows how much you have to pay.",
+          "register": "neutralny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "meters",
+          "collocations": "turn on the meter; the meter is running",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„The meter is running” – licznik bije (też przenośnie).",
+          "examples": [
+            {
+              "en": "Excuse me, could you turn on the meter, please?",
+              "pl": "Przepraszam, czy mógłby pan włączyć taksometr?",
+              "focusEn": "meter",
+              "focusPl": "taksometr"
+            },
+            {
+              "en": "The meter kept running while we sat in traffic.",
+              "pl": "Taksometr cały czas bił, kiedy staliśmy w korku.",
+              "focusEn": "meter",
+              "focusPl": "Taksometr"
+            }
+          ],
+          "acceptedAnswers": [
+            "meter"
+          ],
+          "acceptedTranslations": [
+            "taksometr",
+            "licznik"
+          ]
+        },
+        {
+          "id": "public-transport.take-me-to",
+          "term": "take me to",
+          "ipa": "/ˈteɪk mi tuː/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "proszę mnie zawieźć do",
+          "definition": "What you say to a taxi driver to tell them where to go.",
+          "register": "neutralny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "",
+          "collocations": "take me to the airport; take me to this address",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hi, can you take me to the train station, please?",
+              "pl": "Dzień dobry, czy może mnie pan zawieźć do dworca kolejowego?",
+              "focusEn": "take me to",
+              "focusPl": "zawieźć do"
+            },
+            {
+              "en": "Take me to this address, please, it's near the river.",
+              "pl": "Proszę mnie zawieźć do tego adresu, to blisko rzeki.",
+              "focusEn": "Take me to",
+              "focusPl": "Proszę mnie zawieźć do"
+            }
+          ],
+          "acceptedAnswers": [
+            "take me to"
+          ],
+          "acceptedTranslations": [
+            "proszę mnie zawieźć do",
+            "proszę jechać do",
+            "do"
+          ]
+        },
+        {
+          "id": "public-transport.tip",
+          "term": "tip",
+          "ipa": "/tɪp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "napiwek",
+          "definition": "Extra money you give a driver or waiter to thank them.",
+          "register": "neutralny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "tips",
+          "collocations": "leave a tip; a big tip; include the tip",
+          "synonyms": "gratuity",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I gave the driver a five-dollar tip because he helped with our bags.",
+              "pl": "Dałem kierowcy pięć dolarów napiwku, bo pomógł nam z bagażami.",
+              "focusEn": "tip",
+              "focusPl": "napiwku"
+            },
+            {
+              "en": "The screen in the back of the cab suggested a twenty percent tip.",
+              "pl": "Ekran z tyłu taksówki proponował dwadzieścia procent napiwku.",
+              "focusEn": "tip",
+              "focusPl": "napiwku"
+            }
+          ],
+          "acceptedAnswers": [
+            "tip",
+            "gratuity"
+          ],
+          "acceptedTranslations": [
+            "napiwek"
+          ]
+        },
+        {
+          "id": "public-transport.keep-the-change",
+          "term": "keep the change",
+          "ipa": "/ˌkiːp ðə ˈtʃeɪndʒ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "reszty nie trzeba",
+          "definition": "Said when you want the driver to keep the extra money as a tip.",
+          "register": "neutralny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Here's twenty dollars, and you can keep the change.",
+              "pl": "Proszę, dwadzieścia dolarów, reszty nie trzeba.",
+              "focusEn": "keep the change",
+              "focusPl": "reszty nie trzeba"
+            },
+            {
+              "en": "I handed the driver the money and told him to keep the change.",
+              "pl": "Dałem kierowcy pieniądze i powiedziałem, że reszty nie trzeba.",
+              "focusEn": "keep the change",
+              "focusPl": "reszty nie trzeba"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep the change"
+          ],
+          "acceptedTranslations": [
+            "reszty nie trzeba",
+            "proszę zatrzymać resztę"
+          ]
+        },
+        {
+          "id": "public-transport.pull-over",
+          "term": "pull over",
+          "ipa": "/ˌpʊl ˈoʊvər/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zjechać na bok",
+          "definition": "To move a car to the side of the road and stop.",
+          "register": "neutralny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "pulls over – pulled over – pulled over",
+          "collocations": "pull over here; pull over at the corner",
+          "synonyms": "stop",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can pull over here, we'll walk the rest of the way.",
+              "pl": "Może się pan tu zatrzymać, resztę drogi przejdziemy pieszo.",
+              "focusEn": "pull over",
+              "focusPl": "zatrzymać"
+            },
+            {
+              "en": "The driver pulled over right in front of our hotel.",
+              "pl": "Kierowca zatrzymał się tuż przed naszym hotelem.",
+              "focusEn": "pulled over",
+              "focusPl": "zatrzymał się"
+            }
+          ],
+          "acceptedAnswers": [
+            "pull over",
+            "stop"
+          ],
+          "acceptedTranslations": [
+            "zjechać na bok",
+            "zatrzymać się",
+            "zatrzymać",
+            "zjechać"
+          ]
+        },
+        {
+          "id": "public-transport.drop-off",
+          "term": "drop off",
+          "ipa": "/ˌdrɑːp ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wysadzić",
+          "definition": "To take someone somewhere in a car and leave them there.",
+          "register": "neutralny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "drops off – dropped off – dropped off",
+          "collocations": "drop me off at the corner; drop someone off",
+          "synonyms": "let off",
+          "antonyms": "pick up",
+          "notePl": "Dopełnienie zwykle w środku: „drop me off”.",
+          "examples": [
+            {
+              "en": "Could you drop us off at the next corner?",
+              "pl": "Czy mógłby nas pan wysadzić na następnym rogu?",
+              "focusEn": "drop us off",
+              "focusPl": "wysadzić"
+            },
+            {
+              "en": "The taxi dropped me off right at the door.",
+              "pl": "Taksówka wysadziła mnie pod samymi drzwiami.",
+              "focusEn": "dropped me off",
+              "focusPl": "wysadziła"
+            }
+          ],
+          "acceptedAnswers": [
+            "drop off",
+            "let off"
+          ],
+          "acceptedTranslations": [
+            "wysadzić",
+            "podrzucić",
+            "podwieźć"
+          ]
+        },
+        {
+          "id": "public-transport.flat-rate",
+          "term": "flat rate",
+          "ipa": "/ˌflæt ˈreɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "stała opłata",
+          "definition": "One fixed price for a trip, not based on the meter.",
+          "register": "neutralny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "flat rates",
+          "collocations": "flat rate to the airport; charge a flat rate",
+          "synonyms": "fixed price",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Taxis from the city to the airport charge a flat rate of seventy dollars.",
+              "pl": "Taksówki z miasta na lotnisko pobierają stałą opłatę w wysokości siedemdziesięciu dolarów.",
+              "focusEn": "flat rate",
+              "focusPl": "stałą opłatę"
+            },
+            {
+              "en": "Is it a flat rate, or do you use the meter?",
+              "pl": "To stała opłata, czy liczy pan z taksometru?",
+              "focusEn": "flat rate",
+              "focusPl": "stała opłata"
+            }
+          ],
+          "acceptedAnswers": [
+            "flat rate",
+            "fixed price"
+          ],
+          "acceptedTranslations": [
+            "stała opłata",
+            "ryczałt",
+            "stała stawka"
+          ]
+        },
+        {
+          "id": "public-transport.receipt",
+          "term": "receipt",
+          "ipa": "/rɪˈsiːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "paragon",
+          "definition": "A piece of paper that shows how much you paid.",
+          "register": "neutralny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "receipts",
+          "collocations": "get a receipt; ask for a receipt",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W „receipt” litera „p” jest niema.",
+          "examples": [
+            {
+              "en": "Could I get a receipt? It's for work.",
+              "pl": "Czy mogę prosić o paragon? Potrzebuję go do rozliczenia w pracy.",
+              "focusEn": "receipt",
+              "focusPl": "paragon"
+            },
+            {
+              "en": "The driver printed a receipt from the little machine on the dashboard.",
+              "pl": "Kierowca wydrukował paragon z małego urządzenia na desce rozdzielczej.",
+              "focusEn": "receipt",
+              "focusPl": "paragon"
+            }
+          ],
+          "acceptedAnswers": [
+            "receipt"
+          ],
+          "acceptedTranslations": [
+            "paragon",
+            "rachunek",
+            "pokwitowanie"
+          ]
+        },
+        {
+          "id": "public-transport.trunk",
+          "term": "trunk",
+          "ipa": "/trʌŋk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "bagażnik",
+          "definition": "The closed space at the back of a car for bags.",
+          "register": "neutralny",
+          "contextPl": "Taksówki",
+          "natural": "",
+          "forms": "trunks",
+          "collocations": "put it in the trunk; open the trunk",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po brytyjsku: „boot”.",
+          "examples": [
+            {
+              "en": "The driver put our suitcases in the trunk.",
+              "pl": "Kierowca włożył nasze walizki do bagażnika.",
+              "focusEn": "trunk",
+              "focusPl": "bagażnika"
+            },
+            {
+              "en": "Can you open the trunk? My bag is still in there.",
+              "pl": "Może pan otworzyć bagażnik? Moja torba wciąż tam jest.",
+              "focusEn": "trunk",
+              "focusPl": "bagażnik"
+            }
+          ],
+          "acceptedAnswers": [
+            "trunk"
+          ],
+          "acceptedTranslations": [
+            "bagażnik"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "public-transport.ride-apps",
+      "namePl": "Przejazdy na aplikację",
+      "scenePl": "Zamawianie przejazdu w aplikacji na telefonie i czekanie na kierowcę przed budynkiem",
+      "entries": [
+        {
+          "id": "public-transport.rideshare",
+          "term": "rideshare",
+          "ipa": "/ˈraɪdʃer/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przejazd na aplikację",
+          "definition": "A service where you order a ride with a private driver through a phone app.",
+          "register": "neutralny",
+          "contextPl": "Przejazdy na aplikację",
+          "natural": "",
+          "forms": "rideshares",
+          "collocations": "rideshare app; rideshare driver; take a rideshare",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Nazwy firm często używa się jak czasownika, ale ogólne słowo to „rideshare”.",
+          "examples": [
+            {
+              "en": "A rideshare to the stadium costs about the same as a taxi.",
+              "pl": "Przejazd na aplikację na stadion kosztuje mniej więcej tyle co taksówka.",
+              "focusEn": "rideshare",
+              "focusPl": "Przejazd na aplikację"
+            },
+            {
+              "en": "I opened the rideshare app and saw that the nearest car was ten minutes away.",
+              "pl": "Otworzyłem aplikację do przejazdów i zobaczyłem, że najbliższe auto jest dziesięć minut drogi stąd.",
+              "focusEn": "rideshare",
+              "focusPl": "przejazdów"
+            }
+          ],
+          "acceptedAnswers": [
+            "rideshare",
+            "ride-share",
+            "ride-hailing"
+          ],
+          "acceptedTranslations": [
+            "przejazd na aplikację",
+            "przewóz osób na aplikację"
+          ]
+        },
+        {
+          "id": "public-transport.request-a-ride",
+          "term": "request a ride",
+          "ipa": "/rɪˌkwest ə ˈraɪd/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zamówić przejazd",
+          "definition": "To ask for a car and driver through an app.",
+          "register": "neutralny",
+          "contextPl": "Przejazdy na aplikację",
+          "natural": "",
+          "forms": "requested a ride",
+          "collocations": "request a ride in the app",
+          "synonyms": "order a ride, book a ride",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll request a ride when we finish our drinks.",
+              "pl": "Zamówię przejazd, jak skończymy drinki.",
+              "focusEn": "request a ride",
+              "focusPl": "Zamówię przejazd"
+            },
+            {
+              "en": "She requested a ride from the hotel lobby, and the car came in three minutes.",
+              "pl": "Zamówiła przejazd z hotelowego lobby i samochód przyjechał po trzech minutach.",
+              "focusEn": "requested a ride",
+              "focusPl": "Zamówiła przejazd"
+            }
+          ],
+          "acceptedAnswers": [
+            "request a ride",
+            "order a ride",
+            "book a ride",
+            "call a ride"
+          ],
+          "acceptedTranslations": [
+            "zamówić przejazd",
+            "zamawiać przejazd"
+          ]
+        },
+        {
+          "id": "public-transport.pickup-location",
+          "term": "pickup location",
+          "ipa": "/ˈpɪkʌp loʊˌkeɪʃn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "miejsce odbioru",
+          "definition": "The place where the driver will meet you.",
+          "register": "neutralny",
+          "contextPl": "Przejazdy na aplikację",
+          "natural": "",
+          "forms": "pickup locations",
+          "collocations": "set the pickup location; change the pickup location",
+          "synonyms": "pickup spot",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The app put the pickup location on the wrong side of the street.",
+              "pl": "Aplikacja ustawiła miejsce odbioru po złej stronie ulicy.",
+              "focusEn": "pickup location",
+              "focusPl": "miejsce odbioru"
+            },
+            {
+              "en": "Let's walk to the pickup location at the corner, it's easier for the driver.",
+              "pl": "Chodźmy do miejsca odbioru na rogu, kierowcy będzie łatwiej.",
+              "focusEn": "pickup location",
+              "focusPl": "miejsca odbioru"
+            }
+          ],
+          "acceptedAnswers": [
+            "pickup location",
+            "pickup spot",
+            "pickup point"
+          ],
+          "acceptedTranslations": [
+            "miejsce odbioru",
+            "punkt odbioru"
+          ]
+        },
+        {
+          "id": "public-transport.on-the-way",
+          "term": "on the way",
+          "ipa": "/ˌɑːn ðə ˈweɪ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "w drodze",
+          "definition": "Coming toward you now.",
+          "register": "neutralny",
+          "contextPl": "Przejazdy na aplikację",
+          "natural": "",
+          "forms": "",
+          "collocations": "be on the way; on my way",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„I'm on my way” – Już jadę.",
+          "examples": [
+            {
+              "en": "Your driver is on the way and will arrive in four minutes.",
+              "pl": "Twój kierowca jest w drodze i przyjedzie za cztery minuty.",
+              "focusEn": "on the way",
+              "focusPl": "w drodze"
+            },
+            {
+              "en": "The app said the car was on the way, but it wasn't moving on the map.",
+              "pl": "Aplikacja pokazywała, że auto jest w drodze, ale na mapie stało w miejscu.",
+              "focusEn": "on the way",
+              "focusPl": "w drodze"
+            }
+          ],
+          "acceptedAnswers": [
+            "on the way",
+            "on my way"
+          ],
+          "acceptedTranslations": [
+            "w drodze",
+            "już jedzie"
+          ]
+        },
+        {
+          "id": "public-transport.license-plate",
+          "term": "license plate",
+          "ipa": "/ˈlaɪsns ˌpleɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "tablica rejestracyjna",
+          "definition": "The metal sign on a car with its registration number.",
+          "register": "neutralny",
+          "contextPl": "Przejazdy na aplikację",
+          "natural": "",
+          "forms": "license plates",
+          "collocations": "check the license plate; license plate number",
+          "synonyms": "plate",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Always check the license plate before you get in the car.",
+              "pl": "Zawsze sprawdzaj tablicę rejestracyjną, zanim wsiądziesz do auta.",
+              "focusEn": "license plate",
+              "focusPl": "tablicę rejestracyjną"
+            },
+            {
+              "en": "The license plate didn't match the one in the app, so I didn't get in.",
+              "pl": "Tablica rejestracyjna nie zgadzała się z tą w aplikacji, więc nie wsiadłem.",
+              "focusEn": "license plate",
+              "focusPl": "Tablica rejestracyjna"
+            }
+          ],
+          "acceptedAnswers": [
+            "license plate",
+            "plate",
+            "plate number"
+          ],
+          "acceptedTranslations": [
+            "tablica rejestracyjna",
+            "numer rejestracyjny",
+            "rejestracja"
+          ]
+        },
+        {
+          "id": "public-transport.surge-pricing",
+          "term": "surge pricing",
+          "ipa": "/ˈsɜːrdʒ ˌpraɪsɪŋ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "cena dynamiczna",
+          "definition": "Higher prices that an app charges when many people want rides.",
+          "register": "specjalistyczny",
+          "contextPl": "Przejazdy na aplikację",
+          "natural": "",
+          "forms": "",
+          "collocations": "avoid surge pricing; surge pricing is on",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W czasie dużego popytu cena może wzrosnąć dwu- lub trzykrotnie.",
+          "examples": [
+            {
+              "en": "Because of the concert, surge pricing made the ride three times more expensive.",
+              "pl": "Przez koncert cena dynamiczna sprawiła, że przejazd był trzy razy droższy.",
+              "focusEn": "surge pricing",
+              "focusPl": "cena dynamiczna"
+            },
+            {
+              "en": "Let's wait twenty minutes until the surge pricing goes away.",
+              "pl": "Poczekajmy dwadzieścia minut, aż cena dynamiczna spadnie.",
+              "focusEn": "surge pricing",
+              "focusPl": "cena dynamiczna"
+            }
+          ],
+          "acceptedAnswers": [
+            "surge pricing",
+            "surge"
+          ],
+          "acceptedTranslations": [
+            "cena dynamiczna",
+            "wyższa stawka w szczycie"
+          ]
+        },
+        {
+          "id": "public-transport.shared-ride",
+          "term": "shared ride",
+          "ipa": "/ˌʃerd ˈraɪd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "przejazd współdzielony",
+          "definition": "A cheaper ride where you share the car with other passengers going the same way.",
+          "register": "neutralny",
+          "contextPl": "Przejazdy na aplikację",
+          "natural": "",
+          "forms": "shared rides",
+          "collocations": "take a shared ride; choose a shared ride",
+          "synonyms": "carpool",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I chose a shared ride to save money, but we made three extra stops.",
+              "pl": "Wybrałem przejazd współdzielony, żeby zaoszczędzić, ale mieliśmy trzy dodatkowe przystanki.",
+              "focusEn": "shared ride",
+              "focusPl": "przejazd współdzielony"
+            },
+            {
+              "en": "In a shared ride, you might sit next to a stranger.",
+              "pl": "W przejeździe współdzielonym możesz siedzieć obok kogoś obcego.",
+              "focusEn": "shared ride",
+              "focusPl": "przejeździe współdzielonym"
+            }
+          ],
+          "acceptedAnswers": [
+            "shared ride",
+            "carpool"
+          ],
+          "acceptedTranslations": [
+            "przejazd współdzielony",
+            "wspólny przejazd"
+          ]
+        },
+        {
+          "id": "public-transport.rate",
+          "term": "rate",
+          "ipa": "/reɪt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ocenić",
+          "definition": "To give someone a score, for example from one to five stars.",
+          "register": "neutralny",
+          "contextPl": "Przejazdy na aplikację",
+          "natural": "",
+          "forms": "rates – rated – rated",
+          "collocations": "rate your driver; rate five stars",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „rating” – ocena.",
+          "examples": [
+            {
+              "en": "Don't forget to rate your driver after the trip.",
+              "pl": "Nie zapomnij ocenić kierowcy po przejeździe.",
+              "focusEn": "rate",
+              "focusPl": "ocenić"
+            },
+            {
+              "en": "I rated him five stars because he helped me with my bags.",
+              "pl": "Oceniłem go na pięć gwiazdek, bo pomógł mi z bagażami.",
+              "focusEn": "rated",
+              "focusPl": "Oceniłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "rate"
+          ],
+          "acceptedTranslations": [
+            "ocenić",
+            "oceniać",
+            "wystawić ocenę"
+          ]
+        },
+        {
+          "id": "public-transport.cancellation-fee",
+          "term": "cancellation fee",
+          "ipa": "/ˌkænsəˈleɪʃn ˌfiː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "opłata za anulowanie",
+          "definition": "Money you pay if you cancel a ride or booking too late.",
+          "register": "neutralny",
+          "contextPl": "Przejazdy na aplikację",
+          "natural": "",
+          "forms": "cancellation fees",
+          "collocations": "charge a cancellation fee; pay a cancellation fee",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you cancel after two minutes, there's a five-dollar cancellation fee.",
+              "pl": "Jeśli anulujesz po dwóch minutach, jest pięć dolarów opłaty za anulowanie.",
+              "focusEn": "cancellation fee",
+              "focusPl": "opłaty za anulowanie"
+            },
+            {
+              "en": "The driver never came, but I still got a cancellation fee.",
+              "pl": "Kierowca w ogóle nie przyjechał, a i tak naliczono mi opłatę za anulowanie.",
+              "focusEn": "cancellation fee",
+              "focusPl": "opłatę za anulowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "cancellation fee"
+          ],
+          "acceptedTranslations": [
+            "opłata za anulowanie",
+            "opłata za odwołanie"
+          ]
+        },
+        {
+          "id": "public-transport.split-the-fare",
+          "term": "split the fare",
+          "ipa": "/ˌsplɪt ðə ˈfer/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "podzielić się kosztem przejazdu",
+          "definition": "To each pay part of the cost of a ride.",
+          "register": "neutralny",
+          "contextPl": "Przejazdy na aplikację",
+          "natural": "",
+          "forms": "split – split – split",
+          "collocations": "split the fare in the app",
+          "synonyms": "split the cost",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's split the fare, it's only six dollars each.",
+              "pl": "Podzielmy się kosztem przejazdu, to tylko sześć dolarów na osobę.",
+              "focusEn": "split the fare",
+              "focusPl": "Podzielmy się kosztem przejazdu"
+            },
+            {
+              "en": "We split the fare in the app, so nobody had to pay cash.",
+              "pl": "Podzieliliśmy się kosztem przejazdu w aplikacji, więc nikt nie musiał płacić gotówką.",
+              "focusEn": "split the fare",
+              "focusPl": "Podzieliliśmy się kosztem przejazdu"
+            }
+          ],
+          "acceptedAnswers": [
+            "split the fare",
+            "split the cost"
+          ],
+          "acceptedTranslations": [
+            "podzielić się kosztem przejazdu",
+            "zrzucić się na przejazd"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "public-transport.commuting",
+      "namePl": "Tramwaj i codzienne dojazdy",
+      "scenePl": "Codzienny poranny dojazd do pracy tramwajem i kolejką miejską",
+      "entries": [
+        {
+          "id": "public-transport.streetcar",
+          "term": "streetcar",
+          "ipa": "/ˈstriːtkɑːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "tramwaj",
+          "definition": "An electric vehicle that runs on rails along city streets.",
+          "register": "neutralny",
+          "contextPl": "Tramwaje",
+          "natural": "",
+          "forms": "streetcars",
+          "collocations": "take the streetcar; streetcar line; streetcar stop",
+          "synonyms": "trolley, tram",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I take the streetcar to work because it stops right outside my office.",
+              "pl": "Jeżdżę do pracy tramwajem, bo zatrzymuje się tuż przed moim biurem.",
+              "focusEn": "streetcar",
+              "focusPl": "tramwajem"
+            },
+            {
+              "en": "The streetcar was stuck behind a parked delivery truck.",
+              "pl": "Tramwaj utknął za zaparkowaną ciężarówką dostawczą.",
+              "focusEn": "streetcar",
+              "focusPl": "Tramwaj"
+            }
+          ],
+          "acceptedAnswers": [
+            "streetcar",
+            "trolley",
+            "tram"
+          ],
+          "acceptedTranslations": [
+            "tramwaj"
+          ]
+        },
+        {
+          "id": "public-transport.light-rail",
+          "term": "light rail",
+          "ipa": "/ˌlaɪt ˈreɪl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "szybki tramwaj",
+          "definition": "A modern train system, lighter than a subway, that often runs on city streets.",
+          "register": "neutralny",
+          "contextPl": "Tramwaje",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "take the light rail; light rail station",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W wielu miastach USA to główny środek transportu szynowego.",
+          "examples": [
+            {
+              "en": "The light rail takes me from the suburbs to downtown in twenty minutes.",
+              "pl": "Szybki tramwaj dowozi mnie z przedmieść do centrum w dwadzieścia minut.",
+              "focusEn": "light rail",
+              "focusPl": "Szybki tramwaj"
+            },
+            {
+              "en": "They're building a new light rail station near our apartment.",
+              "pl": "Niedaleko naszego mieszkania budują nową stację szybkiego tramwaju.",
+              "focusEn": "light rail",
+              "focusPl": "szybkiego tramwaju"
+            }
+          ],
+          "acceptedAnswers": [
+            "light rail"
+          ],
+          "acceptedTranslations": [
+            "szybki tramwaj",
+            "kolejka miejska",
+            "lekka kolej"
+          ]
+        },
+        {
+          "id": "public-transport.commute",
+          "term": "commute",
+          "ipa": "/kəˈmjuːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "dojazd do pracy",
+          "definition": "The trip you make every day between home and work.",
+          "register": "neutralny",
+          "contextPl": "Codzienne dojazdy",
+          "natural": "",
+          "forms": "commutes",
+          "collocations": "a long commute; daily commute; a 40-minute commute",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik: „to commute” – dojeżdżać do pracy.",
+          "examples": [
+            {
+              "en": "My commute is forty minutes each way by streetcar.",
+              "pl": "Mój dojazd do pracy tramwajem zajmuje czterdzieści minut w jedną stronę.",
+              "focusEn": "commute",
+              "focusPl": "dojazd do pracy"
+            },
+            {
+              "en": "I read on the train, so my commute doesn't feel so long.",
+              "pl": "Czytam w pociągu, więc dojazd do pracy nie wydaje mi się taki długi.",
+              "focusEn": "commute",
+              "focusPl": "dojazd do pracy"
+            }
+          ],
+          "acceptedAnswers": [
+            "commute"
+          ],
+          "acceptedTranslations": [
+            "dojazd do pracy",
+            "dojazdy"
+          ]
+        },
+        {
+          "id": "public-transport.commuter",
+          "term": "commuter",
+          "ipa": "/kəˈmjuːtər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "osoba dojeżdżająca do pracy",
+          "definition": "A person who travels every day between home and work.",
+          "register": "neutralny",
+          "contextPl": "Codzienne dojazdy",
+          "natural": "",
+          "forms": "commuters",
+          "collocations": "morning commuters; daily commuters",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The streetcar was full of tired commuters at six p.m.",
+              "pl": "O osiemnastej tramwaj był pełen zmęczonych osób dojeżdżających do pracy.",
+              "focusEn": "commuters",
+              "focusPl": "osób dojeżdżających do pracy"
+            },
+            {
+              "en": "Most commuters on this line get off at the business district.",
+              "pl": "Większość osób dojeżdżających do pracy na tej linii wysiada w dzielnicy biurowej.",
+              "focusEn": "commuters",
+              "focusPl": "osób dojeżdżających do pracy"
+            }
+          ],
+          "acceptedAnswers": [
+            "commuter"
+          ],
+          "acceptedTranslations": [
+            "osoba dojeżdżająca do pracy",
+            "dojeżdżający"
+          ]
+        },
+        {
+          "id": "public-transport.monthly-pass",
+          "term": "monthly pass",
+          "ipa": "/ˌmʌnθli ˈpæs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bilet miesięczny",
+          "definition": "A ticket that lets you ride as often as you want for a month.",
+          "register": "neutralny",
+          "contextPl": "Opłaty za przejazd",
+          "natural": "",
+          "forms": "monthly passes",
+          "collocations": "buy a monthly pass; unlimited monthly pass",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A monthly pass is much cheaper if you ride every day.",
+              "pl": "Bilet miesięczny jest dużo tańszy, jeśli jeździsz codziennie.",
+              "focusEn": "monthly pass",
+              "focusPl": "Bilet miesięczny"
+            },
+            {
+              "en": "My company pays for my monthly pass for the light rail.",
+              "pl": "Moja firma płaci za mój bilet miesięczny na szybki tramwaj.",
+              "focusEn": "monthly pass",
+              "focusPl": "bilet miesięczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "monthly pass"
+          ],
+          "acceptedTranslations": [
+            "bilet miesięczny",
+            "miesięczny",
+            "miesięczniak"
+          ]
+        },
+        {
+          "id": "public-transport.public-transportation",
+          "term": "public transportation",
+          "ipa": "/ˌpʌblɪk ˌtrænspərˈteɪʃn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "komunikacja miejska",
+          "definition": "Buses, trains and subways that everyone can use for a fare.",
+          "register": "neutralny",
+          "contextPl": "Codzienne dojazdy",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "use public transportation; take public transportation; by public transportation",
+          "synonyms": "public transit, transit",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I sold my car because public transportation here is so good.",
+              "pl": "Sprzedałem samochód, bo komunikacja miejska jest tu bardzo dobra.",
+              "focusEn": "public transportation",
+              "focusPl": "komunikacja miejska"
+            },
+            {
+              "en": "It takes an hour to get to work by public transportation.",
+              "pl": "Dojazd do pracy komunikacją miejską zajmuje godzinę.",
+              "focusEn": "public transportation",
+              "focusPl": "komunikacją miejską"
+            }
+          ],
+          "acceptedAnswers": [
+            "public transportation",
+            "public transit",
+            "transit",
+            "public transport"
+          ],
+          "acceptedTranslations": [
+            "komunikacja miejska",
+            "transport publiczny"
+          ]
+        },
+        {
+          "id": "public-transport.give-up-your-seat",
+          "term": "give up your seat",
+          "ipa": "/ˌɡɪv ʌp jʊr ˈsiːt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ustąpić miejsca",
+          "definition": "To stand up so that someone who needs it more can sit.",
+          "register": "neutralny",
+          "contextPl": "Zachowanie w pojazdach",
+          "natural": "",
+          "forms": "gave up – given up",
+          "collocations": "give up your seat for someone",
+          "synonyms": "offer your seat",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A teenager gave up his seat for the pregnant woman.",
+              "pl": "Nastolatek ustąpił miejsca kobiecie w ciąży.",
+              "focusEn": "gave up his seat",
+              "focusPl": "ustąpił miejsca"
+            },
+            {
+              "en": "Please give up your seat to older passengers if the streetcar is full.",
+              "pl": "Prosimy ustąpić miejsca starszym pasażerom, jeśli tramwaj jest pełny.",
+              "focusEn": "give up your seat",
+              "focusPl": "ustąpić miejsca"
+            }
+          ],
+          "acceptedAnswers": [
+            "give up your seat",
+            "offer your seat"
+          ],
+          "acceptedTranslations": [
+            "ustąpić miejsca",
+            "ustępować miejsca"
+          ]
+        },
+        {
+          "id": "public-transport.priority-seating",
+          "term": "priority seating",
+          "ipa": "/praɪˈɔːrəti ˌsiːtɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "miejsca uprzywilejowane",
+          "definition": "Seats saved for older, disabled or pregnant passengers.",
+          "register": "formalny",
+          "contextPl": "Zachowanie w pojazdach",
+          "natural": "",
+          "forms": "",
+          "collocations": "priority seating area",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na naklejkach w pojazdach: „Priority Seating”.",
+          "examples": [
+            {
+              "en": "The seats near the door are priority seating for people who need them.",
+              "pl": "Miejsca przy drzwiach to miejsca uprzywilejowane dla osób, które ich potrzebują.",
+              "focusEn": "priority seating",
+              "focusPl": "miejsca uprzywilejowane"
+            },
+            {
+              "en": "A man was sleeping in the priority seating area while an old lady stood.",
+              "pl": "Mężczyzna spał w strefie miejsc uprzywilejowanych, a starsza pani stała.",
+              "focusEn": "priority seating",
+              "focusPl": "miejsc uprzywilejowanych"
+            }
+          ],
+          "acceptedAnswers": [
+            "priority seating"
+          ],
+          "acceptedTranslations": [
+            "miejsca uprzywilejowane",
+            "miejsca dla osób starszych i niepełnosprawnych"
+          ]
+        },
+        {
+          "id": "public-transport.standing-room-only",
+          "term": "standing room only",
+          "ipa": "/ˌstændɪŋ ˈruːm ˌoʊnli/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "tylko miejsca stojące",
+          "definition": "There are no free seats, only space to stand.",
+          "register": "neutralny",
+          "contextPl": "Godziny szczytu",
+          "natural": "",
+          "forms": "",
+          "collocations": "it was standing room only",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The morning streetcar was standing room only, as usual.",
+              "pl": "W porannym tramwaju były tylko miejsca stojące, jak zwykle.",
+              "focusEn": "standing room only",
+              "focusPl": "tylko miejsca stojące"
+            },
+            {
+              "en": "After the game, the light rail was standing room only all the way home.",
+              "pl": "Po meczu w szybkim tramwaju przez całą drogę do domu były tylko miejsca stojące.",
+              "focusEn": "standing room only",
+              "focusPl": "tylko miejsca stojące"
+            }
+          ],
+          "acceptedAnswers": [
+            "standing room only"
+          ],
+          "acceptedTranslations": [
+            "tylko miejsca stojące",
+            "brak miejsc siedzących"
+          ]
+        },
+        {
+          "id": "public-transport.miss-your-stop",
+          "term": "miss your stop",
+          "ipa": "/ˌmɪs jʊr ˈstɑːp/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przegapić swój przystanek",
+          "definition": "To forget to get off at the right place.",
+          "register": "neutralny",
+          "contextPl": "Codzienne dojazdy",
+          "natural": "",
+          "forms": "missed my stop",
+          "collocations": "almost miss your stop",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I was reading and missed my stop again this morning.",
+              "pl": "Czytałem i dziś rano znowu przegapiłem swój przystanek.",
+              "focusEn": "missed my stop",
+              "focusPl": "przegapiłem swój przystanek"
+            },
+            {
+              "en": "Set an alarm on your phone so you don't miss your stop.",
+              "pl": "Nastaw alarm w telefonie, żebyś nie przegapił swojego przystanku.",
+              "focusEn": "miss your stop",
+              "focusPl": "przegapił swojego przystanku"
+            }
+          ],
+          "acceptedAnswers": [
+            "miss your stop"
+          ],
+          "acceptedTranslations": [
+            "przegapić swój przystanek",
+            "przejechać swój przystanek"
+          ]
+        },
+        {
+          "id": "public-transport.ride",
+          "term": "ride",
+          "ipa": "/raɪd/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "jeździć",
+          "definition": "To travel in a vehicle as a passenger.",
+          "register": "neutralny",
+          "contextPl": "Codzienne dojazdy",
+          "natural": "",
+          "forms": "rides – rode – ridden",
+          "collocations": "ride the bus; ride the streetcar; ride to work",
+          "synonyms": "take",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I ride the streetcar to work every morning with the same people.",
+              "pl": "Co rano jeżdżę do pracy tramwajem z tymi samymi ludźmi.",
+              "focusEn": "ride",
+              "focusPl": "jeżdżę"
+            },
+            {
+              "en": "We rode the light rail all the way to the end of the line.",
+              "pl": "Jechaliśmy szybkim tramwajem aż do końca linii.",
+              "focusEn": "rode",
+              "focusPl": "Jechaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "ride",
+            "take"
+          ],
+          "acceptedTranslations": [
+            "jeździć",
+            "jechać",
+            "dojeżdżać"
+          ]
+        },
+        {
+          "id": "public-transport.transfer",
+          "term": "transfer",
+          "ipa": "/ˈtrænsfɜːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przesiadka",
+          "definition": "A change from one bus or train to another, often free within a time limit.",
+          "register": "neutralny",
+          "contextPl": "Opłaty za przejazd",
+          "natural": "",
+          "forms": "transfers",
+          "collocations": "free transfer; transfer within two hours",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Free transfer” – darmowa przesiadka w ramach jednego biletu.",
+          "examples": [
+            {
+              "en": "You get a free transfer from the streetcar to the bus within two hours.",
+              "pl": "W ciągu dwóch godzin masz darmową przesiadkę z tramwaju do autobusu.",
+              "focusEn": "transfer",
+              "focusPl": "przesiadkę"
+            },
+            {
+              "en": "My transfer didn't work because I waited too long for the second bus.",
+              "pl": "Moja przesiadka nie zadziałała, bo za długo czekałem na drugi autobus.",
+              "focusEn": "transfer",
+              "focusPl": "przesiadka"
+            }
+          ],
+          "acceptedAnswers": [
+            "transfer"
+          ],
+          "acceptedTranslations": [
+            "przesiadka",
+            "przesiadka bezpłatna"
+          ]
+        },
+        {
+          "id": "public-transport.service",
+          "term": "service",
+          "ipa": "/ˈsɜːrvɪs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kursowanie",
+          "definition": "The regular running of buses or trains on a route.",
+          "register": "neutralny",
+          "contextPl": "Codzienne dojazdy",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "weekend service; service is suspended; limited service",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„No service” – brak kursów.",
+          "examples": [
+            {
+              "en": "Streetcar service is suspended this weekend because of track work.",
+              "pl": "W ten weekend kursowanie tramwajów jest wstrzymane z powodu remontu torów.",
+              "focusEn": "service",
+              "focusPl": "kursowanie"
+            },
+            {
+              "en": "There's only limited service on public holidays, so check the app before you leave.",
+              "pl": "W święta jest ograniczone kursowanie, więc sprawdź aplikację przed wyjściem.",
+              "focusEn": "service",
+              "focusPl": "kursowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "service"
+          ],
+          "acceptedTranslations": [
+            "kursowanie",
+            "komunikacja",
+            "połączenia"
+          ]
+        }
+      ]
+    }
+  ]
+}

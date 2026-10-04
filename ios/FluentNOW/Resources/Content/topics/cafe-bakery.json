@@ -1,0 +1,4096 @@
+{
+  "schemaVersion": 1,
+  "id": "cafe-bakery",
+  "namePl": "Kawiarnia i piekarnia",
+  "nameEn": "Cafe and Bakery",
+  "group": "food",
+  "symbol": "cup.and.saucer",
+  "summaryPl": "Zamawianie kawy przy ladzie, wypieki, zakupy w piekarni, smaki i życie kawiarniane.",
+  "aliases": [
+    "kawiarnia",
+    "piekarnia",
+    "kawa",
+    "ciasto",
+    "cukiernia",
+    "wypieki",
+    "pieczywo",
+    "cafe",
+    "coffee shop",
+    "bakery"
+  ],
+  "categories": [
+    {
+      "id": "cafe-bakery.coffee-drinks",
+      "namePl": "Kawa i napoje",
+      "scenePl": "Zamawianie kawy przy ladzie w kawiarni rano",
+      "entries": [
+        {
+          "id": "cafe-bakery.coffee",
+          "term": "coffee",
+          "ipa": "/ˈkɔːfi/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "kawa",
+          "definition": "A hot drink made from roasted and ground coffee beans.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie porannej kawy",
+          "natural": "",
+          "forms": "coffees",
+          "collocations": "a cup of coffee; black coffee; coffee with milk",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I get a large coffee with a little milk?",
+              "pl": "Mogę prosić dużą kawę z odrobiną mleka?",
+              "focusEn": "coffee",
+              "focusPl": "kawę"
+            },
+            {
+              "en": "This place makes the best coffee in the neighborhood.",
+              "pl": "Tu robią najlepszą kawę w okolicy.",
+              "focusEn": "coffee",
+              "focusPl": "kawę"
+            }
+          ],
+          "acceptedAnswers": [
+            "coffee"
+          ],
+          "acceptedTranslations": [
+            "kawa"
+          ]
+        },
+        {
+          "id": "cafe-bakery.tea",
+          "term": "tea",
+          "ipa": "/tiː/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "herbata",
+          "definition": "A hot drink made by pouring boiling water over dried leaves.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie napoju innego niż kawa",
+          "natural": "",
+          "forms": "teas",
+          "collocations": "green tea; herbal tea; tea with lemon",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll have a green tea instead of coffee today.",
+              "pl": "Dziś zamiast kawy wezmę zieloną herbatę.",
+              "focusEn": "tea",
+              "focusPl": "herbatę"
+            },
+            {
+              "en": "Would you like honey or lemon with your tea?",
+              "pl": "Do herbaty podać miód czy cytrynę?",
+              "focusEn": "tea",
+              "focusPl": "herbaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "tea"
+          ],
+          "acceptedTranslations": [
+            "herbata"
+          ]
+        },
+        {
+          "id": "cafe-bakery.latte",
+          "term": "latte",
+          "ipa": "/ˈlɑːteɪ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "latte",
+          "definition": "Espresso mixed with a lot of steamed milk and a little foam.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie kawy mlecznej",
+          "natural": "",
+          "forms": "lattes",
+          "collocations": "iced latte; oat milk latte; vanilla latte",
+          "synonyms": "caffe latte",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "One medium latte with oat milk, please.",
+              "pl": "Poproszę średnie latte na mleku owsianym.",
+              "focusEn": "latte",
+              "focusPl": "latte"
+            },
+            {
+              "en": "The barista drew a little heart in the foam of my latte.",
+              "pl": "Barista narysował serduszko na piance mojego latte.",
+              "focusEn": "latte",
+              "focusPl": "latte"
+            }
+          ],
+          "acceptedAnswers": [
+            "latte",
+            "caffe latte"
+          ],
+          "acceptedTranslations": [
+            "latte",
+            "kawa latte"
+          ]
+        },
+        {
+          "id": "cafe-bakery.cappuccino",
+          "term": "cappuccino",
+          "ipa": "/ˌkæpəˈtʃiːnoʊ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "cappuccino",
+          "definition": "Espresso with hot milk and a thick layer of milk foam.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie kawy z pianką",
+          "natural": "",
+          "forms": "cappuccinos",
+          "collocations": "a cappuccino with cinnamon",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I usually order a cappuccino with my breakfast.",
+              "pl": "Do śniadania zwykle zamawiam cappuccino.",
+              "focusEn": "cappuccino",
+              "focusPl": "cappuccino"
+            },
+            {
+              "en": "Would you like cinnamon or cocoa on your cappuccino?",
+              "pl": "Posypać cappuccino cynamonem czy kakao?",
+              "focusEn": "cappuccino",
+              "focusPl": "cappuccino"
+            }
+          ],
+          "acceptedAnswers": [
+            "cappuccino"
+          ],
+          "acceptedTranslations": [
+            "cappuccino",
+            "kawa cappuccino"
+          ]
+        },
+        {
+          "id": "cafe-bakery.espresso",
+          "term": "espresso",
+          "ipa": "/ɛˈsprɛsoʊ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "espresso",
+          "definition": "A small, strong coffee made by forcing hot water through ground beans.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie małej, mocnej kawy",
+          "natural": "",
+          "forms": "espressos",
+          "collocations": "a double espresso; a shot of espresso",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisze się i wymawia „espresso”, nie „expresso”.",
+          "examples": [
+            {
+              "en": "A double espresso, please; I barely slept last night.",
+              "pl": "Poproszę podwójne espresso, prawie nie spałem w nocy.",
+              "focusEn": "espresso",
+              "focusPl": "espresso"
+            },
+            {
+              "en": "The espresso here is strong and a little bitter.",
+              "pl": "Espresso jest tu mocne i lekko gorzkie.",
+              "focusEn": "espresso",
+              "focusPl": "Espresso"
+            }
+          ],
+          "acceptedAnswers": [
+            "espresso"
+          ],
+          "acceptedTranslations": [
+            "espresso"
+          ]
+        },
+        {
+          "id": "cafe-bakery.iced-coffee",
+          "term": "iced coffee",
+          "ipa": "/ˌaɪst ˈkɔːfi/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "mrożona kawa",
+          "definition": "Cold coffee served with ice.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie zimnej kawy w upał",
+          "natural": "",
+          "forms": "iced coffees",
+          "collocations": "a large iced coffee",
+          "synonyms": "",
+          "antonyms": "hot coffee",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's so hot today that I'll get an iced coffee.",
+              "pl": "Jest dziś tak gorąco, że wezmę mrożoną kawę.",
+              "focusEn": "iced coffee",
+              "focusPl": "mrożoną kawę"
+            },
+            {
+              "en": "Do you want sweetener in your iced coffee?",
+              "pl": "Dosłodzić ci mrożoną kawę?",
+              "focusEn": "iced coffee",
+              "focusPl": "mrożoną kawę"
+            }
+          ],
+          "acceptedAnswers": [
+            "iced coffee"
+          ],
+          "acceptedTranslations": [
+            "mrożona kawa",
+            "kawa mrożona",
+            "kawa z lodem"
+          ]
+        },
+        {
+          "id": "cafe-bakery.decaf",
+          "term": "decaf",
+          "ipa": "/ˈdiːkæf/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kawa bezkofeinowa",
+          "definition": "Coffee that has had most of its caffeine removed.",
+          "register": "potoczny",
+          "contextPl": "Zamawianie kawy późnym popołudniem",
+          "natural": "",
+          "forms": "decafs",
+          "collocations": "a decaf latte; switch to decaf",
+          "synonyms": "decaffeinated coffee",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll take a decaf, since it's already late afternoon.",
+              "pl": "Wezmę bezkofeinową, bo jest już późne popołudnie.",
+              "focusEn": "decaf",
+              "focusPl": "bezkofeinową"
+            },
+            {
+              "en": "Can you make that latte with decaf?",
+              "pl": "Może pan zrobić to latte na kawie bezkofeinowej?",
+              "focusEn": "decaf",
+              "focusPl": "kawie bezkofeinowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "decaf",
+            "decaffeinated coffee"
+          ],
+          "acceptedTranslations": [
+            "kawa bezkofeinowa",
+            "bezkofeinowa"
+          ]
+        },
+        {
+          "id": "cafe-bakery.black",
+          "term": "black",
+          "ipa": "/blæk/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "czarna",
+          "definition": "Served without milk or cream.",
+          "register": "neutralny",
+          "contextPl": "Jak pijesz kawę",
+          "natural": "",
+          "forms": "",
+          "collocations": "black coffee; take it black",
+          "synonyms": "",
+          "antonyms": "with milk",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I take my coffee black, no sugar.",
+              "pl": "Piję kawę czarną, bez cukru.",
+              "focusEn": "black",
+              "focusPl": "czarną"
+            },
+            {
+              "en": "One black coffee and a blueberry muffin, please.",
+              "pl": "Poproszę czarną kawę i babeczkę z jagodami.",
+              "focusEn": "black",
+              "focusPl": "czarną"
+            }
+          ],
+          "acceptedAnswers": [
+            "black"
+          ],
+          "acceptedTranslations": [
+            "czarna",
+            "bez mleka"
+          ]
+        },
+        {
+          "id": "cafe-bakery.hot-chocolate",
+          "term": "hot chocolate",
+          "ipa": "/ˌhɑːt ˈtʃɑːklət/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "gorąca czekolada",
+          "definition": "A sweet hot drink made with chocolate or cocoa and milk.",
+          "register": "neutralny",
+          "contextPl": "Napój dla dzieci lub w zimny dzień",
+          "natural": "hot cocoa",
+          "forms": "hot chocolates",
+          "collocations": "a mug of hot chocolate",
+          "synonyms": "hot cocoa",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My daughter will have a small hot chocolate.",
+              "pl": "Córka weźmie małą gorącą czekoladę.",
+              "focusEn": "hot chocolate",
+              "focusPl": "gorącą czekoladę"
+            },
+            {
+              "en": "The kids' hot chocolate comes with tiny marshmallows.",
+              "pl": "Gorąca czekolada dla dzieci jest podawana z małymi piankami.",
+              "focusEn": "hot chocolate",
+              "focusPl": "Gorąca czekolada"
+            }
+          ],
+          "acceptedAnswers": [
+            "hot chocolate",
+            "hot cocoa"
+          ],
+          "acceptedTranslations": [
+            "gorąca czekolada",
+            "kakao"
+          ]
+        },
+        {
+          "id": "cafe-bakery.cream",
+          "term": "cream",
+          "ipa": "/kriːm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "śmietanka",
+          "definition": "The thick, fatty part of milk, often added to coffee.",
+          "register": "neutralny",
+          "contextPl": "Dodatki do kawy",
+          "natural": "",
+          "forms": "",
+          "collocations": "cream and sugar; a splash of cream",
+          "synonyms": "half-and-half",
+          "antonyms": "",
+          "notePl": "W USA do kawy często dodaje się „cream” albo „half-and-half” (pół mleka, pół śmietanki).",
+          "examples": [
+            {
+              "en": "Do you want cream and sugar in that?",
+              "pl": "Dodać śmietankę i cukier?",
+              "focusEn": "cream",
+              "focusPl": "śmietankę"
+            },
+            {
+              "en": "The cream and milk are on the counter by the napkins.",
+              "pl": "Śmietanka i mleko stoją na blacie obok serwetek.",
+              "focusEn": "cream",
+              "focusPl": "Śmietanka"
+            }
+          ],
+          "acceptedAnswers": [
+            "cream"
+          ],
+          "acceptedTranslations": [
+            "śmietanka",
+            "śmietanka do kawy"
+          ]
+        },
+        {
+          "id": "cafe-bakery.sugar",
+          "term": "sugar",
+          "ipa": "/ˈʃʊɡər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "cukier",
+          "definition": "A sweet substance added to food and drinks.",
+          "register": "neutralny",
+          "contextPl": "Słodzenie napoju",
+          "natural": "",
+          "forms": "",
+          "collocations": "no sugar; one sugar; brown sugar",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's sugar and honey at the end of the counter.",
+              "pl": "Cukier i miód są na końcu lady.",
+              "focusEn": "sugar",
+              "focusPl": "Cukier"
+            },
+            {
+              "en": "No sugar for me, thanks; I'm cutting back.",
+              "pl": "Dla mnie bez cukru, dzięki, ograniczam go.",
+              "focusEn": "sugar",
+              "focusPl": "cukru"
+            }
+          ],
+          "acceptedAnswers": [
+            "sugar"
+          ],
+          "acceptedTranslations": [
+            "cukier"
+          ]
+        },
+        {
+          "id": "cafe-bakery.oat-milk",
+          "term": "oat milk",
+          "ipa": "/ˈoʊt ˌmɪlk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mleko owsiane",
+          "definition": "A milk substitute made from oats.",
+          "register": "neutralny",
+          "contextPl": "Wybór mleka roślinnego do kawy",
+          "natural": "",
+          "forms": "",
+          "collocations": "oat milk latte; switch to oat milk",
+          "synonyms": "almond milk; soy milk",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you make it with oat milk instead of regular?",
+              "pl": "Może pan zrobić to na mleku owsianym zamiast zwykłym?",
+              "focusEn": "oat milk",
+              "focusPl": "mleku owsianym"
+            },
+            {
+              "en": "Oat milk costs seventy-five cents extra here.",
+              "pl": "Mleko owsiane kosztuje tu siedemdziesiąt pięć centów więcej.",
+              "focusEn": "Oat milk",
+              "focusPl": "Mleko owsiane"
+            }
+          ],
+          "acceptedAnswers": [
+            "oat milk"
+          ],
+          "acceptedTranslations": [
+            "mleko owsiane",
+            "napój owsiany"
+          ]
+        },
+        {
+          "id": "cafe-bakery.whipped-cream",
+          "term": "whipped cream",
+          "ipa": "/ˌwɪpt ˈkriːm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "bita śmietana",
+          "definition": "Cream beaten until it is light and thick.",
+          "register": "neutralny",
+          "contextPl": "Dodatek na wierzch napoju lub deseru",
+          "natural": "",
+          "forms": "",
+          "collocations": "top with whipped cream; extra whipped cream",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you want whipped cream on top of your mocha?",
+              "pl": "Dodać bitą śmietanę na wierzch mokki?",
+              "focusEn": "whipped cream",
+              "focusPl": "bitą śmietanę"
+            },
+            {
+              "en": "The barista added a mountain of whipped cream to my drink.",
+              "pl": "Barista dodał do mojego napoju górę bitej śmietany.",
+              "focusEn": "whipped cream",
+              "focusPl": "bitej śmietany"
+            }
+          ],
+          "acceptedAnswers": [
+            "whipped cream"
+          ],
+          "acceptedTranslations": [
+            "bita śmietana"
+          ]
+        },
+        {
+          "id": "cafe-bakery.syrup",
+          "term": "syrup",
+          "ipa": "/ˈsɪrəp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "syrop",
+          "definition": "A sweet flavored liquid added to coffee drinks.",
+          "register": "neutralny",
+          "contextPl": "Smakowe dodatki do kawy",
+          "natural": "",
+          "forms": "syrups",
+          "collocations": "vanilla syrup; caramel syrup; a pump of syrup",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Would you like vanilla or caramel syrup in your latte?",
+              "pl": "Dodać do latte syrop waniliowy czy karmelowy?",
+              "focusEn": "syrup",
+              "focusPl": "syrop"
+            },
+            {
+              "en": "Just one pump of syrup, please; I don't like it too sweet.",
+              "pl": "Tylko jedna porcja syropu, proszę, nie lubię zbyt słodkiej.",
+              "focusEn": "syrup",
+              "focusPl": "syropu"
+            }
+          ],
+          "acceptedAnswers": [
+            "syrup"
+          ],
+          "acceptedTranslations": [
+            "syrop"
+          ]
+        },
+        {
+          "id": "cafe-bakery.shot",
+          "term": "shot",
+          "ipa": "/ʃɑːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "porcja espresso",
+          "definition": "A single small serving of espresso.",
+          "register": "potoczny",
+          "contextPl": "Mocniejsza kawa z dodatkowym espresso",
+          "natural": "",
+          "forms": "shots",
+          "collocations": "an extra shot; a double shot",
+          "synonyms": "espresso",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I get an extra shot in my latte?",
+              "pl": "Mogę prosić o dodatkowe espresso w latte?",
+              "focusEn": "shot",
+              "focusPl": "dodatkowe espresso"
+            },
+            {
+              "en": "A large latte comes with two shots of espresso.",
+              "pl": "Duże latte ma dwie porcje espresso.",
+              "focusEn": "shots",
+              "focusPl": "porcje espresso"
+            }
+          ],
+          "acceptedAnswers": [
+            "shot",
+            "shot of espresso"
+          ],
+          "acceptedTranslations": [
+            "porcja espresso",
+            "shot",
+            "dodatkowe espresso"
+          ]
+        },
+        {
+          "id": "cafe-bakery.foam",
+          "term": "foam",
+          "ipa": "/foʊm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pianka",
+          "definition": "A light layer of tiny bubbles on top of milk or coffee.",
+          "register": "neutralny",
+          "contextPl": "Mleczna pianka na kawie",
+          "natural": "froth",
+          "forms": "",
+          "collocations": "milk foam; extra foam; no foam",
+          "synonyms": "froth",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I love the thick foam on their cappuccinos.",
+              "pl": "Uwielbiam gęstą piankę na ich cappuccino.",
+              "focusEn": "foam",
+              "focusPl": "piankę"
+            },
+            {
+              "en": "Could you make my latte with extra foam?",
+              "pl": "Może pan zrobić mi latte z większą ilością pianki?",
+              "focusEn": "foam",
+              "focusPl": "pianki"
+            }
+          ],
+          "acceptedAnswers": [
+            "foam",
+            "froth"
+          ],
+          "acceptedTranslations": [
+            "pianka",
+            "piana"
+          ]
+        },
+        {
+          "id": "cafe-bakery.cold-brew",
+          "term": "cold brew",
+          "ipa": "/ˌkoʊld ˈbruː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "kawa parzona na zimno",
+          "definition": "Coffee made by soaking ground beans in cold water for many hours.",
+          "register": "neutralny",
+          "contextPl": "Modne kawy na zimno",
+          "natural": "",
+          "forms": "cold brews",
+          "collocations": "a cold brew with milk",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cold brew is smoother and less bitter than iced coffee.",
+              "pl": "Kawa parzona na zimno jest łagodniejsza i mniej gorzka niż mrożona kawa.",
+              "focusEn": "cold brew",
+              "focusPl": "Kawa parzona na zimno"
+            },
+            {
+              "en": "They make their cold brew overnight in big glass jars.",
+              "pl": "Kawę parzoną na zimno przygotowują przez noc w dużych szklanych słojach.",
+              "focusEn": "cold brew",
+              "focusPl": "Kawę parzoną na zimno"
+            }
+          ],
+          "acceptedAnswers": [
+            "cold brew"
+          ],
+          "acceptedTranslations": [
+            "kawa parzona na zimno",
+            "cold brew"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cafe-bakery.counter",
+      "namePl": "Zamawianie przy ladzie",
+      "scenePl": "Kolejka przy ladzie w kawiarni i odbiór zamówienia",
+      "entries": [
+        {
+          "id": "cafe-bakery.for-here-or-to-go",
+          "term": "for here or to go",
+          "ipa": "/fər ˈhɪr ɔːr tə ˈɡoʊ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "na miejscu czy na wynos?",
+          "definition": "A question asking if you will eat or drink in the cafe or take it away.",
+          "register": "neutralny",
+          "contextPl": "Pytanie przy kasie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is that for here or to go?",
+              "pl": "Na miejscu czy na wynos?",
+              "focusEn": "for here or to go",
+              "focusPl": "Na miejscu czy na wynos"
+            },
+            {
+              "en": "The cashier asked for here or to go, and I said to go.",
+              "pl": "Kasjerka zapytała, czy na miejscu czy na wynos, a ja powiedziałem, że na wynos.",
+              "focusEn": "for here or to go",
+              "focusPl": "na miejscu czy na wynos"
+            }
+          ],
+          "acceptedAnswers": [
+            "for here or to go",
+            "for here or to-go"
+          ],
+          "acceptedTranslations": [
+            "na miejscu czy na wynos?",
+            "na miejscu czy na wynos"
+          ]
+        },
+        {
+          "id": "cafe-bakery.to-go",
+          "term": "to go",
+          "ipa": "/tə ˈɡoʊ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "na wynos",
+          "definition": "Bought to be taken away and eaten or drunk somewhere else.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie napoju lub jedzenia na wynos",
+          "natural": "takeout",
+          "forms": "",
+          "collocations": "coffee to go; order to go",
+          "synonyms": "takeout; takeaway",
+          "antonyms": "for here",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll take two lattes and a croissant to go.",
+              "pl": "Wezmę dwa latte i croissanta na wynos.",
+              "focusEn": "to go",
+              "focusPl": "na wynos"
+            },
+            {
+              "en": "All drinks to go come with a lid and a sleeve.",
+              "pl": "Wszystkie napoje na wynos dostają pokrywkę i tekturową opaskę.",
+              "focusEn": "to go",
+              "focusPl": "na wynos"
+            }
+          ],
+          "acceptedAnswers": [
+            "to go",
+            "to-go"
+          ],
+          "acceptedTranslations": [
+            "na wynos"
+          ]
+        },
+        {
+          "id": "cafe-bakery.line",
+          "term": "line",
+          "ipa": "/laɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kolejka",
+          "definition": "A row of people waiting for their turn.",
+          "register": "neutralny",
+          "contextPl": "Czekanie, aż przyjdzie twoja kolej",
+          "natural": "",
+          "forms": "lines",
+          "collocations": "wait in line; stand in line; the line is long",
+          "synonyms": "queue",
+          "antonyms": "",
+          "notePl": "W USA „line”, w Wielkiej Brytanii „queue”.",
+          "examples": [
+            {
+              "en": "The line is out the door every morning at eight.",
+              "pl": "Co rano o ósmej kolejka sięga aż za drzwi.",
+              "focusEn": "line",
+              "focusPl": "kolejka"
+            },
+            {
+              "en": "Sorry, are you in line or just waiting for a drink?",
+              "pl": "Przepraszam, stoi pan w kolejce, czy tylko czeka na napój?",
+              "focusEn": "line",
+              "focusPl": "w kolejce"
+            }
+          ],
+          "acceptedAnswers": [
+            "line",
+            "queue"
+          ],
+          "acceptedTranslations": [
+            "kolejka"
+          ]
+        },
+        {
+          "id": "cafe-bakery.size",
+          "term": "size",
+          "ipa": "/saɪz/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "rozmiar",
+          "definition": "How big a drink or cup is.",
+          "register": "neutralny",
+          "contextPl": "Wybór wielkości napoju",
+          "natural": "",
+          "forms": "sizes",
+          "collocations": "what size; small size; large size",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What size would you like: small, medium, or large?",
+              "pl": "Jaki rozmiar: mały, średni czy duży?",
+              "focusEn": "size",
+              "focusPl": "rozmiar"
+            },
+            {
+              "en": "The large size is almost twice as big as the small.",
+              "pl": "Duży rozmiar jest prawie dwa razy większy od małego.",
+              "focusEn": "size",
+              "focusPl": "rozmiar"
+            }
+          ],
+          "acceptedAnswers": [
+            "size"
+          ],
+          "acceptedTranslations": [
+            "rozmiar",
+            "wielkość"
+          ]
+        },
+        {
+          "id": "cafe-bakery.cup",
+          "term": "cup",
+          "ipa": "/kʌp/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "kubek",
+          "definition": "A small container that you drink coffee or tea from.",
+          "register": "neutralny",
+          "contextPl": "Naczynie na napój",
+          "natural": "",
+          "forms": "cups",
+          "collocations": "paper cup; ceramic cup; a cup of coffee",
+          "synonyms": "mug",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I have it in a ceramic cup? I'm staying here.",
+              "pl": "Mogę dostać w ceramicznym kubku? Zostaję na miejscu.",
+              "focusEn": "cup",
+              "focusPl": "kubku"
+            },
+            {
+              "en": "They write your name on the cup and call it out.",
+              "pl": "Piszą twoje imię na kubku i je wywołują.",
+              "focusEn": "cup",
+              "focusPl": "kubku"
+            }
+          ],
+          "acceptedAnswers": [
+            "cup",
+            "mug"
+          ],
+          "acceptedTranslations": [
+            "kubek",
+            "filiżanka"
+          ]
+        },
+        {
+          "id": "cafe-bakery.counter",
+          "term": "counter",
+          "ipa": "/ˈkaʊntər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "lada",
+          "definition": "A long flat surface where customers order and pay.",
+          "register": "neutralny",
+          "contextPl": "Miejsce zamawiania i odbioru",
+          "natural": "",
+          "forms": "counters",
+          "collocations": "order at the counter; behind the counter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please order at the counter; we don't have table service.",
+              "pl": "Proszę zamawiać przy ladzie, nie obsługujemy przy stolikach.",
+              "focusEn": "counter",
+              "focusPl": "ladzie"
+            },
+            {
+              "en": "Your drink will be ready at the end of the counter.",
+              "pl": "Twój napój będzie gotowy na końcu lady.",
+              "focusEn": "counter",
+              "focusPl": "lady"
+            }
+          ],
+          "acceptedAnswers": [
+            "counter"
+          ],
+          "acceptedTranslations": [
+            "lada"
+          ]
+        },
+        {
+          "id": "cafe-bakery.barista",
+          "term": "barista",
+          "ipa": "/bəˈriːstə/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "barista",
+          "definition": "A person whose job is to make coffee drinks in a cafe.",
+          "register": "neutralny",
+          "contextPl": "Osoba przygotowująca kawę",
+          "natural": "",
+          "forms": "baristas",
+          "collocations": "ask the barista; a friendly barista",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The barista recognized me and started my usual order.",
+              "pl": "Barista mnie rozpoznał i zaczął robić moje stałe zamówienie.",
+              "focusEn": "barista",
+              "focusPl": "Barista"
+            },
+            {
+              "en": "Ask the barista which beans they're using this week.",
+              "pl": "Zapytaj baristę, jakich ziaren używają w tym tygodniu.",
+              "focusEn": "barista",
+              "focusPl": "baristę"
+            }
+          ],
+          "acceptedAnswers": [
+            "barista"
+          ],
+          "acceptedTranslations": [
+            "barista",
+            "baristka"
+          ]
+        },
+        {
+          "id": "cafe-bakery.pick-up",
+          "term": "pick up",
+          "ipa": "/ˌpɪk ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odebrać",
+          "definition": "To collect something that is ready for you.",
+          "register": "neutralny",
+          "contextPl": "Odbiór gotowego napoju",
+          "natural": "",
+          "forms": "picked up",
+          "collocations": "pick up an order; pick up a drink",
+          "synonyms": "collect",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can pick up your drink at the bar on the left.",
+              "pl": "Napój możesz odebrać przy barze po lewej.",
+              "focusEn": "pick up",
+              "focusPl": "odebrać"
+            },
+            {
+              "en": "I picked up my mobile order without waiting in line.",
+              "pl": "Odebrałem zamówienie z aplikacji bez stania w kolejce.",
+              "focusEn": "picked up",
+              "focusPl": "Odebrałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "pick up",
+            "collect"
+          ],
+          "acceptedTranslations": [
+            "odebrać",
+            "odbierać"
+          ]
+        },
+        {
+          "id": "cafe-bakery.register",
+          "term": "register",
+          "ipa": "/ˈrɛdʒɪstər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kasa",
+          "definition": "The machine or place where you pay in a shop or cafe.",
+          "register": "neutralny",
+          "contextPl": "Płacenie za zamówienie",
+          "natural": "cash register",
+          "forms": "registers",
+          "collocations": "pay at the register; cash register",
+          "synonyms": "checkout",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Pay at the register, and they'll call your name.",
+              "pl": "Zapłać przy kasie, a potem wywołają twoje imię.",
+              "focusEn": "register",
+              "focusPl": "kasie"
+            },
+            {
+              "en": "The line at the register moved slowly this morning.",
+              "pl": "Kolejka do kasy przesuwała się dziś rano powoli.",
+              "focusEn": "register",
+              "focusPl": "kasy"
+            }
+          ],
+          "acceptedAnswers": [
+            "register",
+            "cash register"
+          ],
+          "acceptedTranslations": [
+            "kasa"
+          ]
+        },
+        {
+          "id": "cafe-bakery.lid",
+          "term": "lid",
+          "ipa": "/lɪd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pokrywka",
+          "definition": "A cover that goes on top of a cup.",
+          "register": "neutralny",
+          "contextPl": "Napój na wynos",
+          "natural": "",
+          "forms": "lids",
+          "collocations": "put a lid on; a plastic lid",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you put a lid on that? I'm taking it to the car.",
+              "pl": "Może pan założyć pokrywkę? Zabieram to do samochodu.",
+              "focusEn": "lid",
+              "focusPl": "pokrywkę"
+            },
+            {
+              "en": "The lid wasn't on tight, and coffee spilled on my shirt.",
+              "pl": "Pokrywka nie była dobrze założona i kawa wylała mi się na koszulę.",
+              "focusEn": "lid",
+              "focusPl": "Pokrywka"
+            }
+          ],
+          "acceptedAnswers": [
+            "lid"
+          ],
+          "acceptedTranslations": [
+            "pokrywka",
+            "wieczko"
+          ]
+        },
+        {
+          "id": "cafe-bakery.mobile-order",
+          "term": "mobile order",
+          "ipa": "/ˌmoʊbəl ˈɔːrdər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zamówienie przez aplikację",
+          "definition": "An order you place and pay for on your phone before you arrive.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie kawy przez telefon bez kolejki",
+          "natural": "",
+          "forms": "mobile orders",
+          "collocations": "place a mobile order; mobile order pickup",
+          "synonyms": "app order",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Mobile orders are ready on the shelf by the door.",
+              "pl": "Zamówienia z aplikacji są gotowe na półce przy drzwiach.",
+              "focusEn": "Mobile orders",
+              "focusPl": "Zamówienia z aplikacji"
+            },
+            {
+              "en": "I placed a mobile order on my way to the cafe.",
+              "pl": "Złożyłem zamówienie przez aplikację w drodze do kawiarni.",
+              "focusEn": "mobile order",
+              "focusPl": "zamówienie przez aplikację"
+            }
+          ],
+          "acceptedAnswers": [
+            "mobile order",
+            "app order"
+          ],
+          "acceptedTranslations": [
+            "zamówienie przez aplikację",
+            "zamówienie z aplikacji"
+          ]
+        },
+        {
+          "id": "cafe-bakery.can-i-get-a-name-for-that",
+          "term": "can I get a name for that",
+          "ipa": "/kən aɪ ˌɡɛt ə ˈneɪm fɔːr ðæt/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "na jakie imię?",
+          "definition": "What cafe staff ask so they can write your name on your order.",
+          "register": "potoczny",
+          "contextPl": "Kasjer pyta o imię do zamówienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Great, and can I get a name for that?",
+              "pl": "Świetnie, a na jakie imię?",
+              "focusEn": "can I get a name for that",
+              "focusPl": "na jakie imię"
+            },
+            {
+              "en": "\"Can I get a name for that?\" the cashier asked with a marker in hand.",
+              "pl": "„Na jakie imię?” – zapytała kasjerka z markerem w ręce.",
+              "focusEn": "Can I get a name for that",
+              "focusPl": "Na jakie imię"
+            }
+          ],
+          "acceptedAnswers": [
+            "can I get a name for that",
+            "can I get a name"
+          ],
+          "acceptedTranslations": [
+            "na jakie imię?",
+            "na jakie imię to zamówienie?"
+          ]
+        },
+        {
+          "id": "cafe-bakery.tip-jar",
+          "term": "tip jar",
+          "ipa": "/ˈtɪp ˌdʒɑːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "słoik na napiwki",
+          "definition": "A jar on the counter where customers can leave tips.",
+          "register": "neutralny",
+          "contextPl": "Zostawianie drobnych dla obsługi",
+          "natural": "",
+          "forms": "tip jars",
+          "collocations": "drop change in the tip jar",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I dropped my change into the tip jar on the counter.",
+              "pl": "Wrzuciłem resztę do słoika na napiwki na ladzie.",
+              "focusEn": "tip jar",
+              "focusPl": "słoika na napiwki"
+            },
+            {
+              "en": "The tip jar by the register was almost full by noon.",
+              "pl": "Słoik na napiwki przy kasie był prawie pełny już w południe.",
+              "focusEn": "tip jar",
+              "focusPl": "Słoik na napiwki"
+            }
+          ],
+          "acceptedAnswers": [
+            "tip jar"
+          ],
+          "acceptedTranslations": [
+            "słoik na napiwki",
+            "puszka na napiwki"
+          ]
+        },
+        {
+          "id": "cafe-bakery.loyalty-card",
+          "term": "loyalty card",
+          "ipa": "/ˈlɔɪəlti ˌkɑːrd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "karta lojalnościowa",
+          "definition": "A card that gets stamped each time you buy, giving you a free item later.",
+          "register": "neutralny",
+          "contextPl": "Zbieranie pieczątek za kolejne kawy",
+          "natural": "punch card",
+          "forms": "loyalty cards",
+          "collocations": "stamp a loyalty card",
+          "synonyms": "punch card; rewards card",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With your loyalty card, the tenth coffee is free.",
+              "pl": "Z kartą lojalnościową dziesiąta kawa jest gratis.",
+              "focusEn": "loyalty card",
+              "focusPl": "kartą lojalnościową"
+            },
+            {
+              "en": "The barista stamped my loyalty card twice by mistake.",
+              "pl": "Barista przez pomyłkę podbił moją kartę lojalnościową dwa razy.",
+              "focusEn": "loyalty card",
+              "focusPl": "kartę lojalnościową"
+            }
+          ],
+          "acceptedAnswers": [
+            "loyalty card",
+            "punch card",
+            "rewards card"
+          ],
+          "acceptedTranslations": [
+            "karta lojalnościowa",
+            "karta stałego klienta"
+          ]
+        },
+        {
+          "id": "cafe-bakery.sleeve",
+          "term": "sleeve",
+          "ipa": "/sliːv/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "opaska na kubek",
+          "definition": "A cardboard band put around a hot cup to protect your hand.",
+          "register": "neutralny",
+          "contextPl": "Gorący napój na wynos",
+          "natural": "coffee sleeve",
+          "forms": "sleeves",
+          "collocations": "grab a sleeve; cardboard sleeve",
+          "synonyms": "coffee sleeve",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Grab a sleeve, because that cup is really hot.",
+              "pl": "Weź opaskę, bo ten kubek jest bardzo gorący.",
+              "focusEn": "sleeve",
+              "focusPl": "opaskę"
+            },
+            {
+              "en": "The cardboard sleeves are next to the lids.",
+              "pl": "Tekturowe opaski leżą obok pokrywek.",
+              "focusEn": "sleeves",
+              "focusPl": "opaski"
+            }
+          ],
+          "acceptedAnswers": [
+            "sleeve",
+            "coffee sleeve"
+          ],
+          "acceptedTranslations": [
+            "opaska na kubek",
+            "tekturowa opaska"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cafe-bakery.baked-goods",
+      "namePl": "Wypieki",
+      "scenePl": "Wybieranie wypieków z witryny w piekarni rano",
+      "entries": [
+        {
+          "id": "cafe-bakery.bread",
+          "term": "bread",
+          "ipa": "/brɛd/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "chleb",
+          "definition": "A basic food made from flour, water and yeast, baked in an oven.",
+          "register": "neutralny",
+          "contextPl": "Kupowanie pieczywa",
+          "natural": "",
+          "forms": "",
+          "collocations": "a loaf of bread; white bread; rye bread",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have any rye bread left today?",
+              "pl": "Macie jeszcze dziś chleb żytni?",
+              "focusEn": "bread",
+              "focusPl": "chleb"
+            },
+            {
+              "en": "The bread here comes out of the oven at seven.",
+              "pl": "Chleb wychodzi tu z pieca o siódmej.",
+              "focusEn": "bread",
+              "focusPl": "Chleb"
+            }
+          ],
+          "acceptedAnswers": [
+            "bread"
+          ],
+          "acceptedTranslations": [
+            "chleb",
+            "pieczywo"
+          ]
+        },
+        {
+          "id": "cafe-bakery.cake",
+          "term": "cake",
+          "ipa": "/keɪk/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "ciasto",
+          "definition": "A sweet baked food made from flour, sugar, eggs and butter.",
+          "register": "neutralny",
+          "contextPl": "Wybór ciasta z witryny",
+          "natural": "",
+          "forms": "cakes",
+          "collocations": "a slice of cake; birthday cake; chocolate cake",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I get a slice of chocolate cake?",
+              "pl": "Mogę prosić kawałek ciasta czekoladowego?",
+              "focusEn": "cake",
+              "focusPl": "ciasta"
+            },
+            {
+              "en": "The lemon cake in the window looks amazing.",
+              "pl": "Ciasto cytrynowe na wystawie wygląda niesamowicie.",
+              "focusEn": "cake",
+              "focusPl": "Ciasto"
+            }
+          ],
+          "acceptedAnswers": [
+            "cake"
+          ],
+          "acceptedTranslations": [
+            "ciasto",
+            "tort"
+          ]
+        },
+        {
+          "id": "cafe-bakery.cookie",
+          "term": "cookie",
+          "ipa": "/ˈkʊki/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "ciastko",
+          "definition": "A small, flat, sweet baked treat.",
+          "register": "neutralny",
+          "contextPl": "Słodka przekąska z piekarni",
+          "natural": "",
+          "forms": "cookies",
+          "collocations": "chocolate chip cookie; oatmeal cookie",
+          "synonyms": "biscuit",
+          "antonyms": "",
+          "notePl": "W USA „cookie”; brytyjskie „biscuit” to w USA coś innego (rodzaj bułeczki).",
+          "examples": [
+            {
+              "en": "These chocolate chip cookies are still warm.",
+              "pl": "Te ciastka z kawałkami czekolady są jeszcze ciepłe.",
+              "focusEn": "cookies",
+              "focusPl": "ciastka"
+            },
+            {
+              "en": "My kids always beg for a cookie when we pass the bakery.",
+              "pl": "Moje dzieci zawsze proszą o ciastko, kiedy mijamy piekarnię.",
+              "focusEn": "cookie",
+              "focusPl": "ciastko"
+            }
+          ],
+          "acceptedAnswers": [
+            "cookie"
+          ],
+          "acceptedTranslations": [
+            "ciastko",
+            "ciasteczko"
+          ]
+        },
+        {
+          "id": "cafe-bakery.roll",
+          "term": "roll",
+          "ipa": "/roʊl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "bułka",
+          "definition": "A small round piece of bread for one person.",
+          "register": "neutralny",
+          "contextPl": "Kupowanie pieczywa na śniadanie lub kolację",
+          "natural": "",
+          "forms": "rolls",
+          "collocations": "dinner roll; bread roll; poppy seed roll",
+          "synonyms": "bun",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I get six of those soft dinner rolls?",
+              "pl": "Mogę prosić sześć tych miękkich bułek?",
+              "focusEn": "rolls",
+              "focusPl": "bułek"
+            },
+            {
+              "en": "The poppy seed rolls are best eaten the same day.",
+              "pl": "Bułki z makiem najlepiej zjeść tego samego dnia.",
+              "focusEn": "rolls",
+              "focusPl": "Bułki"
+            }
+          ],
+          "acceptedAnswers": [
+            "roll",
+            "bun",
+            "bread roll"
+          ],
+          "acceptedTranslations": [
+            "bułka",
+            "bułeczka"
+          ]
+        },
+        {
+          "id": "cafe-bakery.croissant",
+          "term": "croissant",
+          "ipa": "/krəˈsɑːnt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "croissant",
+          "definition": "A soft, curved pastry made from many thin layers of buttery dough.",
+          "register": "neutralny",
+          "contextPl": "Wypiek do porannej kawy",
+          "natural": "",
+          "forms": "croissants",
+          "collocations": "almond croissant; butter croissant",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The almond croissants are my favorite thing here.",
+              "pl": "Croissanty migdałowe to moja ulubiona rzecz tutaj.",
+              "focusEn": "croissants",
+              "focusPl": "Croissanty"
+            },
+            {
+              "en": "Could you warm up the croissant for me?",
+              "pl": "Może pan podgrzać mi croissanta?",
+              "focusEn": "croissant",
+              "focusPl": "croissanta"
+            }
+          ],
+          "acceptedAnswers": [
+            "croissant"
+          ],
+          "acceptedTranslations": [
+            "croissant",
+            "rogalik",
+            "rogal francuski"
+          ]
+        },
+        {
+          "id": "cafe-bakery.muffin",
+          "term": "muffin",
+          "ipa": "/ˈmʌfɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "muffin",
+          "definition": "A small, sweet, cup-shaped cake, often with fruit.",
+          "register": "neutralny",
+          "contextPl": "Słodki wypiek na śniadanie",
+          "natural": "",
+          "forms": "muffins",
+          "collocations": "blueberry muffin; banana muffin",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Blueberry muffins are two for five dollars this morning.",
+              "pl": "Dziś rano muffiny z jagodami są dwa za pięć dolarów.",
+              "focusEn": "muffins",
+              "focusPl": "muffiny"
+            },
+            {
+              "en": "The muffin was huge, so I saved half for later.",
+              "pl": "Muffin był ogromny, więc połowę zostawiłem na później.",
+              "focusEn": "muffin",
+              "focusPl": "Muffin"
+            }
+          ],
+          "acceptedAnswers": [
+            "muffin"
+          ],
+          "acceptedTranslations": [
+            "muffin",
+            "babeczka",
+            "mufinka"
+          ]
+        },
+        {
+          "id": "cafe-bakery.donut",
+          "term": "donut",
+          "ipa": "/ˈdoʊnʌt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pączek",
+          "definition": "A sweet fried cake, often ring-shaped or filled with jelly.",
+          "register": "neutralny",
+          "contextPl": "Słodka przekąska z pudełka dla grupy",
+          "natural": "",
+          "forms": "donuts",
+          "collocations": "glazed donut; a box of donuts; jelly donut",
+          "synonyms": "doughnut",
+          "antonyms": "",
+          "notePl": "Amerykański donut to często pączek z dziurką; pisownia „doughnut” też jest poprawna.",
+          "examples": [
+            {
+              "en": "A box of glazed donuts for the team, please.",
+              "pl": "Poproszę pudełko lukrowanych pączków dla zespołu.",
+              "focusEn": "donuts",
+              "focusPl": "pączków"
+            },
+            {
+              "en": "The jelly donut was still warm and covered in sugar.",
+              "pl": "Pączek z dżemem był jeszcze ciepły i obsypany cukrem.",
+              "focusEn": "donut",
+              "focusPl": "Pączek"
+            }
+          ],
+          "acceptedAnswers": [
+            "donut",
+            "doughnut"
+          ],
+          "acceptedTranslations": [
+            "pączek",
+            "donut"
+          ]
+        },
+        {
+          "id": "cafe-bakery.bagel",
+          "term": "bagel",
+          "ipa": "/ˈbeɪɡəl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "bajgiel",
+          "definition": "A ring-shaped bread roll that is boiled and then baked.",
+          "register": "neutralny",
+          "contextPl": "Śniadanie na szybko",
+          "natural": "",
+          "forms": "bagels",
+          "collocations": "sesame bagel; bagel with cream cheese",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll have a sesame bagel with cream cheese.",
+              "pl": "Poproszę bajgla sezamowego z serkiem śmietankowym.",
+              "focusEn": "bagel",
+              "focusPl": "bajgla"
+            },
+            {
+              "en": "Do you want your bagel toasted?",
+              "pl": "Opiec pani bajgla?",
+              "focusEn": "bagel",
+              "focusPl": "bajgla"
+            }
+          ],
+          "acceptedAnswers": [
+            "bagel"
+          ],
+          "acceptedTranslations": [
+            "bajgiel",
+            "obwarzanek"
+          ]
+        },
+        {
+          "id": "cafe-bakery.pie",
+          "term": "pie",
+          "ipa": "/paɪ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "placek",
+          "definition": "A baked dish with a pastry crust and a sweet filling, often fruit.",
+          "register": "neutralny",
+          "contextPl": "Ciasto owocowe w kruchym spodzie",
+          "natural": "",
+          "forms": "pies",
+          "collocations": "apple pie; pumpkin pie; a slice of pie",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Their apple pie sells out every Sunday.",
+              "pl": "Ich szarlotka wyprzedaje się w każdą niedzielę.",
+              "focusEn": "apple pie",
+              "focusPl": "szarlotka"
+            },
+            {
+              "en": "Can I order a pumpkin pie for Thanksgiving?",
+              "pl": "Mogę zamówić ciasto dyniowe na Święto Dziękczynienia?",
+              "focusEn": "pie",
+              "focusPl": "ciasto dyniowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "pie"
+          ],
+          "acceptedTranslations": [
+            "placek",
+            "ciasto",
+            "tarta"
+          ]
+        },
+        {
+          "id": "cafe-bakery.pastry",
+          "term": "pastry",
+          "ipa": "/ˈpeɪstri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ciastko",
+          "definition": "A small sweet baked item made with rich dough.",
+          "register": "neutralny",
+          "contextPl": "Ogólne słowo na słodkie wypieki",
+          "natural": "",
+          "forms": "pastries",
+          "collocations": "pastry case; Danish pastry; fresh pastries",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Which pastry would you recommend with an espresso?",
+              "pl": "Które ciastko poleciłby pan do espresso?",
+              "focusEn": "pastry",
+              "focusPl": "ciastko"
+            },
+            {
+              "en": "The pastry case is full of fruit tarts this morning.",
+              "pl": "Witryna z wypiekami jest dziś rano pełna tartaletek owocowych.",
+              "focusEn": "pastry",
+              "focusPl": "wypiekami"
+            }
+          ],
+          "acceptedAnswers": [
+            "pastry"
+          ],
+          "acceptedTranslations": [
+            "ciastko",
+            "wypiek",
+            "słodka bułka"
+          ]
+        },
+        {
+          "id": "cafe-bakery.cinnamon-roll",
+          "term": "cinnamon roll",
+          "ipa": "/ˈsɪnəmən ˌroʊl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "drożdżówka cynamonowa",
+          "definition": "A sweet rolled pastry with cinnamon and sugar, often with icing.",
+          "register": "neutralny",
+          "contextPl": "Słodki wypiek do kawy",
+          "natural": "",
+          "forms": "cinnamon rolls",
+          "collocations": "warm cinnamon roll",
+          "synonyms": "cinnamon bun",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cinnamon rolls here are covered in sweet icing.",
+              "pl": "Cynamonowe ślimaki są tu polane słodkim lukrem.",
+              "focusEn": "cinnamon rolls",
+              "focusPl": "Cynamonowe ślimaki"
+            },
+            {
+              "en": "I'll take one cinnamon roll and a small coffee.",
+              "pl": "Wezmę jedną drożdżówkę cynamonową i małą kawę.",
+              "focusEn": "cinnamon roll",
+              "focusPl": "drożdżówkę cynamonową"
+            }
+          ],
+          "acceptedAnswers": [
+            "cinnamon roll",
+            "cinnamon bun"
+          ],
+          "acceptedTranslations": [
+            "drożdżówka cynamonowa",
+            "cynamonowy ślimak",
+            "ślimak cynamonowy"
+          ]
+        },
+        {
+          "id": "cafe-bakery.loaf",
+          "term": "loaf",
+          "ipa": "/loʊf/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bochenek",
+          "definition": "A whole piece of bread baked in one shape.",
+          "register": "neutralny",
+          "contextPl": "Kupowanie całego chleba",
+          "natural": "",
+          "forms": "loaves",
+          "collocations": "a loaf of bread; a whole loaf",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I get a loaf of the multigrain bread?",
+              "pl": "Mogę prosić bochenek chleba wieloziarnistego?",
+              "focusEn": "loaf",
+              "focusPl": "bochenek"
+            },
+            {
+              "en": "Would you like the loaf sliced or whole?",
+              "pl": "Bochenek pokroić czy zostawić w całości?",
+              "focusEn": "loaf",
+              "focusPl": "Bochenek"
+            }
+          ],
+          "acceptedAnswers": [
+            "loaf"
+          ],
+          "acceptedTranslations": [
+            "bochenek"
+          ]
+        },
+        {
+          "id": "cafe-bakery.whole-wheat",
+          "term": "whole wheat",
+          "ipa": "/ˌhoʊl ˈwiːt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pełnoziarnisty",
+          "definition": "Made with flour that contains the whole grain of wheat.",
+          "register": "neutralny",
+          "contextPl": "Wybór zdrowszego pieczywa",
+          "natural": "",
+          "forms": "",
+          "collocations": "whole wheat bread; whole wheat bagel",
+          "synonyms": "whole grain",
+          "antonyms": "white",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is this whole wheat or white bread?",
+              "pl": "To jest chleb pełnoziarnisty czy biały?",
+              "focusEn": "whole wheat",
+              "focusPl": "pełnoziarnisty"
+            },
+            {
+              "en": "I'd like the whole wheat bagel, toasted, please.",
+              "pl": "Poproszę pełnoziarnistego bajgla, opiekanego.",
+              "focusEn": "whole wheat",
+              "focusPl": "pełnoziarnistego"
+            }
+          ],
+          "acceptedAnswers": [
+            "whole wheat",
+            "whole grain"
+          ],
+          "acceptedTranslations": [
+            "pełnoziarnisty",
+            "razowy"
+          ]
+        },
+        {
+          "id": "cafe-bakery.sourdough",
+          "term": "sourdough",
+          "ipa": "/ˈsaʊərdoʊ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "chleb na zakwasie",
+          "definition": "Bread made with a naturally fermented starter, with a slightly sour taste.",
+          "register": "neutralny",
+          "contextPl": "Wybór rzemieślniczego chleba",
+          "natural": "",
+          "forms": "",
+          "collocations": "sourdough bread; sourdough starter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Their sourdough has a thick, crunchy crust.",
+              "pl": "Ich chleb na zakwasie ma grubą, chrupiącą skórkę.",
+              "focusEn": "sourdough",
+              "focusPl": "chleb na zakwasie"
+            },
+            {
+              "en": "The sourdough takes two days to make, so it costs more.",
+              "pl": "Chleb na zakwasie robi się dwa dni, dlatego jest droższy.",
+              "focusEn": "sourdough",
+              "focusPl": "Chleb na zakwasie"
+            }
+          ],
+          "acceptedAnswers": [
+            "sourdough",
+            "sourdough bread"
+          ],
+          "acceptedTranslations": [
+            "chleb na zakwasie",
+            "zakwas"
+          ]
+        },
+        {
+          "id": "cafe-bakery.brownie",
+          "term": "brownie",
+          "ipa": "/ˈbraʊni/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "brownie",
+          "definition": "A small, dense square of chocolate cake.",
+          "register": "neutralny",
+          "contextPl": "Słodki kawałek ciasta do kawy",
+          "natural": "",
+          "forms": "brownies",
+          "collocations": "chocolate brownie; fudge brownie",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll have a brownie and a glass of milk.",
+              "pl": "Poproszę brownie i szklankę mleka.",
+              "focusEn": "brownie",
+              "focusPl": "brownie"
+            },
+            {
+              "en": "The brownies are cut into big squares behind the glass.",
+              "pl": "Brownie leży pokrojone w duże kwadraty za szybą.",
+              "focusEn": "brownies",
+              "focusPl": "Brownie"
+            }
+          ],
+          "acceptedAnswers": [
+            "brownie"
+          ],
+          "acceptedTranslations": [
+            "brownie",
+            "ciasto czekoladowe"
+          ]
+        },
+        {
+          "id": "cafe-bakery.crust",
+          "term": "crust",
+          "ipa": "/krʌst/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "skórka",
+          "definition": "The hard outer layer of bread or the pastry base of a pie.",
+          "register": "neutralny",
+          "contextPl": "Opis chleba lub spodu ciasta",
+          "natural": "",
+          "forms": "crusts",
+          "collocations": "crispy crust; pie crust; cut off the crusts",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I love bread with a dark, crispy crust.",
+              "pl": "Uwielbiam chleb z ciemną, chrupką skórką.",
+              "focusEn": "crust",
+              "focusPl": "skórką"
+            },
+            {
+              "en": "The pie crust is made with real butter.",
+              "pl": "Spód placka jest robiony na prawdziwym maśle.",
+              "focusEn": "crust",
+              "focusPl": "Spód"
+            }
+          ],
+          "acceptedAnswers": [
+            "crust"
+          ],
+          "acceptedTranslations": [
+            "skórka",
+            "spód"
+          ]
+        },
+        {
+          "id": "cafe-bakery.scone",
+          "term": "scone",
+          "ipa": "/skoʊn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "bułeczka maślana",
+          "definition": "A small, slightly sweet baked good, often with dried fruit.",
+          "register": "neutralny",
+          "contextPl": "Wypiek do herbaty",
+          "natural": "",
+          "forms": "scones",
+          "collocations": "cranberry scone; blueberry scone",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cranberry scones go great with a cup of tea.",
+              "pl": "Bułeczki maślane z żurawiną świetnie pasują do herbaty.",
+              "focusEn": "scones",
+              "focusPl": "Bułeczki maślane"
+            },
+            {
+              "en": "American scones are sweeter and bigger than British ones.",
+              "pl": "Amerykańskie scones są słodsze i większe niż brytyjskie.",
+              "focusEn": "scones",
+              "focusPl": "scones"
+            }
+          ],
+          "acceptedAnswers": [
+            "scone"
+          ],
+          "acceptedTranslations": [
+            "bułeczka maślana",
+            "scone"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cafe-bakery.bakery-shopping",
+      "namePl": "Zakupy w piekarni",
+      "scenePl": "Kupowanie pieczywa i ciast w osiedlowej piekarni pod koniec dnia",
+      "entries": [
+        {
+          "id": "cafe-bakery.bakery",
+          "term": "bakery",
+          "ipa": "/ˈbeɪkəri/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "piekarnia",
+          "definition": "A shop where bread and cakes are made and sold.",
+          "register": "neutralny",
+          "contextPl": "Miejsce zakupu pieczywa",
+          "natural": "",
+          "forms": "bakeries",
+          "collocations": "a local bakery; stop by the bakery",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bakery on our street opens at six every morning.",
+              "pl": "Piekarnia na naszej ulicy otwiera się codziennie o szóstej rano.",
+              "focusEn": "bakery",
+              "focusPl": "Piekarnia"
+            },
+            {
+              "en": "I stopped by the bakery to pick up some bread.",
+              "pl": "Wstąpiłem do piekarni po chleb.",
+              "focusEn": "bakery",
+              "focusPl": "piekarni"
+            }
+          ],
+          "acceptedAnswers": [
+            "bakery"
+          ],
+          "acceptedTranslations": [
+            "piekarnia",
+            "cukiernia"
+          ]
+        },
+        {
+          "id": "cafe-bakery.fresh",
+          "term": "fresh",
+          "ipa": "/frɛʃ/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "świeży",
+          "definition": "Recently made and not old.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o świeżość pieczywa",
+          "natural": "",
+          "forms": "fresher – freshest",
+          "collocations": "fresh bread; fresh from the oven",
+          "synonyms": "",
+          "antonyms": "stale",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is this bread fresh, from this morning?",
+              "pl": "Czy ten chleb jest świeży, z dzisiejszego ranka?",
+              "focusEn": "fresh",
+              "focusPl": "świeży"
+            },
+            {
+              "en": "Nothing smells better than fresh bread at a bakery.",
+              "pl": "Nic nie pachnie lepiej niż świeży chleb w piekarni.",
+              "focusEn": "fresh",
+              "focusPl": "świeży"
+            }
+          ],
+          "acceptedAnswers": [
+            "fresh"
+          ],
+          "acceptedTranslations": [
+            "świeży"
+          ]
+        },
+        {
+          "id": "cafe-bakery.anything-else",
+          "term": "anything else",
+          "ipa": "/ˈɛniθɪŋ ˌɛls/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "coś jeszcze?",
+          "definition": "A question asking if a customer wants to buy more.",
+          "register": "neutralny",
+          "contextPl": "Sprzedawca pyta przy ladzie",
+          "natural": "",
+          "forms": "",
+          "collocations": "anything else for you",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Anything else, or will that be all?",
+              "pl": "Coś jeszcze, czy to wszystko?",
+              "focusEn": "Anything else",
+              "focusPl": "Coś jeszcze"
+            },
+            {
+              "en": "When the baker asked if I wanted anything else, I added two rolls.",
+              "pl": "Kiedy piekarz zapytał, czy chcę coś jeszcze, dorzuciłem dwie bułki.",
+              "focusEn": "anything else",
+              "focusPl": "coś jeszcze"
+            }
+          ],
+          "acceptedAnswers": [
+            "anything else"
+          ],
+          "acceptedTranslations": [
+            "coś jeszcze?",
+            "czy coś jeszcze?"
+          ]
+        },
+        {
+          "id": "cafe-bakery.thats-all",
+          "term": "that's all",
+          "ipa": "/ˌðæts ˈɔːl/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "to wszystko",
+          "definition": "Used to say you do not want anything more.",
+          "register": "neutralny",
+          "contextPl": "Kończenie zakupów przy ladzie",
+          "natural": "",
+          "forms": "",
+          "collocations": "that's all for today; that'll be all",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "No, thanks, that's all for today.",
+              "pl": "Nie, dziękuję, to wszystko na dziś.",
+              "focusEn": "that's all",
+              "focusPl": "to wszystko"
+            },
+            {
+              "en": "Just the bread and two croissants; that's all.",
+              "pl": "Tylko chleb i dwa croissanty, to wszystko.",
+              "focusEn": "that's all",
+              "focusPl": "to wszystko"
+            }
+          ],
+          "acceptedAnswers": [
+            "that's all",
+            "that is all",
+            "that'll be all"
+          ],
+          "acceptedTranslations": [
+            "to wszystko"
+          ]
+        },
+        {
+          "id": "cafe-bakery.slice",
+          "term": "slice",
+          "ipa": "/slaɪs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kawałek",
+          "definition": "A thin flat piece cut from bread or cake.",
+          "register": "neutralny",
+          "contextPl": "Kupowanie ciasta na kawałki",
+          "natural": "",
+          "forms": "slices",
+          "collocations": "a slice of cake; a slice of bread",
+          "synonyms": "piece",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I get two slices of the carrot cake?",
+              "pl": "Mogę prosić dwa kawałki ciasta marchewkowego?",
+              "focusEn": "slices",
+              "focusPl": "kawałki"
+            },
+            {
+              "en": "They let you try a slice of each bread before you buy.",
+              "pl": "Pozwalają spróbować kromki każdego chleba przed zakupem.",
+              "focusEn": "slice",
+              "focusPl": "kromki"
+            }
+          ],
+          "acceptedAnswers": [
+            "slice",
+            "piece"
+          ],
+          "acceptedTranslations": [
+            "kawałek",
+            "kromka",
+            "plaster"
+          ]
+        },
+        {
+          "id": "cafe-bakery.sliced",
+          "term": "sliced",
+          "ipa": "/slaɪst/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pokrojony",
+          "definition": "Cut into thin flat pieces.",
+          "register": "neutralny",
+          "contextPl": "Krojenie chleba w piekarni",
+          "natural": "",
+          "forms": "",
+          "collocations": "sliced bread; thinly sliced",
+          "synonyms": "",
+          "antonyms": "whole",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Would you like the bread sliced?",
+              "pl": "Chleb ma być pokrojony?",
+              "focusEn": "sliced",
+              "focusPl": "pokrojony"
+            },
+            {
+              "en": "Sliced bread goes stale faster than a whole loaf.",
+              "pl": "Pokrojony chleb szybciej czerstwieje niż cały bochenek.",
+              "focusEn": "Sliced",
+              "focusPl": "Pokrojony"
+            }
+          ],
+          "acceptedAnswers": [
+            "sliced"
+          ],
+          "acceptedTranslations": [
+            "pokrojony",
+            "krojony"
+          ]
+        },
+        {
+          "id": "cafe-bakery.dozen",
+          "term": "dozen",
+          "ipa": "/ˈdʌzən/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "tuzin",
+          "definition": "A group of twelve.",
+          "register": "neutralny",
+          "contextPl": "Kupowanie bajgli i pączków na sztuki",
+          "natural": "",
+          "forms": "dozens",
+          "collocations": "a dozen; half a dozen; a baker's dozen",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Baker's dozen” to trzynaście sztuk.",
+          "examples": [
+            {
+              "en": "A dozen bagels costs less than buying them one by one.",
+              "pl": "Tuzin bajgli kosztuje mniej niż kupowanie ich pojedynczo.",
+              "focusEn": "dozen",
+              "focusPl": "Tuzin"
+            },
+            {
+              "en": "Can I get half a dozen donuts?",
+              "pl": "Mogę prosić pół tuzina pączków?",
+              "focusEn": "dozen",
+              "focusPl": "tuzina"
+            }
+          ],
+          "acceptedAnswers": [
+            "dozen"
+          ],
+          "acceptedTranslations": [
+            "tuzin"
+          ]
+        },
+        {
+          "id": "cafe-bakery.stale",
+          "term": "stale",
+          "ipa": "/steɪl/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czerstwy",
+          "definition": "No longer fresh and dry or hard.",
+          "register": "neutralny",
+          "contextPl": "Narzekanie na stare pieczywo",
+          "natural": "",
+          "forms": "staler – stalest",
+          "collocations": "stale bread; go stale",
+          "synonyms": "",
+          "antonyms": "fresh",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "These rolls are a little stale; they're from yesterday.",
+              "pl": "Te bułki są trochę czerstwe, są wczorajsze.",
+              "focusEn": "stale",
+              "focusPl": "czerstwe"
+            },
+            {
+              "en": "Stale bread is perfect for making croutons.",
+              "pl": "Czerstwy chleb jest idealny do robienia grzanek.",
+              "focusEn": "Stale",
+              "focusPl": "Czerstwy"
+            }
+          ],
+          "acceptedAnswers": [
+            "stale"
+          ],
+          "acceptedTranslations": [
+            "czerstwy",
+            "nieświeży"
+          ]
+        },
+        {
+          "id": "cafe-bakery.freshly-baked",
+          "term": "freshly baked",
+          "ipa": "/ˌfrɛʃli ˈbeɪkt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "świeżo upieczony",
+          "definition": "Baked a very short time ago.",
+          "register": "neutralny",
+          "contextPl": "Zachwalanie towaru w piekarni",
+          "natural": "",
+          "forms": "",
+          "collocations": "freshly baked bread; freshly baked cookies",
+          "synonyms": "fresh from the oven",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The whole shop smells like freshly baked bread.",
+              "pl": "W całym sklepie pachnie świeżo upieczonym chlebem.",
+              "focusEn": "freshly baked",
+              "focusPl": "świeżo upieczonym"
+            },
+            {
+              "en": "These muffins are freshly baked; they're still warm.",
+              "pl": "Te muffiny są świeżo upieczone, jeszcze ciepłe.",
+              "focusEn": "freshly baked",
+              "focusPl": "świeżo upieczone"
+            }
+          ],
+          "acceptedAnswers": [
+            "freshly baked",
+            "fresh from the oven"
+          ],
+          "acceptedTranslations": [
+            "świeżo upieczony",
+            "prosto z pieca"
+          ]
+        },
+        {
+          "id": "cafe-bakery.sold-out",
+          "term": "sold out",
+          "ipa": "/ˌsoʊld ˈaʊt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wyprzedany",
+          "definition": "Having no more items left to sell.",
+          "register": "neutralny",
+          "contextPl": "Gdy zabrakło danego wypieku",
+          "natural": "",
+          "forms": "",
+          "collocations": "sold out for today; completely sold out",
+          "synonyms": "",
+          "antonyms": "in stock",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, the sourdough is sold out for today.",
+              "pl": "Przykro mi, chleb na zakwasie jest na dziś wyprzedany.",
+              "focusEn": "sold out",
+              "focusPl": "wyprzedany"
+            },
+            {
+              "en": "By five o'clock, almost everything was sold out.",
+              "pl": "Do piątej prawie wszystko było wyprzedane.",
+              "focusEn": "sold out",
+              "focusPl": "wyprzedane"
+            }
+          ],
+          "acceptedAnswers": [
+            "sold out"
+          ],
+          "acceptedTranslations": [
+            "wyprzedany",
+            "wyprzedane"
+          ]
+        },
+        {
+          "id": "cafe-bakery.baker",
+          "term": "baker",
+          "ipa": "/ˈbeɪkər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "piekarz",
+          "definition": "A person whose job is to bake bread and cakes.",
+          "register": "neutralny",
+          "contextPl": "Osoba pracująca w piekarni",
+          "natural": "",
+          "forms": "bakers",
+          "collocations": "a local baker; ask the baker",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The baker starts work at three in the morning.",
+              "pl": "Piekarz zaczyna pracę o trzeciej w nocy.",
+              "focusEn": "baker",
+              "focusPl": "Piekarz"
+            },
+            {
+              "en": "Ask the baker if the rye bread has any seeds.",
+              "pl": "Zapytaj piekarza, czy chleb żytni ma jakieś ziarna.",
+              "focusEn": "baker",
+              "focusPl": "piekarza"
+            }
+          ],
+          "acceptedAnswers": [
+            "baker"
+          ],
+          "acceptedTranslations": [
+            "piekarz",
+            "cukiernik"
+          ]
+        },
+        {
+          "id": "cafe-bakery.cupcake",
+          "term": "cupcake",
+          "ipa": "/ˈkʌpˌkeɪk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "babeczka z kremem",
+          "definition": "A small cake baked in a paper cup and topped with frosting.",
+          "register": "neutralny",
+          "contextPl": "Słodkości na urodziny lub dla dzieci",
+          "natural": "",
+          "forms": "cupcakes",
+          "collocations": "chocolate cupcake; cupcakes with frosting",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kids picked out cupcakes with pink frosting.",
+              "pl": "Dzieci wybrały babeczki z różowym kremem.",
+              "focusEn": "cupcakes",
+              "focusPl": "babeczki"
+            },
+            {
+              "en": "Each cupcake costs three dollars, or ten for twenty-five.",
+              "pl": "Każda babeczka kosztuje trzy dolary albo dziesięć za dwadzieścia pięć.",
+              "focusEn": "cupcake",
+              "focusPl": "babeczka"
+            }
+          ],
+          "acceptedAnswers": [
+            "cupcake"
+          ],
+          "acceptedTranslations": [
+            "babeczka z kremem",
+            "babeczka",
+            "muffinka z kremem"
+          ]
+        },
+        {
+          "id": "cafe-bakery.order-ahead",
+          "term": "order ahead",
+          "ipa": "/ˌɔːrdər əˈhɛd/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zamówić z wyprzedzeniem",
+          "definition": "To place an order some time before you need it.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie tortu lub większej ilości wypieków",
+          "natural": "",
+          "forms": "ordered ahead",
+          "collocations": "order ahead for the weekend",
+          "synonyms": "pre-order",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "For a birthday cake, you need to order ahead.",
+              "pl": "Tort urodzinowy trzeba zamówić z wyprzedzeniem.",
+              "focusEn": "order ahead",
+              "focusPl": "zamówić z wyprzedzeniem"
+            },
+            {
+              "en": "We ordered ahead, so our pies were waiting at the counter.",
+              "pl": "Zamówiliśmy z wyprzedzeniem, więc nasze ciasta czekały przy ladzie.",
+              "focusEn": "ordered ahead",
+              "focusPl": "Zamówiliśmy z wyprzedzeniem"
+            }
+          ],
+          "acceptedAnswers": [
+            "order ahead",
+            "pre-order"
+          ],
+          "acceptedTranslations": [
+            "zamówić z wyprzedzeniem",
+            "zamawiać z wyprzedzeniem"
+          ]
+        },
+        {
+          "id": "cafe-bakery.day-old",
+          "term": "day-old",
+          "ipa": "/ˌdeɪ ˈoʊld/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wczorajszy",
+          "definition": "Baked the day before and usually sold cheaper.",
+          "register": "neutralny",
+          "contextPl": "Tańsze pieczywo z poprzedniego dnia",
+          "natural": "",
+          "forms": "",
+          "collocations": "day-old bread; day-old pastries",
+          "synonyms": "",
+          "antonyms": "fresh",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Day-old bread is half price after four.",
+              "pl": "Wczorajsze pieczywo jest po czwartej o połowę tańsze.",
+              "focusEn": "Day-old",
+              "focusPl": "Wczorajsze"
+            },
+            {
+              "en": "I buy day-old pastries because they're much cheaper.",
+              "pl": "Kupuję wczorajsze wypieki, bo są dużo tańsze.",
+              "focusEn": "day-old",
+              "focusPl": "wczorajsze"
+            }
+          ],
+          "acceptedAnswers": [
+            "day-old"
+          ],
+          "acceptedTranslations": [
+            "wczorajszy",
+            "z poprzedniego dnia"
+          ]
+        },
+        {
+          "id": "cafe-bakery.box-up",
+          "term": "box up",
+          "ipa": "/ˌbɑːks ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "zapakować do pudełka",
+          "definition": "To put something into a box to carry it.",
+          "register": "neutralny",
+          "contextPl": "Pakowanie ciasta lub babeczek na wynos",
+          "natural": "",
+          "forms": "boxed up",
+          "collocations": "box up a cake; box it up",
+          "synonyms": "pack up",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you box up these six cupcakes for me?",
+              "pl": "Może pan zapakować mi te sześć babeczek do pudełka?",
+              "focusEn": "box up",
+              "focusPl": "zapakować"
+            },
+            {
+              "en": "She boxed up the cake and tied it with a ribbon.",
+              "pl": "Zapakowała ciasto do pudełka i przewiązała je wstążką.",
+              "focusEn": "boxed up",
+              "focusPl": "Zapakowała"
+            }
+          ],
+          "acceptedAnswers": [
+            "box up",
+            "pack up"
+          ],
+          "acceptedTranslations": [
+            "zapakować do pudełka",
+            "pakować do pudełka",
+            "zapakować"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cafe-bakery.taste-texture",
+      "namePl": "Smak i konsystencja",
+      "scenePl": "Próbowanie kawy i ciasta przy stoliku w kawiarni",
+      "entries": [
+        {
+          "id": "cafe-bakery.sweet",
+          "term": "sweet",
+          "ipa": "/swiːt/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "słodki",
+          "definition": "Tasting of sugar.",
+          "register": "neutralny",
+          "contextPl": "Ocena smaku ciasta lub napoju",
+          "natural": "",
+          "forms": "sweeter – sweetest",
+          "collocations": "too sweet; a little sweet",
+          "synonyms": "",
+          "antonyms": "bitter",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This muffin is way too sweet for me.",
+              "pl": "Ten muffin jest dla mnie zdecydowanie za słodki.",
+              "focusEn": "sweet",
+              "focusPl": "słodki"
+            },
+            {
+              "en": "I like my latte a little sweet, with one packet of sugar.",
+              "pl": "Lubię lekko słodkie latte, z jedną saszetką cukru.",
+              "focusEn": "sweet",
+              "focusPl": "słodkie"
+            }
+          ],
+          "acceptedAnswers": [
+            "sweet"
+          ],
+          "acceptedTranslations": [
+            "słodki"
+          ]
+        },
+        {
+          "id": "cafe-bakery.strong",
+          "term": "strong",
+          "ipa": "/strɔːŋ/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "mocny",
+          "definition": "Having a lot of flavor and caffeine.",
+          "register": "neutralny",
+          "contextPl": "Ocena kawy",
+          "natural": "",
+          "forms": "stronger – strongest",
+          "collocations": "strong coffee; too strong",
+          "synonyms": "",
+          "antonyms": "weak",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This coffee is really strong; I'm wide awake now.",
+              "pl": "Ta kawa jest naprawdę mocna, teraz jestem całkiem rozbudzony.",
+              "focusEn": "strong",
+              "focusPl": "mocna"
+            },
+            {
+              "en": "I like my coffee strong, but this one is too much.",
+              "pl": "Lubię mocną kawę, ale ta to już przesada.",
+              "focusEn": "strong",
+              "focusPl": "mocną"
+            }
+          ],
+          "acceptedAnswers": [
+            "strong"
+          ],
+          "acceptedTranslations": [
+            "mocny"
+          ]
+        },
+        {
+          "id": "cafe-bakery.bitter",
+          "term": "bitter",
+          "ipa": "/ˈbɪtər/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "gorzki",
+          "definition": "Having a strong, sharp taste that is not sweet.",
+          "register": "neutralny",
+          "contextPl": "Ocena smaku kawy",
+          "natural": "",
+          "forms": "",
+          "collocations": "a bitter taste; too bitter",
+          "synonyms": "",
+          "antonyms": "sweet",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The coffee tastes bitter; maybe it's been sitting too long.",
+              "pl": "Kawa jest gorzka, może za długo stała.",
+              "focusEn": "bitter",
+              "focusPl": "gorzka"
+            },
+            {
+              "en": "A dark roast is more bitter than a light roast.",
+              "pl": "Ciemno palona kawa jest bardziej gorzka niż jasno palona.",
+              "focusEn": "bitter",
+              "focusPl": "gorzka"
+            }
+          ],
+          "acceptedAnswers": [
+            "bitter"
+          ],
+          "acceptedTranslations": [
+            "gorzki"
+          ]
+        },
+        {
+          "id": "cafe-bakery.weak",
+          "term": "weak",
+          "ipa": "/wiːk/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "słaby",
+          "definition": "Having too much water and not enough flavor.",
+          "register": "neutralny",
+          "contextPl": "Narzekanie na rozwodnioną kawę lub herbatę",
+          "natural": "watery",
+          "forms": "weaker – weakest",
+          "collocations": "weak coffee; too weak",
+          "synonyms": "watery",
+          "antonyms": "strong",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The coffee here is kind of weak and watery.",
+              "pl": "Kawa jest tu raczej słaba i wodnista.",
+              "focusEn": "weak",
+              "focusPl": "słaba"
+            },
+            {
+              "en": "This tea is too weak; I'll leave the bag in longer.",
+              "pl": "Ta herbata jest za słaba, potrzymam torebkę dłużej.",
+              "focusEn": "weak",
+              "focusPl": "słaba"
+            }
+          ],
+          "acceptedAnswers": [
+            "weak",
+            "watery"
+          ],
+          "acceptedTranslations": [
+            "słaby",
+            "wodnisty",
+            "rozwodniony"
+          ]
+        },
+        {
+          "id": "cafe-bakery.crunchy",
+          "term": "crunchy",
+          "ipa": "/ˈkrʌntʃi/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "chrupiący",
+          "definition": "Firm and making a noise when you bite it.",
+          "register": "neutralny",
+          "contextPl": "Opis wypieków i dodatków",
+          "natural": "",
+          "forms": "",
+          "collocations": "crunchy topping; nice and crunchy",
+          "synonyms": "crispy",
+          "antonyms": "soft",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The biscotti are crunchy, so dip them in your coffee.",
+              "pl": "Biscotti są chrupiące, więc maczaj je w kawie.",
+              "focusEn": "crunchy",
+              "focusPl": "chrupiące"
+            },
+            {
+              "en": "I like the crunchy sugar on top of these muffins.",
+              "pl": "Lubię chrupiący cukier na wierzchu tych muffinów.",
+              "focusEn": "crunchy",
+              "focusPl": "chrupiący"
+            }
+          ],
+          "acceptedAnswers": [
+            "crunchy",
+            "crispy"
+          ],
+          "acceptedTranslations": [
+            "chrupiący",
+            "chrupki"
+          ]
+        },
+        {
+          "id": "cafe-bakery.creamy",
+          "term": "creamy",
+          "ipa": "/ˈkriːmi/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kremowy",
+          "definition": "Smooth and thick, like cream.",
+          "register": "neutralny",
+          "contextPl": "Opis napojów mlecznych i deserów",
+          "natural": "",
+          "forms": "creamier – creamiest",
+          "collocations": "creamy texture; rich and creamy",
+          "synonyms": "smooth",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The latte here is smooth, creamy, and not too hot.",
+              "pl": "Latte jest tu gładkie, kremowe i niezbyt gorące.",
+              "focusEn": "creamy",
+              "focusPl": "kremowe"
+            },
+            {
+              "en": "This cheesecake is so creamy that it melts in your mouth.",
+              "pl": "Ten sernik jest tak kremowy, że rozpływa się w ustach.",
+              "focusEn": "creamy",
+              "focusPl": "kremowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "creamy"
+          ],
+          "acceptedTranslations": [
+            "kremowy"
+          ]
+        },
+        {
+          "id": "cafe-bakery.smooth",
+          "term": "smooth",
+          "ipa": "/smuːð/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "łagodny",
+          "definition": "Pleasant and soft in taste, not sharp or bitter.",
+          "register": "neutralny",
+          "contextPl": "Ocena smaku kawy",
+          "natural": "",
+          "forms": "smoother – smoothest",
+          "collocations": "smooth taste; smooth and mellow",
+          "synonyms": "mellow",
+          "antonyms": "harsh",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This blend is smooth and not bitter at all.",
+              "pl": "Ta mieszanka jest łagodna i wcale nie gorzka.",
+              "focusEn": "smooth",
+              "focusPl": "łagodna"
+            },
+            {
+              "en": "The cold brew tastes smooth, even without milk.",
+              "pl": "Kawa parzona na zimno smakuje łagodnie, nawet bez mleka.",
+              "focusEn": "smooth",
+              "focusPl": "łagodnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "smooth",
+            "mellow"
+          ],
+          "acceptedTranslations": [
+            "łagodny",
+            "gładki"
+          ]
+        },
+        {
+          "id": "cafe-bakery.rich",
+          "term": "rich",
+          "ipa": "/rɪtʃ/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sycący",
+          "definition": "Containing a lot of butter, sugar, cream or chocolate.",
+          "register": "neutralny",
+          "contextPl": "Opis ciężkich, słodkich deserów",
+          "natural": "",
+          "forms": "richer – richest",
+          "collocations": "rich chocolate cake; too rich",
+          "synonyms": "heavy",
+          "antonyms": "light",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The chocolate cake is delicious but very rich.",
+              "pl": "Ciasto czekoladowe jest pyszne, ale bardzo ciężkie.",
+              "focusEn": "rich",
+              "focusPl": "ciężkie"
+            },
+            {
+              "en": "This hot chocolate is so rich I can't finish it.",
+              "pl": "Ta gorąca czekolada jest tak sycąca, że nie dam rady jej dokończyć.",
+              "focusEn": "rich",
+              "focusPl": "sycąca"
+            }
+          ],
+          "acceptedAnswers": [
+            "rich",
+            "heavy"
+          ],
+          "acceptedTranslations": [
+            "sycący",
+            "ciężki",
+            "treściwy",
+            "intensywny"
+          ]
+        },
+        {
+          "id": "cafe-bakery.moist",
+          "term": "moist",
+          "ipa": "/mɔɪst/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wilgotny",
+          "definition": "Slightly wet in a pleasant way, not dry.",
+          "register": "neutralny",
+          "contextPl": "Chwalenie ciasta",
+          "natural": "",
+          "forms": "",
+          "collocations": "moist cake; nice and moist",
+          "synonyms": "",
+          "antonyms": "dry",
+          "notePl": "O cieście to komplement: wilgotne, nie suche.",
+          "examples": [
+            {
+              "en": "The banana bread is really moist and soft.",
+              "pl": "Chlebek bananowy jest bardzo wilgotny i miękki.",
+              "focusEn": "moist",
+              "focusPl": "wilgotny"
+            },
+            {
+              "en": "How do they keep this chocolate cake so moist?",
+              "pl": "Jak oni sprawiają, że to ciasto czekoladowe jest tak wilgotne?",
+              "focusEn": "moist",
+              "focusPl": "wilgotne"
+            }
+          ],
+          "acceptedAnswers": [
+            "moist"
+          ],
+          "acceptedTranslations": [
+            "wilgotny"
+          ]
+        },
+        {
+          "id": "cafe-bakery.flaky",
+          "term": "flaky",
+          "ipa": "/ˈfleɪki/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "kruchy",
+          "definition": "Made of thin layers that break apart easily.",
+          "register": "neutralny",
+          "contextPl": "Opis ciasta francuskiego",
+          "natural": "",
+          "forms": "flakier – flakiest",
+          "collocations": "flaky pastry; flaky crust",
+          "synonyms": "crispy",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The croissant is so flaky that there are crumbs everywhere.",
+              "pl": "Croissant jest tak kruchy, że wszędzie są okruchy.",
+              "focusEn": "flaky",
+              "focusPl": "kruchy"
+            },
+            {
+              "en": "Their apple turnovers have a light, flaky crust.",
+              "pl": "Ich pierożki z jabłkami mają lekkie, kruche ciasto.",
+              "focusEn": "flaky",
+              "focusPl": "kruche"
+            }
+          ],
+          "acceptedAnswers": [
+            "flaky"
+          ],
+          "acceptedTranslations": [
+            "kruchy",
+            "listkowy",
+            "łamliwy"
+          ]
+        },
+        {
+          "id": "cafe-bakery.chewy",
+          "term": "chewy",
+          "ipa": "/ˈtʃuːi/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "ciągnący",
+          "definition": "Needing to be chewed a lot; soft and slightly sticky.",
+          "register": "neutralny",
+          "contextPl": "Opis ciastek i pieczywa",
+          "natural": "",
+          "forms": "chewier – chewiest",
+          "collocations": "soft and chewy; chewy cookies",
+          "synonyms": "",
+          "antonyms": "crispy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I like my cookies soft and chewy, not crispy.",
+              "pl": "Lubię ciastka miękkie i ciągnące, a nie chrupkie.",
+              "focusEn": "chewy",
+              "focusPl": "ciągnące"
+            },
+            {
+              "en": "This bagel is chewy, just like a real bagel should be.",
+              "pl": "Ten bajgiel jest sprężysty, dokładnie taki, jaki powinien być prawdziwy bajgiel.",
+              "focusEn": "chewy",
+              "focusPl": "sprężysty"
+            }
+          ],
+          "acceptedAnswers": [
+            "chewy"
+          ],
+          "acceptedTranslations": [
+            "ciągnący",
+            "sprężysty",
+            "gumowaty"
+          ]
+        },
+        {
+          "id": "cafe-bakery.buttery",
+          "term": "buttery",
+          "ipa": "/ˈbʌtəri/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "maślany",
+          "definition": "Tasting or smelling of butter.",
+          "register": "neutralny",
+          "contextPl": "Opis wypieków",
+          "natural": "",
+          "forms": "",
+          "collocations": "buttery croissant; rich and buttery",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "These shortbread cookies are wonderfully buttery.",
+              "pl": "Te kruche ciasteczka są cudownie maślane.",
+              "focusEn": "buttery",
+              "focusPl": "maślane"
+            },
+            {
+              "en": "The buttery smell of fresh croissants filled the cafe.",
+              "pl": "Maślany zapach świeżych croissantów wypełnił kawiarnię.",
+              "focusEn": "buttery",
+              "focusPl": "Maślany"
+            }
+          ],
+          "acceptedAnswers": [
+            "buttery"
+          ],
+          "acceptedTranslations": [
+            "maślany"
+          ]
+        },
+        {
+          "id": "cafe-bakery.aroma",
+          "term": "aroma",
+          "ipa": "/əˈroʊmə/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "aromat",
+          "definition": "A pleasant strong smell, especially of food or coffee.",
+          "register": "neutralny",
+          "contextPl": "Opisywanie zapachu kawy",
+          "natural": "",
+          "forms": "aromas",
+          "collocations": "the aroma of coffee; a rich aroma",
+          "synonyms": "smell; scent",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I love the aroma of fresh coffee in this place.",
+              "pl": "Uwielbiam aromat świeżej kawy w tym miejscu.",
+              "focusEn": "aroma",
+              "focusPl": "aromat"
+            },
+            {
+              "en": "This coffee has a nutty aroma with a hint of chocolate.",
+              "pl": "Ta kawa ma orzechowy aromat z nutą czekolady.",
+              "focusEn": "aroma",
+              "focusPl": "aromat"
+            }
+          ],
+          "acceptedAnswers": [
+            "aroma"
+          ],
+          "acceptedTranslations": [
+            "aromat",
+            "zapach"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cafe-bakery.cafe-life",
+      "namePl": "Życie kawiarniane",
+      "scenePl": "Popołudnie w kawiarni z laptopem lub ze znajomym przy stoliku",
+      "entries": [
+        {
+          "id": "cafe-bakery.coffee-shop",
+          "term": "coffee shop",
+          "ipa": "/ˈkɔːfi ˌʃɑːp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kawiarnia",
+          "definition": "A small place that sells coffee, drinks and light food.",
+          "register": "neutralny",
+          "contextPl": "Miejsce spotkań i pracy",
+          "natural": "cafe",
+          "forms": "coffee shops",
+          "collocations": "a local coffee shop; meet at the coffee shop",
+          "synonyms": "cafe",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's meet at the coffee shop near the library.",
+              "pl": "Spotkajmy się w kawiarni przy bibliotece.",
+              "focusEn": "coffee shop",
+              "focusPl": "kawiarni"
+            },
+            {
+              "en": "I work from this coffee shop two days a week.",
+              "pl": "Pracuję z tej kawiarni dwa dni w tygodniu.",
+              "focusEn": "coffee shop",
+              "focusPl": "kawiarni"
+            }
+          ],
+          "acceptedAnswers": [
+            "coffee shop",
+            "cafe"
+          ],
+          "acceptedTranslations": [
+            "kawiarnia"
+          ]
+        },
+        {
+          "id": "cafe-bakery.grab-a-coffee",
+          "term": "grab a coffee",
+          "ipa": "/ˌɡræb ə ˈkɔːfi/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "skoczyć na kawę",
+          "definition": "To meet someone for a quick, informal coffee.",
+          "register": "potoczny",
+          "contextPl": "Umawianie się na krótkie spotkanie",
+          "natural": "",
+          "forms": "grabbed",
+          "collocations": "grab a coffee after work",
+          "synonyms": "get coffee",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you want to grab a coffee after work?",
+              "pl": "Chcesz skoczyć na kawę po pracy?",
+              "focusEn": "grab a coffee",
+              "focusPl": "skoczyć na kawę"
+            },
+            {
+              "en": "We grabbed a coffee and talked for two hours.",
+              "pl": "Wyskoczyliśmy na kawę i gadaliśmy dwie godziny.",
+              "focusEn": "grabbed a coffee",
+              "focusPl": "Wyskoczyliśmy na kawę"
+            }
+          ],
+          "acceptedAnswers": [
+            "grab a coffee",
+            "get a coffee",
+            "get coffee"
+          ],
+          "acceptedTranslations": [
+            "skoczyć na kawę",
+            "wyskoczyć na kawę",
+            "iść na kawę"
+          ]
+        },
+        {
+          "id": "cafe-bakery.hang-out",
+          "term": "hang out",
+          "ipa": "/ˌhæŋ ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "przesiadywać",
+          "definition": "To spend a lot of time somewhere in a relaxed way.",
+          "register": "potoczny",
+          "contextPl": "Spędzanie wolnego czasu w kawiarni",
+          "natural": "",
+          "forms": "hung out",
+          "collocations": "hang out with friends; hang out at a cafe",
+          "synonyms": "spend time",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We used to hang out at this cafe after class.",
+              "pl": "Po zajęciach przesiadywaliśmy w tej kawiarni.",
+              "focusEn": "hang out",
+              "focusPl": "przesiadywaliśmy"
+            },
+            {
+              "en": "Teenagers hang out here for hours with one drink.",
+              "pl": "Nastolatki przesiadują tu godzinami przy jednym napoju.",
+              "focusEn": "hang out",
+              "focusPl": "przesiadują"
+            }
+          ],
+          "acceptedAnswers": [
+            "hang out"
+          ],
+          "acceptedTranslations": [
+            "przesiadywać",
+            "spędzać czas"
+          ]
+        },
+        {
+          "id": "cafe-bakery.coffee-break",
+          "term": "coffee break",
+          "ipa": "/ˈkɔːfi ˌbreɪk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przerwa na kawę",
+          "definition": "A short rest from work to have a drink.",
+          "register": "neutralny",
+          "contextPl": "Krótka przerwa w pracy",
+          "natural": "",
+          "forms": "coffee breaks",
+          "collocations": "take a coffee break; on my coffee break",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm on my coffee break, so I have fifteen minutes.",
+              "pl": "Mam przerwę na kawę, więc mam piętnaście minut.",
+              "focusEn": "coffee break",
+              "focusPl": "przerwę na kawę"
+            },
+            {
+              "en": "Half the office comes here during their coffee break.",
+              "pl": "Pół biura przychodzi tu w czasie przerwy na kawę.",
+              "focusEn": "coffee break",
+              "focusPl": "przerwy na kawę"
+            }
+          ],
+          "acceptedAnswers": [
+            "coffee break"
+          ],
+          "acceptedTranslations": [
+            "przerwa na kawę"
+          ]
+        },
+        {
+          "id": "cafe-bakery.is-this-seat-taken",
+          "term": "is this seat taken",
+          "ipa": "/ɪz ðɪs ˈsiːt ˌteɪkən/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "czy to miejsce jest zajęte?",
+          "definition": "A polite question before sitting in a free-looking seat.",
+          "register": "neutralny",
+          "contextPl": "Szukanie wolnego miejsca w zatłoczonej kawiarni",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Excuse me, is this seat taken, or can I sit here?",
+              "pl": "Przepraszam, czy to miejsce jest zajęte, czy mogę tu usiąść?",
+              "focusEn": "is this seat taken",
+              "focusPl": "czy to miejsce jest zajęte"
+            },
+            {
+              "en": "\"Is this seat taken?\" she asked, pointing at the chair by the window.",
+              "pl": "„Czy to miejsce jest zajęte?” – zapytała, wskazując krzesło przy oknie.",
+              "focusEn": "Is this seat taken",
+              "focusPl": "Czy to miejsce jest zajęte"
+            }
+          ],
+          "acceptedAnswers": [
+            "is this seat taken",
+            "is this seat free"
+          ],
+          "acceptedTranslations": [
+            "czy to miejsce jest zajęte?",
+            "czy to miejsce jest wolne?"
+          ]
+        },
+        {
+          "id": "cafe-bakery.wifi-password",
+          "term": "wifi password",
+          "ipa": "/ˈwaɪˌfaɪ ˌpæswɜːrd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "hasło do Wi-Fi",
+          "definition": "The secret word you need to use a place's wireless internet.",
+          "register": "neutralny",
+          "contextPl": "Praca z laptopem w kawiarni",
+          "natural": "",
+          "forms": "wifi passwords",
+          "collocations": "ask for the wifi password",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zapisywane też jako „Wi-Fi password”.",
+          "examples": [
+            {
+              "en": "Excuse me, what's the Wi-Fi password here?",
+              "pl": "Przepraszam, jakie jest tu hasło do Wi-Fi?",
+              "focusEn": "Wi-Fi password",
+              "focusPl": "hasło do Wi-Fi"
+            },
+            {
+              "en": "The Wi-Fi password is written on the chalkboard by the door.",
+              "pl": "Hasło do Wi-Fi jest napisane na tablicy przy drzwiach.",
+              "focusEn": "Wi-Fi password",
+              "focusPl": "Hasło do Wi-Fi"
+            }
+          ],
+          "acceptedAnswers": [
+            "wifi password",
+            "Wi-Fi password"
+          ],
+          "acceptedTranslations": [
+            "hasło do Wi-Fi",
+            "hasło do wifi"
+          ]
+        },
+        {
+          "id": "cafe-bakery.caffeine",
+          "term": "caffeine",
+          "ipa": "/kæˈfiːn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kofeina",
+          "definition": "A substance in coffee and tea that makes you feel more awake.",
+          "register": "neutralny",
+          "contextPl": "Rozmowa o działaniu kawy",
+          "natural": "",
+          "forms": "",
+          "collocations": "need caffeine; too much caffeine; caffeine-free",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I need caffeine before I can answer any emails.",
+              "pl": "Potrzebuję kofeiny, zanim odpowiem na jakiekolwiek maile.",
+              "focusEn": "caffeine",
+              "focusPl": "kofeiny"
+            },
+            {
+              "en": "Too much caffeine in the afternoon keeps me up at night.",
+              "pl": "Za dużo kofeiny po południu nie pozwala mi zasnąć w nocy.",
+              "focusEn": "caffeine",
+              "focusPl": "kofeiny"
+            }
+          ],
+          "acceptedAnswers": [
+            "caffeine"
+          ],
+          "acceptedTranslations": [
+            "kofeina"
+          ]
+        },
+        {
+          "id": "cafe-bakery.outlet",
+          "term": "outlet",
+          "ipa": "/ˈaʊtlɛt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gniazdko",
+          "definition": "A place in a wall where you plug in electrical devices.",
+          "register": "neutralny",
+          "contextPl": "Ładowanie laptopa lub telefonu",
+          "natural": "plug",
+          "forms": "outlets",
+          "collocations": "an outlet near the table; plug into an outlet",
+          "synonyms": "socket",
+          "antonyms": "",
+          "notePl": "W USA „outlet”, w Wielkiej Brytanii „socket”.",
+          "examples": [
+            {
+              "en": "Is there an outlet near this table? My laptop is dying.",
+              "pl": "Jest jakieś gniazdko przy tym stoliku? Laptop mi zaraz padnie.",
+              "focusEn": "outlet",
+              "focusPl": "gniazdko"
+            },
+            {
+              "en": "All the seats near the outlets were taken by students.",
+              "pl": "Wszystkie miejsca przy gniazdkach zajęli studenci.",
+              "focusEn": "outlets",
+              "focusPl": "gniazdkach"
+            }
+          ],
+          "acceptedAnswers": [
+            "outlet",
+            "socket"
+          ],
+          "acceptedTranslations": [
+            "gniazdko",
+            "gniazdo elektryczne",
+            "kontakt"
+          ]
+        },
+        {
+          "id": "cafe-bakery.catch-up",
+          "term": "catch up",
+          "ipa": "/ˌkætʃ ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nadrobić zaległości",
+          "definition": "To talk with a friend about what has happened since you last met.",
+          "register": "potoczny",
+          "contextPl": "Spotkanie ze znajomym przy kawie",
+          "natural": "",
+          "forms": "caught up",
+          "collocations": "catch up over coffee; catch up with a friend",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's meet for coffee this weekend and catch up.",
+              "pl": "Spotkajmy się w weekend na kawę i nadróbmy zaległości.",
+              "focusEn": "catch up",
+              "focusPl": "nadróbmy zaległości"
+            },
+            {
+              "en": "We caught up over lattes for almost three hours.",
+              "pl": "Prawie trzy godziny nadrabialiśmy zaległości przy latte.",
+              "focusEn": "caught up",
+              "focusPl": "nadrabialiśmy zaległości"
+            }
+          ],
+          "acceptedAnswers": [
+            "catch up"
+          ],
+          "acceptedTranslations": [
+            "nadrobić zaległości",
+            "pogadać",
+            "nadrabiać zaległości"
+          ]
+        },
+        {
+          "id": "cafe-bakery.treat-yourself",
+          "term": "treat yourself",
+          "ipa": "/ˌtriːt jʊrˈsɛlf/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sprawić sobie przyjemność",
+          "definition": "To buy yourself something nice as a small reward.",
+          "register": "potoczny",
+          "contextPl": "Słodka nagroda do kawy",
+          "natural": "",
+          "forms": "treated myself",
+          "collocations": "treat yourself to something",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's Friday, so treat yourself to a pastry.",
+              "pl": "Jest piątek, więc zrób sobie przyjemność i weź ciastko.",
+              "focusEn": "treat yourself",
+              "focusPl": "zrób sobie przyjemność"
+            },
+            {
+              "en": "I treated myself to a slice of cheesecake after my exam.",
+              "pl": "Po egzaminie sprawiłem sobie przyjemność i kupiłem kawałek sernika.",
+              "focusEn": "treated myself",
+              "focusPl": "sprawiłem sobie przyjemność"
+            }
+          ],
+          "acceptedAnswers": [
+            "treat yourself",
+            "treat myself"
+          ],
+          "acceptedTranslations": [
+            "sprawić sobie przyjemność",
+            "zrobić sobie przyjemność",
+            "zaszaleć"
+          ]
+        },
+        {
+          "id": "cafe-bakery.linger",
+          "term": "linger",
+          "ipa": "/ˈlɪŋɡər/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zasiedzieć się",
+          "definition": "To stay somewhere longer than necessary because you enjoy it.",
+          "register": "neutralny",
+          "contextPl": "Długie siedzenie przy stoliku",
+          "natural": "",
+          "forms": "lingered",
+          "collocations": "linger over coffee; linger at the table",
+          "synonyms": "stay",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Nobody minds if you linger over one coffee all afternoon.",
+              "pl": "Nikt nie ma nic przeciwko, jeśli zasiedzisz się przy jednej kawie całe popołudnie.",
+              "focusEn": "linger",
+              "focusPl": "zasiedzisz się"
+            },
+            {
+              "en": "We lingered at our table long after our cups were empty.",
+              "pl": "Zasiedzieliśmy się przy stoliku długo po tym, jak opróżniliśmy kubki.",
+              "focusEn": "lingered",
+              "focusPl": "Zasiedzieliśmy się"
+            }
+          ],
+          "acceptedAnswers": [
+            "linger"
+          ],
+          "acceptedTranslations": [
+            "zasiedzieć się",
+            "przesiadywać",
+            "przeciągać pobyt"
+          ]
+        },
+        {
+          "id": "cafe-bakery.people-watching",
+          "term": "people-watching",
+          "ipa": "/ˈpiːpəl ˌwɑːtʃɪŋ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "obserwowanie ludzi",
+          "definition": "Watching people in a public place for fun.",
+          "register": "potoczny",
+          "contextPl": "Siedzenie przy oknie i patrzenie na przechodniów",
+          "natural": "",
+          "forms": "",
+          "collocations": "perfect for people-watching",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The window seats here are perfect for people-watching.",
+              "pl": "Miejsca przy oknie są tu idealne do obserwowania ludzi.",
+              "focusEn": "people-watching",
+              "focusPl": "obserwowania ludzi"
+            },
+            {
+              "en": "I spent the afternoon reading and people-watching on the patio.",
+              "pl": "Spędziłem popołudnie na czytaniu i obserwowaniu ludzi na tarasie.",
+              "focusEn": "people-watching",
+              "focusPl": "obserwowaniu ludzi"
+            }
+          ],
+          "acceptedAnswers": [
+            "people-watching",
+            "people watching"
+          ],
+          "acceptedTranslations": [
+            "obserwowanie ludzi",
+            "przyglądanie się ludziom"
+          ]
+        },
+        {
+          "id": "cafe-bakery.coffee-snob",
+          "term": "coffee snob",
+          "ipa": "/ˈkɔːfi ˌsnɑːb/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "kawowy snob",
+          "definition": "A person who thinks they know a lot about coffee and dislikes ordinary coffee.",
+          "register": "potoczny",
+          "contextPl": "Żartobliwie o znawcach kawy",
+          "natural": "",
+          "forms": "coffee snobs",
+          "collocations": "",
+          "synonyms": "coffee lover",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My brother is a coffee snob who only drinks pour-over.",
+              "pl": "Mój brat to kawowy snob, który pije tylko kawę z dripa.",
+              "focusEn": "coffee snob",
+              "focusPl": "kawowy snob"
+            },
+            {
+              "en": "You don't have to be a coffee snob to love this place.",
+              "pl": "Nie trzeba być kawowym snobem, żeby pokochać to miejsce.",
+              "focusEn": "coffee snob",
+              "focusPl": "kawowym snobem"
+            }
+          ],
+          "acceptedAnswers": [
+            "coffee snob"
+          ],
+          "acceptedTranslations": [
+            "kawowy snob",
+            "snob kawowy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cafe-bakery.beans-brewing",
+      "namePl": "Ziarna i parzenie",
+      "scenePl": "Barista przy ekspresie opowiada klientowi, jak przygotowuje kawę",
+      "entries": [
+        {
+          "id": "cafe-bakery.coffee-bean",
+          "term": "coffee bean",
+          "ipa": "/ˈkɔːfi ˌbiːn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ziarno kawy",
+          "definition": "The seed of the coffee plant, roasted and ground to make coffee.",
+          "register": "neutralny",
+          "contextPl": "Rozmowa o pochodzeniu i rodzaju kawy",
+          "natural": "",
+          "forms": "coffee beans",
+          "collocations": "roast coffee beans; a bag of coffee beans",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We roast our coffee beans right here every Tuesday.",
+              "pl": "Palimy ziarna kawy tutaj, w każdy wtorek.",
+              "focusEn": "coffee beans",
+              "focusPl": "ziarna kawy"
+            },
+            {
+              "en": "You can buy a bag of the coffee beans we use.",
+              "pl": "Możesz kupić paczkę ziaren kawy, których używamy.",
+              "focusEn": "coffee beans",
+              "focusPl": "ziaren kawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "coffee bean",
+            "bean"
+          ],
+          "acceptedTranslations": [
+            "ziarno kawy",
+            "ziarna kawy"
+          ]
+        },
+        {
+          "id": "cafe-bakery.brew",
+          "term": "brew",
+          "ipa": "/bruː/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "parzyć",
+          "definition": "To make coffee or tea by mixing it with hot water.",
+          "register": "neutralny",
+          "contextPl": "Przygotowywanie kawy",
+          "natural": "",
+          "forms": "brewed",
+          "collocations": "brew coffee; freshly brewed",
+          "synonyms": "make",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We brew a fresh pot of coffee every thirty minutes.",
+              "pl": "Co trzydzieści minut parzymy świeży dzbanek kawy.",
+              "focusEn": "brew",
+              "focusPl": "parzymy"
+            },
+            {
+              "en": "This coffee was brewed with water just below boiling.",
+              "pl": "Ta kawa była parzona wodą tuż poniżej wrzenia.",
+              "focusEn": "brewed",
+              "focusPl": "parzona"
+            }
+          ],
+          "acceptedAnswers": [
+            "brew"
+          ],
+          "acceptedTranslations": [
+            "parzyć",
+            "zaparzyć",
+            "zaparzać"
+          ]
+        },
+        {
+          "id": "cafe-bakery.grind",
+          "term": "grind",
+          "ipa": "/ɡraɪnd/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mielić",
+          "definition": "To crush coffee beans into small pieces or powder.",
+          "register": "neutralny",
+          "contextPl": "Mielenie ziaren przed parzeniem",
+          "natural": "",
+          "forms": "ground – ground",
+          "collocations": "grind beans; grind fresh; coarsely ground",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We grind the beans fresh for every single cup.",
+              "pl": "Mielimy ziarna na świeżo do każdej filiżanki.",
+              "focusEn": "grind",
+              "focusPl": "Mielimy"
+            },
+            {
+              "en": "Could you grind this bag for a French press?",
+              "pl": "Może pan zmielić tę paczkę do french pressa?",
+              "focusEn": "grind",
+              "focusPl": "zmielić"
+            }
+          ],
+          "acceptedAnswers": [
+            "grind"
+          ],
+          "acceptedTranslations": [
+            "mielić",
+            "zmielić"
+          ]
+        },
+        {
+          "id": "cafe-bakery.coffee-maker",
+          "term": "coffee maker",
+          "ipa": "/ˈkɔːfi ˌmeɪkər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ekspres do kawy",
+          "definition": "A machine that makes coffee by dripping hot water through ground beans.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt do parzenia kawy",
+          "natural": "",
+          "forms": "coffee makers",
+          "collocations": "drip coffee maker",
+          "synonyms": "coffee machine",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We use a big drip coffee maker for the regular coffee.",
+              "pl": "Do zwykłej kawy używamy dużego przelewowego ekspresu do kawy.",
+              "focusEn": "coffee maker",
+              "focusPl": "ekspresu do kawy"
+            },
+            {
+              "en": "The barista said a simple coffee maker works fine at home.",
+              "pl": "Barista powiedział, że w domu wystarczy zwykły ekspres do kawy.",
+              "focusEn": "coffee maker",
+              "focusPl": "ekspres do kawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "coffee maker",
+            "coffee machine"
+          ],
+          "acceptedTranslations": [
+            "ekspres do kawy",
+            "ekspres przelewowy"
+          ]
+        },
+        {
+          "id": "cafe-bakery.espresso-machine",
+          "term": "espresso machine",
+          "ipa": "/ɛˈsprɛsoʊ məˌʃiːn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ekspres ciśnieniowy",
+          "definition": "A machine that makes espresso by forcing hot water through coffee.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt baristy",
+          "natural": "",
+          "forms": "espresso machines",
+          "collocations": "clean the espresso machine",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The espresso machine hissed as she steamed the milk.",
+              "pl": "Ekspres ciśnieniowy syknął, gdy spieniała mleko.",
+              "focusEn": "espresso machine",
+              "focusPl": "Ekspres ciśnieniowy"
+            },
+            {
+              "en": "Cleaning the espresso machine takes about twenty minutes.",
+              "pl": "Czyszczenie ekspresu ciśnieniowego zajmuje około dwudziestu minut.",
+              "focusEn": "espresso machine",
+              "focusPl": "ekspresu ciśnieniowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "espresso machine"
+          ],
+          "acceptedTranslations": [
+            "ekspres ciśnieniowy",
+            "ekspres do espresso"
+          ]
+        },
+        {
+          "id": "cafe-bakery.filter",
+          "term": "filter",
+          "ipa": "/ˈfɪltər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "filtr",
+          "definition": "A paper or metal net that holds coffee grounds while water passes through.",
+          "register": "neutralny",
+          "contextPl": "Parzenie kawy przelewowej",
+          "natural": "",
+          "forms": "filters",
+          "collocations": "paper filter; coffee filter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We use paper filters for our pour-over coffee.",
+              "pl": "Do kawy przelewowej używamy papierowych filtrów.",
+              "focusEn": "filters",
+              "focusPl": "filtrów"
+            },
+            {
+              "en": "Rinse the filter with hot water before adding the coffee.",
+              "pl": "Przepłucz filtr gorącą wodą, zanim dodasz kawę.",
+              "focusEn": "filter",
+              "focusPl": "filtr"
+            }
+          ],
+          "acceptedAnswers": [
+            "filter"
+          ],
+          "acceptedTranslations": [
+            "filtr",
+            "sitko"
+          ]
+        },
+        {
+          "id": "cafe-bakery.steam",
+          "term": "steam",
+          "ipa": "/stiːm/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "spieniać",
+          "definition": "To heat milk with hot steam from an espresso machine.",
+          "register": "specjalistyczny",
+          "contextPl": "Przygotowanie mleka do latte",
+          "natural": "",
+          "forms": "steamed",
+          "collocations": "steam milk; steamed milk",
+          "synonyms": "froth",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I steam the milk until it's silky and warm.",
+              "pl": "Spieniam mleko, aż będzie jedwabiste i ciepłe.",
+              "focusEn": "steam",
+              "focusPl": "Spieniam"
+            },
+            {
+              "en": "He steamed the oat milk a little longer for extra foam.",
+              "pl": "Spieniał mleko owsiane trochę dłużej, żeby było więcej pianki.",
+              "focusEn": "steamed",
+              "focusPl": "Spieniał"
+            }
+          ],
+          "acceptedAnswers": [
+            "steam",
+            "froth"
+          ],
+          "acceptedTranslations": [
+            "spieniać",
+            "spienić",
+            "podgrzewać parą"
+          ]
+        },
+        {
+          "id": "cafe-bakery.blend",
+          "term": "blend",
+          "ipa": "/blɛnd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "mieszanka",
+          "definition": "A mix of coffee beans from different places.",
+          "register": "neutralny",
+          "contextPl": "Opis kawy w ofercie",
+          "natural": "",
+          "forms": "blends",
+          "collocations": "house blend; espresso blend",
+          "synonyms": "mix",
+          "antonyms": "single-origin",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our house blend mixes beans from two countries.",
+              "pl": "Nasza firmowa mieszanka łączy ziarna z dwóch krajów.",
+              "focusEn": "blend",
+              "focusPl": "mieszanka"
+            },
+            {
+              "en": "This espresso blend is a little stronger than the last one.",
+              "pl": "Ta mieszanka do espresso jest trochę mocniejsza niż poprzednia.",
+              "focusEn": "blend",
+              "focusPl": "mieszanka"
+            }
+          ],
+          "acceptedAnswers": [
+            "blend"
+          ],
+          "acceptedTranslations": [
+            "mieszanka"
+          ]
+        },
+        {
+          "id": "cafe-bakery.roast",
+          "term": "roast",
+          "ipa": "/roʊst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "palenie",
+          "definition": "How long and how darkly coffee beans have been roasted.",
+          "register": "specjalistyczny",
+          "contextPl": "Wybór jasno lub ciemno palonej kawy",
+          "natural": "",
+          "forms": "roasts",
+          "collocations": "light roast; medium roast; dark roast",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you prefer a light roast or a dark roast?",
+              "pl": "Woli pan jasne czy ciemne palenie?",
+              "focusEn": "roast",
+              "focusPl": "palenie"
+            },
+            {
+              "en": "This dark roast has notes of chocolate and caramel.",
+              "pl": "Ta kawa o ciemnym paleniu ma nuty czekolady i karmelu.",
+              "focusEn": "roast",
+              "focusPl": "paleniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "roast"
+          ],
+          "acceptedTranslations": [
+            "palenie",
+            "stopień palenia",
+            "kawa palona"
+          ]
+        },
+        {
+          "id": "cafe-bakery.french-press",
+          "term": "French press",
+          "ipa": "/ˌfrɛntʃ ˈprɛs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "zaparzacz tłokowy",
+          "definition": "A glass pot with a plunger that pushes coffee grounds to the bottom.",
+          "register": "neutralny",
+          "contextPl": "Parzenie kawy w domu lub w kawiarni",
+          "natural": "",
+          "forms": "French presses",
+          "collocations": "make coffee in a French press",
+          "synonyms": "press pot",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A French press makes a heavier, fuller cup of coffee.",
+              "pl": "Zaparzacz tłokowy daje cięższą, pełniejszą kawę.",
+              "focusEn": "French press",
+              "focusPl": "Zaparzacz tłokowy"
+            },
+            {
+              "en": "Let the coffee sit in the French press for four minutes.",
+              "pl": "Zostaw kawę w french pressie na cztery minuty.",
+              "focusEn": "French press",
+              "focusPl": "french pressie"
+            }
+          ],
+          "acceptedAnswers": [
+            "French press"
+          ],
+          "acceptedTranslations": [
+            "zaparzacz tłokowy",
+            "french press"
+          ]
+        },
+        {
+          "id": "cafe-bakery.pour-over",
+          "term": "pour-over",
+          "ipa": "/ˈpɔːr ˌoʊvər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "kawa przelewowa",
+          "definition": "Coffee made by slowly pouring hot water over grounds in a filter by hand.",
+          "register": "specjalistyczny",
+          "contextPl": "Ręczne parzenie kawy przez baristę",
+          "natural": "",
+          "forms": "pour-overs",
+          "collocations": "order a pour-over",
+          "synonyms": "drip coffee",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A pour-over takes a few extra minutes, but it's worth it.",
+              "pl": "Kawa przelewowa zajmuje kilka minut dłużej, ale warto.",
+              "focusEn": "pour-over",
+              "focusPl": "Kawa przelewowa"
+            },
+            {
+              "en": "She slowly poured hot water in circles for my pour-over.",
+              "pl": "Powoli lała gorącą wodę okrężnymi ruchami, przygotowując moją kawę przelewową.",
+              "focusEn": "pour-over",
+              "focusPl": "kawę przelewową"
+            }
+          ],
+          "acceptedAnswers": [
+            "pour-over",
+            "pour over"
+          ],
+          "acceptedTranslations": [
+            "kawa przelewowa",
+            "drip",
+            "kawa z dripa"
+          ]
+        },
+        {
+          "id": "cafe-bakery.single-origin",
+          "term": "single-origin",
+          "ipa": "/ˌsɪŋɡəl ˈɔːrədʒɪn/",
+          "pos": "przymiotnik",
+          "level": "C2",
+          "frequency": "rare",
+          "translation": "z jednego źródła",
+          "definition": "Coming from one farm or region, not mixed with other beans.",
+          "register": "specjalistyczny",
+          "contextPl": "Opis kawy specialty",
+          "natural": "",
+          "forms": "",
+          "collocations": "single-origin beans; single-origin coffee",
+          "synonyms": "",
+          "antonyms": "blend",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This single-origin coffee comes from one farm in Colombia.",
+              "pl": "Ta kawa single origin pochodzi z jednej farmy w Kolumbii.",
+              "focusEn": "single-origin",
+              "focusPl": "single origin"
+            },
+            {
+              "en": "Single-origin beans cost more than our house blend.",
+              "pl": "Ziarna single origin są droższe niż nasza firmowa mieszanka.",
+              "focusEn": "Single-origin",
+              "focusPl": "single origin"
+            }
+          ],
+          "acceptedAnswers": [
+            "single-origin",
+            "single origin"
+          ],
+          "acceptedTranslations": [
+            "z jednego źródła",
+            "single origin",
+            "z jednej plantacji"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "fixture-airport",
+  "namePl": "Lotnisko (fixture)",
+  "nameEn": "Airport (fixture)",
+  "group": "travel",
+  "symbol": "airplane.departure",
+  "summaryPl": "Odprawa, kontrola bezpieczeństwa, bramki, bagaż i opóźnienia.",
+  "aliases": ["lotnisko", "port lotniczy", "airport"],
+  "categories": [
+    {
+      "id": "fixture-airport.check-in",
+      "namePl": "Odprawa i bagaż",
+      "scenePl": "Stanowisko odprawy linii lotniczej przed wylotem",
+      "entries": [
+        {
+          "id": "fixture-airport.boarding-pass",
+          "term": "boarding pass",
+          "ipa": "/ˈbɔːrdɪŋ ˌpæs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "karta pokładowa",
+          "definition": "A document that allows a passenger to get on a plane.",
+          "register": "neutralny",
+          "contextPl": "Odprawa i wejście na pokład",
+          "natural": "",
+          "forms": "boarding passes",
+          "collocations": "print a boarding pass; mobile boarding pass; show your boarding pass",
+          "synonyms": "boarding card",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            { "en": "Please have your boarding pass ready at the gate.", "pl": "Prosimy mieć kartę pokładową gotową przy bramce.", "focusEn": "boarding pass", "focusPl": "kartę pokładową" },
+            { "en": "I downloaded my boarding pass to my phone last night.", "pl": "Wczoraj wieczorem pobrałem kartę pokładową na telefon.", "focusEn": "boarding pass", "focusPl": "kartę pokładową" }
+          ],
+          "acceptedAnswers": ["boarding pass", "boarding card"],
+          "acceptedTranslations": ["karta pokładowa", "karta wejścia na pokład"]
+        },
+        {
+          "id": "fixture-airport.check-in",
+          "term": "check in",
+          "ipa": "/ˌtʃek ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odprawić się",
+          "definition": "To show your ticket and leave your bags with the airline before a flight.",
+          "register": "neutralny",
+          "contextPl": "Przed lotem, przy stanowisku lub online",
+          "natural": "",
+          "forms": "checked in",
+          "collocations": "check in online; check in for a flight; check in early",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik pisze się z łącznikiem: check-in.",
+          "examples": [
+            { "en": "We need to check in at least two hours before an international flight.", "pl": "Musimy się odprawić co najmniej dwie godziny przed lotem międzynarodowym.", "focusEn": "check in", "focusPl": "odprawić" },
+            { "en": "Did you already check in online, or should we go to the counter?", "pl": "Odprawiłeś się już online, czy mamy iść do stanowiska?", "focusEn": "check in", "focusPl": "Odprawiłeś się" }
+          ],
+          "acceptedAnswers": ["check in"],
+          "acceptedTranslations": ["odprawić się", "odprawiać się", "zgłosić się do odprawy"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "Fixture_Bad",
+  "namePl": "Zły temat",
+  "nameEn": "Bad topic",
+  "group": "space",
+  "symbol": "Airplane Departure",
+  "summaryPl": "Celowo błędny plik do testu walidatora.",
+  "aliases": ["zły", null],
+  "categories": [
+    {
+      "id": "other.cat",
+      "namePl": "Kategoria",
+      "scenePl": "Scena",
+      "entries": [
+        {
+          "id": "wrong.colour",
+          "term": "colour.",
+          "ipa": "ˈkʌlə",
+          "pos": "noun",
+          "level": "D1",
+          "frequency": "often",
+          "translation": "kolor (BrE)",
+          "definition": "This definition is deliberately far too long so that it exceeds the limit of one hundred and forty characters set by the content schema rules.",
+          "register": "casual",
+          "contextPl": "Ten opis kontekstu jest celowo zbyt długi, aby przekroczyć limit osiemdziesięciu znaków w schemacie.",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "examples": [
+            { "en": "my favourite colour is  grey", "pl": "mój ulubiony kolor to szary (AmE)", "focusEn": "color", "focusPl": "Kolor" }
+          ],
+          "acceptedAnswers": ["color"],
+          "acceptedTranslations": ["barwa"]
+        },
+        {
+          "id": "wrong.colour",
+          "term": "queue",
+          "ipa": "/kjuː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kolejka",
+          "definition": "A line of people waiting.",
+          "register": "neutralny",
+          "contextPl": "Czekanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            { "en": "We waited in a long queue , and the the line moved slowly.", "pl": "Czekaliśmy w długiej kolejce (bardzo.", "focusEn": "queue", "focusPl": "kolejce" },
+            { "en": "We waited in a long queue , and the the line moved slowly.", "pl": "Czekaliśmy w długiej kolejce.", "focusEn": "queue", "focusPl": "kolejce" }
+          ],
+          "acceptedAnswers": ["queue"],
+          "acceptedTranslations": ["kolejka", "ogonek", "sznur", "rząd", "szereg", "linia", "tasiemiec", "wąż", "kolejeczka"]
+        }
+      ]
+    }
+  ]
+}

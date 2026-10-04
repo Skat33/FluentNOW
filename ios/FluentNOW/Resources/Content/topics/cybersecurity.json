@@ -1,0 +1,2574 @@
+{
+  "schemaVersion": 1,
+  "id": "cybersecurity",
+  "namePl": "Bezpieczeństwo w sieci",
+  "nameEn": "Online Security",
+  "group": "technology",
+  "symbol": "lock.shield",
+  "summaryPl": "Hasła i logowanie, oszustwa internetowe, włamania i wycieki, ochrona danych i bezpieczne nawyki.",
+  "aliases": [
+    "bezpieczeństwo w sieci",
+    "cyberbezpieczeństwo",
+    "hasła",
+    "oszustwa internetowe",
+    "phishing",
+    "hakerzy",
+    "ochrona danych",
+    "cybersecurity",
+    "online safety"
+  ],
+  "categories": [
+    {
+      "id": "cybersecurity.passwords-login",
+      "namePl": "Hasła i logowanie",
+      "scenePl": "Po wiadomości o wycieku danych siedzisz przy kuchennym stole i zmieniasz hasła do wszystkich kont",
+      "entries": [
+        {
+          "id": "cybersecurity.password",
+          "term": "password",
+          "ipa": "/ˈpæswɝːd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "hasło",
+          "definition": "A secret set of letters, numbers, or symbols you type to get into an account.",
+          "register": "neutralny",
+          "contextPl": "Logowanie do kont",
+          "natural": "",
+          "forms": "passwords",
+          "collocations": "enter your password; a weak password; share your password",
+          "synonyms": "passcode",
+          "antonyms": "",
+          "notePl": "Nigdy nie podawaj hasła przez telefon ani w mailu.",
+          "examples": [
+            {
+              "en": "I used the same password for everything, so now I have to change them all.",
+              "pl": "Używałem tego samego hasła do wszystkiego, więc teraz muszę zmienić wszystkie.",
+              "focusEn": "password",
+              "focusPl": "hasła"
+            },
+            {
+              "en": "My new password has twenty characters and no real words.",
+              "pl": "Moje nowe hasło ma dwadzieścia znaków i żadnych prawdziwych słów.",
+              "focusEn": "password",
+              "focusPl": "hasło"
+            }
+          ],
+          "acceptedAnswers": [
+            "password"
+          ],
+          "acceptedTranslations": [
+            "hasło"
+          ]
+        },
+        {
+          "id": "cybersecurity.change-your-password",
+          "term": "change your password",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zmienić hasło",
+          "definition": "To replace your old password with a new one.",
+          "register": "neutralny",
+          "contextPl": "Reakcja na wyciek danych",
+          "natural": "",
+          "forms": "changed; changing",
+          "collocations": "change your password regularly; change all your passwords",
+          "synonyms": "update your password",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The email said I should change my password right away.",
+              "pl": "W mailu było napisane, że powinienem od razu zmienić hasło.",
+              "focusEn": "change my password",
+              "focusPl": "zmienić hasło"
+            },
+            {
+              "en": "I spent the whole evening changing my passwords one by one.",
+              "pl": "Cały wieczór zmieniałem hasła jedno po drugim.",
+              "focusEn": "changing my passwords",
+              "focusPl": "zmieniałem hasła"
+            }
+          ],
+          "acceptedAnswers": [
+            "change your password",
+            "change my password",
+            "change the password"
+          ],
+          "acceptedTranslations": [
+            "zmienić hasło",
+            "zmieniać hasło"
+          ]
+        },
+        {
+          "id": "cybersecurity.forget",
+          "term": "forget",
+          "ipa": "/fərˈɡɛt/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zapomnieć",
+          "definition": "To not remember something, such as a password.",
+          "register": "neutralny",
+          "contextPl": "Problemy z logowaniem",
+          "natural": "",
+          "forms": "forget – forgot – forgotten",
+          "collocations": "forget your password; I forgot my PIN",
+          "synonyms": "",
+          "antonyms": "remember",
+          "notePl": "„Forgot password?” to link do resetu hasła.",
+          "examples": [
+            {
+              "en": "I already forgot the new password I made ten minutes ago.",
+              "pl": "Już zapomniałem nowe hasło, które ustawiłem dziesięć minut temu.",
+              "focusEn": "forgot",
+              "focusPl": "zapomniałem"
+            },
+            {
+              "en": "If you forget your password, click the link under the login button.",
+              "pl": "Jeśli zapomnisz hasła, kliknij link pod przyciskiem logowania.",
+              "focusEn": "forget",
+              "focusPl": "zapomnisz"
+            }
+          ],
+          "acceptedAnswers": [
+            "forget"
+          ],
+          "acceptedTranslations": [
+            "zapomnieć",
+            "zapominać"
+          ]
+        },
+        {
+          "id": "cybersecurity.strong-password",
+          "term": "strong password",
+          "ipa": "/ˌstrɔːŋ ˈpæswɝːd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "silne hasło",
+          "definition": "A password that is long and hard to guess.",
+          "register": "neutralny",
+          "contextPl": "Tworzenie bezpiecznych haseł",
+          "natural": "",
+          "forms": "strong passwords",
+          "collocations": "create a strong password; use strong passwords",
+          "synonyms": "secure password",
+          "antonyms": "weak password",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bank's website made me choose a strong password with numbers and symbols.",
+              "pl": "Strona banku kazała mi wybrać silne hasło z cyframi i symbolami.",
+              "focusEn": "strong password",
+              "focusPl": "silne hasło"
+            },
+            {
+              "en": "My kids think a strong password is the dog's name plus one.",
+              "pl": "Moje dzieci myślą, że silne hasło to imię psa z jedynką na końcu.",
+              "focusEn": "strong password",
+              "focusPl": "silne hasło"
+            }
+          ],
+          "acceptedAnswers": [
+            "strong password",
+            "secure password"
+          ],
+          "acceptedTranslations": [
+            "silne hasło",
+            "mocne hasło",
+            "bezpieczne hasło"
+          ]
+        },
+        {
+          "id": "cybersecurity.reset",
+          "term": "reset",
+          "ipa": "/ˌriːˈsɛt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zresetować",
+          "definition": "To set a new password when you cannot use the old one.",
+          "register": "neutralny",
+          "contextPl": "Odzyskiwanie dostępu",
+          "natural": "",
+          "forms": "reset – reset – reset",
+          "collocations": "reset your password; a reset link",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik akcentujemy inaczej: /ˈriːsɛt/.",
+          "examples": [
+            {
+              "en": "I had to reset my email password because I couldn't remember it.",
+              "pl": "Musiałem zresetować hasło do poczty, bo go nie pamiętałem.",
+              "focusEn": "reset",
+              "focusPl": "zresetować"
+            },
+            {
+              "en": "The link to reset your password only works for fifteen minutes.",
+              "pl": "Link do zresetowania hasła działa tylko przez piętnaście minut.",
+              "focusEn": "reset",
+              "focusPl": "zresetowania"
+            }
+          ],
+          "acceptedAnswers": [
+            "reset"
+          ],
+          "acceptedTranslations": [
+            "zresetować",
+            "resetować",
+            "ustawić nowe hasło"
+          ]
+        },
+        {
+          "id": "cybersecurity.verification-code",
+          "term": "verification code",
+          "ipa": "/ˌvɛrəfəˈkeɪʃən ˌkoʊd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kod weryfikacyjny",
+          "definition": "A short number sent to your phone or email to prove it is really you.",
+          "register": "neutralny",
+          "contextPl": "Potwierdzanie tożsamości",
+          "natural": "code",
+          "forms": "verification codes",
+          "collocations": "enter the verification code; send a verification code",
+          "synonyms": "security code; one-time code",
+          "antonyms": "",
+          "notePl": "Nigdy nie podawaj tego kodu nikomu, kto o niego prosi.",
+          "examples": [
+            {
+              "en": "I typed in the verification code the bank sent to my phone.",
+              "pl": "Wpisałem kod weryfikacyjny, który bank wysłał mi na telefon.",
+              "focusEn": "verification code",
+              "focusPl": "kod weryfikacyjny"
+            },
+            {
+              "en": "The verification code took two minutes to arrive, so I almost gave up.",
+              "pl": "Kod weryfikacyjny przyszedł dopiero po dwóch minutach, więc prawie się poddałem.",
+              "focusEn": "verification code",
+              "focusPl": "Kod weryfikacyjny"
+            }
+          ],
+          "acceptedAnswers": [
+            "verification code",
+            "security code",
+            "one-time code"
+          ],
+          "acceptedTranslations": [
+            "kod weryfikacyjny",
+            "kod",
+            "kod jednorazowy",
+            "kod SMS"
+          ]
+        },
+        {
+          "id": "cybersecurity.security-question",
+          "term": "security question",
+          "ipa": "/sɪˈkjʊrəti ˌkwɛstʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pytanie zabezpieczające",
+          "definition": "A personal question you answer to prove who you are if you forget your password.",
+          "register": "neutralny",
+          "contextPl": "Odzyskiwanie konta",
+          "natural": "",
+          "forms": "security questions",
+          "collocations": "answer a security question; set up security questions",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My security question was my first pet's name, which everyone knows.",
+              "pl": "Moje pytanie zabezpieczające dotyczyło imienia pierwszego zwierzaka, które wszyscy znają.",
+              "focusEn": "security question",
+              "focusPl": "pytanie zabezpieczające"
+            },
+            {
+              "en": "I changed my security question to something nobody could find online.",
+              "pl": "Zmieniłem pytanie zabezpieczające na coś, czego nikt nie znajdzie w internecie.",
+              "focusEn": "security question",
+              "focusPl": "pytanie zabezpieczające"
+            }
+          ],
+          "acceptedAnswers": [
+            "security question"
+          ],
+          "acceptedTranslations": [
+            "pytanie zabezpieczające",
+            "pytanie pomocnicze",
+            "pytanie kontrolne"
+          ]
+        },
+        {
+          "id": "cybersecurity.get-locked-out",
+          "term": "get locked out",
+          "ipa": "/ˌɡɛt ˌlɑːkt ˈaʊt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zablokować sobie konto",
+          "definition": "To be unable to get into your account, often after too many wrong passwords.",
+          "register": "neutralny",
+          "contextPl": "Blokada konta",
+          "natural": "",
+          "forms": "got locked out; gotten locked out",
+          "collocations": "get locked out of your account",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I typed the wrong password three times and got locked out.",
+              "pl": "Trzy razy wpisałem złe hasło i zablokowałem sobie konto.",
+              "focusEn": "got locked out",
+              "focusPl": "zablokowałem sobie konto"
+            },
+            {
+              "en": "Write down your recovery codes so you don't get locked out later.",
+              "pl": "Zapisz kody odzyskiwania, żebyś później nie stracił dostępu do konta.",
+              "focusEn": "get locked out",
+              "focusPl": "stracił dostępu do konta"
+            }
+          ],
+          "acceptedAnswers": [
+            "get locked out",
+            "be locked out",
+            "locked out"
+          ],
+          "acceptedTranslations": [
+            "zablokować sobie konto",
+            "stracić dostęp do konta",
+            "mieć zablokowane konto"
+          ]
+        },
+        {
+          "id": "cybersecurity.fingerprint",
+          "term": "fingerprint",
+          "ipa": "/ˈfɪŋɡərprɪnt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odcisk palca",
+          "definition": "The pattern on the end of your finger, used to unlock a phone or app.",
+          "register": "neutralny",
+          "contextPl": "Odblokowywanie biometryczne",
+          "natural": "",
+          "forms": "fingerprints",
+          "collocations": "unlock with your fingerprint; fingerprint scanner",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I set up my banking app to open with my fingerprint.",
+              "pl": "Ustawiłem aplikację bankową tak, żeby otwierała się odciskiem palca.",
+              "focusEn": "fingerprint",
+              "focusPl": "odciskiem palca"
+            },
+            {
+              "en": "The scanner doesn't recognize my fingerprint when my hands are wet from the dishes.",
+              "pl": "Czytnik nie rozpoznaje mojego odcisku palca, kiedy mam mokre ręce od zmywania.",
+              "focusEn": "fingerprint",
+              "focusPl": "odcisku palca"
+            }
+          ],
+          "acceptedAnswers": [
+            "fingerprint"
+          ],
+          "acceptedTranslations": [
+            "odcisk palca",
+            "linie papilarne"
+          ]
+        },
+        {
+          "id": "cybersecurity.two-factor-authentication",
+          "term": "two-factor authentication",
+          "ipa": "/ˌtuː ˌfæktər ɔːˌθɛntɪˈkeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "uwierzytelnianie dwuskładnikowe",
+          "definition": "A login method that needs your password and a second proof, such as a code.",
+          "register": "specjalistyczny",
+          "contextPl": "Dodatkowa ochrona konta",
+          "natural": "2FA",
+          "forms": "",
+          "collocations": "turn on two-factor authentication; set up 2FA",
+          "synonyms": "two-step verification",
+          "antonyms": "",
+          "notePl": "Często skracane do „2FA”.",
+          "examples": [
+            {
+              "en": "I turned on two-factor authentication for my email and my bank.",
+              "pl": "Włączyłem uwierzytelnianie dwuskładnikowe w poczcie i w banku.",
+              "focusEn": "two-factor authentication",
+              "focusPl": "uwierzytelnianie dwuskładnikowe"
+            },
+            {
+              "en": "With two-factor authentication, a stolen password alone isn't enough.",
+              "pl": "Przy uwierzytelnianiu dwuskładnikowym samo skradzione hasło nie wystarczy.",
+              "focusEn": "two-factor authentication",
+              "focusPl": "uwierzytelnianiu dwuskładnikowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "two-factor authentication",
+            "two-step verification",
+            "2fa",
+            "two factor authentication"
+          ],
+          "acceptedTranslations": [
+            "uwierzytelnianie dwuskładnikowe",
+            "weryfikacja dwuetapowa",
+            "logowanie dwuetapowe",
+            "2FA"
+          ]
+        },
+        {
+          "id": "cybersecurity.password-manager",
+          "term": "password manager",
+          "ipa": "/ˈpæswɝːd ˌmænɪdʒər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "menedżer haseł",
+          "definition": "An app that creates and safely stores all your passwords.",
+          "register": "neutralny",
+          "contextPl": "Przechowywanie haseł",
+          "natural": "",
+          "forms": "password managers",
+          "collocations": "use a password manager; save it in your password manager",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I finally installed a password manager so I don't have to remember everything.",
+              "pl": "W końcu zainstalowałem menedżer haseł, żeby nie musieć wszystkiego pamiętać.",
+              "focusEn": "password manager",
+              "focusPl": "menedżer haseł"
+            },
+            {
+              "en": "My password manager warned me that six of my passwords were in the leak.",
+              "pl": "Mój menedżer haseł ostrzegł mnie, że sześć moich haseł było w wycieku.",
+              "focusEn": "password manager",
+              "focusPl": "menedżer haseł"
+            }
+          ],
+          "acceptedAnswers": [
+            "password manager"
+          ],
+          "acceptedTranslations": [
+            "menedżer haseł",
+            "menadżer haseł"
+          ]
+        },
+        {
+          "id": "cybersecurity.unique",
+          "term": "unique",
+          "ipa": "/juˈniːk/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "unikalny",
+          "definition": "Different from all others.",
+          "register": "neutralny",
+          "contextPl": "Zasady tworzenia haseł",
+          "natural": "",
+          "forms": "",
+          "collocations": "unique password; completely unique",
+          "synonyms": "different",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Every account should have a unique password, not the same one.",
+              "pl": "Każde konto powinno mieć unikalne hasło, a nie wszędzie to samo.",
+              "focusEn": "unique",
+              "focusPl": "unikalne"
+            },
+            {
+              "en": "Making a unique password for forty accounts took me all evening.",
+              "pl": "Wymyślenie unikalnego hasła do czterdziestu kont zajęło mi cały wieczór.",
+              "focusEn": "unique",
+              "focusPl": "unikalnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "unique"
+          ],
+          "acceptedTranslations": [
+            "unikalny",
+            "niepowtarzalny",
+            "inny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity.scams",
+      "namePl": "Oszustwa internetowe",
+      "scenePl": "Rano przy kawie dostajesz podejrzanego maila i SMS-a, które udają wiadomość z banku",
+      "entries": [
+        {
+          "id": "cybersecurity.scam",
+          "term": "scam",
+          "ipa": "/skæm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "oszustwo",
+          "definition": "A dishonest plan to trick people out of money or information.",
+          "register": "neutralny",
+          "contextPl": "Rozpoznawanie oszustw",
+          "natural": "rip-off",
+          "forms": "scams",
+          "collocations": "an online scam; a phone scam; fall for a scam",
+          "synonyms": "fraud; con",
+          "antonyms": "",
+          "notePl": "Też czasownik: „scam someone” = oszukać kogoś.",
+          "examples": [
+            {
+              "en": "The text about my \"blocked card\" was obviously a scam.",
+              "pl": "SMS o mojej „zablokowanej karcie” to było oczywiste oszustwo.",
+              "focusEn": "scam",
+              "focusPl": "oszustwo"
+            },
+            {
+              "en": "My dad almost lost money to the same scam last year.",
+              "pl": "Mój tata w zeszłym roku prawie stracił pieniądze przez to samo oszustwo.",
+              "focusEn": "scam",
+              "focusPl": "oszustwo"
+            }
+          ],
+          "acceptedAnswers": [
+            "scam",
+            "con"
+          ],
+          "acceptedTranslations": [
+            "oszustwo",
+            "przekręt",
+            "wyłudzenie",
+            "szwindel"
+          ]
+        },
+        {
+          "id": "cybersecurity.fake",
+          "term": "fake",
+          "ipa": "/feɪk/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "fałszywy",
+          "definition": "Made to look real in order to trick people.",
+          "register": "neutralny",
+          "contextPl": "Podróbki i podszywanie się",
+          "natural": "phony",
+          "forms": "",
+          "collocations": "fake email; fake website; fake account",
+          "synonyms": "phony; false",
+          "antonyms": "real; genuine",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The logo looked real, but the email address was fake.",
+              "pl": "Logo wyglądało na prawdziwe, ale adres mailowy był fałszywy.",
+              "focusEn": "fake",
+              "focusPl": "fałszywy"
+            },
+            {
+              "en": "The link led to a fake bank website that asked for my PIN.",
+              "pl": "Link prowadził do fałszywej strony banku, która prosiła o PIN.",
+              "focusEn": "fake",
+              "focusPl": "fałszywej"
+            }
+          ],
+          "acceptedAnswers": [
+            "fake",
+            "phony"
+          ],
+          "acceptedTranslations": [
+            "fałszywy",
+            "podrobiony",
+            "nieprawdziwy",
+            "fejkowy"
+          ]
+        },
+        {
+          "id": "cybersecurity.suspicious",
+          "term": "suspicious",
+          "ipa": "/səˈspɪʃəs/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "podejrzany",
+          "definition": "Making you think something is wrong or dishonest.",
+          "register": "neutralny",
+          "contextPl": "Ostrożność wobec wiadomości",
+          "natural": "sketchy",
+          "forms": "",
+          "collocations": "suspicious email; suspicious link; look suspicious",
+          "synonyms": "shady; sketchy",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I didn't open the attachment because it looked suspicious.",
+              "pl": "Nie otworzyłem załącznika, bo wydawał się podejrzany.",
+              "focusEn": "suspicious",
+              "focusPl": "podejrzany"
+            },
+            {
+              "en": "There was a suspicious link in the text, so I deleted it.",
+              "pl": "W SMS-ie był podejrzany link, więc go usunąłem.",
+              "focusEn": "suspicious",
+              "focusPl": "podejrzany"
+            }
+          ],
+          "acceptedAnswers": [
+            "suspicious",
+            "sketchy",
+            "shady"
+          ],
+          "acceptedTranslations": [
+            "podejrzany",
+            "podejrzanie wyglądający"
+          ]
+        },
+        {
+          "id": "cybersecurity.scammer",
+          "term": "scammer",
+          "ipa": "/ˈskæmər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oszust",
+          "definition": "A person who tricks people to steal their money or information.",
+          "register": "neutralny",
+          "contextPl": "Sprawcy oszustw",
+          "natural": "crook",
+          "forms": "scammers",
+          "collocations": "phone scammer; scammers pretend to be",
+          "synonyms": "fraudster; con artist",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The scammer pretended to be from my bank's security team.",
+              "pl": "Oszust udawał, że jest z działu bezpieczeństwa mojego banku.",
+              "focusEn": "scammer",
+              "focusPl": "Oszust"
+            },
+            {
+              "en": "Scammers often write that something is urgent so you don't stop to think.",
+              "pl": "Oszuści często piszą, że coś jest pilne, żebyś nie zdążył pomyśleć.",
+              "focusEn": "Scammers",
+              "focusPl": "Oszuści"
+            }
+          ],
+          "acceptedAnswers": [
+            "scammer",
+            "fraudster"
+          ],
+          "acceptedTranslations": [
+            "oszust",
+            "naciągacz",
+            "oszustka"
+          ]
+        },
+        {
+          "id": "cybersecurity.spam",
+          "term": "spam",
+          "ipa": "/spæm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "spam",
+          "definition": "Unwanted emails or messages sent to many people, often ads or scams.",
+          "register": "neutralny",
+          "contextPl": "Niechciane wiadomości",
+          "natural": "junk mail",
+          "forms": "",
+          "collocations": "spam folder; mark as spam; get spam",
+          "synonyms": "junk mail",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Half of my morning emails go straight to spam.",
+              "pl": "Połowa moich porannych maili trafia prosto do spamu.",
+              "focusEn": "spam",
+              "focusPl": "spamu"
+            },
+            {
+              "en": "I marked the fake bank email as spam and deleted it.",
+              "pl": "Oznaczyłem fałszywego maila z banku jako spam i go usunąłem.",
+              "focusEn": "spam",
+              "focusPl": "spam"
+            }
+          ],
+          "acceptedAnswers": [
+            "spam",
+            "junk mail",
+            "junk"
+          ],
+          "acceptedTranslations": [
+            "spam",
+            "niechciane wiadomości"
+          ]
+        },
+        {
+          "id": "cybersecurity.trick",
+          "term": "trick",
+          "ipa": "/trɪk/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oszukać",
+          "definition": "To make someone believe something false so they do what you want.",
+          "register": "neutralny",
+          "contextPl": "Manipulacja ofiarą",
+          "natural": "fool",
+          "forms": "tricked; tricking",
+          "collocations": "trick someone into; get tricked",
+          "synonyms": "fool; deceive",
+          "antonyms": "",
+          "notePl": "Konstrukcja: „trick someone into doing something”.",
+          "examples": [
+            {
+              "en": "The message tried to trick me into typing my card number.",
+              "pl": "Wiadomość próbowała mnie oszukać, żebym wpisał numer karty.",
+              "focusEn": "trick",
+              "focusPl": "oszukać"
+            },
+            {
+              "en": "My neighbor got tricked by a call from a fake police officer.",
+              "pl": "Mój sąsiad dał się nabrać na telefon od fałszywego policjanta.",
+              "focusEn": "tricked",
+              "focusPl": "nabrać"
+            }
+          ],
+          "acceptedAnswers": [
+            "trick",
+            "fool"
+          ],
+          "acceptedTranslations": [
+            "oszukać",
+            "oszukiwać",
+            "nabrać",
+            "nabierać"
+          ]
+        },
+        {
+          "id": "cybersecurity.fall-for",
+          "term": "fall for",
+          "ipa": "/ˈfɔːl ˌfɔːr/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dać się nabrać",
+          "definition": "To be tricked into believing something false.",
+          "register": "potoczny",
+          "contextPl": "Uleganie oszustwu",
+          "natural": "",
+          "forms": "fall – fell – fallen",
+          "collocations": "fall for a scam; fall for a trick",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Fall for someone” znaczy też „zakochać się”.",
+          "examples": [
+            {
+              "en": "I almost fell for it because the email used my real name.",
+              "pl": "Prawie dałem się nabrać, bo w mailu było moje prawdziwe nazwisko.",
+              "focusEn": "fell for",
+              "focusPl": "dałem się nabrać"
+            },
+            {
+              "en": "Don't fall for texts saying you missed a package delivery.",
+              "pl": "Nie daj się nabrać na SMS-y o nieodebranej paczce.",
+              "focusEn": "fall for",
+              "focusPl": "daj się nabrać"
+            }
+          ],
+          "acceptedAnswers": [
+            "fall for"
+          ],
+          "acceptedTranslations": [
+            "dać się nabrać",
+            "nabrać się",
+            "dać się oszukać"
+          ]
+        },
+        {
+          "id": "cybersecurity.phishing",
+          "term": "phishing",
+          "ipa": "/ˈfɪʃɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "phishing",
+          "definition": "Fake emails or messages that try to make you give away passwords or bank details.",
+          "register": "specjalistyczny",
+          "contextPl": "Wyłudzanie danych",
+          "natural": "",
+          "forms": "",
+          "collocations": "phishing email; phishing attack; a phishing scam",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Wymawia się tak samo jak „fishing” – łowienie ryb.",
+          "examples": [
+            {
+              "en": "My husband took one look and said it was a classic phishing email.",
+              "pl": "Mąż spojrzał tylko raz i powiedział, że to klasyczny mail phishingowy.",
+              "focusEn": "phishing",
+              "focusPl": "phishingowy"
+            },
+            {
+              "en": "This phishing text has a spelling mistake in the bank's name.",
+              "pl": "Ten phishingowy SMS ma literówkę w nazwie banku.",
+              "focusEn": "phishing",
+              "focusPl": "phishingowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "phishing"
+          ],
+          "acceptedTranslations": [
+            "phishing",
+            "wyłudzanie danych",
+            "fiszing"
+          ]
+        },
+        {
+          "id": "cybersecurity.fraud",
+          "term": "fraud",
+          "ipa": "/frɔːd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "oszustwo finansowe",
+          "definition": "The crime of tricking people to get money or goods illegally.",
+          "register": "formalny",
+          "contextPl": "Przestępstwa finansowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "credit card fraud; commit fraud; report fraud",
+          "synonyms": "scam",
+          "antonyms": "",
+          "notePl": "Słowo bardziej formalne niż „scam”.",
+          "examples": [
+            {
+              "en": "I called the bank's fraud department about the strange text.",
+              "pl": "Zadzwoniłem do działu ds. oszustw w banku w sprawie dziwnego SMS-a.",
+              "focusEn": "fraud",
+              "focusPl": "oszustw"
+            },
+            {
+              "en": "The bank warned that the message was part of a fraud targeting older customers.",
+              "pl": "Bank ostrzegł, że ta wiadomość jest częścią oszustwa wymierzonego w starszych klientów.",
+              "focusEn": "fraud",
+              "focusPl": "oszustwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "fraud"
+          ],
+          "acceptedTranslations": [
+            "oszustwo finansowe",
+            "oszustwo",
+            "wyłudzenie",
+            "przestępstwo finansowe"
+          ]
+        },
+        {
+          "id": "cybersecurity.red-flag",
+          "term": "red flag",
+          "ipa": "/ˌrɛd ˈflæɡ/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "sygnał ostrzegawczy",
+          "definition": "A sign that something is wrong or dangerous.",
+          "register": "neutralny",
+          "contextPl": "Rozpoznawanie oszustwa",
+          "natural": "",
+          "forms": "red flags",
+          "collocations": "a big red flag; see red flags",
+          "synonyms": "warning sign",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Asking for your PIN by text is a huge red flag.",
+              "pl": "Prośba o PIN w SMS-ie to ogromny sygnał ostrzegawczy.",
+              "focusEn": "red flag",
+              "focusPl": "sygnał ostrzegawczy"
+            },
+            {
+              "en": "The first red flag was the strange email address.",
+              "pl": "Pierwszym sygnałem ostrzegawczym był dziwny adres mailowy.",
+              "focusEn": "red flag",
+              "focusPl": "sygnałem ostrzegawczym"
+            }
+          ],
+          "acceptedAnswers": [
+            "red flag",
+            "warning sign"
+          ],
+          "acceptedTranslations": [
+            "sygnał ostrzegawczy",
+            "czerwona flaga",
+            "znak ostrzegawczy"
+          ]
+        },
+        {
+          "id": "cybersecurity.too-good-to-be-true",
+          "term": "too good to be true",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zbyt piękne, żeby było prawdziwe",
+          "definition": "So attractive that it is probably false or a trick.",
+          "register": "neutralny",
+          "contextPl": "Podejrzanie atrakcyjne oferty",
+          "natural": "",
+          "forms": "",
+          "collocations": "sounds too good to be true; seems too good to be true",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pełne powiedzenie: „If it sounds too good to be true, it probably is”.",
+          "examples": [
+            {
+              "en": "A free phone just for clicking a link? That's too good to be true.",
+              "pl": "Darmowy telefon tylko za kliknięcie w link? To zbyt piękne, żeby było prawdziwe.",
+              "focusEn": "too good to be true",
+              "focusPl": "zbyt piękne, żeby było prawdziwe"
+            },
+            {
+              "en": "The prize email seemed too good to be true, so I ignored it.",
+              "pl": "Mail o wygranej wydawał się zbyt piękny, żeby był prawdziwy, więc go zignorowałem.",
+              "focusEn": "too good to be true",
+              "focusPl": "zbyt piękny, żeby był prawdziwy"
+            }
+          ],
+          "acceptedAnswers": [
+            "too good to be true"
+          ],
+          "acceptedTranslations": [
+            "zbyt piękne, żeby było prawdziwe",
+            "zbyt piękne, by było prawdziwe",
+            "za piękne, żeby było prawdziwe"
+          ]
+        },
+        {
+          "id": "cybersecurity.impersonate",
+          "term": "impersonate",
+          "ipa": "/ɪmˈpɝːsəneɪt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "podszywać się",
+          "definition": "To pretend to be another person or organization in order to trick people.",
+          "register": "formalny",
+          "contextPl": "Podszywanie się pod instytucje",
+          "natural": "",
+          "forms": "impersonated; impersonating",
+          "collocations": "impersonate a bank; impersonate a police officer",
+          "synonyms": "pose as",
+          "antonyms": "",
+          "notePl": "Po polsku: „podszywać się pod kogoś”.",
+          "examples": [
+            {
+              "en": "The email impersonated my bank so well that even the logo was perfect.",
+              "pl": "Mail tak dobrze podszywał się pod mój bank, że nawet logo było idealne.",
+              "focusEn": "impersonated",
+              "focusPl": "podszywał się"
+            },
+            {
+              "en": "Scammers often impersonate delivery companies in text messages.",
+              "pl": "Oszuści w SMS-ach często podszywają się pod firmy kurierskie.",
+              "focusEn": "impersonate",
+              "focusPl": "podszywają się"
+            }
+          ],
+          "acceptedAnswers": [
+            "impersonate",
+            "pose as",
+            "pretend to be"
+          ],
+          "acceptedTranslations": [
+            "podszywać się",
+            "podszyć się",
+            "udawać"
+          ]
+        },
+        {
+          "id": "cybersecurity.con-artist",
+          "term": "con artist",
+          "ipa": "/ˈkɑːn ˌɑːrtɪst/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "naciągacz",
+          "definition": "A person who tricks people into trusting them in order to steal money.",
+          "register": "potoczny",
+          "contextPl": "Oszuści wyłudzający pieniądze",
+          "natural": "",
+          "forms": "con artists",
+          "collocations": "a smooth con artist",
+          "synonyms": "scammer; fraudster",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Whoever wrote this message is a professional con artist.",
+              "pl": "Ktokolwiek napisał tę wiadomość, jest zawodowym naciągaczem.",
+              "focusEn": "con artist",
+              "focusPl": "naciągaczem"
+            },
+            {
+              "en": "The con artist on the phone knew my address and my bank's name.",
+              "pl": "Naciągacz przez telefon znał mój adres i nazwę mojego banku.",
+              "focusEn": "con artist",
+              "focusPl": "Naciągacz"
+            }
+          ],
+          "acceptedAnswers": [
+            "con artist",
+            "con man"
+          ],
+          "acceptedTranslations": [
+            "naciągacz",
+            "oszust",
+            "hochsztapler"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity.hacking-threats",
+      "namePl": "Włamania i zagrożenia",
+      "scenePl": "Spotkanie w firmie po ataku hakerskim: dział IT tłumaczy pracownikom, co się stało",
+      "entries": [
+        {
+          "id": "cybersecurity.steal",
+          "term": "steal",
+          "ipa": "/stiːl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ukraść",
+          "definition": "To take something that belongs to someone else without permission.",
+          "register": "neutralny",
+          "contextPl": "Kradzież danych",
+          "natural": "",
+          "forms": "steal – stole – stolen",
+          "collocations": "steal data; steal passwords; stolen information",
+          "synonyms": "take",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The attackers stole the email addresses of all our customers.",
+              "pl": "Atakujący ukradli adresy mailowe wszystkich naszych klientów.",
+              "focusEn": "stole",
+              "focusPl": "ukradli"
+            },
+            {
+              "en": "Thankfully, IT said no credit card numbers were stolen.",
+              "pl": "Dział IT powiedział, że na szczęście żadne numery kart nie zostały skradzione.",
+              "focusEn": "stolen",
+              "focusPl": "skradzione"
+            }
+          ],
+          "acceptedAnswers": [
+            "steal"
+          ],
+          "acceptedTranslations": [
+            "ukraść",
+            "kraść",
+            "wykraść",
+            "wykradać",
+            "skraść"
+          ]
+        },
+        {
+          "id": "cybersecurity.hack",
+          "term": "hack",
+          "ipa": "/hæk/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zhakować",
+          "definition": "To get into someone's computer or account without permission.",
+          "register": "neutralny",
+          "contextPl": "Włamania na konta",
+          "natural": "",
+          "forms": "hacked; hacking",
+          "collocations": "get hacked; hack into an account; my account was hacked",
+          "synonyms": "break into",
+          "antonyms": "",
+          "notePl": "Częste: „I got hacked” = ktoś włamał mi się na konto.",
+          "examples": [
+            {
+              "en": "Someone hacked the marketing team's email over the weekend.",
+              "pl": "Ktoś w weekend zhakował pocztę działu marketingu.",
+              "focusEn": "hacked",
+              "focusPl": "zhakował"
+            },
+            {
+              "en": "IT thinks my account got hacked because I clicked a fake link.",
+              "pl": "Dział IT uważa, że moje konto zostało zhakowane, bo kliknąłem w fałszywy link.",
+              "focusEn": "hacked",
+              "focusPl": "zhakowane"
+            }
+          ],
+          "acceptedAnswers": [
+            "hack",
+            "break into"
+          ],
+          "acceptedTranslations": [
+            "zhakować",
+            "włamać się",
+            "hakować",
+            "włamywać się"
+          ]
+        },
+        {
+          "id": "cybersecurity.hacker",
+          "term": "hacker",
+          "ipa": "/ˈhækər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "haker",
+          "definition": "A person who breaks into computer systems without permission.",
+          "register": "neutralny",
+          "contextPl": "Sprawcy włamań",
+          "natural": "",
+          "forms": "hackers",
+          "collocations": "hackers broke in; a group of hackers",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The hackers got in through an old password nobody had changed.",
+              "pl": "Hakerzy dostali się przez stare hasło, którego nikt nie zmienił.",
+              "focusEn": "hackers",
+              "focusPl": "Hakerzy"
+            },
+            {
+              "en": "IT doesn't know yet where the hacker was located.",
+              "pl": "Dział IT jeszcze nie wie, gdzie znajdował się haker.",
+              "focusEn": "hacker",
+              "focusPl": "haker"
+            }
+          ],
+          "acceptedAnswers": [
+            "hacker"
+          ],
+          "acceptedTranslations": [
+            "haker",
+            "hakerka",
+            "włamywacz komputerowy"
+          ]
+        },
+        {
+          "id": "cybersecurity.victim",
+          "term": "victim",
+          "ipa": "/ˈvɪktɪm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ofiara",
+          "definition": "A person or organization that has been harmed by a crime or attack.",
+          "register": "neutralny",
+          "contextPl": "Skutki ataku",
+          "natural": "",
+          "forms": "victims",
+          "collocations": "a victim of hacking; become a victim",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our company is not the only victim of this attack.",
+              "pl": "Nasza firma nie jest jedyną ofiarą tego ataku.",
+              "focusEn": "victim",
+              "focusPl": "ofiarą"
+            },
+            {
+              "en": "IT is contacting every victim whose data was leaked.",
+              "pl": "Dział IT kontaktuje się z każdym poszkodowanym, którego dane wyciekły.",
+              "focusEn": "victim",
+              "focusPl": "poszkodowanym"
+            }
+          ],
+          "acceptedAnswers": [
+            "victim"
+          ],
+          "acceptedTranslations": [
+            "ofiara",
+            "poszkodowany"
+          ]
+        },
+        {
+          "id": "cybersecurity.cyberattack",
+          "term": "cyberattack",
+          "ipa": "/ˈsaɪbərəˌtæk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "cyberatak",
+          "definition": "An attempt to damage or break into computer systems.",
+          "register": "neutralny",
+          "contextPl": "Ataki na firmy i instytucje",
+          "natural": "attack",
+          "forms": "cyberattacks",
+          "collocations": "a major cyberattack; protect against cyberattacks",
+          "synonyms": "hack",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cyberattack shut down our email for two whole days.",
+              "pl": "Cyberatak wyłączył naszą pocztę na dwa pełne dni.",
+              "focusEn": "cyberattack",
+              "focusPl": "Cyberatak"
+            },
+            {
+              "en": "After the cyberattack, everyone had to take a security training course.",
+              "pl": "Po cyberataku wszyscy musieli przejść szkolenie z bezpieczeństwa.",
+              "focusEn": "cyberattack",
+              "focusPl": "cyberataku"
+            }
+          ],
+          "acceptedAnswers": [
+            "cyberattack",
+            "cyber attack"
+          ],
+          "acceptedTranslations": [
+            "cyberatak",
+            "atak hakerski",
+            "atak komputerowy"
+          ]
+        },
+        {
+          "id": "cybersecurity.malware",
+          "term": "malware",
+          "ipa": "/ˈmælwɛr/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "złośliwe oprogramowanie",
+          "definition": "Software designed to damage computers or steal information.",
+          "register": "specjalistyczny",
+          "contextPl": "Szkodliwe programy",
+          "natural": "virus",
+          "forms": "",
+          "collocations": "install malware; infected with malware",
+          "synonyms": "virus",
+          "antonyms": "",
+          "notePl": "Ogólne określenie na wirusy, trojany i programy szpiegujące.",
+          "examples": [
+            {
+              "en": "The malware came in through a fake invoice attachment.",
+              "pl": "Złośliwe oprogramowanie dostało się przez załącznik z fałszywą fakturą.",
+              "focusEn": "malware",
+              "focusPl": "Złośliwe oprogramowanie"
+            },
+            {
+              "en": "IT found malware on three laptops in the sales department.",
+              "pl": "Dział IT znalazł złośliwe oprogramowanie na trzech laptopach w dziale sprzedaży.",
+              "focusEn": "malware",
+              "focusPl": "złośliwe oprogramowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "malware"
+          ],
+          "acceptedTranslations": [
+            "złośliwe oprogramowanie",
+            "malware",
+            "wirus"
+          ]
+        },
+        {
+          "id": "cybersecurity.data-breach",
+          "term": "data breach",
+          "ipa": "/ˈdeɪtə ˌbriːtʃ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wyciek danych",
+          "definition": "An event in which private information is stolen or shown to people who should not see it.",
+          "register": "formalny",
+          "contextPl": "Wycieki z firm i serwisów",
+          "natural": "leak",
+          "forms": "data breaches",
+          "collocations": "a massive data breach; report a data breach",
+          "synonyms": "leak",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The company has to tell customers about the data breach within three days.",
+              "pl": "Firma musi poinformować klientów o wycieku danych w ciągu trzech dni.",
+              "focusEn": "data breach",
+              "focusPl": "wycieku danych"
+            },
+            {
+              "en": "The data breach exposed names, addresses, and phone numbers.",
+              "pl": "Wyciek danych ujawnił imiona i nazwiska, adresy oraz numery telefonów.",
+              "focusEn": "data breach",
+              "focusPl": "Wyciek danych"
+            }
+          ],
+          "acceptedAnswers": [
+            "data breach",
+            "data leak"
+          ],
+          "acceptedTranslations": [
+            "wyciek danych",
+            "naruszenie danych",
+            "wyciek"
+          ]
+        },
+        {
+          "id": "cybersecurity.leak",
+          "term": "leak",
+          "ipa": "/liːk/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wyciec",
+          "definition": "To become known or available to people who should not have it.",
+          "register": "neutralny",
+          "contextPl": "Ujawnienie poufnych informacji",
+          "natural": "",
+          "forms": "leaked; leaking",
+          "collocations": "data leaked; leak online",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też rzeczownik: „a leak” = wyciek.",
+          "examples": [
+            {
+              "en": "Our customer list leaked online a few days after the attack.",
+              "pl": "Nasza lista klientów wyciekła do sieci kilka dni po ataku.",
+              "focusEn": "leaked",
+              "focusPl": "wyciekła"
+            },
+            {
+              "en": "IT is checking whether any passwords leaked too.",
+              "pl": "Dział IT sprawdza, czy wyciekły też jakieś hasła.",
+              "focusEn": "leaked",
+              "focusPl": "wyciekły"
+            }
+          ],
+          "acceptedAnswers": [
+            "leak"
+          ],
+          "acceptedTranslations": [
+            "wyciec",
+            "wyciekać",
+            "wypłynąć",
+            "ujawnić"
+          ]
+        },
+        {
+          "id": "cybersecurity.identity-theft",
+          "term": "identity theft",
+          "ipa": "/aɪˈdɛntəti ˌθɛft/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kradzież tożsamości",
+          "definition": "The crime of using someone else's personal information, usually to get money.",
+          "register": "formalny",
+          "contextPl": "Wykorzystanie cudzych danych",
+          "natural": "",
+          "forms": "",
+          "collocations": "a victim of identity theft; protect yourself from identity theft",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "IT warned us that the leaked data could be used for identity theft.",
+              "pl": "Dział IT ostrzegł nas, że wyciekłe dane mogą posłużyć do kradzieży tożsamości.",
+              "focusEn": "identity theft",
+              "focusPl": "kradzieży tożsamości"
+            },
+            {
+              "en": "After the attack, the company offered employees free protection against identity theft.",
+              "pl": "Po ataku firma zaoferowała pracownikom bezpłatną ochronę przed kradzieżą tożsamości.",
+              "focusEn": "identity theft",
+              "focusPl": "kradzieżą tożsamości"
+            }
+          ],
+          "acceptedAnswers": [
+            "identity theft"
+          ],
+          "acceptedTranslations": [
+            "kradzież tożsamości"
+          ]
+        },
+        {
+          "id": "cybersecurity.threat",
+          "term": "threat",
+          "ipa": "/θrɛt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zagrożenie",
+          "definition": "Something or someone that could cause damage or danger.",
+          "register": "neutralny",
+          "contextPl": "Ocena ryzyka",
+          "natural": "",
+          "forms": "threats",
+          "collocations": "a security threat; online threats; a serious threat",
+          "synonyms": "danger; risk",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "IT says the biggest threat is employees clicking on fake links.",
+              "pl": "Dział IT mówi, że największym zagrożeniem jest klikanie przez pracowników w fałszywe linki.",
+              "focusEn": "threat",
+              "focusPl": "zagrożeniem"
+            },
+            {
+              "en": "The new system blocks most threats before they reach our inboxes.",
+              "pl": "Nowy system blokuje większość zagrożeń, zanim trafią do naszych skrzynek.",
+              "focusEn": "threats",
+              "focusPl": "zagrożeń"
+            }
+          ],
+          "acceptedAnswers": [
+            "threat",
+            "danger",
+            "risk"
+          ],
+          "acceptedTranslations": [
+            "zagrożenie",
+            "niebezpieczeństwo",
+            "groźba"
+          ]
+        },
+        {
+          "id": "cybersecurity.compromised",
+          "term": "compromised",
+          "ipa": "/ˈkɑːmprəmaɪzd/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "przejęty",
+          "definition": "No longer safe because someone else may have gotten access to it.",
+          "register": "specjalistyczny",
+          "contextPl": "Konta i dane w rękach atakujących",
+          "natural": "hacked",
+          "forms": "",
+          "collocations": "a compromised account; compromised passwords",
+          "synonyms": "hacked",
+          "antonyms": "secure",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If your account was compromised, change your password immediately.",
+              "pl": "Jeśli twoje konto zostało przejęte, natychmiast zmień hasło.",
+              "focusEn": "compromised",
+              "focusPl": "przejęte"
+            },
+            {
+              "en": "IT believes about fifty work accounts were compromised.",
+              "pl": "Dział IT uważa, że około pięćdziesięciu kont służbowych zostało przejętych.",
+              "focusEn": "compromised",
+              "focusPl": "przejętych"
+            }
+          ],
+          "acceptedAnswers": [
+            "compromised",
+            "hacked"
+          ],
+          "acceptedTranslations": [
+            "przejęty",
+            "zagrożony",
+            "naruszony"
+          ]
+        },
+        {
+          "id": "cybersecurity.ransomware",
+          "term": "ransomware",
+          "ipa": "/ˈrænsəmwɛr/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "ransomware",
+          "definition": "Malware that locks your files and demands money to unlock them.",
+          "register": "specjalistyczny",
+          "contextPl": "Wymuszenia okupu",
+          "natural": "",
+          "forms": "",
+          "collocations": "a ransomware attack; hit by ransomware",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Ransom” = okup.",
+          "examples": [
+            {
+              "en": "The ransomware locked every file on the shared drive.",
+              "pl": "Ransomware zablokowało wszystkie pliki na wspólnym dysku.",
+              "focusEn": "ransomware",
+              "focusPl": "Ransomware"
+            },
+            {
+              "en": "The hackers behind the ransomware demanded a million dollars.",
+              "pl": "Hakerzy stojący za ransomware zażądali miliona dolarów.",
+              "focusEn": "ransomware",
+              "focusPl": "ransomware"
+            }
+          ],
+          "acceptedAnswers": [
+            "ransomware"
+          ],
+          "acceptedTranslations": [
+            "ransomware",
+            "oprogramowanie wymuszające okup"
+          ]
+        },
+        {
+          "id": "cybersecurity.unauthorized",
+          "term": "unauthorized",
+          "ipa": "/ʌnˈɔːθəraɪzd/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nieuprawniony",
+          "definition": "Done without official permission.",
+          "register": "formalny",
+          "contextPl": "Formalne komunikaty bezpieczeństwa",
+          "natural": "",
+          "forms": "",
+          "collocations": "unauthorized access; unauthorized login",
+          "synonyms": "",
+          "antonyms": "authorized",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The system detected unauthorized access to the payroll files.",
+              "pl": "System wykrył nieuprawniony dostęp do plików z wynagrodzeniami.",
+              "focusEn": "unauthorized",
+              "focusPl": "nieuprawniony"
+            },
+            {
+              "en": "Any unauthorized login now sends an alert to the IT team.",
+              "pl": "Każde nieautoryzowane logowanie wysyła teraz alert do zespołu IT.",
+              "focusEn": "unauthorized",
+              "focusPl": "nieautoryzowane"
+            }
+          ],
+          "acceptedAnswers": [
+            "unauthorized"
+          ],
+          "acceptedTranslations": [
+            "nieuprawniony",
+            "nieautoryzowany",
+            "bez upoważnienia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity.protection",
+      "namePl": "Ochrona danych i urządzeń",
+      "scenePl": "Wieczorem konfigurujesz zabezpieczenia na laptopach i telefonach całej rodziny",
+      "entries": [
+        {
+          "id": "cybersecurity.protect",
+          "term": "protect",
+          "ipa": "/prəˈtɛkt/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "chronić",
+          "definition": "To keep someone or something safe from harm.",
+          "register": "neutralny",
+          "contextPl": "Zabezpieczanie urządzeń",
+          "natural": "",
+          "forms": "protected; protecting",
+          "collocations": "protect your data; protect your account; protect against",
+          "synonyms": "keep safe; secure",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This setting will protect the kids' tablets from adult websites.",
+              "pl": "To ustawienie ochroni tablety dzieci przed stronami dla dorosłych.",
+              "focusEn": "protect",
+              "focusPl": "ochroni"
+            },
+            {
+              "en": "I want to protect our family photos in case someone steals the laptop.",
+              "pl": "Chcę zabezpieczyć nasze rodzinne zdjęcia na wypadek, gdyby ktoś ukradł laptopa.",
+              "focusEn": "protect",
+              "focusPl": "zabezpieczyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "protect",
+            "keep safe"
+          ],
+          "acceptedTranslations": [
+            "chronić",
+            "ochronić",
+            "zabezpieczyć",
+            "zabezpieczać"
+          ]
+        },
+        {
+          "id": "cybersecurity.safe",
+          "term": "safe",
+          "ipa": "/seɪf/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "bezpieczny",
+          "definition": "Not likely to be harmed or to cause harm.",
+          "register": "neutralny",
+          "contextPl": "Bezpieczne korzystanie z sieci",
+          "natural": "",
+          "forms": "safer; safest",
+          "collocations": "stay safe online; is it safe; a safe website",
+          "synonyms": "secure",
+          "antonyms": "dangerous; risky",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is this website safe, or should I not enter my card number?",
+              "pl": "Czy ta strona jest bezpieczna, czy lepiej nie wpisywać numeru karty?",
+              "focusEn": "safe",
+              "focusPl": "bezpieczna"
+            },
+            {
+              "en": "I want my parents' new laptop to be safe for online banking.",
+              "pl": "Chcę, żeby nowy laptop moich rodziców był bezpieczny do bankowości internetowej.",
+              "focusEn": "safe",
+              "focusPl": "bezpieczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "safe",
+            "secure"
+          ],
+          "acceptedTranslations": [
+            "bezpieczny"
+          ]
+        },
+        {
+          "id": "cybersecurity.personal-information",
+          "term": "personal information",
+          "ipa": "/ˌpɝːsənəl ˌɪnfərˈmeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "dane osobowe",
+          "definition": "Facts about you, such as your name, address, birthday, or bank details.",
+          "register": "neutralny",
+          "contextPl": "Ochrona prywatnych danych",
+          "natural": "personal info",
+          "forms": "",
+          "collocations": "share personal information; protect your personal information",
+          "synonyms": "personal data; personal details",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I told the kids never to type their personal information into random websites.",
+              "pl": "Powiedziałem dzieciom, żeby nigdy nie wpisywały swoich danych osobowych na przypadkowych stronach.",
+              "focusEn": "personal information",
+              "focusPl": "danych osobowych"
+            },
+            {
+              "en": "The new app asked for too much personal information, so I deleted it.",
+              "pl": "Nowa aplikacja prosiła o za dużo danych osobowych, więc ją usunąłem.",
+              "focusEn": "personal information",
+              "focusPl": "danych osobowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "personal information",
+            "personal data",
+            "personal details",
+            "personal info"
+          ],
+          "acceptedTranslations": [
+            "dane osobowe",
+            "dane",
+            "informacje osobiste"
+          ]
+        },
+        {
+          "id": "cybersecurity.lock",
+          "term": "lock",
+          "ipa": "/lɑːk/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zablokować",
+          "definition": "To make a device impossible to use until the right code is entered.",
+          "register": "neutralny",
+          "contextPl": "Blokowanie urządzeń",
+          "natural": "",
+          "forms": "locked; locking",
+          "collocations": "lock your screen; lock your phone; locked automatically",
+          "synonyms": "",
+          "antonyms": "unlock",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I set the laptops to lock after two minutes without use.",
+              "pl": "Ustawiłem laptopy tak, żeby blokowały się po dwóch minutach bezczynności.",
+              "focusEn": "lock",
+              "focusPl": "blokowały się"
+            },
+            {
+              "en": "Always lock your screen when you leave the computer.",
+              "pl": "Zawsze blokuj ekran, kiedy odchodzisz od komputera.",
+              "focusEn": "lock",
+              "focusPl": "blokuj"
+            }
+          ],
+          "acceptedAnswers": [
+            "lock"
+          ],
+          "acceptedTranslations": [
+            "zablokować",
+            "blokować"
+          ]
+        },
+        {
+          "id": "cybersecurity.privacy",
+          "term": "privacy",
+          "ipa": "/ˈpraɪvəsi/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "prywatność",
+          "definition": "The right to keep your personal life and information to yourself.",
+          "register": "neutralny",
+          "contextPl": "Kontrola nad danymi",
+          "natural": "",
+          "forms": "",
+          "collocations": "protect your privacy; online privacy; privacy policy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I covered the laptop camera for a little more privacy.",
+              "pl": "Zakleiłem kamerkę laptopa, żeby mieć trochę więcej prywatności.",
+              "focusEn": "privacy",
+              "focusPl": "prywatności"
+            },
+            {
+              "en": "My teenage son says I'm invading his privacy by checking his settings.",
+              "pl": "Mój nastoletni syn mówi, że naruszam jego prywatność, sprawdzając jego ustawienia.",
+              "focusEn": "privacy",
+              "focusPl": "prywatność"
+            }
+          ],
+          "acceptedAnswers": [
+            "privacy"
+          ],
+          "acceptedTranslations": [
+            "prywatność"
+          ]
+        },
+        {
+          "id": "cybersecurity.secure",
+          "term": "secure",
+          "ipa": "/sɪˈkjʊr/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zabezpieczony",
+          "definition": "Protected so that others cannot get access to it.",
+          "register": "neutralny",
+          "contextPl": "Zabezpieczone połączenia i konta",
+          "natural": "",
+          "forms": "",
+          "collocations": "a secure connection; a secure password; keep it secure",
+          "synonyms": "safe",
+          "antonyms": "insecure; unsafe",
+          "notePl": "Szukaj kłódki obok adresu strony.",
+          "examples": [
+            {
+              "en": "Make sure the Wi-Fi at home is secure with a good password.",
+              "pl": "Upewnij się, że domowe Wi-Fi jest zabezpieczone dobrym hasłem.",
+              "focusEn": "secure",
+              "focusPl": "zabezpieczone"
+            },
+            {
+              "en": "The payment page has a secure connection, so I let my mom finish her order.",
+              "pl": "Strona płatności ma bezpieczne połączenie, więc pozwoliłem mamie dokończyć zamówienie.",
+              "focusEn": "secure",
+              "focusPl": "bezpieczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "secure",
+            "safe"
+          ],
+          "acceptedTranslations": [
+            "zabezpieczony",
+            "bezpieczny",
+            "chroniony"
+          ]
+        },
+        {
+          "id": "cybersecurity.up-to-date",
+          "term": "up to date",
+          "ipa": "/ˌʌp tə ˈdeɪt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zaktualizowany",
+          "definition": "Having the newest updates and changes.",
+          "register": "neutralny",
+          "contextPl": "Aktualizacje zabezpieczeń",
+          "natural": "",
+          "forms": "",
+          "collocations": "keep your software up to date; up-to-date apps",
+          "synonyms": "current; updated",
+          "antonyms": "outdated; out of date",
+          "notePl": "Przed rzeczownikiem z łącznikami: „up-to-date software”.",
+          "examples": [
+            {
+              "en": "Keep every device up to date, because updates fix security holes.",
+              "pl": "Dbaj, żeby każde urządzenie było zaktualizowane, bo aktualizacje łatają luki w zabezpieczeniach.",
+              "focusEn": "up to date",
+              "focusPl": "zaktualizowane"
+            },
+            {
+              "en": "My dad's laptop wasn't up to date, so it took an hour to install everything.",
+              "pl": "Laptop taty nie był zaktualizowany, więc instalowanie wszystkiego zajęło godzinę.",
+              "focusEn": "up to date",
+              "focusPl": "zaktualizowany"
+            }
+          ],
+          "acceptedAnswers": [
+            "up to date",
+            "up-to-date"
+          ],
+          "acceptedTranslations": [
+            "zaktualizowany",
+            "aktualny",
+            "na bieżąco"
+          ]
+        },
+        {
+          "id": "cybersecurity.antivirus",
+          "term": "antivirus",
+          "ipa": "/ˌæntiˈvaɪrəs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "antywirus",
+          "definition": "A program that finds and removes harmful software from a computer.",
+          "register": "neutralny",
+          "contextPl": "Programy ochronne",
+          "natural": "",
+          "forms": "",
+          "collocations": "antivirus software; run the antivirus; install an antivirus",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pełna nazwa: „antivirus software”.",
+          "examples": [
+            {
+              "en": "I installed an antivirus on Grandma's old computer.",
+              "pl": "Zainstalowałem antywirusa na starym komputerze babci.",
+              "focusEn": "antivirus",
+              "focusPl": "antywirusa"
+            },
+            {
+              "en": "The antivirus found two dangerous files in the downloads folder.",
+              "pl": "Antywirus znalazł dwa niebezpieczne pliki w folderze pobranych.",
+              "focusEn": "antivirus",
+              "focusPl": "Antywirus"
+            }
+          ],
+          "acceptedAnswers": [
+            "antivirus",
+            "antivirus software",
+            "antivirus program"
+          ],
+          "acceptedTranslations": [
+            "antywirus",
+            "program antywirusowy"
+          ]
+        },
+        {
+          "id": "cybersecurity.scan",
+          "term": "scan",
+          "ipa": "/skæn/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przeskanować",
+          "definition": "To check a computer or file carefully for harmful software.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie komputera",
+          "natural": "check",
+          "forms": "scanned; scanning",
+          "collocations": "scan for viruses; scan your computer",
+          "synonyms": "check",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let the antivirus scan the whole laptop overnight.",
+              "pl": "Pozwól antywirusowi przeskanować całego laptopa w nocy.",
+              "focusEn": "scan",
+              "focusPl": "przeskanować"
+            },
+            {
+              "en": "I scanned the flash drive before opening the kids' school files.",
+              "pl": "Przeskanowałem pendrive'a, zanim otworzyłem szkolne pliki dzieci.",
+              "focusEn": "scanned",
+              "focusPl": "Przeskanowałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "scan"
+          ],
+          "acceptedTranslations": [
+            "przeskanować",
+            "skanować",
+            "sprawdzić"
+          ]
+        },
+        {
+          "id": "cybersecurity.permission",
+          "term": "permission",
+          "ipa": "/pərˈmɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "uprawnienie",
+          "definition": "The right you give an app to use something on your device, such as the camera.",
+          "register": "neutralny",
+          "contextPl": "Kontrola dostępu aplikacji",
+          "natural": "access",
+          "forms": "permissions",
+          "collocations": "app permissions; give permission; ask for permission",
+          "synonyms": "access",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Why does a flashlight app need permission to read my contacts?",
+              "pl": "Po co aplikacji do latarki pozwolenie na czytanie moich kontaktów?",
+              "focusEn": "permission",
+              "focusPl": "pozwolenie"
+            },
+            {
+              "en": "I went through every app's permissions on my daughter's phone.",
+              "pl": "Przejrzałem uprawnienia każdej aplikacji w telefonie córki.",
+              "focusEn": "permissions",
+              "focusPl": "uprawnienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "permission",
+            "access"
+          ],
+          "acceptedTranslations": [
+            "uprawnienie",
+            "pozwolenie",
+            "zgoda",
+            "dostęp"
+          ]
+        },
+        {
+          "id": "cybersecurity.vpn",
+          "term": "VPN",
+          "ipa": "/ˌviː piː ˈɛn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "VPN",
+          "definition": "A service that hides your internet activity by sending it through a protected connection.",
+          "register": "specjalistyczny",
+          "contextPl": "Ochrona połączenia",
+          "natural": "",
+          "forms": "VPNs",
+          "collocations": "use a VPN; connect to a VPN; turn on the VPN",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Skrót od „virtual private network”.",
+          "examples": [
+            {
+              "en": "I set up a VPN on my laptop for when I work in cafés.",
+              "pl": "Skonfigurowałem VPN na laptopie na czas pracy w kawiarniach.",
+              "focusEn": "VPN",
+              "focusPl": "VPN"
+            },
+            {
+              "en": "The VPN makes the internet a little slower, but it's worth it.",
+              "pl": "VPN trochę spowalnia internet, ale warto.",
+              "focusEn": "VPN",
+              "focusPl": "VPN"
+            }
+          ],
+          "acceptedAnswers": [
+            "VPN",
+            "virtual private network"
+          ],
+          "acceptedTranslations": [
+            "VPN",
+            "wirtualna sieć prywatna"
+          ]
+        },
+        {
+          "id": "cybersecurity.encrypt",
+          "term": "encrypt",
+          "ipa": "/ɪnˈkrɪpt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zaszyfrować",
+          "definition": "To change information into a secret code so only certain people can read it.",
+          "register": "specjalistyczny",
+          "contextPl": "Szyfrowanie danych",
+          "natural": "",
+          "forms": "encrypted; encrypting",
+          "collocations": "encrypt your files; encrypted messages; end-to-end encrypted",
+          "synonyms": "",
+          "antonyms": "decrypt",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I encrypted the hard drive with all our tax documents.",
+              "pl": "Zaszyfrowałem dysk ze wszystkimi naszymi dokumentami podatkowymi.",
+              "focusEn": "encrypted",
+              "focusPl": "Zaszyfrowałem"
+            },
+            {
+              "en": "Our family chat is encrypted, so nobody else can read it.",
+              "pl": "Nasz rodzinny czat jest szyfrowany, więc nikt inny nie może go czytać.",
+              "focusEn": "encrypted",
+              "focusPl": "szyfrowany"
+            }
+          ],
+          "acceptedAnswers": [
+            "encrypt"
+          ],
+          "acceptedTranslations": [
+            "zaszyfrować",
+            "szyfrować"
+          ]
+        },
+        {
+          "id": "cybersecurity.firewall",
+          "term": "firewall",
+          "ipa": "/ˈfaɪərwɔːl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zapora sieciowa",
+          "definition": "A system that blocks dangerous traffic from getting into a computer or network.",
+          "register": "specjalistyczny",
+          "contextPl": "Ochrona sieci",
+          "natural": "",
+          "forms": "firewalls",
+          "collocations": "turn on the firewall; the firewall blocked it",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku też „firewall”.",
+          "examples": [
+            {
+              "en": "The firewall blocked the game my son tried to download.",
+              "pl": "Zapora sieciowa zablokowała grę, którą próbował pobrać mój syn.",
+              "focusEn": "firewall",
+              "focusPl": "Zapora sieciowa"
+            },
+            {
+              "en": "Check that the firewall is turned on in the router settings.",
+              "pl": "Sprawdź, czy w ustawieniach routera jest włączona zapora sieciowa.",
+              "focusEn": "firewall",
+              "focusPl": "zapora sieciowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "firewall"
+          ],
+          "acceptedTranslations": [
+            "zapora sieciowa",
+            "firewall",
+            "zapora"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity.safe-habits",
+      "namePl": "Bezpieczne nawyki",
+      "scenePl": "Przy obiedzie rozmawiasz z nastoletnią córką o bezpieczeństwie w internecie",
+      "entries": [
+        {
+          "id": "cybersecurity.be-careful",
+          "term": "be careful",
+          "ipa": "/bi ˈkɛrfəl/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "uważać",
+          "definition": "Used to tell someone to pay attention so nothing bad happens.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia i rady",
+          "natural": "watch out",
+          "forms": "",
+          "collocations": "be careful online; be careful what you post",
+          "synonyms": "watch out",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Be careful about who you talk to in online games.",
+              "pl": "Uważaj, z kim rozmawiasz w grach online.",
+              "focusEn": "Be careful",
+              "focusPl": "Uważaj"
+            },
+            {
+              "en": "I told my daughter to be careful with photos she sends to new friends.",
+              "pl": "Powiedziałem córce, żeby uważała na zdjęcia, które wysyła nowym znajomym.",
+              "focusEn": "be careful",
+              "focusPl": "uważała"
+            }
+          ],
+          "acceptedAnswers": [
+            "be careful",
+            "careful",
+            "watch out"
+          ],
+          "acceptedTranslations": [
+            "uważać",
+            "być ostrożnym"
+          ]
+        },
+        {
+          "id": "cybersecurity.trust",
+          "term": "trust",
+          "ipa": "/trʌst/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ufać",
+          "definition": "To believe that someone is honest and will not harm you.",
+          "register": "neutralny",
+          "contextPl": "Zaufanie w internecie",
+          "natural": "",
+          "forms": "trusted; trusting",
+          "collocations": "trust someone; don't trust everything you read",
+          "synonyms": "believe",
+          "antonyms": "distrust",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can't trust everyone who says they're your age online.",
+              "pl": "Nie możesz ufać każdemu, kto w sieci podaje się za twojego rówieśnika.",
+              "focusEn": "trust",
+              "focusPl": "ufać"
+            },
+            {
+              "en": "I trust you, but I still want to know which apps you use.",
+              "pl": "Ufam ci, ale i tak chcę wiedzieć, jakich aplikacji używasz.",
+              "focusEn": "trust",
+              "focusPl": "Ufam"
+            }
+          ],
+          "acceptedAnswers": [
+            "trust"
+          ],
+          "acceptedTranslations": [
+            "ufać",
+            "zaufać",
+            "wierzyć"
+          ]
+        },
+        {
+          "id": "cybersecurity.stranger",
+          "term": "stranger",
+          "ipa": "/ˈstreɪndʒər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "nieznajomy",
+          "definition": "A person you do not know.",
+          "register": "neutralny",
+          "contextPl": "Kontakty z nieznajomymi",
+          "natural": "",
+          "forms": "strangers",
+          "collocations": "talk to strangers; a complete stranger",
+          "synonyms": "",
+          "antonyms": "friend",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Never send photos to strangers you met online.",
+              "pl": "Nigdy nie wysyłaj zdjęć nieznajomym, których poznałaś w sieci.",
+              "focusEn": "strangers",
+              "focusPl": "nieznajomym"
+            },
+            {
+              "en": "My daughter said a stranger kept messaging her in a game chat.",
+              "pl": "Córka powiedziała, że jakiś nieznajomy ciągle do niej pisał na czacie w grze.",
+              "focusEn": "stranger",
+              "focusPl": "nieznajomy"
+            }
+          ],
+          "acceptedAnswers": [
+            "stranger"
+          ],
+          "acceptedTranslations": [
+            "nieznajomy",
+            "obcy",
+            "obca osoba"
+          ]
+        },
+        {
+          "id": "cybersecurity.location",
+          "term": "location",
+          "ipa": "/loʊˈkeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "lokalizacja",
+          "definition": "The place where someone or something is.",
+          "register": "neutralny",
+          "contextPl": "Udostępnianie miejsca pobytu",
+          "natural": "",
+          "forms": "locations",
+          "collocations": "share your location; turn off location; location services",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Turn off your location in that app, because it shows strangers where you live.",
+              "pl": "Wyłącz lokalizację w tej aplikacji, bo pokazuje obcym, gdzie mieszkasz.",
+              "focusEn": "location",
+              "focusPl": "lokalizację"
+            },
+            {
+              "en": "We agreed she'll only share her location with family.",
+              "pl": "Ustaliliśmy, że będzie udostępniać lokalizację tylko rodzinie.",
+              "focusEn": "location",
+              "focusPl": "lokalizację"
+            }
+          ],
+          "acceptedAnswers": [
+            "location"
+          ],
+          "acceptedTranslations": [
+            "lokalizacja",
+            "położenie",
+            "miejsce pobytu"
+          ]
+        },
+        {
+          "id": "cybersecurity.think-twice",
+          "term": "think twice",
+          "ipa": "/ˌθɪŋk ˈtwaɪs/",
+          "pos": "idiom",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zastanowić się dwa razy",
+          "definition": "To think carefully before you do something.",
+          "register": "neutralny",
+          "contextPl": "Rozwaga przed publikacją",
+          "natural": "",
+          "forms": "thought twice",
+          "collocations": "think twice before posting; think twice about it",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Think twice before you post anything you wouldn't show your grandma.",
+              "pl": "Zastanów się dwa razy, zanim wrzucisz coś, czego nie pokazałabyś babci.",
+              "focusEn": "Think twice",
+              "focusPl": "Zastanów się dwa razy"
+            },
+            {
+              "en": "She promised she'd think twice before joining any new group chat.",
+              "pl": "Obiecała, że zastanowi się dwa razy, zanim dołączy do jakiegoś nowego czatu grupowego.",
+              "focusEn": "think twice",
+              "focusPl": "zastanowi się dwa razy"
+            }
+          ],
+          "acceptedAnswers": [
+            "think twice"
+          ],
+          "acceptedTranslations": [
+            "zastanowić się dwa razy",
+            "zastanowić się",
+            "przemyśleć"
+          ]
+        },
+        {
+          "id": "cybersecurity.online-safety",
+          "term": "online safety",
+          "ipa": "/ˌɑːnlaɪn ˈseɪfti/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bezpieczeństwo w internecie",
+          "definition": "Knowing how to protect yourself and your information on the internet.",
+          "register": "neutralny",
+          "contextPl": "Edukacja dzieci i młodzieży",
+          "natural": "internet safety",
+          "forms": "",
+          "collocations": "teach online safety; online safety tips",
+          "synonyms": "internet safety",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Her school had a talk about online safety last week.",
+              "pl": "W zeszłym tygodniu w jej szkole była pogadanka o bezpieczeństwie w internecie.",
+              "focusEn": "online safety",
+              "focusPl": "bezpieczeństwie w internecie"
+            },
+            {
+              "en": "We spent the whole dinner talking about online safety and her new phone.",
+              "pl": "Cały obiad rozmawialiśmy o bezpieczeństwie w sieci i jej nowym telefonie.",
+              "focusEn": "online safety",
+              "focusPl": "bezpieczeństwie w sieci"
+            }
+          ],
+          "acceptedAnswers": [
+            "online safety",
+            "internet safety"
+          ],
+          "acceptedTranslations": [
+            "bezpieczeństwo w internecie",
+            "bezpieczeństwo w sieci",
+            "bezpieczeństwo online"
+          ]
+        },
+        {
+          "id": "cybersecurity.creepy",
+          "term": "creepy",
+          "ipa": "/ˈkriːpi/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "niepokojący",
+          "definition": "Strange in a way that makes you feel uncomfortable or a little afraid.",
+          "register": "potoczny",
+          "contextPl": "Niepokojące zachowania w sieci",
+          "natural": "sketchy",
+          "forms": "creepier; creepiest",
+          "collocations": "a creepy message; that's creepy",
+          "synonyms": "weird; scary",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A guy sent her a creepy message asking where she goes to school.",
+              "pl": "Jakiś facet wysłał jej niepokojącą wiadomość z pytaniem, do której szkoły chodzi.",
+              "focusEn": "creepy",
+              "focusPl": "niepokojącą"
+            },
+            {
+              "en": "If anyone online acts creepy, tell me right away.",
+              "pl": "Jeśli ktoś w sieci zachowuje się dziwnie, od razu mi powiedz.",
+              "focusEn": "creepy",
+              "focusPl": "dziwnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "creepy",
+            "sketchy"
+          ],
+          "acceptedTranslations": [
+            "niepokojący",
+            "dziwny",
+            "przerażający",
+            "creepy"
+          ]
+        },
+        {
+          "id": "cybersecurity.inappropriate",
+          "term": "inappropriate",
+          "ipa": "/ˌɪnəˈproʊpriət/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nieodpowiedni",
+          "definition": "Not suitable or acceptable in a particular situation.",
+          "register": "neutralny",
+          "contextPl": "Treści nieodpowiednie dla dzieci",
+          "natural": "",
+          "forms": "",
+          "collocations": "inappropriate content; inappropriate photos",
+          "synonyms": "unsuitable",
+          "antonyms": "appropriate",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The filter blocks most inappropriate videos, but not all of them.",
+              "pl": "Filtr blokuje większość nieodpowiednich filmików, ale nie wszystkie.",
+              "focusEn": "inappropriate",
+              "focusPl": "nieodpowiednich"
+            },
+            {
+              "en": "Tell me if anyone sends you something inappropriate.",
+              "pl": "Powiedz mi, jeśli ktoś przyśle ci coś nieodpowiedniego.",
+              "focusEn": "inappropriate",
+              "focusPl": "nieodpowiedniego"
+            }
+          ],
+          "acceptedAnswers": [
+            "inappropriate"
+          ],
+          "acceptedTranslations": [
+            "nieodpowiedni",
+            "niestosowny",
+            "niewłaściwy"
+          ]
+        },
+        {
+          "id": "cybersecurity.overshare",
+          "term": "overshare",
+          "ipa": "/ˌoʊvərˈʃɛr/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "zdradzać za dużo o sobie",
+          "definition": "To share too much personal information, especially online.",
+          "register": "potoczny",
+          "contextPl": "Nadmierne dzielenie się prywatnością",
+          "natural": "",
+          "forms": "overshared; oversharing",
+          "collocations": "overshare online; stop oversharing",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Posting your school's name and your class schedule is oversharing.",
+              "pl": "Wrzucanie nazwy szkoły i planu lekcji to już mówienie za dużo o sobie.",
+              "focusEn": "oversharing",
+              "focusPl": "mówienie za dużo o sobie"
+            },
+            {
+              "en": "I think you overshared a little in that video about our vacation.",
+              "pl": "Chyba trochę zdradziłaś za dużo w tym filmiku o naszych wakacjach.",
+              "focusEn": "overshared",
+              "focusPl": "zdradziłaś za dużo"
+            }
+          ],
+          "acceptedAnswers": [
+            "overshare"
+          ],
+          "acceptedTranslations": [
+            "zdradzać za dużo o sobie",
+            "zdradzić za dużo",
+            "mówić za dużo o sobie",
+            "ujawniać za dużo"
+          ]
+        },
+        {
+          "id": "cybersecurity.catfish",
+          "term": "catfish",
+          "ipa": "/ˈkætfɪʃ/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "oszukać fałszywym profilem",
+          "definition": "To trick someone online by pretending to be a different person, often in a relationship.",
+          "register": "potoczny",
+          "contextPl": "Fałszywe tożsamości w sieci",
+          "natural": "",
+          "forms": "catfished; catfishing",
+          "collocations": "get catfished; catfish someone",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik „catfish” to też osoba z fałszywym profilem.",
+          "examples": [
+            {
+              "en": "Her friend got catfished by someone pretending to be a sixteen-year-old boy.",
+              "pl": "Jej koleżanka została oszukana fałszywym profilem kogoś, kto udawał szesnastoletniego chłopaka.",
+              "focusEn": "catfished",
+              "focusPl": "oszukana fałszywym profilem"
+            },
+            {
+              "en": "How do you know he's real and you're not being catfished?",
+              "pl": "Skąd wiesz, że on jest prawdziwy i nikt cię nie nabiera?",
+              "focusEn": "catfished",
+              "focusPl": "nabiera"
+            }
+          ],
+          "acceptedAnswers": [
+            "catfish"
+          ],
+          "acceptedTranslations": [
+            "oszukać fałszywym profilem",
+            "nabrać fałszywym profilem",
+            "nabierać",
+            "oszukiwać fałszywym profilem"
+          ]
+        },
+        {
+          "id": "cybersecurity.digital-footprint",
+          "term": "digital footprint",
+          "ipa": "/ˌdɪdʒɪtəl ˈfʊtprɪnt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "cyfrowy ślad",
+          "definition": "All the information about you that exists on the internet because of what you do online.",
+          "register": "specjalistyczny",
+          "contextPl": "Długofalowe skutki publikacji",
+          "natural": "",
+          "forms": "",
+          "collocations": "leave a digital footprint; your digital footprint",
+          "synonyms": "online presence",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Everything you post becomes part of your digital footprint.",
+              "pl": "Wszystko, co wrzucasz, staje się częścią twojego cyfrowego śladu.",
+              "focusEn": "digital footprint",
+              "focusPl": "cyfrowego śladu"
+            },
+            {
+              "en": "Colleges sometimes look at an applicant's digital footprint.",
+              "pl": "Uczelnie czasem sprawdzają cyfrowy ślad kandydatów.",
+              "focusEn": "digital footprint",
+              "focusPl": "cyfrowy ślad"
+            }
+          ],
+          "acceptedAnswers": [
+            "digital footprint"
+          ],
+          "acceptedTranslations": [
+            "cyfrowy ślad",
+            "ślad cyfrowy",
+            "ślad w sieci"
+          ]
+        }
+      ]
+    }
+  ]
+}

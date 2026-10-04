@@ -1,0 +1,152 @@
+# FluentNOW — specyfikacja projektu XcodeGen.
+# Generowanie na Macu:  brew install xcodegen && cd ios && xcodegen
+# Nie edytuj ręcznie FluentNOW.xcodeproj — zmiany wprowadzaj tutaj i generuj ponownie.
+
+name: FluentNOW
+
+options:
+  minimumXcodeGenVersion: 2.38.0
+  bundleIdPrefix: pl.fluentnow
+  developmentLanguage: pl
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+  indentWidth: 4
+  tabWidth: 4
+  usesTabs: false
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    SWIFT_STRICT_CONCURRENCY: minimal
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    DEAD_CODE_STRIPPING: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: NO
+    SWIFT_EMIT_LOC_STRINGS: NO
+  configs:
+    Debug:
+      SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+      SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+    Release:
+      SWIFT_OPTIMIZATION_LEVEL: "-O"
+      SWIFT_COMPILATION_MODE: wholemodule
+
+packages:
+  FluentKit:
+    path: Packages/FluentKit
+
+targets:
+  FluentNOW:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      # Kod aplikacji i katalog zasobów (Assets.xcassets). Treść JSON jest wyłączona
+      # z tej grupy, bo pliki o tych samych nazwach (np. index.json) w różnych
+      # podkatalogach spłaszczone do bundla powodowałyby konflikt „Multiple commands produce”.
+      - path: FluentNOW
+        excludes:
+          - "Resources/Content"
+          - "Resources/Content/**"
+          - "**/*.md"
+          - "**/.gitkeep"
+          - "**/.DS_Store"
+      # Treść offline jako referencja folderowa (niebieski folder): w bundlu zachowuje
+      # strukturę katalogów → Bundle.main.url(forResource:withExtension:subdirectory: "Content/topics").
+      - path: FluentNOW/Resources/Content
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - package: FluentKit
+        product: FluentKit
+    info:
+      path: FluentNOW/Info.plist
+      # Klucze, których nie da się ustawić przez INFOPLIST_KEY_* (tablice/słowniki).
+      # Xcode scala ten plik z kluczami INFOPLIST_KEY_* z ustawień (GENERATE_INFOPLIST_FILE).
+      properties:
+        CFBundleDevelopmentRegion: pl
+        CFBundleLocalizations:
+          - pl
+        ITSAppUsesNonExemptEncryption: false
+        UIBackgroundModes:
+          - remote-notification
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        CFBundleURLTypes:
+          - CFBundleURLName: pl.fluentnow.app
+            CFBundleURLSchemes:
+              - fluentnow
+    entitlements:
+      path: FluentNOW/FluentNOW.entitlements
+      properties:
+        aps-environment: development
+        com.apple.developer.icloud-container-identifiers:
+          - iCloud.pl.fluentnow.app
+        com.apple.developer.icloud-services:
+          - CloudKit
+    settings:
+      base:
+        PRODUCT_NAME: FluentNOW
+        PRODUCT_BUNDLE_IDENTIFIER: pl.fluentnow.app
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: FluentNOW
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.education
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: "FluentNOW rozpoznaje Twoją wymowę na urządzeniu, gdy sam włączysz ćwiczenie wymowy. Nagrania nie są zapisywane."
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: "Mikrofon jest potrzebny tylko w ćwiczeniu wymowy, gdy naciśniesz „Powiedz to”. Nagranie nie opuszcza urządzenia i nie jest zapisywane."
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS: NO
+        ENABLE_PREVIEWS: YES
+
+  FluentNOWTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: FluentNOWTests
+        optional: true
+        excludes:
+          - "**/*.md"
+    dependencies:
+      - target: FluentNOW
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: pl.fluentnow.app.tests
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1,2"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/FluentNOW.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FluentNOW"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+
+schemes:
+  FluentNOW:
+    build:
+      targets:
+        FluentNOW: all
+        FluentNOWTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: true
+      coverageTargets:
+        - FluentNOW
+      targets:
+        - name: FluentNOWTests
+        - package: FluentKit/FluentKitTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

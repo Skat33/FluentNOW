@@ -1,0 +1,3475 @@
+{
+  "schemaVersion": 1,
+  "id": "hotel",
+  "namePl": "Hotel",
+  "nameEn": "Hotel",
+  "group": "travel",
+  "symbol": "bed.double",
+  "summaryPl": "Rezerwacja, zameldowanie, pokój, usługi hotelowe, wymeldowanie i skargi.",
+  "aliases": [
+    "hotel",
+    "nocleg",
+    "rezerwacja",
+    "pokój hotelowy",
+    "recepcja",
+    "zameldowanie",
+    "motel",
+    "hotel room"
+  ],
+  "categories": [
+    {
+      "id": "hotel.booking",
+      "namePl": "Rezerwacja",
+      "scenePl": "Rozmowa telefoniczna z recepcją hotelu przy rezerwowaniu pokoju na weekend",
+      "entries": [
+        {
+          "id": "hotel.reservation",
+          "term": "reservation",
+          "ipa": "/ˌrezərˈveɪʃn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "rezerwacja",
+          "definition": "An arrangement to keep a room for you on certain dates.",
+          "register": "neutralny",
+          "contextPl": "Rezerwacja noclegu",
+          "natural": "",
+          "forms": "reservations",
+          "collocations": "make a reservation; have a reservation; cancel a reservation",
+          "synonyms": "booking",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to make a reservation for two nights, starting Friday.",
+              "pl": "Chciałbym zrobić rezerwację na dwie noce, od piątku.",
+              "focusEn": "reservation",
+              "focusPl": "rezerwację"
+            },
+            {
+              "en": "The woman on the phone couldn't find my reservation under my last name.",
+              "pl": "Pani przez telefon nie mogła znaleźć mojej rezerwacji na moje nazwisko.",
+              "focusEn": "reservation",
+              "focusPl": "rezerwacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "reservation",
+            "booking"
+          ],
+          "acceptedTranslations": [
+            "rezerwacja"
+          ]
+        },
+        {
+          "id": "hotel.book",
+          "term": "book",
+          "ipa": "/bʊk/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zarezerwować",
+          "definition": "To arrange to have a room, seat or ticket at a particular time.",
+          "register": "neutralny",
+          "contextPl": "Rezerwacja noclegu",
+          "natural": "",
+          "forms": "books – booked – booked",
+          "collocations": "book a room; book online; fully booked",
+          "synonyms": "reserve",
+          "antonyms": "cancel",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to book a room for the weekend of the twelfth.",
+              "pl": "Chciałbym zarezerwować pokój na weekend dwunastego.",
+              "focusEn": "book",
+              "focusPl": "zarezerwować"
+            },
+            {
+              "en": "If you book directly with us, breakfast is included.",
+              "pl": "Jeśli zarezerwuje pan bezpośrednio u nas, śniadanie jest wliczone.",
+              "focusEn": "book",
+              "focusPl": "zarezerwuje"
+            }
+          ],
+          "acceptedAnswers": [
+            "book",
+            "reserve"
+          ],
+          "acceptedTranslations": [
+            "zarezerwować",
+            "rezerwować"
+          ]
+        },
+        {
+          "id": "hotel.available",
+          "term": "available",
+          "ipa": "/əˈveɪləbl/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wolny, dostępny",
+          "definition": "Free to be used or booked.",
+          "register": "neutralny",
+          "contextPl": "Rezerwacja noclegu",
+          "natural": "",
+          "forms": "",
+          "collocations": "rooms available; available dates",
+          "synonyms": "free",
+          "antonyms": "booked",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have any rooms available for Saturday night?",
+              "pl": "Czy macie jakieś wolne pokoje na sobotnią noc?",
+              "focusEn": "available",
+              "focusPl": "wolne"
+            },
+            {
+              "en": "The only room still available that weekend was a suite.",
+              "pl": "Jedynym pokojem nadal dostępnym w ten weekend był apartament.",
+              "focusEn": "available",
+              "focusPl": "dostępnym"
+            }
+          ],
+          "acceptedAnswers": [
+            "available"
+          ],
+          "acceptedTranslations": [
+            "wolny, dostępny",
+            "wolny",
+            "dostępny"
+          ]
+        },
+        {
+          "id": "hotel.single-room",
+          "term": "single room",
+          "ipa": "/ˌsɪŋɡl ˈruːm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pokój jednoosobowy",
+          "definition": "A hotel room for one person.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje pokoi",
+          "natural": "",
+          "forms": "single rooms",
+          "collocations": "book a single room",
+          "synonyms": "single",
+          "antonyms": "double room",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A single room is fine, I'm traveling alone.",
+              "pl": "Pokój jednoosobowy wystarczy, podróżuję sam.",
+              "focusEn": "single room",
+              "focusPl": "Pokój jednoosobowy"
+            },
+            {
+              "en": "How much is a single room with a private bathroom?",
+              "pl": "Ile kosztuje pokój jednoosobowy z własną łazienką?",
+              "focusEn": "single room",
+              "focusPl": "pokój jednoosobowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "single room"
+          ],
+          "acceptedTranslations": [
+            "pokój jednoosobowy",
+            "jedynka"
+          ]
+        },
+        {
+          "id": "hotel.double-room",
+          "term": "double room",
+          "ipa": "/ˌdʌbl ˈruːm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pokój dwuosobowy",
+          "definition": "A hotel room for two people, usually with one big bed.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje pokoi",
+          "natural": "",
+          "forms": "double rooms",
+          "collocations": "book a double room",
+          "synonyms": "double",
+          "antonyms": "single room",
+          "notePl": "W USA często pyta się konkretnie o łóżko: „one king or two queens”.",
+          "examples": [
+            {
+              "en": "We'd like a double room for our anniversary weekend.",
+              "pl": "Chcielibyśmy pokój dwuosobowy na weekend rocznicowy.",
+              "focusEn": "double room",
+              "focusPl": "pokój dwuosobowy"
+            },
+            {
+              "en": "Is the double room facing the street or the garden?",
+              "pl": "Czy pokój dwuosobowy wychodzi na ulicę czy na ogród?",
+              "focusEn": "double room",
+              "focusPl": "pokój dwuosobowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "double room"
+          ],
+          "acceptedTranslations": [
+            "pokój dwuosobowy",
+            "dwójka"
+          ]
+        },
+        {
+          "id": "hotel.suite",
+          "term": "suite",
+          "ipa": "/swiːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "apartament",
+          "definition": "A large, expensive set of rooms in a hotel.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje pokoi",
+          "natural": "",
+          "forms": "suites",
+          "collocations": "honeymoon suite; junior suite",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Wymowa jak „sweet”.",
+          "examples": [
+            {
+              "en": "For our honeymoon, we booked a suite with a view of the ocean.",
+              "pl": "Na miesiąc miodowy zarezerwowaliśmy apartament z widokiem na ocean.",
+              "focusEn": "suite",
+              "focusPl": "apartament"
+            },
+            {
+              "en": "The suite has a separate living room and a small kitchen.",
+              "pl": "Apartament ma osobny salon i małą kuchnię.",
+              "focusEn": "suite",
+              "focusPl": "Apartament"
+            }
+          ],
+          "acceptedAnswers": [
+            "suite"
+          ],
+          "acceptedTranslations": [
+            "apartament",
+            "apartament hotelowy"
+          ]
+        },
+        {
+          "id": "hotel.rate",
+          "term": "rate",
+          "ipa": "/reɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stawka",
+          "definition": "The price a hotel charges for a room per night.",
+          "register": "neutralny",
+          "contextPl": "Ceny noclegu",
+          "natural": "",
+          "forms": "rates",
+          "collocations": "room rate; nightly rate; weekend rate; best rate",
+          "synonyms": "price",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What's your rate for a double room on weekdays?",
+              "pl": "Jaka jest wasza cena za pokój dwuosobowy w dni powszednie?",
+              "focusEn": "rate",
+              "focusPl": "cena"
+            },
+            {
+              "en": "The rate goes up a lot during the summer festival.",
+              "pl": "Stawka mocno rośnie w czasie letniego festiwalu.",
+              "focusEn": "rate",
+              "focusPl": "Stawka"
+            }
+          ],
+          "acceptedAnswers": [
+            "rate",
+            "price"
+          ],
+          "acceptedTranslations": [
+            "stawka",
+            "cena",
+            "cena za noc"
+          ]
+        },
+        {
+          "id": "hotel.per-night",
+          "term": "per night",
+          "ipa": "/pər ˈnaɪt/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "za noc",
+          "definition": "For each night you stay.",
+          "register": "neutralny",
+          "contextPl": "Ceny noclegu",
+          "natural": "",
+          "forms": "",
+          "collocations": "a hundred dollars per night",
+          "synonyms": "a night",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The room costs a hundred and twenty dollars per night, plus tax.",
+              "pl": "Pokój kosztuje sto dwadzieścia dolarów za noc plus podatek.",
+              "focusEn": "per night",
+              "focusPl": "za noc"
+            },
+            {
+              "en": "Parking is twenty dollars per night if you want to leave your car here.",
+              "pl": "Parking kosztuje dwadzieścia dolarów za noc, jeśli chce pan zostawić tu samochód.",
+              "focusEn": "per night",
+              "focusPl": "za noc"
+            }
+          ],
+          "acceptedAnswers": [
+            "per night",
+            "a night"
+          ],
+          "acceptedTranslations": [
+            "za noc",
+            "za dobę"
+          ]
+        },
+        {
+          "id": "hotel.fully-booked",
+          "term": "fully booked",
+          "ipa": "/ˌfʊli ˈbʊkt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "w pełni zarezerwowany",
+          "definition": "Having no free rooms left.",
+          "register": "neutralny",
+          "contextPl": "Rezerwacja noclegu",
+          "natural": "",
+          "forms": "",
+          "collocations": "be fully booked",
+          "synonyms": "sold out, full",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, we're fully booked that weekend because of the wedding.",
+              "pl": "Przykro mi, w ten weekend jesteśmy w pełni zarezerwowani z powodu wesela.",
+              "focusEn": "fully booked",
+              "focusPl": "w pełni zarezerwowani"
+            },
+            {
+              "en": "Every hotel near the stadium was fully booked for the game.",
+              "pl": "Każdy hotel w pobliżu stadionu był w pełni zarezerwowany na czas meczu.",
+              "focusEn": "fully booked",
+              "focusPl": "w pełni zarezerwowany"
+            }
+          ],
+          "acceptedAnswers": [
+            "fully booked",
+            "sold out",
+            "booked up"
+          ],
+          "acceptedTranslations": [
+            "w pełni zarezerwowany",
+            "pełny",
+            "brak wolnych miejsc"
+          ]
+        },
+        {
+          "id": "hotel.vacancy",
+          "term": "vacancy",
+          "ipa": "/ˈveɪkənsi/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wolny pokój",
+          "definition": "A room that is free in a hotel or motel.",
+          "register": "neutralny",
+          "contextPl": "Rezerwacja noclegu",
+          "natural": "",
+          "forms": "vacancies",
+          "collocations": "no vacancy; have a vacancy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na szyldach moteli w USA: „Vacancy” / „No Vacancy”.",
+          "examples": [
+            {
+              "en": "The motel sign said \"No Vacancy,\" so we kept driving.",
+              "pl": "Na szyldzie motelu było napisane „Brak wolnych pokoi”, więc pojechaliśmy dalej.",
+              "focusEn": "Vacancy",
+              "focusPl": "wolnych pokoi"
+            },
+            {
+              "en": "Do you have a vacancy for tonight, or are you full?",
+              "pl": "Macie wolny pokój na dzisiejszą noc, czy wszystko zajęte?",
+              "focusEn": "vacancy",
+              "focusPl": "wolny pokój"
+            }
+          ],
+          "acceptedAnswers": [
+            "vacancy"
+          ],
+          "acceptedTranslations": [
+            "wolny pokój",
+            "wolne miejsce"
+          ]
+        },
+        {
+          "id": "hotel.nonrefundable",
+          "term": "nonrefundable",
+          "ipa": "/ˌnɑːnrɪˈfʌndəbl/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bezzwrotny",
+          "definition": "Not giving your money back if you cancel.",
+          "register": "neutralny",
+          "contextPl": "Warunki rezerwacji",
+          "natural": "",
+          "forms": "",
+          "collocations": "nonrefundable rate; nonrefundable booking",
+          "synonyms": "",
+          "antonyms": "refundable",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cheaper rate is nonrefundable, so you can't cancel it.",
+              "pl": "Tańsza stawka jest bezzwrotna, więc nie można jej anulować.",
+              "focusEn": "nonrefundable",
+              "focusPl": "bezzwrotna"
+            },
+            {
+              "en": "I booked a nonrefundable room and then my flight got canceled.",
+              "pl": "Zarezerwowałem bezzwrotny pokój, a potem odwołano mi lot.",
+              "focusEn": "nonrefundable",
+              "focusPl": "bezzwrotny"
+            }
+          ],
+          "acceptedAnswers": [
+            "nonrefundable"
+          ],
+          "acceptedTranslations": [
+            "bezzwrotny",
+            "bez możliwości zwrotu"
+          ]
+        },
+        {
+          "id": "hotel.cancellation-policy",
+          "term": "cancellation policy",
+          "ipa": "/ˌkænsəˈleɪʃn ˌpɑːləsi/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zasady anulowania rezerwacji",
+          "definition": "The rules about canceling a booking and getting your money back.",
+          "register": "formalny",
+          "contextPl": "Warunki rezerwacji",
+          "natural": "",
+          "forms": "cancellation policies",
+          "collocations": "free cancellation; strict cancellation policy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What's your cancellation policy if our plans change?",
+              "pl": "Jakie są wasze zasady anulowania rezerwacji, gdyby nasze plany się zmieniły?",
+              "focusEn": "cancellation policy",
+              "focusPl": "zasady anulowania rezerwacji"
+            },
+            {
+              "en": "The cancellation policy says we can cancel for free until 48 hours before arrival.",
+              "pl": "Zasady anulowania rezerwacji mówią, że możemy odwołać za darmo do 48 godzin przed przyjazdem.",
+              "focusEn": "cancellation policy",
+              "focusPl": "Zasady anulowania rezerwacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "cancellation policy"
+          ],
+          "acceptedTranslations": [
+            "zasady anulowania rezerwacji",
+            "warunki anulowania"
+          ]
+        },
+        {
+          "id": "hotel.deposit",
+          "term": "deposit",
+          "ipa": "/dɪˈpɑːzɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zaliczka, kaucja",
+          "definition": "Money you pay in advance to keep a reservation or cover damage.",
+          "register": "neutralny",
+          "contextPl": "Warunki rezerwacji",
+          "natural": "",
+          "forms": "deposits",
+          "collocations": "pay a deposit; security deposit; refundable deposit",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Security deposit” to kaucja zwracana przy wymeldowaniu.",
+          "examples": [
+            {
+              "en": "We need a fifty-dollar deposit to hold the room.",
+              "pl": "Potrzebujemy pięćdziesięciu dolarów zaliczki, żeby zatrzymać pokój.",
+              "focusEn": "deposit",
+              "focusPl": "zaliczki"
+            },
+            {
+              "en": "The deposit will be returned to your card after you check out.",
+              "pl": "Kaucja zostanie zwrócona na pana kartę po wymeldowaniu.",
+              "focusEn": "deposit",
+              "focusPl": "Kaucja"
+            }
+          ],
+          "acceptedAnswers": [
+            "deposit"
+          ],
+          "acceptedTranslations": [
+            "zaliczka, kaucja",
+            "zadatek",
+            "kaucja"
+          ]
+        },
+        {
+          "id": "hotel.guest",
+          "term": "guest",
+          "ipa": "/ɡest/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "gość",
+          "definition": "A person who is staying at a hotel.",
+          "register": "neutralny",
+          "contextPl": "Goście hotelowi",
+          "natural": "",
+          "forms": "guests",
+          "collocations": "hotel guest; number of guests; guests only",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How many guests will be staying in the room?",
+              "pl": "Ilu gości będzie mieszkać w pokoju?",
+              "focusEn": "guests",
+              "focusPl": "gości"
+            },
+            {
+              "en": "The pool is for hotel guests only.",
+              "pl": "Basen jest wyłącznie dla gości hotelowych.",
+              "focusEn": "guests",
+              "focusPl": "gości"
+            }
+          ],
+          "acceptedAnswers": [
+            "guest"
+          ],
+          "acceptedTranslations": [
+            "gość"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hotel.check-in-out",
+      "namePl": "Zameldowanie i wymeldowanie",
+      "scenePl": "Recepcja w hotelowym lobby: przyjazd wieczorem z walizkami i wyjazd rano",
+      "entries": [
+        {
+          "id": "hotel.front-desk",
+          "term": "front desk",
+          "ipa": "/ˌfrʌnt ˈdesk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "recepcja",
+          "definition": "The desk in a hotel where guests check in, check out and ask for help.",
+          "register": "neutralny",
+          "contextPl": "Recepcja hotelowa",
+          "natural": "",
+          "forms": "front desks",
+          "collocations": "call the front desk; at the front desk; front desk staff",
+          "synonyms": "reception",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you need anything, just call the front desk by pressing zero.",
+              "pl": "Jeśli będzie pan czegoś potrzebował, proszę zadzwonić do recepcji, wciskając zero.",
+              "focusEn": "front desk",
+              "focusPl": "recepcji"
+            },
+            {
+              "en": "We left our bags at the front desk and went out for dinner.",
+              "pl": "Zostawiliśmy torby w recepcji i wyszliśmy na kolację.",
+              "focusEn": "front desk",
+              "focusPl": "recepcji"
+            }
+          ],
+          "acceptedAnswers": [
+            "front desk",
+            "reception",
+            "reception desk"
+          ],
+          "acceptedTranslations": [
+            "recepcja"
+          ]
+        },
+        {
+          "id": "hotel.check-in",
+          "term": "check in",
+          "ipa": "/ˌtʃek ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zameldować się",
+          "definition": "To arrive at a hotel and get the key to your room.",
+          "register": "neutralny",
+          "contextPl": "Zameldowanie",
+          "natural": "",
+          "forms": "checks in – checked in – checked in",
+          "collocations": "check in at 3 p.m.; check in early; check into a hotel",
+          "synonyms": "",
+          "antonyms": "check out",
+          "notePl": "„Check into a hotel” – zameldować się w hotelu.",
+          "examples": [
+            {
+              "en": "Hi, we'd like to check in, the reservation is under Nowak.",
+              "pl": "Dzień dobry, chcielibyśmy się zameldować, rezerwacja jest na nazwisko Nowak.",
+              "focusEn": "check in",
+              "focusPl": "zameldować"
+            },
+            {
+              "en": "You can check in any time after three p.m.",
+              "pl": "Może się pan zameldować w dowolnym momencie po piętnastej.",
+              "focusEn": "check in",
+              "focusPl": "zameldować"
+            }
+          ],
+          "acceptedAnswers": [
+            "check in"
+          ],
+          "acceptedTranslations": [
+            "zameldować się",
+            "meldować się"
+          ]
+        },
+        {
+          "id": "hotel.check-out",
+          "term": "check out",
+          "ipa": "/ˌtʃek ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wymeldować się",
+          "definition": "To pay your bill and leave a hotel at the end of your stay.",
+          "register": "neutralny",
+          "contextPl": "Wymeldowanie",
+          "natural": "",
+          "forms": "checks out – checked out – checked out",
+          "collocations": "check out by 11; check out early",
+          "synonyms": "",
+          "antonyms": "check in",
+          "notePl": "Rzeczownik: „checkout” (np. checkout time).",
+          "examples": [
+            {
+              "en": "We need to check out by eleven, so let's pack tonight.",
+              "pl": "Musimy się wymeldować do jedenastej, więc spakujmy się wieczorem.",
+              "focusEn": "check out",
+              "focusPl": "wymeldować"
+            },
+            {
+              "en": "I checked out at the front desk and asked them to call a taxi.",
+              "pl": "Wymeldowałem się w recepcji i poprosiłem o wezwanie taksówki.",
+              "focusEn": "checked out",
+              "focusPl": "Wymeldowałem się"
+            }
+          ],
+          "acceptedAnswers": [
+            "check out"
+          ],
+          "acceptedTranslations": [
+            "wymeldować się",
+            "wymeldowywać się"
+          ]
+        },
+        {
+          "id": "hotel.key-card",
+          "term": "key card",
+          "ipa": "/ˈkiː ˌkɑːrd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "karta do pokoju",
+          "definition": "A plastic card that opens the door of your hotel room.",
+          "register": "neutralny",
+          "contextPl": "Zameldowanie",
+          "natural": "",
+          "forms": "key cards",
+          "collocations": "room key card; my key card doesn't work",
+          "synonyms": "room key",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Here are your two key cards, you're in room 512.",
+              "pl": "Oto państwa dwie karty do pokoju, mają państwo pokój 512.",
+              "focusEn": "key cards",
+              "focusPl": "karty do pokoju"
+            },
+            {
+              "en": "My key card stopped working, so I had to go back down to the lobby.",
+              "pl": "Moja karta do pokoju przestała działać, więc musiałem zjechać z powrotem do lobby.",
+              "focusEn": "key card",
+              "focusPl": "karta do pokoju"
+            }
+          ],
+          "acceptedAnswers": [
+            "key card",
+            "room key",
+            "keycard"
+          ],
+          "acceptedTranslations": [
+            "karta do pokoju",
+            "karta-klucz",
+            "klucz do pokoju"
+          ]
+        },
+        {
+          "id": "hotel.room-number",
+          "term": "room number",
+          "ipa": "/ˈruːm ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "numer pokoju",
+          "definition": "The number of your hotel room.",
+          "register": "neutralny",
+          "contextPl": "Zameldowanie",
+          "natural": "",
+          "forms": "room numbers",
+          "collocations": "What's your room number?",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The clerk wrote the room number on the little card holder.",
+              "pl": "Recepcjonista zapisał numer pokoju na małym etui na kartę.",
+              "focusEn": "room number",
+              "focusPl": "numer pokoju"
+            },
+            {
+              "en": "Could I have your room number and last name, please?",
+              "pl": "Czy mogę prosić o numer pokoju i nazwisko?",
+              "focusEn": "room number",
+              "focusPl": "numer pokoju"
+            }
+          ],
+          "acceptedAnswers": [
+            "room number"
+          ],
+          "acceptedTranslations": [
+            "numer pokoju"
+          ]
+        },
+        {
+          "id": "hotel.lobby",
+          "term": "lobby",
+          "ipa": "/ˈlɑːbi/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "hol, lobby",
+          "definition": "The large entrance hall of a hotel.",
+          "register": "neutralny",
+          "contextPl": "Recepcja hotelowa",
+          "natural": "",
+          "forms": "lobbies",
+          "collocations": "hotel lobby; wait in the lobby; meet in the lobby",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's meet in the lobby at eight and go to breakfast together.",
+              "pl": "Spotkajmy się w holu o ósmej i chodźmy razem na śniadanie.",
+              "focusEn": "lobby",
+              "focusPl": "holu"
+            },
+            {
+              "en": "The lobby was full of people waiting to check in.",
+              "pl": "Lobby było pełne ludzi czekających na zameldowanie.",
+              "focusEn": "lobby",
+              "focusPl": "Lobby"
+            }
+          ],
+          "acceptedAnswers": [
+            "lobby"
+          ],
+          "acceptedTranslations": [
+            "hol, lobby",
+            "hol hotelowy"
+          ]
+        },
+        {
+          "id": "hotel.elevator",
+          "term": "elevator",
+          "ipa": "/ˈelɪveɪtər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "winda",
+          "definition": "A machine that carries people up and down between floors.",
+          "register": "neutralny",
+          "contextPl": "Poruszanie się po hotelu",
+          "natural": "",
+          "forms": "elevators",
+          "collocations": "take the elevator; elevator to the fifth floor",
+          "synonyms": "lift",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The elevators are on your left, past the gift shop.",
+              "pl": "Windy są po lewej stronie, za sklepem z pamiątkami.",
+              "focusEn": "elevators",
+              "focusPl": "Windy"
+            },
+            {
+              "en": "We took the elevator to the twelfth floor with all our bags.",
+              "pl": "Wjechaliśmy windą na dwunaste piętro ze wszystkimi bagażami.",
+              "focusEn": "elevator",
+              "focusPl": "windą"
+            }
+          ],
+          "acceptedAnswers": [
+            "elevator",
+            "lift"
+          ],
+          "acceptedTranslations": [
+            "winda"
+          ]
+        },
+        {
+          "id": "hotel.floor",
+          "term": "floor",
+          "ipa": "/flɔːr/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "piętro",
+          "definition": "One of the levels in a building.",
+          "register": "neutralny",
+          "contextPl": "Poruszanie się po hotelu",
+          "natural": "",
+          "forms": "floors",
+          "collocations": "on the fifth floor; top floor; first floor",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA „first floor” to parter!",
+          "examples": [
+            {
+              "en": "Your room is on the fourth floor, at the end of the hall.",
+              "pl": "Pana pokój jest na czwartym piętrze, na końcu korytarza.",
+              "focusEn": "floor",
+              "focusPl": "piętrze"
+            },
+            {
+              "en": "Could we get a room on a higher floor? The street is noisy.",
+              "pl": "Czy moglibyśmy dostać pokój na wyższym piętrze? Ulica jest głośna.",
+              "focusEn": "floor",
+              "focusPl": "piętrze"
+            }
+          ],
+          "acceptedAnswers": [
+            "floor"
+          ],
+          "acceptedTranslations": [
+            "piętro",
+            "kondygnacja"
+          ]
+        },
+        {
+          "id": "hotel.checkout",
+          "term": "checkout",
+          "ipa": "/ˈtʃekaʊt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wymeldowanie",
+          "definition": "The time or process of leaving your hotel room and paying.",
+          "register": "neutralny",
+          "contextPl": "Wymeldowanie",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "checkout time; late checkout; express checkout",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik: „check out” – osobno.",
+          "examples": [
+            {
+              "en": "Checkout is at eleven, but you can leave your bags with us.",
+              "pl": "Wymeldowanie jest o jedenastej, ale może pan zostawić u nas bagaż.",
+              "focusEn": "Checkout",
+              "focusPl": "Wymeldowanie"
+            },
+            {
+              "en": "Is it possible to get a late checkout tomorrow?",
+              "pl": "Czy jutro byłoby możliwe późniejsze wymeldowanie?",
+              "focusEn": "checkout",
+              "focusPl": "wymeldowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "checkout",
+            "check-out"
+          ],
+          "acceptedTranslations": [
+            "wymeldowanie",
+            "wymeldowanie się"
+          ]
+        },
+        {
+          "id": "hotel.bill",
+          "term": "bill",
+          "ipa": "/bɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "rachunek",
+          "definition": "A list of what you must pay for your stay.",
+          "register": "neutralny",
+          "contextPl": "Wymeldowanie",
+          "natural": "",
+          "forms": "bills",
+          "collocations": "pay the bill; your final bill; put it on the bill",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W hotelu mówi się też „folio” (specjalistycznie).",
+          "examples": [
+            {
+              "en": "Could you print a copy of my bill for my company?",
+              "pl": "Mogłaby pani wydrukować kopię mojego rachunku dla mojej firmy?",
+              "focusEn": "bill",
+              "focusPl": "rachunku"
+            },
+            {
+              "en": "There's a charge on the bill for the minibar, but we didn't use it.",
+              "pl": "Na rachunku jest opłata za minibar, a my z niego nie korzystaliśmy.",
+              "focusEn": "bill",
+              "focusPl": "rachunku"
+            }
+          ],
+          "acceptedAnswers": [
+            "bill",
+            "folio"
+          ],
+          "acceptedTranslations": [
+            "rachunek"
+          ]
+        },
+        {
+          "id": "hotel.charge",
+          "term": "charge",
+          "ipa": "/tʃɑːrdʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "opłata",
+          "definition": "An amount of money that you must pay for something.",
+          "register": "neutralny",
+          "contextPl": "Wymeldowanie",
+          "natural": "",
+          "forms": "charges",
+          "collocations": "extra charge; parking charge; no charge",
+          "synonyms": "fee",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's an extra charge of fifteen dollars for a rollaway bed.",
+              "pl": "Za dostawkę jest dodatkowa opłata w wysokości piętnastu dolarów.",
+              "focusEn": "charge",
+              "focusPl": "opłata"
+            },
+            {
+              "en": "I don't recognize this charge for room service on Tuesday.",
+              "pl": "Nie rozpoznaję tej opłaty za obsługę pokojową we wtorek.",
+              "focusEn": "charge",
+              "focusPl": "opłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "charge",
+            "fee"
+          ],
+          "acceptedTranslations": [
+            "opłata",
+            "należność",
+            "koszt"
+          ]
+        },
+        {
+          "id": "hotel.incidentals",
+          "term": "incidentals",
+          "ipa": "/ˌɪnsɪˈdentlz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dodatkowe wydatki",
+          "definition": "Small extra costs during your stay, like snacks or phone calls.",
+          "register": "specjalistyczny",
+          "contextPl": "Wymeldowanie",
+          "natural": "",
+          "forms": "(liczba mnoga)",
+          "collocations": "hold for incidentals; deposit for incidentals",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Hotele w USA blokują na karcie kwotę „for incidentals” przy zameldowaniu.",
+          "examples": [
+            {
+              "en": "We'll put a hold of a hundred dollars on your card for incidentals.",
+              "pl": "Zablokujemy na pana karcie sto dolarów na dodatkowe wydatki.",
+              "focusEn": "incidentals",
+              "focusPl": "dodatkowe wydatki"
+            },
+            {
+              "en": "The hold for incidentals was released two days after we checked out.",
+              "pl": "Blokada na dodatkowe wydatki została zdjęta dwa dni po naszym wymeldowaniu.",
+              "focusEn": "incidentals",
+              "focusPl": "dodatkowe wydatki"
+            }
+          ],
+          "acceptedAnswers": [
+            "incidentals"
+          ],
+          "acceptedTranslations": [
+            "dodatkowe wydatki",
+            "drobne wydatki",
+            "wydatki dodatkowe"
+          ]
+        },
+        {
+          "id": "hotel.bellhop",
+          "term": "bellhop",
+          "ipa": "/ˈbelhɑːp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "boy hotelowy",
+          "definition": "A hotel worker who carries guests' bags to their rooms.",
+          "register": "neutralny",
+          "contextPl": "Obsługa hotelu",
+          "natural": "",
+          "forms": "bellhops",
+          "collocations": "tip the bellhop",
+          "synonyms": "bellman, porter",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bellhop brought our suitcases up and showed us the room.",
+              "pl": "Boy hotelowy wniósł nasze walizki na górę i pokazał nam pokój.",
+              "focusEn": "bellhop",
+              "focusPl": "Boy hotelowy"
+            },
+            {
+              "en": "Do you usually tip the bellhop here, and how much?",
+              "pl": "Czy zwykle daje się tu napiwek boyowi hotelowemu i ile?",
+              "focusEn": "bellhop",
+              "focusPl": "boyowi hotelowemu"
+            }
+          ],
+          "acceptedAnswers": [
+            "bellhop",
+            "bellman",
+            "porter"
+          ],
+          "acceptedTranslations": [
+            "boy hotelowy",
+            "bagażowy"
+          ]
+        },
+        {
+          "id": "hotel.luggage-storage",
+          "term": "luggage storage",
+          "ipa": "/ˈlʌɡɪdʒ ˌstɔːrɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przechowalnia bagażu",
+          "definition": "A place where a hotel keeps your bags for a few hours.",
+          "register": "neutralny",
+          "contextPl": "Recepcja hotelowa",
+          "natural": "",
+          "forms": "",
+          "collocations": "free luggage storage; use luggage storage",
+          "synonyms": "bag storage",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After checkout, we left our suitcases in luggage storage and went sightseeing.",
+              "pl": "Po wymeldowaniu zostawiliśmy walizki w przechowalni bagażu i poszliśmy zwiedzać.",
+              "focusEn": "luggage storage",
+              "focusPl": "przechowalni bagażu"
+            },
+            {
+              "en": "Does the hotel have luggage storage for guests arriving early?",
+              "pl": "Czy hotel ma przechowalnię bagażu dla gości, którzy przyjeżdżają wcześniej?",
+              "focusEn": "luggage storage",
+              "focusPl": "przechowalnię bagażu"
+            }
+          ],
+          "acceptedAnswers": [
+            "luggage storage",
+            "bag storage",
+            "baggage storage"
+          ],
+          "acceptedTranslations": [
+            "przechowalnia bagażu",
+            "przechowanie bagażu"
+          ]
+        },
+        {
+          "id": "hotel.early-check-in",
+          "term": "early check-in",
+          "ipa": "/ˌɜːrli ˈtʃek ɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wcześniejsze zameldowanie",
+          "definition": "Getting into your room before the usual check-in time.",
+          "register": "neutralny",
+          "contextPl": "Zameldowanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "request early check-in; early check-in fee",
+          "synonyms": "",
+          "antonyms": "late checkout",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our flight lands at seven a.m., so can we get early check-in?",
+              "pl": "Nasz samolot ląduje o siódmej rano, czy możemy dostać wcześniejsze zameldowanie?",
+              "focusEn": "early check-in",
+              "focusPl": "wcześniejsze zameldowanie"
+            },
+            {
+              "en": "The clerk offered us early check-in for an extra thirty dollars.",
+              "pl": "Recepcjonista zaproponował nam wcześniejsze zameldowanie za dodatkowe trzydzieści dolarów.",
+              "focusEn": "early check-in",
+              "focusPl": "wcześniejsze zameldowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "early check-in"
+          ],
+          "acceptedTranslations": [
+            "wcześniejsze zameldowanie",
+            "wcześniejsze zakwaterowanie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hotel.room",
+      "namePl": "Pokój hotelowy",
+      "scenePl": "Pierwsze minuty w pokoju hotelowym po wejściu z walizkami",
+      "entries": [
+        {
+          "id": "hotel.room",
+          "term": "room",
+          "ipa": "/ruːm/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pokój",
+          "definition": "A space in a hotel where guests sleep and stay.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "rooms",
+          "collocations": "hotel room; nonsmoking room; room with a view",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our room was small, but it was clean and quiet.",
+              "pl": "Nasz pokój był mały, ale czysty i cichy.",
+              "focusEn": "room",
+              "focusPl": "pokój"
+            },
+            {
+              "en": "The first thing I did in the room was open the curtains.",
+              "pl": "Pierwsze, co zrobiłem w pokoju, to rozsunąłem zasłony.",
+              "focusEn": "room",
+              "focusPl": "pokoju"
+            }
+          ],
+          "acceptedAnswers": [
+            "room"
+          ],
+          "acceptedTranslations": [
+            "pokój",
+            "pokój hotelowy"
+          ]
+        },
+        {
+          "id": "hotel.bed",
+          "term": "bed",
+          "ipa": "/bed/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "łóżko",
+          "definition": "A piece of furniture for sleeping on.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "beds",
+          "collocations": "king bed; two queen beds; make the bed",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bed was so comfortable that I didn't want to get up.",
+              "pl": "Łóżko było tak wygodne, że nie chciało mi się wstawać.",
+              "focusEn": "bed",
+              "focusPl": "Łóżko"
+            },
+            {
+              "en": "We asked for two beds, but the room has only one big bed.",
+              "pl": "Prosiliśmy o dwa łóżka, a w pokoju jest tylko jedno duże łóżko.",
+              "focusEn": "bed",
+              "focusPl": "łóżko"
+            }
+          ],
+          "acceptedAnswers": [
+            "bed"
+          ],
+          "acceptedTranslations": [
+            "łóżko"
+          ]
+        },
+        {
+          "id": "hotel.king-size-bed",
+          "term": "king-size bed",
+          "ipa": "/ˌkɪŋ saɪz ˈbed/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "łóżko typu king-size",
+          "definition": "A very large bed for two people.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "king-size beds",
+          "collocations": "one king-size bed; king bed",
+          "synonyms": "king bed",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We booked a room with one king-size bed and a sofa.",
+              "pl": "Zarezerwowaliśmy pokój z jednym łóżkiem typu king-size i sofą.",
+              "focusEn": "king-size bed",
+              "focusPl": "łóżkiem typu king-size"
+            },
+            {
+              "en": "The king-size bed took up almost the whole room.",
+              "pl": "Łóżko typu king-size zajmowało prawie cały pokój.",
+              "focusEn": "king-size bed",
+              "focusPl": "Łóżko typu king-size"
+            }
+          ],
+          "acceptedAnswers": [
+            "king-size bed",
+            "king bed",
+            "king"
+          ],
+          "acceptedTranslations": [
+            "łóżko typu king-size",
+            "duże łóżko małżeńskie"
+          ]
+        },
+        {
+          "id": "hotel.towel",
+          "term": "towel",
+          "ipa": "/ˈtaʊəl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ręcznik",
+          "definition": "A piece of cloth that you use to dry your body.",
+          "register": "neutralny",
+          "contextPl": "Łazienka hotelowa",
+          "natural": "",
+          "forms": "towels",
+          "collocations": "clean towels; bath towel; extra towels",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could we get two more towels sent up to our room?",
+              "pl": "Czy możemy prosić o przyniesienie do pokoju dwóch dodatkowych ręczników?",
+              "focusEn": "towels",
+              "focusPl": "ręczników"
+            },
+            {
+              "en": "Leave your towel on the floor if you want a fresh one.",
+              "pl": "Zostaw ręcznik na podłodze, jeśli chcesz dostać świeży.",
+              "focusEn": "towel",
+              "focusPl": "ręcznik"
+            }
+          ],
+          "acceptedAnswers": [
+            "towel"
+          ],
+          "acceptedTranslations": [
+            "ręcznik"
+          ]
+        },
+        {
+          "id": "hotel.air-conditioning",
+          "term": "air conditioning",
+          "ipa": "/ˈer kənˌdɪʃənɪŋ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "klimatyzacja",
+          "definition": "A system that keeps the air in a room cool.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "turn on the air conditioning; the air conditioning is broken",
+          "synonyms": "AC, A/C",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The air conditioning was so loud that it woke me up at night.",
+              "pl": "Klimatyzacja była tak głośna, że obudziła mnie w nocy.",
+              "focusEn": "air conditioning",
+              "focusPl": "Klimatyzacja"
+            },
+            {
+              "en": "Turn on the air conditioning, it's like an oven in here.",
+              "pl": "Włącz klimatyzację, tu jest jak w piekarniku.",
+              "focusEn": "air conditioning",
+              "focusPl": "klimatyzację"
+            }
+          ],
+          "acceptedAnswers": [
+            "air conditioning",
+            "AC",
+            "A/C"
+          ],
+          "acceptedTranslations": [
+            "klimatyzacja",
+            "klima"
+          ]
+        },
+        {
+          "id": "hotel.thermostat",
+          "term": "thermostat",
+          "ipa": "/ˈθɜːrməstæt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "termostat",
+          "definition": "A device on the wall that controls the temperature of a room.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "thermostats",
+          "collocations": "turn down the thermostat; set the thermostat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I set the thermostat to seventy degrees before going to sleep.",
+              "pl": "Przed snem ustawiłem termostat na siedemdziesiąt stopni Fahrenheita.",
+              "focusEn": "thermostat",
+              "focusPl": "termostat"
+            },
+            {
+              "en": "The thermostat in our room doesn't seem to do anything.",
+              "pl": "Termostat w naszym pokoju chyba w ogóle nie działa.",
+              "focusEn": "thermostat",
+              "focusPl": "Termostat"
+            }
+          ],
+          "acceptedAnswers": [
+            "thermostat"
+          ],
+          "acceptedTranslations": [
+            "termostat",
+            "regulator temperatury"
+          ]
+        },
+        {
+          "id": "hotel.minibar",
+          "term": "minibar",
+          "ipa": "/ˈmɪnibɑːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "minibarek",
+          "definition": "A small fridge in a hotel room with drinks and snacks you pay for.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "minibars",
+          "collocations": "use the minibar; minibar charges",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Everything in the minibar costs three times more than in the store.",
+              "pl": "Wszystko w minibarku kosztuje trzy razy więcej niż w sklepie.",
+              "focusEn": "minibar",
+              "focusPl": "minibarku"
+            },
+            {
+              "en": "We only took one bottle of water from the minibar.",
+              "pl": "Wzięliśmy z minibarku tylko jedną butelkę wody.",
+              "focusEn": "minibar",
+              "focusPl": "minibarku"
+            }
+          ],
+          "acceptedAnswers": [
+            "minibar"
+          ],
+          "acceptedTranslations": [
+            "minibarek",
+            "minibar",
+            "lodówka w pokoju"
+          ]
+        },
+        {
+          "id": "hotel.safe",
+          "term": "safe",
+          "ipa": "/seɪf/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sejf",
+          "definition": "A small strong box in the room for keeping money and passports.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "safes",
+          "collocations": "in-room safe; lock it in the safe",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I put our passports in the safe in the closet.",
+              "pl": "Włożyłem nasze paszporty do sejfu w szafie.",
+              "focusEn": "safe",
+              "focusPl": "sejfu"
+            },
+            {
+              "en": "I forgot the code for the safe, so I had to call the front desk.",
+              "pl": "Zapomniałem kodu do sejfu, więc musiałem zadzwonić do recepcji.",
+              "focusEn": "safe",
+              "focusPl": "sejfu"
+            }
+          ],
+          "acceptedAnswers": [
+            "safe"
+          ],
+          "acceptedTranslations": [
+            "sejf"
+          ]
+        },
+        {
+          "id": "hotel.hair-dryer",
+          "term": "hair dryer",
+          "ipa": "/ˈher ˌdraɪər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "suszarka do włosów",
+          "definition": "An electric machine that blows hot air to dry your hair.",
+          "register": "neutralny",
+          "contextPl": "Łazienka hotelowa",
+          "natural": "",
+          "forms": "hair dryers",
+          "collocations": "use the hair dryer",
+          "synonyms": "blow-dryer",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a hair dryer in the drawer under the bathroom sink.",
+              "pl": "W szufladzie pod umywalką w łazience jest suszarka do włosów.",
+              "focusEn": "hair dryer",
+              "focusPl": "suszarka do włosów"
+            },
+            {
+              "en": "The hair dryer in our room was too weak to dry my long hair.",
+              "pl": "Suszarka do włosów w naszym pokoju była za słaba, żeby wysuszyć moje długie włosy.",
+              "focusEn": "hair dryer",
+              "focusPl": "Suszarka do włosów"
+            }
+          ],
+          "acceptedAnswers": [
+            "hair dryer",
+            "blow-dryer",
+            "hairdryer"
+          ],
+          "acceptedTranslations": [
+            "suszarka do włosów",
+            "suszarka"
+          ]
+        },
+        {
+          "id": "hotel.view",
+          "term": "view",
+          "ipa": "/vjuː/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "widok",
+          "definition": "What you can see from a window.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "views",
+          "collocations": "ocean view; room with a view; city view",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The view from our balcony was amazing at sunset.",
+              "pl": "Widok z naszego balkonu o zachodzie słońca był niesamowity.",
+              "focusEn": "view",
+              "focusPl": "Widok"
+            },
+            {
+              "en": "We paid extra for a room with a view of the lake.",
+              "pl": "Dopłaciliśmy za pokój z widokiem na jezioro.",
+              "focusEn": "view",
+              "focusPl": "widokiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "view"
+          ],
+          "acceptedTranslations": [
+            "widok"
+          ]
+        },
+        {
+          "id": "hotel.balcony",
+          "term": "balcony",
+          "ipa": "/ˈbælkəni/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "balkon",
+          "definition": "A small area outside a window with a wall or rail around it.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "balconies",
+          "collocations": "private balcony; sit on the balcony",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We had breakfast on the balcony every morning.",
+              "pl": "Co rano jedliśmy śniadanie na balkonie.",
+              "focusEn": "balcony",
+              "focusPl": "balkonie"
+            },
+            {
+              "en": "The balcony door doesn't lock properly.",
+              "pl": "Drzwi na balkon nie zamykają się porządnie.",
+              "focusEn": "balcony",
+              "focusPl": "balkon"
+            }
+          ],
+          "acceptedAnswers": [
+            "balcony"
+          ],
+          "acceptedTranslations": [
+            "balkon"
+          ]
+        },
+        {
+          "id": "hotel.closet",
+          "term": "closet",
+          "ipa": "/ˈklɑːzɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "szafa",
+          "definition": "A small space in a wall with a door, used for hanging clothes.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "closets",
+          "collocations": "hang it in the closet; walk-in closet",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po brytyjsku: „wardrobe”.",
+          "examples": [
+            {
+              "en": "I hung my suit in the closet so it wouldn't wrinkle.",
+              "pl": "Powiesiłem garnitur w szafie, żeby się nie pogniótł.",
+              "focusEn": "closet",
+              "focusPl": "szafie"
+            },
+            {
+              "en": "The ironing board is in the closet next to the door.",
+              "pl": "Deska do prasowania jest w szafie przy drzwiach.",
+              "focusEn": "closet",
+              "focusPl": "szafie"
+            }
+          ],
+          "acceptedAnswers": [
+            "closet",
+            "wardrobe"
+          ],
+          "acceptedTranslations": [
+            "szafa",
+            "szafa wnękowa"
+          ]
+        },
+        {
+          "id": "hotel.hanger",
+          "term": "hanger",
+          "ipa": "/ˈhæŋər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wieszak",
+          "definition": "A curved piece of plastic, wood or wire for hanging clothes.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "hangers",
+          "collocations": "clothes hanger; extra hangers",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There are only three hangers in the closet.",
+              "pl": "W szafie są tylko trzy wieszaki.",
+              "focusEn": "hangers",
+              "focusPl": "wieszaki"
+            },
+            {
+              "en": "Could you bring us some more hangers?",
+              "pl": "Czy mogłaby nam pani przynieść więcej wieszaków?",
+              "focusEn": "hangers",
+              "focusPl": "wieszaków"
+            }
+          ],
+          "acceptedAnswers": [
+            "hanger"
+          ],
+          "acceptedTranslations": [
+            "wieszak",
+            "wieszak na ubrania"
+          ]
+        },
+        {
+          "id": "hotel.outlet",
+          "term": "outlet",
+          "ipa": "/ˈaʊtlet/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gniazdko",
+          "definition": "A place in the wall where you plug in electrical things.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "outlets",
+          "collocations": "plug it into the outlet; electrical outlet",
+          "synonyms": "socket, plug",
+          "antonyms": "",
+          "notePl": "Po brytyjsku: „socket”.",
+          "examples": [
+            {
+              "en": "There's no outlet near the bed to charge my phone.",
+              "pl": "Przy łóżku nie ma żadnego gniazdka, żeby naładować telefon.",
+              "focusEn": "outlet",
+              "focusPl": "gniazdka"
+            },
+            {
+              "en": "I needed an adapter because the outlets here are different.",
+              "pl": "Potrzebowałem przejściówki, bo gniazdka są tu inne.",
+              "focusEn": "outlets",
+              "focusPl": "gniazdka"
+            }
+          ],
+          "acceptedAnswers": [
+            "outlet",
+            "socket",
+            "power outlet"
+          ],
+          "acceptedTranslations": [
+            "gniazdko",
+            "gniazdko elektryczne",
+            "kontakt"
+          ]
+        },
+        {
+          "id": "hotel.blackout-curtains",
+          "term": "blackout curtains",
+          "ipa": "/ˈblækaʊt ˌkɜːrtnz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "zasłony zaciemniające",
+          "definition": "Thick curtains that block all the light from outside.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "blackout curtain – blackout curtains",
+          "collocations": "close the blackout curtains",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks to the blackout curtains, we slept until ten.",
+              "pl": "Dzięki zasłonom zaciemniającym spaliśmy do dziesiątej.",
+              "focusEn": "blackout curtains",
+              "focusPl": "zasłonom zaciemniającym"
+            },
+            {
+              "en": "Close the blackout curtains, the street light is shining in.",
+              "pl": "Zasuń zasłony zaciemniające, świeci tu latarnia z ulicy.",
+              "focusEn": "blackout curtains",
+              "focusPl": "zasłony zaciemniające"
+            }
+          ],
+          "acceptedAnswers": [
+            "blackout curtains"
+          ],
+          "acceptedTranslations": [
+            "zasłony zaciemniające",
+            "rolety zaciemniające"
+          ]
+        },
+        {
+          "id": "hotel.ice-machine",
+          "term": "ice machine",
+          "ipa": "/ˈaɪs məˌʃiːn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "automat do lodu",
+          "definition": "A machine in the hallway of a hotel that gives free ice.",
+          "register": "neutralny",
+          "contextPl": "Pokój hotelowy",
+          "natural": "",
+          "forms": "ice machines",
+          "collocations": "the ice machine down the hall",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Typowe dla amerykańskich hoteli i moteli.",
+          "examples": [
+            {
+              "en": "The ice machine is down the hall, next to the elevators.",
+              "pl": "Automat do lodu jest na końcu korytarza, obok wind.",
+              "focusEn": "ice machine",
+              "focusPl": "Automat do lodu"
+            },
+            {
+              "en": "I filled the bucket at the ice machine and put our drinks in it.",
+              "pl": "Napełniłem kubełek przy automacie do lodu i włożyłem do niego napoje.",
+              "focusEn": "ice machine",
+              "focusPl": "automacie do lodu"
+            }
+          ],
+          "acceptedAnswers": [
+            "ice machine"
+          ],
+          "acceptedTranslations": [
+            "automat do lodu",
+            "maszyna do lodu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hotel.services",
+      "namePl": "Usługi hotelowe",
+      "scenePl": "Pobyt w hotelu: telefon do recepcji z pokoju, śniadanie w restauracji hotelowej i basen",
+      "entries": [
+        {
+          "id": "hotel.room-service",
+          "term": "room service",
+          "ipa": "/ˈruːm ˌsɜːrvɪs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "obsługa pokojowa",
+          "definition": "A hotel service that brings food and drinks to your room.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "order room service; room service menu",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Dotyczy jedzenia do pokoju; sprzątanie to „housekeeping”.",
+          "examples": [
+            {
+              "en": "We were too tired to go out, so we ordered room service.",
+              "pl": "Byliśmy zbyt zmęczeni, żeby wyjść, więc zamówiliśmy obsługę pokojową.",
+              "focusEn": "room service",
+              "focusPl": "obsługę pokojową"
+            },
+            {
+              "en": "Room service brought us pancakes and coffee at eight a.m.",
+              "pl": "Obsługa pokojowa przyniosła nam naleśniki i kawę o ósmej rano.",
+              "focusEn": "Room service",
+              "focusPl": "Obsługa pokojowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "room service"
+          ],
+          "acceptedTranslations": [
+            "obsługa pokojowa",
+            "jedzenie do pokoju",
+            "room service"
+          ]
+        },
+        {
+          "id": "hotel.housekeeping",
+          "term": "housekeeping",
+          "ipa": "/ˈhaʊskiːpɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "obsługa sprzątająca",
+          "definition": "The hotel staff who clean the rooms.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "call housekeeping; daily housekeeping",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you ask housekeeping to bring us more toilet paper?",
+              "pl": "Czy może pani poprosić obsługę sprzątającą o więcej papieru toaletowego?",
+              "focusEn": "housekeeping",
+              "focusPl": "obsługę sprzątającą"
+            },
+            {
+              "en": "Housekeeping came at nine while we were still sleeping.",
+              "pl": "Obsługa sprzątająca przyszła o dziewiątej, kiedy jeszcze spaliśmy.",
+              "focusEn": "Housekeeping",
+              "focusPl": "Obsługa sprzątająca"
+            }
+          ],
+          "acceptedAnswers": [
+            "housekeeping"
+          ],
+          "acceptedTranslations": [
+            "obsługa sprzątająca",
+            "sprzątanie pokoi",
+            "personel sprzątający"
+          ]
+        },
+        {
+          "id": "hotel.wake-up-call",
+          "term": "wake-up call",
+          "ipa": "/ˈweɪk ʌp ˌkɔːl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "budzenie telefoniczne",
+          "definition": "A phone call from the front desk to wake you at a certain time.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "wake-up calls",
+          "collocations": "ask for a wake-up call; a 6 a.m. wake-up call",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przenośnie: „sygnał ostrzegawczy” (This was a wake-up call).",
+          "examples": [
+            {
+              "en": "Could I get a wake-up call at six tomorrow morning?",
+              "pl": "Czy mogę prosić o budzenie telefoniczne jutro o szóstej rano?",
+              "focusEn": "wake-up call",
+              "focusPl": "budzenie telefoniczne"
+            },
+            {
+              "en": "The wake-up call never came, and we almost missed our tour.",
+              "pl": "Nie było żadnego budzenia telefonicznego i prawie spóźniliśmy się na wycieczkę.",
+              "focusEn": "wake-up call",
+              "focusPl": "budzenia telefonicznego"
+            }
+          ],
+          "acceptedAnswers": [
+            "wake-up call"
+          ],
+          "acceptedTranslations": [
+            "budzenie telefoniczne",
+            "budzenie"
+          ]
+        },
+        {
+          "id": "hotel.breakfast-included",
+          "term": "breakfast included",
+          "ipa": "/ˈbrekfəst ɪnˌkluːdɪd/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "śniadanie wliczone w cenę",
+          "definition": "Said when the price of the room covers breakfast.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "Is breakfast included?",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Is breakfast included?” – jedno z najczęstszych pytań w recepcji.",
+          "examples": [
+            {
+              "en": "Is breakfast included, or do we pay for it separately?",
+              "pl": "Czy śniadanie jest wliczone w cenę, czy płacimy za nie osobno?",
+              "focusEn": "breakfast included",
+              "focusPl": "śniadanie jest wliczone w cenę"
+            },
+            {
+              "en": "We chose this hotel because it had breakfast included.",
+              "pl": "Wybraliśmy ten hotel, bo miał śniadanie wliczone w cenę.",
+              "focusEn": "breakfast included",
+              "focusPl": "śniadanie wliczone w cenę"
+            }
+          ],
+          "acceptedAnswers": [
+            "breakfast included",
+            "breakfast is included"
+          ],
+          "acceptedTranslations": [
+            "śniadanie wliczone w cenę",
+            "ze śniadaniem",
+            "śniadanie w cenie"
+          ]
+        },
+        {
+          "id": "hotel.continental-breakfast",
+          "term": "continental breakfast",
+          "ipa": "/ˌkɑːntɪnentl ˈbrekfəst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "śniadanie kontynentalne",
+          "definition": "A simple breakfast of bread, pastries, fruit, coffee and juice.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "continental breakfasts",
+          "collocations": "free continental breakfast",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA w tańszych hotelach: płatki, bajgle, muffiny, kawa.",
+          "examples": [
+            {
+              "en": "The continental breakfast had bagels, muffins and cereal.",
+              "pl": "W ramach śniadania kontynentalnego były bajgle, babeczki i płatki.",
+              "focusEn": "continental breakfast",
+              "focusPl": "śniadania kontynentalnego"
+            },
+            {
+              "en": "The free continental breakfast is served in the lobby until ten.",
+              "pl": "Darmowe śniadanie kontynentalne podawane jest w holu do dziesiątej.",
+              "focusEn": "continental breakfast",
+              "focusPl": "śniadanie kontynentalne"
+            }
+          ],
+          "acceptedAnswers": [
+            "continental breakfast"
+          ],
+          "acceptedTranslations": [
+            "śniadanie kontynentalne",
+            "lekkie śniadanie"
+          ]
+        },
+        {
+          "id": "hotel.concierge",
+          "term": "concierge",
+          "ipa": "/ˌkɑːnsiˈerʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "konsjerż",
+          "definition": "A hotel employee who helps guests with tickets, tours and restaurants.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "concierges",
+          "collocations": "ask the concierge; concierge desk",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The concierge booked us a table at a seafood restaurant.",
+              "pl": "Konsjerż zarezerwował nam stolik w restauracji z owocami morza.",
+              "focusEn": "concierge",
+              "focusPl": "Konsjerż"
+            },
+            {
+              "en": "Ask the concierge where we can buy tickets for the show.",
+              "pl": "Zapytaj konsjerża, gdzie możemy kupić bilety na przedstawienie.",
+              "focusEn": "concierge",
+              "focusPl": "konsjerża"
+            }
+          ],
+          "acceptedAnswers": [
+            "concierge"
+          ],
+          "acceptedTranslations": [
+            "konsjerż",
+            "portier"
+          ]
+        },
+        {
+          "id": "hotel.amenities",
+          "term": "amenities",
+          "ipa": "/əˈmenətiz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "udogodnienia",
+          "definition": "Useful or pleasant things a hotel offers, like a pool or a gym.",
+          "register": "formalny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "amenity – amenities",
+          "collocations": "hotel amenities; free amenities; resort fee for amenities",
+          "synonyms": "facilities",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The hotel's amenities include a pool, a gym and free parking.",
+              "pl": "Udogodnienia hotelu obejmują basen, siłownię i darmowy parking.",
+              "focusEn": "amenities",
+              "focusPl": "Udogodnienia"
+            },
+            {
+              "en": "The resort fee covers all the amenities, even the beach chairs.",
+              "pl": "Dodatkowa opłata za pobyt obejmuje wszystkie udogodnienia, nawet leżaki.",
+              "focusEn": "amenities",
+              "focusPl": "udogodnienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "amenities",
+            "facilities"
+          ],
+          "acceptedTranslations": [
+            "udogodnienia",
+            "wyposażenie",
+            "atrakcje hotelu"
+          ]
+        },
+        {
+          "id": "hotel.pool",
+          "term": "pool",
+          "ipa": "/puːl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "basen",
+          "definition": "An area of water made for swimming.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "pools",
+          "collocations": "swimming pool; rooftop pool; by the pool",
+          "synonyms": "swimming pool",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The pool is open from seven a.m. to ten p.m.",
+              "pl": "Basen jest czynny od siódmej rano do dziesiątej wieczorem.",
+              "focusEn": "pool",
+              "focusPl": "Basen"
+            },
+            {
+              "en": "The kids spent the whole afternoon in the hotel pool.",
+              "pl": "Dzieci spędziły całe popołudnie w hotelowym basenie.",
+              "focusEn": "pool",
+              "focusPl": "basenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "pool",
+            "swimming pool"
+          ],
+          "acceptedTranslations": [
+            "basen"
+          ]
+        },
+        {
+          "id": "hotel.fitness-center",
+          "term": "fitness center",
+          "ipa": "/ˈfɪtnəs ˌsentər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "siłownia",
+          "definition": "A room in a hotel with exercise machines.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "fitness centers",
+          "collocations": "24-hour fitness center",
+          "synonyms": "gym",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The fitness center is on the second floor, and your key card opens it.",
+              "pl": "Siłownia jest na drugim piętrze, a otwiera ją pana karta do pokoju.",
+              "focusEn": "fitness center",
+              "focusPl": "Siłownia"
+            },
+            {
+              "en": "I went to the hotel fitness center before breakfast.",
+              "pl": "Przed śniadaniem poszedłem do hotelowej siłowni.",
+              "focusEn": "fitness center",
+              "focusPl": "siłowni"
+            }
+          ],
+          "acceptedAnswers": [
+            "fitness center",
+            "gym"
+          ],
+          "acceptedTranslations": [
+            "siłownia",
+            "centrum fitness"
+          ]
+        },
+        {
+          "id": "hotel.laundry-service",
+          "term": "laundry service",
+          "ipa": "/ˈlɔːndri ˌsɜːrvɪs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "usługa prania",
+          "definition": "A hotel service that washes and irons your clothes.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "use the laundry service; same-day laundry service",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I sent two shirts to the laundry service, and they came back ironed.",
+              "pl": "Oddałem dwie koszule do usługi prania i wróciły wyprasowane.",
+              "focusEn": "laundry service",
+              "focusPl": "usługi prania"
+            },
+            {
+              "en": "The laundry service is expensive, so we used the machines in the basement.",
+              "pl": "Usługa prania jest droga, więc skorzystaliśmy z pralek w piwnicy.",
+              "focusEn": "laundry service",
+              "focusPl": "Usługa prania"
+            }
+          ],
+          "acceptedAnswers": [
+            "laundry service"
+          ],
+          "acceptedTranslations": [
+            "usługa prania",
+            "pralnia hotelowa"
+          ]
+        },
+        {
+          "id": "hotel.do-not-disturb",
+          "term": "do not disturb",
+          "ipa": "/ˌduː nɑːt dɪˈstɜːrb/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "nie przeszkadzać",
+          "definition": "Words on a sign you hang on your door so nobody comes in.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "put out the do not disturb sign",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I hung the do not disturb sign on the door and went back to sleep.",
+              "pl": "Powiesiłem na drzwiach tabliczkę „nie przeszkadzać” i poszedłem z powrotem spać.",
+              "focusEn": "do not disturb",
+              "focusPl": "nie przeszkadzać"
+            },
+            {
+              "en": "Housekeeping didn't clean because we had the do not disturb sign out.",
+              "pl": "Obsługa nie posprzątała, bo wywiesiliśmy tabliczkę „nie przeszkadzać”.",
+              "focusEn": "do not disturb",
+              "focusPl": "nie przeszkadzać"
+            }
+          ],
+          "acceptedAnswers": [
+            "do not disturb"
+          ],
+          "acceptedTranslations": [
+            "nie przeszkadzać",
+            "proszę nie przeszkadzać"
+          ]
+        },
+        {
+          "id": "hotel.valet-parking",
+          "term": "valet parking",
+          "ipa": "/ˈvæleɪ ˌpɑːrkɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "parkowanie przez obsługę",
+          "definition": "A service where a hotel worker parks your car for you.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "use valet parking; valet parking fee",
+          "synonyms": "valet",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The hotel only has valet parking, and it's forty dollars a night.",
+              "pl": "Hotel ma tylko parkowanie przez obsługę i kosztuje ono czterdzieści dolarów za noc.",
+              "focusEn": "valet parking",
+              "focusPl": "parkowanie przez obsługę"
+            },
+            {
+              "en": "We left the car keys at the valet parking stand by the entrance.",
+              "pl": "Zostawiliśmy kluczyki do samochodu na stanowisku parkowania przez obsługę przy wejściu.",
+              "focusEn": "valet parking",
+              "focusPl": "parkowania przez obsługę"
+            }
+          ],
+          "acceptedAnswers": [
+            "valet parking",
+            "valet"
+          ],
+          "acceptedTranslations": [
+            "parkowanie przez obsługę",
+            "parkowanie z obsługą",
+            "valet parking"
+          ]
+        },
+        {
+          "id": "hotel.iron",
+          "term": "iron",
+          "ipa": "/ˈaɪərn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "żelazko",
+          "definition": "A heavy electric tool used to make clothes smooth.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "irons",
+          "collocations": "iron and ironing board",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik: „to iron” – prasować.",
+          "examples": [
+            {
+              "en": "Is there an iron in the room? My dress is all wrinkled.",
+              "pl": "Czy w pokoju jest żelazko? Moja sukienka jest cała pognieciona.",
+              "focusEn": "iron",
+              "focusPl": "żelazko"
+            },
+            {
+              "en": "The front desk sent up an iron and an ironing board.",
+              "pl": "Recepcja przysłała na górę żelazko i deskę do prasowania.",
+              "focusEn": "iron",
+              "focusPl": "żelazko"
+            }
+          ],
+          "acceptedAnswers": [
+            "iron"
+          ],
+          "acceptedTranslations": [
+            "żelazko"
+          ]
+        },
+        {
+          "id": "hotel.extra",
+          "term": "extra",
+          "ipa": "/ˈekstrə/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dodatkowy",
+          "definition": "More than the usual amount.",
+          "register": "neutralny",
+          "contextPl": "Usługi hotelowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "extra towels; extra pillow; extra bed",
+          "synonyms": "additional",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could we get an extra pillow and a blanket?",
+              "pl": "Czy możemy dostać dodatkową poduszkę i koc?",
+              "focusEn": "extra",
+              "focusPl": "dodatkową"
+            },
+            {
+              "en": "The kids slept on an extra bed that the hotel brought in.",
+              "pl": "Dzieci spały na dodatkowym łóżku, które hotel wstawił do pokoju.",
+              "focusEn": "extra",
+              "focusPl": "dodatkowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "extra",
+            "additional"
+          ],
+          "acceptedTranslations": [
+            "dodatkowy",
+            "ekstra"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hotel.problems",
+      "namePl": "Problemy i skargi",
+      "scenePl": "Zgłaszanie usterek w pokoju przez telefon i rozmowa z kierownikiem w recepcji",
+      "entries": [
+        {
+          "id": "hotel.complaint",
+          "term": "complaint",
+          "ipa": "/kəmˈpleɪnt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "skarga",
+          "definition": "A statement that you are unhappy with something.",
+          "register": "neutralny",
+          "contextPl": "Skargi w hotelu",
+          "natural": "",
+          "forms": "complaints",
+          "collocations": "make a complaint; file a complaint; customer complaint",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to make a complaint about the noise last night.",
+              "pl": "Chciałbym złożyć skargę na hałas zeszłej nocy.",
+              "focusEn": "complaint",
+              "focusPl": "skargę"
+            },
+            {
+              "en": "The manager listened to our complaint and apologized.",
+              "pl": "Kierownik wysłuchał naszej skargi i przeprosił.",
+              "focusEn": "complaint",
+              "focusPl": "skargi"
+            }
+          ],
+          "acceptedAnswers": [
+            "complaint"
+          ],
+          "acceptedTranslations": [
+            "skarga",
+            "reklamacja",
+            "zażalenie"
+          ]
+        },
+        {
+          "id": "hotel.complain",
+          "term": "complain",
+          "ipa": "/kəmˈpleɪn/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "skarżyć się",
+          "definition": "To say that you are unhappy or annoyed about something.",
+          "register": "neutralny",
+          "contextPl": "Skargi w hotelu",
+          "natural": "",
+          "forms": "complains – complained – complained",
+          "collocations": "complain about the noise; complain to the manager",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Z przyimkiem „about” (o czym) i „to” (do kogo).",
+          "examples": [
+            {
+              "en": "The guests next door complained about our TV being too loud.",
+              "pl": "Goście z pokoju obok skarżyli się, że nasz telewizor gra za głośno.",
+              "focusEn": "complained",
+              "focusPl": "skarżyli się"
+            },
+            {
+              "en": "I don't like to complain, but the shower has been cold for two days.",
+              "pl": "Nie lubię się skarżyć, ale prysznic od dwóch dni leci zimny.",
+              "focusEn": "complain",
+              "focusPl": "skarżyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "complain"
+          ],
+          "acceptedTranslations": [
+            "skarżyć się",
+            "narzekać",
+            "poskarżyć się",
+            "złożyć skargę"
+          ]
+        },
+        {
+          "id": "hotel.noisy",
+          "term": "noisy",
+          "ipa": "/ˈnɔɪzi/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "głośny",
+          "definition": "Making or having a lot of noise.",
+          "register": "neutralny",
+          "contextPl": "Problemy w pokoju",
+          "natural": "",
+          "forms": "noisier – noisiest",
+          "collocations": "noisy room; noisy neighbors",
+          "synonyms": "loud",
+          "antonyms": "quiet",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our room is right above the bar and it's very noisy.",
+              "pl": "Nasz pokój jest tuż nad barem i jest bardzo głośny.",
+              "focusEn": "noisy",
+              "focusPl": "głośny"
+            },
+            {
+              "en": "The people in the next room were noisy until three in the morning.",
+              "pl": "Ludzie z sąsiedniego pokoju byli głośni do trzeciej nad ranem.",
+              "focusEn": "noisy",
+              "focusPl": "głośni"
+            }
+          ],
+          "acceptedAnswers": [
+            "noisy"
+          ],
+          "acceptedTranslations": [
+            "głośny",
+            "hałaśliwy"
+          ]
+        },
+        {
+          "id": "hotel.broken",
+          "term": "broken",
+          "ipa": "/ˈbroʊkən/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zepsuty",
+          "definition": "Not working correctly.",
+          "register": "neutralny",
+          "contextPl": "Problemy w pokoju",
+          "natural": "",
+          "forms": "",
+          "collocations": "broken lamp; the TV is broken",
+          "synonyms": "not working",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The lamp next to the bed is broken.",
+              "pl": "Lampa przy łóżku jest zepsuta.",
+              "focusEn": "broken",
+              "focusPl": "zepsuta"
+            },
+            {
+              "en": "The lock on the bathroom door was broken when we arrived.",
+              "pl": "Zamek w drzwiach łazienki był zepsuty, kiedy przyjechaliśmy.",
+              "focusEn": "broken",
+              "focusPl": "zepsuty"
+            }
+          ],
+          "acceptedAnswers": [
+            "broken",
+            "not working"
+          ],
+          "acceptedTranslations": [
+            "zepsuty",
+            "uszkodzony",
+            "popsuty"
+          ]
+        },
+        {
+          "id": "hotel.doesnt-work",
+          "term": "doesn't work",
+          "ipa": "/ˈdʌznt ˌwɜːrk/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "nie działa",
+          "definition": "Is not working correctly.",
+          "register": "neutralny",
+          "contextPl": "Problemy w pokoju",
+          "natural": "",
+          "forms": "didn't work; isn't working",
+          "collocations": "the remote doesn't work",
+          "synonyms": "is broken",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hi, this is room 304, the TV doesn't work.",
+              "pl": "Dzień dobry, tu pokój 304, telewizor nie działa.",
+              "focusEn": "doesn't work",
+              "focusPl": "nie działa"
+            },
+            {
+              "en": "The air conditioning doesn't work, and it's ninety degrees outside.",
+              "pl": "Klimatyzacja nie działa, a na zewnątrz jest ponad trzydzieści stopni.",
+              "focusEn": "doesn't work",
+              "focusPl": "nie działa"
+            }
+          ],
+          "acceptedAnswers": [
+            "doesn't work",
+            "isn't working",
+            "is not working",
+            "does not work"
+          ],
+          "acceptedTranslations": [
+            "nie działa"
+          ]
+        },
+        {
+          "id": "hotel.dirty",
+          "term": "dirty",
+          "ipa": "/ˈdɜːrti/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "brudny",
+          "definition": "Not clean.",
+          "register": "neutralny",
+          "contextPl": "Problemy w pokoju",
+          "natural": "",
+          "forms": "dirtier – dirtiest",
+          "collocations": "dirty sheets; dirty towels",
+          "synonyms": "filthy",
+          "antonyms": "clean",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The sheets on the second bed were dirty.",
+              "pl": "Pościel na drugim łóżku była brudna.",
+              "focusEn": "dirty",
+              "focusPl": "brudna"
+            },
+            {
+              "en": "We found a dirty glass in the bathroom, so we asked for new ones.",
+              "pl": "W łazience znaleźliśmy brudną szklankę, więc poprosiliśmy o nowe.",
+              "focusEn": "dirty",
+              "focusPl": "brudną"
+            }
+          ],
+          "acceptedAnswers": [
+            "dirty"
+          ],
+          "acceptedTranslations": [
+            "brudny",
+            "zabrudzony"
+          ]
+        },
+        {
+          "id": "hotel.leak",
+          "term": "leak",
+          "ipa": "/liːk/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przeciekać",
+          "definition": "To let water or another liquid get out through a hole or crack.",
+          "register": "neutralny",
+          "contextPl": "Problemy w pokoju",
+          "natural": "",
+          "forms": "leaks – leaked – leaked",
+          "collocations": "the faucet is leaking; the roof leaks",
+          "synonyms": "drip",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The faucet in the bathroom is leaking, and it kept us awake all night.",
+              "pl": "Kran w łazience przecieka i przez całą noc nie dawał nam spać.",
+              "focusEn": "leaking",
+              "focusPl": "przecieka"
+            },
+            {
+              "en": "Water leaked from the ceiling onto the carpet.",
+              "pl": "Woda przeciekała z sufitu na wykładzinę.",
+              "focusEn": "leaked",
+              "focusPl": "przeciekała"
+            }
+          ],
+          "acceptedAnswers": [
+            "leak",
+            "drip"
+          ],
+          "acceptedTranslations": [
+            "przeciekać",
+            "cieknąć",
+            "kapać"
+          ]
+        },
+        {
+          "id": "hotel.clogged",
+          "term": "clogged",
+          "ipa": "/klɑːɡd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zapchany",
+          "definition": "Blocked so that water cannot flow through.",
+          "register": "neutralny",
+          "contextPl": "Problemy w pokoju",
+          "natural": "",
+          "forms": "",
+          "collocations": "clogged toilet; clogged drain; get clogged",
+          "synonyms": "blocked",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The toilet in our room is clogged, could you send someone up?",
+              "pl": "Toaleta w naszym pokoju jest zapchana, czy mogą państwo kogoś przysłać?",
+              "focusEn": "clogged",
+              "focusPl": "zapchana"
+            },
+            {
+              "en": "The shower drain was clogged, and the water was up to my ankles.",
+              "pl": "Odpływ prysznica był zapchany i woda sięgała mi do kostek.",
+              "focusEn": "clogged",
+              "focusPl": "zapchany"
+            }
+          ],
+          "acceptedAnswers": [
+            "clogged",
+            "blocked"
+          ],
+          "acceptedTranslations": [
+            "zapchany",
+            "zatkany"
+          ]
+        },
+        {
+          "id": "hotel.no-hot-water",
+          "term": "no hot water",
+          "ipa": "/ˌnoʊ ˌhɑːt ˈwɔːtər/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "brak ciepłej wody",
+          "definition": "Said when the water from the tap or shower stays cold.",
+          "register": "neutralny",
+          "contextPl": "Problemy w pokoju",
+          "natural": "",
+          "forms": "",
+          "collocations": "there's no hot water",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's no hot water in room 210, can someone take a look?",
+              "pl": "W pokoju 210 nie ma ciepłej wody, może ktoś to sprawdzić?",
+              "focusEn": "no hot water",
+              "focusPl": "nie ma ciepłej wody"
+            },
+            {
+              "en": "We had no hot water all morning, so we showered at the gym.",
+              "pl": "Przez cały ranek nie mieliśmy ciepłej wody, więc wzięliśmy prysznic na siłowni.",
+              "focusEn": "no hot water",
+              "focusPl": "nie mieliśmy ciepłej wody"
+            }
+          ],
+          "acceptedAnswers": [
+            "no hot water"
+          ],
+          "acceptedTranslations": [
+            "brak ciepłej wody",
+            "nie ma ciepłej wody",
+            "nie mieć ciepłej wody"
+          ]
+        },
+        {
+          "id": "hotel.change-rooms",
+          "term": "change rooms",
+          "ipa": "/ˌtʃeɪndʒ ˈruːmz/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zmienić pokój",
+          "definition": "To move to a different room in the same hotel.",
+          "register": "neutralny",
+          "contextPl": "Skargi w hotelu",
+          "natural": "",
+          "forms": "changed rooms",
+          "collocations": "ask to change rooms; can we change rooms?",
+          "synonyms": "switch rooms",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is it possible to change rooms? This one smells like smoke.",
+              "pl": "Czy można zmienić pokój? W tym czuć dym papierosowy.",
+              "focusEn": "change rooms",
+              "focusPl": "zmienić pokój"
+            },
+            {
+              "en": "We changed rooms after the first night because of the noise.",
+              "pl": "Zmieniliśmy pokój po pierwszej nocy z powodu hałasu.",
+              "focusEn": "changed rooms",
+              "focusPl": "Zmieniliśmy pokój"
+            }
+          ],
+          "acceptedAnswers": [
+            "change rooms",
+            "switch rooms",
+            "move rooms"
+          ],
+          "acceptedTranslations": [
+            "zmienić pokój",
+            "przenieść się do innego pokoju"
+          ]
+        },
+        {
+          "id": "hotel.manager",
+          "term": "manager",
+          "ipa": "/ˈmænɪdʒər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kierownik",
+          "definition": "The person in charge of a hotel or part of it.",
+          "register": "neutralny",
+          "contextPl": "Skargi w hotelu",
+          "natural": "",
+          "forms": "managers",
+          "collocations": "speak to the manager; hotel manager; duty manager",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The clerk at the front desk said the manager would call our room in ten minutes.",
+              "pl": "Recepcjonistka powiedziała, że kierownik zadzwoni do naszego pokoju za dziesięć minut.",
+              "focusEn": "manager",
+              "focusPl": "kierownik"
+            },
+            {
+              "en": "The manager gave us a free night because of the broken heater.",
+              "pl": "Kierownik dał nam darmową noc z powodu zepsutego grzejnika.",
+              "focusEn": "manager",
+              "focusPl": "Kierownik"
+            }
+          ],
+          "acceptedAnswers": [
+            "manager"
+          ],
+          "acceptedTranslations": [
+            "kierownik",
+            "menedżer",
+            "dyrektor hotelu"
+          ]
+        },
+        {
+          "id": "hotel.refund",
+          "term": "refund",
+          "ipa": "/ˈriːfʌnd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zwrot pieniędzy",
+          "definition": "Money that is given back to you.",
+          "register": "neutralny",
+          "contextPl": "Skargi w hotelu",
+          "natural": "",
+          "forms": "refunds",
+          "collocations": "full refund; partial refund; ask for a refund",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik: „to refund” /rɪˈfʌnd/.",
+          "examples": [
+            {
+              "en": "We asked for a refund for the night we couldn't sleep.",
+              "pl": "Poprosiliśmy o zwrot pieniędzy za noc, której nie mogliśmy przespać.",
+              "focusEn": "refund",
+              "focusPl": "zwrot pieniędzy"
+            },
+            {
+              "en": "The hotel gave us a partial refund for the broken air conditioning.",
+              "pl": "Hotel dał nam częściowy zwrot pieniędzy za zepsutą klimatyzację.",
+              "focusEn": "refund",
+              "focusPl": "zwrot pieniędzy"
+            }
+          ],
+          "acceptedAnswers": [
+            "refund"
+          ],
+          "acceptedTranslations": [
+            "zwrot pieniędzy",
+            "zwrot kosztów",
+            "zwrot"
+          ]
+        },
+        {
+          "id": "hotel.smell",
+          "term": "smell",
+          "ipa": "/smel/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "śmierdzieć, pachnieć",
+          "definition": "To have a particular smell, often a bad one.",
+          "register": "neutralny",
+          "contextPl": "Problemy w pokoju",
+          "natural": "",
+          "forms": "smells – smelled – smelled",
+          "collocations": "smell like smoke; smell bad; smell of",
+          "synonyms": "stink",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The carpet smells like cigarette smoke.",
+              "pl": "Wykładzina śmierdzi dymem papierosowym.",
+              "focusEn": "smells",
+              "focusPl": "śmierdzi"
+            },
+            {
+              "en": "The whole room smelled like cleaning products when we opened the door.",
+              "pl": "Kiedy otworzyliśmy drzwi, cały pokój pachniał środkami czystości.",
+              "focusEn": "smelled",
+              "focusPl": "pachniał"
+            }
+          ],
+          "acceptedAnswers": [
+            "smell",
+            "stink"
+          ],
+          "acceptedTranslations": [
+            "śmierdzieć, pachnieć",
+            "cuchnąć",
+            "czuć (zapach)"
+          ]
+        },
+        {
+          "id": "hotel.bedbugs",
+          "term": "bedbugs",
+          "ipa": "/ˈbedbʌɡz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "pluskwy",
+          "definition": "Tiny insects that live in beds and bite people at night.",
+          "register": "neutralny",
+          "contextPl": "Problemy w pokoju",
+          "natural": "",
+          "forms": "bedbug – bedbugs",
+          "collocations": "find bedbugs; bedbug bites",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I woke up with red bites and found bedbugs in the mattress.",
+              "pl": "Obudziłem się z czerwonymi ugryzieniami i znalazłem pluskwy w materacu.",
+              "focusEn": "bedbugs",
+              "focusPl": "pluskwy"
+            },
+            {
+              "en": "The hotel closed the room after another guest reported bedbugs.",
+              "pl": "Hotel zamknął pokój, kiedy inny gość zgłosił pluskwy.",
+              "focusEn": "bedbugs",
+              "focusPl": "pluskwy"
+            }
+          ],
+          "acceptedAnswers": [
+            "bedbugs"
+          ],
+          "acceptedTranslations": [
+            "pluskwy"
+          ]
+        },
+        {
+          "id": "hotel.make-up-for",
+          "term": "make up for",
+          "ipa": "/ˌmeɪk ˈʌp fər/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wynagrodzić",
+          "definition": "To do something good so that a problem feels less bad.",
+          "register": "neutralny",
+          "contextPl": "Skargi w hotelu",
+          "natural": "",
+          "forms": "makes up – made up – made up",
+          "collocations": "make up for the trouble; to make up for it",
+          "synonyms": "compensate for",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "To make up for the noise, we'd like to offer you free breakfast.",
+              "pl": "Żeby wynagrodzić państwu hałas, chcielibyśmy zaproponować darmowe śniadanie.",
+              "focusEn": "make up for",
+              "focusPl": "wynagrodzić"
+            },
+            {
+              "en": "The upgrade to a suite really made up for the problems on the first night.",
+              "pl": "Przeniesienie do apartamentu naprawdę wynagrodziło nam problemy z pierwszej nocy.",
+              "focusEn": "made up for",
+              "focusPl": "wynagrodziło"
+            }
+          ],
+          "acceptedAnswers": [
+            "make up for",
+            "compensate for"
+          ],
+          "acceptedTranslations": [
+            "wynagrodzić",
+            "zrekompensować",
+            "wynagradzać"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hotel.stay",
+      "namePl": "Pobyt i rodzaje noclegów",
+      "scenePl": "Rozmowa w recepcji o długości pobytu, jego przedłużeniu i innych noclegach w okolicy",
+      "entries": [
+        {
+          "id": "hotel.stay",
+          "term": "stay",
+          "ipa": "/steɪ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pobyt",
+          "definition": "A period of time that you spend in a hotel or another place.",
+          "register": "neutralny",
+          "contextPl": "Pobyt w hotelu",
+          "natural": "",
+          "forms": "stays",
+          "collocations": "enjoy your stay; a three-night stay; during your stay",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik: „stay at a hotel” – mieszkać w hotelu.",
+          "examples": [
+            {
+              "en": "How was your stay with us?",
+              "pl": "Jak minął państwu pobyt u nas?",
+              "focusEn": "stay",
+              "focusPl": "pobyt"
+            },
+            {
+              "en": "During our stay, the pool was closed for repairs.",
+              "pl": "W czasie naszego pobytu basen był zamknięty z powodu remontu.",
+              "focusEn": "stay",
+              "focusPl": "pobytu"
+            }
+          ],
+          "acceptedAnswers": [
+            "stay"
+          ],
+          "acceptedTranslations": [
+            "pobyt"
+          ]
+        },
+        {
+          "id": "hotel.enjoy-your-stay",
+          "term": "enjoy your stay",
+          "ipa": "/ɪnˌdʒɔɪ jʊr ˈsteɪ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "miłego pobytu",
+          "definition": "A friendly thing hotel staff say to guests after check-in.",
+          "register": "neutralny",
+          "contextPl": "Pobyt w hotelu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Here's your key, and enjoy your stay!",
+              "pl": "Oto pana klucz, miłego pobytu!",
+              "focusEn": "enjoy your stay",
+              "focusPl": "miłego pobytu"
+            },
+            {
+              "en": "The clerk smiled, wished us a good night, and told us to enjoy our stay.",
+              "pl": "Recepcjonista się uśmiechnął, życzył nam dobrej nocy i miłego pobytu.",
+              "focusEn": "enjoy our stay",
+              "focusPl": "miłego pobytu"
+            }
+          ],
+          "acceptedAnswers": [
+            "enjoy your stay"
+          ],
+          "acceptedTranslations": [
+            "miłego pobytu",
+            "udanego pobytu"
+          ]
+        },
+        {
+          "id": "hotel.under-the-name",
+          "term": "under the name",
+          "ipa": "/ˌʌndər ðə ˈneɪm/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "na nazwisko",
+          "definition": "Used to say whose name a booking was made in.",
+          "register": "neutralny",
+          "contextPl": "Rezerwacja noclegu",
+          "natural": "",
+          "forms": "",
+          "collocations": "a reservation under the name Kowalski",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I have a reservation under the name Kowalski.",
+              "pl": "Mam rezerwację na nazwisko Kowalski.",
+              "focusEn": "under the name",
+              "focusPl": "na nazwisko"
+            },
+            {
+              "en": "The room was booked under the name of my company, not my own.",
+              "pl": "Pokój był zarezerwowany na nazwisko mojej firmy, a nie moje.",
+              "focusEn": "under the name",
+              "focusPl": "na nazwisko"
+            }
+          ],
+          "acceptedAnswers": [
+            "under the name"
+          ],
+          "acceptedTranslations": [
+            "na nazwisko"
+          ]
+        },
+        {
+          "id": "hotel.late-checkout",
+          "term": "late checkout",
+          "ipa": "/ˌleɪt ˈtʃekaʊt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "późniejsze wymeldowanie",
+          "definition": "Permission to leave your room later than the usual time.",
+          "register": "neutralny",
+          "contextPl": "Wymeldowanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "ask for a late checkout; free late checkout",
+          "synonyms": "",
+          "antonyms": "early check-in",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could we get a late checkout? Our flight isn't until evening.",
+              "pl": "Czy możemy dostać późniejsze wymeldowanie? Mamy samolot dopiero wieczorem.",
+              "focusEn": "late checkout",
+              "focusPl": "późniejsze wymeldowanie"
+            },
+            {
+              "en": "The front desk gave us a late checkout at two p.m. for free.",
+              "pl": "Recepcja dała nam za darmo późniejsze wymeldowanie o czternastej.",
+              "focusEn": "late checkout",
+              "focusPl": "późniejsze wymeldowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "late checkout"
+          ],
+          "acceptedTranslations": [
+            "późniejsze wymeldowanie",
+            "późne wymeldowanie"
+          ]
+        },
+        {
+          "id": "hotel.extend",
+          "term": "extend",
+          "ipa": "/ɪkˈstend/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przedłużyć",
+          "definition": "To make something last longer.",
+          "register": "neutralny",
+          "contextPl": "Pobyt w hotelu",
+          "natural": "",
+          "forms": "extends – extended – extended",
+          "collocations": "extend your stay; extend a reservation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We love it here, can we extend our stay by two nights?",
+              "pl": "Bardzo nam się tu podoba, czy możemy przedłużyć pobyt o dwie noce?",
+              "focusEn": "extend",
+              "focusPl": "przedłużyć"
+            },
+            {
+              "en": "I extended my reservation at the front desk because the meeting moved to Monday.",
+              "pl": "Przedłużyłem rezerwację w recepcji, bo spotkanie przeniesiono na poniedziałek.",
+              "focusEn": "extended",
+              "focusPl": "Przedłużyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "extend"
+          ],
+          "acceptedTranslations": [
+            "przedłużyć",
+            "przedłużać"
+          ]
+        },
+        {
+          "id": "hotel.spend-the-night",
+          "term": "spend the night",
+          "ipa": "/ˌspend ðə ˈnaɪt/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "spędzić noc",
+          "definition": "To sleep somewhere for one night.",
+          "register": "neutralny",
+          "contextPl": "Pobyt w hotelu",
+          "natural": "",
+          "forms": "spent the night",
+          "collocations": "spend the night at a hotel",
+          "synonyms": "stay overnight",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We just need somewhere to spend the night before our early flight.",
+              "pl": "Potrzebujemy tylko miejsca, żeby spędzić noc przed porannym lotem.",
+              "focusEn": "spend the night",
+              "focusPl": "spędzić noc"
+            },
+            {
+              "en": "My friend spent the night on the sofa in our hotel room.",
+              "pl": "Mój kolega spędził noc na sofie w naszym pokoju hotelowym.",
+              "focusEn": "spent the night",
+              "focusPl": "spędził noc"
+            }
+          ],
+          "acceptedAnswers": [
+            "spend the night",
+            "stay the night",
+            "stay overnight"
+          ],
+          "acceptedTranslations": [
+            "spędzić noc",
+            "przenocować",
+            "nocować"
+          ]
+        },
+        {
+          "id": "hotel.motel",
+          "term": "motel",
+          "ipa": "/moʊˈtel/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "motel",
+          "definition": "A cheap hotel by a road, where you park right outside your room.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje noclegów",
+          "natural": "",
+          "forms": "motels",
+          "collocations": "cheap motel; roadside motel",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The clerk said there's a cheaper motel two miles down the highway.",
+              "pl": "Recepcjonista powiedział, że trzy kilometry dalej przy autostradzie jest tańszy motel.",
+              "focusEn": "motel",
+              "focusPl": "motel"
+            },
+            {
+              "en": "We stayed at a motel where we could park right outside the door.",
+              "pl": "Nocowaliśmy w motelu, gdzie można było zaparkować tuż przy drzwiach.",
+              "focusEn": "motel",
+              "focusPl": "motelu"
+            }
+          ],
+          "acceptedAnswers": [
+            "motel"
+          ],
+          "acceptedTranslations": [
+            "motel"
+          ]
+        },
+        {
+          "id": "hotel.hostel",
+          "term": "hostel",
+          "ipa": "/ˈhɑːstl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "hostel",
+          "definition": "A cheap place to stay where you often share a room with other travelers.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje noclegów",
+          "natural": "",
+          "forms": "hostels",
+          "collocations": "youth hostel; stay in a hostel",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is there a hostel near here? A hotel is too expensive for us.",
+              "pl": "Czy jest tu w pobliżu jakiś hostel? Hotel jest dla nas za drogi.",
+              "focusEn": "hostel",
+              "focusPl": "hostel"
+            },
+            {
+              "en": "In the hostel, I shared a room with five other travelers.",
+              "pl": "W hostelu dzieliłem pokój z pięcioma innymi podróżnymi.",
+              "focusEn": "hostel",
+              "focusPl": "hostelu"
+            }
+          ],
+          "acceptedAnswers": [
+            "hostel"
+          ],
+          "acceptedTranslations": [
+            "hostel",
+            "schronisko młodzieżowe"
+          ]
+        },
+        {
+          "id": "hotel.bed-and-breakfast",
+          "term": "bed and breakfast",
+          "ipa": "/ˌbed ən ˈbrekfəst/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "pensjonat ze śniadaniem",
+          "definition": "A small hotel, often in a house, where breakfast is included.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje noclegów",
+          "natural": "",
+          "forms": "bed and breakfasts",
+          "collocations": "stay at a bed and breakfast",
+          "synonyms": "B&B",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The hotel was full, so the clerk recommended a bed and breakfast nearby.",
+              "pl": "Hotel był pełny, więc recepcjonista polecił pobliski pensjonat ze śniadaniem.",
+              "focusEn": "bed and breakfast",
+              "focusPl": "pensjonat ze śniadaniem"
+            },
+            {
+              "en": "The owner of the bed and breakfast made us fresh waffles every morning.",
+              "pl": "Właścicielka pensjonatu ze śniadaniem co rano robiła nam świeże gofry.",
+              "focusEn": "bed and breakfast",
+              "focusPl": "pensjonatu ze śniadaniem"
+            }
+          ],
+          "acceptedAnswers": [
+            "bed and breakfast",
+            "B&B"
+          ],
+          "acceptedTranslations": [
+            "pensjonat ze śniadaniem",
+            "pensjonat",
+            "nocleg ze śniadaniem"
+          ]
+        },
+        {
+          "id": "hotel.resort",
+          "term": "resort",
+          "ipa": "/rɪˈzɔːrt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ośrodek wypoczynkowy",
+          "definition": "A large hotel with pools, restaurants and activities where people go on vacation.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje noclegów",
+          "natural": "",
+          "forms": "resorts",
+          "collocations": "beach resort; ski resort; all-inclusive resort",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The resort has three pools and its own private beach.",
+              "pl": "Ośrodek wypoczynkowy ma trzy baseny i własną prywatną plażę.",
+              "focusEn": "resort",
+              "focusPl": "Ośrodek wypoczynkowy"
+            },
+            {
+              "en": "We spent a week at an all-inclusive resort and never left.",
+              "pl": "Spędziliśmy tydzień w ośrodku wypoczynkowym all inclusive i w ogóle z niego nie wychodziliśmy.",
+              "focusEn": "resort",
+              "focusPl": "ośrodku wypoczynkowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "resort"
+          ],
+          "acceptedTranslations": [
+            "ośrodek wypoczynkowy",
+            "kurort"
+          ]
+        },
+        {
+          "id": "hotel.all-inclusive",
+          "term": "all-inclusive",
+          "ipa": "/ˌɔːl ɪnˈkluːsɪv/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "all inclusive",
+          "definition": "Including all meals, drinks and activities in the price.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje noclegów",
+          "natural": "",
+          "forms": "",
+          "collocations": "all-inclusive package; all-inclusive resort",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W Polsce mówi się po prostu „all inclusive”.",
+          "examples": [
+            {
+              "en": "Our package is all-inclusive, so the drinks at the pool bar are free.",
+              "pl": "Nasz pakiet jest all inclusive, więc drinki w barze przy basenie są darmowe.",
+              "focusEn": "all-inclusive",
+              "focusPl": "all inclusive"
+            },
+            {
+              "en": "The clerk explained that the all-inclusive wristband gets you into every restaurant.",
+              "pl": "Recepcjonista wyjaśnił, że opaska all inclusive uprawnia do wejścia do każdej restauracji.",
+              "focusEn": "all-inclusive",
+              "focusPl": "all inclusive"
+            }
+          ],
+          "acceptedAnswers": [
+            "all-inclusive",
+            "all inclusive"
+          ],
+          "acceptedTranslations": [
+            "all inclusive",
+            "wszystko wliczone w cenę"
+          ]
+        },
+        {
+          "id": "hotel.accommodations",
+          "term": "accommodations",
+          "ipa": "/əˌkɑːməˈdeɪʃnz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zakwaterowanie",
+          "definition": "A place to stay, such as a hotel room.",
+          "register": "formalny",
+          "contextPl": "Pobyt w hotelu",
+          "natural": "",
+          "forms": "(zwykle liczba mnoga w AmE)",
+          "collocations": "find accommodations; book accommodations",
+          "synonyms": "lodging",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The conference fee includes accommodations for three nights.",
+              "pl": "Opłata za konferencję obejmuje zakwaterowanie na trzy noce.",
+              "focusEn": "accommodations",
+              "focusPl": "zakwaterowanie"
+            },
+            {
+              "en": "The front desk helped us find accommodations for our friends in town.",
+              "pl": "Recepcja pomogła nam znaleźć zakwaterowanie dla naszych znajomych w mieście.",
+              "focusEn": "accommodations",
+              "focusPl": "zakwaterowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "accommodations",
+            "accommodation",
+            "lodging"
+          ],
+          "acceptedTranslations": [
+            "zakwaterowanie",
+            "nocleg",
+            "kwatera"
+          ]
+        }
+      ]
+    }
+  ]
+}

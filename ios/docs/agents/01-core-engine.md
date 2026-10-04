@@ -1,0 +1,31 @@
+# Rola: core-engine — FluentKit (logika domenowa)
+
+Fala 1. Obszar: **wyłącznie** `ios/Packages/FluentKit/`. Raport: `ios/docs/reports/core-engine.md`.
+
+## Cel
+
+Czysty, w pełni przetestowany pakiet Swift z całą logiką nauki. To serce aplikacji — inne role budują UI i trwałość na twoim API. Ma być deterministyczny, szybki i bezbłędny. Przenosisz zachowanie strony (`web-source/lib/*.ts`), poprawiając błędy.
+
+## Zakres
+
+1. **Package.swift** — `swift-tools-version: 5.9`, produkt biblioteki `FluentKit`, platformy `.iOS(.v17), .macOS(.v14)`, target testów `FluentKitTests` (XCTest). Zasoby: brak (treść jest w aplikacji; pakiet dostaje `Data`/`URL` do dekodowania).
+2. **Models/** — odpowiedniki typów z `learning.ts`, `tutor-types.ts`, `combined-session.ts`: `Skill`, `Score`, `Meaning`, `Word`, `Review`, `VocabTask`, `VocabSession`, `LearnerSettings`, `LearnerState` (+ historie czytania/praktyki/produkcji, `reviewSummaries`, `grammarSeen`), `ExamplePair`, `Lookup`, `SenseSuggestion`, `Grade`, `Reading`, `ReadingSession`, `Recommendation`, `PracticeQuestion`, `PracticeSet`, `PracticeSession`, `ProductionItem`, `ProductionSet`, `ProductionResult`, `ProductionSession`, `StudyMode`, `CombinedTask`, `CombinedAnswer`, `CombinedSession`. Wszystko `struct`/`enum`, `Codable, Sendable, Hashable`. `Codable` **zgodny z JSON-em eksportu strony** (te same klucze; brakujące pola opcjonalne → wartości domyślne, jak `migrateState`). Pisz własne `init(from:)` z `decodeIfPresent` tam, gdzie strona ma pola opcjonalne/legacy — import starego eksportu nie może się wysypać. Fixture: `web-source/tests/fixtures/state-v31.json` — skopiuj do `Tests/FluentKitTests/Fixtures/` i testuj dekodowanie.
+3. **Scheduling/** — `schedule`, `recordAnswer`, `masteryFromInterval`, `mastery`, `wordMastery`, `due`, `status` (Nowe/Uczę się/Trudne/Opanowane/Do odświeżenia/Archiwum), progi (`MASTERED_THRESHOLD = 85`, trudne: ≥3 błędy i <65), `applyReadingResults`. Dokładnie jak strona + `plan-produktu.md` §6 oraz `RAPORT-A-E.md` §E. Czas wstrzykiwany.
+4. **Sessions/** — `makeSession` (budżet 5/10/15 min, `taskSeconds`, powtórki → nowe znaczenia), `allowedTaskTypes`, `interleaveTasks` (deterministyczne przeplatanie, jak w RAPORT-A-E §A), `meaningOptions` (dystraktory dla „Wybierz znaczenie”), `confusable` (pary borrow/lend, say/tell, make/do), tryb pomyłek, `makeCombinedSession`/`orderCombinedTasks`/`saveCombinedAnswer`/`advanceCombined` (8 trybów: mixed, mistakes, pairs, reading, grammar, idioms, production, language-mix), wybór zadań gramatycznych (`selectGrammarItems`, `grammarSeen`), wybór czytanki (`selectBankReading`), `estimatedLevel` (CEFR), `recommendations`, `selectReadingMeanings`. RNG wstrzykiwany (`inout some RandomNumberGenerator`; dostarcz `SeededGenerator` do testów).
+5. **Grading/** — `normalize`, `levenshtein`, `answerKey`, `englishAnswerKey`, `withoutDialectLabel`, `polishAnswers`, `vocabularyAnswers`, `localGrade` (warianty, tolerancja literówek, osobna ocena pisowni, dyktando dokładne, „uncertain” nie oblewa), `gradeProduction` + `normalizeProduction` (skróty they'd/I'd/she's/didn't; kolejność: poprawna → znany dystraktor → literówka → błąd ogólny), `checkPracticeInput`, `clozeSpan`/`clozeText` (luka z formą odmienioną), `exerciseAudioText`/`vocabularyAudioText`. Dane wariantów (`answer-variants`) przyjmuj jako wstrzykiwany `AnswerVariants` (dekodowany z `answer-variants.json` przez aplikację) z sensownym wbudowanym domyślnym zestawem minimalnym w kodzie, żeby testy działały.
+6. **Content/** — dekodery treści wg `ios/docs/CONTENT-SCHEMA.md`: `TopicFile`, `TopicEntry`, `TopicIndex`, `DictionaryIndex`, `GrammarBank`, `IdiomBank`, `ReadingBank`, `StarterWords`, `RecommendationBank`, `AnswerVariants`. Konwersja `TopicEntry → Word` (nowe słowo z jednym znaczeniem, `collection` = nazwa tematu, `topic`/`scene` z kategorii, przykłady + tłumaczenia + focus). `ContentSearch`: wyszukiwanie w `DictionaryIndex` (prefiks + dokładne + fuzzy z `levenshtein`, polskie zapytania po `p`), wynik < 5 ms na 20 000 rekordów (zbuduj indeks w pamięci raz). Dodawanie istniejącego znaczenia nie kasuje postępu (scalanie po `en`+`translation`, jak strona).
+7. **Sync/** — `compactReviews` i `mergeStates` (scalanie dwóch `LearnerState` — dla synchronizacji i importu), plus `mergeWord(_:_:)` per słowo (używane przez platform-services przy duplikatach rekordów CloudKit).
+8. **ImportExport/** — import: pełny JSON eksportu strony (z migracją), listy słów, CSV/TSV (jak na stronie); eksport: pełny JSON (`LearnerState`), CSV dla Anki. Walidacja wejścia z czytelnymi polskimi błędami, limit rozmiaru.
+9. **Statystyki** — czyste funkcje dla ekranu Postępy: tydzień (histogram), kalendarz aktywności, umiejętności (średnie), postęp wg poziomu CEFR, prognoza powtórek (ile wymagalnych w kolejnych 7 dniach), tygodniowe przekroczenia progu opanowania, trudne słowa, seria dni (streak), dzienny cel. Zwracaj gotowe `struct`y do wykresów.
+
+## Wymagania jakości
+
+- Każda publiczna funkcja ma test. Przenieś przypadki z `web-source/tests/learning.test.mjs`, `tutor.test.mjs` (część lokalna), `ui-components.test.mjs` (część logiki) — to nasz zestaw regresji. Dodaj własne testy brzegowe (puste dane, 0 znaczeń, ogromne listy, NaN/ujemne czasy, daty w przyszłości, duplikaty ID).
+- Test wydajności: `makeSession` na 5 000 słowach < 50 ms, `ContentSearch` < 5 ms/zapytanie (XCTest `measure` lub prosty pomiar z asercją z dużym marginesem).
+- Żadnych `!`, `try!`, `fatalError`. Funkcje czyste (wejście → wyjście), bez singletonów i stanu globalnego.
+- Daty: zdecyduj (`Double` ms jak strona vs `Date`) i udokumentuj; JSON eksportu strony ma liczby ms — musi się wczytać.
+- Kod musi się kompilować bez kompilatora (patrz brief §5): po napisaniu każdego pliku przeczytaj go krytycznie. Na końcu zrób osobny przegląd całego pakietu pod kątem błędów kompilacji (importy `Foundation`, `Sendable` na typach w `static let`, `Codable` enumów z wartościami powiązanymi, wyczerpujące `switch`).
+
+## Wynik
+
+W raporcie podaj **pełną listę publicznego API** (sygnatury) pogrupowaną modułami — na jej podstawie koordynator napisze kontrakt dla fali 2 (platform-services, ui-learning, ui-library). Wypisz też znalezione błędy strony i jak je poprawiłeś.

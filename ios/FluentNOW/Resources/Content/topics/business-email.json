@@ -1,0 +1,2921 @@
+{
+  "schemaVersion": 1,
+  "id": "business-email",
+  "namePl": "Korespondencja służbowa",
+  "nameEn": "Business Email",
+  "group": "work",
+  "symbol": "envelope",
+  "summaryPl": "Mail służbowy od podstaw: odbiorcy i załączniki, uprzejme powitania, prośby, zakończenia, pomyłki i etykieta.",
+  "aliases": [
+    "korespondencja służbowa",
+    "mail służbowy",
+    "e-mail",
+    "email",
+    "poczta",
+    "pisanie maili",
+    "business email",
+    "business correspondence"
+  ],
+  "categories": [
+    {
+      "id": "business-email.basics",
+      "namePl": "Podstawy maila",
+      "scenePl": "Poranne pisanie i wysyłanie maila do klienta przy biurku w biurze",
+      "entries": [
+        {
+          "id": "business-email.email",
+          "term": "email",
+          "ipa": "/ˈiːˌmeɪl/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "e-mail",
+          "definition": "A message sent from one computer or phone to another.",
+          "register": "neutralny",
+          "contextPl": "Korespondencja elektroniczna w pracy",
+          "natural": "",
+          "forms": "emails",
+          "collocations": "send an email; get an email; work email; email address",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Jako czasownik: „I'll email you” = „Napiszę do ciebie maila”.",
+          "examples": [
+            {
+              "en": "I wrote a short email to the client before my first meeting.",
+              "pl": "Przed pierwszym spotkaniem napisałem krótkiego maila do klienta.",
+              "focusEn": "email",
+              "focusPl": "maila"
+            },
+            {
+              "en": "Her email arrived just as I was leaving for lunch.",
+              "pl": "Jej mail przyszedł akurat, kiedy wychodziłem na lunch.",
+              "focusEn": "email",
+              "focusPl": "mail"
+            }
+          ],
+          "acceptedAnswers": [
+            "email",
+            "e-mail",
+            "mail"
+          ],
+          "acceptedTranslations": [
+            "e-mail",
+            "mail",
+            "wiadomość e-mail",
+            "wiadomość"
+          ]
+        },
+        {
+          "id": "business-email.send",
+          "term": "send",
+          "ipa": "/sɛnd/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "wysłać",
+          "definition": "To make a message go to someone.",
+          "register": "neutralny",
+          "contextPl": "Wysyłanie wiadomości",
+          "natural": "",
+          "forms": "send – sent – sent",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll send you the contract before noon.",
+              "pl": "Wyślę ci umowę przed południem.",
+              "focusEn": "send",
+              "focusPl": "Wyślę"
+            },
+            {
+              "en": "I sent the email and then noticed a typo in the first line.",
+              "pl": "Wysłałam maila i dopiero wtedy zauważyłam literówkę w pierwszej linijce.",
+              "focusEn": "sent",
+              "focusPl": "Wysłałam"
+            }
+          ],
+          "acceptedAnswers": [
+            "send"
+          ],
+          "acceptedTranslations": [
+            "wysłać",
+            "wysyłać",
+            "przesłać",
+            "przesyłać"
+          ]
+        },
+        {
+          "id": "business-email.reply",
+          "term": "reply",
+          "ipa": "/rɪˈplaɪ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odpowiedzieć",
+          "definition": "To write an answer to a message.",
+          "register": "neutralny",
+          "contextPl": "Odpowiadanie na maile",
+          "natural": "",
+          "forms": "reply – replied – replied",
+          "collocations": "reply to an email; reply quickly",
+          "synonyms": "respond; write back",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I need to reply to the client before ten.",
+              "pl": "Muszę odpowiedzieć klientowi przed dziesiątą.",
+              "focusEn": "reply",
+              "focusPl": "odpowiedzieć"
+            },
+            {
+              "en": "She replied within five minutes, which surprised me.",
+              "pl": "Odpisała w ciągu pięciu minut, co mnie zaskoczyło.",
+              "focusEn": "replied",
+              "focusPl": "Odpisała"
+            }
+          ],
+          "acceptedAnswers": [
+            "reply",
+            "respond",
+            "write back"
+          ],
+          "acceptedTranslations": [
+            "odpowiedzieć",
+            "odpowiadać",
+            "odpisać",
+            "odpisywać"
+          ]
+        },
+        {
+          "id": "business-email.inbox",
+          "term": "inbox",
+          "ipa": "/ˈɪnˌbɑːks/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "skrzynka odbiorcza",
+          "definition": "The place where new emails arrive.",
+          "register": "neutralny",
+          "contextPl": "Przeglądanie nowych wiadomości",
+          "natural": "",
+          "forms": "inboxes",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I had forty new messages in my inbox this morning.",
+              "pl": "Dziś rano miałem w skrzynce odbiorczej czterdzieści nowych wiadomości.",
+              "focusEn": "inbox",
+              "focusPl": "skrzynce odbiorczej"
+            },
+            {
+              "en": "Check your inbox; I just sent the invoice.",
+              "pl": "Sprawdź skrzynkę, właśnie wysłałem fakturę.",
+              "focusEn": "inbox",
+              "focusPl": "skrzynkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "inbox"
+          ],
+          "acceptedTranslations": [
+            "skrzynka odbiorcza",
+            "skrzynka",
+            "poczta przychodząca"
+          ]
+        },
+        {
+          "id": "business-email.subject-line",
+          "term": "subject line",
+          "ipa": "/ˈsʌbdʒɪkt ˌlaɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "temat wiadomości",
+          "definition": "The short title of an email that tells the reader what it is about.",
+          "register": "neutralny",
+          "contextPl": "Tytuł maila widoczny w skrzynce",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Write a clear subject line so the client knows it's urgent.",
+              "pl": "Napisz jasny temat wiadomości, żeby klient wiedział, że to pilne.",
+              "focusEn": "subject line",
+              "focusPl": "temat wiadomości"
+            },
+            {
+              "en": "I forgot the subject line, so my email looked like spam.",
+              "pl": "Zapomniałem wpisać temat, więc mój mail wyglądał jak spam.",
+              "focusEn": "subject line",
+              "focusPl": "temat"
+            }
+          ],
+          "acceptedAnswers": [
+            "subject line",
+            "subject"
+          ],
+          "acceptedTranslations": [
+            "temat wiadomości",
+            "temat",
+            "tytuł maila"
+          ]
+        },
+        {
+          "id": "business-email.attachment",
+          "term": "attachment",
+          "ipa": "/əˈtætʃmənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "załącznik",
+          "definition": "A file that is sent together with an email.",
+          "register": "neutralny",
+          "contextPl": "Pliki dołączane do maila",
+          "natural": "",
+          "forms": "attachments",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The attachment is too large, so I'll send a link instead.",
+              "pl": "Załącznik jest za duży, więc zamiast tego wyślę link.",
+              "focusEn": "attachment",
+              "focusPl": "Załącznik"
+            },
+            {
+              "en": "I can't open the attachment; could you send it as a PDF?",
+              "pl": "Nie mogę otworzyć załącznika, mógłbyś wysłać go jako PDF?",
+              "focusEn": "attachment",
+              "focusPl": "załącznika"
+            }
+          ],
+          "acceptedAnswers": [
+            "attachment"
+          ],
+          "acceptedTranslations": [
+            "załącznik",
+            "plik w załączniku"
+          ]
+        },
+        {
+          "id": "business-email.forward",
+          "term": "forward",
+          "ipa": "/ˈfɔːrwərd/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przekazać dalej",
+          "definition": "To send an email you received to another person.",
+          "register": "neutralny",
+          "contextPl": "Przesyłanie dalej otrzymanych maili",
+          "natural": "",
+          "forms": "forward – forwarded – forwarded",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you forward me the client's last email?",
+              "pl": "Możesz przesłać mi ostatniego maila od klienta?",
+              "focusEn": "forward",
+              "focusPl": "przesłać"
+            },
+            {
+              "en": "I forwarded the invoice to accounting this morning.",
+              "pl": "Rano przekazałem fakturę do księgowości.",
+              "focusEn": "forwarded",
+              "focusPl": "przekazałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "forward"
+          ],
+          "acceptedTranslations": [
+            "przekazać dalej",
+            "przesłać dalej",
+            "przekazywać",
+            "przesyłać dalej"
+          ]
+        },
+        {
+          "id": "business-email.reply-all",
+          "term": "reply all",
+          "ipa": "/rɪˌplaɪ ˈɔːl/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odpowiedzieć wszystkim",
+          "definition": "To answer an email so that everyone who received it also gets your answer.",
+          "register": "neutralny",
+          "contextPl": "Odpowiadanie wszystkim adresatom wiadomości",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Używaj ostrożnie: odpowiedź trafi do wszystkich odbiorców.",
+          "examples": [
+            {
+              "en": "Please don't reply all; just answer me directly.",
+              "pl": "Proszę nie odpowiadać wszystkim, tylko bezpośrednio mnie.",
+              "focusEn": "reply all",
+              "focusPl": "odpowiadać wszystkim"
+            },
+            {
+              "en": "He accidentally replied all and forty people saw his joke.",
+              "pl": "Przez przypadek odpowiedział wszystkim i jego żart zobaczyło czterdzieści osób.",
+              "focusEn": "replied all",
+              "focusPl": "odpowiedział wszystkim"
+            }
+          ],
+          "acceptedAnswers": [
+            "reply all",
+            "reply-all"
+          ],
+          "acceptedTranslations": [
+            "odpowiedzieć wszystkim",
+            "odpowiadać wszystkim",
+            "odpisać wszystkim"
+          ]
+        },
+        {
+          "id": "business-email.recipient",
+          "term": "recipient",
+          "ipa": "/rɪˈsɪpiənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odbiorca",
+          "definition": "A person who receives a message or letter.",
+          "register": "neutralny",
+          "contextPl": "Adresaci maila",
+          "natural": "",
+          "forms": "recipients",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "sender",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Check the recipient before you hit send.",
+              "pl": "Zanim klikniesz „wyślij”, sprawdź odbiorcę.",
+              "focusEn": "recipient",
+              "focusPl": "odbiorcę"
+            },
+            {
+              "en": "The email had too many recipients, so the server blocked it.",
+              "pl": "Mail miał zbyt wielu odbiorców, więc serwer go zablokował.",
+              "focusEn": "recipients",
+              "focusPl": "odbiorców"
+            }
+          ],
+          "acceptedAnswers": [
+            "recipient"
+          ],
+          "acceptedTranslations": [
+            "odbiorca",
+            "adresat",
+            "odbiorczyni"
+          ]
+        },
+        {
+          "id": "business-email.cc",
+          "term": "cc",
+          "ipa": "/ˌsiːˈsiː/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dodać do kopii",
+          "definition": "To send a copy of an email to someone who is not the main recipient.",
+          "register": "neutralny",
+          "contextPl": "Informowanie dodatkowych osób o korespondencji",
+          "natural": "",
+          "forms": "cc – cc'd – cc'd",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Skrót od „carbon copy”. „Bcc” to ukryta kopia.",
+          "examples": [
+            {
+              "en": "Please cc my manager on your reply.",
+              "pl": "Proszę w odpowiedzi dodać do kopii mojego kierownika.",
+              "focusEn": "cc",
+              "focusPl": "dodać do kopii"
+            },
+            {
+              "en": "I cc'd the whole team so everyone knows the new date.",
+              "pl": "Dodałem do kopii cały zespół, żeby wszyscy znali nowy termin.",
+              "focusEn": "cc'd",
+              "focusPl": "Dodałem do kopii"
+            }
+          ],
+          "acceptedAnswers": [
+            "cc",
+            "copy",
+            "copy in"
+          ],
+          "acceptedTranslations": [
+            "dodać do kopii",
+            "dać do wiadomości",
+            "wpisać do DW",
+            "dodać do DW"
+          ]
+        },
+        {
+          "id": "business-email.signature",
+          "term": "signature",
+          "ipa": "/ˈsɪɡnətʃər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stopka",
+          "definition": "The name and contact details automatically added at the end of an email.",
+          "register": "neutralny",
+          "contextPl": "Podpis pod mailem z danymi kontaktowymi",
+          "natural": "",
+          "forms": "signatures",
+          "collocations": "email signature; update your signature",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I added my new phone number to my email signature.",
+              "pl": "Dodałam nowy numer telefonu do stopki maila.",
+              "focusEn": "signature",
+              "focusPl": "stopki"
+            },
+            {
+              "en": "Your signature still shows your old job title.",
+              "pl": "Twoja stopka nadal pokazuje twoje stare stanowisko.",
+              "focusEn": "signature",
+              "focusPl": "stopka"
+            }
+          ],
+          "acceptedAnswers": [
+            "signature",
+            "email signature"
+          ],
+          "acceptedTranslations": [
+            "stopka",
+            "podpis",
+            "stopka mailowa",
+            "podpis w mailu"
+          ]
+        },
+        {
+          "id": "business-email.thread",
+          "term": "thread",
+          "ipa": "/θrɛd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wątek",
+          "definition": "A series of emails replying to each other about one subject.",
+          "register": "neutralny",
+          "contextPl": "Śledzenie korespondencji w jednej sprawie",
+          "natural": "",
+          "forms": "threads",
+          "collocations": "email thread; long thread; start a new thread",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The answer is somewhere in that long thread from last week.",
+              "pl": "Odpowiedź jest gdzieś w tym długim wątku z zeszłego tygodnia.",
+              "focusEn": "thread",
+              "focusPl": "wątku"
+            },
+            {
+              "en": "I'll start a new thread so we don't mix up the two projects.",
+              "pl": "Założę nowy wątek, żebyśmy nie pomieszali dwóch projektów.",
+              "focusEn": "thread",
+              "focusPl": "wątek"
+            }
+          ],
+          "acceptedAnswers": [
+            "thread",
+            "email thread"
+          ],
+          "acceptedTranslations": [
+            "wątek",
+            "wątek mailowy",
+            "korespondencja"
+          ]
+        },
+        {
+          "id": "business-email.email-address",
+          "term": "email address",
+          "ipa": "/ˈiːˌmeɪl əˌdrɛs/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "adres e-mail",
+          "definition": "The name you use to receive emails, for example name@company.com.",
+          "register": "neutralny",
+          "contextPl": "Dane kontaktowe do korespondencji",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W amerykańskim angielskim akcent często: /ˈædrɛs/.",
+          "examples": [
+            {
+              "en": "Could you spell your email address for me?",
+              "pl": "Może mi pan przeliterować swój adres e-mail?",
+              "focusEn": "email address",
+              "focusPl": "adres e-mail"
+            },
+            {
+              "en": "I typed the wrong email address, so the message bounced back.",
+              "pl": "Wpisałem zły adres e-mail, więc wiadomość wróciła.",
+              "focusEn": "email address",
+              "focusPl": "adres e-mail"
+            }
+          ],
+          "acceptedAnswers": [
+            "email address",
+            "address",
+            "e-mail address"
+          ],
+          "acceptedTranslations": [
+            "adres e-mail",
+            "adres mailowy",
+            "mail"
+          ]
+        },
+        {
+          "id": "business-email.bcc",
+          "term": "bcc",
+          "ipa": "/ˌbiːsiːˈsiː/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "dodać do ukrytej kopii",
+          "definition": "To send a copy of an email without the other recipients seeing it.",
+          "register": "neutralny",
+          "contextPl": "Ukrywanie adresów odbiorców",
+          "natural": "",
+          "forms": "bcc – bcc'd – bcc'd",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Skrót od „blind carbon copy”.",
+          "examples": [
+            {
+              "en": "I bcc'd all the clients so they can't see each other's addresses.",
+              "pl": "Wszystkich klientów dodałem do ukrytej kopii, żeby nie widzieli swoich adresów.",
+              "focusEn": "bcc'd",
+              "focusPl": "dodałem do ukrytej kopii"
+            },
+            {
+              "en": "Be careful when you bcc someone; they might reply to everyone.",
+              "pl": "Uważaj, kiedy dodajesz kogoś do ukrytej kopii: ta osoba może odpowiedzieć wszystkim.",
+              "focusEn": "bcc",
+              "focusPl": "dodajesz kogoś do ukrytej kopii"
+            }
+          ],
+          "acceptedAnswers": [
+            "bcc"
+          ],
+          "acceptedTranslations": [
+            "dodać do ukrytej kopii",
+            "wpisać do UDW",
+            "ukryta kopia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business-email.openings",
+      "namePl": "Powitania i początek maila",
+      "scenePl": "Rozpoczynanie maila do nowej osoby kontaktowej w firmie klienta",
+      "entries": [
+        {
+          "id": "business-email.dear",
+          "term": "dear",
+          "ipa": "/dɪr/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "szanowny",
+          "definition": "A word used before someone's name at the start of a formal email or letter.",
+          "register": "neutralny",
+          "contextPl": "Formalne powitanie w mailu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po „Dear Ms. Lopez” w USA zwykle stawia się przecinek (formalnie dwukropek).",
+          "examples": [
+            {
+              "en": "I started with “Dear Ms. Lopez” because we've never met.",
+              "pl": "Zacząłem od „Szanowna Pani Lopez”, bo nigdy się nie spotkaliśmy.",
+              "focusEn": "Dear",
+              "focusPl": "Szanowna"
+            },
+            {
+              "en": "In my first email to the new client, I wrote “Dear Mr. Carter” at the top.",
+              "pl": "W pierwszym mailu do nowego klienta napisałam na górze „Szanowny Panie Carter”.",
+              "focusEn": "Dear",
+              "focusPl": "Szanowny"
+            }
+          ],
+          "acceptedAnswers": [
+            "dear"
+          ],
+          "acceptedTranslations": [
+            "szanowny",
+            "szanowna",
+            "drogi",
+            "droga"
+          ]
+        },
+        {
+          "id": "business-email.hi",
+          "term": "hi",
+          "ipa": "/haɪ/",
+          "pos": "wykrzyknik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "cześć",
+          "definition": "An informal greeting, also common at the start of work emails.",
+          "register": "neutralny",
+          "contextPl": "Mniej formalne powitanie w mailu służbowym",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA „Hi Tom,” to bardzo częsty początek maila nawet w pracy.",
+          "examples": [
+            {
+              "en": "After a few emails, she switched from “Dear Mr. Lee” to “Hi Daniel”.",
+              "pl": "Po kilku mailach zmieniła „Szanowny Panie Lee” na „Cześć, Danielu”.",
+              "focusEn": "Hi",
+              "focusPl": "Cześć"
+            },
+            {
+              "en": "I always write “Hi everyone” when I email the whole team.",
+              "pl": "Kiedy piszę maila do całego zespołu, zawsze zaczynam od „Cześć wszystkim”.",
+              "focusEn": "Hi",
+              "focusPl": "Cześć"
+            }
+          ],
+          "acceptedAnswers": [
+            "hi",
+            "hello"
+          ],
+          "acceptedTranslations": [
+            "cześć",
+            "dzień dobry",
+            "witam",
+            "hej"
+          ]
+        },
+        {
+          "id": "business-email.thank-you-for-your-email",
+          "term": "thank you for your email",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dziękuję za wiadomość",
+          "definition": "A polite way to begin a reply to someone's email.",
+          "register": "neutralny",
+          "contextPl": "Uprzejmy początek odpowiedzi",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I began my reply with “Thank you for your email” and answered her questions.",
+              "pl": "Odpowiedź zaczęłam od „Dziękuję za wiadomość” i odpowiedziałam na jej pytania.",
+              "focusEn": "Thank you for your email",
+              "focusPl": "Dziękuję za wiadomość"
+            },
+            {
+              "en": "Thank you for your email; I'll check the prices and get back to you.",
+              "pl": "Dziękuję za wiadomość, sprawdzę ceny i się odezwę.",
+              "focusEn": "Thank you for your email",
+              "focusPl": "Dziękuję za wiadomość"
+            }
+          ],
+          "acceptedAnswers": [
+            "thank you for your email",
+            "thanks for your email",
+            "thank you for your message"
+          ],
+          "acceptedTranslations": [
+            "dziękuję za wiadomość",
+            "dziękuję za maila",
+            "dziękuję za e-mail"
+          ]
+        },
+        {
+          "id": "business-email.im-writing-to",
+          "term": "I'm writing to",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "piszę, aby",
+          "definition": "A common way to explain the reason for your email.",
+          "register": "neutralny",
+          "contextPl": "Wskazanie celu wiadomości na początku maila",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm writing to ask about the delivery date of our order.",
+              "pl": "Piszę, aby zapytać o termin dostawy naszego zamówienia.",
+              "focusEn": "I'm writing to",
+              "focusPl": "Piszę, aby"
+            },
+            {
+              "en": "My first line was simple: I'm writing to introduce myself as your new contact.",
+              "pl": "Moje pierwsze zdanie było proste: Piszę, aby przedstawić się jako pana nowa osoba kontaktowa.",
+              "focusEn": "I'm writing to",
+              "focusPl": "Piszę, aby"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'm writing to",
+            "I am writing to"
+          ],
+          "acceptedTranslations": [
+            "piszę, aby",
+            "piszę w celu",
+            "zwracam się, aby",
+            "piszę w sprawie"
+          ]
+        },
+        {
+          "id": "business-email.regarding",
+          "term": "regarding",
+          "ipa": "/rɪˈɡɑːrdɪŋ/",
+          "pos": "przyimek",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "w sprawie",
+          "definition": "About; used to say what a message is about.",
+          "register": "neutralny",
+          "contextPl": "Wskazywanie tematu maila",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "about; concerning",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm writing regarding your order from last Tuesday.",
+              "pl": "Piszę w sprawie pana zamówienia z zeszłego wtorku.",
+              "focusEn": "regarding",
+              "focusPl": "w sprawie"
+            },
+            {
+              "en": "I have a quick question regarding the new contract.",
+              "pl": "Mam krótkie pytanie dotyczące nowej umowy.",
+              "focusEn": "regarding",
+              "focusPl": "dotyczące"
+            }
+          ],
+          "acceptedAnswers": [
+            "regarding",
+            "concerning",
+            "about",
+            "re"
+          ],
+          "acceptedTranslations": [
+            "w sprawie",
+            "dotyczący",
+            "odnośnie do",
+            "co do"
+          ]
+        },
+        {
+          "id": "business-email.i-hope-this-email-finds-you-well",
+          "term": "I hope this email finds you well",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "mam nadzieję, że u pana wszystko dobrze",
+          "definition": "A polite opening line in a formal or friendly business email.",
+          "register": "formalny",
+          "contextPl": "Grzecznościowy początek maila do kogoś, z kim rzadko się pisze",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Częsta, ale trochę szablonowa formuła; w krótkich mailach można ją pominąć.",
+          "examples": [
+            {
+              "en": "I hope this email finds you well; I wanted to ask about your plans for next year.",
+              "pl": "Mam nadzieję, że u pana wszystko w porządku. Chciałam zapytać o pana plany na przyszły rok.",
+              "focusEn": "I hope this email finds you well",
+              "focusPl": "Mam nadzieję, że u pana wszystko w porządku"
+            },
+            {
+              "en": "She opened with “I hope this email finds you well” and then got straight to the point.",
+              "pl": "Zaczęła od „Mam nadzieję, że wszystko u pana dobrze” i od razu przeszła do rzeczy.",
+              "focusEn": "I hope this email finds you well",
+              "focusPl": "Mam nadzieję, że wszystko u pana dobrze"
+            }
+          ],
+          "acceptedAnswers": [
+            "I hope this email finds you well",
+            "hope this email finds you well",
+            "I hope you're well",
+            "I hope you are doing well"
+          ],
+          "acceptedTranslations": [
+            "mam nadzieję, że u pana wszystko dobrze",
+            "mam nadzieję, że wszystko w porządku",
+            "mam nadzieję, że u ciebie wszystko dobrze"
+          ]
+        },
+        {
+          "id": "business-email.as-discussed",
+          "term": "as discussed",
+          "ipa": "/æz dɪˈskʌst/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zgodnie z ustaleniami",
+          "definition": "Used to refer to something that was talked about earlier.",
+          "register": "neutralny",
+          "contextPl": "Nawiązanie do wcześniejszej rozmowy lub spotkania",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "As discussed on the phone, I'm sending you our price list.",
+              "pl": "Zgodnie z ustaleniami z rozmowy telefonicznej przesyłam nasz cennik.",
+              "focusEn": "As discussed",
+              "focusPl": "Zgodnie z ustaleniami"
+            },
+            {
+              "en": "As discussed yesterday, the meeting will start at nine.",
+              "pl": "Jak ustaliliśmy wczoraj, spotkanie zacznie się o dziewiątej.",
+              "focusEn": "As discussed",
+              "focusPl": "Jak ustaliliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "as discussed",
+            "as we discussed",
+            "as agreed"
+          ],
+          "acceptedTranslations": [
+            "zgodnie z ustaleniami",
+            "jak ustaliliśmy",
+            "zgodnie z rozmową",
+            "tak jak rozmawialiśmy"
+          ]
+        },
+        {
+          "id": "business-email.following-up-on",
+          "term": "following up on",
+          "ipa": "/ˈfɑːloʊɪŋ ˈʌp ɑːn/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nawiązując do",
+          "definition": "Used at the start of an email that continues an earlier conversation or request.",
+          "register": "neutralny",
+          "contextPl": "Ponowny kontakt w tej samej sprawie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm following up on my email from last week about the invoice.",
+              "pl": "Nawiązuję do mojego maila z zeszłego tygodnia w sprawie faktury.",
+              "focusEn": "following up on",
+              "focusPl": "Nawiązuję do"
+            },
+            {
+              "en": "Just following up on our call; did you have a chance to read the proposal?",
+              "pl": "Wracam do naszej rozmowy: czy miał pan okazję przeczytać propozycję?",
+              "focusEn": "following up on",
+              "focusPl": "Wracam do"
+            }
+          ],
+          "acceptedAnswers": [
+            "following up on",
+            "follow up on",
+            "following up"
+          ],
+          "acceptedTranslations": [
+            "nawiązując do",
+            "wracam do",
+            "w nawiązaniu do"
+          ]
+        },
+        {
+          "id": "business-email.in-response-to",
+          "term": "in response to",
+          "ipa": "/ɪn rɪˈspɑːns tuː/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "w odpowiedzi na",
+          "definition": "As an answer or reaction to something.",
+          "register": "formalny",
+          "contextPl": "Formalne nawiązanie do otrzymanej wiadomości",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "In response to your question, the order will ship on Monday.",
+              "pl": "W odpowiedzi na pana pytanie: zamówienie zostanie wysłane w poniedziałek.",
+              "focusEn": "In response to",
+              "focusPl": "W odpowiedzi na"
+            },
+            {
+              "en": "I wrote this email in response to the client's complaint.",
+              "pl": "Napisałem ten mail w odpowiedzi na reklamację klienta.",
+              "focusEn": "in response to",
+              "focusPl": "w odpowiedzi na"
+            }
+          ],
+          "acceptedAnswers": [
+            "in response to"
+          ],
+          "acceptedTranslations": [
+            "w odpowiedzi na",
+            "odpowiadając na",
+            "w reakcji na"
+          ]
+        },
+        {
+          "id": "business-email.just-a-quick-note",
+          "term": "just a quick note",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "tylko krótka informacja",
+          "definition": "An informal way to start a short email.",
+          "register": "potoczny",
+          "contextPl": "Swobodny początek krótkiego maila",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Just a quick note to say the files are on the shared drive.",
+              "pl": "Tylko krótka informacja: pliki są na dysku współdzielonym.",
+              "focusEn": "Just a quick note",
+              "focusPl": "Tylko krótka informacja"
+            },
+            {
+              "en": "I wrote “Just a quick note” at the top, and the whole email was two lines.",
+              "pl": "Na górze napisałam „Krótka informacja”, a cały mail miał dwie linijki.",
+              "focusEn": "Just a quick note",
+              "focusPl": "Krótka informacja"
+            }
+          ],
+          "acceptedAnswers": [
+            "just a quick note",
+            "a quick note",
+            "quick note"
+          ],
+          "acceptedTranslations": [
+            "tylko krótka informacja",
+            "krótka informacja",
+            "tylko szybka wiadomość"
+          ]
+        },
+        {
+          "id": "business-email.to-whom-it-may-concern",
+          "term": "to whom it may concern",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "szanowni państwo",
+          "definition": "A very formal greeting used when you do not know the reader's name.",
+          "register": "formalny",
+          "contextPl": "Formalne powitanie, gdy nie znamy nazwiska adresata",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Brzmi bardzo oficjalnie; lepiej poszukać nazwiska lub napisać „Dear Hiring Team”.",
+          "examples": [
+            {
+              "en": "I didn't know the manager's name, so I started with “To whom it may concern”.",
+              "pl": "Nie znałem nazwiska kierownika, więc zacząłem od „Szanowni Państwo”.",
+              "focusEn": "To whom it may concern",
+              "focusPl": "Szanowni Państwo"
+            },
+            {
+              "en": "My boss told me that “To whom it may concern” sounds too old-fashioned for this client.",
+              "pl": "Szef powiedział mi, że „Szanowni Państwo, do wiadomości zainteresowanych” brzmi zbyt staroświecko jak na tego klienta.",
+              "focusEn": "To whom it may concern",
+              "focusPl": "Szanowni Państwo, do wiadomości zainteresowanych"
+            }
+          ],
+          "acceptedAnswers": [
+            "to whom it may concern"
+          ],
+          "acceptedTranslations": [
+            "szanowni państwo",
+            "do wszystkich zainteresowanych",
+            "do zainteresowanych"
+          ]
+        },
+        {
+          "id": "business-email.reach-out",
+          "term": "reach out",
+          "ipa": "/ˌriːtʃ ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skontaktować się",
+          "definition": "To contact someone, often for the first time.",
+          "register": "neutralny",
+          "contextPl": "Nawiązywanie kontaktu mailowego",
+          "natural": "",
+          "forms": "reach – reached – reached",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm reaching out because a colleague gave me your name.",
+              "pl": "Kontaktuję się z panem, ponieważ kolega podał mi pana nazwisko.",
+              "focusEn": "reaching out",
+              "focusPl": "Kontaktuję się z panem"
+            },
+            {
+              "en": "Thanks for reaching out; I'd be happy to help with your order.",
+              "pl": "Dziękuję za kontakt, chętnie pomogę w sprawie zamówienia.",
+              "focusEn": "reaching out",
+              "focusPl": "kontakt"
+            }
+          ],
+          "acceptedAnswers": [
+            "reach out"
+          ],
+          "acceptedTranslations": [
+            "skontaktować się",
+            "kontaktować się",
+            "odezwać się",
+            "nawiązać kontakt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business-email.body",
+      "namePl": "Treść: prośby i informacje",
+      "scenePl": "Mail do klienta z prośbą o dokumenty i informacją o zmianie terminu dostawy",
+      "entries": [
+        {
+          "id": "business-email.please-let-me-know",
+          "term": "please let me know",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "proszę dać znać",
+          "definition": "A polite way to ask someone to tell you something.",
+          "register": "neutralny",
+          "contextPl": "Prośba o informację zwrotną",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please let me know if Thursday works for you.",
+              "pl": "Proszę dać znać, czy czwartek panu odpowiada.",
+              "focusEn": "Please let me know",
+              "focusPl": "Proszę dać znać"
+            },
+            {
+              "en": "Please let me know when the documents are ready.",
+              "pl": "Proszę dać mi znać, kiedy dokumenty będą gotowe.",
+              "focusEn": "Please let me know",
+              "focusPl": "Proszę dać mi znać"
+            }
+          ],
+          "acceptedAnswers": [
+            "please let me know",
+            "let me know"
+          ],
+          "acceptedTranslations": [
+            "proszę dać znać",
+            "daj znać",
+            "proszę o informację",
+            "proszę poinformować"
+          ]
+        },
+        {
+          "id": "business-email.could-you-please",
+          "term": "could you please",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "czy mógłby pan",
+          "definition": "A polite way to begin a request.",
+          "register": "neutralny",
+          "contextPl": "Uprzejme formułowanie próśb",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you please send me the signed contract by Friday?",
+              "pl": "Czy mógłby pan przesłać mi podpisaną umowę do piątku?",
+              "focusEn": "Could you please",
+              "focusPl": "Czy mógłby pan"
+            },
+            {
+              "en": "Could you please check the delivery address one more time?",
+              "pl": "Czy mogłaby pani jeszcze raz sprawdzić adres dostawy?",
+              "focusEn": "Could you please",
+              "focusPl": "Czy mogłaby pani"
+            }
+          ],
+          "acceptedAnswers": [
+            "could you please",
+            "could you"
+          ],
+          "acceptedTranslations": [
+            "czy mógłby pan",
+            "czy mogłaby pani",
+            "czy możesz",
+            "uprzejmie proszę"
+          ]
+        },
+        {
+          "id": "business-email.confirm",
+          "term": "confirm",
+          "ipa": "/kənˈfɜːrm/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "potwierdzić",
+          "definition": "To say or show that something is true or definitely arranged.",
+          "register": "neutralny",
+          "contextPl": "Potwierdzanie terminów, zamówień i ustaleń",
+          "natural": "",
+          "forms": "confirm – confirmed – confirmed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you confirm the new delivery date?",
+              "pl": "Czy może pan potwierdzić nowy termin dostawy?",
+              "focusEn": "confirm",
+              "focusPl": "potwierdzić"
+            },
+            {
+              "en": "I'm writing to confirm our meeting on Monday at ten.",
+              "pl": "Piszę, aby potwierdzić nasze spotkanie w poniedziałek o dziesiątej.",
+              "focusEn": "confirm",
+              "focusPl": "potwierdzić"
+            }
+          ],
+          "acceptedAnswers": [
+            "confirm"
+          ],
+          "acceptedTranslations": [
+            "potwierdzić",
+            "potwierdzać"
+          ]
+        },
+        {
+          "id": "business-email.please-find-attached",
+          "term": "please find attached",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "w załączeniu przesyłam",
+          "definition": "A formal phrase that tells the reader a file is attached to the email.",
+          "register": "formalny",
+          "contextPl": "Informacja o załączniku",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Mniej formalnie: „I've attached…” albo „Attached is…”.",
+          "examples": [
+            {
+              "en": "Please find attached the invoice for March.",
+              "pl": "W załączeniu przesyłam fakturę za marzec.",
+              "focusEn": "Please find attached",
+              "focusPl": "W załączeniu przesyłam"
+            },
+            {
+              "en": "Please find attached the updated delivery schedule.",
+              "pl": "W załączniku znajdzie pan zaktualizowany harmonogram dostaw.",
+              "focusEn": "Please find attached",
+              "focusPl": "W załączniku znajdzie pan"
+            }
+          ],
+          "acceptedAnswers": [
+            "please find attached",
+            "attached is",
+            "I've attached",
+            "I have attached"
+          ],
+          "acceptedTranslations": [
+            "w załączeniu przesyłam",
+            "w załączniku przesyłam",
+            "załączam",
+            "przesyłam w załączniku"
+          ]
+        },
+        {
+          "id": "business-email.please-note-that",
+          "term": "please note that",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "proszę zwrócić uwagę, że",
+          "definition": "A phrase used to point out important information.",
+          "register": "formalny",
+          "contextPl": "Zwracanie uwagi na ważną informację",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please note that our office will be closed on Monday.",
+              "pl": "Uprzejmie informujemy, że w poniedziałek nasze biuro będzie zamknięte.",
+              "focusEn": "Please note that",
+              "focusPl": "Uprzejmie informujemy, że"
+            },
+            {
+              "en": "Please note that the delivery date has changed to May 12.",
+              "pl": "Proszę zwrócić uwagę, że termin dostawy zmienił się na 12 maja.",
+              "focusEn": "Please note that",
+              "focusPl": "Proszę zwrócić uwagę, że"
+            }
+          ],
+          "acceptedAnswers": [
+            "please note that",
+            "note that",
+            "please note"
+          ],
+          "acceptedTranslations": [
+            "proszę zwrócić uwagę, że",
+            "uprzejmie informujemy, że",
+            "informuję, że"
+          ]
+        },
+        {
+          "id": "business-email.i-would-appreciate-it-if",
+          "term": "I would appreciate it if",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "byłbym wdzięczny, gdyby",
+          "definition": "A very polite way to ask for something.",
+          "register": "formalny",
+          "contextPl": "Uprzejma, formalna prośba",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I would appreciate it if you could send the documents by Friday.",
+              "pl": "Byłbym wdzięczny, gdyby mógł pan przesłać dokumenty do piątku.",
+              "focusEn": "I would appreciate it if",
+              "focusPl": "Byłbym wdzięczny, gdyby"
+            },
+            {
+              "en": "I would appreciate it if you could confirm the new date.",
+              "pl": "Będę wdzięczna, jeśli potwierdzi pan nowy termin.",
+              "focusEn": "I would appreciate it if",
+              "focusPl": "Będę wdzięczna, jeśli"
+            }
+          ],
+          "acceptedAnswers": [
+            "I would appreciate it if",
+            "I'd appreciate it if"
+          ],
+          "acceptedTranslations": [
+            "byłbym wdzięczny, gdyby",
+            "będę wdzięczny, jeśli",
+            "byłabym wdzięczna, gdyby"
+          ]
+        },
+        {
+          "id": "business-email.as-requested",
+          "term": "as requested",
+          "ipa": "/æz rɪˈkwɛstɪd/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zgodnie z prośbą",
+          "definition": "Used to say that you are doing what someone asked for.",
+          "register": "formalny",
+          "contextPl": "Odpowiedź na wcześniejszą prośbę",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "As requested, I'm sending the price list for next year.",
+              "pl": "Zgodnie z prośbą przesyłam cennik na przyszły rok.",
+              "focusEn": "As requested",
+              "focusPl": "Zgodnie z prośbą"
+            },
+            {
+              "en": "I've updated the delivery address as requested.",
+              "pl": "Zaktualizowałem adres dostawy zgodnie z pana prośbą.",
+              "focusEn": "as requested",
+              "focusPl": "zgodnie z pana prośbą"
+            }
+          ],
+          "acceptedAnswers": [
+            "as requested",
+            "as you requested",
+            "as you asked"
+          ],
+          "acceptedTranslations": [
+            "zgodnie z prośbą",
+            "zgodnie z życzeniem",
+            "tak jak pan prosił"
+          ]
+        },
+        {
+          "id": "business-email.keep-someone-posted",
+          "term": "keep someone posted",
+          "ipa": "/ˌkiːp ˌsʌmwʌn ˈpoʊstɪd/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "informować na bieżąco",
+          "definition": "To continue to give someone the latest news about something.",
+          "register": "neutralny",
+          "contextPl": "Obietnica przekazywania nowych informacji",
+          "natural": "",
+          "forms": "keep – kept – kept",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll keep you posted if the delivery date changes again.",
+              "pl": "Będę informował pana na bieżąco, jeśli termin dostawy znowu się zmieni.",
+              "focusEn": "keep you posted",
+              "focusPl": "informował pana na bieżąco"
+            },
+            {
+              "en": "Thanks for keeping me posted about the order.",
+              "pl": "Dziękuję, że informuje mnie pan na bieżąco o zamówieniu.",
+              "focusEn": "keeping me posted",
+              "focusPl": "informuje mnie pan na bieżąco"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep someone posted",
+            "keep you posted",
+            "keep me posted"
+          ],
+          "acceptedTranslations": [
+            "informować na bieżąco",
+            "informować",
+            "dawać znać na bieżąco"
+          ]
+        },
+        {
+          "id": "business-email.keep-someone-in-the-loop",
+          "term": "keep someone in the loop",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "trzymać kogoś w temacie",
+          "definition": "To make sure someone gets all the information about something.",
+          "register": "potoczny",
+          "contextPl": "Dodawanie osób do korespondencji, żeby wiedziały, co się dzieje",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I cc'd Anna to keep her in the loop.",
+              "pl": "Dodałem Annę do kopii, żeby była na bieżąco.",
+              "focusEn": "keep her in the loop",
+              "focusPl": "była na bieżąco"
+            },
+            {
+              "en": "Please keep me in the loop about any changes to the contract.",
+              "pl": "Proszę informować mnie na bieżąco o wszelkich zmianach w umowie.",
+              "focusEn": "keep me in the loop",
+              "focusPl": "informować mnie na bieżąco"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep someone in the loop",
+            "keep me in the loop",
+            "keep you in the loop",
+            "in the loop"
+          ],
+          "acceptedTranslations": [
+            "trzymać kogoś w temacie",
+            "informować na bieżąco",
+            "trzymać w obiegu informacji"
+          ]
+        },
+        {
+          "id": "business-email.for-your-reference",
+          "term": "for your reference",
+          "ipa": "/fɔːr jər ˈrɛfərəns/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "do wglądu",
+          "definition": "Given so that you can look at it if you need it.",
+          "register": "formalny",
+          "contextPl": "Dołączanie informacji pomocniczych",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've attached last year's contract for your reference.",
+              "pl": "Załączam zeszłoroczną umowę do wglądu.",
+              "focusEn": "for your reference",
+              "focusPl": "do wglądu"
+            },
+            {
+              "en": "For your reference, the order number is 4471.",
+              "pl": "Dla informacji: numer zamówienia to 4471.",
+              "focusEn": "For your reference",
+              "focusPl": "Dla informacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "for your reference",
+            "for reference"
+          ],
+          "acceptedTranslations": [
+            "do wglądu",
+            "dla informacji",
+            "pomocniczo"
+          ]
+        },
+        {
+          "id": "business-email.at-your-earliest-convenience",
+          "term": "at your earliest convenience",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "w najbliższym dogodnym terminie",
+          "definition": "A very formal way of asking someone to do something soon.",
+          "register": "formalny",
+          "contextPl": "Formalna prośba o szybką reakcję",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please sign and return the form at your earliest convenience.",
+              "pl": "Proszę podpisać i odesłać formularz w najbliższym dogodnym terminie.",
+              "focusEn": "at your earliest convenience",
+              "focusPl": "w najbliższym dogodnym terminie"
+            },
+            {
+              "en": "I'd be grateful for a reply at your earliest convenience.",
+              "pl": "Będę wdzięczny za odpowiedź możliwie jak najszybciej.",
+              "focusEn": "at your earliest convenience",
+              "focusPl": "możliwie jak najszybciej"
+            }
+          ],
+          "acceptedAnswers": [
+            "at your earliest convenience",
+            "as soon as possible"
+          ],
+          "acceptedTranslations": [
+            "w najbliższym dogodnym terminie",
+            "jak najszybciej",
+            "w miarę możliwości szybko"
+          ]
+        },
+        {
+          "id": "business-email.fyi",
+          "term": "FYI",
+          "ipa": "/ˌɛf waɪ ˈaɪ/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "do wiadomości",
+          "definition": "Short for “for your information”; used to share useful information.",
+          "register": "potoczny",
+          "contextPl": "Krótkie przekazanie informacji, zwykle bez potrzeby odpowiedzi",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "FYI, the client moved the delivery to next Tuesday.",
+              "pl": "Do wiadomości: klient przesunął dostawę na przyszły wtorek.",
+              "focusEn": "FYI",
+              "focusPl": "Do wiadomości"
+            },
+            {
+              "en": "I forwarded the email to my boss with just one word: FYI.",
+              "pl": "Przesłałem maila szefowi z krótkim dopiskiem: do wiadomości.",
+              "focusEn": "FYI",
+              "focusPl": "do wiadomości"
+            }
+          ],
+          "acceptedAnswers": [
+            "FYI",
+            "for your information"
+          ],
+          "acceptedTranslations": [
+            "do wiadomości",
+            "dla informacji",
+            "informacyjnie"
+          ]
+        },
+        {
+          "id": "business-email.heads-up",
+          "term": "heads-up",
+          "ipa": "/ˈhɛdz ˌʌp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "uprzedzenie",
+          "definition": "A warning or piece of advance information about something.",
+          "register": "potoczny",
+          "contextPl": "Uprzedzanie o zmianach lub problemach",
+          "natural": "",
+          "forms": "",
+          "collocations": "give someone a heads-up; just a heads-up",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Just a heads-up: the price will go up next month.",
+              "pl": "Uprzedzam: w przyszłym miesiącu cena wzrośnie.",
+              "focusEn": "heads-up",
+              "focusPl": "Uprzedzam"
+            },
+            {
+              "en": "Thanks for the heads-up about the delay.",
+              "pl": "Dzięki za uprzedzenie o opóźnieniu.",
+              "focusEn": "heads-up",
+              "focusPl": "uprzedzenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "heads-up",
+            "heads up"
+          ],
+          "acceptedTranslations": [
+            "uprzedzenie",
+            "ostrzeżenie",
+            "sygnał",
+            "informacja z wyprzedzeniem"
+          ]
+        },
+        {
+          "id": "business-email.kindly",
+          "term": "kindly",
+          "ipa": "/ˈkaɪndli/",
+          "pos": "przysłówek",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "uprzejmie",
+          "definition": "A formal word used to make a request more polite, sometimes sounding strict.",
+          "register": "formalny",
+          "contextPl": "Formalne prośby i polecenia w mailach",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W amerykańskich mailach „kindly” może brzmieć oschle; „please” jest bezpieczniejsze.",
+          "examples": [
+            {
+              "en": "Kindly send the payment by the end of the month.",
+              "pl": "Uprzejmie prosimy o wpłatę do końca miesiąca.",
+              "focusEn": "Kindly",
+              "focusPl": "Uprzejmie"
+            },
+            {
+              "en": "The client kindly agreed to wait one more week for the delivery.",
+              "pl": "Klient uprzejmie zgodził się poczekać na dostawę jeszcze tydzień.",
+              "focusEn": "kindly",
+              "focusPl": "uprzejmie"
+            }
+          ],
+          "acceptedAnswers": [
+            "kindly"
+          ],
+          "acceptedTranslations": [
+            "uprzejmie",
+            "łaskawie",
+            "grzecznie"
+          ]
+        },
+        {
+          "id": "business-email.apologize-for-the-delay",
+          "term": "apologize for the delay",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przepraszam za opóźnienie",
+          "definition": "A polite way to say sorry that something is late.",
+          "register": "neutralny",
+          "contextPl": "Przeprosiny za spóźnioną odpowiedź lub dostawę",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We apologize for the delay and will ship your order on Monday.",
+              "pl": "Przepraszamy za opóźnienie; wyślemy pana zamówienie w poniedziałek.",
+              "focusEn": "apologize for the delay",
+              "focusPl": "Przepraszamy za opóźnienie"
+            },
+            {
+              "en": "I started the email by apologizing for the delay in delivery.",
+              "pl": "Zacząłem maila od przeprosin za opóźnienie dostawy.",
+              "focusEn": "apologizing for the delay",
+              "focusPl": "przeprosin za opóźnienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "apologize for the delay",
+            "sorry for the delay",
+            "apologies for the delay"
+          ],
+          "acceptedTranslations": [
+            "przepraszam za opóźnienie",
+            "przepraszamy za opóźnienie",
+            "przepraszam za zwłokę"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business-email.closings",
+      "namePl": "Zakończenia maila",
+      "scenePl": "Kończenie maila do klienta tuż przed kliknięciem przycisku „wyślij”",
+      "entries": [
+        {
+          "id": "business-email.thanks-in-advance",
+          "term": "thanks in advance",
+          "ipa": "/ˌθæŋks ɪn ədˈvæns/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "z góry dziękuję",
+          "definition": "A way to thank someone for something they will do for you.",
+          "register": "neutralny",
+          "contextPl": "Zakończenie maila z prośbą",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks in advance for sending the documents.",
+              "pl": "Z góry dziękuję za przesłanie dokumentów.",
+              "focusEn": "Thanks in advance",
+              "focusPl": "Z góry dziękuję"
+            },
+            {
+              "en": "I ended my request with “Thanks in advance” and my name.",
+              "pl": "Prośbę zakończyłem słowami „Z góry dziękuję” i swoim imieniem.",
+              "focusEn": "Thanks in advance",
+              "focusPl": "Z góry dziękuję"
+            }
+          ],
+          "acceptedAnswers": [
+            "thanks in advance",
+            "thank you in advance"
+          ],
+          "acceptedTranslations": [
+            "z góry dziękuję",
+            "z góry dziękujemy",
+            "dziękuję z góry"
+          ]
+        },
+        {
+          "id": "business-email.best-regards",
+          "term": "best regards",
+          "ipa": "/ˌbɛst rɪˈɡɑːrdz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "pozdrawiam serdecznie",
+          "definition": "A polite and common way to end a work email before your name.",
+          "register": "neutralny",
+          "contextPl": "Standardowe zakończenie maila służbowego",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Krócej i swobodniej: „Best,” albo „Thanks,”.",
+          "examples": [
+            {
+              "en": "I ended the email with “Best regards” and my full name.",
+              "pl": "Zakończyłam maila zwrotem „Pozdrawiam serdecznie” i pełnym imieniem i nazwiskiem.",
+              "focusEn": "Best regards",
+              "focusPl": "Pozdrawiam serdecznie"
+            },
+            {
+              "en": "Her emails always end with “Best regards, Kate”.",
+              "pl": "Jej maile zawsze kończą się słowami „Pozdrawiam, Kate”.",
+              "focusEn": "Best regards",
+              "focusPl": "Pozdrawiam"
+            }
+          ],
+          "acceptedAnswers": [
+            "best regards",
+            "kind regards",
+            "regards",
+            "best"
+          ],
+          "acceptedTranslations": [
+            "pozdrawiam serdecznie",
+            "pozdrawiam",
+            "łączę pozdrowienia",
+            "z pozdrowieniami"
+          ]
+        },
+        {
+          "id": "business-email.sincerely",
+          "term": "sincerely",
+          "ipa": "/sɪnˈsɪrli/",
+          "pos": "przysłówek",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "z poważaniem",
+          "definition": "A very formal way to end a letter or email, usually to someone you do not know.",
+          "register": "formalny",
+          "contextPl": "Formalne zakończenie listu lub maila",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA: „Sincerely,” na osobnej linii, pod nim imię i nazwisko.",
+          "examples": [
+            {
+              "en": "Because it was an official complaint, I signed it “Sincerely, John Miller”.",
+              "pl": "Ponieważ była to oficjalna reklamacja, podpisałem ją „Z poważaniem, John Miller”.",
+              "focusEn": "Sincerely",
+              "focusPl": "Z poważaniem"
+            },
+            {
+              "en": "My boss said “Sincerely” is too stiff for a quick email to a client.",
+              "pl": "Szef powiedział, że „Z poważaniem” jest zbyt sztywne w krótkim mailu do klienta.",
+              "focusEn": "Sincerely",
+              "focusPl": "Z poważaniem"
+            }
+          ],
+          "acceptedAnswers": [
+            "sincerely",
+            "sincerely yours",
+            "yours sincerely"
+          ],
+          "acceptedTranslations": [
+            "z poważaniem",
+            "z wyrazami szacunku",
+            "łączę wyrazy szacunku"
+          ]
+        },
+        {
+          "id": "business-email.looking-forward-to-hearing-from-you",
+          "term": "looking forward to hearing from you",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czekam na odpowiedź",
+          "definition": "A polite closing that shows you expect a reply.",
+          "register": "neutralny",
+          "contextPl": "Zakończenie maila, gdy oczekujemy odpowiedzi",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po „looking forward to” używamy formy -ing: „to hearing”, nie „to hear”.",
+          "examples": [
+            {
+              "en": "Looking forward to hearing from you soon.",
+              "pl": "Czekam na odpowiedź i pozdrawiam.",
+              "focusEn": "Looking forward to hearing from you",
+              "focusPl": "Czekam na odpowiedź"
+            },
+            {
+              "en": "I added “Looking forward to hearing from you” before my signature.",
+              "pl": "Przed stopką dopisałam „Z niecierpliwością czekam na odpowiedź”.",
+              "focusEn": "Looking forward to hearing from you",
+              "focusPl": "Z niecierpliwością czekam na odpowiedź"
+            }
+          ],
+          "acceptedAnswers": [
+            "looking forward to hearing from you",
+            "I look forward to hearing from you",
+            "look forward to hearing from you"
+          ],
+          "acceptedTranslations": [
+            "czekam na odpowiedź",
+            "z niecierpliwością czekam na odpowiedź",
+            "czekam na wiadomość"
+          ]
+        },
+        {
+          "id": "business-email.let-me-know-if-you-have-any-questions",
+          "term": "let me know if you have any questions",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "w razie pytań proszę o kontakt",
+          "definition": "A friendly closing that invites the reader to ask questions.",
+          "register": "neutralny",
+          "contextPl": "Zachęta do kontaktu na końcu maila",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let me know if you have any questions about the new prices.",
+              "pl": "Proszę dać znać, jeśli ma pan pytania dotyczące nowych cen.",
+              "focusEn": "Let me know if you have any questions",
+              "focusPl": "Proszę dać znać, jeśli ma pan pytania"
+            },
+            {
+              "en": "I always write “Let me know if you have any questions” at the end of instructions.",
+              "pl": "Na końcu instrukcji zawsze piszę „Daj znać, jeśli masz pytania”.",
+              "focusEn": "Let me know if you have any questions",
+              "focusPl": "Daj znać, jeśli masz pytania"
+            }
+          ],
+          "acceptedAnswers": [
+            "let me know if you have any questions",
+            "let me know if you have questions"
+          ],
+          "acceptedTranslations": [
+            "w razie pytań proszę o kontakt",
+            "daj znać, jeśli masz pytania",
+            "jeśli masz pytania, daj znać",
+            "służę pomocą"
+          ]
+        },
+        {
+          "id": "business-email.dont-hesitate-to",
+          "term": "don't hesitate to",
+          "ipa": "/doʊnt ˈhɛzəˌteɪt tuː/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "proszę śmiało",
+          "definition": "A polite phrase that encourages the reader to contact you or ask for help.",
+          "register": "formalny",
+          "contextPl": "Uprzejma zachęta do kontaktu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't hesitate to call me if anything is unclear.",
+              "pl": "Jeśli coś jest niejasne, proszę śmiało do mnie dzwonić.",
+              "focusEn": "Don't hesitate to",
+              "focusPl": "proszę śmiało"
+            },
+            {
+              "en": "I ended with “Please don't hesitate to contact me” and my phone number.",
+              "pl": "Zakończyłem zdaniem „W razie potrzeby proszę się śmiało kontaktować” i numerem telefonu.",
+              "focusEn": "don't hesitate to",
+              "focusPl": "śmiało"
+            }
+          ],
+          "acceptedAnswers": [
+            "don't hesitate to",
+            "do not hesitate to",
+            "please don't hesitate to",
+            "feel free to"
+          ],
+          "acceptedTranslations": [
+            "proszę śmiało",
+            "proszę się nie wahać",
+            "zachęcam do"
+          ]
+        },
+        {
+          "id": "business-email.feel-free-to",
+          "term": "feel free to",
+          "ipa": "/ˌfiːl ˈfriː tuː/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "śmiało",
+          "definition": "A friendly way to tell someone they are welcome to do something.",
+          "register": "neutralny",
+          "contextPl": "Swobodna zachęta do kontaktu lub działania",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Feel free to forward this email to your team.",
+              "pl": "Śmiało prześlij ten mail swojemu zespołowi.",
+              "focusEn": "Feel free to",
+              "focusPl": "Śmiało"
+            },
+            {
+              "en": "Feel free to call me if the documents don't arrive.",
+              "pl": "Jeśli dokumenty nie dotrą, śmiało dzwoń.",
+              "focusEn": "Feel free to",
+              "focusPl": "śmiało"
+            }
+          ],
+          "acceptedAnswers": [
+            "feel free to",
+            "please feel free to"
+          ],
+          "acceptedTranslations": [
+            "śmiało",
+            "nie krępuj się",
+            "możesz śmiało"
+          ]
+        },
+        {
+          "id": "business-email.have-a-great-weekend",
+          "term": "have a great weekend",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "miłego weekendu",
+          "definition": "A friendly wish at the end of an email sent near the end of the week.",
+          "register": "potoczny",
+          "contextPl": "Przyjazne pożegnanie w piątkowym mailu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks for your help, and have a great weekend!",
+              "pl": "Dzięki za pomoc i miłego weekendu!",
+              "focusEn": "have a great weekend",
+              "focusPl": "miłego weekendu"
+            },
+            {
+              "en": "It was Friday afternoon, so I ended the email with “Have a great weekend”.",
+              "pl": "Było piątkowe popołudnie, więc zakończyłam maila słowami „Udanego weekendu”.",
+              "focusEn": "Have a great weekend",
+              "focusPl": "Udanego weekendu"
+            }
+          ],
+          "acceptedAnswers": [
+            "have a great weekend",
+            "have a nice weekend",
+            "have a good weekend"
+          ],
+          "acceptedTranslations": [
+            "miłego weekendu",
+            "udanego weekendu",
+            "dobrego weekendu"
+          ]
+        },
+        {
+          "id": "business-email.talk-soon",
+          "term": "talk soon",
+          "ipa": "/ˌtɔːk ˈsuːn/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "do usłyszenia",
+          "definition": "An informal closing used with people you know well.",
+          "register": "potoczny",
+          "contextPl": "Swobodne zakończenie maila do znajomej osoby",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I wrote “Talk soon” because I'll see her at the meeting on Monday.",
+              "pl": "Napisałem „Do usłyszenia”, bo zobaczę ją na spotkaniu w poniedziałek.",
+              "focusEn": "Talk soon",
+              "focusPl": "Do usłyszenia"
+            },
+            {
+              "en": "Thanks for the update; talk soon!",
+              "pl": "Dzięki za informację, do usłyszenia!",
+              "focusEn": "talk soon",
+              "focusPl": "do usłyszenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "talk soon",
+            "speak soon"
+          ],
+          "acceptedTranslations": [
+            "do usłyszenia",
+            "na razie",
+            "do zobaczenia",
+            "odezwę się"
+          ]
+        },
+        {
+          "id": "business-email.get-back-to-you",
+          "term": "get back to you",
+          "ipa": "/ˌɡɛt ˈbæk tuː juː/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "odezwę się",
+          "definition": "To contact someone later with an answer.",
+          "register": "neutralny",
+          "contextPl": "Obietnica odpowiedzi w późniejszym czasie",
+          "natural": "",
+          "forms": "get – got – gotten",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll check with my manager and get back to you tomorrow.",
+              "pl": "Sprawdzę to z kierowniczką i jutro się odezwę.",
+              "focusEn": "get back to you",
+              "focusPl": "się odezwę"
+            },
+            {
+              "en": "Thanks for your patience; I'll get back to you by Friday.",
+              "pl": "Dziękuję za cierpliwość, odpowiem panu do piątku.",
+              "focusEn": "get back to you",
+              "focusPl": "odpowiem panu"
+            }
+          ],
+          "acceptedAnswers": [
+            "get back to you",
+            "get back to"
+          ],
+          "acceptedTranslations": [
+            "odezwę się",
+            "odpowiedzieć",
+            "dać znać",
+            "wrócić z odpowiedzią"
+          ]
+        },
+        {
+          "id": "business-email.hope-to-hear-from-you-soon",
+          "term": "hope to hear from you soon",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mam nadzieję na rychłą odpowiedź",
+          "definition": "A polite closing that shows you would like a reply soon.",
+          "register": "neutralny",
+          "contextPl": "Zakończenie maila z prośbą o odpowiedź",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hope to hear from you soon, and thanks again for your time.",
+              "pl": "Liczę na szybką odpowiedź i jeszcze raz dziękuję za poświęcony czas.",
+              "focusEn": "Hope to hear from you soon",
+              "focusPl": "Liczę na szybką odpowiedź"
+            },
+            {
+              "en": "I deleted “Hope to hear from you soon” because I'd already asked twice.",
+              "pl": "Usunąłem „Liczę na szybką odpowiedź”, bo prosiłem o to już dwa razy.",
+              "focusEn": "Hope to hear from you soon",
+              "focusPl": "Liczę na szybką odpowiedź"
+            }
+          ],
+          "acceptedAnswers": [
+            "hope to hear from you soon",
+            "I hope to hear from you soon"
+          ],
+          "acceptedTranslations": [
+            "mam nadzieję na rychłą odpowiedź",
+            "liczę na szybką odpowiedź",
+            "czekam na szybką odpowiedź"
+          ]
+        },
+        {
+          "id": "business-email.sign-off",
+          "term": "sign off",
+          "ipa": "/ˌsaɪn ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "zakończyć maila",
+          "definition": "To end an email or letter with a closing word and your name.",
+          "register": "neutralny",
+          "contextPl": "Wybór formuły pożegnalnej",
+          "natural": "",
+          "forms": "sign – signed – signed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How should I sign off an email to someone I've never met?",
+              "pl": "Jak zakończyć maila do kogoś, kogo nigdy nie spotkałem?",
+              "focusEn": "sign off",
+              "focusPl": "zakończyć"
+            },
+            {
+              "en": "She usually signs off with “Thanks” and her first name.",
+              "pl": "Zwykle kończy maile słowem „Thanks” i swoim imieniem.",
+              "focusEn": "signs off",
+              "focusPl": "kończy maile"
+            }
+          ],
+          "acceptedAnswers": [
+            "sign off"
+          ],
+          "acceptedTranslations": [
+            "zakończyć maila",
+            "kończyć maila",
+            "zakończyć list",
+            "podpisać się"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business-email.etiquette",
+      "namePl": "Pomyłki, ton i porządek w skrzynce",
+      "scenePl": "Popołudniowe porządkowanie skrzynki i poprawianie pomyłek w wysłanych mailach",
+      "entries": [
+        {
+          "id": "business-email.typo",
+          "term": "typo",
+          "ipa": "/ˈtaɪpoʊ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "literówka",
+          "definition": "A small mistake in typing, such as a wrong letter.",
+          "register": "neutralny",
+          "contextPl": "Błędy w pisaniu maili",
+          "natural": "",
+          "forms": "typos",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I sent the email with a typo in the client's name.",
+              "pl": "Wysłałem maila z literówką w nazwisku klienta.",
+              "focusEn": "typo",
+              "focusPl": "literówką"
+            },
+            {
+              "en": "Read it again; there's a typo in the subject line.",
+              "pl": "Przeczytaj jeszcze raz, w temacie jest literówka.",
+              "focusEn": "typo",
+              "focusPl": "literówka"
+            }
+          ],
+          "acceptedAnswers": [
+            "typo"
+          ],
+          "acceptedTranslations": [
+            "literówka",
+            "błąd literowy",
+            "pomyłka"
+          ]
+        },
+        {
+          "id": "business-email.spam",
+          "term": "spam",
+          "ipa": "/spæm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "spam",
+          "definition": "Unwanted emails, usually advertisements, sent to many people.",
+          "register": "neutralny",
+          "contextPl": "Niechciane wiadomości w skrzynce",
+          "natural": "",
+          "forms": "",
+          "collocations": "spam folder; mark as spam",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The client's reply went to my spam folder, so I missed it.",
+              "pl": "Odpowiedź klienta trafiła do folderu ze spamem, więc ją przegapiłem.",
+              "focusEn": "spam",
+              "focusPl": "spamem"
+            },
+            {
+              "en": "I mark at least twenty emails as spam every afternoon.",
+              "pl": "Każdego popołudnia oznaczam jako spam co najmniej dwadzieścia maili.",
+              "focusEn": "spam",
+              "focusPl": "spam"
+            }
+          ],
+          "acceptedAnswers": [
+            "spam",
+            "junk mail",
+            "junk"
+          ],
+          "acceptedTranslations": [
+            "spam",
+            "niechciana poczta",
+            "śmieci"
+          ]
+        },
+        {
+          "id": "business-email.bounce-back",
+          "term": "bounce back",
+          "ipa": "/ˌbaʊns ˈbæk/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wrócić jako niedostarczony",
+          "definition": "When an email is returned because it could not be delivered.",
+          "register": "neutralny",
+          "contextPl": "Problemy z dostarczeniem wiadomości",
+          "natural": "",
+          "forms": "bounce – bounced – bounced",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My email bounced back because I misspelled the address.",
+              "pl": "Mój mail wrócił jako niedostarczony, bo źle wpisałem adres.",
+              "focusEn": "bounced back",
+              "focusPl": "wrócił jako niedostarczony"
+            },
+            {
+              "en": "If your message bounces back, check the domain name.",
+              "pl": "Jeśli wiadomość wróci, sprawdź nazwę domeny.",
+              "focusEn": "bounces back",
+              "focusPl": "wróci"
+            }
+          ],
+          "acceptedAnswers": [
+            "bounce back",
+            "bounce"
+          ],
+          "acceptedTranslations": [
+            "wrócić jako niedostarczony",
+            "wrócić",
+            "nie dojść",
+            "zostać odrzuconym"
+          ]
+        },
+        {
+          "id": "business-email.wrong-person",
+          "term": "wrong person",
+          "ipa": "/ˌrɔːŋ ˈpɜːrsən/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "niewłaściwa osoba",
+          "definition": "Someone who was not the intended receiver.",
+          "register": "neutralny",
+          "contextPl": "Wysłanie maila do niewłaściwego odbiorcy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I sent the price list to the wrong person by mistake.",
+              "pl": "Przez pomyłkę wysłałem cennik do niewłaściwej osoby.",
+              "focusEn": "wrong person",
+              "focusPl": "niewłaściwej osoby"
+            },
+            {
+              "en": "Sorry, I think this email went to the wrong person.",
+              "pl": "Przepraszam, chyba ten mail trafił do niewłaściwej osoby.",
+              "focusEn": "wrong person",
+              "focusPl": "niewłaściwej osoby"
+            }
+          ],
+          "acceptedAnswers": [
+            "wrong person",
+            "wrong recipient"
+          ],
+          "acceptedTranslations": [
+            "niewłaściwa osoba",
+            "zła osoba",
+            "niewłaściwy odbiorca",
+            "nie ta osoba"
+          ]
+        },
+        {
+          "id": "business-email.tone",
+          "term": "tone",
+          "ipa": "/toʊn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ton",
+          "definition": "The feeling or attitude that a piece of writing expresses.",
+          "register": "neutralny",
+          "contextPl": "Styl i emocje wyczuwalne w mailu",
+          "natural": "",
+          "forms": "",
+          "collocations": "friendly tone; formal tone; watch your tone",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The tone of her email was a bit cold, so I called her.",
+              "pl": "Ton jej maila był trochę chłodny, więc do niej zadzwoniłem.",
+              "focusEn": "tone",
+              "focusPl": "Ton"
+            },
+            {
+              "en": "I rewrote my reply to make the tone more friendly.",
+              "pl": "Przepisałam odpowiedź, żeby nadać jej bardziej przyjazny ton.",
+              "focusEn": "tone",
+              "focusPl": "ton"
+            }
+          ],
+          "acceptedAnswers": [
+            "tone"
+          ],
+          "acceptedTranslations": [
+            "ton",
+            "wydźwięk",
+            "styl"
+          ]
+        },
+        {
+          "id": "business-email.formal",
+          "term": "formal",
+          "ipa": "/ˈfɔːrməl/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "formalny",
+          "definition": "Serious and polite, used in official situations.",
+          "register": "neutralny",
+          "contextPl": "Dobór stylu do odbiorcy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "informal",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Use a more formal style when you write to a new client.",
+              "pl": "Pisząc do nowego klienta, używaj bardziej formalnego stylu.",
+              "focusEn": "formal",
+              "focusPl": "formalnego"
+            },
+            {
+              "en": "My first email to the director was very formal.",
+              "pl": "Mój pierwszy mail do dyrektora był bardzo formalny.",
+              "focusEn": "formal",
+              "focusPl": "formalny"
+            }
+          ],
+          "acceptedAnswers": [
+            "formal"
+          ],
+          "acceptedTranslations": [
+            "formalny",
+            "oficjalny"
+          ]
+        },
+        {
+          "id": "business-email.informal",
+          "term": "informal",
+          "ipa": "/ɪnˈfɔːrməl/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nieformalny",
+          "definition": "Relaxed and friendly, not official.",
+          "register": "neutralny",
+          "contextPl": "Swobodny styl w mailach do współpracowników",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "formal",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Emails to my team are usually short and informal.",
+              "pl": "Maile do mojego zespołu są zwykle krótkie i nieformalne.",
+              "focusEn": "informal",
+              "focusPl": "nieformalne"
+            },
+            {
+              "en": "Is it OK to be this informal with a client?",
+              "pl": "Czy z klientem można pisać tak swobodnie?",
+              "focusEn": "informal",
+              "focusPl": "swobodnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "informal",
+            "casual"
+          ],
+          "acceptedTranslations": [
+            "nieformalny",
+            "swobodny",
+            "nieoficjalny",
+            "luźny"
+          ]
+        },
+        {
+          "id": "business-email.professional",
+          "term": "professional",
+          "ipa": "/prəˈfɛʃənəl/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "profesjonalny",
+          "definition": "Showing the skills and behavior expected at work.",
+          "register": "neutralny",
+          "contextPl": "Właściwy styl i wygląd maili służbowych",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "unprofessional",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Use a professional email address, not a nickname.",
+              "pl": "Używaj profesjonalnego adresu e-mail, a nie pseudonimu.",
+              "focusEn": "professional",
+              "focusPl": "profesjonalnego"
+            },
+            {
+              "en": "Her reply was polite and professional, even though the client was rude.",
+              "pl": "Jej odpowiedź była uprzejma i profesjonalna, mimo że klient był niegrzeczny.",
+              "focusEn": "professional",
+              "focusPl": "profesjonalna"
+            }
+          ],
+          "acceptedAnswers": [
+            "professional"
+          ],
+          "acceptedTranslations": [
+            "profesjonalny",
+            "profesjonalna",
+            "fachowy"
+          ]
+        },
+        {
+          "id": "business-email.concise",
+          "term": "concise",
+          "ipa": "/kənˈsaɪs/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zwięzły",
+          "definition": "Short and clear, using only the words that are needed.",
+          "register": "neutralny",
+          "contextPl": "Krótkie, rzeczowe pisanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "brief; to the point",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Keep your emails concise; nobody reads long paragraphs.",
+              "pl": "Pisz zwięzłe maile, nikt nie czyta długich akapitów.",
+              "focusEn": "concise",
+              "focusPl": "zwięzłe"
+            },
+            {
+              "en": "I cut my email from ten lines to four to make it more concise.",
+              "pl": "Skróciłem maila z dziesięciu linijek do czterech, żeby był bardziej zwięzły.",
+              "focusEn": "concise",
+              "focusPl": "zwięzły"
+            }
+          ],
+          "acceptedAnswers": [
+            "concise",
+            "brief"
+          ],
+          "acceptedTranslations": [
+            "zwięzły",
+            "krótki",
+            "rzeczowy",
+            "treściwy"
+          ]
+        },
+        {
+          "id": "business-email.flag",
+          "term": "flag",
+          "ipa": "/flæɡ/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "oznaczyć flagą",
+          "definition": "To mark an email so you remember to deal with it later.",
+          "register": "neutralny",
+          "contextPl": "Oznaczanie ważnych wiadomości do załatwienia",
+          "natural": "",
+          "forms": "flag – flagged – flagged",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I flagged the client's email so I don't forget to answer it.",
+              "pl": "Oznaczyłem flagą maila od klienta, żeby nie zapomnieć odpowiedzieć.",
+              "focusEn": "flagged",
+              "focusPl": "Oznaczyłem flagą"
+            },
+            {
+              "en": "I have ten flagged emails to deal with before Friday.",
+              "pl": "Mam dziesięć oznaczonych maili do załatwienia przed piątkiem.",
+              "focusEn": "flagged",
+              "focusPl": "oznaczonych"
+            }
+          ],
+          "acceptedAnswers": [
+            "flag",
+            "mark"
+          ],
+          "acceptedTranslations": [
+            "oznaczyć flagą",
+            "oznaczyć",
+            "oznaczać",
+            "zaznaczyć"
+          ]
+        },
+        {
+          "id": "business-email.archive",
+          "term": "archive",
+          "ipa": "/ˈɑːrˌkaɪv/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zarchiwizować",
+          "definition": "To move an email out of your inbox and store it for later.",
+          "register": "neutralny",
+          "contextPl": "Porządkowanie skrzynki odbiorczej",
+          "natural": "",
+          "forms": "archive – archived – archived",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I archive every email after I answer it.",
+              "pl": "Archiwizuję każdego maila po odpowiedzi.",
+              "focusEn": "archive",
+              "focusPl": "Archiwizuję"
+            },
+            {
+              "en": "Don't delete the contract emails; just archive them.",
+              "pl": "Nie usuwaj maili z umowami, tylko je zarchiwizuj.",
+              "focusEn": "archive",
+              "focusPl": "zarchiwizuj"
+            }
+          ],
+          "acceptedAnswers": [
+            "archive"
+          ],
+          "acceptedTranslations": [
+            "zarchiwizować",
+            "archiwizować",
+            "odłożyć do archiwum"
+          ]
+        },
+        {
+          "id": "business-email.unsubscribe",
+          "term": "unsubscribe",
+          "ipa": "/ˌʌnsəbˈskraɪb/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wypisać się",
+          "definition": "To stop receiving emails from a newsletter or mailing list.",
+          "register": "neutralny",
+          "contextPl": "Rezygnacja z newsletterów i list mailingowych",
+          "natural": "",
+          "forms": "unsubscribe – unsubscribed – unsubscribed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "subscribe",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I unsubscribed from five newsletters this afternoon.",
+              "pl": "Dziś po południu wypisałem się z pięciu newsletterów.",
+              "focusEn": "unsubscribed",
+              "focusPl": "wypisałem się"
+            },
+            {
+              "en": "There's a link at the bottom to unsubscribe.",
+              "pl": "Na dole jest link, żeby się wypisać.",
+              "focusEn": "unsubscribe",
+              "focusPl": "się wypisać"
+            }
+          ],
+          "acceptedAnswers": [
+            "unsubscribe"
+          ],
+          "acceptedTranslations": [
+            "wypisać się",
+            "wypisywać się",
+            "zrezygnować z subskrypcji",
+            "anulować subskrypcję"
+          ]
+        },
+        {
+          "id": "business-email.mailing-list",
+          "term": "mailing list",
+          "ipa": "/ˈmeɪlɪŋ ˌlɪst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "lista mailingowa",
+          "definition": "A list of email addresses that receive the same messages.",
+          "register": "neutralny",
+          "contextPl": "Wysyłanie informacji do wielu osób naraz",
+          "natural": "",
+          "forms": "mailing lists",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please remove me from your mailing list.",
+              "pl": "Proszę usunąć mnie z listy mailingowej.",
+              "focusEn": "mailing list",
+              "focusPl": "listy mailingowej"
+            },
+            {
+              "en": "I added the new clients to our mailing list.",
+              "pl": "Dodałam nowych klientów do naszej listy mailingowej.",
+              "focusEn": "mailing list",
+              "focusPl": "listy mailingowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "mailing list"
+          ],
+          "acceptedTranslations": [
+            "lista mailingowa",
+            "lista adresowa",
+            "lista dystrybucyjna"
+          ]
+        },
+        {
+          "id": "business-email.sorry-for-the-late-reply",
+          "term": "sorry for the late reply",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przepraszam za późną odpowiedź",
+          "definition": "A common way to apologize for answering an email late.",
+          "register": "neutralny",
+          "contextPl": "Odpowiadanie po dłuższym czasie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry for the late reply; I was out of the office all week.",
+              "pl": "Przepraszam za późną odpowiedź, cały tydzień byłem poza biurem.",
+              "focusEn": "Sorry for the late reply",
+              "focusPl": "Przepraszam za późną odpowiedź"
+            },
+            {
+              "en": "I started three emails with “Sorry for the late reply” today.",
+              "pl": "Dziś zacząłem trzy maile od „Przepraszam za późną odpowiedź”.",
+              "focusEn": "Sorry for the late reply",
+              "focusPl": "Przepraszam za późną odpowiedź"
+            }
+          ],
+          "acceptedAnswers": [
+            "sorry for the late reply",
+            "sorry for the delay",
+            "sorry for the slow reply",
+            "apologies for the late reply"
+          ],
+          "acceptedTranslations": [
+            "przepraszam za późną odpowiedź",
+            "przepraszam, że odpisuję z opóźnieniem",
+            "przepraszam za zwłokę"
+          ]
+        },
+        {
+          "id": "business-email.disregard",
+          "term": "disregard",
+          "ipa": "/ˌdɪsrɪˈɡɑːrd/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zignorować",
+          "definition": "To pay no attention to something.",
+          "register": "formalny",
+          "contextPl": "Prośba o zignorowanie błędnego maila",
+          "natural": "",
+          "forms": "disregard – disregarded – disregarded",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please disregard my last email; it had the wrong file.",
+              "pl": "Proszę zignorować mój poprzedni mail, był w nim zły plik.",
+              "focusEn": "disregard",
+              "focusPl": "zignorować"
+            },
+            {
+              "en": "She asked everyone to disregard the old price list.",
+              "pl": "Poprosiła wszystkich, żeby nie brali pod uwagę starego cennika.",
+              "focusEn": "disregard",
+              "focusPl": "nie brali pod uwagę"
+            }
+          ],
+          "acceptedAnswers": [
+            "disregard",
+            "ignore"
+          ],
+          "acceptedTranslations": [
+            "zignorować",
+            "ignorować",
+            "pominąć",
+            "nie brać pod uwagę"
+          ]
+        },
+        {
+          "id": "business-email.recall",
+          "term": "recall",
+          "ipa": "/rɪˈkɔːl/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wycofać",
+          "definition": "To try to take back an email that has already been sent.",
+          "register": "neutralny",
+          "contextPl": "Próba cofnięcia wysłanej wiadomości",
+          "natural": "",
+          "forms": "recall – recalled – recalled",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I tried to recall the message, but the client had already read it.",
+              "pl": "Próbowałem wycofać wiadomość, ale klient już ją przeczytał.",
+              "focusEn": "recall",
+              "focusPl": "wycofać"
+            },
+            {
+              "en": "You can recall an email only within a few seconds after sending it.",
+              "pl": "Maila można cofnąć tylko przez kilka sekund po wysłaniu.",
+              "focusEn": "recall",
+              "focusPl": "cofnąć"
+            }
+          ],
+          "acceptedAnswers": [
+            "recall",
+            "unsend"
+          ],
+          "acceptedTranslations": [
+            "wycofać",
+            "cofnąć",
+            "wycofywać",
+            "anulować wysłanie"
+          ]
+        }
+      ]
+    }
+  ]
+}

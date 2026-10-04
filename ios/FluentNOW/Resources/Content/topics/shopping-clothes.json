@@ -1,0 +1,2576 @@
+{
+  "schemaVersion": 1,
+  "id": "shopping-clothes",
+  "namePl": "Zakupy w sklepie",
+  "nameEn": "Shopping for Clothes",
+  "group": "money",
+  "symbol": "bag",
+  "summaryPl": "W sklepie odzieżowym: obsługa, przymierzalnia i rozmiary, wyprzedaże, kasa oraz zwroty.",
+  "aliases": [
+    "zakupy",
+    "sklep",
+    "sklep odzieżowy",
+    "przymierzalnia",
+    "rozmiar",
+    "wyprzedaż",
+    "kasa",
+    "zwrot",
+    "shopping",
+    "clothing store"
+  ],
+  "categories": [
+    {
+      "id": "shopping-clothes.in-store",
+      "namePl": "W sklepie",
+      "scenePl": "Sobotnie przedpołudnie w sklepie odzieżowym w galerii handlowej: rozglądasz się po działach",
+      "entries": [
+        {
+          "id": "shopping-clothes.store",
+          "term": "store",
+          "ipa": "/stɔːr/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "sklep",
+          "definition": "A place where you can buy things.",
+          "register": "neutralny",
+          "contextPl": "Miejsce zakupów",
+          "natural": "",
+          "forms": "stores",
+          "collocations": "clothing store; go to the store; store hours",
+          "synonyms": "shop",
+          "antonyms": "",
+          "notePl": "W USA zwykle „store”; „shop” to raczej mały, wyspecjalizowany sklep.",
+          "examples": [
+            {
+              "en": "This store has the best jeans in the whole mall.",
+              "pl": "Ten sklep ma najlepsze dżinsy w całej galerii.",
+              "focusEn": "store",
+              "focusPl": "sklep"
+            },
+            {
+              "en": "The store opens at ten, so we're a little early.",
+              "pl": "Sklep jest czynny od dziesiątej, więc jesteśmy trochę za wcześnie.",
+              "focusEn": "store",
+              "focusPl": "Sklep"
+            }
+          ],
+          "acceptedAnswers": [
+            "store",
+            "shop"
+          ],
+          "acceptedTranslations": [
+            "sklep"
+          ]
+        },
+        {
+          "id": "shopping-clothes.go-shopping",
+          "term": "go shopping",
+          "ipa": "/ˌɡoʊ ˈʃɑːpɪŋ/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "iść na zakupy",
+          "definition": "To go to stores to look at and buy things.",
+          "register": "neutralny",
+          "contextPl": "Zakupy jako zajęcie",
+          "natural": "",
+          "forms": "went shopping; gone shopping",
+          "collocations": "go shopping for clothes; go shopping with friends",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This morning we went shopping for my sister's birthday dress.",
+              "pl": "Rano poszłyśmy na zakupy po sukienkę na urodziny siostry.",
+              "focusEn": "went shopping",
+              "focusPl": "poszłyśmy na zakupy"
+            },
+            {
+              "en": "I hate to go shopping on Saturdays because the stores are so crowded.",
+              "pl": "Nie znoszę chodzić na zakupy w soboty, bo w sklepach jest tłok.",
+              "focusEn": "go shopping",
+              "focusPl": "chodzić na zakupy"
+            }
+          ],
+          "acceptedAnswers": [
+            "go shopping",
+            "shop"
+          ],
+          "acceptedTranslations": [
+            "iść na zakupy",
+            "chodzić na zakupy",
+            "pójść na zakupy",
+            "robić zakupy"
+          ]
+        },
+        {
+          "id": "shopping-clothes.can-i-help-you",
+          "term": "can I help you",
+          "ipa": "/kən ˌaɪ ˈhɛlp ju/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "czy mogę w czymś pomóc",
+          "definition": "A polite question a salesperson asks a customer.",
+          "register": "neutralny",
+          "contextPl": "Powitanie przez sprzedawcę",
+          "natural": "",
+          "forms": "",
+          "collocations": "can I help you find anything",
+          "synonyms": "may I help you",
+          "antonyms": "",
+          "notePl": "Uprzejmiej: „Can I help you find something?”.",
+          "examples": [
+            {
+              "en": "Hi there! Can I help you find a size?",
+              "pl": "Dzień dobry! Czy mogę pomóc w znalezieniu rozmiaru?",
+              "focusEn": "Can I help you",
+              "focusPl": "Czy mogę pomóc"
+            },
+            {
+              "en": "As soon as I walked in, a salesperson asked if she could help me.",
+              "pl": "Gdy tylko weszłam, sprzedawczyni zapytała, czy może mi w czymś pomóc.",
+              "focusEn": "could help me",
+              "focusPl": "może mi w czymś pomóc"
+            }
+          ],
+          "acceptedAnswers": [
+            "can I help you",
+            "may I help you",
+            "can I help you find something"
+          ],
+          "acceptedTranslations": [
+            "czy mogę w czymś pomóc",
+            "w czym mogę pomóc",
+            "czy mogę pomóc"
+          ]
+        },
+        {
+          "id": "shopping-clothes.im-just-looking",
+          "term": "I'm just looking",
+          "ipa": "/aɪm ˌdʒʌst ˈlʊkɪŋ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "tylko się rozglądam",
+          "definition": "A polite answer when you do not need help from a salesperson.",
+          "register": "neutralny",
+          "contextPl": "Odpowiedź sprzedawcy",
+          "natural": "",
+          "forms": "",
+          "collocations": "I'm just looking, thanks",
+          "synonyms": "I'm just browsing",
+          "antonyms": "",
+          "notePl": "Grzecznie dodaj „thanks”.",
+          "examples": [
+            {
+              "en": "No, thanks, I'm just looking for now.",
+              "pl": "Nie, dziękuję, na razie tylko się rozglądam.",
+              "focusEn": "I'm just looking",
+              "focusPl": "tylko się rozglądam"
+            },
+            {
+              "en": "I told the salesperson I was just looking, but she followed me around anyway.",
+              "pl": "Powiedziałam sprzedawczyni, że tylko się rozglądam, ale i tak za mną chodziła.",
+              "focusEn": "I was just looking",
+              "focusPl": "tylko się rozglądam"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'm just looking",
+            "just looking",
+            "I'm just browsing"
+          ],
+          "acceptedTranslations": [
+            "tylko się rozglądam",
+            "tylko oglądam",
+            "rozglądam się"
+          ]
+        },
+        {
+          "id": "shopping-clothes.look-for",
+          "term": "look for",
+          "ipa": "/ˈlʊk ˌfɔːr/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "szukać",
+          "definition": "To try to find something.",
+          "register": "neutralny",
+          "contextPl": "Szukanie konkretnego produktu",
+          "natural": "",
+          "forms": "looked for; looking for",
+          "collocations": "look for a jacket; what are you looking for",
+          "synonyms": "search for",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm looking for a black jacket that isn't too heavy.",
+              "pl": "Szukam czarnej kurtki, która nie jest zbyt ciężka.",
+              "focusEn": "looking for",
+              "focusPl": "Szukam"
+            },
+            {
+              "en": "We looked for my size everywhere, but it was gone.",
+              "pl": "Wszędzie szukaliśmy mojego rozmiaru, ale już go nie było.",
+              "focusEn": "looked for",
+              "focusPl": "szukaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "look for",
+            "search for"
+          ],
+          "acceptedTranslations": [
+            "szukać",
+            "poszukać",
+            "poszukiwać"
+          ]
+        },
+        {
+          "id": "shopping-clothes.salesperson",
+          "term": "salesperson",
+          "ipa": "/ˈseɪlzˌpɝːsən/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "sprzedawca",
+          "definition": "A person whose job is to help customers and sell things in a store.",
+          "register": "neutralny",
+          "contextPl": "Obsługa w sklepie",
+          "natural": "sales associate",
+          "forms": "salespeople",
+          "collocations": "ask a salesperson; a friendly salesperson",
+          "synonyms": "sales associate; clerk",
+          "antonyms": "",
+          "notePl": "W USA też „sales associate”; brytyjskie „shop assistant”.",
+          "examples": [
+            {
+              "en": "The salesperson brought me three different sizes to try.",
+              "pl": "Sprzedawczyni przyniosła mi trzy różne rozmiary do przymierzenia.",
+              "focusEn": "salesperson",
+              "focusPl": "Sprzedawczyni"
+            },
+            {
+              "en": "Ask the salesperson if they have this shirt in blue.",
+              "pl": "Zapytaj sprzedawcę, czy mają tę koszulę w kolorze niebieskim.",
+              "focusEn": "salesperson",
+              "focusPl": "sprzedawcę"
+            }
+          ],
+          "acceptedAnswers": [
+            "salesperson",
+            "sales associate",
+            "sales clerk",
+            "clerk"
+          ],
+          "acceptedTranslations": [
+            "sprzedawca",
+            "sprzedawczyni",
+            "ekspedient",
+            "ekspedientka"
+          ]
+        },
+        {
+          "id": "shopping-clothes.section",
+          "term": "section",
+          "ipa": "/ˈsɛkʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dział",
+          "definition": "A part of a store with a particular kind of product.",
+          "register": "neutralny",
+          "contextPl": "Orientacja w sklepie",
+          "natural": "department",
+          "forms": "sections",
+          "collocations": "the men's section; the kids' section; the sale section",
+          "synonyms": "department",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The men's section is upstairs, next to the shoes.",
+              "pl": "Dział męski jest na górze, obok butów.",
+              "focusEn": "section",
+              "focusPl": "Dział"
+            },
+            {
+              "en": "I spent an hour in the sale section and found nothing.",
+              "pl": "Spędziłam godzinę w dziale z przecenami i nic nie znalazłam.",
+              "focusEn": "section",
+              "focusPl": "dziale"
+            }
+          ],
+          "acceptedAnswers": [
+            "section",
+            "department"
+          ],
+          "acceptedTranslations": [
+            "dział",
+            "część",
+            "stoisko"
+          ]
+        },
+        {
+          "id": "shopping-clothes.rack",
+          "term": "rack",
+          "ipa": "/ræk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wieszak",
+          "definition": "A metal stand with a bar where clothes hang in a store.",
+          "register": "neutralny",
+          "contextPl": "Ubrania wystawione w sklepie",
+          "natural": "",
+          "forms": "racks",
+          "collocations": "clothing rack; on the rack; the sale rack",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pojedynczy wieszak na ubranie to „hanger”.",
+          "examples": [
+            {
+              "en": "All the jeans on this rack are twenty percent off.",
+              "pl": "Wszystkie dżinsy na tym wieszaku są przecenione o dwadzieścia procent.",
+              "focusEn": "rack",
+              "focusPl": "wieszaku"
+            },
+            {
+              "en": "I found a great sweater at the end of the rack.",
+              "pl": "Na końcu stojaka znalazłam świetny sweter.",
+              "focusEn": "rack",
+              "focusPl": "stojaka"
+            }
+          ],
+          "acceptedAnswers": [
+            "rack"
+          ],
+          "acceptedTranslations": [
+            "wieszak",
+            "stojak",
+            "stojak z ubraniami"
+          ]
+        },
+        {
+          "id": "shopping-clothes.in-stock",
+          "term": "in stock",
+          "ipa": "/ˌɪn ˈstɑːk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dostępny",
+          "definition": "Available in the store and ready to buy.",
+          "register": "neutralny",
+          "contextPl": "Dostępność towaru",
+          "natural": "",
+          "forms": "",
+          "collocations": "in stock in my size; back in stock",
+          "synonyms": "available",
+          "antonyms": "out of stock",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have these boots in stock in a size eight?",
+              "pl": "Czy macie te botki na stanie w rozmiarze osiem?",
+              "focusEn": "in stock",
+              "focusPl": "na stanie"
+            },
+            {
+              "en": "The website said the dress was in stock, but the store didn't have it.",
+              "pl": "Na stronie było napisane, że sukienka jest dostępna, ale w sklepie jej nie było.",
+              "focusEn": "in stock",
+              "focusPl": "dostępna"
+            }
+          ],
+          "acceptedAnswers": [
+            "in stock",
+            "available"
+          ],
+          "acceptedTranslations": [
+            "dostępny",
+            "na stanie",
+            "w magazynie"
+          ]
+        },
+        {
+          "id": "shopping-clothes.out-of-stock",
+          "term": "out of stock",
+          "ipa": "/ˌaʊt əv ˈstɑːk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "niedostępny",
+          "definition": "Not available in the store at the moment because all have been sold.",
+          "register": "neutralny",
+          "contextPl": "Brak towaru",
+          "natural": "sold out",
+          "forms": "",
+          "collocations": "out of stock in my size",
+          "synonyms": "sold out; unavailable",
+          "antonyms": "in stock",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, that jacket is out of stock in your size.",
+              "pl": "Przykro mi, ta kurtka jest w pana rozmiarze niedostępna.",
+              "focusEn": "out of stock",
+              "focusPl": "niedostępna"
+            },
+            {
+              "en": "The blue one is out of stock, but we can order it for you.",
+              "pl": "Niebieska jest wyprzedana, ale możemy ją dla pani zamówić.",
+              "focusEn": "out of stock",
+              "focusPl": "wyprzedana"
+            }
+          ],
+          "acceptedAnswers": [
+            "out of stock",
+            "sold out"
+          ],
+          "acceptedTranslations": [
+            "niedostępny",
+            "wyprzedany",
+            "brak na stanie"
+          ]
+        },
+        {
+          "id": "shopping-clothes.department-store",
+          "term": "department store",
+          "ipa": "/dɪˈpɑːrtmənt ˌstɔːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dom towarowy",
+          "definition": "A large store with many sections that sell different kinds of things.",
+          "register": "neutralny",
+          "contextPl": "Duże sklepy wielobranżowe",
+          "natural": "",
+          "forms": "department stores",
+          "collocations": "at the department store; a big department store",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA „first floor” to parter.",
+          "examples": [
+            {
+              "en": "The department store has clothes on the first floor and furniture on the third.",
+              "pl": "W domu towarowym ubrania są na parterze, a meble na drugim piętrze.",
+              "focusEn": "department store",
+              "focusPl": "domu towarowym"
+            },
+            {
+              "en": "We got lost in the department store looking for the kids' section.",
+              "pl": "Zgubiliśmy się w domu towarowym, szukając działu dziecięcego.",
+              "focusEn": "department store",
+              "focusPl": "domu towarowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "department store"
+          ],
+          "acceptedTranslations": [
+            "dom towarowy"
+          ]
+        },
+        {
+          "id": "shopping-clothes.browse",
+          "term": "browse",
+          "ipa": "/braʊz/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rozglądać się",
+          "definition": "To look at things in a store without a clear plan to buy.",
+          "register": "neutralny",
+          "contextPl": "Oglądanie bez pośpiechu",
+          "natural": "look around",
+          "forms": "browsed; browsing",
+          "collocations": "browse the racks; just browsing",
+          "synonyms": "look around",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I like to browse for a while before I try anything on.",
+              "pl": "Lubię się chwilę rozglądać, zanim cokolwiek przymierzę.",
+              "focusEn": "browse",
+              "focusPl": "rozglądać"
+            },
+            {
+              "en": "We browsed the new collection while my mom was in the fitting room.",
+              "pl": "Oglądaliśmy nową kolekcję, kiedy mama była w przymierzalni.",
+              "focusEn": "browsed",
+              "focusPl": "Oglądaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "browse",
+            "look around"
+          ],
+          "acceptedTranslations": [
+            "rozglądać się",
+            "oglądać",
+            "przeglądać"
+          ]
+        },
+        {
+          "id": "shopping-clothes.mannequin",
+          "term": "mannequin",
+          "ipa": "/ˈmænɪkɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "manekin",
+          "definition": "A model of a human body used to show clothes in a store.",
+          "register": "neutralny",
+          "contextPl": "Ekspozycja ubrań",
+          "natural": "",
+          "forms": "mannequins",
+          "collocations": "on the mannequin; a mannequin in the window",
+          "synonyms": "dummy",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I want the outfit that the mannequin in the window is wearing.",
+              "pl": "Chcę ten zestaw, który ma na sobie manekin na wystawie.",
+              "focusEn": "mannequin",
+              "focusPl": "manekin"
+            },
+            {
+              "en": "The salesperson took the jacket off the mannequin for me to try.",
+              "pl": "Sprzedawczyni zdjęła kurtkę z manekina, żebym mogła ją przymierzyć.",
+              "focusEn": "mannequin",
+              "focusPl": "manekina"
+            }
+          ],
+          "acceptedAnswers": [
+            "mannequin",
+            "dummy"
+          ],
+          "acceptedTranslations": [
+            "manekin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shopping-clothes.fitting-room",
+      "namePl": "Przymierzalnia i rozmiary",
+      "scenePl": "Przymierzalnia: przymierzasz dżinsy i kurtkę, a sprzedawczyni podaje ci inne rozmiary",
+      "entries": [
+        {
+          "id": "shopping-clothes.size",
+          "term": "size",
+          "ipa": "/saɪz/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "rozmiar",
+          "definition": "How big clothes or shoes are, shown by a number or letter.",
+          "register": "neutralny",
+          "contextPl": "Dobór rozmiaru",
+          "natural": "",
+          "forms": "sizes",
+          "collocations": "what size; my size; a size bigger",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have this jacket in a smaller size?",
+              "pl": "Macie tę kurtkę w mniejszym rozmiarze?",
+              "focusEn": "size",
+              "focusPl": "rozmiarze"
+            },
+            {
+              "en": "The salesperson brought me the same jeans in two different sizes.",
+              "pl": "Sprzedawczyni przyniosła mi te same dżinsy w dwóch różnych rozmiarach.",
+              "focusEn": "sizes",
+              "focusPl": "rozmiarach"
+            }
+          ],
+          "acceptedAnswers": [
+            "size"
+          ],
+          "acceptedTranslations": [
+            "rozmiar"
+          ]
+        },
+        {
+          "id": "shopping-clothes.try-on",
+          "term": "try on",
+          "ipa": "/ˌtraɪ ˈɑːn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przymierzyć",
+          "definition": "To put on clothes in a store to see if they fit and look good.",
+          "register": "neutralny",
+          "contextPl": "Przymierzanie ubrań",
+          "natural": "",
+          "forms": "tried on; trying on",
+          "collocations": "try on a dress; try it on; can I try this on",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zaimek stoi w środku: „try it on”.",
+          "examples": [
+            {
+              "en": "Can I try on these jeans in a bigger size?",
+              "pl": "Czy mogę przymierzyć te dżinsy w większym rozmiarze?",
+              "focusEn": "try on",
+              "focusPl": "przymierzyć"
+            },
+            {
+              "en": "I tried on five jackets and liked the first one best.",
+              "pl": "Przymierzyłam pięć kurtek, a najbardziej podobała mi się pierwsza.",
+              "focusEn": "tried on",
+              "focusPl": "Przymierzyłam"
+            }
+          ],
+          "acceptedAnswers": [
+            "try on"
+          ],
+          "acceptedTranslations": [
+            "przymierzyć",
+            "przymierzać"
+          ]
+        },
+        {
+          "id": "shopping-clothes.fit",
+          "term": "fit",
+          "ipa": "/fɪt/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pasować",
+          "definition": "To be the right size and shape for someone.",
+          "register": "neutralny",
+          "contextPl": "Czy ubranie dobrze leży",
+          "natural": "",
+          "forms": "fit – fit – fit; fitted",
+          "collocations": "fit perfectly; doesn't fit; fit well",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Fit” dotyczy rozmiaru, a „suit” – wyglądu.",
+          "examples": [
+            {
+              "en": "These pants fit perfectly, but they're too long.",
+              "pl": "Te spodnie idealnie pasują, ale są za długie.",
+              "focusEn": "fit",
+              "focusPl": "pasują"
+            },
+            {
+              "en": "The jacket didn't fit around my shoulders, so I asked for a large.",
+              "pl": "Kurtka nie pasowała w ramionach, więc poprosiłam o rozmiar L.",
+              "focusEn": "fit",
+              "focusPl": "pasowała"
+            }
+          ],
+          "acceptedAnswers": [
+            "fit"
+          ],
+          "acceptedTranslations": [
+            "pasować",
+            "leżeć",
+            "pasować rozmiarem"
+          ]
+        },
+        {
+          "id": "shopping-clothes.look-good-on",
+          "term": "look good on",
+          "ipa": "/ˌlʊk ˈɡʊd ɑːn/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dobrze wyglądać w czymś",
+          "definition": "To make someone look attractive when they wear it.",
+          "register": "neutralny",
+          "contextPl": "Ocena wyglądu w ubraniu",
+          "natural": "",
+          "forms": "looked good on",
+          "collocations": "it looks good on you; looks great on you",
+          "synonyms": "suit",
+          "antonyms": "",
+          "notePl": "Uwaga na szyk: „It looks good on you” = dobrze ci w tym.",
+          "examples": [
+            {
+              "en": "That green sweater really looks good on you.",
+              "pl": "W tym zielonym swetrze naprawdę dobrze wyglądasz.",
+              "focusEn": "looks good on",
+              "focusPl": "dobrze wyglądasz"
+            },
+            {
+              "en": "Nothing I tried on today looked good on me.",
+              "pl": "Dziś w niczym, co przymierzyłam, nie wyglądałam dobrze.",
+              "focusEn": "looked good on",
+              "focusPl": "wyglądałam dobrze"
+            }
+          ],
+          "acceptedAnswers": [
+            "look good on",
+            "look great on"
+          ],
+          "acceptedTranslations": [
+            "dobrze wyglądać w czymś",
+            "dobrze wyglądać",
+            "być do twarzy"
+          ]
+        },
+        {
+          "id": "shopping-clothes.mirror",
+          "term": "mirror",
+          "ipa": "/ˈmɪrər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "lustro",
+          "definition": "A piece of glass in which you can see yourself.",
+          "register": "neutralny",
+          "contextPl": "Oglądanie się w przymierzalni",
+          "natural": "",
+          "forms": "mirrors",
+          "collocations": "look in the mirror; a full-length mirror",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The light by this mirror makes everything look terrible.",
+              "pl": "Światło przy tym lustrze sprawia, że wszystko wygląda okropnie.",
+              "focusEn": "mirror",
+              "focusPl": "lustrze"
+            },
+            {
+              "en": "Come out and look in the big mirror so you can see the back.",
+              "pl": "Wyjdź i przejrzyj się w dużym lustrze, żeby zobaczyć tył.",
+              "focusEn": "mirror",
+              "focusPl": "lustrze"
+            }
+          ],
+          "acceptedAnswers": [
+            "mirror"
+          ],
+          "acceptedTranslations": [
+            "lustro"
+          ]
+        },
+        {
+          "id": "shopping-clothes.tight",
+          "term": "tight",
+          "ipa": "/taɪt/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ciasny",
+          "definition": "Fitting your body very closely, sometimes too closely.",
+          "register": "neutralny",
+          "contextPl": "Za małe ubranie",
+          "natural": "",
+          "forms": "tighter; tightest",
+          "collocations": "too tight; tight jeans; a little tight",
+          "synonyms": "",
+          "antonyms": "loose",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "These jeans are too tight, and I can barely sit down.",
+              "pl": "Te dżinsy są za ciasne, ledwo mogę usiąść.",
+              "focusEn": "tight",
+              "focusPl": "ciasne"
+            },
+            {
+              "en": "The shirt is a little tight across the chest.",
+              "pl": "Koszula jest trochę ciasna w klatce piersiowej.",
+              "focusEn": "tight",
+              "focusPl": "ciasna"
+            }
+          ],
+          "acceptedAnswers": [
+            "tight"
+          ],
+          "acceptedTranslations": [
+            "ciasny",
+            "za ciasny",
+            "obcisły",
+            "opięty"
+          ]
+        },
+        {
+          "id": "shopping-clothes.what-size-are-you",
+          "term": "what size are you",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "jaki nosisz rozmiar",
+          "definition": "A question a salesperson asks to find clothes that will fit you.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o rozmiar",
+          "natural": "",
+          "forms": "",
+          "collocations": "what size are you in jeans; what size do you wear",
+          "synonyms": "what size do you wear",
+          "antonyms": "",
+          "notePl": "Odpowiedź np.: „I'm a medium” albo „I'm a size eight”.",
+          "examples": [
+            {
+              "en": "What size are you? I'll bring you a few from the back.",
+              "pl": "Jaki ma pani rozmiar? Przyniosę kilka z zaplecza.",
+              "focusEn": "What size are you",
+              "focusPl": "Jaki ma pani rozmiar"
+            },
+            {
+              "en": "The salesperson asked what size I was and came back with three pairs.",
+              "pl": "Sprzedawca zapytał, jaki noszę rozmiar, i wrócił z trzema parami.",
+              "focusEn": "what size I was",
+              "focusPl": "jaki noszę rozmiar"
+            }
+          ],
+          "acceptedAnswers": [
+            "what size are you",
+            "what size do you wear"
+          ],
+          "acceptedTranslations": [
+            "jaki nosisz rozmiar",
+            "jaki ma pani rozmiar",
+            "jaki ma pan rozmiar",
+            "jaki rozmiar"
+          ]
+        },
+        {
+          "id": "shopping-clothes.fitting-room",
+          "term": "fitting room",
+          "ipa": "/ˈfɪtɪŋ ˌruːm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przymierzalnia",
+          "definition": "A small private room in a store where you try on clothes.",
+          "register": "neutralny",
+          "contextPl": "Miejsce przymierzania",
+          "natural": "dressing room",
+          "forms": "fitting rooms",
+          "collocations": "go to the fitting room; the fitting room line",
+          "synonyms": "dressing room",
+          "antonyms": "",
+          "notePl": "W USA często też „dressing room”.",
+          "examples": [
+            {
+              "en": "There's a line for the fitting room, so let's grab everything at once.",
+              "pl": "Do przymierzalni jest kolejka, więc weźmy wszystko naraz.",
+              "focusEn": "fitting room",
+              "focusPl": "przymierzalni"
+            },
+            {
+              "en": "You can only take six items into the fitting room.",
+              "pl": "Do przymierzalni można wziąć tylko sześć rzeczy.",
+              "focusEn": "fitting room",
+              "focusPl": "przymierzalni"
+            }
+          ],
+          "acceptedAnswers": [
+            "fitting room",
+            "dressing room"
+          ],
+          "acceptedTranslations": [
+            "przymierzalnia"
+          ]
+        },
+        {
+          "id": "shopping-clothes.loose",
+          "term": "loose",
+          "ipa": "/luːs/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "luźny",
+          "definition": "Not fitting your body closely; bigger than needed.",
+          "register": "neutralny",
+          "contextPl": "Za duże lub luźne ubranie",
+          "natural": "baggy",
+          "forms": "looser; loosest",
+          "collocations": "too loose; a loose fit",
+          "synonyms": "baggy",
+          "antonyms": "tight",
+          "notePl": "Nie myl z „lose” /luːz/ – zgubić.",
+          "examples": [
+            {
+              "en": "The medium is too loose, so let me try the small.",
+              "pl": "Rozmiar M jest za luźny, więc przymierzę S.",
+              "focusEn": "loose",
+              "focusPl": "luźny"
+            },
+            {
+              "en": "I like how loose this shirt feels, so it's perfect for summer.",
+              "pl": "Podoba mi się, jak luźno leży ta koszula, więc jest idealna na lato.",
+              "focusEn": "loose",
+              "focusPl": "luźno"
+            }
+          ],
+          "acceptedAnswers": [
+            "loose",
+            "baggy"
+          ],
+          "acceptedTranslations": [
+            "luźny",
+            "za luźny",
+            "obszerny"
+          ]
+        },
+        {
+          "id": "shopping-clothes.suit",
+          "term": "suit",
+          "ipa": "/suːt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pasować do kogoś",
+          "definition": "To look good on someone; to match someone's style or coloring.",
+          "register": "neutralny",
+          "contextPl": "Dopasowanie koloru i stylu",
+          "natural": "",
+          "forms": "suited; suiting",
+          "collocations": "the color suits you; it really suits you",
+          "synonyms": "look good on",
+          "antonyms": "",
+          "notePl": "Rzeczownik „suit” = garnitur.",
+          "examples": [
+            {
+              "en": "Red really suits you, so you should get it.",
+              "pl": "Naprawdę pasuje ci czerwony, więc powinnaś go wziąć.",
+              "focusEn": "suits",
+              "focusPl": "pasuje"
+            },
+            {
+              "en": "I don't think this style suits me, because it makes me look shorter.",
+              "pl": "Chyba ten fason do mnie nie pasuje, bo wyglądam w nim na niższą.",
+              "focusEn": "suits",
+              "focusPl": "pasuje"
+            }
+          ],
+          "acceptedAnswers": [
+            "suit"
+          ],
+          "acceptedTranslations": [
+            "pasować do kogoś",
+            "być do twarzy",
+            "pasować"
+          ]
+        },
+        {
+          "id": "shopping-clothes.go-with",
+          "term": "go with",
+          "ipa": "/ˈɡoʊ ˌwɪð/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pasować do",
+          "definition": "To look good together with something else.",
+          "register": "neutralny",
+          "contextPl": "Łączenie ubrań w zestaw",
+          "natural": "",
+          "forms": "went with; gone with",
+          "collocations": "go with your shoes; go well with",
+          "synonyms": "match",
+          "antonyms": "clash with",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you think this belt goes with the brown boots?",
+              "pl": "Myślisz, że ten pasek pasuje do brązowych botków?",
+              "focusEn": "goes with",
+              "focusPl": "pasuje do"
+            },
+            {
+              "en": "I need a top that will go with these new pants.",
+              "pl": "Potrzebuję bluzki, która będzie pasować do tych nowych spodni.",
+              "focusEn": "go with",
+              "focusPl": "pasować do"
+            }
+          ],
+          "acceptedAnswers": [
+            "go with",
+            "match"
+          ],
+          "acceptedTranslations": [
+            "pasować do",
+            "pasować",
+            "komponować się z"
+          ]
+        },
+        {
+          "id": "shopping-clothes.size-up",
+          "term": "size up",
+          "ipa": "/ˌsaɪz ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wziąć większy rozmiar",
+          "definition": "To choose one size bigger than you usually wear.",
+          "register": "potoczny",
+          "contextPl": "Dobór rozmiaru u różnych marek",
+          "natural": "",
+          "forms": "sized up; sizing up",
+          "collocations": "size up in this brand; you should size up",
+          "synonyms": "",
+          "antonyms": "size down",
+          "notePl": "„Size someone up” znaczy też „ocenić kogoś wzrokiem”.",
+          "examples": [
+            {
+              "en": "This brand runs small, so you might want to size up.",
+              "pl": "Ta marka ma zaniżone rozmiary, więc może warto wziąć większy rozmiar.",
+              "focusEn": "size up",
+              "focusPl": "wziąć większy rozmiar"
+            },
+            {
+              "en": "I sized up in the jacket so I can wear a sweater underneath.",
+              "pl": "Wzięłam większy rozmiar kurtki, żeby zmieścić pod nią sweter.",
+              "focusEn": "sized up",
+              "focusPl": "Wzięłam większy rozmiar"
+            }
+          ],
+          "acceptedAnswers": [
+            "size up",
+            "go up a size"
+          ],
+          "acceptedTranslations": [
+            "wziąć większy rozmiar",
+            "brać większy rozmiar"
+          ]
+        },
+        {
+          "id": "shopping-clothes.alterations",
+          "term": "alterations",
+          "ipa": "/ˌɔːltəˈreɪʃənz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "poprawki krawieckie",
+          "definition": "Small changes made to clothes so they fit better.",
+          "register": "neutralny",
+          "contextPl": "Skracanie i dopasowanie ubrań",
+          "natural": "",
+          "forms": "",
+          "collocations": "do alterations; free alterations; take it in for alterations",
+          "synonyms": "tailoring",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The store offers free alterations if the pants are too long.",
+              "pl": "Sklep oferuje darmowe poprawki krawieckie, jeśli spodnie są za długie.",
+              "focusEn": "alterations",
+              "focusPl": "poprawki krawieckie"
+            },
+            {
+              "en": "The alterations on the suit will take about a week.",
+              "pl": "Poprawki w garniturze zajmą około tygodnia.",
+              "focusEn": "alterations",
+              "focusPl": "Poprawki"
+            }
+          ],
+          "acceptedAnswers": [
+            "alterations",
+            "alteration",
+            "tailoring"
+          ],
+          "acceptedTranslations": [
+            "poprawki krawieckie",
+            "poprawki",
+            "przeróbki krawieckie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shopping-clothes.sales-prices",
+      "namePl": "Wyprzedaże i ceny",
+      "scenePl": "Wyprzedaż sezonowa: przeglądasz wieszaki z przecenami i porównujesz ceny",
+      "entries": [
+        {
+          "id": "shopping-clothes.sale",
+          "term": "sale",
+          "ipa": "/seɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wyprzedaż",
+          "definition": "A time when a store sells things at lower prices.",
+          "register": "neutralny",
+          "contextPl": "Okresy obniżek",
+          "natural": "",
+          "forms": "sales",
+          "collocations": "a big sale; the summer sale; holiday sale",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The winter sale starts today, so the store is packed.",
+              "pl": "Zimowa wyprzedaż zaczyna się dziś, więc w sklepie jest tłum.",
+              "focusEn": "sale",
+              "focusPl": "wyprzedaż"
+            },
+            {
+              "en": "I bought this coat at last year's end-of-season sale.",
+              "pl": "Kupiłam ten płaszcz na zeszłorocznej wyprzedaży końca sezonu.",
+              "focusEn": "sale",
+              "focusPl": "wyprzedaży"
+            }
+          ],
+          "acceptedAnswers": [
+            "sale"
+          ],
+          "acceptedTranslations": [
+            "wyprzedaż",
+            "promocja",
+            "przecena"
+          ]
+        },
+        {
+          "id": "shopping-clothes.on-sale",
+          "term": "on sale",
+          "ipa": "/ˌɑːn ˈseɪl/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przeceniony",
+          "definition": "Being sold at a lower price than usual.",
+          "register": "neutralny",
+          "contextPl": "Obniżone ceny",
+          "natural": "",
+          "forms": "",
+          "collocations": "on sale for twenty dollars; everything is on sale",
+          "synonyms": "discounted; marked down",
+          "antonyms": "full price",
+          "notePl": "Uwaga: „for sale” = na sprzedaż, a „on sale” = w promocji.",
+          "examples": [
+            {
+              "en": "Is this jacket on sale, or is it full price?",
+              "pl": "Czy ta kurtka jest przeceniona, czy w pełnej cenie?",
+              "focusEn": "on sale",
+              "focusPl": "przeceniona"
+            },
+            {
+              "en": "Everything on this rack is on sale until Sunday.",
+              "pl": "Wszystko na tym wieszaku jest w promocji do niedzieli.",
+              "focusEn": "on sale",
+              "focusPl": "w promocji"
+            }
+          ],
+          "acceptedAnswers": [
+            "on sale",
+            "marked down",
+            "discounted"
+          ],
+          "acceptedTranslations": [
+            "przeceniony",
+            "w promocji",
+            "na wyprzedaży",
+            "po obniżce"
+          ]
+        },
+        {
+          "id": "shopping-clothes.expensive",
+          "term": "expensive",
+          "ipa": "/ɪkˈspɛnsɪv/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "drogi",
+          "definition": "Costing a lot of money.",
+          "register": "neutralny",
+          "contextPl": "Wysokie ceny",
+          "natural": "pricey",
+          "forms": "more expensive; most expensive",
+          "collocations": "too expensive; really expensive",
+          "synonyms": "pricey; costly",
+          "antonyms": "cheap",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Even on sale, these boots are too expensive for me.",
+              "pl": "Nawet przecenione te botki są dla mnie za drogie.",
+              "focusEn": "expensive",
+              "focusPl": "drogie"
+            },
+            {
+              "en": "The expensive coats are in the back, away from the sale racks.",
+              "pl": "Drogie płaszcze są z tyłu, z dala od wieszaków z przecenami.",
+              "focusEn": "expensive",
+              "focusPl": "Drogie"
+            }
+          ],
+          "acceptedAnswers": [
+            "expensive",
+            "pricey"
+          ],
+          "acceptedTranslations": [
+            "drogi",
+            "kosztowny"
+          ]
+        },
+        {
+          "id": "shopping-clothes.cheap",
+          "term": "cheap",
+          "ipa": "/tʃiːp/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "tani",
+          "definition": "Costing little money; sometimes also of low quality.",
+          "register": "neutralny",
+          "contextPl": "Niskie ceny",
+          "natural": "",
+          "forms": "cheaper; cheapest",
+          "collocations": "really cheap; cheap clothes; cheaper than",
+          "synonyms": "inexpensive; affordable",
+          "antonyms": "expensive",
+          "notePl": "Może brzmieć negatywnie (tandetny); neutralnie: „inexpensive”, „affordable”.",
+          "examples": [
+            {
+              "en": "The T-shirts were so cheap that I bought three.",
+              "pl": "Koszulki były tak tanie, że kupiłam trzy.",
+              "focusEn": "cheap",
+              "focusPl": "tanie"
+            },
+            {
+              "en": "This sweater is cheap, but the material feels really thin.",
+              "pl": "Ten sweter jest tani, ale materiał wydaje się bardzo cienki.",
+              "focusEn": "cheap",
+              "focusPl": "tani"
+            }
+          ],
+          "acceptedAnswers": [
+            "cheap",
+            "inexpensive"
+          ],
+          "acceptedTranslations": [
+            "tani",
+            "niedrogi",
+            "tandetny"
+          ]
+        },
+        {
+          "id": "shopping-clothes.deal",
+          "term": "deal",
+          "ipa": "/diːl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "okazja",
+          "definition": "Something you buy at a good price.",
+          "register": "potoczny",
+          "contextPl": "Opłacalne zakupy",
+          "natural": "",
+          "forms": "deals",
+          "collocations": "a good deal; a great deal; find a deal",
+          "synonyms": "bargain",
+          "antonyms": "rip-off",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Two pairs of jeans for forty dollars is a great deal.",
+              "pl": "Dwie pary dżinsów za czterdzieści dolarów to świetna okazja.",
+              "focusEn": "deal",
+              "focusPl": "okazja"
+            },
+            {
+              "en": "I found some amazing deals on the clearance rack.",
+              "pl": "Na wieszaku z wyprzedażą znalazłam niesamowite okazje.",
+              "focusEn": "deals",
+              "focusPl": "okazje"
+            }
+          ],
+          "acceptedAnswers": [
+            "deal",
+            "bargain"
+          ],
+          "acceptedTranslations": [
+            "okazja",
+            "dobra cena",
+            "promocja",
+            "dobry interes"
+          ]
+        },
+        {
+          "id": "shopping-clothes.discount",
+          "term": "discount",
+          "ipa": "/ˈdɪskaʊnt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zniżka",
+          "definition": "An amount taken off the usual price.",
+          "register": "neutralny",
+          "contextPl": "Obniżka ceny",
+          "natural": "",
+          "forms": "discounts",
+          "collocations": "get a discount; a student discount; a 20 percent discount",
+          "synonyms": "reduction",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Excuse me, do you have a student discount here?",
+              "pl": "Przepraszam, macie tu zniżkę studencką?",
+              "focusEn": "discount",
+              "focusPl": "zniżkę"
+            },
+            {
+              "en": "They take the discount off when you pay at the register.",
+              "pl": "Zniżkę odliczają przy płaceniu w kasie.",
+              "focusEn": "discount",
+              "focusPl": "Zniżkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "discount"
+          ],
+          "acceptedTranslations": [
+            "zniżka",
+            "rabat",
+            "obniżka",
+            "upust"
+          ]
+        },
+        {
+          "id": "shopping-clothes.price-tag",
+          "term": "price tag",
+          "ipa": "/ˈpraɪs ˌtæɡ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "metka z ceną",
+          "definition": "A small label on a product that shows how much it costs.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie ceny",
+          "natural": "tag",
+          "forms": "price tags",
+          "collocations": "check the price tag; take off the price tag",
+          "synonyms": "label; tag",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I looked at the price tag and put the dress back right away.",
+              "pl": "Spojrzałam na metkę z ceną i od razu odwiesiłam sukienkę.",
+              "focusEn": "price tag",
+              "focusPl": "metkę z ceną"
+            },
+            {
+              "en": "There's no price tag on this shirt, so can you check it for me?",
+              "pl": "Na tej koszuli nie ma metki z ceną, więc możesz mi sprawdzić cenę?",
+              "focusEn": "price tag",
+              "focusPl": "metki z ceną"
+            }
+          ],
+          "acceptedAnswers": [
+            "price tag",
+            "tag",
+            "price label"
+          ],
+          "acceptedTranslations": [
+            "metka z ceną",
+            "metka",
+            "etykieta z ceną"
+          ]
+        },
+        {
+          "id": "shopping-clothes.percent-off",
+          "term": "percent off",
+          "ipa": "/pərˌsɛnt ˈɔːf/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "procent taniej",
+          "definition": "Used to say how much the price has been reduced.",
+          "register": "neutralny",
+          "contextPl": "Wielkość obniżki",
+          "natural": "",
+          "forms": "",
+          "collocations": "30 percent off; 50 percent off everything",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Half off” = o połowę taniej.",
+          "examples": [
+            {
+              "en": "Everything in this section is forty percent off today.",
+              "pl": "Wszystko w tym dziale jest dziś czterdzieści procent taniej.",
+              "focusEn": "percent off",
+              "focusPl": "procent taniej"
+            },
+            {
+              "en": "The sign says fifty percent off, but the price tag shows the old price.",
+              "pl": "Na tabliczce jest napisane pięćdziesiąt procent taniej, ale metka pokazuje starą cenę.",
+              "focusEn": "percent off",
+              "focusPl": "procent taniej"
+            }
+          ],
+          "acceptedAnswers": [
+            "percent off"
+          ],
+          "acceptedTranslations": [
+            "procent taniej",
+            "procent zniżki",
+            "procent rabatu"
+          ]
+        },
+        {
+          "id": "shopping-clothes.afford",
+          "term": "afford",
+          "ipa": "/əˈfɔːrd/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pozwolić sobie",
+          "definition": "To have enough money to pay for something.",
+          "register": "neutralny",
+          "contextPl": "Czy stać cię na zakup",
+          "natural": "",
+          "forms": "afforded; affording",
+          "collocations": "can't afford; can afford it; afford to buy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zwykle z „can/can't”: „I can't afford it” = nie stać mnie.",
+          "examples": [
+            {
+              "en": "I love this coat, but I can't afford it this month.",
+              "pl": "Uwielbiam ten płaszcz, ale w tym miesiącu nie mogę sobie na niego pozwolić.",
+              "focusEn": "afford",
+              "focusPl": "pozwolić"
+            },
+            {
+              "en": "Now that they're on sale, I can finally afford those boots.",
+              "pl": "Teraz, kiedy są przecenione, w końcu stać mnie na te botki.",
+              "focusEn": "afford",
+              "focusPl": "stać mnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "afford"
+          ],
+          "acceptedTranslations": [
+            "pozwolić sobie",
+            "stać mnie",
+            "mieć na coś pieniądze"
+          ]
+        },
+        {
+          "id": "shopping-clothes.worth-it",
+          "term": "worth it",
+          "ipa": "/ˈwɝːθ ɪt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "warte swojej ceny",
+          "definition": "Good enough to justify the money, time, or effort.",
+          "register": "potoczny",
+          "contextPl": "Ocena opłacalności",
+          "natural": "",
+          "forms": "",
+          "collocations": "totally worth it; not worth it; is it worth it",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's a little pricey, but the jacket is totally worth it.",
+              "pl": "Jest trochę droga, ale ta kurtka jest zdecydowanie warta swojej ceny.",
+              "focusEn": "worth it",
+              "focusPl": "warta swojej ceny"
+            },
+            {
+              "en": "Waiting in line for an hour for one sale shirt wasn't worth it.",
+              "pl": "Stanie godzinę w kolejce po jedną przecenioną koszulę nie było tego warte.",
+              "focusEn": "worth it",
+              "focusPl": "tego warte"
+            }
+          ],
+          "acceptedAnswers": [
+            "worth it",
+            "worth the money"
+          ],
+          "acceptedTranslations": [
+            "warte swojej ceny",
+            "warte tego",
+            "opłacalne",
+            "warto"
+          ]
+        },
+        {
+          "id": "shopping-clothes.coupon",
+          "term": "coupon",
+          "ipa": "/ˈkuːpɑːn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kupon rabatowy",
+          "definition": "A piece of paper or code that gives you money off a purchase.",
+          "register": "neutralny",
+          "contextPl": "Dodatkowe zniżki",
+          "natural": "",
+          "forms": "coupons",
+          "collocations": "use a coupon; a ten-dollar coupon; coupon code",
+          "synonyms": "voucher",
+          "antonyms": "",
+          "notePl": "W USA często też /ˈkjuːpɑːn/.",
+          "examples": [
+            {
+              "en": "I have a coupon for ten dollars off any purchase over fifty.",
+              "pl": "Mam kupon rabatowy na dziesięć dolarów zniżki przy zakupach powyżej pięćdziesięciu.",
+              "focusEn": "coupon",
+              "focusPl": "kupon rabatowy"
+            },
+            {
+              "en": "You can't use a coupon on items that are already on sale.",
+              "pl": "Nie można użyć kuponu do rzeczy, które są już przecenione.",
+              "focusEn": "coupon",
+              "focusPl": "kuponu"
+            }
+          ],
+          "acceptedAnswers": [
+            "coupon",
+            "voucher"
+          ],
+          "acceptedTranslations": [
+            "kupon rabatowy",
+            "kupon",
+            "bon rabatowy",
+            "kod rabatowy"
+          ]
+        },
+        {
+          "id": "shopping-clothes.bargain",
+          "term": "bargain",
+          "ipa": "/ˈbɑːrɡən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "okazyjny zakup",
+          "definition": "Something bought for much less than its usual price.",
+          "register": "neutralny",
+          "contextPl": "Bardzo korzystne zakupy",
+          "natural": "steal",
+          "forms": "bargains",
+          "collocations": "a real bargain; bargain hunting",
+          "synonyms": "deal; steal",
+          "antonyms": "",
+          "notePl": "Potocznie: „It's a steal!” = to prawie za darmo.",
+          "examples": [
+            {
+              "en": "This wool coat for thirty dollars is a real bargain.",
+              "pl": "Ten wełniany płaszcz za trzydzieści dolarów to prawdziwa okazja.",
+              "focusEn": "bargain",
+              "focusPl": "okazja"
+            },
+            {
+              "en": "My mom loves hunting for bargains on the last day of the sale.",
+              "pl": "Moja mama uwielbia polować na okazje w ostatni dzień wyprzedaży.",
+              "focusEn": "bargains",
+              "focusPl": "okazje"
+            }
+          ],
+          "acceptedAnswers": [
+            "bargain",
+            "steal",
+            "deal"
+          ],
+          "acceptedTranslations": [
+            "okazyjny zakup",
+            "okazja",
+            "gratka"
+          ]
+        },
+        {
+          "id": "shopping-clothes.clearance",
+          "term": "clearance",
+          "ipa": "/ˈklɪrəns/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wyprzedaż końcowa",
+          "definition": "A sale to get rid of old products at very low prices.",
+          "register": "neutralny",
+          "contextPl": "Ostatnie sztuki w najniższych cenach",
+          "natural": "",
+          "forms": "",
+          "collocations": "clearance rack; on clearance; clearance sale",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The clearance rack is at the very back of the store.",
+              "pl": "Wieszak z wyprzedażą końcową jest na samym końcu sklepu.",
+              "focusEn": "clearance",
+              "focusPl": "wyprzedażą końcową"
+            },
+            {
+              "en": "I found these sandals on clearance for five dollars.",
+              "pl": "Znalazłam te sandały na wyprzedaży za pięć dolarów.",
+              "focusEn": "clearance",
+              "focusPl": "wyprzedaży"
+            }
+          ],
+          "acceptedAnswers": [
+            "clearance",
+            "clearance sale"
+          ],
+          "acceptedTranslations": [
+            "wyprzedaż końcowa",
+            "wyprzedaż",
+            "likwidacja towaru"
+          ]
+        },
+        {
+          "id": "shopping-clothes.rip-off",
+          "term": "rip-off",
+          "ipa": "/ˈrɪpɔːf/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zdzierstwo",
+          "definition": "Something that costs much more than it should.",
+          "register": "potoczny",
+          "contextPl": "Zawyżone ceny",
+          "natural": "",
+          "forms": "rip-offs",
+          "collocations": "a total rip-off; that's a rip-off",
+          "synonyms": "",
+          "antonyms": "bargain; deal",
+          "notePl": "Czasownik: „rip someone off” = oskubać kogoś.",
+          "examples": [
+            {
+              "en": "Eighty dollars for a plain T-shirt? That's a rip-off.",
+              "pl": "Osiemdziesiąt dolarów za zwykły T-shirt? To zdzierstwo.",
+              "focusEn": "rip-off",
+              "focusPl": "zdzierstwo"
+            },
+            {
+              "en": "The sale price was still a rip-off compared to other stores.",
+              "pl": "Cena promocyjna wciąż była zdzierstwem w porównaniu z innymi sklepami.",
+              "focusEn": "rip-off",
+              "focusPl": "zdzierstwem"
+            }
+          ],
+          "acceptedAnswers": [
+            "rip-off",
+            "ripoff"
+          ],
+          "acceptedTranslations": [
+            "zdzierstwo",
+            "naciąganie",
+            "złodziejska cena"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shopping-clothes.checkout",
+      "namePl": "Kasa i płacenie",
+      "scenePl": "Kolejka do kasy w sklepie odzieżowym: płacisz za wybrane ubrania",
+      "entries": [
+        {
+          "id": "shopping-clothes.pay",
+          "term": "pay",
+          "ipa": "/peɪ/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "zapłacić",
+          "definition": "To give money for something you buy.",
+          "register": "neutralny",
+          "contextPl": "Płacenie za zakupy",
+          "natural": "",
+          "forms": "pay – paid – paid",
+          "collocations": "pay for something; pay in cash; pay by card",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przy rzeczy dodajemy „for”: „pay for the jeans”.",
+          "examples": [
+            {
+              "en": "Can I pay for these two shirts together?",
+              "pl": "Czy mogę zapłacić za te dwie koszule razem?",
+              "focusEn": "pay",
+              "focusPl": "zapłacić"
+            },
+            {
+              "en": "I paid for the jeans with the gift card from my birthday.",
+              "pl": "Zapłaciłam za dżinsy kartą podarunkową z urodzin.",
+              "focusEn": "paid",
+              "focusPl": "Zapłaciłam"
+            }
+          ],
+          "acceptedAnswers": [
+            "pay"
+          ],
+          "acceptedTranslations": [
+            "zapłacić",
+            "płacić"
+          ]
+        },
+        {
+          "id": "shopping-clothes.bag",
+          "term": "bag",
+          "ipa": "/bæɡ/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "torba",
+          "definition": "A container made of paper or plastic for carrying things you buy.",
+          "register": "neutralny",
+          "contextPl": "Pakowanie zakupów",
+          "natural": "",
+          "forms": "bags",
+          "collocations": "a paper bag; a shopping bag; do you need a bag",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you need a bag, or will you just carry it?",
+              "pl": "Potrzebuje pani torby, czy weźmie pani tak?",
+              "focusEn": "bag",
+              "focusPl": "torby"
+            },
+            {
+              "en": "The paper bag ripped before I even left the store.",
+              "pl": "Papierowa torba rozdarła się, zanim w ogóle wyszłam ze sklepu.",
+              "focusEn": "bag",
+              "focusPl": "torba"
+            }
+          ],
+          "acceptedAnswers": [
+            "bag",
+            "shopping bag"
+          ],
+          "acceptedTranslations": [
+            "torba",
+            "torebka",
+            "reklamówka"
+          ]
+        },
+        {
+          "id": "shopping-clothes.line",
+          "term": "line",
+          "ipa": "/laɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kolejka",
+          "definition": "A row of people waiting for something.",
+          "register": "neutralny",
+          "contextPl": "Czekanie do kasy",
+          "natural": "",
+          "forms": "lines",
+          "collocations": "wait in line; stand in line; a long line",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Brytyjska wersja to „queue”.",
+          "examples": [
+            {
+              "en": "The line for the register goes all the way to the shoes.",
+              "pl": "Kolejka do kasy ciągnie się aż do butów.",
+              "focusEn": "line",
+              "focusPl": "Kolejka"
+            },
+            {
+              "en": "We waited in line for twenty minutes to pay.",
+              "pl": "Czekaliśmy w kolejce dwadzieścia minut, żeby zapłacić.",
+              "focusEn": "line",
+              "focusPl": "kolejce"
+            }
+          ],
+          "acceptedAnswers": [
+            "line"
+          ],
+          "acceptedTranslations": [
+            "kolejka",
+            "ogonek"
+          ]
+        },
+        {
+          "id": "shopping-clothes.cashier",
+          "term": "cashier",
+          "ipa": "/kæˈʃɪr/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kasjer",
+          "definition": "A person whose job is to take payments in a store.",
+          "register": "neutralny",
+          "contextPl": "Obsługa przy kasie",
+          "natural": "",
+          "forms": "cashiers",
+          "collocations": "the cashier; ask the cashier",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cashier asked if I wanted a bag.",
+              "pl": "Kasjerka zapytała, czy chcę torbę.",
+              "focusEn": "cashier",
+              "focusPl": "Kasjerka"
+            },
+            {
+              "en": "The cashier carefully folded my jacket before putting it in the bag.",
+              "pl": "Kasjer starannie złożył moją kurtkę, zanim włożył ją do torby.",
+              "focusEn": "cashier",
+              "focusPl": "Kasjer"
+            }
+          ],
+          "acceptedAnswers": [
+            "cashier"
+          ],
+          "acceptedTranslations": [
+            "kasjer",
+            "kasjerka"
+          ]
+        },
+        {
+          "id": "shopping-clothes.cash-or-card",
+          "term": "cash or card",
+          "ipa": "/ˌkæʃ ɔːr ˈkɑːrd/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "gotówką czy kartą",
+          "definition": "A question at the register about how you will pay.",
+          "register": "neutralny",
+          "contextPl": "Wybór formy płatności",
+          "natural": "",
+          "forms": "",
+          "collocations": "will that be cash or card",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Odpowiedź: „Card, please” albo „Cash”.",
+          "examples": [
+            {
+              "en": "Cash or card? The card reader is right here.",
+              "pl": "Gotówką czy kartą? Terminal jest tutaj.",
+              "focusEn": "Cash or card",
+              "focusPl": "Gotówką czy kartą"
+            },
+            {
+              "en": "The cashier asked cash or card, and I realized my wallet was in the car.",
+              "pl": "Kasjer zapytał: „Gotówką czy kartą?”, a ja zorientowałam się, że portfel został w samochodzie.",
+              "focusEn": "cash or card",
+              "focusPl": "Gotówką czy kartą"
+            }
+          ],
+          "acceptedAnswers": [
+            "cash or card",
+            "cash or credit"
+          ],
+          "acceptedTranslations": [
+            "gotówką czy kartą",
+            "gotówka czy karta"
+          ]
+        },
+        {
+          "id": "shopping-clothes.change",
+          "term": "change",
+          "ipa": "/tʃeɪndʒ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "reszta",
+          "definition": "The money you get back when you pay more than the price.",
+          "register": "neutralny",
+          "contextPl": "Wydawanie reszty",
+          "natural": "",
+          "forms": "",
+          "collocations": "keep the change; give change; your change",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też: drobne monety („small change”).",
+          "examples": [
+            {
+              "en": "Here's your change and your receipt.",
+              "pl": "Oto pani reszta i paragon.",
+              "focusEn": "change",
+              "focusPl": "reszta"
+            },
+            {
+              "en": "The cashier gave me the wrong change, so I went back to the register.",
+              "pl": "Kasjer źle wydał mi resztę, więc wróciłam do kasy.",
+              "focusEn": "change",
+              "focusPl": "resztę"
+            }
+          ],
+          "acceptedAnswers": [
+            "change"
+          ],
+          "acceptedTranslations": [
+            "reszta",
+            "drobne"
+          ]
+        },
+        {
+          "id": "shopping-clothes.receipt",
+          "term": "receipt",
+          "ipa": "/rɪˈsiːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "paragon",
+          "definition": "A piece of paper that shows what you bought and how much you paid.",
+          "register": "neutralny",
+          "contextPl": "Dowód zakupu",
+          "natural": "",
+          "forms": "receipts",
+          "collocations": "keep the receipt; print a receipt; email the receipt",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W „receipt” litera „p” jest niema.",
+          "examples": [
+            {
+              "en": "Keep the receipt in case the jeans don't fit.",
+              "pl": "Zachowaj paragon na wypadek, gdyby dżinsy nie pasowały.",
+              "focusEn": "receipt",
+              "focusPl": "paragon"
+            },
+            {
+              "en": "Would you like your receipt in the bag or by email?",
+              "pl": "Paragon włożyć do torby czy wysłać mailem?",
+              "focusEn": "receipt",
+              "focusPl": "Paragon"
+            }
+          ],
+          "acceptedAnswers": [
+            "receipt"
+          ],
+          "acceptedTranslations": [
+            "paragon",
+            "rachunek",
+            "dowód zakupu"
+          ]
+        },
+        {
+          "id": "shopping-clothes.checkout",
+          "term": "checkout",
+          "ipa": "/ˈtʃɛkaʊt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kasa",
+          "definition": "The place in a store where you pay.",
+          "register": "neutralny",
+          "contextPl": "Miejsce płacenia",
+          "natural": "register",
+          "forms": "checkouts",
+          "collocations": "go to checkout; at the checkout; self-checkout",
+          "synonyms": "register; cash register",
+          "antonyms": "",
+          "notePl": "„Self-checkout” = kasa samoobsługowa.",
+          "examples": [
+            {
+              "en": "The checkout is by the front door, next to the bags.",
+              "pl": "Kasa jest przy drzwiach wejściowych, obok toreb.",
+              "focusEn": "checkout",
+              "focusPl": "Kasa"
+            },
+            {
+              "en": "There was only one person working at the checkout.",
+              "pl": "Przy kasie pracowała tylko jedna osoba.",
+              "focusEn": "checkout",
+              "focusPl": "kasie"
+            }
+          ],
+          "acceptedAnswers": [
+            "checkout",
+            "register",
+            "cash register",
+            "checkout counter"
+          ],
+          "acceptedTranslations": [
+            "kasa",
+            "kasa sklepowa",
+            "stanowisko kasowe"
+          ]
+        },
+        {
+          "id": "shopping-clothes.total",
+          "term": "total",
+          "ipa": "/ˈtoʊtəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "suma",
+          "definition": "The whole amount you have to pay.",
+          "register": "neutralny",
+          "contextPl": "Kwota do zapłaty",
+          "natural": "",
+          "forms": "totals",
+          "collocations": "your total is; the total comes to",
+          "synonyms": "sum",
+          "antonyms": "",
+          "notePl": "Typowe zdanie kasjera: „Your total is…”.",
+          "examples": [
+            {
+              "en": "Your total is eighty-four dollars and fifty cents.",
+              "pl": "Razem do zapłaty osiemdziesiąt cztery dolary i pięćdziesiąt centów.",
+              "focusEn": "total",
+              "focusPl": "Razem"
+            },
+            {
+              "en": "The total was higher than I expected because of sales tax.",
+              "pl": "Suma była wyższa, niż się spodziewałam, z powodu podatku od sprzedaży.",
+              "focusEn": "total",
+              "focusPl": "Suma"
+            }
+          ],
+          "acceptedAnswers": [
+            "total",
+            "sum"
+          ],
+          "acceptedTranslations": [
+            "suma",
+            "razem",
+            "łączna kwota",
+            "do zapłaty"
+          ]
+        },
+        {
+          "id": "shopping-clothes.rewards-card",
+          "term": "rewards card",
+          "ipa": "/rɪˈwɔːrdz ˌkɑːrd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "karta lojalnościowa",
+          "definition": "A card from a store that gives you points or discounts when you shop there.",
+          "register": "neutralny",
+          "contextPl": "Programy lojalnościowe",
+          "natural": "",
+          "forms": "rewards cards",
+          "collocations": "sign up for a rewards card; scan your rewards card",
+          "synonyms": "loyalty card",
+          "antonyms": "",
+          "notePl": "W USA częściej „rewards card” niż „loyalty card”.",
+          "examples": [
+            {
+              "en": "Do you have our rewards card? You'd save five dollars today.",
+              "pl": "Ma pani naszą kartę lojalnościową? Zaoszczędziłaby pani dziś pięć dolarów.",
+              "focusEn": "rewards card",
+              "focusPl": "kartę lojalnościową"
+            },
+            {
+              "en": "I signed up for a rewards card at the register to get the discount.",
+              "pl": "Przy kasie założyłam kartę lojalnościową, żeby dostać zniżkę.",
+              "focusEn": "rewards card",
+              "focusPl": "kartę lojalnościową"
+            }
+          ],
+          "acceptedAnswers": [
+            "rewards card",
+            "loyalty card",
+            "rewards program"
+          ],
+          "acceptedTranslations": [
+            "karta lojalnościowa",
+            "karta stałego klienta",
+            "program lojalnościowy"
+          ]
+        },
+        {
+          "id": "shopping-clothes.security-tag",
+          "term": "security tag",
+          "ipa": "/sɪˈkjʊrəti ˌtæɡ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "zabezpieczenie",
+          "definition": "A plastic device on clothes that sets off an alarm if it is not removed.",
+          "register": "neutralny",
+          "contextPl": "Zabezpieczenia przed kradzieżą",
+          "natural": "",
+          "forms": "security tags",
+          "collocations": "remove the security tag; the security tag set off the alarm",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku potocznie „klips”.",
+          "examples": [
+            {
+              "en": "The alarm went off because the cashier forgot the security tag.",
+              "pl": "Bramka zapiszczała, bo kasjerka zapomniała zdjąć zabezpieczenie.",
+              "focusEn": "security tag",
+              "focusPl": "zabezpieczenie"
+            },
+            {
+              "en": "The cashier had to call a manager to remove a stuck security tag.",
+              "pl": "Kasjerka musiała wezwać kierownika, żeby zdjął zablokowane zabezpieczenie.",
+              "focusEn": "security tag",
+              "focusPl": "zabezpieczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "security tag"
+          ],
+          "acceptedTranslations": [
+            "zabezpieczenie",
+            "klips zabezpieczający",
+            "zabezpieczenie antykradzieżowe"
+          ]
+        },
+        {
+          "id": "shopping-clothes.gift-receipt",
+          "term": "gift receipt",
+          "ipa": "/ˈɡɪft rɪˌsiːt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "paragon prezentowy",
+          "definition": "A receipt without prices that lets someone return or exchange a gift.",
+          "register": "neutralny",
+          "contextPl": "Kupowanie prezentów",
+          "natural": "",
+          "forms": "gift receipts",
+          "collocations": "ask for a gift receipt; include a gift receipt",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pozwala obdarowanemu wymienić prezent bez poznania ceny.",
+          "examples": [
+            {
+              "en": "It's a present, so could I get a gift receipt, please?",
+              "pl": "To prezent, więc czy mogę prosić o paragon prezentowy?",
+              "focusEn": "gift receipt",
+              "focusPl": "paragon prezentowy"
+            },
+            {
+              "en": "The cashier put a gift receipt in the bag with the sweater.",
+              "pl": "Kasjer włożył do torby ze swetrem paragon prezentowy.",
+              "focusEn": "gift receipt",
+              "focusPl": "paragon prezentowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "gift receipt"
+          ],
+          "acceptedTranslations": [
+            "paragon prezentowy",
+            "paragon bez ceny"
+          ]
+        },
+        {
+          "id": "shopping-clothes.ring-up",
+          "term": "ring up",
+          "ipa": "/ˌrɪŋ ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nabić na kasę",
+          "definition": "To enter items into a cash register so the customer can pay.",
+          "register": "potoczny",
+          "contextPl": "Praca kasjera",
+          "natural": "",
+          "forms": "rang up; rung up",
+          "collocations": "ring up the items; ring someone up",
+          "synonyms": "scan",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cashier rang up the jeans at full price by mistake.",
+              "pl": "Kasjerka przez pomyłkę nabiła dżinsy na kasę w pełnej cenie.",
+              "focusEn": "rang up",
+              "focusPl": "nabiła"
+            },
+            {
+              "en": "I can ring up your things over here.",
+              "pl": "Mogę skasować pani rzeczy tutaj.",
+              "focusEn": "ring up",
+              "focusPl": "skasować"
+            }
+          ],
+          "acceptedAnswers": [
+            "ring up"
+          ],
+          "acceptedTranslations": [
+            "nabić na kasę",
+            "nabijać na kasę",
+            "skasować"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shopping-clothes.returns",
+      "namePl": "Zwroty i wymiany",
+      "scenePl": "Wracasz do sklepu z koszulą, która nie pasuje, i podchodzisz do punktu zwrotów",
+      "entries": [
+        {
+          "id": "shopping-clothes.return",
+          "term": "return",
+          "ipa": "/rɪˈtɝːn/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zwrócić",
+          "definition": "To take something back to the store because you do not want it.",
+          "register": "neutralny",
+          "contextPl": "Oddawanie towaru",
+          "natural": "take back",
+          "forms": "returned; returning",
+          "collocations": "return a shirt; return it for a refund",
+          "synonyms": "take back",
+          "antonyms": "",
+          "notePl": "Też rzeczownik: „a return” = zwrot.",
+          "examples": [
+            {
+              "en": "I'd like to return this shirt, because it's too small.",
+              "pl": "Chciałbym zwrócić tę koszulę, bo jest za mała.",
+              "focusEn": "return",
+              "focusPl": "zwrócić"
+            },
+            {
+              "en": "You can return anything within thirty days with the receipt.",
+              "pl": "Każdą rzecz można zwrócić w ciągu trzydziestu dni z paragonem.",
+              "focusEn": "return",
+              "focusPl": "zwrócić"
+            }
+          ],
+          "acceptedAnswers": [
+            "return",
+            "take back",
+            "bring back"
+          ],
+          "acceptedTranslations": [
+            "zwrócić",
+            "zwracać",
+            "oddać",
+            "oddawać"
+          ]
+        },
+        {
+          "id": "shopping-clothes.exchange",
+          "term": "exchange",
+          "ipa": "/ɪksˈtʃeɪndʒ/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wymienić",
+          "definition": "To give something back to a store and get a different item instead.",
+          "register": "neutralny",
+          "contextPl": "Wymiana na inny rozmiar",
+          "natural": "swap",
+          "forms": "exchanged; exchanging",
+          "collocations": "exchange it for a bigger size; exchange a gift",
+          "synonyms": "swap",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I exchange this for a medium, please?",
+              "pl": "Czy mogę wymienić to na rozmiar M?",
+              "focusEn": "exchange",
+              "focusPl": "wymienić"
+            },
+            {
+              "en": "I exchanged the black jeans for the same pair in blue.",
+              "pl": "Wymieniłem czarne dżinsy na taką samą parę w kolorze niebieskim.",
+              "focusEn": "exchanged",
+              "focusPl": "Wymieniłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "exchange",
+            "swap"
+          ],
+          "acceptedTranslations": [
+            "wymienić",
+            "wymieniać"
+          ]
+        },
+        {
+          "id": "shopping-clothes.refund",
+          "term": "refund",
+          "ipa": "/ˈriːfʌnd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zwrot pieniędzy",
+          "definition": "Money given back to you when you return something.",
+          "register": "neutralny",
+          "contextPl": "Odzyskanie pieniędzy",
+          "natural": "money back",
+          "forms": "refunds",
+          "collocations": "get a refund; a full refund; refund to your card",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I don't want another size, I'd just like a refund.",
+              "pl": "Nie chcę innego rozmiaru, poproszę po prostu o zwrot pieniędzy.",
+              "focusEn": "refund",
+              "focusPl": "zwrot pieniędzy"
+            },
+            {
+              "en": "The refund will go back on your card in three to five days.",
+              "pl": "Zwrot pieniędzy trafi na pana kartę w ciągu trzech do pięciu dni.",
+              "focusEn": "refund",
+              "focusPl": "Zwrot pieniędzy"
+            }
+          ],
+          "acceptedAnswers": [
+            "refund",
+            "money back"
+          ],
+          "acceptedTranslations": [
+            "zwrot pieniędzy",
+            "zwrot",
+            "zwrot gotówki"
+          ]
+        },
+        {
+          "id": "shopping-clothes.tag",
+          "term": "tag",
+          "ipa": "/tæɡ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "metka",
+          "definition": "A small label attached to clothes with the price, size, or brand.",
+          "register": "neutralny",
+          "contextPl": "Warunki zwrotu",
+          "natural": "label",
+          "forms": "tags",
+          "collocations": "with the tags on; cut off the tags; the tags are still on",
+          "synonyms": "label",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The shirt still has the tags on, and I never wore it.",
+              "pl": "Koszula wciąż ma metki i nigdy jej nie nosiłem.",
+              "focusEn": "tags",
+              "focusPl": "metki"
+            },
+            {
+              "en": "Sorry, we can't take it back because the tags were cut off.",
+              "pl": "Przykro mi, nie możemy tego przyjąć, bo metki zostały odcięte.",
+              "focusEn": "tags",
+              "focusPl": "metki"
+            }
+          ],
+          "acceptedAnswers": [
+            "tag",
+            "label"
+          ],
+          "acceptedTranslations": [
+            "metka",
+            "etykieta"
+          ]
+        },
+        {
+          "id": "shopping-clothes.return-policy",
+          "term": "return policy",
+          "ipa": "/rɪˈtɝːn ˌpɑːləsi/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zasady zwrotów",
+          "definition": "A store's rules about when and how you can return things.",
+          "register": "formalny",
+          "contextPl": "Regulamin sklepu",
+          "natural": "",
+          "forms": "return policies",
+          "collocations": "a 30-day return policy; check the return policy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What's your return policy for sale items?",
+              "pl": "Jakie są zasady zwrotów dla przecenionych rzeczy?",
+              "focusEn": "return policy",
+              "focusPl": "zasady zwrotów"
+            },
+            {
+              "en": "The clerk showed me the return policy on a sign behind the counter.",
+              "pl": "Sprzedawca pokazał mi zasady zwrotów na tabliczce za ladą.",
+              "focusEn": "return policy",
+              "focusPl": "zasady zwrotów"
+            }
+          ],
+          "acceptedAnswers": [
+            "return policy"
+          ],
+          "acceptedTranslations": [
+            "zasady zwrotów",
+            "polityka zwrotów",
+            "regulamin zwrotów"
+          ]
+        },
+        {
+          "id": "shopping-clothes.damaged",
+          "term": "damaged",
+          "ipa": "/ˈdæmɪdʒd/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "uszkodzony",
+          "definition": "Harmed or broken so that it is not in perfect condition.",
+          "register": "neutralny",
+          "contextPl": "Reklamacja wadliwego towaru",
+          "natural": "",
+          "forms": "",
+          "collocations": "damaged item; slightly damaged",
+          "synonyms": "defective",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The zipper was already damaged when I got home.",
+              "pl": "Zamek był już uszkodzony, kiedy wróciłem do domu.",
+              "focusEn": "damaged",
+              "focusPl": "uszkodzony"
+            },
+            {
+              "en": "We'll replace it for free since it was damaged before you bought it.",
+              "pl": "Wymienimy ją za darmo, bo była uszkodzona już przed zakupem.",
+              "focusEn": "damaged",
+              "focusPl": "uszkodzona"
+            }
+          ],
+          "acceptedAnswers": [
+            "damaged"
+          ],
+          "acceptedTranslations": [
+            "uszkodzony",
+            "zniszczony",
+            "wadliwy"
+          ]
+        },
+        {
+          "id": "shopping-clothes.store-credit",
+          "term": "store credit",
+          "ipa": "/ˈstɔːr ˌkrɛdɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bon do sklepu",
+          "definition": "Money you can only spend in that store, given instead of a refund.",
+          "register": "neutralny",
+          "contextPl": "Zwrot bez pieniędzy",
+          "natural": "",
+          "forms": "",
+          "collocations": "get store credit; only store credit",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Since I lost the receipt, the clerk offered me store credit instead of cash.",
+              "pl": "Ponieważ zgubiłem paragon, sprzedawca zaproponował mi bon do sklepu zamiast gotówki.",
+              "focusEn": "store credit",
+              "focusPl": "bon do sklepu"
+            },
+            {
+              "en": "I used my store credit to buy a new pair of shoes.",
+              "pl": "Wykorzystałem bon do sklepu na nową parę butów.",
+              "focusEn": "store credit",
+              "focusPl": "bon do sklepu"
+            }
+          ],
+          "acceptedAnswers": [
+            "store credit"
+          ],
+          "acceptedTranslations": [
+            "bon do sklepu",
+            "bon",
+            "voucher",
+            "środki na zakupy w sklepie"
+          ]
+        },
+        {
+          "id": "shopping-clothes.final-sale",
+          "term": "final sale",
+          "ipa": "/ˌfaɪnəl ˈseɪl/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bez możliwości zwrotu",
+          "definition": "Sold with no option to return or exchange.",
+          "register": "neutralny",
+          "contextPl": "Ograniczenia zwrotów",
+          "natural": "",
+          "forms": "",
+          "collocations": "all sales are final; final sale items",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Oznaczenie na mocno przecenionych rzeczach.",
+          "examples": [
+            {
+              "en": "Sorry, this jacket was final sale, so we can't take it back.",
+              "pl": "Przykro mi, ta kurtka była bez możliwości zwrotu, więc nie możemy jej przyjąć.",
+              "focusEn": "final sale",
+              "focusPl": "bez możliwości zwrotu"
+            },
+            {
+              "en": "I didn't notice the final sale sign on the clearance rack.",
+              "pl": "Nie zauważyłem przy wieszaku z wyprzedażą tabliczki „bez możliwości zwrotu”.",
+              "focusEn": "final sale",
+              "focusPl": "bez możliwości zwrotu"
+            }
+          ],
+          "acceptedAnswers": [
+            "final sale",
+            "all sales final"
+          ],
+          "acceptedTranslations": [
+            "bez możliwości zwrotu",
+            "nie podlega zwrotowi",
+            "sprzedaż ostateczna"
+          ]
+        },
+        {
+          "id": "shopping-clothes.unworn",
+          "term": "unworn",
+          "ipa": "/ʌnˈwɔːrn/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nienoszony",
+          "definition": "Never worn since it was bought.",
+          "register": "formalny",
+          "contextPl": "Warunki zwrotu ubrań",
+          "natural": "",
+          "forms": "",
+          "collocations": "unworn and unwashed; in unworn condition",
+          "synonyms": "new",
+          "antonyms": "worn",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Items must be unworn and in the original packaging.",
+              "pl": "Rzeczy muszą być nienoszone i w oryginalnym opakowaniu.",
+              "focusEn": "unworn",
+              "focusPl": "nienoszone"
+            },
+            {
+              "en": "The shirt is completely unworn, because I only tried it on at home.",
+              "pl": "Koszula jest zupełnie nienoszona, bo tylko przymierzyłem ją w domu.",
+              "focusEn": "unworn",
+              "focusPl": "nienoszona"
+            }
+          ],
+          "acceptedAnswers": [
+            "unworn"
+          ],
+          "acceptedTranslations": [
+            "nienoszony",
+            "nieużywany"
+          ]
+        }
+      ]
+    }
+  ]
+}

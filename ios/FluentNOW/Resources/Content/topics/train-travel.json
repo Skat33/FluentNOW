@@ -1,0 +1,2584 @@
+{
+  "schemaVersion": 1,
+  "id": "train-travel",
+  "namePl": "Podróż pociągiem",
+  "nameEn": "Train Travel",
+  "group": "travel",
+  "symbol": "train.side.front.car",
+  "summaryPl": "Dworzec, bilety, peron, wagony, przesiadki i opóźnienia pociągów.",
+  "aliases": [
+    "pociąg",
+    "kolej",
+    "dworzec",
+    "peron",
+    "bilet kolejowy",
+    "przesiadka",
+    "train",
+    "railroad"
+  ],
+  "categories": [
+    {
+      "id": "train-travel.station",
+      "namePl": "Na dworcu",
+      "scenePl": "Hala dużego dworca kolejowego rano, przed odjazdem pociągu dalekobieżnego",
+      "entries": [
+        {
+          "id": "train-travel.train",
+          "term": "train",
+          "ipa": "/treɪn/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pociąg",
+          "definition": "A line of connected cars pulled by an engine along a railroad track.",
+          "register": "neutralny",
+          "contextPl": "Podróż koleją",
+          "natural": "",
+          "forms": "trains",
+          "collocations": "take the train; catch a train; by train; the 9:15 train",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Go by train” – jechać pociągiem (bez rodzajnika).",
+          "examples": [
+            {
+              "en": "Our train leaves at 9:15 from the main station.",
+              "pl": "Nasz pociąg odjeżdża o 9:15 z dworca głównego.",
+              "focusEn": "train",
+              "focusPl": "pociąg"
+            },
+            {
+              "en": "We ran across the hall because the train was about to leave.",
+              "pl": "Biegliśmy przez halę, bo pociąg zaraz miał odjechać.",
+              "focusEn": "train",
+              "focusPl": "pociąg"
+            }
+          ],
+          "acceptedAnswers": [
+            "train"
+          ],
+          "acceptedTranslations": [
+            "pociąg"
+          ]
+        },
+        {
+          "id": "train-travel.train-station",
+          "term": "train station",
+          "ipa": "/ˈtreɪn ˌsteɪʃn/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "dworzec kolejowy",
+          "definition": "A building where trains stop so people can get on and off.",
+          "register": "neutralny",
+          "contextPl": "Dworzec",
+          "natural": "",
+          "forms": "train stations",
+          "collocations": "at the train station; main train station",
+          "synonyms": "station, railroad station",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's meet in front of the train station at eight.",
+              "pl": "Spotkajmy się przed dworcem kolejowym o ósmej.",
+              "focusEn": "train station",
+              "focusPl": "dworcem kolejowym"
+            },
+            {
+              "en": "The train station was full of people going home for the holiday.",
+              "pl": "Dworzec kolejowy był pełen ludzi jadących do domu na święta.",
+              "focusEn": "train station",
+              "focusPl": "Dworzec kolejowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "train station",
+            "station",
+            "railway station",
+            "railroad station"
+          ],
+          "acceptedTranslations": [
+            "dworzec kolejowy",
+            "dworzec",
+            "stacja kolejowa"
+          ]
+        },
+        {
+          "id": "train-travel.platform",
+          "term": "platform",
+          "ipa": "/ˈplætfɔːrm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "peron",
+          "definition": "The raised area next to the track where you wait for and get on a train.",
+          "register": "neutralny",
+          "contextPl": "Dworzec",
+          "natural": "",
+          "forms": "platforms",
+          "collocations": "platform 4; on the platform; wrong platform",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA na tablicach często podaje się „track” (tor) zamiast „platform”.",
+          "examples": [
+            {
+              "en": "The train to Philadelphia leaves from platform six.",
+              "pl": "Pociąg do Filadelfii odjeżdża z peronu szóstego.",
+              "focusEn": "platform",
+              "focusPl": "peronu"
+            },
+            {
+              "en": "We waited on the cold platform for twenty minutes.",
+              "pl": "Czekaliśmy na zimnym peronie dwadzieścia minut.",
+              "focusEn": "platform",
+              "focusPl": "peronie"
+            }
+          ],
+          "acceptedAnswers": [
+            "platform"
+          ],
+          "acceptedTranslations": [
+            "peron"
+          ]
+        },
+        {
+          "id": "train-travel.track",
+          "term": "track",
+          "ipa": "/træk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "tor",
+          "definition": "The metal rails a train runs on; at US stations it also means the platform number.",
+          "register": "neutralny",
+          "contextPl": "Dworzec",
+          "natural": "",
+          "forms": "tracks",
+          "collocations": "track 12; on track 5; cross the tracks",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na amerykańskich dworcach mówi się: „The train is boarding on track 12”.",
+          "examples": [
+            {
+              "en": "The board says our train is boarding on track twelve.",
+              "pl": "Na tablicy jest napisane, że wsiadanie do naszego pociągu odbywa się z toru dwunastego.",
+              "focusEn": "track",
+              "focusPl": "toru"
+            },
+            {
+              "en": "Never walk across the tracks, use the bridge.",
+              "pl": "Nigdy nie przechodź przez tory, korzystaj z kładki.",
+              "focusEn": "tracks",
+              "focusPl": "tory"
+            }
+          ],
+          "acceptedAnswers": [
+            "track"
+          ],
+          "acceptedTranslations": [
+            "tor",
+            "tory",
+            "peron"
+          ]
+        },
+        {
+          "id": "train-travel.ticket-office",
+          "term": "ticket office",
+          "ipa": "/ˈtɪkɪt ˌɔːfɪs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kasa biletowa",
+          "definition": "The place at a station where you buy tickets from a person.",
+          "register": "neutralny",
+          "contextPl": "Dworzec",
+          "natural": "",
+          "forms": "ticket offices",
+          "collocations": "at the ticket office; ticket office hours",
+          "synonyms": "ticket window, ticket counter",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The ticket office opens at six, but the machines work all night.",
+              "pl": "Kasa biletowa otwiera się o szóstej, ale automaty działają całą noc.",
+              "focusEn": "ticket office",
+              "focusPl": "Kasa biletowa"
+            },
+            {
+              "en": "There was a long line at the ticket office, so we used the app.",
+              "pl": "Do kasy biletowej była długa kolejka, więc skorzystaliśmy z aplikacji.",
+              "focusEn": "ticket office",
+              "focusPl": "kasy biletowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "ticket office",
+            "ticket window",
+            "ticket counter"
+          ],
+          "acceptedTranslations": [
+            "kasa biletowa",
+            "kasa"
+          ]
+        },
+        {
+          "id": "train-travel.ticket-machine",
+          "term": "ticket machine",
+          "ipa": "/ˈtɪkɪt məˌʃiːn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "automat biletowy",
+          "definition": "A machine at a station that sells tickets.",
+          "register": "neutralny",
+          "contextPl": "Dworzec",
+          "natural": "",
+          "forms": "ticket machines",
+          "collocations": "use the ticket machine; buy a ticket from the machine",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The ticket machine only takes cards, not cash.",
+              "pl": "Automat biletowy przyjmuje tylko karty, nie gotówkę.",
+              "focusEn": "ticket machine",
+              "focusPl": "Automat biletowy"
+            },
+            {
+              "en": "I bought two tickets from the ticket machine next to the stairs.",
+              "pl": "Kupiłem dwa bilety w automacie biletowym obok schodów.",
+              "focusEn": "ticket machine",
+              "focusPl": "automacie biletowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "ticket machine"
+          ],
+          "acceptedTranslations": [
+            "automat biletowy",
+            "biletomat"
+          ]
+        },
+        {
+          "id": "train-travel.departure",
+          "term": "departure",
+          "ipa": "/dɪˈpɑːrtʃər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odjazd",
+          "definition": "The act of a train leaving a station.",
+          "register": "neutralny",
+          "contextPl": "Dworzec",
+          "natural": "",
+          "forms": "departures",
+          "collocations": "departure time; next departure; on departure",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na tablicy: „Departures” – odjazdy.",
+          "examples": [
+            {
+              "en": "The departure of the 10:40 train to Albany has been moved to track 7.",
+              "pl": "Odjazd pociągu do Albany o 10:40 przeniesiono na tor siódmy.",
+              "focusEn": "departure",
+              "focusPl": "Odjazd"
+            },
+            {
+              "en": "Check the departure time on your ticket, not the one in the app.",
+              "pl": "Sprawdź godzinę odjazdu na bilecie, a nie tę w aplikacji.",
+              "focusEn": "departure",
+              "focusPl": "odjazdu"
+            }
+          ],
+          "acceptedAnswers": [
+            "departure",
+            "departures"
+          ],
+          "acceptedTranslations": [
+            "odjazd",
+            "odjazdy"
+          ]
+        },
+        {
+          "id": "train-travel.schedule",
+          "term": "schedule",
+          "ipa": "/ˈskedʒuːl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "rozkład jazdy",
+          "definition": "A list of the times when trains leave and arrive.",
+          "register": "neutralny",
+          "contextPl": "Dworzec",
+          "natural": "",
+          "forms": "schedules",
+          "collocations": "train schedule; check the schedule; weekend schedule",
+          "synonyms": "timetable",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "According to the schedule, there's a train every half hour.",
+              "pl": "Według rozkładu jazdy pociąg jest co pół godziny.",
+              "focusEn": "schedule",
+              "focusPl": "rozkładu jazdy"
+            },
+            {
+              "en": "The weekend schedule posted in the hall has fewer trains.",
+              "pl": "Weekendowy rozkład jazdy wywieszony w hali ma mniej pociągów.",
+              "focusEn": "schedule",
+              "focusPl": "rozkład jazdy"
+            }
+          ],
+          "acceptedAnswers": [
+            "schedule",
+            "timetable"
+          ],
+          "acceptedTranslations": [
+            "rozkład jazdy",
+            "rozkład"
+          ]
+        },
+        {
+          "id": "train-travel.waiting-room",
+          "term": "waiting room",
+          "ipa": "/ˈweɪtɪŋ ˌruːm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "poczekalnia",
+          "definition": "A room at a station where people sit while they wait.",
+          "register": "neutralny",
+          "contextPl": "Dworzec",
+          "natural": "",
+          "forms": "waiting rooms",
+          "collocations": "wait in the waiting room; heated waiting room",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It was freezing outside, so we sat in the waiting room.",
+              "pl": "Na zewnątrz było lodowato, więc usiedliśmy w poczekalni.",
+              "focusEn": "waiting room",
+              "focusPl": "poczekalni"
+            },
+            {
+              "en": "The waiting room has outlets where you can charge your phone.",
+              "pl": "W poczekalni są gniazdka, w których można naładować telefon.",
+              "focusEn": "waiting room",
+              "focusPl": "poczekalni"
+            }
+          ],
+          "acceptedAnswers": [
+            "waiting room"
+          ],
+          "acceptedTranslations": [
+            "poczekalnia"
+          ]
+        },
+        {
+          "id": "train-travel.lockers",
+          "term": "lockers",
+          "ipa": "/ˈlɑːkərz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "skrytki bagażowe",
+          "definition": "Small metal cupboards at a station where you can leave your bags.",
+          "register": "neutralny",
+          "contextPl": "Dworzec",
+          "natural": "",
+          "forms": "locker – lockers",
+          "collocations": "luggage lockers; rent a locker",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We left our suitcases in the lockers and walked around the city.",
+              "pl": "Zostawiliśmy walizki w skrytkach bagażowych i poszliśmy na spacer po mieście.",
+              "focusEn": "lockers",
+              "focusPl": "skrytkach bagażowych"
+            },
+            {
+              "en": "Are there any lockers at this station for big bags?",
+              "pl": "Czy na tym dworcu są skrytki bagażowe na duże torby?",
+              "focusEn": "lockers",
+              "focusPl": "skrytki bagażowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "lockers"
+          ],
+          "acceptedTranslations": [
+            "skrytki bagażowe",
+            "schowki",
+            "przechowalnia bagażu"
+          ]
+        },
+        {
+          "id": "train-travel.information-desk",
+          "term": "information desk",
+          "ipa": "/ˌɪnfərˈmeɪʃn ˌdesk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "punkt informacji",
+          "definition": "A place where staff answer travelers' questions.",
+          "register": "neutralny",
+          "contextPl": "Dworzec",
+          "natural": "",
+          "forms": "information desks",
+          "collocations": "ask at the information desk",
+          "synonyms": "information booth",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Ask at the information desk which platform the train leaves from.",
+              "pl": "Zapytaj w punkcie informacji, z którego peronu odjeżdża pociąg.",
+              "focusEn": "information desk",
+              "focusPl": "punkcie informacji"
+            },
+            {
+              "en": "The man at the information desk gave us a free map of the city.",
+              "pl": "Pan w punkcie informacji dał nam darmową mapę miasta.",
+              "focusEn": "information desk",
+              "focusPl": "punkcie informacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "information desk",
+            "information booth"
+          ],
+          "acceptedTranslations": [
+            "punkt informacji",
+            "informacja"
+          ]
+        },
+        {
+          "id": "train-travel.concourse",
+          "term": "concourse",
+          "ipa": "/ˈkɑːnkɔːrs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "hala dworca",
+          "definition": "A large open hall in a station where people walk and wait.",
+          "register": "neutralny",
+          "contextPl": "Dworzec",
+          "natural": "",
+          "forms": "concourses",
+          "collocations": "main concourse; lower concourse",
+          "synonyms": "hall",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Everyone stood in the main concourse, waiting for the track number to appear.",
+              "pl": "Wszyscy stali w głównej hali dworca i czekali, aż pojawi się numer toru.",
+              "focusEn": "concourse",
+              "focusPl": "hali dworca"
+            },
+            {
+              "en": "There are coffee shops and newsstands all around the concourse.",
+              "pl": "Wokół hali dworca są kawiarnie i kioski z prasą.",
+              "focusEn": "concourse",
+              "focusPl": "hali dworca"
+            }
+          ],
+          "acceptedAnswers": [
+            "concourse",
+            "main hall"
+          ],
+          "acceptedTranslations": [
+            "hala dworca",
+            "hala główna",
+            "hol dworca"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "train-travel.tickets",
+      "namePl": "Bilety",
+      "scenePl": "Kupowanie biletu w kasie na dworcu i kontrola biletów w pociągu",
+      "entries": [
+        {
+          "id": "train-travel.train-ticket",
+          "term": "train ticket",
+          "ipa": "/ˈtreɪn ˌtɪkɪt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "bilet na pociąg",
+          "definition": "A ticket that allows you to travel on a train.",
+          "register": "neutralny",
+          "contextPl": "Bilety kolejowe",
+          "natural": "",
+          "forms": "train tickets",
+          "collocations": "buy a train ticket; print your train ticket",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like a train ticket to Boston for tomorrow morning.",
+              "pl": "Poproszę bilet na pociąg do Bostonu na jutro rano.",
+              "focusEn": "train ticket",
+              "focusPl": "bilet na pociąg"
+            },
+            {
+              "en": "I keep my train ticket on my phone, so I don't lose it.",
+              "pl": "Trzymam bilet na pociąg w telefonie, żeby go nie zgubić.",
+              "focusEn": "train ticket",
+              "focusPl": "bilet na pociąg"
+            }
+          ],
+          "acceptedAnswers": [
+            "train ticket"
+          ],
+          "acceptedTranslations": [
+            "bilet na pociąg",
+            "bilet kolejowy"
+          ]
+        },
+        {
+          "id": "train-travel.fare",
+          "term": "fare",
+          "ipa": "/fer/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "cena biletu",
+          "definition": "The money you pay to travel on a train, bus or plane.",
+          "register": "neutralny",
+          "contextPl": "Bilety kolejowe",
+          "natural": "",
+          "forms": "fares",
+          "collocations": "train fare; full fare; reduced fare; the fare to Chicago",
+          "synonyms": "price",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The fare to Chicago is cheaper if you book two weeks ahead.",
+              "pl": "Cena biletu do Chicago jest niższa, jeśli zarezerwujesz dwa tygodnie wcześniej.",
+              "focusEn": "fare",
+              "focusPl": "Cena biletu"
+            },
+            {
+              "en": "Children under twelve pay half fare on this train.",
+              "pl": "Dzieci poniżej dwunastu lat płacą w tym pociągu połowę ceny biletu.",
+              "focusEn": "fare",
+              "focusPl": "ceny biletu"
+            }
+          ],
+          "acceptedAnswers": [
+            "fare",
+            "ticket price"
+          ],
+          "acceptedTranslations": [
+            "cena biletu",
+            "opłata za przejazd",
+            "taryfa"
+          ]
+        },
+        {
+          "id": "train-travel.round-trip-ticket",
+          "term": "round-trip ticket",
+          "ipa": "/ˌraʊnd trɪp ˈtɪkɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "bilet powrotny",
+          "definition": "A ticket to a place and back again.",
+          "register": "neutralny",
+          "contextPl": "Bilety kolejowe",
+          "natural": "",
+          "forms": "round-trip tickets",
+          "collocations": "buy a round-trip ticket",
+          "synonyms": "return ticket",
+          "antonyms": "one-way ticket",
+          "notePl": "Po brytyjsku: „return ticket”.",
+          "examples": [
+            {
+              "en": "A round-trip ticket is only a little more expensive than one way.",
+              "pl": "Bilet powrotny jest tylko trochę droższy niż w jedną stronę.",
+              "focusEn": "round-trip ticket",
+              "focusPl": "Bilet powrotny"
+            },
+            {
+              "en": "I bought a round-trip ticket at the ticket office, coming back on Sunday.",
+              "pl": "Kupiłem w kasie bilet powrotny, z powrotem jadę w niedzielę.",
+              "focusEn": "round-trip ticket",
+              "focusPl": "bilet powrotny"
+            }
+          ],
+          "acceptedAnswers": [
+            "round-trip ticket",
+            "return ticket",
+            "round trip"
+          ],
+          "acceptedTranslations": [
+            "bilet powrotny",
+            "bilet w obie strony",
+            "bilet tam i z powrotem"
+          ]
+        },
+        {
+          "id": "train-travel.one-way-ticket",
+          "term": "one-way ticket",
+          "ipa": "/ˌwʌn weɪ ˈtɪkɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "bilet w jedną stronę",
+          "definition": "A ticket to a place but not back again.",
+          "register": "neutralny",
+          "contextPl": "Bilety kolejowe",
+          "natural": "",
+          "forms": "one-way tickets",
+          "collocations": "buy a one-way ticket",
+          "synonyms": "single ticket",
+          "antonyms": "round-trip ticket",
+          "notePl": "Po brytyjsku: „single ticket”.",
+          "examples": [
+            {
+              "en": "Can I get a one-way ticket to Baltimore on the next train?",
+              "pl": "Czy mogę prosić o bilet w jedną stronę do Baltimore na najbliższy pociąg?",
+              "focusEn": "one-way ticket",
+              "focusPl": "bilet w jedną stronę"
+            },
+            {
+              "en": "I only bought a one-way ticket because I might drive back with my brother.",
+              "pl": "Kupiłem tylko bilet w jedną stronę, bo mogę wrócić samochodem z bratem.",
+              "focusEn": "one-way ticket",
+              "focusPl": "bilet w jedną stronę"
+            }
+          ],
+          "acceptedAnswers": [
+            "one-way ticket",
+            "single",
+            "one way"
+          ],
+          "acceptedTranslations": [
+            "bilet w jedną stronę",
+            "bilet jednorazowy w jedną stronę"
+          ]
+        },
+        {
+          "id": "train-travel.seat-reservation",
+          "term": "seat reservation",
+          "ipa": "/ˈsiːt ˌrezərveɪʃn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "miejscówka",
+          "definition": "A booking that gives you a particular seat on a train.",
+          "register": "neutralny",
+          "contextPl": "Bilety kolejowe",
+          "natural": "",
+          "forms": "seat reservations",
+          "collocations": "make a seat reservation; reservation required",
+          "synonyms": "reserved seat",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "On this express train, a seat reservation is required.",
+              "pl": "W tym pociągu ekspresowym miejscówka jest obowiązkowa.",
+              "focusEn": "seat reservation",
+              "focusPl": "miejscówka"
+            },
+            {
+              "en": "I paid five dollars extra for a seat reservation by the window.",
+              "pl": "Dopłaciłem pięć dolarów za miejscówkę przy oknie.",
+              "focusEn": "seat reservation",
+              "focusPl": "miejscówkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "seat reservation",
+            "reserved seat"
+          ],
+          "acceptedTranslations": [
+            "miejscówka",
+            "rezerwacja miejsca"
+          ]
+        },
+        {
+          "id": "train-travel.discount",
+          "term": "discount",
+          "ipa": "/ˈdɪskaʊnt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zniżka",
+          "definition": "A lower price than usual.",
+          "register": "neutralny",
+          "contextPl": "Bilety kolejowe",
+          "natural": "",
+          "forms": "discounts",
+          "collocations": "student discount; senior discount; get a discount",
+          "synonyms": "reduction",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have a discount for students?",
+              "pl": "Czy jest zniżka dla studentów?",
+              "focusEn": "discount",
+              "focusPl": "zniżka"
+            },
+            {
+              "en": "With the senior discount, my grandma's ticket was half price.",
+              "pl": "Ze zniżką dla seniorów bilet babci kosztował połowę ceny.",
+              "focusEn": "discount",
+              "focusPl": "zniżką"
+            }
+          ],
+          "acceptedAnswers": [
+            "discount",
+            "reduction"
+          ],
+          "acceptedTranslations": [
+            "zniżka",
+            "ulga",
+            "rabat"
+          ]
+        },
+        {
+          "id": "train-travel.conductor",
+          "term": "conductor",
+          "ipa": "/kənˈdʌktər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "konduktor",
+          "definition": "The person on a train who checks tickets.",
+          "register": "neutralny",
+          "contextPl": "Kontrola biletów",
+          "natural": "",
+          "forms": "conductors",
+          "collocations": "the conductor checks tickets; ask the conductor",
+          "synonyms": "ticket inspector",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The conductor checked our tickets right after the first stop.",
+              "pl": "Konduktor sprawdził nasze bilety zaraz po pierwszym przystanku.",
+              "focusEn": "conductor",
+              "focusPl": "Konduktor"
+            },
+            {
+              "en": "I asked the conductor if this train stops in New Haven.",
+              "pl": "Zapytałem konduktora, czy ten pociąg zatrzymuje się w New Haven.",
+              "focusEn": "conductor",
+              "focusPl": "konduktora"
+            }
+          ],
+          "acceptedAnswers": [
+            "conductor",
+            "ticket inspector"
+          ],
+          "acceptedTranslations": [
+            "konduktor",
+            "kierownik pociągu"
+          ]
+        },
+        {
+          "id": "train-travel.tickets-please",
+          "term": "tickets, please",
+          "ipa": "/ˌtɪkɪts ˈpliːz/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "bilety do kontroli",
+          "definition": "What a conductor says when checking tickets on a train.",
+          "register": "neutralny",
+          "contextPl": "Kontrola biletów",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"Tickets, please,\" said the conductor as he walked down the car.",
+              "pl": "„Bilety do kontroli” – powiedział konduktor, idąc przez wagon.",
+              "focusEn": "Tickets, please",
+              "focusPl": "Bilety do kontroli"
+            },
+            {
+              "en": "I was half asleep when I heard \"tickets, please\" right next to me.",
+              "pl": "Byłem w półśnie, kiedy usłyszałem tuż obok „bilety do kontroli”.",
+              "focusEn": "tickets, please",
+              "focusPl": "bilety do kontroli"
+            }
+          ],
+          "acceptedAnswers": [
+            "tickets, please"
+          ],
+          "acceptedTranslations": [
+            "bilety do kontroli",
+            "proszę bilety",
+            "bilety proszę"
+          ]
+        },
+        {
+          "id": "train-travel.validate",
+          "term": "validate",
+          "ipa": "/ˈvælɪdeɪt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skasować",
+          "definition": "To mark a ticket at a machine so it can be used.",
+          "register": "neutralny",
+          "contextPl": "Kontrola biletów",
+          "natural": "",
+          "forms": "validates – validated – validated",
+          "collocations": "validate your ticket; validation machine",
+          "synonyms": "stamp",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't forget to validate your ticket before you get on the train.",
+              "pl": "Nie zapomnij skasować biletu przed wejściem do pociągu.",
+              "focusEn": "validate",
+              "focusPl": "skasować"
+            },
+            {
+              "en": "I got a fine because I hadn't validated my ticket at the machine.",
+              "pl": "Dostałem mandat, bo nie skasowałem biletu w kasowniku.",
+              "focusEn": "validated",
+              "focusPl": "skasowałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "validate",
+            "stamp"
+          ],
+          "acceptedTranslations": [
+            "skasować",
+            "kasować",
+            "skasować bilet"
+          ]
+        },
+        {
+          "id": "train-travel.fine",
+          "term": "fine",
+          "ipa": "/faɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mandat",
+          "definition": "Money you must pay as a punishment for breaking a rule.",
+          "register": "neutralny",
+          "contextPl": "Kontrola biletów",
+          "natural": "",
+          "forms": "fines",
+          "collocations": "get a fine; pay a fine; a fifty-dollar fine",
+          "synonyms": "penalty",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you ride without a ticket, you'll get a fine.",
+              "pl": "Jeśli pojedziesz bez biletu, dostaniesz mandat.",
+              "focusEn": "fine",
+              "focusPl": "mandat"
+            },
+            {
+              "en": "The conductor gave the man a fine because his ticket was for yesterday.",
+              "pl": "Konduktor wypisał mężczyźnie mandat, bo jego bilet był na wczoraj.",
+              "focusEn": "fine",
+              "focusPl": "mandat"
+            }
+          ],
+          "acceptedAnswers": [
+            "fine",
+            "penalty"
+          ],
+          "acceptedTranslations": [
+            "mandat",
+            "kara",
+            "grzywna"
+          ]
+        },
+        {
+          "id": "train-travel.rail-pass",
+          "term": "rail pass",
+          "ipa": "/ˈreɪl ˌpæs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "bilet sieciowy",
+          "definition": "A ticket that lets you take many trains during a certain period.",
+          "register": "neutralny",
+          "contextPl": "Bilety kolejowe",
+          "natural": "",
+          "forms": "rail passes",
+          "collocations": "buy a rail pass; 15-day rail pass",
+          "synonyms": "train pass",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With a rail pass, you can take any train for fifteen days.",
+              "pl": "Z biletem sieciowym możesz jeździć dowolnym pociągiem przez piętnaście dni.",
+              "focusEn": "rail pass",
+              "focusPl": "biletem sieciowym"
+            },
+            {
+              "en": "The conductor scanned my rail pass and wrote today's date on it.",
+              "pl": "Konduktor zeskanował mój bilet sieciowy i wpisał na nim dzisiejszą datę.",
+              "focusEn": "rail pass",
+              "focusPl": "bilet sieciowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "rail pass",
+            "train pass"
+          ],
+          "acceptedTranslations": [
+            "bilet sieciowy",
+            "karnet kolejowy"
+          ]
+        },
+        {
+          "id": "train-travel.off-peak",
+          "term": "off-peak",
+          "ipa": "/ˌɔːf ˈpiːk/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "poza godzinami szczytu",
+          "definition": "At a time when fewer people travel and tickets are cheaper.",
+          "register": "neutralny",
+          "contextPl": "Bilety kolejowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "off-peak fare; off-peak ticket; off-peak hours",
+          "synonyms": "",
+          "antonyms": "peak",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Off-peak tickets are cheaper, but you can't use them before ten a.m.",
+              "pl": "Bilety poza godzinami szczytu są tańsze, ale nie można ich używać przed dziesiątą rano.",
+              "focusEn": "Off-peak",
+              "focusPl": "poza godzinami szczytu"
+            },
+            {
+              "en": "The conductor said my off-peak ticket wasn't valid on the 8 a.m. train.",
+              "pl": "Konduktor powiedział, że mój bilet poza godzinami szczytu nie jest ważny w pociągu o ósmej rano.",
+              "focusEn": "off-peak",
+              "focusPl": "poza godzinami szczytu"
+            }
+          ],
+          "acceptedAnswers": [
+            "off-peak"
+          ],
+          "acceptedTranslations": [
+            "poza godzinami szczytu",
+            "tańszy",
+            "poza szczytem"
+          ]
+        },
+        {
+          "id": "train-travel.valid",
+          "term": "valid",
+          "ipa": "/ˈvælɪd/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ważny",
+          "definition": "Able to be used legally or officially.",
+          "register": "neutralny",
+          "contextPl": "Kontrola biletów",
+          "natural": "",
+          "forms": "",
+          "collocations": "valid ticket; valid for one day; no longer valid",
+          "synonyms": "good",
+          "antonyms": "invalid",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This ticket is valid for one trip on any day this month.",
+              "pl": "Ten bilet jest ważny na jeden przejazd w dowolnym dniu tego miesiąca.",
+              "focusEn": "valid",
+              "focusPl": "ważny"
+            },
+            {
+              "en": "Sorry, your ticket isn't valid on this express train.",
+              "pl": "Przykro mi, pański bilet nie jest ważny w tym pociągu ekspresowym.",
+              "focusEn": "valid",
+              "focusPl": "ważny"
+            }
+          ],
+          "acceptedAnswers": [
+            "valid"
+          ],
+          "acceptedTranslations": [
+            "ważny",
+            "obowiązujący"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "train-travel.on-the-train",
+      "namePl": "W pociągu",
+      "scenePl": "Kilkugodzinna jazda pociągiem dalekobieżnym: wagony, miejsca, bagaż i wagon restauracyjny",
+      "entries": [
+        {
+          "id": "train-travel.get-on",
+          "term": "get on",
+          "ipa": "/ˌɡet ˈɑːn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wsiąść",
+          "definition": "To enter a train, bus or plane.",
+          "register": "neutralny",
+          "contextPl": "Wsiadanie i wysiadanie",
+          "natural": "",
+          "forms": "gets on – got on – gotten on",
+          "collocations": "get on the train; get on at the next stop",
+          "synonyms": "board",
+          "antonyms": "get off",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hurry up and get on, the doors are closing!",
+              "pl": "Pospiesz się i wsiadaj, drzwi się zamykają!",
+              "focusEn": "get on",
+              "focusPl": "wsiadaj"
+            },
+            {
+              "en": "A lot of students got on the train at the university stop.",
+              "pl": "Na przystanku przy uniwersytecie do pociągu wsiadło dużo studentów.",
+              "focusEn": "got on",
+              "focusPl": "wsiadło"
+            }
+          ],
+          "acceptedAnswers": [
+            "get on",
+            "board"
+          ],
+          "acceptedTranslations": [
+            "wsiąść",
+            "wsiadać"
+          ]
+        },
+        {
+          "id": "train-travel.car",
+          "term": "car",
+          "ipa": "/kɑːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wagon",
+          "definition": "One of the separate sections of a train.",
+          "register": "neutralny",
+          "contextPl": "Wagony",
+          "natural": "",
+          "forms": "cars",
+          "collocations": "train car; the first car; the quiet car",
+          "synonyms": "coach",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our seats are in car number five, near the front of the train.",
+              "pl": "Nasze miejsca są w wagonie numer pięć, blisko przodu pociągu.",
+              "focusEn": "car",
+              "focusPl": "wagonie"
+            },
+            {
+              "en": "The last car was almost empty, so we moved there.",
+              "pl": "Ostatni wagon był prawie pusty, więc się tam przenieśliśmy.",
+              "focusEn": "car",
+              "focusPl": "wagon"
+            }
+          ],
+          "acceptedAnswers": [
+            "car",
+            "coach",
+            "railcar"
+          ],
+          "acceptedTranslations": [
+            "wagon"
+          ]
+        },
+        {
+          "id": "train-travel.quiet-car",
+          "term": "quiet car",
+          "ipa": "/ˈkwaɪət ˌkɑːr/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wagon ciszy",
+          "definition": "A train car where passengers must not talk loudly or use their phones.",
+          "register": "neutralny",
+          "contextPl": "Wagony",
+          "natural": "",
+          "forms": "quiet cars",
+          "collocations": "sit in the quiet car",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please take phone calls outside the quiet car.",
+              "pl": "Prosimy prowadzić rozmowy telefoniczne poza wagonem ciszy.",
+              "focusEn": "quiet car",
+              "focusPl": "wagonem ciszy"
+            },
+            {
+              "en": "I sat in the quiet car so I could sleep for a few hours.",
+              "pl": "Usiadłem w wagonie ciszy, żeby móc się przespać kilka godzin.",
+              "focusEn": "quiet car",
+              "focusPl": "wagonie ciszy"
+            }
+          ],
+          "acceptedAnswers": [
+            "quiet car"
+          ],
+          "acceptedTranslations": [
+            "wagon ciszy",
+            "strefa ciszy"
+          ]
+        },
+        {
+          "id": "train-travel.dining-car",
+          "term": "dining car",
+          "ipa": "/ˈdaɪnɪŋ ˌkɑːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wagon restauracyjny",
+          "definition": "A train car where meals are served.",
+          "register": "neutralny",
+          "contextPl": "Wagony",
+          "natural": "",
+          "forms": "dining cars",
+          "collocations": "eat in the dining car",
+          "synonyms": "café car",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We had breakfast in the dining car while the sun came up.",
+              "pl": "Zjedliśmy śniadanie w wagonie restauracyjnym, kiedy wschodziło słońce.",
+              "focusEn": "dining car",
+              "focusPl": "wagonie restauracyjnym"
+            },
+            {
+              "en": "The dining car is two cars behind us.",
+              "pl": "Wagon restauracyjny jest dwa wagony za nami.",
+              "focusEn": "dining car",
+              "focusPl": "Wagon restauracyjny"
+            }
+          ],
+          "acceptedAnswers": [
+            "dining car",
+            "café car"
+          ],
+          "acceptedTranslations": [
+            "wagon restauracyjny",
+            "wagon barowy"
+          ]
+        },
+        {
+          "id": "train-travel.sleeper-car",
+          "term": "sleeper car",
+          "ipa": "/ˈsliːpər ˌkɑːr/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wagon sypialny",
+          "definition": "A train car with beds for sleeping during a night trip.",
+          "register": "neutralny",
+          "contextPl": "Wagony",
+          "natural": "",
+          "forms": "sleeper cars",
+          "collocations": "book a sleeper car",
+          "synonyms": "sleeper",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We booked a sleeper car for the overnight trip to Chicago.",
+              "pl": "Zarezerwowaliśmy wagon sypialny na nocną podróż do Chicago.",
+              "focusEn": "sleeper car",
+              "focusPl": "wagon sypialny"
+            },
+            {
+              "en": "The beds in the sleeper car were narrow, but I slept well.",
+              "pl": "Łóżka w wagonie sypialnym były wąskie, ale spałem dobrze.",
+              "focusEn": "sleeper car",
+              "focusPl": "wagonie sypialnym"
+            }
+          ],
+          "acceptedAnswers": [
+            "sleeper car",
+            "sleeper"
+          ],
+          "acceptedTranslations": [
+            "wagon sypialny",
+            "sypialny"
+          ]
+        },
+        {
+          "id": "train-travel.compartment",
+          "term": "compartment",
+          "ipa": "/kəmˈpɑːrtmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "przedział",
+          "definition": "A small separate section of a train car with seats or beds.",
+          "register": "neutralny",
+          "contextPl": "Wagony",
+          "natural": "",
+          "forms": "compartments",
+          "collocations": "private compartment; share a compartment",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA przedziały są rzadkie; częściej spotyka się je w pociągach nocnych i w Europie.",
+          "examples": [
+            {
+              "en": "We had the whole compartment to ourselves until the next stop.",
+              "pl": "Mieliśmy cały przedział dla siebie aż do następnej stacji.",
+              "focusEn": "compartment",
+              "focusPl": "przedział"
+            },
+            {
+              "en": "An older couple shared our compartment and offered us cookies.",
+              "pl": "Starsze małżeństwo jechało z nami w przedziale i poczęstowało nas ciasteczkami.",
+              "focusEn": "compartment",
+              "focusPl": "przedziale"
+            }
+          ],
+          "acceptedAnswers": [
+            "compartment"
+          ],
+          "acceptedTranslations": [
+            "przedział"
+          ]
+        },
+        {
+          "id": "train-travel.luggage-rack",
+          "term": "luggage rack",
+          "ipa": "/ˈlʌɡɪdʒ ˌræk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "półka na bagaż",
+          "definition": "A shelf on a train for bags and suitcases.",
+          "register": "neutralny",
+          "contextPl": "Bagaż w pociągu",
+          "natural": "",
+          "forms": "luggage racks",
+          "collocations": "put your bag on the luggage rack",
+          "synonyms": "overhead rack",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I put my suitcase on the luggage rack above my seat.",
+              "pl": "Położyłem walizkę na półce na bagaż nad moim miejscem.",
+              "focusEn": "luggage rack",
+              "focusPl": "półce na bagaż"
+            },
+            {
+              "en": "The big suitcases go on the luggage rack at the end of the car.",
+              "pl": "Duże walizki stawia się na półce na bagaż na końcu wagonu.",
+              "focusEn": "luggage rack",
+              "focusPl": "półce na bagaż"
+            }
+          ],
+          "acceptedAnswers": [
+            "luggage rack",
+            "overhead rack",
+            "baggage rack"
+          ],
+          "acceptedTranslations": [
+            "półka na bagaż",
+            "półka bagażowa"
+          ]
+        },
+        {
+          "id": "train-travel.facing-forward",
+          "term": "facing forward",
+          "ipa": "/ˌfeɪsɪŋ ˈfɔːrwərd/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "przodem do kierunku jazdy",
+          "definition": "Sitting so that you look in the direction the train is moving.",
+          "register": "neutralny",
+          "contextPl": "Miejsce w pociągu",
+          "natural": "",
+          "forms": "",
+          "collocations": "sit facing forward",
+          "synonyms": "",
+          "antonyms": "facing backward",
+          "notePl": "„Facing backward” – tyłem do kierunku jazdy.",
+          "examples": [
+            {
+              "en": "I get sick if I don't sit facing forward.",
+              "pl": "Robi mi się niedobrze, jeśli nie siedzę przodem do kierunku jazdy.",
+              "focusEn": "facing forward",
+              "focusPl": "przodem do kierunku jazdy"
+            },
+            {
+              "en": "Can we switch? I'd like a seat facing forward.",
+              "pl": "Możemy się zamienić? Wolałbym miejsce przodem do kierunku jazdy.",
+              "focusEn": "facing forward",
+              "focusPl": "przodem do kierunku jazdy"
+            }
+          ],
+          "acceptedAnswers": [
+            "facing forward"
+          ],
+          "acceptedTranslations": [
+            "przodem do kierunku jazdy"
+          ]
+        },
+        {
+          "id": "train-travel.next-stop",
+          "term": "next stop",
+          "ipa": "/ˌnekst ˈstɑːp/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "następna stacja",
+          "definition": "The next place where the train will stop.",
+          "register": "neutralny",
+          "contextPl": "Przystanki",
+          "natural": "",
+          "forms": "",
+          "collocations": "the next stop is; get off at the next stop",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The next stop is Trenton, please watch your step.",
+              "pl": "Następna stacja: Trenton, prosimy uważać przy wysiadaniu.",
+              "focusEn": "next stop",
+              "focusPl": "Następna stacja"
+            },
+            {
+              "en": "We need to get off at the next stop, grab your jacket.",
+              "pl": "Wysiadamy na następnej stacji, weź kurtkę.",
+              "focusEn": "next stop",
+              "focusPl": "następnej stacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "next stop"
+          ],
+          "acceptedTranslations": [
+            "następna stacja",
+            "następny przystanek"
+          ]
+        },
+        {
+          "id": "train-travel.stop",
+          "term": "stop",
+          "ipa": "/stɑːp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przystanek, stacja",
+          "definition": "A place where a train stops for passengers.",
+          "register": "neutralny",
+          "contextPl": "Przystanki",
+          "natural": "",
+          "forms": "stops",
+          "collocations": "make a stop; three more stops; miss your stop",
+          "synonyms": "station",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This train makes only two stops before New York.",
+              "pl": "Ten pociąg ma tylko dwa przystanki przed Nowym Jorkiem.",
+              "focusEn": "stops",
+              "focusPl": "przystanki"
+            },
+            {
+              "en": "I fell asleep and almost missed my stop.",
+              "pl": "Zasnąłem i prawie przegapiłem swoją stację.",
+              "focusEn": "stop",
+              "focusPl": "stację"
+            }
+          ],
+          "acceptedAnswers": [
+            "stop",
+            "station"
+          ],
+          "acceptedTranslations": [
+            "przystanek, stacja",
+            "stacja"
+          ]
+        },
+        {
+          "id": "train-travel.outlet",
+          "term": "outlet",
+          "ipa": "/ˈaʊtlet/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gniazdko",
+          "definition": "A place in the wall or under a seat where you plug things in.",
+          "register": "neutralny",
+          "contextPl": "Miejsce w pociągu",
+          "natural": "",
+          "forms": "outlets",
+          "collocations": "power outlet; outlet under the seat",
+          "synonyms": "socket",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's an outlet under every seat, so I charged my laptop.",
+              "pl": "Pod każdym siedzeniem jest gniazdko, więc naładowałem laptopa.",
+              "focusEn": "outlet",
+              "focusPl": "gniazdko"
+            },
+            {
+              "en": "The outlet at our table didn't work, so we moved to another seat.",
+              "pl": "Gniazdko przy naszym stoliku nie działało, więc przenieśliśmy się na inne miejsce.",
+              "focusEn": "outlet",
+              "focusPl": "Gniazdko"
+            }
+          ],
+          "acceptedAnswers": [
+            "outlet",
+            "socket",
+            "power outlet"
+          ],
+          "acceptedTranslations": [
+            "gniazdko",
+            "gniazdko elektryczne"
+          ]
+        },
+        {
+          "id": "train-travel.restroom",
+          "term": "restroom",
+          "ipa": "/ˈrestruːm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "toaleta",
+          "definition": "A small room with a toilet on a train.",
+          "register": "neutralny",
+          "contextPl": "Na pokładzie pociągu",
+          "natural": "",
+          "forms": "restrooms",
+          "collocations": "the restroom at the end of the car",
+          "synonyms": "bathroom",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The restroom is at the end of this car, next to the doors.",
+              "pl": "Toaleta jest na końcu tego wagonu, obok drzwi.",
+              "focusEn": "restroom",
+              "focusPl": "Toaleta"
+            },
+            {
+              "en": "The restroom on our train was out of order the whole trip.",
+              "pl": "Toaleta w naszym pociągu przez całą podróż była nieczynna.",
+              "focusEn": "restroom",
+              "focusPl": "Toaleta"
+            }
+          ],
+          "acceptedAnswers": [
+            "restroom",
+            "bathroom"
+          ],
+          "acceptedTranslations": [
+            "toaleta",
+            "łazienka"
+          ]
+        },
+        {
+          "id": "train-travel.scenery",
+          "term": "scenery",
+          "ipa": "/ˈsiːnəri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "krajobraz",
+          "definition": "The natural things you see from the window, like hills and rivers.",
+          "register": "neutralny",
+          "contextPl": "Widoki z okna",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "beautiful scenery; enjoy the scenery; mountain scenery",
+          "synonyms": "views, landscape",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The scenery along the river was beautiful.",
+              "pl": "Krajobraz wzdłuż rzeki był przepiękny.",
+              "focusEn": "scenery",
+              "focusPl": "Krajobraz"
+            },
+            {
+              "en": "I took the train instead of flying just for the mountain scenery.",
+              "pl": "Pojechałem pociągiem zamiast lecieć tylko dla górskiego krajobrazu.",
+              "focusEn": "scenery",
+              "focusPl": "krajobrazu"
+            }
+          ],
+          "acceptedAnswers": [
+            "scenery",
+            "landscape",
+            "views"
+          ],
+          "acceptedTranslations": [
+            "krajobraz",
+            "widoki"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "train-travel.connections",
+      "namePl": "Połączenia, przesiadki i opóźnienia",
+      "scenePl": "Podróż z przesiadką: opóźniony pociąg, bieg przez dworzec i komunikaty konduktora",
+      "entries": [
+        {
+          "id": "train-travel.change-trains",
+          "term": "change trains",
+          "ipa": "/ˌtʃeɪndʒ ˈtreɪnz/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przesiąść się",
+          "definition": "To get off one train and get on another to continue your trip.",
+          "register": "neutralny",
+          "contextPl": "Przesiadki",
+          "natural": "",
+          "forms": "changed trains",
+          "collocations": "change trains in Philadelphia; have to change trains",
+          "synonyms": "transfer",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We have to change trains in Philadelphia.",
+              "pl": "Musimy przesiąść się w Filadelfii.",
+              "focusEn": "change trains",
+              "focusPl": "przesiąść się"
+            },
+            {
+              "en": "I changed trains twice, and the trip took six hours.",
+              "pl": "Dwa razy się przesiadałem i podróż trwała sześć godzin.",
+              "focusEn": "changed trains",
+              "focusPl": "przesiadałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "change trains",
+            "transfer",
+            "switch trains"
+          ],
+          "acceptedTranslations": [
+            "przesiąść się",
+            "przesiadać się",
+            "zmienić pociąg"
+          ]
+        },
+        {
+          "id": "train-travel.transfer",
+          "term": "transfer",
+          "ipa": "/ˈtrænsfɜːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przesiadka",
+          "definition": "A change from one train or bus to another during a trip.",
+          "register": "neutralny",
+          "contextPl": "Przesiadki",
+          "natural": "",
+          "forms": "transfers",
+          "collocations": "make a transfer; a ten-minute transfer; easy transfer",
+          "synonyms": "connection",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We only have eight minutes for the transfer, so we'll have to run.",
+              "pl": "Mamy tylko osiem minut na przesiadkę, więc będziemy musieli biec.",
+              "focusEn": "transfer",
+              "focusPl": "przesiadkę"
+            },
+            {
+              "en": "The transfer in Albany was easy, the next train was on the same platform.",
+              "pl": "Przesiadka w Albany była łatwa, następny pociąg stał przy tym samym peronie.",
+              "focusEn": "transfer",
+              "focusPl": "Przesiadka"
+            }
+          ],
+          "acceptedAnswers": [
+            "transfer",
+            "connection"
+          ],
+          "acceptedTranslations": [
+            "przesiadka"
+          ]
+        },
+        {
+          "id": "train-travel.catch",
+          "term": "catch",
+          "ipa": "/kætʃ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zdążyć na",
+          "definition": "To get to a train in time to get on it.",
+          "register": "neutralny",
+          "contextPl": "Przesiadki",
+          "natural": "",
+          "forms": "catches – caught – caught",
+          "collocations": "catch a train; catch the last train; catch the 7:30",
+          "synonyms": "make",
+          "antonyms": "miss",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If we run, we can still catch the 7:30 train.",
+              "pl": "Jeśli pobiegniemy, wciąż zdążymy na pociąg o 7:30.",
+              "focusEn": "catch",
+              "focusPl": "zdążymy na"
+            },
+            {
+              "en": "We caught the last train home just before midnight.",
+              "pl": "Zdążyliśmy na ostatni pociąg do domu tuż przed północą.",
+              "focusEn": "caught",
+              "focusPl": "Zdążyliśmy na"
+            }
+          ],
+          "acceptedAnswers": [
+            "catch"
+          ],
+          "acceptedTranslations": [
+            "zdążyć na",
+            "złapać"
+          ]
+        },
+        {
+          "id": "train-travel.miss-the-train",
+          "term": "miss the train",
+          "ipa": "/ˌmɪs ðə ˈtreɪn/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "spóźnić się na pociąg",
+          "definition": "To arrive too late to get on a train.",
+          "register": "neutralny",
+          "contextPl": "Przesiadki",
+          "natural": "",
+          "forms": "missed the train",
+          "collocations": "just miss the train; miss the last train",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przenośnie: „miss the boat” – przegapić okazję.",
+          "examples": [
+            {
+              "en": "Because of the delay, we missed the train to Washington.",
+              "pl": "Przez opóźnienie spóźniliśmy się na pociąg do Waszyngtonu.",
+              "focusEn": "missed the train",
+              "focusPl": "spóźniliśmy się na pociąg"
+            },
+            {
+              "en": "If you miss the train, the next one is in an hour.",
+              "pl": "Jeśli spóźnisz się na pociąg, następny jest za godzinę.",
+              "focusEn": "miss the train",
+              "focusPl": "spóźnisz się na pociąg"
+            }
+          ],
+          "acceptedAnswers": [
+            "miss the train"
+          ],
+          "acceptedTranslations": [
+            "spóźnić się na pociąg",
+            "uciec (o pociągu)",
+            "nie zdążyć na pociąg"
+          ]
+        },
+        {
+          "id": "train-travel.running-behind",
+          "term": "running behind",
+          "ipa": "/ˌrʌnɪŋ bɪˈhaɪnd/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "mieć opóźnienie",
+          "definition": "Later than planned.",
+          "register": "potoczny",
+          "contextPl": "Opóźnienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "running behind schedule; running ten minutes behind",
+          "synonyms": "running late",
+          "antonyms": "on schedule",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our train is running behind by about fifteen minutes.",
+              "pl": "Nasz pociąg ma opóźnienie około piętnastu minut.",
+              "focusEn": "running behind",
+              "focusPl": "ma opóźnienie"
+            },
+            {
+              "en": "The conductor apologized and said we were running behind because of the weather.",
+              "pl": "Konduktor przeprosił i powiedział, że mamy opóźnienie z powodu pogody.",
+              "focusEn": "running behind",
+              "focusPl": "mamy opóźnienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "running behind"
+          ],
+          "acceptedTranslations": [
+            "mieć opóźnienie",
+            "być opóźnionym",
+            "spóźniać się"
+          ]
+        },
+        {
+          "id": "train-travel.on-schedule",
+          "term": "on schedule",
+          "ipa": "/ˌɑːn ˈskedʒuːl/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zgodnie z rozkładem",
+          "definition": "At the planned time.",
+          "register": "neutralny",
+          "contextPl": "Opóźnienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "run on schedule; arrive on schedule",
+          "synonyms": "on time",
+          "antonyms": "behind schedule",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Surprisingly, every train today was on schedule.",
+              "pl": "O dziwo, każdy pociąg jechał dziś zgodnie z rozkładem.",
+              "focusEn": "on schedule",
+              "focusPl": "zgodnie z rozkładem"
+            },
+            {
+              "en": "We left a bit late, but we arrived on schedule.",
+              "pl": "Wyruszyliśmy trochę później, ale dojechaliśmy zgodnie z rozkładem.",
+              "focusEn": "on schedule",
+              "focusPl": "zgodnie z rozkładem"
+            }
+          ],
+          "acceptedAnswers": [
+            "on schedule"
+          ],
+          "acceptedTranslations": [
+            "zgodnie z rozkładem",
+            "punktualnie",
+            "planowo"
+          ]
+        },
+        {
+          "id": "train-travel.express-train",
+          "term": "express train",
+          "ipa": "/ɪkˈspres ˌtreɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pociąg ekspresowy",
+          "definition": "A fast train that stops at only a few stations.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje pociągów",
+          "natural": "",
+          "forms": "express trains",
+          "collocations": "take the express train",
+          "synonyms": "express",
+          "antonyms": "local train",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The express train gets to New York in under two hours.",
+              "pl": "Pociąg ekspresowy dojeżdża do Nowego Jorku w niecałe dwie godziny.",
+              "focusEn": "express train",
+              "focusPl": "Pociąg ekspresowy"
+            },
+            {
+              "en": "We took the express train so we wouldn't miss our connection.",
+              "pl": "Pojechaliśmy pociągiem ekspresowym, żeby nie spóźnić się na przesiadkę.",
+              "focusEn": "express train",
+              "focusPl": "pociągiem ekspresowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "express train"
+          ],
+          "acceptedTranslations": [
+            "pociąg ekspresowy",
+            "ekspres",
+            "pociąg pospieszny"
+          ]
+        },
+        {
+          "id": "train-travel.local-train",
+          "term": "local train",
+          "ipa": "/ˈloʊkl ˌtreɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pociąg osobowy",
+          "definition": "A slow train that stops at every station.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje pociągów",
+          "natural": "",
+          "forms": "local trains",
+          "collocations": "take the local train",
+          "synonyms": "local",
+          "antonyms": "express train",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The local train stops at every little town along the way.",
+              "pl": "Pociąg osobowy zatrzymuje się w każdym małym miasteczku po drodze.",
+              "focusEn": "local train",
+              "focusPl": "Pociąg osobowy"
+            },
+            {
+              "en": "We missed the express, so we had to take the local train.",
+              "pl": "Spóźniliśmy się na ekspres, więc musieliśmy jechać pociągiem osobowym.",
+              "focusEn": "local train",
+              "focusPl": "pociągiem osobowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "local train"
+          ],
+          "acceptedTranslations": [
+            "pociąg osobowy",
+            "lokalny pociąg",
+            "pociąg regionalny"
+          ]
+        },
+        {
+          "id": "train-travel.high-speed-train",
+          "term": "high-speed train",
+          "ipa": "/ˌhaɪ spiːd ˈtreɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pociąg dużych prędkości",
+          "definition": "A very fast modern train.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje pociągów",
+          "natural": "",
+          "forms": "high-speed trains",
+          "collocations": "high-speed rail",
+          "synonyms": "bullet train",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The high-speed train goes almost two hundred miles an hour.",
+              "pl": "Pociąg dużych prędkości jedzie prawie trzysta kilometrów na godzinę.",
+              "focusEn": "high-speed train",
+              "focusPl": "Pociąg dużych prędkości"
+            },
+            {
+              "en": "On the high-speed train, the coffee in my cup barely moved.",
+              "pl": "W pociągu dużych prędkości kawa w moim kubku prawie się nie poruszała.",
+              "focusEn": "high-speed train",
+              "focusPl": "pociągu dużych prędkości"
+            }
+          ],
+          "acceptedAnswers": [
+            "high-speed train",
+            "bullet train"
+          ],
+          "acceptedTranslations": [
+            "pociąg dużych prędkości",
+            "szybki pociąg"
+          ]
+        },
+        {
+          "id": "train-travel.commuter-train",
+          "term": "commuter train",
+          "ipa": "/kəˈmjuːtər ˌtreɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pociąg podmiejski",
+          "definition": "A train that takes people between the suburbs and the city for work.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje pociągów",
+          "natural": "",
+          "forms": "commuter trains",
+          "collocations": "take the commuter train; commuter rail",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Commuter” – osoba dojeżdżająca do pracy.",
+          "examples": [
+            {
+              "en": "The commuter train is packed with office workers every morning.",
+              "pl": "Pociąg podmiejski jest co rano zapchany pracownikami biur.",
+              "focusEn": "commuter train",
+              "focusPl": "Pociąg podmiejski"
+            },
+            {
+              "en": "I take the commuter train into the city and read on the way.",
+              "pl": "Jeżdżę do miasta pociągiem podmiejskim i czytam po drodze.",
+              "focusEn": "commuter train",
+              "focusPl": "pociągiem podmiejskim"
+            }
+          ],
+          "acceptedAnswers": [
+            "commuter train",
+            "commuter rail"
+          ],
+          "acceptedTranslations": [
+            "pociąg podmiejski",
+            "kolej podmiejska"
+          ]
+        },
+        {
+          "id": "train-travel.last-stop",
+          "term": "last stop",
+          "ipa": "/ˌlæst ˈstɑːp/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "stacja końcowa",
+          "definition": "The final station where a train ends its route.",
+          "register": "neutralny",
+          "contextPl": "Przystanki",
+          "natural": "",
+          "forms": "",
+          "collocations": "this is the last stop; get off at the last stop",
+          "synonyms": "final stop, end of the line",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This is the last stop, all passengers must leave the train.",
+              "pl": "To stacja końcowa, wszyscy pasażerowie proszeni są o opuszczenie pociągu.",
+              "focusEn": "last stop",
+              "focusPl": "stacja końcowa"
+            },
+            {
+              "en": "We fell asleep and woke up at the last stop.",
+              "pl": "Zasnęliśmy i obudziliśmy się na stacji końcowej.",
+              "focusEn": "last stop",
+              "focusPl": "stacji końcowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "last stop",
+            "final stop",
+            "end of the line"
+          ],
+          "acceptedTranslations": [
+            "stacja końcowa",
+            "ostatnia stacja",
+            "ostatni przystanek"
+          ]
+        },
+        {
+          "id": "train-travel.signal-problem",
+          "term": "signal problem",
+          "ipa": "/ˈsɪɡnl ˌprɑːbləm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "awaria sygnalizacji",
+          "definition": "A technical problem with the lights that control trains.",
+          "register": "neutralny",
+          "contextPl": "Opóźnienia",
+          "natural": "",
+          "forms": "signal problems",
+          "collocations": "due to a signal problem",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Częsty powód opóźnień w komunikatach.",
+          "examples": [
+            {
+              "en": "We are delayed due to a signal problem ahead of us.",
+              "pl": "Mamy opóźnienie z powodu awarii sygnalizacji przed nami.",
+              "focusEn": "signal problem",
+              "focusPl": "awarii sygnalizacji"
+            },
+            {
+              "en": "A signal problem near the station stopped all trains for an hour.",
+              "pl": "Awaria sygnalizacji w pobliżu dworca wstrzymała wszystkie pociągi na godzinę.",
+              "focusEn": "signal problem",
+              "focusPl": "Awaria sygnalizacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "signal problem"
+          ],
+          "acceptedTranslations": [
+            "awaria sygnalizacji",
+            "usterka sygnalizacji"
+          ]
+        },
+        {
+          "id": "train-travel.stuck",
+          "term": "stuck",
+          "ipa": "/stʌk/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "unieruchomiony",
+          "definition": "Unable to move.",
+          "register": "potoczny",
+          "contextPl": "Opóźnienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "be stuck; get stuck; stuck between stations",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We were stuck between two stations for forty minutes.",
+              "pl": "Byliśmy unieruchomieni między dwiema stacjami przez czterdzieści minut.",
+              "focusEn": "stuck",
+              "focusPl": "unieruchomieni"
+            },
+            {
+              "en": "The train got stuck in the snow, and we had to wait for help.",
+              "pl": "Pociąg utknął w śniegu i musieliśmy czekać na pomoc.",
+              "focusEn": "stuck",
+              "focusPl": "utknął"
+            }
+          ],
+          "acceptedAnswers": [
+            "stuck"
+          ],
+          "acceptedTranslations": [
+            "unieruchomiony",
+            "utknąć"
+          ]
+        },
+        {
+          "id": "train-travel.shuttle-bus",
+          "term": "shuttle bus",
+          "ipa": "/ˈʃʌtl ˌbʌs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "autobus zastępczy",
+          "definition": "A bus that carries train passengers when part of the line is closed.",
+          "register": "neutralny",
+          "contextPl": "Opóźnienia",
+          "natural": "",
+          "forms": "shuttle buses",
+          "collocations": "take a shuttle bus; free shuttle bus",
+          "synonyms": "replacement bus",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Because of track work, we took a shuttle bus for part of the trip.",
+              "pl": "Z powodu remontu torów część trasy przejechaliśmy autobusem zastępczym.",
+              "focusEn": "shuttle bus",
+              "focusPl": "autobusem zastępczym"
+            },
+            {
+              "en": "The conductor said a shuttle bus would be waiting outside the next station.",
+              "pl": "Konduktor powiedział, że przed następną stacją będzie czekał autobus zastępczy.",
+              "focusEn": "shuttle bus",
+              "focusPl": "autobus zastępczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "shuttle bus",
+            "replacement bus",
+            "shuttle"
+          ],
+          "acceptedTranslations": [
+            "autobus zastępczy",
+            "komunikacja zastępcza",
+            "zastępcza komunikacja autobusowa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "train-travel.phrases",
+      "namePl": "Pasażerowie i zwroty",
+      "scenePl": "Wsiadanie i wysiadanie na peronie oraz rozmowy z innymi pasażerami w wagonie",
+      "entries": [
+        {
+          "id": "train-travel.passenger",
+          "term": "passenger",
+          "ipa": "/ˈpæsɪndʒər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pasażer",
+          "definition": "A person who is traveling on a train, bus or plane.",
+          "register": "neutralny",
+          "contextPl": "Pasażerowie",
+          "natural": "",
+          "forms": "passengers",
+          "collocations": "train passengers; all passengers; fellow passenger",
+          "synonyms": "traveler",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "All passengers for Richmond, please go to track four.",
+              "pl": "Wszyscy pasażerowie jadący do Richmond proszeni są na tor czwarty.",
+              "focusEn": "passengers",
+              "focusPl": "pasażerowie"
+            },
+            {
+              "en": "The passenger next to me talked about her grandkids for an hour.",
+              "pl": "Pasażerka obok mnie przez godzinę opowiadała o swoich wnukach.",
+              "focusEn": "passenger",
+              "focusPl": "Pasażerka"
+            }
+          ],
+          "acceptedAnswers": [
+            "passenger",
+            "traveler",
+            "rider"
+          ],
+          "acceptedTranslations": [
+            "pasażer",
+            "podróżny",
+            "pasażerka"
+          ]
+        },
+        {
+          "id": "train-travel.get-off",
+          "term": "get off",
+          "ipa": "/ˌɡet ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wysiąść",
+          "definition": "To leave a train, bus or plane.",
+          "register": "neutralny",
+          "contextPl": "Wsiadanie i wysiadanie",
+          "natural": "",
+          "forms": "gets off – got off – gotten off",
+          "collocations": "get off the train; get off at the next stop",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Get off at” + nazwa stacji: „get off at Union Station”.",
+          "examples": [
+            {
+              "en": "We get off at the third stop, so don't fall asleep.",
+              "pl": "Wysiadamy na trzeciej stacji, więc nie zaśnij.",
+              "focusEn": "get off",
+              "focusPl": "Wysiadamy"
+            },
+            {
+              "en": "Let the passengers get off before you get on.",
+              "pl": "Zanim wsiądziesz, pozwól pasażerom wysiąść.",
+              "focusEn": "get off",
+              "focusPl": "wysiąść"
+            }
+          ],
+          "acceptedAnswers": [
+            "get off"
+          ],
+          "acceptedTranslations": [
+            "wysiąść",
+            "wysiadać"
+          ]
+        },
+        {
+          "id": "train-travel.all-aboard",
+          "term": "all aboard",
+          "ipa": "/ˌɔːl əˈbɔːrd/",
+          "pos": "wykrzyknik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "proszę wsiadać",
+          "definition": "A call telling passengers that the train is about to leave.",
+          "register": "neutralny",
+          "contextPl": "Wsiadanie i wysiadanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Tradycyjne zawołanie konduktora na peronie.",
+          "examples": [
+            {
+              "en": "The conductor shouted \"All aboard!\" and we jumped on just in time.",
+              "pl": "Konduktor krzyknął: „Proszę wsiadać!”, a my wskoczyliśmy w ostatniej chwili.",
+              "focusEn": "All aboard",
+              "focusPl": "Proszę wsiadać"
+            },
+            {
+              "en": "When we heard \"all aboard,\" we said goodbye on the platform.",
+              "pl": "Kiedy usłyszeliśmy „proszę wsiadać”, pożegnaliśmy się na peronie.",
+              "focusEn": "all aboard",
+              "focusPl": "proszę wsiadać"
+            }
+          ],
+          "acceptedAnswers": [
+            "all aboard"
+          ],
+          "acceptedTranslations": [
+            "proszę wsiadać",
+            "wsiadać",
+            "wszyscy do środka"
+          ]
+        },
+        {
+          "id": "train-travel.watch-your-step",
+          "term": "watch your step",
+          "ipa": "/ˌwɑːtʃ jʊr ˈstep/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "uwaga na stopień",
+          "definition": "Be careful where you put your feet.",
+          "register": "neutralny",
+          "contextPl": "Wsiadanie i wysiadanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "please watch your step",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please watch your step when getting off the train.",
+              "pl": "Prosimy uważać na stopień przy wysiadaniu z pociągu.",
+              "focusEn": "watch your step",
+              "focusPl": "uważać na stopień"
+            },
+            {
+              "en": "Watch your step, there's a big gap between the train and the platform.",
+              "pl": "Uwaga na stopień, między pociągiem a peronem jest duża szczelina.",
+              "focusEn": "Watch your step",
+              "focusPl": "Uwaga na stopień"
+            }
+          ],
+          "acceptedAnswers": [
+            "watch your step",
+            "mind your step"
+          ],
+          "acceptedTranslations": [
+            "uwaga na stopień",
+            "uważaj",
+            "jak idziesz",
+            "uwaga przy wysiadaniu"
+          ]
+        },
+        {
+          "id": "train-travel.is-this-seat-taken",
+          "term": "is this seat taken",
+          "ipa": "/ˌɪz ðɪs ˈsiːt ˌteɪkən/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "czy to miejsce jest zajęte",
+          "definition": "A polite question to ask if you can sit somewhere.",
+          "register": "neutralny",
+          "contextPl": "Rozmowy z pasażerami",
+          "natural": "",
+          "forms": "",
+          "collocations": "Excuse me, is this seat taken?",
+          "synonyms": "is anyone sitting here",
+          "antonyms": "",
+          "notePl": "„Taken” – zajęte; odpowiedź: „No, go ahead”.",
+          "examples": [
+            {
+              "en": "Sorry to bother you, is this seat taken, or is your friend coming back?",
+              "pl": "Przepraszam, że przeszkadzam, czy to miejsce jest zajęte, czy pani znajomy jeszcze wróci?",
+              "focusEn": "is this seat taken",
+              "focusPl": "czy to miejsce jest zajęte"
+            },
+            {
+              "en": "I asked is this seat taken, and the man moved his bag right away.",
+              "pl": "Zapytałem, czy to miejsce jest zajęte, a mężczyzna od razu zabrał torbę.",
+              "focusEn": "is this seat taken",
+              "focusPl": "czy to miejsce jest zajęte"
+            }
+          ],
+          "acceptedAnswers": [
+            "is this seat taken",
+            "is anyone sitting here",
+            "is this seat free"
+          ],
+          "acceptedTranslations": [
+            "czy to miejsce jest zajęte",
+            "czy to miejsce jest wolne",
+            "czy tu ktoś siedzi"
+          ]
+        },
+        {
+          "id": "train-travel.bound-for",
+          "term": "bound for",
+          "ipa": "/ˈbaʊnd fər/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "jadący do",
+          "definition": "Traveling toward a particular place.",
+          "register": "formalny",
+          "contextPl": "Komunikaty",
+          "natural": "",
+          "forms": "",
+          "collocations": "bound for Chicago; trains bound for the airport",
+          "synonyms": "headed for",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The train on track two is bound for Chicago.",
+              "pl": "Pociąg na torze drugim jedzie do Chicago.",
+              "focusEn": "bound for",
+              "focusPl": "jedzie do"
+            },
+            {
+              "en": "All trains bound for the airport are leaving from the lower level.",
+              "pl": "Wszystkie pociągi jadące do lotniska odjeżdżają z dolnego poziomu.",
+              "focusEn": "bound for",
+              "focusPl": "jadące do"
+            }
+          ],
+          "acceptedAnswers": [
+            "bound for",
+            "headed for",
+            "going to"
+          ],
+          "acceptedTranslations": [
+            "jadący do",
+            "w kierunku",
+            "zmierzający do"
+          ]
+        },
+        {
+          "id": "train-travel.ride",
+          "term": "ride",
+          "ipa": "/raɪd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przejazd",
+          "definition": "A trip in a vehicle such as a train.",
+          "register": "neutralny",
+          "contextPl": "Podróż koleją",
+          "natural": "",
+          "forms": "rides",
+          "collocations": "a two-hour ride; a smooth ride; train ride",
+          "synonyms": "trip",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The ride to the coast takes about three hours.",
+              "pl": "Przejazd na wybrzeże trwa około trzech godzin.",
+              "focusEn": "ride",
+              "focusPl": "Przejazd"
+            },
+            {
+              "en": "The train ride along the ocean was the best part of our trip.",
+              "pl": "Przejazd pociągiem wzdłuż oceanu był najlepszą częścią naszej podróży.",
+              "focusEn": "ride",
+              "focusPl": "Przejazd"
+            }
+          ],
+          "acceptedAnswers": [
+            "ride",
+            "trip"
+          ],
+          "acceptedTranslations": [
+            "przejazd",
+            "jazda",
+            "podróż"
+          ]
+        },
+        {
+          "id": "train-travel.railroad",
+          "term": "railroad",
+          "ipa": "/ˈreɪlroʊd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kolej",
+          "definition": "A system of tracks and trains, or the company that runs it.",
+          "register": "neutralny",
+          "contextPl": "Podróż koleją",
+          "natural": "",
+          "forms": "railroads",
+          "collocations": "railroad tracks; railroad crossing; work for the railroad",
+          "synonyms": "railway",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My grandfather worked for the railroad for forty years.",
+              "pl": "Mój dziadek przez czterdzieści lat pracował na kolei.",
+              "focusEn": "railroad",
+              "focusPl": "kolei"
+            },
+            {
+              "en": "The old railroad bridge shook as our train crossed the river.",
+              "pl": "Stary kolejowy most trząsł się, gdy nasz pociąg przejeżdżał przez rzekę.",
+              "focusEn": "railroad",
+              "focusPl": "kolejowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "railroad",
+            "railway"
+          ],
+          "acceptedTranslations": [
+            "kolej",
+            "kolej żelazna",
+            "linia kolejowa"
+          ]
+        },
+        {
+          "id": "train-travel.locomotive",
+          "term": "locomotive",
+          "ipa": "/ˌloʊkəˈmoʊtɪv/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "lokomotywa",
+          "definition": "The engine that pulls a train.",
+          "register": "neutralny",
+          "contextPl": "Podróż koleją",
+          "natural": "",
+          "forms": "locomotives",
+          "collocations": "diesel locomotive; steam locomotive",
+          "synonyms": "engine",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kids ran to the front of the platform to see the locomotive.",
+              "pl": "Dzieci pobiegły na początek peronu, żeby zobaczyć lokomotywę.",
+              "focusEn": "locomotive",
+              "focusPl": "lokomotywę"
+            },
+            {
+              "en": "The locomotive broke down, and we waited for a new one.",
+              "pl": "Lokomotywa się zepsuła i czekaliśmy na nową.",
+              "focusEn": "locomotive",
+              "focusPl": "Lokomotywa"
+            }
+          ],
+          "acceptedAnswers": [
+            "locomotive",
+            "engine"
+          ],
+          "acceptedTranslations": [
+            "lokomotywa"
+          ]
+        },
+        {
+          "id": "train-travel.journey",
+          "term": "journey",
+          "ipa": "/ˈdʒɜːrni/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "podróż",
+          "definition": "A long trip from one place to another.",
+          "register": "neutralny",
+          "contextPl": "Podróż koleją",
+          "natural": "",
+          "forms": "journeys",
+          "collocations": "a long journey; train journey; the journey home",
+          "synonyms": "trip",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The journey across the country took three days and two nights.",
+              "pl": "Podróż przez cały kraj trwała trzy dni i dwie noce.",
+              "focusEn": "journey",
+              "focusPl": "Podróż"
+            },
+            {
+              "en": "We met a nice couple on the train and talked for the whole journey.",
+              "pl": "W pociągu poznaliśmy miłą parę i rozmawialiśmy przez całą podróż.",
+              "focusEn": "journey",
+              "focusPl": "podróż"
+            }
+          ],
+          "acceptedAnswers": [
+            "journey",
+            "trip"
+          ],
+          "acceptedTranslations": [
+            "podróż"
+          ]
+        },
+        {
+          "id": "train-travel.window-seat",
+          "term": "window seat",
+          "ipa": "/ˈwɪndoʊ ˌsiːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "miejsce przy oknie",
+          "definition": "A seat next to the window on a train.",
+          "register": "neutralny",
+          "contextPl": "Rozmowy z pasażerami",
+          "natural": "",
+          "forms": "window seats",
+          "collocations": "take the window seat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Would you mind switching? I'd love the window seat for the mountain views.",
+              "pl": "Zamieni się pan? Bardzo chciałbym miejsce przy oknie, żeby podziwiać góry.",
+              "focusEn": "window seat",
+              "focusPl": "miejsce przy oknie"
+            },
+            {
+              "en": "My son always fights for the window seat on the train.",
+              "pl": "Mój syn zawsze walczy o miejsce przy oknie w pociągu.",
+              "focusEn": "window seat",
+              "focusPl": "miejsce przy oknie"
+            }
+          ],
+          "acceptedAnswers": [
+            "window seat"
+          ],
+          "acceptedTranslations": [
+            "miejsce przy oknie",
+            "miejsce koło okna"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3476 @@
+{
+  "schemaVersion": 1,
+  "id": "grocery-shopping",
+  "namePl": "Zakupy spożywcze",
+  "nameEn": "Grocery Shopping",
+  "group": "food",
+  "symbol": "cart",
+  "summaryPl": "Supermarket i alejki, opakowania i ilości, ceny i promocje, kasa oraz planowanie zakupów.",
+  "aliases": [
+    "zakupy spożywcze",
+    "supermarket",
+    "sklep spożywczy",
+    "zakupy",
+    "kasa",
+    "lista zakupów",
+    "spożywczak",
+    "groceries",
+    "grocery store"
+  ],
+  "categories": [
+    {
+      "id": "grocery-shopping.store",
+      "namePl": "W supermarkecie",
+      "scenePl": "Szukanie produktów między alejkami w supermarkecie",
+      "entries": [
+        {
+          "id": "grocery-shopping.grocery-store",
+          "term": "grocery store",
+          "ipa": "/ˈɡroʊsəri ˌstɔːr/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "sklep spożywczy",
+          "definition": "A store that sells food and household items.",
+          "register": "neutralny",
+          "contextPl": "Codzienne zakupy jedzenia",
+          "natural": "grocery",
+          "forms": "grocery stores",
+          "collocations": "go to the grocery store; local grocery store",
+          "synonyms": "supermarket",
+          "antonyms": "",
+          "notePl": "W mowie Amerykanie częściej mówią „grocery store” niż „supermarket”.",
+          "examples": [
+            {
+              "en": "This grocery store has the best selection of fresh fish.",
+              "pl": "Ten sklep spożywczy ma najlepszy wybór świeżych ryb.",
+              "focusEn": "grocery store",
+              "focusPl": "sklep spożywczy"
+            },
+            {
+              "en": "The grocery store is packed every Sunday afternoon.",
+              "pl": "Sklep spożywczy jest zatłoczony w każdą niedzielę po południu.",
+              "focusEn": "grocery store",
+              "focusPl": "Sklep spożywczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "grocery store",
+            "grocery"
+          ],
+          "acceptedTranslations": [
+            "sklep spożywczy",
+            "spożywczak",
+            "supermarket"
+          ]
+        },
+        {
+          "id": "grocery-shopping.groceries",
+          "term": "groceries",
+          "ipa": "/ˈɡroʊsəriz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zakupy spożywcze",
+          "definition": "The food and household things you buy at a grocery store.",
+          "register": "neutralny",
+          "contextPl": "Kupowanie i noszenie zakupów",
+          "natural": "",
+          "forms": "",
+          "collocations": "buy groceries; carry the groceries; put away the groceries",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We spent almost two hundred dollars on groceries today.",
+              "pl": "Wydaliśmy dziś prawie dwieście dolarów na zakupy spożywcze.",
+              "focusEn": "groceries",
+              "focusPl": "zakupy spożywcze"
+            },
+            {
+              "en": "Can you help me carry the groceries to the car?",
+              "pl": "Pomożesz mi zanieść zakupy do samochodu?",
+              "focusEn": "groceries",
+              "focusPl": "zakupy"
+            }
+          ],
+          "acceptedAnswers": [
+            "groceries"
+          ],
+          "acceptedTranslations": [
+            "zakupy spożywcze",
+            "zakupy",
+            "artykuły spożywcze"
+          ]
+        },
+        {
+          "id": "grocery-shopping.cart",
+          "term": "cart",
+          "ipa": "/kɑːrt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wózek",
+          "definition": "A large metal basket on wheels that you push around a store.",
+          "register": "neutralny",
+          "contextPl": "Robienie większych zakupów",
+          "natural": "shopping cart",
+          "forms": "carts",
+          "collocations": "push a cart; put it in the cart",
+          "synonyms": "shopping cart",
+          "antonyms": "",
+          "notePl": "W USA „cart”, w Wielkiej Brytanii „trolley”.",
+          "examples": [
+            {
+              "en": "Grab a cart; we need a lot of stuff today.",
+              "pl": "Weź wózek, potrzebujemy dziś mnóstwo rzeczy.",
+              "focusEn": "cart",
+              "focusPl": "wózek"
+            },
+            {
+              "en": "One wheel on this cart keeps getting stuck.",
+              "pl": "Jedno kółko w tym wózku ciągle się blokuje.",
+              "focusEn": "cart",
+              "focusPl": "wózku"
+            }
+          ],
+          "acceptedAnswers": [
+            "cart",
+            "shopping cart",
+            "trolley"
+          ],
+          "acceptedTranslations": [
+            "wózek",
+            "wózek sklepowy"
+          ]
+        },
+        {
+          "id": "grocery-shopping.basket",
+          "term": "basket",
+          "ipa": "/ˈbæskɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "koszyk",
+          "definition": "A container with a handle for carrying a few items in a store.",
+          "register": "neutralny",
+          "contextPl": "Małe zakupy",
+          "natural": "",
+          "forms": "baskets",
+          "collocations": "a shopping basket; carry a basket",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I only need a few things, so a basket is enough.",
+              "pl": "Potrzebuję tylko kilku rzeczy, więc koszyk wystarczy.",
+              "focusEn": "basket",
+              "focusPl": "koszyk"
+            },
+            {
+              "en": "Her basket was full of snacks for the road trip.",
+              "pl": "Jej koszyk był pełen przekąsek na wyjazd samochodem.",
+              "focusEn": "basket",
+              "focusPl": "koszyk"
+            }
+          ],
+          "acceptedAnswers": [
+            "basket",
+            "shopping basket"
+          ],
+          "acceptedTranslations": [
+            "koszyk"
+          ]
+        },
+        {
+          "id": "grocery-shopping.aisle",
+          "term": "aisle",
+          "ipa": "/aɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "alejka",
+          "definition": "A passage between rows of shelves in a store.",
+          "register": "neutralny",
+          "contextPl": "Szukanie działu w sklepie",
+          "natural": "",
+          "forms": "aisles",
+          "collocations": "aisle seven; the cereal aisle; down the aisle",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Litera „s” jest niema: /aɪl/.",
+          "examples": [
+            {
+              "en": "Excuse me, which aisle is the rice in?",
+              "pl": "Przepraszam, w której alejce jest ryż?",
+              "focusEn": "aisle",
+              "focusPl": "alejce"
+            },
+            {
+              "en": "The cereal is in aisle seven, next to the coffee.",
+              "pl": "Płatki są w alejce numer siedem, obok kawy.",
+              "focusEn": "aisle",
+              "focusPl": "alejce"
+            }
+          ],
+          "acceptedAnswers": [
+            "aisle"
+          ],
+          "acceptedTranslations": [
+            "alejka",
+            "dział"
+          ]
+        },
+        {
+          "id": "grocery-shopping.shelf",
+          "term": "shelf",
+          "ipa": "/ʃɛlf/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "półka",
+          "definition": "A flat board where products are displayed in a store.",
+          "register": "neutralny",
+          "contextPl": "Wybieranie produktów z półek",
+          "natural": "",
+          "forms": "shelves",
+          "collocations": "top shelf; bottom shelf; on the shelf",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cheaper olive oil is on the bottom shelf.",
+              "pl": "Tańsza oliwa jest na dolnej półce.",
+              "focusEn": "shelf",
+              "focusPl": "półce"
+            },
+            {
+              "en": "The shelves were almost empty before the big storm.",
+              "pl": "Przed dużą burzą półki były prawie puste.",
+              "focusEn": "shelves",
+              "focusPl": "półki"
+            }
+          ],
+          "acceptedAnswers": [
+            "shelf"
+          ],
+          "acceptedTranslations": [
+            "półka",
+            "regał"
+          ]
+        },
+        {
+          "id": "grocery-shopping.snack",
+          "term": "snack",
+          "ipa": "/snæk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przekąska",
+          "definition": "A small amount of food eaten between meals.",
+          "register": "neutralny",
+          "contextPl": "Dział z chipsami i słodyczami",
+          "natural": "",
+          "forms": "snacks",
+          "collocations": "healthy snacks; the snack aisle",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kids keep throwing snacks into the cart.",
+              "pl": "Dzieci ciągle wrzucają przekąski do wózka.",
+              "focusEn": "snacks",
+              "focusPl": "przekąski"
+            },
+            {
+              "en": "The snack aisle is the most dangerous one for me.",
+              "pl": "Alejka z przekąskami jest dla mnie najniebezpieczniejsza.",
+              "focusEn": "snack",
+              "focusPl": "przekąskami"
+            }
+          ],
+          "acceptedAnswers": [
+            "snack"
+          ],
+          "acceptedTranslations": [
+            "przekąska"
+          ]
+        },
+        {
+          "id": "grocery-shopping.shopping-list",
+          "term": "shopping list",
+          "ipa": "/ˈʃɑːpɪŋ ˌlɪst/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "lista zakupów",
+          "definition": "A list of things you need to buy.",
+          "register": "neutralny",
+          "contextPl": "Planowanie i robienie zakupów",
+          "natural": "grocery list",
+          "forms": "shopping lists",
+          "collocations": "make a shopping list; check off the list",
+          "synonyms": "grocery list",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Did you bring the shopping list, or is it on the fridge?",
+              "pl": "Wziąłeś listę zakupów, czy wisi na lodówce?",
+              "focusEn": "shopping list",
+              "focusPl": "listę zakupów"
+            },
+            {
+              "en": "I checked off each item on my shopping list.",
+              "pl": "Odhaczyłem każdą pozycję na liście zakupów.",
+              "focusEn": "shopping list",
+              "focusPl": "liście zakupów"
+            }
+          ],
+          "acceptedAnswers": [
+            "shopping list",
+            "grocery list"
+          ],
+          "acceptedTranslations": [
+            "lista zakupów"
+          ]
+        },
+        {
+          "id": "grocery-shopping.frozen-food",
+          "term": "frozen food",
+          "ipa": "/ˌfroʊzən ˈfuːd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "mrożonki",
+          "definition": "Food that is kept frozen until you cook it.",
+          "register": "neutralny",
+          "contextPl": "Dział z zamrażarkami",
+          "natural": "",
+          "forms": "",
+          "collocations": "frozen food aisle; frozen food section",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The frozen food aisle is at the back of the store.",
+              "pl": "Alejka z mrożonkami jest na tyłach sklepu.",
+              "focusEn": "frozen food",
+              "focusPl": "mrożonkami"
+            },
+            {
+              "en": "Pick up the frozen food last so it doesn't melt.",
+              "pl": "Mrożonki weź na końcu, żeby się nie rozmroziły.",
+              "focusEn": "frozen food",
+              "focusPl": "Mrożonki"
+            }
+          ],
+          "acceptedAnswers": [
+            "frozen food",
+            "frozen foods"
+          ],
+          "acceptedTranslations": [
+            "mrożonki",
+            "mrożona żywność"
+          ]
+        },
+        {
+          "id": "grocery-shopping.produce",
+          "term": "produce",
+          "ipa": "/ˈproʊduːs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "owoce i warzywa",
+          "definition": "Fresh fruit and vegetables sold in a store.",
+          "register": "neutralny",
+          "contextPl": "Dział ze świeżymi owocami i warzywami",
+          "natural": "",
+          "forms": "",
+          "collocations": "produce section; fresh produce",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik ma akcent na pierwszej sylabie; czasownik „produce” na drugiej.",
+          "examples": [
+            {
+              "en": "The produce section is right by the entrance.",
+              "pl": "Dział z owocami i warzywami jest tuż przy wejściu.",
+              "focusEn": "produce",
+              "focusPl": "owocami i warzywami"
+            },
+            {
+              "en": "The produce here is always fresh and local.",
+              "pl": "Owoce i warzywa są tu zawsze świeże i lokalne.",
+              "focusEn": "produce",
+              "focusPl": "Owoce i warzywa"
+            }
+          ],
+          "acceptedAnswers": [
+            "produce"
+          ],
+          "acceptedTranslations": [
+            "owoce i warzywa",
+            "świeże owoce i warzywa",
+            "warzywniak"
+          ]
+        },
+        {
+          "id": "grocery-shopping.canned-food",
+          "term": "canned food",
+          "ipa": "/ˌkænd ˈfuːd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "konserwy",
+          "definition": "Food sold in metal cans.",
+          "register": "neutralny",
+          "contextPl": "Produkty z długim terminem ważności",
+          "natural": "canned goods",
+          "forms": "",
+          "collocations": "canned food aisle; buy canned food",
+          "synonyms": "canned goods",
+          "antonyms": "",
+          "notePl": "W USA „canned”, w Wielkiej Brytanii „tinned”.",
+          "examples": [
+            {
+              "en": "Canned food is in aisle four, near the pasta.",
+              "pl": "Konserwy są w alejce czwartej, przy makaronie.",
+              "focusEn": "Canned food",
+              "focusPl": "Konserwy"
+            },
+            {
+              "en": "We're buying extra canned food in case of a storm.",
+              "pl": "Kupujemy dodatkowe konserwy na wypadek burzy.",
+              "focusEn": "canned food",
+              "focusPl": "konserwy"
+            }
+          ],
+          "acceptedAnswers": [
+            "canned food",
+            "canned goods"
+          ],
+          "acceptedTranslations": [
+            "konserwy",
+            "żywność w puszkach"
+          ]
+        },
+        {
+          "id": "grocery-shopping.deli",
+          "term": "deli",
+          "ipa": "/ˈdɛli/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stoisko garmażeryjne",
+          "definition": "A counter in a store that sells sliced meats, cheese and ready-made food.",
+          "register": "neutralny",
+          "contextPl": "Kupowanie wędlin na wagę i gotowych dań",
+          "natural": "deli counter",
+          "forms": "delis",
+          "collocations": "deli counter; deli meat",
+          "synonyms": "deli counter",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you get half a pound of turkey from the deli?",
+              "pl": "Możesz wziąć pół funta indyka ze stoiska z wędlinami?",
+              "focusEn": "deli",
+              "focusPl": "stoiska z wędlinami"
+            },
+            {
+              "en": "The deli makes fresh sandwiches until three o'clock.",
+              "pl": "Stoisko garmażeryjne robi świeże kanapki do piętnastej.",
+              "focusEn": "deli",
+              "focusPl": "Stoisko garmażeryjne"
+            }
+          ],
+          "acceptedAnswers": [
+            "deli",
+            "deli counter"
+          ],
+          "acceptedTranslations": [
+            "stoisko garmażeryjne",
+            "stoisko z wędlinami",
+            "garmażerka"
+          ]
+        },
+        {
+          "id": "grocery-shopping.sample",
+          "term": "sample",
+          "ipa": "/ˈsæmpəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "próbka",
+          "definition": "A small amount of food given free so you can try it.",
+          "register": "neutralny",
+          "contextPl": "Degustacje w sklepie",
+          "natural": "free sample",
+          "forms": "samples",
+          "collocations": "free samples; try a sample",
+          "synonyms": "taste",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They're giving out free samples of cheese by the deli.",
+              "pl": "Przy stoisku z wędlinami rozdają darmowe próbki sera.",
+              "focusEn": "samples",
+              "focusPl": "próbki"
+            },
+            {
+              "en": "My son tried every sample in the store.",
+              "pl": "Mój syn spróbował każdej próbki w sklepie.",
+              "focusEn": "sample",
+              "focusPl": "próbki"
+            }
+          ],
+          "acceptedAnswers": [
+            "sample",
+            "free sample"
+          ],
+          "acceptedTranslations": [
+            "próbka",
+            "darmowa próbka"
+          ]
+        },
+        {
+          "id": "grocery-shopping.household-items",
+          "term": "household items",
+          "ipa": "/ˈhaʊshoʊld ˌaɪtəmz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "artykuły gospodarstwa domowego",
+          "definition": "Things used for cleaning and running a home, like soap and paper towels.",
+          "register": "neutralny",
+          "contextPl": "Dział z chemią i artykułami domowymi",
+          "natural": "",
+          "forms": "",
+          "collocations": "household items aisle",
+          "synonyms": "household goods",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Household items like paper towels are in the last aisle.",
+              "pl": "Artykuły gospodarstwa domowego, takie jak ręczniki papierowe, są w ostatniej alejce.",
+              "focusEn": "Household items",
+              "focusPl": "Artykuły gospodarstwa domowego"
+            },
+            {
+              "en": "We buy household items in big packs to save money.",
+              "pl": "Artykuły gospodarstwa domowego kupujemy w dużych opakowaniach, żeby zaoszczędzić.",
+              "focusEn": "household items",
+              "focusPl": "Artykuły gospodarstwa domowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "household items",
+            "household goods"
+          ],
+          "acceptedTranslations": [
+            "artykuły gospodarstwa domowego",
+            "chemia gospodarcza"
+          ]
+        },
+        {
+          "id": "grocery-shopping.supermarket",
+          "term": "supermarket",
+          "ipa": "/ˈsuːpərˌmɑːrkɪt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "supermarket",
+          "definition": "A large store that sells food, drinks and household goods.",
+          "register": "neutralny",
+          "contextPl": "Duży sklep z żywnością",
+          "natural": "",
+          "forms": "supermarkets",
+          "collocations": "a big supermarket; supermarket chain",
+          "synonyms": "grocery store",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The supermarket on Main Street is open until midnight.",
+              "pl": "Supermarket przy Main Street jest otwarty do północy.",
+              "focusEn": "supermarket",
+              "focusPl": "Supermarket"
+            },
+            {
+              "en": "This supermarket is so big that I always get lost.",
+              "pl": "Ten supermarket jest tak duży, że zawsze się gubię.",
+              "focusEn": "supermarket",
+              "focusPl": "supermarket"
+            }
+          ],
+          "acceptedAnswers": [
+            "supermarket"
+          ],
+          "acceptedTranslations": [
+            "supermarket"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grocery-shopping.packaging",
+      "namePl": "Opakowania i ilości",
+      "scenePl": "Wkładanie produktów z półek do wózka",
+      "entries": [
+        {
+          "id": "grocery-shopping.bottle",
+          "term": "bottle",
+          "ipa": "/ˈbɑːtəl/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "butelka",
+          "definition": "A glass or plastic container for liquids.",
+          "register": "neutralny",
+          "contextPl": "Napoje i płyny",
+          "natural": "",
+          "forms": "bottles",
+          "collocations": "a bottle of water; plastic bottle",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Grab two bottles of water for the car.",
+              "pl": "Weź dwie butelki wody do samochodu.",
+              "focusEn": "bottles",
+              "focusPl": "butelki"
+            },
+            {
+              "en": "This bottle of olive oil is almost twice the price.",
+              "pl": "Ta butelka oliwy jest prawie dwa razy droższa.",
+              "focusEn": "bottle",
+              "focusPl": "butelka"
+            }
+          ],
+          "acceptedAnswers": [
+            "bottle"
+          ],
+          "acceptedTranslations": [
+            "butelka"
+          ]
+        },
+        {
+          "id": "grocery-shopping.bag",
+          "term": "bag",
+          "ipa": "/bæɡ/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "worek",
+          "definition": "A soft container of paper or plastic that food is sold in.",
+          "register": "neutralny",
+          "contextPl": "Ryż, chipsy, mąka w opakowaniach",
+          "natural": "",
+          "forms": "bags",
+          "collocations": "a bag of rice; a bag of chips",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Get a big bag of rice; it's cheaper.",
+              "pl": "Weź duży worek ryżu, wychodzi taniej.",
+              "focusEn": "bag",
+              "focusPl": "worek"
+            },
+            {
+              "en": "A bag of chips is on sale for two dollars.",
+              "pl": "Paczka chipsów jest w promocji za dwa dolary.",
+              "focusEn": "bag",
+              "focusPl": "Paczka"
+            }
+          ],
+          "acceptedAnswers": [
+            "bag"
+          ],
+          "acceptedTranslations": [
+            "worek",
+            "torba",
+            "paczka",
+            "torebka"
+          ]
+        },
+        {
+          "id": "grocery-shopping.box",
+          "term": "box",
+          "ipa": "/bɑːks/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pudełko",
+          "definition": "A container with flat sides, usually made of cardboard.",
+          "register": "neutralny",
+          "contextPl": "Płatki, makaron, herbata",
+          "natural": "",
+          "forms": "boxes",
+          "collocations": "a box of cereal; a box of pasta",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you grab a box of cereal for the kids?",
+              "pl": "Możesz wziąć pudełko płatków dla dzieci?",
+              "focusEn": "box",
+              "focusPl": "pudełko"
+            },
+            {
+              "en": "This box is bigger, but it costs the same.",
+              "pl": "To pudełko jest większe, a kosztuje tyle samo.",
+              "focusEn": "box",
+              "focusPl": "pudełko"
+            }
+          ],
+          "acceptedAnswers": [
+            "box"
+          ],
+          "acceptedTranslations": [
+            "pudełko",
+            "opakowanie",
+            "karton"
+          ]
+        },
+        {
+          "id": "grocery-shopping.can",
+          "term": "can",
+          "ipa": "/kæn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "puszka",
+          "definition": "A closed metal container for food or drinks.",
+          "register": "neutralny",
+          "contextPl": "Konserwy i napoje",
+          "natural": "",
+          "forms": "cans",
+          "collocations": "a can of tomatoes; a can of soda",
+          "synonyms": "tin",
+          "antonyms": "",
+          "notePl": "W USA „can”, w Wielkiej Brytanii często „tin”.",
+          "examples": [
+            {
+              "en": "We need three cans of tomatoes for the chili.",
+              "pl": "Potrzebujemy trzech puszek pomidorów do chili.",
+              "focusEn": "cans",
+              "focusPl": "puszek"
+            },
+            {
+              "en": "This can is dented, so I'll take one from the back.",
+              "pl": "Ta puszka jest wgnieciona, więc wezmę jedną z tyłu.",
+              "focusEn": "can",
+              "focusPl": "puszka"
+            }
+          ],
+          "acceptedAnswers": [
+            "can",
+            "tin"
+          ],
+          "acceptedTranslations": [
+            "puszka"
+          ]
+        },
+        {
+          "id": "grocery-shopping.jar",
+          "term": "jar",
+          "ipa": "/dʒɑːr/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "słoik",
+          "definition": "A glass container with a wide top and a lid.",
+          "register": "neutralny",
+          "contextPl": "Dżemy, sosy, przetwory",
+          "natural": "",
+          "forms": "jars",
+          "collocations": "a jar of jam; a jar of peanut butter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll get a jar of peanut butter and some jam.",
+              "pl": "Wezmę słoik masła orzechowego i trochę dżemu.",
+              "focusEn": "jar",
+              "focusPl": "słoik"
+            },
+            {
+              "en": "The glass jars of pasta sauce are on the top shelf.",
+              "pl": "Szklane słoiki z sosem do makaronu są na górnej półce.",
+              "focusEn": "jars",
+              "focusPl": "słoiki"
+            }
+          ],
+          "acceptedAnswers": [
+            "jar"
+          ],
+          "acceptedTranslations": [
+            "słoik"
+          ]
+        },
+        {
+          "id": "grocery-shopping.pack",
+          "term": "pack",
+          "ipa": "/pæk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "opakowanie",
+          "definition": "A set of things sold together in one package.",
+          "register": "neutralny",
+          "contextPl": "Większe opakowania produktów",
+          "natural": "",
+          "forms": "packs",
+          "collocations": "a pack of gum; family pack",
+          "synonyms": "package",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This pack of paper towels has twelve rolls.",
+              "pl": "To opakowanie ręczników papierowych ma dwanaście rolek.",
+              "focusEn": "pack",
+              "focusPl": "opakowanie"
+            },
+            {
+              "en": "Get the family pack of chicken; it's a better deal.",
+              "pl": "Weź rodzinne opakowanie kurczaka, to lepsza oferta.",
+              "focusEn": "pack",
+              "focusPl": "opakowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "pack",
+            "package"
+          ],
+          "acceptedTranslations": [
+            "opakowanie",
+            "paczka",
+            "zgrzewka"
+          ]
+        },
+        {
+          "id": "grocery-shopping.pound",
+          "term": "pound",
+          "ipa": "/paʊnd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "funt",
+          "definition": "A unit of weight equal to about 0.45 kilograms.",
+          "register": "neutralny",
+          "contextPl": "Ceny i ważenie produktów",
+          "natural": "",
+          "forms": "pounds",
+          "collocations": "a pound of beef; per pound",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA ceny na wagę podaje się za funt (lb), czyli ok. 0,45 kg.",
+          "examples": [
+            {
+              "en": "Apples are a dollar fifty a pound this week.",
+              "pl": "W tym tygodniu jabłka kosztują półtora dolara za funt.",
+              "focusEn": "pound",
+              "focusPl": "funt"
+            },
+            {
+              "en": "Can I get two pounds of ground beef?",
+              "pl": "Mogę prosić dwa funty mielonej wołowiny?",
+              "focusEn": "pounds",
+              "focusPl": "funty"
+            }
+          ],
+          "acceptedAnswers": [
+            "pound",
+            "lb"
+          ],
+          "acceptedTranslations": [
+            "funt"
+          ]
+        },
+        {
+          "id": "grocery-shopping.roll",
+          "term": "roll",
+          "ipa": "/roʊl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "rolka",
+          "definition": "Paper wound around a tube, like toilet paper.",
+          "register": "neutralny",
+          "contextPl": "Papier toaletowy, ręczniki papierowe",
+          "natural": "",
+          "forms": "rolls",
+          "collocations": "a roll of paper towels; twelve-roll pack",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need toilet paper; get the twelve-roll pack.",
+              "pl": "Potrzebujemy papieru toaletowego, weź opakowanie z dwunastoma rolkami.",
+              "focusEn": "roll",
+              "focusPl": "rolkami"
+            },
+            {
+              "en": "One roll of paper towels never lasts a week here.",
+              "pl": "Jedna rolka ręczników papierowych nigdy nie wystarcza nam na tydzień.",
+              "focusEn": "roll",
+              "focusPl": "rolka"
+            }
+          ],
+          "acceptedAnswers": [
+            "roll"
+          ],
+          "acceptedTranslations": [
+            "rolka"
+          ]
+        },
+        {
+          "id": "grocery-shopping.carton",
+          "term": "carton",
+          "ipa": "/ˈkɑːrtən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "karton",
+          "definition": "A paper or plastic container for milk, juice or eggs.",
+          "register": "neutralny",
+          "contextPl": "Mleko, soki i jajka",
+          "natural": "",
+          "forms": "cartons",
+          "collocations": "a carton of milk; egg carton",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Pick up a carton of milk and a dozen eggs.",
+              "pl": "Weź karton mleka i tuzin jajek.",
+              "focusEn": "carton",
+              "focusPl": "karton"
+            },
+            {
+              "en": "Check the egg carton to make sure none are broken.",
+              "pl": "Sprawdź opakowanie jajek, czy żadne nie jest stłuczone.",
+              "focusEn": "carton",
+              "focusPl": "opakowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "carton"
+          ],
+          "acceptedTranslations": [
+            "karton",
+            "opakowanie"
+          ]
+        },
+        {
+          "id": "grocery-shopping.container",
+          "term": "container",
+          "ipa": "/kənˈteɪnər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pojemnik",
+          "definition": "A box or tub used to hold food.",
+          "register": "neutralny",
+          "contextPl": "Jogurty, sałatki, gotowe dania",
+          "natural": "",
+          "forms": "containers",
+          "collocations": "a plastic container; a container of yogurt",
+          "synonyms": "tub",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A small container of yogurt costs more per ounce.",
+              "pl": "Mały pojemnik jogurtu wychodzi drożej za uncję.",
+              "focusEn": "container",
+              "focusPl": "pojemnik"
+            },
+            {
+              "en": "The salad comes in a plastic container with a lid.",
+              "pl": "Sałatka jest w plastikowym pojemniku z pokrywką.",
+              "focusEn": "container",
+              "focusPl": "pojemniku"
+            }
+          ],
+          "acceptedAnswers": [
+            "container",
+            "tub"
+          ],
+          "acceptedTranslations": [
+            "pojemnik"
+          ]
+        },
+        {
+          "id": "grocery-shopping.bunch",
+          "term": "bunch",
+          "ipa": "/bʌntʃ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pęczek",
+          "definition": "A group of things growing or tied together.",
+          "register": "neutralny",
+          "contextPl": "Banany, zioła, warzywa liściaste",
+          "natural": "",
+          "forms": "bunches",
+          "collocations": "a bunch of bananas; a bunch of parsley",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Grab a bunch of bananas that aren't too green.",
+              "pl": "Weź kiść bananów, które nie są zbyt zielone.",
+              "focusEn": "bunch",
+              "focusPl": "kiść"
+            },
+            {
+              "en": "A bunch of parsley is only ninety-nine cents.",
+              "pl": "Pęczek pietruszki kosztuje tylko dziewięćdziesiąt dziewięć centów.",
+              "focusEn": "bunch",
+              "focusPl": "Pęczek"
+            }
+          ],
+          "acceptedAnswers": [
+            "bunch"
+          ],
+          "acceptedTranslations": [
+            "pęczek",
+            "kiść"
+          ]
+        },
+        {
+          "id": "grocery-shopping.gallon",
+          "term": "gallon",
+          "ipa": "/ˈɡælən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "galon",
+          "definition": "A unit for liquids equal to about 3.8 liters.",
+          "register": "neutralny",
+          "contextPl": "Mleko i soki w dużych opakowaniach",
+          "natural": "",
+          "forms": "gallons",
+          "collocations": "a gallon of milk; half gallon",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Amerykański galon to ok. 3,8 litra.",
+          "examples": [
+            {
+              "en": "Get a gallon of milk; we're almost out.",
+              "pl": "Weź galon mleka, prawie nam się skończyło.",
+              "focusEn": "gallon",
+              "focusPl": "galon"
+            },
+            {
+              "en": "A gallon of orange juice is cheaper than two half gallons.",
+              "pl": "Galon soku pomarańczowego jest tańszy niż dwa opakowania półgalonowe.",
+              "focusEn": "gallon",
+              "focusPl": "Galon"
+            }
+          ],
+          "acceptedAnswers": [
+            "gallon"
+          ],
+          "acceptedTranslations": [
+            "galon"
+          ]
+        },
+        {
+          "id": "grocery-shopping.bar",
+          "term": "bar",
+          "ipa": "/bɑːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kostka",
+          "definition": "A solid block of something, like soap or chocolate.",
+          "register": "neutralny",
+          "contextPl": "Mydło, czekolada, batony",
+          "natural": "",
+          "forms": "bars",
+          "collocations": "a bar of soap; a chocolate bar",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Toss a bar of soap and some shampoo in the cart.",
+              "pl": "Wrzuć do wózka kostkę mydła i jakiś szampon.",
+              "focusEn": "bar",
+              "focusPl": "kostkę"
+            },
+            {
+              "en": "I always buy a chocolate bar at the checkout.",
+              "pl": "Zawsze kupuję przy kasie baton czekoladowy.",
+              "focusEn": "bar",
+              "focusPl": "baton"
+            }
+          ],
+          "acceptedAnswers": [
+            "bar"
+          ],
+          "acceptedTranslations": [
+            "kostka",
+            "tabliczka",
+            "baton"
+          ]
+        },
+        {
+          "id": "grocery-shopping.six-pack",
+          "term": "six-pack",
+          "ipa": "/ˈsɪks ˌpæk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sześciopak",
+          "definition": "Six cans or bottles of a drink sold together.",
+          "register": "potoczny",
+          "contextPl": "Napoje w zgrzewkach",
+          "natural": "",
+          "forms": "six-packs",
+          "collocations": "a six-pack of soda; a six-pack of water",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Should we grab a six-pack of soda for the party?",
+              "pl": "Bierzemy sześciopak napoju gazowanego na imprezę?",
+              "focusEn": "six-pack",
+              "focusPl": "sześciopak"
+            },
+            {
+              "en": "The six-packs of sparkling water are on sale.",
+              "pl": "Zgrzewki wody gazowanej po sześć butelek są w promocji.",
+              "focusEn": "six-packs",
+              "focusPl": "Zgrzewki"
+            }
+          ],
+          "acceptedAnswers": [
+            "six-pack",
+            "six pack"
+          ],
+          "acceptedTranslations": [
+            "sześciopak",
+            "zgrzewka"
+          ]
+        },
+        {
+          "id": "grocery-shopping.tube",
+          "term": "tube",
+          "ipa": "/tuːb/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "tubka",
+          "definition": "A soft container that you squeeze, like toothpaste.",
+          "register": "neutralny",
+          "contextPl": "Pasta do zębów, koncentrat, kremy",
+          "natural": "",
+          "forms": "tubes",
+          "collocations": "a tube of toothpaste; a tube of tomato paste",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're out of toothpaste, so grab a tube.",
+              "pl": "Skończyła się pasta do zębów, weź tubkę.",
+              "focusEn": "tube",
+              "focusPl": "tubkę"
+            },
+            {
+              "en": "This tube of tomato paste is easier to use than a can.",
+              "pl": "Ta tubka koncentratu pomidorowego jest wygodniejsza niż puszka.",
+              "focusEn": "tube",
+              "focusPl": "tubka"
+            }
+          ],
+          "acceptedAnswers": [
+            "tube"
+          ],
+          "acceptedTranslations": [
+            "tubka"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grocery-shopping.prices-deals",
+      "namePl": "Ceny i promocje",
+      "scenePl": "Porównywanie cen i promocji przy sklepowej półce",
+      "entries": [
+        {
+          "id": "grocery-shopping.price",
+          "term": "price",
+          "ipa": "/praɪs/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "cena",
+          "definition": "The amount of money you have to pay for something.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie ile coś kosztuje",
+          "natural": "",
+          "forms": "prices",
+          "collocations": "the price of; prices go up; a good price",
+          "synonyms": "cost",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The price of eggs has gone up again.",
+              "pl": "Cena jajek znowu poszła w górę.",
+              "focusEn": "price",
+              "focusPl": "Cena"
+            },
+            {
+              "en": "Check the price before you put it in the cart.",
+              "pl": "Sprawdź cenę, zanim włożysz to do wózka.",
+              "focusEn": "price",
+              "focusPl": "cenę"
+            }
+          ],
+          "acceptedAnswers": [
+            "price"
+          ],
+          "acceptedTranslations": [
+            "cena",
+            "koszt"
+          ]
+        },
+        {
+          "id": "grocery-shopping.cheap",
+          "term": "cheap",
+          "ipa": "/tʃiːp/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "tani",
+          "definition": "Not costing much money.",
+          "register": "neutralny",
+          "contextPl": "Porównywanie cen",
+          "natural": "",
+          "forms": "cheaper – cheapest",
+          "collocations": "really cheap; cheaper than",
+          "synonyms": "inexpensive",
+          "antonyms": "expensive",
+          "notePl": "„Cheap” bywa też negatywne: tandetny.",
+          "examples": [
+            {
+              "en": "The store brand is cheap and tastes the same.",
+              "pl": "Marka sklepowa jest tania i smakuje tak samo.",
+              "focusEn": "cheap",
+              "focusPl": "tania"
+            },
+            {
+              "en": "Bananas are cheap here, only fifty cents a pound.",
+              "pl": "Banany są tu tanie, tylko pięćdziesiąt centów za funt.",
+              "focusEn": "cheap",
+              "focusPl": "tanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "cheap",
+            "inexpensive"
+          ],
+          "acceptedTranslations": [
+            "tani"
+          ]
+        },
+        {
+          "id": "grocery-shopping.expensive",
+          "term": "expensive",
+          "ipa": "/ɪkˈspɛnsɪv/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "drogi",
+          "definition": "Costing a lot of money.",
+          "register": "neutralny",
+          "contextPl": "Porównywanie cen",
+          "natural": "",
+          "forms": "more expensive – most expensive",
+          "collocations": "really expensive; too expensive",
+          "synonyms": "pricey",
+          "antonyms": "cheap",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Organic strawberries are really expensive this week.",
+              "pl": "Ekologiczne truskawki są w tym tygodniu naprawdę drogie.",
+              "focusEn": "expensive",
+              "focusPl": "drogie"
+            },
+            {
+              "en": "Wow, cheese is more expensive than I remembered.",
+              "pl": "Rany, ser jest droższy, niż pamiętałem.",
+              "focusEn": "more expensive",
+              "focusPl": "droższy"
+            }
+          ],
+          "acceptedAnswers": [
+            "expensive",
+            "pricey"
+          ],
+          "acceptedTranslations": [
+            "drogi",
+            "kosztowny"
+          ]
+        },
+        {
+          "id": "grocery-shopping.on-sale",
+          "term": "on sale",
+          "ipa": "/ɑːn ˈseɪl/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "w promocji",
+          "definition": "Available at a lower price than usual.",
+          "register": "neutralny",
+          "contextPl": "Szukanie tańszych produktów",
+          "natural": "",
+          "forms": "",
+          "collocations": "be on sale; on sale this week",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA „on sale” = przecenione; „for sale” = na sprzedaż.",
+          "examples": [
+            {
+              "en": "Chicken breasts are on sale this week.",
+              "pl": "Piersi z kurczaka są w tym tygodniu w promocji.",
+              "focusEn": "on sale",
+              "focusPl": "w promocji"
+            },
+            {
+              "en": "Let's buy two bags of coffee while it's on sale.",
+              "pl": "Kupmy dwie paczki kawy, póki jest w promocji.",
+              "focusEn": "on sale",
+              "focusPl": "w promocji"
+            }
+          ],
+          "acceptedAnswers": [
+            "on sale"
+          ],
+          "acceptedTranslations": [
+            "w promocji",
+            "przeceniony",
+            "na promocji"
+          ]
+        },
+        {
+          "id": "grocery-shopping.deal",
+          "term": "deal",
+          "ipa": "/diːl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "okazja",
+          "definition": "Something you can buy for a good price.",
+          "register": "potoczny",
+          "contextPl": "Ocena, czy oferta się opłaca",
+          "natural": "",
+          "forms": "deals",
+          "collocations": "a good deal; a great deal; a better deal",
+          "synonyms": "bargain",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Two boxes for five dollars is a great deal.",
+              "pl": "Dwa pudełka za pięć dolarów to świetna okazja.",
+              "focusEn": "deal",
+              "focusPl": "okazja"
+            },
+            {
+              "en": "The big bag looks like a better deal, but check the unit price.",
+              "pl": "Duża paczka wygląda na lepszą ofertę, ale sprawdź cenę jednostkową.",
+              "focusEn": "deal",
+              "focusPl": "ofertę"
+            }
+          ],
+          "acceptedAnswers": [
+            "deal",
+            "bargain"
+          ],
+          "acceptedTranslations": [
+            "okazja",
+            "dobra oferta",
+            "okazyjna cena"
+          ]
+        },
+        {
+          "id": "grocery-shopping.coupon",
+          "term": "coupon",
+          "ipa": "/ˈkuːpɑːn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kupon rabatowy",
+          "definition": "A piece of paper or digital code that gives you money off a product.",
+          "register": "neutralny",
+          "contextPl": "Oszczędzanie na zakupach",
+          "natural": "",
+          "forms": "coupons",
+          "collocations": "use a coupon; a coupon for a dollar off; digital coupon",
+          "synonyms": "voucher",
+          "antonyms": "",
+          "notePl": "Wymowa /ˈkuːpɑːn/ lub /ˈkjuːpɑːn/.",
+          "examples": [
+            {
+              "en": "I have a coupon for a dollar off this cereal.",
+              "pl": "Mam kupon rabatowy na dolara zniżki na te płatki.",
+              "focusEn": "coupon",
+              "focusPl": "kupon rabatowy"
+            },
+            {
+              "en": "The coupon expired yesterday, so it won't work.",
+              "pl": "Kupon stracił ważność wczoraj, więc nie zadziała.",
+              "focusEn": "coupon",
+              "focusPl": "Kupon"
+            }
+          ],
+          "acceptedAnswers": [
+            "coupon",
+            "voucher"
+          ],
+          "acceptedTranslations": [
+            "kupon rabatowy",
+            "kupon",
+            "bon rabatowy"
+          ]
+        },
+        {
+          "id": "grocery-shopping.discount",
+          "term": "discount",
+          "ipa": "/ˈdɪskaʊnt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zniżka",
+          "definition": "An amount taken off the usual price.",
+          "register": "neutralny",
+          "contextPl": "Rabaty dla klientów",
+          "natural": "",
+          "forms": "discounts",
+          "collocations": "get a discount; a ten percent discount",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Members get a ten percent discount on all produce.",
+              "pl": "Członkowie dostają dziesięć procent zniżki na owoce i warzywa.",
+              "focusEn": "discount",
+              "focusPl": "zniżki"
+            },
+            {
+              "en": "Is the discount taken off at the register?",
+              "pl": "Czy zniżka jest odliczana przy kasie?",
+              "focusEn": "discount",
+              "focusPl": "zniżka"
+            }
+          ],
+          "acceptedAnswers": [
+            "discount"
+          ],
+          "acceptedTranslations": [
+            "zniżka",
+            "rabat",
+            "obniżka"
+          ]
+        },
+        {
+          "id": "grocery-shopping.expiration-date",
+          "term": "expiration date",
+          "ipa": "/ˌɛkspəˈreɪʃən ˌdeɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "data ważności",
+          "definition": "The last date when a product should be sold or eaten.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie świeżości produktów",
+          "natural": "sell-by date",
+          "forms": "expiration dates",
+          "collocations": "check the expiration date",
+          "synonyms": "sell-by date; best-by date",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii „expiry date”.",
+          "examples": [
+            {
+              "en": "Check the expiration date on the milk before you grab it.",
+              "pl": "Sprawdź datę ważności mleka, zanim je weźmiesz.",
+              "focusEn": "expiration date",
+              "focusPl": "datę ważności"
+            },
+            {
+              "en": "The yogurt in the front has an earlier expiration date.",
+              "pl": "Jogurt z przodu ma wcześniejszą datę ważności.",
+              "focusEn": "expiration date",
+              "focusPl": "datę ważności"
+            }
+          ],
+          "acceptedAnswers": [
+            "expiration date",
+            "sell-by date",
+            "best-by date"
+          ],
+          "acceptedTranslations": [
+            "data ważności",
+            "termin ważności",
+            "data przydatności"
+          ]
+        },
+        {
+          "id": "grocery-shopping.price-tag",
+          "term": "price tag",
+          "ipa": "/ˈpraɪs ˌtæɡ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "metka z ceną",
+          "definition": "A small label that shows the price of a product.",
+          "register": "neutralny",
+          "contextPl": "Szukanie i sprawdzanie ceny",
+          "natural": "",
+          "forms": "price tags",
+          "collocations": "no price tag; check the price tag",
+          "synonyms": "label",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's no price tag on this cheese.",
+              "pl": "Na tym serze nie ma metki z ceną.",
+              "focusEn": "price tag",
+              "focusPl": "metki z ceną"
+            },
+            {
+              "en": "The price tag says $3.99, but the sign says $2.99.",
+              "pl": "Na metce jest 3,99 dolara, a na tabliczce 2,99.",
+              "focusEn": "price tag",
+              "focusPl": "metce"
+            }
+          ],
+          "acceptedAnswers": [
+            "price tag"
+          ],
+          "acceptedTranslations": [
+            "metka z ceną",
+            "metka",
+            "etykieta z ceną"
+          ]
+        },
+        {
+          "id": "grocery-shopping.out-of-stock",
+          "term": "out of stock",
+          "ipa": "/ˌaʊt əv ˈstɑːk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "brak na stanie",
+          "definition": "Not available in the store at the moment.",
+          "register": "neutralny",
+          "contextPl": "Gdy produktu zabrakło",
+          "natural": "",
+          "forms": "",
+          "collocations": "be out of stock; temporarily out of stock",
+          "synonyms": "sold out",
+          "antonyms": "in stock",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, that brand of yogurt is out of stock today.",
+              "pl": "Przykro mi, tej marki jogurtu dziś nie ma na stanie.",
+              "focusEn": "out of stock",
+              "focusPl": "nie ma na stanie"
+            },
+            {
+              "en": "Half the things on my list were out of stock.",
+              "pl": "Połowy rzeczy z mojej listy nie było na stanie.",
+              "focusEn": "out of stock",
+              "focusPl": "nie było na stanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "out of stock"
+          ],
+          "acceptedTranslations": [
+            "brak na stanie",
+            "niedostępny",
+            "brak towaru"
+          ]
+        },
+        {
+          "id": "grocery-shopping.buy-one-get-one-free",
+          "term": "buy one get one free",
+          "ipa": "/ˌbaɪ ˈwʌn ˌɡɛt ˈwʌn ˈfriː/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kup jeden, drugi gratis",
+          "definition": "A deal where you get a second item for free.",
+          "register": "neutralny",
+          "contextPl": "Popularna promocja w sklepach",
+          "natural": "BOGO",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Często skracane do „BOGO”.",
+          "examples": [
+            {
+              "en": "The pasta sauce is buy one get one free this week.",
+              "pl": "Sos do makaronu jest w tym tygodniu w promocji kup jeden, drugi gratis.",
+              "focusEn": "buy one get one free",
+              "focusPl": "kup jeden, drugi gratis"
+            },
+            {
+              "en": "I only came for bread, but the cookies were buy one get one free.",
+              "pl": "Przyszedłem tylko po chleb, ale ciastka były w promocji kup jeden, drugi gratis.",
+              "focusEn": "buy one get one free",
+              "focusPl": "kup jeden, drugi gratis"
+            }
+          ],
+          "acceptedAnswers": [
+            "buy one get one free",
+            "BOGO",
+            "buy one, get one free"
+          ],
+          "acceptedTranslations": [
+            "kup jeden, drugi gratis",
+            "drugi gratis"
+          ]
+        },
+        {
+          "id": "grocery-shopping.store-brand",
+          "term": "store brand",
+          "ipa": "/ˈstɔːr ˌbrænd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "marka własna sklepu",
+          "definition": "A product sold under the store's own name, usually cheaper.",
+          "register": "neutralny",
+          "contextPl": "Wybór tańszego odpowiednika",
+          "natural": "generic",
+          "forms": "store brands",
+          "collocations": "buy the store brand",
+          "synonyms": "generic brand",
+          "antonyms": "name brand",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The store brand is a dollar cheaper than the name brand.",
+              "pl": "Marka własna sklepu jest o dolara tańsza niż produkt markowy.",
+              "focusEn": "store brand",
+              "focusPl": "Marka własna sklepu"
+            },
+            {
+              "en": "Honestly, I can't taste the difference with the store brand.",
+              "pl": "Szczerze, nie czuję różnicy w smaku przy marce własnej sklepu.",
+              "focusEn": "store brand",
+              "focusPl": "marce własnej sklepu"
+            }
+          ],
+          "acceptedAnswers": [
+            "store brand",
+            "generic"
+          ],
+          "acceptedTranslations": [
+            "marka własna sklepu",
+            "marka sklepowa",
+            "produkt marki własnej"
+          ]
+        },
+        {
+          "id": "grocery-shopping.in-bulk",
+          "term": "in bulk",
+          "ipa": "/ɪn ˈbʌlk/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "hurtowo",
+          "definition": "In large amounts, usually at a lower price per item.",
+          "register": "neutralny",
+          "contextPl": "Kupowanie dużych ilości na zapas",
+          "natural": "",
+          "forms": "",
+          "collocations": "buy in bulk; bulk discount",
+          "synonyms": "wholesale",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Rice is much cheaper when you buy it in bulk.",
+              "pl": "Ryż jest dużo tańszy, gdy kupuje się go hurtowo.",
+              "focusEn": "in bulk",
+              "focusPl": "hurtowo"
+            },
+            {
+              "en": "We buy toilet paper in bulk because we have four kids.",
+              "pl": "Kupujemy papier toaletowy w dużych ilościach, bo mamy czwórkę dzieci.",
+              "focusEn": "in bulk",
+              "focusPl": "w dużych ilościach"
+            }
+          ],
+          "acceptedAnswers": [
+            "in bulk"
+          ],
+          "acceptedTranslations": [
+            "hurtowo",
+            "w dużych ilościach"
+          ]
+        },
+        {
+          "id": "grocery-shopping.overpriced",
+          "term": "overpriced",
+          "ipa": "/ˌoʊvərˈpraɪst/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zbyt drogi",
+          "definition": "Costing more than it is worth.",
+          "register": "neutralny",
+          "contextPl": "Narzekanie na wysokie ceny",
+          "natural": "pricey",
+          "forms": "",
+          "collocations": "totally overpriced",
+          "synonyms": "pricey",
+          "antonyms": "reasonably priced",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Everything in this little shop is overpriced.",
+              "pl": "Wszystko w tym małym sklepie jest przepłacone.",
+              "focusEn": "overpriced",
+              "focusPl": "przepłacone"
+            },
+            {
+              "en": "These tiny avocados are seriously overpriced.",
+              "pl": "Te malutkie awokado są zdecydowanie zbyt drogie.",
+              "focusEn": "overpriced",
+              "focusPl": "zbyt drogie"
+            }
+          ],
+          "acceptedAnswers": [
+            "overpriced"
+          ],
+          "acceptedTranslations": [
+            "zbyt drogi",
+            "przepłacony",
+            "za drogi"
+          ]
+        },
+        {
+          "id": "grocery-shopping.unit-price",
+          "term": "unit price",
+          "ipa": "/ˈjuːnɪt ˌpraɪs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "cena jednostkowa",
+          "definition": "The price for one unit, like one ounce, used to compare sizes.",
+          "register": "neutralny",
+          "contextPl": "Porównywanie opakowań różnej wielkości",
+          "natural": "",
+          "forms": "unit prices",
+          "collocations": "compare the unit price",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Look at the unit price to see which size is cheaper.",
+              "pl": "Spójrz na cenę jednostkową, żeby zobaczyć, który rozmiar jest tańszy.",
+              "focusEn": "unit price",
+              "focusPl": "cenę jednostkową"
+            },
+            {
+              "en": "The unit price is printed in small letters on the shelf tag.",
+              "pl": "Cena jednostkowa jest wydrukowana drobnym drukiem na etykiecie na półce.",
+              "focusEn": "unit price",
+              "focusPl": "Cena jednostkowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "unit price"
+          ],
+          "acceptedTranslations": [
+            "cena jednostkowa",
+            "cena za kilogram",
+            "cena za sztukę"
+          ]
+        },
+        {
+          "id": "grocery-shopping.weekly-ad",
+          "term": "weekly ad",
+          "ipa": "/ˈwiːkli ˌæd/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "gazetka promocyjna",
+          "definition": "A flyer or web page showing a store's sales for the week.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie promocji przed zakupami",
+          "natural": "circular",
+          "forms": "weekly ads",
+          "collocations": "check the weekly ad",
+          "synonyms": "circular; flyer",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The weekly ad says chicken is half off on Friday.",
+              "pl": "W gazetce promocyjnej piszą, że w piątek kurczak jest o połowę tańszy.",
+              "focusEn": "weekly ad",
+              "focusPl": "gazetce promocyjnej"
+            },
+            {
+              "en": "I plan our meals around what's in the weekly ad.",
+              "pl": "Planuję posiłki pod to, co jest w gazetce promocyjnej.",
+              "focusEn": "weekly ad",
+              "focusPl": "gazetce promocyjnej"
+            }
+          ],
+          "acceptedAnswers": [
+            "weekly ad",
+            "circular",
+            "flyer"
+          ],
+          "acceptedTranslations": [
+            "gazetka promocyjna",
+            "gazetka"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grocery-shopping.checkout",
+      "namePl": "Przy kasie",
+      "scenePl": "Płacenie przy kasie i pakowanie zakupów do toreb",
+      "entries": [
+        {
+          "id": "grocery-shopping.checkout",
+          "term": "checkout",
+          "ipa": "/ˈtʃɛkaʊt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kasa",
+          "definition": "The place in a store where you pay for your things.",
+          "register": "neutralny",
+          "contextPl": "Płacenie za zakupy",
+          "natural": "register",
+          "forms": "checkouts",
+          "collocations": "at the checkout; checkout line",
+          "synonyms": "register",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The line at the checkout was really long.",
+              "pl": "Kolejka do kasy była naprawdę długa.",
+              "focusEn": "checkout",
+              "focusPl": "kasy"
+            },
+            {
+              "en": "I forgot the milk and only remembered at the checkout.",
+              "pl": "Zapomniałem mleka i przypomniałem sobie dopiero przy kasie.",
+              "focusEn": "checkout",
+              "focusPl": "przy kasie"
+            }
+          ],
+          "acceptedAnswers": [
+            "checkout",
+            "checkout counter"
+          ],
+          "acceptedTranslations": [
+            "kasa"
+          ]
+        },
+        {
+          "id": "grocery-shopping.receipt",
+          "term": "receipt",
+          "ipa": "/rɪˈsiːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "paragon",
+          "definition": "A piece of paper that shows what you bought and paid.",
+          "register": "neutralny",
+          "contextPl": "Dowód zakupu",
+          "natural": "",
+          "forms": "receipts",
+          "collocations": "keep the receipt; print a receipt",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Litera „p” jest niema.",
+          "examples": [
+            {
+              "en": "Do you want your receipt in the bag?",
+              "pl": "Paragon włożyć do torby?",
+              "focusEn": "receipt",
+              "focusPl": "Paragon"
+            },
+            {
+              "en": "Keep the receipt in case we need to return something.",
+              "pl": "Zachowaj paragon, na wypadek gdybyśmy musieli coś zwrócić.",
+              "focusEn": "receipt",
+              "focusPl": "paragon"
+            }
+          ],
+          "acceptedAnswers": [
+            "receipt"
+          ],
+          "acceptedTranslations": [
+            "paragon"
+          ]
+        },
+        {
+          "id": "grocery-shopping.cashier",
+          "term": "cashier",
+          "ipa": "/kæˈʃɪr/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kasjer",
+          "definition": "A person who takes your money in a store.",
+          "register": "neutralny",
+          "contextPl": "Obsługa przy kasie",
+          "natural": "",
+          "forms": "cashiers",
+          "collocations": "ask the cashier",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cashier asked if I had a rewards card.",
+              "pl": "Kasjer zapytał, czy mam kartę stałego klienta.",
+              "focusEn": "cashier",
+              "focusPl": "Kasjer"
+            },
+            {
+              "en": "The cashier scanned everything in about a minute.",
+              "pl": "Kasjerka zeskanowała wszystko w około minutę.",
+              "focusEn": "cashier",
+              "focusPl": "Kasjerka"
+            }
+          ],
+          "acceptedAnswers": [
+            "cashier"
+          ],
+          "acceptedTranslations": [
+            "kasjer",
+            "kasjerka"
+          ]
+        },
+        {
+          "id": "grocery-shopping.self-checkout",
+          "term": "self-checkout",
+          "ipa": "/ˌsɛlf ˈtʃɛkaʊt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kasa samoobsługowa",
+          "definition": "A machine where you scan and pay for items yourself.",
+          "register": "neutralny",
+          "contextPl": "Szybkie płacenie bez kasjera",
+          "natural": "",
+          "forms": "self-checkouts",
+          "collocations": "use the self-checkout",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I always use the self-checkout when I have a few items.",
+              "pl": "Zawsze korzystam z kasy samoobsługowej, gdy mam kilka rzeczy.",
+              "focusEn": "self-checkout",
+              "focusPl": "kasy samoobsługowej"
+            },
+            {
+              "en": "The self-checkout keeps saying there's an unexpected item.",
+              "pl": "Kasa samoobsługowa ciągle twierdzi, że w strefie pakowania jest nieznany produkt.",
+              "focusEn": "self-checkout",
+              "focusPl": "Kasa samoobsługowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "self-checkout",
+            "self checkout"
+          ],
+          "acceptedTranslations": [
+            "kasa samoobsługowa"
+          ]
+        },
+        {
+          "id": "grocery-shopping.scan",
+          "term": "scan",
+          "ipa": "/skæn/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zeskanować",
+          "definition": "To pass a product's barcode over a reader.",
+          "register": "neutralny",
+          "contextPl": "Kasowanie produktów",
+          "natural": "",
+          "forms": "scanned",
+          "collocations": "scan the barcode; scan a coupon",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Scan the barcode, then put the item in the bag.",
+              "pl": "Zeskanuj kod kreskowy, a potem włóż produkt do torby.",
+              "focusEn": "Scan",
+              "focusPl": "Zeskanuj"
+            },
+            {
+              "en": "The cashier scanned the coupon, but it didn't work.",
+              "pl": "Kasjerka zeskanowała kupon, ale nie zadziałał.",
+              "focusEn": "scanned",
+              "focusPl": "zeskanowała"
+            }
+          ],
+          "acceptedAnswers": [
+            "scan"
+          ],
+          "acceptedTranslations": [
+            "zeskanować",
+            "skanować"
+          ]
+        },
+        {
+          "id": "grocery-shopping.total",
+          "term": "total",
+          "ipa": "/ˈtoʊtəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "suma",
+          "definition": "The whole amount you have to pay.",
+          "register": "neutralny",
+          "contextPl": "Kwota do zapłaty przy kasie",
+          "natural": "",
+          "forms": "totals",
+          "collocations": "your total; the total comes to",
+          "synonyms": "amount",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your total comes to forty-two fifty.",
+              "pl": "Razem do zapłaty czterdzieści dwa pięćdziesiąt.",
+              "focusEn": "total",
+              "focusPl": "Razem do zapłaty"
+            },
+            {
+              "en": "The total was higher than I expected, so I put back the ice cream.",
+              "pl": "Suma była wyższa, niż się spodziewałem, więc odłożyłem lody.",
+              "focusEn": "total",
+              "focusPl": "Suma"
+            }
+          ],
+          "acceptedAnswers": [
+            "total"
+          ],
+          "acceptedTranslations": [
+            "suma",
+            "do zapłaty",
+            "razem"
+          ]
+        },
+        {
+          "id": "grocery-shopping.reusable-bag",
+          "term": "reusable bag",
+          "ipa": "/riˌjuːzəbəl ˈbæɡ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "torba wielokrotnego użytku",
+          "definition": "A strong bag that you bring to the store again and again.",
+          "register": "neutralny",
+          "contextPl": "Pakowanie zakupów bez jednorazówek",
+          "natural": "",
+          "forms": "reusable bags",
+          "collocations": "bring reusable bags",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I always keep a few reusable bags in my car.",
+              "pl": "Zawsze trzymam w samochodzie kilka toreb wielokrotnego użytku.",
+              "focusEn": "reusable bags",
+              "focusPl": "toreb wielokrotnego użytku"
+            },
+            {
+              "en": "Did you bring the reusable bags, or do we need to buy some?",
+              "pl": "Wziąłeś torby wielokrotnego użytku, czy musimy jakieś kupić?",
+              "focusEn": "reusable bags",
+              "focusPl": "torby wielokrotnego użytku"
+            }
+          ],
+          "acceptedAnswers": [
+            "reusable bag",
+            "tote bag"
+          ],
+          "acceptedTranslations": [
+            "torba wielokrotnego użytku",
+            "torba na zakupy"
+          ]
+        },
+        {
+          "id": "grocery-shopping.bag-2",
+          "term": "bag",
+          "ipa": "/bæɡ/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "spakować",
+          "definition": "To put purchased items into bags.",
+          "register": "neutralny",
+          "contextPl": "Pakowanie zakupów przy kasie",
+          "natural": "",
+          "forms": "bagged",
+          "collocations": "bag the groceries",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Would you like me to bag your groceries?",
+              "pl": "Mam spakować pani zakupy?",
+              "focusEn": "bag",
+              "focusPl": "spakować"
+            },
+            {
+              "en": "I bagged the frozen food separately from the bread.",
+              "pl": "Mrożonki zapakowałem osobno od chleba.",
+              "focusEn": "bagged",
+              "focusPl": "zapakowałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "bag"
+          ],
+          "acceptedTranslations": [
+            "spakować",
+            "pakować",
+            "zapakować"
+          ]
+        },
+        {
+          "id": "grocery-shopping.card-reader",
+          "term": "card reader",
+          "ipa": "/ˈkɑːrd ˌriːdər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "terminal płatniczy",
+          "definition": "The machine you use to pay with a card.",
+          "register": "neutralny",
+          "contextPl": "Płatność kartą",
+          "natural": "",
+          "forms": "card readers",
+          "collocations": "tap your card on the card reader",
+          "synonyms": "payment terminal",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Just tap your card on the card reader.",
+              "pl": "Wystarczy przyłożyć kartę do terminala.",
+              "focusEn": "card reader",
+              "focusPl": "terminala"
+            },
+            {
+              "en": "The card reader isn't working, so we can only take cash.",
+              "pl": "Terminal nie działa, więc przyjmujemy tylko gotówkę.",
+              "focusEn": "card reader",
+              "focusPl": "Terminal"
+            }
+          ],
+          "acceptedAnswers": [
+            "card reader",
+            "payment terminal"
+          ],
+          "acceptedTranslations": [
+            "terminal płatniczy",
+            "terminal"
+          ]
+        },
+        {
+          "id": "grocery-shopping.debit-or-credit",
+          "term": "debit or credit",
+          "ipa": "/ˌdɛbɪt ɔːr ˈkrɛdɪt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "debetowa czy kredytowa?",
+          "definition": "A question about which type of card you are paying with.",
+          "register": "neutralny",
+          "contextPl": "Płatność kartą w USA",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA kasjer lub terminal często o to pyta; przy „debit” wpisuje się PIN.",
+          "examples": [
+            {
+              "en": "\"Debit or credit?\" the cashier asked as I swiped my card.",
+              "pl": "„Debetowa czy kredytowa?” – zapytała kasjerka, gdy przeciągnąłem kartę.",
+              "focusEn": "Debit or credit",
+              "focusPl": "Debetowa czy kredytowa"
+            },
+            {
+              "en": "When it asks debit or credit, choose debit and enter your PIN.",
+              "pl": "Kiedy terminal zapyta: debetowa czy kredytowa, wybierz debetową i wpisz PIN.",
+              "focusEn": "debit or credit",
+              "focusPl": "debetowa czy kredytowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "debit or credit"
+          ],
+          "acceptedTranslations": [
+            "debetowa czy kredytowa?",
+            "debetową czy kredytową?"
+          ]
+        },
+        {
+          "id": "grocery-shopping.paper-or-plastic",
+          "term": "paper or plastic",
+          "ipa": "/ˌpeɪpər ɔːr ˈplæstɪk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "papierowa czy plastikowa?",
+          "definition": "A question asking which kind of bag you want for your groceries.",
+          "register": "neutralny",
+          "contextPl": "Pakowanie przy kasie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"Paper or plastic?\" asked the bagger at the end of the counter.",
+              "pl": "„Papierowa czy plastikowa?” – zapytał pakowacz na końcu kasy.",
+              "focusEn": "Paper or plastic",
+              "focusPl": "Papierowa czy plastikowa"
+            },
+            {
+              "en": "They rarely ask paper or plastic anymore; most bags are paper now.",
+              "pl": "Rzadko już pytają, czy papierowa czy plastikowa, teraz większość toreb jest papierowa.",
+              "focusEn": "paper or plastic",
+              "focusPl": "papierowa czy plastikowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "paper or plastic"
+          ],
+          "acceptedTranslations": [
+            "papierowa czy plastikowa?",
+            "torba papierowa czy plastikowa?"
+          ]
+        },
+        {
+          "id": "grocery-shopping.cash-back",
+          "term": "cash back",
+          "ipa": "/ˈkæʃ ˌbæk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wypłata gotówki przy kasie",
+          "definition": "Cash you take out from your bank account when you pay by card in a store.",
+          "register": "neutralny",
+          "contextPl": "Wypłata pieniędzy przy płaceniu kartą",
+          "natural": "",
+          "forms": "",
+          "collocations": "get cash back; any cash back",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Would you like any cash back today?",
+              "pl": "Czy chce pan dziś wypłacić gotówkę przy kasie?",
+              "focusEn": "cash back",
+              "focusPl": "wypłacić gotówkę"
+            },
+            {
+              "en": "I got twenty dollars cash back with my groceries.",
+              "pl": "Przy płaceniu za zakupy wypłaciłem dwadzieścia dolarów gotówki.",
+              "focusEn": "cash back",
+              "focusPl": "wypłaciłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "cash back",
+            "cashback"
+          ],
+          "acceptedTranslations": [
+            "wypłata gotówki przy kasie",
+            "cashback"
+          ]
+        },
+        {
+          "id": "grocery-shopping.express-lane",
+          "term": "express lane",
+          "ipa": "/ɪkˈsprɛs ˌleɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "kasa ekspresowa",
+          "definition": "A checkout line for customers with only a few items.",
+          "register": "neutralny",
+          "contextPl": "Szybka kasa dla małych zakupów",
+          "natural": "",
+          "forms": "express lanes",
+          "collocations": "use the express lane",
+          "synonyms": "express checkout",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The express lane is for fifteen items or less.",
+              "pl": "Kasa ekspresowa jest dla osób z maksymalnie piętnastoma produktami.",
+              "focusEn": "express lane",
+              "focusPl": "Kasa ekspresowa"
+            },
+            {
+              "en": "That guy in the express lane has way more than ten items.",
+              "pl": "Ten facet przy kasie ekspresowej ma o wiele więcej niż dziesięć produktów.",
+              "focusEn": "express lane",
+              "focusPl": "kasie ekspresowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "express lane",
+            "express checkout"
+          ],
+          "acceptedTranslations": [
+            "kasa ekspresowa",
+            "szybka kasa"
+          ]
+        },
+        {
+          "id": "grocery-shopping.conveyor-belt",
+          "term": "conveyor belt",
+          "ipa": "/kənˈveɪər ˌbɛlt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "taśma",
+          "definition": "A moving belt at the checkout that carries items to the cashier.",
+          "register": "neutralny",
+          "contextPl": "Wykładanie zakupów przy kasie",
+          "natural": "",
+          "forms": "conveyor belts",
+          "collocations": "put items on the conveyor belt",
+          "synonyms": "belt",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Put your items on the conveyor belt, please.",
+              "pl": "Proszę położyć produkty na taśmie.",
+              "focusEn": "conveyor belt",
+              "focusPl": "taśmie"
+            },
+            {
+              "en": "I put a divider on the conveyor belt after my groceries.",
+              "pl": "Położyłem separator na taśmie za swoimi zakupami.",
+              "focusEn": "conveyor belt",
+              "focusPl": "taśmie"
+            }
+          ],
+          "acceptedAnswers": [
+            "conveyor belt",
+            "belt"
+          ],
+          "acceptedTranslations": [
+            "taśma",
+            "taśma przy kasie"
+          ]
+        },
+        {
+          "id": "grocery-shopping.bagger",
+          "term": "bagger",
+          "ipa": "/ˈbæɡər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "rare",
+          "translation": "pakowacz",
+          "definition": "A store worker who puts customers' groceries into bags.",
+          "register": "neutralny",
+          "contextPl": "Pomoc przy pakowaniu w amerykańskich sklepach",
+          "natural": "",
+          "forms": "baggers",
+          "collocations": "",
+          "synonyms": "bag boy",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bagger put the eggs on top, which was nice.",
+              "pl": "Pakowacz położył jajka na wierzchu, co było miłe.",
+              "focusEn": "bagger",
+              "focusPl": "Pakowacz"
+            },
+            {
+              "en": "Many big stores in the US still have baggers at the checkout.",
+              "pl": "W wielu dużych sklepach w USA przy kasach wciąż pracują pakowacze.",
+              "focusEn": "baggers",
+              "focusPl": "pakowacze"
+            }
+          ],
+          "acceptedAnswers": [
+            "bagger"
+          ],
+          "acceptedTranslations": [
+            "pakowacz",
+            "osoba pakująca zakupy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grocery-shopping.planning",
+      "namePl": "Planowanie zakupów",
+      "scenePl": "Planowanie cotygodniowych zakupów przy kuchennym stole",
+      "entries": [
+        {
+          "id": "grocery-shopping.go-grocery-shopping",
+          "term": "go grocery shopping",
+          "ipa": "/ˌɡoʊ ˈɡroʊsəri ˌʃɑːpɪŋ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "iść na zakupy spożywcze",
+          "definition": "To go to a store to buy food for your home.",
+          "register": "neutralny",
+          "contextPl": "Planowanie wyjścia do sklepu",
+          "natural": "go to the store",
+          "forms": "went – gone",
+          "collocations": "go grocery shopping on weekends",
+          "synonyms": "do the shopping",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We usually go grocery shopping on Saturday mornings.",
+              "pl": "Zwykle chodzimy na zakupy spożywcze w sobotę rano.",
+              "focusEn": "go grocery shopping",
+              "focusPl": "chodzimy na zakupy spożywcze"
+            },
+            {
+              "en": "Can you go grocery shopping after work today?",
+              "pl": "Możesz dziś po pracy pójść na zakupy spożywcze?",
+              "focusEn": "go grocery shopping",
+              "focusPl": "na zakupy spożywcze"
+            }
+          ],
+          "acceptedAnswers": [
+            "go grocery shopping",
+            "go to the store",
+            "do the grocery shopping"
+          ],
+          "acceptedTranslations": [
+            "iść na zakupy spożywcze",
+            "robić zakupy",
+            "pójść na zakupy"
+          ]
+        },
+        {
+          "id": "grocery-shopping.pick-up",
+          "term": "pick up",
+          "ipa": "/ˌpɪk ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kupić po drodze",
+          "definition": "To buy something, usually quickly or on your way somewhere.",
+          "register": "potoczny",
+          "contextPl": "Drobne zakupy przy okazji",
+          "natural": "grab",
+          "forms": "picked up",
+          "collocations": "pick up some milk; pick up a few things",
+          "synonyms": "grab",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you pick up some bread on your way home?",
+              "pl": "Możesz kupić chleb po drodze do domu?",
+              "focusEn": "pick up",
+              "focusPl": "kupić"
+            },
+            {
+              "en": "I picked up a few things for dinner after work.",
+              "pl": "Po pracy kupiłem kilka rzeczy na kolację.",
+              "focusEn": "picked up",
+              "focusPl": "kupiłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "pick up",
+            "grab"
+          ],
+          "acceptedTranslations": [
+            "kupić po drodze",
+            "kupić",
+            "wziąć",
+            "skoczyć po"
+          ]
+        },
+        {
+          "id": "grocery-shopping.run-out-of",
+          "term": "run out of",
+          "ipa": "/ˌrʌn ˈaʊt əv/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "skończyć się",
+          "definition": "To use all of something so that none is left.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie, czego brakuje w domu",
+          "natural": "",
+          "forms": "ran – run",
+          "collocations": "run out of milk; run out of time",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku zmienia się podmiot: „We ran out of milk” = „Skończyło nam się mleko”.",
+          "examples": [
+            {
+              "en": "We've run out of eggs and milk again.",
+              "pl": "Znowu skończyły nam się jajka i mleko.",
+              "focusEn": "run out of",
+              "focusPl": "skończyły nam się"
+            },
+            {
+              "en": "Add coffee to the list before we run out of it.",
+              "pl": "Dopisz kawę do listy, zanim nam się skończy.",
+              "focusEn": "run out of",
+              "focusPl": "nam się skończy"
+            }
+          ],
+          "acceptedAnswers": [
+            "run out of"
+          ],
+          "acceptedTranslations": [
+            "skończyć się",
+            "kończyć się",
+            "zabraknąć"
+          ]
+        },
+        {
+          "id": "grocery-shopping.be-low-on",
+          "term": "be low on",
+          "ipa": "/ˌbiː ˈloʊ ɑːn/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mieć mało",
+          "definition": "To have only a small amount of something left.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie zapasów przed zakupami",
+          "natural": "be running low on",
+          "forms": "",
+          "collocations": "low on milk; getting low on",
+          "synonyms": "be short of",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're low on coffee, so put it on the list.",
+              "pl": "Mamy mało kawy, więc dopisz ją do listy.",
+              "focusEn": "low on",
+              "focusPl": "Mamy mało"
+            },
+            {
+              "en": "We're getting low on dish soap and paper towels.",
+              "pl": "Kończy nam się płyn do naczyń i ręczniki papierowe.",
+              "focusEn": "low on",
+              "focusPl": "Kończy nam się"
+            }
+          ],
+          "acceptedAnswers": [
+            "be low on",
+            "be running low on",
+            "low on"
+          ],
+          "acceptedTranslations": [
+            "mieć mało",
+            "kończy się",
+            "brakuje"
+          ]
+        },
+        {
+          "id": "grocery-shopping.budget",
+          "term": "budget",
+          "ipa": "/ˈbʌdʒɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "budżet",
+          "definition": "The amount of money you plan to spend.",
+          "register": "neutralny",
+          "contextPl": "Planowanie wydatków na jedzenie",
+          "natural": "",
+          "forms": "budgets",
+          "collocations": "grocery budget; stay under budget; on a budget",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our grocery budget is about a hundred and fifty dollars a week.",
+              "pl": "Nasz budżet na jedzenie to około stu pięćdziesięciu dolarów tygodniowo.",
+              "focusEn": "budget",
+              "focusPl": "budżet"
+            },
+            {
+              "en": "If we stick to the list, we'll stay under budget.",
+              "pl": "Jeśli będziemy się trzymać listy, zmieścimy się w budżecie.",
+              "focusEn": "budget",
+              "focusPl": "budżecie"
+            }
+          ],
+          "acceptedAnswers": [
+            "budget"
+          ],
+          "acceptedTranslations": [
+            "budżet"
+          ]
+        },
+        {
+          "id": "grocery-shopping.pantry",
+          "term": "pantry",
+          "ipa": "/ˈpæntri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "spiżarnia",
+          "definition": "A small room or cupboard where food is kept.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie zapasów w domu",
+          "natural": "",
+          "forms": "pantries",
+          "collocations": "stock the pantry; pantry staples",
+          "synonyms": "cupboard",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Check the pantry to see if we have any flour.",
+              "pl": "Sprawdź w spiżarni, czy mamy mąkę.",
+              "focusEn": "pantry",
+              "focusPl": "spiżarni"
+            },
+            {
+              "en": "Our pantry is full of cans we never use.",
+              "pl": "Nasza spiżarnia jest pełna puszek, których nigdy nie używamy.",
+              "focusEn": "pantry",
+              "focusPl": "spiżarnia"
+            }
+          ],
+          "acceptedAnswers": [
+            "pantry",
+            "cupboard"
+          ],
+          "acceptedTranslations": [
+            "spiżarnia",
+            "szafka na zapasy"
+          ]
+        },
+        {
+          "id": "grocery-shopping.stock-up",
+          "term": "stock up",
+          "ipa": "/ˌstɑːk ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zrobić zapas",
+          "definition": "To buy a lot of something so you have enough for later.",
+          "register": "neutralny",
+          "contextPl": "Kupowanie na zapas",
+          "natural": "",
+          "forms": "stocked up",
+          "collocations": "stock up on something",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We should stock up on rice and pasta this weekend.",
+              "pl": "Powinniśmy w ten weekend zrobić zapas ryżu i makaronu.",
+              "focusEn": "stock up",
+              "focusPl": "zrobić zapas"
+            },
+            {
+              "en": "I stocked up on canned beans for the winter.",
+              "pl": "Zrobiłem zapas fasoli w puszkach na zimę.",
+              "focusEn": "stocked up",
+              "focusPl": "Zrobiłem zapas"
+            }
+          ],
+          "acceptedAnswers": [
+            "stock up"
+          ],
+          "acceptedTranslations": [
+            "zrobić zapas",
+            "robić zapasy",
+            "zaopatrzyć się"
+          ]
+        },
+        {
+          "id": "grocery-shopping.grocery-delivery",
+          "term": "grocery delivery",
+          "ipa": "/ˈɡroʊsəri dɪˌlɪvəri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dostawa zakupów",
+          "definition": "A service that brings food you order online to your home.",
+          "register": "neutralny",
+          "contextPl": "Zakupy przez internet z dowozem",
+          "natural": "",
+          "forms": "",
+          "collocations": "order grocery delivery; same-day delivery",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We switched to grocery delivery when the baby was born.",
+              "pl": "Przeszliśmy na dostawę zakupów, kiedy urodziło się dziecko.",
+              "focusEn": "grocery delivery",
+              "focusPl": "dostawę zakupów"
+            },
+            {
+              "en": "Grocery delivery costs extra, but it saves us two hours.",
+              "pl": "Dostawa zakupów kosztuje więcej, ale oszczędza nam dwie godziny.",
+              "focusEn": "Grocery delivery",
+              "focusPl": "Dostawa zakupów"
+            }
+          ],
+          "acceptedAnswers": [
+            "grocery delivery"
+          ],
+          "acceptedTranslations": [
+            "dostawa zakupów",
+            "dowóz zakupów"
+          ]
+        },
+        {
+          "id": "grocery-shopping.essentials",
+          "term": "essentials",
+          "ipa": "/ɪˈsɛnʃəlz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "najpotrzebniejsze rzeczy",
+          "definition": "The most basic things you need.",
+          "register": "neutralny",
+          "contextPl": "Lista podstawowych zakupów",
+          "natural": "basics",
+          "forms": "",
+          "collocations": "the essentials; household essentials",
+          "synonyms": "basics",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm just going to grab the essentials: milk, bread, and eggs.",
+              "pl": "Wezmę tylko najpotrzebniejsze rzeczy: mleko, chleb i jajka.",
+              "focusEn": "essentials",
+              "focusPl": "najpotrzebniejsze rzeczy"
+            },
+            {
+              "en": "Write down the essentials first, then the extras.",
+              "pl": "Najpierw zapisz najpotrzebniejsze rzeczy, a potem dodatki.",
+              "focusEn": "essentials",
+              "focusPl": "najpotrzebniejsze rzeczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "essentials",
+            "basics"
+          ],
+          "acceptedTranslations": [
+            "najpotrzebniejsze rzeczy",
+            "podstawowe produkty"
+          ]
+        },
+        {
+          "id": "grocery-shopping.run-errands",
+          "term": "run errands",
+          "ipa": "/ˌrʌn ˈɛrəndz/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "załatwiać sprawy",
+          "definition": "To make short trips to do jobs like shopping or going to the bank.",
+          "register": "neutralny",
+          "contextPl": "Planowanie dnia z zakupami",
+          "natural": "",
+          "forms": "ran – run",
+          "collocations": "run some errands",
+          "synonyms": "do errands",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After lunch, I'll run errands and stop at the store.",
+              "pl": "Po obiedzie załatwię sprawy na mieście i wpadnę do sklepu.",
+              "focusEn": "run errands",
+              "focusPl": "załatwię sprawy"
+            },
+            {
+              "en": "Saturday is the only day I have time to run errands.",
+              "pl": "Sobota to jedyny dzień, kiedy mam czas załatwiać sprawy.",
+              "focusEn": "run errands",
+              "focusPl": "załatwiać sprawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "run errands",
+            "do errands"
+          ],
+          "acceptedTranslations": [
+            "załatwiać sprawy",
+            "załatwić sprawy na mieście"
+          ]
+        },
+        {
+          "id": "grocery-shopping.impulse-buy",
+          "term": "impulse buy",
+          "ipa": "/ˈɪmpʌls ˌbaɪ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zakup pod wpływem impulsu",
+          "definition": "Something you buy suddenly without planning to.",
+          "register": "neutralny",
+          "contextPl": "Niepotrzebne zakupy spoza listy",
+          "natural": "",
+          "forms": "impulse buys",
+          "collocations": "an impulse buy; avoid impulse buys",
+          "synonyms": "impulse purchase",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "That giant bag of candy was definitely an impulse buy.",
+              "pl": "Ta wielka torba cukierków to zdecydowanie zakup pod wpływem impulsu.",
+              "focusEn": "impulse buy",
+              "focusPl": "zakup pod wpływem impulsu"
+            },
+            {
+              "en": "Making a list helps me avoid impulse buys.",
+              "pl": "Lista pomaga mi unikać zakupów pod wpływem impulsu.",
+              "focusEn": "impulse buys",
+              "focusPl": "zakupów pod wpływem impulsu"
+            }
+          ],
+          "acceptedAnswers": [
+            "impulse buy",
+            "impulse purchase"
+          ],
+          "acceptedTranslations": [
+            "zakup pod wpływem impulsu",
+            "zakup impulsowy"
+          ]
+        },
+        {
+          "id": "grocery-shopping.staple",
+          "term": "staple",
+          "ipa": "/ˈsteɪpəl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "podstawowy produkt",
+          "definition": "A basic food that you use often and always keep at home.",
+          "register": "neutralny",
+          "contextPl": "Produkty, które zawsze są w domu",
+          "natural": "",
+          "forms": "staples",
+          "collocations": "pantry staples; a kitchen staple",
+          "synonyms": "basic",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Rice and beans are staples in our kitchen.",
+              "pl": "Ryż i fasola to podstawowe produkty w naszej kuchni.",
+              "focusEn": "staples",
+              "focusPl": "podstawowe produkty"
+            },
+            {
+              "en": "Eggs are a staple I buy every single week.",
+              "pl": "Jajka to podstawowy produkt, który kupuję co tydzień.",
+              "focusEn": "staple",
+              "focusPl": "podstawowy produkt"
+            }
+          ],
+          "acceptedAnswers": [
+            "staple"
+          ],
+          "acceptedTranslations": [
+            "podstawowy produkt",
+            "artykuł pierwszej potrzeby"
+          ]
+        },
+        {
+          "id": "grocery-shopping.curbside-pickup",
+          "term": "curbside pickup",
+          "ipa": "/ˌkɜːrbsaɪd ˈpɪkʌp/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "odbiór pod sklepem",
+          "definition": "A service where you order online and staff bring the bags to your car.",
+          "register": "neutralny",
+          "contextPl": "Zakupy online z odbiorem bez wysiadania z auta",
+          "natural": "",
+          "forms": "",
+          "collocations": "choose curbside pickup; curbside pickup window",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I ordered online and chose curbside pickup for five o'clock.",
+              "pl": "Zamówiłem online i wybrałem odbiór pod sklepem na siedemnastą.",
+              "focusEn": "curbside pickup",
+              "focusPl": "odbiór pod sklepem"
+            },
+            {
+              "en": "With curbside pickup, they load the bags right into your trunk.",
+              "pl": "Przy odbiorze pod sklepem pakują torby prosto do bagażnika.",
+              "focusEn": "curbside pickup",
+              "focusPl": "odbiorze pod sklepem"
+            }
+          ],
+          "acceptedAnswers": [
+            "curbside pickup",
+            "curbside"
+          ],
+          "acceptedTranslations": [
+            "odbiór pod sklepem",
+            "odbiór przy sklepie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grocery-shopping.help-problems",
+      "namePl": "Pomoc i problemy w sklepie",
+      "scenePl": "Szukanie pomocy pracownika i załatwianie zwrotu w supermarkecie",
+      "entries": [
+        {
+          "id": "grocery-shopping.where-can-i-find",
+          "term": "where can I find",
+          "ipa": "/ˌwɛr kən aɪ ˈfaɪnd/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "gdzie znajdę?",
+          "definition": "A polite question for asking where a product is.",
+          "register": "neutralny",
+          "contextPl": "Pytanie pracownika o produkt",
+          "natural": "where's the",
+          "forms": "",
+          "collocations": "where can I find the...",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Excuse me, where can I find the baking soda?",
+              "pl": "Przepraszam, gdzie znajdę sodę oczyszczoną?",
+              "focusEn": "where can I find",
+              "focusPl": "gdzie znajdę"
+            },
+            {
+              "en": "Where can I find gluten-free bread in this store?",
+              "pl": "Gdzie znajdę w tym sklepie chleb bezglutenowy?",
+              "focusEn": "Where can I find",
+              "focusPl": "Gdzie znajdę"
+            }
+          ],
+          "acceptedAnswers": [
+            "where can I find",
+            "where is the"
+          ],
+          "acceptedTranslations": [
+            "gdzie znajdę?",
+            "gdzie jest?"
+          ]
+        },
+        {
+          "id": "grocery-shopping.return",
+          "term": "return",
+          "ipa": "/rɪˈtɜːrn/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zwrócić",
+          "definition": "To take something back to the store because there is a problem.",
+          "register": "neutralny",
+          "contextPl": "Oddawanie wadliwego produktu",
+          "natural": "",
+          "forms": "returned",
+          "collocations": "return an item; return something to the store",
+          "synonyms": "take back",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I return this milk? It was already sour.",
+              "pl": "Mogę zwrócić to mleko? Było już kwaśne.",
+              "focusEn": "return",
+              "focusPl": "zwrócić"
+            },
+            {
+              "en": "I returned the moldy bread and got a new loaf.",
+              "pl": "Zwróciłem spleśniały chleb i dostałem nowy bochenek.",
+              "focusEn": "returned",
+              "focusPl": "Zwróciłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "return",
+            "take back"
+          ],
+          "acceptedTranslations": [
+            "zwrócić",
+            "zwracać",
+            "oddać"
+          ]
+        },
+        {
+          "id": "grocery-shopping.employee",
+          "term": "employee",
+          "ipa": "/ɪmˈplɔɪiː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pracownik",
+          "definition": "A person who works for a store or company.",
+          "register": "neutralny",
+          "contextPl": "Szukanie pomocy w sklepie",
+          "natural": "worker",
+          "forms": "employees",
+          "collocations": "ask an employee; store employee",
+          "synonyms": "worker; clerk",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Ask an employee; they'll know where the spices are.",
+              "pl": "Zapytaj pracownika, będzie wiedział, gdzie są przyprawy.",
+              "focusEn": "employee",
+              "focusPl": "pracownika"
+            },
+            {
+              "en": "An employee was restocking the shelves in aisle five.",
+              "pl": "Pracownik uzupełniał towar na półkach w alejce piątej.",
+              "focusEn": "employee",
+              "focusPl": "Pracownik"
+            }
+          ],
+          "acceptedAnswers": [
+            "employee",
+            "worker",
+            "clerk"
+          ],
+          "acceptedTranslations": [
+            "pracownik",
+            "pracownica"
+          ]
+        },
+        {
+          "id": "grocery-shopping.refund",
+          "term": "refund",
+          "ipa": "/ˈriːfʌnd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zwrot pieniędzy",
+          "definition": "Money given back to you when you return something.",
+          "register": "neutralny",
+          "contextPl": "Reklamacja w sklepie",
+          "natural": "",
+          "forms": "refunds",
+          "collocations": "get a refund; a full refund",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Would you like a refund or an exchange?",
+              "pl": "Chce pan zwrot pieniędzy czy wymianę?",
+              "focusEn": "refund",
+              "focusPl": "zwrot pieniędzy"
+            },
+            {
+              "en": "I got a full refund even without a receipt.",
+              "pl": "Dostałem pełny zwrot pieniędzy nawet bez paragonu.",
+              "focusEn": "refund",
+              "focusPl": "zwrot pieniędzy"
+            }
+          ],
+          "acceptedAnswers": [
+            "refund"
+          ],
+          "acceptedTranslations": [
+            "zwrot pieniędzy",
+            "zwrot"
+          ]
+        },
+        {
+          "id": "grocery-shopping.expired",
+          "term": "expired",
+          "ipa": "/ɪkˈspaɪərd/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przeterminowany",
+          "definition": "Past the date when it should be sold or eaten.",
+          "register": "neutralny",
+          "contextPl": "Znalezienie starego produktu na półce",
+          "natural": "",
+          "forms": "",
+          "collocations": "expired milk; already expired",
+          "synonyms": "out of date",
+          "antonyms": "fresh",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This yogurt is expired; it was good until last week.",
+              "pl": "Ten jogurt jest przeterminowany, był ważny do zeszłego tygodnia.",
+              "focusEn": "expired",
+              "focusPl": "przeterminowany"
+            },
+            {
+              "en": "I found expired cheese on the shelf and told the manager.",
+              "pl": "Znalazłem przeterminowany ser na półce i powiedziałem kierownikowi.",
+              "focusEn": "expired",
+              "focusPl": "przeterminowany"
+            }
+          ],
+          "acceptedAnswers": [
+            "expired"
+          ],
+          "acceptedTranslations": [
+            "przeterminowany",
+            "po terminie"
+          ]
+        },
+        {
+          "id": "grocery-shopping.customer-service",
+          "term": "customer service",
+          "ipa": "/ˌkʌstəmər ˈsɜːrvɪs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "obsługa klienta",
+          "definition": "The desk or staff in a store that help customers with problems.",
+          "register": "neutralny",
+          "contextPl": "Zwroty i reklamacje",
+          "natural": "",
+          "forms": "",
+          "collocations": "customer service desk; call customer service",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Returns are handled at the customer service desk.",
+              "pl": "Zwroty przyjmuje punkt obsługi klienta.",
+              "focusEn": "customer service",
+              "focusPl": "punkt obsługi klienta"
+            },
+            {
+              "en": "Customer service is right next to the entrance.",
+              "pl": "Obsługa klienta jest tuż obok wejścia.",
+              "focusEn": "Customer service",
+              "focusPl": "Obsługa klienta"
+            }
+          ],
+          "acceptedAnswers": [
+            "customer service"
+          ],
+          "acceptedTranslations": [
+            "obsługa klienta",
+            "punkt obsługi klienta"
+          ]
+        },
+        {
+          "id": "grocery-shopping.damaged",
+          "term": "damaged",
+          "ipa": "/ˈdæmɪdʒd/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "uszkodzony",
+          "definition": "Broken or harmed in some way.",
+          "register": "neutralny",
+          "contextPl": "Wadliwe opakowania",
+          "natural": "",
+          "forms": "",
+          "collocations": "damaged box; damaged goods",
+          "synonyms": "broken",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This box is damaged, and the cereal is spilling out.",
+              "pl": "To pudełko jest uszkodzone i płatki się wysypują.",
+              "focusEn": "damaged",
+              "focusPl": "uszkodzone"
+            },
+            {
+              "en": "They took the damaged cans off the shelf.",
+              "pl": "Zdjęli uszkodzone puszki z półki.",
+              "focusEn": "damaged",
+              "focusPl": "uszkodzone"
+            }
+          ],
+          "acceptedAnswers": [
+            "damaged"
+          ],
+          "acceptedTranslations": [
+            "uszkodzony",
+            "zniszczony"
+          ]
+        },
+        {
+          "id": "grocery-shopping.moldy",
+          "term": "moldy",
+          "ipa": "/ˈmoʊldi/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "spleśniały",
+          "definition": "Covered with a green or white fungus because it is old.",
+          "register": "neutralny",
+          "contextPl": "Zepsute pieczywo i owoce",
+          "natural": "",
+          "forms": "moldier – moldiest",
+          "collocations": "moldy bread; go moldy",
+          "synonyms": "",
+          "antonyms": "fresh",
+          "notePl": "Pisownia amerykańska: „moldy” (brytyjska: „mouldy”).",
+          "examples": [
+            {
+              "en": "The strawberries on the bottom were moldy.",
+              "pl": "Truskawki na spodzie były spleśniałe.",
+              "focusEn": "moldy",
+              "focusPl": "spleśniałe"
+            },
+            {
+              "en": "I bought this bread yesterday, and it's already moldy.",
+              "pl": "Kupiłem ten chleb wczoraj, a już jest spleśniały.",
+              "focusEn": "moldy",
+              "focusPl": "spleśniały"
+            }
+          ],
+          "acceptedAnswers": [
+            "moldy"
+          ],
+          "acceptedTranslations": [
+            "spleśniały",
+            "zapleśniały"
+          ]
+        },
+        {
+          "id": "grocery-shopping.restock",
+          "term": "restock",
+          "ipa": "/ˌriːˈstɑːk/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "uzupełnić towar",
+          "definition": "To put new products on the shelves to replace sold ones.",
+          "register": "neutralny",
+          "contextPl": "Brakujące produkty na półkach",
+          "natural": "",
+          "forms": "restocked",
+          "collocations": "restock the shelves",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "When will you restock the oat milk?",
+              "pl": "Kiedy uzupełnicie mleko owsiane?",
+              "focusEn": "restock",
+              "focusPl": "uzupełnicie"
+            },
+            {
+              "en": "They restock the produce early every morning.",
+              "pl": "Owoce i warzywa uzupełniają codziennie wcześnie rano.",
+              "focusEn": "restock",
+              "focusPl": "uzupełniają"
+            }
+          ],
+          "acceptedAnswers": [
+            "restock"
+          ],
+          "acceptedTranslations": [
+            "uzupełnić towar",
+            "uzupełniać"
+          ]
+        },
+        {
+          "id": "grocery-shopping.price-check",
+          "term": "price check",
+          "ipa": "/ˈpraɪs ˌtʃɛk/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "sprawdzenie ceny",
+          "definition": "When a store worker checks the correct price of an item.",
+          "register": "neutralny",
+          "contextPl": "Brak ceny lub niezgodna cena przy kasie",
+          "natural": "",
+          "forms": "price checks",
+          "collocations": "do a price check; price check on aisle six",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's no price on this; can I get a price check?",
+              "pl": "Na tym nie ma ceny, mogę prosić o sprawdzenie ceny?",
+              "focusEn": "price check",
+              "focusPl": "sprawdzenie ceny"
+            },
+            {
+              "en": "The cashier called for a price check on aisle six.",
+              "pl": "Kasjerka poprosiła o sprawdzenie ceny w alejce szóstej.",
+              "focusEn": "price check",
+              "focusPl": "sprawdzenie ceny"
+            }
+          ],
+          "acceptedAnswers": [
+            "price check"
+          ],
+          "acceptedTranslations": [
+            "sprawdzenie ceny",
+            "weryfikacja ceny"
+          ]
+        },
+        {
+          "id": "grocery-shopping.rain-check",
+          "term": "rain check",
+          "ipa": "/ˈreɪn ˌtʃɛk/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "rare",
+          "translation": "talon na promocję",
+          "definition": "A slip that lets you buy a sold-out sale item later at the sale price.",
+          "register": "neutralny",
+          "contextPl": "Gdy zabrakło towaru z promocji",
+          "natural": "",
+          "forms": "rain checks",
+          "collocations": "give someone a rain check",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Idiom „take a rain check” znaczy też „przełożyć zaproszenie na później”.",
+          "examples": [
+            {
+              "en": "The sale item was gone, so they gave me a rain check.",
+              "pl": "Towaru z promocji zabrakło, więc dostałem talon na promocję.",
+              "focusEn": "rain check",
+              "focusPl": "talon na promocję"
+            },
+            {
+              "en": "With this rain check, you get the sale price next week.",
+              "pl": "Z tym talonem dostanie pan cenę promocyjną w przyszłym tygodniu.",
+              "focusEn": "rain check",
+              "focusPl": "talonem"
+            }
+          ],
+          "acceptedAnswers": [
+            "rain check"
+          ],
+          "acceptedTranslations": [
+            "talon na promocję",
+            "talon"
+          ]
+        },
+        {
+          "id": "grocery-shopping.cleanup-on-aisle-five",
+          "term": "cleanup on aisle five",
+          "ipa": "/ˌkliːnʌp ɑːn ˌaɪl ˈfaɪv/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "sprzątanie w alejce piątej",
+          "definition": "A store announcement about a mess, also used jokingly about any mess.",
+          "register": "potoczny",
+          "contextPl": "Bałagan w sklepie lub żartobliwie gdziekolwiek",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Używane też żartobliwie poza sklepem, gdy ktoś coś rozleje lub przewróci.",
+          "examples": [
+            {
+              "en": "A jar broke, and we heard \"cleanup on aisle five\" over the speaker.",
+              "pl": "Słoik się stłukł i usłyszeliśmy przez głośnik: „sprzątanie w alejce piątej”.",
+              "focusEn": "cleanup on aisle five",
+              "focusPl": "sprzątanie w alejce piątej"
+            },
+            {
+              "en": "My kid knocked over a tower of cereal boxes: cleanup on aisle five!",
+              "pl": "Moje dziecko przewróciło wieżę z pudełek płatków: sprzątanie w alejce piątej!",
+              "focusEn": "cleanup on aisle five",
+              "focusPl": "sprzątanie w alejce piątej"
+            }
+          ],
+          "acceptedAnswers": [
+            "cleanup on aisle five",
+            "clean-up on aisle five"
+          ],
+          "acceptedTranslations": [
+            "sprzątanie w alejce piątej"
+          ]
+        }
+      ]
+    }
+  ]
+}

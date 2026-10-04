@@ -1,0 +1,3058 @@
+{
+  "schemaVersion": 1,
+  "id": "salary-benefits",
+  "namePl": "Wynagrodzenie i benefity",
+  "nameEn": "Salary and Benefits",
+  "group": "work",
+  "symbol": "banknote",
+  "summaryPl": "Pensja i pasek wypłaty, podwyżka i awans, ubezpieczenie i inne benefity, urlopy oraz umowa i zakończenie pracy.",
+  "aliases": [
+    "wynagrodzenie",
+    "pensja",
+    "wypłata",
+    "podwyżka",
+    "benefity",
+    "urlop",
+    "umowa o pracę",
+    "salary",
+    "benefits",
+    "pay raise"
+  ],
+  "categories": [
+    {
+      "id": "salary-benefits.pay",
+      "namePl": "Pensja i wypłata",
+      "scenePl": "Sprawdzanie pierwszego paska wypłaty w nowej pracy przy kuchennym stole",
+      "entries": [
+        {
+          "id": "salary-benefits.salary",
+          "term": "salary",
+          "ipa": "/ˈsæləri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "pensja",
+          "definition": "A fixed amount of money paid for a job, usually counted per year.",
+          "register": "neutralny",
+          "contextPl": "Stałe wynagrodzenie, najczęściej podawane rocznie w USA",
+          "natural": "",
+          "forms": "salaries",
+          "collocations": "annual salary; starting salary; earn a salary",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA pensję zwykle podaje się w skali roku, np. „a salary of $60,000”.",
+          "examples": [
+            {
+              "en": "My salary is sixty thousand a year, but the paycheck looks much smaller.",
+              "pl": "Moja pensja to sześćdziesiąt tysięcy rocznie, ale wypłata wygląda na dużo mniejszą.",
+              "focusEn": "salary",
+              "focusPl": "pensja"
+            },
+            {
+              "en": "I divided my yearly salary by twenty-six to check the numbers.",
+              "pl": "Podzieliłem roczną pensję przez dwadzieścia sześć, żeby sprawdzić liczby.",
+              "focusEn": "salary",
+              "focusPl": "pensję"
+            }
+          ],
+          "acceptedAnswers": [
+            "salary",
+            "pay"
+          ],
+          "acceptedTranslations": [
+            "pensja",
+            "wynagrodzenie",
+            "płaca",
+            "zarobki"
+          ]
+        },
+        {
+          "id": "salary-benefits.pay",
+          "term": "pay",
+          "ipa": "/peɪ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "płaca",
+          "definition": "Money that you get for doing a job.",
+          "register": "neutralny",
+          "contextPl": "Ogólne mówienie o zarobkach",
+          "natural": "",
+          "forms": "",
+          "collocations": "good pay; low pay; pay rate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The pay is good, but the hours are long.",
+              "pl": "Płaca jest dobra, ale godziny pracy długie.",
+              "focusEn": "pay",
+              "focusPl": "Płaca"
+            },
+            {
+              "en": "My first week's pay came in on Friday.",
+              "pl": "Moja wypłata za pierwszy tydzień przyszła w piątek.",
+              "focusEn": "pay",
+              "focusPl": "wypłata"
+            }
+          ],
+          "acceptedAnswers": [
+            "pay",
+            "wages",
+            "salary"
+          ],
+          "acceptedTranslations": [
+            "płaca",
+            "wypłata",
+            "wynagrodzenie",
+            "zarobki"
+          ]
+        },
+        {
+          "id": "salary-benefits.paycheck",
+          "term": "paycheck",
+          "ipa": "/ˈpeɪˌtʃɛk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wypłata",
+          "definition": "The money you receive from your employer for a period of work.",
+          "register": "neutralny",
+          "contextPl": "Regularna wypłata wynagrodzenia",
+          "natural": "",
+          "forms": "paychecks",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska; w BrE „pay cheque”.",
+          "examples": [
+            {
+              "en": "My first paycheck arrived in my bank account this morning.",
+              "pl": "Moja pierwsza wypłata wpłynęła dziś rano na konto.",
+              "focusEn": "paycheck",
+              "focusPl": "wypłata"
+            },
+            {
+              "en": "After rent, half my paycheck is already gone.",
+              "pl": "Po zapłaceniu czynszu połowy wypłaty już nie ma.",
+              "focusEn": "paycheck",
+              "focusPl": "wypłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "paycheck",
+            "pay check",
+            "check"
+          ],
+          "acceptedTranslations": [
+            "wypłata",
+            "pensja",
+            "pobory"
+          ]
+        },
+        {
+          "id": "salary-benefits.wage",
+          "term": "wage",
+          "ipa": "/weɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stawka",
+          "definition": "Money paid for each hour or week of work.",
+          "register": "neutralny",
+          "contextPl": "Wynagrodzenie godzinowe lub tygodniowe",
+          "natural": "",
+          "forms": "wages",
+          "collocations": "minimum wage; hourly wage; low wages",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My hourly wage is eighteen dollars, plus tips.",
+              "pl": "Moja stawka godzinowa to osiemnaście dolarów plus napiwki.",
+              "focusEn": "wage",
+              "focusPl": "stawka"
+            },
+            {
+              "en": "The pay stub shows my wages for eighty hours of work.",
+              "pl": "Na pasku widać moje wynagrodzenie za osiemdziesiąt godzin pracy.",
+              "focusEn": "wages",
+              "focusPl": "wynagrodzenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "wage",
+            "wages",
+            "pay"
+          ],
+          "acceptedTranslations": [
+            "stawka",
+            "płaca",
+            "wynagrodzenie",
+            "stawka godzinowa"
+          ]
+        },
+        {
+          "id": "salary-benefits.payday",
+          "term": "payday",
+          "ipa": "/ˈpeɪˌdeɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dzień wypłaty",
+          "definition": "The day when workers receive their pay.",
+          "register": "neutralny",
+          "contextPl": "Termin wypłaty pensji",
+          "natural": "",
+          "forms": "paydays",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Payday is every other Friday at our company.",
+              "pl": "Dzień wypłaty w naszej firmie wypada co drugi piątek.",
+              "focusEn": "Payday",
+              "focusPl": "Dzień wypłaty"
+            },
+            {
+              "en": "I always check my bank account on payday morning.",
+              "pl": "W dzień wypłaty zawsze rano sprawdzam konto.",
+              "focusEn": "payday",
+              "focusPl": "wypłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "payday"
+          ],
+          "acceptedTranslations": [
+            "dzień wypłaty",
+            "wypłata",
+            "dzień wypłaty pensji"
+          ]
+        },
+        {
+          "id": "salary-benefits.pay-stub",
+          "term": "pay stub",
+          "ipa": "/ˈpeɪ ˌstʌb/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pasek wypłaty",
+          "definition": "A document that shows how much you earned and what was taken out.",
+          "register": "neutralny",
+          "contextPl": "Szczegóły naliczenia wynagrodzenia",
+          "natural": "",
+          "forms": "pay stubs",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My pay stub shows three different taxes.",
+              "pl": "Na moim pasku wypłaty są trzy różne podatki.",
+              "focusEn": "pay stub",
+              "focusPl": "pasku wypłaty"
+            },
+            {
+              "en": "I printed my pay stub because the landlord asked for proof of income.",
+              "pl": "Wydrukowałem pasek wypłaty, bo właściciel mieszkania poprosił o potwierdzenie dochodu.",
+              "focusEn": "pay stub",
+              "focusPl": "pasek wypłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "pay stub",
+            "paystub",
+            "pay slip"
+          ],
+          "acceptedTranslations": [
+            "pasek wypłaty",
+            "odcinek wypłaty",
+            "pasek",
+            "zestawienie wynagrodzenia"
+          ]
+        },
+        {
+          "id": "salary-benefits.gross",
+          "term": "gross",
+          "ipa": "/ɡroʊs/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "brutto",
+          "definition": "Before taxes and other amounts are taken out.",
+          "register": "neutralny",
+          "contextPl": "Kwota przed potrąceniami",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "net",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My gross pay is three thousand, but I take home much less.",
+              "pl": "Moja wypłata brutto to trzy tysiące, ale do ręki dostaję dużo mniej.",
+              "focusEn": "gross",
+              "focusPl": "brutto"
+            },
+            {
+              "en": "The offer said seventy thousand gross per year.",
+              "pl": "W ofercie było siedemdziesiąt tysięcy rocznie brutto.",
+              "focusEn": "gross",
+              "focusPl": "brutto"
+            }
+          ],
+          "acceptedAnswers": [
+            "gross"
+          ],
+          "acceptedTranslations": [
+            "brutto",
+            "przed opodatkowaniem",
+            "łącznie"
+          ]
+        },
+        {
+          "id": "salary-benefits.take-home-pay",
+          "term": "take-home pay",
+          "ipa": "/ˈteɪkˌhoʊm ˌpeɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wypłata netto",
+          "definition": "The money you actually receive after taxes and other deductions.",
+          "register": "neutralny",
+          "contextPl": "Ile realnie trafia na konto",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "net pay",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My take-home pay is about two thousand three hundred a month.",
+              "pl": "Moja wypłata netto to około dwóch tysięcy trzystu miesięcznie.",
+              "focusEn": "take-home pay",
+              "focusPl": "wypłata netto"
+            },
+            {
+              "en": "After the new tax rules, my take-home pay went down a little.",
+              "pl": "Po zmianie przepisów podatkowych moja pensja na rękę trochę spadła.",
+              "focusEn": "take-home pay",
+              "focusPl": "pensja na rękę"
+            }
+          ],
+          "acceptedAnswers": [
+            "take-home pay",
+            "net pay",
+            "net"
+          ],
+          "acceptedTranslations": [
+            "wypłata netto",
+            "netto",
+            "pensja na rękę",
+            "kwota netto"
+          ]
+        },
+        {
+          "id": "salary-benefits.deduction",
+          "term": "deduction",
+          "ipa": "/dɪˈdʌkʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "potrącenie",
+          "definition": "An amount of money taken away from your pay.",
+          "register": "neutralny",
+          "contextPl": "Podatki i składki odliczane od pensji",
+          "natural": "",
+          "forms": "deductions",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a deduction for health insurance on every paycheck.",
+              "pl": "Z każdej wypłaty jest potrącenie na ubezpieczenie zdrowotne.",
+              "focusEn": "deduction",
+              "focusPl": "potrącenie"
+            },
+            {
+              "en": "I didn't understand one deduction, so I asked HR.",
+              "pl": "Nie rozumiałem jednego potrącenia, więc zapytałem dział kadr.",
+              "focusEn": "deduction",
+              "focusPl": "potrącenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "deduction"
+          ],
+          "acceptedTranslations": [
+            "potrącenie",
+            "odliczenie",
+            "składka"
+          ]
+        },
+        {
+          "id": "salary-benefits.direct-deposit",
+          "term": "direct deposit",
+          "ipa": "/dəˌrɛkt dɪˈpɑːzɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przelew na konto",
+          "definition": "A way of paying wages straight into an employee's bank account.",
+          "register": "neutralny",
+          "contextPl": "Sposób otrzymywania wypłaty w USA",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I set up direct deposit so I don't have to cash a check.",
+              "pl": "Ustawiłem przelew na konto, żeby nie realizować czeków.",
+              "focusEn": "direct deposit",
+              "focusPl": "przelew na konto"
+            },
+            {
+              "en": "My first paycheck came by direct deposit on Friday morning.",
+              "pl": "Pierwsza wypłata przyszła w piątek rano przelewem na konto.",
+              "focusEn": "direct deposit",
+              "focusPl": "przelewem na konto"
+            }
+          ],
+          "acceptedAnswers": [
+            "direct deposit"
+          ],
+          "acceptedTranslations": [
+            "przelew na konto",
+            "przelew",
+            "wpłata na konto"
+          ]
+        },
+        {
+          "id": "salary-benefits.bonus",
+          "term": "bonus",
+          "ipa": "/ˈboʊnəs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "premia",
+          "definition": "Extra money added to your pay, usually for good work.",
+          "register": "neutralny",
+          "contextPl": "Dodatkowe wynagrodzenie",
+          "natural": "",
+          "forms": "bonuses",
+          "collocations": "year-end bonus; signing bonus; performance bonus",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This paycheck includes a small bonus for finishing the project early.",
+              "pl": "Ta wypłata zawiera małą premię za wcześniejsze skończenie projektu.",
+              "focusEn": "bonus",
+              "focusPl": "premię"
+            },
+            {
+              "en": "The bonus was taxed more than I expected.",
+              "pl": "Premia była opodatkowana bardziej, niż się spodziewałem.",
+              "focusEn": "bonus",
+              "focusPl": "Premia"
+            }
+          ],
+          "acceptedAnswers": [
+            "bonus"
+          ],
+          "acceptedTranslations": [
+            "premia",
+            "nagroda",
+            "dodatek"
+          ]
+        },
+        {
+          "id": "salary-benefits.commission",
+          "term": "commission",
+          "ipa": "/kəˈmɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "prowizja",
+          "definition": "Money paid to a salesperson for each sale they make.",
+          "register": "neutralny",
+          "contextPl": "Wynagrodzenie zależne od sprzedaży",
+          "natural": "",
+          "forms": "commissions",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Most of my pay comes from commission on the cars I sell.",
+              "pl": "Większość mojej wypłaty to prowizja od sprzedanych samochodów.",
+              "focusEn": "commission",
+              "focusPl": "prowizja"
+            },
+            {
+              "en": "My commission this month was bigger than my base pay.",
+              "pl": "Moja prowizja w tym miesiącu była większa niż podstawa.",
+              "focusEn": "commission",
+              "focusPl": "prowizja"
+            }
+          ],
+          "acceptedAnswers": [
+            "commission"
+          ],
+          "acceptedTranslations": [
+            "prowizja",
+            "procent od sprzedaży"
+          ]
+        },
+        {
+          "id": "salary-benefits.overtime-pay",
+          "term": "overtime pay",
+          "ipa": "/ˈoʊvərˌtaɪm ˌpeɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wynagrodzenie za nadgodziny",
+          "definition": "Extra money paid for hours worked beyond your normal schedule.",
+          "register": "neutralny",
+          "contextPl": "Dodatki za pracę po godzinach",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I got two hundred dollars of overtime pay this week.",
+              "pl": "W tym tygodniu dostałem dwieście dolarów za nadgodziny.",
+              "focusEn": "overtime pay",
+              "focusPl": "za nadgodziny"
+            },
+            {
+              "en": "My overtime pay isn't on the stub, so I emailed my manager.",
+              "pl": "Na pasku nie ma mojego wynagrodzenia za nadgodziny, więc napisałem do kierownika.",
+              "focusEn": "overtime pay",
+              "focusPl": "wynagrodzenia za nadgodziny"
+            }
+          ],
+          "acceptedAnswers": [
+            "overtime pay",
+            "overtime"
+          ],
+          "acceptedTranslations": [
+            "wynagrodzenie za nadgodziny",
+            "dodatek za nadgodziny",
+            "płatne nadgodziny"
+          ]
+        },
+        {
+          "id": "salary-benefits.time-and-a-half",
+          "term": "time and a half",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "stawka półtora raza wyższa",
+          "definition": "Pay that is one and a half times your normal hourly rate.",
+          "register": "neutralny",
+          "contextPl": "Typowa stawka za nadgodziny w USA",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hours worked on Thanksgiving are paid at time and a half.",
+              "pl": "Godziny przepracowane w Święto Dziękczynienia są płatne według stawki półtora raza wyższej.",
+              "focusEn": "time and a half",
+              "focusPl": "stawki półtora raza wyższej"
+            },
+            {
+              "en": "I checked whether my extra hours were paid at time and a half.",
+              "pl": "Sprawdziłem, czy dodatkowe godziny zapłacono mi w wysokości 150 procent stawki.",
+              "focusEn": "time and a half",
+              "focusPl": "w wysokości 150 procent stawki"
+            }
+          ],
+          "acceptedAnswers": [
+            "time and a half"
+          ],
+          "acceptedTranslations": [
+            "stawka półtora raza wyższa",
+            "półtorej stawki",
+            "stawka 150 procent"
+          ]
+        },
+        {
+          "id": "salary-benefits.minimum-wage",
+          "term": "minimum wage",
+          "ipa": "/ˌmɪnɪməm ˈweɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "płaca minimalna",
+          "definition": "The lowest amount of pay per hour that the law allows.",
+          "register": "neutralny",
+          "contextPl": "Prawne minimum wynagrodzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My first job paid minimum wage, so I was always broke.",
+              "pl": "W mojej pierwszej pracy płacili minimalną stawkę, więc zawsze byłem spłukany.",
+              "focusEn": "minimum wage",
+              "focusPl": "minimalną stawkę"
+            },
+            {
+              "en": "The state raised the minimum wage last year.",
+              "pl": "W zeszłym roku stan podniósł płacę minimalną.",
+              "focusEn": "minimum wage",
+              "focusPl": "płacę minimalną"
+            }
+          ],
+          "acceptedAnswers": [
+            "minimum wage"
+          ],
+          "acceptedTranslations": [
+            "płaca minimalna",
+            "minimalne wynagrodzenie",
+            "najniższa krajowa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salary-benefits.raise",
+      "namePl": "Podwyżka i awans",
+      "scenePl": "Rozmowa z szefową w jej gabinecie o podwyżce i awansie podczas oceny rocznej",
+      "entries": [
+        {
+          "id": "salary-benefits.raise",
+          "term": "raise",
+          "ipa": "/reɪz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "podwyżka",
+          "definition": "An increase in the money you are paid.",
+          "register": "neutralny",
+          "contextPl": "Wzrost wynagrodzenia",
+          "natural": "",
+          "forms": "raises",
+          "collocations": "ask for a raise; get a raise; pay raise",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W BrE „pay rise”.",
+          "examples": [
+            {
+              "en": "I'd like to talk about a raise after this year's results.",
+              "pl": "Chciałbym porozmawiać o podwyżce po tegorocznych wynikach.",
+              "focusEn": "raise",
+              "focusPl": "podwyżce"
+            },
+            {
+              "en": "She offered me a five percent raise starting in January.",
+              "pl": "Zaproponowała mi pięcioprocentową podwyżkę od stycznia.",
+              "focusEn": "raise",
+              "focusPl": "podwyżkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "raise",
+            "pay raise",
+            "pay rise"
+          ],
+          "acceptedTranslations": [
+            "podwyżka",
+            "podwyżka pensji",
+            "podwyższenie wynagrodzenia"
+          ]
+        },
+        {
+          "id": "salary-benefits.ask-for-a-raise",
+          "term": "ask for a raise",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "poprosić o podwyżkę",
+          "definition": "To request more money from your employer.",
+          "register": "neutralny",
+          "contextPl": "Inicjowanie rozmowy o wynagrodzeniu",
+          "natural": "",
+          "forms": "ask – asked – asked",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I practiced for a week before I asked for a raise.",
+              "pl": "Przez tydzień ćwiczyłem, zanim poprosiłem o podwyżkę.",
+              "focusEn": "asked for a raise",
+              "focusPl": "poprosiłem o podwyżkę"
+            },
+            {
+              "en": "Is the annual review a good time to ask for a raise?",
+              "pl": "Czy ocena roczna to dobry moment, żeby poprosić o podwyżkę?",
+              "focusEn": "ask for a raise",
+              "focusPl": "poprosić o podwyżkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "ask for a raise"
+          ],
+          "acceptedTranslations": [
+            "poprosić o podwyżkę",
+            "prosić o podwyżkę",
+            "upomnieć się o podwyżkę"
+          ]
+        },
+        {
+          "id": "salary-benefits.promotion",
+          "term": "promotion",
+          "ipa": "/prəˈmoʊʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "awans",
+          "definition": "A move to a higher position at work.",
+          "register": "neutralny",
+          "contextPl": "Rozwój kariery w firmie",
+          "natural": "",
+          "forms": "promotions",
+          "collocations": "get a promotion; be up for a promotion",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My boss said I'm ready for a promotion to team leader.",
+              "pl": "Szefowa powiedziała, że jestem gotowy na awans na lidera zespołu.",
+              "focusEn": "promotion",
+              "focusPl": "awans"
+            },
+            {
+              "en": "The promotion comes with a new title and a bigger salary.",
+              "pl": "Z awansem wiąże się nowe stanowisko i wyższa pensja.",
+              "focusEn": "promotion",
+              "focusPl": "awansem"
+            }
+          ],
+          "acceptedAnswers": [
+            "promotion"
+          ],
+          "acceptedTranslations": [
+            "awans",
+            "awansowanie"
+          ]
+        },
+        {
+          "id": "salary-benefits.get-promoted",
+          "term": "get promoted",
+          "ipa": "/ˌɡɛt prəˈmoʊtɪd/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "awansować",
+          "definition": "To be moved to a higher position at work.",
+          "register": "neutralny",
+          "contextPl": "Mówienie o własnym awansie",
+          "natural": "",
+          "forms": "get – got – gotten",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I want to get promoted within two years.",
+              "pl": "Chcę awansować w ciągu dwóch lat.",
+              "focusEn": "get promoted",
+              "focusPl": "awansować"
+            },
+            {
+              "en": "She got promoted after only eighteen months on the team.",
+              "pl": "Awansowała już po osiemnastu miesiącach w zespole.",
+              "focusEn": "got promoted",
+              "focusPl": "Awansowała"
+            }
+          ],
+          "acceptedAnswers": [
+            "get promoted",
+            "be promoted"
+          ],
+          "acceptedTranslations": [
+            "awansować",
+            "dostać awans",
+            "zostać awansowanym"
+          ]
+        },
+        {
+          "id": "salary-benefits.deserve",
+          "term": "deserve",
+          "ipa": "/dɪˈzɜːrv/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zasługiwać",
+          "definition": "To have earned something because of what you have done.",
+          "register": "neutralny",
+          "contextPl": "Argumentowanie za podwyżką",
+          "natural": "",
+          "forms": "deserve – deserved – deserved",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I think I deserve a raise because I brought in three new clients.",
+              "pl": "Myślę, że zasługuję na podwyżkę, bo pozyskałem trzech nowych klientów.",
+              "focusEn": "deserve",
+              "focusPl": "zasługuję"
+            },
+            {
+              "en": "She told me I deserved the promotion.",
+              "pl": "Powiedziała, że zasłużyłem na awans.",
+              "focusEn": "deserved",
+              "focusPl": "zasłużyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "deserve"
+          ],
+          "acceptedTranslations": [
+            "zasługiwać",
+            "zasłużyć",
+            "należeć się"
+          ]
+        },
+        {
+          "id": "salary-benefits.underpaid",
+          "term": "underpaid",
+          "ipa": "/ˌʌndərˈpeɪd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "niedopłacany",
+          "definition": "Paid less than is fair for the work you do.",
+          "register": "neutralny",
+          "contextPl": "Poczucie zbyt niskiego wynagrodzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "overpaid",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I feel underpaid compared to people with the same job elsewhere.",
+              "pl": "Czuję się niedopłacany w porównaniu z ludźmi na tym samym stanowisku gdzie indziej.",
+              "focusEn": "underpaid",
+              "focusPl": "niedopłacany"
+            },
+            {
+              "en": "I showed her data proving our team is underpaid.",
+              "pl": "Pokazałem jej dane, które dowodzą, że nasz zespół jest za słabo opłacany.",
+              "focusEn": "underpaid",
+              "focusPl": "za słabo opłacany"
+            }
+          ],
+          "acceptedAnswers": [
+            "underpaid"
+          ],
+          "acceptedTranslations": [
+            "niedopłacany",
+            "za słabo opłacany",
+            "źle opłacany",
+            "niedopłacona"
+          ]
+        },
+        {
+          "id": "salary-benefits.market-rate",
+          "term": "market rate",
+          "ipa": "/ˈmɑːrkɪt ˌreɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stawka rynkowa",
+          "definition": "The usual pay for a particular job in the job market.",
+          "register": "neutralny",
+          "contextPl": "Porównywanie pensji z rynkiem",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My salary is ten percent below the market rate.",
+              "pl": "Moja pensja jest o dziesięć procent niższa od stawki rynkowej.",
+              "focusEn": "market rate",
+              "focusPl": "stawki rynkowej"
+            },
+            {
+              "en": "She agreed to bring my pay up to the market rate.",
+              "pl": "Zgodziła się podnieść moje wynagrodzenie do poziomu rynkowego.",
+              "focusEn": "market rate",
+              "focusPl": "poziomu rynkowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "market rate",
+            "going rate",
+            "market value"
+          ],
+          "acceptedTranslations": [
+            "stawka rynkowa",
+            "poziom rynkowy",
+            "średnia rynkowa"
+          ]
+        },
+        {
+          "id": "salary-benefits.cost-of-living",
+          "term": "cost of living",
+          "ipa": "/ˌkɔːst əv ˈlɪvɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "koszty utrzymania",
+          "definition": "The amount of money people need for basic things like housing and food.",
+          "register": "neutralny",
+          "contextPl": "Podwyżki wyrównujące inflację",
+          "natural": "",
+          "forms": "",
+          "collocations": "cost-of-living raise; cost-of-living adjustment",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Everyone gets a small raise to match the cost of living.",
+              "pl": "Wszyscy dostają małą podwyżkę, żeby nadążyć za kosztami utrzymania.",
+              "focusEn": "cost of living",
+              "focusPl": "kosztami utrzymania"
+            },
+            {
+              "en": "I mentioned that the cost of living in this city has gone up a lot.",
+              "pl": "Wspomniałem, że koszty życia w tym mieście bardzo wzrosły.",
+              "focusEn": "cost of living",
+              "focusPl": "koszty życia"
+            }
+          ],
+          "acceptedAnswers": [
+            "cost of living"
+          ],
+          "acceptedTranslations": [
+            "koszty utrzymania",
+            "koszty życia"
+          ]
+        },
+        {
+          "id": "salary-benefits.title",
+          "term": "title",
+          "ipa": "/ˈtaɪtəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nazwa stanowiska",
+          "definition": "The name of your position at work.",
+          "register": "neutralny",
+          "contextPl": "Oficjalne nazwy stanowisk przy awansie",
+          "natural": "",
+          "forms": "",
+          "collocations": "job title; new title",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My new title is Senior Account Manager.",
+              "pl": "Moje nowe stanowisko to starszy opiekun klienta.",
+              "focusEn": "title",
+              "focusPl": "stanowisko"
+            },
+            {
+              "en": "I asked if the promotion comes with a new title or just more money.",
+              "pl": "Zapytałem, czy z awansem wiąże się nowe stanowisko, czy tylko więcej pieniędzy.",
+              "focusEn": "title",
+              "focusPl": "stanowisko"
+            }
+          ],
+          "acceptedAnswers": [
+            "title",
+            "job title"
+          ],
+          "acceptedTranslations": [
+            "nazwa stanowiska",
+            "stanowisko",
+            "tytuł zawodowy"
+          ]
+        },
+        {
+          "id": "salary-benefits.pay-cut",
+          "term": "pay cut",
+          "ipa": "/ˈpeɪ ˌkʌt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "obniżka pensji",
+          "definition": "A reduction in the money you are paid.",
+          "register": "neutralny",
+          "contextPl": "Zmniejszenie wynagrodzenia",
+          "natural": "",
+          "forms": "pay cuts",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "During the crisis, everyone took a ten percent pay cut.",
+              "pl": "Podczas kryzysu wszyscy przyjęli dziesięcioprocentową obniżkę pensji.",
+              "focusEn": "pay cut",
+              "focusPl": "obniżkę pensji"
+            },
+            {
+              "en": "I'd rather change jobs than accept a pay cut.",
+              "pl": "Wolałbym zmienić pracę niż zgodzić się na obniżkę wynagrodzenia.",
+              "focusEn": "pay cut",
+              "focusPl": "obniżkę wynagrodzenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "pay cut"
+          ],
+          "acceptedTranslations": [
+            "obniżka pensji",
+            "obniżka wynagrodzenia",
+            "cięcie płac"
+          ]
+        },
+        {
+          "id": "salary-benefits.pay-freeze",
+          "term": "pay freeze",
+          "ipa": "/ˈpeɪ ˌfriːz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zamrożenie płac",
+          "definition": "A period when an employer does not increase anyone's pay.",
+          "register": "neutralny",
+          "contextPl": "Brak podwyżek w trudnym okresie firmy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a pay freeze this year, so no raises for anyone.",
+              "pl": "W tym roku jest zamrożenie płac, więc nikt nie dostanie podwyżki.",
+              "focusEn": "pay freeze",
+              "focusPl": "zamrożenie płac"
+            },
+            {
+              "en": "She apologized and explained the pay freeze would end in June.",
+              "pl": "Przeprosiła i wyjaśniła, że zamrożenie płac skończy się w czerwcu.",
+              "focusEn": "pay freeze",
+              "focusPl": "zamrożenie płac"
+            }
+          ],
+          "acceptedAnswers": [
+            "pay freeze",
+            "salary freeze",
+            "wage freeze"
+          ],
+          "acceptedTranslations": [
+            "zamrożenie płac",
+            "zamrożenie wynagrodzeń"
+          ]
+        },
+        {
+          "id": "salary-benefits.career-path",
+          "term": "career path",
+          "ipa": "/kəˈrɪr ˌpæθ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ścieżka kariery",
+          "definition": "The series of jobs and positions you plan to have over time.",
+          "register": "neutralny",
+          "contextPl": "Planowanie rozwoju zawodowego",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We talked about my career path and where I want to be in five years.",
+              "pl": "Rozmawialiśmy o mojej ścieżce kariery i o tym, gdzie chcę być za pięć lat.",
+              "focusEn": "career path",
+              "focusPl": "ścieżce kariery"
+            },
+            {
+              "en": "The company has a clear career path for engineers.",
+              "pl": "Firma ma jasną ścieżkę kariery dla inżynierów.",
+              "focusEn": "career path",
+              "focusPl": "ścieżkę kariery"
+            }
+          ],
+          "acceptedAnswers": [
+            "career path"
+          ],
+          "acceptedTranslations": [
+            "ścieżka kariery",
+            "ścieżka rozwoju",
+            "rozwój zawodowy"
+          ]
+        },
+        {
+          "id": "salary-benefits.worth",
+          "term": "worth",
+          "ipa": "/wɜːrθ/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "warty",
+          "definition": "Having a particular value.",
+          "register": "neutralny",
+          "contextPl": "Wartość pracownika na rynku",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Know what you're worth before you ask for more money.",
+              "pl": "Zanim poprosisz o więcej pieniędzy, wiedz, ile jesteś wart.",
+              "focusEn": "worth",
+              "focusPl": "wart"
+            },
+            {
+              "en": "She said my work is worth more than they're paying me.",
+              "pl": "Powiedziała, że moja praca jest warta więcej, niż mi płacą.",
+              "focusEn": "worth",
+              "focusPl": "warta"
+            }
+          ],
+          "acceptedAnswers": [
+            "worth"
+          ],
+          "acceptedTranslations": [
+            "warty",
+            "warta",
+            "wartościowy"
+          ]
+        },
+        {
+          "id": "salary-benefits.climb-the-ladder",
+          "term": "climb the ladder",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "piąć się po szczeblach kariery",
+          "definition": "To move up to higher positions in a company.",
+          "register": "neutralny",
+          "contextPl": "Awansowanie w hierarchii",
+          "natural": "",
+          "forms": "climb – climbed – climbed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She climbed the ladder from receptionist to director.",
+              "pl": "Wspięła się po szczeblach kariery od recepcjonistki do dyrektorki.",
+              "focusEn": "climbed the ladder",
+              "focusPl": "Wspięła się po szczeblach kariery"
+            },
+            {
+              "en": "I'm not sure I want to climb the ladder; I like my current job.",
+              "pl": "Nie wiem, czy chcę piąć się po szczeblach kariery, lubię swoją obecną pracę.",
+              "focusEn": "climb the ladder",
+              "focusPl": "piąć się po szczeblach kariery"
+            }
+          ],
+          "acceptedAnswers": [
+            "climb the ladder",
+            "climb the corporate ladder",
+            "corporate ladder"
+          ],
+          "acceptedTranslations": [
+            "piąć się po szczeblach kariery",
+            "robić karierę",
+            "awansować"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salary-benefits.benefits",
+      "namePl": "Benefity",
+      "scenePl": "Spotkanie w dziale kadr, na którym nowy pracownik wybiera pakiet świadczeń",
+      "entries": [
+        {
+          "id": "salary-benefits.benefits",
+          "term": "benefits",
+          "ipa": "/ˈbɛnəfɪts/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "świadczenia pracownicze",
+          "definition": "Extra things an employer gives workers besides pay, such as health insurance.",
+          "register": "neutralny",
+          "contextPl": "Pakiet dodatków do pensji",
+          "natural": "",
+          "forms": "benefit (l. poj.)",
+          "collocations": "benefits package; employee benefits; full benefits",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The HR manager explained all the benefits in a thirty-minute meeting.",
+              "pl": "Kierowniczka kadr omówiła wszystkie świadczenia w trzydziestominutowym spotkaniu.",
+              "focusEn": "benefits",
+              "focusPl": "świadczenia"
+            },
+            {
+              "en": "The job pays less, but the benefits are much better.",
+              "pl": "Praca jest gorzej płatna, ale benefity są dużo lepsze.",
+              "focusEn": "benefits",
+              "focusPl": "benefity"
+            }
+          ],
+          "acceptedAnswers": [
+            "benefits",
+            "benefit",
+            "benefits package"
+          ],
+          "acceptedTranslations": [
+            "świadczenia pracownicze",
+            "benefity",
+            "świadczenia",
+            "dodatki pozapłacowe"
+          ]
+        },
+        {
+          "id": "salary-benefits.health-insurance",
+          "term": "health insurance",
+          "ipa": "/ˈhɛlθ ɪnˌʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "ubezpieczenie zdrowotne",
+          "definition": "Insurance that pays for medical care.",
+          "register": "neutralny",
+          "contextPl": "Najważniejszy benefit w USA",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Health insurance starts on the first day of next month.",
+              "pl": "Ubezpieczenie zdrowotne zaczyna obowiązywać od pierwszego dnia przyszłego miesiąca.",
+              "focusEn": "Health insurance",
+              "focusPl": "Ubezpieczenie zdrowotne"
+            },
+            {
+              "en": "I added my wife to my health insurance during the meeting.",
+              "pl": "Na spotkaniu dopisałem żonę do mojego ubezpieczenia zdrowotnego.",
+              "focusEn": "health insurance",
+              "focusPl": "ubezpieczenia zdrowotnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "health insurance",
+            "medical insurance",
+            "health coverage"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie zdrowotne",
+            "ubezpieczenie medyczne",
+            "prywatna opieka medyczna"
+          ]
+        },
+        {
+          "id": "salary-benefits.dental",
+          "term": "dental",
+          "ipa": "/ˈdɛntəl/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dentystyczny",
+          "definition": "Related to teeth; often used for dental insurance.",
+          "register": "neutralny",
+          "contextPl": "Ubezpieczenie stomatologiczne w pakiecie",
+          "natural": "",
+          "forms": "",
+          "collocations": "dental insurance; dental plan; dental and vision",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The plan includes dental and vision coverage.",
+              "pl": "Pakiet obejmuje ubezpieczenie dentystyczne i okulistyczne.",
+              "focusEn": "dental",
+              "focusPl": "dentystyczne"
+            },
+            {
+              "en": "I signed up for the dental plan because I need two fillings.",
+              "pl": "Zapisałem się na plan stomatologiczny, bo potrzebuję dwóch plomb.",
+              "focusEn": "dental",
+              "focusPl": "stomatologiczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "dental",
+            "dental insurance"
+          ],
+          "acceptedTranslations": [
+            "dentystyczny",
+            "stomatologiczny",
+            "ubezpieczenie dentystyczne"
+          ]
+        },
+        {
+          "id": "salary-benefits.retirement-plan",
+          "term": "retirement plan",
+          "ipa": "/rɪˈtaɪərmənt ˌplæn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "plan emerytalny",
+          "definition": "A program that helps workers save money for when they stop working.",
+          "register": "neutralny",
+          "contextPl": "Oszczędzanie na emeryturę przez pracodawcę",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA najpopularniejszy jest plan 401(k), czytany „four-oh-one-k”.",
+          "examples": [
+            {
+              "en": "The company matches five percent of your retirement plan contributions.",
+              "pl": "Firma dopłaca do pięciu procent twoich wpłat na plan emerytalny.",
+              "focusEn": "retirement plan",
+              "focusPl": "plan emerytalny"
+            },
+            {
+              "en": "She helped me choose how much to put into my retirement plan.",
+              "pl": "Pomogła mi wybrać, ile odkładać na plan emerytalny.",
+              "focusEn": "retirement plan",
+              "focusPl": "plan emerytalny"
+            }
+          ],
+          "acceptedAnswers": [
+            "retirement plan",
+            "401(k)",
+            "pension plan"
+          ],
+          "acceptedTranslations": [
+            "plan emerytalny",
+            "program emerytalny",
+            "fundusz emerytalny",
+            "PPK"
+          ]
+        },
+        {
+          "id": "salary-benefits.match",
+          "term": "match",
+          "ipa": "/mætʃ/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dopłacać tyle samo",
+          "definition": "To add the same amount of money that an employee saves.",
+          "register": "neutralny",
+          "contextPl": "Dopłaty pracodawcy do oszczędności emerytalnych",
+          "natural": "",
+          "forms": "match – matched – matched",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The company will match up to four percent of your salary.",
+              "pl": "Firma dopłaci do czterech procent twojej pensji.",
+              "focusEn": "match",
+              "focusPl": "dopłaci"
+            },
+            {
+              "en": "If you save three percent, they match it dollar for dollar.",
+              "pl": "Jeśli odkładasz trzy procent, dokładają tyle samo, dolar za dolara.",
+              "focusEn": "match",
+              "focusPl": "dokładają"
+            }
+          ],
+          "acceptedAnswers": [
+            "match"
+          ],
+          "acceptedTranslations": [
+            "dopłacać tyle samo",
+            "dopłacić",
+            "dorównać wpłacie",
+            "dokładać"
+          ]
+        },
+        {
+          "id": "salary-benefits.enroll",
+          "term": "enroll",
+          "ipa": "/ɪnˈroʊl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zapisać się",
+          "definition": "To officially join a program, plan, or course.",
+          "register": "neutralny",
+          "contextPl": "Zapisywanie się do ubezpieczenia i programów",
+          "natural": "",
+          "forms": "enroll – enrolled – enrolled",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska z „ll”; w BrE „enrol”.",
+          "examples": [
+            {
+              "en": "You have thirty days to enroll in the health plan.",
+              "pl": "Masz trzydzieści dni, żeby zapisać się do planu zdrowotnego.",
+              "focusEn": "enroll",
+              "focusPl": "zapisać się"
+            },
+            {
+              "en": "I enrolled in the retirement plan on my first day.",
+              "pl": "Zapisałem się do planu emerytalnego pierwszego dnia.",
+              "focusEn": "enrolled",
+              "focusPl": "Zapisałem się"
+            }
+          ],
+          "acceptedAnswers": [
+            "enroll",
+            "sign up"
+          ],
+          "acceptedTranslations": [
+            "zapisać się",
+            "zapisać",
+            "zapisywać się",
+            "przystąpić"
+          ]
+        },
+        {
+          "id": "salary-benefits.coverage",
+          "term": "coverage",
+          "ipa": "/ˈkʌvərɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zakres ubezpieczenia",
+          "definition": "The protection that an insurance plan gives you.",
+          "register": "neutralny",
+          "contextPl": "Co obejmuje ubezpieczenie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Does the coverage include my kids too?",
+              "pl": "Czy ubezpieczenie obejmuje też moje dzieci?",
+              "focusEn": "coverage",
+              "focusPl": "ubezpieczenie"
+            },
+            {
+              "en": "The cheaper plan has less coverage for hospital stays.",
+              "pl": "Tańszy plan ma mniejszy zakres ochrony przy pobytach w szpitalu.",
+              "focusEn": "coverage",
+              "focusPl": "zakres ochrony"
+            }
+          ],
+          "acceptedAnswers": [
+            "coverage"
+          ],
+          "acceptedTranslations": [
+            "zakres ubezpieczenia",
+            "ochrona ubezpieczeniowa",
+            "ubezpieczenie"
+          ]
+        },
+        {
+          "id": "salary-benefits.premium",
+          "term": "premium",
+          "ipa": "/ˈpriːmiəm/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "składka",
+          "definition": "The amount you pay regularly for insurance.",
+          "register": "neutralny",
+          "contextPl": "Koszt ubezpieczenia potrącany z pensji",
+          "natural": "",
+          "forms": "premiums",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The premium is eighty dollars a month, taken from my paycheck.",
+              "pl": "Składka wynosi osiemdziesiąt dolarów miesięcznie i jest potrącana z wypłaty.",
+              "focusEn": "premium",
+              "focusPl": "Składka"
+            },
+            {
+              "en": "Adding my family raised the premium a lot.",
+              "pl": "Dodanie rodziny mocno podniosło składkę.",
+              "focusEn": "premium",
+              "focusPl": "składkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "premium"
+          ],
+          "acceptedTranslations": [
+            "składka",
+            "składka ubezpieczeniowa"
+          ]
+        },
+        {
+          "id": "salary-benefits.perk",
+          "term": "perk",
+          "ipa": "/pɜːrk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bonus",
+          "definition": "An extra advantage you get from a job, like free food or a phone.",
+          "register": "potoczny",
+          "contextPl": "Drobne dodatkowe korzyści z pracy",
+          "natural": "",
+          "forms": "perks",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Free lunch on Fridays is my favorite perk.",
+              "pl": "Darmowy lunch w piątki to mój ulubiony dodatek.",
+              "focusEn": "perk",
+              "focusPl": "dodatek"
+            },
+            {
+              "en": "She listed the perks: a gym membership, a phone, and free parking.",
+              "pl": "Wymieniła bonusy: karnet na siłownię, telefon i darmowe parkowanie.",
+              "focusEn": "perks",
+              "focusPl": "bonusy"
+            }
+          ],
+          "acceptedAnswers": [
+            "perk",
+            "benefit",
+            "fringe benefit"
+          ],
+          "acceptedTranslations": [
+            "bonus",
+            "dodatek",
+            "przywilej",
+            "benefit"
+          ]
+        },
+        {
+          "id": "salary-benefits.gym-membership",
+          "term": "gym membership",
+          "ipa": "/ˈdʒɪm ˌmɛmbərʃɪp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "karnet na siłownię",
+          "definition": "The right to use a gym, usually paid for monthly.",
+          "register": "neutralny",
+          "contextPl": "Popularny benefit pracowniczy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The company pays half of your gym membership.",
+              "pl": "Firma pokrywa połowę karnetu na siłownię.",
+              "focusEn": "gym membership",
+              "focusPl": "karnetu na siłownię"
+            },
+            {
+              "en": "I signed up for the gym membership right after the meeting.",
+              "pl": "Zaraz po spotkaniu zapisałem się na karnet na siłownię.",
+              "focusEn": "gym membership",
+              "focusPl": "karnet na siłownię"
+            }
+          ],
+          "acceptedAnswers": [
+            "gym membership"
+          ],
+          "acceptedTranslations": [
+            "karnet na siłownię",
+            "karnet sportowy",
+            "członkostwo w klubie fitness"
+          ]
+        },
+        {
+          "id": "salary-benefits.employee-discount",
+          "term": "employee discount",
+          "ipa": "/ɪmˌplɔɪiː ˈdɪskaʊnt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zniżka pracownicza",
+          "definition": "A lower price that workers get on the company's products.",
+          "register": "neutralny",
+          "contextPl": "Rabaty dla pracowników",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We get a twenty percent employee discount in all the stores.",
+              "pl": "Mamy dwudziestoprocentową zniżkę pracowniczą we wszystkich sklepach.",
+              "focusEn": "employee discount",
+              "focusPl": "zniżkę pracowniczą"
+            },
+            {
+              "en": "She showed me how to use my employee discount online.",
+              "pl": "Pokazała mi, jak korzystać ze zniżki pracowniczej online.",
+              "focusEn": "employee discount",
+              "focusPl": "zniżki pracowniczej"
+            }
+          ],
+          "acceptedAnswers": [
+            "employee discount",
+            "staff discount"
+          ],
+          "acceptedTranslations": [
+            "zniżka pracownicza",
+            "rabat pracowniczy",
+            "zniżka dla pracowników"
+          ]
+        },
+        {
+          "id": "salary-benefits.tuition-reimbursement",
+          "term": "tuition reimbursement",
+          "ipa": "/tuˈɪʃən ˌriːɪmˈbɜːrsmənt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zwrot kosztów nauki",
+          "definition": "Money an employer pays back to workers for classes or college.",
+          "register": "neutralny",
+          "contextPl": "Finansowanie studiów i kursów przez pracodawcę",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With tuition reimbursement, the company pays for my evening classes.",
+              "pl": "Dzięki zwrotowi kosztów nauki firma płaci za moje zajęcia wieczorowe.",
+              "focusEn": "tuition reimbursement",
+              "focusPl": "zwrotowi kosztów nauki"
+            },
+            {
+              "en": "I asked about tuition reimbursement for a master's degree.",
+              "pl": "Zapytałem o dofinansowanie studiów magisterskich.",
+              "focusEn": "tuition reimbursement",
+              "focusPl": "dofinansowanie studiów"
+            }
+          ],
+          "acceptedAnswers": [
+            "tuition reimbursement",
+            "tuition assistance"
+          ],
+          "acceptedTranslations": [
+            "zwrot kosztów nauki",
+            "dofinansowanie nauki",
+            "dofinansowanie studiów"
+          ]
+        },
+        {
+          "id": "salary-benefits.eligible",
+          "term": "eligible",
+          "ipa": "/ˈɛlɪdʒəbəl/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "uprawniony",
+          "definition": "Allowed by the rules to receive or do something.",
+          "register": "neutralny",
+          "contextPl": "Warunki otrzymania benefitów",
+          "natural": "",
+          "forms": "",
+          "collocations": "eligible for benefits; become eligible",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You're eligible for benefits after ninety days.",
+              "pl": "Do benefitów jesteś uprawniony po dziewięćdziesięciu dniach.",
+              "focusEn": "eligible",
+              "focusPl": "uprawniony"
+            },
+            {
+              "en": "Part-time workers aren't eligible for the retirement plan.",
+              "pl": "Pracownicy na niepełny etat nie mają prawa do planu emerytalnego.",
+              "focusEn": "eligible",
+              "focusPl": "prawa"
+            }
+          ],
+          "acceptedAnswers": [
+            "eligible",
+            "qualified"
+          ],
+          "acceptedTranslations": [
+            "uprawniony",
+            "mający prawo",
+            "spełniający warunki"
+          ]
+        },
+        {
+          "id": "salary-benefits.company-car",
+          "term": "company car",
+          "ipa": "/ˌkʌmpəni ˈkɑːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "samochód służbowy",
+          "definition": "A car that an employer provides for an employee to use.",
+          "register": "neutralny",
+          "contextPl": "Benefit dla handlowców i menedżerów",
+          "natural": "",
+          "forms": "company cars",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sales managers get a company car and a gas card.",
+              "pl": "Kierownicy sprzedaży dostają samochód służbowy i kartę paliwową.",
+              "focusEn": "company car",
+              "focusPl": "samochód służbowy"
+            },
+            {
+              "en": "I don't need a company car; I take the train to work.",
+              "pl": "Nie potrzebuję samochodu służbowego, dojeżdżam do pracy pociągiem.",
+              "focusEn": "company car",
+              "focusPl": "samochodu służbowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "company car"
+          ],
+          "acceptedTranslations": [
+            "samochód służbowy",
+            "auto służbowe",
+            "służbowy samochód"
+          ]
+        },
+        {
+          "id": "salary-benefits.stipend",
+          "term": "stipend",
+          "ipa": "/ˈstaɪpɛnd/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dodatek pieniężny",
+          "definition": "A fixed amount of money given for a specific purpose.",
+          "register": "neutralny",
+          "contextPl": "Dodatki na konkretne wydatki, np. na pracę z domu",
+          "natural": "",
+          "forms": "stipends",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Remote workers get a fifty-dollar monthly stipend for internet.",
+              "pl": "Pracownicy zdalni dostają pięćdziesiąt dolarów miesięcznego dodatku na internet.",
+              "focusEn": "stipend",
+              "focusPl": "dodatku"
+            },
+            {
+              "en": "I used my learning stipend to buy books.",
+              "pl": "Dodatek na rozwój wykorzystałem na zakup książek.",
+              "focusEn": "stipend",
+              "focusPl": "Dodatek"
+            }
+          ],
+          "acceptedAnswers": [
+            "stipend",
+            "allowance"
+          ],
+          "acceptedTranslations": [
+            "dodatek pieniężny",
+            "dodatek",
+            "ryczałt",
+            "dofinansowanie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salary-benefits.time-off",
+      "namePl": "Urlopy i nieobecności",
+      "scenePl": "Planowanie urlopu i składanie wniosku o wolne w kadrowej aplikacji na telefonie",
+      "entries": [
+        {
+          "id": "salary-benefits.vacation",
+          "term": "vacation",
+          "ipa": "/veɪˈkeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "urlop",
+          "definition": "Time off work for rest or travel.",
+          "register": "neutralny",
+          "contextPl": "Urlop wypoczynkowy",
+          "natural": "",
+          "forms": "vacations",
+          "collocations": "go on vacation; take a vacation; paid vacation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W BrE „holiday”; w USA „holidays” to święta.",
+          "examples": [
+            {
+              "en": "I'm taking a week of vacation in August.",
+              "pl": "W sierpniu biorę tydzień urlopu.",
+              "focusEn": "vacation",
+              "focusPl": "urlopu"
+            },
+            {
+              "en": "I booked my vacation in the app before the summer rush.",
+              "pl": "Zarezerwowałem urlop w aplikacji przed letnim szczytem.",
+              "focusEn": "vacation",
+              "focusPl": "urlop"
+            }
+          ],
+          "acceptedAnswers": [
+            "vacation",
+            "holiday"
+          ],
+          "acceptedTranslations": [
+            "urlop",
+            "urlop wypoczynkowy",
+            "wakacje",
+            "wolne"
+          ]
+        },
+        {
+          "id": "salary-benefits.day-off",
+          "term": "day off",
+          "ipa": "/ˌdeɪ ˈɔːf/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dzień wolny",
+          "definition": "A day when you do not work.",
+          "register": "neutralny",
+          "contextPl": "Pojedyncze dni wolne",
+          "natural": "",
+          "forms": "days off",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I asked for a day off on my son's birthday.",
+              "pl": "Poprosiłam o dzień wolny w urodziny syna.",
+              "focusEn": "day off",
+              "focusPl": "dzień wolny"
+            },
+            {
+              "en": "The app shows I have five days off left this year.",
+              "pl": "Aplikacja pokazuje, że zostało mi w tym roku pięć dni wolnych.",
+              "focusEn": "days off",
+              "focusPl": "dni wolnych"
+            }
+          ],
+          "acceptedAnswers": [
+            "day off"
+          ],
+          "acceptedTranslations": [
+            "dzień wolny",
+            "wolne",
+            "wolny dzień"
+          ]
+        },
+        {
+          "id": "salary-benefits.paid-time-off",
+          "term": "paid time off",
+          "ipa": "/ˌpeɪd ˌtaɪm ˈɔːf/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "płatny urlop",
+          "definition": "Time when you are not working but still get paid, often called PTO.",
+          "register": "neutralny",
+          "contextPl": "Pula płatnych dni wolnych w USA",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Skrót PTO bardzo często pojawia się w rozmowach i aplikacjach.",
+          "examples": [
+            {
+              "en": "I get fifteen days of paid time off a year.",
+              "pl": "Mam piętnaście dni płatnego urlopu w roku.",
+              "focusEn": "paid time off",
+              "focusPl": "płatnego urlopu"
+            },
+            {
+              "en": "My paid time off balance is shown at the top of the app.",
+              "pl": "Stan mojego płatnego urlopu widać na górze aplikacji.",
+              "focusEn": "paid time off",
+              "focusPl": "płatnego urlopu"
+            }
+          ],
+          "acceptedAnswers": [
+            "paid time off",
+            "PTO",
+            "paid leave"
+          ],
+          "acceptedTranslations": [
+            "płatny urlop",
+            "płatne wolne",
+            "płatne dni wolne",
+            "PTO"
+          ]
+        },
+        {
+          "id": "salary-benefits.request",
+          "term": "request",
+          "ipa": "/rɪˈkwɛst/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "złożyć wniosek",
+          "definition": "To ask for something in a formal way.",
+          "register": "neutralny",
+          "contextPl": "Wnioskowanie o urlop",
+          "natural": "",
+          "forms": "request – requested – requested",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I requested two weeks off for my wedding.",
+              "pl": "Złożyłem wniosek o dwa tygodnie wolnego na ślub.",
+              "focusEn": "requested",
+              "focusPl": "Złożyłem wniosek"
+            },
+            {
+              "en": "You should request time off at least a month ahead.",
+              "pl": "O wolne należy wnioskować co najmniej miesiąc wcześniej.",
+              "focusEn": "request",
+              "focusPl": "wnioskować"
+            }
+          ],
+          "acceptedAnswers": [
+            "request",
+            "ask for"
+          ],
+          "acceptedTranslations": [
+            "złożyć wniosek",
+            "wnioskować",
+            "poprosić",
+            "prosić o"
+          ]
+        },
+        {
+          "id": "salary-benefits.approve",
+          "term": "approve",
+          "ipa": "/əˈpruːv/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zatwierdzić",
+          "definition": "To officially say yes to a request.",
+          "register": "neutralny",
+          "contextPl": "Akceptacja wniosku urlopowego",
+          "natural": "",
+          "forms": "approve – approved – approved",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "deny",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My manager approved my vacation in less than an hour.",
+              "pl": "Kierowniczka zatwierdziła mój urlop w niecałą godzinę.",
+              "focusEn": "approved",
+              "focusPl": "zatwierdziła"
+            },
+            {
+              "en": "The app says my request is still waiting to be approved.",
+              "pl": "Aplikacja pokazuje, że mój wniosek wciąż czeka na zatwierdzenie.",
+              "focusEn": "approved",
+              "focusPl": "zatwierdzenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "approve"
+          ],
+          "acceptedTranslations": [
+            "zatwierdzić",
+            "zaakceptować",
+            "zatwierdzać",
+            "zgodzić się"
+          ]
+        },
+        {
+          "id": "salary-benefits.sick-leave",
+          "term": "sick leave",
+          "ipa": "/ˈsɪk ˌliːv/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zwolnienie chorobowe",
+          "definition": "Time off work because you are ill, often paid.",
+          "register": "neutralny",
+          "contextPl": "Nieobecność z powodu choroby",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I have six days of sick leave left this year.",
+              "pl": "W tym roku zostało mi sześć dni zwolnienia chorobowego.",
+              "focusEn": "sick leave",
+              "focusPl": "zwolnienia chorobowego"
+            },
+            {
+              "en": "I recorded my flu as sick leave, not vacation.",
+              "pl": "Grypę zgłosiłem w aplikacji jako zwolnienie chorobowe, a nie urlop.",
+              "focusEn": "sick leave",
+              "focusPl": "zwolnienie chorobowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "sick leave",
+            "sick days"
+          ],
+          "acceptedTranslations": [
+            "zwolnienie chorobowe",
+            "chorobowe",
+            "L4",
+            "zwolnienie lekarskie"
+          ]
+        },
+        {
+          "id": "salary-benefits.parental-leave",
+          "term": "parental leave",
+          "ipa": "/pəˈrɛntəl ˌliːv/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "urlop rodzicielski",
+          "definition": "Time off work for a parent after a child is born or adopted.",
+          "register": "neutralny",
+          "contextPl": "Urlop dla rodziców po narodzinach dziecka",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też „maternity leave” (dla matki) i „paternity leave” (dla ojca).",
+          "examples": [
+            {
+              "en": "The company gives twelve weeks of paid parental leave.",
+              "pl": "Firma daje dwanaście tygodni płatnego urlopu rodzicielskiego.",
+              "focusEn": "parental leave",
+              "focusPl": "urlopu rodzicielskiego"
+            },
+            {
+              "en": "I'm planning my parental leave for when the baby arrives in March.",
+              "pl": "Planuję urlop rodzicielski na marzec, kiedy urodzi się dziecko.",
+              "focusEn": "parental leave",
+              "focusPl": "urlop rodzicielski"
+            }
+          ],
+          "acceptedAnswers": [
+            "parental leave",
+            "maternity leave",
+            "paternity leave"
+          ],
+          "acceptedTranslations": [
+            "urlop rodzicielski",
+            "urlop macierzyński",
+            "urlop ojcowski"
+          ]
+        },
+        {
+          "id": "salary-benefits.unpaid-leave",
+          "term": "unpaid leave",
+          "ipa": "/ˌʌnˈpeɪd ˌliːv/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "urlop bezpłatny",
+          "definition": "Time off work without pay.",
+          "register": "neutralny",
+          "contextPl": "Dłuższa nieobecność bez wynagrodzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I used all my vacation, so the extra week will be unpaid leave.",
+              "pl": "Wykorzystałem cały urlop, więc dodatkowy tydzień będzie urlopem bezpłatnym.",
+              "focusEn": "unpaid leave",
+              "focusPl": "urlopem bezpłatnym"
+            },
+            {
+              "en": "She took three months of unpaid leave to travel.",
+              "pl": "Wzięła trzy miesiące urlopu bezpłatnego, żeby podróżować.",
+              "focusEn": "unpaid leave",
+              "focusPl": "urlopu bezpłatnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "unpaid leave"
+          ],
+          "acceptedTranslations": [
+            "urlop bezpłatny",
+            "bezpłatny urlop"
+          ]
+        },
+        {
+          "id": "salary-benefits.holiday",
+          "term": "holiday",
+          "ipa": "/ˈhɑːləˌdeɪ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "święto",
+          "definition": "A day when most people do not work because of a national or religious celebration.",
+          "register": "neutralny",
+          "contextPl": "Dni świąteczne wolne od pracy",
+          "natural": "",
+          "forms": "holidays",
+          "collocations": "federal holiday; paid holiday; the holidays",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA „holiday” to przede wszystkim dzień świąteczny, a nie urlop.",
+          "examples": [
+            {
+              "en": "The office is closed for the holiday on Monday.",
+              "pl": "W poniedziałek biuro jest zamknięte z powodu święta.",
+              "focusEn": "holiday",
+              "focusPl": "święta"
+            },
+            {
+              "en": "The app shows all paid holidays in green.",
+              "pl": "Aplikacja pokazuje wszystkie płatne święta na zielono.",
+              "focusEn": "holidays",
+              "focusPl": "święta"
+            }
+          ],
+          "acceptedAnswers": [
+            "holiday",
+            "public holiday",
+            "federal holiday"
+          ],
+          "acceptedTranslations": [
+            "święto",
+            "dzień świąteczny",
+            "dzień wolny od pracy"
+          ]
+        },
+        {
+          "id": "salary-benefits.accrue",
+          "term": "accrue",
+          "ipa": "/əˈkruː/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "narastać",
+          "definition": "To increase gradually over time, like vacation days you earn each month.",
+          "register": "formalny",
+          "contextPl": "Naliczanie dni urlopu",
+          "natural": "",
+          "forms": "accrue – accrued – accrued",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You accrue about one vacation day per month.",
+              "pl": "Nalicza się ci około jednego dnia urlopu na miesiąc.",
+              "focusEn": "accrue",
+              "focusPl": "Nalicza się"
+            },
+            {
+              "en": "I've accrued ten days of PTO since January.",
+              "pl": "Od stycznia uzbierało mi się dziesięć dni płatnego wolnego.",
+              "focusEn": "accrued",
+              "focusPl": "uzbierało mi się"
+            }
+          ],
+          "acceptedAnswers": [
+            "accrue"
+          ],
+          "acceptedTranslations": [
+            "narastać",
+            "naliczać się",
+            "gromadzić się",
+            "uzbierać się"
+          ]
+        },
+        {
+          "id": "salary-benefits.carry-over",
+          "term": "carry over",
+          "ipa": "/ˌkæri ˈoʊvər/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przenieść na następny rok",
+          "definition": "To move unused days or money to the next period.",
+          "register": "neutralny",
+          "contextPl": "Niewykorzystany urlop",
+          "natural": "",
+          "forms": "carry – carried – carried",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I carry over my unused vacation days to next year?",
+              "pl": "Czy mogę przenieść niewykorzystane dni urlopu na przyszły rok?",
+              "focusEn": "carry over",
+              "focusPl": "przenieść"
+            },
+            {
+              "en": "Only five days carry over; the rest disappear in January.",
+              "pl": "Przechodzi tylko pięć dni, reszta znika w styczniu.",
+              "focusEn": "carry over",
+              "focusPl": "Przechodzi"
+            }
+          ],
+          "acceptedAnswers": [
+            "carry over",
+            "roll over"
+          ],
+          "acceptedTranslations": [
+            "przenieść na następny rok",
+            "przenieść",
+            "przechodzić na kolejny rok"
+          ]
+        },
+        {
+          "id": "salary-benefits.personal-day",
+          "term": "personal day",
+          "ipa": "/ˈpɜːrsənəl ˌdeɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dzień wolny na sprawy osobiste",
+          "definition": "A day off that you can use for private matters.",
+          "register": "neutralny",
+          "contextPl": "Wolne na załatwienie prywatnych spraw",
+          "natural": "",
+          "forms": "personal days",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm taking a personal day to deal with my apartment move.",
+              "pl": "Biorę dzień wolny na sprawy osobiste, żeby ogarnąć przeprowadzkę.",
+              "focusEn": "personal day",
+              "focusPl": "dzień wolny na sprawy osobiste"
+            },
+            {
+              "en": "We get two personal days a year in addition to vacation.",
+              "pl": "Oprócz urlopu mamy dwa dni na sprawy osobiste w roku.",
+              "focusEn": "personal days",
+              "focusPl": "dni na sprawy osobiste"
+            }
+          ],
+          "acceptedAnswers": [
+            "personal day"
+          ],
+          "acceptedTranslations": [
+            "dzień wolny na sprawy osobiste",
+            "dzień wolny",
+            "dzień na sprawy prywatne"
+          ]
+        },
+        {
+          "id": "salary-benefits.bereavement-leave",
+          "term": "bereavement leave",
+          "ipa": "/bɪˈriːvmənt ˌliːv/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "urlop okolicznościowy",
+          "definition": "Time off after a close family member dies.",
+          "register": "formalny",
+          "contextPl": "Wolne po śmierci kogoś bliskiego",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She took three days of bereavement leave after her grandmother died.",
+              "pl": "Po śmierci babci wzięła trzy dni urlopu okolicznościowego.",
+              "focusEn": "bereavement leave",
+              "focusPl": "urlopu okolicznościowego"
+            },
+            {
+              "en": "The app lists bereavement leave as a separate type of time off.",
+              "pl": "Aplikacja wymienia urlop okolicznościowy jako osobny rodzaj nieobecności.",
+              "focusEn": "bereavement leave",
+              "focusPl": "urlop okolicznościowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "bereavement leave"
+          ],
+          "acceptedTranslations": [
+            "urlop okolicznościowy",
+            "wolne z powodu żałoby",
+            "urlop z powodu śmierci bliskiej osoby"
+          ]
+        },
+        {
+          "id": "salary-benefits.sabbatical",
+          "term": "sabbatical",
+          "ipa": "/səˈbætɪkəl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "rare",
+          "translation": "urlop sabatyczny",
+          "definition": "A long period of paid time off to rest, study, or travel.",
+          "register": "neutralny",
+          "contextPl": "Dłuższa przerwa od pracy dla rozwoju",
+          "natural": "",
+          "forms": "sabbaticals",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After seven years, employees can take a three-month sabbatical.",
+              "pl": "Po siedmiu latach pracownicy mogą wziąć trzymiesięczny urlop sabatyczny.",
+              "focusEn": "sabbatical",
+              "focusPl": "urlop sabatyczny"
+            },
+            {
+              "en": "I'm using my sabbatical to write a book.",
+              "pl": "Wykorzystuję urlop sabatyczny, żeby napisać książkę.",
+              "focusEn": "sabbatical",
+              "focusPl": "urlop sabatyczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "sabbatical"
+          ],
+          "acceptedTranslations": [
+            "urlop sabatyczny",
+            "urlop naukowy",
+            "urlop twórczy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salary-benefits.contract",
+      "namePl": "Umowa i zakończenie pracy",
+      "scenePl": "Wieczorne czytanie umowy o pracę w domu i rozmowa o warunkach odejścia z firmy",
+      "entries": [
+        {
+          "id": "salary-benefits.contract",
+          "term": "contract",
+          "ipa": "/ˈkɑːnˌtrækt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "umowa",
+          "definition": "A written legal agreement between an employer and an employee.",
+          "register": "neutralny",
+          "contextPl": "Dokument określający warunki zatrudnienia",
+          "natural": "",
+          "forms": "contracts",
+          "collocations": "sign a contract; employment contract; one-year contract",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I read my contract twice before signing it.",
+              "pl": "Przeczytałem umowę dwa razy, zanim ją podpisałem.",
+              "focusEn": "contract",
+              "focusPl": "umowę"
+            },
+            {
+              "en": "The contract says I get three weeks of vacation.",
+              "pl": "W umowie jest napisane, że przysługują mi trzy tygodnie urlopu.",
+              "focusEn": "contract",
+              "focusPl": "umowie"
+            }
+          ],
+          "acceptedAnswers": [
+            "contract",
+            "employment contract"
+          ],
+          "acceptedTranslations": [
+            "umowa",
+            "umowa o pracę",
+            "kontrakt"
+          ]
+        },
+        {
+          "id": "salary-benefits.terms",
+          "term": "terms",
+          "ipa": "/tɜːrmz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "warunki",
+          "definition": "The conditions of an agreement.",
+          "register": "neutralny",
+          "contextPl": "Szczegóły umowy",
+          "natural": "",
+          "forms": "",
+          "collocations": "terms and conditions; agree to the terms",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I asked a lawyer to check the terms of my contract.",
+              "pl": "Poprosiłem prawnika o sprawdzenie warunków mojej umowy.",
+              "focusEn": "terms",
+              "focusPl": "warunków"
+            },
+            {
+              "en": "The terms are fine, except for the long notice period.",
+              "pl": "Warunki są w porządku, poza długim okresem wypowiedzenia.",
+              "focusEn": "terms",
+              "focusPl": "Warunki"
+            }
+          ],
+          "acceptedAnswers": [
+            "terms",
+            "conditions"
+          ],
+          "acceptedTranslations": [
+            "warunki",
+            "warunki umowy",
+            "postanowienia"
+          ]
+        },
+        {
+          "id": "salary-benefits.quit",
+          "term": "quit",
+          "ipa": "/kwɪt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "rzucić pracę",
+          "definition": "To leave your job by your own choice.",
+          "register": "neutralny",
+          "contextPl": "Odejście z pracy z własnej woli",
+          "natural": "",
+          "forms": "quit – quit – quit",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm going to quit after I sign the new contract somewhere else.",
+              "pl": "Rzucę pracę, kiedy podpiszę nową umowę gdzie indziej.",
+              "focusEn": "quit",
+              "focusPl": "Rzucę pracę"
+            },
+            {
+              "en": "She quit because the pay was too low.",
+              "pl": "Odeszła z pracy, bo płaca była za niska.",
+              "focusEn": "quit",
+              "focusPl": "Odeszła z pracy"
+            }
+          ],
+          "acceptedAnswers": [
+            "quit",
+            "resign",
+            "leave"
+          ],
+          "acceptedTranslations": [
+            "rzucić pracę",
+            "odejść z pracy",
+            "zrezygnować",
+            "rzucić robotę"
+          ]
+        },
+        {
+          "id": "salary-benefits.resign",
+          "term": "resign",
+          "ipa": "/rɪˈzaɪn/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "złożyć rezygnację",
+          "definition": "To officially tell your employer that you are leaving your job.",
+          "register": "formalny",
+          "contextPl": "Formalne odejście z pracy",
+          "natural": "",
+          "forms": "resign – resigned – resigned",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I resigned by email and offered to train my replacement.",
+              "pl": "Złożyłem rezygnację mailem i zaproponowałem, że przeszkolę następcę.",
+              "focusEn": "resigned",
+              "focusPl": "Złożyłem rezygnację"
+            },
+            {
+              "en": "According to my contract, I must give a month's notice if I resign.",
+              "pl": "Według umowy, jeśli złożę wypowiedzenie, muszę zachować miesięczny okres.",
+              "focusEn": "resign",
+              "focusPl": "złożę wypowiedzenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "resign",
+            "quit"
+          ],
+          "acceptedTranslations": [
+            "złożyć rezygnację",
+            "rezygnować",
+            "złożyć wypowiedzenie",
+            "odejść"
+          ]
+        },
+        {
+          "id": "salary-benefits.notice-period",
+          "term": "notice period",
+          "ipa": "/ˈnoʊtɪs ˌpɪriəd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "okres wypowiedzenia",
+          "definition": "The time between telling your employer you are leaving and your last day.",
+          "register": "neutralny",
+          "contextPl": "Czas od wypowiedzenia do odejścia",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My notice period is one month, according to the contract.",
+              "pl": "Według umowy mój okres wypowiedzenia to jeden miesiąc.",
+              "focusEn": "notice period",
+              "focusPl": "okres wypowiedzenia"
+            },
+            {
+              "en": "During my notice period, I trained the new person.",
+              "pl": "W trakcie okresu wypowiedzenia szkoliłem nową osobę.",
+              "focusEn": "notice period",
+              "focusPl": "okresu wypowiedzenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "notice period",
+            "notice"
+          ],
+          "acceptedTranslations": [
+            "okres wypowiedzenia",
+            "wypowiedzenie"
+          ]
+        },
+        {
+          "id": "salary-benefits.fire",
+          "term": "fire",
+          "ipa": "/faɪər/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zwolnić",
+          "definition": "To make someone leave their job, usually because of their behavior or work.",
+          "register": "potoczny",
+          "contextPl": "Zwolnienie z winy pracownika",
+          "natural": "",
+          "forms": "fire – fired – fired",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "hire",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The contract explains when the company can fire someone.",
+              "pl": "Umowa wyjaśnia, kiedy firma może kogoś zwolnić.",
+              "focusEn": "fire",
+              "focusPl": "zwolnić"
+            },
+            {
+              "en": "He was fired for missing work too many times.",
+              "pl": "Zwolniono go za zbyt częste nieobecności.",
+              "focusEn": "fired",
+              "focusPl": "Zwolniono"
+            }
+          ],
+          "acceptedAnswers": [
+            "fire",
+            "let go",
+            "dismiss"
+          ],
+          "acceptedTranslations": [
+            "zwolnić",
+            "zwalniać",
+            "wyrzucić z pracy",
+            "wylać z roboty"
+          ]
+        },
+        {
+          "id": "salary-benefits.lay-off",
+          "term": "lay off",
+          "ipa": "/ˌleɪ ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zwolnić z przyczyn ekonomicznych",
+          "definition": "To end someone's job because the company does not have enough work or money.",
+          "register": "neutralny",
+          "contextPl": "Zwolnienia grupowe i redukcje",
+          "natural": "",
+          "forms": "lay – laid – laid",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The company laid off fifty people last spring.",
+              "pl": "Wiosną firma zwolniła pięćdziesiąt osób.",
+              "focusEn": "laid off",
+              "focusPl": "zwolniła"
+            },
+            {
+              "en": "If I get laid off, the contract gives me two months of pay.",
+              "pl": "Jeśli zostanę zwolniony, umowa gwarantuje mi dwie pensje.",
+              "focusEn": "laid off",
+              "focusPl": "zostanę zwolniony"
+            }
+          ],
+          "acceptedAnswers": [
+            "lay off",
+            "let go"
+          ],
+          "acceptedTranslations": [
+            "zwolnić z przyczyn ekonomicznych",
+            "zwalniać",
+            "redukować etaty",
+            "zwolnić z pracy"
+          ]
+        },
+        {
+          "id": "salary-benefits.layoff",
+          "term": "layoff",
+          "ipa": "/ˈleɪˌɔːf/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zwolnienie",
+          "definition": "The ending of someone's job because a company needs to cut costs.",
+          "register": "neutralny",
+          "contextPl": "Redukcje zatrudnienia",
+          "natural": "",
+          "forms": "layoffs",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There were rumors of layoffs, so I read my contract again.",
+              "pl": "Krążyły plotki o zwolnieniach, więc jeszcze raz przeczytałem umowę.",
+              "focusEn": "layoffs",
+              "focusPl": "zwolnieniach"
+            },
+            {
+              "en": "After the layoffs, the rest of us had twice as much work.",
+              "pl": "Po zwolnieniach reszta z nas miała dwa razy więcej pracy.",
+              "focusEn": "layoffs",
+              "focusPl": "zwolnieniach"
+            }
+          ],
+          "acceptedAnswers": [
+            "layoff",
+            "layoffs"
+          ],
+          "acceptedTranslations": [
+            "zwolnienie",
+            "zwolnienia grupowe",
+            "redukcja etatów"
+          ]
+        },
+        {
+          "id": "salary-benefits.severance",
+          "term": "severance",
+          "ipa": "/ˈsɛvərəns/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "odprawa",
+          "definition": "Money paid to an employee when their job ends.",
+          "register": "neutralny",
+          "contextPl": "Pieniądze przy zakończeniu zatrudnienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "severance pay; severance package",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The contract promises two weeks of severance for every year worked.",
+              "pl": "Umowa obiecuje dwa tygodnie odprawy za każdy przepracowany rok.",
+              "focusEn": "severance",
+              "focusPl": "odprawy"
+            },
+            {
+              "en": "I used my severance to pay rent while I looked for work.",
+              "pl": "Z odprawy płaciłem czynsz, szukając pracy.",
+              "focusEn": "severance",
+              "focusPl": "odprawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "severance",
+            "severance pay",
+            "severance package"
+          ],
+          "acceptedTranslations": [
+            "odprawa",
+            "odprawa pieniężna"
+          ]
+        },
+        {
+          "id": "salary-benefits.at-will",
+          "term": "at-will",
+          "ipa": "/ˌæt ˈwɪl/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "bez obowiązku podawania przyczyny",
+          "definition": "Describing US employment that either side can end at any time for almost any reason.",
+          "register": "specjalistyczny",
+          "contextPl": "Typowy w USA rodzaj zatrudnienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W większości stanów USA zatrudnienie jest „at-will” — bez obowiązkowego okresu wypowiedzenia.",
+          "examples": [
+            {
+              "en": "My contract says it's at-will employment, so there's no notice period.",
+              "pl": "W umowie napisano, że to zatrudnienie bez obowiązku wypowiedzenia, więc nie ma okresu wypowiedzenia.",
+              "focusEn": "at-will",
+              "focusPl": "bez obowiązku wypowiedzenia"
+            },
+            {
+              "en": "In an at-will job, they can let you go at any time.",
+              "pl": "W pracy na zasadzie at-will mogą cię zwolnić w każdej chwili.",
+              "focusEn": "at-will",
+              "focusPl": "na zasadzie at-will"
+            }
+          ],
+          "acceptedAnswers": [
+            "at-will",
+            "at will"
+          ],
+          "acceptedTranslations": [
+            "bez obowiązku podawania przyczyny",
+            "at-will",
+            "rozwiązywalne w każdej chwili"
+          ]
+        },
+        {
+          "id": "salary-benefits.non-compete",
+          "term": "non-compete",
+          "ipa": "/ˌnɑːn kəmˈpiːt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zakaz konkurencji",
+          "definition": "A part of a contract that stops you from working for competitors for some time.",
+          "register": "neutralny",
+          "contextPl": "Ograniczenia po odejściu z firmy",
+          "natural": "",
+          "forms": "",
+          "collocations": "non-compete agreement; non-compete clause",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The non-compete says I can't work for a competitor for a year.",
+              "pl": "Zakaz konkurencji mówi, że przez rok nie mogę pracować dla konkurencji.",
+              "focusEn": "non-compete",
+              "focusPl": "Zakaz konkurencji"
+            },
+            {
+              "en": "I asked them to remove the non-compete from my contract.",
+              "pl": "Poprosiłem o usunięcie klauzuli o zakazie konkurencji z umowy.",
+              "focusEn": "non-compete",
+              "focusPl": "klauzuli o zakazie konkurencji"
+            }
+          ],
+          "acceptedAnswers": [
+            "non-compete",
+            "non-compete clause",
+            "noncompete"
+          ],
+          "acceptedTranslations": [
+            "zakaz konkurencji",
+            "klauzula o zakazie konkurencji",
+            "umowa o zakazie konkurencji"
+          ]
+        },
+        {
+          "id": "salary-benefits.confidentiality",
+          "term": "confidentiality",
+          "ipa": "/ˌkɑːnfəˌdɛnʃiˈæləti/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "poufność",
+          "definition": "The duty to keep information secret.",
+          "register": "neutralny",
+          "contextPl": "Zapisy o tajemnicy firmy w umowie",
+          "natural": "",
+          "forms": "",
+          "collocations": "confidentiality agreement; confidentiality clause",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The confidentiality section is two pages long.",
+              "pl": "Sekcja o poufności ma dwie strony.",
+              "focusEn": "confidentiality",
+              "focusPl": "poufności"
+            },
+            {
+              "en": "I can't share our prices because of the confidentiality clause.",
+              "pl": "Nie mogę podać naszych cen ze względu na klauzulę poufności.",
+              "focusEn": "confidentiality",
+              "focusPl": "poufności"
+            }
+          ],
+          "acceptedAnswers": [
+            "confidentiality",
+            "confidentiality agreement",
+            "NDA"
+          ],
+          "acceptedTranslations": [
+            "poufność",
+            "tajemnica służbowa",
+            "zachowanie poufności"
+          ]
+        },
+        {
+          "id": "salary-benefits.employer",
+          "term": "employer",
+          "ipa": "/ɪmˈplɔɪər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "pracodawca",
+          "definition": "A person or company that pays people to work for them.",
+          "register": "neutralny",
+          "contextPl": "Strona umowy o pracę",
+          "natural": "",
+          "forms": "employers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "employee",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My employer pays half of my health insurance.",
+              "pl": "Mój pracodawca płaci połowę mojego ubezpieczenia zdrowotnego.",
+              "focusEn": "employer",
+              "focusPl": "pracodawca"
+            },
+            {
+              "en": "The contract lists my employer's address on the first page.",
+              "pl": "Na pierwszej stronie umowy jest adres mojego pracodawcy.",
+              "focusEn": "employer",
+              "focusPl": "pracodawcy"
+            }
+          ],
+          "acceptedAnswers": [
+            "employer"
+          ],
+          "acceptedTranslations": [
+            "pracodawca",
+            "firma",
+            "zatrudniający"
+          ]
+        },
+        {
+          "id": "salary-benefits.full-time-employee",
+          "term": "full-time employee",
+          "ipa": "/ˌfʊlˈtaɪm ɪmˌplɔɪiː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pracownik pełnoetatowy",
+          "definition": "A worker employed for a full working week, usually with benefits.",
+          "register": "neutralny",
+          "contextPl": "Status pracownika z pełnym pakietem",
+          "natural": "",
+          "forms": "full-time employees",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "As a full-time employee, I get all the benefits.",
+              "pl": "Jako pracownik pełnoetatowy mam wszystkie benefity.",
+              "focusEn": "full-time employee",
+              "focusPl": "pracownik pełnoetatowy"
+            },
+            {
+              "en": "My contract changed me from part-time to full-time employee in May.",
+              "pl": "W maju umowa zmieniła mój status z niepełnego etatu na pracownika pełnoetatowego.",
+              "focusEn": "full-time employee",
+              "focusPl": "pracownika pełnoetatowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "full-time employee"
+          ],
+          "acceptedTranslations": [
+            "pracownik pełnoetatowy",
+            "pracownik na pełen etat",
+            "etatowiec"
+          ]
+        },
+        {
+          "id": "salary-benefits.independent-contractor",
+          "term": "independent contractor",
+          "ipa": "/ˌɪndɪˌpɛndənt ˈkɑːnˌtræktər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "samozatrudniony wykonawca",
+          "definition": "A person who works for a company but is not its employee.",
+          "register": "neutralny",
+          "contextPl": "Współpraca bez etatu, bez benefitów",
+          "natural": "",
+          "forms": "independent contractors",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Odpowiednik polskiego B2B lub umowy zlecenia; pracodawca nie płaci za benefity.",
+          "examples": [
+            {
+              "en": "As an independent contractor, I don't get health insurance from them.",
+              "pl": "Jako samozatrudniony wykonawca nie dostaję od nich ubezpieczenia zdrowotnego.",
+              "focusEn": "independent contractor",
+              "focusPl": "samozatrudniony wykonawca"
+            },
+            {
+              "en": "My contract says I'm an independent contractor, not an employee.",
+              "pl": "W umowie jest napisane, że jestem niezależnym wykonawcą, a nie pracownikiem.",
+              "focusEn": "independent contractor",
+              "focusPl": "niezależnym wykonawcą"
+            }
+          ],
+          "acceptedAnswers": [
+            "independent contractor",
+            "contractor",
+            "freelancer"
+          ],
+          "acceptedTranslations": [
+            "samozatrudniony wykonawca",
+            "kontraktor",
+            "współpracownik na B2B",
+            "zleceniobiorca"
+          ]
+        }
+      ]
+    }
+  ]
+}

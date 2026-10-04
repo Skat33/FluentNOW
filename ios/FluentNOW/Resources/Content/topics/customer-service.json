@@ -1,0 +1,2823 @@
+{
+  "schemaVersion": 1,
+  "id": "customer-service",
+  "namePl": "Obsługa klienta",
+  "nameEn": "Customer Service",
+  "group": "work",
+  "symbol": "headphones",
+  "summaryPl": "Zwroty i wymiany, infolinia i pomoc techniczna, uprzejme formuły konsultanta, gwarancja i naprawy oraz zadowolenie klienta.",
+  "aliases": [
+    "obsługa klienta",
+    "zwrot",
+    "reklamacja",
+    "infolinia",
+    "pomoc techniczna",
+    "gwarancja",
+    "biuro obsługi klienta",
+    "customer service",
+    "customer support"
+  ],
+  "categories": [
+    {
+      "id": "customer-service.returns",
+      "namePl": "Zwroty i wymiany",
+      "scenePl": "Sobota w punkcie zwrotów sklepu z elektroniką, przy ladzie z kolejką klientów",
+      "entries": [
+        {
+          "id": "customer-service.return",
+          "term": "return",
+          "ipa": "/rɪˈtɜːrn/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zwrócić",
+          "definition": "To take something back to the store where you bought it.",
+          "register": "neutralny",
+          "contextPl": "Oddawanie towaru do sklepu",
+          "natural": "",
+          "forms": "return – returned – returned",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to return these headphones; they're too small.",
+              "pl": "Chciałbym zwrócić te słuchawki, są za małe.",
+              "focusEn": "return",
+              "focusPl": "zwrócić"
+            },
+            {
+              "en": "She returned the blender because it was the wrong color.",
+              "pl": "Zwróciła blender, bo był w złym kolorze.",
+              "focusEn": "returned",
+              "focusPl": "Zwróciła"
+            }
+          ],
+          "acceptedAnswers": [
+            "return",
+            "take back",
+            "bring back"
+          ],
+          "acceptedTranslations": [
+            "zwrócić",
+            "oddać",
+            "zwracać",
+            "oddawać"
+          ]
+        },
+        {
+          "id": "customer-service.refund",
+          "term": "refund",
+          "ipa": "/ˈriːˌfʌnd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zwrot pieniędzy",
+          "definition": "Money that is given back to you when you return something.",
+          "register": "neutralny",
+          "contextPl": "Odzyskiwanie pieniędzy za towar",
+          "natural": "",
+          "forms": "refunds",
+          "collocations": "get a refund; full refund; ask for a refund",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik: „refund” /rɪˈfʌnd/ = zwrócić pieniądze.",
+          "examples": [
+            {
+              "en": "Can I get a refund, or only store credit?",
+              "pl": "Czy mogę dostać zwrot pieniędzy, czy tylko bon do sklepu?",
+              "focusEn": "refund",
+              "focusPl": "zwrot pieniędzy"
+            },
+            {
+              "en": "The refund will appear on your card in three to five days.",
+              "pl": "Zwrot pieniędzy pojawi się na pana karcie w ciągu trzech do pięciu dni.",
+              "focusEn": "refund",
+              "focusPl": "Zwrot pieniędzy"
+            }
+          ],
+          "acceptedAnswers": [
+            "refund"
+          ],
+          "acceptedTranslations": [
+            "zwrot pieniędzy",
+            "zwrot",
+            "zwrot kosztów",
+            "zwrot należności"
+          ]
+        },
+        {
+          "id": "customer-service.exchange",
+          "term": "exchange",
+          "ipa": "/ɪksˈtʃeɪndʒ/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wymienić",
+          "definition": "To give back something you bought and get a different item instead.",
+          "register": "neutralny",
+          "contextPl": "Wymiana towaru na inny",
+          "natural": "",
+          "forms": "exchange – exchanged – exchanged",
+          "collocations": "exchange something for something",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I exchange this phone case for a black one?",
+              "pl": "Czy mogę wymienić to etui na czarne?",
+              "focusEn": "exchange",
+              "focusPl": "wymienić"
+            },
+            {
+              "en": "The clerk exchanged my broken charger in two minutes.",
+              "pl": "Sprzedawca wymienił mi zepsutą ładowarkę w dwie minuty.",
+              "focusEn": "exchanged",
+              "focusPl": "wymienił"
+            }
+          ],
+          "acceptedAnswers": [
+            "exchange",
+            "swap"
+          ],
+          "acceptedTranslations": [
+            "wymienić",
+            "wymieniać",
+            "zamienić"
+          ]
+        },
+        {
+          "id": "customer-service.receipt",
+          "term": "receipt",
+          "ipa": "/rɪˈsiːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "paragon",
+          "definition": "A piece of paper or email that shows what you bought and paid.",
+          "register": "neutralny",
+          "contextPl": "Dowód zakupu przy zwrocie",
+          "natural": "",
+          "forms": "receipts",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Litera „p” w „receipt” jest nieme.",
+          "examples": [
+            {
+              "en": "Do you have the receipt for this speaker?",
+              "pl": "Czy ma pan paragon na ten głośnik?",
+              "focusEn": "receipt",
+              "focusPl": "paragon"
+            },
+            {
+              "en": "I lost the receipt, but I paid with my credit card.",
+              "pl": "Zgubiłem paragon, ale płaciłem kartą kredytową.",
+              "focusEn": "receipt",
+              "focusPl": "paragon"
+            }
+          ],
+          "acceptedAnswers": [
+            "receipt",
+            "proof of purchase"
+          ],
+          "acceptedTranslations": [
+            "paragon",
+            "rachunek",
+            "dowód zakupu"
+          ]
+        },
+        {
+          "id": "customer-service.store-credit",
+          "term": "store credit",
+          "ipa": "/ˌstɔːr ˈkrɛdɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bon do sklepu",
+          "definition": "Money that you can spend only in the store, given instead of cash back.",
+          "register": "neutralny",
+          "contextPl": "Zwrot w formie bonu zamiast gotówki",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Without a receipt, we can only give you store credit.",
+              "pl": "Bez paragonu możemy dać panu tylko bon do wykorzystania w sklepie.",
+              "focusEn": "store credit",
+              "focusPl": "bon do wykorzystania w sklepie"
+            },
+            {
+              "en": "I used my store credit to buy a new keyboard.",
+              "pl": "Wykorzystałem bon sklepowy na nową klawiaturę.",
+              "focusEn": "store credit",
+              "focusPl": "bon sklepowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "store credit"
+          ],
+          "acceptedTranslations": [
+            "bon do sklepu",
+            "bon sklepowy",
+            "voucher",
+            "kredyt w sklepie"
+          ]
+        },
+        {
+          "id": "customer-service.return-policy",
+          "term": "return policy",
+          "ipa": "/rɪˈtɜːrn ˌpɑːləsi/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zasady zwrotów",
+          "definition": "The rules a store has about returning things.",
+          "register": "neutralny",
+          "contextPl": "Warunki, na jakich sklep przyjmuje zwroty",
+          "natural": "",
+          "forms": "return policies",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our return policy gives you thirty days with the receipt.",
+              "pl": "Nasze zasady zwrotów dają panu trzydzieści dni od zakupu z paragonem.",
+              "focusEn": "return policy",
+              "focusPl": "zasady zwrotów"
+            },
+            {
+              "en": "The return policy is printed on the back of the receipt.",
+              "pl": "Regulamin zwrotów jest wydrukowany na odwrocie paragonu.",
+              "focusEn": "return policy",
+              "focusPl": "Regulamin zwrotów"
+            }
+          ],
+          "acceptedAnswers": [
+            "return policy"
+          ],
+          "acceptedTranslations": [
+            "zasady zwrotów",
+            "polityka zwrotów",
+            "regulamin zwrotów"
+          ]
+        },
+        {
+          "id": "customer-service.original-packaging",
+          "term": "original packaging",
+          "ipa": "/əˌrɪdʒənəl ˈpækɪdʒɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "oryginalne opakowanie",
+          "definition": "The box and wrapping that a product came in.",
+          "register": "neutralny",
+          "contextPl": "Warunek przyjęcia zwrotu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is the camera still in its original packaging?",
+              "pl": "Czy aparat jest jeszcze w oryginalnym opakowaniu?",
+              "focusEn": "original packaging",
+              "focusPl": "oryginalnym opakowaniu"
+            },
+            {
+              "en": "I kept the original packaging, just in case I needed to return it.",
+              "pl": "Zachowałem oryginalne opakowanie na wypadek, gdybym musiał go zwrócić.",
+              "focusEn": "original packaging",
+              "focusPl": "oryginalne opakowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "original packaging",
+            "original box",
+            "original package"
+          ],
+          "acceptedTranslations": [
+            "oryginalne opakowanie",
+            "fabryczne opakowanie",
+            "pudełko"
+          ]
+        },
+        {
+          "id": "customer-service.full-refund",
+          "term": "full refund",
+          "ipa": "/ˌfʊl ˈriːˌfʌnd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pełny zwrot pieniędzy",
+          "definition": "All the money you paid, given back to you.",
+          "register": "neutralny",
+          "contextPl": "Zwrot całej kwoty",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Since it's unopened, you'll get a full refund.",
+              "pl": "Ponieważ produkt jest nieotwarty, dostanie pan pełny zwrot pieniędzy.",
+              "focusEn": "full refund",
+              "focusPl": "pełny zwrot pieniędzy"
+            },
+            {
+              "en": "I asked for a full refund, not just a discount.",
+              "pl": "Poprosiłem o zwrot całej kwoty, a nie tylko o rabat.",
+              "focusEn": "full refund",
+              "focusPl": "zwrot całej kwoty"
+            }
+          ],
+          "acceptedAnswers": [
+            "full refund"
+          ],
+          "acceptedTranslations": [
+            "pełny zwrot pieniędzy",
+            "zwrot całości",
+            "zwrot pełnej kwoty"
+          ]
+        },
+        {
+          "id": "customer-service.proof-of-purchase",
+          "term": "proof of purchase",
+          "ipa": "/ˌpruːf əv ˈpɜːrtʃəs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dowód zakupu",
+          "definition": "A document that shows you bought something.",
+          "register": "formalny",
+          "contextPl": "Potwierdzenie transakcji przy zwrocie lub gwarancji",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need proof of purchase to process the return.",
+              "pl": "Do przyjęcia zwrotu potrzebujemy dowodu zakupu.",
+              "focusEn": "proof of purchase",
+              "focusPl": "dowodu zakupu"
+            },
+            {
+              "en": "My bank statement worked as proof of purchase.",
+              "pl": "Wyciąg z konta posłużył jako dowód zakupu.",
+              "focusEn": "proof of purchase",
+              "focusPl": "dowód zakupu"
+            }
+          ],
+          "acceptedAnswers": [
+            "proof of purchase",
+            "receipt"
+          ],
+          "acceptedTranslations": [
+            "dowód zakupu",
+            "paragon",
+            "potwierdzenie zakupu"
+          ]
+        },
+        {
+          "id": "customer-service.final-sale",
+          "term": "final sale",
+          "ipa": "/ˌfaɪnəl ˈseɪl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "towar bez możliwości zwrotu",
+          "definition": "An item that cannot be returned or exchanged.",
+          "register": "neutralny",
+          "contextPl": "Przecenione rzeczy bez prawa zwrotu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, this TV was a final sale item, so we can't take it back.",
+              "pl": "Przykro mi, ten telewizor był bez możliwości zwrotu, więc nie możemy go przyjąć.",
+              "focusEn": "final sale",
+              "focusPl": "bez możliwości zwrotu"
+            },
+            {
+              "en": "The tag said “final sale” in small red letters.",
+              "pl": "Na metce było napisane małymi czerwonymi literami „bez prawa zwrotu”.",
+              "focusEn": "final sale",
+              "focusPl": "bez prawa zwrotu"
+            }
+          ],
+          "acceptedAnswers": [
+            "final sale",
+            "no returns"
+          ],
+          "acceptedTranslations": [
+            "towar bez możliwości zwrotu",
+            "bez prawa zwrotu",
+            "sprzedaż ostateczna"
+          ]
+        },
+        {
+          "id": "customer-service.restocking-fee",
+          "term": "restocking fee",
+          "ipa": "/riˈstɑːkɪŋ ˌfiː/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "opłata za przyjęcie zwrotu",
+          "definition": "A charge some stores take when you return an opened item.",
+          "register": "neutralny",
+          "contextPl": "Potrącenie przy zwrocie otwartego produktu",
+          "natural": "",
+          "forms": "restocking fees",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a fifteen percent restocking fee for opened laptops.",
+              "pl": "Za otwarte laptopy jest piętnastoprocentowa opłata manipulacyjna.",
+              "focusEn": "restocking fee",
+              "focusPl": "opłata manipulacyjna"
+            },
+            {
+              "en": "I didn't know about the restocking fee until I got to the counter.",
+              "pl": "O opłacie za zwrot dowiedziałem się dopiero przy ladzie.",
+              "focusEn": "restocking fee",
+              "focusPl": "opłacie za zwrot"
+            }
+          ],
+          "acceptedAnswers": [
+            "restocking fee"
+          ],
+          "acceptedTranslations": [
+            "opłata za przyjęcie zwrotu",
+            "opłata manipulacyjna",
+            "potrącenie za zwrot"
+          ]
+        },
+        {
+          "id": "customer-service.take-back",
+          "term": "take back",
+          "ipa": "/ˌteɪk ˈbæk/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przyjąć z powrotem",
+          "definition": "To accept a product that a customer returns.",
+          "register": "neutralny",
+          "contextPl": "Zgoda sklepu na zwrot",
+          "natural": "",
+          "forms": "take – took – taken",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Will you take back this printer if I don't have the box?",
+              "pl": "Czy przyjmiecie z powrotem tę drukarkę, jeśli nie mam pudełka?",
+              "focusEn": "take back",
+              "focusPl": "przyjmiecie z powrotem"
+            },
+            {
+              "en": "The store took back my old phone without any problem.",
+              "pl": "Sklep bez problemu przyjął z powrotem mój stary telefon.",
+              "focusEn": "took back",
+              "focusPl": "przyjął z powrotem"
+            }
+          ],
+          "acceptedAnswers": [
+            "take back",
+            "accept a return"
+          ],
+          "acceptedTranslations": [
+            "przyjąć z powrotem",
+            "przyjąć zwrot",
+            "przyjmować zwrot"
+          ]
+        },
+        {
+          "id": "customer-service.gift-receipt",
+          "term": "gift receipt",
+          "ipa": "/ˈɡɪft rɪˌsiːt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "paragon prezentowy",
+          "definition": "A receipt without the price, so the person who got a gift can exchange it.",
+          "register": "neutralny",
+          "contextPl": "Wymiana prezentów",
+          "natural": "",
+          "forms": "gift receipts",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My aunt included a gift receipt, so I exchanged the sweater.",
+              "pl": "Ciocia dołączyła paragon prezentowy, więc wymieniłem sweter.",
+              "focusEn": "gift receipt",
+              "focusPl": "paragon prezentowy"
+            },
+            {
+              "en": "Can I get a gift receipt for this? It's a birthday present.",
+              "pl": "Czy mogę dostać do tego paragon prezentowy? To prezent urodzinowy.",
+              "focusEn": "gift receipt",
+              "focusPl": "paragon prezentowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "gift receipt"
+          ],
+          "acceptedTranslations": [
+            "paragon prezentowy",
+            "paragon bez ceny",
+            "paragon na prezent"
+          ]
+        },
+        {
+          "id": "customer-service.no-questions-asked",
+          "term": "no questions asked",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bez zbędnych pytań",
+          "definition": "Without asking for reasons or explanations.",
+          "register": "neutralny",
+          "contextPl": "Bardzo łatwe zasady zwrotów",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can return anything within thirty days, no questions asked.",
+              "pl": "Każdą rzecz można zwrócić w ciągu trzydziestu dni, bez podawania przyczyny.",
+              "focusEn": "no questions asked",
+              "focusPl": "bez podawania przyczyny"
+            },
+            {
+              "en": "They gave me my money back, no questions asked.",
+              "pl": "Oddali mi pieniądze bez zbędnych pytań.",
+              "focusEn": "no questions asked",
+              "focusPl": "bez zbędnych pytań"
+            }
+          ],
+          "acceptedAnswers": [
+            "no questions asked",
+            "no questions"
+          ],
+          "acceptedTranslations": [
+            "bez zbędnych pytań",
+            "bez podawania przyczyny",
+            "bez dyskusji"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "customer-service.support",
+      "namePl": "Infolinia i pomoc techniczna",
+      "scenePl": "Klient rozmawia przez czat z konsultantem pomocy technicznej o niedziałającym routerze",
+      "entries": [
+        {
+          "id": "customer-service.customer-service",
+          "term": "customer service",
+          "ipa": "/ˌkʌstəmər ˈsɜːrvɪs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "obsługa klienta",
+          "definition": "The help a company gives to people who buy or use its products.",
+          "register": "neutralny",
+          "contextPl": "Dział lub jakość pomocy dla klientów",
+          "natural": "",
+          "forms": "",
+          "collocations": "customer service department; call customer service; good customer service",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I contacted customer service because my router stopped working.",
+              "pl": "Skontaktowałem się z obsługą klienta, bo router przestał działać.",
+              "focusEn": "customer service",
+              "focusPl": "obsługą klienta"
+            },
+            {
+              "en": "Their customer service is great; they answered in two minutes.",
+              "pl": "Ich obsługa klienta jest świetna, odpowiedzieli w dwie minuty.",
+              "focusEn": "customer service",
+              "focusPl": "obsługa klienta"
+            }
+          ],
+          "acceptedAnswers": [
+            "customer service",
+            "customer support",
+            "customer care"
+          ],
+          "acceptedTranslations": [
+            "obsługa klienta",
+            "dział obsługi klienta",
+            "biuro obsługi klienta"
+          ]
+        },
+        {
+          "id": "customer-service.agent",
+          "term": "agent",
+          "ipa": "/ˈeɪdʒənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "konsultant",
+          "definition": "A person who answers customers' questions for a company.",
+          "register": "neutralny",
+          "contextPl": "Osoba po drugiej stronie czatu lub infolinii",
+          "natural": "",
+          "forms": "agents",
+          "collocations": "",
+          "synonyms": "representative",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The agent asked me to unplug the router and wait.",
+              "pl": "Konsultant poprosił mnie, żebym odłączył router i poczekał.",
+              "focusEn": "agent",
+              "focusPl": "Konsultant"
+            },
+            {
+              "en": "I asked to talk to a different agent because the first one didn't understand.",
+              "pl": "Poprosiłem o rozmowę z innym konsultantem, bo pierwszy nie rozumiał.",
+              "focusEn": "agent",
+              "focusPl": "konsultantem"
+            }
+          ],
+          "acceptedAnswers": [
+            "agent",
+            "representative",
+            "rep",
+            "customer service agent"
+          ],
+          "acceptedTranslations": [
+            "konsultant",
+            "konsultantka",
+            "pracownik infolinii",
+            "doradca"
+          ]
+        },
+        {
+          "id": "customer-service.representative",
+          "term": "representative",
+          "ipa": "/ˌrɛprɪˈzɛntətɪv/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przedstawiciel",
+          "definition": "A person who speaks or acts for a company.",
+          "register": "neutralny",
+          "contextPl": "Pracownik obsługi klienta, często w nagranych komunikatach",
+          "natural": "",
+          "forms": "representatives",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please wait for the next available representative.",
+              "pl": "Prosimy czekać na pierwszego wolnego konsultanta.",
+              "focusEn": "representative",
+              "focusPl": "konsultanta"
+            },
+            {
+              "en": "The representative gave me a case number for my router problem.",
+              "pl": "Przedstawiciel firmy podał mi numer zgłoszenia dotyczącego routera.",
+              "focusEn": "representative",
+              "focusPl": "Przedstawiciel"
+            }
+          ],
+          "acceptedAnswers": [
+            "representative",
+            "rep",
+            "agent"
+          ],
+          "acceptedTranslations": [
+            "przedstawiciel",
+            "konsultant",
+            "przedstawicielka"
+          ]
+        },
+        {
+          "id": "customer-service.issue",
+          "term": "issue",
+          "ipa": "/ˈɪʃuː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "problem",
+          "definition": "A problem that someone needs help with.",
+          "register": "neutralny",
+          "contextPl": "Opisywanie usterki lub kłopotu",
+          "natural": "",
+          "forms": "issues",
+          "collocations": "technical issue; have an issue with; fix an issue",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What seems to be the issue with your router?",
+              "pl": "Na czym polega problem z pana routerem?",
+              "focusEn": "issue",
+              "focusPl": "problem"
+            },
+            {
+              "en": "The issue started after the update last night.",
+              "pl": "Problem zaczął się po wczorajszej aktualizacji.",
+              "focusEn": "issue",
+              "focusPl": "Problem"
+            }
+          ],
+          "acceptedAnswers": [
+            "issue",
+            "problem"
+          ],
+          "acceptedTranslations": [
+            "problem",
+            "kłopot",
+            "usterka",
+            "sprawa"
+          ]
+        },
+        {
+          "id": "customer-service.ticket",
+          "term": "ticket",
+          "ipa": "/ˈtɪkɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zgłoszenie",
+          "definition": "A record of a customer's problem in a support system.",
+          "register": "neutralny",
+          "contextPl": "Zgłoszenia w systemie pomocy technicznej",
+          "natural": "",
+          "forms": "tickets",
+          "collocations": "open a ticket; support ticket; close a ticket",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've opened a ticket for you, and a technician will call tomorrow.",
+              "pl": "Założyłem dla pana zgłoszenie, a technik zadzwoni jutro.",
+              "focusEn": "ticket",
+              "focusPl": "zgłoszenie"
+            },
+            {
+              "en": "My ticket was closed, but the router still doesn't work.",
+              "pl": "Moje zgłoszenie zostało zamknięte, a router nadal nie działa.",
+              "focusEn": "ticket",
+              "focusPl": "zgłoszenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "ticket",
+            "support ticket"
+          ],
+          "acceptedTranslations": [
+            "zgłoszenie",
+            "zgłoszenie serwisowe",
+            "numer zgłoszenia"
+          ]
+        },
+        {
+          "id": "customer-service.case-number",
+          "term": "case number",
+          "ipa": "/ˈkeɪs ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "numer sprawy",
+          "definition": "A number that identifies your problem so you can refer to it later.",
+          "register": "neutralny",
+          "contextPl": "Śledzenie sprawy przy kolejnych kontaktach",
+          "natural": "",
+          "forms": "case numbers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please save your case number in case you need to contact us again.",
+              "pl": "Proszę zapisać numer sprawy na wypadek kolejnego kontaktu.",
+              "focusEn": "case number",
+              "focusPl": "numer sprawy"
+            },
+            {
+              "en": "I gave the new agent my case number, so I didn't have to explain again.",
+              "pl": "Podałem nowemu konsultantowi numer sprawy, więc nie musiałem znów wszystkiego tłumaczyć.",
+              "focusEn": "case number",
+              "focusPl": "numer sprawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "case number",
+            "reference number",
+            "ticket number"
+          ],
+          "acceptedTranslations": [
+            "numer sprawy",
+            "numer zgłoszenia",
+            "numer referencyjny"
+          ]
+        },
+        {
+          "id": "customer-service.account-number",
+          "term": "account number",
+          "ipa": "/əˈkaʊnt ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "numer klienta",
+          "definition": "The number that identifies you as a customer.",
+          "register": "neutralny",
+          "contextPl": "Weryfikacja klienta",
+          "natural": "",
+          "forms": "account numbers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you confirm your account number, please?",
+              "pl": "Czy może pan potwierdzić swój numer klienta?",
+              "focusEn": "account number",
+              "focusPl": "numer klienta"
+            },
+            {
+              "en": "My account number is on the first page of my monthly bill.",
+              "pl": "Mój numer klienta jest na pierwszej stronie miesięcznego rachunku.",
+              "focusEn": "account number",
+              "focusPl": "numer klienta"
+            }
+          ],
+          "acceptedAnswers": [
+            "account number"
+          ],
+          "acceptedTranslations": [
+            "numer klienta",
+            "numer konta klienta",
+            "identyfikator klienta"
+          ]
+        },
+        {
+          "id": "customer-service.troubleshoot",
+          "term": "troubleshoot",
+          "ipa": "/ˈtrʌbəlˌʃuːt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "szukać przyczyny usterki",
+          "definition": "To find and fix the cause of a problem, step by step.",
+          "register": "neutralny",
+          "contextPl": "Diagnozowanie problemów technicznych",
+          "natural": "",
+          "forms": "troubleshoot – troubleshot – troubleshot",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's troubleshoot your internet connection together, step by step.",
+              "pl": "Spróbujmy razem krok po kroku znaleźć przyczynę problemu z połączeniem.",
+              "focusEn": "troubleshoot",
+              "focusPl": "znaleźć przyczynę"
+            },
+            {
+              "en": "We troubleshot for twenty minutes before he found the problem.",
+              "pl": "Przez dwadzieścia minut diagnozowaliśmy usterkę, zanim znalazł problem.",
+              "focusEn": "troubleshot",
+              "focusPl": "diagnozowaliśmy usterkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "troubleshoot"
+          ],
+          "acceptedTranslations": [
+            "szukać przyczyny usterki",
+            "diagnozować problem",
+            "rozwiązywać problemy"
+          ]
+        },
+        {
+          "id": "customer-service.restart",
+          "term": "restart",
+          "ipa": "/riˈstɑːrt/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "uruchomić ponownie",
+          "definition": "To turn a device off and on again.",
+          "register": "neutralny",
+          "contextPl": "Najczęstsza rada pomocy technicznej",
+          "natural": "",
+          "forms": "restart – restarted – restarted",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Have you tried to restart the router?",
+              "pl": "Czy próbował pan ponownie uruchomić router?",
+              "focusEn": "restart",
+              "focusPl": "ponownie uruchomić"
+            },
+            {
+              "en": "I restarted everything twice before I contacted support.",
+              "pl": "Zanim zgłosiłem się do pomocy technicznej, dwa razy wszystko zrestartowałem.",
+              "focusEn": "restarted",
+              "focusPl": "zrestartowałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "restart",
+            "reboot",
+            "turn off and on"
+          ],
+          "acceptedTranslations": [
+            "uruchomić ponownie",
+            "zrestartować",
+            "zrestartować urządzenie",
+            "zresetować"
+          ]
+        },
+        {
+          "id": "customer-service.look-into",
+          "term": "look into",
+          "ipa": "/ˌlʊk ˈɪntuː/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "sprawdzić",
+          "definition": "To try to find out the facts about a problem.",
+          "register": "neutralny",
+          "contextPl": "Obietnica zbadania sprawy",
+          "natural": "",
+          "forms": "look – looked – looked",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let me look into that for you.",
+              "pl": "Pozwoli pan, że to sprawdzę.",
+              "focusEn": "look into",
+              "focusPl": "sprawdzę"
+            },
+            {
+              "en": "The agent promised to look into why my bill was so high.",
+              "pl": "Konsultantka obiecała sprawdzić, dlaczego mój rachunek był taki wysoki.",
+              "focusEn": "look into",
+              "focusPl": "sprawdzić"
+            }
+          ],
+          "acceptedAnswers": [
+            "look into",
+            "check",
+            "investigate"
+          ],
+          "acceptedTranslations": [
+            "sprawdzić",
+            "zbadać",
+            "przyjrzeć się",
+            "wyjaśnić"
+          ]
+        },
+        {
+          "id": "customer-service.escalate",
+          "term": "escalate",
+          "ipa": "/ˈɛskəˌleɪt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "przekazać wyżej",
+          "definition": "To send a problem to a more senior person or team.",
+          "register": "neutralny",
+          "contextPl": "Przekazanie sprawy do przełożonego lub specjalisty",
+          "natural": "",
+          "forms": "escalate – escalated – escalated",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm going to escalate this to our technical team.",
+              "pl": "Przekażę tę sprawę naszemu zespołowi technicznemu.",
+              "focusEn": "escalate",
+              "focusPl": "Przekażę"
+            },
+            {
+              "en": "After three calls, they finally escalated my case.",
+              "pl": "Po trzech telefonach w końcu przekazali wyżej moją sprawę.",
+              "focusEn": "escalated",
+              "focusPl": "przekazali wyżej"
+            }
+          ],
+          "acceptedAnswers": [
+            "escalate"
+          ],
+          "acceptedTranslations": [
+            "przekazać wyżej",
+            "eskalować",
+            "przekazać sprawę wyżej"
+          ]
+        },
+        {
+          "id": "customer-service.live-chat",
+          "term": "live chat",
+          "ipa": "/ˌlaɪv ˈtʃæt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czat na żywo",
+          "definition": "A way to talk to a support agent by typing messages on a website or app.",
+          "register": "neutralny",
+          "contextPl": "Kontakt z pomocą techniczną bez dzwonienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I used the live chat because I didn't want to wait on the phone.",
+              "pl": "Skorzystałem z czatu na żywo, bo nie chciałem czekać przy telefonie.",
+              "focusEn": "live chat",
+              "focusPl": "czatu na żywo"
+            },
+            {
+              "en": "The live chat window closed before the agent sent the instructions.",
+              "pl": "Okno czatu zamknęło się, zanim konsultant wysłał instrukcje.",
+              "focusEn": "live chat",
+              "focusPl": "czatu"
+            }
+          ],
+          "acceptedAnswers": [
+            "live chat",
+            "chat"
+          ],
+          "acceptedTranslations": [
+            "czat na żywo",
+            "czat",
+            "czat z konsultantem"
+          ]
+        },
+        {
+          "id": "customer-service.hotline",
+          "term": "hotline",
+          "ipa": "/ˈhɑːtˌlaɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "infolinia",
+          "definition": "A phone number that people can call for help or information.",
+          "register": "neutralny",
+          "contextPl": "Telefoniczny kontakt z firmą",
+          "natural": "",
+          "forms": "hotlines",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The support hotline is open twenty-four hours a day.",
+              "pl": "Infolinia pomocy technicznej działa całą dobę.",
+              "focusEn": "hotline",
+              "focusPl": "Infolinia"
+            },
+            {
+              "en": "The chat agent gave me the hotline number for urgent problems.",
+              "pl": "Konsultant na czacie podał mi numer infolinii do pilnych spraw.",
+              "focusEn": "hotline",
+              "focusPl": "infolinii"
+            }
+          ],
+          "acceptedAnswers": [
+            "hotline",
+            "helpline",
+            "support line",
+            "customer service line"
+          ],
+          "acceptedTranslations": [
+            "infolinia",
+            "linia pomocy",
+            "numer pomocy"
+          ]
+        },
+        {
+          "id": "customer-service.faq",
+          "term": "FAQ",
+          "ipa": "/ˌɛf eɪ ˈkjuː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "najczęściej zadawane pytania",
+          "definition": "A list of frequently asked questions and their answers.",
+          "register": "neutralny",
+          "contextPl": "Samodzielne szukanie odpowiedzi przed kontaktem z obsługą",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Skrót od „frequently asked questions”; czasem wymawiane jak słowo /fæk/.",
+          "examples": [
+            {
+              "en": "The agent sent me a link to the FAQ about router lights.",
+              "pl": "Konsultant wysłał mi link do najczęściej zadawanych pytań o kontrolkach routera.",
+              "focusEn": "FAQ",
+              "focusPl": "najczęściej zadawanych pytań"
+            },
+            {
+              "en": "I checked the FAQ first, but my problem wasn't there.",
+              "pl": "Najpierw sprawdziłem FAQ, ale mojego problemu tam nie było.",
+              "focusEn": "FAQ",
+              "focusPl": "FAQ"
+            }
+          ],
+          "acceptedAnswers": [
+            "FAQ",
+            "frequently asked questions"
+          ],
+          "acceptedTranslations": [
+            "najczęściej zadawane pytania",
+            "FAQ",
+            "pytania i odpowiedzi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "customer-service.phrases",
+      "namePl": "Uprzejme formuły konsultanta",
+      "scenePl": "Konsultantka infolinii rozmawia ze zdenerwowanym klientem, któremu nie dotarła przesyłka",
+      "entries": [
+        {
+          "id": "customer-service.how-may-i-help-you",
+          "term": "how may I help you",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "w czym mogę pomóc",
+          "definition": "A polite question that customer service staff ask at the start of a conversation.",
+          "register": "neutralny",
+          "contextPl": "Powitanie klienta przez konsultanta",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thank you for calling, how may I help you today?",
+              "pl": "Dziękuję za telefon, w czym mogę dziś pomóc?",
+              "focusEn": "how may I help you",
+              "focusPl": "w czym mogę dziś pomóc"
+            },
+            {
+              "en": "She answered with “How may I help you?” and I explained the missing package.",
+              "pl": "Odpowiedziała „W czym mogę pomóc?”, a ja wyjaśniłem sprawę zaginionej paczki.",
+              "focusEn": "How may I help you",
+              "focusPl": "W czym mogę pomóc"
+            }
+          ],
+          "acceptedAnswers": [
+            "how may I help you",
+            "how can I help you",
+            "how may I assist you"
+          ],
+          "acceptedTranslations": [
+            "w czym mogę pomóc",
+            "czym mogę służyć",
+            "w czym mogę panu pomóc"
+          ]
+        },
+        {
+          "id": "customer-service.im-sorry-to-hear-that",
+          "term": "I'm sorry to hear that",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przykro mi to słyszeć",
+          "definition": "A polite way to show sympathy when someone tells you about a problem.",
+          "register": "neutralny",
+          "contextPl": "Reakcja na skargę klienta",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your package didn't arrive? I'm sorry to hear that.",
+              "pl": "Paczka nie dotarła? Przykro mi to słyszeć.",
+              "focusEn": "I'm sorry to hear that",
+              "focusPl": "Przykro mi to słyszeć"
+            },
+            {
+              "en": "The agent said “I'm sorry to hear that” and checked the tracking number.",
+              "pl": "Konsultantka powiedziała „Przykro mi to słyszeć” i sprawdziła numer przesyłki.",
+              "focusEn": "I'm sorry to hear that",
+              "focusPl": "Przykro mi to słyszeć"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'm sorry to hear that",
+            "sorry to hear that"
+          ],
+          "acceptedTranslations": [
+            "przykro mi to słyszeć",
+            "bardzo mi przykro",
+            "przykro mi"
+          ]
+        },
+        {
+          "id": "customer-service.i-apologize-for-the-inconvenience",
+          "term": "I apologize for the inconvenience",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przepraszam za niedogodności",
+          "definition": "A formal apology for a problem that caused trouble for the customer.",
+          "register": "formalny",
+          "contextPl": "Formalne przeprosiny w imieniu firmy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I apologize for the inconvenience; we'll send a new package today.",
+              "pl": "Przepraszam za niedogodności, jeszcze dziś wyślemy nową paczkę.",
+              "focusEn": "I apologize for the inconvenience",
+              "focusPl": "Przepraszam za niedogodności"
+            },
+            {
+              "en": "She said she apologized for the inconvenience and offered free shipping.",
+              "pl": "Powiedziała, że przeprasza za kłopot, i zaproponowała darmową wysyłkę.",
+              "focusEn": "she apologized for the inconvenience",
+              "focusPl": "przeprasza za kłopot"
+            }
+          ],
+          "acceptedAnswers": [
+            "I apologize for the inconvenience",
+            "sorry for the inconvenience",
+            "we apologize for the inconvenience"
+          ],
+          "acceptedTranslations": [
+            "przepraszam za niedogodności",
+            "przepraszamy za niedogodności",
+            "przepraszam za kłopot"
+          ]
+        },
+        {
+          "id": "customer-service.i-understand-your-frustration",
+          "term": "I understand your frustration",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rozumiem pana zdenerwowanie",
+          "definition": "A phrase that shows a customer you understand why they are upset.",
+          "register": "neutralny",
+          "contextPl": "Uspokajanie zdenerwowanego klienta",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I understand your frustration; you've waited two weeks for this order.",
+              "pl": "Rozumiem pana zdenerwowanie, czeka pan na to zamówienie dwa tygodnie.",
+              "focusEn": "I understand your frustration",
+              "focusPl": "Rozumiem pana zdenerwowanie"
+            },
+            {
+              "en": "When she said “I understand your frustration”, I calmed down a little.",
+              "pl": "Kiedy powiedziała „Rozumiem pana frustrację”, trochę się uspokoiłem.",
+              "focusEn": "I understand your frustration",
+              "focusPl": "Rozumiem pana frustrację"
+            }
+          ],
+          "acceptedAnswers": [
+            "I understand your frustration",
+            "I understand how frustrating this is"
+          ],
+          "acceptedTranslations": [
+            "rozumiem pana zdenerwowanie",
+            "rozumiem pani frustrację",
+            "rozumiem, że to frustrujące"
+          ]
+        },
+        {
+          "id": "customer-service.bear-with-me",
+          "term": "bear with me",
+          "ipa": "/ˌbɛr wɪð ˈmiː/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "proszę o chwilę cierpliwości",
+          "definition": "A polite way to ask someone to wait patiently for a moment.",
+          "register": "neutralny",
+          "contextPl": "Prośba o cierpliwość podczas sprawdzania",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bear with me for a moment while I check the delivery status.",
+              "pl": "Proszę o chwilę cierpliwości, sprawdzam status dostawy.",
+              "focusEn": "Bear with me",
+              "focusPl": "Proszę o chwilę cierpliwości"
+            },
+            {
+              "en": "She asked me to bear with her while the system loaded.",
+              "pl": "Poprosiła, żebym chwilę cierpliwie poczekał, aż system się załaduje.",
+              "focusEn": "bear with her",
+              "focusPl": "chwilę cierpliwie poczekał"
+            }
+          ],
+          "acceptedAnswers": [
+            "bear with me",
+            "bear with us",
+            "bear with her"
+          ],
+          "acceptedTranslations": [
+            "proszę o chwilę cierpliwości",
+            "proszę chwilę poczekać",
+            "chwileczkę"
+          ]
+        },
+        {
+          "id": "customer-service.thank-you-for-your-patience",
+          "term": "thank you for your patience",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dziękuję za cierpliwość",
+          "definition": "A polite phrase used after making a customer wait.",
+          "register": "neutralny",
+          "contextPl": "Podziękowanie po czasie oczekiwania",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thank you for your patience; I've found your package.",
+              "pl": "Dziękuję za cierpliwość, znalazłam pana paczkę.",
+              "focusEn": "Thank you for your patience",
+              "focusPl": "Dziękuję za cierpliwość"
+            },
+            {
+              "en": "The recording kept saying “Thank you for your patience” for twenty minutes.",
+              "pl": "Nagranie przez dwadzieścia minut powtarzało „Dziękujemy za cierpliwość”.",
+              "focusEn": "Thank you for your patience",
+              "focusPl": "Dziękujemy za cierpliwość"
+            }
+          ],
+          "acceptedAnswers": [
+            "thank you for your patience",
+            "thanks for your patience",
+            "thanks for waiting"
+          ],
+          "acceptedTranslations": [
+            "dziękuję za cierpliwość",
+            "dziękujemy za cierpliwość",
+            "dziękuję za oczekiwanie"
+          ]
+        },
+        {
+          "id": "customer-service.id-be-happy-to-help",
+          "term": "I'd be happy to help",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "chętnie pomogę",
+          "definition": "A friendly phrase that shows you are willing to help.",
+          "register": "neutralny",
+          "contextPl": "Uprzejma deklaracja pomocy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Of course, I'd be happy to help you track your order.",
+              "pl": "Oczywiście, chętnie pomogę panu namierzyć zamówienie.",
+              "focusEn": "I'd be happy to help",
+              "focusPl": "chętnie pomogę"
+            },
+            {
+              "en": "She sounded tired, but she said she'd be happy to help.",
+              "pl": "Brzmiała na zmęczoną, ale powiedziała, że chętnie pomoże.",
+              "focusEn": "she'd be happy to help",
+              "focusPl": "chętnie pomoże"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'd be happy to help",
+            "I'm happy to help",
+            "happy to help"
+          ],
+          "acceptedTranslations": [
+            "chętnie pomogę",
+            "z przyjemnością pomogę",
+            "służę pomocą"
+          ]
+        },
+        {
+          "id": "customer-service.let-me-check",
+          "term": "let me check",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "sprawdzę",
+          "definition": "A phrase used when you are going to look for information.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie informacji w systemie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let me check where your package is right now.",
+              "pl": "Sprawdzę, gdzie teraz jest pana paczka.",
+              "focusEn": "Let me check",
+              "focusPl": "Sprawdzę"
+            },
+            {
+              "en": "She said “Let me check” and typed for a minute.",
+              "pl": "Powiedziała „Zaraz sprawdzę” i przez minutę coś wpisywała.",
+              "focusEn": "Let me check",
+              "focusPl": "Zaraz sprawdzę"
+            }
+          ],
+          "acceptedAnswers": [
+            "let me check",
+            "let me see",
+            "let me look"
+          ],
+          "acceptedTranslations": [
+            "sprawdzę",
+            "zaraz sprawdzę",
+            "już sprawdzam"
+          ]
+        },
+        {
+          "id": "customer-service.as-a-courtesy",
+          "term": "as a courtesy",
+          "ipa": "/æz ə ˈkɜːrtəsi/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "w ramach rekompensaty",
+          "definition": "Done for free to be polite, not because you have to.",
+          "register": "formalny",
+          "contextPl": "Gest dobrej woli wobec klienta",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "As a courtesy, we'll refund your shipping cost.",
+              "pl": "W ramach przeprosin zwrócimy panu koszt wysyłki.",
+              "focusEn": "As a courtesy",
+              "focusPl": "W ramach przeprosin"
+            },
+            {
+              "en": "They gave me a ten-dollar coupon as a courtesy.",
+              "pl": "Dali mi kupon na dziesięć dolarów jako gest dobrej woli.",
+              "focusEn": "as a courtesy",
+              "focusPl": "jako gest dobrej woli"
+            }
+          ],
+          "acceptedAnswers": [
+            "as a courtesy",
+            "as a goodwill gesture"
+          ],
+          "acceptedTranslations": [
+            "w ramach rekompensaty",
+            "jako gest dobrej woli",
+            "w ramach przeprosin",
+            "grzecznościowo"
+          ]
+        },
+        {
+          "id": "customer-service.at-no-extra-cost",
+          "term": "at no extra cost",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bez dodatkowych opłat",
+          "definition": "Without paying any more money.",
+          "register": "neutralny",
+          "contextPl": "Darmowe rozwiązanie problemu dla klienta",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll send a replacement by express mail at no extra cost.",
+              "pl": "Wyślemy produkt zastępczy ekspresem bez dodatkowych opłat.",
+              "focusEn": "at no extra cost",
+              "focusPl": "bez dodatkowych opłat"
+            },
+            {
+              "en": "The agent upgraded my shipping at no extra cost.",
+              "pl": "Konsultantka zmieniła mi wysyłkę na szybszą bez dopłaty.",
+              "focusEn": "at no extra cost",
+              "focusPl": "bez dopłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "at no extra cost",
+            "at no additional cost",
+            "free of charge",
+            "at no charge"
+          ],
+          "acceptedTranslations": [
+            "bez dodatkowych opłat",
+            "bez dopłaty",
+            "za darmo",
+            "nieodpłatnie"
+          ]
+        },
+        {
+          "id": "customer-service.take-care-of-it",
+          "term": "take care of it",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zająć się tym",
+          "definition": "To deal with a problem so the customer does not have to worry.",
+          "register": "neutralny",
+          "contextPl": "Zapewnienie klienta o rozwiązaniu sprawy",
+          "natural": "",
+          "forms": "take – took – taken",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't worry, I'll take care of it right now.",
+              "pl": "Proszę się nie martwić, od razu się tym zajmę.",
+              "focusEn": "take care of it",
+              "focusPl": "się tym zajmę"
+            },
+            {
+              "en": "She promised to take care of it before the end of the day.",
+              "pl": "Obiecała, że zajmie się tym przed końcem dnia.",
+              "focusEn": "take care of it",
+              "focusPl": "zajmie się tym"
+            }
+          ],
+          "acceptedAnswers": [
+            "take care of it",
+            "take care of"
+          ],
+          "acceptedTranslations": [
+            "zająć się tym",
+            "załatwić to",
+            "zająć się sprawą"
+          ]
+        },
+        {
+          "id": "customer-service.go-the-extra-mile",
+          "term": "go the extra mile",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zrobić więcej, niż trzeba",
+          "definition": "To make more effort than is expected.",
+          "register": "neutralny",
+          "contextPl": "Wyjątkowa obsługa klienta",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The agent went the extra mile and called the courier for me.",
+              "pl": "Konsultantka zrobiła więcej, niż musiała, i zadzwoniła za mnie do kuriera.",
+              "focusEn": "went the extra mile",
+              "focusPl": "zrobiła więcej, niż musiała"
+            },
+            {
+              "en": "Our team tries to go the extra mile for every customer.",
+              "pl": "Nasz zespół stara się dawać z siebie więcej przy każdym kliencie.",
+              "focusEn": "go the extra mile",
+              "focusPl": "dawać z siebie więcej"
+            }
+          ],
+          "acceptedAnswers": [
+            "go the extra mile",
+            "go an extra mile"
+          ],
+          "acceptedTranslations": [
+            "zrobić więcej, niż trzeba",
+            "dać z siebie więcej",
+            "postarać się bardziej"
+          ]
+        },
+        {
+          "id": "customer-service.calm-down",
+          "term": "calm down",
+          "ipa": "/ˌkɑːm ˈdaʊn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "uspokoić się",
+          "definition": "To become less angry, upset, or excited.",
+          "register": "neutralny",
+          "contextPl": "Rozmowa ze zdenerwowanym klientem",
+          "natural": "",
+          "forms": "calm – calmed – calmed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Mówienie klientowi „calm down” brzmi niegrzecznie; lepiej „I understand”.",
+          "examples": [
+            {
+              "en": "The customer calmed down when she heard about the free replacement.",
+              "pl": "Klientka się uspokoiła, kiedy usłyszała o darmowej wymianie.",
+              "focusEn": "calmed down",
+              "focusPl": "się uspokoiła"
+            },
+            {
+              "en": "I took a deep breath to calm down before I called them again.",
+              "pl": "Wziąłem głęboki oddech, żeby się uspokoić, zanim znowu do nich zadzwoniłem.",
+              "focusEn": "calm down",
+              "focusPl": "się uspokoić"
+            }
+          ],
+          "acceptedAnswers": [
+            "calm down"
+          ],
+          "acceptedTranslations": [
+            "uspokoić się",
+            "uspokajać się",
+            "ochłonąć"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "customer-service.warranty",
+      "namePl": "Gwarancja, naprawy i zamówienia",
+      "scenePl": "Lada w serwisie elektroniki, gdzie klienci oddają i odbierają naprawiane laptopy",
+      "entries": [
+        {
+          "id": "customer-service.warranty",
+          "term": "warranty",
+          "ipa": "/ˈwɔːrənti/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gwarancja",
+          "definition": "A written promise to repair or replace a product if it breaks within a certain time.",
+          "register": "neutralny",
+          "contextPl": "Ochrona produktu po zakupie",
+          "natural": "",
+          "forms": "warranties",
+          "collocations": "under warranty; extended warranty; one-year warranty",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is my laptop still under warranty?",
+              "pl": "Czy mój laptop jest jeszcze na gwarancji?",
+              "focusEn": "warranty",
+              "focusPl": "gwarancji"
+            },
+            {
+              "en": "The warranty covers the screen but not water damage.",
+              "pl": "Gwarancja obejmuje ekran, ale nie zalanie.",
+              "focusEn": "warranty",
+              "focusPl": "Gwarancja"
+            }
+          ],
+          "acceptedAnswers": [
+            "warranty",
+            "guarantee"
+          ],
+          "acceptedTranslations": [
+            "gwarancja",
+            "gwarancja producenta",
+            "rękojmia"
+          ]
+        },
+        {
+          "id": "customer-service.repair",
+          "term": "repair",
+          "ipa": "/rɪˈpɛr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "naprawa",
+          "definition": "The work done to fix something that is broken.",
+          "register": "neutralny",
+          "contextPl": "Oddawanie sprzętu do serwisu",
+          "natural": "",
+          "forms": "repairs",
+          "collocations": "in for repair; repair shop; free repair",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The repair will take about five business days.",
+              "pl": "Naprawa potrwa około pięciu dni roboczych.",
+              "focusEn": "repair",
+              "focusPl": "Naprawa"
+            },
+            {
+              "en": "My laptop came back from repair with a new keyboard.",
+              "pl": "Laptop wrócił z naprawy z nową klawiaturą.",
+              "focusEn": "repair",
+              "focusPl": "naprawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "repair",
+            "fix"
+          ],
+          "acceptedTranslations": [
+            "naprawa",
+            "serwis",
+            "reperacja"
+          ]
+        },
+        {
+          "id": "customer-service.replacement",
+          "term": "replacement",
+          "ipa": "/rɪˈpleɪsmənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "egzemplarz zastępczy",
+          "definition": "A new item that is given instead of one that is broken.",
+          "register": "neutralny",
+          "contextPl": "Wymiana uszkodzonego produktu na nowy",
+          "natural": "",
+          "forms": "replacements",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If we can't fix it, you'll get a replacement.",
+              "pl": "Jeśli nie uda się go naprawić, dostanie pan nowy egzemplarz.",
+              "focusEn": "replacement",
+              "focusPl": "nowy egzemplarz"
+            },
+            {
+              "en": "The replacement arrived in a brand-new box.",
+              "pl": "Egzemplarz zastępczy przyszedł w zupełnie nowym pudełku.",
+              "focusEn": "replacement",
+              "focusPl": "Egzemplarz zastępczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "replacement"
+          ],
+          "acceptedTranslations": [
+            "egzemplarz zastępczy",
+            "wymiana",
+            "nowy egzemplarz",
+            "zamiennik"
+          ]
+        },
+        {
+          "id": "customer-service.expire",
+          "term": "expire",
+          "ipa": "/ɪkˈspaɪər/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wygasnąć",
+          "definition": "To come to an end and no longer be valid.",
+          "register": "neutralny",
+          "contextPl": "Koniec okresu gwarancji",
+          "natural": "",
+          "forms": "expire – expired – expired",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your warranty expired last month, so there's a fee for the repair.",
+              "pl": "Pana gwarancja wygasła w zeszłym miesiącu, więc naprawa jest płatna.",
+              "focusEn": "expired",
+              "focusPl": "wygasła"
+            },
+            {
+              "en": "When does the warranty expire on this model?",
+              "pl": "Kiedy kończy się gwarancja na ten model?",
+              "focusEn": "expire",
+              "focusPl": "kończy się"
+            }
+          ],
+          "acceptedAnswers": [
+            "expire",
+            "run out"
+          ],
+          "acceptedTranslations": [
+            "wygasnąć",
+            "wygasać",
+            "skończyć się",
+            "upłynąć"
+          ]
+        },
+        {
+          "id": "customer-service.extended-warranty",
+          "term": "extended warranty",
+          "ipa": "/ɪkˌstɛndɪd ˈwɔːrənti/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przedłużona gwarancja",
+          "definition": "Extra protection that you buy to make the warranty last longer.",
+          "register": "neutralny",
+          "contextPl": "Dodatkowa ochrona sprzedawana przy zakupie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm glad I bought the extended warranty; the repair was free.",
+              "pl": "Cieszę się, że kupiłem przedłużoną gwarancję, naprawa była za darmo.",
+              "focusEn": "extended warranty",
+              "focusPl": "przedłużoną gwarancję"
+            },
+            {
+              "en": "The clerk tried to sell me an extended warranty for ninety dollars.",
+              "pl": "Sprzedawca próbował mi sprzedać przedłużoną gwarancję za dziewięćdziesiąt dolarów.",
+              "focusEn": "extended warranty",
+              "focusPl": "przedłużoną gwarancję"
+            }
+          ],
+          "acceptedAnswers": [
+            "extended warranty",
+            "protection plan"
+          ],
+          "acceptedTranslations": [
+            "przedłużona gwarancja",
+            "dodatkowa gwarancja",
+            "pakiet ochronny"
+          ]
+        },
+        {
+          "id": "customer-service.service-center",
+          "term": "service center",
+          "ipa": "/ˈsɜːrvɪs ˌsɛntər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "punkt serwisowy",
+          "definition": "A place where products are checked and repaired.",
+          "register": "neutralny",
+          "contextPl": "Miejsce oddawania sprzętu do naprawy",
+          "natural": "",
+          "forms": "service centers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska „center”; w BrE „centre”.",
+          "examples": [
+            {
+              "en": "Bring your laptop to the service center with the receipt.",
+              "pl": "Proszę przynieść laptopa do punktu serwisowego z paragonem.",
+              "focusEn": "service center",
+              "focusPl": "punktu serwisowego"
+            },
+            {
+              "en": "The service center called to say my laptop was ready.",
+              "pl": "Z serwisu zadzwonili, że laptop jest gotowy.",
+              "focusEn": "service center",
+              "focusPl": "serwisu"
+            }
+          ],
+          "acceptedAnswers": [
+            "service center",
+            "repair shop",
+            "service centre"
+          ],
+          "acceptedTranslations": [
+            "punkt serwisowy",
+            "serwis",
+            "punkt napraw"
+          ]
+        },
+        {
+          "id": "customer-service.pick-up",
+          "term": "pick up",
+          "ipa": "/ˌpɪk ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odebrać",
+          "definition": "To go and collect something that is ready.",
+          "register": "neutralny",
+          "contextPl": "Odbiór naprawionego sprzętu lub zamówienia",
+          "natural": "",
+          "forms": "pick – picked – picked",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can pick up your laptop after three o'clock.",
+              "pl": "Laptopa może pan odebrać po piętnastej.",
+              "focusEn": "pick up",
+              "focusPl": "odebrać"
+            },
+            {
+              "en": "I picked up my phone from repair on my way home.",
+              "pl": "W drodze do domu odebrałem telefon z naprawy.",
+              "focusEn": "picked up",
+              "focusPl": "odebrałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "pick up",
+            "collect"
+          ],
+          "acceptedTranslations": [
+            "odebrać",
+            "odbierać",
+            "zabrać"
+          ]
+        },
+        {
+          "id": "customer-service.order-number",
+          "term": "order number",
+          "ipa": "/ˈɔːrdər ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "numer zamówienia",
+          "definition": "A number that identifies your order.",
+          "register": "neutralny",
+          "contextPl": "Identyfikacja zakupu przy kontakcie ze sklepem",
+          "natural": "",
+          "forms": "order numbers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I have your order number, please?",
+              "pl": "Czy mogę prosić o numer zamówienia?",
+              "focusEn": "order number",
+              "focusPl": "numer zamówienia"
+            },
+            {
+              "en": "The order number is at the top of the confirmation email.",
+              "pl": "Numer zamówienia jest na górze maila z potwierdzeniem.",
+              "focusEn": "order number",
+              "focusPl": "Numer zamówienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "order number"
+          ],
+          "acceptedTranslations": [
+            "numer zamówienia",
+            "nr zamówienia"
+          ]
+        },
+        {
+          "id": "customer-service.tracking-number",
+          "term": "tracking number",
+          "ipa": "/ˈtrækɪŋ ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "numer przesyłki",
+          "definition": "A number you use to see where your package is.",
+          "register": "neutralny",
+          "contextPl": "Śledzenie dostawy",
+          "natural": "",
+          "forms": "tracking numbers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Here's your tracking number for the replacement laptop.",
+              "pl": "Oto numer przesyłki dla zastępczego laptopa.",
+              "focusEn": "tracking number",
+              "focusPl": "numer przesyłki"
+            },
+            {
+              "en": "The tracking number shows the package is still in Ohio.",
+              "pl": "Numer śledzenia pokazuje, że paczka jest jeszcze w Ohio.",
+              "focusEn": "tracking number",
+              "focusPl": "Numer śledzenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "tracking number",
+            "tracking code"
+          ],
+          "acceptedTranslations": [
+            "numer przesyłki",
+            "numer śledzenia",
+            "numer listu przewozowego"
+          ]
+        },
+        {
+          "id": "customer-service.out-of-stock",
+          "term": "out of stock",
+          "ipa": "/ˌaʊt əv ˈstɑːk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "niedostępny",
+          "definition": "Not available in the store at the moment.",
+          "register": "neutralny",
+          "contextPl": "Brak towaru na stanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "in stock",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The part we need is out of stock until next week.",
+              "pl": "Część, której potrzebujemy, jest niedostępna do przyszłego tygodnia.",
+              "focusEn": "out of stock",
+              "focusPl": "niedostępna"
+            },
+            {
+              "en": "The charger you want is out of stock, but we can order it.",
+              "pl": "Ładowarki, której pan szuka, nie ma na stanie, ale możemy ją zamówić.",
+              "focusEn": "out of stock",
+              "focusPl": "nie ma na stanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "out of stock",
+            "sold out"
+          ],
+          "acceptedTranslations": [
+            "niedostępny",
+            "wyprzedany",
+            "brak na stanie",
+            "nie ma na stanie"
+          ]
+        },
+        {
+          "id": "customer-service.in-stock",
+          "term": "in stock",
+          "ipa": "/ɪn ˈstɑːk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dostępny",
+          "definition": "Available in the store now.",
+          "register": "neutralny",
+          "contextPl": "Dostępność towaru",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "out of stock",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have this battery in stock?",
+              "pl": "Czy macie tę baterię na stanie?",
+              "focusEn": "in stock",
+              "focusPl": "na stanie"
+            },
+            {
+              "en": "The screen was in stock, so they fixed it the same day.",
+              "pl": "Ekran był dostępny od ręki, więc naprawili go tego samego dnia.",
+              "focusEn": "in stock",
+              "focusPl": "dostępny od ręki"
+            }
+          ],
+          "acceptedAnswers": [
+            "in stock"
+          ],
+          "acceptedTranslations": [
+            "dostępny",
+            "na stanie",
+            "dostępny od ręki",
+            "w magazynie"
+          ]
+        },
+        {
+          "id": "customer-service.backorder",
+          "term": "backorder",
+          "ipa": "/ˈbækˌɔːrdər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zamówienie oczekujące",
+          "definition": "An order for something that is not available yet and will be sent later.",
+          "register": "neutralny",
+          "contextPl": "Czekanie na towar, którego chwilowo brakuje",
+          "natural": "",
+          "forms": "",
+          "collocations": "on backorder",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The keyboard is on backorder, so it may take three weeks.",
+              "pl": "Klawiatura jest zamówiona u dostawcy, więc może to potrwać trzy tygodnie.",
+              "focusEn": "backorder",
+              "focusPl": "zamówiona u dostawcy"
+            },
+            {
+              "en": "My repair is waiting on a backorder from the manufacturer.",
+              "pl": "Moja naprawa czeka na część zamówioną u producenta.",
+              "focusEn": "backorder",
+              "focusPl": "część zamówioną"
+            }
+          ],
+          "acceptedAnswers": [
+            "backorder",
+            "back order"
+          ],
+          "acceptedTranslations": [
+            "zamówienie oczekujące",
+            "zamówienie zaległe",
+            "towar zamówiony u dostawcy"
+          ]
+        },
+        {
+          "id": "customer-service.fix",
+          "term": "fix",
+          "ipa": "/fɪks/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "naprawić",
+          "definition": "To repair something that is broken.",
+          "register": "neutralny",
+          "contextPl": "Usuwanie usterek",
+          "natural": "",
+          "forms": "fix – fixed – fixed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you fix the cracked screen today?",
+              "pl": "Czy możecie dziś naprawić pęknięty ekran?",
+              "focusEn": "fix",
+              "focusPl": "naprawić"
+            },
+            {
+              "en": "They fixed the battery problem in less than an hour.",
+              "pl": "Naprawili problem z baterią w niecałą godzinę.",
+              "focusEn": "fixed",
+              "focusPl": "Naprawili"
+            }
+          ],
+          "acceptedAnswers": [
+            "fix",
+            "repair"
+          ],
+          "acceptedTranslations": [
+            "naprawić",
+            "naprawiać",
+            "zreperować",
+            "usunąć usterkę"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "customer-service.satisfaction",
+      "namePl": "Zadowolenie klienta",
+      "scenePl": "Kasa w sklepie z artykułami domowymi: ankieta po zakupie i karta programu lojalnościowego",
+      "entries": [
+        {
+          "id": "customer-service.customer",
+          "term": "customer",
+          "ipa": "/ˈkʌstəmər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "klient",
+          "definition": "A person who buys goods or services from a store or company.",
+          "register": "neutralny",
+          "contextPl": "Osoba robiąca zakupy lub korzystająca z usług",
+          "natural": "",
+          "forms": "customers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cashier smiled at every customer in line.",
+              "pl": "Kasjerka uśmiechała się do każdego klienta w kolejce.",
+              "focusEn": "customer",
+              "focusPl": "klienta"
+            },
+            {
+              "en": "A customer asked if the store had a loyalty card.",
+              "pl": "Klientka zapytała, czy sklep ma kartę lojalnościową.",
+              "focusEn": "customer",
+              "focusPl": "Klientka"
+            }
+          ],
+          "acceptedAnswers": [
+            "customer",
+            "client",
+            "shopper"
+          ],
+          "acceptedTranslations": [
+            "klient",
+            "klientka",
+            "kupujący"
+          ]
+        },
+        {
+          "id": "customer-service.satisfied",
+          "term": "satisfied",
+          "ipa": "/ˈsætɪsˌfaɪd/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zadowolony",
+          "definition": "Pleased because you got what you wanted.",
+          "register": "neutralny",
+          "contextPl": "Ocena zakupu lub usługi",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "dissatisfied",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Were you satisfied with your shopping experience today?",
+              "pl": "Czy był pan dziś zadowolony z zakupów?",
+              "focusEn": "satisfied",
+              "focusPl": "zadowolony"
+            },
+            {
+              "en": "I was satisfied with the price but not the long line.",
+              "pl": "Byłem zadowolony z ceny, ale nie z długiej kolejki.",
+              "focusEn": "satisfied",
+              "focusPl": "zadowolony"
+            }
+          ],
+          "acceptedAnswers": [
+            "satisfied",
+            "happy",
+            "pleased"
+          ],
+          "acceptedTranslations": [
+            "zadowolony",
+            "zadowolona",
+            "usatysfakcjonowany"
+          ]
+        },
+        {
+          "id": "customer-service.survey",
+          "term": "survey",
+          "ipa": "/ˈsɜːrveɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ankieta",
+          "definition": "A set of questions that a company asks customers about their experience.",
+          "register": "neutralny",
+          "contextPl": "Zbieranie opinii po zakupie",
+          "natural": "",
+          "forms": "surveys",
+          "collocations": "fill out a survey; take a survey; customer survey",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a link to a short survey at the bottom of your receipt.",
+              "pl": "Na dole paragonu jest link do krótkiej ankiety.",
+              "focusEn": "survey",
+              "focusPl": "ankiety"
+            },
+            {
+              "en": "If you complete the survey, you get five dollars off next time.",
+              "pl": "Jeśli wypełni pan ankietę, następnym razem dostanie pan pięć dolarów zniżki.",
+              "focusEn": "survey",
+              "focusPl": "ankietę"
+            }
+          ],
+          "acceptedAnswers": [
+            "survey"
+          ],
+          "acceptedTranslations": [
+            "ankieta",
+            "kwestionariusz",
+            "badanie opinii"
+          ]
+        },
+        {
+          "id": "customer-service.loyalty-program",
+          "term": "loyalty program",
+          "ipa": "/ˈlɔɪəlti ˌproʊɡræm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "program lojalnościowy",
+          "definition": "A system that rewards customers who shop at the same store often.",
+          "register": "neutralny",
+          "contextPl": "Nagradzanie stałych klientów",
+          "natural": "",
+          "forms": "loyalty programs",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Would you like to join our loyalty program? It's free.",
+              "pl": "Czy chce pan dołączyć do naszego programu lojalnościowego? To nic nie kosztuje.",
+              "focusEn": "loyalty program",
+              "focusPl": "programu lojalnościowego"
+            },
+            {
+              "en": "Thanks to the loyalty program, I saved twenty dollars today.",
+              "pl": "Dzięki programowi lojalnościowemu zaoszczędziłem dziś dwadzieścia dolarów.",
+              "focusEn": "loyalty program",
+              "focusPl": "programowi lojalnościowemu"
+            }
+          ],
+          "acceptedAnswers": [
+            "loyalty program",
+            "rewards program",
+            "loyalty card"
+          ],
+          "acceptedTranslations": [
+            "program lojalnościowy",
+            "karta stałego klienta",
+            "program dla stałych klientów"
+          ]
+        },
+        {
+          "id": "customer-service.points",
+          "term": "points",
+          "ipa": "/pɔɪnts/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "punkty",
+          "definition": "Units you collect when you buy things, which you can later use for discounts.",
+          "register": "neutralny",
+          "contextPl": "Zbieranie punktów w programie lojalnościowym",
+          "natural": "",
+          "forms": "point (l. poj.)",
+          "collocations": "earn points; redeem points",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You earned two hundred points with this purchase.",
+              "pl": "Za ten zakup zdobył pan dwieście punktów.",
+              "focusEn": "points",
+              "focusPl": "punktów"
+            },
+            {
+              "en": "I used my points to pay for half of the new lamp.",
+              "pl": "Za połowę nowej lampy zapłaciłem punktami.",
+              "focusEn": "points",
+              "focusPl": "punktami"
+            }
+          ],
+          "acceptedAnswers": [
+            "points",
+            "reward points"
+          ],
+          "acceptedTranslations": [
+            "punkty",
+            "punkty lojalnościowe"
+          ]
+        },
+        {
+          "id": "customer-service.discount",
+          "term": "discount",
+          "ipa": "/ˈdɪsˌkaʊnt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zniżka",
+          "definition": "An amount taken off the usual price.",
+          "register": "neutralny",
+          "contextPl": "Obniżki cen dla klientów",
+          "natural": "",
+          "forms": "discounts",
+          "collocations": "get a discount; ten percent discount; student discount",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Members get a ten percent discount on everything.",
+              "pl": "Członkowie dostają dziesięć procent zniżki na wszystko.",
+              "focusEn": "discount",
+              "focusPl": "zniżki"
+            },
+            {
+              "en": "The cashier gave me a discount because the box was damaged.",
+              "pl": "Kasjerka dała mi rabat, bo pudełko było uszkodzone.",
+              "focusEn": "discount",
+              "focusPl": "rabat"
+            }
+          ],
+          "acceptedAnswers": [
+            "discount"
+          ],
+          "acceptedTranslations": [
+            "zniżka",
+            "rabat",
+            "obniżka",
+            "upust"
+          ]
+        },
+        {
+          "id": "customer-service.coupon",
+          "term": "coupon",
+          "ipa": "/ˈkuːpɑːn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kupon rabatowy",
+          "definition": "A piece of paper or code that lets you pay less for something.",
+          "register": "neutralny",
+          "contextPl": "Kupony i kody zniżkowe",
+          "natural": "",
+          "forms": "coupons",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA często wymawiane także /ˈkjuːpɑːn/.",
+          "examples": [
+            {
+              "en": "Do you have any coupons for today's purchase?",
+              "pl": "Czy ma pan jakieś kupony rabatowe do dzisiejszego zakupu?",
+              "focusEn": "coupons",
+              "focusPl": "kupony rabatowe"
+            },
+            {
+              "en": "The coupon on my phone expired yesterday.",
+              "pl": "Kupon w moim telefonie wygasł wczoraj.",
+              "focusEn": "coupon",
+              "focusPl": "Kupon"
+            }
+          ],
+          "acceptedAnswers": [
+            "coupon",
+            "promo code",
+            "voucher"
+          ],
+          "acceptedTranslations": [
+            "kupon rabatowy",
+            "kupon",
+            "kod rabatowy",
+            "bon"
+          ]
+        },
+        {
+          "id": "customer-service.review",
+          "term": "review",
+          "ipa": "/rɪˈvjuː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "opinia",
+          "definition": "A written opinion about a product or service, often posted online.",
+          "register": "neutralny",
+          "contextPl": "Opinie klientów w internecie",
+          "natural": "",
+          "forms": "reviews",
+          "collocations": "leave a review; online review; five-star review",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please leave us a review if you liked our service.",
+              "pl": "Prosimy o opinię, jeśli spodobała się panu nasza obsługa.",
+              "focusEn": "review",
+              "focusPl": "opinię"
+            },
+            {
+              "en": "I wrote a good review about the helpful cashier.",
+              "pl": "Napisałem dobrą recenzję o pomocnej kasjerce.",
+              "focusEn": "review",
+              "focusPl": "recenzję"
+            }
+          ],
+          "acceptedAnswers": [
+            "review"
+          ],
+          "acceptedTranslations": [
+            "opinia",
+            "recenzja",
+            "ocena"
+          ]
+        },
+        {
+          "id": "customer-service.rating",
+          "term": "rating",
+          "ipa": "/ˈreɪtɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ocena",
+          "definition": "A score, often in stars, that shows how good something is.",
+          "register": "neutralny",
+          "contextPl": "Gwiazdki i punkty w ankietach i opiniach",
+          "natural": "",
+          "forms": "ratings",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The store has a four-star rating online.",
+              "pl": "Sklep ma w internecie ocenę czterech gwiazdek.",
+              "focusEn": "rating",
+              "focusPl": "ocenę"
+            },
+            {
+              "en": "I gave the service a rating of nine out of ten.",
+              "pl": "Dałem obsłudze ocenę dziewięć na dziesięć.",
+              "focusEn": "rating",
+              "focusPl": "ocenę"
+            }
+          ],
+          "acceptedAnswers": [
+            "rating"
+          ],
+          "acceptedTranslations": [
+            "ocena",
+            "notowanie",
+            "liczba gwiazdek"
+          ]
+        },
+        {
+          "id": "customer-service.regular-customer",
+          "term": "regular customer",
+          "ipa": "/ˌrɛɡjələr ˈkʌstəmər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stały klient",
+          "definition": "A person who often buys from the same store.",
+          "register": "neutralny",
+          "contextPl": "Lojalni klienci",
+          "natural": "",
+          "forms": "regular customers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cashier knows me because I'm a regular customer.",
+              "pl": "Kasjerka mnie zna, bo jestem stałym klientem.",
+              "focusEn": "regular customer",
+              "focusPl": "stałym klientem"
+            },
+            {
+              "en": "Regular customers get a free coffee every tenth visit.",
+              "pl": "Stali klienci dostają darmową kawę przy co dziesiątej wizycie.",
+              "focusEn": "Regular customers",
+              "focusPl": "Stali klienci"
+            }
+          ],
+          "acceptedAnswers": [
+            "regular customer",
+            "regular",
+            "repeat customer"
+          ],
+          "acceptedTranslations": [
+            "stały klient",
+            "stała klientka",
+            "bywalec"
+          ]
+        },
+        {
+          "id": "customer-service.complaint",
+          "term": "complaint",
+          "ipa": "/kəmˈpleɪnt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "skarga",
+          "definition": "A statement that you are not happy with a product or service.",
+          "register": "neutralny",
+          "contextPl": "Niezadowolenie zgłaszane w sklepie lub ankiecie",
+          "natural": "",
+          "forms": "complaints",
+          "collocations": "make a complaint; file a complaint; handle complaints",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I wrote a complaint about the long line in the survey.",
+              "pl": "W ankiecie napisałem skargę na długą kolejkę.",
+              "focusEn": "complaint",
+              "focusPl": "skargę"
+            },
+            {
+              "en": "The manager handles every complaint personally.",
+              "pl": "Kierownik osobiście zajmuje się każdą skargą.",
+              "focusEn": "complaint",
+              "focusPl": "skargą"
+            }
+          ],
+          "acceptedAnswers": [
+            "complaint"
+          ],
+          "acceptedTranslations": [
+            "skarga",
+            "reklamacja",
+            "zażalenie"
+          ]
+        },
+        {
+          "id": "customer-service.the-customer-is-always-right",
+          "term": "the customer is always right",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "klient ma zawsze rację",
+          "definition": "A saying that businesses should always try to please customers.",
+          "register": "neutralny",
+          "contextPl": "Zasada obsługi klienta",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our manager believes the customer is always right, even when they aren't.",
+              "pl": "Nasz kierownik uważa, że klient ma zawsze rację, nawet gdy jej nie ma.",
+              "focusEn": "the customer is always right",
+              "focusPl": "klient ma zawsze rację"
+            },
+            {
+              "en": "The cashier sighed and remembered that the customer is always right.",
+              "pl": "Kasjerka westchnęła i przypomniała sobie, że klient ma zawsze rację.",
+              "focusEn": "the customer is always right",
+              "focusPl": "klient ma zawsze rację"
+            }
+          ],
+          "acceptedAnswers": [
+            "the customer is always right"
+          ],
+          "acceptedTranslations": [
+            "klient ma zawsze rację",
+            "klient nasz pan"
+          ]
+        },
+        {
+          "id": "customer-service.word-of-mouth",
+          "term": "word of mouth",
+          "ipa": "/ˌwɜːrd əv ˈmaʊθ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "poczta pantoflowa",
+          "definition": "Information that people pass to each other by talking.",
+          "register": "neutralny",
+          "contextPl": "Polecenia zadowolonych klientów",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Most of our new customers come by word of mouth.",
+              "pl": "Większość nowych klientów przychodzi do nas z polecenia.",
+              "focusEn": "word of mouth",
+              "focusPl": "z polecenia"
+            },
+            {
+              "en": "Good service spreads by word of mouth faster than any ad.",
+              "pl": "Dobra obsługa rozchodzi się pocztą pantoflową szybciej niż jakakolwiek reklama.",
+              "focusEn": "word of mouth",
+              "focusPl": "pocztą pantoflową"
+            }
+          ],
+          "acceptedAnswers": [
+            "word of mouth"
+          ],
+          "acceptedTranslations": [
+            "poczta pantoflowa",
+            "marketing szeptany",
+            "z polecenia",
+            "rekomendacje"
+          ]
+        }
+      ]
+    }
+  ]
+}

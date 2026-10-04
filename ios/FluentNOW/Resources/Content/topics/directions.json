@@ -1,0 +1,2651 @@
+{
+  "schemaVersion": 1,
+  "id": "directions",
+  "namePl": "Pytanie o drogę",
+  "nameEn": "Asking for Directions",
+  "group": "travel",
+  "symbol": "map",
+  "summaryPl": "Pytanie o drogę, wskazówki, punkty orientacyjne w mieście, mapy i nawigacja.",
+  "aliases": [
+    "droga",
+    "pytanie o drogę",
+    "kierunki",
+    "wskazówki",
+    "jak dojść",
+    "mapa",
+    "directions",
+    "orientacja w mieście"
+  ],
+  "categories": [
+    {
+      "id": "directions.asking",
+      "namePl": "Pytanie o drogę",
+      "scenePl": "Turysta z telefonem zaczepia przechodnia na ruchliwym chodniku w centrum miasta",
+      "entries": [
+        {
+          "id": "directions.how-do-i-get-to",
+          "term": "how do I get to",
+          "ipa": "/ˌhaʊ du aɪ ˈɡet tuː/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "jak dojść do",
+          "definition": "A question you ask when you want directions to a place.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o drogę",
+          "natural": "",
+          "forms": "",
+          "collocations": "How do I get to the station?",
+          "synonyms": "how can I get to",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Excuse me, how do I get to the art museum from here?",
+              "pl": "Przepraszam, jak dojść do muzeum sztuki stąd?",
+              "focusEn": "how do I get to",
+              "focusPl": "jak dojść do"
+            },
+            {
+              "en": "I asked a woman at the bus stop how do I get to Main Street.",
+              "pl": "Zapytałem kobietę na przystanku, jak dojść do Main Street.",
+              "focusEn": "how do I get to",
+              "focusPl": "jak dojść do"
+            }
+          ],
+          "acceptedAnswers": [
+            "how do I get to",
+            "how can I get to"
+          ],
+          "acceptedTranslations": [
+            "jak dojść do",
+            "jak dojechać do",
+            "jak się dostać do"
+          ]
+        },
+        {
+          "id": "directions.directions",
+          "term": "directions",
+          "ipa": "/dəˈrekʃnz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wskazówki, jak dojść",
+          "definition": "Information about how to get to a place.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o drogę",
+          "natural": "",
+          "forms": "(liczba mnoga)",
+          "collocations": "ask for directions; give directions; get directions",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W tym znaczeniu zawsze w liczbie mnogiej: „ask for directions”.",
+          "examples": [
+            {
+              "en": "Let's ask someone for directions, the map isn't helping.",
+              "pl": "Zapytajmy kogoś o wskazówki, jak dojść, mapa nic nie pomaga.",
+              "focusEn": "directions",
+              "focusPl": "wskazówki, jak dojść"
+            },
+            {
+              "en": "The man gave us great directions, and we found the hotel in five minutes.",
+              "pl": "Mężczyzna dał nam świetne wskazówki, jak dojść, i znaleźliśmy hotel w pięć minut.",
+              "focusEn": "directions",
+              "focusPl": "wskazówki, jak dojść"
+            }
+          ],
+          "acceptedAnswers": [
+            "directions"
+          ],
+          "acceptedTranslations": [
+            "wskazówki, jak dojść",
+            "wskazówki",
+            "drogę",
+            "objaśnienie drogi"
+          ]
+        },
+        {
+          "id": "directions.lost",
+          "term": "lost",
+          "ipa": "/lɔːst/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zgubiony",
+          "definition": "Not knowing where you are or how to get somewhere.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o drogę",
+          "natural": "",
+          "forms": "",
+          "collocations": "get lost; be lost; completely lost",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„We're lost” – zgubiliśmy się.",
+          "examples": [
+            {
+              "en": "Sorry to bother you, but I think we're lost.",
+              "pl": "Przepraszam, że przeszkadzam, ale chyba się zgubiliśmy.",
+              "focusEn": "lost",
+              "focusPl": "zgubiliśmy"
+            },
+            {
+              "en": "We got lost in the old town because all the streets look the same.",
+              "pl": "Zgubiliśmy się na starym mieście, bo wszystkie uliczki wyglądają tak samo.",
+              "focusEn": "lost",
+              "focusPl": "Zgubiliśmy się"
+            }
+          ],
+          "acceptedAnswers": [
+            "lost"
+          ],
+          "acceptedTranslations": [
+            "zgubiony",
+            "zgubić się",
+            "zabłąkany"
+          ]
+        },
+        {
+          "id": "directions.far",
+          "term": "far",
+          "ipa": "/fɑːr/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "daleko",
+          "definition": "A long distance away.",
+          "register": "neutralny",
+          "contextPl": "Odległość",
+          "natural": "",
+          "forms": "farther – farthest",
+          "collocations": "Is it far?; not far from here; too far to walk",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Is it far?” – Czy to daleko?",
+          "examples": [
+            {
+              "en": "Is the train station far from here?",
+              "pl": "Czy dworzec jest daleko stąd?",
+              "focusEn": "far",
+              "focusPl": "daleko"
+            },
+            {
+              "en": "It's not far, just two blocks past the church.",
+              "pl": "To nie jest daleko, tylko dwie przecznice za kościołem.",
+              "focusEn": "far",
+              "focusPl": "daleko"
+            }
+          ],
+          "acceptedAnswers": [
+            "far"
+          ],
+          "acceptedTranslations": [
+            "daleko",
+            "daleki"
+          ]
+        },
+        {
+          "id": "directions.near-here",
+          "term": "near here",
+          "ipa": "/ˌnɪr ˈhɪr/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "niedaleko stąd",
+          "definition": "Close to the place where you are now.",
+          "register": "neutralny",
+          "contextPl": "Odległość",
+          "natural": "",
+          "forms": "",
+          "collocations": "Is there a pharmacy near here?",
+          "synonyms": "nearby, around here",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is there a pharmacy near here?",
+              "pl": "Czy jest gdzieś niedaleko stąd apteka?",
+              "focusEn": "near here",
+              "focusPl": "niedaleko stąd"
+            },
+            {
+              "en": "The guy said there's a good pizza place near here, on the next street.",
+              "pl": "Facet powiedział, że niedaleko stąd, na następnej ulicy, jest dobra pizzeria.",
+              "focusEn": "near here",
+              "focusPl": "niedaleko stąd"
+            }
+          ],
+          "acceptedAnswers": [
+            "near here",
+            "nearby",
+            "around here"
+          ],
+          "acceptedTranslations": [
+            "niedaleko stąd",
+            "w pobliżu",
+            "tu w okolicy"
+          ]
+        },
+        {
+          "id": "directions.walking-distance",
+          "term": "walking distance",
+          "ipa": "/ˈwɔːkɪŋ ˌdɪstəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odległość do przejścia pieszo",
+          "definition": "Close enough to walk to.",
+          "register": "neutralny",
+          "contextPl": "Odległość",
+          "natural": "",
+          "forms": "",
+          "collocations": "within walking distance; in walking distance",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„It's within walking distance” – da się tam dojść pieszo.",
+          "examples": [
+            {
+              "en": "Is the stadium within walking distance, or should we take a bus?",
+              "pl": "Czy stadion jest w odległości do przejścia pieszo, czy lepiej wziąć autobus?",
+              "focusEn": "walking distance",
+              "focusPl": "odległości do przejścia pieszo"
+            },
+            {
+              "en": "Everything in the old town is within walking distance.",
+              "pl": "Na starym mieście wszystko jest w odległości do przejścia pieszo.",
+              "focusEn": "walking distance",
+              "focusPl": "odległości do przejścia pieszo"
+            }
+          ],
+          "acceptedAnswers": [
+            "walking distance"
+          ],
+          "acceptedTranslations": [
+            "odległość do przejścia pieszo",
+            "w zasięgu spaceru",
+            "blisko pieszo"
+          ]
+        },
+        {
+          "id": "directions.around-the-corner",
+          "term": "around the corner",
+          "ipa": "/əˌraʊnd ðə ˈkɔːrnər/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "za rogiem",
+          "definition": "Very close, just after you turn the corner.",
+          "register": "neutralny",
+          "contextPl": "Odległość",
+          "natural": "",
+          "forms": "",
+          "collocations": "just around the corner; right around the corner",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przenośnie: „tuż tuż” (Summer is just around the corner).",
+          "examples": [
+            {
+              "en": "The post office is just around the corner, you can't miss it.",
+              "pl": "Poczta jest tuż za rogiem, nie da się jej przeoczyć.",
+              "focusEn": "around the corner",
+              "focusPl": "za rogiem"
+            },
+            {
+              "en": "We walked for twenty minutes, but the café was right around the corner.",
+              "pl": "Chodziliśmy dwadzieścia minut, a kawiarnia była tuż za rogiem.",
+              "focusEn": "around the corner",
+              "focusPl": "za rogiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "around the corner"
+          ],
+          "acceptedTranslations": [
+            "za rogiem",
+            "tuż za rogiem"
+          ]
+        },
+        {
+          "id": "directions.excuse-me",
+          "term": "excuse me",
+          "ipa": "/ɪkˈskjuːz ˌmiː/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "przepraszam",
+          "definition": "A polite phrase used to get a stranger's attention.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o drogę",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Excuse me, do you know where the subway station is?",
+              "pl": "Przepraszam, wie pan, gdzie jest stacja metra?",
+              "focusEn": "Excuse me",
+              "focusPl": "Przepraszam"
+            },
+            {
+              "en": "Excuse me, sir, is this the way to the city hall?",
+              "pl": "Przepraszam pana, czy to droga do ratusza?",
+              "focusEn": "Excuse me",
+              "focusPl": "Przepraszam"
+            }
+          ],
+          "acceptedAnswers": [
+            "excuse me",
+            "pardon me"
+          ],
+          "acceptedTranslations": [
+            "przepraszam",
+            "przepraszam pana",
+            "przepraszam panią"
+          ]
+        },
+        {
+          "id": "directions.show-me-on-the-map",
+          "term": "show me on the map",
+          "ipa": "/ˌʃoʊ mi ɑːn ðə ˈmæp/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pokazać mi na mapie",
+          "definition": "A request to point to a place on a map.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o drogę",
+          "natural": "",
+          "forms": "showed me on the map",
+          "collocations": "Can you show me on the map?",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you show me on the map where we are right now?",
+              "pl": "Mógłby mi pan pokazać na mapie, gdzie teraz jesteśmy?",
+              "focusEn": "show me on the map",
+              "focusPl": "pokazać na mapie"
+            },
+            {
+              "en": "The woman took my phone and showed me on the map where to turn.",
+              "pl": "Kobieta wzięła mój telefon i pokazała mi na mapie, gdzie skręcić.",
+              "focusEn": "showed me on the map",
+              "focusPl": "pokazała mi na mapie"
+            }
+          ],
+          "acceptedAnswers": [
+            "show me on the map"
+          ],
+          "acceptedTranslations": [
+            "pokazać mi na mapie",
+            "pokazać na mapie"
+          ]
+        },
+        {
+          "id": "directions.you-cant-miss-it",
+          "term": "you can't miss it",
+          "ipa": "/ju ˌkænt ˈmɪs ɪt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nie da się tego przeoczyć",
+          "definition": "Said when a place is very easy to see or find.",
+          "register": "potoczny",
+          "contextPl": "Pytanie o drogę",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's a big red building on the left, you can't miss it.",
+              "pl": "To duży czerwony budynek po lewej, nie da się tego przeoczyć.",
+              "focusEn": "you can't miss it",
+              "focusPl": "nie da się tego przeoczyć"
+            },
+            {
+              "en": "The man said \"you can't miss it,\" but we walked right past the entrance.",
+              "pl": "Mężczyzna powiedział, że nie da się tego przeoczyć, a my przeszliśmy obok wejścia.",
+              "focusEn": "you can't miss it",
+              "focusPl": "nie da się tego przeoczyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "you can't miss it"
+          ],
+          "acceptedTranslations": [
+            "nie da się tego przeoczyć",
+            "nie przegapisz",
+            "na pewno trafisz"
+          ]
+        },
+        {
+          "id": "directions.im-not-from-around-here",
+          "term": "I'm not from around here",
+          "ipa": "/aɪm ˌnɑːt frəm əˈraʊnd ˌhɪr/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nie jestem stąd",
+          "definition": "Said when you cannot help because you do not know the area.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o drogę",
+          "natural": "",
+          "forms": "",
+          "collocations": "Sorry, I'm not from around here.",
+          "synonyms": "I'm not from here",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, I can't help you, I'm not from around here.",
+              "pl": "Przepraszam, nie mogę pomóc, nie jestem stąd.",
+              "focusEn": "I'm not from around here",
+              "focusPl": "nie jestem stąd"
+            },
+            {
+              "en": "The first person we asked said I'm not from around here and walked away.",
+              "pl": "Pierwsza osoba, którą zapytaliśmy, powiedziała „nie jestem stąd” i poszła dalej.",
+              "focusEn": "I'm not from around here",
+              "focusPl": "nie jestem stąd"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'm not from around here",
+            "I'm not from here"
+          ],
+          "acceptedTranslations": [
+            "nie jestem stąd",
+            "nie znam okolicy"
+          ]
+        },
+        {
+          "id": "directions.which-way",
+          "term": "which way",
+          "ipa": "/ˌwɪtʃ ˈweɪ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "w którą stronę",
+          "definition": "A question about the direction you should go.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o drogę",
+          "natural": "",
+          "forms": "",
+          "collocations": "Which way is the beach?",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Which way is the beach from here?",
+              "pl": "W którą stronę jest stąd plaża?",
+              "focusEn": "Which way",
+              "focusPl": "W którą stronę"
+            },
+            {
+              "en": "We stood at the corner, arguing about which way to go.",
+              "pl": "Staliśmy na rogu i kłóciliśmy się, w którą stronę iść.",
+              "focusEn": "which way",
+              "focusPl": "w którą stronę"
+            }
+          ],
+          "acceptedAnswers": [
+            "which way"
+          ],
+          "acceptedTranslations": [
+            "w którą stronę",
+            "którędy",
+            "jak iść"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "directions.giving-directions",
+      "namePl": "Wskazówki",
+      "scenePl": "Przechodzień tłumaczy turyście drogę, pokazując ręką kolejne ulice",
+      "entries": [
+        {
+          "id": "directions.turn-left",
+          "term": "turn left",
+          "ipa": "/ˌtɜːrn ˈleft/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "skręcić w lewo",
+          "definition": "To change direction and go to the left.",
+          "register": "neutralny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "turned left",
+          "collocations": "turn left at the light; turn left onto Oak Street",
+          "synonyms": "",
+          "antonyms": "turn right",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Turn left at the bank and walk for two minutes.",
+              "pl": "Skręć w lewo przy banku i idź jeszcze dwie minuty.",
+              "focusEn": "Turn left",
+              "focusPl": "Skręć w lewo"
+            },
+            {
+              "en": "After the bridge, you'll need to turn left onto Oak Street.",
+              "pl": "Za mostem trzeba będzie skręcić w lewo w Oak Street.",
+              "focusEn": "turn left",
+              "focusPl": "skręcić w lewo"
+            }
+          ],
+          "acceptedAnswers": [
+            "turn left",
+            "make a left"
+          ],
+          "acceptedTranslations": [
+            "skręcić w lewo",
+            "skręcać w lewo"
+          ]
+        },
+        {
+          "id": "directions.turn-right",
+          "term": "turn right",
+          "ipa": "/ˌtɜːrn ˈraɪt/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "skręcić w prawo",
+          "definition": "To change direction and go to the right.",
+          "register": "neutralny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "turned right",
+          "collocations": "turn right at the corner; turn right onto Main Street",
+          "synonyms": "",
+          "antonyms": "turn left",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Turn right at the second traffic light.",
+              "pl": "Skręć w prawo na drugich światłach.",
+              "focusEn": "Turn right",
+              "focusPl": "Skręć w prawo"
+            },
+            {
+              "en": "If you turn right here, you'll see the museum straight ahead.",
+              "pl": "Jeśli tu skręcisz w prawo, zobaczysz muzeum na wprost.",
+              "focusEn": "turn right",
+              "focusPl": "skręcisz w prawo"
+            }
+          ],
+          "acceptedAnswers": [
+            "turn right",
+            "make a right"
+          ],
+          "acceptedTranslations": [
+            "skręcić w prawo",
+            "skręcać w prawo"
+          ]
+        },
+        {
+          "id": "directions.go-straight",
+          "term": "go straight",
+          "ipa": "/ˌɡoʊ ˈstreɪt/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "iść prosto",
+          "definition": "To continue in the same direction without turning.",
+          "register": "neutralny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "went straight",
+          "collocations": "go straight ahead; go straight for two blocks",
+          "synonyms": "keep going straight",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Go straight for two blocks, and it's on your right.",
+              "pl": "Idź prosto przez dwie przecznice, to będzie po prawej.",
+              "focusEn": "Go straight",
+              "focusPl": "Idź prosto"
+            },
+            {
+              "en": "Don't turn here, just go straight until you see the park.",
+              "pl": "Nie skręcaj tutaj, po prostu idź prosto, aż zobaczysz park.",
+              "focusEn": "go straight",
+              "focusPl": "idź prosto"
+            }
+          ],
+          "acceptedAnswers": [
+            "go straight",
+            "go straight ahead",
+            "keep going straight"
+          ],
+          "acceptedTranslations": [
+            "iść prosto",
+            "prosto",
+            "jechać prosto"
+          ]
+        },
+        {
+          "id": "directions.on-your-left",
+          "term": "on your left",
+          "ipa": "/ˌɑːn jʊr ˈleft/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "po lewej stronie",
+          "definition": "On the left side as you walk or drive.",
+          "register": "neutralny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "",
+          "collocations": "it's on your left",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„On your right” – po prawej stronie.",
+          "examples": [
+            {
+              "en": "Walk past the church, and the library will be on your left.",
+              "pl": "Przejdź obok kościoła, a biblioteka będzie po lewej stronie.",
+              "focusEn": "on your left",
+              "focusPl": "po lewej stronie"
+            },
+            {
+              "en": "The entrance is on your left, right after the flower shop.",
+              "pl": "Wejście jest po lewej stronie, zaraz za kwiaciarnią.",
+              "focusEn": "on your left",
+              "focusPl": "po lewej stronie"
+            }
+          ],
+          "acceptedAnswers": [
+            "on your left",
+            "on the left"
+          ],
+          "acceptedTranslations": [
+            "po lewej stronie",
+            "po lewej"
+          ]
+        },
+        {
+          "id": "directions.on-your-right",
+          "term": "on your right",
+          "ipa": "/ˌɑːn jʊr ˈraɪt/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "po prawej stronie",
+          "definition": "On the right side as you walk or drive.",
+          "register": "neutralny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "",
+          "collocations": "it's on your right",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Keep walking, and you'll see the hotel on your right.",
+              "pl": "Idź dalej, a zobaczysz hotel po prawej stronie.",
+              "focusEn": "on your right",
+              "focusPl": "po prawej stronie"
+            },
+            {
+              "en": "The bus stop is on your right, across from the gas station.",
+              "pl": "Przystanek jest po prawej stronie, naprzeciwko stacji benzynowej.",
+              "focusEn": "on your right",
+              "focusPl": "po prawej stronie"
+            }
+          ],
+          "acceptedAnswers": [
+            "on your right"
+          ],
+          "acceptedTranslations": [
+            "po prawej stronie",
+            "po prawej"
+          ]
+        },
+        {
+          "id": "directions.across-from",
+          "term": "across from",
+          "ipa": "/əˈkrɔːs frəm/",
+          "pos": "przyimek",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "naprzeciwko",
+          "definition": "On the other side of the street from something.",
+          "register": "neutralny",
+          "contextPl": "Położenie",
+          "natural": "",
+          "forms": "",
+          "collocations": "across from the bank; right across from",
+          "synonyms": "opposite",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The pharmacy is across from the post office.",
+              "pl": "Apteka jest naprzeciwko poczty.",
+              "focusEn": "across from",
+              "focusPl": "naprzeciwko"
+            },
+            {
+              "en": "Our hotel is right across from the train station.",
+              "pl": "Nasz hotel jest tuż naprzeciwko dworca.",
+              "focusEn": "across from",
+              "focusPl": "naprzeciwko"
+            }
+          ],
+          "acceptedAnswers": [
+            "across from",
+            "opposite"
+          ],
+          "acceptedTranslations": [
+            "naprzeciwko",
+            "vis-à-vis",
+            "po drugiej stronie ulicy od"
+          ]
+        },
+        {
+          "id": "directions.next-to",
+          "term": "next to",
+          "ipa": "/ˈnekst tuː/",
+          "pos": "przyimek",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "obok",
+          "definition": "Very close to something, at its side.",
+          "register": "neutralny",
+          "contextPl": "Położenie",
+          "natural": "",
+          "forms": "",
+          "collocations": "right next to; next to the bank",
+          "synonyms": "beside",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The café is next to the bookstore.",
+              "pl": "Kawiarnia jest obok księgarni.",
+              "focusEn": "next to",
+              "focusPl": "obok"
+            },
+            {
+              "en": "You'll find the entrance next to a big blue door.",
+              "pl": "Wejście znajdziesz obok dużych niebieskich drzwi.",
+              "focusEn": "next to",
+              "focusPl": "obok"
+            }
+          ],
+          "acceptedAnswers": [
+            "next to",
+            "beside"
+          ],
+          "acceptedTranslations": [
+            "obok",
+            "tuż obok"
+          ]
+        },
+        {
+          "id": "directions.between",
+          "term": "between",
+          "ipa": "/bɪˈtwiːn/",
+          "pos": "przyimek",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "między",
+          "definition": "In the space that separates two things.",
+          "register": "neutralny",
+          "contextPl": "Położenie",
+          "natural": "",
+          "forms": "",
+          "collocations": "between the bank and the café",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The shop is between a bakery and a shoe store.",
+              "pl": "Sklep jest między piekarnią a sklepem z butami.",
+              "focusEn": "between",
+              "focusPl": "między"
+            },
+            {
+              "en": "There's a small alley between the two tall buildings.",
+              "pl": "Między tymi dwoma wysokimi budynkami jest wąska uliczka.",
+              "focusEn": "between",
+              "focusPl": "Między"
+            }
+          ],
+          "acceptedAnswers": [
+            "between"
+          ],
+          "acceptedTranslations": [
+            "między",
+            "pomiędzy"
+          ]
+        },
+        {
+          "id": "directions.past",
+          "term": "past",
+          "ipa": "/pæst/",
+          "pos": "przyimek",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "obok",
+          "definition": "Going by something and continuing beyond it.",
+          "register": "neutralny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "",
+          "collocations": "go past; walk past; just past the bridge",
+          "synonyms": "by, beyond",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Walk past the church, and turn left.",
+              "pl": "Przejdź obok kościoła i skręć w lewo.",
+              "focusEn": "past",
+              "focusPl": "obok"
+            },
+            {
+              "en": "The restaurant is just past the bridge, on the corner.",
+              "pl": "Restauracja jest zaraz za mostem, na rogu.",
+              "focusEn": "past",
+              "focusPl": "za"
+            }
+          ],
+          "acceptedAnswers": [
+            "past",
+            "beyond"
+          ],
+          "acceptedTranslations": [
+            "obok",
+            "za",
+            "mijając"
+          ]
+        },
+        {
+          "id": "directions.keep-going",
+          "term": "keep going",
+          "ipa": "/ˌkiːp ˈɡoʊɪŋ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "iść dalej",
+          "definition": "To continue walking or driving in the same direction.",
+          "register": "potoczny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "kept going",
+          "collocations": "keep going straight; keep going until",
+          "synonyms": "continue",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Keep going until you reach the end of the street.",
+              "pl": "Idź dalej, aż dojdziesz do końca ulicy.",
+              "focusEn": "Keep going",
+              "focusPl": "Idź dalej"
+            },
+            {
+              "en": "We almost turned back, but the man told us to keep going.",
+              "pl": "Prawie zawróciliśmy, ale mężczyzna kazał nam iść dalej.",
+              "focusEn": "keep going",
+              "focusPl": "iść dalej"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep going",
+            "continue"
+          ],
+          "acceptedTranslations": [
+            "iść dalej",
+            "kontynuować",
+            "nie zatrzymywać się"
+          ]
+        },
+        {
+          "id": "directions.cross",
+          "term": "cross",
+          "ipa": "/krɔːs/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przejść przez",
+          "definition": "To go from one side of a street to the other.",
+          "register": "neutralny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "crosses – crossed – crossed",
+          "collocations": "cross the street; cross at the light",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Cross the street at the light and go into the park.",
+              "pl": "Przejdź przez ulicę na światłach i wejdź do parku.",
+              "focusEn": "Cross",
+              "focusPl": "Przejdź przez"
+            },
+            {
+              "en": "We crossed the bridge and found the market on the other side.",
+              "pl": "Przeszliśmy przez most i po drugiej stronie znaleźliśmy targ.",
+              "focusEn": "crossed",
+              "focusPl": "Przeszliśmy przez"
+            }
+          ],
+          "acceptedAnswers": [
+            "cross"
+          ],
+          "acceptedTranslations": [
+            "przejść przez",
+            "przechodzić przez"
+          ]
+        },
+        {
+          "id": "directions.at-the-end-of",
+          "term": "at the end of",
+          "ipa": "/æt ði ˈend əv/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "na końcu",
+          "definition": "At the last part of a street or hallway.",
+          "register": "neutralny",
+          "contextPl": "Położenie",
+          "natural": "",
+          "forms": "",
+          "collocations": "at the end of the street; at the end of the block",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The museum is at the end of this street.",
+              "pl": "Muzeum jest na końcu tej ulicy.",
+              "focusEn": "at the end of",
+              "focusPl": "na końcu"
+            },
+            {
+              "en": "Go up the hill, and the church is at the end of the road.",
+              "pl": "Idź pod górę, a kościół jest na końcu drogi.",
+              "focusEn": "at the end of",
+              "focusPl": "na końcu"
+            }
+          ],
+          "acceptedAnswers": [
+            "at the end of"
+          ],
+          "acceptedTranslations": [
+            "na końcu"
+          ]
+        },
+        {
+          "id": "directions.until-you-see",
+          "term": "until you see",
+          "ipa": "/ənˌtɪl ju ˈsiː/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "aż zobaczysz",
+          "definition": "Used in directions to say where to stop or turn.",
+          "register": "neutralny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "",
+          "collocations": "keep walking until you see",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Walk down this street until you see a big fountain.",
+              "pl": "Idź tą ulicą, aż zobaczysz dużą fontannę.",
+              "focusEn": "until you see",
+              "focusPl": "aż zobaczysz"
+            },
+            {
+              "en": "Keep driving until you see a sign for the beach.",
+              "pl": "Jedź dalej, aż zobaczysz znak na plażę.",
+              "focusEn": "until you see",
+              "focusPl": "aż zobaczysz"
+            }
+          ],
+          "acceptedAnswers": [
+            "until you see"
+          ],
+          "acceptedTranslations": [
+            "aż zobaczysz",
+            "dopóki nie zobaczysz"
+          ]
+        },
+        {
+          "id": "directions.follow-the-signs",
+          "term": "follow the signs",
+          "ipa": "/ˌfɑːloʊ ðə ˈsaɪnz/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "iść za znakami",
+          "definition": "To go in the direction the signs show.",
+          "register": "neutralny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "followed the signs",
+          "collocations": "follow the signs for the airport",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Just follow the signs for the old town.",
+              "pl": "Po prostu idź za znakami na stare miasto.",
+              "focusEn": "follow the signs",
+              "focusPl": "idź za znakami"
+            },
+            {
+              "en": "We followed the signs, but they led us to a closed gate.",
+              "pl": "Szliśmy za znakami, ale zaprowadziły nas do zamkniętej bramy.",
+              "focusEn": "followed the signs",
+              "focusPl": "Szliśmy za znakami"
+            }
+          ],
+          "acceptedAnswers": [
+            "follow the signs"
+          ],
+          "acceptedTranslations": [
+            "iść za znakami",
+            "kierować się znakami"
+          ]
+        },
+        {
+          "id": "directions.take-the-second-left",
+          "term": "take the second left",
+          "ipa": "/ˌteɪk ðə ˌsekənd ˈleft/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "skręcić w drugą w lewo",
+          "definition": "To turn left at the second street.",
+          "register": "neutralny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "took the second left",
+          "collocations": "take the first right; take the second left",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Take the first right” – skręć w pierwszą w prawo.",
+          "examples": [
+            {
+              "en": "Take the second left, and the hotel is halfway down the street.",
+              "pl": "Skręć w drugą w lewo, a hotel jest w połowie ulicy.",
+              "focusEn": "Take the second left",
+              "focusPl": "Skręć w drugą w lewo"
+            },
+            {
+              "en": "I told the driver to take the second left, but he took the first.",
+              "pl": "Powiedziałem kierowcy, żeby skręcił w drugą w lewo, ale skręcił w pierwszą.",
+              "focusEn": "take the second left",
+              "focusPl": "skręcił w drugą w lewo"
+            }
+          ],
+          "acceptedAnswers": [
+            "take the second left"
+          ],
+          "acceptedTranslations": [
+            "skręcić w drugą w lewo",
+            "druga w lewo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "directions.landmarks",
+      "namePl": "Ulice i punkty orientacyjne",
+      "scenePl": "Spacer po nieznanej dzielnicy miasta z szukaniem konkretnego adresu",
+      "entries": [
+        {
+          "id": "directions.block",
+          "term": "block",
+          "ipa": "/blɑːk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przecznica",
+          "definition": "The distance along a street from one cross street to the next.",
+          "register": "neutralny",
+          "contextPl": "Ulice",
+          "natural": "",
+          "forms": "blocks",
+          "collocations": "two blocks away; walk three blocks; around the block",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA odległości w mieście podaje się w przecznicach: „It's two blocks away”.",
+          "examples": [
+            {
+              "en": "The hotel is only three blocks from the station.",
+              "pl": "Hotel jest tylko trzy przecznice od dworca.",
+              "focusEn": "blocks",
+              "focusPl": "przecznice"
+            },
+            {
+              "en": "Walk one more block, and you'll see the theater on the corner.",
+              "pl": "Przejdź jeszcze jedną przecznicę, a zobaczysz teatr na rogu.",
+              "focusEn": "block",
+              "focusPl": "przecznicę"
+            }
+          ],
+          "acceptedAnswers": [
+            "block"
+          ],
+          "acceptedTranslations": [
+            "przecznica",
+            "kwartał ulic"
+          ]
+        },
+        {
+          "id": "directions.corner",
+          "term": "corner",
+          "ipa": "/ˈkɔːrnər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "róg",
+          "definition": "The place where two streets meet.",
+          "register": "neutralny",
+          "contextPl": "Ulice",
+          "natural": "",
+          "forms": "corners",
+          "collocations": "on the corner; at the corner of; turn the corner",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„On the corner of 5th and Main” – na rogu 5. i Main.",
+          "examples": [
+            {
+              "en": "Meet me on the corner of Fifth Avenue and Pine Street.",
+              "pl": "Spotkajmy się na rogu Piątej Alei i Pine Street.",
+              "focusEn": "corner",
+              "focusPl": "rogu"
+            },
+            {
+              "en": "There's a coffee shop on every corner in this neighborhood.",
+              "pl": "W tej dzielnicy na każdym rogu jest kawiarnia.",
+              "focusEn": "corner",
+              "focusPl": "rogu"
+            }
+          ],
+          "acceptedAnswers": [
+            "corner"
+          ],
+          "acceptedTranslations": [
+            "róg",
+            "narożnik"
+          ]
+        },
+        {
+          "id": "directions.sidewalk",
+          "term": "sidewalk",
+          "ipa": "/ˈsaɪdwɔːk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "chodnik",
+          "definition": "The path for people to walk on at the side of a street.",
+          "register": "neutralny",
+          "contextPl": "Ulice",
+          "natural": "",
+          "forms": "sidewalks",
+          "collocations": "walk on the sidewalk; narrow sidewalk",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po brytyjsku: „pavement”.",
+          "examples": [
+            {
+              "en": "Stay on the sidewalk, the cars here drive really fast.",
+              "pl": "Trzymaj się chodnika, samochody jeżdżą tu naprawdę szybko.",
+              "focusEn": "sidewalk",
+              "focusPl": "chodnika"
+            },
+            {
+              "en": "The sidewalk was so crowded that we walked in the street.",
+              "pl": "Chodnik był tak zatłoczony, że szliśmy ulicą.",
+              "focusEn": "sidewalk",
+              "focusPl": "Chodnik"
+            }
+          ],
+          "acceptedAnswers": [
+            "sidewalk",
+            "pavement"
+          ],
+          "acceptedTranslations": [
+            "chodnik",
+            "trotuar"
+          ]
+        },
+        {
+          "id": "directions.avenue",
+          "term": "avenue",
+          "ipa": "/ˈævənuː/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "aleja",
+          "definition": "A wide street in a city, often running in one main direction.",
+          "register": "neutralny",
+          "contextPl": "Ulice",
+          "natural": "",
+          "forms": "avenues",
+          "collocations": "Fifth Avenue; walk up the avenue",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W Nowym Jorku „avenues” biegną z północy na południe, a „streets” ze wschodu na zachód.",
+          "examples": [
+            {
+              "en": "Walk up the avenue until you reach 42nd Street.",
+              "pl": "Idź aleją w górę, aż dojdziesz do 42. Ulicy.",
+              "focusEn": "avenue",
+              "focusPl": "aleją"
+            },
+            {
+              "en": "The avenue is lined with shops and old trees.",
+              "pl": "Wzdłuż alei ciągną się sklepy i stare drzewa.",
+              "focusEn": "avenue",
+              "focusPl": "alei"
+            }
+          ],
+          "acceptedAnswers": [
+            "avenue"
+          ],
+          "acceptedTranslations": [
+            "aleja"
+          ]
+        },
+        {
+          "id": "directions.landmark",
+          "term": "landmark",
+          "ipa": "/ˈlændmɑːrk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "punkt orientacyjny",
+          "definition": "A building or place that is easy to recognize and helps you find your way.",
+          "register": "neutralny",
+          "contextPl": "Punkty orientacyjne",
+          "natural": "",
+          "forms": "landmarks",
+          "collocations": "a famous landmark; use a landmark",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też: „zabytek, charakterystyczny obiekt”.",
+          "examples": [
+            {
+              "en": "The clock tower is a good landmark, you can see it from everywhere.",
+              "pl": "Wieża zegarowa to dobry punkt orientacyjny, widać ją zewsząd.",
+              "focusEn": "landmark",
+              "focusPl": "punkt orientacyjny"
+            },
+            {
+              "en": "Without any landmarks, all the streets in the neighborhood looked the same.",
+              "pl": "Bez żadnych punktów orientacyjnych wszystkie ulice dzielnicy wyglądały tak samo.",
+              "focusEn": "landmarks",
+              "focusPl": "punktów orientacyjnych"
+            }
+          ],
+          "acceptedAnswers": [
+            "landmark"
+          ],
+          "acceptedTranslations": [
+            "punkt orientacyjny",
+            "charakterystyczny budynek",
+            "znak rozpoznawczy"
+          ]
+        },
+        {
+          "id": "directions.square",
+          "term": "square",
+          "ipa": "/skwer/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "plac",
+          "definition": "An open public area in a city, often with four sides.",
+          "register": "neutralny",
+          "contextPl": "Punkty orientacyjne",
+          "natural": "",
+          "forms": "squares",
+          "collocations": "main square; town square; in the square",
+          "synonyms": "plaza",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The tourist office is on the main square, next to the fountain.",
+              "pl": "Informacja turystyczna jest na głównym placu, obok fontanny.",
+              "focusEn": "square",
+              "focusPl": "placu"
+            },
+            {
+              "en": "All the streets in the old town lead to the square.",
+              "pl": "Wszystkie ulice starego miasta prowadzą na plac.",
+              "focusEn": "square",
+              "focusPl": "plac"
+            }
+          ],
+          "acceptedAnswers": [
+            "square",
+            "plaza"
+          ],
+          "acceptedTranslations": [
+            "plac",
+            "rynek"
+          ]
+        },
+        {
+          "id": "directions.street-sign",
+          "term": "street sign",
+          "ipa": "/ˈstriːt ˌsaɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "tabliczka z nazwą ulicy",
+          "definition": "A sign that shows the name of a street.",
+          "register": "neutralny",
+          "contextPl": "Ulice",
+          "natural": "",
+          "forms": "street signs",
+          "collocations": "read the street sign; look for the street sign",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I couldn't find the street sign, so I didn't know where we were.",
+              "pl": "Nie mogłem znaleźć tabliczki z nazwą ulicy, więc nie wiedziałem, gdzie jesteśmy.",
+              "focusEn": "street sign",
+              "focusPl": "tabliczki z nazwą ulicy"
+            },
+            {
+              "en": "Look at the street sign on the corner, it says Elm Street.",
+              "pl": "Spójrz na tabliczkę z nazwą ulicy na rogu, jest na niej napisane Elm Street.",
+              "focusEn": "street sign",
+              "focusPl": "tabliczkę z nazwą ulicy"
+            }
+          ],
+          "acceptedAnswers": [
+            "street sign"
+          ],
+          "acceptedTranslations": [
+            "tabliczka z nazwą ulicy",
+            "tablica z nazwą ulicy"
+          ]
+        },
+        {
+          "id": "directions.address",
+          "term": "address",
+          "ipa": "/ˈædres/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "adres",
+          "definition": "The number, street and city where a building is.",
+          "register": "neutralny",
+          "contextPl": "Szukanie adresu",
+          "natural": "",
+          "forms": "addresses",
+          "collocations": "what's the address?; type the address; the wrong address",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA wymowa także /əˈdres/.",
+          "examples": [
+            {
+              "en": "Do you have the address of the restaurant?",
+              "pl": "Masz adres restauracji?",
+              "focusEn": "address",
+              "focusPl": "adres"
+            },
+            {
+              "en": "I typed the address into my phone, but it took me to the back of the building.",
+              "pl": "Wpisałem adres w telefonie, ale zaprowadził mnie na tył budynku.",
+              "focusEn": "address",
+              "focusPl": "adres"
+            }
+          ],
+          "acceptedAnswers": [
+            "address"
+          ],
+          "acceptedTranslations": [
+            "adres"
+          ]
+        },
+        {
+          "id": "directions.building",
+          "term": "building",
+          "ipa": "/ˈbɪldɪŋ/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "budynek",
+          "definition": "A structure with walls and a roof, like a house or office.",
+          "register": "neutralny",
+          "contextPl": "Punkty orientacyjne",
+          "natural": "",
+          "forms": "buildings",
+          "collocations": "tall building; office building; the building on the corner",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's the tall glass building on the corner.",
+              "pl": "To ten wysoki przeszklony budynek na rogu.",
+              "focusEn": "building",
+              "focusPl": "budynek"
+            },
+            {
+              "en": "The entrance is on the side of the building, not in front.",
+              "pl": "Wejście jest z boku budynku, nie od frontu.",
+              "focusEn": "building",
+              "focusPl": "budynku"
+            }
+          ],
+          "acceptedAnswers": [
+            "building"
+          ],
+          "acceptedTranslations": [
+            "budynek",
+            "gmach"
+          ]
+        },
+        {
+          "id": "directions.bridge",
+          "term": "bridge",
+          "ipa": "/brɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "most",
+          "definition": "A structure that carries a road or path over a river or road.",
+          "register": "neutralny",
+          "contextPl": "Punkty orientacyjne",
+          "natural": "",
+          "forms": "bridges",
+          "collocations": "cross the bridge; over the bridge",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Cross the bridge, and the old town is right there.",
+              "pl": "Przejdź przez most, a stare miasto będzie zaraz tam.",
+              "focusEn": "bridge",
+              "focusPl": "most"
+            },
+            {
+              "en": "We walked along the river until we reached the second bridge.",
+              "pl": "Szliśmy wzdłuż rzeki, aż dotarliśmy do drugiego mostu.",
+              "focusEn": "bridge",
+              "focusPl": "mostu"
+            }
+          ],
+          "acceptedAnswers": [
+            "bridge"
+          ],
+          "acceptedTranslations": [
+            "most",
+            "kładka"
+          ]
+        },
+        {
+          "id": "directions.neighborhood",
+          "term": "neighborhood",
+          "ipa": "/ˈneɪbərhʊd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dzielnica",
+          "definition": "A part of a city where people live.",
+          "register": "neutralny",
+          "contextPl": "Punkty orientacyjne",
+          "natural": "",
+          "forms": "neighborhoods",
+          "collocations": "quiet neighborhood; this neighborhood; in the neighborhood",
+          "synonyms": "area",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This neighborhood has lots of small streets, so it's easy to get lost.",
+              "pl": "W tej dzielnicy jest mnóstwo małych uliczek, więc łatwo się zgubić.",
+              "focusEn": "neighborhood",
+              "focusPl": "dzielnicy"
+            },
+            {
+              "en": "We walked around the neighborhood looking for the right address.",
+              "pl": "Chodziliśmy po dzielnicy, szukając właściwego adresu.",
+              "focusEn": "neighborhood",
+              "focusPl": "dzielnicy"
+            }
+          ],
+          "acceptedAnswers": [
+            "neighborhood",
+            "area"
+          ],
+          "acceptedTranslations": [
+            "dzielnica",
+            "okolica",
+            "osiedle"
+          ]
+        },
+        {
+          "id": "directions.alley",
+          "term": "alley",
+          "ipa": "/ˈæli/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zaułek",
+          "definition": "A narrow street between or behind buildings.",
+          "register": "neutralny",
+          "contextPl": "Ulice",
+          "natural": "",
+          "forms": "alleys",
+          "collocations": "narrow alley; back alley; down the alley",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The entrance to the bar is down a small alley.",
+              "pl": "Wejście do baru jest w małym zaułku.",
+              "focusEn": "alley",
+              "focusPl": "zaułku"
+            },
+            {
+              "en": "The map showed a shortcut through the alley behind the market.",
+              "pl": "Mapa pokazywała skrót przez zaułek za targiem.",
+              "focusEn": "alley",
+              "focusPl": "zaułek"
+            }
+          ],
+          "acceptedAnswers": [
+            "alley"
+          ],
+          "acceptedTranslations": [
+            "zaułek",
+            "wąska uliczka"
+          ]
+        },
+        {
+          "id": "directions.dead-end",
+          "term": "dead end",
+          "ipa": "/ˌded ˈend/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ślepa uliczka",
+          "definition": "A street that is closed at one end.",
+          "register": "neutralny",
+          "contextPl": "Ulice",
+          "natural": "",
+          "forms": "dead ends",
+          "collocations": "reach a dead end; dead-end street",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przenośnie: „ślepy zaułek” w sprawie.",
+          "examples": [
+            {
+              "en": "Don't go down that street, it's a dead end.",
+              "pl": "Nie idź tą ulicą, to ślepa uliczka.",
+              "focusEn": "dead end",
+              "focusPl": "ślepa uliczka"
+            },
+            {
+              "en": "We followed the map and ended up at a dead end behind a warehouse.",
+              "pl": "Szliśmy za mapą i wylądowaliśmy w ślepej uliczce za magazynem.",
+              "focusEn": "dead end",
+              "focusPl": "ślepej uliczce"
+            }
+          ],
+          "acceptedAnswers": [
+            "dead end"
+          ],
+          "acceptedTranslations": [
+            "ślepa uliczka",
+            "ślepa ulica"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "directions.maps",
+      "namePl": "Mapy i nawigacja",
+      "scenePl": "Szukanie drogi z mapą w telefonie podczas pieszego zwiedzania nowego miasta",
+      "entries": [
+        {
+          "id": "directions.map",
+          "term": "map",
+          "ipa": "/mæp/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "mapa",
+          "definition": "A drawing or picture of an area showing streets and places.",
+          "register": "neutralny",
+          "contextPl": "Mapy",
+          "natural": "",
+          "forms": "maps",
+          "collocations": "look at the map; city map; on the map",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's check the map before we walk any farther.",
+              "pl": "Sprawdźmy mapę, zanim pójdziemy dalej.",
+              "focusEn": "map",
+              "focusPl": "mapę"
+            },
+            {
+              "en": "The hotel gave us a paper map with the main sights marked.",
+              "pl": "W hotelu dostaliśmy papierową mapę z zaznaczonymi głównymi atrakcjami.",
+              "focusEn": "map",
+              "focusPl": "mapę"
+            }
+          ],
+          "acceptedAnswers": [
+            "map"
+          ],
+          "acceptedTranslations": [
+            "mapa",
+            "plan miasta"
+          ]
+        },
+        {
+          "id": "directions.gps",
+          "term": "GPS",
+          "ipa": "/ˌdʒiː piː ˈes/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "nawigacja",
+          "definition": "A system that uses satellites to show where you are and how to get somewhere.",
+          "register": "neutralny",
+          "contextPl": "Nawigacja",
+          "natural": "",
+          "forms": "(niepoliczalny)",
+          "collocations": "use the GPS; turn on the GPS; the GPS says",
+          "synonyms": "navigation",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The GPS says it's a fifteen-minute walk from here.",
+              "pl": "Nawigacja pokazuje, że stąd jest piętnaście minut pieszo.",
+              "focusEn": "GPS",
+              "focusPl": "Nawigacja"
+            },
+            {
+              "en": "My GPS stopped working between the tall buildings downtown.",
+              "pl": "Moja nawigacja przestała działać między wysokimi budynkami w centrum.",
+              "focusEn": "GPS",
+              "focusPl": "nawigacja"
+            }
+          ],
+          "acceptedAnswers": [
+            "GPS",
+            "navigation"
+          ],
+          "acceptedTranslations": [
+            "nawigacja",
+            "GPS",
+            "nawigacja satelitarna"
+          ]
+        },
+        {
+          "id": "directions.north",
+          "term": "north",
+          "ipa": "/nɔːrθ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "północ",
+          "definition": "The direction that is on your left when you face the sunrise.",
+          "register": "neutralny",
+          "contextPl": "Kierunki świata",
+          "natural": "",
+          "forms": "",
+          "collocations": "head north; to the north; north of the city",
+          "synonyms": "",
+          "antonyms": "south",
+          "notePl": "Przymiotnik/przysłówek: „north side”, „go north”.",
+          "examples": [
+            {
+              "en": "The river is to the north, so if you see water, you went too far.",
+              "pl": "Rzeka jest na północy, więc jak zobaczysz wodę, to znaczy, że poszedłeś za daleko.",
+              "focusEn": "north",
+              "focusPl": "północy"
+            },
+            {
+              "en": "Walk toward the north end of the park, and the museum is there.",
+              "pl": "Idź w stronę północnego krańca parku, tam jest muzeum.",
+              "focusEn": "north",
+              "focusPl": "północnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "north"
+          ],
+          "acceptedTranslations": [
+            "północ",
+            "na północ",
+            "północny"
+          ]
+        },
+        {
+          "id": "directions.south",
+          "term": "south",
+          "ipa": "/saʊθ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "południe",
+          "definition": "The direction opposite north.",
+          "register": "neutralny",
+          "contextPl": "Kierunki świata",
+          "natural": "",
+          "forms": "",
+          "collocations": "head south; to the south; south of downtown",
+          "synonyms": "",
+          "antonyms": "north",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The beach is about a mile to the south.",
+              "pl": "Plaża jest jakieś półtora kilometra na południe.",
+              "focusEn": "south",
+              "focusPl": "południe"
+            },
+            {
+              "en": "We walked south along the main street until we found the market.",
+              "pl": "Szliśmy na południe główną ulicą, aż znaleźliśmy targ.",
+              "focusEn": "south",
+              "focusPl": "południe"
+            }
+          ],
+          "acceptedAnswers": [
+            "south"
+          ],
+          "acceptedTranslations": [
+            "południe",
+            "na południe"
+          ]
+        },
+        {
+          "id": "directions.east",
+          "term": "east",
+          "ipa": "/iːst/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wschód",
+          "definition": "The direction where the sun rises.",
+          "register": "neutralny",
+          "contextPl": "Kierunki świata",
+          "natural": "",
+          "forms": "",
+          "collocations": "head east; to the east; east side",
+          "synonyms": "",
+          "antonyms": "west",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The old town is on the east side of the river.",
+              "pl": "Stare miasto leży po wschodniej stronie rzeki.",
+              "focusEn": "east",
+              "focusPl": "wschodniej"
+            },
+            {
+              "en": "If the sun is in front of you in the morning, you're walking east.",
+              "pl": "Jeśli rano masz słońce przed sobą, idziesz na wschód.",
+              "focusEn": "east",
+              "focusPl": "wschód"
+            }
+          ],
+          "acceptedAnswers": [
+            "east"
+          ],
+          "acceptedTranslations": [
+            "wschód",
+            "na wschód",
+            "wschodni"
+          ]
+        },
+        {
+          "id": "directions.west",
+          "term": "west",
+          "ipa": "/west/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zachód",
+          "definition": "The direction where the sun goes down.",
+          "register": "neutralny",
+          "contextPl": "Kierunki świata",
+          "natural": "",
+          "forms": "",
+          "collocations": "head west; to the west; west side",
+          "synonyms": "",
+          "antonyms": "east",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Head west for about ten minutes, and you'll reach the harbor.",
+              "pl": "Idź na zachód jakieś dziesięć minut, a dojdziesz do portu.",
+              "focusEn": "west",
+              "focusPl": "zachód"
+            },
+            {
+              "en": "The best restaurants are on the west side of the square.",
+              "pl": "Najlepsze restauracje są po zachodniej stronie placu.",
+              "focusEn": "west",
+              "focusPl": "zachodniej"
+            }
+          ],
+          "acceptedAnswers": [
+            "west"
+          ],
+          "acceptedTranslations": [
+            "zachód",
+            "na zachód",
+            "zachodni"
+          ]
+        },
+        {
+          "id": "directions.route",
+          "term": "route",
+          "ipa": "/ruːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "trasa",
+          "definition": "The way you choose to get from one place to another.",
+          "register": "neutralny",
+          "contextPl": "Nawigacja",
+          "natural": "",
+          "forms": "routes",
+          "collocations": "the fastest route; walking route; plan a route",
+          "synonyms": "way",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The app shows two routes, one along the river and one through the park.",
+              "pl": "Aplikacja pokazuje dwie trasy: jedną wzdłuż rzeki, a drugą przez park.",
+              "focusEn": "routes",
+              "focusPl": "trasy"
+            },
+            {
+              "en": "We took the longer route because it was more beautiful.",
+              "pl": "Wybraliśmy dłuższą trasę, bo była ładniejsza.",
+              "focusEn": "route",
+              "focusPl": "trasę"
+            }
+          ],
+          "acceptedAnswers": [
+            "route",
+            "way"
+          ],
+          "acceptedTranslations": [
+            "trasa",
+            "droga"
+          ]
+        },
+        {
+          "id": "directions.shortcut",
+          "term": "shortcut",
+          "ipa": "/ˈʃɔːrtkʌt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "skrót",
+          "definition": "A quicker way to get somewhere.",
+          "register": "neutralny",
+          "contextPl": "Nawigacja",
+          "natural": "",
+          "forms": "shortcuts",
+          "collocations": "take a shortcut; know a shortcut",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I know a shortcut through the parking lot behind the school.",
+              "pl": "Znam skrót przez parking za szkołą.",
+              "focusEn": "shortcut",
+              "focusPl": "skrót"
+            },
+            {
+              "en": "Our shortcut turned out to be twice as long.",
+              "pl": "Nasz skrót okazał się dwa razy dłuższy.",
+              "focusEn": "shortcut",
+              "focusPl": "skrót"
+            }
+          ],
+          "acceptedAnswers": [
+            "shortcut"
+          ],
+          "acceptedTranslations": [
+            "skrót",
+            "krótsza droga"
+          ]
+        },
+        {
+          "id": "directions.turn-around",
+          "term": "turn around",
+          "ipa": "/ˌtɜːrn əˈraʊnd/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zawrócić",
+          "definition": "To start going back in the direction you came from.",
+          "register": "neutralny",
+          "contextPl": "Nawigacja",
+          "natural": "",
+          "forms": "turns around – turned around – turned around",
+          "collocations": "turn around and go back",
+          "synonyms": "go back",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're going the wrong way, let's turn around.",
+              "pl": "Idziemy w złą stronę, zawróćmy.",
+              "focusEn": "turn around",
+              "focusPl": "zawróćmy"
+            },
+            {
+              "en": "The app told us to turn around at the end of the street.",
+              "pl": "Aplikacja kazała nam zawrócić na końcu ulicy.",
+              "focusEn": "turn around",
+              "focusPl": "zawrócić"
+            }
+          ],
+          "acceptedAnswers": [
+            "turn around",
+            "go back"
+          ],
+          "acceptedTranslations": [
+            "zawrócić",
+            "zawracać",
+            "wrócić"
+          ]
+        },
+        {
+          "id": "directions.wrong-way",
+          "term": "wrong way",
+          "ipa": "/ˌrɔːŋ ˈweɪ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zły kierunek",
+          "definition": "The direction that does not take you where you want to go.",
+          "register": "neutralny",
+          "contextPl": "Nawigacja",
+          "natural": "",
+          "forms": "",
+          "collocations": "go the wrong way; the wrong way",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„We're going the wrong way” – idziemy w złą stronę.",
+          "examples": [
+            {
+              "en": "I think we're walking the wrong way, the numbers are going down.",
+              "pl": "Chyba idziemy w złym kierunku, numery domów maleją.",
+              "focusEn": "wrong way",
+              "focusPl": "złym kierunku"
+            },
+            {
+              "en": "The blue dot on the map showed we were heading the wrong way.",
+              "pl": "Niebieska kropka na mapie pokazywała, że zmierzamy w złym kierunku.",
+              "focusEn": "wrong way",
+              "focusPl": "złym kierunku"
+            }
+          ],
+          "acceptedAnswers": [
+            "wrong way"
+          ],
+          "acceptedTranslations": [
+            "zły kierunek",
+            "zła strona",
+            "zła droga"
+          ]
+        },
+        {
+          "id": "directions.straight-ahead",
+          "term": "straight ahead",
+          "ipa": "/ˌstreɪt əˈhed/",
+          "pos": "przysłówek",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "prosto przed siebie",
+          "definition": "Directly in front of you.",
+          "register": "neutralny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "",
+          "collocations": "go straight ahead; right straight ahead",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The museum is straight ahead, you'll see it in a minute.",
+              "pl": "Muzeum jest na wprost, zobaczysz je za chwilę.",
+              "focusEn": "straight ahead",
+              "focusPl": "na wprost"
+            },
+            {
+              "en": "Walk straight ahead and don't turn until the river.",
+              "pl": "Idź prosto przed siebie i nie skręcaj aż do rzeki.",
+              "focusEn": "straight ahead",
+              "focusPl": "prosto przed siebie"
+            }
+          ],
+          "acceptedAnswers": [
+            "straight ahead"
+          ],
+          "acceptedTranslations": [
+            "prosto przed siebie",
+            "na wprost"
+          ]
+        },
+        {
+          "id": "directions.sense-of-direction",
+          "term": "sense of direction",
+          "ipa": "/ˌsens əv dəˈrekʃn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "orientacja w terenie",
+          "definition": "The natural ability to know which way to go.",
+          "register": "neutralny",
+          "contextPl": "Orientacja",
+          "natural": "",
+          "forms": "",
+          "collocations": "a good sense of direction; no sense of direction",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I have no sense of direction, so I always use my phone.",
+              "pl": "Nie mam żadnej orientacji w terenie, więc zawsze korzystam z telefonu.",
+              "focusEn": "sense of direction",
+              "focusPl": "orientacji w terenie"
+            },
+            {
+              "en": "My wife has a great sense of direction and found the hotel without a map.",
+              "pl": "Moja żona ma świetną orientację w terenie i znalazła hotel bez mapy.",
+              "focusEn": "sense of direction",
+              "focusPl": "orientację w terenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "sense of direction"
+          ],
+          "acceptedTranslations": [
+            "orientacja w terenie",
+            "zmysł orientacji"
+          ]
+        },
+        {
+          "id": "directions.located",
+          "term": "located",
+          "ipa": "/ˈloʊkeɪtɪd/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "położony",
+          "definition": "In a particular place.",
+          "register": "formalny",
+          "contextPl": "Orientacja",
+          "natural": "",
+          "forms": "",
+          "collocations": "be located; conveniently located; located near",
+          "synonyms": "situated",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The museum is located on the other side of the park.",
+              "pl": "Muzeum jest położone po drugiej stronie parku.",
+              "focusEn": "located",
+              "focusPl": "położone"
+            },
+            {
+              "en": "The app says the restaurant is located on the second floor of the mall.",
+              "pl": "Aplikacja pokazuje, że restauracja znajduje się na drugim piętrze centrum handlowego.",
+              "focusEn": "located",
+              "focusPl": "znajduje się"
+            }
+          ],
+          "acceptedAnswers": [
+            "located",
+            "situated"
+          ],
+          "acceptedTranslations": [
+            "położony",
+            "znajdujący się",
+            "znajdować się",
+            "usytuowany"
+          ]
+        },
+        {
+          "id": "directions.halfway",
+          "term": "halfway",
+          "ipa": "/ˌhæfˈweɪ/",
+          "pos": "przysłówek",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "w połowie drogi",
+          "definition": "In the middle between two places.",
+          "register": "neutralny",
+          "contextPl": "Orientacja",
+          "natural": "",
+          "forms": "",
+          "collocations": "halfway down the street; halfway there",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„We're halfway there” – jesteśmy w połowie drogi.",
+          "examples": [
+            {
+              "en": "We're halfway there, just ten more minutes.",
+              "pl": "Jesteśmy w połowie drogi, jeszcze tylko dziesięć minut.",
+              "focusEn": "halfway",
+              "focusPl": "w połowie drogi"
+            },
+            {
+              "en": "The bakery is halfway down this street, on the left.",
+              "pl": "Piekarnia jest w połowie tej ulicy, po lewej.",
+              "focusEn": "halfway",
+              "focusPl": "w połowie"
+            }
+          ],
+          "acceptedAnswers": [
+            "halfway"
+          ],
+          "acceptedTranslations": [
+            "w połowie drogi",
+            "w połowie"
+          ]
+        },
+        {
+          "id": "directions.up-the-street",
+          "term": "up the street",
+          "ipa": "/ˌʌp ðə ˈstriːt/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dalej tą ulicą",
+          "definition": "Farther along the same street.",
+          "register": "potoczny",
+          "contextPl": "Wskazówki",
+          "natural": "",
+          "forms": "",
+          "collocations": "just up the street; down the street",
+          "synonyms": "down the street",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's an ATM just up the street, next to the bakery.",
+              "pl": "Kawałek dalej tą ulicą, obok piekarni, jest bankomat.",
+              "focusEn": "up the street",
+              "focusPl": "dalej tą ulicą"
+            },
+            {
+              "en": "The man pointed up the street and said it was the third building.",
+              "pl": "Mężczyzna wskazał ręką w górę ulicy i powiedział, że to trzeci budynek.",
+              "focusEn": "up the street",
+              "focusPl": "w górę ulicy"
+            }
+          ],
+          "acceptedAnswers": [
+            "up the street",
+            "down the street"
+          ],
+          "acceptedTranslations": [
+            "dalej tą ulicą",
+            "kawałek dalej",
+            "w górę ulicy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "directions.finding-way",
+      "namePl": "Błądzenie i odnajdywanie drogi",
+      "scenePl": "Wieczorny powrót do hotelu po nieznanym mieście, gdy telefon prawie się rozładował",
+      "entries": [
+        {
+          "id": "directions.get-lost",
+          "term": "get lost",
+          "ipa": "/ˌɡet ˈlɔːst/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zgubić się",
+          "definition": "To become unable to find your way.",
+          "register": "neutralny",
+          "contextPl": "Błądzenie",
+          "natural": "",
+          "forms": "got lost – gotten lost",
+          "collocations": "get lost easily; get completely lost",
+          "synonyms": "lose your way",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I always get lost in this part of town after dark.",
+              "pl": "Po zmroku zawsze gubię się w tej części miasta.",
+              "focusEn": "get lost",
+              "focusPl": "gubię się"
+            },
+            {
+              "en": "My phone died, and we got lost on the way back to the hotel.",
+              "pl": "Padł mi telefon i zgubiliśmy się w drodze powrotnej do hotelu.",
+              "focusEn": "got lost",
+              "focusPl": "zgubiliśmy się"
+            }
+          ],
+          "acceptedAnswers": [
+            "get lost",
+            "lose your way"
+          ],
+          "acceptedTranslations": [
+            "zgubić się",
+            "zabłądzić",
+            "gubić się"
+          ]
+        },
+        {
+          "id": "directions.find-your-way",
+          "term": "find your way",
+          "ipa": "/ˌfaɪnd jʊr ˈweɪ/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "trafić",
+          "definition": "To manage to get to a place without help.",
+          "register": "neutralny",
+          "contextPl": "Odnajdywanie drogi",
+          "natural": "",
+          "forms": "found my way",
+          "collocations": "find your way back; find your way around",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Find your way around” – zorientować się w nowym miejscu.",
+          "examples": [
+            {
+              "en": "Can you find your way back to the hotel without the app?",
+              "pl": "Trafisz z powrotem do hotelu bez aplikacji?",
+              "focusEn": "find your way",
+              "focusPl": "Trafisz"
+            },
+            {
+              "en": "It took me a few days to find my way around the city.",
+              "pl": "Kilka dni zajęło mi, zanim zacząłem trafiać po mieście.",
+              "focusEn": "find my way",
+              "focusPl": "trafiać"
+            }
+          ],
+          "acceptedAnswers": [
+            "find your way",
+            "find my way"
+          ],
+          "acceptedTranslations": [
+            "trafić",
+            "odnaleźć drogę",
+            "znaleźć drogę",
+            "trafiać"
+          ]
+        },
+        {
+          "id": "directions.head-back",
+          "term": "head back",
+          "ipa": "/ˌhed ˈbæk/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wracać",
+          "definition": "To start going back to the place you came from.",
+          "register": "potoczny",
+          "contextPl": "Odnajdywanie drogi",
+          "natural": "",
+          "forms": "heads back – headed back – headed back",
+          "collocations": "head back to the hotel; time to head back",
+          "synonyms": "go back",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's getting dark, we should head back to the hotel.",
+              "pl": "Robi się ciemno, powinniśmy wracać do hotelu.",
+              "focusEn": "head back",
+              "focusPl": "wracać"
+            },
+            {
+              "en": "We headed back the same way we came, past the church.",
+              "pl": "Wracaliśmy tą samą drogą, którą przyszliśmy, obok kościoła.",
+              "focusEn": "headed back",
+              "focusPl": "Wracaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "head back",
+            "go back"
+          ],
+          "acceptedTranslations": [
+            "wracać",
+            "ruszać z powrotem",
+            "wrócić"
+          ]
+        },
+        {
+          "id": "directions.backtrack",
+          "term": "backtrack",
+          "ipa": "/ˈbæktræk/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "cofnąć się tą samą drogą",
+          "definition": "To go back along the same way you came.",
+          "register": "neutralny",
+          "contextPl": "Odnajdywanie drogi",
+          "natural": "",
+          "forms": "backtracks – backtracked – backtracked",
+          "collocations": "have to backtrack",
+          "synonyms": "retrace your steps",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We missed the turn, so we had to backtrack two blocks.",
+              "pl": "Przegapiliśmy skręt, więc musieliśmy cofnąć się tą samą drogą dwie przecznice.",
+              "focusEn": "backtrack",
+              "focusPl": "cofnąć się tą samą drogą"
+            },
+            {
+              "en": "Instead of backtracking, let's try the next street on the left.",
+              "pl": "Zamiast cofać się tą samą drogą, spróbujmy następnej ulicy w lewo.",
+              "focusEn": "backtracking",
+              "focusPl": "cofać się tą samą drogą"
+            }
+          ],
+          "acceptedAnswers": [
+            "backtrack",
+            "retrace your steps"
+          ],
+          "acceptedTranslations": [
+            "cofnąć się tą samą drogą",
+            "zawrócić",
+            "wrócić po własnych śladach"
+          ]
+        },
+        {
+          "id": "directions.recognize",
+          "term": "recognize",
+          "ipa": "/ˈrekəɡnaɪz/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "rozpoznać",
+          "definition": "To know something because you have seen it before.",
+          "register": "neutralny",
+          "contextPl": "Odnajdywanie drogi",
+          "natural": "",
+          "forms": "recognizes – recognized – recognized",
+          "collocations": "recognize the street; recognize a building",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Wait, I recognize that bakery, the hotel is just around the corner.",
+              "pl": "Czekaj, rozpoznaję tę piekarnię, hotel jest tuż za rogiem.",
+              "focusEn": "recognize",
+              "focusPl": "rozpoznaję"
+            },
+            {
+              "en": "Nothing looked familiar, and I didn't recognize a single street.",
+              "pl": "Nic nie wyglądało znajomo i nie rozpoznałem ani jednej ulicy.",
+              "focusEn": "recognize",
+              "focusPl": "rozpoznałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "recognize"
+          ],
+          "acceptedTranslations": [
+            "rozpoznać",
+            "rozpoznawać",
+            "poznać"
+          ]
+        },
+        {
+          "id": "directions.the-other-way",
+          "term": "the other way",
+          "ipa": "/ði ˈʌðər ˌweɪ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "w drugą stronę",
+          "definition": "In the opposite direction.",
+          "register": "neutralny",
+          "contextPl": "Odnajdywanie drogi",
+          "natural": "",
+          "forms": "",
+          "collocations": "go the other way; it's the other way",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„It's the other way” – to w przeciwną stronę.",
+          "examples": [
+            {
+              "en": "Sorry, the station is the other way, back past the bridge.",
+              "pl": "Przepraszam, dworzec jest w drugą stronę, z powrotem za mostem.",
+              "focusEn": "the other way",
+              "focusPl": "w drugą stronę"
+            },
+            {
+              "en": "We walked the other way for ten minutes before we noticed.",
+              "pl": "Szliśmy w drugą stronę przez dziesięć minut, zanim się zorientowaliśmy.",
+              "focusEn": "the other way",
+              "focusPl": "w drugą stronę"
+            }
+          ],
+          "acceptedAnswers": [
+            "the other way",
+            "the opposite way"
+          ],
+          "acceptedTranslations": [
+            "w drugą stronę",
+            "w przeciwnym kierunku",
+            "w przeciwną stronę"
+          ]
+        },
+        {
+          "id": "directions.retrace-your-steps",
+          "term": "retrace your steps",
+          "ipa": "/rɪˌtreɪs jʊr ˈsteps/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wrócić po własnych śladach",
+          "definition": "To go back exactly the way you came, often to find something.",
+          "register": "neutralny",
+          "contextPl": "Odnajdywanie drogi",
+          "natural": "",
+          "forms": "retraced",
+          "collocations": "retrace your steps to find something",
+          "synonyms": "backtrack",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I lost my keys, so I retraced my steps all the way to the café.",
+              "pl": "Zgubiłem klucze, więc wróciłem po własnych śladach aż do kawiarni.",
+              "focusEn": "retraced my steps",
+              "focusPl": "wróciłem po własnych śladach"
+            },
+            {
+              "en": "If you're lost, retrace your steps to the last place you knew.",
+              "pl": "Jeśli się zgubisz, wróć po własnych śladach do ostatniego miejsca, które znasz.",
+              "focusEn": "retrace your steps",
+              "focusPl": "wróć po własnych śladach"
+            }
+          ],
+          "acceptedAnswers": [
+            "retrace your steps",
+            "backtrack",
+            "retrace my steps"
+          ],
+          "acceptedTranslations": [
+            "wrócić po własnych śladach",
+            "cofnąć się tą samą drogą"
+          ]
+        },
+        {
+          "id": "directions.familiar",
+          "term": "familiar",
+          "ipa": "/fəˈmɪliər/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "znajomy",
+          "definition": "Easy to recognize because you have seen it before.",
+          "register": "neutralny",
+          "contextPl": "Odnajdywanie drogi",
+          "natural": "",
+          "forms": "",
+          "collocations": "look familiar; familiar street; a familiar place",
+          "synonyms": "",
+          "antonyms": "unfamiliar",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This square looks familiar, I think we passed it this morning.",
+              "pl": "Ten plac wygląda znajomo, chyba przechodziliśmy tędy rano.",
+              "focusEn": "familiar",
+              "focusPl": "znajomo"
+            },
+            {
+              "en": "Finally we saw a familiar street and knew where we were.",
+              "pl": "W końcu zobaczyliśmy znajomą ulicę i wiedzieliśmy, gdzie jesteśmy.",
+              "focusEn": "familiar",
+              "focusPl": "znajomą"
+            }
+          ],
+          "acceptedAnswers": [
+            "familiar"
+          ],
+          "acceptedTranslations": [
+            "znajomy",
+            "znany",
+            "znajomo"
+          ]
+        },
+        {
+          "id": "directions.go-around-in-circles",
+          "term": "go around in circles",
+          "ipa": "/ˌɡoʊ əˌraʊnd ɪn ˈsɜːrklz/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "krążyć w kółko",
+          "definition": "To keep walking or driving without getting anywhere.",
+          "register": "potoczny",
+          "contextPl": "Błądzenie",
+          "natural": "",
+          "forms": "went around in circles",
+          "collocations": "we're going around in circles",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przenośnie też o dyskusji bez postępu.",
+          "examples": [
+            {
+              "en": "I think we're going around in circles, we passed this fountain twice.",
+              "pl": "Chyba krążymy w kółko, dwa razy minęliśmy tę fontannę.",
+              "focusEn": "going around in circles",
+              "focusPl": "krążymy w kółko"
+            },
+            {
+              "en": "Without a map, we went around in circles for half an hour.",
+              "pl": "Bez mapy przez pół godziny krążyliśmy w kółko.",
+              "focusEn": "went around in circles",
+              "focusPl": "krążyliśmy w kółko"
+            }
+          ],
+          "acceptedAnswers": [
+            "go around in circles",
+            "walk in circles"
+          ],
+          "acceptedTranslations": [
+            "krążyć w kółko",
+            "chodzić w kółko"
+          ]
+        },
+        {
+          "id": "directions.ask-around",
+          "term": "ask around",
+          "ipa": "/ˌæsk əˈraʊnd/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "popytać",
+          "definition": "To ask several different people for information.",
+          "register": "potoczny",
+          "contextPl": "Odnajdywanie drogi",
+          "natural": "",
+          "forms": "asks around – asked around – asked around",
+          "collocations": "ask around for directions",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's ask around, someone must know where the hostel is.",
+              "pl": "Popytajmy, ktoś musi wiedzieć, gdzie jest hostel.",
+              "focusEn": "ask around",
+              "focusPl": "Popytajmy"
+            },
+            {
+              "en": "I asked around at a few shops, and finally a cashier helped us.",
+              "pl": "Popytałem w kilku sklepach i w końcu pomogła nam kasjerka.",
+              "focusEn": "asked around",
+              "focusPl": "Popytałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "ask around"
+          ],
+          "acceptedTranslations": [
+            "popytać",
+            "rozpytać",
+            "popytać ludzi"
+          ]
+        }
+      ]
+    }
+  ]
+}

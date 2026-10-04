@@ -1,0 +1,3294 @@
+{
+  "schemaVersion": 1,
+  "id": "meetings",
+  "namePl": "Spotkania",
+  "nameEn": "Meetings",
+  "group": "work",
+  "symbol": "person.3",
+  "summaryPl": "Umawianie spotkań, prowadzenie i agenda, dyskusja i zgłaszanie uwag, ustalenia, zadania i rodzaje spotkań.",
+  "aliases": [
+    "spotkania",
+    "spotkanie",
+    "zebranie",
+    "narada",
+    "agenda",
+    "spotkanie zespołu",
+    "meeting",
+    "meetings"
+  ],
+  "categories": [
+    {
+      "id": "meetings.scheduling",
+      "namePl": "Umawianie spotkań",
+      "scenePl": "Ustalanie terminu spotkania zespołu przez wspólny kalendarz i maile",
+      "entries": [
+        {
+          "id": "meetings.meeting",
+          "term": "meeting",
+          "ipa": "/ˈmiːtɪŋ/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "spotkanie",
+          "definition": "An event where people come together to discuss something.",
+          "register": "neutralny",
+          "contextPl": "Spotkania zespołu, z klientem lub przełożonym",
+          "natural": "",
+          "forms": "meetings",
+          "collocations": "have a meeting; team meeting; set up a meeting; in a meeting",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can we have a short meeting on Thursday to plan the launch?",
+              "pl": "Możemy w czwartek zrobić krótkie spotkanie, żeby zaplanować premierę?",
+              "focusEn": "meeting",
+              "focusPl": "spotkanie"
+            },
+            {
+              "en": "I sent everyone a calendar invite for the meeting at ten.",
+              "pl": "Wysłałem wszystkim zaproszenie w kalendarzu na spotkanie o dziesiątej.",
+              "focusEn": "meeting",
+              "focusPl": "spotkanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "meeting"
+          ],
+          "acceptedTranslations": [
+            "spotkanie",
+            "zebranie",
+            "narada"
+          ]
+        },
+        {
+          "id": "meetings.available",
+          "term": "available",
+          "ipa": "/əˈveɪləbəl/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wolny",
+          "definition": "Free to do something or meet someone at a particular time.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie, kto ma czas na spotkanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "be available; available on Monday",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Are you available for a quick call tomorrow morning?",
+              "pl": "Czy jesteś dostępny jutro rano na krótką rozmowę?",
+              "focusEn": "available",
+              "focusPl": "dostępny"
+            },
+            {
+              "en": "According to the shared calendar, nobody is available on Friday afternoon.",
+              "pl": "Według wspólnego kalendarza nikt nie jest wolny w piątek po południu.",
+              "focusEn": "available",
+              "focusPl": "wolny"
+            }
+          ],
+          "acceptedAnswers": [
+            "available"
+          ],
+          "acceptedTranslations": [
+            "wolny",
+            "dostępny",
+            "dostępna",
+            "wolna",
+            "mieć czas"
+          ]
+        },
+        {
+          "id": "meetings.schedule",
+          "term": "schedule",
+          "ipa": "/ˈskɛdʒuːl/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zaplanować",
+          "definition": "To arrange for something to happen at a particular time.",
+          "register": "neutralny",
+          "contextPl": "Wyznaczanie terminu spotkania",
+          "natural": "",
+          "forms": "schedule – scheduled – scheduled",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll schedule the meeting for Tuesday at two.",
+              "pl": "Zaplanuję spotkanie na wtorek na czternastą.",
+              "focusEn": "schedule",
+              "focusPl": "Zaplanuję"
+            },
+            {
+              "en": "The review is scheduled for next Monday, right after lunch.",
+              "pl": "Przegląd jest zaplanowany na przyszły poniedziałek, zaraz po lunchu.",
+              "focusEn": "scheduled",
+              "focusPl": "zaplanowany"
+            }
+          ],
+          "acceptedAnswers": [
+            "schedule",
+            "set up",
+            "arrange"
+          ],
+          "acceptedTranslations": [
+            "zaplanować",
+            "planować",
+            "wyznaczyć",
+            "umówić",
+            "ustalić termin"
+          ]
+        },
+        {
+          "id": "meetings.set-up",
+          "term": "set up",
+          "ipa": "/ˌsɛt ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zorganizować",
+          "definition": "To arrange a meeting or event.",
+          "register": "neutralny",
+          "contextPl": "Organizowanie spotkania",
+          "natural": "",
+          "forms": "set – set – set",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you set up a meeting with the design team this week?",
+              "pl": "Możesz w tym tygodniu zorganizować spotkanie z zespołem projektowym?",
+              "focusEn": "set up",
+              "focusPl": "zorganizować"
+            },
+            {
+              "en": "I set up a call with the client for Wednesday morning.",
+              "pl": "Umówiłem rozmowę z klientem na środę rano.",
+              "focusEn": "set up",
+              "focusPl": "Umówiłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "set up",
+            "arrange",
+            "organize"
+          ],
+          "acceptedTranslations": [
+            "zorganizować",
+            "umówić",
+            "organizować",
+            "umawiać"
+          ]
+        },
+        {
+          "id": "meetings.work-for",
+          "term": "work for",
+          "ipa": "/ˈwɜːrk fɔːr/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pasować (komuś)",
+          "definition": "To be a convenient time or plan for someone.",
+          "register": "neutralny",
+          "contextPl": "Pytanie, czy termin komuś odpowiada",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Bardzo częste: „Does Tuesday work for you?” = „Czy wtorek ci pasuje?”.",
+          "examples": [
+            {
+              "en": "Does Tuesday at three work for you?",
+              "pl": "Czy wtorek o piętnastej ci pasuje?",
+              "focusEn": "work for",
+              "focusPl": "pasuje"
+            },
+            {
+              "en": "Ten o'clock doesn't work for me, but eleven is fine.",
+              "pl": "Dziesiąta mi nie pasuje, ale jedenasta jest w porządku.",
+              "focusEn": "work for",
+              "focusPl": "pasuje"
+            }
+          ],
+          "acceptedAnswers": [
+            "work for",
+            "suit"
+          ],
+          "acceptedTranslations": [
+            "pasować (komuś)",
+            "odpowiadać",
+            "pasować"
+          ]
+        },
+        {
+          "id": "meetings.invite",
+          "term": "invite",
+          "ipa": "/ˈɪnvaɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zaproszenie",
+          "definition": "An informal word for an invitation, often sent through a calendar.",
+          "register": "potoczny",
+          "contextPl": "Zaproszenie na spotkanie w kalendarzu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Jako rzeczownik akcent na pierwszą sylabę /ˈɪnvaɪt/; czasownik to /ɪnˈvaɪt/.",
+          "examples": [
+            {
+              "en": "Did you get my calendar invite for Friday?",
+              "pl": "Dostałeś moje zaproszenie w kalendarzu na piątek?",
+              "focusEn": "invite",
+              "focusPl": "zaproszenie"
+            },
+            {
+              "en": "I accepted the invite, but I'll join ten minutes late.",
+              "pl": "Zaakceptowałem zaproszenie, ale dołączę dziesięć minut później.",
+              "focusEn": "invite",
+              "focusPl": "zaproszenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "invite",
+            "invitation",
+            "meeting invite"
+          ],
+          "acceptedTranslations": [
+            "zaproszenie",
+            "zaproszenie na spotkanie"
+          ]
+        },
+        {
+          "id": "meetings.cancel",
+          "term": "cancel",
+          "ipa": "/ˈkænsəl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odwołać",
+          "definition": "To decide that a planned event will not happen.",
+          "register": "neutralny",
+          "contextPl": "Odwoływanie spotkań",
+          "natural": "",
+          "forms": "cancel – canceled – canceled",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska: canceled, canceling (jedno „l”).",
+          "examples": [
+            {
+              "en": "We have to cancel today's meeting because the manager is sick.",
+              "pl": "Musimy odwołać dzisiejsze spotkanie, bo kierowniczka jest chora.",
+              "focusEn": "cancel",
+              "focusPl": "odwołać"
+            },
+            {
+              "en": "The client canceled the call five minutes before it started.",
+              "pl": "Klient odwołał rozmowę pięć minut przed jej rozpoczęciem.",
+              "focusEn": "canceled",
+              "focusPl": "odwołał"
+            }
+          ],
+          "acceptedAnswers": [
+            "cancel",
+            "call off"
+          ],
+          "acceptedTranslations": [
+            "odwołać",
+            "odwoływać",
+            "anulować"
+          ]
+        },
+        {
+          "id": "meetings.reschedule",
+          "term": "reschedule",
+          "ipa": "/riˈskɛdʒuːl/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przełożyć",
+          "definition": "To change the time or date of a planned event.",
+          "register": "neutralny",
+          "contextPl": "Zmiana terminu spotkania",
+          "natural": "",
+          "forms": "reschedule – rescheduled – rescheduled",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can we reschedule our meeting for next week?",
+              "pl": "Możemy przełożyć nasze spotkanie na przyszły tydzień?",
+              "focusEn": "reschedule",
+              "focusPl": "przełożyć"
+            },
+            {
+              "en": "I rescheduled the call because half the team was on vacation.",
+              "pl": "Przełożyłem rozmowę, bo połowa zespołu była na urlopie.",
+              "focusEn": "rescheduled",
+              "focusPl": "Przełożyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "reschedule"
+          ],
+          "acceptedTranslations": [
+            "przełożyć",
+            "przekładać",
+            "zmienić termin",
+            "przenieść"
+          ]
+        },
+        {
+          "id": "meetings.push-back",
+          "term": "push back",
+          "ipa": "/ˌpʊʃ ˈbæk/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przesunąć na później",
+          "definition": "To move an event to a later time.",
+          "register": "neutralny",
+          "contextPl": "Przesuwanie godziny lub daty spotkania",
+          "natural": "",
+          "forms": "push – pushed – pushed",
+          "collocations": "",
+          "synonyms": "postpone",
+          "antonyms": "move up",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can we push back the meeting to three o'clock?",
+              "pl": "Możemy przesunąć spotkanie na piętnastą?",
+              "focusEn": "push back",
+              "focusPl": "przesunąć"
+            },
+            {
+              "en": "The kickoff was pushed back a week because the contract wasn't signed.",
+              "pl": "Spotkanie inaugurujące przesunięto o tydzień, bo umowa nie była podpisana.",
+              "focusEn": "pushed back",
+              "focusPl": "przesunięto"
+            }
+          ],
+          "acceptedAnswers": [
+            "push back",
+            "postpone",
+            "put off"
+          ],
+          "acceptedTranslations": [
+            "przesunąć na później",
+            "przesuwać",
+            "odłożyć",
+            "odkładać",
+            "przełożyć na później"
+          ]
+        },
+        {
+          "id": "meetings.call-off",
+          "term": "call off",
+          "ipa": "/ˌkɔːl ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odwołać",
+          "definition": "To cancel a planned event.",
+          "register": "neutralny",
+          "contextPl": "Odwoływanie spotkań, zwykle w ostatniej chwili",
+          "natural": "",
+          "forms": "call – called – called",
+          "collocations": "",
+          "synonyms": "cancel",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They called off the meeting because the client couldn't come.",
+              "pl": "Odwołali spotkanie, bo klient nie mógł przyjść.",
+              "focusEn": "called off",
+              "focusPl": "Odwołali"
+            },
+            {
+              "en": "If the numbers aren't ready, we'll call off Friday's review.",
+              "pl": "Jeśli liczby nie będą gotowe, odwołamy piątkowy przegląd.",
+              "focusEn": "call off",
+              "focusPl": "odwołamy"
+            }
+          ],
+          "acceptedAnswers": [
+            "call off",
+            "cancel"
+          ],
+          "acceptedTranslations": [
+            "odwołać",
+            "odwoływać",
+            "zrezygnować z"
+          ]
+        },
+        {
+          "id": "meetings.time-slot",
+          "term": "time slot",
+          "ipa": "/ˈtaɪm ˌslɑːt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "okienko czasowe",
+          "definition": "A short period of time that is available for something.",
+          "register": "neutralny",
+          "contextPl": "Wybieranie wolnego terminu w kalendarzu",
+          "natural": "",
+          "forms": "time slots",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The only free time slot this week is Thursday at four.",
+              "pl": "Jedyne wolne okienko w tym tygodniu to czwartek o szesnastej.",
+              "focusEn": "time slot",
+              "focusPl": "okienko"
+            },
+            {
+              "en": "I sent the client three possible time slots to choose from.",
+              "pl": "Wysłałem klientowi trzy możliwe terminy do wyboru.",
+              "focusEn": "time slots",
+              "focusPl": "terminy"
+            }
+          ],
+          "acceptedAnswers": [
+            "time slot",
+            "slot"
+          ],
+          "acceptedTranslations": [
+            "okienko czasowe",
+            "okienko",
+            "termin",
+            "przedział czasowy"
+          ]
+        },
+        {
+          "id": "meetings.conflict",
+          "term": "conflict",
+          "ipa": "/ˈkɑːnflɪkt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kolizja terminów",
+          "definition": "A situation where two events are planned for the same time.",
+          "register": "neutralny",
+          "contextPl": "Nakładające się spotkania w kalendarzu",
+          "natural": "",
+          "forms": "conflicts",
+          "collocations": "scheduling conflict; have a conflict",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, I have a conflict at two; can we meet at three?",
+              "pl": "Przepraszam, o czternastej mam inne spotkanie, możemy spotkać się o piętnastej?",
+              "focusEn": "conflict",
+              "focusPl": "inne spotkanie"
+            },
+            {
+              "en": "The calendar shows a conflict with the budget meeting.",
+              "pl": "Kalendarz pokazuje kolizję ze spotkaniem budżetowym.",
+              "focusEn": "conflict",
+              "focusPl": "kolizję"
+            }
+          ],
+          "acceptedAnswers": [
+            "conflict",
+            "scheduling conflict"
+          ],
+          "acceptedTranslations": [
+            "kolizja terminów",
+            "kolizja",
+            "nakładające się spotkania",
+            "konflikt terminów"
+          ]
+        },
+        {
+          "id": "meetings.double-booked",
+          "term": "double-booked",
+          "ipa": "/ˌdʌbəl ˈbʊkt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "mający dwa spotkania naraz",
+          "definition": "Having two meetings or appointments planned for the same time.",
+          "register": "neutralny",
+          "contextPl": "Pomyłka w planowaniu spotkań",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm double-booked at ten, so I'll skip the team meeting.",
+              "pl": "O dziesiątej mam dwa spotkania naraz, więc opuszczę spotkanie zespołu.",
+              "focusEn": "double-booked",
+              "focusPl": "dwa spotkania naraz"
+            },
+            {
+              "en": "The conference room was double-booked, so we met in the kitchen.",
+              "pl": "Sala konferencyjna była zarezerwowana podwójnie, więc spotkaliśmy się w kuchni.",
+              "focusEn": "double-booked",
+              "focusPl": "zarezerwowana podwójnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "double-booked",
+            "double booked"
+          ],
+          "acceptedTranslations": [
+            "mający dwa spotkania naraz",
+            "zarezerwowany podwójnie",
+            "podwójnie zarezerwowany"
+          ]
+        },
+        {
+          "id": "meetings.recurring",
+          "term": "recurring",
+          "ipa": "/rɪˈkɜːrɪŋ/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "cykliczny",
+          "definition": "Happening again and again at regular times.",
+          "register": "neutralny",
+          "contextPl": "Stałe spotkania wpisane do kalendarza",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "regular; weekly",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We have a recurring meeting every Monday at nine.",
+              "pl": "Mamy cykliczne spotkanie w każdy poniedziałek o dziewiątej.",
+              "focusEn": "recurring",
+              "focusPl": "cykliczne"
+            },
+            {
+              "en": "I deleted the recurring invite by mistake, so it's gone from my calendar.",
+              "pl": "Przez pomyłkę usunąłem cykliczne zaproszenie, więc zniknęło z mojego kalendarza.",
+              "focusEn": "recurring",
+              "focusPl": "cykliczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "recurring"
+          ],
+          "acceptedTranslations": [
+            "cykliczny",
+            "powtarzający się",
+            "regularny",
+            "stały"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meetings.running",
+      "namePl": "Prowadzenie spotkania",
+      "scenePl": "Kierowniczka prowadzi cotygodniowe spotkanie zespołu w sali konferencyjnej",
+      "entries": [
+        {
+          "id": "meetings.agenda",
+          "term": "agenda",
+          "ipa": "/əˈdʒɛndə/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "agenda",
+          "definition": "A list of things to be discussed at a meeting.",
+          "register": "neutralny",
+          "contextPl": "Plan spotkania wysyłany przed nim lub omawiany na początku",
+          "natural": "",
+          "forms": "agendas",
+          "collocations": "on the agenda; set the agenda; send out the agenda",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's look at the agenda; we have four things to cover today.",
+              "pl": "Spójrzmy na agendę: mamy dziś cztery sprawy do omówienia.",
+              "focusEn": "agenda",
+              "focusPl": "agendę"
+            },
+            {
+              "en": "The budget isn't on the agenda, so let's talk about it next week.",
+              "pl": "Budżetu nie ma w porządku spotkania, więc porozmawiajmy o nim w przyszłym tygodniu.",
+              "focusEn": "agenda",
+              "focusPl": "porządku spotkania"
+            }
+          ],
+          "acceptedAnswers": [
+            "agenda"
+          ],
+          "acceptedTranslations": [
+            "agenda",
+            "porządek spotkania",
+            "plan spotkania",
+            "porządek obrad"
+          ]
+        },
+        {
+          "id": "meetings.get-started",
+          "term": "get started",
+          "ipa": "/ˌɡɛt ˈstɑːrtɪd/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zacząć",
+          "definition": "To begin doing something.",
+          "register": "neutralny",
+          "contextPl": "Rozpoczęcie spotkania",
+          "natural": "",
+          "forms": "get – got – gotten",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's ten past nine, so let's get started.",
+              "pl": "Jest dziesięć po dziewiątej, więc zaczynajmy.",
+              "focusEn": "get started",
+              "focusPl": "zaczynajmy"
+            },
+            {
+              "en": "We got started late because the projector didn't work.",
+              "pl": "Zaczęliśmy z opóźnieniem, bo projektor nie działał.",
+              "focusEn": "got started",
+              "focusPl": "Zaczęliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "get started",
+            "start",
+            "begin"
+          ],
+          "acceptedTranslations": [
+            "zacząć",
+            "zaczynać",
+            "rozpocząć",
+            "rozpoczynać"
+          ]
+        },
+        {
+          "id": "meetings.item",
+          "term": "item",
+          "ipa": "/ˈaɪtəm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "punkt",
+          "definition": "One of the things on a list, especially on a meeting agenda.",
+          "register": "neutralny",
+          "contextPl": "Kolejne sprawy do omówienia",
+          "natural": "",
+          "forms": "items",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The first item on the agenda is the new office layout.",
+              "pl": "Pierwszy punkt agendy to nowy układ biura.",
+              "focusEn": "item",
+              "focusPl": "punkt"
+            },
+            {
+              "en": "We ran out of time before the last item.",
+              "pl": "Skończył nam się czas przed ostatnim punktem.",
+              "focusEn": "item",
+              "focusPl": "punktem"
+            }
+          ],
+          "acceptedAnswers": [
+            "item"
+          ],
+          "acceptedTranslations": [
+            "punkt",
+            "sprawa",
+            "punkt programu"
+          ]
+        },
+        {
+          "id": "meetings.go-over",
+          "term": "go over",
+          "ipa": "/ˌɡoʊ ˈoʊvər/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "omówić",
+          "definition": "To look at or explain something carefully, often step by step.",
+          "register": "neutralny",
+          "contextPl": "Przeglądanie liczb, planów lub dokumentów na spotkaniu",
+          "natural": "",
+          "forms": "go – went – gone",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's go over last month's numbers first.",
+              "pl": "Najpierw omówmy liczby z zeszłego miesiąca.",
+              "focusEn": "go over",
+              "focusPl": "omówmy"
+            },
+            {
+              "en": "She went over the new process slowly so everyone understood.",
+              "pl": "Powoli omówiła nowy proces, żeby wszyscy zrozumieli.",
+              "focusEn": "went over",
+              "focusPl": "omówiła"
+            }
+          ],
+          "acceptedAnswers": [
+            "go over",
+            "review",
+            "discuss"
+          ],
+          "acceptedTranslations": [
+            "omówić",
+            "omawiać",
+            "przejrzeć",
+            "przeglądać",
+            "przedyskutować"
+          ]
+        },
+        {
+          "id": "meetings.move-on",
+          "term": "move on",
+          "ipa": "/ˌmuːv ˈɑːn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "przejść dalej",
+          "definition": "To start talking about the next subject.",
+          "register": "neutralny",
+          "contextPl": "Przechodzenie do kolejnego punktu",
+          "natural": "",
+          "forms": "move – moved – moved",
+          "collocations": "move on to the next item; let's move on",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "OK, let's move on to the next item.",
+              "pl": "Dobrze, przejdźmy do następnego punktu.",
+              "focusEn": "move on",
+              "focusPl": "przejdźmy"
+            },
+            {
+              "en": "We spent twenty minutes on parking before we could move on.",
+              "pl": "Spędziliśmy dwadzieścia minut na temacie parkingu, zanim mogliśmy przejść dalej.",
+              "focusEn": "move on",
+              "focusPl": "przejść dalej"
+            }
+          ],
+          "acceptedAnswers": [
+            "move on"
+          ],
+          "acceptedTranslations": [
+            "przejść dalej",
+            "przechodzić dalej",
+            "przejść do",
+            "przechodzić do"
+          ]
+        },
+        {
+          "id": "meetings.update",
+          "term": "update",
+          "ipa": "/ˈʌpˌdeɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "aktualne informacje",
+          "definition": "The newest information about how something is going.",
+          "register": "neutralny",
+          "contextPl": "Krótkie relacje o postępach w pracy",
+          "natural": "",
+          "forms": "updates",
+          "collocations": "quick update; status update; give an update",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: akcent na pierwszą sylabę /ˈʌpˌdeɪt/; czasownik: /ʌpˈdeɪt/.",
+          "examples": [
+            {
+              "en": "Can everyone give a quick update on their projects?",
+              "pl": "Czy każdy może krótko przedstawić aktualny stan swoich projektów?",
+              "focusEn": "update",
+              "focusPl": "aktualny stan"
+            },
+            {
+              "en": "Tom's update was short: the website is almost ready.",
+              "pl": "Informacja Toma była krótka: strona jest prawie gotowa.",
+              "focusEn": "update",
+              "focusPl": "Informacja"
+            }
+          ],
+          "acceptedAnswers": [
+            "update",
+            "status update"
+          ],
+          "acceptedTranslations": [
+            "aktualne informacje",
+            "informacja o postępach",
+            "aktualizacja",
+            "aktualny stan"
+          ]
+        },
+        {
+          "id": "meetings.take-notes",
+          "term": "take notes",
+          "ipa": "/ˌteɪk ˈnoʊts/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "robić notatki",
+          "definition": "To write down the important things that are said.",
+          "register": "neutralny",
+          "contextPl": "Notowanie przebiegu spotkania",
+          "natural": "",
+          "forms": "take – took – taken",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can someone take notes for us today, please?",
+              "pl": "Czy ktoś może dziś dla nas robić notatki?",
+              "focusEn": "take notes",
+              "focusPl": "robić notatki"
+            },
+            {
+              "en": "I took notes on my laptop and shared them after the meeting.",
+              "pl": "Robiłem notatki na laptopie i udostępniłem je po spotkaniu.",
+              "focusEn": "took notes",
+              "focusPl": "Robiłem notatki"
+            }
+          ],
+          "acceptedAnswers": [
+            "take notes"
+          ],
+          "acceptedTranslations": [
+            "robić notatki",
+            "notować",
+            "zanotować",
+            "sporządzać notatki"
+          ]
+        },
+        {
+          "id": "meetings.point",
+          "term": "point",
+          "ipa": "/pɔɪnt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kwestia",
+          "definition": "An idea or fact that someone mentions in a discussion.",
+          "register": "neutralny",
+          "contextPl": "Poruszane w dyskusji sprawy i argumenty",
+          "natural": "",
+          "forms": "points",
+          "collocations": "make a point; main point; good point",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My last point is about the holiday schedule.",
+              "pl": "Moja ostatnia kwestia dotyczy grafiku na święta.",
+              "focusEn": "point",
+              "focusPl": "kwestia"
+            },
+            {
+              "en": "She made three important points about the budget.",
+              "pl": "Poruszyła trzy ważne kwestie dotyczące budżetu.",
+              "focusEn": "points",
+              "focusPl": "kwestie"
+            }
+          ],
+          "acceptedAnswers": [
+            "point"
+          ],
+          "acceptedTranslations": [
+            "kwestia",
+            "sprawa",
+            "punkt",
+            "uwaga"
+          ]
+        },
+        {
+          "id": "meetings.run-a-meeting",
+          "term": "run a meeting",
+          "ipa": "/ˌrʌn ə ˈmiːtɪŋ/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "prowadzić spotkanie",
+          "definition": "To lead a meeting and make sure it goes well.",
+          "register": "neutralny",
+          "contextPl": "Rola osoby prowadzącej spotkanie",
+          "natural": "",
+          "forms": "run – ran – run",
+          "collocations": "",
+          "synonyms": "lead a meeting; chair a meeting",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Maria will run the meeting today because I have a cold.",
+              "pl": "Dziś poprowadzi spotkanie Maria, bo jestem przeziębiony.",
+              "focusEn": "run the meeting",
+              "focusPl": "poprowadzi spotkanie"
+            },
+            {
+              "en": "She runs her meetings fast and always ends on time.",
+              "pl": "Prowadzi spotkania szybko i zawsze kończy na czas.",
+              "focusEn": "runs her meetings",
+              "focusPl": "Prowadzi spotkania"
+            }
+          ],
+          "acceptedAnswers": [
+            "run a meeting",
+            "run the meeting",
+            "lead a meeting",
+            "chair a meeting"
+          ],
+          "acceptedTranslations": [
+            "prowadzić spotkanie",
+            "prowadzić zebranie",
+            "poprowadzić spotkanie"
+          ]
+        },
+        {
+          "id": "meetings.wrap-up",
+          "term": "wrap up",
+          "ipa": "/ˌræp ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zakończyć",
+          "definition": "To finish a meeting or activity.",
+          "register": "neutralny",
+          "contextPl": "Kończenie spotkania i podsumowanie",
+          "natural": "",
+          "forms": "wrap – wrapped – wrapped",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We have five minutes left, so let's wrap up.",
+              "pl": "Zostało nam pięć minut, więc kończmy.",
+              "focusEn": "wrap up",
+              "focusPl": "kończmy"
+            },
+            {
+              "en": "Before we wrap up, does anyone have questions?",
+              "pl": "Zanim zakończymy, czy ktoś ma pytania?",
+              "focusEn": "wrap up",
+              "focusPl": "zakończymy"
+            }
+          ],
+          "acceptedAnswers": [
+            "wrap up",
+            "finish up",
+            "conclude"
+          ],
+          "acceptedTranslations": [
+            "zakończyć",
+            "kończyć",
+            "podsumować",
+            "zamknąć"
+          ]
+        },
+        {
+          "id": "meetings.minutes",
+          "term": "minutes",
+          "ipa": "/ˈmɪnɪts/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "protokół",
+          "definition": "The official written record of what was said and decided at a meeting.",
+          "register": "neutralny",
+          "contextPl": "Formalny zapis przebiegu spotkania",
+          "natural": "",
+          "forms": "",
+          "collocations": "take the minutes; approve the minutes; meeting minutes",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W tym znaczeniu zawsze w liczbie mnogiej.",
+          "examples": [
+            {
+              "en": "Who's taking the minutes this week?",
+              "pl": "Kto w tym tygodniu pisze protokół?",
+              "focusEn": "minutes",
+              "focusPl": "protokół"
+            },
+            {
+              "en": "I'll email the minutes to everyone by the end of the day.",
+              "pl": "Do końca dnia wyślę wszystkim protokół mailem.",
+              "focusEn": "minutes",
+              "focusPl": "protokół"
+            }
+          ],
+          "acceptedAnswers": [
+            "minutes",
+            "meeting minutes",
+            "notes"
+          ],
+          "acceptedTranslations": [
+            "protokół",
+            "protokół ze spotkania",
+            "notatka ze spotkania"
+          ]
+        },
+        {
+          "id": "meetings.summarize",
+          "term": "summarize",
+          "ipa": "/ˈsʌməˌraɪz/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "podsumować",
+          "definition": "To give a short statement of the main points.",
+          "register": "neutralny",
+          "contextPl": "Podsumowanie dyskusji",
+          "natural": "",
+          "forms": "summarize – summarized – summarized",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let me quickly summarize what we agreed on.",
+              "pl": "Pozwólcie, że szybko podsumuję, co ustaliliśmy.",
+              "focusEn": "summarize",
+              "focusPl": "podsumuję"
+            },
+            {
+              "en": "She summarized the hour-long discussion in three sentences.",
+              "pl": "Podsumowała godzinną dyskusję w trzech zdaniach.",
+              "focusEn": "summarized",
+              "focusPl": "Podsumowała"
+            }
+          ],
+          "acceptedAnswers": [
+            "summarize"
+          ],
+          "acceptedTranslations": [
+            "podsumować",
+            "podsumowywać",
+            "streścić",
+            "streszczać"
+          ]
+        },
+        {
+          "id": "meetings.run-over",
+          "term": "run over",
+          "ipa": "/ˌrʌn ˈoʊvər/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przeciągnąć się",
+          "definition": "To continue for longer than planned.",
+          "register": "neutralny",
+          "contextPl": "Spotkania trwające dłużej niż zakładano",
+          "natural": "",
+          "forms": "run – ran – run",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, the last meeting ran over, so I'm a bit late.",
+              "pl": "Przepraszam, poprzednie spotkanie się przeciągnęło, więc trochę się spóźniłem.",
+              "focusEn": "ran over",
+              "focusPl": "przeciągnęło"
+            },
+            {
+              "en": "If we run over, I'll have to leave early for my next call.",
+              "pl": "Jeśli spotkanie się przeciągnie, będę musiała wyjść wcześniej na kolejną rozmowę.",
+              "focusEn": "run over",
+              "focusPl": "przeciągnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "run over"
+          ],
+          "acceptedTranslations": [
+            "przeciągnąć się",
+            "przeciągać się",
+            "przedłużyć się",
+            "przedłużać się"
+          ]
+        },
+        {
+          "id": "meetings.stay-on-track",
+          "term": "stay on track",
+          "ipa": "/ˌsteɪ ɑːn ˈtræk/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "trzymać się tematu",
+          "definition": "To continue focusing on the planned subject or goal.",
+          "register": "neutralny",
+          "contextPl": "Pilnowanie przebiegu spotkania",
+          "natural": "",
+          "forms": "stay – stayed – stayed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's stay on track; we can talk about parking later.",
+              "pl": "Trzymajmy się tematu, o parkingu możemy porozmawiać później.",
+              "focusEn": "stay on track",
+              "focusPl": "Trzymajmy się tematu"
+            },
+            {
+              "en": "The agenda helps us stay on track and finish on time.",
+              "pl": "Agenda pomaga nam trzymać się planu i skończyć na czas.",
+              "focusEn": "stay on track",
+              "focusPl": "trzymać się planu"
+            }
+          ],
+          "acceptedAnswers": [
+            "stay on track",
+            "keep on track"
+          ],
+          "acceptedTranslations": [
+            "trzymać się tematu",
+            "trzymać się planu",
+            "nie zbaczać z tematu"
+          ]
+        },
+        {
+          "id": "meetings.get-sidetracked",
+          "term": "get sidetracked",
+          "ipa": "/ˌɡɛt ˈsaɪdˌtrækt/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zboczyć z tematu",
+          "definition": "To start talking about something less important than the main subject.",
+          "register": "neutralny",
+          "contextPl": "Dygresje podczas spotkań",
+          "natural": "",
+          "forms": "get – got – gotten",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, we got sidetracked; back to the budget.",
+              "pl": "Przepraszam, zboczyliśmy z tematu; wracamy do budżetu.",
+              "focusEn": "got sidetracked",
+              "focusPl": "zboczyliśmy z tematu"
+            },
+            {
+              "en": "We always get sidetracked when someone mentions the new coffee machine.",
+              "pl": "Zawsze zbaczamy z tematu, gdy ktoś wspomni o nowym ekspresie do kawy.",
+              "focusEn": "get sidetracked",
+              "focusPl": "zbaczamy z tematu"
+            }
+          ],
+          "acceptedAnswers": [
+            "get sidetracked",
+            "sidetracked"
+          ],
+          "acceptedTranslations": [
+            "zboczyć z tematu",
+            "zbaczać z tematu",
+            "odbiec od tematu",
+            "odbiegać od tematu"
+          ]
+        },
+        {
+          "id": "meetings.kick-off",
+          "term": "kick off",
+          "ipa": "/ˌkɪk ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rozpocząć",
+          "definition": "To start a meeting, project, or event.",
+          "register": "potoczny",
+          "contextPl": "Otwieranie spotkania lub nowego projektu",
+          "natural": "",
+          "forms": "kick – kicked – kicked",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to kick off today's meeting with some good news.",
+              "pl": "Chciałabym rozpocząć dzisiejsze spotkanie od dobrej wiadomości.",
+              "focusEn": "kick off",
+              "focusPl": "rozpocząć"
+            },
+            {
+              "en": "Jake kicked off the discussion by showing the sales chart.",
+              "pl": "Jake rozpoczął dyskusję od pokazania wykresu sprzedaży.",
+              "focusEn": "kicked off",
+              "focusPl": "rozpoczął"
+            }
+          ],
+          "acceptedAnswers": [
+            "kick off",
+            "start",
+            "begin"
+          ],
+          "acceptedTranslations": [
+            "rozpocząć",
+            "rozpoczynać",
+            "zacząć",
+            "zainaugurować"
+          ]
+        },
+        {
+          "id": "meetings.go-around-the-table",
+          "term": "go around the table",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "oddać głos każdemu po kolei",
+          "definition": "To let each person in a meeting speak in turn.",
+          "register": "neutralny",
+          "contextPl": "Runda wypowiedzi wszystkich uczestników",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's go around the table and hear from everyone.",
+              "pl": "Oddajmy głos każdemu po kolei i posłuchajmy wszystkich.",
+              "focusEn": "go around the table",
+              "focusPl": "Oddajmy głos każdemu po kolei"
+            },
+            {
+              "en": "When we went around the table, nobody had any objections.",
+              "pl": "Kiedy każdy po kolei zabrał głos, nikt nie zgłosił zastrzeżeń.",
+              "focusEn": "went around the table",
+              "focusPl": "każdy po kolei zabrał głos"
+            }
+          ],
+          "acceptedAnswers": [
+            "go around the table",
+            "go around the room"
+          ],
+          "acceptedTranslations": [
+            "oddać głos każdemu po kolei",
+            "zrobić rundkę",
+            "każdy po kolei"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meetings.discussion",
+      "namePl": "Dyskusja i zgłaszanie uwag",
+      "scenePl": "Zespół przy stole w sali konferencyjnej omawia propozycję nowego projektu",
+      "entries": [
+        {
+          "id": "meetings.idea",
+          "term": "idea",
+          "ipa": "/aɪˈdiːə/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pomysł",
+          "definition": "A thought or plan about what to do.",
+          "register": "neutralny",
+          "contextPl": "Proponowanie rozwiązań na spotkaniu",
+          "natural": "",
+          "forms": "ideas",
+          "collocations": "good idea; come up with an idea; share an idea",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I have an idea for the new product launch.",
+              "pl": "Mam pomysł na premierę nowego produktu.",
+              "focusEn": "idea",
+              "focusPl": "pomysł"
+            },
+            {
+              "en": "Everyone liked Anna's idea about a customer survey.",
+              "pl": "Wszystkim spodobał się pomysł Anny z ankietą dla klientów.",
+              "focusEn": "idea",
+              "focusPl": "pomysł"
+            }
+          ],
+          "acceptedAnswers": [
+            "idea"
+          ],
+          "acceptedTranslations": [
+            "pomysł",
+            "koncepcja",
+            "myśl"
+          ]
+        },
+        {
+          "id": "meetings.agree",
+          "term": "agree",
+          "ipa": "/əˈɡriː/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zgadzać się",
+          "definition": "To have the same opinion as someone else.",
+          "register": "neutralny",
+          "contextPl": "Wyrażanie zgody w dyskusji",
+          "natural": "",
+          "forms": "agree – agreed – agreed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "disagree",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I agree with Sam; the deadline is too tight.",
+              "pl": "Zgadzam się z Samem: termin jest zbyt napięty.",
+              "focusEn": "agree",
+              "focusPl": "Zgadzam się"
+            },
+            {
+              "en": "Most of the team agreed that the new logo looks better.",
+              "pl": "Większość zespołu zgodziła się, że nowe logo wygląda lepiej.",
+              "focusEn": "agreed",
+              "focusPl": "zgodziła się"
+            }
+          ],
+          "acceptedAnswers": [
+            "agree"
+          ],
+          "acceptedTranslations": [
+            "zgadzać się",
+            "zgodzić się",
+            "przyznać rację"
+          ]
+        },
+        {
+          "id": "meetings.disagree",
+          "term": "disagree",
+          "ipa": "/ˌdɪsəˈɡriː/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nie zgadzać się",
+          "definition": "To have a different opinion from someone else.",
+          "register": "neutralny",
+          "contextPl": "Uprzejme wyrażanie innego zdania",
+          "natural": "",
+          "forms": "disagree – disagreed – disagreed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "agree",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm sorry, but I disagree; I think the price is too high.",
+              "pl": "Przepraszam, ale nie zgadzam się: moim zdaniem cena jest za wysoka.",
+              "focusEn": "disagree",
+              "focusPl": "nie zgadzam się"
+            },
+            {
+              "en": "Two people disagreed with the plan, so we discussed it longer.",
+              "pl": "Dwie osoby nie zgodziły się z planem, więc dyskutowaliśmy dłużej.",
+              "focusEn": "disagreed",
+              "focusPl": "nie zgodziły się"
+            }
+          ],
+          "acceptedAnswers": [
+            "disagree"
+          ],
+          "acceptedTranslations": [
+            "nie zgadzać się",
+            "nie zgodzić się",
+            "mieć inne zdanie",
+            "być innego zdania"
+          ]
+        },
+        {
+          "id": "meetings.suggest",
+          "term": "suggest",
+          "ipa": "/səɡˈdʒɛst/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zaproponować",
+          "definition": "To mention an idea or plan for other people to consider.",
+          "register": "neutralny",
+          "contextPl": "Składanie propozycji na spotkaniu",
+          "natural": "",
+          "forms": "suggest – suggested – suggested",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po „suggest” nie używamy „to + bezokolicznik”: „I suggest that we wait” albo „I suggest waiting”.",
+          "examples": [
+            {
+              "en": "I suggest that we test the idea with a few clients first.",
+              "pl": "Proponuję, żebyśmy najpierw przetestowali pomysł z kilkoma klientami.",
+              "focusEn": "suggest",
+              "focusPl": "Proponuję"
+            },
+            {
+              "en": "Sara suggested moving the launch to the spring.",
+              "pl": "Sara zaproponowała przeniesienie premiery na wiosnę.",
+              "focusEn": "suggested",
+              "focusPl": "zaproponowała"
+            }
+          ],
+          "acceptedAnswers": [
+            "suggest",
+            "propose"
+          ],
+          "acceptedTranslations": [
+            "zaproponować",
+            "proponować",
+            "zasugerować",
+            "sugerować"
+          ]
+        },
+        {
+          "id": "meetings.good-point",
+          "term": "good point",
+          "ipa": "/ˌɡʊd ˈpɔɪnt/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "słuszna uwaga",
+          "definition": "A useful or correct thing that someone says in a discussion.",
+          "register": "neutralny",
+          "contextPl": "Docenianie czyjejś wypowiedzi",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "That's a good point; we didn't think about shipping costs.",
+              "pl": "To słuszna uwaga, nie pomyśleliśmy o kosztach wysyłki.",
+              "focusEn": "good point",
+              "focusPl": "słuszna uwaga"
+            },
+            {
+              "en": "Jen made a good point about the holiday schedule, so we changed the plan.",
+              "pl": "Jen zgłosiła trafną uwagę w sprawie grafiku świątecznego, więc zmieniliśmy plan.",
+              "focusEn": "good point",
+              "focusPl": "trafną uwagę"
+            }
+          ],
+          "acceptedAnswers": [
+            "good point",
+            "fair point"
+          ],
+          "acceptedTranslations": [
+            "słuszna uwaga",
+            "trafna uwaga",
+            "racja",
+            "dobra uwaga"
+          ]
+        },
+        {
+          "id": "meetings.i-see-your-point",
+          "term": "I see your point",
+          "ipa": "/aɪ ˈsiː jər ˈpɔɪnt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rozumiem, co masz na myśli",
+          "definition": "A polite way to say you understand someone's opinion, often before disagreeing.",
+          "register": "neutralny",
+          "contextPl": "Uprzejme przejście do innego zdania",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I see your point, but I still think we need more time.",
+              "pl": "Rozumiem, co masz na myśli, ale nadal uważam, że potrzebujemy więcej czasu.",
+              "focusEn": "I see your point",
+              "focusPl": "Rozumiem, co masz na myśli"
+            },
+            {
+              "en": "The manager said, “I see your point”, and then asked for other opinions.",
+              "pl": "Kierowniczka powiedziała: „Rozumiem twój punkt widzenia”, i poprosiła o inne opinie.",
+              "focusEn": "I see your point",
+              "focusPl": "Rozumiem twój punkt widzenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "I see your point",
+            "I see what you mean"
+          ],
+          "acceptedTranslations": [
+            "rozumiem, co masz na myśli",
+            "rozumiem twój punkt widzenia",
+            "rozumiem, o co ci chodzi"
+          ]
+        },
+        {
+          "id": "meetings.proposal",
+          "term": "proposal",
+          "ipa": "/prəˈpoʊzəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "propozycja",
+          "definition": "A formal plan or suggestion that people discuss and decide about.",
+          "register": "neutralny",
+          "contextPl": "Omawianie planów i projektów",
+          "natural": "",
+          "forms": "proposals",
+          "collocations": "make a proposal; reject a proposal; project proposal",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Today we'll discuss Mark's proposal for a new website.",
+              "pl": "Dziś omówimy propozycję Marka dotyczącą nowej strony internetowej.",
+              "focusEn": "proposal",
+              "focusPl": "propozycję"
+            },
+            {
+              "en": "The team liked the proposal but asked for a smaller budget.",
+              "pl": "Zespołowi spodobała się propozycja, ale poprosił o mniejszy budżet.",
+              "focusEn": "proposal",
+              "focusPl": "propozycja"
+            }
+          ],
+          "acceptedAnswers": [
+            "proposal"
+          ],
+          "acceptedTranslations": [
+            "propozycja",
+            "projekt",
+            "oferta",
+            "wniosek"
+          ]
+        },
+        {
+          "id": "meetings.opinion",
+          "term": "opinion",
+          "ipa": "/əˈpɪnjən/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "opinia",
+          "definition": "What a person thinks about something.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o zdanie uczestników spotkania",
+          "natural": "",
+          "forms": "opinions",
+          "collocations": "in my opinion; ask for an opinion; share an opinion",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "In my opinion, we should wait until next quarter.",
+              "pl": "Moim zdaniem powinniśmy poczekać do następnego kwartału.",
+              "focusEn": "opinion",
+              "focusPl": "zdaniem"
+            },
+            {
+              "en": "She asked for everyone's opinion before making a decision.",
+              "pl": "Zanim podjęła decyzję, zapytała wszystkich o opinię.",
+              "focusEn": "opinion",
+              "focusPl": "opinię"
+            }
+          ],
+          "acceptedAnswers": [
+            "opinion"
+          ],
+          "acceptedTranslations": [
+            "opinia",
+            "zdanie",
+            "pogląd"
+          ]
+        },
+        {
+          "id": "meetings.concern",
+          "term": "concern",
+          "ipa": "/kənˈsɜːrn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "obawa",
+          "definition": "A worry about something that might be a problem.",
+          "register": "neutralny",
+          "contextPl": "Zgłaszanie zastrzeżeń i obaw",
+          "natural": "",
+          "forms": "concerns",
+          "collocations": "raise a concern; my main concern; share your concerns",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My main concern is the timeline; it's very tight.",
+              "pl": "Moją główną obawą jest harmonogram: jest bardzo napięty.",
+              "focusEn": "concern",
+              "focusPl": "obawą"
+            },
+            {
+              "en": "Several people raised concerns about the cost of the new software.",
+              "pl": "Kilka osób zgłosiło obawy dotyczące kosztów nowego oprogramowania.",
+              "focusEn": "concerns",
+              "focusPl": "obawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "concern"
+          ],
+          "acceptedTranslations": [
+            "obawa",
+            "zastrzeżenie",
+            "wątpliwość",
+            "niepokój"
+          ]
+        },
+        {
+          "id": "meetings.bring-up",
+          "term": "bring up",
+          "ipa": "/ˌbrɪŋ ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "poruszyć",
+          "definition": "To start talking about a subject.",
+          "register": "neutralny",
+          "contextPl": "Wprowadzanie tematu do dyskusji",
+          "natural": "",
+          "forms": "bring – brought – brought",
+          "collocations": "",
+          "synonyms": "raise; mention",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to bring up the issue of parking.",
+              "pl": "Chciałbym poruszyć kwestię parkowania.",
+              "focusEn": "bring up",
+              "focusPl": "poruszyć"
+            },
+            {
+              "en": "Nobody brought up the budget until the very end.",
+              "pl": "Nikt nie poruszył tematu budżetu aż do samego końca.",
+              "focusEn": "brought up",
+              "focusPl": "poruszył"
+            }
+          ],
+          "acceptedAnswers": [
+            "bring up",
+            "raise",
+            "mention"
+          ],
+          "acceptedTranslations": [
+            "poruszyć",
+            "poruszać",
+            "wspomnieć",
+            "podnieść temat"
+          ]
+        },
+        {
+          "id": "meetings.point-out",
+          "term": "point out",
+          "ipa": "/ˌpɔɪnt ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zwrócić uwagę",
+          "definition": "To tell someone a fact or problem they may not have noticed.",
+          "register": "neutralny",
+          "contextPl": "Wskazywanie problemów i faktów",
+          "natural": "",
+          "forms": "point – pointed – pointed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Lisa pointed out a mistake in the sales chart.",
+              "pl": "Lisa zwróciła uwagę na błąd w wykresie sprzedaży.",
+              "focusEn": "pointed out",
+              "focusPl": "zwróciła uwagę"
+            },
+            {
+              "en": "I just want to point out that we've tried this before.",
+              "pl": "Chcę tylko zauważyć, że już kiedyś tego próbowaliśmy.",
+              "focusEn": "point out",
+              "focusPl": "zauważyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "point out"
+          ],
+          "acceptedTranslations": [
+            "zwrócić uwagę",
+            "wskazać",
+            "wskazywać",
+            "zauważyć",
+            "zwracać uwagę"
+          ]
+        },
+        {
+          "id": "meetings.interrupt",
+          "term": "interrupt",
+          "ipa": "/ˌɪntəˈrʌpt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przerwać",
+          "definition": "To stop someone while they are speaking.",
+          "register": "neutralny",
+          "contextPl": "Wtrącanie się w czyjąś wypowiedź",
+          "natural": "",
+          "forms": "interrupt – interrupted – interrupted",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry to interrupt, but I have a quick question.",
+              "pl": "Przepraszam, że przerywam, ale mam krótkie pytanie.",
+              "focusEn": "interrupt",
+              "focusPl": "przerywam"
+            },
+            {
+              "en": "He kept interrupting people, so the manager asked him to wait.",
+              "pl": "Ciągle przerywał innym, więc kierowniczka poprosiła go, żeby poczekał.",
+              "focusEn": "interrupting",
+              "focusPl": "przerywał"
+            }
+          ],
+          "acceptedAnswers": [
+            "interrupt",
+            "cut in"
+          ],
+          "acceptedTranslations": [
+            "przerwać",
+            "przerywać",
+            "wtrącić się",
+            "wtrącać się"
+          ]
+        },
+        {
+          "id": "meetings.clarify",
+          "term": "clarify",
+          "ipa": "/ˈklɛrəˌfaɪ/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "doprecyzować",
+          "definition": "To make something easier to understand by explaining it more.",
+          "register": "neutralny",
+          "contextPl": "Upewnianie się, że wszyscy dobrze zrozumieli",
+          "natural": "",
+          "forms": "clarify – clarified – clarified",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you clarify what you mean by “a small budget”?",
+              "pl": "Czy mógłbyś doprecyzować, co masz na myśli przez „mały budżet”?",
+              "focusEn": "clarify",
+              "focusPl": "doprecyzować"
+            },
+            {
+              "en": "She clarified that the deadline is for the draft, not the final version.",
+              "pl": "Wyjaśniła, że termin dotyczy wersji roboczej, a nie ostatecznej.",
+              "focusEn": "clarified",
+              "focusPl": "Wyjaśniła"
+            }
+          ],
+          "acceptedAnswers": [
+            "clarify"
+          ],
+          "acceptedTranslations": [
+            "doprecyzować",
+            "wyjaśnić",
+            "wyjaśniać",
+            "sprecyzować",
+            "doprecyzowywać"
+          ]
+        },
+        {
+          "id": "meetings.input",
+          "term": "input",
+          "ipa": "/ˈɪnˌpʊt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wkład",
+          "definition": "Ideas, advice, or opinions that you give to help something.",
+          "register": "neutralny",
+          "contextPl": "Prośba o uwagi i pomysły uczestników",
+          "natural": "",
+          "forms": "",
+          "collocations": "give input; your input; valuable input",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks for your input; it really helps.",
+              "pl": "Dzięki za twój wkład, naprawdę pomaga.",
+              "focusEn": "input",
+              "focusPl": "wkład"
+            },
+            {
+              "en": "We need input from the sales team before we decide.",
+              "pl": "Zanim zdecydujemy, potrzebujemy opinii zespołu sprzedaży.",
+              "focusEn": "input",
+              "focusPl": "opinii"
+            }
+          ],
+          "acceptedAnswers": [
+            "input"
+          ],
+          "acceptedTranslations": [
+            "wkład",
+            "uwagi",
+            "opinia",
+            "sugestie"
+          ]
+        },
+        {
+          "id": "meetings.brainstorm",
+          "term": "brainstorm",
+          "ipa": "/ˈbreɪnˌstɔːrm/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "robić burzę mózgów",
+          "definition": "To come up with many ideas quickly as a group.",
+          "register": "neutralny",
+          "contextPl": "Wspólne szukanie pomysłów",
+          "natural": "",
+          "forms": "brainstorm – brainstormed – brainstormed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's brainstorm some names for the new product.",
+              "pl": "Zróbmy burzę mózgów i wymyślmy nazwy dla nowego produktu.",
+              "focusEn": "brainstorm",
+              "focusPl": "Zróbmy burzę mózgów"
+            },
+            {
+              "en": "We brainstormed for twenty minutes and filled the whiteboard with ideas.",
+              "pl": "Przez dwadzieścia minut robiliśmy burzę mózgów i zapełniliśmy tablicę pomysłami.",
+              "focusEn": "brainstormed",
+              "focusPl": "robiliśmy burzę mózgów"
+            }
+          ],
+          "acceptedAnswers": [
+            "brainstorm"
+          ],
+          "acceptedTranslations": [
+            "robić burzę mózgów",
+            "zrobić burzę mózgów",
+            "wymyślać pomysły"
+          ]
+        },
+        {
+          "id": "meetings.on-the-same-page",
+          "term": "on the same page",
+          "ipa": "/ɑːn ðə ˌseɪm ˈpeɪdʒ/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zgodni co do czegoś",
+          "definition": "Having the same understanding or opinion about something.",
+          "register": "potoczny",
+          "contextPl": "Upewnianie się, że wszyscy rozumieją plan tak samo",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Before we go on, let's make sure we're all on the same page.",
+              "pl": "Zanim pójdziemy dalej, upewnijmy się, że wszyscy mamy takie samo zdanie.",
+              "focusEn": "on the same page",
+              "focusPl": "mamy takie samo zdanie"
+            },
+            {
+              "en": "After a long discussion, the whole team was finally on the same page.",
+              "pl": "Po długiej dyskusji cały zespół wreszcie był zgodny.",
+              "focusEn": "on the same page",
+              "focusPl": "był zgodny"
+            }
+          ],
+          "acceptedAnswers": [
+            "on the same page"
+          ],
+          "acceptedTranslations": [
+            "zgodni co do czegoś",
+            "zgodny",
+            "mieć takie samo zdanie",
+            "rozumieć tak samo"
+          ]
+        },
+        {
+          "id": "meetings.play-devils-advocate",
+          "term": "play devil's advocate",
+          "ipa": "/ˌpleɪ ˌdɛvəlz ˈædvəkət/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "być adwokatem diabła",
+          "definition": "To argue against an idea, not because you disagree, but to test it.",
+          "register": "neutralny",
+          "contextPl": "Celowe kwestionowanie pomysłu w dyskusji",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let me play devil's advocate: what if the clients don't want this?",
+              "pl": "Pozwólcie, że będę adwokatem diabła: co, jeśli klienci tego nie chcą?",
+              "focusEn": "play devil's advocate",
+              "focusPl": "będę adwokatem diabła"
+            },
+            {
+              "en": "He always plays devil's advocate in meetings, which annoys some people.",
+              "pl": "Na spotkaniach zawsze gra adwokata diabła, co niektórych irytuje.",
+              "focusEn": "plays devil's advocate",
+              "focusPl": "gra adwokata diabła"
+            }
+          ],
+          "acceptedAnswers": [
+            "play devil's advocate",
+            "devil's advocate"
+          ],
+          "acceptedTranslations": [
+            "być adwokatem diabła",
+            "grać adwokata diabła",
+            "występować jako adwokat diabła"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meetings.decisions",
+      "namePl": "Ustalenia i zadania",
+      "scenePl": "Koniec spotkania: podsumowanie decyzji i podział zadań między członków zespołu",
+      "entries": [
+        {
+          "id": "meetings.decide",
+          "term": "decide",
+          "ipa": "/dɪˈsaɪd/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zdecydować",
+          "definition": "To choose what to do after thinking about it.",
+          "register": "neutralny",
+          "contextPl": "Podejmowanie decyzji na spotkaniu",
+          "natural": "",
+          "forms": "decide – decided – decided",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We decided to launch the campaign in May.",
+              "pl": "Zdecydowaliśmy, że rozpoczniemy kampanię w maju.",
+              "focusEn": "decided",
+              "focusPl": "Zdecydowaliśmy"
+            },
+            {
+              "en": "We can't decide today; we need more data first.",
+              "pl": "Nie możemy dziś zdecydować, najpierw potrzebujemy więcej danych.",
+              "focusEn": "decide",
+              "focusPl": "zdecydować"
+            }
+          ],
+          "acceptedAnswers": [
+            "decide"
+          ],
+          "acceptedTranslations": [
+            "zdecydować",
+            "postanowić",
+            "decydować",
+            "postanawiać"
+          ]
+        },
+        {
+          "id": "meetings.decision",
+          "term": "decision",
+          "ipa": "/dɪˈsɪʒən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "decyzja",
+          "definition": "A choice that you make after thinking about it.",
+          "register": "neutralny",
+          "contextPl": "Wynik dyskusji",
+          "natural": "",
+          "forms": "decisions",
+          "collocations": "make a decision; final decision; tough decision",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The final decision is up to the manager.",
+              "pl": "Ostateczna decyzja należy do kierowniczki.",
+              "focusEn": "decision",
+              "focusPl": "decyzja"
+            },
+            {
+              "en": "We made a decision in ten minutes, which was a record.",
+              "pl": "Podjęliśmy decyzję w dziesięć minut, co było rekordem.",
+              "focusEn": "decision",
+              "focusPl": "decyzję"
+            }
+          ],
+          "acceptedAnswers": [
+            "decision"
+          ],
+          "acceptedTranslations": [
+            "decyzja",
+            "postanowienie",
+            "ustalenie"
+          ]
+        },
+        {
+          "id": "meetings.agree-on",
+          "term": "agree on",
+          "ipa": "/əˈɡriː ɑːn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "uzgodnić",
+          "definition": "To reach a shared decision about something.",
+          "register": "neutralny",
+          "contextPl": "Wspólne ustalenia na spotkaniu",
+          "natural": "",
+          "forms": "agree – agreed – agreed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's agree on a date for the next review.",
+              "pl": "Ustalmy termin następnego przeglądu.",
+              "focusEn": "agree on",
+              "focusPl": "Ustalmy"
+            },
+            {
+              "en": "We finally agreed on a budget of fifty thousand dollars.",
+              "pl": "W końcu uzgodniliśmy budżet w wysokości pięćdziesięciu tysięcy dolarów.",
+              "focusEn": "agreed on",
+              "focusPl": "uzgodniliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "agree on"
+          ],
+          "acceptedTranslations": [
+            "uzgodnić",
+            "ustalić",
+            "ustalać",
+            "uzgadniać",
+            "dojść do porozumienia"
+          ]
+        },
+        {
+          "id": "meetings.next-steps",
+          "term": "next steps",
+          "ipa": "/ˌnɛkst ˈstɛps/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kolejne kroki",
+          "definition": "The actions that need to happen after a meeting or decision.",
+          "register": "neutralny",
+          "contextPl": "Plan działania po spotkaniu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Before we leave, let's talk about next steps.",
+              "pl": "Zanim wyjdziemy, porozmawiajmy o kolejnych krokach.",
+              "focusEn": "next steps",
+              "focusPl": "kolejnych krokach"
+            },
+            {
+              "en": "I'll send an email with the next steps this afternoon.",
+              "pl": "Dziś po południu wyślę maila z kolejnymi krokami.",
+              "focusEn": "next steps",
+              "focusPl": "kolejnymi krokami"
+            }
+          ],
+          "acceptedAnswers": [
+            "next steps",
+            "next step"
+          ],
+          "acceptedTranslations": [
+            "kolejne kroki",
+            "dalsze kroki",
+            "dalsze działania",
+            "następne kroki"
+          ]
+        },
+        {
+          "id": "meetings.action-item",
+          "term": "action item",
+          "ipa": "/ˈækʃən ˌaɪtəm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zadanie do wykonania",
+          "definition": "A task that someone agrees to do after a meeting.",
+          "register": "neutralny",
+          "contextPl": "Konkretne zadania przydzielane na koniec spotkania",
+          "natural": "",
+          "forms": "action items",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I have two action items from today: update the slides and call the client.",
+              "pl": "Po dzisiejszym spotkaniu mam dwa zadania do wykonania: zaktualizować slajdy i zadzwonić do klienta.",
+              "focusEn": "action items",
+              "focusPl": "zadania do wykonania"
+            },
+            {
+              "en": "Each action item has a name and a due date next to it.",
+              "pl": "Przy każdym zadaniu jest nazwisko i termin wykonania.",
+              "focusEn": "action item",
+              "focusPl": "zadaniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "action item",
+            "action point"
+          ],
+          "acceptedTranslations": [
+            "zadanie do wykonania",
+            "zadanie",
+            "ustalenie",
+            "punkt do realizacji"
+          ]
+        },
+        {
+          "id": "meetings.assign",
+          "term": "assign",
+          "ipa": "/əˈsaɪn/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przydzielić",
+          "definition": "To give someone a particular task or job.",
+          "register": "neutralny",
+          "contextPl": "Podział zadań między uczestników",
+          "natural": "",
+          "forms": "assign – assigned – assigned",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's assign each task to one person.",
+              "pl": "Przydzielmy każde zadanie jednej osobie.",
+              "focusEn": "assign",
+              "focusPl": "Przydzielmy"
+            },
+            {
+              "en": "The manager assigned me the customer survey.",
+              "pl": "Kierowniczka przydzieliła mi ankietę dla klientów.",
+              "focusEn": "assigned",
+              "focusPl": "przydzieliła"
+            }
+          ],
+          "acceptedAnswers": [
+            "assign"
+          ],
+          "acceptedTranslations": [
+            "przydzielić",
+            "przydzielać",
+            "powierzyć",
+            "powierzać",
+            "zlecić"
+          ]
+        },
+        {
+          "id": "meetings.be-responsible-for",
+          "term": "be responsible for",
+          "ipa": "/bi rɪˈspɑːnsəbəl fɔːr/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "być odpowiedzialnym za",
+          "definition": "To have the duty of doing or dealing with something.",
+          "register": "neutralny",
+          "contextPl": "Ustalanie, kto co robi",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Who is responsible for booking the venue?",
+              "pl": "Kto jest odpowiedzialny za rezerwację miejsca?",
+              "focusEn": "is responsible for",
+              "focusPl": "jest odpowiedzialny za"
+            },
+            {
+              "en": "I'll be responsible for the final report.",
+              "pl": "Będę odpowiadać za raport końcowy.",
+              "focusEn": "be responsible for",
+              "focusPl": "Będę odpowiadać za"
+            }
+          ],
+          "acceptedAnswers": [
+            "be responsible for",
+            "responsible for"
+          ],
+          "acceptedTranslations": [
+            "być odpowiedzialnym za",
+            "odpowiadać za",
+            "zajmować się"
+          ]
+        },
+        {
+          "id": "meetings.follow-up",
+          "term": "follow-up",
+          "ipa": "/ˈfɑːloʊˌʌp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dalszy ciąg",
+          "definition": "An action, email, or meeting that continues something done earlier.",
+          "register": "neutralny",
+          "contextPl": "Kontynuacja po spotkaniu",
+          "natural": "",
+          "forms": "follow-ups",
+          "collocations": "follow-up meeting; follow-up email",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's plan a follow-up for next Thursday.",
+              "pl": "Zaplanujmy spotkanie kontrolne na przyszły czwartek.",
+              "focusEn": "follow-up",
+              "focusPl": "spotkanie kontrolne"
+            },
+            {
+              "en": "I'll send a quick follow-up with the decisions we made.",
+              "pl": "Wyślę krótkie podsumowanie z podjętymi decyzjami.",
+              "focusEn": "follow-up",
+              "focusPl": "podsumowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "follow-up",
+            "follow up"
+          ],
+          "acceptedTranslations": [
+            "dalszy ciąg",
+            "spotkanie kontrolne",
+            "podsumowanie",
+            "dalsze działania",
+            "kontynuacja"
+          ]
+        },
+        {
+          "id": "meetings.vote",
+          "term": "vote",
+          "ipa": "/voʊt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "głosować",
+          "definition": "To show your choice, for example by raising your hand.",
+          "register": "neutralny",
+          "contextPl": "Podejmowanie decyzji większością głosów",
+          "natural": "",
+          "forms": "vote – voted – voted",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's vote on the two logo designs.",
+              "pl": "Zagłosujmy nad dwoma projektami logo.",
+              "focusEn": "vote",
+              "focusPl": "Zagłosujmy"
+            },
+            {
+              "en": "Most people voted for the blue version.",
+              "pl": "Większość osób głosowała za niebieską wersją.",
+              "focusEn": "voted",
+              "focusPl": "głosowała"
+            }
+          ],
+          "acceptedAnswers": [
+            "vote"
+          ],
+          "acceptedTranslations": [
+            "głosować",
+            "zagłosować",
+            "głosowanie"
+          ]
+        },
+        {
+          "id": "meetings.compromise",
+          "term": "compromise",
+          "ipa": "/ˈkɑːmprəˌmaɪz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kompromis",
+          "definition": "An agreement in which each side gives up something it wanted.",
+          "register": "neutralny",
+          "contextPl": "Dochodzenie do porozumienia mimo różnicy zdań",
+          "natural": "",
+          "forms": "compromises",
+          "collocations": "reach a compromise; find a compromise",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "As a compromise, we'll launch in two cities first.",
+              "pl": "W ramach kompromisu najpierw wystartujemy w dwóch miastach.",
+              "focusEn": "compromise",
+              "focusPl": "kompromisu"
+            },
+            {
+              "en": "After an hour of discussion, we finally found a compromise.",
+              "pl": "Po godzinie dyskusji wreszcie znaleźliśmy kompromis.",
+              "focusEn": "compromise",
+              "focusPl": "kompromis"
+            }
+          ],
+          "acceptedAnswers": [
+            "compromise"
+          ],
+          "acceptedTranslations": [
+            "kompromis",
+            "porozumienie",
+            "rozwiązanie kompromisowe"
+          ]
+        },
+        {
+          "id": "meetings.on-hold",
+          "term": "on hold",
+          "ipa": "/ɑːn ˈhoʊld/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wstrzymany",
+          "definition": "Stopped for a period of time, to be continued later.",
+          "register": "neutralny",
+          "contextPl": "Wstrzymywanie projektów i decyzji",
+          "natural": "",
+          "forms": "",
+          "collocations": "put something on hold",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're putting the website project on hold until January.",
+              "pl": "Wstrzymujemy projekt strony do stycznia.",
+              "focusEn": "on hold",
+              "focusPl": "Wstrzymujemy"
+            },
+            {
+              "en": "The hiring plan is on hold because of the budget.",
+              "pl": "Plan rekrutacji jest wstrzymany z powodu budżetu.",
+              "focusEn": "on hold",
+              "focusPl": "wstrzymany"
+            }
+          ],
+          "acceptedAnswers": [
+            "on hold"
+          ],
+          "acceptedTranslations": [
+            "wstrzymany",
+            "zawieszony",
+            "wstrzymać",
+            "odłożony"
+          ]
+        },
+        {
+          "id": "meetings.consensus",
+          "term": "consensus",
+          "ipa": "/kənˈsɛnsəs/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "konsensus",
+          "definition": "An opinion that all or most people in a group agree with.",
+          "register": "neutralny",
+          "contextPl": "Zgoda całej grupy",
+          "natural": "",
+          "forms": "",
+          "collocations": "reach a consensus; general consensus",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We didn't reach a consensus, so the manager made the decision.",
+              "pl": "Nie osiągnęliśmy konsensusu, więc decyzję podjęła kierowniczka.",
+              "focusEn": "consensus",
+              "focusPl": "konsensusu"
+            },
+            {
+              "en": "The consensus was that the old plan was too expensive.",
+              "pl": "Zgodnie uznano, że stary plan był zbyt drogi.",
+              "focusEn": "consensus",
+              "focusPl": "Zgodnie uznano"
+            }
+          ],
+          "acceptedAnswers": [
+            "consensus"
+          ],
+          "acceptedTranslations": [
+            "konsensus",
+            "porozumienie",
+            "jednomyślność",
+            "zgoda"
+          ]
+        },
+        {
+          "id": "meetings.circle-back",
+          "term": "circle back",
+          "ipa": "/ˌsɜːrkəl ˈbæk/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wrócić do tematu",
+          "definition": "To return to a subject later.",
+          "register": "potoczny",
+          "contextPl": "Odkładanie tematu na później, typowe w języku korporacyjnym",
+          "natural": "",
+          "forms": "circle – circled – circled",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're out of time, so let's circle back to this next week.",
+              "pl": "Skończył nam się czas, więc wróćmy do tego w przyszłym tygodniu.",
+              "focusEn": "circle back",
+              "focusPl": "wróćmy do tego"
+            },
+            {
+              "en": "I'll circle back with you once I talk to the client.",
+              "pl": "Wrócę do tematu, jak tylko porozmawiam z klientem.",
+              "focusEn": "circle back",
+              "focusPl": "Wrócę do tematu"
+            }
+          ],
+          "acceptedAnswers": [
+            "circle back",
+            "come back to"
+          ],
+          "acceptedTranslations": [
+            "wrócić do tematu",
+            "wrócić do sprawy",
+            "wracać do tematu",
+            "wrócić do tego"
+          ]
+        },
+        {
+          "id": "meetings.touch-base",
+          "term": "touch base",
+          "ipa": "/ˌtʌtʃ ˈbeɪs/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skontaktować się na chwilę",
+          "definition": "To briefly talk to someone to share news or check how things are going.",
+          "register": "potoczny",
+          "contextPl": "Krótki kontakt w sprawie postępów",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's touch base on Friday to see how the survey is going.",
+              "pl": "Zdzwońmy się w piątek, żeby sprawdzić, jak idzie ankieta.",
+              "focusEn": "touch base",
+              "focusPl": "Zdzwońmy się"
+            },
+            {
+              "en": "I touched base with the designer after the meeting.",
+              "pl": "Po spotkaniu złapałem na chwilę projektantkę.",
+              "focusEn": "touched base",
+              "focusPl": "złapałem na chwilę"
+            }
+          ],
+          "acceptedAnswers": [
+            "touch base"
+          ],
+          "acceptedTranslations": [
+            "skontaktować się na chwilę",
+            "zdzwonić się",
+            "złapać się na chwilę",
+            "skontaktować się"
+          ]
+        },
+        {
+          "id": "meetings.sign-off-on",
+          "term": "sign off on",
+          "ipa": "/ˌsaɪn ˈɔːf ɑːn/",
+          "pos": "czasownik frazowy",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zatwierdzić",
+          "definition": "To give official approval for something.",
+          "register": "neutralny",
+          "contextPl": "Formalna zgoda przełożonego lub klienta",
+          "natural": "",
+          "forms": "sign – signed – signed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The director needs to sign off on the budget first.",
+              "pl": "Dyrektor musi najpierw zatwierdzić budżet.",
+              "focusEn": "sign off on",
+              "focusPl": "zatwierdzić"
+            },
+            {
+              "en": "Once the client signs off on the design, we can start.",
+              "pl": "Kiedy klient zatwierdzi projekt, możemy zaczynać.",
+              "focusEn": "signs off on",
+              "focusPl": "zatwierdzi"
+            }
+          ],
+          "acceptedAnswers": [
+            "sign off on",
+            "approve"
+          ],
+          "acceptedTranslations": [
+            "zatwierdzić",
+            "zatwierdzać",
+            "zaakceptować",
+            "dać zielone światło"
+          ]
+        },
+        {
+          "id": "meetings.table",
+          "term": "table",
+          "ipa": "/ˈteɪbəl/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "odłożyć na później",
+          "definition": "To delay discussing something until a later time.",
+          "register": "neutralny",
+          "contextPl": "Odkładanie punktu dyskusji",
+          "natural": "",
+          "forms": "table – tabled – tabled",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Uwaga: w amerykańskim angielskim „table a discussion” to odłożyć ją, w brytyjskim — przedstawić do dyskusji.",
+          "examples": [
+            {
+              "en": "Let's table this topic until we have the final numbers.",
+              "pl": "Odłóżmy ten temat, dopóki nie będziemy mieć ostatecznych liczb.",
+              "focusEn": "table",
+              "focusPl": "Odłóżmy"
+            },
+            {
+              "en": "The parking question was tabled for the next meeting.",
+              "pl": "Sprawę parkingu odłożono do następnego spotkania.",
+              "focusEn": "tabled",
+              "focusPl": "odłożono"
+            }
+          ],
+          "acceptedAnswers": [
+            "table",
+            "postpone",
+            "put off"
+          ],
+          "acceptedTranslations": [
+            "odłożyć na później",
+            "odkładać",
+            "odroczyć",
+            "przełożyć"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meetings.types",
+      "namePl": "Uczestnicy i rodzaje spotkań",
+      "scenePl": "Duże spotkanie z klientem: część osób siedzi w sali, część dołącza przez telefon",
+      "entries": [
+        {
+          "id": "meetings.attend",
+          "term": "attend",
+          "ipa": "/əˈtɛnd/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "uczestniczyć",
+          "definition": "To go to and be present at a meeting or event.",
+          "register": "neutralny",
+          "contextPl": "Obecność na spotkaniach",
+          "natural": "",
+          "forms": "attend – attended – attended",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Twelve people attended the meeting with the client.",
+              "pl": "W spotkaniu z klientem uczestniczyło dwanaście osób.",
+              "focusEn": "attended",
+              "focusPl": "uczestniczyło"
+            },
+            {
+              "en": "I can't attend in person, so I'll call in.",
+              "pl": "Nie mogę być obecny osobiście, więc dołączę telefonicznie.",
+              "focusEn": "attend",
+              "focusPl": "być obecny"
+            }
+          ],
+          "acceptedAnswers": [
+            "attend",
+            "go to"
+          ],
+          "acceptedTranslations": [
+            "uczestniczyć",
+            "brać udział",
+            "wziąć udział",
+            "być obecnym"
+          ]
+        },
+        {
+          "id": "meetings.join",
+          "term": "join",
+          "ipa": "/dʒɔɪn/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dołączyć",
+          "definition": "To start taking part in a meeting or activity.",
+          "register": "neutralny",
+          "contextPl": "Dołączanie do spotkania lub rozmowy",
+          "natural": "",
+          "forms": "join – joined – joined",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our sales director will join us in ten minutes.",
+              "pl": "Nasz dyrektor sprzedaży dołączy do nas za dziesięć minut.",
+              "focusEn": "join",
+              "focusPl": "dołączy"
+            },
+            {
+              "en": "Two people from the client's team joined by phone.",
+              "pl": "Dwie osoby z zespołu klienta dołączyły przez telefon.",
+              "focusEn": "joined",
+              "focusPl": "dołączyły"
+            }
+          ],
+          "acceptedAnswers": [
+            "join"
+          ],
+          "acceptedTranslations": [
+            "dołączyć",
+            "dołączać",
+            "przyłączyć się"
+          ]
+        },
+        {
+          "id": "meetings.client",
+          "term": "client",
+          "ipa": "/ˈklaɪənt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "klient",
+          "definition": "A person or company that pays for services or advice.",
+          "register": "neutralny",
+          "contextPl": "Spotkania z osobami z zewnątrz firmy",
+          "natural": "",
+          "forms": "clients",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The client arrived early, so we started at five to ten.",
+              "pl": "Klient przyjechał wcześniej, więc zaczęliśmy za pięć dziesiąta.",
+              "focusEn": "client",
+              "focusPl": "Klient"
+            },
+            {
+              "en": "I introduced our team to the client at the start of the meeting.",
+              "pl": "Na początku spotkania przedstawiłam nasz zespół klientowi.",
+              "focusEn": "client",
+              "focusPl": "klientowi"
+            }
+          ],
+          "acceptedAnswers": [
+            "client"
+          ],
+          "acceptedTranslations": [
+            "klient",
+            "klientka",
+            "zleceniodawca"
+          ]
+        },
+        {
+          "id": "meetings.participant",
+          "term": "participant",
+          "ipa": "/pɑːrˈtɪsəpənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "uczestnik",
+          "definition": "A person who takes part in something.",
+          "register": "neutralny",
+          "contextPl": "Osoby obecne na spotkaniu",
+          "natural": "",
+          "forms": "participants",
+          "collocations": "",
+          "synonyms": "attendee",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Each participant got a copy of the agenda.",
+              "pl": "Każdy uczestnik dostał kopię agendy.",
+              "focusEn": "participant",
+              "focusPl": "uczestnik"
+            },
+            {
+              "en": "There were too many participants for a real discussion.",
+              "pl": "Było za dużo uczestników, żeby prowadzić prawdziwą dyskusję.",
+              "focusEn": "participants",
+              "focusPl": "uczestników"
+            }
+          ],
+          "acceptedAnswers": [
+            "participant",
+            "attendee"
+          ],
+          "acceptedTranslations": [
+            "uczestnik",
+            "uczestniczka",
+            "obecny"
+          ]
+        },
+        {
+          "id": "meetings.conference-call",
+          "term": "conference call",
+          "ipa": "/ˈkɑːnfərəns ˌkɔːl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "telekonferencja",
+          "definition": "A phone call in which several people in different places talk together.",
+          "register": "neutralny",
+          "contextPl": "Spotkania telefoniczne z wieloma osobami",
+          "natural": "",
+          "forms": "conference calls",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The client's lawyer was on the conference call from New York.",
+              "pl": "Prawnik klienta uczestniczył w telekonferencji z Nowego Jorku.",
+              "focusEn": "conference call",
+              "focusPl": "telekonferencji"
+            },
+            {
+              "en": "The conference call kept dropping, so we switched to video.",
+              "pl": "Telekonferencja ciągle się rozłączała, więc przeszliśmy na wideo.",
+              "focusEn": "conference call",
+              "focusPl": "Telekonferencja"
+            }
+          ],
+          "acceptedAnswers": [
+            "conference call"
+          ],
+          "acceptedTranslations": [
+            "telekonferencja",
+            "konferencja telefoniczna",
+            "rozmowa grupowa"
+          ]
+        },
+        {
+          "id": "meetings.call-in",
+          "term": "call in",
+          "ipa": "/ˌkɔːl ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dołączyć telefonicznie",
+          "definition": "To join a meeting by phone.",
+          "register": "neutralny",
+          "contextPl": "Udział w spotkaniu z innego miejsca",
+          "natural": "",
+          "forms": "call – called – called",
+          "collocations": "",
+          "synonyms": "dial in",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our designer will call in from home.",
+              "pl": "Nasza projektantka dołączy telefonicznie z domu.",
+              "focusEn": "call in",
+              "focusPl": "dołączy telefonicznie"
+            },
+            {
+              "en": "Three people called in, so I put the phone in the middle of the table.",
+              "pl": "Trzy osoby dołączyły przez telefon, więc postawiłem telefon na środku stołu.",
+              "focusEn": "called in",
+              "focusPl": "dołączyły przez telefon"
+            }
+          ],
+          "acceptedAnswers": [
+            "call in",
+            "dial in"
+          ],
+          "acceptedTranslations": [
+            "dołączyć telefonicznie",
+            "dołączyć przez telefon",
+            "wdzwonić się"
+          ]
+        },
+        {
+          "id": "meetings.one-on-one",
+          "term": "one-on-one",
+          "ipa": "/ˌwʌn ɑːn ˈwʌn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "spotkanie w cztery oczy",
+          "definition": "A private meeting between two people, often a manager and an employee.",
+          "register": "neutralny",
+          "contextPl": "Indywidualne spotkania z przełożonym",
+          "natural": "",
+          "forms": "one-on-ones",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After the client meeting, I have a one-on-one with my manager.",
+              "pl": "Po spotkaniu z klientem mam spotkanie w cztery oczy z kierowniczką.",
+              "focusEn": "one-on-one",
+              "focusPl": "spotkanie w cztery oczy"
+            },
+            {
+              "en": "We use our weekly one-on-one to talk about my goals.",
+              "pl": "Na cotygodniowym spotkaniu indywidualnym rozmawiamy o moich celach.",
+              "focusEn": "one-on-one",
+              "focusPl": "spotkaniu indywidualnym"
+            }
+          ],
+          "acceptedAnswers": [
+            "one-on-one",
+            "one on one",
+            "1:1"
+          ],
+          "acceptedTranslations": [
+            "spotkanie w cztery oczy",
+            "spotkanie indywidualne",
+            "rozmowa w cztery oczy",
+            "spotkanie jeden na jeden"
+          ]
+        },
+        {
+          "id": "meetings.kickoff-meeting",
+          "term": "kickoff meeting",
+          "ipa": "/ˈkɪkˌɔːf ˌmiːtɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "spotkanie otwierające projekt",
+          "definition": "The first meeting of a new project, where goals and roles are explained.",
+          "register": "neutralny",
+          "contextPl": "Rozpoczęcie współpracy lub projektu",
+          "natural": "",
+          "forms": "kickoff meetings",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kickoff meeting with the client is next Monday at ten.",
+              "pl": "Spotkanie otwierające projekt z klientem jest w przyszły poniedziałek o dziesiątej.",
+              "focusEn": "kickoff meeting",
+              "focusPl": "Spotkanie otwierające projekt"
+            },
+            {
+              "en": "At the kickoff meeting, we introduced everyone and explained the timeline.",
+              "pl": "Na spotkaniu inaugurującym przedstawiliśmy wszystkich i omówiliśmy harmonogram.",
+              "focusEn": "kickoff meeting",
+              "focusPl": "spotkaniu inaugurującym"
+            }
+          ],
+          "acceptedAnswers": [
+            "kickoff meeting",
+            "kickoff",
+            "kick-off meeting"
+          ],
+          "acceptedTranslations": [
+            "spotkanie otwierające projekt",
+            "kick-off",
+            "spotkanie inaugurujące",
+            "spotkanie startowe"
+          ]
+        },
+        {
+          "id": "meetings.all-hands-meeting",
+          "term": "all-hands meeting",
+          "ipa": "/ˌɔːl ˈhændz ˌmiːtɪŋ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zebranie wszystkich pracowników",
+          "definition": "A meeting for every employee in a company or department.",
+          "register": "neutralny",
+          "contextPl": "Duże spotkania całej firmy",
+          "natural": "",
+          "forms": "all-hands meetings",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The CEO announced the news at the all-hands meeting.",
+              "pl": "Prezes ogłosił tę wiadomość na zebraniu wszystkich pracowników.",
+              "focusEn": "all-hands meeting",
+              "focusPl": "zebraniu wszystkich pracowników"
+            },
+            {
+              "en": "The all-hands meeting was too big for the conference room, so we used the lobby.",
+              "pl": "Zebranie całej firmy nie zmieściło się w sali konferencyjnej, więc zrobiliśmy je w holu.",
+              "focusEn": "all-hands meeting",
+              "focusPl": "Zebranie całej firmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "all-hands meeting",
+            "all-hands",
+            "town hall"
+          ],
+          "acceptedTranslations": [
+            "zebranie wszystkich pracowników",
+            "zebranie całej firmy",
+            "spotkanie ogólnofirmowe"
+          ]
+        },
+        {
+          "id": "meetings.stand-up",
+          "term": "stand-up",
+          "ipa": "/ˈstændˌʌp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "krótkie poranne spotkanie zespołu",
+          "definition": "A very short daily team meeting where everyone shares what they are working on.",
+          "register": "neutralny",
+          "contextPl": "Codzienne krótkie spotkania, popularne w zespołach IT",
+          "natural": "",
+          "forms": "stand-ups",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our daily stand-up starts at nine fifteen and lasts ten minutes.",
+              "pl": "Nasz codzienny stand-up zaczyna się kwadrans po dziewiątej i trwa dziesięć minut.",
+              "focusEn": "stand-up",
+              "focusPl": "stand-up"
+            },
+            {
+              "en": "After the client left, we had a quick stand-up to plan the day.",
+              "pl": "Kiedy klient wyszedł, zrobiliśmy szybki stand-up, żeby zaplanować dzień.",
+              "focusEn": "stand-up",
+              "focusPl": "stand-up"
+            }
+          ],
+          "acceptedAnswers": [
+            "stand-up",
+            "standup",
+            "daily stand-up",
+            "daily"
+          ],
+          "acceptedTranslations": [
+            "krótkie poranne spotkanie zespołu",
+            "stand-up",
+            "daily",
+            "codzienne spotkanie zespołu"
+          ]
+        },
+        {
+          "id": "meetings.board-meeting",
+          "term": "board meeting",
+          "ipa": "/ˈbɔːrd ˌmiːtɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "posiedzenie zarządu",
+          "definition": "A formal meeting of the people who control a company.",
+          "register": "neutralny",
+          "contextPl": "Najważniejsze spotkania władz firmy",
+          "natural": "",
+          "forms": "board meetings",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The plan has to be approved at the next board meeting.",
+              "pl": "Plan musi zostać zatwierdzony na następnym posiedzeniu zarządu.",
+              "focusEn": "board meeting",
+              "focusPl": "posiedzeniu zarządu"
+            },
+            {
+              "en": "I prepared the slides for the board meeting on Thursday.",
+              "pl": "Przygotowałem slajdy na czwartkowe posiedzenie zarządu.",
+              "focusEn": "board meeting",
+              "focusPl": "posiedzenie zarządu"
+            }
+          ],
+          "acceptedAnswers": [
+            "board meeting"
+          ],
+          "acceptedTranslations": [
+            "posiedzenie zarządu",
+            "zebranie zarządu",
+            "posiedzenie rady nadzorczej"
+          ]
+        },
+        {
+          "id": "meetings.workshop",
+          "term": "workshop",
+          "ipa": "/ˈwɜːrkˌʃɑːp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "warsztaty",
+          "definition": "A meeting where a group learns or works on something together in a practical way.",
+          "register": "neutralny",
+          "contextPl": "Praktyczne spotkania szkoleniowe",
+          "natural": "",
+          "forms": "workshops",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're running a two-hour workshop for the client's team.",
+              "pl": "Prowadzimy dwugodzinne warsztaty dla zespołu klienta.",
+              "focusEn": "workshop",
+              "focusPl": "warsztaty"
+            },
+            {
+              "en": "At the end of the workshop, every group presented its ideas.",
+              "pl": "Na koniec warsztatów każda grupa przedstawiła swoje pomysły.",
+              "focusEn": "workshop",
+              "focusPl": "warsztatów"
+            }
+          ],
+          "acceptedAnswers": [
+            "workshop"
+          ],
+          "acceptedTranslations": [
+            "warsztaty",
+            "warsztat",
+            "szkolenie praktyczne"
+          ]
+        },
+        {
+          "id": "meetings.in-person",
+          "term": "in person",
+          "ipa": "/ɪn ˈpɜːrsən/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "osobiście",
+          "definition": "Physically present, not by phone or video.",
+          "register": "neutralny",
+          "contextPl": "Spotkania na żywo w odróżnieniu od zdalnych",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "remotely",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's better to meet the client in person the first time.",
+              "pl": "Za pierwszym razem lepiej spotkać się z klientem osobiście.",
+              "focusEn": "in person",
+              "focusPl": "osobiście"
+            },
+            {
+              "en": "Half the team came in person, and the rest joined by phone.",
+              "pl": "Połowa zespołu przyszła osobiście, a reszta dołączyła przez telefon.",
+              "focusEn": "in person",
+              "focusPl": "osobiście"
+            }
+          ],
+          "acceptedAnswers": [
+            "in person",
+            "face to face",
+            "face-to-face"
+          ],
+          "acceptedTranslations": [
+            "osobiście",
+            "na żywo",
+            "twarzą w twarz",
+            "stacjonarnie"
+          ]
+        },
+        {
+          "id": "meetings.send-regrets",
+          "term": "send regrets",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "rare",
+          "translation": "przeprosić za nieobecność",
+          "definition": "A formal way of saying you cannot attend a meeting or event.",
+          "register": "formalny",
+          "contextPl": "Formalne usprawiedliwienie nieobecności",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The client's manager sent her regrets; she's traveling this week.",
+              "pl": "Kierowniczka po stronie klienta przeprosiła za nieobecność, bo jest w tym tygodniu w podróży.",
+              "focusEn": "sent her regrets",
+              "focusPl": "przeprosiła za nieobecność"
+            },
+            {
+              "en": "Two board members sent regrets, but we still had enough people to vote.",
+              "pl": "Dwóch członków zarządu usprawiedliwiło nieobecność, ale i tak mieliśmy wystarczająco dużo osób do głosowania.",
+              "focusEn": "sent regrets",
+              "focusPl": "usprawiedliwiło nieobecność"
+            }
+          ],
+          "acceptedAnswers": [
+            "send regrets",
+            "send my regrets",
+            "send your regrets"
+          ],
+          "acceptedTranslations": [
+            "przeprosić za nieobecność",
+            "usprawiedliwić nieobecność",
+            "przeprosić, że się nie przyjdzie"
+          ]
+        }
+      ]
+    }
+  ]
+}

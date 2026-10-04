@@ -1,0 +1,2781 @@
+{
+  "schemaVersion": 1,
+  "id": "banking",
+  "namePl": "Bank",
+  "nameEn": "Banking",
+  "group": "money",
+  "symbol": "building.columns",
+  "summaryPl": "Konto, karty i bankomat, przelewy i płatności, kredyty oraz problemy z transakcjami.",
+  "aliases": [
+    "bank",
+    "konto bankowe",
+    "przelew",
+    "karta",
+    "bankomat",
+    "kredyt",
+    "pożyczka",
+    "banking",
+    "bank account"
+  ],
+  "categories": [
+    {
+      "id": "banking.account",
+      "namePl": "Konto bankowe",
+      "scenePl": "Oddział banku w nowym mieście: zakładasz konto przy biurku doradcy",
+      "entries": [
+        {
+          "id": "banking.bank",
+          "term": "bank",
+          "ipa": "/bæŋk/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "bank",
+          "definition": "A business that keeps people's money safe and lends money.",
+          "register": "neutralny",
+          "contextPl": "Instytucja finansowa",
+          "natural": "",
+          "forms": "banks",
+          "collocations": "go to the bank; bank account; local bank",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I went to the bank near my new apartment to open an account.",
+              "pl": "Poszedłem do banku koło mojego nowego mieszkania, żeby założyć konto.",
+              "focusEn": "bank",
+              "focusPl": "banku"
+            },
+            {
+              "en": "The bank closes at five, so we only have twenty minutes.",
+              "pl": "Bank jest czynny do piątej, więc mamy tylko dwadzieścia minut.",
+              "focusEn": "bank",
+              "focusPl": "Bank"
+            }
+          ],
+          "acceptedAnswers": [
+            "bank"
+          ],
+          "acceptedTranslations": [
+            "bank"
+          ]
+        },
+        {
+          "id": "banking.bank-account",
+          "term": "bank account",
+          "ipa": "/ˈbæŋk əˌkaʊnt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "konto bankowe",
+          "definition": "An arrangement with a bank to keep your money there and take it out when needed.",
+          "register": "neutralny",
+          "contextPl": "Przechowywanie pieniędzy",
+          "natural": "account",
+          "forms": "bank accounts",
+          "collocations": "open a bank account; have a bank account; bank account number",
+          "synonyms": "account",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I need a bank account here so my new employer can pay me.",
+              "pl": "Potrzebuję tu konta bankowego, żeby nowy pracodawca mógł mi płacić.",
+              "focusEn": "bank account",
+              "focusPl": "konta bankowego"
+            },
+            {
+              "en": "Opening the bank account took less than half an hour.",
+              "pl": "Założenie konta bankowego zajęło mniej niż pół godziny.",
+              "focusEn": "bank account",
+              "focusPl": "konta bankowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "bank account",
+            "account"
+          ],
+          "acceptedTranslations": [
+            "konto bankowe",
+            "konto",
+            "rachunek bankowy",
+            "rachunek"
+          ]
+        },
+        {
+          "id": "banking.open-an-account",
+          "term": "open an account",
+          "ipa": "/ˌoʊpən ən əˈkaʊnt/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "założyć konto",
+          "definition": "To start a new account at a bank.",
+          "register": "neutralny",
+          "contextPl": "Formalności w banku",
+          "natural": "",
+          "forms": "opened; opening",
+          "collocations": "open an account online; open a checking account",
+          "synonyms": "set up an account",
+          "antonyms": "close an account",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to open an account, please. I just moved here.",
+              "pl": "Chciałbym założyć konto. Właśnie się tu przeprowadziłem.",
+              "focusEn": "open an account",
+              "focusPl": "założyć konto"
+            },
+            {
+              "en": "You'll need two forms of ID to open an account with us.",
+              "pl": "Żeby założyć konto w naszym banku, potrzebuje pan dwóch dokumentów tożsamości.",
+              "focusEn": "open an account",
+              "focusPl": "założyć konto"
+            }
+          ],
+          "acceptedAnswers": [
+            "open an account",
+            "open a bank account",
+            "set up an account"
+          ],
+          "acceptedTranslations": [
+            "założyć konto",
+            "zakładać konto",
+            "otworzyć konto",
+            "otwierać konto"
+          ]
+        },
+        {
+          "id": "banking.balance",
+          "term": "balance",
+          "ipa": "/ˈbæləns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "saldo",
+          "definition": "The amount of money in a bank account at a particular time.",
+          "register": "neutralny",
+          "contextPl": "Stan konta",
+          "natural": "",
+          "forms": "balances",
+          "collocations": "check your balance; account balance; a low balance",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you tell me my balance after the first deposit?",
+              "pl": "Może mi pani podać saldo po pierwszej wpłacie?",
+              "focusEn": "balance",
+              "focusPl": "saldo"
+            },
+            {
+              "en": "You can check your balance in the app at any time.",
+              "pl": "Saldo może pan sprawdzić w aplikacji w każdej chwili.",
+              "focusEn": "balance",
+              "focusPl": "Saldo"
+            }
+          ],
+          "acceptedAnswers": [
+            "balance"
+          ],
+          "acceptedTranslations": [
+            "saldo",
+            "stan konta",
+            "środki na koncie"
+          ]
+        },
+        {
+          "id": "banking.fee",
+          "term": "fee",
+          "ipa": "/fiː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "opłata",
+          "definition": "Money you pay for a service.",
+          "register": "neutralny",
+          "contextPl": "Koszty prowadzenia konta",
+          "natural": "charge",
+          "forms": "fees",
+          "collocations": "monthly fee; ATM fee; no fees",
+          "synonyms": "charge",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is there a monthly fee for this account?",
+              "pl": "Czy za to konto jest miesięczna opłata?",
+              "focusEn": "fee",
+              "focusPl": "opłata"
+            },
+            {
+              "en": "They waived the fee because my salary goes into the account.",
+              "pl": "Zrezygnowali z opłaty, bo na konto wpływa moja pensja.",
+              "focusEn": "fee",
+              "focusPl": "opłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "fee",
+            "charge"
+          ],
+          "acceptedTranslations": [
+            "opłata",
+            "prowizja"
+          ]
+        },
+        {
+          "id": "banking.checking-account",
+          "term": "checking account",
+          "ipa": "/ˈtʃɛkɪŋ əˌkaʊnt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rachunek bieżący",
+          "definition": "A bank account you use for everyday payments, cards, and bills.",
+          "register": "neutralny",
+          "contextPl": "Konto do codziennych płatności",
+          "natural": "checking",
+          "forms": "checking accounts",
+          "collocations": "open a checking account; money in my checking account",
+          "synonyms": "",
+          "antonyms": "savings account",
+          "notePl": "W USA potocznie po prostu „checking”; brytyjska nazwa to „current account”.",
+          "examples": [
+            {
+              "en": "My salary will go into the checking account, and I'll pay my bills from it.",
+              "pl": "Pensja będzie wpływać na rachunek bieżący, a z niego będę płacić rachunki.",
+              "focusEn": "checking account",
+              "focusPl": "rachunek bieżący"
+            },
+            {
+              "en": "The checking account comes with a free debit card.",
+              "pl": "Do rachunku bieżącego jest darmowa karta debetowa.",
+              "focusEn": "checking account",
+              "focusPl": "rachunku bieżącego"
+            }
+          ],
+          "acceptedAnswers": [
+            "checking account",
+            "checking"
+          ],
+          "acceptedTranslations": [
+            "rachunek bieżący",
+            "konto osobiste",
+            "konto rozliczeniowe",
+            "konto bieżące"
+          ]
+        },
+        {
+          "id": "banking.savings-account",
+          "term": "savings account",
+          "ipa": "/ˈseɪvɪŋz əˌkaʊnt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "konto oszczędnościowe",
+          "definition": "A bank account where you keep money you are saving, usually earning interest.",
+          "register": "neutralny",
+          "contextPl": "Odkładanie pieniędzy",
+          "natural": "savings",
+          "forms": "savings accounts",
+          "collocations": "open a savings account; move money to savings",
+          "synonyms": "",
+          "antonyms": "checking account",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The advisor suggested a savings account for my emergency money.",
+              "pl": "Doradczyni zaproponowała konto oszczędnościowe na pieniądze na czarną godzinę.",
+              "focusEn": "savings account",
+              "focusPl": "konto oszczędnościowe"
+            },
+            {
+              "en": "The savings account pays a little interest every month.",
+              "pl": "Na koncie oszczędnościowym co miesiąc nalicza się trochę odsetek.",
+              "focusEn": "savings account",
+              "focusPl": "koncie oszczędnościowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "savings account",
+            "savings"
+          ],
+          "acceptedTranslations": [
+            "konto oszczędnościowe",
+            "rachunek oszczędnościowy"
+          ]
+        },
+        {
+          "id": "banking.deposit",
+          "term": "deposit",
+          "ipa": "/dɪˈpɑːzɪt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wpłacić",
+          "definition": "To put money into a bank account.",
+          "register": "neutralny",
+          "contextPl": "Wpłaty na konto",
+          "natural": "put in",
+          "forms": "deposited; depositing",
+          "collocations": "deposit cash; deposit a check; deposit money",
+          "synonyms": "put in",
+          "antonyms": "withdraw",
+          "notePl": "Też rzeczownik: „a deposit” = wpłata.",
+          "examples": [
+            {
+              "en": "I'd like to deposit five hundred dollars in cash today.",
+              "pl": "Chciałbym dziś wpłacić pięćset dolarów w gotówce.",
+              "focusEn": "deposit",
+              "focusPl": "wpłacić"
+            },
+            {
+              "en": "She deposited my first check while I signed the forms.",
+              "pl": "Wpłaciła mój pierwszy czek, kiedy podpisywałem formularze.",
+              "focusEn": "deposited",
+              "focusPl": "Wpłaciła"
+            }
+          ],
+          "acceptedAnswers": [
+            "deposit",
+            "put in"
+          ],
+          "acceptedTranslations": [
+            "wpłacić",
+            "wpłacać",
+            "zdeponować"
+          ]
+        },
+        {
+          "id": "banking.withdraw",
+          "term": "withdraw",
+          "ipa": "/wɪðˈdrɔː/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wypłacić",
+          "definition": "To take money out of a bank account.",
+          "register": "formalny",
+          "contextPl": "Wypłaty z konta",
+          "natural": "take out",
+          "forms": "withdraw – withdrew – withdrawn",
+          "collocations": "withdraw cash; withdraw money from your account",
+          "synonyms": "take out",
+          "antonyms": "deposit",
+          "notePl": "W mowie częściej „take out money”.",
+          "examples": [
+            {
+              "en": "Is there a limit on how much I can withdraw each day?",
+              "pl": "Czy jest limit tego, ile mogę dziennie wypłacić?",
+              "focusEn": "withdraw",
+              "focusPl": "wypłacić"
+            },
+            {
+              "en": "I withdrew two hundred dollars at the counter to pay the movers.",
+              "pl": "Wypłaciłem w okienku dwieście dolarów, żeby zapłacić za przeprowadzkę.",
+              "focusEn": "withdrew",
+              "focusPl": "Wypłaciłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "withdraw",
+            "take out"
+          ],
+          "acceptedTranslations": [
+            "wypłacić",
+            "wypłacać",
+            "podjąć"
+          ]
+        },
+        {
+          "id": "banking.branch",
+          "term": "branch",
+          "ipa": "/bræntʃ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oddział",
+          "definition": "One of the local offices of a bank.",
+          "register": "neutralny",
+          "contextPl": "Placówki banku",
+          "natural": "",
+          "forms": "branches",
+          "collocations": "local branch; the nearest branch; branch manager",
+          "synonyms": "office",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This branch is open on Saturday mornings too.",
+              "pl": "Ten oddział jest czynny także w soboty rano.",
+              "focusEn": "branch",
+              "focusPl": "oddział"
+            },
+            {
+              "en": "The advisor said I can visit any branch in the state.",
+              "pl": "Doradca powiedział, że mogę przyjść do dowolnego oddziału w stanie.",
+              "focusEn": "branch",
+              "focusPl": "oddziału"
+            }
+          ],
+          "acceptedAnswers": [
+            "branch",
+            "office"
+          ],
+          "acceptedTranslations": [
+            "oddział",
+            "filia",
+            "placówka"
+          ]
+        },
+        {
+          "id": "banking.interest",
+          "term": "interest",
+          "ipa": "/ˈɪntrəst/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odsetki",
+          "definition": "Extra money a bank pays you for saving, or that you pay for borrowing.",
+          "register": "neutralny",
+          "contextPl": "Oprocentowanie oszczędności i kredytów",
+          "natural": "",
+          "forms": "",
+          "collocations": "earn interest; pay interest; interest rate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W tym znaczeniu rzeczownik niepoliczalny.",
+          "examples": [
+            {
+              "en": "How much interest will I earn on my savings?",
+              "pl": "Ile odsetek dostanę od moich oszczędności?",
+              "focusEn": "interest",
+              "focusPl": "odsetek"
+            },
+            {
+              "en": "The advisor said the interest is added at the end of each month.",
+              "pl": "Doradca powiedział, że odsetki są dopisywane na koniec każdego miesiąca.",
+              "focusEn": "interest",
+              "focusPl": "odsetki"
+            }
+          ],
+          "acceptedAnswers": [
+            "interest"
+          ],
+          "acceptedTranslations": [
+            "odsetki",
+            "oprocentowanie"
+          ]
+        },
+        {
+          "id": "banking.statement",
+          "term": "statement",
+          "ipa": "/ˈsteɪtmənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wyciąg",
+          "definition": "A document from a bank showing all the money that went into and out of your account.",
+          "register": "neutralny",
+          "contextPl": "Historia operacji",
+          "natural": "",
+          "forms": "statements",
+          "collocations": "monthly statement; bank statement; paperless statements",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you want paper statements or only online ones?",
+              "pl": "Chce pan papierowe wyciągi czy tylko elektroniczne?",
+              "focusEn": "statements",
+              "focusPl": "wyciągi"
+            },
+            {
+              "en": "My new landlord asked for three months of bank statements.",
+              "pl": "Nowy właściciel mieszkania poprosił o wyciągi z trzech miesięcy.",
+              "focusEn": "statements",
+              "focusPl": "wyciągi"
+            }
+          ],
+          "acceptedAnswers": [
+            "statement",
+            "bank statement"
+          ],
+          "acceptedTranslations": [
+            "wyciąg",
+            "wyciąg bankowy",
+            "zestawienie operacji"
+          ]
+        },
+        {
+          "id": "banking.teller",
+          "term": "teller",
+          "ipa": "/ˈtɛlər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kasjer bankowy",
+          "definition": "A bank employee who helps customers at the counter with cash and deposits.",
+          "register": "neutralny",
+          "contextPl": "Obsługa przy okienku",
+          "natural": "",
+          "forms": "tellers",
+          "collocations": "bank teller; the next teller",
+          "synonyms": "cashier",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The teller counted my cash twice before depositing it.",
+              "pl": "Kasjerka dwa razy przeliczyła moją gotówkę, zanim ją wpłaciła.",
+              "focusEn": "teller",
+              "focusPl": "Kasjerka"
+            },
+            {
+              "en": "I waited in line for the next available teller.",
+              "pl": "Czekałem w kolejce na następnego wolnego kasjera.",
+              "focusEn": "teller",
+              "focusPl": "kasjera"
+            }
+          ],
+          "acceptedAnswers": [
+            "teller",
+            "bank teller"
+          ],
+          "acceptedTranslations": [
+            "kasjer bankowy",
+            "kasjer",
+            "kasjerka"
+          ]
+        },
+        {
+          "id": "banking.direct-deposit",
+          "term": "direct deposit",
+          "ipa": "/dəˌrɛkt dɪˈpɑːzɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przelew wynagrodzenia",
+          "definition": "A system where your employer pays your salary straight into your bank account.",
+          "register": "neutralny",
+          "contextPl": "Wpływ pensji na konto",
+          "natural": "",
+          "forms": "",
+          "collocations": "set up direct deposit; get paid by direct deposit",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Typowe w USA; pracodawca prosi o numer konta i numer routingowy banku.",
+          "examples": [
+            {
+              "en": "I need this form to set up direct deposit at my new job.",
+              "pl": "Potrzebuję tego formularza, żeby ustawić przelew wynagrodzenia w nowej pracy.",
+              "focusEn": "direct deposit",
+              "focusPl": "przelew wynagrodzenia"
+            },
+            {
+              "en": "With direct deposit, your paycheck arrives on Friday morning.",
+              "pl": "Przy przelewie wynagrodzenia wypłata przychodzi w piątek rano.",
+              "focusEn": "direct deposit",
+              "focusPl": "przelewie wynagrodzenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "direct deposit"
+          ],
+          "acceptedTranslations": [
+            "przelew wynagrodzenia",
+            "wpływ wynagrodzenia na konto",
+            "wypłata na konto"
+          ]
+        },
+        {
+          "id": "banking.overdraft",
+          "term": "overdraft",
+          "ipa": "/ˈoʊvərdræft/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "debet",
+          "definition": "Taking out more money than you have in your account.",
+          "register": "specjalistyczny",
+          "contextPl": "Ujemne saldo",
+          "natural": "",
+          "forms": "overdrafts",
+          "collocations": "overdraft fee; overdraft protection; go into overdraft",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA zwykle wiąże się z wysoką opłatą („overdraft fee”).",
+          "examples": [
+            {
+              "en": "I signed up for overdraft protection so my card won't be declined.",
+              "pl": "Włączyłem ochronę przed debetem, żeby karta nie była odrzucana.",
+              "focusEn": "overdraft",
+              "focusPl": "debetem"
+            },
+            {
+              "en": "The teller warned me about the thirty-five dollar overdraft fee.",
+              "pl": "Kasjerka ostrzegła mnie przed opłatą za debet w wysokości trzydziestu pięciu dolarów.",
+              "focusEn": "overdraft",
+              "focusPl": "debet"
+            }
+          ],
+          "acceptedAnswers": [
+            "overdraft"
+          ],
+          "acceptedTranslations": [
+            "debet",
+            "przekroczenie salda",
+            "limit debetowy"
+          ]
+        },
+        {
+          "id": "banking.joint-account",
+          "term": "joint account",
+          "ipa": "/ˌdʒɔɪnt əˈkaʊnt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wspólne konto",
+          "definition": "A bank account shared by two or more people.",
+          "register": "neutralny",
+          "contextPl": "Wspólne finanse",
+          "natural": "",
+          "forms": "joint accounts",
+          "collocations": "open a joint account; a joint account with my wife",
+          "synonyms": "shared account",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My wife and I want a joint account for rent and groceries.",
+              "pl": "Chcemy z żoną wspólne konto na czynsz i zakupy.",
+              "focusEn": "joint account",
+              "focusPl": "wspólne konto"
+            },
+            {
+              "en": "To open a joint account, both of you need to sign here.",
+              "pl": "Żeby założyć wspólne konto, oboje musicie podpisać się tutaj.",
+              "focusEn": "joint account",
+              "focusPl": "wspólne konto"
+            }
+          ],
+          "acceptedAnswers": [
+            "joint account",
+            "shared account"
+          ],
+          "acceptedTranslations": [
+            "wspólne konto",
+            "konto wspólne",
+            "rachunek wspólny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banking.cards-atm",
+      "namePl": "Karty i bankomat",
+      "scenePl": "Bankomat na rogu ulicy wieczorem: wypłacasz gotówkę przed wyjściem na miasto",
+      "entries": [
+        {
+          "id": "banking.cash",
+          "term": "cash",
+          "ipa": "/kæʃ/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "gotówka",
+          "definition": "Money in the form of coins and bills, not a card.",
+          "register": "neutralny",
+          "contextPl": "Płacenie gotówką",
+          "natural": "",
+          "forms": "",
+          "collocations": "pay in cash; take out cash; I don't have any cash",
+          "synonyms": "money",
+          "antonyms": "",
+          "notePl": "Banknot w USA to „bill”, nie „note”.",
+          "examples": [
+            {
+              "en": "The bar only takes cash, so I stopped at the ATM.",
+              "pl": "Bar przyjmuje tylko gotówkę, więc zatrzymałem się przy bankomacie.",
+              "focusEn": "cash",
+              "focusPl": "gotówkę"
+            },
+            {
+              "en": "I took out some cash for the taxi home.",
+              "pl": "Wypłaciłem trochę gotówki na taksówkę do domu.",
+              "focusEn": "cash",
+              "focusPl": "gotówki"
+            }
+          ],
+          "acceptedAnswers": [
+            "cash",
+            "money"
+          ],
+          "acceptedTranslations": [
+            "gotówka",
+            "pieniądze",
+            "kasa"
+          ]
+        },
+        {
+          "id": "banking.atm",
+          "term": "ATM",
+          "ipa": "/ˌeɪ tiː ˈɛm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "bankomat",
+          "definition": "A machine where you can take out cash with a bank card.",
+          "register": "neutralny",
+          "contextPl": "Wypłata gotówki",
+          "natural": "",
+          "forms": "ATMs",
+          "collocations": "use an ATM; the nearest ATM; ATM card",
+          "synonyms": "cash machine",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is there an ATM around here? I need cash for the bar.",
+              "pl": "Jest tu gdzieś bankomat? Potrzebuję gotówki na bar.",
+              "focusEn": "ATM",
+              "focusPl": "bankomat"
+            },
+            {
+              "en": "The ATM on the corner was out of money again.",
+              "pl": "W bankomacie na rogu znowu skończyły się pieniądze.",
+              "focusEn": "ATM",
+              "focusPl": "bankomacie"
+            }
+          ],
+          "acceptedAnswers": [
+            "ATM",
+            "cash machine"
+          ],
+          "acceptedTranslations": [
+            "bankomat"
+          ]
+        },
+        {
+          "id": "banking.debit-card",
+          "term": "debit card",
+          "ipa": "/ˈdɛbɪt ˌkɑːrd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "karta debetowa",
+          "definition": "A bank card that takes money directly from your account when you pay.",
+          "register": "neutralny",
+          "contextPl": "Codzienne płatności kartą",
+          "natural": "",
+          "forms": "debit cards",
+          "collocations": "pay with a debit card; debit card PIN",
+          "synonyms": "bank card; ATM card",
+          "antonyms": "",
+          "notePl": "W Polsce to zwykła karta do konta.",
+          "examples": [
+            {
+              "en": "I put my debit card in and typed my PIN.",
+              "pl": "Włożyłem kartę debetową i wpisałem PIN.",
+              "focusEn": "debit card",
+              "focusPl": "kartę debetową"
+            },
+            {
+              "en": "Using my debit card at this ATM costs three dollars.",
+              "pl": "Korzystanie z karty debetowej w tym bankomacie kosztuje trzy dolary.",
+              "focusEn": "debit card",
+              "focusPl": "karty debetowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "debit card",
+            "bank card",
+            "ATM card"
+          ],
+          "acceptedTranslations": [
+            "karta debetowa",
+            "karta płatnicza",
+            "karta do konta",
+            "karta bankowa"
+          ]
+        },
+        {
+          "id": "banking.credit-card",
+          "term": "credit card",
+          "ipa": "/ˈkrɛdɪt ˌkɑːrd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "karta kredytowa",
+          "definition": "A card that lets you buy things now and pay the bank back later.",
+          "register": "neutralny",
+          "contextPl": "Płatności na kredyt",
+          "natural": "",
+          "forms": "credit cards",
+          "collocations": "pay by credit card; credit card bill; max out a credit card",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't take out cash with your credit card, because the fees are huge.",
+              "pl": "Nie wypłacaj gotówki kartą kredytową, bo opłaty są ogromne.",
+              "focusEn": "credit card",
+              "focusPl": "kartą kredytową"
+            },
+            {
+              "en": "I left my credit card at home, so I'll pay with cash tonight.",
+              "pl": "Zostawiłem kartę kredytową w domu, więc dziś zapłacę gotówką.",
+              "focusEn": "credit card",
+              "focusPl": "kartę kredytową"
+            }
+          ],
+          "acceptedAnswers": [
+            "credit card"
+          ],
+          "acceptedTranslations": [
+            "karta kredytowa",
+            "kredytówka"
+          ]
+        },
+        {
+          "id": "banking.take-out",
+          "term": "take out",
+          "ipa": "/ˌteɪk ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wypłacić",
+          "definition": "To get money from your bank account or an ATM.",
+          "register": "neutralny",
+          "contextPl": "Wypłata gotówki z bankomatu",
+          "natural": "",
+          "forms": "take – took – taken",
+          "collocations": "take out cash; take out money; take out forty dollars",
+          "synonyms": "withdraw",
+          "antonyms": "put in",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I need to take out forty dollars before we go to the bar.",
+              "pl": "Muszę wypłacić czterdzieści dolarów, zanim pójdziemy do baru.",
+              "focusEn": "take out",
+              "focusPl": "wypłacić"
+            },
+            {
+              "en": "I took out more cash than I needed, just in case.",
+              "pl": "Wypłaciłem więcej gotówki, niż potrzebowałem, na wszelki wypadek.",
+              "focusEn": "took out",
+              "focusPl": "Wypłaciłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "take out",
+            "withdraw"
+          ],
+          "acceptedTranslations": [
+            "wypłacić",
+            "wypłacać",
+            "podjąć",
+            "wyjąć"
+          ]
+        },
+        {
+          "id": "banking.pin",
+          "term": "PIN",
+          "ipa": "/pɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "PIN",
+          "definition": "A secret number you type to use your bank card.",
+          "register": "neutralny",
+          "contextPl": "Zabezpieczenie karty",
+          "natural": "PIN number",
+          "forms": "PINs",
+          "collocations": "enter your PIN; forget your PIN; change your PIN",
+          "synonyms": "PIN code",
+          "antonyms": "",
+          "notePl": "Często słychać tautologiczne „PIN number”.",
+          "examples": [
+            {
+              "en": "Cover the keypad with your hand when you type your PIN.",
+              "pl": "Zasłoń klawiaturę ręką, kiedy wpisujesz PIN.",
+              "focusEn": "PIN",
+              "focusPl": "PIN"
+            },
+            {
+              "en": "I entered the wrong PIN twice and almost lost my card.",
+              "pl": "Dwa razy wpisałem zły PIN i prawie straciłem kartę.",
+              "focusEn": "PIN",
+              "focusPl": "PIN"
+            }
+          ],
+          "acceptedAnswers": [
+            "PIN",
+            "PIN number",
+            "PIN code"
+          ],
+          "acceptedTranslations": [
+            "PIN",
+            "kod PIN",
+            "numer PIN"
+          ]
+        },
+        {
+          "id": "banking.receipt",
+          "term": "receipt",
+          "ipa": "/rɪˈsiːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "potwierdzenie",
+          "definition": "A piece of paper that shows a payment or transaction.",
+          "register": "neutralny",
+          "contextPl": "Potwierdzenie transakcji",
+          "natural": "",
+          "forms": "receipts",
+          "collocations": "print a receipt; would you like a receipt; keep the receipt",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W „receipt” litera „p” jest niema.",
+          "examples": [
+            {
+              "en": "The ATM asked if I wanted a receipt, and I pressed no.",
+              "pl": "Bankomat zapytał, czy chcę potwierdzenie, a ja wybrałem „nie”.",
+              "focusEn": "receipt",
+              "focusPl": "potwierdzenie"
+            },
+            {
+              "en": "I checked the receipt to see my balance after taking out the cash.",
+              "pl": "Sprawdziłem na potwierdzeniu saldo po wypłacie gotówki.",
+              "focusEn": "receipt",
+              "focusPl": "potwierdzeniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "receipt"
+          ],
+          "acceptedTranslations": [
+            "potwierdzenie",
+            "paragon",
+            "wydruk",
+            "potwierdzenie transakcji"
+          ]
+        },
+        {
+          "id": "banking.insert",
+          "term": "insert",
+          "ipa": "/ɪnˈsɝːt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "włożyć",
+          "definition": "To put something into an opening, such as a card into a machine.",
+          "register": "formalny",
+          "contextPl": "Instrukcje na ekranie bankomatu",
+          "natural": "put in",
+          "forms": "inserted; inserting",
+          "collocations": "insert your card; insert the card chip first",
+          "synonyms": "put in",
+          "antonyms": "remove",
+          "notePl": "Typowy komunikat: „Please insert your card”.",
+          "examples": [
+            {
+              "en": "The screen said to insert my card with the chip facing up.",
+              "pl": "Na ekranie było napisane, żeby włożyć kartę chipem do góry.",
+              "focusEn": "insert",
+              "focusPl": "włożyć"
+            },
+            {
+              "en": "I inserted the card the wrong way, and the machine spit it out.",
+              "pl": "Włożyłem kartę odwrotnie i bankomat ją wypluł.",
+              "focusEn": "inserted",
+              "focusPl": "Włożyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "insert",
+            "put in"
+          ],
+          "acceptedTranslations": [
+            "włożyć",
+            "wkładać",
+            "wsunąć"
+          ]
+        },
+        {
+          "id": "banking.declined",
+          "term": "declined",
+          "ipa": "/dɪˈklaɪnd/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odrzucony",
+          "definition": "Not accepted by the bank, so the payment does not happen.",
+          "register": "neutralny",
+          "contextPl": "Nieudana płatność",
+          "natural": "",
+          "forms": "",
+          "collocations": "card declined; your card was declined; transaction declined",
+          "synonyms": "rejected",
+          "antonyms": "approved",
+          "notePl": "Typowo w zdaniu „Your card was declined”.",
+          "examples": [
+            {
+              "en": "My card was declined at the ATM even though I have money.",
+              "pl": "Moja karta została odrzucona w bankomacie, chociaż mam pieniądze.",
+              "focusEn": "declined",
+              "focusPl": "odrzucona"
+            },
+            {
+              "en": "The ATM showed a declined message, so I tried the one across the street.",
+              "pl": "Bankomat wyświetlił komunikat o odrzuceniu transakcji, więc spróbowałem w tym po drugiej stronie ulicy.",
+              "focusEn": "declined",
+              "focusPl": "odrzuceniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "declined",
+            "rejected",
+            "denied"
+          ],
+          "acceptedTranslations": [
+            "odrzucony",
+            "nieprzyjęty"
+          ]
+        },
+        {
+          "id": "banking.chip",
+          "term": "chip",
+          "ipa": "/tʃɪp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "chip",
+          "definition": "The small metal square on a bank card that stores information safely.",
+          "register": "neutralny",
+          "contextPl": "Budowa karty",
+          "natural": "",
+          "forms": "chips",
+          "collocations": "chip card; insert the chip; the chip is damaged",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The chip on my card is scratched, so the ATM can't read it.",
+              "pl": "Chip na mojej karcie jest porysowany, więc bankomat nie może go odczytać.",
+              "focusEn": "chip",
+              "focusPl": "Chip"
+            },
+            {
+              "en": "Put the card in chip first and wait for the beep.",
+              "pl": "Włóż kartę chipem do przodu i poczekaj na sygnał.",
+              "focusEn": "chip",
+              "focusPl": "chipem"
+            }
+          ],
+          "acceptedAnswers": [
+            "chip"
+          ],
+          "acceptedTranslations": [
+            "chip"
+          ]
+        },
+        {
+          "id": "banking.tap",
+          "term": "tap",
+          "ipa": "/tæp/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zbliżyć kartę",
+          "definition": "To pay or use a card by holding your card or phone close to a reader.",
+          "register": "neutralny",
+          "contextPl": "Płatności i wypłaty zbliżeniowe",
+          "natural": "",
+          "forms": "tapped; tapping",
+          "collocations": "tap to pay; tap your card; tap your phone",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Płatność zbliżeniowa to „contactless payment”.",
+          "examples": [
+            {
+              "en": "This new ATM lets you tap your card instead of inserting it.",
+              "pl": "Ten nowy bankomat pozwala zbliżyć kartę zamiast ją wkładać.",
+              "focusEn": "tap",
+              "focusPl": "zbliżyć"
+            },
+            {
+              "en": "I tapped my phone on the ATM and took out cash without my card.",
+              "pl": "Zbliżyłem telefon do bankomatu i wypłaciłem gotówkę bez karty.",
+              "focusEn": "tapped",
+              "focusPl": "Zbliżyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "tap",
+            "tap to pay"
+          ],
+          "acceptedTranslations": [
+            "zbliżyć kartę",
+            "zbliżać kartę",
+            "zbliżyć",
+            "zapłacić zbliżeniowo"
+          ]
+        },
+        {
+          "id": "banking.expiration-date",
+          "term": "expiration date",
+          "ipa": "/ˌɛkspəˈreɪʃən ˌdeɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "data ważności",
+          "definition": "The date after which a card can no longer be used.",
+          "register": "neutralny",
+          "contextPl": "Ważność karty",
+          "natural": "",
+          "forms": "expiration dates",
+          "collocations": "check the expiration date; past the expiration date",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Brytyjska wersja to „expiry date”.",
+          "examples": [
+            {
+              "en": "The ATM rejected my card, and then I checked the expiration date.",
+              "pl": "Bankomat odrzucił moją kartę i wtedy sprawdziłem datę ważności.",
+              "focusEn": "expiration date",
+              "focusPl": "datę ważności"
+            },
+            {
+              "en": "The expiration date on my card was last month, and I never got a new one.",
+              "pl": "Data ważności mojej karty minęła w zeszłym miesiącu, a nowej nigdy nie dostałem.",
+              "focusEn": "expiration date",
+              "focusPl": "Data ważności"
+            }
+          ],
+          "acceptedAnswers": [
+            "expiration date",
+            "expiry date",
+            "exp date"
+          ],
+          "acceptedTranslations": [
+            "data ważności",
+            "termin ważności"
+          ]
+        },
+        {
+          "id": "banking.atm-fee",
+          "term": "ATM fee",
+          "ipa": "/ˌeɪ tiː ˈɛm ˌfiː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "opłata za bankomat",
+          "definition": "Money a bank charges you for using an ATM, especially one from another bank.",
+          "register": "neutralny",
+          "contextPl": "Koszty wypłat",
+          "natural": "",
+          "forms": "ATM fees",
+          "collocations": "pay an ATM fee; avoid ATM fees",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This machine charges a four-dollar ATM fee, so let's find another one.",
+              "pl": "Ten bankomat pobiera czterodolarową opłatę za wypłatę, więc poszukajmy innego.",
+              "focusEn": "ATM fee",
+              "focusPl": "opłatę za wypłatę"
+            },
+            {
+              "en": "This month, ATM fees cost me more than my phone bill.",
+              "pl": "W tym miesiącu opłaty za bankomat kosztowały mnie więcej niż rachunek za telefon.",
+              "focusEn": "ATM fees",
+              "focusPl": "opłaty za bankomat"
+            }
+          ],
+          "acceptedAnswers": [
+            "ATM fee"
+          ],
+          "acceptedTranslations": [
+            "opłata za bankomat",
+            "opłata za wypłatę",
+            "prowizja za wypłatę"
+          ]
+        },
+        {
+          "id": "banking.freeze",
+          "term": "freeze",
+          "ipa": "/friːz/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zablokować",
+          "definition": "To stop a card from being used for a while, usually because it may be lost or stolen.",
+          "register": "neutralny",
+          "contextPl": "Zabezpieczenie zgubionej karty",
+          "natural": "lock",
+          "forms": "freeze – froze – frozen",
+          "collocations": "freeze your card; unfreeze your card",
+          "synonyms": "block; lock",
+          "antonyms": "unfreeze",
+          "notePl": "Zamrożenie jest tymczasowe; „cancel” oznacza unieważnienie karty.",
+          "examples": [
+            {
+              "en": "I couldn't find my card, so I froze it in the app right at the ATM.",
+              "pl": "Nie mogłem znaleźć karty, więc od razu przy bankomacie zablokowałem ją w aplikacji.",
+              "focusEn": "froze",
+              "focusPl": "zablokowałem"
+            },
+            {
+              "en": "If you freeze the card, the ATM won't let you take out cash.",
+              "pl": "Jeśli zablokujesz kartę, bankomat nie pozwoli ci wypłacić gotówki.",
+              "focusEn": "freeze",
+              "focusPl": "zablokujesz"
+            }
+          ],
+          "acceptedAnswers": [
+            "freeze",
+            "lock",
+            "block"
+          ],
+          "acceptedTranslations": [
+            "zablokować",
+            "zablokować tymczasowo",
+            "zamrozić"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banking.transfers-payments",
+      "namePl": "Przelewy i płatności",
+      "scenePl": "Niedzielny wieczór z aplikacją bankową: płacisz rachunki i oddajesz pieniądze znajomym",
+      "entries": [
+        {
+          "id": "banking.payment",
+          "term": "payment",
+          "ipa": "/ˈpeɪmənt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "płatność",
+          "definition": "An amount of money that you pay.",
+          "register": "neutralny",
+          "contextPl": "Opłacanie zobowiązań",
+          "natural": "",
+          "forms": "payments",
+          "collocations": "make a payment; monthly payment; late payment",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The payment for my phone bill is due on Tuesday.",
+              "pl": "Termin płatności za telefon mija we wtorek.",
+              "focusEn": "payment",
+              "focusPl": "płatności"
+            },
+            {
+              "en": "I scheduled the electricity payment for the first of the month.",
+              "pl": "Zaplanowałem płatność za prąd na pierwszego dnia miesiąca.",
+              "focusEn": "payment",
+              "focusPl": "płatność"
+            }
+          ],
+          "acceptedAnswers": [
+            "payment"
+          ],
+          "acceptedTranslations": [
+            "płatność",
+            "wpłata",
+            "opłata"
+          ]
+        },
+        {
+          "id": "banking.send-money",
+          "term": "send money",
+          "ipa": "/ˌsɛnd ˈmʌni/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wysłać pieniądze",
+          "definition": "To pay someone by moving money to them, often through an app.",
+          "register": "neutralny",
+          "contextPl": "Szybkie przelewy do znajomych",
+          "natural": "",
+          "forms": "sent; sending",
+          "collocations": "send money to a friend; send money abroad",
+          "synonyms": "transfer",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Tonight I'll send money to Kate for the concert tickets.",
+              "pl": "Wieczorem wyślę pieniądze Kate za bilety na koncert.",
+              "focusEn": "send money",
+              "focusPl": "wyślę pieniądze"
+            },
+            {
+              "en": "It's free to send money to friends who use the same bank.",
+              "pl": "Wysyłanie pieniędzy znajomym z tego samego banku jest darmowe.",
+              "focusEn": "send money",
+              "focusPl": "Wysyłanie pieniędzy"
+            }
+          ],
+          "acceptedAnswers": [
+            "send money",
+            "send someone money"
+          ],
+          "acceptedTranslations": [
+            "wysłać pieniądze",
+            "przesłać pieniądze",
+            "przelać pieniądze"
+          ]
+        },
+        {
+          "id": "banking.pay-a-bill",
+          "term": "pay a bill",
+          "ipa": "/ˌpeɪ ə ˈbɪl/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zapłacić rachunek",
+          "definition": "To give money for a service such as electricity, internet, or a phone.",
+          "register": "neutralny",
+          "contextPl": "Regularne opłaty",
+          "natural": "",
+          "forms": "paid; paying",
+          "collocations": "pay the bills; pay a bill online; pay a bill on time",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I paid the electric bill in the app in less than a minute.",
+              "pl": "Zapłaciłem rachunek za prąd w aplikacji w niecałą minutę.",
+              "focusEn": "paid the electric bill",
+              "focusPl": "Zapłaciłem rachunek"
+            },
+            {
+              "en": "Sunday night is when I sit down and pay the bills.",
+              "pl": "W niedzielę wieczorem siadam i płacę rachunki.",
+              "focusEn": "pay the bills",
+              "focusPl": "płacę rachunki"
+            }
+          ],
+          "acceptedAnswers": [
+            "pay a bill",
+            "pay the bills",
+            "pay bills"
+          ],
+          "acceptedTranslations": [
+            "zapłacić rachunek",
+            "płacić rachunki",
+            "opłacić rachunek"
+          ]
+        },
+        {
+          "id": "banking.account-number",
+          "term": "account number",
+          "ipa": "/əˈkaʊnt ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "numer konta",
+          "definition": "The number that identifies your bank account.",
+          "register": "neutralny",
+          "contextPl": "Dane do przelewu",
+          "natural": "",
+          "forms": "account numbers",
+          "collocations": "your account number; enter the account number",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Nie podawaj danych konta nieznajomym.",
+          "examples": [
+            {
+              "en": "I copied my landlord's account number wrong the first time.",
+              "pl": "Za pierwszym razem źle przepisałem numer konta właściciela mieszkania.",
+              "focusEn": "account number",
+              "focusPl": "numer konta"
+            },
+            {
+              "en": "Double-check the account number before you send anything.",
+              "pl": "Sprawdź dwa razy numer konta, zanim cokolwiek wyślesz.",
+              "focusEn": "account number",
+              "focusPl": "numer konta"
+            }
+          ],
+          "acceptedAnswers": [
+            "account number"
+          ],
+          "acceptedTranslations": [
+            "numer konta",
+            "numer rachunku"
+          ]
+        },
+        {
+          "id": "banking.check",
+          "term": "check",
+          "ipa": "/tʃɛk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "czek",
+          "definition": "A printed paper from your bank that you fill in and sign to pay someone.",
+          "register": "neutralny",
+          "contextPl": "Płatności czekiem w USA",
+          "natural": "",
+          "forms": "checks",
+          "collocations": "write a check; deposit a check; pay by check",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Brytyjska pisownia to „cheque”. W USA czeki wciąż są w użyciu.",
+          "examples": [
+            {
+              "en": "My landlord still wants the rent paid by check.",
+              "pl": "Mój właściciel mieszkania wciąż chce, żeby czynsz płacić czekiem.",
+              "focusEn": "check",
+              "focusPl": "czekiem"
+            },
+            {
+              "en": "I deposited my grandma's birthday check by taking a photo of it in the app.",
+              "pl": "Wpłaciłem czek urodzinowy od babci, robiąc mu zdjęcie w aplikacji.",
+              "focusEn": "check",
+              "focusPl": "czek"
+            }
+          ],
+          "acceptedAnswers": [
+            "check"
+          ],
+          "acceptedTranslations": [
+            "czek"
+          ]
+        },
+        {
+          "id": "banking.transfer",
+          "term": "transfer",
+          "ipa": "/trænsˈfɝː/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "przelać",
+          "definition": "To move money from one account to another.",
+          "register": "neutralny",
+          "contextPl": "Przelewy między kontami",
+          "natural": "send",
+          "forms": "transferred; transferring",
+          "collocations": "transfer money; transfer to savings; transfer funds",
+          "synonyms": "send; move",
+          "antonyms": "",
+          "notePl": "Rzeczownik „a transfer” akcentujemy na pierwszej sylabie: /ˈtrænsfɝː/.",
+          "examples": [
+            {
+              "en": "I transferred two hundred dollars to my savings account.",
+              "pl": "Przelałem dwieście dolarów na konto oszczędnościowe.",
+              "focusEn": "transferred",
+              "focusPl": "Przelałem"
+            },
+            {
+              "en": "Can you transfer the rent money to me before Monday?",
+              "pl": "Możesz mi przelać pieniądze za czynsz przed poniedziałkiem?",
+              "focusEn": "transfer",
+              "focusPl": "przelać"
+            }
+          ],
+          "acceptedAnswers": [
+            "transfer",
+            "send",
+            "move"
+          ],
+          "acceptedTranslations": [
+            "przelać",
+            "przelewać",
+            "zrobić przelew",
+            "przesłać"
+          ]
+        },
+        {
+          "id": "banking.online-banking",
+          "term": "online banking",
+          "ipa": "/ˌɑːnlaɪn ˈbæŋkɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bankowość internetowa",
+          "definition": "Managing your bank account through a website or app.",
+          "register": "neutralny",
+          "contextPl": "Obsługa konta przez internet",
+          "natural": "",
+          "forms": "",
+          "collocations": "use online banking; sign in to online banking",
+          "synonyms": "mobile banking",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With online banking, I haven't been to a branch in two years.",
+              "pl": "Dzięki bankowości internetowej od dwóch lat nie byłem w oddziale.",
+              "focusEn": "online banking",
+              "focusPl": "bankowości internetowej"
+            },
+            {
+              "en": "I logged in to online banking to check if my paycheck arrived.",
+              "pl": "Zalogowałem się do bankowości internetowej, żeby sprawdzić, czy przyszła wypłata.",
+              "focusEn": "online banking",
+              "focusPl": "bankowości internetowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "online banking",
+            "mobile banking"
+          ],
+          "acceptedTranslations": [
+            "bankowość internetowa",
+            "bankowość elektroniczna",
+            "bankowość online"
+          ]
+        },
+        {
+          "id": "banking.banking-app",
+          "term": "banking app",
+          "ipa": "/ˈbæŋkɪŋ ˌæp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "aplikacja bankowa",
+          "definition": "A phone app from your bank that lets you check your account and pay.",
+          "register": "neutralny",
+          "contextPl": "Bankowość w telefonie",
+          "natural": "",
+          "forms": "banking apps",
+          "collocations": "open the banking app; log in to the banking app",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The banking app sends me a notification for every payment.",
+              "pl": "Aplikacja bankowa wysyła mi powiadomienie o każdej płatności.",
+              "focusEn": "banking app",
+              "focusPl": "Aplikacja bankowa"
+            },
+            {
+              "en": "I paid all my bills in the banking app while watching TV.",
+              "pl": "Zapłaciłem wszystkie rachunki w aplikacji bankowej, oglądając telewizję.",
+              "focusEn": "banking app",
+              "focusPl": "aplikacji bankowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "banking app",
+            "bank app"
+          ],
+          "acceptedTranslations": [
+            "aplikacja bankowa",
+            "aplikacja banku",
+            "apka bankowa"
+          ]
+        },
+        {
+          "id": "banking.cash-a-check",
+          "term": "cash a check",
+          "ipa": "/ˌkæʃ ə ˈtʃɛk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "zrealizować czek",
+          "definition": "To exchange a check for cash at a bank.",
+          "register": "neutralny",
+          "contextPl": "Zamiana czeku na gotówkę",
+          "natural": "",
+          "forms": "cashed; cashing",
+          "collocations": "cash a check at the bank; cash a paycheck",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The app can't cash a check, so I'll go to the branch tomorrow.",
+              "pl": "Aplikacja nie może zrealizować czeku, więc jutro pójdę do oddziału.",
+              "focusEn": "cash a check",
+              "focusPl": "zrealizować czeku"
+            },
+            {
+              "en": "Tomorrow morning I'll cash the check from my uncle.",
+              "pl": "Jutro rano zrealizuję czek od wujka.",
+              "focusEn": "cash the check",
+              "focusPl": "zrealizuję czek"
+            }
+          ],
+          "acceptedAnswers": [
+            "cash a check",
+            "cash the check"
+          ],
+          "acceptedTranslations": [
+            "zrealizować czek",
+            "realizować czek",
+            "spieniężyć czek"
+          ]
+        },
+        {
+          "id": "banking.go-through",
+          "term": "go through",
+          "ipa": "/ˌɡoʊ ˈθruː/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przejść",
+          "definition": "To be accepted and completed, especially a payment.",
+          "register": "neutralny",
+          "contextPl": "Status płatności",
+          "natural": "",
+          "forms": "go – went – gone",
+          "collocations": "the payment went through; the transfer didn't go through",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Go through” ma też inne znaczenia, np. przeglądać coś.",
+          "examples": [
+            {
+              "en": "Did the rent payment go through, or should I try again?",
+              "pl": "Czy płatność za czynsz przeszła, czy mam spróbować jeszcze raz?",
+              "focusEn": "go through",
+              "focusPl": "przeszła"
+            },
+            {
+              "en": "The transfer finally went through after I fixed the account number.",
+              "pl": "Przelew w końcu przeszedł, kiedy poprawiłem numer konta.",
+              "focusEn": "went through",
+              "focusPl": "przeszedł"
+            }
+          ],
+          "acceptedAnswers": [
+            "go through"
+          ],
+          "acceptedTranslations": [
+            "przejść",
+            "przechodzić",
+            "zostać zaksięgowanym"
+          ]
+        },
+        {
+          "id": "banking.pending",
+          "term": "pending",
+          "ipa": "/ˈpɛndɪŋ/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "oczekujący",
+          "definition": "Waiting to be completed or approved.",
+          "register": "neutralny",
+          "contextPl": "Transakcje w trakcie realizacji",
+          "natural": "",
+          "forms": "",
+          "collocations": "pending transaction; pending payment; still pending",
+          "synonyms": "",
+          "antonyms": "completed",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The payment still says pending, so the money hasn't left my account.",
+              "pl": "Płatność wciąż ma status „oczekująca”, więc pieniądze nie zeszły jeszcze z konta.",
+              "focusEn": "pending",
+              "focusPl": "oczekująca"
+            },
+            {
+              "en": "There's a pending charge from the restaurant we went to on Friday.",
+              "pl": "Jest oczekująca transakcja z restauracji, w której byliśmy w piątek.",
+              "focusEn": "pending",
+              "focusPl": "oczekująca"
+            }
+          ],
+          "acceptedAnswers": [
+            "pending"
+          ],
+          "acceptedTranslations": [
+            "oczekujący",
+            "w toku",
+            "w trakcie realizacji",
+            "nierozliczony"
+          ]
+        },
+        {
+          "id": "banking.recipient",
+          "term": "recipient",
+          "ipa": "/rɪˈsɪpiənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odbiorca",
+          "definition": "The person who receives money or a message.",
+          "register": "formalny",
+          "contextPl": "Dane do przelewu",
+          "natural": "",
+          "forms": "recipients",
+          "collocations": "add a recipient; the recipient's name",
+          "synonyms": "payee",
+          "antonyms": "sender",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I saved my landlord as a recipient so I don't have to type everything again.",
+              "pl": "Zapisałem właściciela mieszkania jako odbiorcę, żeby nie wpisywać wszystkiego od nowa.",
+              "focusEn": "recipient",
+              "focusPl": "odbiorcę"
+            },
+            {
+              "en": "The app asks you to confirm the recipient's name before sending.",
+              "pl": "Aplikacja prosi o potwierdzenie nazwiska odbiorcy przed wysłaniem.",
+              "focusEn": "recipient's",
+              "focusPl": "odbiorcy"
+            }
+          ],
+          "acceptedAnswers": [
+            "recipient",
+            "payee"
+          ],
+          "acceptedTranslations": [
+            "odbiorca",
+            "adresat"
+          ]
+        },
+        {
+          "id": "banking.autopay",
+          "term": "autopay",
+          "ipa": "/ˈɔːtoʊˌpeɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "płatność automatyczna",
+          "definition": "A setting that pays a bill automatically every month.",
+          "register": "neutralny",
+          "contextPl": "Automatyczne opłacanie rachunków",
+          "natural": "",
+          "forms": "",
+          "collocations": "set up autopay; on autopay; turn off autopay",
+          "synonyms": "automatic payment",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I put my internet bill on autopay so I never pay late.",
+              "pl": "Ustawiłem rachunek za internet na płatność automatyczną, żeby nigdy się nie spóźniać.",
+              "focusEn": "autopay",
+              "focusPl": "płatność automatyczną"
+            },
+            {
+              "en": "I turned off autopay for the gym after I canceled my membership.",
+              "pl": "Wyłączyłem płatność automatyczną za siłownię, kiedy zrezygnowałem z karnetu.",
+              "focusEn": "autopay",
+              "focusPl": "płatność automatyczną"
+            }
+          ],
+          "acceptedAnswers": [
+            "autopay",
+            "automatic payment"
+          ],
+          "acceptedTranslations": [
+            "płatność automatyczna",
+            "polecenie zapłaty",
+            "stałe zlecenie"
+          ]
+        },
+        {
+          "id": "banking.wire-transfer",
+          "term": "wire transfer",
+          "ipa": "/ˈwaɪər ˌtrænsfɝː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "przelew zagraniczny",
+          "definition": "A fast way to send money directly from one bank to another, often abroad.",
+          "register": "specjalistyczny",
+          "contextPl": "Przelewy zagraniczne i duże kwoty",
+          "natural": "wire",
+          "forms": "wire transfers",
+          "collocations": "send a wire transfer; international wire transfer",
+          "synonyms": "wire",
+          "antonyms": "",
+          "notePl": "Potocznie: „I'll wire you the money”.",
+          "examples": [
+            {
+              "en": "A wire transfer to my parents in Poland costs thirty dollars.",
+              "pl": "Przelew zagraniczny do rodziców w Polsce kosztuje trzydzieści dolarów.",
+              "focusEn": "wire transfer",
+              "focusPl": "Przelew zagraniczny"
+            },
+            {
+              "en": "The wire transfer for the used car arrived the same day.",
+              "pl": "Przelew bankowy za używany samochód dotarł tego samego dnia.",
+              "focusEn": "wire transfer",
+              "focusPl": "Przelew bankowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "wire transfer",
+            "wire"
+          ],
+          "acceptedTranslations": [
+            "przelew zagraniczny",
+            "przelew bankowy",
+            "przelew ekspresowy"
+          ]
+        },
+        {
+          "id": "banking.routing-number",
+          "term": "routing number",
+          "ipa": "/ˈraʊtɪŋ ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "numer routingowy banku",
+          "definition": "A nine-digit number that identifies a bank in the US.",
+          "register": "specjalistyczny",
+          "contextPl": "Amerykańskie dane bankowe",
+          "natural": "",
+          "forms": "routing numbers",
+          "collocations": "bank routing number; routing and account number",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA potrzebny razem z numerem konta, np. do przelewu wynagrodzenia.",
+          "examples": [
+            {
+              "en": "To pay my rent online, I need my bank's routing number.",
+              "pl": "Żeby zapłacić czynsz online, potrzebuję numeru routingowego mojego banku.",
+              "focusEn": "routing number",
+              "focusPl": "numeru routingowego"
+            },
+            {
+              "en": "The routing number is printed on the bottom of every check.",
+              "pl": "Numer routingowy jest wydrukowany na dole każdego czeku.",
+              "focusEn": "routing number",
+              "focusPl": "Numer routingowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "routing number",
+            "ABA number"
+          ],
+          "acceptedTranslations": [
+            "numer routingowy banku",
+            "numer rozliczeniowy banku",
+            "numer banku"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banking.loans-credit",
+      "namePl": "Kredyty i pożyczki",
+      "scenePl": "Spotkanie z doradcą kredytowym w banku w sprawie kredytu na samochód",
+      "entries": [
+        {
+          "id": "banking.borrow",
+          "term": "borrow",
+          "ipa": "/ˈbɑːroʊ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pożyczyć",
+          "definition": "To get money from a person or bank that you will pay back later.",
+          "register": "neutralny",
+          "contextPl": "Branie pieniędzy na kredyt",
+          "natural": "",
+          "forms": "borrowed; borrowing",
+          "collocations": "borrow money; borrow from the bank",
+          "synonyms": "",
+          "antonyms": "lend",
+          "notePl": "Nie myl z „lend” – pożyczyć komuś.",
+          "examples": [
+            {
+              "en": "How much can I borrow with my current salary?",
+              "pl": "Ile mogę pożyczyć przy mojej obecnej pensji?",
+              "focusEn": "borrow",
+              "focusPl": "pożyczyć"
+            },
+            {
+              "en": "We borrowed money from the bank for our first car too.",
+              "pl": "Na nasz pierwszy samochód też pożyczyliśmy pieniądze z banku.",
+              "focusEn": "borrowed",
+              "focusPl": "pożyczyliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "borrow"
+          ],
+          "acceptedTranslations": [
+            "pożyczyć",
+            "pożyczać"
+          ]
+        },
+        {
+          "id": "banking.pay-back",
+          "term": "pay back",
+          "ipa": "/ˌpeɪ ˈbæk/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "spłacić",
+          "definition": "To return money that you borrowed.",
+          "register": "neutralny",
+          "contextPl": "Spłata zadłużenia",
+          "natural": "",
+          "forms": "paid back; paying back",
+          "collocations": "pay back a loan; pay it back in five years",
+          "synonyms": "repay",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You would pay back the loan in sixty monthly payments.",
+              "pl": "Spłacałby pan kredyt w sześćdziesięciu miesięcznych ratach.",
+              "focusEn": "pay back",
+              "focusPl": "Spłacałby"
+            },
+            {
+              "en": "Can I pay back the loan early without a fee?",
+              "pl": "Czy mogę spłacić kredyt wcześniej bez opłaty?",
+              "focusEn": "pay back",
+              "focusPl": "spłacić"
+            }
+          ],
+          "acceptedAnswers": [
+            "pay back",
+            "repay",
+            "pay off"
+          ],
+          "acceptedTranslations": [
+            "spłacić",
+            "spłacać",
+            "oddać",
+            "oddawać"
+          ]
+        },
+        {
+          "id": "banking.loan",
+          "term": "loan",
+          "ipa": "/loʊn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "kredyt",
+          "definition": "Money that a bank lends you and that you must pay back with interest.",
+          "register": "neutralny",
+          "contextPl": "Pożyczanie pieniędzy z banku",
+          "natural": "",
+          "forms": "loans",
+          "collocations": "take out a loan; car loan; student loan; pay off a loan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku „kredyt” albo „pożyczka”, zależnie od rodzaju.",
+          "examples": [
+            {
+              "en": "I'm here to ask about a loan for a used car.",
+              "pl": "Przyszedłem zapytać o kredyt na używany samochód.",
+              "focusEn": "loan",
+              "focusPl": "kredyt"
+            },
+            {
+              "en": "Paying off the loan would take five years.",
+              "pl": "Spłata kredytu zajęłaby pięć lat.",
+              "focusEn": "loan",
+              "focusPl": "kredytu"
+            }
+          ],
+          "acceptedAnswers": [
+            "loan"
+          ],
+          "acceptedTranslations": [
+            "kredyt",
+            "pożyczka"
+          ]
+        },
+        {
+          "id": "banking.interest-rate",
+          "term": "interest rate",
+          "ipa": "/ˈɪntrəst ˌreɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oprocentowanie",
+          "definition": "The percentage a bank charges you for borrowing money or pays you for saving.",
+          "register": "neutralny",
+          "contextPl": "Koszt kredytu",
+          "natural": "rate",
+          "forms": "interest rates",
+          "collocations": "a low interest rate; a fixed interest rate; interest rates went up",
+          "synonyms": "rate",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What's the interest rate on a five-year car loan?",
+              "pl": "Jakie jest oprocentowanie pięcioletniego kredytu samochodowego?",
+              "focusEn": "interest rate",
+              "focusPl": "oprocentowanie"
+            },
+            {
+              "en": "The advisor said the interest rate depends on my credit score.",
+              "pl": "Doradca powiedział, że oprocentowanie zależy od mojej oceny kredytowej.",
+              "focusEn": "interest rate",
+              "focusPl": "oprocentowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "interest rate",
+            "rate"
+          ],
+          "acceptedTranslations": [
+            "oprocentowanie",
+            "stopa procentowa"
+          ]
+        },
+        {
+          "id": "banking.apply-for",
+          "term": "apply for",
+          "ipa": "/əˈplaɪ ˌfɔːr/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "złożyć wniosek",
+          "definition": "To formally ask for something, such as a loan, by filling out forms.",
+          "register": "formalny",
+          "contextPl": "Składanie wniosku",
+          "natural": "",
+          "forms": "applied; applying",
+          "collocations": "apply for a loan; apply for a credit card; apply online",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to apply for a car loan today.",
+              "pl": "Chciałbym dziś złożyć wniosek o kredyt samochodowy.",
+              "focusEn": "apply for",
+              "focusPl": "złożyć wniosek"
+            },
+            {
+              "en": "You can apply for the loan online, but it takes longer.",
+              "pl": "Można złożyć wniosek o kredyt online, ale to trwa dłużej.",
+              "focusEn": "apply for",
+              "focusPl": "złożyć wniosek"
+            }
+          ],
+          "acceptedAnswers": [
+            "apply for",
+            "apply"
+          ],
+          "acceptedTranslations": [
+            "złożyć wniosek",
+            "składać wniosek",
+            "ubiegać się"
+          ]
+        },
+        {
+          "id": "banking.monthly-payment",
+          "term": "monthly payment",
+          "ipa": "/ˌmʌnθli ˈpeɪmənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rata",
+          "definition": "The amount of money you pay every month to pay back a loan.",
+          "register": "neutralny",
+          "contextPl": "Comiesięczna spłata",
+          "natural": "",
+          "forms": "monthly payments",
+          "collocations": "low monthly payments; make your monthly payment",
+          "synonyms": "installment",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My monthly payment would be about three hundred dollars.",
+              "pl": "Moja rata wynosiłaby około trzystu dolarów.",
+              "focusEn": "monthly payment",
+              "focusPl": "rata"
+            },
+            {
+              "en": "A longer loan means a smaller monthly payment but more interest.",
+              "pl": "Dłuższy kredyt oznacza niższą ratę, ale wyższe odsetki.",
+              "focusEn": "monthly payment",
+              "focusPl": "ratę"
+            }
+          ],
+          "acceptedAnswers": [
+            "monthly payment",
+            "installment"
+          ],
+          "acceptedTranslations": [
+            "rata",
+            "miesięczna rata",
+            "rata miesięczna"
+          ]
+        },
+        {
+          "id": "banking.approve",
+          "term": "approve",
+          "ipa": "/əˈpruːv/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zatwierdzić",
+          "definition": "To officially accept a request, such as a loan application.",
+          "register": "formalny",
+          "contextPl": "Decyzja banku",
+          "natural": "",
+          "forms": "approved; approving",
+          "collocations": "approve a loan; get approved",
+          "synonyms": "accept",
+          "antonyms": "reject; deny",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If they approve the loan, I can pick up the car on Saturday.",
+              "pl": "Jeśli zatwierdzą kredyt, w sobotę mogę odebrać samochód.",
+              "focusEn": "approve",
+              "focusPl": "zatwierdzą"
+            },
+            {
+              "en": "My loan was approved in less than an hour.",
+              "pl": "Mój kredyt został zatwierdzony w niecałą godzinę.",
+              "focusEn": "approved",
+              "focusPl": "zatwierdzony"
+            }
+          ],
+          "acceptedAnswers": [
+            "approve"
+          ],
+          "acceptedTranslations": [
+            "zatwierdzić",
+            "zatwierdzać",
+            "zaakceptować",
+            "przyznać"
+          ]
+        },
+        {
+          "id": "banking.credit-score",
+          "term": "credit score",
+          "ipa": "/ˈkrɛdɪt ˌskɔːr/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ocena kredytowa",
+          "definition": "A number that shows banks how likely you are to pay back money you borrow.",
+          "register": "specjalistyczny",
+          "contextPl": "Wiarygodność kredytowa",
+          "natural": "",
+          "forms": "credit scores",
+          "collocations": "a good credit score; check your credit score; improve your credit score",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA bardzo ważna – wpływa nawet na wynajem mieszkania.",
+          "examples": [
+            {
+              "en": "Your credit score is good, so you'll get a lower rate.",
+              "pl": "Ma pan dobrą ocenę kredytową, więc dostanie pan niższe oprocentowanie.",
+              "focusEn": "credit score",
+              "focusPl": "ocenę kredytową"
+            },
+            {
+              "en": "I just moved to the US, so I don't have a credit score yet.",
+              "pl": "Dopiero przeprowadziłem się do USA, więc nie mam jeszcze oceny kredytowej.",
+              "focusEn": "credit score",
+              "focusPl": "oceny kredytowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "credit score",
+            "credit rating"
+          ],
+          "acceptedTranslations": [
+            "ocena kredytowa",
+            "scoring kredytowy",
+            "wiarygodność kredytowa"
+          ]
+        },
+        {
+          "id": "banking.mortgage",
+          "term": "mortgage",
+          "ipa": "/ˈmɔːrɡɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kredyt hipoteczny",
+          "definition": "A loan to buy a house or apartment.",
+          "register": "neutralny",
+          "contextPl": "Kredyt na mieszkanie",
+          "natural": "",
+          "forms": "mortgages",
+          "collocations": "take out a mortgage; pay off the mortgage; mortgage payment",
+          "synonyms": "home loan",
+          "antonyms": "",
+          "notePl": "Litera „t” jest niema.",
+          "examples": [
+            {
+              "en": "After the car loan, the advisor asked if we're thinking about a mortgage.",
+              "pl": "Po kredycie samochodowym doradczyni zapytała, czy myślimy o kredycie hipotecznym.",
+              "focusEn": "mortgage",
+              "focusPl": "kredycie hipotecznym"
+            },
+            {
+              "en": "We still have twenty years left on our mortgage.",
+              "pl": "Zostało nam jeszcze dwadzieścia lat spłaty kredytu hipotecznego.",
+              "focusEn": "mortgage",
+              "focusPl": "kredytu hipotecznego"
+            }
+          ],
+          "acceptedAnswers": [
+            "mortgage",
+            "home loan"
+          ],
+          "acceptedTranslations": [
+            "kredyt hipoteczny",
+            "hipoteka",
+            "kredyt mieszkaniowy"
+          ]
+        },
+        {
+          "id": "banking.down-payment",
+          "term": "down payment",
+          "ipa": "/ˌdaʊn ˈpeɪmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wkład własny",
+          "definition": "The first part of the price that you pay yourself when you buy something with a loan.",
+          "register": "neutralny",
+          "contextPl": "Pieniądze na start kredytu",
+          "natural": "",
+          "forms": "down payments",
+          "collocations": "make a down payment; a 20 percent down payment; save for a down payment",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I have three thousand dollars for the down payment on the car.",
+              "pl": "Mam trzy tysiące dolarów na wkład własny na samochód.",
+              "focusEn": "down payment",
+              "focusPl": "wkład własny"
+            },
+            {
+              "en": "A bigger down payment means you'll borrow less.",
+              "pl": "Większy wkład własny oznacza, że pożyczy pan mniej.",
+              "focusEn": "down payment",
+              "focusPl": "wkład własny"
+            }
+          ],
+          "acceptedAnswers": [
+            "down payment"
+          ],
+          "acceptedTranslations": [
+            "wkład własny",
+            "zaliczka",
+            "pierwsza wpłata"
+          ]
+        },
+        {
+          "id": "banking.credit-history",
+          "term": "credit history",
+          "ipa": "/ˈkrɛdɪt ˌhɪstəri/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "historia kredytowa",
+          "definition": "The record of how you have borrowed and paid back money in the past.",
+          "register": "specjalistyczny",
+          "contextPl": "Ocena klienta przez bank",
+          "natural": "",
+          "forms": "",
+          "collocations": "a good credit history; no credit history; build credit history",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Brak historii kredytowej utrudnia dostanie kredytu w USA.",
+          "examples": [
+            {
+              "en": "Since I have no credit history, the bank asked for a cosigner.",
+              "pl": "Ponieważ nie mam historii kredytowej, bank poprosił o poręczyciela.",
+              "focusEn": "credit history",
+              "focusPl": "historii kredytowej"
+            },
+            {
+              "en": "Paying my phone bill on time helped build my credit history.",
+              "pl": "Terminowe płacenie rachunków za telefon pomogło mi zbudować historię kredytową.",
+              "focusEn": "credit history",
+              "focusPl": "historię kredytową"
+            }
+          ],
+          "acceptedAnswers": [
+            "credit history",
+            "credit record"
+          ],
+          "acceptedTranslations": [
+            "historia kredytowa"
+          ]
+        },
+        {
+          "id": "banking.qualify-for",
+          "term": "qualify for",
+          "ipa": "/ˈkwɑːləfaɪ ˌfɔːr/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kwalifikować się",
+          "definition": "To meet the conditions needed to get something.",
+          "register": "formalny",
+          "contextPl": "Warunki przyznania kredytu",
+          "natural": "",
+          "forms": "qualified; qualifying",
+          "collocations": "qualify for a loan; qualify for a lower rate",
+          "synonyms": "be eligible for",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With your income, you qualify for a loan of up to twenty thousand.",
+              "pl": "Przy pana dochodach kwalifikuje się pan do kredytu do dwudziestu tysięcy.",
+              "focusEn": "qualify for",
+              "focusPl": "kwalifikuje się"
+            },
+            {
+              "en": "I didn't qualify for the lowest rate because my credit history is too short.",
+              "pl": "Nie zakwalifikowałem się do najniższego oprocentowania, bo moja historia kredytowa jest za krótka.",
+              "focusEn": "qualify for",
+              "focusPl": "zakwalifikowałem się"
+            }
+          ],
+          "acceptedAnswers": [
+            "qualify for",
+            "be eligible for"
+          ],
+          "acceptedTranslations": [
+            "kwalifikować się",
+            "zakwalifikować się",
+            "spełniać warunki"
+          ]
+        },
+        {
+          "id": "banking.cosigner",
+          "term": "cosigner",
+          "ipa": "/ˈkoʊˌsaɪnər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "poręczyciel",
+          "definition": "A person who signs a loan with you and promises to pay if you cannot.",
+          "register": "specjalistyczny",
+          "contextPl": "Zabezpieczenie kredytu",
+          "natural": "",
+          "forms": "cosigners",
+          "collocations": "need a cosigner; ask someone to be a cosigner",
+          "synonyms": "guarantor",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My uncle agreed to be my cosigner for the car loan.",
+              "pl": "Wujek zgodził się zostać moim poręczycielem przy kredycie na samochód.",
+              "focusEn": "cosigner",
+              "focusPl": "poręczycielem"
+            },
+            {
+              "en": "If you can't pay, the bank will ask your cosigner for the money.",
+              "pl": "Jeśli nie będzie pan płacić, bank zażąda pieniędzy od poręczyciela.",
+              "focusEn": "cosigner",
+              "focusPl": "poręczyciela"
+            }
+          ],
+          "acceptedAnswers": [
+            "cosigner",
+            "co-signer",
+            "guarantor"
+          ],
+          "acceptedTranslations": [
+            "poręczyciel",
+            "żyrant"
+          ]
+        },
+        {
+          "id": "banking.collateral",
+          "term": "collateral",
+          "ipa": "/kəˈlætərəl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zabezpieczenie",
+          "definition": "Something valuable you promise to give a bank if you cannot pay back a loan.",
+          "register": "specjalistyczny",
+          "contextPl": "Zabezpieczenie kredytu",
+          "natural": "",
+          "forms": "",
+          "collocations": "use something as collateral; put up collateral",
+          "synonyms": "security",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The car itself is the collateral for this loan.",
+              "pl": "Sam samochód jest zabezpieczeniem tego kredytu.",
+              "focusEn": "collateral",
+              "focusPl": "zabezpieczeniem"
+            },
+            {
+              "en": "If you stop paying, the bank can take the collateral.",
+              "pl": "Jeśli przestanie pan płacić, bank może przejąć zabezpieczenie.",
+              "focusEn": "collateral",
+              "focusPl": "zabezpieczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "collateral"
+          ],
+          "acceptedTranslations": [
+            "zabezpieczenie",
+            "zabezpieczenie kredytu",
+            "zastaw"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "banking.problems",
+      "namePl": "Problemy z transakcjami",
+      "scenePl": "Dzwonisz na infolinię banku, bo na wyciągu jest dziwna transakcja",
+      "entries": [
+        {
+          "id": "banking.transaction",
+          "term": "transaction",
+          "ipa": "/trænˈzækʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "transakcja",
+          "definition": "A single payment, transfer, or withdrawal on your account.",
+          "register": "neutralny",
+          "contextPl": "Operacje na koncie",
+          "natural": "",
+          "forms": "transactions",
+          "collocations": "a recent transaction; transaction history",
+          "synonyms": "payment",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I don't recognize this transaction from last Thursday.",
+              "pl": "Nie rozpoznaję tej transakcji z zeszłego czwartku.",
+              "focusEn": "transaction",
+              "focusPl": "transakcji"
+            },
+            {
+              "en": "The agent went through every transaction on my account with me.",
+              "pl": "Konsultant przejrzał ze mną każdą transakcję na moim koncie.",
+              "focusEn": "transaction",
+              "focusPl": "transakcję"
+            }
+          ],
+          "acceptedAnswers": [
+            "transaction"
+          ],
+          "acceptedTranslations": [
+            "transakcja",
+            "operacja"
+          ]
+        },
+        {
+          "id": "banking.charge",
+          "term": "charge",
+          "ipa": "/tʃɑːrdʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "obciążenie",
+          "definition": "An amount of money taken from your account for a payment.",
+          "register": "neutralny",
+          "contextPl": "Pozycje na wyciągu",
+          "natural": "",
+          "forms": "charges",
+          "collocations": "a strange charge; an unknown charge; a double charge",
+          "synonyms": "payment",
+          "antonyms": "",
+          "notePl": "Czasownik „charge” = obciążyć, pobrać opłatę.",
+          "examples": [
+            {
+              "en": "There's a ninety-dollar charge from a store I've never been to.",
+              "pl": "Jest obciążenie na dziewięćdziesiąt dolarów ze sklepu, w którym nigdy nie byłem.",
+              "focusEn": "charge",
+              "focusPl": "obciążenie"
+            },
+            {
+              "en": "The hotel put the same charge on my card twice.",
+              "pl": "Hotel naliczył to samo obciążenie na mojej karcie dwa razy.",
+              "focusEn": "charge",
+              "focusPl": "obciążenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "charge"
+          ],
+          "acceptedTranslations": [
+            "obciążenie",
+            "opłata",
+            "pobranie"
+          ]
+        },
+        {
+          "id": "banking.refund",
+          "term": "refund",
+          "ipa": "/ˈriːfʌnd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zwrot pieniędzy",
+          "definition": "Money that is given back to you.",
+          "register": "neutralny",
+          "contextPl": "Odzyskiwanie pieniędzy",
+          "natural": "",
+          "forms": "refunds",
+          "collocations": "get a refund; issue a refund; full refund",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik „refund” akcentujemy na drugiej sylabie.",
+          "examples": [
+            {
+              "en": "The agent said I'll get a refund within ten business days.",
+              "pl": "Konsultantka powiedziała, że dostanę zwrot pieniędzy w ciągu dziesięciu dni roboczych.",
+              "focusEn": "refund",
+              "focusPl": "zwrot pieniędzy"
+            },
+            {
+              "en": "The refund for the double charge showed up the next morning.",
+              "pl": "Zwrot za podwójne obciążenie pojawił się następnego ranka.",
+              "focusEn": "refund",
+              "focusPl": "Zwrot"
+            }
+          ],
+          "acceptedAnswers": [
+            "refund",
+            "money back"
+          ],
+          "acceptedTranslations": [
+            "zwrot pieniędzy",
+            "zwrot",
+            "zwrot środków"
+          ]
+        },
+        {
+          "id": "banking.fraud-alert",
+          "term": "fraud alert",
+          "ipa": "/ˈfrɔːd əˌlɝːt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "alert o oszustwie",
+          "definition": "A warning from your bank that a payment on your account may be fraud.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia banku",
+          "natural": "",
+          "forms": "fraud alerts",
+          "collocations": "get a fraud alert; set up a fraud alert",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I called right after I got a fraud alert on my phone.",
+              "pl": "Zadzwoniłem zaraz po tym, jak dostałem na telefon alert o oszustwie.",
+              "focusEn": "fraud alert",
+              "focusPl": "alert o oszustwie"
+            },
+            {
+              "en": "The fraud alert stopped a payment of two thousand dollars.",
+              "pl": "Alert o oszustwie zatrzymał płatność na dwa tysiące dolarów.",
+              "focusEn": "fraud alert",
+              "focusPl": "Alert o oszustwie"
+            }
+          ],
+          "acceptedAnswers": [
+            "fraud alert"
+          ],
+          "acceptedTranslations": [
+            "alert o oszustwie",
+            "ostrzeżenie o oszustwie",
+            "powiadomienie o podejrzanej transakcji"
+          ]
+        },
+        {
+          "id": "banking.verify-your-identity",
+          "term": "verify your identity",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "potwierdzić tożsamość",
+          "definition": "To prove that you are really the person you say you are.",
+          "register": "formalny",
+          "contextPl": "Weryfikacja klienta przez telefon",
+          "natural": "",
+          "forms": "verified; verifying",
+          "collocations": "verify your identity by text; need to verify your identity",
+          "synonyms": "confirm who you are",
+          "antonyms": "",
+          "notePl": "Bank nigdy nie powinien prosić o pełny PIN ani hasło.",
+          "examples": [
+            {
+              "en": "Before we continue, I need to verify your identity.",
+              "pl": "Zanim przejdziemy dalej, muszę potwierdzić pana tożsamość.",
+              "focusEn": "verify your identity",
+              "focusPl": "potwierdzić pana tożsamość"
+            },
+            {
+              "en": "I had to verify my identity with a code the bank sent me.",
+              "pl": "Musiałem potwierdzić tożsamość kodem, który przysłał mi bank.",
+              "focusEn": "verify my identity",
+              "focusPl": "potwierdzić tożsamość"
+            }
+          ],
+          "acceptedAnswers": [
+            "verify your identity",
+            "verify my identity",
+            "confirm your identity"
+          ],
+          "acceptedTranslations": [
+            "potwierdzić tożsamość",
+            "potwierdzać tożsamość",
+            "zweryfikować tożsamość"
+          ]
+        },
+        {
+          "id": "banking.bounce",
+          "term": "bounce",
+          "ipa": "/baʊns/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nie mieć pokrycia",
+          "definition": "For a check to be rejected because there is not enough money in the account.",
+          "register": "potoczny",
+          "contextPl": "Odrzucone czeki",
+          "natural": "",
+          "forms": "bounced; bouncing",
+          "collocations": "the check bounced; bounce a check",
+          "synonyms": "",
+          "antonyms": "clear",
+          "notePl": "Dosłownie „odbić się”.",
+          "examples": [
+            {
+              "en": "My rent check bounced because my paycheck hadn't arrived yet.",
+              "pl": "Mój czek na czynsz nie miał pokrycia, bo wypłata jeszcze nie wpłynęła.",
+              "focusEn": "bounced",
+              "focusPl": "nie miał pokrycia"
+            },
+            {
+              "en": "The agent explained that if a check bounces, the bank charges a fee.",
+              "pl": "Konsultant wyjaśnił, że jeśli czek nie ma pokrycia, bank pobiera opłatę.",
+              "focusEn": "bounces",
+              "focusPl": "nie ma pokrycia"
+            }
+          ],
+          "acceptedAnswers": [
+            "bounce"
+          ],
+          "acceptedTranslations": [
+            "nie mieć pokrycia",
+            "zostać odrzuconym",
+            "odbić się"
+          ]
+        },
+        {
+          "id": "banking.dispute",
+          "term": "dispute",
+          "ipa": "/dɪˈspjuːt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zakwestionować",
+          "definition": "To officially say that a charge is wrong and ask the bank to check it.",
+          "register": "formalny",
+          "contextPl": "Reklamacja transakcji",
+          "natural": "challenge",
+          "forms": "disputed; disputing",
+          "collocations": "dispute a charge; dispute a transaction",
+          "synonyms": "challenge",
+          "antonyms": "",
+          "notePl": "Też rzeczownik: „file a dispute” = złożyć reklamację.",
+          "examples": [
+            {
+              "en": "I'd like to dispute this charge, because I never bought anything there.",
+              "pl": "Chciałbym zakwestionować to obciążenie, bo nigdy nic tam nie kupiłem.",
+              "focusEn": "dispute",
+              "focusPl": "zakwestionować"
+            },
+            {
+              "en": "Once you dispute a transaction, the bank investigates it.",
+              "pl": "Kiedy zakwestionuje pan transakcję, bank ją sprawdzi.",
+              "focusEn": "dispute",
+              "focusPl": "zakwestionuje"
+            }
+          ],
+          "acceptedAnswers": [
+            "dispute",
+            "challenge"
+          ],
+          "acceptedTranslations": [
+            "zakwestionować",
+            "kwestionować",
+            "złożyć reklamację",
+            "reklamować"
+          ]
+        },
+        {
+          "id": "banking.insufficient-funds",
+          "term": "insufficient funds",
+          "ipa": "/ˌɪnsəˌfɪʃənt ˈfʌndz/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "brak środków",
+          "definition": "Not enough money in the account to make a payment.",
+          "register": "formalny",
+          "contextPl": "Komunikaty o odrzuconej płatności",
+          "natural": "",
+          "forms": "",
+          "collocations": "due to insufficient funds; an insufficient funds fee",
+          "synonyms": "not enough money",
+          "antonyms": "",
+          "notePl": "Typowy komunikat banku.",
+          "examples": [
+            {
+              "en": "The agent said the payment failed because of insufficient funds.",
+              "pl": "Konsultant powiedział, że płatność się nie powiodła z powodu braku środków.",
+              "focusEn": "insufficient funds",
+              "focusPl": "braku środków"
+            },
+            {
+              "en": "I got a text about insufficient funds right before my rent was due.",
+              "pl": "Tuż przed terminem czynszu dostałem SMS-a o braku środków.",
+              "focusEn": "insufficient funds",
+              "focusPl": "braku środków"
+            }
+          ],
+          "acceptedAnswers": [
+            "insufficient funds",
+            "not enough money"
+          ],
+          "acceptedTranslations": [
+            "brak środków",
+            "niewystarczające środki",
+            "brak wystarczających środków"
+          ]
+        }
+      ]
+    }
+  ]
+}

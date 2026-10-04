@@ -1,0 +1,4503 @@
+{
+  "schemaVersion": 1,
+  "id": "restaurant",
+  "namePl": "Restauracja",
+  "nameEn": "Restaurant",
+  "group": "food",
+  "symbol": "fork.knife",
+  "summaryPl": "Rezerwacja stolika, zamawianie, karta dań, nakrycie stołu, rachunek i napiwek.",
+  "aliases": [
+    "restauracja",
+    "knajpa",
+    "kolacja na mieście",
+    "jedzenie na mieście",
+    "kelner",
+    "rachunek",
+    "napiwek",
+    "restaurant",
+    "dining out"
+  ],
+  "categories": [
+    {
+      "id": "restaurant.reservations",
+      "namePl": "Rezerwacja i powitanie",
+      "scenePl": "Telefoniczna rezerwacja stolika i powitanie gości przy wejściu do restauracji",
+      "entries": [
+        {
+          "id": "restaurant.reservation",
+          "term": "reservation",
+          "ipa": "/ˌrɛzərˈveɪʃən/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "rezerwacja",
+          "definition": "An arrangement to have a table kept for you at a certain time.",
+          "register": "neutralny",
+          "contextPl": "Rezerwowanie stolika telefonicznie lub na miejscu",
+          "natural": "",
+          "forms": "reservations",
+          "collocations": "make a reservation; have a reservation; cancel a reservation",
+          "synonyms": "booking",
+          "antonyms": "",
+          "notePl": "Częściej „make a reservation” niż „book a reservation”.",
+          "examples": [
+            {
+              "en": "I'd like to make a reservation for four at seven tonight.",
+              "pl": "Chciałbym zrobić rezerwację dla czterech osób na dziś na dziewiętnastą.",
+              "focusEn": "reservation",
+              "focusPl": "rezerwację"
+            },
+            {
+              "en": "Hi, we have a reservation under the name Nowak for eight o'clock.",
+              "pl": "Dzień dobry, mamy rezerwację na nazwisko Nowak na ósmą.",
+              "focusEn": "reservation",
+              "focusPl": "rezerwację"
+            }
+          ],
+          "acceptedAnswers": [
+            "reservation"
+          ],
+          "acceptedTranslations": [
+            "rezerwacja"
+          ]
+        },
+        {
+          "id": "restaurant.table",
+          "term": "table",
+          "ipa": "/ˈteɪbəl/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "stolik",
+          "definition": "A piece of furniture where guests sit and eat in a restaurant.",
+          "register": "neutralny",
+          "contextPl": "Prośba o konkretne miejsce w sali",
+          "natural": "",
+          "forms": "tables",
+          "collocations": "a table for two; get a table; a table by the window",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could we get a table by the window, please?",
+              "pl": "Czy możemy dostać stolik przy oknie?",
+              "focusEn": "table",
+              "focusPl": "stolik"
+            },
+            {
+              "en": "Your table will be ready in about ten minutes.",
+              "pl": "Państwa stolik będzie gotowy za jakieś dziesięć minut.",
+              "focusEn": "table",
+              "focusPl": "stolik"
+            }
+          ],
+          "acceptedAnswers": [
+            "table"
+          ],
+          "acceptedTranslations": [
+            "stolik",
+            "stół"
+          ]
+        },
+        {
+          "id": "restaurant.book",
+          "term": "book",
+          "ipa": "/bʊk/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zarezerwować",
+          "definition": "To arrange to have a table kept for you at a restaurant.",
+          "register": "neutralny",
+          "contextPl": "Rezerwowanie stolika z wyprzedzeniem",
+          "natural": "reserve",
+          "forms": "booked",
+          "collocations": "book a table; book ahead; book online",
+          "synonyms": "reserve",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I booked a table for Friday night on the restaurant's website.",
+              "pl": "Zarezerwowałem stolik na piątkowy wieczór na stronie restauracji.",
+              "focusEn": "booked",
+              "focusPl": "Zarezerwowałem"
+            },
+            {
+              "en": "Should we book ahead, or do they take walk-ins?",
+              "pl": "Powinniśmy zarezerwować wcześniej, czy przyjmują gości bez rezerwacji?",
+              "focusEn": "book",
+              "focusPl": "zarezerwować"
+            }
+          ],
+          "acceptedAnswers": [
+            "book",
+            "reserve"
+          ],
+          "acceptedTranslations": [
+            "zarezerwować",
+            "rezerwować"
+          ]
+        },
+        {
+          "id": "restaurant.party",
+          "term": "party",
+          "ipa": "/ˈpɑːrti/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "grupa gości",
+          "definition": "A group of people who are eating together at a restaurant.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o liczbę osób przy stoliku",
+          "natural": "",
+          "forms": "parties",
+          "collocations": "a party of four; how many in your party",
+          "synonyms": "group",
+          "antonyms": "",
+          "notePl": "W tym znaczeniu nie „impreza”, tylko grupa osób przy jednym stoliku.",
+          "examples": [
+            {
+              "en": "How many people are in your party tonight?",
+              "pl": "Ile osób liczy państwa grupa dziś wieczorem?",
+              "focusEn": "party",
+              "focusPl": "grupa"
+            },
+            {
+              "en": "We have a party of eight arriving at six thirty.",
+              "pl": "O osiemnastej trzydzieści przychodzi grupa ośmiu osób.",
+              "focusEn": "party",
+              "focusPl": "grupa"
+            }
+          ],
+          "acceptedAnswers": [
+            "party",
+            "group"
+          ],
+          "acceptedTranslations": [
+            "grupa gości",
+            "grupa",
+            "grupa osób"
+          ]
+        },
+        {
+          "id": "restaurant.host",
+          "term": "host",
+          "ipa": "/hoʊst/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "hostessa",
+          "definition": "The person at the entrance who greets guests and takes them to a table.",
+          "register": "neutralny",
+          "contextPl": "Osoba przy wejściu, która przydziela stoliki",
+          "natural": "",
+          "forms": "hosts",
+          "collocations": "ask the host; host stand",
+          "synonyms": "hostess",
+          "antonyms": "",
+          "notePl": "W USA mówi się „host” niezależnie od płci; „hostess” też jest używane.",
+          "examples": [
+            {
+              "en": "The host will seat you as soon as a table opens up.",
+              "pl": "Hostessa posadzi państwa, gdy tylko zwolni się stolik.",
+              "focusEn": "host",
+              "focusPl": "Hostessa"
+            },
+            {
+              "en": "Let's ask the host how long the wait is.",
+              "pl": "Zapytajmy hostessę, jak długo trzeba czekać.",
+              "focusEn": "host",
+              "focusPl": "hostessę"
+            }
+          ],
+          "acceptedAnswers": [
+            "host",
+            "hostess"
+          ],
+          "acceptedTranslations": [
+            "hostessa",
+            "host",
+            "osoba witająca gości"
+          ]
+        },
+        {
+          "id": "restaurant.wait",
+          "term": "wait",
+          "ipa": "/weɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "czas oczekiwania",
+          "definition": "The amount of time you have to wait for a free table.",
+          "register": "neutralny",
+          "contextPl": "Gdy wszystkie stoliki są zajęte",
+          "natural": "",
+          "forms": "waits",
+          "collocations": "a twenty-minute wait; a long wait; worth the wait",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's about a twenty-minute wait for a table right now.",
+              "pl": "Czas oczekiwania na stolik wynosi teraz około dwudziestu minut.",
+              "focusEn": "wait",
+              "focusPl": "Czas oczekiwania"
+            },
+            {
+              "en": "The wait was long, but the host kept us updated.",
+              "pl": "Czekanie było długie, ale hostessa informowała nas na bieżąco.",
+              "focusEn": "wait",
+              "focusPl": "Czekanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "wait"
+          ],
+          "acceptedTranslations": [
+            "czas oczekiwania",
+            "czekanie",
+            "oczekiwanie"
+          ]
+        },
+        {
+          "id": "restaurant.seat",
+          "term": "seat",
+          "ipa": "/siːt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "posadzić",
+          "definition": "To take guests to their table and show them where to sit.",
+          "register": "neutralny",
+          "contextPl": "Prowadzenie gości do stolika",
+          "natural": "",
+          "forms": "seated",
+          "collocations": "seat someone; be seated; seat a party",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Be seated” = usiąść (o gościach), „seat someone” = posadzić kogoś.",
+          "examples": [
+            {
+              "en": "The host seated us in a quiet corner near the fireplace.",
+              "pl": "Hostessa posadziła nas w cichym kącie przy kominku.",
+              "focusEn": "seated",
+              "focusPl": "posadziła"
+            },
+            {
+              "en": "Please wait here, and someone will seat you shortly.",
+              "pl": "Proszę tu zaczekać, ktoś zaraz państwa posadzi.",
+              "focusEn": "seat",
+              "focusPl": "posadzi"
+            }
+          ],
+          "acceptedAnswers": [
+            "seat"
+          ],
+          "acceptedTranslations": [
+            "posadzić",
+            "usadzić",
+            "sadzać"
+          ]
+        },
+        {
+          "id": "restaurant.walk-in",
+          "term": "walk-in",
+          "ipa": "/ˈwɔːk ˌɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "gość bez rezerwacji",
+          "definition": "A customer who comes to a restaurant without a reservation.",
+          "register": "potoczny",
+          "contextPl": "Przyjście do lokalu bez wcześniejszej rezerwacji",
+          "natural": "",
+          "forms": "walk-ins",
+          "collocations": "take walk-ins; walk-ins welcome",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, we're fully booked tonight and can't take walk-ins.",
+              "pl": "Przykro mi, dziś mamy komplet i nie przyjmujemy gości bez rezerwacji.",
+              "focusEn": "walk-ins",
+              "focusPl": "gości bez rezerwacji"
+            },
+            {
+              "en": "As walk-ins, we waited at the bar for a free table.",
+              "pl": "Jako goście bez rezerwacji czekaliśmy przy barze na wolny stolik.",
+              "focusEn": "walk-ins",
+              "focusPl": "goście bez rezerwacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "walk-in",
+            "walk in"
+          ],
+          "acceptedTranslations": [
+            "gość bez rezerwacji",
+            "klient bez rezerwacji"
+          ]
+        },
+        {
+          "id": "restaurant.fully-booked",
+          "term": "fully booked",
+          "ipa": "/ˌfʊli ˈbʊkt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "całkowicie zarezerwowany",
+          "definition": "Having no free tables left because all of them are reserved.",
+          "register": "neutralny",
+          "contextPl": "Gdy restauracja nie ma wolnych miejsc",
+          "natural": "",
+          "forms": "",
+          "collocations": "be fully booked; fully booked tonight",
+          "synonyms": "booked up",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The restaurant is fully booked until next Saturday.",
+              "pl": "Restauracja jest całkowicie zarezerwowana do przyszłej soboty.",
+              "focusEn": "fully booked",
+              "focusPl": "całkowicie zarezerwowana"
+            },
+            {
+              "en": "Call early, because they're usually fully booked on weekends.",
+              "pl": "Zadzwoń wcześnie, bo w weekendy zwykle mają komplet.",
+              "focusEn": "fully booked",
+              "focusPl": "mają komplet"
+            }
+          ],
+          "acceptedAnswers": [
+            "fully booked",
+            "booked up"
+          ],
+          "acceptedTranslations": [
+            "całkowicie zarezerwowany",
+            "komplet",
+            "brak wolnych miejsc"
+          ]
+        },
+        {
+          "id": "restaurant.cancel",
+          "term": "cancel",
+          "ipa": "/ˈkænsəl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "odwołać",
+          "definition": "To say that you no longer want a reservation you made.",
+          "register": "neutralny",
+          "contextPl": "Rezygnacja z rezerwacji",
+          "natural": "",
+          "forms": "canceled",
+          "collocations": "cancel a reservation; cancel last minute",
+          "synonyms": "",
+          "antonyms": "confirm",
+          "notePl": "W amerykańskiej pisowni „canceled” z jednym l.",
+          "examples": [
+            {
+              "en": "I need to cancel my reservation for tomorrow night.",
+              "pl": "Muszę odwołać rezerwację na jutrzejszy wieczór.",
+              "focusEn": "cancel",
+              "focusPl": "odwołać"
+            },
+            {
+              "en": "If you cancel less than two hours before, there's a fee.",
+              "pl": "Jeśli odwołasz mniej niż dwie godziny wcześniej, naliczana jest opłata.",
+              "focusEn": "cancel",
+              "focusPl": "odwołasz"
+            }
+          ],
+          "acceptedAnswers": [
+            "cancel"
+          ],
+          "acceptedTranslations": [
+            "odwołać",
+            "odwoływać",
+            "anulować"
+          ]
+        },
+        {
+          "id": "restaurant.under-the-name",
+          "term": "under the name",
+          "ipa": "/ˌʌndər ðə ˈneɪm/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "na nazwisko",
+          "definition": "Used to say whose name a reservation was made in.",
+          "register": "neutralny",
+          "contextPl": "Podawanie nazwiska przy rezerwacji",
+          "natural": "",
+          "forms": "",
+          "collocations": "book under the name; a reservation under the name",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The table is booked under the name Garcia.",
+              "pl": "Stolik jest zarezerwowany na nazwisko Garcia.",
+              "focusEn": "under the name",
+              "focusPl": "na nazwisko"
+            },
+            {
+              "en": "Hi, we have a table for two under the name Kowalski.",
+              "pl": "Dzień dobry, mamy stolik dla dwóch osób na nazwisko Kowalski.",
+              "focusEn": "under the name",
+              "focusPl": "na nazwisko"
+            }
+          ],
+          "acceptedAnswers": [
+            "under the name"
+          ],
+          "acceptedTranslations": [
+            "na nazwisko"
+          ]
+        },
+        {
+          "id": "restaurant.outdoor-seating",
+          "term": "outdoor seating",
+          "ipa": "/ˌaʊtdɔːr ˈsiːtɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stoliki na zewnątrz",
+          "definition": "Tables outside a restaurant where guests can eat in the open air.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o miejsca w ogródku",
+          "natural": "patio",
+          "forms": "",
+          "collocations": "outdoor seating available; sit outside",
+          "synonyms": "patio",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have any outdoor seating available this evening?",
+              "pl": "Czy mają państwo dziś wieczorem wolne stoliki na zewnątrz?",
+              "focusEn": "outdoor seating",
+              "focusPl": "stoliki na zewnątrz"
+            },
+            {
+              "en": "The outdoor seating fills up fast when the weather is nice.",
+              "pl": "Ogródek szybko się zapełnia, kiedy jest ładna pogoda.",
+              "focusEn": "outdoor seating",
+              "focusPl": "Ogródek"
+            }
+          ],
+          "acceptedAnswers": [
+            "outdoor seating",
+            "patio",
+            "sit outside"
+          ],
+          "acceptedTranslations": [
+            "stoliki na zewnątrz",
+            "ogródek",
+            "miejsca na zewnątrz"
+          ]
+        },
+        {
+          "id": "restaurant.booth",
+          "term": "booth",
+          "ipa": "/buːθ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "loża",
+          "definition": "A table with fixed padded benches on both sides, often by a wall.",
+          "register": "neutralny",
+          "contextPl": "Wybór miejsca do siedzenia w sali",
+          "natural": "",
+          "forms": "booths",
+          "collocations": "sit in a booth; a corner booth",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Typowe dla amerykańskich restauracji i barów.",
+          "examples": [
+            {
+              "en": "Could we have a booth instead of a table in the middle?",
+              "pl": "Czy możemy dostać lożę zamiast stolika na środku sali?",
+              "focusEn": "booth",
+              "focusPl": "lożę"
+            },
+            {
+              "en": "The host led us to a cozy booth in the back.",
+              "pl": "Hostessa zaprowadziła nas do przytulnej loży w głębi sali.",
+              "focusEn": "booth",
+              "focusPl": "loży"
+            }
+          ],
+          "acceptedAnswers": [
+            "booth"
+          ],
+          "acceptedTranslations": [
+            "loża",
+            "boks"
+          ]
+        },
+        {
+          "id": "restaurant.high-chair",
+          "term": "high chair",
+          "ipa": "/ˈhaɪ ˌtʃɛr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "krzesełko do karmienia",
+          "definition": "A tall chair with a tray for a baby or small child to sit in.",
+          "register": "neutralny",
+          "contextPl": "Przyjście do restauracji z małym dzieckiem",
+          "natural": "",
+          "forms": "high chairs",
+          "collocations": "need a high chair; bring a high chair",
+          "synonyms": "booster seat",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll need a high chair for our one-year-old.",
+              "pl": "Będziemy potrzebować krzesełka do karmienia dla naszego rocznego dziecka.",
+              "focusEn": "high chair",
+              "focusPl": "krzesełka do karmienia"
+            },
+            {
+              "en": "The host brought a high chair over before we sat down.",
+              "pl": "Hostessa przyniosła krzesełko do karmienia, zanim usiedliśmy.",
+              "focusEn": "high chair",
+              "focusPl": "krzesełko do karmienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "high chair",
+            "highchair"
+          ],
+          "acceptedTranslations": [
+            "krzesełko do karmienia"
+          ]
+        },
+        {
+          "id": "restaurant.dress-code",
+          "term": "dress code",
+          "ipa": "/ˈdrɛs ˌkoʊd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "zasady ubioru",
+          "definition": "Rules about what clothes guests are allowed to wear in a place.",
+          "register": "neutralny",
+          "contextPl": "Eleganckie lokale wymagające odpowiedniego stroju",
+          "natural": "",
+          "forms": "dress codes",
+          "collocations": "strict dress code; casual dress code",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is there a dress code, or can we come in jeans?",
+              "pl": "Czy obowiązują jakieś zasady ubioru, czy możemy przyjść w dżinsach?",
+              "focusEn": "dress code",
+              "focusPl": "zasady ubioru"
+            },
+            {
+              "en": "The restaurant has a strict dress code, so I wore a jacket.",
+              "pl": "W restauracji obowiązuje ścisły dress code, więc założyłem marynarkę.",
+              "focusEn": "dress code",
+              "focusPl": "dress code"
+            }
+          ],
+          "acceptedAnswers": [
+            "dress code"
+          ],
+          "acceptedTranslations": [
+            "zasady ubioru",
+            "dress code",
+            "wymagany strój"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "restaurant.ordering",
+      "namePl": "Zamawianie",
+      "scenePl": "Przy stoliku, gdy kelner przyjmuje zamówienie",
+      "entries": [
+        {
+          "id": "restaurant.menu",
+          "term": "menu",
+          "ipa": "/ˈmɛnjuː/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "menu",
+          "definition": "A list of the food and drinks a restaurant serves, with prices.",
+          "register": "neutralny",
+          "contextPl": "Wybieranie dań przy stoliku",
+          "natural": "",
+          "forms": "menus",
+          "collocations": "look at the menu; dessert menu; lunch menu",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could we see the menu, please?",
+              "pl": "Czy możemy prosić o menu?",
+              "focusEn": "menu",
+              "focusPl": "menu"
+            },
+            {
+              "en": "The waiter left the menus and promised to come back in a minute.",
+              "pl": "Kelner zostawił karty dań i obiecał wrócić za minutę.",
+              "focusEn": "menus",
+              "focusPl": "karty dań"
+            }
+          ],
+          "acceptedAnswers": [
+            "menu"
+          ],
+          "acceptedTranslations": [
+            "menu",
+            "karta dań",
+            "karta"
+          ]
+        },
+        {
+          "id": "restaurant.waiter",
+          "term": "waiter",
+          "ipa": "/ˈweɪtər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "kelner",
+          "definition": "A man whose job is to bring food and drinks to people at their tables.",
+          "register": "neutralny",
+          "contextPl": "Obsługa przy stoliku",
+          "natural": "",
+          "forms": "waiters",
+          "collocations": "ask the waiter; call the waiter over",
+          "synonyms": "server",
+          "antonyms": "customer",
+          "notePl": "Kelnerka to „waitress”; neutralnie w USA „server”.",
+          "examples": [
+            {
+              "en": "Our waiter recommended the fish of the day.",
+              "pl": "Nasz kelner polecił rybę dnia.",
+              "focusEn": "waiter",
+              "focusPl": "kelner"
+            },
+            {
+              "en": "Let's ask the waiter whether the soup is vegetarian.",
+              "pl": "Zapytajmy kelnera, czy zupa jest wegetariańska.",
+              "focusEn": "waiter",
+              "focusPl": "kelnera"
+            }
+          ],
+          "acceptedAnswers": [
+            "waiter"
+          ],
+          "acceptedTranslations": [
+            "kelner"
+          ]
+        },
+        {
+          "id": "restaurant.server",
+          "term": "server",
+          "ipa": "/ˈsɜːrvər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kelner",
+          "definition": "A person of any gender who takes orders and brings food in a restaurant.",
+          "register": "neutralny",
+          "contextPl": "Neutralne określenie kelnera lub kelnerki w USA",
+          "natural": "waiter",
+          "forms": "servers",
+          "collocations": "your server tonight; ask your server",
+          "synonyms": "waiter; waitress",
+          "antonyms": "",
+          "notePl": "W USA to najczęstsze, neutralne słowo; przedstawiając się, kelner mówi „I'll be your server”.",
+          "examples": [
+            {
+              "en": "Hi, I'm Jenna, and I'll be your server tonight.",
+              "pl": "Cześć, jestem Jenna i będę dziś waszą kelnerką.",
+              "focusEn": "server",
+              "focusPl": "kelnerką"
+            },
+            {
+              "en": "Our server remembered our whole order without writing it down.",
+              "pl": "Nasz kelner zapamiętał całe zamówienie, niczego nie zapisując.",
+              "focusEn": "server",
+              "focusPl": "kelner"
+            }
+          ],
+          "acceptedAnswers": [
+            "server"
+          ],
+          "acceptedTranslations": [
+            "kelner",
+            "kelnerka"
+          ]
+        },
+        {
+          "id": "restaurant.order",
+          "term": "order",
+          "ipa": "/ˈɔːrdər/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "zamówić",
+          "definition": "To ask for food or drinks that you want to have in a restaurant.",
+          "register": "neutralny",
+          "contextPl": "Składanie zamówienia u kelnera",
+          "natural": "",
+          "forms": "ordered",
+          "collocations": "order dinner; ready to order; order the special",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Are you ready to order, or do you need a few more minutes?",
+              "pl": "Są państwo gotowi zamówić, czy potrzebują jeszcze kilku minut?",
+              "focusEn": "order",
+              "focusPl": "zamówić"
+            },
+            {
+              "en": "My husband ordered the salmon, and I'll have the same.",
+              "pl": "Mąż zamówił łososia, a ja wezmę to samo.",
+              "focusEn": "ordered",
+              "focusPl": "zamówił"
+            }
+          ],
+          "acceptedAnswers": [
+            "order"
+          ],
+          "acceptedTranslations": [
+            "zamówić",
+            "zamawiać"
+          ]
+        },
+        {
+          "id": "restaurant.order-2",
+          "term": "order",
+          "ipa": "/ˈɔːrdər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zamówienie",
+          "definition": "The food and drinks that you ask for in a restaurant.",
+          "register": "neutralny",
+          "contextPl": "Kelner przyjmuje lub powtarza zamówienie",
+          "natural": "",
+          "forms": "orders",
+          "collocations": "take someone's order; place an order; read back the order",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I take your order now, or should I come back?",
+              "pl": "Mogę przyjąć zamówienie teraz, czy mam przyjść później?",
+              "focusEn": "order",
+              "focusPl": "zamówienie"
+            },
+            {
+              "en": "The waiter read our order back to make sure it was right.",
+              "pl": "Kelner powtórzył nasze zamówienie, żeby upewnić się, że wszystko się zgadza.",
+              "focusEn": "order",
+              "focusPl": "zamówienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "order"
+          ],
+          "acceptedTranslations": [
+            "zamówienie"
+          ]
+        },
+        {
+          "id": "restaurant.ill-have",
+          "term": "I'll have",
+          "ipa": "/aɪl ˈhæv/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "poproszę",
+          "definition": "A polite and natural way to say what you want to order.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie konkretnego dania",
+          "natural": "I'll get",
+          "forms": "",
+          "collocations": "I'll have the...; I'll have the same",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll have the tomato soup and a glass of water.",
+              "pl": "Poproszę zupę pomidorową i szklankę wody.",
+              "focusEn": "I'll have",
+              "focusPl": "Poproszę"
+            },
+            {
+              "en": "For my main course, I'll have the grilled chicken.",
+              "pl": "Na danie główne wezmę grillowanego kurczaka.",
+              "focusEn": "I'll have",
+              "focusPl": "wezmę"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'll have",
+            "I will have",
+            "I'll get"
+          ],
+          "acceptedTranslations": [
+            "poproszę",
+            "wezmę",
+            "zamówię"
+          ]
+        },
+        {
+          "id": "restaurant.id-like",
+          "term": "I'd like",
+          "ipa": "/aɪd ˈlaɪk/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "chciałbym",
+          "definition": "A polite way to say what you want, used when ordering food.",
+          "register": "neutralny",
+          "contextPl": "Grzeczne składanie zamówienia",
+          "natural": "I'll have",
+          "forms": "",
+          "collocations": "I'd like the...; I'd like to order",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like the steak with a side of fries.",
+              "pl": "Chciałbym stek z frytkami.",
+              "focusEn": "I'd like",
+              "focusPl": "Chciałbym"
+            },
+            {
+              "en": "To start, I'd like the mushroom soup, please.",
+              "pl": "Na początek chciałabym zupę grzybową.",
+              "focusEn": "I'd like",
+              "focusPl": "chciałabym"
+            }
+          ],
+          "acceptedAnswers": [
+            "I'd like",
+            "I would like"
+          ],
+          "acceptedTranslations": [
+            "chciałbym",
+            "chciałabym",
+            "poproszę"
+          ]
+        },
+        {
+          "id": "restaurant.recommend",
+          "term": "recommend",
+          "ipa": "/ˌrɛkəˈmɛnd/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "polecić",
+          "definition": "To say that a dish is good and suggest that someone order it.",
+          "register": "neutralny",
+          "contextPl": "Pytanie kelnera o radę przy wyborze dania",
+          "natural": "",
+          "forms": "recommended",
+          "collocations": "highly recommend; what do you recommend",
+          "synonyms": "suggest",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What do you recommend for someone who doesn't eat meat?",
+              "pl": "Co pan poleca komuś, kto nie je mięsa?",
+              "focusEn": "recommend",
+              "focusPl": "poleca"
+            },
+            {
+              "en": "The waiter recommended the lamb, so we both ordered it.",
+              "pl": "Kelner polecił jagnięcinę, więc oboje ją zamówiliśmy.",
+              "focusEn": "recommended",
+              "focusPl": "polecił"
+            }
+          ],
+          "acceptedAnswers": [
+            "recommend"
+          ],
+          "acceptedTranslations": [
+            "polecić",
+            "polecać",
+            "zarekomendować"
+          ]
+        },
+        {
+          "id": "restaurant.special",
+          "term": "special",
+          "ipa": "/ˈspɛʃəl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "danie dnia",
+          "definition": "A dish that is not on the regular menu and is offered only on a certain day.",
+          "register": "neutralny",
+          "contextPl": "Kelner przedstawia propozycje dnia",
+          "natural": "",
+          "forms": "specials",
+          "collocations": "tonight's specials; the lunch special; daily special",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let me tell you about tonight's specials.",
+              "pl": "Pozwólcie, że opowiem o dzisiejszych daniach dnia.",
+              "focusEn": "specials",
+              "focusPl": "daniach dnia"
+            },
+            {
+              "en": "Is the fish special still available, or did it sell out?",
+              "pl": "Czy ryba z dań dnia jest jeszcze dostępna, czy już się skończyła?",
+              "focusEn": "special",
+              "focusPl": "dań dnia"
+            }
+          ],
+          "acceptedAnswers": [
+            "special",
+            "specials",
+            "daily special"
+          ],
+          "acceptedTranslations": [
+            "danie dnia",
+            "propozycja dnia"
+          ]
+        },
+        {
+          "id": "restaurant.appetizer",
+          "term": "appetizer",
+          "ipa": "/ˈæpəˌtaɪzər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przystawka",
+          "definition": "A small dish eaten before the main part of a meal.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie czegoś na początek",
+          "natural": "",
+          "forms": "appetizers",
+          "collocations": "share an appetizer; order appetizers",
+          "synonyms": "starter",
+          "antonyms": "",
+          "notePl": "W USA „appetizer”, w Wielkiej Brytanii „starter”.",
+          "examples": [
+            {
+              "en": "Let's share a couple of appetizers before the main course.",
+              "pl": "Weźmy na spółkę kilka przystawek przed daniem głównym.",
+              "focusEn": "appetizers",
+              "focusPl": "przystawek"
+            },
+            {
+              "en": "The garlic shrimp appetizer came out in just five minutes.",
+              "pl": "Przystawka z krewetkami w czosnku pojawiła się już po pięciu minutach.",
+              "focusEn": "appetizer",
+              "focusPl": "Przystawka"
+            }
+          ],
+          "acceptedAnswers": [
+            "appetizer",
+            "starter"
+          ],
+          "acceptedTranslations": [
+            "przystawka"
+          ]
+        },
+        {
+          "id": "restaurant.main-course",
+          "term": "main course",
+          "ipa": "/ˌmeɪn ˈkɔːrs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "danie główne",
+          "definition": "The largest and most important dish of a meal.",
+          "register": "neutralny",
+          "contextPl": "Wybór głównej części posiłku",
+          "natural": "",
+          "forms": "main courses",
+          "collocations": "for the main course; order the main course",
+          "synonyms": "entrée",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "For the main course, I'll have the roast duck.",
+              "pl": "Na danie główne poproszę pieczoną kaczkę.",
+              "focusEn": "main course",
+              "focusPl": "danie główne"
+            },
+            {
+              "en": "Should we order dessert now or after the main course?",
+              "pl": "Zamawiamy deser teraz czy po daniu głównym?",
+              "focusEn": "main course",
+              "focusPl": "daniu głównym"
+            }
+          ],
+          "acceptedAnswers": [
+            "main course",
+            "main",
+            "entree"
+          ],
+          "acceptedTranslations": [
+            "danie główne",
+            "drugie danie"
+          ]
+        },
+        {
+          "id": "restaurant.entree",
+          "term": "entrée",
+          "ipa": "/ˈɑːntreɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "danie główne",
+          "definition": "In the US, the main dish of a meal in a restaurant.",
+          "register": "neutralny",
+          "contextPl": "Amerykańskie menu, sekcja dań głównych",
+          "natural": "",
+          "forms": "entrées",
+          "collocations": "entrée salad; choose an entrée",
+          "synonyms": "main course",
+          "antonyms": "",
+          "notePl": "W USA „entrée” to danie główne, a nie przystawka jak we Francji.",
+          "examples": [
+            {
+              "en": "All entrées come with a side salad and bread.",
+              "pl": "Do wszystkich dań głównych podawana jest sałatka i pieczywo.",
+              "focusEn": "entrées",
+              "focusPl": "dań głównych"
+            },
+            {
+              "en": "I can't decide between the two vegetarian entrées.",
+              "pl": "Nie mogę się zdecydować między dwoma wegetariańskimi daniami głównymi.",
+              "focusEn": "entrées",
+              "focusPl": "daniami głównymi"
+            }
+          ],
+          "acceptedAnswers": [
+            "entrée"
+          ],
+          "acceptedTranslations": [
+            "danie główne"
+          ]
+        },
+        {
+          "id": "restaurant.side",
+          "term": "side",
+          "ipa": "/saɪd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dodatek",
+          "definition": "A small extra dish, like fries or salad, served with a main dish.",
+          "register": "neutralny",
+          "contextPl": "Wybór dodatku do dania głównego",
+          "natural": "",
+          "forms": "sides",
+          "collocations": "a side of fries; choose two sides; side dish",
+          "synonyms": "side dish",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Which side would you like with that, fries or salad?",
+              "pl": "Jaki dodatek do tego, frytki czy sałatka?",
+              "focusEn": "side",
+              "focusPl": "dodatek"
+            },
+            {
+              "en": "Can I get a side of rice instead of potatoes?",
+              "pl": "Czy mogę dostać ryż jako dodatek zamiast ziemniaków?",
+              "focusEn": "side",
+              "focusPl": "dodatek"
+            }
+          ],
+          "acceptedAnswers": [
+            "side",
+            "side dish"
+          ],
+          "acceptedTranslations": [
+            "dodatek",
+            "dodatek do dania"
+          ]
+        },
+        {
+          "id": "restaurant.dessert",
+          "term": "dessert",
+          "ipa": "/dɪˈzɜːrt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "deser",
+          "definition": "Sweet food eaten at the end of a meal.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie czegoś słodkiego na koniec",
+          "natural": "",
+          "forms": "desserts",
+          "collocations": "order dessert; dessert menu; save room for dessert",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Nie myl z „desert” (pustynia).",
+          "examples": [
+            {
+              "en": "Did you save room for dessert?",
+              "pl": "Zostawili państwo miejsce na deser?",
+              "focusEn": "dessert",
+              "focusPl": "deser"
+            },
+            {
+              "en": "We'll look at the dessert menu after we finish our pasta.",
+              "pl": "Zajrzymy do karty deserów, kiedy skończymy makaron.",
+              "focusEn": "dessert",
+              "focusPl": "deserów"
+            }
+          ],
+          "acceptedAnswers": [
+            "dessert"
+          ],
+          "acceptedTranslations": [
+            "deser"
+          ]
+        },
+        {
+          "id": "restaurant.allergic",
+          "term": "allergic",
+          "ipa": "/əˈlɜːrdʒɪk/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "uczulony",
+          "definition": "Having a bad physical reaction to a certain food.",
+          "register": "neutralny",
+          "contextPl": "Informowanie kelnera o alergii",
+          "natural": "",
+          "forms": "allergic to",
+          "collocations": "be allergic to nuts; severely allergic",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm allergic to nuts. Does this dish contain any?",
+              "pl": "Jestem uczulony na orzechy. Czy to danie je zawiera?",
+              "focusEn": "allergic",
+              "focusPl": "uczulony"
+            },
+            {
+              "en": "My daughter is allergic to shellfish, so please tell the kitchen.",
+              "pl": "Moja córka jest uczulona na skorupiaki, więc proszę przekazać to kuchni.",
+              "focusEn": "allergic",
+              "focusPl": "uczulona"
+            }
+          ],
+          "acceptedAnswers": [
+            "allergic"
+          ],
+          "acceptedTranslations": [
+            "uczulony",
+            "mający alergię"
+          ]
+        },
+        {
+          "id": "restaurant.on-the-side",
+          "term": "on the side",
+          "ipa": "/ˌɑːn ðə ˈsaɪd/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "osobno",
+          "definition": "Served in a separate small dish, not poured on the food.",
+          "register": "neutralny",
+          "contextPl": "Prośba o sos lub dressing podany obok",
+          "natural": "",
+          "forms": "",
+          "collocations": "dressing on the side; sauce on the side",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could I have the dressing on the side, please?",
+              "pl": "Czy mogę dostać sos osobno?",
+              "focusEn": "on the side",
+              "focusPl": "osobno"
+            },
+            {
+              "en": "He ordered the sauce on the side because he's counting calories.",
+              "pl": "Zamówił sos osobno, bo liczy kalorie.",
+              "focusEn": "on the side",
+              "focusPl": "osobno"
+            }
+          ],
+          "acceptedAnswers": [
+            "on the side"
+          ],
+          "acceptedTranslations": [
+            "osobno",
+            "obok",
+            "oddzielnie"
+          ]
+        },
+        {
+          "id": "restaurant.hold",
+          "term": "hold",
+          "ipa": "/hoʊld/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pominąć",
+          "definition": "To leave out an ingredient from a dish you are ordering.",
+          "register": "potoczny",
+          "contextPl": "Prośba o danie bez jakiegoś składnika",
+          "natural": "no onions",
+          "forms": "held",
+          "collocations": "hold the onions; hold the cheese",
+          "synonyms": "leave out",
+          "antonyms": "",
+          "notePl": "Potoczne „hold the X” = „bez X”, np. „hold the mayo”.",
+          "examples": [
+            {
+              "en": "Can I get the burger, but hold the onions?",
+              "pl": "Mogę prosić burgera, ale bez cebuli?",
+              "focusEn": "hold the onions",
+              "focusPl": "bez cebuli"
+            },
+            {
+              "en": "She asked the server to hold the cheese on her salad.",
+              "pl": "Poprosiła kelnera, żeby pominął ser w jej sałatce.",
+              "focusEn": "hold",
+              "focusPl": "pominął"
+            }
+          ],
+          "acceptedAnswers": [
+            "hold",
+            "leave out"
+          ],
+          "acceptedTranslations": [
+            "pominąć",
+            "bez",
+            "nie dodawać"
+          ]
+        },
+        {
+          "id": "restaurant.substitute",
+          "term": "substitute",
+          "ipa": "/ˈsʌbstɪˌtuːt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "zamienić",
+          "definition": "To get one food instead of another that normally comes with a dish.",
+          "register": "neutralny",
+          "contextPl": "Prośba o zmianę składnika lub dodatku",
+          "natural": "swap",
+          "forms": "substituted",
+          "collocations": "substitute A for B; no substitutions",
+          "synonyms": "swap; replace",
+          "antonyms": "",
+          "notePl": "„Substitute salad for fries” = sałatka zamiast frytek.",
+          "examples": [
+            {
+              "en": "Can I substitute a salad for the fries?",
+              "pl": "Czy mogę zamienić frytki na sałatkę?",
+              "focusEn": "substitute",
+              "focusPl": "zamienić"
+            },
+            {
+              "en": "Sorry, the kitchen can't substitute anything on the lunch menu.",
+              "pl": "Przepraszam, kuchnia nie może niczego zamieniać w menu lunchowym.",
+              "focusEn": "substitute",
+              "focusPl": "zamieniać"
+            }
+          ],
+          "acceptedAnswers": [
+            "substitute",
+            "swap"
+          ],
+          "acceptedTranslations": [
+            "zamienić",
+            "zamieniać",
+            "zastąpić",
+            "zastępować"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "restaurant.menu-dishes",
+      "namePl": "Karta dań i potrawy",
+      "scenePl": "Przeglądanie karty dań przy stoliku przed złożeniem zamówienia",
+      "entries": [
+        {
+          "id": "restaurant.soup",
+          "term": "soup",
+          "ipa": "/suːp/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "zupa",
+          "definition": "A liquid food made by cooking vegetables, meat or fish in water.",
+          "register": "neutralny",
+          "contextPl": "Wybór zupy jako przystawki lub lekkiego posiłku",
+          "natural": "",
+          "forms": "soups",
+          "collocations": "soup of the day; a bowl of soup",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The soup of the day is creamy mushroom.",
+              "pl": "Zupa dnia to krem z grzybów.",
+              "focusEn": "soup",
+              "focusPl": "Zupa"
+            },
+            {
+              "en": "I'm going to start with the soup and then decide.",
+              "pl": "Zacznę od zupy, a potem się zastanowię.",
+              "focusEn": "soup",
+              "focusPl": "zupy"
+            }
+          ],
+          "acceptedAnswers": [
+            "soup"
+          ],
+          "acceptedTranslations": [
+            "zupa"
+          ]
+        },
+        {
+          "id": "restaurant.salad",
+          "term": "salad",
+          "ipa": "/ˈsæləd/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "sałatka",
+          "definition": "A dish of mixed raw vegetables, often with dressing.",
+          "register": "neutralny",
+          "contextPl": "Lekkie danie lub dodatek z karty",
+          "natural": "",
+          "forms": "salads",
+          "collocations": "house salad; side salad; salad dressing",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The house salad comes with a light lemon dressing.",
+              "pl": "Sałatka firmowa jest podawana z lekkim sosem cytrynowym.",
+              "focusEn": "salad",
+              "focusPl": "Sałatka"
+            },
+            {
+              "en": "This salad is big enough to be a whole meal.",
+              "pl": "Ta sałatka jest na tyle duża, że może być całym posiłkiem.",
+              "focusEn": "salad",
+              "focusPl": "sałatka"
+            }
+          ],
+          "acceptedAnswers": [
+            "salad"
+          ],
+          "acceptedTranslations": [
+            "sałatka",
+            "sałata"
+          ]
+        },
+        {
+          "id": "restaurant.dish",
+          "term": "dish",
+          "ipa": "/dɪʃ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "danie",
+          "definition": "Food prepared in a particular way as part of a meal.",
+          "register": "neutralny",
+          "contextPl": "Mówienie o pozycjach w karcie",
+          "natural": "",
+          "forms": "dishes",
+          "collocations": "signature dish; main dish; vegetarian dish",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Which dish on the menu is the most popular?",
+              "pl": "Które danie w menu jest najpopularniejsze?",
+              "focusEn": "dish",
+              "focusPl": "danie"
+            },
+            {
+              "en": "That pasta dish looks amazing in the photo on the menu.",
+              "pl": "To danie z makaronem wygląda świetnie na zdjęciu w menu.",
+              "focusEn": "dish",
+              "focusPl": "danie"
+            }
+          ],
+          "acceptedAnswers": [
+            "dish"
+          ],
+          "acceptedTranslations": [
+            "danie",
+            "potrawa"
+          ]
+        },
+        {
+          "id": "restaurant.vegetarian",
+          "term": "vegetarian",
+          "ipa": "/ˌvɛdʒəˈtɛriən/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wegetariański",
+          "definition": "Containing no meat or fish.",
+          "register": "neutralny",
+          "contextPl": "Szukanie dań bez mięsa w karcie",
+          "natural": "",
+          "forms": "",
+          "collocations": "vegetarian option; vegetarian dish",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Are there any vegetarian options on this menu?",
+              "pl": "Czy w tym menu są jakieś opcje wegetariańskie?",
+              "focusEn": "vegetarian",
+              "focusPl": "wegetariańskie"
+            },
+            {
+              "en": "The vegetarian lasagna is made with spinach and ricotta.",
+              "pl": "Wegetariańska lasagne jest zrobiona ze szpinakiem i ricottą.",
+              "focusEn": "vegetarian",
+              "focusPl": "Wegetariańska"
+            }
+          ],
+          "acceptedAnswers": [
+            "vegetarian",
+            "veggie"
+          ],
+          "acceptedTranslations": [
+            "wegetariański",
+            "jarski"
+          ]
+        },
+        {
+          "id": "restaurant.spicy",
+          "term": "spicy",
+          "ipa": "/ˈspaɪsi/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pikantny",
+          "definition": "Having a strong, hot taste from chili or spices.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o ostrość dania",
+          "natural": "",
+          "forms": "spicier – spiciest",
+          "collocations": "too spicy; mildly spicy; extra spicy",
+          "synonyms": "hot",
+          "antonyms": "mild",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is the chicken curry very spicy?",
+              "pl": "Czy kurczak curry jest bardzo pikantny?",
+              "focusEn": "spicy",
+              "focusPl": "pikantny"
+            },
+            {
+              "en": "The menu marks the spicy dishes with a small red pepper.",
+              "pl": "W menu ostre dania są oznaczone małą czerwoną papryczką.",
+              "focusEn": "spicy",
+              "focusPl": "ostre"
+            }
+          ],
+          "acceptedAnswers": [
+            "spicy"
+          ],
+          "acceptedTranslations": [
+            "pikantny",
+            "ostry"
+          ]
+        },
+        {
+          "id": "restaurant.grilled",
+          "term": "grilled",
+          "ipa": "/ɡrɪld/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "grillowany",
+          "definition": "Cooked over or under strong direct heat.",
+          "register": "neutralny",
+          "contextPl": "Opis sposobu przygotowania w karcie",
+          "natural": "",
+          "forms": "",
+          "collocations": "grilled salmon; grilled vegetables",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm torn between the grilled salmon and the pasta.",
+              "pl": "Waham się między grillowanym łososiem a makaronem.",
+              "focusEn": "grilled",
+              "focusPl": "grillowanym"
+            },
+            {
+              "en": "Everything in the grilled section comes with roasted vegetables.",
+              "pl": "Wszystko z działu dań z grilla podawane jest z pieczonymi warzywami.",
+              "focusEn": "grilled",
+              "focusPl": "z grilla"
+            }
+          ],
+          "acceptedAnswers": [
+            "grilled"
+          ],
+          "acceptedTranslations": [
+            "grillowany",
+            "z grilla"
+          ]
+        },
+        {
+          "id": "restaurant.fried",
+          "term": "fried",
+          "ipa": "/fraɪd/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "smażony",
+          "definition": "Cooked in hot oil or fat.",
+          "register": "neutralny",
+          "contextPl": "Opis sposobu przygotowania w karcie",
+          "natural": "",
+          "forms": "",
+          "collocations": "fried chicken; deep-fried; pan-fried",
+          "synonyms": "",
+          "antonyms": "baked",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The fried calamari is a great appetizer to share.",
+              "pl": "Smażone kalmary to świetna przystawka do podzielenia się.",
+              "focusEn": "fried",
+              "focusPl": "Smażone"
+            },
+            {
+              "en": "Is the chicken in this sandwich fried or baked?",
+              "pl": "Czy kurczak w tej kanapce jest smażony czy pieczony?",
+              "focusEn": "fried",
+              "focusPl": "smażony"
+            }
+          ],
+          "acceptedAnswers": [
+            "fried"
+          ],
+          "acceptedTranslations": [
+            "smażony"
+          ]
+        },
+        {
+          "id": "restaurant.homemade",
+          "term": "homemade",
+          "ipa": "/ˌhoʊmˈmeɪd/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "domowej roboty",
+          "definition": "Made in the restaurant itself, not bought ready-made.",
+          "register": "neutralny",
+          "contextPl": "Zachwalanie potraw robionych na miejscu",
+          "natural": "",
+          "forms": "",
+          "collocations": "homemade bread; homemade pasta",
+          "synonyms": "house-made",
+          "antonyms": "store-bought",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "According to the menu, all their desserts are homemade.",
+              "pl": "Według menu wszystkie ich desery są domowej roboty.",
+              "focusEn": "homemade",
+              "focusPl": "domowej roboty"
+            },
+            {
+              "en": "The homemade bread is served warm with butter.",
+              "pl": "Domowy chleb podawany jest na ciepło z masłem.",
+              "focusEn": "homemade",
+              "focusPl": "Domowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "homemade",
+            "house-made"
+          ],
+          "acceptedTranslations": [
+            "domowej roboty",
+            "domowy",
+            "własnej roboty"
+          ]
+        },
+        {
+          "id": "restaurant.portion",
+          "term": "portion",
+          "ipa": "/ˈpɔːrʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "porcja",
+          "definition": "The amount of food served to one person.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o wielkość dań",
+          "natural": "",
+          "forms": "portions",
+          "collocations": "big portions; a smaller portion; portion size",
+          "synonyms": "serving",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How big are the portions here?",
+              "pl": "Jak duże są tu porcje?",
+              "focusEn": "portions",
+              "focusPl": "porcje"
+            },
+            {
+              "en": "The menu offers a smaller portion of pasta for kids.",
+              "pl": "W menu jest mniejsza porcja makaronu dla dzieci.",
+              "focusEn": "portion",
+              "focusPl": "porcja"
+            }
+          ],
+          "acceptedAnswers": [
+            "portion",
+            "serving"
+          ],
+          "acceptedTranslations": [
+            "porcja"
+          ]
+        },
+        {
+          "id": "restaurant.kids-menu",
+          "term": "kids' menu",
+          "ipa": "/ˈkɪdz ˌmɛnjuː/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "menu dla dzieci",
+          "definition": "A special menu with simple dishes and small portions for children.",
+          "register": "neutralny",
+          "contextPl": "Wizyta w restauracji z dziećmi",
+          "natural": "",
+          "forms": "kids' menus",
+          "collocations": "order from the kids' menu",
+          "synonyms": "children's menu",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have a kids' menu for our son?",
+              "pl": "Czy macie menu dla dzieci dla naszego syna?",
+              "focusEn": "kids' menu",
+              "focusPl": "menu dla dzieci"
+            },
+            {
+              "en": "The kids' menu has chicken nuggets and mac and cheese.",
+              "pl": "W menu dla dzieci są kawałki kurczaka i makaron z serem.",
+              "focusEn": "kids' menu",
+              "focusPl": "menu dla dzieci"
+            }
+          ],
+          "acceptedAnswers": [
+            "kids' menu",
+            "kids menu",
+            "children's menu"
+          ],
+          "acceptedTranslations": [
+            "menu dla dzieci",
+            "karta dla dzieci"
+          ]
+        },
+        {
+          "id": "restaurant.ingredient",
+          "term": "ingredient",
+          "ipa": "/ɪnˈɡriːdiənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "składnik",
+          "definition": "One of the foods that are used to make a dish.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie, z czego zrobione jest danie",
+          "natural": "",
+          "forms": "ingredients",
+          "collocations": "main ingredients; fresh ingredients; secret ingredient",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The menu lists the main ingredients under each dish.",
+              "pl": "W menu pod każdym daniem podano główne składniki.",
+              "focusEn": "ingredients",
+              "focusPl": "składniki"
+            },
+            {
+              "en": "Could you check if any ingredient in this dish contains gluten?",
+              "pl": "Czy może pan sprawdzić, czy któryś składnik tego dania zawiera gluten?",
+              "focusEn": "ingredient",
+              "focusPl": "składnik"
+            }
+          ],
+          "acceptedAnswers": [
+            "ingredient"
+          ],
+          "acceptedTranslations": [
+            "składnik"
+          ]
+        },
+        {
+          "id": "restaurant.gluten-free",
+          "term": "gluten-free",
+          "ipa": "/ˌɡluːtən ˈfriː/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bezglutenowy",
+          "definition": "Made without gluten, a protein found in wheat.",
+          "register": "neutralny",
+          "contextPl": "Szukanie dań dla osób na diecie bezglutenowej",
+          "natural": "",
+          "forms": "",
+          "collocations": "gluten-free pasta; gluten-free options",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have gluten-free pasta or bread?",
+              "pl": "Czy macie bezglutenowy makaron albo pieczywo?",
+              "focusEn": "gluten-free",
+              "focusPl": "bezglutenowy"
+            },
+            {
+              "en": "The gluten-free options are marked with a small leaf.",
+              "pl": "Opcje bezglutenowe są oznaczone małym listkiem.",
+              "focusEn": "gluten-free",
+              "focusPl": "bezglutenowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "gluten-free",
+            "gluten free"
+          ],
+          "acceptedTranslations": [
+            "bezglutenowy",
+            "bez glutenu"
+          ]
+        },
+        {
+          "id": "restaurant.seasonal",
+          "term": "seasonal",
+          "ipa": "/ˈsiːzənəl/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "sezonowy",
+          "definition": "Available or served only at a certain time of year.",
+          "register": "neutralny",
+          "contextPl": "Dania z karty zmieniającej się z porami roku",
+          "natural": "",
+          "forms": "",
+          "collocations": "seasonal menu; seasonal vegetables",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The seasonal menu changes every three months.",
+              "pl": "Menu sezonowe zmienia się co trzy miesiące.",
+              "focusEn": "seasonal",
+              "focusPl": "sezonowe"
+            },
+            {
+              "en": "Try the seasonal soup; it's made with fresh pumpkin.",
+              "pl": "Spróbuj sezonowej zupy, jest ze świeżej dyni.",
+              "focusEn": "seasonal",
+              "focusPl": "sezonowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "seasonal"
+          ],
+          "acceptedTranslations": [
+            "sezonowy"
+          ]
+        },
+        {
+          "id": "restaurant.house-specialty",
+          "term": "house specialty",
+          "ipa": "/ˈhaʊs ˌspɛʃəlti/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "specjalność lokalu",
+          "definition": "The dish a restaurant is best known for.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o najlepsze danie restauracji",
+          "natural": "",
+          "forms": "house specialties",
+          "collocations": "try the house specialty",
+          "synonyms": "signature dish",
+          "antonyms": "",
+          "notePl": "W pisowni amerykańskiej „specialty”, nie „speciality”.",
+          "examples": [
+            {
+              "en": "The roast duck is the house specialty.",
+              "pl": "Pieczona kaczka to specjalność lokalu.",
+              "focusEn": "house specialty",
+              "focusPl": "specjalność lokalu"
+            },
+            {
+              "en": "If it's your first visit, try the house specialty.",
+              "pl": "Jeśli to pierwsza wizyta, spróbuj specjalności lokalu.",
+              "focusEn": "house specialty",
+              "focusPl": "specjalności lokalu"
+            }
+          ],
+          "acceptedAnswers": [
+            "house specialty",
+            "signature dish"
+          ],
+          "acceptedTranslations": [
+            "specjalność lokalu",
+            "specjalność zakładu",
+            "specjalność szefa kuchni"
+          ]
+        },
+        {
+          "id": "restaurant.a-la-carte",
+          "term": "à la carte",
+          "ipa": "/ˌɑː lɑː ˈkɑːrt/",
+          "pos": "przysłówek",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "z karty",
+          "definition": "Ordering each dish separately at its own price, not as a set meal.",
+          "register": "formalny",
+          "contextPl": "Zamawianie pojedynczych dań zamiast zestawu",
+          "natural": "",
+          "forms": "",
+          "collocations": "order à la carte; à la carte menu",
+          "synonyms": "",
+          "antonyms": "prix fixe",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can order from the set menu or à la carte.",
+              "pl": "Można zamówić zestaw albo dania z karty.",
+              "focusEn": "à la carte",
+              "focusPl": "z karty"
+            },
+            {
+              "en": "Ordering à la carte ended up costing more than the tasting menu.",
+              "pl": "Zamawianie z karty wyszło drożej niż menu degustacyjne.",
+              "focusEn": "à la carte",
+              "focusPl": "z karty"
+            }
+          ],
+          "acceptedAnswers": [
+            "à la carte"
+          ],
+          "acceptedTranslations": [
+            "z karty",
+            "à la carte"
+          ]
+        },
+        {
+          "id": "restaurant.tasting-menu",
+          "term": "tasting menu",
+          "ipa": "/ˈteɪstɪŋ ˌmɛnjuː/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "menu degustacyjne",
+          "definition": "A set of many small dishes that lets you try a chef's best food.",
+          "register": "neutralny",
+          "contextPl": "Kolacja w eleganckiej restauracji",
+          "natural": "",
+          "forms": "tasting menus",
+          "collocations": "seven-course tasting menu; wine pairing",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The seven-course tasting menu takes about three hours.",
+              "pl": "Siedmiodaniowe menu degustacyjne trwa około trzech godzin.",
+              "focusEn": "tasting menu",
+              "focusPl": "menu degustacyjne"
+            },
+            {
+              "en": "We read through the tasting menu and decided it was too much food.",
+              "pl": "Przeczytaliśmy menu degustacyjne i uznaliśmy, że to za dużo jedzenia.",
+              "focusEn": "tasting menu",
+              "focusPl": "menu degustacyjne"
+            }
+          ],
+          "acceptedAnswers": [
+            "tasting menu"
+          ],
+          "acceptedTranslations": [
+            "menu degustacyjne"
+          ]
+        },
+        {
+          "id": "restaurant.market-price",
+          "term": "market price",
+          "ipa": "/ˈmɑːrkɪt ˌpraɪs/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "rare",
+          "translation": "cena dnia",
+          "definition": "A price that changes daily, often for seafood, instead of a fixed price.",
+          "register": "specjalistyczny",
+          "contextPl": "Owoce morza bez stałej ceny w karcie",
+          "natural": "",
+          "forms": "",
+          "collocations": "listed at market price",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W karcie często skrót „MP”.",
+          "examples": [
+            {
+              "en": "The lobster is listed at market price, so ask the server.",
+              "pl": "Homar ma w karcie cenę dnia, więc zapytaj kelnera.",
+              "focusEn": "market price",
+              "focusPl": "cenę dnia"
+            },
+            {
+              "en": "Market price on the menu usually means it's expensive.",
+              "pl": "Cena dnia w menu zwykle oznacza, że jest drogo.",
+              "focusEn": "Market price",
+              "focusPl": "Cena dnia"
+            }
+          ],
+          "acceptedAnswers": [
+            "market price"
+          ],
+          "acceptedTranslations": [
+            "cena dnia",
+            "cena rynkowa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "restaurant.table-setting",
+      "namePl": "Nakrycie stołu",
+      "scenePl": "Stolik w restauracji podczas posiłku – sztućce, naczynia i dodatki na stole",
+      "entries": [
+        {
+          "id": "restaurant.fork",
+          "term": "fork",
+          "ipa": "/fɔːrk/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "widelec",
+          "definition": "A tool with points used for picking up and eating food.",
+          "register": "neutralny",
+          "contextPl": "Sztućce na stole",
+          "natural": "",
+          "forms": "forks",
+          "collocations": "salad fork; a clean fork",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Excuse me, could I get a clean fork?",
+              "pl": "Przepraszam, czy mogę dostać czysty widelec?",
+              "focusEn": "fork",
+              "focusPl": "widelec"
+            },
+            {
+              "en": "The salad fork is the smaller one on the outside.",
+              "pl": "Widelec do sałatki to ten mniejszy, leżący z zewnątrz.",
+              "focusEn": "fork",
+              "focusPl": "Widelec"
+            }
+          ],
+          "acceptedAnswers": [
+            "fork"
+          ],
+          "acceptedTranslations": [
+            "widelec"
+          ]
+        },
+        {
+          "id": "restaurant.knife",
+          "term": "knife",
+          "ipa": "/naɪf/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "nóż",
+          "definition": "A tool with a sharp blade used for cutting food.",
+          "register": "neutralny",
+          "contextPl": "Sztućce na stole",
+          "natural": "",
+          "forms": "knives",
+          "collocations": "steak knife; butter knife",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The server brought me a steak knife with my order.",
+              "pl": "Kelner przyniósł mi nóż do steków razem z zamówieniem.",
+              "focusEn": "knife",
+              "focusPl": "nóż"
+            },
+            {
+              "en": "My knife fell on the floor; can I have another one?",
+              "pl": "Spadł mi nóż na podłogę, mogę prosić o inny?",
+              "focusEn": "knife",
+              "focusPl": "nóż"
+            }
+          ],
+          "acceptedAnswers": [
+            "knife"
+          ],
+          "acceptedTranslations": [
+            "nóż"
+          ]
+        },
+        {
+          "id": "restaurant.spoon",
+          "term": "spoon",
+          "ipa": "/spuːn/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "łyżka",
+          "definition": "A tool with a small bowl at the end, used for soup or dessert.",
+          "register": "neutralny",
+          "contextPl": "Sztućce na stole",
+          "natural": "",
+          "forms": "spoons",
+          "collocations": "soup spoon; dessert spoon; teaspoon",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Excuse me, there's no spoon for my soup.",
+              "pl": "Przepraszam, nie mam łyżki do zupy.",
+              "focusEn": "spoon",
+              "focusPl": "łyżki"
+            },
+            {
+              "en": "The dessert spoon is placed above the plate.",
+              "pl": "Łyżeczka do deseru leży nad talerzem.",
+              "focusEn": "spoon",
+              "focusPl": "Łyżeczka"
+            }
+          ],
+          "acceptedAnswers": [
+            "spoon"
+          ],
+          "acceptedTranslations": [
+            "łyżka",
+            "łyżeczka"
+          ]
+        },
+        {
+          "id": "restaurant.plate",
+          "term": "plate",
+          "ipa": "/pleɪt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "talerz",
+          "definition": "A flat dish that food is served on.",
+          "register": "neutralny",
+          "contextPl": "Naczynia na stole",
+          "natural": "",
+          "forms": "plates",
+          "collocations": "an extra plate; a hot plate; clear the plates",
+          "synonyms": "dish",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Careful, the plate is very hot.",
+              "pl": "Uważaj, talerz jest bardzo gorący.",
+              "focusEn": "plate",
+              "focusPl": "talerz"
+            },
+            {
+              "en": "Could we get two extra plates to share this?",
+              "pl": "Czy możemy dostać dwa dodatkowe talerze, żeby się tym podzielić?",
+              "focusEn": "plates",
+              "focusPl": "talerze"
+            }
+          ],
+          "acceptedAnswers": [
+            "plate"
+          ],
+          "acceptedTranslations": [
+            "talerz"
+          ]
+        },
+        {
+          "id": "restaurant.glass",
+          "term": "glass",
+          "ipa": "/ɡlæs/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "szklanka",
+          "definition": "A container made of glass that you drink from.",
+          "register": "neutralny",
+          "contextPl": "Naczynia do picia na stole",
+          "natural": "",
+          "forms": "glasses",
+          "collocations": "a glass of water; wine glass",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W zależności od kształtu: szklanka lub kieliszek.",
+          "examples": [
+            {
+              "en": "Could you fill up my glass with water, please?",
+              "pl": "Czy może pan dolać mi wody do szklanki?",
+              "focusEn": "glass",
+              "focusPl": "szklanki"
+            },
+            {
+              "en": "The waiter set a wine glass next to each plate.",
+              "pl": "Kelner postawił kieliszek do wina przy każdym talerzu.",
+              "focusEn": "glass",
+              "focusPl": "kieliszek"
+            }
+          ],
+          "acceptedAnswers": [
+            "glass"
+          ],
+          "acceptedTranslations": [
+            "szklanka",
+            "kieliszek"
+          ]
+        },
+        {
+          "id": "restaurant.napkin",
+          "term": "napkin",
+          "ipa": "/ˈnæpkɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "serwetka",
+          "definition": "A piece of cloth or paper used to wipe your mouth and hands.",
+          "register": "neutralny",
+          "contextPl": "Elementy nakrycia stołu",
+          "natural": "",
+          "forms": "napkins",
+          "collocations": "paper napkin; cloth napkin",
+          "synonyms": "serviette",
+          "antonyms": "",
+          "notePl": "„Serviette” jest brytyjskie; w USA zawsze „napkin”.",
+          "examples": [
+            {
+              "en": "Put your napkin on your lap before the food arrives.",
+              "pl": "Połóż serwetkę na kolanach, zanim przyjdzie jedzenie.",
+              "focusEn": "napkin",
+              "focusPl": "serwetkę"
+            },
+            {
+              "en": "Could we have a few more napkins? These ribs are really messy.",
+              "pl": "Możemy prosić o kilka serwetek więcej? Te żeberka strasznie brudzą.",
+              "focusEn": "napkins",
+              "focusPl": "serwetek"
+            }
+          ],
+          "acceptedAnswers": [
+            "napkin"
+          ],
+          "acceptedTranslations": [
+            "serwetka"
+          ]
+        },
+        {
+          "id": "restaurant.silverware",
+          "term": "silverware",
+          "ipa": "/ˈsɪlvərˌwɛr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sztućce",
+          "definition": "Knives, forks and spoons used for eating.",
+          "register": "neutralny",
+          "contextPl": "Prośba o czyste sztućce",
+          "natural": "utensils",
+          "forms": "",
+          "collocations": "clean silverware; roll the silverware",
+          "synonyms": "utensils; cutlery",
+          "antonyms": "",
+          "notePl": "W USA „silverware” nawet o sztućcach ze stali; „cutlery” jest brytyjskie.",
+          "examples": [
+            {
+              "en": "The silverware is wrapped in a napkin on the table.",
+              "pl": "Sztućce są zawinięte w serwetkę na stole.",
+              "focusEn": "silverware",
+              "focusPl": "Sztućce"
+            },
+            {
+              "en": "Could we get some clean silverware? These forks have spots.",
+              "pl": "Możemy prosić o czyste sztućce? Na tych widelcach są plamy.",
+              "focusEn": "silverware",
+              "focusPl": "sztućce"
+            }
+          ],
+          "acceptedAnswers": [
+            "silverware",
+            "utensils",
+            "cutlery"
+          ],
+          "acceptedTranslations": [
+            "sztućce"
+          ]
+        },
+        {
+          "id": "restaurant.bowl",
+          "term": "bowl",
+          "ipa": "/boʊl/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "miska",
+          "definition": "A deep, round dish used for soup, salad or other food.",
+          "register": "neutralny",
+          "contextPl": "Naczynia na stole",
+          "natural": "",
+          "forms": "bowls",
+          "collocations": "soup bowl; a small bowl",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The soup comes in a big ceramic bowl.",
+              "pl": "Zupa jest podawana w dużej ceramicznej misce.",
+              "focusEn": "bowl",
+              "focusPl": "misce"
+            },
+            {
+              "en": "Could we get a small bowl for the olive pits?",
+              "pl": "Czy możemy dostać małą miseczkę na pestki z oliwek?",
+              "focusEn": "bowl",
+              "focusPl": "miseczkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "bowl"
+          ],
+          "acceptedTranslations": [
+            "miska",
+            "miseczka"
+          ]
+        },
+        {
+          "id": "restaurant.salt-and-pepper",
+          "term": "salt and pepper",
+          "ipa": "/ˌsɔːlt ən ˈpɛpər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "sól i pieprz",
+          "definition": "The two most common seasonings kept on a table.",
+          "register": "neutralny",
+          "contextPl": "Doprawianie potrawy przy stole",
+          "natural": "",
+          "forms": "",
+          "collocations": "pass the salt and pepper; salt and pepper shakers",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you pass the salt and pepper, please?",
+              "pl": "Podasz mi sól i pieprz?",
+              "focusEn": "salt and pepper",
+              "focusPl": "sól i pieprz"
+            },
+            {
+              "en": "There's no salt and pepper on our table.",
+              "pl": "Na naszym stole nie ma soli i pieprzu.",
+              "focusEn": "salt and pepper",
+              "focusPl": "soli i pieprzu"
+            }
+          ],
+          "acceptedAnswers": [
+            "salt and pepper"
+          ],
+          "acceptedTranslations": [
+            "sól i pieprz"
+          ]
+        },
+        {
+          "id": "restaurant.straw",
+          "term": "straw",
+          "ipa": "/strɔː/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "słomka",
+          "definition": "A thin tube used for drinking.",
+          "register": "neutralny",
+          "contextPl": "Prośba o słomkę do napoju",
+          "natural": "",
+          "forms": "straws",
+          "collocations": "paper straw; plastic straw",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I get a straw for my son's lemonade?",
+              "pl": "Mogę prosić o słomkę do lemoniady syna?",
+              "focusEn": "straw",
+              "focusPl": "słomkę"
+            },
+            {
+              "en": "They only give out paper straws if you ask.",
+              "pl": "Papierowe słomki dają tylko na prośbę.",
+              "focusEn": "straws",
+              "focusPl": "słomki"
+            }
+          ],
+          "acceptedAnswers": [
+            "straw"
+          ],
+          "acceptedTranslations": [
+            "słomka"
+          ]
+        },
+        {
+          "id": "restaurant.tablecloth",
+          "term": "tablecloth",
+          "ipa": "/ˈteɪbəlˌklɔːθ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "obrus",
+          "definition": "A cloth used to cover a table during a meal.",
+          "register": "neutralny",
+          "contextPl": "Elegancko nakryty stół",
+          "natural": "",
+          "forms": "tablecloths",
+          "collocations": "white tablecloth; spill on the tablecloth",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The waiter spilled a little wine on the white tablecloth.",
+              "pl": "Kelner rozlał trochę wina na biały obrus.",
+              "focusEn": "tablecloth",
+              "focusPl": "obrus"
+            },
+            {
+              "en": "Fancy restaurants usually cover each table with a tablecloth.",
+              "pl": "Eleganckie restauracje zwykle nakrywają każdy stolik obrusem.",
+              "focusEn": "tablecloth",
+              "focusPl": "obrusem"
+            }
+          ],
+          "acceptedAnswers": [
+            "tablecloth"
+          ],
+          "acceptedTranslations": [
+            "obrus"
+          ]
+        },
+        {
+          "id": "restaurant.set-the-table",
+          "term": "set the table",
+          "ipa": "/ˌsɛt ðə ˈteɪbəl/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "nakryć do stołu",
+          "definition": "To put plates, glasses and silverware on a table before a meal.",
+          "register": "neutralny",
+          "contextPl": "Przygotowanie stolika dla gości",
+          "natural": "",
+          "forms": "set – set – set",
+          "collocations": "set the table for six",
+          "synonyms": "",
+          "antonyms": "clear the table",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The staff set the tables before the dinner rush.",
+              "pl": "Obsługa nakryła stoły przed wieczornym tłokiem.",
+              "focusEn": "set the tables",
+              "focusPl": "nakryła stoły"
+            },
+            {
+              "en": "Give us five minutes to set the table for your group.",
+              "pl": "Dajcie nam pięć minut, żeby nakryć stół dla waszej grupy.",
+              "focusEn": "set the table",
+              "focusPl": "nakryć stół"
+            }
+          ],
+          "acceptedAnswers": [
+            "set the table"
+          ],
+          "acceptedTranslations": [
+            "nakryć do stołu",
+            "nakryć stół",
+            "nakrywać do stołu"
+          ]
+        },
+        {
+          "id": "restaurant.condiment",
+          "term": "condiment",
+          "ipa": "/ˈkɑːndɪmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "sos lub przyprawa",
+          "definition": "A sauce or seasoning, like ketchup or mustard, added to food at the table.",
+          "register": "neutralny",
+          "contextPl": "Keczup, musztarda i sosy stojące na stole",
+          "natural": "",
+          "forms": "condiments",
+          "collocations": "condiment station; condiments on the table",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The condiments are on the table: ketchup, mustard, and hot sauce.",
+              "pl": "Dodatki stoją na stole: keczup, musztarda i ostry sos.",
+              "focusEn": "condiments",
+              "focusPl": "Dodatki"
+            },
+            {
+              "en": "Could you bring us some condiments for our fries?",
+              "pl": "Czy może pan przynieść jakieś sosy do frytek?",
+              "focusEn": "condiments",
+              "focusPl": "sosy"
+            }
+          ],
+          "acceptedAnswers": [
+            "condiment",
+            "condiments"
+          ],
+          "acceptedTranslations": [
+            "sos lub przyprawa",
+            "dodatek",
+            "sos",
+            "przyprawa"
+          ]
+        },
+        {
+          "id": "restaurant.toothpick",
+          "term": "toothpick",
+          "ipa": "/ˈtuːθˌpɪk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "wykałaczka",
+          "definition": "A thin pointed stick used to remove food from between your teeth.",
+          "register": "neutralny",
+          "contextPl": "Drobiazgi na stole lub przy kanapkach",
+          "natural": "",
+          "forms": "toothpicks",
+          "collocations": "a jar of toothpicks",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The club sandwich was held together with a toothpick.",
+              "pl": "Kanapka klubowa była spięta wykałaczką.",
+              "focusEn": "toothpick",
+              "focusPl": "wykałaczką"
+            },
+            {
+              "en": "He politely covered his mouth while using a toothpick.",
+              "pl": "Używając wykałaczki, grzecznie zasłonił usta.",
+              "focusEn": "toothpick",
+              "focusPl": "wykałaczki"
+            }
+          ],
+          "acceptedAnswers": [
+            "toothpick"
+          ],
+          "acceptedTranslations": [
+            "wykałaczka"
+          ]
+        },
+        {
+          "id": "restaurant.place-setting",
+          "term": "place setting",
+          "ipa": "/ˈpleɪs ˌsɛtɪŋ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "rare",
+          "translation": "nakrycie",
+          "definition": "The plate, glass and silverware set out for one person at a table.",
+          "register": "formalny",
+          "contextPl": "Nakrycie stołu w eleganckiej restauracji",
+          "natural": "",
+          "forms": "place settings",
+          "collocations": "an extra place setting; formal place setting",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Each place setting had three forks and two knives.",
+              "pl": "Każde nakrycie miało trzy widelce i dwa noże.",
+              "focusEn": "place setting",
+              "focusPl": "nakrycie"
+            },
+            {
+              "en": "We're one person short, so they removed a place setting.",
+              "pl": "Brakuje nam jednej osoby, więc zabrali jedno nakrycie.",
+              "focusEn": "place setting",
+              "focusPl": "nakrycie"
+            }
+          ],
+          "acceptedAnswers": [
+            "place setting"
+          ],
+          "acceptedTranslations": [
+            "nakrycie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "restaurant.during-meal",
+      "namePl": "Podczas posiłku",
+      "scenePl": "Jedzenie dania głównego, gdy kelner podchodzi zapytać, czy wszystko smakuje",
+      "entries": [
+        {
+          "id": "restaurant.delicious",
+          "term": "delicious",
+          "ipa": "/dɪˈlɪʃəs/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pyszny",
+          "definition": "Having a very good taste.",
+          "register": "neutralny",
+          "contextPl": "Chwalenie jedzenia",
+          "natural": "so good",
+          "forms": "",
+          "collocations": "absolutely delicious; look delicious",
+          "synonyms": "tasty",
+          "antonyms": "disgusting",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This pasta is absolutely delicious; you have to try it.",
+              "pl": "Ten makaron jest absolutnie pyszny, musisz spróbować.",
+              "focusEn": "delicious",
+              "focusPl": "pyszny"
+            },
+            {
+              "en": "Everything was delicious; please tell the chef.",
+              "pl": "Wszystko było pyszne, proszę przekazać szefowi kuchni.",
+              "focusEn": "delicious",
+              "focusPl": "pyszne"
+            }
+          ],
+          "acceptedAnswers": [
+            "delicious",
+            "tasty"
+          ],
+          "acceptedTranslations": [
+            "pyszny",
+            "smaczny",
+            "przepyszny"
+          ]
+        },
+        {
+          "id": "restaurant.taste",
+          "term": "taste",
+          "ipa": "/teɪst/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "smakować",
+          "definition": "To have a particular flavor.",
+          "register": "neutralny",
+          "contextPl": "Rozmowa o smaku dania",
+          "natural": "",
+          "forms": "tasted",
+          "collocations": "taste good; taste salty; taste like",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„It tastes great” = świetnie smakuje (podmiotem jest jedzenie).",
+          "examples": [
+            {
+              "en": "So, how does your fish taste so far?",
+              "pl": "No i jak ci smakuje ryba?",
+              "focusEn": "taste",
+              "focusPl": "smakuje"
+            },
+            {
+              "en": "This sauce tastes a little too salty to me.",
+              "pl": "Ten sos smakuje mi trochę za słono.",
+              "focusEn": "tastes",
+              "focusPl": "smakuje"
+            }
+          ],
+          "acceptedAnswers": [
+            "taste"
+          ],
+          "acceptedTranslations": [
+            "smakować",
+            "mieć smak"
+          ]
+        },
+        {
+          "id": "restaurant.how-is-everything",
+          "term": "how is everything",
+          "ipa": "/ˌhaʊ ɪz ˈɛvriθɪŋ/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "czy wszystko w porządku?",
+          "definition": "A question servers ask to check if guests are happy with their food.",
+          "register": "neutralny",
+          "contextPl": "Kelner sprawdza zadowolenie gości w trakcie posiłku",
+          "natural": "how's everything",
+          "forms": "",
+          "collocations": "how is everything tasting",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hi again, how is everything with your meals?",
+              "pl": "Dzień dobry ponownie, czy wszystko w porządku z daniami?",
+              "focusEn": "how is everything",
+              "focusPl": "czy wszystko w porządku"
+            },
+            {
+              "en": "\"How is everything?\" the waiter asked as he refilled our water.",
+              "pl": "„Czy wszystko w porządku?” – zapytał kelner, dolewając nam wody.",
+              "focusEn": "How is everything",
+              "focusPl": "Czy wszystko w porządku"
+            }
+          ],
+          "acceptedAnswers": [
+            "how is everything",
+            "how's everything"
+          ],
+          "acceptedTranslations": [
+            "czy wszystko w porządku?",
+            "jak smakuje?",
+            "wszystko w porządku?"
+          ]
+        },
+        {
+          "id": "restaurant.refill",
+          "term": "refill",
+          "ipa": "/ˈriːfɪl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dolewka",
+          "definition": "Another serving of a drink in the same glass or cup.",
+          "register": "neutralny",
+          "contextPl": "Prośba o dolanie napoju",
+          "natural": "top-off",
+          "forms": "refills",
+          "collocations": "free refills; get a refill",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W wielu amerykańskich restauracjach dolewki napojów są darmowe.",
+          "examples": [
+            {
+              "en": "Can I get a refill on my iced tea?",
+              "pl": "Mogę prosić o dolewkę mrożonej herbaty?",
+              "focusEn": "refill",
+              "focusPl": "dolewkę"
+            },
+            {
+              "en": "Refills on soft drinks are free here.",
+              "pl": "Dolewki napojów są tu darmowe.",
+              "focusEn": "Refills",
+              "focusPl": "Dolewki"
+            }
+          ],
+          "acceptedAnswers": [
+            "refill"
+          ],
+          "acceptedTranslations": [
+            "dolewka",
+            "dolanie"
+          ]
+        },
+        {
+          "id": "restaurant.full",
+          "term": "full",
+          "ipa": "/fʊl/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "najedzony",
+          "definition": "Having eaten so much that you cannot eat more.",
+          "register": "neutralny",
+          "contextPl": "Gdy nie da się już zjeść więcej",
+          "natural": "stuffed",
+          "forms": "",
+          "collocations": "so full; too full; full already",
+          "synonyms": "stuffed",
+          "antonyms": "hungry",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm too full to finish my burger.",
+              "pl": "Jestem zbyt najedzony, żeby dokończyć burgera.",
+              "focusEn": "full",
+              "focusPl": "najedzony"
+            },
+            {
+              "en": "We were so full that we skipped dessert.",
+              "pl": "Byliśmy tak najedzeni, że odpuściliśmy deser.",
+              "focusEn": "full",
+              "focusPl": "najedzeni"
+            }
+          ],
+          "acceptedAnswers": [
+            "full",
+            "stuffed"
+          ],
+          "acceptedTranslations": [
+            "najedzony",
+            "syty",
+            "pełny"
+          ]
+        },
+        {
+          "id": "restaurant.bite",
+          "term": "bite",
+          "ipa": "/baɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kęs",
+          "definition": "A small amount of food you take into your mouth at one time.",
+          "register": "neutralny",
+          "contextPl": "Próbowanie cudzego dania",
+          "natural": "",
+          "forms": "bites",
+          "collocations": "take a bite; try a bite; the last bite",
+          "synonyms": "taste",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I try a bite of your steak?",
+              "pl": "Mogę spróbować kęsa twojego steka?",
+              "focusEn": "bite",
+              "focusPl": "kęsa"
+            },
+            {
+              "en": "After one bite, I knew I'd order this dish again.",
+              "pl": "Po jednym kęsie wiedziałem, że znowu zamówię to danie.",
+              "focusEn": "bite",
+              "focusPl": "kęsie"
+            }
+          ],
+          "acceptedAnswers": [
+            "bite"
+          ],
+          "acceptedTranslations": [
+            "kęs",
+            "gryz"
+          ]
+        },
+        {
+          "id": "restaurant.dig-in",
+          "term": "dig in",
+          "ipa": "/ˌdɪɡ ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zabrać się do jedzenia",
+          "definition": "To start eating eagerly.",
+          "register": "potoczny",
+          "contextPl": "Gdy jedzenie właśnie trafiło na stół",
+          "natural": "",
+          "forms": "dug in",
+          "collocations": "dig in, everyone; let's dig in",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The food is here, so let's dig in!",
+              "pl": "Jedzenie jest, to wcinamy!",
+              "focusEn": "dig in",
+              "focusPl": "wcinamy"
+            },
+            {
+              "en": "We were so hungry that we dug in as soon as the plates arrived.",
+              "pl": "Byliśmy tak głodni, że zabraliśmy się do jedzenia, gdy tylko przyszły talerze.",
+              "focusEn": "dug in",
+              "focusPl": "zabraliśmy się do jedzenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "dig in"
+          ],
+          "acceptedTranslations": [
+            "zabrać się do jedzenia",
+            "wcinać",
+            "zajadać"
+          ]
+        },
+        {
+          "id": "restaurant.enjoy-your-meal",
+          "term": "enjoy your meal",
+          "ipa": "/ɪnˌdʒɔɪ jʊr ˈmiːl/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "smacznego",
+          "definition": "What a server says when bringing food to the table.",
+          "register": "neutralny",
+          "contextPl": "Kelner podaje danie",
+          "natural": "enjoy",
+          "forms": "",
+          "collocations": "enjoy your meal, folks",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Amerykanie nie mówią tego sobie nawzajem przy stole tak często jak Polacy „smacznego”; mówi to raczej obsługa.",
+          "examples": [
+            {
+              "en": "Here's your lasagna. Enjoy your meal!",
+              "pl": "Oto pana lasagne. Smacznego!",
+              "focusEn": "Enjoy your meal",
+              "focusPl": "Smacznego"
+            },
+            {
+              "en": "Your steaks are ready, so enjoy your meal, folks!",
+              "pl": "Wasze steki są gotowe, smacznego, proszę państwa!",
+              "focusEn": "enjoy your meal",
+              "focusPl": "smacznego"
+            }
+          ],
+          "acceptedAnswers": [
+            "enjoy your meal",
+            "enjoy"
+          ],
+          "acceptedTranslations": [
+            "smacznego"
+          ]
+        },
+        {
+          "id": "restaurant.leftovers",
+          "term": "leftovers",
+          "ipa": "/ˈlɛftˌoʊvərz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "resztki",
+          "definition": "Food that is not eaten during a meal.",
+          "register": "neutralny",
+          "contextPl": "Zabieranie niedojedzonego jedzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "take the leftovers home; pack up the leftovers",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you want to take the leftovers home?",
+              "pl": "Chcesz zabrać resztki do domu?",
+              "focusEn": "leftovers",
+              "focusPl": "resztki"
+            },
+            {
+              "en": "Our server wrapped up the leftovers in foil.",
+              "pl": "Kelner zapakował resztki w folię.",
+              "focusEn": "leftovers",
+              "focusPl": "resztki"
+            }
+          ],
+          "acceptedAnswers": [
+            "leftovers"
+          ],
+          "acceptedTranslations": [
+            "resztki",
+            "resztki jedzenia"
+          ]
+        },
+        {
+          "id": "restaurant.to-go-box",
+          "term": "to-go box",
+          "ipa": "/təˈɡoʊ ˌbɑːks/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pudełko na wynos",
+          "definition": "A container for taking home food you did not finish.",
+          "register": "potoczny",
+          "contextPl": "Pakowanie niedojedzonego dania",
+          "natural": "box",
+          "forms": "to-go boxes",
+          "collocations": "ask for a to-go box",
+          "synonyms": "doggy bag; to-go container",
+          "antonyms": "",
+          "notePl": "„Doggy bag” brzmi dziś trochę staroświecko; częściej „Can I get a box?”.",
+          "examples": [
+            {
+              "en": "Could we get a to-go box for the rest of this pizza?",
+              "pl": "Możemy prosić o pudełko na wynos na resztę pizzy?",
+              "focusEn": "to-go box",
+              "focusPl": "pudełko na wynos"
+            },
+            {
+              "en": "She packed half her pasta into a to-go box for tomorrow's lunch.",
+              "pl": "Połowę makaronu zapakowała do pudełka na wynos na jutrzejszy lunch.",
+              "focusEn": "to-go box",
+              "focusPl": "pudełka na wynos"
+            }
+          ],
+          "acceptedAnswers": [
+            "to-go box",
+            "to-go container",
+            "doggy bag",
+            "box"
+          ],
+          "acceptedTranslations": [
+            "pudełko na wynos"
+          ]
+        },
+        {
+          "id": "restaurant.send-back",
+          "term": "send back",
+          "ipa": "/ˌsɛnd ˈbæk/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odesłać",
+          "definition": "To return a dish to the kitchen because something is wrong with it.",
+          "register": "neutralny",
+          "contextPl": "Reklamacja dania w restauracji",
+          "natural": "",
+          "forms": "sent – sent",
+          "collocations": "send a dish back; send it back",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My soup was cold, so I sent it back.",
+              "pl": "Moja zupa była zimna, więc ją odesłałem.",
+              "focusEn": "sent it back",
+              "focusPl": "odesłałem"
+            },
+            {
+              "en": "Don't be shy about sending back a dish that's wrong.",
+              "pl": "Nie krępuj się odesłać dania, które jest nie takie, jak trzeba.",
+              "focusEn": "sending back",
+              "focusPl": "odesłać"
+            }
+          ],
+          "acceptedAnswers": [
+            "send back"
+          ],
+          "acceptedTranslations": [
+            "odesłać",
+            "odsyłać",
+            "zwrócić"
+          ]
+        },
+        {
+          "id": "restaurant.this-isnt-what-i-ordered",
+          "term": "this isn't what I ordered",
+          "ipa": "/ðɪs ˈɪzənt wʌt aɪ ˈɔːrdərd/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "to nie jest to, co zamówiłem",
+          "definition": "Used to tell a server they brought the wrong dish.",
+          "register": "neutralny",
+          "contextPl": "Kelner przyniósł niewłaściwe danie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Excuse me, this isn't what I ordered.",
+              "pl": "Przepraszam, to nie jest to, co zamówiłem.",
+              "focusEn": "this isn't what I ordered",
+              "focusPl": "to nie jest to, co zamówiłem"
+            },
+            {
+              "en": "I'm sorry, but this isn't what I ordered; I asked for the soup.",
+              "pl": "Przykro mi, ale to nie jest to, co zamówiłam – prosiłam o zupę.",
+              "focusEn": "this isn't what I ordered",
+              "focusPl": "to nie jest to, co zamówiłam"
+            }
+          ],
+          "acceptedAnswers": [
+            "this isn't what I ordered",
+            "this is not what I ordered"
+          ],
+          "acceptedTranslations": [
+            "to nie jest to, co zamówiłem",
+            "to nie to, co zamówiłem",
+            "to nie jest to, co zamówiłam"
+          ]
+        },
+        {
+          "id": "restaurant.overcooked",
+          "term": "overcooked",
+          "ipa": "/ˌoʊvərˈkʊkt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "rozgotowany",
+          "definition": "Cooked for too long, so it is soft, dry or burned.",
+          "register": "neutralny",
+          "contextPl": "Zgłaszanie zbyt długo gotowanego dania",
+          "natural": "",
+          "forms": "",
+          "collocations": "overcooked pasta; a bit overcooked",
+          "synonyms": "",
+          "antonyms": "undercooked",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My pasta is overcooked and completely mushy.",
+              "pl": "Mój makaron jest rozgotowany i zupełnie rozmiękły.",
+              "focusEn": "overcooked",
+              "focusPl": "rozgotowany"
+            },
+            {
+              "en": "Sorry, the chicken seems overcooked and a bit dry.",
+              "pl": "Przepraszam, kurczak wydaje się przesmażony i trochę suchy.",
+              "focusEn": "overcooked",
+              "focusPl": "przesmażony"
+            }
+          ],
+          "acceptedAnswers": [
+            "overcooked"
+          ],
+          "acceptedTranslations": [
+            "rozgotowany",
+            "przesmażony",
+            "przegotowany",
+            "przypieczony"
+          ]
+        },
+        {
+          "id": "restaurant.undercooked",
+          "term": "undercooked",
+          "ipa": "/ˌʌndərˈkʊkt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "niedogotowany",
+          "definition": "Not cooked long enough.",
+          "register": "neutralny",
+          "contextPl": "Zgłaszanie surowego w środku dania",
+          "natural": "",
+          "forms": "",
+          "collocations": "undercooked chicken; slightly undercooked",
+          "synonyms": "raw",
+          "antonyms": "overcooked",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The chicken is undercooked in the middle; it's still pink.",
+              "pl": "Kurczak jest niedopieczony w środku, wciąż jest różowy.",
+              "focusEn": "undercooked",
+              "focusPl": "niedopieczony"
+            },
+            {
+              "en": "I sent the rice back because it was undercooked.",
+              "pl": "Odesłałem ryż, bo był niedogotowany.",
+              "focusEn": "undercooked",
+              "focusPl": "niedogotowany"
+            }
+          ],
+          "acceptedAnswers": [
+            "undercooked"
+          ],
+          "acceptedTranslations": [
+            "niedogotowany",
+            "niedopieczony",
+            "niedosmażony"
+          ]
+        },
+        {
+          "id": "restaurant.chef",
+          "term": "chef",
+          "ipa": "/ʃɛf/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "szef kuchni",
+          "definition": "The main cook in a restaurant kitchen.",
+          "register": "neutralny",
+          "contextPl": "Rozmowa o tym, kto przygotował danie",
+          "natural": "",
+          "forms": "chefs",
+          "collocations": "head chef; the chef's special",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Chef” to zwykle szef kuchni; zwykły kucharz to „cook”.",
+          "examples": [
+            {
+              "en": "The chef comes out of the kitchen to greet regular guests.",
+              "pl": "Szef kuchni wychodzi z kuchni, żeby przywitać stałych gości.",
+              "focusEn": "chef",
+              "focusPl": "Szef kuchni"
+            },
+            {
+              "en": "The chef came out to ask how we liked the dinner.",
+              "pl": "Szef kuchni wyszedł zapytać, jak nam smakowała kolacja.",
+              "focusEn": "chef",
+              "focusPl": "Szef kuchni"
+            }
+          ],
+          "acceptedAnswers": [
+            "chef"
+          ],
+          "acceptedTranslations": [
+            "szef kuchni",
+            "kucharz"
+          ]
+        },
+        {
+          "id": "restaurant.compliments-to-the-chef",
+          "term": "compliments to the chef",
+          "ipa": "/ˈkɑːmpləmənts tə ðə ˈʃɛf/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wyrazy uznania dla szefa kuchni",
+          "definition": "A polite way to say the food was excellent.",
+          "register": "formalny",
+          "contextPl": "Pochwała jedzenia przekazywana kuchni",
+          "natural": "",
+          "forms": "",
+          "collocations": "my compliments to the chef",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Compliments to the chef; this risotto is perfect.",
+              "pl": "Wyrazy uznania dla szefa kuchni, to risotto jest idealne.",
+              "focusEn": "Compliments to the chef",
+              "focusPl": "Wyrazy uznania dla szefa kuchni"
+            },
+            {
+              "en": "We asked our server to pass our compliments to the chef.",
+              "pl": "Poprosiliśmy kelnera, żeby przekazał wyrazy uznania szefowi kuchni.",
+              "focusEn": "compliments to the chef",
+              "focusPl": "wyrazy uznania szefowi kuchni"
+            }
+          ],
+          "acceptedAnswers": [
+            "compliments to the chef",
+            "my compliments to the chef"
+          ],
+          "acceptedTranslations": [
+            "wyrazy uznania dla szefa kuchni",
+            "gratulacje dla szefa kuchni"
+          ]
+        },
+        {
+          "id": "restaurant.take-your-time",
+          "term": "take your time",
+          "ipa": "/ˌteɪk jʊr ˈtaɪm/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "nie spiesz się",
+          "definition": "Used to tell someone they do not need to hurry.",
+          "register": "neutralny",
+          "contextPl": "Kelner zapewnia, że goście nie muszą się spieszyć",
+          "natural": "no rush",
+          "forms": "",
+          "collocations": "take your time with the menu",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "No rush, take your time finishing your meal.",
+              "pl": "Bez pośpiechu, nie spieszcie się z jedzeniem.",
+              "focusEn": "take your time",
+              "focusPl": "nie spieszcie się"
+            },
+            {
+              "en": "The waiter told us to take our time with dessert.",
+              "pl": "Kelner powiedział, że nie musimy się spieszyć z deserem.",
+              "focusEn": "take our time",
+              "focusPl": "nie musimy się spieszyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "take your time",
+            "no rush"
+          ],
+          "acceptedTranslations": [
+            "nie spiesz się",
+            "bez pośpiechu",
+            "spokojnie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "restaurant.bill-tip",
+      "namePl": "Rachunek i napiwek",
+      "scenePl": "Koniec kolacji – prośba o rachunek i płacenie przy stoliku",
+      "entries": [
+        {
+          "id": "restaurant.check",
+          "term": "check",
+          "ipa": "/tʃɛk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "rachunek",
+          "definition": "The piece of paper showing how much you must pay in a restaurant.",
+          "register": "neutralny",
+          "contextPl": "Prośba o rachunek po posiłku",
+          "natural": "",
+          "forms": "checks",
+          "collocations": "get the check; ask for the check",
+          "synonyms": "bill",
+          "antonyms": "",
+          "notePl": "W USA „check”, w Wielkiej Brytanii „bill”.",
+          "examples": [
+            {
+              "en": "Could we get the check, please?",
+              "pl": "Możemy prosić o rachunek?",
+              "focusEn": "check",
+              "focusPl": "rachunek"
+            },
+            {
+              "en": "The server left the check in a small leather folder.",
+              "pl": "Kelner zostawił rachunek w małym skórzanym etui.",
+              "focusEn": "check",
+              "focusPl": "rachunek"
+            }
+          ],
+          "acceptedAnswers": [
+            "check",
+            "bill"
+          ],
+          "acceptedTranslations": [
+            "rachunek"
+          ]
+        },
+        {
+          "id": "restaurant.tip",
+          "term": "tip",
+          "ipa": "/tɪp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "napiwek",
+          "definition": "Extra money you give a server for good service.",
+          "register": "neutralny",
+          "contextPl": "Zostawianie pieniędzy dla obsługi",
+          "natural": "",
+          "forms": "tips",
+          "collocations": "leave a tip; a generous tip; tip jar",
+          "synonyms": "gratuity",
+          "antonyms": "",
+          "notePl": "W USA napiwek 15–20% jest praktycznie obowiązkowy.",
+          "examples": [
+            {
+              "en": "In the US, a tip of 18 to 20 percent is normal.",
+              "pl": "W USA napiwek w wysokości 18–20 procent to norma.",
+              "focusEn": "tip",
+              "focusPl": "napiwek"
+            },
+            {
+              "en": "We left a big tip because the service was excellent.",
+              "pl": "Zostawiliśmy duży napiwek, bo obsługa była świetna.",
+              "focusEn": "tip",
+              "focusPl": "napiwek"
+            }
+          ],
+          "acceptedAnswers": [
+            "tip",
+            "gratuity"
+          ],
+          "acceptedTranslations": [
+            "napiwek"
+          ]
+        },
+        {
+          "id": "restaurant.tip-2",
+          "term": "tip",
+          "ipa": "/tɪp/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dać napiwek",
+          "definition": "To give a server extra money for their service.",
+          "register": "neutralny",
+          "contextPl": "Decyzja, ile zostawić obsłudze",
+          "natural": "",
+          "forms": "tipped",
+          "collocations": "tip well; tip 20 percent; tip in cash",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How much should we tip on a bill like this?",
+              "pl": "Ile powinniśmy dać napiwku przy takim rachunku?",
+              "focusEn": "tip",
+              "focusPl": "dać napiwku"
+            },
+            {
+              "en": "My dad always tips in cash, even when he pays by card.",
+              "pl": "Mój tata zawsze daje napiwek w gotówce, nawet gdy płaci kartą.",
+              "focusEn": "tips",
+              "focusPl": "daje napiwek"
+            }
+          ],
+          "acceptedAnswers": [
+            "tip"
+          ],
+          "acceptedTranslations": [
+            "dać napiwek",
+            "dawać napiwek",
+            "zostawić napiwek"
+          ]
+        },
+        {
+          "id": "restaurant.pay",
+          "term": "pay",
+          "ipa": "/peɪ/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "zapłacić",
+          "definition": "To give money for the food and drinks you had.",
+          "register": "neutralny",
+          "contextPl": "Regulowanie rachunku",
+          "natural": "",
+          "forms": "paid – paid",
+          "collocations": "pay the bill; pay by card; pay in cash",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can we pay at the table, or do we pay at the counter?",
+              "pl": "Możemy zapłacić przy stoliku, czy płaci się przy kasie?",
+              "focusEn": "pay",
+              "focusPl": "zapłacić"
+            },
+            {
+              "en": "I paid for dinner, so you can get coffee next time.",
+              "pl": "Ja zapłaciłem za kolację, więc ty możesz postawić kawę następnym razem.",
+              "focusEn": "paid",
+              "focusPl": "zapłaciłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "pay"
+          ],
+          "acceptedTranslations": [
+            "zapłacić",
+            "płacić"
+          ]
+        },
+        {
+          "id": "restaurant.split-the-bill",
+          "term": "split the bill",
+          "ipa": "/ˌsplɪt ðə ˈbɪl/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "podzielić rachunek",
+          "definition": "To share the cost of a meal between several people.",
+          "register": "neutralny",
+          "contextPl": "Płacenie w grupie",
+          "natural": "split the check",
+          "forms": "split – split",
+          "collocations": "split the bill evenly; split it three ways",
+          "synonyms": "split the check",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you mind if we split the bill three ways?",
+              "pl": "Nie przeszkadza ci, jeśli podzielimy rachunek na trzy?",
+              "focusEn": "split the bill",
+              "focusPl": "podzielimy rachunek"
+            },
+            {
+              "en": "Our server was happy to split the bill onto two cards.",
+              "pl": "Kelner chętnie podzielił rachunek na dwie karty.",
+              "focusEn": "split the bill",
+              "focusPl": "podzielił rachunek"
+            }
+          ],
+          "acceptedAnswers": [
+            "split the bill",
+            "split the check"
+          ],
+          "acceptedTranslations": [
+            "podzielić rachunek",
+            "dzielić rachunek"
+          ]
+        },
+        {
+          "id": "restaurant.separate-checks",
+          "term": "separate checks",
+          "ipa": "/ˌsɛpərət ˈtʃɛks/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "osobne rachunki",
+          "definition": "Different bills for each person at the same table.",
+          "register": "neutralny",
+          "contextPl": "Każdy płaci za swoje zamówienie",
+          "natural": "",
+          "forms": "",
+          "collocations": "ask for separate checks",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could we have separate checks, please?",
+              "pl": "Możemy prosić o osobne rachunki?",
+              "focusEn": "separate checks",
+              "focusPl": "osobne rachunki"
+            },
+            {
+              "en": "Separate checks are fine for groups under eight people.",
+              "pl": "Osobne rachunki są możliwe dla grup do ośmiu osób.",
+              "focusEn": "Separate checks",
+              "focusPl": "Osobne rachunki"
+            }
+          ],
+          "acceptedAnswers": [
+            "separate checks",
+            "separate bills"
+          ],
+          "acceptedTranslations": [
+            "osobne rachunki",
+            "oddzielne rachunki"
+          ]
+        },
+        {
+          "id": "restaurant.go-dutch",
+          "term": "go Dutch",
+          "ipa": "/ˌɡoʊ ˈdʌtʃ/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "płacić każdy za siebie",
+          "definition": "To share the cost of a meal so that each person pays for their own food.",
+          "register": "potoczny",
+          "contextPl": "Umowa, że każdy płaci swoją część",
+          "natural": "split it",
+          "forms": "",
+          "collocations": "go Dutch on dinner",
+          "synonyms": "split the bill",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "On our first date, we decided to go Dutch.",
+              "pl": "Na pierwszej randce postanowiliśmy, że każdy zapłaci za siebie.",
+              "focusEn": "go Dutch",
+              "focusPl": "każdy zapłaci za siebie"
+            },
+            {
+              "en": "Let's go Dutch tonight, since we both ordered a lot.",
+              "pl": "Zapłaćmy dziś każdy za siebie, bo oboje dużo zamówiliśmy.",
+              "focusEn": "go Dutch",
+              "focusPl": "każdy za siebie"
+            }
+          ],
+          "acceptedAnswers": [
+            "go Dutch"
+          ],
+          "acceptedTranslations": [
+            "płacić każdy za siebie",
+            "każdy płaci za siebie"
+          ]
+        },
+        {
+          "id": "restaurant.its-on-me",
+          "term": "it's on me",
+          "ipa": "/ɪts ˈɑːn mi/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ja stawiam",
+          "definition": "Used to say that you will pay for someone else.",
+          "register": "potoczny",
+          "contextPl": "Zapraszanie kogoś na posiłek",
+          "natural": "my treat",
+          "forms": "",
+          "collocations": "dinner's on me; this one's on me",
+          "synonyms": "my treat",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Put your wallet away, it's on me tonight.",
+              "pl": "Schowaj portfel, dziś ja stawiam.",
+              "focusEn": "it's on me",
+              "focusPl": "ja stawiam"
+            },
+            {
+              "en": "No, no, it's on me; you paid last time.",
+              "pl": "Nie, nie, ja stawiam, ty płaciłeś ostatnio.",
+              "focusEn": "it's on me",
+              "focusPl": "ja stawiam"
+            }
+          ],
+          "acceptedAnswers": [
+            "it's on me",
+            "this is on me",
+            "my treat",
+            "it is on me"
+          ],
+          "acceptedTranslations": [
+            "ja stawiam",
+            "ja płacę",
+            "ja funduję"
+          ]
+        },
+        {
+          "id": "restaurant.receipt",
+          "term": "receipt",
+          "ipa": "/rɪˈsiːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "paragon",
+          "definition": "A paper showing what you paid for.",
+          "register": "neutralny",
+          "contextPl": "Potwierdzenie zapłaty",
+          "natural": "",
+          "forms": "receipts",
+          "collocations": "itemized receipt; sign the receipt",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W wyrazie „receipt” litera p jest niema.",
+          "examples": [
+            {
+              "en": "Could I get an itemized receipt for my expense report?",
+              "pl": "Czy mogę dostać szczegółowy paragon do rozliczenia służbowego?",
+              "focusEn": "receipt",
+              "focusPl": "paragon"
+            },
+            {
+              "en": "She signed the receipt and wrote the tip on the line.",
+              "pl": "Podpisała paragon i wpisała napiwek w odpowiednim miejscu.",
+              "focusEn": "receipt",
+              "focusPl": "paragon"
+            }
+          ],
+          "acceptedAnswers": [
+            "receipt"
+          ],
+          "acceptedTranslations": [
+            "paragon",
+            "rachunek"
+          ]
+        },
+        {
+          "id": "restaurant.cash-or-card",
+          "term": "cash or card",
+          "ipa": "/ˌkæʃ ɔːr ˈkɑːrd/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "gotówką czy kartą",
+          "definition": "A question asking how you want to pay.",
+          "register": "neutralny",
+          "contextPl": "Wybór formy płatności",
+          "natural": "",
+          "forms": "",
+          "collocations": "cash or credit",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Will that be cash or card tonight?",
+              "pl": "Płaci pan dziś gotówką czy kartą?",
+              "focusEn": "cash or card",
+              "focusPl": "gotówką czy kartą"
+            },
+            {
+              "en": "They asked cash or card, and I handed over my card.",
+              "pl": "Zapytali, czy gotówką czy kartą, a ja podałem kartę.",
+              "focusEn": "cash or card",
+              "focusPl": "gotówką czy kartą"
+            }
+          ],
+          "acceptedAnswers": [
+            "cash or card",
+            "cash or credit"
+          ],
+          "acceptedTranslations": [
+            "gotówką czy kartą"
+          ]
+        },
+        {
+          "id": "restaurant.keep-the-change",
+          "term": "keep the change",
+          "ipa": "/ˌkiːp ðə ˈtʃeɪndʒ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "reszty nie trzeba",
+          "definition": "Used to tell someone they can keep the extra money.",
+          "register": "neutralny",
+          "contextPl": "Płacenie gotówką z napiwkiem",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Here's fifty dollars, and keep the change.",
+              "pl": "Proszę, pięćdziesiąt dolarów, reszty nie trzeba.",
+              "focusEn": "keep the change",
+              "focusPl": "reszty nie trzeba"
+            },
+            {
+              "en": "He told the waiter to keep the change as a tip.",
+              "pl": "Powiedział kelnerowi, żeby zatrzymał resztę jako napiwek.",
+              "focusEn": "keep the change",
+              "focusPl": "zatrzymał resztę"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep the change"
+          ],
+          "acceptedTranslations": [
+            "reszty nie trzeba",
+            "proszę zatrzymać resztę"
+          ]
+        },
+        {
+          "id": "restaurant.service-charge",
+          "term": "service charge",
+          "ipa": "/ˈsɜːrvɪs ˌtʃɑːrdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "opłata serwisowa",
+          "definition": "An extra amount added to a bill for the service.",
+          "register": "neutralny",
+          "contextPl": "Doliczona opłata za obsługę",
+          "natural": "",
+          "forms": "service charges",
+          "collocations": "include a service charge",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is the service charge already included in the bill?",
+              "pl": "Czy opłata serwisowa jest już wliczona w rachunek?",
+              "focusEn": "service charge",
+              "focusPl": "opłata serwisowa"
+            },
+            {
+              "en": "We didn't notice the service charge and tipped twice by mistake.",
+              "pl": "Nie zauważyliśmy opłaty serwisowej i przez pomyłkę daliśmy napiwek dwa razy.",
+              "focusEn": "service charge",
+              "focusPl": "opłaty serwisowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "service charge"
+          ],
+          "acceptedTranslations": [
+            "opłata serwisowa",
+            "serwis"
+          ]
+        },
+        {
+          "id": "restaurant.gratuity",
+          "term": "gratuity",
+          "ipa": "/ɡrəˈtuːəti/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "napiwek",
+          "definition": "A formal word for a tip, often added to the bill automatically.",
+          "register": "formalny",
+          "contextPl": "Napiwek doliczany do rachunku dużych grup",
+          "natural": "tip",
+          "forms": "gratuities",
+          "collocations": "gratuity included; automatic gratuity",
+          "synonyms": "tip",
+          "antonyms": "",
+          "notePl": "Spotykane głównie w drukowanych zasadach i na rachunkach.",
+          "examples": [
+            {
+              "en": "An 18% gratuity is added for parties of six or more.",
+              "pl": "Do rachunku grup od sześciu osób doliczany jest 18-procentowy napiwek.",
+              "focusEn": "gratuity",
+              "focusPl": "napiwek"
+            },
+            {
+              "en": "Check the bill to see if gratuity is already included.",
+              "pl": "Sprawdź rachunek, czy napiwek nie jest już doliczony.",
+              "focusEn": "gratuity",
+              "focusPl": "napiwek"
+            }
+          ],
+          "acceptedAnswers": [
+            "gratuity"
+          ],
+          "acceptedTranslations": [
+            "napiwek"
+          ]
+        },
+        {
+          "id": "restaurant.overcharge",
+          "term": "overcharge",
+          "ipa": "/ˌoʊvərˈtʃɑːrdʒ/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "policzyć za dużo",
+          "definition": "To ask someone to pay more than the correct price.",
+          "register": "neutralny",
+          "contextPl": "Błąd na rachunku na niekorzyść gościa",
+          "natural": "",
+          "forms": "overcharged",
+          "collocations": "overcharge someone for something",
+          "synonyms": "",
+          "antonyms": "undercharge",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I think we were overcharged for the drinks.",
+              "pl": "Chyba policzono nam za dużo za napoje.",
+              "focusEn": "overcharged",
+              "focusPl": "policzono nam za dużo"
+            },
+            {
+              "en": "The manager apologized for overcharging us and fixed the bill.",
+              "pl": "Kierownik przeprosił za zawyżenie rachunku i go poprawił.",
+              "focusEn": "overcharging",
+              "focusPl": "zawyżenie rachunku"
+            }
+          ],
+          "acceptedAnswers": [
+            "overcharge"
+          ],
+          "acceptedTranslations": [
+            "policzyć za dużo",
+            "zawyżyć rachunek",
+            "naliczyć za dużo"
+          ]
+        },
+        {
+          "id": "restaurant.rip-off",
+          "term": "rip-off",
+          "ipa": "/ˈrɪp ˌɔːf/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zdzierstwo",
+          "definition": "Something that costs much more than it should.",
+          "register": "potoczny",
+          "contextPl": "Narzekanie na zbyt wysoką cenę",
+          "natural": "",
+          "forms": "rip-offs",
+          "collocations": "a total rip-off",
+          "synonyms": "",
+          "antonyms": "bargain",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thirty dollars for a salad? What a rip-off!",
+              "pl": "Trzydzieści dolarów za sałatkę? Co za zdzierstwo!",
+              "focusEn": "rip-off",
+              "focusPl": "zdzierstwo"
+            },
+            {
+              "en": "The food was fine, but the final bill felt like a rip-off.",
+              "pl": "Jedzenie było w porządku, ale rachunek końcowy wydawał się zdzierstwem.",
+              "focusEn": "rip-off",
+              "focusPl": "zdzierstwem"
+            }
+          ],
+          "acceptedAnswers": [
+            "rip-off",
+            "ripoff"
+          ],
+          "acceptedTranslations": [
+            "zdzierstwo",
+            "zdzierka",
+            "przekręt"
+          ]
+        },
+        {
+          "id": "restaurant.worth-it",
+          "term": "worth it",
+          "ipa": "/ˈwɜːrθ ɪt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "warte tego",
+          "definition": "Good enough to justify the money or effort spent.",
+          "register": "neutralny",
+          "contextPl": "Ocena, czy kolacja była warta swojej ceny",
+          "natural": "",
+          "forms": "",
+          "collocations": "totally worth it; not worth it",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It was expensive, but the dinner was totally worth it.",
+              "pl": "Było drogo, ale kolacja była tego w pełni warta.",
+              "focusEn": "worth it",
+              "focusPl": "warta"
+            },
+            {
+              "en": "Looking at the bill, I'm not sure the tasting menu was worth it.",
+              "pl": "Patrząc na rachunek, nie jestem pewien, czy menu degustacyjne było tego warte.",
+              "focusEn": "worth it",
+              "focusPl": "było tego warte"
+            }
+          ],
+          "acceptedAnswers": [
+            "worth it"
+          ],
+          "acceptedTranslations": [
+            "warte tego",
+            "opłacało się",
+            "warto było"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "restaurant.places-service",
+      "namePl": "Lokale i obsługa",
+      "scenePl": "Wybieranie miejsca na kolację i rozmowa o lokalu oraz obsłudze",
+      "entries": [
+        {
+          "id": "restaurant.restaurant",
+          "term": "restaurant",
+          "ipa": "/ˈrɛstərɑːnt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "restauracja",
+          "definition": "A place where you buy and eat meals.",
+          "register": "neutralny",
+          "contextPl": "Wybór miejsca na posiłek",
+          "natural": "",
+          "forms": "restaurants",
+          "collocations": "a new restaurant; a family restaurant",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's try that new Thai restaurant downtown tonight.",
+              "pl": "Wypróbujmy dziś tę nową tajską restaurację w centrum.",
+              "focusEn": "restaurant",
+              "focusPl": "restaurację"
+            },
+            {
+              "en": "The restaurant was so loud that we could barely talk.",
+              "pl": "W restauracji było tak głośno, że ledwo mogliśmy rozmawiać.",
+              "focusEn": "restaurant",
+              "focusPl": "restauracji"
+            }
+          ],
+          "acceptedAnswers": [
+            "restaurant"
+          ],
+          "acceptedTranslations": [
+            "restauracja",
+            "lokal"
+          ]
+        },
+        {
+          "id": "restaurant.eat-out",
+          "term": "eat out",
+          "ipa": "/ˌiːt ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "jeść na mieście",
+          "definition": "To have a meal in a restaurant instead of at home.",
+          "register": "neutralny",
+          "contextPl": "Wychodzenie na posiłek do lokalu",
+          "natural": "go out to eat",
+          "forms": "ate – eaten",
+          "collocations": "eat out a lot; eat out on weekends",
+          "synonyms": "dine out",
+          "antonyms": "eat in",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We usually eat out on Friday nights.",
+              "pl": "Zwykle w piątkowe wieczory jemy na mieście.",
+              "focusEn": "eat out",
+              "focusPl": "jemy na mieście"
+            },
+            {
+              "en": "Eating out every day gets expensive really fast.",
+              "pl": "Jedzenie na mieście codziennie szybko robi się drogie.",
+              "focusEn": "Eating out",
+              "focusPl": "Jedzenie na mieście"
+            }
+          ],
+          "acceptedAnswers": [
+            "eat out",
+            "go out to eat",
+            "dine out"
+          ],
+          "acceptedTranslations": [
+            "jeść na mieście",
+            "jadać na mieście"
+          ]
+        },
+        {
+          "id": "restaurant.service",
+          "term": "service",
+          "ipa": "/ˈsɜːrvɪs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "obsługa",
+          "definition": "The way the staff serve and help customers.",
+          "register": "neutralny",
+          "contextPl": "Ocena pracy kelnerów",
+          "natural": "",
+          "forms": "",
+          "collocations": "good service; slow service; friendly service",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The food was great, but the service was really slow.",
+              "pl": "Jedzenie było świetne, ale obsługa była bardzo wolna.",
+              "focusEn": "service",
+              "focusPl": "obsługa"
+            },
+            {
+              "en": "We'll definitely come back because the service was so friendly.",
+              "pl": "Na pewno wrócimy, bo obsługa była bardzo miła.",
+              "focusEn": "service",
+              "focusPl": "obsługa"
+            }
+          ],
+          "acceptedAnswers": [
+            "service"
+          ],
+          "acceptedTranslations": [
+            "obsługa",
+            "serwis"
+          ]
+        },
+        {
+          "id": "restaurant.kitchen",
+          "term": "kitchen",
+          "ipa": "/ˈkɪtʃən/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "kuchnia",
+          "definition": "The room in a restaurant where food is prepared.",
+          "register": "neutralny",
+          "contextPl": "Miejsce przygotowania posiłków",
+          "natural": "",
+          "forms": "kitchens",
+          "collocations": "open kitchen; the kitchen closes",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kitchen closes at ten, so let's order soon.",
+              "pl": "Kuchnia zamyka się o dziesiątej, więc zamówmy szybko.",
+              "focusEn": "kitchen",
+              "focusPl": "Kuchnia"
+            },
+            {
+              "en": "We could see the cooks working in the open kitchen.",
+              "pl": "Widzieliśmy kucharzy pracujących w otwartej kuchni.",
+              "focusEn": "kitchen",
+              "focusPl": "kuchni"
+            }
+          ],
+          "acceptedAnswers": [
+            "kitchen"
+          ],
+          "acceptedTranslations": [
+            "kuchnia"
+          ]
+        },
+        {
+          "id": "restaurant.busy",
+          "term": "busy",
+          "ipa": "/ˈbɪzi/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "oblegany",
+          "definition": "Full of people.",
+          "register": "neutralny",
+          "contextPl": "Lokal pełen gości",
+          "natural": "packed",
+          "forms": "busier – busiest",
+          "collocations": "really busy; busy night",
+          "synonyms": "crowded; packed",
+          "antonyms": "quiet",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This place is really busy on Friday nights.",
+              "pl": "W piątkowe wieczory ten lokal jest naprawdę oblegany.",
+              "focusEn": "busy",
+              "focusPl": "oblegany"
+            },
+            {
+              "en": "It's too busy here; let's find somewhere quieter.",
+              "pl": "Jest tu za tłoczno, poszukajmy czegoś spokojniejszego.",
+              "focusEn": "busy",
+              "focusPl": "tłoczno"
+            }
+          ],
+          "acceptedAnswers": [
+            "busy",
+            "crowded",
+            "packed"
+          ],
+          "acceptedTranslations": [
+            "oblegany",
+            "zatłoczony",
+            "tłoczno"
+          ]
+        },
+        {
+          "id": "restaurant.manager",
+          "term": "manager",
+          "ipa": "/ˈmænɪdʒər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kierownik",
+          "definition": "The person in charge of a restaurant and its staff.",
+          "register": "neutralny",
+          "contextPl": "Zgłaszanie problemu lub podziękowanie",
+          "natural": "",
+          "forms": "managers",
+          "collocations": "speak to the manager; restaurant manager",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could I speak to the manager, please?",
+              "pl": "Czy mogę porozmawiać z kierownikiem?",
+              "focusEn": "manager",
+              "focusPl": "kierownikiem"
+            },
+            {
+              "en": "The manager came over and offered us free dessert.",
+              "pl": "Kierownik podszedł i zaproponował nam darmowy deser.",
+              "focusEn": "manager",
+              "focusPl": "Kierownik"
+            }
+          ],
+          "acceptedAnswers": [
+            "manager"
+          ],
+          "acceptedTranslations": [
+            "kierownik",
+            "kierowniczka",
+            "menedżer"
+          ]
+        },
+        {
+          "id": "restaurant.cozy",
+          "term": "cozy",
+          "ipa": "/ˈkoʊzi/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przytulny",
+          "definition": "Small, warm and comfortable.",
+          "register": "neutralny",
+          "contextPl": "Opis atmosfery lokalu",
+          "natural": "",
+          "forms": "cozier – coziest",
+          "collocations": "cozy atmosphere; cozy little place",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska: „cozy” (brytyjska: „cosy”).",
+          "examples": [
+            {
+              "en": "It's a cozy little bistro with only ten tables.",
+              "pl": "To przytulne małe bistro z zaledwie dziesięcioma stolikami.",
+              "focusEn": "cozy",
+              "focusPl": "przytulne"
+            },
+            {
+              "en": "I love how cozy this place is in winter.",
+              "pl": "Uwielbiam, jak przytulnie jest tu zimą.",
+              "focusEn": "cozy",
+              "focusPl": "przytulnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "cozy"
+          ],
+          "acceptedTranslations": [
+            "przytulny"
+          ]
+        },
+        {
+          "id": "restaurant.regular",
+          "term": "regular",
+          "ipa": "/ˈrɛɡjələr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stały bywalec",
+          "definition": "A customer who comes to the same place very often.",
+          "register": "potoczny",
+          "contextPl": "Stali goście lokalu",
+          "natural": "",
+          "forms": "regulars",
+          "collocations": "a regular at a restaurant",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He's a regular here, so the waiter knows his order.",
+              "pl": "Jest tu stałym bywalcem, więc kelner zna jego zamówienie.",
+              "focusEn": "regular",
+              "focusPl": "stałym bywalcem"
+            },
+            {
+              "en": "The owner treats her regulars like family.",
+              "pl": "Właścicielka traktuje stałych gości jak rodzinę.",
+              "focusEn": "regulars",
+              "focusPl": "stałych gości"
+            }
+          ],
+          "acceptedAnswers": [
+            "regular"
+          ],
+          "acceptedTranslations": [
+            "stały bywalec",
+            "stały klient",
+            "stały gość"
+          ]
+        },
+        {
+          "id": "restaurant.diner",
+          "term": "diner",
+          "ipa": "/ˈdaɪnər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bar",
+          "definition": "A simple, inexpensive American restaurant serving classic comfort food.",
+          "register": "neutralny",
+          "contextPl": "Tani lokal ze śniadaniami i burgerami",
+          "natural": "",
+          "forms": "diners",
+          "collocations": "a roadside diner; a 24-hour diner",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Drugie znaczenie: „diner” to też osoba jedząca posiłek w restauracji.",
+          "examples": [
+            {
+              "en": "We grabbed pancakes at a little diner off the highway.",
+              "pl": "Zjedliśmy naleśniki w małym barze przy autostradzie.",
+              "focusEn": "diner",
+              "focusPl": "barze"
+            },
+            {
+              "en": "The diner on the corner serves breakfast all day.",
+              "pl": "Bar na rogu serwuje śniadania przez cały dzień.",
+              "focusEn": "diner",
+              "focusPl": "Bar"
+            }
+          ],
+          "acceptedAnswers": [
+            "diner"
+          ],
+          "acceptedTranslations": [
+            "bar",
+            "jadłodajnia",
+            "bar szybkiej obsługi"
+          ]
+        },
+        {
+          "id": "restaurant.chain",
+          "term": "chain",
+          "ipa": "/tʃeɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "sieć",
+          "definition": "A group of restaurants with the same name and owner.",
+          "register": "neutralny",
+          "contextPl": "Porównywanie lokali sieciowych i lokalnych",
+          "natural": "",
+          "forms": "chains",
+          "collocations": "restaurant chain; fast-food chain",
+          "synonyms": "franchise",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd rather eat at a local place than at a big chain.",
+              "pl": "Wolę zjeść w lokalnym miejscu niż w dużej sieciówce.",
+              "focusEn": "chain",
+              "focusPl": "sieciówce"
+            },
+            {
+              "en": "That burger chain opened three new locations this year.",
+              "pl": "Ta sieć z burgerami otworzyła w tym roku trzy nowe lokale.",
+              "focusEn": "chain",
+              "focusPl": "sieć"
+            }
+          ],
+          "acceptedAnswers": [
+            "chain",
+            "restaurant chain"
+          ],
+          "acceptedTranslations": [
+            "sieć",
+            "sieciówka"
+          ]
+        },
+        {
+          "id": "restaurant.fine-dining",
+          "term": "fine dining",
+          "ipa": "/ˌfaɪn ˈdaɪnɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wykwintna kuchnia",
+          "definition": "Eating expensive, carefully prepared food in an elegant restaurant.",
+          "register": "neutralny",
+          "contextPl": "Wybór eleganckiej restauracji na okazję",
+          "natural": "",
+          "forms": "",
+          "collocations": "fine dining restaurant",
+          "synonyms": "",
+          "antonyms": "casual dining",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "For our anniversary, we chose a fine dining restaurant.",
+              "pl": "Na rocznicę wybraliśmy elegancką restaurację.",
+              "focusEn": "fine dining",
+              "focusPl": "elegancką restaurację"
+            },
+            {
+              "en": "Fine dining is great, but I prefer simple neighborhood places.",
+              "pl": "Wykwintna kuchnia jest super, ale wolę proste knajpki w okolicy.",
+              "focusEn": "Fine dining",
+              "focusPl": "Wykwintna kuchnia"
+            }
+          ],
+          "acceptedAnswers": [
+            "fine dining"
+          ],
+          "acceptedTranslations": [
+            "wykwintna kuchnia",
+            "elegancka restauracja"
+          ]
+        },
+        {
+          "id": "restaurant.busser",
+          "term": "busser",
+          "ipa": "/ˈbʌsər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "rare",
+          "translation": "pomocnik kelnera",
+          "definition": "A restaurant worker who clears and cleans tables.",
+          "register": "specjalistyczny",
+          "contextPl": "Personel sprzątający stoliki",
+          "natural": "busboy",
+          "forms": "bussers",
+          "collocations": "tip the bussers",
+          "synonyms": "busboy",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The busser cleared our plates as soon as we finished.",
+              "pl": "Pomocnik kelnera sprzątnął nasze talerze, gdy tylko skończyliśmy.",
+              "focusEn": "busser",
+              "focusPl": "Pomocnik kelnera"
+            },
+            {
+              "en": "Tips are shared with the bussers and kitchen staff.",
+              "pl": "Napiwki są dzielone z pomocnikami kelnerów i personelem kuchni.",
+              "focusEn": "bussers",
+              "focusPl": "pomocnikami kelnerów"
+            }
+          ],
+          "acceptedAnswers": [
+            "busser",
+            "busboy"
+          ],
+          "acceptedTranslations": [
+            "pomocnik kelnera"
+          ]
+        },
+        {
+          "id": "restaurant.understaffed",
+          "term": "understaffed",
+          "ipa": "/ˌʌndərˈstæft/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "z niedoborem personelu",
+          "definition": "Not having enough workers to do the job well.",
+          "register": "neutralny",
+          "contextPl": "Wyjaśnianie wolnej obsługi",
+          "natural": "short-staffed",
+          "forms": "",
+          "collocations": "badly understaffed",
+          "synonyms": "short-staffed",
+          "antonyms": "overstaffed",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The restaurant seemed understaffed, so our food took forever.",
+              "pl": "Restauracja chyba miała za mało personelu, więc na jedzenie czekaliśmy wieki.",
+              "focusEn": "understaffed",
+              "focusPl": "miała za mało personelu"
+            },
+            {
+              "en": "Be patient with the waiters; they're understaffed tonight.",
+              "pl": "Bądź cierpliwy wobec kelnerów, dziś brakuje im ludzi.",
+              "focusEn": "understaffed",
+              "focusPl": "brakuje im ludzi"
+            }
+          ],
+          "acceptedAnswers": [
+            "understaffed",
+            "short-staffed"
+          ],
+          "acceptedTranslations": [
+            "z niedoborem personelu",
+            "za mało personelu",
+            "brakuje ludzi"
+          ]
+        },
+        {
+          "id": "restaurant.hole-in-the-wall",
+          "term": "hole-in-the-wall",
+          "ipa": "/ˌhoʊl ɪn ðə ˈwɔːl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "niepozorna knajpka",
+          "definition": "A small, simple restaurant that often has surprisingly good food.",
+          "register": "potoczny",
+          "contextPl": "Polecanie małego, niepozornego lokalu",
+          "natural": "",
+          "forms": "holes-in-the-wall",
+          "collocations": "a hole-in-the-wall restaurant",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This tiny hole-in-the-wall makes the best tacos in town.",
+              "pl": "Ta mała, niepozorna knajpka robi najlepsze tacos w mieście.",
+              "focusEn": "hole-in-the-wall",
+              "focusPl": "niepozorna knajpka"
+            },
+            {
+              "en": "It looks shabby, but it's a hole-in-the-wall with amazing food.",
+              "pl": "Wygląda nędznie, ale to niepozorna knajpka z niesamowitym jedzeniem.",
+              "focusEn": "hole-in-the-wall",
+              "focusPl": "niepozorna knajpka"
+            }
+          ],
+          "acceptedAnswers": [
+            "hole-in-the-wall",
+            "hole in the wall"
+          ],
+          "acceptedTranslations": [
+            "niepozorna knajpka",
+            "mała knajpka"
+          ]
+        }
+      ]
+    }
+  ]
+}

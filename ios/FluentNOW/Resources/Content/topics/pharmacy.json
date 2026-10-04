@@ -1,0 +1,3031 @@
+{
+  "schemaVersion": 1,
+  "id": "pharmacy",
+  "namePl": "Apteka i leki",
+  "nameEn": "Pharmacy and Medicine",
+  "group": "health",
+  "symbol": "pills",
+  "summaryPl": "Odbieranie leków na receptę, leki bez recepty, formy leków, dawkowanie i ostrzeżenia z ulotki.",
+  "aliases": [
+    "apteka",
+    "leki",
+    "lekarstwa",
+    "dawkowanie",
+    "bez recepty",
+    "ulotka",
+    "pharmacy",
+    "drugstore",
+    "medicine",
+    "pills"
+  ],
+  "categories": [
+    {
+      "id": "pharmacy.pharmacy-counter",
+      "namePl": "Przy okienku apteki",
+      "scenePl": "Dział apteczny w drogerii: odbieranie leków na receptę przy okienku",
+      "entries": [
+        {
+          "id": "pharmacy.pharmacy",
+          "term": "pharmacy",
+          "ipa": "/ˈfɑːrməsi/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "apteka",
+          "definition": "A place where medicines are prepared and sold.",
+          "register": "neutralny",
+          "contextPl": "Miejsce realizacji recept",
+          "natural": "",
+          "forms": "pharmacies",
+          "collocations": "local pharmacy; pharmacy counter",
+          "synonyms": "drugstore",
+          "antonyms": "",
+          "notePl": "W USA apteka to często dział w drogerii lub supermarkecie.",
+          "examples": [
+            {
+              "en": "The pharmacy is at the back of the store, past the snacks.",
+              "pl": "Apteka jest w głębi sklepu, za przekąskami.",
+              "focusEn": "pharmacy",
+              "focusPl": "Apteka"
+            },
+            {
+              "en": "The pharmacy closes at nine, but the rest of the store stays open later.",
+              "pl": "Apteka zamyka się o dziewiątej, ale reszta sklepu jest otwarta dłużej.",
+              "focusEn": "pharmacy",
+              "focusPl": "Apteka"
+            }
+          ],
+          "acceptedAnswers": [
+            "pharmacy",
+            "drugstore"
+          ],
+          "acceptedTranslations": [
+            "apteka"
+          ]
+        },
+        {
+          "id": "pharmacy.pharmacist",
+          "term": "pharmacist",
+          "ipa": "/ˈfɑːrməsɪst/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "farmaceuta",
+          "definition": "A person trained to prepare and give out medicines.",
+          "register": "neutralny",
+          "contextPl": "Osoba wydająca leki i doradzająca",
+          "natural": "",
+          "forms": "pharmacists",
+          "collocations": "ask the pharmacist; talk to a pharmacist",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I asked the pharmacist if my medicine was ready.",
+              "pl": "Zapytałem farmaceutkę, czy mój lek jest gotowy.",
+              "focusEn": "pharmacist",
+              "focusPl": "farmaceutkę"
+            },
+            {
+              "en": "The pharmacist checked my date of birth again before handing me the bag.",
+              "pl": "Farmaceuta jeszcze raz sprawdził moją datę urodzenia, zanim podał mi torebkę.",
+              "focusEn": "pharmacist",
+              "focusPl": "Farmaceuta"
+            }
+          ],
+          "acceptedAnswers": [
+            "pharmacist"
+          ],
+          "acceptedTranslations": [
+            "farmaceuta",
+            "farmaceutka",
+            "aptekarz"
+          ]
+        },
+        {
+          "id": "pharmacy.prescription",
+          "term": "prescription",
+          "ipa": "/prɪˈskrɪpʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "recepta",
+          "definition": "A doctor's written or electronic order for medicine.",
+          "register": "neutralny",
+          "contextPl": "Leki wydawane na receptę",
+          "natural": "",
+          "forms": "prescriptions",
+          "collocations": "prescription drug; prescription for; pick up a prescription",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA na receptę wydaje się lek przygotowany dla konkretnego pacjenta.",
+          "examples": [
+            {
+              "en": "Do you have a prescription for this, or is it over the counter?",
+              "pl": "Ma pan na to receptę, czy to lek bez recepty?",
+              "focusEn": "prescription",
+              "focusPl": "receptę"
+            },
+            {
+              "en": "My doctor sent the prescription here electronically this morning.",
+              "pl": "Lekarz przesłał tu dziś rano receptę elektronicznie.",
+              "focusEn": "prescription",
+              "focusPl": "receptę"
+            }
+          ],
+          "acceptedAnswers": [
+            "prescription",
+            "script"
+          ],
+          "acceptedTranslations": [
+            "recepta"
+          ]
+        },
+        {
+          "id": "pharmacy.pick-up",
+          "term": "pick up",
+          "ipa": "/ˌpɪk ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odebrać",
+          "definition": "To go and get something that is waiting for you.",
+          "register": "neutralny",
+          "contextPl": "Odbiór przygotowanych leków",
+          "natural": "",
+          "forms": "picked up",
+          "collocations": "pick up a prescription; pick up your medicine",
+          "synonyms": "collect",
+          "antonyms": "drop off",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm here to pick up a prescription for my son.",
+              "pl": "Przyszłam odebrać leki na receptę dla syna.",
+              "focusEn": "pick up",
+              "focusPl": "odebrać"
+            },
+            {
+              "en": "You can pick up your medicine after four o'clock.",
+              "pl": "Może pan odebrać lek po szesnastej.",
+              "focusEn": "pick up",
+              "focusPl": "odebrać"
+            }
+          ],
+          "acceptedAnswers": [
+            "pick up",
+            "collect"
+          ],
+          "acceptedTranslations": [
+            "odebrać",
+            "odbierać"
+          ]
+        },
+        {
+          "id": "pharmacy.ready",
+          "term": "ready",
+          "ipa": "/ˈredi/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "gotowy",
+          "definition": "Prepared and available to be taken.",
+          "register": "neutralny",
+          "contextPl": "Oczekiwanie na przygotowanie leku",
+          "natural": "",
+          "forms": "",
+          "collocations": "ready for pickup; get ready",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your prescription will be ready in fifteen minutes.",
+              "pl": "Pana leki będą gotowe za piętnaście minut.",
+              "focusEn": "ready",
+              "focusPl": "gotowe"
+            },
+            {
+              "en": "I got a text saying my medicine was ready for pickup.",
+              "pl": "Dostałem SMS-a, że mój lek jest gotowy do odbioru.",
+              "focusEn": "ready",
+              "focusPl": "gotowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "ready"
+          ],
+          "acceptedTranslations": [
+            "gotowy",
+            "gotowa",
+            "gotowe"
+          ]
+        },
+        {
+          "id": "pharmacy.counter",
+          "term": "counter",
+          "ipa": "/ˈkaʊntər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "lada",
+          "definition": "The long table or window where you are served in a store.",
+          "register": "neutralny",
+          "contextPl": "Miejsce obsługi pacjentów",
+          "natural": "",
+          "forms": "counters",
+          "collocations": "pharmacy counter; behind the counter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There was a long line at the pharmacy counter.",
+              "pl": "Przy okienku apteki była długa kolejka.",
+              "focusEn": "counter",
+              "focusPl": "okienku"
+            },
+            {
+              "en": "The pharmacist leaned over the counter to show me the label.",
+              "pl": "Farmaceutka pochyliła się nad ladą, żeby pokazać mi etykietę.",
+              "focusEn": "counter",
+              "focusPl": "ladą"
+            }
+          ],
+          "acceptedAnswers": [
+            "counter"
+          ],
+          "acceptedTranslations": [
+            "lada",
+            "okienko"
+          ]
+        },
+        {
+          "id": "pharmacy.drugstore",
+          "term": "drugstore",
+          "ipa": "/ˈdrʌɡstɔːr/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "drogeria z apteką",
+          "definition": "A store that sells medicine, toiletries and small everyday items.",
+          "register": "neutralny",
+          "contextPl": "Typowo amerykański sklep z działem aptecznym",
+          "natural": "",
+          "forms": "drugstores",
+          "collocations": "",
+          "synonyms": "pharmacy",
+          "antonyms": "",
+          "notePl": "„Drug” w tym kontekście znaczy po prostu „lek”.",
+          "examples": [
+            {
+              "en": "There's a drugstore on the corner that's open twenty-four hours.",
+              "pl": "Na rogu jest drogeria z apteką czynna całą dobę.",
+              "focusEn": "drugstore",
+              "focusPl": "drogeria z apteką"
+            },
+            {
+              "en": "I grabbed some shampoo while I waited at the drugstore.",
+              "pl": "Czekając w drogerii, wziąłem jeszcze szampon.",
+              "focusEn": "drugstore",
+              "focusPl": "drogerii"
+            }
+          ],
+          "acceptedAnswers": [
+            "drugstore",
+            "pharmacy"
+          ],
+          "acceptedTranslations": [
+            "drogeria z apteką",
+            "drogeria",
+            "apteka"
+          ]
+        },
+        {
+          "id": "pharmacy.cover",
+          "term": "cover",
+          "ipa": "/ˈkʌvər/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pokrywać",
+          "definition": "To pay for something, used about insurance.",
+          "register": "neutralny",
+          "contextPl": "Refundacja przez ubezpieczenie",
+          "natural": "",
+          "forms": "covered",
+          "collocations": "insurance covers; fully covered",
+          "synonyms": "pay for",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Does your insurance cover this medication?",
+              "pl": "Czy pana ubezpieczenie pokrywa ten lek?",
+              "focusEn": "cover",
+              "focusPl": "pokrywa"
+            },
+            {
+              "en": "My plan covered most of the cost, so I only paid ten dollars.",
+              "pl": "Mój plan pokrył większość kosztów, więc zapłaciłem tylko dziesięć dolarów.",
+              "focusEn": "covered",
+              "focusPl": "pokrył"
+            }
+          ],
+          "acceptedAnswers": [
+            "cover",
+            "pay for"
+          ],
+          "acceptedTranslations": [
+            "pokrywać",
+            "pokryć",
+            "refundować",
+            "obejmować"
+          ]
+        },
+        {
+          "id": "pharmacy.generic",
+          "term": "generic",
+          "ipa": "/dʒəˈnerɪk/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "generyczny",
+          "definition": "Sold without a famous brand name and usually cheaper, but with the same medicine.",
+          "register": "neutralny",
+          "contextPl": "Tańsze odpowiedniki leków",
+          "natural": "",
+          "forms": "",
+          "collocations": "generic drug; generic version",
+          "synonyms": "",
+          "antonyms": "brand-name",
+          "notePl": "Po polsku potocznie „zamiennik”.",
+          "examples": [
+            {
+              "en": "Would you like the generic version? It's much cheaper.",
+              "pl": "Woli pan wersję generyczną? Jest dużo tańsza.",
+              "focusEn": "generic",
+              "focusPl": "generyczną"
+            },
+            {
+              "en": "My insurance only covers the generic medicine.",
+              "pl": "Moje ubezpieczenie pokrywa tylko lek generyczny.",
+              "focusEn": "generic",
+              "focusPl": "generyczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "generic"
+          ],
+          "acceptedTranslations": [
+            "generyczny",
+            "zamiennik",
+            "tańszy odpowiednik"
+          ]
+        },
+        {
+          "id": "pharmacy.brand-name",
+          "term": "brand-name",
+          "ipa": "/ˈbrænd ˌneɪm/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "oryginalny",
+          "definition": "Made and sold by the company that created it, under its own name.",
+          "register": "neutralny",
+          "contextPl": "Droższy lek oryginalny",
+          "natural": "",
+          "forms": "",
+          "collocations": "brand-name drug; brand-name version",
+          "synonyms": "",
+          "antonyms": "generic",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The brand-name pills cost three times as much.",
+              "pl": "Oryginalne tabletki kosztują trzy razy tyle.",
+              "focusEn": "brand-name",
+              "focusPl": "Oryginalne"
+            },
+            {
+              "en": "I asked for the brand-name version because the generic upset my stomach.",
+              "pl": "Poprosiłem o wersję oryginalną, bo zamiennik podrażniał mi żołądek.",
+              "focusEn": "brand-name",
+              "focusPl": "oryginalną"
+            }
+          ],
+          "acceptedAnswers": [
+            "brand-name",
+            "brand name"
+          ],
+          "acceptedTranslations": [
+            "oryginalny",
+            "markowy"
+          ]
+        },
+        {
+          "id": "pharmacy.fill-a-prescription",
+          "term": "fill a prescription",
+          "ipa": "/ˌfɪl ə prɪˈskrɪpʃən/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zrealizować receptę",
+          "definition": "To prepare and give out the medicine on a prescription.",
+          "register": "neutralny",
+          "contextPl": "Przygotowanie leku przez aptekę",
+          "natural": "",
+          "forms": "fill – filled – filled",
+          "collocations": "get a prescription filled",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA farmaceuta „fills” receptę, czyli odlicza tabletki do buteleczki.",
+          "examples": [
+            {
+              "en": "It'll take about twenty minutes to fill your prescription.",
+              "pl": "Zrealizowanie recepty zajmie około dwudziestu minut.",
+              "focusEn": "fill your prescription",
+              "focusPl": "Zrealizowanie recepty"
+            },
+            {
+              "en": "They couldn't fill the prescription because the medicine was out of stock.",
+              "pl": "Nie mogli zrealizować recepty, bo zabrakło leku.",
+              "focusEn": "fill the prescription",
+              "focusPl": "zrealizować recepty"
+            }
+          ],
+          "acceptedAnswers": [
+            "fill a prescription",
+            "fill your prescription",
+            "fill the prescription"
+          ],
+          "acceptedTranslations": [
+            "zrealizować receptę",
+            "realizować receptę",
+            "wykupić lek"
+          ]
+        },
+        {
+          "id": "pharmacy.out-of-stock",
+          "term": "out of stock",
+          "ipa": "/ˌaʊt əv ˈstɑːk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "niedostępny",
+          "definition": "Not available in the store right now.",
+          "register": "neutralny",
+          "contextPl": "Braki leków w aptece",
+          "natural": "",
+          "forms": "",
+          "collocations": "temporarily out of stock",
+          "synonyms": "unavailable",
+          "antonyms": "in stock",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, that medicine is out of stock until Thursday.",
+              "pl": "Przykro mi, tego leku nie ma na stanie do czwartku.",
+              "focusEn": "out of stock",
+              "focusPl": "nie ma na stanie"
+            },
+            {
+              "en": "Since my usual pills were out of stock, they gave me ones from another company.",
+              "pl": "Ponieważ moich zwykłych tabletek zabrakło, dostałem tabletki innego producenta.",
+              "focusEn": "out of stock",
+              "focusPl": "zabrakło"
+            }
+          ],
+          "acceptedAnswers": [
+            "out of stock",
+            "unavailable"
+          ],
+          "acceptedTranslations": [
+            "niedostępny",
+            "brak na stanie",
+            "nie ma na stanie",
+            "zabrakło"
+          ]
+        },
+        {
+          "id": "pharmacy.drive-thru",
+          "term": "drive-thru",
+          "ipa": "/ˈdraɪv θruː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "okienko dla kierowców",
+          "definition": "A window where you are served without leaving your car.",
+          "register": "potoczny",
+          "contextPl": "Odbiór leków z samochodu",
+          "natural": "",
+          "forms": "drive-thrus",
+          "collocations": "pharmacy drive-thru",
+          "synonyms": "drive-through",
+          "antonyms": "",
+          "notePl": "Popularne w USA także w aptekach.",
+          "examples": [
+            {
+              "en": "I picked up my medicine at the pharmacy drive-thru without getting out of the car.",
+              "pl": "Odebrałem leki w aptecznym okienku dla kierowców, nie wysiadając z samochodu.",
+              "focusEn": "drive-thru",
+              "focusPl": "okienku dla kierowców"
+            },
+            {
+              "en": "The drive-thru line was long, so I went inside instead.",
+              "pl": "Kolejka do okienka dla zmotoryzowanych była długa, więc wszedłem do środka.",
+              "focusEn": "drive-thru",
+              "focusPl": "okienka dla zmotoryzowanych"
+            }
+          ],
+          "acceptedAnswers": [
+            "drive-thru",
+            "drive-through"
+          ],
+          "acceptedTranslations": [
+            "okienko dla kierowców",
+            "okienko dla zmotoryzowanych"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pharmacy.over-the-counter",
+      "namePl": "Leki bez recepty",
+      "scenePl": "Półki z lekami bez recepty w drogerii i prośba o radę farmaceuty",
+      "entries": [
+        {
+          "id": "pharmacy.over-the-counter",
+          "term": "over-the-counter",
+          "ipa": "/ˌoʊvər ðə ˈkaʊntər/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bez recepty",
+          "definition": "Sold without a prescription.",
+          "register": "neutralny",
+          "contextPl": "Leki dostępne bez recepty",
+          "natural": "",
+          "forms": "",
+          "collocations": "over-the-counter medicine; over-the-counter drugs",
+          "synonyms": "nonprescription",
+          "antonyms": "prescription",
+          "notePl": "Skrót: OTC.",
+          "examples": [
+            {
+              "en": "Is there anything over-the-counter that helps with a cough?",
+              "pl": "Czy jest coś bez recepty, co pomaga na kaszel?",
+              "focusEn": "over-the-counter",
+              "focusPl": "bez recepty"
+            },
+            {
+              "en": "The pharmacist recommended an over-the-counter cream for the rash.",
+              "pl": "Farmaceutka poleciła krem bez recepty na wysypkę.",
+              "focusEn": "over-the-counter",
+              "focusPl": "bez recepty"
+            }
+          ],
+          "acceptedAnswers": [
+            "over-the-counter",
+            "over the counter",
+            "OTC",
+            "nonprescription"
+          ],
+          "acceptedTranslations": [
+            "bez recepty",
+            "dostępny bez recepty"
+          ]
+        },
+        {
+          "id": "pharmacy.recommend",
+          "term": "recommend",
+          "ipa": "/ˌrekəˈmend/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "polecić",
+          "definition": "To advise someone to use or do something.",
+          "register": "neutralny",
+          "contextPl": "Prośba o poradę",
+          "natural": "",
+          "forms": "recommended",
+          "collocations": "recommend something for; highly recommend",
+          "synonyms": "suggest",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What do you recommend for a sore throat?",
+              "pl": "Co pan poleca na ból gardła?",
+              "focusEn": "recommend",
+              "focusPl": "poleca"
+            },
+            {
+              "en": "The pharmacist recommended a cheaper option that works the same way.",
+              "pl": "Farmaceutka poleciła tańszą opcję, która działa tak samo.",
+              "focusEn": "recommended",
+              "focusPl": "poleciła"
+            }
+          ],
+          "acceptedAnswers": [
+            "recommend",
+            "suggest"
+          ],
+          "acceptedTranslations": [
+            "polecić",
+            "polecać",
+            "zalecić",
+            "doradzić"
+          ]
+        },
+        {
+          "id": "pharmacy.painkiller",
+          "term": "painkiller",
+          "ipa": "/ˈpeɪnkɪlər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "lek przeciwbólowy",
+          "definition": "A medicine that reduces pain.",
+          "register": "neutralny",
+          "contextPl": "Leki na ból",
+          "natural": "",
+          "forms": "painkillers",
+          "collocations": "take a painkiller; strong painkiller",
+          "synonyms": "pain reliever",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Which painkiller is best for a headache?",
+              "pl": "Który lek przeciwbólowy jest najlepszy na ból głowy?",
+              "focusEn": "painkiller",
+              "focusPl": "lek przeciwbólowy"
+            },
+            {
+              "en": "I put a box of painkillers in my basket, just in case.",
+              "pl": "Na wszelki wypadek wrzuciłem do koszyka opakowanie leków przeciwbólowych.",
+              "focusEn": "painkillers",
+              "focusPl": "leków przeciwbólowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "painkiller",
+            "pain reliever"
+          ],
+          "acceptedTranslations": [
+            "lek przeciwbólowy",
+            "środek przeciwbólowy",
+            "tabletka przeciwbólowa"
+          ]
+        },
+        {
+          "id": "pharmacy.cough-syrup",
+          "term": "cough syrup",
+          "ipa": "/ˈkɔːf ˌsɪrəp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "syrop na kaszel",
+          "definition": "A sweet liquid medicine for coughs.",
+          "register": "neutralny",
+          "contextPl": "Leki na kaszel",
+          "natural": "",
+          "forms": "",
+          "collocations": "cherry cough syrup; a spoonful of cough syrup",
+          "synonyms": "cough medicine",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This cough syrup might make you sleepy.",
+              "pl": "Ten syrop na kaszel może powodować senność.",
+              "focusEn": "cough syrup",
+              "focusPl": "syrop na kaszel"
+            },
+            {
+              "en": "I couldn't decide between the cherry and the honey cough syrup.",
+              "pl": "Nie mogłem się zdecydować między wiśniowym a miodowym syropem na kaszel.",
+              "focusEn": "cough syrup",
+              "focusPl": "syropem na kaszel"
+            }
+          ],
+          "acceptedAnswers": [
+            "cough syrup",
+            "cough medicine"
+          ],
+          "acceptedTranslations": [
+            "syrop na kaszel",
+            "syrop"
+          ]
+        },
+        {
+          "id": "pharmacy.cough-drop",
+          "term": "cough drop",
+          "ipa": "/ˈkɔːf ˌdrɑːp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pastylka na kaszel",
+          "definition": "A small candy with medicine that soothes a cough or sore throat.",
+          "register": "neutralny",
+          "contextPl": "Pastylki do ssania",
+          "natural": "",
+          "forms": "cough drops",
+          "collocations": "a bag of cough drops; suck on a cough drop",
+          "synonyms": "throat lozenge",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I bought a bag of cough drops for my scratchy throat.",
+              "pl": "Kupiłem paczkę pastylek na kaszel na drapiące gardło.",
+              "focusEn": "cough drops",
+              "focusPl": "pastylek na kaszel"
+            },
+            {
+              "en": "The pharmacist said the honey cough drops are fine for kids too.",
+              "pl": "Farmaceuta powiedział, że miodowe pastylki na kaszel są dobre także dla dzieci.",
+              "focusEn": "cough drops",
+              "focusPl": "pastylki na kaszel"
+            }
+          ],
+          "acceptedAnswers": [
+            "cough drop",
+            "cough drops",
+            "throat lozenge"
+          ],
+          "acceptedTranslations": [
+            "pastylka na kaszel",
+            "pastylki na kaszel",
+            "pastylka na gardło",
+            "pastylki do ssania"
+          ]
+        },
+        {
+          "id": "pharmacy.allergy-medicine",
+          "term": "allergy medicine",
+          "ipa": "/ˈælərdʒi ˌmedɪsən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "lek na alergię",
+          "definition": "Medicine that reduces sneezing, itching and other allergy symptoms.",
+          "register": "neutralny",
+          "contextPl": "Leki przeciwalergiczne",
+          "natural": "",
+          "forms": "",
+          "collocations": "non-drowsy allergy medicine",
+          "synonyms": "antihistamine",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Does this allergy medicine make you drowsy?",
+              "pl": "Czy ten lek na alergię powoduje senność?",
+              "focusEn": "allergy medicine",
+              "focusPl": "lek na alergię"
+            },
+            {
+              "en": "I stocked up on allergy medicine before spring.",
+              "pl": "Przed wiosną zrobiłem zapas leków na alergię.",
+              "focusEn": "allergy medicine",
+              "focusPl": "leków na alergię"
+            }
+          ],
+          "acceptedAnswers": [
+            "allergy medicine",
+            "antihistamine",
+            "allergy pills"
+          ],
+          "acceptedTranslations": [
+            "lek na alergię",
+            "leki na alergię",
+            "lek przeciwalergiczny",
+            "lek przeciwhistaminowy"
+          ]
+        },
+        {
+          "id": "pharmacy.vitamin",
+          "term": "vitamin",
+          "ipa": "/ˈvaɪtəmɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "witamina",
+          "definition": "A natural substance your body needs, often taken as a pill.",
+          "register": "neutralny",
+          "contextPl": "Witaminy i suplementy",
+          "natural": "",
+          "forms": "vitamins",
+          "collocations": "vitamin D; take vitamins; daily vitamin",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Amerykańska wymowa zaczyna się od /ˈvaɪ/.",
+          "examples": [
+            {
+              "en": "I'm looking for vitamin D for my kids.",
+              "pl": "Szukam witaminy D dla dzieci.",
+              "focusEn": "vitamin",
+              "focusPl": "witaminy"
+            },
+            {
+              "en": "The vitamins were on sale, two bottles for the price of one.",
+              "pl": "Witaminy były w promocji, dwie butelki w cenie jednej.",
+              "focusEn": "vitamins",
+              "focusPl": "Witaminy"
+            }
+          ],
+          "acceptedAnswers": [
+            "vitamin",
+            "vitamins"
+          ],
+          "acceptedTranslations": [
+            "witamina",
+            "witaminy"
+          ]
+        },
+        {
+          "id": "pharmacy.eye-drops",
+          "term": "eye drops",
+          "ipa": "/ˈaɪ ˌdrɑːps/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "krople do oczu",
+          "definition": "Liquid medicine you put into your eyes.",
+          "register": "neutralny",
+          "contextPl": "Leki na suche i podrażnione oczy",
+          "natural": "",
+          "forms": "",
+          "collocations": "use eye drops; put in eye drops",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have any eye drops for dry, itchy eyes?",
+              "pl": "Czy macie jakieś krople do oczu na suche, swędzące oczy?",
+              "focusEn": "eye drops",
+              "focusPl": "krople do oczu"
+            },
+            {
+              "en": "The eye drops were on the bottom shelf, next to the contact lens solution.",
+              "pl": "Krople do oczu stały na dolnej półce, obok płynu do soczewek.",
+              "focusEn": "eye drops",
+              "focusPl": "Krople do oczu"
+            }
+          ],
+          "acceptedAnswers": [
+            "eye drops"
+          ],
+          "acceptedTranslations": [
+            "krople do oczu"
+          ]
+        },
+        {
+          "id": "pharmacy.aspirin",
+          "term": "aspirin",
+          "ipa": "/ˈæsprɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "aspiryna",
+          "definition": "A common medicine for pain, fever and swelling.",
+          "register": "neutralny",
+          "contextPl": "Popularny lek przeciwbólowy",
+          "natural": "",
+          "forms": "aspirin; aspirins",
+          "collocations": "take an aspirin; a bottle of aspirin",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Jako policzalne: „take an aspirin” – weź tabletkę aspiryny.",
+          "examples": [
+            {
+              "en": "Is aspirin okay for a headache if I have a sensitive stomach?",
+              "pl": "Czy aspiryna jest w porządku na ból głowy, jeśli mam wrażliwy żołądek?",
+              "focusEn": "aspirin",
+              "focusPl": "aspiryna"
+            },
+            {
+              "en": "I grabbed a small bottle of aspirin from the shelf.",
+              "pl": "Wziąłem z półki małe opakowanie aspiryny.",
+              "focusEn": "aspirin",
+              "focusPl": "aspiryny"
+            }
+          ],
+          "acceptedAnswers": [
+            "aspirin"
+          ],
+          "acceptedTranslations": [
+            "aspiryna"
+          ]
+        },
+        {
+          "id": "pharmacy.ibuprofen",
+          "term": "ibuprofen",
+          "ipa": "/ˌaɪbjuːˈproʊfən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ibuprofen",
+          "definition": "A common medicine for pain, fever and swelling.",
+          "register": "neutralny",
+          "contextPl": "Popularny lek przeciwbólowy i przeciwzapalny",
+          "natural": "",
+          "forms": "",
+          "collocations": "take ibuprofen",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The pharmacist suggested ibuprofen for the swelling in my knee.",
+              "pl": "Farmaceuta zaproponował ibuprofen na obrzęk kolana.",
+              "focusEn": "ibuprofen",
+              "focusPl": "ibuprofen"
+            },
+            {
+              "en": "Store-brand ibuprofen works just as well and costs half as much.",
+              "pl": "Sklepowy ibuprofen działa równie dobrze i kosztuje o połowę mniej.",
+              "focusEn": "ibuprofen",
+              "focusPl": "ibuprofen"
+            }
+          ],
+          "acceptedAnswers": [
+            "ibuprofen"
+          ],
+          "acceptedTranslations": [
+            "ibuprofen"
+          ]
+        },
+        {
+          "id": "pharmacy.nasal-spray",
+          "term": "nasal spray",
+          "ipa": "/ˈneɪzəl ˌspreɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "spray do nosa",
+          "definition": "Liquid medicine that you spray into your nose.",
+          "register": "neutralny",
+          "contextPl": "Leki na katar i zatkany nos",
+          "natural": "",
+          "forms": "nasal sprays",
+          "collocations": "saline nasal spray; use a nasal spray",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This nasal spray works fast, but don't use it for more than three days.",
+              "pl": "Ten spray do nosa działa szybko, ale nie należy go stosować dłużej niż trzy dni.",
+              "focusEn": "nasal spray",
+              "focusPl": "spray do nosa"
+            },
+            {
+              "en": "I found the saline nasal spray next to the tissues.",
+              "pl": "Znalazłem solankowy spray do nosa obok chusteczek.",
+              "focusEn": "nasal spray",
+              "focusPl": "spray do nosa"
+            }
+          ],
+          "acceptedAnswers": [
+            "nasal spray"
+          ],
+          "acceptedTranslations": [
+            "spray do nosa",
+            "aerozol do nosa"
+          ]
+        },
+        {
+          "id": "pharmacy.supplement",
+          "term": "supplement",
+          "ipa": "/ˈsʌpləmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "suplement",
+          "definition": "Something you take in addition to food to help your health, like fish oil.",
+          "register": "neutralny",
+          "contextPl": "Suplementy diety",
+          "natural": "",
+          "forms": "supplements",
+          "collocations": "dietary supplement; iron supplement",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The pharmacist said this supplement might not mix well with my medication.",
+              "pl": "Farmaceuta powiedział, że ten suplement może nie współgrać z moimi lekami.",
+              "focusEn": "supplement",
+              "focusPl": "suplement"
+            },
+            {
+              "en": "The whole aisle was full of fish oil and other supplements.",
+              "pl": "Cała alejka była pełna tranu i innych suplementów.",
+              "focusEn": "supplements",
+              "focusPl": "suplementów"
+            }
+          ],
+          "acceptedAnswers": [
+            "supplement",
+            "dietary supplement"
+          ],
+          "acceptedTranslations": [
+            "suplement",
+            "suplement diety"
+          ]
+        },
+        {
+          "id": "pharmacy.fever-reducer",
+          "term": "fever reducer",
+          "ipa": "/ˈfiːvər rɪˌduːsər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "lek przeciwgorączkowy",
+          "definition": "A medicine that lowers a high body temperature.",
+          "register": "neutralny",
+          "contextPl": "Leki na gorączkę, zwłaszcza dla dzieci",
+          "natural": "",
+          "forms": "fever reducers",
+          "collocations": "children's fever reducer",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What's a good fever reducer for a two-year-old?",
+              "pl": "Jaki jest dobry lek przeciwgorączkowy dla dwulatka?",
+              "focusEn": "fever reducer",
+              "focusPl": "lek przeciwgorączkowy"
+            },
+            {
+              "en": "The pharmacist handed me a fever reducer in liquid form for my daughter.",
+              "pl": "Farmaceutka podała mi lek przeciwgorączkowy w płynie dla córki.",
+              "focusEn": "fever reducer",
+              "focusPl": "lek przeciwgorączkowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "fever reducer"
+          ],
+          "acceptedTranslations": [
+            "lek przeciwgorączkowy",
+            "środek przeciwgorączkowy"
+          ]
+        },
+        {
+          "id": "pharmacy.decongestant",
+          "term": "decongestant",
+          "ipa": "/ˌdiːkənˈdʒestənt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "lek udrażniający nos",
+          "definition": "A medicine that clears a blocked nose.",
+          "register": "specjalistyczny",
+          "contextPl": "Leki na zatkany nos",
+          "natural": "",
+          "forms": "decongestants",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA niektóre takie leki sprzedaje się zza lady po okazaniu dokumentu.",
+          "examples": [
+            {
+              "en": "For a stuffy nose, you could try this decongestant.",
+              "pl": "Na zatkany nos może pan spróbować tego leku udrażniającego.",
+              "focusEn": "decongestant",
+              "focusPl": "leku udrażniającego"
+            },
+            {
+              "en": "Some decongestants are kept behind the counter, so you have to ask for them.",
+              "pl": "Niektóre leki na zatkany nos trzyma się za ladą, więc trzeba o nie poprosić.",
+              "focusEn": "decongestants",
+              "focusPl": "leki na zatkany nos"
+            }
+          ],
+          "acceptedAnswers": [
+            "decongestant"
+          ],
+          "acceptedTranslations": [
+            "lek udrażniający nos",
+            "lek na zatkany nos",
+            "lek obkurczający błonę śluzową"
+          ]
+        },
+        {
+          "id": "pharmacy.antacid",
+          "term": "antacid",
+          "ipa": "/æntˈæsɪd/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "lek na zgagę",
+          "definition": "A medicine that reduces acid in the stomach.",
+          "register": "specjalistyczny",
+          "contextPl": "Leki na zgagę i niestrawność",
+          "natural": "",
+          "forms": "antacids",
+          "collocations": "chewable antacid",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I need an antacid; I've had heartburn since lunch.",
+              "pl": "Potrzebuję leku na zgagę; pali mnie od obiadu.",
+              "focusEn": "antacid",
+              "focusPl": "leku na zgagę"
+            },
+            {
+              "en": "The antacids come in chewable tablets that taste like mint.",
+              "pl": "Leki zobojętniające są w tabletkach do żucia o smaku mięty.",
+              "focusEn": "antacids",
+              "focusPl": "Leki zobojętniające"
+            }
+          ],
+          "acceptedAnswers": [
+            "antacid"
+          ],
+          "acceptedTranslations": [
+            "lek na zgagę",
+            "lek zobojętniający",
+            "leki zobojętniające"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pharmacy.forms-first-aid",
+      "namePl": "Formy leków i apteczka",
+      "scenePl": "Domowa łazienka: rozpakowywanie zakupów z apteki do szafki na leki",
+      "entries": [
+        {
+          "id": "pharmacy.pill",
+          "term": "pill",
+          "ipa": "/pɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "tabletka",
+          "definition": "A small solid piece of medicine that you swallow.",
+          "register": "neutralny",
+          "contextPl": "Najczęstsza forma leku",
+          "natural": "",
+          "forms": "pills",
+          "collocations": "take a pill; sleeping pill; pill box",
+          "synonyms": "tablet",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I put the pills in a weekly box so I don't forget any.",
+              "pl": "Włożyłem tabletki do tygodniowego pojemnika, żeby żadnej nie zapomnieć.",
+              "focusEn": "pills",
+              "focusPl": "tabletki"
+            },
+            {
+              "en": "A pill rolled under the sink when I opened the bottle.",
+              "pl": "Kiedy otworzyłem buteleczkę, jedna tabletka potoczyła się pod umywalkę.",
+              "focusEn": "pill",
+              "focusPl": "tabletka"
+            }
+          ],
+          "acceptedAnswers": [
+            "pill",
+            "tablet"
+          ],
+          "acceptedTranslations": [
+            "tabletka",
+            "pigułka"
+          ]
+        },
+        {
+          "id": "pharmacy.bottle",
+          "term": "bottle",
+          "ipa": "/ˈbɑːtəl/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "buteleczka",
+          "definition": "A container for pills or liquid medicine.",
+          "register": "neutralny",
+          "contextPl": "Opakowanie leku",
+          "natural": "",
+          "forms": "bottles",
+          "collocations": "pill bottle; medicine bottle; childproof bottle",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA leki na receptę wydaje się zwykle w plastikowych buteleczkach, nie w blistrach.",
+          "examples": [
+            {
+              "en": "The pill bottle has a childproof cap.",
+              "pl": "Buteleczka na tabletki ma zakrętkę zabezpieczającą przed dziećmi.",
+              "focusEn": "bottle",
+              "focusPl": "Buteleczka"
+            },
+            {
+              "en": "I lined up all the medicine bottles in the cabinet.",
+              "pl": "Ustawiłem wszystkie buteleczki z lekami w szafce.",
+              "focusEn": "bottles",
+              "focusPl": "buteleczki"
+            }
+          ],
+          "acceptedAnswers": [
+            "bottle"
+          ],
+          "acceptedTranslations": [
+            "buteleczka",
+            "butelka",
+            "opakowanie"
+          ]
+        },
+        {
+          "id": "pharmacy.capsule",
+          "term": "capsule",
+          "ipa": "/ˈkæpsəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kapsułka",
+          "definition": "A small soft or hard case filled with medicine that you swallow.",
+          "register": "neutralny",
+          "contextPl": "Forma leku",
+          "natural": "",
+          "forms": "capsules",
+          "collocations": "gel capsule; swallow a capsule",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "These capsules are huge; I hope I can swallow them.",
+              "pl": "Te kapsułki są ogromne; mam nadzieję, że dam radę je połknąć.",
+              "focusEn": "capsules",
+              "focusPl": "kapsułki"
+            },
+            {
+              "en": "I put the bottle of fish oil capsules on the top shelf.",
+              "pl": "Postawiłem buteleczkę kapsułek z tranem na górnej półce.",
+              "focusEn": "capsules",
+              "focusPl": "kapsułek"
+            }
+          ],
+          "acceptedAnswers": [
+            "capsule"
+          ],
+          "acceptedTranslations": [
+            "kapsułka",
+            "kapsułki"
+          ]
+        },
+        {
+          "id": "pharmacy.cream",
+          "term": "cream",
+          "ipa": "/kriːm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "krem",
+          "definition": "A soft substance you rub into your skin as medicine.",
+          "register": "neutralny",
+          "contextPl": "Leki na skórę",
+          "natural": "",
+          "forms": "creams",
+          "collocations": "anti-itch cream; rub in cream",
+          "synonyms": "lotion",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I put the anti-itch cream next to the sunscreen.",
+              "pl": "Położyłem krem przeciw swędzeniu obok kremu z filtrem.",
+              "focusEn": "cream",
+              "focusPl": "krem"
+            },
+            {
+              "en": "Rub a little cream on the rash twice a day.",
+              "pl": "Wcieraj trochę kremu w wysypkę dwa razy dziennie.",
+              "focusEn": "cream",
+              "focusPl": "kremu"
+            }
+          ],
+          "acceptedAnswers": [
+            "cream"
+          ],
+          "acceptedTranslations": [
+            "krem",
+            "maść"
+          ]
+        },
+        {
+          "id": "pharmacy.ointment",
+          "term": "ointment",
+          "ipa": "/ˈɔɪntmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "maść",
+          "definition": "A thick, greasy medicine you put on your skin.",
+          "register": "neutralny",
+          "contextPl": "Leki na skaleczenia i podrażnienia",
+          "natural": "",
+          "forms": "ointments",
+          "collocations": "antibiotic ointment; apply ointment",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Maść jest bardziej tłusta i gęsta niż krem.",
+          "examples": [
+            {
+              "en": "This antibiotic ointment is for small cuts and scrapes.",
+              "pl": "Ta maść z antybiotykiem jest na drobne skaleczenia i otarcia.",
+              "focusEn": "ointment",
+              "focusPl": "maść"
+            },
+            {
+              "en": "The tube of ointment was almost empty, so I bought a new one.",
+              "pl": "Tubka maści była prawie pusta, więc kupiłem nową.",
+              "focusEn": "ointment",
+              "focusPl": "maści"
+            }
+          ],
+          "acceptedAnswers": [
+            "ointment"
+          ],
+          "acceptedTranslations": [
+            "maść"
+          ]
+        },
+        {
+          "id": "pharmacy.tube",
+          "term": "tube",
+          "ipa": "/tuːb/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "tubka",
+          "definition": "A soft container that you squeeze to get cream out.",
+          "register": "neutralny",
+          "contextPl": "Opakowanie maści i kremów",
+          "natural": "",
+          "forms": "tubes",
+          "collocations": "tube of cream; squeeze the tube",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Squeeze a small amount from the tube onto your finger.",
+              "pl": "Wyciśnij odrobinę z tubki na palec.",
+              "focusEn": "tube",
+              "focusPl": "tubki"
+            },
+            {
+              "en": "The tube of cream fell into the sink when I opened it.",
+              "pl": "Tubka z kremem wpadła do umywalki, kiedy ją otworzyłem.",
+              "focusEn": "tube",
+              "focusPl": "Tubka"
+            }
+          ],
+          "acceptedAnswers": [
+            "tube"
+          ],
+          "acceptedTranslations": [
+            "tubka",
+            "tuba"
+          ]
+        },
+        {
+          "id": "pharmacy.bandage",
+          "term": "bandage",
+          "ipa": "/ˈbændɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "plaster",
+          "definition": "A small piece of material that sticks to the skin to cover a cut.",
+          "register": "neutralny",
+          "contextPl": "Opatrywanie drobnych ran",
+          "natural": "",
+          "forms": "bandages",
+          "collocations": "put on a bandage; adhesive bandage",
+          "synonyms": "Band-Aid",
+          "antonyms": "",
+          "notePl": "W AmE „bandage” to i plaster, i bandaż; potocznie mówi się też nazwą marki „Band-Aid”.",
+          "examples": [
+            {
+              "en": "I put a box of bandages in the first aid kit.",
+              "pl": "Włożyłem pudełko plastrów do apteczki.",
+              "focusEn": "bandages",
+              "focusPl": "plastrów"
+            },
+            {
+              "en": "As soon as we got home, my son needed a bandage for his scraped knee.",
+              "pl": "Gdy tylko wróciliśmy, syn potrzebował plastra na obtarte kolano.",
+              "focusEn": "bandage",
+              "focusPl": "plastra"
+            }
+          ],
+          "acceptedAnswers": [
+            "bandage",
+            "Band-Aid",
+            "adhesive bandage"
+          ],
+          "acceptedTranslations": [
+            "plaster",
+            "plastry",
+            "plaster z opatrunkiem",
+            "bandaż"
+          ]
+        },
+        {
+          "id": "pharmacy.first-aid-kit",
+          "term": "first aid kit",
+          "ipa": "/ˌfɜːrst ˈeɪd ˌkɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "apteczka",
+          "definition": "A box with bandages and basic medicine for small injuries.",
+          "register": "neutralny",
+          "contextPl": "Domowa apteczka",
+          "natural": "",
+          "forms": "first aid kits",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I restocked our first aid kit with new supplies.",
+              "pl": "Uzupełniłem naszą apteczkę nowymi zapasami.",
+              "focusEn": "first aid kit",
+              "focusPl": "apteczkę"
+            },
+            {
+              "en": "The first aid kit is in the cabinet under the bathroom sink.",
+              "pl": "Apteczka jest w szafce pod umywalką w łazience.",
+              "focusEn": "first aid kit",
+              "focusPl": "Apteczka"
+            }
+          ],
+          "acceptedAnswers": [
+            "first aid kit",
+            "first-aid kit"
+          ],
+          "acceptedTranslations": [
+            "apteczka",
+            "apteczka pierwszej pomocy"
+          ]
+        },
+        {
+          "id": "pharmacy.thermometer",
+          "term": "thermometer",
+          "ipa": "/θərˈmɑːmɪtər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "termometr",
+          "definition": "A device that measures body temperature.",
+          "register": "neutralny",
+          "contextPl": "Mierzenie temperatury w domu",
+          "natural": "",
+          "forms": "thermometers",
+          "collocations": "digital thermometer; ear thermometer",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We finally bought a digital thermometer.",
+              "pl": "W końcu kupiliśmy cyfrowy termometr.",
+              "focusEn": "thermometer",
+              "focusPl": "termometr"
+            },
+            {
+              "en": "Put the thermometer back in its case after you use it.",
+              "pl": "Po użyciu odłóż termometr do etui.",
+              "focusEn": "thermometer",
+              "focusPl": "termometr"
+            }
+          ],
+          "acceptedAnswers": [
+            "thermometer"
+          ],
+          "acceptedTranslations": [
+            "termometr"
+          ]
+        },
+        {
+          "id": "pharmacy.medicine-cabinet",
+          "term": "medicine cabinet",
+          "ipa": "/ˈmedɪsən ˌkæbənət/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "szafka na leki",
+          "definition": "A small cupboard, often behind the bathroom mirror, for medicine.",
+          "register": "neutralny",
+          "contextPl": "Przechowywanie leków w domu",
+          "natural": "",
+          "forms": "medicine cabinets",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I cleaned out the medicine cabinet and found pills from three years ago.",
+              "pl": "Wysprzątałem szafkę na leki i znalazłem tabletki sprzed trzech lat.",
+              "focusEn": "medicine cabinet",
+              "focusPl": "szafkę na leki"
+            },
+            {
+              "en": "The medicine cabinet behind the bathroom mirror is too small for everything.",
+              "pl": "Szafka na leki za lustrem w łazience jest za mała na wszystko.",
+              "focusEn": "medicine cabinet",
+              "focusPl": "Szafka na leki"
+            }
+          ],
+          "acceptedAnswers": [
+            "medicine cabinet"
+          ],
+          "acceptedTranslations": [
+            "szafka na leki",
+            "apteczka",
+            "szafka z lekami"
+          ]
+        },
+        {
+          "id": "pharmacy.inhaler",
+          "term": "inhaler",
+          "ipa": "/ɪnˈheɪlər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "inhalator",
+          "definition": "A small device that you breathe medicine in from, used for asthma.",
+          "register": "neutralny",
+          "contextPl": "Leki wziewne",
+          "natural": "",
+          "forms": "inhalers",
+          "collocations": "use an inhaler; asthma inhaler",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I keep a spare inhaler in the bathroom drawer.",
+              "pl": "Trzymam zapasowy inhalator w łazienkowej szufladzie.",
+              "focusEn": "inhaler",
+              "focusPl": "inhalator"
+            },
+            {
+              "en": "Shake the inhaler well before each puff.",
+              "pl": "Przed każdą dawką dobrze wstrząśnij inhalatorem.",
+              "focusEn": "inhaler",
+              "focusPl": "inhalatorem"
+            }
+          ],
+          "acceptedAnswers": [
+            "inhaler"
+          ],
+          "acceptedTranslations": [
+            "inhalator"
+          ]
+        },
+        {
+          "id": "pharmacy.gauze",
+          "term": "gauze",
+          "ipa": "/ɡɔːz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "gaza",
+          "definition": "Thin soft cloth used to cover wounds.",
+          "register": "neutralny",
+          "contextPl": "Opatrunki",
+          "natural": "",
+          "forms": "",
+          "collocations": "roll of gauze; gauze pad",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I added a roll of gauze and some tape to the kit.",
+              "pl": "Dorzuciłem do apteczki rolkę gazy i trochę przylepca.",
+              "focusEn": "gauze",
+              "focusPl": "gazy"
+            },
+            {
+              "en": "Cover the burn with clean gauze, not cotton balls.",
+              "pl": "Przykryj oparzenie czystą gazą, nie wacikami.",
+              "focusEn": "gauze",
+              "focusPl": "gazą"
+            }
+          ],
+          "acceptedAnswers": [
+            "gauze"
+          ],
+          "acceptedTranslations": [
+            "gaza",
+            "opatrunek"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pharmacy.dosage",
+      "namePl": "Dawkowanie",
+      "scenePl": "Farmaceutka przy okienku objaśnia, jak przyjmować nowy lek",
+      "entries": [
+        {
+          "id": "pharmacy.take",
+          "term": "take",
+          "ipa": "/teɪk/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "brać",
+          "definition": "To swallow or use a medicine.",
+          "register": "neutralny",
+          "contextPl": "Przyjmowanie leków",
+          "natural": "",
+          "forms": "take – took – taken",
+          "collocations": "take a pill; take medicine; take with water",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Mówimy „take medicine”, nie „drink medicine”, nawet o syropie.",
+          "examples": [
+            {
+              "en": "Take one pill in the morning and one at night.",
+              "pl": "Proszę brać jedną tabletkę rano i jedną wieczorem.",
+              "focusEn": "Take",
+              "focusPl": "brać"
+            },
+            {
+              "en": "Have you ever taken this medicine before?",
+              "pl": "Czy brał pan kiedyś ten lek?",
+              "focusEn": "taken",
+              "focusPl": "brał"
+            }
+          ],
+          "acceptedAnswers": [
+            "take"
+          ],
+          "acceptedTranslations": [
+            "brać",
+            "wziąć",
+            "przyjmować",
+            "zażywać"
+          ]
+        },
+        {
+          "id": "pharmacy.dose",
+          "term": "dose",
+          "ipa": "/doʊs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dawka",
+          "definition": "The amount of medicine you take at one time.",
+          "register": "neutralny",
+          "contextPl": "Jednorazowa ilość leku",
+          "natural": "",
+          "forms": "doses",
+          "collocations": "miss a dose; double dose; first dose",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The usual dose is two tablets every six hours.",
+              "pl": "Zwykła dawka to dwie tabletki co sześć godzin.",
+              "focusEn": "dose",
+              "focusPl": "dawka"
+            },
+            {
+              "en": "If you miss a dose, just take the next one at the normal time.",
+              "pl": "Jeśli pominie pan dawkę, proszę po prostu wziąć następną o zwykłej porze.",
+              "focusEn": "dose",
+              "focusPl": "dawkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "dose"
+          ],
+          "acceptedTranslations": [
+            "dawka"
+          ]
+        },
+        {
+          "id": "pharmacy.twice-a-day",
+          "term": "twice a day",
+          "ipa": "/ˌtwaɪs ə ˈdeɪ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dwa razy dziennie",
+          "definition": "Two times every day.",
+          "register": "neutralny",
+          "contextPl": "Częstotliwość przyjmowania",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "once a day",
+          "notePl": "Podobnie: once a day, three times a day.",
+          "examples": [
+            {
+              "en": "Take this twice a day, with breakfast and dinner.",
+              "pl": "Proszę to brać dwa razy dziennie, do śniadania i do kolacji.",
+              "focusEn": "twice a day",
+              "focusPl": "dwa razy dziennie"
+            },
+            {
+              "en": "She wrote twice a day on the label in big letters.",
+              "pl": "Napisała na etykiecie dużymi literami: dwa razy dziennie.",
+              "focusEn": "twice a day",
+              "focusPl": "dwa razy dziennie"
+            }
+          ],
+          "acceptedAnswers": [
+            "twice a day",
+            "two times a day"
+          ],
+          "acceptedTranslations": [
+            "dwa razy dziennie",
+            "dwa razy na dobę"
+          ]
+        },
+        {
+          "id": "pharmacy.with-food",
+          "term": "with food",
+          "ipa": "/wɪð ˈfuːd/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "z jedzeniem",
+          "definition": "At the same time as a meal.",
+          "register": "neutralny",
+          "contextPl": "Przyjmowanie leku podczas posiłku",
+          "natural": "",
+          "forms": "",
+          "collocations": "take with food",
+          "synonyms": "with meals",
+          "antonyms": "on an empty stomach",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Take it with food so it doesn't upset your stomach.",
+              "pl": "Proszę brać go z jedzeniem, żeby nie podrażniał żołądka.",
+              "focusEn": "with food",
+              "focusPl": "z jedzeniem"
+            },
+            {
+              "en": "She reminded me twice to take the antibiotic with food.",
+              "pl": "Dwa razy mi przypomniała, żeby brać antybiotyk w trakcie posiłku.",
+              "focusEn": "with food",
+              "focusPl": "w trakcie posiłku"
+            }
+          ],
+          "acceptedAnswers": [
+            "with food",
+            "with meals",
+            "with a meal"
+          ],
+          "acceptedTranslations": [
+            "z jedzeniem",
+            "w trakcie posiłku",
+            "podczas jedzenia",
+            "do posiłku"
+          ]
+        },
+        {
+          "id": "pharmacy.directions",
+          "term": "directions",
+          "ipa": "/dəˈrekʃənz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sposób użycia",
+          "definition": "Instructions that tell you how to take a medicine.",
+          "register": "neutralny",
+          "contextPl": "Zalecenia na etykiecie",
+          "natural": "",
+          "forms": "",
+          "collocations": "follow the directions; read the directions",
+          "synonyms": "instructions",
+          "antonyms": "",
+          "notePl": "W tym znaczeniu zawsze w liczbie mnogiej.",
+          "examples": [
+            {
+              "en": "Follow the directions on the label carefully.",
+              "pl": "Proszę uważnie stosować się do zaleceń na etykiecie.",
+              "focusEn": "directions",
+              "focusPl": "zaleceń"
+            },
+            {
+              "en": "The pharmacist printed the directions in large type for my grandmother.",
+              "pl": "Farmaceutka wydrukowała sposób dawkowania dużą czcionką dla mojej babci.",
+              "focusEn": "directions",
+              "focusPl": "sposób dawkowania"
+            }
+          ],
+          "acceptedAnswers": [
+            "directions",
+            "instructions"
+          ],
+          "acceptedTranslations": [
+            "sposób użycia",
+            "zalecenia",
+            "instrukcja",
+            "sposób dawkowania"
+          ]
+        },
+        {
+          "id": "pharmacy.label",
+          "term": "label",
+          "ipa": "/ˈleɪbəl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "etykieta",
+          "definition": "A piece of paper on a container with information about what is inside.",
+          "register": "neutralny",
+          "contextPl": "Informacje na opakowaniu",
+          "natural": "",
+          "forms": "labels",
+          "collocations": "read the label; warning label",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your name and the dose are printed on the label.",
+              "pl": "Pana nazwisko i dawka są wydrukowane na etykiecie.",
+              "focusEn": "label",
+              "focusPl": "etykiecie"
+            },
+            {
+              "en": "She stuck an extra label on the bottle that said it may cause drowsiness.",
+              "pl": "Nakleiła na buteleczkę dodatkową etykietę z informacją, że lek może powodować senność.",
+              "focusEn": "label",
+              "focusPl": "etykietę"
+            }
+          ],
+          "acceptedAnswers": [
+            "label"
+          ],
+          "acceptedTranslations": [
+            "etykieta",
+            "nalepka",
+            "naklejka"
+          ]
+        },
+        {
+          "id": "pharmacy.swallow",
+          "term": "swallow",
+          "ipa": "/ˈswɑːloʊ/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "połknąć",
+          "definition": "To make food or medicine go down your throat.",
+          "register": "neutralny",
+          "contextPl": "Sposób przyjmowania tabletek",
+          "natural": "",
+          "forms": "swallowed",
+          "collocations": "swallow whole; hard to swallow",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please swallow the capsule whole, without opening it.",
+              "pl": "Proszę połknąć kapsułkę w całości, bez otwierania.",
+              "focusEn": "swallow",
+              "focusPl": "połknąć"
+            },
+            {
+              "en": "If your daughter can't swallow pills, we have a liquid version.",
+              "pl": "Jeśli córka nie potrafi połykać tabletek, mamy wersję w płynie.",
+              "focusEn": "swallow",
+              "focusPl": "połykać"
+            }
+          ],
+          "acceptedAnswers": [
+            "swallow"
+          ],
+          "acceptedTranslations": [
+            "połknąć",
+            "połykać"
+          ]
+        },
+        {
+          "id": "pharmacy.chew",
+          "term": "chew",
+          "ipa": "/tʃuː/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "rozgryźć",
+          "definition": "To bite food or a tablet many times with your teeth.",
+          "register": "neutralny",
+          "contextPl": "Tabletki do żucia i nierozgryzane",
+          "natural": "",
+          "forms": "chewed",
+          "collocations": "chewable tablet; chew thoroughly",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Chewable” = do żucia.",
+          "examples": [
+            {
+              "en": "These are chewable, so you can chew them.",
+              "pl": "Te są do żucia, więc można je rozgryźć.",
+              "focusEn": "chew",
+              "focusPl": "rozgryźć"
+            },
+            {
+              "en": "Don't chew this tablet; it's made to release slowly.",
+              "pl": "Proszę nie rozgryzać tej tabletki; uwalnia się powoli.",
+              "focusEn": "chew",
+              "focusPl": "rozgryzać"
+            }
+          ],
+          "acceptedAnswers": [
+            "chew"
+          ],
+          "acceptedTranslations": [
+            "rozgryźć",
+            "rozgryzać",
+            "żuć",
+            "przeżuć"
+          ]
+        },
+        {
+          "id": "pharmacy.as-needed",
+          "term": "as needed",
+          "ipa": "/æz ˈniːdɪd/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "w razie potrzeby",
+          "definition": "Only when you need it, not on a fixed schedule.",
+          "register": "neutralny",
+          "contextPl": "Leki przyjmowane doraźnie",
+          "natural": "",
+          "forms": "",
+          "collocations": "take as needed",
+          "synonyms": "when needed",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Use the spray as needed, but no more than four times a day.",
+              "pl": "Proszę stosować spray w razie potrzeby, ale nie częściej niż cztery razy dziennie.",
+              "focusEn": "as needed",
+              "focusPl": "w razie potrzeby"
+            },
+            {
+              "en": "The label says to take one tablet as needed for pain.",
+              "pl": "Na etykiecie jest napisane, żeby brać jedną tabletkę w razie potrzeby przy bólu.",
+              "focusEn": "as needed",
+              "focusPl": "w razie potrzeby"
+            }
+          ],
+          "acceptedAnswers": [
+            "as needed",
+            "when needed"
+          ],
+          "acceptedTranslations": [
+            "w razie potrzeby",
+            "doraźnie"
+          ]
+        },
+        {
+          "id": "pharmacy.dosage",
+          "term": "dosage",
+          "ipa": "/ˈdoʊsɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dawkowanie",
+          "definition": "How much of a medicine to take and how often.",
+          "register": "neutralny",
+          "contextPl": "Schemat dawkowania",
+          "natural": "",
+          "forms": "dosages",
+          "collocations": "recommended dosage; change the dosage",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Dose” to jednorazowa dawka, „dosage” – cały schemat.",
+          "examples": [
+            {
+              "en": "The dosage for children is printed on the side of the box.",
+              "pl": "Dawkowanie dla dzieci jest wydrukowane z boku opakowania.",
+              "focusEn": "dosage",
+              "focusPl": "Dawkowanie"
+            },
+            {
+              "en": "Don't change the dosage without talking to your doctor.",
+              "pl": "Proszę nie zmieniać dawkowania bez konsultacji z lekarzem.",
+              "focusEn": "dosage",
+              "focusPl": "dawkowania"
+            }
+          ],
+          "acceptedAnswers": [
+            "dosage"
+          ],
+          "acceptedTranslations": [
+            "dawkowanie",
+            "dawka"
+          ]
+        },
+        {
+          "id": "pharmacy.on-an-empty-stomach",
+          "term": "on an empty stomach",
+          "ipa": "/ɑːn ən ˌempti ˈstʌmək/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "na czczo",
+          "definition": "When you have not eaten anything recently.",
+          "register": "neutralny",
+          "contextPl": "Leki przyjmowane przed posiłkiem",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "with food",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This one works best on an empty stomach, an hour before breakfast.",
+              "pl": "Ten działa najlepiej na czczo, godzinę przed śniadaniem.",
+              "focusEn": "on an empty stomach",
+              "focusPl": "na czczo"
+            },
+            {
+              "en": "Don't take these pills on an empty stomach, or you might feel sick.",
+              "pl": "Proszę nie brać tych tabletek na czczo, bo może zrobić się niedobrze.",
+              "focusEn": "on an empty stomach",
+              "focusPl": "na czczo"
+            }
+          ],
+          "acceptedAnswers": [
+            "on an empty stomach"
+          ],
+          "acceptedTranslations": [
+            "na czczo",
+            "na pusty żołądek"
+          ]
+        },
+        {
+          "id": "pharmacy.dissolve",
+          "term": "dissolve",
+          "ipa": "/dɪˈzɑːlv/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rozpuścić",
+          "definition": "To mix a solid into a liquid until it disappears.",
+          "register": "neutralny",
+          "contextPl": "Tabletki musujące i podjęzykowe",
+          "natural": "",
+          "forms": "dissolved",
+          "collocations": "dissolve in water",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Dissolve the powder in a glass of water.",
+              "pl": "Proszę rozpuścić proszek w szklance wody.",
+              "focusEn": "Dissolve",
+              "focusPl": "rozpuścić"
+            },
+            {
+              "en": "Let the tablet dissolve under your tongue.",
+              "pl": "Proszę pozwolić, żeby tabletka rozpuściła się pod językiem.",
+              "focusEn": "dissolve",
+              "focusPl": "rozpuściła się"
+            }
+          ],
+          "acceptedAnswers": [
+            "dissolve"
+          ],
+          "acceptedTranslations": [
+            "rozpuścić",
+            "rozpuszczać",
+            "rozpuścić się"
+          ]
+        },
+        {
+          "id": "pharmacy.skip",
+          "term": "skip",
+          "ipa": "/skɪp/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pominąć",
+          "definition": "To not do something you usually do, such as taking a dose.",
+          "register": "neutralny",
+          "contextPl": "Pomijanie dawek",
+          "natural": "",
+          "forms": "skipped",
+          "collocations": "skip a dose; skip a day",
+          "synonyms": "miss",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Try not to skip any doses, even on weekends.",
+              "pl": "Proszę starać się nie pomijać żadnej dawki, nawet w weekendy.",
+              "focusEn": "skip",
+              "focusPl": "pomijać"
+            },
+            {
+              "en": "What should I do if I skip a pill by accident?",
+              "pl": "Co mam zrobić, jeśli przez przypadek pominę tabletkę?",
+              "focusEn": "skip",
+              "focusPl": "pominę"
+            }
+          ],
+          "acceptedAnswers": [
+            "skip",
+            "miss"
+          ],
+          "acceptedTranslations": [
+            "pominąć",
+            "pomijać",
+            "opuścić",
+            "opuszczać"
+          ]
+        },
+        {
+          "id": "pharmacy.finish",
+          "term": "finish",
+          "ipa": "/ˈfɪnɪʃ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dokończyć",
+          "definition": "To take all of a medicine until none is left.",
+          "register": "neutralny",
+          "contextPl": "Kończenie kuracji",
+          "natural": "",
+          "forms": "finished",
+          "collocations": "finish the course; finish the bottle",
+          "synonyms": "complete",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Finish the whole course, even if you feel better on day three.",
+              "pl": "Proszę dokończyć całą kurację, nawet jeśli trzeciego dnia poczuje się pan lepiej.",
+              "focusEn": "Finish",
+              "focusPl": "dokończyć"
+            },
+            {
+              "en": "The pharmacist told me twice to finish all the pills.",
+              "pl": "Farmaceutka dwa razy powtórzyła, żebym dokończył wszystkie tabletki.",
+              "focusEn": "finish",
+              "focusPl": "dokończył"
+            }
+          ],
+          "acceptedAnswers": [
+            "finish",
+            "complete"
+          ],
+          "acceptedTranslations": [
+            "dokończyć",
+            "skończyć",
+            "kończyć"
+          ]
+        },
+        {
+          "id": "pharmacy.teaspoon",
+          "term": "teaspoon",
+          "ipa": "/ˈtiːspuːn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "łyżeczka",
+          "definition": "A small spoon, also used as a measure for liquid medicine.",
+          "register": "neutralny",
+          "contextPl": "Odmierzanie syropów",
+          "natural": "",
+          "forms": "teaspoons",
+          "collocations": "one teaspoon; teaspoon of syrup",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Give your son one teaspoon of the syrup at bedtime.",
+              "pl": "Proszę dawać synowi jedną łyżeczkę syropu przed snem.",
+              "focusEn": "teaspoon",
+              "focusPl": "łyżeczkę"
+            },
+            {
+              "en": "Use the measuring cup, not a kitchen teaspoon, to get the right amount.",
+              "pl": "Proszę używać miarki, a nie kuchennej łyżeczki, żeby odmierzyć właściwą ilość.",
+              "focusEn": "teaspoon",
+              "focusPl": "łyżeczki"
+            }
+          ],
+          "acceptedAnswers": [
+            "teaspoon"
+          ],
+          "acceptedTranslations": [
+            "łyżeczka"
+          ]
+        },
+        {
+          "id": "pharmacy.at-bedtime",
+          "term": "at bedtime",
+          "ipa": "/æt ˈbedtaɪm/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przed snem",
+          "definition": "Just before you go to sleep.",
+          "register": "neutralny",
+          "contextPl": "Pora przyjmowania leku",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "before bed",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Take one capsule at bedtime with a glass of water.",
+              "pl": "Proszę brać jedną kapsułkę przed snem, popijając szklanką wody.",
+              "focusEn": "at bedtime",
+              "focusPl": "przed snem"
+            },
+            {
+              "en": "She suggested taking it at bedtime because it might make me sleepy.",
+              "pl": "Zaproponowała, żebym brał go przed snem, bo może powodować senność.",
+              "focusEn": "at bedtime",
+              "focusPl": "przed snem"
+            }
+          ],
+          "acceptedAnswers": [
+            "at bedtime",
+            "before bed"
+          ],
+          "acceptedTranslations": [
+            "przed snem",
+            "na noc",
+            "przed pójściem spać"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pharmacy.warnings",
+      "namePl": "Ostrzeżenia i ulotka",
+      "scenePl": "Kuchenny stół w domu: czytanie ulotki i ostrzeżeń na opakowaniu leku",
+      "entries": [
+        {
+          "id": "pharmacy.warning",
+          "term": "warning",
+          "ipa": "/ˈwɔːrnɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ostrzeżenie",
+          "definition": "Information that tells you about a possible danger.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia na opakowaniu",
+          "natural": "",
+          "forms": "warnings",
+          "collocations": "warning label; read the warnings",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Read the warnings on the back before you take it.",
+              "pl": "Przed zażyciem przeczytaj ostrzeżenia z tyłu opakowania.",
+              "focusEn": "warnings",
+              "focusPl": "ostrzeżenia"
+            },
+            {
+              "en": "There's a warning about not drinking alcohol with these pills.",
+              "pl": "Jest ostrzeżenie, żeby nie pić alkoholu z tymi tabletkami.",
+              "focusEn": "warning",
+              "focusPl": "ostrzeżenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "warning"
+          ],
+          "acceptedTranslations": [
+            "ostrzeżenie",
+            "ostrzeżenia"
+          ]
+        },
+        {
+          "id": "pharmacy.may-cause",
+          "term": "may cause",
+          "ipa": "/ˌmeɪ ˈkɔːz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "może powodować",
+          "definition": "Might lead to a certain effect.",
+          "register": "formalny",
+          "contextPl": "Typowe sformułowanie z ulotek",
+          "natural": "",
+          "forms": "",
+          "collocations": "may cause drowsiness; may cause side effects",
+          "synonyms": "can cause",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The leaflet says it may cause dry mouth and headaches.",
+              "pl": "W ulotce jest napisane, że może powodować suchość w ustach i bóle głowy.",
+              "focusEn": "may cause",
+              "focusPl": "może powodować"
+            },
+            {
+              "en": "Grapefruit juice may cause problems with this medicine.",
+              "pl": "Sok grejpfrutowy może powodować problemy przy tym leku.",
+              "focusEn": "may cause",
+              "focusPl": "może powodować"
+            }
+          ],
+          "acceptedAnswers": [
+            "may cause",
+            "can cause"
+          ],
+          "acceptedTranslations": [
+            "może powodować",
+            "może wywoływać"
+          ]
+        },
+        {
+          "id": "pharmacy.drowsy",
+          "term": "drowsy",
+          "ipa": "/ˈdraʊzi/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "senny",
+          "definition": "Sleepy and not fully alert.",
+          "register": "neutralny",
+          "contextPl": "Senność jako skutek uboczny",
+          "natural": "",
+          "forms": "drowsier; drowsiest",
+          "collocations": "make you drowsy; non-drowsy",
+          "synonyms": "sleepy",
+          "antonyms": "alert",
+          "notePl": "„Non-drowsy” na opakowaniu = nie powoduje senności.",
+          "examples": [
+            {
+              "en": "This medicine may make you drowsy, so don't drive.",
+              "pl": "Ten lek może powodować, że będziesz senny, więc nie prowadź.",
+              "focusEn": "drowsy",
+              "focusPl": "senny"
+            },
+            {
+              "en": "I took one pill after lunch and felt drowsy all afternoon.",
+              "pl": "Wziąłem jedną tabletkę po obiedzie i całe popołudnie byłem senny.",
+              "focusEn": "drowsy",
+              "focusPl": "senny"
+            }
+          ],
+          "acceptedAnswers": [
+            "drowsy",
+            "sleepy"
+          ],
+          "acceptedTranslations": [
+            "senny",
+            "śpiący",
+            "ospały"
+          ]
+        },
+        {
+          "id": "pharmacy.expiration-date",
+          "term": "expiration date",
+          "ipa": "/ˌekspəˈreɪʃən ˌdeɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "data ważności",
+          "definition": "The date after which you should not use a product.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie ważności leków",
+          "natural": "",
+          "forms": "expiration dates",
+          "collocations": "check the expiration date; past the expiration date",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W BrE „expiry date”.",
+          "examples": [
+            {
+              "en": "Check the expiration date before you give it to the kids.",
+              "pl": "Sprawdź datę ważności, zanim dasz to dzieciom.",
+              "focusEn": "expiration date",
+              "focusPl": "datę ważności"
+            },
+            {
+              "en": "The expiration date on this bottle was last March.",
+              "pl": "Termin ważności tej buteleczki upłynął w marcu zeszłego roku.",
+              "focusEn": "expiration date",
+              "focusPl": "Termin ważności"
+            }
+          ],
+          "acceptedAnswers": [
+            "expiration date",
+            "expiry date",
+            "exp date"
+          ],
+          "acceptedTranslations": [
+            "data ważności",
+            "termin ważności"
+          ]
+        },
+        {
+          "id": "pharmacy.expire",
+          "term": "expire",
+          "ipa": "/ɪkˈspaɪər/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stracić ważność",
+          "definition": "To reach the date after which something should not be used.",
+          "register": "neutralny",
+          "contextPl": "Przeterminowane leki",
+          "natural": "",
+          "forms": "expired",
+          "collocations": "expired medicine",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "These cough drops expired two years ago.",
+              "pl": "Te pastylki straciły ważność dwa lata temu.",
+              "focusEn": "expired",
+              "focusPl": "straciły ważność"
+            },
+            {
+              "en": "Don't use eye drops after they expire.",
+              "pl": "Nie używaj kropli do oczu, kiedy już się przeterminują.",
+              "focusEn": "expire",
+              "focusPl": "się przeterminują"
+            }
+          ],
+          "acceptedAnswers": [
+            "expire"
+          ],
+          "acceptedTranslations": [
+            "stracić ważność",
+            "przeterminować się",
+            "tracić ważność"
+          ]
+        },
+        {
+          "id": "pharmacy.store",
+          "term": "store",
+          "ipa": "/stɔːr/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przechowywać",
+          "definition": "To keep something in a certain place or condition.",
+          "register": "neutralny",
+          "contextPl": "Warunki przechowywania leków",
+          "natural": "",
+          "forms": "stored",
+          "collocations": "store in the fridge; store at room temperature",
+          "synonyms": "keep",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Store the syrup in the fridge after opening.",
+              "pl": "Po otwarciu przechowuj syrop w lodówce.",
+              "focusEn": "Store",
+              "focusPl": "przechowuj"
+            },
+            {
+              "en": "The leaflet says to store the pills at room temperature.",
+              "pl": "Ulotka mówi, żeby przechowywać tabletki w temperaturze pokojowej.",
+              "focusEn": "store",
+              "focusPl": "przechowywać"
+            }
+          ],
+          "acceptedAnswers": [
+            "store",
+            "keep"
+          ],
+          "acceptedTranslations": [
+            "przechowywać",
+            "trzymać"
+          ]
+        },
+        {
+          "id": "pharmacy.out-of-reach-of-children",
+          "term": "out of reach of children",
+          "ipa": "/ˌaʊt əv ˈriːtʃ əv ˈtʃɪldrən/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "poza zasięgiem dzieci",
+          "definition": "In a place where children cannot get to it.",
+          "register": "formalny",
+          "contextPl": "Bezpieczne przechowywanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "keep out of reach of children",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Standardowa formuła na każdym opakowaniu leku.",
+          "examples": [
+            {
+              "en": "The leaflet says to keep all medicine out of reach of children.",
+              "pl": "Ulotka zaleca trzymać wszystkie leki poza zasięgiem dzieci.",
+              "focusEn": "out of reach of children",
+              "focusPl": "poza zasięgiem dzieci"
+            },
+            {
+              "en": "I moved all the pills to a high shelf, safely out of reach of children.",
+              "pl": "Przeniosłem wszystkie tabletki na wysoką półkę, bezpiecznie poza zasięgiem dzieci.",
+              "focusEn": "out of reach of children",
+              "focusPl": "poza zasięgiem dzieci"
+            }
+          ],
+          "acceptedAnswers": [
+            "out of reach of children",
+            "out of the reach of children"
+          ],
+          "acceptedTranslations": [
+            "poza zasięgiem dzieci",
+            "w miejscu niedostępnym dla dzieci"
+          ]
+        },
+        {
+          "id": "pharmacy.alcohol",
+          "term": "alcohol",
+          "ipa": "/ˈælkəhɔːl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "alkohol",
+          "definition": "Drinks like beer and wine that can make people drunk.",
+          "register": "neutralny",
+          "contextPl": "Interakcje leków z alkoholem",
+          "natural": "",
+          "forms": "",
+          "collocations": "avoid alcohol; drink alcohol",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Avoid alcohol while you're taking this medicine.",
+              "pl": "Unikaj alkoholu podczas przyjmowania tego leku.",
+              "focusEn": "alcohol",
+              "focusPl": "alkoholu"
+            },
+            {
+              "en": "I put the wine away after reading that alcohol makes the side effects worse.",
+              "pl": "Odstawiłem wino, gdy przeczytałem, że alkohol nasila skutki uboczne.",
+              "focusEn": "alcohol",
+              "focusPl": "alkohol"
+            }
+          ],
+          "acceptedAnswers": [
+            "alcohol"
+          ],
+          "acceptedTranslations": [
+            "alkohol"
+          ]
+        },
+        {
+          "id": "pharmacy.pregnant",
+          "term": "pregnant",
+          "ipa": "/ˈpreɡnənt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "w ciąży",
+          "definition": "Having a baby developing inside your body.",
+          "register": "neutralny",
+          "contextPl": "Przeciwwskazania",
+          "natural": "",
+          "forms": "",
+          "collocations": "get pregnant; pregnant women",
+          "synonyms": "expecting",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The insert says not to take it if you're pregnant.",
+              "pl": "W ulotce jest napisane, żeby nie brać go, jeśli jest się w ciąży.",
+              "focusEn": "pregnant",
+              "focusPl": "w ciąży"
+            },
+            {
+              "en": "My wife is pregnant, so we read every warning twice.",
+              "pl": "Moja żona jest w ciąży, więc każde ostrzeżenie czytamy dwa razy.",
+              "focusEn": "pregnant",
+              "focusPl": "w ciąży"
+            }
+          ],
+          "acceptedAnswers": [
+            "pregnant",
+            "expecting"
+          ],
+          "acceptedTranslations": [
+            "w ciąży",
+            "ciężarna"
+          ]
+        },
+        {
+          "id": "pharmacy.dizziness",
+          "term": "dizziness",
+          "ipa": "/ˈdɪzinəs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zawroty głowy",
+          "definition": "The feeling that everything is spinning around you.",
+          "register": "neutralny",
+          "contextPl": "Częsty skutek uboczny",
+          "natural": "",
+          "forms": "",
+          "collocations": "cause dizziness; feel dizziness",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Dizziness is listed as a common side effect.",
+              "pl": "Zawroty głowy są wymienione jako częsty skutek uboczny.",
+              "focusEn": "Dizziness",
+              "focusPl": "Zawroty głowy"
+            },
+            {
+              "en": "If you feel any dizziness, sit down and call your doctor.",
+              "pl": "Jeśli poczujesz zawroty głowy, usiądź i zadzwoń do lekarza.",
+              "focusEn": "dizziness",
+              "focusPl": "zawroty głowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "dizziness"
+          ],
+          "acceptedTranslations": [
+            "zawroty głowy"
+          ]
+        },
+        {
+          "id": "pharmacy.interact",
+          "term": "interact",
+          "ipa": "/ˌɪntərˈækt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "wchodzić w interakcje",
+          "definition": "To affect each other when taken together, used about medicines.",
+          "register": "specjalistyczny",
+          "contextPl": "Łączenie różnych leków",
+          "natural": "",
+          "forms": "interacted",
+          "collocations": "interact with other medications",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: interaction – interakcja.",
+          "examples": [
+            {
+              "en": "Can this medicine interact with my blood pressure pills?",
+              "pl": "Czy ten lek może wchodzić w interakcje z moimi tabletkami na ciśnienie?",
+              "focusEn": "interact",
+              "focusPl": "wchodzić w interakcje"
+            },
+            {
+              "en": "The leaflet lists all the drugs that interact with it.",
+              "pl": "Ulotka wymienia wszystkie leki, które z nim wchodzą w interakcje.",
+              "focusEn": "interact",
+              "focusPl": "wchodzą w interakcje"
+            }
+          ],
+          "acceptedAnswers": [
+            "interact"
+          ],
+          "acceptedTranslations": [
+            "wchodzić w interakcje",
+            "reagować",
+            "oddziaływać"
+          ]
+        },
+        {
+          "id": "pharmacy.package-insert",
+          "term": "package insert",
+          "ipa": "/ˈpækɪdʒ ˌɪnsɜːrt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "ulotka",
+          "definition": "The folded paper inside a medicine box with detailed information.",
+          "register": "formalny",
+          "contextPl": "Ulotka dołączona do leku",
+          "natural": "",
+          "forms": "package inserts",
+          "collocations": "read the package insert",
+          "synonyms": "leaflet",
+          "antonyms": "",
+          "notePl": "W mowie częściej po prostu „the insert” lub „the leaflet”.",
+          "examples": [
+            {
+              "en": "The package insert was folded so small I could barely open it.",
+              "pl": "Ulotka była złożona tak ciasno, że ledwo mogłem ją rozłożyć.",
+              "focusEn": "package insert",
+              "focusPl": "Ulotka"
+            },
+            {
+              "en": "I read the whole package insert at the kitchen table before taking the first pill.",
+              "pl": "Przeczytałem całą ulotkę przy kuchennym stole, zanim wziąłem pierwszą tabletkę.",
+              "focusEn": "package insert",
+              "focusPl": "ulotkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "package insert",
+            "insert",
+            "leaflet",
+            "patient leaflet"
+          ],
+          "acceptedTranslations": [
+            "ulotka",
+            "ulotka dołączona do opakowania"
+          ]
+        },
+        {
+          "id": "pharmacy.operate-heavy-machinery",
+          "term": "operate heavy machinery",
+          "ipa": "/ˌɑːpəreɪt ˌhevi məˈʃiːnəri/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "obsługiwać ciężkie maszyny",
+          "definition": "To use large, dangerous equipment.",
+          "register": "formalny",
+          "contextPl": "Typowe ostrzeżenie przy lekach powodujących senność",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Często przywoływane żartobliwie.",
+          "examples": [
+            {
+              "en": "Do not drive or operate heavy machinery after taking this medicine.",
+              "pl": "Po zażyciu tego leku nie należy prowadzić pojazdów ani obsługiwać ciężkich maszyn.",
+              "focusEn": "operate heavy machinery",
+              "focusPl": "obsługiwać ciężkich maszyn"
+            },
+            {
+              "en": "Over breakfast, we laughed at the warning about operating heavy machinery.",
+              "pl": "Przy śniadaniu śmialiśmy się z ostrzeżenia o obsłudze ciężkich maszyn.",
+              "focusEn": "operating heavy machinery",
+              "focusPl": "obsłudze ciężkich maszyn"
+            }
+          ],
+          "acceptedAnswers": [
+            "operate heavy machinery"
+          ],
+          "acceptedTranslations": [
+            "obsługiwać ciężkie maszyny",
+            "obsługiwać maszyny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pharmacy.idioms",
+      "namePl": "Idiomy",
+      "scenePl": "Długa kolejka do apteki: rozmowy klientów czekających na leki",
+      "entries": [
+        {
+          "id": "pharmacy.laughter-is-the-best-medicine",
+          "term": "laughter is the best medicine",
+          "ipa": "/ˈlæftər ɪz ðə ˌbest ˈmedɪsən/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "śmiech to najlepsze lekarstwo",
+          "definition": "Being happy and laughing helps you feel better.",
+          "register": "potoczny",
+          "contextPl": "Pocieszanie i żarty",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The old man in front of us told jokes the whole time; laughter is the best medicine, he said.",
+              "pl": "Starszy pan przed nami cały czas opowiadał dowcipy; mówił, że śmiech to najlepsze lekarstwo.",
+              "focusEn": "laughter is the best medicine",
+              "focusPl": "śmiech to najlepsze lekarstwo"
+            },
+            {
+              "en": "Even the pharmacist smiled and agreed that laughter is the best medicine.",
+              "pl": "Nawet farmaceutka się uśmiechnęła i przyznała, że śmiech to najlepsze lekarstwo.",
+              "focusEn": "laughter is the best medicine",
+              "focusPl": "śmiech to najlepsze lekarstwo"
+            }
+          ],
+          "acceptedAnswers": [
+            "laughter is the best medicine"
+          ],
+          "acceptedTranslations": [
+            "śmiech to najlepsze lekarstwo"
+          ]
+        },
+        {
+          "id": "pharmacy.magic-pill",
+          "term": "magic pill",
+          "ipa": "/ˌmædʒɪk ˈpɪl/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "cudowna tabletka",
+          "definition": "An easy solution that solves a problem without effort.",
+          "register": "potoczny",
+          "contextPl": "Brak prostych rozwiązań",
+          "natural": "",
+          "forms": "",
+          "collocations": "there's no magic pill",
+          "synonyms": "quick fix",
+          "antonyms": "",
+          "notePl": "Najczęściej w przeczeniu: „there's no magic pill”.",
+          "examples": [
+            {
+              "en": "There's no magic pill for losing weight, the pharmacist told the woman ahead of me.",
+              "pl": "Nie ma cudownej tabletki na odchudzanie – powiedziała farmaceutka kobiecie przede mną.",
+              "focusEn": "magic pill",
+              "focusPl": "cudownej tabletki"
+            },
+            {
+              "en": "My friend hoped the vitamins in his basket would be a magic pill for his tiredness.",
+              "pl": "Kolega liczył, że witaminy w jego koszyku okażą się cudownym lekiem na zmęczenie.",
+              "focusEn": "magic pill",
+              "focusPl": "cudownym lekiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "magic pill",
+            "quick fix"
+          ],
+          "acceptedTranslations": [
+            "cudowna tabletka",
+            "cudowny lek",
+            "magiczna pigułka",
+            "złoty środek"
+          ]
+        },
+        {
+          "id": "pharmacy.cure-all",
+          "term": "cure-all",
+          "ipa": "/ˈkjʊr ɔːl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "lek na wszystko",
+          "definition": "Something that people believe can solve every problem or illness.",
+          "register": "potoczny",
+          "contextPl": "Przesadne zachwalanie środków",
+          "natural": "",
+          "forms": "cure-alls",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The man in line swore that garlic is a cure-all.",
+              "pl": "Mężczyzna w kolejce przysięgał, że czosnek to lek na wszystko.",
+              "focusEn": "cure-all",
+              "focusPl": "lek na wszystko"
+            },
+            {
+              "en": "Don't expect this cream to be a cure-all; it only helps with dry skin.",
+              "pl": "Nie spodziewaj się, że ten krem okaże się lekiem na wszystko; pomaga tylko na suchą skórę.",
+              "focusEn": "cure-all",
+              "focusPl": "lekiem na wszystko"
+            }
+          ],
+          "acceptedAnswers": [
+            "cure-all",
+            "panacea"
+          ],
+          "acceptedTranslations": [
+            "lek na wszystko",
+            "panaceum",
+            "cudowny środek"
+          ]
+        },
+        {
+          "id": "pharmacy.a-bitter-pill-to-swallow",
+          "term": "a bitter pill to swallow",
+          "ipa": "/ə ˌbɪtər ˈpɪl tə ˌswɑːloʊ/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "gorzka pigułka do przełknięcia",
+          "definition": "A fact or situation that is unpleasant but must be accepted.",
+          "register": "neutralny",
+          "contextPl": "Przykre, ale nieuniknione sytuacje",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Paying full price without insurance was a bitter pill to swallow.",
+              "pl": "Zapłacenie pełnej ceny bez ubezpieczenia było gorzką pigułką do przełknięcia.",
+              "focusEn": "a bitter pill to swallow",
+              "focusPl": "gorzką pigułką do przełknięcia"
+            },
+            {
+              "en": "Waiting an hour only to hear they were out of stock was a bitter pill to swallow.",
+              "pl": "Godzina w kolejce tylko po to, by usłyszeć, że leku zabrakło, była gorzką pigułką do przełknięcia.",
+              "focusEn": "a bitter pill to swallow",
+              "focusPl": "gorzką pigułką do przełknięcia"
+            }
+          ],
+          "acceptedAnswers": [
+            "a bitter pill to swallow",
+            "bitter pill to swallow",
+            "bitter pill"
+          ],
+          "acceptedTranslations": [
+            "gorzka pigułka do przełknięcia",
+            "gorzka pigułka"
+          ]
+        },
+        {
+          "id": "pharmacy.a-taste-of-your-own-medicine",
+          "term": "a taste of your own medicine",
+          "ipa": "/ə ˌteɪst əv jər ˌoʊn ˈmedɪsən/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dostać za swoje",
+          "definition": "The same bad treatment that you have given to others.",
+          "register": "potoczny",
+          "contextPl": "Sprawiedliwa odpłata",
+          "natural": "",
+          "forms": "",
+          "collocations": "give someone a taste of their own medicine; get a taste of your own medicine",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The man who cut in line got a taste of his own medicine when someone cut in front of him.",
+              "pl": "Mężczyzna, który wepchnął się do kolejki, dostał za swoje, kiedy ktoś wepchnął się przed niego.",
+              "focusEn": "a taste of his own medicine",
+              "focusPl": "dostał za swoje"
+            },
+            {
+              "en": "When the rude customer got a sharp answer from the pharmacist, we called it a taste of his own medicine.",
+              "pl": "Kiedy niegrzeczny klient dostał ostrą odpowiedź od farmaceuty, uznaliśmy, że dostał za swoje.",
+              "focusEn": "a taste of his own medicine",
+              "focusPl": "dostał za swoje"
+            }
+          ],
+          "acceptedAnswers": [
+            "a taste of your own medicine",
+            "taste of your own medicine",
+            "taste of his own medicine"
+          ],
+          "acceptedTranslations": [
+            "dostać za swoje",
+            "odpłacić pięknym za nadobne",
+            "posmakować własnego lekarstwa"
+          ]
+        }
+      ]
+    }
+  ]
+}

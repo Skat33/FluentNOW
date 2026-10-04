@@ -1,0 +1,4342 @@
+{
+  "schemaVersion": 1,
+  "id": "doctor-visit",
+  "namePl": "Wizyta u lekarza",
+  "nameEn": "Doctor Visit",
+  "group": "health",
+  "symbol": "stethoscope",
+  "summaryPl": "Umawianie wizyty, rejestracja, opis dolegliwości, badanie, wyniki i recepta.",
+  "aliases": [
+    "wizyta u lekarza",
+    "lekarz",
+    "przychodnia",
+    "gabinet lekarski",
+    "rejestracja",
+    "recepta",
+    "doctor",
+    "doctor visit",
+    "doctor's appointment",
+    "clinic"
+  ],
+  "categories": [
+    {
+      "id": "doctor-visit.front-desk",
+      "namePl": "Rejestracja i umawianie wizyty",
+      "scenePl": "Recepcja przychodni: umawianie terminu i zgłaszanie się na wizytę",
+      "entries": [
+        {
+          "id": "doctor-visit.appointment",
+          "term": "appointment",
+          "ipa": "/əˈpɔɪntmənt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wizyta",
+          "definition": "A set time when you meet a doctor or another professional.",
+          "register": "neutralny",
+          "contextPl": "Umawianie, przesuwanie i odwoływanie wizyt",
+          "natural": "",
+          "forms": "appointments",
+          "collocations": "make an appointment; book an appointment; doctor's appointment",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W kontekście medycznym „wizyta”, nie „spotkanie” ze znajomymi.",
+          "examples": [
+            {
+              "en": "Your appointment is at ten fifteen, so please come a few minutes early.",
+              "pl": "Pana wizyta jest o dziesiątej piętnaście, więc prosimy przyjść kilka minut wcześniej.",
+              "focusEn": "appointment",
+              "focusPl": "wizyta"
+            },
+            {
+              "en": "I'm sorry, but I have to cancel my appointment for Thursday.",
+              "pl": "Przepraszam, ale muszę odwołać wizytę na czwartek.",
+              "focusEn": "appointment",
+              "focusPl": "wizytę"
+            }
+          ],
+          "acceptedAnswers": [
+            "appointment",
+            "doctor's appointment"
+          ],
+          "acceptedTranslations": [
+            "wizyta",
+            "termin wizyty",
+            "wizyta u lekarza"
+          ]
+        },
+        {
+          "id": "doctor-visit.doctor",
+          "term": "doctor",
+          "ipa": "/ˈdɑːktər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "lekarz",
+          "definition": "A person trained to treat people who are sick or hurt.",
+          "register": "neutralny",
+          "contextPl": "Ogólne określenie lekarza",
+          "natural": "",
+          "forms": "doctors",
+          "collocations": "see a doctor; go to the doctor; family doctor",
+          "synonyms": "physician",
+          "antonyms": "patient",
+          "notePl": "„Go to the doctor” = pójść do lekarza.",
+          "examples": [
+            {
+              "en": "Is the doctor running late today? I've been waiting for forty minutes.",
+              "pl": "Czy lekarz ma dziś opóźnienie? Czekam już czterdzieści minut.",
+              "focusEn": "doctor",
+              "focusPl": "lekarz"
+            },
+            {
+              "en": "The receptionist said the doctor can see me right after lunch.",
+              "pl": "Recepcjonistka powiedziała, że lekarz może mnie przyjąć zaraz po przerwie na lunch.",
+              "focusEn": "doctor",
+              "focusPl": "lekarz"
+            }
+          ],
+          "acceptedAnswers": [
+            "doctor",
+            "physician"
+          ],
+          "acceptedTranslations": [
+            "lekarz",
+            "lekarka",
+            "doktor"
+          ]
+        },
+        {
+          "id": "doctor-visit.patient",
+          "term": "patient",
+          "ipa": "/ˈpeɪʃənt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pacjent",
+          "definition": "A person who is getting medical care.",
+          "register": "neutralny",
+          "contextPl": "Osoba przyjmowana przez lekarza",
+          "natural": "",
+          "forms": "patients",
+          "collocations": "new patient; regular patient; patient portal",
+          "synonyms": "",
+          "antonyms": "doctor",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Are you a new patient, or have you been here before?",
+              "pl": "Jest pan nowym pacjentem, czy był pan już u nas?",
+              "focusEn": "patient",
+              "focusPl": "pacjentem"
+            },
+            {
+              "en": "Three other patients were waiting ahead of me at the front desk.",
+              "pl": "Przede mną w recepcji czekało trzech innych pacjentów.",
+              "focusEn": "patients",
+              "focusPl": "pacjentów"
+            }
+          ],
+          "acceptedAnswers": [
+            "patient"
+          ],
+          "acceptedTranslations": [
+            "pacjent",
+            "pacjentka"
+          ]
+        },
+        {
+          "id": "doctor-visit.make-an-appointment",
+          "term": "make an appointment",
+          "ipa": "/ˌmeɪk ən əˈpɔɪntmənt/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "umówić się na wizytę",
+          "definition": "To arrange a time to see a doctor.",
+          "register": "neutralny",
+          "contextPl": "Telefon do przychodni lub rozmowa w recepcji",
+          "natural": "",
+          "forms": "made an appointment",
+          "collocations": "make an appointment with a doctor; make an appointment for next week",
+          "synonyms": "book an appointment; schedule an appointment",
+          "antonyms": "cancel an appointment",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I make an appointment for next Monday morning?",
+              "pl": "Czy mogę umówić się na wizytę na przyszły poniedziałek rano?",
+              "focusEn": "make an appointment",
+              "focusPl": "umówić się na wizytę"
+            },
+            {
+              "en": "The receptionist told me I could make an appointment online next time.",
+              "pl": "Recepcjonistka powiedziała, że następnym razem mogę umówić się na wizytę przez internet.",
+              "focusEn": "make an appointment",
+              "focusPl": "umówić się na wizytę"
+            }
+          ],
+          "acceptedAnswers": [
+            "make an appointment",
+            "book an appointment",
+            "schedule an appointment"
+          ],
+          "acceptedTranslations": [
+            "umówić się na wizytę",
+            "umawiać się na wizytę",
+            "zapisać się do lekarza",
+            "zapisywać się do lekarza",
+            "umówić wizytę"
+          ]
+        },
+        {
+          "id": "doctor-visit.waiting-room",
+          "term": "waiting room",
+          "ipa": "/ˈweɪtɪŋ ˌruːm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "poczekalnia",
+          "definition": "A room where patients wait before they see the doctor.",
+          "register": "neutralny",
+          "contextPl": "Czekanie na wywołanie",
+          "natural": "",
+          "forms": "waiting rooms",
+          "collocations": "sit in the waiting room; crowded waiting room",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The waiting room was full of kids coughing and sneezing.",
+              "pl": "Poczekalnia była pełna kaszlących i kichających dzieci.",
+              "focusEn": "waiting room",
+              "focusPl": "Poczekalnia"
+            },
+            {
+              "en": "Please have a seat in the waiting room, and a nurse will call your name.",
+              "pl": "Proszę usiąść w poczekalni, pielęgniarka wywoła pana nazwisko.",
+              "focusEn": "waiting room",
+              "focusPl": "poczekalni"
+            }
+          ],
+          "acceptedAnswers": [
+            "waiting room"
+          ],
+          "acceptedTranslations": [
+            "poczekalnia"
+          ]
+        },
+        {
+          "id": "doctor-visit.doctors-office",
+          "term": "doctor's office",
+          "ipa": "/ˈdɑːktərz ˌɔːfɪs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "gabinet lekarski",
+          "definition": "The place where a doctor sees patients.",
+          "register": "neutralny",
+          "contextPl": "Amerykańskie określenie gabinetu lub małej przychodni",
+          "natural": "",
+          "forms": "doctor's offices",
+          "collocations": "call the doctor's office; at the doctor's office",
+          "synonyms": "clinic",
+          "antonyms": "",
+          "notePl": "W amerykańskim angielskim „office” lekarza to gabinet, nie biuro.",
+          "examples": [
+            {
+              "en": "I called the doctor's office to ask if they had anything open this week.",
+              "pl": "Zadzwoniłem do gabinetu lekarskiego zapytać, czy mają wolny termin w tym tygodniu.",
+              "focusEn": "doctor's office",
+              "focusPl": "gabinetu lekarskiego"
+            },
+            {
+              "en": "The doctor's office sent me a text reminder the day before my visit.",
+              "pl": "Z gabinetu lekarskiego przysłali mi SMS-a z przypomnieniem dzień przed wizytą.",
+              "focusEn": "doctor's office",
+              "focusPl": "gabinetu lekarskiego"
+            }
+          ],
+          "acceptedAnswers": [
+            "doctor's office",
+            "doctor office"
+          ],
+          "acceptedTranslations": [
+            "gabinet lekarski",
+            "gabinet",
+            "przychodnia"
+          ]
+        },
+        {
+          "id": "doctor-visit.form",
+          "term": "form",
+          "ipa": "/fɔːrm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "formularz",
+          "definition": "A document with spaces where you write information.",
+          "register": "neutralny",
+          "contextPl": "Dokumenty wypełniane przy rejestracji",
+          "natural": "",
+          "forms": "forms",
+          "collocations": "fill out a form; patient form; intake form",
+          "synonyms": "paperwork",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please fill out this form and bring it back to the desk.",
+              "pl": "Proszę wypełnić ten formularz i przynieść go z powrotem do recepcji.",
+              "focusEn": "form",
+              "focusPl": "formularz"
+            },
+            {
+              "en": "The form asked about my allergies and past surgeries.",
+              "pl": "Formularz zawierał pytania o moje alergie i przebyte operacje.",
+              "focusEn": "form",
+              "focusPl": "Formularz"
+            }
+          ],
+          "acceptedAnswers": [
+            "form"
+          ],
+          "acceptedTranslations": [
+            "formularz",
+            "druk",
+            "ankieta"
+          ]
+        },
+        {
+          "id": "doctor-visit.fill-out",
+          "term": "fill out",
+          "ipa": "/ˌfɪl ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wypełnić",
+          "definition": "To write the needed information in a form.",
+          "register": "neutralny",
+          "contextPl": "Wypełnianie dokumentów",
+          "natural": "",
+          "forms": "filled out",
+          "collocations": "fill out a form; fill out paperwork",
+          "synonyms": "complete; fill in",
+          "antonyms": "",
+          "notePl": "„Fill in” brzmi bardziej brytyjsko; w USA mówi się „fill out”.",
+          "examples": [
+            {
+              "en": "New patients need to fill out a few pages of paperwork.",
+              "pl": "Nowi pacjenci muszą wypełnić kilka stron dokumentów.",
+              "focusEn": "fill out",
+              "focusPl": "wypełnić"
+            },
+            {
+              "en": "I filled out the forms on my phone before I even got to the clinic.",
+              "pl": "Wypełniłem formularze na telefonie, zanim w ogóle dotarłem do przychodni.",
+              "focusEn": "filled out",
+              "focusPl": "Wypełniłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "fill out",
+            "fill in",
+            "complete"
+          ],
+          "acceptedTranslations": [
+            "wypełnić",
+            "wypełniać",
+            "uzupełnić",
+            "uzupełniać"
+          ]
+        },
+        {
+          "id": "doctor-visit.check-in",
+          "term": "check in",
+          "ipa": "/ˌtʃek ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zgłosić się w recepcji",
+          "definition": "To tell the front desk that you have arrived for your appointment.",
+          "register": "neutralny",
+          "contextPl": "Zgłoszenie przybycia na wizytę",
+          "natural": "",
+          "forms": "checked in",
+          "collocations": "check in at the front desk; check in for an appointment",
+          "synonyms": "sign in",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please check in at the front desk when you arrive.",
+              "pl": "Po przyjściu prosimy zgłosić się w recepcji.",
+              "focusEn": "check in",
+              "focusPl": "zgłosić się"
+            },
+            {
+              "en": "I checked in fifteen minutes early, but they still called me late.",
+              "pl": "Zgłosiłem się piętnaście minut wcześniej, a i tak wywołali mnie późno.",
+              "focusEn": "checked in",
+              "focusPl": "Zgłosiłem się"
+            }
+          ],
+          "acceptedAnswers": [
+            "check in",
+            "sign in"
+          ],
+          "acceptedTranslations": [
+            "zgłosić się w recepcji",
+            "zgłosić się",
+            "zgłaszać się",
+            "zarejestrować się",
+            "rejestrować się"
+          ]
+        },
+        {
+          "id": "doctor-visit.receptionist",
+          "term": "receptionist",
+          "ipa": "/rɪˈsepʃənɪst/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "recepcjonistka",
+          "definition": "A person at the front desk who greets patients and handles appointments.",
+          "register": "neutralny",
+          "contextPl": "Osoba w recepcji przychodni",
+          "natural": "",
+          "forms": "receptionists",
+          "collocations": "ask the receptionist; front desk receptionist",
+          "synonyms": "front desk staff",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The receptionist asked me to spell my last name.",
+              "pl": "Recepcjonistka poprosiła mnie, żebym przeliterował nazwisko.",
+              "focusEn": "receptionist",
+              "focusPl": "Recepcjonistka"
+            },
+            {
+              "en": "When I got there, the receptionist handed me a clipboard with some forms.",
+              "pl": "Kiedy przyszedłem, recepcjonistka podała mi podkładkę z kilkoma formularzami.",
+              "focusEn": "receptionist",
+              "focusPl": "recepcjonistka"
+            }
+          ],
+          "acceptedAnswers": [
+            "receptionist"
+          ],
+          "acceptedTranslations": [
+            "recepcjonistka",
+            "recepcjonista",
+            "rejestratorka"
+          ]
+        },
+        {
+          "id": "doctor-visit.cancel",
+          "term": "cancel",
+          "ipa": "/ˈkænsəl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odwołać",
+          "definition": "To say that a planned event will not happen.",
+          "register": "neutralny",
+          "contextPl": "Rezygnacja z umówionej wizyty",
+          "natural": "",
+          "forms": "canceled; canceling",
+          "collocations": "cancel an appointment; cancel at the last minute",
+          "synonyms": "call off",
+          "antonyms": "book",
+          "notePl": "W USA pisze się „canceled, canceling” z jednym „l”.",
+          "examples": [
+            {
+              "en": "If you need to cancel, please call at least twenty-four hours ahead.",
+              "pl": "Jeśli musi pan odwołać wizytę, prosimy zadzwonić co najmniej dobę wcześniej.",
+              "focusEn": "cancel",
+              "focusPl": "odwołać"
+            },
+            {
+              "en": "Someone canceled, so I got the eleven o'clock slot.",
+              "pl": "Ktoś odwołał wizytę, więc dostałem termin na jedenastą.",
+              "focusEn": "canceled",
+              "focusPl": "odwołał"
+            }
+          ],
+          "acceptedAnswers": [
+            "cancel",
+            "call off"
+          ],
+          "acceptedTranslations": [
+            "odwołać",
+            "odwoływać",
+            "anulować",
+            "zrezygnować"
+          ]
+        },
+        {
+          "id": "doctor-visit.clinic",
+          "term": "clinic",
+          "ipa": "/ˈklɪnɪk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przychodnia",
+          "definition": "A place where people see a doctor without staying overnight.",
+          "register": "neutralny",
+          "contextPl": "Placówka ambulatoryjna",
+          "natural": "",
+          "forms": "clinics",
+          "collocations": "health clinic; local clinic; clinic hours",
+          "synonyms": "medical center; doctor's office",
+          "antonyms": "hospital",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The clinic opens at eight, but the phone lines get busy right away.",
+              "pl": "Przychodnia otwiera się o ósmej, ale linie telefoniczne od razu są zajęte.",
+              "focusEn": "clinic",
+              "focusPl": "Przychodnia"
+            },
+            {
+              "en": "I parked behind the clinic and went in through the side door.",
+              "pl": "Zaparkowałem za przychodnią i wszedłem bocznymi drzwiami.",
+              "focusEn": "clinic",
+              "focusPl": "przychodnią"
+            }
+          ],
+          "acceptedAnswers": [
+            "clinic",
+            "medical center"
+          ],
+          "acceptedTranslations": [
+            "przychodnia",
+            "klinika",
+            "ośrodek zdrowia"
+          ]
+        },
+        {
+          "id": "doctor-visit.health-insurance",
+          "term": "health insurance",
+          "ipa": "/ˈhelθ ɪnˌʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "ubezpieczenie zdrowotne",
+          "definition": "A plan that pays some or all of your medical costs.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o ubezpieczenie przy rejestracji",
+          "natural": "",
+          "forms": "",
+          "collocations": "have health insurance; health insurance plan; health insurance coverage",
+          "synonyms": "medical insurance",
+          "antonyms": "",
+          "notePl": "W USA zwykle prywatne, często zapewniane przez pracodawcę.",
+          "examples": [
+            {
+              "en": "Do you have health insurance, or will you be paying yourself?",
+              "pl": "Czy ma pan ubezpieczenie zdrowotne, czy będzie pan płacił sam?",
+              "focusEn": "health insurance",
+              "focusPl": "ubezpieczenie zdrowotne"
+            },
+            {
+              "en": "The receptionist checked whether my health insurance covers this kind of visit.",
+              "pl": "Recepcjonistka sprawdziła, czy moje ubezpieczenie zdrowotne obejmuje taką wizytę.",
+              "focusEn": "health insurance",
+              "focusPl": "ubezpieczenie zdrowotne"
+            }
+          ],
+          "acceptedAnswers": [
+            "health insurance",
+            "medical insurance",
+            "insurance"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie zdrowotne",
+            "ubezpieczenie"
+          ]
+        },
+        {
+          "id": "doctor-visit.date-of-birth",
+          "term": "date of birth",
+          "ipa": "/ˌdeɪt əv ˈbɜːrθ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "data urodzenia",
+          "definition": "The day, month and year when you were born.",
+          "register": "neutralny",
+          "contextPl": "Potwierdzanie tożsamości pacjenta",
+          "natural": "",
+          "forms": "dates of birth",
+          "collocations": "confirm your date of birth",
+          "synonyms": "birth date; DOB",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you confirm your date of birth, please?",
+              "pl": "Czy może pan potwierdzić swoją datę urodzenia?",
+              "focusEn": "date of birth",
+              "focusPl": "datę urodzenia"
+            },
+            {
+              "en": "I wrote my date of birth in the wrong box on the form.",
+              "pl": "Wpisałem datę urodzenia w złą rubrykę formularza.",
+              "focusEn": "date of birth",
+              "focusPl": "datę urodzenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "date of birth",
+            "birth date",
+            "birthdate"
+          ],
+          "acceptedTranslations": [
+            "data urodzenia"
+          ]
+        },
+        {
+          "id": "doctor-visit.insurance-card",
+          "term": "insurance card",
+          "ipa": "/ɪnˈʃʊrəns ˌkɑːrd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "karta ubezpieczenia",
+          "definition": "A card that shows you have health insurance.",
+          "register": "neutralny",
+          "contextPl": "Dokument okazywany przy rejestracji",
+          "natural": "",
+          "forms": "insurance cards",
+          "collocations": "show your insurance card; scan your insurance card",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA kartę ubezpieczyciela pokazuje się zwykle przy każdej wizycie.",
+          "examples": [
+            {
+              "en": "Can I see your photo ID and insurance card, please?",
+              "pl": "Czy mogę prosić o dokument ze zdjęciem i kartę ubezpieczenia?",
+              "focusEn": "insurance card",
+              "focusPl": "kartę ubezpieczenia"
+            },
+            {
+              "en": "I left my insurance card at home, so I showed them a picture of it on my phone.",
+              "pl": "Zostawiłem kartę ubezpieczenia w domu, więc pokazałem im jej zdjęcie w telefonie.",
+              "focusEn": "insurance card",
+              "focusPl": "kartę ubezpieczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "insurance card",
+            "health insurance card"
+          ],
+          "acceptedTranslations": [
+            "karta ubezpieczenia",
+            "karta ubezpieczeniowa",
+            "legitymacja ubezpieczeniowa"
+          ]
+        },
+        {
+          "id": "doctor-visit.reschedule",
+          "term": "reschedule",
+          "ipa": "/ˌriːˈskedʒuːl/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przełożyć",
+          "definition": "To change the time or date of a planned event.",
+          "register": "neutralny",
+          "contextPl": "Zmiana terminu wizyty",
+          "natural": "",
+          "forms": "rescheduled",
+          "collocations": "reschedule an appointment; reschedule for next week",
+          "synonyms": "move; push back",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I reschedule my appointment for next Tuesday?",
+              "pl": "Czy mogę przełożyć wizytę na przyszły wtorek?",
+              "focusEn": "reschedule",
+              "focusPl": "przełożyć"
+            },
+            {
+              "en": "The office called to reschedule because the doctor was out sick.",
+              "pl": "Z gabinetu zadzwonili, żeby przełożyć wizytę, bo lekarz jest chory.",
+              "focusEn": "reschedule",
+              "focusPl": "przełożyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "reschedule"
+          ],
+          "acceptedTranslations": [
+            "przełożyć",
+            "przekładać",
+            "zmienić termin",
+            "przesunąć",
+            "przesuwać"
+          ]
+        },
+        {
+          "id": "doctor-visit.opening",
+          "term": "opening",
+          "ipa": "/ˈoʊpənɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wolny termin",
+          "definition": "An available time for an appointment.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o wolne terminy",
+          "natural": "",
+          "forms": "openings",
+          "collocations": "have an opening; next available opening",
+          "synonyms": "slot; availability",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you have any openings this afternoon?",
+              "pl": "Czy macie jakieś wolne terminy dziś po południu?",
+              "focusEn": "openings",
+              "focusPl": "wolne terminy"
+            },
+            {
+              "en": "The earliest opening is next Thursday at three.",
+              "pl": "Najbliższy wolny termin jest w przyszły czwartek o piętnastej.",
+              "focusEn": "opening",
+              "focusPl": "wolny termin"
+            }
+          ],
+          "acceptedAnswers": [
+            "opening",
+            "slot",
+            "time slot"
+          ],
+          "acceptedTranslations": [
+            "wolny termin",
+            "termin",
+            "wolne miejsce"
+          ]
+        },
+        {
+          "id": "doctor-visit.photo-id",
+          "term": "photo ID",
+          "ipa": "/ˌfoʊtoʊ aɪˈdiː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dokument tożsamości",
+          "definition": "An official card with your picture that proves who you are.",
+          "register": "neutralny",
+          "contextPl": "Potwierdzenie tożsamości w recepcji",
+          "natural": "",
+          "forms": "photo IDs",
+          "collocations": "show a photo ID; valid photo ID",
+          "synonyms": "ID",
+          "antonyms": "",
+          "notePl": "„ID” czyta się jak dwie litery: /aɪˈdiː/.",
+          "examples": [
+            {
+              "en": "I forgot my wallet, so I didn't have a photo ID with me.",
+              "pl": "Zapomniałem portfela, więc nie miałem przy sobie dokumentu ze zdjęciem.",
+              "focusEn": "photo ID",
+              "focusPl": "dokumentu ze zdjęciem"
+            },
+            {
+              "en": "The receptionist scanned my photo ID and handed it back.",
+              "pl": "Recepcjonistka zeskanowała mój dokument tożsamości i mi go oddała.",
+              "focusEn": "photo ID",
+              "focusPl": "dokument tożsamości"
+            }
+          ],
+          "acceptedAnswers": [
+            "photo ID",
+            "ID",
+            "identification"
+          ],
+          "acceptedTranslations": [
+            "dokument tożsamości",
+            "dokument ze zdjęciem",
+            "dowód osobisty",
+            "dowód"
+          ]
+        },
+        {
+          "id": "doctor-visit.primary-care-doctor",
+          "term": "primary care doctor",
+          "ipa": "/ˌpraɪmeri ˌker ˈdɑːktər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "lekarz rodzinny",
+          "definition": "The main doctor you see for regular health care.",
+          "register": "neutralny",
+          "contextPl": "Lekarz pierwszego kontaktu",
+          "natural": "",
+          "forms": "primary care doctors",
+          "collocations": "see your primary care doctor",
+          "synonyms": "family doctor; primary care physician; PCP",
+          "antonyms": "specialist",
+          "notePl": "W USA bardzo często skracane do „PCP”.",
+          "examples": [
+            {
+              "en": "Who is your primary care doctor? I need the name for the form.",
+              "pl": "Kto jest pana lekarzem rodzinnym? Potrzebuję nazwiska do formularza.",
+              "focusEn": "primary care doctor",
+              "focusPl": "lekarzem rodzinnym"
+            },
+            {
+              "en": "My primary care doctor was booked, so they offered me a visit with her colleague.",
+              "pl": "Moja lekarka rodzinna nie miała wolnych terminów, więc zaproponowano mi wizytę u jej kolegi.",
+              "focusEn": "primary care doctor",
+              "focusPl": "lekarka rodzinna"
+            }
+          ],
+          "acceptedAnswers": [
+            "primary care doctor",
+            "family doctor",
+            "primary care physician",
+            "PCP"
+          ],
+          "acceptedTranslations": [
+            "lekarz rodzinny",
+            "lekarka rodzinna",
+            "lekarz pierwszego kontaktu"
+          ]
+        },
+        {
+          "id": "doctor-visit.medical-history",
+          "term": "medical history",
+          "ipa": "/ˌmedɪkəl ˈhɪstəri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "historia choroby",
+          "definition": "A record of your past illnesses, treatments and health problems.",
+          "register": "neutralny",
+          "contextPl": "Wywiad przy rejestracji nowego pacjenta",
+          "natural": "",
+          "forms": "",
+          "collocations": "family medical history; take a medical history",
+          "synonyms": "health history",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a section about your family medical history on the back of the form.",
+              "pl": "Na odwrocie formularza jest część o historii chorób w rodzinie.",
+              "focusEn": "medical history",
+              "focusPl": "historii chorób"
+            },
+            {
+              "en": "I had to write down my whole medical history while sitting in the waiting room.",
+              "pl": "Musiałem spisać całą swoją historię choroby, siedząc w poczekalni.",
+              "focusEn": "medical history",
+              "focusPl": "historię choroby"
+            }
+          ],
+          "acceptedAnswers": [
+            "medical history",
+            "health history"
+          ],
+          "acceptedTranslations": [
+            "historia choroby",
+            "historia chorób",
+            "wywiad medyczny"
+          ]
+        },
+        {
+          "id": "doctor-visit.copay",
+          "term": "copay",
+          "ipa": "/ˈkoʊpeɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dopłata",
+          "definition": "A fixed amount you pay for a visit while your insurance pays the rest.",
+          "register": "neutralny",
+          "contextPl": "Typowo amerykańska opłata za wizytę",
+          "natural": "",
+          "forms": "copays",
+          "collocations": "pay a copay; a twenty-dollar copay",
+          "synonyms": "co-payment",
+          "antonyms": "",
+          "notePl": "W Polsce nie ma prostego odpowiednika: to stała kwota, którą pacjent płaci za wizytę.",
+          "examples": [
+            {
+              "en": "Your copay for today's visit is twenty-five dollars.",
+              "pl": "Pana dopłata za dzisiejszą wizytę wynosi dwadzieścia pięć dolarów.",
+              "focusEn": "copay",
+              "focusPl": "dopłata"
+            },
+            {
+              "en": "I paid my copay at the front desk before I sat down.",
+              "pl": "Zapłaciłem dopłatę w recepcji, zanim usiadłem.",
+              "focusEn": "copay",
+              "focusPl": "dopłatę"
+            }
+          ],
+          "acceptedAnswers": [
+            "copay",
+            "co-pay",
+            "co-payment"
+          ],
+          "acceptedTranslations": [
+            "dopłata",
+            "współpłacenie",
+            "udział własny"
+          ]
+        },
+        {
+          "id": "doctor-visit.walk-in-clinic",
+          "term": "walk-in clinic",
+          "ipa": "/ˈwɔːk ɪn ˌklɪnɪk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przychodnia bez zapisów",
+          "definition": "A clinic where you can see a doctor without an appointment.",
+          "register": "neutralny",
+          "contextPl": "Szybka wizyta bez wcześniejszego umawiania",
+          "natural": "",
+          "forms": "walk-in clinics",
+          "collocations": "go to a walk-in clinic",
+          "synonyms": "urgent care",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a walk-in clinic near my office that's open until nine.",
+              "pl": "Niedaleko mojego biura jest przychodnia bez zapisów otwarta do dziewiątej.",
+              "focusEn": "walk-in clinic",
+              "focusPl": "przychodnia bez zapisów"
+            },
+            {
+              "en": "At the walk-in clinic, I just signed in and waited about an hour.",
+              "pl": "W przychodni bez zapisów po prostu się wpisałem i czekałem około godziny.",
+              "focusEn": "walk-in clinic",
+              "focusPl": "przychodni bez zapisów"
+            }
+          ],
+          "acceptedAnswers": [
+            "walk-in clinic",
+            "walk-in"
+          ],
+          "acceptedTranslations": [
+            "przychodnia bez zapisów",
+            "przychodnia bez rejestracji"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doctor-visit.describing-symptoms",
+      "namePl": "Opisywanie dolegliwości",
+      "scenePl": "Gabinet lekarza: pacjent opowiada, co mu dolega, a lekarz dopytuje",
+      "entries": [
+        {
+          "id": "doctor-visit.what-brings-you-in",
+          "term": "what brings you in",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "co pana do nas sprowadza",
+          "definition": "A doctor's usual question asking why you came to the visit.",
+          "register": "neutralny",
+          "contextPl": "Pierwsze pytanie lekarza na początku wizyty",
+          "natural": "",
+          "forms": "",
+          "collocations": "what brings you in today",
+          "synonyms": "what seems to be the problem",
+          "antonyms": "",
+          "notePl": "Typowe pierwsze pytanie lekarza w USA; odpowiedź zaczyna się zwykle od „I've been…”.",
+          "examples": [
+            {
+              "en": "Good morning. So, what brings you in today?",
+              "pl": "Dzień dobry. No więc, co panią do nas sprowadza?",
+              "focusEn": "what brings you in",
+              "focusPl": "co panią do nas sprowadza"
+            },
+            {
+              "en": "What brings you in? Is it the cough you mentioned on the phone?",
+              "pl": "Co pana sprowadza? Chodzi o kaszel, o którym wspominał pan przez telefon?",
+              "focusEn": "What brings you in",
+              "focusPl": "Co pana sprowadza"
+            }
+          ],
+          "acceptedAnswers": [
+            "what brings you in",
+            "what brings you here",
+            "what seems to be the problem"
+          ],
+          "acceptedTranslations": [
+            "co pana do nas sprowadza",
+            "co pana sprowadza",
+            "co panią sprowadza",
+            "w czym mogę pomóc",
+            "co dolega"
+          ]
+        },
+        {
+          "id": "doctor-visit.hurt",
+          "term": "hurt",
+          "ipa": "/hɜːrt/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "boleć",
+          "definition": "To feel pain in a part of your body.",
+          "register": "neutralny",
+          "contextPl": "Wskazywanie bolącego miejsca",
+          "natural": "",
+          "forms": "hurt – hurt – hurt",
+          "collocations": "it hurts when; hurt a lot; hurt a little",
+          "synonyms": "ache",
+          "antonyms": "",
+          "notePl": "Po angielsku podmiotem jest bolące miejsce: „My knee hurts” – boli mnie kolano.",
+          "examples": [
+            {
+              "en": "It hurts when I bend my knee like this.",
+              "pl": "Boli mnie, kiedy zginam kolano w ten sposób.",
+              "focusEn": "hurts",
+              "focusPl": "Boli"
+            },
+            {
+              "en": "Does it hurt if I press right here?",
+              "pl": "Czy boli, kiedy nacisnę tutaj?",
+              "focusEn": "hurt",
+              "focusPl": "boli"
+            }
+          ],
+          "acceptedAnswers": [
+            "hurt",
+            "ache"
+          ],
+          "acceptedTranslations": [
+            "boleć",
+            "zaboleć",
+            "sprawiać ból"
+          ]
+        },
+        {
+          "id": "doctor-visit.pain",
+          "term": "pain",
+          "ipa": "/peɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ból",
+          "definition": "The unpleasant feeling you have when part of your body is hurt or sick.",
+          "register": "neutralny",
+          "contextPl": "Opisywanie bólu lekarzowi",
+          "natural": "",
+          "forms": "pains",
+          "collocations": "sharp pain; chest pain; pain gets worse",
+          "synonyms": "ache; discomfort",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "On a scale of one to ten, how bad is the pain?",
+              "pl": "W skali od jednego do dziesięciu, jak silny jest ból?",
+              "focusEn": "pain",
+              "focusPl": "ból"
+            },
+            {
+              "en": "The pain gets worse at night when I lie down.",
+              "pl": "Ból nasila się w nocy, kiedy się kładę.",
+              "focusEn": "pain",
+              "focusPl": "Ból"
+            }
+          ],
+          "acceptedAnswers": [
+            "pain",
+            "ache"
+          ],
+          "acceptedTranslations": [
+            "ból"
+          ]
+        },
+        {
+          "id": "doctor-visit.not-feel-well",
+          "term": "not feel well",
+          "ipa": "/nɑːt ˌfiːl ˈwel/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "źle się czuć",
+          "definition": "To feel sick or not healthy.",
+          "register": "neutralny",
+          "contextPl": "Ogólne zgłaszanie złego samopoczucia",
+          "natural": "I feel sick",
+          "forms": "feel – felt – felt",
+          "collocations": "not feel well at all; not feel well lately",
+          "synonyms": "feel sick; feel unwell",
+          "antonyms": "feel fine",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I haven't been feeling well for about a week.",
+              "pl": "Od mniej więcej tygodnia źle się czuję.",
+              "focusEn": "haven't been feeling well",
+              "focusPl": "źle się czuję"
+            },
+            {
+              "en": "I came in because I don't feel well and my temperature keeps going up.",
+              "pl": "Przyszedłem, bo kiepsko się czuję, a temperatura ciągle mi rośnie.",
+              "focusEn": "don't feel well",
+              "focusPl": "kiepsko się czuję"
+            }
+          ],
+          "acceptedAnswers": [
+            "not feel well",
+            "feel sick",
+            "feel unwell"
+          ],
+          "acceptedTranslations": [
+            "źle się czuć",
+            "kiepsko się czuć",
+            "nie czuć się dobrze",
+            "czuć się chorym"
+          ]
+        },
+        {
+          "id": "doctor-visit.symptom",
+          "term": "symptom",
+          "ipa": "/ˈsɪmptəm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "objaw",
+          "definition": "A sign of an illness, such as a fever or a cough.",
+          "register": "neutralny",
+          "contextPl": "Wymienianie dolegliwości",
+          "natural": "",
+          "forms": "symptoms",
+          "collocations": "have symptoms; describe your symptoms; flu symptoms",
+          "synonyms": "sign",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What symptoms have you been having?",
+              "pl": "Jakie ma pan objawy?",
+              "focusEn": "symptoms",
+              "focusPl": "objawy"
+            },
+            {
+              "en": "I told the doctor my symptoms started right after the trip.",
+              "pl": "Powiedziałem lekarzowi, że objawy zaczęły się zaraz po podróży.",
+              "focusEn": "symptoms",
+              "focusPl": "objawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "symptom"
+          ],
+          "acceptedTranslations": [
+            "objaw",
+            "symptom",
+            "dolegliwość"
+          ]
+        },
+        {
+          "id": "doctor-visit.how-long",
+          "term": "how long",
+          "ipa": "/ˌhaʊ ˈlɔːŋ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "od jak dawna",
+          "definition": "A question about how much time something has lasted.",
+          "register": "neutralny",
+          "contextPl": "Lekarz pyta, od kiedy trwa problem",
+          "natural": "",
+          "forms": "",
+          "collocations": "how long have you had; how long has it been",
+          "synonyms": "since when",
+          "antonyms": "",
+          "notePl": "„How long have you had…?” tłumaczymy zwykle „Od jak dawna…?”.",
+          "examples": [
+            {
+              "en": "How long have you had this cough?",
+              "pl": "Od jak dawna ma pan ten kaszel?",
+              "focusEn": "How long",
+              "focusPl": "Od jak dawna"
+            },
+            {
+              "en": "The doctor wanted to know how long the fever had lasted.",
+              "pl": "Lekarz chciał wiedzieć, jak długo utrzymywała się gorączka.",
+              "focusEn": "how long",
+              "focusPl": "jak długo"
+            }
+          ],
+          "acceptedAnswers": [
+            "how long"
+          ],
+          "acceptedTranslations": [
+            "od jak dawna",
+            "jak długo",
+            "od kiedy"
+          ]
+        },
+        {
+          "id": "doctor-visit.describe",
+          "term": "describe",
+          "ipa": "/dɪˈskraɪb/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "opisać",
+          "definition": "To say what something is like.",
+          "register": "neutralny",
+          "contextPl": "Opisywanie bólu i objawów",
+          "natural": "",
+          "forms": "described",
+          "collocations": "describe the pain; describe your symptoms",
+          "synonyms": "explain",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you describe the pain for me?",
+              "pl": "Czy może pan opisać mi ten ból?",
+              "focusEn": "describe",
+              "focusPl": "opisać"
+            },
+            {
+              "en": "I found it hard to describe the feeling in English.",
+              "pl": "Trudno mi było opisać to uczucie po angielsku.",
+              "focusEn": "describe",
+              "focusPl": "opisać"
+            }
+          ],
+          "acceptedAnswers": [
+            "describe",
+            "explain"
+          ],
+          "acceptedTranslations": [
+            "opisać",
+            "opisywać",
+            "określić"
+          ]
+        },
+        {
+          "id": "doctor-visit.get-worse",
+          "term": "get worse",
+          "ipa": "/ˌɡet ˈwɜːrs/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pogorszyć się",
+          "definition": "To become more serious or more painful.",
+          "register": "neutralny",
+          "contextPl": "Zmiany objawów w czasie",
+          "natural": "",
+          "forms": "get – got – gotten",
+          "collocations": "get worse at night; get worse and worse",
+          "synonyms": "worsen",
+          "antonyms": "get better",
+          "notePl": "W amerykańskim angielskim imiesłów to „gotten”.",
+          "examples": [
+            {
+              "en": "Has the cough gotten worse since last week?",
+              "pl": "Czy kaszel się pogorszył od zeszłego tygodnia?",
+              "focusEn": "gotten worse",
+              "focusPl": "się pogorszył"
+            },
+            {
+              "en": "Call us right away if the swelling gets worse.",
+              "pl": "Proszę od razu do nas zadzwonić, jeśli obrzęk się nasili.",
+              "focusEn": "gets worse",
+              "focusPl": "się nasili"
+            }
+          ],
+          "acceptedAnswers": [
+            "get worse",
+            "worsen"
+          ],
+          "acceptedTranslations": [
+            "pogorszyć się",
+            "pogarszać się",
+            "nasilić się",
+            "nasilać się"
+          ]
+        },
+        {
+          "id": "doctor-visit.sharp",
+          "term": "sharp",
+          "ipa": "/ʃɑːrp/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ostry",
+          "definition": "Sudden and strong, used about pain.",
+          "register": "neutralny",
+          "contextPl": "Rodzaj bólu: kłujący, nagły",
+          "natural": "",
+          "forms": "sharper; sharpest",
+          "collocations": "sharp pain; sharp stabbing pain",
+          "synonyms": "stabbing",
+          "antonyms": "dull",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is it a sharp pain or more of a dull ache?",
+              "pl": "Czy to ostry ból, czy raczej tępy?",
+              "focusEn": "sharp",
+              "focusPl": "ostry"
+            },
+            {
+              "en": "I feel a sharp pain in my side when I take a deep breath.",
+              "pl": "Czuję ostry ból w boku, kiedy biorę głęboki wdech.",
+              "focusEn": "sharp",
+              "focusPl": "ostry"
+            }
+          ],
+          "acceptedAnswers": [
+            "sharp",
+            "stabbing"
+          ],
+          "acceptedTranslations": [
+            "ostry",
+            "kłujący",
+            "przeszywający"
+          ]
+        },
+        {
+          "id": "doctor-visit.ache",
+          "term": "ache",
+          "ipa": "/eɪk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ból",
+          "definition": "A steady pain that is not very strong but lasts a long time.",
+          "register": "neutralny",
+          "contextPl": "Ból ćmiący, długotrwały",
+          "natural": "",
+          "forms": "aches",
+          "collocations": "dull ache; constant ache; aches and pains",
+          "synonyms": "pain",
+          "antonyms": "",
+          "notePl": "„Ache” to raczej ból tępy i długi niż nagły.",
+          "examples": [
+            {
+              "en": "I've had this ache in my lower back for weeks.",
+              "pl": "Ten ból w dolnej części pleców mam od kilku tygodni.",
+              "focusEn": "ache",
+              "focusPl": "ból"
+            },
+            {
+              "en": "The doctor asked whether the ache spreads down into my legs.",
+              "pl": "Lekarz zapytał, czy ból promieniuje do nóg.",
+              "focusEn": "ache",
+              "focusPl": "ból"
+            }
+          ],
+          "acceptedAnswers": [
+            "ache",
+            "pain"
+          ],
+          "acceptedTranslations": [
+            "ból",
+            "ból ćmiący",
+            "pobolewanie"
+          ]
+        },
+        {
+          "id": "doctor-visit.dull",
+          "term": "dull",
+          "ipa": "/dʌl/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "tępy",
+          "definition": "Not strong or sharp, but steady, used about pain.",
+          "register": "neutralny",
+          "contextPl": "Rodzaj bólu: ćmiący, uciskający",
+          "natural": "",
+          "forms": "duller; dullest",
+          "collocations": "dull ache; dull pain; dull pressure",
+          "synonyms": "",
+          "antonyms": "sharp",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's a dull ache that never really goes away.",
+              "pl": "To tępy ból, który nigdy całkiem nie mija.",
+              "focusEn": "dull",
+              "focusPl": "tępy"
+            },
+            {
+              "en": "I told the doctor I feel a dull pressure behind my eyes.",
+              "pl": "Powiedziałem lekarzowi, że czuję tępy ucisk za oczami.",
+              "focusEn": "dull",
+              "focusPl": "tępy"
+            }
+          ],
+          "acceptedAnswers": [
+            "dull"
+          ],
+          "acceptedTranslations": [
+            "tępy",
+            "ćmiący"
+          ]
+        },
+        {
+          "id": "doctor-visit.bother",
+          "term": "bother",
+          "ipa": "/ˈbɑːðər/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dokuczać",
+          "definition": "To cause you pain or discomfort.",
+          "register": "neutralny",
+          "contextPl": "Dolegliwość, która przeszkadza",
+          "natural": "",
+          "forms": "bothered",
+          "collocations": "bother someone; still bothering me",
+          "synonyms": "trouble",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is your shoulder still bothering you?",
+              "pl": "Czy bark wciąż panu dokucza?",
+              "focusEn": "bothering",
+              "focusPl": "dokucza"
+            },
+            {
+              "en": "My knee only bothers me when I walk up the stairs.",
+              "pl": "Kolano dokucza mi tylko, kiedy wchodzę po schodach.",
+              "focusEn": "bothers",
+              "focusPl": "dokucza"
+            }
+          ],
+          "acceptedAnswers": [
+            "bother",
+            "trouble"
+          ],
+          "acceptedTranslations": [
+            "dokuczać",
+            "doskwierać",
+            "przeszkadzać"
+          ]
+        },
+        {
+          "id": "doctor-visit.come-and-go",
+          "term": "come and go",
+          "ipa": "/ˌkʌm ən ˈɡoʊ/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pojawiać się i znikać",
+          "definition": "To start and stop again and again.",
+          "register": "neutralny",
+          "contextPl": "Objawy, które nie są stałe",
+          "natural": "",
+          "forms": "come – came – come",
+          "collocations": "pain comes and goes; symptoms come and go",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The dizziness seems to come and go during the day.",
+              "pl": "Zawroty głowy pojawiają się i znikają w ciągu dnia.",
+              "focusEn": "come and go",
+              "focusPl": "pojawiają się i znikają"
+            },
+            {
+              "en": "I told her the pain comes and goes, so it's hard to describe.",
+              "pl": "Powiedziałem jej, że ból pojawia się i znika, więc trudno go opisać.",
+              "focusEn": "comes and goes",
+              "focusPl": "pojawia się i znika"
+            }
+          ],
+          "acceptedAnswers": [
+            "come and go"
+          ],
+          "acceptedTranslations": [
+            "pojawiać się i znikać",
+            "przychodzić i odchodzić"
+          ]
+        },
+        {
+          "id": "doctor-visit.on-and-off",
+          "term": "on and off",
+          "ipa": "/ˌɑːn ən ˈɔːf/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "z przerwami",
+          "definition": "Sometimes, but not all the time.",
+          "register": "neutralny",
+          "contextPl": "Objawy powracające co jakiś czas",
+          "natural": "",
+          "forms": "",
+          "collocations": "on and off for weeks",
+          "synonyms": "off and on; from time to time",
+          "antonyms": "constantly",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've had headaches on and off for about a month.",
+              "pl": "Od około miesiąca z przerwami mam bóle głowy.",
+              "focusEn": "on and off",
+              "focusPl": "z przerwami"
+            },
+            {
+              "en": "My stomach has been bothering me on and off since the holidays.",
+              "pl": "Brzuch dokucza mi z przerwami od świąt.",
+              "focusEn": "on and off",
+              "focusPl": "z przerwami"
+            }
+          ],
+          "acceptedAnswers": [
+            "on and off",
+            "off and on"
+          ],
+          "acceptedTranslations": [
+            "z przerwami",
+            "od czasu do czasu",
+            "co jakiś czas"
+          ]
+        },
+        {
+          "id": "doctor-visit.lately",
+          "term": "lately",
+          "ipa": "/ˈleɪtli/",
+          "pos": "przysłówek",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ostatnio",
+          "definition": "Recently; in the last few days or weeks.",
+          "register": "neutralny",
+          "contextPl": "Mówienie o ostatnich zmianach w zdrowiu",
+          "natural": "",
+          "forms": "",
+          "collocations": "feel tired lately",
+          "synonyms": "recently",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've been really tired lately, even after a full night's sleep.",
+              "pl": "Ostatnio jestem bardzo zmęczony, nawet po przespanej nocy.",
+              "focusEn": "lately",
+              "focusPl": "Ostatnio"
+            },
+            {
+              "en": "Have you been under a lot of stress lately?",
+              "pl": "Czy był pan ostatnio mocno zestresowany?",
+              "focusEn": "lately",
+              "focusPl": "ostatnio"
+            }
+          ],
+          "acceptedAnswers": [
+            "lately",
+            "recently"
+          ],
+          "acceptedTranslations": [
+            "ostatnio",
+            "w ostatnim czasie"
+          ]
+        },
+        {
+          "id": "doctor-visit.allergic",
+          "term": "allergic",
+          "ipa": "/əˈlɜːrdʒɪk/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "uczulony",
+          "definition": "Having a bad reaction to something you eat, touch or take.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o alergie przed przepisaniem leku",
+          "natural": "",
+          "forms": "",
+          "collocations": "allergic to penicillin; allergic reaction",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po „allergic” zawsze „to”: allergic to nuts.",
+          "examples": [
+            {
+              "en": "Are you allergic to any medications?",
+              "pl": "Czy jest pan uczulony na jakieś leki?",
+              "focusEn": "allergic",
+              "focusPl": "uczulony"
+            },
+            {
+              "en": "I reminded the doctor that I'm allergic to penicillin.",
+              "pl": "Przypomniałem lekarzowi, że jestem uczulony na penicylinę.",
+              "focusEn": "allergic",
+              "focusPl": "uczulony"
+            }
+          ],
+          "acceptedAnswers": [
+            "allergic"
+          ],
+          "acceptedTranslations": [
+            "uczulony",
+            "uczulona",
+            "mający alergię"
+          ]
+        },
+        {
+          "id": "doctor-visit.swollen",
+          "term": "swollen",
+          "ipa": "/ˈswoʊlən/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "spuchnięty",
+          "definition": "Bigger than usual because of injury or illness.",
+          "register": "neutralny",
+          "contextPl": "Obrzęk pokazywany lekarzowi",
+          "natural": "",
+          "forms": "",
+          "collocations": "swollen ankle; swollen glands",
+          "synonyms": "puffy",
+          "antonyms": "",
+          "notePl": "Imiesłów od „swell” – puchnąć.",
+          "examples": [
+            {
+              "en": "My ankle has been swollen since I twisted it on Saturday.",
+              "pl": "Kostka jest spuchnięta, odkąd skręciłem ją w sobotę.",
+              "focusEn": "swollen",
+              "focusPl": "spuchnięta"
+            },
+            {
+              "en": "The doctor gently pressed on the swollen area.",
+              "pl": "Lekarz delikatnie ucisnął spuchnięte miejsce.",
+              "focusEn": "swollen",
+              "focusPl": "spuchnięte"
+            }
+          ],
+          "acceptedAnswers": [
+            "swollen",
+            "puffy"
+          ],
+          "acceptedTranslations": [
+            "spuchnięty",
+            "opuchnięty",
+            "obrzęknięty"
+          ]
+        },
+        {
+          "id": "doctor-visit.appetite",
+          "term": "appetite",
+          "ipa": "/ˈæpətaɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "apetyt",
+          "definition": "The feeling that you want to eat.",
+          "register": "neutralny",
+          "contextPl": "Zmiany w jedzeniu jako objaw",
+          "natural": "",
+          "forms": "",
+          "collocations": "lose your appetite; poor appetite; no appetite",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've lost my appetite, and I barely eat lunch anymore.",
+              "pl": "Straciłem apetyt i prawie nie jem już obiadu.",
+              "focusEn": "appetite",
+              "focusPl": "apetyt"
+            },
+            {
+              "en": "The doctor asked if my appetite had changed in the last month.",
+              "pl": "Lekarz zapytał, czy mój apetyt zmienił się w ostatnim miesiącu.",
+              "focusEn": "appetite",
+              "focusPl": "apetyt"
+            }
+          ],
+          "acceptedAnswers": [
+            "appetite"
+          ],
+          "acceptedTranslations": [
+            "apetyt",
+            "chęć do jedzenia"
+          ]
+        },
+        {
+          "id": "doctor-visit.numb",
+          "term": "numb",
+          "ipa": "/nʌm/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zdrętwiały",
+          "definition": "Unable to feel anything in a part of your body.",
+          "register": "neutralny",
+          "contextPl": "Drętwienie i brak czucia",
+          "natural": "",
+          "forms": "",
+          "collocations": "go numb; feel numb",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Nieme „b” na końcu: /nʌm/.",
+          "examples": [
+            {
+              "en": "Sometimes my fingers go numb when I type for a long time.",
+              "pl": "Czasem palce mi drętwieją, kiedy długo piszę na klawiaturze.",
+              "focusEn": "numb",
+              "focusPl": "drętwieją"
+            },
+            {
+              "en": "I told the doctor my left foot feels numb in the morning.",
+              "pl": "Powiedziałem lekarzowi, że rano lewa stopa jest zdrętwiała.",
+              "focusEn": "numb",
+              "focusPl": "zdrętwiała"
+            }
+          ],
+          "acceptedAnswers": [
+            "numb"
+          ],
+          "acceptedTranslations": [
+            "zdrętwiały",
+            "drętwieć",
+            "zdrętwieć",
+            "bez czucia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doctor-visit.examination",
+      "namePl": "Badanie w gabinecie",
+      "scenePl": "Gabinet: pielęgniarka mierzy parametry, a lekarz bada pacjenta na leżance",
+      "entries": [
+        {
+          "id": "doctor-visit.nurse",
+          "term": "nurse",
+          "ipa": "/nɜːrs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pielęgniarka",
+          "definition": "A person trained to care for sick people, usually working with doctors.",
+          "register": "neutralny",
+          "contextPl": "Pierwsza osoba, która przyjmuje pacjenta w gabinecie",
+          "natural": "",
+          "forms": "nurses",
+          "collocations": "nurse practitioner; ask the nurse",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A nurse called my name and walked me down the hall.",
+              "pl": "Pielęgniarka wywołała moje nazwisko i poprowadziła mnie korytarzem.",
+              "focusEn": "nurse",
+              "focusPl": "Pielęgniarka"
+            },
+            {
+              "en": "The nurse said the doctor would be in shortly.",
+              "pl": "Pielęgniarka powiedziała, że lekarz zaraz przyjdzie.",
+              "focusEn": "nurse",
+              "focusPl": "Pielęgniarka"
+            }
+          ],
+          "acceptedAnswers": [
+            "nurse"
+          ],
+          "acceptedTranslations": [
+            "pielęgniarka",
+            "pielęgniarz"
+          ]
+        },
+        {
+          "id": "doctor-visit.take-a-look",
+          "term": "take a look",
+          "ipa": "/ˌteɪk ə ˈlʊk/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "obejrzeć",
+          "definition": "To look at something to check it.",
+          "register": "neutralny",
+          "contextPl": "Lekarz ogląda zmianę, gardło, ucho",
+          "natural": "",
+          "forms": "take – took – taken",
+          "collocations": "take a look at; take a quick look",
+          "synonyms": "look at; check",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let me take a look at that rash.",
+              "pl": "Pozwoli pan, że obejrzę tę wysypkę.",
+              "focusEn": "take a look",
+              "focusPl": "obejrzę"
+            },
+            {
+              "en": "After the doctor took a look at my ear, she said it was infected.",
+              "pl": "Kiedy lekarka obejrzała mi ucho, powiedziała, że jest zakażone.",
+              "focusEn": "took a look",
+              "focusPl": "obejrzała"
+            }
+          ],
+          "acceptedAnswers": [
+            "take a look",
+            "have a look",
+            "look at"
+          ],
+          "acceptedTranslations": [
+            "obejrzeć",
+            "oglądać",
+            "spojrzeć",
+            "zerknąć",
+            "rzucić okiem"
+          ]
+        },
+        {
+          "id": "doctor-visit.examine",
+          "term": "examine",
+          "ipa": "/ɪɡˈzæmɪn/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zbadać",
+          "definition": "To look at or check a person's body carefully to find a health problem.",
+          "register": "neutralny",
+          "contextPl": "Badanie fizykalne",
+          "natural": "",
+          "forms": "examined",
+          "collocations": "examine a patient; examine closely",
+          "synonyms": "check",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The doctor examined my throat with a small light.",
+              "pl": "Lekarz zbadał mi gardło małą latarką.",
+              "focusEn": "examined",
+              "focusPl": "zbadał"
+            },
+            {
+              "en": "Let me examine your stomach. Please lie back on the table.",
+              "pl": "Pozwoli pan, że zbadam brzuch. Proszę położyć się na leżance.",
+              "focusEn": "examine",
+              "focusPl": "zbadam"
+            }
+          ],
+          "acceptedAnswers": [
+            "examine",
+            "check"
+          ],
+          "acceptedTranslations": [
+            "zbadać",
+            "badać"
+          ]
+        },
+        {
+          "id": "doctor-visit.checkup",
+          "term": "checkup",
+          "ipa": "/ˈtʃekʌp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "badanie kontrolne",
+          "definition": "A routine exam to make sure you are healthy.",
+          "register": "neutralny",
+          "contextPl": "Coroczne lub okresowe badanie",
+          "natural": "",
+          "forms": "checkups",
+          "collocations": "yearly checkup; annual checkup; go for a checkup",
+          "synonyms": "physical",
+          "antonyms": "",
+          "notePl": "W USA na coroczne badanie mówi się też „physical”.",
+          "examples": [
+            {
+              "en": "I'm here for my yearly checkup.",
+              "pl": "Przyszedłem na coroczne badanie kontrolne.",
+              "focusEn": "checkup",
+              "focusPl": "badanie kontrolne"
+            },
+            {
+              "en": "At the end of the checkup, the doctor said everything looked good.",
+              "pl": "Na koniec badania kontrolnego lekarz powiedział, że wszystko wygląda dobrze.",
+              "focusEn": "checkup",
+              "focusPl": "badania kontrolnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "checkup",
+            "check-up",
+            "physical",
+            "annual physical"
+          ],
+          "acceptedTranslations": [
+            "badanie kontrolne",
+            "badanie okresowe",
+            "kontrola",
+            "przegląd zdrowia"
+          ]
+        },
+        {
+          "id": "doctor-visit.blood-pressure",
+          "term": "blood pressure",
+          "ipa": "/ˈblʌd ˌpreʃər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "ciśnienie krwi",
+          "definition": "The force of blood moving through your body, checked with a cuff on your arm.",
+          "register": "neutralny",
+          "contextPl": "Rutynowy pomiar na początku wizyty",
+          "natural": "",
+          "forms": "",
+          "collocations": "check blood pressure; high blood pressure; low blood pressure",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The nurse wrapped a cuff around my arm to check my blood pressure.",
+              "pl": "Pielęgniarka założyła mi mankiet na ramię, żeby zmierzyć ciśnienie krwi.",
+              "focusEn": "blood pressure",
+              "focusPl": "ciśnienie krwi"
+            },
+            {
+              "en": "Your blood pressure is a little high today.",
+              "pl": "Pana ciśnienie jest dziś trochę podwyższone.",
+              "focusEn": "blood pressure",
+              "focusPl": "ciśnienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "blood pressure"
+          ],
+          "acceptedTranslations": [
+            "ciśnienie krwi",
+            "ciśnienie"
+          ]
+        },
+        {
+          "id": "doctor-visit.take-someones-temperature",
+          "term": "take someone's temperature",
+          "ipa": "/ˌteɪk ˈsʌmwʌnz ˈtemprətʃər/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zmierzyć komuś temperaturę",
+          "definition": "To measure how hot someone's body is.",
+          "register": "neutralny",
+          "contextPl": "Pomiar gorączki",
+          "natural": "",
+          "forms": "take – took – taken",
+          "collocations": "take your temperature",
+          "synonyms": "check someone's temperature",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The nurse took my temperature and said I had a slight fever.",
+              "pl": "Pielęgniarka zmierzyła mi temperaturę i powiedziała, że mam lekką gorączkę.",
+              "focusEn": "took my temperature",
+              "focusPl": "zmierzyła mi temperaturę"
+            },
+            {
+              "en": "Let me take your temperature before the doctor comes in.",
+              "pl": "Zmierzę panu temperaturę, zanim przyjdzie lekarz.",
+              "focusEn": "take your temperature",
+              "focusPl": "Zmierzę panu temperaturę"
+            }
+          ],
+          "acceptedAnswers": [
+            "take someone's temperature",
+            "take your temperature",
+            "take my temperature",
+            "check someone's temperature"
+          ],
+          "acceptedTranslations": [
+            "zmierzyć komuś temperaturę",
+            "zmierzyć temperaturę",
+            "mierzyć temperaturę"
+          ]
+        },
+        {
+          "id": "doctor-visit.scale",
+          "term": "scale",
+          "ipa": "/skeɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "waga",
+          "definition": "A device you stand on to measure how heavy you are.",
+          "register": "neutralny",
+          "contextPl": "Ważenie pacjenta",
+          "natural": "",
+          "forms": "scales",
+          "collocations": "step on the scale; bathroom scale",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Chodzi o urządzenie; sama waga ciała to „weight”.",
+          "examples": [
+            {
+              "en": "Please take off your shoes and step on the scale.",
+              "pl": "Proszę zdjąć buty i stanąć na wadze.",
+              "focusEn": "scale",
+              "focusPl": "wadze"
+            },
+            {
+              "en": "The scale in the hallway showed I'd lost a little weight.",
+              "pl": "Waga na korytarzu pokazała, że trochę schudłem.",
+              "focusEn": "scale",
+              "focusPl": "Waga"
+            }
+          ],
+          "acceptedAnswers": [
+            "scale"
+          ],
+          "acceptedTranslations": [
+            "waga",
+            "waga lekarska"
+          ]
+        },
+        {
+          "id": "doctor-visit.weigh",
+          "term": "weigh",
+          "ipa": "/weɪ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zważyć",
+          "definition": "To measure how heavy someone or something is.",
+          "register": "neutralny",
+          "contextPl": "Ważenie podczas wizyty",
+          "natural": "",
+          "forms": "weighed",
+          "collocations": "weigh a patient; get weighed",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Wymowa jak „way”.",
+          "examples": [
+            {
+              "en": "The nurse needs to weigh you before your checkup.",
+              "pl": "Pielęgniarka musi pana zważyć przed badaniem.",
+              "focusEn": "weigh",
+              "focusPl": "zważyć"
+            },
+            {
+              "en": "They weigh every patient at the start of the visit.",
+              "pl": "Na początku wizyty ważą każdego pacjenta.",
+              "focusEn": "weigh",
+              "focusPl": "ważą"
+            }
+          ],
+          "acceptedAnswers": [
+            "weigh"
+          ],
+          "acceptedTranslations": [
+            "zważyć",
+            "ważyć"
+          ]
+        },
+        {
+          "id": "doctor-visit.weight",
+          "term": "weight",
+          "ipa": "/weɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "waga",
+          "definition": "How heavy a person is.",
+          "register": "neutralny",
+          "contextPl": "Waga ciała w karcie pacjenta",
+          "natural": "",
+          "forms": "",
+          "collocations": "lose weight; gain weight; healthy weight",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Have you noticed any changes in your weight?",
+              "pl": "Czy zauważył pan jakieś zmiany wagi?",
+              "focusEn": "weight",
+              "focusPl": "wagi"
+            },
+            {
+              "en": "My weight has gone up a little since last year.",
+              "pl": "Moja waga trochę wzrosła od zeszłego roku.",
+              "focusEn": "weight",
+              "focusPl": "waga"
+            }
+          ],
+          "acceptedAnswers": [
+            "weight"
+          ],
+          "acceptedTranslations": [
+            "waga",
+            "masa ciała"
+          ]
+        },
+        {
+          "id": "doctor-visit.height",
+          "term": "height",
+          "ipa": "/haɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wzrost",
+          "definition": "How tall a person is.",
+          "register": "neutralny",
+          "contextPl": "Mierzenie wzrostu pacjenta",
+          "natural": "",
+          "forms": "heights",
+          "collocations": "measure your height; height and weight",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Wymowa z „t” na końcu: /haɪt/, nie „th”.",
+          "examples": [
+            {
+              "en": "The nurse measured my height against the wall.",
+              "pl": "Pielęgniarka zmierzyła mój wzrost przy ścianie.",
+              "focusEn": "height",
+              "focusPl": "wzrost"
+            },
+            {
+              "en": "They update your height and weight at every checkup.",
+              "pl": "Przy każdym badaniu kontrolnym aktualizują wzrost i wagę.",
+              "focusEn": "height",
+              "focusPl": "wzrost"
+            }
+          ],
+          "acceptedAnswers": [
+            "height"
+          ],
+          "acceptedTranslations": [
+            "wzrost"
+          ]
+        },
+        {
+          "id": "doctor-visit.lie-down",
+          "term": "lie down",
+          "ipa": "/ˌlaɪ ˈdaʊn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "położyć się",
+          "definition": "To put your body flat on a bed or table.",
+          "register": "neutralny",
+          "contextPl": "Polecenie lekarza przed badaniem",
+          "natural": "",
+          "forms": "lie – lay – lain",
+          "collocations": "lie down on the table; lie down on your back",
+          "synonyms": "",
+          "antonyms": "sit up",
+          "notePl": "Nie myl z „lay” (kłaść coś): I lay down = położyłem się.",
+          "examples": [
+            {
+              "en": "Please lie down on the table and relax.",
+              "pl": "Proszę położyć się na leżance i się rozluźnić.",
+              "focusEn": "lie down",
+              "focusPl": "położyć się"
+            },
+            {
+              "en": "When I lay down, the doctor pressed on different parts of my stomach.",
+              "pl": "Kiedy się położyłem, lekarz uciskał różne miejsca na brzuchu.",
+              "focusEn": "lay down",
+              "focusPl": "się położyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "lie down"
+          ],
+          "acceptedTranslations": [
+            "położyć się",
+            "kłaść się",
+            "leżeć"
+          ]
+        },
+        {
+          "id": "doctor-visit.breathe-in",
+          "term": "breathe in",
+          "ipa": "/ˌbriːð ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zrobić wdech",
+          "definition": "To take air into your lungs.",
+          "register": "neutralny",
+          "contextPl": "Polecenia podczas osłuchiwania",
+          "natural": "",
+          "forms": "breathed in",
+          "collocations": "breathe in deeply; breathe in through your nose",
+          "synonyms": "inhale",
+          "antonyms": "breathe out",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Okay, breathe in slowly through your nose.",
+              "pl": "Dobrze, proszę powoli wciągnąć powietrze nosem.",
+              "focusEn": "breathe in",
+              "focusPl": "wciągnąć powietrze"
+            },
+            {
+              "en": "It hurt a little when I breathed in deeply.",
+              "pl": "Trochę zabolało, kiedy wziąłem głęboki wdech.",
+              "focusEn": "breathed in",
+              "focusPl": "wziąłem głęboki wdech"
+            }
+          ],
+          "acceptedAnswers": [
+            "breathe in",
+            "inhale"
+          ],
+          "acceptedTranslations": [
+            "zrobić wdech",
+            "wziąć wdech",
+            "wdychać",
+            "wciągnąć powietrze",
+            "nabrać powietrza"
+          ]
+        },
+        {
+          "id": "doctor-visit.breathe-out",
+          "term": "breathe out",
+          "ipa": "/ˌbriːð ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zrobić wydech",
+          "definition": "To let air out of your lungs.",
+          "register": "neutralny",
+          "contextPl": "Polecenia podczas osłuchiwania",
+          "natural": "",
+          "forms": "breathed out",
+          "collocations": "breathe out slowly",
+          "synonyms": "exhale",
+          "antonyms": "breathe in",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Now breathe out and relax your shoulders.",
+              "pl": "Teraz proszę zrobić wydech i rozluźnić ramiona.",
+              "focusEn": "breathe out",
+              "focusPl": "zrobić wydech"
+            },
+            {
+              "en": "I coughed every time I tried to breathe out slowly.",
+              "pl": "Kaszlałem za każdym razem, gdy próbowałem powoli wypuścić powietrze.",
+              "focusEn": "breathe out",
+              "focusPl": "wypuścić powietrze"
+            }
+          ],
+          "acceptedAnswers": [
+            "breathe out",
+            "exhale"
+          ],
+          "acceptedTranslations": [
+            "zrobić wydech",
+            "wydychać",
+            "wypuścić powietrze",
+            "wypuszczać powietrze"
+          ]
+        },
+        {
+          "id": "doctor-visit.press",
+          "term": "press",
+          "ipa": "/pres/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "nacisnąć",
+          "definition": "To push firmly on something with your fingers.",
+          "register": "neutralny",
+          "contextPl": "Lekarz uciska brzuch lub bolące miejsce",
+          "natural": "",
+          "forms": "pressed",
+          "collocations": "press gently; press on your stomach",
+          "synonyms": "push",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm going to press gently on your stomach. Tell me if it hurts.",
+              "pl": "Delikatnie nacisnę panu brzuch. Proszę powiedzieć, jeśli boli.",
+              "focusEn": "press",
+              "focusPl": "nacisnę"
+            },
+            {
+              "en": "When she pressed on my lower right side, I jumped.",
+              "pl": "Kiedy nacisnęła mi prawy dolny bok, aż podskoczyłem.",
+              "focusEn": "pressed",
+              "focusPl": "nacisnęła"
+            }
+          ],
+          "acceptedAnswers": [
+            "press",
+            "push"
+          ],
+          "acceptedTranslations": [
+            "nacisnąć",
+            "naciskać",
+            "ucisnąć",
+            "uciskać"
+          ]
+        },
+        {
+          "id": "doctor-visit.roll-up",
+          "term": "roll up",
+          "ipa": "/ˌroʊl ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "podwinąć",
+          "definition": "To fold a sleeve or pant leg up so the skin is showing.",
+          "register": "neutralny",
+          "contextPl": "Przygotowanie do pomiaru, zastrzyku, oględzin",
+          "natural": "",
+          "forms": "rolled up",
+          "collocations": "roll up your sleeve",
+          "synonyms": "push up",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you roll up your sleeve for me?",
+              "pl": "Czy może pan podwinąć rękaw?",
+              "focusEn": "roll up",
+              "focusPl": "podwinąć"
+            },
+            {
+              "en": "I rolled up my pant leg so she could look at the rash.",
+              "pl": "Podwinąłem nogawkę, żeby mogła obejrzeć wysypkę.",
+              "focusEn": "rolled up",
+              "focusPl": "Podwinąłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "roll up"
+          ],
+          "acceptedTranslations": [
+            "podwinąć",
+            "podwijać",
+            "zawinąć",
+            "zawijać"
+          ]
+        },
+        {
+          "id": "doctor-visit.pulse",
+          "term": "pulse",
+          "ipa": "/pʌls/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "tętno",
+          "definition": "The regular beat of blood that you can feel, for example in your wrist.",
+          "register": "neutralny",
+          "contextPl": "Pomiar tętna",
+          "natural": "",
+          "forms": "",
+          "collocations": "check your pulse; take your pulse; fast pulse",
+          "synonyms": "heart rate",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She held my wrist for a moment and checked my pulse.",
+              "pl": "Przytrzymała przez chwilę mój nadgarstek i sprawdziła tętno.",
+              "focusEn": "pulse",
+              "focusPl": "tętno"
+            },
+            {
+              "en": "Your pulse is a bit fast. Did you rush to get here?",
+              "pl": "Ma pan trochę przyspieszone tętno. Spieszył się pan tutaj?",
+              "focusEn": "pulse",
+              "focusPl": "tętno"
+            }
+          ],
+          "acceptedAnswers": [
+            "pulse",
+            "heart rate"
+          ],
+          "acceptedTranslations": [
+            "tętno",
+            "puls"
+          ]
+        },
+        {
+          "id": "doctor-visit.exam-room",
+          "term": "exam room",
+          "ipa": "/ɪɡˈzæm ˌruːm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gabinet",
+          "definition": "The small room where a doctor examines patients.",
+          "register": "neutralny",
+          "contextPl": "Pomieszczenie, w którym odbywa się badanie",
+          "natural": "",
+          "forms": "exam rooms",
+          "collocations": "wait in the exam room",
+          "synonyms": "examination room",
+          "antonyms": "waiting room",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The nurse led me to exam room two and closed the door.",
+              "pl": "Pielęgniarka zaprowadziła mnie do gabinetu numer dwa i zamknęła drzwi.",
+              "focusEn": "exam room",
+              "focusPl": "gabinetu"
+            },
+            {
+              "en": "It was cold in the exam room, so I kept my sweater on until the doctor came.",
+              "pl": "W gabinecie było zimno, więc nie zdejmowałem swetra, dopóki nie przyszedł lekarz.",
+              "focusEn": "exam room",
+              "focusPl": "gabinecie"
+            }
+          ],
+          "acceptedAnswers": [
+            "exam room",
+            "examination room"
+          ],
+          "acceptedTranslations": [
+            "gabinet",
+            "gabinet zabiegowy",
+            "gabinet badań"
+          ]
+        },
+        {
+          "id": "doctor-visit.gown",
+          "term": "gown",
+          "ipa": "/ɡaʊn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "koszula szpitalna",
+          "definition": "A thin loose piece of clothing that patients wear for an exam.",
+          "register": "neutralny",
+          "contextPl": "Przebieranie się do badania",
+          "natural": "",
+          "forms": "gowns",
+          "collocations": "hospital gown; change into a gown",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please change into this gown; it opens in the back.",
+              "pl": "Proszę przebrać się w tę koszulę; ma rozcięcie z tyłu.",
+              "focusEn": "gown",
+              "focusPl": "koszulę"
+            },
+            {
+              "en": "I sat on the paper-covered table in a thin gown, waiting for the doctor.",
+              "pl": "Siedziałem na leżance przykrytej papierem w cienkiej koszuli, czekając na lekarza.",
+              "focusEn": "gown",
+              "focusPl": "koszuli"
+            }
+          ],
+          "acceptedAnswers": [
+            "gown",
+            "hospital gown",
+            "patient gown"
+          ],
+          "acceptedTranslations": [
+            "koszula szpitalna",
+            "koszula",
+            "fartuch"
+          ]
+        },
+        {
+          "id": "doctor-visit.stethoscope",
+          "term": "stethoscope",
+          "ipa": "/ˈsteθəskoʊp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "stetoskop",
+          "definition": "A tool doctors use to listen to your heart and lungs.",
+          "register": "specjalistyczny",
+          "contextPl": "Osłuchiwanie serca i płuc",
+          "natural": "",
+          "forms": "stethoscopes",
+          "collocations": "listen with a stethoscope",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The doctor put the stethoscope to my chest and listened carefully.",
+              "pl": "Lekarz przyłożył mi stetoskop do klatki piersiowej i uważnie słuchał.",
+              "focusEn": "stethoscope",
+              "focusPl": "stetoskop"
+            },
+            {
+              "en": "I flinched because the stethoscope felt cold on my back.",
+              "pl": "Wzdrygnąłem się, bo stetoskop był zimny na plecach.",
+              "focusEn": "stethoscope",
+              "focusPl": "stetoskop"
+            }
+          ],
+          "acceptedAnswers": [
+            "stethoscope"
+          ],
+          "acceptedTranslations": [
+            "stetoskop",
+            "słuchawki lekarskie"
+          ]
+        },
+        {
+          "id": "doctor-visit.reflex",
+          "term": "reflex",
+          "ipa": "/ˈriːfleks/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "odruch",
+          "definition": "An automatic movement your body makes, like your leg kicking when tapped.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie odruchów młoteczkiem",
+          "natural": "",
+          "forms": "reflexes",
+          "collocations": "test your reflexes; knee reflex",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The doctor tapped my knee with a small hammer to test my reflexes.",
+              "pl": "Lekarz stuknął mnie w kolano małym młoteczkiem, żeby sprawdzić moje odruchy.",
+              "focusEn": "reflexes",
+              "focusPl": "odruchy"
+            },
+            {
+              "en": "Your reflexes look normal, so I'm not worried about nerve damage.",
+              "pl": "Pana odruchy wyglądają prawidłowo, więc nie martwię się uszkodzeniem nerwów.",
+              "focusEn": "reflexes",
+              "focusPl": "odruchy"
+            }
+          ],
+          "acceptedAnswers": [
+            "reflex"
+          ],
+          "acceptedTranslations": [
+            "odruch",
+            "odruchy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doctor-visit.tests-results",
+      "namePl": "Badania i wyniki",
+      "scenePl": "Lekarz zleca badania, a potem omawia wyniki z pacjentem",
+      "entries": [
+        {
+          "id": "doctor-visit.test",
+          "term": "test",
+          "ipa": "/test/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "badanie",
+          "definition": "A medical check to find out more about your health.",
+          "register": "neutralny",
+          "contextPl": "Zlecanie badań",
+          "natural": "",
+          "forms": "tests",
+          "collocations": "run some tests; order a test; medical test",
+          "synonyms": "exam",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to run a few tests, just to be safe.",
+              "pl": "Chciałbym zlecić kilka badań, tak dla pewności.",
+              "focusEn": "tests",
+              "focusPl": "badań"
+            },
+            {
+              "en": "The test only takes a few minutes, and you'll get the results by Friday.",
+              "pl": "Badanie zajmuje tylko kilka minut, a wyniki dostanie pan do piątku.",
+              "focusEn": "test",
+              "focusPl": "Badanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "test"
+          ],
+          "acceptedTranslations": [
+            "badanie",
+            "test"
+          ]
+        },
+        {
+          "id": "doctor-visit.result",
+          "term": "result",
+          "ipa": "/rɪˈzʌlt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wynik",
+          "definition": "Information that a medical test gives about your health.",
+          "register": "neutralny",
+          "contextPl": "Odbieranie i omawianie wyników",
+          "natural": "",
+          "forms": "results",
+          "collocations": "test results; get your results; results come back",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zwykle w liczbie mnogiej: „my results”.",
+          "examples": [
+            {
+              "en": "I'll call you as soon as we get the results from the lab.",
+              "pl": "Zadzwonię do pana, gdy tylko dostaniemy wyniki z laboratorium.",
+              "focusEn": "results",
+              "focusPl": "wyniki"
+            },
+            {
+              "en": "The doctor went through my results line by line.",
+              "pl": "Lekarz omówił moje wyniki punkt po punkcie.",
+              "focusEn": "results",
+              "focusPl": "wyniki"
+            }
+          ],
+          "acceptedAnswers": [
+            "result",
+            "results",
+            "test results"
+          ],
+          "acceptedTranslations": [
+            "wynik",
+            "wyniki"
+          ]
+        },
+        {
+          "id": "doctor-visit.blood-test",
+          "term": "blood test",
+          "ipa": "/ˈblʌd ˌtest/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "badanie krwi",
+          "definition": "A test that checks a small amount of your blood.",
+          "register": "neutralny",
+          "contextPl": "Najczęściej zlecane badanie",
+          "natural": "",
+          "forms": "blood tests",
+          "collocations": "have a blood test; order a blood test",
+          "synonyms": "blood work",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You'll need a blood test, so please don't eat anything after midnight.",
+              "pl": "Będzie pan potrzebował badania krwi, więc proszę nic nie jeść po północy.",
+              "focusEn": "blood test",
+              "focusPl": "badania krwi"
+            },
+            {
+              "en": "My blood test showed that my iron was a little low.",
+              "pl": "Badanie krwi wykazało, że mam trochę za niski poziom żelaza.",
+              "focusEn": "blood test",
+              "focusPl": "Badanie krwi"
+            }
+          ],
+          "acceptedAnswers": [
+            "blood test",
+            "blood work"
+          ],
+          "acceptedTranslations": [
+            "badanie krwi",
+            "morfologia",
+            "badania krwi"
+          ]
+        },
+        {
+          "id": "doctor-visit.normal",
+          "term": "normal",
+          "ipa": "/ˈnɔːrməl/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "w normie",
+          "definition": "Within the usual healthy range.",
+          "register": "neutralny",
+          "contextPl": "Omawianie dobrych wyników",
+          "natural": "",
+          "forms": "",
+          "collocations": "come back normal; perfectly normal",
+          "synonyms": "fine; within normal limits",
+          "antonyms": "abnormal",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Everything on your lab report looks normal.",
+              "pl": "Wszystko w pana wynikach z laboratorium jest w normie.",
+              "focusEn": "normal",
+              "focusPl": "w normie"
+            },
+            {
+              "en": "My heart rate was normal, so the doctor wasn't worried.",
+              "pl": "Tętno miałem w normie, więc lekarz się nie martwił.",
+              "focusEn": "normal",
+              "focusPl": "w normie"
+            }
+          ],
+          "acceptedAnswers": [
+            "normal",
+            "fine"
+          ],
+          "acceptedTranslations": [
+            "w normie",
+            "prawidłowy",
+            "normalny",
+            "w porządku"
+          ]
+        },
+        {
+          "id": "doctor-visit.lab",
+          "term": "lab",
+          "ipa": "/læb/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "laboratorium",
+          "definition": "A place where blood and other samples are tested.",
+          "register": "neutralny",
+          "contextPl": "Miejsce pobrań i analiz",
+          "natural": "",
+          "forms": "labs",
+          "collocations": "lab work; send to the lab; lab results",
+          "synonyms": "laboratory",
+          "antonyms": "",
+          "notePl": "Potocznie zawsze „lab”, pełna forma „laboratory” jest rzadsza w mowie.",
+          "examples": [
+            {
+              "en": "Take this form to the lab on the second floor.",
+              "pl": "Proszę zanieść ten formularz do laboratorium na drugim piętrze.",
+              "focusEn": "lab",
+              "focusPl": "laboratorium"
+            },
+            {
+              "en": "I went to the lab early in the morning to have my blood drawn.",
+              "pl": "Poszedłem wcześnie rano do laboratorium, żeby pobrali mi krew.",
+              "focusEn": "lab",
+              "focusPl": "laboratorium"
+            }
+          ],
+          "acceptedAnswers": [
+            "lab",
+            "laboratory"
+          ],
+          "acceptedTranslations": [
+            "laboratorium",
+            "punkt pobrań"
+          ]
+        },
+        {
+          "id": "doctor-visit.sample",
+          "term": "sample",
+          "ipa": "/ˈsæmpəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "próbka",
+          "definition": "A small amount of blood, urine or tissue taken for testing.",
+          "register": "neutralny",
+          "contextPl": "Oddawanie materiału do badania",
+          "natural": "",
+          "forms": "samples",
+          "collocations": "urine sample; blood sample; give a sample",
+          "synonyms": "specimen",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll need a urine sample before you leave today.",
+              "pl": "Przed wyjściem będziemy potrzebowali próbki moczu.",
+              "focusEn": "sample",
+              "focusPl": "próbki"
+            },
+            {
+              "en": "The nurse labeled my sample and put it in a small bag.",
+              "pl": "Pielęgniarka podpisała moją próbkę i włożyła ją do małej torebki.",
+              "focusEn": "sample",
+              "focusPl": "próbkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "sample",
+            "specimen"
+          ],
+          "acceptedTranslations": [
+            "próbka",
+            "materiał do badania"
+          ]
+        },
+        {
+          "id": "doctor-visit.draw-blood",
+          "term": "draw blood",
+          "ipa": "/ˌdrɔː ˈblʌd/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pobrać krew",
+          "definition": "To take blood from someone's vein with a needle.",
+          "register": "neutralny",
+          "contextPl": "Pobranie krwi do badania",
+          "natural": "",
+          "forms": "draw – drew – drawn",
+          "collocations": "have your blood drawn",
+          "synonyms": "take blood",
+          "antonyms": "",
+          "notePl": "„Have my blood drawn” = mieć pobieraną krew.",
+          "examples": [
+            {
+              "en": "The nurse will draw blood from your arm; it's just a quick pinch.",
+              "pl": "Pielęgniarka pobierze krew z ręki; to tylko szybkie ukłucie.",
+              "focusEn": "draw blood",
+              "focusPl": "pobierze krew"
+            },
+            {
+              "en": "I always look away when they draw blood.",
+              "pl": "Zawsze odwracam wzrok, kiedy pobierają krew.",
+              "focusEn": "draw blood",
+              "focusPl": "pobierają krew"
+            }
+          ],
+          "acceptedAnswers": [
+            "draw blood",
+            "take blood"
+          ],
+          "acceptedTranslations": [
+            "pobrać krew",
+            "pobierać krew"
+          ]
+        },
+        {
+          "id": "doctor-visit.x-ray",
+          "term": "x-ray",
+          "ipa": "/ˈeks reɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "prześwietlenie",
+          "definition": "A picture of the inside of your body, especially your bones.",
+          "register": "neutralny",
+          "contextPl": "Badanie kości i płuc",
+          "natural": "",
+          "forms": "x-rays",
+          "collocations": "get an x-ray; chest x-ray",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisane także „X-ray”.",
+          "examples": [
+            {
+              "en": "We should get an x-ray to make sure your wrist isn't broken.",
+              "pl": "Powinniśmy zrobić prześwietlenie, żeby upewnić się, że nadgarstek nie jest złamany.",
+              "focusEn": "x-ray",
+              "focusPl": "prześwietlenie"
+            },
+            {
+              "en": "The doctor showed me the x-ray on her computer screen.",
+              "pl": "Lekarka pokazała mi zdjęcie rentgenowskie na ekranie komputera.",
+              "focusEn": "x-ray",
+              "focusPl": "zdjęcie rentgenowskie"
+            }
+          ],
+          "acceptedAnswers": [
+            "x-ray",
+            "xray"
+          ],
+          "acceptedTranslations": [
+            "prześwietlenie",
+            "rentgen",
+            "zdjęcie rentgenowskie",
+            "RTG"
+          ]
+        },
+        {
+          "id": "doctor-visit.specialist",
+          "term": "specialist",
+          "ipa": "/ˈspeʃəlɪst/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "specjalista",
+          "definition": "A doctor who knows a lot about one area of medicine.",
+          "register": "neutralny",
+          "contextPl": "Kierowanie do lekarza specjalisty",
+          "natural": "",
+          "forms": "specialists",
+          "collocations": "see a specialist; heart specialist",
+          "synonyms": "",
+          "antonyms": "primary care doctor",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The specialist can probably see you within two weeks.",
+              "pl": "Specjalista prawdopodobnie przyjmie pana w ciągu dwóch tygodni.",
+              "focusEn": "specialist",
+              "focusPl": "Specjalista"
+            },
+            {
+              "en": "If the rash doesn't clear up, I'll send you to a skin specialist.",
+              "pl": "Jeśli wysypka nie zniknie, wyślę pana do specjalisty od chorób skóry.",
+              "focusEn": "specialist",
+              "focusPl": "specjalisty"
+            }
+          ],
+          "acceptedAnswers": [
+            "specialist"
+          ],
+          "acceptedTranslations": [
+            "specjalista",
+            "lekarz specjalista"
+          ]
+        },
+        {
+          "id": "doctor-visit.positive",
+          "term": "positive",
+          "ipa": "/ˈpɑːzətɪv/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dodatni",
+          "definition": "Showing that a disease or substance is present.",
+          "register": "neutralny",
+          "contextPl": "Wynik testu potwierdzający chorobę",
+          "natural": "",
+          "forms": "",
+          "collocations": "test positive; come back positive",
+          "synonyms": "",
+          "antonyms": "negative",
+          "notePl": "Uwaga: „positive” w medycynie to zwykle zła wiadomość.",
+          "examples": [
+            {
+              "en": "My strep test came back positive, so I need antibiotics.",
+              "pl": "Test na anginę wyszedł dodatni, więc potrzebuję antybiotyku.",
+              "focusEn": "positive",
+              "focusPl": "dodatni"
+            },
+            {
+              "en": "If the test is positive, we'll start treatment right away.",
+              "pl": "Jeśli wynik będzie dodatni, od razu zaczniemy leczenie.",
+              "focusEn": "positive",
+              "focusPl": "dodatni"
+            }
+          ],
+          "acceptedAnswers": [
+            "positive"
+          ],
+          "acceptedTranslations": [
+            "dodatni",
+            "pozytywny"
+          ]
+        },
+        {
+          "id": "doctor-visit.negative",
+          "term": "negative",
+          "ipa": "/ˈneɡətɪv/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ujemny",
+          "definition": "Showing that a disease or substance is not present.",
+          "register": "neutralny",
+          "contextPl": "Wynik testu wykluczający chorobę",
+          "natural": "",
+          "forms": "",
+          "collocations": "test negative; come back negative",
+          "synonyms": "",
+          "antonyms": "positive",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The flu test was negative, so it's probably just a cold.",
+              "pl": "Test na grypę był ujemny, więc to pewnie zwykłe przeziębienie.",
+              "focusEn": "negative",
+              "focusPl": "ujemny"
+            },
+            {
+              "en": "I was relieved when all my results came back negative.",
+              "pl": "Odetchnąłem z ulgą, gdy wszystkie wyniki wyszły ujemne.",
+              "focusEn": "negative",
+              "focusPl": "ujemne"
+            }
+          ],
+          "acceptedAnswers": [
+            "negative"
+          ],
+          "acceptedTranslations": [
+            "ujemny",
+            "negatywny"
+          ]
+        },
+        {
+          "id": "doctor-visit.diagnosis",
+          "term": "diagnosis",
+          "ipa": "/ˌdaɪəɡˈnoʊsɪs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "diagnoza",
+          "definition": "The doctor's decision about what illness you have.",
+          "register": "neutralny",
+          "contextPl": "Stwierdzenie choroby po badaniach",
+          "natural": "",
+          "forms": "diagnoses",
+          "collocations": "make a diagnosis; get a diagnosis",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The doctor explained the diagnosis in simple words.",
+              "pl": "Lekarz wyjaśnił diagnozę prostymi słowami.",
+              "focusEn": "diagnosis",
+              "focusPl": "diagnozę"
+            },
+            {
+              "en": "We can't make a diagnosis until the test results come back.",
+              "pl": "Nie możemy postawić diagnozy, dopóki nie przyjdą wyniki badań.",
+              "focusEn": "diagnosis",
+              "focusPl": "diagnozy"
+            }
+          ],
+          "acceptedAnswers": [
+            "diagnosis"
+          ],
+          "acceptedTranslations": [
+            "diagnoza",
+            "rozpoznanie"
+          ]
+        },
+        {
+          "id": "doctor-visit.diagnose",
+          "term": "diagnose",
+          "ipa": "/ˌdaɪəɡˈnoʊs/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zdiagnozować",
+          "definition": "To find out what illness someone has.",
+          "register": "neutralny",
+          "contextPl": "Rozpoznanie choroby",
+          "natural": "",
+          "forms": "diagnosed",
+          "collocations": "diagnose someone with; be diagnosed with",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Konstrukcja: „diagnose someone with something”.",
+          "examples": [
+            {
+              "en": "She diagnosed me with a sinus infection.",
+              "pl": "Zdiagnozowała u mnie zapalenie zatok.",
+              "focusEn": "diagnosed",
+              "focusPl": "Zdiagnozowała"
+            },
+            {
+              "en": "It's hard to diagnose this without an x-ray.",
+              "pl": "Trudno to zdiagnozować bez prześwietlenia.",
+              "focusEn": "diagnose",
+              "focusPl": "zdiagnozować"
+            }
+          ],
+          "acceptedAnswers": [
+            "diagnose"
+          ],
+          "acceptedTranslations": [
+            "zdiagnozować",
+            "diagnozować",
+            "rozpoznać",
+            "stwierdzić"
+          ]
+        },
+        {
+          "id": "doctor-visit.referral",
+          "term": "referral",
+          "ipa": "/rɪˈfɜːrəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skierowanie",
+          "definition": "A note from your doctor that sends you to another doctor or test.",
+          "register": "neutralny",
+          "contextPl": "Skierowanie do specjalisty lub na badanie",
+          "natural": "",
+          "forms": "referrals",
+          "collocations": "get a referral; need a referral",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You'll need a referral to see a specialist.",
+              "pl": "Będzie pan potrzebował skierowania do specjalisty.",
+              "focusEn": "referral",
+              "focusPl": "skierowania"
+            },
+            {
+              "en": "My doctor sent the referral to the dermatologist's office electronically.",
+              "pl": "Mój lekarz wysłał skierowanie do gabinetu dermatologa elektronicznie.",
+              "focusEn": "referral",
+              "focusPl": "skierowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "referral"
+          ],
+          "acceptedTranslations": [
+            "skierowanie"
+          ]
+        },
+        {
+          "id": "doctor-visit.refer",
+          "term": "refer",
+          "ipa": "/rɪˈfɜːr/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skierować",
+          "definition": "To send a patient to another doctor or service.",
+          "register": "neutralny",
+          "contextPl": "Kierowanie pacjenta dalej",
+          "natural": "",
+          "forms": "referred; referring",
+          "collocations": "refer someone to a specialist",
+          "synonyms": "send",
+          "antonyms": "",
+          "notePl": "Konstrukcja: „refer someone to…”.",
+          "examples": [
+            {
+              "en": "I'm going to refer you to a heart specialist.",
+              "pl": "Skieruję pana do kardiologa.",
+              "focusEn": "refer",
+              "focusPl": "Skieruję"
+            },
+            {
+              "en": "My doctor referred me to physical therapy for my shoulder.",
+              "pl": "Lekarz skierował mnie na fizjoterapię barku.",
+              "focusEn": "referred",
+              "focusPl": "skierował"
+            }
+          ],
+          "acceptedAnswers": [
+            "refer",
+            "send"
+          ],
+          "acceptedTranslations": [
+            "skierować",
+            "kierować",
+            "odesłać"
+          ]
+        },
+        {
+          "id": "doctor-visit.rule-out",
+          "term": "rule out",
+          "ipa": "/ˌruːl ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wykluczyć",
+          "definition": "To decide that something is not the cause or not possible.",
+          "register": "neutralny",
+          "contextPl": "Wykluczanie poważnych chorób",
+          "natural": "",
+          "forms": "ruled out",
+          "collocations": "rule out an infection; rule out a fracture",
+          "synonyms": "exclude",
+          "antonyms": "confirm",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need a few more tests to rule out anything serious.",
+              "pl": "Potrzebujemy jeszcze kilku badań, żeby wykluczyć coś poważnego.",
+              "focusEn": "rule out",
+              "focusPl": "wykluczyć"
+            },
+            {
+              "en": "The x-ray ruled out a broken bone.",
+              "pl": "Prześwietlenie wykluczyło złamanie.",
+              "focusEn": "ruled out",
+              "focusPl": "wykluczyło"
+            }
+          ],
+          "acceptedAnswers": [
+            "rule out",
+            "exclude"
+          ],
+          "acceptedTranslations": [
+            "wykluczyć",
+            "wykluczać"
+          ]
+        },
+        {
+          "id": "doctor-visit.ultrasound",
+          "term": "ultrasound",
+          "ipa": "/ˈʌltrəsaʊnd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "USG",
+          "definition": "A test that uses sound waves to show pictures of the inside of your body.",
+          "register": "neutralny",
+          "contextPl": "Badanie obrazowe narządów",
+          "natural": "",
+          "forms": "ultrasounds",
+          "collocations": "get an ultrasound; ultrasound scan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She ordered an ultrasound to get a better look at my kidneys.",
+              "pl": "Zleciła USG, żeby lepiej obejrzeć moje nerki.",
+              "focusEn": "ultrasound",
+              "focusPl": "USG"
+            },
+            {
+              "en": "The ultrasound gel was cold, but the scan didn't hurt at all.",
+              "pl": "Żel do USG był zimny, ale badanie w ogóle nie bolało.",
+              "focusEn": "ultrasound",
+              "focusPl": "USG"
+            }
+          ],
+          "acceptedAnswers": [
+            "ultrasound",
+            "ultrasound scan"
+          ],
+          "acceptedTranslations": [
+            "USG",
+            "ultrasonografia",
+            "badanie USG"
+          ]
+        },
+        {
+          "id": "doctor-visit.cholesterol",
+          "term": "cholesterol",
+          "ipa": "/kəˈlestərɔːl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "cholesterol",
+          "definition": "A fatty substance in your blood that can cause heart problems if too high.",
+          "register": "neutralny",
+          "contextPl": "Omawianie wyników krwi",
+          "natural": "",
+          "forms": "",
+          "collocations": "high cholesterol; check your cholesterol",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your cholesterol is a bit high, so let's talk about your diet.",
+              "pl": "Ma pan trochę wysoki cholesterol, więc porozmawiajmy o diecie.",
+              "focusEn": "cholesterol",
+              "focusPl": "cholesterol"
+            },
+            {
+              "en": "They checked my cholesterol as part of the blood test.",
+              "pl": "W ramach badania krwi sprawdzili mi cholesterol.",
+              "focusEn": "cholesterol",
+              "focusPl": "cholesterol"
+            }
+          ],
+          "acceptedAnswers": [
+            "cholesterol"
+          ],
+          "acceptedTranslations": [
+            "cholesterol"
+          ]
+        },
+        {
+          "id": "doctor-visit.follow-up",
+          "term": "follow-up",
+          "ipa": "/ˈfɑːloʊ ʌp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wizyta kontrolna",
+          "definition": "A later visit to check how you are doing after treatment.",
+          "register": "neutralny",
+          "contextPl": "Umawianie kolejnej wizyty po badaniach",
+          "natural": "",
+          "forms": "follow-ups",
+          "collocations": "follow-up appointment; follow-up visit; schedule a follow-up",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's schedule a follow-up in two weeks to see how you're doing.",
+              "pl": "Umówmy wizytę kontrolną za dwa tygodnie, żeby sprawdzić, jak się pan czuje.",
+              "focusEn": "follow-up",
+              "focusPl": "wizytę kontrolną"
+            },
+            {
+              "en": "At my follow-up, the doctor said the infection was gone.",
+              "pl": "Na wizycie kontrolnej lekarz powiedział, że infekcja minęła.",
+              "focusEn": "follow-up",
+              "focusPl": "wizycie kontrolnej"
+            }
+          ],
+          "acceptedAnswers": [
+            "follow-up",
+            "follow-up appointment",
+            "follow-up visit"
+          ],
+          "acceptedTranslations": [
+            "wizyta kontrolna",
+            "kontrola",
+            "wizyta kontrolna po leczeniu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doctor-visit.treatment",
+      "namePl": "Leczenie i recepta",
+      "scenePl": "Koniec wizyty: lekarz przepisuje leki i wyjaśnia zalecenia",
+      "entries": [
+        {
+          "id": "doctor-visit.prescription",
+          "term": "prescription",
+          "ipa": "/prɪˈskrɪpʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "recepta",
+          "definition": "A doctor's order for medicine.",
+          "register": "neutralny",
+          "contextPl": "Wypisywanie i wysyłanie recepty",
+          "natural": "",
+          "forms": "prescriptions",
+          "collocations": "write a prescription; fill a prescription; prescription for",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA receptę zwykle wysyła się elektronicznie prosto do wybranej apteki.",
+          "examples": [
+            {
+              "en": "I'll send the prescription to your pharmacy right now.",
+              "pl": "Od razu wyślę receptę do pana apteki.",
+              "focusEn": "prescription",
+              "focusPl": "receptę"
+            },
+            {
+              "en": "Do you need a new prescription for your allergy medicine?",
+              "pl": "Czy potrzebuje pan nowej recepty na lek na alergię?",
+              "focusEn": "prescription",
+              "focusPl": "recepty"
+            }
+          ],
+          "acceptedAnswers": [
+            "prescription",
+            "script"
+          ],
+          "acceptedTranslations": [
+            "recepta"
+          ]
+        },
+        {
+          "id": "doctor-visit.medicine",
+          "term": "medicine",
+          "ipa": "/ˈmedɪsən/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "lek",
+          "definition": "Something you take to treat an illness or pain.",
+          "register": "neutralny",
+          "contextPl": "Przyjmowanie leków",
+          "natural": "",
+          "forms": "medicines",
+          "collocations": "take medicine; cold medicine; medicine for",
+          "synonyms": "medication; drug",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Take this medicine twice a day with food.",
+              "pl": "Proszę brać ten lek dwa razy dziennie z jedzeniem.",
+              "focusEn": "medicine",
+              "focusPl": "lek"
+            },
+            {
+              "en": "This medicine might make you a little sleepy.",
+              "pl": "Ten lek może powodować lekką senność.",
+              "focusEn": "medicine",
+              "focusPl": "lek"
+            }
+          ],
+          "acceptedAnswers": [
+            "medicine",
+            "medication"
+          ],
+          "acceptedTranslations": [
+            "lek",
+            "lekarstwo",
+            "leki"
+          ]
+        },
+        {
+          "id": "doctor-visit.medication",
+          "term": "medication",
+          "ipa": "/ˌmedɪˈkeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "leki",
+          "definition": "Medicine that a person takes regularly, especially prescribed by a doctor.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o przyjmowane leki",
+          "natural": "",
+          "forms": "medications",
+          "collocations": "take medication; blood pressure medication; current medications",
+          "synonyms": "medicine",
+          "antonyms": "",
+          "notePl": "Słowo częstsze niż „medicine” w rozmowie z lekarzem w USA.",
+          "examples": [
+            {
+              "en": "What medications are you currently taking?",
+              "pl": "Jakie leki obecnie pan przyjmuje?",
+              "focusEn": "medications",
+              "focusPl": "leki"
+            },
+            {
+              "en": "I'd like to adjust your blood pressure medication.",
+              "pl": "Chciałbym zmodyfikować pana leki na ciśnienie.",
+              "focusEn": "medication",
+              "focusPl": "leki"
+            }
+          ],
+          "acceptedAnswers": [
+            "medication",
+            "medicine"
+          ],
+          "acceptedTranslations": [
+            "leki",
+            "lek",
+            "lekarstwa",
+            "farmakoterapia"
+          ]
+        },
+        {
+          "id": "doctor-visit.prescribe",
+          "term": "prescribe",
+          "ipa": "/prɪˈskraɪb/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przepisać",
+          "definition": "To officially tell someone to take a medicine.",
+          "register": "neutralny",
+          "contextPl": "Lekarz zapisuje lek",
+          "natural": "",
+          "forms": "prescribed",
+          "collocations": "prescribe antibiotics; prescribe something for",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The doctor prescribed antibiotics for ten days.",
+              "pl": "Lekarz przepisał antybiotyk na dziesięć dni.",
+              "focusEn": "prescribed",
+              "focusPl": "przepisał"
+            },
+            {
+              "en": "I can prescribe something stronger if this doesn't help.",
+              "pl": "Mogę przepisać coś silniejszego, jeśli to nie pomoże.",
+              "focusEn": "prescribe",
+              "focusPl": "przepisać"
+            }
+          ],
+          "acceptedAnswers": [
+            "prescribe"
+          ],
+          "acceptedTranslations": [
+            "przepisać",
+            "przepisywać",
+            "zapisać",
+            "zapisywać"
+          ]
+        },
+        {
+          "id": "doctor-visit.antibiotic",
+          "term": "antibiotic",
+          "ipa": "/ˌæntibaɪˈɑːtɪk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "antybiotyk",
+          "definition": "A medicine that kills bacteria and treats infections.",
+          "register": "neutralny",
+          "contextPl": "Leczenie zakażeń bakteryjnych",
+          "natural": "",
+          "forms": "antibiotics",
+          "collocations": "take antibiotics; a course of antibiotics",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Antybiotyki nie działają na wirusy, np. przeziębienie.",
+          "examples": [
+            {
+              "en": "Make sure you finish all the antibiotics, even if you feel better.",
+              "pl": "Proszę dokończyć cały antybiotyk, nawet jeśli poczuje się pan lepiej.",
+              "focusEn": "antibiotics",
+              "focusPl": "antybiotyk"
+            },
+            {
+              "en": "It's a virus, so antibiotics won't help this time.",
+              "pl": "To wirus, więc tym razem antybiotyki nie pomogą.",
+              "focusEn": "antibiotics",
+              "focusPl": "antybiotyki"
+            }
+          ],
+          "acceptedAnswers": [
+            "antibiotic",
+            "antibiotics"
+          ],
+          "acceptedTranslations": [
+            "antybiotyk",
+            "antybiotyki"
+          ]
+        },
+        {
+          "id": "doctor-visit.treatment",
+          "term": "treatment",
+          "ipa": "/ˈtriːtmənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "leczenie",
+          "definition": "The care or medicine used to cure an illness or injury.",
+          "register": "neutralny",
+          "contextPl": "Plan leczenia",
+          "natural": "",
+          "forms": "treatments",
+          "collocations": "start treatment; treatment options",
+          "synonyms": "therapy",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The treatment usually takes about two weeks.",
+              "pl": "Leczenie trwa zwykle około dwóch tygodni.",
+              "focusEn": "treatment",
+              "focusPl": "Leczenie"
+            },
+            {
+              "en": "We talked about different treatment options for my back.",
+              "pl": "Rozmawialiśmy o różnych możliwościach leczenia pleców.",
+              "focusEn": "treatment",
+              "focusPl": "leczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "treatment",
+            "therapy"
+          ],
+          "acceptedTranslations": [
+            "leczenie",
+            "terapia"
+          ]
+        },
+        {
+          "id": "doctor-visit.treat",
+          "term": "treat",
+          "ipa": "/triːt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "leczyć",
+          "definition": "To give medical care to make someone better.",
+          "register": "neutralny",
+          "contextPl": "Sposób leczenia dolegliwości",
+          "natural": "",
+          "forms": "treated",
+          "collocations": "treat an infection; easy to treat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We can treat this with rest and ice.",
+              "pl": "Możemy to leczyć odpoczynkiem i lodem.",
+              "focusEn": "treat",
+              "focusPl": "leczyć"
+            },
+            {
+              "en": "The doctor said it's easy to treat if you catch it early.",
+              "pl": "Lekarz powiedział, że łatwo to wyleczyć, jeśli wcześnie się to wykryje.",
+              "focusEn": "treat",
+              "focusPl": "wyleczyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "treat"
+          ],
+          "acceptedTranslations": [
+            "leczyć",
+            "wyleczyć"
+          ]
+        },
+        {
+          "id": "doctor-visit.rest",
+          "term": "rest",
+          "ipa": "/rest/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odpoczynek",
+          "definition": "Time when you relax or sleep to get better.",
+          "register": "neutralny",
+          "contextPl": "Zalecenie odpoczynku",
+          "natural": "",
+          "forms": "",
+          "collocations": "get some rest; plenty of rest; bed rest",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What you really need is a few days of rest.",
+              "pl": "Tak naprawdę potrzebuje pan kilku dni odpoczynku.",
+              "focusEn": "rest",
+              "focusPl": "odpoczynku"
+            },
+            {
+              "en": "She told me to get plenty of rest and drink lots of water.",
+              "pl": "Zaleciła mi dużo odpoczynku i picie dużej ilości wody.",
+              "focusEn": "rest",
+              "focusPl": "odpoczynku"
+            }
+          ],
+          "acceptedAnswers": [
+            "rest"
+          ],
+          "acceptedTranslations": [
+            "odpoczynek",
+            "wypoczynek"
+          ]
+        },
+        {
+          "id": "doctor-visit.get-better",
+          "term": "get better",
+          "ipa": "/ˌɡet ˈbetər/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "poczuć się lepiej",
+          "definition": "To become healthy again after being sick.",
+          "register": "neutralny",
+          "contextPl": "Rokowanie po wizycie",
+          "natural": "",
+          "forms": "get – got – gotten",
+          "collocations": "get better soon; start to get better",
+          "synonyms": "improve; recover",
+          "antonyms": "get worse",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You should start to get better in a couple of days.",
+              "pl": "Powinien pan zacząć czuć się lepiej za kilka dni.",
+              "focusEn": "get better",
+              "focusPl": "czuć się lepiej"
+            },
+            {
+              "en": "If you don't get better by Monday, call the office.",
+              "pl": "Jeśli do poniedziałku nie poczuje się pan lepiej, proszę zadzwonić do gabinetu.",
+              "focusEn": "get better",
+              "focusPl": "poczuje się pan lepiej"
+            }
+          ],
+          "acceptedAnswers": [
+            "get better",
+            "improve",
+            "feel better"
+          ],
+          "acceptedTranslations": [
+            "poczuć się lepiej",
+            "czuć się lepiej",
+            "wyzdrowieć",
+            "zdrowieć",
+            "poprawić się"
+          ]
+        },
+        {
+          "id": "doctor-visit.recover",
+          "term": "recover",
+          "ipa": "/rɪˈkʌvər/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wyzdrowieć",
+          "definition": "To become healthy again after an illness or injury.",
+          "register": "neutralny",
+          "contextPl": "Czas powrotu do zdrowia",
+          "natural": "",
+          "forms": "recovered",
+          "collocations": "recover from; fully recover; recover quickly",
+          "synonyms": "get better",
+          "antonyms": "",
+          "notePl": "Konstrukcja: „recover from something”.",
+          "examples": [
+            {
+              "en": "Most people recover from this in about a week.",
+              "pl": "Większość ludzi wraca do zdrowia w ciągu mniej więcej tygodnia.",
+              "focusEn": "recover",
+              "focusPl": "wraca do zdrowia"
+            },
+            {
+              "en": "How long will it take before I fully recover?",
+              "pl": "Ile to potrwa, zanim całkowicie wyzdrowieję?",
+              "focusEn": "recover",
+              "focusPl": "wyzdrowieję"
+            }
+          ],
+          "acceptedAnswers": [
+            "recover",
+            "get better"
+          ],
+          "acceptedTranslations": [
+            "wyzdrowieć",
+            "zdrowieć",
+            "wrócić do zdrowia",
+            "wracać do zdrowia"
+          ]
+        },
+        {
+          "id": "doctor-visit.side-effect",
+          "term": "side effect",
+          "ipa": "/ˈsaɪd ɪˌfekt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skutek uboczny",
+          "definition": "An unwanted extra effect of a medicine.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia o działaniu leku",
+          "natural": "",
+          "forms": "side effects",
+          "collocations": "possible side effects; have side effects",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The most common side effect is a mild headache.",
+              "pl": "Najczęstszym skutkiem ubocznym jest lekki ból głowy.",
+              "focusEn": "side effect",
+              "focusPl": "skutkiem ubocznym"
+            },
+            {
+              "en": "Call me if you notice any side effects, like a rash.",
+              "pl": "Proszę zadzwonić, jeśli zauważy pan jakieś skutki uboczne, na przykład wysypkę.",
+              "focusEn": "side effects",
+              "focusPl": "skutki uboczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "side effect"
+          ],
+          "acceptedTranslations": [
+            "skutek uboczny",
+            "skutki uboczne",
+            "działanie niepożądane",
+            "efekt uboczny"
+          ]
+        },
+        {
+          "id": "doctor-visit.doctors-note",
+          "term": "doctor's note",
+          "ipa": "/ˈdɑːktərz ˌnoʊt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zaświadczenie lekarskie",
+          "definition": "A short letter from a doctor saying you were sick, for work or school.",
+          "register": "neutralny",
+          "contextPl": "Usprawiedliwienie nieobecności",
+          "natural": "",
+          "forms": "doctor's notes",
+          "collocations": "get a doctor's note; doctor's note for work",
+          "synonyms": "sick note",
+          "antonyms": "",
+          "notePl": "W USA to zwykle krótkie zaświadczenie dla pracodawcy lub szkoły, nie formalne L4.",
+          "examples": [
+            {
+              "en": "Could I get a doctor's note for work?",
+              "pl": "Czy mógłbym dostać zaświadczenie lekarskie do pracy?",
+              "focusEn": "doctor's note",
+              "focusPl": "zaświadczenie lekarskie"
+            },
+            {
+              "en": "The doctor's note says I should stay home until Thursday.",
+              "pl": "W zaświadczeniu lekarskim jest napisane, że powinienem zostać w domu do czwartku.",
+              "focusEn": "doctor's note",
+              "focusPl": "zaświadczeniu lekarskim"
+            }
+          ],
+          "acceptedAnswers": [
+            "doctor's note",
+            "sick note"
+          ],
+          "acceptedTranslations": [
+            "zaświadczenie lekarskie",
+            "zwolnienie lekarskie",
+            "zwolnienie",
+            "zaświadczenie"
+          ]
+        },
+        {
+          "id": "doctor-visit.avoid",
+          "term": "avoid",
+          "ipa": "/əˈvɔɪd/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "unikać",
+          "definition": "To stay away from something or not do it.",
+          "register": "neutralny",
+          "contextPl": "Zalecenia, czego nie robić",
+          "natural": "",
+          "forms": "avoided",
+          "collocations": "avoid heavy lifting; avoid alcohol",
+          "synonyms": "stay away from",
+          "antonyms": "",
+          "notePl": "Po „avoid” używamy formy -ing: avoid lifting.",
+          "examples": [
+            {
+              "en": "Try to avoid heavy lifting for the next two weeks.",
+              "pl": "Proszę unikać dźwigania ciężarów przez najbliższe dwa tygodnie.",
+              "focusEn": "avoid",
+              "focusPl": "unikać"
+            },
+            {
+              "en": "She told me to avoid coffee until my stomach settles down.",
+              "pl": "Powiedziała, żebym unikał kawy, dopóki żołądek się nie uspokoi.",
+              "focusEn": "avoid",
+              "focusPl": "unikał"
+            }
+          ],
+          "acceptedAnswers": [
+            "avoid",
+            "stay away from"
+          ],
+          "acceptedTranslations": [
+            "unikać",
+            "uniknąć",
+            "wystrzegać się"
+          ]
+        },
+        {
+          "id": "doctor-visit.refill",
+          "term": "refill",
+          "ipa": "/ˈriːfɪl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ponowienie recepty",
+          "definition": "Permission to get more of the same prescribed medicine again.",
+          "register": "neutralny",
+          "contextPl": "Kolejne opakowanie leku na tę samą receptę",
+          "natural": "",
+          "forms": "refills",
+          "collocations": "get a refill; prescription refill; no refills left",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA jedna recepta może pozwalać na kilka „refills”, czyli kolejnych wykupień leku.",
+          "examples": [
+            {
+              "en": "I'm calling to ask for a refill of my allergy pills.",
+              "pl": "Dzwonię z prośbą o ponowienie recepty na tabletki na alergię.",
+              "focusEn": "refill",
+              "focusPl": "ponowienie recepty"
+            },
+            {
+              "en": "The doctor added two refills, so I won't need to come back soon.",
+              "pl": "Lekarz dodał dwa ponowienia, więc nie będę musiał szybko wracać.",
+              "focusEn": "refills",
+              "focusPl": "ponowienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "refill",
+            "prescription refill"
+          ],
+          "acceptedTranslations": [
+            "ponowienie recepty",
+            "ponowienie",
+            "kolejne wykupienie leku"
+          ]
+        },
+        {
+          "id": "doctor-visit.take-it-easy",
+          "term": "take it easy",
+          "ipa": "/ˌteɪk ɪt ˈiːzi/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "oszczędzać się",
+          "definition": "To rest and not do too much.",
+          "register": "potoczny",
+          "contextPl": "Zalecenie spokojnego trybu po chorobie",
+          "natural": "",
+          "forms": "take – took – taken",
+          "collocations": "",
+          "synonyms": "rest; slow down",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Take it easy for a few days, and don't go to the gym.",
+              "pl": "Proszę się oszczędzać przez kilka dni i nie chodzić na siłownię.",
+              "focusEn": "Take it easy",
+              "focusPl": "się oszczędzać"
+            },
+            {
+              "en": "The doctor said I should take it easy until the stitches come out.",
+              "pl": "Lekarz powiedział, że powinienem się oszczędzać, dopóki nie zdejmą szwów.",
+              "focusEn": "take it easy",
+              "focusPl": "się oszczędzać"
+            }
+          ],
+          "acceptedAnswers": [
+            "take it easy"
+          ],
+          "acceptedTranslations": [
+            "oszczędzać się",
+            "nie przemęczać się",
+            "odpoczywać",
+            "odpocząć"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doctor-visit.phrases-idioms",
+      "namePl": "Zwroty i idiomy",
+      "scenePl": "Przychodnia: rozmowy w poczekalni, w gabinecie i przy wyjściu po wizycie",
+      "entries": [
+        {
+          "id": "doctor-visit.get-checked-out",
+          "term": "get checked out",
+          "ipa": "/ˌɡet ˌtʃekt ˈaʊt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "dać się zbadać",
+          "definition": "To have a doctor examine you to see if something is wrong.",
+          "register": "potoczny",
+          "contextPl": "Decyzja o pójściu do lekarza",
+          "natural": "",
+          "forms": "get – got – gotten",
+          "collocations": "get it checked out; go get checked out",
+          "synonyms": "see a doctor",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I finally decided to get checked out after a month of headaches.",
+              "pl": "Po miesiącu bólów głowy w końcu postanowiłem dać się zbadać.",
+              "focusEn": "get checked out",
+              "focusPl": "dać się zbadać"
+            },
+            {
+              "en": "My wife made me come in today and get checked out.",
+              "pl": "Żona kazała mi dziś przyjść i się przebadać.",
+              "focusEn": "get checked out",
+              "focusPl": "się przebadać"
+            }
+          ],
+          "acceptedAnswers": [
+            "get checked out",
+            "get it checked out",
+            "get checked"
+          ],
+          "acceptedTranslations": [
+            "dać się zbadać",
+            "przebadać się",
+            "zbadać się",
+            "pójść do lekarza"
+          ]
+        },
+        {
+          "id": "doctor-visit.under-the-weather",
+          "term": "under the weather",
+          "ipa": "/ˌʌndər ðə ˈweðər/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nie w formie",
+          "definition": "Slightly sick.",
+          "register": "potoczny",
+          "contextPl": "Lekkie złe samopoczucie",
+          "natural": "",
+          "forms": "",
+          "collocations": "feel under the weather",
+          "synonyms": "sick; unwell",
+          "antonyms": "",
+          "notePl": "Dotyczy lekkiej niedyspozycji, nie poważnej choroby.",
+          "examples": [
+            {
+              "en": "I've been feeling a bit under the weather, so I finally made an appointment.",
+              "pl": "Od kilku dni jestem trochę nie w formie, więc w końcu umówiłem się na wizytę.",
+              "focusEn": "under the weather",
+              "focusPl": "nie w formie"
+            },
+            {
+              "en": "The man next to me in the waiting room said he was under the weather too.",
+              "pl": "Mężczyzna obok mnie w poczekalni powiedział, że też jest nie w formie.",
+              "focusEn": "under the weather",
+              "focusPl": "nie w formie"
+            }
+          ],
+          "acceptedAnswers": [
+            "under the weather"
+          ],
+          "acceptedTranslations": [
+            "nie w formie",
+            "niedysponowany",
+            "pod psem",
+            "nie najlepiej"
+          ]
+        },
+        {
+          "id": "doctor-visit.nothing-to-worry-about",
+          "term": "nothing to worry about",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nie ma się czym martwić",
+          "definition": "Not serious or dangerous.",
+          "register": "neutralny",
+          "contextPl": "Uspokajanie pacjenta",
+          "natural": "",
+          "forms": "",
+          "collocations": "it's nothing to worry about; probably nothing to worry about",
+          "synonyms": "nothing serious",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's just a small cyst, nothing to worry about.",
+              "pl": "To tylko mała torbiel, nie ma się czym martwić.",
+              "focusEn": "nothing to worry about",
+              "focusPl": "nie ma się czym martwić"
+            },
+            {
+              "en": "The doctor smiled and said the spot on my x-ray was nothing to worry about.",
+              "pl": "Lekarz uśmiechnął się i powiedział, że plamka na prześwietleniu to nic, czym trzeba się martwić.",
+              "focusEn": "nothing to worry about",
+              "focusPl": "nic, czym trzeba się martwić"
+            }
+          ],
+          "acceptedAnswers": [
+            "nothing to worry about",
+            "nothing serious"
+          ],
+          "acceptedTranslations": [
+            "nie ma się czym martwić",
+            "nic poważnego",
+            "nic groźnego"
+          ]
+        },
+        {
+          "id": "doctor-visit.better-safe-than-sorry",
+          "term": "better safe than sorry",
+          "ipa": "/ˌbetər ˌseɪf ðən ˈsɑːri/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "lepiej dmuchać na zimne",
+          "definition": "It is wiser to be careful now than to have problems later.",
+          "register": "potoczny",
+          "contextPl": "Uzasadnianie dodatkowego badania",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I know it's probably nothing, but better safe than sorry.",
+              "pl": "Wiem, że to pewnie nic takiego, ale lepiej dmuchać na zimne.",
+              "focusEn": "better safe than sorry",
+              "focusPl": "lepiej dmuchać na zimne"
+            },
+            {
+              "en": "The doctor ordered one more test, saying it was better safe than sorry.",
+              "pl": "Lekarz zlecił jeszcze jedno badanie, mówiąc, że lepiej dmuchać na zimne.",
+              "focusEn": "better safe than sorry",
+              "focusPl": "lepiej dmuchać na zimne"
+            }
+          ],
+          "acceptedAnswers": [
+            "better safe than sorry"
+          ],
+          "acceptedTranslations": [
+            "lepiej dmuchać na zimne",
+            "przezorny zawsze ubezpieczony",
+            "strzeżonego Pan Bóg strzeże"
+          ]
+        },
+        {
+          "id": "doctor-visit.run-behind",
+          "term": "run behind",
+          "ipa": "/ˌrʌn bɪˈhaɪnd/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "mieć opóźnienie",
+          "definition": "To be late compared with the planned schedule.",
+          "register": "potoczny",
+          "contextPl": "Opóźnienia w przyjmowaniu pacjentów",
+          "natural": "",
+          "forms": "run – ran – run",
+          "collocations": "run behind schedule; run a little behind",
+          "synonyms": "run late",
+          "antonyms": "be on time",
+          "notePl": "Zwykle w formie ciągłej: „the doctor is running behind”.",
+          "examples": [
+            {
+              "en": "Sorry, the doctor is running behind today, about thirty minutes.",
+              "pl": "Przepraszamy, lekarz ma dziś opóźnienie, około trzydziestu minut.",
+              "focusEn": "running behind",
+              "focusPl": "opóźnienie"
+            },
+            {
+              "en": "Since the clinic was running behind, I read a magazine in the waiting room.",
+              "pl": "Ponieważ przychodnia miała opóźnienie, czytałem czasopismo w poczekalni.",
+              "focusEn": "running behind",
+              "focusPl": "miała opóźnienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "run behind",
+            "run late",
+            "be behind schedule"
+          ],
+          "acceptedTranslations": [
+            "mieć opóźnienie",
+            "mieć poślizg",
+            "spóźniać się"
+          ]
+        },
+        {
+          "id": "doctor-visit.second-opinion",
+          "term": "second opinion",
+          "ipa": "/ˌsekənd əˈpɪnjən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "opinia innego lekarza",
+          "definition": "Advice from another doctor to check the first doctor's view.",
+          "register": "neutralny",
+          "contextPl": "Konsultacja przed ważną decyzją",
+          "natural": "",
+          "forms": "second opinions",
+          "collocations": "get a second opinion; ask for a second opinion",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Before the surgery, I want to get a second opinion.",
+              "pl": "Przed operacją chcę zasięgnąć opinii innego lekarza.",
+              "focusEn": "second opinion",
+              "focusPl": "opinii innego lekarza"
+            },
+            {
+              "en": "My doctor didn't mind at all when I asked about a second opinion.",
+              "pl": "Mojemu lekarzowi wcale nie przeszkadzało, że zapytałem o drugą opinię.",
+              "focusEn": "second opinion",
+              "focusPl": "drugą opinię"
+            }
+          ],
+          "acceptedAnswers": [
+            "second opinion"
+          ],
+          "acceptedTranslations": [
+            "opinia innego lekarza",
+            "druga opinia",
+            "konsultacja u innego lekarza"
+          ]
+        },
+        {
+          "id": "doctor-visit.doctors-orders",
+          "term": "doctor's orders",
+          "ipa": "/ˈdɑːktərz ˈɔːrdərz/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zalecenia lekarza",
+          "definition": "Instructions from a doctor that you must follow.",
+          "register": "potoczny",
+          "contextPl": "Żartobliwe tłumaczenie się zaleceniami",
+          "natural": "",
+          "forms": "",
+          "collocations": "follow doctor's orders",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Często dodawane żartem na końcu zdania.",
+          "examples": [
+            {
+              "en": "No coffee for a week. Doctor's orders!",
+              "pl": "Żadnej kawy przez tydzień. Zalecenie lekarza!",
+              "focusEn": "Doctor's orders",
+              "focusPl": "Zalecenie lekarza"
+            },
+            {
+              "en": "As I left the clinic, I told my friend I'm staying in bed all weekend, doctor's orders.",
+              "pl": "Wychodząc z przychodni, powiedziałem koledze, że cały weekend zostaję w łóżku – takie są zalecenia lekarza.",
+              "focusEn": "doctor's orders",
+              "focusPl": "zalecenia lekarza"
+            }
+          ],
+          "acceptedAnswers": [
+            "doctor's orders"
+          ],
+          "acceptedTranslations": [
+            "zalecenia lekarza",
+            "zalecenie lekarza",
+            "polecenie lekarza"
+          ]
+        },
+        {
+          "id": "doctor-visit.bedside-manner",
+          "term": "bedside manner",
+          "ipa": "/ˌbedsaɪd ˈmænər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "podejście do pacjenta",
+          "definition": "The way a doctor talks to and treats patients.",
+          "register": "neutralny",
+          "contextPl": "Ocena zachowania lekarza",
+          "natural": "",
+          "forms": "",
+          "collocations": "good bedside manner; great bedside manner",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Dr. Kim has a great bedside manner; she really listens.",
+              "pl": "Doktor Kim ma świetne podejście do pacjenta; naprawdę słucha.",
+              "focusEn": "bedside manner",
+              "focusPl": "podejście do pacjenta"
+            },
+            {
+              "en": "The new doctor knows his stuff, but his bedside manner needs work.",
+              "pl": "Nowy lekarz zna się na rzeczy, ale jego podejście do pacjentów pozostawia wiele do życzenia.",
+              "focusEn": "bedside manner",
+              "focusPl": "podejście do pacjentów"
+            }
+          ],
+          "acceptedAnswers": [
+            "bedside manner"
+          ],
+          "acceptedTranslations": [
+            "podejście do pacjenta",
+            "podejście do pacjentów",
+            "sposób traktowania pacjentów"
+          ]
+        },
+        {
+          "id": "doctor-visit.on-the-mend",
+          "term": "on the mend",
+          "ipa": "/ˌɑːn ðə ˈmend/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wracać do zdrowia",
+          "definition": "Getting better after an illness or injury.",
+          "register": "potoczny",
+          "contextPl": "Poprawa stanu zdrowia",
+          "natural": "",
+          "forms": "",
+          "collocations": "definitely on the mend",
+          "synonyms": "recovering",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your lungs sound much clearer; you're definitely on the mend.",
+              "pl": "Płuca brzmią dużo czyściej; zdecydowanie wraca pan do zdrowia.",
+              "focusEn": "on the mend",
+              "focusPl": "wraca pan do zdrowia"
+            },
+            {
+              "en": "At my follow-up, I told the nurse I was finally on the mend.",
+              "pl": "Na wizycie kontrolnej powiedziałem pielęgniarce, że w końcu wracam do zdrowia.",
+              "focusEn": "on the mend",
+              "focusPl": "wracam do zdrowia"
+            }
+          ],
+          "acceptedAnswers": [
+            "on the mend",
+            "recovering"
+          ],
+          "acceptedTranslations": [
+            "wracać do zdrowia",
+            "dochodzić do siebie",
+            "zdrowieć"
+          ]
+        },
+        {
+          "id": "doctor-visit.clean-bill-of-health",
+          "term": "clean bill of health",
+          "ipa": "/ˌkliːn ˌbɪl əv ˈhelθ/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "potwierdzenie pełnego zdrowia",
+          "definition": "A doctor's statement that you are completely healthy.",
+          "register": "neutralny",
+          "contextPl": "Dobry wynik badania kontrolnego",
+          "natural": "",
+          "forms": "",
+          "collocations": "give someone a clean bill of health; get a clean bill of health",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After the checkup, the doctor gave me a clean bill of health.",
+              "pl": "Po badaniu lekarz stwierdził, że jestem całkowicie zdrowy.",
+              "focusEn": "clean bill of health",
+              "focusPl": "całkowicie zdrowy"
+            },
+            {
+              "en": "I left the clinic with a clean bill of health and a big smile.",
+              "pl": "Wyszedłem z przychodni zdrowy jak ryba i z szerokim uśmiechem.",
+              "focusEn": "clean bill of health",
+              "focusPl": "zdrowy jak ryba"
+            }
+          ],
+          "acceptedAnswers": [
+            "clean bill of health"
+          ],
+          "acceptedTranslations": [
+            "potwierdzenie pełnego zdrowia",
+            "całkowicie zdrowy",
+            "zdrowy jak ryba"
+          ]
+        }
+      ]
+    }
+  ]
+}

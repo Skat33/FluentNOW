@@ -1,0 +1,4172 @@
+{
+  "schemaVersion": 1,
+  "id": "cooking",
+  "namePl": "Gotowanie",
+  "nameEn": "Cooking",
+  "group": "food",
+  "symbol": "frying.pan",
+  "summaryPl": "Czynności kuchenne, obróbka cieplna, sprzęty, przepisy, przyprawy i kuchenne wpadki.",
+  "aliases": [
+    "gotowanie",
+    "kuchnia",
+    "przepis",
+    "pichcenie",
+    "przyrządzanie potraw",
+    "czynności kuchenne",
+    "cooking",
+    "recipe",
+    "kitchen"
+  ],
+  "categories": [
+    {
+      "id": "cooking.prep",
+      "namePl": "Przygotowanie składników",
+      "scenePl": "Przygotowywanie składników na blacie kuchennym przed gotowaniem kolacji",
+      "entries": [
+        {
+          "id": "cooking.cut",
+          "term": "cut",
+          "ipa": "/kʌt/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pokroić",
+          "definition": "To divide food into pieces with a knife.",
+          "register": "neutralny",
+          "contextPl": "Krojenie produktów",
+          "natural": "",
+          "forms": "cut – cut – cut",
+          "collocations": "cut into pieces; cut in half",
+          "synonyms": "slice; chop",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you cut the bread while I make the salad?",
+              "pl": "Możesz pokroić chleb, kiedy ja robię sałatkę?",
+              "focusEn": "cut",
+              "focusPl": "pokroić"
+            },
+            {
+              "en": "Cut the chicken into small pieces before you fry it.",
+              "pl": "Pokrój kurczaka na małe kawałki, zanim go usmażysz.",
+              "focusEn": "Cut",
+              "focusPl": "Pokrój"
+            }
+          ],
+          "acceptedAnswers": [
+            "cut"
+          ],
+          "acceptedTranslations": [
+            "pokroić",
+            "kroić"
+          ]
+        },
+        {
+          "id": "cooking.wash",
+          "term": "wash",
+          "ipa": "/wɑːʃ/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "umyć",
+          "definition": "To clean fruit or vegetables with water.",
+          "register": "neutralny",
+          "contextPl": "Mycie warzyw i owoców",
+          "natural": "",
+          "forms": "washed",
+          "collocations": "wash vegetables; wash well",
+          "synonyms": "rinse",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Wash the lettuce well and let it dry.",
+              "pl": "Dokładnie umyj sałatę i zostaw ją do wyschnięcia.",
+              "focusEn": "Wash",
+              "focusPl": "umyj"
+            },
+            {
+              "en": "Did you wash the strawberries before cutting them?",
+              "pl": "Umyłeś truskawki, zanim je pokroiłeś?",
+              "focusEn": "wash",
+              "focusPl": "Umyłeś"
+            }
+          ],
+          "acceptedAnswers": [
+            "wash",
+            "rinse"
+          ],
+          "acceptedTranslations": [
+            "umyć",
+            "myć",
+            "opłukać"
+          ]
+        },
+        {
+          "id": "cooking.mix",
+          "term": "mix",
+          "ipa": "/mɪks/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wymieszać",
+          "definition": "To combine different foods so they become one mixture.",
+          "register": "neutralny",
+          "contextPl": "Łączenie składników w misce",
+          "natural": "",
+          "forms": "mixed",
+          "collocations": "mix well; mix together; mix in",
+          "synonyms": "combine; blend",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Mix the flour and sugar in a large bowl.",
+              "pl": "Wymieszaj mąkę z cukrem w dużej misce.",
+              "focusEn": "Mix",
+              "focusPl": "Wymieszaj"
+            },
+            {
+              "en": "I mixed the dressing in a jar and shook it.",
+              "pl": "Wymieszałem sos w słoiku i potrząsnąłem nim.",
+              "focusEn": "mixed",
+              "focusPl": "Wymieszałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "mix",
+            "combine"
+          ],
+          "acceptedTranslations": [
+            "wymieszać",
+            "mieszać"
+          ]
+        },
+        {
+          "id": "cooking.pour",
+          "term": "pour",
+          "ipa": "/pɔːr/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wlać",
+          "definition": "To make a liquid flow from a container.",
+          "register": "neutralny",
+          "contextPl": "Przelewanie płynów",
+          "natural": "",
+          "forms": "poured",
+          "collocations": "pour in; pour over; pour the milk",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Pour the milk into the bowl slowly.",
+              "pl": "Powoli wlej mleko do miski.",
+              "focusEn": "Pour",
+              "focusPl": "wlej"
+            },
+            {
+              "en": "She poured the soup into bowls and called everyone to dinner.",
+              "pl": "Rozlała zupę do misek i zawołała wszystkich na obiad.",
+              "focusEn": "poured",
+              "focusPl": "Rozlała"
+            }
+          ],
+          "acceptedAnswers": [
+            "pour"
+          ],
+          "acceptedTranslations": [
+            "wlać",
+            "nalać",
+            "lać",
+            "rozlać"
+          ]
+        },
+        {
+          "id": "cooking.chop",
+          "term": "chop",
+          "ipa": "/tʃɑːp/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "posiekać",
+          "definition": "To cut food into small pieces with a knife.",
+          "register": "neutralny",
+          "contextPl": "Siekanie warzyw i ziół",
+          "natural": "",
+          "forms": "chopped",
+          "collocations": "chop onions; finely chopped; roughly chop",
+          "synonyms": "dice",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Chop the onions and garlic while the oil heats up.",
+              "pl": "Posiekaj cebulę i czosnek, kiedy olej się nagrzewa.",
+              "focusEn": "Chop",
+              "focusPl": "Posiekaj"
+            },
+            {
+              "en": "I chopped way too much parsley for this soup.",
+              "pl": "Posiekałem za dużo pietruszki do tej zupy.",
+              "focusEn": "chopped",
+              "focusPl": "Posiekałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "chop"
+          ],
+          "acceptedTranslations": [
+            "posiekać",
+            "siekać"
+          ]
+        },
+        {
+          "id": "cooking.peel",
+          "term": "peel",
+          "ipa": "/piːl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "obrać",
+          "definition": "To remove the skin from fruit or vegetables.",
+          "register": "neutralny",
+          "contextPl": "Obieranie ziemniaków i owoców",
+          "natural": "",
+          "forms": "peeled",
+          "collocations": "peel potatoes; peel an orange",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you peel the potatoes for me?",
+              "pl": "Możesz obrać mi ziemniaki?",
+              "focusEn": "peel",
+              "focusPl": "obrać"
+            },
+            {
+              "en": "I always peel carrots before I grate them.",
+              "pl": "Zawsze obieram marchewki, zanim je zetrę.",
+              "focusEn": "peel",
+              "focusPl": "obieram"
+            }
+          ],
+          "acceptedAnswers": [
+            "peel"
+          ],
+          "acceptedTranslations": [
+            "obrać",
+            "obierać"
+          ]
+        },
+        {
+          "id": "cooking.slice",
+          "term": "slice",
+          "ipa": "/slaɪs/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pokroić w plastry",
+          "definition": "To cut food into thin flat pieces.",
+          "register": "neutralny",
+          "contextPl": "Krojenie w plasterki",
+          "natural": "",
+          "forms": "sliced",
+          "collocations": "thinly slice; slice the bread",
+          "synonyms": "cut",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Slice the tomatoes thinly for the sandwiches.",
+              "pl": "Pokrój pomidory w cienkie plastry do kanapek.",
+              "focusEn": "Slice",
+              "focusPl": "Pokrój pomidory w cienkie plastry"
+            },
+            {
+              "en": "He sliced the mushrooms while the butter melted.",
+              "pl": "Pokroił pieczarki w plasterki, kiedy masło się topiło.",
+              "focusEn": "sliced",
+              "focusPl": "Pokroił pieczarki w plasterki"
+            }
+          ],
+          "acceptedAnswers": [
+            "slice"
+          ],
+          "acceptedTranslations": [
+            "pokroić w plastry",
+            "kroić w plastry",
+            "kroić w plasterki"
+          ]
+        },
+        {
+          "id": "cooking.grate",
+          "term": "grate",
+          "ipa": "/ɡreɪt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zetrzeć",
+          "definition": "To rub food against a grater to make small thin pieces.",
+          "register": "neutralny",
+          "contextPl": "Ścieranie sera i warzyw na tarce",
+          "natural": "shred",
+          "forms": "grated",
+          "collocations": "grate cheese; finely grated",
+          "synonyms": "shred",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Grate some cheese on top of the pasta.",
+              "pl": "Zetrzyj trochę sera na makaron.",
+              "focusEn": "Grate",
+              "focusPl": "Zetrzyj"
+            },
+            {
+              "en": "I grated two carrots for the salad.",
+              "pl": "Starłem dwie marchewki do sałatki.",
+              "focusEn": "grated",
+              "focusPl": "Starłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "grate",
+            "shred"
+          ],
+          "acceptedTranslations": [
+            "zetrzeć",
+            "trzeć",
+            "ścierać"
+          ]
+        },
+        {
+          "id": "cooking.mash",
+          "term": "mash",
+          "ipa": "/mæʃ/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "utłuc",
+          "definition": "To crush cooked food until it is soft and smooth.",
+          "register": "neutralny",
+          "contextPl": "Robienie puree",
+          "natural": "",
+          "forms": "mashed",
+          "collocations": "mash potatoes; mashed bananas",
+          "synonyms": "crush",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Mash the potatoes with butter and a little milk.",
+              "pl": "Utłucz ziemniaki z masłem i odrobiną mleka.",
+              "focusEn": "Mash",
+              "focusPl": "Utłucz"
+            },
+            {
+              "en": "My son mashed the bananas for the banana bread.",
+              "pl": "Syn rozgniótł banany do chlebka bananowego.",
+              "focusEn": "mashed",
+              "focusPl": "rozgniótł"
+            }
+          ],
+          "acceptedAnswers": [
+            "mash"
+          ],
+          "acceptedTranslations": [
+            "utłuc",
+            "tłuc",
+            "rozgnieść",
+            "zgnieść"
+          ]
+        },
+        {
+          "id": "cooking.drain",
+          "term": "drain",
+          "ipa": "/dreɪn/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odcedzić",
+          "definition": "To pour off the liquid from food.",
+          "register": "neutralny",
+          "contextPl": "Odlewanie wody z makaronu lub warzyw",
+          "natural": "",
+          "forms": "drained",
+          "collocations": "drain the pasta; drain and rinse",
+          "synonyms": "strain",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Drain the pasta and save a cup of the water.",
+              "pl": "Odcedź makaron i zachowaj szklankę wody.",
+              "focusEn": "Drain",
+              "focusPl": "Odcedź"
+            },
+            {
+              "en": "I drained the beans and rinsed them under cold water.",
+              "pl": "Odcedziłem fasolę i przepłukałem ją pod zimną wodą.",
+              "focusEn": "drained",
+              "focusPl": "Odcedziłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "drain",
+            "strain"
+          ],
+          "acceptedTranslations": [
+            "odcedzić",
+            "odcedzać"
+          ]
+        },
+        {
+          "id": "cooking.dice",
+          "term": "dice",
+          "ipa": "/daɪs/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "pokroić w kostkę",
+          "definition": "To cut food into small cubes.",
+          "register": "neutralny",
+          "contextPl": "Krojenie w drobną kostkę",
+          "natural": "",
+          "forms": "diced",
+          "collocations": "dice an onion; finely diced",
+          "synonyms": "cube; chop",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Dice the onion into small cubes.",
+              "pl": "Pokrój cebulę w drobną kostkę.",
+              "focusEn": "Dice",
+              "focusPl": "w drobną kostkę"
+            },
+            {
+              "en": "I diced the peppers for the omelet.",
+              "pl": "Pokroiłem paprykę w kostkę do omletu.",
+              "focusEn": "diced",
+              "focusPl": "w kostkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "dice",
+            "cube"
+          ],
+          "acceptedTranslations": [
+            "pokroić w kostkę",
+            "kroić w kostkę"
+          ]
+        },
+        {
+          "id": "cooking.whisk",
+          "term": "whisk",
+          "ipa": "/wɪsk/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "ubić",
+          "definition": "To beat eggs or cream quickly with a whisk or fork.",
+          "register": "neutralny",
+          "contextPl": "Ubijanie jajek i śmietany",
+          "natural": "beat",
+          "forms": "whisked",
+          "collocations": "whisk eggs; whisk together",
+          "synonyms": "beat",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Whisk the eggs until they're light and fluffy.",
+              "pl": "Ubij jajka, aż będą lekkie i puszyste.",
+              "focusEn": "Whisk",
+              "focusPl": "Ubij"
+            },
+            {
+              "en": "She whisked the milk and eggs together in a bowl.",
+              "pl": "Roztrzepała mleko z jajkami w misce.",
+              "focusEn": "whisked",
+              "focusPl": "Roztrzepała"
+            }
+          ],
+          "acceptedAnswers": [
+            "whisk",
+            "beat"
+          ],
+          "acceptedTranslations": [
+            "ubić",
+            "ubijać",
+            "roztrzepać",
+            "roztrzepywać"
+          ]
+        },
+        {
+          "id": "cooking.marinate",
+          "term": "marinate",
+          "ipa": "/ˈmærəˌneɪt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "marynować",
+          "definition": "To leave meat or fish in a sauce so it gets more flavor.",
+          "register": "neutralny",
+          "contextPl": "Przygotowanie mięsa wcześniej",
+          "natural": "",
+          "forms": "marinated",
+          "collocations": "marinate overnight; marinate in lemon",
+          "synonyms": "soak",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Marinate the chicken overnight in lemon and garlic.",
+              "pl": "Zamarynuj kurczaka na noc w cytrynie i czosnku.",
+              "focusEn": "Marinate",
+              "focusPl": "Zamarynuj"
+            },
+            {
+              "en": "The meat has been marinating in the fridge since morning.",
+              "pl": "Mięso marynuje się w lodówce od rana.",
+              "focusEn": "marinating",
+              "focusPl": "marynuje się"
+            }
+          ],
+          "acceptedAnswers": [
+            "marinate"
+          ],
+          "acceptedTranslations": [
+            "marynować",
+            "zamarynować"
+          ]
+        },
+        {
+          "id": "cooking.mince",
+          "term": "mince",
+          "ipa": "/mɪns/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "drobno posiekać",
+          "definition": "To cut food, like garlic, into very small pieces.",
+          "register": "neutralny",
+          "contextPl": "Bardzo drobne siekanie czosnku i ziół",
+          "natural": "",
+          "forms": "minced",
+          "collocations": "mince garlic; minced ginger",
+          "synonyms": "chop finely",
+          "antonyms": "",
+          "notePl": "W USA „ground beef” to mięso mielone; „mince” jako rzeczownik jest brytyjski.",
+          "examples": [
+            {
+              "en": "Mince two cloves of garlic for the sauce.",
+              "pl": "Drobno posiekaj dwa ząbki czosnku do sosu.",
+              "focusEn": "Mince",
+              "focusPl": "Drobno posiekaj"
+            },
+            {
+              "en": "I minced the garlic so fine that it almost turned to paste.",
+              "pl": "Posiekałem czosnek tak drobno, że prawie zamienił się w pastę.",
+              "focusEn": "minced",
+              "focusPl": "Posiekałem czosnek tak drobno"
+            }
+          ],
+          "acceptedAnswers": [
+            "mince"
+          ],
+          "acceptedTranslations": [
+            "drobno posiekać",
+            "drobno siekać"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cooking.heat",
+      "namePl": "Obróbka cieplna",
+      "scenePl": "Gotowanie obiadu na kuchence, w piekarniku i na grillu",
+      "entries": [
+        {
+          "id": "cooking.cook",
+          "term": "cook",
+          "ipa": "/kʊk/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "gotować",
+          "definition": "To prepare food by heating it.",
+          "register": "neutralny",
+          "contextPl": "Przygotowywanie posiłków w ogóle",
+          "natural": "",
+          "forms": "cooked",
+          "collocations": "cook dinner; cook for the family",
+          "synonyms": "make",
+          "antonyms": "",
+          "notePl": "„Cook” to przygotowywanie jedzenia w ogóle; gotowanie w wodzie to „boil”.",
+          "examples": [
+            {
+              "en": "Who's going to cook dinner tonight?",
+              "pl": "Kto dziś ugotuje kolację?",
+              "focusEn": "cook",
+              "focusPl": "ugotuje"
+            },
+            {
+              "en": "My dad cooks every Sunday while we set the table.",
+              "pl": "Tata gotuje w każdą niedzielę, a my nakrywamy do stołu.",
+              "focusEn": "cooks",
+              "focusPl": "gotuje"
+            }
+          ],
+          "acceptedAnswers": [
+            "cook"
+          ],
+          "acceptedTranslations": [
+            "gotować",
+            "ugotować",
+            "przyrządzić"
+          ]
+        },
+        {
+          "id": "cooking.boil",
+          "term": "boil",
+          "ipa": "/bɔɪl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "gotować",
+          "definition": "To cook food in very hot, bubbling water.",
+          "register": "neutralny",
+          "contextPl": "Gotowanie w wodzie",
+          "natural": "",
+          "forms": "boiled",
+          "collocations": "boil eggs; boil water; hard-boiled",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Boil the eggs for about eight minutes.",
+              "pl": "Gotuj jajka przez około osiem minut.",
+              "focusEn": "Boil",
+              "focusPl": "Gotuj"
+            },
+            {
+              "en": "The water is boiling, so add the pasta now.",
+              "pl": "Woda się gotuje, więc wrzuć teraz makaron.",
+              "focusEn": "boiling",
+              "focusPl": "się gotuje"
+            }
+          ],
+          "acceptedAnswers": [
+            "boil"
+          ],
+          "acceptedTranslations": [
+            "gotować",
+            "ugotować",
+            "zagotować",
+            "wrzeć"
+          ]
+        },
+        {
+          "id": "cooking.fry",
+          "term": "fry",
+          "ipa": "/fraɪ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "smażyć",
+          "definition": "To cook food in hot oil or fat.",
+          "register": "neutralny",
+          "contextPl": "Smażenie na patelni",
+          "natural": "",
+          "forms": "fried – fried",
+          "collocations": "fry eggs; deep-fry; pan-fry",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Fry the bacon until it's nice and crispy.",
+              "pl": "Smaż bekon, aż będzie ładnie chrupiący.",
+              "focusEn": "Fry",
+              "focusPl": "Smaż"
+            },
+            {
+              "en": "I fried two eggs in a little butter.",
+              "pl": "Usmażyłem dwa jajka na odrobinie masła.",
+              "focusEn": "fried",
+              "focusPl": "Usmażyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "fry"
+          ],
+          "acceptedTranslations": [
+            "smażyć",
+            "usmażyć"
+          ]
+        },
+        {
+          "id": "cooking.heat-up",
+          "term": "heat up",
+          "ipa": "/ˌhiːt ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "podgrzać",
+          "definition": "To make food or oil hot.",
+          "register": "neutralny",
+          "contextPl": "Podgrzewanie jedzenia lub tłuszczu",
+          "natural": "warm up",
+          "forms": "heated up",
+          "collocations": "heat up leftovers; heat up the oil",
+          "synonyms": "warm up",
+          "antonyms": "cool down",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll heat up the leftover soup for lunch.",
+              "pl": "Podgrzeję resztę zupy na lunch.",
+              "focusEn": "heat up",
+              "focusPl": "Podgrzeję"
+            },
+            {
+              "en": "Heat up a little oil in the pan first.",
+              "pl": "Najpierw rozgrzej trochę oleju na patelni.",
+              "focusEn": "Heat up",
+              "focusPl": "rozgrzej"
+            }
+          ],
+          "acceptedAnswers": [
+            "heat up",
+            "warm up"
+          ],
+          "acceptedTranslations": [
+            "podgrzać",
+            "podgrzewać",
+            "odgrzać",
+            "rozgrzać"
+          ]
+        },
+        {
+          "id": "cooking.bake",
+          "term": "bake",
+          "ipa": "/beɪk/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "piec",
+          "definition": "To cook bread, cakes or other food in an oven.",
+          "register": "neutralny",
+          "contextPl": "Pieczenie ciast i pieczywa",
+          "natural": "",
+          "forms": "baked",
+          "collocations": "bake a cake; bake cookies; bake at 350",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bake the cake for forty minutes at 350 degrees.",
+              "pl": "Piecz ciasto przez czterdzieści minut w 175 stopniach Celsjusza.",
+              "focusEn": "Bake",
+              "focusPl": "Piecz"
+            },
+            {
+              "en": "We baked cookies all afternoon for the school fair.",
+              "pl": "Całe popołudnie piekliśmy ciasteczka na szkolny kiermasz.",
+              "focusEn": "baked",
+              "focusPl": "piekliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "bake"
+          ],
+          "acceptedTranslations": [
+            "piec",
+            "upiec"
+          ]
+        },
+        {
+          "id": "cooking.stir",
+          "term": "stir",
+          "ipa": "/stɜːr/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mieszać",
+          "definition": "To move a spoon around in food or liquid in a pot.",
+          "register": "neutralny",
+          "contextPl": "Mieszanie w garnku podczas gotowania",
+          "natural": "",
+          "forms": "stirred",
+          "collocations": "stir constantly; stir in; stir occasionally",
+          "synonyms": "mix",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Keep stirring the sauce so it doesn't stick to the pot.",
+              "pl": "Ciągle mieszaj sos, żeby nie przywarł do garnka.",
+              "focusEn": "stirring",
+              "focusPl": "mieszaj"
+            },
+            {
+              "en": "Stir in the cream and turn off the heat.",
+              "pl": "Wmieszaj śmietanę i wyłącz ogień.",
+              "focusEn": "Stir",
+              "focusPl": "Wmieszaj"
+            }
+          ],
+          "acceptedAnswers": [
+            "stir"
+          ],
+          "acceptedTranslations": [
+            "mieszać",
+            "zamieszać",
+            "wymieszać"
+          ]
+        },
+        {
+          "id": "cooking.melt",
+          "term": "melt",
+          "ipa": "/mɛlt/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "roztopić",
+          "definition": "To make something solid become liquid by heating it.",
+          "register": "neutralny",
+          "contextPl": "Topienie masła, sera, czekolady",
+          "natural": "",
+          "forms": "melted",
+          "collocations": "melt butter; melted cheese",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Melt the butter in a small pan over low heat.",
+              "pl": "Roztop masło w małym rondelku na małym ogniu.",
+              "focusEn": "Melt",
+              "focusPl": "Roztop"
+            },
+            {
+              "en": "The cheese melted perfectly on top of the casserole.",
+              "pl": "Ser idealnie się roztopił na zapiekance.",
+              "focusEn": "melted",
+              "focusPl": "roztopił"
+            }
+          ],
+          "acceptedAnswers": [
+            "melt"
+          ],
+          "acceptedTranslations": [
+            "roztopić",
+            "topić",
+            "rozpuścić"
+          ]
+        },
+        {
+          "id": "cooking.grill",
+          "term": "grill",
+          "ipa": "/ɡrɪl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "grillować",
+          "definition": "To cook food over an open fire or very hot metal bars.",
+          "register": "neutralny",
+          "contextPl": "Grillowanie w ogrodzie",
+          "natural": "",
+          "forms": "grilled",
+          "collocations": "grill burgers; grill vegetables",
+          "synonyms": "barbecue",
+          "antonyms": "",
+          "notePl": "W USA „grill” to grill na zewnątrz; grzałka w piekarniku to „broiler”.",
+          "examples": [
+            {
+              "en": "Dad is grilling burgers in the backyard.",
+              "pl": "Tata grilluje burgery w ogródku.",
+              "focusEn": "grilling",
+              "focusPl": "grilluje"
+            },
+            {
+              "en": "Grill the corn until it gets a little charred.",
+              "pl": "Grilluj kukurydzę, aż lekko się przypiecze.",
+              "focusEn": "Grill",
+              "focusPl": "Grilluj"
+            }
+          ],
+          "acceptedAnswers": [
+            "grill",
+            "barbecue"
+          ],
+          "acceptedTranslations": [
+            "grillować",
+            "piec na grillu"
+          ]
+        },
+        {
+          "id": "cooking.roast",
+          "term": "roast",
+          "ipa": "/roʊst/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "piec",
+          "definition": "To cook meat or vegetables in an oven with dry heat.",
+          "register": "neutralny",
+          "contextPl": "Pieczenie mięsa i warzyw w piekarniku",
+          "natural": "",
+          "forms": "roasted",
+          "collocations": "roast a chicken; roasted vegetables",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Roast the vegetables until the edges are brown.",
+              "pl": "Piecz warzywa, aż brzegi się zrumienią.",
+              "focusEn": "Roast",
+              "focusPl": "Piecz"
+            },
+            {
+              "en": "We roasted a whole chicken with lemon and herbs.",
+              "pl": "Upiekliśmy całego kurczaka z cytryną i ziołami.",
+              "focusEn": "roasted",
+              "focusPl": "Upiekliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "roast"
+          ],
+          "acceptedTranslations": [
+            "piec",
+            "upiec"
+          ]
+        },
+        {
+          "id": "cooking.preheat",
+          "term": "preheat",
+          "ipa": "/ˌpriːˈhiːt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nagrzać",
+          "definition": "To heat an oven to a certain temperature before cooking.",
+          "register": "neutralny",
+          "contextPl": "Przygotowanie piekarnika",
+          "natural": "",
+          "forms": "preheated",
+          "collocations": "preheat the oven to 400",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "First, preheat the oven to 400 degrees.",
+              "pl": "Najpierw nagrzej piekarnik do 200 stopni Celsjusza.",
+              "focusEn": "preheat",
+              "focusPl": "nagrzej"
+            },
+            {
+              "en": "I forgot to preheat the oven, so dinner was late.",
+              "pl": "Zapomniałem nagrzać piekarnik, więc kolacja się spóźniła.",
+              "focusEn": "preheat",
+              "focusPl": "nagrzać"
+            }
+          ],
+          "acceptedAnswers": [
+            "preheat"
+          ],
+          "acceptedTranslations": [
+            "nagrzać",
+            "nagrzewać",
+            "rozgrzać"
+          ]
+        },
+        {
+          "id": "cooking.low-heat",
+          "term": "low heat",
+          "ipa": "/ˌloʊ ˈhiːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mały ogień",
+          "definition": "A small amount of heat from a stove.",
+          "register": "neutralny",
+          "contextPl": "Ustawianie mocy palnika",
+          "natural": "",
+          "forms": "",
+          "collocations": "over low heat; medium heat; high heat",
+          "synonyms": "",
+          "antonyms": "high heat",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Cook the eggs over low heat so they stay soft.",
+              "pl": "Smaż jajka na małym ogniu, żeby zostały miękkie.",
+              "focusEn": "low heat",
+              "focusPl": "małym ogniu"
+            },
+            {
+              "en": "Turn it down to low heat once the sauce starts bubbling.",
+              "pl": "Zmniejsz do małego ognia, gdy sos zacznie bulgotać.",
+              "focusEn": "low heat",
+              "focusPl": "małego ognia"
+            }
+          ],
+          "acceptedAnswers": [
+            "low heat"
+          ],
+          "acceptedTranslations": [
+            "mały ogień",
+            "wolny ogień"
+          ]
+        },
+        {
+          "id": "cooking.steam",
+          "term": "steam",
+          "ipa": "/stiːm/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gotować na parze",
+          "definition": "To cook food using the hot steam from boiling water.",
+          "register": "neutralny",
+          "contextPl": "Zdrowe gotowanie warzyw i pierogów",
+          "natural": "",
+          "forms": "steamed",
+          "collocations": "steam vegetables; steamed dumplings",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I steam the broccoli so it stays bright green.",
+              "pl": "Gotuję brokuły na parze, żeby zostały jasnozielone.",
+              "focusEn": "steam",
+              "focusPl": "Gotuję brokuły na parze"
+            },
+            {
+              "en": "Steam the dumplings for about ten minutes.",
+              "pl": "Gotuj pierożki na parze przez około dziesięć minut.",
+              "focusEn": "Steam",
+              "focusPl": "Gotuj pierożki na parze"
+            }
+          ],
+          "acceptedAnswers": [
+            "steam"
+          ],
+          "acceptedTranslations": [
+            "gotować na parze",
+            "ugotować na parze"
+          ]
+        },
+        {
+          "id": "cooking.bring-to-a-boil",
+          "term": "bring to a boil",
+          "ipa": "/ˌbrɪŋ tu ə ˈbɔɪl/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zagotować",
+          "definition": "To heat a liquid until it starts boiling.",
+          "register": "neutralny",
+          "contextPl": "Gotowanie wody, zupy lub sosu",
+          "natural": "",
+          "forms": "brought – brought",
+          "collocations": "bring the water to a boil",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bring the water to a boil, then add the rice.",
+              "pl": "Zagotuj wodę, a potem dodaj ryż.",
+              "focusEn": "Bring the water to a boil",
+              "focusPl": "Zagotuj"
+            },
+            {
+              "en": "Bring the soup to a boil and then lower the heat.",
+              "pl": "Doprowadź zupę do wrzenia, a potem zmniejsz ogień.",
+              "focusEn": "Bring the soup to a boil",
+              "focusPl": "Doprowadź zupę do wrzenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "bring to a boil",
+            "bring to the boil"
+          ],
+          "acceptedTranslations": [
+            "zagotować",
+            "doprowadzić do wrzenia"
+          ]
+        },
+        {
+          "id": "cooking.simmer",
+          "term": "simmer",
+          "ipa": "/ˈsɪmər/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "gotować na wolnym ogniu",
+          "definition": "To cook liquid gently, just below boiling.",
+          "register": "neutralny",
+          "contextPl": "Powolne gotowanie sosu lub zupy",
+          "natural": "",
+          "forms": "simmered",
+          "collocations": "let it simmer; simmer gently",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let the sauce simmer for twenty minutes.",
+              "pl": "Niech sos pogotuje się na wolnym ogniu przez dwadzieścia minut.",
+              "focusEn": "simmer",
+              "focusPl": "pogotuje się na wolnym ogniu"
+            },
+            {
+              "en": "The soup has been simmering on the stove all afternoon.",
+              "pl": "Zupa gotuje się powoli na kuchence całe popołudnie.",
+              "focusEn": "simmering",
+              "focusPl": "gotuje się powoli"
+            }
+          ],
+          "acceptedAnswers": [
+            "simmer"
+          ],
+          "acceptedTranslations": [
+            "gotować na wolnym ogniu",
+            "pyrkać",
+            "gotować powoli"
+          ]
+        },
+        {
+          "id": "cooking.saute",
+          "term": "sauté",
+          "ipa": "/sɔːˈteɪ/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "podsmażyć",
+          "definition": "To fry food quickly in a little hot fat.",
+          "register": "specjalistyczny",
+          "contextPl": "Krótkie smażenie warzyw lub grzybów",
+          "natural": "",
+          "forms": "sautéed",
+          "collocations": "sauté onions; sautéed spinach",
+          "synonyms": "pan-fry",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sauté the mushrooms in butter for five minutes.",
+              "pl": "Podsmaż pieczarki na maśle przez pięć minut.",
+              "focusEn": "Sauté",
+              "focusPl": "Podsmaż"
+            },
+            {
+              "en": "She sautéed the spinach with a little garlic.",
+              "pl": "Podsmażyła szpinak z odrobiną czosnku.",
+              "focusEn": "sautéed",
+              "focusPl": "Podsmażyła"
+            }
+          ],
+          "acceptedAnswers": [
+            "sauté"
+          ],
+          "acceptedTranslations": [
+            "podsmażyć",
+            "podsmażać",
+            "przesmażyć"
+          ]
+        },
+        {
+          "id": "cooking.broil",
+          "term": "broil",
+          "ipa": "/brɔɪl/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zapiekać pod grillem",
+          "definition": "To cook food under very strong heat from above, in the oven.",
+          "register": "specjalistyczny",
+          "contextPl": "Zapiekanie wierzchu w piekarniku",
+          "natural": "",
+          "forms": "broiled",
+          "collocations": "broil the salmon; broil on high",
+          "synonyms": "grill",
+          "antonyms": "",
+          "notePl": "Amerykańskie „broil” to brytyjskie „grill” (górna grzałka piekarnika).",
+          "examples": [
+            {
+              "en": "Broil the salmon for a few minutes to brown the top.",
+              "pl": "Zapiekaj łososia przez kilka minut pod grillem, żeby zrumienić wierzch.",
+              "focusEn": "Broil",
+              "focusPl": "Zapiekaj"
+            },
+            {
+              "en": "I broiled the cheese toast until it bubbled.",
+              "pl": "Zapiekłem tosty z serem pod grillem, aż ser zaczął bulgotać.",
+              "focusEn": "broiled",
+              "focusPl": "Zapiekłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "broil"
+          ],
+          "acceptedTranslations": [
+            "zapiekać pod grillem",
+            "zapiec",
+            "opiekać"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cooking.equipment",
+      "namePl": "Sprzęt i naczynia",
+      "scenePl": "Szukanie naczyń i sprzętów w szafkach kuchennych przed gotowaniem",
+      "entries": [
+        {
+          "id": "cooking.pot",
+          "term": "pot",
+          "ipa": "/pɑːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "garnek",
+          "definition": "A deep round container used for cooking soup, pasta and other food.",
+          "register": "neutralny",
+          "contextPl": "Gotowanie zupy lub makaronu",
+          "natural": "",
+          "forms": "pots",
+          "collocations": "a big pot; pots and pans",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Grab the big pot for the spaghetti.",
+              "pl": "Weź duży garnek na spaghetti.",
+              "focusEn": "pot",
+              "focusPl": "garnek"
+            },
+            {
+              "en": "The pot is too small for all this soup.",
+              "pl": "Garnek jest za mały na tyle zupy.",
+              "focusEn": "pot",
+              "focusPl": "Garnek"
+            }
+          ],
+          "acceptedAnswers": [
+            "pot"
+          ],
+          "acceptedTranslations": [
+            "garnek"
+          ]
+        },
+        {
+          "id": "cooking.pan",
+          "term": "pan",
+          "ipa": "/pæn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "patelnia",
+          "definition": "A flat metal container with a handle, used for frying.",
+          "register": "neutralny",
+          "contextPl": "Smażenie na kuchence",
+          "natural": "skillet",
+          "forms": "pans",
+          "collocations": "frying pan; nonstick pan; heat the pan",
+          "synonyms": "frying pan; skillet",
+          "antonyms": "",
+          "notePl": "„Pan” bywa też blachą do pieczenia (baking pan).",
+          "examples": [
+            {
+              "en": "Heat the pan before you add the eggs.",
+              "pl": "Rozgrzej patelnię, zanim wbijesz jajka.",
+              "focusEn": "pan",
+              "focusPl": "patelnię"
+            },
+            {
+              "en": "Where's the nonstick pan? I can't find it anywhere.",
+              "pl": "Gdzie jest patelnia z powłoką nieprzywierającą? Nigdzie nie mogę jej znaleźć.",
+              "focusEn": "pan",
+              "focusPl": "patelnia"
+            }
+          ],
+          "acceptedAnswers": [
+            "pan",
+            "frying pan",
+            "skillet"
+          ],
+          "acceptedTranslations": [
+            "patelnia"
+          ]
+        },
+        {
+          "id": "cooking.oven",
+          "term": "oven",
+          "ipa": "/ˈʌvən/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "piekarnik",
+          "definition": "A box-shaped appliance that you heat to bake or roast food.",
+          "register": "neutralny",
+          "contextPl": "Pieczenie potraw",
+          "natural": "",
+          "forms": "ovens",
+          "collocations": "preheat the oven; in the oven; out of the oven",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is the oven hot enough for the pizza yet?",
+              "pl": "Czy piekarnik jest już wystarczająco gorący na pizzę?",
+              "focusEn": "oven",
+              "focusPl": "piekarnik"
+            },
+            {
+              "en": "Take the cookies out of the oven before they burn.",
+              "pl": "Wyjmij ciastka z piekarnika, zanim się przypalą.",
+              "focusEn": "oven",
+              "focusPl": "piekarnika"
+            }
+          ],
+          "acceptedAnswers": [
+            "oven"
+          ],
+          "acceptedTranslations": [
+            "piekarnik"
+          ]
+        },
+        {
+          "id": "cooking.microwave",
+          "term": "microwave",
+          "ipa": "/ˈmaɪkrəˌweɪv/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "mikrofalówka",
+          "definition": "An appliance that heats food very quickly using electric waves.",
+          "register": "neutralny",
+          "contextPl": "Szybkie podgrzewanie jedzenia",
+          "natural": "",
+          "forms": "microwaves",
+          "collocations": "in the microwave; microwave popcorn",
+          "synonyms": "microwave oven",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Just heat it up in the microwave for two minutes.",
+              "pl": "Po prostu podgrzej to w mikrofalówce przez dwie minuty.",
+              "focusEn": "microwave",
+              "focusPl": "mikrofalówce"
+            },
+            {
+              "en": "Don't put metal in the microwave!",
+              "pl": "Nie wkładaj metalu do mikrofalówki!",
+              "focusEn": "microwave",
+              "focusPl": "mikrofalówki"
+            }
+          ],
+          "acceptedAnswers": [
+            "microwave",
+            "microwave oven"
+          ],
+          "acceptedTranslations": [
+            "mikrofalówka",
+            "kuchenka mikrofalowa"
+          ]
+        },
+        {
+          "id": "cooking.stove",
+          "term": "stove",
+          "ipa": "/stoʊv/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kuchenka",
+          "definition": "The appliance with burners on top, used for cooking in pots and pans.",
+          "register": "neutralny",
+          "contextPl": "Gotowanie na palnikach",
+          "natural": "stovetop",
+          "forms": "stoves",
+          "collocations": "on the stove; turn off the stove",
+          "synonyms": "stovetop; range",
+          "antonyms": "",
+          "notePl": "W USA „stove” lub „stovetop”; brytyjskie „cooker” brzmi tu obco.",
+          "examples": [
+            {
+              "en": "Don't leave the stove on when you go out.",
+              "pl": "Nie zostawiaj włączonej kuchenki, kiedy wychodzisz.",
+              "focusEn": "stove",
+              "focusPl": "kuchenki"
+            },
+            {
+              "en": "There's a pot of soup on the stove.",
+              "pl": "Na kuchence stoi garnek zupy.",
+              "focusEn": "stove",
+              "focusPl": "kuchence"
+            }
+          ],
+          "acceptedAnswers": [
+            "stove",
+            "stovetop",
+            "range"
+          ],
+          "acceptedTranslations": [
+            "kuchenka",
+            "płyta kuchenna"
+          ]
+        },
+        {
+          "id": "cooking.cutting-board",
+          "term": "cutting board",
+          "ipa": "/ˈkʌtɪŋ ˌbɔːrd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "deska do krojenia",
+          "definition": "A flat board you cut food on.",
+          "register": "neutralny",
+          "contextPl": "Krojenie produktów",
+          "natural": "",
+          "forms": "cutting boards",
+          "collocations": "a wooden cutting board",
+          "synonyms": "chopping board",
+          "antonyms": "",
+          "notePl": "W USA „cutting board”, w Wielkiej Brytanii „chopping board”.",
+          "examples": [
+            {
+              "en": "Use the green cutting board for vegetables.",
+              "pl": "Używaj zielonej deski do krojenia do warzyw.",
+              "focusEn": "cutting board",
+              "focusPl": "deski do krojenia"
+            },
+            {
+              "en": "Rinse the cutting board after you cut raw chicken.",
+              "pl": "Opłucz deskę do krojenia po krojeniu surowego kurczaka.",
+              "focusEn": "cutting board",
+              "focusPl": "deskę do krojenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "cutting board",
+            "chopping board"
+          ],
+          "acceptedTranslations": [
+            "deska do krojenia",
+            "deska"
+          ]
+        },
+        {
+          "id": "cooking.mixing-bowl",
+          "term": "mixing bowl",
+          "ipa": "/ˈmɪksɪŋ ˌboʊl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "miska",
+          "definition": "A large bowl used for mixing ingredients.",
+          "register": "neutralny",
+          "contextPl": "Łączenie składników ciasta",
+          "natural": "",
+          "forms": "mixing bowls",
+          "collocations": "a large mixing bowl",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Get out the big mixing bowl for the dough.",
+              "pl": "Wyjmij dużą miskę na ciasto.",
+              "focusEn": "mixing bowl",
+              "focusPl": "miskę"
+            },
+            {
+              "en": "Put all the dry ingredients in one mixing bowl.",
+              "pl": "Wsyp wszystkie suche składniki do jednej miski.",
+              "focusEn": "mixing bowl",
+              "focusPl": "miski"
+            }
+          ],
+          "acceptedAnswers": [
+            "mixing bowl"
+          ],
+          "acceptedTranslations": [
+            "miska",
+            "miska do mieszania"
+          ]
+        },
+        {
+          "id": "cooking.blender",
+          "term": "blender",
+          "ipa": "/ˈblɛndər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "blender",
+          "definition": "An electric machine that mixes food into a liquid or smooth paste.",
+          "register": "neutralny",
+          "contextPl": "Robienie koktajli i zup krem",
+          "natural": "",
+          "forms": "blenders",
+          "collocations": "in the blender; blend until smooth",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I make smoothies in the blender every morning.",
+              "pl": "Codziennie rano robię koktajle w blenderze.",
+              "focusEn": "blender",
+              "focusPl": "blenderze"
+            },
+            {
+              "en": "Let the soup cool before you pour it into the blender.",
+              "pl": "Zostaw zupę do ostygnięcia, zanim przelejesz ją do blendera.",
+              "focusEn": "blender",
+              "focusPl": "blendera"
+            }
+          ],
+          "acceptedAnswers": [
+            "blender"
+          ],
+          "acceptedTranslations": [
+            "blender",
+            "mikser"
+          ]
+        },
+        {
+          "id": "cooking.spatula",
+          "term": "spatula",
+          "ipa": "/ˈspætʃələ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "łopatka",
+          "definition": "A tool with a wide flat blade for turning or scraping food.",
+          "register": "neutralny",
+          "contextPl": "Przewracanie i wyskrobywanie",
+          "natural": "",
+          "forms": "spatulas",
+          "collocations": "rubber spatula; flip with a spatula",
+          "synonyms": "turner",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Flip the pancake with a spatula.",
+              "pl": "Przewróć naleśnik łopatką.",
+              "focusEn": "spatula",
+              "focusPl": "łopatką"
+            },
+            {
+              "en": "Use a rubber spatula to scrape the bowl clean.",
+              "pl": "Użyj silikonowej szpatułki, żeby wyskrobać miskę do czysta.",
+              "focusEn": "spatula",
+              "focusPl": "szpatułki"
+            }
+          ],
+          "acceptedAnswers": [
+            "spatula"
+          ],
+          "acceptedTranslations": [
+            "łopatka",
+            "szpatułka"
+          ]
+        },
+        {
+          "id": "cooking.measuring-cup",
+          "term": "measuring cup",
+          "ipa": "/ˈmɛʒərɪŋ ˌkʌp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "miarka",
+          "definition": "A cup marked with amounts, used to measure ingredients.",
+          "register": "neutralny",
+          "contextPl": "Odmierzanie mąki i płynów",
+          "natural": "",
+          "forms": "measuring cups",
+          "collocations": "measuring cups and spoons",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Use a measuring cup for the flour, not a coffee mug.",
+              "pl": "Do mąki użyj miarki, nie kubka do kawy.",
+              "focusEn": "measuring cup",
+              "focusPl": "miarki"
+            },
+            {
+              "en": "The measuring cups are in the drawer next to the stove.",
+              "pl": "Miarki są w szufladzie obok kuchenki.",
+              "focusEn": "measuring cups",
+              "focusPl": "Miarki"
+            }
+          ],
+          "acceptedAnswers": [
+            "measuring cup"
+          ],
+          "acceptedTranslations": [
+            "miarka",
+            "kubek z miarką"
+          ]
+        },
+        {
+          "id": "cooking.baking-sheet",
+          "term": "baking sheet",
+          "ipa": "/ˈbeɪkɪŋ ˌʃiːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "blacha do pieczenia",
+          "definition": "A flat metal tray for baking food in the oven.",
+          "register": "neutralny",
+          "contextPl": "Pieczenie w piekarniku",
+          "natural": "sheet pan",
+          "forms": "baking sheets",
+          "collocations": "line a baking sheet",
+          "synonyms": "sheet pan; cookie sheet",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Line the baking sheet with parchment paper.",
+              "pl": "Wyłóż blachę do pieczenia papierem do pieczenia.",
+              "focusEn": "baking sheet",
+              "focusPl": "blachę do pieczenia"
+            },
+            {
+              "en": "Spread the potatoes out on a baking sheet.",
+              "pl": "Rozłóż ziemniaki na blasze do pieczenia.",
+              "focusEn": "baking sheet",
+              "focusPl": "blasze do pieczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "baking sheet",
+            "sheet pan",
+            "cookie sheet"
+          ],
+          "acceptedTranslations": [
+            "blacha do pieczenia",
+            "blacha"
+          ]
+        },
+        {
+          "id": "cooking.grater",
+          "term": "grater",
+          "ipa": "/ˈɡreɪtər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "tarka",
+          "definition": "A metal tool with sharp holes for grating food.",
+          "register": "neutralny",
+          "contextPl": "Ścieranie sera i warzyw",
+          "natural": "",
+          "forms": "graters",
+          "collocations": "cheese grater; box grater",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Where's the cheese grater? I need it for the pizza.",
+              "pl": "Gdzie jest tarka do sera? Potrzebuję jej do pizzy.",
+              "focusEn": "grater",
+              "focusPl": "tarka"
+            },
+            {
+              "en": "Be careful with your fingers on that grater.",
+              "pl": "Uważaj na palce przy tej tarce.",
+              "focusEn": "grater",
+              "focusPl": "tarce"
+            }
+          ],
+          "acceptedAnswers": [
+            "grater"
+          ],
+          "acceptedTranslations": [
+            "tarka"
+          ]
+        },
+        {
+          "id": "cooking.oven-mitt",
+          "term": "oven mitt",
+          "ipa": "/ˈʌvən ˌmɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "rękawica kuchenna",
+          "definition": "A thick glove used to hold hot dishes.",
+          "register": "neutralny",
+          "contextPl": "Wyjmowanie gorących naczyń z piekarnika",
+          "natural": "pot holder",
+          "forms": "oven mitts",
+          "collocations": "use an oven mitt",
+          "synonyms": "pot holder",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Use an oven mitt; that tray is really hot.",
+              "pl": "Użyj rękawicy kuchennej, ta blacha jest bardzo gorąca.",
+              "focusEn": "oven mitt",
+              "focusPl": "rękawicy kuchennej"
+            },
+            {
+              "en": "I can only find one oven mitt in the drawer.",
+              "pl": "W szufladzie mogę znaleźć tylko jedną rękawicę kuchenną.",
+              "focusEn": "oven mitt",
+              "focusPl": "rękawicę kuchenną"
+            }
+          ],
+          "acceptedAnswers": [
+            "oven mitt",
+            "oven glove"
+          ],
+          "acceptedTranslations": [
+            "rękawica kuchenna",
+            "łapka kuchenna"
+          ]
+        },
+        {
+          "id": "cooking.colander",
+          "term": "colander",
+          "ipa": "/ˈkɑːləndər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "durszlak",
+          "definition": "A bowl with holes used to drain water from food.",
+          "register": "neutralny",
+          "contextPl": "Odcedzanie makaronu i płukanie owoców",
+          "natural": "strainer",
+          "forms": "colanders",
+          "collocations": "drain in a colander",
+          "synonyms": "strainer",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Pour the pasta into the colander in the sink.",
+              "pl": "Wlej makaron do durszlaka w zlewie.",
+              "focusEn": "colander",
+              "focusPl": "durszlaka"
+            },
+            {
+              "en": "Rinse the berries in a colander under cold water.",
+              "pl": "Opłucz owoce w durszlaku pod zimną wodą.",
+              "focusEn": "colander",
+              "focusPl": "durszlaku"
+            }
+          ],
+          "acceptedAnswers": [
+            "colander",
+            "strainer"
+          ],
+          "acceptedTranslations": [
+            "durszlak",
+            "sito"
+          ]
+        },
+        {
+          "id": "cooking.ladle",
+          "term": "ladle",
+          "ipa": "/ˈleɪdəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "chochla",
+          "definition": "A big deep spoon with a long handle, used for serving soup.",
+          "register": "neutralny",
+          "contextPl": "Nalewanie zupy",
+          "natural": "",
+          "forms": "ladles",
+          "collocations": "soup ladle",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hand me the ladle so I can serve the soup.",
+              "pl": "Podaj mi chochlę, żebym mógł nalać zupy.",
+              "focusEn": "ladle",
+              "focusPl": "chochlę"
+            },
+            {
+              "en": "The ladle is hanging on the hook above the stove.",
+              "pl": "Chochla wisi na haczyku nad kuchenką.",
+              "focusEn": "ladle",
+              "focusPl": "Chochla"
+            }
+          ],
+          "acceptedAnswers": [
+            "ladle"
+          ],
+          "acceptedTranslations": [
+            "chochla",
+            "łyżka wazowa"
+          ]
+        },
+        {
+          "id": "cooking.peeler",
+          "term": "peeler",
+          "ipa": "/ˈpiːlər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "obieraczka",
+          "definition": "A small tool for removing the skin of fruit and vegetables.",
+          "register": "neutralny",
+          "contextPl": "Obieranie warzyw",
+          "natural": "",
+          "forms": "peelers",
+          "collocations": "vegetable peeler; potato peeler",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A peeler is faster than a knife for carrots.",
+              "pl": "Obieraczka jest szybsza niż nóż przy marchewkach.",
+              "focusEn": "peeler",
+              "focusPl": "Obieraczka"
+            },
+            {
+              "en": "I can't find the peeler; did you put it in the dishwasher?",
+              "pl": "Nie mogę znaleźć obieraczki, wstawiłeś ją do zmywarki?",
+              "focusEn": "peeler",
+              "focusPl": "obieraczki"
+            }
+          ],
+          "acceptedAnswers": [
+            "peeler",
+            "vegetable peeler"
+          ],
+          "acceptedTranslations": [
+            "obieraczka",
+            "obierak"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cooking.recipes",
+      "namePl": "Przepisy i odmierzanie",
+      "scenePl": "Gotowanie według przepisu wyświetlonego na telefonie opartym o blat",
+      "entries": [
+        {
+          "id": "cooking.recipe",
+          "term": "recipe",
+          "ipa": "/ˈrɛsəpi/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przepis",
+          "definition": "A set of instructions telling you how to cook something.",
+          "register": "neutralny",
+          "contextPl": "Gotowanie według instrukcji",
+          "natural": "",
+          "forms": "recipes",
+          "collocations": "follow a recipe; a recipe for lasagna",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This recipe says to use three eggs, not two.",
+              "pl": "Ten przepis każe użyć trzech jajek, a nie dwóch.",
+              "focusEn": "recipe",
+              "focusPl": "przepis"
+            },
+            {
+              "en": "Can you send me the recipe for your lasagna?",
+              "pl": "Możesz mi wysłać przepis na swoją lasagne?",
+              "focusEn": "recipe",
+              "focusPl": "przepis"
+            }
+          ],
+          "acceptedAnswers": [
+            "recipe"
+          ],
+          "acceptedTranslations": [
+            "przepis"
+          ]
+        },
+        {
+          "id": "cooking.ingredient",
+          "term": "ingredient",
+          "ipa": "/ɪnˈɡriːdiənt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "składnik",
+          "definition": "One of the foods you need to make a dish.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie, czego potrzeba do przepisu",
+          "natural": "",
+          "forms": "ingredients",
+          "collocations": "simple ingredients; dry ingredients",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Check that we have every ingredient before we start.",
+              "pl": "Sprawdź, czy mamy wszystkie składniki, zanim zaczniemy.",
+              "focusEn": "ingredient",
+              "focusPl": "składniki"
+            },
+            {
+              "en": "The recipe only needs five simple ingredients.",
+              "pl": "Przepis wymaga tylko pięciu prostych składników.",
+              "focusEn": "ingredients",
+              "focusPl": "składników"
+            }
+          ],
+          "acceptedAnswers": [
+            "ingredient"
+          ],
+          "acceptedTranslations": [
+            "składnik"
+          ]
+        },
+        {
+          "id": "cooking.step",
+          "term": "step",
+          "ipa": "/stɛp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "krok",
+          "definition": "One of the actions in a set of instructions.",
+          "register": "neutralny",
+          "contextPl": "Kolejne etapy przepisu",
+          "natural": "",
+          "forms": "steps",
+          "collocations": "step by step; skip a step",
+          "synonyms": "stage",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Read through every step before you start cooking.",
+              "pl": "Przeczytaj każdy krok, zanim zaczniesz gotować.",
+              "focusEn": "step",
+              "focusPl": "krok"
+            },
+            {
+              "en": "I skipped a step and forgot to add the eggs.",
+              "pl": "Pominąłem jeden krok i zapomniałem dodać jajek.",
+              "focusEn": "step",
+              "focusPl": "krok"
+            }
+          ],
+          "acceptedAnswers": [
+            "step"
+          ],
+          "acceptedTranslations": [
+            "krok",
+            "etap"
+          ]
+        },
+        {
+          "id": "cooking.teaspoon",
+          "term": "teaspoon",
+          "ipa": "/ˈtiːˌspuːn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "łyżeczka",
+          "definition": "A small spoon, also used as a measure in recipes.",
+          "register": "neutralny",
+          "contextPl": "Odmierzanie małych ilości",
+          "natural": "",
+          "forms": "teaspoons",
+          "collocations": "a teaspoon of salt; half a teaspoon",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W przepisach skrót „tsp”.",
+          "examples": [
+            {
+              "en": "Add one teaspoon of baking soda.",
+              "pl": "Dodaj jedną łyżeczkę sody oczyszczonej.",
+              "focusEn": "teaspoon",
+              "focusPl": "łyżeczkę"
+            },
+            {
+              "en": "The recipe calls for half a teaspoon of cinnamon.",
+              "pl": "Przepis wymaga pół łyżeczki cynamonu.",
+              "focusEn": "teaspoon",
+              "focusPl": "łyżeczki"
+            }
+          ],
+          "acceptedAnswers": [
+            "teaspoon"
+          ],
+          "acceptedTranslations": [
+            "łyżeczka"
+          ]
+        },
+        {
+          "id": "cooking.tablespoon",
+          "term": "tablespoon",
+          "ipa": "/ˈteɪbəlˌspuːn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "łyżka",
+          "definition": "A large spoon, also used as a measure in recipes.",
+          "register": "neutralny",
+          "contextPl": "Odmierzanie oleju, masła, przypraw",
+          "natural": "",
+          "forms": "tablespoons",
+          "collocations": "two tablespoons of oil",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W przepisach skrót „tbsp”.",
+          "examples": [
+            {
+              "en": "Add two tablespoons of olive oil to the pan.",
+              "pl": "Dodaj na patelnię dwie łyżki oliwy.",
+              "focusEn": "tablespoons",
+              "focusPl": "łyżki"
+            },
+            {
+              "en": "Is that a tablespoon or a teaspoon of salt?",
+              "pl": "To łyżka czy łyżeczka soli?",
+              "focusEn": "tablespoon",
+              "focusPl": "łyżka"
+            }
+          ],
+          "acceptedAnswers": [
+            "tablespoon"
+          ],
+          "acceptedTranslations": [
+            "łyżka",
+            "łyżka stołowa"
+          ]
+        },
+        {
+          "id": "cooking.cup",
+          "term": "cup",
+          "ipa": "/kʌp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "szklanka",
+          "definition": "A unit of measure in American recipes, about 240 milliliters.",
+          "register": "neutralny",
+          "contextPl": "Amerykańskie miary w przepisach",
+          "natural": "",
+          "forms": "cups",
+          "collocations": "a cup of flour; half a cup",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Amerykańska miara „cup” to ok. 240 ml.",
+          "examples": [
+            {
+              "en": "You'll need two cups of flour for this bread.",
+              "pl": "Do tego chleba potrzebujesz dwóch szklanek mąki.",
+              "focusEn": "cups",
+              "focusPl": "szklanek"
+            },
+            {
+              "en": "Measure one cup of milk and warm it slightly.",
+              "pl": "Odmierz jedną szklankę mleka i lekko ją podgrzej.",
+              "focusEn": "cup",
+              "focusPl": "szklankę"
+            }
+          ],
+          "acceptedAnswers": [
+            "cup"
+          ],
+          "acceptedTranslations": [
+            "szklanka",
+            "miarka"
+          ]
+        },
+        {
+          "id": "cooking.measure",
+          "term": "measure",
+          "ipa": "/ˈmɛʒər/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odmierzyć",
+          "definition": "To find out the exact amount of something.",
+          "register": "neutralny",
+          "contextPl": "Odmierzanie składników",
+          "natural": "",
+          "forms": "measured",
+          "collocations": "measure the flour; measure carefully",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Measure the flour carefully, or the cake will be dry.",
+              "pl": "Odmierz mąkę dokładnie, bo inaczej ciasto będzie suche.",
+              "focusEn": "Measure",
+              "focusPl": "Odmierz"
+            },
+            {
+              "en": "I never measure spices; I just add them by eye.",
+              "pl": "Nigdy nie odmierzam przypraw, dodaję je na oko.",
+              "focusEn": "measure",
+              "focusPl": "odmierzam"
+            }
+          ],
+          "acceptedAnswers": [
+            "measure"
+          ],
+          "acceptedTranslations": [
+            "odmierzyć",
+            "odmierzać",
+            "zmierzyć"
+          ]
+        },
+        {
+          "id": "cooking.pinch",
+          "term": "pinch",
+          "ipa": "/pɪntʃ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "szczypta",
+          "definition": "A very small amount you can hold between your finger and thumb.",
+          "register": "neutralny",
+          "contextPl": "Dodawanie odrobiny soli lub przypraw",
+          "natural": "",
+          "forms": "pinches",
+          "collocations": "a pinch of salt; a pinch of sugar",
+          "synonyms": "dash",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Finish the soup with a pinch of black pepper.",
+              "pl": "Na koniec dodaj do zupy szczyptę czarnego pieprzu.",
+              "focusEn": "pinch",
+              "focusPl": "szczyptę"
+            },
+            {
+              "en": "The recipe just says a pinch of nutmeg.",
+              "pl": "Przepis mówi tylko o szczypcie gałki muszkatołowej.",
+              "focusEn": "pinch",
+              "focusPl": "szczypcie"
+            }
+          ],
+          "acceptedAnswers": [
+            "pinch"
+          ],
+          "acceptedTranslations": [
+            "szczypta",
+            "odrobina"
+          ]
+        },
+        {
+          "id": "cooking.serving",
+          "term": "serving",
+          "ipa": "/ˈsɜːrvɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "porcja",
+          "definition": "An amount of food for one person.",
+          "register": "neutralny",
+          "contextPl": "Ilość jedzenia z przepisu",
+          "natural": "",
+          "forms": "servings",
+          "collocations": "makes four servings; per serving",
+          "synonyms": "portion",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This recipe makes four servings, which is perfect for us.",
+              "pl": "Z tego przepisu wychodzą cztery porcje, w sam raz dla nas.",
+              "focusEn": "servings",
+              "focusPl": "porcje"
+            },
+            {
+              "en": "One serving has about four hundred calories.",
+              "pl": "Jedna porcja ma około czterystu kalorii.",
+              "focusEn": "serving",
+              "focusPl": "porcja"
+            }
+          ],
+          "acceptedAnswers": [
+            "serving",
+            "portion"
+          ],
+          "acceptedTranslations": [
+            "porcja"
+          ]
+        },
+        {
+          "id": "cooking.double",
+          "term": "double",
+          "ipa": "/ˈdʌbəl/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "podwoić",
+          "definition": "To make an amount twice as big.",
+          "register": "neutralny",
+          "contextPl": "Gotowanie dla większej liczby osób",
+          "natural": "",
+          "forms": "doubled",
+          "collocations": "double the recipe",
+          "synonyms": "",
+          "antonyms": "halve",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's double the recipe since everyone is coming.",
+              "pl": "Podwójmy ilości z przepisu, skoro wszyscy przychodzą.",
+              "focusEn": "double",
+              "focusPl": "Podwójmy"
+            },
+            {
+              "en": "I doubled the sauce because my family loves it.",
+              "pl": "Podwoiłem ilość sosu, bo moja rodzina go uwielbia.",
+              "focusEn": "doubled",
+              "focusPl": "Podwoiłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "double"
+          ],
+          "acceptedTranslations": [
+            "podwoić",
+            "podwajać"
+          ]
+        },
+        {
+          "id": "cooking.room-temperature",
+          "term": "room temperature",
+          "ipa": "/ˌruːm ˈtɛmpərətʃər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "temperatura pokojowa",
+          "definition": "The normal temperature inside a home.",
+          "register": "neutralny",
+          "contextPl": "Przygotowanie masła i jajek do ciasta",
+          "natural": "",
+          "forms": "",
+          "collocations": "at room temperature",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let the butter soften at room temperature.",
+              "pl": "Zostaw masło, żeby zmiękło w temperaturze pokojowej.",
+              "focusEn": "room temperature",
+              "focusPl": "temperaturze pokojowej"
+            },
+            {
+              "en": "The recipe says the eggs should be at room temperature.",
+              "pl": "Według przepisu jajka powinny mieć temperaturę pokojową.",
+              "focusEn": "room temperature",
+              "focusPl": "temperaturę pokojową"
+            }
+          ],
+          "acceptedAnswers": [
+            "room temperature"
+          ],
+          "acceptedTranslations": [
+            "temperatura pokojowa"
+          ]
+        },
+        {
+          "id": "cooking.ounce",
+          "term": "ounce",
+          "ipa": "/aʊns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "uncja",
+          "definition": "A unit of weight equal to about 28 grams.",
+          "register": "neutralny",
+          "contextPl": "Amerykańskie jednostki wagi w przepisach",
+          "natural": "",
+          "forms": "ounces",
+          "collocations": "eight ounces of cheese",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W przepisach skrót „oz”; funt to „pound” („lb”).",
+          "examples": [
+            {
+              "en": "You'll need eight ounces of cream cheese.",
+              "pl": "Będziesz potrzebować ośmiu uncji serka śmietankowego.",
+              "focusEn": "ounces",
+              "focusPl": "uncji"
+            },
+            {
+              "en": "One ounce is about twenty-eight grams.",
+              "pl": "Jedna uncja to około dwudziestu ośmiu gramów.",
+              "focusEn": "ounce",
+              "focusPl": "uncja"
+            }
+          ],
+          "acceptedAnswers": [
+            "ounce",
+            "oz"
+          ],
+          "acceptedTranslations": [
+            "uncja"
+          ]
+        },
+        {
+          "id": "cooking.to-taste",
+          "term": "to taste",
+          "ipa": "/tə ˈteɪst/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "do smaku",
+          "definition": "In the amount that gives the flavor you like.",
+          "register": "neutralny",
+          "contextPl": "Instrukcja doprawiania w przepisie",
+          "natural": "",
+          "forms": "",
+          "collocations": "salt to taste; season to taste",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Season with salt and pepper to taste.",
+              "pl": "Dopraw solą i pieprzem do smaku.",
+              "focusEn": "to taste",
+              "focusPl": "do smaku"
+            },
+            {
+              "en": "The recipe says to add sugar to taste, so start small.",
+              "pl": "Przepis mówi, żeby dodać cukru do smaku, więc zacznij od małej ilości.",
+              "focusEn": "to taste",
+              "focusPl": "do smaku"
+            }
+          ],
+          "acceptedAnswers": [
+            "to taste"
+          ],
+          "acceptedTranslations": [
+            "do smaku",
+            "według uznania"
+          ]
+        },
+        {
+          "id": "cooking.from-scratch",
+          "term": "from scratch",
+          "ipa": "/frəm ˈskrætʃ/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "od podstaw",
+          "definition": "Using basic ingredients, not ready-made products.",
+          "register": "neutralny",
+          "contextPl": "Gotowanie bez gotowych półproduktów",
+          "natural": "homemade",
+          "forms": "",
+          "collocations": "make from scratch; cook from scratch",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She makes her pizza dough from scratch every Friday.",
+              "pl": "W każdy piątek robi ciasto na pizzę od podstaw.",
+              "focusEn": "from scratch",
+              "focusPl": "od podstaw"
+            },
+            {
+              "en": "Making pasta from scratch takes longer than I expected.",
+              "pl": "Robienie makaronu od zera zajmuje więcej czasu, niż się spodziewałem.",
+              "focusEn": "from scratch",
+              "focusPl": "od zera"
+            }
+          ],
+          "acceptedAnswers": [
+            "from scratch"
+          ],
+          "acceptedTranslations": [
+            "od podstaw",
+            "od zera",
+            "samodzielnie"
+          ]
+        },
+        {
+          "id": "cooking.call-for",
+          "term": "call for",
+          "ipa": "/ˈkɔːl fɔːr/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wymagać",
+          "definition": "Of a recipe: to say that a certain ingredient is needed.",
+          "register": "neutralny",
+          "contextPl": "Czytanie listy składników",
+          "natural": "",
+          "forms": "calls for – called for",
+          "collocations": "the recipe calls for",
+          "synonyms": "require; need",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This recipe calls for fresh basil, not dried.",
+              "pl": "Ten przepis wymaga świeżej bazylii, a nie suszonej.",
+              "focusEn": "calls for",
+              "focusPl": "wymaga"
+            },
+            {
+              "en": "What does the recipe call for besides chicken?",
+              "pl": "Czego oprócz kurczaka wymaga przepis?",
+              "focusEn": "call for",
+              "focusPl": "wymaga"
+            }
+          ],
+          "acceptedAnswers": [
+            "call for"
+          ],
+          "acceptedTranslations": [
+            "wymagać",
+            "potrzebować"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cooking.flavor",
+      "namePl": "Smak i przyprawy",
+      "scenePl": "Próbowanie sosu z łyżki i doprawianie potrawy przy kuchence",
+      "entries": [
+        {
+          "id": "cooking.salt",
+          "term": "salt",
+          "ipa": "/sɔːlt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "sól",
+          "definition": "A white substance used to give food flavor.",
+          "register": "neutralny",
+          "contextPl": "Doprawianie potraw",
+          "natural": "",
+          "forms": "",
+          "collocations": "a pinch of salt; add salt; sea salt",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This needs a little more salt.",
+              "pl": "Tu trzeba trochę więcej soli.",
+              "focusEn": "salt",
+              "focusPl": "soli"
+            },
+            {
+              "en": "Add the salt after the water starts boiling.",
+              "pl": "Dodaj sól, kiedy woda zacznie się gotować.",
+              "focusEn": "salt",
+              "focusPl": "sól"
+            }
+          ],
+          "acceptedAnswers": [
+            "salt"
+          ],
+          "acceptedTranslations": [
+            "sól"
+          ]
+        },
+        {
+          "id": "cooking.pepper",
+          "term": "pepper",
+          "ipa": "/ˈpɛpər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pieprz",
+          "definition": "A spice made from small dried black seeds, used to add a hot taste.",
+          "register": "neutralny",
+          "contextPl": "Doprawianie potraw",
+          "natural": "",
+          "forms": "",
+          "collocations": "black pepper; salt and pepper; freshly ground pepper",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Pepper” to też papryka (bell pepper).",
+          "examples": [
+            {
+              "en": "Grind some fresh black pepper over the pasta.",
+              "pl": "Zmiel trochę świeżego czarnego pieprzu nad makaronem.",
+              "focusEn": "pepper",
+              "focusPl": "pieprzu"
+            },
+            {
+              "en": "Too much pepper made the sauce really hot.",
+              "pl": "Za dużo pieprzu sprawiło, że sos był bardzo ostry.",
+              "focusEn": "pepper",
+              "focusPl": "pieprzu"
+            }
+          ],
+          "acceptedAnswers": [
+            "pepper"
+          ],
+          "acceptedTranslations": [
+            "pieprz"
+          ]
+        },
+        {
+          "id": "cooking.sauce",
+          "term": "sauce",
+          "ipa": "/sɔːs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "sos",
+          "definition": "A thick liquid served with food to add flavor.",
+          "register": "neutralny",
+          "contextPl": "Przygotowywanie sosu do dania",
+          "natural": "",
+          "forms": "sauces",
+          "collocations": "tomato sauce; pasta sauce; thicken a sauce",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The sauce needs to cook a bit longer.",
+              "pl": "Sos musi się jeszcze chwilę pogotować.",
+              "focusEn": "sauce",
+              "focusPl": "Sos"
+            },
+            {
+              "en": "Stir the sauce so it doesn't burn on the bottom.",
+              "pl": "Zamieszaj sos, żeby nie przypalił się na dnie.",
+              "focusEn": "sauce",
+              "focusPl": "sos"
+            }
+          ],
+          "acceptedAnswers": [
+            "sauce"
+          ],
+          "acceptedTranslations": [
+            "sos"
+          ]
+        },
+        {
+          "id": "cooking.taste",
+          "term": "taste",
+          "ipa": "/teɪst/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "spróbować",
+          "definition": "To put a little food in your mouth to check its flavor.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie smaku podczas gotowania",
+          "natural": "",
+          "forms": "tasted",
+          "collocations": "taste the sauce; taste as you go",
+          "synonyms": "try",
+          "antonyms": "",
+          "notePl": "W tym znaczeniu „taste” = próbować; „It tastes good” = smakuje dobrze.",
+          "examples": [
+            {
+              "en": "Taste the sauce and tell me if it needs salt.",
+              "pl": "Spróbuj sosu i powiedz, czy trzeba dosolić.",
+              "focusEn": "Taste",
+              "focusPl": "Spróbuj"
+            },
+            {
+              "en": "I tasted the soup and added a little more pepper.",
+              "pl": "Spróbowałem zupy i dodałem trochę więcej pieprzu.",
+              "focusEn": "tasted",
+              "focusPl": "Spróbowałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "taste",
+            "try"
+          ],
+          "acceptedTranslations": [
+            "spróbować",
+            "próbować"
+          ]
+        },
+        {
+          "id": "cooking.salty",
+          "term": "salty",
+          "ipa": "/ˈsɔːlti/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "słony",
+          "definition": "Containing or tasting of a lot of salt.",
+          "register": "neutralny",
+          "contextPl": "Ocena smaku potrawy",
+          "natural": "",
+          "forms": "saltier – saltiest",
+          "collocations": "too salty; a bit salty",
+          "synonyms": "",
+          "antonyms": "sweet",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The soup is too salty; add some water.",
+              "pl": "Zupa jest za słona, dolej trochę wody.",
+              "focusEn": "salty",
+              "focusPl": "słona"
+            },
+            {
+              "en": "Bacon makes the dish salty, so skip the extra salt.",
+              "pl": "Boczek sprawia, że danie jest słone, więc nie dosalaj.",
+              "focusEn": "salty",
+              "focusPl": "słone"
+            }
+          ],
+          "acceptedAnswers": [
+            "salty"
+          ],
+          "acceptedTranslations": [
+            "słony"
+          ]
+        },
+        {
+          "id": "cooking.sour",
+          "term": "sour",
+          "ipa": "/ˈsaʊər/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kwaśny",
+          "definition": "Having a sharp taste, like lemon or vinegar.",
+          "register": "neutralny",
+          "contextPl": "Ocena smaku potrawy",
+          "natural": "",
+          "forms": "",
+          "collocations": "too sour; sweet and sour",
+          "synonyms": "tart",
+          "antonyms": "sweet",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This sauce is too sour; add a little sugar.",
+              "pl": "Ten sos jest za kwaśny, dodaj trochę cukru.",
+              "focusEn": "sour",
+              "focusPl": "kwaśny"
+            },
+            {
+              "en": "Lime juice gives the dressing a nice sour kick.",
+              "pl": "Sok z limonki nadaje sosowi przyjemnie kwaśny akcent.",
+              "focusEn": "sour",
+              "focusPl": "kwaśny"
+            }
+          ],
+          "acceptedAnswers": [
+            "sour"
+          ],
+          "acceptedTranslations": [
+            "kwaśny"
+          ]
+        },
+        {
+          "id": "cooking.spice",
+          "term": "spice",
+          "ipa": "/spaɪs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przyprawa",
+          "definition": "A dried seed, root or bark, like cinnamon or cumin, used for flavor.",
+          "register": "neutralny",
+          "contextPl": "Doprawianie potraw",
+          "natural": "",
+          "forms": "spices",
+          "collocations": "spice rack; a mix of spices",
+          "synonyms": "seasoning",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Which spices do you put in your chili?",
+              "pl": "Jakie przyprawy dodajesz do chili?",
+              "focusEn": "spices",
+              "focusPl": "przyprawy"
+            },
+            {
+              "en": "The spice rack is right above the stove.",
+              "pl": "Półka z przyprawami jest tuż nad kuchenką.",
+              "focusEn": "spice",
+              "focusPl": "przyprawami"
+            }
+          ],
+          "acceptedAnswers": [
+            "spice"
+          ],
+          "acceptedTranslations": [
+            "przyprawa"
+          ]
+        },
+        {
+          "id": "cooking.olive-oil",
+          "term": "olive oil",
+          "ipa": "/ˌɑːləv ˈɔɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "oliwa",
+          "definition": "Oil made from olives, used in cooking and salads.",
+          "register": "neutralny",
+          "contextPl": "Tłuszcz do smażenia i sałatek",
+          "natural": "",
+          "forms": "",
+          "collocations": "extra virgin olive oil; a drizzle of olive oil",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Drizzle some olive oil over the tomatoes.",
+              "pl": "Skrop pomidory odrobiną oliwy.",
+              "focusEn": "olive oil",
+              "focusPl": "oliwy"
+            },
+            {
+              "en": "We're almost out of olive oil.",
+              "pl": "Prawie skończyła nam się oliwa.",
+              "focusEn": "olive oil",
+              "focusPl": "oliwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "olive oil"
+          ],
+          "acceptedTranslations": [
+            "oliwa",
+            "oliwa z oliwek"
+          ]
+        },
+        {
+          "id": "cooking.flavor",
+          "term": "flavor",
+          "ipa": "/ˈfleɪvər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "smak",
+          "definition": "The particular taste of food.",
+          "register": "neutralny",
+          "contextPl": "Opis smaku potrawy",
+          "natural": "",
+          "forms": "flavors",
+          "collocations": "a lot of flavor; rich flavor; add flavor",
+          "synonyms": "taste",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska: „flavor” (brytyjska: „flavour”).",
+          "examples": [
+            {
+              "en": "Lemon gives the fish a fresh flavor.",
+              "pl": "Cytryna nadaje rybie świeży smak.",
+              "focusEn": "flavor",
+              "focusPl": "smak"
+            },
+            {
+              "en": "Let it simmer longer so the flavors come together.",
+              "pl": "Niech się dłużej pogotuje, żeby smaki się połączyły.",
+              "focusEn": "flavors",
+              "focusPl": "smaki"
+            }
+          ],
+          "acceptedAnswers": [
+            "flavor"
+          ],
+          "acceptedTranslations": [
+            "smak",
+            "aromat"
+          ]
+        },
+        {
+          "id": "cooking.herb",
+          "term": "herb",
+          "ipa": "/ɜːrb/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zioło",
+          "definition": "A plant whose leaves are used to add flavor to food.",
+          "register": "neutralny",
+          "contextPl": "Świeże i suszone zioła",
+          "natural": "",
+          "forms": "herbs",
+          "collocations": "fresh herbs; dried herbs",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA „herb” wymawia się bez „h”: /ɜːrb/.",
+          "examples": [
+            {
+              "en": "Add the fresh herbs at the very end.",
+              "pl": "Dodaj świeże zioła na samym końcu.",
+              "focusEn": "herbs",
+              "focusPl": "zioła"
+            },
+            {
+              "en": "Basil is my favorite herb for tomato sauce.",
+              "pl": "Bazylia to moje ulubione zioło do sosu pomidorowego.",
+              "focusEn": "herb",
+              "focusPl": "zioło"
+            }
+          ],
+          "acceptedAnswers": [
+            "herb"
+          ],
+          "acceptedTranslations": [
+            "zioło",
+            "przyprawa ziołowa"
+          ]
+        },
+        {
+          "id": "cooking.season",
+          "term": "season",
+          "ipa": "/ˈsiːzən/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "doprawić",
+          "definition": "To add salt, pepper or spices to food.",
+          "register": "neutralny",
+          "contextPl": "Nadawanie potrawie smaku",
+          "natural": "",
+          "forms": "seasoned",
+          "collocations": "season with salt; well seasoned",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Season the chicken well before you put it in the pan.",
+              "pl": "Dobrze dopraw kurczaka, zanim włożysz go na patelnię.",
+              "focusEn": "Season",
+              "focusPl": "dopraw"
+            },
+            {
+              "en": "The sauce tastes flat; did you season it?",
+              "pl": "Sos jest mdły, doprawiłeś go?",
+              "focusEn": "season",
+              "focusPl": "doprawiłeś"
+            }
+          ],
+          "acceptedAnswers": [
+            "season"
+          ],
+          "acceptedTranslations": [
+            "doprawić",
+            "doprawiać",
+            "przyprawić"
+          ]
+        },
+        {
+          "id": "cooking.sprinkle",
+          "term": "sprinkle",
+          "ipa": "/ˈsprɪŋkəl/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "posypać",
+          "definition": "To drop small pieces or drops of something over food.",
+          "register": "neutralny",
+          "contextPl": "Posypywanie potrawy przed podaniem",
+          "natural": "",
+          "forms": "sprinkled",
+          "collocations": "sprinkle with cheese; sprinkle on top",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sprinkle some parsley on top before serving.",
+              "pl": "Przed podaniem posyp wierzch natką pietruszki.",
+              "focusEn": "Sprinkle",
+              "focusPl": "posyp"
+            },
+            {
+              "en": "She sprinkled cheese over the soup.",
+              "pl": "Posypała zupę serem.",
+              "focusEn": "sprinkled",
+              "focusPl": "Posypała"
+            }
+          ],
+          "acceptedAnswers": [
+            "sprinkle"
+          ],
+          "acceptedTranslations": [
+            "posypać",
+            "posypywać",
+            "oprószyć"
+          ]
+        },
+        {
+          "id": "cooking.vinegar",
+          "term": "vinegar",
+          "ipa": "/ˈvɪnɪɡər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ocet",
+          "definition": "A sour liquid used in salad dressings and pickles.",
+          "register": "neutralny",
+          "contextPl": "Kwaśne dodatki do sosów",
+          "natural": "",
+          "forms": "",
+          "collocations": "apple cider vinegar; a splash of vinegar",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A splash of vinegar brightens up the sauce.",
+              "pl": "Odrobina octu ożywia smak sosu.",
+              "focusEn": "vinegar",
+              "focusPl": "octu"
+            },
+            {
+              "en": "We used apple cider vinegar for the dressing.",
+              "pl": "Do sosu użyliśmy octu jabłkowego.",
+              "focusEn": "vinegar",
+              "focusPl": "octu jabłkowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "vinegar"
+          ],
+          "acceptedTranslations": [
+            "ocet"
+          ]
+        },
+        {
+          "id": "cooking.bland",
+          "term": "bland",
+          "ipa": "/blænd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "mdły",
+          "definition": "Without much flavor.",
+          "register": "neutralny",
+          "contextPl": "Narzekanie na brak smaku",
+          "natural": "",
+          "forms": "blander – blandest",
+          "collocations": "a bit bland; bland food",
+          "synonyms": "tasteless",
+          "antonyms": "flavorful",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The rice is a little bland; add some garlic.",
+              "pl": "Ryż jest trochę mdły, dodaj czosnku.",
+              "focusEn": "bland",
+              "focusPl": "mdły"
+            },
+            {
+              "en": "Without salt, this soup tastes really bland.",
+              "pl": "Bez soli ta zupa jest naprawdę bez smaku.",
+              "focusEn": "bland",
+              "focusPl": "bez smaku"
+            }
+          ],
+          "acceptedAnswers": [
+            "bland"
+          ],
+          "acceptedTranslations": [
+            "mdły",
+            "bez smaku",
+            "nijaki"
+          ]
+        },
+        {
+          "id": "cooking.savory",
+          "term": "savory",
+          "ipa": "/ˈseɪvəri/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wytrawny",
+          "definition": "Salty or spicy rather than sweet.",
+          "register": "neutralny",
+          "contextPl": "Odróżnianie dań słodkich od wytrawnych",
+          "natural": "",
+          "forms": "",
+          "collocations": "savory dishes; sweet or savory",
+          "synonyms": "",
+          "antonyms": "sweet",
+          "notePl": "Pisownia amerykańska: „savory” (brytyjska: „savoury”).",
+          "examples": [
+            {
+              "en": "This pie is savory, with cheese and onions inside.",
+              "pl": "To ciasto jest wytrawne, z serem i cebulą w środku.",
+              "focusEn": "savory",
+              "focusPl": "wytrawne"
+            },
+            {
+              "en": "A little soy sauce makes the dish more savory.",
+              "pl": "Odrobina sosu sojowego sprawia, że danie jest bardziej wyraziste.",
+              "focusEn": "savory",
+              "focusPl": "wyraziste"
+            }
+          ],
+          "acceptedAnswers": [
+            "savory"
+          ],
+          "acceptedTranslations": [
+            "wytrawny",
+            "wyrazisty",
+            "niesłodki"
+          ]
+        },
+        {
+          "id": "cooking.tangy",
+          "term": "tangy",
+          "ipa": "/ˈtæŋi/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "kwaskowy",
+          "definition": "Having a pleasant, sharp, slightly sour taste.",
+          "register": "neutralny",
+          "contextPl": "Opis sosów i dressingów",
+          "natural": "",
+          "forms": "tangier – tangiest",
+          "collocations": "tangy sauce; tangy dressing",
+          "synonyms": "zesty",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The yogurt sauce is tangy and fresh.",
+              "pl": "Sos jogurtowy jest kwaskowy i świeży.",
+              "focusEn": "tangy",
+              "focusPl": "kwaskowy"
+            },
+            {
+              "en": "Add more vinegar if you want it tangier.",
+              "pl": "Dodaj więcej octu, jeśli chcesz, żeby był bardziej kwaskowy.",
+              "focusEn": "tangier",
+              "focusPl": "bardziej kwaskowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "tangy"
+          ],
+          "acceptedTranslations": [
+            "kwaskowy",
+            "kwaskowaty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cooking.results",
+      "namePl": "Efekty i kuchenne wpadki",
+      "scenePl": "Wyjmowanie gotowej potrawy z piekarnika i ocena, co wyszło",
+      "entries": [
+        {
+          "id": "cooking.ready",
+          "term": "ready",
+          "ipa": "/ˈrɛdi/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "gotowy",
+          "definition": "Finished cooking and able to be eaten.",
+          "register": "neutralny",
+          "contextPl": "Ogłaszanie, że jedzenie gotowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "dinner is ready; almost ready",
+          "synonyms": "done",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Dinner is ready! Come to the table.",
+              "pl": "Obiad gotowy! Chodźcie do stołu.",
+              "focusEn": "ready",
+              "focusPl": "gotowy"
+            },
+            {
+              "en": "Is the chicken ready, or does it need more time?",
+              "pl": "Kurczak jest gotowy, czy potrzebuje więcej czasu?",
+              "focusEn": "ready",
+              "focusPl": "gotowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "ready",
+            "done"
+          ],
+          "acceptedTranslations": [
+            "gotowy"
+          ]
+        },
+        {
+          "id": "cooking.burn",
+          "term": "burn",
+          "ipa": "/bɜːrn/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przypalić",
+          "definition": "To spoil food by cooking it too long or with too much heat.",
+          "register": "neutralny",
+          "contextPl": "Kuchenna wpadka",
+          "natural": "",
+          "forms": "burned/burnt",
+          "collocations": "burn the toast; burn easily",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA częściej „burned” niż „burnt” jako forma czasownika.",
+          "examples": [
+            {
+              "en": "I burned the toast again this morning.",
+              "pl": "Znowu przypaliłem tosty dziś rano.",
+              "focusEn": "burned",
+              "focusPl": "przypaliłem"
+            },
+            {
+              "en": "Watch the garlic carefully, because it burns fast.",
+              "pl": "Uważnie pilnuj czosnku, bo szybko się przypala.",
+              "focusEn": "burns",
+              "focusPl": "przypala"
+            }
+          ],
+          "acceptedAnswers": [
+            "burn"
+          ],
+          "acceptedTranslations": [
+            "przypalić",
+            "przypalać",
+            "spalić"
+          ]
+        },
+        {
+          "id": "cooking.dry",
+          "term": "dry",
+          "ipa": "/draɪ/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "suchy",
+          "definition": "Without enough moisture, often from cooking too long.",
+          "register": "neutralny",
+          "contextPl": "Ocena pieczonego mięsa lub ciasta",
+          "natural": "",
+          "forms": "drier – driest",
+          "collocations": "a bit dry; dry chicken",
+          "synonyms": "",
+          "antonyms": "juicy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The turkey came out a little dry.",
+              "pl": "Indyk wyszedł trochę suchy.",
+              "focusEn": "dry",
+              "focusPl": "suchy"
+            },
+            {
+              "en": "I left the chicken in too long, and now it's dry.",
+              "pl": "Za długo trzymałem kurczaka w piekarniku i teraz jest suchy.",
+              "focusEn": "dry",
+              "focusPl": "suchy"
+            }
+          ],
+          "acceptedAnswers": [
+            "dry"
+          ],
+          "acceptedTranslations": [
+            "suchy",
+            "wysuszony"
+          ]
+        },
+        {
+          "id": "cooking.raw",
+          "term": "raw",
+          "ipa": "/rɔː/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "surowy",
+          "definition": "Not cooked.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie, czy potrawa jest dopieczona",
+          "natural": "",
+          "forms": "",
+          "collocations": "still raw; raw chicken; raw in the middle",
+          "synonyms": "uncooked",
+          "antonyms": "cooked",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The middle of the cake is still raw.",
+              "pl": "Środek ciasta jest jeszcze surowy.",
+              "focusEn": "raw",
+              "focusPl": "surowy"
+            },
+            {
+              "en": "Never eat raw chicken; cook it all the way through.",
+              "pl": "Nigdy nie jedz surowego kurczaka, piecz go do końca.",
+              "focusEn": "raw",
+              "focusPl": "surowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "raw"
+          ],
+          "acceptedTranslations": [
+            "surowy",
+            "niedopieczony"
+          ]
+        },
+        {
+          "id": "cooking.spill",
+          "term": "spill",
+          "ipa": "/spɪl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "rozlać",
+          "definition": "To accidentally let liquid flow out of a container.",
+          "register": "neutralny",
+          "contextPl": "Kuchenna wpadka",
+          "natural": "",
+          "forms": "spilled",
+          "collocations": "spill milk; spill something on the floor",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I spilled milk all over the counter.",
+              "pl": "Rozlałem mleko po całym blacie.",
+              "focusEn": "spilled",
+              "focusPl": "Rozlałem"
+            },
+            {
+              "en": "Careful not to spill the hot oil on the stove.",
+              "pl": "Uważaj, żeby nie rozlać gorącego oleju na kuchenkę.",
+              "focusEn": "spill",
+              "focusPl": "rozlać"
+            }
+          ],
+          "acceptedAnswers": [
+            "spill"
+          ],
+          "acceptedTranslations": [
+            "rozlać",
+            "rozlewać",
+            "wylać"
+          ]
+        },
+        {
+          "id": "cooking.turn-out",
+          "term": "turn out",
+          "ipa": "/ˌtɜːrn ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wyjść",
+          "definition": "To have a particular result in the end.",
+          "register": "neutralny",
+          "contextPl": "Ocena efektu gotowania",
+          "natural": "",
+          "forms": "turned out",
+          "collocations": "turn out well; turn out perfect",
+          "synonyms": "come out",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cake turned out perfect this time!",
+              "pl": "Tym razem ciasto wyszło idealnie!",
+              "focusEn": "turned out",
+              "focusPl": "wyszło"
+            },
+            {
+              "en": "My first loaf of bread didn't turn out very well.",
+              "pl": "Mój pierwszy bochenek chleba nie wyszedł zbyt dobrze.",
+              "focusEn": "turn out",
+              "focusPl": "wyszedł"
+            }
+          ],
+          "acceptedAnswers": [
+            "turn out",
+            "come out"
+          ],
+          "acceptedTranslations": [
+            "wyjść",
+            "udać się"
+          ]
+        },
+        {
+          "id": "cooking.crispy",
+          "term": "crispy",
+          "ipa": "/ˈkrɪspi/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "chrupiący",
+          "definition": "Hard and pleasantly crunchy on the outside.",
+          "register": "neutralny",
+          "contextPl": "Pochwała dobrze upieczonego dania",
+          "natural": "",
+          "forms": "crispier – crispiest",
+          "collocations": "crispy skin; crispy fries",
+          "synonyms": "crunchy",
+          "antonyms": "soggy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The potatoes came out golden and crispy.",
+              "pl": "Ziemniaki wyszły złociste i chrupiące.",
+              "focusEn": "crispy",
+              "focusPl": "chrupiące"
+            },
+            {
+              "en": "Leave the skin on so the chicken gets crispy.",
+              "pl": "Zostaw skórę, żeby kurczak był chrupiący.",
+              "focusEn": "crispy",
+              "focusPl": "chrupiący"
+            }
+          ],
+          "acceptedAnswers": [
+            "crispy",
+            "crisp"
+          ],
+          "acceptedTranslations": [
+            "chrupiący",
+            "chrupki"
+          ]
+        },
+        {
+          "id": "cooking.ruin",
+          "term": "ruin",
+          "ipa": "/ˈruːɪn/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zepsuć",
+          "definition": "To spoil something completely.",
+          "register": "neutralny",
+          "contextPl": "Kuchenna wpadka",
+          "natural": "",
+          "forms": "ruined",
+          "collocations": "ruin the dish; ruin dinner",
+          "synonyms": "spoil",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Too much salt can ruin the whole dish.",
+              "pl": "Za dużo soli może zepsuć całe danie.",
+              "focusEn": "ruin",
+              "focusPl": "zepsuć"
+            },
+            {
+              "en": "I ruined the sauce by cooking it on high heat.",
+              "pl": "Zepsułem sos, gotując go na dużym ogniu.",
+              "focusEn": "ruined",
+              "focusPl": "Zepsułem"
+            }
+          ],
+          "acceptedAnswers": [
+            "ruin",
+            "spoil"
+          ],
+          "acceptedTranslations": [
+            "zepsuć",
+            "psuć"
+          ]
+        },
+        {
+          "id": "cooking.smoke-alarm",
+          "term": "smoke alarm",
+          "ipa": "/ˈsmoʊk əˌlɑːrm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czujnik dymu",
+          "definition": "A device that makes a loud noise when it detects smoke.",
+          "register": "neutralny",
+          "contextPl": "Przypalone jedzenie i dym w kuchni",
+          "natural": "smoke detector",
+          "forms": "smoke alarms",
+          "collocations": "the smoke alarm goes off",
+          "synonyms": "smoke detector",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The smoke alarm went off while I was frying fish.",
+              "pl": "Czujnik dymu włączył się, kiedy smażyłem rybę.",
+              "focusEn": "smoke alarm",
+              "focusPl": "Czujnik dymu"
+            },
+            {
+              "en": "Open a window before the smoke alarm starts beeping.",
+              "pl": "Otwórz okno, zanim czujnik dymu zacznie piszczeć.",
+              "focusEn": "smoke alarm",
+              "focusPl": "czujnik dymu"
+            }
+          ],
+          "acceptedAnswers": [
+            "smoke alarm",
+            "smoke detector"
+          ],
+          "acceptedTranslations": [
+            "czujnik dymu",
+            "alarm przeciwpożarowy"
+          ]
+        },
+        {
+          "id": "cooking.golden-brown",
+          "term": "golden brown",
+          "ipa": "/ˌɡoʊldən ˈbraʊn/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "złocistobrązowy",
+          "definition": "Having a light brown color from being cooked well.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie, czy wypiek jest gotowy",
+          "natural": "",
+          "forms": "",
+          "collocations": "bake until golden brown",
+          "synonyms": "golden",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bake until the top is golden brown.",
+              "pl": "Piecz, aż wierzch będzie złocistobrązowy.",
+              "focusEn": "golden brown",
+              "focusPl": "złocistobrązowy"
+            },
+            {
+              "en": "The pancakes are golden brown on both sides.",
+              "pl": "Naleśniki są zrumienione z obu stron.",
+              "focusEn": "golden brown",
+              "focusPl": "zrumienione"
+            }
+          ],
+          "acceptedAnswers": [
+            "golden brown"
+          ],
+          "acceptedTranslations": [
+            "złocistobrązowy",
+            "zrumieniony",
+            "złocisty"
+          ]
+        },
+        {
+          "id": "cooking.tender",
+          "term": "tender",
+          "ipa": "/ˈtɛndər/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "miękki",
+          "definition": "Soft and easy to cut or chew.",
+          "register": "neutralny",
+          "contextPl": "Ocena mięsa i warzyw",
+          "natural": "",
+          "forms": "",
+          "collocations": "tender meat; fork-tender",
+          "synonyms": "soft",
+          "antonyms": "tough",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Cook the carrots until they're just tender.",
+              "pl": "Gotuj marchewki, aż będą lekko miękkie.",
+              "focusEn": "tender",
+              "focusPl": "miękkie"
+            },
+            {
+              "en": "After three hours in the oven, the beef was so tender.",
+              "pl": "Po trzech godzinach w piekarniku wołowina była bardzo krucha.",
+              "focusEn": "tender",
+              "focusPl": "krucha"
+            }
+          ],
+          "acceptedAnswers": [
+            "tender"
+          ],
+          "acceptedTranslations": [
+            "miękki",
+            "kruchy"
+          ]
+        },
+        {
+          "id": "cooking.soggy",
+          "term": "soggy",
+          "ipa": "/ˈsɑːɡi/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "rozmokły",
+          "definition": "Wet and soft in an unpleasant way.",
+          "register": "neutralny",
+          "contextPl": "Nieudany spód ciasta lub sałatka",
+          "natural": "",
+          "forms": "soggier – soggiest",
+          "collocations": "soggy bottom; get soggy",
+          "synonyms": "mushy",
+          "antonyms": "crispy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bottom of the pie came out soggy and pale.",
+              "pl": "Spód placka wyszedł rozmokły i blady.",
+              "focusEn": "soggy",
+              "focusPl": "rozmokły"
+            },
+            {
+              "en": "Don't add the dressing yet, or the salad will get soggy.",
+              "pl": "Nie dodawaj jeszcze sosu, bo sałatka rozmięknie.",
+              "focusEn": "get soggy",
+              "focusPl": "rozmięknie"
+            }
+          ],
+          "acceptedAnswers": [
+            "soggy"
+          ],
+          "acceptedTranslations": [
+            "rozmokły",
+            "rozmiękły"
+          ]
+        },
+        {
+          "id": "cooking.lumpy",
+          "term": "lumpy",
+          "ipa": "/ˈlʌmpi/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "grudkowaty",
+          "definition": "Full of small hard pieces instead of smooth.",
+          "register": "neutralny",
+          "contextPl": "Nieudany sos lub puree",
+          "natural": "",
+          "forms": "lumpier – lumpiest",
+          "collocations": "lumpy gravy; lumpy batter",
+          "synonyms": "",
+          "antonyms": "smooth",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The gravy is lumpy; can you whisk it again?",
+              "pl": "Sos ma grudki, możesz go jeszcze raz przemieszać trzepaczką?",
+              "focusEn": "lumpy",
+              "focusPl": "ma grudki"
+            },
+            {
+              "en": "My mashed potatoes were lumpy, but they tasted fine.",
+              "pl": "Moje puree było grudkowate, ale smakowało dobrze.",
+              "focusEn": "lumpy",
+              "focusPl": "grudkowate"
+            }
+          ],
+          "acceptedAnswers": [
+            "lumpy"
+          ],
+          "acceptedTranslations": [
+            "grudkowaty",
+            "z grudkami"
+          ]
+        },
+        {
+          "id": "cooking.trial-and-error",
+          "term": "trial and error",
+          "ipa": "/ˌtraɪəl ən ˈɛrər/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "metoda prób i błędów",
+          "definition": "Trying different ways until you find one that works.",
+          "register": "neutralny",
+          "contextPl": "Uczenie się gotowania",
+          "natural": "",
+          "forms": "",
+          "collocations": "by trial and error",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I learned to make bread by trial and error.",
+              "pl": "Nauczyłem się piec chleb metodą prób i błędów.",
+              "focusEn": "trial and error",
+              "focusPl": "metodą prób i błędów"
+            },
+            {
+              "en": "Getting the oven temperature right took some trial and error.",
+              "pl": "Ustawienie właściwej temperatury piekarnika wymagało trochę prób i błędów.",
+              "focusEn": "trial and error",
+              "focusPl": "prób i błędów"
+            }
+          ],
+          "acceptedAnswers": [
+            "trial and error"
+          ],
+          "acceptedTranslations": [
+            "metoda prób i błędów",
+            "próby i błędy"
+          ]
+        },
+        {
+          "id": "cooking.too-many-cooks-in-the-kitchen",
+          "term": "too many cooks in the kitchen",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "gdzie kucharek sześć, tam nie ma co jeść",
+          "definition": "Used when too many people trying to help makes a job go badly.",
+          "register": "potoczny",
+          "contextPl": "Gdy zbyt wiele osób miesza w jednym garnku",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Brytyjska wersja: „too many cooks spoil the broth”.",
+          "examples": [
+            {
+              "en": "Everyone kept adding spices, so there were too many cooks in the kitchen.",
+              "pl": "Każdy dosypywał przypraw, a gdzie kucharek sześć, tam nie ma co jeść.",
+              "focusEn": "too many cooks in the kitchen",
+              "focusPl": "gdzie kucharek sześć, tam nie ma co jeść"
+            },
+            {
+              "en": "Let me finish the sauce alone; we have too many cooks in the kitchen.",
+              "pl": "Pozwól, że sam skończę sos, bo gdzie kucharek sześć, tam nie ma co jeść.",
+              "focusEn": "too many cooks in the kitchen",
+              "focusPl": "gdzie kucharek sześć, tam nie ma co jeść"
+            }
+          ],
+          "acceptedAnswers": [
+            "too many cooks in the kitchen",
+            "too many cooks spoil the broth"
+          ],
+          "acceptedTranslations": [
+            "gdzie kucharek sześć, tam nie ma co jeść"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cooking.home-cooking",
+      "namePl": "Gotowanie na co dzień",
+      "scenePl": "Planowanie i gotowanie domowych posiłków w ciągu tygodnia",
+      "entries": [
+        {
+          "id": "cooking.meal",
+          "term": "meal",
+          "ipa": "/miːl/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "posiłek",
+          "definition": "Food eaten at one time, such as breakfast, lunch or dinner.",
+          "register": "neutralny",
+          "contextPl": "Planowanie jedzenia na dzień",
+          "natural": "",
+          "forms": "meals",
+          "collocations": "a healthy meal; cook a meal",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I try to cook one healthy meal every day.",
+              "pl": "Staram się codziennie ugotować jeden zdrowy posiłek.",
+              "focusEn": "meal",
+              "focusPl": "posiłek"
+            },
+            {
+              "en": "With some bread, this soup is a full meal.",
+              "pl": "Z chlebem ta zupa to pełny posiłek.",
+              "focusEn": "meal",
+              "focusPl": "posiłek"
+            }
+          ],
+          "acceptedAnswers": [
+            "meal"
+          ],
+          "acceptedTranslations": [
+            "posiłek"
+          ]
+        },
+        {
+          "id": "cooking.make-dinner",
+          "term": "make dinner",
+          "ipa": "/ˌmeɪk ˈdɪnər/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "zrobić kolację",
+          "definition": "To prepare the evening meal.",
+          "register": "neutralny",
+          "contextPl": "Podział obowiązków w domu",
+          "natural": "cook dinner",
+          "forms": "made – made",
+          "collocations": "make dinner for the kids",
+          "synonyms": "cook dinner",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's my turn to make dinner tonight.",
+              "pl": "Dziś moja kolej, żeby zrobić kolację.",
+              "focusEn": "make dinner",
+              "focusPl": "zrobić kolację"
+            },
+            {
+              "en": "I made dinner, so you can do the dishes.",
+              "pl": "Ja zrobiłem kolację, więc ty możesz pozmywać.",
+              "focusEn": "made dinner",
+              "focusPl": "zrobiłem kolację"
+            }
+          ],
+          "acceptedAnswers": [
+            "make dinner",
+            "cook dinner"
+          ],
+          "acceptedTranslations": [
+            "zrobić kolację",
+            "przygotować kolację",
+            "zrobić obiad"
+          ]
+        },
+        {
+          "id": "cooking.home-cooked",
+          "term": "home-cooked",
+          "ipa": "/ˌhoʊm ˈkʊkt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "domowy",
+          "definition": "Cooked at home, not bought or eaten in a restaurant.",
+          "register": "neutralny",
+          "contextPl": "Jedzenie przygotowane w domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "a home-cooked meal; home-cooked food",
+          "synonyms": "homemade",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Nothing beats a home-cooked meal after a long day.",
+              "pl": "Nic nie przebije domowego posiłku po długim dniu.",
+              "focusEn": "home-cooked",
+              "focusPl": "domowego"
+            },
+            {
+              "en": "We eat home-cooked food on most weeknights.",
+              "pl": "W większość wieczorów w tygodniu jemy domowe jedzenie.",
+              "focusEn": "home-cooked",
+              "focusPl": "domowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "home-cooked",
+            "homemade"
+          ],
+          "acceptedTranslations": [
+            "domowy",
+            "domowej roboty"
+          ]
+        },
+        {
+          "id": "cooking.cook-2",
+          "term": "cook",
+          "ipa": "/kʊk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kucharz",
+          "definition": "A person who cooks, at home or as a job.",
+          "register": "neutralny",
+          "contextPl": "Mówienie o czyichś umiejętnościach",
+          "natural": "",
+          "forms": "cooks",
+          "collocations": "a good cook; a great cook",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Cook” to osoba; brytyjskie „cooker” to kuchenka.",
+          "examples": [
+            {
+              "en": "My husband is a much better cook than I am.",
+              "pl": "Mój mąż jest dużo lepszym kucharzem niż ja.",
+              "focusEn": "cook",
+              "focusPl": "kucharzem"
+            },
+            {
+              "en": "You don't have to be a great cook to make this soup.",
+              "pl": "Nie trzeba być świetnym kucharzem, żeby zrobić tę zupę.",
+              "focusEn": "cook",
+              "focusPl": "kucharzem"
+            }
+          ],
+          "acceptedAnswers": [
+            "cook"
+          ],
+          "acceptedTranslations": [
+            "kucharz",
+            "kucharka"
+          ]
+        },
+        {
+          "id": "cooking.cookbook",
+          "term": "cookbook",
+          "ipa": "/ˈkʊkˌbʊk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "książka kucharska",
+          "definition": "A book of recipes.",
+          "register": "neutralny",
+          "contextPl": "Szukanie przepisów",
+          "natural": "",
+          "forms": "cookbooks",
+          "collocations": "an old cookbook; a vegetarian cookbook",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I got this recipe from my grandmother's old cookbook.",
+              "pl": "Ten przepis mam ze starej książki kucharskiej babci.",
+              "focusEn": "cookbook",
+              "focusPl": "książki kucharskiej"
+            },
+            {
+              "en": "My cookbook is covered in flour and sauce stains.",
+              "pl": "Moja książka kucharska jest cała w mące i plamach sosu.",
+              "focusEn": "cookbook",
+              "focusPl": "książka kucharska"
+            }
+          ],
+          "acceptedAnswers": [
+            "cookbook"
+          ],
+          "acceptedTranslations": [
+            "książka kucharska"
+          ]
+        },
+        {
+          "id": "cooking.dinner-party",
+          "term": "dinner party",
+          "ipa": "/ˈdɪnər ˌpɑːrti/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "proszona kolacja",
+          "definition": "An evening event where guests are invited to eat at someone's home.",
+          "register": "neutralny",
+          "contextPl": "Gotowanie dla gości",
+          "natural": "",
+          "forms": "dinner parties",
+          "collocations": "host a dinner party",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're hosting a dinner party for six on Saturday.",
+              "pl": "W sobotę urządzamy proszoną kolację dla sześciu osób.",
+              "focusEn": "dinner party",
+              "focusPl": "proszoną kolację"
+            },
+            {
+              "en": "I tried a new recipe at our dinner party, and it was a hit.",
+              "pl": "Na naszej proszonej kolacji wypróbowałem nowy przepis i był hitem.",
+              "focusEn": "dinner party",
+              "focusPl": "proszonej kolacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "dinner party"
+          ],
+          "acceptedTranslations": [
+            "proszona kolacja",
+            "kolacja dla gości"
+          ]
+        },
+        {
+          "id": "cooking.meal-prep",
+          "term": "meal prep",
+          "ipa": "/ˈmiːl ˌprɛp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "gotowanie na zapas",
+          "definition": "Cooking food for several days at once and storing it in containers.",
+          "register": "potoczny",
+          "contextPl": "Planowanie posiłków na cały tydzień",
+          "natural": "",
+          "forms": "",
+          "collocations": "do meal prep; meal prep containers",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I do my meal prep every Sunday afternoon.",
+              "pl": "W każdą niedzielę po południu robię gotowanie na zapas.",
+              "focusEn": "meal prep",
+              "focusPl": "gotowanie na zapas"
+            },
+            {
+              "en": "Meal prep saves me a lot of time during the week.",
+              "pl": "Gotowanie na zapas oszczędza mi mnóstwo czasu w tygodniu.",
+              "focusEn": "Meal prep",
+              "focusPl": "Gotowanie na zapas"
+            }
+          ],
+          "acceptedAnswers": [
+            "meal prep"
+          ],
+          "acceptedTranslations": [
+            "gotowanie na zapas",
+            "meal prep",
+            "przygotowywanie posiłków na zapas"
+          ]
+        },
+        {
+          "id": "cooking.picky-eater",
+          "term": "picky eater",
+          "ipa": "/ˌpɪki ˈiːtər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "niejadek",
+          "definition": "A person who eats only a few kinds of food.",
+          "register": "potoczny",
+          "contextPl": "Gotowanie dla wybrednych dzieci lub dorosłych",
+          "natural": "fussy eater",
+          "forms": "picky eaters",
+          "collocations": "",
+          "synonyms": "fussy eater",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My son is a picky eater, so I keep dinners simple.",
+              "pl": "Mój syn jest niejadkiem, więc robię proste kolacje.",
+              "focusEn": "picky eater",
+              "focusPl": "niejadkiem"
+            },
+            {
+              "en": "Cooking for picky eaters is harder than it sounds.",
+              "pl": "Gotowanie dla niejadków jest trudniejsze, niż się wydaje.",
+              "focusEn": "picky eaters",
+              "focusPl": "niejadków"
+            }
+          ],
+          "acceptedAnswers": [
+            "picky eater",
+            "fussy eater"
+          ],
+          "acceptedTranslations": [
+            "niejadek",
+            "osoba wybredna w jedzeniu"
+          ]
+        },
+        {
+          "id": "cooking.comfort-food",
+          "term": "comfort food",
+          "ipa": "/ˈkʌmfərt ˌfuːd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "jedzenie na pocieszenie",
+          "definition": "Simple, warm food that makes you feel happy and relaxed.",
+          "register": "neutralny",
+          "contextPl": "Domowe, sycące dania",
+          "natural": "",
+          "forms": "",
+          "collocations": "my favorite comfort food",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Mac and cheese is my favorite comfort food in winter.",
+              "pl": "Makaron z serem to zimą moje ulubione jedzenie na pocieszenie.",
+              "focusEn": "comfort food",
+              "focusPl": "jedzenie na pocieszenie"
+            },
+            {
+              "en": "After a long week, I just want to cook some comfort food.",
+              "pl": "Po długim tygodniu chcę po prostu ugotować jakieś jedzenie na pocieszenie.",
+              "focusEn": "comfort food",
+              "focusPl": "jedzenie na pocieszenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "comfort food"
+          ],
+          "acceptedTranslations": [
+            "jedzenie na pocieszenie",
+            "comfort food"
+          ]
+        },
+        {
+          "id": "cooking.whip-up",
+          "term": "whip up",
+          "ipa": "/ˌwɪp ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "szybko przygotować",
+          "definition": "To make a meal quickly and easily.",
+          "register": "potoczny",
+          "contextPl": "Szybkie gotowanie z tego, co jest pod ręką",
+          "natural": "",
+          "forms": "whipped up",
+          "collocations": "whip up a quick dinner",
+          "synonyms": "throw together",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I can whip up a quick omelet if you're hungry.",
+              "pl": "Mogę szybko przygotować omlet, jeśli jesteś głodny.",
+              "focusEn": "whip up",
+              "focusPl": "szybko przygotować"
+            },
+            {
+              "en": "She whipped up dinner with whatever was in the fridge.",
+              "pl": "Wyczarowała kolację z tego, co było w lodówce.",
+              "focusEn": "whipped up",
+              "focusPl": "Wyczarowała"
+            }
+          ],
+          "acceptedAnswers": [
+            "whip up"
+          ],
+          "acceptedTranslations": [
+            "szybko przygotować",
+            "wyczarować",
+            "szybko zrobić"
+          ]
+        },
+        {
+          "id": "cooking.potluck",
+          "term": "potluck",
+          "ipa": "/ˈpɑːtˌlʌk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "impreza składkowa",
+          "definition": "A meal where every guest brings a dish to share.",
+          "register": "neutralny",
+          "contextPl": "Spotkania, na które każdy coś przynosi",
+          "natural": "",
+          "forms": "potlucks",
+          "collocations": "office potluck; bring a dish to the potluck",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Bardzo popularne w USA w pracy, szkołach i kościołach.",
+          "examples": [
+            {
+              "en": "I'm bringing a pasta salad to the potluck on Saturday.",
+              "pl": "Na sobotnią imprezę składkową przynoszę sałatkę makaronową.",
+              "focusEn": "potluck",
+              "focusPl": "imprezę składkową"
+            },
+            {
+              "en": "Everyone cooked something different for the office potluck.",
+              "pl": "Każdy ugotował coś innego na składkowy poczęstunek w biurze.",
+              "focusEn": "potluck",
+              "focusPl": "składkowy poczęstunek"
+            }
+          ],
+          "acceptedAnswers": [
+            "potluck"
+          ],
+          "acceptedTranslations": [
+            "impreza składkowa",
+            "składkowe przyjęcie",
+            "poczęstunek składkowy"
+          ]
+        },
+        {
+          "id": "cooking.throw-together",
+          "term": "throw together",
+          "ipa": "/ˌθroʊ təˈɡɛðər/",
+          "pos": "czasownik frazowy",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zrobić na szybko",
+          "definition": "To make a simple meal quickly from what you have.",
+          "register": "potoczny",
+          "contextPl": "Szybki posiłek bez planowania",
+          "natural": "",
+          "forms": "threw – thrown",
+          "collocations": "throw together a salad; throw something together",
+          "synonyms": "whip up",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I just threw together a salad from leftovers.",
+              "pl": "Po prostu zrobiłem na szybko sałatkę z resztek.",
+              "focusEn": "threw together",
+              "focusPl": "zrobiłem na szybko"
+            },
+            {
+              "en": "Let's throw together some pasta and call it dinner.",
+              "pl": "Zróbmy na szybko jakiś makaron i niech to będzie kolacja.",
+              "focusEn": "throw together",
+              "focusPl": "Zróbmy na szybko"
+            }
+          ],
+          "acceptedAnswers": [
+            "throw together"
+          ],
+          "acceptedTranslations": [
+            "zrobić na szybko",
+            "sklecić",
+            "przygotować naprędce"
+          ]
+        }
+      ]
+    }
+  ]
+}

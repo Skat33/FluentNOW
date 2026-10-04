@@ -1,0 +1,2580 @@
+{
+  "schemaVersion": 1,
+  "id": "dentist",
+  "namePl": "Dentysta",
+  "nameEn": "Dentist",
+  "group": "health",
+  "symbol": "mouth",
+  "summaryPl": "Ból zęba, badanie w fotelu, budowa zębów, plomby i inne zabiegi, higiena jamy ustnej.",
+  "aliases": [
+    "dentysta",
+    "stomatolog",
+    "zęby",
+    "ząb",
+    "ból zęba",
+    "plomba",
+    "dentist",
+    "teeth",
+    "toothache",
+    "dental"
+  ],
+  "categories": [
+    {
+      "id": "dentist.toothache",
+      "namePl": "Ból zęba",
+      "scenePl": "Ból zęba: telefon do gabinetu stomatologicznego i pierwsze minuty wizyty",
+      "entries": [
+        {
+          "id": "dentist.dentist",
+          "term": "dentist",
+          "ipa": "/ˈdentɪst/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "dentysta",
+          "definition": "A doctor who takes care of people's teeth.",
+          "register": "neutralny",
+          "contextPl": "Lekarz od zębów",
+          "natural": "",
+          "forms": "dentists",
+          "collocations": "go to the dentist; see a dentist",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Go to the dentist” = iść do dentysty.",
+          "examples": [
+            {
+              "en": "I need to see a dentist today; I can't chew on the left side.",
+              "pl": "Muszę dziś iść do dentysty; nie mogę gryźć lewą stroną.",
+              "focusEn": "dentist",
+              "focusPl": "dentysty"
+            },
+            {
+              "en": "The dentist asked me which tooth hurts the most.",
+              "pl": "Dentystka zapytała mnie, który ząb boli najbardziej.",
+              "focusEn": "dentist",
+              "focusPl": "Dentystka"
+            }
+          ],
+          "acceptedAnswers": [
+            "dentist"
+          ],
+          "acceptedTranslations": [
+            "dentysta",
+            "dentystka",
+            "stomatolog"
+          ]
+        },
+        {
+          "id": "dentist.toothache",
+          "term": "toothache",
+          "ipa": "/ˈtuːθeɪk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ból zęba",
+          "definition": "A pain in a tooth.",
+          "register": "neutralny",
+          "contextPl": "Najczęstszy powód nagłej wizyty",
+          "natural": "",
+          "forms": "toothaches",
+          "collocations": "have a toothache; bad toothache",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've had a terrible toothache since Saturday.",
+              "pl": "Od soboty mam okropny ból zęba.",
+              "focusEn": "toothache",
+              "focusPl": "ból zęba"
+            },
+            {
+              "en": "The receptionist said they keep time open for patients with a bad toothache.",
+              "pl": "Recepcjonistka powiedziała, że trzymają wolne terminy dla pacjentów z silnym bólem zęba.",
+              "focusEn": "toothache",
+              "focusPl": "bólem zęba"
+            }
+          ],
+          "acceptedAnswers": [
+            "toothache"
+          ],
+          "acceptedTranslations": [
+            "ból zęba"
+          ]
+        },
+        {
+          "id": "dentist.be-killing-someone",
+          "term": "be killing someone",
+          "ipa": "/bi ˈkɪlɪŋ ˌsʌmwʌn/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "strasznie boleć",
+          "definition": "To hurt someone very much.",
+          "register": "potoczny",
+          "contextPl": "Silny ból",
+          "natural": "",
+          "forms": "",
+          "collocations": "my tooth is killing me; my back is killing me",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Tylko w formie ciągłej: „My tooth is killing me”.",
+          "examples": [
+            {
+              "en": "My tooth is killing me; I couldn't sleep at all.",
+              "pl": "Ząb strasznie mnie boli; w ogóle nie mogłem spać.",
+              "focusEn": "killing me",
+              "focusPl": "strasznie mnie boli"
+            },
+            {
+              "en": "By the time I got to the dentist, my jaw was killing me.",
+              "pl": "Zanim dotarłem do dentysty, szczęka bolała mnie jak diabli.",
+              "focusEn": "killing me",
+              "focusPl": "bolała mnie jak diabli"
+            }
+          ],
+          "acceptedAnswers": [
+            "be killing someone",
+            "killing me"
+          ],
+          "acceptedTranslations": [
+            "strasznie boleć",
+            "bardzo boleć",
+            "boleć jak diabli"
+          ]
+        },
+        {
+          "id": "dentist.bite",
+          "term": "bite",
+          "ipa": "/baɪt/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "gryźć",
+          "definition": "To press down on something with your teeth.",
+          "register": "neutralny",
+          "contextPl": "Ból przy gryzieniu",
+          "natural": "",
+          "forms": "bite – bit – bitten",
+          "collocations": "bite down; bite into",
+          "synonyms": "chew",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It hurts when I bite down on this side.",
+              "pl": "Boli, kiedy gryzę po tej stronie.",
+              "focusEn": "bite",
+              "focusPl": "gryzę"
+            },
+            {
+              "en": "I can't bite into an apple without wincing.",
+              "pl": "Nie mogę ugryźć jabłka bez grymasu bólu.",
+              "focusEn": "bite",
+              "focusPl": "ugryźć"
+            }
+          ],
+          "acceptedAnswers": [
+            "bite"
+          ],
+          "acceptedTranslations": [
+            "gryźć",
+            "ugryźć",
+            "nagryźć"
+          ]
+        },
+        {
+          "id": "dentist.sensitive",
+          "term": "sensitive",
+          "ipa": "/ˈsensətɪv/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nadwrażliwy",
+          "definition": "Hurting easily, for example from cold or sweet things.",
+          "register": "neutralny",
+          "contextPl": "Nadwrażliwość zębów",
+          "natural": "",
+          "forms": "",
+          "collocations": "sensitive teeth; sensitive to cold",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My teeth are really sensitive to cold drinks.",
+              "pl": "Mam bardzo wrażliwe zęby na zimne napoje.",
+              "focusEn": "sensitive",
+              "focusPl": "wrażliwe"
+            },
+            {
+              "en": "The dentist tapped each tooth to find the sensitive one.",
+              "pl": "Dentysta stukał w każdy ząb, żeby znaleźć ten nadwrażliwy.",
+              "focusEn": "sensitive",
+              "focusPl": "nadwrażliwy"
+            }
+          ],
+          "acceptedAnswers": [
+            "sensitive"
+          ],
+          "acceptedTranslations": [
+            "nadwrażliwy",
+            "wrażliwy"
+          ]
+        },
+        {
+          "id": "dentist.loose",
+          "term": "loose",
+          "ipa": "/luːs/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ruszający się",
+          "definition": "Not firmly fixed in place, used about a tooth.",
+          "register": "neutralny",
+          "contextPl": "Ruszające się zęby",
+          "natural": "",
+          "forms": "looser; loosest",
+          "collocations": "loose tooth",
+          "synonyms": "wobbly",
+          "antonyms": "firm",
+          "notePl": "Nie mylić z „lose” /luːz/ – zgubić.",
+          "examples": [
+            {
+              "en": "One of my back teeth feels loose.",
+              "pl": "Jeden z moich tylnych zębów się rusza.",
+              "focusEn": "loose",
+              "focusPl": "rusza"
+            },
+            {
+              "en": "My son's front tooth is loose, so we came in to check it.",
+              "pl": "Synowi rusza się przedni ząb, więc przyszliśmy to sprawdzić.",
+              "focusEn": "loose",
+              "focusPl": "rusza się"
+            }
+          ],
+          "acceptedAnswers": [
+            "loose",
+            "wobbly"
+          ],
+          "acceptedTranslations": [
+            "ruszający się",
+            "luźny",
+            "rusza się"
+          ]
+        },
+        {
+          "id": "dentist.cavity",
+          "term": "cavity",
+          "ipa": "/ˈkævəti/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ubytek",
+          "definition": "A small hole in a tooth caused by decay.",
+          "register": "neutralny",
+          "contextPl": "Dziura w zębie",
+          "natural": "",
+          "forms": "cavities",
+          "collocations": "have a cavity; fill a cavity",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I think I have a cavity; it hurts when I eat candy.",
+              "pl": "Chyba mam ubytek; boli, kiedy jem słodycze.",
+              "focusEn": "cavity",
+              "focusPl": "ubytek"
+            },
+            {
+              "en": "The dentist found a small cavity in one of my back teeth.",
+              "pl": "Dentystka znalazła mały ubytek w jednym z tylnych zębów.",
+              "focusEn": "cavity",
+              "focusPl": "ubytek"
+            }
+          ],
+          "acceptedAnswers": [
+            "cavity"
+          ],
+          "acceptedTranslations": [
+            "ubytek",
+            "dziura w zębie",
+            "próchnica"
+          ]
+        },
+        {
+          "id": "dentist.chip",
+          "term": "chip",
+          "ipa": "/tʃɪp/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ukruszyć",
+          "definition": "To break a small piece off the edge of something.",
+          "register": "neutralny",
+          "contextPl": "Uszkodzenie zęba",
+          "natural": "",
+          "forms": "chipped",
+          "collocations": "chip a tooth; chipped tooth",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I chipped my front tooth on a fork.",
+              "pl": "Ukruszyłem sobie przedni ząb o widelec.",
+              "focusEn": "chipped",
+              "focusPl": "Ukruszyłem"
+            },
+            {
+              "en": "Can you fix a chipped tooth in one visit?",
+              "pl": "Czy da się naprawić ukruszony ząb podczas jednej wizyty?",
+              "focusEn": "chipped",
+              "focusPl": "ukruszony"
+            }
+          ],
+          "acceptedAnswers": [
+            "chip"
+          ],
+          "acceptedTranslations": [
+            "ukruszyć",
+            "wyszczerbić",
+            "ukruszony"
+          ]
+        },
+        {
+          "id": "dentist.dental-office",
+          "term": "dental office",
+          "ipa": "/ˈdentəl ˌɔːfɪs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gabinet stomatologiczny",
+          "definition": "The place where a dentist works and sees patients.",
+          "register": "neutralny",
+          "contextPl": "Umawianie wizyty",
+          "natural": "",
+          "forms": "dental offices",
+          "collocations": "",
+          "synonyms": "dentist's office",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I called the dental office as soon as it opened.",
+              "pl": "Zadzwoniłem do gabinetu stomatologicznego, gdy tylko go otwarto.",
+              "focusEn": "dental office",
+              "focusPl": "gabinetu stomatologicznego"
+            },
+            {
+              "en": "The dental office squeezed me in at noon.",
+              "pl": "W gabinecie stomatologicznym wcisnęli mnie na południe.",
+              "focusEn": "dental office",
+              "focusPl": "gabinecie stomatologicznym"
+            }
+          ],
+          "acceptedAnswers": [
+            "dental office",
+            "dentist's office"
+          ],
+          "acceptedTranslations": [
+            "gabinet stomatologiczny",
+            "gabinet dentystyczny",
+            "dentysta"
+          ]
+        },
+        {
+          "id": "dentist.dental-emergency",
+          "term": "dental emergency",
+          "ipa": "/ˈdentəl ɪˌmɜːrdʒənsi/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nagły przypadek stomatologiczny",
+          "definition": "A sudden tooth problem that needs care right away.",
+          "register": "neutralny",
+          "contextPl": "Pilna wizyta",
+          "natural": "",
+          "forms": "dental emergencies",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is a broken tooth considered a dental emergency?",
+              "pl": "Czy złamany ząb to nagły przypadek stomatologiczny?",
+              "focusEn": "dental emergency",
+              "focusPl": "nagły przypadek stomatologiczny"
+            },
+            {
+              "en": "They see dental emergencies first thing in the morning.",
+              "pl": "Nagłe przypadki stomatologiczne przyjmują z samego rana.",
+              "focusEn": "dental emergencies",
+              "focusPl": "Nagłe przypadki stomatologiczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "dental emergency"
+          ],
+          "acceptedTranslations": [
+            "nagły przypadek stomatologiczny",
+            "pogotowie stomatologiczne"
+          ]
+        },
+        {
+          "id": "dentist.throbbing",
+          "term": "throbbing",
+          "ipa": "/ˈθrɑːbɪŋ/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "pulsujący",
+          "definition": "Beating with a strong, steady pain.",
+          "register": "neutralny",
+          "contextPl": "Rodzaj bólu zęba",
+          "natural": "",
+          "forms": "",
+          "collocations": "throbbing pain; throbbing headache",
+          "synonyms": "pounding",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I woke up at night with a throbbing pain in my jaw.",
+              "pl": "Obudziłem się w nocy z pulsującym bólem szczęki.",
+              "focusEn": "throbbing",
+              "focusPl": "pulsującym"
+            },
+            {
+              "en": "I told the dentist the pain was throbbing, not sharp.",
+              "pl": "Powiedziałem dentyście, że ból jest pulsujący, a nie ostry.",
+              "focusEn": "throbbing",
+              "focusPl": "pulsujący"
+            }
+          ],
+          "acceptedAnswers": [
+            "throbbing",
+            "pounding"
+          ],
+          "acceptedTranslations": [
+            "pulsujący",
+            "rwący"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dentist.in-the-chair",
+      "namePl": "W fotelu dentystycznym",
+      "scenePl": "Fotel dentystyczny: badanie, czyszczenie i polecenia dentystki",
+      "entries": [
+        {
+          "id": "dentist.open-wide",
+          "term": "open wide",
+          "ipa": "/ˌoʊpən ˈwaɪd/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "otworzyć szeroko",
+          "definition": "To open your mouth as much as you can.",
+          "register": "neutralny",
+          "contextPl": "Polecenie dentysty",
+          "natural": "",
+          "forms": "open – opened – opened",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Open wide, please. A little more.",
+              "pl": "Proszę szeroko otworzyć. Jeszcze trochę.",
+              "focusEn": "Open wide",
+              "focusPl": "szeroko otworzyć"
+            },
+            {
+              "en": "I opened wide while she looked at my back teeth with a little mirror.",
+              "pl": "Otworzyłem szeroko usta, a ona oglądała moje tylne zęby małym lusterkiem.",
+              "focusEn": "opened wide",
+              "focusPl": "Otworzyłem szeroko"
+            }
+          ],
+          "acceptedAnswers": [
+            "open wide"
+          ],
+          "acceptedTranslations": [
+            "otworzyć szeroko",
+            "szeroko otworzyć usta",
+            "otwórz szeroko"
+          ]
+        },
+        {
+          "id": "dentist.rinse",
+          "term": "rinse",
+          "ipa": "/rɪns/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przepłukać",
+          "definition": "To wash your mouth quickly with water.",
+          "register": "neutralny",
+          "contextPl": "Płukanie ust podczas zabiegu",
+          "natural": "",
+          "forms": "rinsed",
+          "collocations": "rinse your mouth; rinse and spit",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Go ahead and rinse, then spit into the sink.",
+              "pl": "Proszę przepłukać usta i wypluć do zlewu.",
+              "focusEn": "rinse",
+              "focusPl": "przepłukać"
+            },
+            {
+              "en": "I rinsed with the pink liquid in the little cup.",
+              "pl": "Przepłukałem usta różowym płynem z kubeczka.",
+              "focusEn": "rinsed",
+              "focusPl": "Przepłukałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "rinse"
+          ],
+          "acceptedTranslations": [
+            "przepłukać",
+            "płukać",
+            "wypłukać"
+          ]
+        },
+        {
+          "id": "dentist.spit",
+          "term": "spit",
+          "ipa": "/spɪt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wypluć",
+          "definition": "To push liquid out of your mouth.",
+          "register": "neutralny",
+          "contextPl": "Wypluwanie płynu po płukaniu",
+          "natural": "",
+          "forms": "spit – spit – spit",
+          "collocations": "spit into the sink; spit out",
+          "synonyms": "",
+          "antonyms": "swallow",
+          "notePl": "W AmE czas przeszły zwykle „spit”, rzadziej „spat”.",
+          "examples": [
+            {
+              "en": "You can spit into the little sink now.",
+              "pl": "Teraz może pan wypluć do umywalki.",
+              "focusEn": "spit",
+              "focusPl": "wypluć"
+            },
+            {
+              "en": "I spit out a bit of blood after the cleaning.",
+              "pl": "Po czyszczeniu wyplułem trochę krwi.",
+              "focusEn": "spit",
+              "focusPl": "wyplułem"
+            }
+          ],
+          "acceptedAnswers": [
+            "spit"
+          ],
+          "acceptedTranslations": [
+            "wypluć",
+            "pluć",
+            "splunąć"
+          ]
+        },
+        {
+          "id": "dentist.bite-down",
+          "term": "bite down",
+          "ipa": "/ˌbaɪt ˈdaʊn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zagryźć",
+          "definition": "To close your teeth firmly on something.",
+          "register": "neutralny",
+          "contextPl": "Polecenie dentysty",
+          "natural": "",
+          "forms": "bite – bit – bitten",
+          "collocations": "bite down on cotton; bite down gently",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bite down gently on this piece of cotton.",
+              "pl": "Proszę lekko zagryźć ten wacik.",
+              "focusEn": "Bite down",
+              "focusPl": "zagryźć"
+            },
+            {
+              "en": "She asked me to bite down on the blue paper to check how my teeth meet.",
+              "pl": "Poprosiła, żebym zagryzł niebieską kalkę, żeby sprawdzić, jak schodzą się zęby.",
+              "focusEn": "bite down",
+              "focusPl": "zagryzł"
+            }
+          ],
+          "acceptedAnswers": [
+            "bite down"
+          ],
+          "acceptedTranslations": [
+            "zagryźć",
+            "zagryzać",
+            "zacisnąć zęby"
+          ]
+        },
+        {
+          "id": "dentist.cleaning",
+          "term": "cleaning",
+          "ipa": "/ˈkliːnɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czyszczenie zębów",
+          "definition": "A visit where plaque and tartar are removed from your teeth.",
+          "register": "neutralny",
+          "contextPl": "Higienizacja co pół roku",
+          "natural": "",
+          "forms": "cleanings",
+          "collocations": "teeth cleaning; six-month cleaning",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA czyszczenie u higienistki zwykle co sześć miesięcy.",
+          "examples": [
+            {
+              "en": "I'm here for my six-month cleaning.",
+              "pl": "Przyszedłem na półroczne czyszczenie zębów.",
+              "focusEn": "cleaning",
+              "focusPl": "czyszczenie zębów"
+            },
+            {
+              "en": "The cleaning took about forty minutes and tickled a little.",
+              "pl": "Czyszczenie trwało około czterdziestu minut i trochę łaskotało.",
+              "focusEn": "cleaning",
+              "focusPl": "Czyszczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "cleaning",
+            "teeth cleaning"
+          ],
+          "acceptedTranslations": [
+            "czyszczenie zębów",
+            "czyszczenie",
+            "higienizacja",
+            "skaling"
+          ]
+        },
+        {
+          "id": "dentist.shot",
+          "term": "shot",
+          "ipa": "/ʃɑːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zastrzyk",
+          "definition": "An injection of medicine with a needle.",
+          "register": "potoczny",
+          "contextPl": "Znieczulenie przed zabiegiem",
+          "natural": "",
+          "forms": "shots",
+          "collocations": "get a shot; give someone a shot",
+          "synonyms": "injection",
+          "antonyms": "",
+          "notePl": "Potocznie „shot”, formalnie „injection”.",
+          "examples": [
+            {
+              "en": "You'll feel a little pinch from the shot.",
+              "pl": "Poczuje pan lekkie ukłucie przy zastrzyku.",
+              "focusEn": "shot",
+              "focusPl": "zastrzyku"
+            },
+            {
+              "en": "The dentist gave me a shot to numb the area.",
+              "pl": "Dentysta zrobił mi zastrzyk, żeby znieczulić to miejsce.",
+              "focusEn": "shot",
+              "focusPl": "zastrzyk"
+            }
+          ],
+          "acceptedAnswers": [
+            "shot",
+            "injection"
+          ],
+          "acceptedTranslations": [
+            "zastrzyk",
+            "ukłucie"
+          ]
+        },
+        {
+          "id": "dentist.numb",
+          "term": "numb",
+          "ipa": "/nʌm/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zdrętwiały",
+          "definition": "Without feeling, for example after a dentist's injection.",
+          "register": "neutralny",
+          "contextPl": "Działanie znieczulenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "go numb; numb lip",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is your lower lip numb yet, or should we wait?",
+              "pl": "Czy dolna warga jest już zdrętwiała, czy mamy poczekać?",
+              "focusEn": "numb",
+              "focusPl": "zdrętwiała"
+            },
+            {
+              "en": "Half my face was numb for three hours after the filling.",
+              "pl": "Pół twarzy miałem zdrętwiałe przez trzy godziny po plombowaniu.",
+              "focusEn": "numb",
+              "focusPl": "zdrętwiałe"
+            }
+          ],
+          "acceptedAnswers": [
+            "numb"
+          ],
+          "acceptedTranslations": [
+            "zdrętwiały",
+            "znieczulony",
+            "bez czucia"
+          ]
+        },
+        {
+          "id": "dentist.drill",
+          "term": "drill",
+          "ipa": "/drɪl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wiertło",
+          "definition": "The fast tool a dentist uses to remove decay.",
+          "register": "neutralny",
+          "contextPl": "Borowanie",
+          "natural": "",
+          "forms": "drills",
+          "collocations": "dental drill; the sound of the drill",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I hate the sound of the drill.",
+              "pl": "Nie znoszę dźwięku wiertła.",
+              "focusEn": "drill",
+              "focusPl": "wiertła"
+            },
+            {
+              "en": "She stopped the drill every few seconds to check if I was okay.",
+              "pl": "Co kilka sekund zatrzymywała wiertło, żeby sprawdzić, czy wszystko w porządku.",
+              "focusEn": "drill",
+              "focusPl": "wiertło"
+            }
+          ],
+          "acceptedAnswers": [
+            "drill"
+          ],
+          "acceptedTranslations": [
+            "wiertło",
+            "wiertarka dentystyczna",
+            "borowanie"
+          ]
+        },
+        {
+          "id": "dentist.raise-your-hand",
+          "term": "raise your hand",
+          "ipa": "/ˌreɪz jər ˈhænd/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "podnieść rękę",
+          "definition": "To lift your hand as a signal.",
+          "register": "neutralny",
+          "contextPl": "Umówiony sygnał bólu",
+          "natural": "",
+          "forms": "raise – raised – raised",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Raise your hand if you feel any pain.",
+              "pl": "Proszę podnieść rękę, jeśli poczuje pan ból.",
+              "focusEn": "Raise your hand",
+              "focusPl": "podnieść rękę"
+            },
+            {
+              "en": "I raised my hand when the drill got too close to the nerve.",
+              "pl": "Podniosłem rękę, kiedy wiertło zbliżyło się do nerwu.",
+              "focusEn": "raised my hand",
+              "focusPl": "Podniosłem rękę"
+            }
+          ],
+          "acceptedAnswers": [
+            "raise your hand",
+            "raise my hand"
+          ],
+          "acceptedTranslations": [
+            "podnieść rękę",
+            "podnosić rękę"
+          ]
+        },
+        {
+          "id": "dentist.hygienist",
+          "term": "hygienist",
+          "ipa": "/haɪˈdʒiːnɪst/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "higienistka stomatologiczna",
+          "definition": "A person trained to clean teeth and teach people how to care for them.",
+          "register": "specjalistyczny",
+          "contextPl": "Czyszczenie i profilaktyka",
+          "natural": "",
+          "forms": "hygienists",
+          "collocations": "dental hygienist",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The hygienist cleaned my teeth before the dentist came in.",
+              "pl": "Higienistka wyczyściła mi zęby, zanim przyszedł dentysta.",
+              "focusEn": "hygienist",
+              "focusPl": "Higienistka"
+            },
+            {
+              "en": "My hygienist always reminds me to floss more.",
+              "pl": "Moja higienistka zawsze przypomina mi, żebym częściej nitkował zęby.",
+              "focusEn": "hygienist",
+              "focusPl": "higienistka"
+            }
+          ],
+          "acceptedAnswers": [
+            "hygienist",
+            "dental hygienist"
+          ],
+          "acceptedTranslations": [
+            "higienistka stomatologiczna",
+            "higienistka"
+          ]
+        },
+        {
+          "id": "dentist.plaque",
+          "term": "plaque",
+          "ipa": "/plæk/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "płytka nazębna",
+          "definition": "A sticky layer of bacteria that forms on teeth.",
+          "register": "specjalistyczny",
+          "contextPl": "Osad na zębach",
+          "natural": "",
+          "forms": "",
+          "collocations": "build up plaque; remove plaque",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's some plaque building up behind your lower teeth.",
+              "pl": "Za dolnymi zębami gromadzi się trochę płytki nazębnej.",
+              "focusEn": "plaque",
+              "focusPl": "płytki nazębnej"
+            },
+            {
+              "en": "The hygienist scraped the plaque off with a tiny hook.",
+              "pl": "Higienistka zeskrobała płytkę nazębną malutkim haczykiem.",
+              "focusEn": "plaque",
+              "focusPl": "płytkę nazębną"
+            }
+          ],
+          "acceptedAnswers": [
+            "plaque"
+          ],
+          "acceptedTranslations": [
+            "płytka nazębna",
+            "osad"
+          ]
+        },
+        {
+          "id": "dentist.tartar",
+          "term": "tartar",
+          "ipa": "/ˈtɑːrtər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "kamień nazębny",
+          "definition": "A hard yellow layer on teeth that only a dentist can remove.",
+          "register": "specjalistyczny",
+          "contextPl": "Twardy osad na zębach",
+          "natural": "",
+          "forms": "",
+          "collocations": "remove tartar; tartar buildup",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You have quite a bit of tartar on your bottom teeth.",
+              "pl": "Masz sporo kamienia nazębnego na dolnych zębach.",
+              "focusEn": "tartar",
+              "focusPl": "kamienia nazębnego"
+            },
+            {
+              "en": "Removing the tartar made my gums bleed a little.",
+              "pl": "Usuwanie kamienia nazębnego sprawiło, że dziąsła trochę krwawiły.",
+              "focusEn": "tartar",
+              "focusPl": "kamienia nazębnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "tartar"
+          ],
+          "acceptedTranslations": [
+            "kamień nazębny",
+            "kamień"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dentist.teeth-mouth",
+      "namePl": "Zęby i jama ustna",
+      "scenePl": "Dentystka pokazuje dziecku model szczęki i tłumaczy budowę zębów",
+      "entries": [
+        {
+          "id": "dentist.smile",
+          "term": "smile",
+          "ipa": "/smaɪl/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "uśmiech",
+          "definition": "The happy look on your face when the corners of your mouth go up.",
+          "register": "neutralny",
+          "contextPl": "Ładne, zdrowe zęby",
+          "natural": "",
+          "forms": "smiles",
+          "collocations": "big smile; nice smile",
+          "synonyms": "",
+          "antonyms": "frown",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Brush every day, and you'll keep that nice smile.",
+              "pl": "Myj zęby codziennie, a zachowasz ten ładny uśmiech.",
+              "focusEn": "smile",
+              "focusPl": "uśmiech"
+            },
+            {
+              "en": "My son gave the dentist a big smile to show off his teeth.",
+              "pl": "Syn posłał dentystce szeroki uśmiech, żeby pochwalić się zębami.",
+              "focusEn": "smile",
+              "focusPl": "uśmiech"
+            }
+          ],
+          "acceptedAnswers": [
+            "smile"
+          ],
+          "acceptedTranslations": [
+            "uśmiech"
+          ]
+        },
+        {
+          "id": "dentist.baby-tooth",
+          "term": "baby tooth",
+          "ipa": "/ˈbeɪbi ˌtuːθ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ząb mleczny",
+          "definition": "One of the first teeth a child has, which later fall out.",
+          "register": "neutralny",
+          "contextPl": "Zęby dzieci",
+          "natural": "",
+          "forms": "baby teeth",
+          "collocations": "lose a baby tooth",
+          "synonyms": "milk tooth",
+          "antonyms": "permanent tooth",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This is a baby tooth, and a new one is growing under it.",
+              "pl": "To jest ząb mleczny, a pod nim rośnie nowy.",
+              "focusEn": "baby tooth",
+              "focusPl": "ząb mleczny"
+            },
+            {
+              "en": "My daughter proudly showed the dentist the gap where her baby tooth fell out.",
+              "pl": "Córka z dumą pokazała dentystce dziurę po mleczaku.",
+              "focusEn": "baby tooth",
+              "focusPl": "mleczaku"
+            }
+          ],
+          "acceptedAnswers": [
+            "baby tooth",
+            "baby teeth",
+            "milk tooth"
+          ],
+          "acceptedTranslations": [
+            "ząb mleczny",
+            "mleczak",
+            "zęby mleczne"
+          ]
+        },
+        {
+          "id": "dentist.front-tooth",
+          "term": "front tooth",
+          "ipa": "/ˌfrʌnt ˈtuːθ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przedni ząb",
+          "definition": "One of the teeth at the front of your mouth.",
+          "register": "neutralny",
+          "contextPl": "Zęby przednie",
+          "natural": "",
+          "forms": "front teeth",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "back tooth",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "These flat ones are your front teeth; they cut food.",
+              "pl": "Te płaskie to twoje przednie zęby; nimi odgryzasz jedzenie.",
+              "focusEn": "front teeth",
+              "focusPl": "przednie zęby"
+            },
+            {
+              "en": "The dentist pointed to the model's front teeth and asked my son to count them.",
+              "pl": "Dentystka wskazała przednie zęby modelu i poprosiła syna, żeby je policzył.",
+              "focusEn": "front teeth",
+              "focusPl": "przednie zęby"
+            }
+          ],
+          "acceptedAnswers": [
+            "front tooth",
+            "front teeth"
+          ],
+          "acceptedTranslations": [
+            "przedni ząb",
+            "przednie zęby",
+            "jedynka"
+          ]
+        },
+        {
+          "id": "dentist.gum",
+          "term": "gum",
+          "ipa": "/ɡʌm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dziąsło",
+          "definition": "The pink flesh around the base of your teeth.",
+          "register": "neutralny",
+          "contextPl": "Zdrowie dziąseł",
+          "natural": "",
+          "forms": "gums",
+          "collocations": "healthy gums; bleeding gums; gum disease",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zwykle w liczbie mnogiej: gums. „Gum” to też guma do żucia.",
+          "examples": [
+            {
+              "en": "These pink parts around your teeth are your gums.",
+              "pl": "Te różowe części wokół zębów to dziąsła.",
+              "focusEn": "gums",
+              "focusPl": "dziąsła"
+            },
+            {
+              "en": "Healthy gums don't bleed when you brush, she told my son.",
+              "pl": "Zdrowe dziąsła nie krwawią przy myciu zębów – powiedziała mojemu synowi.",
+              "focusEn": "gums",
+              "focusPl": "dziąsła"
+            }
+          ],
+          "acceptedAnswers": [
+            "gum",
+            "gums"
+          ],
+          "acceptedTranslations": [
+            "dziąsło",
+            "dziąsła"
+          ]
+        },
+        {
+          "id": "dentist.braces",
+          "term": "braces",
+          "ipa": "/ˈbreɪsɪz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "aparat ortodontyczny",
+          "definition": "Metal wires on teeth that slowly make them straight.",
+          "register": "neutralny",
+          "contextPl": "Prostowanie zębów",
+          "natural": "",
+          "forms": "",
+          "collocations": "wear braces; get braces",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zawsze w liczbie mnogiej.",
+          "examples": [
+            {
+              "en": "Some kids need braces to straighten their teeth.",
+              "pl": "Niektóre dzieci potrzebują aparatu ortodontycznego, żeby wyprostować zęby.",
+              "focusEn": "braces",
+              "focusPl": "aparatu ortodontycznego"
+            },
+            {
+              "en": "The dentist said my son might need braces in a couple of years.",
+              "pl": "Dentystka powiedziała, że syn może za kilka lat potrzebować aparatu.",
+              "focusEn": "braces",
+              "focusPl": "aparatu"
+            }
+          ],
+          "acceptedAnswers": [
+            "braces"
+          ],
+          "acceptedTranslations": [
+            "aparat ortodontyczny",
+            "aparat na zęby",
+            "aparat"
+          ]
+        },
+        {
+          "id": "dentist.molar",
+          "term": "molar",
+          "ipa": "/ˈmoʊlər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ząb trzonowy",
+          "definition": "One of the large flat teeth at the back of the mouth.",
+          "register": "specjalistyczny",
+          "contextPl": "Zęby tylne",
+          "natural": "",
+          "forms": "molars",
+          "collocations": "back molar; first molar",
+          "synonyms": "back tooth",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The big molars in the back grind your food.",
+              "pl": "Duże zęby trzonowe z tyłu rozcierają jedzenie.",
+              "focusEn": "molars",
+              "focusPl": "zęby trzonowe"
+            },
+            {
+              "en": "She showed him that his first molar had a deep groove where food can hide.",
+              "pl": "Pokazała mu, że jego pierwszy trzonowiec ma głęboką bruzdę, w której może chować się jedzenie.",
+              "focusEn": "molar",
+              "focusPl": "trzonowiec"
+            }
+          ],
+          "acceptedAnswers": [
+            "molar",
+            "back tooth"
+          ],
+          "acceptedTranslations": [
+            "ząb trzonowy",
+            "trzonowiec",
+            "trzonowce"
+          ]
+        },
+        {
+          "id": "dentist.wisdom-tooth",
+          "term": "wisdom tooth",
+          "ipa": "/ˈwɪzdəm ˌtuːθ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ząb mądrości",
+          "definition": "One of the last four teeth at the very back, which grow in later.",
+          "register": "neutralny",
+          "contextPl": "Ósemki",
+          "natural": "",
+          "forms": "wisdom teeth",
+          "collocations": "get your wisdom teeth out",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Wisdom teeth usually come in when you're a teenager or older.",
+              "pl": "Zęby mądrości wyrastają zwykle u nastolatków albo później.",
+              "focusEn": "Wisdom teeth",
+              "focusPl": "Zęby mądrości"
+            },
+            {
+              "en": "She pointed to the very back of the model where the wisdom teeth grow.",
+              "pl": "Wskazała sam koniec modelu, gdzie rosną zęby mądrości.",
+              "focusEn": "wisdom teeth",
+              "focusPl": "zęby mądrości"
+            }
+          ],
+          "acceptedAnswers": [
+            "wisdom tooth",
+            "wisdom teeth"
+          ],
+          "acceptedTranslations": [
+            "ząb mądrości",
+            "zęby mądrości",
+            "ósemka",
+            "ósemki"
+          ]
+        },
+        {
+          "id": "dentist.bite-2",
+          "term": "bite",
+          "ipa": "/baɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zgryz",
+          "definition": "The way your upper and lower teeth fit together.",
+          "register": "specjalistyczny",
+          "contextPl": "Ocena ustawienia zębów",
+          "natural": "",
+          "forms": "",
+          "collocations": "check your bite; bad bite",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Close your teeth so I can check your bite.",
+              "pl": "Zamknij zęby, żebym mogła sprawdzić twój zgryz.",
+              "focusEn": "bite",
+              "focusPl": "zgryz"
+            },
+            {
+              "en": "His top teeth stick out a little, so his bite isn't perfect.",
+              "pl": "Górne zęby trochę mu wystają, więc zgryz nie jest idealny.",
+              "focusEn": "bite",
+              "focusPl": "zgryz"
+            }
+          ],
+          "acceptedAnswers": [
+            "bite"
+          ],
+          "acceptedTranslations": [
+            "zgryz"
+          ]
+        },
+        {
+          "id": "dentist.crooked",
+          "term": "crooked",
+          "ipa": "/ˈkrʊkɪd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "krzywy",
+          "definition": "Not straight.",
+          "register": "neutralny",
+          "contextPl": "Ustawienie zębów",
+          "natural": "",
+          "forms": "",
+          "collocations": "crooked teeth",
+          "synonyms": "",
+          "antonyms": "straight",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A few of his bottom teeth are a little crooked.",
+              "pl": "Kilka dolnych zębów jest trochę krzywych.",
+              "focusEn": "crooked",
+              "focusPl": "krzywych"
+            },
+            {
+              "en": "She explained that crooked teeth are harder to clean.",
+              "pl": "Wyjaśniła, że krzywe zęby trudniej jest czyścić.",
+              "focusEn": "crooked",
+              "focusPl": "krzywe"
+            }
+          ],
+          "acceptedAnswers": [
+            "crooked"
+          ],
+          "acceptedTranslations": [
+            "krzywy",
+            "krzywe"
+          ]
+        },
+        {
+          "id": "dentist.root",
+          "term": "root",
+          "ipa": "/ruːt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "korzeń",
+          "definition": "The part of a tooth that is inside the bone.",
+          "register": "specjalistyczny",
+          "contextPl": "Budowa zęba",
+          "natural": "",
+          "forms": "roots",
+          "collocations": "tooth root",
+          "synonyms": "",
+          "antonyms": "crown",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The root holds the tooth in the bone, like a tree in the ground.",
+              "pl": "Korzeń trzyma ząb w kości jak drzewo w ziemi.",
+              "focusEn": "root",
+              "focusPl": "Korzeń"
+            },
+            {
+              "en": "On the model, you could pull the tooth out and see the long root.",
+              "pl": "Na modelu można było wyjąć ząb i zobaczyć długi korzeń.",
+              "focusEn": "root",
+              "focusPl": "korzeń"
+            }
+          ],
+          "acceptedAnswers": [
+            "root"
+          ],
+          "acceptedTranslations": [
+            "korzeń",
+            "korzeń zęba"
+          ]
+        },
+        {
+          "id": "dentist.enamel",
+          "term": "enamel",
+          "ipa": "/ɪˈnæməl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "szkliwo",
+          "definition": "The hard, shiny outer layer of a tooth.",
+          "register": "specjalistyczny",
+          "contextPl": "Budowa zęba",
+          "natural": "",
+          "forms": "",
+          "collocations": "tooth enamel; wear away enamel",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Enamel is the hard, shiny outside of the tooth.",
+              "pl": "Szkliwo to twarda, błyszcząca zewnętrzna warstwa zęba.",
+              "focusEn": "Enamel",
+              "focusPl": "Szkliwo"
+            },
+            {
+              "en": "Too much soda can wear away your enamel, she warned.",
+              "pl": "Za dużo napojów gazowanych może ścierać szkliwo – ostrzegła.",
+              "focusEn": "enamel",
+              "focusPl": "szkliwo"
+            }
+          ],
+          "acceptedAnswers": [
+            "enamel",
+            "tooth enamel"
+          ],
+          "acceptedTranslations": [
+            "szkliwo",
+            "szkliwo zębów"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dentist.treatments",
+      "namePl": "Zabiegi",
+      "scenePl": "Omawianie planu leczenia z dentystą po prześwietleniu zębów",
+      "entries": [
+        {
+          "id": "dentist.filling",
+          "term": "filling",
+          "ipa": "/ˈfɪlɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "plomba",
+          "definition": "Material put into a hole in a tooth to repair it.",
+          "register": "neutralny",
+          "contextPl": "Leczenie ubytków",
+          "natural": "",
+          "forms": "fillings",
+          "collocations": "get a filling; old filling; tooth-colored filling",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You'll need a small filling in this tooth.",
+              "pl": "Będzie pan potrzebował małej plomby w tym zębie.",
+              "focusEn": "filling",
+              "focusPl": "plomby"
+            },
+            {
+              "en": "Your old filling is cracked, so we should replace it.",
+              "pl": "Pana stara plomba jest pęknięta, więc powinniśmy ją wymienić.",
+              "focusEn": "filling",
+              "focusPl": "plomba"
+            }
+          ],
+          "acceptedAnswers": [
+            "filling"
+          ],
+          "acceptedTranslations": [
+            "plomba",
+            "wypełnienie"
+          ]
+        },
+        {
+          "id": "dentist.pull",
+          "term": "pull",
+          "ipa": "/pʊl/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "usunąć",
+          "definition": "To take a tooth out.",
+          "register": "potoczny",
+          "contextPl": "Usuwanie zęba",
+          "natural": "",
+          "forms": "pulled",
+          "collocations": "pull a tooth; get a tooth pulled",
+          "synonyms": "extract",
+          "antonyms": "",
+          "notePl": "Potocznie: „get a tooth pulled” = wyrwać ząb.",
+          "examples": [
+            {
+              "en": "If the tooth can't be saved, we'll have to pull it.",
+              "pl": "Jeśli zęba nie da się uratować, będziemy musieli go usunąć.",
+              "focusEn": "pull",
+              "focusPl": "usunąć"
+            },
+            {
+              "en": "The dentist suggested pulling both wisdom teeth at once.",
+              "pl": "Dentysta zaproponował usunięcie obu zębów mądrości naraz.",
+              "focusEn": "pulling",
+              "focusPl": "usunięcie"
+            }
+          ],
+          "acceptedAnswers": [
+            "pull",
+            "extract"
+          ],
+          "acceptedTranslations": [
+            "usunąć",
+            "wyrwać",
+            "usuwać"
+          ]
+        },
+        {
+          "id": "dentist.root-canal",
+          "term": "root canal",
+          "ipa": "/ˈruːt kəˌnæl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "leczenie kanałowe",
+          "definition": "Treatment that removes the infected inside of a tooth.",
+          "register": "neutralny",
+          "contextPl": "Leczenie zakażonego zęba",
+          "natural": "",
+          "forms": "root canals",
+          "collocations": "need a root canal; have a root canal",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The infection is deep, so you need a root canal.",
+              "pl": "Infekcja jest głęboka, więc potrzebne jest leczenie kanałowe.",
+              "focusEn": "root canal",
+              "focusPl": "leczenie kanałowe"
+            },
+            {
+              "en": "A root canal sounds scary, but it's usually no worse than a filling.",
+              "pl": "Leczenie kanałowe brzmi strasznie, ale zwykle nie jest gorsze niż plombowanie.",
+              "focusEn": "root canal",
+              "focusPl": "Leczenie kanałowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "root canal"
+          ],
+          "acceptedTranslations": [
+            "leczenie kanałowe",
+            "leczenie kanałowe zęba"
+          ]
+        },
+        {
+          "id": "dentist.crown",
+          "term": "crown",
+          "ipa": "/kraʊn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "korona",
+          "definition": "A cover made to fit over a damaged tooth.",
+          "register": "specjalistyczny",
+          "contextPl": "Odbudowa zęba",
+          "natural": "",
+          "forms": "crowns",
+          "collocations": "put on a crown; porcelain crown",
+          "synonyms": "cap",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After the root canal, we'll put a crown on the tooth.",
+              "pl": "Po leczeniu kanałowym założymy na ząb koronę.",
+              "focusEn": "crown",
+              "focusPl": "koronę"
+            },
+            {
+              "en": "A porcelain crown will match the color of your other teeth.",
+              "pl": "Porcelanowa korona będzie pasować kolorem do pozostałych zębów.",
+              "focusEn": "crown",
+              "focusPl": "korona"
+            }
+          ],
+          "acceptedAnswers": [
+            "crown",
+            "cap"
+          ],
+          "acceptedTranslations": [
+            "korona",
+            "koronka"
+          ]
+        },
+        {
+          "id": "dentist.treatment-plan",
+          "term": "treatment plan",
+          "ipa": "/ˈtriːtmənt ˌplæn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "plan leczenia",
+          "definition": "A list of the treatments a patient needs and their order.",
+          "register": "neutralny",
+          "contextPl": "Omawianie leczenia i kosztów",
+          "natural": "",
+          "forms": "treatment plans",
+          "collocations": "go over a treatment plan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's go over your treatment plan and the costs.",
+              "pl": "Omówmy pana plan leczenia i koszty.",
+              "focusEn": "treatment plan",
+              "focusPl": "plan leczenia"
+            },
+            {
+              "en": "The treatment plan included two fillings and a crown.",
+              "pl": "Plan leczenia obejmował dwie plomby i koronę.",
+              "focusEn": "treatment plan",
+              "focusPl": "Plan leczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "treatment plan"
+          ],
+          "acceptedTranslations": [
+            "plan leczenia"
+          ]
+        },
+        {
+          "id": "dentist.gap",
+          "term": "gap",
+          "ipa": "/ɡæp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "luka",
+          "definition": "An empty space between two things.",
+          "register": "neutralny",
+          "contextPl": "Brakujący ząb",
+          "natural": "",
+          "forms": "gaps",
+          "collocations": "gap between your teeth; fill the gap",
+          "synonyms": "space",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a gap where your old tooth used to be.",
+              "pl": "Jest luka w miejscu, gdzie był twój stary ząb.",
+              "focusEn": "gap",
+              "focusPl": "luka"
+            },
+            {
+              "en": "If we don't fill the gap, your other teeth may shift.",
+              "pl": "Jeśli nie wypełnimy luki, inne zęby mogą się przesunąć.",
+              "focusEn": "gap",
+              "focusPl": "luki"
+            }
+          ],
+          "acceptedAnswers": [
+            "gap",
+            "space"
+          ],
+          "acceptedTranslations": [
+            "luka",
+            "szpara",
+            "przerwa"
+          ]
+        },
+        {
+          "id": "dentist.wear-off",
+          "term": "wear off",
+          "ipa": "/ˌwer ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przestać działać",
+          "definition": "To slowly stop having an effect.",
+          "register": "neutralny",
+          "contextPl": "Koniec działania znieczulenia",
+          "natural": "",
+          "forms": "wear – wore – worn",
+          "collocations": "the numbness wears off",
+          "synonyms": "",
+          "antonyms": "kick in",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The numbness should wear off in two or three hours.",
+              "pl": "Znieczulenie powinno przestać działać za dwie, trzy godziny.",
+              "focusEn": "wear off",
+              "focusPl": "przestać działać"
+            },
+            {
+              "en": "Don't eat anything hot until the shot wears off.",
+              "pl": "Nie jedz nic gorącego, dopóki zastrzyk nie przestanie działać.",
+              "focusEn": "wears off",
+              "focusPl": "przestanie działać"
+            }
+          ],
+          "acceptedAnswers": [
+            "wear off"
+          ],
+          "acceptedTranslations": [
+            "przestać działać",
+            "przestawać działać",
+            "minąć",
+            "ustąpić"
+          ]
+        },
+        {
+          "id": "dentist.whitening",
+          "term": "whitening",
+          "ipa": "/ˈwaɪtənɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wybielanie",
+          "definition": "Treatment that makes teeth whiter.",
+          "register": "neutralny",
+          "contextPl": "Zabiegi estetyczne",
+          "natural": "",
+          "forms": "",
+          "collocations": "teeth whitening; whitening strips",
+          "synonyms": "bleaching",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I asked about whitening before my sister's wedding.",
+              "pl": "Zapytałem o wybielanie przed ślubem siostry.",
+              "focusEn": "whitening",
+              "focusPl": "wybielanie"
+            },
+            {
+              "en": "She said whitening might make my teeth more sensitive for a few days.",
+              "pl": "Powiedziała, że wybielanie może przez kilka dni zwiększyć wrażliwość zębów.",
+              "focusEn": "whitening",
+              "focusPl": "wybielanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "whitening",
+            "teeth whitening"
+          ],
+          "acceptedTranslations": [
+            "wybielanie",
+            "wybielanie zębów"
+          ]
+        },
+        {
+          "id": "dentist.dentures",
+          "term": "dentures",
+          "ipa": "/ˈdentʃərz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "proteza zębowa",
+          "definition": "A set of false teeth that can be taken out.",
+          "register": "neutralny",
+          "contextPl": "Uzupełnianie braków zębowych",
+          "natural": "",
+          "forms": "",
+          "collocations": "wear dentures; partial dentures",
+          "synonyms": "false teeth",
+          "antonyms": "",
+          "notePl": "Zwykle w liczbie mnogiej.",
+          "examples": [
+            {
+              "en": "We talked about dentures as a cheaper option for my dad.",
+              "pl": "Rozmawialiśmy o protezie jako tańszej opcji dla mojego taty.",
+              "focusEn": "dentures",
+              "focusPl": "protezie"
+            },
+            {
+              "en": "Partial dentures can replace a few missing teeth.",
+              "pl": "Częściowa proteza może zastąpić kilka brakujących zębów.",
+              "focusEn": "dentures",
+              "focusPl": "proteza"
+            }
+          ],
+          "acceptedAnswers": [
+            "dentures",
+            "false teeth"
+          ],
+          "acceptedTranslations": [
+            "proteza zębowa",
+            "proteza",
+            "sztuczna szczęka"
+          ]
+        },
+        {
+          "id": "dentist.orthodontist",
+          "term": "orthodontist",
+          "ipa": "/ˌɔːrθəˈdɑːntɪst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ortodonta",
+          "definition": "A dentist who straightens teeth.",
+          "register": "specjalistyczny",
+          "contextPl": "Leczenie ortodontyczne",
+          "natural": "",
+          "forms": "orthodontists",
+          "collocations": "see an orthodontist",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She referred my daughter to an orthodontist for braces.",
+              "pl": "Skierowała córkę do ortodonty w sprawie aparatu.",
+              "focusEn": "orthodontist",
+              "focusPl": "ortodonty"
+            },
+            {
+              "en": "The orthodontist will decide how long the braces need to stay on.",
+              "pl": "Ortodonta zdecyduje, jak długo aparat musi zostać.",
+              "focusEn": "orthodontist",
+              "focusPl": "Ortodonta"
+            }
+          ],
+          "acceptedAnswers": [
+            "orthodontist"
+          ],
+          "acceptedTranslations": [
+            "ortodonta",
+            "ortodontka"
+          ]
+        },
+        {
+          "id": "dentist.implant",
+          "term": "implant",
+          "ipa": "/ˈɪmplænt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "implant",
+          "definition": "An artificial tooth root put into the jawbone to hold a false tooth.",
+          "register": "specjalistyczny",
+          "contextPl": "Trwałe uzupełnienie braku",
+          "natural": "",
+          "forms": "implants",
+          "collocations": "dental implant; get an implant",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "An implant would fill the gap and look natural.",
+              "pl": "Implant wypełniłby lukę i wyglądał naturalnie.",
+              "focusEn": "implant",
+              "focusPl": "Implant"
+            },
+            {
+              "en": "The implant costs more, but it can last for decades.",
+              "pl": "Implant kosztuje więcej, ale może przetrwać dziesięciolecia.",
+              "focusEn": "implant",
+              "focusPl": "Implant"
+            }
+          ],
+          "acceptedAnswers": [
+            "implant",
+            "dental implant"
+          ],
+          "acceptedTranslations": [
+            "implant",
+            "implant zęba"
+          ]
+        },
+        {
+          "id": "dentist.extract",
+          "term": "extract",
+          "ipa": "/ɪkˈstrækt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "usunąć",
+          "definition": "To remove a tooth, used in formal or medical language.",
+          "register": "formalny",
+          "contextPl": "Ekstrakcja zęba",
+          "natural": "",
+          "forms": "extracted",
+          "collocations": "extract a tooth",
+          "synonyms": "pull",
+          "antonyms": "",
+          "notePl": "Słowo oficjalne; w rozmowie częściej „pull”.",
+          "examples": [
+            {
+              "en": "We'll extract the tooth under local anesthesia.",
+              "pl": "Usuniemy ząb w znieczuleniu miejscowym.",
+              "focusEn": "extract",
+              "focusPl": "Usuniemy"
+            },
+            {
+              "en": "She explained that extracting the tooth would leave a gap.",
+              "pl": "Wyjaśniła, że usunięcie zęba zostawi lukę.",
+              "focusEn": "extracting",
+              "focusPl": "usunięcie"
+            }
+          ],
+          "acceptedAnswers": [
+            "extract",
+            "pull"
+          ],
+          "acceptedTranslations": [
+            "usunąć",
+            "usuwać",
+            "ekstrahować"
+          ]
+        },
+        {
+          "id": "dentist.local-anesthetic",
+          "term": "local anesthetic",
+          "ipa": "/ˌloʊkəl ˌænəsˈθetɪk/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "znieczulenie miejscowe",
+          "definition": "Medicine that stops pain in one part of the body while you stay awake.",
+          "register": "specjalistyczny",
+          "contextPl": "Znieczulenie do zabiegu",
+          "natural": "",
+          "forms": "local anesthetics",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "general anesthetic",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll use a local anesthetic, so you won't feel anything.",
+              "pl": "Zastosujemy znieczulenie miejscowe, więc nic pan nie poczuje.",
+              "focusEn": "local anesthetic",
+              "focusPl": "znieczulenie miejscowe"
+            },
+            {
+              "en": "I asked if the local anesthetic would wear off before my afternoon meeting.",
+              "pl": "Zapytałem, czy znieczulenie miejscowe przestanie działać przed popołudniowym spotkaniem.",
+              "focusEn": "local anesthetic",
+              "focusPl": "znieczulenie miejscowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "local anesthetic",
+            "local"
+          ],
+          "acceptedTranslations": [
+            "znieczulenie miejscowe",
+            "znieczulenie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dentist.oral-hygiene",
+      "namePl": "Higiena jamy ustnej",
+      "scenePl": "Wieczorne mycie zębów z dziećmi w łazience",
+      "entries": [
+        {
+          "id": "dentist.brush",
+          "term": "brush",
+          "ipa": "/brʌʃ/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "myć",
+          "definition": "To clean your teeth with a toothbrush.",
+          "register": "neutralny",
+          "contextPl": "Codzienne mycie zębów",
+          "natural": "",
+          "forms": "brushed",
+          "collocations": "brush your teeth; brush twice a day",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Brush your teeth” = myć zęby.",
+          "examples": [
+            {
+              "en": "Brush the back teeth too, not just the front.",
+              "pl": "Myj też tylne zęby, nie tylko przednie.",
+              "focusEn": "Brush",
+              "focusPl": "Myj"
+            },
+            {
+              "en": "We brush together for two minutes while a song plays.",
+              "pl": "Myjemy zęby razem przez dwie minuty, kiedy leci piosenka.",
+              "focusEn": "brush",
+              "focusPl": "Myjemy"
+            }
+          ],
+          "acceptedAnswers": [
+            "brush"
+          ],
+          "acceptedTranslations": [
+            "myć",
+            "szczotkować",
+            "umyć"
+          ]
+        },
+        {
+          "id": "dentist.toothbrush",
+          "term": "toothbrush",
+          "ipa": "/ˈtuːθbrʌʃ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "szczoteczka do zębów",
+          "definition": "A small brush for cleaning teeth.",
+          "register": "neutralny",
+          "contextPl": "Przybory do higieny",
+          "natural": "",
+          "forms": "toothbrushes",
+          "collocations": "soft toothbrush; new toothbrush",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Grab your toothbrush; it's time for bed.",
+              "pl": "Weź szczoteczkę; czas spać.",
+              "focusEn": "toothbrush",
+              "focusPl": "szczoteczkę"
+            },
+            {
+              "en": "We replace our toothbrushes every three months.",
+              "pl": "Wymieniamy szczoteczki do zębów co trzy miesiące.",
+              "focusEn": "toothbrushes",
+              "focusPl": "szczoteczki do zębów"
+            }
+          ],
+          "acceptedAnswers": [
+            "toothbrush"
+          ],
+          "acceptedTranslations": [
+            "szczoteczka do zębów",
+            "szczoteczka"
+          ]
+        },
+        {
+          "id": "dentist.toothpaste",
+          "term": "toothpaste",
+          "ipa": "/ˈtuːθpeɪst/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pasta do zębów",
+          "definition": "A thick paste you put on a toothbrush.",
+          "register": "neutralny",
+          "contextPl": "Przybory do higieny",
+          "natural": "",
+          "forms": "",
+          "collocations": "tube of toothpaste",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Use just a tiny bit of toothpaste, about the size of a pea.",
+              "pl": "Używaj tylko odrobiny pasty do zębów, mniej więcej wielkości ziarnka grochu.",
+              "focusEn": "toothpaste",
+              "focusPl": "pasty do zębów"
+            },
+            {
+              "en": "My son squeezed half the tube of toothpaste into the sink.",
+              "pl": "Syn wycisnął pół tubki pasty do zębów do umywalki.",
+              "focusEn": "toothpaste",
+              "focusPl": "pasty do zębów"
+            }
+          ],
+          "acceptedAnswers": [
+            "toothpaste"
+          ],
+          "acceptedTranslations": [
+            "pasta do zębów",
+            "pasta"
+          ]
+        },
+        {
+          "id": "dentist.floss",
+          "term": "floss",
+          "ipa": "/flɔːs/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nitkować",
+          "definition": "To clean between your teeth with a special thread.",
+          "register": "neutralny",
+          "contextPl": "Czyszczenie przestrzeni międzyzębowych",
+          "natural": "",
+          "forms": "flossed",
+          "collocations": "floss every day; dental floss",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: dental floss – nić dentystyczna.",
+          "examples": [
+            {
+              "en": "Don't forget to floss before you brush.",
+              "pl": "Nie zapomnij nitkować zębów przed myciem.",
+              "focusEn": "floss",
+              "focusPl": "nitkować"
+            },
+            {
+              "en": "I floss every night, but my gums still bleed a little.",
+              "pl": "Codziennie wieczorem nitkuję zęby, ale dziąsła wciąż trochę krwawią.",
+              "focusEn": "floss",
+              "focusPl": "nitkuję"
+            }
+          ],
+          "acceptedAnswers": [
+            "floss"
+          ],
+          "acceptedTranslations": [
+            "nitkować",
+            "czyścić nicią dentystyczną"
+          ]
+        },
+        {
+          "id": "dentist.mouthwash",
+          "term": "mouthwash",
+          "ipa": "/ˈmaʊθwɑːʃ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "płyn do płukania ust",
+          "definition": "A liquid you swish in your mouth to clean it.",
+          "register": "neutralny",
+          "contextPl": "Płukanie ust",
+          "natural": "",
+          "forms": "",
+          "collocations": "use mouthwash",
+          "synonyms": "mouth rinse",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Swish the mouthwash around for thirty seconds.",
+              "pl": "Płucz usta płynem do płukania przez trzydzieści sekund.",
+              "focusEn": "mouthwash",
+              "focusPl": "płynem do płukania"
+            },
+            {
+              "en": "The kids think the blue mouthwash tastes too strong.",
+              "pl": "Dzieci uważają, że niebieski płyn do płukania ust ma za mocny smak.",
+              "focusEn": "mouthwash",
+              "focusPl": "płyn do płukania ust"
+            }
+          ],
+          "acceptedAnswers": [
+            "mouthwash",
+            "mouth rinse"
+          ],
+          "acceptedTranslations": [
+            "płyn do płukania ust",
+            "płyn do płukania",
+            "płukanka"
+          ]
+        },
+        {
+          "id": "dentist.bad-breath",
+          "term": "bad breath",
+          "ipa": "/ˌbæd ˈbreθ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nieświeży oddech",
+          "definition": "Breath that smells unpleasant.",
+          "register": "neutralny",
+          "contextPl": "Higiena i świeży oddech",
+          "natural": "",
+          "forms": "",
+          "collocations": "have bad breath",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Brushing your tongue helps prevent bad breath.",
+              "pl": "Szczotkowanie języka pomaga zapobiegać nieświeżemu oddechowi.",
+              "focusEn": "bad breath",
+              "focusPl": "nieświeżemu oddechowi"
+            },
+            {
+              "en": "My son giggled and said I had bad breath after dinner.",
+              "pl": "Syn zachichotał i powiedział, że po kolacji mam nieświeży oddech.",
+              "focusEn": "bad breath",
+              "focusPl": "nieświeży oddech"
+            }
+          ],
+          "acceptedAnswers": [
+            "bad breath"
+          ],
+          "acceptedTranslations": [
+            "nieświeży oddech",
+            "brzydki zapach z ust"
+          ]
+        },
+        {
+          "id": "dentist.electric-toothbrush",
+          "term": "electric toothbrush",
+          "ipa": "/ɪˌlektrɪk ˈtuːθbrʌʃ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "szczoteczka elektryczna",
+          "definition": "A toothbrush with a motor that moves the bristles.",
+          "register": "neutralny",
+          "contextPl": "Przybory do higieny",
+          "natural": "",
+          "forms": "electric toothbrushes",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My daughter loves her electric toothbrush because it buzzes.",
+              "pl": "Córka uwielbia swoją szczoteczkę elektryczną, bo brzęczy.",
+              "focusEn": "electric toothbrush",
+              "focusPl": "szczoteczkę elektryczną"
+            },
+            {
+              "en": "The electric toothbrush stops after two minutes, so we know when to finish.",
+              "pl": "Szczoteczka elektryczna wyłącza się po dwóch minutach, więc wiemy, kiedy skończyć.",
+              "focusEn": "electric toothbrush",
+              "focusPl": "Szczoteczka elektryczna"
+            }
+          ],
+          "acceptedAnswers": [
+            "electric toothbrush"
+          ],
+          "acceptedTranslations": [
+            "szczoteczka elektryczna",
+            "elektryczna szczoteczka do zębów"
+          ]
+        },
+        {
+          "id": "dentist.tooth-decay",
+          "term": "tooth decay",
+          "ipa": "/ˈtuːθ dɪˌkeɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "próchnica",
+          "definition": "Damage to teeth caused by bacteria and sugar.",
+          "register": "neutralny",
+          "contextPl": "Profilaktyka",
+          "natural": "",
+          "forms": "",
+          "collocations": "prevent tooth decay",
+          "synonyms": "cavities",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sugary snacks before bed can lead to tooth decay.",
+              "pl": "Słodkie przekąski przed snem mogą prowadzić do próchnicy.",
+              "focusEn": "tooth decay",
+              "focusPl": "próchnicy"
+            },
+            {
+              "en": "I told the kids that brushing fights tooth decay.",
+              "pl": "Powiedziałem dzieciom, że mycie zębów walczy z próchnicą.",
+              "focusEn": "tooth decay",
+              "focusPl": "próchnicą"
+            }
+          ],
+          "acceptedAnswers": [
+            "tooth decay",
+            "decay"
+          ],
+          "acceptedTranslations": [
+            "próchnica",
+            "próchnica zębów"
+          ]
+        },
+        {
+          "id": "dentist.bleeding-gums",
+          "term": "bleeding gums",
+          "ipa": "/ˌbliːdɪŋ ˈɡʌmz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "krwawiące dziąsła",
+          "definition": "Gums that bleed, often when brushing.",
+          "register": "neutralny",
+          "contextPl": "Objaw problemów z dziąsłami",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bleeding gums can mean you need to floss more often.",
+              "pl": "Krwawiące dziąsła mogą oznaczać, że trzeba częściej nitkować zęby.",
+              "focusEn": "Bleeding gums",
+              "focusPl": "Krwawiące dziąsła"
+            },
+            {
+              "en": "I spat into the sink and noticed signs of bleeding gums.",
+              "pl": "Splunąłem do umywalki i zauważyłem oznaki krwawienia dziąseł.",
+              "focusEn": "bleeding gums",
+              "focusPl": "krwawienia dziąseł"
+            }
+          ],
+          "acceptedAnswers": [
+            "bleeding gums"
+          ],
+          "acceptedTranslations": [
+            "krwawiące dziąsła",
+            "krwawienie dziąseł"
+          ]
+        },
+        {
+          "id": "dentist.fluoride",
+          "term": "fluoride",
+          "ipa": "/ˈflʊraɪd/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "fluor",
+          "definition": "A substance added to toothpaste and water to protect teeth.",
+          "register": "specjalistyczny",
+          "contextPl": "Ochrona szkliwa",
+          "natural": "",
+          "forms": "",
+          "collocations": "fluoride toothpaste",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This toothpaste has fluoride to protect your teeth.",
+              "pl": "Ta pasta ma fluor, który chroni zęby.",
+              "focusEn": "fluoride",
+              "focusPl": "fluor"
+            },
+            {
+              "en": "The kids' toothpaste has less fluoride than mine.",
+              "pl": "Pasta dla dzieci ma mniej fluoru niż moja.",
+              "focusEn": "fluoride",
+              "focusPl": "fluoru"
+            }
+          ],
+          "acceptedAnswers": [
+            "fluoride"
+          ],
+          "acceptedTranslations": [
+            "fluor",
+            "fluorek"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dentist.idioms",
+      "namePl": "Idiomy",
+      "scenePl": "Poczekalnia u dentysty: rozmowy pacjentów czekających na wizytę",
+      "entries": [
+        {
+          "id": "dentist.sweet-tooth",
+          "term": "sweet tooth",
+          "ipa": "/ˌswiːt ˈtuːθ/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "słabość do słodyczy",
+          "definition": "A strong liking for sweet food.",
+          "register": "potoczny",
+          "contextPl": "Zamiłowanie do słodyczy",
+          "natural": "",
+          "forms": "",
+          "collocations": "have a sweet tooth",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„I have a sweet tooth” = jestem łasuchem.",
+          "examples": [
+            {
+              "en": "I have a real sweet tooth, so I'm here every six months.",
+              "pl": "Jestem prawdziwym łasuchem, więc bywam tu co pół roku.",
+              "focusEn": "sweet tooth",
+              "focusPl": "łasuchem"
+            },
+            {
+              "en": "The woman next to me admitted her sweet tooth caused her cavities.",
+              "pl": "Kobieta obok przyznała, że ubytki to skutek jej słabości do słodyczy.",
+              "focusEn": "sweet tooth",
+              "focusPl": "słabości do słodyczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "sweet tooth"
+          ],
+          "acceptedTranslations": [
+            "słabość do słodyczy",
+            "łasuch",
+            "łakomczuch"
+          ]
+        },
+        {
+          "id": "dentist.grit-your-teeth",
+          "term": "grit your teeth",
+          "ipa": "/ˌɡrɪt jər ˈtiːθ/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zacisnąć zęby",
+          "definition": "To accept something painful or unpleasant without complaining.",
+          "register": "potoczny",
+          "contextPl": "Przetrwanie czegoś nieprzyjemnego",
+          "natural": "",
+          "forms": "grit – gritted – gritted",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I just gritted my teeth and waited for my name to be called.",
+              "pl": "Po prostu zacisnąłem zęby i czekałem, aż wywołają moje nazwisko.",
+              "focusEn": "gritted my teeth",
+              "focusPl": "zacisnąłem zęby"
+            },
+            {
+              "en": "A man across from me told his son to grit his teeth and be brave.",
+              "pl": "Mężczyzna naprzeciwko kazał synowi zacisnąć zęby i być dzielnym.",
+              "focusEn": "grit his teeth",
+              "focusPl": "zacisnąć zęby"
+            }
+          ],
+          "acceptedAnswers": [
+            "grit your teeth",
+            "grit my teeth",
+            "grit his teeth"
+          ],
+          "acceptedTranslations": [
+            "zacisnąć zęby",
+            "zaciskać zęby"
+          ]
+        },
+        {
+          "id": "dentist.bite-the-bullet",
+          "term": "bite the bullet",
+          "ipa": "/ˌbaɪt ðə ˈbʊlət/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przemóc się",
+          "definition": "To make yourself do something unpleasant that you have been avoiding.",
+          "register": "potoczny",
+          "contextPl": "Decyzja o trudnym zabiegu",
+          "natural": "",
+          "forms": "bite – bit – bitten",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I finally bit the bullet and booked the root canal.",
+              "pl": "W końcu przemogłem się i umówiłem leczenie kanałowe.",
+              "focusEn": "bit the bullet",
+              "focusPl": "przemogłem się"
+            },
+            {
+              "en": "The woman across from me said she had to bite the bullet and get her tooth pulled.",
+              "pl": "Kobieta naprzeciwko powiedziała, że musiała przemóc się i usunąć ząb.",
+              "focusEn": "bite the bullet",
+              "focusPl": "przemóc się"
+            }
+          ],
+          "acceptedAnswers": [
+            "bite the bullet"
+          ],
+          "acceptedTranslations": [
+            "przemóc się",
+            "zacisnąć zęby",
+            "zebrać się na odwagę"
+          ]
+        },
+        {
+          "id": "dentist.like-pulling-teeth",
+          "term": "like pulling teeth",
+          "ipa": "/laɪk ˌpʊlɪŋ ˈtiːθ/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "jak po grudzie",
+          "definition": "Very difficult, especially getting someone to do something.",
+          "register": "potoczny",
+          "contextPl": "Coś idzie bardzo opornie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Getting my son to come here was like pulling teeth.",
+              "pl": "Przyprowadzenie tu syna szło jak po grudzie.",
+              "focusEn": "like pulling teeth",
+              "focusPl": "jak po grudzie"
+            },
+            {
+              "en": "Filling out the insurance forms was like pulling teeth.",
+              "pl": "Wypełnianie formularzy ubezpieczeniowych szło jak po grudzie.",
+              "focusEn": "like pulling teeth",
+              "focusPl": "jak po grudzie"
+            }
+          ],
+          "acceptedAnswers": [
+            "like pulling teeth"
+          ],
+          "acceptedTranslations": [
+            "jak po grudzie",
+            "z wielkim trudem",
+            "jak krew z nosa"
+          ]
+        },
+        {
+          "id": "dentist.by-the-skin-of-your-teeth",
+          "term": "by the skin of your teeth",
+          "ipa": "/baɪ ðə ˌskɪn əv jər ˈtiːθ/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "o włos",
+          "definition": "Only just; almost not.",
+          "register": "potoczny",
+          "contextPl": "Coś udało się w ostatniej chwili",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "barely",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I made it to my appointment by the skin of my teeth.",
+              "pl": "Zdążyłem na wizytę o włos.",
+              "focusEn": "by the skin of my teeth",
+              "focusPl": "o włos"
+            },
+            {
+              "en": "The man next to me said he'd caught the bus by the skin of his teeth.",
+              "pl": "Mężczyzna obok powiedział, że złapał autobus w ostatniej chwili.",
+              "focusEn": "by the skin of his teeth",
+              "focusPl": "w ostatniej chwili"
+            }
+          ],
+          "acceptedAnswers": [
+            "by the skin of your teeth",
+            "by the skin of my teeth"
+          ],
+          "acceptedTranslations": [
+            "o włos",
+            "w ostatniej chwili",
+            "ledwo ledwo"
+          ]
+        },
+        {
+          "id": "dentist.long-in-the-tooth",
+          "term": "long in the tooth",
+          "ipa": "/ˌlɔːŋ ɪn ðə ˈtuːθ/",
+          "pos": "idiom",
+          "level": "C2",
+          "frequency": "less_common",
+          "translation": "leciwy",
+          "definition": "Old, or older than is ideal.",
+          "register": "potoczny",
+          "contextPl": "Żartobliwie o wieku",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The magazines in this waiting room are a bit long in the tooth.",
+              "pl": "Czasopisma w tej poczekalni są nieco leciwe.",
+              "focusEn": "long in the tooth",
+              "focusPl": "leciwe"
+            },
+            {
+              "en": "My dentist is getting long in the tooth, but he's still the best in town.",
+              "pl": "Mój dentysta jest już w podeszłym wieku, ale wciąż jest najlepszy w mieście.",
+              "focusEn": "long in the tooth",
+              "focusPl": "w podeszłym wieku"
+            }
+          ],
+          "acceptedAnswers": [
+            "long in the tooth"
+          ],
+          "acceptedTranslations": [
+            "leciwy",
+            "w podeszłym wieku",
+            "nie pierwszej młodości"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3026 @@
+{
+  "schemaVersion": 1,
+  "id": "hospital-emergency",
+  "namePl": "Szpital i nagłe wypadki",
+  "nameEn": "Hospital and Emergencies",
+  "group": "health",
+  "symbol": "cross.case",
+  "summaryPl": "Wezwanie pomocy, urazy, pierwsza pomoc, SOR i pobyt w szpitalu.",
+  "aliases": [
+    "szpital",
+    "SOR",
+    "pogotowie",
+    "karetka",
+    "wypadek",
+    "urazy",
+    "pierwsza pomoc",
+    "hospital",
+    "emergency room",
+    "ER",
+    "ambulance",
+    "first aid"
+  ],
+  "categories": [
+    {
+      "id": "hospital-emergency.emergency-call",
+      "namePl": "Wezwanie pomocy",
+      "scenePl": "Wypadek rowerowy na ulicy: przechodzień dzwoni pod numer alarmowy 911",
+      "entries": [
+        {
+          "id": "hospital-emergency.emergency",
+          "term": "emergency",
+          "ipa": "/ɪˈmɜːrdʒənsi/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "nagły wypadek",
+          "definition": "A sudden dangerous situation that needs help right away.",
+          "register": "neutralny",
+          "contextPl": "Sytuacja wymagająca natychmiastowej pomocy",
+          "natural": "",
+          "forms": "emergencies",
+          "collocations": "in an emergency; medical emergency; emergency number",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This is an emergency! A cyclist was hit by a car.",
+              "pl": "To nagły wypadek! Samochód potrącił rowerzystę.",
+              "focusEn": "emergency",
+              "focusPl": "nagły wypadek"
+            },
+            {
+              "en": "In an emergency, the dispatcher will tell you exactly what to do.",
+              "pl": "W nagłym wypadku dyspozytor powie ci dokładnie, co robić.",
+              "focusEn": "emergency",
+              "focusPl": "nagłym wypadku"
+            }
+          ],
+          "acceptedAnswers": [
+            "emergency"
+          ],
+          "acceptedTranslations": [
+            "nagły wypadek",
+            "sytuacja awaryjna",
+            "nagły przypadek"
+          ]
+        },
+        {
+          "id": "hospital-emergency.help",
+          "term": "help",
+          "ipa": "/help/",
+          "pos": "wykrzyknik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pomocy",
+          "definition": "What you shout when you need someone to help you right away.",
+          "register": "neutralny",
+          "contextPl": "Wołanie o pomoc",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Help! Someone call an ambulance right now!",
+              "pl": "Pomocy! Niech ktoś natychmiast wezwie karetkę!",
+              "focusEn": "Help",
+              "focusPl": "Pomocy"
+            },
+            {
+              "en": "I heard someone shouting help near the crosswalk.",
+              "pl": "Usłyszałem, jak ktoś krzyczy „pomocy” przy przejściu dla pieszych.",
+              "focusEn": "help",
+              "focusPl": "pomocy"
+            }
+          ],
+          "acceptedAnswers": [
+            "help"
+          ],
+          "acceptedTranslations": [
+            "pomocy",
+            "ratunku"
+          ]
+        },
+        {
+          "id": "hospital-emergency.call-911",
+          "term": "call 911",
+          "ipa": "/ˌkɔːl ˌnaɪn wʌn ˈwʌn/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zadzwonić pod 911",
+          "definition": "To phone the US emergency number for police, fire or ambulance.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie służb ratunkowych w USA",
+          "natural": "",
+          "forms": "call – called – called",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "911 czyta się „nine-one-one”; w Polsce i UE numer alarmowy to 112.",
+          "examples": [
+            {
+              "en": "Somebody call 911! He's not moving.",
+              "pl": "Niech ktoś zadzwoni pod 911! On się nie rusza.",
+              "focusEn": "call 911",
+              "focusPl": "zadzwoni pod 911"
+            },
+            {
+              "en": "I called 911 and described where the accident happened.",
+              "pl": "Zadzwoniłem pod 911 i opisałem, gdzie doszło do wypadku.",
+              "focusEn": "called 911",
+              "focusPl": "Zadzwoniłem pod 911"
+            }
+          ],
+          "acceptedAnswers": [
+            "call 911",
+            "dial 911"
+          ],
+          "acceptedTranslations": [
+            "zadzwonić pod 911",
+            "zadzwonić na numer alarmowy",
+            "wezwać pomoc"
+          ]
+        },
+        {
+          "id": "hospital-emergency.ambulance",
+          "term": "ambulance",
+          "ipa": "/ˈæmbjələns/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "karetka",
+          "definition": "A vehicle that takes sick or hurt people to the hospital.",
+          "register": "neutralny",
+          "contextPl": "Transport do szpitala",
+          "natural": "",
+          "forms": "ambulances",
+          "collocations": "call an ambulance; in an ambulance",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The ambulance arrived in less than ten minutes.",
+              "pl": "Karetka przyjechała w niecałe dziesięć minut.",
+              "focusEn": "ambulance",
+              "focusPl": "Karetka"
+            },
+            {
+              "en": "Should I wait for the ambulance or drive him to the hospital myself?",
+              "pl": "Czy mam czekać na karetkę, czy sam zawieźć go do szpitala?",
+              "focusEn": "ambulance",
+              "focusPl": "karetkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "ambulance"
+          ],
+          "acceptedTranslations": [
+            "karetka",
+            "ambulans",
+            "pogotowie"
+          ]
+        },
+        {
+          "id": "hospital-emergency.accident",
+          "term": "accident",
+          "ipa": "/ˈæksɪdənt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wypadek",
+          "definition": "A sudden event that causes injury or damage.",
+          "register": "neutralny",
+          "contextPl": "Zdarzenie drogowe lub domowe",
+          "natural": "",
+          "forms": "accidents",
+          "collocations": "car accident; have an accident; by accident",
+          "synonyms": "crash",
+          "antonyms": "",
+          "notePl": "„By accident” znaczy „przypadkiem”.",
+          "examples": [
+            {
+              "en": "I saw the accident from across the street.",
+              "pl": "Widziałem wypadek z drugiej strony ulicy.",
+              "focusEn": "accident",
+              "focusPl": "wypadek"
+            },
+            {
+              "en": "The police asked me to describe how the accident happened.",
+              "pl": "Policja poprosiła mnie, żebym opisał, jak doszło do wypadku.",
+              "focusEn": "accident",
+              "focusPl": "wypadku"
+            }
+          ],
+          "acceptedAnswers": [
+            "accident",
+            "crash"
+          ],
+          "acceptedTranslations": [
+            "wypadek"
+          ]
+        },
+        {
+          "id": "hospital-emergency.get-hit",
+          "term": "get hit",
+          "ipa": "/ˌɡet ˈhɪt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zostać potrąconym",
+          "definition": "To be struck by a car or another vehicle.",
+          "register": "potoczny",
+          "contextPl": "Potrącenie pieszego lub rowerzysty",
+          "natural": "",
+          "forms": "get – got – gotten",
+          "collocations": "get hit by a car",
+          "synonyms": "be run over",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A woman got hit by a car at the crosswalk.",
+              "pl": "Kobieta została potrącona przez samochód na przejściu.",
+              "focusEn": "got hit",
+              "focusPl": "została potrącona"
+            },
+            {
+              "en": "The cyclist got hit when the driver turned without looking.",
+              "pl": "Rowerzysta został potrącony, kiedy kierowca skręcił, nie patrząc.",
+              "focusEn": "got hit",
+              "focusPl": "został potrącony"
+            }
+          ],
+          "acceptedAnswers": [
+            "get hit",
+            "be hit"
+          ],
+          "acceptedTranslations": [
+            "zostać potrąconym",
+            "być potrąconym",
+            "zostać uderzonym"
+          ]
+        },
+        {
+          "id": "hospital-emergency.injured",
+          "term": "injured",
+          "ipa": "/ˈɪndʒərd/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ranny",
+          "definition": "Hurt in an accident.",
+          "register": "neutralny",
+          "contextPl": "Poszkodowani w wypadku",
+          "natural": "",
+          "forms": "",
+          "collocations": "badly injured; seriously injured; the injured",
+          "synonyms": "hurt; wounded",
+          "antonyms": "unhurt",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is anyone injured? I saw the car hit the bike.",
+              "pl": "Czy ktoś jest ranny? Widziałem, jak samochód uderzył w rower.",
+              "focusEn": "injured",
+              "focusPl": "ranny"
+            },
+            {
+              "en": "The injured cyclist was lying on the side of the road.",
+              "pl": "Ranny rowerzysta leżał na poboczu.",
+              "focusEn": "injured",
+              "focusPl": "Ranny"
+            }
+          ],
+          "acceptedAnswers": [
+            "injured",
+            "hurt"
+          ],
+          "acceptedTranslations": [
+            "ranny",
+            "poszkodowany",
+            "zraniony"
+          ]
+        },
+        {
+          "id": "hospital-emergency.breathe",
+          "term": "breathe",
+          "ipa": "/briːð/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "oddychać",
+          "definition": "To take air into your body and let it out.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie oddechu poszkodowanego",
+          "natural": "",
+          "forms": "breathed",
+          "collocations": "breathe normally; can't breathe",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik „breathe” /briːð/, rzeczownik „breath” /breθ/.",
+          "examples": [
+            {
+              "en": "Is he breathing? Watch his chest.",
+              "pl": "Czy on oddycha? Obserwuj jego klatkę piersiową.",
+              "focusEn": "breathing",
+              "focusPl": "oddycha"
+            },
+            {
+              "en": "The dispatcher told me to make sure she could breathe easily.",
+              "pl": "Dyspozytor kazał mi upewnić się, że może swobodnie oddychać.",
+              "focusEn": "breathe",
+              "focusPl": "oddychać"
+            }
+          ],
+          "acceptedAnswers": [
+            "breathe"
+          ],
+          "acceptedTranslations": [
+            "oddychać"
+          ]
+        },
+        {
+          "id": "hospital-emergency.bleed",
+          "term": "bleed",
+          "ipa": "/bliːd/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "krwawić",
+          "definition": "To lose blood from a wound.",
+          "register": "neutralny",
+          "contextPl": "Krwawienie z rany",
+          "natural": "",
+          "forms": "bleed – bled – bled",
+          "collocations": "bleed heavily; stop bleeding",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "His head is bleeding a lot.",
+              "pl": "Głowa mocno mu krwawi.",
+              "focusEn": "bleeding",
+              "focusPl": "krwawi"
+            },
+            {
+              "en": "I pressed my scarf on the cut to stop it from bleeding.",
+              "pl": "Przycisnąłem szalik do rany, żeby przestała krwawić.",
+              "focusEn": "bleeding",
+              "focusPl": "krwawić"
+            }
+          ],
+          "acceptedAnswers": [
+            "bleed"
+          ],
+          "acceptedTranslations": [
+            "krwawić",
+            "broczyć krwią"
+          ]
+        },
+        {
+          "id": "hospital-emergency.unconscious",
+          "term": "unconscious",
+          "ipa": "/ʌnˈkɑːnʃəs/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nieprzytomny",
+          "definition": "Not awake and not able to see, feel or think, usually after an injury.",
+          "register": "neutralny",
+          "contextPl": "Utrata przytomności",
+          "natural": "",
+          "forms": "",
+          "collocations": "knock someone unconscious; lie unconscious",
+          "synonyms": "passed out",
+          "antonyms": "conscious",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He's unconscious, but he's still breathing.",
+              "pl": "Jest nieprzytomny, ale wciąż oddycha.",
+              "focusEn": "unconscious",
+              "focusPl": "nieprzytomny"
+            },
+            {
+              "en": "She was unconscious for about a minute before she opened her eyes.",
+              "pl": "Była nieprzytomna przez mniej więcej minutę, zanim otworzyła oczy.",
+              "focusEn": "unconscious",
+              "focusPl": "nieprzytomna"
+            }
+          ],
+          "acceptedAnswers": [
+            "unconscious"
+          ],
+          "acceptedTranslations": [
+            "nieprzytomny",
+            "nieprzytomna",
+            "bez przytomności"
+          ]
+        },
+        {
+          "id": "hospital-emergency.stay-calm",
+          "term": "stay calm",
+          "ipa": "/ˌsteɪ ˈkɑːm/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zachować spokój",
+          "definition": "To not panic in a difficult situation.",
+          "register": "neutralny",
+          "contextPl": "Opanowanie w sytuacji kryzysowej",
+          "natural": "",
+          "forms": "stay – stayed – stayed",
+          "collocations": "try to stay calm",
+          "synonyms": "keep calm",
+          "antonyms": "panic",
+          "notePl": "„l” w „calm” jest nieme.",
+          "examples": [
+            {
+              "en": "Try to stay calm; help is coming.",
+              "pl": "Proszę zachować spokój; pomoc nadchodzi.",
+              "focusEn": "stay calm",
+              "focusPl": "zachować spokój"
+            },
+            {
+              "en": "I tried to stay calm while I gave the dispatcher our location.",
+              "pl": "Starałem się zachować spokój, podając dyspozytorowi naszą lokalizację.",
+              "focusEn": "stay calm",
+              "focusPl": "zachować spokój"
+            }
+          ],
+          "acceptedAnswers": [
+            "stay calm",
+            "keep calm"
+          ],
+          "acceptedTranslations": [
+            "zachować spokój",
+            "zachowywać spokój",
+            "nie panikować"
+          ]
+        },
+        {
+          "id": "hospital-emergency.on-the-way",
+          "term": "on the way",
+          "ipa": "/ˌɑːn ðə ˈweɪ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "w drodze",
+          "definition": "Coming and expected to arrive soon.",
+          "register": "neutralny",
+          "contextPl": "Oczekiwanie na służby",
+          "natural": "",
+          "forms": "",
+          "collocations": "help is on the way",
+          "synonyms": "coming",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "An ambulance is on the way, so stay with him.",
+              "pl": "Karetka jest w drodze, więc proszę z nim zostać.",
+              "focusEn": "on the way",
+              "focusPl": "w drodze"
+            },
+            {
+              "en": "The dispatcher kept telling me that help was on the way.",
+              "pl": "Dyspozytor powtarzał mi, że pomoc jest w drodze.",
+              "focusEn": "on the way",
+              "focusPl": "w drodze"
+            }
+          ],
+          "acceptedAnswers": [
+            "on the way"
+          ],
+          "acceptedTranslations": [
+            "w drodze",
+            "już jedzie"
+          ]
+        },
+        {
+          "id": "hospital-emergency.paramedic",
+          "term": "paramedic",
+          "ipa": "/ˌperəˈmedɪk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ratownik medyczny",
+          "definition": "A person trained to give emergency medical care, usually in an ambulance.",
+          "register": "neutralny",
+          "contextPl": "Załoga karetki",
+          "natural": "",
+          "forms": "paramedics",
+          "collocations": "",
+          "synonyms": "EMT",
+          "antonyms": "",
+          "notePl": "W USA często też EMT (emergency medical technician).",
+          "examples": [
+            {
+              "en": "The paramedics checked his breathing and put a collar on his neck.",
+              "pl": "Ratownicy medyczni sprawdzili jego oddech i założyli mu kołnierz na szyję.",
+              "focusEn": "paramedics",
+              "focusPl": "Ratownicy medyczni"
+            },
+            {
+              "en": "A paramedic asked me how long he had been unconscious.",
+              "pl": "Ratownik medyczny zapytał mnie, jak długo był nieprzytomny.",
+              "focusEn": "paramedic",
+              "focusPl": "Ratownik medyczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "paramedic",
+            "EMT"
+          ],
+          "acceptedTranslations": [
+            "ratownik medyczny",
+            "ratowniczka medyczna",
+            "ratownik"
+          ]
+        },
+        {
+          "id": "hospital-emergency.dispatcher",
+          "term": "dispatcher",
+          "ipa": "/dɪˈspætʃər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dyspozytor",
+          "definition": "The person who answers emergency calls and sends help.",
+          "register": "neutralny",
+          "contextPl": "Rozmowa z numerem alarmowym",
+          "natural": "",
+          "forms": "dispatchers",
+          "collocations": "911 dispatcher",
+          "synonyms": "operator",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The 911 dispatcher stayed on the line until help arrived.",
+              "pl": "Dyspozytor numeru 911 był na linii, dopóki nie przyjechała pomoc.",
+              "focusEn": "dispatcher",
+              "focusPl": "Dyspozytor"
+            },
+            {
+              "en": "The dispatcher asked me for the nearest cross street.",
+              "pl": "Dyspozytorka zapytała mnie o najbliższą przecznicę.",
+              "focusEn": "dispatcher",
+              "focusPl": "Dyspozytorka"
+            }
+          ],
+          "acceptedAnswers": [
+            "dispatcher",
+            "operator"
+          ],
+          "acceptedTranslations": [
+            "dyspozytor",
+            "dyspozytorka",
+            "operator numeru alarmowego"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hospital-emergency.injuries",
+      "namePl": "Urazy",
+      "scenePl": "Mecz koszykówki na boisku w parku: zawodnicy doznają urazów",
+      "entries": [
+        {
+          "id": "hospital-emergency.hurt-yourself",
+          "term": "hurt yourself",
+          "ipa": "/ˈhɜːrt jərˌself/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zrobić sobie krzywdę",
+          "definition": "To injure your own body by accident.",
+          "register": "neutralny",
+          "contextPl": "Pytanie po upadku",
+          "natural": "",
+          "forms": "hurt – hurt – hurt",
+          "collocations": "",
+          "synonyms": "injure yourself",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Did you hurt yourself when you fell?",
+              "pl": "Zrobiłeś sobie krzywdę, kiedy upadłeś?",
+              "focusEn": "hurt yourself",
+              "focusPl": "Zrobiłeś sobie krzywdę"
+            },
+            {
+              "en": "He hurt himself going up for a rebound.",
+              "pl": "Zrobił sobie krzywdę, wyskakując do zbiórki.",
+              "focusEn": "hurt himself",
+              "focusPl": "Zrobił sobie krzywdę"
+            }
+          ],
+          "acceptedAnswers": [
+            "hurt yourself",
+            "hurt himself",
+            "hurt myself",
+            "injure yourself"
+          ],
+          "acceptedTranslations": [
+            "zrobić sobie krzywdę",
+            "zranić się",
+            "uszkodzić się"
+          ]
+        },
+        {
+          "id": "hospital-emergency.fall",
+          "term": "fall",
+          "ipa": "/fɔːl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "upaść",
+          "definition": "To suddenly go down onto the ground.",
+          "register": "neutralny",
+          "contextPl": "Upadki",
+          "natural": "",
+          "forms": "fall – fell – fallen",
+          "collocations": "fall down; fall hard; fall on your back",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He fell hard on the concrete and scraped his elbow.",
+              "pl": "Mocno upadł na beton i zdarł sobie łokieć.",
+              "focusEn": "fell",
+              "focusPl": "upadł"
+            },
+            {
+              "en": "Be careful, the court is wet and you might fall.",
+              "pl": "Uważaj, boisko jest mokre i możesz upaść.",
+              "focusEn": "fall",
+              "focusPl": "upaść"
+            }
+          ],
+          "acceptedAnswers": [
+            "fall",
+            "fall down"
+          ],
+          "acceptedTranslations": [
+            "upaść",
+            "przewrócić się",
+            "spaść"
+          ]
+        },
+        {
+          "id": "hospital-emergency.injury",
+          "term": "injury",
+          "ipa": "/ˈɪndʒəri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "uraz",
+          "definition": "Damage to the body from an accident.",
+          "register": "neutralny",
+          "contextPl": "Kontuzje sportowe",
+          "natural": "",
+          "forms": "injuries",
+          "collocations": "serious injury; knee injury; sports injury",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "His knee injury kept him off the court for a month.",
+              "pl": "Przez uraz kolana nie grał przez miesiąc.",
+              "focusEn": "injury",
+              "focusPl": "uraz"
+            },
+            {
+              "en": "Luckily, nobody had a serious injury after the collision.",
+              "pl": "Na szczęście po zderzeniu nikt nie doznał poważnego urazu.",
+              "focusEn": "injury",
+              "focusPl": "urazu"
+            }
+          ],
+          "acceptedAnswers": [
+            "injury"
+          ],
+          "acceptedTranslations": [
+            "uraz",
+            "kontuzja",
+            "obrażenie"
+          ]
+        },
+        {
+          "id": "hospital-emergency.broken",
+          "term": "broken",
+          "ipa": "/ˈbroʊkən/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "złamany",
+          "definition": "Cracked or split into pieces, used about a bone.",
+          "register": "neutralny",
+          "contextPl": "Złamania",
+          "natural": "",
+          "forms": "",
+          "collocations": "broken arm; broken bone; broken leg",
+          "synonyms": "fractured",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I think my finger is broken; I can't move it.",
+              "pl": "Chyba mam złamany palec; nie mogę nim ruszać.",
+              "focusEn": "broken",
+              "focusPl": "złamany"
+            },
+            {
+              "en": "Everyone could see his wrist was broken after the fall.",
+              "pl": "Wszyscy widzieli, że po upadku ma złamany nadgarstek.",
+              "focusEn": "broken",
+              "focusPl": "złamany"
+            }
+          ],
+          "acceptedAnswers": [
+            "broken",
+            "fractured"
+          ],
+          "acceptedTranslations": [
+            "złamany",
+            "złamana"
+          ]
+        },
+        {
+          "id": "hospital-emergency.cut",
+          "term": "cut",
+          "ipa": "/kʌt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "rozcięcie",
+          "definition": "An opening in the skin made by something sharp.",
+          "register": "neutralny",
+          "contextPl": "Drobne i głębokie rany",
+          "natural": "",
+          "forms": "cuts",
+          "collocations": "deep cut; small cut; cuts and bruises",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He has a deep cut above his eye.",
+              "pl": "Ma głębokie rozcięcie nad okiem.",
+              "focusEn": "cut",
+              "focusPl": "rozcięcie"
+            },
+            {
+              "en": "I cleaned the cut on my hand with water from my bottle.",
+              "pl": "Oczyściłem skaleczenie na dłoni wodą z butelki.",
+              "focusEn": "cut",
+              "focusPl": "skaleczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "cut"
+          ],
+          "acceptedTranslations": [
+            "rozcięcie",
+            "skaleczenie",
+            "rana"
+          ]
+        },
+        {
+          "id": "hospital-emergency.bruise",
+          "term": "bruise",
+          "ipa": "/bruːz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "siniak",
+          "definition": "A dark mark on the skin after being hit.",
+          "register": "neutralny",
+          "contextPl": "Stłuczenia",
+          "natural": "",
+          "forms": "bruises",
+          "collocations": "big bruise; cuts and bruises",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've got a huge bruise on my thigh from his elbow.",
+              "pl": "Mam wielkiego siniaka na udzie od jego łokcia.",
+              "focusEn": "bruise",
+              "focusPl": "siniaka"
+            },
+            {
+              "en": "The bruise turned purple by the end of the game.",
+              "pl": "Pod koniec meczu siniak zrobił się fioletowy.",
+              "focusEn": "bruise",
+              "focusPl": "siniak"
+            }
+          ],
+          "acceptedAnswers": [
+            "bruise"
+          ],
+          "acceptedTranslations": [
+            "siniak",
+            "siniec",
+            "stłuczenie"
+          ]
+        },
+        {
+          "id": "hospital-emergency.bump",
+          "term": "bump",
+          "ipa": "/bʌmp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "guz",
+          "definition": "A swollen area on your body, especially your head, after hitting it.",
+          "register": "neutralny",
+          "contextPl": "Uderzenia w głowę",
+          "natural": "",
+          "forms": "bumps",
+          "collocations": "bump on the head",
+          "synonyms": "lump",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He has a big bump on his head where he hit the pole.",
+              "pl": "Ma dużego guza na głowie w miejscu, gdzie uderzył o słupek.",
+              "focusEn": "bump",
+              "focusPl": "guza"
+            },
+            {
+              "en": "Put some ice on that bump so it doesn't swell more.",
+              "pl": "Przyłóż lód do tego guza, żeby bardziej nie spuchł.",
+              "focusEn": "bump",
+              "focusPl": "guza"
+            }
+          ],
+          "acceptedAnswers": [
+            "bump",
+            "lump"
+          ],
+          "acceptedTranslations": [
+            "guz",
+            "guzek"
+          ]
+        },
+        {
+          "id": "hospital-emergency.pull-a-muscle",
+          "term": "pull a muscle",
+          "ipa": "/ˌpʊl ə ˈmʌsəl/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "naciągnąć mięsień",
+          "definition": "To injure a muscle by stretching it too much.",
+          "register": "neutralny",
+          "contextPl": "Kontuzje mięśni",
+          "natural": "",
+          "forms": "pull – pulled – pulled",
+          "collocations": "",
+          "synonyms": "strain a muscle",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I think I pulled a muscle in my back.",
+              "pl": "Chyba naciągnąłem mięsień w plecach.",
+              "focusEn": "pulled a muscle",
+              "focusPl": "naciągnąłem mięsień"
+            },
+            {
+              "en": "Warm up first, or you'll pull a muscle.",
+              "pl": "Najpierw się rozgrzej, bo naciągniesz mięsień.",
+              "focusEn": "pull a muscle",
+              "focusPl": "naciągniesz mięsień"
+            }
+          ],
+          "acceptedAnswers": [
+            "pull a muscle",
+            "strain a muscle"
+          ],
+          "acceptedTranslations": [
+            "naciągnąć mięsień",
+            "naderwać mięsień"
+          ]
+        },
+        {
+          "id": "hospital-emergency.sprain",
+          "term": "sprain",
+          "ipa": "/spreɪn/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skręcić",
+          "definition": "To injure a joint by twisting it suddenly.",
+          "register": "neutralny",
+          "contextPl": "Skręcenia stawów",
+          "natural": "",
+          "forms": "sprained",
+          "collocations": "sprain your ankle; sprained wrist",
+          "synonyms": "twist",
+          "antonyms": "",
+          "notePl": "Bardziej precyzyjne niż „twist”.",
+          "examples": [
+            {
+              "en": "I sprained my ankle when I landed on someone's foot.",
+              "pl": "Skręciłem kostkę, kiedy wylądowałem komuś na stopie.",
+              "focusEn": "sprained",
+              "focusPl": "Skręciłem"
+            },
+            {
+              "en": "It's probably sprained, not broken, but get it checked.",
+              "pl": "Pewnie jest skręcona, a nie złamana, ale daj to sprawdzić.",
+              "focusEn": "sprained",
+              "focusPl": "skręcona"
+            }
+          ],
+          "acceptedAnswers": [
+            "sprain",
+            "twist"
+          ],
+          "acceptedTranslations": [
+            "skręcić",
+            "skręcać"
+          ]
+        },
+        {
+          "id": "hospital-emergency.scrape",
+          "term": "scrape",
+          "ipa": "/skreɪp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "otarcie",
+          "definition": "A small injury where the skin is rubbed off.",
+          "register": "neutralny",
+          "contextPl": "Otarcia naskórka",
+          "natural": "",
+          "forms": "scrapes",
+          "collocations": "cuts and scrapes",
+          "synonyms": "graze",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's just a scrape; you'll be fine.",
+              "pl": "To tylko otarcie; nic ci nie będzie.",
+              "focusEn": "scrape",
+              "focusPl": "otarcie"
+            },
+            {
+              "en": "My knees were covered in scrapes after playing on the concrete.",
+              "pl": "Po grze na betonie miałem kolana całe w otarciach.",
+              "focusEn": "scrapes",
+              "focusPl": "otarciach"
+            }
+          ],
+          "acceptedAnswers": [
+            "scrape",
+            "graze"
+          ],
+          "acceptedTranslations": [
+            "otarcie",
+            "zadrapanie",
+            "obtarcie"
+          ]
+        },
+        {
+          "id": "hospital-emergency.limp",
+          "term": "limp",
+          "ipa": "/lɪmp/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kuleć",
+          "definition": "To walk unevenly because one leg is hurt.",
+          "register": "neutralny",
+          "contextPl": "Chodzenie po urazie nogi",
+          "natural": "",
+          "forms": "limped",
+          "collocations": "limp off; walk with a limp",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He limped off the court, holding his ankle.",
+              "pl": "Kulejąc, zszedł z boiska i trzymał się za kostkę.",
+              "focusEn": "limped",
+              "focusPl": "Kulejąc"
+            },
+            {
+              "en": "I was still limping the next morning.",
+              "pl": "Następnego ranka wciąż kulałem.",
+              "focusEn": "limping",
+              "focusPl": "kulałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "limp"
+          ],
+          "acceptedTranslations": [
+            "kuleć",
+            "utykać",
+            "kuśtykać"
+          ]
+        },
+        {
+          "id": "hospital-emergency.fracture",
+          "term": "fracture",
+          "ipa": "/ˈfræktʃər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "złamanie",
+          "definition": "A crack or break in a bone.",
+          "register": "specjalistyczny",
+          "contextPl": "Język medyczny",
+          "natural": "",
+          "forms": "fractures",
+          "collocations": "hairline fracture; stress fracture",
+          "synonyms": "break",
+          "antonyms": "",
+          "notePl": "W mowie codziennej częściej „broken bone”.",
+          "examples": [
+            {
+              "en": "It might be a fracture, so don't put any weight on that foot.",
+              "pl": "To może być złamanie, więc nie obciążaj tej stopy.",
+              "focusEn": "fracture",
+              "focusPl": "złamanie"
+            },
+            {
+              "en": "Later, the doctor confirmed a hairline fracture in his foot.",
+              "pl": "Później lekarz potwierdził drobne pęknięcie kości stopy.",
+              "focusEn": "fracture",
+              "focusPl": "pęknięcie kości"
+            }
+          ],
+          "acceptedAnswers": [
+            "fracture",
+            "break",
+            "broken bone"
+          ],
+          "acceptedTranslations": [
+            "złamanie",
+            "pęknięcie kości"
+          ]
+        },
+        {
+          "id": "hospital-emergency.concussion",
+          "term": "concussion",
+          "ipa": "/kənˈkʌʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "wstrząśnienie mózgu",
+          "definition": "A brain injury caused by a hard hit to the head.",
+          "register": "neutralny",
+          "contextPl": "Urazy głowy w sporcie",
+          "natural": "",
+          "forms": "concussions",
+          "collocations": "get a concussion; mild concussion",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After the hit to his head, we worried he had a concussion.",
+              "pl": "Po uderzeniu w głowę martwiliśmy się, że ma wstrząśnienie mózgu.",
+              "focusEn": "concussion",
+              "focusPl": "wstrząśnienie mózgu"
+            },
+            {
+              "en": "With a concussion, you shouldn't play for at least a week.",
+              "pl": "Przy wstrząśnieniu mózgu nie powinno się grać co najmniej przez tydzień.",
+              "focusEn": "concussion",
+              "focusPl": "wstrząśnieniu mózgu"
+            }
+          ],
+          "acceptedAnswers": [
+            "concussion"
+          ],
+          "acceptedTranslations": [
+            "wstrząśnienie mózgu",
+            "wstrząs mózgu"
+          ]
+        },
+        {
+          "id": "hospital-emergency.dislocate",
+          "term": "dislocate",
+          "ipa": "/ˈdɪsloʊkeɪt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zwichnąć",
+          "definition": "To push a bone out of its normal place in a joint.",
+          "register": "neutralny",
+          "contextPl": "Zwichnięcia",
+          "natural": "",
+          "forms": "dislocated",
+          "collocations": "dislocate your shoulder; dislocated finger",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He dislocated his shoulder diving for the ball.",
+              "pl": "Zwichnął bark, rzucając się po piłkę.",
+              "focusEn": "dislocated",
+              "focusPl": "Zwichnął"
+            },
+            {
+              "en": "I think I dislocated my finger; it's pointing the wrong way.",
+              "pl": "Chyba zwichnąłem palec; wygina się w złą stronę.",
+              "focusEn": "dislocated",
+              "focusPl": "zwichnąłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "dislocate"
+          ],
+          "acceptedTranslations": [
+            "zwichnąć",
+            "zwichać",
+            "wybić"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hospital-emergency.first-aid",
+      "namePl": "Pierwsza pomoc",
+      "scenePl": "Kurs pierwszej pomocy w domu kultury: ćwiczenia na manekinie",
+      "entries": [
+        {
+          "id": "hospital-emergency.first-aid",
+          "term": "first aid",
+          "ipa": "/ˌfɜːrst ˈeɪd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pierwsza pomoc",
+          "definition": "Simple help given to a hurt person before a doctor arrives.",
+          "register": "neutralny",
+          "contextPl": "Udzielanie pomocy przed przyjazdem karetki",
+          "natural": "",
+          "forms": "",
+          "collocations": "give first aid; first aid course; first aid kit",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Everyone should know basic first aid.",
+              "pl": "Każdy powinien znać podstawy pierwszej pomocy.",
+              "focusEn": "first aid",
+              "focusPl": "pierwszej pomocy"
+            },
+            {
+              "en": "Our first aid instructor works as a paramedic.",
+              "pl": "Nasz instruktor pierwszej pomocy pracuje jako ratownik medyczny.",
+              "focusEn": "first aid",
+              "focusPl": "pierwszej pomocy"
+            }
+          ],
+          "acceptedAnswers": [
+            "first aid"
+          ],
+          "acceptedTranslations": [
+            "pierwsza pomoc"
+          ]
+        },
+        {
+          "id": "hospital-emergency.stop-the-bleeding",
+          "term": "stop the bleeding",
+          "ipa": "/ˌstɑːp ðə ˈbliːdɪŋ/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zatamować krwawienie",
+          "definition": "To make blood stop coming out of a wound.",
+          "register": "neutralny",
+          "contextPl": "Opatrywanie ran",
+          "natural": "",
+          "forms": "stop – stopped – stopped",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The first goal is to stop the bleeding.",
+              "pl": "Pierwszym celem jest zatamowanie krwawienia.",
+              "focusEn": "stop the bleeding",
+              "focusPl": "zatamowanie krwawienia"
+            },
+            {
+              "en": "I pressed down with both hands until I stopped the bleeding on the dummy.",
+              "pl": "Uciskałem obiema rękami, aż zatamowałem krwawienie na manekinie.",
+              "focusEn": "stopped the bleeding",
+              "focusPl": "zatamowałem krwawienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "stop the bleeding"
+          ],
+          "acceptedTranslations": [
+            "zatamować krwawienie",
+            "tamować krwawienie"
+          ]
+        },
+        {
+          "id": "hospital-emergency.burn",
+          "term": "burn",
+          "ipa": "/bɜːrn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oparzenie",
+          "definition": "An injury caused by fire or heat.",
+          "register": "neutralny",
+          "contextPl": "Oparzenia",
+          "natural": "",
+          "forms": "burns",
+          "collocations": "minor burn; serious burn",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Run cool water over a burn for at least ten minutes.",
+              "pl": "Polewaj oparzenie chłodną wodą przez co najmniej dziesięć minut.",
+              "focusEn": "burn",
+              "focusPl": "oparzenie"
+            },
+            {
+              "en": "Never put butter on a burn, the instructor warned.",
+              "pl": "Nigdy nie smaruj oparzenia masłem – ostrzegła instruktorka.",
+              "focusEn": "burn",
+              "focusPl": "oparzenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "burn"
+          ],
+          "acceptedTranslations": [
+            "oparzenie"
+          ]
+        },
+        {
+          "id": "hospital-emergency.choke",
+          "term": "choke",
+          "ipa": "/tʃoʊk/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zadławić się",
+          "definition": "To be unable to breathe because something is stuck in your throat.",
+          "register": "neutralny",
+          "contextPl": "Zadławienia",
+          "natural": "",
+          "forms": "choked",
+          "collocations": "choke on food",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If someone is choking, ask them if they can speak.",
+              "pl": "Jeśli ktoś się dławi, zapytaj, czy może mówić.",
+              "focusEn": "choking",
+              "focusPl": "się dławi"
+            },
+            {
+              "en": "The instructor showed us what to do if a child chokes on food.",
+              "pl": "Instruktorka pokazała nam, co robić, gdy dziecko zakrztusi się jedzeniem.",
+              "focusEn": "chokes",
+              "focusPl": "zakrztusi się"
+            }
+          ],
+          "acceptedAnswers": [
+            "choke"
+          ],
+          "acceptedTranslations": [
+            "zadławić się",
+            "dławić się",
+            "zakrztusić się",
+            "krztusić się"
+          ]
+        },
+        {
+          "id": "hospital-emergency.ice-pack",
+          "term": "ice pack",
+          "ipa": "/ˈaɪs ˌpæk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "okład z lodu",
+          "definition": "A bag of ice or a cold pack put on an injury.",
+          "register": "neutralny",
+          "contextPl": "Chłodzenie urazów",
+          "natural": "",
+          "forms": "ice packs",
+          "collocations": "put an ice pack on",
+          "synonyms": "cold pack",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Put an ice pack on a sprain for twenty minutes.",
+              "pl": "Przyłóż okład z lodu do skręcenia na dwadzieścia minut.",
+              "focusEn": "ice pack",
+              "focusPl": "okład z lodu"
+            },
+            {
+              "en": "The instructor passed around an instant ice pack that gets cold when you squeeze it.",
+              "pl": "Instruktor podał nam jednorazowy okład chłodzący, który robi się zimny po ściśnięciu.",
+              "focusEn": "ice pack",
+              "focusPl": "okład chłodzący"
+            }
+          ],
+          "acceptedAnswers": [
+            "ice pack",
+            "cold pack"
+          ],
+          "acceptedTranslations": [
+            "okład z lodu",
+            "okład chłodzący",
+            "kompres z lodu"
+          ]
+        },
+        {
+          "id": "hospital-emergency.cpr",
+          "term": "CPR",
+          "ipa": "/ˌsiː piː ˈɑːr/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "resuscytacja",
+          "definition": "Pressing on the chest and breathing into the mouth to help someone whose heart has stopped.",
+          "register": "neutralny",
+          "contextPl": "Ratowanie życia",
+          "natural": "",
+          "forms": "",
+          "collocations": "do CPR; perform CPR; CPR training",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We practiced CPR on a plastic dummy for an hour.",
+              "pl": "Przez godzinę ćwiczyliśmy resuscytację na plastikowym manekinie.",
+              "focusEn": "CPR",
+              "focusPl": "resuscytację"
+            },
+            {
+              "en": "During CPR, push hard and fast in the center of the chest.",
+              "pl": "Podczas resuscytacji uciskaj mocno i szybko na środku klatki piersiowej.",
+              "focusEn": "CPR",
+              "focusPl": "resuscytacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "CPR"
+          ],
+          "acceptedTranslations": [
+            "resuscytacja",
+            "RKO",
+            "resuscytacja krążeniowo-oddechowa"
+          ]
+        },
+        {
+          "id": "hospital-emergency.apply-pressure",
+          "term": "apply pressure",
+          "ipa": "/əˌplaɪ ˈpreʃər/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "uciskać",
+          "definition": "To press firmly on a wound to slow bleeding.",
+          "register": "neutralny",
+          "contextPl": "Tamowanie krwotoku",
+          "natural": "",
+          "forms": "apply – applied – applied",
+          "collocations": "apply pressure to the wound",
+          "synonyms": "press",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Apply pressure to the wound with a clean cloth.",
+              "pl": "Uciśnij ranę czystym materiałem.",
+              "focusEn": "Apply pressure",
+              "focusPl": "Uciśnij"
+            },
+            {
+              "en": "The instructor showed us how hard to apply pressure on a bleeding arm.",
+              "pl": "Instruktor pokazał nam, jak mocno uciskać krwawiące ramię.",
+              "focusEn": "apply pressure",
+              "focusPl": "uciskać"
+            }
+          ],
+          "acceptedAnswers": [
+            "apply pressure",
+            "press"
+          ],
+          "acceptedTranslations": [
+            "uciskać",
+            "ucisnąć",
+            "przycisnąć"
+          ]
+        },
+        {
+          "id": "hospital-emergency.wound",
+          "term": "wound",
+          "ipa": "/wuːnd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rana",
+          "definition": "An injury where the skin is cut or broken.",
+          "register": "neutralny",
+          "contextPl": "Opatrywanie ran",
+          "natural": "",
+          "forms": "wounds",
+          "collocations": "clean a wound; deep wound",
+          "synonyms": "injury",
+          "antonyms": "",
+          "notePl": "Wymowa /wuːnd/; „wound” /waʊnd/ to forma czasownika „wind”.",
+          "examples": [
+            {
+              "en": "Clean the wound before you put on a bandage.",
+              "pl": "Oczyść ranę, zanim założysz opatrunek.",
+              "focusEn": "wound",
+              "focusPl": "ranę"
+            },
+            {
+              "en": "We practiced covering a fake wound on the dummy's leg.",
+              "pl": "Ćwiczyliśmy opatrywanie sztucznej rany na nodze manekina.",
+              "focusEn": "wound",
+              "focusPl": "rany"
+            }
+          ],
+          "acceptedAnswers": [
+            "wound"
+          ],
+          "acceptedTranslations": [
+            "rana"
+          ]
+        },
+        {
+          "id": "hospital-emergency.chest-compressions",
+          "term": "chest compressions",
+          "ipa": "/ˈtʃest kəmˌpreʃənz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "uciśnięcia klatki piersiowej",
+          "definition": "Pushing down hard on the chest again and again during CPR.",
+          "register": "specjalistyczny",
+          "contextPl": "Technika resuscytacji",
+          "natural": "",
+          "forms": "",
+          "collocations": "do chest compressions",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do thirty chest compressions, then give two breaths.",
+              "pl": "Wykonaj trzydzieści uciśnięć klatki piersiowej, a potem dwa oddechy.",
+              "focusEn": "chest compressions",
+              "focusPl": "uciśnięć klatki piersiowej"
+            },
+            {
+              "en": "My arms got tired after two minutes of chest compressions.",
+              "pl": "Po dwóch minutach uciskania klatki piersiowej zmęczyły mi się ręce.",
+              "focusEn": "chest compressions",
+              "focusPl": "uciskania klatki piersiowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "chest compressions",
+            "compressions"
+          ],
+          "acceptedTranslations": [
+            "uciśnięcia klatki piersiowej",
+            "uciskanie klatki piersiowej"
+          ]
+        },
+        {
+          "id": "hospital-emergency.recovery-position",
+          "term": "recovery position",
+          "ipa": "/rɪˈkʌvəri pəˌzɪʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "pozycja bezpieczna",
+          "definition": "A safe position on the side for an unconscious person who is breathing.",
+          "register": "specjalistyczny",
+          "contextPl": "Układanie nieprzytomnego",
+          "natural": "",
+          "forms": "",
+          "collocations": "put someone in the recovery position",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Put him in the recovery position so he doesn't choke.",
+              "pl": "Ułóż go w pozycji bezpiecznej, żeby się nie zakrztusił.",
+              "focusEn": "recovery position",
+              "focusPl": "pozycji bezpiecznej"
+            },
+            {
+              "en": "We took turns rolling each other into the recovery position.",
+              "pl": "Na zmianę układaliśmy się nawzajem w pozycji bezpiecznej.",
+              "focusEn": "recovery position",
+              "focusPl": "pozycji bezpiecznej"
+            }
+          ],
+          "acceptedAnswers": [
+            "recovery position"
+          ],
+          "acceptedTranslations": [
+            "pozycja bezpieczna",
+            "pozycja boczna ustalona"
+          ]
+        },
+        {
+          "id": "hospital-emergency.defibrillator",
+          "term": "defibrillator",
+          "ipa": "/diːˈfɪbrəleɪtər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "defibrylator",
+          "definition": "A machine that gives an electric shock to restart the heart.",
+          "register": "specjalistyczny",
+          "contextPl": "Sprzęt ratunkowy w miejscach publicznych",
+          "natural": "",
+          "forms": "defibrillators",
+          "collocations": "",
+          "synonyms": "AED",
+          "antonyms": "",
+          "notePl": "W budynkach publicznych oznaczany skrótem AED.",
+          "examples": [
+            {
+              "en": "The defibrillator tells you exactly what to do, step by step.",
+              "pl": "Defibrylator mówi ci dokładnie, co robić, krok po kroku.",
+              "focusEn": "defibrillator",
+              "focusPl": "Defibrylator"
+            },
+            {
+              "en": "There's a defibrillator on the wall by the front door of this building.",
+              "pl": "Na ścianie przy wejściu do tego budynku wisi defibrylator.",
+              "focusEn": "defibrillator",
+              "focusPl": "defibrylator"
+            }
+          ],
+          "acceptedAnswers": [
+            "defibrillator",
+            "AED"
+          ],
+          "acceptedTranslations": [
+            "defibrylator",
+            "AED"
+          ]
+        },
+        {
+          "id": "hospital-emergency.splint",
+          "term": "splint",
+          "ipa": "/splɪnt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "szyna",
+          "definition": "A stiff piece of material tied to a broken arm or leg to keep it still.",
+          "register": "specjalistyczny",
+          "contextPl": "Unieruchamianie złamań",
+          "natural": "",
+          "forms": "splints",
+          "collocations": "make a splint; put on a splint",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We made a splint out of a rolled-up magazine.",
+              "pl": "Zrobiliśmy szynę ze zwiniętego czasopisma.",
+              "focusEn": "splint",
+              "focusPl": "szynę"
+            },
+            {
+              "en": "A splint keeps a broken arm from moving.",
+              "pl": "Szyna unieruchamia złamaną rękę.",
+              "focusEn": "splint",
+              "focusPl": "Szyna"
+            }
+          ],
+          "acceptedAnswers": [
+            "splint"
+          ],
+          "acceptedTranslations": [
+            "szyna",
+            "łubki",
+            "usztywnienie"
+          ]
+        },
+        {
+          "id": "hospital-emergency.elevate",
+          "term": "elevate",
+          "ipa": "/ˈeləveɪt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "unieść",
+          "definition": "To raise a part of the body higher.",
+          "register": "formalny",
+          "contextPl": "Zmniejszanie obrzęku i krwawienia",
+          "natural": "",
+          "forms": "elevated",
+          "collocations": "elevate your leg; keep it elevated",
+          "synonyms": "raise",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Elevate the injured leg on a pillow to reduce swelling.",
+              "pl": "Unieś zranioną nogę na poduszce, żeby zmniejszyć obrzęk.",
+              "focusEn": "Elevate",
+              "focusPl": "Unieś"
+            },
+            {
+              "en": "Keep the arm elevated above the heart if it's bleeding.",
+              "pl": "Jeśli ręka krwawi, trzymaj ją uniesioną powyżej serca.",
+              "focusEn": "elevated",
+              "focusPl": "uniesioną"
+            }
+          ],
+          "acceptedAnswers": [
+            "elevate",
+            "raise"
+          ],
+          "acceptedTranslations": [
+            "unieść",
+            "unosić",
+            "podnieść"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hospital-emergency.emergency-room",
+      "namePl": "Na SOR-ze",
+      "scenePl": "Szpitalny oddział ratunkowy w nocy: przyjęcie, badania i opatrywanie urazów",
+      "entries": [
+        {
+          "id": "hospital-emergency.emergency-room",
+          "term": "emergency room",
+          "ipa": "/ɪˈmɜːrdʒənsi ˌruːm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "SOR",
+          "definition": "The part of a hospital that treats people who need urgent care.",
+          "register": "neutralny",
+          "contextPl": "Szpitalny oddział ratunkowy",
+          "natural": "",
+          "forms": "emergency rooms",
+          "collocations": "go to the emergency room; in the emergency room",
+          "synonyms": "ER",
+          "antonyms": "",
+          "notePl": "W mowie bardzo często skrót „the ER” /ˌiː ˈɑːr/.",
+          "examples": [
+            {
+              "en": "We spent four hours in the emergency room last night.",
+              "pl": "Wczoraj w nocy spędziliśmy cztery godziny na SOR-ze.",
+              "focusEn": "emergency room",
+              "focusPl": "SOR-ze"
+            },
+            {
+              "en": "The emergency room was packed, so we waited in the hallway.",
+              "pl": "Oddział ratunkowy był pełny, więc czekaliśmy na korytarzu.",
+              "focusEn": "emergency room",
+              "focusPl": "Oddział ratunkowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "emergency room",
+            "ER",
+            "emergency department"
+          ],
+          "acceptedTranslations": [
+            "SOR",
+            "oddział ratunkowy",
+            "izba przyjęć",
+            "ostry dyżur"
+          ]
+        },
+        {
+          "id": "hospital-emergency.serious",
+          "term": "serious",
+          "ipa": "/ˈsɪriəs/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "poważny",
+          "definition": "Dangerous or bad enough to worry about.",
+          "register": "neutralny",
+          "contextPl": "Ocena stanu pacjenta",
+          "natural": "",
+          "forms": "",
+          "collocations": "serious injury; nothing serious",
+          "synonyms": "",
+          "antonyms": "minor",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is it serious, or can we go home tonight?",
+              "pl": "Czy to coś poważnego, czy możemy dziś wrócić do domu?",
+              "focusEn": "serious",
+              "focusPl": "poważnego"
+            },
+            {
+              "en": "The doctor said the cut looked worse than it was and wasn't serious.",
+              "pl": "Lekarz powiedział, że rana wygląda gorzej, niż jest, i nie jest poważna.",
+              "focusEn": "serious",
+              "focusPl": "poważna"
+            }
+          ],
+          "acceptedAnswers": [
+            "serious"
+          ],
+          "acceptedTranslations": [
+            "poważny",
+            "poważna",
+            "groźny"
+          ]
+        },
+        {
+          "id": "hospital-emergency.wheelchair",
+          "term": "wheelchair",
+          "ipa": "/ˈwiːltʃer/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wózek inwalidzki",
+          "definition": "A chair with wheels for people who cannot walk.",
+          "register": "neutralny",
+          "contextPl": "Przemieszczanie pacjenta",
+          "natural": "",
+          "forms": "wheelchairs",
+          "collocations": "in a wheelchair; push a wheelchair",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A nurse brought a wheelchair because I couldn't walk.",
+              "pl": "Pielęgniarka przyniosła wózek inwalidzki, bo nie mogłem chodzić.",
+              "focusEn": "wheelchair",
+              "focusPl": "wózek inwalidzki"
+            },
+            {
+              "en": "My husband pushed me in the wheelchair to the x-ray room.",
+              "pl": "Mąż zawiózł mnie wózkiem na prześwietlenie.",
+              "focusEn": "wheelchair",
+              "focusPl": "wózkiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "wheelchair"
+          ],
+          "acceptedTranslations": [
+            "wózek inwalidzki",
+            "wózek"
+          ]
+        },
+        {
+          "id": "hospital-emergency.stitch",
+          "term": "stitch",
+          "ipa": "/stɪtʃ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "szew",
+          "definition": "A piece of thread used to close a cut in the skin.",
+          "register": "neutralny",
+          "contextPl": "Zszywanie ran",
+          "natural": "",
+          "forms": "stitches",
+          "collocations": "get stitches; need stitches; take out the stitches",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zwykle w liczbie mnogiej: „I needed stitches”.",
+          "examples": [
+            {
+              "en": "The cut was deep, so I needed six stitches.",
+              "pl": "Rozcięcie było głębokie, więc potrzebowałem sześciu szwów.",
+              "focusEn": "stitches",
+              "focusPl": "szwów"
+            },
+            {
+              "en": "The doctor put in the stitches while I stared at the ceiling.",
+              "pl": "Lekarz zakładał szwy, a ja wpatrywałem się w sufit.",
+              "focusEn": "stitches",
+              "focusPl": "szwy"
+            }
+          ],
+          "acceptedAnswers": [
+            "stitch",
+            "stitches"
+          ],
+          "acceptedTranslations": [
+            "szew",
+            "szwy"
+          ]
+        },
+        {
+          "id": "hospital-emergency.cast",
+          "term": "cast",
+          "ipa": "/kæst/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gips",
+          "definition": "A hard cover around a broken arm or leg that keeps it still.",
+          "register": "neutralny",
+          "contextPl": "Unieruchomienie złamania",
+          "natural": "",
+          "forms": "casts",
+          "collocations": "wear a cast; put on a cast; in a cast",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll have to wear a cast for six weeks.",
+              "pl": "Będę musiał nosić gips przez sześć tygodni.",
+              "focusEn": "cast",
+              "focusPl": "gips"
+            },
+            {
+              "en": "They put a bright blue cast on my son's arm.",
+              "pl": "Założyli mojemu synowi jaskrawoniebieski gips na rękę.",
+              "focusEn": "cast",
+              "focusPl": "gips"
+            }
+          ],
+          "acceptedAnswers": [
+            "cast"
+          ],
+          "acceptedTranslations": [
+            "gips",
+            "opatrunek gipsowy"
+          ]
+        },
+        {
+          "id": "hospital-emergency.heart-attack",
+          "term": "heart attack",
+          "ipa": "/ˈhɑːrt əˌtæk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zawał serca",
+          "definition": "A sudden serious problem when blood stops flowing to the heart.",
+          "register": "neutralny",
+          "contextPl": "Nagłe stany kardiologiczne",
+          "natural": "",
+          "forms": "heart attacks",
+          "collocations": "have a heart attack; signs of a heart attack",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The man next to us came in with signs of a heart attack.",
+              "pl": "Mężczyzna obok nas przyjechał z objawami zawału serca.",
+              "focusEn": "heart attack",
+              "focusPl": "zawału serca"
+            },
+            {
+              "en": "They rushed him in because they thought it was a heart attack.",
+              "pl": "Szybko go przyjęli, bo myśleli, że to zawał.",
+              "focusEn": "heart attack",
+              "focusPl": "zawał"
+            }
+          ],
+          "acceptedAnswers": [
+            "heart attack"
+          ],
+          "acceptedTranslations": [
+            "zawał serca",
+            "zawał"
+          ]
+        },
+        {
+          "id": "hospital-emergency.stretcher",
+          "term": "stretcher",
+          "ipa": "/ˈstretʃər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nosze",
+          "definition": "A long flat bed used to carry a sick or injured person.",
+          "register": "neutralny",
+          "contextPl": "Transport pacjenta",
+          "natural": "",
+          "forms": "stretchers",
+          "collocations": "on a stretcher",
+          "synonyms": "gurney",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The paramedics wheeled him in on a stretcher.",
+              "pl": "Ratownicy wwieźli go na noszach.",
+              "focusEn": "stretcher",
+              "focusPl": "noszach"
+            },
+            {
+              "en": "She lay on a stretcher in the hallway because all the rooms were full.",
+              "pl": "Leżała na noszach na korytarzu, bo wszystkie sale były zajęte.",
+              "focusEn": "stretcher",
+              "focusPl": "noszach"
+            }
+          ],
+          "acceptedAnswers": [
+            "stretcher",
+            "gurney"
+          ],
+          "acceptedTranslations": [
+            "nosze"
+          ]
+        },
+        {
+          "id": "hospital-emergency.crutch",
+          "term": "crutch",
+          "ipa": "/krʌtʃ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kula",
+          "definition": "A stick that fits under your arm and helps you walk with an injured leg.",
+          "register": "neutralny",
+          "contextPl": "Chodzenie po urazie nogi",
+          "natural": "",
+          "forms": "crutches",
+          "collocations": "on crutches; walk with crutches",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zwykle w liczbie mnogiej: „on crutches” – o kulach.",
+          "examples": [
+            {
+              "en": "I left the ER on crutches.",
+              "pl": "Wyszedłem z SOR-u o kulach.",
+              "focusEn": "crutches",
+              "focusPl": "kulach"
+            },
+            {
+              "en": "The nurse adjusted the crutches to my height.",
+              "pl": "Pielęgniarka dopasowała kule do mojego wzrostu.",
+              "focusEn": "crutches",
+              "focusPl": "kule"
+            }
+          ],
+          "acceptedAnswers": [
+            "crutch",
+            "crutches"
+          ],
+          "acceptedTranslations": [
+            "kula",
+            "kule"
+          ]
+        },
+        {
+          "id": "hospital-emergency.iv",
+          "term": "IV",
+          "ipa": "/ˌaɪ ˈviː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kroplówka",
+          "definition": "A tube that puts liquid or medicine directly into a vein.",
+          "register": "neutralny",
+          "contextPl": "Podawanie płynów i leków",
+          "natural": "",
+          "forms": "IVs",
+          "collocations": "put someone on an IV; IV drip",
+          "synonyms": "drip",
+          "antonyms": "",
+          "notePl": "Skrót od „intravenous”.",
+          "examples": [
+            {
+              "en": "They put me on an IV because I was dehydrated.",
+              "pl": "Podłączyli mnie pod kroplówkę, bo byłem odwodniony.",
+              "focusEn": "IV",
+              "focusPl": "kroplówkę"
+            },
+            {
+              "en": "The nurse checked the IV in my arm every half hour.",
+              "pl": "Pielęgniarka co pół godziny sprawdzała kroplówkę w mojej ręce.",
+              "focusEn": "IV",
+              "focusPl": "kroplówkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "IV",
+            "drip"
+          ],
+          "acceptedTranslations": [
+            "kroplówka",
+            "wenflon"
+          ]
+        },
+        {
+          "id": "hospital-emergency.admit",
+          "term": "admit",
+          "ipa": "/ədˈmɪt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przyjąć do szpitala",
+          "definition": "To let someone stay in a hospital for treatment.",
+          "register": "neutralny",
+          "contextPl": "Decyzja o hospitalizacji",
+          "natural": "",
+          "forms": "admitted",
+          "collocations": "admit to the hospital; be admitted",
+          "synonyms": "hospitalize",
+          "antonyms": "discharge",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They decided to admit her for the night, just to be safe.",
+              "pl": "Zdecydowali się przyjąć ją na noc, tak dla pewności.",
+              "focusEn": "admit",
+              "focusPl": "przyjąć"
+            },
+            {
+              "en": "If your fever goes up again, we'll admit you.",
+              "pl": "Jeśli gorączka znowu wzrośnie, przyjmiemy pana na oddział.",
+              "focusEn": "admit",
+              "focusPl": "przyjmiemy"
+            }
+          ],
+          "acceptedAnswers": [
+            "admit",
+            "hospitalize"
+          ],
+          "acceptedTranslations": [
+            "przyjąć do szpitala",
+            "przyjąć",
+            "hospitalizować"
+          ]
+        },
+        {
+          "id": "hospital-emergency.urgent-care",
+          "term": "urgent care",
+          "ipa": "/ˌɜːrdʒənt ˈker/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "punkt pomocy doraźnej",
+          "definition": "A clinic for problems that need quick care but are not life-threatening.",
+          "register": "neutralny",
+          "contextPl": "Alternatywa dla SOR-u",
+          "natural": "",
+          "forms": "",
+          "collocations": "go to urgent care; urgent care clinic",
+          "synonyms": "walk-in clinic",
+          "antonyms": "",
+          "notePl": "Typowe w USA; tańsze i szybsze niż SOR przy drobnych urazach.",
+          "examples": [
+            {
+              "en": "For a small cut, urgent care is faster and cheaper than the ER.",
+              "pl": "Przy drobnym skaleczeniu punkt pomocy doraźnej jest szybszy i tańszy niż SOR.",
+              "focusEn": "urgent care",
+              "focusPl": "punkt pomocy doraźnej"
+            },
+            {
+              "en": "The urgent care near us was closed, so we drove to the hospital.",
+              "pl": "Punkt pomocy doraźnej w okolicy był zamknięty, więc pojechaliśmy do szpitala.",
+              "focusEn": "urgent care",
+              "focusPl": "Punkt pomocy doraźnej"
+            }
+          ],
+          "acceptedAnswers": [
+            "urgent care",
+            "urgent care clinic"
+          ],
+          "acceptedTranslations": [
+            "punkt pomocy doraźnej",
+            "nocna i świąteczna pomoc",
+            "pomoc doraźna"
+          ]
+        },
+        {
+          "id": "hospital-emergency.ct-scan",
+          "term": "CT scan",
+          "ipa": "/ˌsiː ˈtiː ˌskæn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "tomografia",
+          "definition": "A detailed x-ray picture of the inside of the body.",
+          "register": "neutralny",
+          "contextPl": "Diagnostyka urazów głowy",
+          "natural": "",
+          "forms": "CT scans",
+          "collocations": "get a CT scan; head CT",
+          "synonyms": "CAT scan",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They did a CT scan to make sure there was no bleeding in his brain.",
+              "pl": "Zrobili tomografię, żeby upewnić się, że nie ma krwawienia w mózgu.",
+              "focusEn": "CT scan",
+              "focusPl": "tomografię"
+            },
+            {
+              "en": "We waited two hours for the CT scan results.",
+              "pl": "Czekaliśmy dwie godziny na wyniki tomografii.",
+              "focusEn": "CT scan",
+              "focusPl": "tomografii"
+            }
+          ],
+          "acceptedAnswers": [
+            "CT scan",
+            "CAT scan",
+            "CT"
+          ],
+          "acceptedTranslations": [
+            "tomografia",
+            "tomografia komputerowa",
+            "TK"
+          ]
+        },
+        {
+          "id": "hospital-emergency.triage",
+          "term": "triage",
+          "ipa": "/ˈtriːɑːʒ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "triaż",
+          "definition": "Deciding which patients need help first.",
+          "register": "specjalistyczny",
+          "contextPl": "Segregacja pacjentów na SOR-ze",
+          "natural": "",
+          "forms": "",
+          "collocations": "triage nurse",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "At triage, the nurse decides who needs help first.",
+              "pl": "Na triażu pielęgniarka decyduje, kto potrzebuje pomocy najpierw.",
+              "focusEn": "triage",
+              "focusPl": "triażu"
+            },
+            {
+              "en": "After triage, they told us it might be a long wait.",
+              "pl": "Po segregacji powiedziano nam, że możemy długo czekać.",
+              "focusEn": "triage",
+              "focusPl": "segregacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "triage"
+          ],
+          "acceptedTranslations": [
+            "triaż",
+            "segregacja medyczna",
+            "segregacja"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hospital-emergency.hospital-stay",
+      "namePl": "Pobyt w szpitalu",
+      "scenePl": "Oddział szpitalny: pobyt po operacji i odwiedziny rodziny",
+      "entries": [
+        {
+          "id": "hospital-emergency.hospital",
+          "term": "hospital",
+          "ipa": "/ˈhɑːspɪtəl/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "szpital",
+          "definition": "A place where sick or injured people are treated and cared for.",
+          "register": "neutralny",
+          "contextPl": "Pobyt i odwiedziny w szpitalu",
+          "natural": "",
+          "forms": "hospitals",
+          "collocations": "in the hospital; go to the hospital; hospital room",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "AmE: „in the hospital”, BrE: „in hospital”.",
+          "examples": [
+            {
+              "en": "My grandpa has been in the hospital since Tuesday.",
+              "pl": "Dziadek leży w szpitalu od wtorku.",
+              "focusEn": "hospital",
+              "focusPl": "szpitalu"
+            },
+            {
+              "en": "We brought flowers and magazines to the hospital.",
+              "pl": "Przynieśliśmy do szpitala kwiaty i czasopisma.",
+              "focusEn": "hospital",
+              "focusPl": "szpitala"
+            }
+          ],
+          "acceptedAnswers": [
+            "hospital"
+          ],
+          "acceptedTranslations": [
+            "szpital"
+          ]
+        },
+        {
+          "id": "hospital-emergency.visit",
+          "term": "visit",
+          "ipa": "/ˈvɪzɪt/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "odwiedzić",
+          "definition": "To go to see someone.",
+          "register": "neutralny",
+          "contextPl": "Odwiedziny chorych",
+          "natural": "",
+          "forms": "visited",
+          "collocations": "visit a patient; come to visit",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can kids visit patients on this floor?",
+              "pl": "Czy dzieci mogą odwiedzać pacjentów na tym piętrze?",
+              "focusEn": "visit",
+              "focusPl": "odwiedzać"
+            },
+            {
+              "en": "I visited my aunt every day after work.",
+              "pl": "Codziennie po pracy odwiedzałem ciocię.",
+              "focusEn": "visited",
+              "focusPl": "odwiedzałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "visit"
+          ],
+          "acceptedTranslations": [
+            "odwiedzić",
+            "odwiedzać"
+          ]
+        },
+        {
+          "id": "hospital-emergency.surgery",
+          "term": "surgery",
+          "ipa": "/ˈsɜːrdʒəri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "operacja",
+          "definition": "Medical treatment in which a doctor cuts into the body to repair something.",
+          "register": "neutralny",
+          "contextPl": "Zabiegi chirurgiczne",
+          "natural": "",
+          "forms": "surgeries",
+          "collocations": "have surgery; knee surgery; go into surgery",
+          "synonyms": "operation",
+          "antonyms": "",
+          "notePl": "W AmE „surgery” to operacja; w BrE także gabinet lekarski.",
+          "examples": [
+            {
+              "en": "Her surgery went well, and she's resting now.",
+              "pl": "Operacja się udała i teraz odpoczywa.",
+              "focusEn": "surgery",
+              "focusPl": "Operacja"
+            },
+            {
+              "en": "He's having knee surgery tomorrow morning.",
+              "pl": "Jutro rano ma operację kolana.",
+              "focusEn": "surgery",
+              "focusPl": "operację"
+            }
+          ],
+          "acceptedAnswers": [
+            "surgery",
+            "operation"
+          ],
+          "acceptedTranslations": [
+            "operacja",
+            "zabieg chirurgiczny",
+            "zabieg"
+          ]
+        },
+        {
+          "id": "hospital-emergency.visiting-hours",
+          "term": "visiting hours",
+          "ipa": "/ˈvɪzɪtɪŋ ˌaʊərz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "godziny odwiedzin",
+          "definition": "The times when visitors may come to see patients.",
+          "register": "neutralny",
+          "contextPl": "Regulamin oddziału",
+          "natural": "",
+          "forms": "",
+          "collocations": "during visiting hours",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Visiting hours end at eight, so we have to leave soon.",
+              "pl": "Godziny odwiedzin kończą się o ósmej, więc musimy niedługo wyjść.",
+              "focusEn": "Visiting hours",
+              "focusPl": "Godziny odwiedzin"
+            },
+            {
+              "en": "We got there right at the start of visiting hours.",
+              "pl": "Dotarliśmy dokładnie na początku godzin odwiedzin.",
+              "focusEn": "visiting hours",
+              "focusPl": "godzin odwiedzin"
+            }
+          ],
+          "acceptedAnswers": [
+            "visiting hours"
+          ],
+          "acceptedTranslations": [
+            "godziny odwiedzin"
+          ]
+        },
+        {
+          "id": "hospital-emergency.hospital-bed",
+          "term": "hospital bed",
+          "ipa": "/ˈhɑːspɪtəl ˌbed/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "łóżko szpitalne",
+          "definition": "A special bed in a hospital that can be raised and lowered.",
+          "register": "neutralny",
+          "contextPl": "Sala chorych",
+          "natural": "",
+          "forms": "hospital beds",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He raised the back of his hospital bed so he could sit up and eat.",
+              "pl": "Podniósł oparcie łóżka szpitalnego, żeby móc usiąść i zjeść.",
+              "focusEn": "hospital bed",
+              "focusPl": "łóżka szpitalnego"
+            },
+            {
+              "en": "She'd been lying in a hospital bed for a week and wanted to go for a walk.",
+              "pl": "Od tygodnia leżała w szpitalnym łóżku i chciała pójść na spacer.",
+              "focusEn": "hospital bed",
+              "focusPl": "szpitalnym łóżku"
+            }
+          ],
+          "acceptedAnswers": [
+            "hospital bed"
+          ],
+          "acceptedTranslations": [
+            "łóżko szpitalne",
+            "szpitalne łóżko"
+          ]
+        },
+        {
+          "id": "hospital-emergency.surgeon",
+          "term": "surgeon",
+          "ipa": "/ˈsɜːrdʒən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "chirurg",
+          "definition": "A doctor who does operations.",
+          "register": "neutralny",
+          "contextPl": "Lekarz operujący",
+          "natural": "",
+          "forms": "surgeons",
+          "collocations": "heart surgeon; the surgeon on call",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The surgeon came by to explain how the operation went.",
+              "pl": "Chirurg przyszedł wyjaśnić, jak poszła operacja.",
+              "focusEn": "surgeon",
+              "focusPl": "Chirurg"
+            },
+            {
+              "en": "We waited for the surgeon in the family room.",
+              "pl": "Czekaliśmy na chirurga w pokoju dla rodzin.",
+              "focusEn": "surgeon",
+              "focusPl": "chirurga"
+            }
+          ],
+          "acceptedAnswers": [
+            "surgeon"
+          ],
+          "acceptedTranslations": [
+            "chirurg",
+            "chirurżka"
+          ]
+        },
+        {
+          "id": "hospital-emergency.operate",
+          "term": "operate",
+          "ipa": "/ˈɑːpəreɪt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "operować",
+          "definition": "To cut into someone's body to treat an illness or injury.",
+          "register": "neutralny",
+          "contextPl": "Przeprowadzanie operacji",
+          "natural": "",
+          "forms": "operated",
+          "collocations": "operate on someone",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Konstrukcja: „operate on someone”.",
+          "examples": [
+            {
+              "en": "They had to operate right away to fix the broken bone.",
+              "pl": "Musieli od razu operować, żeby poskładać złamaną kość.",
+              "focusEn": "operate",
+              "focusPl": "operować"
+            },
+            {
+              "en": "The same doctor who operated on him came to check his stitches.",
+              "pl": "Ten sam lekarz, który go operował, przyszedł sprawdzić szwy.",
+              "focusEn": "operated",
+              "focusPl": "operował"
+            }
+          ],
+          "acceptedAnswers": [
+            "operate"
+          ],
+          "acceptedTranslations": [
+            "operować",
+            "zoperować"
+          ]
+        },
+        {
+          "id": "hospital-emergency.scar",
+          "term": "scar",
+          "ipa": "/skɑːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "blizna",
+          "definition": "A mark left on the skin after a wound heals.",
+          "register": "neutralny",
+          "contextPl": "Ślady po operacji i urazach",
+          "natural": "",
+          "forms": "scars",
+          "collocations": "leave a scar; small scar",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The scar from the operation is only about two inches long.",
+              "pl": "Blizna po operacji ma tylko około pięciu centymetrów.",
+              "focusEn": "scar",
+              "focusPl": "Blizna"
+            },
+            {
+              "en": "He showed us his new scar and joked about it.",
+              "pl": "Pokazał nam swoją nową bliznę i żartował z niej.",
+              "focusEn": "scar",
+              "focusPl": "bliznę"
+            }
+          ],
+          "acceptedAnswers": [
+            "scar"
+          ],
+          "acceptedTranslations": [
+            "blizna"
+          ]
+        },
+        {
+          "id": "hospital-emergency.get-well-soon",
+          "term": "get well soon",
+          "ipa": "/ˌɡet wel ˈsuːn/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wracaj szybko do zdrowia",
+          "definition": "A friendly wish for a sick person to recover quickly.",
+          "register": "neutralny",
+          "contextPl": "Życzenia dla chorego",
+          "natural": "",
+          "forms": "",
+          "collocations": "get well soon card",
+          "synonyms": "feel better soon",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We signed a get well soon card for her.",
+              "pl": "Podpisaliśmy dla niej kartkę z życzeniami szybkiego powrotu do zdrowia.",
+              "focusEn": "get well soon",
+              "focusPl": "szybkiego powrotu do zdrowia"
+            },
+            {
+              "en": "Get well soon! We'll come back on Sunday.",
+              "pl": "Wracaj szybko do zdrowia! Przyjdziemy znowu w niedzielę.",
+              "focusEn": "Get well soon",
+              "focusPl": "Wracaj szybko do zdrowia"
+            }
+          ],
+          "acceptedAnswers": [
+            "get well soon",
+            "feel better soon"
+          ],
+          "acceptedTranslations": [
+            "wracaj szybko do zdrowia",
+            "szybkiego powrotu do zdrowia",
+            "zdrowiej szybko"
+          ]
+        },
+        {
+          "id": "hospital-emergency.stable",
+          "term": "stable",
+          "ipa": "/ˈsteɪbəl/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stabilny",
+          "definition": "Not getting worse; steady.",
+          "register": "neutralny",
+          "contextPl": "Stan pacjenta",
+          "natural": "",
+          "forms": "",
+          "collocations": "in stable condition",
+          "synonyms": "steady",
+          "antonyms": "critical",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The nurse said his condition is stable.",
+              "pl": "Pielęgniarka powiedziała, że jego stan jest stabilny.",
+              "focusEn": "stable",
+              "focusPl": "stabilny"
+            },
+            {
+              "en": "Once she's stable, they'll move her out of intensive care.",
+              "pl": "Kiedy jej stan będzie stabilny, przeniosą ją z intensywnej terapii.",
+              "focusEn": "stable",
+              "focusPl": "stabilny"
+            }
+          ],
+          "acceptedAnswers": [
+            "stable",
+            "steady"
+          ],
+          "acceptedTranslations": [
+            "stabilny"
+          ]
+        },
+        {
+          "id": "hospital-emergency.icu",
+          "term": "ICU",
+          "ipa": "/ˌaɪ siː ˈjuː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "OIOM",
+          "definition": "The hospital unit for patients who are very sick and need constant care.",
+          "register": "specjalistyczny",
+          "contextPl": "Oddział intensywnej terapii",
+          "natural": "",
+          "forms": "",
+          "collocations": "in the ICU",
+          "synonyms": "intensive care",
+          "antonyms": "",
+          "notePl": "Skrót od „intensive care unit”.",
+          "examples": [
+            {
+              "en": "He spent two nights in the ICU before moving to a regular room.",
+              "pl": "Spędził dwie noce na OIOM-ie, zanim przenieśli go do zwykłej sali.",
+              "focusEn": "ICU",
+              "focusPl": "OIOM-ie"
+            },
+            {
+              "en": "Only two visitors at a time are allowed in the ICU.",
+              "pl": "Na OIOM mogą wchodzić tylko dwie osoby naraz.",
+              "focusEn": "ICU",
+              "focusPl": "OIOM"
+            }
+          ],
+          "acceptedAnswers": [
+            "ICU",
+            "intensive care",
+            "intensive care unit"
+          ],
+          "acceptedTranslations": [
+            "OIOM",
+            "intensywna terapia",
+            "oddział intensywnej terapii"
+          ]
+        },
+        {
+          "id": "hospital-emergency.discharge",
+          "term": "discharge",
+          "ipa": "/dɪsˈtʃɑːrdʒ/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "wypisać",
+          "definition": "To officially allow a patient to leave the hospital.",
+          "register": "formalny",
+          "contextPl": "Wyjście ze szpitala",
+          "natural": "",
+          "forms": "discharged",
+          "collocations": "be discharged from the hospital",
+          "synonyms": "release",
+          "antonyms": "admit",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They'll discharge him on Friday if his tests look good.",
+              "pl": "Wypiszą go w piątek, jeśli wyniki będą dobre.",
+              "focusEn": "discharge",
+              "focusPl": "Wypiszą"
+            },
+            {
+              "en": "She was discharged with a list of exercises to do at home.",
+              "pl": "Wypisano ją z listą ćwiczeń do wykonywania w domu.",
+              "focusEn": "discharged",
+              "focusPl": "Wypisano"
+            }
+          ],
+          "acceptedAnswers": [
+            "discharge",
+            "release"
+          ],
+          "acceptedTranslations": [
+            "wypisać",
+            "wypisywać",
+            "wypisać ze szpitala"
+          ]
+        },
+        {
+          "id": "hospital-emergency.anesthesia",
+          "term": "anesthesia",
+          "ipa": "/ˌænəsˈθiːʒə/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "znieczulenie",
+          "definition": "Medicine that stops you feeling pain during an operation.",
+          "register": "specjalistyczny",
+          "contextPl": "Znieczulenie do operacji",
+          "natural": "",
+          "forms": "",
+          "collocations": "general anesthesia; local anesthesia",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska; brytyjska to „anaesthesia”.",
+          "examples": [
+            {
+              "en": "She was still sleepy from the anesthesia when we arrived.",
+              "pl": "Kiedy przyjechaliśmy, była jeszcze senna po znieczuleniu.",
+              "focusEn": "anesthesia",
+              "focusPl": "znieczuleniu"
+            },
+            {
+              "en": "The doctor explained that he'd be under general anesthesia for the operation.",
+              "pl": "Lekarz wyjaśnił, że podczas operacji będzie w ogólnym znieczuleniu.",
+              "focusEn": "anesthesia",
+              "focusPl": "znieczuleniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "anesthesia",
+            "anaesthesia"
+          ],
+          "acceptedTranslations": [
+            "znieczulenie",
+            "narkoza"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hospital-emergency.phrases",
+      "namePl": "Zwroty i idiomy",
+      "scenePl": "Szpitalna poczekalnia: rodzina czeka na wieści o bliskiej osobie",
+      "entries": [
+        {
+          "id": "hospital-emergency.hang-in-there",
+          "term": "hang in there",
+          "ipa": "/ˌhæŋ ɪn ˈðer/",
+          "pos": "idiom",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "trzymaj się",
+          "definition": "Don't give up; stay strong in a hard situation.",
+          "register": "potoczny",
+          "contextPl": "Wspieranie kogoś w trudnej chwili",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "stay strong",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hang in there; the doctor will be out soon.",
+              "pl": "Trzymaj się; lekarz zaraz wyjdzie.",
+              "focusEn": "Hang in there",
+              "focusPl": "Trzymaj się"
+            },
+            {
+              "en": "My brother texted me to hang in there while we waited.",
+              "pl": "Brat napisał mi, żebym się trzymał, kiedy czekaliśmy.",
+              "focusEn": "hang in there",
+              "focusPl": "się trzymał"
+            }
+          ],
+          "acceptedAnswers": [
+            "hang in there",
+            "stay strong"
+          ],
+          "acceptedTranslations": [
+            "trzymaj się",
+            "nie poddawaj się",
+            "wytrzymaj"
+          ]
+        },
+        {
+          "id": "hospital-emergency.in-good-hands",
+          "term": "in good hands",
+          "ipa": "/ɪn ˌɡʊd ˈhændz/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "w dobrych rękach",
+          "definition": "Being cared for by people you can trust.",
+          "register": "neutralny",
+          "contextPl": "Uspokajanie rodziny",
+          "natural": "",
+          "forms": "",
+          "collocations": "be in good hands",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't worry, he's in good hands here.",
+              "pl": "Nie martw się, on jest tu w dobrych rękach.",
+              "focusEn": "in good hands",
+              "focusPl": "w dobrych rękach"
+            },
+            {
+              "en": "The nurse told us my dad was in good hands with this surgeon.",
+              "pl": "Pielęgniarka powiedziała nam, że u tego chirurga tata jest w dobrych rękach.",
+              "focusEn": "in good hands",
+              "focusPl": "w dobrych rękach"
+            }
+          ],
+          "acceptedAnswers": [
+            "in good hands"
+          ],
+          "acceptedTranslations": [
+            "w dobrych rękach"
+          ]
+        },
+        {
+          "id": "hospital-emergency.in-shock",
+          "term": "in shock",
+          "ipa": "/ɪn ˈʃɑːk/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "w szoku",
+          "definition": "Very upset and confused after something bad and sudden.",
+          "register": "neutralny",
+          "contextPl": "Reakcja na nagłe zdarzenie",
+          "natural": "",
+          "forms": "",
+          "collocations": "be in shock; still in shock",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "His wife was in shock and couldn't stop shaking.",
+              "pl": "Jego żona była w szoku i nie mogła przestać się trząść.",
+              "focusEn": "in shock",
+              "focusPl": "w szoku"
+            },
+            {
+              "en": "A nurse brought her a blanket because she was still in shock.",
+              "pl": "Pielęgniarka przyniosła jej koc, bo wciąż była w szoku.",
+              "focusEn": "in shock",
+              "focusPl": "w szoku"
+            }
+          ],
+          "acceptedAnswers": [
+            "in shock"
+          ],
+          "acceptedTranslations": [
+            "w szoku",
+            "w stanie szoku"
+          ]
+        },
+        {
+          "id": "hospital-emergency.pull-through",
+          "term": "pull through",
+          "ipa": "/ˌpʊl ˈθruː/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wyjść z tego",
+          "definition": "To recover from a serious illness or injury.",
+          "register": "potoczny",
+          "contextPl": "Nadzieja na wyzdrowienie",
+          "natural": "",
+          "forms": "pull – pulled – pulled",
+          "collocations": "",
+          "synonyms": "recover; survive",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The doctors think she's going to pull through.",
+              "pl": "Lekarze myślą, że ona z tego wyjdzie.",
+              "focusEn": "pull through",
+              "focusPl": "z tego wyjdzie"
+            },
+            {
+              "en": "Grandpa is strong; he'll pull through this.",
+              "pl": "Dziadek jest silny; wyjdzie z tego.",
+              "focusEn": "pull through",
+              "focusPl": "wyjdzie"
+            }
+          ],
+          "acceptedAnswers": [
+            "pull through",
+            "recover"
+          ],
+          "acceptedTranslations": [
+            "wyjść z tego",
+            "przeżyć",
+            "wylizać się",
+            "wyzdrowieć"
+          ]
+        },
+        {
+          "id": "hospital-emergency.close-call",
+          "term": "close call",
+          "ipa": "/ˌkloʊs ˈkɔːl/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "niewiele brakowało",
+          "definition": "A situation where something bad almost happened.",
+          "register": "potoczny",
+          "contextPl": "Cudem uniknięte nieszczęście",
+          "natural": "",
+          "forms": "close calls",
+          "collocations": "",
+          "synonyms": "near miss",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "That was a close call; the doctor said we got here just in time.",
+              "pl": "Było o włos; lekarz powiedział, że dotarliśmy w ostatniej chwili.",
+              "focusEn": "close call",
+              "focusPl": "Było o włos"
+            },
+            {
+              "en": "My uncle admitted the accident was a close call and promised to drive slower.",
+              "pl": "Wujek przyznał, że przy tym wypadku niewiele brakowało, i obiecał jeździć wolniej.",
+              "focusEn": "close call",
+              "focusPl": "niewiele brakowało"
+            }
+          ],
+          "acceptedAnswers": [
+            "close call",
+            "near miss"
+          ],
+          "acceptedTranslations": [
+            "niewiele brakowało",
+            "było o włos",
+            "o mały włos"
+          ]
+        },
+        {
+          "id": "hospital-emergency.out-of-the-woods",
+          "term": "out of the woods",
+          "ipa": "/ˌaʊt əv ðə ˈwʊdz/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "poza niebezpieczeństwem",
+          "definition": "No longer in danger.",
+          "register": "potoczny",
+          "contextPl": "Ocena stanu pacjenta",
+          "natural": "",
+          "forms": "",
+          "collocations": "not out of the woods yet",
+          "synonyms": "out of danger",
+          "antonyms": "",
+          "notePl": "Często w przeczeniu: „not out of the woods yet”.",
+          "examples": [
+            {
+              "en": "He's doing better, but he's not out of the woods yet.",
+              "pl": "Jest z nim lepiej, ale jeszcze nie jest poza niebezpieczeństwem.",
+              "focusEn": "out of the woods",
+              "focusPl": "poza niebezpieczeństwem"
+            },
+            {
+              "en": "When the doctor said she was out of the woods, we all hugged.",
+              "pl": "Kiedy lekarz powiedział, że jest poza niebezpieczeństwem, wszyscy się uściskaliśmy.",
+              "focusEn": "out of the woods",
+              "focusPl": "poza niebezpieczeństwem"
+            }
+          ],
+          "acceptedAnswers": [
+            "out of the woods",
+            "out of danger"
+          ],
+          "acceptedTranslations": [
+            "poza niebezpieczeństwem",
+            "poza zagrożeniem"
+          ]
+        },
+        {
+          "id": "hospital-emergency.touch-and-go",
+          "term": "touch and go",
+          "ipa": "/ˌtʌtʃ ən ˈɡoʊ/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "na włosku",
+          "definition": "Uncertain and risky, with a bad result still possible.",
+          "register": "potoczny",
+          "contextPl": "Krytyczna sytuacja",
+          "natural": "",
+          "forms": "",
+          "collocations": "it was touch and go",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It was touch and go for a few hours after the surgery.",
+              "pl": "Przez kilka godzin po operacji wszystko wisiało na włosku.",
+              "focusEn": "touch and go",
+              "focusPl": "na włosku"
+            },
+            {
+              "en": "The nurse admitted that last night had been touch and go.",
+              "pl": "Pielęgniarka przyznała, że zeszła noc była krytyczna.",
+              "focusEn": "touch and go",
+              "focusPl": "krytyczna"
+            }
+          ],
+          "acceptedAnswers": [
+            "touch and go"
+          ],
+          "acceptedTranslations": [
+            "na włosku",
+            "krytyczny",
+            "niepewny"
+          ]
+        }
+      ]
+    }
+  ]
+}

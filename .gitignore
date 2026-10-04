@@ -1,0 +1,33 @@
+# Xcode — projekt generuje XcodeGen z ios/project.yml
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+ios/build/
+*.xcresult
+.swiftpm/
+Packages/FluentKit/.build/
+ios/Packages/FluentKit/.build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node
+node_modules/
+
+# Sekrety
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.mobileprovision
+
+# Archiwa lokalne
+*.rar
+*.zip
