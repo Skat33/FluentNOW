@@ -1,0 +1,2528 @@
+{
+  "schemaVersion": 1,
+  "id": "personal-finance",
+  "namePl": "Finanse osobiste",
+  "nameEn": "Personal Finance",
+  "group": "money",
+  "symbol": "banknote",
+  "summaryPl": "Budżet domowy i wydatki, oszczędzanie, długi, inwestowanie na przyszłość i potoczne zwroty o pieniądzach.",
+  "aliases": [
+    "finanse osobiste",
+    "budżet",
+    "oszczędzanie",
+    "oszczędności",
+    "długi",
+    "wydatki",
+    "pieniądze",
+    "inwestowanie",
+    "personal finance",
+    "money"
+  ],
+  "categories": [
+    {
+      "id": "personal-finance.budget-expenses",
+      "namePl": "Budżet i wydatki",
+      "scenePl": "Niedzielny wieczór przy kuchennym stole: z partnerką rozpisujecie miesięczny budżet",
+      "entries": [
+        {
+          "id": "personal-finance.budget",
+          "term": "budget",
+          "ipa": "/ˈbʌdʒɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "budżet",
+          "definition": "A plan for how much money you will earn and spend.",
+          "register": "neutralny",
+          "contextPl": "Planowanie wydatków",
+          "natural": "",
+          "forms": "budgets",
+          "collocations": "make a budget; stick to a budget; a monthly budget",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też czasownik: „budget for something” = zaplanować wydatek.",
+          "examples": [
+            {
+              "en": "We sat down at the kitchen table to make a budget for next month.",
+              "pl": "Usiedliśmy przy kuchennym stole, żeby zrobić budżet na przyszły miesiąc.",
+              "focusEn": "budget",
+              "focusPl": "budżet"
+            },
+            {
+              "en": "Our budget doesn't leave much for eating out.",
+              "pl": "Nasz budżet nie zostawia wiele na jedzenie na mieście.",
+              "focusEn": "budget",
+              "focusPl": "budżet"
+            }
+          ],
+          "acceptedAnswers": [
+            "budget"
+          ],
+          "acceptedTranslations": [
+            "budżet",
+            "plan wydatków"
+          ]
+        },
+        {
+          "id": "personal-finance.rent",
+          "term": "rent",
+          "ipa": "/rɛnt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "czynsz",
+          "definition": "The money you pay every month to live in a home that someone else owns.",
+          "register": "neutralny",
+          "contextPl": "Koszty mieszkania",
+          "natural": "",
+          "forms": "",
+          "collocations": "pay the rent; the rent is due; rent goes up",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też czasownik: „rent an apartment” = wynająć mieszkanie.",
+          "examples": [
+            {
+              "en": "Rent takes almost half of what we make each month.",
+              "pl": "Czynsz zjada prawie połowę tego, co zarabiamy co miesiąc.",
+              "focusEn": "Rent",
+              "focusPl": "Czynsz"
+            },
+            {
+              "en": "The rent is going up again in January, so we need to plan for it.",
+              "pl": "Czynsz znowu wzrośnie w styczniu, więc musimy to zaplanować.",
+              "focusEn": "rent",
+              "focusPl": "Czynsz"
+            }
+          ],
+          "acceptedAnswers": [
+            "rent"
+          ],
+          "acceptedTranslations": [
+            "czynsz",
+            "opłata za mieszkanie",
+            "najem"
+          ]
+        },
+        {
+          "id": "personal-finance.bills",
+          "term": "bills",
+          "ipa": "/bɪlz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "rachunki",
+          "definition": "Statements that show how much you have to pay for services such as electricity or the phone.",
+          "register": "neutralny",
+          "contextPl": "Stałe opłaty",
+          "natural": "",
+          "forms": "",
+          "collocations": "pay the bills; utility bills; the bills are due",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Liczba pojedyncza: „bill”. W USA „bill” to też banknot.",
+          "examples": [
+            {
+              "en": "After the bills are paid, we have about four hundred dollars left.",
+              "pl": "Po opłaceniu rachunków zostaje nam około czterystu dolarów.",
+              "focusEn": "bills",
+              "focusPl": "rachunków"
+            },
+            {
+              "en": "Our electric and internet bills are higher than last year.",
+              "pl": "Nasze rachunki za prąd i internet są wyższe niż w zeszłym roku.",
+              "focusEn": "bills",
+              "focusPl": "rachunki"
+            }
+          ],
+          "acceptedAnswers": [
+            "bills",
+            "bill"
+          ],
+          "acceptedTranslations": [
+            "rachunki",
+            "opłaty",
+            "rachunek"
+          ]
+        },
+        {
+          "id": "personal-finance.groceries",
+          "term": "groceries",
+          "ipa": "/ˈɡroʊsəriz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zakupy spożywcze",
+          "definition": "Food and other things you buy at a supermarket.",
+          "register": "neutralny",
+          "contextPl": "Wydatki na jedzenie",
+          "natural": "",
+          "forms": "",
+          "collocations": "buy groceries; spend on groceries; grocery bill",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We spend way too much on groceries because we waste food.",
+              "pl": "Wydajemy o wiele za dużo na zakupy spożywcze, bo marnujemy jedzenie.",
+              "focusEn": "groceries",
+              "focusPl": "zakupy spożywcze"
+            },
+            {
+              "en": "Let's set a limit of a hundred dollars a week for groceries.",
+              "pl": "Ustalmy limit stu dolarów tygodniowo na zakupy spożywcze.",
+              "focusEn": "groceries",
+              "focusPl": "zakupy spożywcze"
+            }
+          ],
+          "acceptedAnswers": [
+            "groceries",
+            "grocery shopping"
+          ],
+          "acceptedTranslations": [
+            "zakupy spożywcze",
+            "jedzenie",
+            "artykuły spożywcze",
+            "zakupy"
+          ]
+        },
+        {
+          "id": "personal-finance.expenses",
+          "term": "expenses",
+          "ipa": "/ɪkˈspɛnsɪz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wydatki",
+          "definition": "Money that you spend on things you need, such as rent or food.",
+          "register": "neutralny",
+          "contextPl": "Lista kosztów",
+          "natural": "costs",
+          "forms": "",
+          "collocations": "monthly expenses; cut expenses; cover your expenses",
+          "synonyms": "costs; spending",
+          "antonyms": "income",
+          "notePl": "Zwykle w liczbie mnogiej.",
+          "examples": [
+            {
+              "en": "Let's write down all our expenses, even the small ones.",
+              "pl": "Wypiszmy wszystkie nasze wydatki, nawet te małe.",
+              "focusEn": "expenses",
+              "focusPl": "wydatki"
+            },
+            {
+              "en": "Our biggest expenses are rent and the car.",
+              "pl": "Nasze największe wydatki to czynsz i samochód.",
+              "focusEn": "expenses",
+              "focusPl": "wydatki"
+            }
+          ],
+          "acceptedAnswers": [
+            "expenses",
+            "costs",
+            "expense"
+          ],
+          "acceptedTranslations": [
+            "wydatki",
+            "koszty"
+          ]
+        },
+        {
+          "id": "personal-finance.income",
+          "term": "income",
+          "ipa": "/ˈɪnkʌm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dochód",
+          "definition": "The money you earn from work or other sources.",
+          "register": "neutralny",
+          "contextPl": "Pieniądze, które wpływają",
+          "natural": "",
+          "forms": "incomes",
+          "collocations": "monthly income; a steady income; extra income",
+          "synonyms": "earnings",
+          "antonyms": "expenses",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our income went up when I got a raise in March.",
+              "pl": "Nasz dochód wzrósł, kiedy w marcu dostałem podwyżkę.",
+              "focusEn": "income",
+              "focusPl": "dochód"
+            },
+            {
+              "en": "We try to spend less than a third of our income on rent.",
+              "pl": "Staramy się wydawać na czynsz mniej niż jedną trzecią naszych dochodów.",
+              "focusEn": "income",
+              "focusPl": "dochodów"
+            }
+          ],
+          "acceptedAnswers": [
+            "income",
+            "earnings"
+          ],
+          "acceptedTranslations": [
+            "dochód",
+            "dochody",
+            "przychód",
+            "zarobki"
+          ]
+        },
+        {
+          "id": "personal-finance.paycheck",
+          "term": "paycheck",
+          "ipa": "/ˈpeɪtʃɛk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wypłata",
+          "definition": "The money you get from your job, usually every week or two.",
+          "register": "neutralny",
+          "contextPl": "Regularne wynagrodzenie",
+          "natural": "",
+          "forms": "paychecks",
+          "collocations": "get your paycheck; a monthly paycheck; my last paycheck",
+          "synonyms": "salary; wages",
+          "antonyms": "",
+          "notePl": "W USA często wypłacana co dwa tygodnie.",
+          "examples": [
+            {
+              "en": "My paycheck comes every two weeks, so we plan the budget around that.",
+              "pl": "Wypłatę dostaję co dwa tygodnie, więc pod to planujemy budżet.",
+              "focusEn": "paycheck",
+              "focusPl": "Wypłatę"
+            },
+            {
+              "en": "Half of my next paycheck is already gone on bills.",
+              "pl": "Połowa mojej następnej wypłaty już poszła na rachunki.",
+              "focusEn": "paycheck",
+              "focusPl": "wypłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "paycheck",
+            "salary",
+            "pay"
+          ],
+          "acceptedTranslations": [
+            "wypłata",
+            "pensja",
+            "wynagrodzenie"
+          ]
+        },
+        {
+          "id": "personal-finance.keep-track-of",
+          "term": "keep track of",
+          "ipa": "/ˌkiːp ˈtræk əv/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "śledzić",
+          "definition": "To keep checking and recording something so you know about it.",
+          "register": "neutralny",
+          "contextPl": "Kontrola wydatków",
+          "natural": "",
+          "forms": "kept track of",
+          "collocations": "keep track of spending; keep track of every dollar",
+          "synonyms": "monitor",
+          "antonyms": "lose track of",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I use an app to keep track of every dollar we spend.",
+              "pl": "Używam aplikacji, żeby śledzić każdego wydanego dolara.",
+              "focusEn": "keep track of",
+              "focusPl": "śledzić"
+            },
+            {
+              "en": "We never kept track of our spending until this month.",
+              "pl": "Do tego miesiąca nigdy nie kontrolowaliśmy naszych wydatków.",
+              "focusEn": "kept track of",
+              "focusPl": "kontrolowaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep track of",
+            "track",
+            "monitor"
+          ],
+          "acceptedTranslations": [
+            "śledzić",
+            "kontrolować",
+            "mieć pod kontrolą"
+          ]
+        },
+        {
+          "id": "personal-finance.add-up",
+          "term": "add up",
+          "ipa": "/ˌæd ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sumować się",
+          "definition": "To slowly become a large amount.",
+          "register": "neutralny",
+          "contextPl": "Małe wydatki, duże kwoty",
+          "natural": "",
+          "forms": "added up; adding up",
+          "collocations": "it all adds up; small costs add up",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Five dollars a day doesn't sound like much, but it adds up.",
+              "pl": "Pięć dolarów dziennie to niewiele, ale to się sumuje.",
+              "focusEn": "adds up",
+              "focusPl": "sumuje"
+            },
+            {
+              "en": "All those little subscriptions really added up last month.",
+              "pl": "W zeszłym miesiącu te wszystkie drobne subskrypcje naprawdę uzbierały się w niezłą sumę.",
+              "focusEn": "added up",
+              "focusPl": "uzbierały się"
+            }
+          ],
+          "acceptedAnswers": [
+            "add up"
+          ],
+          "acceptedTranslations": [
+            "sumować się",
+            "uzbierać się",
+            "zbierać się"
+          ]
+        },
+        {
+          "id": "personal-finance.money-is-tight",
+          "term": "money is tight",
+          "ipa": "/ˈmʌni ɪz ˈtaɪt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "krucho z pieniędzmi",
+          "definition": "Used to say you do not have much money right now.",
+          "register": "potoczny",
+          "contextPl": "Trudniejszy okres finansowy",
+          "natural": "",
+          "forms": "",
+          "collocations": "money is a little tight; things are tight",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Money is tight this month because we paid for the car repair.",
+              "pl": "W tym miesiącu jest krucho z pieniędzmi, bo zapłaciliśmy za naprawę auta.",
+              "focusEn": "Money is tight",
+              "focusPl": "krucho z pieniędzmi"
+            },
+            {
+              "en": "When money is tight, we skip restaurants completely.",
+              "pl": "Kiedy jest krucho z pieniędzmi, całkowicie odpuszczamy restauracje.",
+              "focusEn": "money is tight",
+              "focusPl": "krucho z pieniędzmi"
+            }
+          ],
+          "acceptedAnswers": [
+            "money is tight",
+            "money's tight",
+            "money is a bit tight"
+          ],
+          "acceptedTranslations": [
+            "krucho z pieniędzmi",
+            "brakuje pieniędzy",
+            "cienko z kasą"
+          ]
+        },
+        {
+          "id": "personal-finance.cut-back",
+          "term": "cut back",
+          "ipa": "/ˌkʌt ˈbæk/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ograniczyć",
+          "definition": "To spend less money on something.",
+          "register": "neutralny",
+          "contextPl": "Oszczędzanie na wydatkach",
+          "natural": "",
+          "forms": "cut – cut – cut",
+          "collocations": "cut back on eating out; cut back on spending",
+          "synonyms": "reduce; spend less",
+          "antonyms": "",
+          "notePl": "Zwykle z „on”: „cut back on coffee”.",
+          "examples": [
+            {
+              "en": "We need to cut back on takeout if we want to save anything.",
+              "pl": "Musimy ograniczyć jedzenie na wynos, jeśli chcemy cokolwiek odłożyć.",
+              "focusEn": "cut back",
+              "focusPl": "ograniczyć"
+            },
+            {
+              "en": "I cut back on coffee shops, and it saved me fifty dollars.",
+              "pl": "Ograniczyłem chodzenie do kawiarni i zaoszczędziłem pięćdziesiąt dolarów.",
+              "focusEn": "cut back",
+              "focusPl": "Ograniczyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "cut back",
+            "cut down",
+            "spend less"
+          ],
+          "acceptedTranslations": [
+            "ograniczyć",
+            "ograniczać",
+            "zmniejszyć wydatki"
+          ]
+        },
+        {
+          "id": "personal-finance.make-ends-meet",
+          "term": "make ends meet",
+          "ipa": "/ˌmeɪk ˈɛndz ˌmiːt/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wiązać koniec z końcem",
+          "definition": "To have just enough money to pay for the things you need.",
+          "register": "neutralny",
+          "contextPl": "Trudności finansowe",
+          "natural": "get by",
+          "forms": "made ends meet",
+          "collocations": "struggle to make ends meet; barely make ends meet",
+          "synonyms": "get by",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With the new rent, we can barely make ends meet.",
+              "pl": "Przy nowym czynszu ledwo wiążemy koniec z końcem.",
+              "focusEn": "make ends meet",
+              "focusPl": "wiążemy koniec z końcem"
+            },
+            {
+              "en": "I took weekend shifts to help us make ends meet.",
+              "pl": "Wziąłem weekendowe zmiany, żebyśmy mogli związać koniec z końcem.",
+              "focusEn": "make ends meet",
+              "focusPl": "związać koniec z końcem"
+            }
+          ],
+          "acceptedAnswers": [
+            "make ends meet",
+            "get by"
+          ],
+          "acceptedTranslations": [
+            "wiązać koniec z końcem",
+            "związać koniec z końcem",
+            "ledwo wystarczać"
+          ]
+        },
+        {
+          "id": "personal-finance.fixed-costs",
+          "term": "fixed costs",
+          "ipa": "/ˌfɪkst ˈkɔːsts/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "koszty stałe",
+          "definition": "Costs that stay the same every month, such as rent and insurance.",
+          "register": "specjalistyczny",
+          "contextPl": "Struktura budżetu",
+          "natural": "",
+          "forms": "",
+          "collocations": "cover fixed costs; reduce fixed costs",
+          "synonyms": "",
+          "antonyms": "variable costs",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our fixed costs are almost two thousand dollars before we buy any food.",
+              "pl": "Nasze koszty stałe to prawie dwa tysiące dolarów, zanim kupimy jakiekolwiek jedzenie.",
+              "focusEn": "fixed costs",
+              "focusPl": "koszty stałe"
+            },
+            {
+              "en": "We listed our fixed costs first and then everything else.",
+              "pl": "Najpierw wypisaliśmy koszty stałe, a potem całą resztę.",
+              "focusEn": "fixed costs",
+              "focusPl": "koszty stałe"
+            }
+          ],
+          "acceptedAnswers": [
+            "fixed costs",
+            "fixed expenses"
+          ],
+          "acceptedTranslations": [
+            "koszty stałe",
+            "stałe wydatki",
+            "opłaty stałe"
+          ]
+        },
+        {
+          "id": "personal-finance.live-paycheck-to-paycheck",
+          "term": "live paycheck to paycheck",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "żyć od wypłaty do wypłaty",
+          "definition": "To spend all your money each time you are paid, with nothing saved.",
+          "register": "potoczny",
+          "contextPl": "Brak oszczędności",
+          "natural": "",
+          "forms": "lived; living",
+          "collocations": "living paycheck to paycheck",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're tired of living paycheck to paycheck, so we're making a plan.",
+              "pl": "Mamy dość życia od wypłaty do wypłaty, więc robimy plan.",
+              "focusEn": "living paycheck to paycheck",
+              "focusPl": "życia od wypłaty do wypłaty"
+            },
+            {
+              "en": "Without a budget, we'd still live paycheck to paycheck.",
+              "pl": "Bez budżetu dalej żylibyśmy od wypłaty do wypłaty.",
+              "focusEn": "live paycheck to paycheck",
+              "focusPl": "żylibyśmy od wypłaty do wypłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "live paycheck to paycheck",
+            "living paycheck to paycheck"
+          ],
+          "acceptedTranslations": [
+            "żyć od wypłaty do wypłaty",
+            "żyć od pierwszego do pierwszego"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "personal-finance.saving",
+      "namePl": "Oszczędzanie",
+      "scenePl": "Rozmowa z przyjaciółką w kawiarni o tym, jak odłożyć pieniądze na letni wyjazd",
+      "entries": [
+        {
+          "id": "personal-finance.save",
+          "term": "save",
+          "ipa": "/seɪv/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "oszczędzać",
+          "definition": "To keep money instead of spending it, so you can use it later.",
+          "register": "neutralny",
+          "contextPl": "Odkładanie pieniędzy",
+          "natural": "",
+          "forms": "saved; saving",
+          "collocations": "save money; save for a trip; save on something",
+          "synonyms": "put aside",
+          "antonyms": "spend; waste",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm trying to save two hundred dollars a month for our trip.",
+              "pl": "Staram się odkładać dwieście dolarów miesięcznie na nasz wyjazd.",
+              "focusEn": "save",
+              "focusPl": "odkładać"
+            },
+            {
+              "en": "How did you save so much money in one year?",
+              "pl": "Jak udało ci się zaoszczędzić tyle pieniędzy w rok?",
+              "focusEn": "save",
+              "focusPl": "zaoszczędzić"
+            }
+          ],
+          "acceptedAnswers": [
+            "save"
+          ],
+          "acceptedTranslations": [
+            "oszczędzać",
+            "zaoszczędzić",
+            "odkładać",
+            "odłożyć"
+          ]
+        },
+        {
+          "id": "personal-finance.piggy-bank",
+          "term": "piggy bank",
+          "ipa": "/ˈpɪɡi ˌbæŋk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "skarbonka",
+          "definition": "A small container, often shaped like a pig, for saving coins.",
+          "register": "neutralny",
+          "contextPl": "Drobne oszczędności",
+          "natural": "",
+          "forms": "piggy banks",
+          "collocations": "break the piggy bank; put coins in a piggy bank",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też przenośnie: „raid the piggy bank” = sięgnąć do oszczędności.",
+          "examples": [
+            {
+              "en": "I still keep a piggy bank for my spare change.",
+              "pl": "Wciąż trzymam skarbonkę na drobne.",
+              "focusEn": "piggy bank",
+              "focusPl": "skarbonkę"
+            },
+            {
+              "en": "My friend laughed when I said my vacation fund was a piggy bank.",
+              "pl": "Przyjaciółka się zaśmiała, kiedy powiedziałem, że moim funduszem na wakacje jest skarbonka.",
+              "focusEn": "piggy bank",
+              "focusPl": "skarbonka"
+            }
+          ],
+          "acceptedAnswers": [
+            "piggy bank"
+          ],
+          "acceptedTranslations": [
+            "skarbonka",
+            "świnka skarbonka"
+          ]
+        },
+        {
+          "id": "personal-finance.savings",
+          "term": "savings",
+          "ipa": "/ˈseɪvɪŋz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oszczędności",
+          "definition": "Money that you have saved, especially in a bank.",
+          "register": "neutralny",
+          "contextPl": "Zgromadzone pieniądze",
+          "natural": "",
+          "forms": "",
+          "collocations": "my savings; use your savings; life savings",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zwykle w liczbie mnogiej.",
+          "examples": [
+            {
+              "en": "I don't want to touch my savings for a vacation.",
+              "pl": "Nie chcę ruszać oszczędności na wakacje.",
+              "focusEn": "savings",
+              "focusPl": "oszczędności"
+            },
+            {
+              "en": "She used part of her savings to pay for the flights.",
+              "pl": "Część swoich oszczędności przeznaczyła na bilety lotnicze.",
+              "focusEn": "savings",
+              "focusPl": "oszczędności"
+            }
+          ],
+          "acceptedAnswers": [
+            "savings"
+          ],
+          "acceptedTranslations": [
+            "oszczędności"
+          ]
+        },
+        {
+          "id": "personal-finance.save-up",
+          "term": "save up",
+          "ipa": "/ˌseɪv ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "uzbierać",
+          "definition": "To save money over time for something specific.",
+          "register": "neutralny",
+          "contextPl": "Oszczędzanie na konkretny cel",
+          "natural": "",
+          "forms": "saved up; saving up",
+          "collocations": "save up for a car; save up for a trip",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm saving up for a week in Mexico next summer.",
+              "pl": "Zbieram na tydzień w Meksyku w przyszłe lato.",
+              "focusEn": "saving up",
+              "focusPl": "Zbieram"
+            },
+            {
+              "en": "It took me eight months to save up for my first trip abroad.",
+              "pl": "Uzbieranie na pierwszy wyjazd za granicę zajęło mi osiem miesięcy.",
+              "focusEn": "save up",
+              "focusPl": "Uzbieranie"
+            }
+          ],
+          "acceptedAnswers": [
+            "save up"
+          ],
+          "acceptedTranslations": [
+            "uzbierać",
+            "zbierać pieniądze",
+            "zbierać",
+            "oszczędzać na coś"
+          ]
+        },
+        {
+          "id": "personal-finance.goal",
+          "term": "goal",
+          "ipa": "/ɡoʊl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "cel",
+          "definition": "Something you want to achieve.",
+          "register": "neutralny",
+          "contextPl": "Plan oszczędzania",
+          "natural": "target",
+          "forms": "goals",
+          "collocations": "a savings goal; reach your goal; set a goal",
+          "synonyms": "target",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My goal is to have three thousand dollars by June.",
+              "pl": "Moim celem jest mieć trzy tysiące dolarów do czerwca.",
+              "focusEn": "goal",
+              "focusPl": "celem"
+            },
+            {
+              "en": "Put your savings goal on your phone's lock screen as a reminder.",
+              "pl": "Ustaw swój cel oszczędnościowy na ekranie blokady telefonu jako przypomnienie.",
+              "focusEn": "goal",
+              "focusPl": "cel"
+            }
+          ],
+          "acceptedAnswers": [
+            "goal",
+            "target"
+          ],
+          "acceptedTranslations": [
+            "cel"
+          ]
+        },
+        {
+          "id": "personal-finance.spare-change",
+          "term": "spare change",
+          "ipa": "/ˌspɛr ˈtʃeɪndʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "drobne",
+          "definition": "Small coins that you have left over.",
+          "register": "neutralny",
+          "contextPl": "Odkładanie małych kwot",
+          "natural": "loose change",
+          "forms": "",
+          "collocations": "save your spare change; any spare change",
+          "synonyms": "loose change; coins",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I drop all my spare change into a jar by the door.",
+              "pl": "Wszystkie drobne wrzucam do słoika przy drzwiach.",
+              "focusEn": "spare change",
+              "focusPl": "drobne"
+            },
+            {
+              "en": "My app rounds up every purchase and saves the spare change.",
+              "pl": "Moja aplikacja zaokrągla każdy zakup i odkłada drobne.",
+              "focusEn": "spare change",
+              "focusPl": "drobne"
+            }
+          ],
+          "acceptedAnswers": [
+            "spare change",
+            "loose change"
+          ],
+          "acceptedTranslations": [
+            "drobne",
+            "drobniaki",
+            "bilon"
+          ]
+        },
+        {
+          "id": "personal-finance.put-aside",
+          "term": "put aside",
+          "ipa": "/ˌpʊt əˈsaɪd/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odłożyć",
+          "definition": "To keep an amount of money for a special purpose.",
+          "register": "neutralny",
+          "contextPl": "Wydzielanie pieniędzy",
+          "natural": "set aside",
+          "forms": "put – put – put",
+          "collocations": "put aside money; put aside fifty dollars a week",
+          "synonyms": "set aside; save",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I put aside fifty dollars every payday before I spend anything.",
+              "pl": "Z każdej wypłaty odkładam pięćdziesiąt dolarów, zanim cokolwiek wydam.",
+              "focusEn": "put aside",
+              "focusPl": "odkładam"
+            },
+            {
+              "en": "If you put aside a little each week, you won't even notice it.",
+              "pl": "Jeśli co tydzień odłożysz trochę, nawet tego nie zauważysz.",
+              "focusEn": "put aside",
+              "focusPl": "odłożysz"
+            }
+          ],
+          "acceptedAnswers": [
+            "put aside",
+            "set aside"
+          ],
+          "acceptedTranslations": [
+            "odłożyć",
+            "odkładać",
+            "zachować"
+          ]
+        },
+        {
+          "id": "personal-finance.emergency-fund",
+          "term": "emergency fund",
+          "ipa": "/ɪˈmɝːdʒənsi ˌfʌnd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "poduszka finansowa",
+          "definition": "Money saved for unexpected problems, such as losing your job.",
+          "register": "neutralny",
+          "contextPl": "Bezpieczeństwo finansowe",
+          "natural": "rainy day fund",
+          "forms": "emergency funds",
+          "collocations": "build an emergency fund; dip into your emergency fund",
+          "synonyms": "rainy day fund",
+          "antonyms": "",
+          "notePl": "Zwykle zaleca się odłożyć kilka miesięcy wydatków.",
+          "examples": [
+            {
+              "en": "Before the trip, I want three months of rent in my emergency fund.",
+              "pl": "Przed wyjazdem chcę mieć w funduszu awaryjnym równowartość trzech miesięcy czynszu.",
+              "focusEn": "emergency fund",
+              "focusPl": "funduszu awaryjnym"
+            },
+            {
+              "en": "My emergency fund saved me when my car broke down last year.",
+              "pl": "W zeszłym roku, kiedy zepsuł mi się samochód, uratowała mnie poduszka finansowa.",
+              "focusEn": "emergency fund",
+              "focusPl": "poduszka finansowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "emergency fund",
+            "rainy day fund"
+          ],
+          "acceptedTranslations": [
+            "poduszka finansowa",
+            "fundusz awaryjny",
+            "pieniądze na czarną godzinę"
+          ]
+        },
+        {
+          "id": "personal-finance.save-for-a-rainy-day",
+          "term": "save for a rainy day",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odkładać na czarną godzinę",
+          "definition": "To save money for a time when you might need it unexpectedly.",
+          "register": "neutralny",
+          "contextPl": "Ostrożność finansowa",
+          "natural": "",
+          "forms": "saved; saving",
+          "collocations": "save something for a rainy day",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My grandma always told me to save for a rainy day.",
+              "pl": "Babcia zawsze mi powtarzała, żebym odkładał na czarną godzinę.",
+              "focusEn": "save for a rainy day",
+              "focusPl": "odkładał na czarną godzinę"
+            },
+            {
+              "en": "I'm keeping half of my bonus to save for a rainy day.",
+              "pl": "Połowę premii zatrzymuję, żeby odłożyć na czarną godzinę.",
+              "focusEn": "save for a rainy day",
+              "focusPl": "odłożyć na czarną godzinę"
+            }
+          ],
+          "acceptedAnswers": [
+            "save for a rainy day",
+            "save it for a rainy day"
+          ],
+          "acceptedTranslations": [
+            "odkładać na czarną godzinę",
+            "odłożyć na czarną godzinę",
+            "oszczędzać na czarną godzinę"
+          ]
+        },
+        {
+          "id": "personal-finance.high-yield-savings-account",
+          "term": "high-yield savings account",
+          "ipa": "",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wysoko oprocentowane konto oszczędnościowe",
+          "definition": "A savings account that pays more interest than a regular one.",
+          "register": "specjalistyczny",
+          "contextPl": "Pomnażanie oszczędności",
+          "natural": "",
+          "forms": "high-yield savings accounts",
+          "collocations": "open a high-yield savings account",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I moved my trip money into a high-yield savings account.",
+              "pl": "Przeniosłem pieniądze na wyjazd na wysoko oprocentowane konto oszczędnościowe.",
+              "focusEn": "high-yield savings account",
+              "focusPl": "wysoko oprocentowane konto oszczędnościowe"
+            },
+            {
+              "en": "A high-yield savings account earns way more than my regular one.",
+              "pl": "Wysoko oprocentowane konto oszczędnościowe przynosi o wiele więcej niż moje zwykłe.",
+              "focusEn": "high-yield savings account",
+              "focusPl": "Wysoko oprocentowane konto oszczędnościowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "high-yield savings account",
+            "high yield savings account"
+          ],
+          "acceptedTranslations": [
+            "wysoko oprocentowane konto oszczędnościowe",
+            "konto oszczędnościowe z wysokim oprocentowaniem",
+            "lokata"
+          ]
+        },
+        {
+          "id": "personal-finance.frugal",
+          "term": "frugal",
+          "ipa": "/ˈfruːɡəl/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "oszczędny",
+          "definition": "Careful to spend only as much money as necessary.",
+          "register": "neutralny",
+          "contextPl": "Oszczędny styl życia",
+          "natural": "thrifty",
+          "forms": "more frugal",
+          "collocations": "a frugal lifestyle; live a frugal life",
+          "synonyms": "thrifty; careful with money",
+          "antonyms": "wasteful",
+          "notePl": "Brzmi pozytywnie, w przeciwieństwie do „cheap” = skąpy.",
+          "examples": [
+            {
+              "en": "My friend is so frugal that she makes her own coffee every day.",
+              "pl": "Moja przyjaciółka jest tak oszczędna, że codziennie robi sobie kawę w domu.",
+              "focusEn": "frugal",
+              "focusPl": "oszczędna"
+            },
+            {
+              "en": "A few frugal months will pay for the whole trip.",
+              "pl": "Kilka oszczędnych miesięcy pokryje koszt całego wyjazdu.",
+              "focusEn": "frugal",
+              "focusPl": "oszczędnych"
+            }
+          ],
+          "acceptedAnswers": [
+            "frugal",
+            "thrifty"
+          ],
+          "acceptedTranslations": [
+            "oszczędny",
+            "gospodarny"
+          ]
+        },
+        {
+          "id": "personal-finance.nest-egg",
+          "term": "nest egg",
+          "ipa": "/ˈnɛst ˌɛɡ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "oszczędności na przyszłość",
+          "definition": "Money saved over a long time for the future.",
+          "register": "neutralny",
+          "contextPl": "Długoterminowe oszczędności",
+          "natural": "",
+          "forms": "nest eggs",
+          "collocations": "build a nest egg; a nice nest egg",
+          "synonyms": "savings",
+          "antonyms": "",
+          "notePl": "Dosłownie „jajko w gnieździe”.",
+          "examples": [
+            {
+              "en": "She has a nice nest egg from years of careful saving.",
+              "pl": "Ma niezłe oszczędności uzbierane przez lata ostrożnego odkładania.",
+              "focusEn": "nest egg",
+              "focusPl": "oszczędności"
+            },
+            {
+              "en": "Don't spend your whole nest egg on one vacation.",
+              "pl": "Nie wydawaj wszystkich odłożonych pieniędzy na jeden urlop.",
+              "focusEn": "nest egg",
+              "focusPl": "odłożonych pieniędzy"
+            }
+          ],
+          "acceptedAnswers": [
+            "nest egg"
+          ],
+          "acceptedTranslations": [
+            "oszczędności na przyszłość",
+            "oszczędności",
+            "odłożone pieniądze"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "personal-finance.debt",
+      "namePl": "Długi",
+      "scenePl": "Przy kolacji przyjaciel zwierza ci się, że nie radzi sobie z długami",
+      "entries": [
+        {
+          "id": "personal-finance.lend",
+          "term": "lend",
+          "ipa": "/lɛnd/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pożyczyć komuś",
+          "definition": "To give someone money that they will pay back later.",
+          "register": "neutralny",
+          "contextPl": "Pożyczanie pieniędzy innym",
+          "natural": "loan",
+          "forms": "lend – lent – lent",
+          "collocations": "lend someone money; lend me twenty dollars",
+          "synonyms": "loan",
+          "antonyms": "borrow",
+          "notePl": "Nie myl z „borrow” – pożyczyć od kogoś.",
+          "examples": [
+            {
+              "en": "He asked me to lend him two hundred dollars for rent.",
+              "pl": "Poprosił, żebym pożyczył mu dwieście dolarów na czynsz.",
+              "focusEn": "lend",
+              "focusPl": "pożyczył"
+            },
+            {
+              "en": "I already lent him money twice this year.",
+              "pl": "W tym roku już dwa razy pożyczyłem mu pieniądze.",
+              "focusEn": "lent",
+              "focusPl": "pożyczyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "lend",
+            "loan"
+          ],
+          "acceptedTranslations": [
+            "pożyczyć komuś",
+            "pożyczać komuś",
+            "pożyczyć",
+            "pożyczać"
+          ]
+        },
+        {
+          "id": "personal-finance.debt",
+          "term": "debt",
+          "ipa": "/dɛt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "dług",
+          "definition": "Money that you owe to someone.",
+          "register": "neutralny",
+          "contextPl": "Zadłużenie",
+          "natural": "",
+          "forms": "debts",
+          "collocations": "pay off debt; get into debt; a lot of debt",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Litera „b” jest niema.",
+          "examples": [
+            {
+              "en": "He has almost ten thousand dollars of debt on two cards.",
+              "pl": "Ma prawie dziesięć tysięcy dolarów długu na dwóch kartach.",
+              "focusEn": "debt",
+              "focusPl": "długu"
+            },
+            {
+              "en": "The debt keeps growing because he only pays a little each month.",
+              "pl": "Dług ciągle rośnie, bo co miesiąc spłaca tylko trochę.",
+              "focusEn": "debt",
+              "focusPl": "Dług"
+            }
+          ],
+          "acceptedAnswers": [
+            "debt"
+          ],
+          "acceptedTranslations": [
+            "dług",
+            "długi",
+            "zadłużenie"
+          ]
+        },
+        {
+          "id": "personal-finance.owe",
+          "term": "owe",
+          "ipa": "/oʊ/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "być winnym",
+          "definition": "To have to pay money back to someone.",
+          "register": "neutralny",
+          "contextPl": "Zobowiązania wobec innych",
+          "natural": "",
+          "forms": "owed; owing",
+          "collocations": "owe money; owe someone fifty dollars; how much do I owe you",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Konstrukcja: „owe someone something”.",
+          "examples": [
+            {
+              "en": "He still owes his brother five hundred dollars from last year.",
+              "pl": "Wciąż jest winny bratu pięćset dolarów z zeszłego roku.",
+              "focusEn": "owes",
+              "focusPl": "jest winny"
+            },
+            {
+              "en": "How much do you owe on your credit cards right now?",
+              "pl": "Ile teraz masz do spłacenia na kartach kredytowych?",
+              "focusEn": "owe",
+              "focusPl": "masz do spłacenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "owe"
+          ],
+          "acceptedTranslations": [
+            "być winnym",
+            "być dłużnym",
+            "wisieć komuś"
+          ]
+        },
+        {
+          "id": "personal-finance.broke",
+          "term": "broke",
+          "ipa": "/broʊk/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "spłukany",
+          "definition": "Having no money.",
+          "register": "potoczny",
+          "contextPl": "Brak pieniędzy",
+          "natural": "",
+          "forms": "",
+          "collocations": "totally broke; flat broke; go broke",
+          "synonyms": "",
+          "antonyms": "rich",
+          "notePl": "Potoczne; formalne „bankrupt” znaczy co innego.",
+          "examples": [
+            {
+              "en": "He told me he's completely broke until his next paycheck.",
+              "pl": "Powiedział mi, że do następnej wypłaty jest zupełnie spłukany.",
+              "focusEn": "broke",
+              "focusPl": "spłukany"
+            },
+            {
+              "en": "He's always broke because he spends everything on his car.",
+              "pl": "Ciągle jest spłukany, bo wszystko wydaje na samochód.",
+              "focusEn": "broke",
+              "focusPl": "spłukany"
+            }
+          ],
+          "acceptedAnswers": [
+            "broke"
+          ],
+          "acceptedTranslations": [
+            "spłukany",
+            "bez grosza",
+            "goły"
+          ]
+        },
+        {
+          "id": "personal-finance.pay-off",
+          "term": "pay off",
+          "ipa": "/ˌpeɪ ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "spłacić",
+          "definition": "To pay all the money that you owe.",
+          "register": "neutralny",
+          "contextPl": "Pozbywanie się długu",
+          "natural": "",
+          "forms": "paid off; paying off",
+          "collocations": "pay off a loan; pay off your credit card; pay it off",
+          "synonyms": "clear",
+          "antonyms": "",
+          "notePl": "„Pay off” znaczy też „opłacić się”.",
+          "examples": [
+            {
+              "en": "He wants to pay off the smaller card first.",
+              "pl": "Chce najpierw spłacić mniejszą kartę.",
+              "focusEn": "pay off",
+              "focusPl": "spłacić"
+            },
+            {
+              "en": "It'll take him two years to pay off everything.",
+              "pl": "Zajmie mu dwa lata, żeby spłacić wszystko.",
+              "focusEn": "pay off",
+              "focusPl": "spłacić"
+            }
+          ],
+          "acceptedAnswers": [
+            "pay off",
+            "clear"
+          ],
+          "acceptedTranslations": [
+            "spłacić",
+            "spłacać",
+            "spłacić całość"
+          ]
+        },
+        {
+          "id": "personal-finance.in-debt",
+          "term": "in debt",
+          "ipa": "/ɪn ˈdɛt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zadłużony",
+          "definition": "Owing money to someone.",
+          "register": "neutralny",
+          "contextPl": "Sytuacja zadłużenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "deep in debt; get into debt; be in debt",
+          "synonyms": "",
+          "antonyms": "debt-free",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He didn't tell anyone he was so deep in debt.",
+              "pl": "Nikomu nie powiedział, że jest tak głęboko w długach.",
+              "focusEn": "in debt",
+              "focusPl": "w długach"
+            },
+            {
+              "en": "He said being in debt keeps him awake at night.",
+              "pl": "Powiedział, że przez to, że jest zadłużony, nie śpi po nocach.",
+              "focusEn": "in debt",
+              "focusPl": "zadłużony"
+            }
+          ],
+          "acceptedAnswers": [
+            "in debt"
+          ],
+          "acceptedTranslations": [
+            "zadłużony",
+            "w długach",
+            "mieć długi"
+          ]
+        },
+        {
+          "id": "personal-finance.student-loans",
+          "term": "student loans",
+          "ipa": "/ˈstuːdənt ˌloʊnz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kredyt studencki",
+          "definition": "Money borrowed to pay for college that you pay back after you finish.",
+          "register": "neutralny",
+          "contextPl": "Długi z czasów studiów",
+          "natural": "",
+          "forms": "",
+          "collocations": "pay off student loans; take out student loans",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA bardzo powszechny i często wysoki dług.",
+          "examples": [
+            {
+              "en": "He's still paying off his student loans ten years after college.",
+              "pl": "Dziesięć lat po studiach wciąż spłaca kredyt studencki.",
+              "focusEn": "student loans",
+              "focusPl": "kredyt studencki"
+            },
+            {
+              "en": "His student loans take a huge part of every paycheck.",
+              "pl": "Jego kredyt studencki pochłania ogromną część każdej wypłaty.",
+              "focusEn": "student loans",
+              "focusPl": "kredyt studencki"
+            }
+          ],
+          "acceptedAnswers": [
+            "student loans",
+            "student loan"
+          ],
+          "acceptedTranslations": [
+            "kredyt studencki",
+            "pożyczka studencka",
+            "kredyt na studia"
+          ]
+        },
+        {
+          "id": "personal-finance.credit-card-debt",
+          "term": "credit card debt",
+          "ipa": "/ˈkrɛdɪt ˌkɑːrd ˌdɛt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dług na karcie kredytowej",
+          "definition": "Money you owe because you spent more on a credit card than you paid back.",
+          "register": "neutralny",
+          "contextPl": "Zadłużenie na kartach",
+          "natural": "",
+          "forms": "",
+          "collocations": "pay down credit card debt; high credit card debt",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Oprocentowanie bywa bardzo wysokie.",
+          "examples": [
+            {
+              "en": "Most of his credit card debt is from last year's vacation.",
+              "pl": "Większość jego długu na karcie kredytowej pochodzi z zeszłorocznych wakacji.",
+              "focusEn": "credit card debt",
+              "focusPl": "długu na karcie kredytowej"
+            },
+            {
+              "en": "The interest on his credit card debt is what's really hurting him.",
+              "pl": "Tym, co go naprawdę dobija, są odsetki od długu na karcie.",
+              "focusEn": "credit card debt",
+              "focusPl": "długu na karcie"
+            }
+          ],
+          "acceptedAnswers": [
+            "credit card debt"
+          ],
+          "acceptedTranslations": [
+            "dług na karcie kredytowej",
+            "zadłużenie na karcie",
+            "dług na karcie"
+          ]
+        },
+        {
+          "id": "personal-finance.max-out",
+          "term": "max out",
+          "ipa": "/ˌmæks ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wyczerpać limit",
+          "definition": "To use all the credit available on a card.",
+          "register": "potoczny",
+          "contextPl": "Przekroczenie możliwości finansowych",
+          "natural": "",
+          "forms": "maxed out; maxing out",
+          "collocations": "max out a credit card; my card is maxed out",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He maxed out two credit cards in six months.",
+              "pl": "W pół roku wyczerpał limit na dwóch kartach kredytowych.",
+              "focusEn": "maxed out",
+              "focusPl": "wyczerpał limit"
+            },
+            {
+              "en": "Try not to max out the new card while you pay off the old ones.",
+              "pl": "Staraj się nie wyczerpać limitu na nowej karcie, kiedy spłacasz stare.",
+              "focusEn": "max out",
+              "focusPl": "wyczerpać limitu"
+            }
+          ],
+          "acceptedAnswers": [
+            "max out"
+          ],
+          "acceptedTranslations": [
+            "wyczerpać limit",
+            "wykorzystać cały limit",
+            "wyczerpywać limit"
+          ]
+        },
+        {
+          "id": "personal-finance.minimum-payment",
+          "term": "minimum payment",
+          "ipa": "/ˈmɪnəməm ˌpeɪmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "minimalna spłata",
+          "definition": "The smallest amount you must pay on a credit card each month.",
+          "register": "specjalistyczny",
+          "contextPl": "Spłata kart kredytowych",
+          "natural": "",
+          "forms": "minimum payments",
+          "collocations": "make the minimum payment; only pay the minimum",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Płacąc tylko minimum, spłaca się głównie odsetki.",
+          "examples": [
+            {
+              "en": "He only makes the minimum payment, so the debt barely goes down.",
+              "pl": "Płaci tylko minimalną spłatę, więc dług prawie nie maleje.",
+              "focusEn": "minimum payment",
+              "focusPl": "minimalną spłatę"
+            },
+            {
+              "en": "His minimum payment went up to two hundred dollars this month.",
+              "pl": "Jego minimalna spłata wzrosła w tym miesiącu do dwustu dolarów.",
+              "focusEn": "minimum payment",
+              "focusPl": "minimalna spłata"
+            }
+          ],
+          "acceptedAnswers": [
+            "minimum payment",
+            "the minimum"
+          ],
+          "acceptedTranslations": [
+            "minimalna spłata",
+            "minimalna rata",
+            "spłata minimalna"
+          ]
+        },
+        {
+          "id": "personal-finance.late-fee",
+          "term": "late fee",
+          "ipa": "/ˈleɪt ˌfiː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "opłata za zwłokę",
+          "definition": "Money you must pay as a penalty for paying a bill late.",
+          "register": "neutralny",
+          "contextPl": "Kary za spóźnione płatności",
+          "natural": "",
+          "forms": "late fees",
+          "collocations": "charge a late fee; avoid late fees",
+          "synonyms": "penalty",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He paid forty dollars in late fees because he forgot the due date.",
+              "pl": "Zapłacił czterdzieści dolarów opłat za zwłokę, bo zapomniał o terminie.",
+              "focusEn": "late fees",
+              "focusPl": "opłat za zwłokę"
+            },
+            {
+              "en": "Set up autopay so you never get a late fee again.",
+              "pl": "Ustaw płatność automatyczną, żeby już nigdy nie dostać opłaty za zwłokę.",
+              "focusEn": "late fee",
+              "focusPl": "opłaty za zwłokę"
+            }
+          ],
+          "acceptedAnswers": [
+            "late fee",
+            "late charge",
+            "penalty"
+          ],
+          "acceptedTranslations": [
+            "opłata za zwłokę",
+            "opłata za opóźnienie",
+            "kara za spóźnienie"
+          ]
+        },
+        {
+          "id": "personal-finance.behind-on",
+          "term": "behind on",
+          "ipa": "/bɪˈhaɪnd ɑːn/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zalegać z",
+          "definition": "Late in paying money that you owe regularly.",
+          "register": "neutralny",
+          "contextPl": "Zaległości w płatnościach",
+          "natural": "",
+          "forms": "",
+          "collocations": "behind on rent; behind on payments; fall behind on",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Częste: „fall behind on payments” = popaść w zaległości.",
+          "examples": [
+            {
+              "en": "He's two months behind on his car payments.",
+              "pl": "Zalega dwa miesiące z ratami za samochód.",
+              "focusEn": "behind on",
+              "focusPl": "Zalega"
+            },
+            {
+              "en": "If you fall behind on rent, talk to your landlord right away.",
+              "pl": "Jeśli zaczniesz zalegać z czynszem, od razu porozmawiaj z właścicielem.",
+              "focusEn": "behind on",
+              "focusPl": "zalegać z"
+            }
+          ],
+          "acceptedAnswers": [
+            "behind on",
+            "fall behind on"
+          ],
+          "acceptedTranslations": [
+            "zalegać z",
+            "mieć zaległości",
+            "zalegać z płatnościami"
+          ]
+        },
+        {
+          "id": "personal-finance.debt-collector",
+          "term": "debt collector",
+          "ipa": "/ˈdɛt kəˌlɛktər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "windykator",
+          "definition": "A person or company that tries to get back money people owe.",
+          "register": "neutralny",
+          "contextPl": "Windykacja długów",
+          "natural": "",
+          "forms": "debt collectors",
+          "collocations": "calls from debt collectors; send to a debt collector",
+          "synonyms": "collection agency",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A debt collector started calling him at work.",
+              "pl": "Windykator zaczął dzwonić do niego do pracy.",
+              "focusEn": "debt collector",
+              "focusPl": "Windykator"
+            },
+            {
+              "en": "He's scared the bank will send his account to a debt collector.",
+              "pl": "Boi się, że bank przekaże jego sprawę firmie windykacyjnej.",
+              "focusEn": "debt collector",
+              "focusPl": "firmie windykacyjnej"
+            }
+          ],
+          "acceptedAnswers": [
+            "debt collector",
+            "collection agency"
+          ],
+          "acceptedTranslations": [
+            "windykator",
+            "firma windykacyjna"
+          ]
+        },
+        {
+          "id": "personal-finance.go-bankrupt",
+          "term": "go bankrupt",
+          "ipa": "/ˌɡoʊ ˈbæŋkrʌpt/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zbankrutować",
+          "definition": "To officially be unable to pay your debts.",
+          "register": "formalny",
+          "contextPl": "Ostateczne konsekwencje długów",
+          "natural": "",
+          "forms": "went bankrupt; gone bankrupt",
+          "collocations": "declare bankruptcy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „bankruptcy” = upadłość.",
+          "examples": [
+            {
+              "en": "He's afraid he'll go bankrupt if he loses his job.",
+              "pl": "Boi się, że zbankrutuje, jeśli straci pracę.",
+              "focusEn": "go bankrupt",
+              "focusPl": "zbankrutuje"
+            },
+            {
+              "en": "His uncle went bankrupt years ago, so he knows how bad it can get.",
+              "pl": "Jego wujek lata temu zbankrutował, więc wie, jak źle może być.",
+              "focusEn": "went bankrupt",
+              "focusPl": "zbankrutował"
+            }
+          ],
+          "acceptedAnswers": [
+            "go bankrupt",
+            "declare bankruptcy"
+          ],
+          "acceptedTranslations": [
+            "zbankrutować",
+            "ogłosić upadłość",
+            "bankrutować"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "personal-finance.investing-future",
+      "namePl": "Inwestowanie i przyszłość",
+      "scenePl": "Spotkanie z doradcą finansowym w sprawie oszczędzania na emeryturę",
+      "entries": [
+        {
+          "id": "personal-finance.invest",
+          "term": "invest",
+          "ipa": "/ɪnˈvɛst/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "inwestować",
+          "definition": "To put money into something, such as stocks, hoping to make more money.",
+          "register": "neutralny",
+          "contextPl": "Pomnażanie pieniędzy",
+          "natural": "",
+          "forms": "invested; investing",
+          "collocations": "invest money; invest in stocks; invest for the future",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Konstrukcja: „invest in something”.",
+          "examples": [
+            {
+              "en": "The advisor said I should start to invest while I'm young.",
+              "pl": "Doradca powiedział, że powinienem zacząć inwestować, póki jestem młody.",
+              "focusEn": "invest",
+              "focusPl": "inwestować"
+            },
+            {
+              "en": "Last year I invested a small amount just to learn how it works.",
+              "pl": "W zeszłym roku zainwestowałem niewielką kwotę, żeby nauczyć się, jak to działa.",
+              "focusEn": "invested",
+              "focusPl": "zainwestowałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "invest"
+          ],
+          "acceptedTranslations": [
+            "inwestować",
+            "zainwestować",
+            "lokować pieniądze"
+          ]
+        },
+        {
+          "id": "personal-finance.investment",
+          "term": "investment",
+          "ipa": "/ɪnˈvɛstmənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "inwestycja",
+          "definition": "Money put into something to get more money back later.",
+          "register": "neutralny",
+          "contextPl": "Lokowanie kapitału",
+          "natural": "",
+          "forms": "investments",
+          "collocations": "a good investment; a safe investment; make an investment",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is this a safe investment for someone my age?",
+              "pl": "Czy to bezpieczna inwestycja dla kogoś w moim wieku?",
+              "focusEn": "investment",
+              "focusPl": "inwestycja"
+            },
+            {
+              "en": "The advisor showed me how my investments grew over five years.",
+              "pl": "Doradca pokazał mi, jak moje inwestycje urosły przez pięć lat.",
+              "focusEn": "investments",
+              "focusPl": "inwestycje"
+            }
+          ],
+          "acceptedAnswers": [
+            "investment"
+          ],
+          "acceptedTranslations": [
+            "inwestycja",
+            "lokata kapitału"
+          ]
+        },
+        {
+          "id": "personal-finance.retirement",
+          "term": "retirement",
+          "ipa": "/rɪˈtaɪərmənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "emerytura",
+          "definition": "The time in your life when you stop working, usually because of age.",
+          "register": "neutralny",
+          "contextPl": "Życie po zakończeniu pracy",
+          "natural": "",
+          "forms": "",
+          "collocations": "save for retirement; early retirement; retirement plan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Retirement” to okres życia; samo świadczenie to „pension” lub „Social Security”.",
+          "examples": [
+            {
+              "en": "I want to start saving for retirement now, not at fifty.",
+              "pl": "Chcę zacząć oszczędzać na emeryturę teraz, a nie po pięćdziesiątce.",
+              "focusEn": "retirement",
+              "focusPl": "emeryturę"
+            },
+            {
+              "en": "The advisor asked when I'm planning my retirement.",
+              "pl": "Doradca zapytał, kiedy planuję przejść na emeryturę.",
+              "focusEn": "retirement",
+              "focusPl": "emeryturę"
+            }
+          ],
+          "acceptedAnswers": [
+            "retirement"
+          ],
+          "acceptedTranslations": [
+            "emerytura",
+            "przejście na emeryturę"
+          ]
+        },
+        {
+          "id": "personal-finance.the-stock-market",
+          "term": "the stock market",
+          "ipa": "/ðə ˈstɑːk ˌmɑːrkɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "giełda",
+          "definition": "The system where people buy and sell shares in companies.",
+          "register": "neutralny",
+          "contextPl": "Inwestowanie w akcje",
+          "natural": "the market",
+          "forms": "",
+          "collocations": "invest in the stock market; the stock market crashed",
+          "synonyms": "the market",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm nervous about putting my money in the stock market.",
+              "pl": "Denerwuję się na myśl o inwestowaniu pieniędzy na giełdzie.",
+              "focusEn": "the stock market",
+              "focusPl": "giełdzie"
+            },
+            {
+              "en": "The advisor said the stock market goes up and down, but grows over time.",
+              "pl": "Doradca powiedział, że giełda ma wzloty i upadki, ale z czasem rośnie.",
+              "focusEn": "the stock market",
+              "focusPl": "giełda"
+            }
+          ],
+          "acceptedAnswers": [
+            "the stock market",
+            "stock market",
+            "the market"
+          ],
+          "acceptedTranslations": [
+            "giełda",
+            "rynek akcji",
+            "giełda papierów wartościowych"
+          ]
+        },
+        {
+          "id": "personal-finance.risk",
+          "term": "risk",
+          "ipa": "/rɪsk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ryzyko",
+          "definition": "The chance that something bad will happen, such as losing money.",
+          "register": "neutralny",
+          "contextPl": "Ocena ryzyka inwestycji",
+          "natural": "",
+          "forms": "risks",
+          "collocations": "take a risk; high risk; low risk",
+          "synonyms": "danger",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How much risk are you comfortable with, sir?",
+              "pl": "Jakie ryzyko jest dla pana akceptowalne?",
+              "focusEn": "risk",
+              "focusPl": "ryzyko"
+            },
+            {
+              "en": "Higher returns usually come with more risk.",
+              "pl": "Wyższe zyski zwykle wiążą się z większym ryzykiem.",
+              "focusEn": "risk",
+              "focusPl": "ryzykiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "risk"
+          ],
+          "acceptedTranslations": [
+            "ryzyko",
+            "niebezpieczeństwo"
+          ]
+        },
+        {
+          "id": "personal-finance.financial-advisor",
+          "term": "financial advisor",
+          "ipa": "/faɪˌnænʃəl ədˈvaɪzər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "doradca finansowy",
+          "definition": "A professional who helps people plan how to save and invest money.",
+          "register": "neutralny",
+          "contextPl": "Profesjonalna pomoc finansowa",
+          "natural": "",
+          "forms": "financial advisors",
+          "collocations": "talk to a financial advisor; see a financial advisor",
+          "synonyms": "financial planner",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My financial advisor explained everything without using difficult words.",
+              "pl": "Mój doradca finansowy wyjaśnił wszystko bez trudnych słów.",
+              "focusEn": "financial advisor",
+              "focusPl": "doradca finansowy"
+            },
+            {
+              "en": "The financial advisor charges a small fee for each meeting.",
+              "pl": "Doradca finansowy pobiera niewielką opłatę za każde spotkanie.",
+              "focusEn": "financial advisor",
+              "focusPl": "Doradca finansowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "financial advisor",
+            "financial adviser",
+            "financial planner"
+          ],
+          "acceptedTranslations": [
+            "doradca finansowy",
+            "doradczyni finansowa"
+          ]
+        },
+        {
+          "id": "personal-finance.long-term",
+          "term": "long-term",
+          "ipa": "/ˌlɔːŋ ˈtɝːm/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "długoterminowy",
+          "definition": "Continuing for a long time into the future.",
+          "register": "neutralny",
+          "contextPl": "Planowanie na lata",
+          "natural": "",
+          "forms": "",
+          "collocations": "long-term goals; long-term investment; in the long term",
+          "synonyms": "",
+          "antonyms": "short-term",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This is a long-term plan, so don't panic when prices drop.",
+              "pl": "To plan długoterminowy, więc nie panikuj, kiedy ceny spadają.",
+              "focusEn": "long-term",
+              "focusPl": "długoterminowy"
+            },
+            {
+              "en": "My long-term goal is to buy a house by forty.",
+              "pl": "Moim długoterminowym celem jest kupić dom przed czterdziestką.",
+              "focusEn": "long-term",
+              "focusPl": "długoterminowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "long-term",
+            "long term"
+          ],
+          "acceptedTranslations": [
+            "długoterminowy",
+            "długofalowy"
+          ]
+        },
+        {
+          "id": "personal-finance.inflation",
+          "term": "inflation",
+          "ipa": "/ɪnˈfleɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "inflacja",
+          "definition": "A general rise in prices that makes money worth less over time.",
+          "register": "neutralny",
+          "contextPl": "Utrata wartości pieniądza",
+          "natural": "",
+          "forms": "",
+          "collocations": "high inflation; keep up with inflation; the inflation rate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Money in a regular account loses value because of inflation.",
+              "pl": "Pieniądze na zwykłym koncie tracą na wartości przez inflację.",
+              "focusEn": "inflation",
+              "focusPl": "inflację"
+            },
+            {
+              "en": "The advisor wants my savings to grow faster than inflation.",
+              "pl": "Doradca chce, żeby moje oszczędności rosły szybciej niż inflacja.",
+              "focusEn": "inflation",
+              "focusPl": "inflacja"
+            }
+          ],
+          "acceptedAnswers": [
+            "inflation"
+          ],
+          "acceptedTranslations": [
+            "inflacja"
+          ]
+        },
+        {
+          "id": "personal-finance.compound-interest",
+          "term": "compound interest",
+          "ipa": "/ˌkɑːmpaʊnd ˈɪntrəst/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "procent składany",
+          "definition": "Interest that you earn on both your money and the interest it has already earned.",
+          "register": "specjalistyczny",
+          "contextPl": "Efekt pomnażania oszczędności",
+          "natural": "",
+          "forms": "",
+          "collocations": "the power of compound interest; earn compound interest",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The advisor showed me a chart of how compound interest works over thirty years.",
+              "pl": "Doradca pokazał mi wykres, jak działa procent składany przez trzydzieści lat.",
+              "focusEn": "compound interest",
+              "focusPl": "procent składany"
+            },
+            {
+              "en": "Thanks to compound interest, starting early makes a huge difference.",
+              "pl": "Dzięki procentowi składanemu wczesny start robi ogromną różnicę.",
+              "focusEn": "compound interest",
+              "focusPl": "procentowi składanemu"
+            }
+          ],
+          "acceptedAnswers": [
+            "compound interest"
+          ],
+          "acceptedTranslations": [
+            "procent składany",
+            "odsetki składane"
+          ]
+        },
+        {
+          "id": "personal-finance.diversify",
+          "term": "diversify",
+          "ipa": "/dəˈvɝːsəfaɪ/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dywersyfikować",
+          "definition": "To spread your money across different investments to lower risk.",
+          "register": "specjalistyczny",
+          "contextPl": "Rozkładanie ryzyka",
+          "natural": "",
+          "forms": "diversified; diversifying",
+          "collocations": "diversify your investments; a diversified portfolio",
+          "synonyms": "spread out",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You should diversify instead of putting everything into one company.",
+              "pl": "Powinien pan dywersyfikować, zamiast wkładać wszystko w jedną firmę.",
+              "focusEn": "diversify",
+              "focusPl": "dywersyfikować"
+            },
+            {
+              "en": "We diversified my savings into three different funds.",
+              "pl": "Zdywersyfikowaliśmy moje oszczędności, dzieląc je na trzy różne fundusze.",
+              "focusEn": "diversified",
+              "focusPl": "Zdywersyfikowaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "diversify",
+            "spread out"
+          ],
+          "acceptedTranslations": [
+            "dywersyfikować",
+            "zdywersyfikować",
+            "rozłożyć ryzyko"
+          ]
+        },
+        {
+          "id": "personal-finance.portfolio",
+          "term": "portfolio",
+          "ipa": "/pɔːrtˈfoʊlioʊ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "portfel inwestycyjny",
+          "definition": "All the investments that one person or company owns.",
+          "register": "specjalistyczny",
+          "contextPl": "Zestaw inwestycji",
+          "natural": "",
+          "forms": "portfolios",
+          "collocations": "an investment portfolio; diversify your portfolio",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Right now my portfolio is mostly safe funds.",
+              "pl": "Mój portfel inwestycyjny to teraz głównie bezpieczne fundusze.",
+              "focusEn": "portfolio",
+              "focusPl": "portfel inwestycyjny"
+            },
+            {
+              "en": "We'll review your portfolio together once a year.",
+              "pl": "Raz w roku wspólnie przejrzymy pana portfel inwestycyjny.",
+              "focusEn": "portfolio",
+              "focusPl": "portfel inwestycyjny"
+            }
+          ],
+          "acceptedAnswers": [
+            "portfolio",
+            "investment portfolio"
+          ],
+          "acceptedTranslations": [
+            "portfel inwestycyjny",
+            "portfel"
+          ]
+        },
+        {
+          "id": "personal-finance.net-worth",
+          "term": "net worth",
+          "ipa": "/ˌnɛt ˈwɝːθ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "majątek netto",
+          "definition": "The value of everything you own minus everything you owe.",
+          "register": "specjalistyczny",
+          "contextPl": "Ocena sytuacji majątkowej",
+          "natural": "",
+          "forms": "",
+          "collocations": "calculate your net worth; a high net worth",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The advisor helped me calculate my net worth for the first time.",
+              "pl": "Doradca pomógł mi po raz pierwszy obliczyć majątek netto.",
+              "focusEn": "net worth",
+              "focusPl": "majątek netto"
+            },
+            {
+              "en": "Because of my student loans, my net worth is still below zero.",
+              "pl": "Przez kredyt studencki mój majątek netto wciąż jest poniżej zera.",
+              "focusEn": "net worth",
+              "focusPl": "majątek netto"
+            }
+          ],
+          "acceptedAnswers": [
+            "net worth"
+          ],
+          "acceptedTranslations": [
+            "majątek netto",
+            "wartość netto majątku",
+            "wartość majątku"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "personal-finance.money-talk",
+      "namePl": "Pieniądze w potocznych zwrotach",
+      "scenePl": "Rodzinny obiad, przy którym rozmawiacie o cenach i pieniądzach",
+      "entries": [
+        {
+          "id": "personal-finance.rich",
+          "term": "rich",
+          "ipa": "/rɪtʃ/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "bogaty",
+          "definition": "Having a lot of money.",
+          "register": "neutralny",
+          "contextPl": "Zamożność",
+          "natural": "wealthy",
+          "forms": "richer; richest",
+          "collocations": "get rich; very rich",
+          "synonyms": "wealthy; well-off",
+          "antonyms": "poor",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Grandpa says nobody gets rich from a regular paycheck.",
+              "pl": "Dziadek mówi, że nikt nie staje się bogaty dzięki zwykłej pensji.",
+              "focusEn": "rich",
+              "focusPl": "bogaty"
+            },
+            {
+              "en": "My cousin thinks we're rich because we bought a new car.",
+              "pl": "Mój kuzyn myśli, że jesteśmy bogaci, bo kupiliśmy nowy samochód.",
+              "focusEn": "rich",
+              "focusPl": "bogaci"
+            }
+          ],
+          "acceptedAnswers": [
+            "rich",
+            "wealthy"
+          ],
+          "acceptedTranslations": [
+            "bogaty",
+            "zamożny"
+          ]
+        },
+        {
+          "id": "personal-finance.waste-of-money",
+          "term": "waste of money",
+          "ipa": "/ˌweɪst əv ˈmʌni/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "strata pieniędzy",
+          "definition": "Something that is not worth what you paid for it.",
+          "register": "neutralny",
+          "contextPl": "Ocena nietrafionych zakupów",
+          "natural": "",
+          "forms": "",
+          "collocations": "a complete waste of money; a total waste of money",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Mom thinks my new phone was a total waste of money.",
+              "pl": "Mama uważa, że mój nowy telefon to była kompletna strata pieniędzy.",
+              "focusEn": "waste of money",
+              "focusPl": "strata pieniędzy"
+            },
+            {
+              "en": "Paying for a gym you never use is a waste of money.",
+              "pl": "Płacenie za siłownię, na którą nie chodzisz, to wyrzucanie pieniędzy.",
+              "focusEn": "waste of money",
+              "focusPl": "wyrzucanie pieniędzy"
+            }
+          ],
+          "acceptedAnswers": [
+            "waste of money"
+          ],
+          "acceptedTranslations": [
+            "strata pieniędzy",
+            "wyrzucanie pieniędzy",
+            "wyrzucone pieniądze"
+          ]
+        },
+        {
+          "id": "personal-finance.on-a-budget",
+          "term": "on a budget",
+          "ipa": "/ˌɑːn ə ˈbʌdʒɪt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "z ograniczonym budżetem",
+          "definition": "Trying to spend only a small amount of money.",
+          "register": "neutralny",
+          "contextPl": "Ostrożne wydawanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "travel on a budget; eat on a budget; live on a budget",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're on a budget this year, so presents will be small.",
+              "pl": "W tym roku działamy z ograniczonym budżetem, więc prezenty będą skromne.",
+              "focusEn": "on a budget",
+              "focusPl": "z ograniczonym budżetem"
+            },
+            {
+              "en": "My sister showed us how to feed a family on a budget.",
+              "pl": "Siostra pokazała nam, jak wykarmić rodzinę tanim kosztem.",
+              "focusEn": "on a budget",
+              "focusPl": "tanim kosztem"
+            }
+          ],
+          "acceptedAnswers": [
+            "on a budget"
+          ],
+          "acceptedTranslations": [
+            "z ograniczonym budżetem",
+            "oszczędnie",
+            "tanim kosztem"
+          ]
+        },
+        {
+          "id": "personal-finance.money-doesnt-grow-on-trees",
+          "term": "money doesn't grow on trees",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pieniądze nie rosną na drzewach",
+          "definition": "Used to tell someone that money is limited and should not be wasted.",
+          "register": "potoczny",
+          "contextPl": "Uwagi rodziców o wydatkach",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Często mówią to rodzice do dzieci.",
+          "examples": [
+            {
+              "en": "When I asked for a new bike, Dad said money doesn't grow on trees.",
+              "pl": "Kiedy poprosiłem o nowy rower, tata powiedział, że pieniądze nie rosną na drzewach.",
+              "focusEn": "money doesn't grow on trees",
+              "focusPl": "pieniądze nie rosną na drzewach"
+            },
+            {
+              "en": "Turn off the lights, money doesn't grow on trees!",
+              "pl": "Zgaś światło, pieniądze nie rosną na drzewach!",
+              "focusEn": "money doesn't grow on trees",
+              "focusPl": "pieniądze nie rosną na drzewach"
+            }
+          ],
+          "acceptedAnswers": [
+            "money doesn't grow on trees",
+            "money does not grow on trees"
+          ],
+          "acceptedTranslations": [
+            "pieniądze nie rosną na drzewach",
+            "pieniądze nie spadają z nieba"
+          ]
+        },
+        {
+          "id": "personal-finance.cost-an-arm-and-a-leg",
+          "term": "cost an arm and a leg",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kosztować majątek",
+          "definition": "To be very expensive.",
+          "register": "potoczny",
+          "contextPl": "Bardzo wysokie ceny",
+          "natural": "",
+          "forms": "cost – cost – cost",
+          "collocations": "cost me an arm and a leg",
+          "synonyms": "be very expensive",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Fixing the roof cost an arm and a leg last year.",
+              "pl": "Naprawa dachu w zeszłym roku kosztowała majątek.",
+              "focusEn": "cost an arm and a leg",
+              "focusPl": "kosztowała majątek"
+            },
+            {
+              "en": "Eating out with five kids costs an arm and a leg.",
+              "pl": "Jedzenie na mieście z piątką dzieci kosztuje majątek.",
+              "focusEn": "costs an arm and a leg",
+              "focusPl": "kosztuje majątek"
+            }
+          ],
+          "acceptedAnswers": [
+            "cost an arm and a leg",
+            "cost a fortune"
+          ],
+          "acceptedTranslations": [
+            "kosztować majątek",
+            "kosztować fortunę",
+            "kosztować krocie"
+          ]
+        },
+        {
+          "id": "personal-finance.break-the-bank",
+          "term": "break the bank",
+          "ipa": "/ˌbreɪk ðə ˈbæŋk/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zrujnować budżet",
+          "definition": "To cost more than you can afford.",
+          "register": "potoczny",
+          "contextPl": "Wydatki ponad stan",
+          "natural": "",
+          "forms": "broke; broken",
+          "collocations": "won't break the bank; doesn't break the bank",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zwykle w przeczeniu: „It won't break the bank”.",
+          "examples": [
+            {
+              "en": "A small birthday party won't break the bank.",
+              "pl": "Małe przyjęcie urodzinowe nie zrujnuje naszego budżetu.",
+              "focusEn": "break the bank",
+              "focusPl": "zrujnuje"
+            },
+            {
+              "en": "We found a vacation spot that doesn't break the bank.",
+              "pl": "Znaleźliśmy miejsce na wakacje, które nie nadwyręży budżetu.",
+              "focusEn": "break the bank",
+              "focusPl": "nadwyręży budżetu"
+            }
+          ],
+          "acceptedAnswers": [
+            "break the bank"
+          ],
+          "acceptedTranslations": [
+            "zrujnować budżet",
+            "zrujnować kogoś",
+            "nadwyrężyć budżet"
+          ]
+        },
+        {
+          "id": "personal-finance.worth-every-penny",
+          "term": "worth every penny",
+          "ipa": "/ˌwɝːθ ˌɛvri ˈpɛni/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wart każdych pieniędzy",
+          "definition": "So good that it was worth the price you paid.",
+          "register": "potoczny",
+          "contextPl": "Zadowolenie z zakupu",
+          "natural": "",
+          "forms": "",
+          "collocations": "totally worth every penny",
+          "synonyms": "worth it",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The new mattress was expensive, but it's worth every penny.",
+              "pl": "Nowy materac był drogi, ale jest wart każdych pieniędzy.",
+              "focusEn": "worth every penny",
+              "focusPl": "wart każdych pieniędzy"
+            },
+            {
+              "en": "Grandma said the cooking class was worth every penny.",
+              "pl": "Babcia powiedziała, że kurs gotowania był wart każdego grosza.",
+              "focusEn": "worth every penny",
+              "focusPl": "wart każdego grosza"
+            }
+          ],
+          "acceptedAnswers": [
+            "worth every penny",
+            "worth every cent"
+          ],
+          "acceptedTranslations": [
+            "wart każdych pieniędzy",
+            "wart każdego grosza",
+            "wart swojej ceny"
+          ]
+        },
+        {
+          "id": "personal-finance.loaded",
+          "term": "loaded",
+          "ipa": "/ˈloʊdɪd/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "nadziany",
+          "definition": "Very rich.",
+          "register": "slangowy",
+          "contextPl": "Potoczne mówienie o bogactwie",
+          "natural": "",
+          "forms": "",
+          "collocations": "totally loaded; his parents are loaded",
+          "synonyms": "rich; wealthy",
+          "antonyms": "broke",
+          "notePl": "Bardzo potoczne.",
+          "examples": [
+            {
+              "en": "My uncle acts like he's loaded, but he's always borrowing money.",
+              "pl": "Wujek zachowuje się, jakby był nadziany, ale ciągle pożycza pieniądze.",
+              "focusEn": "loaded",
+              "focusPl": "nadziany"
+            },
+            {
+              "en": "Apparently, her new boyfriend's parents are loaded.",
+              "pl": "Podobno rodzice jej nowego chłopaka są nadziani.",
+              "focusEn": "loaded",
+              "focusPl": "nadziani"
+            }
+          ],
+          "acceptedAnswers": [
+            "loaded"
+          ],
+          "acceptedTranslations": [
+            "nadziany",
+            "bogaty",
+            "obrzydliwie bogaty"
+          ]
+        },
+        {
+          "id": "personal-finance.penny-pincher",
+          "term": "penny-pincher",
+          "ipa": "/ˈpɛni ˌpɪntʃər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "sknera",
+          "definition": "A person who hates to spend money.",
+          "register": "potoczny",
+          "contextPl": "Skąpstwo",
+          "natural": "cheapskate",
+          "forms": "penny-pinchers",
+          "collocations": "a real penny-pincher",
+          "synonyms": "cheapskate",
+          "antonyms": "big spender",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Dad is such a penny-pincher that he reuses tea bags.",
+              "pl": "Tata jest takim sknerą, że używa torebek herbaty po kilka razy.",
+              "focusEn": "penny-pincher",
+              "focusPl": "sknerą"
+            },
+            {
+              "en": "Don't be a penny-pincher, it's your sister's birthday!",
+              "pl": "Nie bądź dusigroszem, to urodziny twojej siostry!",
+              "focusEn": "penny-pincher",
+              "focusPl": "dusigroszem"
+            }
+          ],
+          "acceptedAnswers": [
+            "penny-pincher",
+            "cheapskate",
+            "penny pincher"
+          ],
+          "acceptedTranslations": [
+            "sknera",
+            "dusigrosz",
+            "skąpiec",
+            "liczykrupa"
+          ]
+        }
+      ]
+    }
+  ]
+}

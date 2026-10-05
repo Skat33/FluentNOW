@@ -1,0 +1,1827 @@
+{
+  "schemaVersion": 1,
+  "id": "weather",
+  "namePl": "Pogoda",
+  "nameEn": "Weather",
+  "group": "daily",
+  "symbol": "cloud.sun",
+  "summaryPl": "Pogoda na co dzień, upał i mróz, deszcz i burze, prognoza pogody oraz pogawędki i idiomy o pogodzie.",
+  "aliases": [
+    "pogoda",
+    "prognoza",
+    "deszcz",
+    "śnieg",
+    "upał",
+    "mróz",
+    "burza",
+    "temperatura",
+    "weather",
+    "forecast"
+  ],
+  "categories": [
+    {
+      "id": "weather.everyday-weather",
+      "namePl": "Pogoda na co dzień",
+      "scenePl": "Poranek: sprawdzanie pogody w aplikacji przed wyjściem z domu",
+      "entries": [
+        {
+          "id": "weather.weather",
+          "term": "weather",
+          "ipa": "/ˈweðər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pogoda",
+          "definition": "The conditions outside, such as sun, rain, wind, and temperature.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o pogodę",
+          "natural": "",
+          "forms": "",
+          "collocations": "nice weather; bad weather; weather app",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik niepoliczalny: „nice weather” (nie „a nice weather”). Nie mylić z „whether” (czy).",
+          "examples": [
+            {
+              "en": "What's the weather like today? I don't know what to wear.",
+              "pl": "Jaka jest dziś pogoda? Nie wiem, co założyć.",
+              "focusEn": "weather",
+              "focusPl": "pogoda"
+            },
+            {
+              "en": "The weather app says it'll be nice all day.",
+              "pl": "Aplikacja pogodowa mówi, że cały dzień będzie ładnie.",
+              "focusEn": "weather app",
+              "focusPl": "Aplikacja pogodowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "weather"
+          ],
+          "acceptedTranslations": [
+            "pogoda"
+          ]
+        },
+        {
+          "id": "weather.rain",
+          "term": "rain",
+          "ipa": "/reɪn/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "padać (o deszczu)",
+          "definition": "When water falls from the clouds.",
+          "register": "neutralny",
+          "contextPl": "Opady",
+          "natural": "",
+          "forms": "rain – rained – rained",
+          "collocations": "it's raining; start to rain",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Podmiotem jest „it”: „It's raining” – pada.",
+          "examples": [
+            {
+              "en": "It's going to rain this afternoon, take an umbrella.",
+              "pl": "Po południu będzie padać, weź parasol.",
+              "focusEn": "rain",
+              "focusPl": "padać"
+            },
+            {
+              "en": "It rained all night, and the streets are still wet.",
+              "pl": "Całą noc padało i ulice wciąż są mokre.",
+              "focusEn": "rained",
+              "focusPl": "padało"
+            }
+          ],
+          "acceptedAnswers": [
+            "rain",
+            "raining",
+            "rained"
+          ],
+          "acceptedTranslations": [
+            "padać (o deszczu)",
+            "padać deszcz"
+          ]
+        },
+        {
+          "id": "weather.sunny",
+          "term": "sunny",
+          "ipa": "/ˈsʌni/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "słoneczny",
+          "definition": "With a lot of sunshine.",
+          "register": "neutralny",
+          "contextPl": "Ładna pogoda",
+          "natural": "",
+          "forms": "sunnier; sunniest",
+          "collocations": "sunny day; sunny and warm",
+          "synonyms": "",
+          "antonyms": "cloudy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's sunny now, but the app says clouds are coming.",
+              "pl": "Teraz jest słonecznie, ale aplikacja mówi, że nadciągają chmury.",
+              "focusEn": "sunny",
+              "focusPl": "słonecznie"
+            },
+            {
+              "en": "Grab your sunglasses, it's going to be sunny all morning.",
+              "pl": "Weź okulary przeciwsłoneczne, całe przedpołudnie będzie słonecznie.",
+              "focusEn": "sunny",
+              "focusPl": "słonecznie"
+            }
+          ],
+          "acceptedAnswers": [
+            "sunny"
+          ],
+          "acceptedTranslations": [
+            "słoneczny",
+            "słonecznie"
+          ]
+        },
+        {
+          "id": "weather.cold",
+          "term": "cold",
+          "ipa": "/koʊld/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "zimny",
+          "definition": "Having a low temperature.",
+          "register": "neutralny",
+          "contextPl": "Temperatura",
+          "natural": "",
+          "forms": "colder; coldest",
+          "collocations": "really cold; freezing cold",
+          "synonyms": "",
+          "antonyms": "hot",
+          "notePl": "Po polsku często przysłówek: „jest zimno” – „it's cold”.",
+          "examples": [
+            {
+              "en": "It's really cold this morning, wear your warm coat.",
+              "pl": "Dziś rano jest naprawdę zimno, załóż ciepły płaszcz.",
+              "focusEn": "cold",
+              "focusPl": "zimno"
+            },
+            {
+              "en": "My phone says it feels colder than it really is because of the wind.",
+              "pl": "Telefon pokazuje, że przez wiatr odczuwalnie jest zimniej, niż jest naprawdę.",
+              "focusEn": "colder",
+              "focusPl": "zimniej"
+            }
+          ],
+          "acceptedAnswers": [
+            "cold"
+          ],
+          "acceptedTranslations": [
+            "zimny",
+            "zimno"
+          ]
+        },
+        {
+          "id": "weather.hot",
+          "term": "hot",
+          "ipa": "/hɑːt/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "gorący",
+          "definition": "Having a high temperature.",
+          "register": "neutralny",
+          "contextPl": "Temperatura",
+          "natural": "",
+          "forms": "hotter; hottest",
+          "collocations": "really hot; too hot",
+          "synonyms": "",
+          "antonyms": "cold",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's going to be hot today, so dress light.",
+              "pl": "Dziś będzie gorąco, więc ubierz się lekko.",
+              "focusEn": "hot",
+              "focusPl": "gorąco"
+            },
+            {
+              "en": "It's too hot to walk to work, I'll take the bus.",
+              "pl": "Jest za gorąco, żeby iść do pracy pieszo, pojadę autobusem.",
+              "focusEn": "hot",
+              "focusPl": "gorąco"
+            }
+          ],
+          "acceptedAnswers": [
+            "hot"
+          ],
+          "acceptedTranslations": [
+            "gorący",
+            "gorąco",
+            "upalny"
+          ]
+        },
+        {
+          "id": "weather.warm",
+          "term": "warm",
+          "ipa": "/wɔːrm/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "ciepły",
+          "definition": "Pleasantly hot.",
+          "register": "neutralny",
+          "contextPl": "Temperatura",
+          "natural": "",
+          "forms": "warmer; warmest",
+          "collocations": "warm and sunny",
+          "synonyms": "",
+          "antonyms": "cool",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's warm enough to leave your jacket at home.",
+              "pl": "Jest na tyle ciepło, że możesz zostawić kurtkę w domu.",
+              "focusEn": "warm",
+              "focusPl": "ciepło"
+            },
+            {
+              "en": "The app says tomorrow will be warm and sunny.",
+              "pl": "Według aplikacji jutro będzie ciepło i słonecznie.",
+              "focusEn": "warm",
+              "focusPl": "ciepło"
+            }
+          ],
+          "acceptedAnswers": [
+            "warm"
+          ],
+          "acceptedTranslations": [
+            "ciepły",
+            "ciepło"
+          ]
+        },
+        {
+          "id": "weather.cloudy",
+          "term": "cloudy",
+          "ipa": "/ˈklaʊdi/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pochmurny",
+          "definition": "With a lot of clouds in the sky.",
+          "register": "neutralny",
+          "contextPl": "Zachmurzenie",
+          "natural": "",
+          "forms": "cloudier; cloudiest",
+          "collocations": "cloudy and gray",
+          "synonyms": "overcast",
+          "antonyms": "sunny; clear",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's cloudy and gray, but it's not raining yet.",
+              "pl": "Jest pochmurno i szaro, ale jeszcze nie pada.",
+              "focusEn": "cloudy",
+              "focusPl": "pochmurno"
+            },
+            {
+              "en": "The app says it will be cloudy until noon.",
+              "pl": "Według aplikacji do południa będzie pochmurno.",
+              "focusEn": "cloudy",
+              "focusPl": "pochmurno"
+            }
+          ],
+          "acceptedAnswers": [
+            "cloudy",
+            "overcast"
+          ],
+          "acceptedTranslations": [
+            "pochmurny",
+            "pochmurno"
+          ]
+        },
+        {
+          "id": "weather.nice",
+          "term": "nice",
+          "ipa": "/naɪs/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "ładny (o pogodzie)",
+          "definition": "Pleasant, especially sunny and warm.",
+          "register": "neutralny",
+          "contextPl": "Ładna pogoda",
+          "natural": "",
+          "forms": "nicer; nicest",
+          "collocations": "a nice day; nice weather",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„It's nice out” – na dworze jest ładnie.",
+          "examples": [
+            {
+              "en": "It's a nice day, let's walk to work.",
+              "pl": "Jest ładny dzień, chodźmy do pracy pieszo.",
+              "focusEn": "nice",
+              "focusPl": "ładny"
+            },
+            {
+              "en": "If the weather is nice, we'll eat lunch outside.",
+              "pl": "Jeśli pogoda będzie ładna, zjemy lunch na zewnątrz.",
+              "focusEn": "nice",
+              "focusPl": "ładna"
+            }
+          ],
+          "acceptedAnswers": [
+            "nice"
+          ],
+          "acceptedTranslations": [
+            "ładny (o pogodzie)",
+            "ładnie"
+          ]
+        },
+        {
+          "id": "weather.windy",
+          "term": "windy",
+          "ipa": "/ˈwɪndi/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wietrzny",
+          "definition": "With a lot of wind.",
+          "register": "neutralny",
+          "contextPl": "Wiatr",
+          "natural": "",
+          "forms": "windier; windiest",
+          "collocations": "really windy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku zwykle „wieje”.",
+          "examples": [
+            {
+              "en": "It's really windy, hold on to your hat!",
+              "pl": "Strasznie wieje, trzymaj kapelusz!",
+              "focusEn": "windy",
+              "focusPl": "wieje"
+            },
+            {
+              "en": "It's too windy to ride my bike today.",
+              "pl": "Dziś jest za duży wiatr na jazdę rowerem.",
+              "focusEn": "windy",
+              "focusPl": "za duży wiatr"
+            }
+          ],
+          "acceptedAnswers": [
+            "windy"
+          ],
+          "acceptedTranslations": [
+            "wietrzny",
+            "wieje"
+          ]
+        },
+        {
+          "id": "weather.snow",
+          "term": "snow",
+          "ipa": "/snoʊ/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "padać (o śniegu)",
+          "definition": "When soft white pieces of frozen water fall from the sky.",
+          "register": "neutralny",
+          "contextPl": "Opady śniegu",
+          "natural": "",
+          "forms": "snow – snowed – snowed",
+          "collocations": "it's snowing",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Jak „rain”: „It's snowing” – pada śnieg.",
+          "examples": [
+            {
+              "en": "Look outside, it's snowing!",
+              "pl": "Wyjrzyj na zewnątrz, pada śnieg!",
+              "focusEn": "snowing",
+              "focusPl": "pada śnieg"
+            },
+            {
+              "en": "It snowed a little overnight, so the sidewalk is slippery.",
+              "pl": "W nocy trochę popadał śnieg, więc chodnik jest śliski.",
+              "focusEn": "snowed",
+              "focusPl": "popadał śnieg"
+            }
+          ],
+          "acceptedAnswers": [
+            "snow",
+            "snowing",
+            "snowed"
+          ],
+          "acceptedTranslations": [
+            "padać (o śniegu)",
+            "sypać"
+          ]
+        },
+        {
+          "id": "weather.umbrella",
+          "term": "umbrella",
+          "ipa": "/ʌmˈbrelə/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "parasol",
+          "definition": "A folding object you hold over your head to stay dry in the rain.",
+          "register": "neutralny",
+          "contextPl": "Ochrona przed deszczem",
+          "natural": "",
+          "forms": "umbrellas",
+          "collocations": "open an umbrella; take an umbrella",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't forget your umbrella, there's a sixty percent chance of rain.",
+              "pl": "Nie zapomnij parasola, prawdopodobieństwo deszczu to sześćdziesiąt procent.",
+              "focusEn": "umbrella",
+              "focusPl": "parasola"
+            },
+            {
+              "en": "I left my umbrella at home, and of course it started to rain.",
+              "pl": "Zostawiłem parasol w domu i oczywiście zaczęło padać.",
+              "focusEn": "umbrella",
+              "focusPl": "parasol"
+            }
+          ],
+          "acceptedAnswers": [
+            "umbrella"
+          ],
+          "acceptedTranslations": [
+            "parasol",
+            "parasolka"
+          ]
+        },
+        {
+          "id": "weather.wet",
+          "term": "wet",
+          "ipa": "/wet/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "mokry",
+          "definition": "Covered with water or rain.",
+          "register": "neutralny",
+          "contextPl": "Skutki deszczu",
+          "natural": "",
+          "forms": "wetter; wettest",
+          "collocations": "wet grass; get wet",
+          "synonyms": "",
+          "antonyms": "dry",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The grass is still wet from the rain last night.",
+              "pl": "Trawa jest jeszcze mokra po wczorajszym deszczu.",
+              "focusEn": "wet",
+              "focusPl": "mokra"
+            },
+            {
+              "en": "It's a wet, gray morning, so I'll wear my rain boots.",
+              "pl": "Jest mokry, szary poranek, więc założę kalosze.",
+              "focusEn": "wet",
+              "focusPl": "mokry"
+            }
+          ],
+          "acceptedAnswers": [
+            "wet"
+          ],
+          "acceptedTranslations": [
+            "mokry"
+          ]
+        },
+        {
+          "id": "weather.cool",
+          "term": "cool",
+          "ipa": "/kuːl/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "chłodny",
+          "definition": "A little cold, often in a pleasant way.",
+          "register": "neutralny",
+          "contextPl": "Temperatura",
+          "natural": "",
+          "forms": "cooler; coolest",
+          "collocations": "cool morning; cool breeze",
+          "synonyms": "",
+          "antonyms": "warm",
+          "notePl": "„Cool” potocznie znaczy też „fajny”.",
+          "examples": [
+            {
+              "en": "It's a little cool this morning, so take a sweater.",
+              "pl": "Rano jest trochę chłodno, więc weź sweter.",
+              "focusEn": "cool",
+              "focusPl": "chłodno"
+            },
+            {
+              "en": "The evenings are getting cool, fall is coming.",
+              "pl": "Wieczory robią się chłodne, idzie jesień.",
+              "focusEn": "cool",
+              "focusPl": "chłodne"
+            }
+          ],
+          "acceptedAnswers": [
+            "cool"
+          ],
+          "acceptedTranslations": [
+            "chłodny",
+            "chłodno"
+          ]
+        },
+        {
+          "id": "weather.dry",
+          "term": "dry",
+          "ipa": "/draɪ/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "suchy",
+          "definition": "Without rain.",
+          "register": "neutralny",
+          "contextPl": "Brak opadów",
+          "natural": "",
+          "forms": "drier; driest",
+          "collocations": "dry weather; stay dry",
+          "synonyms": "",
+          "antonyms": "wet; rainy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It'll be dry all day, so you can leave your umbrella at home.",
+              "pl": "Cały dzień będzie sucho, więc możesz zostawić parasol w domu.",
+              "focusEn": "dry",
+              "focusPl": "sucho"
+            },
+            {
+              "en": "After a dry week, the garden really needs water.",
+              "pl": "Po suchym tygodniu ogród naprawdę potrzebuje wody.",
+              "focusEn": "dry",
+              "focusPl": "suchym"
+            }
+          ],
+          "acceptedAnswers": [
+            "dry"
+          ],
+          "acceptedTranslations": [
+            "suchy",
+            "bez opadów",
+            "sucho"
+          ]
+        },
+        {
+          "id": "weather.sunshine",
+          "term": "sunshine",
+          "ipa": "/ˈsʌnʃaɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "słońce",
+          "definition": "The light and heat from the sun.",
+          "register": "neutralny",
+          "contextPl": "Słoneczna pogoda",
+          "natural": "",
+          "forms": "",
+          "collocations": "in the sunshine; plenty of sunshine",
+          "synonyms": "sun",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Enjoy the sunshine while it lasts, rain is coming at noon.",
+              "pl": "Ciesz się słońcem, póki jest, w południe przyjdzie deszcz.",
+              "focusEn": "sunshine",
+              "focusPl": "słońcem"
+            },
+            {
+              "en": "The kids ran outside to play in the sunshine.",
+              "pl": "Dzieci wybiegły pobawić się na słońcu.",
+              "focusEn": "sunshine",
+              "focusPl": "na słońcu"
+            }
+          ],
+          "acceptedAnswers": [
+            "sunshine",
+            "sun"
+          ],
+          "acceptedTranslations": [
+            "słońce",
+            "światło słoneczne",
+            "słoneczko"
+          ]
+        },
+        {
+          "id": "weather.foggy",
+          "term": "foggy",
+          "ipa": "/ˈfɑːɡi/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mglisty",
+          "definition": "With thick fog that makes it hard to see.",
+          "register": "neutralny",
+          "contextPl": "Mgła",
+          "natural": "",
+          "forms": "foggier; foggiest",
+          "collocations": "",
+          "synonyms": "misty",
+          "antonyms": "clear",
+          "notePl": "Rzeczownik: fog – mgła.",
+          "examples": [
+            {
+              "en": "It's so foggy that I can't see the end of the street.",
+              "pl": "Jest tak mglisto, że nie widzę końca ulicy.",
+              "focusEn": "foggy",
+              "focusPl": "mglisto"
+            },
+            {
+              "en": "Drive slowly, it's foggy on the highway this morning.",
+              "pl": "Jedź powoli, rano na autostradzie jest mgła.",
+              "focusEn": "foggy",
+              "focusPl": "jest mgła"
+            }
+          ],
+          "acceptedAnswers": [
+            "foggy",
+            "fog"
+          ],
+          "acceptedTranslations": [
+            "mglisty",
+            "mgła"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather.hot-weather",
+      "namePl": "Upał i lato",
+      "scenePl": "Upalny lipcowy dzień w mieście: praca, metro i szukanie cienia",
+      "entries": [
+        {
+          "id": "weather.heat",
+          "term": "heat",
+          "ipa": "/hiːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "upał",
+          "definition": "High temperature, especially in summer.",
+          "register": "neutralny",
+          "contextPl": "Upał",
+          "natural": "",
+          "forms": "",
+          "collocations": "in the heat; summer heat",
+          "synonyms": "",
+          "antonyms": "cold",
+          "notePl": "„Heat” w domu to też ogrzewanie: „turn up the heat”.",
+          "examples": [
+            {
+              "en": "I can't stand this heat, it's ninety-five degrees!",
+              "pl": "Nie znoszę tego upału, jest trzydzieści pięć stopni!",
+              "focusEn": "heat",
+              "focusPl": "upału"
+            },
+            {
+              "en": "The heat made the sidewalks too hot for the dogs' paws.",
+              "pl": "Przez upał chodniki były za gorące dla psich łap.",
+              "focusEn": "heat",
+              "focusPl": "upał"
+            }
+          ],
+          "acceptedAnswers": [
+            "heat"
+          ],
+          "acceptedTranslations": [
+            "upał",
+            "gorąco",
+            "skwar"
+          ]
+        },
+        {
+          "id": "weather.heat-wave",
+          "term": "heat wave",
+          "ipa": "/ˈhiːt ˌweɪv/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "fala upałów",
+          "definition": "A period of very hot weather that lasts several days.",
+          "register": "neutralny",
+          "contextPl": "Długotrwały upał",
+          "natural": "",
+          "forms": "heat waves",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA temperaturę podaje się w Fahrenheitach: 90°F to ok. 32°C.",
+          "examples": [
+            {
+              "en": "We're in the middle of a heat wave, it's been over ninety for a week.",
+              "pl": "Jesteśmy w środku fali upałów, od tygodnia jest ponad trzydzieści dwa stopnie.",
+              "focusEn": "heat wave",
+              "focusPl": "fali upałów"
+            },
+            {
+              "en": "The city opened cooling centers during the heat wave.",
+              "pl": "Podczas fali upałów miasto otworzyło klimatyzowane punkty dla mieszkańców.",
+              "focusEn": "heat wave",
+              "focusPl": "fali upałów"
+            }
+          ],
+          "acceptedAnswers": [
+            "heat wave"
+          ],
+          "acceptedTranslations": [
+            "fala upałów"
+          ]
+        },
+        {
+          "id": "weather.air-conditioning",
+          "term": "air conditioning",
+          "ipa": "/ˈer kənˌdɪʃənɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "klimatyzacja",
+          "definition": "A system that keeps air in a building or car cool.",
+          "register": "neutralny",
+          "contextPl": "Chłodzenie",
+          "natural": "AC",
+          "forms": "",
+          "collocations": "turn up the air conditioning",
+          "synonyms": "AC",
+          "antonyms": "",
+          "notePl": "Potocznie: „AC” (/ˌeɪ ˈsiː/).",
+          "examples": [
+            {
+              "en": "Thank goodness the office has air conditioning!",
+              "pl": "Całe szczęście, że w biurze jest klimatyzacja!",
+              "focusEn": "air conditioning",
+              "focusPl": "klimatyzacja"
+            },
+            {
+              "en": "Turn up the air conditioning, it's like an oven in here.",
+              "pl": "Podkręć klimatyzację, jest tu jak w piekarniku.",
+              "focusEn": "air conditioning",
+              "focusPl": "klimatyzację"
+            }
+          ],
+          "acceptedAnswers": [
+            "air conditioning",
+            "AC",
+            "air conditioner"
+          ],
+          "acceptedTranslations": [
+            "klimatyzacja",
+            "klima"
+          ]
+        },
+        {
+          "id": "weather.shade",
+          "term": "shade",
+          "ipa": "/ʃeɪd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "cień",
+          "definition": "An area that the sun does not reach.",
+          "register": "neutralny",
+          "contextPl": "Chronienie się przed słońcem",
+          "natural": "",
+          "forms": "",
+          "collocations": "in the shade",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Shadow” to cień konkretnej rzeczy; „shade” – zacienione miejsce.",
+          "examples": [
+            {
+              "en": "Let's sit in the shade under that tree.",
+              "pl": "Usiądźmy w cieniu pod tamtym drzewem.",
+              "focusEn": "shade",
+              "focusPl": "cieniu"
+            },
+            {
+              "en": "There's no shade at the bus stop, so we're melting.",
+              "pl": "Na przystanku nie ma cienia, więc się topimy.",
+              "focusEn": "shade",
+              "focusPl": "cienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "shade"
+          ],
+          "acceptedTranslations": [
+            "cień"
+          ]
+        },
+        {
+          "id": "weather.sweat",
+          "term": "sweat",
+          "ipa": "/swet/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pocić się",
+          "definition": "To have liquid come out of your skin because you are hot.",
+          "register": "neutralny",
+          "contextPl": "Reakcja na upał",
+          "natural": "",
+          "forms": "sweat – sweated – sweated",
+          "collocations": "sweat a lot",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: sweat – pot.",
+          "examples": [
+            {
+              "en": "I'm sweating just standing here.",
+              "pl": "Pocę się, nawet tylko tu stojąc.",
+              "focusEn": "sweating",
+              "focusPl": "Pocę się"
+            },
+            {
+              "en": "Everyone on the bus was sweating in the afternoon heat.",
+              "pl": "W popołudniowym upale wszyscy w autobusie się pocili.",
+              "focusEn": "sweating",
+              "focusPl": "się pocili"
+            }
+          ],
+          "acceptedAnswers": [
+            "sweat",
+            "sweated"
+          ],
+          "acceptedTranslations": [
+            "pocić się",
+            "spocić się"
+          ]
+        },
+        {
+          "id": "weather.sunscreen",
+          "term": "sunscreen",
+          "ipa": "/ˈsʌnskriːn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "krem z filtrem",
+          "definition": "A cream that protects your skin from the sun.",
+          "register": "neutralny",
+          "contextPl": "Ochrona przed słońcem",
+          "natural": "",
+          "forms": "",
+          "collocations": "put on sunscreen",
+          "synonyms": "sunblock",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Put on sunscreen before you go out, the sun is really strong today.",
+              "pl": "Posmaruj się kremem z filtrem przed wyjściem, słońce jest dziś bardzo mocne.",
+              "focusEn": "sunscreen",
+              "focusPl": "kremem z filtrem"
+            },
+            {
+              "en": "I forgot my sunscreen, and now my nose is red.",
+              "pl": "Zapomniałam kremu z filtrem i teraz mam czerwony nos.",
+              "focusEn": "sunscreen",
+              "focusPl": "kremu z filtrem"
+            }
+          ],
+          "acceptedAnswers": [
+            "sunscreen",
+            "sunblock"
+          ],
+          "acceptedTranslations": [
+            "krem z filtrem",
+            "filtr przeciwsłoneczny"
+          ]
+        },
+        {
+          "id": "weather.fan",
+          "term": "fan",
+          "ipa": "/fæn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wiatrak",
+          "definition": "A machine with turning blades that moves air to cool a room.",
+          "register": "neutralny",
+          "contextPl": "Chłodzenie",
+          "natural": "",
+          "forms": "fans",
+          "collocations": "ceiling fan; turn on the fan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Fan” to też fan, kibic.",
+          "examples": [
+            {
+              "en": "We don't have AC, just a small fan in the bedroom.",
+              "pl": "Nie mamy klimatyzacji, tylko mały wiatrak w sypialni.",
+              "focusEn": "fan",
+              "focusPl": "wiatrak"
+            },
+            {
+              "en": "The office fan only blows hot air around.",
+              "pl": "Wentylator w biurze tylko rozdmuchuje gorące powietrze.",
+              "focusEn": "fan",
+              "focusPl": "Wentylator"
+            }
+          ],
+          "acceptedAnswers": [
+            "fan"
+          ],
+          "acceptedTranslations": [
+            "wiatrak",
+            "wentylator"
+          ]
+        },
+        {
+          "id": "weather.melt",
+          "term": "melt",
+          "ipa": "/melt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "topić się",
+          "definition": "To become liquid because of heat.",
+          "register": "neutralny",
+          "contextPl": "Skutki upału",
+          "natural": "",
+          "forms": "melt – melted – melted",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "freeze",
+          "notePl": "Żartobliwie o ludziach: „I'm melting!”.",
+          "examples": [
+            {
+              "en": "My ice cream melted before I could finish it.",
+              "pl": "Lody mi się roztopiły, zanim zdążyłem je zjeść.",
+              "focusEn": "melted",
+              "focusPl": "się roztopiły"
+            },
+            {
+              "en": "I'm melting, let's find somewhere with AC!",
+              "pl": "Topię się, poszukajmy miejsca z klimatyzacją!",
+              "focusEn": "melting",
+              "focusPl": "Topię się"
+            }
+          ],
+          "acceptedAnswers": [
+            "melt",
+            "melted"
+          ],
+          "acceptedTranslations": [
+            "topić się",
+            "roztapiać się",
+            "roztopić się"
+          ]
+        },
+        {
+          "id": "weather.humid",
+          "term": "humid",
+          "ipa": "/ˈhjuːmɪd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "parny",
+          "definition": "Hot and wet in a way that feels uncomfortable.",
+          "register": "neutralny",
+          "contextPl": "Wilgotność powietrza",
+          "natural": "muggy",
+          "forms": "",
+          "collocations": "hot and humid",
+          "synonyms": "muggy",
+          "antonyms": "dry",
+          "notePl": "Rzeczownik: humidity – wilgotność.",
+          "examples": [
+            {
+              "en": "It's not just hot, it's humid, my shirt is sticking to me.",
+              "pl": "Jest nie tylko gorąco, ale też parno, koszula klei mi się do ciała.",
+              "focusEn": "humid",
+              "focusPl": "parno"
+            },
+            {
+              "en": "Humid days in the city make me feel exhausted.",
+              "pl": "Parne dni w mieście sprawiają, że czuję się wykończony.",
+              "focusEn": "Humid",
+              "focusPl": "Parne"
+            }
+          ],
+          "acceptedAnswers": [
+            "humid",
+            "muggy"
+          ],
+          "acceptedTranslations": [
+            "parny",
+            "wilgotny",
+            "duszny"
+          ]
+        },
+        {
+          "id": "weather.boiling",
+          "term": "boiling",
+          "ipa": "/ˈbɔɪlɪŋ/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "upalny",
+          "definition": "Extremely hot.",
+          "register": "potoczny",
+          "contextPl": "Przesadne narzekanie na upał",
+          "natural": "",
+          "forms": "",
+          "collocations": "boiling hot",
+          "synonyms": "scorching",
+          "antonyms": "freezing",
+          "notePl": "Dosłownie „wrzący”.",
+          "examples": [
+            {
+              "en": "It's boiling outside, let's stay in the shade.",
+              "pl": "Na zewnątrz jest skwar, zostańmy w cieniu.",
+              "focusEn": "boiling",
+              "focusPl": "skwar"
+            },
+            {
+              "en": "The subway car was boiling because the AC was broken.",
+              "pl": "W wagonie metra był upał nie do wytrzymania, bo nie działała klimatyzacja.",
+              "focusEn": "boiling",
+              "focusPl": "upał nie do wytrzymania"
+            }
+          ],
+          "acceptedAnswers": [
+            "boiling",
+            "boiling hot"
+          ],
+          "acceptedTranslations": [
+            "upalny",
+            "gorący jak w piecu",
+            "skwar"
+          ]
+        },
+        {
+          "id": "weather.sunburn",
+          "term": "sunburn",
+          "ipa": "/ˈsʌnbɜːrn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "oparzenie słoneczne",
+          "definition": "Red, painful skin caused by too much sun.",
+          "register": "neutralny",
+          "contextPl": "Skutki słońca",
+          "natural": "",
+          "forms": "sunburns",
+          "collocations": "get a sunburn; a bad sunburn",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przymiotnik: sunburned – spieczony słońcem.",
+          "examples": [
+            {
+              "en": "I got a sunburn on my shoulders walking around the city.",
+              "pl": "Nabawiłem się oparzenia słonecznego na ramionach, chodząc po mieście.",
+              "focusEn": "sunburn",
+              "focusPl": "oparzenia słonecznego"
+            },
+            {
+              "en": "Aloe helps a bad sunburn feel better.",
+              "pl": "Aloes łagodzi mocne oparzenie słoneczne.",
+              "focusEn": "sunburn",
+              "focusPl": "oparzenie słoneczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "sunburn",
+            "sunburned"
+          ],
+          "acceptedTranslations": [
+            "oparzenie słoneczne",
+            "spalić się na słońcu"
+          ]
+        },
+        {
+          "id": "weather.scorching",
+          "term": "scorching",
+          "ipa": "/ˈskɔːrtʃɪŋ/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skwarny",
+          "definition": "Extremely hot.",
+          "register": "neutralny",
+          "contextPl": "Silny upał",
+          "natural": "",
+          "forms": "",
+          "collocations": "scorching heat; a scorching day",
+          "synonyms": "boiling",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It was a scorching afternoon, and the streets were empty.",
+              "pl": "Było skwarne popołudnie i ulice były puste.",
+              "focusEn": "scorching",
+              "focusPl": "skwarne"
+            },
+            {
+              "en": "Don't leave the dog in the car, it's scorching today.",
+              "pl": "Nie zostawiaj psa w samochodzie, dziś jest straszny skwar.",
+              "focusEn": "scorching",
+              "focusPl": "straszny skwar"
+            }
+          ],
+          "acceptedAnswers": [
+            "scorching"
+          ],
+          "acceptedTranslations": [
+            "skwarny",
+            "palący"
+          ]
+        },
+        {
+          "id": "weather.stay-hydrated",
+          "term": "stay hydrated",
+          "ipa": "/ˌsteɪ ˈhaɪdreɪtɪd/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pić dużo wody",
+          "definition": "To drink enough water so your body does not dry out.",
+          "register": "neutralny",
+          "contextPl": "Zdrowie w upale",
+          "natural": "",
+          "forms": "stay – stayed – stayed",
+          "collocations": "",
+          "synonyms": "drink plenty of water",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Stay hydrated and drink water every hour.",
+              "pl": "Pamiętaj o nawadnianiu i pij wodę co godzinę.",
+              "focusEn": "Stay hydrated",
+              "focusPl": "Pamiętaj o nawadnianiu"
+            },
+            {
+              "en": "The city sent a text telling people to stay hydrated during the heat.",
+              "pl": "Miasto wysłało SMS-a z apelem, by w czasie upału pić dużo wody.",
+              "focusEn": "stay hydrated",
+              "focusPl": "pić dużo wody"
+            }
+          ],
+          "acceptedAnswers": [
+            "stay hydrated",
+            "drink plenty of water"
+          ],
+          "acceptedTranslations": [
+            "pić dużo wody",
+            "nawadniać się",
+            "nawadniać organizm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather.cold-weather",
+      "namePl": "Mróz, śnieg i zima",
+      "scenePl": "Śnieżny zimowy poranek: odśnieżanie podjazdu i skrobanie szyb przed wyjazdem",
+      "entries": [
+        {
+          "id": "weather.freezing",
+          "term": "freezing",
+          "ipa": "/ˈfriːzɪŋ/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "lodowaty",
+          "definition": "Extremely cold.",
+          "register": "neutralny",
+          "contextPl": "Silne zimno",
+          "natural": "",
+          "forms": "",
+          "collocations": "freezing cold; it's freezing",
+          "synonyms": "",
+          "antonyms": "boiling",
+          "notePl": "W mowie często przesadnie: „I'm freezing!” – „Umieram z zimna!”.",
+          "examples": [
+            {
+              "en": "It's freezing out here, my fingers are numb!",
+              "pl": "Tu jest lodowato, zdrętwiały mi palce!",
+              "focusEn": "freezing",
+              "focusPl": "lodowato"
+            },
+            {
+              "en": "It was freezing this morning, so the car wouldn't start.",
+              "pl": "Rano był taki mróz, że samochód nie chciał zapalić.",
+              "focusEn": "freezing",
+              "focusPl": "taki mróz"
+            }
+          ],
+          "acceptedAnswers": [
+            "freezing",
+            "freezing cold"
+          ],
+          "acceptedTranslations": [
+            "lodowaty",
+            "mroźny",
+            "mróz; mroźno"
+          ]
+        },
+        {
+          "id": "weather.ice",
+          "term": "ice",
+          "ipa": "/aɪs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "lód",
+          "definition": "Frozen water.",
+          "register": "neutralny",
+          "contextPl": "Lód na drogach i autach",
+          "natural": "",
+          "forms": "",
+          "collocations": "ice on the road; scrape the ice",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Be careful, there's ice on the front steps.",
+              "pl": "Uważaj, na schodach przed domem jest lód.",
+              "focusEn": "ice",
+              "focusPl": "lód"
+            },
+            {
+              "en": "I scraped the ice off the windshield for ten minutes.",
+              "pl": "Przez dziesięć minut skrobałem lód z przedniej szyby.",
+              "focusEn": "ice",
+              "focusPl": "lód"
+            }
+          ],
+          "acceptedAnswers": [
+            "ice"
+          ],
+          "acceptedTranslations": [
+            "lód"
+          ]
+        },
+        {
+          "id": "weather.degree",
+          "term": "degree",
+          "ipa": "/dɪˈɡriː/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "stopień",
+          "definition": "A unit for measuring temperature.",
+          "register": "neutralny",
+          "contextPl": "Temperatura",
+          "natural": "",
+          "forms": "degrees",
+          "collocations": "twenty degrees; below zero degrees",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA stopnie Fahrenheita: 32°F = 0°C, 50°F = 10°C, 68°F = 20°C.",
+          "examples": [
+            {
+              "en": "It's only twenty degrees outside, and that's Fahrenheit!",
+              "pl": "Na zewnątrz jest tylko dwadzieścia stopni, i to Fahrenheita!",
+              "focusEn": "degrees",
+              "focusPl": "stopni"
+            },
+            {
+              "en": "The temperature dropped ten degrees in an hour.",
+              "pl": "Temperatura spadła o dziesięć stopni w ciągu godziny.",
+              "focusEn": "degrees",
+              "focusPl": "stopni"
+            }
+          ],
+          "acceptedAnswers": [
+            "degree",
+            "degrees"
+          ],
+          "acceptedTranslations": [
+            "stopień"
+          ]
+        },
+        {
+          "id": "weather.icy",
+          "term": "icy",
+          "ipa": "/ˈaɪsi/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oblodzony",
+          "definition": "Covered with ice.",
+          "register": "neutralny",
+          "contextPl": "Śliskie drogi",
+          "natural": "",
+          "forms": "icier; iciest",
+          "collocations": "icy roads",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "O wietrze: lodowaty („an icy wind”).",
+          "examples": [
+            {
+              "en": "The roads are icy, so drive slowly.",
+              "pl": "Drogi są oblodzone, więc jedź powoli.",
+              "focusEn": "icy",
+              "focusPl": "oblodzone"
+            },
+            {
+              "en": "The icy sidewalk is like a skating rink.",
+              "pl": "Oblodzony chodnik jest jak lodowisko.",
+              "focusEn": "icy",
+              "focusPl": "Oblodzony"
+            }
+          ],
+          "acceptedAnswers": [
+            "icy"
+          ],
+          "acceptedTranslations": [
+            "oblodzony",
+            "lodowaty"
+          ]
+        },
+        {
+          "id": "weather.slippery",
+          "term": "slippery",
+          "ipa": "/ˈslɪpəri/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "śliski",
+          "definition": "Easy to slide or fall on.",
+          "register": "neutralny",
+          "contextPl": "Niebezpieczeństwo upadku",
+          "natural": "",
+          "forms": "",
+          "collocations": "slippery steps",
+          "synonyms": "slick",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The driveway is slippery, put on your boots with good grip.",
+              "pl": "Podjazd jest śliski, załóż buty z dobrą przyczepnością.",
+              "focusEn": "slippery",
+              "focusPl": "śliski"
+            },
+            {
+              "en": "Watch out, the porch steps are slippery!",
+              "pl": "Uważaj, schody na ganek są śliskie!",
+              "focusEn": "slippery",
+              "focusPl": "śliskie"
+            }
+          ],
+          "acceptedAnswers": [
+            "slippery",
+            "slick"
+          ],
+          "acceptedTranslations": [
+            "śliski"
+          ]
+        },
+        {
+          "id": "weather.snowstorm",
+          "term": "snowstorm",
+          "ipa": "/ˈsnoʊstɔːrm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "śnieżyca",
+          "definition": "A storm with a lot of snow.",
+          "register": "neutralny",
+          "contextPl": "Intensywne opady śniegu",
+          "natural": "",
+          "forms": "snowstorms",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The snowstorm dumped a foot of snow overnight.",
+              "pl": "Śnieżyca nasypała w nocy trzydzieści centymetrów śniegu.",
+              "focusEn": "snowstorm",
+              "focusPl": "Śnieżyca"
+            },
+            {
+              "en": "Schools are closed today because of the snowstorm.",
+              "pl": "Szkoły są dziś zamknięte z powodu śnieżycy.",
+              "focusEn": "snowstorm",
+              "focusPl": "śnieżycy"
+            }
+          ],
+          "acceptedAnswers": [
+            "snowstorm"
+          ],
+          "acceptedTranslations": [
+            "śnieżyca",
+            "burza śnieżna",
+            "zawieja"
+          ]
+        },
+        {
+          "id": "weather.chilly",
+          "term": "chilly",
+          "ipa": "/ˈtʃɪli/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "chłodny",
+          "definition": "Cold in an unpleasant way.",
+          "register": "neutralny",
+          "contextPl": "Chłód",
+          "natural": "",
+          "forms": "chillier; chilliest",
+          "collocations": "a chilly wind",
+          "synonyms": "",
+          "antonyms": "warm",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A chilly wind is blowing snow into my face.",
+              "pl": "Chłodny wiatr wieje mi śniegiem w twarz.",
+              "focusEn": "chilly",
+              "focusPl": "Chłodny"
+            },
+            {
+              "en": "The house is chilly, turn up the heat.",
+              "pl": "W domu jest zimnawo, podkręć ogrzewanie.",
+              "focusEn": "chilly",
+              "focusPl": "zimnawo"
+            }
+          ],
+          "acceptedAnswers": [
+            "chilly"
+          ],
+          "acceptedTranslations": [
+            "chłodny",
+            "zimnawy",
+            "chłodno"
+          ]
+        },
+        {
+          "id": "weather.below-freezing",
+          "term": "below freezing",
+          "ipa": "/bɪˌloʊ ˈfriːzɪŋ/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "poniżej zera",
+          "definition": "Lower than the temperature at which water freezes.",
+          "register": "neutralny",
+          "contextPl": "Temperatura",
+          "natural": "",
+          "forms": "",
+          "collocations": "stay below freezing",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Bezpieczniejsze niż „below zero”, bo zero Fahrenheita to aż -18°C.",
+          "examples": [
+            {
+              "en": "It's been below freezing for a week, so the snow isn't melting.",
+              "pl": "Od tygodnia temperatura jest poniżej zera, więc śnieg nie topnieje.",
+              "focusEn": "below freezing",
+              "focusPl": "poniżej zera"
+            },
+            {
+              "en": "Temperatures will stay below freezing until Friday.",
+              "pl": "Temperatura utrzyma się poniżej zera do piątku.",
+              "focusEn": "below freezing",
+              "focusPl": "poniżej zera"
+            }
+          ],
+          "acceptedAnswers": [
+            "below freezing"
+          ],
+          "acceptedTranslations": [
+            "poniżej zera"
+          ]
+        },
+        {
+          "id": "weather.snowflake",
+          "term": "snowflake",
+          "ipa": "/ˈsnoʊfleɪk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "płatek śniegu",
+          "definition": "A single small piece of snow.",
+          "register": "neutralny",
+          "contextPl": "Śnieg",
+          "natural": "",
+          "forms": "snowflakes",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Big snowflakes started falling while I was scraping the car.",
+              "pl": "Kiedy skrobałem samochód, zaczęły padać duże płatki śniegu.",
+              "focusEn": "snowflakes",
+              "focusPl": "płatki śniegu"
+            },
+            {
+              "en": "The kids tried to catch snowflakes on their tongues.",
+              "pl": "Dzieci próbowały łapać płatki śniegu na język.",
+              "focusEn": "snowflakes",
+              "focusPl": "płatki śniegu"
+            }
+          ],
+          "acceptedAnswers": [
+            "snowflake"
+          ],
+          "acceptedTranslations": [
+            "płatek śniegu"
+          ]
+        },
+        {
+          "id": "weather.shovel",
+          "term": "shovel",
+          "ipa": "/ˈʃʌvl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odśnieżać (łopatą)",
+          "definition": "To move snow with a shovel.",
+          "register": "neutralny",
+          "contextPl": "Odśnieżanie",
+          "natural": "",
+          "forms": "shovel – shoveled – shoveled",
+          "collocations": "shovel the driveway; shovel snow",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: shovel – łopata. Pisownia amerykańska: shoveled.",
+          "examples": [
+            {
+              "en": "I have to shovel the driveway before I can leave.",
+              "pl": "Muszę odśnieżyć podjazd, zanim będę mógł wyjechać.",
+              "focusEn": "shovel",
+              "focusPl": "odśnieżyć"
+            },
+            {
+              "en": "My neighbor shoveled our sidewalk too, how nice!",
+              "pl": "Sąsiad odśnieżył też nasz chodnik, jak miło!",
+              "focusEn": "shoveled",
+              "focusPl": "odśnieżył"
+            }
+          ],
+          "acceptedAnswers": [
+            "shovel",
+            "shoveled"
+          ],
+          "acceptedTranslations": [
+            "odśnieżać (łopatą)",
+            "odgarniać śnieg"
+          ]
+        },
+        {
+          "id": "weather.frost",
+          "term": "frost",
+          "ipa": "/frɔːst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "szron",
+          "definition": "A thin white layer of ice on surfaces when it is very cold.",
+          "register": "neutralny",
+          "contextPl": "Mróz i szron",
+          "natural": "",
+          "forms": "",
+          "collocations": "first frost",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's frost on every car in the parking lot.",
+              "pl": "Na każdym samochodzie na parkingu jest szron.",
+              "focusEn": "frost",
+              "focusPl": "szron"
+            },
+            {
+              "en": "The first frost killed the last flowers in the garden.",
+              "pl": "Pierwszy przymrozek zniszczył ostatnie kwiaty w ogrodzie.",
+              "focusEn": "frost",
+              "focusPl": "przymrozek"
+            }
+          ],
+          "acceptedAnswers": [
+            "frost"
+          ],
+          "acceptedTranslations": [
+            "szron",
+            "przymrozek",
+            "mróz"
+          ]
+        },
+        {
+          "id": "weather.blizzard",
+          "term": "blizzard",
+          "ipa": "/ˈblɪzərd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zamieć",
+          "definition": "A severe snowstorm with strong winds.",
+          "register": "neutralny",
+          "contextPl": "Ekstremalna pogoda zimą",
+          "natural": "",
+          "forms": "blizzards",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Silniejsza niż zwykła śnieżyca – z mocnym wiatrem.",
+          "examples": [
+            {
+              "en": "Nobody went to work during the blizzard.",
+              "pl": "Podczas zamieci nikt nie poszedł do pracy.",
+              "focusEn": "blizzard",
+              "focusPl": "zamieci"
+            },
+            {
+              "en": "The blizzard knocked out power on our street.",
+              "pl": "Zamieć pozbawiła prądu całą naszą ulicę.",
+              "focusEn": "blizzard",
+              "focusPl": "Zamieć"
+            }
+          ],
+          "acceptedAnswers": [
+            "blizzard"
+          ],
+          "acceptedTranslations": [
+            "zamieć",
+            "zawieja śnieżna"
+          ]
+        },
+        {
+          "id": "weather.shiver",
+          "term": "shiver",
+          "ipa": "/ˈʃɪvər/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "drżeć z zimna",
+          "definition": "To shake because you are cold.",
+          "register": "neutralny",
+          "contextPl": "Reakcja na zimno",
+          "natural": "",
+          "forms": "shiver – shivered – shivered",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I was shivering by the time I finished shoveling.",
+              "pl": "Kiedy skończyłem odśnieżać, trząsłem się z zimna.",
+              "focusEn": "shivering",
+              "focusPl": "trząsłem się z zimna"
+            },
+            {
+              "en": "The dog is shivering, let's take him inside.",
+              "pl": "Pies drży z zimna, weźmy go do środka.",
+              "focusEn": "shivering",
+              "focusPl": "drży z zimna"
+            }
+          ],
+          "acceptedAnswers": [
+            "shiver",
+            "shivered"
+          ],
+          "acceptedTranslations": [
+            "drżeć z zimna",
+            "trząść się",
+            "dygotać"
+          ]
+        },
+        {
+          "id": "weather.bundle-up",
+          "term": "bundle up",
+          "ipa": "/ˌbʌndl ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "ciepło się ubrać",
+          "definition": "To put on a lot of warm clothes.",
+          "register": "potoczny",
+          "contextPl": "Ubieranie się na mróz",
+          "natural": "",
+          "forms": "bundle – bundled – bundled",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bundle up, kids, it's snowing hard!",
+              "pl": "Ubierzcie się ciepło, dzieci, mocno sypie!",
+              "focusEn": "Bundle up",
+              "focusPl": "Ubierzcie się ciepło"
+            },
+            {
+              "en": "I bundled up in a hat, a scarf, and two pairs of socks.",
+              "pl": "Opatuliłem się czapką, szalikiem i dwiema parami skarpet.",
+              "focusEn": "bundled up",
+              "focusPl": "Opatuliłem się"
+            }
+          ],
+          "acceptedAnswers": [
+            "bundle up",
+            "bundled up"
+          ],
+          "acceptedTranslations": [
+            "ciepło się ubrać",
+            "opatulić się",
+            "opatulać się"
+          ]
+        },
+        {
+          "id": "weather.snowplow",
+          "term": "snowplow",
+          "ipa": "/ˈsnoʊplaʊ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "pług śnieżny",
+          "definition": "A vehicle that pushes snow off roads.",
+          "register": "neutralny",
+          "contextPl": "Odśnieżanie ulic",
+          "natural": "",
+          "forms": "snowplows",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska: snowplow (brytyjska: snowplough).",
+          "examples": [
+            {
+              "en": "The snowplow finally came down our street at nine.",
+              "pl": "Pług śnieżny w końcu przejechał naszą ulicą o dziewiątej.",
+              "focusEn": "snowplow",
+              "focusPl": "Pług śnieżny"
+            },
+            {
+              "en": "The snowplow left a wall of snow in front of our driveway.",
+              "pl": "Pług śnieżny usypał wał śniegu przed naszym podjazdem.",
+              "focusEn": "snowplow",
+              "focusPl": "Pług śnieżny"
+            }
+          ],
+          "acceptedAnswers": [
+            "snowplow",
+            "snow plow"
+          ],
+          "acceptedTranslations": [
+            "pług śnieżny",
+            "odśnieżarka"
+          ]
+        },
+        {
+          "id": "weather.wind-chill",
+          "term": "wind chill",
+          "ipa": "/ˈwɪnd ˌtʃɪl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "temperatura odczuwalna",
+          "definition": "How cold it feels because of the wind.",
+          "register": "specjalistyczny",
+          "contextPl": "Prognoza zimą",
+          "natural": "",
+          "forms": "",
+          "collocations": "with the wind chill",
+          "synonyms": "feels like",
+          "antonyms": "",
+          "notePl": "W aplikacjach zwykle jako „feels like”.",
+          "examples": [
+            {
+              "en": "The wind chill makes it feel much colder than it is.",
+              "pl": "Przez wiatr temperatura odczuwalna jest dużo niższa niż rzeczywista.",
+              "focusEn": "wind chill",
+              "focusPl": "temperatura odczuwalna"
+            },
+            {
+              "en": "Check the wind chill before you go jogging in this snow.",
+              "pl": "Sprawdź temperaturę odczuwalną, zanim pójdziesz biegać w tym śniegu.",
+              "focusEn": "wind chill",
+              "focusPl": "temperaturę odczuwalną"
+            }
+          ],
+          "acceptedAnswers": [
+            "wind chill",
+            "windchill"
+          ],
+          "acceptedTranslations": [
+            "temperatura odczuwalna"
+          ]
+        }
+      ]
+    }
+  ]
+}

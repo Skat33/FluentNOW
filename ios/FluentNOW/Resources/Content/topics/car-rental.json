@@ -1,0 +1,511 @@
+{
+  "schemaVersion": 1,
+  "id": "car-rental",
+  "namePl": "Wypożyczalnia samochodów",
+  "nameEn": "Car Rental",
+  "group": "travel",
+  "symbol": "car.2",
+  "summaryPl": "Rezerwacja auta, umowa najmu, ubezpieczenie, odbiór i oględziny samochodu oraz jego zwrot.",
+  "aliases": [
+    "wypożyczalnia samochodów",
+    "wynajem auta",
+    "wypożyczenie samochodu",
+    "car rental",
+    "rental car",
+    "rent a car"
+  ],
+  "categories": [
+    {
+      "id": "car-rental.booking",
+      "namePl": "Rezerwacja auta",
+      "scenePl": "Wybieranie i rezerwowanie samochodu w aplikacji wypożyczalni przed wakacjami",
+      "entries": [
+        {
+          "id": "car-rental.rent",
+          "term": "rent",
+          "ipa": "/rent/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wypożyczyć",
+          "definition": "To pay money to use something, like a car, for a period of time.",
+          "register": "neutralny",
+          "contextPl": "Wynajem auta",
+          "natural": "",
+          "forms": "rents – rented – rented",
+          "collocations": "rent a car; rent for a week",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po brytyjsku częściej „hire a car”.",
+          "examples": [
+            {
+              "en": "We're going to rent a car at the airport and drive to the coast.",
+              "pl": "Wypożyczymy samochód na lotnisku i pojedziemy na wybrzeże.",
+              "focusEn": "rent",
+              "focusPl": "Wypożyczymy"
+            },
+            {
+              "en": "I rented a small car for five days, and it was cheaper than taxis.",
+              "pl": "Wypożyczyłem małe auto na pięć dni i wyszło taniej niż taksówki.",
+              "focusEn": "rented",
+              "focusPl": "Wypożyczyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "rent",
+            "hire"
+          ],
+          "acceptedTranslations": [
+            "wypożyczyć",
+            "wynająć",
+            "wypożyczać"
+          ]
+        },
+        {
+          "id": "car-rental.rental-car",
+          "term": "rental car",
+          "ipa": "/ˈrentl ˌkɑːr/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wypożyczony samochód",
+          "definition": "A car that you pay to use for a short time.",
+          "register": "neutralny",
+          "contextPl": "Wynajem auta",
+          "natural": "",
+          "forms": "rental cars",
+          "collocations": "pick up a rental car; return the rental car",
+          "synonyms": "rental",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our rental car had only ten miles on it, it was brand new.",
+              "pl": "Nasz wypożyczony samochód miał przejechane zaledwie kilkanaście kilometrów, był całkiem nowy.",
+              "focusEn": "rental car",
+              "focusPl": "wypożyczony samochód"
+            },
+            {
+              "en": "I booked the rental car online to get a better price.",
+              "pl": "Zarezerwowałem wypożyczony samochód przez internet, żeby dostać lepszą cenę.",
+              "focusEn": "rental car",
+              "focusPl": "wypożyczony samochód"
+            }
+          ],
+          "acceptedAnswers": [
+            "rental car",
+            "rental"
+          ],
+          "acceptedTranslations": [
+            "wypożyczony samochód",
+            "auto z wypożyczalni"
+          ]
+        },
+        {
+          "id": "car-rental.car-rental-company",
+          "term": "car rental company",
+          "ipa": "/ˈkɑːr ˌrentl ˌkʌmpəni/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wypożyczalnia samochodów",
+          "definition": "A business that rents cars to customers.",
+          "register": "neutralny",
+          "contextPl": "Wynajem auta",
+          "natural": "",
+          "forms": "car rental companies",
+          "collocations": "compare car rental companies",
+          "synonyms": "rental agency",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We compared prices from five car rental companies before booking.",
+              "pl": "Przed rezerwacją porównaliśmy ceny w pięciu wypożyczalniach samochodów.",
+              "focusEn": "car rental companies",
+              "focusPl": "wypożyczalniach samochodów"
+            },
+            {
+              "en": "The car rental company sent me an email with the pick-up details.",
+              "pl": "Wypożyczalnia samochodów wysłała mi maila ze szczegółami odbioru.",
+              "focusEn": "car rental company",
+              "focusPl": "Wypożyczalnia samochodów"
+            }
+          ],
+          "acceptedAnswers": [
+            "car rental company",
+            "rental company",
+            "rental agency"
+          ],
+          "acceptedTranslations": [
+            "wypożyczalnia samochodów",
+            "firma wynajmująca auta"
+          ]
+        },
+        {
+          "id": "car-rental.compact",
+          "term": "compact",
+          "ipa": "/ˈkɑːmpækt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "samochód kompaktowy",
+          "definition": "A small car category, good for city driving.",
+          "register": "neutralny",
+          "contextPl": "Klasy samochodów",
+          "natural": "",
+          "forms": "compacts",
+          "collocations": "book a compact; compact car",
+          "synonyms": "small car",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A compact is fine for two people with carry-on bags.",
+              "pl": "Samochód kompaktowy wystarczy dla dwóch osób z bagażem podręcznym.",
+              "focusEn": "compact",
+              "focusPl": "Samochód kompaktowy"
+            },
+            {
+              "en": "I booked a compact, but they gave me a bigger car for free.",
+              "pl": "Zarezerwowałem samochód kompaktowy, ale dali mi za darmo większy.",
+              "focusEn": "compact",
+              "focusPl": "samochód kompaktowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "compact",
+            "compact car"
+          ],
+          "acceptedTranslations": [
+            "samochód kompaktowy",
+            "kompakt"
+          ]
+        },
+        {
+          "id": "car-rental.suv",
+          "term": "SUV",
+          "ipa": "/ˌes juː ˈviː/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "SUV",
+          "definition": "A large car with a high body, often with four-wheel drive.",
+          "register": "neutralny",
+          "contextPl": "Klasy samochodów",
+          "natural": "",
+          "forms": "SUVs",
+          "collocations": "rent an SUV; full-size SUV",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Skrót od „sport utility vehicle”.",
+          "examples": [
+            {
+              "en": "We need an SUV because we're going to the mountains in winter.",
+              "pl": "Potrzebujemy SUV-a, bo jedziemy zimą w góry.",
+              "focusEn": "SUV",
+              "focusPl": "SUV-a"
+            },
+            {
+              "en": "The SUV was huge, and I was scared to park it downtown.",
+              "pl": "SUV był ogromny i bałem się nim parkować w centrum.",
+              "focusEn": "SUV",
+              "focusPl": "SUV"
+            }
+          ],
+          "acceptedAnswers": [
+            "SUV"
+          ],
+          "acceptedTranslations": [
+            "SUV",
+            "terenówka"
+          ]
+        },
+        {
+          "id": "car-rental.minivan",
+          "term": "minivan",
+          "ipa": "/ˈmɪnivæn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "minivan",
+          "definition": "A tall car with seats for seven or eight people.",
+          "register": "neutralny",
+          "contextPl": "Klasy samochodów",
+          "natural": "",
+          "forms": "minivans",
+          "collocations": "rent a minivan; seven-seat minivan",
+          "synonyms": "van",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With three kids and all our bags, we had to rent a minivan.",
+              "pl": "Z trójką dzieci i wszystkimi bagażami musieliśmy wypożyczyć minivana.",
+              "focusEn": "minivan",
+              "focusPl": "minivana"
+            },
+            {
+              "en": "The minivan had sliding doors, which was great for the kids.",
+              "pl": "Minivan miał przesuwane drzwi, co było świetne dla dzieci.",
+              "focusEn": "minivan",
+              "focusPl": "Minivan"
+            }
+          ],
+          "acceptedAnswers": [
+            "minivan",
+            "van"
+          ],
+          "acceptedTranslations": [
+            "minivan",
+            "van",
+            "samochód rodzinny"
+          ]
+        },
+        {
+          "id": "car-rental.daily-rate",
+          "term": "daily rate",
+          "ipa": "/ˌdeɪli ˈreɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stawka dzienna",
+          "definition": "The price for renting a car for one day.",
+          "register": "neutralny",
+          "contextPl": "Ceny wynajmu",
+          "natural": "",
+          "forms": "daily rates",
+          "collocations": "low daily rate; daily rate plus taxes",
+          "synonyms": "price per day",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The daily rate looks cheap, but taxes and fees almost double it.",
+              "pl": "Stawka dzienna wygląda na niską, ale podatki i opłaty prawie ją podwajają.",
+              "focusEn": "daily rate",
+              "focusPl": "Stawka dzienna"
+            },
+            {
+              "en": "The weekly price was lower than seven times the daily rate.",
+              "pl": "Cena tygodniowa była niższa niż siedmiokrotność stawki dziennej.",
+              "focusEn": "daily rate",
+              "focusPl": "stawki dziennej"
+            }
+          ],
+          "acceptedAnswers": [
+            "daily rate",
+            "price per day"
+          ],
+          "acceptedTranslations": [
+            "stawka dzienna",
+            "cena za dzień",
+            "dobowa stawka"
+          ]
+        },
+        {
+          "id": "car-rental.unlimited-mileage",
+          "term": "unlimited mileage",
+          "ipa": "/ˌʌnlɪmɪtɪd ˈmaɪlɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bez limitu kilometrów",
+          "definition": "A rental deal where you can drive as far as you want without paying more.",
+          "register": "neutralny",
+          "contextPl": "Ceny wynajmu",
+          "natural": "",
+          "forms": "",
+          "collocations": "includes unlimited mileage",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA odległości liczy się w milach.",
+          "examples": [
+            {
+              "en": "Make sure the deal includes unlimited mileage, we're driving across three states.",
+              "pl": "Upewnij się, że oferta jest bez limitu kilometrów, przejedziemy przez trzy stany.",
+              "focusEn": "unlimited mileage",
+              "focusPl": "bez limitu kilometrów"
+            },
+            {
+              "en": "With unlimited mileage, we didn't worry about our long road trip.",
+              "pl": "Dzięki ofercie bez limitu kilometrów nie martwiliśmy się długą podróżą.",
+              "focusEn": "unlimited mileage",
+              "focusPl": "bez limitu kilometrów"
+            }
+          ],
+          "acceptedAnswers": [
+            "unlimited mileage",
+            "unlimited miles"
+          ],
+          "acceptedTranslations": [
+            "bez limitu kilometrów",
+            "nielimitowany przebieg"
+          ]
+        },
+        {
+          "id": "car-rental.one-way-rental",
+          "term": "one-way rental",
+          "ipa": "/ˌwʌn weɪ ˈrentl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wynajem w jedną stronę",
+          "definition": "Renting a car in one city and returning it in another.",
+          "register": "neutralny",
+          "contextPl": "Wynajem auta",
+          "natural": "",
+          "forms": "one-way rentals",
+          "collocations": "one-way rental fee",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zwykle wiąże się z dodatkową opłatą.",
+          "examples": [
+            {
+              "en": "A one-way rental from Seattle to San Francisco costs a lot more.",
+              "pl": "Wynajem w jedną stronę z Seattle do San Francisco kosztuje dużo więcej.",
+              "focusEn": "one-way rental",
+              "focusPl": "Wynajem w jedną stronę"
+            },
+            {
+              "en": "We chose a one-way rental so we could fly home from another city.",
+              "pl": "Wybraliśmy wynajem w jedną stronę, żeby móc wrócić samolotem z innego miasta.",
+              "focusEn": "one-way rental",
+              "focusPl": "wynajem w jedną stronę"
+            }
+          ],
+          "acceptedAnswers": [
+            "one-way rental"
+          ],
+          "acceptedTranslations": [
+            "wynajem w jedną stronę",
+            "zwrot w innym mieście"
+          ]
+        },
+        {
+          "id": "car-rental.additional-driver",
+          "term": "additional driver",
+          "ipa": "/əˌdɪʃənl ˈdraɪvər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dodatkowy kierowca",
+          "definition": "A second person who is allowed to drive the rental car.",
+          "register": "neutralny",
+          "contextPl": "Wynajem auta",
+          "natural": "",
+          "forms": "additional drivers",
+          "collocations": "add an additional driver; additional driver fee",
+          "synonyms": "second driver",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Adding my wife as an additional driver cost ten dollars a day.",
+              "pl": "Dopisanie żony jako dodatkowego kierowcy kosztowało dziesięć dolarów dziennie.",
+              "focusEn": "additional driver",
+              "focusPl": "dodatkowego kierowcy"
+            },
+            {
+              "en": "Only the main renter and the additional driver are allowed to drive the car.",
+              "pl": "Samochód może prowadzić tylko główny najemca i dodatkowy kierowca.",
+              "focusEn": "additional driver",
+              "focusPl": "dodatkowy kierowca"
+            }
+          ],
+          "acceptedAnswers": [
+            "additional driver",
+            "second driver",
+            "extra driver"
+          ],
+          "acceptedTranslations": [
+            "dodatkowy kierowca",
+            "drugi kierowca"
+          ]
+        },
+        {
+          "id": "car-rental.young-driver-fee",
+          "term": "young driver fee",
+          "ipa": "/ˌjʌŋ ˈdraɪvər ˌfiː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "opłata za młodego kierowcę",
+          "definition": "An extra charge for drivers under twenty-five.",
+          "register": "neutralny",
+          "contextPl": "Ceny wynajmu",
+          "natural": "",
+          "forms": "young driver fees",
+          "collocations": "pay a young driver fee",
+          "synonyms": "underage driver fee",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm twenty-two, so I had to pay a young driver fee.",
+              "pl": "Mam dwadzieścia dwa lata, więc musiałem zapłacić opłatę za młodego kierowcę.",
+              "focusEn": "young driver fee",
+              "focusPl": "opłatę za młodego kierowcę"
+            },
+            {
+              "en": "The young driver fee was almost as much as the car itself.",
+              "pl": "Opłata za młodego kierowcę była prawie tak wysoka jak cena samego auta.",
+              "focusEn": "young driver fee",
+              "focusPl": "Opłata za młodego kierowcę"
+            }
+          ],
+          "acceptedAnswers": [
+            "young driver fee",
+            "underage driver fee",
+            "young driver surcharge"
+          ],
+          "acceptedTranslations": [
+            "opłata za młodego kierowcę",
+            "dopłata dla młodego kierowcy"
+          ]
+        },
+        {
+          "id": "car-rental.car-seat",
+          "term": "car seat",
+          "ipa": "/ˈkɑːr ˌsiːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "fotelik samochodowy",
+          "definition": "A special seat for a baby or small child in a car.",
+          "register": "neutralny",
+          "contextPl": "Wynajem auta",
+          "natural": "",
+          "forms": "car seats",
+          "collocations": "rent a car seat; install a car seat",
+          "synonyms": "child seat",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We added a car seat for our two-year-old to the booking.",
+              "pl": "Do rezerwacji dodaliśmy fotelik samochodowy dla naszego dwulatka.",
+              "focusEn": "car seat",
+              "focusPl": "fotelik samochodowy"
+            },
+            {
+              "en": "Renting a car seat costs fifteen dollars a day, so we brought our own.",
+              "pl": "Wypożyczenie fotelika samochodowego kosztuje piętnaście dolarów dziennie, więc wzięliśmy własny.",
+              "focusEn": "car seat",
+              "focusPl": "fotelika samochodowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "car seat",
+            "child seat",
+            "booster seat"
+          ],
+          "acceptedTranslations": [
+            "fotelik samochodowy",
+            "fotelik dla dziecka"
+          ]
+        }
+      ]
+    }
+  ]
+}
