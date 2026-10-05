@@ -1,0 +1,186 @@
+import SwiftUI
+import FluentKit
+
+/// Karta zadania słownikowego — wspólna dla sesji słownictwa i sesji łączonej.
+///
+/// - `confidence`: wybór pewności (sesja słownictwa); `nil` w sesji łączonej (pewność 2 jak strona);
+/// - `onFlashcardDecision`: wołane po „Pamiętam” / „Jeszcze nie pamiętam” (sesja słownictwa od razu zapisuje).
+struct VocabExerciseView: View {
+    let model: VocabExerciseModel
+    var confidence: Binding<ConfidenceLevel>?
+    var onFlashcardDecision: (() -> Void)?
+
+    @FocusState private var answerFocused: Bool
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: Spacing.m) {
+            Card(spacing: Spacing.m) {
+                StudyExerciseKindBanner(
+                    model.type == .dictation ? .listening : .vocabulary,
+                    detail: model.content.mode == .pairs ? StudyMode.pairs.namePl : model.type.shortNamePl
+                )
+                VocabMetaRow(model: model)
+                VocabPromptView(model: model)
+                if model.type != .dictation {
+                    StudySentenceAudioButton(
+                        text: model.content.sentenceAudio(solved: model.isFinished || model.revealed),
+                        solved: model.isFinished || model.revealed
+                    )
+                }
+                if model.type == .flashcard {
+                    VocabFlashcardActions(model: model, confidence: confidence, onDecision: onFlashcardDecision)
+                } else if !model.isFinished {
+                    VocabAnswerArea(model: model, focus: $answerFocused)
+                }
+            }
+            .modifier(VocabFlashcardSwipe(model: model, onDecision: onFlashcardDecision))
+
+            if model.isFinished && !(model.type == .flashcard && onFlashcardDecision != nil) {
+                VStack(alignment: .leading, spacing: Spacing.m) {
+                    VocabFeedbackView(model: model)
+                    if let confidence, model.type != .flashcard {
+                        ConfidencePicker(selection: confidence)
+                    }
+                }
+                .id(StudyScrollID.feedback)
+                .transition(.opacity)
+            }
+        }
+        .task(id: model.key) {
+            guard model.type != .flashcard, !model.isFinished else { return }
+            // Fokus po pojawieniu się zadania (klawiatura gotowa od razu).
+            try? await Task.sleep(nanoseconds: 120_000_000)
+            answerFocused = true
+        }
+        .onChange(of: model.phase) { _, phase in
+            switch phase {
+            case .retry:
+                answerFocused = true
+            case .finished:
+                answerFocused = false
+                announceResult()
+            default:
+                break
+            }
+        }
+    }
+
+    private func announceResult() {
+        let summary = VocabFeedbackSummary(model: model)
+        AccessibilityNotification.Announcement(summary.title).post()
+    }
+}
+
+/// Kolekcja · poziom · rejestr + licznik czasu.
+private struct VocabMetaRow: View {
+    let model: VocabExerciseModel
+
+    var body: some View {
+        HStack(alignment: .firstTextBaseline, spacing: Spacing.xs) {
+            Text(model.content.metaLine)
+                .font(FluentFont.footnote)
+                .foregroundStyle(Palette.inkSecondary)
+                .lineLimit(2)
+            Spacer(minLength: Spacing.xs)
+            StudyElapsedClock(startedAt: model.startedAt, stoppedSeconds: model.stoppedSeconds)
+        }
+    }
+}
+
+/// Fiszka: „Odsłoń znaczenie” → pewność → „Jeszcze nie pamiętam” / „Pamiętam”.
+private struct VocabFlashcardActions: View {
+    let model: VocabExerciseModel
+    let confidence: Binding<ConfidenceLevel>?
+    let onDecision: (() -> Void)?
+
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    var body: some View {
+        if model.isFinished {
+            EmptyView()
+        } else if !model.revealed {
+            SecondaryButton("Odsłoń znaczenie", systemImage: "eye") {
+                withAnimation(Motion.resolved(Motion.standard, reduceMotion: reduceMotion, fallback: Motion.reducedFade)) {
+                    model.reveal()
+                }
+            }
+            .keyboardShortcut(.defaultAction)
+        } else {
+            VStack(alignment: .leading, spacing: Spacing.s) {
+                if let confidence {
+                    ConfidencePicker(selection: confidence)
+                }
+                StudyPronunciationButton(expected: model.content.word.en)
+                ViewThatFits(in: .horizontal) {
+                    HStack(spacing: Spacing.s) { buttons }
+                    VStack(spacing: Spacing.xs) { buttons }
+                }
+                Text("Możesz też przesunąć kartę: w prawo — pamiętam, w lewo — jeszcze nie.")
+                    .font(FluentFont.caption)
+                    .foregroundStyle(Palette.inkSecondary)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .accessibilityHidden(true)
+            }
+        }
+    }
+
+    @ViewBuilder
+    private var buttons: some View {
+        SecondaryButton("Jeszcze nie pamiętam") { decide(false) }
+        PrimaryButton("Pamiętam", systemImage: "checkmark") { decide(true) }
+            .keyboardShortcut(.defaultAction)
+    }
+
+    private func decide(_ remembered: Bool) {
+        model.finishFlashcard(remembered: remembered)
+        onDecision?()
+    }
+}
+
+/// Gest przesunięcia odsłoniętej fiszki (w prawo = pamiętam, w lewo = jeszcze nie).
+private struct VocabFlashcardSwipe: ViewModifier {
+    let model: VocabExerciseModel
+    let onDecision: (() -> Void)?
+
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(AppPreferences.self) private var preferences
+    @State private var offset: CGFloat = 0
+    @State private var committed = 0
+
+    private static let threshold: CGFloat = 110
+
+    private var isActive: Bool {
+        model.type == .flashcard && model.revealed && !model.isFinished
+    }
+
+    func body(content: Content) -> some View {
+        content
+            .offset(x: offset)
+            .rotationEffect(.degrees(reduceMotion ? 0 : Double(offset / 40)))
+            .opacity(1 - min(0.4, Double(abs(offset)) / 600))
+            .simultaneousGesture(drag, including: isActive ? .all : .subviews)
+            .sensoryFeedback(FluentHaptic.swipeCommit, trigger: committed) { _, _ in preferences.hapticsEnabled }
+    }
+
+    private var drag: some Gesture {
+        DragGesture(minimumDistance: 24)
+            .onChanged { value in
+                // Tylko wyraźnie poziomy ruch — przewijanie w pionie zostaje dla ScrollView.
+                guard abs(value.translation.width) > abs(value.translation.height) else { return }
+                offset = value.translation.width
+            }
+            .onEnded { value in
+                let width = value.translation.width
+                if abs(width) >= VocabFlashcardSwipe.threshold && abs(width) > abs(value.translation.height) {
+                    committed += 1
+                    model.finishFlashcard(remembered: width > 0)
+                    offset = 0
+                    onDecision?()
+                } else {
+                    withAnimation(Motion.resolved(Motion.standard, reduceMotion: reduceMotion, fallback: Motion.reducedFade)) {
+                        offset = 0
+                    }
+                }
+            }
+    }
+}

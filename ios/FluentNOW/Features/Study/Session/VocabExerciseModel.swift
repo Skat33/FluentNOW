@@ -1,0 +1,216 @@
+import Foundation
+import Observation
+import FluentKit
+
+/// Etap zadania słownikowego.
+enum VocabExercisePhase: Equatable {
+    /// Pierwsza próba (fiszka: przed i po odsłonięciu).
+    case answering
+    /// Pierwsza odpowiedź była błędna — podpowiedź odsłonięta, druga próba.
+    case retry
+    /// Odpowiedź niejednoznaczna — sprawdza asystent AI (można pominąć).
+    case checking
+    /// Wynik gotowy.
+    case finished
+}
+
+/// Stan jednego zadania słownikowego (fiszka, tłumaczenie, luka, znaczenie, dyktando).
+/// Ocena wyłącznie przez FluentKit (`VocabularyGrader.localGrade`) i opcjonalnie `AssistantService`.
+@MainActor
+@Observable
+final class VocabExerciseModel {
+    let content: VocabExerciseContent
+    let key: String
+    let startedAt: Date
+
+    var answer: String = ""
+    private(set) var phase: VocabExercisePhase = .answering
+    private(set) var hintShown = false
+    private(set) var variantsShown = false
+    private(set) var revealed = false
+    private(set) var grade: Grade?
+    private(set) var retryGrade: Grade?
+    private(set) var acceptedTypo = false
+    private(set) var outcome: StudyAnswerOutcome?
+    private(set) var options: [String]
+    private(set) var stoppedSeconds: Double?
+
+    private let variants: AnswerVariants
+    private let assistant: AssistantService?
+    @ObservationIgnored private var assistantTask: Task<Void, Never>?
+    @ObservationIgnored private var pendingLocal: Grade?
+
+    init(content: VocabExerciseContent, key: String, options: [String], variants: AnswerVariants, assistant: AssistantService?) {
+        self.content = content
+        self.key = key
+        self.options = options
+        self.variants = variants
+        self.assistant = assistant
+        self.startedAt = Date()
+    }
+
+    var type: ExerciseType { content.type }
+    var isFinished: Bool { phase == .finished }
+    /// Podpowiedź lub warianty = odpowiedź z pomocą (strona: `hint`).
+    var usedHelp: Bool { hintShown || variantsShown }
+    var canCheck: Bool {
+        (phase == .answering || phase == .retry) && !answer.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+
+    // MARK: Akcje
+
+    func showHint() {
+        guard phase != .finished else { return }
+        hintShown = true
+    }
+
+    func showVariants() {
+        guard phase != .finished else { return }
+        variantsShown = true
+    }
+
+    func choose(_ option: String) {
+        guard phase == .answering || phase == .retry else { return }
+        answer = option
+    }
+
+    /// Wymienia dystraktory, gdy zasoby treści dotarły później (tylko przed pokazaniem wariantów).
+    func replaceOptions(_ newOptions: [String]) {
+        guard !variantsShown, !newOptions.isEmpty else { return }
+        options = newOptions
+    }
+
+    /// Fiszka: odsłonięcie znaczenia zatrzymuje licznik.
+    func reveal() {
+        guard type == .flashcard, !revealed else { return }
+        revealed = true
+        stoppedSeconds = elapsed()
+    }
+
+    /// Fiszka: „Pamiętam” / „Jeszcze nie pamiętam”.
+    func finishFlashcard(remembered: Bool) {
+        guard type == .flashcard, phase != .finished else { return }
+        if !revealed { reveal() }
+        let seconds = stoppedSeconds ?? elapsed()
+        outcome = StudyAnswerOutcome(
+            value: remembered ? "Pamiętam" : "Jeszcze nie pamiętam",
+            correct: remembered,
+            hinted: false,
+            spellingCorrect: remembered,
+            seconds: seconds,
+            explanation: ""
+        )
+        phase = .finished
+    }
+
+    /// Sprawdza wpisaną odpowiedź (Enter / „Sprawdź”).
+    func check() {
+        guard type != .flashcard, canCheck else { return }
+        let value = answer.trimmingCharacters(in: .whitespacesAndNewlines)
+        stoppedSeconds = elapsed()
+        let local = VocabularyGrader.localGrade(
+            answer: value,
+            word: content.gradingWord,
+            meaning: content.meaning,
+            type: type,
+            variants: variants
+        )
+        if local.isCorrect || local.closestAnswer != nil {
+            finish(with: local)
+            return
+        }
+        if let assistant, shouldAskAssistant(assistant) {
+            askAssistant(assistant, answer: value, local: local)
+            return
+        }
+        failed(local)
+    }
+
+    /// Pomija sprawdzanie przez asystenta — zostaje ocena lokalna.
+    func skipAssistant() {
+        guard phase == .checking else { return }
+        assistantTask?.cancel()
+        assistantTask = nil
+        failed(pendingLocal ?? Grade(verdict: .incorrect, explanation: "", spellingCorrect: false))
+    }
+
+    /// Druga próba: rezygnacja — pokaż poprawną odpowiedź.
+    func giveUp() {
+        guard phase == .retry else { return }
+        stoppedSeconds = elapsed()
+        finish(with: retryGrade ?? Grade(verdict: .incorrect, explanation: "", spellingCorrect: false))
+    }
+
+    /// „Uznaj moją odpowiedź” przy literówce: zaliczone, ale z błędem pisowni.
+    func acceptTypo() {
+        guard phase == .finished, !acceptedTypo, var current = outcome, !current.correct, grade?.closestAnswer != nil else { return }
+        acceptedTypo = true
+        current.correct = true
+        current.spellingCorrect = false
+        outcome = current
+    }
+
+    func cancelPendingWork() {
+        assistantTask?.cancel()
+        assistantTask = nil
+    }
+
+    // MARK: Prywatne
+
+    private func elapsed() -> Double {
+        max(0.1, Date().timeIntervalSince(startedAt))
+    }
+
+    private func shouldAskAssistant(_ assistant: AssistantService) -> Bool {
+        assistant.activeProvider != .offline && (type == .recall || type == .meaning)
+    }
+
+    private func askAssistant(_ assistant: AssistantService, answer value: String, local: Grade) {
+        phase = .checking
+        pendingLocal = local
+        let word = content.word
+        let meaning = content.meaning
+        let exerciseType = type
+        let context = content.example
+        assistantTask = Task { [weak self] in
+            let remote = await assistant.grade(answer: value, word: word, meaning: meaning, exerciseType: exerciseType, context: context)
+            guard !Task.isCancelled else { return }
+            self?.assistantReturned(remote, local: local)
+        }
+    }
+
+    private func assistantReturned(_ remote: Grade?, local: Grade) {
+        guard phase == .checking else { return }
+        assistantTask = nil
+        if let remote, !remote.isFailure {
+            finish(with: remote)
+        } else {
+            failed(remote ?? local)
+        }
+    }
+
+    /// Błędna odpowiedź: pierwsza — druga próba z podpowiedzią; kolejna — wynik.
+    private func failed(_ grade: Grade) {
+        if phase == .answering || (phase == .checking && retryGrade == nil) {
+            retryGrade = grade
+            hintShown = true
+            phase = .retry
+            return
+        }
+        finish(with: grade)
+    }
+
+    private func finish(with grade: Grade) {
+        self.grade = grade
+        let correct = !grade.isFailure
+        outcome = StudyAnswerOutcome(
+            value: answer.trimmingCharacters(in: .whitespacesAndNewlines),
+            correct: correct,
+            hinted: usedHelp,
+            spellingCorrect: correct && grade.spellingCorrect,
+            seconds: stoppedSeconds ?? elapsed(),
+            explanation: grade.explanation
+        )
+        phase = .finished
+    }
+}

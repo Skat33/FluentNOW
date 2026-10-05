@@ -1,0 +1,174 @@
+import Foundation
+import Observation
+import FluentKit
+
+/// Model sesji słownictwa: prowadzi `state.session` przez `LearningStore`.
+/// Każda odpowiedź = `Scheduler.recordAnswer` w `store.update(.answer)` (zapis natychmiastowy),
+/// więc przerwana sesja wznawia się sama po ponownym otwarciu aplikacji.
+@MainActor
+@Observable
+final class VocabSessionModel {
+    let store: LearningStore
+    private(set) var exercise: VocabExerciseModel?
+    /// Zadanie wskazuje słowo, którego już nie ma (usunięte na innym urządzeniu).
+    private(set) var missingTask = false
+    var confidence: ConfidenceLevel = .fair
+    /// Identyfikatory recenzji zapisanych w tym uruchomieniu (podsumowanie).
+    private(set) var runReviewIDs: [String] = []
+    private(set) var runSeconds: Double = 0
+
+    private let content: ContentLibrary
+    private let assistant: AssistantService
+    @ObservationIgnored private var resources = StudyResources.fallback
+    @ObservationIgnored private var resourcesLoaded = false
+    @ObservationIgnored private var optionCache: [String: [String]] = [:]
+
+    init(store: LearningStore, content: ContentLibrary, assistant: AssistantService) {
+        self.store = store
+        self.content = content
+        self.assistant = assistant
+    }
+
+    var session: VocabSession? { store.state.session }
+    var isFinished: Bool { session?.isFinished ?? false }
+    var mode: StudyMode { session?.studyMode ?? .mixed }
+
+    /// Wczytuje zasoby oceniania i ustawia bieżące zadanie.
+    func prepare() async {
+        sync()
+        guard !resourcesLoaded else { return }
+        resources = await StudyResources.load(from: content)
+        resourcesLoaded = true
+        optionCache.removeAll()
+        if let exercise, exercise.type == .meaning {
+            exercise.replaceOptions(options(for: exercise.content))
+        }
+    }
+
+    /// Dopasowuje model zadania do `session.index` (po zapisie lub zmianie z innego urządzenia).
+    func sync() {
+        guard let session, let task = session.currentTask else {
+            exercise?.cancelPendingWork()
+            exercise = nil
+            missingTask = false
+            return
+        }
+        let key = VocabExerciseContent.key(index: session.index, task: task)
+        if exercise?.key == key { return }
+        exercise?.cancelPendingWork()
+        guard let content = VocabExerciseContent(task: task, mode: session.studyMode, state: store.state, variants: resources.variants) else {
+            exercise = nil
+            missingTask = true
+            return
+        }
+        missingTask = false
+        confidence = .fair
+        exercise = VocabExerciseModel(
+            content: content,
+            key: key,
+            options: task.type == .meaning ? options(for: content) : [],
+            variants: resources.variants,
+            assistant: assistant
+        )
+        preloadNext(after: session)
+    }
+
+    /// Zapisuje wynik bieżącego zadania i przechodzi dalej.
+    func commit() {
+        guard let exercise, let outcome = exercise.outcome else { return }
+        let reviewID = UUID().uuidString.lowercased()
+        let now = store.now()
+        let task = exercise.content.task
+        let confidenceValue = confidence.rawValue
+        store.update(.answer) { state in
+            state = Scheduler.recordAnswer(
+                state,
+                task: task,
+                correct: outcome.correct,
+                seconds: outcome.seconds,
+                confidence: confidenceValue,
+                hint: outcome.hinted,
+                spellingCorrect: outcome.spellingCorrect,
+                now: now,
+                reviewID: reviewID
+            )
+        }
+        runReviewIDs.append(reviewID)
+        runSeconds += outcome.seconds
+        sync()
+    }
+
+    /// Pomija zadanie ze słowem, którego już nie ma.
+    func skipMissing() {
+        store.update(.session) { state in
+            guard var session = state.session, session.index < session.tasks.count else { return }
+            session.index += 1
+            state.session = session
+        }
+        sync()
+    }
+
+    /// „Jeszcze 5 minut” — nowa krótka sesja w tym samym trybie. Zwraca komunikat, gdy nie ma zadań.
+    func extend() async -> String? {
+        let currentMode = mode
+        let outcome = await StudyStarter.startVocabulary(mode: currentMode, minutes: 5, collection: nil, store: store)
+        switch outcome {
+        case .message(let text):
+            return text
+        default:
+            runReviewIDs = []
+            runSeconds = 0
+            sync()
+            return nil
+        }
+    }
+
+    /// Kończy sesję (czyści `state.session`).
+    func finish() {
+        exercise?.cancelPendingWork()
+        store.update(.session) { state in
+            state.session = nil
+        }
+    }
+
+    /// Dane podsumowania (liczone z recenzji zapisanych w tym uruchomieniu).
+    func summary() -> StudySummaryData {
+        let total = session?.tasks.count ?? 0
+        let correct = session?.correct ?? 0
+        return StudySummaryData.make(
+            state: store.state,
+            total: total,
+            correct: correct,
+            seconds: runSeconds,
+            reviewIDs: runReviewIDs,
+            modeLines: []
+        )
+    }
+
+    // MARK: Prywatne
+
+    private func options(for content: VocabExerciseContent) -> [String] {
+        let cacheKey = "\(content.meaning.id):\(content.task.example)"
+        if let cached = optionCache[cacheKey] { return cached }
+        let computed = MeaningOptions.options(
+            state: store.state,
+            word: content.word,
+            meaning: content.meaning,
+            task: content.task,
+            starterWords: resources.starterWords,
+            answerIndex: resources.answerIndex
+        )
+        optionCache[cacheKey] = computed
+        return computed
+    }
+
+    /// Następne zadanie „znaczenia” liczy dystraktory zawczasu (bez opóźnienia przy przejściu).
+    private func preloadNext(after session: VocabSession) {
+        guard let next = session.tasks.studyItem(at: session.index + 1), next.type == .meaning else { return }
+        Task { @MainActor [weak self] in
+            await Task.yield()
+            guard let self, let content = VocabExerciseContent(task: next, mode: session.studyMode, state: self.store.state, variants: self.resources.variants) else { return }
+            _ = self.options(for: content)
+        }
+    }
+}

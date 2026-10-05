@@ -1,0 +1,17 @@
+# Backlog dla code-qa (zebrane z raportów fali 1–2)
+
+Każdy punkt sprawdzić i naprawić lub uzasadnić w raporcie code-qa.
+
+- [ ] DesignSystem: `ConfidencePicker` i `TagChip` wywołują haptykę mimo wyłączenia jej w ustawieniach (`AppPreferences.hapticsEnabled`) — zgłoszenie ui-learning.
+- [ ] FluentKit: `gradingWord` używa surowego indeksu przykładu, UI używa zawiniętego (modulo) — ui-learning normalizuje w UI; rozważyć poprawkę w FluentKit + test (zgłoszenie ui-learning).
+- [ ] FluentKit: `ContentSearch` trzyma tablice krotek w typie `Sendable`; przekazanie lokalnej funkcji `add` jako nie-ucieczkowego parametru — ryzyka kompilacji (core-engine §4).
+- [ ] FluentKit: testy `testFiveConsecutiveSessionsInterleaveAndFillBudget`, `testInterleaveKeepsAllTasksAndAlternates` — porównać port `TaskInterleaver` z `interleaveTasks` w `web-source/lib/learning.ts` (core-engine §4).
+- [ ] ui-learning ryzyka kompilacji (raport ui-learning §5): atrybuty underline/link w tekście czytanki, wywołania `@MainActor` z closure'ów gestów, `@FocusState` w widokach z innych plików.
+- [ ] design-shell ryzyka kompilacji: raport design-shell §4.
+- [ ] Spójność kontraktu: rzeczywiste sygnatury w `Services/` vs użycie w `Features/` (grep każdego wywołania).
+- [ ] **Poprawność (ważne):** przerwana sesja (słownictwo/combined) zawierająca zadanie dla słowa usuniętego w Słowniku — sesja musi pominąć takie zadanie bez crasha i bez zablokowania (zgłoszenie ui-library). Sprawdzić ścieżkę w ui-learning i FluentKit (`VocabSession`, `CombinedSession`), dodać test.
+- [ ] ui-library ryzyka kompilacji: `.searchable` w widokach pod segmentowanym pickerem (fallback: przenieść do `WordsRootScreen`), `if case` w ViewBuilder w `TodayRootScreen`, `.disabled` na przyciskach w `alert`.
+- [ ] ui-library używa API platform-services spoza CONTRACTS.md (`refreshReminders()`, `SyncStatus.titlePl/detailPl/systemImage`, `AssistantProvider.detailPl`, `refreshAvailability()`, `appleOnDeviceUnavailableReason`, `.previewEmpty`) — potwierdzić, że istnieją z tymi sygnaturami.
+- [ ] Testy jednostkowe czystych funkcji z obszaru ui-library (lista w raporcie ui-library).
+- [ ] Drobne (opcjonalne): wspólny wiersz-checkbox i tokeny kolorów heatmapy w DesignSystem (zgłoszenie ui-library).
+- [ ] platform-services prośby i ryzyka: raport platform-services §4–§5 (powiadomienia synchronizacji SwiftData, FoundationModels vs SDK iOS 26.0, import JSON na głównym wątku).
