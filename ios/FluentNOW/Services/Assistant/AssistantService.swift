@@ -173,7 +173,7 @@ final class AssistantService {
         case .offline:
             return OfflineAssistant(content: content)
         case .appleOnDevice:
-            #if canImport(FoundationModels)
+            #if canImport(FoundationModels) && !FLUENT_DISABLE_FOUNDATION_MODELS
             if #available(iOS 26.0, *), networkEnabled {
                 return AppleOnDeviceAssistant()
             }

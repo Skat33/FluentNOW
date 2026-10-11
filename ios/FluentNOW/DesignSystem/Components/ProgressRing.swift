@@ -134,10 +134,10 @@ private struct ProgressRingPreviewDemo: View {
         VStack(spacing: Spacing.l) {
             ProgressRing(progress: ProgressMath.fraction(done, of: goal), lineWidth: 12, accessibilityLabel: "Dzienny cel") {
                 VStack(spacing: Spacing.xxs) {
-                    Text("(done)")
+                    Text("\(done)")
                         .font(FluentFont.numberLarge)
                         .contentTransition(.numericText())
-                    Text("z (goal) zadań")
+                    Text("z \(goal) zadań")
                         .font(FluentFont.caption)
                         .foregroundStyle(Palette.inkSecondary)
                 }
@@ -151,7 +151,7 @@ private struct ProgressRingPreviewDemo: View {
             .frame(height: 130)
             .clipShape(RoundedRectangle(cornerRadius: Radius.hero, style: .continuous))
             LinearProgressBar(progress: ProgressMath.fraction(done, of: goal))
-            Stepper("Zadania: (done)", value: $done, in: 0...12)
+            Stepper("Zadania: \(done)", value: $done, in: 0...12)
         }
         .padding(Spacing.screen)
     }

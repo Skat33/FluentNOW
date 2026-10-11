@@ -81,7 +81,7 @@ struct StudyReportSheet: View {
                         .disabled(sent)
                 }
             }
-            .sensoryFeedback(FluentHaptic.answerCorrect, trigger: sent)
+            .fluentSensoryFeedback(FluentHaptic.answerCorrect, trigger: sent)
         }
         .presentationDetents([.medium, .large])
     }

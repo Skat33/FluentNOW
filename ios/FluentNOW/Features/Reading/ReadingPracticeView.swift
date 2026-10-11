@@ -13,6 +13,8 @@ struct ReadingPracticeView: View {
     @State private var isStarting = false
     @State private var error: String?
     @State private var didAutoStart = false
+    /// Szacowany poziom liczony poza `body` (przegląd całego słownika) — odświeżany przy zmianie stanu.
+    @State private var estimate: LevelEstimate?
 
     private var current: ReadingSession? { store.state.reading }
 
@@ -24,7 +26,9 @@ struct ReadingPracticeView: View {
                     if let error {
                         ErrorBanner(message: error, onRetry: { start(proxy: proxy) }, onDismiss: { self.error = nil })
                     }
-                    ReadingLevelCard(estimate: LevelEstimator.estimatedLevel(store.state))
+                    if let estimate {
+                        ReadingLevelCard(estimate: estimate)
+                    }
                     content(proxy: proxy)
                     StudyHistoryList(title: "Ostatnie czytanki", lines: StudyHistoryLine.reading(store.state.readingHistory))
                 }
@@ -32,6 +36,11 @@ struct ReadingPracticeView: View {
                 .frame(maxWidth: .infinity)
                 .padding(.horizontal, Spacing.screen)
                 .padding(.vertical, Spacing.m)
+            }
+            .task(id: store.revision) {
+                let computed = await store.compute { state in LevelEstimator.estimatedLevel(state) }
+                guard !Task.isCancelled else { return }
+                estimate = computed
             }
             .task {
                 guard autoStart, !didAutoStart else { return }
@@ -94,7 +103,7 @@ struct ReadingPracticeView: View {
     }
 
     private func select(question index: Int, choice: Int) {
-        store.update(.answer) { state in
+        store.update(.answer) { (state: inout LearnerState) -> Void in
             guard var reading = state.reading, !reading.submitted, index < reading.reading.questions.count else { return }
             while reading.answers.count < reading.reading.questions.count {
                 reading.answers.append(-1)

@@ -83,11 +83,7 @@ final class PronunciationService {
             permission = .unavailable
             return permission
         }
-        let speechStatus = await withCheckedContinuation { (continuation: CheckedContinuation<SFSpeechRecognizerAuthorizationStatus, Never>) in
-            SFSpeechRecognizer.requestAuthorization { status in
-                continuation.resume(returning: status)
-            }
-        }
+        let speechStatus = await Self.requestSpeechAuthorization()
         guard speechStatus == .authorized else {
             permission = speechStatus == .restricted ? .unavailable : .denied
             return permission
@@ -95,6 +91,17 @@ final class PronunciationService {
         let microphone = await AVAudioApplication.requestRecordPermission()
         permission = microphone ? .granted : .denied
         return permission
+    }
+
+    /// Prośba o zgodę poza `@MainActor`: Speech woła blok na własnej kolejce — domknięcie utworzone
+    /// w kontekście `@MainActor` mogłoby dostać izolację głównego aktora (pułapka sprawdzania izolacji
+    /// w czasie wykonania w nowszych trybach Swift).
+    nonisolated private static func requestSpeechAuthorization() async -> SFSpeechRecognizerAuthorizationStatus {
+        await withCheckedContinuation { (continuation: CheckedContinuation<SFSpeechRecognizerAuthorizationStatus, Never>) in
+            SFSpeechRecognizer.requestAuthorization { status in
+                continuation.resume(returning: status)
+            }
+        }
     }
 
     private static func currentPermission(recognizer: SFSpeechRecognizer?) -> Permission {

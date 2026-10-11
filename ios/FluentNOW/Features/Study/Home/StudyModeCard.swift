@@ -42,12 +42,13 @@ struct StudyModeCard: View {
         }
         .buttonStyle(.plain)
         .disabled(disabledReason != nil)
-        .sensoryFeedback(FluentHaptic.selection, trigger: isSelected)
+        .fluentSensoryFeedback(FluentHaptic.selection, trigger: isSelected)
         .accessibilityElement(children: .ignore)
         .accessibilityLabel(Text(mode.namePl))
         .accessibilityValue(Text(isSelected ? "Zaznaczono" : ""))
         .accessibilityHint(Text(disabledReason ?? mode.studyDescription))
-        .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
+        .accessibilityAddTraits(.isButton)
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 }
 

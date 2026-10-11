@@ -72,7 +72,7 @@ struct TopicDetailScreen: View {
                 onToggle: { toggle(entry.id) }
             )
         }
-        .sensoryFeedback(FluentHaptic.answerCorrect, trigger: addedTrigger)
+        .fluentSensoryFeedback(FluentHaptic.answerCorrect, trigger: addedTrigger)
     }
 
     // MARK: Logika

@@ -79,7 +79,9 @@ enum PersistenceController {
 
         // Ostateczność: magazyn w pamięci — aplikacja działa, ale zmiany nie przetrwają zamknięcia.
         let memoryNotice = "Nie udało się otworzyć bazy danych. Zmiany z tej sesji nie zostaną zapisane — wyeksportuj kopię przed zamknięciem aplikacji."
-        if let container = try? ModelContainer(for: schema, configurations: [ModelConfiguration(isStoredInMemoryOnly: true)]) {
+        // `cloudKitDatabase: .none` jawnie: domyślne `.automatic` przy uprawnieniu iCloud próbowałoby
+        // podpiąć CloudKit także pod magazyn w pamięci.
+        if let container = try? ModelContainer(for: schema, configurations: [ModelConfiguration(schema: schema, isStoredInMemoryOnly: true, cloudKitDatabase: .none)]) {
             return LiveStoreSetup(
                 persistence: SwiftDataPersistence(container: container),
                 syncMode: .localOnly(memoryNotice),

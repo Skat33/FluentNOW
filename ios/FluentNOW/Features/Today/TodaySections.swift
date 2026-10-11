@@ -47,7 +47,7 @@ struct TodayRecommendationsSection: View {
                     }
                 }
             }
-            .sensoryFeedback(FluentHaptic.answerCorrect, trigger: addTrigger)
+            .fluentSensoryFeedback(FluentHaptic.answerCorrect, trigger: addTrigger)
         }
     }
 

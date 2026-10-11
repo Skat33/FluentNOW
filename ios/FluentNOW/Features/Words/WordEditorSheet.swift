@@ -80,7 +80,7 @@ struct WordEditorSheet: View {
         }
         .presentationDetents([.large])
         .interactiveDismissDisabled(hasChanges)
-        .sensoryFeedback(FluentHaptic.answerCorrect, trigger: savedTrigger)
+        .fluentSensoryFeedback(FluentHaptic.answerCorrect, trigger: savedTrigger)
     }
 
     /// Bezpieczne powiązanie z elementem tablicy (po usunięciu elementu SwiftUI może jeszcze raz odczytać stary indeks).
@@ -103,7 +103,7 @@ struct WordEditorSheet: View {
         let now = store.now()
         let id = word.id
         let currentDraft = draft
-        store.update(.edit) { state in
+        store.update(.edit) { (state: inout LearnerState) -> Void in
             guard let current = state.word(id: id) else { return }
             WordMutations.replace(&state, with: currentDraft.applied(to: current, now: now))
         }

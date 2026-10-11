@@ -50,9 +50,12 @@ public enum StateMigration {
             session.tasks = done + pending
             session.index = index
             session.correct = min(session.correct, index)
-            // A completed prefix that references deleted meanings cannot be resumed safely.
+            // A completed prefix that references deleted meanings is only history (its answers are
+            // already scored). Keep the session while something is left to resume — deleting a word
+            // already answered must not throw away the rest of a paused session (code-qa).
+            // A finished session whose prefix is broken is dropped, as before.
             let prefixValid = done.allSatisfy { task in state.word(id: task.wordId)?.meaning(id: task.meaningId) != nil }
-            state.session = prefixValid ? session : nil
+            state.session = (prefixValid || !pending.isEmpty) ? session : nil
         }
 
         if var practice = state.practice {

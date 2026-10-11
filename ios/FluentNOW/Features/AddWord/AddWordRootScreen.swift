@@ -79,7 +79,7 @@ struct AddWordRootScreen: View {
         .presentationDetents([.medium, .large], selection: $detent)
         .presentationDragIndicator(.visible)
         .interactiveDismissDisabled(hasUnsavedInput)
-        .sensoryFeedback(FluentHaptic.answerCorrect, trigger: addedTrigger)
+        .fluentSensoryFeedback(FluentHaptic.answerCorrect, trigger: addedTrigger)
         .task(id: query) { await search() }
         .onChange(of: query) { _, _ in
             lookup = nil

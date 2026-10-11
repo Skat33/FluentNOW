@@ -45,5 +45,6 @@ private struct AppearanceRoot<Content: View>: View {
     var body: some View {
         content
             .preferredColorScheme(preferences.appearance.colorScheme)
+            .environment(\.fluentHapticsEnabled, preferences.hapticsEnabled)
     }
 }

@@ -43,7 +43,7 @@ struct SettingsExportScreen: View {
                         Label(message, systemImage: "exclamationmark.triangle")
                             .foregroundStyle(Palette.danger)
                     }
-                    Button("Spróbuj ponownie") { prepare() }
+                    Button("Spróbuj ponownie") { Task { await prepare() } }
                 }
             }
         }
@@ -51,7 +51,7 @@ struct SettingsExportScreen: View {
         .background(Palette.background)
         .navigationTitle("Eksport")
         .navigationBarTitleDisplayMode(.inline)
-        .task { prepare() }
+        .task { await prepare() }
         .confirmationDialog("Usunąć zgłoszenia?", isPresented: $confirmClearReports, titleVisibility: .visible) {
             Button("Usuń", role: .destructive) {
                 reports.removeAll()
@@ -61,11 +61,12 @@ struct SettingsExportScreen: View {
         }
     }
 
-    private func prepare() {
+    /// Kopie kodowane poza głównym wątkiem (duży słownik nie przycina wejścia w ekran).
+    private func prepare() async {
         isPreparing = true
         errors = []
-        do { jsonFile = try store.exportJSONFile() } catch { errors.append("Kopia JSON: \(error.localizedDescription)") }
-        do { csvFile = try store.exportAnkiCSVFile() } catch { errors.append("CSV: \(error.localizedDescription)") }
+        do { jsonFile = try await store.exportJSONFileInBackground() } catch { errors.append("Kopia JSON: \(error.localizedDescription)") }
+        do { csvFile = try await store.exportAnkiCSVFileInBackground() } catch { errors.append("CSV: \(error.localizedDescription)") }
         if !reports.reports.isEmpty {
             do { reportsFile = try reports.exportFile() } catch { errors.append("Zgłoszenia: \(error.localizedDescription)") }
         }

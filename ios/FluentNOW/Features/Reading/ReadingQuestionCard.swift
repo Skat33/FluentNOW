@@ -29,7 +29,7 @@ struct ReadingQuestionCard: View {
                 ReadingQuestionResult(question: question, chosen: chosen)
             }
         }
-        .sensoryFeedback(FluentHaptic.selection, trigger: chosen)
+        .fluentSensoryFeedback(FluentHaptic.selection, trigger: chosen)
     }
 }
 

@@ -1,6 +1,6 @@
 import Foundation
 import FluentKit
-#if canImport(FoundationModels)
+#if canImport(FoundationModels) && !FLUENT_DISABLE_FOUNDATION_MODELS
 import FoundationModels
 #endif
 
@@ -8,7 +8,7 @@ import FoundationModels
 enum AppleOnDeviceSupport {
     /// `true`, gdy model systemowy jest gotowy do użycia.
     static var isAvailable: Bool {
-        #if canImport(FoundationModels)
+        #if canImport(FoundationModels) && !FLUENT_DISABLE_FOUNDATION_MODELS
         if #available(iOS 26.0, *) {
             return AppleOnDeviceAssistant.modelIsAvailable
         }
@@ -18,7 +18,7 @@ enum AppleOnDeviceSupport {
 
     /// Powód niedostępności po polsku (do Ustawień).
     static var unavailableReasonPl: String {
-        #if canImport(FoundationModels)
+        #if canImport(FoundationModels) && !FLUENT_DISABLE_FOUNDATION_MODELS
         if #available(iOS 26.0, *) {
             return AppleOnDeviceAssistant.unavailableReasonPl
         }
@@ -27,7 +27,7 @@ enum AppleOnDeviceSupport {
     }
 }
 
-#if canImport(FoundationModels)
+#if canImport(FoundationModels) && !FLUENT_DISABLE_FOUNDATION_MODELS
 
 /// Asystent na modelu Apple (Foundation Models) — prywatnie, bez internetu.
 /// Generowanie strukturalne (`@Generable`), wynik walidowany jak każda treść AI.

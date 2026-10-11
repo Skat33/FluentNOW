@@ -17,6 +17,9 @@ struct CombinedSessionView: View {
                 LoadingStateView("Przygotowuję sesję…")
             }
         }
+        .onDisappear {
+            model?.suspend()
+        }
         .task {
             if model == nil {
                 let created = CombinedSessionModel(store: store, content: env.content, assistant: assistant)

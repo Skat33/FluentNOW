@@ -3,6 +3,10 @@ import FluentKit
 
 /// Pierwsze uruchomienie: wybierz poziom i 1–3 tematy → słowa dodane → pierwsza sesja.
 struct TodayOnboardingView: View {
+    /// Trwa dodawanie słów — stan trzyma ekran Dzisiaj, żeby onboarding (z paskiem postępu)
+    /// nie zniknął po pierwszej partii słów (słownik przestaje być pusty w trakcie dodawania).
+    @Binding var isAdding: Bool
+
     @Environment(AppEnvironment.self) private var env
     @Environment(LearningStore.self) private var store
     @Environment(AppPreferences.self) private var preferences
@@ -11,7 +15,6 @@ struct TodayOnboardingView: View {
     @State private var level = "A2"
     @State private var index: TopicIndex?
     @State private var chosen: [String] = []
-    @State private var isAdding = false
     @State private var progress: Double = 0
     @State private var errorMessage: String?
 
@@ -134,7 +137,7 @@ private struct TodayOnboardingLevelCard: View {
                 .accessibilityAddTraits(level == item ? .isSelected : [])
             }
         }
-        .sensoryFeedback(FluentHaptic.selection, trigger: level)
+        .fluentSensoryFeedback(FluentHaptic.selection, trigger: level)
     }
 }
 

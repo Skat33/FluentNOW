@@ -48,7 +48,7 @@ enum AssistantValidation {
         copy.register = trimmed(sense.register).isEmpty ? "neutralny" : trimmed(sense.register)
         copy.natural = trimmed(sense.natural)
         copy.collection = trimmed(sense.collection)
-        copy.examples = Array(sense.examples.compactMap(sanitize).prefix(maxExamples))
+        copy.examples = Array(sense.examples.compactMap { sanitize($0) }.prefix(maxExamples))
         var answers = sense.acceptedAnswers.map(trimmed).filter { !$0.isEmpty }
         if !answers.contains(where: { $0.lowercased() == term.lowercased() }) {
             answers.insert(term, at: 0)

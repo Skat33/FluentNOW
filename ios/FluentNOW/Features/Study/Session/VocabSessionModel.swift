@@ -54,6 +54,14 @@ final class VocabSessionModel {
             return
         }
         let key = VocabExerciseContent.key(index: session.index, task: task)
+        // Słowo/znaczenie usunięte w trakcie zadania (Słownik, inne urządzenie) — zamiast odpowiadać
+        // na nieistniejące zadanie pokaż kartę „Pomiń zadanie”.
+        if store.state.word(id: task.wordId)?.meaning(id: task.meaningId) == nil {
+            exercise?.cancelPendingWork()
+            exercise = nil
+            missingTask = true
+            return
+        }
         if exercise?.key == key { return }
         exercise?.cancelPendingWork()
         guard let content = VocabExerciseContent(task: task, mode: session.studyMode, state: store.state, variants: resources.variants) else {
@@ -80,7 +88,8 @@ final class VocabSessionModel {
         let now = store.now()
         let task = exercise.content.task
         let confidenceValue = confidence.rawValue
-        store.update(.answer) { state in
+        let expectedIndex = session?.index
+        store.update(.answer) { (state: inout LearnerState) -> Void in
             state = Scheduler.recordAnswer(
                 state,
                 task: task,
@@ -92,6 +101,13 @@ final class VocabSessionModel {
                 now: now,
                 reviewID: reviewID
             )
+            // `recordAnswer` nie zmienia stanu, gdy słowa/znaczenia już nie ma (usunięte w międzyczasie) —
+            // wtedy sesja nie przesunęłaby się dalej i ekran by utknął. Przesuwamy indeks sami.
+            if let expectedIndex, var current = state.session, current.index == expectedIndex,
+               current.index < current.tasks.count {
+                current.index += 1
+                state.session = current
+            }
         }
         runReviewIDs.append(reviewID)
         runSeconds += outcome.seconds
@@ -100,8 +116,11 @@ final class VocabSessionModel {
 
     /// Pomija zadanie ze słowem, którego już nie ma.
     func skipMissing() {
-        store.update(.session) { state in
-            guard var session = state.session, session.index < session.tasks.count else { return }
+        store.update(.session) { (state: inout LearnerState) -> Void in
+            // Pomijamy tylko zadanie, którego słowa naprawdę nie ma (podwójne dotknięcie nie pominie
+            // kolejnego, poprawnego zadania).
+            guard var session = state.session, let task = session.currentTask,
+                  state.word(id: task.wordId)?.meaning(id: task.meaningId) == nil else { return }
             session.index += 1
             state.session = session
         }
@@ -121,6 +140,11 @@ final class VocabSessionModel {
             sync()
             return nil
         }
+    }
+
+    /// Ekran sesji znika (przerwa) — przerywa oczekiwanie na asystenta AI; stan sesji zostaje.
+    func suspend() {
+        exercise?.cancelPendingWork()
     }
 
     /// Kończy sesję (czyści `state.session`).

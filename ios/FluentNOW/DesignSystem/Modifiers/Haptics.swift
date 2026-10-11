@@ -70,3 +70,43 @@ enum FeedbackKind: String, Hashable, CaseIterable {
         }
     }
 }
+
+// MARK: - Globalny przełącznik haptyki (Ustawienia → „Wibracje”)
+
+/// Czy aplikacja ma odtwarzać haptykę. Ustawiane w korzeniu aplikacji z `AppPreferences.hapticsEnabled`
+/// (`FluentNOWApp` → `AppearanceRoot`); domyślnie `true` (podglądy, testy).
+/// Komponenty design systemu czytają tę wartość — dzięki temu nie zależą od serwisów aplikacji.
+private struct FluentHapticsEnabledKey: EnvironmentKey {
+    static let defaultValue = true
+}
+
+extension EnvironmentValues {
+    var fluentHapticsEnabled: Bool {
+        get { self[FluentHapticsEnabledKey.self] }
+        set { self[FluentHapticsEnabledKey.self] = newValue }
+    }
+}
+
+/// `.sensoryFeedback`, który respektuje ustawienie haptyki z preferencji.
+private struct FluentSensoryFeedbackModifier<Trigger: Equatable>: ViewModifier {
+    let feedback: SensoryFeedback
+    let trigger: Trigger
+    @Environment(\.fluentHapticsEnabled) private var hapticsEnabled
+
+    func body(content: Content) -> some View {
+        content.sensoryFeedback(feedback, trigger: trigger) { _, _ in
+            hapticsEnabled
+        }
+    }
+}
+
+extension View {
+    /// Jak `.sensoryFeedback(_:trigger:)`, ale wyłączone, gdy użytkownik wyłączył haptykę w Ustawieniach.
+    ///
+    /// ```swift
+    /// .fluentSensoryFeedback(FluentHaptic.selection, trigger: selectedOption)
+    /// ```
+    func fluentSensoryFeedback<Trigger: Equatable>(_ feedback: SensoryFeedback, trigger: Trigger) -> some View {
+        modifier(FluentSensoryFeedbackModifier(feedback: feedback, trigger: trigger))
+    }
+}

@@ -69,7 +69,7 @@ struct ConfidencePicker: View {
             .padding(Spacing.xxs)
             .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: Radius.medium, style: .continuous))
         }
-        .sensoryFeedback(FluentHaptic.selection, trigger: selection)
+        .fluentSensoryFeedback(FluentHaptic.selection, trigger: selection)
         .accessibilityElement(children: .contain)
         .accessibilityLabel(Text(title ?? "Pewność odpowiedzi"))
     }

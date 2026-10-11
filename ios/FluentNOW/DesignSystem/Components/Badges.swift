@@ -70,7 +70,7 @@ struct TagChip: View {
             }
             .buttonStyle(.plain)
             .accessibilityAddTraits(isSelected ? .isSelected : [])
-            .sensoryFeedback(FluentHaptic.selection, trigger: isSelected)
+            .fluentSensoryFeedback(FluentHaptic.selection, trigger: isSelected)
         } else {
             chipLabel(foreground: tone.foreground, background: tone.background)
         }

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-04T14:12:48Z",
+  "generatedAt": "2026-10-11T17:53:41Z",
   "groups": [
     {
       "id": "basics",
@@ -682,6 +682,269 @@
       ]
     },
     {
+      "id": "sightseeing",
+      "namePl": "Zwiedzanie",
+      "nameEn": "Sightseeing",
+      "group": "travel",
+      "symbol": "building.columns",
+      "summaryPl": "Atrakcje turystyczne, wycieczki z przewodnikiem, zabytki, bilety wstępu i wrażenia ze zwiedzania.",
+      "aliases": [
+        "zwiedzanie",
+        "atrakcje",
+        "zabytki",
+        "wycieczka",
+        "przewodnik",
+        "turystyka",
+        "sightseeing",
+        "tour"
+      ],
+      "entryCount": 63,
+      "levels": {
+        "A1": 5,
+        "A2": 14,
+        "B1": 25,
+        "B2": 17,
+        "C1": 2,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "sightseeing.attractions",
+          "namePl": "Atrakcje turystyczne",
+          "entryCount": 12
+        },
+        {
+          "id": "sightseeing.tours",
+          "namePl": "Wycieczki z przewodnikiem",
+          "entryCount": 15
+        },
+        {
+          "id": "sightseeing.monuments",
+          "namePl": "Zabytki",
+          "entryCount": 14
+        },
+        {
+          "id": "sightseeing.visiting",
+          "namePl": "Bilety i zwiedzanie obiektów",
+          "entryCount": 11
+        },
+        {
+          "id": "sightseeing.impressions",
+          "namePl": "Wrażenia ze zwiedzania",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "beach-vacation",
+      "namePl": "Wakacje nad morzem",
+      "nameEn": "Beach Vacation",
+      "group": "travel",
+      "symbol": "beach.umbrella",
+      "summaryPl": "Plaża, słońce i opalanie, pływanie, sporty wodne oraz wypoczynek w nadmorskim kurorcie.",
+      "aliases": [
+        "plaża",
+        "morze",
+        "wakacje",
+        "urlop nad morzem",
+        "ocean",
+        "opalanie",
+        "pływanie",
+        "kurort",
+        "beach",
+        "vacation"
+      ],
+      "entryCount": 63,
+      "levels": {
+        "A1": 5,
+        "A2": 19,
+        "B1": 22,
+        "B2": 14,
+        "C1": 3,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "beach-vacation.beach",
+          "namePl": "Na plaży",
+          "entryCount": 13
+        },
+        {
+          "id": "beach-vacation.sun",
+          "namePl": "Słońce i opalanie",
+          "entryCount": 11
+        },
+        {
+          "id": "beach-vacation.swimming",
+          "namePl": "Pływanie i sporty wodne",
+          "entryCount": 13
+        },
+        {
+          "id": "beach-vacation.vacation",
+          "namePl": "Urlop w nadmorskim kurorcie",
+          "entryCount": 13
+        },
+        {
+          "id": "beach-vacation.beach-life",
+          "namePl": "Plażowe zwroty i drobiazgi",
+          "entryCount": 13
+        }
+      ]
+    },
+    {
+      "id": "camping-hiking",
+      "namePl": "Kemping i wędrówki",
+      "nameEn": "Camping and Hiking",
+      "group": "travel",
+      "symbol": "tent",
+      "summaryPl": "Kemping i namiot, sprzęt turystyczny, górskie szlaki, przyroda i bezpieczeństwo na wędrówce.",
+      "aliases": [
+        "kemping",
+        "camping",
+        "namiot",
+        "wędrówka",
+        "wędrówki",
+        "trekking",
+        "góry",
+        "szlak",
+        "biwak",
+        "hiking",
+        "camping"
+      ],
+      "entryCount": 62,
+      "levels": {
+        "A1": 1,
+        "A2": 18,
+        "B1": 26,
+        "B2": 12,
+        "C1": 5,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "camping-hiking.camping",
+          "namePl": "Kemping",
+          "entryCount": 14
+        },
+        {
+          "id": "camping-hiking.gear",
+          "namePl": "Sprzęt turystyczny",
+          "entryCount": 12
+        },
+        {
+          "id": "camping-hiking.trail",
+          "namePl": "Na szlaku",
+          "entryCount": 14
+        },
+        {
+          "id": "camping-hiking.nature-safety",
+          "namePl": "Przyroda i bezpieczeństwo",
+          "entryCount": 11
+        },
+        {
+          "id": "camping-hiking.outdoors",
+          "namePl": "Życie na łonie natury",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "border-immigration",
+      "namePl": "Granica i wizy",
+      "nameEn": "Border and Immigration",
+      "group": "travel",
+      "symbol": "person.text.rectangle",
+      "summaryPl": "Kontrola paszportowa, odprawa celna, wizy, pozwolenia na pobyt i obywatelstwo.",
+      "aliases": [
+        "granica",
+        "kontrola graniczna",
+        "paszport",
+        "wiza",
+        "cło",
+        "odprawa celna",
+        "imigracja",
+        "pobyt",
+        "obywatelstwo",
+        "border",
+        "immigration",
+        "customs",
+        "visa"
+      ],
+      "entryCount": 63,
+      "levels": {
+        "A1": 1,
+        "A2": 7,
+        "B1": 23,
+        "B2": 21,
+        "C1": 11,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "border-immigration.passport-control",
+          "namePl": "Kontrola paszportowa",
+          "entryCount": 13
+        },
+        {
+          "id": "border-immigration.customs",
+          "namePl": "Odprawa celna",
+          "entryCount": 12
+        },
+        {
+          "id": "border-immigration.visas",
+          "namePl": "Wizy",
+          "entryCount": 12
+        },
+        {
+          "id": "border-immigration.residence",
+          "namePl": "Pobyt i obywatelstwo",
+          "entryCount": 15
+        },
+        {
+          "id": "border-immigration.entry",
+          "namePl": "Wjazd do kraju i problemy na granicy",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "car-rental",
+      "namePl": "Wypożyczalnia samochodów",
+      "nameEn": "Car Rental",
+      "group": "travel",
+      "symbol": "car.2",
+      "summaryPl": "Rezerwacja auta, umowa najmu, ubezpieczenie, odbiór i oględziny samochodu oraz jego zwrot.",
+      "aliases": [
+        "wypożyczalnia samochodów",
+        "wynajem auta",
+        "wypożyczenie samochodu",
+        "car rental",
+        "rental car",
+        "rent a car"
+      ],
+      "entryCount": 25,
+      "levels": {
+        "A1": 1,
+        "A2": 7,
+        "B1": 5,
+        "B2": 12,
+        "C1": 0,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "car-rental.booking",
+          "namePl": "Rezerwacja auta",
+          "entryCount": 12
+        },
+        {
+          "id": "car-rental.pick-up",
+          "namePl": "Odbiór auta",
+          "entryCount": 13
+        }
+      ]
+    },
+    {
       "id": "restaurant",
       "namePl": "Restauracja",
       "nameEn": "Restaurant",
@@ -1058,6 +1321,251 @@
           "id": "meat-fish-dairy.storage-safety",
           "namePl": "Przechowywanie i bezpieczeństwo",
           "entryCount": 13
+        }
+      ]
+    },
+    {
+      "id": "drinks-bar",
+      "namePl": "Napoje i bar",
+      "nameEn": "Drinks and Bars",
+      "group": "food",
+      "symbol": "wineglass",
+      "summaryPl": "Napoje bezalkoholowe, zamawianie przy barze, piwo i wino, koktajle, toasty i skutki picia.",
+      "aliases": [
+        "napoje",
+        "bar",
+        "pub",
+        "piwo",
+        "wino",
+        "drinki",
+        "koktajle",
+        "picie",
+        "drinks",
+        "bar",
+        "pub",
+        "beverages"
+      ],
+      "entryCount": 75,
+      "levels": {
+        "A1": 9,
+        "A2": 14,
+        "B1": 23,
+        "B2": 18,
+        "C1": 11,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "drinks-bar.soft-drinks",
+          "namePl": "Napoje bezalkoholowe",
+          "entryCount": 13
+        },
+        {
+          "id": "drinks-bar.at-the-bar",
+          "namePl": "Przy barze",
+          "entryCount": 15
+        },
+        {
+          "id": "drinks-bar.beer-wine",
+          "namePl": "Piwo i wino",
+          "entryCount": 12
+        },
+        {
+          "id": "drinks-bar.cocktails",
+          "namePl": "Koktajle i mocne alkohole",
+          "entryCount": 12
+        },
+        {
+          "id": "drinks-bar.socializing",
+          "namePl": "Toasty i wspólne wyjścia",
+          "entryCount": 11
+        },
+        {
+          "id": "drinks-bar.effects",
+          "namePl": "Skutki picia",
+          "entryCount": 12
+        }
+      ]
+    },
+    {
+      "id": "diet-nutrition",
+      "namePl": "Dieta i odżywianie",
+      "nameEn": "Diet and Nutrition",
+      "group": "food",
+      "symbol": "leaf",
+      "summaryPl": "Składniki odżywcze, zdrowe odżywianie, diety, alergie i nietolerancje, waga oraz suplementy.",
+      "aliases": [
+        "dieta",
+        "odżywianie",
+        "zdrowe jedzenie",
+        "zdrowe odżywianie",
+        "alergie pokarmowe",
+        "odchudzanie",
+        "kalorie",
+        "diet",
+        "nutrition",
+        "healthy eating"
+      ],
+      "entryCount": 77,
+      "levels": {
+        "A1": 1,
+        "A2": 13,
+        "B1": 20,
+        "B2": 28,
+        "C1": 14,
+        "C2": 1
+      },
+      "categories": [
+        {
+          "id": "diet-nutrition.nutrients",
+          "namePl": "Składniki odżywcze",
+          "entryCount": 14
+        },
+        {
+          "id": "diet-nutrition.healthy-eating",
+          "namePl": "Zdrowe odżywianie",
+          "entryCount": 14
+        },
+        {
+          "id": "diet-nutrition.diets",
+          "namePl": "Diety i sposoby żywienia",
+          "entryCount": 13
+        },
+        {
+          "id": "diet-nutrition.allergies",
+          "namePl": "Alergie i nietolerancje",
+          "entryCount": 13
+        },
+        {
+          "id": "diet-nutrition.weight",
+          "namePl": "Waga i odchudzanie",
+          "entryCount": 13
+        },
+        {
+          "id": "diet-nutrition.vitamins-supplements",
+          "namePl": "Witaminy i suplementy",
+          "entryCount": 10
+        }
+      ]
+    },
+    {
+      "id": "house-rooms",
+      "namePl": "Dom i pomieszczenia",
+      "nameEn": "House and Rooms",
+      "group": "home",
+      "symbol": "house",
+      "summaryPl": "Pomieszczenia, części domu, rodzaje mieszkań, opis lokum, instalacje i zwroty przy przyjmowaniu gości.",
+      "aliases": [
+        "dom",
+        "mieszkanie",
+        "pokoje",
+        "pomieszczenia",
+        "nieruchomość",
+        "opis mieszkania",
+        "house",
+        "home",
+        "rooms",
+        "apartment"
+      ],
+      "entryCount": 81,
+      "levels": {
+        "A1": 17,
+        "A2": 22,
+        "B1": 24,
+        "B2": 15,
+        "C1": 3,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "house-rooms.rooms",
+          "namePl": "Pomieszczenia",
+          "entryCount": 16
+        },
+        {
+          "id": "house-rooms.parts-of-house",
+          "namePl": "Części domu",
+          "entryCount": 16
+        },
+        {
+          "id": "house-rooms.types-of-housing",
+          "namePl": "Rodzaje mieszkań",
+          "entryCount": 14
+        },
+        {
+          "id": "house-rooms.describing",
+          "namePl": "Opis mieszkania",
+          "entryCount": 14
+        },
+        {
+          "id": "house-rooms.fixtures",
+          "namePl": "Instalacje i łazienka",
+          "entryCount": 13
+        },
+        {
+          "id": "house-rooms.home-life",
+          "namePl": "Goście i życie w domu",
+          "entryCount": 8
+        }
+      ]
+    },
+    {
+      "id": "furniture-household",
+      "namePl": "Meble i wyposażenie",
+      "nameEn": "Furniture and Household Items",
+      "group": "home",
+      "symbol": "sofa",
+      "summaryPl": "Meble do salonu i sypialni, sprzęty AGD, drobne przedmioty domowe, składanie mebli i wystrój wnętrz.",
+      "aliases": [
+        "meble",
+        "wyposażenie",
+        "AGD",
+        "sprzęty domowe",
+        "urządzanie mieszkania",
+        "wystrój",
+        "furniture",
+        "appliances",
+        "household items"
+      ],
+      "entryCount": 79,
+      "levels": {
+        "A1": 5,
+        "A2": 27,
+        "B1": 24,
+        "B2": 13,
+        "C1": 10,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "furniture-household.living-room",
+          "namePl": "Meble do salonu",
+          "entryCount": 14
+        },
+        {
+          "id": "furniture-household.bedroom",
+          "namePl": "Sypialnia",
+          "entryCount": 14
+        },
+        {
+          "id": "furniture-household.appliances",
+          "namePl": "Sprzęty AGD i kuchnia",
+          "entryCount": 13
+        },
+        {
+          "id": "furniture-household.everyday-objects",
+          "namePl": "Drobne przedmioty domowe",
+          "entryCount": 14
+        },
+        {
+          "id": "furniture-household.assembling",
+          "namePl": "Kupowanie i składanie mebli",
+          "entryCount": 13
+        },
+        {
+          "id": "furniture-household.decor",
+          "namePl": "Wystrój wnętrz",
+          "entryCount": 11
         }
       ]
     },
@@ -1494,6 +2002,129 @@
       ]
     },
     {
+      "id": "mental-health",
+      "namePl": "Zdrowie psychiczne",
+      "nameEn": "Mental Health",
+      "group": "health",
+      "symbol": "brain.head.profile",
+      "summaryPl": "Stres i presja, nastrój, terapia, dbanie o siebie, wspieranie innych i idiomy o nerwach.",
+      "aliases": [
+        "zdrowie psychiczne",
+        "stres",
+        "samopoczucie",
+        "terapia",
+        "psycholog",
+        "nastrój",
+        "wypalenie",
+        "mental health",
+        "stress",
+        "therapy",
+        "wellbeing"
+      ],
+      "entryCount": 79,
+      "levels": {
+        "A1": 2,
+        "A2": 6,
+        "B1": 22,
+        "B2": 36,
+        "C1": 13,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "mental-health.stress-pressure",
+          "namePl": "Stres i presja",
+          "entryCount": 14
+        },
+        {
+          "id": "mental-health.mood",
+          "namePl": "Nastrój i samopoczucie",
+          "entryCount": 14
+        },
+        {
+          "id": "mental-health.therapy",
+          "namePl": "Terapia i pomoc specjalisty",
+          "entryCount": 15
+        },
+        {
+          "id": "mental-health.self-care",
+          "namePl": "Dbanie o siebie",
+          "entryCount": 14
+        },
+        {
+          "id": "mental-health.support",
+          "namePl": "Wspieranie innych",
+          "entryCount": 13
+        },
+        {
+          "id": "mental-health.idioms",
+          "namePl": "Idiomy o nerwach i emocjach",
+          "entryCount": 9
+        }
+      ]
+    },
+    {
+      "id": "sleep",
+      "namePl": "Sen",
+      "nameEn": "Sleep",
+      "group": "health",
+      "symbol": "bed.double",
+      "summaryPl": "Zasypianie, poranna pobudka, bezsenność, sny i drzemki, higiena snu i idiomy o spaniu.",
+      "aliases": [
+        "sen",
+        "spanie",
+        "zasypianie",
+        "bezsenność",
+        "budzik",
+        "drzemka",
+        "sleep",
+        "insomnia",
+        "bedtime",
+        "nap"
+      ],
+      "entryCount": 74,
+      "levels": {
+        "A1": 7,
+        "A2": 16,
+        "B1": 14,
+        "B2": 29,
+        "C1": 8,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "sleep.bedtime",
+          "namePl": "Pora snu",
+          "entryCount": 14
+        },
+        {
+          "id": "sleep.morning",
+          "namePl": "Pobudka",
+          "entryCount": 12
+        },
+        {
+          "id": "sleep.sleep-problems",
+          "namePl": "Problemy ze snem",
+          "entryCount": 14
+        },
+        {
+          "id": "sleep.dreams-naps",
+          "namePl": "Sny i drzemki",
+          "entryCount": 13
+        },
+        {
+          "id": "sleep.sleep-habits",
+          "namePl": "Nawyki snu",
+          "entryCount": 13
+        },
+        {
+          "id": "sleep.idioms",
+          "namePl": "Idiomy o spaniu",
+          "entryCount": 8
+        }
+      ]
+    },
+    {
       "id": "job-search",
       "namePl": "Szukanie pracy i rozmowa kwalifikacyjna",
       "nameEn": "Job Search and Interviews",
@@ -1830,6 +2461,117 @@
       ]
     },
     {
+      "id": "salary-benefits",
+      "namePl": "Wynagrodzenie i benefity",
+      "nameEn": "Salary and Benefits",
+      "group": "work",
+      "symbol": "banknote",
+      "summaryPl": "Pensja i pasek wypłaty, podwyżka i awans, ubezpieczenie i inne benefity, urlopy oraz umowa i zakończenie pracy.",
+      "aliases": [
+        "wynagrodzenie",
+        "pensja",
+        "wypłata",
+        "podwyżka",
+        "benefity",
+        "urlop",
+        "umowa o pracę",
+        "salary",
+        "benefits",
+        "pay raise"
+      ],
+      "entryCount": 73,
+      "levels": {
+        "A1": 0,
+        "A2": 4,
+        "B1": 27,
+        "B2": 29,
+        "C1": 13,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "salary-benefits.pay",
+          "namePl": "Pensja i wypłata",
+          "entryCount": 15
+        },
+        {
+          "id": "salary-benefits.raise",
+          "namePl": "Podwyżka i awans",
+          "entryCount": 14
+        },
+        {
+          "id": "salary-benefits.benefits",
+          "namePl": "Benefity",
+          "entryCount": 15
+        },
+        {
+          "id": "salary-benefits.time-off",
+          "namePl": "Urlopy i nieobecności",
+          "entryCount": 14
+        },
+        {
+          "id": "salary-benefits.contract",
+          "namePl": "Umowa i zakończenie pracy",
+          "entryCount": 15
+        }
+      ]
+    },
+    {
+      "id": "customer-service",
+      "namePl": "Obsługa klienta",
+      "nameEn": "Customer Service",
+      "group": "work",
+      "symbol": "headphones",
+      "summaryPl": "Zwroty i wymiany, infolinia i pomoc techniczna, uprzejme formuły konsultanta, gwarancja i naprawy oraz zadowolenie klienta.",
+      "aliases": [
+        "obsługa klienta",
+        "zwrot",
+        "reklamacja",
+        "infolinia",
+        "pomoc techniczna",
+        "gwarancja",
+        "biuro obsługi klienta",
+        "customer service",
+        "customer support"
+      ],
+      "entryCount": 67,
+      "levels": {
+        "A1": 1,
+        "A2": 14,
+        "B1": 29,
+        "B2": 17,
+        "C1": 6,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "customer-service.returns",
+          "namePl": "Zwroty i wymiany",
+          "entryCount": 14
+        },
+        {
+          "id": "customer-service.support",
+          "namePl": "Infolinia i pomoc techniczna",
+          "entryCount": 14
+        },
+        {
+          "id": "customer-service.phrases",
+          "namePl": "Uprzejme formuły konsultanta",
+          "entryCount": 13
+        },
+        {
+          "id": "customer-service.warranty",
+          "namePl": "Gwarancja, naprawy i zamówienia",
+          "entryCount": 13
+        },
+        {
+          "id": "customer-service.satisfaction",
+          "namePl": "Zadowolenie klienta",
+          "entryCount": 13
+        }
+      ]
+    },
+    {
       "id": "smartphones-apps",
       "namePl": "Smartfon i aplikacje",
       "nameEn": "Smartphones and Apps",
@@ -2082,13 +2824,13 @@
         "banking",
         "bank account"
       ],
-      "entryCount": 45,
+      "entryCount": 67,
       "levels": {
         "A1": 2,
-        "A2": 13,
-        "B1": 19,
-        "B2": 10,
-        "C1": 1,
+        "A2": 15,
+        "B1": 27,
+        "B2": 18,
+        "C1": 5,
         "C2": 0
       },
       "categories": [
@@ -2106,6 +2848,183 @@
           "id": "banking.transfers-payments",
           "namePl": "Przelewy i płatności",
           "entryCount": 15
+        },
+        {
+          "id": "banking.loans-credit",
+          "namePl": "Kredyty i pożyczki",
+          "entryCount": 14
+        },
+        {
+          "id": "banking.problems",
+          "namePl": "Problemy z transakcjami",
+          "entryCount": 8
+        }
+      ]
+    },
+    {
+      "id": "shopping-clothes",
+      "namePl": "Zakupy w sklepie",
+      "nameEn": "Shopping for Clothes",
+      "group": "money",
+      "symbol": "bag",
+      "summaryPl": "W sklepie odzieżowym: obsługa, przymierzalnia i rozmiary, wyprzedaże, kasa oraz zwroty.",
+      "aliases": [
+        "zakupy",
+        "sklep",
+        "sklep odzieżowy",
+        "przymierzalnia",
+        "rozmiar",
+        "wyprzedaż",
+        "kasa",
+        "zwrot",
+        "shopping",
+        "clothing store"
+      ],
+      "entryCount": 62,
+      "levels": {
+        "A1": 8,
+        "A2": 17,
+        "B1": 23,
+        "B2": 12,
+        "C1": 2,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "shopping-clothes.in-store",
+          "namePl": "W sklepie",
+          "entryCount": 13
+        },
+        {
+          "id": "shopping-clothes.fitting-room",
+          "namePl": "Przymierzalnia i rozmiary",
+          "entryCount": 13
+        },
+        {
+          "id": "shopping-clothes.sales-prices",
+          "namePl": "Wyprzedaże i ceny",
+          "entryCount": 14
+        },
+        {
+          "id": "shopping-clothes.checkout",
+          "namePl": "Kasa i płacenie",
+          "entryCount": 13
+        },
+        {
+          "id": "shopping-clothes.returns",
+          "namePl": "Zwroty i wymiany",
+          "entryCount": 9
+        }
+      ]
+    },
+    {
+      "id": "online-shopping",
+      "namePl": "Zakupy online",
+      "nameEn": "Online Shopping",
+      "group": "money",
+      "symbol": "cart",
+      "summaryPl": "Wybór i zamawianie, płatność i dane do wysyłki, dostawa paczki, zwroty oraz nawyki zakupowe w sieci.",
+      "aliases": [
+        "zakupy online",
+        "zakupy przez internet",
+        "sklep internetowy",
+        "zamówienie",
+        "dostawa",
+        "paczka",
+        "koszyk",
+        "online shopping",
+        "e-commerce"
+      ],
+      "entryCount": 62,
+      "levels": {
+        "A1": 3,
+        "A2": 13,
+        "B1": 27,
+        "B2": 13,
+        "C1": 5,
+        "C2": 1
+      },
+      "categories": [
+        {
+          "id": "online-shopping.choosing-ordering",
+          "namePl": "Wybór i zamówienie",
+          "entryCount": 14
+        },
+        {
+          "id": "online-shopping.payment-details",
+          "namePl": "Płatność i dane do wysyłki",
+          "entryCount": 13
+        },
+        {
+          "id": "online-shopping.delivery",
+          "namePl": "Dostawa",
+          "entryCount": 14
+        },
+        {
+          "id": "online-shopping.problems-returns",
+          "namePl": "Problemy i zwroty",
+          "entryCount": 12
+        },
+        {
+          "id": "online-shopping.shopping-habits",
+          "namePl": "Promocje i nawyki zakupowe",
+          "entryCount": 9
+        }
+      ]
+    },
+    {
+      "id": "personal-finance",
+      "namePl": "Finanse osobiste",
+      "nameEn": "Personal Finance",
+      "group": "money",
+      "symbol": "banknote",
+      "summaryPl": "Budżet domowy i wydatki, oszczędzanie, długi, inwestowanie na przyszłość i potoczne zwroty o pieniądzach.",
+      "aliases": [
+        "finanse osobiste",
+        "budżet",
+        "oszczędzanie",
+        "oszczędności",
+        "długi",
+        "wydatki",
+        "pieniądze",
+        "inwestowanie",
+        "personal finance",
+        "money"
+      ],
+      "entryCount": 61,
+      "levels": {
+        "A1": 1,
+        "A2": 8,
+        "B1": 23,
+        "B2": 16,
+        "C1": 13,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "personal-finance.budget-expenses",
+          "namePl": "Budżet i wydatki",
+          "entryCount": 14
+        },
+        {
+          "id": "personal-finance.saving",
+          "namePl": "Oszczędzanie",
+          "entryCount": 12
+        },
+        {
+          "id": "personal-finance.debt",
+          "namePl": "Długi",
+          "entryCount": 14
+        },
+        {
+          "id": "personal-finance.investing-future",
+          "namePl": "Inwestowanie i przyszłość",
+          "entryCount": 12
+        },
+        {
+          "id": "personal-finance.money-talk",
+          "namePl": "Pieniądze w potocznych zwrotach",
+          "entryCount": 9
         }
       ]
     },
@@ -2187,13 +3106,13 @@
         "character",
         "traits"
       ],
-      "entryCount": 49,
+      "entryCount": 93,
       "levels": {
         "A1": 5,
-        "A2": 8,
-        "B1": 16,
-        "B2": 19,
-        "C1": 1,
+        "A2": 10,
+        "B1": 35,
+        "B2": 38,
+        "C1": 5,
         "C2": 0
       },
       "categories": [
@@ -2211,6 +3130,384 @@
           "id": "personality.social-behavior",
           "namePl": "Zachowanie w towarzystwie",
           "entryCount": 15
+        },
+        {
+          "id": "personality.work-character",
+          "namePl": "Charakter w pracy",
+          "entryCount": 16
+        },
+        {
+          "id": "personality.describing-character",
+          "namePl": "Rozmowa o charakterze",
+          "entryCount": 14
+        },
+        {
+          "id": "personality.character-idioms",
+          "namePl": "Potoczne określenia i idiomy",
+          "entryCount": 14
+        }
+      ]
+    },
+    {
+      "id": "appearance",
+      "namePl": "Wygląd zewnętrzny",
+      "nameEn": "Appearance",
+      "group": "people",
+      "symbol": "person.crop.circle",
+      "summaryPl": "Ogólny wygląd i uroda, wzrost i sylwetka, włosy i zarost, twarz i znaki szczególne oraz zmiany wyglądu.",
+      "aliases": [
+        "wygląd",
+        "wygląd zewnętrzny",
+        "opis osoby",
+        "uroda",
+        "sylwetka",
+        "włosy",
+        "twarz",
+        "appearance",
+        "looks"
+      ],
+      "entryCount": 82,
+      "levels": {
+        "A1": 12,
+        "A2": 15,
+        "B1": 26,
+        "B2": 23,
+        "C1": 6,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "appearance.general-looks",
+          "namePl": "Ogólny wygląd i uroda",
+          "entryCount": 17
+        },
+        {
+          "id": "appearance.build-height",
+          "namePl": "Wzrost i sylwetka",
+          "entryCount": 17
+        },
+        {
+          "id": "appearance.hair",
+          "namePl": "Włosy i zarost",
+          "entryCount": 18
+        },
+        {
+          "id": "appearance.face-features",
+          "namePl": "Twarz i znaki szczególne",
+          "entryCount": 16
+        },
+        {
+          "id": "appearance.changes-resemblance",
+          "namePl": "Zmiany wyglądu i podobieństwo",
+          "entryCount": 14
+        }
+      ]
+    },
+    {
+      "id": "emotions",
+      "namePl": "Emocje i uczucia",
+      "nameEn": "Emotions and Feelings",
+      "group": "people",
+      "symbol": "face.smiling",
+      "summaryPl": "Radość, smutek, złość, strach i zaskoczenie, a także rozmowa o uczuciach i nastroju.",
+      "aliases": [
+        "emocje",
+        "uczucia",
+        "nastrój",
+        "samopoczucie",
+        "radość",
+        "smutek",
+        "złość",
+        "strach",
+        "emotions",
+        "feelings",
+        "mood"
+      ],
+      "entryCount": 86,
+      "levels": {
+        "A1": 6,
+        "A2": 15,
+        "B1": 33,
+        "B2": 26,
+        "C1": 6,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "emotions.happiness",
+          "namePl": "Radość i zadowolenie",
+          "entryCount": 15
+        },
+        {
+          "id": "emotions.sadness",
+          "namePl": "Smutek i rozczarowanie",
+          "entryCount": 14
+        },
+        {
+          "id": "emotions.anger",
+          "namePl": "Złość i irytacja",
+          "entryCount": 14
+        },
+        {
+          "id": "emotions.fear-worry",
+          "namePl": "Strach, stres i niepokój",
+          "entryCount": 15
+        },
+        {
+          "id": "emotions.surprise-other",
+          "namePl": "Zaskoczenie, wstyd i inne uczucia",
+          "entryCount": 13
+        },
+        {
+          "id": "emotions.talking-feelings",
+          "namePl": "Rozmowa o uczuciach",
+          "entryCount": 15
+        }
+      ]
+    },
+    {
+      "id": "daily-routine",
+      "namePl": "Codzienna rutyna",
+      "nameEn": "Daily Routine",
+      "group": "daily",
+      "symbol": "alarm",
+      "summaryPl": "Poranek, dojazd do pracy, domowe obowiązki, wieczór, nawyki i częstotliwość oraz weekendowy odpoczynek.",
+      "aliases": [
+        "codzienność",
+        "rutyna",
+        "plan dnia",
+        "poranek",
+        "wieczór",
+        "nawyki",
+        "obowiązki",
+        "daily routine",
+        "morning",
+        "habits"
+      ],
+      "entryCount": 91,
+      "levels": {
+        "A1": 28,
+        "A2": 21,
+        "B1": 30,
+        "B2": 9,
+        "C1": 3,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "daily-routine.morning",
+          "namePl": "Poranek",
+          "entryCount": 17
+        },
+        {
+          "id": "daily-routine.commute-work",
+          "namePl": "Dojazd i dzień pracy",
+          "entryCount": 16
+        },
+        {
+          "id": "daily-routine.errands-chores",
+          "namePl": "Sprawy i obowiązki domowe",
+          "entryCount": 15
+        },
+        {
+          "id": "daily-routine.evening",
+          "namePl": "Wieczór i odpoczynek",
+          "entryCount": 15
+        },
+        {
+          "id": "daily-routine.habits-frequency",
+          "namePl": "Nawyki i częstotliwość",
+          "entryCount": 16
+        },
+        {
+          "id": "daily-routine.weekend",
+          "namePl": "Weekend i czas wolny",
+          "entryCount": 12
+        }
+      ]
+    },
+    {
+      "id": "weather",
+      "namePl": "Pogoda",
+      "nameEn": "Weather",
+      "group": "daily",
+      "symbol": "cloud.sun",
+      "summaryPl": "Pogoda na co dzień, upał i mróz, deszcz i burze, prognoza pogody oraz pogawędki i idiomy o pogodzie.",
+      "aliases": [
+        "pogoda",
+        "prognoza",
+        "deszcz",
+        "śnieg",
+        "upał",
+        "mróz",
+        "burza",
+        "temperatura",
+        "weather",
+        "forecast"
+      ],
+      "entryCount": 89,
+      "levels": {
+        "A1": 12,
+        "A2": 12,
+        "B1": 33,
+        "B2": 21,
+        "C1": 11,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "weather.everyday-weather",
+          "namePl": "Pogoda na co dzień",
+          "entryCount": 16
+        },
+        {
+          "id": "weather.hot-weather",
+          "namePl": "Upał i lato",
+          "entryCount": 13
+        },
+        {
+          "id": "weather.cold-weather",
+          "namePl": "Mróz, śnieg i zima",
+          "entryCount": 16
+        },
+        {
+          "id": "weather.rain-storms",
+          "namePl": "Deszcz i burze",
+          "entryCount": 15
+        },
+        {
+          "id": "weather.forecast",
+          "namePl": "Prognoza pogody",
+          "entryCount": 15
+        },
+        {
+          "id": "weather.weather-talk",
+          "namePl": "Rozmowy i idiomy o pogodzie",
+          "entryCount": 14
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "namePl": "Sport",
+      "nameEn": "Sports",
+      "group": "leisure",
+      "symbol": "sportscourt",
+      "summaryPl": "Dyscypliny, mecz i zasady, zawody i wyniki, kibicowanie, gra w drużynie i sportowe idiomy w pracy.",
+      "aliases": [
+        "sport",
+        "dyscypliny",
+        "mecz",
+        "zawody",
+        "kibicowanie",
+        "drużyna",
+        "sports",
+        "game",
+        "team",
+        "competition"
+      ],
+      "entryCount": 88,
+      "levels": {
+        "A1": 16,
+        "A2": 24,
+        "B1": 24,
+        "B2": 16,
+        "C1": 8,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "sports.sports-types",
+          "namePl": "Dyscypliny",
+          "entryCount": 15
+        },
+        {
+          "id": "sports.game-rules",
+          "namePl": "Mecz i zasady",
+          "entryCount": 18
+        },
+        {
+          "id": "sports.competitions",
+          "namePl": "Zawody i wyniki",
+          "entryCount": 16
+        },
+        {
+          "id": "sports.fans",
+          "namePl": "Kibicowanie",
+          "entryCount": 14
+        },
+        {
+          "id": "sports.playing",
+          "namePl": "Gra i trening",
+          "entryCount": 15
+        },
+        {
+          "id": "sports.sports-idioms",
+          "namePl": "Sportowe idiomy w pracy",
+          "entryCount": 10
+        }
+      ]
+    },
+    {
+      "id": "pets",
+      "namePl": "Zwierzęta domowe",
+      "nameEn": "Pets",
+      "group": "nature",
+      "symbol": "pawprint",
+      "summaryPl": "Adopcja, opieka i karmienie, tresura, wizyta u weterynarza, opieka nad zwierzakiem podczas wyjazdu i idiomy.",
+      "aliases": [
+        "zwierzęta domowe",
+        "zwierzak",
+        "pupil",
+        "pies",
+        "kot",
+        "weterynarz",
+        "karma",
+        "pets",
+        "pet",
+        "dog",
+        "cat",
+        "vet"
+      ],
+      "entryCount": 75,
+      "levels": {
+        "A1": 7,
+        "A2": 16,
+        "B1": 20,
+        "B2": 26,
+        "C1": 6,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "pets.adoption",
+          "namePl": "Wybór zwierzaka",
+          "entryCount": 14
+        },
+        {
+          "id": "pets.care-feeding",
+          "namePl": "Opieka i karmienie",
+          "entryCount": 14
+        },
+        {
+          "id": "pets.training-behavior",
+          "namePl": "Tresura i zachowanie",
+          "entryCount": 15
+        },
+        {
+          "id": "pets.vet",
+          "namePl": "U weterynarza",
+          "entryCount": 13
+        },
+        {
+          "id": "pets.pet-services",
+          "namePl": "Opieka podczas wyjazdu",
+          "entryCount": 12
+        },
+        {
+          "id": "pets.pet-idioms",
+          "namePl": "Idiomy ze zwierzakami",
+          "entryCount": 7
         }
       ]
     },
@@ -2270,6 +3567,164 @@
           "id": "phone-calls.ending",
           "namePl": "Kończenie rozmowy",
           "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "complaints-problems",
+      "namePl": "Skargi i zgłaszanie problemów",
+      "nameEn": "Complaints and Reporting Problems",
+      "group": "communication",
+      "symbol": "exclamationmark.bubble",
+      "summaryPl": "Opisywanie usterek i pomyłek, składanie skargi, wyrażanie niezadowolenia i domaganie się rozwiązania.",
+      "aliases": [
+        "skargi",
+        "skarga",
+        "zgłaszanie problemów",
+        "reklamacja",
+        "usterka",
+        "problem",
+        "niezadowolenie",
+        "complaint",
+        "complaints",
+        "problems"
+      ],
+      "entryCount": 70,
+      "levels": {
+        "A1": 4,
+        "A2": 11,
+        "B1": 24,
+        "B2": 28,
+        "C1": 3,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "complaints-problems.describing",
+          "namePl": "Opisywanie usterki",
+          "entryCount": 15
+        },
+        {
+          "id": "complaints-problems.mistakes",
+          "namePl": "Pomyłki w zamówieniach i rachunkach",
+          "entryCount": 14
+        },
+        {
+          "id": "complaints-problems.complaining",
+          "namePl": "Składanie skargi",
+          "entryCount": 15
+        },
+        {
+          "id": "complaints-problems.solutions",
+          "namePl": "Żądanie rozwiązania",
+          "entryCount": 15
+        },
+        {
+          "id": "complaints-problems.written",
+          "namePl": "Skarga na piśmie",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "requests-favors",
+      "namePl": "Prośby i przysługi",
+      "nameEn": "Requests and Favors",
+      "group": "communication",
+      "symbol": "hand.raised",
+      "summaryPl": "Uprzejme prośby i pytania o przysługę, proponowanie pomocy, zgadzanie się, dziękowanie i grzeczna odmowa.",
+      "aliases": [
+        "prośby",
+        "przysługi",
+        "prośba",
+        "przysługa",
+        "proszenie o pomoc",
+        "odmowa",
+        "propozycje",
+        "requests",
+        "favors",
+        "asking for help"
+      ],
+      "entryCount": 62,
+      "levels": {
+        "A1": 7,
+        "A2": 27,
+        "B1": 18,
+        "B2": 9,
+        "C1": 1,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "requests-favors.asking",
+          "namePl": "Uprzejme prośby",
+          "entryCount": 16
+        },
+        {
+          "id": "requests-favors.offers",
+          "namePl": "Propozycje pomocy",
+          "entryCount": 14
+        },
+        {
+          "id": "requests-favors.agreeing",
+          "namePl": "Zgadzanie się na prośbę",
+          "entryCount": 16
+        },
+        {
+          "id": "requests-favors.refusing",
+          "namePl": "Grzeczna odmowa",
+          "entryCount": 16
+        }
+      ]
+    },
+    {
+      "id": "apologies-politeness",
+      "namePl": "Przeprosiny i uprzejmość",
+      "nameEn": "Apologies and Politeness",
+      "group": "communication",
+      "symbol": "heart.text.square",
+      "summaryPl": "Przepraszanie i reagowanie na przeprosiny, dziękowanie i odpowiadanie na podziękowania, dobre maniery i takt.",
+      "aliases": [
+        "przeprosiny",
+        "przepraszanie",
+        "uprzejmość",
+        "grzeczność",
+        "dziękowanie",
+        "maniery",
+        "takt",
+        "apologies",
+        "politeness",
+        "manners"
+      ],
+      "entryCount": 60,
+      "levels": {
+        "A1": 10,
+        "A2": 19,
+        "B1": 19,
+        "B2": 10,
+        "C1": 2,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "apologies-politeness.apologizing",
+          "namePl": "Przepraszanie",
+          "entryCount": 15
+        },
+        {
+          "id": "apologies-politeness.responding",
+          "namePl": "Reagowanie na przeprosiny",
+          "entryCount": 14
+        },
+        {
+          "id": "apologies-politeness.thanking",
+          "namePl": "Dziękowanie",
+          "entryCount": 13
+        },
+        {
+          "id": "apologies-politeness.manners",
+          "namePl": "Dobre maniery i takt",
+          "entryCount": 18
         }
       ]
     }

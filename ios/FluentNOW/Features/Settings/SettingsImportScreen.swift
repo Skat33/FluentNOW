@@ -27,6 +27,8 @@ struct SettingsImportScreen: View {
     @State private var showsImporter = false
     @State private var confirmReplace = false
     @State private var importedTrigger = 0
+    /// Trwa dekodowanie/import (poza głównym wątkiem) — blokuje podwójne dotknięcia.
+    @State private var isWorking = false
 
     static let maxFileBytes = 8 * 1024 * 1024
 
@@ -48,9 +50,10 @@ struct SettingsImportScreen: View {
                     .textInputAutocapitalization(.never)
                     .autocorrectionDisabled()
                 Button("Sprawdź wklejony tekst") {
-                    load(text: pastedText, name: "Wklejony tekst")
+                    let text = pastedText
+                    Task { await load(text: text, name: "Wklejony tekst") }
                 }
-                .disabled(pastedText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                .disabled(pastedText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || isWorking)
             }
             if let errorMessage {
                 Section {
@@ -65,7 +68,7 @@ struct SettingsImportScreen: View {
                     isJSON: payload.isJSON,
                     mode: $mode,
                     onImport: {
-                        if payload.isJSON && mode == .replace { confirmReplace = true } else { apply() }
+                        if payload.isJSON && mode == .replace { confirmReplace = true } else { Task { await apply() } }
                     }
                 )
             }
@@ -92,12 +95,12 @@ struct SettingsImportScreen: View {
             }
         }
         .confirmationDialog("Zastąpić wszystkie dane?", isPresented: $confirmReplace, titleVisibility: .visible) {
-            Button("Zastąp dane", role: .destructive) { apply() }
+            Button("Zastąp dane", role: .destructive) { Task { await apply() } }
             Button("Anuluj", role: .cancel) {}
         } message: {
             Text("Obecne słowa i postęp zostaną zastąpione zawartością pliku (także w iCloud). Bezpieczniej jest scalić.")
         }
-        .sensoryFeedback(FluentHaptic.answerCorrect, trigger: importedTrigger)
+        .fluentSensoryFeedback(FluentHaptic.answerCorrect, trigger: importedTrigger)
     }
 
     // MARK: Wczytanie i podgląd
@@ -117,24 +120,27 @@ struct SettingsImportScreen: View {
             return
         }
         if SettingsImportText.looksLikeJSON(data) {
-            preparePreview(.json(data), name: url.lastPathComponent)
+            await preparePreview(.json(data), name: url.lastPathComponent)
         } else if let text = String(data: data, encoding: .utf8) ?? String(data: data, encoding: .windowsCP1250) {
-            preparePreview(.delimited(text), name: url.lastPathComponent)
+            await preparePreview(.delimited(text), name: url.lastPathComponent)
         } else {
             errorMessage = "Plik nie jest tekstem UTF-8 ani kopią JSON."
         }
     }
 
-    private func load(text: String, name: String) {
+    private func load(text: String, name: String) async {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         if trimmed.hasPrefix("{"), let data = trimmed.data(using: .utf8) {
-            preparePreview(.json(data), name: name)
+            await preparePreview(.json(data), name: name)
         } else {
-            preparePreview(.delimited(trimmed), name: name)
+            await preparePreview(.delimited(trimmed), name: name)
         }
     }
 
-    private func preparePreview(_ newPayload: SettingsImportPayload, name: String) {
+    private func preparePreview(_ newPayload: SettingsImportPayload, name: String) async {
+        guard !isWorking else { return }
+        isWorking = true
+        defer { isWorking = false }
         errorMessage = nil
         result = nil
         preview = nil
@@ -142,7 +148,7 @@ struct SettingsImportScreen: View {
         do {
             switch newPayload {
             case .json(let data):
-                preview = try store.previewImportJSON(data)
+                preview = try await store.previewImportJSONInBackground(data)
             case .delimited(let text):
                 preview = try store.previewImportDelimited(text)
             }
@@ -153,12 +159,14 @@ struct SettingsImportScreen: View {
         }
     }
 
-    private func apply() {
-        guard let payload else { return }
+    private func apply() async {
+        guard let payload, !isWorking else { return }
+        isWorking = true
+        defer { isWorking = false }
         do {
             switch payload {
             case .json(let data):
-                result = try store.importJSON(data, mode: mode)
+                result = try await store.importJSONInBackground(data, mode: mode)
             case .delimited(let text):
                 result = try store.importDelimited(text)
             }

@@ -77,7 +77,7 @@ final class AppRouter {
 
     /// Dodaje trasę do stosu karty (i przełącza na nią).
     func push<Route: Hashable>(_ route: Route, on tab: AppTab) {
-        var path = path(for: tab)
+        var path = self.path(for: tab)
         path.append(route)
         setPath(path, for: tab)
         selectedTab = tab
@@ -88,7 +88,7 @@ final class AppRouter {
     }
 
     func pop(on tab: AppTab) {
-        var path = path(for: tab)
+        var path = self.path(for: tab)
         guard !path.isEmpty else { return }
         path.removeLast()
         setPath(path, for: tab)

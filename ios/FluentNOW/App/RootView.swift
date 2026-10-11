@@ -18,7 +18,6 @@ struct RootView: View {
                 LegacyTabView(router: router)
             }
         }
-        .modifier(TabBarMinimizeOnScroll())
         .tint(Palette.accent)
         .sheet(item: $router.activeSheet) { sheet in
             AppSheetContent(sheet: sheet)
@@ -61,6 +60,8 @@ private struct ModernTabView: View {
             }
         }
         .tabViewStyle(.sidebarAdaptable)
+        // Modyfikator bezpośrednio na TabView (iOS 26 — chowanie paska przy przewijaniu).
+        .modifier(TabBarMinimizeOnScroll())
     }
 }
 
@@ -144,11 +145,11 @@ private struct AppSheetContent: View {
 
 #Preview("Aplikacja") {
     RootView()
-        .environment(AppRouter())
+        .fluentPreviewEnvironment(.preview, router: AppRouter())
 }
 
 #Preview("Aplikacja — ciemny") {
     RootView()
-        .environment(AppRouter(selectedTab: .words))
+        .fluentPreviewEnvironment(.preview, router: AppRouter(selectedTab: .words))
         .preferredColorScheme(.dark)
 }

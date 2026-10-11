@@ -11,9 +11,11 @@ struct TodayRootScreen: View {
 
     @State private var snapshot: TodaySnapshot?
     @State private var candidates: [Recommendation] = []
+    @State private var onboardingInProgress = false
 
     private var showsOnboarding: Bool {
-        store.loadPhase == .ready && store.state.words.isEmpty && !preferences.hasCompletedOnboarding
+        guard store.loadPhase == .ready, !preferences.hasCompletedOnboarding else { return false }
+        return store.state.words.isEmpty || onboardingInProgress
     }
 
     var body: some View {
@@ -28,7 +30,7 @@ struct TodayRootScreen: View {
                 } else if store.loadPhase == .loading {
                     TodaySkeleton()
                 } else if showsOnboarding {
-                    TodayOnboardingView()
+                    TodayOnboardingView(isAdding: $onboardingInProgress)
                 } else if let snapshot {
                     TodayContent(snapshot: snapshot, isEmpty: store.state.words.isEmpty)
                 } else {
@@ -58,8 +60,10 @@ struct TodayRootScreen: View {
             guard !Task.isCancelled else { return }
             snapshot = computed
         }
-        .sensoryFeedback(FluentHaptic.goalReached, trigger: snapshot?.goal.isReached ?? false) { old, new in
-            !old && new
+        // Tylko przejście „nieosiągnięty → osiągnięty” w trakcie działania ekranu (nie przy pierwszym
+        // wczytaniu migawki, gdy cel był osiągnięty już wcześniej).
+        .sensoryFeedback(FluentHaptic.goalReached, trigger: snapshot?.goal.isReached) { old, new in
+            preferences.hapticsEnabled && old == false && new == true
         }
     }
 }

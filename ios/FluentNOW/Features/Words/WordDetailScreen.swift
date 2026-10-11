@@ -52,7 +52,7 @@ struct WordDetailScreen: View {
         } message: {
             Text("Słowo i postęp jego znaczeń znikną ze wszystkich urządzeń. Historia odpowiedzi w statystykach zostanie. Archiwizacja ukrywa słowo, ale pozwala je przywrócić.")
         }
-        .sensoryFeedback(FluentHaptic.destructive, trigger: deleteTrigger)
+        .fluentSensoryFeedback(FluentHaptic.destructive, trigger: deleteTrigger)
     }
 
     // MARK: Akcje

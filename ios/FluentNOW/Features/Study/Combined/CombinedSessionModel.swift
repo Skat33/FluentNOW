@@ -85,7 +85,7 @@ final class CombinedSessionModel {
         let answer = pendingAnswer()
         let reviewID = UUID().uuidString.lowercased()
         let isVocabulary = session.currentTask?.vocabularyTask != nil
-        store.update(.answer) { state in
+        store.update(.answer) { (state: inout LearnerState) -> Void in
             if let answer, state.combined?.currentAnswer == nil {
                 state = CombinedSessionBuilder.saveAnswer(state, answer: answer, now: now, reviewID: reviewID)
             }
@@ -97,10 +97,15 @@ final class CombinedSessionModel {
         sync()
     }
 
+    /// Ekran sesji znika (przerwa) — przerywa oczekiwanie na asystenta AI; stan sesji zostaje.
+    func suspend() {
+        vocabulary?.cancelPendingWork()
+    }
+
     /// Kończy sesję po podsumowaniu (historia jest już zapisana przez `advance`).
     func finish() {
         clear()
-        store.update(.session) { state in
+        store.update(.session) { (state: inout LearnerState) -> Void in
             if state.combined?.completedAt != nil {
                 state.combined = nil
             }

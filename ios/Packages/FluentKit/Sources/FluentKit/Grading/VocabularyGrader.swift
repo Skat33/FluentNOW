@@ -82,13 +82,26 @@ public enum VocabularyGrader {
 
     /// The word to grade against: for cloze, `en` is replaced by the form used in the sentence
     /// („borrowed”), exactly like the web app.
+    /// The index uses the same wrapping as the screen (`task.example % examples.count`, web
+    /// `examples[task.example % examples.length]`), so an index past the end grades the sentence
+    /// that is actually shown.
     public static func gradingWord(word: Word, meaning: Meaning, task: VocabTask) -> Word {
-        guard task.type == .cloze, let sentence = meaning.examples[safe: task.example] else { return word }
-        let focusSaved = meaning.exampleFocusEn?[safe: task.example] ?? ""
+        guard task.type == .cloze, !meaning.examples.isEmpty else { return word }
+        let index = exampleIndex(task.example, in: meaning)
+        guard let sentence = meaning.examples[safe: index] else { return word }
+        let focusSaved = meaning.exampleFocusEn?[safe: index] ?? ""
         let focus = focusSaved.isEmpty ? word.en : focusSaved
         var copy = word
         copy.en = Cloze.span(in: sentence, focus: focus)?.match ?? focus
         return copy
+    }
+
+    /// Index of the example shown for a task: `rawIndex % examples.count` (non-negative),
+    /// 0 when the meaning has no examples. Same rule as the web (`examples[i % length]`).
+    public static func exampleIndex(_ rawIndex: Int, in meaning: Meaning) -> Int {
+        let count = meaning.examples.count
+        guard count > 0 else { return 0 }
+        return ((rawIndex % count) + count) % count
     }
 
     /// `localGrade`: compares a typed answer with the accepted answers.

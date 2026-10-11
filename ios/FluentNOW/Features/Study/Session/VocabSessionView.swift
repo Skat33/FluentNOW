@@ -17,6 +17,9 @@ struct VocabSessionView: View {
                 LoadingStateView("Przygotowuję sesję…")
             }
         }
+        .onDisappear {
+            model?.suspend()
+        }
         .task {
             if model == nil {
                 let created = VocabSessionModel(store: store, content: env.content, assistant: assistant)
@@ -92,7 +95,7 @@ private struct VocabSessionContent: View {
                             .keyboardShortcut(.defaultAction)
                     }
                 } else if model.missingTask {
-                    StudyMissingWordCard(onSkip: model.skipMissing)
+                    StudyMissingWordCard(onSkip: { model.skipMissing() })
                 }
                 Text("Postęp zapisujemy na urządzeniu po każdym zadaniu.")
                     .font(FluentFont.caption)

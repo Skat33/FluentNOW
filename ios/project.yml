@@ -33,6 +33,9 @@ settings:
     Debug:
       SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
       SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+      # Testy aplikacji (TEST_HOST/BUNDLE_LOADER) linkują symbole FluentKit z pliku wykonywalnego
+      # aplikacji — w Debug nie usuwamy nieużywanego kodu, żeby API używane tylko w testach istniało.
+      DEAD_CODE_STRIPPING: NO
     Release:
       SWIFT_OPTIMIZATION_LEVEL: "-O"
       SWIFT_COMPILATION_MODE: wholemodule

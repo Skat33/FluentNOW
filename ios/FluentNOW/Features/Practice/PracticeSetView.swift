@@ -248,8 +248,14 @@ private struct PracticeItemView: View {
 
     private func advance() {
         let now = store.now()
+        let expectedIndex = practice.index
+        let setID = practice.set.id
         withAnimation(Motion.resolved(Motion.emphasized, reduceMotion: reduceMotion, fallback: Motion.reducedFade)) {
-            store.update(.answer) { state in
+            store.update(.answer) { (state: inout LearnerState) -> Void in
+                // Podwójne dotknięcie „Następne pytanie” nie może przeskoczyć pytania bez odpowiedzi
+                // (`advancePractice` nie sprawdza, czy bieżące pytanie ma odpowiedź).
+                guard let current = state.practice, current.set.id == setID, current.index == expectedIndex,
+                      (current.answers.studyItem(at: expectedIndex) ?? -1) >= 0 else { return }
                 state = PracticeFlow.advancePractice(state, now: now)
             }
         }

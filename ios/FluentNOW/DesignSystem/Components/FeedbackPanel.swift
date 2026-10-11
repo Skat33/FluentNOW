@@ -21,6 +21,7 @@ struct FeedbackPanel<Accessory: View>: View {
 
     @State private var hasAppeared = false
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.fluentHapticsEnabled) private var hapticsEnabled
 
     init(
         kind: FeedbackKind,
@@ -71,7 +72,7 @@ struct FeedbackPanel<Accessory: View>: View {
         .accessibilityElement(children: .contain)
         .onAppear { hasAppeared = true }
         .sensoryFeedback(kind.haptic ?? FluentHaptic.selection, trigger: hasAppeared) { oldValue, newValue in
-            playsHaptic && kind.haptic != nil && !oldValue && newValue
+            playsHaptic && hapticsEnabled && kind.haptic != nil && !oldValue && newValue
         }
     }
 }

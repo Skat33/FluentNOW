@@ -22,7 +22,7 @@ struct StudySetupCard: View {
                 }
             }
             .pickerStyle(.segmented)
-            .sensoryFeedback(FluentHaptic.selection, trigger: minutes)
+            .fluentSensoryFeedback(FluentHaptic.selection, trigger: minutes)
 
             Text(selectionInfo)
                 .font(FluentFont.subheadline)

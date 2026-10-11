@@ -66,7 +66,7 @@ struct SettingsLearningSection: View {
         Section {
             Picker(selection: goalBinding) {
                 ForEach(goalOptions, id: \.self) { goal in
-                    Text("\(goal) zadań").tag(goal)
+                    Text(LibraryText.count(goal, one: "zadanie", few: "zadania", many: "zadań")).tag(goal)
                 }
             } label: {
                 Label("Cel dzienny", systemImage: "target")
@@ -295,7 +295,7 @@ struct SettingsDataSection: View {
         } message: {
             Text("Wpisz „\(SettingsDataSection.confirmationWord)”, aby potwierdzić usunięcie wszystkich danych.")
         }
-        .sensoryFeedback(FluentHaptic.destructive, trigger: deletedTrigger)
+        .fluentSensoryFeedback(FluentHaptic.destructive, trigger: deletedTrigger)
     }
 
     private var isConfirmed: Bool {

@@ -185,8 +185,14 @@ private struct ProductionItemView: View {
 
     private func advance() {
         let now = store.now()
+        let expectedIndex = production.index
+        let sessionID = production.id
         withAnimation(Motion.resolved(Motion.emphasized, reduceMotion: reduceMotion, fallback: Motion.reducedFade)) {
-            store.update(.answer) { state in
+            store.update(.answer) { (state: inout LearnerState) -> Void in
+                // Podwójne dotknięcie nie może przeskoczyć zadania bez odpowiedzi
+                // (`advanceProduction` nie sprawdza wyniku bieżącego zadania).
+                guard let current = state.production, current.id == sessionID, current.index == expectedIndex,
+                      (current.results.studyItem(at: expectedIndex) ?? nil) != nil else { return }
                 state = PracticeFlow.advanceProduction(state, now: now)
             }
         }

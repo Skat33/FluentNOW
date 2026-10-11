@@ -37,6 +37,8 @@ final class LearningStore {
     @ObservationIgnored private var mutatedDuringLoad = false
     @ObservationIgnored private var isReloading = false
     @ObservationIgnored private var reloadRequested = false
+    /// Ustawienia z ostatniego wczytania / scalenia z iCloud (wykrywanie lokalnej zmiany ustawień).
+    @ObservationIgnored private var lastSyncedSettings: LearnerSettings?
 
     @ObservationIgnored private var activeWordsCache: (revision: Int, words: [Word]) = (-1, [])
     @ObservationIgnored private var wordIndexCache: (revision: Int, index: [String: Int]) = (-1, [:])
@@ -155,9 +157,10 @@ final class LearningStore {
             let result = try await persistence.load(now: now())
             var loaded = result.state
             if mutatedDuringLoad {
-                loaded = StateSync.mergeStates(local: state, remote: loaded)
+                loaded = Self.mergePreloadChanges(preload: state, loaded: loaded)
                 mutatedDuringLoad = false
             }
+            lastSyncedSettings = loaded.settings
             state = loaded
             revision &+= 1
             loadPhase = .ready
@@ -187,12 +190,21 @@ final class LearningStore {
             reloadRequested = false
             await flush()
             do {
+                // Ustawienia niezmienione lokalnie od ostatniej synchronizacji bierzemy z dysku
+                // (zmiana z innego urządzenia) — inaczej `mergeStates` (ustawienia z `local`)
+                // nadpisałby je przy najbliższym zapisie.
                 let result = try await persistence.reloadAfterRemoteChange(now: now())
+                // Liczone po `await` — zmiana ustawień w trakcie wczytywania też jest lokalna.
+                let settingsChangedLocally = lastSyncedSettings.map { $0 != state.settings } ?? true
                 var merged = StateSync.mergeStates(local: state, remote: result.state)
+                if !settingsChangedLocally {
+                    merged.settings = result.state.settings
+                }
                 if !result.removedWordIDs.isEmpty {
                     merged.words.removeAll { result.removedWordIDs.contains($0.id) }
                 }
                 merged = StateMigration.migrate(merged)
+                lastSyncedSettings = merged.settings
                 if merged != state {
                     state = merged
                     revision &+= 1
@@ -281,6 +293,33 @@ final class LearningStore {
         return summary
     }
 
+    /// Jak `importJSON`, ale dekodowanie i walidacja pliku (do 50 MB) poza głównym wątkiem.
+    func importJSONInBackground(_ data: Data, mode: ImportMode) async throws -> ImportSummary {
+        let imported = try await Self.decodeImportInBackground(data)
+        let summary = Self.summary(local: state, imported: imported, mode: mode)
+        let next: LearnerState
+        switch mode {
+        case .merge:
+            next = StateMigration.migrate(StateSync.mergeStates(local: state, remote: imported))
+        case .replace:
+            next = imported
+        }
+        apply(next, kind: .bulk)
+        return summary
+    }
+
+    /// Jak `previewImportJSON`, ale dekodowanie poza głównym wątkiem.
+    func previewImportJSONInBackground(_ data: Data) async throws -> ImportSummary {
+        let imported = try await Self.decodeImportInBackground(data)
+        return Self.summary(local: state, imported: imported, mode: .merge)
+    }
+
+    nonisolated private static func decodeImportInBackground(_ data: Data) async throws -> LearnerState {
+        try await Task.detached(priority: .userInitiated) {
+            try StateImporter.importJSON(data)
+        }.value
+    }
+
     /// Import CSV/TSV/listy słów (`DelimitedImport`).
     func importDelimited(_ text: String) throws -> ImportSummary {
         let result = try DelimitedImport.importRows(text, into: state, now: now())
@@ -343,6 +382,7 @@ final class LearningStore {
             throw PersistenceError.deleteFailed(error.localizedDescription)
         }
         state = .empty
+        lastSyncedSettings = LearnerState.empty.settings
         revision &+= 1
         lastSaveError = nil
         loadNotice = nil
@@ -353,6 +393,24 @@ final class LearningStore {
     }
 
     // MARK: - Pomocnicze
+
+    /// Scala zmiany zrobione przed zakończeniem wczytywania (stan startowy `.empty` + zmiany)
+    /// z wczytanym stanem. `mergeStates` bierze ustawienia i sesje z `local` — tutaj `local` to
+    /// pusty stan startowy, więc wartości domyślne nie mogą nadpisać zapisanych ustawień ani
+    /// przerwanych sesji.
+    static func mergePreloadChanges(preload: LearnerState, loaded: LearnerState) -> LearnerState {
+        var merged = StateSync.mergeStates(local: preload, remote: loaded)
+        if preload.settings == LearnerState.empty.settings {
+            merged.settings = loaded.settings
+        }
+        merged.session = preload.session ?? loaded.session
+        merged.reading = preload.reading ?? loaded.reading
+        merged.practice = preload.practice ?? loaded.practice
+        merged.production = preload.production ?? loaded.production
+        merged.combined = preload.combined ?? loaded.combined
+        merged.demo = preload.demo || loaded.demo
+        return StateMigration.migrate(merged)
+    }
 
     static func summary(local: LearnerState, imported: LearnerState, mode: ImportMode) -> ImportSummary {
         let localIDs = Set(local.words.map(\.id))

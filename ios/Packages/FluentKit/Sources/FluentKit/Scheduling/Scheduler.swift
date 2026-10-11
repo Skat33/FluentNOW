@@ -98,7 +98,17 @@ public enum Scheduler {
     ) -> LearnerState {
         guard let wordIndex = state.words.firstIndex(where: { $0.id == task.wordId }),
               let meaningIndex = state.words[wordIndex].meanings.firstIndex(where: { $0.id == task.meaningId })
-        else { return state }
+        else {
+            // The word was deleted while the session was paused: nothing to score, but the running
+            // session must still move on (otherwise the screen is stuck on this task). No retry is
+            // queued for a word that no longer exists.
+            guard var session = state.session, let current = session.currentTask,
+                  current.wordId == task.wordId, current.meaningId == task.meaningId else { return state }
+            var next = state
+            session.index += 1
+            next.session = session
+            return next
+        }
 
         var next = state
         var word = next.words[wordIndex]

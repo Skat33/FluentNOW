@@ -45,8 +45,10 @@ public enum PracticeFlow {
     }
 
     /// Moves to the next item; after the last one marks the set completed and appends history.
+    /// Ignored while the current item has no answer (a double tap on „Dalej” must not skip a question).
     public static func advancePractice(_ state: LearnerState, now: Timestamp) -> LearnerState {
-        guard var practice = state.practice, practice.completedAt == nil else { return state }
+        guard var practice = state.practice, practice.completedAt == nil,
+              (practice.answers[safe: practice.index] ?? -1) >= 0 else { return state }
         var next = state
         if practice.index + 1 < practice.set.items.count {
             practice.index += 1
@@ -95,8 +97,10 @@ public enum PracticeFlow {
     }
 
     /// Next production task; after the last one completes the set and writes history.
+    /// Ignored while the current task has no graded answer (double tap protection).
     public static func advanceProduction(_ state: LearnerState, now: Timestamp) -> LearnerState {
-        guard var production = state.production, production.completedAt == nil else { return state }
+        guard var production = state.production, production.completedAt == nil,
+              (production.results[safe: production.index] ?? nil) != nil else { return state }
         var next = state
         if production.index + 1 < production.set.items.count {
             production.index += 1
