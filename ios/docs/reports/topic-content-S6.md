@@ -13,3 +13,4 @@
 | banking | 67 | 5 | 2 | 15 | 27 | 18 | 5 | 0 |
 | shopping-clothes | 62 | 5 | 8 | 17 | 23 | 12 | 2 | 0 |
 | online-shopping | 62 | 5 | 3 | 13 | 27 | 13 | 5 | 1 |
+| personal-finance | 61 | 5 | 1 | 8 | 23 | 16 | 13 | 0 |

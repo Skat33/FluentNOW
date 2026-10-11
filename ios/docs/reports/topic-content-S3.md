@@ -12,6 +12,7 @@
 | drinks-bar | 75 | 6 | 9/14/23/18/11/0 |
 | diet-nutrition | 77 | 6 | 1/13/20/28/14/1 |
 | house-rooms | 81 | 6 | 17/22/24/15/3/0 |
+| furniture-household | 79 | 6 | 5/27/24/13/10/0 |
 
 ## Do zrobienia
-furniture-household, cleaning-chores, renting-apartment
+cleaning-chores, renting-apartment

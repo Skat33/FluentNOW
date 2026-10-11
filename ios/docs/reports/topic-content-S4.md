@@ -16,6 +16,7 @@ Stan: w toku.
 | mental-health | 79 | 6 | A1 2, A2 6, B1 22, B2 36, C1 13 |
 | sleep | 74 | 6 | A1 7, A2 16, B1 14, B2 29, C1 8 |
 | sports | 88 | 6 | A1 16, A2 24, B1 24, B2 16, C1 8 |
+| pets | 75 | 6 | A1 7, A2 16, B1 20, B2 26, C1 6 |
 
 ## Niedokończone / nierozpoczęte
  sports, pets, animals

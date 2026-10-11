@@ -1,0 +1,3073 @@
+{
+  "schemaVersion": 1,
+  "id": "pets",
+  "namePl": "Zwierzęta domowe",
+  "nameEn": "Pets",
+  "group": "nature",
+  "symbol": "pawprint",
+  "summaryPl": "Adopcja, opieka i karmienie, tresura, wizyta u weterynarza, opieka nad zwierzakiem podczas wyjazdu i idiomy.",
+  "aliases": [
+    "zwierzęta domowe",
+    "zwierzak",
+    "pupil",
+    "pies",
+    "kot",
+    "weterynarz",
+    "karma",
+    "pets",
+    "pet",
+    "dog",
+    "cat",
+    "vet"
+  ],
+  "categories": [
+    {
+      "id": "pets.adoption",
+      "namePl": "Wybór zwierzaka",
+      "scenePl": "Schronisko dla zwierząt: rodzina wybiera zwierzaka do adopcji",
+      "entries": [
+        {
+          "id": "pets.pet",
+          "term": "pet",
+          "ipa": "/pet/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "zwierzę domowe",
+          "definition": "An animal that lives with people at home.",
+          "register": "neutralny",
+          "contextPl": "Zwierzęta trzymane w domu",
+          "natural": "",
+          "forms": "pets",
+          "collocations": "have a pet; family pet",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We've wanted a pet for years, so we finally came to the shelter.",
+              "pl": "Od lat chcieliśmy mieć zwierzątko, więc w końcu przyszliśmy do schroniska.",
+              "focusEn": "pet",
+              "focusPl": "zwierzątko"
+            },
+            {
+              "en": "The volunteer asked if we had any other pets at home.",
+              "pl": "Wolontariuszka zapytała, czy mamy w domu inne zwierzęta.",
+              "focusEn": "pets",
+              "focusPl": "zwierzęta"
+            }
+          ],
+          "acceptedAnswers": [
+            "pet"
+          ],
+          "acceptedTranslations": [
+            "zwierzę domowe",
+            "zwierzątko",
+            "zwierzak",
+            "pupil"
+          ]
+        },
+        {
+          "id": "pets.dog",
+          "term": "dog",
+          "ipa": "/dɔːɡ/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pies",
+          "definition": "An animal often kept as a pet that barks.",
+          "register": "neutralny",
+          "contextPl": "Najpopularniejszy zwierzak",
+          "natural": "",
+          "forms": "dogs",
+          "collocations": "walk a dog; dog lover",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "That big brown dog keeps wagging its tail at us.",
+              "pl": "Ten duży brązowy pies ciągle macha do nas ogonem.",
+              "focusEn": "dog",
+              "focusPl": "pies"
+            },
+            {
+              "en": "The dogs started barking as soon as we walked in.",
+              "pl": "Psy zaczęły szczekać, gdy tylko weszliśmy.",
+              "focusEn": "dogs",
+              "focusPl": "Psy"
+            }
+          ],
+          "acceptedAnswers": [
+            "dog"
+          ],
+          "acceptedTranslations": [
+            "pies",
+            "piesek"
+          ]
+        },
+        {
+          "id": "pets.cat",
+          "term": "cat",
+          "ipa": "/kæt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "kot",
+          "definition": "A small furry animal often kept as a pet.",
+          "register": "neutralny",
+          "contextPl": "Popularny zwierzak domowy",
+          "natural": "",
+          "forms": "cats",
+          "collocations": "cat lover; house cat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The older cat in the corner is very calm.",
+              "pl": "Ten starszy kot w kącie jest bardzo spokojny.",
+              "focusEn": "cat",
+              "focusPl": "kot"
+            },
+            {
+              "en": "My daughter fell in love with a little black cat.",
+              "pl": "Córka zakochała się w małym czarnym kotku.",
+              "focusEn": "cat",
+              "focusPl": "kotku"
+            }
+          ],
+          "acceptedAnswers": [
+            "cat"
+          ],
+          "acceptedTranslations": [
+            "kot",
+            "kotka",
+            "kotek"
+          ]
+        },
+        {
+          "id": "pets.puppy",
+          "term": "puppy",
+          "ipa": "/ˈpʌpi/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "szczeniak",
+          "definition": "A young dog.",
+          "register": "neutralny",
+          "contextPl": "Młode psy",
+          "natural": "",
+          "forms": "puppies",
+          "collocations": "",
+          "synonyms": "pup",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The puppies were all sleeping in one big pile.",
+              "pl": "Szczeniaki spały wszystkie w jednej wielkiej kupce.",
+              "focusEn": "puppies",
+              "focusPl": "Szczeniaki"
+            },
+            {
+              "en": "A puppy needs a lot of time and patience.",
+              "pl": "Szczeniak wymaga dużo czasu i cierpliwości.",
+              "focusEn": "puppy",
+              "focusPl": "Szczeniak"
+            }
+          ],
+          "acceptedAnswers": [
+            "puppy",
+            "pup"
+          ],
+          "acceptedTranslations": [
+            "szczeniak",
+            "szczenię",
+            "szczeniaczek"
+          ]
+        },
+        {
+          "id": "pets.kitten",
+          "term": "kitten",
+          "ipa": "/ˈkɪtən/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kocię",
+          "definition": "A young cat.",
+          "register": "neutralny",
+          "contextPl": "Młode koty",
+          "natural": "",
+          "forms": "kittens",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kittens were playing with a piece of string.",
+              "pl": "Kocięta bawiły się kawałkiem sznurka.",
+              "focusEn": "kittens",
+              "focusPl": "Kocięta"
+            },
+            {
+              "en": "We decided to adopt two kittens so they wouldn't be lonely.",
+              "pl": "Zdecydowaliśmy się adoptować dwa kotki, żeby nie były samotne.",
+              "focusEn": "kittens",
+              "focusPl": "kotki"
+            }
+          ],
+          "acceptedAnswers": [
+            "kitten",
+            "kitty"
+          ],
+          "acceptedTranslations": [
+            "kocię",
+            "kotek",
+            "kociak"
+          ]
+        },
+        {
+          "id": "pets.rabbit",
+          "term": "rabbit",
+          "ipa": "/ˈræbɪt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "królik",
+          "definition": "A small animal with long ears, sometimes kept as a pet.",
+          "register": "neutralny",
+          "contextPl": "Małe zwierzęta domowe",
+          "natural": "",
+          "forms": "rabbits",
+          "collocations": "pet rabbit",
+          "synonyms": "bunny",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There was a fluffy white rabbit in a cage by the door.",
+              "pl": "Przy drzwiach w klatce siedział puszysty biały królik.",
+              "focusEn": "rabbit",
+              "focusPl": "królik"
+            },
+            {
+              "en": "My son asked if we could take the rabbit instead of a dog.",
+              "pl": "Syn zapytał, czy możemy wziąć królika zamiast psa.",
+              "focusEn": "rabbit",
+              "focusPl": "królika"
+            }
+          ],
+          "acceptedAnswers": [
+            "rabbit",
+            "bunny"
+          ],
+          "acceptedTranslations": [
+            "królik",
+            "króliczek"
+          ]
+        },
+        {
+          "id": "pets.owner",
+          "term": "owner",
+          "ipa": "/ˈoʊnər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "właściciel",
+          "definition": "A person who has a pet.",
+          "register": "neutralny",
+          "contextPl": "Opiekun zwierzęcia",
+          "natural": "",
+          "forms": "owners",
+          "collocations": "dog owner; pet owner; new owner",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This dog's last owner moved and couldn't keep him.",
+              "pl": "Poprzedni właściciel tego psa przeprowadził się i nie mógł go zatrzymać.",
+              "focusEn": "owner",
+              "focusPl": "właściciel"
+            },
+            {
+              "en": "New owners get a free bag of food and a leash.",
+              "pl": "Nowi właściciele dostają darmowy worek karmy i smycz.",
+              "focusEn": "owners",
+              "focusPl": "właściciele"
+            }
+          ],
+          "acceptedAnswers": [
+            "owner"
+          ],
+          "acceptedTranslations": [
+            "właściciel",
+            "właścicielka",
+            "opiekun"
+          ]
+        },
+        {
+          "id": "pets.hamster",
+          "term": "hamster",
+          "ipa": "/ˈhæmstər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "chomik",
+          "definition": "A small furry animal often kept in a cage.",
+          "register": "neutralny",
+          "contextPl": "Małe zwierzęta w klatce",
+          "natural": "",
+          "forms": "hamsters",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A hamster is a good first pet for a small apartment.",
+              "pl": "Chomik to dobre pierwsze zwierzątko do małego mieszkania.",
+              "focusEn": "hamster",
+              "focusPl": "Chomik"
+            },
+            {
+              "en": "The hamster was running on its wheel the whole time we were there.",
+              "pl": "Chomik przez cały czas, gdy tam byliśmy, biegał w kołowrotku.",
+              "focusEn": "hamster",
+              "focusPl": "Chomik"
+            }
+          ],
+          "acceptedAnswers": [
+            "hamster"
+          ],
+          "acceptedTranslations": [
+            "chomik"
+          ]
+        },
+        {
+          "id": "pets.adopt",
+          "term": "adopt",
+          "ipa": "/əˈdɑːpt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "adoptować",
+          "definition": "To take an animal from a shelter and give it a home.",
+          "register": "neutralny",
+          "contextPl": "Adopcja ze schroniska",
+          "natural": "",
+          "forms": "adopted",
+          "collocations": "adopt a dog; adopt, don't shop",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We want to adopt a dog that's good with kids.",
+              "pl": "Chcemy adoptować psa, który dobrze dogaduje się z dziećmi.",
+              "focusEn": "adopt",
+              "focusPl": "adoptować"
+            },
+            {
+              "en": "We adopted our cat from this shelter three years ago.",
+              "pl": "Trzy lata temu adoptowaliśmy kota z tego schroniska.",
+              "focusEn": "adopted",
+              "focusPl": "adoptowaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "adopt"
+          ],
+          "acceptedTranslations": [
+            "adoptować",
+            "przygarnąć",
+            "wziąć ze schroniska"
+          ]
+        },
+        {
+          "id": "pets.shelter",
+          "term": "shelter",
+          "ipa": "/ˈʃeltər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "schronisko",
+          "definition": "A place that cares for animals without homes.",
+          "register": "neutralny",
+          "contextPl": "Opieka nad bezdomnymi zwierzętami",
+          "natural": "",
+          "forms": "shelters",
+          "collocations": "animal shelter; rescue shelter",
+          "synonyms": "rescue",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The shelter is full, so they're looking for families.",
+              "pl": "Schronisko jest pełne, więc szukają rodzin.",
+              "focusEn": "shelter",
+              "focusPl": "Schronisko"
+            },
+            {
+              "en": "We spent the whole Saturday at the animal shelter.",
+              "pl": "Całą sobotę spędziliśmy w schronisku dla zwierząt.",
+              "focusEn": "shelter",
+              "focusPl": "schronisku"
+            }
+          ],
+          "acceptedAnswers": [
+            "shelter",
+            "animal shelter"
+          ],
+          "acceptedTranslations": [
+            "schronisko",
+            "schronisko dla zwierząt"
+          ]
+        },
+        {
+          "id": "pets.guinea-pig",
+          "term": "guinea pig",
+          "ipa": "/ˈɡɪni ˌpɪɡ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "świnka morska",
+          "definition": "A small furry animal with no tail, kept as a pet.",
+          "register": "neutralny",
+          "contextPl": "Małe zwierzęta domowe",
+          "natural": "",
+          "forms": "guinea pigs",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Także w przenośni: „królik doświadczalny”.",
+          "examples": [
+            {
+              "en": "The guinea pigs squeaked when we walked by.",
+              "pl": "Świnki morskie zapiszczały, kiedy przechodziliśmy obok.",
+              "focusEn": "guinea pigs",
+              "focusPl": "Świnki morskie"
+            },
+            {
+              "en": "The volunteer said guinea pigs are happier in pairs.",
+              "pl": "Wolontariuszka powiedziała, że świnki morskie są szczęśliwsze w parach.",
+              "focusEn": "guinea pigs",
+              "focusPl": "świnki morskie"
+            }
+          ],
+          "acceptedAnswers": [
+            "guinea pig"
+          ],
+          "acceptedTranslations": [
+            "świnka morska",
+            "świnki morskie"
+          ]
+        },
+        {
+          "id": "pets.breed",
+          "term": "breed",
+          "ipa": "/briːd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rasa",
+          "definition": "A particular type of dog, cat or other animal.",
+          "register": "neutralny",
+          "contextPl": "Rasy zwierząt",
+          "natural": "",
+          "forms": "breeds",
+          "collocations": "dog breed; what breed",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What breed is he? He has such long ears.",
+              "pl": "Jakiej jest rasy? Ma takie długie uszy.",
+              "focusEn": "breed",
+              "focusPl": "rasy"
+            },
+            {
+              "en": "Some breeds need a lot more exercise than others.",
+              "pl": "Niektóre rasy potrzebują dużo więcej ruchu niż inne.",
+              "focusEn": "breeds",
+              "focusPl": "rasy"
+            }
+          ],
+          "acceptedAnswers": [
+            "breed"
+          ],
+          "acceptedTranslations": [
+            "rasa"
+          ]
+        },
+        {
+          "id": "pets.mixed-breed",
+          "term": "mixed breed",
+          "ipa": "/ˌmɪkst ˈbriːd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "mieszaniec",
+          "definition": "An animal whose parents are of different breeds.",
+          "register": "neutralny",
+          "contextPl": "Psy i koty bez rasy",
+          "natural": "",
+          "forms": "mixed breeds",
+          "collocations": "",
+          "synonyms": "mutt",
+          "antonyms": "purebred",
+          "notePl": "Potocznie o psie: „mutt”.",
+          "examples": [
+            {
+              "en": "Most of the dogs here are mixed breeds.",
+              "pl": "Większość psów tutaj to mieszańce.",
+              "focusEn": "mixed breeds",
+              "focusPl": "mieszańce"
+            },
+            {
+              "en": "Our first dog was a mixed breed and the sweetest pet ever.",
+              "pl": "Nasz pierwszy pies był mieszańcem i najsłodszym zwierzakiem na świecie.",
+              "focusEn": "mixed breed",
+              "focusPl": "mieszańcem"
+            }
+          ],
+          "acceptedAnswers": [
+            "mixed breed",
+            "mutt"
+          ],
+          "acceptedTranslations": [
+            "mieszaniec",
+            "kundel",
+            "kundelek"
+          ]
+        },
+        {
+          "id": "pets.parakeet",
+          "term": "parakeet",
+          "ipa": "/ˈperəkiːt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "papużka falista",
+          "definition": "A small colorful bird often kept in a cage.",
+          "register": "neutralny",
+          "contextPl": "Ptaki domowe",
+          "natural": "",
+          "forms": "parakeets",
+          "collocations": "",
+          "synonyms": "budgie",
+          "antonyms": "",
+          "notePl": "W BrE częściej „budgie”.",
+          "examples": [
+            {
+              "en": "A parakeet can learn a few words if you talk to it.",
+              "pl": "Papużka falista może nauczyć się kilku słów, jeśli się do niej mówi.",
+              "focusEn": "parakeet",
+              "focusPl": "Papużka falista"
+            },
+            {
+              "en": "Two green parakeets were chirping in the big cage.",
+              "pl": "W dużej klatce ćwierkały dwie zielone papużki.",
+              "focusEn": "parakeets",
+              "focusPl": "papużki"
+            }
+          ],
+          "acceptedAnswers": [
+            "parakeet",
+            "budgie"
+          ],
+          "acceptedTranslations": [
+            "papużka falista",
+            "papużka"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pets.care-feeding",
+      "namePl": "Opieka i karmienie",
+      "scenePl": "Pierwszy tydzień z nowym psem i kotem w mieszkaniu",
+      "entries": [
+        {
+          "id": "pets.feed",
+          "term": "feed",
+          "ipa": "/fiːd/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "karmić",
+          "definition": "To give food to an animal.",
+          "register": "neutralny",
+          "contextPl": "Karmienie zwierząt",
+          "natural": "",
+          "forms": "feed – fed – fed",
+          "collocations": "feed the dog; feed twice a day",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We feed him twice a day, morning and evening.",
+              "pl": "Karmimy go dwa razy dziennie, rano i wieczorem.",
+              "focusEn": "feed",
+              "focusPl": "Karmimy"
+            },
+            {
+              "en": "Don't feed him from the table, or he'll beg every night.",
+              "pl": "Nie karm go przy stole, bo będzie żebrał co wieczór.",
+              "focusEn": "feed",
+              "focusPl": "karm"
+            }
+          ],
+          "acceptedAnswers": [
+            "feed"
+          ],
+          "acceptedTranslations": [
+            "karmić",
+            "nakarmić"
+          ]
+        },
+        {
+          "id": "pets.walk-the-dog",
+          "term": "walk the dog",
+          "ipa": "/ˌwɔːk ðə ˈdɔːɡ/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "wyprowadzić psa",
+          "definition": "To take a dog outside for a walk.",
+          "register": "neutralny",
+          "contextPl": "Spacery z psem",
+          "natural": "",
+          "forms": "walk – walked – walked",
+          "collocations": "",
+          "synonyms": "take the dog out",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Whose turn is it to walk the dog tonight?",
+              "pl": "Czyja kolej, żeby wyprowadzić psa wieczorem?",
+              "focusEn": "walk the dog",
+              "focusPl": "wyprowadzić psa"
+            },
+            {
+              "en": "I walk the dog before work, even when it's raining.",
+              "pl": "Wyprowadzam psa przed pracą, nawet kiedy pada.",
+              "focusEn": "walk the dog",
+              "focusPl": "Wyprowadzam psa"
+            }
+          ],
+          "acceptedAnswers": [
+            "walk the dog",
+            "take the dog out"
+          ],
+          "acceptedTranslations": [
+            "wyprowadzić psa",
+            "wyprowadzać psa",
+            "iść z psem na spacer"
+          ]
+        },
+        {
+          "id": "pets.toy",
+          "term": "toy",
+          "ipa": "/tɔɪ/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "zabawka",
+          "definition": "An object for a pet to play with.",
+          "register": "neutralny",
+          "contextPl": "Zabawa",
+          "natural": "",
+          "forms": "toys",
+          "collocations": "dog toy; chew toy; squeaky toy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He chewed his new toy to pieces in one day.",
+              "pl": "W jeden dzień pogryzł nową zabawkę na kawałki.",
+              "focusEn": "toy",
+              "focusPl": "zabawkę"
+            },
+            {
+              "en": "There are dog toys all over our living room now.",
+              "pl": "Teraz w całym salonie leżą psie zabawki.",
+              "focusEn": "toys",
+              "focusPl": "zabawki"
+            }
+          ],
+          "acceptedAnswers": [
+            "toy"
+          ],
+          "acceptedTranslations": [
+            "zabawka",
+            "zabawki"
+          ]
+        },
+        {
+          "id": "pets.dog-food",
+          "term": "dog food",
+          "ipa": "/ˈdɔːɡ ˌfuːd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "karma dla psa",
+          "definition": "Food made specially for dogs.",
+          "register": "neutralny",
+          "contextPl": "Karma",
+          "natural": "",
+          "forms": "",
+          "collocations": "dry dog food; a bag of dog food",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Analogicznie: cat food – karma dla kota.",
+          "examples": [
+            {
+              "en": "We bought a big bag of dog food and a new bowl.",
+              "pl": "Kupiliśmy duży worek karmy dla psa i nową miskę.",
+              "focusEn": "dog food",
+              "focusPl": "karmy dla psa"
+            },
+            {
+              "en": "He sniffed the new dog food and walked away.",
+              "pl": "Powąchał nową karmę i odszedł.",
+              "focusEn": "dog food",
+              "focusPl": "karmę"
+            }
+          ],
+          "acceptedAnswers": [
+            "dog food"
+          ],
+          "acceptedTranslations": [
+            "karma dla psa",
+            "karma dla psów",
+            "karma"
+          ]
+        },
+        {
+          "id": "pets.bowl",
+          "term": "bowl",
+          "ipa": "/boʊl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "miska",
+          "definition": "A round dish for food or water.",
+          "register": "neutralny",
+          "contextPl": "Akcesoria do karmienia",
+          "natural": "",
+          "forms": "bowls",
+          "collocations": "water bowl; food bowl",
+          "synonyms": "dish",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Always keep his water bowl full.",
+              "pl": "Zawsze trzymaj pełną miskę z wodą.",
+              "focusEn": "bowl",
+              "focusPl": "miskę"
+            },
+            {
+              "en": "He pushed his empty bowl across the kitchen floor.",
+              "pl": "Przepchnął pustą miskę przez całą kuchnię.",
+              "focusEn": "bowl",
+              "focusPl": "miskę"
+            }
+          ],
+          "acceptedAnswers": [
+            "bowl",
+            "dish"
+          ],
+          "acceptedTranslations": [
+            "miska",
+            "miseczka"
+          ]
+        },
+        {
+          "id": "pets.take-care-of",
+          "term": "take care of",
+          "ipa": "/ˌteɪk ˈker əv/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "opiekować się",
+          "definition": "To look after someone or something.",
+          "register": "neutralny",
+          "contextPl": "Odpowiedzialność za zwierzę",
+          "natural": "",
+          "forms": "take – took – taken",
+          "collocations": "take care of a pet",
+          "synonyms": "look after",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Who will take care of him while we're at work?",
+              "pl": "Kto będzie się nim opiekował, kiedy będziemy w pracy?",
+              "focusEn": "take care of",
+              "focusPl": "opiekował"
+            },
+            {
+              "en": "The kids promised to take care of the dog themselves.",
+              "pl": "Dzieci obiecały, że same będą się opiekować psem.",
+              "focusEn": "take care of",
+              "focusPl": "opiekować"
+            }
+          ],
+          "acceptedAnswers": [
+            "take care of",
+            "look after"
+          ],
+          "acceptedTranslations": [
+            "opiekować się",
+            "zaopiekować się",
+            "zajmować się"
+          ]
+        },
+        {
+          "id": "pets.leash",
+          "term": "leash",
+          "ipa": "/liːʃ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "smycz",
+          "definition": "A long strap tied to a dog's collar to control it.",
+          "register": "neutralny",
+          "contextPl": "Spacery",
+          "natural": "",
+          "forms": "leashes",
+          "collocations": "on a leash; off leash",
+          "synonyms": "lead",
+          "antonyms": "",
+          "notePl": "W BrE „lead”.",
+          "examples": [
+            {
+              "en": "As soon as I pick up the leash, he runs to the door.",
+              "pl": "Gdy tylko biorę smycz, biegnie do drzwi.",
+              "focusEn": "leash",
+              "focusPl": "smycz"
+            },
+            {
+              "en": "Dogs must stay on a leash in our building.",
+              "pl": "W naszym budynku psy muszą być na smyczy.",
+              "focusEn": "leash",
+              "focusPl": "smyczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "leash",
+            "lead"
+          ],
+          "acceptedTranslations": [
+            "smycz"
+          ]
+        },
+        {
+          "id": "pets.collar",
+          "term": "collar",
+          "ipa": "/ˈkɑːlər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "obroża",
+          "definition": "A band worn around an animal's neck.",
+          "register": "neutralny",
+          "contextPl": "Akcesoria",
+          "natural": "",
+          "forms": "collars",
+          "collocations": "dog collar; flea collar",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "His collar has a tag with our phone number.",
+              "pl": "Jego obroża ma przywieszkę z naszym numerem telefonu.",
+              "focusEn": "collar",
+              "focusPl": "obroża"
+            },
+            {
+              "en": "We bought a red collar that matches his leash.",
+              "pl": "Kupiliśmy czerwoną obrożę pasującą do smyczy.",
+              "focusEn": "collar",
+              "focusPl": "obrożę"
+            }
+          ],
+          "acceptedAnswers": [
+            "collar"
+          ],
+          "acceptedTranslations": [
+            "obroża"
+          ]
+        },
+        {
+          "id": "pets.treat",
+          "term": "treat",
+          "ipa": "/triːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przysmak",
+          "definition": "A small tasty piece of food given as a reward.",
+          "register": "neutralny",
+          "contextPl": "Nagradzanie",
+          "natural": "",
+          "forms": "treats",
+          "collocations": "dog treat; give a treat",
+          "synonyms": "snack",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I keep treats in my pocket to reward him.",
+              "pl": "Trzymam przysmaki w kieszeni, żeby go nagradzać.",
+              "focusEn": "treats",
+              "focusPl": "przysmaki"
+            },
+            {
+              "en": "He sat perfectly still, staring at the treat in my hand.",
+              "pl": "Siedział idealnie nieruchomo, wpatrzony w smakołyk w mojej dłoni.",
+              "focusEn": "treat",
+              "focusPl": "smakołyk"
+            }
+          ],
+          "acceptedAnswers": [
+            "treat"
+          ],
+          "acceptedTranslations": [
+            "przysmak",
+            "smakołyk",
+            "nagroda"
+          ]
+        },
+        {
+          "id": "pets.litter-box",
+          "term": "litter box",
+          "ipa": "/ˈlɪtər ˌbɑːks/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kuweta",
+          "definition": "A box with sand where a cat goes to the toilet.",
+          "register": "neutralny",
+          "contextPl": "Higiena kota",
+          "natural": "",
+          "forms": "litter boxes",
+          "collocations": "clean the litter box",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W BrE „litter tray”.",
+          "examples": [
+            {
+              "en": "The cat found her litter box right away.",
+              "pl": "Kotka od razu znalazła swoją kuwetę.",
+              "focusEn": "litter box",
+              "focusPl": "kuwetę"
+            },
+            {
+              "en": "Cleaning the litter box is my son's job.",
+              "pl": "Sprzątanie kuwety to zadanie mojego syna.",
+              "focusEn": "litter box",
+              "focusPl": "kuwety"
+            }
+          ],
+          "acceptedAnswers": [
+            "litter box",
+            "litter tray"
+          ],
+          "acceptedTranslations": [
+            "kuweta"
+          ]
+        },
+        {
+          "id": "pets.clean-up-after",
+          "term": "clean up after",
+          "ipa": "/ˌkliːn ˈʌp æftər/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sprzątać po",
+          "definition": "To pick up the mess an animal makes.",
+          "register": "neutralny",
+          "contextPl": "Sprzątanie po psie",
+          "natural": "",
+          "forms": "clean – cleaned – cleaned",
+          "collocations": "clean up after your dog",
+          "synonyms": "pick up after",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "In the city, you have to clean up after your dog.",
+              "pl": "W mieście trzeba sprzątać po swoim psie.",
+              "focusEn": "clean up after",
+              "focusPl": "sprzątać po"
+            },
+            {
+              "en": "I always carry bags to clean up after him on walks.",
+              "pl": "Na spacerach zawsze noszę woreczki, żeby sprzątać po nim.",
+              "focusEn": "clean up after",
+              "focusPl": "sprzątać po"
+            }
+          ],
+          "acceptedAnswers": [
+            "clean up after",
+            "pick up after"
+          ],
+          "acceptedTranslations": [
+            "sprzątać po",
+            "posprzątać po"
+          ]
+        },
+        {
+          "id": "pets.crate",
+          "term": "crate",
+          "ipa": "/kreɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "klatka kennelowa",
+          "definition": "A box with bars where a dog can sleep or travel safely.",
+          "register": "neutralny",
+          "contextPl": "Miejsce do spania psa",
+          "natural": "",
+          "forms": "crates",
+          "collocations": "crate training; dog crate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He sleeps in a crate next to our bed.",
+              "pl": "Śpi w klatce obok naszego łóżka.",
+              "focusEn": "crate",
+              "focusPl": "klatce"
+            },
+            {
+              "en": "We put a soft blanket in his crate to make it cozy.",
+              "pl": "Włożyliśmy do jego klatki miękki kocyk, żeby było przytulnie.",
+              "focusEn": "crate",
+              "focusPl": "klatki"
+            }
+          ],
+          "acceptedAnswers": [
+            "crate"
+          ],
+          "acceptedTranslations": [
+            "klatka kennelowa",
+            "klatka",
+            "kojec"
+          ]
+        },
+        {
+          "id": "pets.house-trained",
+          "term": "house-trained",
+          "ipa": "/ˈhaʊs ˌtreɪnd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nauczony czystości",
+          "definition": "Trained to go to the toilet outside or in a litter box.",
+          "register": "neutralny",
+          "contextPl": "Nauka czystości",
+          "natural": "",
+          "forms": "",
+          "collocations": "fully house-trained",
+          "synonyms": "housebroken",
+          "antonyms": "",
+          "notePl": "W AmE często „housebroken”.",
+          "examples": [
+            {
+              "en": "Is he house-trained, or will he have accidents?",
+              "pl": "Czy jest nauczony czystości, czy będą mu się zdarzać wpadki?",
+              "focusEn": "house-trained",
+              "focusPl": "nauczony czystości"
+            },
+            {
+              "en": "It took two weeks before our puppy was fully house-trained.",
+              "pl": "Minęły dwa tygodnie, zanim nasz szczeniak był w pełni nauczony czystości.",
+              "focusEn": "house-trained",
+              "focusPl": "nauczony czystości"
+            }
+          ],
+          "acceptedAnswers": [
+            "house-trained",
+            "housebroken",
+            "potty-trained"
+          ],
+          "acceptedTranslations": [
+            "nauczony czystości",
+            "nauczony załatwiania się na dworze"
+          ]
+        },
+        {
+          "id": "pets.groom",
+          "term": "groom",
+          "ipa": "/ɡruːm/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "pielęgnować",
+          "definition": "To clean and brush an animal's fur.",
+          "register": "neutralny",
+          "contextPl": "Pielęgnacja sierści",
+          "natural": "",
+          "forms": "groomed",
+          "collocations": "groom a dog; professionally groomed",
+          "synonyms": "brush",
+          "antonyms": "",
+          "notePl": "O kocie: groom itself – myć się.",
+          "examples": [
+            {
+              "en": "Long-haired dogs need to be groomed every few weeks.",
+              "pl": "Psy długowłose trzeba pielęgnować co kilka tygodni.",
+              "focusEn": "groomed",
+              "focusPl": "pielęgnować"
+            },
+            {
+              "en": "Our cat grooms herself for hours on the windowsill.",
+              "pl": "Nasza kotka godzinami myje się na parapecie.",
+              "focusEn": "grooms",
+              "focusPl": "myje się"
+            }
+          ],
+          "acceptedAnswers": [
+            "groom"
+          ],
+          "acceptedTranslations": [
+            "pielęgnować",
+            "czesać",
+            "myć się",
+            "dbać o sierść"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pets.training-behavior",
+      "namePl": "Tresura i zachowanie",
+      "scenePl": "Kurs posłuszeństwa dla psów w parku",
+      "entries": [
+        {
+          "id": "pets.sit",
+          "term": "sit",
+          "ipa": "/sɪt/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "siadać",
+          "definition": "To lower the back of the body to the ground, as a dog command.",
+          "register": "neutralny",
+          "contextPl": "Podstawowa komenda",
+          "natural": "",
+          "forms": "sit – sat – sat",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "stand",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He learned to sit in the first lesson.",
+              "pl": "Na pierwszej lekcji nauczył się siadać.",
+              "focusEn": "sit",
+              "focusPl": "siadać"
+            },
+            {
+              "en": "Tell him to sit before you put the bowl down.",
+              "pl": "Powiedz mu, żeby usiadł, zanim postawisz miskę.",
+              "focusEn": "sit",
+              "focusPl": "usiadł"
+            }
+          ],
+          "acceptedAnswers": [
+            "sit"
+          ],
+          "acceptedTranslations": [
+            "siadać",
+            "siad",
+            "usiąść"
+          ]
+        },
+        {
+          "id": "pets.bark",
+          "term": "bark",
+          "ipa": "/bɑːrk/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "szczekać",
+          "definition": "To make the short loud sound that dogs make.",
+          "register": "neutralny",
+          "contextPl": "Odgłosy psów",
+          "natural": "",
+          "forms": "barked",
+          "collocations": "bark at; bark loudly",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He barks at every dog he sees.",
+              "pl": "Szczeka na każdego psa, którego zobaczy.",
+              "focusEn": "barks",
+              "focusPl": "Szczeka"
+            },
+            {
+              "en": "The instructor showed us how to stop a dog from barking.",
+              "pl": "Instruktor pokazał nam, jak oduczyć psa szczekania.",
+              "focusEn": "barking",
+              "focusPl": "szczekania"
+            }
+          ],
+          "acceptedAnswers": [
+            "bark"
+          ],
+          "acceptedTranslations": [
+            "szczekać",
+            "szczeknąć",
+            "ujadać"
+          ]
+        },
+        {
+          "id": "pets.stay",
+          "term": "stay",
+          "ipa": "/steɪ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zostać",
+          "definition": "To remain in one place, as a dog command.",
+          "register": "neutralny",
+          "contextPl": "Komenda „zostań”",
+          "natural": "",
+          "forms": "stayed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "come",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The hardest command for him is stay.",
+              "pl": "Najtrudniejsza komenda dla niego to zostań.",
+              "focusEn": "stay",
+              "focusPl": "zostań"
+            },
+            {
+              "en": "She told her dog to stay and walked ten steps away.",
+              "pl": "Kazała psu zostać i odeszła dziesięć kroków.",
+              "focusEn": "stay",
+              "focusPl": "zostać"
+            }
+          ],
+          "acceptedAnswers": [
+            "stay"
+          ],
+          "acceptedTranslations": [
+            "zostać",
+            "zostań",
+            "zostawać"
+          ]
+        },
+        {
+          "id": "pets.good-boy",
+          "term": "good boy",
+          "ipa": "/ˌɡʊd ˈbɔɪ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dobry piesek",
+          "definition": "Praise said to a male dog that did something right.",
+          "register": "potoczny",
+          "contextPl": "Chwalenie psa",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Do suczki: „good girl”.",
+          "examples": [
+            {
+              "en": "I rubbed his ears and told him he was a good boy.",
+              "pl": "Podrapałem go za uszami i powiedziałem, że jest grzecznym pieskiem.",
+              "focusEn": "good boy",
+              "focusPl": "grzecznym pieskiem"
+            },
+            {
+              "en": "The trainer said to use a happy voice when you say good boy.",
+              "pl": "Trener powiedział, żeby mówić dobry piesek radosnym głosem.",
+              "focusEn": "good boy",
+              "focusPl": "dobry piesek"
+            }
+          ],
+          "acceptedAnswers": [
+            "good boy",
+            "good girl",
+            "good dog"
+          ],
+          "acceptedTranslations": [
+            "dobry piesek",
+            "grzeczny piesek",
+            "brawo"
+          ]
+        },
+        {
+          "id": "pets.pull",
+          "term": "pull",
+          "ipa": "/pʊl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ciągnąć",
+          "definition": "To move something toward you with force, like a dog on a leash.",
+          "register": "neutralny",
+          "contextPl": "Ciągnięcie na smyczy",
+          "natural": "",
+          "forms": "pulled",
+          "collocations": "pull on the leash",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He pulls so hard on the leash that my arm hurts.",
+              "pl": "Tak mocno ciągnie smycz, że boli mnie ręka.",
+              "focusEn": "pulls",
+              "focusPl": "ciągnie"
+            },
+            {
+              "en": "The trainer stopped walking every time a dog pulled.",
+              "pl": "Trener zatrzymywał się za każdym razem, gdy pies ciągnął.",
+              "focusEn": "pulled",
+              "focusPl": "ciągnął"
+            }
+          ],
+          "acceptedAnswers": [
+            "pull"
+          ],
+          "acceptedTranslations": [
+            "ciągnąć",
+            "szarpać"
+          ]
+        },
+        {
+          "id": "pets.train",
+          "term": "train",
+          "ipa": "/treɪn/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "tresować",
+          "definition": "To teach an animal to behave in a certain way.",
+          "register": "neutralny",
+          "contextPl": "Nauka posłuszeństwa",
+          "natural": "",
+          "forms": "trained",
+          "collocations": "train a dog; potty train",
+          "synonyms": "teach",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're training him to walk nicely on a leash.",
+              "pl": "Uczymy go ładnie chodzić na smyczy.",
+              "focusEn": "training",
+              "focusPl": "Uczymy"
+            },
+            {
+              "en": "The instructor said it's easier to train a dog when it's young.",
+              "pl": "Instruktorka powiedziała, że łatwiej wytresować psa, kiedy jest młody.",
+              "focusEn": "train",
+              "focusPl": "wytresować"
+            }
+          ],
+          "acceptedAnswers": [
+            "train",
+            "teach"
+          ],
+          "acceptedTranslations": [
+            "tresować",
+            "wytresować",
+            "szkolić",
+            "uczyć"
+          ]
+        },
+        {
+          "id": "pets.fetch",
+          "term": "fetch",
+          "ipa": "/fetʃ/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "aportować",
+          "definition": "To run after something thrown and bring it back.",
+          "register": "neutralny",
+          "contextPl": "Zabawa w aportowanie",
+          "natural": "",
+          "forms": "fetched",
+          "collocations": "play fetch; fetch the ball",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He loves to fetch the ball, but he won't give it back.",
+              "pl": "Uwielbia aportować piłkę, ale nie chce jej oddać.",
+              "focusEn": "fetch",
+              "focusPl": "aportować"
+            },
+            {
+              "en": "During the break, we played fetch with a stick.",
+              "pl": "W przerwie bawiliśmy się w aportowanie patykiem.",
+              "focusEn": "fetch",
+              "focusPl": "aportowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "fetch"
+          ],
+          "acceptedTranslations": [
+            "aportować",
+            "przynosić",
+            "aport"
+          ]
+        },
+        {
+          "id": "pets.chew",
+          "term": "chew",
+          "ipa": "/tʃuː/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gryźć",
+          "definition": "To bite something many times, like a dog with a toy or shoe.",
+          "register": "neutralny",
+          "contextPl": "Gryzienie przedmiotów",
+          "natural": "",
+          "forms": "chewed",
+          "collocations": "chew on; chew toy",
+          "synonyms": "gnaw",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Puppies chew everything when their teeth are growing.",
+              "pl": "Szczeniaki gryzą wszystko, kiedy rosną im zęby.",
+              "focusEn": "chew",
+              "focusPl": "gryzą"
+            },
+            {
+              "en": "He chewed through his leash during the class!",
+              "pl": "Podczas zajęć przegryzł smycz!",
+              "focusEn": "chewed",
+              "focusPl": "przegryzł"
+            }
+          ],
+          "acceptedAnswers": [
+            "chew",
+            "gnaw"
+          ],
+          "acceptedTranslations": [
+            "gryźć",
+            "pogryźć",
+            "przegryźć"
+          ]
+        },
+        {
+          "id": "pets.jump-up",
+          "term": "jump up",
+          "ipa": "/ˌdʒʌmp ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "skakać",
+          "definition": "To jump onto a person, used about dogs greeting people.",
+          "register": "neutralny",
+          "contextPl": "Niepożądane zachowanie",
+          "natural": "",
+          "forms": "jumped up",
+          "collocations": "jump up on people",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't let him jump up on people.",
+              "pl": "Nie pozwalaj mu skakać na ludzi.",
+              "focusEn": "jump up",
+              "focusPl": "skakać"
+            },
+            {
+              "en": "He jumped up on the trainer and left muddy paw prints.",
+              "pl": "Skoczył na trenera i zostawił błotniste ślady łap.",
+              "focusEn": "jumped up",
+              "focusPl": "Skoczył"
+            }
+          ],
+          "acceptedAnswers": [
+            "jump up"
+          ],
+          "acceptedTranslations": [
+            "skakać",
+            "skoczyć",
+            "wskakiwać"
+          ]
+        },
+        {
+          "id": "pets.behave",
+          "term": "behave",
+          "ipa": "/bɪˈheɪv/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zachowywać się",
+          "definition": "To act in a polite or correct way.",
+          "register": "neutralny",
+          "contextPl": "Dobre zachowanie",
+          "natural": "",
+          "forms": "behaved",
+          "collocations": "behave well; behave yourself",
+          "synonyms": "",
+          "antonyms": "misbehave",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He behaves well at home, but not around other dogs.",
+              "pl": "W domu zachowuje się dobrze, ale nie przy innych psach.",
+              "focusEn": "behaves",
+              "focusPl": "zachowuje się"
+            },
+            {
+              "en": "If he behaves, he gets a treat at the end.",
+              "pl": "Jeśli będzie się grzecznie zachowywał, na koniec dostanie przysmak.",
+              "focusEn": "behaves",
+              "focusPl": "grzecznie zachowywał"
+            }
+          ],
+          "acceptedAnswers": [
+            "behave"
+          ],
+          "acceptedTranslations": [
+            "zachowywać się",
+            "zachowywać się grzecznie",
+            "być grzecznym"
+          ]
+        },
+        {
+          "id": "pets.paw",
+          "term": "paw",
+          "ipa": "/pɔː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "łapa",
+          "definition": "The foot of an animal such as a dog or cat.",
+          "register": "neutralny",
+          "contextPl": "Łapy zwierzęcia",
+          "natural": "",
+          "forms": "paws",
+          "collocations": "give a paw; paw prints",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He can give me his paw now!",
+              "pl": "Teraz potrafi podać mi łapę!",
+              "focusEn": "paw",
+              "focusPl": "łapę"
+            },
+            {
+              "en": "One dog had a thorn stuck in its paw.",
+              "pl": "Jeden pies miał cierń wbity w łapę.",
+              "focusEn": "paw",
+              "focusPl": "łapę"
+            }
+          ],
+          "acceptedAnswers": [
+            "paw"
+          ],
+          "acceptedTranslations": [
+            "łapa",
+            "łapka"
+          ]
+        },
+        {
+          "id": "pets.wag",
+          "term": "wag",
+          "ipa": "/wæɡ/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "merdać",
+          "definition": "To move a tail from side to side.",
+          "register": "neutralny",
+          "contextPl": "Radość psa",
+          "natural": "",
+          "forms": "wagged",
+          "collocations": "wag its tail",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Look, he's wagging his tail; he likes you.",
+              "pl": "Patrz, merda ogonem; lubi cię.",
+              "focusEn": "wagging",
+              "focusPl": "merda"
+            },
+            {
+              "en": "All the dogs wagged their tails when the trainer took out the treats.",
+              "pl": "Wszystkie psy zamerdały ogonami, kiedy trener wyjął przysmaki.",
+              "focusEn": "wagged",
+              "focusPl": "zamerdały"
+            }
+          ],
+          "acceptedAnswers": [
+            "wag"
+          ],
+          "acceptedTranslations": [
+            "merdać",
+            "machać ogonem",
+            "zamerdać"
+          ]
+        },
+        {
+          "id": "pets.obedient",
+          "term": "obedient",
+          "ipa": "/oʊˈbiːdiənt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "posłuszny",
+          "definition": "Doing what you are told.",
+          "register": "neutralny",
+          "contextPl": "Efekty tresury",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "well-behaved",
+          "antonyms": "disobedient",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After six weeks, he's much more obedient.",
+              "pl": "Po sześciu tygodniach jest dużo bardziej posłuszny.",
+              "focusEn": "obedient",
+              "focusPl": "posłuszny"
+            },
+            {
+              "en": "The most obedient dog in the class was a tiny poodle.",
+              "pl": "Najbardziej posłusznym psem w grupie był malutki pudel.",
+              "focusEn": "obedient",
+              "focusPl": "posłusznym"
+            }
+          ],
+          "acceptedAnswers": [
+            "obedient",
+            "well-behaved"
+          ],
+          "acceptedTranslations": [
+            "posłuszny",
+            "grzeczny"
+          ]
+        },
+        {
+          "id": "pets.growl",
+          "term": "growl",
+          "ipa": "/ɡraʊl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "warczeć",
+          "definition": "To make a low angry sound in the throat.",
+          "register": "neutralny",
+          "contextPl": "Sygnały ostrzegawcze",
+          "natural": "",
+          "forms": "growled",
+          "collocations": "growl at",
+          "synonyms": "snarl",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He growls when another dog gets too close to his toy.",
+              "pl": "Warczy, kiedy inny pies za bardzo zbliża się do jego zabawki.",
+              "focusEn": "growls",
+              "focusPl": "Warczy"
+            },
+            {
+              "en": "The trainer said a dog that growls is giving a warning.",
+              "pl": "Trener powiedział, że pies, który warczy, daje ostrzeżenie.",
+              "focusEn": "growls",
+              "focusPl": "warczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "growl",
+            "snarl"
+          ],
+          "acceptedTranslations": [
+            "warczeć",
+            "warknąć"
+          ]
+        },
+        {
+          "id": "pets.sniff",
+          "term": "sniff",
+          "ipa": "/snɪf/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "obwąchiwać",
+          "definition": "To smell something by breathing in through the nose.",
+          "register": "neutralny",
+          "contextPl": "Poznawanie otoczenia",
+          "natural": "",
+          "forms": "sniffed",
+          "collocations": "sniff around",
+          "synonyms": "smell",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let him sniff the other dogs before they play.",
+              "pl": "Pozwól mu obwąchać inne psy, zanim zaczną się bawić.",
+              "focusEn": "sniff",
+              "focusPl": "obwąchać"
+            },
+            {
+              "en": "He sniffed every tree on the way to class.",
+              "pl": "Obwąchał każde drzewo w drodze na zajęcia.",
+              "focusEn": "sniffed",
+              "focusPl": "Obwąchał"
+            }
+          ],
+          "acceptedAnswers": [
+            "sniff",
+            "smell"
+          ],
+          "acceptedTranslations": [
+            "obwąchiwać",
+            "obwąchać",
+            "wąchać"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pets.vet",
+      "namePl": "U weterynarza",
+      "scenePl": "Wizyta u weterynarza z kotką",
+      "entries": [
+        {
+          "id": "pets.vet",
+          "term": "vet",
+          "ipa": "/vet/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "weterynarz",
+          "definition": "A doctor for animals.",
+          "register": "neutralny",
+          "contextPl": "Leczenie zwierząt",
+          "natural": "",
+          "forms": "vets",
+          "collocations": "take a pet to the vet; vet clinic",
+          "synonyms": "veterinarian",
+          "antonyms": "",
+          "notePl": "Pełna forma: veterinarian.",
+          "examples": [
+            {
+              "en": "We're taking the cat to the vet this afternoon.",
+              "pl": "Dziś po południu zabieramy kotkę do weterynarza.",
+              "focusEn": "vet",
+              "focusPl": "weterynarza"
+            },
+            {
+              "en": "The vet listened to her heart and checked her teeth.",
+              "pl": "Weterynarz osłuchał jej serce i sprawdził zęby.",
+              "focusEn": "vet",
+              "focusPl": "Weterynarz"
+            }
+          ],
+          "acceptedAnswers": [
+            "vet",
+            "veterinarian"
+          ],
+          "acceptedTranslations": [
+            "weterynarz",
+            "weterynarka"
+          ]
+        },
+        {
+          "id": "pets.meow",
+          "term": "meow",
+          "ipa": "/miˈaʊ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "miauczeć",
+          "definition": "To make the sound that a cat makes.",
+          "register": "neutralny",
+          "contextPl": "Odgłosy kotów",
+          "natural": "",
+          "forms": "meowed",
+          "collocations": "meow loudly",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W BrE też „miaow”.",
+          "examples": [
+            {
+              "en": "She meowed loudly when the vet picked her up.",
+              "pl": "Głośno zamiauczała, kiedy weterynarz ją podniósł.",
+              "focusEn": "meowed",
+              "focusPl": "zamiauczała"
+            },
+            {
+              "en": "The cats in the waiting room meowed at each other.",
+              "pl": "Koty w poczekalni miauczały do siebie.",
+              "focusEn": "meowed",
+              "focusPl": "miauczały"
+            }
+          ],
+          "acceptedAnswers": [
+            "meow",
+            "miaow"
+          ],
+          "acceptedTranslations": [
+            "miauczeć",
+            "zamiauczeć"
+          ]
+        },
+        {
+          "id": "pets.shot",
+          "term": "shot",
+          "ipa": "/ʃɑːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "szczepienie",
+          "definition": "An injection of a vaccine or medicine for an animal.",
+          "register": "potoczny",
+          "contextPl": "Szczepienia zwierząt",
+          "natural": "",
+          "forms": "shots",
+          "collocations": "get her shots; rabies shot",
+          "synonyms": "vaccination",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She's due for her yearly shots.",
+              "pl": "Czas na jej coroczne szczepienia.",
+              "focusEn": "shots",
+              "focusPl": "szczepienia"
+            },
+            {
+              "en": "The shot took two seconds, and she didn't even notice.",
+              "pl": "Zastrzyk trwał dwie sekundy i nawet go nie zauważyła.",
+              "focusEn": "shot",
+              "focusPl": "Zastrzyk"
+            }
+          ],
+          "acceptedAnswers": [
+            "shot",
+            "vaccination",
+            "vaccine"
+          ],
+          "acceptedTranslations": [
+            "szczepienie",
+            "zastrzyk",
+            "szczepionka"
+          ]
+        },
+        {
+          "id": "pets.flea",
+          "term": "flea",
+          "ipa": "/fliː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pchła",
+          "definition": "A tiny jumping insect that lives on animals and bites.",
+          "register": "neutralny",
+          "contextPl": "Pasożyty zewnętrzne",
+          "natural": "",
+          "forms": "fleas",
+          "collocations": "flea drops; flea collar",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The vet found a few fleas behind her ears.",
+              "pl": "Weterynarz znalazł kilka pcheł za jej uszami.",
+              "focusEn": "fleas",
+              "focusPl": "pcheł"
+            },
+            {
+              "en": "We bought flea drops to put on her neck once a month.",
+              "pl": "Kupiliśmy krople na pchły do nakładania na kark raz w miesiącu.",
+              "focusEn": "flea",
+              "focusPl": "pchły"
+            }
+          ],
+          "acceptedAnswers": [
+            "flea",
+            "fleas"
+          ],
+          "acceptedTranslations": [
+            "pchła",
+            "pchły"
+          ]
+        },
+        {
+          "id": "pets.overweight",
+          "term": "overweight",
+          "ipa": "/ˌoʊvərˈweɪt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "z nadwagą",
+          "definition": "Heavier than is healthy.",
+          "register": "neutralny",
+          "contextPl": "Waga zwierzęcia",
+          "natural": "",
+          "forms": "",
+          "collocations": "a little overweight",
+          "synonyms": "",
+          "antonyms": "underweight",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The vet said our cat is a little overweight.",
+              "pl": "Weterynarz powiedział, że nasza kotka ma lekką nadwagę.",
+              "focusEn": "overweight",
+              "focusPl": "nadwagę"
+            },
+            {
+              "en": "Overweight cats can have problems with their joints, she explained.",
+              "pl": "Koty z nadwagą mogą mieć problemy ze stawami – wyjaśniła.",
+              "focusEn": "Overweight",
+              "focusPl": "nadwagą"
+            }
+          ],
+          "acceptedAnswers": [
+            "overweight"
+          ],
+          "acceptedTranslations": [
+            "z nadwagą",
+            "nadwaga",
+            "gruby",
+            "otyły"
+          ]
+        },
+        {
+          "id": "pets.vet-bill",
+          "term": "vet bill",
+          "ipa": "/ˈvet ˌbɪl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rachunek od weterynarza",
+          "definition": "The money you must pay for treatment at the vet.",
+          "register": "neutralny",
+          "contextPl": "Koszty leczenia zwierząt",
+          "natural": "",
+          "forms": "vet bills",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The vet bill was much higher than we expected.",
+              "pl": "Rachunek od weterynarza był dużo wyższy, niż się spodziewaliśmy.",
+              "focusEn": "vet bill",
+              "focusPl": "Rachunek od weterynarza"
+            },
+            {
+              "en": "Pet insurance would have paid most of that vet bill.",
+              "pl": "Ubezpieczenie zwierzęcia pokryłoby większość tego rachunku od weterynarza.",
+              "focusEn": "vet bill",
+              "focusPl": "rachunku od weterynarza"
+            }
+          ],
+          "acceptedAnswers": [
+            "vet bill"
+          ],
+          "acceptedTranslations": [
+            "rachunek od weterynarza",
+            "rachunek u weterynarza"
+          ]
+        },
+        {
+          "id": "pets.carrier",
+          "term": "carrier",
+          "ipa": "/ˈkæriər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "transporter",
+          "definition": "A box with a handle for carrying a small animal.",
+          "register": "neutralny",
+          "contextPl": "Przewożenie zwierząt",
+          "natural": "",
+          "forms": "carriers",
+          "collocations": "cat carrier; pet carrier",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Getting the cat into the carrier took twenty minutes.",
+              "pl": "Włożenie kota do transportera zajęło dwadzieścia minut.",
+              "focusEn": "carrier",
+              "focusPl": "transportera"
+            },
+            {
+              "en": "She cried in her carrier the whole way to the vet.",
+              "pl": "Przez całą drogę do weterynarza płakała w transporterze.",
+              "focusEn": "carrier",
+              "focusPl": "transporterze"
+            }
+          ],
+          "acceptedAnswers": [
+            "carrier",
+            "pet carrier"
+          ],
+          "acceptedTranslations": [
+            "transporter",
+            "kontener"
+          ]
+        },
+        {
+          "id": "pets.purr",
+          "term": "purr",
+          "ipa": "/pɜːr/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "mruczeć",
+          "definition": "To make the soft low sound a cat makes when it is happy.",
+          "register": "neutralny",
+          "contextPl": "Odgłosy kotów",
+          "natural": "",
+          "forms": "purred",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She started to purr when the nurse scratched her chin.",
+              "pl": "Zaczęła mruczeć, kiedy pielęgniarka podrapała ją pod brodą.",
+              "focusEn": "purr",
+              "focusPl": "mruczeć"
+            },
+            {
+              "en": "The vet said cats sometimes purr when they're nervous, too.",
+              "pl": "Weterynarz powiedział, że koty czasem mruczą także, kiedy są zdenerwowane.",
+              "focusEn": "purr",
+              "focusPl": "mruczą"
+            }
+          ],
+          "acceptedAnswers": [
+            "purr"
+          ],
+          "acceptedTranslations": [
+            "mruczeć",
+            "zamruczeć"
+          ]
+        },
+        {
+          "id": "pets.tick",
+          "term": "tick",
+          "ipa": "/tɪk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kleszcz",
+          "definition": "A small insect that bites animals and people and sucks blood.",
+          "register": "neutralny",
+          "contextPl": "Pasożyty",
+          "natural": "",
+          "forms": "ticks",
+          "collocations": "check for ticks; remove a tick",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Check her for ticks after she's been outside.",
+              "pl": "Sprawdzaj, czy nie ma kleszczy, po każdym wyjściu na dwór.",
+              "focusEn": "ticks",
+              "focusPl": "kleszczy"
+            },
+            {
+              "en": "The vet pulled a tick off her neck with special tweezers.",
+              "pl": "Weterynarz usunął kleszcza z jej szyi specjalną pęsetą.",
+              "focusEn": "tick",
+              "focusPl": "kleszcza"
+            }
+          ],
+          "acceptedAnswers": [
+            "tick",
+            "ticks"
+          ],
+          "acceptedTranslations": [
+            "kleszcz",
+            "kleszcze"
+          ]
+        },
+        {
+          "id": "pets.microchip",
+          "term": "microchip",
+          "ipa": "/ˈmaɪkroʊtʃɪp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "czip",
+          "definition": "A tiny device under an animal's skin with information about its owner.",
+          "register": "neutralny",
+          "contextPl": "Identyfikacja zwierzęcia",
+          "natural": "",
+          "forms": "microchips",
+          "collocations": "",
+          "synonyms": "chip",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Does your cat have a microchip in case she gets lost?",
+              "pl": "Czy wasza kotka ma czip na wypadek zgubienia?",
+              "focusEn": "microchip",
+              "focusPl": "czip"
+            },
+            {
+              "en": "The vet scanned her microchip to check our address.",
+              "pl": "Weterynarz zeskanował jej czip, żeby sprawdzić nasz adres.",
+              "focusEn": "microchip",
+              "focusPl": "czip"
+            }
+          ],
+          "acceptedAnswers": [
+            "microchip",
+            "chip"
+          ],
+          "acceptedTranslations": [
+            "czip",
+            "mikroczip",
+            "chip"
+          ]
+        },
+        {
+          "id": "pets.hairball",
+          "term": "hairball",
+          "ipa": "/ˈherbɔːl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kula włosowa",
+          "definition": "A ball of fur that a cat coughs up.",
+          "register": "neutralny",
+          "contextPl": "Problemy zdrowotne kotów",
+          "natural": "",
+          "forms": "hairballs",
+          "collocations": "cough up a hairball",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She's been coughing up hairballs all week.",
+              "pl": "Cały tydzień wykasłuje kule włosowe.",
+              "focusEn": "hairballs",
+              "focusPl": "kule włosowe"
+            },
+            {
+              "en": "The vet suggested a special food to help with hairballs.",
+              "pl": "Weterynarz zaproponował specjalną karmę na kule włosowe.",
+              "focusEn": "hairballs",
+              "focusPl": "kule włosowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "hairball"
+          ],
+          "acceptedTranslations": [
+            "kula włosowa",
+            "kule włosowe"
+          ]
+        },
+        {
+          "id": "pets.spay",
+          "term": "spay",
+          "ipa": "/speɪ/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wysterylizować",
+          "definition": "To remove a female animal's ability to have babies.",
+          "register": "specjalistyczny",
+          "contextPl": "Sterylizacja samic",
+          "natural": "",
+          "forms": "spayed",
+          "collocations": "spay a cat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "O samcach mówi się „neuter”.",
+          "examples": [
+            {
+              "en": "We should spay her before she's six months old.",
+              "pl": "Powinniśmy ją wysterylizować, zanim skończy sześć miesięcy.",
+              "focusEn": "spay",
+              "focusPl": "wysterylizować"
+            },
+            {
+              "en": "All the female cats at the shelter are spayed.",
+              "pl": "Wszystkie kotki ze schroniska są wysterylizowane.",
+              "focusEn": "spayed",
+              "focusPl": "wysterylizowane"
+            }
+          ],
+          "acceptedAnswers": [
+            "spay"
+          ],
+          "acceptedTranslations": [
+            "wysterylizować",
+            "sterylizować"
+          ]
+        },
+        {
+          "id": "pets.neuter",
+          "term": "neuter",
+          "ipa": "/ˈnuːtər/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wykastrować",
+          "definition": "To remove a male animal's ability to make babies.",
+          "register": "specjalistyczny",
+          "contextPl": "Kastracja samców",
+          "natural": "",
+          "forms": "neutered",
+          "collocations": "neuter a dog",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our male cat was neutered last spring.",
+              "pl": "Nasz kocur został wykastrowany zeszłej wiosny.",
+              "focusEn": "neutered",
+              "focusPl": "wykastrowany"
+            },
+            {
+              "en": "The vet said neutering can make him calmer.",
+              "pl": "Weterynarz powiedział, że kastracja może go uspokoić.",
+              "focusEn": "neutering",
+              "focusPl": "kastracja"
+            }
+          ],
+          "acceptedAnswers": [
+            "neuter"
+          ],
+          "acceptedTranslations": [
+            "wykastrować",
+            "kastrować"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pets.pet-services",
+      "namePl": "Opieka podczas wyjazdu",
+      "scenePl": "Przed urlopem: kto zajmie się zwierzakami pod nieobecność właścicieli",
+      "entries": [
+        {
+          "id": "pets.look-after",
+          "term": "look after",
+          "ipa": "/ˌlʊk ˈæftər/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zaopiekować się",
+          "definition": "To take care of someone or something.",
+          "register": "neutralny",
+          "contextPl": "Prośba o opiekę nad zwierzęciem",
+          "natural": "",
+          "forms": "looked after",
+          "collocations": "look after a pet",
+          "synonyms": "take care of",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you look after our cat next week?",
+              "pl": "Mógłbyś zaopiekować się naszym kotem w przyszłym tygodniu?",
+              "focusEn": "look after",
+              "focusPl": "zaopiekować się"
+            },
+            {
+              "en": "My neighbor looked after the fish while we were away.",
+              "pl": "Sąsiad zajmował się rybkami, kiedy nas nie było.",
+              "focusEn": "looked after",
+              "focusPl": "zajmował się"
+            }
+          ],
+          "acceptedAnswers": [
+            "look after",
+            "take care of"
+          ],
+          "acceptedTranslations": [
+            "zaopiekować się",
+            "opiekować się",
+            "zajmować się"
+          ]
+        },
+        {
+          "id": "pets.pet-store",
+          "term": "pet store",
+          "ipa": "/ˈpet ˌstɔːr/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "sklep zoologiczny",
+          "definition": "A store that sells pets, pet food and supplies.",
+          "register": "neutralny",
+          "contextPl": "Zakupy dla zwierząt",
+          "natural": "",
+          "forms": "pet stores",
+          "collocations": "",
+          "synonyms": "pet shop",
+          "antonyms": "",
+          "notePl": "W BrE „pet shop”.",
+          "examples": [
+            {
+              "en": "We stopped at the pet store to buy extra food before the trip.",
+              "pl": "Zatrzymaliśmy się w sklepie zoologicznym, żeby kupić zapas karmy przed wyjazdem.",
+              "focusEn": "pet store",
+              "focusPl": "sklepie zoologicznym"
+            },
+            {
+              "en": "The pet store also sells travel bowls that fold up.",
+              "pl": "Sklep zoologiczny sprzedaje też składane miski podróżne.",
+              "focusEn": "pet store",
+              "focusPl": "Sklep zoologiczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "pet store",
+            "pet shop"
+          ],
+          "acceptedTranslations": [
+            "sklep zoologiczny",
+            "zoologiczny"
+          ]
+        },
+        {
+          "id": "pets.fur",
+          "term": "fur",
+          "ipa": "/fɜːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sierść",
+          "definition": "The thick soft hair on an animal's body.",
+          "register": "neutralny",
+          "contextPl": "Sierść zwierzęcia",
+          "natural": "",
+          "forms": "",
+          "collocations": "thick fur; dog fur",
+          "synonyms": "hair",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's dog fur all over my suitcase.",
+              "pl": "Na całej walizce jest psia sierść.",
+              "focusEn": "fur",
+              "focusPl": "sierść"
+            },
+            {
+              "en": "The groomer said his thick fur makes hot weather hard for him.",
+              "pl": "Groomerka powiedziała, że przez gęstą sierść trudno mu znosić upały.",
+              "focusEn": "fur",
+              "focusPl": "sierść"
+            }
+          ],
+          "acceptedAnswers": [
+            "fur",
+            "hair"
+          ],
+          "acceptedTranslations": [
+            "sierść",
+            "futro"
+          ]
+        },
+        {
+          "id": "pets.dog-park",
+          "term": "dog park",
+          "ipa": "/ˈdɔːɡ ˌpɑːrk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wybieg dla psów",
+          "definition": "A fenced area where dogs can run without a leash.",
+          "register": "neutralny",
+          "contextPl": "Miejsce zabaw psów",
+          "natural": "",
+          "forms": "dog parks",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The pet sitter promised to take him to the dog park every day.",
+              "pl": "Opiekunka obiecała codziennie zabierać go na wybieg dla psów.",
+              "focusEn": "dog park",
+              "focusPl": "wybieg dla psów"
+            },
+            {
+              "en": "There's a dog park right next to the hotel we booked.",
+              "pl": "Tuż obok zarezerwowanego hotelu jest wybieg dla psów.",
+              "focusEn": "dog park",
+              "focusPl": "wybieg dla psów"
+            }
+          ],
+          "acceptedAnswers": [
+            "dog park"
+          ],
+          "acceptedTranslations": [
+            "wybieg dla psów",
+            "psi park"
+          ]
+        },
+        {
+          "id": "pets.pet-sitter",
+          "term": "pet sitter",
+          "ipa": "/ˈpet ˌsɪtər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "opiekun zwierząt",
+          "definition": "A person paid to take care of pets while the owners are away.",
+          "register": "neutralny",
+          "contextPl": "Opieka nad zwierzakiem w domu",
+          "natural": "",
+          "forms": "pet sitters",
+          "collocations": "hire a pet sitter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We hired a pet sitter to feed the cat while we're away.",
+              "pl": "Zatrudniliśmy opiekunkę, która będzie karmić kota pod naszą nieobecność.",
+              "focusEn": "pet sitter",
+              "focusPl": "opiekunkę"
+            },
+            {
+              "en": "Our pet sitter sends us photos every evening.",
+              "pl": "Nasz opiekun zwierząt co wieczór przysyła nam zdjęcia.",
+              "focusEn": "pet sitter",
+              "focusPl": "opiekun zwierząt"
+            }
+          ],
+          "acceptedAnswers": [
+            "pet sitter",
+            "petsitter"
+          ],
+          "acceptedTranslations": [
+            "opiekun zwierząt",
+            "opiekunka zwierząt",
+            "opiekunka",
+            "petsitter"
+          ]
+        },
+        {
+          "id": "pets.dog-walker",
+          "term": "dog walker",
+          "ipa": "/ˈdɔːɡ ˌwɔːkər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "osoba wyprowadzająca psy",
+          "definition": "A person paid to take dogs for walks.",
+          "register": "neutralny",
+          "contextPl": "Usługi dla właścicieli psów",
+          "natural": "",
+          "forms": "dog walkers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A dog walker will come twice a day while we're on vacation.",
+              "pl": "Podczas naszego urlopu dwa razy dziennie będzie przychodzić osoba wyprowadzająca psa.",
+              "focusEn": "dog walker",
+              "focusPl": "osoba wyprowadzająca psa"
+            },
+            {
+              "en": "Our dog walker takes five dogs to the park at once.",
+              "pl": "Nasza wyprowadzaczka psów zabiera do parku pięć psów naraz.",
+              "focusEn": "dog walker",
+              "focusPl": "wyprowadzaczka psów"
+            }
+          ],
+          "acceptedAnswers": [
+            "dog walker"
+          ],
+          "acceptedTranslations": [
+            "osoba wyprowadzająca psy",
+            "wyprowadzacz psów",
+            "wyprowadzaczka psów"
+          ]
+        },
+        {
+          "id": "pets.kennel",
+          "term": "kennel",
+          "ipa": "/ˈkenəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "hotel dla psów",
+          "definition": "A place where dogs are cared for while their owners are away.",
+          "register": "neutralny",
+          "contextPl": "Hotel dla zwierząt",
+          "natural": "",
+          "forms": "kennels",
+          "collocations": "boarding kennel",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Kennel” to też buda lub klatka dla psa.",
+          "examples": [
+            {
+              "en": "We left the dog at a kennel near the airport.",
+              "pl": "Zostawiliśmy psa w hotelu dla psów niedaleko lotniska.",
+              "focusEn": "kennel",
+              "focusPl": "hotelu dla psów"
+            },
+            {
+              "en": "The kennel asked for proof of his shots.",
+              "pl": "Hotel dla psów poprosił o zaświadczenie o szczepieniach.",
+              "focusEn": "kennel",
+              "focusPl": "Hotel dla psów"
+            }
+          ],
+          "acceptedAnswers": [
+            "kennel",
+            "boarding kennel"
+          ],
+          "acceptedTranslations": [
+            "hotel dla psów",
+            "hotel dla zwierząt",
+            "psi hotel"
+          ]
+        },
+        {
+          "id": "pets.pet-friendly",
+          "term": "pet-friendly",
+          "ipa": "/ˌpet ˈfrendli/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przyjazny zwierzętom",
+          "definition": "Allowing or welcoming pets.",
+          "register": "neutralny",
+          "contextPl": "Podróże ze zwierzakiem",
+          "natural": "",
+          "forms": "",
+          "collocations": "pet-friendly hotel; pet-friendly apartment",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We booked a pet-friendly hotel so the dog could come too.",
+              "pl": "Zarezerwowaliśmy hotel przyjazny zwierzętom, żeby pies mógł z nami jechać.",
+              "focusEn": "pet-friendly",
+              "focusPl": "przyjazny zwierzętom"
+            },
+            {
+              "en": "Not every beach is pet-friendly, so check before you go.",
+              "pl": "Nie każda plaża jest przyjazna psom, więc sprawdź przed wyjazdem.",
+              "focusEn": "pet-friendly",
+              "focusPl": "przyjazna psom"
+            }
+          ],
+          "acceptedAnswers": [
+            "pet-friendly",
+            "pet friendly"
+          ],
+          "acceptedTranslations": [
+            "przyjazny zwierzętom",
+            "przyjazny psom",
+            "dla zwierząt"
+          ]
+        },
+        {
+          "id": "pets.groomer",
+          "term": "groomer",
+          "ipa": "/ˈɡruːmər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "psi fryzjer",
+          "definition": "A person who washes, brushes and cuts animals' fur.",
+          "register": "neutralny",
+          "contextPl": "Pielęgnacja zwierząt",
+          "natural": "",
+          "forms": "groomers",
+          "collocations": "take the dog to the groomer",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku często też „groomer”.",
+          "examples": [
+            {
+              "en": "We took him to the groomer for a bath before the trip.",
+              "pl": "Przed wyjazdem zabraliśmy go do psiego fryzjera na kąpiel.",
+              "focusEn": "groomer",
+              "focusPl": "psiego fryzjera"
+            },
+            {
+              "en": "The groomer trimmed his nails and cut his fur short for summer.",
+              "pl": "Groomerka obcięła mu pazury i krótko przystrzygła sierść na lato.",
+              "focusEn": "groomer",
+              "focusPl": "Groomerka"
+            }
+          ],
+          "acceptedAnswers": [
+            "groomer",
+            "dog groomer"
+          ],
+          "acceptedTranslations": [
+            "psi fryzjer",
+            "groomer",
+            "groomerka"
+          ]
+        },
+        {
+          "id": "pets.shed",
+          "term": "shed",
+          "ipa": "/ʃed/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "linieć",
+          "definition": "To lose hair or fur naturally.",
+          "register": "neutralny",
+          "contextPl": "Linienie",
+          "natural": "",
+          "forms": "shed – shed – shed",
+          "collocations": "shed a lot",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our cat sheds so much that the pet sitter needs a lint roller.",
+              "pl": "Nasz kot tak linieje, że opiekunka potrzebuje rolki do ubrań.",
+              "focusEn": "sheds",
+              "focusPl": "linieje"
+            },
+            {
+              "en": "I brushed the dog before the trip because he's shedding a lot.",
+              "pl": "Przed wyjazdem wyczesałem psa, bo bardzo linieje.",
+              "focusEn": "shedding",
+              "focusPl": "linieje"
+            }
+          ],
+          "acceptedAnswers": [
+            "shed"
+          ],
+          "acceptedTranslations": [
+            "linieć"
+          ]
+        },
+        {
+          "id": "pets.pet-insurance",
+          "term": "pet insurance",
+          "ipa": "/ˈpet ɪnˌʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ubezpieczenie zwierzęcia",
+          "definition": "Insurance that pays for an animal's medical care.",
+          "register": "neutralny",
+          "contextPl": "Koszty leczenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "get pet insurance",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We checked whether our pet insurance covers emergencies on the road.",
+              "pl": "Sprawdziliśmy, czy nasze ubezpieczenie zwierzęcia obejmuje nagłe wypadki w podróży.",
+              "focusEn": "pet insurance",
+              "focusPl": "ubezpieczenie zwierzęcia"
+            },
+            {
+              "en": "Our friends said pet insurance saved them thousands.",
+              "pl": "Znajomi powiedzieli, że ubezpieczenie zwierzaka zaoszczędziło im tysiące.",
+              "focusEn": "pet insurance",
+              "focusPl": "ubezpieczenie zwierzaka"
+            }
+          ],
+          "acceptedAnswers": [
+            "pet insurance"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie zwierzęcia",
+            "ubezpieczenie zwierzaka"
+          ]
+        },
+        {
+          "id": "pets.poop-bag",
+          "term": "poop bag",
+          "ipa": "/ˈpuːp ˌbæɡ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "woreczek na psie odchody",
+          "definition": "A small bag used to pick up dog waste.",
+          "register": "potoczny",
+          "contextPl": "Sprzątanie po psie",
+          "natural": "",
+          "forms": "poop bags",
+          "collocations": "",
+          "synonyms": "dog waste bag",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't forget to pack poop bags for the road trip.",
+              "pl": "Nie zapomnij spakować woreczków na kupy na drogę.",
+              "focusEn": "poop bags",
+              "focusPl": "woreczków na kupy"
+            },
+            {
+              "en": "I always keep a roll of poop bags clipped to the leash.",
+              "pl": "Zawsze mam rolkę woreczków na psie odchody przypiętą do smyczy.",
+              "focusEn": "poop bags",
+              "focusPl": "woreczków na psie odchody"
+            }
+          ],
+          "acceptedAnswers": [
+            "poop bag",
+            "dog waste bag"
+          ],
+          "acceptedTranslations": [
+            "woreczek na psie odchody",
+            "woreczek na kupy",
+            "woreczki na kupy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pets.pet-idioms",
+      "namePl": "Idiomy ze zwierzakami",
+      "scenePl": "Wybieg dla psów: pogawędki właścicieli psów",
+      "entries": [
+        {
+          "id": "pets.rain-cats-and-dogs",
+          "term": "rain cats and dogs",
+          "ipa": "/ˌreɪn ˌkæts ən ˈdɔːɡz/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "lać jak z cebra",
+          "definition": "To rain very heavily.",
+          "register": "potoczny",
+          "contextPl": "Ulewa",
+          "natural": "",
+          "forms": "",
+          "collocations": "it's raining cats and dogs",
+          "synonyms": "pour",
+          "antonyms": "",
+          "notePl": "Zwykle: „It's raining cats and dogs”.",
+          "examples": [
+            {
+              "en": "It was raining cats and dogs, but the dogs still wanted to play.",
+              "pl": "Lało jak z cebra, ale psy i tak chciały się bawić.",
+              "focusEn": "raining cats and dogs",
+              "focusPl": "Lało jak z cebra"
+            },
+            {
+              "en": "If it's raining cats and dogs tomorrow, we'll skip the park.",
+              "pl": "Jeśli jutro będzie lało jak z cebra, darujemy sobie park.",
+              "focusEn": "raining cats and dogs",
+              "focusPl": "lało jak z cebra"
+            }
+          ],
+          "acceptedAnswers": [
+            "rain cats and dogs",
+            "raining cats and dogs",
+            "pour"
+          ],
+          "acceptedTranslations": [
+            "lać jak z cebra",
+            "leje jak z cebra",
+            "ulewa"
+          ]
+        },
+        {
+          "id": "pets.let-the-cat-out-of-the-bag",
+          "term": "let the cat out of the bag",
+          "ipa": "/ˌlet ðə ˌkæt aʊt əv ðə ˈbæɡ/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wygadać się",
+          "definition": "To tell a secret by mistake.",
+          "register": "potoczny",
+          "contextPl": "Zdradzenie sekretu",
+          "natural": "",
+          "forms": "let – let – let",
+          "collocations": "",
+          "synonyms": "spill the beans",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I let the cat out of the bag about the surprise party.",
+              "pl": "Wygadałem się o imprezie niespodziance.",
+              "focusEn": "let the cat out of the bag",
+              "focusPl": "Wygadałem się"
+            },
+            {
+              "en": "Don't let the cat out of the bag; she doesn't know about the new puppy yet.",
+              "pl": "Nie wygadaj się; ona jeszcze nie wie o nowym szczeniaku.",
+              "focusEn": "let the cat out of the bag",
+              "focusPl": "wygadaj się"
+            }
+          ],
+          "acceptedAnswers": [
+            "let the cat out of the bag",
+            "spill the beans"
+          ],
+          "acceptedTranslations": [
+            "wygadać się",
+            "zdradzić sekret",
+            "puścić parę z ust"
+          ]
+        },
+        {
+          "id": "pets.dog-tired",
+          "term": "dog-tired",
+          "ipa": "/ˌdɔːɡ ˈtaɪərd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skonany",
+          "definition": "Extremely tired.",
+          "register": "potoczny",
+          "contextPl": "Silne zmęczenie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "exhausted",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After an hour of running around, Max is dog-tired.",
+              "pl": "Po godzinie biegania Max jest skonany.",
+              "focusEn": "dog-tired",
+              "focusPl": "skonany"
+            },
+            {
+              "en": "I'm dog-tired myself; that dog never stops.",
+              "pl": "Sam jestem wykończony; ten pies nigdy się nie zatrzymuje.",
+              "focusEn": "dog-tired",
+              "focusPl": "wykończony"
+            }
+          ],
+          "acceptedAnswers": [
+            "dog-tired",
+            "exhausted"
+          ],
+          "acceptedTranslations": [
+            "skonany",
+            "wykończony",
+            "padnięty"
+          ]
+        },
+        {
+          "id": "pets.puppy-love",
+          "term": "puppy love",
+          "ipa": "/ˈpʌpi ˌlʌv/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "szczenięca miłość",
+          "definition": "Romantic love between very young people.",
+          "register": "potoczny",
+          "contextPl": "Młodzieńcze zauroczenie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "crush",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My son's crush on the girl with the poodle is pure puppy love.",
+              "pl": "Zauroczenie mojego syna dziewczyną z pudlem to czysta szczenięca miłość.",
+              "focusEn": "puppy love",
+              "focusPl": "szczenięca miłość"
+            },
+            {
+              "en": "Those two teenagers walking the beagle together look like puppy love.",
+              "pl": "Ci dwoje nastolatków z beaglem wyglądają na szczenięcą miłość.",
+              "focusEn": "puppy love",
+              "focusPl": "szczenięcą miłość"
+            }
+          ],
+          "acceptedAnswers": [
+            "puppy love"
+          ],
+          "acceptedTranslations": [
+            "szczenięca miłość",
+            "młodzieńcze zauroczenie"
+          ]
+        },
+        {
+          "id": "pets.in-the-doghouse",
+          "term": "in the doghouse",
+          "ipa": "/ɪn ðə ˈdɔːɡhaʊs/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "mieć przechlapane",
+          "definition": "In trouble because someone is angry with you.",
+          "register": "potoczny",
+          "contextPl": "Kłopoty w domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "be in the doghouse with someone",
+          "synonyms": "in trouble",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm in the doghouse because I forgot our anniversary.",
+              "pl": "Mam przechlapane, bo zapomniałem o naszej rocznicy.",
+              "focusEn": "in the doghouse",
+              "focusPl": "przechlapane"
+            },
+            {
+              "en": "He's in the doghouse with his wife for buying another dog without asking.",
+              "pl": "Ma przechlapane u żony, bo kupił kolejnego psa bez pytania.",
+              "focusEn": "in the doghouse",
+              "focusPl": "przechlapane"
+            }
+          ],
+          "acceptedAnswers": [
+            "in the doghouse",
+            "in trouble"
+          ],
+          "acceptedTranslations": [
+            "mieć przechlapane",
+            "mieć kłopoty",
+            "podpaść"
+          ]
+        },
+        {
+          "id": "pets.like-herding-cats",
+          "term": "like herding cats",
+          "ipa": "/laɪk ˌhɜːrdɪŋ ˈkæts/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "jak pilnowanie worka pcheł",
+          "definition": "Very hard to organize because everyone does what they want.",
+          "register": "potoczny",
+          "contextPl": "Chaos i trudna organizacja",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Getting all these dogs to sit at once is like herding cats.",
+              "pl": "Sprawić, żeby te wszystkie psy naraz usiadły, to jak pilnowanie worka pcheł.",
+              "focusEn": "like herding cats",
+              "focusPl": "jak pilnowanie worka pcheł"
+            },
+            {
+              "en": "Organizing a meetup for dog owners was like herding cats.",
+              "pl": "Zorganizowanie spotkania właścicieli psów było jak pilnowanie worka pcheł.",
+              "focusEn": "like herding cats",
+              "focusPl": "jak pilnowanie worka pcheł"
+            }
+          ],
+          "acceptedAnswers": [
+            "like herding cats",
+            "herding cats"
+          ],
+          "acceptedTranslations": [
+            "jak pilnowanie worka pcheł",
+            "jak zaganianie kotów",
+            "chaos"
+          ]
+        },
+        {
+          "id": "pets.every-dog-has-its-day",
+          "term": "every dog has its day",
+          "ipa": "/ˌevri ˌdɔːɡ hæz ɪts ˈdeɪ/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "każdy ma swoje pięć minut",
+          "definition": "Everyone has a moment of success at some time.",
+          "register": "potoczny",
+          "contextPl": "Niespodziewany sukces",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our shy dog finally won the ball; every dog has its day.",
+              "pl": "Nasz nieśmiały pies w końcu zdobył piłkę; każdy ma swoje pięć minut.",
+              "focusEn": "every dog has its day",
+              "focusPl": "każdy ma swoje pięć minut"
+            },
+            {
+              "en": "The old dog beat the puppies to the stick, and his owner laughed that every dog has its day.",
+              "pl": "Stary pies dobiegł do patyka przed szczeniakami, a jego właściciel zaśmiał się, że każdy ma swoje pięć minut.",
+              "focusEn": "every dog has its day",
+              "focusPl": "każdy ma swoje pięć minut"
+            }
+          ],
+          "acceptedAnswers": [
+            "every dog has its day"
+          ],
+          "acceptedTranslations": [
+            "każdy ma swoje pięć minut",
+            "na każdego przyjdzie kolej"
+          ]
+        }
+      ]
+    }
+  ]
+}
