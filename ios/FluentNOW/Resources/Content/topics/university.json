@@ -1,0 +1,2577 @@
+{
+  "schemaVersion": 1,
+  "id": "university",
+  "namePl": "Studia",
+  "nameEn": "University",
+  "group": "education",
+  "symbol": "graduationcap",
+  "summaryPl": "Rekrutacja i kierunki, wykłady i zajęcia, egzaminy i prace, życie na kampusie oraz dyplom.",
+  "aliases": [
+    "studia",
+    "uczelnia",
+    "uniwersytet",
+    "wykład",
+    "egzamin",
+    "kierunek",
+    "kampus",
+    "akademik",
+    "college",
+    "university"
+  ],
+  "categories": [
+    {
+      "id": "university.admission-majors",
+      "namePl": "Rekrutacja i kierunki",
+      "scenePl": "Pierwszy dzień na kampusie: rozmowa z doradcą o kierunku i finansowaniu studiów",
+      "entries": [
+        {
+          "id": "university.college",
+          "term": "college",
+          "ipa": "/ˈkɑːlɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "studia",
+          "definition": "A university or school where people study after high school.",
+          "register": "neutralny",
+          "contextPl": "Szkolnictwo wyższe w USA",
+          "natural": "school",
+          "forms": "colleges",
+          "collocations": "go to college; in college; college student",
+          "synonyms": "university; school",
+          "antonyms": "",
+          "notePl": "W USA „college” to potocznie każda uczelnia; „go to college” = studiować.",
+          "examples": [
+            {
+              "en": "I'm the first person in my family to go to college.",
+              "pl": "Jestem pierwszą osobą w rodzinie, która idzie na studia.",
+              "focusEn": "college",
+              "focusPl": "studia"
+            },
+            {
+              "en": "The advisor asked what I want to do after college.",
+              "pl": "Doradca zapytał, co chcę robić po studiach.",
+              "focusEn": "college",
+              "focusPl": "studiach"
+            }
+          ],
+          "acceptedAnswers": [
+            "college",
+            "school",
+            "university"
+          ],
+          "acceptedTranslations": [
+            "studia",
+            "uczelnia",
+            "college",
+            "szkoła wyższa"
+          ]
+        },
+        {
+          "id": "university.university",
+          "term": "university",
+          "ipa": "/ˌjuːnəˈvɝːsəti/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "uniwersytet",
+          "definition": "A large school where people study for degrees and do research.",
+          "register": "neutralny",
+          "contextPl": "Uczelnie",
+          "natural": "college",
+          "forms": "universities",
+          "collocations": "a state university; study at a university",
+          "synonyms": "college",
+          "antonyms": "",
+          "notePl": "W mowie Amerykanie częściej mówią „college” albo „school”.",
+          "examples": [
+            {
+              "en": "This university has more than thirty thousand students.",
+              "pl": "Ten uniwersytet ma ponad trzydzieści tysięcy studentów.",
+              "focusEn": "university",
+              "focusPl": "uniwersytet"
+            },
+            {
+              "en": "My advisor studied at the same university twenty years ago.",
+              "pl": "Mój doradca studiował na tym samym uniwersytecie dwadzieścia lat temu.",
+              "focusEn": "university",
+              "focusPl": "uniwersytecie"
+            }
+          ],
+          "acceptedAnswers": [
+            "university",
+            "college"
+          ],
+          "acceptedTranslations": [
+            "uniwersytet",
+            "uczelnia"
+          ]
+        },
+        {
+          "id": "university.major",
+          "term": "major",
+          "ipa": "/ˈmeɪdʒər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "kierunek studiów",
+          "definition": "The main subject a student studies in college.",
+          "register": "neutralny",
+          "contextPl": "Wybór specjalizacji",
+          "natural": "",
+          "forms": "majors",
+          "collocations": "choose a major; my major is biology; change your major",
+          "synonyms": "field of study",
+          "antonyms": "minor",
+          "notePl": "Też czasownik: „major in economics” = studiować ekonomię.",
+          "examples": [
+            {
+              "en": "I still haven't chosen a major, and that's okay for now.",
+              "pl": "Wciąż nie wybrałem kierunku studiów i na razie to w porządku.",
+              "focusEn": "major",
+              "focusPl": "kierunku studiów"
+            },
+            {
+              "en": "The advisor said many students change their major at least once.",
+              "pl": "Doradca powiedział, że wielu studentów przynajmniej raz zmienia kierunek.",
+              "focusEn": "major",
+              "focusPl": "kierunek"
+            }
+          ],
+          "acceptedAnswers": [
+            "major",
+            "field of study"
+          ],
+          "acceptedTranslations": [
+            "kierunek studiów",
+            "kierunek",
+            "specjalność"
+          ]
+        },
+        {
+          "id": "university.degree",
+          "term": "degree",
+          "ipa": "/dɪˈɡriː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dyplom",
+          "definition": "The qualification you get after finishing a college program.",
+          "register": "neutralny",
+          "contextPl": "Tytuły zawodowe",
+          "natural": "",
+          "forms": "degrees",
+          "collocations": "get a degree; a degree in engineering; a college degree",
+          "synonyms": "diploma",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With a degree in computer science, you'll have lots of options.",
+              "pl": "Z dyplomem z informatyki będziesz miał mnóstwo możliwości.",
+              "focusEn": "degree",
+              "focusPl": "dyplomem"
+            },
+            {
+              "en": "It usually takes four years to get a degree here.",
+              "pl": "Zdobycie dyplomu trwa tu zwykle cztery lata.",
+              "focusEn": "degree",
+              "focusPl": "dyplomu"
+            }
+          ],
+          "acceptedAnswers": [
+            "degree",
+            "diploma"
+          ],
+          "acceptedTranslations": [
+            "dyplom",
+            "tytuł",
+            "stopień"
+          ]
+        },
+        {
+          "id": "university.semester",
+          "term": "semester",
+          "ipa": "/səˈmɛstər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "semestr",
+          "definition": "One of the two main periods that divide the school year.",
+          "register": "neutralny",
+          "contextPl": "Organizacja roku akademickiego",
+          "natural": "term",
+          "forms": "semesters",
+          "collocations": "fall semester; spring semester; this semester",
+          "synonyms": "term",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm taking four classes this semester.",
+              "pl": "W tym semestrze mam cztery przedmioty.",
+              "focusEn": "semester",
+              "focusPl": "semestrze"
+            },
+            {
+              "en": "The fall semester ends right before Christmas.",
+              "pl": "Jesienny semestr kończy się tuż przed Bożym Narodzeniem.",
+              "focusEn": "semester",
+              "focusPl": "semestr"
+            }
+          ],
+          "acceptedAnswers": [
+            "semester",
+            "term"
+          ],
+          "acceptedTranslations": [
+            "semestr"
+          ]
+        },
+        {
+          "id": "university.apply-to",
+          "term": "apply to",
+          "ipa": "/əˈplaɪ tuː/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "złożyć papiery do",
+          "definition": "To formally ask to be accepted by a school.",
+          "register": "formalny",
+          "contextPl": "Rekrutacja",
+          "natural": "",
+          "forms": "applied; applying",
+          "collocations": "apply to college; apply to five schools",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I applied to six schools and got into three.",
+              "pl": "Złożyłem papiery do sześciu uczelni i dostałem się na trzy.",
+              "focusEn": "applied to",
+              "focusPl": "Złożyłem papiery do"
+            },
+            {
+              "en": "Next year my brother wants to apply to this university too.",
+              "pl": "W przyszłym roku mój brat też chce złożyć papiery do tej uczelni.",
+              "focusEn": "apply to",
+              "focusPl": "złożyć papiery do"
+            }
+          ],
+          "acceptedAnswers": [
+            "apply to",
+            "apply"
+          ],
+          "acceptedTranslations": [
+            "złożyć papiery do",
+            "aplikować do",
+            "ubiegać się o przyjęcie"
+          ]
+        },
+        {
+          "id": "university.freshman",
+          "term": "freshman",
+          "ipa": "/ˈfrɛʃmən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "student pierwszego roku",
+          "definition": "A student in the first year of college or high school.",
+          "register": "neutralny",
+          "contextPl": "Rok studiów",
+          "natural": "first-year student",
+          "forms": "freshmen",
+          "collocations": "a college freshman; freshman year",
+          "synonyms": "first-year",
+          "antonyms": "senior",
+          "notePl": "Kolejne lata: sophomore, junior, senior.",
+          "examples": [
+            {
+              "en": "As a freshman, you have to live in the dorms.",
+              "pl": "Jako student pierwszego roku musisz mieszkać w akademiku.",
+              "focusEn": "freshman",
+              "focusPl": "student pierwszego roku"
+            },
+            {
+              "en": "Most freshmen don't know their major yet.",
+              "pl": "Większość studentów pierwszego roku nie zna jeszcze swojego kierunku.",
+              "focusEn": "freshmen",
+              "focusPl": "studentów pierwszego roku"
+            }
+          ],
+          "acceptedAnswers": [
+            "freshman",
+            "first-year student"
+          ],
+          "acceptedTranslations": [
+            "student pierwszego roku",
+            "studentka pierwszego roku",
+            "pierwszoroczniak"
+          ]
+        },
+        {
+          "id": "university.tuition",
+          "term": "tuition",
+          "ipa": "/tuˈɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "czesne",
+          "definition": "The money you pay to study at a college.",
+          "register": "neutralny",
+          "contextPl": "Koszty studiów",
+          "natural": "",
+          "forms": "",
+          "collocations": "pay tuition; tuition fees; in-state tuition",
+          "synonyms": "fees",
+          "antonyms": "",
+          "notePl": "W USA czesne bywa bardzo wysokie.",
+          "examples": [
+            {
+              "en": "Tuition is lower for students who live in this state.",
+              "pl": "Czesne jest niższe dla studentów mieszkających w tym stanie.",
+              "focusEn": "Tuition",
+              "focusPl": "Czesne"
+            },
+            {
+              "en": "I asked the advisor when I need to pay tuition for the fall.",
+              "pl": "Zapytałem doradcę, kiedy muszę zapłacić czesne za semestr jesienny.",
+              "focusEn": "tuition",
+              "focusPl": "czesne"
+            }
+          ],
+          "acceptedAnswers": [
+            "tuition",
+            "tuition fees"
+          ],
+          "acceptedTranslations": [
+            "czesne",
+            "opłata za studia",
+            "opłaty za naukę"
+          ]
+        },
+        {
+          "id": "university.scholarship",
+          "term": "scholarship",
+          "ipa": "/ˈskɑːlərʃɪp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stypendium",
+          "definition": "Money given to a student to help pay for college.",
+          "register": "neutralny",
+          "contextPl": "Finansowanie nauki",
+          "natural": "grant",
+          "forms": "scholarships",
+          "collocations": "get a scholarship; apply for a scholarship; a full scholarship",
+          "synonyms": "grant",
+          "antonyms": "",
+          "notePl": "Nie trzeba go zwracać, w odróżnieniu od kredytu.",
+          "examples": [
+            {
+              "en": "My scholarship covers half of my tuition.",
+              "pl": "Moje stypendium pokrywa połowę czesnego.",
+              "focusEn": "scholarship",
+              "focusPl": "stypendium"
+            },
+            {
+              "en": "The advisor told me about a scholarship for international students.",
+              "pl": "Doradca powiedział mi o stypendium dla studentów zagranicznych.",
+              "focusEn": "scholarship",
+              "focusPl": "stypendium"
+            }
+          ],
+          "acceptedAnswers": [
+            "scholarship",
+            "grant"
+          ],
+          "acceptedTranslations": [
+            "stypendium"
+          ]
+        },
+        {
+          "id": "university.enroll",
+          "term": "enroll",
+          "ipa": "/ɪnˈroʊl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zapisać się",
+          "definition": "To officially become a student at a school or in a course.",
+          "register": "formalny",
+          "contextPl": "Formalności",
+          "natural": "sign up",
+          "forms": "enrolled; enrolling",
+          "collocations": "enroll in a class; enroll at a university",
+          "synonyms": "register; sign up",
+          "antonyms": "",
+          "notePl": "Brytyjska pisownia: „enrol”.",
+          "examples": [
+            {
+              "en": "To be full-time, you have to enroll in at least twelve credits.",
+              "pl": "Żeby studiować w pełnym wymiarze, musisz zapisać się na co najmniej dwanaście punktów.",
+              "focusEn": "enroll",
+              "focusPl": "zapisać się"
+            },
+            {
+              "en": "I officially enrolled last week, so now I'm a real student.",
+              "pl": "W zeszłym tygodniu oficjalnie zapisałem się na studia, więc teraz jestem prawdziwym studentem.",
+              "focusEn": "enrolled",
+              "focusPl": "zapisałem się"
+            }
+          ],
+          "acceptedAnswers": [
+            "enroll",
+            "register",
+            "sign up"
+          ],
+          "acceptedTranslations": [
+            "zapisać się",
+            "zapisywać się",
+            "zarejestrować się"
+          ]
+        },
+        {
+          "id": "university.bachelors-degree",
+          "term": "bachelor's degree",
+          "ipa": "/ˈbætʃələrz dɪˌɡriː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "licencjat",
+          "definition": "A first college degree, usually after four years of study.",
+          "register": "neutralny",
+          "contextPl": "Stopnie akademickie",
+          "natural": "",
+          "forms": "bachelor's degrees",
+          "collocations": "earn a bachelor's degree; a bachelor's in history",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA trwa zwykle cztery lata.",
+          "examples": [
+            {
+              "en": "A bachelor's degree in business takes four years here.",
+              "pl": "Licencjat z biznesu trwa tu cztery lata.",
+              "focusEn": "bachelor's degree",
+              "focusPl": "Licencjat"
+            },
+            {
+              "en": "The advisor said I can transfer some credits toward my bachelor's degree.",
+              "pl": "Doradca powiedział, że część punktów mogę zaliczyć na poczet licencjatu.",
+              "focusEn": "bachelor's degree",
+              "focusPl": "licencjatu"
+            }
+          ],
+          "acceptedAnswers": [
+            "bachelor's degree",
+            "bachelor's",
+            "undergraduate degree"
+          ],
+          "acceptedTranslations": [
+            "licencjat",
+            "dyplom licencjacki",
+            "studia pierwszego stopnia"
+          ]
+        },
+        {
+          "id": "university.masters-degree",
+          "term": "master's degree",
+          "ipa": "/ˈmæstərz dɪˌɡriː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "magisterium",
+          "definition": "An advanced degree you can get after a bachelor's degree.",
+          "register": "neutralny",
+          "contextPl": "Stopnie akademickie",
+          "natural": "master's",
+          "forms": "master's degrees",
+          "collocations": "get a master's degree; a master's in education",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My sister is doing a master's degree at the same university.",
+              "pl": "Moja siostra robi magisterium na tej samej uczelni.",
+              "focusEn": "master's degree",
+              "focusPl": "magisterium"
+            },
+            {
+              "en": "Some jobs in this field require a master's degree.",
+              "pl": "Niektóre stanowiska w tej dziedzinie wymagają tytułu magistra.",
+              "focusEn": "master's degree",
+              "focusPl": "tytułu magistra"
+            }
+          ],
+          "acceptedAnswers": [
+            "master's degree",
+            "master's"
+          ],
+          "acceptedTranslations": [
+            "magisterium",
+            "tytuł magistra",
+            "studia magisterskie"
+          ]
+        },
+        {
+          "id": "university.minor",
+          "term": "minor",
+          "ipa": "/ˈmaɪnər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "drugi kierunek",
+          "definition": "A second subject that you study, but less than your major.",
+          "register": "neutralny",
+          "contextPl": "Dodatkowa specjalizacja",
+          "natural": "",
+          "forms": "minors",
+          "collocations": "a minor in Spanish; choose a minor",
+          "synonyms": "",
+          "antonyms": "major",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm majoring in economics with a minor in Spanish.",
+              "pl": "Studiuję ekonomię, a jako drugi kierunek hiszpański.",
+              "focusEn": "minor",
+              "focusPl": "drugi kierunek"
+            },
+            {
+              "en": "A minor only needs about six classes, so it's not too much work.",
+              "pl": "Drugi kierunek wymaga tylko około sześciu przedmiotów, więc to nie jest dużo pracy.",
+              "focusEn": "minor",
+              "focusPl": "Drugi kierunek"
+            }
+          ],
+          "acceptedAnswers": [
+            "minor"
+          ],
+          "acceptedTranslations": [
+            "drugi kierunek",
+            "specjalizacja dodatkowa",
+            "minor"
+          ]
+        },
+        {
+          "id": "university.financial-aid",
+          "term": "financial aid",
+          "ipa": "/faɪˌnænʃəl ˈeɪd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pomoc finansowa",
+          "definition": "Money from the government or school to help students pay for college.",
+          "register": "neutralny",
+          "contextPl": "Wsparcie finansowe studentów",
+          "natural": "",
+          "forms": "",
+          "collocations": "apply for financial aid; the financial aid office",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The financial aid office is in the same building as the library.",
+              "pl": "Biuro pomocy finansowej jest w tym samym budynku co biblioteka.",
+              "focusEn": "financial aid",
+              "focusPl": "pomocy finansowej"
+            },
+            {
+              "en": "Without financial aid, I couldn't afford to study here.",
+              "pl": "Bez pomocy finansowej nie byłoby mnie stać na studia tutaj.",
+              "focusEn": "financial aid",
+              "focusPl": "pomocy finansowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "financial aid"
+          ],
+          "acceptedTranslations": [
+            "pomoc finansowa",
+            "wsparcie finansowe",
+            "dofinansowanie"
+          ]
+        },
+        {
+          "id": "university.academic-advisor",
+          "term": "academic advisor",
+          "ipa": "/ˌækəˈdɛmɪk ədˈvaɪzər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "opiekun naukowy",
+          "definition": "A college staff member who helps students choose classes and plan their studies.",
+          "register": "neutralny",
+          "contextPl": "Planowanie studiów",
+          "natural": "advisor",
+          "forms": "academic advisors",
+          "collocations": "meet with your academic advisor",
+          "synonyms": "advisor",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My academic advisor helped me pick classes for my first semester.",
+              "pl": "Mój opiekun naukowy pomógł mi wybrać przedmioty na pierwszy semestr.",
+              "focusEn": "academic advisor",
+              "focusPl": "opiekun naukowy"
+            },
+            {
+              "en": "You should meet with your academic advisor at least once a semester.",
+              "pl": "Ze swoim opiekunem naukowym powinieneś spotykać się przynajmniej raz w semestrze.",
+              "focusEn": "academic advisor",
+              "focusPl": "opiekunem naukowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "academic advisor",
+            "advisor",
+            "adviser"
+          ],
+          "acceptedTranslations": [
+            "opiekun naukowy",
+            "doradca akademicki",
+            "opiekun roku"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "university.classes-lectures",
+      "namePl": "Wykłady i zajęcia",
+      "scenePl": "Pierwszy tydzień semestru: siedzisz w wielkiej sali wykładowej i układasz plan zajęć",
+      "entries": [
+        {
+          "id": "university.course",
+          "term": "course",
+          "ipa": "/kɔːrs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przedmiot",
+          "definition": "A series of classes on one subject.",
+          "register": "neutralny",
+          "contextPl": "Wybór zajęć",
+          "natural": "class",
+          "forms": "courses",
+          "collocations": "take a course; an online course; a required course",
+          "synonyms": "class",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This course meets twice a week in the big lecture hall.",
+              "pl": "Ten przedmiot ma zajęcia dwa razy w tygodniu w dużej sali wykładowej.",
+              "focusEn": "course",
+              "focusPl": "przedmiot"
+            },
+            {
+              "en": "I'm taking a course on American film this semester.",
+              "pl": "W tym semestrze chodzę na kurs o kinie amerykańskim.",
+              "focusEn": "course",
+              "focusPl": "kurs"
+            }
+          ],
+          "acceptedAnswers": [
+            "course",
+            "class"
+          ],
+          "acceptedTranslations": [
+            "przedmiot",
+            "kurs",
+            "zajęcia"
+          ]
+        },
+        {
+          "id": "university.professor",
+          "term": "professor",
+          "ipa": "/prəˈfɛsər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wykładowca",
+          "definition": "A teacher at a college or university.",
+          "register": "neutralny",
+          "contextPl": "Kadra akademicka",
+          "natural": "prof",
+          "forms": "professors",
+          "collocations": "a history professor; ask the professor",
+          "synonyms": "instructor; lecturer",
+          "antonyms": "",
+          "notePl": "W USA „professor” to potocznie każdy wykładowca, nie tylko profesor tytularny.",
+          "examples": [
+            {
+              "en": "The professor uses funny examples, so nobody falls asleep.",
+              "pl": "Wykładowca używa zabawnych przykładów, więc nikt nie zasypia.",
+              "focusEn": "professor",
+              "focusPl": "Wykładowca"
+            },
+            {
+              "en": "After class, I asked the professor about the reading list.",
+              "pl": "Po zajęciach zapytałem profesora o listę lektur.",
+              "focusEn": "professor",
+              "focusPl": "profesora"
+            }
+          ],
+          "acceptedAnswers": [
+            "professor",
+            "prof",
+            "instructor"
+          ],
+          "acceptedTranslations": [
+            "wykładowca",
+            "profesor",
+            "wykładowczyni"
+          ]
+        },
+        {
+          "id": "university.lecture",
+          "term": "lecture",
+          "ipa": "/ˈlɛktʃər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wykład",
+          "definition": "A talk given to students on a subject at a college.",
+          "register": "neutralny",
+          "contextPl": "Formy zajęć",
+          "natural": "",
+          "forms": "lectures",
+          "collocations": "give a lecture; attend a lecture; a lecture on economics",
+          "synonyms": "talk",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "When the lecture started, there were three hundred students in the room.",
+              "pl": "Kiedy zaczął się wykład, w sali było trzystu studentów.",
+              "focusEn": "lecture",
+              "focusPl": "wykład"
+            },
+            {
+              "en": "The professor posts every lecture online in case you miss one.",
+              "pl": "Profesor wrzuca każdy wykład do sieci na wypadek, gdyby ktoś go opuścił.",
+              "focusEn": "lecture",
+              "focusPl": "wykład"
+            }
+          ],
+          "acceptedAnswers": [
+            "lecture"
+          ],
+          "acceptedTranslations": [
+            "wykład"
+          ]
+        },
+        {
+          "id": "university.sign-up-for",
+          "term": "sign up for",
+          "ipa": "/ˌsaɪn ˈʌp fɔːr/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zapisać się na",
+          "definition": "To put your name on a list to join a class or activity.",
+          "register": "neutralny",
+          "contextPl": "Zapisy na zajęcia",
+          "natural": "register for",
+          "forms": "signed up; signing up",
+          "collocations": "sign up for a class; sign up for a seminar",
+          "synonyms": "register for; enroll in",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This week I signed up for an extra writing class.",
+              "pl": "W tym tygodniu zapisałem się na dodatkowe zajęcia z pisania.",
+              "focusEn": "signed up for",
+              "focusPl": "zapisałem się na"
+            },
+            {
+              "en": "Sign up for the seminar early, because it fills up fast.",
+              "pl": "Zapisz się na seminarium wcześnie, bo szybko brakuje miejsc.",
+              "focusEn": "Sign up for",
+              "focusPl": "Zapisz się na"
+            }
+          ],
+          "acceptedAnswers": [
+            "sign up for",
+            "register for",
+            "enroll in"
+          ],
+          "acceptedTranslations": [
+            "zapisać się na",
+            "zapisywać się na"
+          ]
+        },
+        {
+          "id": "university.credit",
+          "term": "credit",
+          "ipa": "/ˈkrɛdɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "punkt",
+          "definition": "A unit that shows how much work a course is worth toward a degree.",
+          "register": "specjalistyczny",
+          "contextPl": "System punktowy",
+          "natural": "credit hour",
+          "forms": "credits",
+          "collocations": "three credits; earn credits; credit hours",
+          "synonyms": "credit hour",
+          "antonyms": "",
+          "notePl": "Odpowiednik polskich punktów ECTS.",
+          "examples": [
+            {
+              "en": "This course is worth three credits.",
+              "pl": "Za ten przedmiot są trzy punkty.",
+              "focusEn": "credits",
+              "focusPl": "punkty"
+            },
+            {
+              "en": "I need fifteen credits this semester to graduate on time.",
+              "pl": "Żeby skończyć studia w terminie, potrzebuję w tym semestrze piętnastu punktów.",
+              "focusEn": "credits",
+              "focusPl": "punktów"
+            }
+          ],
+          "acceptedAnswers": [
+            "credit",
+            "credit hour"
+          ],
+          "acceptedTranslations": [
+            "punkt",
+            "punkt ECTS",
+            "zaliczenie"
+          ]
+        },
+        {
+          "id": "university.syllabus",
+          "term": "syllabus",
+          "ipa": "/ˈsɪləbəs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "sylabus",
+          "definition": "A document that lists the topics, readings, and rules for a course.",
+          "register": "specjalistyczny",
+          "contextPl": "Program przedmiotu",
+          "natural": "",
+          "forms": "syllabi; syllabuses",
+          "collocations": "read the syllabus; it's on the syllabus",
+          "synonyms": "course outline",
+          "antonyms": "",
+          "notePl": "Pytanie „Is it on the syllabus?” słychać już na pierwszych zajęciach.",
+          "examples": [
+            {
+              "en": "The professor spent the first class going over the syllabus.",
+              "pl": "Na pierwszych zajęciach profesor omawiał sylabus.",
+              "focusEn": "syllabus",
+              "focusPl": "sylabus"
+            },
+            {
+              "en": "All the exam dates are on the syllabus.",
+              "pl": "Wszystkie terminy egzaminów są w sylabusie.",
+              "focusEn": "syllabus",
+              "focusPl": "sylabusie"
+            }
+          ],
+          "acceptedAnswers": [
+            "syllabus",
+            "course outline"
+          ],
+          "acceptedTranslations": [
+            "sylabus",
+            "program przedmiotu",
+            "program zajęć"
+          ]
+        },
+        {
+          "id": "university.office-hours",
+          "term": "office hours",
+          "ipa": "/ˈɔːfɪs ˌaʊərz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "konsultacje",
+          "definition": "Times when a professor is in their office to meet students.",
+          "register": "neutralny",
+          "contextPl": "Kontakt z wykładowcą",
+          "natural": "",
+          "forms": "",
+          "collocations": "go to office hours; during office hours",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na studiach w USA warto z nich korzystać.",
+          "examples": [
+            {
+              "en": "I went to the professor's office hours to ask about my essay.",
+              "pl": "Poszedłem na konsultacje do profesora, żeby zapytać o mój esej.",
+              "focusEn": "office hours",
+              "focusPl": "konsultacje"
+            },
+            {
+              "en": "Her office hours are on Tuesdays from two to four.",
+              "pl": "Jej konsultacje są we wtorki od drugiej do czwartej.",
+              "focusEn": "office hours",
+              "focusPl": "konsultacje"
+            }
+          ],
+          "acceptedAnswers": [
+            "office hours"
+          ],
+          "acceptedTranslations": [
+            "konsultacje",
+            "dyżur",
+            "godziny konsultacji"
+          ]
+        },
+        {
+          "id": "university.lecture-hall",
+          "term": "lecture hall",
+          "ipa": "/ˈlɛktʃər ˌhɔːl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "sala wykładowa",
+          "definition": "A large room where lectures are given.",
+          "register": "neutralny",
+          "contextPl": "Sale na uczelni",
+          "natural": "auditorium",
+          "forms": "lecture halls",
+          "collocations": "a big lecture hall; in the lecture hall",
+          "synonyms": "auditorium",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The lecture hall was so big that I sat in the back and couldn't see.",
+              "pl": "Sala wykładowa była tak duża, że usiadłem z tyłu i nic nie widziałem.",
+              "focusEn": "lecture hall",
+              "focusPl": "Sala wykładowa"
+            },
+            {
+              "en": "I got lost looking for the lecture hall on my first day.",
+              "pl": "Pierwszego dnia zgubiłem się, szukając sali wykładowej.",
+              "focusEn": "lecture hall",
+              "focusPl": "sali wykładowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "lecture hall",
+            "auditorium"
+          ],
+          "acceptedTranslations": [
+            "sala wykładowa",
+            "aula"
+          ]
+        },
+        {
+          "id": "university.teaching-assistant",
+          "term": "teaching assistant",
+          "ipa": "/ˈtiːtʃɪŋ əˌsɪstənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "asystent prowadzący",
+          "definition": "A graduate student who helps a professor teach a course.",
+          "register": "neutralny",
+          "contextPl": "Pomoc w nauce",
+          "natural": "TA",
+          "forms": "teaching assistants",
+          "collocations": "ask the TA; the teaching assistant grades the papers",
+          "synonyms": "TA",
+          "antonyms": "",
+          "notePl": "Potocznie „TA”.",
+          "examples": [
+            {
+              "en": "The teaching assistant runs a smaller class on Fridays.",
+              "pl": "Asystent prowadzący prowadzi w piątki zajęcia w mniejszej grupie.",
+              "focusEn": "teaching assistant",
+              "focusPl": "Asystent prowadzący"
+            },
+            {
+              "en": "Ask the teaching assistant if you don't understand the homework.",
+              "pl": "Zapytaj asystenta, jeśli nie rozumiesz zadania.",
+              "focusEn": "teaching assistant",
+              "focusPl": "asystenta"
+            }
+          ],
+          "acceptedAnswers": [
+            "teaching assistant",
+            "TA"
+          ],
+          "acceptedTranslations": [
+            "asystent prowadzący",
+            "asystent",
+            "asystentka"
+          ]
+        },
+        {
+          "id": "university.seminar",
+          "term": "seminar",
+          "ipa": "/ˈsɛmənɑːr/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "seminarium",
+          "definition": "A small class where students discuss a topic with a professor.",
+          "register": "neutralny",
+          "contextPl": "Zajęcia w małych grupach",
+          "natural": "",
+          "forms": "seminars",
+          "collocations": "a history seminar; take a seminar",
+          "synonyms": "discussion class",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The seminar has only twelve students, so everyone has to talk.",
+              "pl": "Na seminarium jest tylko dwunastu studentów, więc każdy musi się odzywać.",
+              "focusEn": "seminar",
+              "focusPl": "seminarium"
+            },
+            {
+              "en": "I like the seminar more than the big lecture.",
+              "pl": "Bardziej podoba mi się seminarium niż duży wykład.",
+              "focusEn": "seminar",
+              "focusPl": "seminarium"
+            }
+          ],
+          "acceptedAnswers": [
+            "seminar"
+          ],
+          "acceptedTranslations": [
+            "seminarium",
+            "konwersatorium",
+            "ćwiczenia"
+          ]
+        },
+        {
+          "id": "university.required",
+          "term": "required",
+          "ipa": "/rɪˈkwaɪərd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "obowiązkowy",
+          "definition": "Needed because of a rule.",
+          "register": "formalny",
+          "contextPl": "Przedmioty obowiązkowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "a required course; required reading",
+          "synonyms": "mandatory",
+          "antonyms": "optional",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Statistics is required for my major, so I can't avoid it.",
+              "pl": "Statystyka jest obowiązkowa na moim kierunku, więc nie mogę jej uniknąć.",
+              "focusEn": "required",
+              "focusPl": "obowiązkowa"
+            },
+            {
+              "en": "The required reading for this week is two hundred pages.",
+              "pl": "Lektura obowiązkowa na ten tydzień ma dwieście stron.",
+              "focusEn": "required",
+              "focusPl": "obowiązkowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "required",
+            "mandatory"
+          ],
+          "acceptedTranslations": [
+            "obowiązkowy",
+            "wymagany"
+          ]
+        },
+        {
+          "id": "university.elective",
+          "term": "elective",
+          "ipa": "/ɪˈlɛktɪv/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przedmiot do wyboru",
+          "definition": "A course that students choose themselves, not one they must take.",
+          "register": "neutralny",
+          "contextPl": "Przedmioty fakultatywne",
+          "natural": "",
+          "forms": "electives",
+          "collocations": "take an elective; a fun elective",
+          "synonyms": "",
+          "antonyms": "required course",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I took photography as an elective just for fun.",
+              "pl": "Wziąłem fotografię jako przedmiot do wyboru dla przyjemności.",
+              "focusEn": "elective",
+              "focusPl": "przedmiot do wyboru"
+            },
+            {
+              "en": "This elective fills up in five minutes every semester.",
+              "pl": "Ten fakultet co semestr zapełnia się w pięć minut.",
+              "focusEn": "elective",
+              "focusPl": "fakultet"
+            }
+          ],
+          "acceptedAnswers": [
+            "elective"
+          ],
+          "acceptedTranslations": [
+            "przedmiot do wyboru",
+            "fakultet",
+            "przedmiot fakultatywny"
+          ]
+        },
+        {
+          "id": "university.drop-a-class",
+          "term": "drop a class",
+          "ipa": "/ˌdrɑːp ə ˈklæs/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zrezygnować z przedmiotu",
+          "definition": "To officially stop taking a course.",
+          "register": "neutralny",
+          "contextPl": "Zmiany w planie zajęć",
+          "natural": "",
+          "forms": "dropped; dropping",
+          "collocations": "drop a class before the deadline",
+          "synonyms": "withdraw",
+          "antonyms": "add a class",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can drop a class in the first two weeks without a penalty.",
+              "pl": "Przez pierwsze dwa tygodnie można bez konsekwencji zrezygnować z przedmiotu.",
+              "focusEn": "drop a class",
+              "focusPl": "zrezygnować z przedmiotu"
+            },
+            {
+              "en": "I dropped the class because it met at seven in the morning.",
+              "pl": "Zrezygnowałem z przedmiotu, bo zajęcia były o siódmej rano.",
+              "focusEn": "dropped the class",
+              "focusPl": "Zrezygnowałem z przedmiotu"
+            }
+          ],
+          "acceptedAnswers": [
+            "drop a class",
+            "drop the class",
+            "drop a course"
+          ],
+          "acceptedTranslations": [
+            "zrezygnować z przedmiotu",
+            "wypisać się z zajęć",
+            "zrezygnować z zajęć"
+          ]
+        },
+        {
+          "id": "university.attendance",
+          "term": "attendance",
+          "ipa": "/əˈtɛndəns/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "obecność",
+          "definition": "Being present at a class or event.",
+          "register": "formalny",
+          "contextPl": "Obecność na zajęciach",
+          "natural": "",
+          "forms": "",
+          "collocations": "take attendance; attendance is required",
+          "synonyms": "",
+          "antonyms": "absence",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Attendance is part of the grade in this course.",
+              "pl": "Obecność jest częścią oceny z tego przedmiotu.",
+              "focusEn": "Attendance",
+              "focusPl": "Obecność"
+            },
+            {
+              "en": "The professor takes attendance with an app at the start of class.",
+              "pl": "Profesor sprawdza obecność przez aplikację na początku zajęć.",
+              "focusEn": "attendance",
+              "focusPl": "obecność"
+            }
+          ],
+          "acceptedAnswers": [
+            "attendance"
+          ],
+          "acceptedTranslations": [
+            "obecność",
+            "frekwencja",
+            "obecności"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "university.exams-papers",
+      "namePl": "Egzaminy i prace",
+      "scenePl": "Sesja: noc przed egzaminem końcowym uczysz się ze znajomymi w bibliotece",
+      "entries": [
+        {
+          "id": "university.exam",
+          "term": "exam",
+          "ipa": "/ɪɡˈzæm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "egzamin",
+          "definition": "An official test of what you know.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie wiedzy na studiach",
+          "natural": "test",
+          "forms": "exams",
+          "collocations": "take an exam; pass an exam; study for an exam",
+          "synonyms": "test",
+          "antonyms": "",
+          "notePl": "„Take an exam” = podejść do egzaminu.",
+          "examples": [
+            {
+              "en": "Our biology exam is tomorrow at eight in the morning.",
+              "pl": "Nasz egzamin z biologii jest jutro o ósmej rano.",
+              "focusEn": "exam",
+              "focusPl": "egzamin"
+            },
+            {
+              "en": "This exam covers everything from the whole semester.",
+              "pl": "Ten egzamin obejmuje materiał z całego semestru.",
+              "focusEn": "exam",
+              "focusPl": "egzamin"
+            }
+          ],
+          "acceptedAnswers": [
+            "exam",
+            "test"
+          ],
+          "acceptedTranslations": [
+            "egzamin"
+          ]
+        },
+        {
+          "id": "university.final-exam",
+          "term": "final exam",
+          "ipa": "/ˌfaɪnəl ɪɡˈzæm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "egzamin końcowy",
+          "definition": "The last and most important exam at the end of a course.",
+          "register": "neutralny",
+          "contextPl": "Koniec semestru",
+          "natural": "final",
+          "forms": "final exams",
+          "collocations": "take a final exam; study for finals",
+          "synonyms": "final",
+          "antonyms": "",
+          "notePl": "Potocznie „finals” = sesja.",
+          "examples": [
+            {
+              "en": "The final exam is worth forty percent of our grade.",
+              "pl": "Egzamin końcowy to czterdzieści procent naszej oceny.",
+              "focusEn": "final exam",
+              "focusPl": "Egzamin końcowy"
+            },
+            {
+              "en": "We've been in the library since noon studying for the final exam.",
+              "pl": "Siedzimy w bibliotece od południa i uczymy się do egzaminu końcowego.",
+              "focusEn": "final exam",
+              "focusPl": "egzaminu końcowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "final exam",
+            "final",
+            "finals"
+          ],
+          "acceptedTranslations": [
+            "egzamin końcowy",
+            "egzamin semestralny",
+            "sesja"
+          ]
+        },
+        {
+          "id": "university.paper",
+          "term": "paper",
+          "ipa": "/ˈpeɪpər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "praca pisemna",
+          "definition": "A long piece of writing that a student writes for a class.",
+          "register": "neutralny",
+          "contextPl": "Prace zaliczeniowe",
+          "natural": "essay",
+          "forms": "papers",
+          "collocations": "write a paper; a research paper; a ten-page paper",
+          "synonyms": "essay",
+          "antonyms": "",
+          "notePl": "„Term paper” = praca semestralna.",
+          "examples": [
+            {
+              "en": "I still have a ten-page paper due right after the exam.",
+              "pl": "Zaraz po egzaminie muszę jeszcze oddać dziesięciostronicową pracę pisemną.",
+              "focusEn": "paper",
+              "focusPl": "pracę pisemną"
+            },
+            {
+              "en": "She's finishing her history paper at the next table.",
+              "pl": "Przy sąsiednim stoliku kończy swój referat z historii.",
+              "focusEn": "paper",
+              "focusPl": "referat"
+            }
+          ],
+          "acceptedAnswers": [
+            "paper",
+            "essay",
+            "term paper"
+          ],
+          "acceptedTranslations": [
+            "praca pisemna",
+            "referat",
+            "praca semestralna",
+            "esej"
+          ]
+        },
+        {
+          "id": "university.deadline",
+          "term": "deadline",
+          "ipa": "/ˈdɛdlaɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "termin",
+          "definition": "The time or day by which something must be finished.",
+          "register": "neutralny",
+          "contextPl": "Terminy oddania prac",
+          "natural": "due date",
+          "forms": "deadlines",
+          "collocations": "meet a deadline; miss a deadline; a tight deadline",
+          "synonyms": "due date",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The deadline for the paper is midnight on Friday.",
+              "pl": "Termin oddania pracy mija w piątek o północy.",
+              "focusEn": "deadline",
+              "focusPl": "Termin"
+            },
+            {
+              "en": "I have three deadlines and two exams in one week.",
+              "pl": "W jednym tygodniu mam trzy terminy i dwa egzaminy.",
+              "focusEn": "deadlines",
+              "focusPl": "terminy"
+            }
+          ],
+          "acceptedAnswers": [
+            "deadline",
+            "due date"
+          ],
+          "acceptedTranslations": [
+            "termin",
+            "ostateczny termin",
+            "deadline"
+          ]
+        },
+        {
+          "id": "university.hand-in",
+          "term": "hand in",
+          "ipa": "/ˌhænd ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oddać",
+          "definition": "To give your work to a teacher.",
+          "register": "neutralny",
+          "contextPl": "Oddawanie prac",
+          "natural": "turn in",
+          "forms": "handed in; handing in",
+          "collocations": "hand in your paper; hand in homework",
+          "synonyms": "turn in; submit",
+          "antonyms": "",
+          "notePl": "W USA częściej „turn in”.",
+          "examples": [
+            {
+              "en": "I have to hand in my lab report before the exam starts.",
+              "pl": "Muszę oddać sprawozdanie z laboratorium przed rozpoczęciem egzaminu.",
+              "focusEn": "hand in",
+              "focusPl": "oddać"
+            },
+            {
+              "en": "She handed in her paper online one minute before midnight.",
+              "pl": "Oddała pracę online minutę przed północą.",
+              "focusEn": "handed in",
+              "focusPl": "Oddała"
+            }
+          ],
+          "acceptedAnswers": [
+            "hand in",
+            "turn in",
+            "submit"
+          ],
+          "acceptedTranslations": [
+            "oddać",
+            "oddawać",
+            "złożyć"
+          ]
+        },
+        {
+          "id": "university.study-group",
+          "term": "study group",
+          "ipa": "/ˈstʌdi ˌɡruːp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "grupa do nauki",
+          "definition": "A small group of students who meet to study together.",
+          "register": "neutralny",
+          "contextPl": "Wspólna nauka",
+          "natural": "",
+          "forms": "study groups",
+          "collocations": "join a study group; form a study group",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our study group meets on the third floor of the library.",
+              "pl": "Nasza grupa do nauki spotyka się na drugim piętrze biblioteki.",
+              "focusEn": "study group",
+              "focusPl": "grupa do nauki"
+            },
+            {
+              "en": "Everyone in the study group explains one chapter to the others.",
+              "pl": "Każdy w grupie do nauki tłumaczy innym jeden rozdział.",
+              "focusEn": "study group",
+              "focusPl": "grupie do nauki"
+            }
+          ],
+          "acceptedAnswers": [
+            "study group"
+          ],
+          "acceptedTranslations": [
+            "grupa do nauki",
+            "grupa naukowa"
+          ]
+        },
+        {
+          "id": "university.research",
+          "term": "research",
+          "ipa": "/ˈriːsɝːtʃ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "badania",
+          "definition": "Careful study to find new facts or information.",
+          "register": "neutralny",
+          "contextPl": "Praca naukowa",
+          "natural": "",
+          "forms": "",
+          "collocations": "do research; research paper; academic research",
+          "synonyms": "study",
+          "antonyms": "",
+          "notePl": "Rzeczownik niepoliczalny.",
+          "examples": [
+            {
+              "en": "I did most of the research for my paper in this library.",
+              "pl": "Większość poszukiwań do pracy zrobiłem w tej bibliotece.",
+              "focusEn": "research",
+              "focusPl": "poszukiwań"
+            },
+            {
+              "en": "My roommate helps with research in a chemistry lab.",
+              "pl": "Mój współlokator pomaga przy badaniach w laboratorium chemicznym.",
+              "focusEn": "research",
+              "focusPl": "badaniach"
+            }
+          ],
+          "acceptedAnswers": [
+            "research",
+            "study"
+          ],
+          "acceptedTranslations": [
+            "badania",
+            "badanie",
+            "poszukiwania"
+          ]
+        },
+        {
+          "id": "university.cram",
+          "term": "cram",
+          "ipa": "/kræm/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wkuwać",
+          "definition": "To study a lot in a very short time before an exam.",
+          "register": "potoczny",
+          "contextPl": "Intensywna nauka na ostatnią chwilę",
+          "natural": "",
+          "forms": "crammed; cramming",
+          "collocations": "cram for an exam; cram all night",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're cramming for tomorrow's exam because nobody started early.",
+              "pl": "Wkuwamy do jutrzejszego egzaminu, bo nikt nie zaczął wcześniej.",
+              "focusEn": "cramming",
+              "focusPl": "Wkuwamy"
+            },
+            {
+              "en": "I crammed two chapters in one hour, and now I remember nothing.",
+              "pl": "W godzinę wkułem dwa rozdziały i teraz nic nie pamiętam.",
+              "focusEn": "crammed",
+              "focusPl": "wkułem"
+            }
+          ],
+          "acceptedAnswers": [
+            "cram"
+          ],
+          "acceptedTranslations": [
+            "wkuwać",
+            "wkuć",
+            "kuć",
+            "zakuwać"
+          ]
+        },
+        {
+          "id": "university.pull-an-all-nighter",
+          "term": "pull an all-nighter",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zarwać noc",
+          "definition": "To stay awake all night, usually to study or work.",
+          "register": "potoczny",
+          "contextPl": "Nocna nauka przed egzaminem",
+          "natural": "",
+          "forms": "pulled; pulling",
+          "collocations": "pull an all-nighter before an exam",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It looks like we're going to pull an all-nighter again.",
+              "pl": "Wygląda na to, że znowu zarwiemy noc.",
+              "focusEn": "pull an all-nighter",
+              "focusPl": "zarwiemy noc"
+            },
+            {
+              "en": "I pulled an all-nighter last semester and fell asleep during the exam.",
+              "pl": "W zeszłym semestrze zarwałem noc i zasnąłem na egzaminie.",
+              "focusEn": "pulled an all-nighter",
+              "focusPl": "zarwałem noc"
+            }
+          ],
+          "acceptedAnswers": [
+            "pull an all-nighter",
+            "pull an all nighter"
+          ],
+          "acceptedTranslations": [
+            "zarwać noc",
+            "zarywać noc",
+            "nie spać całą noc"
+          ]
+        },
+        {
+          "id": "university.midterm",
+          "term": "midterm",
+          "ipa": "/ˈmɪdtɝːm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kolokwium",
+          "definition": "An exam in the middle of a semester.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzian w połowie semestru",
+          "natural": "",
+          "forms": "midterms",
+          "collocations": "a midterm exam; study for midterms",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I did badly on the midterm, so the final really matters.",
+              "pl": "Słabo mi poszło na kolokwium, więc egzamin końcowy naprawdę się liczy.",
+              "focusEn": "midterm",
+              "focusPl": "kolokwium"
+            },
+            {
+              "en": "We're reviewing the questions from the midterm first.",
+              "pl": "Najpierw powtarzamy pytania z egzaminu śródsemestralnego.",
+              "focusEn": "midterm",
+              "focusPl": "egzaminu śródsemestralnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "midterm",
+            "midterm exam"
+          ],
+          "acceptedTranslations": [
+            "kolokwium",
+            "egzamin śródsemestralny",
+            "kolos"
+          ]
+        },
+        {
+          "id": "university.extension",
+          "term": "extension",
+          "ipa": "/ɪkˈstɛnʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przedłużenie terminu",
+          "definition": "Extra time to finish work after the original deadline.",
+          "register": "neutralny",
+          "contextPl": "Prośby do wykładowcy",
+          "natural": "",
+          "forms": "extensions",
+          "collocations": "ask for an extension; get an extension",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I emailed the professor to ask for an extension on my paper.",
+              "pl": "Napisałem do profesora z prośbą o przedłużenie terminu oddania pracy.",
+              "focusEn": "extension",
+              "focusPl": "przedłużenie terminu"
+            },
+            {
+              "en": "She got a two-day extension because she was sick last week.",
+              "pl": "Dostała dwudniowe przedłużenie terminu, bo w zeszłym tygodniu chorowała.",
+              "focusEn": "extension",
+              "focusPl": "przedłużenie terminu"
+            }
+          ],
+          "acceptedAnswers": [
+            "extension",
+            "more time"
+          ],
+          "acceptedTranslations": [
+            "przedłużenie terminu",
+            "przedłużenie",
+            "dodatkowy czas"
+          ]
+        },
+        {
+          "id": "university.thesis",
+          "term": "thesis",
+          "ipa": "/ˈθiːsɪs/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "praca dyplomowa",
+          "definition": "A long piece of research writing done for a degree.",
+          "register": "specjalistyczny",
+          "contextPl": "Praca dyplomowa",
+          "natural": "",
+          "forms": "theses",
+          "collocations": "write a thesis; a master's thesis; thesis advisor",
+          "synonyms": "dissertation",
+          "antonyms": "",
+          "notePl": "Liczba mnoga: „theses” /ˈθiːsiːz/.",
+          "examples": [
+            {
+              "en": "The grad students upstairs are working on their thesis projects.",
+              "pl": "Magistranci na górze pracują nad swoimi pracami dyplomowymi.",
+              "focusEn": "thesis",
+              "focusPl": "pracami dyplomowymi"
+            },
+            {
+              "en": "My sister wrote her thesis at this same table two years ago.",
+              "pl": "Moja siostra pisała pracę magisterską przy tym samym stoliku dwa lata temu.",
+              "focusEn": "thesis",
+              "focusPl": "pracę magisterską"
+            }
+          ],
+          "acceptedAnswers": [
+            "thesis",
+            "dissertation"
+          ],
+          "acceptedTranslations": [
+            "praca dyplomowa",
+            "praca magisterska",
+            "praca licencjacka"
+          ]
+        },
+        {
+          "id": "university.plagiarism",
+          "term": "plagiarism",
+          "ipa": "/ˈpleɪdʒərɪzəm/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "plagiat",
+          "definition": "Using someone else's words or ideas as if they were your own.",
+          "register": "formalny",
+          "contextPl": "Uczciwość akademicka",
+          "natural": "copying",
+          "forms": "",
+          "collocations": "commit plagiarism; check for plagiarism",
+          "synonyms": "copying",
+          "antonyms": "",
+          "notePl": "Za plagiat można zostać wyrzuconym ze studiów.",
+          "examples": [
+            {
+              "en": "The professor checks every paper for plagiarism with special software.",
+              "pl": "Profesor sprawdza każdą pracę pod kątem plagiatu specjalnym programem.",
+              "focusEn": "plagiarism",
+              "focusPl": "plagiatu"
+            },
+            {
+              "en": "Last year a student in our class failed for plagiarism.",
+              "pl": "W zeszłym roku student z naszego roku oblał za plagiat.",
+              "focusEn": "plagiarism",
+              "focusPl": "plagiat"
+            }
+          ],
+          "acceptedAnswers": [
+            "plagiarism"
+          ],
+          "acceptedTranslations": [
+            "plagiat",
+            "plagiaryzm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "university.campus-life",
+      "namePl": "Życie na kampusie",
+      "scenePl": "Sobota na kampusie: oprowadzasz kolegę z Polski po akademiku i okolicy",
+      "entries": [
+        {
+          "id": "university.library",
+          "term": "library",
+          "ipa": "/ˈlaɪbrɛri/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "biblioteka",
+          "definition": "A building where you can read, study, and borrow books.",
+          "register": "neutralny",
+          "contextPl": "Miejsca do nauki",
+          "natural": "",
+          "forms": "libraries",
+          "collocations": "the main library; study at the library",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "During finals, the library is open twenty-four hours a day.",
+              "pl": "W czasie sesji biblioteka jest otwarta całą dobę.",
+              "focusEn": "library",
+              "focusPl": "biblioteka"
+            },
+            {
+              "en": "We stopped at the library so he could see the old reading room.",
+              "pl": "Zajrzeliśmy do biblioteki, żeby zobaczył starą czytelnię.",
+              "focusEn": "library",
+              "focusPl": "biblioteki"
+            }
+          ],
+          "acceptedAnswers": [
+            "library"
+          ],
+          "acceptedTranslations": [
+            "biblioteka"
+          ]
+        },
+        {
+          "id": "university.campus",
+          "term": "campus",
+          "ipa": "/ˈkæmpəs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "kampus",
+          "definition": "The land and buildings of a college or university.",
+          "register": "neutralny",
+          "contextPl": "Teren uczelni",
+          "natural": "",
+          "forms": "campuses",
+          "collocations": "on campus; off campus; a big campus",
+          "synonyms": "grounds",
+          "antonyms": "",
+          "notePl": "„Live on campus” = mieszkać w akademiku na terenie uczelni.",
+          "examples": [
+            {
+              "en": "The campus is so big that some students ride bikes between classes.",
+              "pl": "Kampus jest tak duży, że niektórzy studenci jeżdżą między zajęciami rowerami.",
+              "focusEn": "campus",
+              "focusPl": "Kampus"
+            },
+            {
+              "en": "I showed my friend every building on campus in two hours.",
+              "pl": "W dwie godziny pokazałem koledze każdy budynek na kampusie.",
+              "focusEn": "campus",
+              "focusPl": "kampusie"
+            }
+          ],
+          "acceptedAnswers": [
+            "campus",
+            "grounds"
+          ],
+          "acceptedTranslations": [
+            "kampus",
+            "miasteczko akademickie",
+            "teren uczelni"
+          ]
+        },
+        {
+          "id": "university.dorm",
+          "term": "dorm",
+          "ipa": "/dɔːrm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "akademik",
+          "definition": "A college building where students live.",
+          "register": "potoczny",
+          "contextPl": "Mieszkanie na kampusie",
+          "natural": "",
+          "forms": "dorms",
+          "collocations": "live in the dorms; a dorm room",
+          "synonyms": "dormitory; residence hall",
+          "antonyms": "",
+          "notePl": "Pełna nazwa: „dormitory” lub „residence hall”.",
+          "examples": [
+            {
+              "en": "My dorm is right next to the dining hall, which is great.",
+              "pl": "Mój akademik jest tuż obok stołówki, co jest super.",
+              "focusEn": "dorm",
+              "focusPl": "akademik"
+            },
+            {
+              "en": "He couldn't believe how small my dorm room is.",
+              "pl": "Nie mógł uwierzyć, jak mały jest mój pokój w akademiku.",
+              "focusEn": "dorm",
+              "focusPl": "akademiku"
+            }
+          ],
+          "acceptedAnswers": [
+            "dorm",
+            "dormitory",
+            "residence hall"
+          ],
+          "acceptedTranslations": [
+            "akademik",
+            "dom studencki"
+          ]
+        },
+        {
+          "id": "university.roommate",
+          "term": "roommate",
+          "ipa": "/ˈruːmmeɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "współlokator",
+          "definition": "A person who shares a room or apartment with you.",
+          "register": "neutralny",
+          "contextPl": "Życie w akademiku",
+          "natural": "",
+          "forms": "roommates",
+          "collocations": "my roommate; get along with your roommate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My roommate is from Texas and plays the guitar at night.",
+              "pl": "Mój współlokator jest z Teksasu i wieczorami gra na gitarze.",
+              "focusEn": "roommate",
+              "focusPl": "współlokator"
+            },
+            {
+              "en": "I introduced my friend to my roommate in the hallway.",
+              "pl": "Przedstawiłem kolegę mojemu współlokatorowi na korytarzu.",
+              "focusEn": "roommate",
+              "focusPl": "współlokatorowi"
+            }
+          ],
+          "acceptedAnswers": [
+            "roommate"
+          ],
+          "acceptedTranslations": [
+            "współlokator",
+            "współlokatorka",
+            "kolega z pokoju"
+          ]
+        },
+        {
+          "id": "university.student-id",
+          "term": "student ID",
+          "ipa": "/ˌstuːdənt aɪ ˈdiː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "legitymacja studencka",
+          "definition": "A card that shows you are a student at a school.",
+          "register": "neutralny",
+          "contextPl": "Dokumenty studenta",
+          "natural": "",
+          "forms": "student IDs",
+          "collocations": "show your student ID; a student ID card",
+          "synonyms": "student card",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You need your student ID to get into the library and the gym.",
+              "pl": "Do biblioteki i na siłownię potrzebujesz legitymacji studenckiej.",
+              "focusEn": "student ID",
+              "focusPl": "legitymacji studenckiej"
+            },
+            {
+              "en": "With a student ID, the movie theater in town gives you a discount.",
+              "pl": "Z legitymacją studencką kino w mieście daje zniżkę.",
+              "focusEn": "student ID",
+              "focusPl": "legitymacją studencką"
+            }
+          ],
+          "acceptedAnswers": [
+            "student ID",
+            "student card",
+            "student ID card"
+          ],
+          "acceptedTranslations": [
+            "legitymacja studencka",
+            "legitymacja"
+          ]
+        },
+        {
+          "id": "university.dining-hall",
+          "term": "dining hall",
+          "ipa": "/ˈdaɪnɪŋ ˌhɔːl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stołówka studencka",
+          "definition": "A large room on campus where students eat their meals.",
+          "register": "neutralny",
+          "contextPl": "Posiłki na kampusie",
+          "natural": "cafeteria",
+          "forms": "dining halls",
+          "collocations": "eat at the dining hall",
+          "synonyms": "cafeteria",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The dining hall has pizza every day, which isn't great for my health.",
+              "pl": "W stołówce studenckiej codziennie jest pizza, co nie służy mojemu zdrowiu.",
+              "focusEn": "dining hall",
+              "focusPl": "stołówce studenckiej"
+            },
+            {
+              "en": "I took him to the dining hall for lunch on my student card.",
+              "pl": "Zabrałem go na obiad do stołówki na moją legitymację.",
+              "focusEn": "dining hall",
+              "focusPl": "stołówki"
+            }
+          ],
+          "acceptedAnswers": [
+            "dining hall",
+            "cafeteria"
+          ],
+          "acceptedTranslations": [
+            "stołówka studencka",
+            "stołówka"
+          ]
+        },
+        {
+          "id": "university.meal-plan",
+          "term": "meal plan",
+          "ipa": "/ˈmiːl ˌplæn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "abonament na posiłki",
+          "definition": "A prepaid plan that lets students eat a number of meals on campus.",
+          "register": "neutralny",
+          "contextPl": "Wyżywienie na kampusie",
+          "natural": "",
+          "forms": "meal plans",
+          "collocations": "buy a meal plan; on the meal plan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zwykle obowiązkowy dla studentów pierwszego roku.",
+          "examples": [
+            {
+              "en": "My meal plan gives me fourteen meals a week.",
+              "pl": "Mój abonament na posiłki daje mi czternaście posiłków tygodniowo.",
+              "focusEn": "meal plan",
+              "focusPl": "abonament na posiłki"
+            },
+            {
+              "en": "I used one meal from my meal plan to buy my friend dinner.",
+              "pl": "Wykorzystałem jeden posiłek z abonamentu na posiłki, żeby postawić koledze kolację.",
+              "focusEn": "meal plan",
+              "focusPl": "abonamentu na posiłki"
+            }
+          ],
+          "acceptedAnswers": [
+            "meal plan"
+          ],
+          "acceptedTranslations": [
+            "abonament na posiłki",
+            "karnet na posiłki",
+            "wykupione wyżywienie"
+          ]
+        },
+        {
+          "id": "university.college-town",
+          "term": "college town",
+          "ipa": "/ˈkɑːlɪdʒ ˌtaʊn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "miasto uniwersyteckie",
+          "definition": "A town where life is mostly organized around a large college.",
+          "register": "neutralny",
+          "contextPl": "Okolica uczelni",
+          "natural": "",
+          "forms": "college towns",
+          "collocations": "a small college town; live in a college town",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's a typical college town, so it's really quiet in the summer.",
+              "pl": "To typowe miasto uniwersyteckie, więc latem jest tu naprawdę spokojnie.",
+              "focusEn": "college town",
+              "focusPl": "miasto uniwersyteckie"
+            },
+            {
+              "en": "Every café in this college town is full of students with laptops.",
+              "pl": "Każda kawiarnia w tym mieście uniwersyteckim jest pełna studentów z laptopami.",
+              "focusEn": "college town",
+              "focusPl": "mieście uniwersyteckim"
+            }
+          ],
+          "acceptedAnswers": [
+            "college town",
+            "university town"
+          ],
+          "acceptedTranslations": [
+            "miasto uniwersyteckie",
+            "miasteczko akademickie"
+          ]
+        },
+        {
+          "id": "university.resident-advisor",
+          "term": "resident advisor",
+          "ipa": "/ˈrɛzədənt ədˌvaɪzər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "opiekun akademika",
+          "definition": "An older student who lives in a dorm and helps the students there.",
+          "register": "neutralny",
+          "contextPl": "Opieka nad mieszkańcami akademika",
+          "natural": "RA",
+          "forms": "resident advisors",
+          "collocations": "talk to your RA; the resident advisor on my floor",
+          "synonyms": "RA",
+          "antonyms": "",
+          "notePl": "Potocznie „RA”.",
+          "examples": [
+            {
+              "en": "The resident advisor on my floor organizes a movie night every Friday.",
+              "pl": "Opiekun akademika na moim piętrze w każdy piątek organizuje wieczór filmowy.",
+              "focusEn": "resident advisor",
+              "focusPl": "Opiekun akademika"
+            },
+            {
+              "en": "After ten, guests have to sign in with the resident advisor.",
+              "pl": "Po dziesiątej goście muszą się wpisać u opiekuna akademika.",
+              "focusEn": "resident advisor",
+              "focusPl": "opiekuna akademika"
+            }
+          ],
+          "acceptedAnswers": [
+            "resident advisor",
+            "RA",
+            "resident assistant"
+          ],
+          "acceptedTranslations": [
+            "opiekun akademika",
+            "opiekun piętra",
+            "opiekunka akademika"
+          ]
+        },
+        {
+          "id": "university.quad",
+          "term": "quad",
+          "ipa": "/kwɑːd/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dziedziniec",
+          "definition": "A square open area of grass surrounded by college buildings.",
+          "register": "potoczny",
+          "contextPl": "Przestrzeń na kampusie",
+          "natural": "",
+          "forms": "quads",
+          "collocations": "on the quad; the main quad",
+          "synonyms": "courtyard",
+          "antonyms": "",
+          "notePl": "Skrót od „quadrangle”.",
+          "examples": [
+            {
+              "en": "On sunny days, everyone studies on the quad.",
+              "pl": "W słoneczne dni wszyscy uczą się na dziedzińcu.",
+              "focusEn": "quad",
+              "focusPl": "dziedzińcu"
+            },
+            {
+              "en": "We sat on the grass in the middle of the quad and ate ice cream.",
+              "pl": "Usiedliśmy na trawie na środku dziedzińca i jedliśmy lody.",
+              "focusEn": "quad",
+              "focusPl": "dziedzińca"
+            }
+          ],
+          "acceptedAnswers": [
+            "quad",
+            "quadrangle",
+            "courtyard"
+          ],
+          "acceptedTranslations": [
+            "dziedziniec",
+            "plac"
+          ]
+        },
+        {
+          "id": "university.fraternity",
+          "term": "fraternity",
+          "ipa": "/frəˈtɝːnəti/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "bractwo studenckie",
+          "definition": "A social club for male college students, often living in one house.",
+          "register": "neutralny",
+          "contextPl": "Życie towarzyskie na amerykańskich uczelniach",
+          "natural": "frat",
+          "forms": "fraternities",
+          "collocations": "join a fraternity; a fraternity house",
+          "synonyms": "frat",
+          "antonyms": "",
+          "notePl": "Żeński odpowiednik to „sorority”.",
+          "examples": [
+            {
+              "en": "That big house with Greek letters is a fraternity.",
+              "pl": "Ten duży dom z greckimi literami to bractwo studenckie.",
+              "focusEn": "fraternity",
+              "focusPl": "bractwo studenckie"
+            },
+            {
+              "en": "My roommate is thinking about joining a fraternity next year.",
+              "pl": "Mój współlokator myśli o wstąpieniu do bractwa studenckiego w przyszłym roku.",
+              "focusEn": "fraternity",
+              "focusPl": "bractwa studenckiego"
+            }
+          ],
+          "acceptedAnswers": [
+            "fraternity",
+            "frat"
+          ],
+          "acceptedTranslations": [
+            "bractwo studenckie",
+            "korporacja studencka"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "university.graduation",
+      "namePl": "Dyplom i co dalej",
+      "scenePl": "Uroczystość rozdania dyplomów na stadionie uczelni: rozmawiasz z rodziną absolwentki",
+      "entries": [
+        {
+          "id": "university.graduation",
+          "term": "graduation",
+          "ipa": "/ˌɡrædʒuˈeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rozdanie dyplomów",
+          "definition": "The ceremony when students receive their degrees.",
+          "register": "neutralny",
+          "contextPl": "Uroczystość na koniec studiów",
+          "natural": "",
+          "forms": "graduations",
+          "collocations": "graduation day; a graduation party; go to someone's graduation",
+          "synonyms": "commencement",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The whole family flew in from Chicago for her graduation.",
+              "pl": "Cała rodzina przyleciała z Chicago na jej rozdanie dyplomów.",
+              "focusEn": "graduation",
+              "focusPl": "rozdanie dyplomów"
+            },
+            {
+              "en": "After the graduation, we all took photos in front of the stadium.",
+              "pl": "Po rozdaniu dyplomów wszyscy robiliśmy zdjęcia przed stadionem.",
+              "focusEn": "graduation",
+              "focusPl": "rozdaniu dyplomów"
+            }
+          ],
+          "acceptedAnswers": [
+            "graduation",
+            "commencement"
+          ],
+          "acceptedTranslations": [
+            "rozdanie dyplomów",
+            "zakończenie studiów",
+            "ukończenie studiów"
+          ]
+        },
+        {
+          "id": "university.diploma",
+          "term": "diploma",
+          "ipa": "/dɪˈploʊmə/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dyplom",
+          "definition": "An official document that shows you have finished your studies.",
+          "register": "neutralny",
+          "contextPl": "Dokument ukończenia studiów",
+          "natural": "",
+          "forms": "diplomas",
+          "collocations": "get your diploma; receive a diploma",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Her parents cried when she walked across the stage to get her diploma.",
+              "pl": "Rodzice płakali, kiedy szła przez scenę po dyplom.",
+              "focusEn": "diploma",
+              "focusPl": "dyplom"
+            },
+            {
+              "en": "The actual diploma comes in the mail a few weeks later.",
+              "pl": "Właściwy dyplom przychodzi pocztą kilka tygodni później.",
+              "focusEn": "diploma",
+              "focusPl": "dyplom"
+            }
+          ],
+          "acceptedAnswers": [
+            "diploma"
+          ],
+          "acceptedTranslations": [
+            "dyplom",
+            "świadectwo ukończenia"
+          ]
+        },
+        {
+          "id": "university.graduate",
+          "term": "graduate",
+          "ipa": "/ˈɡrædʒuət/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "absolwent",
+          "definition": "A person who has finished a college program.",
+          "register": "neutralny",
+          "contextPl": "Absolwenci uczelni",
+          "natural": "grad",
+          "forms": "graduates",
+          "collocations": "a college graduate; a recent graduate",
+          "synonyms": "grad",
+          "antonyms": "",
+          "notePl": "Czasownik „graduate” wymawia się /ˈɡrædʒueɪt/.",
+          "examples": [
+            {
+              "en": "More than four thousand graduates are sitting on the field today.",
+              "pl": "Na murawie siedzi dziś ponad cztery tysiące absolwentów.",
+              "focusEn": "graduates",
+              "focusPl": "absolwentów"
+            },
+            {
+              "en": "As a new graduate, she's already looking for her first job.",
+              "pl": "Jako świeża absolwentka już szuka pierwszej pracy.",
+              "focusEn": "graduate",
+              "focusPl": "absolwentka"
+            }
+          ],
+          "acceptedAnswers": [
+            "graduate",
+            "grad"
+          ],
+          "acceptedTranslations": [
+            "absolwent",
+            "absolwentka"
+          ]
+        },
+        {
+          "id": "university.internship",
+          "term": "internship",
+          "ipa": "/ˈɪntɝːnʃɪp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "staż",
+          "definition": "A period of work, often short or unpaid, to get experience in a job.",
+          "register": "neutralny",
+          "contextPl": "Pierwsze doświadczenie zawodowe",
+          "natural": "",
+          "forms": "internships",
+          "collocations": "do an internship; a summer internship; a paid internship",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Her summer internship turned into a full-time job offer.",
+              "pl": "Jej letni staż zamienił się w ofertę pracy na pełen etat.",
+              "focusEn": "internship",
+              "focusPl": "staż"
+            },
+            {
+              "en": "Her cousin asked me where she did her internship.",
+              "pl": "Jej kuzyn zapytał mnie, gdzie odbywała staż.",
+              "focusEn": "internship",
+              "focusPl": "staż"
+            }
+          ],
+          "acceptedAnswers": [
+            "internship"
+          ],
+          "acceptedTranslations": [
+            "staż",
+            "praktyki",
+            "praktyka"
+          ]
+        },
+        {
+          "id": "university.grad-school",
+          "term": "grad school",
+          "ipa": "/ˈɡræd ˌskuːl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "studia magisterskie",
+          "definition": "Studies at a university after a bachelor's degree.",
+          "register": "potoczny",
+          "contextPl": "Dalsza nauka",
+          "natural": "",
+          "forms": "",
+          "collocations": "go to grad school; apply to grad school",
+          "synonyms": "graduate school",
+          "antonyms": "",
+          "notePl": "Pełna nazwa: „graduate school”.",
+          "examples": [
+            {
+              "en": "She's starting grad school in the fall to study psychology.",
+              "pl": "Jesienią zaczyna studia magisterskie z psychologii.",
+              "focusEn": "grad school",
+              "focusPl": "studia magisterskie"
+            },
+            {
+              "en": "Her dad wants her to work for a year before grad school.",
+              "pl": "Tata chce, żeby przed studiami magisterskimi przez rok popracowała.",
+              "focusEn": "grad school",
+              "focusPl": "studiami magisterskimi"
+            }
+          ],
+          "acceptedAnswers": [
+            "grad school",
+            "graduate school"
+          ],
+          "acceptedTranslations": [
+            "studia magisterskie",
+            "studia podyplomowe",
+            "dalsze studia"
+          ]
+        },
+        {
+          "id": "university.cap-and-gown",
+          "term": "cap and gown",
+          "ipa": "/ˌkæp ən ˈɡaʊn/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "biret i toga",
+          "definition": "The special hat and long robe that students wear at graduation.",
+          "register": "neutralny",
+          "contextPl": "Strój absolwenta",
+          "natural": "",
+          "forms": "caps and gowns",
+          "collocations": "wear a cap and gown; rent a cap and gown",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na koniec uroczystości absolwenci podrzucają birety.",
+          "examples": [
+            {
+              "en": "She looked so grown-up in her cap and gown.",
+              "pl": "W birecie i todze wyglądała tak dorośle.",
+              "focusEn": "cap and gown",
+              "focusPl": "birecie i todze"
+            },
+            {
+              "en": "She had to return her cap and gown right after the ceremony.",
+              "pl": "Zaraz po uroczystości musiała oddać biret i togę.",
+              "focusEn": "cap and gown",
+              "focusPl": "biret i togę"
+            }
+          ],
+          "acceptedAnswers": [
+            "cap and gown"
+          ],
+          "acceptedTranslations": [
+            "biret i toga",
+            "toga i biret",
+            "strój absolwenta"
+          ]
+        },
+        {
+          "id": "university.alumni",
+          "term": "alumni",
+          "ipa": "/əˈlʌmnaɪ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "absolwenci",
+          "definition": "People who have graduated from a particular school.",
+          "register": "formalny",
+          "contextPl": "Społeczność absolwentów",
+          "natural": "alums",
+          "forms": "",
+          "collocations": "alumni association; university alumni",
+          "synonyms": "graduates",
+          "antonyms": "",
+          "notePl": "Liczba pojedyncza: „alumnus” (m), „alumna” (ż).",
+          "examples": [
+            {
+              "en": "The university's alumni gave money for the new library.",
+              "pl": "Absolwenci uczelni przekazali pieniądze na nową bibliotekę.",
+              "focusEn": "alumni",
+              "focusPl": "Absolwenci"
+            },
+            {
+              "en": "Today's speakers were all alumni who started businesses after college.",
+              "pl": "Dzisiejszymi mówcami byli absolwenci, którzy po studiach założyli firmy.",
+              "focusEn": "alumni",
+              "focusPl": "absolwenci"
+            }
+          ],
+          "acceptedAnswers": [
+            "alumni",
+            "graduates",
+            "alums"
+          ],
+          "acceptedTranslations": [
+            "absolwenci",
+            "absolwenci uczelni"
+          ]
+        },
+        {
+          "id": "university.commencement",
+          "term": "commencement",
+          "ipa": "/kəˈmɛnsmənt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "uroczystość wręczenia dyplomów",
+          "definition": "The formal ceremony where students receive their degrees.",
+          "register": "formalny",
+          "contextPl": "Oficjalna nazwa uroczystości",
+          "natural": "graduation",
+          "forms": "commencements",
+          "collocations": "commencement ceremony; commencement speech",
+          "synonyms": "graduation",
+          "antonyms": "",
+          "notePl": "Dosłownie „początek” – nowego etapu życia.",
+          "examples": [
+            {
+              "en": "The commencement speech was about not being afraid to fail.",
+              "pl": "Przemówienie na uroczystości wręczenia dyplomów dotyczyło tego, żeby nie bać się porażki.",
+              "focusEn": "commencement",
+              "focusPl": "uroczystości wręczenia dyplomów"
+            },
+            {
+              "en": "Commencement started at ten, but we got there at nine to find seats.",
+              "pl": "Uroczystość wręczenia dyplomów zaczęła się o dziesiątej, ale przyjechaliśmy o dziewiątej, żeby znaleźć miejsca.",
+              "focusEn": "Commencement",
+              "focusPl": "Uroczystość wręczenia dyplomów"
+            }
+          ],
+          "acceptedAnswers": [
+            "commencement",
+            "graduation"
+          ],
+          "acceptedTranslations": [
+            "uroczystość wręczenia dyplomów",
+            "uroczystość zakończenia studiów",
+            "rozdanie dyplomów"
+          ]
+        },
+        {
+          "id": "university.valedictorian",
+          "term": "valedictorian",
+          "ipa": "/ˌvæləˌdɪkˈtɔːriən/",
+          "pos": "rzeczownik",
+          "level": "C2",
+          "frequency": "rare",
+          "translation": "prymus",
+          "definition": "The student with the best grades, who gives a speech at graduation.",
+          "register": "formalny",
+          "contextPl": "Najlepszy absolwent",
+          "natural": "",
+          "forms": "valedictorians",
+          "collocations": "class valedictorian",
+          "synonyms": "top student",
+          "antonyms": "",
+          "notePl": "W USA prymus wygłasza mowę pożegnalną.",
+          "examples": [
+            {
+              "en": "The valedictorian thanked her parents in three languages.",
+              "pl": "Najlepsza absolwentka podziękowała rodzicom w trzech językach.",
+              "focusEn": "valedictorian",
+              "focusPl": "Najlepsza absolwentka"
+            },
+            {
+              "en": "Her best friend was the valedictorian, so we stayed to hear the speech.",
+              "pl": "Jej najlepsza przyjaciółka była prymuską rocznika, więc zostaliśmy, żeby wysłuchać przemówienia.",
+              "focusEn": "valedictorian",
+              "focusPl": "prymuską"
+            }
+          ],
+          "acceptedAnswers": [
+            "valedictorian"
+          ],
+          "acceptedTranslations": [
+            "prymus",
+            "prymuska",
+            "najlepszy absolwent",
+            "najlepsza absolwentka"
+          ]
+        }
+      ]
+    }
+  ]
+}

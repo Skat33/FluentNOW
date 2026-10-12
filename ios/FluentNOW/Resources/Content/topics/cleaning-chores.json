@@ -1,0 +1,3351 @@
+{
+  "schemaVersion": 1,
+  "id": "cleaning-chores",
+  "namePl": "Sprzątanie i obowiązki domowe",
+  "nameEn": "Cleaning and Chores",
+  "group": "home",
+  "symbol": "sparkles",
+  "summaryPl": "Sprzątanie, zmywanie, pranie, środki czystości, podział obowiązków i wiosenne porządki.",
+  "aliases": [
+    "sprzątanie",
+    "porządki",
+    "obowiązki domowe",
+    "pranie",
+    "zmywanie",
+    "prace domowe",
+    "cleaning",
+    "chores",
+    "housework",
+    "laundry"
+  ],
+  "categories": [
+    {
+      "id": "cleaning-chores.cleaning",
+      "namePl": "Sprzątanie mieszkania",
+      "scenePl": "Sobotnie sprzątanie mieszkania przed przyjazdem gości",
+      "entries": [
+        {
+          "id": "cleaning-chores.clean",
+          "term": "clean",
+          "ipa": "/kliːn/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "sprzątać",
+          "definition": "To remove dirt from a place.",
+          "register": "neutralny",
+          "contextPl": "Sprzątanie pomieszczeń",
+          "natural": "",
+          "forms": "cleaned",
+          "collocations": "clean the house; clean the bathroom",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need to clean the whole apartment before Mom arrives.",
+              "pl": "Musimy posprzątać całe mieszkanie, zanim przyjedzie mama.",
+              "focusEn": "clean",
+              "focusPl": "posprzątać"
+            },
+            {
+              "en": "I'll clean the bathroom if you do the kitchen.",
+              "pl": "Ja posprzątam łazienkę, jeśli ty zrobisz kuchnię.",
+              "focusEn": "clean",
+              "focusPl": "posprzątam"
+            }
+          ],
+          "acceptedAnswers": [
+            "clean"
+          ],
+          "acceptedTranslations": [
+            "sprzątać",
+            "posprzątać",
+            "czyścić"
+          ]
+        },
+        {
+          "id": "cleaning-chores.clean-2",
+          "term": "clean",
+          "ipa": "/kliːn/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "czysty",
+          "definition": "Not dirty.",
+          "register": "neutralny",
+          "contextPl": "Ocena efektu sprzątania",
+          "natural": "",
+          "forms": "cleaner – cleanest",
+          "collocations": "a clean floor; spotless clean",
+          "synonyms": "",
+          "antonyms": "dirty",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The floors are finally clean, so take your shoes off.",
+              "pl": "Podłogi są wreszcie czyste, więc zdejmij buty.",
+              "focusEn": "clean",
+              "focusPl": "czyste"
+            },
+            {
+              "en": "Are these towels clean or dirty?",
+              "pl": "Te ręczniki są czyste czy brudne?",
+              "focusEn": "clean",
+              "focusPl": "czyste"
+            }
+          ],
+          "acceptedAnswers": [
+            "clean"
+          ],
+          "acceptedTranslations": [
+            "czysty"
+          ]
+        },
+        {
+          "id": "cleaning-chores.dirty",
+          "term": "dirty",
+          "ipa": "/ˈdɜːrti/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "brudny",
+          "definition": "Not clean.",
+          "register": "neutralny",
+          "contextPl": "Ocena stanu mieszkania",
+          "natural": "",
+          "forms": "dirtier – dirtiest",
+          "collocations": "dirty dishes; dirty clothes",
+          "synonyms": "",
+          "antonyms": "clean",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The windows are really dirty after the storm.",
+              "pl": "Okna są naprawdę brudne po burzy.",
+              "focusEn": "dirty",
+              "focusPl": "brudne"
+            },
+            {
+              "en": "Dirty dishes have been in the sink since Friday!",
+              "pl": "Brudne naczynia stoją w zlewie od piątku!",
+              "focusEn": "Dirty",
+              "focusPl": "Brudne"
+            }
+          ],
+          "acceptedAnswers": [
+            "dirty"
+          ],
+          "acceptedTranslations": [
+            "brudny"
+          ]
+        },
+        {
+          "id": "cleaning-chores.mess",
+          "term": "mess",
+          "ipa": "/mɛs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "bałagan",
+          "definition": "A dirty or untidy state.",
+          "register": "neutralny",
+          "contextPl": "Nieporządek w domu",
+          "natural": "",
+          "forms": "messes",
+          "collocations": "make a mess; clean up the mess; what a mess",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry about the mess; we're still cleaning.",
+              "pl": "Przepraszam za bałagan, jeszcze sprzątamy.",
+              "focusEn": "mess",
+              "focusPl": "bałagan"
+            },
+            {
+              "en": "The kids made a huge mess in the living room.",
+              "pl": "Dzieci narobiły ogromnego bałaganu w salonie.",
+              "focusEn": "mess",
+              "focusPl": "bałaganu"
+            }
+          ],
+          "acceptedAnswers": [
+            "mess"
+          ],
+          "acceptedTranslations": [
+            "bałagan",
+            "nieporządek"
+          ]
+        },
+        {
+          "id": "cleaning-chores.clean-up",
+          "term": "clean up",
+          "ipa": "/ˌkliːn ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "posprzątać",
+          "definition": "To make a place clean and neat.",
+          "register": "neutralny",
+          "contextPl": "Porządkowanie po bałaganie",
+          "natural": "",
+          "forms": "cleaned up",
+          "collocations": "clean up the kitchen; clean up after yourself",
+          "synonyms": "tidy up",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's clean up the living room first.",
+              "pl": "Najpierw posprzątajmy salon.",
+              "focusEn": "clean up",
+              "focusPl": "posprzątajmy"
+            },
+            {
+              "en": "Who's going to clean up all these toys?",
+              "pl": "Kto posprząta te wszystkie zabawki?",
+              "focusEn": "clean up",
+              "focusPl": "posprząta"
+            }
+          ],
+          "acceptedAnswers": [
+            "clean up",
+            "tidy up"
+          ],
+          "acceptedTranslations": [
+            "posprzątać",
+            "sprzątać",
+            "uprzątnąć"
+          ]
+        },
+        {
+          "id": "cleaning-chores.messy",
+          "term": "messy",
+          "ipa": "/ˈmɛsi/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zabałaganiony",
+          "definition": "Not neat; with things everywhere.",
+          "register": "neutralny",
+          "contextPl": "Opis nieposprzątanego pokoju",
+          "natural": "",
+          "forms": "messier – messiest",
+          "collocations": "a messy room",
+          "synonyms": "untidy",
+          "antonyms": "neat",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My room is too messy for anyone to see.",
+              "pl": "Mój pokój jest zbyt zabałaganiony, żeby ktoś go oglądał.",
+              "focusEn": "messy",
+              "focusPl": "zabałaganiony"
+            },
+            {
+              "en": "The kitchen gets messy so fast with three kids.",
+              "pl": "Przy trójce dzieci kuchnia tak szybko robi się zabałaganiona.",
+              "focusEn": "messy",
+              "focusPl": "zabałaganiona"
+            }
+          ],
+          "acceptedAnswers": [
+            "messy"
+          ],
+          "acceptedTranslations": [
+            "zabałaganiony",
+            "nieposprzątany"
+          ]
+        },
+        {
+          "id": "cleaning-chores.vacuum",
+          "term": "vacuum",
+          "ipa": "/ˈvækjuːm/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odkurzać",
+          "definition": "To clean floors with a vacuum cleaner.",
+          "register": "neutralny",
+          "contextPl": "Sprzątanie podłóg",
+          "natural": "",
+          "forms": "vacuumed",
+          "collocations": "vacuum the rug; vacuum the stairs",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you vacuum the rug in the living room?",
+              "pl": "Możesz odkurzyć dywan w salonie?",
+              "focusEn": "vacuum",
+              "focusPl": "odkurzyć"
+            },
+            {
+              "en": "I vacuumed the stairs, but there's still dog hair everywhere.",
+              "pl": "Odkurzyłem schody, ale wszędzie jest jeszcze sierść psa.",
+              "focusEn": "vacuumed",
+              "focusPl": "Odkurzyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "vacuum"
+          ],
+          "acceptedTranslations": [
+            "odkurzać",
+            "odkurzyć"
+          ]
+        },
+        {
+          "id": "cleaning-chores.pick-up",
+          "term": "pick up",
+          "ipa": "/ˌpɪk ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "pozbierać",
+          "definition": "To collect things from the floor and put them away; to tidy a room.",
+          "register": "potoczny",
+          "contextPl": "Szybkie ogarnięcie pokoju",
+          "natural": "",
+          "forms": "picked up",
+          "collocations": "pick up your toys; pick up the living room",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Pick up your toys before dinner, please.",
+              "pl": "Pozbieraj swoje zabawki przed kolacją.",
+              "focusEn": "Pick up",
+              "focusPl": "Pozbieraj"
+            },
+            {
+              "en": "I picked up the living room in ten minutes.",
+              "pl": "Ogarnąłem salon w dziesięć minut.",
+              "focusEn": "picked up",
+              "focusPl": "Ogarnąłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "pick up"
+          ],
+          "acceptedTranslations": [
+            "pozbierać",
+            "ogarnąć",
+            "zbierać"
+          ]
+        },
+        {
+          "id": "cleaning-chores.dust",
+          "term": "dust",
+          "ipa": "/dʌst/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ścierać kurze",
+          "definition": "To remove dust from furniture with a cloth.",
+          "register": "neutralny",
+          "contextPl": "Sprzątanie mebli",
+          "natural": "",
+          "forms": "dusted",
+          "collocations": "dust the shelves; dust the furniture",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Dust the shelves before you put the books back.",
+              "pl": "Zetrzyj kurze z półek, zanim odłożysz książki.",
+              "focusEn": "Dust",
+              "focusPl": "Zetrzyj kurze"
+            },
+            {
+              "en": "Nobody has dusted the TV in weeks.",
+              "pl": "Nikt nie ścierał kurzu z telewizora od tygodni.",
+              "focusEn": "dusted",
+              "focusPl": "ścierał kurzu"
+            }
+          ],
+          "acceptedAnswers": [
+            "dust"
+          ],
+          "acceptedTranslations": [
+            "ścierać kurze",
+            "odkurzać meble"
+          ]
+        },
+        {
+          "id": "cleaning-chores.mop",
+          "term": "mop",
+          "ipa": "/mɑːp/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "myć mopem",
+          "definition": "To wash a floor with a mop.",
+          "register": "neutralny",
+          "contextPl": "Mycie podłóg",
+          "natural": "",
+          "forms": "mopped",
+          "collocations": "mop the floor",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll mop the kitchen floor after dinner.",
+              "pl": "Umyję mopem podłogę w kuchni po kolacji.",
+              "focusEn": "mop",
+              "focusPl": "Umyję mopem"
+            },
+            {
+              "en": "Don't walk there; I just mopped.",
+              "pl": "Nie chodź tam, właśnie umyłem podłogę.",
+              "focusEn": "mopped",
+              "focusPl": "umyłem podłogę"
+            }
+          ],
+          "acceptedAnswers": [
+            "mop"
+          ],
+          "acceptedTranslations": [
+            "myć mopem",
+            "umyć podłogę"
+          ]
+        },
+        {
+          "id": "cleaning-chores.sweep",
+          "term": "sweep",
+          "ipa": "/swiːp/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zamiatać",
+          "definition": "To clean a floor with a broom.",
+          "register": "neutralny",
+          "contextPl": "Sprzątanie podłóg",
+          "natural": "",
+          "forms": "swept – swept",
+          "collocations": "sweep the floor; sweep up",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sweep the porch before the guests get here.",
+              "pl": "Zamieć ganek, zanim przyjdą goście.",
+              "focusEn": "Sweep",
+              "focusPl": "Zamieć"
+            },
+            {
+              "en": "I swept up the broken glass very carefully.",
+              "pl": "Bardzo ostrożnie zamiotłem potłuczone szkło.",
+              "focusEn": "swept",
+              "focusPl": "zamiotłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "sweep"
+          ],
+          "acceptedTranslations": [
+            "zamiatać",
+            "zamieść"
+          ]
+        },
+        {
+          "id": "cleaning-chores.wipe",
+          "term": "wipe",
+          "ipa": "/waɪp/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przetrzeć",
+          "definition": "To clean a surface with a cloth.",
+          "register": "neutralny",
+          "contextPl": "Czyszczenie blatów i luster",
+          "natural": "",
+          "forms": "wiped",
+          "collocations": "wipe the table; wipe down the counter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Wipe the table with a damp cloth.",
+              "pl": "Przetrzyj stół wilgotną szmatką.",
+              "focusEn": "Wipe",
+              "focusPl": "Przetrzyj"
+            },
+            {
+              "en": "I wiped down the bathroom mirror.",
+              "pl": "Przetarłem lustro w łazience.",
+              "focusEn": "wiped",
+              "focusPl": "Przetarłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "wipe"
+          ],
+          "acceptedTranslations": [
+            "przetrzeć",
+            "wycierać",
+            "przecierać"
+          ]
+        },
+        {
+          "id": "cleaning-chores.tidy",
+          "term": "tidy",
+          "ipa": "/ˈtaɪdi/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "schludny",
+          "definition": "Neat, with everything in its place.",
+          "register": "neutralny",
+          "contextPl": "Utrzymywanie porządku",
+          "natural": "",
+          "forms": "tidier – tidiest",
+          "collocations": "keep it tidy; a tidy room",
+          "synonyms": "neat",
+          "antonyms": "messy",
+          "notePl": "W USA „neat” jest częstsze w mowie, ale „tidy” też jest używane.",
+          "examples": [
+            {
+              "en": "Try to keep your room tidy this week.",
+              "pl": "Postaraj się w tym tygodniu trzymać pokój w porządku.",
+              "focusEn": "tidy",
+              "focusPl": "w porządku"
+            },
+            {
+              "en": "The living room looks so tidy now.",
+              "pl": "Salon wygląda teraz tak schludnie.",
+              "focusEn": "tidy",
+              "focusPl": "schludnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "tidy",
+            "neat"
+          ],
+          "acceptedTranslations": [
+            "schludny",
+            "uporządkowany",
+            "posprzątany"
+          ]
+        },
+        {
+          "id": "cleaning-chores.scrub",
+          "term": "scrub",
+          "ipa": "/skrʌb/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "szorować",
+          "definition": "To clean something hard with a brush.",
+          "register": "neutralny",
+          "contextPl": "Czyszczenie mocnych zabrudzeń",
+          "natural": "",
+          "forms": "scrubbed",
+          "collocations": "scrub the tub; scrub hard",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I had to scrub the bathtub for twenty minutes.",
+              "pl": "Musiałem szorować wannę przez dwadzieścia minut.",
+              "focusEn": "scrub",
+              "focusPl": "szorować"
+            },
+            {
+              "en": "Scrub the stove with a brush to get the grease off.",
+              "pl": "Wyszoruj kuchenkę szczotką, żeby usunąć tłuszcz.",
+              "focusEn": "Scrub",
+              "focusPl": "Wyszoruj"
+            }
+          ],
+          "acceptedAnswers": [
+            "scrub"
+          ],
+          "acceptedTranslations": [
+            "szorować",
+            "wyszorować"
+          ]
+        },
+        {
+          "id": "cleaning-chores.spotless",
+          "term": "spotless",
+          "ipa": "/ˈspɑːtləs/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nieskazitelnie czysty",
+          "definition": "Perfectly clean.",
+          "register": "neutralny",
+          "contextPl": "Pochwała czystości",
+          "natural": "squeaky clean",
+          "forms": "",
+          "collocations": "spotless kitchen",
+          "synonyms": "immaculate",
+          "antonyms": "filthy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kitchen is spotless now, so don't touch anything!",
+              "pl": "Kuchnia jest teraz lśniąco czysta, więc niczego nie dotykaj!",
+              "focusEn": "spotless",
+              "focusPl": "lśniąco czysta"
+            },
+            {
+              "en": "Her house is always spotless, even with two dogs.",
+              "pl": "Jej dom jest zawsze nieskazitelnie czysty, nawet z dwoma psami.",
+              "focusEn": "spotless",
+              "focusPl": "nieskazitelnie czysty"
+            }
+          ],
+          "acceptedAnswers": [
+            "spotless",
+            "squeaky clean"
+          ],
+          "acceptedTranslations": [
+            "nieskazitelnie czysty",
+            "lśniący"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleaning-chores.dishes",
+      "namePl": "Zmywanie i kuchnia",
+      "scenePl": "Sprzątanie kuchni po rodzinnym niedzielnym obiedzie",
+      "entries": [
+        {
+          "id": "cleaning-chores.do-the-dishes",
+          "term": "do the dishes",
+          "ipa": "/ˌduː ðə ˈdɪʃɪz/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zmywać naczynia",
+          "definition": "To wash plates, glasses and pans after a meal.",
+          "register": "neutralny",
+          "contextPl": "Zmywanie po posiłku",
+          "natural": "wash the dishes",
+          "forms": "did – done",
+          "collocations": "do the dishes after dinner",
+          "synonyms": "wash up",
+          "antonyms": "",
+          "notePl": "„Wash up” jest brytyjskie; w USA „wash up” to umyć ręce.",
+          "examples": [
+            {
+              "en": "I cooked, so you do the dishes.",
+              "pl": "Ja gotowałem, więc ty zmywasz.",
+              "focusEn": "do the dishes",
+              "focusPl": "zmywasz"
+            },
+            {
+              "en": "Let's do the dishes before we watch the game.",
+              "pl": "Pozmywajmy, zanim obejrzymy mecz.",
+              "focusEn": "do the dishes",
+              "focusPl": "Pozmywajmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "do the dishes",
+            "wash the dishes"
+          ],
+          "acceptedTranslations": [
+            "zmywać naczynia",
+            "pozmywać",
+            "zmywać"
+          ]
+        },
+        {
+          "id": "cleaning-chores.take-out-the-trash",
+          "term": "take out the trash",
+          "ipa": "/ˌteɪk aʊt ðə ˈtræʃ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wynieść śmieci",
+          "definition": "To carry the garbage out of the house.",
+          "register": "neutralny",
+          "contextPl": "Codzienny obowiązek",
+          "natural": "take out the garbage",
+          "forms": "took – taken",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii „take out the rubbish” lub „take the bins out”.",
+          "examples": [
+            {
+              "en": "Can you take out the trash after dinner?",
+              "pl": "Możesz wynieść śmieci po obiedzie?",
+              "focusEn": "take out the trash",
+              "focusPl": "wynieść śmieci"
+            },
+            {
+              "en": "The bag is full; someone needs to take out the trash.",
+              "pl": "Worek jest pełny, ktoś musi wynieść śmieci.",
+              "focusEn": "take out the trash",
+              "focusPl": "wynieść śmieci"
+            }
+          ],
+          "acceptedAnswers": [
+            "take out the trash",
+            "take out the garbage"
+          ],
+          "acceptedTranslations": [
+            "wynieść śmieci",
+            "wynosić śmieci"
+          ]
+        },
+        {
+          "id": "cleaning-chores.rinse",
+          "term": "rinse",
+          "ipa": "/rɪns/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "opłukać",
+          "definition": "To wash something quickly with clean water.",
+          "register": "neutralny",
+          "contextPl": "Płukanie naczyń",
+          "natural": "",
+          "forms": "rinsed",
+          "collocations": "rinse the plates; rinse off",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Rinse the plates before you put them in the dishwasher.",
+              "pl": "Opłucz talerze, zanim włożysz je do zmywarki.",
+              "focusEn": "Rinse",
+              "focusPl": "Opłucz"
+            },
+            {
+              "en": "I rinsed the glasses and left them to dry.",
+              "pl": "Opłukałem szklanki i zostawiłem je do wyschnięcia.",
+              "focusEn": "rinsed",
+              "focusPl": "Opłukałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "rinse"
+          ],
+          "acceptedTranslations": [
+            "opłukać",
+            "płukać",
+            "spłukać"
+          ]
+        },
+        {
+          "id": "cleaning-chores.dish-soap",
+          "term": "dish soap",
+          "ipa": "/ˈdɪʃ ˌsoʊp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "płyn do naczyń",
+          "definition": "Liquid soap for washing dishes.",
+          "register": "neutralny",
+          "contextPl": "Środki do zmywania",
+          "natural": "",
+          "forms": "",
+          "collocations": "a bottle of dish soap",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii „washing-up liquid”.",
+          "examples": [
+            {
+              "en": "We're almost out of dish soap.",
+              "pl": "Prawie skończył nam się płyn do naczyń.",
+              "focusEn": "dish soap",
+              "focusPl": "płyn do naczyń"
+            },
+            {
+              "en": "Use a little dish soap and hot water for the pan.",
+              "pl": "Do patelni użyj odrobiny płynu do naczyń i gorącej wody.",
+              "focusEn": "dish soap",
+              "focusPl": "płynu do naczyń"
+            }
+          ],
+          "acceptedAnswers": [
+            "dish soap",
+            "dishwashing liquid"
+          ],
+          "acceptedTranslations": [
+            "płyn do naczyń"
+          ]
+        },
+        {
+          "id": "cleaning-chores.sponge",
+          "term": "sponge",
+          "ipa": "/spʌndʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gąbka",
+          "definition": "A soft object with holes, used for washing.",
+          "register": "neutralny",
+          "contextPl": "Zmywanie naczyń",
+          "natural": "",
+          "forms": "sponges",
+          "collocations": "a kitchen sponge",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This sponge is old and smells bad; throw it out.",
+              "pl": "Ta gąbka jest stara i brzydko pachnie, wyrzuć ją.",
+              "focusEn": "sponge",
+              "focusPl": "gąbka"
+            },
+            {
+              "en": "Use the rough side of the sponge for the pot.",
+              "pl": "Do garnka użyj szorstkiej strony gąbki.",
+              "focusEn": "sponge",
+              "focusPl": "gąbki"
+            }
+          ],
+          "acceptedAnswers": [
+            "sponge"
+          ],
+          "acceptedTranslations": [
+            "gąbka",
+            "zmywak"
+          ]
+        },
+        {
+          "id": "cleaning-chores.load-the-dishwasher",
+          "term": "load the dishwasher",
+          "ipa": "/ˌloʊd ðə ˈdɪʃˌwɑːʃər/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "załadować zmywarkę",
+          "definition": "To put dirty dishes into the dishwasher.",
+          "register": "neutralny",
+          "contextPl": "Zmywanie w zmywarce",
+          "natural": "",
+          "forms": "loaded",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "unload the dishwasher",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You load the dishwasher, and I'll wipe the table.",
+              "pl": "Ty załaduj zmywarkę, a ja przetrę stół.",
+              "focusEn": "load the dishwasher",
+              "focusPl": "załaduj zmywarkę"
+            },
+            {
+              "en": "Dad has a special way to load the dishwasher.",
+              "pl": "Tata ma specjalny sposób ładowania zmywarki.",
+              "focusEn": "load the dishwasher",
+              "focusPl": "ładowania zmywarki"
+            }
+          ],
+          "acceptedAnswers": [
+            "load the dishwasher"
+          ],
+          "acceptedTranslations": [
+            "załadować zmywarkę",
+            "ładować zmywarkę"
+          ]
+        },
+        {
+          "id": "cleaning-chores.unload",
+          "term": "unload",
+          "ipa": "/ʌnˈloʊd/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rozładować",
+          "definition": "To take clean dishes out of the dishwasher.",
+          "register": "neutralny",
+          "contextPl": "Wyjmowanie czystych naczyń",
+          "natural": "",
+          "forms": "unloaded",
+          "collocations": "unload the dishwasher",
+          "synonyms": "empty",
+          "antonyms": "load",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can someone unload the dishwasher first?",
+              "pl": "Czy ktoś może najpierw rozładować zmywarkę?",
+              "focusEn": "unload",
+              "focusPl": "rozładować"
+            },
+            {
+              "en": "I unloaded the dishwasher and put everything away.",
+              "pl": "Rozładowałem zmywarkę i wszystko odłożyłem na miejsce.",
+              "focusEn": "unloaded",
+              "focusPl": "Rozładowałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "unload",
+            "empty"
+          ],
+          "acceptedTranslations": [
+            "rozładować",
+            "wyjąć",
+            "wypakować"
+          ]
+        },
+        {
+          "id": "cleaning-chores.dish-towel",
+          "term": "dish towel",
+          "ipa": "/ˈdɪʃ ˌtaʊəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ścierka do naczyń",
+          "definition": "A cloth for drying dishes.",
+          "register": "neutralny",
+          "contextPl": "Wycieranie naczyń",
+          "natural": "",
+          "forms": "dish towels",
+          "collocations": "dry with a dish towel",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii „tea towel”.",
+          "examples": [
+            {
+              "en": "Dry the wine glasses with a clean dish towel.",
+              "pl": "Wytrzyj kieliszki czystą ścierką do naczyń.",
+              "focusEn": "dish towel",
+              "focusPl": "ścierką do naczyń"
+            },
+            {
+              "en": "The dish towels are in the drawer by the stove.",
+              "pl": "Ścierki do naczyń są w szufladzie przy kuchence.",
+              "focusEn": "dish towels",
+              "focusPl": "Ścierki do naczyń"
+            }
+          ],
+          "acceptedAnswers": [
+            "dish towel",
+            "tea towel"
+          ],
+          "acceptedTranslations": [
+            "ścierka do naczyń",
+            "ścierka"
+          ]
+        },
+        {
+          "id": "cleaning-chores.crumb",
+          "term": "crumb",
+          "ipa": "/krʌm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "okruch",
+          "definition": "A very small piece of bread or cake.",
+          "register": "neutralny",
+          "contextPl": "Sprzątanie stołu po posiłku",
+          "natural": "",
+          "forms": "crumbs",
+          "collocations": "bread crumbs; wipe the crumbs",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Wipe the crumbs off the table into your hand.",
+              "pl": "Zgarnij okruchy ze stołu do ręki.",
+              "focusEn": "crumbs",
+              "focusPl": "okruchy"
+            },
+            {
+              "en": "There are bread crumbs all over the floor.",
+              "pl": "Po całej podłodze są okruchy chleba.",
+              "focusEn": "crumbs",
+              "focusPl": "okruchy"
+            }
+          ],
+          "acceptedAnswers": [
+            "crumb"
+          ],
+          "acceptedTranslations": [
+            "okruch",
+            "okruszek"
+          ]
+        },
+        {
+          "id": "cleaning-chores.sticky",
+          "term": "sticky",
+          "ipa": "/ˈstɪki/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "lepki",
+          "definition": "Covered with something like syrup or juice.",
+          "register": "neutralny",
+          "contextPl": "Zabrudzenia w kuchni",
+          "natural": "",
+          "forms": "stickier – stickiest",
+          "collocations": "sticky floor; sticky hands",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The counter is sticky from the spilled juice.",
+              "pl": "Blat jest lepki od rozlanego soku.",
+              "focusEn": "sticky",
+              "focusPl": "lepki"
+            },
+            {
+              "en": "Wash your hands; they're sticky from the syrup.",
+              "pl": "Umyj ręce, są lepkie od syropu.",
+              "focusEn": "sticky",
+              "focusPl": "lepkie"
+            }
+          ],
+          "acceptedAnswers": [
+            "sticky"
+          ],
+          "acceptedTranslations": [
+            "lepki",
+            "klejący"
+          ]
+        },
+        {
+          "id": "cleaning-chores.greasy",
+          "term": "greasy",
+          "ipa": "/ˈɡriːsi/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zatłuszczony",
+          "definition": "Covered with oil or fat.",
+          "register": "neutralny",
+          "contextPl": "Czyszczenie po smażeniu",
+          "natural": "",
+          "forms": "greasier – greasiest",
+          "collocations": "greasy pans; greasy stove",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The stove is greasy after frying the chicken.",
+              "pl": "Kuchenka jest zatłuszczona po smażeniu kurczaka.",
+              "focusEn": "greasy",
+              "focusPl": "zatłuszczona"
+            },
+            {
+              "en": "Hot water works best on greasy pans.",
+              "pl": "Gorąca woda najlepiej działa na tłuste patelnie.",
+              "focusEn": "greasy",
+              "focusPl": "tłuste"
+            }
+          ],
+          "acceptedAnswers": [
+            "greasy"
+          ],
+          "acceptedTranslations": [
+            "zatłuszczony",
+            "tłusty"
+          ]
+        },
+        {
+          "id": "cleaning-chores.soak",
+          "term": "soak",
+          "ipa": "/soʊk/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "namoczyć",
+          "definition": "To leave something in water for a long time.",
+          "register": "neutralny",
+          "contextPl": "Zmywanie przypalonych naczyń",
+          "natural": "",
+          "forms": "soaked",
+          "collocations": "let it soak; soak overnight",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let the pan soak for an hour, then scrub it.",
+              "pl": "Niech patelnia się namoczy przez godzinę, a potem ją wyszoruj.",
+              "focusEn": "soak",
+              "focusPl": "namoczy"
+            },
+            {
+              "en": "I soaked the baking dish overnight.",
+              "pl": "Namoczyłem naczynie żaroodporne na noc.",
+              "focusEn": "soaked",
+              "focusPl": "Namoczyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "soak"
+          ],
+          "acceptedTranslations": [
+            "namoczyć",
+            "moczyć"
+          ]
+        },
+        {
+          "id": "cleaning-chores.dish-rack",
+          "term": "dish rack",
+          "ipa": "/ˈdɪʃ ˌræk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "suszarka na naczynia",
+          "definition": "A frame where washed dishes are left to dry.",
+          "register": "neutralny",
+          "contextPl": "Suszenie naczyń",
+          "natural": "drying rack",
+          "forms": "dish racks",
+          "collocations": "",
+          "synonyms": "drying rack",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii „draining rack”.",
+          "examples": [
+            {
+              "en": "Leave the pots in the dish rack to dry.",
+              "pl": "Zostaw garnki na suszarce na naczynia, żeby wyschły.",
+              "focusEn": "dish rack",
+              "focusPl": "suszarce na naczynia"
+            },
+            {
+              "en": "The dish rack is full, so dry a few plates.",
+              "pl": "Suszarka na naczynia jest pełna, więc wytrzyj kilka talerzy.",
+              "focusEn": "dish rack",
+              "focusPl": "Suszarka na naczynia"
+            }
+          ],
+          "acceptedAnswers": [
+            "dish rack",
+            "drying rack"
+          ],
+          "acceptedTranslations": [
+            "suszarka na naczynia",
+            "ociekacz"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleaning-chores.laundry",
+      "namePl": "Pranie",
+      "scenePl": "Robienie prania w niedzielę wieczorem",
+      "entries": [
+        {
+          "id": "cleaning-chores.wash",
+          "term": "wash",
+          "ipa": "/wɑːʃ/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "prać",
+          "definition": "To clean clothes with water and soap.",
+          "register": "neutralny",
+          "contextPl": "Pranie ubrań",
+          "natural": "",
+          "forms": "washed",
+          "collocations": "wash clothes; machine wash",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Wash dark clothes in cold water.",
+              "pl": "Ciemne ubrania pierz w zimnej wodzie.",
+              "focusEn": "Wash",
+              "focusPl": "pierz"
+            },
+            {
+              "en": "I washed your jeans, and they're in the dryer.",
+              "pl": "Uprałem twoje dżinsy, są w suszarce.",
+              "focusEn": "washed",
+              "focusPl": "Uprałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "wash"
+          ],
+          "acceptedTranslations": [
+            "prać",
+            "uprać"
+          ]
+        },
+        {
+          "id": "cleaning-chores.laundry",
+          "term": "laundry",
+          "ipa": "/ˈlɔːndri/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pranie",
+          "definition": "Clothes and sheets that need washing or have just been washed.",
+          "register": "neutralny",
+          "contextPl": "Rzeczy do prania",
+          "natural": "",
+          "forms": "",
+          "collocations": "a pile of laundry; fold the laundry",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a huge pile of laundry on the bed.",
+              "pl": "Na łóżku leży ogromna sterta prania.",
+              "focusEn": "laundry",
+              "focusPl": "prania"
+            },
+            {
+              "en": "The laundry is done, but someone has to fold it.",
+              "pl": "Pranie jest gotowe, ale ktoś musi je poskładać.",
+              "focusEn": "laundry",
+              "focusPl": "Pranie"
+            }
+          ],
+          "acceptedAnswers": [
+            "laundry"
+          ],
+          "acceptedTranslations": [
+            "pranie"
+          ]
+        },
+        {
+          "id": "cleaning-chores.do-the-laundry",
+          "term": "do the laundry",
+          "ipa": "/ˌduː ðə ˈlɔːndri/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zrobić pranie",
+          "definition": "To wash and dry clothes.",
+          "register": "neutralny",
+          "contextPl": "Obowiązki domowe",
+          "natural": "",
+          "forms": "did – done",
+          "collocations": "",
+          "synonyms": "wash clothes",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I usually do the laundry on Sunday nights.",
+              "pl": "Zwykle robię pranie w niedzielę wieczorem.",
+              "focusEn": "do the laundry",
+              "focusPl": "robię pranie"
+            },
+            {
+              "en": "Can you do the laundry while I go shopping?",
+              "pl": "Możesz zrobić pranie, kiedy ja pójdę na zakupy?",
+              "focusEn": "do the laundry",
+              "focusPl": "zrobić pranie"
+            }
+          ],
+          "acceptedAnswers": [
+            "do the laundry",
+            "wash clothes"
+          ],
+          "acceptedTranslations": [
+            "zrobić pranie",
+            "robić pranie",
+            "prać"
+          ]
+        },
+        {
+          "id": "cleaning-chores.fold",
+          "term": "fold",
+          "ipa": "/foʊld/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "składać",
+          "definition": "To bend clothes neatly into a smaller shape.",
+          "register": "neutralny",
+          "contextPl": "Składanie czystych ubrań",
+          "natural": "",
+          "forms": "folded",
+          "collocations": "fold the towels; fold laundry",
+          "synonyms": "",
+          "antonyms": "unfold",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Fold the towels and put them in the closet.",
+              "pl": "Złóż ręczniki i włóż je do szafy.",
+              "focusEn": "Fold",
+              "focusPl": "Złóż"
+            },
+            {
+              "en": "I folded all the shirts while watching TV.",
+              "pl": "Poskładałem wszystkie koszule, oglądając telewizję.",
+              "focusEn": "folded",
+              "focusPl": "Poskładałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "fold"
+          ],
+          "acceptedTranslations": [
+            "składać",
+            "złożyć",
+            "poskładać"
+          ]
+        },
+        {
+          "id": "cleaning-chores.hang-up",
+          "term": "hang up",
+          "ipa": "/ˌhæŋ ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "powiesić",
+          "definition": "To put clothes on a hanger or hook.",
+          "register": "neutralny",
+          "contextPl": "Wieszanie ubrań",
+          "natural": "",
+          "forms": "hung – hung",
+          "collocations": "hang up a shirt; hang up to dry",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hang up your shirts so they don't wrinkle.",
+              "pl": "Powieś koszule, żeby się nie pogniotły.",
+              "focusEn": "Hang up",
+              "focusPl": "Powieś"
+            },
+            {
+              "en": "I hung up the wet sweaters to dry.",
+              "pl": "Powiesiłem mokre swetry do wyschnięcia.",
+              "focusEn": "hung up",
+              "focusPl": "Powiesiłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "hang up"
+          ],
+          "acceptedTranslations": [
+            "powiesić",
+            "wieszać"
+          ]
+        },
+        {
+          "id": "cleaning-chores.iron",
+          "term": "iron",
+          "ipa": "/ˈaɪərn/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "prasować",
+          "definition": "To make clothes smooth with a hot iron.",
+          "register": "neutralny",
+          "contextPl": "Prasowanie ubrań",
+          "natural": "",
+          "forms": "ironed",
+          "collocations": "iron a shirt",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA wymowa /ˈaɪərn/.",
+          "examples": [
+            {
+              "en": "I need to iron my shirt for tomorrow's interview.",
+              "pl": "Muszę wyprasować koszulę na jutrzejszą rozmowę.",
+              "focusEn": "iron",
+              "focusPl": "wyprasować"
+            },
+            {
+              "en": "She irons everything, even the pillowcases.",
+              "pl": "Ona prasuje wszystko, nawet poszewki.",
+              "focusEn": "irons",
+              "focusPl": "prasuje"
+            }
+          ],
+          "acceptedAnswers": [
+            "iron"
+          ],
+          "acceptedTranslations": [
+            "prasować",
+            "wyprasować"
+          ]
+        },
+        {
+          "id": "cleaning-chores.stain",
+          "term": "stain",
+          "ipa": "/steɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "plama",
+          "definition": "A dirty mark that is hard to remove.",
+          "register": "neutralny",
+          "contextPl": "Plamy na ubraniach",
+          "natural": "",
+          "forms": "stains",
+          "collocations": "a coffee stain; remove a stain",
+          "synonyms": "spot",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a coffee stain on my white shirt.",
+              "pl": "Na mojej białej koszuli jest plama z kawy.",
+              "focusEn": "stain",
+              "focusPl": "plama"
+            },
+            {
+              "en": "This stain won't come out, no matter what I try.",
+              "pl": "Ta plama nie schodzi, cokolwiek próbuję.",
+              "focusEn": "stain",
+              "focusPl": "plama"
+            }
+          ],
+          "acceptedAnswers": [
+            "stain"
+          ],
+          "acceptedTranslations": [
+            "plama",
+            "zaplamienie"
+          ]
+        },
+        {
+          "id": "cleaning-chores.laundry-detergent",
+          "term": "laundry detergent",
+          "ipa": "/ˈlɔːndri dɪˌtɜːrdʒənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "proszek do prania",
+          "definition": "Soap powder or liquid for washing clothes.",
+          "register": "neutralny",
+          "contextPl": "Środki do prania",
+          "natural": "detergent",
+          "forms": "",
+          "collocations": "a bottle of laundry detergent",
+          "synonyms": "detergent",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're out of laundry detergent again.",
+              "pl": "Znowu skończył nam się proszek do prania.",
+              "focusEn": "laundry detergent",
+              "focusPl": "proszek do prania"
+            },
+            {
+              "en": "Use less laundry detergent for a small load.",
+              "pl": "Przy małym praniu użyj mniej płynu do prania.",
+              "focusEn": "laundry detergent",
+              "focusPl": "płynu do prania"
+            }
+          ],
+          "acceptedAnswers": [
+            "laundry detergent",
+            "detergent"
+          ],
+          "acceptedTranslations": [
+            "proszek do prania",
+            "płyn do prania",
+            "detergent"
+          ]
+        },
+        {
+          "id": "cleaning-chores.wrinkled",
+          "term": "wrinkled",
+          "ipa": "/ˈrɪŋkəld/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pognieciony",
+          "definition": "Having lines and folds that are not wanted.",
+          "register": "neutralny",
+          "contextPl": "Ubrania do prasowania",
+          "natural": "",
+          "forms": "",
+          "collocations": "a wrinkled shirt",
+          "synonyms": "creased",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your shirt is wrinkled; let me iron it.",
+              "pl": "Twoja koszula jest pognieciona, wyprasuję ci ją.",
+              "focusEn": "wrinkled",
+              "focusPl": "pognieciona"
+            },
+            {
+              "en": "The clothes got wrinkled because I left them in the dryer.",
+              "pl": "Ubrania się pogniotły, bo zostawiłem je w suszarce.",
+              "focusEn": "got wrinkled",
+              "focusPl": "pogniotły"
+            }
+          ],
+          "acceptedAnswers": [
+            "wrinkled",
+            "creased"
+          ],
+          "acceptedTranslations": [
+            "pognieciony",
+            "wymięty"
+          ]
+        },
+        {
+          "id": "cleaning-chores.load",
+          "term": "load",
+          "ipa": "/loʊd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pranie",
+          "definition": "The amount of clothes washed in the machine at one time.",
+          "register": "neutralny",
+          "contextPl": "Liczenie prań",
+          "natural": "",
+          "forms": "loads",
+          "collocations": "a load of laundry; a full load",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I did three loads of laundry today.",
+              "pl": "Zrobiłem dziś trzy prania.",
+              "focusEn": "loads",
+              "focusPl": "prania"
+            },
+            {
+              "en": "This load is just towels and sheets.",
+              "pl": "W tym praniu są same ręczniki i pościel.",
+              "focusEn": "load",
+              "focusPl": "praniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "load"
+          ],
+          "acceptedTranslations": [
+            "pranie",
+            "wsad"
+          ]
+        },
+        {
+          "id": "cleaning-chores.shrink",
+          "term": "shrink",
+          "ipa": "/ʃrɪŋk/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "skurczyć się",
+          "definition": "To become smaller after washing.",
+          "register": "neutralny",
+          "contextPl": "Zniszczone pranie",
+          "natural": "",
+          "forms": "shrank – shrunk",
+          "collocations": "shrink in the dryer",
+          "synonyms": "",
+          "antonyms": "stretch",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My sweater shrank in the dryer.",
+              "pl": "Mój sweter skurczył się w suszarce.",
+              "focusEn": "shrank",
+              "focusPl": "skurczył się"
+            },
+            {
+              "en": "Wash wool in cold water so it doesn't shrink.",
+              "pl": "Pierz wełnę w zimnej wodzie, żeby się nie skurczyła.",
+              "focusEn": "shrink",
+              "focusPl": "skurczyła"
+            }
+          ],
+          "acceptedAnswers": [
+            "shrink"
+          ],
+          "acceptedTranslations": [
+            "skurczyć się",
+            "kurczyć się"
+          ]
+        },
+        {
+          "id": "cleaning-chores.separate",
+          "term": "separate",
+          "ipa": "/ˈsɛpəˌreɪt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oddzielić",
+          "definition": "To put things into different groups.",
+          "register": "neutralny",
+          "contextPl": "Sortowanie prania",
+          "natural": "sort",
+          "forms": "separated",
+          "collocations": "separate the whites",
+          "synonyms": "sort",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Separate the whites from the colors.",
+              "pl": "Oddziel białe od kolorowych.",
+              "focusEn": "Separate",
+              "focusPl": "Oddziel"
+            },
+            {
+              "en": "I forgot to separate the laundry, and now my socks are pink.",
+              "pl": "Zapomniałem posegregować pranie i teraz moje skarpetki są różowe.",
+              "focusEn": "separate",
+              "focusPl": "posegregować"
+            }
+          ],
+          "acceptedAnswers": [
+            "separate",
+            "sort"
+          ],
+          "acceptedTranslations": [
+            "oddzielić",
+            "posegregować",
+            "rozdzielić"
+          ]
+        },
+        {
+          "id": "cleaning-chores.bleach",
+          "term": "bleach",
+          "ipa": "/bliːtʃ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wybielacz",
+          "definition": "A strong chemical used to make clothes white and to kill germs.",
+          "register": "neutralny",
+          "contextPl": "Pranie białych rzeczy",
+          "natural": "",
+          "forms": "",
+          "collocations": "a splash of bleach",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Use bleach only on white towels.",
+              "pl": "Używaj wybielacza tylko do białych ręczników.",
+              "focusEn": "bleach",
+              "focusPl": "wybielacza"
+            },
+            {
+              "en": "I spilled bleach and ruined my jeans.",
+              "pl": "Rozlałem wybielacz i zniszczyłem dżinsy.",
+              "focusEn": "bleach",
+              "focusPl": "wybielacz"
+            }
+          ],
+          "acceptedAnswers": [
+            "bleach"
+          ],
+          "acceptedTranslations": [
+            "wybielacz",
+            "chlor"
+          ]
+        },
+        {
+          "id": "cleaning-chores.hamper",
+          "term": "hamper",
+          "ipa": "/ˈhæmpər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "kosz na pranie",
+          "definition": "A basket for dirty clothes.",
+          "register": "neutralny",
+          "contextPl": "Zbieranie brudnych ubrań",
+          "natural": "laundry basket",
+          "forms": "hampers",
+          "collocations": "",
+          "synonyms": "laundry basket",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The hamper is overflowing with dirty clothes.",
+              "pl": "Kosz na pranie jest przepełniony brudnymi ubraniami.",
+              "focusEn": "hamper",
+              "focusPl": "Kosz na pranie"
+            },
+            {
+              "en": "Put your towels in the hamper, not on the floor.",
+              "pl": "Wrzuć ręczniki do kosza na pranie, a nie na podłogę.",
+              "focusEn": "hamper",
+              "focusPl": "kosza na pranie"
+            }
+          ],
+          "acceptedAnswers": [
+            "hamper",
+            "laundry basket"
+          ],
+          "acceptedTranslations": [
+            "kosz na pranie",
+            "kosz na brudną bieliznę"
+          ]
+        },
+        {
+          "id": "cleaning-chores.fabric-softener",
+          "term": "fabric softener",
+          "ipa": "/ˈfæbrɪk ˌsɔːfənər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "płyn do płukania",
+          "definition": "A liquid that makes washed clothes soft.",
+          "register": "neutralny",
+          "contextPl": "Środki do prania",
+          "natural": "",
+          "forms": "",
+          "collocations": "add fabric softener",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The towels are so soft with fabric softener.",
+              "pl": "Ręczniki są takie miękkie z płynem do płukania.",
+              "focusEn": "fabric softener",
+              "focusPl": "płynem do płukania"
+            },
+            {
+              "en": "Add the fabric softener to the little drawer.",
+              "pl": "Wlej płyn do płukania do małej szufladki.",
+              "focusEn": "fabric softener",
+              "focusPl": "płyn do płukania"
+            }
+          ],
+          "acceptedAnswers": [
+            "fabric softener"
+          ],
+          "acceptedTranslations": [
+            "płyn do płukania",
+            "płyn zmiękczający"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleaning-chores.supplies",
+      "namePl": "Środki i sprzęt do sprzątania",
+      "scenePl": "Przeglądanie schowka na środki czystości i robienie listy zakupów",
+      "entries": [
+        {
+          "id": "cleaning-chores.vacuum-2",
+          "term": "vacuum",
+          "ipa": "/ˈvækjuːm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odkurzacz",
+          "definition": "A machine that sucks up dirt from floors.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt do sprzątania",
+          "natural": "vacuum cleaner",
+          "forms": "vacuums",
+          "collocations": "",
+          "synonyms": "vacuum cleaner",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The vacuum is in the hall closet.",
+              "pl": "Odkurzacz jest w schowku w przedpokoju.",
+              "focusEn": "vacuum",
+              "focusPl": "Odkurzacz"
+            },
+            {
+              "en": "Our old vacuum doesn't pick up dog hair anymore.",
+              "pl": "Nasz stary odkurzacz już nie zbiera sierści psa.",
+              "focusEn": "vacuum",
+              "focusPl": "odkurzacz"
+            }
+          ],
+          "acceptedAnswers": [
+            "vacuum",
+            "vacuum cleaner"
+          ],
+          "acceptedTranslations": [
+            "odkurzacz"
+          ]
+        },
+        {
+          "id": "cleaning-chores.trash-bag",
+          "term": "trash bag",
+          "ipa": "/ˈtræʃ ˌbæɡ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "worek na śmieci",
+          "definition": "A plastic bag for garbage.",
+          "register": "neutralny",
+          "contextPl": "Zakupy do domu",
+          "natural": "garbage bag",
+          "forms": "trash bags",
+          "collocations": "",
+          "synonyms": "garbage bag",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii „bin bag”.",
+          "examples": [
+            {
+              "en": "We need more trash bags; this is the last one.",
+              "pl": "Potrzebujemy więcej worków na śmieci, to ostatni.",
+              "focusEn": "trash bags",
+              "focusPl": "worków na śmieci"
+            },
+            {
+              "en": "Get the big trash bags for the yard.",
+              "pl": "Kup duże worki na śmieci do ogrodu.",
+              "focusEn": "trash bags",
+              "focusPl": "worki na śmieci"
+            }
+          ],
+          "acceptedAnswers": [
+            "trash bag",
+            "garbage bag"
+          ],
+          "acceptedTranslations": [
+            "worek na śmieci"
+          ]
+        },
+        {
+          "id": "cleaning-chores.paper-towel",
+          "term": "paper towel",
+          "ipa": "/ˈpeɪpər ˌtaʊəl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ręcznik papierowy",
+          "definition": "Thick paper on a roll, used for cleaning and drying.",
+          "register": "neutralny",
+          "contextPl": "Zakupy do domu",
+          "natural": "",
+          "forms": "paper towels",
+          "collocations": "a roll of paper towels",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii „kitchen roll”.",
+          "examples": [
+            {
+              "en": "Paper towels are on the list too.",
+              "pl": "Ręczniki papierowe też są na liście.",
+              "focusEn": "Paper towels",
+              "focusPl": "Ręczniki papierowe"
+            },
+            {
+              "en": "We go through a roll of paper towels every week.",
+              "pl": "Zużywamy rolkę ręczników papierowych co tydzień.",
+              "focusEn": "paper towels",
+              "focusPl": "ręczników papierowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "paper towel",
+            "paper towels"
+          ],
+          "acceptedTranslations": [
+            "ręcznik papierowy",
+            "ręczniki papierowe"
+          ]
+        },
+        {
+          "id": "cleaning-chores.bucket",
+          "term": "bucket",
+          "ipa": "/ˈbʌkɪt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wiadro",
+          "definition": "An open container with a handle for carrying water.",
+          "register": "neutralny",
+          "contextPl": "Mycie podłóg",
+          "natural": "",
+          "forms": "buckets",
+          "collocations": "a bucket of water",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Fill the bucket with warm water and soap.",
+              "pl": "Napełnij wiadro ciepłą wodą z mydłem.",
+              "focusEn": "bucket",
+              "focusPl": "wiadro"
+            },
+            {
+              "en": "The bucket has a crack, so it leaks.",
+              "pl": "Wiadro ma pęknięcie, więc przecieka.",
+              "focusEn": "bucket",
+              "focusPl": "Wiadro"
+            }
+          ],
+          "acceptedAnswers": [
+            "bucket"
+          ],
+          "acceptedTranslations": [
+            "wiadro"
+          ]
+        },
+        {
+          "id": "cleaning-chores.broom",
+          "term": "broom",
+          "ipa": "/bruːm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "miotła",
+          "definition": "A brush with a long handle for sweeping floors.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt do zamiatania",
+          "natural": "",
+          "forms": "brooms",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The broom is behind the door with the mop.",
+              "pl": "Miotła stoi za drzwiami razem z mopem.",
+              "focusEn": "broom",
+              "focusPl": "Miotła"
+            },
+            {
+              "en": "This broom is losing its bristles.",
+              "pl": "Ta miotła gubi włosie.",
+              "focusEn": "broom",
+              "focusPl": "miotła"
+            }
+          ],
+          "acceptedAnswers": [
+            "broom"
+          ],
+          "acceptedTranslations": [
+            "miotła"
+          ]
+        },
+        {
+          "id": "cleaning-chores.mop-2",
+          "term": "mop",
+          "ipa": "/mɑːp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mop",
+          "definition": "A tool with a long handle and soft head for washing floors.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt do mycia podłóg",
+          "natural": "",
+          "forms": "mops",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The mop head needs to be replaced.",
+              "pl": "Trzeba wymienić końcówkę mopa.",
+              "focusEn": "mop",
+              "focusPl": "mopa"
+            },
+            {
+              "en": "Let's buy a mop with a spray bottle built in.",
+              "pl": "Kupmy mop z wbudowanym spryskiwaczem.",
+              "focusEn": "mop",
+              "focusPl": "mop"
+            }
+          ],
+          "acceptedAnswers": [
+            "mop"
+          ],
+          "acceptedTranslations": [
+            "mop"
+          ]
+        },
+        {
+          "id": "cleaning-chores.rubber-gloves",
+          "term": "rubber gloves",
+          "ipa": "/ˌrʌbər ˈɡlʌvz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gumowe rękawiczki",
+          "definition": "Waterproof gloves worn for cleaning.",
+          "register": "neutralny",
+          "contextPl": "Ochrona rąk przy sprzątaniu",
+          "natural": "",
+          "forms": "",
+          "collocations": "a pair of rubber gloves",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Wear rubber gloves when you clean the toilet.",
+              "pl": "Zakładaj gumowe rękawiczki, kiedy myjesz toaletę.",
+              "focusEn": "rubber gloves",
+              "focusPl": "gumowe rękawiczki"
+            },
+            {
+              "en": "These rubber gloves have a hole in one finger.",
+              "pl": "Te gumowe rękawiczki mają dziurę w jednym palcu.",
+              "focusEn": "rubber gloves",
+              "focusPl": "gumowe rękawiczki"
+            }
+          ],
+          "acceptedAnswers": [
+            "rubber gloves",
+            "rubber glove"
+          ],
+          "acceptedTranslations": [
+            "gumowe rękawiczki",
+            "rękawice gumowe"
+          ]
+        },
+        {
+          "id": "cleaning-chores.cleaning-products",
+          "term": "cleaning products",
+          "ipa": "/ˈkliːnɪŋ ˌprɑːdʌkts/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "środki czystości",
+          "definition": "Liquids and sprays used for cleaning.",
+          "register": "neutralny",
+          "contextPl": "Chemia domowa",
+          "natural": "cleaning supplies",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "cleaning supplies",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Keep cleaning products where the kids can't reach them.",
+              "pl": "Trzymaj środki czystości tam, gdzie dzieci nie sięgną.",
+              "focusEn": "cleaning products",
+              "focusPl": "środki czystości"
+            },
+            {
+              "en": "We have way too many cleaning products under the sink.",
+              "pl": "Pod zlewem mamy zdecydowanie za dużo środków czystości.",
+              "focusEn": "cleaning products",
+              "focusPl": "środków czystości"
+            }
+          ],
+          "acceptedAnswers": [
+            "cleaning products",
+            "cleaning supplies"
+          ],
+          "acceptedTranslations": [
+            "środki czystości",
+            "chemia gospodarcza"
+          ]
+        },
+        {
+          "id": "cleaning-chores.rag",
+          "term": "rag",
+          "ipa": "/ræɡ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "szmata",
+          "definition": "An old piece of cloth used for cleaning.",
+          "register": "neutralny",
+          "contextPl": "Ścieranie i wycieranie",
+          "natural": "",
+          "forms": "rags",
+          "collocations": "an old rag; a cleaning rag",
+          "synonyms": "cloth",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Use an old T-shirt as a rag for dusting.",
+              "pl": "Użyj starej koszulki jako szmatki do kurzu.",
+              "focusEn": "rag",
+              "focusPl": "szmatki"
+            },
+            {
+              "en": "This rag is too dirty; grab a clean one.",
+              "pl": "Ta szmata jest za brudna, weź czystą.",
+              "focusEn": "rag",
+              "focusPl": "szmata"
+            }
+          ],
+          "acceptedAnswers": [
+            "rag",
+            "cloth"
+          ],
+          "acceptedTranslations": [
+            "szmata",
+            "szmatka",
+            "ścierka"
+          ]
+        },
+        {
+          "id": "cleaning-chores.all-purpose-cleaner",
+          "term": "all-purpose cleaner",
+          "ipa": "/ˌɔːl ˌpɜːrpəs ˈkliːnər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "uniwersalny środek czyszczący",
+          "definition": "A cleaning spray that works on many surfaces.",
+          "register": "neutralny",
+          "contextPl": "Chemia domowa",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "multi-surface cleaner",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "An all-purpose cleaner works on most surfaces.",
+              "pl": "Uniwersalny środek czyszczący działa na większość powierzchni.",
+              "focusEn": "all-purpose cleaner",
+              "focusPl": "Uniwersalny środek czyszczący"
+            },
+            {
+              "en": "Spray some all-purpose cleaner on the counter.",
+              "pl": "Spryskaj blat uniwersalnym środkiem czyszczącym.",
+              "focusEn": "all-purpose cleaner",
+              "focusPl": "uniwersalnym środkiem czyszczącym"
+            }
+          ],
+          "acceptedAnswers": [
+            "all-purpose cleaner",
+            "multi-surface cleaner"
+          ],
+          "acceptedTranslations": [
+            "uniwersalny środek czyszczący",
+            "płyn uniwersalny"
+          ]
+        },
+        {
+          "id": "cleaning-chores.dustpan",
+          "term": "dustpan",
+          "ipa": "/ˈdʌstˌpæn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "szufelka",
+          "definition": "A flat container you sweep dirt into.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt do zamiatania",
+          "natural": "",
+          "forms": "dustpans",
+          "collocations": "broom and dustpan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Where's the dustpan? I need to pick this up.",
+              "pl": "Gdzie jest szufelka? Muszę to zebrać.",
+              "focusEn": "dustpan",
+              "focusPl": "szufelka"
+            },
+            {
+              "en": "The broom and dustpan hang on the same hook.",
+              "pl": "Miotła i szufelka wiszą na tym samym haczyku.",
+              "focusEn": "dustpan",
+              "focusPl": "szufelka"
+            }
+          ],
+          "acceptedAnswers": [
+            "dustpan"
+          ],
+          "acceptedTranslations": [
+            "szufelka"
+          ]
+        },
+        {
+          "id": "cleaning-chores.spray-bottle",
+          "term": "spray bottle",
+          "ipa": "/ˈspreɪ ˌbɑːtəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "spryskiwacz",
+          "definition": "A bottle that sprays liquid when you press the top.",
+          "register": "neutralny",
+          "contextPl": "Domowe środki czyszczące",
+          "natural": "",
+          "forms": "spray bottles",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I mix vinegar and water in a spray bottle.",
+              "pl": "Mieszam ocet z wodą w spryskiwaczu.",
+              "focusEn": "spray bottle",
+              "focusPl": "spryskiwaczu"
+            },
+            {
+              "en": "The spray bottle stopped working, so I need a new one.",
+              "pl": "Spryskiwacz przestał działać, więc potrzebuję nowego.",
+              "focusEn": "spray bottle",
+              "focusPl": "Spryskiwacz"
+            }
+          ],
+          "acceptedAnswers": [
+            "spray bottle"
+          ],
+          "acceptedTranslations": [
+            "spryskiwacz",
+            "butelka z atomizerem"
+          ]
+        },
+        {
+          "id": "cleaning-chores.scrub-brush",
+          "term": "scrub brush",
+          "ipa": "/ˈskrʌb ˌbrʌʃ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "szczotka do szorowania",
+          "definition": "A brush with stiff bristles for cleaning hard surfaces.",
+          "register": "neutralny",
+          "contextPl": "Czyszczenie fug i płytek",
+          "natural": "",
+          "forms": "scrub brushes",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A scrub brush is better for the grout between tiles.",
+              "pl": "Szczotka do szorowania lepiej sprawdza się przy fugach między płytkami.",
+              "focusEn": "scrub brush",
+              "focusPl": "Szczotka do szorowania"
+            },
+            {
+              "en": "Put the scrub brush back under the sink when you're done.",
+              "pl": "Odłóż szczotkę do szorowania pod zlew, kiedy skończysz.",
+              "focusEn": "scrub brush",
+              "focusPl": "szczotkę do szorowania"
+            }
+          ],
+          "acceptedAnswers": [
+            "scrub brush"
+          ],
+          "acceptedTranslations": [
+            "szczotka do szorowania",
+            "szczotka"
+          ]
+        },
+        {
+          "id": "cleaning-chores.duster",
+          "term": "duster",
+          "ipa": "/ˈdʌstər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "miotełka do kurzu",
+          "definition": "A tool with feathers or soft fibers for removing dust.",
+          "register": "neutralny",
+          "contextPl": "Ścieranie kurzu w trudnych miejscach",
+          "natural": "",
+          "forms": "dusters",
+          "collocations": "a feather duster",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This feather duster just moves the dust around.",
+              "pl": "Ta miotełka z piór tylko przenosi kurz z miejsca na miejsce.",
+              "focusEn": "duster",
+              "focusPl": "miotełka"
+            },
+            {
+              "en": "Use the long duster for the ceiling fan.",
+              "pl": "Do wentylatora sufitowego użyj długiej miotełki do kurzu.",
+              "focusEn": "duster",
+              "focusPl": "miotełki do kurzu"
+            }
+          ],
+          "acceptedAnswers": [
+            "duster"
+          ],
+          "acceptedTranslations": [
+            "miotełka do kurzu",
+            "miotełka"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleaning-chores.chores",
+      "namePl": "Podział obowiązków",
+      "scenePl": "Rodzinne zebranie przy stole o podziale obowiązków domowych",
+      "entries": [
+        {
+          "id": "cleaning-chores.chore",
+          "term": "chore",
+          "ipa": "/tʃɔːr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "obowiązek domowy",
+          "definition": "A regular job you do at home, like cleaning.",
+          "register": "neutralny",
+          "contextPl": "Rozdzielanie zadań w rodzinie",
+          "natural": "",
+          "forms": "chores",
+          "collocations": "do your chores; household chores",
+          "synonyms": "task",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Everyone in this family has a few chores.",
+              "pl": "Każdy w tej rodzinie ma kilka obowiązków domowych.",
+              "focusEn": "chores",
+              "focusPl": "obowiązków domowych"
+            },
+            {
+              "en": "Taking out the trash is my least favorite chore.",
+              "pl": "Wynoszenie śmieci to mój najmniej lubiany obowiązek.",
+              "focusEn": "chore",
+              "focusPl": "obowiązek"
+            }
+          ],
+          "acceptedAnswers": [
+            "chore"
+          ],
+          "acceptedTranslations": [
+            "obowiązek domowy",
+            "obowiązek"
+          ]
+        },
+        {
+          "id": "cleaning-chores.help-out",
+          "term": "help out",
+          "ipa": "/ˌhɛlp ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "pomagać",
+          "definition": "To do some of the work to help someone.",
+          "register": "neutralny",
+          "contextPl": "Wspólne prace domowe",
+          "natural": "",
+          "forms": "helped out",
+          "collocations": "help out around the house",
+          "synonyms": "pitch in",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Everyone has to help out around the house.",
+              "pl": "Każdy musi pomagać w domu.",
+              "focusEn": "help out",
+              "focusPl": "pomagać"
+            },
+            {
+              "en": "Your brother helped out a lot last week.",
+              "pl": "Twój brat bardzo dużo pomagał w zeszłym tygodniu.",
+              "focusEn": "helped out",
+              "focusPl": "pomagał"
+            }
+          ],
+          "acceptedAnswers": [
+            "help out",
+            "pitch in"
+          ],
+          "acceptedTranslations": [
+            "pomagać",
+            "pomóc"
+          ]
+        },
+        {
+          "id": "cleaning-chores.make-the-bed",
+          "term": "make the bed",
+          "ipa": "/ˌmeɪk ðə ˈbɛd/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pościelić łóżko",
+          "definition": "To arrange the sheets and covers neatly after sleeping.",
+          "register": "neutralny",
+          "contextPl": "Poranny obowiązek",
+          "natural": "",
+          "forms": "made – made",
+          "collocations": "make your bed every morning",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You need to make your bed every morning.",
+              "pl": "Musisz codziennie rano ścielić łóżko.",
+              "focusEn": "make your bed",
+              "focusPl": "ścielić łóżko"
+            },
+            {
+              "en": "If you make the bed, the room looks cleaner.",
+              "pl": "Jeśli pościelisz łóżko, pokój wygląda na czystszy.",
+              "focusEn": "make the bed",
+              "focusPl": "pościelisz łóżko"
+            }
+          ],
+          "acceptedAnswers": [
+            "make the bed",
+            "make your bed"
+          ],
+          "acceptedTranslations": [
+            "pościelić łóżko",
+            "ścielić łóżko",
+            "zaścielić łóżko"
+          ]
+        },
+        {
+          "id": "cleaning-chores.water-the-plants",
+          "term": "water the plants",
+          "ipa": "/ˌwɔːtər ðə ˈplænts/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "podlewać kwiaty",
+          "definition": "To give water to plants.",
+          "register": "neutralny",
+          "contextPl": "Drobny obowiązek domowy",
+          "natural": "",
+          "forms": "watered",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you water the plants on Mondays?",
+              "pl": "Możesz podlewać kwiaty w poniedziałki?",
+              "focusEn": "water the plants",
+              "focusPl": "podlewać kwiaty"
+            },
+            {
+              "en": "Nobody watered the plants while we were away.",
+              "pl": "Nikt nie podlewał kwiatów, kiedy nas nie było.",
+              "focusEn": "watered the plants",
+              "focusPl": "podlewał kwiatów"
+            }
+          ],
+          "acceptedAnswers": [
+            "water the plants"
+          ],
+          "acceptedTranslations": [
+            "podlewać kwiaty",
+            "podlać kwiaty",
+            "podlewać rośliny"
+          ]
+        },
+        {
+          "id": "cleaning-chores.housework",
+          "term": "housework",
+          "ipa": "/ˈhaʊsˌwɜːrk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "prace domowe",
+          "definition": "Work you do to keep a house clean and neat.",
+          "register": "neutralny",
+          "contextPl": "Ogólnie o obowiązkach w domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "do housework; share the housework",
+          "synonyms": "chores",
+          "antonyms": "",
+          "notePl": "Nie myl z „homework” (praca domowa w szkole).",
+          "examples": [
+            {
+              "en": "We should split the housework more fairly.",
+              "pl": "Powinniśmy sprawiedliwiej dzielić się pracami domowymi.",
+              "focusEn": "housework",
+              "focusPl": "pracami domowymi"
+            },
+            {
+              "en": "I hate doing housework on weekends.",
+              "pl": "Nie znoszę robić prac domowych w weekendy.",
+              "focusEn": "housework",
+              "focusPl": "prac domowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "housework"
+          ],
+          "acceptedTranslations": [
+            "prace domowe",
+            "obowiązki domowe"
+          ]
+        },
+        {
+          "id": "cleaning-chores.take-turns",
+          "term": "take turns",
+          "ipa": "/ˌteɪk ˈtɜːrnz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "robić coś na zmianę",
+          "definition": "To do something one after another.",
+          "register": "neutralny",
+          "contextPl": "Sprawiedliwy podział zadań",
+          "natural": "",
+          "forms": "took – taken",
+          "collocations": "take turns doing the dishes",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's take turns doing the dishes.",
+              "pl": "Zmywajmy na zmianę.",
+              "focusEn": "take turns",
+              "focusPl": "na zmianę"
+            },
+            {
+              "en": "The kids take turns feeding the dog.",
+              "pl": "Dzieci na zmianę karmią psa.",
+              "focusEn": "take turns",
+              "focusPl": "na zmianę"
+            }
+          ],
+          "acceptedAnswers": [
+            "take turns"
+          ],
+          "acceptedTranslations": [
+            "robić coś na zmianę",
+            "na zmianę",
+            "zmieniać się"
+          ]
+        },
+        {
+          "id": "cleaning-chores.allowance",
+          "term": "allowance",
+          "ipa": "/əˈlaʊəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kieszonkowe",
+          "definition": "Money parents give children regularly.",
+          "register": "neutralny",
+          "contextPl": "Nagroda za obowiązki",
+          "natural": "",
+          "forms": "allowances",
+          "collocations": "weekly allowance; earn your allowance",
+          "synonyms": "pocket money",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii „pocket money”.",
+          "examples": [
+            {
+              "en": "You get your allowance when your chores are done.",
+              "pl": "Dostaniesz kieszonkowe, kiedy skończysz obowiązki.",
+              "focusEn": "allowance",
+              "focusPl": "kieszonkowe"
+            },
+            {
+              "en": "My son earns five dollars of allowance a week.",
+              "pl": "Syn dostaje pięć dolarów kieszonkowego tygodniowo.",
+              "focusEn": "allowance",
+              "focusPl": "kieszonkowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "allowance",
+            "pocket money"
+          ],
+          "acceptedTranslations": [
+            "kieszonkowe"
+          ]
+        },
+        {
+          "id": "cleaning-chores.do-your-share",
+          "term": "do your share",
+          "ipa": "/ˌduː jʊr ˈʃɛr/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "robić swoją część",
+          "definition": "To do the part of the work that you should do.",
+          "register": "neutralny",
+          "contextPl": "Uczciwy podział pracy",
+          "natural": "pull your weight",
+          "forms": "did – done",
+          "collocations": "",
+          "synonyms": "pull your weight",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If everyone does their share, it only takes an hour.",
+              "pl": "Jeśli każdy zrobi swoją część, zajmie to tylko godzinę.",
+              "focusEn": "does their share",
+              "focusPl": "zrobi swoją część"
+            },
+            {
+              "en": "I feel like I'm the only one who does my share.",
+              "pl": "Mam wrażenie, że tylko ja robię swoją część.",
+              "focusEn": "does my share",
+              "focusPl": "robię swoją część"
+            }
+          ],
+          "acceptedAnswers": [
+            "do your share",
+            "do my share",
+            "pull your weight"
+          ],
+          "acceptedTranslations": [
+            "robić swoją część",
+            "wykonywać swoją część"
+          ]
+        },
+        {
+          "id": "cleaning-chores.pitch-in",
+          "term": "pitch in",
+          "ipa": "/ˌpɪtʃ ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "włączyć się",
+          "definition": "To join in and help with a job.",
+          "register": "potoczny",
+          "contextPl": "Wspólna praca całej rodziny",
+          "natural": "",
+          "forms": "pitched in",
+          "collocations": "everyone pitches in",
+          "synonyms": "help out",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If we all pitch in, we'll finish before lunch.",
+              "pl": "Jeśli wszyscy się włączymy, skończymy przed obiadem.",
+              "focusEn": "pitch in",
+              "focusPl": "się włączymy"
+            },
+            {
+              "en": "Even the youngest kids pitched in and folded towels.",
+              "pl": "Nawet najmłodsze dzieci pomogły i składały ręczniki.",
+              "focusEn": "pitched in",
+              "focusPl": "pomogły"
+            }
+          ],
+          "acceptedAnswers": [
+            "pitch in",
+            "help out"
+          ],
+          "acceptedTranslations": [
+            "włączyć się",
+            "pomóc",
+            "dołożyć się"
+          ]
+        },
+        {
+          "id": "cleaning-chores.chore-chart",
+          "term": "chore chart",
+          "ipa": "/ˈtʃɔːr ˌtʃɑːrt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "grafik obowiązków",
+          "definition": "A chart that shows who does which chores.",
+          "register": "neutralny",
+          "contextPl": "Organizacja obowiązków w rodzinie",
+          "natural": "",
+          "forms": "chore charts",
+          "collocations": "",
+          "synonyms": "chore list",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's make a chore chart and put it on the fridge.",
+              "pl": "Zróbmy grafik obowiązków i przyczepmy go do lodówki.",
+              "focusEn": "chore chart",
+              "focusPl": "grafik obowiązków"
+            },
+            {
+              "en": "According to the chore chart, it's your turn to vacuum.",
+              "pl": "Według grafiku obowiązków twoja kolej na odkurzanie.",
+              "focusEn": "chore chart",
+              "focusPl": "grafiku obowiązków"
+            }
+          ],
+          "acceptedAnswers": [
+            "chore chart",
+            "chore list"
+          ],
+          "acceptedTranslations": [
+            "grafik obowiązków",
+            "lista obowiązków"
+          ]
+        },
+        {
+          "id": "cleaning-chores.neat-freak",
+          "term": "neat freak",
+          "ipa": "/ˈniːt ˌfriːk/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "pedant",
+          "definition": "A person who wants everything to be very clean and neat.",
+          "register": "potoczny",
+          "contextPl": "Żartobliwie o osobach lubiących porządek",
+          "natural": "",
+          "forms": "neat freaks",
+          "collocations": "",
+          "synonyms": "clean freak",
+          "antonyms": "slob",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Mom is a neat freak, so the kitchen must be perfect.",
+              "pl": "Mama jest pedantką, więc kuchnia musi być idealna.",
+              "focusEn": "neat freak",
+              "focusPl": "pedantką"
+            },
+            {
+              "en": "You don't have to be a neat freak; just pick up your stuff.",
+              "pl": "Nie musisz być pedantem, po prostu zbieraj swoje rzeczy.",
+              "focusEn": "neat freak",
+              "focusPl": "pedantem"
+            }
+          ],
+          "acceptedAnswers": [
+            "neat freak",
+            "clean freak"
+          ],
+          "acceptedTranslations": [
+            "pedant",
+            "pedantka"
+          ]
+        },
+        {
+          "id": "cleaning-chores.slob",
+          "term": "slob",
+          "ipa": "/slɑːb/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "bałaganiarz",
+          "definition": "A person who is very messy and lazy.",
+          "register": "potoczny",
+          "contextPl": "Żartobliwe lub krytyczne określenie",
+          "natural": "",
+          "forms": "slobs",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "neat freak",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't be a slob; put your plate in the sink.",
+              "pl": "Nie bądź bałaganiarzem, odnieś talerz do zlewu.",
+              "focusEn": "slob",
+              "focusPl": "bałaganiarzem"
+            },
+            {
+              "en": "Your uncle was a total slob when he was your age.",
+              "pl": "Wujek w twoim wieku był strasznym flejtuchem.",
+              "focusEn": "slob",
+              "focusPl": "flejtuchem"
+            }
+          ],
+          "acceptedAnswers": [
+            "slob"
+          ],
+          "acceptedTranslations": [
+            "bałaganiarz",
+            "flejtuch",
+            "brudas"
+          ]
+        },
+        {
+          "id": "cleaning-chores.nag",
+          "term": "nag",
+          "ipa": "/næɡ/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "marudzić",
+          "definition": "To keep telling someone to do something in an annoying way.",
+          "register": "potoczny",
+          "contextPl": "Przypominanie o obowiązkach",
+          "natural": "",
+          "forms": "nagged",
+          "collocations": "nag someone about something",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I don't want to nag you about your room every day.",
+              "pl": "Nie chcę ci codziennie truć o pokój.",
+              "focusEn": "nag",
+              "focusPl": "truć"
+            },
+            {
+              "en": "Stop nagging; I'll take out the trash in a minute!",
+              "pl": "Przestań marudzić, zaraz wyniosę śmieci!",
+              "focusEn": "nagging",
+              "focusPl": "marudzić"
+            }
+          ],
+          "acceptedAnswers": [
+            "nag"
+          ],
+          "acceptedTranslations": [
+            "marudzić",
+            "truć",
+            "zrzędzić",
+            "suszyć głowę"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleaning-chores.decluttering",
+      "namePl": "Porządki i organizacja",
+      "scenePl": "Wiosenne porządki w garażu i oddawanie niepotrzebnych rzeczy",
+      "entries": [
+        {
+          "id": "cleaning-chores.throw-away",
+          "term": "throw away",
+          "ipa": "/ˌθroʊ əˈweɪ/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wyrzucić",
+          "definition": "To put something in the trash.",
+          "register": "neutralny",
+          "contextPl": "Pozbywanie się niepotrzebnych rzeczy",
+          "natural": "throw out",
+          "forms": "threw – thrown",
+          "collocations": "throw away old stuff",
+          "synonyms": "throw out",
+          "antonyms": "keep",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Should we throw away these old magazines?",
+              "pl": "Wyrzucamy te stare czasopisma?",
+              "focusEn": "throw away",
+              "focusPl": "Wyrzucamy"
+            },
+            {
+              "en": "I threw away three bags of broken toys.",
+              "pl": "Wyrzuciłem trzy worki zepsutych zabawek.",
+              "focusEn": "threw away",
+              "focusPl": "Wyrzuciłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "throw away",
+            "throw out"
+          ],
+          "acceptedTranslations": [
+            "wyrzucić",
+            "wyrzucać"
+          ]
+        },
+        {
+          "id": "cleaning-chores.put-away",
+          "term": "put away",
+          "ipa": "/ˌpʊt əˈweɪ/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odłożyć na miejsce",
+          "definition": "To put something back where it belongs.",
+          "register": "neutralny",
+          "contextPl": "Utrzymywanie porządku",
+          "natural": "",
+          "forms": "put – put",
+          "collocations": "put your things away",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Put the tools away when you're done with them.",
+              "pl": "Odłóż narzędzia na miejsce, kiedy skończysz.",
+              "focusEn": "Put the tools away",
+              "focusPl": "Odłóż"
+            },
+            {
+              "en": "I put away all the winter coats in the attic.",
+              "pl": "Schowałem wszystkie zimowe płaszcze na strychu.",
+              "focusEn": "put away",
+              "focusPl": "Schowałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "put away"
+          ],
+          "acceptedTranslations": [
+            "odłożyć na miejsce",
+            "odkładać",
+            "schować"
+          ]
+        },
+        {
+          "id": "cleaning-chores.get-rid-of",
+          "term": "get rid of",
+          "ipa": "/ɡɛt ˈrɪd əv/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "pozbyć się",
+          "definition": "To throw away, sell or give away something you do not want.",
+          "register": "neutralny",
+          "contextPl": "Porządki w rzeczach",
+          "natural": "",
+          "forms": "got – gotten",
+          "collocations": "get rid of old furniture",
+          "synonyms": "",
+          "antonyms": "keep",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need to get rid of this old couch.",
+              "pl": "Musimy pozbyć się tej starej kanapy.",
+              "focusEn": "get rid of",
+              "focusPl": "pozbyć się"
+            },
+            {
+              "en": "I finally got rid of the bike I never ride.",
+              "pl": "W końcu pozbyłem się roweru, na którym nigdy nie jeżdżę.",
+              "focusEn": "got rid of",
+              "focusPl": "pozbyłem się"
+            }
+          ],
+          "acceptedAnswers": [
+            "get rid of"
+          ],
+          "acceptedTranslations": [
+            "pozbyć się",
+            "pozbywać się"
+          ]
+        },
+        {
+          "id": "cleaning-chores.organize",
+          "term": "organize",
+          "ipa": "/ˈɔːrɡəˌnaɪz/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "uporządkować",
+          "definition": "To put things in order.",
+          "register": "neutralny",
+          "contextPl": "Układanie rzeczy",
+          "natural": "",
+          "forms": "organized",
+          "collocations": "organize the garage; get organized",
+          "synonyms": "sort out",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska: „organize” (brytyjska także „organise”).",
+          "examples": [
+            {
+              "en": "Let's organize the garage this weekend.",
+              "pl": "Uporządkujmy garaż w ten weekend.",
+              "focusEn": "organize",
+              "focusPl": "Uporządkujmy"
+            },
+            {
+              "en": "I organized the shelves by size and color.",
+              "pl": "Uporządkowałem półki według wielkości i koloru.",
+              "focusEn": "organized",
+              "focusPl": "Uporządkowałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "organize",
+            "sort out"
+          ],
+          "acceptedTranslations": [
+            "uporządkować",
+            "porządkować",
+            "zorganizować"
+          ]
+        },
+        {
+          "id": "cleaning-chores.donate",
+          "term": "donate",
+          "ipa": "/ˈdoʊneɪt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oddać",
+          "definition": "To give things to a charity or people who need them.",
+          "register": "neutralny",
+          "contextPl": "Oddawanie niepotrzebnych rzeczy",
+          "natural": "",
+          "forms": "donated",
+          "collocations": "donate clothes; donate to charity",
+          "synonyms": "give away",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We can donate the kids' old clothes.",
+              "pl": "Możemy oddać stare ubrania dzieci.",
+              "focusEn": "donate",
+              "focusPl": "oddać"
+            },
+            {
+              "en": "I donated two boxes of books to the library.",
+              "pl": "Oddałem dwa pudła książek do biblioteki.",
+              "focusEn": "donated",
+              "focusPl": "Oddałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "donate",
+            "give away"
+          ],
+          "acceptedTranslations": [
+            "oddać",
+            "przekazać",
+            "podarować"
+          ]
+        },
+        {
+          "id": "cleaning-chores.junk",
+          "term": "junk",
+          "ipa": "/dʒʌŋk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "graty",
+          "definition": "Old things that are not useful or valuable.",
+          "register": "potoczny",
+          "contextPl": "Niepotrzebne rzeczy w domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "a lot of junk; junk drawer",
+          "synonyms": "stuff",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The garage is full of junk we never use.",
+              "pl": "Garaż jest pełen gratów, których nigdy nie używamy.",
+              "focusEn": "junk",
+              "focusPl": "gratów"
+            },
+            {
+              "en": "Is this box junk, or do you want to keep it?",
+              "pl": "To pudło to rupiecie, czy chcesz je zachować?",
+              "focusEn": "junk",
+              "focusPl": "rupiecie"
+            }
+          ],
+          "acceptedAnswers": [
+            "junk"
+          ],
+          "acceptedTranslations": [
+            "graty",
+            "rupiecie",
+            "złom"
+          ]
+        },
+        {
+          "id": "cleaning-chores.spring-cleaning",
+          "term": "spring cleaning",
+          "ipa": "/ˌsprɪŋ ˈkliːnɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wiosenne porządki",
+          "definition": "A big cleaning of the whole house, usually in spring.",
+          "register": "neutralny",
+          "contextPl": "Duże sprzątanie raz w roku",
+          "natural": "",
+          "forms": "",
+          "collocations": "do spring cleaning",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This Saturday is spring cleaning day for the whole family.",
+              "pl": "Ta sobota to dzień wiosennych porządków dla całej rodziny.",
+              "focusEn": "spring cleaning",
+              "focusPl": "wiosennych porządków"
+            },
+            {
+              "en": "Spring cleaning always starts with the garage.",
+              "pl": "Wiosenne porządki zawsze zaczynają się od garażu.",
+              "focusEn": "Spring cleaning",
+              "focusPl": "Wiosenne porządki"
+            }
+          ],
+          "acceptedAnswers": [
+            "spring cleaning"
+          ],
+          "acceptedTranslations": [
+            "wiosenne porządki"
+          ]
+        },
+        {
+          "id": "cleaning-chores.garage-sale",
+          "term": "garage sale",
+          "ipa": "/ɡəˈrɑːʒ ˌseɪl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wyprzedaż garażowa",
+          "definition": "A sale of used things from your home, held in your garage or yard.",
+          "register": "neutralny",
+          "contextPl": "Sprzedaż niepotrzebnych rzeczy",
+          "natural": "yard sale",
+          "forms": "garage sales",
+          "collocations": "have a garage sale",
+          "synonyms": "yard sale",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's sell this stuff at a garage sale.",
+              "pl": "Sprzedajmy te rzeczy na wyprzedaży garażowej.",
+              "focusEn": "garage sale",
+              "focusPl": "wyprzedaży garażowej"
+            },
+            {
+              "en": "We made eighty dollars at our garage sale.",
+              "pl": "Na naszej wyprzedaży garażowej zarobiliśmy osiemdziesiąt dolarów.",
+              "focusEn": "garage sale",
+              "focusPl": "wyprzedaży garażowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "garage sale",
+            "yard sale"
+          ],
+          "acceptedTranslations": [
+            "wyprzedaż garażowa"
+          ]
+        },
+        {
+          "id": "cleaning-chores.declutter",
+          "term": "declutter",
+          "ipa": "/ˌdiːˈklʌtər/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pozbyć się zbędnych rzeczy",
+          "definition": "To remove things you do not need from a place.",
+          "register": "neutralny",
+          "contextPl": "Robienie miejsca w domu",
+          "natural": "",
+          "forms": "decluttered",
+          "collocations": "declutter the garage; declutter your home",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need to declutter before we can park the car in here.",
+              "pl": "Musimy pozbyć się zbędnych rzeczy, zanim zaparkujemy tu samochód.",
+              "focusEn": "declutter",
+              "focusPl": "pozbyć się zbędnych rzeczy"
+            },
+            {
+              "en": "I decluttered the shelves and filled two donation boxes.",
+              "pl": "Odgraciłem półki i zapełniłem dwa pudła rzeczy do oddania.",
+              "focusEn": "decluttered",
+              "focusPl": "Odgraciłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "declutter"
+          ],
+          "acceptedTranslations": [
+            "pozbyć się zbędnych rzeczy",
+            "zrobić porządek",
+            "odgracić"
+          ]
+        },
+        {
+          "id": "cleaning-chores.storage-bin",
+          "term": "storage bin",
+          "ipa": "/ˈstɔːrɪdʒ ˌbɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pojemnik do przechowywania",
+          "definition": "A large plastic box with a lid for storing things.",
+          "register": "neutralny",
+          "contextPl": "Organizacja przestrzeni",
+          "natural": "",
+          "forms": "storage bins",
+          "collocations": "clear storage bins",
+          "synonyms": "storage box",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Put the holiday decorations in this storage bin.",
+              "pl": "Włóż ozdoby świąteczne do tego pojemnika do przechowywania.",
+              "focusEn": "storage bin",
+              "focusPl": "pojemnika do przechowywania"
+            },
+            {
+              "en": "Clear storage bins let you see what's inside.",
+              "pl": "Przezroczyste pojemniki do przechowywania pozwalają widzieć, co jest w środku.",
+              "focusEn": "storage bins",
+              "focusPl": "pojemniki do przechowywania"
+            }
+          ],
+          "acceptedAnswers": [
+            "storage bin",
+            "storage box",
+            "bin"
+          ],
+          "acceptedTranslations": [
+            "pojemnik do przechowywania",
+            "pudło do przechowywania"
+          ]
+        },
+        {
+          "id": "cleaning-chores.label",
+          "term": "label",
+          "ipa": "/ˈleɪbəl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "opisać",
+          "definition": "To write on a box what is inside it.",
+          "register": "neutralny",
+          "contextPl": "Oznaczanie pudeł",
+          "natural": "",
+          "forms": "labeled",
+          "collocations": "label the boxes",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska: „labeled” z jednym l.",
+          "examples": [
+            {
+              "en": "Label every box so we know what's inside.",
+              "pl": "Opisz każde pudło, żebyśmy wiedzieli, co jest w środku.",
+              "focusEn": "Label",
+              "focusPl": "Opisz"
+            },
+            {
+              "en": "I labeled the bins with tape and a marker.",
+              "pl": "Opisałem pojemniki taśmą i markerem.",
+              "focusEn": "labeled",
+              "focusPl": "Opisałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "label"
+          ],
+          "acceptedTranslations": [
+            "opisać",
+            "oznaczyć",
+            "podpisać"
+          ]
+        },
+        {
+          "id": "cleaning-chores.mold",
+          "term": "mold",
+          "ipa": "/moʊld/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pleśń",
+          "definition": "A green or black fungus that grows in wet places.",
+          "register": "neutralny",
+          "contextPl": "Wilgoć w zakamarkach",
+          "natural": "",
+          "forms": "",
+          "collocations": "black mold; get rid of mold",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska: „mold” (brytyjska: „mould”).",
+          "examples": [
+            {
+              "en": "There's mold on the wall behind these boxes.",
+              "pl": "Na ścianie za tymi pudłami jest pleśń.",
+              "focusEn": "mold",
+              "focusPl": "pleśń"
+            },
+            {
+              "en": "Clean the mold with bleach and open the window.",
+              "pl": "Usuń pleśń wybielaczem i otwórz okno.",
+              "focusEn": "mold",
+              "focusPl": "pleśń"
+            }
+          ],
+          "acceptedAnswers": [
+            "mold"
+          ],
+          "acceptedTranslations": [
+            "pleśń",
+            "grzyb"
+          ]
+        },
+        {
+          "id": "cleaning-chores.hoarder",
+          "term": "hoarder",
+          "ipa": "/ˈhɔːrdər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zbieracz",
+          "definition": "A person who keeps too many things and cannot throw them away.",
+          "register": "potoczny",
+          "contextPl": "Ktoś, kto niczego nie wyrzuca",
+          "natural": "",
+          "forms": "hoarders",
+          "collocations": "",
+          "synonyms": "pack rat",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Grandpa keeps everything; he's a bit of a hoarder.",
+              "pl": "Dziadek trzyma wszystko, jest trochę zbieraczem.",
+              "focusEn": "hoarder",
+              "focusPl": "zbieraczem"
+            },
+            {
+              "en": "Don't become a hoarder; if you don't use it, let it go.",
+              "pl": "Nie zostań zbieraczem, jeśli czegoś nie używasz, pozbądź się tego.",
+              "focusEn": "hoarder",
+              "focusPl": "zbieraczem"
+            }
+          ],
+          "acceptedAnswers": [
+            "hoarder",
+            "pack rat"
+          ],
+          "acceptedTranslations": [
+            "zbieracz",
+            "chomik"
+          ]
+        }
+      ]
+    }
+  ]
+}

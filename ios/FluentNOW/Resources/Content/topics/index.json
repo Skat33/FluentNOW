@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-11T17:53:41Z",
+  "generatedAt": "2026-10-12T14:22:06Z",
   "groups": [
     {
       "id": "basics",
@@ -922,13 +922,13 @@
         "rental car",
         "rent a car"
       ],
-      "entryCount": 25,
+      "entryCount": 66,
       "levels": {
         "A1": 1,
-        "A2": 7,
-        "B1": 5,
-        "B2": 12,
-        "C1": 0,
+        "A2": 9,
+        "B1": 17,
+        "B2": 32,
+        "C1": 7,
         "C2": 0
       },
       "categories": [
@@ -941,6 +941,26 @@
           "id": "car-rental.pick-up",
           "namePl": "Odbiór auta",
           "entryCount": 13
+        },
+        {
+          "id": "car-rental.insurance",
+          "namePl": "Ubezpieczenie",
+          "entryCount": 10
+        },
+        {
+          "id": "car-rental.car-features",
+          "namePl": "Samochód i wyposażenie",
+          "entryCount": 10
+        },
+        {
+          "id": "car-rental.return",
+          "namePl": "Zwrot auta i opłaty",
+          "entryCount": 11
+        },
+        {
+          "id": "car-rental.problems",
+          "namePl": "Problemy w trakcie wynajmu",
+          "entryCount": 10
         }
       ]
     },
@@ -1565,6 +1585,129 @@
         {
           "id": "furniture-household.decor",
           "namePl": "Wystrój wnętrz",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "cleaning-chores",
+      "namePl": "Sprzątanie i obowiązki domowe",
+      "nameEn": "Cleaning and Chores",
+      "group": "home",
+      "symbol": "sparkles",
+      "summaryPl": "Sprzątanie, zmywanie, pranie, środki czystości, podział obowiązków i wiosenne porządki.",
+      "aliases": [
+        "sprzątanie",
+        "porządki",
+        "obowiązki domowe",
+        "pranie",
+        "zmywanie",
+        "prace domowe",
+        "cleaning",
+        "chores",
+        "housework",
+        "laundry"
+      ],
+      "entryCount": 83,
+      "levels": {
+        "A1": 4,
+        "A2": 18,
+        "B1": 37,
+        "B2": 18,
+        "C1": 6,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "cleaning-chores.cleaning",
+          "namePl": "Sprzątanie mieszkania",
+          "entryCount": 15
+        },
+        {
+          "id": "cleaning-chores.dishes",
+          "namePl": "Zmywanie i kuchnia",
+          "entryCount": 13
+        },
+        {
+          "id": "cleaning-chores.laundry",
+          "namePl": "Pranie",
+          "entryCount": 15
+        },
+        {
+          "id": "cleaning-chores.supplies",
+          "namePl": "Środki i sprzęt do sprzątania",
+          "entryCount": 14
+        },
+        {
+          "id": "cleaning-chores.chores",
+          "namePl": "Podział obowiązków",
+          "entryCount": 13
+        },
+        {
+          "id": "cleaning-chores.decluttering",
+          "namePl": "Porządki i organizacja",
+          "entryCount": 13
+        }
+      ]
+    },
+    {
+      "id": "renting-apartment",
+      "namePl": "Wynajem mieszkania",
+      "nameEn": "Renting an Apartment",
+      "group": "home",
+      "symbol": "key",
+      "summaryPl": "Szukanie mieszkania na wynajem, właściciel i najemcy, umowa najmu, kaucja i opłaty, usterki oraz wyprowadzka.",
+      "aliases": [
+        "wynajem",
+        "najem",
+        "wynajem mieszkania",
+        "czynsz",
+        "kaucja",
+        "właściciel mieszkania",
+        "umowa najmu",
+        "renting",
+        "rent",
+        "lease",
+        "landlord"
+      ],
+      "entryCount": 68,
+      "levels": {
+        "A1": 0,
+        "A2": 12,
+        "B1": 11,
+        "B2": 28,
+        "C1": 17,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "renting-apartment.searching",
+          "namePl": "Szukanie mieszkania",
+          "entryCount": 13
+        },
+        {
+          "id": "renting-apartment.people",
+          "namePl": "Właściciel i najemcy",
+          "entryCount": 10
+        },
+        {
+          "id": "renting-apartment.lease",
+          "namePl": "Umowa najmu",
+          "entryCount": 11
+        },
+        {
+          "id": "renting-apartment.money",
+          "namePl": "Kaucja i opłaty",
+          "entryCount": 11
+        },
+        {
+          "id": "renting-apartment.repairs",
+          "namePl": "Usterki i problemy",
+          "entryCount": 12
+        },
+        {
+          "id": "renting-apartment.moving-out",
+          "namePl": "Wyprowadzka i rozliczenie",
           "entryCount": 11
         }
       ]
@@ -2572,6 +2715,118 @@
       ]
     },
     {
+      "id": "school",
+      "namePl": "Szkoła",
+      "nameEn": "School",
+      "group": "education",
+      "symbol": "backpack",
+      "summaryPl": "Budynek i ludzie w szkole, lekcje i przedmioty, prace domowe, oceny i wywiadówka oraz życie szkolne.",
+      "aliases": [
+        "szkoła",
+        "lekcje",
+        "klasa",
+        "nauczyciel",
+        "oceny",
+        "uczeń",
+        "zadanie domowe",
+        "school",
+        "classroom",
+        "teacher"
+      ],
+      "entryCount": 63,
+      "levels": {
+        "A1": 9,
+        "A2": 19,
+        "B1": 23,
+        "B2": 10,
+        "C1": 2,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "school.school-people-places",
+          "namePl": "Szkoła i ludzie",
+          "entryCount": 15
+        },
+        {
+          "id": "school.lessons",
+          "namePl": "Lekcje i przedmioty",
+          "entryCount": 12
+        },
+        {
+          "id": "school.homework-tests",
+          "namePl": "Prace domowe i sprawdziany",
+          "entryCount": 13
+        },
+        {
+          "id": "school.grades-progress",
+          "namePl": "Oceny i postępy",
+          "entryCount": 13
+        },
+        {
+          "id": "school.school-life",
+          "namePl": "Życie szkolne",
+          "entryCount": 10
+        }
+      ]
+    },
+    {
+      "id": "university",
+      "namePl": "Studia",
+      "nameEn": "University",
+      "group": "education",
+      "symbol": "graduationcap",
+      "summaryPl": "Rekrutacja i kierunki, wykłady i zajęcia, egzaminy i prace, życie na kampusie oraz dyplom.",
+      "aliases": [
+        "studia",
+        "uczelnia",
+        "uniwersytet",
+        "wykład",
+        "egzamin",
+        "kierunek",
+        "kampus",
+        "akademik",
+        "college",
+        "university"
+      ],
+      "entryCount": 62,
+      "levels": {
+        "A1": 1,
+        "A2": 5,
+        "B1": 19,
+        "B2": 27,
+        "C1": 9,
+        "C2": 1
+      },
+      "categories": [
+        {
+          "id": "university.admission-majors",
+          "namePl": "Rekrutacja i kierunki",
+          "entryCount": 15
+        },
+        {
+          "id": "university.classes-lectures",
+          "namePl": "Wykłady i zajęcia",
+          "entryCount": 14
+        },
+        {
+          "id": "university.exams-papers",
+          "namePl": "Egzaminy i prace",
+          "entryCount": 13
+        },
+        {
+          "id": "university.campus-life",
+          "namePl": "Życie na kampusie",
+          "entryCount": 11
+        },
+        {
+          "id": "university.graduation",
+          "namePl": "Dyplom i co dalej",
+          "entryCount": 9
+        }
+      ]
+    },
+    {
       "id": "smartphones-apps",
       "namePl": "Smartfon i aplikacje",
       "nameEn": "Smartphones and Apps",
@@ -3029,6 +3284,117 @@
       ]
     },
     {
+      "id": "post-office",
+      "namePl": "Poczta i przesyłki",
+      "nameEn": "Post Office and Mail",
+      "group": "services",
+      "symbol": "envelope",
+      "summaryPl": "Nadawanie listów i paczek, skrzynka pocztowa, opcje wysyłki, pakowanie oraz zaginione przesyłki.",
+      "aliases": [
+        "poczta",
+        "przesyłki",
+        "list",
+        "paczka",
+        "kurier",
+        "nadawanie",
+        "znaczek",
+        "post office",
+        "mail",
+        "package"
+      ],
+      "entryCount": 61,
+      "levels": {
+        "A1": 6,
+        "A2": 15,
+        "B1": 19,
+        "B2": 18,
+        "C1": 3,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "post-office.sending",
+          "namePl": "Nadawanie przesyłek",
+          "entryCount": 17
+        },
+        {
+          "id": "post-office.mail-letters",
+          "namePl": "Listy i skrzynka pocztowa",
+          "entryCount": 15
+        },
+        {
+          "id": "post-office.shipping-options",
+          "namePl": "Opcje i koszty wysyłki",
+          "entryCount": 10
+        },
+        {
+          "id": "post-office.packing",
+          "namePl": "Pakowanie paczki",
+          "entryCount": 9
+        },
+        {
+          "id": "post-office.lost-damaged",
+          "namePl": "Zaginione i uszkodzone przesyłki",
+          "entryCount": 10
+        }
+      ]
+    },
+    {
+      "id": "police-crime",
+      "namePl": "Policja i przestępstwa",
+      "nameEn": "Police and Crime",
+      "group": "services",
+      "symbol": "shield",
+      "summaryPl": "Zgłaszanie przestępstwa, kradzieże, świadek i opis sprawcy, działania policji oraz bezpieczeństwo w okolicy.",
+      "aliases": [
+        "policja",
+        "przestępstwo",
+        "kradzież",
+        "zgłoszenie",
+        "świadek",
+        "komisariat",
+        "włamanie",
+        "police",
+        "crime"
+      ],
+      "entryCount": 61,
+      "levels": {
+        "A1": 1,
+        "A2": 14,
+        "B1": 22,
+        "B2": 16,
+        "C1": 8,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "police-crime.reporting",
+          "namePl": "Zgłaszanie przestępstwa",
+          "entryCount": 14
+        },
+        {
+          "id": "police-crime.theft-crimes",
+          "namePl": "Kradzieże i przestępstwa",
+          "entryCount": 13
+        },
+        {
+          "id": "police-crime.witness",
+          "namePl": "Świadek i opis sprawcy",
+          "entryCount": 12
+        },
+        {
+          "id": "police-crime.arrest-justice",
+          "namePl": "Zatrzymanie i sąd",
+          "entryCount": 13
+        },
+        {
+          "id": "police-crime.prevention",
+          "namePl": "Bezpieczeństwo i zapobieganie",
+          "entryCount": 9
+        }
+      ]
+    },
+    {
       "id": "family",
       "namePl": "Rodzina",
       "nameEn": "Family",
@@ -3388,6 +3754,67 @@
       ]
     },
     {
+      "id": "clothes-fashion",
+      "namePl": "Ubrania i moda",
+      "nameEn": "Clothes and Fashion",
+      "group": "daily",
+      "symbol": "tshirt",
+      "summaryPl": "Części garderoby, buty i dodatki, ubieranie się, opis ubrań, tkaniny i pranie oraz moda i styl.",
+      "aliases": [
+        "ubrania",
+        "odzież",
+        "garderoba",
+        "moda",
+        "styl",
+        "buty",
+        "dodatki",
+        "clothes",
+        "fashion",
+        "outfit"
+      ],
+      "entryCount": 100,
+      "levels": {
+        "A1": 17,
+        "A2": 26,
+        "B1": 35,
+        "B2": 13,
+        "C1": 9,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "clothes-fashion.everyday-clothes",
+          "namePl": "Ubrania na co dzień",
+          "entryCount": 18
+        },
+        {
+          "id": "clothes-fashion.shoes-accessories",
+          "namePl": "Buty i dodatki",
+          "entryCount": 18
+        },
+        {
+          "id": "clothes-fashion.getting-dressed",
+          "namePl": "Ubieranie się",
+          "entryCount": 15
+        },
+        {
+          "id": "clothes-fashion.describing-clothes",
+          "namePl": "Opis ubrań",
+          "entryCount": 16
+        },
+        {
+          "id": "clothes-fashion.fabrics-care",
+          "namePl": "Tkaniny i pielęgnacja ubrań",
+          "entryCount": 16
+        },
+        {
+          "id": "clothes-fashion.fashion-style",
+          "namePl": "Moda i styl",
+          "entryCount": 17
+        }
+      ]
+    },
+    {
       "id": "sports",
       "namePl": "Sport",
       "nameEn": "Sports",
@@ -3508,6 +3935,188 @@
           "id": "pets.pet-idioms",
           "namePl": "Idiomy ze zwierzakami",
           "entryCount": 7
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "namePl": "Zwierzęta",
+      "nameEn": "Animals",
+      "group": "nature",
+      "symbol": "hare",
+      "summaryPl": "Zwierzęta gospodarskie i dzikie, zoo, morze, owady oraz budowa i zachowania zwierząt.",
+      "aliases": [
+        "zwierzęta",
+        "dzikie zwierzęta",
+        "zoo",
+        "farma",
+        "owady",
+        "ptaki",
+        "ryby",
+        "animals",
+        "wildlife",
+        "zoo",
+        "farm animals"
+      ],
+      "entryCount": 86,
+      "levels": {
+        "A1": 16,
+        "A2": 29,
+        "B1": 22,
+        "B2": 14,
+        "C1": 5,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "animals.farm-animals",
+          "namePl": "Zwierzęta gospodarskie",
+          "entryCount": 15
+        },
+        {
+          "id": "animals.wild-animals",
+          "namePl": "Dzikie zwierzęta",
+          "entryCount": 15
+        },
+        {
+          "id": "animals.zoo",
+          "namePl": "W zoo",
+          "entryCount": 14
+        },
+        {
+          "id": "animals.sea-animals",
+          "namePl": "Zwierzęta morskie",
+          "entryCount": 12
+        },
+        {
+          "id": "animals.insects-small",
+          "namePl": "Owady i małe zwierzęta",
+          "entryCount": 14
+        },
+        {
+          "id": "animals.features-behavior",
+          "namePl": "Budowa i zachowania zwierząt",
+          "entryCount": 16
+        }
+      ]
+    },
+    {
+      "id": "small-talk",
+      "namePl": "Small talk",
+      "nameEn": "Small Talk",
+      "group": "communication",
+      "symbol": "bubble.left.and.bubble.right",
+      "summaryPl": "Zaczynanie i podtrzymywanie luźnej rozmowy, bezpieczne tematy, grzeczne kończenie rozmowy i potoczne zwroty.",
+      "aliases": [
+        "small talk",
+        "pogawędka",
+        "rozmowa",
+        "gadka",
+        "konwersacja",
+        "rozmowa o niczym",
+        "chat",
+        "conversation"
+      ],
+      "entryCount": 84,
+      "levels": {
+        "A1": 6,
+        "A2": 21,
+        "B1": 30,
+        "B2": 17,
+        "C1": 10,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "small-talk.starting",
+          "namePl": "Rozpoczynanie rozmowy",
+          "entryCount": 15
+        },
+        {
+          "id": "small-talk.keeping-going",
+          "namePl": "Podtrzymywanie rozmowy",
+          "entryCount": 15
+        },
+        {
+          "id": "small-talk.safe-topics",
+          "namePl": "Bezpieczne tematy",
+          "entryCount": 15
+        },
+        {
+          "id": "small-talk.ending",
+          "namePl": "Grzeczne kończenie rozmowy",
+          "entryCount": 13
+        },
+        {
+          "id": "small-talk.conversation-skills",
+          "namePl": "Umiejętności i niezręczne chwile",
+          "entryCount": 15
+        },
+        {
+          "id": "small-talk.chat-idioms",
+          "namePl": "Potoczne zwroty i idiomy",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "opinions-agreeing",
+      "namePl": "Opinie, zgoda i niezgoda",
+      "nameEn": "Opinions, Agreeing and Disagreeing",
+      "group": "communication",
+      "symbol": "hand.thumbsup",
+      "summaryPl": "Wyrażanie zdania, zgoda i uprzejma niezgoda, argumenty, pytanie o opinię, kompromis i idiomy z dyskusji.",
+      "aliases": [
+        "opinie",
+        "zdanie",
+        "zgoda",
+        "niezgoda",
+        "dyskusja",
+        "argumenty",
+        "kompromis",
+        "opinions",
+        "agree",
+        "disagree"
+      ],
+      "entryCount": 94,
+      "levels": {
+        "A1": 6,
+        "A2": 18,
+        "B1": 41,
+        "B2": 16,
+        "C1": 13,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "opinions-agreeing.giving-opinions",
+          "namePl": "Wyrażanie opinii",
+          "entryCount": 15
+        },
+        {
+          "id": "opinions-agreeing.agreeing",
+          "namePl": "Zgoda",
+          "entryCount": 16
+        },
+        {
+          "id": "opinions-agreeing.disagreeing",
+          "namePl": "Niezgoda",
+          "entryCount": 15
+        },
+        {
+          "id": "opinions-agreeing.arguments",
+          "namePl": "Argumenty i uzasadnienia",
+          "entryCount": 18
+        },
+        {
+          "id": "opinions-agreeing.asking-compromise",
+          "namePl": "Pytanie o zdanie i kompromis",
+          "entryCount": 16
+        },
+        {
+          "id": "opinions-agreeing.discussion-idioms",
+          "namePl": "Idiomy w dyskusji",
+          "entryCount": 14
         }
       ]
     },

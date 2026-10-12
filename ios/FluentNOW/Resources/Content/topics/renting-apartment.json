@@ -1,0 +1,2757 @@
+{
+  "schemaVersion": 1,
+  "id": "renting-apartment",
+  "namePl": "Wynajem mieszkania",
+  "nameEn": "Renting an Apartment",
+  "group": "home",
+  "symbol": "key",
+  "summaryPl": "Szukanie mieszkania na wynajem, właściciel i najemcy, umowa najmu, kaucja i opłaty, usterki oraz wyprowadzka.",
+  "aliases": [
+    "wynajem",
+    "najem",
+    "wynajem mieszkania",
+    "czynsz",
+    "kaucja",
+    "właściciel mieszkania",
+    "umowa najmu",
+    "renting",
+    "rent",
+    "lease",
+    "landlord"
+  ],
+  "categories": [
+    {
+      "id": "renting-apartment.searching",
+      "namePl": "Szukanie mieszkania",
+      "scenePl": "Przeglądanie ogłoszeń o wynajmie i umawianie oglądania mieszkania",
+      "entries": [
+        {
+          "id": "renting-apartment.rent",
+          "term": "rent",
+          "ipa": "/rɛnt/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wynająć",
+          "definition": "To pay money to live in a place that someone else owns.",
+          "register": "neutralny",
+          "contextPl": "Szukanie lokum na wynajem",
+          "natural": "",
+          "forms": "rented",
+          "collocations": "rent an apartment; rent or buy",
+          "synonyms": "lease",
+          "antonyms": "buy",
+          "notePl": "„Rent” = wynajmować od kogoś; „rent out” = wynajmować komuś.",
+          "examples": [
+            {
+              "en": "We want to rent a two-bedroom near my office.",
+              "pl": "Chcemy wynająć mieszkanie z dwiema sypialniami blisko mojego biura.",
+              "focusEn": "rent",
+              "focusPl": "wynająć"
+            },
+            {
+              "en": "Is it cheaper to rent or to buy in this city?",
+              "pl": "Czy w tym mieście taniej jest wynajmować, czy kupić?",
+              "focusEn": "rent",
+              "focusPl": "wynajmować"
+            }
+          ],
+          "acceptedAnswers": [
+            "rent"
+          ],
+          "acceptedTranslations": [
+            "wynająć",
+            "wynajmować"
+          ]
+        },
+        {
+          "id": "renting-apartment.available",
+          "term": "available",
+          "ipa": "/əˈveɪləbəl/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wolny",
+          "definition": "Ready to be rented now.",
+          "register": "neutralny",
+          "contextPl": "Pytanie, czy oferta jest aktualna",
+          "natural": "",
+          "forms": "",
+          "collocations": "still available; available now",
+          "synonyms": "free",
+          "antonyms": "taken",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hi, is the apartment on Elm Street still available?",
+              "pl": "Dzień dobry, czy mieszkanie przy Elm Street jest jeszcze wolne?",
+              "focusEn": "available",
+              "focusPl": "wolne"
+            },
+            {
+              "en": "The unit is available starting November first.",
+              "pl": "Mieszkanie jest dostępne od pierwszego listopada.",
+              "focusEn": "available",
+              "focusPl": "dostępne"
+            }
+          ],
+          "acceptedAnswers": [
+            "available"
+          ],
+          "acceptedTranslations": [
+            "wolny",
+            "dostępny"
+          ]
+        },
+        {
+          "id": "renting-apartment.for-rent",
+          "term": "for rent",
+          "ipa": "/fər ˈrɛnt/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "do wynajęcia",
+          "definition": "Available to be rented.",
+          "register": "neutralny",
+          "contextPl": "Ogłoszenia i szyldy",
+          "natural": "",
+          "forms": "",
+          "collocations": "apartments for rent; for rent sign",
+          "synonyms": "",
+          "antonyms": "for sale",
+          "notePl": "W Wielkiej Brytanii też „to let”.",
+          "examples": [
+            {
+              "en": "I saw an apartment for rent on our street.",
+              "pl": "Widziałem mieszkanie do wynajęcia na naszej ulicy.",
+              "focusEn": "for rent",
+              "focusPl": "do wynajęcia"
+            },
+            {
+              "en": "Most of the places for rent near campus are tiny.",
+              "pl": "Większość lokali do wynajęcia blisko kampusu jest malutka.",
+              "focusEn": "for rent",
+              "focusPl": "do wynajęcia"
+            }
+          ],
+          "acceptedAnswers": [
+            "for rent",
+            "to let"
+          ],
+          "acceptedTranslations": [
+            "do wynajęcia",
+            "na wynajem"
+          ]
+        },
+        {
+          "id": "renting-apartment.furnished",
+          "term": "furnished",
+          "ipa": "/ˈfɜːrnɪʃt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "umeblowany",
+          "definition": "Already having furniture in it.",
+          "register": "neutralny",
+          "contextPl": "Wybór mieszkania z meblami",
+          "natural": "",
+          "forms": "",
+          "collocations": "fully furnished; furnished apartment",
+          "synonyms": "",
+          "antonyms": "unfurnished",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is the place furnished, or do I need my own bed?",
+              "pl": "Mieszkanie jest umeblowane, czy potrzebuję własnego łóżka?",
+              "focusEn": "furnished",
+              "focusPl": "umeblowane"
+            },
+            {
+              "en": "Furnished apartments usually cost more per month.",
+              "pl": "Umeblowane mieszkania zwykle kosztują więcej miesięcznie.",
+              "focusEn": "Furnished",
+              "focusPl": "Umeblowane"
+            }
+          ],
+          "acceptedAnswers": [
+            "furnished"
+          ],
+          "acceptedTranslations": [
+            "umeblowany"
+          ]
+        },
+        {
+          "id": "renting-apartment.move-in-date",
+          "term": "move-in date",
+          "ipa": "/ˈmuːv ɪn ˌdeɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "data wprowadzenia się",
+          "definition": "The day you can start living in a rented place.",
+          "register": "neutralny",
+          "contextPl": "Ustalanie terminu",
+          "natural": "",
+          "forms": "move-in dates",
+          "collocations": "flexible move-in date",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What's the earliest move-in date for this unit?",
+              "pl": "Jaka jest najwcześniejsza data wprowadzenia się do tego mieszkania?",
+              "focusEn": "move-in date",
+              "focusPl": "data wprowadzenia się"
+            },
+            {
+              "en": "Our move-in date is the first of the month.",
+              "pl": "Nasza data wprowadzenia się to pierwszy dzień miesiąca.",
+              "focusEn": "move-in date",
+              "focusPl": "data wprowadzenia się"
+            }
+          ],
+          "acceptedAnswers": [
+            "move-in date",
+            "move in date"
+          ],
+          "acceptedTranslations": [
+            "data wprowadzenia się",
+            "termin wprowadzenia się"
+          ]
+        },
+        {
+          "id": "renting-apartment.roommate",
+          "term": "roommate",
+          "ipa": "/ˈruːmˌmeɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "współlokator",
+          "definition": "A person you share an apartment with.",
+          "register": "neutralny",
+          "contextPl": "Wspólne wynajmowanie",
+          "natural": "",
+          "forms": "roommates",
+          "collocations": "find a roommate; live with roommates",
+          "synonyms": "flatmate",
+          "antonyms": "",
+          "notePl": "W Wielkiej Brytanii „flatmate”.",
+          "examples": [
+            {
+              "en": "I'm looking for a roommate to split a two-bedroom.",
+              "pl": "Szukam współlokatora, żeby dzielić mieszkanie z dwiema sypialniami.",
+              "focusEn": "roommate",
+              "focusPl": "współlokatora"
+            },
+            {
+              "en": "My roommate and I are looking at apartments together this weekend.",
+              "pl": "Ze współlokatorką oglądamy w ten weekend mieszkania.",
+              "focusEn": "roommate",
+              "focusPl": "współlokatorką"
+            }
+          ],
+          "acceptedAnswers": [
+            "roommate",
+            "flatmate"
+          ],
+          "acceptedTranslations": [
+            "współlokator",
+            "współlokatorka"
+          ]
+        },
+        {
+          "id": "renting-apartment.unfurnished",
+          "term": "unfurnished",
+          "ipa": "/ʌnˈfɜːrnɪʃt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nieumeblowany",
+          "definition": "Without furniture.",
+          "register": "neutralny",
+          "contextPl": "Mieszkanie bez mebli",
+          "natural": "",
+          "forms": "",
+          "collocations": "unfurnished apartment",
+          "synonyms": "",
+          "antonyms": "furnished",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This listing is unfurnished, so we'd have to buy everything.",
+              "pl": "To mieszkanie jest nieumeblowane, więc musielibyśmy wszystko kupić.",
+              "focusEn": "unfurnished",
+              "focusPl": "nieumeblowane"
+            },
+            {
+              "en": "Unfurnished places are easier to find in this area.",
+              "pl": "Nieumeblowane mieszkania łatwiej znaleźć w tej okolicy.",
+              "focusEn": "Unfurnished",
+              "focusPl": "Nieumeblowane"
+            }
+          ],
+          "acceptedAnswers": [
+            "unfurnished"
+          ],
+          "acceptedTranslations": [
+            "nieumeblowany",
+            "bez mebli"
+          ]
+        },
+        {
+          "id": "renting-apartment.showing",
+          "term": "showing",
+          "ipa": "/ˈʃoʊɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "oglądanie mieszkania",
+          "definition": "A visit to see a home that is for rent or sale.",
+          "register": "neutralny",
+          "contextPl": "Umawianie wizyty w mieszkaniu",
+          "natural": "viewing",
+          "forms": "showings",
+          "collocations": "schedule a showing; open house",
+          "synonyms": "viewing",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I schedule a showing for Saturday morning?",
+              "pl": "Czy mogę umówić oglądanie mieszkania na sobotę rano?",
+              "focusEn": "showing",
+              "focusPl": "oglądanie mieszkania"
+            },
+            {
+              "en": "Ten people came to the showing, so we need to decide fast.",
+              "pl": "Na oglądanie przyszło dziesięć osób, więc musimy szybko zdecydować.",
+              "focusEn": "showing",
+              "focusPl": "oglądanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "showing",
+            "viewing"
+          ],
+          "acceptedTranslations": [
+            "oglądanie mieszkania",
+            "prezentacja mieszkania"
+          ]
+        },
+        {
+          "id": "renting-apartment.utilities-included",
+          "term": "utilities included",
+          "ipa": "/juːˌtɪlətiz ɪnˈkluːdɪd/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "media wliczone",
+          "definition": "Used to say the rent already covers water, electricity and gas.",
+          "register": "neutralny",
+          "contextPl": "Ogłoszenia o wynajmie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The rent is twelve hundred a month, utilities included.",
+              "pl": "Czynsz wynosi tysiąc dwieście miesięcznie, media wliczone.",
+              "focusEn": "utilities included",
+              "focusPl": "media wliczone"
+            },
+            {
+              "en": "I prefer a place with utilities included, so I know my costs.",
+              "pl": "Wolę mieszkanie z wliczonymi mediami, żeby znać swoje koszty.",
+              "focusEn": "utilities included",
+              "focusPl": "wliczonymi mediami"
+            }
+          ],
+          "acceptedAnswers": [
+            "utilities included",
+            "utilities are included"
+          ],
+          "acceptedTranslations": [
+            "media wliczone",
+            "z mediami",
+            "opłaty wliczone"
+          ]
+        },
+        {
+          "id": "renting-apartment.pet-friendly",
+          "term": "pet-friendly",
+          "ipa": "/ˌpɛt ˈfrɛndli/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przyjazny zwierzętom",
+          "definition": "Allowing people to have pets.",
+          "register": "neutralny",
+          "contextPl": "Szukanie mieszkania ze zwierzęciem",
+          "natural": "",
+          "forms": "",
+          "collocations": "pet-friendly building",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need a pet-friendly building because we have a cat.",
+              "pl": "Potrzebujemy budynku przyjaznego zwierzętom, bo mamy kota.",
+              "focusEn": "pet-friendly",
+              "focusPl": "przyjaznego zwierzętom"
+            },
+            {
+              "en": "Is this apartment pet-friendly, or are dogs not allowed?",
+              "pl": "Czy to mieszkanie jest przyjazne zwierzętom, czy psy są zabronione?",
+              "focusEn": "pet-friendly",
+              "focusPl": "przyjazne zwierzętom"
+            }
+          ],
+          "acceptedAnswers": [
+            "pet-friendly",
+            "pet friendly"
+          ],
+          "acceptedTranslations": [
+            "przyjazny zwierzętom",
+            "można mieć zwierzęta"
+          ]
+        },
+        {
+          "id": "renting-apartment.unit",
+          "term": "unit",
+          "ipa": "/ˈjuːnɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "lokal",
+          "definition": "One apartment in a building with several apartments.",
+          "register": "neutralny",
+          "contextPl": "Język ogłoszeń i zarządców",
+          "natural": "",
+          "forms": "units",
+          "collocations": "a two-bedroom unit; units available",
+          "synonyms": "apartment",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There are only two units left in this building.",
+              "pl": "W tym budynku zostały tylko dwa wolne lokale.",
+              "focusEn": "units",
+              "focusPl": "lokale"
+            },
+            {
+              "en": "Our unit is on the top floor, facing the park.",
+              "pl": "Nasz lokal jest na ostatnim piętrze, od strony parku.",
+              "focusEn": "unit",
+              "focusPl": "lokal"
+            }
+          ],
+          "acceptedAnswers": [
+            "unit",
+            "apartment"
+          ],
+          "acceptedTranslations": [
+            "lokal",
+            "mieszkanie"
+          ]
+        },
+        {
+          "id": "renting-apartment.rental",
+          "term": "rental",
+          "ipa": "/ˈrɛntəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "mieszkanie na wynajem",
+          "definition": "A home that is rented to people.",
+          "register": "neutralny",
+          "contextPl": "Rynek najmu",
+          "natural": "",
+          "forms": "rentals",
+          "collocations": "a short-term rental; rental market",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Rentals in this neighborhood go fast in the summer.",
+              "pl": "Mieszkania na wynajem w tej okolicy znikają szybko latem.",
+              "focusEn": "Rentals",
+              "focusPl": "Mieszkania na wynajem"
+            },
+            {
+              "en": "We're looking for a short-term rental for six months.",
+              "pl": "Szukamy wynajmu krótkoterminowego na pół roku.",
+              "focusEn": "rental",
+              "focusPl": "wynajmu"
+            }
+          ],
+          "acceptedAnswers": [
+            "rental"
+          ],
+          "acceptedTranslations": [
+            "mieszkanie na wynajem",
+            "wynajem",
+            "najem"
+          ]
+        },
+        {
+          "id": "renting-apartment.in-unit-laundry",
+          "term": "in-unit laundry",
+          "ipa": "/ˌɪn ˌjuːnɪt ˈlɔːndri/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "pralka w mieszkaniu",
+          "definition": "A washer and dryer inside the apartment, not in a shared room.",
+          "register": "neutralny",
+          "contextPl": "Udogodnienia w ogłoszeniu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "shared laundry",
+          "notePl": "W wielu blokach w USA pralki są we wspólnej pralni w piwnicy.",
+          "examples": [
+            {
+              "en": "Does this apartment have in-unit laundry?",
+              "pl": "Czy w tym mieszkaniu jest pralka i suszarka?",
+              "focusEn": "in-unit laundry",
+              "focusPl": "pralka i suszarka"
+            },
+            {
+              "en": "In-unit laundry is a must, since I hate laundromats.",
+              "pl": "Pralka w mieszkaniu to konieczność, bo nie znoszę pralni samoobsługowych.",
+              "focusEn": "In-unit laundry",
+              "focusPl": "Pralka w mieszkaniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "in-unit laundry",
+            "in unit laundry"
+          ],
+          "acceptedTranslations": [
+            "pralka w mieszkaniu",
+            "pralka i suszarka w mieszkaniu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renting-apartment.people",
+      "namePl": "Właściciel i najemcy",
+      "scenePl": "Pierwsze spotkanie z właścicielem mieszkania podczas oglądania",
+      "entries": [
+        {
+          "id": "renting-apartment.rent-2",
+          "term": "rent",
+          "ipa": "/rɛnt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "czynsz",
+          "definition": "The money you pay every month to live in a rented place.",
+          "register": "neutralny",
+          "contextPl": "Ustalanie kosztów najmu",
+          "natural": "",
+          "forms": "",
+          "collocations": "pay the rent; the rent is due; monthly rent",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Tu chodzi o opłatę za najem, a nie o polski czynsz do spółdzielni.",
+          "examples": [
+            {
+              "en": "The rent is fifteen hundred dollars a month.",
+              "pl": "Czynsz wynosi tysiąc pięćset dolarów miesięcznie.",
+              "focusEn": "rent",
+              "focusPl": "Czynsz"
+            },
+            {
+              "en": "Is the rent going to go up next year?",
+              "pl": "Czy czynsz wzrośnie w przyszłym roku?",
+              "focusEn": "rent",
+              "focusPl": "czynsz"
+            }
+          ],
+          "acceptedAnswers": [
+            "rent"
+          ],
+          "acceptedTranslations": [
+            "czynsz",
+            "opłata za najem"
+          ]
+        },
+        {
+          "id": "renting-apartment.owner",
+          "term": "owner",
+          "ipa": "/ˈoʊnər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "właściciel",
+          "definition": "The person who owns a property.",
+          "register": "neutralny",
+          "contextPl": "Kontakt z osobą posiadającą mieszkanie",
+          "natural": "",
+          "forms": "owners",
+          "collocations": "the owner of the building",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The owner wants to meet you before you sign.",
+              "pl": "Właścicielka chce cię poznać, zanim podpiszesz.",
+              "focusEn": "owner",
+              "focusPl": "Właścicielka"
+            },
+            {
+              "en": "The owner lives abroad, so a manager handles everything.",
+              "pl": "Właściciel mieszka za granicą, więc wszystkim zajmuje się zarządca.",
+              "focusEn": "owner",
+              "focusPl": "Właściciel"
+            }
+          ],
+          "acceptedAnswers": [
+            "owner"
+          ],
+          "acceptedTranslations": [
+            "właściciel",
+            "właścicielka"
+          ]
+        },
+        {
+          "id": "renting-apartment.landlord",
+          "term": "landlord",
+          "ipa": "/ˈlændˌlɔːrd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "właściciel mieszkania",
+          "definition": "A person who rents out a home to other people.",
+          "register": "neutralny",
+          "contextPl": "Kontakt z wynajmującym",
+          "natural": "",
+          "forms": "landlords",
+          "collocations": "a good landlord; call the landlord",
+          "synonyms": "",
+          "antonyms": "tenant",
+          "notePl": "Kobieta to czasem „landlady”, ale „landlord” jest dziś neutralne.",
+          "examples": [
+            {
+              "en": "The landlord lives on the first floor of the building.",
+              "pl": "Właściciel mieszkania mieszka na parterze budynku.",
+              "focusEn": "landlord",
+              "focusPl": "Właściciel mieszkania"
+            },
+            {
+              "en": "Our landlord seems nice and answers texts quickly.",
+              "pl": "Nasz właściciel mieszkania wydaje się miły i szybko odpisuje na wiadomości.",
+              "focusEn": "landlord",
+              "focusPl": "właściciel mieszkania"
+            }
+          ],
+          "acceptedAnswers": [
+            "landlord",
+            "landlady"
+          ],
+          "acceptedTranslations": [
+            "właściciel mieszkania",
+            "wynajmujący"
+          ]
+        },
+        {
+          "id": "renting-apartment.tenant",
+          "term": "tenant",
+          "ipa": "/ˈtɛnənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "najemca",
+          "definition": "A person who pays rent to live in a place.",
+          "register": "formalny",
+          "contextPl": "Strony umowy najmu",
+          "natural": "renter",
+          "forms": "tenants",
+          "collocations": "previous tenant; tenant rights",
+          "synonyms": "renter",
+          "antonyms": "landlord",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The last tenant moved out two weeks ago.",
+              "pl": "Poprzedni najemca wyprowadził się dwa tygodnie temu.",
+              "focusEn": "tenant",
+              "focusPl": "najemca"
+            },
+            {
+              "en": "The landlord is looking for quiet tenants with good credit.",
+              "pl": "Właściciel szuka spokojnych najemców z dobrą historią kredytową.",
+              "focusEn": "tenants",
+              "focusPl": "najemców"
+            }
+          ],
+          "acceptedAnswers": [
+            "tenant",
+            "renter"
+          ],
+          "acceptedTranslations": [
+            "najemca",
+            "lokator"
+          ]
+        },
+        {
+          "id": "renting-apartment.property-manager",
+          "term": "property manager",
+          "ipa": "/ˈprɑːpərti ˌmænɪdʒər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zarządca nieruchomości",
+          "definition": "A person or company that takes care of rented buildings for the owner.",
+          "register": "neutralny",
+          "contextPl": "Wynajem przez firmę",
+          "natural": "",
+          "forms": "property managers",
+          "collocations": "",
+          "synonyms": "building manager",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You'll deal with the property manager, not the owner.",
+              "pl": "Będziesz mieć do czynienia z zarządcą nieruchomości, a nie z właścicielem.",
+              "focusEn": "property manager",
+              "focusPl": "zarządcą nieruchomości"
+            },
+            {
+              "en": "The property manager showed us three apartments in the building.",
+              "pl": "Zarządca nieruchomości pokazał nam trzy mieszkania w budynku.",
+              "focusEn": "property manager",
+              "focusPl": "Zarządca nieruchomości"
+            }
+          ],
+          "acceptedAnswers": [
+            "property manager",
+            "building manager"
+          ],
+          "acceptedTranslations": [
+            "zarządca nieruchomości",
+            "administrator"
+          ]
+        },
+        {
+          "id": "renting-apartment.rent-out",
+          "term": "rent out",
+          "ipa": "/ˌrɛnt ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wynajmować komuś",
+          "definition": "To let other people live in your property for money.",
+          "register": "neutralny",
+          "contextPl": "Perspektywa właściciela",
+          "natural": "",
+          "forms": "rented out",
+          "collocations": "rent out an apartment",
+          "synonyms": "let",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The owner rents out three apartments in this building.",
+              "pl": "Właściciel wynajmuje trzy mieszkania w tym budynku.",
+              "focusEn": "rents out",
+              "focusPl": "wynajmuje"
+            },
+            {
+              "en": "They rented out their old condo when they moved.",
+              "pl": "Wynajęli swoje stare mieszkanie, kiedy się przeprowadzili.",
+              "focusEn": "rented out",
+              "focusPl": "Wynajęli"
+            }
+          ],
+          "acceptedAnswers": [
+            "rent out",
+            "let"
+          ],
+          "acceptedTranslations": [
+            "wynajmować komuś",
+            "wynająć"
+          ]
+        },
+        {
+          "id": "renting-apartment.reference",
+          "term": "reference",
+          "ipa": "/ˈrɛfərəns/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "referencje",
+          "definition": "A statement from someone who knows you, saying you are reliable.",
+          "register": "formalny",
+          "contextPl": "Dokumenty dla właściciela",
+          "natural": "",
+          "forms": "references",
+          "collocations": "a reference from your last landlord",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you give me a reference from your last landlord?",
+              "pl": "Możesz mi dać referencje od poprzedniego właściciela?",
+              "focusEn": "reference",
+              "focusPl": "referencje"
+            },
+            {
+              "en": "I brought two references and a letter from my employer.",
+              "pl": "Przyniosłem dwie referencje i list od pracodawcy.",
+              "focusEn": "references",
+              "focusPl": "referencje"
+            }
+          ],
+          "acceptedAnswers": [
+            "reference"
+          ],
+          "acceptedTranslations": [
+            "referencje",
+            "rekomendacja",
+            "opinia"
+          ]
+        },
+        {
+          "id": "renting-apartment.quiet-hours",
+          "term": "quiet hours",
+          "ipa": "/ˈkwaɪət ˌaʊərz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "cisza nocna",
+          "definition": "Times when residents must keep noise low.",
+          "register": "neutralny",
+          "contextPl": "Zasady w budynku",
+          "natural": "",
+          "forms": "",
+          "collocations": "respect quiet hours",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Quiet hours in the building start at ten p.m.",
+              "pl": "Cisza nocna w budynku zaczyna się o dwudziestej drugiej.",
+              "focusEn": "Quiet hours",
+              "focusPl": "Cisza nocna"
+            },
+            {
+              "en": "The landlord reminded us about quiet hours on weekends.",
+              "pl": "Właściciel przypomniał nam o ciszy nocnej w weekendy.",
+              "focusEn": "quiet hours",
+              "focusPl": "ciszy nocnej"
+            }
+          ],
+          "acceptedAnswers": [
+            "quiet hours"
+          ],
+          "acceptedTranslations": [
+            "cisza nocna"
+          ]
+        },
+        {
+          "id": "renting-apartment.super",
+          "term": "super",
+          "ipa": "/ˈsuːpər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dozorca",
+          "definition": "Short for superintendent: the person who takes care of an apartment building.",
+          "register": "potoczny",
+          "contextPl": "Kontakt w sprawie drobnych usterek",
+          "natural": "superintendent",
+          "forms": "supers",
+          "collocations": "call the super",
+          "synonyms": "superintendent",
+          "antonyms": "",
+          "notePl": "Typowe dla Nowego Jorku i dużych miast.",
+          "examples": [
+            {
+              "en": "If anything breaks, call the super; he lives downstairs.",
+              "pl": "Jeśli coś się zepsuje, dzwoń do dozorcy, mieszka na dole.",
+              "focusEn": "super",
+              "focusPl": "dozorcy"
+            },
+            {
+              "en": "The super showed us where the trash goes.",
+              "pl": "Dozorca pokazał nam, gdzie wyrzuca się śmieci.",
+              "focusEn": "super",
+              "focusPl": "Dozorca"
+            }
+          ],
+          "acceptedAnswers": [
+            "super",
+            "superintendent"
+          ],
+          "acceptedTranslations": [
+            "dozorca",
+            "administrator budynku"
+          ]
+        },
+        {
+          "id": "renting-apartment.sublet",
+          "term": "sublet",
+          "ipa": "/ˈsʌbˌlɛt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "podnająć",
+          "definition": "To rent your rented home to someone else for a time.",
+          "register": "specjalistyczny",
+          "contextPl": "Czasowe oddanie mieszkania komuś",
+          "natural": "",
+          "forms": "sublet – sublet",
+          "collocations": "sublet an apartment; sublet for the summer",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Am I allowed to sublet the apartment over the summer?",
+              "pl": "Czy mogę podnająć mieszkanie na lato?",
+              "focusEn": "sublet",
+              "focusPl": "podnająć"
+            },
+            {
+              "en": "The lease says tenants can't sublet without permission.",
+              "pl": "Umowa mówi, że najemcy nie mogą podnajmować bez zgody.",
+              "focusEn": "sublet",
+              "focusPl": "podnajmować"
+            }
+          ],
+          "acceptedAnswers": [
+            "sublet",
+            "sublease"
+          ],
+          "acceptedTranslations": [
+            "podnająć",
+            "podnajmować"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renting-apartment.lease",
+      "namePl": "Umowa najmu",
+      "scenePl": "Czytanie umowy najmu przy stole w biurze zarządcy",
+      "entries": [
+        {
+          "id": "renting-apartment.sign",
+          "term": "sign",
+          "ipa": "/saɪn/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "podpisać",
+          "definition": "To write your name on a document to show you agree.",
+          "register": "neutralny",
+          "contextPl": "Zawieranie umowy",
+          "natural": "",
+          "forms": "signed",
+          "collocations": "sign the lease; sign here",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sign here and here, and initial each page.",
+              "pl": "Proszę podpisać tu i tu oraz parafować każdą stronę.",
+              "focusEn": "Sign",
+              "focusPl": "podpisać"
+            },
+            {
+              "en": "We signed the lease and got the keys the same day.",
+              "pl": "Podpisaliśmy umowę i tego samego dnia dostaliśmy klucze.",
+              "focusEn": "signed",
+              "focusPl": "Podpisaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "sign"
+          ],
+          "acceptedTranslations": [
+            "podpisać",
+            "podpisywać"
+          ]
+        },
+        {
+          "id": "renting-apartment.allowed",
+          "term": "allowed",
+          "ipa": "/əˈlaʊd/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "dozwolony",
+          "definition": "Permitted by the rules.",
+          "register": "neutralny",
+          "contextPl": "Zasady w umowie",
+          "natural": "",
+          "forms": "",
+          "collocations": "pets allowed; not allowed",
+          "synonyms": "permitted",
+          "antonyms": "not allowed",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Are pets allowed in this building?",
+              "pl": "Czy w tym budynku dozwolone są zwierzęta?",
+              "focusEn": "allowed",
+              "focusPl": "dozwolone"
+            },
+            {
+              "en": "Smoking isn't allowed anywhere on the property.",
+              "pl": "Palenie nie jest dozwolone nigdzie na terenie posesji.",
+              "focusEn": "allowed",
+              "focusPl": "dozwolone"
+            }
+          ],
+          "acceptedAnswers": [
+            "allowed",
+            "permitted"
+          ],
+          "acceptedTranslations": [
+            "dozwolony",
+            "wolno"
+          ]
+        },
+        {
+          "id": "renting-apartment.lease",
+          "term": "lease",
+          "ipa": "/liːs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "very_common",
+          "translation": "umowa najmu",
+          "definition": "A legal contract to rent a home for a set time.",
+          "register": "formalny",
+          "contextPl": "Dokument najmu",
+          "natural": "rental agreement",
+          "forms": "leases",
+          "collocations": "sign a lease; a one-year lease",
+          "synonyms": "rental agreement",
+          "antonyms": "",
+          "notePl": "W USA „lease” to najczęstsze słowo na umowę najmu mieszkania.",
+          "examples": [
+            {
+              "en": "The lease is for twelve months, starting in June.",
+              "pl": "Umowa najmu jest na dwanaście miesięcy, od czerwca.",
+              "focusEn": "lease",
+              "focusPl": "Umowa najmu"
+            },
+            {
+              "en": "Read the whole lease before you sign anything.",
+              "pl": "Przeczytaj całą umowę najmu, zanim cokolwiek podpiszesz.",
+              "focusEn": "lease",
+              "focusPl": "umowę najmu"
+            }
+          ],
+          "acceptedAnswers": [
+            "lease",
+            "rental agreement"
+          ],
+          "acceptedTranslations": [
+            "umowa najmu",
+            "umowa wynajmu"
+          ]
+        },
+        {
+          "id": "renting-apartment.renew",
+          "term": "renew",
+          "ipa": "/rɪˈnuː/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przedłużyć",
+          "definition": "To continue a lease for another period.",
+          "register": "formalny",
+          "contextPl": "Decyzja o dalszym najmie",
+          "natural": "",
+          "forms": "renewed",
+          "collocations": "renew the lease",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you plan to renew the lease next year?",
+              "pl": "Planujecie przedłużyć umowę w przyszłym roku?",
+              "focusEn": "renew",
+              "focusPl": "przedłużyć"
+            },
+            {
+              "en": "If we renew, the rent goes up by fifty dollars.",
+              "pl": "Jeśli przedłużymy, czynsz wzrośnie o pięćdziesiąt dolarów.",
+              "focusEn": "renew",
+              "focusPl": "przedłużymy"
+            }
+          ],
+          "acceptedAnswers": [
+            "renew"
+          ],
+          "acceptedTranslations": [
+            "przedłużyć",
+            "przedłużać"
+          ]
+        },
+        {
+          "id": "renting-apartment.term",
+          "term": "term",
+          "ipa": "/tɜːrm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "okres",
+          "definition": "The length of time a lease lasts.",
+          "register": "formalny",
+          "contextPl": "Długość umowy",
+          "natural": "",
+          "forms": "terms",
+          "collocations": "lease term; a one-year term",
+          "synonyms": "period",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What's the term of the lease, six or twelve months?",
+              "pl": "Na jaki okres jest umowa najmu, sześć czy dwanaście miesięcy?",
+              "focusEn": "term",
+              "focusPl": "okres"
+            },
+            {
+              "en": "The lease term ends on May thirty-first.",
+              "pl": "Okres najmu kończy się trzydziestego pierwszego maja.",
+              "focusEn": "term",
+              "focusPl": "Okres"
+            }
+          ],
+          "acceptedAnswers": [
+            "term"
+          ],
+          "acceptedTranslations": [
+            "okres",
+            "czas trwania"
+          ]
+        },
+        {
+          "id": "renting-apartment.month-to-month",
+          "term": "month-to-month",
+          "ipa": "/ˌmʌnθ tə ˈmʌnθ/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "z miesiąca na miesiąc",
+          "definition": "Renewed every month instead of for a fixed longer time.",
+          "register": "neutralny",
+          "contextPl": "Elastyczny najem",
+          "natural": "",
+          "forms": "",
+          "collocations": "a month-to-month lease",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After the first year, the lease goes month-to-month.",
+              "pl": "Po pierwszym roku umowa przechodzi na najem z miesiąca na miesiąc.",
+              "focusEn": "month-to-month",
+              "focusPl": "z miesiąca na miesiąc"
+            },
+            {
+              "en": "A month-to-month rental costs more but is flexible.",
+              "pl": "Najem z miesiąca na miesiąc kosztuje więcej, ale jest elastyczny.",
+              "focusEn": "month-to-month",
+              "focusPl": "z miesiąca na miesiąc"
+            }
+          ],
+          "acceptedAnswers": [
+            "month-to-month",
+            "month to month"
+          ],
+          "acceptedTranslations": [
+            "z miesiąca na miesiąc",
+            "bezterminowy"
+          ]
+        },
+        {
+          "id": "renting-apartment.break-the-lease",
+          "term": "break the lease",
+          "ipa": "/ˌbreɪk ðə ˈliːs/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zerwać umowę najmu",
+          "definition": "To end a lease before its official end date.",
+          "register": "neutralny",
+          "contextPl": "Wcześniejsza wyprowadzka",
+          "natural": "",
+          "forms": "broke – broken",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you break the lease early, you lose your deposit.",
+              "pl": "Jeśli zerwiesz umowę najmu przed czasem, stracisz kaucję.",
+              "focusEn": "break the lease",
+              "focusPl": "zerwiesz umowę najmu"
+            },
+            {
+              "en": "We had to break the lease when I got a job in Denver.",
+              "pl": "Musieliśmy zerwać umowę najmu, kiedy dostałem pracę w Denver.",
+              "focusEn": "break the lease",
+              "focusPl": "zerwać umowę najmu"
+            }
+          ],
+          "acceptedAnswers": [
+            "break the lease"
+          ],
+          "acceptedTranslations": [
+            "zerwać umowę najmu",
+            "rozwiązać umowę przed terminem"
+          ]
+        },
+        {
+          "id": "renting-apartment.fine-print",
+          "term": "fine print",
+          "ipa": "/ˌfaɪn ˈprɪnt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "drobny druk",
+          "definition": "Important details written in small letters in a contract.",
+          "register": "neutralny",
+          "contextPl": "Uważne czytanie umowy",
+          "natural": "",
+          "forms": "",
+          "collocations": "read the fine print",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Always read the fine print about fees.",
+              "pl": "Zawsze czytaj drobny druk dotyczący opłat.",
+              "focusEn": "fine print",
+              "focusPl": "drobny druk"
+            },
+            {
+              "en": "The fine print says no grills on the balcony.",
+              "pl": "Drobnym drukiem napisano, że na balkonie nie wolno grillować.",
+              "focusEn": "fine print",
+              "focusPl": "Drobnym drukiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "fine print"
+          ],
+          "acceptedTranslations": [
+            "drobny druk",
+            "małe litery"
+          ]
+        },
+        {
+          "id": "renting-apartment.cosigner",
+          "term": "cosigner",
+          "ipa": "/ˈkoʊˌsaɪnər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "poręczyciel",
+          "definition": "A person who signs a lease with you and promises to pay if you cannot.",
+          "register": "formalny",
+          "contextPl": "Gwarancja dla właściciela",
+          "natural": "guarantor",
+          "forms": "cosigners",
+          "collocations": "need a cosigner",
+          "synonyms": "guarantor",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Students usually need a cosigner, like a parent.",
+              "pl": "Studenci zwykle potrzebują poręczyciela, na przykład rodzica.",
+              "focusEn": "cosigner",
+              "focusPl": "poręczyciela"
+            },
+            {
+              "en": "My dad agreed to be my cosigner on the lease.",
+              "pl": "Tata zgodził się być moim poręczycielem w umowie.",
+              "focusEn": "cosigner",
+              "focusPl": "poręczycielem"
+            }
+          ],
+          "acceptedAnswers": [
+            "cosigner",
+            "co-signer",
+            "guarantor"
+          ],
+          "acceptedTranslations": [
+            "poręczyciel",
+            "żyrant"
+          ]
+        },
+        {
+          "id": "renting-apartment.initial",
+          "term": "initial",
+          "ipa": "/ɪˈnɪʃəl/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "parafować",
+          "definition": "To write the first letters of your name on a document.",
+          "register": "formalny",
+          "contextPl": "Podpisywanie każdej strony umowy",
+          "natural": "",
+          "forms": "initialed",
+          "collocations": "initial each page",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia amerykańska: „initialed” z jednym l.",
+          "examples": [
+            {
+              "en": "Please initial each page of the lease.",
+              "pl": "Proszę parafować każdą stronę umowy.",
+              "focusEn": "initial",
+              "focusPl": "parafować"
+            },
+            {
+              "en": "I initialed every page and signed at the end.",
+              "pl": "Parafowałem każdą stronę i podpisałem na końcu.",
+              "focusEn": "initialed",
+              "focusPl": "Parafowałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "initial"
+          ],
+          "acceptedTranslations": [
+            "parafować",
+            "podpisać inicjałami"
+          ]
+        },
+        {
+          "id": "renting-apartment.renters-insurance",
+          "term": "renter's insurance",
+          "ipa": "/ˈrɛntərz ɪnˌʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "ubezpieczenie najemcy",
+          "definition": "Insurance that protects a tenant's belongings.",
+          "register": "formalny",
+          "contextPl": "Wymagania w umowie",
+          "natural": "",
+          "forms": "",
+          "collocations": "get renter's insurance",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The lease requires renter's insurance.",
+              "pl": "Umowa wymaga ubezpieczenia najemcy.",
+              "focusEn": "renter's insurance",
+              "focusPl": "ubezpieczenia najemcy"
+            },
+            {
+              "en": "Renter's insurance protects your things if there's a fire.",
+              "pl": "Ubezpieczenie najemcy chroni twoje rzeczy na wypadek pożaru.",
+              "focusEn": "Renter's insurance",
+              "focusPl": "Ubezpieczenie najemcy"
+            }
+          ],
+          "acceptedAnswers": [
+            "renter's insurance",
+            "renters insurance"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie najemcy",
+            "ubezpieczenie mieszkania"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renting-apartment.money",
+      "namePl": "Kaucja i opłaty",
+      "scenePl": "Rozmowa o kosztach najmu przed podpisaniem umowy",
+      "entries": [
+        {
+          "id": "renting-apartment.afford",
+          "term": "afford",
+          "ipa": "/əˈfɔːrd/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "stać",
+          "definition": "To have enough money to pay for something.",
+          "register": "neutralny",
+          "contextPl": "Budżet na mieszkanie",
+          "natural": "",
+          "forms": "afforded",
+          "collocations": "can't afford; afford the rent",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku zmienia się podmiot: „I can't afford it” = „Nie stać mnie”.",
+          "examples": [
+            {
+              "en": "We can't afford more than two thousand a month.",
+              "pl": "Nie stać nas na więcej niż dwa tysiące miesięcznie.",
+              "focusEn": "afford",
+              "focusPl": "Nie stać nas"
+            },
+            {
+              "en": "Can you really afford this place on one salary?",
+              "pl": "Naprawdę stać cię na to mieszkanie z jednej pensji?",
+              "focusEn": "afford",
+              "focusPl": "stać cię"
+            }
+          ],
+          "acceptedAnswers": [
+            "afford"
+          ],
+          "acceptedTranslations": [
+            "stać",
+            "pozwolić sobie"
+          ]
+        },
+        {
+          "id": "renting-apartment.due",
+          "term": "due",
+          "ipa": "/duː/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "płatny",
+          "definition": "Expected to be paid at a certain time.",
+          "register": "neutralny",
+          "contextPl": "Terminy płatności",
+          "natural": "",
+          "forms": "",
+          "collocations": "rent is due; due date",
+          "synonyms": "",
+          "antonyms": "overdue",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Rent is due on the first of every month.",
+              "pl": "Czynsz jest płatny pierwszego dnia każdego miesiąca.",
+              "focusEn": "due",
+              "focusPl": "płatny"
+            },
+            {
+              "en": "When is the deposit due, before or after signing?",
+              "pl": "Kiedy kaucja jest płatna, przed czy po podpisaniu?",
+              "focusEn": "due",
+              "focusPl": "płatna"
+            }
+          ],
+          "acceptedAnswers": [
+            "due"
+          ],
+          "acceptedTranslations": [
+            "płatny",
+            "do zapłaty"
+          ]
+        },
+        {
+          "id": "renting-apartment.split-the-rent",
+          "term": "split the rent",
+          "ipa": "/ˌsplɪt ðə ˈrɛnt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dzielić czynsz",
+          "definition": "To share the cost of rent with other people.",
+          "register": "neutralny",
+          "contextPl": "Wspólny najem",
+          "natural": "",
+          "forms": "split – split",
+          "collocations": "split the rent evenly",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If we split the rent, it's only eight hundred each.",
+              "pl": "Jeśli podzielimy czynsz, to tylko po osiemset na osobę.",
+              "focusEn": "split the rent",
+              "focusPl": "podzielimy czynsz"
+            },
+            {
+              "en": "My roommate and I split the rent fifty-fifty.",
+              "pl": "Ze współlokatorem dzielimy czynsz po połowie.",
+              "focusEn": "split the rent",
+              "focusPl": "dzielimy czynsz"
+            }
+          ],
+          "acceptedAnswers": [
+            "split the rent"
+          ],
+          "acceptedTranslations": [
+            "dzielić czynsz",
+            "podzielić czynsz"
+          ]
+        },
+        {
+          "id": "renting-apartment.security-deposit",
+          "term": "security deposit",
+          "ipa": "/sɪˈkjʊrəti dɪˌpɑːzɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kaucja",
+          "definition": "Money paid before moving in that is returned if the home is not damaged.",
+          "register": "neutralny",
+          "contextPl": "Zabezpieczenie dla właściciela",
+          "natural": "deposit",
+          "forms": "security deposits",
+          "collocations": "pay a security deposit",
+          "synonyms": "deposit",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The security deposit is one month's rent.",
+              "pl": "Kaucja wynosi równowartość miesięcznego czynszu.",
+              "focusEn": "security deposit",
+              "focusPl": "Kaucja"
+            },
+            {
+              "en": "You'll get your security deposit back if there's no damage.",
+              "pl": "Odzyskasz kaucję, jeśli nie będzie żadnych zniszczeń.",
+              "focusEn": "security deposit",
+              "focusPl": "kaucję"
+            }
+          ],
+          "acceptedAnswers": [
+            "security deposit",
+            "deposit"
+          ],
+          "acceptedTranslations": [
+            "kaucja",
+            "depozyt"
+          ]
+        },
+        {
+          "id": "renting-apartment.utilities",
+          "term": "utilities",
+          "ipa": "/juːˈtɪlətiz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "media",
+          "definition": "Services like electricity, water and gas.",
+          "register": "neutralny",
+          "contextPl": "Koszty poza czynszem",
+          "natural": "",
+          "forms": "",
+          "collocations": "pay utilities; utilities included",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How much are utilities in the winter?",
+              "pl": "Ile kosztują media zimą?",
+              "focusEn": "utilities",
+              "focusPl": "media"
+            },
+            {
+              "en": "We pay rent to the landlord and utilities separately.",
+              "pl": "Czynsz płacimy właścicielowi, a media osobno.",
+              "focusEn": "utilities",
+              "focusPl": "media"
+            }
+          ],
+          "acceptedAnswers": [
+            "utilities",
+            "utility"
+          ],
+          "acceptedTranslations": [
+            "media",
+            "rachunki",
+            "opłaty za media"
+          ]
+        },
+        {
+          "id": "renting-apartment.late-fee",
+          "term": "late fee",
+          "ipa": "/ˈleɪt ˌfiː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "opłata za zwłokę",
+          "definition": "Extra money you pay when a payment is late.",
+          "register": "neutralny",
+          "contextPl": "Kary za spóźnione płatności",
+          "natural": "",
+          "forms": "late fees",
+          "collocations": "charge a late fee",
+          "synonyms": "late charge",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If rent is late, there's a fifty-dollar late fee.",
+              "pl": "Jeśli czynsz się spóźni, jest pięćdziesiąt dolarów opłaty za zwłokę.",
+              "focusEn": "late fee",
+              "focusPl": "opłaty za zwłokę"
+            },
+            {
+              "en": "I got charged a late fee because the bank was closed.",
+              "pl": "Naliczono mi opłatę za zwłokę, bo bank był zamknięty.",
+              "focusEn": "late fee",
+              "focusPl": "opłatę za zwłokę"
+            }
+          ],
+          "acceptedAnswers": [
+            "late fee",
+            "late charge"
+          ],
+          "acceptedTranslations": [
+            "opłata za zwłokę",
+            "kara za spóźnienie"
+          ]
+        },
+        {
+          "id": "renting-apartment.application-fee",
+          "term": "application fee",
+          "ipa": "/ˌæplɪˈkeɪʃən ˌfiː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "opłata za wniosek",
+          "definition": "Money paid to apply to rent an apartment.",
+          "register": "neutralny",
+          "contextPl": "Koszty składania aplikacji",
+          "natural": "",
+          "forms": "application fees",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA często pobierana za sprawdzenie kandydata na najemcę.",
+          "examples": [
+            {
+              "en": "There's a forty-dollar application fee for each adult.",
+              "pl": "Za każdą dorosłą osobę jest czterdzieści dolarów opłaty za wniosek.",
+              "focusEn": "application fee",
+              "focusPl": "opłaty za wniosek"
+            },
+            {
+              "en": "Is the application fee refundable if we don't get the place?",
+              "pl": "Czy opłata za wniosek jest zwracana, jeśli nie dostaniemy mieszkania?",
+              "focusEn": "application fee",
+              "focusPl": "opłata za wniosek"
+            }
+          ],
+          "acceptedAnswers": [
+            "application fee"
+          ],
+          "acceptedTranslations": [
+            "opłata za wniosek",
+            "opłata aplikacyjna"
+          ]
+        },
+        {
+          "id": "renting-apartment.credit-check",
+          "term": "credit check",
+          "ipa": "/ˈkrɛdɪt ˌtʃɛk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "weryfikacja kredytowa",
+          "definition": "A check of how well a person has paid their debts.",
+          "register": "formalny",
+          "contextPl": "Sprawdzanie kandydata na najemcę",
+          "natural": "",
+          "forms": "credit checks",
+          "collocations": "run a credit check",
+          "synonyms": "background check",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The landlord will run a credit check before approving you.",
+              "pl": "Właściciel przeprowadzi weryfikację kredytową, zanim cię zaakceptuje.",
+              "focusEn": "credit check",
+              "focusPl": "weryfikację kredytową"
+            },
+            {
+              "en": "I'm worried my credit check won't look great.",
+              "pl": "Martwię się, że moja weryfikacja kredytowa nie wypadnie dobrze.",
+              "focusEn": "credit check",
+              "focusPl": "weryfikacja kredytowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "credit check"
+          ],
+          "acceptedTranslations": [
+            "weryfikacja kredytowa",
+            "sprawdzenie historii kredytowej"
+          ]
+        },
+        {
+          "id": "renting-apartment.rent-increase",
+          "term": "rent increase",
+          "ipa": "/ˈrɛnt ˌɪnkriːs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "podwyżka czynszu",
+          "definition": "A rise in the amount of rent.",
+          "register": "neutralny",
+          "contextPl": "Zmiany kosztów najmu",
+          "natural": "rent hike",
+          "forms": "rent increases",
+          "collocations": "",
+          "synonyms": "rent hike",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is there a rent increase when we renew?",
+              "pl": "Czy przy przedłużeniu umowy będzie podwyżka czynszu?",
+              "focusEn": "rent increase",
+              "focusPl": "podwyżka czynszu"
+            },
+            {
+              "en": "A ten percent rent increase is a lot.",
+              "pl": "Dziesięcioprocentowa podwyżka czynszu to dużo.",
+              "focusEn": "rent increase",
+              "focusPl": "podwyżka czynszu"
+            }
+          ],
+          "acceptedAnswers": [
+            "rent increase",
+            "rent hike"
+          ],
+          "acceptedTranslations": [
+            "podwyżka czynszu",
+            "wzrost czynszu"
+          ]
+        },
+        {
+          "id": "renting-apartment.proof-of-income",
+          "term": "proof of income",
+          "ipa": "/ˌpruːf əv ˈɪnkʌm/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "potwierdzenie dochodów",
+          "definition": "Documents that show how much money you earn.",
+          "register": "formalny",
+          "contextPl": "Dokumenty do wniosku o najem",
+          "natural": "",
+          "forms": "",
+          "collocations": "show proof of income",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bring proof of income, like your last three pay stubs.",
+              "pl": "Przynieś potwierdzenie dochodów, na przykład trzy ostatnie odcinki wypłaty.",
+              "focusEn": "proof of income",
+              "focusPl": "potwierdzenie dochodów"
+            },
+            {
+              "en": "They asked for proof of income equal to three times the rent.",
+              "pl": "Poprosili o potwierdzenie dochodów w wysokości trzykrotności czynszu.",
+              "focusEn": "proof of income",
+              "focusPl": "potwierdzenie dochodów"
+            }
+          ],
+          "acceptedAnswers": [
+            "proof of income"
+          ],
+          "acceptedTranslations": [
+            "potwierdzenie dochodów",
+            "zaświadczenie o dochodach"
+          ]
+        },
+        {
+          "id": "renting-apartment.first-and-last-months-rent",
+          "term": "first and last month's rent",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "czynsz za pierwszy i ostatni miesiąc",
+          "definition": "Rent for the first and final months, paid before moving in.",
+          "register": "neutralny",
+          "contextPl": "Koszty na start",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Często wymagane w USA oprócz kaucji.",
+          "examples": [
+            {
+              "en": "They want first and last month's rent plus a deposit.",
+              "pl": "Chcą czynszu za pierwszy i ostatni miesiąc z góry plus kaucji.",
+              "focusEn": "first and last month's rent",
+              "focusPl": "czynszu za pierwszy i ostatni miesiąc"
+            },
+            {
+              "en": "Paying first and last month's rent upfront is common here.",
+              "pl": "Płacenie czynszu za pierwszy i ostatni miesiąc z góry jest tu powszechne.",
+              "focusEn": "first and last month's rent",
+              "focusPl": "czynszu za pierwszy i ostatni miesiąc"
+            }
+          ],
+          "acceptedAnswers": [
+            "first and last month's rent",
+            "first and last"
+          ],
+          "acceptedTranslations": [
+            "czynsz za pierwszy i ostatni miesiąc",
+            "czynsz z góry"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renting-apartment.repairs",
+      "namePl": "Usterki i problemy",
+      "scenePl": "Zgłaszanie usterek zarządcy przez telefon",
+      "entries": [
+        {
+          "id": "renting-apartment.broken",
+          "term": "broken",
+          "ipa": "/ˈbroʊkən/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zepsuty",
+          "definition": "Not working.",
+          "register": "neutralny",
+          "contextPl": "Opis usterki",
+          "natural": "",
+          "forms": "",
+          "collocations": "broken lock; broken heater",
+          "synonyms": "not working",
+          "antonyms": "working",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The dishwasher has been broken for a week.",
+              "pl": "Zmywarka jest zepsuta od tygodnia.",
+              "focusEn": "broken",
+              "focusPl": "zepsuta"
+            },
+            {
+              "en": "The lock on the front door is broken.",
+              "pl": "Zamek w drzwiach wejściowych jest zepsuty.",
+              "focusEn": "broken",
+              "focusPl": "zepsuty"
+            }
+          ],
+          "acceptedAnswers": [
+            "broken"
+          ],
+          "acceptedTranslations": [
+            "zepsuty",
+            "uszkodzony"
+          ]
+        },
+        {
+          "id": "renting-apartment.fix",
+          "term": "fix",
+          "ipa": "/fɪks/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "naprawić",
+          "definition": "To make something work again.",
+          "register": "neutralny",
+          "contextPl": "Prośba o naprawę",
+          "natural": "",
+          "forms": "fixed",
+          "collocations": "fix the heater; get it fixed",
+          "synonyms": "repair",
+          "antonyms": "break",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "When can someone come to fix the heater?",
+              "pl": "Kiedy ktoś może przyjść naprawić ogrzewanie?",
+              "focusEn": "fix",
+              "focusPl": "naprawić"
+            },
+            {
+              "en": "They fixed the leak, but the ceiling is still stained.",
+              "pl": "Naprawili przeciek, ale na suficie nadal jest plama.",
+              "focusEn": "fixed",
+              "focusPl": "Naprawili"
+            }
+          ],
+          "acceptedAnswers": [
+            "fix",
+            "repair"
+          ],
+          "acceptedTranslations": [
+            "naprawić",
+            "naprawiać"
+          ]
+        },
+        {
+          "id": "renting-apartment.mouse",
+          "term": "mouse",
+          "ipa": "/maʊs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "mysz",
+          "definition": "A small animal with a long tail that sometimes lives in buildings.",
+          "register": "neutralny",
+          "contextPl": "Szkodniki w mieszkaniu",
+          "natural": "",
+          "forms": "mice",
+          "collocations": "a mouse in the kitchen",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Liczba mnoga: „mice”.",
+          "examples": [
+            {
+              "en": "I think there's a mouse behind the stove.",
+              "pl": "Chyba za kuchenką jest mysz.",
+              "focusEn": "mouse",
+              "focusPl": "mysz"
+            },
+            {
+              "en": "We found mice in the kitchen cabinets.",
+              "pl": "Znaleźliśmy myszy w szafkach kuchennych.",
+              "focusEn": "mice",
+              "focusPl": "myszy"
+            }
+          ],
+          "acceptedAnswers": [
+            "mouse"
+          ],
+          "acceptedTranslations": [
+            "mysz",
+            "myszka"
+          ]
+        },
+        {
+          "id": "renting-apartment.leak",
+          "term": "leak",
+          "ipa": "/liːk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przeciek",
+          "definition": "A hole or crack through which water comes out.",
+          "register": "neutralny",
+          "contextPl": "Problemy z wodą",
+          "natural": "",
+          "forms": "leaks",
+          "collocations": "a leak under the sink; fix a leak",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a leak under the kitchen sink.",
+              "pl": "Pod zlewem w kuchni jest przeciek.",
+              "focusEn": "leak",
+              "focusPl": "przeciek"
+            },
+            {
+              "en": "Water from the leak upstairs dripped onto my bed.",
+              "pl": "Woda z przecieku piętro wyżej kapała mi na łóżko.",
+              "focusEn": "leak",
+              "focusPl": "przecieku"
+            }
+          ],
+          "acceptedAnswers": [
+            "leak"
+          ],
+          "acceptedTranslations": [
+            "przeciek",
+            "wyciek"
+          ]
+        },
+        {
+          "id": "renting-apartment.repair",
+          "term": "repair",
+          "ipa": "/rɪˈpɛr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "naprawa",
+          "definition": "Work done to fix something.",
+          "register": "neutralny",
+          "contextPl": "Kto płaci za naprawy",
+          "natural": "",
+          "forms": "repairs",
+          "collocations": "pay for repairs; make repairs",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Who pays for repairs, me or the landlord?",
+              "pl": "Kto płaci za naprawy, ja czy właściciel?",
+              "focusEn": "repairs",
+              "focusPl": "naprawy"
+            },
+            {
+              "en": "The repair took two days because they needed a part.",
+              "pl": "Naprawa trwała dwa dni, bo potrzebowali części.",
+              "focusEn": "repair",
+              "focusPl": "Naprawa"
+            }
+          ],
+          "acceptedAnswers": [
+            "repair"
+          ],
+          "acceptedTranslations": [
+            "naprawa",
+            "remont"
+          ]
+        },
+        {
+          "id": "renting-apartment.maintenance-request",
+          "term": "maintenance request",
+          "ipa": "/ˈmeɪntənəns rɪˌkwɛst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zgłoszenie usterki",
+          "definition": "An official request asking the building to fix something.",
+          "register": "neutralny",
+          "contextPl": "Zgłaszanie problemów przez aplikację lub formularz",
+          "natural": "work order",
+          "forms": "maintenance requests",
+          "collocations": "submit a maintenance request",
+          "synonyms": "work order",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I submitted a maintenance request through the app yesterday.",
+              "pl": "Wczoraj złożyłem zgłoszenie usterki przez aplikację.",
+              "focusEn": "maintenance request",
+              "focusPl": "zgłoszenie usterki"
+            },
+            {
+              "en": "My maintenance request still hasn't been answered.",
+              "pl": "Na moje zgłoszenie usterki nadal nikt nie odpowiedział.",
+              "focusEn": "maintenance request",
+              "focusPl": "zgłoszenie usterki"
+            }
+          ],
+          "acceptedAnswers": [
+            "maintenance request",
+            "work order"
+          ],
+          "acceptedTranslations": [
+            "zgłoszenie usterki",
+            "zgłoszenie serwisowe"
+          ]
+        },
+        {
+          "id": "renting-apartment.clogged",
+          "term": "clogged",
+          "ipa": "/klɑːɡd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zatkany",
+          "definition": "Blocked so that water cannot flow.",
+          "register": "neutralny",
+          "contextPl": "Problemy z kanalizacją",
+          "natural": "",
+          "forms": "",
+          "collocations": "a clogged drain; clogged toilet",
+          "synonyms": "blocked",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bathroom sink is clogged again.",
+              "pl": "Umywalka w łazience znowu jest zatkana.",
+              "focusEn": "clogged",
+              "focusPl": "zatkana"
+            },
+            {
+              "en": "The toilet is clogged and almost overflowing.",
+              "pl": "Toaleta jest zatkana i prawie się przelewa.",
+              "focusEn": "clogged",
+              "focusPl": "zatkana"
+            }
+          ],
+          "acceptedAnswers": [
+            "clogged",
+            "blocked"
+          ],
+          "acceptedTranslations": [
+            "zatkany",
+            "zapchany"
+          ]
+        },
+        {
+          "id": "renting-apartment.cockroach",
+          "term": "cockroach",
+          "ipa": "/ˈkɑːkˌroʊtʃ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "karaluch",
+          "definition": "A large brown insect that lives in dirty or warm places.",
+          "register": "neutralny",
+          "contextPl": "Szkodniki w mieszkaniu",
+          "natural": "roach",
+          "forms": "cockroaches",
+          "collocations": "",
+          "synonyms": "roach",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I saw a cockroach in the kitchen last night.",
+              "pl": "Wczoraj wieczorem widziałem karalucha w kuchni.",
+              "focusEn": "cockroach",
+              "focusPl": "karalucha"
+            },
+            {
+              "en": "The building sprays for cockroaches every month.",
+              "pl": "Budynek co miesiąc pryska przeciwko karaluchom.",
+              "focusEn": "cockroaches",
+              "focusPl": "karaluchom"
+            }
+          ],
+          "acceptedAnswers": [
+            "cockroach",
+            "roach"
+          ],
+          "acceptedTranslations": [
+            "karaluch",
+            "prusak"
+          ]
+        },
+        {
+          "id": "renting-apartment.noise-complaint",
+          "term": "noise complaint",
+          "ipa": "/ˈnɔɪz kəmˌpleɪnt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "skarga na hałas",
+          "definition": "An official complaint about loud neighbors.",
+          "register": "neutralny",
+          "contextPl": "Konflikty z sąsiadami",
+          "natural": "",
+          "forms": "noise complaints",
+          "collocations": "file a noise complaint",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our neighbors filed a noise complaint about our party.",
+              "pl": "Sąsiedzi złożyli skargę na hałas z powodu naszej imprezy.",
+              "focusEn": "noise complaint",
+              "focusPl": "skargę na hałas"
+            },
+            {
+              "en": "I don't want to make a noise complaint, but the music is too loud.",
+              "pl": "Nie chcę składać skargi na hałas, ale muzyka jest za głośna.",
+              "focusEn": "noise complaint",
+              "focusPl": "skargi na hałas"
+            }
+          ],
+          "acceptedAnswers": [
+            "noise complaint"
+          ],
+          "acceptedTranslations": [
+            "skarga na hałas"
+          ]
+        },
+        {
+          "id": "renting-apartment.water-pressure",
+          "term": "water pressure",
+          "ipa": "/ˈwɔːtər ˌprɛʃər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "ciśnienie wody",
+          "definition": "How strongly water comes out of a faucet or shower.",
+          "register": "neutralny",
+          "contextPl": "Problemy z instalacją",
+          "natural": "",
+          "forms": "",
+          "collocations": "low water pressure",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The water pressure in the shower is really low.",
+              "pl": "Ciśnienie wody pod prysznicem jest bardzo niskie.",
+              "focusEn": "water pressure",
+              "focusPl": "Ciśnienie wody"
+            },
+            {
+              "en": "Can someone check the water pressure in our unit?",
+              "pl": "Czy ktoś może sprawdzić ciśnienie wody w naszym mieszkaniu?",
+              "focusEn": "water pressure",
+              "focusPl": "ciśnienie wody"
+            }
+          ],
+          "acceptedAnswers": [
+            "water pressure"
+          ],
+          "acceptedTranslations": [
+            "ciśnienie wody"
+          ]
+        },
+        {
+          "id": "renting-apartment.handyman",
+          "term": "handyman",
+          "ipa": "/ˈhændiˌmæn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "złota rączka",
+          "definition": "A person who does small repairs.",
+          "register": "neutralny",
+          "contextPl": "Drobne naprawy w mieszkaniu",
+          "natural": "",
+          "forms": "handymen",
+          "collocations": "call a handyman",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The landlord is sending a handyman this afternoon.",
+              "pl": "Właściciel przysyła dziś po południu złotą rączkę.",
+              "focusEn": "handyman",
+              "focusPl": "złotą rączkę"
+            },
+            {
+              "en": "The handyman fixed the door and the window in an hour.",
+              "pl": "Złota rączka naprawiła drzwi i okno w godzinę.",
+              "focusEn": "handyman",
+              "focusPl": "Złota rączka"
+            }
+          ],
+          "acceptedAnswers": [
+            "handyman"
+          ],
+          "acceptedTranslations": [
+            "złota rączka",
+            "fachowiec"
+          ]
+        },
+        {
+          "id": "renting-apartment.pest-control",
+          "term": "pest control",
+          "ipa": "/ˈpɛst kənˌtroʊl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "firma od szkodników",
+          "definition": "A service that removes insects and mice from buildings.",
+          "register": "neutralny",
+          "contextPl": "Walka ze szkodnikami",
+          "natural": "exterminator",
+          "forms": "",
+          "collocations": "call pest control",
+          "synonyms": "exterminator",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you send pest control? We have mice.",
+              "pl": "Może pan przysłać firmę od szkodników? Mamy myszy.",
+              "focusEn": "pest control",
+              "focusPl": "firmę od szkodników"
+            },
+            {
+              "en": "Pest control is coming on Tuesday morning.",
+              "pl": "Firma od szkodników przyjdzie we wtorek rano.",
+              "focusEn": "Pest control",
+              "focusPl": "Firma od szkodników"
+            }
+          ],
+          "acceptedAnswers": [
+            "pest control",
+            "exterminator"
+          ],
+          "acceptedTranslations": [
+            "firma od szkodników",
+            "dezynsekcja",
+            "deratyzacja"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renting-apartment.moving-out",
+      "namePl": "Wyprowadzka i rozliczenie",
+      "scenePl": "Oddawanie kluczy właścicielowi w dniu wyprowadzki",
+      "entries": [
+        {
+          "id": "renting-apartment.move-out",
+          "term": "move out",
+          "ipa": "/ˌmuːv ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wyprowadzić się",
+          "definition": "To leave the place where you live.",
+          "register": "neutralny",
+          "contextPl": "Koniec najmu",
+          "natural": "",
+          "forms": "moved out",
+          "collocations": "move out of an apartment",
+          "synonyms": "",
+          "antonyms": "move in",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're moving out at the end of the month.",
+              "pl": "Wyprowadzamy się pod koniec miesiąca.",
+              "focusEn": "moving out",
+              "focusPl": "Wyprowadzamy się"
+            },
+            {
+              "en": "Everything has to be gone the day you move out.",
+              "pl": "W dniu, w którym się wyprowadzisz, wszystko musi zniknąć.",
+              "focusEn": "move out",
+              "focusPl": "się wyprowadzisz"
+            }
+          ],
+          "acceptedAnswers": [
+            "move out"
+          ],
+          "acceptedTranslations": [
+            "wyprowadzić się",
+            "wyprowadzać się"
+          ]
+        },
+        {
+          "id": "renting-apartment.move-in",
+          "term": "move in",
+          "ipa": "/ˌmuːv ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wprowadzić się",
+          "definition": "To start living in a new home.",
+          "register": "neutralny",
+          "contextPl": "Początek najmu",
+          "natural": "",
+          "forms": "moved in",
+          "collocations": "move into an apartment",
+          "synonyms": "",
+          "antonyms": "move out",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The new tenants move in on Saturday, so please leave by Friday.",
+              "pl": "Nowi najemcy wprowadzają się w sobotę, więc proszę wyprowadzić się do piątku.",
+              "focusEn": "move in",
+              "focusPl": "wprowadzają się"
+            },
+            {
+              "en": "When we moved in, the walls were already scratched.",
+              "pl": "Kiedy się wprowadziliśmy, ściany były już porysowane.",
+              "focusEn": "moved in",
+              "focusPl": "się wprowadziliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "move in"
+          ],
+          "acceptedTranslations": [
+            "wprowadzić się",
+            "wprowadzać się"
+          ]
+        },
+        {
+          "id": "renting-apartment.damage",
+          "term": "damage",
+          "ipa": "/ˈdæmɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zniszczenia",
+          "definition": "Harm that makes something broken or less good.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie stanu mieszkania",
+          "natural": "",
+          "forms": "",
+          "collocations": "check for damage; water damage",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Niepoliczalne: „some damage”, nie „a damage”.",
+          "examples": [
+            {
+              "en": "The landlord checked every room for damage.",
+              "pl": "Właściciel sprawdził każdy pokój pod kątem zniszczeń.",
+              "focusEn": "damage",
+              "focusPl": "zniszczeń"
+            },
+            {
+              "en": "There's some damage to the floor from the couch.",
+              "pl": "Na podłodze są drobne zniszczenia od kanapy.",
+              "focusEn": "damage",
+              "focusPl": "zniszczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "damage"
+          ],
+          "acceptedTranslations": [
+            "zniszczenia",
+            "szkoda",
+            "uszkodzenie"
+          ]
+        },
+        {
+          "id": "renting-apartment.hand-over-the-keys",
+          "term": "hand over the keys",
+          "ipa": "/ˌhænd ˈoʊvər ðə ˈkiːz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oddać klucze",
+          "definition": "To give the keys back to the owner when you leave.",
+          "register": "neutralny",
+          "contextPl": "Formalne zakończenie najmu",
+          "natural": "return the keys",
+          "forms": "handed – handed",
+          "collocations": "",
+          "synonyms": "return the keys",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hand over the keys to the manager when you leave.",
+              "pl": "Oddaj klucze zarządcy, kiedy będziesz wychodzić.",
+              "focusEn": "Hand over the keys",
+              "focusPl": "Oddaj klucze"
+            },
+            {
+              "en": "I handed over the keys and took photos of every room.",
+              "pl": "Oddałem klucze i zrobiłem zdjęcia każdego pokoju.",
+              "focusEn": "handed over the keys",
+              "focusPl": "Oddałem klucze"
+            }
+          ],
+          "acceptedAnswers": [
+            "hand over the keys",
+            "return the keys"
+          ],
+          "acceptedTranslations": [
+            "oddać klucze",
+            "zwrócić klucze"
+          ]
+        },
+        {
+          "id": "renting-apartment.give-notice",
+          "term": "give notice",
+          "ipa": "/ˌɡɪv ˈnoʊtɪs/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wypowiedzieć umowę",
+          "definition": "To tell your landlord officially that you will leave.",
+          "register": "formalny",
+          "contextPl": "Uprzedzenie o wyprowadzce",
+          "natural": "",
+          "forms": "gave – given",
+          "collocations": "give thirty days' notice",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You have to give notice thirty days before you move out.",
+              "pl": "Musisz wypowiedzieć umowę trzydzieści dni przed wyprowadzką.",
+              "focusEn": "give notice",
+              "focusPl": "wypowiedzieć umowę"
+            },
+            {
+              "en": "I gave notice in writing, just to be safe.",
+              "pl": "Złożyłem wypowiedzenie na piśmie, tak na wszelki wypadek.",
+              "focusEn": "gave notice",
+              "focusPl": "Złożyłem wypowiedzenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "give notice"
+          ],
+          "acceptedTranslations": [
+            "wypowiedzieć umowę",
+            "złożyć wypowiedzenie"
+          ]
+        },
+        {
+          "id": "renting-apartment.get-the-deposit-back",
+          "term": "get the deposit back",
+          "ipa": "/ˌɡɛt ðə dɪˈpɑːzɪt ˌbæk/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odzyskać kaucję",
+          "definition": "To receive the security deposit back from the landlord.",
+          "register": "neutralny",
+          "contextPl": "Rozliczenie po wyprowadzce",
+          "natural": "",
+          "forms": "got – gotten",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We cleaned everything so we could get the deposit back.",
+              "pl": "Wszystko wysprzątaliśmy, żeby odzyskać kaucję.",
+              "focusEn": "get the deposit back",
+              "focusPl": "odzyskać kaucję"
+            },
+            {
+              "en": "Did you get your deposit back from the old place?",
+              "pl": "Odzyskałeś kaucję za stare mieszkanie?",
+              "focusEn": "get your deposit back",
+              "focusPl": "Odzyskałeś kaucję"
+            }
+          ],
+          "acceptedAnswers": [
+            "get the deposit back",
+            "get my deposit back"
+          ],
+          "acceptedTranslations": [
+            "odzyskać kaucję",
+            "dostać zwrot kaucji"
+          ]
+        },
+        {
+          "id": "renting-apartment.wear-and-tear",
+          "term": "wear and tear",
+          "ipa": "/ˌwɛr ən ˈtɛr/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "normalne zużycie",
+          "definition": "Damage that happens naturally from normal use over time.",
+          "register": "formalny",
+          "contextPl": "Co nie obciąża najemcy",
+          "natural": "",
+          "forms": "",
+          "collocations": "normal wear and tear",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Small scratches count as normal wear and tear.",
+              "pl": "Drobne rysy to normalne zużycie.",
+              "focusEn": "wear and tear",
+              "focusPl": "normalne zużycie"
+            },
+            {
+              "en": "The landlord can't charge you for wear and tear.",
+              "pl": "Właściciel nie może obciążyć cię za normalne zużycie.",
+              "focusEn": "wear and tear",
+              "focusPl": "normalne zużycie"
+            }
+          ],
+          "acceptedAnswers": [
+            "wear and tear"
+          ],
+          "acceptedTranslations": [
+            "normalne zużycie",
+            "zużycie eksploatacyjne"
+          ]
+        },
+        {
+          "id": "renting-apartment.deduct",
+          "term": "deduct",
+          "ipa": "/dɪˈdʌkt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "potrącić",
+          "definition": "To take an amount away from a total.",
+          "register": "formalny",
+          "contextPl": "Potrącenia z kaucji",
+          "natural": "",
+          "forms": "deducted",
+          "collocations": "deduct from the deposit",
+          "synonyms": "subtract",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They deducted a hundred dollars for the broken blinds.",
+              "pl": "Potrącili sto dolarów za zepsute żaluzje.",
+              "focusEn": "deducted",
+              "focusPl": "Potrącili"
+            },
+            {
+              "en": "The landlord can deduct cleaning costs from the deposit.",
+              "pl": "Właściciel może potrącić koszty sprzątania z kaucji.",
+              "focusEn": "deduct",
+              "focusPl": "potrącić"
+            }
+          ],
+          "acceptedAnswers": [
+            "deduct",
+            "subtract"
+          ],
+          "acceptedTranslations": [
+            "potrącić",
+            "odliczyć",
+            "potrącać"
+          ]
+        },
+        {
+          "id": "renting-apartment.walk-through",
+          "term": "walk-through",
+          "ipa": "/ˈwɔːk ˌθruː/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "obchód mieszkania",
+          "definition": "An inspection of a rented home with the landlord before moving in or out.",
+          "register": "neutralny",
+          "contextPl": "Końcowy odbiór mieszkania",
+          "natural": "inspection",
+          "forms": "walk-throughs",
+          "collocations": "final walk-through",
+          "synonyms": "inspection",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll do a final walk-through together on Friday.",
+              "pl": "W piątek zrobimy razem końcowy obchód mieszkania.",
+              "focusEn": "walk-through",
+              "focusPl": "obchód mieszkania"
+            },
+            {
+              "en": "During the walk-through, she pointed out a stain on the carpet.",
+              "pl": "Podczas obchodu mieszkania wskazała plamę na wykładzinie.",
+              "focusEn": "walk-through",
+              "focusPl": "obchodu mieszkania"
+            }
+          ],
+          "acceptedAnswers": [
+            "walk-through",
+            "walkthrough"
+          ],
+          "acceptedTranslations": [
+            "obchód mieszkania",
+            "odbiór mieszkania"
+          ]
+        },
+        {
+          "id": "renting-apartment.forwarding-address",
+          "term": "forwarding address",
+          "ipa": "/ˈfɔːrwərdɪŋ əˌdrɛs/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nowy adres do korespondencji",
+          "definition": "The address where your mail should be sent after you move.",
+          "register": "formalny",
+          "contextPl": "Przekazanie nowego adresu",
+          "natural": "",
+          "forms": "forwarding addresses",
+          "collocations": "leave a forwarding address",
+          "synonyms": "new address",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please leave a forwarding address for your deposit check.",
+              "pl": "Proszę zostawić nowy adres do korespondencji, na który wyślemy czek z kaucją.",
+              "focusEn": "forwarding address",
+              "focusPl": "nowy adres do korespondencji"
+            },
+            {
+              "en": "I gave the landlord my forwarding address in Chicago.",
+              "pl": "Podałem właścicielowi mój nowy adres do korespondencji w Chicago.",
+              "focusEn": "forwarding address",
+              "focusPl": "nowy adres do korespondencji"
+            }
+          ],
+          "acceptedAnswers": [
+            "forwarding address",
+            "new address"
+          ],
+          "acceptedTranslations": [
+            "nowy adres do korespondencji",
+            "adres do przekierowania poczty"
+          ]
+        },
+        {
+          "id": "renting-apartment.evict",
+          "term": "evict",
+          "ipa": "/ɪˈvɪkt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "eksmitować",
+          "definition": "To legally force someone to leave the home they rent.",
+          "register": "formalny",
+          "contextPl": "Przymusowe zakończenie najmu",
+          "natural": "",
+          "forms": "evicted",
+          "collocations": "be evicted; evict a tenant",
+          "synonyms": "kick out",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „eviction” (eksmisja).",
+          "examples": [
+            {
+              "en": "The landlord can't evict you without going to court.",
+              "pl": "Właściciel nie może cię eksmitować bez sądu.",
+              "focusEn": "evict",
+              "focusPl": "eksmitować"
+            },
+            {
+              "en": "The tenants downstairs were evicted for not paying rent.",
+              "pl": "Lokatorzy z dołu zostali eksmitowani za niepłacenie czynszu.",
+              "focusEn": "evicted",
+              "focusPl": "eksmitowani"
+            }
+          ],
+          "acceptedAnswers": [
+            "evict",
+            "kick out"
+          ],
+          "acceptedTranslations": [
+            "eksmitować",
+            "wyrzucić z mieszkania"
+          ]
+        }
+      ]
+    }
+  ]
+}

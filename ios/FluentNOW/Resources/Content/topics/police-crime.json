@@ -1,0 +1,2516 @@
+{
+  "schemaVersion": 1,
+  "id": "police-crime",
+  "namePl": "Policja i przestępstwa",
+  "nameEn": "Police and Crime",
+  "group": "services",
+  "symbol": "shield",
+  "summaryPl": "Zgłaszanie przestępstwa, kradzieże, świadek i opis sprawcy, działania policji oraz bezpieczeństwo w okolicy.",
+  "aliases": [
+    "policja",
+    "przestępstwo",
+    "kradzież",
+    "zgłoszenie",
+    "świadek",
+    "komisariat",
+    "włamanie",
+    "police",
+    "crime"
+  ],
+  "categories": [
+    {
+      "id": "police-crime.reporting",
+      "namePl": "Zgłaszanie przestępstwa",
+      "scenePl": "Komisariat policji: zgłaszasz kradzież roweru sprzed bloku",
+      "entries": [
+        {
+          "id": "police-crime.police",
+          "term": "police",
+          "ipa": "/pəˈliːs/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "policja",
+          "definition": "The organization of people whose job is to protect people and catch criminals.",
+          "register": "neutralny",
+          "contextPl": "Służby porządkowe",
+          "natural": "cops",
+          "forms": "",
+          "collocations": "call the police; the police arrived; tell the police",
+          "synonyms": "cops",
+          "antonyms": "",
+          "notePl": "Czasownik w liczbie mnogiej: „the police are here”.",
+          "examples": [
+            {
+              "en": "The police said bikes are stolen on our street every week.",
+              "pl": "Policja powiedziała, że na naszej ulicy co tydzień kradną rowery.",
+              "focusEn": "police",
+              "focusPl": "Policja"
+            },
+            {
+              "en": "I went to the police because my insurance needs a report.",
+              "pl": "Poszedłem na policję, bo ubezpieczyciel potrzebuje zgłoszenia.",
+              "focusEn": "police",
+              "focusPl": "policję"
+            }
+          ],
+          "acceptedAnswers": [
+            "police",
+            "cops"
+          ],
+          "acceptedTranslations": [
+            "policja"
+          ]
+        },
+        {
+          "id": "police-crime.police-officer",
+          "term": "police officer",
+          "ipa": "/pəˈliːs ˌɔːfɪsər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "policjant",
+          "definition": "A member of the police.",
+          "register": "neutralny",
+          "contextPl": "Kontakt z funkcjonariuszem",
+          "natural": "cop",
+          "forms": "police officers",
+          "collocations": "ask a police officer; a female police officer",
+          "synonyms": "cop; officer",
+          "antonyms": "",
+          "notePl": "Potocznie „cop”; zwracając się: „Officer”.",
+          "examples": [
+            {
+              "en": "The police officer at the front desk gave me a form to fill out.",
+              "pl": "Policjant w dyżurce dał mi formularz do wypełnienia.",
+              "focusEn": "police officer",
+              "focusPl": "Policjant"
+            },
+            {
+              "en": "A police officer took me to a small room to talk.",
+              "pl": "Policjantka zaprowadziła mnie do małego pokoju na rozmowę.",
+              "focusEn": "police officer",
+              "focusPl": "Policjantka"
+            }
+          ],
+          "acceptedAnswers": [
+            "police officer",
+            "cop",
+            "officer",
+            "policeman",
+            "policewoman"
+          ],
+          "acceptedTranslations": [
+            "policjant",
+            "policjantka",
+            "funkcjonariusz"
+          ]
+        },
+        {
+          "id": "police-crime.police-station",
+          "term": "police station",
+          "ipa": "/pəˈliːs ˌsteɪʃən/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "komisariat",
+          "definition": "A building where police officers work.",
+          "register": "neutralny",
+          "contextPl": "Miejsce zgłoszeń",
+          "natural": "",
+          "forms": "police stations",
+          "collocations": "go to the police station; the local police station",
+          "synonyms": "precinct",
+          "antonyms": "",
+          "notePl": "W dużych miastach w USA też „precinct”.",
+          "examples": [
+            {
+              "en": "The police station is only two blocks from my apartment.",
+              "pl": "Komisariat jest tylko dwie przecznice od mojego mieszkania.",
+              "focusEn": "police station",
+              "focusPl": "Komisariat"
+            },
+            {
+              "en": "I waited at the police station for almost an hour.",
+              "pl": "Na komisariacie czekałem prawie godzinę.",
+              "focusEn": "police station",
+              "focusPl": "komisariacie"
+            }
+          ],
+          "acceptedAnswers": [
+            "police station",
+            "precinct"
+          ],
+          "acceptedTranslations": [
+            "komisariat",
+            "posterunek policji",
+            "komenda"
+          ]
+        },
+        {
+          "id": "police-crime.call-the-police",
+          "term": "call the police",
+          "ipa": "/ˌkɔːl ðə pəˈliːs/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zadzwonić na policję",
+          "definition": "To phone the police to ask for help or report a crime.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy",
+          "natural": "",
+          "forms": "called; calling",
+          "collocations": "call the police right away",
+          "synonyms": "call 911",
+          "antonyms": "",
+          "notePl": "Numer alarmowy w USA to 911.",
+          "examples": [
+            {
+              "en": "My neighbor wanted to call the police as soon as she saw the cut lock.",
+              "pl": "Sąsiadka chciała zadzwonić na policję, gdy tylko zobaczyła przeciętą kłódkę.",
+              "focusEn": "call the police",
+              "focusPl": "zadzwonić na policję"
+            },
+            {
+              "en": "The officer asked why I didn't call the police last night.",
+              "pl": "Policjant zapytał, dlaczego nie zadzwoniłem na policję wczoraj wieczorem.",
+              "focusEn": "call the police",
+              "focusPl": "zadzwoniłem na policję"
+            }
+          ],
+          "acceptedAnswers": [
+            "call the police",
+            "call 911",
+            "call the cops"
+          ],
+          "acceptedTranslations": [
+            "zadzwonić na policję",
+            "wezwać policję",
+            "dzwonić na policję"
+          ]
+        },
+        {
+          "id": "police-crime.describe",
+          "term": "describe",
+          "ipa": "/dɪˈskraɪb/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "opisać",
+          "definition": "To say what someone or something looks like or what happened.",
+          "register": "neutralny",
+          "contextPl": "Opis rzeczy i zdarzeń",
+          "natural": "",
+          "forms": "described; describing",
+          "collocations": "describe the bike; describe what happened",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can you describe the bike for me? Color, size, anything special?",
+              "pl": "Może pan opisać rower? Kolor, rozmiar, coś szczególnego?",
+              "focusEn": "describe",
+              "focusPl": "opisać"
+            },
+            {
+              "en": "I described the bike and gave them a photo from my phone.",
+              "pl": "Opisałem rower i dałem im zdjęcie z telefonu.",
+              "focusEn": "described",
+              "focusPl": "Opisałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "describe"
+          ],
+          "acceptedTranslations": [
+            "opisać",
+            "opisywać"
+          ]
+        },
+        {
+          "id": "police-crime.report",
+          "term": "report",
+          "ipa": "/rɪˈpɔːrt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zgłosić",
+          "definition": "To tell the police officially about a crime or problem.",
+          "register": "neutralny",
+          "contextPl": "Zgłaszanie przestępstw",
+          "natural": "",
+          "forms": "reported; reporting",
+          "collocations": "report a crime; report a theft; report it to the police",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm here to report a stolen bike.",
+              "pl": "Przyszedłem zgłosić kradzież roweru.",
+              "focusEn": "report",
+              "focusPl": "zgłosić"
+            },
+            {
+              "en": "Most people don't report small thefts, but the officer said they should.",
+              "pl": "Większość ludzi nie zgłasza drobnych kradzieży, ale policjant powiedział, że powinni.",
+              "focusEn": "report",
+              "focusPl": "zgłasza"
+            }
+          ],
+          "acceptedAnswers": [
+            "report"
+          ],
+          "acceptedTranslations": [
+            "zgłosić",
+            "zgłaszać",
+            "złożyć zawiadomienie",
+            "powiadomić"
+          ]
+        },
+        {
+          "id": "police-crime.police-report",
+          "term": "police report",
+          "ipa": "/pəˈliːs rɪˌpɔːrt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "protokół policyjny",
+          "definition": "An official document that describes a crime or accident.",
+          "register": "formalny",
+          "contextPl": "Dokumentacja zgłoszenia",
+          "natural": "",
+          "forms": "police reports",
+          "collocations": "file a police report; a copy of the police report",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Często potrzebny do ubezpieczenia.",
+          "examples": [
+            {
+              "en": "My insurance company needs a copy of the police report.",
+              "pl": "Mój ubezpieczyciel potrzebuje kopii protokołu policyjnego.",
+              "focusEn": "police report",
+              "focusPl": "protokołu policyjnego"
+            },
+            {
+              "en": "It took twenty minutes to finish the police report.",
+              "pl": "Spisanie protokołu policyjnego zajęło dwadzieścia minut.",
+              "focusEn": "police report",
+              "focusPl": "protokołu policyjnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "police report"
+          ],
+          "acceptedTranslations": [
+            "protokół policyjny",
+            "raport policyjny",
+            "zgłoszenie",
+            "protokół"
+          ]
+        },
+        {
+          "id": "police-crime.detective",
+          "term": "detective",
+          "ipa": "/dɪˈtɛktɪv/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "detektyw",
+          "definition": "A police officer whose job is to find out who committed a crime.",
+          "register": "neutralny",
+          "contextPl": "Prowadzenie śledztwa",
+          "natural": "",
+          "forms": "detectives",
+          "collocations": "a police detective; the detective on the case",
+          "synonyms": "investigator",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A detective will call you if they find more stolen bikes.",
+              "pl": "Śledczy zadzwoni do pana, jeśli znajdą więcej skradzionych rowerów.",
+              "focusEn": "detective",
+              "focusPl": "Śledczy"
+            },
+            {
+              "en": "The detective said a gang has been stealing bikes all over the city.",
+              "pl": "Detektyw powiedział, że jakaś grupa kradnie rowery w całym mieście.",
+              "focusEn": "detective",
+              "focusPl": "Detektyw"
+            }
+          ],
+          "acceptedAnswers": [
+            "detective",
+            "investigator"
+          ],
+          "acceptedTranslations": [
+            "detektyw",
+            "śledczy",
+            "funkcjonariusz dochodzeniowy"
+          ]
+        },
+        {
+          "id": "police-crime.statement",
+          "term": "statement",
+          "ipa": "/ˈsteɪtmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zeznanie",
+          "definition": "An official written or spoken account of what you saw or know.",
+          "register": "formalny",
+          "contextPl": "Składanie zeznań",
+          "natural": "",
+          "forms": "statements",
+          "collocations": "give a statement; sign a statement; take a statement",
+          "synonyms": "testimony",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The officer took my statement and asked me to sign it.",
+              "pl": "Policjant spisał moje zeznanie i poprosił, żebym je podpisał.",
+              "focusEn": "statement",
+              "focusPl": "zeznanie"
+            },
+            {
+              "en": "My neighbor also gave a statement about the man she saw.",
+              "pl": "Sąsiadka też złożyła zeznanie o mężczyźnie, którego widziała.",
+              "focusEn": "statement",
+              "focusPl": "zeznanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "statement",
+            "testimony"
+          ],
+          "acceptedTranslations": [
+            "zeznanie",
+            "oświadczenie",
+            "wyjaśnienia"
+          ]
+        },
+        {
+          "id": "police-crime.file-a-report",
+          "term": "file a report",
+          "ipa": "/ˌfaɪl ə rɪˈpɔːrt/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "złożyć zawiadomienie",
+          "definition": "To officially report something to the police.",
+          "register": "formalny",
+          "contextPl": "Formalne zgłoszenie",
+          "natural": "",
+          "forms": "filed; filing",
+          "collocations": "file a police report; file a report online",
+          "synonyms": "report",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "For small thefts like this, you can file a report online.",
+              "pl": "Przy tak drobnych kradzieżach można złożyć zawiadomienie online.",
+              "focusEn": "file a report",
+              "focusPl": "złożyć zawiadomienie"
+            },
+            {
+              "en": "I filed a report even though I'll probably never see the bike again.",
+              "pl": "Złożyłem zawiadomienie, chociaż pewnie już nigdy nie zobaczę roweru.",
+              "focusEn": "filed a report",
+              "focusPl": "Złożyłem zawiadomienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "file a report",
+            "file a police report"
+          ],
+          "acceptedTranslations": [
+            "złożyć zawiadomienie",
+            "złożyć doniesienie",
+            "zgłosić"
+          ]
+        },
+        {
+          "id": "police-crime.case-number",
+          "term": "case number",
+          "ipa": "/ˈkeɪs ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "numer sprawy",
+          "definition": "A number the police give a report so you can follow it later.",
+          "register": "formalny",
+          "contextPl": "Śledzenie postępów sprawy",
+          "natural": "",
+          "forms": "case numbers",
+          "collocations": "get a case number; your case number",
+          "synonyms": "reference number",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The officer wrote the case number on a card for me.",
+              "pl": "Policjant zapisał mi numer sprawy na kartce.",
+              "focusEn": "case number",
+              "focusPl": "numer sprawy"
+            },
+            {
+              "en": "If you find anything, call this number and give them your case number.",
+              "pl": "Jeśli coś pan znajdzie, proszę zadzwonić pod ten numer i podać numer sprawy.",
+              "focusEn": "case number",
+              "focusPl": "numer sprawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "case number",
+            "report number",
+            "reference number"
+          ],
+          "acceptedTranslations": [
+            "numer sprawy",
+            "sygnatura sprawy",
+            "numer zgłoszenia"
+          ]
+        },
+        {
+          "id": "police-crime.investigate",
+          "term": "investigate",
+          "ipa": "/ɪnˈvɛstəɡeɪt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "prowadzić śledztwo",
+          "definition": "To try to find out the truth about a crime.",
+          "register": "formalny",
+          "contextPl": "Praca policji",
+          "natural": "look into",
+          "forms": "investigated; investigating",
+          "collocations": "investigate a crime; investigate the case",
+          "synonyms": "look into",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The police will investigate, but they can't promise anything.",
+              "pl": "Policja zbada sprawę, ale niczego nie może obiecać.",
+              "focusEn": "investigate",
+              "focusPl": "zbada"
+            },
+            {
+              "en": "They're investigating three similar thefts in my neighborhood.",
+              "pl": "Prowadzą śledztwo w sprawie trzech podobnych kradzieży w mojej okolicy.",
+              "focusEn": "investigating",
+              "focusPl": "Prowadzą śledztwo"
+            }
+          ],
+          "acceptedAnswers": [
+            "investigate",
+            "look into"
+          ],
+          "acceptedTranslations": [
+            "prowadzić śledztwo",
+            "prowadzić dochodzenie",
+            "zbadać",
+            "badać",
+            "wyjaśniać"
+          ]
+        },
+        {
+          "id": "police-crime.evidence",
+          "term": "evidence",
+          "ipa": "/ˈɛvədəns/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dowody",
+          "definition": "Facts or objects that help prove what happened.",
+          "register": "neutralny",
+          "contextPl": "Dowody w sprawie",
+          "natural": "proof",
+          "forms": "",
+          "collocations": "find evidence; collect evidence; not enough evidence",
+          "synonyms": "proof",
+          "antonyms": "",
+          "notePl": "Rzeczownik niepoliczalny: „a piece of evidence”.",
+          "examples": [
+            {
+              "en": "The cut lock might be useful evidence, so don't throw it away.",
+              "pl": "Przecięta kłódka może być przydatnym dowodem, więc jej nie wyrzucaj.",
+              "focusEn": "evidence",
+              "focusPl": "dowodem"
+            },
+            {
+              "en": "Without more evidence, they can't do much right now.",
+              "pl": "Bez większej liczby dowodów na razie niewiele mogą zrobić.",
+              "focusEn": "evidence",
+              "focusPl": "dowodów"
+            }
+          ],
+          "acceptedAnswers": [
+            "evidence",
+            "proof"
+          ],
+          "acceptedTranslations": [
+            "dowody",
+            "dowód",
+            "materiał dowodowy"
+          ]
+        },
+        {
+          "id": "police-crime.non-emergency-number",
+          "term": "non-emergency number",
+          "ipa": "/ˌnɑːn ɪˈmɝːdʒənsi ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "numer niealarmowy",
+          "definition": "A phone number for the police that you use when nobody is in danger.",
+          "register": "neutralny",
+          "contextPl": "Kontakt w sprawach niepilnych",
+          "natural": "",
+          "forms": "non-emergency numbers",
+          "collocations": "call the non-emergency number",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Numer 911 tylko w nagłych sytuacjach.",
+          "examples": [
+            {
+              "en": "For a stolen bike, you should call the non-emergency number, not 911.",
+              "pl": "W sprawie skradzionego roweru dzwoni się na numer niealarmowy, a nie na 911.",
+              "focusEn": "non-emergency number",
+              "focusPl": "numer niealarmowy"
+            },
+            {
+              "en": "The non-emergency number is printed on the back of the officer's card.",
+              "pl": "Numer niealarmowy jest wydrukowany na odwrocie wizytówki policjanta.",
+              "focusEn": "non-emergency number",
+              "focusPl": "Numer niealarmowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "non-emergency number",
+            "non emergency number"
+          ],
+          "acceptedTranslations": [
+            "numer niealarmowy",
+            "numer niealarmowy policji",
+            "telefon niealarmowy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "police-crime.theft-crimes",
+      "namePl": "Kradzieże i przestępstwa",
+      "scenePl": "Przy płocie rozmawiasz z sąsiadem o tym, co ostatnio działo się na waszej ulicy",
+      "entries": [
+        {
+          "id": "police-crime.crime",
+          "term": "crime",
+          "ipa": "/kraɪm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "przestępstwo",
+          "definition": "An action that is against the law.",
+          "register": "neutralny",
+          "contextPl": "Ogólnie o łamaniu prawa",
+          "natural": "",
+          "forms": "crimes",
+          "collocations": "commit a crime; crime rate; a serious crime",
+          "synonyms": "offense",
+          "antonyms": "",
+          "notePl": "Też niepoliczalnie: „crime” = przestępczość.",
+          "examples": [
+            {
+              "en": "My neighbor says crime on our street has gone up this year.",
+              "pl": "Sąsiad mówi, że przestępczość na naszej ulicy w tym roku wzrosła.",
+              "focusEn": "crime",
+              "focusPl": "przestępczość"
+            },
+            {
+              "en": "Breaking a car window is a crime, even if they take nothing.",
+              "pl": "Wybicie szyby w samochodzie to przestępstwo, nawet jeśli nic nie zabiorą.",
+              "focusEn": "crime",
+              "focusPl": "przestępstwo"
+            }
+          ],
+          "acceptedAnswers": [
+            "crime",
+            "offense"
+          ],
+          "acceptedTranslations": [
+            "przestępstwo",
+            "przestępczość"
+          ]
+        },
+        {
+          "id": "police-crime.steal",
+          "term": "steal",
+          "ipa": "/stiːl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ukraść",
+          "definition": "To take something that belongs to someone else.",
+          "register": "neutralny",
+          "contextPl": "Kradzieże",
+          "natural": "take",
+          "forms": "steal – stole – stolen",
+          "collocations": "steal a car; steal from someone; get stolen",
+          "synonyms": "take",
+          "antonyms": "",
+          "notePl": "Konstrukcja: „steal something from someone”, ale „rob someone”.",
+          "examples": [
+            {
+              "en": "Someone stole the radio out of my neighbor's car last night.",
+              "pl": "Ktoś ukradł wczoraj w nocy radio z samochodu sąsiada.",
+              "focusEn": "stole",
+              "focusPl": "ukradł"
+            },
+            {
+              "en": "They only steal from cars that are left unlocked.",
+              "pl": "Kradną tylko z samochodów, które nie są zamknięte.",
+              "focusEn": "steal",
+              "focusPl": "Kradną"
+            }
+          ],
+          "acceptedAnswers": [
+            "steal",
+            "take"
+          ],
+          "acceptedTranslations": [
+            "ukraść",
+            "kraść"
+          ]
+        },
+        {
+          "id": "police-crime.stolen",
+          "term": "stolen",
+          "ipa": "/ˈstoʊlən/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "skradziony",
+          "definition": "Taken by someone without permission.",
+          "register": "neutralny",
+          "contextPl": "Opis utraconych rzeczy",
+          "natural": "",
+          "forms": "",
+          "collocations": "a stolen car; stolen goods; report something stolen",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My stolen bike showed up for sale online a week later.",
+              "pl": "Mój skradziony rower tydzień później pojawił się na sprzedaż w internecie.",
+              "focusEn": "stolen",
+              "focusPl": "skradziony"
+            },
+            {
+              "en": "The police found two stolen cars at the end of our street.",
+              "pl": "Policja znalazła dwa skradzione samochody na końcu naszej ulicy.",
+              "focusEn": "stolen",
+              "focusPl": "skradzione"
+            }
+          ],
+          "acceptedAnswers": [
+            "stolen"
+          ],
+          "acceptedTranslations": [
+            "skradziony",
+            "ukradziony"
+          ]
+        },
+        {
+          "id": "police-crime.thief",
+          "term": "thief",
+          "ipa": "/θiːf/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "złodziej",
+          "definition": "A person who steals.",
+          "register": "neutralny",
+          "contextPl": "Sprawca kradzieży",
+          "natural": "",
+          "forms": "thieves",
+          "collocations": "a car thief; catch a thief",
+          "synonyms": "robber",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The thief got in through the passenger window.",
+              "pl": "Złodziej dostał się do środka przez okno pasażera.",
+              "focusEn": "thief",
+              "focusPl": "Złodziej"
+            },
+            {
+              "en": "My neighbor's camera recorded the thieves at three in the morning.",
+              "pl": "Kamera sąsiada nagrała złodziei o trzeciej w nocy.",
+              "focusEn": "thieves",
+              "focusPl": "złodziei"
+            }
+          ],
+          "acceptedAnswers": [
+            "thief",
+            "robber"
+          ],
+          "acceptedTranslations": [
+            "złodziej",
+            "złodziejka"
+          ]
+        },
+        {
+          "id": "police-crime.rob",
+          "term": "rob",
+          "ipa": "/rɑːb/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "obrabować",
+          "definition": "To take money or things from a person or place, often using force or threats.",
+          "register": "neutralny",
+          "contextPl": "Napady i rabunki",
+          "natural": "hold up",
+          "forms": "robbed; robbing",
+          "collocations": "rob a bank; rob a store; get robbed",
+          "synonyms": "hold up",
+          "antonyms": "",
+          "notePl": "Okrada się osobę lub miejsce: „rob someone”, nie „rob money”.",
+          "examples": [
+            {
+              "en": "The gas station on the corner was robbed last month.",
+              "pl": "Stację benzynową na rogu w zeszłym miesiącu obrabowano.",
+              "focusEn": "robbed",
+              "focusPl": "obrabowano"
+            },
+            {
+              "en": "Our neighbor's teenage son was robbed of his phone near the bus stop.",
+              "pl": "Nastoletniego syna sąsiadów okradziono z telefonu w pobliżu przystanku.",
+              "focusEn": "robbed",
+              "focusPl": "okradziono"
+            }
+          ],
+          "acceptedAnswers": [
+            "rob",
+            "hold up"
+          ],
+          "acceptedTranslations": [
+            "obrabować",
+            "okraść"
+          ]
+        },
+        {
+          "id": "police-crime.robbery",
+          "term": "robbery",
+          "ipa": "/ˈrɑːbəri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "napad",
+          "definition": "The crime of taking money or things from a person or place by force.",
+          "register": "neutralny",
+          "contextPl": "Poważniejsze kradzieże",
+          "natural": "holdup",
+          "forms": "robberies",
+          "collocations": "a bank robbery; a store robbery",
+          "synonyms": "holdup",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There was a robbery at the convenience store two streets over.",
+              "pl": "W sklepie spożywczym dwie ulice dalej był napad.",
+              "focusEn": "robbery",
+              "focusPl": "napad"
+            },
+            {
+              "en": "Thank goodness nobody was hurt in the robbery.",
+              "pl": "Na szczęście nikt nie ucierpiał podczas napadu.",
+              "focusEn": "robbery",
+              "focusPl": "napadu"
+            }
+          ],
+          "acceptedAnswers": [
+            "robbery",
+            "holdup"
+          ],
+          "acceptedTranslations": [
+            "napad",
+            "rabunek",
+            "rozbój"
+          ]
+        },
+        {
+          "id": "police-crime.break-into",
+          "term": "break into",
+          "ipa": "/ˌbreɪk ˈɪntuː/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "włamać się",
+          "definition": "To enter a building or car illegally, usually by force.",
+          "register": "neutralny",
+          "contextPl": "Włamania",
+          "natural": "",
+          "forms": "break – broke – broken",
+          "collocations": "break into a house; break into a car",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Someone broke into three cars on our street last night.",
+              "pl": "Ktoś wczoraj w nocy włamał się do trzech samochodów na naszej ulicy.",
+              "focusEn": "broke into",
+              "focusPl": "włamał się"
+            },
+            {
+              "en": "They tried to break into the garage, but the lock held.",
+              "pl": "Próbowali włamać się do garażu, ale zamek wytrzymał.",
+              "focusEn": "break into",
+              "focusPl": "włamać się"
+            }
+          ],
+          "acceptedAnswers": [
+            "break into"
+          ],
+          "acceptedTranslations": [
+            "włamać się",
+            "włamywać się"
+          ]
+        },
+        {
+          "id": "police-crime.theft",
+          "term": "theft",
+          "ipa": "/θɛft/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kradzież",
+          "definition": "The crime of stealing.",
+          "register": "formalny",
+          "contextPl": "Kradzież jako przestępstwo",
+          "natural": "stealing",
+          "forms": "thefts",
+          "collocations": "car theft; bike theft; report a theft",
+          "synonyms": "stealing",
+          "antonyms": "",
+          "notePl": "Słowo bardziej formalne niż „stealing”.",
+          "examples": [
+            {
+              "en": "Bike theft is the most common crime in our area.",
+              "pl": "Kradzież rowerów to najczęstsze przestępstwo w naszej okolicy.",
+              "focusEn": "theft",
+              "focusPl": "Kradzież"
+            },
+            {
+              "en": "The police say they get five reports of car theft a week here.",
+              "pl": "Policja mówi, że dostaje tu pięć zgłoszeń kradzieży samochodów tygodniowo.",
+              "focusEn": "theft",
+              "focusPl": "kradzieży"
+            }
+          ],
+          "acceptedAnswers": [
+            "theft",
+            "stealing"
+          ],
+          "acceptedTranslations": [
+            "kradzież"
+          ]
+        },
+        {
+          "id": "police-crime.criminal",
+          "term": "criminal",
+          "ipa": "/ˈkrɪmɪnəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przestępca",
+          "definition": "A person who has committed a crime.",
+          "register": "neutralny",
+          "contextPl": "Sprawcy przestępstw",
+          "natural": "crook",
+          "forms": "criminals",
+          "collocations": "catch criminals; a known criminal",
+          "synonyms": "crook; offender",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My neighbor thinks the criminals are just bored teenagers.",
+              "pl": "Sąsiad uważa, że przestępcy to po prostu znudzeni nastolatkowie.",
+              "focusEn": "criminals",
+              "focusPl": "przestępcy"
+            },
+            {
+              "en": "These criminals know exactly which cars have no alarms.",
+              "pl": "Ci przestępcy dokładnie wiedzą, które samochody nie mają alarmu.",
+              "focusEn": "criminals",
+              "focusPl": "przestępcy"
+            }
+          ],
+          "acceptedAnswers": [
+            "criminal",
+            "offender"
+          ],
+          "acceptedTranslations": [
+            "przestępca",
+            "kryminalista"
+          ]
+        },
+        {
+          "id": "police-crime.burglary",
+          "term": "burglary",
+          "ipa": "/ˈbɝːɡləri/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "włamanie",
+          "definition": "The crime of entering a building illegally to steal things.",
+          "register": "formalny",
+          "contextPl": "Włamania do domów",
+          "natural": "break-in",
+          "forms": "burglaries",
+          "collocations": "a burglary at a house; report a burglary",
+          "synonyms": "break-in",
+          "antonyms": "",
+          "notePl": "Potocznie częściej „break-in”.",
+          "examples": [
+            {
+              "en": "There was a burglary at the house across the street while they were away.",
+              "pl": "Kiedy ich nie było, w domu naprzeciwko doszło do włamania.",
+              "focusEn": "burglary",
+              "focusPl": "włamania"
+            },
+            {
+              "en": "After the burglary, the whole street started locking their doors.",
+              "pl": "Po włamaniu cała ulica zaczęła zamykać drzwi na klucz.",
+              "focusEn": "burglary",
+              "focusPl": "włamaniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "burglary",
+            "break-in"
+          ],
+          "acceptedTranslations": [
+            "włamanie",
+            "kradzież z włamaniem"
+          ]
+        },
+        {
+          "id": "police-crime.pickpocket",
+          "term": "pickpocket",
+          "ipa": "/ˈpɪkpɑːkɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kieszonkowiec",
+          "definition": "A person who steals things from people's pockets or bags in crowded places.",
+          "register": "neutralny",
+          "contextPl": "Kradzieże w tłumie",
+          "natural": "",
+          "forms": "pickpockets",
+          "collocations": "watch out for pickpockets; a pickpocket on the subway",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A pickpocket took my neighbor's wallet on the crowded train.",
+              "pl": "Kieszonkowiec ukradł sąsiadowi portfel w zatłoczonym pociągu.",
+              "focusEn": "pickpocket",
+              "focusPl": "Kieszonkowiec"
+            },
+            {
+              "en": "He told me to watch out for pickpockets at the farmers market.",
+              "pl": "Powiedział mi, żebym uważał na kieszonkowców na targu.",
+              "focusEn": "pickpockets",
+              "focusPl": "kieszonkowców"
+            }
+          ],
+          "acceptedAnswers": [
+            "pickpocket"
+          ],
+          "acceptedTranslations": [
+            "kieszonkowiec"
+          ]
+        },
+        {
+          "id": "police-crime.shoplifting",
+          "term": "shoplifting",
+          "ipa": "/ˈʃɑːpˌlɪftɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kradzież sklepowa",
+          "definition": "Stealing things from a store while pretending to be a customer.",
+          "register": "neutralny",
+          "contextPl": "Kradzieże w sklepach",
+          "natural": "",
+          "forms": "",
+          "collocations": "arrested for shoplifting; a shoplifting problem",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The corner store installed cameras because of all the shoplifting.",
+              "pl": "Sklep na rogu założył kamery z powodu częstych kradzieży sklepowych.",
+              "focusEn": "shoplifting",
+              "focusPl": "kradzieży sklepowych"
+            },
+            {
+              "en": "My neighbor said a teenager was caught shoplifting at the drugstore.",
+              "pl": "Sąsiad powiedział, że w drogerii przyłapano nastolatka na kradzieży sklepowej.",
+              "focusEn": "shoplifting",
+              "focusPl": "kradzieży sklepowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "shoplifting"
+          ],
+          "acceptedTranslations": [
+            "kradzież sklepowa",
+            "kradzież w sklepie"
+          ]
+        },
+        {
+          "id": "police-crime.vandalism",
+          "term": "vandalism",
+          "ipa": "/ˈvændəlɪzəm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wandalizm",
+          "definition": "The crime of damaging property on purpose.",
+          "register": "neutralny",
+          "contextPl": "Niszczenie mienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "an act of vandalism; graffiti and vandalism",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Someone spray-painted our fence, so I reported it as vandalism.",
+              "pl": "Ktoś pomazał farbą nasz płot, więc zgłosiłem to jako wandalizm.",
+              "focusEn": "vandalism",
+              "focusPl": "wandalizm"
+            },
+            {
+              "en": "Lately there's been a lot of vandalism in the park.",
+              "pl": "W parku ostatnio często dochodzi do wandalizmu.",
+              "focusEn": "vandalism",
+              "focusPl": "wandalizmu"
+            }
+          ],
+          "acceptedAnswers": [
+            "vandalism"
+          ],
+          "acceptedTranslations": [
+            "wandalizm",
+            "dewastacja",
+            "niszczenie mienia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "police-crime.witness",
+      "namePl": "Świadek i opis sprawcy",
+      "scenePl": "Przed sklepem, z którego ktoś właśnie uciekł z torbą, policjantka rozmawia z tobą jako świadkiem",
+      "entries": [
+        {
+          "id": "police-crime.run-away",
+          "term": "run away",
+          "ipa": "/ˌrʌn əˈweɪ/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "uciec",
+          "definition": "To leave a place quickly, usually to escape.",
+          "register": "neutralny",
+          "contextPl": "Ucieczka sprawcy",
+          "natural": "",
+          "forms": "run – ran – run",
+          "collocations": "run away from the police; run away with the bag",
+          "synonyms": "flee; take off",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He grabbed the bag and ran away down the alley.",
+              "pl": "Złapał torbę i uciekł w zaułek.",
+              "focusEn": "ran away",
+              "focusPl": "uciekł"
+            },
+            {
+              "en": "I yelled at him, but he just ran away faster.",
+              "pl": "Krzyknąłem na niego, ale on tylko szybciej uciekał.",
+              "focusEn": "ran away",
+              "focusPl": "uciekał"
+            }
+          ],
+          "acceptedAnswers": [
+            "run away",
+            "take off",
+            "flee"
+          ],
+          "acceptedTranslations": [
+            "uciec",
+            "uciekać"
+          ]
+        },
+        {
+          "id": "police-crime.witness",
+          "term": "witness",
+          "ipa": "/ˈwɪtnəs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "świadek",
+          "definition": "A person who sees a crime or accident happen.",
+          "register": "neutralny",
+          "contextPl": "Relacja z miejsca zdarzenia",
+          "natural": "",
+          "forms": "witnesses",
+          "collocations": "a witness to the crime; witness statement",
+          "synonyms": "eyewitness",
+          "antonyms": "",
+          "notePl": "Też czasownik: „witness something” = być świadkiem czegoś.",
+          "examples": [
+            {
+              "en": "The officer asked if there were any other witnesses.",
+              "pl": "Policjantka zapytała, czy byli jacyś inni świadkowie.",
+              "focusEn": "witnesses",
+              "focusPl": "świadkowie"
+            },
+            {
+              "en": "I was the only witness who saw the man's face.",
+              "pl": "Byłem jedynym świadkiem, który widział twarz tego mężczyzny.",
+              "focusEn": "witness",
+              "focusPl": "świadkiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "witness"
+          ],
+          "acceptedTranslations": [
+            "świadek"
+          ]
+        },
+        {
+          "id": "police-crime.description",
+          "term": "description",
+          "ipa": "/dɪˈskrɪpʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rysopis",
+          "definition": "Details about what a person looks like.",
+          "register": "neutralny",
+          "contextPl": "Opis wyglądu sprawcy",
+          "natural": "",
+          "forms": "descriptions",
+          "collocations": "give a description; a description of the suspect",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W kontekście policyjnym po polsku „rysopis”.",
+          "examples": [
+            {
+              "en": "I gave the officer a description of the man: tall, gray hoodie, black backpack.",
+              "pl": "Podałem policjantce rysopis mężczyzny: wysoki, szara bluza z kapturem, czarny plecak.",
+              "focusEn": "description",
+              "focusPl": "rysopis"
+            },
+            {
+              "en": "My description matched what the store clerk said.",
+              "pl": "Mój opis zgadzał się z tym, co powiedział sprzedawca.",
+              "focusEn": "description",
+              "focusPl": "opis"
+            }
+          ],
+          "acceptedAnswers": [
+            "description"
+          ],
+          "acceptedTranslations": [
+            "rysopis",
+            "opis"
+          ]
+        },
+        {
+          "id": "police-crime.recognize",
+          "term": "recognize",
+          "ipa": "/ˈrɛkəɡnaɪz/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rozpoznać",
+          "definition": "To know who someone is because you have seen them before.",
+          "register": "neutralny",
+          "contextPl": "Identyfikacja osoby",
+          "natural": "",
+          "forms": "recognized; recognizing",
+          "collocations": "recognize someone; I'd recognize him",
+          "synonyms": "identify",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Would you recognize him if you saw him again?",
+              "pl": "Czy rozpoznałby go pan, gdyby zobaczył go pan znowu?",
+              "focusEn": "recognize",
+              "focusPl": "rozpoznałby"
+            },
+            {
+              "en": "I'm not sure I'd recognize him, because he had a hat on.",
+              "pl": "Nie jestem pewien, czy bym go rozpoznał, bo miał czapkę.",
+              "focusEn": "recognize",
+              "focusPl": "rozpoznał"
+            }
+          ],
+          "acceptedAnswers": [
+            "recognize"
+          ],
+          "acceptedTranslations": [
+            "rozpoznać",
+            "rozpoznawać",
+            "poznać"
+          ]
+        },
+        {
+          "id": "police-crime.get-away",
+          "term": "get away",
+          "ipa": "/ˌɡɛt əˈweɪ/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zbiec",
+          "definition": "To escape from a place or person.",
+          "register": "neutralny",
+          "contextPl": "Ucieczka z miejsca zdarzenia",
+          "natural": "",
+          "forms": "got away; gotten away",
+          "collocations": "he got away; get away with something",
+          "synonyms": "escape",
+          "antonyms": "",
+          "notePl": "„Get away with something” = uniknąć kary.",
+          "examples": [
+            {
+              "en": "He got away before the police arrived.",
+              "pl": "Zbiegł, zanim przyjechała policja.",
+              "focusEn": "got away",
+              "focusPl": "Zbiegł"
+            },
+            {
+              "en": "The officer said they rarely get away when there's a camera nearby.",
+              "pl": "Policjantka powiedziała, że rzadko udaje im się zbiec, kiedy w pobliżu jest kamera.",
+              "focusEn": "get away",
+              "focusPl": "zbiec"
+            }
+          ],
+          "acceptedAnswers": [
+            "get away",
+            "escape"
+          ],
+          "acceptedTranslations": [
+            "zbiec",
+            "uciec",
+            "umknąć",
+            "zwiać"
+          ]
+        },
+        {
+          "id": "police-crime.security-camera",
+          "term": "security camera",
+          "ipa": "/sɪˈkjʊrəti ˌkæmrə/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kamera monitoringu",
+          "definition": "A camera that records an area to help prevent or solve crimes.",
+          "register": "neutralny",
+          "contextPl": "Nagrania z miejsca zdarzenia",
+          "natural": "",
+          "forms": "security cameras",
+          "collocations": "a security camera caught; install security cameras",
+          "synonyms": "surveillance camera",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a security camera right above the store entrance.",
+              "pl": "Tuż nad wejściem do sklepu jest kamera monitoringu.",
+              "focusEn": "security camera",
+              "focusPl": "kamera monitoringu"
+            },
+            {
+              "en": "The officer asked the clerk if the security camera was working.",
+              "pl": "Policjantka zapytała sprzedawcę, czy kamera monitoringu działała.",
+              "focusEn": "security camera",
+              "focusPl": "kamera monitoringu"
+            }
+          ],
+          "acceptedAnswers": [
+            "security camera",
+            "surveillance camera"
+          ],
+          "acceptedTranslations": [
+            "kamera monitoringu",
+            "kamera",
+            "monitoring"
+          ]
+        },
+        {
+          "id": "police-crime.suspect",
+          "term": "suspect",
+          "ipa": "/ˈsʌspɛkt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "podejrzany",
+          "definition": "A person the police think may have committed a crime.",
+          "register": "neutralny",
+          "contextPl": "Poszukiwany sprawca",
+          "natural": "",
+          "forms": "suspects",
+          "collocations": "the main suspect; arrest a suspect",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik „suspect” akcentujemy na drugiej sylabie.",
+          "examples": [
+            {
+              "en": "The suspect ran toward the subway station.",
+              "pl": "Podejrzany pobiegł w stronę stacji metra.",
+              "focusEn": "suspect",
+              "focusPl": "Podejrzany"
+            },
+            {
+              "en": "Can you tell me anything else about the suspect?",
+              "pl": "Może pan powiedzieć coś jeszcze o podejrzanym?",
+              "focusEn": "suspect",
+              "focusPl": "podejrzanym"
+            }
+          ],
+          "acceptedAnswers": [
+            "suspect"
+          ],
+          "acceptedTranslations": [
+            "podejrzany",
+            "podejrzana",
+            "osoba podejrzana"
+          ]
+        },
+        {
+          "id": "police-crime.identify",
+          "term": "identify",
+          "ipa": "/aɪˈdɛntəfaɪ/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zidentyfikować",
+          "definition": "To recognize and say who someone is.",
+          "register": "formalny",
+          "contextPl": "Wskazanie sprawcy",
+          "natural": "",
+          "forms": "identified; identifying",
+          "collocations": "identify the suspect; be able to identify",
+          "synonyms": "recognize",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They may ask you to identify the man from some photos.",
+              "pl": "Mogą pana poprosić o zidentyfikowanie mężczyzny na zdjęciach.",
+              "focusEn": "identify",
+              "focusPl": "zidentyfikowanie"
+            },
+            {
+              "en": "The clerk identified him as a man who'd been in the store before.",
+              "pl": "Sprzedawca rozpoznał w nim mężczyznę, który był już wcześniej w sklepie.",
+              "focusEn": "identified",
+              "focusPl": "rozpoznał"
+            }
+          ],
+          "acceptedAnswers": [
+            "identify",
+            "recognize"
+          ],
+          "acceptedTranslations": [
+            "zidentyfikować",
+            "identyfikować",
+            "rozpoznać"
+          ]
+        },
+        {
+          "id": "police-crime.crime-scene",
+          "term": "crime scene",
+          "ipa": "/ˈkraɪm ˌsiːn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "miejsce zdarzenia",
+          "definition": "The place where a crime happened.",
+          "register": "specjalistyczny",
+          "contextPl": "Zabezpieczanie miejsca przestępstwa",
+          "natural": "",
+          "forms": "crime scenes",
+          "collocations": "at the crime scene; secure the crime scene",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The officers put tape around the crime scene in front of the store.",
+              "pl": "Policjanci otoczyli taśmą miejsce zdarzenia przed sklepem.",
+              "focusEn": "crime scene",
+              "focusPl": "miejsce zdarzenia"
+            },
+            {
+              "en": "Please don't touch anything at the crime scene.",
+              "pl": "Proszę niczego nie dotykać na miejscu zdarzenia.",
+              "focusEn": "crime scene",
+              "focusPl": "miejscu zdarzenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "crime scene",
+            "scene of the crime"
+          ],
+          "acceptedTranslations": [
+            "miejsce zdarzenia",
+            "miejsce przestępstwa"
+          ]
+        },
+        {
+          "id": "police-crime.footage",
+          "term": "footage",
+          "ipa": "/ˈfʊtɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "nagranie",
+          "definition": "Film or video recorded by a camera.",
+          "register": "neutralny",
+          "contextPl": "Materiał wideo",
+          "natural": "video",
+          "forms": "",
+          "collocations": "security footage; camera footage; watch the footage",
+          "synonyms": "video; recording",
+          "antonyms": "",
+          "notePl": "Rzeczownik niepoliczalny.",
+          "examples": [
+            {
+              "en": "The police took the footage from the store's camera.",
+              "pl": "Policja zabezpieczyła nagranie z kamery sklepu.",
+              "focusEn": "footage",
+              "focusPl": "nagranie"
+            },
+            {
+              "en": "In the footage, you can clearly see his face for a second.",
+              "pl": "Na nagraniu przez sekundę wyraźnie widać jego twarz.",
+              "focusEn": "footage",
+              "focusPl": "nagraniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "footage",
+            "video",
+            "recording"
+          ],
+          "acceptedTranslations": [
+            "nagranie",
+            "nagrania",
+            "materiał wideo",
+            "zapis z kamery"
+          ]
+        },
+        {
+          "id": "police-crime.eyewitness",
+          "term": "eyewitness",
+          "ipa": "/ˈaɪˌwɪtnəs/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "naoczny świadek",
+          "definition": "A person who saw something happen with their own eyes.",
+          "register": "formalny",
+          "contextPl": "Najważniejsze zeznania",
+          "natural": "witness",
+          "forms": "eyewitnesses",
+          "collocations": "an eyewitness account; according to eyewitnesses",
+          "synonyms": "witness",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "As the only eyewitness, I had to give a full statement.",
+              "pl": "Jako jedyny naoczny świadek musiałem złożyć pełne zeznanie.",
+              "focusEn": "eyewitness",
+              "focusPl": "naoczny świadek"
+            },
+            {
+              "en": "An eyewitness across the street took a video on her phone.",
+              "pl": "Naoczny świadek po drugiej stronie ulicy nagrał film telefonem.",
+              "focusEn": "eyewitness",
+              "focusPl": "Naoczny świadek"
+            }
+          ],
+          "acceptedAnswers": [
+            "eyewitness"
+          ],
+          "acceptedTranslations": [
+            "naoczny świadek",
+            "świadek"
+          ]
+        },
+        {
+          "id": "police-crime.alibi",
+          "term": "alibi",
+          "ipa": "/ˈæləbaɪ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "alibi",
+          "definition": "Proof that someone was somewhere else when a crime happened.",
+          "register": "specjalistyczny",
+          "contextPl": "Dowody niewinności",
+          "natural": "",
+          "forms": "alibis",
+          "collocations": "have an alibi; a solid alibi; check someone's alibi",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The officer joked that I needed an alibi because I was standing so close.",
+              "pl": "Policjantka zażartowała, że potrzebuję alibi, bo stałem tak blisko.",
+              "focusEn": "alibi",
+              "focusPl": "alibi"
+            },
+            {
+              "en": "She said they'll check the alibi of anyone they suspect.",
+              "pl": "Powiedziała, że sprawdzą alibi każdego, kogo podejrzewają.",
+              "focusEn": "alibi",
+              "focusPl": "alibi"
+            }
+          ],
+          "acceptedAnswers": [
+            "alibi"
+          ],
+          "acceptedTranslations": [
+            "alibi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "police-crime.arrest-justice",
+      "namePl": "Zatrzymanie i sąd",
+      "scenePl": "Wieczorne wiadomości lokalne: reporter opowiada o zatrzymaniu złodziei rowerów",
+      "entries": [
+        {
+          "id": "police-crime.police-car",
+          "term": "police car",
+          "ipa": "/pəˈliːs ˌkɑːr/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "radiowóz",
+          "definition": "A car used by the police.",
+          "register": "neutralny",
+          "contextPl": "Pojazdy policyjne",
+          "natural": "cop car",
+          "forms": "police cars",
+          "collocations": "a police car with its lights on",
+          "synonyms": "squad car; patrol car",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The news showed three police cars outside the warehouse.",
+              "pl": "W wiadomościach pokazano trzy radiowozy przed magazynem.",
+              "focusEn": "police cars",
+              "focusPl": "radiowozy"
+            },
+            {
+              "en": "The suspects were driven away in the back of a police car.",
+              "pl": "Podejrzanych odwieziono na tylnym siedzeniu radiowozu.",
+              "focusEn": "police car",
+              "focusPl": "radiowozu"
+            }
+          ],
+          "acceptedAnswers": [
+            "police car",
+            "squad car",
+            "patrol car",
+            "cop car"
+          ],
+          "acceptedTranslations": [
+            "radiowóz",
+            "samochód policyjny"
+          ]
+        },
+        {
+          "id": "police-crime.catch",
+          "term": "catch",
+          "ipa": "/kætʃ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "złapać",
+          "definition": "To find and stop someone who has done something wrong.",
+          "register": "neutralny",
+          "contextPl": "Zatrzymanie sprawcy",
+          "natural": "",
+          "forms": "catch – caught – caught",
+          "collocations": "catch a thief; get caught",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The police finally caught the bike thieves last night.",
+              "pl": "Policja w końcu złapała złodziei rowerów wczoraj w nocy.",
+              "focusEn": "caught",
+              "focusPl": "złapała"
+            },
+            {
+              "en": "The reporter said the men were caught because of a neighbor's camera.",
+              "pl": "Reporter powiedział, że mężczyzn złapano dzięki kamerze sąsiada.",
+              "focusEn": "caught",
+              "focusPl": "złapano"
+            }
+          ],
+          "acceptedAnswers": [
+            "catch"
+          ],
+          "acceptedTranslations": [
+            "złapać",
+            "łapać",
+            "schwytać"
+          ]
+        },
+        {
+          "id": "police-crime.lawyer",
+          "term": "lawyer",
+          "ipa": "/ˈlɔːjər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "prawnik",
+          "definition": "A person whose job is to give legal advice and represent people in court.",
+          "register": "neutralny",
+          "contextPl": "Pomoc prawna",
+          "natural": "attorney",
+          "forms": "lawyers",
+          "collocations": "hire a lawyer; talk to a lawyer",
+          "synonyms": "attorney",
+          "antonyms": "",
+          "notePl": "W USA często też „attorney”.",
+          "examples": [
+            {
+              "en": "The men's lawyer said they had no idea the bikes were stolen.",
+              "pl": "Adwokat mężczyzn powiedział, że nie mieli pojęcia, że rowery były kradzione.",
+              "focusEn": "lawyer",
+              "focusPl": "Adwokat"
+            },
+            {
+              "en": "One of the suspects refused to talk without a lawyer.",
+              "pl": "Jeden z podejrzanych odmówił rozmowy bez prawnika.",
+              "focusEn": "lawyer",
+              "focusPl": "prawnika"
+            }
+          ],
+          "acceptedAnswers": [
+            "lawyer",
+            "attorney"
+          ],
+          "acceptedTranslations": [
+            "prawnik",
+            "adwokat",
+            "obrońca"
+          ]
+        },
+        {
+          "id": "police-crime.arrest",
+          "term": "arrest",
+          "ipa": "/əˈrɛst/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "aresztować",
+          "definition": "To take someone to the police station because they may have committed a crime.",
+          "register": "neutralny",
+          "contextPl": "Działania policji",
+          "natural": "",
+          "forms": "arrested; arresting",
+          "collocations": "arrest someone; be arrested for theft",
+          "synonyms": "detain",
+          "antonyms": "release",
+          "notePl": "Też rzeczownik: „under arrest” = zatrzymany.",
+          "examples": [
+            {
+              "en": "Police arrested two men with more than forty stolen bikes.",
+              "pl": "Policja zatrzymała dwóch mężczyzn z ponad czterdziestoma skradzionymi rowerami.",
+              "focusEn": "arrested",
+              "focusPl": "zatrzymała"
+            },
+            {
+              "en": "The reporter said a third man was arrested this morning.",
+              "pl": "Reporter powiedział, że trzeciego mężczyznę aresztowano dziś rano.",
+              "focusEn": "arrested",
+              "focusPl": "aresztowano"
+            }
+          ],
+          "acceptedAnswers": [
+            "arrest"
+          ],
+          "acceptedTranslations": [
+            "aresztować",
+            "zatrzymać",
+            "zatrzymywać"
+          ]
+        },
+        {
+          "id": "police-crime.siren",
+          "term": "siren",
+          "ipa": "/ˈsaɪrən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "syrena",
+          "definition": "A device on police cars that makes a loud warning sound.",
+          "register": "neutralny",
+          "contextPl": "Sygnały pojazdów uprzywilejowanych",
+          "natural": "",
+          "forms": "sirens",
+          "collocations": "hear sirens; with sirens on",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Neighbors told the reporter they heard sirens around midnight.",
+              "pl": "Sąsiedzi powiedzieli reporterowi, że około północy słyszeli syreny.",
+              "focusEn": "sirens",
+              "focusPl": "syreny"
+            },
+            {
+              "en": "The police arrived without sirens so the thieves wouldn't notice.",
+              "pl": "Policja przyjechała bez syren, żeby złodzieje się nie zorientowali.",
+              "focusEn": "sirens",
+              "focusPl": "syren"
+            }
+          ],
+          "acceptedAnswers": [
+            "siren"
+          ],
+          "acceptedTranslations": [
+            "syrena",
+            "sygnał"
+          ]
+        },
+        {
+          "id": "police-crime.jail",
+          "term": "jail",
+          "ipa": "/dʒeɪl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "areszt",
+          "definition": "A place where people are kept by the police, usually for a short time.",
+          "register": "neutralny",
+          "contextPl": "Pozbawienie wolności",
+          "natural": "",
+          "forms": "jails",
+          "collocations": "go to jail; spend a night in jail; county jail",
+          "synonyms": "prison",
+          "antonyms": "",
+          "notePl": "W USA „jail” to areszt lub krótkie wyroki; „prison” – długie.",
+          "examples": [
+            {
+              "en": "The two men spent the night in jail.",
+              "pl": "Dwaj mężczyźni spędzili noc w areszcie.",
+              "focusEn": "jail",
+              "focusPl": "areszcie"
+            },
+            {
+              "en": "If they're found guilty, they could go to jail for a year.",
+              "pl": "Jeśli zostaną uznani za winnych, mogą trafić do więzienia na rok.",
+              "focusEn": "jail",
+              "focusPl": "więzienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "jail"
+          ],
+          "acceptedTranslations": [
+            "areszt",
+            "więzienie"
+          ]
+        },
+        {
+          "id": "police-crime.court",
+          "term": "court",
+          "ipa": "/kɔːrt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sąd",
+          "definition": "The place where a judge decides if someone is guilty of a crime.",
+          "register": "neutralny",
+          "contextPl": "Postępowanie sądowe",
+          "natural": "",
+          "forms": "courts",
+          "collocations": "go to court; appear in court; in court",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The suspects will appear in court next week.",
+              "pl": "Podejrzani staną przed sądem w przyszłym tygodniu.",
+              "focusEn": "court",
+              "focusPl": "sądem"
+            },
+            {
+              "en": "The reporter was standing outside the court when the men arrived.",
+              "pl": "Reporter stał przed sądem, kiedy mężczyźni przyjechali.",
+              "focusEn": "court",
+              "focusPl": "sądem"
+            }
+          ],
+          "acceptedAnswers": [
+            "court",
+            "courthouse"
+          ],
+          "acceptedTranslations": [
+            "sąd",
+            "rozprawa"
+          ]
+        },
+        {
+          "id": "police-crime.guilty",
+          "term": "guilty",
+          "ipa": "/ˈɡɪlti/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "winny",
+          "definition": "Having done something that is against the law.",
+          "register": "neutralny",
+          "contextPl": "Wyrok sądu",
+          "natural": "",
+          "forms": "",
+          "collocations": "found guilty; plead guilty; guilty of theft",
+          "synonyms": "",
+          "antonyms": "innocent",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "One of the men has already said he's guilty.",
+              "pl": "Jeden z mężczyzn już przyznał, że jest winny.",
+              "focusEn": "guilty",
+              "focusPl": "winny"
+            },
+            {
+              "en": "If the jury finds them guilty, they'll have to pay the owners back.",
+              "pl": "Jeśli ława przysięgłych uzna ich za winnych, będą musieli oddać właścicielom pieniądze.",
+              "focusEn": "guilty",
+              "focusPl": "winnych"
+            }
+          ],
+          "acceptedAnswers": [
+            "guilty"
+          ],
+          "acceptedTranslations": [
+            "winny",
+            "winna"
+          ]
+        },
+        {
+          "id": "police-crime.innocent",
+          "term": "innocent",
+          "ipa": "/ˈɪnəsənt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "niewinny",
+          "definition": "Not having done anything wrong or illegal.",
+          "register": "neutralny",
+          "contextPl": "Domniemanie niewinności",
+          "natural": "",
+          "forms": "",
+          "collocations": "prove you're innocent; innocent until proven guilty",
+          "synonyms": "",
+          "antonyms": "guilty",
+          "notePl": "Zasada: „innocent until proven guilty”.",
+          "examples": [
+            {
+              "en": "The third man says he's innocent and was only giving a friend a ride.",
+              "pl": "Trzeci mężczyzna twierdzi, że jest niewinny i tylko podwoził kolegę.",
+              "focusEn": "innocent",
+              "focusPl": "niewinny"
+            },
+            {
+              "en": "Remember, they're innocent until a court decides otherwise.",
+              "pl": "Pamiętajmy, że są niewinni, dopóki sąd nie zdecyduje inaczej.",
+              "focusEn": "innocent",
+              "focusPl": "niewinni"
+            }
+          ],
+          "acceptedAnswers": [
+            "innocent"
+          ],
+          "acceptedTranslations": [
+            "niewinny",
+            "niewinna"
+          ]
+        },
+        {
+          "id": "police-crime.fine",
+          "term": "fine",
+          "ipa": "/faɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "grzywna",
+          "definition": "Money you have to pay as a punishment for breaking a law.",
+          "register": "neutralny",
+          "contextPl": "Kary pieniężne",
+          "natural": "",
+          "forms": "fines",
+          "collocations": "pay a fine; a big fine; get a fine",
+          "synonyms": "penalty",
+          "antonyms": "",
+          "notePl": "Mandat drogowy to zwykle „ticket”.",
+          "examples": [
+            {
+              "en": "The youngest man will probably just get a fine.",
+              "pl": "Najmłodszy z mężczyzn pewnie dostanie tylko grzywnę.",
+              "focusEn": "fine",
+              "focusPl": "grzywnę"
+            },
+            {
+              "en": "The reporter said the fine could be up to five thousand dollars.",
+              "pl": "Reporter powiedział, że grzywna może wynieść do pięciu tysięcy dolarów.",
+              "focusEn": "fine",
+              "focusPl": "grzywna"
+            }
+          ],
+          "acceptedAnswers": [
+            "fine",
+            "penalty"
+          ],
+          "acceptedTranslations": [
+            "grzywna",
+            "kara pieniężna",
+            "mandat"
+          ]
+        },
+        {
+          "id": "police-crime.handcuffs",
+          "term": "handcuffs",
+          "ipa": "/ˈhændkʌfs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "kajdanki",
+          "definition": "Two metal rings joined together, used to hold a prisoner's wrists.",
+          "register": "neutralny",
+          "contextPl": "Wyposażenie policji",
+          "natural": "cuffs",
+          "forms": "",
+          "collocations": "put handcuffs on; in handcuffs",
+          "synonyms": "cuffs",
+          "antonyms": "",
+          "notePl": "Zawsze w liczbie mnogiej.",
+          "examples": [
+            {
+              "en": "The news showed the men leaving the warehouse in handcuffs.",
+              "pl": "W wiadomościach pokazano mężczyzn wychodzących z magazynu w kajdankach.",
+              "focusEn": "handcuffs",
+              "focusPl": "kajdankach"
+            },
+            {
+              "en": "On camera, an officer checked the handcuffs before putting them in the car.",
+              "pl": "Przed kamerą policjant sprawdził kajdanki, zanim wsadził ich do samochodu.",
+              "focusEn": "handcuffs",
+              "focusPl": "kajdanki"
+            }
+          ],
+          "acceptedAnswers": [
+            "handcuffs",
+            "cuffs"
+          ],
+          "acceptedTranslations": [
+            "kajdanki"
+          ]
+        },
+        {
+          "id": "police-crime.charge",
+          "term": "charge",
+          "ipa": "/tʃɑːrdʒ/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "postawić zarzut",
+          "definition": "To officially accuse someone of a crime.",
+          "register": "formalny",
+          "contextPl": "Formalne oskarżenie",
+          "natural": "",
+          "forms": "charged; charging",
+          "collocations": "be charged with theft; charge someone with",
+          "synonyms": "accuse",
+          "antonyms": "",
+          "notePl": "Konstrukcja: „charge someone with something”.",
+          "examples": [
+            {
+              "en": "Both men were charged with theft and selling stolen goods.",
+              "pl": "Obu mężczyznom postawiono zarzut kradzieży i sprzedaży kradzionych rzeczy.",
+              "focusEn": "charged",
+              "focusPl": "postawiono"
+            },
+            {
+              "en": "The police haven't charged the third man yet.",
+              "pl": "Policja nie postawiła jeszcze zarzutów trzeciemu mężczyźnie.",
+              "focusEn": "charged",
+              "focusPl": "postawiła"
+            }
+          ],
+          "acceptedAnswers": [
+            "charge",
+            "accuse"
+          ],
+          "acceptedTranslations": [
+            "postawić zarzut",
+            "postawić zarzuty",
+            "oskarżyć"
+          ]
+        },
+        {
+          "id": "police-crime.custody",
+          "term": "custody",
+          "ipa": "/ˈkʌstədi/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zatrzymanie",
+          "definition": "The state of being kept by the police.",
+          "register": "formalny",
+          "contextPl": "Zatrzymanie przez policję",
+          "natural": "",
+          "forms": "",
+          "collocations": "in police custody; take someone into custody",
+          "synonyms": "detention",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The two suspects are still in police custody tonight.",
+              "pl": "Dwaj podejrzani wciąż przebywają dziś w policyjnym areszcie.",
+              "focusEn": "custody",
+              "focusPl": "areszcie"
+            },
+            {
+              "en": "Officers took the driver into custody right at the scene.",
+              "pl": "Funkcjonariusze dokonali zatrzymania kierowcy od razu na miejscu.",
+              "focusEn": "custody",
+              "focusPl": "zatrzymania"
+            }
+          ],
+          "acceptedAnswers": [
+            "custody",
+            "detention"
+          ],
+          "acceptedTranslations": [
+            "zatrzymanie",
+            "areszt",
+            "areszt policyjny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "police-crime.prevention",
+      "namePl": "Bezpieczeństwo i zapobieganie",
+      "scenePl": "Zebranie mieszkańców z policjantem o tym, jak chronić domy przed włamaniami",
+      "entries": [
+        {
+          "id": "police-crime.emergency",
+          "term": "emergency",
+          "ipa": "/ɪˈmɝːdʒənsi/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "nagła sytuacja",
+          "definition": "A sudden dangerous situation that needs action right away.",
+          "register": "neutralny",
+          "contextPl": "Kiedy dzwonić na 911",
+          "natural": "",
+          "forms": "emergencies",
+          "collocations": "in an emergency; emergency number; a real emergency",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Numer alarmowy w USA to 911.",
+          "examples": [
+            {
+              "en": "The officer said to call 911 only in a real emergency.",
+              "pl": "Policjant powiedział, żeby dzwonić na 911 tylko w prawdziwie nagłej sytuacji.",
+              "focusEn": "emergency",
+              "focusPl": "nagłej sytuacji"
+            },
+            {
+              "en": "In an emergency, don't try to stop a burglar yourself.",
+              "pl": "W sytuacji awaryjnej nie próbuj sam powstrzymywać włamywacza.",
+              "focusEn": "emergency",
+              "focusPl": "sytuacji awaryjnej"
+            }
+          ],
+          "acceptedAnswers": [
+            "emergency"
+          ],
+          "acceptedTranslations": [
+            "nagła sytuacja",
+            "nagły wypadek",
+            "sytuacja awaryjna"
+          ]
+        },
+        {
+          "id": "police-crime.alarm",
+          "term": "alarm",
+          "ipa": "/əˈlɑːrm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "alarm",
+          "definition": "A device that makes a loud noise to warn people of danger, such as a break-in.",
+          "register": "neutralny",
+          "contextPl": "Zabezpieczenia domu",
+          "natural": "",
+          "forms": "alarms",
+          "collocations": "a car alarm; set the alarm; the alarm went off",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The officer said an alarm scares away most burglars.",
+              "pl": "Policjant powiedział, że alarm odstrasza większość włamywaczy.",
+              "focusEn": "alarm",
+              "focusPl": "alarm"
+            },
+            {
+              "en": "Half the houses on our street don't even have an alarm.",
+              "pl": "Połowa domów na naszej ulicy nie ma nawet alarmu.",
+              "focusEn": "alarm",
+              "focusPl": "alarmu"
+            }
+          ],
+          "acceptedAnswers": [
+            "alarm",
+            "alarm system"
+          ],
+          "acceptedTranslations": [
+            "alarm",
+            "system alarmowy"
+          ]
+        },
+        {
+          "id": "police-crime.lock-up",
+          "term": "lock up",
+          "ipa": "/ˌlɑːk ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pozamykać",
+          "definition": "To lock all the doors and windows of a building.",
+          "register": "neutralny",
+          "contextPl": "Zamykanie domu",
+          "natural": "",
+          "forms": "locked up; locking up",
+          "collocations": "lock up before you leave; lock up at night",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Always lock up before you leave, even for five minutes.",
+              "pl": "Zawsze pozamykaj dom, zanim wyjdziesz, nawet na pięć minut.",
+              "focusEn": "lock up",
+              "focusPl": "pozamykaj"
+            },
+            {
+              "en": "Many break-ins happen because people forget to lock up at night.",
+              "pl": "Wiele włamań zdarza się, bo ludzie zapominają pozamykać dom na noc.",
+              "focusEn": "lock up",
+              "focusPl": "pozamykać"
+            }
+          ],
+          "acceptedAnswers": [
+            "lock up"
+          ],
+          "acceptedTranslations": [
+            "pozamykać",
+            "zamknąć na klucz",
+            "zamykać"
+          ]
+        },
+        {
+          "id": "police-crime.keep-an-eye-on",
+          "term": "keep an eye on",
+          "ipa": "/ˌkiːp ən ˈaɪ ɑːn/",
+          "pos": "idiom",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mieć oko na",
+          "definition": "To watch something or someone carefully.",
+          "register": "potoczny",
+          "contextPl": "Wzajemna pomoc sąsiadów",
+          "natural": "watch",
+          "forms": "kept",
+          "collocations": "keep an eye on the house; keep an eye on things",
+          "synonyms": "watch",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Ask a neighbor to keep an eye on your house when you travel.",
+              "pl": "Poproś sąsiada, żeby miał oko na twój dom, kiedy wyjeżdżasz.",
+              "focusEn": "keep an eye on",
+              "focusPl": "miał oko na"
+            },
+            {
+              "en": "We all agreed to keep an eye on the empty house at the end of the street.",
+              "pl": "Wszyscy zgodziliśmy się mieć oko na pusty dom na końcu ulicy.",
+              "focusEn": "keep an eye on",
+              "focusPl": "mieć oko na"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep an eye on",
+            "watch"
+          ],
+          "acceptedTranslations": [
+            "mieć oko na",
+            "pilnować",
+            "doglądać"
+          ]
+        },
+        {
+          "id": "police-crime.valuables",
+          "term": "valuables",
+          "ipa": "/ˈvæljəbəlz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kosztowności",
+          "definition": "Small things that are worth a lot of money, such as jewelry or electronics.",
+          "register": "neutralny",
+          "contextPl": "Ochrona cennych rzeczy",
+          "natural": "",
+          "forms": "",
+          "collocations": "hide your valuables; keep valuables safe",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zawsze w liczbie mnogiej.",
+          "examples": [
+            {
+              "en": "Don't leave valuables where people can see them through the window.",
+              "pl": "Nie zostawiaj kosztowności tam, gdzie można je zobaczyć przez okno.",
+              "focusEn": "valuables",
+              "focusPl": "kosztowności"
+            },
+            {
+              "en": "The officer suggested a small safe for jewelry and other valuables.",
+              "pl": "Policjant zaproponował mały sejf na biżuterię i inne kosztowności.",
+              "focusEn": "valuables",
+              "focusPl": "kosztowności"
+            }
+          ],
+          "acceptedAnswers": [
+            "valuables"
+          ],
+          "acceptedTranslations": [
+            "kosztowności",
+            "cenne rzeczy",
+            "wartościowe przedmioty"
+          ]
+        },
+        {
+          "id": "police-crime.out-of-sight",
+          "term": "out of sight",
+          "ipa": "/ˌaʊt əv ˈsaɪt/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "poza zasięgiem wzroku",
+          "definition": "In a place where people cannot see it.",
+          "register": "neutralny",
+          "contextPl": "Ukrywanie rzeczy w samochodzie i domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "keep it out of sight; put bags out of sight",
+          "synonyms": "hidden",
+          "antonyms": "in plain sight",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Keep laptops and bags out of sight in your car.",
+              "pl": "Trzymaj laptopy i torby w samochodzie poza zasięgiem wzroku.",
+              "focusEn": "out of sight",
+              "focusPl": "poza zasięgiem wzroku"
+            },
+            {
+              "en": "Put your keys somewhere out of sight, not on a hook by the door.",
+              "pl": "Odkładaj klucze gdzieś z dala od oczu, a nie na haczyk przy drzwiach.",
+              "focusEn": "out of sight",
+              "focusPl": "z dala od oczu"
+            }
+          ],
+          "acceptedAnswers": [
+            "out of sight",
+            "hidden"
+          ],
+          "acceptedTranslations": [
+            "poza zasięgiem wzroku",
+            "z dala od oczu",
+            "ukryty"
+          ]
+        },
+        {
+          "id": "police-crime.security-system",
+          "term": "security system",
+          "ipa": "/sɪˈkjʊrəti ˌsɪstəm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "system alarmowy",
+          "definition": "Equipment such as alarms and cameras that protects a home.",
+          "register": "neutralny",
+          "contextPl": "Profesjonalne zabezpieczenia",
+          "natural": "",
+          "forms": "security systems",
+          "collocations": "install a security system; a home security system",
+          "synonyms": "alarm system",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The officer said a security system with cameras works best.",
+              "pl": "Policjant powiedział, że najlepiej działa system alarmowy z kamerami.",
+              "focusEn": "security system",
+              "focusPl": "system alarmowy"
+            },
+            {
+              "en": "After the break-ins, three families installed a security system.",
+              "pl": "Po włamaniach trzy rodziny założyły system alarmowy.",
+              "focusEn": "security system",
+              "focusPl": "system alarmowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "security system",
+            "alarm system"
+          ],
+          "acceptedTranslations": [
+            "system alarmowy",
+            "system zabezpieczeń",
+            "monitoring"
+          ]
+        },
+        {
+          "id": "police-crime.neighborhood-watch",
+          "term": "neighborhood watch",
+          "ipa": "/ˌneɪbərhʊd ˈwɑːtʃ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "straż sąsiedzka",
+          "definition": "A group of neighbors who watch for crime and report it to the police.",
+          "register": "neutralny",
+          "contextPl": "Inicjatywy mieszkańców",
+          "natural": "",
+          "forms": "",
+          "collocations": "start a neighborhood watch; a neighborhood watch group",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Brytyjska pisownia: „neighbourhood”.",
+          "examples": [
+            {
+              "en": "At the meeting, we decided to start a neighborhood watch.",
+              "pl": "Na zebraniu postanowiliśmy założyć straż sąsiedzką.",
+              "focusEn": "neighborhood watch",
+              "focusPl": "straż sąsiedzką"
+            },
+            {
+              "en": "Our neighborhood watch has a group chat for anything suspicious.",
+              "pl": "Nasza straż sąsiedzka ma czat grupowy na wszystko, co podejrzane.",
+              "focusEn": "neighborhood watch",
+              "focusPl": "straż sąsiedzka"
+            }
+          ],
+          "acceptedAnswers": [
+            "neighborhood watch",
+            "neighborhood watch group"
+          ],
+          "acceptedTranslations": [
+            "straż sąsiedzka",
+            "sąsiedzki patrol"
+          ]
+        },
+        {
+          "id": "police-crime.deter",
+          "term": "deter",
+          "ipa": "/dɪˈtɝː/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "odstraszać",
+          "definition": "To make someone decide not to do something.",
+          "register": "formalny",
+          "contextPl": "Zapobieganie przestępstwom",
+          "natural": "discourage",
+          "forms": "deterred; deterring",
+          "collocations": "deter burglars; deter crime",
+          "synonyms": "discourage",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bright lights and cameras deter most burglars.",
+              "pl": "Jasne światła i kamery odstraszają większość włamywaczy.",
+              "focusEn": "deter",
+              "focusPl": "odstraszają"
+            },
+            {
+              "en": "A barking dog can deter thieves better than a lock, the officer joked.",
+              "pl": "Szczekający pies potrafi odstraszyć złodziei lepiej niż zamek, zażartował policjant.",
+              "focusEn": "deter",
+              "focusPl": "odstraszyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "deter",
+            "discourage"
+          ],
+          "acceptedTranslations": [
+            "odstraszać",
+            "odstraszyć",
+            "zniechęcać"
+          ]
+        }
+      ]
+    }
+  ]
+}

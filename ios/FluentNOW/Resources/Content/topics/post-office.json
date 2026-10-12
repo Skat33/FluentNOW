@@ -1,0 +1,2520 @@
+{
+  "schemaVersion": 1,
+  "id": "post-office",
+  "namePl": "Poczta i przesyłki",
+  "nameEn": "Post Office and Mail",
+  "group": "services",
+  "symbol": "envelope",
+  "summaryPl": "Nadawanie listów i paczek, skrzynka pocztowa, opcje wysyłki, pakowanie oraz zaginione przesyłki.",
+  "aliases": [
+    "poczta",
+    "przesyłki",
+    "list",
+    "paczka",
+    "kurier",
+    "nadawanie",
+    "znaczek",
+    "post office",
+    "mail",
+    "package"
+  ],
+  "categories": [
+    {
+      "id": "post-office.sending",
+      "namePl": "Nadawanie przesyłek",
+      "scenePl": "Okienko na poczcie: nadajesz paczkę z prezentami dla rodziny w Polsce",
+      "entries": [
+        {
+          "id": "post-office.post-office",
+          "term": "post office",
+          "ipa": "/ˈpoʊst ˌɔːfɪs/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "poczta",
+          "definition": "A building where you can send letters and packages and buy stamps.",
+          "register": "neutralny",
+          "contextPl": "Wizyta na poczcie",
+          "natural": "",
+          "forms": "post offices",
+          "collocations": "go to the post office; the local post office",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The post office closes at five, so I went on my lunch break.",
+              "pl": "Poczta jest czynna do piątej, więc poszedłem w przerwie na lunch.",
+              "focusEn": "post office",
+              "focusPl": "Poczta"
+            },
+            {
+              "en": "There was a long line at the post office because Christmas is coming.",
+              "pl": "Na poczcie była długa kolejka, bo zbliżają się święta.",
+              "focusEn": "post office",
+              "focusPl": "poczcie"
+            }
+          ],
+          "acceptedAnswers": [
+            "post office"
+          ],
+          "acceptedTranslations": [
+            "poczta",
+            "urząd pocztowy"
+          ]
+        },
+        {
+          "id": "post-office.send",
+          "term": "send",
+          "ipa": "/sɛnd/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "wysłać",
+          "definition": "To make a letter or package go to another place by mail.",
+          "register": "neutralny",
+          "contextPl": "Nadawanie przesyłek",
+          "natural": "mail",
+          "forms": "send – sent – sent",
+          "collocations": "send a package; send a letter; send it to Poland",
+          "synonyms": "mail; ship",
+          "antonyms": "receive",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to send this package to Poland, please.",
+              "pl": "Chciałbym wysłać tę paczkę do Polski.",
+              "focusEn": "send",
+              "focusPl": "wysłać"
+            },
+            {
+              "en": "I sent my mom a birthday card last week, but it still hasn't arrived.",
+              "pl": "W zeszłym tygodniu wysłałem mamie kartkę urodzinową, ale jeszcze nie doszła.",
+              "focusEn": "sent",
+              "focusPl": "wysłałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "send",
+            "mail",
+            "ship"
+          ],
+          "acceptedTranslations": [
+            "wysłać",
+            "wysyłać",
+            "nadać",
+            "przesłać"
+          ]
+        },
+        {
+          "id": "post-office.address",
+          "term": "address",
+          "ipa": "/ˈædrɛs/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "adres",
+          "definition": "The details of where someone lives, used for sending mail.",
+          "register": "neutralny",
+          "contextPl": "Dane adresata",
+          "natural": "",
+          "forms": "addresses",
+          "collocations": "write the address; mailing address; home address",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W amerykańskiej wymowie akcent często pada na pierwszą sylabę.",
+          "examples": [
+            {
+              "en": "Please write the address clearly in the middle of the box.",
+              "pl": "Proszę napisać adres wyraźnie na środku paczki.",
+              "focusEn": "address",
+              "focusPl": "adres"
+            },
+            {
+              "en": "I double-checked my aunt's address in Kraków before sending.",
+              "pl": "Przed wysłaniem sprawdziłem dwa razy adres cioci w Krakowie.",
+              "focusEn": "address",
+              "focusPl": "adres"
+            }
+          ],
+          "acceptedAnswers": [
+            "address",
+            "mailing address"
+          ],
+          "acceptedTranslations": [
+            "adres",
+            "adres pocztowy"
+          ]
+        },
+        {
+          "id": "post-office.envelope",
+          "term": "envelope",
+          "ipa": "/ˈɛnvəloʊp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "koperta",
+          "definition": "A flat paper cover that you put a letter in.",
+          "register": "neutralny",
+          "contextPl": "Wysyłanie listów",
+          "natural": "",
+          "forms": "envelopes",
+          "collocations": "seal an envelope; a padded envelope; a stamped envelope",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I bought a large envelope for the photos and the birthday card.",
+              "pl": "Kupiłem dużą kopertę na zdjęcia i kartkę urodzinową.",
+              "focusEn": "envelope",
+              "focusPl": "kopertę"
+            },
+            {
+              "en": "Write the address on the front of the envelope, not the back.",
+              "pl": "Napisz adres z przodu koperty, a nie z tyłu.",
+              "focusEn": "envelope",
+              "focusPl": "koperty"
+            }
+          ],
+          "acceptedAnswers": [
+            "envelope"
+          ],
+          "acceptedTranslations": [
+            "koperta"
+          ]
+        },
+        {
+          "id": "post-office.stamp",
+          "term": "stamp",
+          "ipa": "/stæmp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "znaczek",
+          "definition": "A small sticker you put on mail to show you have paid to send it.",
+          "register": "neutralny",
+          "contextPl": "Opłata za list",
+          "natural": "",
+          "forms": "stamps",
+          "collocations": "buy stamps; a book of stamps; put a stamp on",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How many stamps do I need for a letter to Europe?",
+              "pl": "Ile znaczków potrzebuję na list do Europy?",
+              "focusEn": "stamps",
+              "focusPl": "znaczków"
+            },
+            {
+              "en": "I also bought a book of stamps for my Christmas cards.",
+              "pl": "Kupiłem też bloczek znaczków na kartki świąteczne.",
+              "focusEn": "stamps",
+              "focusPl": "znaczków"
+            }
+          ],
+          "acceptedAnswers": [
+            "stamp",
+            "postage stamp"
+          ],
+          "acceptedTranslations": [
+            "znaczek",
+            "znaczek pocztowy"
+          ]
+        },
+        {
+          "id": "post-office.fill-out",
+          "term": "fill out",
+          "ipa": "/ˌfɪl ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wypełnić",
+          "definition": "To write information in the empty spaces of a form.",
+          "register": "neutralny",
+          "contextPl": "Formularze pocztowe",
+          "natural": "fill in",
+          "forms": "filled out; filling out",
+          "collocations": "fill out a form; fill out the customs form",
+          "synonyms": "complete; fill in",
+          "antonyms": "",
+          "notePl": "W USA częściej „fill out” niż „fill in”.",
+          "examples": [
+            {
+              "en": "You need to fill out this form for packages going abroad.",
+              "pl": "Do przesyłek za granicę trzeba wypełnić ten formularz.",
+              "focusEn": "fill out",
+              "focusPl": "wypełnić"
+            },
+            {
+              "en": "I filled out the form, but I forgot to sign it.",
+              "pl": "Wypełniłem formularz, ale zapomniałem go podpisać.",
+              "focusEn": "filled out",
+              "focusPl": "Wypełniłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "fill out",
+            "fill in",
+            "complete"
+          ],
+          "acceptedTranslations": [
+            "wypełnić",
+            "wypełniać",
+            "uzupełnić"
+          ]
+        },
+        {
+          "id": "post-office.mail",
+          "term": "mail",
+          "ipa": "/meɪl/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wysłać pocztą",
+          "definition": "To send a letter or package through the postal system.",
+          "register": "neutralny",
+          "contextPl": "Korzystanie z usług pocztowych",
+          "natural": "send",
+          "forms": "mailed; mailing",
+          "collocations": "mail a letter; mail it to me",
+          "synonyms": "send; post",
+          "antonyms": "",
+          "notePl": "Brytyjskie „post a letter”.",
+          "examples": [
+            {
+              "en": "I need to mail these documents to my landlord today.",
+              "pl": "Muszę dziś wysłać pocztą te dokumenty właścicielowi mieszkania.",
+              "focusEn": "mail",
+              "focusPl": "wysłać pocztą"
+            },
+            {
+              "en": "The clerk said it's cheaper to mail the papers in a flat envelope.",
+              "pl": "Urzędniczka powiedziała, że taniej będzie wysłać dokumenty w płaskiej kopercie.",
+              "focusEn": "mail",
+              "focusPl": "wysłać"
+            }
+          ],
+          "acceptedAnswers": [
+            "mail",
+            "send",
+            "post"
+          ],
+          "acceptedTranslations": [
+            "wysłać pocztą",
+            "wysyłać pocztą",
+            "nadać",
+            "wysłać"
+          ]
+        },
+        {
+          "id": "post-office.zip-code",
+          "term": "zip code",
+          "ipa": "/ˈzɪp ˌkoʊd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kod pocztowy",
+          "definition": "A group of numbers in an address that shows the area where mail is sent.",
+          "register": "neutralny",
+          "contextPl": "Adres w USA",
+          "natural": "",
+          "forms": "zip codes",
+          "collocations": "what's your zip code; enter your zip code",
+          "synonyms": "postal code",
+          "antonyms": "",
+          "notePl": "W USA pięć cyfr; brytyjskie „postcode”.",
+          "examples": [
+            {
+              "en": "The clerk asked for the zip code because I forgot to write it.",
+              "pl": "Urzędniczka zapytała o kod pocztowy, bo zapomniałem go wpisać.",
+              "focusEn": "zip code",
+              "focusPl": "kod pocztowy"
+            },
+            {
+              "en": "Polish zip codes have a dash in the middle.",
+              "pl": "Polskie kody pocztowe mają myślnik w środku.",
+              "focusEn": "zip codes",
+              "focusPl": "kody pocztowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "zip code",
+            "postal code"
+          ],
+          "acceptedTranslations": [
+            "kod pocztowy"
+          ]
+        },
+        {
+          "id": "post-office.sender",
+          "term": "sender",
+          "ipa": "/ˈsɛndər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nadawca",
+          "definition": "The person who sends a letter or package.",
+          "register": "neutralny",
+          "contextPl": "Dane nadawcy",
+          "natural": "",
+          "forms": "senders",
+          "collocations": "the sender's address; return to sender",
+          "synonyms": "",
+          "antonyms": "recipient",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Write your name in the sender box in the top corner.",
+              "pl": "Wpisz swoje imię i nazwisko w polu „nadawca” w górnym rogu.",
+              "focusEn": "sender",
+              "focusPl": "nadawca"
+            },
+            {
+              "en": "If they can't deliver it, they'll send it back to the sender.",
+              "pl": "Jeśli nie da się jej doręczyć, odeślą ją do nadawcy.",
+              "focusEn": "sender",
+              "focusPl": "nadawcy"
+            }
+          ],
+          "acceptedAnswers": [
+            "sender"
+          ],
+          "acceptedTranslations": [
+            "nadawca",
+            "nadawczyni"
+          ]
+        },
+        {
+          "id": "post-office.return-address",
+          "term": "return address",
+          "ipa": "/rɪˈtɝːn ˌædrɛs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "adres zwrotny",
+          "definition": "Your own address, written on mail so it can come back to you.",
+          "register": "neutralny",
+          "contextPl": "Zabezpieczenie przesyłki",
+          "natural": "",
+          "forms": "return addresses",
+          "collocations": "write a return address; no return address",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't forget to put a return address in the top left corner.",
+              "pl": "Nie zapomnij wpisać adres zwrotny w lewym górnym rogu.",
+              "focusEn": "return address",
+              "focusPl": "adres zwrotny"
+            },
+            {
+              "en": "The package had no return address, so they couldn't send it back.",
+              "pl": "Paczka nie miała adresu zwrotnego, więc nie mogli jej odesłać.",
+              "focusEn": "return address",
+              "focusPl": "adresu zwrotnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "return address",
+            "sender's address"
+          ],
+          "acceptedTranslations": [
+            "adres zwrotny",
+            "adres nadawcy"
+          ]
+        },
+        {
+          "id": "post-office.weigh",
+          "term": "weigh",
+          "ipa": "/weɪ/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zważyć",
+          "definition": "To measure how heavy something is.",
+          "register": "neutralny",
+          "contextPl": "Ustalanie ceny przesyłki",
+          "natural": "",
+          "forms": "weighed; weighing",
+          "collocations": "weigh a package; weigh it on the scale",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „weight” = waga.",
+          "examples": [
+            {
+              "en": "The clerk weighed the box and said it was over four pounds.",
+              "pl": "Urzędnik zważył paczkę i powiedział, że ma ponad cztery funty.",
+              "focusEn": "weighed",
+              "focusPl": "zważył"
+            },
+            {
+              "en": "Put it on the scale so I can weigh it.",
+              "pl": "Proszę położyć ją na wadze, żebym mogła ją zważyć.",
+              "focusEn": "weigh",
+              "focusPl": "zważyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "weigh"
+          ],
+          "acceptedTranslations": [
+            "zważyć",
+            "ważyć"
+          ]
+        },
+        {
+          "id": "post-office.fragile",
+          "term": "fragile",
+          "ipa": "/ˈfrædʒəl/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "delikatny",
+          "definition": "Easily broken or damaged.",
+          "register": "neutralny",
+          "contextPl": "Oznaczanie przesyłek",
+          "natural": "delicate",
+          "forms": "",
+          "collocations": "mark it fragile; fragile items; handle with care",
+          "synonyms": "delicate; breakable",
+          "antonyms": "",
+          "notePl": "Napis „Fragile” odpowiada polskiemu „Ostrożnie, szkło”.",
+          "examples": [
+            {
+              "en": "There's a glass vase inside, so please mark the box fragile.",
+              "pl": "W środku jest szklany wazon, więc proszę oznaczyć paczkę jako delikatną.",
+              "focusEn": "fragile",
+              "focusPl": "delikatną"
+            },
+            {
+              "en": "The clerk put a red fragile sticker on my box.",
+              "pl": "Urzędnik nakleił na moją paczkę czerwoną naklejkę z napisem „delikatne”.",
+              "focusEn": "fragile",
+              "focusPl": "delikatne"
+            }
+          ],
+          "acceptedAnswers": [
+            "fragile",
+            "breakable"
+          ],
+          "acceptedTranslations": [
+            "delikatny",
+            "kruchy",
+            "tłukący się"
+          ]
+        },
+        {
+          "id": "post-office.international",
+          "term": "international",
+          "ipa": "/ˌɪntərˈnæʃənəl/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "międzynarodowy",
+          "definition": "Between or involving different countries.",
+          "register": "neutralny",
+          "contextPl": "Wysyłka za granicę",
+          "natural": "",
+          "forms": "",
+          "collocations": "international shipping; an international package",
+          "synonyms": "",
+          "antonyms": "domestic",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "International shipping to Europe takes about two weeks.",
+              "pl": "Wysyłka międzynarodowa do Europy trwa około dwóch tygodni.",
+              "focusEn": "International",
+              "focusPl": "międzynarodowa"
+            },
+            {
+              "en": "Is there a separate line for international packages?",
+              "pl": "Czy jest osobna kolejka dla paczek zagranicznych?",
+              "focusEn": "international",
+              "focusPl": "zagranicznych"
+            }
+          ],
+          "acceptedAnswers": [
+            "international"
+          ],
+          "acceptedTranslations": [
+            "międzynarodowy",
+            "zagraniczny"
+          ]
+        },
+        {
+          "id": "post-office.postage",
+          "term": "postage",
+          "ipa": "/ˈpoʊstɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "opłata pocztowa",
+          "definition": "The money you pay to send something by mail.",
+          "register": "neutralny",
+          "contextPl": "Koszty wysyłki",
+          "natural": "",
+          "forms": "",
+          "collocations": "pay postage; postage costs; postage is included",
+          "synonyms": "shipping",
+          "antonyms": "",
+          "notePl": "Rzeczownik niepoliczalny.",
+          "examples": [
+            {
+              "en": "The postage to Poland cost more than the gifts inside.",
+              "pl": "Opłata pocztowa do Polski kosztowała więcej niż prezenty w środku.",
+              "focusEn": "postage",
+              "focusPl": "Opłata pocztowa"
+            },
+            {
+              "en": "How much is postage for a letter to Canada?",
+              "pl": "Ile wynosi opłata pocztowa za list do Kanady?",
+              "focusEn": "postage",
+              "focusPl": "opłata pocztowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "postage",
+            "shipping"
+          ],
+          "acceptedTranslations": [
+            "opłata pocztowa",
+            "koszt przesyłki",
+            "porto"
+          ]
+        },
+        {
+          "id": "post-office.customs-form",
+          "term": "customs form",
+          "ipa": "/ˈkʌstəmz ˌfɔːrm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "deklaracja celna",
+          "definition": "A document that lists what is inside a package sent to another country.",
+          "register": "formalny",
+          "contextPl": "Przesyłki międzynarodowe",
+          "natural": "",
+          "forms": "customs forms",
+          "collocations": "fill out a customs form; attach the customs form",
+          "synonyms": "customs declaration",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "For a package to Poland, you need a customs form.",
+              "pl": "Do paczki do Polski potrzebna jest deklaracja celna.",
+              "focusEn": "customs form",
+              "focusPl": "deklaracja celna"
+            },
+            {
+              "en": "I listed every gift and its value on the customs form.",
+              "pl": "Wpisałem w deklaracji celnej każdy prezent i jego wartość.",
+              "focusEn": "customs form",
+              "focusPl": "deklaracji celnej"
+            }
+          ],
+          "acceptedAnswers": [
+            "customs form",
+            "customs declaration"
+          ],
+          "acceptedTranslations": [
+            "deklaracja celna",
+            "formularz celny"
+          ]
+        },
+        {
+          "id": "post-office.contents",
+          "term": "contents",
+          "ipa": "/ˈkɑːntɛnts/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zawartość",
+          "definition": "The things that are inside a box or package.",
+          "register": "neutralny",
+          "contextPl": "Opis przesyłki",
+          "natural": "",
+          "forms": "",
+          "collocations": "the contents of the package; list the contents",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zwykle w liczbie mnogiej.",
+          "examples": [
+            {
+              "en": "The clerk asked me to describe the contents of the box.",
+              "pl": "Urzędniczka poprosiła mnie, żebym opisał zawartość paczki.",
+              "focusEn": "contents",
+              "focusPl": "zawartość"
+            },
+            {
+              "en": "The contents are just clothes and some chocolate.",
+              "pl": "Zawartość to tylko ubrania i trochę czekolady.",
+              "focusEn": "contents",
+              "focusPl": "Zawartość"
+            }
+          ],
+          "acceptedAnswers": [
+            "contents"
+          ],
+          "acceptedTranslations": [
+            "zawartość"
+          ]
+        },
+        {
+          "id": "post-office.postal-clerk",
+          "term": "postal clerk",
+          "ipa": "/ˈpoʊstəl ˌklɝːk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "urzędnik pocztowy",
+          "definition": "A person who works at the counter of a post office.",
+          "register": "neutralny",
+          "contextPl": "Obsługa na poczcie",
+          "natural": "",
+          "forms": "postal clerks",
+          "collocations": "ask the postal clerk",
+          "synonyms": "postal worker",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The postal clerk helped me find the cheapest way to ship it.",
+              "pl": "Urzędniczka pocztowa pomogła mi znaleźć najtańszy sposób wysyłki.",
+              "focusEn": "postal clerk",
+              "focusPl": "Urzędniczka pocztowa"
+            },
+            {
+              "en": "I asked the postal clerk if the box needed more tape.",
+              "pl": "Zapytałem pracownika poczty, czy paczka potrzebuje więcej taśmy.",
+              "focusEn": "postal clerk",
+              "focusPl": "pracownika poczty"
+            }
+          ],
+          "acceptedAnswers": [
+            "postal clerk",
+            "postal worker",
+            "clerk"
+          ],
+          "acceptedTranslations": [
+            "urzędnik pocztowy",
+            "pracownik poczty",
+            "urzędniczka pocztowa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-office.mail-letters",
+      "namePl": "Listy i skrzynka pocztowa",
+      "scenePl": "Po pracy przeglądasz pocztę w skrzynce przy wejściu do bloku",
+      "entries": [
+        {
+          "id": "post-office.letter",
+          "term": "letter",
+          "ipa": "/ˈlɛtər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "list",
+          "definition": "A written message that you send to someone in an envelope.",
+          "register": "neutralny",
+          "contextPl": "Tradycyjna korespondencja",
+          "natural": "",
+          "forms": "letters",
+          "collocations": "write a letter; send a letter; get a letter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There was a handwritten letter from my grandma in the mailbox.",
+              "pl": "W skrzynce był odręcznie napisany list od babci.",
+              "focusEn": "letter",
+              "focusPl": "list"
+            },
+            {
+              "en": "I got an official letter from the city about parking.",
+              "pl": "Dostałem oficjalny list z urzędu miasta w sprawie parkowania.",
+              "focusEn": "letter",
+              "focusPl": "list"
+            }
+          ],
+          "acceptedAnswers": [
+            "letter"
+          ],
+          "acceptedTranslations": [
+            "list"
+          ]
+        },
+        {
+          "id": "post-office.mail-2",
+          "term": "mail",
+          "ipa": "/meɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "poczta",
+          "definition": "Letters and packages that are delivered to you.",
+          "register": "neutralny",
+          "contextPl": "Codzienna korespondencja",
+          "natural": "",
+          "forms": "",
+          "collocations": "get mail; open the mail; the mail came",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Brytyjska wersja to „post”. Rzeczownik niepoliczalny.",
+          "examples": [
+            {
+              "en": "The mail came late today, so I checked it after work.",
+              "pl": "Poczta przyszła dziś późno, więc sprawdziłem ją po pracy.",
+              "focusEn": "mail",
+              "focusPl": "Poczta"
+            },
+            {
+              "en": "Most of my mail is ads and bills these days.",
+              "pl": "Większość mojej poczty to teraz reklamy i rachunki.",
+              "focusEn": "mail",
+              "focusPl": "poczty"
+            }
+          ],
+          "acceptedAnswers": [
+            "mail",
+            "post"
+          ],
+          "acceptedTranslations": [
+            "poczta",
+            "korespondencja",
+            "listy"
+          ]
+        },
+        {
+          "id": "post-office.mailbox",
+          "term": "mailbox",
+          "ipa": "/ˈmeɪlbɑːks/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "skrzynka pocztowa",
+          "definition": "A box where your mail is delivered, or where you put letters to send.",
+          "register": "neutralny",
+          "contextPl": "Odbiór i nadawanie listów",
+          "natural": "",
+          "forms": "mailboxes",
+          "collocations": "check the mailbox; a blue mailbox",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA niebieska skrzynka na ulicy służy do nadawania listów.",
+          "examples": [
+            {
+              "en": "My mailbox is so full that the door won't close.",
+              "pl": "Moja skrzynka pocztowa jest tak pełna, że drzwiczki się nie domykają.",
+              "focusEn": "mailbox",
+              "focusPl": "skrzynka pocztowa"
+            },
+            {
+              "en": "I dropped my reply in the blue mailbox on the corner.",
+              "pl": "Wrzuciłem odpowiedź do niebieskiej skrzynki pocztowej na rogu.",
+              "focusEn": "mailbox",
+              "focusPl": "skrzynki pocztowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "mailbox",
+            "letterbox"
+          ],
+          "acceptedTranslations": [
+            "skrzynka pocztowa",
+            "skrzynka na listy",
+            "skrzynka"
+          ]
+        },
+        {
+          "id": "post-office.check-the-mail",
+          "term": "check the mail",
+          "ipa": "/ˌtʃɛk ðə ˈmeɪl/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "sprawdzić pocztę",
+          "definition": "To look in your mailbox to see if any letters have come.",
+          "register": "neutralny",
+          "contextPl": "Codzienny nawyk",
+          "natural": "",
+          "forms": "checked; checking",
+          "collocations": "check the mail every day",
+          "synonyms": "get the mail",
+          "antonyms": "",
+          "notePl": "Może też dotyczyć maila: „check my email”.",
+          "examples": [
+            {
+              "en": "I always check the mail on my way up to the apartment.",
+              "pl": "Zawsze sprawdzam pocztę w drodze do mieszkania.",
+              "focusEn": "check the mail",
+              "focusPl": "sprawdzam pocztę"
+            },
+            {
+              "en": "Can you check the mail? I'm expecting a letter from the bank.",
+              "pl": "Możesz sprawdzić pocztę? Czekam na list z banku.",
+              "focusEn": "check the mail",
+              "focusPl": "sprawdzić pocztę"
+            }
+          ],
+          "acceptedAnswers": [
+            "check the mail",
+            "get the mail",
+            "check my mail"
+          ],
+          "acceptedTranslations": [
+            "sprawdzić pocztę",
+            "sprawdzać pocztę",
+            "zajrzeć do skrzynki"
+          ]
+        },
+        {
+          "id": "post-office.pick-up",
+          "term": "pick up",
+          "ipa": "/ˌpɪk ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "odebrać",
+          "definition": "To go somewhere and collect something, such as a package.",
+          "register": "neutralny",
+          "contextPl": "Odbiór przesyłek",
+          "natural": "",
+          "forms": "picked up; picking up",
+          "collocations": "pick up a package; pick it up at the post office",
+          "synonyms": "collect",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a note saying I can pick up my package tomorrow.",
+              "pl": "Jest kartka, że mogę odebrać paczkę jutro.",
+              "focusEn": "pick up",
+              "focusPl": "odebrać"
+            },
+            {
+              "en": "I picked up my neighbor's mail while she was on vacation.",
+              "pl": "Odbierałem pocztę sąsiadki, kiedy była na urlopie.",
+              "focusEn": "picked up",
+              "focusPl": "Odbierałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "pick up",
+            "collect"
+          ],
+          "acceptedTranslations": [
+            "odebrać",
+            "odbierać"
+          ]
+        },
+        {
+          "id": "post-office.postcard",
+          "term": "postcard",
+          "ipa": "/ˈpoʊstkɑːrd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pocztówka",
+          "definition": "A card with a picture on one side, sent by mail without an envelope.",
+          "register": "neutralny",
+          "contextPl": "Kartki z podróży",
+          "natural": "",
+          "forms": "postcards",
+          "collocations": "send a postcard; a postcard from Paris",
+          "synonyms": "card",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I found a postcard from my sister in Italy in my mailbox.",
+              "pl": "W skrzynce znalazłem pocztówkę od siostry z Włoch.",
+              "focusEn": "postcard",
+              "focusPl": "pocztówkę"
+            },
+            {
+              "en": "The postcard took three weeks to get here.",
+              "pl": "Pocztówka szła tu trzy tygodnie.",
+              "focusEn": "postcard",
+              "focusPl": "Pocztówka"
+            }
+          ],
+          "acceptedAnswers": [
+            "postcard"
+          ],
+          "acceptedTranslations": [
+            "pocztówka",
+            "kartka pocztowa",
+            "widokówka"
+          ]
+        },
+        {
+          "id": "post-office.greeting-card",
+          "term": "greeting card",
+          "ipa": "/ˈɡriːtɪŋ ˌkɑːrd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kartka z życzeniami",
+          "definition": "A card with a picture and a message, sent for birthdays or holidays.",
+          "register": "neutralny",
+          "contextPl": "Kartki na okazje",
+          "natural": "card",
+          "forms": "greeting cards",
+          "collocations": "send a greeting card; a birthday card",
+          "synonyms": "card",
+          "antonyms": "",
+          "notePl": "Zwykle mówi się konkretnie: „birthday card”, „Christmas card”.",
+          "examples": [
+            {
+              "en": "There were three greeting cards in the mail for my birthday.",
+              "pl": "W poczcie były trzy kartki z życzeniami na moje urodziny.",
+              "focusEn": "greeting cards",
+              "focusPl": "kartki z życzeniami"
+            },
+            {
+              "en": "I could tell it was a greeting card from the shape of the envelope.",
+              "pl": "Po kształcie koperty poznałem, że to kartka okolicznościowa.",
+              "focusEn": "greeting card",
+              "focusPl": "kartka okolicznościowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "greeting card",
+            "card",
+            "birthday card"
+          ],
+          "acceptedTranslations": [
+            "kartka z życzeniami",
+            "kartka okolicznościowa",
+            "kartka"
+          ]
+        },
+        {
+          "id": "post-office.mail-carrier",
+          "term": "mail carrier",
+          "ipa": "/ˈmeɪl ˌkæriər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "listonosz",
+          "definition": "A person whose job is to deliver mail.",
+          "register": "neutralny",
+          "contextPl": "Doręczanie poczty",
+          "natural": "mailman",
+          "forms": "mail carriers",
+          "collocations": "the mail carrier; our mail carrier",
+          "synonyms": "mailman; letter carrier",
+          "antonyms": "",
+          "notePl": "„Mailman” jest potoczne; brytyjskie „postman”.",
+          "examples": [
+            {
+              "en": "The mail carrier left a package next to the mailboxes.",
+              "pl": "Listonosz zostawił paczkę obok skrzynek.",
+              "focusEn": "mail carrier",
+              "focusPl": "Listonosz"
+            },
+            {
+              "en": "I said hi to the mail carrier as he was finishing our building.",
+              "pl": "Przywitałem się z listonoszem, kiedy kończył roznosić pocztę w naszym bloku.",
+              "focusEn": "mail carrier",
+              "focusPl": "listonoszem"
+            }
+          ],
+          "acceptedAnswers": [
+            "mail carrier",
+            "mailman",
+            "letter carrier"
+          ],
+          "acceptedTranslations": [
+            "listonosz",
+            "listonoszka",
+            "doręczyciel"
+          ]
+        },
+        {
+          "id": "post-office.junk-mail",
+          "term": "junk mail",
+          "ipa": "/ˈdʒʌŋk ˌmeɪl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ulotki reklamowe",
+          "definition": "Ads and offers that you get in the mail without asking for them.",
+          "register": "neutralny",
+          "contextPl": "Niechciana poczta",
+          "natural": "",
+          "forms": "",
+          "collocations": "get junk mail; throw away junk mail",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Odpowiednik spamu w tradycyjnej poczcie.",
+          "examples": [
+            {
+              "en": "Half of what's in my mailbox is junk mail.",
+              "pl": "Połowa tego, co jest w mojej skrzynce, to ulotki reklamowe.",
+              "focusEn": "junk mail",
+              "focusPl": "ulotki reklamowe"
+            },
+            {
+              "en": "I threw all the junk mail into the recycling bin by the door.",
+              "pl": "Wszystkie ulotki reklamowe wyrzuciłem do pojemnika na makulaturę przy drzwiach.",
+              "focusEn": "junk mail",
+              "focusPl": "ulotki reklamowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "junk mail"
+          ],
+          "acceptedTranslations": [
+            "ulotki reklamowe",
+            "niechciana poczta",
+            "reklamy"
+          ]
+        },
+        {
+          "id": "post-office.sign-for",
+          "term": "sign for",
+          "ipa": "/ˈsaɪn ˌfɔːr/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pokwitować odbiór",
+          "definition": "To write your name to show that you received a package or letter.",
+          "register": "neutralny",
+          "contextPl": "Odbiór przesyłki za potwierdzeniem",
+          "natural": "",
+          "forms": "signed for; signing for",
+          "collocations": "sign for a package; someone has to sign for it",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I missed the delivery because someone had to sign for it.",
+              "pl": "Przegapiłem doręczenie, bo ktoś musiał pokwitować odbiór.",
+              "focusEn": "sign for",
+              "focusPl": "pokwitować odbiór"
+            },
+            {
+              "en": "My neighbor signed for my package while I was at work.",
+              "pl": "Sąsiad pokwitował odbiór mojej paczki, kiedy byłem w pracy.",
+              "focusEn": "signed for",
+              "focusPl": "pokwitował odbiór"
+            }
+          ],
+          "acceptedAnswers": [
+            "sign for"
+          ],
+          "acceptedTranslations": [
+            "pokwitować odbiór",
+            "potwierdzić odbiór",
+            "podpisać odbiór"
+          ]
+        },
+        {
+          "id": "post-office.forward",
+          "term": "forward",
+          "ipa": "/ˈfɔːrwərd/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "przekierować",
+          "definition": "To send mail on to someone's new address.",
+          "register": "neutralny",
+          "contextPl": "Poczta po przeprowadzce",
+          "natural": "",
+          "forms": "forwarded; forwarding",
+          "collocations": "forward mail; mail forwarding",
+          "synonyms": "redirect",
+          "antonyms": "",
+          "notePl": "Usługa „mail forwarding” przydaje się po przeprowadzce.",
+          "examples": [
+            {
+              "en": "I still get mail for the old tenant, even though he asked them to forward it.",
+              "pl": "Wciąż dostaję pocztę poprzedniego lokatora, chociaż prosił, żeby ją przekierować.",
+              "focusEn": "forward",
+              "focusPl": "przekierować"
+            },
+            {
+              "en": "The post office will forward your mail for a year after you move.",
+              "pl": "Poczta będzie przekierowywać twoją korespondencję przez rok po przeprowadzce.",
+              "focusEn": "forward",
+              "focusPl": "przekierowywać"
+            }
+          ],
+          "acceptedAnswers": [
+            "forward",
+            "redirect"
+          ],
+          "acceptedTranslations": [
+            "przekierować",
+            "przekierowywać",
+            "przesłać dalej"
+          ]
+        },
+        {
+          "id": "post-office.po-box",
+          "term": "PO box",
+          "ipa": "/ˌpiː ˈoʊ ˌbɑːks/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "skrytka pocztowa",
+          "definition": "A small locked box at a post office where your mail can be delivered.",
+          "register": "neutralny",
+          "contextPl": "Alternatywny adres do korespondencji",
+          "natural": "",
+          "forms": "PO boxes",
+          "collocations": "rent a PO box; send it to my PO box",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Skrót od „post office box”.",
+          "examples": [
+            {
+              "en": "I rent a PO box because packages kept disappearing from our lobby.",
+              "pl": "Wynajmuję skrytkę pocztową, bo paczki ciągle znikały z naszego holu.",
+              "focusEn": "PO box",
+              "focusPl": "skrytkę pocztową"
+            },
+            {
+              "en": "Some companies won't ship to a PO box, only to a street address.",
+              "pl": "Niektóre firmy nie wysyłają do skrytki pocztowej, tylko na adres z ulicą.",
+              "focusEn": "PO box",
+              "focusPl": "skrytki pocztowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "PO box",
+            "P.O. box",
+            "post office box"
+          ],
+          "acceptedTranslations": [
+            "skrytka pocztowa",
+            "skrytka"
+          ]
+        },
+        {
+          "id": "post-office.certified-mail",
+          "term": "certified mail",
+          "ipa": "/ˌsɝːtəfaɪd ˈmeɪl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "list polecony",
+          "definition": "A mail service that records when a letter is sent and delivered.",
+          "register": "formalny",
+          "contextPl": "Ważne dokumenty",
+          "natural": "",
+          "forms": "",
+          "collocations": "send by certified mail; a certified letter",
+          "synonyms": "registered mail",
+          "antonyms": "",
+          "notePl": "Odpowiednik polskiego listu poleconego za potwierdzeniem odbioru.",
+          "examples": [
+            {
+              "en": "There's a notice in my mailbox about a certified mail letter.",
+              "pl": "W skrzynce jest awizo dotyczące listu poleconego.",
+              "focusEn": "certified mail",
+              "focusPl": "listu poleconego"
+            },
+            {
+              "en": "My landlord sent the lease renewal by certified mail.",
+              "pl": "Właściciel mieszkania wysłał przedłużenie umowy listem poleconym.",
+              "focusEn": "certified mail",
+              "focusPl": "listem poleconym"
+            }
+          ],
+          "acceptedAnswers": [
+            "certified mail",
+            "registered mail"
+          ],
+          "acceptedTranslations": [
+            "list polecony",
+            "polecony",
+            "przesyłka polecona"
+          ]
+        },
+        {
+          "id": "post-office.mail-slot",
+          "term": "mail slot",
+          "ipa": "/ˈmeɪl ˌslɑːt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "otwór na listy",
+          "definition": "A narrow opening in a door or wall where letters are pushed through.",
+          "register": "neutralny",
+          "contextPl": "Doręczanie listów do drzwi",
+          "natural": "",
+          "forms": "mail slots",
+          "collocations": "push it through the mail slot",
+          "synonyms": "letter slot",
+          "antonyms": "",
+          "notePl": "Brytyjska wersja to „letterbox”.",
+          "examples": [
+            {
+              "en": "The mail carrier pushed the letters through the mail slot in our lobby door.",
+              "pl": "Listonosz wrzucił listy przez otwór na listy w drzwiach naszego holu.",
+              "focusEn": "mail slot",
+              "focusPl": "otwór na listy"
+            },
+            {
+              "en": "The envelope was too thick to fit through the mail slot.",
+              "pl": "Koperta była za gruba, żeby zmieścić się w otworze na listy.",
+              "focusEn": "mail slot",
+              "focusPl": "otworze na listy"
+            }
+          ],
+          "acceptedAnswers": [
+            "mail slot",
+            "letter slot"
+          ],
+          "acceptedTranslations": [
+            "otwór na listy",
+            "szczelina na listy",
+            "wrzutnia"
+          ]
+        },
+        {
+          "id": "post-office.airmail",
+          "term": "airmail",
+          "ipa": "/ˈɛrmeɪl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "poczta lotnicza",
+          "definition": "The system of sending letters and packages by plane.",
+          "register": "neutralny",
+          "contextPl": "Listy za granicę",
+          "natural": "",
+          "forms": "",
+          "collocations": "send it by airmail; an airmail envelope",
+          "synonyms": "",
+          "antonyms": "surface mail",
+          "notePl": "Dziś rzadziej używane, bo przesyłki zagraniczne i tak lecą samolotem.",
+          "examples": [
+            {
+              "en": "My grandma still writes \"airmail\" on every letter she sends me.",
+              "pl": "Babcia wciąż pisze „poczta lotnicza” na każdym liście, który mi wysyła.",
+              "focusEn": "airmail",
+              "focusPl": "poczta lotnicza"
+            },
+            {
+              "en": "In my mailbox I found an old blue airmail envelope from Poland.",
+              "pl": "W skrzynce znalazłem starą niebieską kopertę poczty lotniczej z Polski.",
+              "focusEn": "airmail",
+              "focusPl": "poczty lotniczej"
+            }
+          ],
+          "acceptedAnswers": [
+            "airmail",
+            "air mail"
+          ],
+          "acceptedTranslations": [
+            "poczta lotnicza",
+            "priorytet lotniczy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-office.shipping-options",
+      "namePl": "Opcje i koszty wysyłki",
+      "scenePl": "Przy okienku pytasz urzędnika, jak szybko i za ile dotrze twoja paczka",
+      "entries": [
+        {
+          "id": "post-office.how-long-does-it-take",
+          "term": "how long does it take",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ile to potrwa",
+          "definition": "A question about how much time something needs.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o czas dostawy",
+          "natural": "",
+          "forms": "",
+          "collocations": "how long does it take to get there",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How long does it take for a package to get to Poland?",
+              "pl": "Ile trwa wysyłka paczki do Polski?",
+              "focusEn": "How long does it take",
+              "focusPl": "Ile trwa"
+            },
+            {
+              "en": "I asked how long it would take, and the clerk said ten days.",
+              "pl": "Zapytałem, ile to potrwa, a urzędnik odpowiedział, że dziesięć dni.",
+              "focusEn": "how long it would take",
+              "focusPl": "ile to potrwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "how long does it take",
+            "how long will it take"
+          ],
+          "acceptedTranslations": [
+            "ile to potrwa",
+            "ile to trwa",
+            "jak długo to potrwa"
+          ]
+        },
+        {
+          "id": "post-office.business-day",
+          "term": "business day",
+          "ipa": "/ˈbɪznəs ˌdeɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dzień roboczy",
+          "definition": "A day when offices are open, usually Monday to Friday.",
+          "register": "neutralny",
+          "contextPl": "Liczenie czasu dostawy",
+          "natural": "",
+          "forms": "business days",
+          "collocations": "in three business days; five to seven business days",
+          "synonyms": "workday",
+          "antonyms": "",
+          "notePl": "Weekendy i święta się nie liczą.",
+          "examples": [
+            {
+              "en": "Priority mail usually arrives in two to three business days.",
+              "pl": "Przesyłka priorytetowa zwykle dociera w ciągu dwóch, trzech dni roboczych.",
+              "focusEn": "business days",
+              "focusPl": "dni roboczych"
+            },
+            {
+              "en": "Remember that Saturday doesn't count as a business day.",
+              "pl": "Pamiętaj, że sobota nie liczy się jako dzień roboczy.",
+              "focusEn": "business day",
+              "focusPl": "dzień roboczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "business day",
+            "working day",
+            "workday"
+          ],
+          "acceptedTranslations": [
+            "dzień roboczy"
+          ]
+        },
+        {
+          "id": "post-office.rate",
+          "term": "rate",
+          "ipa": "/reɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stawka",
+          "definition": "A fixed price for a service.",
+          "register": "neutralny",
+          "contextPl": "Cennik usług pocztowych",
+          "natural": "price",
+          "forms": "rates",
+          "collocations": "shipping rates; postage rates; a flat rate",
+          "synonyms": "price; fee",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The clerk showed me the rates for different box sizes.",
+              "pl": "Urzędnik pokazał mi stawki za różne rozmiary paczek.",
+              "focusEn": "rates",
+              "focusPl": "stawki"
+            },
+            {
+              "en": "Postal rates went up again in January.",
+              "pl": "Stawki pocztowe znowu wzrosły w styczniu.",
+              "focusEn": "rates",
+              "focusPl": "Stawki"
+            }
+          ],
+          "acceptedAnswers": [
+            "rate",
+            "price"
+          ],
+          "acceptedTranslations": [
+            "stawka",
+            "cena",
+            "taryfa"
+          ]
+        },
+        {
+          "id": "post-office.express",
+          "term": "express",
+          "ipa": "/ɪkˈsprɛs/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ekspresowy",
+          "definition": "Very fast, for a higher price.",
+          "register": "neutralny",
+          "contextPl": "Szybka wysyłka",
+          "natural": "",
+          "forms": "",
+          "collocations": "express mail; express delivery; send it express",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you send it express, it'll be there by Friday.",
+              "pl": "Jeśli wyśle pan to ekspresem, dotrze do piątku.",
+              "focusEn": "express",
+              "focusPl": "ekspresem"
+            },
+            {
+              "en": "Express shipping costs almost twice as much.",
+              "pl": "Wysyłka ekspresowa kosztuje prawie dwa razy więcej.",
+              "focusEn": "Express",
+              "focusPl": "ekspresowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "express"
+          ],
+          "acceptedTranslations": [
+            "ekspresowy",
+            "ekspres",
+            "priorytetowy"
+          ]
+        },
+        {
+          "id": "post-office.insurance",
+          "term": "insurance",
+          "ipa": "/ɪnˈʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ubezpieczenie",
+          "definition": "Protection that pays you money if something is lost or damaged.",
+          "register": "neutralny",
+          "contextPl": "Zabezpieczenie wartościowych przesyłek",
+          "natural": "",
+          "forms": "",
+          "collocations": "add insurance; shipping insurance; insurance up to 100 dollars",
+          "synonyms": "coverage",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you want insurance for the camera inside?",
+              "pl": "Czy chce pan ubezpieczenie dla aparatu w środku?",
+              "focusEn": "insurance",
+              "focusPl": "ubezpieczenie"
+            },
+            {
+              "en": "The basic insurance only covers up to a hundred dollars.",
+              "pl": "Podstawowe ubezpieczenie obejmuje tylko do stu dolarów.",
+              "focusEn": "insurance",
+              "focusPl": "ubezpieczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "insurance",
+            "coverage"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie"
+          ]
+        },
+        {
+          "id": "post-office.overnight",
+          "term": "overnight",
+          "ipa": "/ˌoʊvərˈnaɪt/",
+          "pos": "przysłówek",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "na następny dzień",
+          "definition": "Arriving the next day.",
+          "register": "neutralny",
+          "contextPl": "Najszybsza dostawa",
+          "natural": "",
+          "forms": "",
+          "collocations": "ship overnight; overnight delivery",
+          "synonyms": "next-day",
+          "antonyms": "",
+          "notePl": "Też przymiotnik: „overnight shipping”.",
+          "examples": [
+            {
+              "en": "The contract has to be there tomorrow, so I'll ship it overnight.",
+              "pl": "Umowa musi tam być jutro, więc wyślę ją z dostawą na następny dzień.",
+              "focusEn": "overnight",
+              "focusPl": "na następny dzień"
+            },
+            {
+              "en": "Sending it overnight costs forty dollars, which is too much.",
+              "pl": "Wysyłka na następny dzień kosztuje czterdzieści dolarów, to za dużo.",
+              "focusEn": "overnight",
+              "focusPl": "na następny dzień"
+            }
+          ],
+          "acceptedAnswers": [
+            "overnight",
+            "next day"
+          ],
+          "acceptedTranslations": [
+            "na następny dzień",
+            "z dostawą na jutro",
+            "w ciągu doby"
+          ]
+        },
+        {
+          "id": "post-office.courier",
+          "term": "courier",
+          "ipa": "/ˈkʊriər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "firma kurierska",
+          "definition": "A company or person that delivers packages quickly.",
+          "register": "neutralny",
+          "contextPl": "Alternatywa dla poczty",
+          "natural": "",
+          "forms": "couriers",
+          "collocations": "send it by courier; a courier service",
+          "synonyms": "delivery service",
+          "antonyms": "",
+          "notePl": "W USA w mowie częściej używa się nazwy konkretnej firmy.",
+          "examples": [
+            {
+              "en": "A private courier would be faster but much more expensive.",
+              "pl": "Prywatna firma kurierska byłaby szybsza, ale dużo droższa.",
+              "focusEn": "courier",
+              "focusPl": "firma kurierska"
+            },
+            {
+              "en": "The clerk said the package goes to my parents' door by courier after customs.",
+              "pl": "Urzędnik powiedział, że po odprawie celnej paczkę do drzwi rodziców dowiezie kurier.",
+              "focusEn": "courier",
+              "focusPl": "kurier"
+            }
+          ],
+          "acceptedAnswers": [
+            "courier",
+            "delivery service"
+          ],
+          "acceptedTranslations": [
+            "firma kurierska",
+            "kurier",
+            "usługa kurierska"
+          ]
+        },
+        {
+          "id": "post-office.ground-shipping",
+          "term": "ground shipping",
+          "ipa": "/ˈɡraʊnd ˌʃɪpɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wysyłka lądowa",
+          "definition": "A cheaper, slower way to send packages by truck instead of by plane.",
+          "register": "specjalistyczny",
+          "contextPl": "Najtańsza opcja wysyłki",
+          "natural": "",
+          "forms": "",
+          "collocations": "send by ground shipping; ground shipping takes longer",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Ground shipping is cheaper, but it takes about a week.",
+              "pl": "Wysyłka lądowa jest tańsza, ale trwa około tygodnia.",
+              "focusEn": "Ground shipping",
+              "focusPl": "Wysyłka lądowa"
+            },
+            {
+              "en": "I chose ground shipping because the books aren't urgent.",
+              "pl": "Wybrałem wysyłkę lądową, bo książki nie są pilne.",
+              "focusEn": "ground shipping",
+              "focusPl": "wysyłkę lądową"
+            }
+          ],
+          "acceptedAnswers": [
+            "ground shipping",
+            "ground"
+          ],
+          "acceptedTranslations": [
+            "wysyłka lądowa",
+            "transport lądowy",
+            "zwykła wysyłka"
+          ]
+        },
+        {
+          "id": "post-office.flat-rate",
+          "term": "flat rate",
+          "ipa": "/ˌflæt ˈreɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stała stawka",
+          "definition": "One price that does not change with weight or distance.",
+          "register": "neutralny",
+          "contextPl": "Proste ceny wysyłki",
+          "natural": "",
+          "forms": "",
+          "collocations": "flat rate box; ship at a flat rate",
+          "synonyms": "fixed price",
+          "antonyms": "",
+          "notePl": "Popularne w USA pudełka „flat rate” – płacisz tyle samo niezależnie od wagi.",
+          "examples": [
+            {
+              "en": "If it fits in this box, you pay a flat rate no matter how heavy it is.",
+              "pl": "Jeśli zmieści się w tym pudełku, płaci pan stałą stawkę bez względu na wagę.",
+              "focusEn": "flat rate",
+              "focusPl": "stałą stawkę"
+            },
+            {
+              "en": "The flat rate box was cheaper than paying by weight.",
+              "pl": "Pudełko ze stałą stawką wyszło taniej niż płacenie według wagi.",
+              "focusEn": "flat rate",
+              "focusPl": "stałą stawką"
+            }
+          ],
+          "acceptedAnswers": [
+            "flat rate",
+            "fixed price"
+          ],
+          "acceptedTranslations": [
+            "stała stawka",
+            "stała opłata",
+            "ryczałt"
+          ]
+        },
+        {
+          "id": "post-office.delivery-confirmation",
+          "term": "delivery confirmation",
+          "ipa": "/dɪˈlɪvəri ˌkɑːnfərˈmeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "potwierdzenie doręczenia",
+          "definition": "Proof that a letter or package was delivered.",
+          "register": "formalny",
+          "contextPl": "Pewność, że przesyłka dotarła",
+          "natural": "",
+          "forms": "",
+          "collocations": "get delivery confirmation; with delivery confirmation",
+          "synonyms": "proof of delivery",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I paid a little extra for delivery confirmation.",
+              "pl": "Dopłaciłem trochę za potwierdzenie doręczenia.",
+              "focusEn": "delivery confirmation",
+              "focusPl": "potwierdzenie doręczenia"
+            },
+            {
+              "en": "With delivery confirmation, you'll get an email when it arrives.",
+              "pl": "Przy potwierdzeniu doręczenia dostanie pan maila, gdy przesyłka dotrze.",
+              "focusEn": "delivery confirmation",
+              "focusPl": "potwierdzeniu doręczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "delivery confirmation",
+            "proof of delivery"
+          ],
+          "acceptedTranslations": [
+            "potwierdzenie doręczenia",
+            "potwierdzenie odbioru"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-office.packing",
+      "namePl": "Pakowanie paczki",
+      "scenePl": "Wieczorem w domu pakujesz do kartonu prezenty dla rodziny",
+      "entries": [
+        {
+          "id": "post-office.box",
+          "term": "box",
+          "ipa": "/bɑːks/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "karton",
+          "definition": "A container with flat sides, often made of cardboard.",
+          "register": "neutralny",
+          "contextPl": "Pakowanie prezentów",
+          "natural": "",
+          "forms": "boxes",
+          "collocations": "a big box; a cardboard box; fit in the box",
+          "synonyms": "carton",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "All the presents barely fit in one box.",
+              "pl": "Wszystkie prezenty ledwo zmieściły się w jednym kartonie.",
+              "focusEn": "box",
+              "focusPl": "kartonie"
+            },
+            {
+              "en": "I need a smaller box for the jar of honey.",
+              "pl": "Potrzebuję mniejszego pudełka na słoik miodu.",
+              "focusEn": "box",
+              "focusPl": "pudełka"
+            }
+          ],
+          "acceptedAnswers": [
+            "box",
+            "carton"
+          ],
+          "acceptedTranslations": [
+            "karton",
+            "pudełko",
+            "pudło"
+          ]
+        },
+        {
+          "id": "post-office.heavy",
+          "term": "heavy",
+          "ipa": "/ˈhɛvi/",
+          "pos": "przymiotnik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "ciężki",
+          "definition": "Weighing a lot.",
+          "register": "neutralny",
+          "contextPl": "Waga paczki",
+          "natural": "",
+          "forms": "heavier; heaviest",
+          "collocations": "too heavy; a heavy box",
+          "synonyms": "",
+          "antonyms": "light",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The box is so heavy that I can barely lift it.",
+              "pl": "Karton jest tak ciężki, że ledwo mogę go podnieść.",
+              "focusEn": "heavy",
+              "focusPl": "ciężki"
+            },
+            {
+              "en": "Take out the jars, because they make the package too heavy.",
+              "pl": "Wyjmij słoiki, bo przez nie paczka jest za ciężka.",
+              "focusEn": "heavy",
+              "focusPl": "ciężka"
+            }
+          ],
+          "acceptedAnswers": [
+            "heavy"
+          ],
+          "acceptedTranslations": [
+            "ciężki"
+          ]
+        },
+        {
+          "id": "post-office.pack",
+          "term": "pack",
+          "ipa": "/pæk/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zapakować",
+          "definition": "To put things into a box or bag.",
+          "register": "neutralny",
+          "contextPl": "Przygotowanie paczki",
+          "natural": "",
+          "forms": "packed; packing",
+          "collocations": "pack a box; pack it carefully",
+          "synonyms": "",
+          "antonyms": "unpack",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I packed the box with gifts for my nieces and nephews.",
+              "pl": "Zapakowałem do kartonu prezenty dla siostrzenic i siostrzeńców.",
+              "focusEn": "packed",
+              "focusPl": "Zapakowałem"
+            },
+            {
+              "en": "Pack the heavy things at the bottom and the cookies on top.",
+              "pl": "Zapakuj ciężkie rzeczy na dno, a ciasteczka na wierzch.",
+              "focusEn": "Pack",
+              "focusPl": "Zapakuj"
+            }
+          ],
+          "acceptedAnswers": [
+            "pack"
+          ],
+          "acceptedTranslations": [
+            "zapakować",
+            "pakować",
+            "spakować"
+          ]
+        },
+        {
+          "id": "post-office.tape",
+          "term": "tape",
+          "ipa": "/teɪp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "taśma klejąca",
+          "definition": "A long, thin strip of sticky plastic used to close boxes.",
+          "register": "neutralny",
+          "contextPl": "Zamykanie kartonu",
+          "natural": "",
+          "forms": "",
+          "collocations": "packing tape; a roll of tape; tape it shut",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też czasownik: „tape the box” = okleić taśmą.",
+          "examples": [
+            {
+              "en": "We ran out of tape before I closed the last box.",
+              "pl": "Skończyła nam się taśma, zanim zamknąłem ostatni karton.",
+              "focusEn": "tape",
+              "focusPl": "taśma"
+            },
+            {
+              "en": "Use strong packing tape on all the edges.",
+              "pl": "Użyj mocnej taśmy pakowej na wszystkich krawędziach.",
+              "focusEn": "tape",
+              "focusPl": "taśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "tape",
+            "packing tape"
+          ],
+          "acceptedTranslations": [
+            "taśma klejąca",
+            "taśma",
+            "taśma pakowa"
+          ]
+        },
+        {
+          "id": "post-office.wrap",
+          "term": "wrap",
+          "ipa": "/ræp/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "owinąć",
+          "definition": "To cover something completely with paper or another material.",
+          "register": "neutralny",
+          "contextPl": "Zabezpieczanie przedmiotów",
+          "natural": "",
+          "forms": "wrapped; wrapping",
+          "collocations": "wrap a gift; wrap it in paper",
+          "synonyms": "",
+          "antonyms": "unwrap",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I wrapped each glass in a towel so it wouldn't break.",
+              "pl": "Owinąłem każdą szklankę ręcznikiem, żeby się nie stłukła.",
+              "focusEn": "wrapped",
+              "focusPl": "Owinąłem"
+            },
+            {
+              "en": "Should I wrap the presents before I put them in the box?",
+              "pl": "Mam zapakować prezenty, zanim włożę je do kartonu?",
+              "focusEn": "wrap",
+              "focusPl": "zapakować"
+            }
+          ],
+          "acceptedAnswers": [
+            "wrap"
+          ],
+          "acceptedTranslations": [
+            "owinąć",
+            "owijać",
+            "zawinąć",
+            "zapakować"
+          ]
+        },
+        {
+          "id": "post-office.bubble-wrap",
+          "term": "bubble wrap",
+          "ipa": "/ˈbʌbəl ˌræp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "folia bąbelkowa",
+          "definition": "Plastic with small air bubbles used to protect things in a package.",
+          "register": "neutralny",
+          "contextPl": "Zabezpieczenie delikatnych rzeczy",
+          "natural": "",
+          "forms": "",
+          "collocations": "wrap it in bubble wrap; a sheet of bubble wrap",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I put bubble wrap around the picture frame.",
+              "pl": "Owinąłem ramkę na zdjęcia folią bąbelkową.",
+              "focusEn": "bubble wrap",
+              "focusPl": "folią bąbelkową"
+            },
+            {
+              "en": "My son kept popping the bubble wrap while I was packing.",
+              "pl": "Syn ciągle strzelał folią bąbelkową, kiedy pakowałem.",
+              "focusEn": "bubble wrap",
+              "focusPl": "folią bąbelkową"
+            }
+          ],
+          "acceptedAnswers": [
+            "bubble wrap"
+          ],
+          "acceptedTranslations": [
+            "folia bąbelkowa",
+            "folia z bąbelkami",
+            "folia ochronna"
+          ]
+        },
+        {
+          "id": "post-office.cardboard",
+          "term": "cardboard",
+          "ipa": "/ˈkɑːrdbɔːrd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "tektura",
+          "definition": "Thick, stiff paper used to make boxes.",
+          "register": "neutralny",
+          "contextPl": "Materiały do pakowania",
+          "natural": "",
+          "forms": "",
+          "collocations": "a cardboard box; a piece of cardboard",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I put a piece of cardboard between the two frames.",
+              "pl": "Włożyłem kawałek tektury między dwie ramki.",
+              "focusEn": "cardboard",
+              "focusPl": "tektury"
+            },
+            {
+              "en": "This box is made of thin cardboard, so it won't hold heavy books.",
+              "pl": "To pudło jest z cienkiej tektury, więc nie wytrzyma ciężkich książek.",
+              "focusEn": "cardboard",
+              "focusPl": "tektury"
+            }
+          ],
+          "acceptedAnswers": [
+            "cardboard"
+          ],
+          "acceptedTranslations": [
+            "tektura",
+            "karton"
+          ]
+        },
+        {
+          "id": "post-office.seal",
+          "term": "seal",
+          "ipa": "/siːl/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zakleić",
+          "definition": "To close a box or envelope tightly.",
+          "register": "neutralny",
+          "contextPl": "Zamykanie przesyłki",
+          "natural": "close",
+          "forms": "sealed; sealing",
+          "collocations": "seal the box; seal an envelope",
+          "synonyms": "close",
+          "antonyms": "open",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't seal the box yet, because I want to add a card.",
+              "pl": "Nie zaklejaj jeszcze pudełka, bo chcę dołożyć kartkę.",
+              "focusEn": "seal",
+              "focusPl": "zaklejaj"
+            },
+            {
+              "en": "I sealed the box with three layers of tape.",
+              "pl": "Zakleiłem karton trzema warstwami taśmy.",
+              "focusEn": "sealed",
+              "focusPl": "Zakleiłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "seal",
+            "close"
+          ],
+          "acceptedTranslations": [
+            "zakleić",
+            "zaklejać",
+            "zamknąć szczelnie"
+          ]
+        },
+        {
+          "id": "post-office.padded-envelope",
+          "term": "padded envelope",
+          "ipa": "/ˌpædɪd ˈɛnvəloʊp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "koperta bąbelkowa",
+          "definition": "An envelope with soft material inside to protect small items.",
+          "register": "neutralny",
+          "contextPl": "Wysyłka małych przedmiotów",
+          "natural": "bubble mailer",
+          "forms": "padded envelopes",
+          "collocations": "send it in a padded envelope",
+          "synonyms": "bubble mailer",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The earrings will fit in a padded envelope instead of a box.",
+              "pl": "Kolczyki zmieszczą się w kopercie bąbelkowej zamiast w pudełku.",
+              "focusEn": "padded envelope",
+              "focusPl": "kopercie bąbelkowej"
+            },
+            {
+              "en": "A padded envelope is much cheaper to send than a big box.",
+              "pl": "Wysłanie koperty bąbelkowej jest dużo tańsze niż dużego kartonu.",
+              "focusEn": "padded envelope",
+              "focusPl": "koperty bąbelkowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "padded envelope",
+            "bubble mailer"
+          ],
+          "acceptedTranslations": [
+            "koperta bąbelkowa",
+            "koperta ochronna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "post-office.lost-damaged",
+      "namePl": "Zaginione i uszkodzone przesyłki",
+      "scenePl": "Dzwonisz na pocztę, bo paczka do Polski od trzech tygodni nie dotarła",
+      "entries": [
+        {
+          "id": "post-office.lost",
+          "term": "lost",
+          "ipa": "/lɔːst/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zaginiony",
+          "definition": "Not able to be found.",
+          "register": "neutralny",
+          "contextPl": "Zaginiona przesyłka",
+          "natural": "missing",
+          "forms": "",
+          "collocations": "a lost package; get lost in the mail",
+          "synonyms": "missing",
+          "antonyms": "found",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I think my package is lost, because it hasn't moved in three weeks.",
+              "pl": "Chyba moja paczka jest zgubiona, bo od trzech tygodni stoi w miejscu.",
+              "focusEn": "lost",
+              "focusPl": "zgubiona"
+            },
+            {
+              "en": "The clerk said lost packages usually turn up within a month.",
+              "pl": "Urzędnik powiedział, że zaginione paczki zwykle odnajdują się w ciągu miesiąca.",
+              "focusEn": "lost",
+              "focusPl": "zaginione"
+            }
+          ],
+          "acceptedAnswers": [
+            "lost",
+            "missing"
+          ],
+          "acceptedTranslations": [
+            "zaginiony",
+            "zgubiony"
+          ]
+        },
+        {
+          "id": "post-office.wrong-address",
+          "term": "wrong address",
+          "ipa": "/ˌrɔːŋ ˈædrɛs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zły adres",
+          "definition": "An address that is not correct.",
+          "register": "neutralny",
+          "contextPl": "Błąd w adresie",
+          "natural": "",
+          "forms": "",
+          "collocations": "send to the wrong address; deliver to the wrong address",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Maybe it went to the wrong address because I made a typo.",
+              "pl": "Może trafiła pod zły adres, bo zrobiłem literówkę.",
+              "focusEn": "wrong address",
+              "focusPl": "zły adres"
+            },
+            {
+              "en": "The clerk checked if the package was delivered to the wrong address.",
+              "pl": "Urzędnik sprawdził, czy paczki nie doręczono pod zły adres.",
+              "focusEn": "wrong address",
+              "focusPl": "zły adres"
+            }
+          ],
+          "acceptedAnswers": [
+            "wrong address"
+          ],
+          "acceptedTranslations": [
+            "zły adres",
+            "błędny adres",
+            "niewłaściwy adres"
+          ]
+        },
+        {
+          "id": "post-office.missing",
+          "term": "missing",
+          "ipa": "/ˈmɪsɪŋ/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "brakujący",
+          "definition": "Not in the place where it should be.",
+          "register": "neutralny",
+          "contextPl": "Brak przesyłki lub jej części",
+          "natural": "",
+          "forms": "",
+          "collocations": "a missing package; something is missing",
+          "synonyms": "lost",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My mom got the box, but one present was missing.",
+              "pl": "Mama dostała paczkę, ale jednego prezentu brakowało.",
+              "focusEn": "missing",
+              "focusPl": "brakowało"
+            },
+            {
+              "en": "I reported the package missing after twenty days.",
+              "pl": "Po dwudziestu dniach zgłosiłem paczkę jako zaginioną.",
+              "focusEn": "missing",
+              "focusPl": "zaginioną"
+            }
+          ],
+          "acceptedAnswers": [
+            "missing",
+            "lost"
+          ],
+          "acceptedTranslations": [
+            "brakujący",
+            "zaginiony",
+            "brakować"
+          ]
+        },
+        {
+          "id": "post-office.stuck",
+          "term": "stuck",
+          "ipa": "/stʌk/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "utknięty",
+          "definition": "Not able to move forward.",
+          "register": "potoczny",
+          "contextPl": "Przesyłka stojąca w miejscu",
+          "natural": "",
+          "forms": "",
+          "collocations": "stuck in customs; stuck at the warehouse",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Częste: „It's stuck in customs” = utknęła na cle.",
+          "examples": [
+            {
+              "en": "The tracking says my package is stuck in New York.",
+              "pl": "Według śledzenia moja paczka utknęła w Nowym Jorku.",
+              "focusEn": "stuck",
+              "focusPl": "utknęła"
+            },
+            {
+              "en": "The clerk said packages sometimes get stuck for weeks before Christmas.",
+              "pl": "Urzędnik powiedział, że przed świętami paczki czasem utykają na całe tygodnie.",
+              "focusEn": "stuck",
+              "focusPl": "utykają"
+            }
+          ],
+          "acceptedAnswers": [
+            "stuck"
+          ],
+          "acceptedTranslations": [
+            "utknięty",
+            "utknąć",
+            "zablokowany"
+          ]
+        },
+        {
+          "id": "post-office.return-to-sender",
+          "term": "return to sender",
+          "ipa": "/rɪˌtɝːn tə ˈsɛndər/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zwrot do nadawcy",
+          "definition": "Used when mail is sent back because it cannot be delivered.",
+          "register": "formalny",
+          "contextPl": "Niedoręczone przesyłki",
+          "natural": "",
+          "forms": "returned to sender",
+          "collocations": "marked return to sender",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Typowy stempel na niedoręczonej przesyłce.",
+          "examples": [
+            {
+              "en": "My last letter to Poland came back stamped return to sender.",
+              "pl": "Mój ostatni list do Polski wrócił z pieczątką „zwrot do nadawcy”.",
+              "focusEn": "return to sender",
+              "focusPl": "zwrot do nadawcy"
+            },
+            {
+              "en": "If nobody picks it up, it will be returned to sender.",
+              "pl": "Jeśli nikt jej nie odbierze, zostanie zwrócona nadawcy.",
+              "focusEn": "returned to sender",
+              "focusPl": "zwrócona nadawcy"
+            }
+          ],
+          "acceptedAnswers": [
+            "return to sender",
+            "returned to sender"
+          ],
+          "acceptedTranslations": [
+            "zwrot do nadawcy",
+            "zwrócić nadawcy",
+            "odesłać nadawcy"
+          ]
+        },
+        {
+          "id": "post-office.held-at-customs",
+          "term": "held at customs",
+          "ipa": "/ˌhɛld ət ˈkʌstəmz/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zatrzymany na cle",
+          "definition": "Kept by customs officers before being allowed into a country.",
+          "register": "formalny",
+          "contextPl": "Kontrola celna przesyłek",
+          "natural": "",
+          "forms": "",
+          "collocations": "be held at customs; held at customs for inspection",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My package has been held at customs in Poland for a week.",
+              "pl": "Moja paczka od tygodnia jest zatrzymana na cle w Polsce.",
+              "focusEn": "held at customs",
+              "focusPl": "zatrzymana na cle"
+            },
+            {
+              "en": "The clerk said packages are often held at customs if the form is incomplete.",
+              "pl": "Urzędnik powiedział, że paczki często są zatrzymywane na cle, jeśli formularz jest niepełny.",
+              "focusEn": "held at customs",
+              "focusPl": "zatrzymywane na cle"
+            }
+          ],
+          "acceptedAnswers": [
+            "held at customs",
+            "stuck in customs"
+          ],
+          "acceptedTranslations": [
+            "zatrzymany na cle",
+            "zatrzymany przez celników"
+          ]
+        },
+        {
+          "id": "post-office.crushed",
+          "term": "crushed",
+          "ipa": "/krʌʃt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zgnieciony",
+          "definition": "Pressed so hard that the shape is damaged.",
+          "register": "neutralny",
+          "contextPl": "Uszkodzenia w transporcie",
+          "natural": "",
+          "forms": "",
+          "collocations": "a crushed box; arrive crushed",
+          "synonyms": "damaged; dented",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My mom said the box arrived completely crushed.",
+              "pl": "Mama powiedziała, że paczka przyszła kompletnie zgnieciona.",
+              "focusEn": "crushed",
+              "focusPl": "zgnieciona"
+            },
+            {
+              "en": "One corner was crushed, and the jar inside broke.",
+              "pl": "Jeden róg był zgnieciony, a słoik w środku się stłukł.",
+              "focusEn": "crushed",
+              "focusPl": "zgnieciony"
+            }
+          ],
+          "acceptedAnswers": [
+            "crushed"
+          ],
+          "acceptedTranslations": [
+            "zgnieciony",
+            "zmiażdżony",
+            "pognieciony"
+          ]
+        },
+        {
+          "id": "post-office.file-a-claim",
+          "term": "file a claim",
+          "ipa": "/ˌfaɪl ə ˈkleɪm/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "złożyć reklamację",
+          "definition": "To make an official request for money because something was lost or damaged.",
+          "register": "formalny",
+          "contextPl": "Odszkodowanie za przesyłkę",
+          "natural": "",
+          "forms": "filed; filing",
+          "collocations": "file a claim online; file an insurance claim",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Since the package was insured, I can file a claim.",
+              "pl": "Ponieważ paczka była ubezpieczona, mogę złożyć reklamację.",
+              "focusEn": "file a claim",
+              "focusPl": "złożyć reklamację"
+            },
+            {
+              "en": "I filed a claim online, and they promised an answer in ten days.",
+              "pl": "Złożyłem reklamację online i obiecali odpowiedź w ciągu dziesięciu dni.",
+              "focusEn": "filed a claim",
+              "focusPl": "Złożyłem reklamację"
+            }
+          ],
+          "acceptedAnswers": [
+            "file a claim",
+            "make a claim"
+          ],
+          "acceptedTranslations": [
+            "złożyć reklamację",
+            "złożyć wniosek o odszkodowanie",
+            "reklamować"
+          ]
+        },
+        {
+          "id": "post-office.missed-delivery-notice",
+          "term": "missed delivery notice",
+          "ipa": "",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "awizo",
+          "definition": "A note left by the mail carrier saying they tried to deliver something.",
+          "register": "neutralny",
+          "contextPl": "Nieudana próba doręczenia",
+          "natural": "",
+          "forms": "missed delivery notices",
+          "collocations": "leave a missed delivery notice",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku: awizo.",
+          "examples": [
+            {
+              "en": "My mom found a missed delivery notice in her mailbox in Poland.",
+              "pl": "Mama znalazła awizo w swojej skrzynce w Polsce.",
+              "focusEn": "missed delivery notice",
+              "focusPl": "awizo"
+            },
+            {
+              "en": "She says there was no missed delivery notice, so nobody even tried.",
+              "pl": "Mówi, że nie było żadnego awizo, więc nikt nawet nie próbował.",
+              "focusEn": "missed delivery notice",
+              "focusPl": "awizo"
+            }
+          ],
+          "acceptedAnswers": [
+            "missed delivery notice",
+            "delivery notice"
+          ],
+          "acceptedTranslations": [
+            "awizo",
+            "zawiadomienie o próbie doręczenia"
+          ]
+        },
+        {
+          "id": "post-office.undeliverable",
+          "term": "undeliverable",
+          "ipa": "/ˌʌndɪˈlɪvərəbəl/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "niedoręczalny",
+          "definition": "Not able to be delivered, for example because the address is wrong.",
+          "register": "formalny",
+          "contextPl": "Komunikaty pocztowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "undeliverable mail; marked as undeliverable",
+          "synonyms": "",
+          "antonyms": "deliverable",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The system marked my package as undeliverable because of the address.",
+              "pl": "System oznaczył moją paczkę jako niemożliwą do doręczenia z powodu adresu.",
+              "focusEn": "undeliverable",
+              "focusPl": "niemożliwą do doręczenia"
+            },
+            {
+              "en": "Undeliverable packages are sent back after thirty days.",
+              "pl": "Paczki nie do doręczenia są odsyłane po trzydziestu dniach.",
+              "focusEn": "Undeliverable",
+              "focusPl": "nie do doręczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "undeliverable"
+          ],
+          "acceptedTranslations": [
+            "niedoręczalny",
+            "niemożliwy do doręczenia",
+            "nie do doręczenia"
+          ]
+        }
+      ]
+    }
+  ]
+}
