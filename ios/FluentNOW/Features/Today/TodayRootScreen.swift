@@ -18,59 +18,104 @@ struct TodayRootScreen: View {
         return store.state.words.isEmpty || onboardingInProgress
     }
 
+    // `body` jest celowo krótki: łańcuch warunków i modyfikatory z domknięciami w jednym wyrażeniu
+    // przekraczały limit czasu sprawdzania typów kompilatora („unable to type-check … in reasonable time”).
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: Spacing.l) {
-                TodayStatusBanners()
-                if case .failed(let message) = store.loadPhase {
-                    ErrorBanner(
-                        title: "Nie udało się wczytać danych",
-                        message: "\(message) Twoje dane nie zostały nadpisane."
-                    )
-                } else if store.loadPhase == .loading {
-                    TodaySkeleton()
-                } else if showsOnboarding {
-                    TodayOnboardingView(isAdding: $onboardingInProgress)
-                } else if let snapshot {
-                    TodayContent(snapshot: snapshot, isEmpty: store.state.words.isEmpty)
-                } else {
-                    TodaySkeleton()
-                }
-            }
-            .frame(maxWidth: Spacing.readableWidth)
-            .padding(Spacing.screen)
-            .frame(maxWidth: .infinity)
+            scrollContent
         }
         .background(Palette.background)
         .navigationTitle("Dzisiaj")
-        .toolbar {
-            ToolbarItem(placement: .primaryAction) { QuickAddButton() }
-        }
+        .toolbar { toolbarContent }
         .libraryNavigationDestinations()
-        .task {
-            let loaded = await env.content.recommendations()
-            candidates = loaded
+        .task { await loadCandidates() }
+        .task(id: refreshKey) { await refreshSnapshot() }
+        .modifier(TodayGoalHaptic(isReached: snapshot?.goal.isReached, enabled: preferences.hapticsEnabled))
+    }
+
+    private var scrollContent: some View {
+        VStack(alignment: .leading, spacing: Spacing.l) {
+            TodayStatusBanners()
+            mainSection
         }
-        .task(id: TodayRefreshKey(revision: store.revision, candidateCount: candidates.count)) {
-            let now = store.now()
-            let pool = candidates
-            let computed = await store.compute { state in
-                TodaySnapshot.make(state: state, candidates: pool, now: now)
-            }
-            guard !Task.isCancelled else { return }
-            snapshot = computed
-        }
-        // Tylko przejście „nieosiągnięty → osiągnięty” w trakcie działania ekranu (nie przy pierwszym
-        // wczytaniu migawki, gdy cel był osiągnięty już wcześniej).
-        .sensoryFeedback(FluentHaptic.goalReached, trigger: snapshot?.goal.isReached) { old, new in
-            preferences.hapticsEnabled && old == false && new == true
+        .frame(maxWidth: Spacing.readableWidth)
+        .padding(Spacing.screen)
+        .frame(maxWidth: .infinity)
+    }
+
+    @ViewBuilder
+    private var mainSection: some View {
+        switch displayState {
+        case .failed(let message):
+            ErrorBanner(
+                title: "Nie udało się wczytać danych",
+                message: message + " Twoje dane nie zostały nadpisane."
+            )
+        case .loading:
+            TodaySkeleton()
+        case .onboarding:
+            TodayOnboardingView(isAdding: $onboardingInProgress)
+        case .content(let current):
+            TodayContent(snapshot: current, isEmpty: store.state.words.isEmpty)
         }
     }
+
+    @ToolbarContentBuilder
+    private var toolbarContent: some ToolbarContent {
+        ToolbarItem(placement: .primaryAction) { QuickAddButton() }
+    }
+
+    private var displayState: TodayDisplayState {
+        if case .failed(let message) = store.loadPhase { return .failed(message) }
+        if store.loadPhase == .loading { return .loading }
+        if showsOnboarding { return .onboarding }
+        if let snapshot { return .content(snapshot) }
+        return .loading
+    }
+
+    private var refreshKey: TodayRefreshKey {
+        TodayRefreshKey(revision: store.revision, candidateCount: candidates.count)
+    }
+
+    private func loadCandidates() async {
+        let loaded: [Recommendation] = await env.content.recommendations()
+        candidates = loaded
+    }
+
+    private func refreshSnapshot() async {
+        let now: Timestamp = store.now()
+        let pool: [Recommendation] = candidates
+        let computed: TodaySnapshot = await store.compute { (state: LearnerState) -> TodaySnapshot in
+            TodaySnapshot.make(state: state, candidates: pool, now: now)
+        }
+        guard !Task.isCancelled else { return }
+        snapshot = computed
+    }
+}
+
+private enum TodayDisplayState {
+    case failed(String)
+    case loading
+    case onboarding
+    case content(TodaySnapshot)
 }
 
 private struct TodayRefreshKey: Hashable {
     let revision: Int
     let candidateCount: Int
+}
+
+/// Haptyka „cel osiągnięty” — tylko przejście „nieosiągnięty → osiągnięty” w trakcie działania ekranu
+/// (nie przy pierwszym wczytaniu migawki, gdy cel był osiągnięty już wcześniej: wtedy `old == nil`).
+private struct TodayGoalHaptic: ViewModifier {
+    let isReached: Bool?
+    let enabled: Bool
+
+    func body(content: Content) -> some View {
+        content.sensoryFeedback(FluentHaptic.goalReached, trigger: isReached) { (old: Bool?, new: Bool?) -> Bool in
+            enabled && old == false && new == true
+        }
+    }
 }
 
 /// Komunikaty o zapisie i trybie lokalnym (dane są bezpieczne — nie blokują ekranu).
