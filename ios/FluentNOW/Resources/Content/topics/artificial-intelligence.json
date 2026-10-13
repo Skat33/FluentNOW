@@ -1,0 +1,2530 @@
+{
+  "schemaVersion": 1,
+  "id": "artificial-intelligence",
+  "namePl": "Sztuczna inteligencja",
+  "nameEn": "Artificial Intelligence",
+  "group": "technology",
+  "symbol": "cpu",
+  "summaryPl": "Podstawowe pojęcia SI, korzystanie z czatbotów i narzędzi AI, dane i uczenie modeli, automatyzacja pracy oraz etyka i zagrożenia.",
+  "aliases": [
+    "sztuczna inteligencja",
+    "SI",
+    "AI",
+    "czatbot",
+    "uczenie maszynowe",
+    "model językowy",
+    "automatyzacja",
+    "artificial intelligence",
+    "machine learning",
+    "chatbot"
+  ],
+  "categories": [
+    {
+      "id": "artificial-intelligence.basics",
+      "namePl": "Podstawy sztucznej inteligencji",
+      "scenePl": "Niedzielny obiad: rodzice pytają cię, czym właściwie jest sztuczna inteligencja",
+      "entries": [
+        {
+          "id": "artificial-intelligence.artificial-intelligence",
+          "term": "artificial intelligence",
+          "ipa": "/ˌɑːrtɪfɪʃəl ɪnˈtelɪdʒəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sztuczna inteligencja",
+          "definition": "Computer systems that can do tasks that usually need human thinking.",
+          "register": "neutralny",
+          "contextPl": "Technologia naśladująca ludzkie myślenie",
+          "natural": "AI",
+          "forms": "",
+          "collocations": "use artificial intelligence; advances in artificial intelligence",
+          "synonyms": "AI",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Dad asked if artificial intelligence can really think like a person.",
+              "pl": "Tata zapytał, czy sztuczna inteligencja naprawdę potrafi myśleć jak człowiek.",
+              "focusEn": "artificial intelligence",
+              "focusPl": "sztuczna inteligencja"
+            },
+            {
+              "en": "I explained that artificial intelligence is already in their phones and cars.",
+              "pl": "Wyjaśniłam, że sztuczna inteligencja jest już w ich telefonach i samochodach.",
+              "focusEn": "artificial intelligence",
+              "focusPl": "sztuczna inteligencja"
+            }
+          ],
+          "acceptedAnswers": [
+            "artificial intelligence",
+            "AI"
+          ],
+          "acceptedTranslations": [
+            "sztuczna inteligencja",
+            "SI",
+            "AI"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.ai",
+          "term": "AI",
+          "ipa": "/ˌeɪ ˈaɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "SI",
+          "definition": "Short for artificial intelligence.",
+          "register": "neutralny",
+          "contextPl": "Potoczny skrót",
+          "natural": "artificial intelligence",
+          "forms": "",
+          "collocations": "AI tools; use AI; AI-powered",
+          "synonyms": "artificial intelligence",
+          "antonyms": "",
+          "notePl": "Po polsku mówi się „AI” /ej-aj/ lub „SI”.",
+          "examples": [
+            {
+              "en": "Mom wanted to know if AI wrote the birthday poem I sent her.",
+              "pl": "Mama chciała wiedzieć, czy to AI napisała wiersz urodzinowy, który jej wysłałam.",
+              "focusEn": "AI",
+              "focusPl": "AI"
+            },
+            {
+              "en": "Everyone at dinner had a different opinion about AI.",
+              "pl": "Każdy przy obiedzie miał inne zdanie o SI.",
+              "focusEn": "AI",
+              "focusPl": "SI"
+            }
+          ],
+          "acceptedAnswers": [
+            "AI",
+            "artificial intelligence"
+          ],
+          "acceptedTranslations": [
+            "SI",
+            "AI",
+            "sztuczna inteligencja"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.chatbot",
+          "term": "chatbot",
+          "ipa": "/ˈtʃætbɑːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "czatbot",
+          "definition": "A computer program that can have a conversation with people in writing or speech.",
+          "register": "neutralny",
+          "contextPl": "Programy do rozmowy",
+          "natural": "",
+          "forms": "chatbots",
+          "collocations": "talk to a chatbot; an AI chatbot",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I showed my parents how to ask a chatbot for a recipe.",
+              "pl": "Pokazałam rodzicom, jak poprosić czatbota o przepis.",
+              "focusEn": "chatbot",
+              "focusPl": "czatbota"
+            },
+            {
+              "en": "Dad was surprised that the chatbot answered in perfect Polish.",
+              "pl": "Tata był zaskoczony, że czatbot odpowiedział nienaganną polszczyzną.",
+              "focusEn": "chatbot",
+              "focusPl": "czatbot"
+            }
+          ],
+          "acceptedAnswers": [
+            "chatbot",
+            "chat bot"
+          ],
+          "acceptedTranslations": [
+            "czatbot",
+            "chatbot",
+            "bot"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.voice-assistant",
+          "term": "voice assistant",
+          "ipa": "/ˈvɔɪs əˌsɪstənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "asystent głosowy",
+          "definition": "A program that answers questions and does tasks when you speak to it.",
+          "register": "neutralny",
+          "contextPl": "SI w codziennych urządzeniach",
+          "natural": "virtual assistant",
+          "forms": "voice assistants",
+          "collocations": "ask the voice assistant; a smart speaker with a voice assistant",
+          "synonyms": "virtual assistant",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My parents use a voice assistant to set kitchen timers.",
+              "pl": "Moi rodzice używają asystenta głosowego do ustawiania minutnika w kuchni.",
+              "focusEn": "voice assistant",
+              "focusPl": "asystenta głosowego"
+            },
+            {
+              "en": "Mom didn't know that her voice assistant uses AI.",
+              "pl": "Mama nie wiedziała, że jej asystent głosowy korzysta z AI.",
+              "focusEn": "voice assistant",
+              "focusPl": "asystent głosowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "voice assistant",
+            "virtual assistant",
+            "smart assistant"
+          ],
+          "acceptedTranslations": [
+            "asystent głosowy",
+            "asystent wirtualny"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.robot",
+          "term": "robot",
+          "ipa": "/ˈroʊbɑːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "robot",
+          "definition": "A machine that can do tasks automatically, sometimes looking like a person.",
+          "register": "neutralny",
+          "contextPl": "Maszyny wykonujące zadania",
+          "natural": "",
+          "forms": "robots",
+          "collocations": "a cleaning robot; robots in factories",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Dad thought AI meant a robot walking around the house.",
+              "pl": "Tata myślał, że AI to robot chodzący po domu.",
+              "focusEn": "robot",
+              "focusPl": "robot"
+            },
+            {
+              "en": "Their robot vacuum is the only thing at home that seems a bit like AI.",
+              "pl": "Ich robot sprzątający to jedyne urządzenie w domu, które choć trochę przypomina AI.",
+              "focusEn": "robot",
+              "focusPl": "robot"
+            }
+          ],
+          "acceptedAnswers": [
+            "robot"
+          ],
+          "acceptedTranslations": [
+            "robot"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.facial-recognition",
+          "term": "facial recognition",
+          "ipa": "/ˌfeɪʃəl ˌrekəɡˈnɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rozpoznawanie twarzy",
+          "definition": "Technology that identifies people from their faces.",
+          "register": "neutralny",
+          "contextPl": "SI w telefonach i kamerach",
+          "natural": "face recognition",
+          "forms": "",
+          "collocations": "facial recognition software; unlock with facial recognition",
+          "synonyms": "face recognition",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Mom's phone uses facial recognition to unlock, and she had no idea it was AI.",
+              "pl": "Telefon mamy odblokowuje się dzięki rozpoznawaniu twarzy, a ona nie miała pojęcia, że to AI.",
+              "focusEn": "facial recognition",
+              "focusPl": "rozpoznawaniu twarzy"
+            },
+            {
+              "en": "Dad tested the facial recognition with his glasses on and off.",
+              "pl": "Tata przetestował rozpoznawanie twarzy w okularach i bez nich.",
+              "focusEn": "facial recognition",
+              "focusPl": "rozpoznawanie twarzy"
+            }
+          ],
+          "acceptedAnswers": [
+            "facial recognition",
+            "face recognition",
+            "face ID"
+          ],
+          "acceptedTranslations": [
+            "rozpoznawanie twarzy",
+            "identyfikacja twarzy"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.machine-learning",
+          "term": "machine learning",
+          "ipa": "/məˈʃiːn ˌlɝːnɪŋ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "uczenie maszynowe",
+          "definition": "A type of AI in which computers learn from examples instead of fixed rules.",
+          "register": "specjalistyczny",
+          "contextPl": "Sposób działania nowoczesnej SI",
+          "natural": "",
+          "forms": "",
+          "collocations": "use machine learning; machine learning model",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I tried to explain machine learning with an example about spam emails.",
+              "pl": "Próbowałam wyjaśnić uczenie maszynowe na przykładzie spamu.",
+              "focusEn": "machine learning",
+              "focusPl": "uczenie maszynowe"
+            },
+            {
+              "en": "Your bank uses machine learning to spot strange payments.",
+              "pl": "Wasz bank korzysta z uczenia maszynowego, żeby wykrywać podejrzane płatności.",
+              "focusEn": "machine learning",
+              "focusPl": "uczenia maszynowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "machine learning",
+            "ML"
+          ],
+          "acceptedTranslations": [
+            "uczenie maszynowe",
+            "ML"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.model",
+          "term": "model",
+          "ipa": "/ˈmɑːdəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "model",
+          "definition": "A computer program trained on data to make predictions or create content.",
+          "register": "specjalistyczny",
+          "contextPl": "Systemy SI",
+          "natural": "",
+          "forms": "models",
+          "collocations": "an AI model; train a model; a language model",
+          "synonyms": "system",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Each new model is better at understanding questions.",
+              "pl": "Każdy nowy model lepiej rozumie pytania.",
+              "focusEn": "model",
+              "focusPl": "model"
+            },
+            {
+              "en": "Dad asked who decides what the model is allowed to say.",
+              "pl": "Tata zapytał, kto decyduje, co model może mówić.",
+              "focusEn": "model",
+              "focusPl": "model"
+            }
+          ],
+          "acceptedAnswers": [
+            "model",
+            "AI model"
+          ],
+          "acceptedTranslations": [
+            "model",
+            "model SI"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.large-language-model",
+          "term": "large language model",
+          "ipa": "/ˌlɑːrdʒ ˈlæŋɡwɪdʒ ˌmɑːdəl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "duży model językowy",
+          "definition": "An AI system trained on huge amounts of text that can understand and write language.",
+          "register": "specjalistyczny",
+          "contextPl": "Technologia stojąca za czatbotami",
+          "natural": "LLM",
+          "forms": "large language models",
+          "collocations": "build a large language model; LLM",
+          "synonyms": "LLM",
+          "antonyms": "",
+          "notePl": "Skrót LLM.",
+          "examples": [
+            {
+              "en": "Most chatbots today are built on a large language model.",
+              "pl": "Większość dzisiejszych czatbotów opiera się na dużym modelu językowym.",
+              "focusEn": "large language model",
+              "focusPl": "dużym modelu językowym"
+            },
+            {
+              "en": "A large language model predicts the next word, again and again.",
+              "pl": "Duży model językowy przewiduje kolejne słowo, raz za razem.",
+              "focusEn": "large language model",
+              "focusPl": "Duży model językowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "large language model",
+            "LLM"
+          ],
+          "acceptedTranslations": [
+            "duży model językowy",
+            "model językowy",
+            "LLM"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.generative-ai",
+          "term": "generative AI",
+          "ipa": "/ˌdʒenərətɪv ˌeɪ ˈaɪ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "generatywna SI",
+          "definition": "AI that can create new text, images, music, or video.",
+          "register": "specjalistyczny",
+          "contextPl": "SI tworząca nowe treści",
+          "natural": "",
+          "forms": "",
+          "collocations": "generative AI tools; use generative AI",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The picture of the dog in space was made with generative AI.",
+              "pl": "Obrazek psa w kosmosie został stworzony przez generatywną SI.",
+              "focusEn": "generative AI",
+              "focusPl": "generatywną SI"
+            },
+            {
+              "en": "Mom asked if generative AI could make a card for Grandma.",
+              "pl": "Mama zapytała, czy generatywna SI mogłaby zrobić kartkę dla babci.",
+              "focusEn": "generative AI",
+              "focusPl": "generatywna SI"
+            }
+          ],
+          "acceptedAnswers": [
+            "generative AI",
+            "gen AI"
+          ],
+          "acceptedTranslations": [
+            "generatywna SI",
+            "generatywna sztuczna inteligencja",
+            "generatywne AI"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.neural-network",
+          "term": "neural network",
+          "ipa": "/ˌnʊrəl ˈnetwɝːk/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "sieć neuronowa",
+          "definition": "A computer system designed to work a little like the human brain.",
+          "register": "specjalistyczny",
+          "contextPl": "Budowa systemów SI",
+          "natural": "",
+          "forms": "neural networks",
+          "collocations": "train a neural network",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A neural network is loosely based on how the brain works.",
+              "pl": "Sieć neuronowa luźno nawiązuje do tego, jak działa mózg.",
+              "focusEn": "neural network",
+              "focusPl": "Sieć neuronowa"
+            },
+            {
+              "en": "Dad laughed when I said a neural network has no real neurons.",
+              "pl": "Tata się zaśmiał, kiedy powiedziałam, że sieć neuronowa nie ma prawdziwych neuronów.",
+              "focusEn": "neural network",
+              "focusPl": "sieć neuronowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "neural network"
+          ],
+          "acceptedTranslations": [
+            "sieć neuronowa"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.smart",
+          "term": "smart",
+          "ipa": "/smɑːrt/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "inteligentny",
+          "definition": "Of a device: connected to the internet and able to do things automatically.",
+          "register": "neutralny",
+          "contextPl": "Inteligentne urządzenia",
+          "natural": "",
+          "forms": "smarter; smartest",
+          "collocations": "smart speaker; smart home; smart fridge",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Their new smart TV suggests movies based on what they watch.",
+              "pl": "Ich nowy inteligentny telewizor proponuje filmy na podstawie tego, co oglądają.",
+              "focusEn": "smart",
+              "focusPl": "inteligentny"
+            },
+            {
+              "en": "Is a smart fridge really using AI, or is it just marketing?",
+              "pl": "Czy inteligentna lodówka naprawdę korzysta z AI, czy to tylko marketing?",
+              "focusEn": "smart",
+              "focusPl": "inteligentna"
+            }
+          ],
+          "acceptedAnswers": [
+            "smart"
+          ],
+          "acceptedTranslations": [
+            "inteligentny",
+            "smart"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "artificial-intelligence.using-ai",
+      "namePl": "Korzystanie z narzędzi SI",
+      "scenePl": "W biurze używasz asystenta AI do przygotowania raportu i odpowiedzi na maile",
+      "entries": [
+        {
+          "id": "artificial-intelligence.ai-assistant",
+          "term": "AI assistant",
+          "ipa": "/ˌeɪ ˈaɪ əˌsɪstənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "asystent AI",
+          "definition": "A program that uses AI to help you write, search, or plan.",
+          "register": "neutralny",
+          "contextPl": "Pomocnik w codziennej pracy",
+          "natural": "",
+          "forms": "AI assistants",
+          "collocations": "ask your AI assistant; use an AI assistant",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My AI assistant drafts replies to simple emails for me.",
+              "pl": "Mój asystent AI przygotowuje dla mnie szkice odpowiedzi na proste maile.",
+              "focusEn": "AI assistant",
+              "focusPl": "asystent AI"
+            },
+            {
+              "en": "Our company gave everyone the same AI assistant last month.",
+              "pl": "W zeszłym miesiącu firma dała wszystkim tego samego asystenta AI.",
+              "focusEn": "AI assistant",
+              "focusPl": "asystenta AI"
+            }
+          ],
+          "acceptedAnswers": [
+            "AI assistant",
+            "assistant"
+          ],
+          "acceptedTranslations": [
+            "asystent AI",
+            "asystent SI",
+            "inteligentny asystent"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.prompt",
+          "term": "prompt",
+          "ipa": "/prɑːmpt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "polecenie (prompt)",
+          "definition": "The text or question you type to tell an AI what to do.",
+          "register": "neutralny",
+          "contextPl": "Rozmowa z czatbotem",
+          "natural": "",
+          "forms": "prompts",
+          "collocations": "write a prompt; a good prompt; a detailed prompt",
+          "synonyms": "instruction",
+          "antonyms": "",
+          "notePl": "Czasownik też „prompt”.",
+          "examples": [
+            {
+              "en": "A clear prompt gets a much better answer.",
+              "pl": "Jasne polecenie daje dużo lepszą odpowiedź.",
+              "focusEn": "prompt",
+              "focusPl": "polecenie"
+            },
+            {
+              "en": "I rewrote my prompt three times before the summary was useful.",
+              "pl": "Przepisałam prompt trzy razy, zanim streszczenie okazało się przydatne.",
+              "focusEn": "prompt",
+              "focusPl": "prompt"
+            }
+          ],
+          "acceptedAnswers": [
+            "prompt",
+            "instruction"
+          ],
+          "acceptedTranslations": [
+            "polecenie (prompt)",
+            "polecenie",
+            "prompt",
+            "zapytanie"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.generate",
+          "term": "generate",
+          "ipa": "/ˈdʒenəreɪt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wygenerować",
+          "definition": "To produce text, images, or ideas automatically.",
+          "register": "neutralny",
+          "contextPl": "Tworzenie treści przez SI",
+          "natural": "create",
+          "forms": "generated; generating",
+          "collocations": "generate text; generate an image; generate ideas",
+          "synonyms": "create; produce",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The assistant generated a first draft of the report in seconds.",
+              "pl": "Asystent wygenerował pierwszą wersję raportu w kilka sekund.",
+              "focusEn": "generated",
+              "focusPl": "wygenerował"
+            },
+            {
+              "en": "Can it generate a chart from this spreadsheet?",
+              "pl": "Czy potrafi wygenerować wykres z tego arkusza?",
+              "focusEn": "generate",
+              "focusPl": "wygenerować"
+            }
+          ],
+          "acceptedAnswers": [
+            "generate",
+            "create",
+            "produce"
+          ],
+          "acceptedTranslations": [
+            "wygenerować",
+            "generować",
+            "stworzyć"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.response",
+          "term": "response",
+          "ipa": "/rɪˈspɑːns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "odpowiedź",
+          "definition": "The answer that an AI or person gives.",
+          "register": "neutralny",
+          "contextPl": "Wynik pracy czatbota",
+          "natural": "answer",
+          "forms": "responses",
+          "collocations": "a quick response; generate a response",
+          "synonyms": "answer; reply",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The AI's response was polite but a little too long.",
+              "pl": "Odpowiedź AI była uprzejma, ale trochę za długa.",
+              "focusEn": "response",
+              "focusPl": "Odpowiedź"
+            },
+            {
+              "en": "I copied part of the response into my email to the client.",
+              "pl": "Skopiowałam część odpowiedzi do maila do klienta.",
+              "focusEn": "response",
+              "focusPl": "odpowiedzi"
+            }
+          ],
+          "acceptedAnswers": [
+            "response",
+            "answer"
+          ],
+          "acceptedTranslations": [
+            "odpowiedź",
+            "reakcja"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.summary",
+          "term": "summary",
+          "ipa": "/ˈsʌməri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "streszczenie",
+          "definition": "A short statement of the main points of something longer.",
+          "register": "neutralny",
+          "contextPl": "Skracanie długich tekstów",
+          "natural": "",
+          "forms": "summaries",
+          "collocations": "a short summary; write a summary; a summary of the report",
+          "synonyms": "overview",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I asked for a one-paragraph summary of the forty-page report.",
+              "pl": "Poprosiłam o jednoakapitowe streszczenie czterdziestostronicowego raportu.",
+              "focusEn": "summary",
+              "focusPl": "streszczenie"
+            },
+            {
+              "en": "The summary missed the most important number.",
+              "pl": "W streszczeniu zabrakło najważniejszej liczby.",
+              "focusEn": "summary",
+              "focusPl": "streszczeniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "summary"
+          ],
+          "acceptedTranslations": [
+            "streszczenie",
+            "podsumowanie"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.machine-translation",
+          "term": "machine translation",
+          "ipa": "/məˌʃiːn trænsˈleɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "tłumaczenie maszynowe",
+          "definition": "Translation of text from one language to another by a computer.",
+          "register": "neutralny",
+          "contextPl": "Tłumaczenie przez SI",
+          "natural": "",
+          "forms": "",
+          "collocations": "use machine translation; machine translation tools",
+          "synonyms": "",
+          "antonyms": "human translation",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Machine translation is good enough for emails to our Mexican office.",
+              "pl": "Tłumaczenie maszynowe wystarcza do maili do naszego biura w Meksyku.",
+              "focusEn": "Machine translation",
+              "focusPl": "Tłumaczenie maszynowe"
+            },
+            {
+              "en": "I never send a contract with only machine translation.",
+              "pl": "Nigdy nie wysyłam umowy, która przeszła tylko przez tłumaczenie maszynowe.",
+              "focusEn": "machine translation",
+              "focusPl": "tłumaczenie maszynowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "machine translation"
+          ],
+          "acceptedTranslations": [
+            "tłumaczenie maszynowe",
+            "tłumaczenie automatyczne"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.rephrase",
+          "term": "rephrase",
+          "ipa": "/ˌriːˈfreɪz/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przeformułować",
+          "definition": "To say or write something again using different words.",
+          "register": "neutralny",
+          "contextPl": "Poprawianie stylu tekstu",
+          "natural": "reword",
+          "forms": "rephrased; rephrasing",
+          "collocations": "rephrase a sentence; rephrase the question",
+          "synonyms": "reword",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I asked it to rephrase my email so it sounds less angry.",
+              "pl": "Poprosiłam, żeby przeformułował mojego maila tak, żeby brzmiał mniej gniewnie.",
+              "focusEn": "rephrase",
+              "focusPl": "przeformułował"
+            },
+            {
+              "en": "If the answer is wrong, try to rephrase your question.",
+              "pl": "Jeśli odpowiedź jest błędna, spróbuj przeformułować pytanie.",
+              "focusEn": "rephrase",
+              "focusPl": "przeformułować"
+            }
+          ],
+          "acceptedAnswers": [
+            "rephrase",
+            "reword"
+          ],
+          "acceptedTranslations": [
+            "przeformułować",
+            "przeformułowywać",
+            "ująć inaczej"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.accurate",
+          "term": "accurate",
+          "ipa": "/ˈækjərət/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dokładny",
+          "definition": "Correct and true in every detail.",
+          "register": "neutralny",
+          "contextPl": "Wiarygodność wyników",
+          "natural": "correct",
+          "forms": "",
+          "collocations": "completely accurate; accurate information",
+          "synonyms": "correct; precise",
+          "antonyms": "inaccurate",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The numbers in the summary weren't accurate, so I checked them.",
+              "pl": "Liczby w streszczeniu nie były dokładne, więc je sprawdziłam.",
+              "focusEn": "accurate",
+              "focusPl": "dokładne"
+            },
+            {
+              "en": "Is this translation accurate enough to send to the client?",
+              "pl": "Czy to tłumaczenie jest wystarczająco dokładne, żeby wysłać je klientowi?",
+              "focusEn": "accurate",
+              "focusPl": "dokładne"
+            }
+          ],
+          "acceptedAnswers": [
+            "accurate",
+            "correct"
+          ],
+          "acceptedTranslations": [
+            "dokładny",
+            "trafny",
+            "zgodny z prawdą",
+            "precyzyjny"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.fact-check",
+          "term": "fact-check",
+          "ipa": "/ˈfækt ˌtʃek/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "zweryfikować fakty",
+          "definition": "To check that the facts in a text are correct.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie informacji od SI",
+          "natural": "verify",
+          "forms": "fact-checked; fact-checking",
+          "collocations": "fact-check the answer; always fact-check",
+          "synonyms": "verify; double-check",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Always fact-check anything the AI tells you about laws.",
+              "pl": "Zawsze weryfikuj fakty we wszystkim, co AI mówi ci o przepisach.",
+              "focusEn": "fact-check",
+              "focusPl": "weryfikuj fakty"
+            },
+            {
+              "en": "I fact-checked every date in the report before sending it.",
+              "pl": "Przed wysłaniem raportu sprawdziłam fakty przy każdej dacie.",
+              "focusEn": "fact-checked",
+              "focusPl": "sprawdziłam fakty"
+            }
+          ],
+          "acceptedAnswers": [
+            "fact-check",
+            "verify"
+          ],
+          "acceptedTranslations": [
+            "zweryfikować fakty",
+            "weryfikować fakty",
+            "sprawdzić fakty"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.hallucinate",
+          "term": "hallucinate",
+          "ipa": "/həˈluːsɪneɪt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zmyślać (o SI)",
+          "definition": "Of an AI: to give false information that sounds true.",
+          "register": "specjalistyczny",
+          "contextPl": "Błędy modeli językowych",
+          "natural": "make things up",
+          "forms": "hallucinated; hallucinating",
+          "collocations": "AI models can hallucinate",
+          "synonyms": "make up",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „hallucination” – halucynacja modelu.",
+          "examples": [
+            {
+              "en": "The chatbot hallucinated a book that doesn't exist.",
+              "pl": "Czatbot zmyślił książkę, która nie istnieje.",
+              "focusEn": "hallucinated",
+              "focusPl": "zmyślił"
+            },
+            {
+              "en": "These tools can hallucinate, so never trust the sources blindly.",
+              "pl": "Te narzędzia potrafią halucynować, więc nigdy nie ufaj źródłom w ciemno.",
+              "focusEn": "hallucinate",
+              "focusPl": "halucynować"
+            }
+          ],
+          "acceptedAnswers": [
+            "hallucinate",
+            "make things up"
+          ],
+          "acceptedTranslations": [
+            "zmyślać (o SI)",
+            "zmyślać",
+            "zmyślić",
+            "halucynować",
+            "konfabulować"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.image-generator",
+          "term": "image generator",
+          "ipa": "/ˈɪmɪdʒ ˌdʒenəreɪtər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "generator obrazów",
+          "definition": "An AI tool that creates pictures from a text description.",
+          "register": "neutralny",
+          "contextPl": "Tworzenie grafik przez SI",
+          "natural": "",
+          "forms": "image generators",
+          "collocations": "use an image generator; an AI image generator",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I made the slide pictures with an image generator.",
+              "pl": "Obrazki na slajdy zrobiłam za pomocą generatora obrazów.",
+              "focusEn": "image generator",
+              "focusPl": "generatora obrazów"
+            },
+            {
+              "en": "The image generator gave one person six fingers.",
+              "pl": "Generator obrazów dał jednej osobie sześć palców.",
+              "focusEn": "image generator",
+              "focusPl": "Generator obrazów"
+            }
+          ],
+          "acceptedAnswers": [
+            "image generator"
+          ],
+          "acceptedTranslations": [
+            "generator obrazów",
+            "generator grafik"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.transcribe",
+          "term": "transcribe",
+          "ipa": "/trænˈskraɪb/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "przepisać (nagranie)",
+          "definition": "To change spoken words into written text.",
+          "register": "neutralny",
+          "contextPl": "Zamiana mowy na tekst",
+          "natural": "",
+          "forms": "transcribed; transcribing",
+          "collocations": "transcribe a meeting; transcribe audio",
+          "synonyms": "write down",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The tool transcribed the whole meeting while we talked.",
+              "pl": "Narzędzie przepisało całe spotkanie, gdy rozmawialiśmy.",
+              "focusEn": "transcribed",
+              "focusPl": "przepisało"
+            },
+            {
+              "en": "Can it transcribe calls in two languages at once?",
+              "pl": "Czy potrafi transkrybować rozmowy w dwóch językach naraz?",
+              "focusEn": "transcribe",
+              "focusPl": "transkrybować"
+            }
+          ],
+          "acceptedAnswers": [
+            "transcribe"
+          ],
+          "acceptedTranslations": [
+            "przepisać (nagranie)",
+            "przepisać",
+            "transkrybować",
+            "spisać"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.autocomplete",
+          "term": "autocomplete",
+          "ipa": "/ˈɔːtoʊkəmˌpliːt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "autouzupełnianie",
+          "definition": "A feature that guesses and finishes words or sentences as you type.",
+          "register": "neutralny",
+          "contextPl": "Podpowiedzi podczas pisania",
+          "natural": "",
+          "forms": "",
+          "collocations": "turn off autocomplete; autocomplete suggestions",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Inne niż „autocorrect” – autokorekta.",
+          "examples": [
+            {
+              "en": "The email autocomplete finished my sentence before I did.",
+              "pl": "Autouzupełnianie w poczcie dokończyło moje zdanie, zanim ja to zrobiłam.",
+              "focusEn": "autocomplete",
+              "focusPl": "Autouzupełnianie"
+            },
+            {
+              "en": "I turned off autocomplete because it kept guessing wrong.",
+              "pl": "Wyłączyłam autouzupełnianie, bo ciągle źle zgadywało.",
+              "focusEn": "autocomplete",
+              "focusPl": "autouzupełnianie"
+            }
+          ],
+          "acceptedAnswers": [
+            "autocomplete",
+            "auto-complete"
+          ],
+          "acceptedTranslations": [
+            "autouzupełnianie",
+            "podpowiadanie",
+            "automatyczne uzupełnianie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "artificial-intelligence.how-it-works",
+      "namePl": "Dane i uczenie modeli",
+      "scenePl": "Popularnonaukowy wykład na uczelni o tym, jak uczą się modele sztucznej inteligencji",
+      "entries": [
+        {
+          "id": "artificial-intelligence.data",
+          "term": "data",
+          "ipa": "/ˈdeɪtə/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "dane",
+          "definition": "Facts, numbers, text, or images collected to be used by computers.",
+          "register": "neutralny",
+          "contextPl": "Materiał, z którego uczy się SI",
+          "natural": "information",
+          "forms": "",
+          "collocations": "collect data; large amounts of data; data set",
+          "synonyms": "information",
+          "antonyms": "",
+          "notePl": "W AmE zwykle z czasownikiem w liczbie pojedynczej: „data is”.",
+          "examples": [
+            {
+              "en": "AI is only as good as the data it learns from.",
+              "pl": "SI jest tylko tak dobra jak dane, z których się uczy.",
+              "focusEn": "data",
+              "focusPl": "dane"
+            },
+            {
+              "en": "The lecturer showed how much data one model needs.",
+              "pl": "Wykładowczyni pokazała, ile danych potrzebuje jeden model.",
+              "focusEn": "data",
+              "focusPl": "danych"
+            }
+          ],
+          "acceptedAnswers": [
+            "data",
+            "information"
+          ],
+          "acceptedTranslations": [
+            "dane",
+            "informacje"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.train",
+          "term": "train",
+          "ipa": "/treɪn/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "trenować",
+          "definition": "To teach an AI system by showing it a lot of examples.",
+          "register": "specjalistyczny",
+          "contextPl": "Proces uczenia modelu",
+          "natural": "teach",
+          "forms": "trained; training",
+          "collocations": "train a model; trained on data",
+          "synonyms": "teach",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They trained the model on millions of photos of animals.",
+              "pl": "Wytrenowali model na milionach zdjęć zwierząt.",
+              "focusEn": "trained",
+              "focusPl": "Wytrenowali"
+            },
+            {
+              "en": "How long does it take to train a system like this?",
+              "pl": "Ile czasu zajmuje wytrenowanie takiego systemu?",
+              "focusEn": "train",
+              "focusPl": "wytrenowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "train",
+            "teach"
+          ],
+          "acceptedTranslations": [
+            "trenować",
+            "wytrenować",
+            "uczyć",
+            "nauczyć"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.training-data",
+          "term": "training data",
+          "ipa": "/ˈtreɪnɪŋ ˌdeɪtə/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "dane treningowe",
+          "definition": "The examples used to teach an AI system.",
+          "register": "specjalistyczny",
+          "contextPl": "Przykłady do nauki modelu",
+          "natural": "",
+          "forms": "",
+          "collocations": "collect training data; biased training data",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If the training data has mistakes, the model learns them too.",
+              "pl": "Jeśli dane treningowe zawierają błędy, model też się ich uczy.",
+              "focusEn": "training data",
+              "focusPl": "dane treningowe"
+            },
+            {
+              "en": "Most of the training data came from public websites.",
+              "pl": "Większość danych treningowych pochodziła z publicznych stron internetowych.",
+              "focusEn": "training data",
+              "focusPl": "danych treningowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "training data"
+          ],
+          "acceptedTranslations": [
+            "dane treningowe",
+            "dane uczące",
+            "zbiór treningowy"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.pattern",
+          "term": "pattern",
+          "ipa": "/ˈpætərn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wzorzec",
+          "definition": "A regular way in which something happens or is arranged.",
+          "register": "neutralny",
+          "contextPl": "Co odkrywa SI w danych",
+          "natural": "",
+          "forms": "patterns",
+          "collocations": "find patterns; recognize patterns; a clear pattern",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The model finds patterns that people would never notice.",
+              "pl": "Model znajduje wzorce, których ludzie nigdy by nie zauważyli.",
+              "focusEn": "patterns",
+              "focusPl": "wzorce"
+            },
+            {
+              "en": "She showed a pattern in the data on the big screen.",
+              "pl": "Pokazała na dużym ekranie pewien wzorzec w danych.",
+              "focusEn": "pattern",
+              "focusPl": "wzorzec"
+            }
+          ],
+          "acceptedAnswers": [
+            "pattern"
+          ],
+          "acceptedTranslations": [
+            "wzorzec",
+            "schemat",
+            "prawidłowość",
+            "wzór"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.predict",
+          "term": "predict",
+          "ipa": "/prɪˈdɪkt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przewidzieć",
+          "definition": "To say what will probably happen based on information.",
+          "register": "neutralny",
+          "contextPl": "Prognozowanie przez modele",
+          "natural": "forecast",
+          "forms": "predicted; predicting",
+          "collocations": "predict the next word; predict the weather",
+          "synonyms": "forecast",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The model tries to predict the next word in a sentence.",
+              "pl": "Model próbuje przewidzieć kolejne słowo w zdaniu.",
+              "focusEn": "predict",
+              "focusPl": "przewidzieć"
+            },
+            {
+              "en": "AI can predict when a machine in a factory will break.",
+              "pl": "SI potrafi przewidzieć, kiedy maszyna w fabryce się zepsuje.",
+              "focusEn": "predict",
+              "focusPl": "przewidzieć"
+            }
+          ],
+          "acceptedAnswers": [
+            "predict",
+            "forecast"
+          ],
+          "acceptedTranslations": [
+            "przewidzieć",
+            "przewidywać",
+            "prognozować"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.accuracy",
+          "term": "accuracy",
+          "ipa": "/ˈækjərəsi/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dokładność",
+          "definition": "How correct or exact something is.",
+          "register": "neutralny",
+          "contextPl": "Ocena jakości modelu",
+          "natural": "precision",
+          "forms": "",
+          "collocations": "high accuracy; improve accuracy; ninety percent accuracy",
+          "synonyms": "precision",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The new model has ninety-eight percent accuracy on this test.",
+              "pl": "Nowy model ma dziewięćdziesiąt osiem procent dokładności w tym teście.",
+              "focusEn": "accuracy",
+              "focusPl": "dokładności"
+            },
+            {
+              "en": "More data usually improves accuracy, but not always.",
+              "pl": "Więcej danych zwykle poprawia trafność, ale nie zawsze.",
+              "focusEn": "accuracy",
+              "focusPl": "trafność"
+            }
+          ],
+          "acceptedAnswers": [
+            "accuracy",
+            "precision"
+          ],
+          "acceptedTranslations": [
+            "dokładność",
+            "trafność",
+            "precyzja"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.bias",
+          "term": "bias",
+          "ipa": "/ˈbaɪəs/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "stronniczość",
+          "definition": "An unfair tendency to favor some people or results over others.",
+          "register": "neutralny",
+          "contextPl": "Uprzedzenia w systemach SI",
+          "natural": "prejudice",
+          "forms": "biases",
+          "collocations": "algorithmic bias; reduce bias; built-in bias",
+          "synonyms": "prejudice",
+          "antonyms": "fairness",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A hiring tool showed bias against women because of old data.",
+              "pl": "Narzędzie rekrutacyjne wykazywało stronniczość wobec kobiet z powodu starych danych.",
+              "focusEn": "bias",
+              "focusPl": "stronniczość"
+            },
+            {
+              "en": "How do engineers find bias before a model is released?",
+              "pl": "Jak inżynierowie wykrywają uprzedzenia, zanim model zostanie udostępniony?",
+              "focusEn": "bias",
+              "focusPl": "uprzedzenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "bias"
+          ],
+          "acceptedTranslations": [
+            "stronniczość",
+            "uprzedzenie",
+            "skrzywienie",
+            "błąd systematyczny"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.computing-power",
+          "term": "computing power",
+          "ipa": "/kəmˈpjuːtɪŋ ˌpaʊər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "moc obliczeniowa",
+          "definition": "The ability of computers to do calculations quickly.",
+          "register": "specjalistyczny",
+          "contextPl": "Zasoby potrzebne do trenowania modeli",
+          "natural": "",
+          "forms": "",
+          "collocations": "a lot of computing power; massive computing power",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Training big models needs huge amounts of computing power.",
+              "pl": "Trenowanie dużych modeli wymaga ogromnej mocy obliczeniowej.",
+              "focusEn": "computing power",
+              "focusPl": "mocy obliczeniowej"
+            },
+            {
+              "en": "The cost of computing power has fallen a lot in ten years.",
+              "pl": "Koszt mocy obliczeniowej mocno spadł w ciągu dziesięciu lat.",
+              "focusEn": "computing power",
+              "focusPl": "mocy obliczeniowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "computing power",
+            "compute"
+          ],
+          "acceptedTranslations": [
+            "moc obliczeniowa"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.black-box",
+          "term": "black box",
+          "ipa": "/ˌblæk ˈbɑːks/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "czarna skrzynka",
+          "definition": "A system whose inner workings people cannot see or understand.",
+          "register": "potoczny",
+          "contextPl": "Niejasne działanie modeli",
+          "natural": "",
+          "forms": "black boxes",
+          "collocations": "a black box system",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "For many users, AI is a black box: question in, answer out.",
+              "pl": "Dla wielu użytkowników SI to czarna skrzynka: pytanie wchodzi, odpowiedź wychodzi.",
+              "focusEn": "black box",
+              "focusPl": "czarna skrzynka"
+            },
+            {
+              "en": "Researchers are trying to open the black box and explain decisions.",
+              "pl": "Naukowcy próbują otworzyć czarną skrzynkę i wyjaśnić decyzje.",
+              "focusEn": "black box",
+              "focusPl": "czarną skrzynkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "black box"
+          ],
+          "acceptedTranslations": [
+            "czarna skrzynka",
+            "nieprzejrzysty system"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.probability",
+          "term": "probability",
+          "ipa": "/ˌprɑːbəˈbɪləti/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "prawdopodobieństwo",
+          "definition": "How likely it is that something will happen.",
+          "register": "neutralny",
+          "contextPl": "Matematyka stojąca za SI",
+          "natural": "likelihood",
+          "forms": "probabilities",
+          "collocations": "a high probability; calculate the probability",
+          "synonyms": "likelihood; chance",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The model picks the word with the highest probability.",
+              "pl": "Model wybiera słowo o najwyższym prawdopodobieństwie.",
+              "focusEn": "probability",
+              "focusPl": "prawdopodobieństwie"
+            },
+            {
+              "en": "Every answer is really a guess based on probability.",
+              "pl": "Każda odpowiedź to tak naprawdę przypuszczenie oparte na prawdopodobieństwie.",
+              "focusEn": "probability",
+              "focusPl": "prawdopodobieństwie"
+            }
+          ],
+          "acceptedAnswers": [
+            "probability",
+            "likelihood"
+          ],
+          "acceptedTranslations": [
+            "prawdopodobieństwo",
+            "szansa"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.benchmark",
+          "term": "benchmark",
+          "ipa": "/ˈbentʃmɑːrk/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "test porównawczy",
+          "definition": "A standard test used to compare the performance of systems.",
+          "register": "specjalistyczny",
+          "contextPl": "Porównywanie modeli",
+          "natural": "standard",
+          "forms": "benchmarks",
+          "collocations": "a benchmark test; set a benchmark; top the benchmarks",
+          "synonyms": "test",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The new model beat every older one on this benchmark.",
+              "pl": "Nowy model pokonał wszystkie starsze w tym teście porównawczym.",
+              "focusEn": "benchmark",
+              "focusPl": "teście porównawczym"
+            },
+            {
+              "en": "A high score on a benchmark doesn't always mean real usefulness.",
+              "pl": "Wysoki wynik w benchmarku nie zawsze oznacza prawdziwą użyteczność.",
+              "focusEn": "benchmark",
+              "focusPl": "benchmarku"
+            }
+          ],
+          "acceptedAnswers": [
+            "benchmark"
+          ],
+          "acceptedTranslations": [
+            "test porównawczy",
+            "benchmark",
+            "punkt odniesienia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "artificial-intelligence.automation",
+      "namePl": "Automatyzacja i praca",
+      "scenePl": "Zebranie w firmie logistycznej o tym, które zadania przejmie automatyzacja",
+      "entries": [
+        {
+          "id": "artificial-intelligence.automate",
+          "term": "automate",
+          "ipa": "/ˈɔːtəmeɪt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zautomatyzować",
+          "definition": "To make a process work by machine or computer instead of people.",
+          "register": "neutralny",
+          "contextPl": "Zastępowanie ręcznej pracy",
+          "natural": "",
+          "forms": "automated; automating",
+          "collocations": "automate a process; fully automated",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We want to automate the invoices so nobody types them by hand.",
+              "pl": "Chcemy zautomatyzować faktury, żeby nikt nie wpisywał ich ręcznie.",
+              "focusEn": "automate",
+              "focusPl": "zautomatyzować"
+            },
+            {
+              "en": "Once we automated the scheduling, mistakes dropped by half.",
+              "pl": "Kiedy zautomatyzowaliśmy układanie grafików, liczba błędów spadła o połowę.",
+              "focusEn": "automated",
+              "focusPl": "zautomatyzowaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "automate"
+          ],
+          "acceptedTranslations": [
+            "zautomatyzować",
+            "automatyzować"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.automation",
+          "term": "automation",
+          "ipa": "/ˌɔːtəˈmeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "automatyzacja",
+          "definition": "The use of machines and computers to do work instead of people.",
+          "register": "neutralny",
+          "contextPl": "Zmiany w miejscu pracy",
+          "natural": "",
+          "forms": "",
+          "collocations": "office automation; automation tools; the impact of automation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Automation will change about a third of our warehouse jobs.",
+              "pl": "Automatyzacja zmieni mniej więcej jedną trzecią stanowisk w naszym magazynie.",
+              "focusEn": "Automation",
+              "focusPl": "Automatyzacja"
+            },
+            {
+              "en": "The managers presented a three-year plan for automation.",
+              "pl": "Kierownicy przedstawili trzyletni plan automatyzacji.",
+              "focusEn": "automation",
+              "focusPl": "automatyzacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "automation"
+          ],
+          "acceptedTranslations": [
+            "automatyzacja"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.replace",
+          "term": "replace",
+          "ipa": "/rɪˈpleɪs/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zastąpić",
+          "definition": "To take the place of someone or something.",
+          "register": "neutralny",
+          "contextPl": "Obawy o miejsca pracy",
+          "natural": "take the place of",
+          "forms": "replaced; replacing",
+          "collocations": "replace workers; be replaced by machines",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Will AI replace the people who plan our delivery routes?",
+              "pl": "Czy SI zastąpi ludzi, którzy planują nasze trasy dostaw?",
+              "focusEn": "replace",
+              "focusPl": "zastąpi"
+            },
+            {
+              "en": "The new system won't replace anyone; it will help them work faster.",
+              "pl": "Nowy system nikogo nie zastąpi; pomoże ludziom pracować szybciej.",
+              "focusEn": "replace",
+              "focusPl": "zastąpi"
+            }
+          ],
+          "acceptedAnswers": [
+            "replace",
+            "take the place of"
+          ],
+          "acceptedTranslations": [
+            "zastąpić",
+            "zastępować"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.repetitive-tasks",
+          "term": "repetitive tasks",
+          "ipa": "/rɪˌpetətɪv ˈtæsks/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "powtarzalne zadania",
+          "definition": "Jobs that involve doing the same thing again and again.",
+          "register": "neutralny",
+          "contextPl": "Prace najłatwiejsze do automatyzacji",
+          "natural": "routine tasks",
+          "forms": "",
+          "collocations": "automate repetitive tasks; boring repetitive tasks",
+          "synonyms": "routine tasks",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "AI is best at repetitive tasks like sorting emails.",
+              "pl": "SI najlepiej radzi sobie z powtarzalnymi zadaniami, takimi jak sortowanie maili.",
+              "focusEn": "repetitive tasks",
+              "focusPl": "powtarzalnymi zadaniami"
+            },
+            {
+              "en": "Nobody will miss those repetitive tasks with paper forms.",
+              "pl": "Nikt nie będzie tęsknił za tymi powtarzalnymi zadaniami z papierowymi formularzami.",
+              "focusEn": "repetitive tasks",
+              "focusPl": "powtarzalnymi zadaniami"
+            }
+          ],
+          "acceptedAnswers": [
+            "repetitive tasks",
+            "routine tasks"
+          ],
+          "acceptedTranslations": [
+            "powtarzalne zadania",
+            "rutynowe zadania",
+            "monotonne czynności"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.productivity",
+          "term": "productivity",
+          "ipa": "/ˌproʊdʌkˈtɪvəti/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wydajność",
+          "definition": "How much work is done in a certain amount of time.",
+          "register": "neutralny",
+          "contextPl": "Efekty automatyzacji",
+          "natural": "efficiency",
+          "forms": "",
+          "collocations": "increase productivity; boost productivity; productivity tools",
+          "synonyms": "efficiency",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The pilot program raised productivity by fifteen percent.",
+              "pl": "Program pilotażowy podniósł wydajność o piętnaście procent.",
+              "focusEn": "productivity",
+              "focusPl": "wydajność"
+            },
+            {
+              "en": "Higher productivity should mean shorter hours, not fewer jobs.",
+              "pl": "Wyższa produktywność powinna oznaczać krótszy czas pracy, a nie mniej etatów.",
+              "focusEn": "productivity",
+              "focusPl": "produktywność"
+            }
+          ],
+          "acceptedAnswers": [
+            "productivity",
+            "efficiency"
+          ],
+          "acceptedTranslations": [
+            "wydajność",
+            "produktywność"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.job-loss",
+          "term": "job loss",
+          "ipa": "/ˈdʒɑːb ˌlɔːs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "utrata pracy",
+          "definition": "A situation in which people lose their jobs.",
+          "register": "neutralny",
+          "contextPl": "Społeczne skutki automatyzacji",
+          "natural": "layoffs",
+          "forms": "job losses",
+          "collocations": "fear of job loss; cause job losses",
+          "synonyms": "layoffs",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Workers asked directly about job loss after the presentation.",
+              "pl": "Po prezentacji pracownicy zapytali wprost o utratę pracy.",
+              "focusEn": "job loss",
+              "focusPl": "utratę pracy"
+            },
+            {
+              "en": "The company promised no job losses this year.",
+              "pl": "Firma obiecała, że w tym roku nie będzie zwolnień.",
+              "focusEn": "job losses",
+              "focusPl": "zwolnień"
+            }
+          ],
+          "acceptedAnswers": [
+            "job loss",
+            "layoffs"
+          ],
+          "acceptedTranslations": [
+            "utrata pracy",
+            "utrata miejsc pracy",
+            "zwolnienia"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.upskill",
+          "term": "upskill",
+          "ipa": "/ˈʌpskɪl/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "podnieść kwalifikacje",
+          "definition": "To learn new skills, or to train workers in new skills.",
+          "register": "specjalistyczny",
+          "contextPl": "Przygotowanie ludzi do zmian",
+          "natural": "retrain",
+          "forms": "upskilled; upskilling",
+          "collocations": "upskill workers; upskill your team",
+          "synonyms": "retrain",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The company will pay to upskill anyone who wants to learn the new tools.",
+              "pl": "Firma zapłaci za podniesienie kwalifikacji każdemu, kto chce poznać nowe narzędzia.",
+              "focusEn": "upskill",
+              "focusPl": "podniesienie kwalifikacji"
+            },
+            {
+              "en": "I upskilled last year, and now I manage the robots instead of lifting boxes.",
+              "pl": "W zeszłym roku podniosłem kwalifikacje i teraz zarządzam robotami, zamiast dźwigać paczki.",
+              "focusEn": "upskilled",
+              "focusPl": "podniosłem kwalifikacje"
+            }
+          ],
+          "acceptedAnswers": [
+            "upskill",
+            "reskill",
+            "retrain"
+          ],
+          "acceptedTranslations": [
+            "podnieść kwalifikacje",
+            "podnosić kwalifikacje",
+            "przeszkolić",
+            "przekwalifikować"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.streamline",
+          "term": "streamline",
+          "ipa": "/ˈstriːmlaɪn/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "usprawnić",
+          "definition": "To make a process simpler and more efficient.",
+          "register": "formalny",
+          "contextPl": "Upraszczanie procesów",
+          "natural": "simplify",
+          "forms": "streamlined; streamlining",
+          "collocations": "streamline a process; streamline operations",
+          "synonyms": "simplify",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "AI could streamline how we handle customer orders.",
+              "pl": "SI mogłaby usprawnić sposób, w jaki obsługujemy zamówienia klientów.",
+              "focusEn": "streamline",
+              "focusPl": "usprawnić"
+            },
+            {
+              "en": "We streamlined the returns process from six steps to two.",
+              "pl": "Usprawniliśmy proces zwrotów z sześciu kroków do dwóch.",
+              "focusEn": "streamlined",
+              "focusPl": "Usprawniliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "streamline",
+            "simplify"
+          ],
+          "acceptedTranslations": [
+            "usprawnić",
+            "usprawniać",
+            "uprościć",
+            "upraszczać"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.workforce",
+          "term": "workforce",
+          "ipa": "/ˈwɝːkfɔːrs/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "siła robocza",
+          "definition": "All the people who work for a company or in a country.",
+          "register": "formalny",
+          "contextPl": "Pracownicy w obliczu zmian",
+          "natural": "staff; employees",
+          "forms": "",
+          "collocations": "the workforce; train the workforce; a skilled workforce",
+          "synonyms": "staff; employees",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Half of our workforce will need new skills in five years.",
+              "pl": "Połowa naszej kadry będzie potrzebować nowych umiejętności za pięć lat.",
+              "focusEn": "workforce",
+              "focusPl": "kadry"
+            },
+            {
+              "en": "The CEO said the workforce would stay the same size.",
+              "pl": "Prezes powiedział, że liczba pracowników pozostanie bez zmian.",
+              "focusEn": "workforce",
+              "focusPl": "pracowników"
+            }
+          ],
+          "acceptedAnswers": [
+            "workforce",
+            "staff"
+          ],
+          "acceptedTranslations": [
+            "siła robocza",
+            "pracownicy",
+            "kadra"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.manual",
+          "term": "manual",
+          "ipa": "/ˈmænjuəl/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ręczny",
+          "definition": "Done by people with their hands, not by machines.",
+          "register": "neutralny",
+          "contextPl": "Praca wykonywana przez ludzi",
+          "natural": "",
+          "forms": "",
+          "collocations": "manual work; manual labor; manual process",
+          "synonyms": "",
+          "antonyms": "automatic; automated",
+          "notePl": "Rzeczownik „manual” – instrukcja obsługi.",
+          "examples": [
+            {
+              "en": "Checking every package by hand is slow manual work.",
+              "pl": "Sprawdzanie każdej paczki ręcznie to powolna ręczna praca.",
+              "focusEn": "manual",
+              "focusPl": "ręczna"
+            },
+            {
+              "en": "Some manual jobs are actually very hard to automate.",
+              "pl": "Niektóre fizyczne prace są w rzeczywistości bardzo trudne do zautomatyzowania.",
+              "focusEn": "manual",
+              "focusPl": "fizyczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "manual"
+          ],
+          "acceptedTranslations": [
+            "ręczny",
+            "manualny",
+            "fizyczny"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.human-touch",
+          "term": "human touch",
+          "ipa": "/ˌhjuːmən ˈtʌtʃ/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ludzkie podejście",
+          "definition": "The warm, personal quality that people bring and machines cannot.",
+          "register": "neutralny",
+          "contextPl": "Czego maszyny nie zastąpią",
+          "natural": "personal touch",
+          "forms": "",
+          "collocations": "add a human touch; lose the human touch",
+          "synonyms": "personal touch",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Customers still want a human touch when something goes wrong.",
+              "pl": "Klienci wciąż oczekują ludzkiego podejścia, kiedy coś idzie nie tak.",
+              "focusEn": "human touch",
+              "focusPl": "ludzkiego podejścia"
+            },
+            {
+              "en": "Automation is fine, but we can't lose the human touch.",
+              "pl": "Automatyzacja jest w porządku, ale nie możemy stracić ludzkiego podejścia.",
+              "focusEn": "human touch",
+              "focusPl": "ludzkiego podejścia"
+            }
+          ],
+          "acceptedAnswers": [
+            "human touch",
+            "personal touch"
+          ],
+          "acceptedTranslations": [
+            "ludzkie podejście",
+            "czynnik ludzki",
+            "ludzki pierwiastek"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "artificial-intelligence.ethics",
+      "namePl": "Etyka i zagrożenia",
+      "scenePl": "Debata w bibliotece miejskiej o szansach i zagrożeniach sztucznej inteligencji",
+      "entries": [
+        {
+          "id": "artificial-intelligence.ethics",
+          "term": "ethics",
+          "ipa": "/ˈeθɪks/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "etyka",
+          "definition": "Moral rules about what is right and wrong.",
+          "register": "neutralny",
+          "contextPl": "Moralne aspekty technologii",
+          "natural": "morals",
+          "forms": "",
+          "collocations": "AI ethics; business ethics; a question of ethics",
+          "synonyms": "morals",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The first speaker talked about the ethics of using AI in hospitals.",
+              "pl": "Pierwsza prelegentka mówiła o etyce stosowania SI w szpitalach.",
+              "focusEn": "ethics",
+              "focusPl": "etyce"
+            },
+            {
+              "en": "Who should decide the ethics of a machine?",
+              "pl": "Kto powinien decydować o zasadach etycznych maszyny?",
+              "focusEn": "ethics",
+              "focusPl": "zasadach etycznych"
+            }
+          ],
+          "acceptedAnswers": [
+            "ethics",
+            "morals"
+          ],
+          "acceptedTranslations": [
+            "etyka",
+            "zasady etyczne",
+            "moralność"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.ethical",
+          "term": "ethical",
+          "ipa": "/ˈeθɪkəl/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "etyczny",
+          "definition": "Morally right or acceptable.",
+          "register": "neutralny",
+          "contextPl": "Ocena moralna działań",
+          "natural": "moral",
+          "forms": "",
+          "collocations": "ethical issues; ethical concerns; an ethical choice",
+          "synonyms": "moral",
+          "antonyms": "unethical",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is it ethical to use people's photos to train AI without asking?",
+              "pl": "Czy to etyczne, żeby używać zdjęć ludzi do trenowania SI bez pytania?",
+              "focusEn": "ethical",
+              "focusPl": "etyczne"
+            },
+            {
+              "en": "A student asked how companies make sure AI is ethical.",
+              "pl": "Jeden ze studentów zapytał, jak firmy dbają o to, żeby SI była etyczna.",
+              "focusEn": "ethical",
+              "focusPl": "etyczna"
+            }
+          ],
+          "acceptedAnswers": [
+            "ethical",
+            "moral"
+          ],
+          "acceptedTranslations": [
+            "etyczny",
+            "moralny"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.deepfake",
+          "term": "deepfake",
+          "ipa": "/ˈdiːpfeɪk/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "deepfake",
+          "definition": "A fake video or recording made with AI that looks or sounds real.",
+          "register": "specjalistyczny",
+          "contextPl": "Fałszywe nagrania tworzone przez SI",
+          "natural": "",
+          "forms": "deepfakes",
+          "collocations": "a deepfake video; spot a deepfake",
+          "synonyms": "fake",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She played a deepfake of a news anchor, and nobody noticed.",
+              "pl": "Puściła deepfake z prezenterem wiadomości i nikt się nie zorientował.",
+              "focusEn": "deepfake",
+              "focusPl": "deepfake"
+            },
+            {
+              "en": "How can ordinary people recognize a deepfake?",
+              "pl": "Jak zwykli ludzie mogą rozpoznać deepfake?",
+              "focusEn": "deepfake",
+              "focusPl": "deepfake"
+            }
+          ],
+          "acceptedAnswers": [
+            "deepfake"
+          ],
+          "acceptedTranslations": [
+            "deepfake",
+            "fałszywe nagranie",
+            "sfałszowany film"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.misinformation",
+          "term": "misinformation",
+          "ipa": "/ˌmɪsɪnfərˈmeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "dezinformacja",
+          "definition": "False information, especially when it spreads widely.",
+          "register": "neutralny",
+          "contextPl": "Fałszywe treści w sieci",
+          "natural": "disinformation",
+          "forms": "",
+          "collocations": "spread misinformation; fight misinformation",
+          "synonyms": "disinformation; fake news",
+          "antonyms": "",
+          "notePl": "„Disinformation” – celowa dezinformacja.",
+          "examples": [
+            {
+              "en": "AI makes it cheap to create misinformation in any language.",
+              "pl": "SI sprawia, że tworzenie dezinformacji w dowolnym języku jest tanie.",
+              "focusEn": "misinformation",
+              "focusPl": "dezinformacji"
+            },
+            {
+              "en": "The librarian gave tips on how to check misinformation online.",
+              "pl": "Bibliotekarka podzieliła się wskazówkami, jak weryfikować fałszywe informacje w sieci.",
+              "focusEn": "misinformation",
+              "focusPl": "fałszywe informacje"
+            }
+          ],
+          "acceptedAnswers": [
+            "misinformation",
+            "fake news"
+          ],
+          "acceptedTranslations": [
+            "dezinformacja",
+            "fałszywe informacje",
+            "nieprawdziwe informacje"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.copyright",
+          "term": "copyright",
+          "ipa": "/ˈkɑːpiraɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "prawo autorskie",
+          "definition": "The legal right to control who copies and uses a creative work.",
+          "register": "specjalistyczny",
+          "contextPl": "Własność twórczości",
+          "natural": "",
+          "forms": "",
+          "collocations": "copyright law; break copyright; protected by copyright",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Artists worry about copyright when AI copies their style.",
+              "pl": "Artyści martwią się o prawa autorskie, kiedy SI kopiuje ich styl.",
+              "focusEn": "copyright",
+              "focusPl": "prawa autorskie"
+            },
+            {
+              "en": "Who owns the copyright to a picture made by AI?",
+              "pl": "Do kogo należą prawa autorskie do obrazu stworzonego przez SI?",
+              "focusEn": "copyright",
+              "focusPl": "prawa autorskie"
+            }
+          ],
+          "acceptedAnswers": [
+            "copyright"
+          ],
+          "acceptedTranslations": [
+            "prawo autorskie",
+            "prawa autorskie"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.regulate",
+          "term": "regulate",
+          "ipa": "/ˈreɡjəleɪt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "uregulować prawnie",
+          "definition": "To control an activity using laws or rules.",
+          "register": "formalny",
+          "contextPl": "Prawo wobec nowych technologii",
+          "natural": "control",
+          "forms": "regulated; regulating",
+          "collocations": "regulate AI; strictly regulated",
+          "synonyms": "control",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Should governments regulate AI the way they control medicines?",
+              "pl": "Czy rządy powinny regulować SI tak, jak kontrolują leki?",
+              "focusEn": "regulate",
+              "focusPl": "regulować"
+            },
+            {
+              "en": "Some countries already regulate how companies use face recognition.",
+              "pl": "Niektóre kraje już regulują, jak firmy korzystają z rozpoznawania twarzy.",
+              "focusEn": "regulate",
+              "focusPl": "regulują"
+            }
+          ],
+          "acceptedAnswers": [
+            "regulate",
+            "control"
+          ],
+          "acceptedTranslations": [
+            "uregulować prawnie",
+            "regulować",
+            "kontrolować"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.transparency",
+          "term": "transparency",
+          "ipa": "/trænsˈperənsi/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "przejrzystość",
+          "definition": "Being open and clear about how something works or why decisions are made.",
+          "register": "formalny",
+          "contextPl": "Jawność działania systemów",
+          "natural": "openness",
+          "forms": "",
+          "collocations": "lack of transparency; demand transparency",
+          "synonyms": "openness",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "People want transparency about how AI makes decisions about loans.",
+              "pl": "Ludzie chcą przejrzystości w tym, jak SI podejmuje decyzje o kredytach.",
+              "focusEn": "transparency",
+              "focusPl": "przejrzystości"
+            },
+            {
+              "en": "Without transparency, it's hard to trust these systems.",
+              "pl": "Bez przejrzystości trudno ufać tym systemom.",
+              "focusEn": "transparency",
+              "focusPl": "przejrzystości"
+            }
+          ],
+          "acceptedAnswers": [
+            "transparency",
+            "openness"
+          ],
+          "acceptedTranslations": [
+            "przejrzystość",
+            "jawność",
+            "transparentność"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.surveillance",
+          "term": "surveillance",
+          "ipa": "/sərˈveɪləns/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "inwigilacja",
+          "definition": "Careful watching of people, often by governments or companies.",
+          "register": "formalny",
+          "contextPl": "Śledzenie ludzi przez technologię",
+          "natural": "monitoring",
+          "forms": "",
+          "collocations": "mass surveillance; under surveillance; surveillance cameras",
+          "synonyms": "monitoring",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Face recognition could be used for mass surveillance.",
+              "pl": "Rozpoznawanie twarzy mogłoby zostać wykorzystane do masowej inwigilacji.",
+              "focusEn": "surveillance",
+              "focusPl": "inwigilacji"
+            },
+            {
+              "en": "One man asked if the library's cameras use AI surveillance.",
+              "pl": "Jeden z mężczyzn zapytał, czy kamery w bibliotece korzystają z monitoringu opartego na SI.",
+              "focusEn": "surveillance",
+              "focusPl": "monitoringu"
+            }
+          ],
+          "acceptedAnswers": [
+            "surveillance",
+            "monitoring"
+          ],
+          "acceptedTranslations": [
+            "inwigilacja",
+            "nadzór",
+            "monitoring"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.take-over",
+          "term": "take over",
+          "ipa": "/ˌteɪk ˈoʊvər/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przejąć kontrolę",
+          "definition": "To gain control of something.",
+          "register": "neutralny",
+          "contextPl": "Obawy przed SI",
+          "natural": "control",
+          "forms": "took over; taken over",
+          "collocations": "take over the world; take over jobs",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A child asked if robots will take over the world.",
+              "pl": "Jedno z dzieci zapytało, czy roboty przejmą kontrolę nad światem.",
+              "focusEn": "take over",
+              "focusPl": "przejmą kontrolę"
+            },
+            {
+              "en": "AI might take over boring tasks long before it takes over anything else.",
+              "pl": "SI może przejąć nudne zadania na długo przed tym, zanim przejmie cokolwiek innego.",
+              "focusEn": "take over",
+              "focusPl": "przejąć"
+            }
+          ],
+          "acceptedAnswers": [
+            "take over"
+          ],
+          "acceptedTranslations": [
+            "przejąć kontrolę",
+            "przejmować kontrolę",
+            "zawładnąć",
+            "przejąć"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.safeguard",
+          "term": "safeguard",
+          "ipa": "/ˈseɪfɡɑːrd/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zabezpieczenie",
+          "definition": "A rule or system that protects people from harm.",
+          "register": "formalny",
+          "contextPl": "Ochrona przed nadużyciami",
+          "natural": "protection",
+          "forms": "safeguards",
+          "collocations": "strong safeguards; put safeguards in place",
+          "synonyms": "protection",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need strong safeguards before AI is used in courts.",
+              "pl": "Potrzebujemy silnych zabezpieczeń, zanim SI zostanie użyta w sądach.",
+              "focusEn": "safeguards",
+              "focusPl": "zabezpieczeń"
+            },
+            {
+              "en": "Every safeguard costs money, but mistakes cost more.",
+              "pl": "Każde zabezpieczenie kosztuje, ale błędy kosztują więcej.",
+              "focusEn": "safeguard",
+              "focusPl": "zabezpieczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "safeguard",
+            "protection"
+          ],
+          "acceptedTranslations": [
+            "zabezpieczenie",
+            "środek ochronny",
+            "gwarancja"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.consent",
+          "term": "consent",
+          "ipa": "/kənˈsent/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "zgoda",
+          "definition": "Permission to do something, especially to use personal information.",
+          "register": "formalny",
+          "contextPl": "Zgoda na wykorzystanie danych",
+          "natural": "permission",
+          "forms": "",
+          "collocations": "without consent; give consent; ask for consent",
+          "synonyms": "permission",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My voice was used to train a model without my consent.",
+              "pl": "Mój głos został użyty do trenowania modelu bez mojej zgody.",
+              "focusEn": "consent",
+              "focusPl": "zgody"
+            },
+            {
+              "en": "Apps should ask for clear consent before using your data.",
+              "pl": "Aplikacje powinny prosić o wyraźną zgodę, zanim wykorzystają twoje dane.",
+              "focusEn": "consent",
+              "focusPl": "zgodę"
+            }
+          ],
+          "acceptedAnswers": [
+            "consent",
+            "permission"
+          ],
+          "acceptedTranslations": [
+            "zgoda",
+            "przyzwolenie"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.accountability",
+          "term": "accountability",
+          "ipa": "/əˌkaʊntəˈbɪləti/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "odpowiedzialność",
+          "definition": "The fact of being responsible for your actions and having to explain them.",
+          "register": "formalny",
+          "contextPl": "Kto odpowiada za błędy SI",
+          "natural": "responsibility",
+          "forms": "",
+          "collocations": "lack of accountability; take accountability",
+          "synonyms": "responsibility",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If a self-driving car crashes, where does the accountability lie?",
+              "pl": "Jeśli samochód autonomiczny spowoduje wypadek, kto ponosi odpowiedzialność?",
+              "focusEn": "accountability",
+              "focusPl": "odpowiedzialność"
+            },
+            {
+              "en": "Clear rules about accountability would make people trust AI more.",
+              "pl": "Jasne zasady dotyczące odpowiedzialności sprawiłyby, że ludzie bardziej ufaliby SI.",
+              "focusEn": "accountability",
+              "focusPl": "odpowiedzialności"
+            }
+          ],
+          "acceptedAnswers": [
+            "accountability",
+            "responsibility"
+          ],
+          "acceptedTranslations": [
+            "odpowiedzialność",
+            "rozliczalność"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.self-driving-car",
+          "term": "self-driving car",
+          "ipa": "/ˌself ˌdraɪvɪŋ ˈkɑːr/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "samochód autonomiczny",
+          "definition": "A car that can drive itself without a human driver.",
+          "register": "neutralny",
+          "contextPl": "SI na drogach",
+          "natural": "driverless car",
+          "forms": "self-driving cars",
+          "collocations": "ride in a self-driving car",
+          "synonyms": "driverless car; autonomous vehicle",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Would you put your child in a self-driving car?",
+              "pl": "Czy wsadziłbyś swoje dziecko do samochodu autonomicznego?",
+              "focusEn": "self-driving car",
+              "focusPl": "samochodu autonomicznego"
+            },
+            {
+              "en": "A self-driving car has to make choices in less than a second.",
+              "pl": "Samochód autonomiczny musi podejmować decyzje w czasie krótszym niż sekunda.",
+              "focusEn": "self-driving car",
+              "focusPl": "Samochód autonomiczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "self-driving car",
+            "driverless car",
+            "autonomous car"
+          ],
+          "acceptedTranslations": [
+            "samochód autonomiczny",
+            "auto bez kierowcy",
+            "pojazd autonomiczny"
+          ]
+        },
+        {
+          "id": "artificial-intelligence.science-fiction",
+          "term": "science fiction",
+          "ipa": "/ˌsaɪəns ˈfɪkʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "fantastyka naukowa",
+          "definition": "Stories about imagined future technology, space, or other worlds.",
+          "register": "neutralny",
+          "contextPl": "Wyobrażenia o SI z filmów i książek",
+          "natural": "sci-fi",
+          "forms": "",
+          "collocations": "a science fiction movie; like something out of science fiction",
+          "synonyms": "sci-fi",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Ten years ago, talking computers sounded like science fiction.",
+              "pl": "Dziesięć lat temu mówiące komputery brzmiały jak fantastyka naukowa.",
+              "focusEn": "science fiction",
+              "focusPl": "fantastyka naukowa"
+            },
+            {
+              "en": "Most fears about AI come from science fiction movies.",
+              "pl": "Większość obaw przed SI pochodzi z filmów science fiction.",
+              "focusEn": "science fiction",
+              "focusPl": "science fiction"
+            }
+          ],
+          "acceptedAnswers": [
+            "science fiction",
+            "sci-fi"
+          ],
+          "acceptedTranslations": [
+            "fantastyka naukowa",
+            "science fiction",
+            "fantastyka"
+          ]
+        }
+      ]
+    }
+  ]
+}

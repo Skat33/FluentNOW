@@ -1,0 +1,2528 @@
+{
+  "schemaVersion": 1,
+  "id": "taxes",
+  "namePl": "Podatki",
+  "nameEn": "Taxes",
+  "group": "money",
+  "symbol": "percent",
+  "summaryPl": "Podstawowe pojęcia podatkowe, zeznanie roczne, ulgi i zwrot podatku, pisma z urzędu skarbowego oraz podatki w działalności.",
+  "aliases": [
+    "podatki",
+    "podatek",
+    "zeznanie podatkowe",
+    "PIT",
+    "ulga",
+    "zwrot podatku",
+    "urząd skarbowy",
+    "taxes",
+    "tax return",
+    "IRS",
+    "tax refund"
+  ],
+  "categories": [
+    {
+      "id": "taxes.basics",
+      "namePl": "Podstawy podatków",
+      "scenePl": "Przy kawie z przyjaciółmi rozmawiacie o tym, ile podatków płacicie w USA",
+      "entries": [
+        {
+          "id": "taxes.tax",
+          "term": "tax",
+          "ipa": "/tæks/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "podatek",
+          "definition": "Money that people and companies must pay to the government.",
+          "register": "neutralny",
+          "contextPl": "Obowiązkowe opłaty na rzecz państwa",
+          "natural": "",
+          "forms": "taxes",
+          "collocations": "pay taxes; raise taxes; before tax",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Almost a third of my salary goes to tax.",
+              "pl": "Prawie jedna trzecia mojej pensji idzie na podatek.",
+              "focusEn": "tax",
+              "focusPl": "podatek"
+            },
+            {
+              "en": "Do you pay a different tax on money from your side job?",
+              "pl": "Płacisz inny podatek od pieniędzy z dodatkowej pracy?",
+              "focusEn": "tax",
+              "focusPl": "podatek"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax"
+          ],
+          "acceptedTranslations": [
+            "podatek",
+            "podatki"
+          ]
+        },
+        {
+          "id": "taxes.pay-taxes",
+          "term": "pay taxes",
+          "ipa": "/ˌpeɪ ˈtæksɪz/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "płacić podatki",
+          "definition": "To give the government the tax money you owe.",
+          "register": "neutralny",
+          "contextPl": "Obowiązek podatnika",
+          "natural": "",
+          "forms": "paid; paying",
+          "collocations": "pay taxes on something; pay your taxes",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Everyone complains, but everyone has to pay taxes.",
+              "pl": "Wszyscy narzekają, ale każdy musi płacić podatki.",
+              "focusEn": "pay taxes",
+              "focusPl": "płacić podatki"
+            },
+            {
+              "en": "Do you pay taxes on money you win in the lottery?",
+              "pl": "Czy od wygranej na loterii płaci się podatki?",
+              "focusEn": "pay taxes",
+              "focusPl": "płaci się podatki"
+            }
+          ],
+          "acceptedAnswers": [
+            "pay taxes",
+            "pay tax"
+          ],
+          "acceptedTranslations": [
+            "płacić podatki",
+            "zapłacić podatki",
+            "odprowadzać podatki"
+          ]
+        },
+        {
+          "id": "taxes.income-tax",
+          "term": "income tax",
+          "ipa": "/ˈɪnkʌm ˌtæks/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "podatek dochodowy",
+          "definition": "Tax that you pay on the money you earn.",
+          "register": "neutralny",
+          "contextPl": "Podatek od zarobków",
+          "natural": "",
+          "forms": "",
+          "collocations": "federal income tax; state income tax; pay income tax",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Niektóre stany USA nie mają stanowego podatku dochodowego.",
+          "examples": [
+            {
+              "en": "Texas doesn't have a state income tax.",
+              "pl": "Teksas nie ma stanowego podatku dochodowego.",
+              "focusEn": "income tax",
+              "focusPl": "podatku dochodowego"
+            },
+            {
+              "en": "Her income tax went up after she got a big raise.",
+              "pl": "Jej podatek dochodowy wzrósł, kiedy dostała dużą podwyżkę.",
+              "focusEn": "income tax",
+              "focusPl": "podatek dochodowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "income tax"
+          ],
+          "acceptedTranslations": [
+            "podatek dochodowy",
+            "PIT"
+          ]
+        },
+        {
+          "id": "taxes.taxpayer",
+          "term": "taxpayer",
+          "ipa": "/ˈtæksˌpeɪər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "podatnik",
+          "definition": "A person or company that pays taxes.",
+          "register": "neutralny",
+          "contextPl": "Kto płaci podatki",
+          "natural": "",
+          "forms": "taxpayers",
+          "collocations": "taxpayers' money; ordinary taxpayers",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The new bridge was paid for with taxpayer money.",
+              "pl": "Nowy most został opłacony z pieniędzy podatników.",
+              "focusEn": "taxpayer",
+              "focusPl": "podatników"
+            },
+            {
+              "en": "Every taxpayer gets the same letter in January.",
+              "pl": "Każdy podatnik dostaje w styczniu ten sam list.",
+              "focusEn": "taxpayer",
+              "focusPl": "podatnik"
+            }
+          ],
+          "acceptedAnswers": [
+            "taxpayer"
+          ],
+          "acceptedTranslations": [
+            "podatnik",
+            "podatniczka"
+          ]
+        },
+        {
+          "id": "taxes.tax-rate",
+          "term": "tax rate",
+          "ipa": "/ˈtæks ˌreɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stawka podatku",
+          "definition": "The percentage of income or value that is paid as tax.",
+          "register": "neutralny",
+          "contextPl": "Wysokość opodatkowania",
+          "natural": "",
+          "forms": "tax rates",
+          "collocations": "a high tax rate; lower the tax rate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The tax rate here is lower than in California.",
+              "pl": "Stawka podatku jest tu niższa niż w Kalifornii.",
+              "focusEn": "tax rate",
+              "focusPl": "Stawka podatku"
+            },
+            {
+              "en": "What tax rate do you pay on your savings?",
+              "pl": "Jaką stawkę podatku płacisz od oszczędności?",
+              "focusEn": "tax rate",
+              "focusPl": "stawkę podatku"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax rate",
+            "rate"
+          ],
+          "acceptedTranslations": [
+            "stawka podatku",
+            "stawka podatkowa"
+          ]
+        },
+        {
+          "id": "taxes.after-taxes",
+          "term": "after taxes",
+          "ipa": "/ˌæftər ˈtæksɪz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "po opodatkowaniu",
+          "definition": "Left after tax has been taken away.",
+          "register": "neutralny",
+          "contextPl": "Ile zostaje na rękę",
+          "natural": "after tax",
+          "forms": "",
+          "collocations": "make fifty thousand after taxes",
+          "synonyms": "net",
+          "antonyms": "before taxes",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I make about four thousand a month after taxes.",
+              "pl": "Zarabiam około czterech tysięcy miesięcznie na rękę.",
+              "focusEn": "after taxes",
+              "focusPl": "na rękę"
+            },
+            {
+              "en": "A ten-dollar raise is only about seven after taxes.",
+              "pl": "Podwyżka o dziesięć dolarów to po opodatkowaniu tylko około siedmiu.",
+              "focusEn": "after taxes",
+              "focusPl": "po opodatkowaniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "after taxes",
+            "after tax"
+          ],
+          "acceptedTranslations": [
+            "po opodatkowaniu",
+            "netto",
+            "na rękę"
+          ]
+        },
+        {
+          "id": "taxes.tax-cut",
+          "term": "tax cut",
+          "ipa": "/ˈtæks ˌkʌt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "obniżka podatków",
+          "definition": "A reduction in the amount of tax people must pay.",
+          "register": "neutralny",
+          "contextPl": "Zmiany w polityce podatkowej",
+          "natural": "",
+          "forms": "tax cuts",
+          "collocations": "a tax cut for families; promise tax cuts",
+          "synonyms": "",
+          "antonyms": "tax increase",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Did the new tax cut actually help people like us?",
+              "pl": "Czy nowa obniżka podatków naprawdę pomogła ludziom takim jak my?",
+              "focusEn": "tax cut",
+              "focusPl": "obniżka podatków"
+            },
+            {
+              "en": "Everyone says they want a tax cut, but nobody wants fewer services.",
+              "pl": "Wszyscy mówią, że chcą obniżki podatków, ale nikt nie chce mniej usług publicznych.",
+              "focusEn": "tax cut",
+              "focusPl": "obniżki podatków"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax cut"
+          ],
+          "acceptedTranslations": [
+            "obniżka podatków",
+            "obniżenie podatków",
+            "cięcie podatków"
+          ]
+        },
+        {
+          "id": "taxes.tax-bracket",
+          "term": "tax bracket",
+          "ipa": "/ˈtæks ˌbrækɪt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "próg podatkowy",
+          "definition": "A range of income that is taxed at a particular rate.",
+          "register": "specjalistyczny",
+          "contextPl": "Progi w podatku dochodowym",
+          "natural": "",
+          "forms": "tax brackets",
+          "collocations": "move into a higher tax bracket; the top tax bracket",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "His raise pushed him into a higher tax bracket.",
+              "pl": "Podwyżka wepchnęła go w wyższy próg podatkowy.",
+              "focusEn": "tax bracket",
+              "focusPl": "próg podatkowy"
+            },
+            {
+              "en": "Only part of your income is taxed at the top tax bracket.",
+              "pl": "Tylko część dochodu jest opodatkowana według najwyższego progu podatkowego.",
+              "focusEn": "tax bracket",
+              "focusPl": "progu podatkowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax bracket",
+            "bracket"
+          ],
+          "acceptedTranslations": [
+            "próg podatkowy",
+            "przedział podatkowy"
+          ]
+        },
+        {
+          "id": "taxes.property-tax",
+          "term": "property tax",
+          "ipa": "/ˈprɑːpərti ˌtæks/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "podatek od nieruchomości",
+          "definition": "A tax that homeowners pay every year based on the value of their home.",
+          "register": "neutralny",
+          "contextPl": "Opłaty za posiadanie domu",
+          "natural": "",
+          "forms": "property taxes",
+          "collocations": "pay property tax; high property taxes",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA często dużo wyższy niż w Polsce.",
+          "examples": [
+            {
+              "en": "Our property tax is almost six thousand dollars a year.",
+              "pl": "Nasz podatek od nieruchomości wynosi prawie sześć tysięcy dolarów rocznie.",
+              "focusEn": "property tax",
+              "focusPl": "podatek od nieruchomości"
+            },
+            {
+              "en": "Local schools get most of their money from property tax.",
+              "pl": "Lokalne szkoły dostają większość pieniędzy z podatku od nieruchomości.",
+              "focusEn": "property tax",
+              "focusPl": "podatku od nieruchomości"
+            }
+          ],
+          "acceptedAnswers": [
+            "property tax"
+          ],
+          "acceptedTranslations": [
+            "podatek od nieruchomości",
+            "podatek od domu"
+          ]
+        },
+        {
+          "id": "taxes.irs",
+          "term": "IRS",
+          "ipa": "/ˌaɪ ɑːr ˈes/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "very_common",
+          "translation": "urząd skarbowy (USA)",
+          "definition": "The US government agency that collects federal taxes.",
+          "register": "neutralny",
+          "contextPl": "Federalny urząd podatkowy w USA",
+          "natural": "",
+          "forms": "",
+          "collocations": "the IRS; owe the IRS; a letter from the IRS",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Skrót od „Internal Revenue Service”.",
+          "examples": [
+            {
+              "en": "Nobody likes getting a letter from the IRS.",
+              "pl": "Nikt nie lubi dostawać listów z urzędu skarbowego.",
+              "focusEn": "IRS",
+              "focusPl": "urzędu skarbowego"
+            },
+            {
+              "en": "The IRS website has all the forms you need.",
+              "pl": "Na stronie urzędu skarbowego są wszystkie potrzebne formularze.",
+              "focusEn": "IRS",
+              "focusPl": "urzędu skarbowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "IRS",
+            "Internal Revenue Service"
+          ],
+          "acceptedTranslations": [
+            "urząd skarbowy (USA)",
+            "urząd skarbowy",
+            "amerykański urząd skarbowy",
+            "fiskus"
+          ]
+        },
+        {
+          "id": "taxes.withhold",
+          "term": "withhold",
+          "ipa": "/wɪθˈhoʊld/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "potrącać",
+          "definition": "Of an employer: to take tax from your pay before you get it.",
+          "register": "specjalistyczny",
+          "contextPl": "Zaliczki na podatek z pensji",
+          "natural": "deduct",
+          "forms": "withheld; withholding",
+          "collocations": "withhold taxes; withhold from your paycheck",
+          "synonyms": "deduct",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „withholding” – zaliczka na podatek pobierana z pensji.",
+          "examples": [
+            {
+              "en": "My employer withholds taxes from every paycheck.",
+              "pl": "Mój pracodawca potrąca podatki z każdej wypłaty.",
+              "focusEn": "withholds",
+              "focusPl": "potrąca"
+            },
+            {
+              "en": "If they withhold too little, you'll owe money in April.",
+              "pl": "Jeśli potrącą za mało, w kwietniu będziesz musiał dopłacić.",
+              "focusEn": "withhold",
+              "focusPl": "potrącą"
+            }
+          ],
+          "acceptedAnswers": [
+            "withhold",
+            "deduct"
+          ],
+          "acceptedTranslations": [
+            "potrącać",
+            "potrącić",
+            "pobierać",
+            "pobrać"
+          ]
+        },
+        {
+          "id": "taxes.taxable",
+          "term": "taxable",
+          "ipa": "/ˈtæksəbəl/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "podlegający opodatkowaniu",
+          "definition": "Something you must pay tax on.",
+          "register": "formalny",
+          "contextPl": "Co trzeba opodatkować",
+          "natural": "",
+          "forms": "",
+          "collocations": "taxable income; is it taxable",
+          "synonyms": "",
+          "antonyms": "tax-free",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Tips from the restaurant are taxable income too.",
+              "pl": "Napiwki z restauracji to też dochód podlegający opodatkowaniu.",
+              "focusEn": "taxable",
+              "focusPl": "podlegający opodatkowaniu"
+            },
+            {
+              "en": "Is a gift from your parents taxable?",
+              "pl": "Czy prezent od rodziców jest opodatkowany?",
+              "focusEn": "taxable",
+              "focusPl": "opodatkowany"
+            }
+          ],
+          "acceptedAnswers": [
+            "taxable"
+          ],
+          "acceptedTranslations": [
+            "podlegający opodatkowaniu",
+            "opodatkowany"
+          ]
+        },
+        {
+          "id": "taxes.tax-free",
+          "term": "tax-free",
+          "ipa": "/ˌtæks ˈfriː/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wolny od podatku",
+          "definition": "Not taxed.",
+          "register": "neutralny",
+          "contextPl": "Zwolnienie z podatku",
+          "natural": "tax-exempt",
+          "forms": "",
+          "collocations": "tax-free income; tax-free shopping",
+          "synonyms": "tax-exempt",
+          "antonyms": "taxable",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Some savings accounts for college are tax-free.",
+              "pl": "Niektóre konta oszczędnościowe na studia są wolne od podatku.",
+              "focusEn": "tax-free",
+              "focusPl": "wolne od podatku"
+            },
+            {
+              "en": "Is money from selling your old car tax-free?",
+              "pl": "Czy pieniądze ze sprzedaży starego samochodu są nieopodatkowane?",
+              "focusEn": "tax-free",
+              "focusPl": "nieopodatkowane"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax-free",
+            "tax exempt"
+          ],
+          "acceptedTranslations": [
+            "wolny od podatku",
+            "nieopodatkowany",
+            "zwolniony z podatku"
+          ]
+        },
+        {
+          "id": "taxes.uncle-sam",
+          "term": "Uncle Sam",
+          "ipa": "/ˌʌŋkəl ˈsæm/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "fiskus (Wujek Sam)",
+          "definition": "A humorous name for the US government, especially when talking about taxes.",
+          "register": "potoczny",
+          "contextPl": "Żartobliwie o państwie i podatkach",
+          "natural": "the government",
+          "forms": "",
+          "collocations": "pay Uncle Sam; Uncle Sam takes his cut",
+          "synonyms": "the government",
+          "antonyms": "",
+          "notePl": "Postać symbolizująca rząd USA.",
+          "examples": [
+            {
+              "en": "After Uncle Sam takes his share, my bonus isn't that big.",
+              "pl": "Po tym, jak fiskus weźmie swoją działkę, moja premia nie jest już taka duża.",
+              "focusEn": "Uncle Sam",
+              "focusPl": "fiskus"
+            },
+            {
+              "en": "Half my overtime goes straight to Uncle Sam.",
+              "pl": "Połowa moich nadgodzin idzie prosto do fiskusa.",
+              "focusEn": "Uncle Sam",
+              "focusPl": "fiskusa"
+            }
+          ],
+          "acceptedAnswers": [
+            "Uncle Sam"
+          ],
+          "acceptedTranslations": [
+            "fiskus (Wujek Sam)",
+            "fiskus",
+            "Wujek Sam",
+            "państwo"
+          ]
+        },
+        {
+          "id": "taxes.death-and-taxes",
+          "term": "death and taxes",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "śmierć i podatki",
+          "definition": "From the saying that nothing is certain except death and taxes.",
+          "register": "potoczny",
+          "contextPl": "Żart o nieuniknionych rzeczach",
+          "natural": "",
+          "forms": "",
+          "collocations": "nothing is certain but death and taxes",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pełne powiedzenie: „Nothing is certain except death and taxes.”",
+          "examples": [
+            {
+              "en": "Like they say, nothing is certain except death and taxes.",
+              "pl": "Jak to mówią, pewne są tylko śmierć i podatki.",
+              "focusEn": "death and taxes",
+              "focusPl": "śmierć i podatki"
+            },
+            {
+              "en": "He joked that the only sure things in life are death and taxes.",
+              "pl": "Zażartował, że jedyne pewne rzeczy w życiu to śmierć i podatki.",
+              "focusEn": "death and taxes",
+              "focusPl": "śmierć i podatki"
+            }
+          ],
+          "acceptedAnswers": [
+            "death and taxes"
+          ],
+          "acceptedTranslations": [
+            "śmierć i podatki",
+            "pewne są tylko śmierć i podatki"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taxes.filing",
+      "namePl": "Zeznanie podatkowe",
+      "scenePl": "Wieczór przed terminem: wypełniasz zeznanie podatkowe przy biurku w domu",
+      "entries": [
+        {
+          "id": "taxes.tax-return",
+          "term": "tax return",
+          "ipa": "/ˈtæks rɪˌtɝːn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zeznanie podatkowe",
+          "definition": "The form you send to the government each year showing your income and taxes.",
+          "register": "neutralny",
+          "contextPl": "Roczne rozliczenie podatku",
+          "natural": "",
+          "forms": "tax returns",
+          "collocations": "file a tax return; a joint tax return; prepare a tax return",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Nie mylić z „tax refund” – zwrotem podatku.",
+          "examples": [
+            {
+              "en": "My tax return is due tomorrow, and I haven't started.",
+              "pl": "Moje zeznanie podatkowe trzeba złożyć jutro, a jeszcze nie zacząłem.",
+              "focusEn": "tax return",
+              "focusPl": "zeznanie podatkowe"
+            },
+            {
+              "en": "I checked every number on the tax return twice.",
+              "pl": "Sprawdziłem każdą liczbę w zeznaniu podatkowym dwa razy.",
+              "focusEn": "tax return",
+              "focusPl": "zeznaniu podatkowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax return",
+            "return"
+          ],
+          "acceptedTranslations": [
+            "zeznanie podatkowe",
+            "zeznanie roczne",
+            "PIT",
+            "deklaracja podatkowa"
+          ]
+        },
+        {
+          "id": "taxes.do-your-taxes",
+          "term": "do your taxes",
+          "ipa": "/ˌduː jər ˈtæksɪz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "rozliczyć się z podatku",
+          "definition": "To prepare and send your yearly tax forms.",
+          "register": "potoczny",
+          "contextPl": "Coroczne rozliczenie",
+          "natural": "file your taxes",
+          "forms": "did; done",
+          "collocations": "do your taxes online; do your own taxes",
+          "synonyms": "file your taxes",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I always do my taxes the night before the deadline.",
+              "pl": "Zawsze rozliczam się z podatku wieczorem przed terminem.",
+              "focusEn": "do my taxes",
+              "focusPl": "rozliczam się z podatku"
+            },
+            {
+              "en": "This year I want to do my taxes myself, without an accountant.",
+              "pl": "W tym roku chcę rozliczyć się z podatku sam, bez księgowego.",
+              "focusEn": "do my taxes",
+              "focusPl": "rozliczyć się z podatku"
+            }
+          ],
+          "acceptedAnswers": [
+            "do your taxes",
+            "do my taxes",
+            "file taxes"
+          ],
+          "acceptedTranslations": [
+            "rozliczyć się z podatku",
+            "zrobić rozliczenie podatkowe",
+            "rozliczać podatki"
+          ]
+        },
+        {
+          "id": "taxes.file",
+          "term": "file",
+          "ipa": "/faɪl/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "złożyć (zeznanie)",
+          "definition": "To officially send a tax return or other form to the government.",
+          "register": "formalny",
+          "contextPl": "Składanie dokumentów podatkowych",
+          "natural": "submit",
+          "forms": "filed; filing",
+          "collocations": "file a tax return; file taxes; file online",
+          "synonyms": "submit",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can file online for free if you earn under a certain amount.",
+              "pl": "Jeśli zarabiasz poniżej pewnej kwoty, możesz złożyć zeznanie przez internet za darmo.",
+              "focusEn": "file",
+              "focusPl": "złożyć"
+            },
+            {
+              "en": "I filed at eleven fifty, ten minutes before midnight.",
+              "pl": "Złożyłem zeznanie o dwudziestej trzeciej pięćdziesiąt, dziesięć minut przed północą.",
+              "focusEn": "filed",
+              "focusPl": "Złożyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "file",
+            "submit"
+          ],
+          "acceptedTranslations": [
+            "złożyć (zeznanie)",
+            "złożyć",
+            "składać",
+            "złożyć zeznanie"
+          ]
+        },
+        {
+          "id": "taxes.e-file",
+          "term": "e-file",
+          "ipa": "/ˈiː ˌfaɪl/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "złożyć zeznanie elektronicznie",
+          "definition": "To send your tax return over the internet.",
+          "register": "neutralny",
+          "contextPl": "Rozliczenie przez internet",
+          "natural": "file online",
+          "forms": "e-filed; e-filing",
+          "collocations": "e-file your taxes; e-file for free",
+          "synonyms": "file online",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you e-file, your refund comes much faster.",
+              "pl": "Jeśli złożysz zeznanie elektronicznie, zwrot przyjdzie znacznie szybciej.",
+              "focusEn": "e-file",
+              "focusPl": "złożysz zeznanie elektronicznie"
+            },
+            {
+              "en": "I e-filed my return at midnight from the kitchen table.",
+              "pl": "Złożyłem zeznanie elektronicznie o północy przy kuchennym stole.",
+              "focusEn": "e-filed",
+              "focusPl": "Złożyłem zeznanie elektronicznie"
+            }
+          ],
+          "acceptedAnswers": [
+            "e-file",
+            "file online",
+            "efile"
+          ],
+          "acceptedTranslations": [
+            "złożyć zeznanie elektronicznie",
+            "składać zeznanie przez internet",
+            "rozliczyć się online"
+          ]
+        },
+        {
+          "id": "taxes.mail-in",
+          "term": "mail in",
+          "ipa": "/ˌmeɪl ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wysłać pocztą",
+          "definition": "To send a form or payment by mail.",
+          "register": "neutralny",
+          "contextPl": "Tradycyjne złożenie zeznania",
+          "natural": "send in",
+          "forms": "mailed in; mailing in",
+          "collocations": "mail in your return; mail in a check",
+          "synonyms": "send in",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My dad still likes to mail in his return on paper.",
+              "pl": "Mój tata wciąż lubi wysyłać pocztą papierowe zeznanie.",
+              "focusEn": "mail in",
+              "focusPl": "wysyłać pocztą"
+            },
+            {
+              "en": "If you mail in the form, make a copy first.",
+              "pl": "Jeśli wyślesz pocztą formularz, najpierw zrób kopię.",
+              "focusEn": "mail in",
+              "focusPl": "wyślesz pocztą"
+            }
+          ],
+          "acceptedAnswers": [
+            "mail in",
+            "send in"
+          ],
+          "acceptedTranslations": [
+            "wysłać pocztą",
+            "wysyłać pocztą",
+            "przesłać pocztą"
+          ]
+        },
+        {
+          "id": "taxes.tax-day",
+          "term": "Tax Day",
+          "ipa": "/ˈtæks ˌdeɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ostatni dzień składania zeznań",
+          "definition": "The last day to file taxes in the US, usually April 15.",
+          "register": "neutralny",
+          "contextPl": "Termin rozliczenia w USA",
+          "natural": "",
+          "forms": "",
+          "collocations": "before Tax Day; Tax Day is April 15",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W Polsce odpowiednikiem jest 30 kwietnia.",
+          "examples": [
+            {
+              "en": "Tax Day is tomorrow, so the post office will be packed.",
+              "pl": "Ostatni dzień składania zeznań jest jutro, więc na poczcie będą tłumy.",
+              "focusEn": "Tax Day",
+              "focusPl": "Ostatni dzień składania zeznań"
+            },
+            {
+              "en": "I promised myself I wouldn't wait until Tax Day again.",
+              "pl": "Obiecałem sobie, że już więcej nie będę czekał do ostatniego dnia składania zeznań.",
+              "focusEn": "Tax Day",
+              "focusPl": "ostatniego dnia składania zeznań"
+            }
+          ],
+          "acceptedAnswers": [
+            "Tax Day",
+            "tax deadline"
+          ],
+          "acceptedTranslations": [
+            "ostatni dzień składania zeznań",
+            "termin rozliczenia podatku"
+          ]
+        },
+        {
+          "id": "taxes.w-2",
+          "term": "W-2",
+          "ipa": "/ˌdʌbəljuː ˈtuː/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "roczne zestawienie zarobków (W-2)",
+          "definition": "A US form from your employer showing how much you earned and how much tax was withheld.",
+          "register": "specjalistyczny",
+          "contextPl": "Dokument od pracodawcy do rozliczenia",
+          "natural": "",
+          "forms": "W-2s",
+          "collocations": "get your W-2; W-2 form",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Podobny do polskiego PIT-11.",
+          "examples": [
+            {
+              "en": "I can't finish until I find my W-2 from my old job.",
+              "pl": "Nie mogę skończyć, dopóki nie znajdę formularza W-2 z poprzedniej pracy.",
+              "focusEn": "W-2",
+              "focusPl": "formularza W-2"
+            },
+            {
+              "en": "The numbers from the W-2 go on the first page of the return.",
+              "pl": "Liczby z formularza W-2 wpisuje się na pierwszej stronie zeznania.",
+              "focusEn": "W-2",
+              "focusPl": "formularza W-2"
+            }
+          ],
+          "acceptedAnswers": [
+            "W-2",
+            "W2",
+            "W-2 form"
+          ],
+          "acceptedTranslations": [
+            "roczne zestawienie zarobków (W-2)",
+            "roczne zestawienie zarobków",
+            "formularz W-2",
+            "PIT-11"
+          ]
+        },
+        {
+          "id": "taxes.tax-form",
+          "term": "tax form",
+          "ipa": "/ˈtæks ˌfɔːrm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "formularz podatkowy",
+          "definition": "An official document you fill out for taxes.",
+          "register": "neutralny",
+          "contextPl": "Druki do rozliczenia",
+          "natural": "",
+          "forms": "tax forms",
+          "collocations": "fill out a tax form; download tax forms",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This tax form has more boxes than I can count.",
+              "pl": "Ten formularz podatkowy ma więcej rubryk, niż jestem w stanie policzyć.",
+              "focusEn": "tax form",
+              "focusPl": "formularz podatkowy"
+            },
+            {
+              "en": "I printed the wrong tax form and had to start again.",
+              "pl": "Wydrukowałem zły formularz podatkowy i musiałem zacząć od nowa.",
+              "focusEn": "tax form",
+              "focusPl": "formularz podatkowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax form"
+          ],
+          "acceptedTranslations": [
+            "formularz podatkowy",
+            "druk podatkowy",
+            "deklaracja"
+          ]
+        },
+        {
+          "id": "taxes.tax-software",
+          "term": "tax software",
+          "ipa": "/ˈtæks ˌsɔːftwer/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "program do rozliczeń podatkowych",
+          "definition": "A computer program that helps you prepare your tax return.",
+          "register": "neutralny",
+          "contextPl": "Rozliczanie przez komputer",
+          "natural": "",
+          "forms": "",
+          "collocations": "use tax software; tax software program",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The tax software asks simple questions and fills in the form for you.",
+              "pl": "Program do rozliczeń podatkowych zadaje proste pytania i sam wypełnia formularz.",
+              "focusEn": "tax software",
+              "focusPl": "Program do rozliczeń podatkowych"
+            },
+            {
+              "en": "My tax software froze just before I hit submit.",
+              "pl": "Mój program do rozliczeń podatkowych zawiesił się tuż przed wysłaniem.",
+              "focusEn": "tax software",
+              "focusPl": "program do rozliczeń podatkowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax software"
+          ],
+          "acceptedTranslations": [
+            "program do rozliczeń podatkowych",
+            "program do PIT",
+            "program podatkowy"
+          ]
+        },
+        {
+          "id": "taxes.filing-status",
+          "term": "filing status",
+          "ipa": "/ˈfaɪlɪŋ ˌsteɪtəs/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "forma rozliczenia",
+          "definition": "The category you choose on your tax return, such as single or married.",
+          "register": "specjalistyczny",
+          "contextPl": "Sposób rozliczenia",
+          "natural": "",
+          "forms": "filing statuses",
+          "collocations": "choose your filing status",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We got married in December, so our filing status changed.",
+              "pl": "Pobraliśmy się w grudniu, więc zmieniła się nasza forma rozliczenia.",
+              "focusEn": "filing status",
+              "focusPl": "forma rozliczenia"
+            },
+            {
+              "en": "The software asked for my filing status on the first screen.",
+              "pl": "Program zapytał o moją formę rozliczenia na pierwszym ekranie.",
+              "focusEn": "filing status",
+              "focusPl": "formę rozliczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "filing status"
+          ],
+          "acceptedTranslations": [
+            "forma rozliczenia",
+            "status podatnika",
+            "sposób rozliczenia"
+          ]
+        },
+        {
+          "id": "taxes.file-jointly",
+          "term": "file jointly",
+          "ipa": "/ˌfaɪl ˈdʒɔɪntli/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "rozliczyć się wspólnie",
+          "definition": "Of a married couple: to send one tax return together.",
+          "register": "specjalistyczny",
+          "contextPl": "Wspólne rozliczenie małżonków",
+          "natural": "",
+          "forms": "filed; filing",
+          "collocations": "married filing jointly",
+          "synonyms": "",
+          "antonyms": "file separately",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Married couples usually save money when they file jointly.",
+              "pl": "Małżeństwa zwykle oszczędzają, kiedy rozliczają się wspólnie.",
+              "focusEn": "file jointly",
+              "focusPl": "rozliczają się wspólnie"
+            },
+            {
+              "en": "This is our first year to file jointly.",
+              "pl": "To nasz pierwszy rok, kiedy rozliczamy się wspólnie.",
+              "focusEn": "file jointly",
+              "focusPl": "rozliczamy się wspólnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "file jointly",
+            "married filing jointly"
+          ],
+          "acceptedTranslations": [
+            "rozliczyć się wspólnie",
+            "rozliczać się wspólnie",
+            "złożyć wspólne zeznanie"
+          ]
+        },
+        {
+          "id": "taxes.dependent",
+          "term": "dependent",
+          "ipa": "/dɪˈpendənt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "osoba na utrzymaniu",
+          "definition": "A person, usually a child, whom you support financially.",
+          "register": "specjalistyczny",
+          "contextPl": "Dzieci i inni członkowie rodziny w rozliczeniu",
+          "natural": "",
+          "forms": "dependents",
+          "collocations": "claim a dependent; number of dependents",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can list your daughter as a dependent.",
+              "pl": "Możesz wpisać córkę jako osobę na utrzymaniu.",
+              "focusEn": "dependent",
+              "focusPl": "osobę na utrzymaniu"
+            },
+            {
+              "en": "Each dependent lowers the tax you have to pay.",
+              "pl": "Każda osoba na utrzymaniu obniża podatek, który trzeba zapłacić.",
+              "focusEn": "dependent",
+              "focusPl": "osoba na utrzymaniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "dependent"
+          ],
+          "acceptedTranslations": [
+            "osoba na utrzymaniu",
+            "osoba pozostająca na utrzymaniu",
+            "dziecko na utrzymaniu"
+          ]
+        },
+        {
+          "id": "taxes.extension",
+          "term": "extension",
+          "ipa": "/ɪkˈstenʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przedłużenie terminu",
+          "definition": "Extra time the government gives you to file your tax return.",
+          "register": "neutralny",
+          "contextPl": "Odroczenie terminu rozliczenia",
+          "natural": "",
+          "forms": "extensions",
+          "collocations": "file for an extension; a six-month extension",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przedłużenie dotyczy złożenia zeznania, nie zapłaty podatku.",
+          "examples": [
+            {
+              "en": "If I'm not done tonight, I'll file for an extension.",
+              "pl": "Jeśli nie skończę dziś wieczorem, złożę wniosek o przedłużenie terminu.",
+              "focusEn": "extension",
+              "focusPl": "przedłużenie terminu"
+            },
+            {
+              "en": "An extension gives you six more months, but you still have to pay now.",
+              "pl": "Przedłużenie terminu daje sześć dodatkowych miesięcy, ale zapłacić i tak trzeba teraz.",
+              "focusEn": "extension",
+              "focusPl": "Przedłużenie terminu"
+            }
+          ],
+          "acceptedAnswers": [
+            "extension"
+          ],
+          "acceptedTranslations": [
+            "przedłużenie terminu",
+            "przedłużenie",
+            "odroczenie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taxes.refunds-deductions",
+      "namePl": "Ulgi i zwrot podatku",
+      "scenePl": "Spotkanie z doradcą podatkowym, który szuka dla ciebie ulg i odliczeń",
+      "entries": [
+        {
+          "id": "taxes.tax-refund",
+          "term": "tax refund",
+          "ipa": "/ˈtæks ˌriːfʌnd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zwrot podatku",
+          "definition": "Money the government pays back when you paid too much tax.",
+          "register": "neutralny",
+          "contextPl": "Nadpłata wracająca do podatnika",
+          "natural": "refund",
+          "forms": "tax refunds",
+          "collocations": "get a tax refund; a big tax refund",
+          "synonyms": "refund",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You'll get a tax refund of about eight hundred dollars.",
+              "pl": "Dostanie pan zwrot podatku w wysokości około ośmiuset dolarów.",
+              "focusEn": "tax refund",
+              "focusPl": "zwrot podatku"
+            },
+            {
+              "en": "We usually spend our tax refund on a summer trip.",
+              "pl": "Zwykle wydajemy zwrot podatku na letni wyjazd.",
+              "focusEn": "tax refund",
+              "focusPl": "zwrot podatku"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax refund",
+            "refund"
+          ],
+          "acceptedTranslations": [
+            "zwrot podatku",
+            "zwrot nadpłaty",
+            "zwrot"
+          ]
+        },
+        {
+          "id": "taxes.tax-preparer",
+          "term": "tax preparer",
+          "ipa": "/ˈtæks prɪˌperər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "doradca podatkowy",
+          "definition": "A person paid to prepare other people's tax returns.",
+          "register": "neutralny",
+          "contextPl": "Profesjonalna pomoc w rozliczeniu",
+          "natural": "tax advisor",
+          "forms": "tax preparers",
+          "collocations": "hire a tax preparer; see a tax preparer",
+          "synonyms": "tax advisor; accountant",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My tax preparer found two deductions I didn't know about.",
+              "pl": "Mój doradca podatkowy znalazł dwie ulgi, o których nie wiedziałem.",
+              "focusEn": "tax preparer",
+              "focusPl": "doradca podatkowy"
+            },
+            {
+              "en": "A good tax preparer costs money but saves you more.",
+              "pl": "Dobry doradca podatkowy kosztuje, ale pozwala zaoszczędzić więcej.",
+              "focusEn": "tax preparer",
+              "focusPl": "doradca podatkowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax preparer",
+            "tax advisor",
+            "tax professional"
+          ],
+          "acceptedTranslations": [
+            "doradca podatkowy",
+            "doradczyni podatkowa",
+            "księgowy"
+          ]
+        },
+        {
+          "id": "taxes.tax-break",
+          "term": "tax break",
+          "ipa": "/ˈtæks ˌbreɪk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ulga podatkowa",
+          "definition": "A reduction in the tax you have to pay, given by the government.",
+          "register": "potoczny",
+          "contextPl": "Korzyści podatkowe",
+          "natural": "",
+          "forms": "tax breaks",
+          "collocations": "get a tax break; a tax break for families",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a tax break for people who buy an electric car.",
+              "pl": "Jest ulga podatkowa dla osób, które kupują samochód elektryczny.",
+              "focusEn": "tax break",
+              "focusPl": "ulga podatkowa"
+            },
+            {
+              "en": "Do teachers get a tax break for classroom supplies?",
+              "pl": "Czy nauczyciele mają ulgę podatkową na przybory do klasy?",
+              "focusEn": "tax break",
+              "focusPl": "ulgę podatkową"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax break"
+          ],
+          "acceptedTranslations": [
+            "ulga podatkowa",
+            "ulga",
+            "preferencja podatkowa"
+          ]
+        },
+        {
+          "id": "taxes.tax-credit",
+          "term": "tax credit",
+          "ipa": "/ˈtæks ˌkredɪt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "ulga odliczana od podatku",
+          "definition": "An amount you can take off the tax you owe.",
+          "register": "specjalistyczny",
+          "contextPl": "Bezpośrednie obniżenie podatku",
+          "natural": "",
+          "forms": "tax credits",
+          "collocations": "child tax credit; claim a tax credit",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Odejmowana od podatku, a nie od dochodu (to „deduction”).",
+          "examples": [
+            {
+              "en": "The child tax credit lowers your bill by two thousand dollars.",
+              "pl": "Ulga odliczana od podatku na dziecko obniża twój podatek o dwa tysiące dolarów.",
+              "focusEn": "tax credit",
+              "focusPl": "odliczana od podatku"
+            },
+            {
+              "en": "You qualify for a tax credit because you paid for college classes.",
+              "pl": "Przysługuje panu ulga podatkowa, bo płacił pan za zajęcia na studiach.",
+              "focusEn": "tax credit",
+              "focusPl": "ulga podatkowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax credit"
+          ],
+          "acceptedTranslations": [
+            "ulga odliczana od podatku",
+            "ulga podatkowa",
+            "kredyt podatkowy"
+          ]
+        },
+        {
+          "id": "taxes.tax-deduction",
+          "term": "tax deduction",
+          "ipa": "/ˈtæks dɪˌdʌkʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "odliczenie od dochodu",
+          "definition": "An amount you can subtract from your income before tax is calculated.",
+          "register": "specjalistyczny",
+          "contextPl": "Pomniejszenie podstawy opodatkowania",
+          "natural": "write-off",
+          "forms": "tax deductions",
+          "collocations": "take a tax deduction; itemized tax deductions",
+          "synonyms": "write-off",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your home office could be a tax deduction.",
+              "pl": "Pana domowe biuro mogłoby stanowić odliczenie od dochodu.",
+              "focusEn": "tax deduction",
+              "focusPl": "odliczenie od dochodu"
+            },
+            {
+              "en": "I keep all my receipts in case of a tax deduction.",
+              "pl": "Zachowuję wszystkie paragony na wypadek odliczenia.",
+              "focusEn": "tax deduction",
+              "focusPl": "odliczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax deduction",
+            "deduction",
+            "write-off"
+          ],
+          "acceptedTranslations": [
+            "odliczenie od dochodu",
+            "odliczenie",
+            "ulga"
+          ]
+        },
+        {
+          "id": "taxes.tax-deductible",
+          "term": "tax-deductible",
+          "ipa": "/ˌtæks dɪˈdʌktəbəl/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "do odliczenia od podatku",
+          "definition": "Able to be subtracted from your income when calculating tax.",
+          "register": "specjalistyczny",
+          "contextPl": "Wydatki zmniejszające podatek",
+          "natural": "",
+          "forms": "",
+          "collocations": "tax-deductible donations; tax-deductible expenses",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your gifts to the food bank are tax-deductible.",
+              "pl": "Pana darowizny na bank żywności są do odliczenia od podatku.",
+              "focusEn": "tax-deductible",
+              "focusPl": "do odliczenia od podatku"
+            },
+            {
+              "en": "Is my new laptop tax-deductible if I use it for work?",
+              "pl": "Czy mój nowy laptop jest do odliczenia od podatku, jeśli używam go do pracy?",
+              "focusEn": "tax-deductible",
+              "focusPl": "do odliczenia od podatku"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax-deductible",
+            "deductible"
+          ],
+          "acceptedTranslations": [
+            "do odliczenia od podatku",
+            "możliwy do odliczenia",
+            "podlegający odliczeniu"
+          ]
+        },
+        {
+          "id": "taxes.itemize",
+          "term": "itemize",
+          "ipa": "/ˈaɪtəmaɪz/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wyszczególnić odliczenia",
+          "definition": "To list each deduction separately on a tax return instead of taking a fixed amount.",
+          "register": "specjalistyczny",
+          "contextPl": "Szczegółowe rozliczanie ulg",
+          "natural": "",
+          "forms": "itemized; itemizing",
+          "collocations": "itemize deductions; itemize or take the standard deduction",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Alternatywa: „standard deduction” – stała kwota odliczenia.",
+          "examples": [
+            {
+              "en": "With your mortgage and donations, it pays to itemize.",
+              "pl": "Przy pana kredycie hipotecznym i darowiznach opłaca się wyszczególnić odliczenia.",
+              "focusEn": "itemize",
+              "focusPl": "wyszczególnić odliczenia"
+            },
+            {
+              "en": "Most people don't itemize because the standard deduction is bigger.",
+              "pl": "Większość ludzi nie wyszczególnia odliczeń, bo standardowe odliczenie jest większe.",
+              "focusEn": "itemize",
+              "focusPl": "wyszczególnia odliczeń"
+            }
+          ],
+          "acceptedAnswers": [
+            "itemize"
+          ],
+          "acceptedTranslations": [
+            "wyszczególnić odliczenia",
+            "wyszczególniać odliczenia",
+            "rozliczyć ulgi szczegółowo"
+          ]
+        },
+        {
+          "id": "taxes.standard-deduction",
+          "term": "standard deduction",
+          "ipa": "/ˌstændərd dɪˈdʌkʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "standardowe odliczenie",
+          "definition": "A fixed amount that everyone can subtract from their income.",
+          "register": "specjalistyczny",
+          "contextPl": "Odliczenie bez dokumentowania wydatków",
+          "natural": "",
+          "forms": "",
+          "collocations": "take the standard deduction",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "For you, the standard deduction is the better choice.",
+              "pl": "W pana przypadku standardowe odliczenie to lepszy wybór.",
+              "focusEn": "standard deduction",
+              "focusPl": "standardowe odliczenie"
+            },
+            {
+              "en": "The standard deduction went up again this year.",
+              "pl": "Standardowe odliczenie w tym roku znów wzrosło.",
+              "focusEn": "standard deduction",
+              "focusPl": "Standardowe odliczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "standard deduction"
+          ],
+          "acceptedTranslations": [
+            "standardowe odliczenie",
+            "kwota wolna od podatku"
+          ]
+        },
+        {
+          "id": "taxes.charitable-donation",
+          "term": "charitable donation",
+          "ipa": "/ˌtʃærɪtəbəl doʊˈneɪʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "darowizna na cele charytatywne",
+          "definition": "Money or goods given to a charity.",
+          "register": "formalny",
+          "contextPl": "Darowizny pomniejszające podatek",
+          "natural": "donation",
+          "forms": "charitable donations",
+          "collocations": "make a charitable donation; deduct charitable donations",
+          "synonyms": "donation",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bring the receipts for every charitable donation you made.",
+              "pl": "Proszę przynieść potwierdzenia każdej darowizny na cele charytatywne, jaką pan przekazał.",
+              "focusEn": "charitable donation",
+              "focusPl": "darowizny na cele charytatywne"
+            },
+            {
+              "en": "A charitable donation to a school can lower your taxes.",
+              "pl": "Darowizna na rzecz szkoły może obniżyć podatki.",
+              "focusEn": "charitable donation",
+              "focusPl": "Darowizna"
+            }
+          ],
+          "acceptedAnswers": [
+            "charitable donation",
+            "donation"
+          ],
+          "acceptedTranslations": [
+            "darowizna na cele charytatywne",
+            "darowizna",
+            "datek"
+          ]
+        },
+        {
+          "id": "taxes.overpay",
+          "term": "overpay",
+          "ipa": "/ˌoʊvərˈpeɪ/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nadpłacić",
+          "definition": "To pay more than you need to.",
+          "register": "neutralny",
+          "contextPl": "Nadpłata podatku",
+          "natural": "",
+          "forms": "overpaid; overpaying",
+          "collocations": "overpay your taxes; overpay by",
+          "synonyms": "",
+          "antonyms": "underpay",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You overpaid by eight hundred dollars, so that money comes back to you.",
+              "pl": "Nadpłacił pan osiemset dolarów, więc te pieniądze do pana wrócą.",
+              "focusEn": "overpaid",
+              "focusPl": "Nadpłacił"
+            },
+            {
+              "en": "Many people overpay all year without knowing it.",
+              "pl": "Wiele osób przez cały rok płaci za dużo, nawet o tym nie wiedząc.",
+              "focusEn": "overpay",
+              "focusPl": "płaci za dużo"
+            }
+          ],
+          "acceptedAnswers": [
+            "overpay"
+          ],
+          "acceptedTranslations": [
+            "nadpłacić",
+            "nadpłacać",
+            "zapłacić za dużo"
+          ]
+        },
+        {
+          "id": "taxes.claim",
+          "term": "claim",
+          "ipa": "/kleɪm/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "odliczyć",
+          "definition": "To officially ask for a deduction or credit on your tax return.",
+          "register": "formalny",
+          "contextPl": "Korzystanie z ulg w zeznaniu",
+          "natural": "take",
+          "forms": "claimed; claiming",
+          "collocations": "claim a deduction; claim a credit; claim your child as a dependent",
+          "synonyms": "take",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can claim your mother as a dependent if she lives with you.",
+              "pl": "Może pan odliczyć matkę jako osobę na utrzymaniu, jeśli z panem mieszka.",
+              "focusEn": "claim",
+              "focusPl": "odliczyć"
+            },
+            {
+              "en": "I forgot to claim the credit for my college classes last year.",
+              "pl": "W zeszłym roku zapomniałem skorzystać z ulgi na zajęcia na studiach.",
+              "focusEn": "claim",
+              "focusPl": "skorzystać z ulgi"
+            }
+          ],
+          "acceptedAnswers": [
+            "claim",
+            "take"
+          ],
+          "acceptedTranslations": [
+            "odliczyć",
+            "odliczać",
+            "skorzystać z ulgi",
+            "ubiegać się o"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taxes.irs-problems",
+      "namePl": "Problemy z urzędem skarbowym",
+      "scenePl": "Dostajesz list z urzędu skarbowego i dzwonisz na infolinię, żeby wyjaśnić sprawę",
+      "entries": [
+        {
+          "id": "taxes.irs-agent",
+          "term": "IRS agent",
+          "ipa": "/ˌaɪ ɑːr ˈes ˌeɪdʒənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pracownik urzędu skarbowego",
+          "definition": "A person who works for the US tax office.",
+          "register": "neutralny",
+          "contextPl": "Kontakt z urzędnikiem skarbowym",
+          "natural": "",
+          "forms": "IRS agents",
+          "collocations": "speak to an IRS agent",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Prawdziwy urząd nie żąda płatności kartami podarunkowymi – to typowe oszustwo.",
+          "examples": [
+            {
+              "en": "The IRS agent on the phone was surprisingly friendly.",
+              "pl": "Pracownik urzędu skarbowego przez telefon był zaskakująco miły.",
+              "focusEn": "IRS agent",
+              "focusPl": "Pracownik urzędu skarbowego"
+            },
+            {
+              "en": "I waited fifty minutes to speak to an IRS agent.",
+              "pl": "Czekałem pięćdziesiąt minut, żeby porozmawiać z konsultantem urzędu skarbowego.",
+              "focusEn": "IRS agent",
+              "focusPl": "konsultantem urzędu skarbowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "IRS agent"
+          ],
+          "acceptedTranslations": [
+            "pracownik urzędu skarbowego",
+            "urzędnik skarbowy",
+            "konsultant urzędu skarbowego"
+          ]
+        },
+        {
+          "id": "taxes.owe",
+          "term": "owe",
+          "ipa": "/oʊ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "być winnym",
+          "definition": "To need to pay money to someone.",
+          "register": "neutralny",
+          "contextPl": "Zaległy podatek do dopłaty",
+          "natural": "",
+          "forms": "owed; owing",
+          "collocations": "owe the IRS; owe taxes; owe money",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The letter says I owe four hundred dollars from two years ago.",
+              "pl": "W liście jest napisane, że jestem winny czterysta dolarów sprzed dwóch lat.",
+              "focusEn": "owe",
+              "focusPl": "jestem winny"
+            },
+            {
+              "en": "How much do I owe with the penalty included?",
+              "pl": "Ile mam do zapłaty razem z karą?",
+              "focusEn": "owe",
+              "focusPl": "mam do zapłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "owe"
+          ],
+          "acceptedTranslations": [
+            "być winnym",
+            "być dłużnym",
+            "mieć do zapłaty",
+            "musieć dopłacić"
+          ]
+        },
+        {
+          "id": "taxes.tax-bill",
+          "term": "tax bill",
+          "ipa": "/ˈtæks ˌbɪl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "należny podatek",
+          "definition": "The amount of tax you have to pay.",
+          "register": "neutralny",
+          "contextPl": "Kwota do zapłaty urzędowi",
+          "natural": "",
+          "forms": "tax bills",
+          "collocations": "a big tax bill; lower your tax bill",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This year my tax bill was much bigger than I expected.",
+              "pl": "W tym roku mój należny podatek był dużo wyższy, niż się spodziewałem.",
+              "focusEn": "tax bill",
+              "focusPl": "należny podatek"
+            },
+            {
+              "en": "Can I pay the tax bill in smaller amounts?",
+              "pl": "Czy mogę spłacić podatek do zapłaty w mniejszych kwotach?",
+              "focusEn": "tax bill",
+              "focusPl": "podatek do zapłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax bill"
+          ],
+          "acceptedTranslations": [
+            "należny podatek",
+            "kwota podatku",
+            "podatek do zapłaty"
+          ]
+        },
+        {
+          "id": "taxes.notice",
+          "term": "notice",
+          "ipa": "/ˈnoʊtɪs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pismo urzędowe",
+          "definition": "An official letter that gives you information or a warning.",
+          "register": "formalny",
+          "contextPl": "Korespondencja z urzędu",
+          "natural": "letter",
+          "forms": "notices",
+          "collocations": "receive a notice; an IRS notice",
+          "synonyms": "letter",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I got a notice saying there's a mistake on my return.",
+              "pl": "Dostałem pismo urzędowe, że w moim zeznaniu jest błąd.",
+              "focusEn": "notice",
+              "focusPl": "pismo urzędowe"
+            },
+            {
+              "en": "Keep the notice next to you when you call.",
+              "pl": "Proszę mieć pismo przy sobie, kiedy pan dzwoni.",
+              "focusEn": "notice",
+              "focusPl": "pismo"
+            }
+          ],
+          "acceptedAnswers": [
+            "notice",
+            "letter"
+          ],
+          "acceptedTranslations": [
+            "pismo urzędowe",
+            "zawiadomienie",
+            "wezwanie"
+          ]
+        },
+        {
+          "id": "taxes.payment-plan",
+          "term": "payment plan",
+          "ipa": "/ˈpeɪmənt ˌplæn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "plan spłaty",
+          "definition": "An agreement to pay a debt in smaller amounts over time.",
+          "register": "neutralny",
+          "contextPl": "Rozłożenie podatku na raty",
+          "natural": "installment plan",
+          "forms": "payment plans",
+          "collocations": "set up a payment plan; ask for a payment plan",
+          "synonyms": "installment plan",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to set up a payment plan for the amount I owe.",
+              "pl": "Chciałbym ustalić plan spłaty kwoty, którą jestem winny.",
+              "focusEn": "payment plan",
+              "focusPl": "plan spłaty"
+            },
+            {
+              "en": "With a payment plan, you pay a little every month.",
+              "pl": "Przy planie spłaty płaci pan co miesiąc niewielką kwotę.",
+              "focusEn": "payment plan",
+              "focusPl": "planie spłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "payment plan",
+            "installment plan"
+          ],
+          "acceptedTranslations": [
+            "plan spłaty",
+            "rozłożenie na raty",
+            "raty"
+          ]
+        },
+        {
+          "id": "taxes.back-taxes",
+          "term": "back taxes",
+          "ipa": "/ˌbæk ˈtæksɪz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zaległe podatki",
+          "definition": "Taxes from past years that have not been paid yet.",
+          "register": "neutralny",
+          "contextPl": "Zaległości podatkowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "owe back taxes; pay back taxes",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He found out he owed back taxes from his freelance work.",
+              "pl": "Okazało się, że ma zaległe podatki z pracy na zlecenie.",
+              "focusEn": "back taxes",
+              "focusPl": "zaległe podatki"
+            },
+            {
+              "en": "Interest on back taxes grows every month.",
+              "pl": "Odsetki od zaległych podatków rosną co miesiąc.",
+              "focusEn": "back taxes",
+              "focusPl": "zaległych podatków"
+            }
+          ],
+          "acceptedAnswers": [
+            "back taxes"
+          ],
+          "acceptedTranslations": [
+            "zaległe podatki",
+            "zaległości podatkowe"
+          ]
+        },
+        {
+          "id": "taxes.tax-audit",
+          "term": "tax audit",
+          "ipa": "/ˈtæks ˌɔːdɪt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "kontrola podatkowa",
+          "definition": "An official check of your tax return by the tax office.",
+          "register": "formalny",
+          "contextPl": "Sprawdzenie zeznania przez urząd",
+          "natural": "audit",
+          "forms": "tax audits",
+          "collocations": "face a tax audit; be selected for a tax audit",
+          "synonyms": "audit",
+          "antonyms": "",
+          "notePl": "Czasownik: „get audited” – mieć kontrolę.",
+          "examples": [
+            {
+              "en": "I panicked when I thought the letter was about a tax audit.",
+              "pl": "Spanikowałem, bo myślałem, że list dotyczy kontroli podatkowej.",
+              "focusEn": "tax audit",
+              "focusPl": "kontroli podatkowej"
+            },
+            {
+              "en": "Keep your receipts for seven years in case of a tax audit.",
+              "pl": "Proszę przechowywać paragony przez siedem lat na wypadek kontroli podatkowej.",
+              "focusEn": "tax audit",
+              "focusPl": "kontroli podatkowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax audit",
+            "audit"
+          ],
+          "acceptedTranslations": [
+            "kontrola podatkowa",
+            "kontrola skarbowa"
+          ]
+        },
+        {
+          "id": "taxes.underpay",
+          "term": "underpay",
+          "ipa": "/ˌʌndərˈpeɪ/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zapłacić za mało",
+          "definition": "To pay less than you should.",
+          "register": "neutralny",
+          "contextPl": "Niedopłata podatku",
+          "natural": "",
+          "forms": "underpaid; underpaying",
+          "collocations": "underpay your taxes",
+          "synonyms": "",
+          "antonyms": "overpay",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The agent said I underpaid by about three hundred dollars.",
+              "pl": "Konsultant powiedział, że zapłaciłem za mało o mniej więcej trzysta dolarów.",
+              "focusEn": "underpaid",
+              "focusPl": "zapłaciłem za mało"
+            },
+            {
+              "en": "If you underpay each quarter, you might get a penalty.",
+              "pl": "Jeśli co kwartał płacisz za mało, możesz dostać karę.",
+              "focusEn": "underpay",
+              "focusPl": "płacisz za mało"
+            }
+          ],
+          "acceptedAnswers": [
+            "underpay"
+          ],
+          "acceptedTranslations": [
+            "zapłacić za mało",
+            "płacić za mało",
+            "mieć niedopłatę"
+          ]
+        },
+        {
+          "id": "taxes.pay-in-full",
+          "term": "pay in full",
+          "ipa": "/ˌpeɪ ɪn ˈfʊl/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zapłacić w całości",
+          "definition": "To pay the whole amount at once.",
+          "register": "neutralny",
+          "contextPl": "Uregulowanie całej kwoty",
+          "natural": "",
+          "forms": "paid; paying",
+          "collocations": "pay the balance in full",
+          "synonyms": "",
+          "antonyms": "pay in installments",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you pay in full by Friday, there's no extra penalty.",
+              "pl": "Jeśli zapłaci pan w całości do piątku, nie będzie dodatkowej kary.",
+              "focusEn": "pay in full",
+              "focusPl": "zapłaci pan w całości"
+            },
+            {
+              "en": "I couldn't pay in full, so I asked for a payment plan.",
+              "pl": "Nie mogłem zapłacić całej kwoty, więc poprosiłem o plan spłaty.",
+              "focusEn": "pay in full",
+              "focusPl": "zapłacić całej kwoty"
+            }
+          ],
+          "acceptedAnswers": [
+            "pay in full"
+          ],
+          "acceptedTranslations": [
+            "zapłacić w całości",
+            "spłacić w całości",
+            "zapłacić całą kwotę"
+          ]
+        },
+        {
+          "id": "taxes.tax-authorities",
+          "term": "tax authorities",
+          "ipa": "/ˈtæks əˌθɔːrətiz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "organy podatkowe",
+          "definition": "The government offices responsible for collecting taxes.",
+          "register": "formalny",
+          "contextPl": "Instytucje pobierające podatki",
+          "natural": "",
+          "forms": "",
+          "collocations": "contact the tax authorities; report to the tax authorities",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The tax authorities have three years to question a return.",
+              "pl": "Organy podatkowe mają trzy lata na zakwestionowanie zeznania.",
+              "focusEn": "tax authorities",
+              "focusPl": "Organy podatkowe"
+            },
+            {
+              "en": "The letter was really from the tax authorities, not a scam.",
+              "pl": "List naprawdę pochodził od władz skarbowych, a nie od oszustów.",
+              "focusEn": "tax authorities",
+              "focusPl": "władz skarbowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax authorities",
+            "tax office"
+          ],
+          "acceptedTranslations": [
+            "organy podatkowe",
+            "władze skarbowe",
+            "urząd skarbowy"
+          ]
+        },
+        {
+          "id": "taxes.tax-avoidance",
+          "term": "tax avoidance",
+          "ipa": "/ˈtæks əˌvɔɪdəns/",
+          "pos": "rzeczownik",
+          "level": "C2",
+          "frequency": "less_common",
+          "translation": "optymalizacja podatkowa",
+          "definition": "Legal ways of paying less tax.",
+          "register": "specjalistyczny",
+          "contextPl": "Legalne zmniejszanie podatków",
+          "natural": "",
+          "forms": "",
+          "collocations": "legal tax avoidance; aggressive tax avoidance",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Legalne, w przeciwieństwie do „tax evasion”.",
+          "examples": [
+            {
+              "en": "Using every legal deduction is tax avoidance, not a crime.",
+              "pl": "Korzystanie z każdej legalnej ulgi to optymalizacja podatkowa, a nie przestępstwo.",
+              "focusEn": "tax avoidance",
+              "focusPl": "optymalizacja podatkowa"
+            },
+            {
+              "en": "The line between tax avoidance and fraud isn't always clear.",
+              "pl": "Granica między optymalizacją podatkową a oszustwem nie zawsze jest jasna.",
+              "focusEn": "tax avoidance",
+              "focusPl": "optymalizacją podatkową"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax avoidance"
+          ],
+          "acceptedTranslations": [
+            "optymalizacja podatkowa",
+            "unikanie opodatkowania"
+          ]
+        },
+        {
+          "id": "taxes.tax-evasion",
+          "term": "tax evasion",
+          "ipa": "/ˈtæks ɪˌveɪʒən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "uchylanie się od płacenia podatków",
+          "definition": "The illegal act of not paying taxes you owe.",
+          "register": "specjalistyczny",
+          "contextPl": "Przestępstwo podatkowe",
+          "natural": "tax fraud",
+          "forms": "",
+          "collocations": "be charged with tax evasion; commit tax evasion",
+          "synonyms": "tax fraud",
+          "antonyms": "",
+          "notePl": "Nie mylić z legalnym „tax avoidance” – optymalizacją podatkową.",
+          "examples": [
+            {
+              "en": "A simple mistake is not the same as tax evasion.",
+              "pl": "Zwykły błąd to nie to samo co uchylanie się od płacenia podatków.",
+              "focusEn": "tax evasion",
+              "focusPl": "uchylanie się od płacenia podatków"
+            },
+            {
+              "en": "The agent assured me they don't suspect tax evasion.",
+              "pl": "Konsultantka zapewniła mnie, że nie podejrzewają oszustwa podatkowego.",
+              "focusEn": "tax evasion",
+              "focusPl": "oszustwa podatkowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax evasion",
+            "tax fraud"
+          ],
+          "acceptedTranslations": [
+            "uchylanie się od płacenia podatków",
+            "oszustwo podatkowe",
+            "unikanie podatków"
+          ]
+        },
+        {
+          "id": "taxes.tax-haven",
+          "term": "tax haven",
+          "ipa": "/ˈtæks ˌheɪvən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "raj podatkowy",
+          "definition": "A country with very low taxes where people keep money to pay less tax.",
+          "register": "neutralny",
+          "contextPl": "Kraje o niskich podatkach",
+          "natural": "",
+          "forms": "tax havens",
+          "collocations": "move money to a tax haven; offshore tax haven",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The agent laughed and said I'm clearly not hiding money in a tax haven.",
+              "pl": "Konsultant się zaśmiał i powiedział, że wyraźnie nie ukrywam pieniędzy w raju podatkowym.",
+              "focusEn": "tax haven",
+              "focusPl": "raju podatkowym"
+            },
+            {
+              "en": "The news story was about rich people using a tax haven.",
+              "pl": "Artykuł dotyczył bogatych ludzi korzystających z raju podatkowego.",
+              "focusEn": "tax haven",
+              "focusPl": "raju podatkowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax haven"
+          ],
+          "acceptedTranslations": [
+            "raj podatkowy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taxes.business-taxes",
+      "namePl": "Podatki w działalności",
+      "scenePl": "Pierwszy rok pracy na własny rachunek: księgowa tłumaczy ci, jak płacić podatki od firmy",
+      "entries": [
+        {
+          "id": "taxes.self-employment-tax",
+          "term": "self-employment tax",
+          "ipa": "/ˌself ɪmˈplɔɪmənt ˌtæks/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "podatek od samozatrudnienia",
+          "definition": "A US tax for Social Security and Medicare that self-employed people pay.",
+          "register": "specjalistyczny",
+          "contextPl": "Obciążenia osób na własnym rachunku",
+          "natural": "",
+          "forms": "",
+          "collocations": "pay self-employment tax",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Odpowiada mniej więcej składkom ZUS przedsiębiorcy.",
+          "examples": [
+            {
+              "en": "Nobody told me about self-employment tax when I started freelancing.",
+              "pl": "Nikt mi nie powiedział o podatku od samozatrudnienia, kiedy zaczynałam pracę na zlecenie.",
+              "focusEn": "self-employment tax",
+              "focusPl": "podatku od samozatrudnienia"
+            },
+            {
+              "en": "Self-employment tax is about fifteen percent of your profit.",
+              "pl": "Podatek od samozatrudnienia wynosi około piętnastu procent zysku.",
+              "focusEn": "Self-employment tax",
+              "focusPl": "Podatek od samozatrudnienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "self-employment tax"
+          ],
+          "acceptedTranslations": [
+            "podatek od samozatrudnienia",
+            "składki od samozatrudnienia"
+          ]
+        },
+        {
+          "id": "taxes.estimated-taxes",
+          "term": "estimated taxes",
+          "ipa": "/ˌestɪmeɪtɪd ˈtæksɪz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zaliczki na podatek",
+          "definition": "Tax payments that self-employed people make every three months during the year.",
+          "register": "specjalistyczny",
+          "contextPl": "Kwartalne przedpłaty podatku",
+          "natural": "quarterly taxes",
+          "forms": "",
+          "collocations": "pay estimated taxes; quarterly estimated taxes",
+          "synonyms": "quarterly taxes",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You'll pay estimated taxes in April, June, September, and January.",
+              "pl": "Będziesz płacić zaliczki na podatek w kwietniu, czerwcu, wrześniu i styczniu.",
+              "focusEn": "estimated taxes",
+              "focusPl": "zaliczki na podatek"
+            },
+            {
+              "en": "I set aside a third of every payment for estimated taxes.",
+              "pl": "Odkładam jedną trzecią każdej płatności na zaliczki na podatek.",
+              "focusEn": "estimated taxes",
+              "focusPl": "zaliczki na podatek"
+            }
+          ],
+          "acceptedAnswers": [
+            "estimated taxes",
+            "quarterly taxes"
+          ],
+          "acceptedTranslations": [
+            "zaliczki na podatek",
+            "zaliczki kwartalne",
+            "kwartalne zaliczki podatkowe"
+          ]
+        },
+        {
+          "id": "taxes.business-expense",
+          "term": "business expense",
+          "ipa": "/ˈbɪznəs ɪkˌspens/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "koszt uzyskania przychodu",
+          "definition": "Money spent to run a business, which can lower your taxes.",
+          "register": "neutralny",
+          "contextPl": "Wydatki firmowe w rozliczeniu",
+          "natural": "",
+          "forms": "business expenses",
+          "collocations": "deduct business expenses; a legitimate business expense",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your internet bill is partly a business expense.",
+              "pl": "Twój rachunek za internet jest częściowo kosztem uzyskania przychodu.",
+              "focusEn": "business expense",
+              "focusPl": "kosztem uzyskania przychodu"
+            },
+            {
+              "en": "A new camera for your work counts as a business expense.",
+              "pl": "Nowy aparat do pracy liczy się jako wydatek firmowy.",
+              "focusEn": "business expense",
+              "focusPl": "wydatek firmowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "business expense",
+            "expense"
+          ],
+          "acceptedTranslations": [
+            "koszt uzyskania przychodu",
+            "wydatek firmowy",
+            "koszt firmowy"
+          ]
+        },
+        {
+          "id": "taxes.1099",
+          "term": "1099",
+          "ipa": "/ˌten ˌnaɪnti ˈnaɪn/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "formularz 1099",
+          "definition": "A US tax form showing money paid to a freelancer or contractor.",
+          "register": "specjalistyczny",
+          "contextPl": "Dochody z umów zleceń w USA",
+          "natural": "",
+          "forms": "1099s",
+          "collocations": "get a 1099; 1099 income; 1099 contractor",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Freelancerzy dostają 1099 zamiast W-2.",
+          "examples": [
+            {
+              "en": "Each client will send you a 1099 in January.",
+              "pl": "Każdy klient przyśle ci w styczniu formularz 1099.",
+              "focusEn": "1099",
+              "focusPl": "formularz 1099"
+            },
+            {
+              "en": "I got five 1099 forms because I worked for five companies.",
+              "pl": "Dostałam pięć formularzy 1099, bo pracowałam dla pięciu firm.",
+              "focusEn": "1099",
+              "focusPl": "1099"
+            }
+          ],
+          "acceptedAnswers": [
+            "1099",
+            "1099 form"
+          ],
+          "acceptedTranslations": [
+            "formularz 1099",
+            "zestawienie dochodów z umów"
+          ]
+        },
+        {
+          "id": "taxes.keep-receipts",
+          "term": "keep receipts",
+          "ipa": "/ˌkiːp rɪˈsiːts/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zachowywać paragony",
+          "definition": "To save the papers that prove what you paid for.",
+          "register": "neutralny",
+          "contextPl": "Dokumentowanie wydatków",
+          "natural": "",
+          "forms": "kept; keeping",
+          "collocations": "keep all your receipts; keep receipts for seven years",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Keep receipts for anything you buy for work.",
+              "pl": "Zachowuj paragony za wszystko, co kupujesz do pracy.",
+              "focusEn": "Keep receipts",
+              "focusPl": "Zachowuj paragony"
+            },
+            {
+              "en": "I didn't keep receipts last year, and I lost a lot of deductions.",
+              "pl": "W zeszłym roku nie zachowywałam paragonów i straciłam sporo odliczeń.",
+              "focusEn": "keep receipts",
+              "focusPl": "zachowywałam paragonów"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep receipts",
+            "keep your receipts"
+          ],
+          "acceptedTranslations": [
+            "zachowywać paragony",
+            "przechowywać paragony",
+            "zbierać rachunki"
+          ]
+        },
+        {
+          "id": "taxes.write-off",
+          "term": "write-off",
+          "ipa": "/ˈraɪt ɔːf/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "koszt do odliczenia",
+          "definition": "Something you can subtract from your income as a business cost.",
+          "register": "potoczny",
+          "contextPl": "Wydatki obniżające podatek",
+          "natural": "deduction",
+          "forms": "write-offs",
+          "collocations": "a tax write-off; a business write-off",
+          "synonyms": "tax deduction",
+          "antonyms": "",
+          "notePl": "Potocznie: „It's a write-off” – „wrzucę to w koszty”.",
+          "examples": [
+            {
+              "en": "Your phone bill is a partial write-off.",
+              "pl": "Twój rachunek za telefon jest częściowo kosztem do odliczenia.",
+              "focusEn": "write-off",
+              "focusPl": "kosztem do odliczenia"
+            },
+            {
+              "en": "Lunch with a client can be a write-off, but keep the receipt.",
+              "pl": "Lunch z klientem może być kosztem do odliczenia, ale zachowaj paragon.",
+              "focusEn": "write-off",
+              "focusPl": "kosztem do odliczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "write-off",
+            "tax write-off"
+          ],
+          "acceptedTranslations": [
+            "koszt do odliczenia",
+            "wydatek do odliczenia",
+            "wrzucenie w koszty"
+          ]
+        },
+        {
+          "id": "taxes.tax-id-number",
+          "term": "tax ID number",
+          "ipa": "/ˌtæks ˌaɪ ˈdiː ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "numer identyfikacji podatkowej",
+          "definition": "A number the government gives a business or person for tax purposes.",
+          "register": "specjalistyczny",
+          "contextPl": "Identyfikacja firmy w urzędzie",
+          "natural": "EIN",
+          "forms": "tax ID numbers",
+          "collocations": "get a tax ID number; your tax ID number",
+          "synonyms": "EIN; TIN",
+          "antonyms": "",
+          "notePl": "Dla firm w USA to zwykle EIN; podobny do polskiego NIP.",
+          "examples": [
+            {
+              "en": "Clients will ask for your tax ID number before they pay you.",
+              "pl": "Klienci poproszą o twój numer identyfikacji podatkowej, zanim ci zapłacą.",
+              "focusEn": "tax ID number",
+              "focusPl": "numer identyfikacji podatkowej"
+            },
+            {
+              "en": "Getting a tax ID number online took about ten minutes.",
+              "pl": "Uzyskanie numeru podatkowego przez internet zajęło około dziesięciu minut.",
+              "focusEn": "tax ID number",
+              "focusPl": "numeru podatkowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax ID number",
+            "tax ID",
+            "EIN"
+          ],
+          "acceptedTranslations": [
+            "numer identyfikacji podatkowej",
+            "NIP",
+            "numer podatkowy"
+          ]
+        },
+        {
+          "id": "taxes.payroll-tax",
+          "term": "payroll tax",
+          "ipa": "/ˈpeɪroʊl ˌtæks/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "podatek od wynagrodzeń",
+          "definition": "Tax taken from employees' pay and paid by employers.",
+          "register": "specjalistyczny",
+          "contextPl": "Podatki przy zatrudnianiu ludzi",
+          "natural": "",
+          "forms": "payroll taxes",
+          "collocations": "pay payroll taxes; payroll tax rate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "When you hire someone, you'll also pay payroll tax.",
+              "pl": "Kiedy kogoś zatrudnisz, będziesz też płacić podatek od wynagrodzeń.",
+              "focusEn": "payroll tax",
+              "focusPl": "podatek od wynagrodzeń"
+            },
+            {
+              "en": "Payroll tax is why an employee costs more than their salary.",
+              "pl": "Przez podatek od wynagrodzeń pracownik kosztuje więcej niż jego pensja.",
+              "focusEn": "Payroll tax",
+              "focusPl": "podatek od wynagrodzeń"
+            }
+          ],
+          "acceptedAnswers": [
+            "payroll tax"
+          ],
+          "acceptedTranslations": [
+            "podatek od wynagrodzeń",
+            "składki od wynagrodzeń",
+            "podatki płacowe"
+          ]
+        },
+        {
+          "id": "taxes.tax-exempt",
+          "term": "tax-exempt",
+          "ipa": "/ˌtæks ɪɡˈzempt/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zwolniony z podatku",
+          "definition": "Not required to pay tax.",
+          "register": "formalny",
+          "contextPl": "Organizacje i transakcje bez podatku",
+          "natural": "tax-free",
+          "forms": "",
+          "collocations": "a tax-exempt organization; tax-exempt status",
+          "synonyms": "tax-free",
+          "antonyms": "taxable",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Selling to a tax-exempt school works differently.",
+              "pl": "Sprzedaż szkole zwolnionej z podatku wygląda inaczej.",
+              "focusEn": "tax-exempt",
+              "focusPl": "zwolnionej z podatku"
+            },
+            {
+              "en": "Ask the charity for proof that it's tax-exempt.",
+              "pl": "Poproś organizację charytatywną o dowód, że jest zwolniona z podatku.",
+              "focusEn": "tax-exempt",
+              "focusPl": "zwolniona z podatku"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax-exempt"
+          ],
+          "acceptedTranslations": [
+            "zwolniony z podatku",
+            "zwolniony z opodatkowania",
+            "nieopodatkowany"
+          ]
+        }
+      ]
+    }
+  ]
+}

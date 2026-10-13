@@ -1,0 +1,2902 @@
+{
+  "schemaVersion": 1,
+  "id": "friendship",
+  "namePl": "Przyjaźń",
+  "nameEn": "Friendship",
+  "group": "people",
+  "symbol": "person.2.wave.2",
+  "summaryPl": "Przyjaciele i znajomi, zawieranie przyjaźni, spotkania, wsparcie i utrzymywanie kontaktu.",
+  "aliases": [
+    "przyjaźń",
+    "przyjaciel",
+    "przyjaciółka",
+    "znajomi",
+    "kumpel",
+    "paczka",
+    "friendship",
+    "friends"
+  ],
+  "categories": [
+    {
+      "id": "friendship.types",
+      "namePl": "Przyjaciele i znajomi",
+      "scenePl": "Piątkowy wieczór w barze z paczką znajomych, którzy opowiadają nowej osobie, kto jest kim",
+      "entries": [
+        {
+          "id": "friendship.friend",
+          "term": "friend",
+          "ipa": "/frend/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "przyjaciel",
+          "definition": "A person you know well and like a lot.",
+          "register": "neutralny",
+          "contextPl": "Bliska osoba spoza rodziny",
+          "natural": "",
+          "forms": "friends",
+          "collocations": "good friend; a friend of mine; make a friend",
+          "synonyms": "pal; buddy",
+          "antonyms": "enemy",
+          "notePl": "„Friend” jest szersze niż polski „przyjaciel” – może znaczyć też „kolega” albo „znajomy”.",
+          "examples": [
+            {
+              "en": "Tonight I'm bringing a friend from college, if that's okay with everyone.",
+              "pl": "Dziś wieczorem przyprowadzę kolegę ze studiów, jeśli nikt nie ma nic przeciwko.",
+              "focusEn": "friend",
+              "focusPl": "kolegę"
+            },
+            {
+              "en": "My oldest friend is the guy at the end of the table.",
+              "pl": "Mój najstarszy przyjaciel to ten facet na końcu stołu.",
+              "focusEn": "friend",
+              "focusPl": "przyjaciel"
+            }
+          ],
+          "acceptedAnswers": [
+            "friend"
+          ],
+          "acceptedTranslations": [
+            "przyjaciel",
+            "przyjaciółka",
+            "kolega",
+            "koleżanka",
+            "znajomy"
+          ]
+        },
+        {
+          "id": "friendship.best-friend",
+          "term": "best friend",
+          "ipa": "/ˌbest ˈfrend/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "najlepszy przyjaciel",
+          "definition": "The friend you are closest to.",
+          "register": "neutralny",
+          "contextPl": "Najbliższa osoba wśród przyjaciół",
+          "natural": "",
+          "forms": "best friends",
+          "collocations": "my best friend; best friends since childhood",
+          "synonyms": "bestie",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Anna and I have been best friends since kindergarten.",
+              "pl": "Anna i ja jesteśmy najlepszymi przyjaciółkami od przedszkola.",
+              "focusEn": "best friends",
+              "focusPl": "najlepszymi przyjaciółkami"
+            },
+            {
+              "en": "At the bar, my best friend ordered for me without even asking.",
+              "pl": "W barze mój najlepszy przyjaciel zamówił dla mnie, nawet nie pytając.",
+              "focusEn": "best friend",
+              "focusPl": "najlepszy przyjaciel"
+            }
+          ],
+          "acceptedAnswers": [
+            "best friend"
+          ],
+          "acceptedTranslations": [
+            "najlepszy przyjaciel",
+            "najlepsza przyjaciółka",
+            "najlepszy kumpel"
+          ]
+        },
+        {
+          "id": "friendship.close-friend",
+          "term": "close friend",
+          "ipa": "/ˌkloʊs ˈfrend/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "bliski przyjaciel",
+          "definition": "A friend you know very well and trust.",
+          "register": "neutralny",
+          "contextPl": "Ktoś, z kim łączy cię zażyła przyjaźń",
+          "natural": "",
+          "forms": "close friends",
+          "collocations": "a few close friends; a very close friend",
+          "synonyms": "good friend",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I only invited a few close friends to the bar tonight.",
+              "pl": "Na dzisiejszy wieczór w barze zaprosiłam tylko kilku bliskich przyjaciół.",
+              "focusEn": "close friends",
+              "focusPl": "bliskich przyjaciół"
+            },
+            {
+              "en": "He's a close friend, so I told him the whole story over drinks.",
+              "pl": "To bliski przyjaciel, więc przy drinku opowiedziałem mu całą historię.",
+              "focusEn": "close friend",
+              "focusPl": "bliski przyjaciel"
+            }
+          ],
+          "acceptedAnswers": [
+            "close friend"
+          ],
+          "acceptedTranslations": [
+            "bliski przyjaciel",
+            "bliska przyjaciółka",
+            "bliski znajomy"
+          ]
+        },
+        {
+          "id": "friendship.buddy",
+          "term": "buddy",
+          "ipa": "/ˈbʌdi/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kumpel",
+          "definition": "An informal word for a friend.",
+          "register": "potoczny",
+          "contextPl": "Swobodna rozmowa o kolegach",
+          "natural": "",
+          "forms": "buddies",
+          "collocations": "my buddy; old buddy; workout buddy",
+          "synonyms": "pal; friend",
+          "antonyms": "",
+          "notePl": "Często także jako zwrot do kogoś: „Hey, buddy!”.",
+          "examples": [
+            {
+              "en": "My college buddies and I meet at this bar every Friday.",
+              "pl": "Z kumplami ze studiów spotykamy się w tym barze w każdy piątek.",
+              "focusEn": "buddies",
+              "focusPl": "kumplami"
+            },
+            {
+              "en": "Thanks, buddy, the next round is on me.",
+              "pl": "Dzięki, kolego, następna kolejka na mnie.",
+              "focusEn": "buddy",
+              "focusPl": "kolego"
+            }
+          ],
+          "acceptedAnswers": [
+            "buddy",
+            "bud"
+          ],
+          "acceptedTranslations": [
+            "kumpel",
+            "kolega",
+            "koleś"
+          ]
+        },
+        {
+          "id": "friendship.old-friend",
+          "term": "old friend",
+          "ipa": "/ˌoʊld ˈfrend/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "stary przyjaciel",
+          "definition": "A friend you have known for a long time.",
+          "register": "neutralny",
+          "contextPl": "Przyjaźń trwająca od lat",
+          "natural": "",
+          "forms": "old friends",
+          "collocations": "an old friend from school; meet an old friend",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's so good to see an old friend after all these years.",
+              "pl": "Tak dobrze zobaczyć starego przyjaciela po tylu latach.",
+              "focusEn": "old friend",
+              "focusPl": "starego przyjaciela"
+            },
+            {
+              "en": "We're old friends, so we don't need much to have a good time.",
+              "pl": "Jesteśmy starymi przyjaciółmi, więc niewiele nam trzeba do dobrej zabawy.",
+              "focusEn": "old friends",
+              "focusPl": "starymi przyjaciółmi"
+            }
+          ],
+          "acceptedAnswers": [
+            "old friend"
+          ],
+          "acceptedTranslations": [
+            "stary przyjaciel",
+            "stara przyjaciółka",
+            "dawny przyjaciel"
+          ]
+        },
+        {
+          "id": "friendship.childhood-friend",
+          "term": "childhood friend",
+          "ipa": "/ˌtʃaɪldhʊd ˈfrend/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przyjaciel z dzieciństwa",
+          "definition": "A friend you have known since you were a child.",
+          "register": "neutralny",
+          "contextPl": "Przyjaźń z czasów dzieciństwa",
+          "natural": "",
+          "forms": "childhood friends",
+          "collocations": "my childhood friend; a childhood friendship",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Tom is my childhood friend; we grew up on the same street.",
+              "pl": "Tom to mój przyjaciel z dzieciństwa – dorastaliśmy na tej samej ulicy.",
+              "focusEn": "childhood friend",
+              "focusPl": "przyjaciel z dzieciństwa"
+            },
+            {
+              "en": "Two of my childhood friends flew in just for tonight.",
+              "pl": "Dwie moje przyjaciółki z dzieciństwa przyleciały specjalnie na dzisiejszy wieczór.",
+              "focusEn": "childhood friends",
+              "focusPl": "przyjaciółki z dzieciństwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "childhood friend"
+          ],
+          "acceptedTranslations": [
+            "przyjaciel z dzieciństwa",
+            "przyjaciółka z dzieciństwa",
+            "kolega z dzieciństwa"
+          ]
+        },
+        {
+          "id": "friendship.acquaintance",
+          "term": "acquaintance",
+          "ipa": "/əˈkweɪntəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "znajomy",
+          "definition": "A person you know a little but who is not a close friend.",
+          "register": "neutralny",
+          "contextPl": "Ktoś znany tylko powierzchownie",
+          "natural": "",
+          "forms": "acquaintances",
+          "collocations": "a casual acquaintance; an old acquaintance",
+          "synonyms": "",
+          "antonyms": "close friend",
+          "notePl": "„Acquaintance” to luźniejsza znajomość niż „friend”.",
+          "examples": [
+            {
+              "en": "Honestly, she's more of an acquaintance than a friend.",
+              "pl": "Szczerze mówiąc, to bardziej znajoma niż przyjaciółka.",
+              "focusEn": "acquaintance",
+              "focusPl": "znajoma"
+            },
+            {
+              "en": "I ran into an old acquaintance at the bar and we chatted for a bit.",
+              "pl": "W barze wpadłem na starego znajomego i chwilę pogadaliśmy.",
+              "focusEn": "acquaintance",
+              "focusPl": "znajomego"
+            }
+          ],
+          "acceptedAnswers": [
+            "acquaintance"
+          ],
+          "acceptedTranslations": [
+            "znajomy",
+            "znajoma",
+            "dobry znajomy"
+          ]
+        },
+        {
+          "id": "friendship.mutual-friend",
+          "term": "mutual friend",
+          "ipa": "/ˌmjuːtʃuəl ˈfrend/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wspólny znajomy",
+          "definition": "A person who is a friend of two different people.",
+          "register": "neutralny",
+          "contextPl": "Mówienie, jak się poznaliście",
+          "natural": "",
+          "forms": "mutual friends",
+          "collocations": "through a mutual friend; have mutual friends",
+          "synonyms": "common friend",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We met through a mutual friend at a party three years ago.",
+              "pl": "Poznaliśmy się przez wspólnego znajomego na imprezie trzy lata temu.",
+              "focusEn": "mutual friend",
+              "focusPl": "wspólnego znajomego"
+            },
+            {
+              "en": "Half the people at our table turned out to be mutual friends.",
+              "pl": "Okazało się, że połowa osób przy naszym stoliku to wspólni znajomi.",
+              "focusEn": "mutual friends",
+              "focusPl": "wspólni znajomi"
+            }
+          ],
+          "acceptedAnswers": [
+            "mutual friend"
+          ],
+          "acceptedTranslations": [
+            "wspólny znajomy",
+            "wspólna znajoma",
+            "wspólny przyjaciel"
+          ]
+        },
+        {
+          "id": "friendship.friend-group",
+          "term": "friend group",
+          "ipa": "/ˈfrend ɡruːp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "paczka przyjaciół",
+          "definition": "A group of friends who regularly spend time together.",
+          "register": "potoczny",
+          "contextPl": "Stała grupa znajomych",
+          "natural": "",
+          "forms": "friend groups",
+          "collocations": "our friend group; join a friend group",
+          "synonyms": "circle of friends; crew",
+          "antonyms": "",
+          "notePl": "Można też powiedzieć „group of friends”.",
+          "examples": [
+            {
+              "en": "Our friend group has a table here that we always try to get.",
+              "pl": "Nasza paczka przyjaciół ma tu stolik, który zawsze próbujemy zająć.",
+              "focusEn": "friend group",
+              "focusPl": "paczka przyjaciół"
+            },
+            {
+              "en": "She joined our friend group in college and never left.",
+              "pl": "Dołączyła do naszej paczki na studiach i już z nami została.",
+              "focusEn": "friend group",
+              "focusPl": "paczki"
+            }
+          ],
+          "acceptedAnswers": [
+            "friend group",
+            "group of friends"
+          ],
+          "acceptedTranslations": [
+            "paczka przyjaciół",
+            "grupa znajomych",
+            "paczka znajomych",
+            "paczka"
+          ]
+        },
+        {
+          "id": "friendship.pal",
+          "term": "pal",
+          "ipa": "/pæl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kumpel",
+          "definition": "An informal word for a friend.",
+          "register": "potoczny",
+          "contextPl": "Swobodnie o koledze lub jako zwrot do kogoś",
+          "natural": "",
+          "forms": "pals",
+          "collocations": "old pal; pen pal",
+          "synonyms": "buddy",
+          "antonyms": "",
+          "notePl": "Brzmi nieco staroświecko; „pen pal” to przyjaciel korespondencyjny.",
+          "examples": [
+            {
+              "en": "Grab a seat, pal, we saved you a spot.",
+              "pl": "Siadaj, kolego, zajęliśmy ci miejsce.",
+              "focusEn": "pal",
+              "focusPl": "kolego"
+            },
+            {
+              "en": "My old pal from the army just walked into the bar.",
+              "pl": "Właśnie do baru wszedł mój stary kumpel z wojska.",
+              "focusEn": "pal",
+              "focusPl": "kumpel"
+            }
+          ],
+          "acceptedAnswers": [
+            "pal"
+          ],
+          "acceptedTranslations": [
+            "kumpel",
+            "kolega"
+          ]
+        },
+        {
+          "id": "friendship.circle-of-friends",
+          "term": "circle of friends",
+          "ipa": "/ˌsɝːkəl əv ˈfrendz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "krąg przyjaciół",
+          "definition": "The group of people someone is friends with.",
+          "register": "neutralny",
+          "contextPl": "Opisywanie swojego otoczenia towarzyskiego",
+          "natural": "",
+          "forms": "circles of friends",
+          "collocations": "a small circle of friends; a wide circle of friends",
+          "synonyms": "friend group",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Since I moved here, my circle of friends has gotten much smaller.",
+              "pl": "Odkąd się tu przeprowadziłam, mój krąg przyjaciół bardzo się zmniejszył.",
+              "focusEn": "circle of friends",
+              "focusPl": "krąg przyjaciół"
+            },
+            {
+              "en": "Everyone at this table is part of her wide circle of friends.",
+              "pl": "Wszyscy przy tym stoliku należą do jej szerokiego grona znajomych.",
+              "focusEn": "circle of friends",
+              "focusPl": "grona znajomych"
+            }
+          ],
+          "acceptedAnswers": [
+            "circle of friends"
+          ],
+          "acceptedTranslations": [
+            "krąg przyjaciół",
+            "grono przyjaciół",
+            "grono znajomych"
+          ]
+        },
+        {
+          "id": "friendship.bestie",
+          "term": "bestie",
+          "ipa": "/ˈbesti/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "psiapsiółka",
+          "definition": "A very informal word for a best friend.",
+          "register": "slangowy",
+          "contextPl": "Bardzo swobodnie o najlepszej przyjaciółce",
+          "natural": "",
+          "forms": "besties",
+          "collocations": "my bestie",
+          "synonyms": "best friend",
+          "antonyms": "",
+          "notePl": "Bardzo potoczne, popularne zwłaszcza wśród młodszych osób.",
+          "examples": [
+            {
+              "en": "I'm here with my bestie to celebrate her new job.",
+              "pl": "Jestem tu z moją psiapsiółką, żeby uczcić jej nową pracę.",
+              "focusEn": "bestie",
+              "focusPl": "psiapsiółką"
+            },
+            {
+              "en": "My bestie knew I'd had a bad day before I even sat down.",
+              "pl": "Moja psiapsiółka wiedziała, że miałam zły dzień, zanim w ogóle usiadłam.",
+              "focusEn": "bestie",
+              "focusPl": "psiapsiółka"
+            }
+          ],
+          "acceptedAnswers": [
+            "bestie"
+          ],
+          "acceptedTranslations": [
+            "psiapsiółka",
+            "najlepsza przyjaciółka",
+            "najlepszy przyjaciel"
+          ]
+        },
+        {
+          "id": "friendship.frenemy",
+          "term": "frenemy",
+          "ipa": "/ˈfrenəmi/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "fałszywa przyjaciółka",
+          "definition": "A person who acts like a friend but is really a rival.",
+          "register": "slangowy",
+          "contextPl": "Relacja pozornie przyjacielska, a naprawdę rywalizacja",
+          "natural": "",
+          "forms": "frenemies",
+          "collocations": "",
+          "synonyms": "fake friend",
+          "antonyms": "",
+          "notePl": "Połączenie słów „friend” i „enemy”.",
+          "examples": [
+            {
+              "en": "She smiles at me, but honestly, she's more of a frenemy.",
+              "pl": "Uśmiecha się do mnie, ale szczerze mówiąc, to bardziej fałszywa przyjaciółka.",
+              "focusEn": "frenemy",
+              "focusPl": "fałszywa przyjaciółka"
+            },
+            {
+              "en": "My frenemy from school showed up and made a comment about my dress.",
+              "pl": "Pojawiła się moja fałszywa przyjaciółka ze szkoły i skomentowała moją sukienkę.",
+              "focusEn": "frenemy",
+              "focusPl": "fałszywa przyjaciółka"
+            }
+          ],
+          "acceptedAnswers": [
+            "frenemy"
+          ],
+          "acceptedTranslations": [
+            "fałszywa przyjaciółka",
+            "fałszywy przyjaciel",
+            "przyjaciel-wróg"
+          ]
+        },
+        {
+          "id": "friendship.fair-weather-friend",
+          "term": "fair-weather friend",
+          "ipa": "/ˌfer weðər ˈfrend/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "przyjaciel od święta",
+          "definition": "A friend who is only there when things are easy.",
+          "register": "neutralny",
+          "contextPl": "Krytyka kogoś, kto znika w trudnych chwilach",
+          "natural": "",
+          "forms": "fair-weather friends",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "true friend",
+          "notePl": "„Fair weather” to ładna pogoda – ktoś obecny tylko wtedy, gdy wszystko idzie dobrze.",
+          "examples": [
+            {
+              "en": "When I lost my job, I found out who was just a fair-weather friend.",
+              "pl": "Kiedy straciłem pracę, przekonałem się, kto był tylko przyjacielem od święta.",
+              "focusEn": "fair-weather friend",
+              "focusPl": "przyjacielem od święta"
+            },
+            {
+              "en": "He only calls when he needs a ride, a real fair-weather friend.",
+              "pl": "Dzwoni tylko, kiedy potrzebuje podwózki – typowy przyjaciel od święta.",
+              "focusEn": "fair-weather friend",
+              "focusPl": "przyjaciel od święta"
+            }
+          ],
+          "acceptedAnswers": [
+            "fair-weather friend"
+          ],
+          "acceptedTranslations": [
+            "przyjaciel od święta",
+            "fałszywy przyjaciel",
+            "przyjaciółka od święta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "friendship.meeting",
+      "namePl": "Zawieranie przyjaźni",
+      "scenePl": "Pierwsze tygodnie w nowym mieście: sobotnie treningi w klubie biegowym i nowe znajomości",
+      "entries": [
+        {
+          "id": "friendship.friendship",
+          "term": "friendship",
+          "ipa": "/ˈfrendʃɪp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przyjaźń",
+          "definition": "A relationship between friends.",
+          "register": "neutralny",
+          "contextPl": "Mówienie o relacji między przyjaciółmi",
+          "natural": "",
+          "forms": "friendships",
+          "collocations": "a close friendship; a lifelong friendship; start a friendship",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our friendship started with a sprained ankle at mile three.",
+              "pl": "Nasza przyjaźń zaczęła się od skręconej kostki na trzeciej mili.",
+              "focusEn": "friendship",
+              "focusPl": "przyjaźń"
+            },
+            {
+              "en": "Running together every Saturday really built our friendship.",
+              "pl": "Wspólne bieganie w każdą sobotę naprawdę zbudowało naszą przyjaźń.",
+              "focusEn": "friendship",
+              "focusPl": "przyjaźń"
+            }
+          ],
+          "acceptedAnswers": [
+            "friendship"
+          ],
+          "acceptedTranslations": [
+            "przyjaźń",
+            "znajomość"
+          ]
+        },
+        {
+          "id": "friendship.make-friends",
+          "term": "make friends",
+          "ipa": "/ˌmeɪk ˈfrendz/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zaprzyjaźnić się",
+          "definition": "To start being friends with people.",
+          "register": "neutralny",
+          "contextPl": "Poznawanie nowych ludzi",
+          "natural": "",
+          "forms": "makes – made – made",
+          "collocations": "make new friends; make friends easily; make friends with someone",
+          "synonyms": "befriend",
+          "antonyms": "",
+          "notePl": "Mówimy „make friends with someone”, nie „do friends”.",
+          "examples": [
+            {
+              "en": "I joined a running club to make friends in the new city.",
+              "pl": "Zapisałam się do klubu biegowego, żeby zaprzyjaźnić się z ludźmi w nowym mieście.",
+              "focusEn": "make friends",
+              "focusPl": "zaprzyjaźnić się"
+            },
+            {
+              "en": "After the run, Kate said it's hard to make friends after thirty.",
+              "pl": "Po biegu Kate powiedziała, że po trzydziestce trudno się zaprzyjaźnić.",
+              "focusEn": "make friends",
+              "focusPl": "zaprzyjaźnić"
+            }
+          ],
+          "acceptedAnswers": [
+            "make friends",
+            "make friends with"
+          ],
+          "acceptedTranslations": [
+            "zaprzyjaźnić się",
+            "zaprzyjaźniać się",
+            "poznać przyjaciół"
+          ]
+        },
+        {
+          "id": "friendship.meet",
+          "term": "meet",
+          "ipa": "/miːt/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "poznać",
+          "definition": "To see and talk to someone for the first time.",
+          "register": "neutralny",
+          "contextPl": "Pierwsze spotkanie z kimś",
+          "natural": "",
+          "forms": "meets – met – met",
+          "collocations": "meet new people; meet someone at work; where did you meet",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I met most of my friends here at the running club.",
+              "pl": "Większość moich znajomych tutaj poznałam w klubie biegowym.",
+              "focusEn": "met",
+              "focusPl": "poznałam"
+            },
+            {
+              "en": "Where did you two meet? At a race last spring?",
+              "pl": "Gdzie się poznaliście? Na zawodach zeszłej wiosny?",
+              "focusEn": "meet",
+              "focusPl": "poznaliście"
+            }
+          ],
+          "acceptedAnswers": [
+            "meet"
+          ],
+          "acceptedTranslations": [
+            "poznać",
+            "poznawać",
+            "poznać się",
+            "spotkać"
+          ]
+        },
+        {
+          "id": "friendship.get-to-know",
+          "term": "get to know",
+          "ipa": "/ˌɡet tə ˈnoʊ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "poznać bliżej",
+          "definition": "To learn more about someone by spending time with them.",
+          "register": "neutralny",
+          "contextPl": "Lepsze poznawanie nowej osoby",
+          "natural": "",
+          "forms": "gets – got – gotten",
+          "collocations": "get to know someone better; get to know each other",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After a few Saturday runs, we started to get to know each other.",
+              "pl": "Po kilku sobotnich biegach zaczęliśmy się poznawać.",
+              "focusEn": "get to know",
+              "focusPl": "poznawać"
+            },
+            {
+              "en": "I'd love to get to know you better, so want to grab breakfast after the run?",
+              "pl": "Chętnie poznam cię lepiej – może pójdziemy na śniadanie po biegu?",
+              "focusEn": "get to know",
+              "focusPl": "poznam"
+            }
+          ],
+          "acceptedAnswers": [
+            "get to know"
+          ],
+          "acceptedTranslations": [
+            "poznać bliżej",
+            "poznawać",
+            "lepiej poznać",
+            "poznać"
+          ]
+        },
+        {
+          "id": "friendship.become-friends",
+          "term": "become friends",
+          "ipa": "/bɪˌkʌm ˈfrendz/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zostać przyjaciółmi",
+          "definition": "To start a friendship with someone.",
+          "register": "neutralny",
+          "contextPl": "Początek przyjaźni",
+          "natural": "",
+          "forms": "becomes – became – become",
+          "collocations": "quickly become friends; become close friends",
+          "synonyms": "make friends",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We became friends after we got lost on the same trail.",
+              "pl": "Zostałyśmy przyjaciółkami, kiedy zgubiłyśmy się na tym samym szlaku.",
+              "focusEn": "became friends",
+              "focusPl": "Zostałyśmy przyjaciółkami"
+            },
+            {
+              "en": "Funny how strangers at a race can become friends so quickly.",
+              "pl": "Zabawne, jak szybko obcy ludzie na zawodach mogą zostać przyjaciółmi.",
+              "focusEn": "become friends",
+              "focusPl": "zostać przyjaciółmi"
+            }
+          ],
+          "acceptedAnswers": [
+            "become friends"
+          ],
+          "acceptedTranslations": [
+            "zostać przyjaciółmi",
+            "zaprzyjaźnić się",
+            "zostać przyjaciółkami"
+          ]
+        },
+        {
+          "id": "friendship.stranger",
+          "term": "stranger",
+          "ipa": "/ˈstreɪndʒər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "nieznajomy",
+          "definition": "A person you do not know.",
+          "register": "neutralny",
+          "contextPl": "Ktoś, kogo jeszcze nie znasz",
+          "natural": "",
+          "forms": "strangers",
+          "collocations": "a total stranger; talk to strangers",
+          "synonyms": "",
+          "antonyms": "friend",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A year ago we were strangers, and now we run together every weekend.",
+              "pl": "Rok temu byliśmy sobie obcy, a teraz biegamy razem w każdy weekend.",
+              "focusEn": "strangers",
+              "focusPl": "obcy"
+            },
+            {
+              "en": "I'm usually shy with strangers, but the club was so welcoming.",
+              "pl": "Zwykle jestem nieśmiała wobec nieznajomych, ale klub był bardzo gościnny.",
+              "focusEn": "strangers",
+              "focusPl": "nieznajomych"
+            }
+          ],
+          "acceptedAnswers": [
+            "stranger"
+          ],
+          "acceptedTranslations": [
+            "nieznajomy",
+            "obcy",
+            "nieznajoma",
+            "obca osoba"
+          ]
+        },
+        {
+          "id": "friendship.hit-it-off",
+          "term": "hit it off",
+          "ipa": "/ˌhɪt ɪt ˈɔːf/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "od razu się polubić",
+          "definition": "To like each other immediately.",
+          "register": "potoczny",
+          "contextPl": "Udany początek znajomości",
+          "natural": "",
+          "forms": "hit – hit – hit",
+          "collocations": "hit it off right away; really hit it off",
+          "synonyms": "click",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Jen and I hit it off on our very first run together.",
+              "pl": "Jen i ja od razu się polubiłyśmy podczas pierwszego wspólnego biegu.",
+              "focusEn": "hit it off",
+              "focusPl": "od razu się polubiłyśmy"
+            },
+            {
+              "en": "I knew you two would hit it off, since you both love bad jokes.",
+              "pl": "Wiedziałam, że przypadniecie sobie do gustu, bo oboje uwielbiacie suche żarty.",
+              "focusEn": "hit it off",
+              "focusPl": "przypadniecie sobie do gustu"
+            }
+          ],
+          "acceptedAnswers": [
+            "hit it off"
+          ],
+          "acceptedTranslations": [
+            "od razu się polubić",
+            "przypaść sobie do gustu",
+            "polubić się",
+            "złapać wspólny język"
+          ]
+        },
+        {
+          "id": "friendship.click",
+          "term": "click",
+          "ipa": "/klɪk/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "złapać wspólny język",
+          "definition": "To get along well with someone right away.",
+          "register": "potoczny",
+          "contextPl": "Szybkie porozumienie z nową osobą",
+          "natural": "",
+          "forms": "clicks – clicked – clicked",
+          "collocations": "we just clicked; click with someone",
+          "synonyms": "hit it off",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We just clicked and talked for an hour after the run.",
+              "pl": "Po prostu złapaliśmy wspólny język i po biegu rozmawialiśmy przez godzinę.",
+              "focusEn": "clicked",
+              "focusPl": "złapaliśmy wspólny język"
+            },
+            {
+              "en": "I didn't really click with anyone in the early morning group.",
+              "pl": "W porannej grupie z nikim tak naprawdę nie złapałam kontaktu.",
+              "focusEn": "click",
+              "focusPl": "nie złapałam kontaktu"
+            }
+          ],
+          "acceptedAnswers": [
+            "click"
+          ],
+          "acceptedTranslations": [
+            "złapać wspólny język",
+            "dogadać się",
+            "złapać kontakt",
+            "nadawać na tych samych falach"
+          ]
+        },
+        {
+          "id": "friendship.warm-up-to",
+          "term": "warm up to",
+          "ipa": "/ˌwɔːrm ˈʌp tuː/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przekonać się do kogoś",
+          "definition": "To slowly start to like someone.",
+          "register": "potoczny",
+          "contextPl": "Stopniowe zbliżanie się do kogoś",
+          "natural": "",
+          "forms": "warms – warmed – warmed",
+          "collocations": "slowly warm up to someone",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It took me a while to warm up to Dave, but now he's my running partner.",
+              "pl": "Trochę to trwało, zanim przekonałam się do Dave'a, ale teraz to mój partner do biegania.",
+              "focusEn": "warm up to",
+              "focusPl": "przekonałam się do"
+            },
+            {
+              "en": "The quiet guy finally warmed up to us after a few weeks.",
+              "pl": "Ten cichy chłopak po kilku tygodniach w końcu przekonał się do nas.",
+              "focusEn": "warmed up to",
+              "focusPl": "przekonał się do"
+            }
+          ],
+          "acceptedAnswers": [
+            "warm up to"
+          ],
+          "acceptedTranslations": [
+            "przekonać się do kogoś",
+            "polubić kogoś z czasem",
+            "oswoić się z kimś"
+          ]
+        },
+        {
+          "id": "friendship.put-yourself-out-there",
+          "term": "put yourself out there",
+          "ipa": "/ˌpʊt jərˌself aʊt ˈðer/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wyjść do ludzi",
+          "definition": "To try new things and meet people even if it feels a little scary.",
+          "register": "potoczny",
+          "contextPl": "Zachęta do poznawania ludzi",
+          "natural": "",
+          "forms": "puts – put – put",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you want friends in a new city, you have to put yourself out there.",
+              "pl": "Jeśli chcesz mieć przyjaciół w nowym mieście, musisz wyjść do ludzi.",
+              "focusEn": "put yourself out there",
+              "focusPl": "wyjść do ludzi"
+            },
+            {
+              "en": "Joining the club was my way to put myself out there after the move.",
+              "pl": "Dołączenie do klubu było moim sposobem, żeby po przeprowadzce wyjść do ludzi.",
+              "focusEn": "put myself out there",
+              "focusPl": "wyjść do ludzi"
+            }
+          ],
+          "acceptedAnswers": [
+            "put yourself out there",
+            "put myself out there"
+          ],
+          "acceptedTranslations": [
+            "wyjść do ludzi",
+            "otworzyć się na ludzi",
+            "wychodzić do ludzi"
+          ]
+        },
+        {
+          "id": "friendship.befriend",
+          "term": "befriend",
+          "ipa": "/bɪˈfrend/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zaprzyjaźnić się z",
+          "definition": "To become someone's friend, often by being kind to them.",
+          "register": "formalny",
+          "contextPl": "Raczej w tekstach pisanych i opowieściach",
+          "natural": "",
+          "forms": "befriends – befriended – befriended",
+          "collocations": "befriend a newcomer",
+          "synonyms": "make friends with",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The coach befriended every new member on their first run.",
+              "pl": "Trener zaprzyjaźniał się z każdym nowym członkiem już podczas pierwszego biegu.",
+              "focusEn": "befriended",
+              "focusPl": "zaprzyjaźniał się"
+            },
+            {
+              "en": "I befriended an older runner who knew all the trails.",
+              "pl": "Zaprzyjaźniłam się ze starszym biegaczem, który znał wszystkie szlaki.",
+              "focusEn": "befriended",
+              "focusPl": "Zaprzyjaźniłam się"
+            }
+          ],
+          "acceptedAnswers": [
+            "befriend"
+          ],
+          "acceptedTranslations": [
+            "zaprzyjaźnić się z",
+            "zaprzyjaźniać się"
+          ]
+        },
+        {
+          "id": "friendship.strike-up-a-friendship",
+          "term": "strike up a friendship",
+          "ipa": "/ˌstraɪk ʌp ə ˈfrendʃɪp/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nawiązać przyjaźń",
+          "definition": "To start a friendship, often by chance.",
+          "register": "formalny",
+          "contextPl": "Przypadkowy początek przyjaźni",
+          "natural": "",
+          "forms": "strikes – struck – struck",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We struck up a friendship while stretching after a race.",
+              "pl": "Nawiązałyśmy przyjaźń, rozciągając się po zawodach.",
+              "focusEn": "struck up a friendship",
+              "focusPl": "Nawiązałyśmy przyjaźń"
+            },
+            {
+              "en": "It's easy to strike up a friendship with people who share your routine.",
+              "pl": "Łatwo nawiązać przyjaźń z ludźmi, którzy mają podobny rytm dnia.",
+              "focusEn": "strike up a friendship",
+              "focusPl": "nawiązać przyjaźń"
+            }
+          ],
+          "acceptedAnswers": [
+            "strike up a friendship",
+            "strike up friendship"
+          ],
+          "acceptedTranslations": [
+            "nawiązać przyjaźń",
+            "zawrzeć przyjaźń",
+            "nawiązywać przyjaźń"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "friendship.plans",
+      "namePl": "Spotkania i wspólny czas",
+      "scenePl": "Czat grupowy, na którym paczka znajomych planuje sobotni wieczór",
+      "entries": [
+        {
+          "id": "friendship.get-together",
+          "term": "get together",
+          "ipa": "/ˌɡet təˈɡeðər/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "spotkać się",
+          "definition": "To meet in order to spend time together.",
+          "register": "neutralny",
+          "contextPl": "Umawianie się ze znajomymi",
+          "natural": "",
+          "forms": "gets – got – gotten",
+          "collocations": "get together for dinner; let's get together",
+          "synonyms": "meet up",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Should we get together at my place on Saturday?",
+              "pl": "Może spotkamy się u mnie w sobotę?",
+              "focusEn": "get together",
+              "focusPl": "spotkamy się"
+            },
+            {
+              "en": "We try to get together at least once a month, but it's not easy.",
+              "pl": "Staramy się spotykać przynajmniej raz w miesiącu, ale to niełatwe.",
+              "focusEn": "get together",
+              "focusPl": "spotykać"
+            }
+          ],
+          "acceptedAnswers": [
+            "get together"
+          ],
+          "acceptedTranslations": [
+            "spotkać się",
+            "spotykać się",
+            "zebrać się"
+          ]
+        },
+        {
+          "id": "friendship.catch-up",
+          "term": "catch up",
+          "ipa": "/ˌkætʃ ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "nadrobić zaległości",
+          "definition": "To talk with someone about what has happened since you last met.",
+          "register": "potoczny",
+          "contextPl": "Rozmowa po dłuższej przerwie",
+          "natural": "",
+          "forms": "catches – caught – caught",
+          "collocations": "catch up over coffee; catch up with someone",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We haven't talked in months, so let's catch up on Friday.",
+              "pl": "Nie rozmawiałyśmy od miesięcy, więc nadróbmy zaległości w piątek.",
+              "focusEn": "catch up",
+              "focusPl": "nadróbmy zaległości"
+            },
+            {
+              "en": "We spent the whole evening catching up on the couch.",
+              "pl": "Cały wieczór nadrabialiśmy zaległości na kanapie.",
+              "focusEn": "catching up",
+              "focusPl": "nadrabialiśmy zaległości"
+            }
+          ],
+          "acceptedAnswers": [
+            "catch up"
+          ],
+          "acceptedTranslations": [
+            "nadrobić zaległości",
+            "nadrabiać zaległości",
+            "pogadać"
+          ]
+        },
+        {
+          "id": "friendship.make-plans",
+          "term": "make plans",
+          "ipa": "/ˌmeɪk ˈplænz/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "umówić się",
+          "definition": "To arrange to do something with someone.",
+          "register": "neutralny",
+          "contextPl": "Organizowanie spotkania",
+          "natural": "",
+          "forms": "makes – made – made",
+          "collocations": "make plans for the weekend; make plans with friends",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's make plans for Saturday before everyone gets busy.",
+              "pl": "Umówmy się na sobotę, zanim wszyscy będą zajęci.",
+              "focusEn": "make plans",
+              "focusPl": "Umówmy się"
+            },
+            {
+              "en": "I already made plans with Sam, but you can join us.",
+              "pl": "Już umówiłem się z Samem, ale możesz do nas dołączyć.",
+              "focusEn": "made plans",
+              "focusPl": "umówiłem się"
+            }
+          ],
+          "acceptedAnswers": [
+            "make plans"
+          ],
+          "acceptedTranslations": [
+            "umówić się",
+            "umawiać się",
+            "planować",
+            "robić plany"
+          ]
+        },
+        {
+          "id": "friendship.cancel-plans",
+          "term": "cancel plans",
+          "ipa": "/ˌkænsəl ˈplænz/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "odwołać spotkanie",
+          "definition": "To say you will not do something you arranged with someone.",
+          "register": "neutralny",
+          "contextPl": "Rezygnacja z umówionego spotkania",
+          "natural": "",
+          "forms": "cancels – canceled – canceled",
+          "collocations": "cancel plans at the last minute",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry to cancel plans again, but my kid is sick.",
+              "pl": "Przepraszam, że znowu odwołuję spotkanie, ale dziecko mi zachorowało.",
+              "focusEn": "cancel plans",
+              "focusPl": "odwołuję spotkanie"
+            },
+            {
+              "en": "Mike canceled plans in the group chat an hour before dinner.",
+              "pl": "Mike odwołał spotkanie na czacie grupowym godzinę przed kolacją.",
+              "focusEn": "canceled plans",
+              "focusPl": "odwołał spotkanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "cancel plans"
+          ],
+          "acceptedTranslations": [
+            "odwołać spotkanie",
+            "odwoływać spotkanie",
+            "odwołać plany"
+          ]
+        },
+        {
+          "id": "friendship.grab-coffee",
+          "term": "grab coffee",
+          "ipa": "/ˌɡræb ˈkɔːfi/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wyskoczyć na kawę",
+          "definition": "To meet someone for a quick coffee.",
+          "register": "potoczny",
+          "contextPl": "Krótkie, swobodne spotkanie",
+          "natural": "",
+          "forms": "grabs – grabbed – grabbed",
+          "collocations": "grab coffee sometime; grab a coffee",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Want to grab coffee before the movie on Saturday?",
+              "pl": "Chcesz wyskoczyć na kawę przed sobotnim filmem?",
+              "focusEn": "grab coffee",
+              "focusPl": "wyskoczyć na kawę"
+            },
+            {
+              "en": "We should grab coffee sometime, so I'll text you next week.",
+              "pl": "Musimy kiedyś wyskoczyć na kawę, napiszę do ciebie w przyszłym tygodniu.",
+              "focusEn": "grab coffee",
+              "focusPl": "wyskoczyć na kawę"
+            }
+          ],
+          "acceptedAnswers": [
+            "grab coffee"
+          ],
+          "acceptedTranslations": [
+            "wyskoczyć na kawę",
+            "pójść na kawę",
+            "skoczyć na kawę"
+          ]
+        },
+        {
+          "id": "friendship.drop-by",
+          "term": "drop by",
+          "ipa": "/ˌdrɑːp ˈbaɪ/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wpaść",
+          "definition": "To visit someone briefly, often without planning it.",
+          "register": "potoczny",
+          "contextPl": "Krótka, niezapowiedziana wizyta",
+          "natural": "",
+          "forms": "drops – dropped – dropped",
+          "collocations": "drop by later; drop by someone's place",
+          "synonyms": "stop by",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Feel free to drop by after work if you're in the area.",
+              "pl": "Wpadnij po pracy, jeśli będziesz w okolicy.",
+              "focusEn": "drop by",
+              "focusPl": "Wpadnij"
+            },
+            {
+              "en": "Lisa dropped by with snacks while we were planning the trip.",
+              "pl": "Lisa wpadła z przekąskami, kiedy planowaliśmy wyjazd.",
+              "focusEn": "dropped by",
+              "focusPl": "wpadła"
+            }
+          ],
+          "acceptedAnswers": [
+            "drop by"
+          ],
+          "acceptedTranslations": [
+            "wpaść",
+            "wpadać",
+            "zajrzeć"
+          ]
+        },
+        {
+          "id": "friendship.get-together-2",
+          "term": "get-together",
+          "ipa": "/ˈɡet təˌɡeðər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "spotkanie towarzyskie",
+          "definition": "An informal social meeting or small party.",
+          "register": "neutralny",
+          "contextPl": "Nieformalne spotkanie w małym gronie",
+          "natural": "",
+          "forms": "get-togethers",
+          "collocations": "a small get-together; a family get-together",
+          "synonyms": "gathering",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's just a small get-together at my place, nothing fancy.",
+              "pl": "To tylko małe spotkanie u mnie, nic wielkiego.",
+              "focusEn": "get-together",
+              "focusPl": "spotkanie"
+            },
+            {
+              "en": "I posted the details of Saturday's get-together in the group chat.",
+              "pl": "Wrzuciłam szczegóły sobotniej posiadówki na czat grupowy.",
+              "focusEn": "get-together",
+              "focusPl": "posiadówki"
+            }
+          ],
+          "acceptedAnswers": [
+            "get-together"
+          ],
+          "acceptedTranslations": [
+            "spotkanie towarzyskie",
+            "spotkanie",
+            "posiadówka"
+          ]
+        },
+        {
+          "id": "friendship.game-night",
+          "term": "game night",
+          "ipa": "/ˈɡeɪm naɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wieczór gier",
+          "definition": "An evening when friends meet to play board or card games.",
+          "register": "neutralny",
+          "contextPl": "Spotkanie przy grach planszowych",
+          "natural": "",
+          "forms": "game nights",
+          "collocations": "host a game night; a weekly game night",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Who's bringing snacks for game night this Friday?",
+              "pl": "Kto przynosi przekąski na wieczór gier w ten piątek?",
+              "focusEn": "game night",
+              "focusPl": "wieczór gier"
+            },
+            {
+              "en": "Our monthly game night always ends way past midnight.",
+              "pl": "Nasz comiesięczny wieczór gier zawsze kończy się długo po północy.",
+              "focusEn": "game night",
+              "focusPl": "wieczór gier"
+            }
+          ],
+          "acceptedAnswers": [
+            "game night"
+          ],
+          "acceptedTranslations": [
+            "wieczór gier",
+            "wieczór z grami planszowymi"
+          ]
+        },
+        {
+          "id": "friendship.girls-night",
+          "term": "girls' night",
+          "ipa": "/ˌɡɝːlz ˈnaɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "babski wieczór",
+          "definition": "An evening when a group of women go out or meet without men.",
+          "register": "potoczny",
+          "contextPl": "Spotkanie w gronie koleżanek",
+          "natural": "",
+          "forms": "girls' nights",
+          "collocations": "a girls' night out; plan a girls' night",
+          "synonyms": "ladies' night",
+          "antonyms": "guys' night",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're planning a girls' night for Lena's birthday.",
+              "pl": "Planujemy babski wieczór na urodziny Leny.",
+              "focusEn": "girls' night",
+              "focusPl": "babski wieczór"
+            },
+            {
+              "en": "Sorry, honey, tonight is girls' night, so no boyfriends allowed.",
+              "pl": "Sorry, kochanie, dziś jest babski wieczór, więc chłopaki nie mają wstępu.",
+              "focusEn": "girls' night",
+              "focusPl": "babski wieczór"
+            }
+          ],
+          "acceptedAnswers": [
+            "girls' night",
+            "girls night"
+          ],
+          "acceptedTranslations": [
+            "babski wieczór",
+            "babskie wyjście"
+          ]
+        },
+        {
+          "id": "friendship.guys-night",
+          "term": "guys' night",
+          "ipa": "/ˌɡaɪz ˈnaɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "męski wieczór",
+          "definition": "An evening when a group of men go out or meet without women.",
+          "register": "potoczny",
+          "contextPl": "Spotkanie w gronie kolegów",
+          "natural": "",
+          "forms": "guys' nights",
+          "collocations": "a guys' night out",
+          "synonyms": "boys' night",
+          "antonyms": "girls' night",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Tom set up a guys' night to watch the game at his place.",
+              "pl": "Tom zorganizował u siebie męski wieczór, żeby obejrzeć mecz.",
+              "focusEn": "guys' night",
+              "focusPl": "męski wieczór"
+            },
+            {
+              "en": "We haven't had a proper guys' night since Ben's baby was born.",
+              "pl": "Nie mieliśmy porządnego męskiego wieczoru, odkąd urodziło się dziecko Bena.",
+              "focusEn": "guys' night",
+              "focusPl": "męskiego wieczoru"
+            }
+          ],
+          "acceptedAnswers": [
+            "guys' night",
+            "guys night"
+          ],
+          "acceptedTranslations": [
+            "męski wieczór",
+            "wieczór w męskim gronie"
+          ]
+        },
+        {
+          "id": "friendship.sleepover",
+          "term": "sleepover",
+          "ipa": "/ˈsliːpoʊvər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nocowanie u kogoś",
+          "definition": "An occasion when friends stay the night at someone's home.",
+          "register": "neutralny",
+          "contextPl": "Wspólne nocowanie, zwłaszcza dzieci i nastolatków",
+          "natural": "",
+          "forms": "sleepovers",
+          "collocations": "have a sleepover; a sleepover party",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Remember our sleepovers when we were twelve? Let's do one again!",
+              "pl": "Pamiętasz, jak w wieku dwunastu lat urządzałyśmy piżama party? Zróbmy to znowu!",
+              "focusEn": "sleepovers",
+              "focusPl": "piżama party"
+            },
+            {
+              "en": "After the party, we had a sleepover at Mia's place, just like in high school.",
+              "pl": "Po imprezie urządziłyśmy nocowanie u Mii, zupełnie jak w liceum.",
+              "focusEn": "sleepover",
+              "focusPl": "nocowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "sleepover"
+          ],
+          "acceptedTranslations": [
+            "nocowanie u kogoś",
+            "piżama party",
+            "nocowanka"
+          ]
+        },
+        {
+          "id": "friendship.reunion",
+          "term": "reunion",
+          "ipa": "/riˈjuːnjən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zjazd",
+          "definition": "A meeting of people who have not seen each other for a long time.",
+          "register": "neutralny",
+          "contextPl": "Spotkanie po latach",
+          "natural": "",
+          "forms": "reunions",
+          "collocations": "a class reunion; a high school reunion",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our ten-year high school reunion is next month.",
+              "pl": "Za miesiąc mamy zjazd dziesięć lat po maturze.",
+              "focusEn": "reunion",
+              "focusPl": "zjazd"
+            },
+            {
+              "en": "I'm organizing a little reunion for our old college roommates.",
+              "pl": "Organizuję małe spotkanie po latach dla dawnych współlokatorów ze studiów.",
+              "focusEn": "reunion",
+              "focusPl": "spotkanie po latach"
+            }
+          ],
+          "acceptedAnswers": [
+            "reunion"
+          ],
+          "acceptedTranslations": [
+            "zjazd",
+            "spotkanie po latach",
+            "zjazd absolwentów"
+          ]
+        },
+        {
+          "id": "friendship.flake",
+          "term": "flake",
+          "ipa": "/fleɪk/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wystawić kogoś",
+          "definition": "To cancel plans at the last minute or not show up.",
+          "register": "slangowy",
+          "contextPl": "Narzekanie na kogoś, kto się nie pojawił",
+          "natural": "",
+          "forms": "flakes – flaked – flaked",
+          "collocations": "flake on someone; flake out",
+          "synonyms": "bail",
+          "antonyms": "",
+          "notePl": "Rzeczownik „a flake” to osoba, która często odwołuje spotkania.",
+          "examples": [
+            {
+              "en": "Don't flake on us this time, because we already booked the table.",
+              "pl": "Tylko nas tym razem nie wystaw, bo już zarezerwowaliśmy stolik.",
+              "focusEn": "flake",
+              "focusPl": "wystaw"
+            },
+            {
+              "en": "Half the group flaked, so it was just the three of us.",
+              "pl": "Połowa grupy nie przyszła, więc byliśmy tylko we trójkę.",
+              "focusEn": "flaked",
+              "focusPl": "nie przyszła"
+            }
+          ],
+          "acceptedAnswers": [
+            "flake",
+            "flake on",
+            "flake out"
+          ],
+          "acceptedTranslations": [
+            "wystawić kogoś",
+            "nie przyjść",
+            "wystawiać"
+          ]
+        },
+        {
+          "id": "friendship.the-more-the-merrier",
+          "term": "the more, the merrier",
+          "ipa": "/ðə ˌmɔːr ðə ˈmeriər/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "im więcej, tym weselej",
+          "definition": "Said to show you are happy for more people to join.",
+          "register": "potoczny",
+          "contextPl": "Zapraszanie dodatkowych osób",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bring your cousin along: the more, the merrier!",
+              "pl": "Przyprowadź kuzyna – im więcej, tym weselej!",
+              "focusEn": "the more, the merrier",
+              "focusPl": "im więcej, tym weselej"
+            },
+            {
+              "en": "Can Josh come too? Sure, the more, the merrier.",
+              "pl": "Josh też może przyjść? Jasne, im więcej, tym weselej.",
+              "focusEn": "the more, the merrier",
+              "focusPl": "im więcej, tym weselej"
+            }
+          ],
+          "acceptedAnswers": [
+            "the more, the merrier"
+          ],
+          "acceptedTranslations": [
+            "im więcej, tym weselej",
+            "im nas więcej, tym weselej"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "friendship.support",
+      "namePl": "Wsparcie i zaufanie",
+      "scenePl": "Przyjaciółka przychodzi wieczorem z lodami po twoim bardzo trudnym dniu",
+      "entries": [
+        {
+          "id": "friendship.trust",
+          "term": "trust",
+          "ipa": "/trʌst/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ufać",
+          "definition": "To believe that someone is honest and will not hurt you.",
+          "register": "neutralny",
+          "contextPl": "Zaufanie między przyjaciółmi",
+          "natural": "",
+          "forms": "trusts – trusted – trusted",
+          "collocations": "trust someone completely; I trust you",
+          "synonyms": "rely on",
+          "antonyms": "distrust",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I trust you more than anyone, so I'll tell you everything.",
+              "pl": "Ufam ci bardziej niż komukolwiek, więc powiem ci wszystko.",
+              "focusEn": "trust",
+              "focusPl": "Ufam"
+            },
+            {
+              "en": "She came over because she knew she could trust me.",
+              "pl": "Przyszła, bo wiedziała, że może mi zaufać.",
+              "focusEn": "trust",
+              "focusPl": "zaufać"
+            }
+          ],
+          "acceptedAnswers": [
+            "trust"
+          ],
+          "acceptedTranslations": [
+            "ufać",
+            "zaufać",
+            "wierzyć"
+          ]
+        },
+        {
+          "id": "friendship.secret",
+          "term": "secret",
+          "ipa": "/ˈsiːkrət/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "sekret",
+          "definition": "Something you do not tell other people.",
+          "register": "neutralny",
+          "contextPl": "Rzeczy powierzane tylko zaufanym osobom",
+          "natural": "",
+          "forms": "secrets",
+          "collocations": "keep a secret; tell someone a secret; share a secret",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Over ice cream, she finally told me her big secret.",
+              "pl": "Przy lodach w końcu zdradziła mi swój wielki sekret.",
+              "focusEn": "secret",
+              "focusPl": "sekret"
+            },
+            {
+              "en": "I'd never share a friend's secret with anyone else.",
+              "pl": "Nigdy nie zdradziłabym nikomu sekretu przyjaciółki.",
+              "focusEn": "secret",
+              "focusPl": "sekretu"
+            }
+          ],
+          "acceptedAnswers": [
+            "secret"
+          ],
+          "acceptedTranslations": [
+            "sekret",
+            "tajemnica"
+          ]
+        },
+        {
+          "id": "friendship.rely-on",
+          "term": "rely on",
+          "ipa": "/rɪˈlaɪ ɑːn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "polegać na",
+          "definition": "To trust someone to help you when you need it.",
+          "register": "neutralny",
+          "contextPl": "Pewność, że ktoś pomoże",
+          "natural": "",
+          "forms": "relies – relied – relied",
+          "collocations": "rely on someone; you can rely on me",
+          "synonyms": "count on; depend on",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I can always rely on you when everything falls apart.",
+              "pl": "Zawsze mogę na tobie polegać, kiedy wszystko się sypie.",
+              "focusEn": "rely on",
+              "focusPl": "polegać"
+            },
+            {
+              "en": "She's the friend I rely on the most, especially on bad days.",
+              "pl": "To przyjaciółka, na której polegam najbardziej, zwłaszcza w złe dni.",
+              "focusEn": "rely on",
+              "focusPl": "polegam"
+            }
+          ],
+          "acceptedAnswers": [
+            "rely on"
+          ],
+          "acceptedTranslations": [
+            "polegać na",
+            "liczyć na"
+          ]
+        },
+        {
+          "id": "friendship.true-friend",
+          "term": "true friend",
+          "ipa": "/ˌtruː ˈfrend/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "prawdziwy przyjaciel",
+          "definition": "A friend who stays loyal, especially in hard times.",
+          "register": "neutralny",
+          "contextPl": "Docenianie czyjejś lojalności",
+          "natural": "",
+          "forms": "true friends",
+          "collocations": "a true friend; a real friend",
+          "synonyms": "real friend",
+          "antonyms": "fair-weather friend",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You drove two hours just to cheer me up, so you're a true friend.",
+              "pl": "Przejechałaś dwie godziny, żeby mnie pocieszyć, więc jesteś prawdziwą przyjaciółką.",
+              "focusEn": "true friend",
+              "focusPl": "prawdziwą przyjaciółką"
+            },
+            {
+              "en": "On days like this you find out who your true friends are.",
+              "pl": "W takie dni okazuje się, kto jest prawdziwym przyjacielem.",
+              "focusEn": "true friends",
+              "focusPl": "prawdziwym przyjacielem"
+            }
+          ],
+          "acceptedAnswers": [
+            "true friend"
+          ],
+          "acceptedTranslations": [
+            "prawdziwy przyjaciel",
+            "prawdziwa przyjaciółka"
+          ]
+        },
+        {
+          "id": "friendship.lean-on",
+          "term": "lean on",
+          "ipa": "/ˈliːn ɑːn/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wesprzeć się na kimś",
+          "definition": "To depend on someone for emotional support.",
+          "register": "neutralny",
+          "contextPl": "Szukanie oparcia u bliskiej osoby",
+          "natural": "",
+          "forms": "leans – leaned – leaned",
+          "collocations": "lean on a friend; you can lean on me",
+          "synonyms": "rely on",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You know you can always lean on me, right?",
+              "pl": "Wiesz, że zawsze możesz się na mnie wesprzeć, prawda?",
+              "focusEn": "lean on",
+              "focusPl": "wesprzeć"
+            },
+            {
+              "en": "Tonight I really needed someone to lean on.",
+              "pl": "Dziś wieczorem naprawdę potrzebowałam kogoś, na kim mogłabym się wesprzeć.",
+              "focusEn": "lean on",
+              "focusPl": "na kim mogłabym się wesprzeć"
+            }
+          ],
+          "acceptedAnswers": [
+            "lean on"
+          ],
+          "acceptedTranslations": [
+            "wesprzeć się na kimś",
+            "mieć oparcie w kimś",
+            "liczyć na kogoś"
+          ]
+        },
+        {
+          "id": "friendship.stand-by",
+          "term": "stand by",
+          "ipa": "/ˌstænd ˈbaɪ/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nie opuścić",
+          "definition": "To continue to support someone in a difficult situation.",
+          "register": "neutralny",
+          "contextPl": "Wsparcie w trudnej sytuacji",
+          "natural": "",
+          "forms": "stands – stood – stood",
+          "collocations": "stand by a friend; stand by someone no matter what",
+          "synonyms": "stick by",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "No matter what happens with your job, I'll stand by you.",
+              "pl": "Cokolwiek się stanie z twoją pracą, nie opuszczę cię.",
+              "focusEn": "stand by",
+              "focusPl": "nie opuszczę"
+            },
+            {
+              "en": "She stood by me when nobody else believed my side of the story.",
+              "pl": "Stała przy mnie, kiedy nikt inny nie wierzył w moją wersję.",
+              "focusEn": "stood by",
+              "focusPl": "Stała przy mnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "stand by"
+          ],
+          "acceptedTranslations": [
+            "nie opuścić",
+            "stać przy kimś",
+            "wspierać"
+          ]
+        },
+        {
+          "id": "friendship.stick-up-for",
+          "term": "stick up for",
+          "ipa": "/ˌstɪk ˈʌp fɔːr/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stanąć w czyjejś obronie",
+          "definition": "To defend someone who is being criticized.",
+          "register": "potoczny",
+          "contextPl": "Bronienie przyjaciela przed innymi",
+          "natural": "",
+          "forms": "sticks – stuck – stuck",
+          "collocations": "stick up for a friend; stick up for yourself",
+          "synonyms": "defend",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks for sticking up for me at the meeting today.",
+              "pl": "Dzięki, że dziś na zebraniu stanęłaś w mojej obronie.",
+              "focusEn": "sticking up for",
+              "focusPl": "stanęłaś w mojej obronie"
+            },
+            {
+              "en": "A real friend will stick up for you even when you're not in the room.",
+              "pl": "Prawdziwy przyjaciel stanie w twojej obronie, nawet gdy cię nie ma w pokoju.",
+              "focusEn": "stick up for",
+              "focusPl": "stanie w twojej obronie"
+            }
+          ],
+          "acceptedAnswers": [
+            "stick up for"
+          ],
+          "acceptedTranslations": [
+            "stanąć w czyjejś obronie",
+            "bronić",
+            "wstawić się za kimś"
+          ]
+        },
+        {
+          "id": "friendship.trustworthy",
+          "term": "trustworthy",
+          "ipa": "/ˈtrʌstwɝːði/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "godny zaufania",
+          "definition": "Able to be trusted.",
+          "register": "neutralny",
+          "contextPl": "Ocena, komu można coś powierzyć",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "reliable",
+          "antonyms": "untrustworthy",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I told her because she's the most trustworthy person I know.",
+              "pl": "Powiedziałam jej, bo to najbardziej godna zaufania osoba, jaką znam.",
+              "focusEn": "trustworthy",
+              "focusPl": "godna zaufania"
+            },
+            {
+              "en": "Is he trustworthy? I don't want my news all over the office.",
+              "pl": "Czy on jest godny zaufania? Nie chcę, żeby moja nowina rozniosła się po całym biurze.",
+              "focusEn": "trustworthy",
+              "focusPl": "godny zaufania"
+            }
+          ],
+          "acceptedAnswers": [
+            "trustworthy"
+          ],
+          "acceptedTranslations": [
+            "godny zaufania",
+            "zaufany",
+            "wiarygodny"
+          ]
+        },
+        {
+          "id": "friendship.loyalty",
+          "term": "loyalty",
+          "ipa": "/ˈlɔɪəlti/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "lojalność",
+          "definition": "The quality of staying faithful to a friend.",
+          "register": "neutralny",
+          "contextPl": "Wierność w przyjaźni",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "faithfulness",
+          "antonyms": "disloyalty",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your loyalty means more to me than any gift.",
+              "pl": "Twoja lojalność znaczy dla mnie więcej niż jakikolwiek prezent.",
+              "focusEn": "loyalty",
+              "focusPl": "lojalność"
+            },
+            {
+              "en": "I respect your loyalty, but he isn't treating you well.",
+              "pl": "Szanuję twoją lojalność, ale on nie traktuje cię dobrze.",
+              "focusEn": "loyalty",
+              "focusPl": "lojalność"
+            }
+          ],
+          "acceptedAnswers": [
+            "loyalty"
+          ],
+          "acceptedTranslations": [
+            "lojalność",
+            "wierność"
+          ]
+        },
+        {
+          "id": "friendship.betray",
+          "term": "betray",
+          "ipa": "/bɪˈtreɪ/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zdradzić",
+          "definition": "To hurt someone who trusts you, for example by telling their secrets.",
+          "register": "neutralny",
+          "contextPl": "Złamanie zaufania przyjaciela",
+          "natural": "",
+          "forms": "betrays – betrayed – betrayed",
+          "collocations": "betray someone's trust; feel betrayed",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W przyjaźni chodzi o zdradę zaufania, nie romantyczną.",
+          "examples": [
+            {
+              "en": "I felt betrayed when she told everyone what I'd said.",
+              "pl": "Poczułam się zdradzona, kiedy powtórzyła wszystkim, co jej powiedziałam.",
+              "focusEn": "betrayed",
+              "focusPl": "zdradzona"
+            },
+            {
+              "en": "I'd never betray your trust, and you know that.",
+              "pl": "Nigdy nie zawiodłabym twojego zaufania i dobrze o tym wiesz.",
+              "focusEn": "betray",
+              "focusPl": "zawiodłabym"
+            }
+          ],
+          "acceptedAnswers": [
+            "betray"
+          ],
+          "acceptedTranslations": [
+            "zdradzić",
+            "zdradzać",
+            "zawieść zaufanie",
+            "zawieść"
+          ]
+        },
+        {
+          "id": "friendship.confide-in",
+          "term": "confide in",
+          "ipa": "/kənˈfaɪd ɪn/",
+          "pos": "czasownik frazowy",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zwierzyć się",
+          "definition": "To tell someone private things because you trust them.",
+          "register": "formalny",
+          "contextPl": "Powierzanie komuś osobistych spraw",
+          "natural": "",
+          "forms": "confides – confided – confided",
+          "collocations": "confide in a friend",
+          "synonyms": "open up to",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She finally confided in me about the problems at home.",
+              "pl": "W końcu zwierzyła mi się z problemów w domu.",
+              "focusEn": "confided in",
+              "focusPl": "zwierzyła mi się"
+            },
+            {
+              "en": "I don't confide in many people, but you're different.",
+              "pl": "Niewielu osobom się zwierzam, ale ty jesteś inna.",
+              "focusEn": "confide in",
+              "focusPl": "zwierzam"
+            }
+          ],
+          "acceptedAnswers": [
+            "confide in"
+          ],
+          "acceptedTranslations": [
+            "zwierzyć się",
+            "zwierzać się"
+          ]
+        },
+        {
+          "id": "friendship.my-lips-are-sealed",
+          "term": "my lips are sealed",
+          "ipa": "/maɪ ˌlɪps ɑːr ˈsiːld/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "będę milczeć jak grób",
+          "definition": "Said to promise that you will not tell a secret.",
+          "register": "potoczny",
+          "contextPl": "Obietnica dochowania tajemnicy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Tell me what happened; my lips are sealed, I promise.",
+              "pl": "Powiedz mi, co się stało – będę milczeć jak grób, obiecuję.",
+              "focusEn": "my lips are sealed",
+              "focusPl": "będę milczeć jak grób"
+            },
+            {
+              "en": "Don't worry about your mom finding out, my lips are sealed.",
+              "pl": "Nie martw się, że twoja mama się dowie – buzia na kłódkę.",
+              "focusEn": "my lips are sealed",
+              "focusPl": "buzia na kłódkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "my lips are sealed"
+          ],
+          "acceptedTranslations": [
+            "będę milczeć jak grób",
+            "buzia na kłódkę",
+            "nikomu nie powiem"
+          ]
+        },
+        {
+          "id": "friendship.a-friend-in-need-is-a-friend-indeed",
+          "term": "a friend in need is a friend indeed",
+          "ipa": "/ə ˌfrend ɪn ˈniːd ɪz ə ˌfrend ɪnˈdiːd/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "prawdziwych przyjaciół poznaje się w biedzie",
+          "definition": "A friend who helps you when you need it is a true friend.",
+          "register": "neutralny",
+          "contextPl": "Przysłowie o prawdziwej przyjaźni",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You brought soup when I was sick, so a friend in need is a friend indeed!",
+              "pl": "Przyniosłaś mi zupę, kiedy byłam chora – prawdziwych przyjaciół poznaje się w biedzie!",
+              "focusEn": "a friend in need is a friend indeed",
+              "focusPl": "prawdziwych przyjaciół poznaje się w biedzie"
+            },
+            {
+              "en": "As my grandma used to say, a friend in need is a friend indeed.",
+              "pl": "Jak mawiała moja babcia, prawdziwych przyjaciół poznaje się w biedzie.",
+              "focusEn": "a friend in need is a friend indeed",
+              "focusPl": "prawdziwych przyjaciół poznaje się w biedzie"
+            }
+          ],
+          "acceptedAnswers": [
+            "a friend in need is a friend indeed"
+          ],
+          "acceptedTranslations": [
+            "prawdziwych przyjaciół poznaje się w biedzie",
+            "przyjaciół poznaje się w biedzie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "friendship.distance",
+      "namePl": "Utrzymywanie kontaktu",
+      "scenePl": "Przyjaciółka wyjechała do pracy za granicę i rozmawiacie przez wideo co kilka tygodni",
+      "entries": [
+        {
+          "id": "friendship.stay-in-touch",
+          "term": "stay in touch",
+          "ipa": "/ˌsteɪ ɪn ˈtʌtʃ/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "pozostać w kontakcie",
+          "definition": "To keep communicating with someone.",
+          "register": "neutralny",
+          "contextPl": "Podtrzymywanie znajomości na odległość",
+          "natural": "",
+          "forms": "stays – stayed – stayed",
+          "collocations": "stay in touch with someone; let's stay in touch",
+          "synonyms": "keep in touch",
+          "antonyms": "lose touch",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Promise we'll stay in touch after you move to Canada.",
+              "pl": "Obiecaj, że pozostaniemy w kontakcie po twojej przeprowadzce do Kanady.",
+              "focusEn": "stay in touch",
+              "focusPl": "pozostaniemy w kontakcie"
+            },
+            {
+              "en": "We stay in touch with video calls every couple of weeks.",
+              "pl": "Utrzymujemy kontakt dzięki rozmowom wideo co kilka tygodni.",
+              "focusEn": "stay in touch",
+              "focusPl": "Utrzymujemy kontakt"
+            }
+          ],
+          "acceptedAnswers": [
+            "stay in touch"
+          ],
+          "acceptedTranslations": [
+            "pozostać w kontakcie",
+            "utrzymywać kontakt",
+            "być w kontakcie"
+          ]
+        },
+        {
+          "id": "friendship.lose-touch",
+          "term": "lose touch",
+          "ipa": "/ˌluːz ˈtʌtʃ/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stracić kontakt",
+          "definition": "To stop communicating with someone over time.",
+          "register": "neutralny",
+          "contextPl": "Wygasanie znajomości",
+          "natural": "",
+          "forms": "loses – lost – lost",
+          "collocations": "lose touch with someone; we lost touch",
+          "synonyms": "drift apart",
+          "antonyms": "stay in touch",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We lost touch after college, but found each other online last year.",
+              "pl": "Straciłyśmy kontakt po studiach, ale w zeszłym roku odnalazłyśmy się w sieci.",
+              "focusEn": "lost touch",
+              "focusPl": "Straciłyśmy kontakt"
+            },
+            {
+              "en": "I don't want us to lose touch just because of the time difference.",
+              "pl": "Nie chcę, żebyśmy stracili kontakt tylko przez różnicę czasu.",
+              "focusEn": "lose touch",
+              "focusPl": "stracili kontakt"
+            }
+          ],
+          "acceptedAnswers": [
+            "lose touch"
+          ],
+          "acceptedTranslations": [
+            "stracić kontakt",
+            "tracić kontakt"
+          ]
+        },
+        {
+          "id": "friendship.hear-from",
+          "term": "hear from",
+          "ipa": "/ˈhɪr frʌm/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "mieć od kogoś wiadomości",
+          "definition": "To get a message or call from someone.",
+          "register": "neutralny",
+          "contextPl": "Czekanie na wiadomość od kogoś",
+          "natural": "",
+          "forms": "hears – heard – heard",
+          "collocations": "haven't heard from you; hope to hear from you",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I haven't heard from Ola since she started her job in Berlin.",
+              "pl": "Nie miałam wiadomości od Oli, odkąd zaczęła pracę w Berlinie.",
+              "focusEn": "heard from",
+              "focusPl": "miałam wiadomości od"
+            },
+            {
+              "en": "It was so nice to hear from you after all these months!",
+              "pl": "Tak miło było dostać od ciebie wiadomość po tylu miesiącach!",
+              "focusEn": "hear from",
+              "focusPl": "dostać od ciebie wiadomość"
+            }
+          ],
+          "acceptedAnswers": [
+            "hear from"
+          ],
+          "acceptedTranslations": [
+            "mieć od kogoś wiadomości",
+            "dostać wiadomość",
+            "odezwać się"
+          ]
+        },
+        {
+          "id": "friendship.its-been-ages",
+          "term": "it's been ages",
+          "ipa": "/ɪts bɪn ˈeɪdʒɪz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "kopę lat",
+          "definition": "Said when you have not seen or talked to someone for a long time.",
+          "register": "potoczny",
+          "contextPl": "Powitanie po długiej przerwie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's been ages! You look exactly the same on camera.",
+              "pl": "Kopę lat! Na kamerze wyglądasz dokładnie tak samo.",
+              "focusEn": "It's been ages",
+              "focusPl": "Kopę lat"
+            },
+            {
+              "en": "Hi, stranger, it's been ages since our last call!",
+              "pl": "Cześć, zgubo, od naszej ostatniej rozmowy minęły wieki!",
+              "focusEn": "it's been ages",
+              "focusPl": "minęły wieki"
+            }
+          ],
+          "acceptedAnswers": [
+            "it's been ages"
+          ],
+          "acceptedTranslations": [
+            "kopę lat",
+            "wieki się nie widzieliśmy",
+            "minęły wieki",
+            "dawno się nie widzieliśmy"
+          ]
+        },
+        {
+          "id": "friendship.make-time-for",
+          "term": "make time for",
+          "ipa": "/ˌmeɪk ˈtaɪm fɔːr/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "znaleźć czas dla",
+          "definition": "To plan your schedule so you can spend time with someone.",
+          "register": "neutralny",
+          "contextPl": "Dbanie o przyjaźń mimo zajęć",
+          "natural": "",
+          "forms": "makes – made – made",
+          "collocations": "make time for friends; make time for each other",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Even with two kids, she always makes time for our Sunday calls.",
+              "pl": "Nawet z dwójką dzieci zawsze znajduje czas na nasze niedzielne rozmowy.",
+              "focusEn": "makes time for",
+              "focusPl": "znajduje czas na"
+            },
+            {
+              "en": "We both need to make time for each other, even from far away.",
+              "pl": "Oboje musimy znaleźć czas dla siebie nawzajem, nawet z daleka.",
+              "focusEn": "make time for",
+              "focusPl": "znaleźć czas dla"
+            }
+          ],
+          "acceptedAnswers": [
+            "make time for"
+          ],
+          "acceptedTranslations": [
+            "znaleźć czas dla",
+            "znajdować czas dla",
+            "znaleźć czas na"
+          ]
+        },
+        {
+          "id": "friendship.move-away",
+          "term": "move away",
+          "ipa": "/ˌmuːv əˈweɪ/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wyprowadzić się daleko",
+          "definition": "To go to live in a place far from where you lived before.",
+          "register": "neutralny",
+          "contextPl": "Wyjazd przyjaciela do innego miasta lub kraju",
+          "natural": "",
+          "forms": "moves – moved – moved",
+          "collocations": "move away from home; move away for work",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "When she moved away for work, we promised to call every week.",
+              "pl": "Kiedy wyjechała do pracy, obiecałyśmy sobie, że będziemy dzwonić co tydzień.",
+              "focusEn": "moved away",
+              "focusPl": "wyjechała"
+            },
+            {
+              "en": "Even after he moved away, we talked every Sunday.",
+              "pl": "Nawet gdy wyprowadził się daleko, rozmawialiśmy w każdą niedzielę.",
+              "focusEn": "moved away",
+              "focusPl": "wyprowadził się daleko"
+            }
+          ],
+          "acceptedAnswers": [
+            "move away"
+          ],
+          "acceptedTranslations": [
+            "wyprowadzić się daleko",
+            "wyjechać",
+            "wyprowadzić się"
+          ]
+        },
+        {
+          "id": "friendship.drift-apart",
+          "term": "drift apart",
+          "ipa": "/ˌdrɪft əˈpɑːrt/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "oddalić się od siebie",
+          "definition": "To slowly become less close to someone.",
+          "register": "neutralny",
+          "contextPl": "Powolne wygasanie przyjaźni",
+          "natural": "",
+          "forms": "drifts – drifted – drifted",
+          "collocations": "slowly drift apart",
+          "synonyms": "grow apart",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After she moved abroad, we slowly drifted apart.",
+              "pl": "Po jej wyjeździe za granicę powoli oddaliłyśmy się od siebie.",
+              "focusEn": "drifted apart",
+              "focusPl": "oddaliłyśmy się od siebie"
+            },
+            {
+              "en": "Friends sometimes drift apart, and that's nobody's fault.",
+              "pl": "Przyjaciele czasem oddalają się od siebie i to niczyja wina.",
+              "focusEn": "drift apart",
+              "focusPl": "oddalają się od siebie"
+            }
+          ],
+          "acceptedAnswers": [
+            "drift apart"
+          ],
+          "acceptedTranslations": [
+            "oddalić się od siebie",
+            "oddalać się"
+          ]
+        },
+        {
+          "id": "friendship.reconnect",
+          "term": "reconnect",
+          "ipa": "/ˌriːkəˈnekt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odnowić kontakt",
+          "definition": "To start communicating with someone again after a long time.",
+          "register": "neutralny",
+          "contextPl": "Powrót do dawnej znajomości",
+          "natural": "",
+          "forms": "reconnects – reconnected – reconnected",
+          "collocations": "reconnect with an old friend",
+          "synonyms": "get back in touch",
+          "antonyms": "lose touch",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "When she visited Poland, we reconnected over a long dinner.",
+              "pl": "Kiedy przyjechała do Polski, odnowiłyśmy kontakt przy długiej kolacji.",
+              "focusEn": "reconnected",
+              "focusPl": "odnowiłyśmy kontakt"
+            },
+            {
+              "en": "It's never too late to reconnect with an old friend.",
+              "pl": "Nigdy nie jest za późno, żeby odnowić kontakt ze starym przyjacielem.",
+              "focusEn": "reconnect",
+              "focusPl": "odnowić kontakt"
+            }
+          ],
+          "acceptedAnswers": [
+            "reconnect"
+          ],
+          "acceptedTranslations": [
+            "odnowić kontakt",
+            "odnawiać kontakt",
+            "odświeżyć znajomość"
+          ]
+        },
+        {
+          "id": "friendship.long-distance-friendship",
+          "term": "long-distance friendship",
+          "ipa": "/ˌlɔːŋ ˌdɪstəns ˈfrendʃɪp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "przyjaźń na odległość",
+          "definition": "A friendship between people who live far apart.",
+          "register": "neutralny",
+          "contextPl": "Przyjaźń mimo dzielących kilometrów",
+          "natural": "",
+          "forms": "long-distance friendships",
+          "collocations": "keep up a long-distance friendship",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A long-distance friendship takes effort, but ours is worth it.",
+              "pl": "Przyjaźń na odległość wymaga wysiłku, ale nasza jest tego warta.",
+              "focusEn": "long-distance friendship",
+              "focusPl": "Przyjaźń na odległość"
+            },
+            {
+              "en": "Time zones are the hardest part of our long-distance friendship.",
+              "pl": "Strefy czasowe to najtrudniejsza część naszej przyjaźni na odległość.",
+              "focusEn": "long-distance friendship",
+              "focusPl": "przyjaźni na odległość"
+            }
+          ],
+          "acceptedAnswers": [
+            "long-distance friendship"
+          ],
+          "acceptedTranslations": [
+            "przyjaźń na odległość"
+          ]
+        },
+        {
+          "id": "friendship.pick-up-where-you-left-off",
+          "term": "pick up where you left off",
+          "ipa": "/ˌpɪk ʌp wer jə ˌleft ˈɔːf/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zacząć tam, gdzie się skończyło",
+          "definition": "To continue a friendship easily after a long break.",
+          "register": "potoczny",
+          "contextPl": "Łatwy powrót do relacji po przerwie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We hadn't spoken in a year, but we picked up where we left off.",
+              "pl": "Nie rozmawiałyśmy od roku, ale zaczęłyśmy tam, gdzie skończyłyśmy.",
+              "focusEn": "picked up where we left off",
+              "focusPl": "zaczęłyśmy tam, gdzie skończyłyśmy"
+            },
+            {
+              "en": "With real friends, you just pick up where you left off.",
+              "pl": "Z prawdziwymi przyjaciółmi po prostu zaczynasz tam, gdzie skończyłeś.",
+              "focusEn": "pick up where you left off",
+              "focusPl": "zaczynasz tam, gdzie skończyłeś"
+            }
+          ],
+          "acceptedAnswers": [
+            "pick up where you left off"
+          ],
+          "acceptedTranslations": [
+            "zacząć tam, gdzie się skończyło",
+            "podjąć tam, gdzie się przerwało"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "friendship.idioms",
+      "namePl": "Idiomy o przyjaźni",
+      "scenePl": "Przeglądanie z przyjaciółmi starego albumu ze zdjęciami z liceum i studiów",
+      "entries": [
+        {
+          "id": "friendship.go-way-back",
+          "term": "go way back",
+          "ipa": "/ˌɡoʊ weɪ ˈbæk/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "znać się od wieków",
+          "definition": "To have known each other for a very long time.",
+          "register": "potoczny",
+          "contextPl": "Mówienie o długiej znajomości",
+          "natural": "",
+          "forms": "go – went – gone",
+          "collocations": "we go way back",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Look at this photo: Jess and I go way back.",
+              "pl": "Zobacz to zdjęcie: Jess i ja znamy się od wieków.",
+              "focusEn": "go way back",
+              "focusPl": "znamy się od wieków"
+            },
+            {
+              "en": "We go way back, all the way to summer camp when we were nine.",
+              "pl": "Znamy się od wieków, jeszcze z obozu letniego, kiedy mieliśmy dziewięć lat.",
+              "focusEn": "go way back",
+              "focusPl": "Znamy się od wieków"
+            }
+          ],
+          "acceptedAnswers": [
+            "go way back"
+          ],
+          "acceptedTranslations": [
+            "znać się od wieków",
+            "znać się od dawna",
+            "znać się jak łyse konie"
+          ]
+        },
+        {
+          "id": "friendship.through-thick-and-thin",
+          "term": "through thick and thin",
+          "ipa": "/ˌθruː ˌθɪk ən ˈθɪn/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "na dobre i na złe",
+          "definition": "In good times and in bad times.",
+          "register": "neutralny",
+          "contextPl": "Wierność mimo trudności",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This album shows we've been friends through thick and thin.",
+              "pl": "Ten album pokazuje, że przyjaźnimy się na dobre i na złe.",
+              "focusEn": "through thick and thin",
+              "focusPl": "na dobre i na złe"
+            },
+            {
+              "en": "She was there for me through thick and thin, even in college.",
+              "pl": "Była przy mnie na dobre i na złe, nawet na studiach.",
+              "focusEn": "through thick and thin",
+              "focusPl": "na dobre i na złe"
+            }
+          ],
+          "acceptedAnswers": [
+            "through thick and thin"
+          ],
+          "acceptedTranslations": [
+            "na dobre i na złe",
+            "w dobrych i złych chwilach"
+          ]
+        },
+        {
+          "id": "friendship.partner-in-crime",
+          "term": "partner in crime",
+          "ipa": "/ˌpɑːrtnər ɪn ˈkraɪm/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wspólnik w zbrodni",
+          "definition": "A close friend you do fun or slightly naughty things with.",
+          "register": "potoczny",
+          "contextPl": "Żartobliwie o przyjacielu od wspólnych wybryków",
+          "natural": "",
+          "forms": "partners in crime",
+          "collocations": "",
+          "synonyms": "sidekick",
+          "antonyms": "",
+          "notePl": "Użycie żartobliwe – nie chodzi o prawdziwe przestępstwo.",
+          "examples": [
+            {
+              "en": "Here's my partner in crime at our first concert!",
+              "pl": "Tu jest mój wspólnik w zbrodni na naszym pierwszym koncercie!",
+              "focusEn": "partner in crime",
+              "focusPl": "wspólnik w zbrodni"
+            },
+            {
+              "en": "We were partners in crime all through high school.",
+              "pl": "Przez całe liceum byliśmy wspólnikami w zbrodni.",
+              "focusEn": "partners in crime",
+              "focusPl": "wspólnikami w zbrodni"
+            }
+          ],
+          "acceptedAnswers": [
+            "partner in crime"
+          ],
+          "acceptedTranslations": [
+            "wspólnik w zbrodni",
+            "kompan",
+            "towarzysz zabaw"
+          ]
+        },
+        {
+          "id": "friendship.joined-at-the-hip",
+          "term": "joined at the hip",
+          "ipa": "/ˌdʒɔɪnd ət ðə ˈhɪp/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "nierozłączni",
+          "definition": "Always together, as if two people cannot be separated.",
+          "register": "potoczny",
+          "contextPl": "Żartobliwie o osobach zawsze razem",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "In every photo from that summer, we're joined at the hip.",
+              "pl": "Na każdym zdjęciu z tamtego lata jesteśmy nierozłączne.",
+              "focusEn": "joined at the hip",
+              "focusPl": "nierozłączne"
+            },
+            {
+              "en": "Those two have been joined at the hip since the first day of college.",
+              "pl": "Ci dwaj są jak papużki nierozłączki od pierwszego dnia studiów.",
+              "focusEn": "joined at the hip",
+              "focusPl": "jak papużki nierozłączki"
+            }
+          ],
+          "acceptedAnswers": [
+            "joined at the hip"
+          ],
+          "acceptedTranslations": [
+            "nierozłączni",
+            "zawsze razem",
+            "jak papużki nierozłączki"
+          ]
+        },
+        {
+          "id": "friendship.thick-as-thieves",
+          "term": "thick as thieves",
+          "ipa": "/ˌθɪk əz ˈθiːvz/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "bardzo zżyci",
+          "definition": "Very close friends who share secrets.",
+          "register": "potoczny",
+          "contextPl": "O bardzo zażyłej przyjaźni",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Dosłownie „blisko jak złodzieje”.",
+          "examples": [
+            {
+              "en": "In this picture we were nine and already thick as thieves.",
+              "pl": "Na tym zdjęciu miałyśmy dziewięć lat i już byłyśmy bardzo zżyte.",
+              "focusEn": "thick as thieves",
+              "focusPl": "bardzo zżyte"
+            },
+            {
+              "en": "Those two are thick as thieves and always have some secret plan.",
+              "pl": "Ci dwaj są bardzo zżyci i zawsze mają jakiś tajny plan.",
+              "focusEn": "thick as thieves",
+              "focusPl": "bardzo zżyci"
+            }
+          ],
+          "acceptedAnswers": [
+            "thick as thieves"
+          ],
+          "acceptedTranslations": [
+            "bardzo zżyci",
+            "w zażyłej przyjaźni",
+            "bardzo blisko"
+          ]
+        },
+        {
+          "id": "friendship.inner-circle",
+          "term": "inner circle",
+          "ipa": "/ˌɪnər ˈsɝːkəl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "najbliższe grono",
+          "definition": "The small group of people someone trusts most.",
+          "register": "neutralny",
+          "contextPl": "Najbardziej zaufani przyjaciele",
+          "natural": "",
+          "forms": "inner circles",
+          "collocations": "let someone into your inner circle",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Everyone in this photo was part of my inner circle in college.",
+              "pl": "Wszyscy na tym zdjęciu należeli na studiach do mojego najbliższego grona.",
+              "focusEn": "inner circle",
+              "focusPl": "najbliższego grona"
+            },
+            {
+              "en": "It took years before she let me into her inner circle.",
+              "pl": "Minęły lata, zanim wpuściła mnie do swojego najbliższego grona.",
+              "focusEn": "inner circle",
+              "focusPl": "najbliższego grona"
+            }
+          ],
+          "acceptedAnswers": [
+            "inner circle"
+          ],
+          "acceptedTranslations": [
+            "najbliższe grono",
+            "wąskie grono"
+          ]
+        },
+        {
+          "id": "friendship.birds-of-a-feather-flock-together",
+          "term": "birds of a feather flock together",
+          "ipa": "/ˌbɝːdz əv ə ˈfeðər flɑːk təˈɡeðər/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "ciągnie swój do swego",
+          "definition": "People with similar interests tend to spend time together.",
+          "register": "neutralny",
+          "contextPl": "Przysłowie o podobnych ludziach",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "All my friends in this photo are book nerds; birds of a feather flock together.",
+              "pl": "Wszyscy moi przyjaciele na tym zdjęciu to mole książkowe – ciągnie swój do swego.",
+              "focusEn": "birds of a feather flock together",
+              "focusPl": "ciągnie swój do swego"
+            },
+            {
+              "en": "No wonder those two get along: birds of a feather flock together.",
+              "pl": "Nic dziwnego, że ci dwaj się dogadują – swój do swego ciągnie.",
+              "focusEn": "birds of a feather flock together",
+              "focusPl": "swój do swego ciągnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "birds of a feather flock together"
+          ],
+          "acceptedTranslations": [
+            "ciągnie swój do swego",
+            "swój do swego ciągnie"
+          ]
+        },
+        {
+          "id": "friendship.ride-or-die",
+          "term": "ride or die",
+          "ipa": "/ˌraɪd ɔːr ˈdaɪ/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wierny do końca",
+          "definition": "A friend who is loyal to you no matter what.",
+          "register": "slangowy",
+          "contextPl": "Bardzo potocznie o najwierniejszym przyjacielu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Here's Maya, my ride or die since freshman year.",
+              "pl": "To Maya, moja przyjaciółka na zawsze od pierwszego roku.",
+              "focusEn": "ride or die",
+              "focusPl": "przyjaciółka na zawsze"
+            },
+            {
+              "en": "She's my ride or die; she flew across the country when I was sick.",
+              "pl": "Jest wierna do końca – przeleciała pół kraju, kiedy byłam chora.",
+              "focusEn": "ride or die",
+              "focusPl": "wierna do końca"
+            }
+          ],
+          "acceptedAnswers": [
+            "ride or die"
+          ],
+          "acceptedTranslations": [
+            "wierny do końca",
+            "przyjaciel na zawsze",
+            "lojalny do grobowej deski"
+          ]
+        }
+      ]
+    }
+  ]
+}

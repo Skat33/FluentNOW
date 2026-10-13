@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-12T14:22:06Z",
+  "generatedAt": "2026-10-13T11:29:38Z",
   "groups": [
     {
       "id": "basics",
@@ -1713,6 +1713,245 @@
       ]
     },
     {
+      "id": "repairs-diy",
+      "namePl": "Naprawy i majsterkowanie",
+      "nameEn": "Repairs and DIY",
+      "group": "home",
+      "symbol": "hammer",
+      "summaryPl": "Narzędzia, domowe awarie, samodzielne naprawy, fachowcy, remont i potoczne zwroty o majsterkowaniu.",
+      "aliases": [
+        "naprawy",
+        "majsterkowanie",
+        "narzędzia",
+        "remont",
+        "fachowiec",
+        "hydraulik",
+        "elektryk",
+        "DIY",
+        "repairs",
+        "tools"
+      ],
+      "entryCount": 84,
+      "levels": {
+        "A1": 1,
+        "A2": 11,
+        "B1": 24,
+        "B2": 35,
+        "C1": 13,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "repairs-diy.tools",
+          "namePl": "Narzędzia",
+          "entryCount": 18
+        },
+        {
+          "id": "repairs-diy.breakdowns",
+          "namePl": "Awarie w domu",
+          "entryCount": 14
+        },
+        {
+          "id": "repairs-diy.diy",
+          "namePl": "Majsterkowanie",
+          "entryCount": 16
+        },
+        {
+          "id": "repairs-diy.professionals",
+          "namePl": "Fachowcy",
+          "entryCount": 13
+        },
+        {
+          "id": "repairs-diy.renovation",
+          "namePl": "Remont",
+          "entryCount": 15
+        },
+        {
+          "id": "repairs-diy.idioms",
+          "namePl": "Potocznie o majsterkowaniu",
+          "entryCount": 8
+        }
+      ]
+    },
+    {
+      "id": "utilities-bills",
+      "namePl": "Rachunki i media",
+      "nameEn": "Utilities and Bills",
+      "group": "home",
+      "symbol": "bolt",
+      "summaryPl": "Prąd, woda, gaz i internet: rachunki, liczniki, umowy z dostawcami, awarie i oszczędzanie energii.",
+      "aliases": [
+        "rachunki",
+        "media",
+        "prąd",
+        "woda",
+        "gaz",
+        "internet",
+        "opłaty",
+        "licznik",
+        "utilities",
+        "bills",
+        "electricity"
+      ],
+      "entryCount": 72,
+      "levels": {
+        "A1": 1,
+        "A2": 17,
+        "B1": 15,
+        "B2": 24,
+        "C1": 15,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "utilities-bills.services",
+          "namePl": "Media w domu",
+          "entryCount": 10
+        },
+        {
+          "id": "utilities-bills.bills",
+          "namePl": "Rachunki i płatności",
+          "entryCount": 13
+        },
+        {
+          "id": "utilities-bills.usage",
+          "namePl": "Zużycie i liczniki",
+          "entryCount": 14
+        },
+        {
+          "id": "utilities-bills.contracts",
+          "namePl": "Dostawcy i umowy",
+          "entryCount": 12
+        },
+        {
+          "id": "utilities-bills.problems",
+          "namePl": "Awarie i przerwy",
+          "entryCount": 12
+        },
+        {
+          "id": "utilities-bills.saving",
+          "namePl": "Oszczędzanie energii",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "moving-house",
+      "namePl": "Przeprowadzka",
+      "nameEn": "Moving House",
+      "group": "home",
+      "symbol": "shippingbox",
+      "summaryPl": "Planowanie przeprowadzki, pakowanie, transport i noszenie mebli, nowe miejsce i emocje związane z przenosinami.",
+      "aliases": [
+        "przeprowadzka",
+        "przeprowadzać się",
+        "pakowanie",
+        "kartony",
+        "firma przeprowadzkowa",
+        "nowe mieszkanie",
+        "moving",
+        "move",
+        "relocation"
+      ],
+      "entryCount": 64,
+      "levels": {
+        "A1": 3,
+        "A2": 9,
+        "B1": 22,
+        "B2": 19,
+        "C1": 11,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "moving-house.planning",
+          "namePl": "Planowanie przeprowadzki",
+          "entryCount": 12
+        },
+        {
+          "id": "moving-house.packing",
+          "namePl": "Pakowanie",
+          "entryCount": 12
+        },
+        {
+          "id": "moving-house.transport",
+          "namePl": "Transport i noszenie",
+          "entryCount": 14
+        },
+        {
+          "id": "moving-house.new-place",
+          "namePl": "Nowe miejsce",
+          "entryCount": 12
+        },
+        {
+          "id": "moving-house.emotions",
+          "namePl": "Stres i emocje",
+          "entryCount": 14
+        }
+      ]
+    },
+    {
+      "id": "garden-plants",
+      "namePl": "Ogród i rośliny",
+      "nameEn": "Garden and Plants",
+      "group": "home",
+      "symbol": "camera.macro",
+      "summaryPl": "Rośliny i kwiaty, prace ogrodowe, narzędzia, ogród za domem, wzrost i problemy roślin oraz ogrodnicze idiomy.",
+      "aliases": [
+        "ogród",
+        "rośliny",
+        "kwiaty",
+        "ogrodnictwo",
+        "sadzenie",
+        "podlewanie",
+        "trawnik",
+        "garden",
+        "plants",
+        "gardening"
+      ],
+      "entryCount": 81,
+      "levels": {
+        "A1": 5,
+        "A2": 10,
+        "B1": 24,
+        "B2": 23,
+        "C1": 19,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "garden-plants.plants",
+          "namePl": "Rośliny i kwiaty",
+          "entryCount": 16
+        },
+        {
+          "id": "garden-plants.work",
+          "namePl": "Prace ogrodowe",
+          "entryCount": 13
+        },
+        {
+          "id": "garden-plants.tools",
+          "namePl": "Narzędzia ogrodowe",
+          "entryCount": 14
+        },
+        {
+          "id": "garden-plants.garden",
+          "namePl": "Ogród",
+          "entryCount": 12
+        },
+        {
+          "id": "garden-plants.growth",
+          "namePl": "Wzrost i problemy roślin",
+          "entryCount": 16
+        },
+        {
+          "id": "garden-plants.idioms",
+          "namePl": "Idiomy ogrodowe",
+          "entryCount": 10
+        }
+      ]
+    },
+    {
       "id": "doctor-visit",
       "namePl": "Wizyta u lekarza",
       "nameEn": "Doctor Visit",
@@ -2715,6 +2954,348 @@
       ]
     },
     {
+      "id": "project-management",
+      "namePl": "Zarządzanie projektami",
+      "nameEn": "Project Management",
+      "group": "work",
+      "symbol": "checklist",
+      "summaryPl": "Planowanie, metody pracy, harmonogram, zasoby i budżet, ryzyka oraz zamknięcie projektu.",
+      "aliases": [
+        "zarządzanie projektami",
+        "projekt",
+        "kierownik projektu",
+        "harmonogram",
+        "kamień milowy",
+        "project management",
+        "project",
+        "deadline",
+        "agile"
+      ],
+      "entryCount": 74,
+      "levels": {
+        "A1": 0,
+        "A2": 2,
+        "B1": 20,
+        "B2": 32,
+        "C1": 20,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "project-management.planning",
+          "namePl": "Planowanie projektu",
+          "entryCount": 14
+        },
+        {
+          "id": "project-management.methods",
+          "namePl": "Metody i narzędzia",
+          "entryCount": 11
+        },
+        {
+          "id": "project-management.progress",
+          "namePl": "Harmonogram i postępy",
+          "entryCount": 12
+        },
+        {
+          "id": "project-management.resources-budget",
+          "namePl": "Zasoby i budżet",
+          "entryCount": 13
+        },
+        {
+          "id": "project-management.risks",
+          "namePl": "Ryzyka i problemy",
+          "entryCount": 12
+        },
+        {
+          "id": "project-management.closing",
+          "namePl": "Raportowanie i zamknięcie",
+          "entryCount": 12
+        }
+      ]
+    },
+    {
+      "id": "negotiations",
+      "namePl": "Negocjacje",
+      "nameEn": "Negotiations",
+      "group": "work",
+      "symbol": "person.2.wave.2",
+      "summaryPl": "Przygotowanie, oferty i kontroferty, ustępstwa, taktyka przy stole i domknięcie umowy.",
+      "aliases": [
+        "negocjacje",
+        "negocjować",
+        "oferta",
+        "ustępstwa",
+        "targowanie się",
+        "umowa",
+        "negotiations",
+        "negotiate",
+        "deal",
+        "bargain"
+      ],
+      "entryCount": 61,
+      "levels": {
+        "A1": 1,
+        "A2": 3,
+        "B1": 14,
+        "B2": 28,
+        "C1": 15,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "negotiations.preparation",
+          "namePl": "Przygotowanie",
+          "entryCount": 12
+        },
+        {
+          "id": "negotiations.offers",
+          "namePl": "Oferty i propozycje",
+          "entryCount": 13
+        },
+        {
+          "id": "negotiations.concessions",
+          "namePl": "Ustępstwa i kompromis",
+          "entryCount": 13
+        },
+        {
+          "id": "negotiations.tactics",
+          "namePl": "Taktyka i komunikacja",
+          "entryCount": 12
+        },
+        {
+          "id": "negotiations.agreement",
+          "namePl": "Porozumienie i umowa",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "presentations",
+      "namePl": "Prezentacje i wystąpienia",
+      "nameEn": "Presentations and Public Speaking",
+      "group": "work",
+      "symbol": "person.wave.2",
+      "summaryPl": "Przygotowanie slajdów, sprzęt w sali, zwroty porządkujące wystąpienie, sposób mówienia, przekonywanie i pytania z sali.",
+      "aliases": [
+        "prezentacja",
+        "wystąpienie",
+        "przemówienie",
+        "slajdy",
+        "wystąpienia publiczne",
+        "presentation",
+        "public speaking",
+        "slides",
+        "speech",
+        "talk"
+      ],
+      "entryCount": 61,
+      "levels": {
+        "A1": 0,
+        "A2": 9,
+        "B1": 27,
+        "B2": 22,
+        "C1": 3,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "presentations.preparing",
+          "namePl": "Przygotowanie wystąpienia",
+          "entryCount": 14
+        },
+        {
+          "id": "presentations.equipment",
+          "namePl": "Sprzęt i technika",
+          "entryCount": 11
+        },
+        {
+          "id": "presentations.structure",
+          "namePl": "Struktura i zwroty prowadzące",
+          "entryCount": 12
+        },
+        {
+          "id": "presentations.delivery",
+          "namePl": "Sposób mówienia i przekonywanie",
+          "entryCount": 13
+        },
+        {
+          "id": "presentations.questions",
+          "namePl": "Pytania z sali",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "marketing-sales",
+      "namePl": "Marketing i sprzedaż",
+      "nameEn": "Marketing and Sales",
+      "group": "work",
+      "symbol": "megaphone",
+      "summaryPl": "Marka i rynek, kampanie reklamowe, marketing internetowy, praca handlowca i wyniki sprzedaży.",
+      "aliases": [
+        "marketing",
+        "sprzedaż",
+        "reklama",
+        "marka",
+        "kampania",
+        "klienci",
+        "handlowiec",
+        "sales",
+        "advertising",
+        "brand",
+        "lejek sprzedażowy"
+      ],
+      "entryCount": 62,
+      "levels": {
+        "A1": 0,
+        "A2": 2,
+        "B1": 16,
+        "B2": 24,
+        "C1": 20,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "marketing-sales.brand-market",
+          "namePl": "Marka i rynek",
+          "entryCount": 12
+        },
+        {
+          "id": "marketing-sales.advertising",
+          "namePl": "Kampanie i reklama",
+          "entryCount": 13
+        },
+        {
+          "id": "marketing-sales.digital",
+          "namePl": "Marketing internetowy",
+          "entryCount": 13
+        },
+        {
+          "id": "marketing-sales.sales",
+          "namePl": "Praca handlowca",
+          "entryCount": 13
+        },
+        {
+          "id": "marketing-sales.results",
+          "namePl": "Wyniki sprzedaży",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "entrepreneurship",
+      "namePl": "Własna firma i startupy",
+      "nameEn": "Entrepreneurship and Startups",
+      "group": "work",
+      "symbol": "lightbulb",
+      "summaryPl": "Zakładanie firmy, biznesplan, finansowanie i inwestorzy, rozwój oraz trudne chwile przedsiębiorcy.",
+      "aliases": [
+        "własna firma",
+        "startup",
+        "przedsiębiorca",
+        "biznesplan",
+        "inwestor",
+        "działalność gospodarcza",
+        "entrepreneur",
+        "startup",
+        "business plan",
+        "investor"
+      ],
+      "entryCount": 61,
+      "levels": {
+        "A1": 0,
+        "A2": 0,
+        "B1": 11,
+        "B2": 24,
+        "C1": 24,
+        "C2": 2
+      },
+      "categories": [
+        {
+          "id": "entrepreneurship.starting",
+          "namePl": "Zakładanie firmy",
+          "entryCount": 13
+        },
+        {
+          "id": "entrepreneurship.business-plan",
+          "namePl": "Biznesplan",
+          "entryCount": 11
+        },
+        {
+          "id": "entrepreneurship.funding",
+          "namePl": "Finansowanie i inwestorzy",
+          "entryCount": 13
+        },
+        {
+          "id": "entrepreneurship.growth",
+          "namePl": "Rozwój firmy",
+          "entryCount": 10
+        },
+        {
+          "id": "entrepreneurship.hard-times",
+          "namePl": "Trudne chwile i porażki",
+          "entryCount": 14
+        }
+      ]
+    },
+    {
+      "id": "finance-accounting",
+      "namePl": "Finanse i księgowość",
+      "nameEn": "Finance and Accounting",
+      "group": "work",
+      "symbol": "chart.line.uptrend.xyaxis",
+      "summaryPl": "Faktury i płatności, prowadzenie ksiąg, budżet i koszty firmy oraz sprawozdania i wyniki finansowe.",
+      "aliases": [
+        "finanse",
+        "księgowość",
+        "faktura",
+        "księgowa",
+        "budżet firmy",
+        "sprawozdanie finansowe",
+        "zysk",
+        "accounting",
+        "finance",
+        "invoice",
+        "bookkeeping"
+      ],
+      "entryCount": 63,
+      "levels": {
+        "A1": 0,
+        "A2": 0,
+        "B1": 10,
+        "B2": 18,
+        "C1": 34,
+        "C2": 1
+      },
+      "categories": [
+        {
+          "id": "finance-accounting.invoices",
+          "namePl": "Faktury i płatności",
+          "entryCount": 13
+        },
+        {
+          "id": "finance-accounting.expenses",
+          "namePl": "Wydatki służbowe",
+          "entryCount": 5
+        },
+        {
+          "id": "finance-accounting.bookkeeping",
+          "namePl": "Prowadzenie ksiąg",
+          "entryCount": 13
+        },
+        {
+          "id": "finance-accounting.budget-costs",
+          "namePl": "Budżet firmy i koszty",
+          "entryCount": 15
+        },
+        {
+          "id": "finance-accounting.reports",
+          "namePl": "Wyniki i sprawozdania",
+          "entryCount": 17
+        }
+      ]
+    },
+    {
       "id": "school",
       "namePl": "Szkoła",
       "nameEn": "School",
@@ -3062,6 +3643,120 @@
       ]
     },
     {
+      "id": "programming-it",
+      "namePl": "Programowanie i IT",
+      "nameEn": "Programming and IT",
+      "group": "technology",
+      "symbol": "chevron.left.forwardslash.chevron.right",
+      "summaryPl": "Pisanie kodu, błędy i debugowanie, praca zespołu programistów, wdrożenia i serwery oraz kariera w branży IT.",
+      "aliases": [
+        "programowanie",
+        "kod",
+        "programista",
+        "informatyka",
+        "IT",
+        "błąd",
+        "wdrożenie",
+        "serwer",
+        "programming",
+        "coding",
+        "developer",
+        "software engineering"
+      ],
+      "entryCount": 60,
+      "levels": {
+        "A1": 0,
+        "A2": 1,
+        "B1": 12,
+        "B2": 22,
+        "C1": 25,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "programming-it.code",
+          "namePl": "Pisanie kodu",
+          "entryCount": 14
+        },
+        {
+          "id": "programming-it.bugs",
+          "namePl": "Błędy i debugowanie",
+          "entryCount": 11
+        },
+        {
+          "id": "programming-it.teamwork",
+          "namePl": "Praca zespołu programistów",
+          "entryCount": 12
+        },
+        {
+          "id": "programming-it.deployment",
+          "namePl": "Wdrożenie i serwery",
+          "entryCount": 11
+        },
+        {
+          "id": "programming-it.it-careers",
+          "namePl": "Kariera w IT",
+          "entryCount": 12
+        }
+      ]
+    },
+    {
+      "id": "artificial-intelligence",
+      "namePl": "Sztuczna inteligencja",
+      "nameEn": "Artificial Intelligence",
+      "group": "technology",
+      "symbol": "cpu",
+      "summaryPl": "Podstawowe pojęcia SI, korzystanie z czatbotów i narzędzi AI, dane i uczenie modeli, automatyzacja pracy oraz etyka i zagrożenia.",
+      "aliases": [
+        "sztuczna inteligencja",
+        "SI",
+        "AI",
+        "czatbot",
+        "uczenie maszynowe",
+        "model językowy",
+        "automatyzacja",
+        "artificial intelligence",
+        "machine learning",
+        "chatbot"
+      ],
+      "entryCount": 61,
+      "levels": {
+        "A1": 0,
+        "A2": 2,
+        "B1": 12,
+        "B2": 24,
+        "C1": 23,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "artificial-intelligence.basics",
+          "namePl": "Podstawy sztucznej inteligencji",
+          "entryCount": 12
+        },
+        {
+          "id": "artificial-intelligence.using-ai",
+          "namePl": "Korzystanie z narzędzi SI",
+          "entryCount": 13
+        },
+        {
+          "id": "artificial-intelligence.how-it-works",
+          "namePl": "Dane i uczenie modeli",
+          "entryCount": 11
+        },
+        {
+          "id": "artificial-intelligence.automation",
+          "namePl": "Automatyzacja i praca",
+          "entryCount": 11
+        },
+        {
+          "id": "artificial-intelligence.ethics",
+          "namePl": "Etyka i zagrożenia",
+          "entryCount": 14
+        }
+      ]
+    },
+    {
       "id": "banking",
       "namePl": "Bank",
       "nameEn": "Banking",
@@ -3284,6 +3979,120 @@
       ]
     },
     {
+      "id": "insurance",
+      "namePl": "Ubezpieczenia",
+      "nameEn": "Insurance",
+      "group": "money",
+      "symbol": "umbrella",
+      "summaryPl": "Polisa i składka, rodzaje ubezpieczeń, zakres i wyłączenia, zgłaszanie szkody i wypłata odszkodowania.",
+      "aliases": [
+        "ubezpieczenie",
+        "ubezpieczenia",
+        "polisa",
+        "składka",
+        "szkoda",
+        "odszkodowanie",
+        "ubezpieczyciel",
+        "insurance",
+        "policy",
+        "claim",
+        "premium"
+      ],
+      "entryCount": 60,
+      "levels": {
+        "A1": 0,
+        "A2": 3,
+        "B1": 15,
+        "B2": 22,
+        "C1": 18,
+        "C2": 2
+      },
+      "categories": [
+        {
+          "id": "insurance.policy",
+          "namePl": "Polisa i składka",
+          "entryCount": 13
+        },
+        {
+          "id": "insurance.types",
+          "namePl": "Rodzaje ubezpieczeń",
+          "entryCount": 11
+        },
+        {
+          "id": "insurance.claims",
+          "namePl": "Zgłaszanie szkody",
+          "entryCount": 12
+        },
+        {
+          "id": "insurance.coverage-details",
+          "namePl": "Zakres i wyłączenia",
+          "entryCount": 11
+        },
+        {
+          "id": "insurance.accident",
+          "namePl": "Stłuczka i ryzyko",
+          "entryCount": 13
+        }
+      ]
+    },
+    {
+      "id": "taxes",
+      "namePl": "Podatki",
+      "nameEn": "Taxes",
+      "group": "money",
+      "symbol": "percent",
+      "summaryPl": "Podstawowe pojęcia podatkowe, zeznanie roczne, ulgi i zwrot podatku, pisma z urzędu skarbowego oraz podatki w działalności.",
+      "aliases": [
+        "podatki",
+        "podatek",
+        "zeznanie podatkowe",
+        "PIT",
+        "ulga",
+        "zwrot podatku",
+        "urząd skarbowy",
+        "taxes",
+        "tax return",
+        "IRS",
+        "tax refund"
+      ],
+      "entryCount": 61,
+      "levels": {
+        "A1": 0,
+        "A2": 3,
+        "B1": 10,
+        "B2": 17,
+        "C1": 30,
+        "C2": 1
+      },
+      "categories": [
+        {
+          "id": "taxes.basics",
+          "namePl": "Podstawy podatków",
+          "entryCount": 15
+        },
+        {
+          "id": "taxes.filing",
+          "namePl": "Zeznanie podatkowe",
+          "entryCount": 13
+        },
+        {
+          "id": "taxes.refunds-deductions",
+          "namePl": "Ulgi i zwrot podatku",
+          "entryCount": 11
+        },
+        {
+          "id": "taxes.irs-problems",
+          "namePl": "Problemy z urzędem skarbowym",
+          "entryCount": 13
+        },
+        {
+          "id": "taxes.business-taxes",
+          "namePl": "Podatki w działalności",
+          "entryCount": 9
+        }
+      ]
+    },
+    {
       "id": "post-office",
       "namePl": "Poczta i przesyłki",
       "nameEn": "Post Office and Mail",
@@ -3391,6 +4200,122 @@
           "id": "police-crime.prevention",
           "namePl": "Bezpieczeństwo i zapobieganie",
           "entryCount": 9
+        }
+      ]
+    },
+    {
+      "id": "law-contracts",
+      "namePl": "Prawo i umowy",
+      "nameEn": "Law and Contracts",
+      "group": "services",
+      "symbol": "building.columns",
+      "summaryPl": "Umowy i klauzule, porada prawna u adwokata, spór sądowy i rozprawa oraz przepisy, których trzeba przestrzegać.",
+      "aliases": [
+        "prawo",
+        "umowa",
+        "kontrakt",
+        "prawnik",
+        "adwokat",
+        "sąd",
+        "klauzula",
+        "pozew",
+        "law",
+        "contract",
+        "attorney",
+        "lawsuit"
+      ],
+      "entryCount": 63,
+      "levels": {
+        "A1": 0,
+        "A2": 1,
+        "B1": 11,
+        "B2": 21,
+        "C1": 28,
+        "C2": 2
+      },
+      "categories": [
+        {
+          "id": "law-contracts.contracts",
+          "namePl": "Umowy i klauzule",
+          "entryCount": 14
+        },
+        {
+          "id": "law-contracts.legal-advice",
+          "namePl": "Porada prawna",
+          "entryCount": 13
+        },
+        {
+          "id": "law-contracts.dispute",
+          "namePl": "Spór i ugoda",
+          "entryCount": 9
+        },
+        {
+          "id": "law-contracts.court",
+          "namePl": "Sąd i rozprawa",
+          "entryCount": 15
+        },
+        {
+          "id": "law-contracts.regulations",
+          "namePl": "Przepisy i zgodność z prawem",
+          "entryCount": 12
+        }
+      ]
+    },
+    {
+      "id": "government-offices",
+      "namePl": "Urzędy i formalności",
+      "nameEn": "Government Offices and Paperwork",
+      "group": "services",
+      "symbol": "doc.text",
+      "summaryPl": "Wizyta w urzędzie, kolejki i numerki, dokumenty i wnioski, procedury, biurokracja oraz usługi publiczne i zezwolenia.",
+      "aliases": [
+        "urząd",
+        "urzędy",
+        "formalności",
+        "wniosek",
+        "dokumenty",
+        "kolejka",
+        "biurokracja",
+        "zezwolenie",
+        "government office",
+        "paperwork",
+        "city hall",
+        "DMV"
+      ],
+      "entryCount": 62,
+      "levels": {
+        "A1": 0,
+        "A2": 7,
+        "B1": 25,
+        "B2": 21,
+        "C1": 9,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "government-offices.at-the-office",
+          "namePl": "W urzędzie",
+          "entryCount": 14
+        },
+        {
+          "id": "government-offices.documents",
+          "namePl": "Dokumenty i wnioski",
+          "entryCount": 15
+        },
+        {
+          "id": "government-offices.procedures",
+          "namePl": "Procedury i sprawy do załatwienia",
+          "entryCount": 13
+        },
+        {
+          "id": "government-offices.bureaucracy",
+          "namePl": "Biurokracja i problemy",
+          "entryCount": 10
+        },
+        {
+          "id": "government-offices.public-services",
+          "namePl": "Usługi publiczne i zezwolenia",
+          "entryCount": 10
         }
       ]
     },
@@ -3632,6 +4557,231 @@
       ]
     },
     {
+      "id": "friendship",
+      "namePl": "Przyjaźń",
+      "nameEn": "Friendship",
+      "group": "people",
+      "symbol": "person.2.wave.2",
+      "summaryPl": "Przyjaciele i znajomi, zawieranie przyjaźni, spotkania, wsparcie i utrzymywanie kontaktu.",
+      "aliases": [
+        "przyjaźń",
+        "przyjaciel",
+        "przyjaciółka",
+        "znajomi",
+        "kumpel",
+        "paczka",
+        "friendship",
+        "friends"
+      ],
+      "entryCount": 71,
+      "levels": {
+        "A1": 3,
+        "A2": 14,
+        "B1": 22,
+        "B2": 21,
+        "C1": 11,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "friendship.types",
+          "namePl": "Przyjaciele i znajomi",
+          "entryCount": 14
+        },
+        {
+          "id": "friendship.meeting",
+          "namePl": "Zawieranie przyjaźni",
+          "entryCount": 12
+        },
+        {
+          "id": "friendship.plans",
+          "namePl": "Spotkania i wspólny czas",
+          "entryCount": 14
+        },
+        {
+          "id": "friendship.support",
+          "namePl": "Wsparcie i zaufanie",
+          "entryCount": 13
+        },
+        {
+          "id": "friendship.distance",
+          "namePl": "Utrzymywanie kontaktu",
+          "entryCount": 10
+        },
+        {
+          "id": "friendship.idioms",
+          "namePl": "Idiomy o przyjaźni",
+          "entryCount": 8
+        }
+      ]
+    },
+    {
+      "id": "dating-relationships",
+      "namePl": "Randki i związki",
+      "nameEn": "Dating and Relationships",
+      "group": "people",
+      "symbol": "heart",
+      "summaryPl": "Randki i aplikacje randkowe, życie w związku, czułości, problemy i rozstanie.",
+      "aliases": [
+        "randki",
+        "randka",
+        "związek",
+        "chłopak",
+        "dziewczyna",
+        "miłość",
+        "rozstanie",
+        "dating",
+        "relationship",
+        "love"
+      ],
+      "entryCount": 69,
+      "levels": {
+        "A1": 4,
+        "A2": 11,
+        "B1": 25,
+        "B2": 23,
+        "C1": 6,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "dating-relationships.dating",
+          "namePl": "Randki",
+          "entryCount": 15
+        },
+        {
+          "id": "dating-relationships.relationship",
+          "namePl": "Związek",
+          "entryCount": 16
+        },
+        {
+          "id": "dating-relationships.romance",
+          "namePl": "Uczucia i czułości",
+          "entryCount": 15
+        },
+        {
+          "id": "dating-relationships.problems",
+          "namePl": "Problemy w związku",
+          "entryCount": 12
+        },
+        {
+          "id": "dating-relationships.breakup",
+          "namePl": "Rozstanie",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "wedding",
+      "namePl": "Ślub i wesele",
+      "nameEn": "Wedding",
+      "group": "people",
+      "symbol": "heart.circle",
+      "summaryPl": "Zaręczyny, przygotowania, ceremonia ślubna, przyjęcie weselne i życie po ślubie.",
+      "aliases": [
+        "ślub",
+        "wesele",
+        "zaręczyny",
+        "panna młoda",
+        "pan młody",
+        "oświadczyny",
+        "wedding",
+        "bride",
+        "groom"
+      ],
+      "entryCount": 70,
+      "levels": {
+        "A1": 1,
+        "A2": 10,
+        "B1": 24,
+        "B2": 28,
+        "C1": 7,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "wedding.engagement",
+          "namePl": "Zaręczyny",
+          "entryCount": 10
+        },
+        {
+          "id": "wedding.planning",
+          "namePl": "Przygotowania do ślubu",
+          "entryCount": 17
+        },
+        {
+          "id": "wedding.ceremony",
+          "namePl": "Ceremonia",
+          "entryCount": 17
+        },
+        {
+          "id": "wedding.reception",
+          "namePl": "Przyjęcie weselne",
+          "entryCount": 14
+        },
+        {
+          "id": "wedding.married-life",
+          "namePl": "Po ślubie",
+          "entryCount": 12
+        }
+      ]
+    },
+    {
+      "id": "parenting",
+      "namePl": "Rodzicielstwo i dzieci",
+      "nameEn": "Parenting",
+      "group": "people",
+      "symbol": "figure.and.child.holdinghands",
+      "summaryPl": "Opieka nad niemowlęciem, codzienność z dziećmi, zasady i wychowanie, etapy rozwoju i bycie rodzicem.",
+      "aliases": [
+        "rodzicielstwo",
+        "wychowanie",
+        "dzieci",
+        "niemowlę",
+        "rodzic",
+        "opieka nad dziećmi",
+        "parenting",
+        "kids",
+        "baby"
+      ],
+      "entryCount": 70,
+      "levels": {
+        "A1": 0,
+        "A2": 15,
+        "B1": 17,
+        "B2": 30,
+        "C1": 8,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "parenting.baby",
+          "namePl": "Niemowlę",
+          "entryCount": 16
+        },
+        {
+          "id": "parenting.childcare",
+          "namePl": "Codzienna opieka",
+          "entryCount": 13
+        },
+        {
+          "id": "parenting.discipline",
+          "namePl": "Zasady i wychowanie",
+          "entryCount": 15
+        },
+        {
+          "id": "parenting.development",
+          "namePl": "Rozwój i etapy",
+          "entryCount": 13
+        },
+        {
+          "id": "parenting.parenthood",
+          "namePl": "Bycie rodzicem",
+          "entryCount": 13
+        }
+      ]
+    },
+    {
       "id": "daily-routine",
       "namePl": "Codzienna rutyna",
       "nameEn": "Daily Routine",
@@ -3815,6 +4965,67 @@
       ]
     },
     {
+      "id": "beauty-hairdresser",
+      "namePl": "Fryzjer i uroda",
+      "nameEn": "Hairdresser and Beauty",
+      "group": "daily",
+      "symbol": "scissors",
+      "summaryPl": "Salon fryzjerski, strzyżenie i fryzury, farbowanie, kosmetyki, salon kosmetyczny i rozmowa z fryzjerem.",
+      "aliases": [
+        "fryzjer",
+        "salon fryzjerski",
+        "strzyżenie",
+        "uroda",
+        "kosmetyki",
+        "kosmetyczka",
+        "manicure",
+        "hairdresser",
+        "salon",
+        "beauty"
+      ],
+      "entryCount": 78,
+      "levels": {
+        "A1": 1,
+        "A2": 16,
+        "B1": 25,
+        "B2": 27,
+        "C1": 9,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "beauty-hairdresser.salon",
+          "namePl": "U fryzjera",
+          "entryCount": 10
+        },
+        {
+          "id": "beauty-hairdresser.cuts",
+          "namePl": "Strzyżenie i fryzury",
+          "entryCount": 14
+        },
+        {
+          "id": "beauty-hairdresser.color",
+          "namePl": "Farbowanie i zabiegi",
+          "entryCount": 15
+        },
+        {
+          "id": "beauty-hairdresser.products",
+          "namePl": "Kosmetyki i pielęgnacja",
+          "entryCount": 16
+        },
+        {
+          "id": "beauty-hairdresser.beauty-salon",
+          "namePl": "Salon kosmetyczny",
+          "entryCount": 13
+        },
+        {
+          "id": "beauty-hairdresser.talk",
+          "namePl": "Rozmowa z fryzjerem",
+          "entryCount": 10
+        }
+      ]
+    },
+    {
       "id": "sports",
       "namePl": "Sport",
       "nameEn": "Sports",
@@ -3872,6 +5083,614 @@
           "id": "sports.sports-idioms",
           "namePl": "Sportowe idiomy w pracy",
           "entryCount": 10
+        }
+      ]
+    },
+    {
+      "id": "movies-tv",
+      "namePl": "Filmy i seriale",
+      "nameEn": "Movies and TV",
+      "group": "leisure",
+      "symbol": "film",
+      "summaryPl": "Kino, seriale i streaming, gatunki filmowe, twórcy, fabuła oraz opinie i recenzje.",
+      "aliases": [
+        "filmy",
+        "seriale",
+        "kino",
+        "film",
+        "serial",
+        "telewizja",
+        "streaming",
+        "movies",
+        "TV shows",
+        "cinema"
+      ],
+      "entryCount": 99,
+      "levels": {
+        "A1": 11,
+        "A2": 23,
+        "B1": 33,
+        "B2": 29,
+        "C1": 3,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "movies-tv.theater",
+          "namePl": "W kinie",
+          "entryCount": 15
+        },
+        {
+          "id": "movies-tv.streaming",
+          "namePl": "Seriale i oglądanie w domu",
+          "entryCount": 19
+        },
+        {
+          "id": "movies-tv.genres",
+          "namePl": "Gatunki filmowe",
+          "entryCount": 15
+        },
+        {
+          "id": "movies-tv.production",
+          "namePl": "Twórcy i plan filmowy",
+          "entryCount": 16
+        },
+        {
+          "id": "movies-tv.plot",
+          "namePl": "Fabuła i postacie",
+          "entryCount": 14
+        },
+        {
+          "id": "movies-tv.opinions",
+          "namePl": "Opinie i recenzje",
+          "entryCount": 20
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "namePl": "Muzyka",
+      "nameEn": "Music",
+      "group": "leisure",
+      "symbol": "music.note",
+      "summaryPl": "Słuchanie muzyki, gatunki, instrumenty, piosenki i dźwięk, zespoły i nagrania oraz rozmowy o guście muzycznym.",
+      "aliases": [
+        "muzyka",
+        "piosenka",
+        "zespół",
+        "instrument",
+        "gatunek muzyczny",
+        "słuchanie muzyki",
+        "music",
+        "song",
+        "band"
+      ],
+      "entryCount": 93,
+      "levels": {
+        "A1": 13,
+        "A2": 21,
+        "B1": 31,
+        "B2": 22,
+        "C1": 6,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "music.listening",
+          "namePl": "Słuchanie muzyki",
+          "entryCount": 15
+        },
+        {
+          "id": "music.genres",
+          "namePl": "Gatunki muzyczne",
+          "entryCount": 15
+        },
+        {
+          "id": "music.instruments",
+          "namePl": "Instrumenty i granie",
+          "entryCount": 19
+        },
+        {
+          "id": "music.song",
+          "namePl": "Piosenka i śpiew",
+          "entryCount": 17
+        },
+        {
+          "id": "music.artists",
+          "namePl": "Zespoły i nagrania",
+          "entryCount": 16
+        },
+        {
+          "id": "music.opinions",
+          "namePl": "Opinie i wyrażenia muzyczne",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "books-reading",
+      "namePl": "Książki i czytanie",
+      "nameEn": "Books and Reading",
+      "group": "leisure",
+      "symbol": "book",
+      "summaryPl": "Czytanie na co dzień, gatunki literackie, fabuła i styl, biblioteka, księgarnia i wydawanie oraz klub książki.",
+      "aliases": [
+        "książki",
+        "książka",
+        "czytanie",
+        "literatura",
+        "biblioteka",
+        "księgarnia",
+        "powieść",
+        "books",
+        "reading",
+        "library"
+      ],
+      "entryCount": 84,
+      "levels": {
+        "A1": 7,
+        "A2": 18,
+        "B1": 28,
+        "B2": 21,
+        "C1": 10,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "books-reading.reading",
+          "namePl": "Czytanie na co dzień",
+          "entryCount": 17
+        },
+        {
+          "id": "books-reading.genres",
+          "namePl": "Gatunki literackie",
+          "entryCount": 15
+        },
+        {
+          "id": "books-reading.content",
+          "namePl": "Treść i styl",
+          "entryCount": 14
+        },
+        {
+          "id": "books-reading.library",
+          "namePl": "Biblioteka",
+          "entryCount": 13
+        },
+        {
+          "id": "books-reading.bookstore",
+          "namePl": "Księgarnia i wydawanie",
+          "entryCount": 14
+        },
+        {
+          "id": "books-reading.book-club",
+          "namePl": "Klub książki i wyrażenia",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "art-museum",
+      "namePl": "Sztuka i muzea",
+      "nameEn": "Art and Museums",
+      "group": "leisure",
+      "symbol": "paintpalette",
+      "summaryPl": "Zwiedzanie muzeum i galerii, malarstwo i rzeźba, opis dzieł, ludzie świata sztuki, wrażenia oraz zajęcia plastyczne.",
+      "aliases": [
+        "sztuka",
+        "muzeum",
+        "galeria",
+        "wystawa",
+        "malarstwo",
+        "obraz",
+        "rzeźba",
+        "art",
+        "museum",
+        "gallery"
+      ],
+      "entryCount": 79,
+      "levels": {
+        "A1": 7,
+        "A2": 16,
+        "B1": 29,
+        "B2": 21,
+        "C1": 6,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "art-museum.visit",
+          "namePl": "Zwiedzanie muzeum",
+          "entryCount": 14
+        },
+        {
+          "id": "art-museum.works",
+          "namePl": "Dzieła sztuki",
+          "entryCount": 16
+        },
+        {
+          "id": "art-museum.describing",
+          "namePl": "Opis i styl dzieła",
+          "entryCount": 13
+        },
+        {
+          "id": "art-museum.art-world",
+          "namePl": "Świat sztuki",
+          "entryCount": 12
+        },
+        {
+          "id": "art-museum.impressions",
+          "namePl": "Wrażenia i opinie",
+          "entryCount": 12
+        },
+        {
+          "id": "art-museum.making-art",
+          "namePl": "Tworzenie sztuki",
+          "entryCount": 12
+        }
+      ]
+    },
+    {
+      "id": "hobbies-crafts",
+      "namePl": "Hobby i rękodzieło",
+      "nameEn": "Hobbies and Crafts",
+      "group": "leisure",
+      "symbol": "scissors",
+      "summaryPl": "Zainteresowania i czas wolny, szycie i robótki ręczne, majsterkowanie, rękodzieło, popularne hobby oraz przydatne wyrażenia.",
+      "aliases": [
+        "hobby",
+        "zainteresowania",
+        "rękodzieło",
+        "majsterkowanie",
+        "szycie",
+        "robótki",
+        "DIY",
+        "hobbies",
+        "crafts",
+        "free time"
+      ],
+      "entryCount": 78,
+      "levels": {
+        "A1": 2,
+        "A2": 25,
+        "B1": 25,
+        "B2": 20,
+        "C1": 6,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "hobbies-crafts.free-time",
+          "namePl": "Zainteresowania i czas wolny",
+          "entryCount": 14
+        },
+        {
+          "id": "hobbies-crafts.sewing",
+          "namePl": "Szycie i robótki ręczne",
+          "entryCount": 14
+        },
+        {
+          "id": "hobbies-crafts.diy",
+          "namePl": "Majsterkowanie",
+          "entryCount": 15
+        },
+        {
+          "id": "hobbies-crafts.crafts",
+          "namePl": "Rękodzieło",
+          "entryCount": 12
+        },
+        {
+          "id": "hobbies-crafts.other-hobbies",
+          "namePl": "Popularne hobby",
+          "entryCount": 12
+        },
+        {
+          "id": "hobbies-crafts.progress",
+          "namePl": "Postępy i przydatne zwroty",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "photography",
+      "namePl": "Fotografia",
+      "nameEn": "Photography",
+      "group": "leisure",
+      "symbol": "camera",
+      "summaryPl": "Aparat i sprzęt, robienie zdjęć, światło i ustawienia, edycja i udostępnianie, rodzaje fotografii oraz zwroty o zdjęciach.",
+      "aliases": [
+        "fotografia",
+        "zdjęcia",
+        "zdjęcie",
+        "aparat",
+        "aparat fotograficzny",
+        "fotograf",
+        "edycja zdjęć",
+        "photography",
+        "photo",
+        "camera"
+      ],
+      "entryCount": 73,
+      "levels": {
+        "A1": 6,
+        "A2": 16,
+        "B1": 26,
+        "B2": 14,
+        "C1": 10,
+        "C2": 1
+      },
+      "categories": [
+        {
+          "id": "photography.gear",
+          "namePl": "Aparat i sprzęt",
+          "entryCount": 11
+        },
+        {
+          "id": "photography.taking-photos",
+          "namePl": "Robienie zdjęć",
+          "entryCount": 14
+        },
+        {
+          "id": "photography.light-settings",
+          "namePl": "Światło i ustawienia",
+          "entryCount": 13
+        },
+        {
+          "id": "photography.editing",
+          "namePl": "Edycja i udostępnianie",
+          "entryCount": 13
+        },
+        {
+          "id": "photography.types",
+          "namePl": "Rodzaje fotografii i zwroty",
+          "entryCount": 13
+        },
+        {
+          "id": "photography.phone",
+          "namePl": "Zdjęcia telefonem",
+          "entryCount": 9
+        }
+      ]
+    },
+    {
+      "id": "video-games",
+      "namePl": "Gry wideo",
+      "nameEn": "Video Games",
+      "group": "leisure",
+      "symbol": "gamecontroller",
+      "summaryPl": "Granie na konsoli i komputerze, rozgrywka, sprzęt i problemy techniczne, gry online, gatunki gier oraz slang graczy.",
+      "aliases": [
+        "gry wideo",
+        "gry komputerowe",
+        "gra",
+        "konsola",
+        "granie",
+        "gry online",
+        "video games",
+        "gaming",
+        "games"
+      ],
+      "entryCount": 72,
+      "levels": {
+        "A1": 3,
+        "A2": 14,
+        "B1": 26,
+        "B2": 25,
+        "C1": 4,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "video-games.playing",
+          "namePl": "Granie",
+          "entryCount": 12
+        },
+        {
+          "id": "video-games.gameplay",
+          "namePl": "Rozgrywka",
+          "entryCount": 14
+        },
+        {
+          "id": "video-games.tech",
+          "namePl": "Sprzęt i problemy techniczne",
+          "entryCount": 11
+        },
+        {
+          "id": "video-games.online",
+          "namePl": "Gry online",
+          "entryCount": 12
+        },
+        {
+          "id": "video-games.genres",
+          "namePl": "Rodzaje gier",
+          "entryCount": 12
+        },
+        {
+          "id": "video-games.talk",
+          "namePl": "Rozmowy o graniu",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "football",
+      "namePl": "Piłka nożna",
+      "nameEn": "Soccer",
+      "group": "leisure",
+      "symbol": "soccerball",
+      "summaryPl": "Mecz i wynik, zawodnicy i pozycje, zagrania, zasady i sędzia, kibice na stadionie oraz trening; w amerykańskim angielskim piłka nożna to „soccer”.",
+      "aliases": [
+        "piłka nożna",
+        "futbol",
+        "mecz",
+        "piłka",
+        "kibic",
+        "drużyna",
+        "gol",
+        "soccer",
+        "football",
+        "match"
+      ],
+      "entryCount": 78,
+      "levels": {
+        "A1": 9,
+        "A2": 16,
+        "B1": 23,
+        "B2": 29,
+        "C1": 1,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "football.match",
+          "namePl": "Mecz i wynik",
+          "entryCount": 14
+        },
+        {
+          "id": "football.players",
+          "namePl": "Zawodnicy i drużyna",
+          "entryCount": 13
+        },
+        {
+          "id": "football.actions",
+          "namePl": "Zagrania na boisku",
+          "entryCount": 13
+        },
+        {
+          "id": "football.rules",
+          "namePl": "Zasady i sędzia",
+          "entryCount": 13
+        },
+        {
+          "id": "football.fans",
+          "namePl": "Kibice i stadion",
+          "entryCount": 14
+        },
+        {
+          "id": "football.practice",
+          "namePl": "Trening i sprzęt",
+          "entryCount": 11
+        }
+      ]
+    },
+    {
+      "id": "concerts-festivals",
+      "namePl": "Koncerty i festiwale",
+      "nameEn": "Concerts and Festivals",
+      "group": "leisure",
+      "symbol": "music.mic",
+      "summaryPl": "Bilety i przygotowania, koncert pod sceną, życie na festiwalu, wykonawcy i występy, atmosfera oraz bezpieczeństwo i problemy na imprezach masowych.",
+      "aliases": [
+        "koncert",
+        "festiwal",
+        "koncerty",
+        "festiwale",
+        "scena",
+        "bilety",
+        "występ na żywo",
+        "concert",
+        "festival",
+        "live music"
+      ],
+      "entryCount": 68,
+      "levels": {
+        "A1": 3,
+        "A2": 13,
+        "B1": 23,
+        "B2": 22,
+        "C1": 7,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "concerts-festivals.tickets",
+          "namePl": "Bilety i przygotowania",
+          "entryCount": 12
+        },
+        {
+          "id": "concerts-festivals.show",
+          "namePl": "Koncert pod sceną",
+          "entryCount": 12
+        },
+        {
+          "id": "concerts-festivals.festival-life",
+          "namePl": "Życie na festiwalu",
+          "entryCount": 12
+        },
+        {
+          "id": "concerts-festivals.performance",
+          "namePl": "Wykonawcy i występ",
+          "entryCount": 11
+        },
+        {
+          "id": "concerts-festivals.atmosphere",
+          "namePl": "Atmosfera i wrażenia",
+          "entryCount": 11
+        },
+        {
+          "id": "concerts-festivals.safety",
+          "namePl": "Bezpieczeństwo i problemy",
+          "entryCount": 10
+        }
+      ]
+    },
+    {
+      "id": "theater",
+      "namePl": "Teatr",
+      "nameEn": "Theater",
+      "group": "leisure",
+      "symbol": "theatermasks",
+      "summaryPl": "Wyjście do teatru, scena i spektakl, rodzaje przedstawień, widownia i reakcje publiczności, praca aktora oraz teatralne zwroty i idiomy.",
+      "aliases": [
+        "teatr",
+        "spektakl",
+        "przedstawienie",
+        "sztuka",
+        "scena",
+        "aktor",
+        "musical",
+        "theater",
+        "play",
+        "stage"
+      ],
+      "entryCount": 69,
+      "levels": {
+        "A1": 1,
+        "A2": 7,
+        "B1": 22,
+        "B2": 27,
+        "C1": 11,
+        "C2": 1
+      },
+      "categories": [
+        {
+          "id": "theater.night-out",
+          "namePl": "Wieczór w teatrze",
+          "entryCount": 11
+        },
+        {
+          "id": "theater.production",
+          "namePl": "Scena i spektakl",
+          "entryCount": 14
+        },
+        {
+          "id": "theater.genres",
+          "namePl": "Rodzaje przedstawień",
+          "entryCount": 10
+        },
+        {
+          "id": "theater.audience",
+          "namePl": "Widownia i reakcje",
+          "entryCount": 11
+        },
+        {
+          "id": "theater.acting",
+          "namePl": "Praca aktora i idiomy",
+          "entryCount": 12
+        },
+        {
+          "id": "theater.opinions",
+          "namePl": "Opinie o spektaklu",
+          "entryCount": 11
         }
       ]
     },
@@ -4334,6 +6153,170 @@
           "id": "apologies-politeness.manners",
           "namePl": "Dobre maniery i takt",
           "entryCount": 18
+        }
+      ]
+    },
+    {
+      "id": "arguments-conflict",
+      "namePl": "Kłótnie i rozwiązywanie konfliktów",
+      "nameEn": "Arguments and Conflict",
+      "group": "communication",
+      "symbol": "bubble.left.and.exclamationmark.bubble.right",
+      "summaryPl": "Kłótnie i ostre słowa, eskalacja emocji, szukanie kompromisu i godzenie się.",
+      "aliases": [
+        "kłótnia",
+        "konflikt",
+        "spór",
+        "kompromis",
+        "pogodzić się",
+        "awantura",
+        "argument",
+        "fight",
+        "conflict"
+      ],
+      "entryCount": 68,
+      "levels": {
+        "A1": 0,
+        "A2": 6,
+        "B1": 13,
+        "B2": 25,
+        "C1": 23,
+        "C2": 1
+      },
+      "categories": [
+        {
+          "id": "arguments-conflict.fight",
+          "namePl": "Kłótnia",
+          "entryCount": 12
+        },
+        {
+          "id": "arguments-conflict.accusations",
+          "namePl": "Słowa w sporze",
+          "entryCount": 15
+        },
+        {
+          "id": "arguments-conflict.escalation",
+          "namePl": "Eskalacja",
+          "entryCount": 15
+        },
+        {
+          "id": "arguments-conflict.resolution",
+          "namePl": "Rozwiązywanie konfliktu",
+          "entryCount": 13
+        },
+        {
+          "id": "arguments-conflict.making-up",
+          "namePl": "Pogodzenie się",
+          "entryCount": 13
+        }
+      ]
+    },
+    {
+      "id": "giving-advice",
+      "namePl": "Rady i sugestie",
+      "nameEn": "Giving Advice",
+      "group": "communication",
+      "symbol": "lightbulb",
+      "summaryPl": "Proszenie o radę, doradzanie, ostrzeżenia, zalecenia i reagowanie na cudze rady.",
+      "aliases": [
+        "rada",
+        "rady",
+        "doradzanie",
+        "sugestia",
+        "ostrzeżenie",
+        "zalecenie",
+        "advice",
+        "suggestion",
+        "warning"
+      ],
+      "entryCount": 67,
+      "levels": {
+        "A1": 6,
+        "A2": 14,
+        "B1": 23,
+        "B2": 16,
+        "C1": 8,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "giving-advice.asking",
+          "namePl": "Prośba o radę",
+          "entryCount": 12
+        },
+        {
+          "id": "giving-advice.giving",
+          "namePl": "Udzielanie rad",
+          "entryCount": 15
+        },
+        {
+          "id": "giving-advice.warnings",
+          "namePl": "Ostrzeżenia",
+          "entryCount": 15
+        },
+        {
+          "id": "giving-advice.recommendations",
+          "namePl": "Zalecenia i obowiązki",
+          "entryCount": 12
+        },
+        {
+          "id": "giving-advice.reacting",
+          "namePl": "Reakcja na radę",
+          "entryCount": 13
+        }
+      ]
+    },
+    {
+      "id": "storytelling",
+      "namePl": "Opowiadanie historii",
+      "nameEn": "Storytelling",
+      "group": "communication",
+      "symbol": "text.bubble",
+      "summaryPl": "Zaczynanie opowieści, kolejność zdarzeń, szczegóły, reakcje słuchacza i puenta.",
+      "aliases": [
+        "opowiadanie",
+        "historia",
+        "anegdota",
+        "narracja",
+        "opowieść",
+        "storytelling",
+        "story",
+        "anecdote"
+      ],
+      "entryCount": 69,
+      "levels": {
+        "A1": 7,
+        "A2": 16,
+        "B1": 24,
+        "B2": 19,
+        "C1": 3,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "storytelling.opening",
+          "namePl": "Początek opowieści",
+          "entryCount": 13
+        },
+        {
+          "id": "storytelling.sequence",
+          "namePl": "Kolejność zdarzeń",
+          "entryCount": 15
+        },
+        {
+          "id": "storytelling.details",
+          "namePl": "Wspomnienia i szczegóły",
+          "entryCount": 13
+        },
+        {
+          "id": "storytelling.listener",
+          "namePl": "Reakcje słuchacza",
+          "entryCount": 14
+        },
+        {
+          "id": "storytelling.ending",
+          "namePl": "Zakończenie i puenta",
+          "entryCount": 14
         }
       ]
     }

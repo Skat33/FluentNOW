@@ -1,0 +1,3048 @@
+{
+  "schemaVersion": 1,
+  "id": "project-management",
+  "namePl": "Zarządzanie projektami",
+  "nameEn": "Project Management",
+  "group": "work",
+  "symbol": "checklist",
+  "summaryPl": "Planowanie, metody pracy, harmonogram, zasoby i budżet, ryzyka oraz zamknięcie projektu.",
+  "aliases": [
+    "zarządzanie projektami",
+    "projekt",
+    "kierownik projektu",
+    "harmonogram",
+    "kamień milowy",
+    "project management",
+    "project",
+    "deadline",
+    "agile"
+  ],
+  "categories": [
+    {
+      "id": "project-management.planning",
+      "namePl": "Planowanie projektu",
+      "scenePl": "Pierwsze spotkanie planistyczne: zespół rozpisuje projekt aplikacji do rezerwacji dla klienta",
+      "entries": [
+        {
+          "id": "project-management.project",
+          "term": "project",
+          "ipa": "/ˈprɑːdʒekt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "projekt",
+          "definition": "A piece of planned work with a clear goal and an end date.",
+          "register": "neutralny",
+          "contextPl": "Praca zaplanowana od początku do końca",
+          "natural": "",
+          "forms": "projects",
+          "collocations": "start a project; work on a project; new project",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our next project is a booking app for a group of dental clinics.",
+              "pl": "Naszym następnym projektem jest aplikacja do rezerwacji dla grupy gabinetów stomatologicznych.",
+              "focusEn": "project",
+              "focusPl": "projektem"
+            },
+            {
+              "en": "Before we plan anything, let's agree on what this project must deliver.",
+              "pl": "Zanim cokolwiek zaplanujemy, ustalmy, co ten projekt musi dostarczyć.",
+              "focusEn": "project",
+              "focusPl": "projekt"
+            }
+          ],
+          "acceptedAnswers": [
+            "project"
+          ],
+          "acceptedTranslations": [
+            "projekt",
+            "przedsięwzięcie"
+          ]
+        },
+        {
+          "id": "project-management.project-plan",
+          "term": "project plan",
+          "ipa": "/ˈprɑːdʒekt ˌplæn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "plan projektu",
+          "definition": "A document that shows the goals, tasks, people, and dates of a project.",
+          "register": "neutralny",
+          "contextPl": "Dokument opisujący projekt",
+          "natural": "",
+          "forms": "project plans",
+          "collocations": "draft a project plan; update the project plan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The first draft of the project plan fits on two pages.",
+              "pl": "Pierwsza wersja planu projektu mieści się na dwóch stronach.",
+              "focusEn": "project plan",
+              "focusPl": "planu projektu"
+            },
+            {
+              "en": "I'll share the project plan with the client after this meeting.",
+              "pl": "Po tym spotkaniu udostępnię plan projektu klientowi.",
+              "focusEn": "project plan",
+              "focusPl": "plan projektu"
+            }
+          ],
+          "acceptedAnswers": [
+            "project plan"
+          ],
+          "acceptedTranslations": [
+            "plan projektu"
+          ]
+        },
+        {
+          "id": "project-management.project-manager",
+          "term": "project manager",
+          "ipa": "/ˈprɑːdʒekt ˌmænɪdʒər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kierownik projektu",
+          "definition": "The person who plans a project and makes sure it is finished on time.",
+          "register": "neutralny",
+          "contextPl": "Osoba prowadząca projekt",
+          "natural": "PM",
+          "forms": "project managers",
+          "collocations": "an experienced project manager; report to the project manager",
+          "synonyms": "PM",
+          "antonyms": "",
+          "notePl": "Często w skrócie PM /ˌpiː ˈem/.",
+          "examples": [
+            {
+              "en": "As project manager, Nina runs the planning session today.",
+              "pl": "Jako kierowniczka projektu Nina prowadzi dziś sesję planowania.",
+              "focusEn": "project manager",
+              "focusPl": "kierowniczka projektu"
+            },
+            {
+              "en": "Any change to the plan has to go through the project manager.",
+              "pl": "Każda zmiana planu musi przejść przez kierownika projektu.",
+              "focusEn": "project manager",
+              "focusPl": "kierownika projektu"
+            }
+          ],
+          "acceptedAnswers": [
+            "project manager",
+            "PM"
+          ],
+          "acceptedTranslations": [
+            "kierownik projektu",
+            "kierowniczka projektu",
+            "menedżer projektu",
+            "project manager"
+          ]
+        },
+        {
+          "id": "project-management.objective",
+          "term": "objective",
+          "ipa": "/əbˈdʒektɪv/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "cel",
+          "definition": "Something that you plan to achieve, especially in work.",
+          "register": "formalny",
+          "contextPl": "Cele projektu i firmy",
+          "natural": "goal",
+          "forms": "objectives",
+          "collocations": "main objective; set objectives; meet an objective",
+          "synonyms": "goal; aim",
+          "antonyms": "",
+          "notePl": "Bardziej formalne niż „goal”.",
+          "examples": [
+            {
+              "en": "Our main objective is to launch the app before the summer.",
+              "pl": "Naszym głównym celem jest uruchomienie aplikacji przed latem.",
+              "focusEn": "objective",
+              "focusPl": "celem"
+            },
+            {
+              "en": "Let's write each objective on the whiteboard so everyone can see it.",
+              "pl": "Zapiszmy każdy cel na tablicy, żeby wszyscy go widzieli.",
+              "focusEn": "objective",
+              "focusPl": "cel"
+            }
+          ],
+          "acceptedAnswers": [
+            "objective",
+            "goal"
+          ],
+          "acceptedTranslations": [
+            "cel",
+            "zadanie"
+          ]
+        },
+        {
+          "id": "project-management.scope",
+          "term": "scope",
+          "ipa": "/skoʊp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zakres",
+          "definition": "The amount of work and the features that a project includes.",
+          "register": "neutralny",
+          "contextPl": "Co wchodzi w skład projektu",
+          "natural": "",
+          "forms": "",
+          "collocations": "project scope; define the scope; outside the scope",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Online payments are outside the scope of the first version.",
+              "pl": "Płatności online są poza zakresem pierwszej wersji.",
+              "focusEn": "scope",
+              "focusPl": "zakresem"
+            },
+            {
+              "en": "The client asked us to define the scope in writing.",
+              "pl": "Klient poprosił, żebyśmy określili zakres na piśmie.",
+              "focusEn": "scope",
+              "focusPl": "zakres"
+            }
+          ],
+          "acceptedAnswers": [
+            "scope",
+            "project scope"
+          ],
+          "acceptedTranslations": [
+            "zakres",
+            "zakres projektu",
+            "zakres prac"
+          ]
+        },
+        {
+          "id": "project-management.milestone",
+          "term": "milestone",
+          "ipa": "/ˈmaɪlstoʊn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kamień milowy",
+          "definition": "An important point or event in a project that shows how far you have come.",
+          "register": "neutralny",
+          "contextPl": "Ważne etapy w harmonogramie",
+          "natural": "",
+          "forms": "milestones",
+          "collocations": "reach a milestone; key milestone; hit a milestone",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The first milestone is a working prototype by March tenth.",
+              "pl": "Pierwszym kamieniem milowym jest działający prototyp do dziesiątego marca.",
+              "focusEn": "milestone",
+              "focusPl": "kamieniem milowym"
+            },
+            {
+              "en": "We'll show the client a demo at every milestone.",
+              "pl": "Przy każdym kamieniu milowym pokażemy klientowi demo.",
+              "focusEn": "milestone",
+              "focusPl": "kamieniu milowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "milestone"
+          ],
+          "acceptedTranslations": [
+            "kamień milowy",
+            "etap"
+          ]
+        },
+        {
+          "id": "project-management.timeline",
+          "term": "timeline",
+          "ipa": "/ˈtaɪmlaɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "harmonogram",
+          "definition": "A plan that shows when each part of a project should happen.",
+          "register": "neutralny",
+          "contextPl": "Rozplanowanie prac w czasie",
+          "natural": "",
+          "forms": "timelines",
+          "collocations": "a tight timeline; a realistic timeline; set a timeline",
+          "synonyms": "schedule",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Nina sketched a rough timeline covering six months of work.",
+              "pl": "Nina naszkicowała wstępny harmonogram obejmujący sześć miesięcy pracy.",
+              "focusEn": "timeline",
+              "focusPl": "harmonogram"
+            },
+            {
+              "en": "Is this timeline realistic with only four developers?",
+              "pl": "Czy ten harmonogram jest realny przy zaledwie czterech programistach?",
+              "focusEn": "timeline",
+              "focusPl": "harmonogram"
+            }
+          ],
+          "acceptedAnswers": [
+            "timeline",
+            "schedule"
+          ],
+          "acceptedTranslations": [
+            "harmonogram",
+            "plan czasowy",
+            "terminarz"
+          ]
+        },
+        {
+          "id": "project-management.deliverable",
+          "term": "deliverable",
+          "ipa": "/dɪˈlɪvərəbəl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "rezultat projektu",
+          "definition": "A finished piece of work that a project team must give to the client.",
+          "register": "specjalistyczny",
+          "contextPl": "Konkretne efekty prac",
+          "natural": "",
+          "forms": "deliverables",
+          "collocations": "key deliverables; project deliverables",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Liczba mnoga „deliverables” jest częstsza.",
+          "examples": [
+            {
+              "en": "The main deliverable for phase one is the design of every screen.",
+              "pl": "Głównym rezultatem pierwszego etapu jest projekt wszystkich ekranów.",
+              "focusEn": "deliverable",
+              "focusPl": "rezultatem"
+            },
+            {
+              "en": "Each deliverable on the list needs a clear owner.",
+              "pl": "Każdy rezultat na liście potrzebuje jasno wskazanego właściciela.",
+              "focusEn": "deliverable",
+              "focusPl": "rezultat"
+            }
+          ],
+          "acceptedAnswers": [
+            "deliverable"
+          ],
+          "acceptedTranslations": [
+            "rezultat projektu",
+            "produkt projektu",
+            "rezultat",
+            "produkt końcowy"
+          ]
+        },
+        {
+          "id": "project-management.requirement",
+          "term": "requirement",
+          "ipa": "/rɪˈkwaɪrmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wymaganie",
+          "definition": "Something that the client needs the finished product to do or have.",
+          "register": "neutralny",
+          "contextPl": "Oczekiwania klienta wobec produktu",
+          "natural": "",
+          "forms": "requirements",
+          "collocations": "meet a requirement; gather requirements; technical requirements",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "One key requirement is that the app works offline.",
+              "pl": "Jednym z kluczowych wymagań jest to, żeby aplikacja działała offline.",
+              "focusEn": "requirement",
+              "focusPl": "wymagań"
+            },
+            {
+              "en": "We still don't have the client's requirements for the admin panel.",
+              "pl": "Wciąż nie mamy wymagań klienta dotyczących panelu administracyjnego.",
+              "focusEn": "requirements",
+              "focusPl": "wymagań"
+            }
+          ],
+          "acceptedAnswers": [
+            "requirement"
+          ],
+          "acceptedTranslations": [
+            "wymaganie",
+            "wymóg"
+          ]
+        },
+        {
+          "id": "project-management.estimate",
+          "term": "estimate",
+          "ipa": "/ˈestɪmeɪt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oszacować",
+          "definition": "To guess the time, cost, or size of something using the information you have.",
+          "register": "neutralny",
+          "contextPl": "Wycena czasu i kosztów",
+          "natural": "",
+          "forms": "estimated; estimating",
+          "collocations": "estimate the cost; roughly estimate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: /ˈestɪmət/ – szacunek, wycena.",
+          "examples": [
+            {
+              "en": "Can you estimate how long the login screen will take?",
+              "pl": "Czy możesz oszacować, ile zajmie ekran logowania?",
+              "focusEn": "estimate",
+              "focusPl": "oszacować"
+            },
+            {
+              "en": "We estimated the whole project at about nine hundred hours.",
+              "pl": "Oszacowaliśmy cały projekt na około dziewięćset godzin.",
+              "focusEn": "estimated",
+              "focusPl": "Oszacowaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "estimate"
+          ],
+          "acceptedTranslations": [
+            "oszacować",
+            "szacować",
+            "wycenić",
+            "wyceniać"
+          ]
+        },
+        {
+          "id": "project-management.break-down",
+          "term": "break down",
+          "ipa": "/ˌbreɪk ˈdaʊn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rozbić na części",
+          "definition": "To divide a big piece of work into smaller parts.",
+          "register": "neutralny",
+          "contextPl": "Dzielenie pracy na zadania",
+          "natural": "",
+          "forms": "broke down; broken down",
+          "collocations": "break down a task; break the work down",
+          "synonyms": "split up",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's break down the work into tasks of one or two days.",
+              "pl": "Rozbijmy pracę na zadania trwające jeden lub dwa dni.",
+              "focusEn": "break down",
+              "focusPl": "Rozbijmy"
+            },
+            {
+              "en": "Once we break down each feature, estimating gets easier.",
+              "pl": "Kiedy rozbijemy każdą funkcję na części, szacowanie stanie się łatwiejsze.",
+              "focusEn": "break down",
+              "focusPl": "rozbijemy"
+            }
+          ],
+          "acceptedAnswers": [
+            "break down",
+            "split up",
+            "break into"
+          ],
+          "acceptedTranslations": [
+            "rozbić na części",
+            "rozbić",
+            "rozbijać",
+            "podzielić",
+            "dzielić"
+          ]
+        },
+        {
+          "id": "project-management.phase",
+          "term": "phase",
+          "ipa": "/feɪz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "etap",
+          "definition": "One part of a project that happens before or after other parts.",
+          "register": "neutralny",
+          "contextPl": "Kolejne części projektu",
+          "natural": "stage",
+          "forms": "phases",
+          "collocations": "first phase; final phase; phase two",
+          "synonyms": "stage",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The first phase covers research and design.",
+              "pl": "Pierwszy etap obejmuje badania i projektowanie.",
+              "focusEn": "phase",
+              "focusPl": "etap"
+            },
+            {
+              "en": "Testing gets its own phase at the end of May.",
+              "pl": "Testy dostają własny etap pod koniec maja.",
+              "focusEn": "phase",
+              "focusPl": "etap"
+            }
+          ],
+          "acceptedAnswers": [
+            "phase",
+            "stage"
+          ],
+          "acceptedTranslations": [
+            "etap",
+            "faza"
+          ]
+        },
+        {
+          "id": "project-management.stakeholder",
+          "term": "stakeholder",
+          "ipa": "/ˈsteɪkhoʊldər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "interesariusz",
+          "definition": "A person or group that is affected by a project or cares about its result.",
+          "register": "formalny",
+          "contextPl": "Osoby zainteresowane wynikiem projektu",
+          "natural": "",
+          "forms": "stakeholders",
+          "collocations": "key stakeholders; keep stakeholders informed",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Every stakeholder should get a copy of the plan by Friday.",
+              "pl": "Każdy interesariusz powinien dostać kopię planu do piątku.",
+              "focusEn": "stakeholder",
+              "focusPl": "interesariusz"
+            },
+            {
+              "en": "The clinic owners are the most important stakeholders here.",
+              "pl": "Właściciele klinik są tu najważniejszymi interesariuszami.",
+              "focusEn": "stakeholders",
+              "focusPl": "interesariuszami"
+            }
+          ],
+          "acceptedAnswers": [
+            "stakeholder"
+          ],
+          "acceptedTranslations": [
+            "interesariusz",
+            "strona zainteresowana"
+          ]
+        },
+        {
+          "id": "project-management.feasibility",
+          "term": "feasibility",
+          "ipa": "/ˌfiːzəˈbɪləti/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wykonalność",
+          "definition": "How possible it is to do something successfully.",
+          "register": "formalny",
+          "contextPl": "Ocena, czy pomysł da się zrealizować",
+          "natural": "",
+          "forms": "",
+          "collocations": "feasibility study; check the feasibility",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Before we commit, we need a quick feasibility check on the map feature.",
+              "pl": "Zanim się zobowiążemy, musimy szybko sprawdzić wykonalność funkcji mapy.",
+              "focusEn": "feasibility",
+              "focusPl": "wykonalność"
+            },
+            {
+              "en": "The feasibility study showed that the budget is too tight.",
+              "pl": "Studium wykonalności pokazało, że budżet jest za ciasny.",
+              "focusEn": "feasibility",
+              "focusPl": "wykonalności"
+            }
+          ],
+          "acceptedAnswers": [
+            "feasibility"
+          ],
+          "acceptedTranslations": [
+            "wykonalność",
+            "możliwość realizacji"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project-management.methods",
+      "namePl": "Metody i narzędzia",
+      "scenePl": "Zespół wybiera sposób pracy i zakłada tablicę zadań w narzędziu do zarządzania projektami",
+      "entries": [
+        {
+          "id": "project-management.priority",
+          "term": "priority",
+          "ipa": "/praɪˈɔːrəti/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "priorytet",
+          "definition": "Something that is more important than other things and should be done first.",
+          "register": "neutralny",
+          "contextPl": "Kolejność ważności zadań",
+          "natural": "",
+          "forms": "priorities",
+          "collocations": "top priority; high priority; set priorities",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Payments are our top priority this month.",
+              "pl": "Płatności są w tym miesiącu naszym najważniejszym priorytetem.",
+              "focusEn": "priority",
+              "focusPl": "priorytetem"
+            },
+            {
+              "en": "Give each card on the board a priority from one to three.",
+              "pl": "Nadaj każdej karcie na tablicy priorytet od jednego do trzech.",
+              "focusEn": "priority",
+              "focusPl": "priorytet"
+            }
+          ],
+          "acceptedAnswers": [
+            "priority"
+          ],
+          "acceptedTranslations": [
+            "priorytet"
+          ]
+        },
+        {
+          "id": "project-management.due-date",
+          "term": "due date",
+          "ipa": "/ˈduː ˌdeɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "termin",
+          "definition": "The day by which a task must be finished.",
+          "register": "neutralny",
+          "contextPl": "Termin wykonania zadania",
+          "natural": "",
+          "forms": "due dates",
+          "collocations": "set a due date; miss a due date",
+          "synonyms": "deadline",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I set the due date for the logo task to next Friday.",
+              "pl": "Ustawiłem termin zadania z logo na przyszły piątek.",
+              "focusEn": "due date",
+              "focusPl": "termin"
+            },
+            {
+              "en": "Cards with no due date tend to sit on the board forever.",
+              "pl": "Karty bez terminu potrafią wisieć na tablicy w nieskończoność.",
+              "focusEn": "due date",
+              "focusPl": "terminu"
+            }
+          ],
+          "acceptedAnswers": [
+            "due date",
+            "deadline"
+          ],
+          "acceptedTranslations": [
+            "termin",
+            "termin wykonania",
+            "data wykonania"
+          ]
+        },
+        {
+          "id": "project-management.owner",
+          "term": "owner",
+          "ipa": "/ˈoʊnər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "osoba odpowiedzialna",
+          "definition": "The person who is responsible for a particular task.",
+          "register": "neutralny",
+          "contextPl": "Kto odpowiada za zadanie",
+          "natural": "",
+          "forms": "owners",
+          "collocations": "task owner; assign an owner",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W tym znaczeniu nie chodzi o właściciela rzeczy.",
+          "examples": [
+            {
+              "en": "Every card on the board needs an owner and a due date.",
+              "pl": "Każda karta na tablicy potrzebuje osoby odpowiedzialnej i terminu.",
+              "focusEn": "owner",
+              "focusPl": "osoby odpowiedzialnej"
+            },
+            {
+              "en": "Who's the owner of the database migration task?",
+              "pl": "Kto jest osobą odpowiedzialną za migrację bazy danych?",
+              "focusEn": "owner",
+              "focusPl": "osobą odpowiedzialną"
+            }
+          ],
+          "acceptedAnswers": [
+            "owner",
+            "task owner"
+          ],
+          "acceptedTranslations": [
+            "osoba odpowiedzialna",
+            "odpowiedzialny",
+            "właściciel zadania"
+          ]
+        },
+        {
+          "id": "project-management.workflow",
+          "term": "workflow",
+          "ipa": "/ˈwɝːkfloʊ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przepływ pracy",
+          "definition": "The order of steps that a piece of work goes through.",
+          "register": "neutralny",
+          "contextPl": "Kolejne kroki pracy w zespole",
+          "natural": "",
+          "forms": "workflows",
+          "collocations": "simple workflow; improve the workflow",
+          "synonyms": "process",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our workflow goes from design to coding to testing.",
+              "pl": "Nasz przepływ pracy prowadzi od projektu, przez kodowanie, do testów.",
+              "focusEn": "workflow",
+              "focusPl": "przepływ pracy"
+            },
+            {
+              "en": "Let's keep the workflow simple until the team gets used to the tool.",
+              "pl": "Utrzymajmy prosty przepływ pracy, dopóki zespół nie przyzwyczai się do narzędzia.",
+              "focusEn": "workflow",
+              "focusPl": "przepływ pracy"
+            }
+          ],
+          "acceptedAnswers": [
+            "workflow",
+            "process"
+          ],
+          "acceptedTranslations": [
+            "przepływ pracy",
+            "proces",
+            "tok pracy"
+          ]
+        },
+        {
+          "id": "project-management.template",
+          "term": "template",
+          "ipa": "/ˈtemplət/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "szablon",
+          "definition": "A ready-made pattern that you use as a starting point.",
+          "register": "neutralny",
+          "contextPl": "Gotowe wzory dokumentów i tablic",
+          "natural": "",
+          "forms": "templates",
+          "collocations": "use a template; project template",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I created the board from a template for software projects.",
+              "pl": "Utworzyłem tablicę z szablonu dla projektów programistycznych.",
+              "focusEn": "template",
+              "focusPl": "szablonu"
+            },
+            {
+              "en": "Use this template for every new task so nothing gets missed.",
+              "pl": "Używaj tego szablonu do każdego nowego zadania, żeby niczego nie pominąć.",
+              "focusEn": "template",
+              "focusPl": "szablonu"
+            }
+          ],
+          "acceptedAnswers": [
+            "template"
+          ],
+          "acceptedTranslations": [
+            "szablon",
+            "wzór"
+          ]
+        },
+        {
+          "id": "project-management.agile",
+          "term": "agile",
+          "ipa": "/ˈædʒəl/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zwinny",
+          "definition": "Describing a way of working in short cycles with frequent changes and feedback.",
+          "register": "specjalistyczny",
+          "contextPl": "Zwinne metodyki pracy",
+          "natural": "",
+          "forms": "",
+          "collocations": "agile team; agile method; work in an agile way",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Często używane bez tłumaczenia: „agile”.",
+          "examples": [
+            {
+              "en": "We decided to work in an agile way, with short cycles and frequent demos.",
+              "pl": "Zdecydowaliśmy się pracować w sposób zwinny, w krótkich cyklach i z częstymi demami.",
+              "focusEn": "agile",
+              "focusPl": "zwinny"
+            },
+            {
+              "en": "The client had never worked with an agile team before.",
+              "pl": "Klient nigdy wcześniej nie pracował ze zwinnym zespołem.",
+              "focusEn": "agile",
+              "focusPl": "zwinnym"
+            }
+          ],
+          "acceptedAnswers": [
+            "agile"
+          ],
+          "acceptedTranslations": [
+            "zwinny",
+            "agile"
+          ]
+        },
+        {
+          "id": "project-management.sprint",
+          "term": "sprint",
+          "ipa": "/sprɪnt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "sprint",
+          "definition": "A short fixed period, often two weeks, in which a team finishes a set of tasks.",
+          "register": "specjalistyczny",
+          "contextPl": "Krótki cykl pracy zespołu",
+          "natural": "",
+          "forms": "sprints",
+          "collocations": "two-week sprint; sprint planning; sprint goal",
+          "synonyms": "iteration",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Each sprint lasts two weeks and ends with a demo.",
+              "pl": "Każdy sprint trwa dwa tygodnie i kończy się demem.",
+              "focusEn": "sprint",
+              "focusPl": "sprint"
+            },
+            {
+              "en": "What can we realistically finish in the first sprint?",
+              "pl": "Co realnie możemy skończyć w pierwszym sprincie?",
+              "focusEn": "sprint",
+              "focusPl": "sprincie"
+            }
+          ],
+          "acceptedAnswers": [
+            "sprint",
+            "iteration"
+          ],
+          "acceptedTranslations": [
+            "sprint",
+            "iteracja"
+          ]
+        },
+        {
+          "id": "project-management.backlog",
+          "term": "backlog",
+          "ipa": "/ˈbæklɑːɡ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "backlog",
+          "definition": "A list of tasks and ideas that the team has not started yet.",
+          "register": "specjalistyczny",
+          "contextPl": "Lista zadań czekających na realizację",
+          "natural": "",
+          "forms": "backlogs",
+          "collocations": "product backlog; add to the backlog",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W polskich zespołach mówi się po prostu „backlog”.",
+          "examples": [
+            {
+              "en": "I added the client's new ideas to the backlog for later.",
+              "pl": "Nowe pomysły klienta dodałam do backlogu na później.",
+              "focusEn": "backlog",
+              "focusPl": "backlogu"
+            },
+            {
+              "en": "Our backlog already has over two hundred items.",
+              "pl": "Nasz backlog ma już ponad dwieście pozycji.",
+              "focusEn": "backlog",
+              "focusPl": "backlog"
+            }
+          ],
+          "acceptedAnswers": [
+            "backlog"
+          ],
+          "acceptedTranslations": [
+            "backlog",
+            "lista zadań",
+            "lista zadań do zrobienia",
+            "zaległe zadania"
+          ]
+        },
+        {
+          "id": "project-management.kanban-board",
+          "term": "kanban board",
+          "ipa": "/ˈkɑːnbɑːn ˌbɔːrd/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "tablica kanban",
+          "definition": "A board with columns that shows which tasks are waiting, in progress, or done.",
+          "register": "specjalistyczny",
+          "contextPl": "Wizualne śledzenie zadań",
+          "natural": "task board",
+          "forms": "kanban boards",
+          "collocations": "update the kanban board; move a card",
+          "synonyms": "task board",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Move your card to \"Done\" on the kanban board when you finish.",
+              "pl": "Kiedy skończysz, przesuń swoją kartę do „Done” na tablicy kanban.",
+              "focusEn": "kanban board",
+              "focusPl": "tablicy kanban"
+            },
+            {
+              "en": "Our kanban board has columns for to-do, in progress, and done.",
+              "pl": "Nasza tablica kanban ma kolumny: do zrobienia, w toku i zrobione.",
+              "focusEn": "kanban board",
+              "focusPl": "tablica kanban"
+            }
+          ],
+          "acceptedAnswers": [
+            "kanban board",
+            "task board",
+            "kanban"
+          ],
+          "acceptedTranslations": [
+            "tablica kanban",
+            "tablica zadań"
+          ]
+        },
+        {
+          "id": "project-management.gantt-chart",
+          "term": "Gantt chart",
+          "ipa": "/ˈɡænt ˌtʃɑːrt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wykres Gantta",
+          "definition": "A chart with bars that shows when each task starts and ends.",
+          "register": "specjalistyczny",
+          "contextPl": "Graficzny harmonogram projektu",
+          "natural": "",
+          "forms": "Gantt charts",
+          "collocations": "create a Gantt chart",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The Gantt chart shows which tasks can run at the same time.",
+              "pl": "Wykres Gantta pokazuje, które zadania mogą biec równolegle.",
+              "focusEn": "Gantt chart",
+              "focusPl": "Wykres Gantta"
+            },
+            {
+              "en": "I'll turn our task list into a Gantt chart for the client.",
+              "pl": "Zamienię naszą listę zadań na wykres Gantta dla klienta.",
+              "focusEn": "Gantt chart",
+              "focusPl": "wykres Gantta"
+            }
+          ],
+          "acceptedAnswers": [
+            "Gantt chart"
+          ],
+          "acceptedTranslations": [
+            "wykres Gantta",
+            "diagram Gantta"
+          ]
+        },
+        {
+          "id": "project-management.waterfall",
+          "term": "waterfall",
+          "ipa": "/ˈwɔːtərfɔːl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "model kaskadowy",
+          "definition": "A way of running a project in which each stage must finish before the next starts.",
+          "register": "specjalistyczny",
+          "contextPl": "Tradycyjny sposób prowadzenia projektu",
+          "natural": "",
+          "forms": "",
+          "collocations": "waterfall project; waterfall model",
+          "synonyms": "",
+          "antonyms": "agile",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "In a waterfall project, testing starts only after all the building is done.",
+              "pl": "W projekcie prowadzonym modelem kaskadowym testy zaczynają się dopiero po zakończeniu budowy.",
+              "focusEn": "waterfall",
+              "focusPl": "modelem kaskadowym"
+            },
+            {
+              "en": "The bank wanted a classic waterfall plan with fixed dates.",
+              "pl": "Bank chciał klasycznego planu w modelu kaskadowym ze stałymi datami.",
+              "focusEn": "waterfall",
+              "focusPl": "modelu kaskadowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "waterfall",
+            "waterfall model"
+          ],
+          "acceptedTranslations": [
+            "model kaskadowy",
+            "podejście kaskadowe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project-management.progress",
+      "namePl": "Harmonogram i postępy",
+      "scenePl": "Przegląd postępów w połowie projektu przy wykresie harmonogramu",
+      "entries": [
+        {
+          "id": "project-management.progress",
+          "term": "progress",
+          "ipa": "/ˈprɑːɡres/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "postęp",
+          "definition": "Movement toward finishing a piece of work.",
+          "register": "neutralny",
+          "contextPl": "Stan zaawansowania prac",
+          "natural": "",
+          "forms": "",
+          "collocations": "make progress; good progress; slow progress",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik niepoliczalny: „a lot of progress”, nie „a progress”.",
+          "examples": [
+            {
+              "en": "We made good progress on the design this week.",
+              "pl": "W tym tygodniu zrobiliśmy duże postępy w projekcie graficznym.",
+              "focusEn": "progress",
+              "focusPl": "postępy"
+            },
+            {
+              "en": "Let's look at our progress against the original plan.",
+              "pl": "Spójrzmy na nasz postęp w porównaniu z pierwotnym planem.",
+              "focusEn": "progress",
+              "focusPl": "postęp"
+            }
+          ],
+          "acceptedAnswers": [
+            "progress"
+          ],
+          "acceptedTranslations": [
+            "postęp",
+            "postępy"
+          ]
+        },
+        {
+          "id": "project-management.on-schedule",
+          "term": "on schedule",
+          "ipa": "/ɑːn ˈskedʒuːl/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zgodnie z harmonogramem",
+          "definition": "Happening at the time that was planned.",
+          "register": "neutralny",
+          "contextPl": "Prace idą zgodnie z planem",
+          "natural": "on track",
+          "forms": "",
+          "collocations": "be on schedule; stay on schedule; right on schedule",
+          "synonyms": "on track",
+          "antonyms": "behind schedule",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The design team is right on schedule.",
+              "pl": "Zespół projektowy idzie dokładnie zgodnie z harmonogramem.",
+              "focusEn": "on schedule",
+              "focusPl": "zgodnie z harmonogramem"
+            },
+            {
+              "en": "If testing stays on schedule, we launch in June.",
+              "pl": "Jeśli testy pójdą zgodnie z planem, startujemy w czerwcu.",
+              "focusEn": "on schedule",
+              "focusPl": "zgodnie z planem"
+            }
+          ],
+          "acceptedAnswers": [
+            "on schedule",
+            "on track"
+          ],
+          "acceptedTranslations": [
+            "zgodnie z harmonogramem",
+            "zgodnie z planem",
+            "w terminie"
+          ]
+        },
+        {
+          "id": "project-management.ahead-of-schedule",
+          "term": "ahead of schedule",
+          "ipa": "/əˌhed əv ˈskedʒuːl/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przed terminem",
+          "definition": "Earlier than the time that was planned.",
+          "register": "neutralny",
+          "contextPl": "Prace wyprzedzają plan",
+          "natural": "",
+          "forms": "",
+          "collocations": "two weeks ahead of schedule; finish ahead of schedule",
+          "synonyms": "early",
+          "antonyms": "behind schedule",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The back end is ready two weeks ahead of schedule.",
+              "pl": "Część serwerowa jest gotowa dwa tygodnie przed terminem.",
+              "focusEn": "ahead of schedule",
+              "focusPl": "przed terminem"
+            },
+            {
+              "en": "Finishing the login screen ahead of schedule gave us some breathing room.",
+              "pl": "Skończenie ekranu logowania przed czasem dało nam trochę oddechu.",
+              "focusEn": "ahead of schedule",
+              "focusPl": "przed czasem"
+            }
+          ],
+          "acceptedAnswers": [
+            "ahead of schedule"
+          ],
+          "acceptedTranslations": [
+            "przed terminem",
+            "przed czasem",
+            "przed planowanym terminem"
+          ]
+        },
+        {
+          "id": "project-management.delay",
+          "term": "delay",
+          "ipa": "/dɪˈleɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "opóźnienie",
+          "definition": "A situation in which something happens later than planned.",
+          "register": "neutralny",
+          "contextPl": "Spóźnienia w harmonogramie",
+          "natural": "",
+          "forms": "delays",
+          "collocations": "a short delay; cause a delay; without delay",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The supplier's delay pushed our testing back a week.",
+              "pl": "Opóźnienie dostawcy przesunęło nasze testy o tydzień.",
+              "focusEn": "delay",
+              "focusPl": "Opóźnienie"
+            },
+            {
+              "en": "A two-day delay isn't a disaster, but we need to watch it.",
+              "pl": "Dwudniowe opóźnienie to nie katastrofa, ale musimy go pilnować.",
+              "focusEn": "delay",
+              "focusPl": "opóźnienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "delay"
+          ],
+          "acceptedTranslations": [
+            "opóźnienie",
+            "zwłoka"
+          ]
+        },
+        {
+          "id": "project-management.postpone",
+          "term": "postpone",
+          "ipa": "/poʊstˈpoʊn/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przełożyć",
+          "definition": "To move an event or task to a later time.",
+          "register": "neutralny",
+          "contextPl": "Przesuwanie terminów",
+          "natural": "push back",
+          "forms": "postponed; postponing",
+          "collocations": "postpone a meeting; postpone the launch",
+          "synonyms": "put off; push back",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We had to postpone the client demo until next Thursday.",
+              "pl": "Musieliśmy przełożyć demo dla klienta na przyszły czwartek.",
+              "focusEn": "postpone",
+              "focusPl": "przełożyć"
+            },
+            {
+              "en": "Should we postpone the launch or cut a feature?",
+              "pl": "Czy powinniśmy przełożyć start, czy wyciąć jedną funkcję?",
+              "focusEn": "postpone",
+              "focusPl": "przełożyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "postpone",
+            "put off",
+            "push back"
+          ],
+          "acceptedTranslations": [
+            "przełożyć",
+            "przekładać",
+            "odłożyć",
+            "odkładać",
+            "przesunąć"
+          ]
+        },
+        {
+          "id": "project-management.slip",
+          "term": "slip",
+          "ipa": "/slɪp/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przesunąć się",
+          "definition": "Of a date or plan: to move later than expected.",
+          "register": "potoczny",
+          "contextPl": "Termin się przesuwa",
+          "natural": "",
+          "forms": "slipped; slipping",
+          "collocations": "the deadline slipped; let the schedule slip",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The launch date slipped by two weeks because of the server issue.",
+              "pl": "Data startu przesunęła się o dwa tygodnie z powodu problemu z serwerem.",
+              "focusEn": "slipped",
+              "focusPl": "przesunęła się"
+            },
+            {
+              "en": "If the design slips again, the whole timeline moves.",
+              "pl": "Jeśli projekt graficzny znowu się opóźni, przesunie się cały harmonogram.",
+              "focusEn": "slips",
+              "focusPl": "się opóźni"
+            }
+          ],
+          "acceptedAnswers": [
+            "slip"
+          ],
+          "acceptedTranslations": [
+            "przesunąć się",
+            "przesuwać się",
+            "opóźnić się",
+            "opóźniać się"
+          ]
+        },
+        {
+          "id": "project-management.track-progress",
+          "term": "track progress",
+          "ipa": "/ˌtræk ˈprɑːɡres/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "śledzić postępy",
+          "definition": "To regularly check how much of the work is finished.",
+          "register": "neutralny",
+          "contextPl": "Kontrola zaawansowania prac",
+          "natural": "",
+          "forms": "tracked; tracking",
+          "collocations": "track progress daily; track progress on a board",
+          "synonyms": "monitor",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We track progress on the board every morning.",
+              "pl": "Codziennie rano śledzimy postępy na tablicy.",
+              "focusEn": "track progress",
+              "focusPl": "śledzimy postępy"
+            },
+            {
+              "en": "It's hard to track progress when half the tasks have no owner.",
+              "pl": "Trudno śledzić postępy, kiedy połowa zadań nie ma osoby odpowiedzialnej.",
+              "focusEn": "track progress",
+              "focusPl": "śledzić postępy"
+            }
+          ],
+          "acceptedAnswers": [
+            "track progress",
+            "track the progress"
+          ],
+          "acceptedTranslations": [
+            "śledzić postępy",
+            "monitorować postępy"
+          ]
+        },
+        {
+          "id": "project-management.dependency",
+          "term": "dependency",
+          "ipa": "/dɪˈpendənsi/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zależność",
+          "definition": "A task that cannot start or finish until another task is done.",
+          "register": "specjalistyczny",
+          "contextPl": "Powiązania między zadaniami",
+          "natural": "",
+          "forms": "dependencies",
+          "collocations": "task dependency; a dependency on something",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Because of a dependency on the new server, this task can't start yet.",
+              "pl": "Ze względu na zależność od nowego serwera to zadanie nie może się jeszcze zacząć.",
+              "focusEn": "dependency",
+              "focusPl": "zależność"
+            },
+            {
+              "en": "The chart shows every dependency between the design and coding tasks.",
+              "pl": "Wykres pokazuje każdą zależność między zadaniami projektowymi a programistycznymi.",
+              "focusEn": "dependency",
+              "focusPl": "zależność"
+            }
+          ],
+          "acceptedAnswers": [
+            "dependency"
+          ],
+          "acceptedTranslations": [
+            "zależność"
+          ]
+        },
+        {
+          "id": "project-management.critical-path",
+          "term": "critical path",
+          "ipa": "/ˌkrɪtɪkəl ˈpæθ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "ścieżka krytyczna",
+          "definition": "The chain of tasks that decides the shortest possible time for a project.",
+          "register": "specjalistyczny",
+          "contextPl": "Zadania decydujące o terminie końcowym",
+          "natural": "",
+          "forms": "",
+          "collocations": "on the critical path",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The payment module is on the critical path, so any delay moves the launch.",
+              "pl": "Moduł płatności leży na ścieżce krytycznej, więc każde opóźnienie przesuwa start.",
+              "focusEn": "critical path",
+              "focusPl": "ścieżce krytycznej"
+            },
+            {
+              "en": "Let's check the critical path before we promise a new date.",
+              "pl": "Sprawdźmy ścieżkę krytyczną, zanim obiecamy nową datę.",
+              "focusEn": "critical path",
+              "focusPl": "ścieżkę krytyczną"
+            }
+          ],
+          "acceptedAnswers": [
+            "critical path"
+          ],
+          "acceptedTranslations": [
+            "ścieżka krytyczna"
+          ]
+        },
+        {
+          "id": "project-management.buffer",
+          "term": "buffer",
+          "ipa": "/ˈbʌfər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zapas czasu",
+          "definition": "Extra time added to a plan in case something goes wrong.",
+          "register": "neutralny",
+          "contextPl": "Margines bezpieczeństwa w planie",
+          "natural": "",
+          "forms": "buffers",
+          "collocations": "build in a buffer; a week of buffer",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I always add a week of buffer before the launch date.",
+              "pl": "Zawsze dodaję tydzień zapasu przed datą startu.",
+              "focusEn": "buffer",
+              "focusPl": "zapasu"
+            },
+            {
+              "en": "We've already used up half of our buffer.",
+              "pl": "Zużyliśmy już połowę naszego zapasu czasu.",
+              "focusEn": "buffer",
+              "focusPl": "zapasu czasu"
+            }
+          ],
+          "acceptedAnswers": [
+            "buffer"
+          ],
+          "acceptedTranslations": [
+            "zapas czasu",
+            "zapas",
+            "bufor",
+            "margines"
+          ]
+        },
+        {
+          "id": "project-management.bottleneck",
+          "term": "bottleneck",
+          "ipa": "/ˈbɑːtəlnek/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "wąskie gardło",
+          "definition": "One part of a process that is slower than the rest and delays everything.",
+          "register": "neutralny",
+          "contextPl": "Miejsca, które spowalniają pracę",
+          "natural": "",
+          "forms": "bottlenecks",
+          "collocations": "create a bottleneck; remove a bottleneck",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Code review has become our biggest bottleneck.",
+              "pl": "Przegląd kodu stał się naszym największym wąskim gardłem.",
+              "focusEn": "bottleneck",
+              "focusPl": "wąskim gardłem"
+            },
+            {
+              "en": "With only one tester, testing is an obvious bottleneck.",
+              "pl": "Przy tylko jednej testerce testy to oczywiste wąskie gardło.",
+              "focusEn": "bottleneck",
+              "focusPl": "wąskie gardło"
+            }
+          ],
+          "acceptedAnswers": [
+            "bottleneck"
+          ],
+          "acceptedTranslations": [
+            "wąskie gardło"
+          ]
+        },
+        {
+          "id": "project-management.make-up-for-lost-time",
+          "term": "make up for lost time",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nadrobić stracony czas",
+          "definition": "To work harder or faster because you lost time earlier.",
+          "register": "neutralny",
+          "contextPl": "Nadrabianie opóźnień",
+          "natural": "catch up",
+          "forms": "made up; making up",
+          "collocations": "",
+          "synonyms": "catch up",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll work two Saturdays to make up for lost time.",
+              "pl": "Przepracujemy dwie soboty, żeby nadrobić stracony czas.",
+              "focusEn": "make up for lost time",
+              "focusPl": "nadrobić stracony czas"
+            },
+            {
+              "en": "Adding a second tester helped us make up for lost time.",
+              "pl": "Dodanie drugiego testera pomogło nam nadrobić stracony czas.",
+              "focusEn": "make up for lost time",
+              "focusPl": "nadrobić stracony czas"
+            }
+          ],
+          "acceptedAnswers": [
+            "make up for lost time"
+          ],
+          "acceptedTranslations": [
+            "nadrobić stracony czas",
+            "nadrabiać stracony czas",
+            "nadrobić zaległości"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project-management.resources-budget",
+      "namePl": "Zasoby i budżet",
+      "scenePl": "Rozmowa kierowniczki projektu z dyrektorem o ludziach i pieniądzach na projekt",
+      "entries": [
+        {
+          "id": "project-management.budget",
+          "term": "budget",
+          "ipa": "/ˈbʌdʒət/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "budżet",
+          "definition": "The amount of money that is available for a project.",
+          "register": "neutralny",
+          "contextPl": "Pieniądze przeznaczone na projekt",
+          "natural": "",
+          "forms": "budgets",
+          "collocations": "project budget; a tight budget; stay within budget",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The budget for this project is a hundred and twenty thousand dollars.",
+              "pl": "Budżet tego projektu wynosi sto dwadzieścia tysięcy dolarów.",
+              "focusEn": "budget",
+              "focusPl": "Budżet"
+            },
+            {
+              "en": "Hiring another designer would eat up a big part of the budget.",
+              "pl": "Zatrudnienie kolejnego projektanta pochłonęłoby dużą część budżetu.",
+              "focusEn": "budget",
+              "focusPl": "budżetu"
+            }
+          ],
+          "acceptedAnswers": [
+            "budget"
+          ],
+          "acceptedTranslations": [
+            "budżet"
+          ]
+        },
+        {
+          "id": "project-management.cost",
+          "term": "cost",
+          "ipa": "/kɔːst/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "koszt",
+          "definition": "The amount of money needed to do or make something.",
+          "register": "neutralny",
+          "contextPl": "Wydatki projektu",
+          "natural": "",
+          "forms": "costs",
+          "collocations": "the total cost; cut costs; keep costs down",
+          "synonyms": "expense",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The biggest cost is the developers' time.",
+              "pl": "Największym kosztem jest czas programistów.",
+              "focusEn": "cost",
+              "focusPl": "kosztem"
+            },
+            {
+              "en": "Can we lower the cost by reusing an existing design?",
+              "pl": "Czy możemy obniżyć koszt, wykorzystując istniejący projekt graficzny?",
+              "focusEn": "cost",
+              "focusPl": "koszt"
+            }
+          ],
+          "acceptedAnswers": [
+            "cost",
+            "expense"
+          ],
+          "acceptedTranslations": [
+            "koszt",
+            "wydatek"
+          ]
+        },
+        {
+          "id": "project-management.resources",
+          "term": "resources",
+          "ipa": "/ˈriːsɔːrsɪz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zasoby",
+          "definition": "The people, money, and equipment that you can use for a project.",
+          "register": "neutralny",
+          "contextPl": "Ludzie, czas i sprzęt do pracy",
+          "natural": "",
+          "forms": "",
+          "collocations": "allocate resources; limited resources; lack resources",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I need more resources if you want the app in June.",
+              "pl": "Potrzebuję więcej zasobów, jeśli chce pan mieć aplikację w czerwcu.",
+              "focusEn": "resources",
+              "focusPl": "zasobów"
+            },
+            {
+              "en": "We don't have the resources to build both versions at once.",
+              "pl": "Nie mamy zasobów, żeby budować obie wersje naraz.",
+              "focusEn": "resources",
+              "focusPl": "zasobów"
+            }
+          ],
+          "acceptedAnswers": [
+            "resources",
+            "resource"
+          ],
+          "acceptedTranslations": [
+            "zasoby",
+            "środki"
+          ]
+        },
+        {
+          "id": "project-management.over-budget",
+          "term": "over budget",
+          "ipa": "/ˌoʊvər ˈbʌdʒət/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ponad budżet",
+          "definition": "Costing more money than was planned.",
+          "register": "neutralny",
+          "contextPl": "Przekroczenie zaplanowanych kosztów",
+          "natural": "",
+          "forms": "",
+          "collocations": "go over budget; run over budget",
+          "synonyms": "",
+          "antonyms": "under budget",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We're already ten percent over budget.",
+              "pl": "Jesteśmy już dziesięć procent ponad budżetem.",
+              "focusEn": "over budget",
+              "focusPl": "ponad budżetem"
+            },
+            {
+              "en": "The director doesn't want another project that goes over budget.",
+              "pl": "Dyrektor nie chce kolejnego projektu, który przekroczy budżet.",
+              "focusEn": "over budget",
+              "focusPl": "przekroczy budżet"
+            }
+          ],
+          "acceptedAnswers": [
+            "over budget",
+            "go over budget"
+          ],
+          "acceptedTranslations": [
+            "ponad budżet",
+            "ponad budżetem",
+            "przekroczyć budżet"
+          ]
+        },
+        {
+          "id": "project-management.under-budget",
+          "term": "under budget",
+          "ipa": "/ˌʌndər ˈbʌdʒət/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "poniżej budżetu",
+          "definition": "Costing less money than was planned.",
+          "register": "neutralny",
+          "contextPl": "Oszczędności względem planu",
+          "natural": "",
+          "forms": "",
+          "collocations": "come in under budget; finish under budget",
+          "synonyms": "",
+          "antonyms": "over budget",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The last project finished two weeks early and under budget.",
+              "pl": "Poprzedni projekt skończył się dwa tygodnie przed czasem i poniżej budżetu.",
+              "focusEn": "under budget",
+              "focusPl": "poniżej budżetu"
+            },
+            {
+              "en": "If we finish this phase under budget, we can add the chat feature.",
+              "pl": "Jeśli zamkniemy ten etap poniżej budżetu, możemy dodać funkcję czatu.",
+              "focusEn": "under budget",
+              "focusPl": "poniżej budżetu"
+            }
+          ],
+          "acceptedAnswers": [
+            "under budget"
+          ],
+          "acceptedTranslations": [
+            "poniżej budżetu",
+            "taniej niż planowano"
+          ]
+        },
+        {
+          "id": "project-management.allocate",
+          "term": "allocate",
+          "ipa": "/ˈæləkeɪt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przydzielić",
+          "definition": "To give people, money, or time to a particular task.",
+          "register": "formalny",
+          "contextPl": "Podział ludzi i pieniędzy",
+          "natural": "",
+          "forms": "allocated; allocating",
+          "collocations": "allocate resources; allocate a budget; allocate time",
+          "synonyms": "assign",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The director agreed to allocate two more developers to the project.",
+              "pl": "Dyrektor zgodził się przydzielić do projektu dwóch kolejnych programistów.",
+              "focusEn": "allocate",
+              "focusPl": "przydzielić"
+            },
+            {
+              "en": "How much of the budget should we allocate to testing?",
+              "pl": "Jaką część budżetu powinniśmy przeznaczyć na testy?",
+              "focusEn": "allocate",
+              "focusPl": "przeznaczyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "allocate",
+            "assign"
+          ],
+          "acceptedTranslations": [
+            "przydzielić",
+            "przydzielać",
+            "przeznaczyć",
+            "przeznaczać"
+          ]
+        },
+        {
+          "id": "project-management.capacity",
+          "term": "capacity",
+          "ipa": "/kəˈpæsəti/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "moce przerobowe",
+          "definition": "The amount of work a team or person is able to do.",
+          "register": "neutralny",
+          "contextPl": "Ile pracy zespół jest w stanie wykonać",
+          "natural": "",
+          "forms": "",
+          "collocations": "at full capacity; team capacity; extra capacity",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The team is working at full capacity until the end of the month.",
+              "pl": "Do końca miesiąca zespół ma zajęte wszystkie moce przerobowe.",
+              "focusEn": "capacity",
+              "focusPl": "moce przerobowe"
+            },
+            {
+              "en": "Do we have the capacity to take on a second client?",
+              "pl": "Czy mamy moce przerobowe, żeby wziąć drugiego klienta?",
+              "focusEn": "capacity",
+              "focusPl": "moce przerobowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "capacity"
+          ],
+          "acceptedTranslations": [
+            "moce przerobowe",
+            "możliwości",
+            "wydajność",
+            "przepustowość"
+          ]
+        },
+        {
+          "id": "project-management.contractor",
+          "term": "contractor",
+          "ipa": "/ˈkɑːntræktər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "podwykonawca",
+          "definition": "A person or company paid to do a specific job but not employed by you.",
+          "register": "neutralny",
+          "contextPl": "Zewnętrzni wykonawcy",
+          "natural": "freelancer",
+          "forms": "contractors",
+          "collocations": "hire a contractor; outside contractor",
+          "synonyms": "freelancer",
+          "antonyms": "employee",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We could hire a contractor for the three months of design work.",
+              "pl": "Moglibyśmy zatrudnić podwykonawcę na trzy miesiące prac projektowych.",
+              "focusEn": "contractor",
+              "focusPl": "podwykonawcę"
+            },
+            {
+              "en": "A contractor costs more per hour, but there are no long-term costs.",
+              "pl": "Podwykonawca kosztuje więcej za godzinę, ale nie ma kosztów długoterminowych.",
+              "focusEn": "contractor",
+              "focusPl": "Podwykonawca"
+            }
+          ],
+          "acceptedAnswers": [
+            "contractor",
+            "freelancer"
+          ],
+          "acceptedTranslations": [
+            "podwykonawca",
+            "wykonawca zewnętrzny",
+            "zleceniobiorca"
+          ]
+        },
+        {
+          "id": "project-management.outsource",
+          "term": "outsource",
+          "ipa": "/ˈaʊtsɔːrs/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zlecić na zewnątrz",
+          "definition": "To pay another company to do part of your work.",
+          "register": "neutralny",
+          "contextPl": "Przekazywanie prac firmom zewnętrznym",
+          "natural": "",
+          "forms": "outsourced; outsourcing",
+          "collocations": "outsource testing; outsource work",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's outsource the testing to a specialist company.",
+              "pl": "Zlećmy testy wyspecjalizowanej firmie zewnętrznej.",
+              "focusEn": "outsource",
+              "focusPl": "Zlećmy"
+            },
+            {
+              "en": "We outsourced the illustrations to save time.",
+              "pl": "Ilustracje zleciliśmy na zewnątrz, żeby zaoszczędzić czas.",
+              "focusEn": "outsourced",
+              "focusPl": "zleciliśmy na zewnątrz"
+            }
+          ],
+          "acceptedAnswers": [
+            "outsource"
+          ],
+          "acceptedTranslations": [
+            "zlecić na zewnątrz",
+            "zlecać na zewnątrz",
+            "zlecić",
+            "zlecać",
+            "outsourcować"
+          ]
+        },
+        {
+          "id": "project-management.headcount",
+          "term": "headcount",
+          "ipa": "/ˈhedkaʊnt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "liczba etatów",
+          "definition": "The number of people who work in a team or company.",
+          "register": "specjalistyczny",
+          "contextPl": "Liczebność zespołu w planowaniu",
+          "natural": "",
+          "forms": "",
+          "collocations": "increase headcount; current headcount",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We can't increase headcount until the new budget year.",
+              "pl": "Nie możemy zwiększyć liczby etatów przed nowym rokiem budżetowym.",
+              "focusEn": "headcount",
+              "focusPl": "liczby etatów"
+            },
+            {
+              "en": "With our current headcount, June is not realistic.",
+              "pl": "Przy obecnej liczbie pracowników czerwiec nie jest realny.",
+              "focusEn": "headcount",
+              "focusPl": "liczbie pracowników"
+            }
+          ],
+          "acceptedAnswers": [
+            "headcount"
+          ],
+          "acceptedTranslations": [
+            "liczba etatów",
+            "liczba pracowników",
+            "obsada"
+          ]
+        },
+        {
+          "id": "project-management.bandwidth",
+          "term": "bandwidth",
+          "ipa": "/ˈbændwɪdθ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "czas i siły",
+          "definition": "The time and energy a person has available to deal with work.",
+          "register": "potoczny",
+          "contextPl": "Biurowo: czy ktoś ma czas na dodatkowe zadanie",
+          "natural": "time",
+          "forms": "",
+          "collocations": "have the bandwidth; no bandwidth for something",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Dosłownie „przepustowość łącza”; w biurze potocznie o czasie i energii ludzi.",
+          "examples": [
+            {
+              "en": "I don't have the bandwidth to manage two projects right now.",
+              "pl": "Nie mam teraz czasu ani sił, żeby prowadzić dwa projekty.",
+              "focusEn": "bandwidth",
+              "focusPl": "czasu ani sił"
+            },
+            {
+              "en": "Does anyone have the bandwidth to help with testing next week?",
+              "pl": "Czy ktoś ma w przyszłym tygodniu czas, żeby pomóc przy testach?",
+              "focusEn": "bandwidth",
+              "focusPl": "czas"
+            }
+          ],
+          "acceptedAnswers": [
+            "bandwidth"
+          ],
+          "acceptedTranslations": [
+            "czas i siły",
+            "czas",
+            "przestrzeń",
+            "moc"
+          ]
+        },
+        {
+          "id": "project-management.cut-corners",
+          "term": "cut corners",
+          "ipa": "/ˌkʌt ˈkɔːrnərz/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "iść na skróty",
+          "definition": "To do something badly or cheaply to save time or money.",
+          "register": "potoczny",
+          "contextPl": "Oszczędzanie kosztem jakości",
+          "natural": "",
+          "forms": "cut corners; cutting corners",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We can save money, but I won't cut corners on security.",
+              "pl": "Możemy zaoszczędzić, ale nie pójdę na skróty w kwestii bezpieczeństwa.",
+              "focusEn": "cut corners",
+              "focusPl": "na skróty"
+            },
+            {
+              "en": "The last vendor cut corners, and we paid for it later.",
+              "pl": "Poprzedni dostawca szedł na skróty i potem za to zapłaciliśmy.",
+              "focusEn": "cut corners",
+              "focusPl": "szedł na skróty"
+            }
+          ],
+          "acceptedAnswers": [
+            "cut corners"
+          ],
+          "acceptedTranslations": [
+            "iść na skróty",
+            "pójść na skróty",
+            "robić coś po łebkach"
+          ]
+        },
+        {
+          "id": "project-management.stretched-thin",
+          "term": "stretched thin",
+          "ipa": "/ˌstretʃt ˈθɪn/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "przeciążony",
+          "definition": "Having too much work and too few people or resources.",
+          "register": "potoczny",
+          "contextPl": "Za dużo pracy na zbyt mało osób",
+          "natural": "spread too thin",
+          "forms": "",
+          "collocations": "be stretched thin; stretched too thin",
+          "synonyms": "overloaded",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The team is stretched thin across three projects.",
+              "pl": "Zespół jest przeciążony, bo pracuje przy trzech projektach naraz.",
+              "focusEn": "stretched thin",
+              "focusPl": "przeciążony"
+            },
+            {
+              "en": "If you take people away now, we'll be stretched thin right before the launch.",
+              "pl": "Jeśli teraz zabierze pan ludzi, tuż przed startem będziemy przeciążeni.",
+              "focusEn": "stretched thin",
+              "focusPl": "przeciążeni"
+            }
+          ],
+          "acceptedAnswers": [
+            "stretched thin",
+            "spread too thin",
+            "stretched too thin"
+          ],
+          "acceptedTranslations": [
+            "przeciążony",
+            "przeciążeni",
+            "zawalony pracą"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project-management.risks",
+      "namePl": "Ryzyka i problemy",
+      "scenePl": "Spotkanie kryzysowe po tym, jak dostawca serwerów spóźnił się z dostawą",
+      "entries": [
+        {
+          "id": "project-management.risk",
+          "term": "risk",
+          "ipa": "/rɪsk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "ryzyko",
+          "definition": "The chance that something bad will happen to a project.",
+          "register": "neutralny",
+          "contextPl": "Zagrożenia dla projektu",
+          "natural": "",
+          "forms": "risks",
+          "collocations": "a big risk; reduce the risk; risk management",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The biggest risk now is the supplier missing the next date too.",
+              "pl": "Największym ryzykiem jest teraz to, że dostawca nie dotrzyma także kolejnego terminu.",
+              "focusEn": "risk",
+              "focusPl": "ryzykiem"
+            },
+            {
+              "en": "Let's list every risk and decide who watches each one.",
+              "pl": "Wypiszmy każde ryzyko i ustalmy, kto pilnuje którego.",
+              "focusEn": "risk",
+              "focusPl": "ryzyko"
+            }
+          ],
+          "acceptedAnswers": [
+            "risk"
+          ],
+          "acceptedTranslations": [
+            "ryzyko",
+            "zagrożenie"
+          ]
+        },
+        {
+          "id": "project-management.backup-plan",
+          "term": "backup plan",
+          "ipa": "/ˈbækʌp ˌplæn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "plan zapasowy",
+          "definition": "A second plan that you use if the first one fails.",
+          "register": "neutralny",
+          "contextPl": "Co zrobimy, jeśli coś nie wyjdzie",
+          "natural": "plan B",
+          "forms": "backup plans",
+          "collocations": "have a backup plan; switch to the backup plan",
+          "synonyms": "plan B",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do we have a backup plan if the servers don't arrive Monday?",
+              "pl": "Czy mamy plan zapasowy, jeśli serwery nie dotrą w poniedziałek?",
+              "focusEn": "backup plan",
+              "focusPl": "plan zapasowy"
+            },
+            {
+              "en": "The backup plan costs more, but it saves the launch date.",
+              "pl": "Plan zapasowy kosztuje więcej, ale ratuje datę startu.",
+              "focusEn": "backup plan",
+              "focusPl": "Plan zapasowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "backup plan",
+            "plan B"
+          ],
+          "acceptedTranslations": [
+            "plan zapasowy",
+            "plan B",
+            "plan awaryjny"
+          ]
+        },
+        {
+          "id": "project-management.setback",
+          "term": "setback",
+          "ipa": "/ˈsetbæk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "niepowodzenie",
+          "definition": "A problem that delays progress or makes a situation worse.",
+          "register": "neutralny",
+          "contextPl": "Problemy, które cofają projekt",
+          "natural": "",
+          "forms": "setbacks",
+          "collocations": "a major setback; suffer a setback",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This is a setback, but it's not the end of the project.",
+              "pl": "To komplikacja, ale nie koniec projektu.",
+              "focusEn": "setback",
+              "focusPl": "komplikacja"
+            },
+            {
+              "en": "After the server setback, the team needed some good news.",
+              "pl": "Po wpadce z serwerami zespół potrzebował dobrych wiadomości.",
+              "focusEn": "setback",
+              "focusPl": "wpadce"
+            }
+          ],
+          "acceptedAnswers": [
+            "setback"
+          ],
+          "acceptedTranslations": [
+            "niepowodzenie",
+            "komplikacja",
+            "przeszkoda",
+            "wpadka"
+          ]
+        },
+        {
+          "id": "project-management.roadblock",
+          "term": "roadblock",
+          "ipa": "/ˈroʊdblɑːk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przeszkoda",
+          "definition": "Something that stops a person or team from making progress.",
+          "register": "neutralny",
+          "contextPl": "Coś, co blokuje dalszą pracę",
+          "natural": "blocker",
+          "forms": "roadblocks",
+          "collocations": "hit a roadblock; remove a roadblock",
+          "synonyms": "obstacle; blocker",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The missing servers are a roadblock for the whole back-end team.",
+              "pl": "Brakujące serwery są przeszkodą dla całego zespołu backendowego.",
+              "focusEn": "roadblock",
+              "focusPl": "przeszkodą"
+            },
+            {
+              "en": "Tell me about any roadblock as soon as you hit it.",
+              "pl": "Mów mi o każdej przeszkodzie, gdy tylko na nią trafisz.",
+              "focusEn": "roadblock",
+              "focusPl": "przeszkodzie"
+            }
+          ],
+          "acceptedAnswers": [
+            "roadblock",
+            "blocker",
+            "obstacle"
+          ],
+          "acceptedTranslations": [
+            "przeszkoda",
+            "blokada",
+            "bloker"
+          ]
+        },
+        {
+          "id": "project-management.workaround",
+          "term": "workaround",
+          "ipa": "/ˈwɝːkəraʊnd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "obejście problemu",
+          "definition": "A temporary way of dealing with a problem without fixing it.",
+          "register": "neutralny",
+          "contextPl": "Tymczasowe rozwiązania",
+          "natural": "",
+          "forms": "workarounds",
+          "collocations": "find a workaround; temporary workaround",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Until the servers arrive, we have a workaround using a test environment.",
+              "pl": "Dopóki serwery nie dotrą, mamy obejście w postaci środowiska testowego.",
+              "focusEn": "workaround",
+              "focusPl": "obejście"
+            },
+            {
+              "en": "The workaround works, but it's slow and a bit messy.",
+              "pl": "To obejście działa, ale jest wolne i trochę chaotyczne.",
+              "focusEn": "workaround",
+              "focusPl": "obejście"
+            }
+          ],
+          "acceptedAnswers": [
+            "workaround"
+          ],
+          "acceptedTranslations": [
+            "obejście problemu",
+            "obejście",
+            "rozwiązanie tymczasowe"
+          ]
+        },
+        {
+          "id": "project-management.worst-case-scenario",
+          "term": "worst-case scenario",
+          "ipa": "/ˌwɝːst keɪs səˈnerioʊ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "najgorszy scenariusz",
+          "definition": "The worst thing that could possibly happen in a situation.",
+          "register": "neutralny",
+          "contextPl": "Przygotowanie na najgorsze",
+          "natural": "",
+          "forms": "worst-case scenarios",
+          "collocations": "in the worst-case scenario; plan for the worst-case scenario",
+          "synonyms": "",
+          "antonyms": "best-case scenario",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "In the worst-case scenario, we launch a month late.",
+              "pl": "W najgorszym scenariuszu wystartujemy z miesięcznym opóźnieniem.",
+              "focusEn": "worst-case scenario",
+              "focusPl": "najgorszym scenariuszu"
+            },
+            {
+              "en": "Let's prepare for the worst-case scenario and hope for the best.",
+              "pl": "Przygotujmy się na najgorszy scenariusz i liczmy na najlepsze.",
+              "focusEn": "worst-case scenario",
+              "focusPl": "najgorszy scenariusz"
+            }
+          ],
+          "acceptedAnswers": [
+            "worst-case scenario",
+            "worst case"
+          ],
+          "acceptedTranslations": [
+            "najgorszy scenariusz",
+            "najczarniejszy scenariusz"
+          ]
+        },
+        {
+          "id": "project-management.contingency-plan",
+          "term": "contingency plan",
+          "ipa": "/kənˈtɪndʒənsi ˌplæn/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "plan awaryjny",
+          "definition": "A formal plan for what to do if a particular problem happens.",
+          "register": "formalny",
+          "contextPl": "Formalne przygotowanie na zagrożenia",
+          "natural": "backup plan",
+          "forms": "contingency plans",
+          "collocations": "draw up a contingency plan",
+          "synonyms": "backup plan",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our contingency plan is to rent cloud servers for two months.",
+              "pl": "Naszym planem awaryjnym jest wynajęcie serwerów w chmurze na dwa miesiące.",
+              "focusEn": "contingency plan",
+              "focusPl": "planem awaryjnym"
+            },
+            {
+              "en": "Why didn't we have a contingency plan for this?",
+              "pl": "Dlaczego nie mieliśmy na to planu awaryjnego?",
+              "focusEn": "contingency plan",
+              "focusPl": "planu awaryjnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "contingency plan",
+            "backup plan"
+          ],
+          "acceptedTranslations": [
+            "plan awaryjny",
+            "plan na wypadek zagrożenia"
+          ]
+        },
+        {
+          "id": "project-management.mitigate",
+          "term": "mitigate",
+          "ipa": "/ˈmɪtɪɡeɪt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "ograniczyć",
+          "definition": "To make a risk or a bad effect smaller or less serious.",
+          "register": "formalny",
+          "contextPl": "Zmniejszanie ryzyka",
+          "natural": "reduce",
+          "forms": "mitigated; mitigating",
+          "collocations": "mitigate a risk; mitigate the impact",
+          "synonyms": "reduce; lessen",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How can we mitigate the risk of another delay?",
+              "pl": "Jak możemy ograniczyć ryzyko kolejnego opóźnienia?",
+              "focusEn": "mitigate",
+              "focusPl": "ograniczyć"
+            },
+            {
+              "en": "Ordering from two suppliers would mitigate most of the risk.",
+              "pl": "Zamówienie u dwóch dostawców ograniczyłoby większość ryzyka.",
+              "focusEn": "mitigate",
+              "focusPl": "ograniczyłoby"
+            }
+          ],
+          "acceptedAnswers": [
+            "mitigate",
+            "reduce"
+          ],
+          "acceptedTranslations": [
+            "ograniczyć",
+            "ograniczać",
+            "złagodzić",
+            "łagodzić",
+            "zmniejszyć"
+          ]
+        },
+        {
+          "id": "project-management.scope-creep",
+          "term": "scope creep",
+          "ipa": "/ˈskoʊp ˌkriːp/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "rozrastanie się zakresu",
+          "definition": "The slow, uncontrolled growth of a project as new features are added.",
+          "register": "specjalistyczny",
+          "contextPl": "Ciągłe dokładanie nowych wymagań",
+          "natural": "",
+          "forms": "",
+          "collocations": "avoid scope creep; deal with scope creep",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Half of this delay is scope creep, not the supplier.",
+              "pl": "Połowa tego opóźnienia to rozrastanie się zakresu, a nie wina dostawcy.",
+              "focusEn": "scope creep",
+              "focusPl": "rozrastanie się zakresu"
+            },
+            {
+              "en": "Every \"small extra feature\" from the client adds to the scope creep.",
+              "pl": "Każda „mała dodatkowa funkcja” od klienta przyczynia się do rozrastania się zakresu.",
+              "focusEn": "scope creep",
+              "focusPl": "rozrastania się zakresu"
+            }
+          ],
+          "acceptedAnswers": [
+            "scope creep"
+          ],
+          "acceptedTranslations": [
+            "rozrastanie się zakresu",
+            "rozszerzanie zakresu",
+            "pełzanie zakresu"
+          ]
+        },
+        {
+          "id": "project-management.root-cause",
+          "term": "root cause",
+          "ipa": "/ˌruːt ˈkɔːz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "główna przyczyna",
+          "definition": "The basic reason why a problem happened.",
+          "register": "neutralny",
+          "contextPl": "Szukanie źródła problemu",
+          "natural": "",
+          "forms": "root causes",
+          "collocations": "find the root cause; root cause analysis",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The root cause was an order that nobody confirmed.",
+              "pl": "Główną przyczyną było zamówienie, którego nikt nie potwierdził.",
+              "focusEn": "root cause",
+              "focusPl": "Główną przyczyną"
+            },
+            {
+              "en": "Let's find the root cause before we blame the supplier.",
+              "pl": "Znajdźmy główną przyczynę, zanim obwinimy dostawcę.",
+              "focusEn": "root cause",
+              "focusPl": "główną przyczynę"
+            }
+          ],
+          "acceptedAnswers": [
+            "root cause"
+          ],
+          "acceptedTranslations": [
+            "główna przyczyna",
+            "pierwotna przyczyna",
+            "źródło problemu"
+          ]
+        },
+        {
+          "id": "project-management.get-back-on-track",
+          "term": "get back on track",
+          "ipa": "/ˌɡet bæk ɑːn ˈtræk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wrócić na właściwe tory",
+          "definition": "To return to the planned schedule after a problem.",
+          "register": "neutralny",
+          "contextPl": "Powrót do planu po kłopotach",
+          "natural": "",
+          "forms": "got back; getting back",
+          "collocations": "get the project back on track",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What do we need to get back on track by Friday?",
+              "pl": "Czego potrzebujemy, żeby do piątku wrócić na właściwe tory?",
+              "focusEn": "get back on track",
+              "focusPl": "wrócić na właściwe tory"
+            },
+            {
+              "en": "If we rent cloud servers, we can get back on track within a week.",
+              "pl": "Jeśli wynajmiemy serwery w chmurze, w ciągu tygodnia możemy wrócić do planu.",
+              "focusEn": "get back on track",
+              "focusPl": "wrócić do planu"
+            }
+          ],
+          "acceptedAnswers": [
+            "get back on track",
+            "back on track"
+          ],
+          "acceptedTranslations": [
+            "wrócić na właściwe tory",
+            "wrócić do planu",
+            "wracać na właściwe tory"
+          ]
+        },
+        {
+          "id": "project-management.put-out-fires",
+          "term": "put out fires",
+          "ipa": "/ˌpʊt aʊt ˈfaɪərz/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "gasić pożary",
+          "definition": "To deal with urgent problems one after another instead of planning.",
+          "register": "potoczny",
+          "contextPl": "Ciągłe reagowanie na nagłe kłopoty",
+          "natural": "",
+          "forms": "put out; putting out",
+          "collocations": "spend the day putting out fires",
+          "synonyms": "firefight",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I spent the whole morning putting out fires instead of planning.",
+              "pl": "Cały ranek gasiłam pożary zamiast planować.",
+              "focusEn": "putting out fires",
+              "focusPl": "gasiłam pożary"
+            },
+            {
+              "en": "We can't just keep putting out fires; we need a real fix.",
+              "pl": "Nie możemy ciągle tylko gasić pożarów; potrzebujemy prawdziwego rozwiązania.",
+              "focusEn": "putting out fires",
+              "focusPl": "gasić pożarów"
+            }
+          ],
+          "acceptedAnswers": [
+            "put out fires",
+            "firefight",
+            "put out a fire"
+          ],
+          "acceptedTranslations": [
+            "gasić pożary",
+            "gasić pożar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project-management.closing",
+      "namePl": "Raportowanie i zamknięcie",
+      "scenePl": "Ostatnie tygodnie projektu: raport dla klienta, odbiór i podsumowanie z zespołem",
+      "entries": [
+        {
+          "id": "project-management.deliver",
+          "term": "deliver",
+          "ipa": "/dɪˈlɪvər/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "dostarczyć",
+          "definition": "To finish and give a promised piece of work to the client.",
+          "register": "neutralny",
+          "contextPl": "Oddanie gotowej pracy",
+          "natural": "",
+          "forms": "delivered; delivering",
+          "collocations": "deliver on time; deliver results; deliver a project",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We delivered the final version two days before the deadline.",
+              "pl": "Dostarczyliśmy ostateczną wersję dwa dni przed terminem.",
+              "focusEn": "delivered",
+              "focusPl": "Dostarczyliśmy"
+            },
+            {
+              "en": "Can we deliver the admin panel by the end of the month?",
+              "pl": "Czy możemy dostarczyć panel administracyjny do końca miesiąca?",
+              "focusEn": "deliver",
+              "focusPl": "dostarczyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "deliver"
+          ],
+          "acceptedTranslations": [
+            "dostarczyć",
+            "dostarczać",
+            "oddać",
+            "oddawać"
+          ]
+        },
+        {
+          "id": "project-management.final-report",
+          "term": "final report",
+          "ipa": "/ˌfaɪnəl rɪˈpɔːrt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "raport końcowy",
+          "definition": "A document written at the end of a project that describes its results.",
+          "register": "neutralny",
+          "contextPl": "Podsumowanie projektu na piśmie",
+          "natural": "",
+          "forms": "final reports",
+          "collocations": "write the final report; submit the final report",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The final report includes the budget, the timeline, and the lessons learned.",
+              "pl": "Raport końcowy obejmuje budżet, harmonogram i wnioski na przyszłość.",
+              "focusEn": "final report",
+              "focusPl": "Raport końcowy"
+            },
+            {
+              "en": "The client asked for a shorter version of the final report.",
+              "pl": "Klient poprosił o krótszą wersję raportu końcowego.",
+              "focusEn": "final report",
+              "focusPl": "raportu końcowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "final report"
+          ],
+          "acceptedTranslations": [
+            "raport końcowy",
+            "sprawozdanie końcowe"
+          ]
+        },
+        {
+          "id": "project-management.status-report",
+          "term": "status report",
+          "ipa": "/ˈsteɪtəs rɪˌpɔːrt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "raport z postępów",
+          "definition": "A regular short report that tells people how a project is going.",
+          "register": "neutralny",
+          "contextPl": "Regularne informowanie o stanie prac",
+          "natural": "status update",
+          "forms": "status reports",
+          "collocations": "weekly status report; send a status report",
+          "synonyms": "progress report",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I send the client a short status report every Friday.",
+              "pl": "Co piątek wysyłam klientowi krótki raport z postępów.",
+              "focusEn": "status report",
+              "focusPl": "raport z postępów"
+            },
+            {
+              "en": "The last status report showed everything in green.",
+              "pl": "Ostatni raport z postępów pokazywał wszystko na zielono.",
+              "focusEn": "status report",
+              "focusPl": "raport z postępów"
+            }
+          ],
+          "acceptedAnswers": [
+            "status report",
+            "progress report",
+            "status update"
+          ],
+          "acceptedTranslations": [
+            "raport z postępów",
+            "raport o stanie prac",
+            "raport statusowy"
+          ]
+        },
+        {
+          "id": "project-management.go-live",
+          "term": "go live",
+          "ipa": "/ˌɡoʊ ˈlaɪv/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wystartować",
+          "definition": "Of a system or app: to start working for real users.",
+          "register": "neutralny",
+          "contextPl": "Uruchomienie produktu dla użytkowników",
+          "natural": "launch",
+          "forms": "went live; gone live",
+          "collocations": "go live on Monday; go-live date",
+          "synonyms": "launch",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The app will go live on Monday at nine a.m.",
+              "pl": "Aplikacja ruszy w poniedziałek o dziewiątej rano.",
+              "focusEn": "go live",
+              "focusPl": "ruszy"
+            },
+            {
+              "en": "Two days after we went live, the client called to say thanks.",
+              "pl": "Dwa dni po tym, jak wystartowaliśmy, klient zadzwonił z podziękowaniami.",
+              "focusEn": "went live",
+              "focusPl": "wystartowaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "go live",
+            "launch"
+          ],
+          "acceptedTranslations": [
+            "wystartować",
+            "ruszyć",
+            "zostać uruchomionym"
+          ]
+        },
+        {
+          "id": "project-management.sign-off",
+          "term": "sign-off",
+          "ipa": "/ˈsaɪn ɔːf/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zatwierdzenie",
+          "definition": "Official approval that a piece of work is finished and accepted.",
+          "register": "neutralny",
+          "contextPl": "Formalny odbiór prac przez klienta",
+          "natural": "approval",
+          "forms": "",
+          "collocations": "get sign-off; final sign-off; client sign-off",
+          "synonyms": "approval",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need the client's sign-off before we can close the project.",
+              "pl": "Potrzebujemy zatwierdzenia klienta, zanim zamkniemy projekt.",
+              "focusEn": "sign-off",
+              "focusPl": "zatwierdzenia"
+            },
+            {
+              "en": "The final sign-off came by email late on Thursday.",
+              "pl": "Ostateczne zatwierdzenie przyszło mailem późno w czwartek.",
+              "focusEn": "sign-off",
+              "focusPl": "zatwierdzenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "sign-off",
+            "approval"
+          ],
+          "acceptedTranslations": [
+            "zatwierdzenie",
+            "akceptacja",
+            "odbiór"
+          ]
+        },
+        {
+          "id": "project-management.handover",
+          "term": "handover",
+          "ipa": "/ˈhændoʊvər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przekazanie",
+          "definition": "The act of giving responsibility for work or a system to another person or team.",
+          "register": "neutralny",
+          "contextPl": "Przekazanie projektu innym",
+          "natural": "",
+          "forms": "handovers",
+          "collocations": "handover document; smooth handover",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The handover to the client's IT team takes two days.",
+              "pl": "Przekazanie projektu zespołowi IT klienta trwa dwa dni.",
+              "focusEn": "handover",
+              "focusPl": "Przekazanie"
+            },
+            {
+              "en": "I prepared a handover document with every account and contact the client needs.",
+              "pl": "Przygotowałam dokument przekazania ze wszystkimi kontami i kontaktami, których klient potrzebuje.",
+              "focusEn": "handover",
+              "focusPl": "przekazania"
+            }
+          ],
+          "acceptedAnswers": [
+            "handover"
+          ],
+          "acceptedTranslations": [
+            "przekazanie",
+            "przekazanie projektu"
+          ]
+        },
+        {
+          "id": "project-management.align",
+          "term": "align",
+          "ipa": "/əˈlaɪn/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "uzgodnić",
+          "definition": "To agree with other people about plans or priorities.",
+          "register": "formalny",
+          "contextPl": "Ustalanie wspólnego stanowiska",
+          "natural": "get on the same page",
+          "forms": "aligned; aligning",
+          "collocations": "align on priorities; align with the client",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's align with the client on the launch plan before Friday.",
+              "pl": "Uzgodnijmy z klientem plan startu przed piątkiem.",
+              "focusEn": "align",
+              "focusPl": "Uzgodnijmy"
+            },
+            {
+              "en": "The two teams weren't aligned on the priorities.",
+              "pl": "Oba zespoły nie były zgodne co do priorytetów.",
+              "focusEn": "aligned",
+              "focusPl": "zgodne"
+            }
+          ],
+          "acceptedAnswers": [
+            "align"
+          ],
+          "acceptedTranslations": [
+            "uzgodnić",
+            "uzgadniać",
+            "zgrać się",
+            "być zgodnym"
+          ]
+        },
+        {
+          "id": "project-management.accountable",
+          "term": "accountable",
+          "ipa": "/əˈkaʊntəbəl/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "odpowiedzialny",
+          "definition": "Responsible for something and expected to explain the results.",
+          "register": "formalny",
+          "contextPl": "Kto ponosi odpowiedzialność za wynik",
+          "natural": "responsible",
+          "forms": "",
+          "collocations": "be accountable for; hold someone accountable",
+          "synonyms": "responsible",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "In the end, I'm accountable to the client for the launch date.",
+              "pl": "Ostatecznie to ja jestem odpowiedzialna przed klientem za datę startu.",
+              "focusEn": "accountable",
+              "focusPl": "odpowiedzialna"
+            },
+            {
+              "en": "Each team lead is accountable for their part of the final report.",
+              "pl": "Każdy lider zespołu jest odpowiedzialny za swoją część raportu końcowego.",
+              "focusEn": "accountable",
+              "focusPl": "odpowiedzialny"
+            }
+          ],
+          "acceptedAnswers": [
+            "accountable",
+            "responsible"
+          ],
+          "acceptedTranslations": [
+            "odpowiedzialny",
+            "rozliczany"
+          ]
+        },
+        {
+          "id": "project-management.lessons-learned",
+          "term": "lessons learned",
+          "ipa": "/ˌlesənz ˈlɝːnd/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wnioski na przyszłość",
+          "definition": "Useful knowledge gained from what went well or badly in a project.",
+          "register": "neutralny",
+          "contextPl": "Podsumowanie doświadczeń z projektu",
+          "natural": "",
+          "forms": "",
+          "collocations": "write up the lessons learned; share lessons learned",
+          "synonyms": "takeaways",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I wrote up the lessons learned so the next team doesn't repeat our mistakes.",
+              "pl": "Spisałam wnioski na przyszłość, żeby następny zespół nie powtórzył naszych błędów.",
+              "focusEn": "lessons learned",
+              "focusPl": "wnioski na przyszłość"
+            },
+            {
+              "en": "Our top lessons learned were simple: confirm orders and protect the buffer.",
+              "pl": "Nasze najważniejsze wnioski były proste: potwierdzać zamówienia i chronić zapas czasu.",
+              "focusEn": "lessons learned",
+              "focusPl": "wnioski"
+            }
+          ],
+          "acceptedAnswers": [
+            "lessons learned",
+            "takeaways"
+          ],
+          "acceptedTranslations": [
+            "wnioski na przyszłość",
+            "wnioski",
+            "wyciągnięte wnioski"
+          ]
+        },
+        {
+          "id": "project-management.retrospective",
+          "term": "retrospective",
+          "ipa": "/ˌretrəˈspektɪv/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "retrospektywa",
+          "definition": "A meeting where a team discusses what went well and what to improve.",
+          "register": "specjalistyczny",
+          "contextPl": "Spotkanie podsumowujące pracę zespołu",
+          "natural": "retro",
+          "forms": "retrospectives",
+          "collocations": "hold a retrospective; sprint retrospective",
+          "synonyms": "retro; post-mortem",
+          "antonyms": "",
+          "notePl": "Potocznie „retro”.",
+          "examples": [
+            {
+              "en": "In the final retrospective, we talked about what went wrong with the servers.",
+              "pl": "Na końcowej retrospektywie rozmawialiśmy o tym, co poszło nie tak z serwerami.",
+              "focusEn": "retrospective",
+              "focusPl": "retrospektywie"
+            },
+            {
+              "en": "The retrospective gave everyone a chance to speak honestly.",
+              "pl": "Retrospektywa dała każdemu szansę, żeby szczerze się wypowiedzieć.",
+              "focusEn": "retrospective",
+              "focusPl": "Retrospektywa"
+            }
+          ],
+          "acceptedAnswers": [
+            "retrospective",
+            "retro"
+          ],
+          "acceptedTranslations": [
+            "retrospektywa",
+            "retro",
+            "spotkanie podsumowujące"
+          ]
+        },
+        {
+          "id": "project-management.on-time-and-on-budget",
+          "term": "on time and on budget",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "w terminie i w budżecie",
+          "definition": "Finished by the planned date and for the planned amount of money.",
+          "register": "neutralny",
+          "contextPl": "Idealne zakończenie projektu",
+          "natural": "",
+          "forms": "",
+          "collocations": "deliver on time and on budget",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We delivered on time and on budget, which almost never happens.",
+              "pl": "Dostarczyliśmy w terminie i w budżecie, co prawie nigdy się nie zdarza.",
+              "focusEn": "on time and on budget",
+              "focusPl": "w terminie i w budżecie"
+            },
+            {
+              "en": "The client wrote that the project finished on time and on budget.",
+              "pl": "Klient napisał, że projekt skończył się w terminie i w budżecie.",
+              "focusEn": "on time and on budget",
+              "focusPl": "w terminie i w budżecie"
+            }
+          ],
+          "acceptedAnswers": [
+            "on time and on budget"
+          ],
+          "acceptedTranslations": [
+            "w terminie i w budżecie",
+            "terminowo i bez przekroczenia budżetu"
+          ]
+        },
+        {
+          "id": "project-management.close-out",
+          "term": "close out",
+          "ipa": "/ˌkloʊz ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "domknąć",
+          "definition": "To complete the last formal steps and officially end a project.",
+          "register": "specjalistyczny",
+          "contextPl": "Formalne zakończenie projektu",
+          "natural": "wrap up",
+          "forms": "closed out; closing out",
+          "collocations": "close out a project; close out the contract",
+          "synonyms": "wrap up; finish",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll close out the project once the last invoice is paid.",
+              "pl": "Domkniemy projekt, gdy tylko ostatnia faktura zostanie opłacona.",
+              "focusEn": "close out",
+              "focusPl": "Domkniemy"
+            },
+            {
+              "en": "Before we close out, let's archive all the project files.",
+              "pl": "Zanim zamkniemy projekt, zarchiwizujmy wszystkie pliki.",
+              "focusEn": "close out",
+              "focusPl": "zamkniemy"
+            }
+          ],
+          "acceptedAnswers": [
+            "close out",
+            "wrap up"
+          ],
+          "acceptedTranslations": [
+            "domknąć",
+            "domykać",
+            "zamknąć",
+            "zamykać"
+          ]
+        }
+      ]
+    }
+  ]
+}

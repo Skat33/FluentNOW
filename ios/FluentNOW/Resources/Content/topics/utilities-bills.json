@@ -1,0 +1,2930 @@
+{
+  "schemaVersion": 1,
+  "id": "utilities-bills",
+  "namePl": "Rachunki i media",
+  "nameEn": "Utilities and Bills",
+  "group": "home",
+  "symbol": "bolt",
+  "summaryPl": "Prąd, woda, gaz i internet: rachunki, liczniki, umowy z dostawcami, awarie i oszczędzanie energii.",
+  "aliases": [
+    "rachunki",
+    "media",
+    "prąd",
+    "woda",
+    "gaz",
+    "internet",
+    "opłaty",
+    "licznik",
+    "utilities",
+    "bills",
+    "electricity"
+  ],
+  "categories": [
+    {
+      "id": "utilities-bills.services",
+      "namePl": "Media w domu",
+      "scenePl": "Pierwszy dzień w nowym mieszkaniu: sprawdzasz, czy działa prąd, woda, gaz i internet",
+      "entries": [
+        {
+          "id": "utilities-bills.electricity",
+          "term": "electricity",
+          "ipa": "/ɪˌlekˈtrɪsəti/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "prąd",
+          "definition": "The power that makes lights and machines work.",
+          "register": "neutralny",
+          "contextPl": "Energia elektryczna w domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "electricity bill; use electricity; save electricity",
+          "synonyms": "power",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is the electricity on yet? The lights don't work.",
+              "pl": "Czy już jest prąd? Światła nie działają.",
+              "focusEn": "electricity",
+              "focusPl": "prąd"
+            },
+            {
+              "en": "We pay for electricity separately from the rent.",
+              "pl": "Za prąd płacimy osobno, poza czynszem.",
+              "focusEn": "electricity",
+              "focusPl": "prąd"
+            }
+          ],
+          "acceptedAnswers": [
+            "electricity"
+          ],
+          "acceptedTranslations": [
+            "prąd",
+            "elektryczność",
+            "energia elektryczna"
+          ]
+        },
+        {
+          "id": "utilities-bills.power",
+          "term": "power",
+          "ipa": "/ˈpaʊər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "prąd",
+          "definition": "Electricity, especially in everyday speech.",
+          "register": "potoczny",
+          "contextPl": "Potocznie o zasilaniu",
+          "natural": "",
+          "forms": "",
+          "collocations": "the power is on; power company",
+          "synonyms": "electricity",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The power in the new place won't be turned on until Monday.",
+              "pl": "Prąd w nowym mieszkaniu włączą dopiero w poniedziałek.",
+              "focusEn": "power",
+              "focusPl": "Prąd"
+            },
+            {
+              "en": "I called the power company to put the account in my name.",
+              "pl": "Zadzwoniłem do zakładu energetycznego, żeby przepisać prąd na siebie.",
+              "focusEn": "power",
+              "focusPl": "prąd"
+            }
+          ],
+          "acceptedAnswers": [
+            "power"
+          ],
+          "acceptedTranslations": [
+            "prąd",
+            "zasilanie"
+          ]
+        },
+        {
+          "id": "utilities-bills.water",
+          "term": "water",
+          "ipa": "/ˈwɔːtər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "woda",
+          "definition": "The water that comes into a home through pipes.",
+          "register": "neutralny",
+          "contextPl": "Wodociąg",
+          "natural": "",
+          "forms": "",
+          "collocations": "running water; water supply; water bill",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The water is running, but it's a little brown at first.",
+              "pl": "Woda leci, ale na początku jest trochę brązowa.",
+              "focusEn": "water",
+              "focusPl": "Woda"
+            },
+            {
+              "en": "Who do we call to set up the water in our name?",
+              "pl": "Do kogo dzwonimy, żeby przepisać wodę na nas?",
+              "focusEn": "water",
+              "focusPl": "wodę"
+            }
+          ],
+          "acceptedAnswers": [
+            "water"
+          ],
+          "acceptedTranslations": [
+            "woda",
+            "woda z kranu",
+            "wodociąg"
+          ]
+        },
+        {
+          "id": "utilities-bills.gas",
+          "term": "gas",
+          "ipa": "/ɡæs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "gaz",
+          "definition": "A fuel used for cooking and heating in some homes.",
+          "register": "neutralny",
+          "contextPl": "Kuchenka i ogrzewanie gazowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "gas stove; gas bill; gas leak",
+          "synonyms": "natural gas",
+          "antonyms": "",
+          "notePl": "Uwaga: w USA „gas” to też benzyna – tu chodzi o gaz ziemny.",
+          "examples": [
+            {
+              "en": "The stove runs on gas, so check that it's turned on.",
+              "pl": "Kuchenka jest na gaz, więc sprawdź, czy jest odkręcony.",
+              "focusEn": "gas",
+              "focusPl": "gaz"
+            },
+            {
+              "en": "If you ever smell gas, leave the apartment and call right away.",
+              "pl": "Jeśli kiedykolwiek poczujesz gaz, wyjdź z mieszkania i od razu zadzwoń.",
+              "focusEn": "gas",
+              "focusPl": "gaz"
+            }
+          ],
+          "acceptedAnswers": [
+            "gas"
+          ],
+          "acceptedTranslations": [
+            "gaz",
+            "gaz ziemny"
+          ]
+        },
+        {
+          "id": "utilities-bills.heat",
+          "term": "heat",
+          "ipa": "/hiːt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ogrzewanie",
+          "definition": "Warmth from a heating system in a home.",
+          "register": "neutralny",
+          "contextPl": "Ciepło w mieszkaniu",
+          "natural": "",
+          "forms": "",
+          "collocations": "turn on the heat; the heat is included",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The heat isn't working, and it's freezing in here.",
+              "pl": "Ogrzewanie nie działa, a tu jest lodowato.",
+              "focusEn": "heat",
+              "focusPl": "Ogrzewanie"
+            },
+            {
+              "en": "Is heat included in the rent, or do we pay for it?",
+              "pl": "Czy ogrzewanie jest wliczone w czynsz, czy płacimy za nie osobno?",
+              "focusEn": "heat",
+              "focusPl": "ogrzewanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "heat"
+          ],
+          "acceptedTranslations": [
+            "ogrzewanie",
+            "ciepło"
+          ]
+        },
+        {
+          "id": "utilities-bills.hot-water",
+          "term": "hot water",
+          "ipa": "/ˌhɑːt ˈwɔːtər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ciepła woda",
+          "definition": "Heated water from the taps and shower.",
+          "register": "neutralny",
+          "contextPl": "Kąpiel i zmywanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "no hot water; run out of hot water",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's no hot water in the shower yet.",
+              "pl": "Pod prysznicem nie ma jeszcze ciepłej wody.",
+              "focusEn": "hot water",
+              "focusPl": "ciepłej wody"
+            },
+            {
+              "en": "We ran out of hot water after two showers.",
+              "pl": "Po dwóch prysznicach skończyła się ciepła woda.",
+              "focusEn": "hot water",
+              "focusPl": "ciepła woda"
+            }
+          ],
+          "acceptedAnswers": [
+            "hot water"
+          ],
+          "acceptedTranslations": [
+            "ciepła woda",
+            "gorąca woda"
+          ]
+        },
+        {
+          "id": "utilities-bills.trash-pickup",
+          "term": "trash pickup",
+          "ipa": "/ˈtræʃ ˌpɪkʌp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wywóz śmieci",
+          "definition": "The service that collects garbage from homes.",
+          "register": "neutralny",
+          "contextPl": "Odbiór odpadów",
+          "natural": "",
+          "forms": "",
+          "collocations": "trash pickup day; weekly trash pickup",
+          "synonyms": "garbage collection",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Trash pickup is on Tuesdays, so put the bins out Monday night.",
+              "pl": "Wywóz śmieci jest we wtorki, więc wystaw kosze w poniedziałek wieczorem.",
+              "focusEn": "Trash pickup",
+              "focusPl": "Wywóz śmieci"
+            },
+            {
+              "en": "Is trash pickup included, or is it a separate bill?",
+              "pl": "Czy wywóz śmieci jest wliczony, czy to osobny rachunek?",
+              "focusEn": "trash pickup",
+              "focusPl": "wywóz śmieci"
+            }
+          ],
+          "acceptedAnswers": [
+            "trash pickup",
+            "garbage pickup"
+          ],
+          "acceptedTranslations": [
+            "wywóz śmieci",
+            "odbiór śmieci"
+          ]
+        },
+        {
+          "id": "utilities-bills.sewer",
+          "term": "sewer",
+          "ipa": "/ˈsuːər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kanalizacja",
+          "definition": "The system of pipes under the street that takes dirty water away.",
+          "register": "neutralny",
+          "contextPl": "Ścieki",
+          "natural": "",
+          "forms": "",
+          "collocations": "sewer bill; water and sewer",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our water bill also includes sewer charges.",
+              "pl": "Nasz rachunek za wodę obejmuje też opłaty za kanalizację.",
+              "focusEn": "sewer",
+              "focusPl": "kanalizację"
+            },
+            {
+              "en": "The house is connected to the city sewer, not a septic tank.",
+              "pl": "Dom jest podłączony do miejskiej kanalizacji, a nie do szamba.",
+              "focusEn": "sewer",
+              "focusPl": "kanalizacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "sewer"
+          ],
+          "acceptedTranslations": [
+            "kanalizacja",
+            "ścieki",
+            "opłata za ścieki"
+          ]
+        },
+        {
+          "id": "utilities-bills.cable",
+          "term": "cable",
+          "ipa": "/ˈkeɪbəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "telewizja kablowa",
+          "definition": "A TV service that comes through a wire into your home.",
+          "register": "neutralny",
+          "contextPl": "Płatna telewizja",
+          "natural": "",
+          "forms": "",
+          "collocations": "cable TV; cable company; cancel cable",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We don't really need cable; we just stream everything.",
+              "pl": "Nie potrzebujemy właściwie telewizji kablowej, wszystko oglądamy przez internet.",
+              "focusEn": "cable",
+              "focusPl": "telewizji kablowej"
+            },
+            {
+              "en": "The cable company wants to sell us internet and TV together.",
+              "pl": "Firma od kablówki chce nam sprzedać internet i telewizję razem.",
+              "focusEn": "cable",
+              "focusPl": "kablówki"
+            }
+          ],
+          "acceptedAnswers": [
+            "cable"
+          ],
+          "acceptedTranslations": [
+            "telewizja kablowa",
+            "kablówka"
+          ]
+        },
+        {
+          "id": "utilities-bills.utility-company",
+          "term": "utility company",
+          "ipa": "/juːˈtɪləti ˌkʌmpəni/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dostawca mediów",
+          "definition": "A company that provides electricity, gas or water.",
+          "register": "neutralny",
+          "contextPl": "Firma dostarczająca media",
+          "natural": "",
+          "forms": "utility companies",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I spent an hour on hold with the utility company today.",
+              "pl": "Spędziłem dziś godzinę na linii z dostawcą mediów.",
+              "focusEn": "utility company",
+              "focusPl": "dostawcą mediów"
+            },
+            {
+              "en": "The utility company needs a copy of our lease.",
+              "pl": "Dostawca mediów potrzebuje kopii naszej umowy najmu.",
+              "focusEn": "utility company",
+              "focusPl": "Dostawca mediów"
+            }
+          ],
+          "acceptedAnswers": [
+            "utility company"
+          ],
+          "acceptedTranslations": [
+            "dostawca mediów",
+            "zakład energetyczny",
+            "przedsiębiorstwo komunalne"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "utilities-bills.bills",
+      "namePl": "Rachunki i płatności",
+      "scenePl": "Kuchenny stół zasłany kopertami z rachunkami na początku miesiąca",
+      "entries": [
+        {
+          "id": "utilities-bills.utility-bill",
+          "term": "utility bill",
+          "ipa": "/juːˈtɪləti bɪl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "rachunek za media",
+          "definition": "A bill for electricity, gas, water or similar services.",
+          "register": "neutralny",
+          "contextPl": "Comiesięczne opłaty za mieszkanie",
+          "natural": "",
+          "forms": "utility bills",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our utility bills are almost as high as the rent in winter.",
+              "pl": "Zimą nasze rachunki za media są prawie tak wysokie jak czynsz.",
+              "focusEn": "utility bills",
+              "focusPl": "rachunki za media"
+            },
+            {
+              "en": "The bank asked for a utility bill as proof of address.",
+              "pl": "Bank poprosił o rachunek za media jako potwierdzenie adresu.",
+              "focusEn": "utility bill",
+              "focusPl": "rachunek za media"
+            }
+          ],
+          "acceptedAnswers": [
+            "utility bill",
+            "utility bills"
+          ],
+          "acceptedTranslations": [
+            "rachunek za media",
+            "rachunek za prąd, gaz i wodę"
+          ]
+        },
+        {
+          "id": "utilities-bills.electric-bill",
+          "term": "electric bill",
+          "ipa": "/ɪˈlektrɪk bɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "rachunek za prąd",
+          "definition": "A bill for the electricity you used.",
+          "register": "neutralny",
+          "contextPl": "Płatność za energię",
+          "natural": "",
+          "forms": "electric bills",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The electric bill came today, and it's huge.",
+              "pl": "Przyszedł dziś rachunek za prąd i jest ogromny.",
+              "focusEn": "electric bill",
+              "focusPl": "rachunek za prąd"
+            },
+            {
+              "en": "Our electric bill doubled when we got the new heater.",
+              "pl": "Nasz rachunek za prąd podwoił się, kiedy kupiliśmy nowy grzejnik.",
+              "focusEn": "electric bill",
+              "focusPl": "rachunek za prąd"
+            }
+          ],
+          "acceptedAnswers": [
+            "electric bill",
+            "electricity bill",
+            "power bill"
+          ],
+          "acceptedTranslations": [
+            "rachunek za prąd",
+            "opłata za prąd"
+          ]
+        },
+        {
+          "id": "utilities-bills.water-bill",
+          "term": "water bill",
+          "ipa": "/ˈwɔːtər bɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "rachunek za wodę",
+          "definition": "A bill for the water you used.",
+          "register": "neutralny",
+          "contextPl": "Opłata za wodę",
+          "natural": "",
+          "forms": "water bills",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The water bill comes every three months here.",
+              "pl": "Rachunek za wodę przychodzi tu co trzy miesiące.",
+              "focusEn": "water bill",
+              "focusPl": "Rachunek za wodę"
+            },
+            {
+              "en": "Why is the water bill so high? Is the toilet running?",
+              "pl": "Czemu rachunek za wodę jest taki wysoki? Czy w toalecie cieknie woda?",
+              "focusEn": "water bill",
+              "focusPl": "rachunek za wodę"
+            }
+          ],
+          "acceptedAnswers": [
+            "water bill"
+          ],
+          "acceptedTranslations": [
+            "rachunek za wodę",
+            "opłata za wodę"
+          ]
+        },
+        {
+          "id": "utilities-bills.gas-bill",
+          "term": "gas bill",
+          "ipa": "/ˈɡæs bɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "rachunek za gaz",
+          "definition": "A bill for the gas you used for cooking or heating.",
+          "register": "neutralny",
+          "contextPl": "Opłata za gaz",
+          "natural": "",
+          "forms": "gas bills",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The gas bill is tiny in summer and huge in January.",
+              "pl": "Latem rachunek za gaz jest malutki, a w styczniu ogromny.",
+              "focusEn": "gas bill",
+              "focusPl": "rachunek za gaz"
+            },
+            {
+              "en": "I'll pay the gas bill if you pay the internet.",
+              "pl": "Zapłacę rachunek za gaz, jeśli ty zapłacisz za internet.",
+              "focusEn": "gas bill",
+              "focusPl": "rachunek za gaz"
+            }
+          ],
+          "acceptedAnswers": [
+            "gas bill"
+          ],
+          "acceptedTranslations": [
+            "rachunek za gaz",
+            "opłata za gaz"
+          ]
+        },
+        {
+          "id": "utilities-bills.due-date",
+          "term": "due date",
+          "ipa": "/ˈduː deɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "termin płatności",
+          "definition": "The last day you can pay a bill without a penalty.",
+          "register": "neutralny",
+          "contextPl": "Terminowe płacenie",
+          "natural": "",
+          "forms": "due dates",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The due date is the fifteenth, so we still have a week.",
+              "pl": "Termin płatności to piętnasty, więc mamy jeszcze tydzień.",
+              "focusEn": "due date",
+              "focusPl": "Termin płatności"
+            },
+            {
+              "en": "I wrote every due date on the calendar on the fridge.",
+              "pl": "Zapisałam każdy termin płatności w kalendarzu na lodówce.",
+              "focusEn": "due date",
+              "focusPl": "termin płatności"
+            }
+          ],
+          "acceptedAnswers": [
+            "due date"
+          ],
+          "acceptedTranslations": [
+            "termin płatności",
+            "termin zapłaty",
+            "ostateczny termin"
+          ]
+        },
+        {
+          "id": "utilities-bills.amount-due",
+          "term": "amount due",
+          "ipa": "/əˌmaʊnt ˈduː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kwota do zapłaty",
+          "definition": "The amount of money you must pay on a bill.",
+          "register": "formalny",
+          "contextPl": "Pozycja na rachunku",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The amount due is $142, including last month's balance.",
+              "pl": "Kwota do zapłaty wynosi 142 dolary, łącznie z zaległością z zeszłego miesiąca.",
+              "focusEn": "amount due",
+              "focusPl": "Kwota do zapłaty"
+            },
+            {
+              "en": "Check the amount due before you click the pay button.",
+              "pl": "Sprawdź kwotę do zapłaty, zanim klikniesz przycisk płatności.",
+              "focusEn": "amount due",
+              "focusPl": "kwotę do zapłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "amount due"
+          ],
+          "acceptedTranslations": [
+            "kwota do zapłaty",
+            "należność",
+            "suma do zapłaty"
+          ]
+        },
+        {
+          "id": "utilities-bills.past-due",
+          "term": "past due",
+          "ipa": "/ˌpæst ˈduː/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zaległy",
+          "definition": "Not paid by the due date.",
+          "register": "formalny",
+          "contextPl": "Spóźniona płatność",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "overdue",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This envelope says our gas bill is past due!",
+              "pl": "Na tej kopercie jest napisane, że rachunek za gaz jest zaległy!",
+              "focusEn": "past due",
+              "focusPl": "zaległy"
+            },
+            {
+              "en": "They'll add a fee if the account stays past due.",
+              "pl": "Doliczą opłatę, jeśli konto pozostanie z zaległościami.",
+              "focusEn": "past due",
+              "focusPl": "z zaległościami"
+            }
+          ],
+          "acceptedAnswers": [
+            "past due",
+            "overdue"
+          ],
+          "acceptedTranslations": [
+            "zaległy",
+            "przeterminowany",
+            "po terminie"
+          ]
+        },
+        {
+          "id": "utilities-bills.pay-online",
+          "term": "pay online",
+          "ipa": "/ˌpeɪ ˌɑːnˈlaɪn/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zapłacić online",
+          "definition": "To pay a bill on a website or app.",
+          "register": "neutralny",
+          "contextPl": "Wygodne płacenie rachunków",
+          "natural": "",
+          "forms": "pays – paid – paid",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I pay online so I don't have to buy stamps.",
+              "pl": "Płacę online, żeby nie musieć kupować znaczków.",
+              "focusEn": "pay online",
+              "focusPl": "Płacę online"
+            },
+            {
+              "en": "You can pay online or call the number on the back of the bill.",
+              "pl": "Możesz zapłacić online albo zadzwonić pod numer z tyłu rachunku.",
+              "focusEn": "pay online",
+              "focusPl": "zapłacić online"
+            }
+          ],
+          "acceptedAnswers": [
+            "pay online"
+          ],
+          "acceptedTranslations": [
+            "zapłacić online",
+            "płacić przez internet",
+            "zapłacić przez internet"
+          ]
+        },
+        {
+          "id": "utilities-bills.payment-plan",
+          "term": "payment plan",
+          "ipa": "/ˈpeɪmənt plæn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "plan spłaty",
+          "definition": "An agreement to pay a bill in smaller parts over time.",
+          "register": "neutralny",
+          "contextPl": "Rozłożenie płatności na raty",
+          "natural": "",
+          "forms": "payment plans",
+          "collocations": "set up a payment plan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We asked for a payment plan for that huge winter gas bill.",
+              "pl": "Poprosiliśmy o plan spłaty tego ogromnego zimowego rachunku za gaz.",
+              "focusEn": "payment plan",
+              "focusPl": "plan spłaty"
+            },
+            {
+              "en": "The payment plan lets us pay fifty dollars a month.",
+              "pl": "Plan spłaty pozwala nam płacić pięćdziesiąt dolarów miesięcznie.",
+              "focusEn": "payment plan",
+              "focusPl": "Plan spłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "payment plan"
+          ],
+          "acceptedTranslations": [
+            "plan spłaty",
+            "rozłożenie na raty",
+            "harmonogram spłaty"
+          ]
+        },
+        {
+          "id": "utilities-bills.account-holder",
+          "term": "account holder",
+          "ipa": "/əˈkaʊnt ˌhoʊldər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "właściciel konta",
+          "definition": "The person whose name is on a service account.",
+          "register": "formalny",
+          "contextPl": "Kto odpowiada za rachunek",
+          "natural": "",
+          "forms": "account holders",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Only the account holder can make changes, so my roommate has to call.",
+              "pl": "Zmiany może wprowadzić tylko właściciel konta, więc musi zadzwonić mój współlokator.",
+              "focusEn": "account holder",
+              "focusPl": "właściciel konta"
+            },
+            {
+              "en": "The account holder is still the old tenant, so the bills go to him.",
+              "pl": "Właścicielem konta wciąż jest poprzedni najemca, więc rachunki idą do niego.",
+              "focusEn": "account holder",
+              "focusPl": "Właścicielem konta"
+            }
+          ],
+          "acceptedAnswers": [
+            "account holder"
+          ],
+          "acceptedTranslations": [
+            "właściciel konta",
+            "posiadacz rachunku",
+            "abonent"
+          ]
+        },
+        {
+          "id": "utilities-bills.billing-cycle",
+          "term": "billing cycle",
+          "ipa": "/ˈbɪlɪŋ ˌsaɪkəl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "okres rozliczeniowy",
+          "definition": "The period of time that one bill covers.",
+          "register": "specjalistyczny",
+          "contextPl": "Okres, za który przychodzi rachunek",
+          "natural": "",
+          "forms": "billing cycles",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our billing cycle runs from the tenth to the ninth.",
+              "pl": "Nasz okres rozliczeniowy trwa od dziesiątego do dziewiątego.",
+              "focusEn": "billing cycle",
+              "focusPl": "okres rozliczeniowy"
+            },
+            {
+              "en": "We moved in mid-billing cycle, so the first bill is smaller.",
+              "pl": "Wprowadziliśmy się w połowie okresu rozliczeniowego, więc pierwszy rachunek jest mniejszy.",
+              "focusEn": "billing cycle",
+              "focusPl": "okresu rozliczeniowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "billing cycle"
+          ],
+          "acceptedTranslations": [
+            "okres rozliczeniowy",
+            "cykl rozliczeniowy"
+          ]
+        },
+        {
+          "id": "utilities-bills.paperless-billing",
+          "term": "paperless billing",
+          "ipa": "/ˌpeɪpərləs ˈbɪlɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "e-faktura",
+          "definition": "Getting your bills by email instead of by mail.",
+          "register": "neutralny",
+          "contextPl": "Rachunki w wersji elektronicznej",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I switched to paperless billing, so check your email for the bill.",
+              "pl": "Przeszedłem na e-fakturę, więc rachunku szukaj w mailu.",
+              "focusEn": "paperless billing",
+              "focusPl": "e-fakturę"
+            },
+            {
+              "en": "They give a small discount for paperless billing.",
+              "pl": "Dają mały rabat za e-fakturę.",
+              "focusEn": "paperless billing",
+              "focusPl": "e-fakturę"
+            }
+          ],
+          "acceptedAnswers": [
+            "paperless billing"
+          ],
+          "acceptedTranslations": [
+            "e-faktura",
+            "rachunki elektroniczne",
+            "faktura elektroniczna"
+          ]
+        },
+        {
+          "id": "utilities-bills.budget-billing",
+          "term": "budget billing",
+          "ipa": "/ˈbʌdʒɪt ˌbɪlɪŋ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "rozliczenie w równych ratach",
+          "definition": "A plan where you pay the same amount every month based on your average use.",
+          "register": "specjalistyczny",
+          "contextPl": "Wyrównanie rachunków w ciągu roku",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With budget billing, we pay ninety dollars every month, even in winter.",
+              "pl": "Dzięki rozliczeniu w równych ratach płacimy dziewięćdziesiąt dolarów co miesiąc, nawet zimą.",
+              "focusEn": "budget billing",
+              "focusPl": "rozliczeniu w równych ratach"
+            },
+            {
+              "en": "Ask the gas company if they offer budget billing.",
+              "pl": "Zapytaj w gazowni, czy oferują rozliczenie w równych ratach.",
+              "focusEn": "budget billing",
+              "focusPl": "rozliczenie w równych ratach"
+            }
+          ],
+          "acceptedAnswers": [
+            "budget billing"
+          ],
+          "acceptedTranslations": [
+            "rozliczenie w równych ratach",
+            "stała miesięczna opłata",
+            "prognoza"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "utilities-bills.usage",
+      "namePl": "Zużycie i liczniki",
+      "scenePl": "Współlokatorzy przy rachunku za prąd zastanawiają się, kto zużywa tyle energii",
+      "entries": [
+        {
+          "id": "utilities-bills.usage",
+          "term": "usage",
+          "ipa": "/ˈjuːsɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zużycie",
+          "definition": "The amount of electricity, gas or water you use.",
+          "register": "neutralny",
+          "contextPl": "Ilość zużytej energii",
+          "natural": "",
+          "forms": "",
+          "collocations": "energy usage; water usage; high usage",
+          "synonyms": "consumption",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our usage went up by forty percent this month.",
+              "pl": "Nasze zużycie wzrosło w tym miesiącu o czterdzieści procent.",
+              "focusEn": "usage",
+              "focusPl": "zużycie"
+            },
+            {
+              "en": "The app shows our usage for every single day.",
+              "pl": "Aplikacja pokazuje nasze zużycie dzień po dniu.",
+              "focusEn": "usage",
+              "focusPl": "zużycie"
+            }
+          ],
+          "acceptedAnswers": [
+            "usage"
+          ],
+          "acceptedTranslations": [
+            "zużycie",
+            "zużycie energii"
+          ]
+        },
+        {
+          "id": "utilities-bills.meter",
+          "term": "meter",
+          "ipa": "/ˈmiːtər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "licznik",
+          "definition": "A device that measures how much electricity, gas or water you use.",
+          "register": "neutralny",
+          "contextPl": "Pomiar zużycia",
+          "natural": "",
+          "forms": "meters",
+          "collocations": "electric meter; gas meter; water meter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The electric meter is outside, next to the back door.",
+              "pl": "Licznik prądu jest na zewnątrz, obok tylnych drzwi.",
+              "focusEn": "meter",
+              "focusPl": "Licznik"
+            },
+            {
+              "en": "Let's check the meter tonight and again tomorrow morning.",
+              "pl": "Sprawdźmy licznik dziś wieczorem i jeszcze raz jutro rano.",
+              "focusEn": "meter",
+              "focusPl": "licznik"
+            }
+          ],
+          "acceptedAnswers": [
+            "meter"
+          ],
+          "acceptedTranslations": [
+            "licznik",
+            "licznik prądu",
+            "licznik gazu"
+          ]
+        },
+        {
+          "id": "utilities-bills.meter-reading",
+          "term": "meter reading",
+          "ipa": "/ˈmiːtər ˌriːdɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odczyt licznika",
+          "definition": "The number shown on a meter, used to calculate the bill.",
+          "register": "neutralny",
+          "contextPl": "Rozliczenie zużycia",
+          "natural": "",
+          "forms": "meter readings",
+          "collocations": "take a meter reading; submit a meter reading",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I sent a photo of the meter reading to the gas company.",
+              "pl": "Wysłałem gazowni zdjęcie odczytu licznika.",
+              "focusEn": "meter reading",
+              "focusPl": "odczytu licznika"
+            },
+            {
+              "en": "The bill was wrong because they didn't take a real meter reading.",
+              "pl": "Rachunek był błędny, bo nie zrobili prawdziwego odczytu licznika.",
+              "focusEn": "meter reading",
+              "focusPl": "odczytu licznika"
+            }
+          ],
+          "acceptedAnswers": [
+            "meter reading"
+          ],
+          "acceptedTranslations": [
+            "odczyt licznika",
+            "stan licznika"
+          ]
+        },
+        {
+          "id": "utilities-bills.estimated-bill",
+          "term": "estimated bill",
+          "ipa": "/ˌestɪmeɪtɪd ˈbɪl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "rachunek szacunkowy",
+          "definition": "A bill based on a guess of your usage, not a real meter reading.",
+          "register": "neutralny",
+          "contextPl": "Rozliczenie bez odczytu",
+          "natural": "",
+          "forms": "estimated bills",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This is an estimated bill, so it might be too high.",
+              "pl": "To rachunek szacunkowy, więc może być zawyżony.",
+              "focusEn": "estimated bill",
+              "focusPl": "rachunek szacunkowy"
+            },
+            {
+              "en": "After three estimated bills, they finally sent someone to read the meter.",
+              "pl": "Po trzech rachunkach szacunkowych w końcu przysłali kogoś do odczytu licznika.",
+              "focusEn": "estimated bills",
+              "focusPl": "rachunkach szacunkowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "estimated bill"
+          ],
+          "acceptedTranslations": [
+            "rachunek szacunkowy",
+            "prognoza",
+            "rachunek prognozowany"
+          ]
+        },
+        {
+          "id": "utilities-bills.kilowatt-hour",
+          "term": "kilowatt-hour",
+          "ipa": "/ˌkɪləwɑːt ˈaʊər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "kilowatogodzina",
+          "definition": "A unit for measuring how much electricity you use.",
+          "register": "specjalistyczny",
+          "contextPl": "Jednostka na rachunku za prąd",
+          "natural": "",
+          "forms": "kilowatt-hours",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We used nine hundred kilowatt-hours last month.",
+              "pl": "W zeszłym miesiącu zużyliśmy dziewięćset kilowatogodzin.",
+              "focusEn": "kilowatt-hours",
+              "focusPl": "kilowatogodzin"
+            },
+            {
+              "en": "How much do they charge per kilowatt-hour here?",
+              "pl": "Ile tu liczą za kilowatogodzinę?",
+              "focusEn": "kilowatt-hour",
+              "focusPl": "kilowatogodzinę"
+            }
+          ],
+          "acceptedAnswers": [
+            "kilowatt-hour",
+            "kWh",
+            "kilowatt hour"
+          ],
+          "acceptedTranslations": [
+            "kilowatogodzina",
+            "kWh"
+          ]
+        },
+        {
+          "id": "utilities-bills.peak-hours",
+          "term": "peak hours",
+          "ipa": "/ˈpiːk ˌaʊərz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "godziny szczytu",
+          "definition": "The times of day when electricity costs more because many people use it.",
+          "register": "neutralny",
+          "contextPl": "Droższa energia w niektórych porach",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "peak times",
+          "antonyms": "off-peak",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Electricity costs more during peak hours, from four to nine.",
+              "pl": "Prąd jest droższy w godzinach szczytu, od czwartej do dziewiątej.",
+              "focusEn": "peak hours",
+              "focusPl": "godzinach szczytu"
+            },
+            {
+              "en": "Stop doing laundry during peak hours; it's expensive.",
+              "pl": "Przestań robić pranie w godzinach szczytu, to drogie.",
+              "focusEn": "peak hours",
+              "focusPl": "godzinach szczytu"
+            }
+          ],
+          "acceptedAnswers": [
+            "peak hours"
+          ],
+          "acceptedTranslations": [
+            "godziny szczytu",
+            "szczyt zapotrzebowania"
+          ]
+        },
+        {
+          "id": "utilities-bills.off-peak",
+          "term": "off-peak",
+          "ipa": "/ˌɔːf ˈpiːk/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "poza szczytem",
+          "definition": "At times when fewer people use electricity and it is cheaper.",
+          "register": "neutralny",
+          "contextPl": "Tańsza taryfa",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "peak",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Run the dishwasher at night, when rates are off-peak.",
+              "pl": "Włączaj zmywarkę w nocy, kiedy obowiązują stawki poza szczytem.",
+              "focusEn": "off-peak",
+              "focusPl": "poza szczytem"
+            },
+            {
+              "en": "Our off-peak rate is half the normal price.",
+              "pl": "Nasza stawka poza szczytem to połowa normalnej ceny.",
+              "focusEn": "off-peak",
+              "focusPl": "poza szczytem"
+            }
+          ],
+          "acceptedAnswers": [
+            "off-peak"
+          ],
+          "acceptedTranslations": [
+            "poza szczytem",
+            "w taniej taryfie",
+            "nocna taryfa"
+          ]
+        },
+        {
+          "id": "utilities-bills.leave-on",
+          "term": "leave on",
+          "ipa": "/ˌliːv ˈɑːn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zostawić włączone",
+          "definition": "To not turn something off.",
+          "register": "neutralny",
+          "contextPl": "Marnowanie energii",
+          "natural": "",
+          "forms": "leaves – left – left",
+          "collocations": "leave the lights on; leave the TV on",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Somebody left the AC on all weekend while we were away.",
+              "pl": "Ktoś zostawił włączoną klimatyzację na cały weekend, kiedy nas nie było.",
+              "focusEn": "left the AC on",
+              "focusPl": "zostawił włączoną"
+            },
+            {
+              "en": "Please don't leave the lights on in empty rooms.",
+              "pl": "Proszę, nie zostawiaj włączonego światła w pustych pokojach.",
+              "focusEn": "leave the lights on",
+              "focusPl": "zostawiaj włączonego"
+            }
+          ],
+          "acceptedAnswers": [
+            "leave on"
+          ],
+          "acceptedTranslations": [
+            "zostawić włączone",
+            "zostawiać włączone"
+          ]
+        },
+        {
+          "id": "utilities-bills.run",
+          "term": "run",
+          "ipa": "/rʌn/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "włączać",
+          "definition": "To operate a machine such as a dishwasher or dryer.",
+          "register": "neutralny",
+          "contextPl": "Korzystanie ze sprzętów",
+          "natural": "",
+          "forms": "runs – ran – run",
+          "collocations": "run the dishwasher; run the dryer",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You run the dryer three times a day, so no wonder the bill is high.",
+              "pl": "Włączasz suszarkę trzy razy dziennie, więc nic dziwnego, że rachunek jest wysoki.",
+              "focusEn": "run",
+              "focusPl": "Włączasz"
+            },
+            {
+              "en": "Only run the dishwasher when it's full.",
+              "pl": "Włączaj zmywarkę tylko wtedy, kiedy jest pełna.",
+              "focusEn": "run",
+              "focusPl": "Włączaj"
+            }
+          ],
+          "acceptedAnswers": [
+            "run"
+          ],
+          "acceptedTranslations": [
+            "włączać",
+            "puszczać",
+            "uruchamiać"
+          ]
+        },
+        {
+          "id": "utilities-bills.crank-up",
+          "term": "crank up",
+          "ipa": "/ˌkræŋk ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "podkręcić",
+          "definition": "To turn something up to a high level.",
+          "register": "potoczny",
+          "contextPl": "Mocne podkręcanie ogrzewania",
+          "natural": "",
+          "forms": "cranks – cranked – cranked",
+          "collocations": "crank up the heat; crank up the AC",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Who cranked up the heat to seventy-eight degrees?",
+              "pl": "Kto podkręcił ogrzewanie na siedemdziesiąt osiem stopni?",
+              "focusEn": "cranked up",
+              "focusPl": "podkręcił"
+            },
+            {
+              "en": "Don't crank up the AC; just close the blinds.",
+              "pl": "Nie podkręcaj klimatyzacji, po prostu zasłoń żaluzje.",
+              "focusEn": "crank up",
+              "focusPl": "podkręcaj"
+            }
+          ],
+          "acceptedAnswers": [
+            "crank up"
+          ],
+          "acceptedTranslations": [
+            "podkręcić",
+            "podkręcać",
+            "rozkręcić"
+          ]
+        },
+        {
+          "id": "utilities-bills.turn-down",
+          "term": "turn down",
+          "ipa": "/ˌtɝːn ˈdaʊn/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "skręcić",
+          "definition": "To lower the level of heat, sound or power.",
+          "register": "neutralny",
+          "contextPl": "Zmniejszanie temperatury",
+          "natural": "",
+          "forms": "turns – turned – turned",
+          "collocations": "turn down the heat",
+          "synonyms": "",
+          "antonyms": "turn up",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's turn down the heat at night and use more blankets.",
+              "pl": "Skręćmy ogrzewanie w nocy i używajmy więcej koców.",
+              "focusEn": "turn down",
+              "focusPl": "Skręćmy"
+            },
+            {
+              "en": "I turned down the water heater a few degrees to save money.",
+              "pl": "Przykręciłem bojler o kilka stopni, żeby oszczędzić.",
+              "focusEn": "turned down",
+              "focusPl": "Przykręciłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "turn down"
+          ],
+          "acceptedTranslations": [
+            "skręcić",
+            "zmniejszyć",
+            "przykręcić"
+          ]
+        },
+        {
+          "id": "utilities-bills.unplug",
+          "term": "unplug",
+          "ipa": "/ʌnˈplʌɡ/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wyłączyć z gniazdka",
+          "definition": "To remove a plug from an outlet.",
+          "register": "neutralny",
+          "contextPl": "Odłączanie urządzeń",
+          "natural": "",
+          "forms": "unplugs – unplugged – unplugged",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "plug in",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Unplug your chargers when you're not using them.",
+              "pl": "Wyłączaj z gniazdka ładowarki, kiedy ich nie używasz.",
+              "focusEn": "Unplug",
+              "focusPl": "Wyłączaj z gniazdka"
+            },
+            {
+              "en": "I unplugged the old fridge in the garage, and the bill dropped.",
+              "pl": "Wyłączyłem z gniazdka starą lodówkę w garażu i rachunek spadł.",
+              "focusEn": "unplugged",
+              "focusPl": "Wyłączyłem z gniazdka"
+            }
+          ],
+          "acceptedAnswers": [
+            "unplug"
+          ],
+          "acceptedTranslations": [
+            "wyłączyć z gniazdka",
+            "odłączyć",
+            "wyciągnąć wtyczkę"
+          ]
+        },
+        {
+          "id": "utilities-bills.energy-hog",
+          "term": "energy hog",
+          "ipa": "/ˈenərdʒi hɑːɡ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "pożeracz energii",
+          "definition": "A machine that uses a lot of electricity.",
+          "register": "potoczny",
+          "contextPl": "Prądożerne urządzenia",
+          "natural": "",
+          "forms": "energy hogs",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "That old space heater is a real energy hog.",
+              "pl": "Ten stary grzejnik elektryczny to prawdziwy pożeracz energii.",
+              "focusEn": "energy hog",
+              "focusPl": "pożeracz energii"
+            },
+            {
+              "en": "The gaming computer is the biggest energy hog in the apartment.",
+              "pl": "Komputer do gier to największy pożeracz energii w mieszkaniu.",
+              "focusEn": "energy hog",
+              "focusPl": "pożeracz energii"
+            }
+          ],
+          "acceptedAnswers": [
+            "energy hog"
+          ],
+          "acceptedTranslations": [
+            "pożeracz energii",
+            "prądożerne urządzenie"
+          ]
+        },
+        {
+          "id": "utilities-bills.waste",
+          "term": "waste",
+          "ipa": "/weɪst/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "marnować",
+          "definition": "To use more than you need, or use something badly.",
+          "register": "neutralny",
+          "contextPl": "Niepotrzebne zużycie",
+          "natural": "",
+          "forms": "wastes – wasted – wasted",
+          "collocations": "waste energy; waste water",
+          "synonyms": "",
+          "antonyms": "save",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Twenty-minute showers waste so much hot water.",
+              "pl": "Dwudziestominutowe prysznice marnują tyle ciepłej wody.",
+              "focusEn": "waste",
+              "focusPl": "marnują"
+            },
+            {
+              "en": "We're wasting money heating rooms nobody uses.",
+              "pl": "Marnujemy pieniądze na ogrzewanie pokoi, z których nikt nie korzysta.",
+              "focusEn": "wasting",
+              "focusPl": "Marnujemy"
+            }
+          ],
+          "acceptedAnswers": [
+            "waste"
+          ],
+          "acceptedTranslations": [
+            "marnować",
+            "zmarnować",
+            "trwonić"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "utilities-bills.contracts",
+      "namePl": "Dostawcy i umowy",
+      "scenePl": "Telefon do dostawców internetu i prądu tydzień po przeprowadzce",
+      "entries": [
+        {
+          "id": "utilities-bills.provider",
+          "term": "provider",
+          "ipa": "/prəˈvaɪdər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dostawca",
+          "definition": "A company that supplies a service such as internet or electricity.",
+          "register": "neutralny",
+          "contextPl": "Firma świadcząca usługę",
+          "natural": "",
+          "forms": "providers",
+          "collocations": "internet provider; service provider",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Which internet provider do you use here?",
+              "pl": "Z jakiego dostawcy internetu tu korzystacie?",
+              "focusEn": "provider",
+              "focusPl": "dostawcy"
+            },
+            {
+              "en": "There's only one provider in our building, so we have no choice.",
+              "pl": "W naszym budynku jest tylko jeden dostawca, więc nie mamy wyboru.",
+              "focusEn": "provider",
+              "focusPl": "dostawca"
+            }
+          ],
+          "acceptedAnswers": [
+            "provider"
+          ],
+          "acceptedTranslations": [
+            "dostawca",
+            "operator"
+          ]
+        },
+        {
+          "id": "utilities-bills.plan",
+          "term": "plan",
+          "ipa": "/plæn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "pakiet",
+          "definition": "A package of service with a fixed price and features.",
+          "register": "neutralny",
+          "contextPl": "Wybór oferty",
+          "natural": "",
+          "forms": "plans",
+          "collocations": "a monthly plan; the cheapest plan; upgrade your plan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cheapest plan is fine for just two people.",
+              "pl": "Najtańszy pakiet wystarczy dla dwóch osób.",
+              "focusEn": "plan",
+              "focusPl": "pakiet"
+            },
+            {
+              "en": "We upgraded our internet plan because we both work from home.",
+              "pl": "Zmieniliśmy abonament internetowy na lepszy, bo oboje pracujemy z domu.",
+              "focusEn": "plan",
+              "focusPl": "abonament"
+            }
+          ],
+          "acceptedAnswers": [
+            "plan"
+          ],
+          "acceptedTranslations": [
+            "pakiet",
+            "abonament",
+            "taryfa"
+          ]
+        },
+        {
+          "id": "utilities-bills.set-up-service",
+          "term": "set up service",
+          "ipa": "/ˌset ʌp ˈsɝːvɪs/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "uruchomić usługę",
+          "definition": "To arrange for a service like electricity or internet to start.",
+          "register": "neutralny",
+          "contextPl": "Start usług w nowym mieszkaniu",
+          "natural": "",
+          "forms": "sets – set – set",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I need to set up service before we move in on the first.",
+              "pl": "Muszę uruchomić usługę, zanim wprowadzimy się pierwszego.",
+              "focusEn": "set up service",
+              "focusPl": "uruchomić usługę"
+            },
+            {
+              "en": "You can set up service online in about ten minutes.",
+              "pl": "Usługę można uruchomić online w jakieś dziesięć minut.",
+              "focusEn": "set up service",
+              "focusPl": "Usługę można uruchomić"
+            }
+          ],
+          "acceptedAnswers": [
+            "set up service",
+            "start service"
+          ],
+          "acceptedTranslations": [
+            "uruchomić usługę",
+            "podłączyć usługę",
+            "zamówić usługę"
+          ]
+        },
+        {
+          "id": "utilities-bills.transfer-service",
+          "term": "transfer service",
+          "ipa": "/ˌtrænsfɝː ˈsɝːvɪs/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "przenieść usługę",
+          "definition": "To move your existing service account to your new address.",
+          "register": "neutralny",
+          "contextPl": "Przeprowadzka a umowy",
+          "natural": "",
+          "forms": "transfers – transferred – transferred",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I transfer service to my new address, or do I need a new account?",
+              "pl": "Mogę przenieść usługę na nowy adres, czy potrzebuję nowego konta?",
+              "focusEn": "transfer service",
+              "focusPl": "przenieść usługę"
+            },
+            {
+              "en": "We transferred service without paying a new installation fee.",
+              "pl": "Przenieśliśmy usługę bez płacenia nowej opłaty za instalację.",
+              "focusEn": "transferred service",
+              "focusPl": "Przenieśliśmy usługę"
+            }
+          ],
+          "acceptedAnswers": [
+            "transfer service"
+          ],
+          "acceptedTranslations": [
+            "przenieść usługę",
+            "przepisać usługę na nowy adres"
+          ]
+        },
+        {
+          "id": "utilities-bills.cancel",
+          "term": "cancel",
+          "ipa": "/ˈkænsəl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zrezygnować",
+          "definition": "To end a service or agreement.",
+          "register": "neutralny",
+          "contextPl": "Rezygnacja z usługi",
+          "natural": "",
+          "forms": "cancels – canceled – canceled",
+          "collocations": "cancel your service; cancel cable",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I want to cancel cable but keep the internet.",
+              "pl": "Chcę zrezygnować z kablówki, ale zostawić internet.",
+              "focusEn": "cancel",
+              "focusPl": "zrezygnować"
+            },
+            {
+              "en": "It took four phone calls to cancel my old plan.",
+              "pl": "Żeby wypowiedzieć stary abonament, musiałem zadzwonić cztery razy.",
+              "focusEn": "cancel",
+              "focusPl": "wypowiedzieć"
+            }
+          ],
+          "acceptedAnswers": [
+            "cancel"
+          ],
+          "acceptedTranslations": [
+            "zrezygnować",
+            "anulować",
+            "wypowiedzieć"
+          ]
+        },
+        {
+          "id": "utilities-bills.switch-providers",
+          "term": "switch providers",
+          "ipa": "/ˌswɪtʃ prəˈvaɪdərz/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zmienić dostawcę",
+          "definition": "To stop using one company and start using another.",
+          "register": "neutralny",
+          "contextPl": "Szukanie lepszej oferty",
+          "natural": "",
+          "forms": "switches – switched – switched",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We switched providers and now pay twenty dollars less.",
+              "pl": "Zmieniliśmy dostawcę i teraz płacimy dwadzieścia dolarów mniej.",
+              "focusEn": "switched providers",
+              "focusPl": "Zmieniliśmy dostawcę"
+            },
+            {
+              "en": "If they won't lower the price, I'll switch providers.",
+              "pl": "Jeśli nie obniżą ceny, zmienię dostawcę.",
+              "focusEn": "switch providers",
+              "focusPl": "zmienię dostawcę"
+            }
+          ],
+          "acceptedAnswers": [
+            "switch providers"
+          ],
+          "acceptedTranslations": [
+            "zmienić dostawcę",
+            "zmienić operatora"
+          ]
+        },
+        {
+          "id": "utilities-bills.installation",
+          "term": "installation",
+          "ipa": "/ˌɪnstəˈleɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "instalacja",
+          "definition": "The work of putting in equipment so a service can work.",
+          "register": "neutralny",
+          "contextPl": "Podłączenie usługi",
+          "natural": "",
+          "forms": "installations",
+          "collocations": "installation fee; free installation; schedule an installation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The earliest installation they have is next Thursday.",
+              "pl": "Najwcześniejsza instalacja, jaką mają, jest w przyszły czwartek.",
+              "focusEn": "installation",
+              "focusPl": "instalacja"
+            },
+            {
+              "en": "Installation is free if we sign up for a year.",
+              "pl": "Instalacja jest darmowa, jeśli podpiszemy umowę na rok.",
+              "focusEn": "Installation",
+              "focusPl": "Instalacja"
+            }
+          ],
+          "acceptedAnswers": [
+            "installation"
+          ],
+          "acceptedTranslations": [
+            "instalacja",
+            "montaż",
+            "podłączenie"
+          ]
+        },
+        {
+          "id": "utilities-bills.technician",
+          "term": "technician",
+          "ipa": "/tekˈnɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "technik",
+          "definition": "A worker who installs or repairs equipment.",
+          "register": "neutralny",
+          "contextPl": "Wizyta fachowca od usług",
+          "natural": "",
+          "forms": "technicians",
+          "collocations": "send a technician; cable technician",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The technician will come between eight and noon.",
+              "pl": "Technik przyjdzie między ósmą a południem.",
+              "focusEn": "technician",
+              "focusPl": "Technik"
+            },
+            {
+              "en": "The internet technician had to run a new cable through the wall.",
+              "pl": "Serwisant od internetu musiał przeciągnąć nowy kabel przez ścianę.",
+              "focusEn": "technician",
+              "focusPl": "Serwisant"
+            }
+          ],
+          "acceptedAnswers": [
+            "technician"
+          ],
+          "acceptedTranslations": [
+            "technik",
+            "serwisant",
+            "monter"
+          ]
+        },
+        {
+          "id": "utilities-bills.contract",
+          "term": "contract",
+          "ipa": "/ˈkɑːntrækt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "umowa",
+          "definition": "A written agreement for a service for a fixed period.",
+          "register": "neutralny",
+          "contextPl": "Zobowiązanie wobec dostawcy",
+          "natural": "",
+          "forms": "contracts",
+          "collocations": "a two-year contract; sign a contract; no-contract plan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is there a contract, or can I cancel any time?",
+              "pl": "Czy jest umowa, czy mogę zrezygnować w dowolnym momencie?",
+              "focusEn": "contract",
+              "focusPl": "umowa"
+            },
+            {
+              "en": "Our contract with the cable company ends in March.",
+              "pl": "Nasza umowa z firmą kablową kończy się w marcu.",
+              "focusEn": "contract",
+              "focusPl": "umowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "contract"
+          ],
+          "acceptedTranslations": [
+            "umowa",
+            "kontrakt"
+          ]
+        },
+        {
+          "id": "utilities-bills.promotional-rate",
+          "term": "promotional rate",
+          "ipa": "/prəˈmoʊʃənəl reɪt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "cena promocyjna",
+          "definition": "A low price that lasts for a short time before going up.",
+          "register": "neutralny",
+          "contextPl": "Oferty startowe",
+          "natural": "",
+          "forms": "promotional rates",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The promotional rate ended, and our bill jumped by thirty dollars.",
+              "pl": "Cena promocyjna się skończyła i nasz rachunek skoczył o trzydzieści dolarów.",
+              "focusEn": "promotional rate",
+              "focusPl": "Cena promocyjna"
+            },
+            {
+              "en": "Call them and ask for the promotional rate again.",
+              "pl": "Zadzwoń do nich i poproś znowu o cenę promocyjną.",
+              "focusEn": "promotional rate",
+              "focusPl": "cenę promocyjną"
+            }
+          ],
+          "acceptedAnswers": [
+            "promotional rate",
+            "promo rate"
+          ],
+          "acceptedTranslations": [
+            "cena promocyjna",
+            "stawka promocyjna"
+          ]
+        },
+        {
+          "id": "utilities-bills.bundle",
+          "term": "bundle",
+          "ipa": "/ˈbʌndəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pakiet usług",
+          "definition": "Several services sold together for one price.",
+          "register": "neutralny",
+          "contextPl": "Wspólna oferta internetu i TV",
+          "natural": "",
+          "forms": "bundles",
+          "collocations": "internet and TV bundle; bundle deal",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bundle with internet and TV is cheaper than internet alone.",
+              "pl": "Pakiet usług z internetem i telewizją jest tańszy niż sam internet.",
+              "focusEn": "bundle",
+              "focusPl": "Pakiet usług"
+            },
+            {
+              "en": "I don't want a bundle; I just need fast internet.",
+              "pl": "Nie chcę pakietu usług, potrzebuję tylko szybkiego internetu.",
+              "focusEn": "bundle",
+              "focusPl": "pakietu usług"
+            }
+          ],
+          "acceptedAnswers": [
+            "bundle"
+          ],
+          "acceptedTranslations": [
+            "pakiet usług",
+            "zestaw usług"
+          ]
+        },
+        {
+          "id": "utilities-bills.early-termination-fee",
+          "term": "early termination fee",
+          "ipa": "/ˌɝːli ˌtɝːmɪˈneɪʃən fiː/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "opłata za zerwanie umowy",
+          "definition": "Money you pay if you end a contract before it finishes.",
+          "register": "formalny",
+          "contextPl": "Kara za wcześniejszą rezygnację",
+          "natural": "",
+          "forms": "early termination fees",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If we cancel now, there's a two-hundred-dollar early termination fee.",
+              "pl": "Jeśli zrezygnujemy teraz, obowiązuje opłata za zerwanie umowy w wysokości dwustu dolarów.",
+              "focusEn": "early termination fee",
+              "focusPl": "opłata za zerwanie umowy"
+            },
+            {
+              "en": "The new provider offered to pay our early termination fee.",
+              "pl": "Nowy dostawca zaproponował, że pokryje naszą opłatę za zerwanie umowy.",
+              "focusEn": "early termination fee",
+              "focusPl": "opłatę za zerwanie umowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "early termination fee"
+          ],
+          "acceptedTranslations": [
+            "opłata za zerwanie umowy",
+            "kara umowna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "utilities-bills.problems",
+      "namePl": "Awarie i przerwy",
+      "scenePl": "Zimowy wieczór, kiedy w całej okolicy nagle gaśnie światło i przestaje działać internet",
+      "entries": [
+        {
+          "id": "utilities-bills.power-outage",
+          "term": "power outage",
+          "ipa": "/ˈpaʊər ˌaʊtɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "przerwa w dostawie prądu",
+          "definition": "A period when there is no electricity.",
+          "register": "neutralny",
+          "contextPl": "Brak prądu w okolicy",
+          "natural": "",
+          "forms": "power outages",
+          "collocations": "",
+          "synonyms": "blackout",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The power outage lasted four hours, and the whole street was dark.",
+              "pl": "Przerwa w dostawie prądu trwała cztery godziny i cała ulica była ciemna.",
+              "focusEn": "power outage",
+              "focusPl": "Przerwa w dostawie prądu"
+            },
+            {
+              "en": "Is there a power outage, or is it just our building?",
+              "pl": "Czy to awaria prądu, czy tylko nasz budynek?",
+              "focusEn": "power outage",
+              "focusPl": "awaria prądu"
+            }
+          ],
+          "acceptedAnswers": [
+            "power outage",
+            "outage"
+          ],
+          "acceptedTranslations": [
+            "przerwa w dostawie prądu",
+            "awaria prądu",
+            "brak prądu"
+          ]
+        },
+        {
+          "id": "utilities-bills.the-power-went-out",
+          "term": "the power went out",
+          "ipa": "/ðə ˌpaʊər ˌwent ˈaʊt/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wyłączyli prąd",
+          "definition": "Said when the electricity suddenly stops working.",
+          "register": "potoczny",
+          "contextPl": "Nagły brak prądu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We were watching a movie when the power went out.",
+              "pl": "Oglądaliśmy film, kiedy wyłączyli prąd.",
+              "focusEn": "the power went out",
+              "focusPl": "wyłączyli prąd"
+            },
+            {
+              "en": "The power went out at eight, and the fridge is getting warm.",
+              "pl": "Zgasło światło o ósmej i lodówka robi się ciepła.",
+              "focusEn": "The power went out",
+              "focusPl": "Zgasło światło"
+            }
+          ],
+          "acceptedAnswers": [
+            "the power went out",
+            "the power is out",
+            "the lights went out"
+          ],
+          "acceptedTranslations": [
+            "wyłączyli prąd",
+            "nie ma prądu",
+            "zgasło światło"
+          ]
+        },
+        {
+          "id": "utilities-bills.blackout",
+          "term": "blackout",
+          "ipa": "/ˈblækaʊt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "blackout",
+          "definition": "A large power failure, often over a whole area.",
+          "register": "neutralny",
+          "contextPl": "Rozległa awaria prądu",
+          "natural": "",
+          "forms": "blackouts",
+          "collocations": "",
+          "synonyms": "power outage",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "During the blackout, the whole city went quiet.",
+              "pl": "Podczas blackoutu całe miasto ucichło.",
+              "focusEn": "blackout",
+              "focusPl": "blackoutu"
+            },
+            {
+              "en": "We keep candles in the kitchen drawer in case of a blackout.",
+              "pl": "Trzymamy świeczki w kuchennej szufladzie na wypadek blackoutu.",
+              "focusEn": "blackout",
+              "focusPl": "blackoutu"
+            }
+          ],
+          "acceptedAnswers": [
+            "blackout"
+          ],
+          "acceptedTranslations": [
+            "blackout",
+            "awaria zasilania",
+            "zaciemnienie"
+          ]
+        },
+        {
+          "id": "utilities-bills.restore",
+          "term": "restore",
+          "ipa": "/rɪˈstɔːr/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przywrócić",
+          "definition": "To bring something back to how it was, like electricity after an outage.",
+          "register": "formalny",
+          "contextPl": "Naprawa po awarii",
+          "natural": "",
+          "forms": "restores – restored – restored",
+          "collocations": "restore power; power has been restored",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They expect to restore power by midnight.",
+              "pl": "Spodziewają się przywrócić prąd do północy.",
+              "focusEn": "restore",
+              "focusPl": "przywrócić"
+            },
+            {
+              "en": "Power was finally restored at three in the morning.",
+              "pl": "Prąd przywrócono w końcu o trzeciej nad ranem.",
+              "focusEn": "restored",
+              "focusPl": "przywrócono"
+            }
+          ],
+          "acceptedAnswers": [
+            "restore"
+          ],
+          "acceptedTranslations": [
+            "przywrócić",
+            "przywracać"
+          ]
+        },
+        {
+          "id": "utilities-bills.report-an-outage",
+          "term": "report an outage",
+          "ipa": "/rɪˌpɔːrt ən ˈaʊtɪdʒ/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zgłosić awarię",
+          "definition": "To tell the utility company that the service is not working.",
+          "register": "neutralny",
+          "contextPl": "Kontakt z dostawcą w czasie awarii",
+          "natural": "",
+          "forms": "reports – reported – reported",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I used my phone to report an outage on the power company's website.",
+              "pl": "Przez telefon zgłosiłem awarię na stronie zakładu energetycznego.",
+              "focusEn": "report an outage",
+              "focusPl": "zgłosiłem awarię"
+            },
+            {
+              "en": "Did anyone report the outage, or should I call?",
+              "pl": "Czy ktoś zgłosił awarię, czy mam zadzwonić?",
+              "focusEn": "report the outage",
+              "focusPl": "zgłosił awarię"
+            }
+          ],
+          "acceptedAnswers": [
+            "report an outage"
+          ],
+          "acceptedTranslations": [
+            "zgłosić awarię",
+            "zgłaszać awarię"
+          ]
+        },
+        {
+          "id": "utilities-bills.the-internet-is-down",
+          "term": "the internet is down",
+          "ipa": "/ði ˈɪntərnet ɪz ˌdaʊn/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "nie ma internetu",
+          "definition": "Said when the internet connection is not working.",
+          "register": "potoczny",
+          "contextPl": "Brak połączenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The internet is down, so I can't send my report.",
+              "pl": "Nie ma internetu, więc nie mogę wysłać raportu.",
+              "focusEn": "The internet is down",
+              "focusPl": "Nie ma internetu"
+            },
+            {
+              "en": "The internet is down in the whole neighborhood because of the storm.",
+              "pl": "Przez burzę nie ma internetu w całej okolicy.",
+              "focusEn": "The internet is down",
+              "focusPl": "nie ma internetu"
+            }
+          ],
+          "acceptedAnswers": [
+            "the internet is down",
+            "the internet's down",
+            "the Wi-Fi is down"
+          ],
+          "acceptedTranslations": [
+            "nie ma internetu",
+            "internet nie działa",
+            "padł internet"
+          ]
+        },
+        {
+          "id": "utilities-bills.power-surge",
+          "term": "power surge",
+          "ipa": "/ˈpaʊər sɝːdʒ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "skok napięcia",
+          "definition": "A sudden increase in electricity that can damage devices.",
+          "register": "specjalistyczny",
+          "contextPl": "Zagrożenie dla elektroniki",
+          "natural": "",
+          "forms": "power surges",
+          "collocations": "surge protector",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A power surge during the storm killed our TV.",
+              "pl": "Skok napięcia podczas burzy zepsuł nam telewizor.",
+              "focusEn": "power surge",
+              "focusPl": "Skok napięcia"
+            },
+            {
+              "en": "Plug the computer into a surge protector in case of a power surge.",
+              "pl": "Podłącz komputer do listwy przeciwprzepięciowej na wypadek skoku napięcia.",
+              "focusEn": "power surge",
+              "focusPl": "skoku napięcia"
+            }
+          ],
+          "acceptedAnswers": [
+            "power surge"
+          ],
+          "acceptedTranslations": [
+            "skok napięcia",
+            "przepięcie"
+          ]
+        },
+        {
+          "id": "utilities-bills.generator",
+          "term": "generator",
+          "ipa": "/ˈdʒenəreɪtər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "agregat prądotwórczy",
+          "definition": "A machine that makes electricity when the power is out.",
+          "register": "neutralny",
+          "contextPl": "Zapasowe źródło prądu",
+          "natural": "",
+          "forms": "generators",
+          "collocations": "backup generator; portable generator",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our neighbors have a generator, so their lights are still on.",
+              "pl": "Sąsiedzi mają agregat prądotwórczy, więc u nich wciąż świeci się światło.",
+              "focusEn": "generator",
+              "focusPl": "agregat prądotwórczy"
+            },
+            {
+              "en": "Never run a generator inside the house.",
+              "pl": "Nigdy nie uruchamiaj agregatu w domu.",
+              "focusEn": "generator",
+              "focusPl": "agregatu"
+            }
+          ],
+          "acceptedAnswers": [
+            "generator"
+          ],
+          "acceptedTranslations": [
+            "agregat prądotwórczy",
+            "generator"
+          ]
+        },
+        {
+          "id": "utilities-bills.frozen-pipes",
+          "term": "frozen pipes",
+          "ipa": "/ˌfroʊzən ˈpaɪps/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zamarznięte rury",
+          "definition": "Water pipes where the water has turned to ice.",
+          "register": "neutralny",
+          "contextPl": "Zimowa awaria wody",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We have no water this morning because of frozen pipes.",
+              "pl": "Dziś rano nie mamy wody z powodu zamarzniętych rur.",
+              "focusEn": "frozen pipes",
+              "focusPl": "zamarzniętych rur"
+            },
+            {
+              "en": "Leave the faucet dripping tonight to avoid frozen pipes.",
+              "pl": "Zostaw dziś na noc kapiący kran, żeby uniknąć zamarzniętych rur.",
+              "focusEn": "frozen pipes",
+              "focusPl": "zamarzniętych rur"
+            }
+          ],
+          "acceptedAnswers": [
+            "frozen pipes",
+            "frozen pipe"
+          ],
+          "acceptedTranslations": [
+            "zamarznięte rury",
+            "zamarznięta rura"
+          ]
+        },
+        {
+          "id": "utilities-bills.shut-off",
+          "term": "shut off",
+          "ipa": "/ˌʃʌt ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odciąć",
+          "definition": "To stop the supply of something like water, gas or electricity.",
+          "register": "neutralny",
+          "contextPl": "Wstrzymanie dostaw",
+          "natural": "",
+          "forms": "shuts – shut – shut",
+          "collocations": "shut off the water; shut off the power",
+          "synonyms": "cut off",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They'll shut off the water tomorrow from nine to noon for repairs.",
+              "pl": "Jutro od dziewiątej do południa odetną wodę z powodu napraw.",
+              "focusEn": "shut off",
+              "focusPl": "odetną"
+            },
+            {
+              "en": "If you don't pay, they can shut off your gas.",
+              "pl": "Jeśli nie zapłacisz, mogą ci odciąć gaz.",
+              "focusEn": "shut off",
+              "focusPl": "odciąć"
+            }
+          ],
+          "acceptedAnswers": [
+            "shut off"
+          ],
+          "acceptedTranslations": [
+            "odciąć",
+            "wyłączyć",
+            "zakręcić"
+          ]
+        },
+        {
+          "id": "utilities-bills.shut-off-notice",
+          "term": "shut-off notice",
+          "ipa": "/ˈʃʌt ɔːf ˌnoʊtɪs/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "ostrzeżenie o odcięciu",
+          "definition": "A letter warning that a service will be stopped if you do not pay.",
+          "register": "formalny",
+          "contextPl": "Ostateczne wezwanie do zapłaty",
+          "natural": "",
+          "forms": "shut-off notices",
+          "collocations": "",
+          "synonyms": "disconnection notice",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We got a shut-off notice because the bill went to the old address.",
+              "pl": "Dostaliśmy ostrzeżenie o odcięciu, bo rachunek poszedł na stary adres.",
+              "focusEn": "shut-off notice",
+              "focusPl": "ostrzeżenie o odcięciu"
+            },
+            {
+              "en": "Pay it today; I don't want another shut-off notice.",
+              "pl": "Zapłać to dziś, nie chcę kolejnego ostrzeżenia o odcięciu.",
+              "focusEn": "shut-off notice",
+              "focusPl": "ostrzeżenia o odcięciu"
+            }
+          ],
+          "acceptedAnswers": [
+            "shut-off notice"
+          ],
+          "acceptedTranslations": [
+            "ostrzeżenie o odcięciu",
+            "wezwanie do zapłaty"
+          ]
+        },
+        {
+          "id": "utilities-bills.reconnect",
+          "term": "reconnect",
+          "ipa": "/ˌriːkəˈnekt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ponownie podłączyć",
+          "definition": "To start a service again after it was stopped.",
+          "register": "neutralny",
+          "contextPl": "Przywrócenie usługi po zapłacie",
+          "natural": "",
+          "forms": "reconnects – reconnected – reconnected",
+          "collocations": "reconnection fee",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They'll reconnect the power within a day after we pay.",
+              "pl": "Ponownie podłączą prąd w ciągu doby od zapłaty.",
+              "focusEn": "reconnect",
+              "focusPl": "Ponownie podłączą"
+            },
+            {
+              "en": "It cost fifty dollars to get the gas reconnected.",
+              "pl": "Ponowne podłączenie gazu kosztowało pięćdziesiąt dolarów.",
+              "focusEn": "reconnected",
+              "focusPl": "Ponowne podłączenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "reconnect"
+          ],
+          "acceptedTranslations": [
+            "ponownie podłączyć",
+            "przywrócić",
+            "wznowić dostawy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "utilities-bills.saving",
+      "namePl": "Oszczędzanie energii",
+      "scenePl": "Rodzinna narada przy stole, jak obniżyć rachunki przed zimą",
+      "entries": [
+        {
+          "id": "utilities-bills.save-energy",
+          "term": "save energy",
+          "ipa": "/ˌseɪv ˈenərdʒi/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "oszczędzać energię",
+          "definition": "To use less electricity or gas.",
+          "register": "neutralny",
+          "contextPl": "Ekologiczne i tańsze nawyki",
+          "natural": "",
+          "forms": "saves – saved – saved",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Turning off the lights is the easiest way to save energy.",
+              "pl": "Wyłączanie światła to najprostszy sposób, żeby oszczędzać energię.",
+              "focusEn": "save energy",
+              "focusPl": "oszczędzać energię"
+            },
+            {
+              "en": "We saved energy by washing clothes in cold water.",
+              "pl": "Zaoszczędziliśmy energię, piorąc ubrania w zimnej wodzie.",
+              "focusEn": "saved energy",
+              "focusPl": "Zaoszczędziliśmy energię"
+            }
+          ],
+          "acceptedAnswers": [
+            "save energy",
+            "save electricity"
+          ],
+          "acceptedTranslations": [
+            "oszczędzać energię",
+            "zaoszczędzić energię",
+            "oszczędzać prąd"
+          ]
+        },
+        {
+          "id": "utilities-bills.cut-down-on",
+          "term": "cut down on",
+          "ipa": "/ˌkʌt ˈdaʊn ɑːn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "ograniczyć",
+          "definition": "To use or do less of something.",
+          "register": "neutralny",
+          "contextPl": "Ograniczanie zużycia",
+          "natural": "",
+          "forms": "cuts – cut – cut",
+          "collocations": "cut down on energy; cut down on heating",
+          "synonyms": "cut back on",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need to cut down on the heating this winter.",
+              "pl": "Musimy tej zimy ograniczyć ogrzewanie.",
+              "focusEn": "cut down on",
+              "focusPl": "ograniczyć"
+            },
+            {
+              "en": "The kids have to cut down on long showers.",
+              "pl": "Dzieci muszą ograniczyć długie prysznice.",
+              "focusEn": "cut down on",
+              "focusPl": "ograniczyć"
+            }
+          ],
+          "acceptedAnswers": [
+            "cut down on"
+          ],
+          "acceptedTranslations": [
+            "ograniczyć",
+            "zmniejszyć",
+            "ograniczać"
+          ]
+        },
+        {
+          "id": "utilities-bills.conserve",
+          "term": "conserve",
+          "ipa": "/kənˈsɝːv/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "oszczędzać",
+          "definition": "To use something carefully so you do not waste it.",
+          "register": "formalny",
+          "contextPl": "Formalnie o oszczędzaniu zasobów",
+          "natural": "",
+          "forms": "conserves – conserved – conserved",
+          "collocations": "conserve water; conserve energy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The city is asking everyone to conserve water this summer.",
+              "pl": "Miasto prosi wszystkich, żeby tego lata oszczędzali wodę.",
+              "focusEn": "conserve",
+              "focusPl": "oszczędzali"
+            },
+            {
+              "en": "We conserve electricity by drying clothes outside.",
+              "pl": "Oszczędzamy prąd, susząc ubrania na zewnątrz.",
+              "focusEn": "conserve",
+              "focusPl": "Oszczędzamy"
+            }
+          ],
+          "acceptedAnswers": [
+            "conserve"
+          ],
+          "acceptedTranslations": [
+            "oszczędzać",
+            "chronić zasoby"
+          ]
+        },
+        {
+          "id": "utilities-bills.led-bulb",
+          "term": "LED bulb",
+          "ipa": "/ˌel iː ˈdiː bʌlb/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "żarówka LED",
+          "definition": "A light bulb that uses very little electricity.",
+          "register": "neutralny",
+          "contextPl": "Energooszczędne oświetlenie",
+          "natural": "",
+          "forms": "LED bulbs",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We switched every light in the house to LED bulbs.",
+              "pl": "Wymieniliśmy wszystkie światła w domu na żarówki LED.",
+              "focusEn": "LED bulbs",
+              "focusPl": "żarówki LED"
+            },
+            {
+              "en": "An LED bulb costs more but lasts for years.",
+              "pl": "Żarówka LED kosztuje więcej, ale wytrzymuje latami.",
+              "focusEn": "LED bulb",
+              "focusPl": "Żarówka LED"
+            }
+          ],
+          "acceptedAnswers": [
+            "LED bulb",
+            "LED light bulb"
+          ],
+          "acceptedTranslations": [
+            "żarówka LED",
+            "żarówka ledowa",
+            "ledówka"
+          ]
+        },
+        {
+          "id": "utilities-bills.solar-panels",
+          "term": "solar panels",
+          "ipa": "/ˌsoʊlər ˈpænəlz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "panele słoneczne",
+          "definition": "Flat panels that make electricity from sunlight.",
+          "register": "neutralny",
+          "contextPl": "Własna produkcja energii",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our neighbors got solar panels, and their electric bill is almost zero.",
+              "pl": "Sąsiedzi założyli panele słoneczne i ich rachunek za prąd jest prawie zerowy.",
+              "focusEn": "solar panels",
+              "focusPl": "panele słoneczne"
+            },
+            {
+              "en": "Solar panels are expensive at first, but they pay for themselves.",
+              "pl": "Panele słoneczne są na początku drogie, ale się zwracają.",
+              "focusEn": "Solar panels",
+              "focusPl": "Panele słoneczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "solar panels",
+            "solar panel"
+          ],
+          "acceptedTranslations": [
+            "panele słoneczne",
+            "panele fotowoltaiczne",
+            "fotowoltaika"
+          ]
+        },
+        {
+          "id": "utilities-bills.draft",
+          "term": "draft",
+          "ipa": "/dræft/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przeciąg",
+          "definition": "A current of cold air coming into a room.",
+          "register": "neutralny",
+          "contextPl": "Ucieczka ciepła",
+          "natural": "",
+          "forms": "drafts",
+          "collocations": "feel a draft; block a draft",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Brytyjska pisownia: „draught”.",
+          "examples": [
+            {
+              "en": "There's a draft coming from under the front door.",
+              "pl": "Spod drzwi wejściowych wieje przeciąg.",
+              "focusEn": "draft",
+              "focusPl": "przeciąg"
+            },
+            {
+              "en": "Sealing the windows stopped the drafts and lowered our gas bill.",
+              "pl": "Uszczelnienie okien zatrzymało przeciągi i obniżyło rachunek za gaz.",
+              "focusEn": "drafts",
+              "focusPl": "przeciągi"
+            }
+          ],
+          "acceptedAnswers": [
+            "draft"
+          ],
+          "acceptedTranslations": [
+            "przeciąg",
+            "zimne powietrze"
+          ]
+        },
+        {
+          "id": "utilities-bills.rebate",
+          "term": "rebate",
+          "ipa": "/ˈriːbeɪt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "zwrot pieniędzy",
+          "definition": "Money paid back to you, for example for buying energy-saving equipment.",
+          "register": "neutralny",
+          "contextPl": "Dopłaty za energooszczędne sprzęty",
+          "natural": "",
+          "forms": "rebates",
+          "collocations": "energy rebate; get a rebate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The power company gives a rebate if you buy a new efficient fridge.",
+              "pl": "Zakład energetyczny daje zwrot pieniędzy, jeśli kupisz nową oszczędną lodówkę.",
+              "focusEn": "rebate",
+              "focusPl": "zwrot pieniędzy"
+            },
+            {
+              "en": "We got a two-hundred-dollar rebate for the new insulation.",
+              "pl": "Dostaliśmy dwieście dolarów dopłaty do nowego ocieplenia.",
+              "focusEn": "rebate",
+              "focusPl": "dopłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "rebate"
+          ],
+          "acceptedTranslations": [
+            "zwrot pieniędzy",
+            "dopłata",
+            "częściowy zwrot"
+          ]
+        },
+        {
+          "id": "utilities-bills.low-flow-showerhead",
+          "term": "low-flow showerhead",
+          "ipa": "/ˌloʊ floʊ ˈʃaʊərhed/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "oszczędna słuchawka prysznicowa",
+          "definition": "A showerhead that uses less water.",
+          "register": "neutralny",
+          "contextPl": "Oszczędzanie wody",
+          "natural": "",
+          "forms": "low-flow showerheads",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A low-flow showerhead cut our water bill by twenty percent.",
+              "pl": "Oszczędna słuchawka prysznicowa obniżyła nasz rachunek za wodę o dwadzieścia procent.",
+              "focusEn": "low-flow showerhead",
+              "focusPl": "Oszczędna słuchawka prysznicowa"
+            },
+            {
+              "en": "The water company gave us a free low-flow showerhead.",
+              "pl": "Wodociągi dały nam za darmo oszczędną słuchawkę prysznicową.",
+              "focusEn": "low-flow showerhead",
+              "focusPl": "oszczędną słuchawkę prysznicową"
+            }
+          ],
+          "acceptedAnswers": [
+            "low-flow showerhead"
+          ],
+          "acceptedTranslations": [
+            "oszczędna słuchawka prysznicowa",
+            "słuchawka oszczędzająca wodę"
+          ]
+        },
+        {
+          "id": "utilities-bills.take-shorter-showers",
+          "term": "take shorter showers",
+          "ipa": "/ˌteɪk ˌʃɔːrtər ˈʃaʊərz/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "brać krótsze prysznice",
+          "definition": "To spend less time in the shower to save water and energy.",
+          "register": "neutralny",
+          "contextPl": "Proste oszczędzanie w domu",
+          "natural": "",
+          "forms": "takes – took – taken",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If we all take shorter showers, the gas bill will drop too.",
+              "pl": "Jeśli wszyscy będziemy brać krótsze prysznice, rachunek za gaz też spadnie.",
+              "focusEn": "take shorter showers",
+              "focusPl": "brać krótsze prysznice"
+            },
+            {
+              "en": "I've been taking shorter showers since the last water bill.",
+              "pl": "Od ostatniego rachunku za wodę biorę krótsze prysznice.",
+              "focusEn": "taking shorter showers",
+              "focusPl": "biorę krótsze prysznice"
+            }
+          ],
+          "acceptedAnswers": [
+            "take shorter showers"
+          ],
+          "acceptedTranslations": [
+            "brać krótsze prysznice",
+            "krócej brać prysznic"
+          ]
+        },
+        {
+          "id": "utilities-bills.bring-down",
+          "term": "bring down",
+          "ipa": "/ˌbrɪŋ ˈdaʊn/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "obniżyć",
+          "definition": "To reduce the amount or cost of something.",
+          "register": "neutralny",
+          "contextPl": "Zmniejszanie rachunków",
+          "natural": "",
+          "forms": "brings – brought – brought",
+          "collocations": "bring down costs; bring down the bill",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "New windows would really bring down our heating costs.",
+              "pl": "Nowe okna naprawdę obniżyłyby nasze koszty ogrzewania.",
+              "focusEn": "bring down",
+              "focusPl": "obniżyłyby"
+            },
+            {
+              "en": "Unplugging the old freezer brought down the bill by fifteen dollars.",
+              "pl": "Wyłączenie starej zamrażarki obniżyło rachunek o piętnaście dolarów.",
+              "focusEn": "brought down",
+              "focusPl": "obniżyło"
+            }
+          ],
+          "acceptedAnswers": [
+            "bring down"
+          ],
+          "acceptedTranslations": [
+            "obniżyć",
+            "zmniejszyć",
+            "obniżać"
+          ]
+        },
+        {
+          "id": "utilities-bills.off-the-grid",
+          "term": "off the grid",
+          "ipa": "/ˌɔːf ðə ˈɡrɪd/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "niezależny od sieci",
+          "definition": "Not connected to the public electricity or water supply.",
+          "register": "neutralny",
+          "contextPl": "Życie bez sieci publicznej",
+          "natural": "",
+          "forms": "",
+          "collocations": "live off the grid; go off the grid",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My uncle's cabin is completely off the grid, with solar power and a well.",
+              "pl": "Domek mojego wujka jest całkowicie niezależny od sieci, ma panele słoneczne i studnię.",
+              "focusEn": "off the grid",
+              "focusPl": "niezależny od sieci"
+            },
+            {
+              "en": "Going off the grid sounds great until the first cloudy week.",
+              "pl": "Życie bez podłączenia do sieci brzmi świetnie aż do pierwszego pochmurnego tygodnia.",
+              "focusEn": "off the grid",
+              "focusPl": "bez podłączenia do sieci"
+            }
+          ],
+          "acceptedAnswers": [
+            "off the grid"
+          ],
+          "acceptedTranslations": [
+            "niezależny od sieci",
+            "bez podłączenia do sieci",
+            "samowystarczalny energetycznie"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2483 @@
+{
+  "schemaVersion": 1,
+  "id": "insurance",
+  "namePl": "Ubezpieczenia",
+  "nameEn": "Insurance",
+  "group": "money",
+  "symbol": "umbrella",
+  "summaryPl": "Polisa i składka, rodzaje ubezpieczeń, zakres i wyłączenia, zgłaszanie szkody i wypłata odszkodowania.",
+  "aliases": [
+    "ubezpieczenie",
+    "ubezpieczenia",
+    "polisa",
+    "składka",
+    "szkoda",
+    "odszkodowanie",
+    "ubezpieczyciel",
+    "insurance",
+    "policy",
+    "claim",
+    "premium"
+  ],
+  "categories": [
+    {
+      "id": "insurance.policy",
+      "namePl": "Polisa i składka",
+      "scenePl": "Spotkanie z agentem ubezpieczeniowym w jego biurze w sprawie polisy na dom i samochód",
+      "entries": [
+        {
+          "id": "insurance.insurance",
+          "term": "insurance",
+          "ipa": "/ɪnˈʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ubezpieczenie",
+          "definition": "An arrangement in which you pay a company and it pays you if something bad happens.",
+          "register": "neutralny",
+          "contextPl": "Ochrona finansowa na wypadek szkody",
+          "natural": "",
+          "forms": "",
+          "collocations": "buy insurance; have insurance; insurance policy",
+          "synonyms": "coverage",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm looking for insurance for my new house and my car.",
+              "pl": "Szukam ubezpieczenia na nowy dom i samochód.",
+              "focusEn": "insurance",
+              "focusPl": "ubezpieczenia"
+            },
+            {
+              "en": "How much does insurance usually cost for a house like ours?",
+              "pl": "Ile zwykle kosztuje ubezpieczenie takiego domu jak nasz?",
+              "focusEn": "insurance",
+              "focusPl": "ubezpieczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "insurance",
+            "coverage"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie"
+          ]
+        },
+        {
+          "id": "insurance.insurance-company",
+          "term": "insurance company",
+          "ipa": "/ɪnˈʃʊrəns ˌkʌmpəni/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "firma ubezpieczeniowa",
+          "definition": "A business that sells insurance.",
+          "register": "neutralny",
+          "contextPl": "Ubezpieczyciel",
+          "natural": "insurer",
+          "forms": "insurance companies",
+          "collocations": "contact your insurance company; switch insurance companies",
+          "synonyms": "insurer; carrier",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our insurance company raised its prices again this year.",
+              "pl": "Nasza firma ubezpieczeniowa znowu podniosła w tym roku ceny.",
+              "focusEn": "insurance company",
+              "focusPl": "firma ubezpieczeniowa"
+            },
+            {
+              "en": "The agent works with five different insurance companies.",
+              "pl": "Agent współpracuje z pięcioma różnymi firmami ubezpieczeniowymi.",
+              "focusEn": "insurance companies",
+              "focusPl": "firmami ubezpieczeniowymi"
+            }
+          ],
+          "acceptedAnswers": [
+            "insurance company",
+            "insurer"
+          ],
+          "acceptedTranslations": [
+            "firma ubezpieczeniowa",
+            "ubezpieczyciel",
+            "towarzystwo ubezpieczeniowe"
+          ]
+        },
+        {
+          "id": "insurance.insurance-agent",
+          "term": "insurance agent",
+          "ipa": "/ɪnˈʃʊrəns ˌeɪdʒənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "agent ubezpieczeniowy",
+          "definition": "A person who sells insurance and helps customers choose it.",
+          "register": "neutralny",
+          "contextPl": "Doradca przy wyborze polisy",
+          "natural": "",
+          "forms": "insurance agents",
+          "collocations": "talk to an insurance agent; a local insurance agent",
+          "synonyms": "broker",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our insurance agent explained every option in plain English.",
+              "pl": "Nasz agent ubezpieczeniowy objaśnił każdą opcję prostym językiem.",
+              "focusEn": "insurance agent",
+              "focusPl": "agent ubezpieczeniowy"
+            },
+            {
+              "en": "I've had the same insurance agent for over ten years.",
+              "pl": "Od ponad dziesięciu lat mam tego samego agenta ubezpieczeniowego.",
+              "focusEn": "insurance agent",
+              "focusPl": "agenta ubezpieczeniowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "insurance agent",
+            "agent",
+            "insurance broker"
+          ],
+          "acceptedTranslations": [
+            "agent ubezpieczeniowy",
+            "agentka ubezpieczeniowa",
+            "doradca ubezpieczeniowy"
+          ]
+        },
+        {
+          "id": "insurance.policy",
+          "term": "policy",
+          "ipa": "/ˈpɑːləsi/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "polisa",
+          "definition": "A contract with an insurance company that says what is covered.",
+          "register": "neutralny",
+          "contextPl": "Umowa ubezpieczenia",
+          "natural": "insurance policy",
+          "forms": "policies",
+          "collocations": "take out a policy; cancel a policy; policy number",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This policy covers fire, theft, and storm damage.",
+              "pl": "Ta polisa obejmuje pożar, kradzież i szkody spowodowane burzą.",
+              "focusEn": "policy",
+              "focusPl": "polisa"
+            },
+            {
+              "en": "Write your policy number on every email you send us.",
+              "pl": "Proszę wpisywać numer polisy w każdym mailu, który pan do nas wysyła.",
+              "focusEn": "policy",
+              "focusPl": "polisy"
+            }
+          ],
+          "acceptedAnswers": [
+            "policy",
+            "insurance policy"
+          ],
+          "acceptedTranslations": [
+            "polisa",
+            "polisa ubezpieczeniowa",
+            "umowa ubezpieczenia"
+          ]
+        },
+        {
+          "id": "insurance.premium",
+          "term": "premium",
+          "ipa": "/ˈpriːmiəm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "składka",
+          "definition": "The amount of money you pay regularly for insurance.",
+          "register": "specjalistyczny",
+          "contextPl": "Ile płacimy za ubezpieczenie",
+          "natural": "",
+          "forms": "premiums",
+          "collocations": "monthly premium; annual premium; raise the premium",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your premium would be ninety dollars a month for both policies.",
+              "pl": "Pana składka za obie polisy wynosiłaby dziewięćdziesiąt dolarów miesięcznie.",
+              "focusEn": "premium",
+              "focusPl": "składka"
+            },
+            {
+              "en": "A higher deductible would lower your premium.",
+              "pl": "Wyższy udział własny obniżyłby pana składkę.",
+              "focusEn": "premium",
+              "focusPl": "składkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "premium"
+          ],
+          "acceptedTranslations": [
+            "składka",
+            "składka ubezpieczeniowa"
+          ]
+        },
+        {
+          "id": "insurance.coverage",
+          "term": "coverage",
+          "ipa": "/ˈkʌvərɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "very_common",
+          "translation": "ochrona ubezpieczeniowa",
+          "definition": "The protection that an insurance policy gives you.",
+          "register": "neutralny",
+          "contextPl": "Zakres ochrony",
+          "natural": "",
+          "forms": "",
+          "collocations": "full coverage; basic coverage; coverage for something",
+          "synonyms": "protection",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Basic coverage won't pay for damage from a flood.",
+              "pl": "Podstawowa ochrona ubezpieczeniowa nie pokryje szkód powodziowych.",
+              "focusEn": "coverage",
+              "focusPl": "ochrona ubezpieczeniowa"
+            },
+            {
+              "en": "I want the best coverage I can afford.",
+              "pl": "Chcę najlepszy zakres ochrony, na jaki mnie stać.",
+              "focusEn": "coverage",
+              "focusPl": "zakres ochrony"
+            }
+          ],
+          "acceptedAnswers": [
+            "coverage",
+            "protection"
+          ],
+          "acceptedTranslations": [
+            "ochrona ubezpieczeniowa",
+            "zakres ochrony",
+            "ubezpieczenie"
+          ]
+        },
+        {
+          "id": "insurance.deductible",
+          "term": "deductible",
+          "ipa": "/dɪˈdʌktəbəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "udział własny",
+          "definition": "The amount you must pay yourself before the insurance company pays the rest.",
+          "register": "specjalistyczny",
+          "contextPl": "Część szkody pokrywana z własnej kieszeni",
+          "natural": "",
+          "forms": "deductibles",
+          "collocations": "a high deductible; a five-hundred-dollar deductible; meet your deductible",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku też „franszyza redukcyjna”.",
+          "examples": [
+            {
+              "en": "With a thousand-dollar deductible, your monthly price drops a lot.",
+              "pl": "Przy udziale własnym w wysokości tysiąca dolarów miesięczna cena mocno spada.",
+              "focusEn": "deductible",
+              "focusPl": "udziale własnym"
+            },
+            {
+              "en": "What deductible do most families choose?",
+              "pl": "Jaki udział własny wybiera większość rodzin?",
+              "focusEn": "deductible",
+              "focusPl": "udział własny"
+            }
+          ],
+          "acceptedAnswers": [
+            "deductible"
+          ],
+          "acceptedTranslations": [
+            "udział własny",
+            "franszyza redukcyjna",
+            "franszyza"
+          ]
+        },
+        {
+          "id": "insurance.insure",
+          "term": "insure",
+          "ipa": "/ɪnˈʃʊr/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ubezpieczyć",
+          "definition": "To buy insurance for something or someone.",
+          "register": "neutralny",
+          "contextPl": "Wykupywanie ochrony",
+          "natural": "",
+          "forms": "insured; insuring",
+          "collocations": "insure a car; insure your home; insure against theft",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We want to insure the house for its full value.",
+              "pl": "Chcemy ubezpieczyć dom na pełną wartość.",
+              "focusEn": "insure",
+              "focusPl": "ubezpieczyć"
+            },
+            {
+              "en": "How much would it cost to insure a teenage driver?",
+              "pl": "Ile kosztowałoby ubezpieczenie nastoletniego kierowcy?",
+              "focusEn": "insure",
+              "focusPl": "ubezpieczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "insure"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczyć",
+            "ubezpieczać"
+          ]
+        },
+        {
+          "id": "insurance.policyholder",
+          "term": "policyholder",
+          "ipa": "/ˈpɑːləsiˌhoʊldər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "ubezpieczony",
+          "definition": "The person who owns an insurance policy.",
+          "register": "specjalistyczny",
+          "contextPl": "Właściciel polisy",
+          "natural": "",
+          "forms": "policyholders",
+          "collocations": "the main policyholder",
+          "synonyms": "insured",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "As the policyholder, you'll get all the letters by mail.",
+              "pl": "Jako posiadacz polisy będzie pan dostawać wszystkie pisma pocztą.",
+              "focusEn": "policyholder",
+              "focusPl": "posiadacz polisy"
+            },
+            {
+              "en": "Only the policyholder can change the address on the account.",
+              "pl": "Tylko ubezpieczony może zmienić adres na koncie.",
+              "focusEn": "policyholder",
+              "focusPl": "ubezpieczony"
+            }
+          ],
+          "acceptedAnswers": [
+            "policyholder"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczony",
+            "posiadacz polisy",
+            "ubezpieczająca"
+          ]
+        },
+        {
+          "id": "insurance.uninsured",
+          "term": "uninsured",
+          "ipa": "/ˌʌnɪnˈʃʊrd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nieubezpieczony",
+          "definition": "Not having insurance.",
+          "register": "neutralny",
+          "contextPl": "Brak ochrony",
+          "natural": "",
+          "forms": "",
+          "collocations": "an uninsured driver; uninsured motorist coverage",
+          "synonyms": "",
+          "antonyms": "insured",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What happens if an uninsured driver hits my car?",
+              "pl": "Co się stanie, jeśli uderzy we mnie nieubezpieczony kierowca?",
+              "focusEn": "uninsured",
+              "focusPl": "nieubezpieczony"
+            },
+            {
+              "en": "Being uninsured for even one month is a big risk.",
+              "pl": "Pozostawanie bez ubezpieczenia nawet przez miesiąc to duże ryzyko.",
+              "focusEn": "uninsured",
+              "focusPl": "bez ubezpieczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "uninsured"
+          ],
+          "acceptedTranslations": [
+            "nieubezpieczony",
+            "bez ubezpieczenia"
+          ]
+        },
+        {
+          "id": "insurance.underinsured",
+          "term": "underinsured",
+          "ipa": "/ˌʌndərɪnˈʃʊrd/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "niedoubezpieczony",
+          "definition": "Having insurance that would not pay enough to cover a big loss.",
+          "register": "specjalistyczny",
+          "contextPl": "Zbyt niska suma ubezpieczenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "be underinsured; underinsured homeowners",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After the renovation, you might be underinsured.",
+              "pl": "Po remoncie może pan być niedoubezpieczony.",
+              "focusEn": "underinsured",
+              "focusPl": "niedoubezpieczony"
+            },
+            {
+              "en": "Many homeowners are underinsured and don't even know it.",
+              "pl": "Wielu właścicieli domów jest niedoubezpieczonych i nawet o tym nie wie.",
+              "focusEn": "underinsured",
+              "focusPl": "niedoubezpieczonych"
+            }
+          ],
+          "acceptedAnswers": [
+            "underinsured"
+          ],
+          "acceptedTranslations": [
+            "niedoubezpieczony",
+            "ubezpieczony na zbyt niską sumę"
+          ]
+        },
+        {
+          "id": "insurance.shop-around",
+          "term": "shop around",
+          "ipa": "/ˌʃɑːp əˈraʊnd/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "porównać oferty",
+          "definition": "To compare prices at different companies before you buy.",
+          "register": "potoczny",
+          "contextPl": "Szukanie najlepszej oferty",
+          "natural": "compare",
+          "forms": "shopped around; shopping around",
+          "collocations": "shop around for insurance",
+          "synonyms": "compare prices",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's smart to shop around before you sign anything.",
+              "pl": "Warto porównać oferty, zanim cokolwiek pan podpisze.",
+              "focusEn": "shop around",
+              "focusPl": "porównać oferty"
+            },
+            {
+              "en": "We shopped around and saved four hundred dollars a year.",
+              "pl": "Porównaliśmy oferty i zaoszczędziliśmy czterysta dolarów rocznie.",
+              "focusEn": "shopped around",
+              "focusPl": "Porównaliśmy oferty"
+            }
+          ],
+          "acceptedAnswers": [
+            "shop around",
+            "compare"
+          ],
+          "acceptedTranslations": [
+            "porównać oferty",
+            "porównywać oferty",
+            "rozejrzeć się"
+          ]
+        },
+        {
+          "id": "insurance.bundle",
+          "term": "bundle",
+          "ipa": "/ˈbʌndəl/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "połączyć w pakiet",
+          "definition": "To buy several insurance policies from one company to get a lower price.",
+          "register": "potoczny",
+          "contextPl": "Zniżka za kilka polis",
+          "natural": "",
+          "forms": "bundled; bundling",
+          "collocations": "bundle home and auto insurance",
+          "synonyms": "combine",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you bundle your home and car insurance, you save fifteen percent.",
+              "pl": "Jeśli połączy pan w pakiet ubezpieczenie domu i samochodu, zaoszczędzi pan piętnaście procent.",
+              "focusEn": "bundle",
+              "focusPl": "połączy pan w pakiet"
+            },
+            {
+              "en": "We bundled everything with one company to make life simpler.",
+              "pl": "Wszystko połączyliśmy w pakiet u jednego ubezpieczyciela, żeby ułatwić sobie życie.",
+              "focusEn": "bundled",
+              "focusPl": "połączyliśmy w pakiet"
+            }
+          ],
+          "acceptedAnswers": [
+            "bundle",
+            "combine"
+          ],
+          "acceptedTranslations": [
+            "połączyć w pakiet",
+            "łączyć w pakiet",
+            "wykupić pakiet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insurance.types",
+      "namePl": "Rodzaje ubezpieczeń",
+      "scenePl": "Po narodzinach dziecka przeglądasz przy kuchennym stole oferty różnych ubezpieczeń",
+      "entries": [
+        {
+          "id": "insurance.car-insurance",
+          "term": "car insurance",
+          "ipa": "/ˈkɑːr ɪnˌʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ubezpieczenie samochodu",
+          "definition": "Insurance that pays for damage, injury, or theft involving your car.",
+          "register": "neutralny",
+          "contextPl": "Ochrona kierowcy i auta",
+          "natural": "auto insurance",
+          "forms": "",
+          "collocations": "buy car insurance; car insurance policy",
+          "synonyms": "auto insurance",
+          "antonyms": "",
+          "notePl": "W USA ubezpieczenie OC jest obowiązkowe w prawie wszystkich stanach.",
+          "examples": [
+            {
+              "en": "Our car insurance went up after we added a second car.",
+              "pl": "Nasze ubezpieczenie samochodu podrożało po dodaniu drugiego auta.",
+              "focusEn": "car insurance",
+              "focusPl": "ubezpieczenie samochodu"
+            },
+            {
+              "en": "Is a baby seat covered by our car insurance?",
+              "pl": "Czy fotelik dziecięcy jest objęty naszym ubezpieczeniem samochodu?",
+              "focusEn": "car insurance",
+              "focusPl": "ubezpieczeniem samochodu"
+            }
+          ],
+          "acceptedAnswers": [
+            "car insurance",
+            "auto insurance"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie samochodu",
+            "ubezpieczenie samochodowe",
+            "ubezpieczenie auta"
+          ]
+        },
+        {
+          "id": "insurance.life-insurance",
+          "term": "life insurance",
+          "ipa": "/ˈlaɪf ɪnˌʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ubezpieczenie na życie",
+          "definition": "Insurance that pays money to your family when you die.",
+          "register": "neutralny",
+          "contextPl": "Zabezpieczenie bliskich",
+          "natural": "",
+          "forms": "",
+          "collocations": "buy life insurance; a life insurance policy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Now that we have a baby, we need life insurance.",
+              "pl": "Teraz, kiedy mamy dziecko, potrzebujemy ubezpieczenia na życie.",
+              "focusEn": "life insurance",
+              "focusPl": "ubezpieczenia na życie"
+            },
+            {
+              "en": "Life insurance is cheaper when you're young and healthy.",
+              "pl": "Ubezpieczenie na życie jest tańsze, kiedy jest się młodym i zdrowym.",
+              "focusEn": "Life insurance",
+              "focusPl": "Ubezpieczenie na życie"
+            }
+          ],
+          "acceptedAnswers": [
+            "life insurance"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie na życie",
+            "polisa na życie"
+          ]
+        },
+        {
+          "id": "insurance.beneficiary",
+          "term": "beneficiary",
+          "ipa": "/ˌbenɪˈfɪʃieri/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "uposażony",
+          "definition": "The person who receives money from a life insurance policy.",
+          "register": "specjalistyczny",
+          "contextPl": "Komu ubezpieczyciel wypłaci pieniądze",
+          "natural": "",
+          "forms": "beneficiaries",
+          "collocations": "name a beneficiary; the main beneficiary",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I want to name my wife as the main beneficiary.",
+              "pl": "Chcę wskazać żonę jako głównego uposażonego.",
+              "focusEn": "beneficiary",
+              "focusPl": "uposażonego"
+            },
+            {
+              "en": "We added our daughter as a second beneficiary on the policy.",
+              "pl": "Dodaliśmy córkę do polisy jako drugą osobę uposażoną.",
+              "focusEn": "beneficiary",
+              "focusPl": "osobę uposażoną"
+            }
+          ],
+          "acceptedAnswers": [
+            "beneficiary"
+          ],
+          "acceptedTranslations": [
+            "uposażony",
+            "beneficjent",
+            "osoba uposażona"
+          ]
+        },
+        {
+          "id": "insurance.homeowners-insurance",
+          "term": "homeowners insurance",
+          "ipa": "/ˈhoʊmoʊnərz ɪnˌʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ubezpieczenie domu",
+          "definition": "Insurance for a house and the things inside it.",
+          "register": "neutralny",
+          "contextPl": "Ochrona nieruchomości",
+          "natural": "home insurance",
+          "forms": "",
+          "collocations": "buy homeowners insurance; homeowners insurance policy",
+          "synonyms": "home insurance",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our homeowners insurance covers the house but not the garden shed.",
+              "pl": "Nasze ubezpieczenie domu obejmuje dom, ale nie szopę w ogrodzie.",
+              "focusEn": "homeowners insurance",
+              "focusPl": "ubezpieczenie domu"
+            },
+            {
+              "en": "The bank wanted proof of homeowners insurance before the mortgage.",
+              "pl": "Bank chciał dowodu ubezpieczenia domu przed udzieleniem kredytu hipotecznego.",
+              "focusEn": "homeowners insurance",
+              "focusPl": "ubezpieczenia domu"
+            }
+          ],
+          "acceptedAnswers": [
+            "homeowners insurance",
+            "home insurance"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie domu",
+            "ubezpieczenie mieszkania",
+            "ubezpieczenie nieruchomości"
+          ]
+        },
+        {
+          "id": "insurance.travel-insurance",
+          "term": "travel insurance",
+          "ipa": "/ˈtrævəl ɪnˌʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ubezpieczenie turystyczne",
+          "definition": "Insurance that covers medical costs and problems while you travel.",
+          "register": "neutralny",
+          "contextPl": "Ochrona w podróży",
+          "natural": "",
+          "forms": "",
+          "collocations": "buy travel insurance; travel insurance policy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll need travel insurance for our trip to Poland next summer.",
+              "pl": "Na przyszłoroczny letni wyjazd do Polski będziemy potrzebować ubezpieczenia turystycznego.",
+              "focusEn": "travel insurance",
+              "focusPl": "ubezpieczenia turystycznego"
+            },
+            {
+              "en": "Does our travel insurance cover the baby too?",
+              "pl": "Czy nasze ubezpieczenie turystyczne obejmuje też dziecko?",
+              "focusEn": "travel insurance",
+              "focusPl": "ubezpieczenie turystyczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "travel insurance"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie turystyczne",
+            "ubezpieczenie podróżne"
+          ]
+        },
+        {
+          "id": "insurance.pet-insurance",
+          "term": "pet insurance",
+          "ipa": "/ˈpet ɪnˌʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ubezpieczenie zwierzęcia",
+          "definition": "Insurance that pays for a pet's vet bills.",
+          "register": "neutralny",
+          "contextPl": "Ochrona zdrowia zwierzaka",
+          "natural": "",
+          "forms": "",
+          "collocations": "buy pet insurance; pet insurance plan",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is pet insurance worth it for an old dog?",
+              "pl": "Czy ubezpieczenie zwierzęcia opłaca się przy starym psie?",
+              "focusEn": "pet insurance",
+              "focusPl": "ubezpieczenie zwierzęcia"
+            },
+            {
+              "en": "Without pet insurance, the dog's surgery cost us two thousand dollars.",
+              "pl": "Bez ubezpieczenia zwierzęcia operacja psa kosztowała nas dwa tysiące dolarów.",
+              "focusEn": "pet insurance",
+              "focusPl": "ubezpieczenia zwierzęcia"
+            }
+          ],
+          "acceptedAnswers": [
+            "pet insurance"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie zwierzęcia",
+            "ubezpieczenie dla zwierząt",
+            "ubezpieczenie psa"
+          ]
+        },
+        {
+          "id": "insurance.flood-insurance",
+          "term": "flood insurance",
+          "ipa": "/ˈflʌd ɪnˌʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "ubezpieczenie od powodzi",
+          "definition": "Insurance that pays for damage caused by flooding.",
+          "register": "neutralny",
+          "contextPl": "Ochrona przed zalaniem",
+          "natural": "",
+          "forms": "",
+          "collocations": "buy flood insurance; require flood insurance",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA zwykle osobna polisa, nieobjęta ubezpieczeniem domu.",
+          "examples": [
+            {
+              "en": "Our house is near the river, so we need flood insurance.",
+              "pl": "Nasz dom stoi blisko rzeki, więc potrzebujemy ubezpieczenia od powodzi.",
+              "focusEn": "flood insurance",
+              "focusPl": "ubezpieczenia od powodzi"
+            },
+            {
+              "en": "Regular home policies don't include flood insurance.",
+              "pl": "Zwykłe polisy na dom nie obejmują ubezpieczenia od powodzi.",
+              "focusEn": "flood insurance",
+              "focusPl": "ubezpieczenia od powodzi"
+            }
+          ],
+          "acceptedAnswers": [
+            "flood insurance"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie od powodzi",
+            "ubezpieczenie przeciwpowodziowe"
+          ]
+        },
+        {
+          "id": "insurance.liability-insurance",
+          "term": "liability insurance",
+          "ipa": "/ˌlaɪəˈbɪləti ɪnˌʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "ubezpieczenie od odpowiedzialności cywilnej",
+          "definition": "Insurance that pays if you hurt someone or damage their property.",
+          "register": "specjalistyczny",
+          "contextPl": "Ochrona przed roszczeniami innych",
+          "natural": "",
+          "forms": "",
+          "collocations": "carry liability insurance; liability insurance coverage",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Najbliższy odpowiednik polskiego OC.",
+          "examples": [
+            {
+              "en": "Liability insurance protects us if a guest falls on our stairs.",
+              "pl": "Ubezpieczenie od odpowiedzialności cywilnej chroni nas, jeśli gość spadnie z naszych schodów.",
+              "focusEn": "Liability insurance",
+              "focusPl": "Ubezpieczenie od odpowiedzialności cywilnej"
+            },
+            {
+              "en": "The state only requires basic liability insurance for cars.",
+              "pl": "Stan wymaga w przypadku samochodów tylko podstawowego ubezpieczenia OC.",
+              "focusEn": "liability insurance",
+              "focusPl": "ubezpieczenia OC"
+            }
+          ],
+          "acceptedAnswers": [
+            "liability insurance",
+            "liability coverage"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie od odpowiedzialności cywilnej",
+            "ubezpieczenie OC",
+            "OC"
+          ]
+        },
+        {
+          "id": "insurance.disability-insurance",
+          "term": "disability insurance",
+          "ipa": "/ˌdɪsəˈbɪləti ɪnˌʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "ubezpieczenie na wypadek niezdolności do pracy",
+          "definition": "Insurance that pays you if illness or injury stops you from working.",
+          "register": "specjalistyczny",
+          "contextPl": "Zabezpieczenie dochodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "long-term disability insurance; short-term disability insurance",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With one income, disability insurance matters more than ever.",
+              "pl": "Przy jednym dochodzie ubezpieczenie na wypadek niezdolności do pracy jest ważniejsze niż kiedykolwiek.",
+              "focusEn": "disability insurance",
+              "focusPl": "ubezpieczenie na wypadek niezdolności do pracy"
+            },
+            {
+              "en": "My job offers disability insurance, but only for six months.",
+              "pl": "Mój pracodawca oferuje ubezpieczenie od utraty dochodu, ale tylko na pół roku.",
+              "focusEn": "disability insurance",
+              "focusPl": "ubezpieczenie od utraty dochodu"
+            }
+          ],
+          "acceptedAnswers": [
+            "disability insurance"
+          ],
+          "acceptedTranslations": [
+            "ubezpieczenie na wypadek niezdolności do pracy",
+            "ubezpieczenie od utraty dochodu"
+          ]
+        },
+        {
+          "id": "insurance.comprehensive-coverage",
+          "term": "comprehensive coverage",
+          "ipa": "/ˌkɑːmprɪˌhensɪv ˈkʌvərɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "autocasco",
+          "definition": "Car insurance that covers damage not caused by a crash, like theft or hail.",
+          "register": "specjalistyczny",
+          "contextPl": "Szeroka ochrona pojazdu",
+          "natural": "",
+          "forms": "",
+          "collocations": "add comprehensive coverage",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Odpowiada mniej więcej polskiemu AC (bez kolizji).",
+          "examples": [
+            {
+              "en": "Comprehensive coverage would pay if a tree fell on the car.",
+              "pl": "Autocasco zapłaciłoby, gdyby na samochód spadło drzewo.",
+              "focusEn": "Comprehensive coverage",
+              "focusPl": "Autocasco"
+            },
+            {
+              "en": "Do we really need comprehensive coverage on our old car?",
+              "pl": "Czy naprawdę potrzebujemy autocasco na nasz stary samochód?",
+              "focusEn": "comprehensive coverage",
+              "focusPl": "autocasco"
+            }
+          ],
+          "acceptedAnswers": [
+            "comprehensive coverage",
+            "comprehensive"
+          ],
+          "acceptedTranslations": [
+            "autocasco",
+            "AC",
+            "ubezpieczenie autocasco"
+          ]
+        },
+        {
+          "id": "insurance.umbrella-policy",
+          "term": "umbrella policy",
+          "ipa": "/ˈʌmbrelə ˌpɑːləsi/",
+          "pos": "rzeczownik",
+          "level": "C2",
+          "frequency": "less_common",
+          "translation": "dodatkowe ubezpieczenie OC",
+          "definition": "Extra liability insurance that pays more than your home and car policies.",
+          "register": "specjalistyczny",
+          "contextPl": "Rozszerzona ochrona od odpowiedzialności",
+          "natural": "",
+          "forms": "umbrella policies",
+          "collocations": "buy an umbrella policy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With a pool in the yard, an umbrella policy might make sense.",
+              "pl": "Z basenem w ogrodzie dodatkowe ubezpieczenie OC może mieć sens.",
+              "focusEn": "umbrella policy",
+              "focusPl": "dodatkowe ubezpieczenie OC"
+            },
+            {
+              "en": "An umbrella policy costs less than we expected.",
+              "pl": "Dodatkowe ubezpieczenie OC kosztuje mniej, niż się spodziewaliśmy.",
+              "focusEn": "umbrella policy",
+              "focusPl": "Dodatkowe ubezpieczenie OC"
+            }
+          ],
+          "acceptedAnswers": [
+            "umbrella policy",
+            "umbrella insurance"
+          ],
+          "acceptedTranslations": [
+            "dodatkowe ubezpieczenie OC",
+            "nadwyżkowe ubezpieczenie OC",
+            "polisa parasolowa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insurance.claims",
+      "namePl": "Zgłaszanie szkody",
+      "scenePl": "Rano po zalaniu kuchni przez pękniętą rurę dzwonisz do ubezpieczyciela i czekasz na rzeczoznawcę",
+      "entries": [
+        {
+          "id": "insurance.claim",
+          "term": "claim",
+          "ipa": "/kleɪm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "very_common",
+          "translation": "roszczenie",
+          "definition": "A formal request to an insurance company for money after damage or loss.",
+          "register": "neutralny",
+          "contextPl": "Zgłoszenie szkody do ubezpieczyciela",
+          "natural": "",
+          "forms": "claims",
+          "collocations": "make a claim; claim number; the claim was approved",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd like to start a claim for water damage in my kitchen.",
+              "pl": "Chciałbym zgłosić roszczenie z powodu zalania kuchni.",
+              "focusEn": "claim",
+              "focusPl": "roszczenie"
+            },
+            {
+              "en": "How long does a claim like this usually take?",
+              "pl": "Ile zwykle trwa rozpatrzenie takiego roszczenia?",
+              "focusEn": "claim",
+              "focusPl": "roszczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "claim",
+            "insurance claim"
+          ],
+          "acceptedTranslations": [
+            "roszczenie",
+            "zgłoszenie szkody",
+            "wniosek o odszkodowanie"
+          ]
+        },
+        {
+          "id": "insurance.claim-number",
+          "term": "claim number",
+          "ipa": "/ˈkleɪm ˌnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "numer szkody",
+          "definition": "A number given to your claim so the company can track it.",
+          "register": "neutralny",
+          "contextPl": "Identyfikacja sprawy u ubezpieczyciela",
+          "natural": "reference number",
+          "forms": "claim numbers",
+          "collocations": "give your claim number",
+          "synonyms": "reference number",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please write down your claim number before we hang up.",
+              "pl": "Proszę zapisać numer szkody, zanim się rozłączymy.",
+              "focusEn": "claim number",
+              "focusPl": "numer szkody"
+            },
+            {
+              "en": "Every email about the leak should include the claim number.",
+              "pl": "Każdy mail w sprawie przecieku powinien zawierać numer szkody.",
+              "focusEn": "claim number",
+              "focusPl": "numer szkody"
+            }
+          ],
+          "acceptedAnswers": [
+            "claim number"
+          ],
+          "acceptedTranslations": [
+            "numer szkody",
+            "numer zgłoszenia",
+            "numer sprawy"
+          ]
+        },
+        {
+          "id": "insurance.burst-pipe",
+          "term": "burst pipe",
+          "ipa": "/ˌbɝːst ˈpaɪp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pęknięta rura",
+          "definition": "A water pipe that has broken open.",
+          "register": "neutralny",
+          "contextPl": "Przyczyna zalania",
+          "natural": "",
+          "forms": "burst pipes",
+          "collocations": "a burst pipe in the kitchen; damage from a burst pipe",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A burst pipe under the sink flooded the whole floor.",
+              "pl": "Pęknięta rura pod zlewem zalała całą podłogę.",
+              "focusEn": "burst pipe",
+              "focusPl": "Pęknięta rura"
+            },
+            {
+              "en": "Is damage from a burst pipe covered by my policy?",
+              "pl": "Czy szkody spowodowane przez pękniętą rurę są objęte moją polisą?",
+              "focusEn": "burst pipe",
+              "focusPl": "pękniętą rurę"
+            }
+          ],
+          "acceptedAnswers": [
+            "burst pipe",
+            "broken pipe"
+          ],
+          "acceptedTranslations": [
+            "pęknięta rura",
+            "pęknięcie rury"
+          ]
+        },
+        {
+          "id": "insurance.document-the-damage",
+          "term": "document the damage",
+          "ipa": "/ˌdɑːkjəment ðə ˈdæmɪdʒ/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "udokumentować szkody",
+          "definition": "To take photos and notes that show what was damaged.",
+          "register": "neutralny",
+          "contextPl": "Zbieranie dowodów szkody",
+          "natural": "",
+          "forms": "documented; documenting",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Before you clean up, document the damage with photos.",
+              "pl": "Zanim pan posprząta, proszę udokumentować szkody na zdjęciach.",
+              "focusEn": "document the damage",
+              "focusPl": "udokumentować szkody"
+            },
+            {
+              "en": "I documented the damage with a video on my phone.",
+              "pl": "Udokumentowałem szkody, nagrywając film telefonem.",
+              "focusEn": "documented the damage",
+              "focusPl": "Udokumentowałem szkody"
+            }
+          ],
+          "acceptedAnswers": [
+            "document the damage"
+          ],
+          "acceptedTranslations": [
+            "udokumentować szkody",
+            "dokumentować szkody",
+            "udokumentować zniszczenia"
+          ]
+        },
+        {
+          "id": "insurance.claim-form",
+          "term": "claim form",
+          "ipa": "/ˈkleɪm ˌfɔːrm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "formularz zgłoszenia szkody",
+          "definition": "The document you fill out to ask an insurance company for money.",
+          "register": "neutralny",
+          "contextPl": "Formalne zgłoszenie",
+          "natural": "",
+          "forms": "claim forms",
+          "collocations": "fill out a claim form; submit a claim form",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The agent emailed me the claim form right after my call.",
+              "pl": "Agent przysłał mi mailem formularz zgłoszenia szkody zaraz po moim telefonie.",
+              "focusEn": "claim form",
+              "focusPl": "formularz zgłoszenia szkody"
+            },
+            {
+              "en": "I filled out the claim form while the floor was still drying.",
+              "pl": "Wypełniłem formularz zgłoszenia szkody, kiedy podłoga jeszcze schła.",
+              "focusEn": "claim form",
+              "focusPl": "formularz zgłoszenia szkody"
+            }
+          ],
+          "acceptedAnswers": [
+            "claim form"
+          ],
+          "acceptedTranslations": [
+            "formularz zgłoszenia szkody",
+            "formularz szkody",
+            "druk zgłoszenia"
+          ]
+        },
+        {
+          "id": "insurance.claims-adjuster",
+          "term": "claims adjuster",
+          "ipa": "/ˈkleɪmz əˌdʒʌstər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "likwidator szkód",
+          "definition": "A person who inspects damage and decides how much the insurance will pay.",
+          "register": "specjalistyczny",
+          "contextPl": "Oględziny szkody",
+          "natural": "adjuster",
+          "forms": "claims adjusters",
+          "collocations": "the claims adjuster will contact you",
+          "synonyms": "adjuster; loss adjuster",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A claims adjuster will come to see the kitchen on Thursday.",
+              "pl": "W czwartek przyjdzie likwidator szkód, żeby obejrzeć kuchnię.",
+              "focusEn": "claims adjuster",
+              "focusPl": "likwidator szkód"
+            },
+            {
+              "en": "The claims adjuster measured the wet floor and took photos.",
+              "pl": "Rzeczoznawca zmierzył mokrą podłogę i zrobił zdjęcia.",
+              "focusEn": "claims adjuster",
+              "focusPl": "Rzeczoznawca"
+            }
+          ],
+          "acceptedAnswers": [
+            "claims adjuster",
+            "adjuster"
+          ],
+          "acceptedTranslations": [
+            "likwidator szkód",
+            "rzeczoznawca",
+            "rzeczoznawca ubezpieczeniowy"
+          ]
+        },
+        {
+          "id": "insurance.assess",
+          "term": "assess",
+          "ipa": "/əˈses/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "oszacować",
+          "definition": "To judge the amount or value of something, such as damage.",
+          "register": "formalny",
+          "contextPl": "Ocena wysokości szkody",
+          "natural": "evaluate",
+          "forms": "assessed; assessing",
+          "collocations": "assess the damage; assess the cost",
+          "synonyms": "evaluate",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They need to assess the damage before any repairs start.",
+              "pl": "Muszą oszacować szkody, zanim zaczną się jakiekolwiek naprawy.",
+              "focusEn": "assess",
+              "focusPl": "oszacować"
+            },
+            {
+              "en": "The adjuster assessed the damage at six thousand dollars.",
+              "pl": "Likwidator oszacował szkody na sześć tysięcy dolarów.",
+              "focusEn": "assessed",
+              "focusPl": "oszacował"
+            }
+          ],
+          "acceptedAnswers": [
+            "assess",
+            "evaluate"
+          ],
+          "acceptedTranslations": [
+            "oszacować",
+            "szacować",
+            "ocenić",
+            "oceniać"
+          ]
+        },
+        {
+          "id": "insurance.repair-estimate",
+          "term": "repair estimate",
+          "ipa": "/rɪˈper ˌestɪmət/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kosztorys naprawy",
+          "definition": "A written guess of how much a repair will cost.",
+          "register": "neutralny",
+          "contextPl": "Wycena prac naprawczych",
+          "natural": "quote",
+          "forms": "repair estimates",
+          "collocations": "get a repair estimate; send a repair estimate",
+          "synonyms": "quote",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The insurance company wants two repair estimates from local plumbers.",
+              "pl": "Ubezpieczyciel chce dwóch kosztorysów naprawy od miejscowych hydraulików.",
+              "focusEn": "repair estimates",
+              "focusPl": "kosztorysów naprawy"
+            },
+            {
+              "en": "The first repair estimate was much higher than the second.",
+              "pl": "Pierwszy kosztorys naprawy był dużo wyższy niż drugi.",
+              "focusEn": "repair estimate",
+              "focusPl": "kosztorys naprawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "repair estimate",
+            "estimate",
+            "quote"
+          ],
+          "acceptedTranslations": [
+            "kosztorys naprawy",
+            "wycena naprawy",
+            "kosztorys"
+          ]
+        },
+        {
+          "id": "insurance.payout",
+          "term": "payout",
+          "ipa": "/ˈpeɪaʊt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "wypłata odszkodowania",
+          "definition": "An amount of money paid by an insurance company.",
+          "register": "neutralny",
+          "contextPl": "Pieniądze od ubezpieczyciela",
+          "natural": "",
+          "forms": "payouts",
+          "collocations": "an insurance payout; receive a payout",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The payout arrived in our account three weeks later.",
+              "pl": "Wypłata odszkodowania wpłynęła na nasze konto trzy tygodnie później.",
+              "focusEn": "payout",
+              "focusPl": "Wypłata odszkodowania"
+            },
+            {
+              "en": "After the deductible, the payout was about five thousand dollars.",
+              "pl": "Po odjęciu udziału własnego wypłata wyniosła około pięciu tysięcy dolarów.",
+              "focusEn": "payout",
+              "focusPl": "wypłata"
+            }
+          ],
+          "acceptedAnswers": [
+            "payout"
+          ],
+          "acceptedTranslations": [
+            "wypłata odszkodowania",
+            "wypłata",
+            "odszkodowanie"
+          ]
+        },
+        {
+          "id": "insurance.proof-of-loss",
+          "term": "proof of loss",
+          "ipa": "/ˌpruːf əv ˈlɔːs/",
+          "pos": "rzeczownik",
+          "level": "C2",
+          "frequency": "less_common",
+          "translation": "dowód poniesienia szkody",
+          "definition": "A formal statement with documents that shows what you lost and its value.",
+          "register": "specjalistyczny",
+          "contextPl": "Udowodnienie wartości strat",
+          "natural": "",
+          "forms": "",
+          "collocations": "submit a proof of loss; sworn proof of loss",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They need a signed proof of loss within sixty days.",
+              "pl": "Potrzebują podpisanego oświadczenia o szkodzie w ciągu sześćdziesięciu dni.",
+              "focusEn": "proof of loss",
+              "focusPl": "oświadczenia o szkodzie"
+            },
+            {
+              "en": "Receipts for the ruined cabinets are part of my proof of loss.",
+              "pl": "Paragony za zniszczone szafki są częścią mojego dowodu poniesienia szkody.",
+              "focusEn": "proof of loss",
+              "focusPl": "dowodu poniesienia szkody"
+            }
+          ],
+          "acceptedAnswers": [
+            "proof of loss"
+          ],
+          "acceptedTranslations": [
+            "dowód poniesienia szkody",
+            "potwierdzenie strat",
+            "oświadczenie o szkodzie"
+          ]
+        },
+        {
+          "id": "insurance.deny-a-claim",
+          "term": "deny a claim",
+          "ipa": "/dɪˌnaɪ ə ˈkleɪm/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odrzucić roszczenie",
+          "definition": "Of an insurance company: to refuse to pay for a claim.",
+          "register": "neutralny",
+          "contextPl": "Odmowa wypłaty",
+          "natural": "reject a claim",
+          "forms": "denied; denying",
+          "collocations": "",
+          "synonyms": "reject a claim",
+          "antonyms": "approve a claim",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They can deny a claim if the leak was slow and never fixed.",
+              "pl": "Mogą odrzucić roszczenie, jeśli przeciek był powolny i nigdy go nie naprawiono.",
+              "focusEn": "deny a claim",
+              "focusPl": "odrzucić roszczenie"
+            },
+            {
+              "en": "Why would you deny a claim for a pipe that burst suddenly?",
+              "pl": "Dlaczego mielibyście odrzucić roszczenie za rurę, która pękła nagle?",
+              "focusEn": "deny a claim",
+              "focusPl": "odrzucić roszczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "deny a claim",
+            "reject a claim"
+          ],
+          "acceptedTranslations": [
+            "odrzucić roszczenie",
+            "odrzucać roszczenie",
+            "odmówić wypłaty odszkodowania"
+          ]
+        },
+        {
+          "id": "insurance.settle-a-claim",
+          "term": "settle a claim",
+          "ipa": "/ˌsetəl ə ˈkleɪm/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zlikwidować szkodę",
+          "definition": "To finish a claim by agreeing on how much will be paid.",
+          "register": "specjalistyczny",
+          "contextPl": "Zamknięcie sprawy ubezpieczeniowej",
+          "natural": "",
+          "forms": "settled; settling",
+          "collocations": "settle a claim quickly",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They promised to settle the claim within thirty days.",
+              "pl": "Obiecali zlikwidować szkodę w ciągu trzydziestu dni.",
+              "focusEn": "settle the claim",
+              "focusPl": "zlikwidować szkodę"
+            },
+            {
+              "en": "It took two months to settle the claim because of all the paperwork.",
+              "pl": "Zlikwidowanie szkody zajęło dwa miesiące z powodu całej papierologii.",
+              "focusEn": "settle the claim",
+              "focusPl": "Zlikwidowanie szkody"
+            }
+          ],
+          "acceptedAnswers": [
+            "settle a claim"
+          ],
+          "acceptedTranslations": [
+            "zlikwidować szkodę",
+            "likwidować szkodę",
+            "rozliczyć szkodę"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insurance.coverage-details",
+      "namePl": "Zakres i wyłączenia",
+      "scenePl": "Wieczorem czytasz warunki nowej polisy, żeby sprawdzić, co dokładnie obejmuje",
+      "entries": [
+        {
+          "id": "insurance.cover",
+          "term": "cover",
+          "ipa": "/ˈkʌvər/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "pokrywać",
+          "definition": "Of insurance: to pay for damage, loss, or treatment.",
+          "register": "neutralny",
+          "contextPl": "Co płaci ubezpieczyciel",
+          "natural": "pay for",
+          "forms": "covered; covering",
+          "collocations": "cover the cost; cover damage; be covered",
+          "synonyms": "pay for",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Does this policy cover damage from storms?",
+              "pl": "Czy ta polisa pokrywa szkody spowodowane przez burze?",
+              "focusEn": "cover",
+              "focusPl": "pokrywa"
+            },
+            {
+              "en": "It covers stolen bikes, but only if they were locked.",
+              "pl": "Obejmuje skradzione rowery, ale tylko jeśli były przypięte.",
+              "focusEn": "covers",
+              "focusPl": "Obejmuje"
+            }
+          ],
+          "acceptedAnswers": [
+            "cover",
+            "pay for"
+          ],
+          "acceptedTranslations": [
+            "pokrywać",
+            "pokryć",
+            "obejmować",
+            "obejmować ochroną"
+          ]
+        },
+        {
+          "id": "insurance.exclusion",
+          "term": "exclusion",
+          "ipa": "/ɪkˈskluːʒən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "wyłączenie",
+          "definition": "Something that an insurance policy says it will not pay for.",
+          "register": "specjalistyczny",
+          "contextPl": "Zdarzenia nieobjęte ochroną",
+          "natural": "",
+          "forms": "exclusions",
+          "collocations": "a list of exclusions; standard exclusions",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The list of exclusions is longer than the list of what's covered.",
+              "pl": "Lista wyłączeń jest dłuższa niż lista tego, co jest objęte ochroną.",
+              "focusEn": "exclusions",
+              "focusPl": "wyłączeń"
+            },
+            {
+              "en": "Mold is a common exclusion in home policies.",
+              "pl": "Pleśń to częste wyłączenie w polisach na dom.",
+              "focusEn": "exclusion",
+              "focusPl": "wyłączenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "exclusion"
+          ],
+          "acceptedTranslations": [
+            "wyłączenie",
+            "wyłączenie odpowiedzialności"
+          ]
+        },
+        {
+          "id": "insurance.limit",
+          "term": "limit",
+          "ipa": "/ˈlɪmɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "suma ubezpieczenia",
+          "definition": "The most money a policy will pay for one claim or one type of loss.",
+          "register": "neutralny",
+          "contextPl": "Maksymalna kwota wypłaty",
+          "natural": "",
+          "forms": "limits",
+          "collocations": "coverage limit; policy limit; a limit of fifty thousand",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The limit for jewelry is only fifteen hundred dollars.",
+              "pl": "Limit na biżuterię wynosi tylko tysiąc pięćset dolarów.",
+              "focusEn": "limit",
+              "focusPl": "Limit"
+            },
+            {
+              "en": "Should we raise the limit now that we've renovated?",
+              "pl": "Czy powinniśmy podnieść sumę ubezpieczenia teraz, po remoncie?",
+              "focusEn": "limit",
+              "focusPl": "sumę ubezpieczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "limit",
+            "coverage limit"
+          ],
+          "acceptedTranslations": [
+            "suma ubezpieczenia",
+            "limit",
+            "limit odpowiedzialności"
+          ]
+        },
+        {
+          "id": "insurance.out-of-pocket",
+          "term": "out-of-pocket",
+          "ipa": "/ˌaʊt əv ˈpɑːkɪt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "z własnej kieszeni",
+          "definition": "Paid by you personally, not by insurance.",
+          "register": "neutralny",
+          "contextPl": "Koszty niepokryte przez polisę",
+          "natural": "",
+          "forms": "",
+          "collocations": "out-of-pocket costs; out-of-pocket expenses; pay out of pocket",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Any out-of-pocket costs under the deductible are ours to pay.",
+              "pl": "Wszelkie koszty z własnej kieszeni poniżej udziału własnego musimy pokryć sami.",
+              "focusEn": "out-of-pocket",
+              "focusPl": "z własnej kieszeni"
+            },
+            {
+              "en": "I didn't expect so many out-of-pocket expenses in this policy.",
+              "pl": "Nie spodziewałem się w tej polisie tylu wydatków z własnej kieszeni.",
+              "focusEn": "out-of-pocket",
+              "focusPl": "z własnej kieszeni"
+            }
+          ],
+          "acceptedAnswers": [
+            "out-of-pocket",
+            "out of pocket"
+          ],
+          "acceptedTranslations": [
+            "z własnej kieszeni",
+            "pokrywany samodzielnie",
+            "własny"
+          ]
+        },
+        {
+          "id": "insurance.waiting-period",
+          "term": "waiting period",
+          "ipa": "/ˈweɪtɪŋ ˌpɪriəd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "okres karencji",
+          "definition": "The time after you buy insurance before certain things are covered.",
+          "register": "specjalistyczny",
+          "contextPl": "Opóźniony początek ochrony",
+          "natural": "",
+          "forms": "waiting periods",
+          "collocations": "a thirty-day waiting period",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a thirty-day waiting period for flood coverage.",
+              "pl": "Ochrona przed powodzią ma trzydziestodniowy okres karencji.",
+              "focusEn": "waiting period",
+              "focusPl": "okres karencji"
+            },
+            {
+              "en": "Is there a waiting period before the dental part starts?",
+              "pl": "Czy przed rozpoczęciem części stomatologicznej jest okres karencji?",
+              "focusEn": "waiting period",
+              "focusPl": "okres karencji"
+            }
+          ],
+          "acceptedAnswers": [
+            "waiting period"
+          ],
+          "acceptedTranslations": [
+            "okres karencji",
+            "karencja",
+            "okres oczekiwania"
+          ]
+        },
+        {
+          "id": "insurance.pre-existing-condition",
+          "term": "pre-existing condition",
+          "ipa": "/ˌpriː ɪɡˌzɪstɪŋ kənˈdɪʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "choroba przewlekła istniejąca przed zawarciem umowy",
+          "definition": "A health problem you had before you bought insurance.",
+          "register": "specjalistyczny",
+          "contextPl": "Ograniczenia w ubezpieczeniach zdrowotnych",
+          "natural": "",
+          "forms": "pre-existing conditions",
+          "collocations": "cover pre-existing conditions; exclude pre-existing conditions",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Does the travel policy cover a pre-existing condition like asthma?",
+              "pl": "Czy polisa turystyczna obejmuje wcześniej istniejącą chorobę, taką jak astma?",
+              "focusEn": "pre-existing condition",
+              "focusPl": "wcześniej istniejącą chorobę"
+            },
+            {
+              "en": "Pet insurance won't pay for any pre-existing condition.",
+              "pl": "Ubezpieczenie zwierzęcia nie zapłaci za żadną wcześniej istniejącą chorobę.",
+              "focusEn": "pre-existing condition",
+              "focusPl": "wcześniej istniejącą chorobę"
+            }
+          ],
+          "acceptedAnswers": [
+            "pre-existing condition"
+          ],
+          "acceptedTranslations": [
+            "choroba przewlekła istniejąca przed zawarciem umowy",
+            "wcześniej istniejąca choroba",
+            "choroba współistniejąca"
+          ]
+        },
+        {
+          "id": "insurance.act-of-god",
+          "term": "act of God",
+          "ipa": "/ˌækt əv ˈɡɑːd/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "siła wyższa",
+          "definition": "A natural event, like an earthquake, that no person can control.",
+          "register": "specjalistyczny",
+          "contextPl": "Zdarzenia losowe w polisie",
+          "natural": "force majeure",
+          "forms": "acts of God",
+          "collocations": "",
+          "synonyms": "force majeure",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The policy treats a lightning strike as an act of God.",
+              "pl": "Polisa traktuje uderzenie pioruna jako siłę wyższą.",
+              "focusEn": "act of God",
+              "focusPl": "siłę wyższą"
+            },
+            {
+              "en": "Some damage from an act of God isn't covered at all.",
+              "pl": "Niektóre szkody spowodowane siłą wyższą w ogóle nie są objęte ochroną.",
+              "focusEn": "act of God",
+              "focusPl": "siłą wyższą"
+            }
+          ],
+          "acceptedAnswers": [
+            "act of God",
+            "force majeure"
+          ],
+          "acceptedTranslations": [
+            "siła wyższa",
+            "zdarzenie losowe",
+            "klęska żywiołowa"
+          ]
+        },
+        {
+          "id": "insurance.lapse",
+          "term": "lapse",
+          "ipa": "/læps/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wygasnąć",
+          "definition": "Of a policy: to end because you did not pay or renew it.",
+          "register": "specjalistyczny",
+          "contextPl": "Utrata ochrony przez brak płatności",
+          "natural": "expire",
+          "forms": "lapsed; lapsing",
+          "collocations": "let a policy lapse; the policy lapsed",
+          "synonyms": "expire",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you miss two payments, the policy will lapse.",
+              "pl": "Jeśli spóźni się pan z dwiema płatnościami, polisa wygaśnie.",
+              "focusEn": "lapse",
+              "focusPl": "wygaśnie"
+            },
+            {
+              "en": "My old policy lapsed while we were moving, and I didn't notice.",
+              "pl": "Moja stara polisa wygasła w trakcie przeprowadzki, a ja tego nie zauważyłem.",
+              "focusEn": "lapsed",
+              "focusPl": "wygasła"
+            }
+          ],
+          "acceptedAnswers": [
+            "lapse",
+            "expire"
+          ],
+          "acceptedTranslations": [
+            "wygasnąć",
+            "wygasać",
+            "stracić ważność"
+          ]
+        },
+        {
+          "id": "insurance.copay",
+          "term": "copay",
+          "ipa": "/ˈkoʊpeɪ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "dopłata",
+          "definition": "A small fixed amount you pay for a doctor visit or medicine when you have health insurance.",
+          "register": "specjalistyczny",
+          "contextPl": "Ubezpieczenia zdrowotne w USA",
+          "natural": "co-payment",
+          "forms": "copays",
+          "collocations": "a twenty-dollar copay; pay a copay",
+          "synonyms": "co-payment",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This plan has a thirty-dollar copay for each doctor visit.",
+              "pl": "Ten plan przewiduje dopłatę w wysokości trzydziestu dolarów za każdą wizytę u lekarza.",
+              "focusEn": "copay",
+              "focusPl": "dopłatę"
+            },
+            {
+              "en": "The copay for brand-name drugs is much higher than for generics.",
+              "pl": "Dopłata za leki oryginalne jest dużo wyższa niż za zamienniki.",
+              "focusEn": "copay",
+              "focusPl": "Dopłata"
+            }
+          ],
+          "acceptedAnswers": [
+            "copay",
+            "co-pay",
+            "co-payment"
+          ],
+          "acceptedTranslations": [
+            "dopłata",
+            "współpłacenie",
+            "opłata własna"
+          ]
+        },
+        {
+          "id": "insurance.in-the-event-of",
+          "term": "in the event of",
+          "ipa": "/ˌɪn ði ɪˈvent əv/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "w przypadku",
+          "definition": "If a particular thing happens.",
+          "register": "formalny",
+          "contextPl": "Język warunków ubezpieczenia",
+          "natural": "in case of",
+          "forms": "",
+          "collocations": "in the event of an accident; in the event of death",
+          "synonyms": "in case of",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "In the event of a fire, call the company within forty-eight hours.",
+              "pl": "W przypadku pożaru proszę zadzwonić do firmy w ciągu czterdziestu ośmiu godzin.",
+              "focusEn": "In the event of",
+              "focusPl": "W przypadku"
+            },
+            {
+              "en": "The policy explains what happens in the event of the policyholder's death.",
+              "pl": "Polisa wyjaśnia, co się dzieje w razie śmierci ubezpieczonego.",
+              "focusEn": "in the event of",
+              "focusPl": "w razie"
+            }
+          ],
+          "acceptedAnswers": [
+            "in the event of",
+            "in case of"
+          ],
+          "acceptedTranslations": [
+            "w przypadku",
+            "w razie"
+          ]
+        },
+        {
+          "id": "insurance.policy-renewal",
+          "term": "policy renewal",
+          "ipa": "/ˈpɑːləsi rɪˌnuːəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odnowienie polisy",
+          "definition": "The extension of an insurance policy for another period.",
+          "register": "neutralny",
+          "contextPl": "Przedłużenie ochrony",
+          "natural": "renewal",
+          "forms": "policy renewals",
+          "collocations": "policy renewal date; automatic policy renewal",
+          "synonyms": "renewal",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The price went up at policy renewal without any warning.",
+              "pl": "Przy odnowieniu polisy cena wzrosła bez żadnego ostrzeżenia.",
+              "focusEn": "policy renewal",
+              "focusPl": "odnowieniu polisy"
+            },
+            {
+              "en": "I always read the policy renewal letter carefully.",
+              "pl": "Zawsze uważnie czytam pismo w sprawie odnowienia polisy.",
+              "focusEn": "policy renewal",
+              "focusPl": "odnowienia polisy"
+            }
+          ],
+          "acceptedAnswers": [
+            "policy renewal",
+            "renewal"
+          ],
+          "acceptedTranslations": [
+            "odnowienie polisy",
+            "wznowienie polisy",
+            "przedłużenie polisy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insurance.accident",
+      "namePl": "Stłuczka i ryzyko",
+      "scenePl": "Po stłuczce na parkingu supermarketu wymieniasz się z drugim kierowcą danymi ubezpieczenia",
+      "entries": [
+        {
+          "id": "insurance.exchange-insurance-information",
+          "term": "exchange insurance information",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wymienić się danymi ubezpieczenia",
+          "definition": "To give each other your names and insurance details after a car accident.",
+          "register": "neutralny",
+          "contextPl": "Pierwsze kroki po kolizji",
+          "natural": "",
+          "forms": "exchanged; exchanging",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Nobody was hurt, so we just exchange insurance information and take photos.",
+              "pl": "Nikomu nic się nie stało, więc tylko wymieniamy się danymi ubezpieczenia i robimy zdjęcia.",
+              "focusEn": "exchange insurance information",
+              "focusPl": "wymieniamy się danymi ubezpieczenia"
+            },
+            {
+              "en": "The other driver refused to exchange insurance information and drove away.",
+              "pl": "Drugi kierowca odmówił wymiany danych ubezpieczenia i odjechał.",
+              "focusEn": "exchange insurance information",
+              "focusPl": "wymiany danych ubezpieczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "exchange insurance information",
+            "exchange information",
+            "swap insurance info"
+          ],
+          "acceptedTranslations": [
+            "wymienić się danymi ubezpieczenia",
+            "wymienić się danymi",
+            "wymienić się informacjami o ubezpieczeniu"
+          ]
+        },
+        {
+          "id": "insurance.proof-of-insurance",
+          "term": "proof of insurance",
+          "ipa": "/ˌpruːf əv ɪnˈʃʊrəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dowód ubezpieczenia",
+          "definition": "A card or document that shows you have valid insurance.",
+          "register": "neutralny",
+          "contextPl": "Dokument potwierdzający polisę",
+          "natural": "insurance card",
+          "forms": "",
+          "collocations": "show proof of insurance; carry proof of insurance",
+          "synonyms": "insurance card",
+          "antonyms": "",
+          "notePl": "W USA zwykle mała karta w schowku lub w aplikacji.",
+          "examples": [
+            {
+              "en": "I keep my proof of insurance in the glove compartment.",
+              "pl": "Dowód ubezpieczenia trzymam w schowku na rękawiczki.",
+              "focusEn": "proof of insurance",
+              "focusPl": "Dowód ubezpieczenia"
+            },
+            {
+              "en": "She showed me her proof of insurance on her phone.",
+              "pl": "Pokazała mi potwierdzenie ubezpieczenia w telefonie.",
+              "focusEn": "proof of insurance",
+              "focusPl": "potwierdzenie ubezpieczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "proof of insurance",
+            "insurance card"
+          ],
+          "acceptedTranslations": [
+            "dowód ubezpieczenia",
+            "polisa",
+            "potwierdzenie ubezpieczenia"
+          ]
+        },
+        {
+          "id": "insurance.at-fault",
+          "term": "at fault",
+          "ipa": "/ət ˈfɔːlt/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "winny",
+          "definition": "Responsible for causing an accident or problem.",
+          "register": "neutralny",
+          "contextPl": "Ustalanie sprawcy kolizji",
+          "natural": "to blame",
+          "forms": "",
+          "collocations": "be at fault; the driver at fault; not at fault",
+          "synonyms": "to blame; responsible",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She admitted she was at fault because she backed up without looking.",
+              "pl": "Przyznała, że była winna, bo cofała, nie patrząc.",
+              "focusEn": "at fault",
+              "focusPl": "winna"
+            },
+            {
+              "en": "Don't say who's at fault; let the insurance companies decide.",
+              "pl": "Nie mów, kto jest winny; niech zdecydują ubezpieczyciele.",
+              "focusEn": "at fault",
+              "focusPl": "winny"
+            }
+          ],
+          "acceptedAnswers": [
+            "at fault",
+            "to blame"
+          ],
+          "acceptedTranslations": [
+            "winny",
+            "winna",
+            "z czyjejś winy",
+            "odpowiedzialny"
+          ]
+        },
+        {
+          "id": "insurance.insurance-rates",
+          "term": "insurance rates",
+          "ipa": "/ɪnˈʃʊrəns ˌreɪts/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stawki ubezpieczenia",
+          "definition": "The prices that an insurance company charges.",
+          "register": "neutralny",
+          "contextPl": "Koszt ubezpieczenia po zdarzeniu",
+          "natural": "premiums",
+          "forms": "",
+          "collocations": "insurance rates go up; lower insurance rates",
+          "synonyms": "premiums",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Will my insurance rates go up after this tiny scratch?",
+              "pl": "Czy moje stawki ubezpieczenia wzrosną po tej malutkiej rysie?",
+              "focusEn": "insurance rates",
+              "focusPl": "stawki ubezpieczenia"
+            },
+            {
+              "en": "One accident can raise your insurance rates for three years.",
+              "pl": "Jeden wypadek może podnieść stawki ubezpieczenia na trzy lata.",
+              "focusEn": "insurance rates",
+              "focusPl": "stawki ubezpieczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "insurance rates",
+            "rates"
+          ],
+          "acceptedTranslations": [
+            "stawki ubezpieczenia",
+            "ceny ubezpieczenia",
+            "składki"
+          ]
+        },
+        {
+          "id": "insurance.collision",
+          "term": "collision",
+          "ipa": "/kəˈlɪʒən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "kolizja",
+          "definition": "An accident in which a vehicle hits something.",
+          "register": "formalny",
+          "contextPl": "Język polis samochodowych",
+          "natural": "crash",
+          "forms": "collisions",
+          "collocations": "collision coverage; a minor collision",
+          "synonyms": "crash; accident",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our collision coverage pays for our car even if I caused the crash.",
+              "pl": "Nasze ubezpieczenie od kolizji pokrywa koszty naszego auta, nawet jeśli to ja spowodowałem stłuczkę.",
+              "focusEn": "collision",
+              "focusPl": "kolizji"
+            },
+            {
+              "en": "It was a minor collision at five miles per hour.",
+              "pl": "To była drobna kolizja przy prędkości pięciu mil na godzinę.",
+              "focusEn": "collision",
+              "focusPl": "kolizja"
+            }
+          ],
+          "acceptedAnswers": [
+            "collision",
+            "crash"
+          ],
+          "acceptedTranslations": [
+            "kolizja",
+            "zderzenie"
+          ]
+        },
+        {
+          "id": "insurance.totaled",
+          "term": "totaled",
+          "ipa": "/ˈtoʊtəld/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "do kasacji",
+          "definition": "Of a car: so badly damaged that repairing it costs more than it is worth.",
+          "register": "potoczny",
+          "contextPl": "Szkoda całkowita",
+          "natural": "written off",
+          "forms": "",
+          "collocations": "the car was totaled",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik: „total a car” – rozbić auto do kasacji.",
+          "examples": [
+            {
+              "en": "Luckily, my car isn't totaled; it just needs a new bumper.",
+              "pl": "Na szczęście moje auto nie nadaje się do kasacji; potrzebuje tylko nowego zderzaka.",
+              "focusEn": "totaled",
+              "focusPl": "do kasacji"
+            },
+            {
+              "en": "My cousin's car was totaled in a parking lot crash like this.",
+              "pl": "Samochód mojego kuzyna był całkowicie rozbity po podobnej stłuczce na parkingu.",
+              "focusEn": "totaled",
+              "focusPl": "całkowicie rozbity"
+            }
+          ],
+          "acceptedAnswers": [
+            "totaled"
+          ],
+          "acceptedTranslations": [
+            "do kasacji",
+            "całkowicie rozbity",
+            "ze szkodą całkowitą"
+          ]
+        },
+        {
+          "id": "insurance.hit-and-run",
+          "term": "hit-and-run",
+          "ipa": "/ˌhɪt ən ˈrʌn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ucieczka z miejsca wypadku",
+          "definition": "An accident in which the driver leaves without stopping.",
+          "register": "neutralny",
+          "contextPl": "Sprawca ucieka z miejsca zdarzenia",
+          "natural": "",
+          "forms": "hit-and-runs",
+          "collocations": "a hit-and-run accident; report a hit-and-run",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If he had driven off, it would be a hit-and-run.",
+              "pl": "Gdyby odjechał, byłaby to ucieczka z miejsca wypadku.",
+              "focusEn": "hit-and-run",
+              "focusPl": "ucieczka z miejsca wypadku"
+            },
+            {
+              "en": "Our policy covers a hit-and-run if we report it within a day.",
+              "pl": "Nasza polisa obejmuje ucieczkę z miejsca wypadku, jeśli zgłosimy to w ciągu doby.",
+              "focusEn": "hit-and-run",
+              "focusPl": "ucieczkę z miejsca wypadku"
+            }
+          ],
+          "acceptedAnswers": [
+            "hit-and-run",
+            "hit and run"
+          ],
+          "acceptedTranslations": [
+            "ucieczka z miejsca wypadku",
+            "wypadek z ucieczką sprawcy"
+          ]
+        },
+        {
+          "id": "insurance.injury",
+          "term": "injury",
+          "ipa": "/ˈɪndʒəri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "obrażenia",
+          "definition": "Physical harm to a person's body.",
+          "register": "neutralny",
+          "contextPl": "Szkody na osobie",
+          "natural": "",
+          "forms": "injuries",
+          "collocations": "a minor injury; bodily injury; serious injuries",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thankfully, there was no injury, just a dented door.",
+              "pl": "Na szczęście nie było żadnych obrażeń, tylko wgniecione drzwi.",
+              "focusEn": "injury",
+              "focusPl": "obrażeń"
+            },
+            {
+              "en": "The form asks if anyone had an injury at the scene.",
+              "pl": "Formularz pyta, czy ktoś odniósł obrażenia na miejscu zdarzenia.",
+              "focusEn": "injury",
+              "focusPl": "obrażenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "injury"
+          ],
+          "acceptedTranslations": [
+            "obrażenia",
+            "uraz",
+            "obrażenie"
+          ]
+        },
+        {
+          "id": "insurance.medical-bills",
+          "term": "medical bills",
+          "ipa": "/ˈmedɪkəl ˌbɪlz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rachunki za leczenie",
+          "definition": "The money you must pay to doctors or hospitals.",
+          "register": "neutralny",
+          "contextPl": "Koszty leczenia po wypadku",
+          "natural": "",
+          "forms": "",
+          "collocations": "pay medical bills; cover medical bills",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Her policy would pay my medical bills if my neck started hurting.",
+              "pl": "Jej polisa pokryłaby moje rachunki za leczenie, gdyby zaczęła mnie boleć szyja.",
+              "focusEn": "medical bills",
+              "focusPl": "rachunki za leczenie"
+            },
+            {
+              "en": "Medical bills after car accidents can be huge in the US.",
+              "pl": "Koszty leczenia po wypadkach samochodowych w USA bywają ogromne.",
+              "focusEn": "Medical bills",
+              "focusPl": "Koszty leczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "medical bills"
+          ],
+          "acceptedTranslations": [
+            "rachunki za leczenie",
+            "koszty leczenia",
+            "rachunki medyczne"
+          ]
+        },
+        {
+          "id": "insurance.high-risk",
+          "term": "high-risk",
+          "ipa": "/ˌhaɪ ˈrɪsk/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wysokiego ryzyka",
+          "definition": "Likely to have accidents or cost the insurance company money.",
+          "register": "neutralny",
+          "contextPl": "Ocena kierowcy przez ubezpieczyciela",
+          "natural": "",
+          "forms": "",
+          "collocations": "a high-risk driver; high-risk area",
+          "synonyms": "",
+          "antonyms": "low-risk",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Two accidents in a year would make me a high-risk driver.",
+              "pl": "Dwa wypadki w ciągu roku zrobiłyby ze mnie kierowcę wysokiego ryzyka.",
+              "focusEn": "high-risk",
+              "focusPl": "wysokiego ryzyka"
+            },
+            {
+              "en": "Young men are seen as high-risk drivers by most companies.",
+              "pl": "Młodzi mężczyźni są uważani przez większość firm za kierowców wysokiego ryzyka.",
+              "focusEn": "high-risk",
+              "focusPl": "wysokiego ryzyka"
+            }
+          ],
+          "acceptedAnswers": [
+            "high-risk"
+          ],
+          "acceptedTranslations": [
+            "wysokiego ryzyka",
+            "obarczony dużym ryzykiem"
+          ]
+        },
+        {
+          "id": "insurance.safe-driver-discount",
+          "term": "safe driver discount",
+          "ipa": "/ˌseɪf ˌdraɪvər ˈdɪskaʊnt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zniżka za bezszkodową jazdę",
+          "definition": "A lower insurance price for drivers with no accidents or tickets.",
+          "register": "neutralny",
+          "contextPl": "Nagroda za bezpieczną jazdę",
+          "natural": "",
+          "forms": "safe driver discounts",
+          "collocations": "lose your safe driver discount",
+          "synonyms": "good driver discount",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm worried I'll lose my safe driver discount over this.",
+              "pl": "Martwię się, że przez to stracę zniżkę za bezszkodową jazdę.",
+              "focusEn": "safe driver discount",
+              "focusPl": "zniżkę za bezszkodową jazdę"
+            },
+            {
+              "en": "After five years with no accidents, I got a safe driver discount.",
+              "pl": "Po pięciu latach bez wypadków dostałem zniżkę za bezszkodową jazdę.",
+              "focusEn": "safe driver discount",
+              "focusPl": "zniżkę za bezszkodową jazdę"
+            }
+          ],
+          "acceptedAnswers": [
+            "safe driver discount",
+            "good driver discount"
+          ],
+          "acceptedTranslations": [
+            "zniżka za bezszkodową jazdę",
+            "zniżki za bezszkodowość",
+            "zniżka dla bezpiecznego kierowcy"
+          ]
+        },
+        {
+          "id": "insurance.peace-of-mind",
+          "term": "peace of mind",
+          "ipa": "/ˌpiːs əv ˈmaɪnd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "spokój ducha",
+          "definition": "A feeling of calm because you know you are safe or protected.",
+          "register": "neutralny",
+          "contextPl": "Po co się ubezpieczamy",
+          "natural": "",
+          "forms": "",
+          "collocations": "for peace of mind; give you peace of mind",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Good insurance gave me peace of mind when that car hit mine.",
+              "pl": "Dobre ubezpieczenie dało mi spokój ducha, kiedy ten samochód we mnie uderzył.",
+              "focusEn": "peace of mind",
+              "focusPl": "spokój ducha"
+            },
+            {
+              "en": "The extra twenty dollars a month buys real peace of mind.",
+              "pl": "Dodatkowe dwadzieścia dolarów miesięcznie daje prawdziwy spokój ducha.",
+              "focusEn": "peace of mind",
+              "focusPl": "spokój ducha"
+            }
+          ],
+          "acceptedAnswers": [
+            "peace of mind"
+          ],
+          "acceptedTranslations": [
+            "spokój ducha",
+            "spokój",
+            "poczucie bezpieczeństwa"
+          ]
+        },
+        {
+          "id": "insurance.better-safe-than-sorry",
+          "term": "better safe than sorry",
+          "ipa": "/ˌbetər ˌseɪf ðən ˈsɑːri/",
+          "pos": "idiom",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "lepiej dmuchać na zimne",
+          "definition": "It is wiser to be careful now than to have problems later.",
+          "register": "potoczny",
+          "contextPl": "Ostrożność przy decyzjach",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll call the insurance company anyway; better safe than sorry.",
+              "pl": "I tak zadzwonię do ubezpieczyciela; lepiej dmuchać na zimne.",
+              "focusEn": "better safe than sorry",
+              "focusPl": "lepiej dmuchać na zimne"
+            },
+            {
+              "en": "Better safe than sorry, so I took photos of both cars.",
+              "pl": "Lepiej dmuchać na zimne, więc zrobiłem zdjęcia obu samochodów.",
+              "focusEn": "Better safe than sorry",
+              "focusPl": "Lepiej dmuchać na zimne"
+            }
+          ],
+          "acceptedAnswers": [
+            "better safe than sorry"
+          ],
+          "acceptedTranslations": [
+            "lepiej dmuchać na zimne",
+            "strzeżonego Pan Bóg strzeże",
+            "lepiej zapobiegać niż leczyć"
+          ]
+        }
+      ]
+    }
+  ]
+}

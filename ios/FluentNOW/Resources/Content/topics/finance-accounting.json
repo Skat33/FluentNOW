@@ -1,0 +1,2629 @@
+{
+  "schemaVersion": 1,
+  "id": "finance-accounting",
+  "namePl": "Finanse i księgowość",
+  "nameEn": "Finance and Accounting",
+  "group": "work",
+  "symbol": "chart.line.uptrend.xyaxis",
+  "summaryPl": "Faktury i płatności, prowadzenie ksiąg, budżet i koszty firmy oraz sprawozdania i wyniki finansowe.",
+  "aliases": [
+    "finanse",
+    "księgowość",
+    "faktura",
+    "księgowa",
+    "budżet firmy",
+    "sprawozdanie finansowe",
+    "zysk",
+    "accounting",
+    "finance",
+    "invoice",
+    "bookkeeping"
+  ],
+  "categories": [
+    {
+      "id": "finance-accounting.invoices",
+      "namePl": "Faktury i płatności",
+      "scenePl": "Dział finansowy małej firmy pod koniec miesiąca: wystawiasz faktury i pilnujesz płatności",
+      "entries": [
+        {
+          "id": "finance-accounting.invoice",
+          "term": "invoice",
+          "ipa": "/ˈɪnvɔɪs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "faktura",
+          "definition": "A document that lists goods or services and says how much the customer must pay.",
+          "register": "neutralny",
+          "contextPl": "Rozliczenia z klientami i dostawcami",
+          "natural": "bill",
+          "forms": "invoices",
+          "collocations": "send an invoice; pay an invoice; invoice number",
+          "synonyms": "bill",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The invoice for the March project went out this morning.",
+              "pl": "Faktura za marcowy projekt wyszła dziś rano.",
+              "focusEn": "invoice",
+              "focusPl": "Faktura"
+            },
+            {
+              "en": "This invoice has the wrong address, so I need to fix it.",
+              "pl": "Na tej fakturze jest zły adres, więc muszę ją poprawić.",
+              "focusEn": "invoice",
+              "focusPl": "fakturze"
+            }
+          ],
+          "acceptedAnswers": [
+            "invoice",
+            "bill"
+          ],
+          "acceptedTranslations": [
+            "faktura",
+            "rachunek"
+          ]
+        },
+        {
+          "id": "finance-accounting.issue-an-invoice",
+          "term": "issue an invoice",
+          "ipa": "/ˌɪʃuː ən ˈɪnvɔɪs/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wystawić fakturę",
+          "definition": "To prepare and send an official invoice to a customer.",
+          "register": "formalny",
+          "contextPl": "Formalne fakturowanie",
+          "natural": "send an invoice",
+          "forms": "issued; issuing",
+          "collocations": "issue an invoice to a client",
+          "synonyms": "send an invoice; bill",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We issue an invoice as soon as the work is delivered.",
+              "pl": "Wystawiamy fakturę, gdy tylko praca zostanie dostarczona.",
+              "focusEn": "issue an invoice",
+              "focusPl": "Wystawiamy fakturę"
+            },
+            {
+              "en": "I forgot to issue an invoice to the hotel last week.",
+              "pl": "W zeszłym tygodniu zapomniałam wystawić fakturę hotelowi.",
+              "focusEn": "issue an invoice",
+              "focusPl": "wystawić fakturę"
+            }
+          ],
+          "acceptedAnswers": [
+            "issue an invoice",
+            "send an invoice"
+          ],
+          "acceptedTranslations": [
+            "wystawić fakturę",
+            "wystawiać fakturę",
+            "wystawiać faktury"
+          ]
+        },
+        {
+          "id": "finance-accounting.bill",
+          "term": "bill",
+          "ipa": "/bɪl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "obciążyć kosztami",
+          "definition": "To send someone a statement of how much they owe for a service.",
+          "register": "neutralny",
+          "contextPl": "Naliczanie opłat klientom",
+          "natural": "invoice",
+          "forms": "billed; billing",
+          "collocations": "bill a client; bill by the hour; bill monthly",
+          "synonyms": "invoice; charge",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We bill our biggest client at the end of every month.",
+              "pl": "Naszego największego klienta fakturujemy na koniec każdego miesiąca.",
+              "focusEn": "bill",
+              "focusPl": "fakturujemy"
+            },
+            {
+              "en": "Did we bill them for the extra hours in February?",
+              "pl": "Czy zafakturowaliśmy im dodatkowe godziny z lutego?",
+              "focusEn": "bill",
+              "focusPl": "zafakturowaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "bill",
+            "invoice",
+            "charge"
+          ],
+          "acceptedTranslations": [
+            "obciążyć kosztami",
+            "zafakturować",
+            "fakturować",
+            "wystawić rachunek"
+          ]
+        },
+        {
+          "id": "finance-accounting.overdue",
+          "term": "overdue",
+          "ipa": "/ˌoʊvərˈduː/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zaległy",
+          "definition": "Not paid or done by the time it was expected.",
+          "register": "neutralny",
+          "contextPl": "Płatności po terminie",
+          "natural": "late",
+          "forms": "",
+          "collocations": "an overdue invoice; overdue payment; thirty days overdue",
+          "synonyms": "late; past due",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Three invoices are more than sixty days overdue.",
+              "pl": "Trzy faktury są zaległe o ponad sześćdziesiąt dni.",
+              "focusEn": "overdue",
+              "focusPl": "zaległe"
+            },
+            {
+              "en": "I sent a polite reminder about the overdue payment.",
+              "pl": "Wysłałam uprzejme przypomnienie o zaległej płatności.",
+              "focusEn": "overdue",
+              "focusPl": "zaległej"
+            }
+          ],
+          "acceptedAnswers": [
+            "overdue",
+            "late",
+            "past due"
+          ],
+          "acceptedTranslations": [
+            "zaległy",
+            "przeterminowany",
+            "po terminie"
+          ]
+        },
+        {
+          "id": "finance-accounting.outstanding",
+          "term": "outstanding",
+          "ipa": "/aʊtˈstændɪŋ/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nieuregulowany",
+          "definition": "Not yet paid.",
+          "register": "formalny",
+          "contextPl": "Kwoty jeszcze niezapłacone",
+          "natural": "unpaid",
+          "forms": "",
+          "collocations": "outstanding balance; outstanding invoices; still outstanding",
+          "synonyms": "unpaid; due",
+          "antonyms": "paid",
+          "notePl": "Inne znaczenie: wybitny.",
+          "examples": [
+            {
+              "en": "The client still has an outstanding balance of nine thousand dollars.",
+              "pl": "Klient wciąż ma nieuregulowane saldo w wysokości dziewięciu tysięcy dolarów.",
+              "focusEn": "outstanding",
+              "focusPl": "nieuregulowane"
+            },
+            {
+              "en": "Please pay all outstanding invoices before the end of the quarter.",
+              "pl": "Prosimy o zapłatę wszystkich nieuregulowanych faktur przed końcem kwartału.",
+              "focusEn": "outstanding",
+              "focusPl": "nieuregulowanych"
+            }
+          ],
+          "acceptedAnswers": [
+            "outstanding",
+            "unpaid"
+          ],
+          "acceptedTranslations": [
+            "nieuregulowany",
+            "niezapłacony",
+            "zaległy",
+            "do zapłaty"
+          ]
+        },
+        {
+          "id": "finance-accounting.payment-terms",
+          "term": "payment terms",
+          "ipa": "/ˈpeɪmənt ˌtɝːmz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "warunki płatności",
+          "definition": "The rules about when and how a customer must pay.",
+          "register": "formalny",
+          "contextPl": "Ustalenia dotyczące zapłaty",
+          "natural": "",
+          "forms": "",
+          "collocations": "standard payment terms; agree on payment terms",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our payment terms are thirty days from the invoice date.",
+              "pl": "Nasze warunki płatności to trzydzieści dni od daty wystawienia faktury.",
+              "focusEn": "payment terms",
+              "focusPl": "warunki płatności"
+            },
+            {
+              "en": "The new supplier wants stricter payment terms than the old one.",
+              "pl": "Nowy dostawca chce ostrzejszych warunków płatności niż poprzedni.",
+              "focusEn": "payment terms",
+              "focusPl": "warunków płatności"
+            }
+          ],
+          "acceptedAnswers": [
+            "payment terms",
+            "terms"
+          ],
+          "acceptedTranslations": [
+            "warunki płatności",
+            "termin płatności"
+          ]
+        },
+        {
+          "id": "finance-accounting.net-30",
+          "term": "net 30",
+          "ipa": "/ˌnet ˈθɝːti/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "płatne w ciągu 30 dni",
+          "definition": "Payment terms meaning the full amount must be paid within 30 days.",
+          "register": "specjalistyczny",
+          "contextPl": "Zapis terminu płatności na fakturze",
+          "natural": "",
+          "forms": "",
+          "collocations": "on net 30 terms; net 30 days",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Podobnie: net 15, net 60.",
+          "examples": [
+            {
+              "en": "All our invoices are net 30, unless the contract says otherwise.",
+              "pl": "Wszystkie nasze faktury są płatne w ciągu 30 dni, chyba że umowa stanowi inaczej.",
+              "focusEn": "net 30",
+              "focusPl": "płatne w ciągu 30 dni"
+            },
+            {
+              "en": "The client asked if we could change net 30 to net 60.",
+              "pl": "Klient zapytał, czy możemy zmienić termin płatności 30 dni na sześćdziesiąt.",
+              "focusEn": "net 30",
+              "focusPl": "termin płatności 30 dni"
+            }
+          ],
+          "acceptedAnswers": [
+            "net 30",
+            "net thirty"
+          ],
+          "acceptedTranslations": [
+            "płatne w ciągu 30 dni",
+            "termin płatności 30 dni",
+            "30 dni"
+          ]
+        },
+        {
+          "id": "finance-accounting.purchase-order",
+          "term": "purchase order",
+          "ipa": "/ˈpɝːtʃəs ˌɔːrdər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zamówienie zakupu",
+          "definition": "A document a company sends to a supplier to order goods officially.",
+          "register": "formalny",
+          "contextPl": "Formalne zamawianie towarów",
+          "natural": "PO",
+          "forms": "purchase orders",
+          "collocations": "issue a purchase order; purchase order number",
+          "synonyms": "PO",
+          "antonyms": "",
+          "notePl": "Skrót PO /ˌpiː ˈoʊ/.",
+          "examples": [
+            {
+              "en": "Every invoice must include the client's purchase order number.",
+              "pl": "Każda faktura musi zawierać numer zamówienia zakupu klienta.",
+              "focusEn": "purchase order",
+              "focusPl": "zamówienia zakupu"
+            },
+            {
+              "en": "They won't pay until we send a copy of the purchase order.",
+              "pl": "Nie zapłacą, dopóki nie wyślemy kopii zamówienia.",
+              "focusEn": "purchase order",
+              "focusPl": "zamówienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "purchase order",
+            "PO"
+          ],
+          "acceptedTranslations": [
+            "zamówienie zakupu",
+            "zamówienie",
+            "zlecenie zakupu"
+          ]
+        },
+        {
+          "id": "finance-accounting.accounts-receivable",
+          "term": "accounts receivable",
+          "ipa": "/əˌkaʊnts rɪˈsiːvəbəl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "należności",
+          "definition": "Money that customers owe a company.",
+          "register": "specjalistyczny",
+          "contextPl": "Pieniądze do odzyskania od klientów",
+          "natural": "",
+          "forms": "",
+          "collocations": "manage accounts receivable; accounts receivable team",
+          "synonyms": "receivables",
+          "antonyms": "accounts payable",
+          "notePl": "Skrót AR.",
+          "examples": [
+            {
+              "en": "Our accounts receivable grew to almost two hundred thousand.",
+              "pl": "Nasze należności wzrosły do prawie dwustu tysięcy.",
+              "focusEn": "accounts receivable",
+              "focusPl": "należności"
+            },
+            {
+              "en": "I work in accounts receivable, so I call clients who pay late.",
+              "pl": "Pracuję w dziale należności, więc dzwonię do klientów, którzy płacą z opóźnieniem.",
+              "focusEn": "accounts receivable",
+              "focusPl": "należności"
+            }
+          ],
+          "acceptedAnswers": [
+            "accounts receivable",
+            "receivables",
+            "AR"
+          ],
+          "acceptedTranslations": [
+            "należności",
+            "należności od klientów",
+            "rozrachunki z odbiorcami"
+          ]
+        },
+        {
+          "id": "finance-accounting.accounts-payable",
+          "term": "accounts payable",
+          "ipa": "/əˌkaʊnts ˈpeɪəbəl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zobowiązania",
+          "definition": "Money that a company owes to its suppliers.",
+          "register": "specjalistyczny",
+          "contextPl": "Pieniądze, które firma musi zapłacić",
+          "natural": "",
+          "forms": "",
+          "collocations": "accounts payable department; manage accounts payable",
+          "synonyms": "payables",
+          "antonyms": "accounts receivable",
+          "notePl": "Skrót AP.",
+          "examples": [
+            {
+              "en": "Send the supplier's invoice to accounts payable for approval.",
+              "pl": "Prześlij fakturę od dostawcy do działu zobowiązań do zatwierdzenia.",
+              "focusEn": "accounts payable",
+              "focusPl": "zobowiązań"
+            },
+            {
+              "en": "Our accounts payable are higher than usual this month.",
+              "pl": "Nasze zobowiązania są w tym miesiącu wyższe niż zwykle.",
+              "focusEn": "accounts payable",
+              "focusPl": "zobowiązania"
+            }
+          ],
+          "acceptedAnswers": [
+            "accounts payable",
+            "payables",
+            "AP"
+          ],
+          "acceptedTranslations": [
+            "zobowiązania",
+            "zobowiązania wobec dostawców",
+            "rozrachunki z dostawcami"
+          ]
+        },
+        {
+          "id": "finance-accounting.chase",
+          "term": "chase",
+          "ipa": "/tʃeɪs/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "upominać się o",
+          "definition": "To keep asking someone to do something they should have done, like pay.",
+          "register": "potoczny",
+          "contextPl": "Ściąganie zaległych płatności",
+          "natural": "follow up on",
+          "forms": "chased; chasing",
+          "collocations": "chase a payment; chase an invoice; chase late payers",
+          "synonyms": "follow up on",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I spend every Friday chasing late payments.",
+              "pl": "Każdy piątek spędzam na upominaniu się o zaległe płatności.",
+              "focusEn": "chasing",
+              "focusPl": "upominaniu się o"
+            },
+            {
+              "en": "Can you chase the restaurant about the March invoice?",
+              "pl": "Możesz ponaglić restaurację w sprawie marcowej faktury?",
+              "focusEn": "chase",
+              "focusPl": "ponaglić"
+            }
+          ],
+          "acceptedAnswers": [
+            "chase",
+            "follow up on"
+          ],
+          "acceptedTranslations": [
+            "upominać się o",
+            "upomnieć się o",
+            "ścigać",
+            "monitować"
+          ]
+        },
+        {
+          "id": "finance-accounting.bad-debt",
+          "term": "bad debt",
+          "ipa": "/ˌbæd ˈdet/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nieściągalna należność",
+          "definition": "Money owed to a company that will probably never be paid.",
+          "register": "specjalistyczny",
+          "contextPl": "Długi klientów nie do odzyskania",
+          "natural": "",
+          "forms": "bad debts",
+          "collocations": "write off a bad debt; bad debt expense",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After a year of reminders, we treated the invoice as a bad debt.",
+              "pl": "Po roku przypomnień uznaliśmy fakturę za nieściągalną należność.",
+              "focusEn": "bad debt",
+              "focusPl": "nieściągalną należność"
+            },
+            {
+              "en": "The client went out of business, so this is now a bad debt.",
+              "pl": "Klient zbankrutował, więc to teraz dług nieściągalny.",
+              "focusEn": "bad debt",
+              "focusPl": "dług nieściągalny"
+            }
+          ],
+          "acceptedAnswers": [
+            "bad debt"
+          ],
+          "acceptedTranslations": [
+            "nieściągalna należność",
+            "złe długi",
+            "dług nieściągalny"
+          ]
+        },
+        {
+          "id": "finance-accounting.write-off",
+          "term": "write off",
+          "ipa": "/ˌraɪt ˈɔːf/",
+          "pos": "czasownik frazowy",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "spisać na straty",
+          "definition": "To officially accept that money owed to you will not be paid.",
+          "register": "specjalistyczny",
+          "contextPl": "Usuwanie nieściągalnych kwot z ksiąg",
+          "natural": "",
+          "forms": "wrote off; written off",
+          "collocations": "write off a debt; write off an invoice",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „a write-off”.",
+          "examples": [
+            {
+              "en": "We'll have to write off the last two invoices from that client.",
+              "pl": "Będziemy musieli spisać na straty dwie ostatnie faktury od tego klienta.",
+              "focusEn": "write off",
+              "focusPl": "spisać na straty"
+            },
+            {
+              "en": "Last year we wrote off almost fifteen thousand dollars in unpaid bills.",
+              "pl": "W zeszłym roku spisaliśmy na straty prawie piętnaście tysięcy dolarów z niezapłaconych rachunków.",
+              "focusEn": "wrote off",
+              "focusPl": "spisaliśmy na straty"
+            }
+          ],
+          "acceptedAnswers": [
+            "write off"
+          ],
+          "acceptedTranslations": [
+            "spisać na straty",
+            "spisywać na straty",
+            "odpisać"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance-accounting.expenses",
+      "namePl": "Wydatki służbowe",
+      "scenePl": "Koniec miesiąca: rozliczasz wydatki z delegacji i drobne zakupy do biura",
+      "entries": [
+        {
+          "id": "finance-accounting.company-card",
+          "term": "company card",
+          "ipa": "/ˌkʌmpəni ˈkɑːrd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "karta służbowa",
+          "definition": "A credit card that a company gives employees for work expenses.",
+          "register": "neutralny",
+          "contextPl": "Płacenie za wydatki firmowe",
+          "natural": "corporate card",
+          "forms": "company cards",
+          "collocations": "pay with the company card; use a company card",
+          "synonyms": "corporate card",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I paid for the hotel with the company card, so I don't need a refund.",
+              "pl": "Za hotel zapłaciłam kartą służbową, więc nie potrzebuję zwrotu.",
+              "focusEn": "company card",
+              "focusPl": "kartą służbową"
+            },
+            {
+              "en": "Lunch with friends can't go on the company card.",
+              "pl": "Lunchu ze znajomymi nie można płacić kartą służbową.",
+              "focusEn": "company card",
+              "focusPl": "kartą służbową"
+            }
+          ],
+          "acceptedAnswers": [
+            "company card",
+            "corporate card",
+            "business card"
+          ],
+          "acceptedTranslations": [
+            "karta służbowa",
+            "firmowa karta",
+            "karta firmowa"
+          ]
+        },
+        {
+          "id": "finance-accounting.expense-report",
+          "term": "expense report",
+          "ipa": "/ɪkˈspens rɪˌpɔːrt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rozliczenie wydatków",
+          "definition": "A form employees fill out to get back money they spent for work.",
+          "register": "neutralny",
+          "contextPl": "Zwrot kosztów służbowych",
+          "natural": "",
+          "forms": "expense reports",
+          "collocations": "submit an expense report; fill out an expense report",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please attach your receipts to the expense report.",
+              "pl": "Proszę dołączyć paragony do rozliczenia wydatków.",
+              "focusEn": "expense report",
+              "focusPl": "rozliczenia wydatków"
+            },
+            {
+              "en": "Your expense report for the Chicago trip is missing a hotel bill.",
+              "pl": "W twoim rozliczeniu wydatków z wyjazdu do Chicago brakuje rachunku za hotel.",
+              "focusEn": "expense report",
+              "focusPl": "rozliczeniu wydatków"
+            }
+          ],
+          "acceptedAnswers": [
+            "expense report",
+            "expense claim"
+          ],
+          "acceptedTranslations": [
+            "rozliczenie wydatków",
+            "raport wydatków",
+            "rozliczenie kosztów"
+          ]
+        },
+        {
+          "id": "finance-accounting.reimburse",
+          "term": "reimburse",
+          "ipa": "/ˌriːɪmˈbɝːs/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "zwrócić koszty",
+          "definition": "To pay someone back for money they spent for work.",
+          "register": "formalny",
+          "contextPl": "Zwrot pieniędzy pracownikowi",
+          "natural": "pay back",
+          "forms": "reimbursed; reimbursing",
+          "collocations": "reimburse expenses; get reimbursed",
+          "synonyms": "pay back; refund",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll reimburse your taxi costs with your next paycheck.",
+              "pl": "Zwrócimy ci koszty taksówek z następną wypłatą.",
+              "focusEn": "reimburse",
+              "focusPl": "Zwrócimy"
+            },
+            {
+              "en": "I still haven't been reimbursed for the conference ticket.",
+              "pl": "Wciąż nie zwrócono mi kosztów biletu na konferencję.",
+              "focusEn": "reimbursed",
+              "focusPl": "zwrócono"
+            }
+          ],
+          "acceptedAnswers": [
+            "reimburse",
+            "pay back"
+          ],
+          "acceptedTranslations": [
+            "zwrócić koszty",
+            "zwracać koszty",
+            "zrefundować",
+            "zwrócić pieniądze"
+          ]
+        },
+        {
+          "id": "finance-accounting.petty-cash",
+          "term": "petty cash",
+          "ipa": "/ˌpeti ˈkæʃ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "drobna gotówka",
+          "definition": "A small amount of money kept in an office for small expenses.",
+          "register": "neutralny",
+          "contextPl": "Kasa na drobne wydatki biurowe",
+          "natural": "",
+          "forms": "",
+          "collocations": "petty cash box; take money from petty cash",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I paid for the coffee and milk from petty cash.",
+              "pl": "Za kawę i mleko zapłaciłam z kasy podręcznej.",
+              "focusEn": "petty cash",
+              "focusPl": "kasy podręcznej"
+            },
+            {
+              "en": "The petty cash box was twenty dollars short at the end of the month.",
+              "pl": "Pod koniec miesiąca w kasie podręcznej brakowało dwudziestu dolarów.",
+              "focusEn": "petty cash",
+              "focusPl": "kasie podręcznej"
+            }
+          ],
+          "acceptedAnswers": [
+            "petty cash"
+          ],
+          "acceptedTranslations": [
+            "drobna gotówka",
+            "kasa podręczna",
+            "gotówka na drobne wydatki"
+          ]
+        },
+        {
+          "id": "finance-accounting.per-diem",
+          "term": "per diem",
+          "ipa": "/ˌpɝː ˈdiːəm/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dieta (dzienna)",
+          "definition": "A fixed amount of money paid for each day of a business trip.",
+          "register": "specjalistyczny",
+          "contextPl": "Stała kwota na dzień podróży",
+          "natural": "daily allowance",
+          "forms": "",
+          "collocations": "a daily per diem; per diem rate",
+          "synonyms": "daily allowance",
+          "antonyms": "",
+          "notePl": "Z łaciny: „na dzień”.",
+          "examples": [
+            {
+              "en": "Our per diem for meals in Chicago is sixty dollars a day.",
+              "pl": "Nasza dieta na posiłki w Chicago wynosi sześćdziesiąt dolarów dziennie.",
+              "focusEn": "per diem",
+              "focusPl": "dieta"
+            },
+            {
+              "en": "The per diem covered breakfast but not the team dinner.",
+              "pl": "Dieta pokryła śniadania, ale nie kolację zespołu.",
+              "focusEn": "per diem",
+              "focusPl": "Dieta"
+            }
+          ],
+          "acceptedAnswers": [
+            "per diem",
+            "daily allowance"
+          ],
+          "acceptedTranslations": [
+            "dieta (dzienna)",
+            "dieta",
+            "dieta dzienna",
+            "dieta delegacyjna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance-accounting.bookkeeping",
+      "namePl": "Prowadzenie ksiąg",
+      "scenePl": "Biuro rachunkowe: księgowa porządkuje dokumenty firmy przed zamknięciem miesiąca",
+      "entries": [
+        {
+          "id": "finance-accounting.accountant",
+          "term": "accountant",
+          "ipa": "/əˈkaʊntənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "księgowy",
+          "definition": "A person whose job is to keep and check financial records.",
+          "register": "neutralny",
+          "contextPl": "Osoba prowadząca finanse firmy",
+          "natural": "CPA",
+          "forms": "accountants",
+          "collocations": "hire an accountant; ask your accountant",
+          "synonyms": "CPA",
+          "antonyms": "",
+          "notePl": "CPA – dyplomowany biegły księgowy w USA.",
+          "examples": [
+            {
+              "en": "Our accountant comes in every Tuesday to update the books.",
+              "pl": "Nasza księgowa przychodzi w każdy wtorek, żeby aktualizować księgi.",
+              "focusEn": "accountant",
+              "focusPl": "księgowa"
+            },
+            {
+              "en": "The accountant asked for all the receipts from last month.",
+              "pl": "Księgowy poprosił o wszystkie paragony z zeszłego miesiąca.",
+              "focusEn": "accountant",
+              "focusPl": "Księgowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "accountant",
+            "CPA"
+          ],
+          "acceptedTranslations": [
+            "księgowy",
+            "księgowa"
+          ]
+        },
+        {
+          "id": "finance-accounting.bookkeeping",
+          "term": "bookkeeping",
+          "ipa": "/ˈbʊkˌkiːpɪŋ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "księgowość",
+          "definition": "The job of recording the money a business receives and spends.",
+          "register": "neutralny",
+          "contextPl": "Bieżąca ewidencja finansowa",
+          "natural": "accounting",
+          "forms": "",
+          "collocations": "do the bookkeeping; bookkeeping software",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I do the bookkeeping on Fridays after lunch.",
+              "pl": "Księgowością zajmuję się w piątki po lunchu.",
+              "focusEn": "bookkeeping",
+              "focusPl": "Księgowością"
+            },
+            {
+              "en": "Good bookkeeping makes tax season much easier.",
+              "pl": "Dobrze prowadzona księgowość znacznie ułatwia okres rozliczeń podatkowych.",
+              "focusEn": "bookkeeping",
+              "focusPl": "księgowość"
+            }
+          ],
+          "acceptedAnswers": [
+            "bookkeeping"
+          ],
+          "acceptedTranslations": [
+            "księgowość",
+            "prowadzenie ksiąg",
+            "ewidencja księgowa"
+          ]
+        },
+        {
+          "id": "finance-accounting.financial-records",
+          "term": "financial records",
+          "ipa": "/faɪˌnænʃəl ˈrekərdz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dokumentacja finansowa",
+          "definition": "Documents that show all the money a business has received and spent.",
+          "register": "formalny",
+          "contextPl": "Dokumenty finansowe firmy",
+          "natural": "books",
+          "forms": "",
+          "collocations": "keep financial records; accurate financial records",
+          "synonyms": "books; accounts",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We keep our financial records for at least seven years.",
+              "pl": "Przechowujemy dokumentację finansową przez co najmniej siedem lat.",
+              "focusEn": "financial records",
+              "focusPl": "dokumentację finansową"
+            },
+            {
+              "en": "Clear financial records save hours during an audit.",
+              "pl": "Przejrzysta dokumentacja finansowa oszczędza godziny pracy podczas audytu.",
+              "focusEn": "financial records",
+              "focusPl": "dokumentacja finansowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "financial records",
+            "books",
+            "records"
+          ],
+          "acceptedTranslations": [
+            "dokumentacja finansowa",
+            "dokumenty finansowe",
+            "ewidencja finansowa"
+          ]
+        },
+        {
+          "id": "finance-accounting.the-books",
+          "term": "the books",
+          "ipa": "/ðə ˈbʊks/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "księgi rachunkowe",
+          "definition": "The written record of a company's money.",
+          "register": "potoczny",
+          "contextPl": "Ewidencja rachunkowa firmy",
+          "natural": "",
+          "forms": "",
+          "collocations": "keep the books; check the books",
+          "synonyms": "accounts; records",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The accountant checks the books before every board meeting.",
+              "pl": "Księgowa sprawdza księgi rachunkowe przed każdym posiedzeniem zarządu.",
+              "focusEn": "the books",
+              "focusPl": "księgi rachunkowe"
+            },
+            {
+              "en": "Everything in the books has to match the bank statements.",
+              "pl": "Wszystko w księgach musi się zgadzać z wyciągami bankowymi.",
+              "focusEn": "the books",
+              "focusPl": "księgach"
+            }
+          ],
+          "acceptedAnswers": [
+            "the books",
+            "books",
+            "accounts"
+          ],
+          "acceptedTranslations": [
+            "księgi rachunkowe",
+            "księgi",
+            "księgowość"
+          ]
+        },
+        {
+          "id": "finance-accounting.quarter",
+          "term": "quarter",
+          "ipa": "/ˈkwɔːrtər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "kwartał",
+          "definition": "One of four periods of three months in a business year.",
+          "register": "neutralny",
+          "contextPl": "Okresy rozliczeniowe",
+          "natural": "",
+          "forms": "quarters",
+          "collocations": "first quarter; last quarter; end of the quarter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We close the books at the end of every quarter.",
+              "pl": "Zamykamy księgi na koniec każdego kwartału.",
+              "focusEn": "quarter",
+              "focusPl": "kwartału"
+            },
+            {
+              "en": "This quarter we have twice as many invoices to check.",
+              "pl": "W tym kwartale mamy dwa razy więcej faktur do sprawdzenia.",
+              "focusEn": "quarter",
+              "focusPl": "kwartale"
+            }
+          ],
+          "acceptedAnswers": [
+            "quarter",
+            "Q1",
+            "Q2"
+          ],
+          "acceptedTranslations": [
+            "kwartał"
+          ]
+        },
+        {
+          "id": "finance-accounting.fiscal-year",
+          "term": "fiscal year",
+          "ipa": "/ˌfɪskəl ˈjɪr/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "rok obrotowy",
+          "definition": "A 12-month period that a company uses for its accounts.",
+          "register": "specjalistyczny",
+          "contextPl": "Rok w rachunkowości firmy",
+          "natural": "financial year",
+          "forms": "fiscal years",
+          "collocations": "the current fiscal year; end of the fiscal year",
+          "synonyms": "financial year",
+          "antonyms": "",
+          "notePl": "W BrE częściej „financial year”.",
+          "examples": [
+            {
+              "en": "Our fiscal year starts on July first, not January first.",
+              "pl": "Nasz rok obrotowy zaczyna się pierwszego lipca, a nie pierwszego stycznia.",
+              "focusEn": "fiscal year",
+              "focusPl": "rok obrotowy"
+            },
+            {
+              "en": "All receipts must be entered before the fiscal year ends.",
+              "pl": "Wszystkie paragony muszą zostać wprowadzone przed końcem roku obrotowego.",
+              "focusEn": "fiscal year",
+              "focusPl": "roku obrotowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "fiscal year",
+            "FY",
+            "financial year"
+          ],
+          "acceptedTranslations": [
+            "rok obrotowy",
+            "rok finansowy",
+            "rok podatkowy"
+          ]
+        },
+        {
+          "id": "finance-accounting.double-check",
+          "term": "double-check",
+          "ipa": "/ˌdʌbəl ˈtʃek/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "sprawdzić dwa razy",
+          "definition": "To check something again to make sure it is correct.",
+          "register": "neutralny",
+          "contextPl": "Kontrola poprawności danych",
+          "natural": "",
+          "forms": "double-checked; double-checking",
+          "collocations": "double-check the numbers; double-check everything",
+          "synonyms": "recheck",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let me double-check these totals before I send the report.",
+              "pl": "Pozwól, że dokładnie sprawdzę te sumy, zanim wyślę raport.",
+              "focusEn": "double-check",
+              "focusPl": "dokładnie sprawdzę"
+            },
+            {
+              "en": "I double-checked the invoice, and the tax is calculated correctly.",
+              "pl": "Sprawdziłam ponownie fakturę i podatek jest wyliczony poprawnie.",
+              "focusEn": "double-checked",
+              "focusPl": "Sprawdziłam ponownie"
+            }
+          ],
+          "acceptedAnswers": [
+            "double-check",
+            "recheck"
+          ],
+          "acceptedTranslations": [
+            "sprawdzić dwa razy",
+            "dokładnie sprawdzić",
+            "upewnić się",
+            "sprawdzić ponownie"
+          ]
+        },
+        {
+          "id": "finance-accounting.reconcile",
+          "term": "reconcile",
+          "ipa": "/ˈrekənsaɪl/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "uzgodnić",
+          "definition": "To compare two sets of records to check that they match.",
+          "register": "specjalistyczny",
+          "contextPl": "Porównywanie zapisów z wyciągami",
+          "natural": "match",
+          "forms": "reconciled; reconciling",
+          "collocations": "reconcile accounts; reconcile the bank statement",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „reconciliation” – uzgodnienie.",
+          "examples": [
+            {
+              "en": "Every month I reconcile our records with the bank statement.",
+              "pl": "Co miesiąc uzgadniam nasze zapisy z wyciągiem bankowym.",
+              "focusEn": "reconcile",
+              "focusPl": "uzgadniam"
+            },
+            {
+              "en": "The accounts didn't reconcile because of one missing payment.",
+              "pl": "Konta się nie uzgodniły z powodu jednej brakującej płatności.",
+              "focusEn": "reconcile",
+              "focusPl": "uzgodniły"
+            }
+          ],
+          "acceptedAnswers": [
+            "reconcile"
+          ],
+          "acceptedTranslations": [
+            "uzgodnić",
+            "uzgadniać",
+            "zestawić",
+            "dopasować"
+          ]
+        },
+        {
+          "id": "finance-accounting.discrepancy",
+          "term": "discrepancy",
+          "ipa": "/dɪˈskrepənsi/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "rozbieżność",
+          "definition": "A difference between two things that should be the same.",
+          "register": "formalny",
+          "contextPl": "Niezgodności w dokumentach",
+          "natural": "",
+          "forms": "discrepancies",
+          "collocations": "find a discrepancy; a small discrepancy",
+          "synonyms": "difference",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a discrepancy of forty dollars between the two reports.",
+              "pl": "Między dwoma raportami jest rozbieżność czterdziestu dolarów.",
+              "focusEn": "discrepancy",
+              "focusPl": "rozbieżność"
+            },
+            {
+              "en": "She spent an hour tracking down the discrepancy.",
+              "pl": "Spędziła godzinę na szukaniu źródła rozbieżności.",
+              "focusEn": "discrepancy",
+              "focusPl": "rozbieżności"
+            }
+          ],
+          "acceptedAnswers": [
+            "discrepancy",
+            "difference"
+          ],
+          "acceptedTranslations": [
+            "rozbieżność",
+            "niezgodność",
+            "różnica"
+          ]
+        },
+        {
+          "id": "finance-accounting.audit",
+          "term": "audit",
+          "ipa": "/ˈɔːdɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "audyt",
+          "definition": "An official check of a company's financial records.",
+          "register": "formalny",
+          "contextPl": "Kontrola finansów firmy",
+          "natural": "",
+          "forms": "audits",
+          "collocations": "an annual audit; pass an audit; tax audit",
+          "synonyms": "inspection",
+          "antonyms": "",
+          "notePl": "Czasownik też „audit”.",
+          "examples": [
+            {
+              "en": "The audit starts next Monday, so the books must be perfect.",
+              "pl": "Audyt zaczyna się w przyszły poniedziałek, więc księgi muszą być idealne.",
+              "focusEn": "audit",
+              "focusPl": "Audyt"
+            },
+            {
+              "en": "Last year's audit found only two small mistakes.",
+              "pl": "Zeszłoroczny audyt wykazał tylko dwa drobne błędy.",
+              "focusEn": "audit",
+              "focusPl": "audyt"
+            }
+          ],
+          "acceptedAnswers": [
+            "audit"
+          ],
+          "acceptedTranslations": [
+            "audyt",
+            "kontrola",
+            "rewizja"
+          ]
+        },
+        {
+          "id": "finance-accounting.auditor",
+          "term": "auditor",
+          "ipa": "/ˈɔːdɪtər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "audytor",
+          "definition": "A person whose job is to officially check a company's financial records.",
+          "register": "specjalistyczny",
+          "contextPl": "Osoba kontrolująca finanse",
+          "natural": "",
+          "forms": "auditors",
+          "collocations": "external auditor; internal auditor",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The auditor asked to see every invoice over five thousand dollars.",
+              "pl": "Audytor poprosił o wgląd w każdą fakturę powyżej pięciu tysięcy dolarów.",
+              "focusEn": "auditor",
+              "focusPl": "Audytor"
+            },
+            {
+              "en": "Two auditors will work in our conference room all week.",
+              "pl": "Dwóch audytorów będzie pracować w naszej sali konferencyjnej przez cały tydzień.",
+              "focusEn": "auditors",
+              "focusPl": "audytorów"
+            }
+          ],
+          "acceptedAnswers": [
+            "auditor"
+          ],
+          "acceptedTranslations": [
+            "audytor",
+            "biegły rewident",
+            "rewident"
+          ]
+        },
+        {
+          "id": "finance-accounting.paper-trail",
+          "term": "paper trail",
+          "ipa": "/ˈpeɪpər ˌtreɪl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "ślad w dokumentach",
+          "definition": "Written records that show what happened, used as proof.",
+          "register": "potoczny",
+          "contextPl": "Udokumentowanie każdej operacji",
+          "natural": "",
+          "forms": "",
+          "collocations": "leave a paper trail; a clear paper trail",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Always keep a paper trail for every refund you approve.",
+              "pl": "Przy każdym zatwierdzonym zwrocie zawsze zostawiaj ślad w dokumentach.",
+              "focusEn": "paper trail",
+              "focusPl": "ślad w dokumentach"
+            },
+            {
+              "en": "Without a paper trail, we can't prove the payment was made.",
+              "pl": "Bez śladu w dokumentach nie udowodnimy, że płatność została dokonana.",
+              "focusEn": "paper trail",
+              "focusPl": "śladu w dokumentach"
+            }
+          ],
+          "acceptedAnswers": [
+            "paper trail"
+          ],
+          "acceptedTranslations": [
+            "ślad w dokumentach",
+            "ślad na papierze",
+            "dokumentacja"
+          ]
+        },
+        {
+          "id": "finance-accounting.cook-the-books",
+          "term": "cook the books",
+          "ipa": "/ˌkʊk ðə ˈbʊks/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "fałszować księgi",
+          "definition": "To change financial records dishonestly to hide the truth.",
+          "register": "potoczny",
+          "contextPl": "Oszustwa księgowe",
+          "natural": "",
+          "forms": "cooked; cooking",
+          "collocations": "",
+          "synonyms": "falsify the accounts",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The auditors made sure no one could cook the books.",
+              "pl": "Audytorzy dopilnowali, żeby nikt nie mógł fałszować ksiąg.",
+              "focusEn": "cook the books",
+              "focusPl": "fałszować ksiąg"
+            },
+            {
+              "en": "Our old manager was fired for trying to cook the books.",
+              "pl": "Nasz były kierownik został zwolniony za próbę fałszowania ksiąg.",
+              "focusEn": "cook the books",
+              "focusPl": "fałszowania ksiąg"
+            }
+          ],
+          "acceptedAnswers": [
+            "cook the books"
+          ],
+          "acceptedTranslations": [
+            "fałszować księgi",
+            "sfałszować księgi",
+            "fałszować księgowość"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance-accounting.budget-costs",
+      "namePl": "Budżet firmy i koszty",
+      "scenePl": "Coroczne planowanie budżetu firmy z dyrektorką finansową w jej gabinecie",
+      "entries": [
+        {
+          "id": "finance-accounting.finance-department",
+          "term": "finance department",
+          "ipa": "/ˈfaɪnæns dɪˌpɑːrtmənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dział finansowy",
+          "definition": "The part of a company that manages its money.",
+          "register": "neutralny",
+          "contextPl": "Komórka odpowiedzialna za pieniądze",
+          "natural": "finance",
+          "forms": "finance departments",
+          "collocations": "work in the finance department; ask the finance department",
+          "synonyms": "finance; accounting",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Every manager sends their budget request to the finance department by October.",
+              "pl": "Każdy kierownik wysyła swoją prośbę budżetową do działu finansowego do października.",
+              "focusEn": "finance department",
+              "focusPl": "działu finansowego"
+            },
+            {
+              "en": "The finance department wants all teams to spend five percent less next year.",
+              "pl": "Dział finansowy chce, żeby w przyszłym roku wszystkie zespoły wydawały o pięć procent mniej.",
+              "focusEn": "finance department",
+              "focusPl": "Dział finansowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "finance department",
+            "finance"
+          ],
+          "acceptedTranslations": [
+            "dział finansowy",
+            "dział finansów",
+            "finanse"
+          ]
+        },
+        {
+          "id": "finance-accounting.cfo",
+          "term": "CFO",
+          "ipa": "/ˌsiː ef ˈoʊ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dyrektor finansowy",
+          "definition": "The senior manager responsible for a company's money.",
+          "register": "neutralny",
+          "contextPl": "Najwyższe stanowisko w finansach",
+          "natural": "chief financial officer",
+          "forms": "CFOs",
+          "collocations": "",
+          "synonyms": "chief financial officer; finance director",
+          "antonyms": "",
+          "notePl": "Skrót od „chief financial officer”.",
+          "examples": [
+            {
+              "en": "The CFO went through every line of our budget with a red pen.",
+              "pl": "Dyrektorka finansowa przejrzała każdą linijkę naszego budżetu z czerwonym długopisem.",
+              "focusEn": "CFO",
+              "focusPl": "Dyrektorka finansowa"
+            },
+            {
+              "en": "I have a meeting with the CFO about next year's costs.",
+              "pl": "Mam spotkanie z dyrektorem finansowym w sprawie przyszłorocznych kosztów.",
+              "focusEn": "CFO",
+              "focusPl": "dyrektorem finansowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "CFO",
+            "chief financial officer"
+          ],
+          "acceptedTranslations": [
+            "dyrektor finansowy",
+            "dyrektorka finansowa",
+            "główny księgowy"
+          ]
+        },
+        {
+          "id": "finance-accounting.spending",
+          "term": "spending",
+          "ipa": "/ˈspendɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wydatki",
+          "definition": "The amount of money that is spent by a company or person.",
+          "register": "neutralny",
+          "contextPl": "Ile firma wydaje",
+          "natural": "expenses",
+          "forms": "",
+          "collocations": "cut spending; increase spending; spending on something",
+          "synonyms": "expenses; expenditure",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our spending on software doubled this year.",
+              "pl": "Nasze wydatki na oprogramowanie podwoiły się w tym roku.",
+              "focusEn": "spending",
+              "focusPl": "wydatki"
+            },
+            {
+              "en": "She asked every team to explain their spending over ten thousand dollars.",
+              "pl": "Poprosiła każdy zespół o wyjaśnienie wydatków powyżej dziesięciu tysięcy dolarów.",
+              "focusEn": "spending",
+              "focusPl": "wydatków"
+            }
+          ],
+          "acceptedAnswers": [
+            "spending",
+            "expenses"
+          ],
+          "acceptedTranslations": [
+            "wydatki",
+            "wydawanie pieniędzy",
+            "nakłady"
+          ]
+        },
+        {
+          "id": "finance-accounting.operating-costs",
+          "term": "operating costs",
+          "ipa": "/ˈɑːpəreɪtɪŋ ˌkɔːsts/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "koszty operacyjne",
+          "definition": "The regular costs of running a business, such as rent and salaries.",
+          "register": "neutralny",
+          "contextPl": "Bieżące koszty działania firmy",
+          "natural": "running costs",
+          "forms": "",
+          "collocations": "high operating costs; reduce operating costs",
+          "synonyms": "running costs",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Rent and salaries make up most of our operating costs.",
+              "pl": "Czynsz i pensje stanowią większość naszych kosztów operacyjnych.",
+              "focusEn": "operating costs",
+              "focusPl": "kosztów operacyjnych"
+            },
+            {
+              "en": "If operating costs keep rising, we'll need to raise prices.",
+              "pl": "Jeśli koszty operacyjne będą dalej rosnąć, będziemy musieli podnieść ceny.",
+              "focusEn": "operating costs",
+              "focusPl": "koszty operacyjne"
+            }
+          ],
+          "acceptedAnswers": [
+            "operating costs",
+            "running costs",
+            "operating expenses"
+          ],
+          "acceptedTranslations": [
+            "koszty operacyjne",
+            "koszty bieżące",
+            "koszty działalności"
+          ]
+        },
+        {
+          "id": "finance-accounting.overhead",
+          "term": "overhead",
+          "ipa": "/ˈoʊvərhed/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "koszty ogólne",
+          "definition": "The regular costs of running a business that are not linked to one product.",
+          "register": "specjalistyczny",
+          "contextPl": "Koszty stałe firmy",
+          "natural": "",
+          "forms": "",
+          "collocations": "low overhead; reduce overhead; overhead costs",
+          "synonyms": "fixed costs",
+          "antonyms": "",
+          "notePl": "W BrE zwykle „overheads” (l.mn.).",
+          "examples": [
+            {
+              "en": "Moving to a smaller office would cut our overhead by a third.",
+              "pl": "Przeprowadzka do mniejszego biura obniżyłaby nasze koszty ogólne o jedną trzecią.",
+              "focusEn": "overhead",
+              "focusPl": "koszty ogólne"
+            },
+            {
+              "en": "Our overhead is too high for a company of twenty people.",
+              "pl": "Nasze koszty ogólne są za wysokie jak na firmę zatrudniającą dwadzieścia osób.",
+              "focusEn": "overhead",
+              "focusPl": "koszty ogólne"
+            }
+          ],
+          "acceptedAnswers": [
+            "overhead",
+            "overhead costs",
+            "overheads"
+          ],
+          "acceptedTranslations": [
+            "koszty ogólne",
+            "koszty stałe",
+            "koszty pośrednie"
+          ]
+        },
+        {
+          "id": "finance-accounting.budget-cuts",
+          "term": "budget cuts",
+          "ipa": "/ˈbʌdʒət ˌkʌts/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "cięcia budżetowe",
+          "definition": "Reductions in the amount of money available to spend.",
+          "register": "neutralny",
+          "contextPl": "Ograniczanie wydatków",
+          "natural": "",
+          "forms": "",
+          "collocations": "make budget cuts; face budget cuts; deep budget cuts",
+          "synonyms": "spending cuts",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Marketing will feel the budget cuts the most next year.",
+              "pl": "Najbardziej cięcia budżetowe odczuje w przyszłym roku marketing.",
+              "focusEn": "budget cuts",
+              "focusPl": "cięcia budżetowe"
+            },
+            {
+              "en": "After the budget cuts, we can't afford the training program.",
+              "pl": "Po cięciach budżetowych nie stać nas na program szkoleń.",
+              "focusEn": "budget cuts",
+              "focusPl": "cięciach budżetowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "budget cuts",
+            "spending cuts"
+          ],
+          "acceptedTranslations": [
+            "cięcia budżetowe",
+            "cięcia w budżecie",
+            "ograniczenia budżetu"
+          ]
+        },
+        {
+          "id": "finance-accounting.budget-for",
+          "term": "budget for",
+          "ipa": "/ˈbʌdʒət fɔːr/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zaplanować w budżecie",
+          "definition": "To plan to spend a certain amount of money on something.",
+          "register": "neutralny",
+          "contextPl": "Uwzględnianie wydatków w planie",
+          "natural": "plan for",
+          "forms": "budgeted; budgeting",
+          "collocations": "budget for new equipment; budget for travel",
+          "synonyms": "plan for",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need to budget for two new laptops in March.",
+              "pl": "Musimy zaplanować w budżecie dwa nowe laptopy na marzec.",
+              "focusEn": "budget for",
+              "focusPl": "zaplanować w budżecie"
+            },
+            {
+              "en": "Nobody budgeted for the higher rent, so we're short.",
+              "pl": "Nikt nie uwzględnił w budżecie wyższego czynszu, więc brakuje nam pieniędzy.",
+              "focusEn": "budgeted for",
+              "focusPl": "uwzględnił w budżecie"
+            }
+          ],
+          "acceptedAnswers": [
+            "budget for"
+          ],
+          "acceptedTranslations": [
+            "zaplanować w budżecie",
+            "uwzględnić w budżecie",
+            "przewidzieć w budżecie"
+          ]
+        },
+        {
+          "id": "finance-accounting.cost-cutting",
+          "term": "cost-cutting",
+          "ipa": "/ˈkɔːst ˌkʌtɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "redukcja kosztów",
+          "definition": "Reducing the amount of money a company spends.",
+          "register": "neutralny",
+          "contextPl": "Oszczędności w firmie",
+          "natural": "",
+          "forms": "",
+          "collocations": "cost-cutting measures; a round of cost-cutting",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The CFO announced a new round of cost-cutting for next year.",
+              "pl": "Dyrektorka finansowa ogłosiła na przyszły rok nową rundę cięcia kosztów.",
+              "focusEn": "cost-cutting",
+              "focusPl": "cięcia kosztów"
+            },
+            {
+              "en": "Cost-cutting can't touch the safety budget.",
+              "pl": "Redukcja kosztów nie może dotknąć budżetu na bezpieczeństwo.",
+              "focusEn": "Cost-cutting",
+              "focusPl": "Redukcja kosztów"
+            }
+          ],
+          "acceptedAnswers": [
+            "cost-cutting",
+            "cost cutting"
+          ],
+          "acceptedTranslations": [
+            "redukcja kosztów",
+            "cięcie kosztów",
+            "oszczędności"
+          ]
+        },
+        {
+          "id": "finance-accounting.expenditure",
+          "term": "expenditure",
+          "ipa": "/ɪkˈspendɪtʃər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wydatki",
+          "definition": "The total amount of money that an organization spends.",
+          "register": "formalny",
+          "contextPl": "Formalne określenie wydatków",
+          "natural": "spending",
+          "forms": "expenditures",
+          "collocations": "capital expenditure; total expenditure",
+          "synonyms": "spending",
+          "antonyms": "income",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Total expenditure on IT will stay the same next year.",
+              "pl": "Łączne wydatki na IT pozostaną w przyszłym roku bez zmian.",
+              "focusEn": "expenditure",
+              "focusPl": "wydatki"
+            },
+            {
+              "en": "Any expenditure over fifty thousand needs board approval.",
+              "pl": "Każdy wydatek powyżej pięćdziesięciu tysięcy wymaga zgody zarządu.",
+              "focusEn": "expenditure",
+              "focusPl": "wydatek"
+            }
+          ],
+          "acceptedAnswers": [
+            "expenditure",
+            "spending"
+          ],
+          "acceptedTranslations": [
+            "wydatki",
+            "nakłady",
+            "wydatkowanie"
+          ]
+        },
+        {
+          "id": "finance-accounting.line-item",
+          "term": "line item",
+          "ipa": "/ˈlaɪn ˌaɪtəm/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "pozycja budżetowa",
+          "definition": "One separate cost or amount listed on its own line in a budget.",
+          "register": "specjalistyczny",
+          "contextPl": "Pojedyncza pozycja w budżecie",
+          "natural": "",
+          "forms": "line items",
+          "collocations": "a separate line item; add a line item",
+          "synonyms": "item",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Travel should be its own line item, not part of \"other costs\" at the bottom.",
+              "pl": "Podróże powinny być osobną pozycją budżetową, a nie częścią „innych kosztów” na dole.",
+              "focusEn": "line item",
+              "focusPl": "pozycją budżetową"
+            },
+            {
+              "en": "She questioned every line item over five thousand dollars.",
+              "pl": "Zakwestionowała każdą pozycję powyżej pięciu tysięcy dolarów.",
+              "focusEn": "line item",
+              "focusPl": "pozycję"
+            }
+          ],
+          "acceptedAnswers": [
+            "line item"
+          ],
+          "acceptedTranslations": [
+            "pozycja budżetowa",
+            "pozycja",
+            "pozycja w budżecie"
+          ]
+        },
+        {
+          "id": "finance-accounting.cash-flow",
+          "term": "cash flow",
+          "ipa": "/ˈkæʃ ˌfloʊ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "przepływy pieniężne",
+          "definition": "The movement of money into and out of a business.",
+          "register": "specjalistyczny",
+          "contextPl": "Płynność finansowa firmy",
+          "natural": "",
+          "forms": "",
+          "collocations": "positive cash flow; cash flow problems; manage cash flow",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our profits are fine, but cash flow is tight in the summer.",
+              "pl": "Zyski są w porządku, ale latem mamy napięte przepływy pieniężne.",
+              "focusEn": "cash flow",
+              "focusPl": "przepływy pieniężne"
+            },
+            {
+              "en": "Late payments from clients are hurting our cash flow.",
+              "pl": "Opóźnione płatności od klientów szkodzą naszej płynności finansowej.",
+              "focusEn": "cash flow",
+              "focusPl": "płynności finansowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "cash flow",
+            "cashflow"
+          ],
+          "acceptedTranslations": [
+            "przepływy pieniężne",
+            "płynność finansowa",
+            "przepływ gotówki"
+          ]
+        },
+        {
+          "id": "finance-accounting.projection",
+          "term": "projection",
+          "ipa": "/prəˈdʒekʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "prognoza",
+          "definition": "A guess about future amounts based on current information.",
+          "register": "formalny",
+          "contextPl": "Szacunki na przyszłość",
+          "natural": "forecast",
+          "forms": "projections",
+          "collocations": "financial projections; revenue projections; based on projections",
+          "synonyms": "forecast; estimate",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Her projection shows costs rising by eight percent next year.",
+              "pl": "Jej prognoza pokazuje wzrost kosztów o osiem procent w przyszłym roku.",
+              "focusEn": "projection",
+              "focusPl": "prognoza"
+            },
+            {
+              "en": "These projections assume we keep all our current clients.",
+              "pl": "Te prognozy zakładają, że zatrzymamy wszystkich obecnych klientów.",
+              "focusEn": "projections",
+              "focusPl": "prognozy"
+            }
+          ],
+          "acceptedAnswers": [
+            "projection",
+            "forecast"
+          ],
+          "acceptedTranslations": [
+            "prognoza",
+            "prognozy",
+            "szacunek",
+            "przewidywania"
+          ]
+        },
+        {
+          "id": "finance-accounting.return-on-investment",
+          "term": "return on investment",
+          "ipa": "/rɪˌtɝːn ɑːn ɪnˈvestmənt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "zwrot z inwestycji",
+          "definition": "The profit you get from money you have spent or invested.",
+          "register": "specjalistyczny",
+          "contextPl": "Opłacalność wydatków",
+          "natural": "ROI",
+          "forms": "",
+          "collocations": "a good return on investment; calculate the return on investment",
+          "synonyms": "ROI",
+          "antonyms": "",
+          "notePl": "Skrót ROI /ˌɑːr oʊ ˈaɪ/.",
+          "examples": [
+            {
+              "en": "What's the return on investment if we buy the new software?",
+              "pl": "Jaki będzie zwrot z inwestycji, jeśli kupimy nowe oprogramowanie?",
+              "focusEn": "return on investment",
+              "focusPl": "zwrot z inwestycji"
+            },
+            {
+              "en": "The training paid off with a clear return on investment.",
+              "pl": "Szkolenie się opłaciło i dało wyraźny zwrot z inwestycji.",
+              "focusEn": "return on investment",
+              "focusPl": "zwrot z inwestycji"
+            }
+          ],
+          "acceptedAnswers": [
+            "return on investment",
+            "ROI"
+          ],
+          "acceptedTranslations": [
+            "zwrot z inwestycji",
+            "stopa zwrotu",
+            "ROI"
+          ]
+        },
+        {
+          "id": "finance-accounting.variable-costs",
+          "term": "variable costs",
+          "ipa": "/ˌveriəbəl ˈkɔːsts/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "koszty zmienne",
+          "definition": "Costs that change depending on how much a company produces or sells.",
+          "register": "specjalistyczny",
+          "contextPl": "Koszty zależne od produkcji",
+          "natural": "",
+          "forms": "",
+          "collocations": "lower variable costs",
+          "synonyms": "",
+          "antonyms": "fixed costs",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Shipping makes up most of our variable costs.",
+              "pl": "Wysyłka stanowi większość naszych kosztów zmiennych.",
+              "focusEn": "variable costs",
+              "focusPl": "kosztów zmiennych"
+            },
+            {
+              "en": "When sales go up, our variable costs go up too.",
+              "pl": "Kiedy sprzedaż rośnie, rosną też nasze koszty zmienne.",
+              "focusEn": "variable costs",
+              "focusPl": "koszty zmienne"
+            }
+          ],
+          "acceptedAnswers": [
+            "variable costs"
+          ],
+          "acceptedTranslations": [
+            "koszty zmienne"
+          ]
+        },
+        {
+          "id": "finance-accounting.depreciation",
+          "term": "depreciation",
+          "ipa": "/dɪˌpriːʃiˈeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "C2",
+          "frequency": "less_common",
+          "translation": "amortyzacja",
+          "definition": "The loss of value of equipment over time, shown in the accounts.",
+          "register": "specjalistyczny",
+          "contextPl": "Spadek wartości sprzętu w księgach",
+          "natural": "",
+          "forms": "",
+          "collocations": "depreciation costs; calculate depreciation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The new machines will add a lot of depreciation to next year's costs.",
+              "pl": "Nowe maszyny znacznie podniosą koszty amortyzacji w przyszłym roku.",
+              "focusEn": "depreciation",
+              "focusPl": "amortyzacji"
+            },
+            {
+              "en": "Depreciation on our delivery vans is about twenty thousand a year.",
+              "pl": "Amortyzacja naszych samochodów dostawczych wynosi około dwudziestu tysięcy rocznie.",
+              "focusEn": "Depreciation",
+              "focusPl": "Amortyzacja"
+            }
+          ],
+          "acceptedAnswers": [
+            "depreciation"
+          ],
+          "acceptedTranslations": [
+            "amortyzacja",
+            "odpisy amortyzacyjne"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance-accounting.reports",
+      "namePl": "Wyniki i sprawozdania",
+      "scenePl": "Prezentacja wyników kwartalnych dla zarządu i akcjonariuszy w sali konferencyjnej",
+      "entries": [
+        {
+          "id": "finance-accounting.revenue",
+          "term": "revenue",
+          "ipa": "/ˈrevənuː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "very_common",
+          "translation": "przychód",
+          "definition": "All the money a company receives from selling goods or services.",
+          "register": "neutralny",
+          "contextPl": "Pieniądze wpływające do firmy",
+          "natural": "sales",
+          "forms": "revenues",
+          "collocations": "annual revenue; revenue growth; generate revenue",
+          "synonyms": "income; sales",
+          "antonyms": "",
+          "notePl": "Nie mylić z zyskiem (profit).",
+          "examples": [
+            {
+              "en": "Revenue for the quarter was four point two million dollars.",
+              "pl": "Przychód za kwartał wyniósł cztery i dwie dziesiąte miliona dolarów.",
+              "focusEn": "Revenue",
+              "focusPl": "Przychód"
+            },
+            {
+              "en": "Most of our revenue still comes from just three clients.",
+              "pl": "Większość naszych przychodów wciąż pochodzi od zaledwie trzech klientów.",
+              "focusEn": "revenue",
+              "focusPl": "przychodów"
+            }
+          ],
+          "acceptedAnswers": [
+            "revenue",
+            "income",
+            "sales"
+          ],
+          "acceptedTranslations": [
+            "przychód",
+            "przychody",
+            "obroty"
+          ]
+        },
+        {
+          "id": "finance-accounting.profit",
+          "term": "profit",
+          "ipa": "/ˈprɑːfɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "zysk",
+          "definition": "The money a company earns after paying all its costs.",
+          "register": "neutralny",
+          "contextPl": "Wynik po odjęciu kosztów",
+          "natural": "",
+          "forms": "profits",
+          "collocations": "make a profit; net profit; profit and loss",
+          "synonyms": "earnings",
+          "antonyms": "loss",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our profit grew by twelve percent compared to last year.",
+              "pl": "Nasz zysk wzrósł o dwanaście procent w porównaniu z zeszłym rokiem.",
+              "focusEn": "profit",
+              "focusPl": "zysk"
+            },
+            {
+              "en": "Higher costs ate into our profit in the spring.",
+              "pl": "Wyższe koszty uszczupliły nasz zysk wiosną.",
+              "focusEn": "profit",
+              "focusPl": "zysk"
+            }
+          ],
+          "acceptedAnswers": [
+            "profit",
+            "earnings"
+          ],
+          "acceptedTranslations": [
+            "zysk",
+            "dochód"
+          ]
+        },
+        {
+          "id": "finance-accounting.loss",
+          "term": "loss",
+          "ipa": "/lɔːs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "strata",
+          "definition": "Money a company loses when its costs are higher than its income.",
+          "register": "neutralny",
+          "contextPl": "Ujemny wynik finansowy",
+          "natural": "",
+          "forms": "losses",
+          "collocations": "make a loss; report a loss; heavy losses",
+          "synonyms": "",
+          "antonyms": "profit",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The Denver office reported a small loss again.",
+              "pl": "Biuro w Denver znów wykazało niewielką stratę.",
+              "focusEn": "loss",
+              "focusPl": "stratę"
+            },
+            {
+              "en": "One bad contract caused most of this year's loss.",
+              "pl": "Jeden zły kontrakt spowodował większość tegorocznej straty.",
+              "focusEn": "loss",
+              "focusPl": "straty"
+            }
+          ],
+          "acceptedAnswers": [
+            "loss"
+          ],
+          "acceptedTranslations": [
+            "strata",
+            "straty"
+          ]
+        },
+        {
+          "id": "finance-accounting.results",
+          "term": "results",
+          "ipa": "/rɪˈzʌlts/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wyniki",
+          "definition": "The financial figures that show how well a company did in a period.",
+          "register": "neutralny",
+          "contextPl": "Wyniki finansowe za okres",
+          "natural": "figures",
+          "forms": "",
+          "collocations": "quarterly results; strong results; announce results",
+          "synonyms": "figures; numbers",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The quarterly results were better than most analysts expected.",
+              "pl": "Wyniki kwartalne były lepsze, niż spodziewała się większość analityków.",
+              "focusEn": "results",
+              "focusPl": "Wyniki"
+            },
+            {
+              "en": "We'll share the full results with employees on Friday.",
+              "pl": "Pełne wyniki przedstawimy pracownikom w piątek.",
+              "focusEn": "results",
+              "focusPl": "wyniki"
+            }
+          ],
+          "acceptedAnswers": [
+            "results",
+            "figures"
+          ],
+          "acceptedTranslations": [
+            "wyniki",
+            "wyniki finansowe",
+            "rezultaty"
+          ]
+        },
+        {
+          "id": "finance-accounting.earnings",
+          "term": "earnings",
+          "ipa": "/ˈɝːnɪŋz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "zyski",
+          "definition": "The profit that a company makes in a particular period.",
+          "register": "specjalistyczny",
+          "contextPl": "Zarobki firmy w raportach",
+          "natural": "profits",
+          "forms": "",
+          "collocations": "quarterly earnings; earnings report; earnings per share",
+          "synonyms": "profits",
+          "antonyms": "",
+          "notePl": "W raportach giełdowych częściej niż „profit”.",
+          "examples": [
+            {
+              "en": "Earnings per share rose to two dollars and ten cents.",
+              "pl": "Zysk na akcję wzrósł do dwóch dolarów i dziesięciu centów.",
+              "focusEn": "Earnings",
+              "focusPl": "Zysk"
+            },
+            {
+              "en": "The earnings report comes out after the market closes.",
+              "pl": "Raport o zyskach ukazuje się po zamknięciu giełdy.",
+              "focusEn": "earnings",
+              "focusPl": "zyskach"
+            }
+          ],
+          "acceptedAnswers": [
+            "earnings",
+            "profits"
+          ],
+          "acceptedTranslations": [
+            "zyski",
+            "zysk",
+            "dochody"
+          ]
+        },
+        {
+          "id": "finance-accounting.profit-margin",
+          "term": "profit margin",
+          "ipa": "/ˈprɑːfɪt ˌmɑːrdʒən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "marża zysku",
+          "definition": "The percentage of revenue that is left as profit.",
+          "register": "specjalistyczny",
+          "contextPl": "Opłacalność sprzedaży",
+          "natural": "margin",
+          "forms": "profit margins",
+          "collocations": "a high profit margin; thin profit margins",
+          "synonyms": "margin",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our profit margin fell from fifteen to eleven percent.",
+              "pl": "Nasza marża zysku spadła z piętnastu do jedenastu procent.",
+              "focusEn": "profit margin",
+              "focusPl": "marża zysku"
+            },
+            {
+              "en": "Online sales have a much higher profit margin.",
+              "pl": "Sprzedaż internetowa ma znacznie wyższą marżę.",
+              "focusEn": "profit margin",
+              "focusPl": "marżę"
+            }
+          ],
+          "acceptedAnswers": [
+            "profit margin",
+            "margin"
+          ],
+          "acceptedTranslations": [
+            "marża zysku",
+            "marża",
+            "rentowność"
+          ]
+        },
+        {
+          "id": "finance-accounting.net",
+          "term": "net",
+          "ipa": "/net/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "netto",
+          "definition": "Left after costs or taxes have been taken away.",
+          "register": "neutralny",
+          "contextPl": "Kwota po odliczeniach",
+          "natural": "",
+          "forms": "",
+          "collocations": "net profit; net income; net loss",
+          "synonyms": "",
+          "antonyms": "gross",
+          "notePl": "W AmE „net income” to zysk netto firmy.",
+          "examples": [
+            {
+              "en": "Our net profit after taxes was half a million dollars.",
+              "pl": "Nasz zysk netto po opodatkowaniu wyniósł pół miliona dolarów.",
+              "focusEn": "net",
+              "focusPl": "netto"
+            },
+            {
+              "en": "The board looked mainly at net income, not revenue.",
+              "pl": "Zarząd patrzył głównie na dochód netto, a nie na przychód.",
+              "focusEn": "net",
+              "focusPl": "netto"
+            }
+          ],
+          "acceptedAnswers": [
+            "net"
+          ],
+          "acceptedTranslations": [
+            "netto",
+            "czysty"
+          ]
+        },
+        {
+          "id": "finance-accounting.financial-statements",
+          "term": "financial statements",
+          "ipa": "/faɪˌnænʃəl ˈsteɪtmənts/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "sprawozdania finansowe",
+          "definition": "Official reports that show a company's financial results and position.",
+          "register": "formalny",
+          "contextPl": "Oficjalne dokumenty o finansach firmy",
+          "natural": "",
+          "forms": "",
+          "collocations": "prepare financial statements; annual financial statements",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The financial statements for the quarter are on page three.",
+              "pl": "Sprawozdania finansowe za kwartał znajdują się na stronie trzeciej.",
+              "focusEn": "financial statements",
+              "focusPl": "Sprawozdania finansowe"
+            },
+            {
+              "en": "Our auditors approved the financial statements last week.",
+              "pl": "Nasi audytorzy zatwierdzili sprawozdania finansowe w zeszłym tygodniu.",
+              "focusEn": "financial statements",
+              "focusPl": "sprawozdania finansowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "financial statements",
+            "financial statement"
+          ],
+          "acceptedTranslations": [
+            "sprawozdania finansowe",
+            "sprawozdanie finansowe"
+          ]
+        },
+        {
+          "id": "finance-accounting.balance-sheet",
+          "term": "balance sheet",
+          "ipa": "/ˈbæləns ˌʃiːt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "bilans",
+          "definition": "A financial report that shows what a company owns and owes at one time.",
+          "register": "specjalistyczny",
+          "contextPl": "Majątek i zobowiązania firmy",
+          "natural": "",
+          "forms": "balance sheets",
+          "collocations": "a strong balance sheet; on the balance sheet",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The balance sheet shows very little debt.",
+              "pl": "Bilans pokazuje bardzo niewielkie zadłużenie.",
+              "focusEn": "balance sheet",
+              "focusPl": "Bilans"
+            },
+            {
+              "en": "Cash on the balance sheet went up by two million.",
+              "pl": "Gotówka w bilansie wzrosła o dwa miliony.",
+              "focusEn": "balance sheet",
+              "focusPl": "bilansie"
+            }
+          ],
+          "acceptedAnswers": [
+            "balance sheet"
+          ],
+          "acceptedTranslations": [
+            "bilans",
+            "zestawienie bilansowe"
+          ]
+        },
+        {
+          "id": "finance-accounting.income-statement",
+          "term": "income statement",
+          "ipa": "/ˈɪnkʌm ˌsteɪtmənt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "rachunek zysków i strat",
+          "definition": "A report that shows a company's revenue, costs, and profit for a period.",
+          "register": "specjalistyczny",
+          "contextPl": "Wynik finansowy za okres",
+          "natural": "P&L",
+          "forms": "income statements",
+          "collocations": "read the income statement",
+          "synonyms": "profit and loss statement; P&L",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The income statement shows where the money went this quarter.",
+              "pl": "Rachunek zysków i strat pokazuje, na co poszły pieniądze w tym kwartale.",
+              "focusEn": "income statement",
+              "focusPl": "Rachunek zysków i strat"
+            },
+            {
+              "en": "Can you explain this jump in costs on the income statement?",
+              "pl": "Czy może pani wyjaśnić ten skok kosztów w rachunku zysków i strat?",
+              "focusEn": "income statement",
+              "focusPl": "rachunku zysków i strat"
+            }
+          ],
+          "acceptedAnswers": [
+            "income statement",
+            "profit and loss statement",
+            "P&L"
+          ],
+          "acceptedTranslations": [
+            "rachunek zysków i strat",
+            "rachunek wyników"
+          ]
+        },
+        {
+          "id": "finance-accounting.assets",
+          "term": "assets",
+          "ipa": "/ˈæsets/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "aktywa",
+          "definition": "Things a company owns that have value, such as money, buildings, or equipment.",
+          "register": "specjalistyczny",
+          "contextPl": "Majątek firmy",
+          "natural": "",
+          "forms": "",
+          "collocations": "total assets; current assets; fixed assets",
+          "synonyms": "",
+          "antonyms": "liabilities",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our total assets are worth about thirty million dollars.",
+              "pl": "Nasze łączne aktywa są warte około trzydziestu milionów dolarów.",
+              "focusEn": "assets",
+              "focusPl": "aktywa"
+            },
+            {
+              "en": "The warehouse is one of our most valuable assets.",
+              "pl": "Magazyn to jeden z naszych najcenniejszych składników majątku.",
+              "focusEn": "assets",
+              "focusPl": "składników majątku"
+            }
+          ],
+          "acceptedAnswers": [
+            "assets",
+            "asset"
+          ],
+          "acceptedTranslations": [
+            "aktywa",
+            "majątek",
+            "składniki majątku"
+          ]
+        },
+        {
+          "id": "finance-accounting.liabilities",
+          "term": "liabilities",
+          "ipa": "/ˌlaɪəˈbɪlətiz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "pasywa",
+          "definition": "Money that a company owes, such as loans and unpaid bills.",
+          "register": "specjalistyczny",
+          "contextPl": "Długi i zobowiązania firmy",
+          "natural": "debts",
+          "forms": "",
+          "collocations": "current liabilities; total liabilities",
+          "synonyms": "debts",
+          "antonyms": "assets",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our liabilities went down after we paid off the bank loan.",
+              "pl": "Nasze zobowiązania zmalały po spłacie kredytu bankowego.",
+              "focusEn": "liabilities",
+              "focusPl": "zobowiązania"
+            },
+            {
+              "en": "Short-term liabilities include unpaid supplier invoices.",
+              "pl": "Krótkoterminowe zobowiązania obejmują niezapłacone faktury od dostawców.",
+              "focusEn": "liabilities",
+              "focusPl": "zobowiązania"
+            }
+          ],
+          "acceptedAnswers": [
+            "liabilities",
+            "liability",
+            "debts"
+          ],
+          "acceptedTranslations": [
+            "pasywa",
+            "zobowiązania",
+            "długi"
+          ]
+        },
+        {
+          "id": "finance-accounting.shareholder",
+          "term": "shareholder",
+          "ipa": "/ˈʃerˌhoʊldər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "akcjonariusz",
+          "definition": "A person or organization that owns shares in a company.",
+          "register": "neutralny",
+          "contextPl": "Właściciele części firmy",
+          "natural": "stockholder",
+          "forms": "shareholders",
+          "collocations": "shareholder meeting; major shareholder",
+          "synonyms": "stockholder",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Every shareholder got a copy of the report before the meeting.",
+              "pl": "Każdy akcjonariusz dostał kopię raportu przed spotkaniem.",
+              "focusEn": "shareholder",
+              "focusPl": "akcjonariusz"
+            },
+            {
+              "en": "One shareholder asked why profits were lower than expected.",
+              "pl": "Jeden z akcjonariuszy zapytał, dlaczego zyski były niższe od oczekiwanych.",
+              "focusEn": "shareholder",
+              "focusPl": "akcjonariuszy"
+            }
+          ],
+          "acceptedAnswers": [
+            "shareholder",
+            "stockholder"
+          ],
+          "acceptedTranslations": [
+            "akcjonariusz",
+            "udziałowiec"
+          ]
+        },
+        {
+          "id": "finance-accounting.dividend",
+          "term": "dividend",
+          "ipa": "/ˈdɪvɪdend/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dywidenda",
+          "definition": "Part of a company's profit paid to its shareholders.",
+          "register": "specjalistyczny",
+          "contextPl": "Udział w zyskach dla akcjonariuszy",
+          "natural": "",
+          "forms": "dividends",
+          "collocations": "pay a dividend; dividend per share",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The board announced a dividend of fifty cents per share.",
+              "pl": "Zarząd ogłosił dywidendę w wysokości pięćdziesięciu centów na akcję.",
+              "focusEn": "dividend",
+              "focusPl": "dywidendę"
+            },
+            {
+              "en": "Shareholders were happy to hear the dividend would go up.",
+              "pl": "Akcjonariusze ucieszyli się, słysząc, że dywidenda wzrośnie.",
+              "focusEn": "dividend",
+              "focusPl": "dywidenda"
+            }
+          ],
+          "acceptedAnswers": [
+            "dividend"
+          ],
+          "acceptedTranslations": [
+            "dywidenda"
+          ]
+        },
+        {
+          "id": "finance-accounting.in-the-black",
+          "term": "in the black",
+          "ipa": "/ˌɪn ðə ˈblæk/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "na plusie",
+          "definition": "Making a profit; not owing money.",
+          "register": "potoczny",
+          "contextPl": "Firma zarabia",
+          "natural": "profitable",
+          "forms": "",
+          "collocations": "stay in the black; be back in the black",
+          "synonyms": "profitable",
+          "antonyms": "in the red",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After two hard years, the company is finally in the black.",
+              "pl": "Po dwóch trudnych latach firma jest wreszcie na plusie.",
+              "focusEn": "in the black",
+              "focusPl": "na plusie"
+            },
+            {
+              "en": "We stayed in the black every month this year.",
+              "pl": "W tym roku każdego miesiąca byliśmy na plusie.",
+              "focusEn": "in the black",
+              "focusPl": "na plusie"
+            }
+          ],
+          "acceptedAnswers": [
+            "in the black"
+          ],
+          "acceptedTranslations": [
+            "na plusie",
+            "z zyskiem",
+            "z dodatnim wynikiem"
+          ]
+        },
+        {
+          "id": "finance-accounting.in-the-red",
+          "term": "in the red",
+          "ipa": "/ˌɪn ðə ˈred/",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "na minusie",
+          "definition": "Losing money or owing money.",
+          "register": "potoczny",
+          "contextPl": "Firma traci pieniądze",
+          "natural": "",
+          "forms": "",
+          "collocations": "be in the red; go into the red",
+          "synonyms": "",
+          "antonyms": "in the black",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The new restaurant chain is still in the red.",
+              "pl": "Nowa sieć restauracji wciąż jest na minusie.",
+              "focusEn": "in the red",
+              "focusPl": "na minusie"
+            },
+            {
+              "en": "We were in the red in January because of the heating bills.",
+              "pl": "W styczniu byliśmy na minusie przez rachunki za ogrzewanie.",
+              "focusEn": "in the red",
+              "focusPl": "na minusie"
+            }
+          ],
+          "acceptedAnswers": [
+            "in the red"
+          ],
+          "acceptedTranslations": [
+            "na minusie",
+            "ze stratą",
+            "pod kreską"
+          ]
+        },
+        {
+          "id": "finance-accounting.year-over-year",
+          "term": "year-over-year",
+          "ipa": "/ˌjɪr oʊvər ˈjɪr/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "rok do roku",
+          "definition": "Compared with the same period one year earlier.",
+          "register": "specjalistyczny",
+          "contextPl": "Porównanie z poprzednim rokiem",
+          "natural": "",
+          "forms": "",
+          "collocations": "year-over-year growth; up ten percent year-over-year",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W BrE „year-on-year”.",
+          "examples": [
+            {
+              "en": "Revenue grew eight percent year-over-year, mostly thanks to online sales.",
+              "pl": "Przychód wzrósł o osiem procent rok do roku, głównie dzięki sprzedaży internetowej.",
+              "focusEn": "year-over-year",
+              "focusPl": "rok do roku"
+            },
+            {
+              "en": "The year-over-year numbers look much better than the monthly ones.",
+              "pl": "Wyniki rok do roku wyglądają dużo lepiej niż miesięczne.",
+              "focusEn": "year-over-year",
+              "focusPl": "rok do roku"
+            }
+          ],
+          "acceptedAnswers": [
+            "year-over-year",
+            "YoY",
+            "year over year"
+          ],
+          "acceptedTranslations": [
+            "rok do roku",
+            "r/r",
+            "w ujęciu rocznym"
+          ]
+        }
+      ]
+    }
+  ]
+}

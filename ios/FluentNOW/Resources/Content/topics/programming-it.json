@@ -1,0 +1,2493 @@
+{
+  "schemaVersion": 1,
+  "id": "programming-it",
+  "namePl": "Programowanie i IT",
+  "nameEn": "Programming and IT",
+  "group": "technology",
+  "symbol": "chevron.left.forwardslash.chevron.right",
+  "summaryPl": "Pisanie kodu, błędy i debugowanie, praca zespołu programistów, wdrożenia i serwery oraz kariera w branży IT.",
+  "aliases": [
+    "programowanie",
+    "kod",
+    "programista",
+    "informatyka",
+    "IT",
+    "błąd",
+    "wdrożenie",
+    "serwer",
+    "programming",
+    "coding",
+    "developer",
+    "software engineering"
+  ],
+  "categories": [
+    {
+      "id": "programming-it.code",
+      "namePl": "Pisanie kodu",
+      "scenePl": "Programistka pisze nową funkcję aplikacji do zamawiania jedzenia przy biurku z dwoma monitorami",
+      "entries": [
+        {
+          "id": "programming-it.code",
+          "term": "code",
+          "ipa": "/koʊd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kod",
+          "definition": "Instructions written in a programming language that a computer follows.",
+          "register": "neutralny",
+          "contextPl": "Tekst programu",
+          "natural": "",
+          "forms": "",
+          "collocations": "write code; clean code; source code",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik niepoliczalny: „some code”, „a piece of code”.",
+          "examples": [
+            {
+              "en": "This code calculates the delivery fee for each order.",
+              "pl": "Ten kod oblicza opłatę za dostawę dla każdego zamówienia.",
+              "focusEn": "code",
+              "focusPl": "kod"
+            },
+            {
+              "en": "I'll clean up the code before anyone else reads it.",
+              "pl": "Uporządkuję kod, zanim ktokolwiek inny go przeczyta.",
+              "focusEn": "code",
+              "focusPl": "kod"
+            }
+          ],
+          "acceptedAnswers": [
+            "code",
+            "source code"
+          ],
+          "acceptedTranslations": [
+            "kod",
+            "kod źródłowy"
+          ]
+        },
+        {
+          "id": "programming-it.write-code",
+          "term": "write code",
+          "ipa": "/ˌraɪt ˈkoʊd/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "pisać kod",
+          "definition": "To create the instructions for a computer program.",
+          "register": "neutralny",
+          "contextPl": "Podstawowa praca programisty",
+          "natural": "code",
+          "forms": "wrote; written",
+          "collocations": "write clean code; learn to write code",
+          "synonyms": "code; program",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I write code for about five hours a day; the rest is meetings.",
+              "pl": "Piszę kod przez około pięć godzin dziennie; reszta to spotkania.",
+              "focusEn": "write code",
+              "focusPl": "Piszę kod"
+            },
+            {
+              "en": "She can write code faster than anyone on the team.",
+              "pl": "Potrafi pisać kod szybciej niż ktokolwiek w zespole.",
+              "focusEn": "write code",
+              "focusPl": "pisać kod"
+            }
+          ],
+          "acceptedAnswers": [
+            "write code",
+            "code"
+          ],
+          "acceptedTranslations": [
+            "pisać kod",
+            "napisać kod",
+            "programować"
+          ]
+        },
+        {
+          "id": "programming-it.developer",
+          "term": "developer",
+          "ipa": "/dɪˈveləpər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "programista",
+          "definition": "A person whose job is to create software or websites.",
+          "register": "neutralny",
+          "contextPl": "Osoba tworząca oprogramowanie",
+          "natural": "dev",
+          "forms": "developers",
+          "collocations": "a web developer; a mobile developer; senior developer",
+          "synonyms": "programmer; software engineer",
+          "antonyms": "",
+          "notePl": "Potocznie „dev”.",
+          "examples": [
+            {
+              "en": "Our team has four developers and one designer.",
+              "pl": "Nasz zespół ma czterech programistów i jedną projektantkę.",
+              "focusEn": "developers",
+              "focusPl": "programistów"
+            },
+            {
+              "en": "Every developer here works on both the app and the website.",
+              "pl": "Każdy programista pracuje tu zarówno nad aplikacją, jak i nad stroną.",
+              "focusEn": "developer",
+              "focusPl": "programista"
+            }
+          ],
+          "acceptedAnswers": [
+            "developer",
+            "dev",
+            "programmer"
+          ],
+          "acceptedTranslations": [
+            "programista",
+            "programistka",
+            "developer",
+            "deweloper"
+          ]
+        },
+        {
+          "id": "programming-it.programmer",
+          "term": "programmer",
+          "ipa": "/ˈproʊɡræmər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "programista",
+          "definition": "A person who writes computer programs.",
+          "register": "neutralny",
+          "contextPl": "Zawód związany z kodem",
+          "natural": "coder",
+          "forms": "programmers",
+          "collocations": "a computer programmer; an experienced programmer",
+          "synonyms": "developer; coder",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've been a programmer for twelve years, mostly in finance.",
+              "pl": "Jestem programistą od dwunastu lat, głównie w finansach.",
+              "focusEn": "programmer",
+              "focusPl": "programistą"
+            },
+            {
+              "en": "Even a good programmer needs coffee to read this code.",
+              "pl": "Nawet dobry programista potrzebuje kawy, żeby przeczytać ten kod.",
+              "focusEn": "programmer",
+              "focusPl": "programista"
+            }
+          ],
+          "acceptedAnswers": [
+            "programmer",
+            "coder",
+            "developer"
+          ],
+          "acceptedTranslations": [
+            "programista",
+            "programistka",
+            "koder"
+          ]
+        },
+        {
+          "id": "programming-it.programming-language",
+          "term": "programming language",
+          "ipa": "/ˈproʊɡræmɪŋ ˌlæŋɡwɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "język programowania",
+          "definition": "A system of words and symbols used to write computer programs.",
+          "register": "neutralny",
+          "contextPl": "Narzędzia programisty",
+          "natural": "language",
+          "forms": "programming languages",
+          "collocations": "learn a programming language; a popular programming language",
+          "synonyms": "language",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Which programming language is the app written in?",
+              "pl": "W jakim języku programowania napisana jest aplikacja?",
+              "focusEn": "programming language",
+              "focusPl": "języku programowania"
+            },
+            {
+              "en": "She knows four programming languages but prefers just one.",
+              "pl": "Zna cztery języki programowania, ale woli jeden.",
+              "focusEn": "programming languages",
+              "focusPl": "języki programowania"
+            }
+          ],
+          "acceptedAnswers": [
+            "programming language",
+            "language"
+          ],
+          "acceptedTranslations": [
+            "język programowania"
+          ]
+        },
+        {
+          "id": "programming-it.line-of-code",
+          "term": "line of code",
+          "ipa": "/ˌlaɪn əv ˈkoʊd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "linijka kodu",
+          "definition": "One row of instructions in a program.",
+          "register": "neutralny",
+          "contextPl": "Jednostka długości kodu",
+          "natural": "",
+          "forms": "lines of code",
+          "collocations": "a single line of code; thousands of lines of code",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "One wrong line of code broke the whole checkout page.",
+              "pl": "Jedna błędna linijka kodu zepsuła całą stronę płatności.",
+              "focusEn": "line of code",
+              "focusPl": "linijka kodu"
+            },
+            {
+              "en": "I deleted three hundred lines of code and nothing broke.",
+              "pl": "Usunęłam trzysta linijek kodu i nic się nie zepsuło.",
+              "focusEn": "lines of code",
+              "focusPl": "linijek kodu"
+            }
+          ],
+          "acceptedAnswers": [
+            "line of code"
+          ],
+          "acceptedTranslations": [
+            "linijka kodu",
+            "wiersz kodu"
+          ]
+        },
+        {
+          "id": "programming-it.function",
+          "term": "function",
+          "ipa": "/ˈfʌŋkʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "funkcja",
+          "definition": "A named piece of code that does one specific task.",
+          "register": "specjalistyczny",
+          "contextPl": "Elementy programu",
+          "natural": "method",
+          "forms": "functions",
+          "collocations": "call a function; write a function",
+          "synonyms": "method",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This function checks if the restaurant is still open.",
+              "pl": "Ta funkcja sprawdza, czy restauracja jest jeszcze otwarta.",
+              "focusEn": "function",
+              "focusPl": "funkcja"
+            },
+            {
+              "en": "I split one long function into three short ones.",
+              "pl": "Podzieliłam jedną długą funkcję na trzy krótkie.",
+              "focusEn": "function",
+              "focusPl": "funkcję"
+            }
+          ],
+          "acceptedAnswers": [
+            "function",
+            "method"
+          ],
+          "acceptedTranslations": [
+            "funkcja",
+            "metoda"
+          ]
+        },
+        {
+          "id": "programming-it.variable",
+          "term": "variable",
+          "ipa": "/ˈveriəbəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zmienna",
+          "definition": "A named place in a program that stores a value.",
+          "register": "specjalistyczny",
+          "contextPl": "Przechowywanie danych w kodzie",
+          "natural": "",
+          "forms": "variables",
+          "collocations": "declare a variable; a variable name",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Give this variable a clearer name, like deliveryTime.",
+              "pl": "Nadaj tej zmiennej czytelniejszą nazwę, na przykład deliveryTime.",
+              "focusEn": "variable",
+              "focusPl": "zmiennej"
+            },
+            {
+              "en": "The variable was empty, so the price showed as zero.",
+              "pl": "Zmienna była pusta, więc cena wyświetlała się jako zero.",
+              "focusEn": "variable",
+              "focusPl": "Zmienna"
+            }
+          ],
+          "acceptedAnswers": [
+            "variable"
+          ],
+          "acceptedTranslations": [
+            "zmienna"
+          ]
+        },
+        {
+          "id": "programming-it.loop",
+          "term": "loop",
+          "ipa": "/luːp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pętla",
+          "definition": "Code that repeats the same steps several times.",
+          "register": "specjalistyczny",
+          "contextPl": "Powtarzanie operacji w programie",
+          "natural": "",
+          "forms": "loops",
+          "collocations": "a for loop; an infinite loop",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The loop goes through every item in the cart.",
+              "pl": "Pętla przechodzi przez każdy produkt w koszyku.",
+              "focusEn": "loop",
+              "focusPl": "Pętla"
+            },
+            {
+              "en": "An endless loop froze the app on my phone.",
+              "pl": "Nieskończona pętla zawiesiła aplikację na moim telefonie.",
+              "focusEn": "loop",
+              "focusPl": "pętla"
+            }
+          ],
+          "acceptedAnswers": [
+            "loop"
+          ],
+          "acceptedTranslations": [
+            "pętla"
+          ]
+        },
+        {
+          "id": "programming-it.syntax",
+          "term": "syntax",
+          "ipa": "/ˈsɪntæks/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "składnia",
+          "definition": "The rules for how code must be written in a programming language.",
+          "register": "specjalistyczny",
+          "contextPl": "Poprawność zapisu kodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "syntax error; correct syntax",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A missing bracket caused a syntax error.",
+              "pl": "Brakujący nawias spowodował błąd składni.",
+              "focusEn": "syntax",
+              "focusPl": "składni"
+            },
+            {
+              "en": "The syntax of this language is easy to read.",
+              "pl": "Składnia tego języka jest łatwa do czytania.",
+              "focusEn": "syntax",
+              "focusPl": "Składnia"
+            }
+          ],
+          "acceptedAnswers": [
+            "syntax"
+          ],
+          "acceptedTranslations": [
+            "składnia"
+          ]
+        },
+        {
+          "id": "programming-it.library",
+          "term": "library",
+          "ipa": "/ˈlaɪbreri/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "biblioteka",
+          "definition": "A collection of ready-made code that programmers can use.",
+          "register": "specjalistyczny",
+          "contextPl": "Gotowe moduły kodu",
+          "natural": "package",
+          "forms": "libraries",
+          "collocations": "use a library; an open-source library; import a library",
+          "synonyms": "package",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We use a free library to show the map in the app.",
+              "pl": "Używamy darmowej biblioteki do wyświetlania mapy w aplikacji.",
+              "focusEn": "library",
+              "focusPl": "biblioteki"
+            },
+            {
+              "en": "Updating that library fixed the date problem.",
+              "pl": "Aktualizacja tej biblioteki naprawiła problem z datami.",
+              "focusEn": "library",
+              "focusPl": "biblioteki"
+            }
+          ],
+          "acceptedAnswers": [
+            "library",
+            "package"
+          ],
+          "acceptedTranslations": [
+            "biblioteka",
+            "pakiet"
+          ]
+        },
+        {
+          "id": "programming-it.framework",
+          "term": "framework",
+          "ipa": "/ˈfreɪmwɝːk/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "framework",
+          "definition": "A set of tools and rules that gives structure to a software project.",
+          "register": "specjalistyczny",
+          "contextPl": "Szkielet aplikacji",
+          "natural": "",
+          "forms": "frameworks",
+          "collocations": "a web framework; build on a framework",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku zwykle po prostu „framework”.",
+          "examples": [
+            {
+              "en": "The whole website is built on one popular framework.",
+              "pl": "Cała strona jest zbudowana na jednym popularnym frameworku.",
+              "focusEn": "framework",
+              "focusPl": "frameworku"
+            },
+            {
+              "en": "Switching to a new framework would take us months.",
+              "pl": "Przejście na nowy framework zajęłoby nam miesiące.",
+              "focusEn": "framework",
+              "focusPl": "framework"
+            }
+          ],
+          "acceptedAnswers": [
+            "framework"
+          ],
+          "acceptedTranslations": [
+            "framework",
+            "szkielet aplikacji",
+            "platforma programistyczna"
+          ]
+        },
+        {
+          "id": "programming-it.open-source",
+          "term": "open source",
+          "ipa": "/ˌoʊpən ˈsɔːrs/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "otwartoźródłowy",
+          "definition": "Software whose code is free for anyone to see, use, and change.",
+          "register": "specjalistyczny",
+          "contextPl": "Wolne i otwarte oprogramowanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "open-source software; an open-source project",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przed rzeczownikiem z łącznikiem: „open-source project”.",
+          "examples": [
+            {
+              "en": "Most of the tools we use are open source.",
+              "pl": "Większość narzędzi, których używamy, jest otwartoźródłowa.",
+              "focusEn": "open source",
+              "focusPl": "otwartoźródłowa"
+            },
+            {
+              "en": "I fix bugs in an open source project on weekends.",
+              "pl": "W weekendy poprawiam błędy w projekcie open source.",
+              "focusEn": "open source",
+              "focusPl": "open source"
+            }
+          ],
+          "acceptedAnswers": [
+            "open source",
+            "open-source"
+          ],
+          "acceptedTranslations": [
+            "otwartoźródłowy",
+            "open source",
+            "o otwartym kodzie"
+          ]
+        },
+        {
+          "id": "programming-it.refactor",
+          "term": "refactor",
+          "ipa": "/riːˈfæktər/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "refaktoryzować",
+          "definition": "To improve the structure of code without changing what it does.",
+          "register": "specjalistyczny",
+          "contextPl": "Porządkowanie istniejącego kodu",
+          "natural": "clean up",
+          "forms": "refactored; refactoring",
+          "collocations": "refactor the code; refactor a function",
+          "synonyms": "clean up",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Before adding features, let's refactor this messy part.",
+              "pl": "Zanim dodamy funkcje, zrefaktoryzujmy ten chaotyczny fragment.",
+              "focusEn": "refactor",
+              "focusPl": "zrefaktoryzujmy"
+            },
+            {
+              "en": "I spent the whole day refactoring the payment code.",
+              "pl": "Cały dzień refaktoryzowałam kod płatności.",
+              "focusEn": "refactoring",
+              "focusPl": "refaktoryzowałam"
+            }
+          ],
+          "acceptedAnswers": [
+            "refactor",
+            "clean up"
+          ],
+          "acceptedTranslations": [
+            "refaktoryzować",
+            "zrefaktoryzować",
+            "przebudować kod"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "programming-it.bugs",
+      "namePl": "Błędy i debugowanie",
+      "scenePl": "Późne popołudnie: aplikacja wysypuje się u klientów, a zespół szuka przyczyny",
+      "entries": [
+        {
+          "id": "programming-it.fix-a-bug",
+          "term": "fix a bug",
+          "ipa": "/ˌfɪks ə ˈbʌɡ/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "naprawić błąd",
+          "definition": "To correct a mistake in a program.",
+          "register": "neutralny",
+          "contextPl": "Codzienna praca nad błędami",
+          "natural": "",
+          "forms": "fixed; fixing",
+          "collocations": "fix a bug quickly; fix the bug",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I need an hour to fix the bug in the login screen.",
+              "pl": "Potrzebuję godziny, żeby naprawić błąd na ekranie logowania.",
+              "focusEn": "fix the bug",
+              "focusPl": "naprawić błąd"
+            },
+            {
+              "en": "Every time we fix a bug, two new ones appear.",
+              "pl": "Za każdym razem, gdy naprawiamy błąd, pojawiają się dwa nowe.",
+              "focusEn": "fix a bug",
+              "focusPl": "naprawiamy błąd"
+            }
+          ],
+          "acceptedAnswers": [
+            "fix a bug",
+            "fix the bug"
+          ],
+          "acceptedTranslations": [
+            "naprawić błąd",
+            "naprawiać błąd",
+            "poprawić błąd"
+          ]
+        },
+        {
+          "id": "programming-it.debug",
+          "term": "debug",
+          "ipa": "/diːˈbʌɡ/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "debugować",
+          "definition": "To find and remove mistakes in a program.",
+          "register": "specjalistyczny",
+          "contextPl": "Szukanie przyczyn błędów",
+          "natural": "",
+          "forms": "debugged; debugging",
+          "collocations": "debug the code; spend hours debugging",
+          "synonyms": "troubleshoot",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've been debugging this crash since lunch.",
+              "pl": "Debuguję tę awarię od lunchu.",
+              "focusEn": "debugging",
+              "focusPl": "Debuguję"
+            },
+            {
+              "en": "It's hard to debug a problem that only happens on some phones.",
+              "pl": "Trudno debugować problem, który zdarza się tylko na niektórych telefonach.",
+              "focusEn": "debug",
+              "focusPl": "debugować"
+            }
+          ],
+          "acceptedAnswers": [
+            "debug",
+            "troubleshoot"
+          ],
+          "acceptedTranslations": [
+            "debugować",
+            "zdebugować",
+            "szukać błędów"
+          ]
+        },
+        {
+          "id": "programming-it.test",
+          "term": "test",
+          "ipa": "/test/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "przetestować",
+          "definition": "To check that a program works correctly.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie działania kodu",
+          "natural": "",
+          "forms": "tested; testing",
+          "collocations": "test the code; test a feature",
+          "synonyms": "check",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Did anyone test this update on older phones?",
+              "pl": "Czy ktoś przetestował tę aktualizację na starszych telefonach?",
+              "focusEn": "test",
+              "focusPl": "przetestował"
+            },
+            {
+              "en": "We tested the new checkout for a week before release.",
+              "pl": "Testowaliśmy nową stronę płatności przez tydzień przed wydaniem.",
+              "focusEn": "tested",
+              "focusPl": "Testowaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "test",
+            "check"
+          ],
+          "acceptedTranslations": [
+            "przetestować",
+            "testować",
+            "sprawdzić"
+          ]
+        },
+        {
+          "id": "programming-it.reproduce",
+          "term": "reproduce",
+          "ipa": "/ˌriːprəˈduːs/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "odtworzyć",
+          "definition": "To make a bug happen again so you can study it.",
+          "register": "specjalistyczny",
+          "contextPl": "Powtarzanie błędu w celu analizy",
+          "natural": "",
+          "forms": "reproduced; reproducing",
+          "collocations": "reproduce a bug; can't reproduce the issue",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Skrót „repro” w żargonie.",
+          "examples": [
+            {
+              "en": "I can't reproduce the crash on my phone.",
+              "pl": "Nie mogę odtworzyć tej awarii na swoim telefonie.",
+              "focusEn": "reproduce",
+              "focusPl": "odtworzyć"
+            },
+            {
+              "en": "Once we reproduced the bug, fixing it took ten minutes.",
+              "pl": "Kiedy już odtworzyliśmy błąd, naprawa zajęła dziesięć minut.",
+              "focusEn": "reproduced",
+              "focusPl": "odtworzyliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "reproduce",
+            "repro"
+          ],
+          "acceptedTranslations": [
+            "odtworzyć",
+            "odtwarzać",
+            "zreprodukować"
+          ]
+        },
+        {
+          "id": "programming-it.logs",
+          "term": "logs",
+          "ipa": "/lɔːɡz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "logi",
+          "definition": "Records that a program writes about what it is doing.",
+          "register": "specjalistyczny",
+          "contextPl": "Ślady działania systemu",
+          "natural": "",
+          "forms": "",
+          "collocations": "check the logs; error logs; server logs",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The logs show the crash started at four fifteen.",
+              "pl": "Logi pokazują, że awarie zaczęły się o szesnastej piętnaście.",
+              "focusEn": "logs",
+              "focusPl": "Logi"
+            },
+            {
+              "en": "Let's check the server logs before we guess.",
+              "pl": "Sprawdźmy logi serwera, zanim zaczniemy zgadywać.",
+              "focusEn": "logs",
+              "focusPl": "logi"
+            }
+          ],
+          "acceptedAnswers": [
+            "logs",
+            "log"
+          ],
+          "acceptedTranslations": [
+            "logi",
+            "dziennik zdarzeń",
+            "dzienniki"
+          ]
+        },
+        {
+          "id": "programming-it.edge-case",
+          "term": "edge case",
+          "ipa": "/ˈedʒ ˌkeɪs/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "przypadek brzegowy",
+          "definition": "An unusual situation that a program might not handle correctly.",
+          "register": "specjalistyczny",
+          "contextPl": "Nietypowe dane i sytuacje",
+          "natural": "corner case",
+          "forms": "edge cases",
+          "collocations": "handle edge cases; test edge cases",
+          "synonyms": "corner case",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "An order with zero items was an edge case we forgot.",
+              "pl": "Zamówienie bez żadnych produktów było przypadkiem brzegowym, o którym zapomnieliśmy.",
+              "focusEn": "edge case",
+              "focusPl": "przypadkiem brzegowym"
+            },
+            {
+              "en": "Write a test for every edge case you can think of.",
+              "pl": "Napisz test dla każdego przypadku brzegowego, jaki przyjdzie ci do głowy.",
+              "focusEn": "edge case",
+              "focusPl": "przypadku brzegowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "edge case",
+            "corner case"
+          ],
+          "acceptedTranslations": [
+            "przypadek brzegowy",
+            "przypadek graniczny"
+          ]
+        },
+        {
+          "id": "programming-it.it-works-on-my-machine",
+          "term": "it works on my machine",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "u mnie działa",
+          "definition": "A joke phrase developers say when code works for them but not for others.",
+          "register": "potoczny",
+          "contextPl": "Klasyczna wymówka programisty",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"It works on my machine,\" he said, and everyone laughed.",
+              "pl": "– U mnie działa – powiedział, a wszyscy się roześmiali.",
+              "focusEn": "It works on my machine",
+              "focusPl": "U mnie działa"
+            },
+            {
+              "en": "\"It works on my machine\" doesn't help our customers.",
+              "pl": "„U mnie działa” nie pomaga naszym klientom.",
+              "focusEn": "It works on my machine",
+              "focusPl": "U mnie działa"
+            }
+          ],
+          "acceptedAnswers": [
+            "it works on my machine",
+            "works on my machine"
+          ],
+          "acceptedTranslations": [
+            "u mnie działa",
+            "na moim komputerze działa"
+          ]
+        },
+        {
+          "id": "programming-it.patch",
+          "term": "patch",
+          "ipa": "/pætʃ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "poprawka",
+          "definition": "A small update that fixes a problem in software.",
+          "register": "neutralny",
+          "contextPl": "Szybka naprawa w oprogramowaniu",
+          "natural": "fix",
+          "forms": "patches",
+          "collocations": "release a patch; a security patch",
+          "synonyms": "fix; update",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll send a patch tonight for the crash.",
+              "pl": "Dziś wieczorem wypuścimy poprawkę na tę awarię.",
+              "focusEn": "patch",
+              "focusPl": "poprawkę"
+            },
+            {
+              "en": "The patch fixed the crash but broke the search.",
+              "pl": "Łatka naprawiła awarię, ale zepsuła wyszukiwanie.",
+              "focusEn": "patch",
+              "focusPl": "Łatka"
+            }
+          ],
+          "acceptedAnswers": [
+            "patch",
+            "fix"
+          ],
+          "acceptedTranslations": [
+            "poprawka",
+            "łatka",
+            "łata"
+          ]
+        },
+        {
+          "id": "programming-it.hotfix",
+          "term": "hotfix",
+          "ipa": "/ˈhɑːtfɪks/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "pilna poprawka",
+          "definition": "A quick fix for a serious bug, released without waiting for the next version.",
+          "register": "specjalistyczny",
+          "contextPl": "Natychmiastowa naprawa",
+          "natural": "",
+          "forms": "hotfixes",
+          "collocations": "push a hotfix; an emergency hotfix",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need a hotfix before more customers lose their orders.",
+              "pl": "Potrzebujemy pilnej poprawki, zanim kolejni klienci stracą zamówienia.",
+              "focusEn": "hotfix",
+              "focusPl": "pilnej poprawki"
+            },
+            {
+              "en": "The hotfix went out at seven, and the crashes stopped.",
+              "pl": "Poprawka awaryjna wyszła o siódmej i awarie ustały.",
+              "focusEn": "hotfix",
+              "focusPl": "Poprawka awaryjna"
+            }
+          ],
+          "acceptedAnswers": [
+            "hotfix"
+          ],
+          "acceptedTranslations": [
+            "pilna poprawka",
+            "hotfix",
+            "poprawka awaryjna"
+          ]
+        },
+        {
+          "id": "programming-it.unit-test",
+          "term": "unit test",
+          "ipa": "/ˈjuːnɪt ˌtest/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "test jednostkowy",
+          "definition": "A small automatic test that checks one part of the code.",
+          "register": "specjalistyczny",
+          "contextPl": "Automatyczne sprawdzanie kodu",
+          "natural": "",
+          "forms": "unit tests",
+          "collocations": "write unit tests; run the unit tests",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "No unit test checked what happens with an empty cart.",
+              "pl": "Żaden test jednostkowy nie sprawdzał, co się dzieje z pustym koszykiem.",
+              "focusEn": "unit test",
+              "focusPl": "test jednostkowy"
+            },
+            {
+              "en": "I added a unit test so this bug never comes back.",
+              "pl": "Dodałam test jednostkowy, żeby ten błąd już nigdy nie wrócił.",
+              "focusEn": "unit test",
+              "focusPl": "test jednostkowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "unit test"
+          ],
+          "acceptedTranslations": [
+            "test jednostkowy",
+            "testy jednostkowe"
+          ]
+        },
+        {
+          "id": "programming-it.qa",
+          "term": "QA",
+          "ipa": "/ˌkjuː ˈeɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kontrola jakości",
+          "definition": "The process or team that checks software for problems before release.",
+          "register": "neutralny",
+          "contextPl": "Testerzy i jakość",
+          "natural": "testing",
+          "forms": "",
+          "collocations": "QA team; QA engineer; go through QA",
+          "synonyms": "testing",
+          "antonyms": "",
+          "notePl": "Skrót od „quality assurance”.",
+          "examples": [
+            {
+              "en": "How did this bug get past QA?",
+              "pl": "Jak ten błąd prześlizgnął się przez kontrolę jakości?",
+              "focusEn": "QA",
+              "focusPl": "kontrolę jakości"
+            },
+            {
+              "en": "QA found the problem, but nobody read their report.",
+              "pl": "Zespół testerów znalazł problem, ale nikt nie przeczytał ich raportu.",
+              "focusEn": "QA",
+              "focusPl": "Zespół testerów"
+            }
+          ],
+          "acceptedAnswers": [
+            "QA",
+            "quality assurance"
+          ],
+          "acceptedTranslations": [
+            "kontrola jakości",
+            "zespół testerów",
+            "QA",
+            "testy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "programming-it.teamwork",
+      "namePl": "Praca zespołu programistów",
+      "scenePl": "Poranek w zespole: przegląd kodu i łączenie zmian kolegów w jednym repozytorium",
+      "entries": [
+        {
+          "id": "programming-it.code-review",
+          "term": "code review",
+          "ipa": "/ˈkoʊd rɪˌvjuː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przegląd kodu",
+          "definition": "When other developers read your code to find problems before it is added.",
+          "register": "specjalistyczny",
+          "contextPl": "Wzajemne sprawdzanie kodu",
+          "natural": "review",
+          "forms": "code reviews",
+          "collocations": "do a code review; ask for a code review",
+          "synonyms": "review",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My code review for Sam's changes took most of the morning.",
+              "pl": "Mój przegląd kodu zmian Sama zajął większą część ranka.",
+              "focusEn": "code review",
+              "focusPl": "przegląd kodu"
+            },
+            {
+              "en": "In the code review, Maya noticed a security problem.",
+              "pl": "Podczas przeglądu kodu Maya zauważyła problem z bezpieczeństwem.",
+              "focusEn": "code review",
+              "focusPl": "przeglądu kodu"
+            }
+          ],
+          "acceptedAnswers": [
+            "code review",
+            "review"
+          ],
+          "acceptedTranslations": [
+            "przegląd kodu",
+            "code review",
+            "recenzja kodu"
+          ]
+        },
+        {
+          "id": "programming-it.repository",
+          "term": "repository",
+          "ipa": "/rɪˈpɑːzətɔːri/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "repozytorium",
+          "definition": "A central place where the code of a project is stored with its history.",
+          "register": "specjalistyczny",
+          "contextPl": "Wspólne miejsce przechowywania kodu",
+          "natural": "repo",
+          "forms": "repositories",
+          "collocations": "clone a repository; the main repository",
+          "synonyms": "repo",
+          "antonyms": "",
+          "notePl": "Potocznie „repo”.",
+          "examples": [
+            {
+              "en": "All our code lives in one repository.",
+              "pl": "Cały nasz kod znajduje się w jednym repozytorium.",
+              "focusEn": "repository",
+              "focusPl": "repozytorium"
+            },
+            {
+              "en": "Can you give the new developer access to the repository?",
+              "pl": "Możesz dać nowemu programiście dostęp do repozytorium?",
+              "focusEn": "repository",
+              "focusPl": "repozytorium"
+            }
+          ],
+          "acceptedAnswers": [
+            "repository",
+            "repo"
+          ],
+          "acceptedTranslations": [
+            "repozytorium",
+            "repo"
+          ]
+        },
+        {
+          "id": "programming-it.version-control",
+          "term": "version control",
+          "ipa": "/ˈvɝːʒən kənˌtroʊl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "kontrola wersji",
+          "definition": "A system that records every change to code so you can go back if needed.",
+          "register": "specjalistyczny",
+          "contextPl": "Historia zmian w kodzie",
+          "natural": "",
+          "forms": "",
+          "collocations": "use version control; version control system",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Thanks to version control, we can see who changed what.",
+              "pl": "Dzięki kontroli wersji widzimy, kto co zmienił.",
+              "focusEn": "version control",
+              "focusPl": "kontroli wersji"
+            },
+            {
+              "en": "Without version control, that mistake would have cost us a week.",
+              "pl": "Bez kontroli wersji ten błąd kosztowałby nas tydzień.",
+              "focusEn": "version control",
+              "focusPl": "kontroli wersji"
+            }
+          ],
+          "acceptedAnswers": [
+            "version control"
+          ],
+          "acceptedTranslations": [
+            "kontrola wersji",
+            "system kontroli wersji"
+          ]
+        },
+        {
+          "id": "programming-it.commit",
+          "term": "commit",
+          "ipa": "/kəˈmɪt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "zatwierdzić zmiany (commit)",
+          "definition": "To save a set of code changes to the project history.",
+          "register": "specjalistyczny",
+          "contextPl": "Zapisywanie zmian w repozytorium",
+          "natural": "",
+          "forms": "committed; committing",
+          "collocations": "commit your changes; commit to the main branch",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „a commit”.",
+          "examples": [
+            {
+              "en": "Commit your changes before you switch tasks.",
+              "pl": "Zatwierdź zmiany, zanim przełączysz się na inne zadanie.",
+              "focusEn": "Commit",
+              "focusPl": "Zatwierdź zmiany"
+            },
+            {
+              "en": "I committed the fix at nine and pushed it at nine fifteen.",
+              "pl": "Zrobiłam commit z poprawką o dziewiątej, a wysłałam go o dziewiątej piętnaście.",
+              "focusEn": "committed",
+              "focusPl": "Zrobiłam commit"
+            }
+          ],
+          "acceptedAnswers": [
+            "commit"
+          ],
+          "acceptedTranslations": [
+            "zatwierdzić zmiany (commit)",
+            "zatwierdzić zmiany",
+            "zrobić commit",
+            "skomitować",
+            "komitować"
+          ]
+        },
+        {
+          "id": "programming-it.branch",
+          "term": "branch",
+          "ipa": "/bræntʃ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "gałąź",
+          "definition": "A separate copy of the code where you can work without changing the main version.",
+          "register": "specjalistyczny",
+          "contextPl": "Równoległa praca nad kodem",
+          "natural": "",
+          "forms": "branches",
+          "collocations": "create a branch; the main branch; a feature branch",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm working on a separate branch for the new menu.",
+              "pl": "Pracuję na osobnej gałęzi nad nowym menu.",
+              "focusEn": "branch",
+              "focusPl": "gałęzi"
+            },
+            {
+              "en": "Delete your old branch after the changes are merged.",
+              "pl": "Usuń swoją starą gałąź po scaleniu zmian.",
+              "focusEn": "branch",
+              "focusPl": "gałąź"
+            }
+          ],
+          "acceptedAnswers": [
+            "branch"
+          ],
+          "acceptedTranslations": [
+            "gałąź",
+            "branch"
+          ]
+        },
+        {
+          "id": "programming-it.merge",
+          "term": "merge",
+          "ipa": "/mɝːdʒ/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "scalić",
+          "definition": "To combine changes from one branch of code into another.",
+          "register": "specjalistyczny",
+          "contextPl": "Łączenie pracy kilku osób",
+          "natural": "",
+          "forms": "merged; merging",
+          "collocations": "merge a branch; merge the changes",
+          "synonyms": "combine",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I merge my changes, or are you still reviewing them?",
+              "pl": "Mogę scalić swoje zmiany, czy jeszcze je przeglądasz?",
+              "focusEn": "merge",
+              "focusPl": "scalić"
+            },
+            {
+              "en": "We merged three branches this morning without any conflicts.",
+              "pl": "Dziś rano scaliliśmy trzy gałęzie bez żadnych konfliktów.",
+              "focusEn": "merged",
+              "focusPl": "scaliliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "merge"
+          ],
+          "acceptedTranslations": [
+            "scalić",
+            "scalać",
+            "zmergować",
+            "połączyć"
+          ]
+        },
+        {
+          "id": "programming-it.pull-request",
+          "term": "pull request",
+          "ipa": "/ˈpʊl rɪˌkwest/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "prośba o scalenie zmian",
+          "definition": "A request for other developers to review and merge your changes.",
+          "register": "specjalistyczny",
+          "contextPl": "Propozycja zmian do przejrzenia",
+          "natural": "PR",
+          "forms": "pull requests",
+          "collocations": "open a pull request; approve a pull request",
+          "synonyms": "PR; merge request",
+          "antonyms": "",
+          "notePl": "Często w skrócie PR.",
+          "examples": [
+            {
+              "en": "I opened a pull request for the new search feature.",
+              "pl": "Otworzyłem pull request z nową funkcją wyszukiwania.",
+              "focusEn": "pull request",
+              "focusPl": "pull request"
+            },
+            {
+              "en": "Your pull request needs one more approval.",
+              "pl": "Twój pull request potrzebuje jeszcze jednej akceptacji.",
+              "focusEn": "pull request",
+              "focusPl": "pull request"
+            }
+          ],
+          "acceptedAnswers": [
+            "pull request",
+            "PR",
+            "merge request"
+          ],
+          "acceptedTranslations": [
+            "prośba o scalenie zmian",
+            "pull request",
+            "PR"
+          ]
+        },
+        {
+          "id": "programming-it.documentation",
+          "term": "documentation",
+          "ipa": "/ˌdɑːkjəmenˈteɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dokumentacja",
+          "definition": "Written information that explains how code or software works.",
+          "register": "neutralny",
+          "contextPl": "Opis działania systemu",
+          "natural": "docs",
+          "forms": "",
+          "collocations": "write documentation; read the documentation; technical documentation",
+          "synonyms": "docs",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The documentation for this tool is two years out of date.",
+              "pl": "Dokumentacja tego narzędzia jest nieaktualna od dwóch lat.",
+              "focusEn": "documentation",
+              "focusPl": "Dokumentacja"
+            },
+            {
+              "en": "Please add documentation for the new delivery function.",
+              "pl": "Dodaj proszę dokumentację do nowej funkcji dostaw.",
+              "focusEn": "documentation",
+              "focusPl": "dokumentację"
+            }
+          ],
+          "acceptedAnswers": [
+            "documentation",
+            "docs"
+          ],
+          "acceptedTranslations": [
+            "dokumentacja",
+            "opis techniczny"
+          ]
+        },
+        {
+          "id": "programming-it.front-end",
+          "term": "front end",
+          "ipa": "/ˈfrʌnt ˌend/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "frontend",
+          "definition": "The part of an app or website that users see and use.",
+          "register": "specjalistyczny",
+          "contextPl": "Warstwa widoczna dla użytkownika",
+          "natural": "",
+          "forms": "",
+          "collocations": "work on the front end; front-end developer",
+          "synonyms": "",
+          "antonyms": "back end",
+          "notePl": "Przed rzeczownikiem z łącznikiem: „front-end developer”.",
+          "examples": [
+            {
+              "en": "I work on the front end, mostly buttons and screens.",
+              "pl": "Pracuję nad frontendem, głównie nad przyciskami i ekranami.",
+              "focusEn": "front end",
+              "focusPl": "frontendem"
+            },
+            {
+              "en": "The front end looks fine, so the problem is somewhere else.",
+              "pl": "Frontend wygląda dobrze, więc problem jest gdzie indziej.",
+              "focusEn": "front end",
+              "focusPl": "Frontend"
+            }
+          ],
+          "acceptedAnswers": [
+            "front end",
+            "frontend",
+            "front-end"
+          ],
+          "acceptedTranslations": [
+            "frontend",
+            "warstwa wizualna",
+            "interfejs"
+          ]
+        },
+        {
+          "id": "programming-it.back-end",
+          "term": "back end",
+          "ipa": "/ˈbæk ˌend/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "backend",
+          "definition": "The part of a system that runs on servers and users don't see.",
+          "register": "specjalistyczny",
+          "contextPl": "Warstwa serwerowa aplikacji",
+          "natural": "",
+          "forms": "",
+          "collocations": "work on the back end; back-end developer",
+          "synonyms": "",
+          "antonyms": "front end",
+          "notePl": "Przed rzeczownikiem z łącznikiem: „back-end developer”.",
+          "examples": [
+            {
+              "en": "The bug is in the back end, not in the app itself.",
+              "pl": "Błąd jest w backendzie, a nie w samej aplikacji.",
+              "focusEn": "back end",
+              "focusPl": "backendzie"
+            },
+            {
+              "en": "Our back end team sits on the other side of the office.",
+              "pl": "Nasz zespół od backendu siedzi po drugiej stronie biura.",
+              "focusEn": "back end",
+              "focusPl": "backendu"
+            }
+          ],
+          "acceptedAnswers": [
+            "back end",
+            "backend",
+            "back-end"
+          ],
+          "acceptedTranslations": [
+            "backend",
+            "zaplecze serwerowe",
+            "część serwerowa"
+          ]
+        },
+        {
+          "id": "programming-it.tech-stack",
+          "term": "tech stack",
+          "ipa": "/ˈtek ˌstæk/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "stos technologiczny",
+          "definition": "The set of technologies a team uses to build a product.",
+          "register": "specjalistyczny",
+          "contextPl": "Zestaw narzędzi w projekcie",
+          "natural": "stack",
+          "forms": "tech stacks",
+          "collocations": "our tech stack; choose a tech stack",
+          "synonyms": "stack",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "New developers need a week to learn our tech stack.",
+              "pl": "Nowi programiści potrzebują tygodnia, żeby poznać nasz stos technologiczny.",
+              "focusEn": "tech stack",
+              "focusPl": "stos technologiczny"
+            },
+            {
+              "en": "We're not changing the tech stack in the middle of a project.",
+              "pl": "Nie zmieniamy stosu technologicznego w środku projektu.",
+              "focusEn": "tech stack",
+              "focusPl": "stosu technologicznego"
+            }
+          ],
+          "acceptedAnswers": [
+            "tech stack",
+            "stack"
+          ],
+          "acceptedTranslations": [
+            "stos technologiczny",
+            "stack technologiczny",
+            "zestaw technologii"
+          ]
+        },
+        {
+          "id": "programming-it.pair-programming",
+          "term": "pair programming",
+          "ipa": "/ˌper ˈproʊɡræmɪŋ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "programowanie w parach",
+          "definition": "Two developers working together at one computer on the same code.",
+          "register": "specjalistyczny",
+          "contextPl": "Wspólne pisanie kodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "do pair programming",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We use pair programming when a new person joins the team.",
+              "pl": "Stosujemy programowanie w parach, kiedy do zespołu dołącza nowa osoba.",
+              "focusEn": "pair programming",
+              "focusPl": "programowanie w parach"
+            },
+            {
+              "en": "An hour of pair programming solved what I couldn't fix alone.",
+              "pl": "Godzina programowania w parach rozwiązała to, czego nie umiałem naprawić sam.",
+              "focusEn": "pair programming",
+              "focusPl": "programowania w parach"
+            }
+          ],
+          "acceptedAnswers": [
+            "pair programming",
+            "pairing"
+          ],
+          "acceptedTranslations": [
+            "programowanie w parach",
+            "praca w parach"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "programming-it.deployment",
+      "namePl": "Wdrożenie i serwery",
+      "scenePl": "Wieczór wydania nowej wersji: zespół wdraża aktualizację na serwery i obserwuje system",
+      "entries": [
+        {
+          "id": "programming-it.server",
+          "term": "server",
+          "ipa": "/ˈsɝːvər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "serwer",
+          "definition": "A powerful computer that stores data and runs services for other computers.",
+          "register": "neutralny",
+          "contextPl": "Infrastruktura aplikacji",
+          "natural": "",
+          "forms": "servers",
+          "collocations": "a web server; the server is down; restart the server",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The server slowed down when everyone ordered dinner at once.",
+              "pl": "Serwer zwolnił, kiedy wszyscy naraz zamówili kolację.",
+              "focusEn": "server",
+              "focusPl": "Serwer"
+            },
+            {
+              "en": "We added two more servers for the weekend rush.",
+              "pl": "Dodaliśmy dwa kolejne serwery na weekendowy szczyt.",
+              "focusEn": "servers",
+              "focusPl": "serwery"
+            }
+          ],
+          "acceptedAnswers": [
+            "server"
+          ],
+          "acceptedTranslations": [
+            "serwer"
+          ]
+        },
+        {
+          "id": "programming-it.database",
+          "term": "database",
+          "ipa": "/ˈdeɪtəbeɪs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "very_common",
+          "translation": "baza danych",
+          "definition": "An organized collection of data stored in a computer system.",
+          "register": "neutralny",
+          "contextPl": "Przechowywanie danych aplikacji",
+          "natural": "",
+          "forms": "databases",
+          "collocations": "a customer database; update the database; database server",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Every order is saved in the database within a second.",
+              "pl": "Każde zamówienie zapisuje się w bazie danych w ciągu sekundy.",
+              "focusEn": "database",
+              "focusPl": "bazie danych"
+            },
+            {
+              "en": "Back up the database before the update, just in case.",
+              "pl": "Zrób kopię zapasową bazy danych przed aktualizacją, na wszelki wypadek.",
+              "focusEn": "database",
+              "focusPl": "bazy danych"
+            }
+          ],
+          "acceptedAnswers": [
+            "database"
+          ],
+          "acceptedTranslations": [
+            "baza danych"
+          ]
+        },
+        {
+          "id": "programming-it.release",
+          "term": "release",
+          "ipa": "/rɪˈliːs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wydanie",
+          "definition": "A new version of software that is made available to users.",
+          "register": "neutralny",
+          "contextPl": "Nowa wersja programu",
+          "natural": "version",
+          "forms": "releases",
+          "collocations": "a new release; release date; release notes",
+          "synonyms": "version",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Tonight's release includes the new payment screen.",
+              "pl": "Dzisiejsze wydanie zawiera nowy ekran płatności.",
+              "focusEn": "release",
+              "focusPl": "wydanie"
+            },
+            {
+              "en": "We push a new release every two weeks.",
+              "pl": "Publikujemy nowe wydanie co dwa tygodnie.",
+              "focusEn": "release",
+              "focusPl": "wydanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "release",
+            "version"
+          ],
+          "acceptedTranslations": [
+            "wydanie",
+            "wersja",
+            "nowa wersja"
+          ]
+        },
+        {
+          "id": "programming-it.deploy",
+          "term": "deploy",
+          "ipa": "/dɪˈplɔɪ/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "wdrożyć",
+          "definition": "To put new software on servers so people can use it.",
+          "register": "specjalistyczny",
+          "contextPl": "Publikacja nowej wersji",
+          "natural": "ship; push",
+          "forms": "deployed; deploying",
+          "collocations": "deploy to production; deploy an update",
+          "synonyms": "ship; push",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „deployment” – wdrożenie.",
+          "examples": [
+            {
+              "en": "We'll deploy the update at eight, when traffic is low.",
+              "pl": "Wdrożymy aktualizację o dwudziestej, kiedy ruch jest mały.",
+              "focusEn": "deploy",
+              "focusPl": "Wdrożymy"
+            },
+            {
+              "en": "Never deploy on a Friday afternoon.",
+              "pl": "Nigdy nie wdrażaj w piątek po południu.",
+              "focusEn": "deploy",
+              "focusPl": "wdrażaj"
+            }
+          ],
+          "acceptedAnswers": [
+            "deploy",
+            "ship",
+            "push"
+          ],
+          "acceptedTranslations": [
+            "wdrożyć",
+            "wdrażać",
+            "zdeployować",
+            "opublikować"
+          ]
+        },
+        {
+          "id": "programming-it.production",
+          "term": "production",
+          "ipa": "/prəˈdʌkʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "środowisko produkcyjne",
+          "definition": "The live system that real customers use.",
+          "register": "specjalistyczny",
+          "contextPl": "Wersja używana przez klientów",
+          "natural": "prod",
+          "forms": "",
+          "collocations": "in production; push to production; a production bug",
+          "synonyms": "prod; live",
+          "antonyms": "",
+          "notePl": "Potocznie „prod”.",
+          "examples": [
+            {
+              "en": "The bug only appears in production, not on our test servers.",
+              "pl": "Błąd pojawia się tylko na produkcji, a nie na naszych serwerach testowych.",
+              "focusEn": "production",
+              "focusPl": "produkcji"
+            },
+            {
+              "en": "Don't test new ideas directly in production.",
+              "pl": "Nie testuj nowych pomysłów bezpośrednio na środowisku produkcyjnym.",
+              "focusEn": "production",
+              "focusPl": "środowisku produkcyjnym"
+            }
+          ],
+          "acceptedAnswers": [
+            "production",
+            "prod",
+            "live"
+          ],
+          "acceptedTranslations": [
+            "środowisko produkcyjne",
+            "produkcja",
+            "prod"
+          ]
+        },
+        {
+          "id": "programming-it.roll-back",
+          "term": "roll back",
+          "ipa": "/ˌroʊl ˈbæk/",
+          "pos": "czasownik frazowy",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "wycofać zmiany",
+          "definition": "To return software to an earlier version because the new one has problems.",
+          "register": "specjalistyczny",
+          "contextPl": "Powrót do poprzedniej wersji",
+          "natural": "revert",
+          "forms": "rolled back; rolling back",
+          "collocations": "roll back the update; roll back a release",
+          "synonyms": "revert",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „a rollback”.",
+          "examples": [
+            {
+              "en": "If error rates go up, we roll back immediately.",
+              "pl": "Jeśli liczba błędów wzrośnie, natychmiast wycofujemy zmiany.",
+              "focusEn": "roll back",
+              "focusPl": "wycofujemy zmiany"
+            },
+            {
+              "en": "We had to roll back the release after ten minutes.",
+              "pl": "Po dziesięciu minutach musieliśmy wycofać wydanie.",
+              "focusEn": "roll back",
+              "focusPl": "wycofać"
+            }
+          ],
+          "acceptedAnswers": [
+            "roll back",
+            "revert"
+          ],
+          "acceptedTranslations": [
+            "wycofać zmiany",
+            "wycofywać zmiany",
+            "przywrócić poprzednią wersję"
+          ]
+        },
+        {
+          "id": "programming-it.downtime",
+          "term": "downtime",
+          "ipa": "/ˈdaʊntaɪm/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "przestój",
+          "definition": "A time when a system is not working or not available.",
+          "register": "specjalistyczny",
+          "contextPl": "Niedostępność usługi",
+          "natural": "outage",
+          "forms": "",
+          "collocations": "planned downtime; minimize downtime; an hour of downtime",
+          "synonyms": "outage",
+          "antonyms": "uptime",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The update needs about ten minutes of downtime.",
+              "pl": "Aktualizacja wymaga około dziesięciu minut przestoju.",
+              "focusEn": "downtime",
+              "focusPl": "przestoju"
+            },
+            {
+              "en": "Every minute of downtime costs us lost orders.",
+              "pl": "Każda minuta przestoju kosztuje nas utracone zamówienia.",
+              "focusEn": "downtime",
+              "focusPl": "przestoju"
+            }
+          ],
+          "acceptedAnswers": [
+            "downtime",
+            "outage"
+          ],
+          "acceptedTranslations": [
+            "przestój",
+            "niedostępność",
+            "czas przestoju"
+          ]
+        },
+        {
+          "id": "programming-it.outage",
+          "term": "outage",
+          "ipa": "/ˈaʊtɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "awaria",
+          "definition": "A period when a service stops working completely.",
+          "register": "neutralny",
+          "contextPl": "Nagła niedostępność systemu",
+          "natural": "downtime",
+          "forms": "outages",
+          "collocations": "a major outage; a network outage; during the outage",
+          "synonyms": "downtime",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "During last night's outage, nobody could place an order.",
+              "pl": "Podczas wczorajszej awarii nikt nie mógł złożyć zamówienia.",
+              "focusEn": "outage",
+              "focusPl": "awarii"
+            },
+            {
+              "en": "The outage was caused by a full hard drive.",
+              "pl": "Awarię spowodował zapełniony dysk twardy.",
+              "focusEn": "outage",
+              "focusPl": "Awarię"
+            }
+          ],
+          "acceptedAnswers": [
+            "outage",
+            "downtime"
+          ],
+          "acceptedTranslations": [
+            "awaria",
+            "przerwa w działaniu",
+            "niedostępność"
+          ]
+        },
+        {
+          "id": "programming-it.backup",
+          "term": "backup",
+          "ipa": "/ˈbækʌp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kopia zapasowa",
+          "definition": "A copy of data that you keep in case the original is lost.",
+          "register": "neutralny",
+          "contextPl": "Ochrona danych przed utratą",
+          "natural": "",
+          "forms": "backups",
+          "collocations": "make a backup; restore from a backup; daily backup",
+          "synonyms": "copy",
+          "antonyms": "",
+          "notePl": "Czasownik: „back up” (osobno).",
+          "examples": [
+            {
+              "en": "We make a backup of everything before every release.",
+              "pl": "Przed każdym wydaniem robimy kopię zapasową wszystkiego.",
+              "focusEn": "backup",
+              "focusPl": "kopię zapasową"
+            },
+            {
+              "en": "Luckily, the backup from six o'clock was complete.",
+              "pl": "Na szczęście kopia zapasowa z szóstej była kompletna.",
+              "focusEn": "backup",
+              "focusPl": "kopia zapasowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "backup",
+            "copy"
+          ],
+          "acceptedTranslations": [
+            "kopia zapasowa",
+            "backup",
+            "kopia bezpieczeństwa"
+          ]
+        },
+        {
+          "id": "programming-it.on-call",
+          "term": "on call",
+          "ipa": "/ˌɑːn ˈkɔːl/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "na dyżurze",
+          "definition": "Ready to work if there is an emergency, even outside normal hours.",
+          "register": "neutralny",
+          "contextPl": "Dyżury w IT",
+          "natural": "",
+          "forms": "",
+          "collocations": "be on call; on-call engineer; on-call week",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm on call this week, so my phone stays next to my bed.",
+              "pl": "W tym tygodniu mam dyżur, więc telefon leży obok mojego łóżka.",
+              "focusEn": "on call",
+              "focusPl": "dyżur"
+            },
+            {
+              "en": "The developer on call fixed the server at three a.m.",
+              "pl": "Programista na dyżurze naprawił serwer o trzeciej nad ranem.",
+              "focusEn": "on call",
+              "focusPl": "na dyżurze"
+            }
+          ],
+          "acceptedAnswers": [
+            "on call",
+            "on-call"
+          ],
+          "acceptedTranslations": [
+            "na dyżurze",
+            "pod telefonem",
+            "w gotowości"
+          ]
+        },
+        {
+          "id": "programming-it.migrate",
+          "term": "migrate",
+          "ipa": "/ˈmaɪɡreɪt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "przenieść (system, dane)",
+          "definition": "To move data or software from one system to another.",
+          "register": "specjalistyczny",
+          "contextPl": "Przenoszenie danych",
+          "natural": "move",
+          "forms": "migrated; migrating",
+          "collocations": "migrate data; migrate to the cloud",
+          "synonyms": "move; transfer",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „migration” – migracja.",
+          "examples": [
+            {
+              "en": "We'll migrate the old customer data over the weekend.",
+              "pl": "W weekend przeniesiemy stare dane klientów.",
+              "focusEn": "migrate",
+              "focusPl": "przeniesiemy"
+            },
+            {
+              "en": "Since we migrated to new servers, the app is twice as fast.",
+              "pl": "Odkąd przenieśliśmy się na nowe serwery, aplikacja jest dwa razy szybsza.",
+              "focusEn": "migrated",
+              "focusPl": "przenieśliśmy się"
+            }
+          ],
+          "acceptedAnswers": [
+            "migrate",
+            "move"
+          ],
+          "acceptedTranslations": [
+            "przenieść (system, dane)",
+            "przenieść",
+            "przenosić",
+            "zmigrować",
+            "migrować"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "programming-it.it-careers",
+      "namePl": "Kariera w IT",
+      "scenePl": "Przy kawie rozmawiasz z doświadczonym programistą o tym, jak zacząć pracę w branży IT",
+      "entries": [
+        {
+          "id": "programming-it.tech-industry",
+          "term": "tech industry",
+          "ipa": "/ˈtek ˌɪndəstri/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "branża technologiczna",
+          "definition": "All the companies that make software, computers, and online services.",
+          "register": "neutralny",
+          "contextPl": "Sektor IT",
+          "natural": "tech",
+          "forms": "",
+          "collocations": "work in the tech industry; the tech industry is changing",
+          "synonyms": "tech",
+          "antonyms": "",
+          "notePl": "Potocznie po prostu „tech”: „She works in tech”.",
+          "examples": [
+            {
+              "en": "The tech industry changes so fast that you never stop learning.",
+              "pl": "Branża technologiczna zmienia się tak szybko, że nigdy nie przestaje się uczyć.",
+              "focusEn": "tech industry",
+              "focusPl": "Branża technologiczna"
+            },
+            {
+              "en": "I moved into the tech industry after ten years as a teacher.",
+              "pl": "Przeszłam do branży IT po dziesięciu latach pracy jako nauczycielka.",
+              "focusEn": "tech industry",
+              "focusPl": "branży IT"
+            }
+          ],
+          "acceptedAnswers": [
+            "tech industry",
+            "tech"
+          ],
+          "acceptedTranslations": [
+            "branża technologiczna",
+            "branża IT",
+            "sektor technologiczny"
+          ]
+        },
+        {
+          "id": "programming-it.software-engineer",
+          "term": "software engineer",
+          "ipa": "/ˈsɔːftwer ˌendʒɪˈnɪr/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "inżynier oprogramowania",
+          "definition": "A professional who designs and builds software.",
+          "register": "neutralny",
+          "contextPl": "Stanowisko w IT",
+          "natural": "developer",
+          "forms": "software engineers",
+          "collocations": "a senior software engineer; work as a software engineer",
+          "synonyms": "developer; programmer",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He's a software engineer at a company that makes banking apps.",
+              "pl": "Jest inżynierem oprogramowania w firmie, która tworzy aplikacje bankowe.",
+              "focusEn": "software engineer",
+              "focusPl": "inżynierem oprogramowania"
+            },
+            {
+              "en": "Becoming a software engineer took me about three years.",
+              "pl": "Zostanie inżynierem oprogramowania zajęło mi około trzech lat.",
+              "focusEn": "software engineer",
+              "focusPl": "inżynierem oprogramowania"
+            }
+          ],
+          "acceptedAnswers": [
+            "software engineer",
+            "developer"
+          ],
+          "acceptedTranslations": [
+            "inżynier oprogramowania",
+            "programista",
+            "inżynierka oprogramowania"
+          ]
+        },
+        {
+          "id": "programming-it.computer-science",
+          "term": "computer science",
+          "ipa": "/kəmˌpjuːtər ˈsaɪəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "informatyka",
+          "definition": "The study of computers and how they process information.",
+          "register": "neutralny",
+          "contextPl": "Kierunek studiów",
+          "natural": "CS",
+          "forms": "",
+          "collocations": "study computer science; a degree in computer science",
+          "synonyms": "CS",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You don't need a computer science degree to get your first job.",
+              "pl": "Nie potrzebujesz dyplomu z informatyki, żeby dostać pierwszą pracę.",
+              "focusEn": "computer science",
+              "focusPl": "informatyki"
+            },
+            {
+              "en": "He studied computer science but now works mostly as a manager.",
+              "pl": "Studiował informatykę, ale teraz pracuje głównie jako menedżer.",
+              "focusEn": "computer science",
+              "focusPl": "informatykę"
+            }
+          ],
+          "acceptedAnswers": [
+            "computer science",
+            "CS"
+          ],
+          "acceptedTranslations": [
+            "informatyka",
+            "nauki komputerowe"
+          ]
+        },
+        {
+          "id": "programming-it.learn-to-code",
+          "term": "learn to code",
+          "ipa": "/ˌlɝːn tə ˈkoʊd/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nauczyć się programować",
+          "definition": "To learn how to write computer programs.",
+          "register": "neutralny",
+          "contextPl": "Pierwsze kroki w programowaniu",
+          "natural": "",
+          "forms": "learned; learning",
+          "collocations": "learn to code online; learn to code for free",
+          "synonyms": "learn programming",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I want to learn to code, but I don't know where to start.",
+              "pl": "Chcę nauczyć się programować, ale nie wiem, od czego zacząć.",
+              "focusEn": "learn to code",
+              "focusPl": "nauczyć się programować"
+            },
+            {
+              "en": "You can learn to code for free if you're patient.",
+              "pl": "Można nauczyć się programować za darmo, jeśli jest się cierpliwym.",
+              "focusEn": "learn to code",
+              "focusPl": "nauczyć się programować"
+            }
+          ],
+          "acceptedAnswers": [
+            "learn to code",
+            "learn programming"
+          ],
+          "acceptedTranslations": [
+            "nauczyć się programować",
+            "uczyć się programowania",
+            "nauczyć się kodować"
+          ]
+        },
+        {
+          "id": "programming-it.self-taught",
+          "term": "self-taught",
+          "ipa": "/ˌself ˈtɔːt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "samouk",
+          "definition": "Having learned a skill by yourself, without formal lessons.",
+          "register": "neutralny",
+          "contextPl": "Nauka na własną rękę",
+          "natural": "",
+          "forms": "",
+          "collocations": "a self-taught programmer; completely self-taught",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He's a self-taught developer who never went to college.",
+              "pl": "Jest programistą samoukiem, który nigdy nie poszedł na studia.",
+              "focusEn": "self-taught",
+              "focusPl": "samoukiem"
+            },
+            {
+              "en": "Half of my team is self-taught.",
+              "pl": "Połowa mojego zespołu to samouki.",
+              "focusEn": "self-taught",
+              "focusPl": "samouki"
+            }
+          ],
+          "acceptedAnswers": [
+            "self-taught"
+          ],
+          "acceptedTranslations": [
+            "samouk",
+            "samouczek",
+            "nauczony samodzielnie"
+          ]
+        },
+        {
+          "id": "programming-it.coding-bootcamp",
+          "term": "coding bootcamp",
+          "ipa": "/ˈkoʊdɪŋ ˌbuːtkæmp/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "intensywny kurs programowania",
+          "definition": "A short, intense course that teaches people programming for a job.",
+          "register": "neutralny",
+          "contextPl": "Szybkie przebranżowienie",
+          "natural": "bootcamp",
+          "forms": "coding bootcamps",
+          "collocations": "go to a coding bootcamp; finish a bootcamp",
+          "synonyms": "bootcamp",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A three-month coding bootcamp costs about fifteen thousand dollars.",
+              "pl": "Trzymiesięczny intensywny kurs programowania kosztuje około piętnastu tysięcy dolarów.",
+              "focusEn": "coding bootcamp",
+              "focusPl": "intensywny kurs programowania"
+            },
+            {
+              "en": "She got her first job right after a coding bootcamp.",
+              "pl": "Pierwszą pracę dostała zaraz po bootcampie programistycznym.",
+              "focusEn": "coding bootcamp",
+              "focusPl": "bootcampie programistycznym"
+            }
+          ],
+          "acceptedAnswers": [
+            "coding bootcamp",
+            "bootcamp"
+          ],
+          "acceptedTranslations": [
+            "intensywny kurs programowania",
+            "bootcamp programistyczny",
+            "bootcamp"
+          ]
+        },
+        {
+          "id": "programming-it.junior-developer",
+          "term": "junior developer",
+          "ipa": "/ˌdʒuːnjər dɪˈveləpər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "młodszy programista",
+          "definition": "A developer at the start of their career with little experience.",
+          "register": "neutralny",
+          "contextPl": "Początek kariery w IT",
+          "natural": "junior",
+          "forms": "junior developers",
+          "collocations": "hire a junior developer; work as a junior developer",
+          "synonyms": "junior",
+          "antonyms": "senior developer",
+          "notePl": "Potocznie „junior”.",
+          "examples": [
+            {
+              "en": "Every junior developer needs someone patient to ask questions.",
+              "pl": "Każdy młodszy programista potrzebuje kogoś cierpliwego, kogo może pytać.",
+              "focusEn": "junior developer",
+              "focusPl": "młodszy programista"
+            },
+            {
+              "en": "As a junior developer, I broke the website twice in my first month.",
+              "pl": "Jako junior w pierwszym miesiącu dwa razy zepsułem stronę.",
+              "focusEn": "junior developer",
+              "focusPl": "junior"
+            }
+          ],
+          "acceptedAnswers": [
+            "junior developer",
+            "junior"
+          ],
+          "acceptedTranslations": [
+            "młodszy programista",
+            "junior",
+            "programista junior"
+          ]
+        },
+        {
+          "id": "programming-it.side-project",
+          "term": "side project",
+          "ipa": "/ˈsaɪd ˌprɑːdʒekt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "projekt poboczny",
+          "definition": "A project you work on in your free time, separate from your main job.",
+          "register": "neutralny",
+          "contextPl": "Budowanie portfolio",
+          "natural": "",
+          "forms": "side projects",
+          "collocations": "work on a side project; a fun side project",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My recipe app started as a side project on weekends.",
+              "pl": "Moja aplikacja z przepisami zaczęła się jako projekt poboczny w weekendy.",
+              "focusEn": "side project",
+              "focusPl": "projekt poboczny"
+            },
+            {
+              "en": "Recruiters love to see a side project on your profile.",
+              "pl": "Rekruterzy uwielbiają widzieć projekt własny w twoim profilu.",
+              "focusEn": "side project",
+              "focusPl": "projekt własny"
+            }
+          ],
+          "acceptedAnswers": [
+            "side project"
+          ],
+          "acceptedTranslations": [
+            "projekt poboczny",
+            "projekt po godzinach",
+            "projekt własny"
+          ]
+        },
+        {
+          "id": "programming-it.it-support",
+          "term": "IT support",
+          "ipa": "/ˌaɪ ˈtiː səˌpɔːrt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wsparcie IT",
+          "definition": "Help with computer problems, or the team that gives this help in a company.",
+          "register": "neutralny",
+          "contextPl": "Pomoc techniczna w firmie",
+          "natural": "tech support",
+          "forms": "",
+          "collocations": "call IT support; work in IT support",
+          "synonyms": "help desk; tech support",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I started in IT support, fixing printers and resetting passwords.",
+              "pl": "Zaczynałem w dziale IT, naprawiając drukarki i resetując hasła.",
+              "focusEn": "IT support",
+              "focusPl": "dziale IT"
+            },
+            {
+              "en": "Working in IT support taught me how to talk to frustrated people.",
+              "pl": "Praca we wsparciu IT nauczyła mnie rozmawiać z sfrustrowanymi ludźmi.",
+              "focusEn": "IT support",
+              "focusPl": "wsparciu IT"
+            }
+          ],
+          "acceptedAnswers": [
+            "IT support",
+            "IT helpdesk"
+          ],
+          "acceptedTranslations": [
+            "wsparcie IT",
+            "dział IT",
+            "pomoc techniczna"
+          ]
+        },
+        {
+          "id": "programming-it.tech-savvy",
+          "term": "tech-savvy",
+          "ipa": "/ˌtek ˈsævi/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "obeznany z technologią",
+          "definition": "Good at understanding and using modern technology.",
+          "register": "potoczny",
+          "contextPl": "Umiejętności technologiczne",
+          "natural": "",
+          "forms": "",
+          "collocations": "very tech-savvy; tech-savvy users",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You don't have to be very tech-savvy to start learning.",
+              "pl": "Nie musisz być bardzo obeznany z technologią, żeby zacząć się uczyć.",
+              "focusEn": "tech-savvy",
+              "focusPl": "obeznany z technologią"
+            },
+            {
+              "en": "My mom is more tech-savvy than most of my coworkers.",
+              "pl": "Moja mama jest bardziej obeznana z technologią niż większość moich współpracowników.",
+              "focusEn": "tech-savvy",
+              "focusPl": "obeznana z technologią"
+            }
+          ],
+          "acceptedAnswers": [
+            "tech-savvy",
+            "tech savvy"
+          ],
+          "acceptedTranslations": [
+            "obeznany z technologią",
+            "biegły w technologii",
+            "technicznie obeznany"
+          ]
+        },
+        {
+          "id": "programming-it.data-analyst",
+          "term": "data analyst",
+          "ipa": "/ˈdeɪtə ˌænəlɪst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "analityk danych",
+          "definition": "A person whose job is to study data and find useful information in it.",
+          "register": "neutralny",
+          "contextPl": "Zawody związane z danymi",
+          "natural": "",
+          "forms": "data analysts",
+          "collocations": "work as a data analyst",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you like numbers more than code, try being a data analyst.",
+              "pl": "Jeśli wolisz liczby od kodu, spróbuj być analitykiem danych.",
+              "focusEn": "data analyst",
+              "focusPl": "analitykiem danych"
+            },
+            {
+              "en": "She switched from marketing to working as a data analyst.",
+              "pl": "Przeszła z marketingu do pracy jako analityczka danych.",
+              "focusEn": "data analyst",
+              "focusPl": "analityczka danych"
+            }
+          ],
+          "acceptedAnswers": [
+            "data analyst"
+          ],
+          "acceptedTranslations": [
+            "analityk danych",
+            "analityczka danych"
+          ]
+        },
+        {
+          "id": "programming-it.ux-designer",
+          "term": "UX designer",
+          "ipa": "/ˌjuː ˈeks dɪˌzaɪnər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "projektant UX",
+          "definition": "A person who designs how an app or website feels and works for users.",
+          "register": "specjalistyczny",
+          "contextPl": "Projektowanie doświadczeń użytkownika",
+          "natural": "",
+          "forms": "UX designers",
+          "collocations": "work with a UX designer",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "UX oznacza „user experience” – doświadczenie użytkownika.",
+          "examples": [
+            {
+              "en": "Our UX designer tests every screen with real users.",
+              "pl": "Nasza projektantka UX testuje każdy ekran z prawdziwymi użytkownikami.",
+              "focusEn": "UX designer",
+              "focusPl": "projektantka UX"
+            },
+            {
+              "en": "A good UX designer can save developers weeks of work.",
+              "pl": "Dobry projektant UX potrafi oszczędzić programistom tygodnie pracy.",
+              "focusEn": "UX designer",
+              "focusPl": "projektant UX"
+            }
+          ],
+          "acceptedAnswers": [
+            "UX designer",
+            "user experience designer"
+          ],
+          "acceptedTranslations": [
+            "projektant UX",
+            "projektantka UX",
+            "UX designer"
+          ]
+        }
+      ]
+    }
+  ]
+}

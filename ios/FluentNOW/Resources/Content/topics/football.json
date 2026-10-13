@@ -1,0 +1,3174 @@
+{
+  "schemaVersion": 1,
+  "id": "football",
+  "namePl": "Piłka nożna",
+  "nameEn": "Soccer",
+  "group": "leisure",
+  "symbol": "soccerball",
+  "summaryPl": "Mecz i wynik, zawodnicy i pozycje, zagrania, zasady i sędzia, kibice na stadionie oraz trening; w amerykańskim angielskim piłka nożna to „soccer”.",
+  "aliases": [
+    "piłka nożna",
+    "futbol",
+    "mecz",
+    "piłka",
+    "kibic",
+    "drużyna",
+    "gol",
+    "soccer",
+    "football",
+    "match"
+  ],
+  "categories": [
+    {
+      "id": "football.match",
+      "namePl": "Mecz i wynik",
+      "scenePl": "Oglądanie ważnego meczu ze znajomymi w sportowym barze, od pierwszego gwizdka do rzutów karnych",
+      "entries": [
+        {
+          "id": "football.soccer",
+          "term": "soccer",
+          "ipa": "/ˈsɑːkər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "piłka nożna",
+          "definition": "A game in which two teams of eleven players try to kick a ball into the other team's goal.",
+          "register": "neutralny",
+          "contextPl": "Sport",
+          "natural": "",
+          "forms": "",
+          "collocations": "play soccer; a soccer game; a soccer fan",
+          "synonyms": "football",
+          "antonyms": "",
+          "notePl": "W USA „football” to futbol amerykański; piłka nożna to „soccer”.",
+          "examples": [
+            {
+              "en": "More and more people here watch soccer on Saturday mornings.",
+              "pl": "Coraz więcej ludzi tutaj ogląda piłkę nożną w sobotnie poranki.",
+              "focusEn": "soccer",
+              "focusPl": "piłkę nożną"
+            },
+            {
+              "en": "The bar was full of soccer fans wearing their team's colors.",
+              "pl": "Bar był pełen fanów piłki nożnej w barwach swojej drużyny.",
+              "focusEn": "soccer",
+              "focusPl": "piłki nożnej"
+            }
+          ],
+          "acceptedAnswers": [
+            "soccer",
+            "football"
+          ],
+          "acceptedTranslations": [
+            "piłka nożna",
+            "futbol",
+            "piłka"
+          ]
+        },
+        {
+          "id": "football.game",
+          "term": "game",
+          "ipa": "/ɡeɪm/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "mecz",
+          "definition": "One soccer competition between two teams.",
+          "register": "neutralny",
+          "contextPl": "Mecz",
+          "natural": "match",
+          "forms": "games",
+          "collocations": "watch the game; a big game; win the game",
+          "synonyms": "match",
+          "antonyms": "",
+          "notePl": "W AmE częściej „game”, „match” brzmi bardziej europejsko.",
+          "examples": [
+            {
+              "en": "The game starts at three, so let's get there early for a table.",
+              "pl": "Mecz zaczyna się o trzeciej, więc chodźmy wcześniej, żeby zająć stolik.",
+              "focusEn": "game",
+              "focusPl": "Mecz"
+            },
+            {
+              "en": "That was the best game I've seen all season.",
+              "pl": "To był najlepszy mecz, jaki widziałem w tym sezonie.",
+              "focusEn": "game",
+              "focusPl": "mecz"
+            }
+          ],
+          "acceptedAnswers": [
+            "game",
+            "match"
+          ],
+          "acceptedTranslations": [
+            "mecz",
+            "spotkanie"
+          ]
+        },
+        {
+          "id": "football.goal",
+          "term": "goal",
+          "ipa": "/ɡoʊl/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "gol",
+          "definition": "A point scored when the ball goes into the net.",
+          "register": "neutralny",
+          "contextPl": "Wynik",
+          "natural": "",
+          "forms": "goals",
+          "collocations": "score a goal; an amazing goal; an own goal",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też: bramka (miejsce).",
+          "examples": [
+            {
+              "en": "What a goal! He kicked it from the middle of the field!",
+              "pl": "Co za gol! Kopnął z połowy boiska!",
+              "focusEn": "goal",
+              "focusPl": "gol"
+            },
+            {
+              "en": "They scored two goals in the last ten minutes.",
+              "pl": "Strzelili dwa gole w ostatnich dziesięciu minutach.",
+              "focusEn": "goals",
+              "focusPl": "gole"
+            }
+          ],
+          "acceptedAnswers": [
+            "goal"
+          ],
+          "acceptedTranslations": [
+            "gol",
+            "bramka"
+          ]
+        },
+        {
+          "id": "football.score",
+          "term": "score",
+          "ipa": "/skɔːr/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "strzelić gola",
+          "definition": "To get a goal or point.",
+          "register": "neutralny",
+          "contextPl": "Wynik",
+          "natural": "",
+          "forms": "scored; scoring",
+          "collocations": "score a goal; score first; score twice",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik „the score” = wynik.",
+          "examples": [
+            {
+              "en": "If they don't score soon, they're out of the tournament.",
+              "pl": "Jeśli zaraz nie strzelą gola, odpadną z turnieju.",
+              "focusEn": "score",
+              "focusPl": "strzelą gola"
+            },
+            {
+              "en": "Our best player scored in the first five minutes.",
+              "pl": "Nasz najlepszy zawodnik strzelił gola w pierwszych pięciu minutach.",
+              "focusEn": "scored",
+              "focusPl": "strzelił gola"
+            }
+          ],
+          "acceptedAnswers": [
+            "score"
+          ],
+          "acceptedTranslations": [
+            "strzelić gola",
+            "strzelać gole",
+            "zdobyć bramkę"
+          ]
+        },
+        {
+          "id": "football.score-2",
+          "term": "score",
+          "ipa": "/skɔːr/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wynik",
+          "definition": "The number of goals each team has.",
+          "register": "neutralny",
+          "contextPl": "Wynik",
+          "natural": "",
+          "forms": "scores",
+          "collocations": "the final score; what's the score; keep score",
+          "synonyms": "result",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What's the score? I just got here.",
+              "pl": "Jaki jest wynik? Dopiero przyszedłem.",
+              "focusEn": "score",
+              "focusPl": "wynik"
+            },
+            {
+              "en": "The final score was 3–2, and the whole bar went crazy.",
+              "pl": "Końcowy wynik to 3:2 i cały bar oszalał.",
+              "focusEn": "score",
+              "focusPl": "wynik"
+            }
+          ],
+          "acceptedAnswers": [
+            "score",
+            "result"
+          ],
+          "acceptedTranslations": [
+            "wynik",
+            "rezultat"
+          ]
+        },
+        {
+          "id": "football.win",
+          "term": "win",
+          "ipa": "/wɪn/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "wygrać",
+          "definition": "To be the team with more goals at the end.",
+          "register": "neutralny",
+          "contextPl": "Wynik",
+          "natural": "",
+          "forms": "won; winning",
+          "collocations": "win the game; win the cup; win 2–0",
+          "synonyms": "beat",
+          "antonyms": "lose",
+          "notePl": "win – won – won",
+          "examples": [
+            {
+              "en": "We need to win this game to stay at the top of the league.",
+              "pl": "Musimy wygrać ten mecz, żeby zostać na szczycie ligi.",
+              "focusEn": "win",
+              "focusPl": "wygrać"
+            },
+            {
+              "en": "They won the cup for the first time in thirty years.",
+              "pl": "Wygrali puchar pierwszy raz od trzydziestu lat.",
+              "focusEn": "won",
+              "focusPl": "Wygrali"
+            }
+          ],
+          "acceptedAnswers": [
+            "win"
+          ],
+          "acceptedTranslations": [
+            "wygrać",
+            "wygrywać",
+            "zwyciężyć"
+          ]
+        },
+        {
+          "id": "football.lose",
+          "term": "lose",
+          "ipa": "/luːz/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "przegrać",
+          "definition": "To have fewer goals than the other team at the end.",
+          "register": "neutralny",
+          "contextPl": "Wynik",
+          "natural": "",
+          "forms": "lost; losing",
+          "collocations": "lose a game; lose 1–0",
+          "synonyms": "",
+          "antonyms": "win",
+          "notePl": "lose – lost – lost",
+          "examples": [
+            {
+              "en": "I can't believe we lost to the worst team in the league.",
+              "pl": "Nie mogę uwierzyć, że przegraliśmy z najsłabszą drużyną w lidze.",
+              "focusEn": "lost",
+              "focusPl": "przegraliśmy"
+            },
+            {
+              "en": "If they lose tonight, the coach will probably get fired.",
+              "pl": "Jeśli dziś przegrają, trener pewnie zostanie zwolniony.",
+              "focusEn": "lose",
+              "focusPl": "przegrają"
+            }
+          ],
+          "acceptedAnswers": [
+            "lose"
+          ],
+          "acceptedTranslations": [
+            "przegrać",
+            "przegrywać"
+          ]
+        },
+        {
+          "id": "football.tie",
+          "term": "tie",
+          "ipa": "/taɪ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "remis",
+          "definition": "A result where both teams have the same score.",
+          "register": "neutralny",
+          "contextPl": "Wynik",
+          "natural": "draw",
+          "forms": "ties",
+          "collocations": "end in a tie; a 1–1 tie",
+          "synonyms": "draw",
+          "antonyms": "",
+          "notePl": "W AmE „tie”, w BrE „draw”.",
+          "examples": [
+            {
+              "en": "The game ended in a tie, so nobody was happy.",
+              "pl": "Mecz zakończył się remisem, więc nikt nie był zadowolony.",
+              "focusEn": "tie",
+              "focusPl": "remisem"
+            },
+            {
+              "en": "A tie is not enough; they need three points tonight.",
+              "pl": "Remis nie wystarczy; dziś potrzebują trzech punktów.",
+              "focusEn": "tie",
+              "focusPl": "Remis"
+            }
+          ],
+          "acceptedAnswers": [
+            "tie",
+            "draw"
+          ],
+          "acceptedTranslations": [
+            "remis"
+          ]
+        },
+        {
+          "id": "football.halftime",
+          "term": "halftime",
+          "ipa": "/ˈhæfˌtaɪm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przerwa",
+          "definition": "The break between the two halves of a game.",
+          "register": "neutralny",
+          "contextPl": "Przebieg meczu",
+          "natural": "",
+          "forms": "",
+          "collocations": "at halftime; the halftime score",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's order more wings at halftime.",
+              "pl": "W przerwie zamówmy jeszcze skrzydełka.",
+              "focusEn": "halftime",
+              "focusPl": "przerwie"
+            },
+            {
+              "en": "At halftime it was 0–0, and everyone was a little bored.",
+              "pl": "Do przerwy było 0:0 i wszyscy byli trochę znudzeni.",
+              "focusEn": "halftime",
+              "focusPl": "przerwy"
+            }
+          ],
+          "acceptedAnswers": [
+            "halftime",
+            "half-time"
+          ],
+          "acceptedTranslations": [
+            "przerwa",
+            "przerwa w meczu"
+          ]
+        },
+        {
+          "id": "football.first-half",
+          "term": "first half",
+          "ipa": "/ˌfɜːrst ˈhæf/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pierwsza połowa",
+          "definition": "The first 45 minutes of a soccer game.",
+          "register": "neutralny",
+          "contextPl": "Przebieg meczu",
+          "natural": "",
+          "forms": "",
+          "collocations": "in the first half; the second half",
+          "synonyms": "",
+          "antonyms": "second half",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They played much better in the first half.",
+              "pl": "W pierwszej połowie grali dużo lepiej.",
+              "focusEn": "first half",
+              "focusPl": "pierwszej połowie"
+            },
+            {
+              "en": "I missed the whole first half because of traffic.",
+              "pl": "Przez korki przegapiłem całą pierwszą połowę.",
+              "focusEn": "first half",
+              "focusPl": "pierwszą połowę"
+            }
+          ],
+          "acceptedAnswers": [
+            "first half",
+            "second half"
+          ],
+          "acceptedTranslations": [
+            "pierwsza połowa",
+            "druga połowa"
+          ]
+        },
+        {
+          "id": "football.lead",
+          "term": "lead",
+          "ipa": "/liːd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "prowadzenie",
+          "definition": "The position of being ahead in a game.",
+          "register": "neutralny",
+          "contextPl": "Przebieg meczu",
+          "natural": "",
+          "forms": "",
+          "collocations": "take the lead; a two-goal lead; lose the lead",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We took the lead right before halftime!",
+              "pl": "Objęliśmy prowadzenie tuż przed przerwą!",
+              "focusEn": "lead",
+              "focusPl": "prowadzenie"
+            },
+            {
+              "en": "They threw away a three-goal lead in twenty minutes.",
+              "pl": "W dwadzieścia minut roztrwonili trzybramkowe prowadzenie.",
+              "focusEn": "lead",
+              "focusPl": "prowadzenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "lead"
+          ],
+          "acceptedTranslations": [
+            "prowadzenie"
+          ]
+        },
+        {
+          "id": "football.overtime",
+          "term": "overtime",
+          "ipa": "/ˈoʊvərˌtaɪm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dogrywka",
+          "definition": "Extra time played when the score is tied at the end.",
+          "register": "neutralny",
+          "contextPl": "Przebieg meczu",
+          "natural": "extra time",
+          "forms": "",
+          "collocations": "go to overtime; score in overtime",
+          "synonyms": "extra time",
+          "antonyms": "",
+          "notePl": "W BrE „extra time”.",
+          "examples": [
+            {
+              "en": "If it's still a tie, the game goes to overtime.",
+              "pl": "Jeśli nadal będzie remis, mecz pójdzie do dogrywki.",
+              "focusEn": "overtime",
+              "focusPl": "dogrywki"
+            },
+            {
+              "en": "They scored the winning goal in the last minute of overtime.",
+              "pl": "Strzelili zwycięskiego gola w ostatniej minucie dogrywki.",
+              "focusEn": "overtime",
+              "focusPl": "dogrywki"
+            }
+          ],
+          "acceptedAnswers": [
+            "overtime",
+            "extra time"
+          ],
+          "acceptedTranslations": [
+            "dogrywka"
+          ]
+        },
+        {
+          "id": "football.penalty-shootout",
+          "term": "penalty shootout",
+          "ipa": "/ˈpɛnəlti ˈʃuːtaʊt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rzuty karne",
+          "definition": "A way to decide a tied game where players take turns kicking at the goal.",
+          "register": "neutralny",
+          "contextPl": "Rozstrzygnięcie",
+          "natural": "shootout",
+          "forms": "penalty shootouts",
+          "collocations": "win on a penalty shootout; go to a penalty shootout",
+          "synonyms": "shootout",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I can't watch a penalty shootout; I'm too nervous.",
+              "pl": "Nie mogę oglądać rzutów karnych; za bardzo się denerwuję.",
+              "focusEn": "penalty shootout",
+              "focusPl": "rzutów karnych"
+            },
+            {
+              "en": "Our goalie saved two shots in the penalty shootout.",
+              "pl": "Nasz bramkarz obronił dwa strzały w serii rzutów karnych.",
+              "focusEn": "penalty shootout",
+              "focusPl": "serii rzutów karnych"
+            }
+          ],
+          "acceptedAnswers": [
+            "penalty shootout",
+            "shootout",
+            "penalties"
+          ],
+          "acceptedTranslations": [
+            "rzuty karne",
+            "seria rzutów karnych",
+            "konkurs rzutów karnych"
+          ]
+        },
+        {
+          "id": "football.comeback",
+          "term": "comeback",
+          "ipa": "/ˈkʌmbæk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "powrót do gry",
+          "definition": "A return to winning after losing for most of a game.",
+          "register": "neutralny",
+          "contextPl": "Przebieg meczu",
+          "natural": "",
+          "forms": "comebacks",
+          "collocations": "make a comeback; an amazing comeback",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What a comeback! They were down 2–0 and won 3–2.",
+              "pl": "Co za powrót! Przegrywali 0:2 i wygrali 3:2.",
+              "focusEn": "comeback",
+              "focusPl": "powrót"
+            },
+            {
+              "en": "Nobody in the bar expected a comeback after the second goal.",
+              "pl": "Nikt w barze nie spodziewał się powrotu do gry po drugim golu.",
+              "focusEn": "comeback",
+              "focusPl": "powrotu do gry"
+            }
+          ],
+          "acceptedAnswers": [
+            "comeback"
+          ],
+          "acceptedTranslations": [
+            "powrót do gry",
+            "powrót",
+            "odrobienie strat",
+            "odwrócenie losów meczu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "football.players",
+      "namePl": "Zawodnicy i drużyna",
+      "scenePl": "Trener lokalnej drużyny amatorskiej ogłasza skład przed niedzielnym meczem w szatni",
+      "entries": [
+        {
+          "id": "football.team",
+          "term": "team",
+          "ipa": "/tiːm/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "drużyna",
+          "definition": "A group of players who play together.",
+          "register": "neutralny",
+          "contextPl": "Drużyna",
+          "natural": "",
+          "forms": "teams",
+          "collocations": "a soccer team; the home team; join a team",
+          "synonyms": "club; squad",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our team has lost three games in a row, so today is important.",
+              "pl": "Nasza drużyna przegrała trzy mecze z rzędu, więc dzisiejszy jest ważny.",
+              "focusEn": "team",
+              "focusPl": "drużyna"
+            },
+            {
+              "en": "The other team is younger and faster, so stay organized.",
+              "pl": "Druga drużyna jest młodsza i szybsza, więc trzymajcie ustawienie.",
+              "focusEn": "team",
+              "focusPl": "drużyna"
+            }
+          ],
+          "acceptedAnswers": [
+            "team",
+            "squad",
+            "club"
+          ],
+          "acceptedTranslations": [
+            "drużyna",
+            "zespół"
+          ]
+        },
+        {
+          "id": "football.player",
+          "term": "player",
+          "ipa": "/ˈpleɪər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "zawodnik",
+          "definition": "A person who plays on a team.",
+          "register": "neutralny",
+          "contextPl": "Drużyna",
+          "natural": "",
+          "forms": "players",
+          "collocations": "a soccer player; the best player; a key player",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We only have ten players today because Mike is sick.",
+              "pl": "Mamy dziś tylko dziesięciu zawodników, bo Mike jest chory.",
+              "focusEn": "players",
+              "focusPl": "zawodników"
+            },
+            {
+              "en": "Every player needs to run back and help on defense.",
+              "pl": "Każdy zawodnik musi wracać i pomagać w obronie.",
+              "focusEn": "player",
+              "focusPl": "zawodnik"
+            }
+          ],
+          "acceptedAnswers": [
+            "player"
+          ],
+          "acceptedTranslations": [
+            "zawodnik",
+            "piłkarz",
+            "gracz"
+          ]
+        },
+        {
+          "id": "football.coach",
+          "term": "coach",
+          "ipa": "/koʊtʃ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "trener",
+          "definition": "The person who trains a team and decides how it plays.",
+          "register": "neutralny",
+          "contextPl": "Sztab",
+          "natural": "manager",
+          "forms": "coaches",
+          "collocations": "the head coach; an assistant coach",
+          "synonyms": "manager",
+          "antonyms": "",
+          "notePl": "W piłce europejskiej też „manager”.",
+          "examples": [
+            {
+              "en": "The coach drew the plan on the whiteboard in the locker room.",
+              "pl": "Trener narysował plan na tablicy w szatni.",
+              "focusEn": "coach",
+              "focusPl": "Trener"
+            },
+            {
+              "en": "Listen to the coach; he's watched their last three games.",
+              "pl": "Słuchajcie trenera; oglądał ich ostatnie trzy mecze.",
+              "focusEn": "coach",
+              "focusPl": "trenera"
+            }
+          ],
+          "acceptedAnswers": [
+            "coach",
+            "manager"
+          ],
+          "acceptedTranslations": [
+            "trener",
+            "szkoleniowiec"
+          ]
+        },
+        {
+          "id": "football.goalkeeper",
+          "term": "goalkeeper",
+          "ipa": "/ˈɡoʊlˌkiːpər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bramkarz",
+          "definition": "The player who stands in the goal and tries to stop the ball.",
+          "register": "neutralny",
+          "contextPl": "Pozycje",
+          "natural": "goalie",
+          "forms": "goalkeepers",
+          "collocations": "a great goalkeeper; the goalkeeper saved it",
+          "synonyms": "goalie; keeper",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our goalkeeper is the only one allowed to use his hands.",
+              "pl": "Nasz bramkarz jako jedyny może używać rąk.",
+              "focusEn": "goalkeeper",
+              "focusPl": "bramkarz"
+            },
+            {
+              "en": "The goalkeeper hurt his finger in warm-ups, so we need a backup.",
+              "pl": "Bramkarz uszkodził palec na rozgrzewce, więc potrzebujemy zmiennika.",
+              "focusEn": "goalkeeper",
+              "focusPl": "Bramkarz"
+            }
+          ],
+          "acceptedAnswers": [
+            "goalkeeper",
+            "goalie",
+            "keeper"
+          ],
+          "acceptedTranslations": [
+            "bramkarz",
+            "golkiper"
+          ]
+        },
+        {
+          "id": "football.goalie",
+          "term": "goalie",
+          "ipa": "/ˈɡoʊli/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bramkarz",
+          "definition": "An informal word for a goalkeeper.",
+          "register": "potoczny",
+          "contextPl": "Pozycje",
+          "natural": "goalkeeper",
+          "forms": "goalies",
+          "collocations": "a backup goalie",
+          "synonyms": "goalkeeper; keeper",
+          "antonyms": "",
+          "notePl": "Potoczne, bardzo częste w AmE.",
+          "examples": [
+            {
+              "en": "Who wants to be goalie today? Nobody? Okay, Sam it is.",
+              "pl": "Kto chce być dziś bramkarzem? Nikt? Dobra, to Sam.",
+              "focusEn": "goalie",
+              "focusPl": "bramkarzem"
+            },
+            {
+              "en": "Their goalie is really tall, so shoot low.",
+              "pl": "Ich bramkarz jest naprawdę wysoki, więc strzelajcie nisko.",
+              "focusEn": "goalie",
+              "focusPl": "bramkarz"
+            }
+          ],
+          "acceptedAnswers": [
+            "goalie",
+            "goalkeeper"
+          ],
+          "acceptedTranslations": [
+            "bramkarz"
+          ]
+        },
+        {
+          "id": "football.defender",
+          "term": "defender",
+          "ipa": "/dɪˈfɛndər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "obrońca",
+          "definition": "A player whose main job is to stop the other team from scoring.",
+          "register": "neutralny",
+          "contextPl": "Pozycje",
+          "natural": "",
+          "forms": "defenders",
+          "collocations": "a center defender; a strong defender",
+          "synonyms": "",
+          "antonyms": "forward",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our defenders need to stay close to their fast striker.",
+              "pl": "Nasi obrońcy muszą trzymać się blisko ich szybkiego napastnika.",
+              "focusEn": "defenders",
+              "focusPl": "obrońcy"
+            },
+            {
+              "en": "You'll play as a defender on the left side today.",
+              "pl": "Dziś zagrasz jako obrońca na lewej stronie.",
+              "focusEn": "defender",
+              "focusPl": "obrońca"
+            }
+          ],
+          "acceptedAnswers": [
+            "defender"
+          ],
+          "acceptedTranslations": [
+            "obrońca"
+          ]
+        },
+        {
+          "id": "football.midfielder",
+          "term": "midfielder",
+          "ipa": "/ˈmɪdˌfiːldər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pomocnik",
+          "definition": "A player who plays in the middle of the field, between defense and attack.",
+          "register": "neutralny",
+          "contextPl": "Pozycje",
+          "natural": "",
+          "forms": "midfielders",
+          "collocations": "a central midfielder; an attacking midfielder",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The midfielders have to run more than anyone else.",
+              "pl": "Pomocnicy muszą biegać więcej niż ktokolwiek inny.",
+              "focusEn": "midfielders",
+              "focusPl": "Pomocnicy"
+            },
+            {
+              "en": "He's our best midfielder because he sees every pass.",
+              "pl": "Jest naszym najlepszym pomocnikiem, bo widzi każde podanie.",
+              "focusEn": "midfielder",
+              "focusPl": "pomocnikiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "midfielder"
+          ],
+          "acceptedTranslations": [
+            "pomocnik",
+            "środkowy pomocnik"
+          ]
+        },
+        {
+          "id": "football.forward",
+          "term": "forward",
+          "ipa": "/ˈfɔːrwərd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "napastnik",
+          "definition": "A player whose main job is to attack and score goals.",
+          "register": "neutralny",
+          "contextPl": "Pozycje",
+          "natural": "striker",
+          "forms": "forwards",
+          "collocations": "a center forward; play forward",
+          "synonyms": "striker; attacker",
+          "antonyms": "defender",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our forwards have to press their defenders all game.",
+              "pl": "Nasi napastnicy przez cały mecz muszą naciskać ich obrońców.",
+              "focusEn": "forwards",
+              "focusPl": "napastnicy"
+            },
+            {
+              "en": "She's the fastest forward in the league.",
+              "pl": "Jest najszybszą napastniczką w lidze.",
+              "focusEn": "forward",
+              "focusPl": "napastniczką"
+            }
+          ],
+          "acceptedAnswers": [
+            "forward",
+            "striker"
+          ],
+          "acceptedTranslations": [
+            "napastnik",
+            "atakujący"
+          ]
+        },
+        {
+          "id": "football.striker",
+          "term": "striker",
+          "ipa": "/ˈstraɪkər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "napastnik",
+          "definition": "A forward whose main job is scoring goals.",
+          "register": "neutralny",
+          "contextPl": "Pozycje",
+          "natural": "forward",
+          "forms": "strikers",
+          "collocations": "a star striker; a lone striker",
+          "synonyms": "forward",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Their striker scored twelve goals this season, so watch him closely.",
+              "pl": "Ich napastnik strzelił w tym sezonie dwanaście goli, więc pilnujcie go.",
+              "focusEn": "striker",
+              "focusPl": "napastnik"
+            },
+            {
+              "en": "Our striker is fast but needs to shoot earlier.",
+              "pl": "Nasz snajper jest szybki, ale musi wcześniej strzelać.",
+              "focusEn": "striker",
+              "focusPl": "snajper"
+            }
+          ],
+          "acceptedAnswers": [
+            "striker",
+            "forward"
+          ],
+          "acceptedTranslations": [
+            "napastnik",
+            "snajper"
+          ]
+        },
+        {
+          "id": "football.captain",
+          "term": "captain",
+          "ipa": "/ˈkæptɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kapitan",
+          "definition": "The player who leads the team on the field.",
+          "register": "neutralny",
+          "contextPl": "Drużyna",
+          "natural": "",
+          "forms": "captains",
+          "collocations": "the team captain; wear the captain's armband",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You'll be captain today, so talk to the referee before kickoff.",
+              "pl": "Dziś będziesz kapitanem, więc porozmawiaj z sędzią przed rozpoczęciem.",
+              "focusEn": "captain",
+              "focusPl": "kapitanem"
+            },
+            {
+              "en": "Our captain gave a short speech to calm everyone down.",
+              "pl": "Nasz kapitan wygłosił krótką przemowę, żeby wszystkich uspokoić.",
+              "focusEn": "captain",
+              "focusPl": "kapitan"
+            }
+          ],
+          "acceptedAnswers": [
+            "captain"
+          ],
+          "acceptedTranslations": [
+            "kapitan",
+            "kapitanka"
+          ]
+        },
+        {
+          "id": "football.substitute",
+          "term": "substitute",
+          "ipa": "/ˈsʌbstɪˌtuːt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rezerwowy",
+          "definition": "A player who comes on to replace another during a game.",
+          "register": "neutralny",
+          "contextPl": "Zmiany",
+          "natural": "sub",
+          "forms": "substitutes",
+          "collocations": "come on as a substitute; make a substitution",
+          "synonyms": "sub; backup",
+          "antonyms": "starter",
+          "notePl": "„Sub” = potocznie zmiennik.",
+          "examples": [
+            {
+              "en": "You'll start as a substitute, but I'll put you in after halftime.",
+              "pl": "Zaczniesz jako rezerwowy, ale wpuszczę cię po przerwie.",
+              "focusEn": "substitute",
+              "focusPl": "rezerwowy"
+            },
+            {
+              "en": "We only have two substitutes, so don't get hurt.",
+              "pl": "Mamy tylko dwóch zmienników, więc uważajcie, żeby nie odnieść kontuzji.",
+              "focusEn": "substitutes",
+              "focusPl": "zmienników"
+            }
+          ],
+          "acceptedAnswers": [
+            "substitute",
+            "sub"
+          ],
+          "acceptedTranslations": [
+            "rezerwowy",
+            "zmiennik",
+            "zawodnik rezerwowy"
+          ]
+        },
+        {
+          "id": "football.bench",
+          "term": "bench",
+          "ipa": "/bɛntʃ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ławka rezerwowych",
+          "definition": "The seats at the side of the field for substitutes and coaches.",
+          "register": "neutralny",
+          "contextPl": "Zmiany",
+          "natural": "",
+          "forms": "",
+          "collocations": "on the bench; come off the bench; sit on the bench",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I sat on the bench for the whole first half.",
+              "pl": "Przesiedziałem całą pierwszą połowę na ławce rezerwowych.",
+              "focusEn": "bench",
+              "focusPl": "ławce rezerwowych"
+            },
+            {
+              "en": "He came off the bench and scored in two minutes.",
+              "pl": "Wszedł z ławki i strzelił gola w dwie minuty.",
+              "focusEn": "bench",
+              "focusPl": "ławki"
+            }
+          ],
+          "acceptedAnswers": [
+            "bench"
+          ],
+          "acceptedTranslations": [
+            "ławka rezerwowych",
+            "ławka"
+          ]
+        },
+        {
+          "id": "football.lineup",
+          "term": "lineup",
+          "ipa": "/ˈlaɪnʌp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skład",
+          "definition": "The list of players who will start the game.",
+          "register": "neutralny",
+          "contextPl": "Zmiany",
+          "natural": "",
+          "forms": "lineups",
+          "collocations": "the starting lineup; announce the lineup",
+          "synonyms": "starting eleven",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The lineup is on the door; check if you're starting.",
+              "pl": "Skład wisi na drzwiach; sprawdź, czy wychodzisz w pierwszym składzie.",
+              "focusEn": "lineup",
+              "focusPl": "Skład"
+            },
+            {
+              "en": "The coach changed the lineup at the last minute because of the rain.",
+              "pl": "Trener w ostatniej chwili zmienił skład przez deszcz.",
+              "focusEn": "lineup",
+              "focusPl": "skład"
+            }
+          ],
+          "acceptedAnswers": [
+            "lineup",
+            "starting lineup"
+          ],
+          "acceptedTranslations": [
+            "skład",
+            "wyjściowa jedenastka",
+            "skład wyjściowy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "football.actions",
+      "namePl": "Zagrania na boisku",
+      "scenePl": "Niedzielny mecz amatorski na lokalnym boisku: krzyczysz do kolegów z drużyny podczas akcji",
+      "entries": [
+        {
+          "id": "football.kick",
+          "term": "kick",
+          "ipa": "/kɪk/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "kopnąć",
+          "definition": "To hit the ball with your foot.",
+          "register": "neutralny",
+          "contextPl": "Zagrania",
+          "natural": "",
+          "forms": "kicked; kicking",
+          "collocations": "kick the ball; kick it out",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Kick it out! Just get it away from our goal!",
+              "pl": "Kopnij ją na aut! Byle dalej od naszej bramki!",
+              "focusEn": "Kick",
+              "focusPl": "Kopnij"
+            },
+            {
+              "en": "He kicked the ball so hard that it flew over the fence.",
+              "pl": "Kopnął piłkę tak mocno, że przeleciała przez płot.",
+              "focusEn": "kicked",
+              "focusPl": "Kopnął"
+            }
+          ],
+          "acceptedAnswers": [
+            "kick"
+          ],
+          "acceptedTranslations": [
+            "kopnąć",
+            "kopać"
+          ]
+        },
+        {
+          "id": "football.ball",
+          "term": "ball",
+          "ipa": "/bɔːl/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "piłka",
+          "definition": "The round object players kick in soccer.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt",
+          "natural": "",
+          "forms": "balls",
+          "collocations": "pass the ball; lose the ball; a soccer ball",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Stay on the ball! Don't let him turn!",
+              "pl": "Zostań przy piłce! Nie daj mu się obrócić!",
+              "focusEn": "ball",
+              "focusPl": "piłce"
+            },
+            {
+              "en": "Someone forgot to pump up the ball, so it's half flat.",
+              "pl": "Ktoś zapomniał napompować piłkę, więc jest w połowie flak.",
+              "focusEn": "ball",
+              "focusPl": "piłkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "ball",
+            "soccer ball"
+          ],
+          "acceptedTranslations": [
+            "piłka"
+          ]
+        },
+        {
+          "id": "football.pass",
+          "term": "pass",
+          "ipa": "/pæs/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "podać",
+          "definition": "To kick the ball to a teammate.",
+          "register": "neutralny",
+          "contextPl": "Zagrania",
+          "natural": "",
+          "forms": "passed; passing",
+          "collocations": "pass the ball; pass to someone; pass it back",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „a pass” = podanie.",
+          "examples": [
+            {
+              "en": "Pass it! I'm wide open on the right!",
+              "pl": "Podaj! Jestem zupełnie wolny po prawej!",
+              "focusEn": "Pass",
+              "focusPl": "Podaj"
+            },
+            {
+              "en": "He never passes; he always tries to do everything alone.",
+              "pl": "On nigdy nie podaje; zawsze próbuje zrobić wszystko sam.",
+              "focusEn": "passes",
+              "focusPl": "podaje"
+            }
+          ],
+          "acceptedAnswers": [
+            "pass"
+          ],
+          "acceptedTranslations": [
+            "podać",
+            "podawać"
+          ]
+        },
+        {
+          "id": "football.shoot",
+          "term": "shoot",
+          "ipa": "/ʃuːt/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "strzelać",
+          "definition": "To kick the ball toward the goal to try to score.",
+          "register": "neutralny",
+          "contextPl": "Zagrania",
+          "natural": "",
+          "forms": "shot; shooting",
+          "collocations": "shoot at the goal; shoot from far",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "shoot – shot – shot",
+          "examples": [
+            {
+              "en": "Shoot! You have a clear view of the goal!",
+              "pl": "Strzelaj! Masz czystą pozycję!",
+              "focusEn": "Shoot",
+              "focusPl": "Strzelaj"
+            },
+            {
+              "en": "She shot from outside the box and almost scored.",
+              "pl": "Strzeliła zza pola karnego i prawie zdobyła gola.",
+              "focusEn": "shot",
+              "focusPl": "Strzeliła"
+            }
+          ],
+          "acceptedAnswers": [
+            "shoot"
+          ],
+          "acceptedTranslations": [
+            "strzelać",
+            "strzelić",
+            "oddać strzał"
+          ]
+        },
+        {
+          "id": "football.shot",
+          "term": "shot",
+          "ipa": "/ʃɑːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "strzał",
+          "definition": "An attempt to score by kicking or heading the ball.",
+          "register": "neutralny",
+          "contextPl": "Zagrania",
+          "natural": "",
+          "forms": "shots",
+          "collocations": "a shot on goal; a great shot; take a shot",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "That shot was way too high; keep it low next time.",
+              "pl": "Ten strzał był o wiele za wysoko; następnym razem trzymaj go nisko.",
+              "focusEn": "shot",
+              "focusPl": "strzał"
+            },
+            {
+              "en": "We had ten shots in the first half and scored zero goals.",
+              "pl": "W pierwszej połowie oddaliśmy dziesięć strzałów i strzeliliśmy zero goli.",
+              "focusEn": "shots",
+              "focusPl": "strzałów"
+            }
+          ],
+          "acceptedAnswers": [
+            "shot"
+          ],
+          "acceptedTranslations": [
+            "strzał"
+          ]
+        },
+        {
+          "id": "football.miss",
+          "term": "miss",
+          "ipa": "/mɪs/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "spudłować",
+          "definition": "To fail to score when you shoot.",
+          "register": "neutralny",
+          "contextPl": "Zagrania",
+          "natural": "",
+          "forms": "missed; missing",
+          "collocations": "miss a penalty; miss an easy shot",
+          "synonyms": "",
+          "antonyms": "score",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How did he miss that? The goal was empty!",
+              "pl": "Jak on mógł spudłować? Bramka była pusta!",
+              "focusEn": "miss",
+              "focusPl": "spudłować"
+            },
+            {
+              "en": "I missed a penalty last week, and they still haven't forgotten.",
+              "pl": "W zeszłym tygodniu nie trafiłem karnego i wciąż mi o tym przypominają.",
+              "focusEn": "missed",
+              "focusPl": "nie trafiłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "miss"
+          ],
+          "acceptedTranslations": [
+            "spudłować",
+            "nie trafić",
+            "chybić"
+          ]
+        },
+        {
+          "id": "football.save",
+          "term": "save",
+          "ipa": "/seɪv/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "obrona",
+          "definition": "When the goalkeeper stops a shot from going in.",
+          "register": "neutralny",
+          "contextPl": "Bramkarz",
+          "natural": "",
+          "forms": "saves",
+          "collocations": "a great save; make a save; an amazing save",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też czasownik: „save a shot” = obronić strzał.",
+          "examples": [
+            {
+              "en": "What a save! He jumped all the way to the corner.",
+              "pl": "Co za obrona! Rzucił się aż do samego rogu bramki.",
+              "focusEn": "save",
+              "focusPl": "obrona"
+            },
+            {
+              "en": "Our goalie made three big saves in the second half.",
+              "pl": "Nasz bramkarz w drugiej połowie trzy razy świetnie interweniował.",
+              "focusEn": "saves",
+              "focusPl": "interweniował"
+            }
+          ],
+          "acceptedAnswers": [
+            "save"
+          ],
+          "acceptedTranslations": [
+            "obrona",
+            "parada",
+            "interwencja"
+          ]
+        },
+        {
+          "id": "football.header",
+          "term": "header",
+          "ipa": "/ˈhɛdər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "strzał głową",
+          "definition": "When a player hits the ball with their head.",
+          "register": "neutralny",
+          "contextPl": "Zagrania",
+          "natural": "",
+          "forms": "headers",
+          "collocations": "score with a header; win a header",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He scored with a header from the corner kick.",
+              "pl": "Strzelił gola strzałem głową po rzucie rożnym.",
+              "focusEn": "header",
+              "focusPl": "strzałem głową"
+            },
+            {
+              "en": "I'm too short to win any headers against these guys.",
+              "pl": "Jestem za niski, żeby wygrać jakąkolwiek główkę z tymi gośćmi.",
+              "focusEn": "headers",
+              "focusPl": "główkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "header"
+          ],
+          "acceptedTranslations": [
+            "strzał głową",
+            "główka",
+            "uderzenie głową"
+          ]
+        },
+        {
+          "id": "football.dribble",
+          "term": "dribble",
+          "ipa": "/ˈdrɪbəl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dryblować",
+          "definition": "To move with the ball using small kicks while keeping control of it.",
+          "register": "neutralny",
+          "contextPl": "Zagrania",
+          "natural": "",
+          "forms": "dribbled; dribbling",
+          "collocations": "dribble past a defender; dribble the ball",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He dribbled past three players and then lost the ball.",
+              "pl": "Przedryblował trzech zawodników, a potem stracił piłkę.",
+              "focusEn": "dribbled",
+              "focusPl": "Przedryblował"
+            },
+            {
+              "en": "Don't dribble so much; look for a pass.",
+              "pl": "Nie drybluj tyle; szukaj podania.",
+              "focusEn": "dribble",
+              "focusPl": "drybluj"
+            }
+          ],
+          "acceptedAnswers": [
+            "dribble"
+          ],
+          "acceptedTranslations": [
+            "dryblować",
+            "prowadzić piłkę",
+            "kiwać"
+          ]
+        },
+        {
+          "id": "football.tackle",
+          "term": "tackle",
+          "ipa": "/ˈtækəl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odebrać piłkę",
+          "definition": "To take the ball away from another player with your feet.",
+          "register": "neutralny",
+          "contextPl": "Zagrania obronne",
+          "natural": "",
+          "forms": "tackled; tackling",
+          "collocations": "tackle someone; a hard tackle",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik: „a tackle” = wślizg, odbiór.",
+          "examples": [
+            {
+              "en": "Tackle him before he gets into the box!",
+              "pl": "Odbierz mu piłkę, zanim wejdzie w pole karne!",
+              "focusEn": "Tackle",
+              "focusPl": "Odbierz mu piłkę"
+            },
+            {
+              "en": "She tackled cleanly and started a counterattack.",
+              "pl": "Czysto odebrała piłkę i rozpoczęła kontratak.",
+              "focusEn": "tackled",
+              "focusPl": "odebrała piłkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "tackle"
+          ],
+          "acceptedTranslations": [
+            "odebrać piłkę",
+            "odbierać piłkę",
+            "zrobić wślizg"
+          ]
+        },
+        {
+          "id": "football.assist",
+          "term": "assist",
+          "ipa": "/əˈsɪst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "asysta",
+          "definition": "A pass that helps a teammate score a goal.",
+          "register": "neutralny",
+          "contextPl": "Statystyki",
+          "natural": "",
+          "forms": "assists",
+          "collocations": "get an assist; two goals and an assist",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I didn't score, but I got two assists today.",
+              "pl": "Nie strzeliłem gola, ale zaliczyłem dziś dwie asysty.",
+              "focusEn": "assists",
+              "focusPl": "asysty"
+            },
+            {
+              "en": "Great assist! You put it right on his foot.",
+              "pl": "Świetna asysta! Podałeś mu idealnie na nogę.",
+              "focusEn": "assist",
+              "focusPl": "asysta"
+            }
+          ],
+          "acceptedAnswers": [
+            "assist"
+          ],
+          "acceptedTranslations": [
+            "asysta",
+            "ostatnie podanie"
+          ]
+        },
+        {
+          "id": "football.cross",
+          "term": "cross",
+          "ipa": "/krɔːs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "dośrodkowanie",
+          "definition": "A pass from the side of the field into the middle near the goal.",
+          "register": "specjalistyczny",
+          "contextPl": "Zagrania",
+          "natural": "",
+          "forms": "crosses",
+          "collocations": "a cross from the left; put in a cross",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our crosses keep going straight to their goalie.",
+              "pl": "Nasze dośrodkowania trafiają prosto do ich bramkarza.",
+              "focusEn": "crosses",
+              "focusPl": "dośrodkowania"
+            },
+            {
+              "en": "His cross from the right was perfect, but nobody was there.",
+              "pl": "Jego dośrodkowanie z prawej było idealne, ale nikogo tam nie było.",
+              "focusEn": "cross",
+              "focusPl": "dośrodkowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "cross"
+          ],
+          "acceptedTranslations": [
+            "dośrodkowanie",
+            "centra"
+          ]
+        },
+        {
+          "id": "football.hit-the-post",
+          "term": "hit the post",
+          "ipa": "/ˌhɪt ðə ˈpoʊst/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "trafić w słupek",
+          "definition": "To kick the ball against the side of the goal.",
+          "register": "neutralny",
+          "contextPl": "Zagrania",
+          "natural": "",
+          "forms": "hit the post",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "So close! The ball hit the post and went out.",
+              "pl": "Tak blisko! Piłka trafiła w słupek i wyszła na aut.",
+              "focusEn": "hit the post",
+              "focusPl": "trafiła w słupek"
+            },
+            {
+              "en": "I've hit the post three times this season, which is so frustrating.",
+              "pl": "W tym sezonie trzy razy trafiłem w słupek, co jest strasznie frustrujące.",
+              "focusEn": "hit the post",
+              "focusPl": "trafiłem w słupek"
+            }
+          ],
+          "acceptedAnswers": [
+            "hit the post"
+          ],
+          "acceptedTranslations": [
+            "trafić w słupek",
+            "obić słupek"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "football.rules",
+      "namePl": "Zasady i sędzia",
+      "scenePl": "Tłumaczysz koledze z USA zasady piłki nożnej podczas transmisji meczu w telewizji",
+      "entries": [
+        {
+          "id": "football.referee",
+          "term": "referee",
+          "ipa": "/ˌrɛfəˈriː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sędzia",
+          "definition": "The official who makes sure the players follow the rules.",
+          "register": "neutralny",
+          "contextPl": "Sędziowanie",
+          "natural": "ref",
+          "forms": "referees",
+          "collocations": "the referee blew the whistle; argue with the referee",
+          "synonyms": "ref; official",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The referee didn't see it because he was looking the other way.",
+              "pl": "Sędzia tego nie widział, bo patrzył w drugą stronę.",
+              "focusEn": "referee",
+              "focusPl": "Sędzia"
+            },
+            {
+              "en": "Players can't touch the referee or they get a card.",
+              "pl": "Zawodnicy nie mogą dotykać sędziego, bo dostaną kartkę.",
+              "focusEn": "referee",
+              "focusPl": "sędziego"
+            }
+          ],
+          "acceptedAnswers": [
+            "referee",
+            "ref"
+          ],
+          "acceptedTranslations": [
+            "sędzia",
+            "arbiter"
+          ]
+        },
+        {
+          "id": "football.rule",
+          "term": "rule",
+          "ipa": "/ruːl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "zasada",
+          "definition": "An official instruction about what you can and can't do in a game.",
+          "register": "neutralny",
+          "contextPl": "Zasady",
+          "natural": "",
+          "forms": "rules",
+          "collocations": "break the rules; the rules of soccer",
+          "synonyms": "regulation",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The most confusing rule for beginners is offside.",
+              "pl": "Najbardziej mylącą zasadą dla początkujących jest spalony.",
+              "focusEn": "rule",
+              "focusPl": "zasadą"
+            },
+            {
+              "en": "They changed the rules about handball again this year.",
+              "pl": "W tym roku znowu zmienili przepisy dotyczące zagrania ręką.",
+              "focusEn": "rules",
+              "focusPl": "przepisy"
+            }
+          ],
+          "acceptedAnswers": [
+            "rule"
+          ],
+          "acceptedTranslations": [
+            "zasada",
+            "przepis",
+            "reguła"
+          ]
+        },
+        {
+          "id": "football.foul",
+          "term": "foul",
+          "ipa": "/faʊl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "faul",
+          "definition": "An action that is against the rules, like pushing or tripping.",
+          "register": "neutralny",
+          "contextPl": "Przewinienia",
+          "natural": "",
+          "forms": "fouls",
+          "collocations": "commit a foul; a hard foul; call a foul",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "That was a clear foul; he pulled his shirt!",
+              "pl": "To był ewidentny faul; pociągnął go za koszulkę!",
+              "focusEn": "foul",
+              "focusPl": "faul"
+            },
+            {
+              "en": "If a player commits too many fouls, he gets a yellow card.",
+              "pl": "Jeśli zawodnik popełni za dużo fauli, dostaje żółtą kartkę.",
+              "focusEn": "fouls",
+              "focusPl": "fauli"
+            }
+          ],
+          "acceptedAnswers": [
+            "foul"
+          ],
+          "acceptedTranslations": [
+            "faul",
+            "przewinienie"
+          ]
+        },
+        {
+          "id": "football.penalty",
+          "term": "penalty",
+          "ipa": "/ˈpɛnəlti/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rzut karny",
+          "definition": "A free shot at the goal from a spot near it, given after a foul in the box.",
+          "register": "neutralny",
+          "contextPl": "Stałe fragmenty",
+          "natural": "penalty kick",
+          "forms": "penalties",
+          "collocations": "give a penalty; take a penalty; score a penalty",
+          "synonyms": "penalty kick; PK",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A foul inside the box means a penalty.",
+              "pl": "Faul w polu karnym oznacza rzut karny.",
+              "focusEn": "penalty",
+              "focusPl": "rzut karny"
+            },
+            {
+              "en": "He's taking the penalty; he hasn't missed one all year.",
+              "pl": "On wykonuje rzut karny; przez cały rok nie spudłował ani jednego.",
+              "focusEn": "penalty",
+              "focusPl": "rzut karny"
+            }
+          ],
+          "acceptedAnswers": [
+            "penalty",
+            "penalty kick"
+          ],
+          "acceptedTranslations": [
+            "rzut karny",
+            "karny",
+            "jedenastka"
+          ]
+        },
+        {
+          "id": "football.offside",
+          "term": "offside",
+          "ipa": "/ˌɔːfˈsaɪd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "spalony",
+          "definition": "In an illegal position closer to the goal than the last defender when the ball is passed.",
+          "register": "specjalistyczny",
+          "contextPl": "Przewinienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "be offside; the offside rule",
+          "synonyms": "",
+          "antonyms": "onside",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The goal doesn't count because he was offside.",
+              "pl": "Gol się nie liczy, bo był na spalonym.",
+              "focusEn": "offside",
+              "focusPl": "na spalonym"
+            },
+            {
+              "en": "Okay, offside is hard to explain, so watch the replay with me.",
+              "pl": "Dobra, spalonego trudno wytłumaczyć, więc obejrzyj ze mną powtórkę.",
+              "focusEn": "offside",
+              "focusPl": "spalonego"
+            }
+          ],
+          "acceptedAnswers": [
+            "offside"
+          ],
+          "acceptedTranslations": [
+            "spalony",
+            "na spalonym"
+          ]
+        },
+        {
+          "id": "football.yellow-card",
+          "term": "yellow card",
+          "ipa": "/ˌjɛloʊ ˈkɑːrd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "żółta kartka",
+          "definition": "A card the referee shows as a warning to a player.",
+          "register": "neutralny",
+          "contextPl": "Kary",
+          "natural": "",
+          "forms": "yellow cards",
+          "collocations": "get a yellow card; show a yellow card",
+          "synonyms": "booking",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Two yellow cards in one game mean the player has to leave.",
+              "pl": "Dwie żółte kartki w jednym meczu oznaczają, że zawodnik musi zejść.",
+              "focusEn": "yellow cards",
+              "focusPl": "żółte kartki"
+            },
+            {
+              "en": "He got a yellow card for arguing with the referee.",
+              "pl": "Dostał żółtą kartkę za kłótnię z sędzią.",
+              "focusEn": "yellow card",
+              "focusPl": "żółtą kartkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "yellow card",
+            "booking"
+          ],
+          "acceptedTranslations": [
+            "żółta kartka",
+            "kartka"
+          ]
+        },
+        {
+          "id": "football.red-card",
+          "term": "red card",
+          "ipa": "/ˌrɛd ˈkɑːrd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czerwona kartka",
+          "definition": "A card that means a player must leave the game immediately.",
+          "register": "neutralny",
+          "contextPl": "Kary",
+          "natural": "",
+          "forms": "red cards",
+          "collocations": "get a red card; a straight red card",
+          "synonyms": "ejection",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After the red card, his team has to play with ten men.",
+              "pl": "Po czerwonej kartce jego drużyna musi grać w dziesięciu.",
+              "focusEn": "red card",
+              "focusPl": "czerwonej kartce"
+            },
+            {
+              "en": "That tackle was dangerous; it should be a red card.",
+              "pl": "Ten wślizg był niebezpieczny; powinna być czerwona kartka.",
+              "focusEn": "red card",
+              "focusPl": "czerwona kartka"
+            }
+          ],
+          "acceptedAnswers": [
+            "red card"
+          ],
+          "acceptedTranslations": [
+            "czerwona kartka"
+          ]
+        },
+        {
+          "id": "football.free-kick",
+          "term": "free kick",
+          "ipa": "/ˌfriː ˈkɪk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rzut wolny",
+          "definition": "A kick given to a team after a foul, which the other team can't block up close.",
+          "register": "neutralny",
+          "contextPl": "Stałe fragmenty",
+          "natural": "",
+          "forms": "free kicks",
+          "collocations": "take a free kick; a free kick near the box",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "They got a free kick just outside the box.",
+              "pl": "Dostali rzut wolny tuż przed polem karnym.",
+              "focusEn": "free kick",
+              "focusPl": "rzut wolny"
+            },
+            {
+              "en": "Watch how he curves the ball over the wall on this free kick.",
+              "pl": "Zobacz, jak przy tym rzucie wolnym podkręca piłkę nad murem.",
+              "focusEn": "free kick",
+              "focusPl": "rzucie wolnym"
+            }
+          ],
+          "acceptedAnswers": [
+            "free kick"
+          ],
+          "acceptedTranslations": [
+            "rzut wolny",
+            "wolny"
+          ]
+        },
+        {
+          "id": "football.corner-kick",
+          "term": "corner kick",
+          "ipa": "/ˈkɔːrnər ˌkɪk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rzut rożny",
+          "definition": "A kick from the corner of the field after the defending team sends the ball over its own goal line.",
+          "register": "neutralny",
+          "contextPl": "Stałe fragmenty",
+          "natural": "corner",
+          "forms": "corner kicks",
+          "collocations": "take a corner kick; win a corner kick",
+          "synonyms": "corner",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The ball touched the defender last, so it's a corner kick.",
+              "pl": "Piłki ostatni dotknął obrońca, więc jest rzut rożny.",
+              "focusEn": "corner kick",
+              "focusPl": "rzut rożny"
+            },
+            {
+              "en": "Tall players go into the box for every corner kick.",
+              "pl": "Przy każdym rzucie rożnym wysocy zawodnicy idą w pole karne.",
+              "focusEn": "corner kick",
+              "focusPl": "rzucie rożnym"
+            }
+          ],
+          "acceptedAnswers": [
+            "corner kick",
+            "corner"
+          ],
+          "acceptedTranslations": [
+            "rzut rożny",
+            "róg",
+            "korner"
+          ]
+        },
+        {
+          "id": "football.throw-in",
+          "term": "throw-in",
+          "ipa": "/ˈθroʊ ˌɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wrzut z autu",
+          "definition": "Throwing the ball back onto the field with two hands after it goes over the sideline.",
+          "register": "neutralny",
+          "contextPl": "Stałe fragmenty",
+          "natural": "",
+          "forms": "throw-ins",
+          "collocations": "take a throw-in; a long throw-in",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "When the ball goes out on the side, it's a throw-in.",
+              "pl": "Kiedy piłka wyjdzie bokiem, jest wrzut z autu.",
+              "focusEn": "throw-in",
+              "focusPl": "wrzut z autu"
+            },
+            {
+              "en": "He takes a throw-in with both hands over his head.",
+              "pl": "Wykonuje wrzut z autu obiema rękami zza głowy.",
+              "focusEn": "throw-in",
+              "focusPl": "wrzut z autu"
+            }
+          ],
+          "acceptedAnswers": [
+            "throw-in"
+          ],
+          "acceptedTranslations": [
+            "wrzut z autu",
+            "aut"
+          ]
+        },
+        {
+          "id": "football.handball",
+          "term": "handball",
+          "ipa": "/ˈhændbɔːl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zagranie ręką",
+          "definition": "When a player other than the goalkeeper touches the ball with a hand or arm.",
+          "register": "neutralny",
+          "contextPl": "Przewinienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "call a handball; a clear handball",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też: piłka ręczna (sport).",
+          "examples": [
+            {
+              "en": "The fans are screaming handball, but the referee says no.",
+              "pl": "Kibice krzyczą, że było zagranie ręką, ale sędzia mówi, że nie.",
+              "focusEn": "handball",
+              "focusPl": "zagranie ręką"
+            },
+            {
+              "en": "If it's handball in the box, they get a penalty.",
+              "pl": "Jeśli jest zagranie ręką w polu karnym, dostają rzut karny.",
+              "focusEn": "handball",
+              "focusPl": "zagranie ręką"
+            }
+          ],
+          "acceptedAnswers": [
+            "handball",
+            "hand ball"
+          ],
+          "acceptedTranslations": [
+            "zagranie ręką",
+            "ręka"
+          ]
+        },
+        {
+          "id": "football.whistle",
+          "term": "whistle",
+          "ipa": "/ˈwɪsəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gwizdek",
+          "definition": "A small object the referee blows to make a high sound to stop or start play.",
+          "register": "neutralny",
+          "contextPl": "Sędziowanie",
+          "natural": "",
+          "forms": "whistles",
+          "collocations": "blow the whistle; the final whistle",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„The final whistle” = końcowy gwizdek.",
+          "examples": [
+            {
+              "en": "Players stop as soon as they hear the whistle.",
+              "pl": "Zawodnicy zatrzymują się, gdy tylko usłyszą gwizdek.",
+              "focusEn": "whistle",
+              "focusPl": "gwizdek"
+            },
+            {
+              "en": "After the final whistle, the players swap jerseys.",
+              "pl": "Po końcowym gwizdku zawodnicy wymieniają się koszulkami.",
+              "focusEn": "whistle",
+              "focusPl": "gwizdku"
+            }
+          ],
+          "acceptedAnswers": [
+            "whistle"
+          ],
+          "acceptedTranslations": [
+            "gwizdek",
+            "gwizdnięcie"
+          ]
+        },
+        {
+          "id": "football.stoppage-time",
+          "term": "stoppage time",
+          "ipa": "/ˈstɑːpɪdʒ ˌtaɪm/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "doliczony czas gry",
+          "definition": "Extra minutes added at the end of each half for time lost during the game.",
+          "register": "specjalistyczny",
+          "contextPl": "Czas gry",
+          "natural": "added time",
+          "forms": "",
+          "collocations": "in stoppage time; four minutes of stoppage time",
+          "synonyms": "added time; injury time",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There are four minutes of stoppage time, so it's not over yet.",
+              "pl": "Są cztery minuty doliczonego czasu gry, więc to jeszcze nie koniec.",
+              "focusEn": "stoppage time",
+              "focusPl": "doliczonego czasu gry"
+            },
+            {
+              "en": "Teams often score in stoppage time when everyone is tired.",
+              "pl": "Drużyny często strzelają gole w doliczonym czasie gry, kiedy wszyscy są zmęczeni.",
+              "focusEn": "stoppage time",
+              "focusPl": "doliczonym czasie gry"
+            }
+          ],
+          "acceptedAnswers": [
+            "stoppage time",
+            "added time",
+            "injury time"
+          ],
+          "acceptedTranslations": [
+            "doliczony czas gry",
+            "doliczony czas"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "football.fans",
+      "namePl": "Kibice i stadion",
+      "scenePl": "Derby miasta na pełnym stadionie: siedzisz wśród kibiców gospodarzy w szaliku drużyny",
+      "entries": [
+        {
+          "id": "football.fan",
+          "term": "fan",
+          "ipa": "/fæn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "kibic",
+          "definition": "A person who supports a team and follows it closely.",
+          "register": "neutralny",
+          "contextPl": "Kibicowanie",
+          "natural": "supporter",
+          "forms": "fans",
+          "collocations": "a soccer fan; a huge fan; fans of the team",
+          "synonyms": "supporter",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Fifty thousand fans are singing the same song right now.",
+              "pl": "Pięćdziesiąt tysięcy kibiców śpiewa teraz tę samą piosenkę.",
+              "focusEn": "fans",
+              "focusPl": "kibiców"
+            },
+            {
+              "en": "I've been a fan of this team since I was six.",
+              "pl": "Jestem kibicem tej drużyny, odkąd skończyłem sześć lat.",
+              "focusEn": "fan",
+              "focusPl": "kibicem"
+            }
+          ],
+          "acceptedAnswers": [
+            "fan",
+            "supporter"
+          ],
+          "acceptedTranslations": [
+            "kibic",
+            "fan",
+            "kibicka"
+          ]
+        },
+        {
+          "id": "football.stadium",
+          "term": "stadium",
+          "ipa": "/ˈsteɪdiəm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "stadion",
+          "definition": "A large place with seats around a field, where games are played.",
+          "register": "neutralny",
+          "contextPl": "Stadion",
+          "natural": "",
+          "forms": "stadiums",
+          "collocations": "a soccer stadium; a packed stadium",
+          "synonyms": "arena",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The stadium shakes every time the home team scores.",
+              "pl": "Stadion się trzęsie za każdym razem, gdy gospodarze strzelą gola.",
+              "focusEn": "stadium",
+              "focusPl": "Stadion"
+            },
+            {
+              "en": "We parked a mile from the stadium and walked with the crowd.",
+              "pl": "Zaparkowaliśmy półtora kilometra od stadionu i szliśmy z tłumem.",
+              "focusEn": "stadium",
+              "focusPl": "stadionu"
+            }
+          ],
+          "acceptedAnswers": [
+            "stadium"
+          ],
+          "acceptedTranslations": [
+            "stadion"
+          ]
+        },
+        {
+          "id": "football.field",
+          "term": "field",
+          "ipa": "/fiːld/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "boisko",
+          "definition": "The area of grass where a soccer game is played.",
+          "register": "neutralny",
+          "contextPl": "Stadion",
+          "natural": "pitch",
+          "forms": "fields",
+          "collocations": "on the field; a soccer field; run onto the field",
+          "synonyms": "pitch",
+          "antonyms": "",
+          "notePl": "W BrE „pitch”.",
+          "examples": [
+            {
+              "en": "A fan ran onto the field, and security chased him.",
+              "pl": "Kibic wbiegł na boisko i ochrona go goniła.",
+              "focusEn": "field",
+              "focusPl": "boisko"
+            },
+            {
+              "en": "The field looks perfect from up here in the stands.",
+              "pl": "Boisko wygląda stąd, z trybun, idealnie.",
+              "focusEn": "field",
+              "focusPl": "Boisko"
+            }
+          ],
+          "acceptedAnswers": [
+            "field",
+            "pitch"
+          ],
+          "acceptedTranslations": [
+            "boisko",
+            "murawa"
+          ]
+        },
+        {
+          "id": "football.jersey",
+          "term": "jersey",
+          "ipa": "/ˈdʒɜːrzi/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "koszulka",
+          "definition": "The shirt that a team's players and fans wear.",
+          "register": "neutralny",
+          "contextPl": "Barwy klubowe",
+          "natural": "",
+          "forms": "jerseys",
+          "collocations": "a team jersey; wear a jersey; a signed jersey",
+          "synonyms": "shirt",
+          "antonyms": "",
+          "notePl": "W BrE częściej „shirt” albo „kit”.",
+          "examples": [
+            {
+              "en": "Half the stadium is wearing the red home jersey.",
+              "pl": "Pół stadionu ma na sobie czerwoną koszulkę gospodarzy.",
+              "focusEn": "jersey",
+              "focusPl": "koszulkę"
+            },
+            {
+              "en": "I bought a jersey with my favorite player's number on the back.",
+              "pl": "Kupiłem koszulkę z numerem mojego ulubionego zawodnika na plecach.",
+              "focusEn": "jersey",
+              "focusPl": "koszulkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "jersey",
+            "shirt"
+          ],
+          "acceptedTranslations": [
+            "koszulka",
+            "koszulka meczowa",
+            "trykot"
+          ]
+        },
+        {
+          "id": "football.cheer",
+          "term": "cheer",
+          "ipa": "/tʃɪr/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dopingować",
+          "definition": "To shout loudly to support your team.",
+          "register": "neutralny",
+          "contextPl": "Kibicowanie",
+          "natural": "",
+          "forms": "cheered; cheering",
+          "collocations": "cheer for a team; cheer loudly",
+          "synonyms": "root for",
+          "antonyms": "boo",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We cheered so loudly that I lost my voice.",
+              "pl": "Dopingowaliśmy tak głośno, że straciłem głos.",
+              "focusEn": "cheered",
+              "focusPl": "Dopingowaliśmy"
+            },
+            {
+              "en": "The whole section stood up to cheer when the captain came out.",
+              "pl": "Cały sektor wstał, żeby wiwatować, kiedy wyszedł kapitan.",
+              "focusEn": "cheer",
+              "focusPl": "wiwatować"
+            }
+          ],
+          "acceptedAnswers": [
+            "cheer",
+            "root for"
+          ],
+          "acceptedTranslations": [
+            "dopingować",
+            "kibicować",
+            "wiwatować"
+          ]
+        },
+        {
+          "id": "football.root-for",
+          "term": "root for",
+          "ipa": "/ˈruːt fɔːr/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kibicować",
+          "definition": "To support a team and hope it wins.",
+          "register": "potoczny",
+          "contextPl": "Kibicowanie",
+          "natural": "cheer for",
+          "forms": "rooted for; rooting for",
+          "collocations": "root for the home team; who are you rooting for",
+          "synonyms": "support; cheer for",
+          "antonyms": "",
+          "notePl": "Typowo amerykańskie.",
+          "examples": [
+            {
+              "en": "Which team are you rooting for tonight?",
+              "pl": "Której drużynie dziś kibicujesz?",
+              "focusEn": "rooting for",
+              "focusPl": "kibicujesz"
+            },
+            {
+              "en": "My dad roots for the other team, so we sit in different sections.",
+              "pl": "Mój tata kibicuje drugiej drużynie, więc siedzimy w różnych sektorach.",
+              "focusEn": "roots for",
+              "focusPl": "kibicuje"
+            }
+          ],
+          "acceptedAnswers": [
+            "root for",
+            "cheer for"
+          ],
+          "acceptedTranslations": [
+            "kibicować",
+            "trzymać kciuki za"
+          ]
+        },
+        {
+          "id": "football.chant",
+          "term": "chant",
+          "ipa": "/tʃænt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przyśpiewka",
+          "definition": "A short phrase or song that fans repeat together.",
+          "register": "neutralny",
+          "contextPl": "Kibicowanie",
+          "natural": "",
+          "forms": "chants",
+          "collocations": "a fan chant; start a chant",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Też czasownik: „chant” = skandować.",
+          "examples": [
+            {
+              "en": "I don't know the words to this chant yet, but I'm clapping.",
+              "pl": "Nie znam jeszcze słów tej przyśpiewki, ale klaszczę.",
+              "focusEn": "chant",
+              "focusPl": "przyśpiewki"
+            },
+            {
+              "en": "The chants got louder when we took the lead.",
+              "pl": "Przyśpiewki stały się głośniejsze, kiedy objęliśmy prowadzenie.",
+              "focusEn": "chants",
+              "focusPl": "Przyśpiewki"
+            }
+          ],
+          "acceptedAnswers": [
+            "chant"
+          ],
+          "acceptedTranslations": [
+            "przyśpiewka",
+            "okrzyk",
+            "skandowanie"
+          ]
+        },
+        {
+          "id": "football.crowd",
+          "term": "crowd",
+          "ipa": "/kraʊd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "tłum",
+          "definition": "A large group of people in one place.",
+          "register": "neutralny",
+          "contextPl": "Stadion",
+          "natural": "",
+          "forms": "crowds",
+          "collocations": "a huge crowd; the crowd went wild",
+          "synonyms": "audience",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The crowd went wild after the last-minute goal.",
+              "pl": "Tłum oszalał po golu w ostatniej minucie.",
+              "focusEn": "crowd",
+              "focusPl": "Tłum"
+            },
+            {
+              "en": "It took us forty minutes to get out through the crowd.",
+              "pl": "Przedostanie się przez tłum zajęło nam czterdzieści minut.",
+              "focusEn": "crowd",
+              "focusPl": "tłum"
+            }
+          ],
+          "acceptedAnswers": [
+            "crowd"
+          ],
+          "acceptedTranslations": [
+            "tłum",
+            "publiczność",
+            "kibice"
+          ]
+        },
+        {
+          "id": "football.home-game",
+          "term": "home game",
+          "ipa": "/ˌhoʊm ˈɡeɪm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mecz u siebie",
+          "definition": "A game played at your own team's stadium.",
+          "register": "neutralny",
+          "contextPl": "Terminarz",
+          "natural": "",
+          "forms": "home games",
+          "collocations": "a home game; play at home",
+          "synonyms": "",
+          "antonyms": "away game",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I have a season ticket, so I go to every home game.",
+              "pl": "Mam karnet, więc chodzę na każdy mecz u siebie.",
+              "focusEn": "home game",
+              "focusPl": "mecz u siebie"
+            },
+            {
+              "en": "They haven't lost a home game in two years.",
+              "pl": "Nie przegrali meczu u siebie od dwóch lat.",
+              "focusEn": "home game",
+              "focusPl": "meczu u siebie"
+            }
+          ],
+          "acceptedAnswers": [
+            "home game",
+            "home match"
+          ],
+          "acceptedTranslations": [
+            "mecz u siebie",
+            "mecz na własnym stadionie"
+          ]
+        },
+        {
+          "id": "football.away-game",
+          "term": "away game",
+          "ipa": "/əˌweɪ ˈɡeɪm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "mecz wyjazdowy",
+          "definition": "A game played at the other team's stadium.",
+          "register": "neutralny",
+          "contextPl": "Terminarz",
+          "natural": "road game",
+          "forms": "away games",
+          "collocations": "travel to an away game",
+          "synonyms": "road game",
+          "antonyms": "home game",
+          "notePl": "W AmE też „road game”.",
+          "examples": [
+            {
+              "en": "I've never been to an away game; it's a six-hour drive.",
+              "pl": "Nigdy nie byłem na meczu wyjazdowym; to sześć godzin jazdy.",
+              "focusEn": "away game",
+              "focusPl": "meczu wyjazdowym"
+            },
+            {
+              "en": "About two hundred of their fans came for the away game.",
+              "pl": "Na mecz wyjazdowy przyjechało około dwustu ich kibiców.",
+              "focusEn": "away game",
+              "focusPl": "mecz wyjazdowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "away game",
+            "away match",
+            "road game"
+          ],
+          "acceptedTranslations": [
+            "mecz wyjazdowy",
+            "wyjazd"
+          ]
+        },
+        {
+          "id": "football.season-ticket",
+          "term": "season ticket",
+          "ipa": "/ˈsiːzən ˌtɪkɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "karnet",
+          "definition": "A ticket that lets you go to all home games in a season.",
+          "register": "neutralny",
+          "contextPl": "Bilety",
+          "natural": "",
+          "forms": "season tickets",
+          "collocations": "buy a season ticket; season ticket holders",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My season ticket is in the same seat my grandpa used to have.",
+              "pl": "Mój karnet jest na to samo miejsce, które kiedyś miał mój dziadek.",
+              "focusEn": "season ticket",
+              "focusPl": "karnet"
+            },
+            {
+              "en": "Season tickets sold out in one day this year.",
+              "pl": "W tym roku karnety wyprzedały się w jeden dzień.",
+              "focusEn": "Season tickets",
+              "focusPl": "karnety"
+            }
+          ],
+          "acceptedAnswers": [
+            "season ticket"
+          ],
+          "acceptedTranslations": [
+            "karnet",
+            "karnet sezonowy"
+          ]
+        },
+        {
+          "id": "football.rival",
+          "term": "rival",
+          "ipa": "/ˈraɪvəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rywal",
+          "definition": "A team that you compete with very strongly, often for many years.",
+          "register": "neutralny",
+          "contextPl": "Rywalizacja",
+          "natural": "",
+          "forms": "rivals",
+          "collocations": "a big rival; local rivals; beat our rivals",
+          "synonyms": "opponent",
+          "antonyms": "ally",
+          "notePl": "„Derby” w AmE: „rivalry game”.",
+          "examples": [
+            {
+              "en": "Beating our biggest rivals is better than winning the cup.",
+              "pl": "Pokonanie naszych największych rywali jest lepsze niż wygranie pucharu.",
+              "focusEn": "rivals",
+              "focusPl": "rywali"
+            },
+            {
+              "en": "Their fans are our rivals, but most of them are nice people.",
+              "pl": "Ich kibice to nasi rywale, ale większość z nich to mili ludzie.",
+              "focusEn": "rivals",
+              "focusPl": "rywale"
+            }
+          ],
+          "acceptedAnswers": [
+            "rival",
+            "opponent"
+          ],
+          "acceptedTranslations": [
+            "rywal",
+            "przeciwnik"
+          ]
+        },
+        {
+          "id": "football.highlights",
+          "term": "highlights",
+          "ipa": "/ˈhaɪlaɪts/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "skrót meczu",
+          "definition": "A short video of the most exciting moments of a game.",
+          "register": "neutralny",
+          "contextPl": "Oglądanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "watch the highlights; game highlights",
+          "synonyms": "recap",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll watch the highlights at home to see that goal again.",
+              "pl": "W domu obejrzymy skrót meczu, żeby jeszcze raz zobaczyć tego gola.",
+              "focusEn": "highlights",
+              "focusPl": "skrót meczu"
+            },
+            {
+              "en": "On the train home, everyone was watching the highlights on their phones.",
+              "pl": "W pociągu do domu wszyscy oglądali skrót meczu na telefonach.",
+              "focusEn": "highlights",
+              "focusPl": "skrót meczu"
+            }
+          ],
+          "acceptedAnswers": [
+            "highlights",
+            "recap"
+          ],
+          "acceptedTranslations": [
+            "skrót meczu",
+            "najciekawsze momenty",
+            "skrót"
+          ]
+        },
+        {
+          "id": "football.boo",
+          "term": "boo",
+          "ipa": "/buː/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "buczeć",
+          "definition": "To shout “boo” to show you don't like something.",
+          "register": "neutralny",
+          "contextPl": "Reakcje kibiców",
+          "natural": "",
+          "forms": "booed; booing",
+          "collocations": "boo the referee; get booed",
+          "synonyms": "",
+          "antonyms": "cheer",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The fans booed the referee after the penalty decision.",
+              "pl": "Kibice wybuczeli sędziego po decyzji o rzucie karnym.",
+              "focusEn": "booed",
+              "focusPl": "wybuczeli"
+            },
+            {
+              "en": "Please don't boo the other team's players; it's not nice.",
+              "pl": "Proszę, nie buczcie na zawodników drugiej drużyny; to nieładnie.",
+              "focusEn": "boo",
+              "focusPl": "buczcie"
+            }
+          ],
+          "acceptedAnswers": [
+            "boo"
+          ],
+          "acceptedTranslations": [
+            "buczeć",
+            "wybuczeć",
+            "wygwizdać",
+            "gwizdać"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "football.practice",
+      "namePl": "Trening i sprzęt",
+      "scenePl": "Wieczorny trening dziecięcej drużyny: przywozisz syna na boisko i rozmawiasz z trenerką",
+      "entries": [
+        {
+          "id": "football.practice",
+          "term": "practice",
+          "ipa": "/ˈpræktɪs/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "trening",
+          "definition": "A regular session when a team trains together.",
+          "register": "neutralny",
+          "contextPl": "Treningi",
+          "natural": "training",
+          "forms": "practices",
+          "collocations": "soccer practice; go to practice; miss practice",
+          "synonyms": "training",
+          "antonyms": "",
+          "notePl": "W AmE „practice”, w BrE częściej „training”.",
+          "examples": [
+            {
+              "en": "Practice is on Tuesdays and Thursdays from five to six thirty.",
+              "pl": "Trening jest we wtorki i czwartki od piątej do wpół do siódmej.",
+              "focusEn": "Practice",
+              "focusPl": "Trening"
+            },
+            {
+              "en": "He can't miss practice if he wants to play on Saturday.",
+              "pl": "Nie może opuścić treningu, jeśli chce grać w sobotę.",
+              "focusEn": "practice",
+              "focusPl": "treningu"
+            }
+          ],
+          "acceptedAnswers": [
+            "practice",
+            "training"
+          ],
+          "acceptedTranslations": [
+            "trening",
+            "zajęcia"
+          ]
+        },
+        {
+          "id": "football.cleats",
+          "term": "cleats",
+          "ipa": "/kliːts/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "korki",
+          "definition": "Soccer shoes with small points on the bottom to stop you slipping.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt",
+          "natural": "",
+          "forms": "",
+          "collocations": "soccer cleats; a pair of cleats; put on cleats",
+          "synonyms": "soccer shoes",
+          "antonyms": "",
+          "notePl": "W BrE „football boots”.",
+          "examples": [
+            {
+              "en": "His cleats are already too small, and the season just started.",
+              "pl": "Jego korki już są za małe, a sezon dopiero się zaczął.",
+              "focusEn": "cleats",
+              "focusPl": "korki"
+            },
+            {
+              "en": "Take off your cleats before you get in the car; they're muddy.",
+              "pl": "Zdejmij korki, zanim wsiądziesz do samochodu; są zabłocone.",
+              "focusEn": "cleats",
+              "focusPl": "korki"
+            }
+          ],
+          "acceptedAnswers": [
+            "cleats",
+            "soccer shoes"
+          ],
+          "acceptedTranslations": [
+            "korki",
+            "buty piłkarskie"
+          ]
+        },
+        {
+          "id": "football.shin-guards",
+          "term": "shin guards",
+          "ipa": "/ˈʃɪn ˌɡɑːrdz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ochraniacze na piszczele",
+          "definition": "Hard pads worn under socks to protect the front of the legs.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt",
+          "natural": "",
+          "forms": "",
+          "collocations": "wear shin guards; forget your shin guards",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Players can't go on the field without shin guards.",
+              "pl": "Zawodnicy nie mogą wejść na boisko bez ochraniaczy na piszczele.",
+              "focusEn": "shin guards",
+              "focusPl": "ochraniaczy na piszczele"
+            },
+            {
+              "en": "He forgot his shin guards, so the coach lent him a spare pair.",
+              "pl": "Zapomniał nagolenników, więc trenerka pożyczyła mu zapasową parę.",
+              "focusEn": "shin guards",
+              "focusPl": "nagolenników"
+            }
+          ],
+          "acceptedAnswers": [
+            "shin guards",
+            "shin pads"
+          ],
+          "acceptedTranslations": [
+            "ochraniacze na piszczele",
+            "nagolenniki",
+            "ochraniacze"
+          ]
+        },
+        {
+          "id": "football.warm-up",
+          "term": "warm up",
+          "ipa": "/ˌwɔːrm ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rozgrzać się",
+          "definition": "To do light exercise before training or a game.",
+          "register": "neutralny",
+          "contextPl": "Treningi",
+          "natural": "",
+          "forms": "warmed up; warming up",
+          "collocations": "warm up before practice; warm up properly",
+          "synonyms": "stretch",
+          "antonyms": "cool down",
+          "notePl": "Rzeczownik: „a warm-up” = rozgrzewka.",
+          "examples": [
+            {
+              "en": "The kids warm up by running two laps around the field.",
+              "pl": "Dzieci rozgrzewają się, biegając dwa okrążenia wokół boiska.",
+              "focusEn": "warm up",
+              "focusPl": "rozgrzewają się"
+            },
+            {
+              "en": "If you don't warm up, you can easily get hurt.",
+              "pl": "Jeśli się nie rozgrzejesz, łatwo możesz odnieść kontuzję.",
+              "focusEn": "warm up",
+              "focusPl": "rozgrzejesz"
+            }
+          ],
+          "acceptedAnswers": [
+            "warm up"
+          ],
+          "acceptedTranslations": [
+            "rozgrzać się",
+            "rozgrzewać się",
+            "zrobić rozgrzewkę"
+          ]
+        },
+        {
+          "id": "football.drill",
+          "term": "drill",
+          "ipa": "/drɪl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ćwiczenie",
+          "definition": "A repeated exercise to practice one skill.",
+          "register": "neutralny",
+          "contextPl": "Treningi",
+          "natural": "exercise",
+          "forms": "drills",
+          "collocations": "a passing drill; a shooting drill; run drills",
+          "synonyms": "exercise",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Today's drill is all about passing with your left foot.",
+              "pl": "Dzisiejsze ćwiczenie dotyczy wyłącznie podań lewą nogą.",
+              "focusEn": "drill",
+              "focusPl": "ćwiczenie"
+            },
+            {
+              "en": "The kids love the shooting drill more than anything else.",
+              "pl": "Dzieci kochają ćwiczenie strzeleckie bardziej niż cokolwiek innego.",
+              "focusEn": "drill",
+              "focusPl": "ćwiczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "drill",
+            "exercise"
+          ],
+          "acceptedTranslations": [
+            "ćwiczenie",
+            "ćwiczenie techniczne"
+          ]
+        },
+        {
+          "id": "football.cone",
+          "term": "cone",
+          "ipa": "/koʊn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pachołek",
+          "definition": "A plastic object shaped like a point, used to mark places in training.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt",
+          "natural": "",
+          "forms": "cones",
+          "collocations": "set up cones; dribble around the cones",
+          "synonyms": "marker",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Dribble around the cones without touching them.",
+              "pl": "Prowadź piłkę między pachołkami, nie dotykając ich.",
+              "focusEn": "cones",
+              "focusPl": "pachołkami"
+            },
+            {
+              "en": "Can you help me pick up the cones after practice?",
+              "pl": "Pomoże mi pan zebrać pachołki po treningu?",
+              "focusEn": "cones",
+              "focusPl": "pachołki"
+            }
+          ],
+          "acceptedAnswers": [
+            "cone",
+            "marker"
+          ],
+          "acceptedTranslations": [
+            "pachołek",
+            "słupek",
+            "znacznik"
+          ]
+        },
+        {
+          "id": "football.injury",
+          "term": "injury",
+          "ipa": "/ˈɪndʒəri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "kontuzja",
+          "definition": "Damage to the body, for example from a fall or a kick.",
+          "register": "neutralny",
+          "contextPl": "Kontuzje",
+          "natural": "",
+          "forms": "injuries",
+          "collocations": "a knee injury; a minor injury; come back from an injury",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He's been out for a month with an ankle injury.",
+              "pl": "Od miesiąca pauzuje z powodu kontuzji kostki.",
+              "focusEn": "injury",
+              "focusPl": "kontuzji"
+            },
+            {
+              "en": "Most injuries at this age happen when kids don't stretch.",
+              "pl": "Większość kontuzji w tym wieku zdarza się, gdy dzieci się nie rozciągają.",
+              "focusEn": "injuries",
+              "focusPl": "kontuzji"
+            }
+          ],
+          "acceptedAnswers": [
+            "injury"
+          ],
+          "acceptedTranslations": [
+            "kontuzja",
+            "uraz"
+          ]
+        },
+        {
+          "id": "football.youth-league",
+          "term": "youth league",
+          "ipa": "/ˈjuːθ ˌliːɡ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "liga juniorów",
+          "definition": "An organized group of teams for children and teenagers.",
+          "register": "neutralny",
+          "contextPl": "Rozgrywki dziecięce",
+          "natural": "",
+          "forms": "youth leagues",
+          "collocations": "a local youth league; join a youth league",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our town's youth league has more than forty teams.",
+              "pl": "Liga juniorów w naszym mieście ma ponad czterdzieści drużyn.",
+              "focusEn": "youth league",
+              "focusPl": "Liga juniorów"
+            },
+            {
+              "en": "She started coaching in the youth league when her own kids played.",
+              "pl": "Zaczęła trenować w lidze juniorów, kiedy grały w niej jej własne dzieci.",
+              "focusEn": "youth league",
+              "focusPl": "lidze juniorów"
+            }
+          ],
+          "acceptedAnswers": [
+            "youth league",
+            "kids' league"
+          ],
+          "acceptedTranslations": [
+            "liga juniorów",
+            "liga młodzieżowa",
+            "liga dziecięca"
+          ]
+        },
+        {
+          "id": "football.tryout",
+          "term": "tryout",
+          "ipa": "/ˈtraɪaʊt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nabór",
+          "definition": "A test where players show their skills to get onto a team.",
+          "register": "neutralny",
+          "contextPl": "Rozgrywki dziecięce",
+          "natural": "",
+          "forms": "tryouts",
+          "collocations": "go to tryouts; tryouts for the team",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Tryouts for the travel team are next Saturday.",
+              "pl": "Nabór do drużyny wyjazdowej jest w przyszłą sobotę.",
+              "focusEn": "Tryouts",
+              "focusPl": "Nabór"
+            },
+            {
+              "en": "He was so nervous before the tryout that he couldn't eat.",
+              "pl": "Przed naborem był tak zdenerwowany, że nie mógł jeść.",
+              "focusEn": "tryout",
+              "focusPl": "naborem"
+            }
+          ],
+          "acceptedAnswers": [
+            "tryout"
+          ],
+          "acceptedTranslations": [
+            "nabór",
+            "testy",
+            "sprawdzian"
+          ]
+        },
+        {
+          "id": "football.kickoff",
+          "term": "kickoff",
+          "ipa": "/ˈkɪkɔːf/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rozpoczęcie meczu",
+          "definition": "The first kick that starts a game or the second half.",
+          "register": "neutralny",
+          "contextPl": "Przebieg meczu",
+          "natural": "",
+          "forms": "kickoffs",
+          "collocations": "kickoff is at ten; before kickoff",
+          "synonyms": "start",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Saturday's kickoff is at nine, so we need to leave by eight.",
+              "pl": "Rozpoczęcie meczu w sobotę jest o dziewiątej, więc musimy wyjechać przed ósmą.",
+              "focusEn": "kickoff",
+              "focusPl": "Rozpoczęcie meczu"
+            },
+            {
+              "en": "The coach wants everyone there thirty minutes before kickoff.",
+              "pl": "Trenerka chce, żeby wszyscy byli trzydzieści minut przed rozpoczęciem meczu.",
+              "focusEn": "kickoff",
+              "focusPl": "rozpoczęciem meczu"
+            }
+          ],
+          "acceptedAnswers": [
+            "kickoff",
+            "kick-off"
+          ],
+          "acceptedTranslations": [
+            "rozpoczęcie meczu",
+            "początek meczu",
+            "pierwszy gwizdek"
+          ]
+        },
+        {
+          "id": "football.team-spirit",
+          "term": "team spirit",
+          "ipa": "/ˌtiːm ˈspɪrɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "duch drużyny",
+          "definition": "A feeling of loyalty and support among members of a team.",
+          "register": "neutralny",
+          "contextPl": "Atmosfera w drużynie",
+          "natural": "",
+          "forms": "",
+          "collocations": "great team spirit; build team spirit",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The coach cares more about team spirit than winning.",
+              "pl": "Trenerce bardziej zależy na duchu drużyny niż na wygrywaniu.",
+              "focusEn": "team spirit",
+              "focusPl": "duchu drużyny"
+            },
+            {
+              "en": "They're not the best players, but their team spirit is amazing.",
+              "pl": "Nie są najlepszymi zawodnikami, ale ich duch drużyny jest niesamowity.",
+              "focusEn": "team spirit",
+              "focusPl": "duch drużyny"
+            }
+          ],
+          "acceptedAnswers": [
+            "team spirit"
+          ],
+          "acceptedTranslations": [
+            "duch drużyny",
+            "duch zespołu"
+          ]
+        }
+      ]
+    }
+  ]
+}
