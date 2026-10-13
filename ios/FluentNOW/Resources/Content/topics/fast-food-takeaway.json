@@ -1,0 +1,3161 @@
+{
+  "schemaVersion": 1,
+  "id": "fast-food-takeaway",
+  "namePl": "Fast food i jedzenie na wynos",
+  "nameEn": "Fast Food and Takeout",
+  "group": "food",
+  "symbol": "takeoutbag.and.cup.and.straw",
+  "summaryPl": "Zamawianie przy ladzie i w drive-thru, burgery, sosy, pizza na telefon, dostawa przez aplikację.",
+  "aliases": [
+    "fast food",
+    "jedzenie na wynos",
+    "na wynos",
+    "dostawa jedzenia",
+    "burger",
+    "pizza",
+    "drive-thru",
+    "takeout",
+    "fast-food"
+  ],
+  "categories": [
+    {
+      "id": "fast-food-takeaway.counter",
+      "namePl": "Zamawianie przy ladzie",
+      "scenePl": "Lada w barze z burgerami w porze lunchu, kolejka i tablica z menu nad kasą",
+      "entries": [
+        {
+          "id": "fast-food-takeaway.fast-food",
+          "term": "fast food",
+          "ipa": "/ˌfæst ˈfuːd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "fast food",
+          "definition": "Cheap food that is cooked and served very quickly in simple restaurants.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "",
+          "collocations": "fast-food restaurant; fast-food chain; eat fast food",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przed rzeczownikiem z łącznikiem: a fast-food place.",
+          "examples": [
+            {
+              "en": "We only had twenty minutes for lunch, so we grabbed fast food near the office.",
+              "pl": "Mieliśmy tylko dwadzieścia minut na lunch, więc zjedliśmy fast food niedaleko biura.",
+              "focusEn": "fast food",
+              "focusPl": "fast food"
+            },
+            {
+              "en": "The menu board above the counter makes fast food look healthier than it really is.",
+              "pl": "Tablica z menu nad ladą sprawia, że fast food wygląda zdrowiej, niż jest naprawdę.",
+              "focusEn": "fast food",
+              "focusPl": "fast food"
+            }
+          ],
+          "acceptedAnswers": [
+            "fast food",
+            "fast-food"
+          ],
+          "acceptedTranslations": [
+            "fast food",
+            "szybkie jedzenie",
+            "jedzenie typu fast food"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.can-i-take-your-order",
+          "term": "can I take your order",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "czy mogę przyjąć zamówienie?",
+          "definition": "A polite question staff ask when they are ready to hear what you want.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "what can I get you",
+          "antonyms": "",
+          "notePl": "Typowe pierwsze pytanie kasjera; odpowiada się „I'll have…” albo „Can I get…”.",
+          "examples": [
+            {
+              "en": "When the cashier asked, \"Can I take your order?\" my son still hadn't decided.",
+              "pl": "Kiedy kasjerka zapytała: „Czy mogę przyjąć zamówienie?”, mój syn wciąż nie wiedział, co chce.",
+              "focusEn": "Can I take your order",
+              "focusPl": "Czy mogę przyjąć zamówienie"
+            },
+            {
+              "en": "Can I take your order, or do you need another minute with the menu?",
+              "pl": "Czy mogę przyjąć zamówienie, czy potrzebuje pan jeszcze chwili na przejrzenie menu?",
+              "focusEn": "Can I take your order",
+              "focusPl": "Czy mogę przyjąć zamówienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "can I take your order",
+            "can I take your order?",
+            "what can I get you"
+          ],
+          "acceptedTranslations": [
+            "czy mogę przyjąć zamówienie?",
+            "co podać?",
+            "słucham, co podać?"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.combo-meal",
+          "term": "combo meal",
+          "ipa": "/ˈkɑːmboʊ ˌmiːl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zestaw",
+          "definition": "A main item sold together with fries and a drink for one lower price.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "combo meals",
+          "collocations": "order a combo meal; upgrade your combo meal",
+          "synonyms": "value meal; meal deal",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The combo meal comes with medium fries and any soft drink you want.",
+              "pl": "Zestaw zawiera średnie frytki i dowolny napój gazowany.",
+              "focusEn": "combo meal",
+              "focusPl": "Zestaw"
+            },
+            {
+              "en": "I almost ordered the burger alone, but the combo meal was only a dollar more.",
+              "pl": "Prawie zamówiłem samego burgera, ale zestaw był droższy tylko o dolara.",
+              "focusEn": "combo meal",
+              "focusPl": "zestaw"
+            }
+          ],
+          "acceptedAnswers": [
+            "combo meal",
+            "combo"
+          ],
+          "acceptedTranslations": [
+            "zestaw",
+            "zestaw z frytkami i napojem"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.make-it-a-combo",
+          "term": "make it a combo",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wziąć w zestawie",
+          "definition": "To ask for your main item to come with fries and a drink as a meal.",
+          "register": "potoczny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "make it a meal",
+          "antonyms": "",
+          "notePl": "Kasjer często pyta: „Do you want to make it a combo?”",
+          "examples": [
+            {
+              "en": "The cashier asked if I wanted to make it a combo for two dollars more.",
+              "pl": "Kasjer zapytał, czy chcę wziąć to w zestawie za dwa dolary więcej.",
+              "focusEn": "make it a combo",
+              "focusPl": "wziąć to w zestawie"
+            },
+            {
+              "en": "Sure, make it a combo, and can I get a lemonade with that?",
+              "pl": "Dobrze, poproszę w zestawie, i czy mogę do tego dostać lemoniadę?",
+              "focusEn": "make it a combo",
+              "focusPl": "poproszę w zestawie"
+            }
+          ],
+          "acceptedAnswers": [
+            "make it a combo",
+            "make it a meal"
+          ],
+          "acceptedTranslations": [
+            "wziąć w zestawie",
+            "zamówić zestaw",
+            "poproszę zestaw",
+            "w zestawie"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.menu-board",
+          "term": "menu board",
+          "ipa": "/ˈmenjuː ˌbɔːrd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "tablica z menu",
+          "definition": "The large sign above the counter that shows the food and prices.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "menu boards",
+          "collocations": "read the menu board; digital menu board",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I couldn't read the prices on the menu board from the back of the line.",
+              "pl": "Z końca kolejki nie mogłem odczytać cen na tablicy z menu.",
+              "focusEn": "menu board",
+              "focusPl": "tablicy z menu"
+            },
+            {
+              "en": "The new chicken sandwich takes up half of the menu board this month.",
+              "pl": "Nowa kanapka z kurczakiem zajmuje w tym miesiącu pół tablicy z menu.",
+              "focusEn": "menu board",
+              "focusPl": "tablicy z menu"
+            }
+          ],
+          "acceptedAnswers": [
+            "menu board"
+          ],
+          "acceptedTranslations": [
+            "tablica z menu",
+            "menu nad ladą",
+            "tablica menu"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.for-here",
+          "term": "for here",
+          "ipa": "/fər ˈhɪr/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "na miejscu",
+          "definition": "Used to say you will eat your food inside the restaurant.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "to go",
+          "notePl": "Odpowiedź na pytanie „For here or to go?”; przeciwieństwo: to go (na wynos).",
+          "examples": [
+            {
+              "en": "It's for here, so you can put everything on one tray.",
+              "pl": "Jemy na miejscu, więc może pan wszystko położyć na jednej tacy.",
+              "focusEn": "for here",
+              "focusPl": "na miejscu"
+            },
+            {
+              "en": "We ordered for here, but we ended up taking half the fries home.",
+              "pl": "Zamówiliśmy na miejscu, ale połowę frytek i tak zabraliśmy do domu.",
+              "focusEn": "for here",
+              "focusPl": "na miejscu"
+            }
+          ],
+          "acceptedAnswers": [
+            "for here"
+          ],
+          "acceptedTranslations": [
+            "na miejscu",
+            "do zjedzenia na miejscu"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.tray",
+          "term": "tray",
+          "ipa": "/treɪ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "taca",
+          "definition": "A flat plastic plate with raised edges for carrying food to your table.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "trays",
+          "collocations": "carry a tray; plastic tray; return your tray",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He balanced a tray of burgers and two drinks on the way to our table.",
+              "pl": "W drodze do naszego stolika balansował tacą z burgerami i dwoma napojami.",
+              "focusEn": "tray",
+              "focusPl": "tacą"
+            },
+            {
+              "en": "Please leave your tray on top of the trash can when you finish.",
+              "pl": "Po jedzeniu proszę zostawić tacę na koszu na śmieci.",
+              "focusEn": "tray",
+              "focusPl": "tacę"
+            }
+          ],
+          "acceptedAnswers": [
+            "tray"
+          ],
+          "acceptedTranslations": [
+            "taca",
+            "tacka"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.number",
+          "term": "number",
+          "ipa": "/ˈnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "zestaw numer",
+          "definition": "A meal on the menu that has its own number, used to order it quickly.",
+          "register": "potoczny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "numbers",
+          "collocations": "a number two; a number five with no pickles",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zamiast nazwy dania mówi się po prostu „a number three”.",
+          "examples": [
+            {
+              "en": "I'll have a number four with no onions and a large iced tea.",
+              "pl": "Poproszę zestaw numer cztery bez cebuli i dużą mrożoną herbatę.",
+              "focusEn": "number four",
+              "focusPl": "zestaw numer cztery"
+            },
+            {
+              "en": "My dad always orders the number two, no matter what's new on the menu.",
+              "pl": "Tata zawsze zamawia zestaw numer dwa, bez względu na nowości w menu.",
+              "focusEn": "number two",
+              "focusPl": "zestaw numer dwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "number"
+          ],
+          "acceptedTranslations": [
+            "zestaw numer",
+            "numer z menu"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.plain",
+          "term": "plain",
+          "ipa": "/pleɪn/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "bez dodatków",
+          "definition": "Without any extra sauce, cheese or vegetables added.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "",
+          "collocations": "a plain burger; plain fries; keep it plain",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przy zamówieniu: „Just plain, please” = bez sosów i warzyw.",
+          "examples": [
+            {
+              "en": "My daughter only eats her hamburger plain, with nothing but the meat and bun.",
+              "pl": "Córka je hamburgera tylko bez dodatków, z samym mięsem i bułką.",
+              "focusEn": "plain",
+              "focusPl": "bez dodatków"
+            },
+            {
+              "en": "I asked for a plain chicken sandwich, but it came covered in sauce.",
+              "pl": "Poprosiłem o kanapkę z kurczakiem bez dodatków, a dostałem całą w sosie.",
+              "focusEn": "plain",
+              "focusPl": "bez dodatków"
+            }
+          ],
+          "acceptedAnswers": [
+            "plain"
+          ],
+          "acceptedTranslations": [
+            "bez dodatków",
+            "zwykły",
+            "sam"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.self-order-kiosk",
+          "term": "self-order kiosk",
+          "ipa": "/ˌself ˈɔːrdər ˌkiːɑːsk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kiosk do samodzielnego zamawiania",
+          "definition": "A touch screen where customers order and pay without talking to a cashier.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "self-order kiosks",
+          "collocations": "use the self-order kiosk; pay at the kiosk",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The line was long, so I used the self-order kiosk by the door.",
+              "pl": "Kolejka była długa, więc skorzystałem z kiosku do samodzielnego zamawiania przy drzwiach.",
+              "focusEn": "self-order kiosk",
+              "focusPl": "kiosku do samodzielnego zamawiania"
+            },
+            {
+              "en": "The self-order kiosk kept asking if I wanted to add a dessert.",
+              "pl": "Kiosk do samodzielnego zamawiania ciągle pytał, czy chcę dodać deser.",
+              "focusEn": "self-order kiosk",
+              "focusPl": "Kiosk do samodzielnego zamawiania"
+            }
+          ],
+          "acceptedAnswers": [
+            "self-order kiosk",
+            "kiosk"
+          ],
+          "acceptedTranslations": [
+            "kiosk do samodzielnego zamawiania",
+            "kiosk samoobsługowy",
+            "automat do zamówień"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.upsize",
+          "term": "upsize",
+          "ipa": "/ˌʌpˈsaɪz/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "powiększyć porcję",
+          "definition": "To change your order to a bigger size of fries or drink for a little more money.",
+          "register": "potoczny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "upsizes – upsized – upsized",
+          "collocations": "upsize your fries; upsize the drink",
+          "synonyms": "supersize",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "For fifty cents more, you can upsize your fries and drink.",
+              "pl": "Za pięćdziesiąt centów więcej może pan powiększyć frytki i napój.",
+              "focusEn": "upsize",
+              "focusPl": "powiększyć"
+            },
+            {
+              "en": "I upsized my combo and then couldn't finish the fries.",
+              "pl": "Powiększyłem zestaw, a potem nie dałem rady zjeść frytek.",
+              "focusEn": "upsized",
+              "focusPl": "Powiększyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "upsize",
+            "supersize"
+          ],
+          "acceptedTranslations": [
+            "powiększyć porcję",
+            "zamówić większą porcję",
+            "powiększyć zestaw",
+            "powiększać"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.will-that-be-all",
+          "term": "will that be all",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "czy to wszystko?",
+          "definition": "A question staff ask to check that you have finished ordering.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "anything else",
+          "antonyms": "",
+          "notePl": "Odpowiedź: „That's it” albo „Yes, that's all”.",
+          "examples": [
+            {
+              "en": "Will that be all, or would you like a dessert with your meal?",
+              "pl": "Czy to wszystko, czy podać jeszcze deser do zestawu?",
+              "focusEn": "Will that be all",
+              "focusPl": "Czy to wszystko"
+            },
+            {
+              "en": "When she asked, \"Will that be all?\" I added a large coffee for my wife.",
+              "pl": "Kiedy zapytała: „Czy to wszystko?”, dorzuciłem dużą kawę dla żony.",
+              "focusEn": "Will that be all",
+              "focusPl": "Czy to wszystko"
+            }
+          ],
+          "acceptedAnswers": [
+            "will that be all",
+            "will that be all?",
+            "is that everything"
+          ],
+          "acceptedTranslations": [
+            "czy to wszystko?",
+            "to wszystko?",
+            "czy coś jeszcze?"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.dine-in",
+          "term": "dine in",
+          "ipa": "/ˌdaɪn ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zjeść na miejscu",
+          "definition": "To eat your food inside the restaurant instead of taking it away.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "dines in – dined in – dined in",
+          "collocations": "dine in or take out",
+          "synonyms": "eat in",
+          "antonyms": "take out",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The dining room closes at ten, so you can't dine in tonight.",
+              "pl": "Sala zamyka się o dziesiątej, więc dziś nie można już zjeść na miejscu.",
+              "focusEn": "dine in",
+              "focusPl": "zjeść na miejscu"
+            },
+            {
+              "en": "We decided to dine in because the kids wanted to use the play area.",
+              "pl": "Postanowiliśmy zjeść na miejscu, bo dzieci chciały pobawić się w kąciku zabaw.",
+              "focusEn": "dine in",
+              "focusPl": "zjeść na miejscu"
+            }
+          ],
+          "acceptedAnswers": [
+            "dine in",
+            "eat in"
+          ],
+          "acceptedTranslations": [
+            "zjeść na miejscu",
+            "jeść na miejscu",
+            "zjeść w lokalu"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.lunch-rush",
+          "term": "lunch rush",
+          "ipa": "/ˈlʌntʃ ˌrʌʃ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "szczyt w porze lunchu",
+          "definition": "The busy time around noon when many customers come in at once.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie w barze szybkiej obsługi",
+          "natural": "",
+          "forms": "",
+          "collocations": "during the lunch rush; beat the lunch rush",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We came at eleven to get there before the lunch rush started.",
+              "pl": "Przyszliśmy o jedenastej, żeby zdążyć, zanim zacznie się szczyt w porze lunchu.",
+              "focusEn": "lunch rush",
+              "focusPl": "szczyt w porze lunchu"
+            },
+            {
+              "en": "During the lunch rush, the line goes all the way to the door.",
+              "pl": "W czasie szczytu w porze lunchu kolejka sięga aż do drzwi.",
+              "focusEn": "lunch rush",
+              "focusPl": "szczytu w porze lunchu"
+            }
+          ],
+          "acceptedAnswers": [
+            "lunch rush"
+          ],
+          "acceptedTranslations": [
+            "szczyt w porze lunchu",
+            "ruch w porze lunchu",
+            "tłok w porze lunchu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fast-food-takeaway.menu",
+      "namePl": "Burgery, frytki i inne dania",
+      "scenePl": "Stolik w barze z burgerami, znajomi rozpakowują tacę pełną jedzenia",
+      "entries": [
+        {
+          "id": "fast-food-takeaway.burger",
+          "term": "burger",
+          "ipa": "/ˈbɜːrɡər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "burger",
+          "definition": "A hot sandwich with a flat piece of cooked ground beef in a round bun.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "burgers",
+          "collocations": "double burger; burger and fries; veggie burger",
+          "synonyms": "hamburger",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My burger was so big that I had to eat it with both hands.",
+              "pl": "Mój burger był tak duży, że musiałem jeść go obiema rękami.",
+              "focusEn": "burger",
+              "focusPl": "burger"
+            },
+            {
+              "en": "My brother unwrapped his burger and found extra pickles inside.",
+              "pl": "Brat rozwinął swojego burgera i znalazł w środku dodatkowe ogórki.",
+              "focusEn": "burger",
+              "focusPl": "burgera"
+            }
+          ],
+          "acceptedAnswers": [
+            "burger",
+            "hamburger"
+          ],
+          "acceptedTranslations": [
+            "burger",
+            "hamburger"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.cheeseburger",
+          "term": "cheeseburger",
+          "ipa": "/ˈtʃiːzˌbɜːrɡər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "cheeseburger",
+          "definition": "A burger with a slice of melted cheese on the meat.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "cheeseburgers",
+          "collocations": "double cheeseburger; bacon cheeseburger",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kids split a cheeseburger because they weren't very hungry.",
+              "pl": "Dzieci podzieliły się cheeseburgerem, bo nie były bardzo głodne.",
+              "focusEn": "cheeseburger",
+              "focusPl": "cheeseburgerem"
+            },
+            {
+              "en": "The cheese on my cheeseburger hadn't even melted.",
+              "pl": "Ser w moim cheeseburgerze nawet się nie roztopił.",
+              "focusEn": "cheeseburger",
+              "focusPl": "cheeseburgerze"
+            }
+          ],
+          "acceptedAnswers": [
+            "cheeseburger"
+          ],
+          "acceptedTranslations": [
+            "cheeseburger",
+            "burger z serem"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.fries",
+          "term": "fries",
+          "ipa": "/fraɪz/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "frytki",
+          "definition": "Long thin pieces of potato cooked in hot oil.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "large fries; curly fries; burger and fries",
+          "synonyms": "French fries",
+          "antonyms": "",
+          "notePl": "W AmE „chips” to chipsy, a frytki to „fries”.",
+          "examples": [
+            {
+              "en": "Everyone at the table kept stealing fries from my bag.",
+              "pl": "Wszyscy przy stoliku podkradali mi frytki z torebki.",
+              "focusEn": "fries",
+              "focusPl": "frytki"
+            },
+            {
+              "en": "The fries were hot and salty, just the way I like them.",
+              "pl": "Frytki były gorące i słone, dokładnie takie, jak lubię.",
+              "focusEn": "fries",
+              "focusPl": "Frytki"
+            }
+          ],
+          "acceptedAnswers": [
+            "fries",
+            "French fries"
+          ],
+          "acceptedTranslations": [
+            "frytki"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.chicken-nuggets",
+          "term": "chicken nuggets",
+          "ipa": "/ˈtʃɪkən ˌnʌɡɪts/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "nuggetsy z kurczaka",
+          "definition": "Small pieces of chicken covered in breadcrumbs and fried.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "ten-piece chicken nuggets; dip chicken nuggets",
+          "synonyms": "nuggets",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My daughter ordered six chicken nuggets and a small apple juice.",
+              "pl": "Córka zamówiła sześć nuggetsów z kurczaka i mały sok jabłkowy.",
+              "focusEn": "chicken nuggets",
+              "focusPl": "nuggetsów z kurczaka"
+            },
+            {
+              "en": "We dipped the chicken nuggets in honey mustard and barbecue sauce.",
+              "pl": "Maczaliśmy nuggetsy z kurczaka w sosie miodowo-musztardowym i barbecue.",
+              "focusEn": "chicken nuggets",
+              "focusPl": "nuggetsy z kurczaka"
+            }
+          ],
+          "acceptedAnswers": [
+            "chicken nuggets",
+            "nuggets"
+          ],
+          "acceptedTranslations": [
+            "nuggetsy z kurczaka",
+            "nuggetsy",
+            "kawałki kurczaka w panierce"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.hot-dog",
+          "term": "hot dog",
+          "ipa": "/ˈhɑːt ˌdɔːɡ/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "hot dog",
+          "definition": "A cooked sausage served in a long soft bun.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "hot dogs",
+          "collocations": "hot dog stand; hot dog with mustard",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He ate a hot dog in three bites while standing at the counter.",
+              "pl": "Zjadł hot doga w trzech kęsach, stojąc przy ladzie.",
+              "focusEn": "hot dog",
+              "focusPl": "hot doga"
+            },
+            {
+              "en": "The hot dog came with onions and so much mustard that it dripped.",
+              "pl": "Hot dog był z cebulą i z taką ilością musztardy, że aż kapała.",
+              "focusEn": "hot dog",
+              "focusPl": "Hot dog"
+            }
+          ],
+          "acceptedAnswers": [
+            "hot dog"
+          ],
+          "acceptedTranslations": [
+            "hot dog",
+            "parówka w bułce"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.fried-chicken",
+          "term": "fried chicken",
+          "ipa": "/ˌfraɪd ˈtʃɪkən/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "smażony kurczak",
+          "definition": "Pieces of chicken covered in a seasoned coating and fried in oil.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "spicy fried chicken; fried chicken sandwich",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The fried chicken was crispy outside and juicy inside.",
+              "pl": "Smażony kurczak był chrupiący z zewnątrz i soczysty w środku.",
+              "focusEn": "fried chicken",
+              "focusPl": "Smażony kurczak"
+            },
+            {
+              "en": "I got fried chicken all over my fingers and ran out of napkins.",
+              "pl": "Miałem palce całe w smażonym kurczaku i zabrakło mi serwetek.",
+              "focusEn": "fried chicken",
+              "focusPl": "smażonym kurczaku"
+            }
+          ],
+          "acceptedAnswers": [
+            "fried chicken"
+          ],
+          "acceptedTranslations": [
+            "smażony kurczak",
+            "kurczak w panierce",
+            "kurczak smażony"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.bucket",
+          "term": "bucket",
+          "ipa": "/ˈbʌkɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kubełek",
+          "definition": "A large paper container of fried chicken pieces to share.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "buckets",
+          "collocations": "a bucket of chicken; family bucket",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We shared a bucket of chicken wings at the corner table.",
+              "pl": "Przy stoliku w rogu zjedliśmy na spółkę kubełek skrzydełek.",
+              "focusEn": "bucket",
+              "focusPl": "kubełek"
+            },
+            {
+              "en": "The eight-piece bucket was empty before anyone touched the coleslaw.",
+              "pl": "Ośmioczęściowy kubełek był pusty, zanim ktokolwiek tknął surówkę coleslaw.",
+              "focusEn": "bucket",
+              "focusPl": "kubełek"
+            }
+          ],
+          "acceptedAnswers": [
+            "bucket"
+          ],
+          "acceptedTranslations": [
+            "kubełek",
+            "kubełek kurczaka"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.onion-rings",
+          "term": "onion rings",
+          "ipa": "/ˈʌnjən ˌrɪŋz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "krążki cebulowe",
+          "definition": "Slices of onion covered in batter and fried in rings.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "a side of onion rings",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I swapped my fries for onion rings for an extra dollar.",
+              "pl": "Za dodatkowego dolara zamieniłem frytki na krążki cebulowe.",
+              "focusEn": "onion rings",
+              "focusPl": "krążki cebulowe"
+            },
+            {
+              "en": "The onion rings were too greasy, so we left half of them.",
+              "pl": "Krążki cebulowe były zbyt tłuste, więc połowę zostawiliśmy.",
+              "focusEn": "onion rings",
+              "focusPl": "Krążki cebulowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "onion rings"
+          ],
+          "acceptedTranslations": [
+            "krążki cebulowe",
+            "krążki cebuli"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.milkshake",
+          "term": "milkshake",
+          "ipa": "/ˈmɪlkʃeɪk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "koktajl mleczny",
+          "definition": "A cold, thick drink made from milk and ice cream.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "milkshakes",
+          "collocations": "chocolate milkshake; vanilla milkshake",
+          "synonyms": "shake",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The milkshake was so thick I couldn't drink it through the straw.",
+              "pl": "Koktajl mleczny był tak gęsty, że nie dało się go pić przez słomkę.",
+              "focusEn": "milkshake",
+              "focusPl": "Koktajl mleczny"
+            },
+            {
+              "en": "We dipped our fries in a vanilla milkshake, which sounds strange but tastes great.",
+              "pl": "Maczaliśmy frytki w waniliowym koktajlu mlecznym, co brzmi dziwnie, ale smakuje świetnie.",
+              "focusEn": "milkshake",
+              "focusPl": "koktajlu mlecznym"
+            }
+          ],
+          "acceptedAnswers": [
+            "milkshake",
+            "shake"
+          ],
+          "acceptedTranslations": [
+            "koktajl mleczny",
+            "shake",
+            "milkshake"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.wrap",
+          "term": "wrap",
+          "ipa": "/ræp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wrap",
+          "definition": "A sandwich made with a soft flat tortilla rolled around a filling.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "wraps",
+          "collocations": "chicken wrap; veggie wrap",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I ordered a grilled chicken wrap instead of a burger to eat something lighter.",
+              "pl": "Zamiast burgera zamówiłem wrapa z grillowanym kurczakiem, żeby zjeść coś lżejszego.",
+              "focusEn": "wrap",
+              "focusPl": "wrapa"
+            },
+            {
+              "en": "The wrap fell apart as soon as I took it out of the paper.",
+              "pl": "Wrap rozpadł się, gdy tylko wyjąłem go z papieru.",
+              "focusEn": "wrap",
+              "focusPl": "Wrap"
+            }
+          ],
+          "acceptedAnswers": [
+            "wrap"
+          ],
+          "acceptedTranslations": [
+            "wrap",
+            "tortilla z nadzieniem",
+            "tortilla"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.bun",
+          "term": "bun",
+          "ipa": "/bʌn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "bułka",
+          "definition": "A soft round bread roll used for burgers and hot dogs.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "buns",
+          "collocations": "sesame seed bun; toasted bun",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The bun was toasted and covered in sesame seeds.",
+              "pl": "Bułka była podpieczona i posypana sezamem.",
+              "focusEn": "bun",
+              "focusPl": "Bułka"
+            },
+            {
+              "en": "My burger slid right out of the bun when I took the first bite.",
+              "pl": "Przy pierwszym kęsie burger wysunął mi się z bułki.",
+              "focusEn": "bun",
+              "focusPl": "bułki"
+            }
+          ],
+          "acceptedAnswers": [
+            "bun"
+          ],
+          "acceptedTranslations": [
+            "bułka",
+            "bułka do burgera"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.patty",
+          "term": "patty",
+          "ipa": "/ˈpæti/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "kotlet do burgera",
+          "definition": "A flat round piece of ground meat or vegetables cooked for a burger.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "patties",
+          "collocations": "beef patty; double patty; veggie patty",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I asked for a double patty because one never fills me up.",
+              "pl": "Poprosiłem o podwójny kotlet, bo jeden nigdy mnie nie syci.",
+              "focusEn": "patty",
+              "focusPl": "kotlet"
+            },
+            {
+              "en": "The patty was thin and a little burned around the edges.",
+              "pl": "Kotlet był cienki i trochę przypalony na brzegach.",
+              "focusEn": "patty",
+              "focusPl": "Kotlet"
+            }
+          ],
+          "acceptedAnswers": [
+            "patty"
+          ],
+          "acceptedTranslations": [
+            "kotlet do burgera",
+            "kotlet",
+            "kotlet mielony"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.pickles",
+          "term": "pickles",
+          "ipa": "/ˈpɪkəlz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ogórki konserwowe",
+          "definition": "Slices of cucumber kept in vinegar, often put on burgers.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "pickle",
+          "collocations": "extra pickles; no pickles",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na burgerach to plasterki ogórka konserwowego.",
+          "examples": [
+            {
+              "en": "I always pick the pickles off my burger and give them to my wife.",
+              "pl": "Zawsze wyjmuję ogórki konserwowe z burgera i daję je żonie.",
+              "focusEn": "pickles",
+              "focusPl": "ogórki konserwowe"
+            },
+            {
+              "en": "The burger came with three thick slices of pickles and one of tomato.",
+              "pl": "Burger miał w środku trzy grube plasterki ogórków konserwowych i jeden pomidora.",
+              "focusEn": "pickles",
+              "focusPl": "ogórków konserwowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "pickles",
+            "pickle"
+          ],
+          "acceptedTranslations": [
+            "ogórki konserwowe",
+            "korniszony",
+            "ogórek konserwowy",
+            "pikle"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.hash-brown",
+          "term": "hash brown",
+          "ipa": "/ˌhæʃ ˈbraʊn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "placek ziemniaczany",
+          "definition": "A flat cake of grated potato fried until golden, often eaten at breakfast.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "hash browns",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My breakfast sandwich came with a hash brown in a paper sleeve.",
+              "pl": "Do kanapki śniadaniowej dostałem placek ziemniaczany w papierowej kopercie.",
+              "focusEn": "hash brown",
+              "focusPl": "placek ziemniaczany"
+            },
+            {
+              "en": "We got there too late for breakfast, so no hash browns for us.",
+              "pl": "Przyszliśmy za późno na śniadanie, więc nie dostaliśmy placków ziemniaczanych.",
+              "focusEn": "hash browns",
+              "focusPl": "placków ziemniaczanych"
+            }
+          ],
+          "acceptedAnswers": [
+            "hash brown",
+            "hash browns"
+          ],
+          "acceptedTranslations": [
+            "placek ziemniaczany",
+            "placuszek ziemniaczany"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.sundae",
+          "term": "sundae",
+          "ipa": "/ˈsʌndeɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "deser lodowy",
+          "definition": "A dish of ice cream with sauce, nuts or other toppings on top.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "sundaes",
+          "collocations": "hot fudge sundae; caramel sundae",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We finished with a chocolate sundae and two spoons.",
+              "pl": "Na koniec zjedliśmy czekoladowy deser lodowy dwiema łyżeczkami.",
+              "focusEn": "sundae",
+              "focusPl": "deser lodowy"
+            },
+            {
+              "en": "The ice cream machine was broken again, so no sundaes tonight.",
+              "pl": "Maszyna do lodów znowu była zepsuta, więc dziś nie było deserów lodowych.",
+              "focusEn": "sundaes",
+              "focusPl": "deserów lodowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "sundae"
+          ],
+          "acceptedTranslations": [
+            "deser lodowy",
+            "lody z polewą"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.deep-fried",
+          "term": "deep-fried",
+          "ipa": "/ˌdiːp ˈfraɪd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "smażony w głębokim tłuszczu",
+          "definition": "Cooked by putting it completely into very hot oil.",
+          "register": "neutralny",
+          "contextPl": "Dania z menu fast foodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "deep-fried chicken; deep-fried pickles",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Almost everything on this menu is deep-fried, even the dessert.",
+              "pl": "Prawie wszystko w tym menu jest smażone w głębokim tłuszczu, nawet deser.",
+              "focusEn": "deep-fried",
+              "focusPl": "smażone w głębokim tłuszczu"
+            },
+            {
+              "en": "The deep-fried cheese sticks were gone in two minutes.",
+              "pl": "Paluszki serowe smażone w głębokim tłuszczu zniknęły w dwie minuty.",
+              "focusEn": "deep-fried",
+              "focusPl": "smażone w głębokim tłuszczu"
+            }
+          ],
+          "acceptedAnswers": [
+            "deep-fried"
+          ],
+          "acceptedTranslations": [
+            "smażony w głębokim tłuszczu",
+            "z frytkownicy",
+            "smażony na głębokim tłuszczu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fast-food-takeaway.extras",
+      "namePl": "Sosy, dodatki i napoje",
+      "scenePl": "Stanowisko z sosami, serwetkami i automatem z napojami obok lady",
+      "entries": [
+        {
+          "id": "fast-food-takeaway.ketchup",
+          "term": "ketchup",
+          "ipa": "/ˈketʃəp/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "keczup",
+          "definition": "A thick red sauce made from tomatoes.",
+          "register": "neutralny",
+          "contextPl": "Sosy, dodatki i napoje w barze",
+          "natural": "",
+          "forms": "",
+          "collocations": "ketchup pump; squirt of ketchup",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The ketchup pump was empty, so I asked for a few packets.",
+              "pl": "Dozownik z keczupem był pusty, więc poprosiłem o kilka saszetek.",
+              "focusEn": "ketchup",
+              "focusPl": "keczupem"
+            },
+            {
+              "en": "My son puts ketchup on everything, even his chicken nuggets.",
+              "pl": "Mój syn polewa keczupem wszystko, nawet nuggetsy.",
+              "focusEn": "ketchup",
+              "focusPl": "keczupem"
+            }
+          ],
+          "acceptedAnswers": [
+            "ketchup"
+          ],
+          "acceptedTranslations": [
+            "keczup",
+            "ketchup"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.mustard",
+          "term": "mustard",
+          "ipa": "/ˈmʌstərd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "musztarda",
+          "definition": "A yellow, slightly spicy sauce made from seeds, often eaten on hot dogs.",
+          "register": "neutralny",
+          "contextPl": "Sosy, dodatki i napoje w barze",
+          "natural": "",
+          "forms": "",
+          "collocations": "yellow mustard; honey mustard",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I squeezed some mustard onto my hot dog at the sauce station.",
+              "pl": "Przy stanowisku z sosami wycisnąłem trochę musztardy na hot doga.",
+              "focusEn": "mustard",
+              "focusPl": "musztardy"
+            },
+            {
+              "en": "There was no mustard left in the pump, only ketchup and mayo.",
+              "pl": "W dozowniku nie było już musztardy, tylko keczup i majonez.",
+              "focusEn": "mustard",
+              "focusPl": "musztardy"
+            }
+          ],
+          "acceptedAnswers": [
+            "mustard"
+          ],
+          "acceptedTranslations": [
+            "musztarda"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.mayo",
+          "term": "mayo",
+          "ipa": "/ˈmeɪoʊ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "majonez",
+          "definition": "A thick white sauce made from eggs and oil; short for mayonnaise.",
+          "register": "potoczny",
+          "contextPl": "Sosy, dodatki i napoje w barze",
+          "natural": "",
+          "forms": "",
+          "collocations": "extra mayo; light mayo",
+          "synonyms": "mayonnaise",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This chicken sandwich has way too much mayo on it.",
+              "pl": "Na tej kanapce z kurczakiem jest zdecydowanie za dużo majonezu.",
+              "focusEn": "mayo",
+              "focusPl": "majonezu"
+            },
+            {
+              "en": "She grabbed two little cups of mayo for her fries.",
+              "pl": "Wzięła dwa małe kubeczki majonezu do frytek.",
+              "focusEn": "mayo",
+              "focusPl": "majonezu"
+            }
+          ],
+          "acceptedAnswers": [
+            "mayo",
+            "mayonnaise"
+          ],
+          "acceptedTranslations": [
+            "majonez"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.condiments",
+          "term": "condiments",
+          "ipa": "/ˈkɑːndəmənts/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sosy i dodatki",
+          "definition": "Sauces such as ketchup and mustard that you add to your food yourself.",
+          "register": "neutralny",
+          "contextPl": "Sosy, dodatki i napoje w barze",
+          "natural": "",
+          "forms": "condiment",
+          "collocations": "condiment station; condiment packets",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The condiments are by the soda machine, next to the napkins.",
+              "pl": "Sosy i dodatki są przy automacie z napojami, obok serwetek.",
+              "focusEn": "condiments",
+              "focusPl": "Sosy i dodatki"
+            },
+            {
+              "en": "They keep the condiments behind the counter, so you have to ask.",
+              "pl": "Trzymają sosy i dodatki za ladą, więc trzeba o nie poprosić.",
+              "focusEn": "condiments",
+              "focusPl": "sosy i dodatki"
+            }
+          ],
+          "acceptedAnswers": [
+            "condiments",
+            "condiment"
+          ],
+          "acceptedTranslations": [
+            "sosy i dodatki",
+            "dodatki",
+            "sosy",
+            "przyprawy"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.dipping-sauce",
+          "term": "dipping sauce",
+          "ipa": "/ˈdɪpɪŋ ˌsɔːs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sos do maczania",
+          "definition": "A sauce in a small cup for dipping nuggets, fries or wings.",
+          "register": "neutralny",
+          "contextPl": "Sosy, dodatki i napoje w barze",
+          "natural": "",
+          "forms": "dipping sauces",
+          "collocations": "barbecue dipping sauce; ranch dipping sauce",
+          "synonyms": "dip",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The nuggets come with two dipping sauces of your choice.",
+              "pl": "Do nuggetsów dostaje się dwa sosy do maczania do wyboru.",
+              "focusEn": "dipping sauces",
+              "focusPl": "sosy do maczania"
+            },
+            {
+              "en": "I ran out of dipping sauce long before I ran out of fries.",
+              "pl": "Sos do maczania skończył mi się dużo szybciej niż frytki.",
+              "focusEn": "dipping sauce",
+              "focusPl": "Sos do maczania"
+            }
+          ],
+          "acceptedAnswers": [
+            "dipping sauce"
+          ],
+          "acceptedTranslations": [
+            "sos do maczania",
+            "dip",
+            "sos"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.fountain-drink",
+          "term": "fountain drink",
+          "ipa": "/ˈfaʊntən ˌdrɪŋk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "napój z automatu",
+          "definition": "A soft drink you pour yourself from a machine into a paper cup.",
+          "register": "neutralny",
+          "contextPl": "Sosy, dodatki i napoje w barze",
+          "natural": "",
+          "forms": "fountain drinks",
+          "collocations": "large fountain drink",
+          "synonyms": "soda",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'll just have a small fountain drink, no ice.",
+              "pl": "Poproszę tylko mały napój z automatu, bez lodu.",
+              "focusEn": "fountain drink",
+              "focusPl": "napój z automatu"
+            },
+            {
+              "en": "The fountain drink tasted flat, so the manager changed the syrup.",
+              "pl": "Napój z automatu był bez gazu, więc kierownik wymienił syrop.",
+              "focusEn": "fountain drink",
+              "focusPl": "Napój z automatu"
+            }
+          ],
+          "acceptedAnswers": [
+            "fountain drink"
+          ],
+          "acceptedTranslations": [
+            "napój z automatu",
+            "napój z dystrybutora",
+            "napój gazowany"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.free-refills",
+          "term": "free refills",
+          "ipa": "/ˌfriː ˈriːfɪlz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "darmowe dolewki",
+          "definition": "The right to fill your drink cup again at no extra cost.",
+          "register": "neutralny",
+          "contextPl": "Sosy, dodatki i napoje w barze",
+          "natural": "",
+          "forms": "",
+          "collocations": "free refills on soft drinks",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This place has free refills, so we filled our cups again before we left.",
+              "pl": "Tu są darmowe dolewki, więc przed wyjściem napełniliśmy kubki jeszcze raz.",
+              "focusEn": "free refills",
+              "focusPl": "darmowe dolewki"
+            },
+            {
+              "en": "The sign by the soda machine says free refills are for dine-in customers only.",
+              "pl": "Kartka przy automacie mówi, że darmowe dolewki są tylko dla jedzących na miejscu.",
+              "focusEn": "free refills",
+              "focusPl": "darmowe dolewki"
+            }
+          ],
+          "acceptedAnswers": [
+            "free refills",
+            "free refill"
+          ],
+          "acceptedTranslations": [
+            "darmowe dolewki",
+            "darmowa dolewka",
+            "bezpłatna dolewka"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.ketchup-packet",
+          "term": "ketchup packet",
+          "ipa": "/ˈketʃəp ˌpækɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "saszetka keczupu",
+          "definition": "A small plastic bag with one portion of ketchup inside.",
+          "register": "neutralny",
+          "contextPl": "Sosy, dodatki i napoje w barze",
+          "natural": "",
+          "forms": "ketchup packets",
+          "collocations": "grab a few ketchup packets",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There were about twenty ketchup packets at the bottom of the bag.",
+              "pl": "Na dnie torby leżało jakieś dwadzieścia saszetek keczupu.",
+              "focusEn": "ketchup packets",
+              "focusPl": "saszetek keczupu"
+            },
+            {
+              "en": "Tearing open a ketchup packet with one hand is harder than it looks.",
+              "pl": "Rozerwanie saszetki keczupu jedną ręką jest trudniejsze, niż się wydaje.",
+              "focusEn": "ketchup packet",
+              "focusPl": "saszetki keczupu"
+            }
+          ],
+          "acceptedAnswers": [
+            "ketchup packet"
+          ],
+          "acceptedTranslations": [
+            "saszetka keczupu",
+            "saszetka z keczupem",
+            "saszetka"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.utensils",
+          "term": "utensils",
+          "ipa": "/juːˈtensəlz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sztućce",
+          "definition": "Forks, knives and spoons, often plastic ones in a fast-food place.",
+          "register": "neutralny",
+          "contextPl": "Sosy, dodatki i napoje w barze",
+          "natural": "",
+          "forms": "utensil",
+          "collocations": "plastic utensils; no utensils, please",
+          "synonyms": "silverware",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The plastic utensils are in a box next to the straws.",
+              "pl": "Plastikowe sztućce są w pudełku obok słomek.",
+              "focusEn": "utensils",
+              "focusPl": "sztućce"
+            },
+            {
+              "en": "There were no utensils left, so I had to ask at the counter.",
+              "pl": "Nie było już sztućców, więc musiałem poprosić o nie przy ladzie.",
+              "focusEn": "utensils",
+              "focusPl": "sztućców"
+            }
+          ],
+          "acceptedAnswers": [
+            "utensils",
+            "utensil"
+          ],
+          "acceptedTranslations": [
+            "sztućce",
+            "plastikowe sztućce"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.light-ice",
+          "term": "light ice",
+          "ipa": "/ˌlaɪt ˈaɪs/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "mało lodu",
+          "definition": "Used when ordering a drink to ask for only a little ice in the cup.",
+          "register": "potoczny",
+          "contextPl": "Sosy, dodatki i napoje w barze",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przeciwieństwo: „extra ice”, „no ice”.",
+          "examples": [
+            {
+              "en": "Can I get a large lemonade with light ice?",
+              "pl": "Poproszę dużą lemoniadę z małą ilością lodu.",
+              "focusEn": "light ice",
+              "focusPl": "małą ilością lodu"
+            },
+            {
+              "en": "I always ask for light ice so I get more drink for my money.",
+              "pl": "Zawsze proszę o mało lodu, żeby za te same pieniądze dostać więcej napoju.",
+              "focusEn": "light ice",
+              "focusPl": "mało lodu"
+            }
+          ],
+          "acceptedAnswers": [
+            "light ice"
+          ],
+          "acceptedTranslations": [
+            "mało lodu",
+            "z małą ilością lodu"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.side-order",
+          "term": "side order",
+          "ipa": "/ˈsaɪd ˌɔːrdər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "porcja dodatku",
+          "definition": "An extra small dish, like fries or salad, ordered with your main food.",
+          "register": "neutralny",
+          "contextPl": "Sosy, dodatki i napoje w barze",
+          "natural": "",
+          "forms": "side orders",
+          "collocations": "a side order of fries",
+          "synonyms": "side",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We added a side order of mozzarella sticks for the whole table.",
+              "pl": "Dla całego stolika zamówiliśmy dodatkową porcję paluszków z mozzarellą.",
+              "focusEn": "side order",
+              "focusPl": "porcję"
+            },
+            {
+              "en": "A side order of fries costs almost as much as the whole combo.",
+              "pl": "Osobna porcja frytek kosztuje prawie tyle, co cały zestaw.",
+              "focusEn": "side order",
+              "focusPl": "porcja"
+            }
+          ],
+          "acceptedAnswers": [
+            "side order"
+          ],
+          "acceptedTranslations": [
+            "porcja dodatku",
+            "dodatek",
+            "porcja"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fast-food-takeaway.drive-thru",
+      "namePl": "Drive-thru",
+      "scenePl": "Samochód w kolejce do okienka drive-thru późnym wieczorem",
+      "entries": [
+        {
+          "id": "fast-food-takeaway.drive-thru-window",
+          "term": "drive-thru window",
+          "ipa": "/ˈdraɪv θruː ˌwɪndoʊ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "okienko drive-thru",
+          "definition": "The window where drivers pay for and pick up food without leaving the car.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie z samochodu",
+          "natural": "",
+          "forms": "drive-thru windows",
+          "collocations": "pay at the drive-thru window; pickup window",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia „drive-thru” jest w USA częstsza niż „drive-through”.",
+          "examples": [
+            {
+              "en": "We pulled up to the drive-thru window with the radio still blasting.",
+              "pl": "Podjechaliśmy do okienka drive-thru z wciąż głośno grającym radiem.",
+              "focusEn": "drive-thru window",
+              "focusPl": "okienka drive-thru"
+            },
+            {
+              "en": "The worker at the drive-thru window handed us two bags and a tray of drinks.",
+              "pl": "Pracownik w okienku drive-thru podał nam dwie torby i tackę z napojami.",
+              "focusEn": "drive-thru window",
+              "focusPl": "okienku drive-thru"
+            }
+          ],
+          "acceptedAnswers": [
+            "drive-thru window",
+            "drive-through window",
+            "pickup window"
+          ],
+          "acceptedTranslations": [
+            "okienko drive-thru",
+            "okienko dla kierowców",
+            "okienko w drive-thru"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.drive-thru-lane",
+          "term": "drive-thru lane",
+          "ipa": "/ˈdraɪv θruː ˌleɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kolejka do drive-thru",
+          "definition": "The lane where cars wait in line to order food without leaving their seats.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie z samochodu",
+          "natural": "",
+          "forms": "drive-thru lanes",
+          "collocations": "the drive-thru lane wraps around the building",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "At midnight, the drive-thru lane went all the way around the building.",
+              "pl": "O północy kolejka do drive-thru ciągnęła się dookoła całego budynku.",
+              "focusEn": "drive-thru lane",
+              "focusPl": "kolejka do drive-thru"
+            },
+            {
+              "en": "We got stuck in the drive-thru lane behind a minivan ordering for ten people.",
+              "pl": "Utknęliśmy w kolejce do drive-thru za minivanem, który zamawiał dla dziesięciu osób.",
+              "focusEn": "drive-thru lane",
+              "focusPl": "kolejce do drive-thru"
+            }
+          ],
+          "acceptedAnswers": [
+            "drive-thru lane",
+            "drive-through lane",
+            "drive-thru line"
+          ],
+          "acceptedTranslations": [
+            "kolejka do drive-thru",
+            "pas drive-thru",
+            "kolejka aut do drive-thru"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.speaker",
+          "term": "speaker",
+          "ipa": "/ˈspiːkər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "głośnik",
+          "definition": "The small box with a microphone where drivers say their order.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie z samochodu",
+          "natural": "",
+          "forms": "speakers",
+          "collocations": "order at the speaker",
+          "synonyms": "intercom",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The voice from the speaker was so quiet that I had to repeat my order twice.",
+              "pl": "Głos z głośnika był tak cichy, że musiałem dwa razy powtarzać zamówienie.",
+              "focusEn": "speaker",
+              "focusPl": "głośnika"
+            },
+            {
+              "en": "My husband leaned out the window and shouted our order into the speaker.",
+              "pl": "Mąż wychylił się przez okno i wykrzyczał zamówienie do głośnika.",
+              "focusEn": "speaker",
+              "focusPl": "głośnika"
+            }
+          ],
+          "acceptedAnswers": [
+            "speaker"
+          ],
+          "acceptedTranslations": [
+            "głośnik",
+            "mikrofon z głośnikiem"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.pull-up",
+          "term": "pull up",
+          "ipa": "/ˌpʊl ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "podjechać",
+          "definition": "To drive forward and stop at a particular place.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie z samochodu",
+          "natural": "",
+          "forms": "pulls up – pulled up – pulled up",
+          "collocations": "pull up to the window; pull up to the speaker",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please pull up to the second window to pay.",
+              "pl": "Proszę podjechać do drugiego okienka, żeby zapłacić.",
+              "focusEn": "pull up",
+              "focusPl": "podjechać"
+            },
+            {
+              "en": "We pulled up to the menu board and still hadn't decided what to get.",
+              "pl": "Podjechaliśmy pod tablicę z menu i wciąż nie wiedzieliśmy, co wziąć.",
+              "focusEn": "pulled up",
+              "focusPl": "Podjechaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "pull up"
+          ],
+          "acceptedTranslations": [
+            "podjechać",
+            "podjeżdżać",
+            "zatrzymać się"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.pull-forward",
+          "term": "pull forward",
+          "ipa": "/ˌpʊl ˈfɔːrwərd/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "podjechać dalej",
+          "definition": "To drive a little further ahead, often to wait in a special spot for your food.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie z samochodu",
+          "natural": "",
+          "forms": "pulls forward – pulled forward – pulled forward",
+          "collocations": "pull forward and wait",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The fries weren't ready, so they asked us to pull forward and wait.",
+              "pl": "Frytki nie były gotowe, więc poprosili, żebyśmy podjechali dalej i poczekali.",
+              "focusEn": "pull forward",
+              "focusPl": "podjechali dalej"
+            },
+            {
+              "en": "We pulled forward into the waiting spot, and ten minutes later someone ran out with our bag.",
+              "pl": "Podjechaliśmy dalej na miejsce oczekiwania i po dziesięciu minutach ktoś wybiegł z naszą torbą.",
+              "focusEn": "pulled forward",
+              "focusPl": "Podjechaliśmy dalej"
+            }
+          ],
+          "acceptedAnswers": [
+            "pull forward"
+          ],
+          "acceptedTranslations": [
+            "podjechać dalej",
+            "podjechać do przodu",
+            "przejechać do przodu"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.wrong-order",
+          "term": "wrong order",
+          "ipa": "/ˌrɔːŋ ˈɔːrdər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pomylone zamówienie",
+          "definition": "Food that is not what you asked for, given to you by mistake.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie z samochodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "get the wrong order; hand someone the wrong order",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We drove all the way home before we noticed we had the wrong order.",
+              "pl": "Dojechaliśmy aż do domu, zanim zauważyliśmy, że mamy pomylone zamówienie.",
+              "focusEn": "wrong order",
+              "focusPl": "pomylone zamówienie"
+            },
+            {
+              "en": "When I opened the bag at the window, I saw it was the wrong order.",
+              "pl": "Kiedy przy okienku otworzyłem torbę, zobaczyłem, że to nie moje zamówienie.",
+              "focusEn": "wrong order",
+              "focusPl": "nie moje zamówienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "wrong order"
+          ],
+          "acceptedTranslations": [
+            "pomylone zamówienie",
+            "nie to zamówienie",
+            "nie moje zamówienie",
+            "złe zamówienie"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.check-the-bag",
+          "term": "check the bag",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sprawdzić torbę",
+          "definition": "To look inside your food bag before leaving to make sure everything is there.",
+          "register": "potoczny",
+          "contextPl": "Zamawianie z samochodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "always check the bag",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Always check the bag before you drive off, because they forget the sauce.",
+              "pl": "Zawsze sprawdzaj torbę, zanim odjedziesz, bo zapominają o sosie.",
+              "focusEn": "check the bag",
+              "focusPl": "sprawdzaj torbę"
+            },
+            {
+              "en": "I checked the bag in the parking lot, and my burger was missing.",
+              "pl": "Sprawdziłem torbę na parkingu i okazało się, że brakuje mojego burgera.",
+              "focusEn": "checked the bag",
+              "focusPl": "Sprawdziłem torbę"
+            }
+          ],
+          "acceptedAnswers": [
+            "check the bag"
+          ],
+          "acceptedTranslations": [
+            "sprawdzić torbę",
+            "zajrzeć do torby",
+            "sprawdzić zawartość torby"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.late-night",
+          "term": "late-night",
+          "ipa": "/ˌleɪt ˈnaɪt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nocny",
+          "definition": "Happening or open very late in the evening or at night.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie z samochodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "late-night snack; late-night menu; late-night run",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The late-night menu only has burgers, fries and shakes.",
+              "pl": "Nocne menu obejmuje tylko burgery, frytki i koktajle mleczne.",
+              "focusEn": "late-night",
+              "focusPl": "Nocne"
+            },
+            {
+              "en": "After the movie, we made a late-night run to the drive-thru.",
+              "pl": "Po filmie wybraliśmy się na nocny wypad do drive-thru.",
+              "focusEn": "late-night",
+              "focusPl": "nocny"
+            }
+          ],
+          "acceptedAnswers": [
+            "late-night"
+          ],
+          "acceptedTranslations": [
+            "nocny",
+            "późnowieczorny",
+            "późny"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fast-food-takeaway.delivery",
+      "namePl": "Dostawa i aplikacje",
+      "scenePl": "Wieczór na kanapie: zamawianie jedzenia przez aplikację i czekanie na kuriera",
+      "entries": [
+        {
+          "id": "fast-food-takeaway.takeout",
+          "term": "takeout",
+          "ipa": "/ˈteɪkaʊt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "jedzenie na wynos",
+          "definition": "Food bought from a restaurant to eat somewhere else, usually at home.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie jedzenia z dostawą do domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "get takeout; order takeout; takeout menu",
+          "synonyms": "carryout",
+          "antonyms": "",
+          "notePl": "Brytyjski odpowiednik to „takeaway”; w USA mówi się „takeout”.",
+          "examples": [
+            {
+              "en": "We were too tired to cook, so we got takeout and ate on the couch.",
+              "pl": "Byliśmy zbyt zmęczeni, żeby gotować, więc wzięliśmy jedzenie na wynos i zjedliśmy na kanapie.",
+              "focusEn": "takeout",
+              "focusPl": "jedzenie na wynos"
+            },
+            {
+              "en": "The drawer by the fridge is full of old takeout menus.",
+              "pl": "Szuflada przy lodówce jest pełna starych ulotek z jedzeniem na wynos.",
+              "focusEn": "takeout",
+              "focusPl": "jedzeniem na wynos"
+            }
+          ],
+          "acceptedAnswers": [
+            "takeout",
+            "take-out",
+            "carryout"
+          ],
+          "acceptedTranslations": [
+            "jedzenie na wynos",
+            "na wynos",
+            "jedzenie z dowozem"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.order-in",
+          "term": "order in",
+          "ipa": "/ˌɔːrdər ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zamówić jedzenie do domu",
+          "definition": "To have food from a restaurant delivered to your home instead of cooking or going out.",
+          "register": "potoczny",
+          "contextPl": "Zamawianie jedzenia z dostawą do domu",
+          "natural": "",
+          "forms": "orders in – ordered in – ordered in",
+          "collocations": "order in tonight; order in pizza",
+          "synonyms": "",
+          "antonyms": "eat out",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's raining and nobody wants to go out, so let's order in.",
+              "pl": "Pada i nikomu nie chce się wychodzić, więc zamówmy jedzenie do domu.",
+              "focusEn": "order in",
+              "focusPl": "zamówmy jedzenie do domu"
+            },
+            {
+              "en": "We ordered in Thai food and watched a movie while we waited.",
+              "pl": "Zamówiliśmy do domu tajskie jedzenie i czekając, oglądaliśmy film.",
+              "focusEn": "ordered in",
+              "focusPl": "Zamówiliśmy do domu"
+            }
+          ],
+          "acceptedAnswers": [
+            "order in"
+          ],
+          "acceptedTranslations": [
+            "zamówić jedzenie do domu",
+            "zamawiać jedzenie do domu",
+            "zamówić z dowozem",
+            "zamówić do domu"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.delivery-app",
+          "term": "delivery app",
+          "ipa": "/dɪˈlɪvəri ˌæp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "aplikacja do zamawiania jedzenia",
+          "definition": "A phone app for ordering food from restaurants and having it brought to you.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie jedzenia z dostawą do domu",
+          "natural": "",
+          "forms": "delivery apps",
+          "collocations": "open a delivery app; order through a delivery app",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I scrolled through the delivery app for twenty minutes and still couldn't choose.",
+              "pl": "Przez dwadzieścia minut przewijałem aplikację do zamawiania jedzenia i nadal nie mogłem wybrać.",
+              "focusEn": "delivery app",
+              "focusPl": "aplikację do zamawiania jedzenia"
+            },
+            {
+              "en": "The pizza place is cheaper if you call them instead of using a delivery app.",
+              "pl": "Pizzeria jest tańsza, jeśli zadzwonisz bezpośrednio, a nie zamówisz przez aplikację do zamawiania jedzenia.",
+              "focusEn": "delivery app",
+              "focusPl": "aplikację do zamawiania jedzenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "delivery app"
+          ],
+          "acceptedTranslations": [
+            "aplikacja do zamawiania jedzenia",
+            "aplikacja z dostawą jedzenia",
+            "aplikacja dostawcza"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.delivery-fee",
+          "term": "delivery fee",
+          "ipa": "/dɪˈlɪvəri ˌfiː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "opłata za dostawę",
+          "definition": "The extra money you pay to have food brought to your door.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie jedzenia z dostawą do domu",
+          "natural": "",
+          "forms": "delivery fees",
+          "collocations": "free delivery; waive the delivery fee",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The delivery fee was almost as much as my burrito.",
+              "pl": "Opłata za dostawę była prawie tak wysoka jak cena mojego burrito.",
+              "focusEn": "delivery fee",
+              "focusPl": "Opłata za dostawę"
+            },
+            {
+              "en": "There's no delivery fee on orders over twenty-five dollars tonight.",
+              "pl": "Dziś przy zamówieniach powyżej dwudziestu pięciu dolarów nie ma opłaty za dostawę.",
+              "focusEn": "delivery fee",
+              "focusPl": "opłaty za dostawę"
+            }
+          ],
+          "acceptedAnswers": [
+            "delivery fee"
+          ],
+          "acceptedTranslations": [
+            "opłata za dostawę",
+            "koszt dostawy"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.service-fee",
+          "term": "service fee",
+          "ipa": "/ˈsɜːrvɪs ˌfiː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "opłata serwisowa",
+          "definition": "An extra charge that an app or business adds to your order for its service.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie jedzenia z dostawą do domu",
+          "natural": "",
+          "forms": "service fees",
+          "collocations": "add a service fee; hidden service fee",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With the service fee and the tip, the cheap dinner wasn't cheap anymore.",
+              "pl": "Z opłatą serwisową i napiwkiem tania kolacja przestała być tania.",
+              "focusEn": "service fee",
+              "focusPl": "opłatą serwisową"
+            },
+            {
+              "en": "I didn't notice the service fee until I reached the checkout screen.",
+              "pl": "Opłatę serwisową zauważyłem dopiero na ekranie płatności.",
+              "focusEn": "service fee",
+              "focusPl": "Opłatę serwisową"
+            }
+          ],
+          "acceptedAnswers": [
+            "service fee"
+          ],
+          "acceptedTranslations": [
+            "opłata serwisowa",
+            "opłata za obsługę"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.leave-it-at-the-door",
+          "term": "leave it at the door",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zostawić pod drzwiami",
+          "definition": "An instruction asking the delivery person to put the food outside your door.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie jedzenia z dostawą do domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please leave it at the door and knock twice.",
+              "pl": "Proszę zostawić to pod drzwiami i zapukać dwa razy.",
+              "focusEn": "leave it at the door",
+              "focusPl": "zostawić to pod drzwiami"
+            },
+            {
+              "en": "The driver left it at the door, and our dog almost got to it first.",
+              "pl": "Kurier zostawił to pod drzwiami, a nasz pies prawie dorwał się do torby pierwszy.",
+              "focusEn": "left it at the door",
+              "focusPl": "zostawił to pod drzwiami"
+            }
+          ],
+          "acceptedAnswers": [
+            "leave it at the door",
+            "leave at the door"
+          ],
+          "acceptedTranslations": [
+            "zostawić przed drzwiami",
+            "zostawić pod drzwiami"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.contactless-delivery",
+          "term": "contactless delivery",
+          "ipa": "/ˌkɑːntæktləs dɪˈlɪvəri/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "dostawa bezkontaktowa",
+          "definition": "A delivery where the driver leaves the food without meeting you in person.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie jedzenia z dostawą do domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "choose contactless delivery",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We chose contactless delivery, so the driver just texted us a photo of the bag.",
+              "pl": "Wybraliśmy dostawę bezkontaktową, więc kierowca po prostu przysłał nam zdjęcie torby.",
+              "focusEn": "contactless delivery",
+              "focusPl": "dostawę bezkontaktową"
+            },
+            {
+              "en": "With contactless delivery, you tip in the app instead of at the door.",
+              "pl": "Przy dostawie bezkontaktowej napiwek daje się w aplikacji, a nie przy drzwiach.",
+              "focusEn": "contactless delivery",
+              "focusPl": "dostawie bezkontaktowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "contactless delivery"
+          ],
+          "acceptedTranslations": [
+            "dostawa bezkontaktowa"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.eta",
+          "term": "ETA",
+          "ipa": "/ˌiː tiː ˈeɪ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przewidywany czas dostawy",
+          "definition": "The time when something, like your food delivery, is expected to arrive.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie jedzenia z dostawą do domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "the ETA keeps changing; check the ETA",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Skrót od „estimated time of arrival”; czyta się litera po literze.",
+          "examples": [
+            {
+              "en": "The ETA keeps changing, and now it says forty minutes.",
+              "pl": "Przewidywany czas dostawy ciągle się zmienia, a teraz pokazuje czterdzieści minut.",
+              "focusEn": "ETA",
+              "focusPl": "Przewidywany czas dostawy"
+            },
+            {
+              "en": "The app showed an ETA of 7:15, but the driver was still across town.",
+              "pl": "Aplikacja pokazywała przewidywany czas dostawy na 19:15, ale kierowca był jeszcze na drugim końcu miasta.",
+              "focusEn": "ETA",
+              "focusPl": "przewidywany czas dostawy"
+            }
+          ],
+          "acceptedAnswers": [
+            "ETA",
+            "estimated time of arrival"
+          ],
+          "acceptedTranslations": [
+            "przewidywany czas dostawy",
+            "szacowany czas przybycia",
+            "przewidywany czas przyjazdu"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.lukewarm",
+          "term": "lukewarm",
+          "ipa": "/ˌluːkˈwɔːrm/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "ledwo ciepły",
+          "definition": "Only slightly warm, when it should be hot.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie jedzenia z dostawą do domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "lukewarm fries; lukewarm coffee",
+          "synonyms": "",
+          "antonyms": "hot",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "By the time the food arrived, the fries were lukewarm and soft.",
+              "pl": "Zanim jedzenie dotarło, frytki były ledwo ciepłe i miękkie.",
+              "focusEn": "lukewarm",
+              "focusPl": "ledwo ciepłe"
+            },
+            {
+              "en": "The delivery took an hour, and the noodles were lukewarm when they got here.",
+              "pl": "Dostawa trwała godzinę, a makaron dotarł ledwo ciepły.",
+              "focusEn": "lukewarm",
+              "focusPl": "ledwo ciepły"
+            }
+          ],
+          "acceptedAnswers": [
+            "lukewarm"
+          ],
+          "acceptedTranslations": [
+            "ledwo ciepły",
+            "letni",
+            "chłodnawy"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.reheat",
+          "term": "reheat",
+          "ipa": "/ˌriːˈhiːt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odgrzać",
+          "definition": "To make cooked food hot again.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie jedzenia z dostawą do domu",
+          "natural": "",
+          "forms": "reheats – reheated – reheated",
+          "collocations": "reheat leftovers; reheat in the microwave",
+          "synonyms": "warm up",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you ask me, cold pizza is better than pizza reheated in the microwave.",
+              "pl": "Jak dla mnie zimna pizza jest lepsza niż odgrzana w mikrofalówce.",
+              "focusEn": "reheated",
+              "focusPl": "odgrzana"
+            },
+            {
+              "en": "We reheated the leftover noodles for lunch the next day.",
+              "pl": "Następnego dnia odgrzaliśmy resztki makaronu na lunch.",
+              "focusEn": "reheated",
+              "focusPl": "odgrzaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "reheat"
+          ],
+          "acceptedTranslations": [
+            "odgrzać",
+            "podgrzać",
+            "odgrzewać",
+            "podgrzewać"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.minimum-order",
+          "term": "minimum order",
+          "ipa": "/ˈmɪnɪməm ˌɔːrdər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "minimalna kwota zamówienia",
+          "definition": "The smallest amount you must spend before a restaurant will deliver.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie jedzenia z dostawą do domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "reach the minimum order; minimum order for delivery",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We added a drink just to reach the minimum order for delivery.",
+              "pl": "Dodaliśmy napój tylko po to, żeby dobić do minimalnej kwoty zamówienia.",
+              "focusEn": "minimum order",
+              "focusPl": "minimalnej kwoty zamówienia"
+            },
+            {
+              "en": "The sushi place has a fifteen-dollar minimum order, so I ordered for both of us.",
+              "pl": "Bar sushi ma minimalną kwotę zamówienia piętnaście dolarów, więc zamówiłem dla nas obojga.",
+              "focusEn": "minimum order",
+              "focusPl": "minimalną kwotę zamówienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "minimum order"
+          ],
+          "acceptedTranslations": [
+            "minimalna kwota zamówienia",
+            "minimalne zamówienie"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.carryout",
+          "term": "carryout",
+          "ipa": "/ˈkæriˌaʊt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "zamówienie z odbiorem osobistym",
+          "definition": "Food you order and then collect yourself from the restaurant.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie jedzenia z dostawą do domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "carryout order; carryout counter",
+          "synonyms": "takeout",
+          "antonyms": "",
+          "notePl": "W części USA mówi się „carryout”; „takeout” jest powszechniejsze.",
+          "examples": [
+            {
+              "en": "I placed a carryout order online and picked it up on my way home.",
+              "pl": "Złożyłem przez internet zamówienie z odbiorem osobistym i odebrałem je w drodze do domu.",
+              "focusEn": "carryout",
+              "focusPl": "z odbiorem osobistym"
+            },
+            {
+              "en": "The carryout counter is by the side door, away from the dining room.",
+              "pl": "Lada z odbiorem osobistym jest przy bocznych drzwiach, z dala od sali.",
+              "focusEn": "carryout",
+              "focusPl": "odbiorem osobistym"
+            }
+          ],
+          "acceptedAnswers": [
+            "carryout",
+            "carry-out"
+          ],
+          "acceptedTranslations": [
+            "zamówienie z odbiorem osobistym",
+            "na wynos",
+            "odbiór osobisty",
+            "jedzenie na wynos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fast-food-takeaway.pizza",
+      "namePl": "Pizza na telefon",
+      "scenePl": "Wieczór ze znajomymi: zamawianie pizzy przez telefon i jej dostawa",
+      "entries": [
+        {
+          "id": "fast-food-takeaway.pizza",
+          "term": "pizza",
+          "ipa": "/ˈpiːtsə/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pizza",
+          "definition": "A flat round bread baked with tomato sauce, cheese and other toppings.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie pizzy",
+          "natural": "",
+          "forms": "pizzas",
+          "collocations": "order a pizza; pizza delivery; slice of pizza",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's get a large pizza and split it four ways.",
+              "pl": "Weźmy dużą pizzę i podzielmy ją na cztery.",
+              "focusEn": "pizza",
+              "focusPl": "pizzę"
+            },
+            {
+              "en": "The pizza came forty minutes late, but it was still hot.",
+              "pl": "Pizza przyjechała czterdzieści minut za późno, ale wciąż była gorąca.",
+              "focusEn": "pizza",
+              "focusPl": "Pizza"
+            }
+          ],
+          "acceptedAnswers": [
+            "pizza"
+          ],
+          "acceptedTranslations": [
+            "pizza"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.topping",
+          "term": "topping",
+          "ipa": "/ˈtɑːpɪŋ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "dodatek",
+          "definition": "Food such as cheese, meat or vegetables put on top of a pizza.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie pizzy",
+          "natural": "",
+          "forms": "toppings",
+          "collocations": "extra toppings; two toppings",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A large pizza with two toppings is twelve ninety-nine.",
+              "pl": "Duża pizza z dwoma dodatkami kosztuje dwanaście dziewięćdziesiąt dziewięć.",
+              "focusEn": "toppings",
+              "focusPl": "dodatkami"
+            },
+            {
+              "en": "We argued for ten minutes on the phone about which toppings to get.",
+              "pl": "Przez telefon kłóciliśmy się dziesięć minut o to, jakie dodatki wziąć.",
+              "focusEn": "toppings",
+              "focusPl": "dodatki"
+            }
+          ],
+          "acceptedAnswers": [
+            "topping",
+            "toppings"
+          ],
+          "acceptedTranslations": [
+            "dodatek",
+            "składnik",
+            "dodatek na pizzę"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.pepperoni",
+          "term": "pepperoni",
+          "ipa": "/ˌpepəˈroʊni/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pepperoni",
+          "definition": "A spicy sausage cut into thin round slices, a popular pizza topping.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie pizzy",
+          "natural": "",
+          "forms": "",
+          "collocations": "pepperoni pizza; extra pepperoni",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We always get half pepperoni and half veggie because we can never agree.",
+              "pl": "Zawsze bierzemy pół z pepperoni, pół wegetariańskiej, bo nigdy nie możemy się zgodzić.",
+              "focusEn": "pepperoni",
+              "focusPl": "pepperoni"
+            },
+            {
+              "en": "My little brother picked every slice of pepperoni off his pizza.",
+              "pl": "Młodszy brat zdjął ze swojej pizzy każdy plasterek pepperoni.",
+              "focusEn": "pepperoni",
+              "focusPl": "pepperoni"
+            }
+          ],
+          "acceptedAnswers": [
+            "pepperoni"
+          ],
+          "acceptedTranslations": [
+            "pepperoni",
+            "salami pepperoni",
+            "kiełbasa pepperoni"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.thin-crust",
+          "term": "thin crust",
+          "ipa": "/ˌθɪn ˈkrʌst/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "cienkie ciasto",
+          "definition": "A pizza base that is flat and crispy rather than thick.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie pizzy",
+          "natural": "",
+          "forms": "",
+          "collocations": "thin-crust pizza",
+          "synonyms": "",
+          "antonyms": "deep dish",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I like thin crust because I can eat more slices.",
+              "pl": "Lubię cienkie ciasto, bo mogę zjeść więcej kawałków.",
+              "focusEn": "thin crust",
+              "focusPl": "cienkie ciasto"
+            },
+            {
+              "en": "We ordered thin crust, but they delivered a thick, doughy pizza.",
+              "pl": "Zamówiliśmy na cienkim cieście, a przywieźli grubą, ciastowatą pizzę.",
+              "focusEn": "thin crust",
+              "focusPl": "cienkim cieście"
+            }
+          ],
+          "acceptedAnswers": [
+            "thin crust"
+          ],
+          "acceptedTranslations": [
+            "cienkie ciasto",
+            "pizza na cienkim cieście"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.extra-cheese",
+          "term": "extra cheese",
+          "ipa": "/ˌekstrə ˈtʃiːz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "podwójny ser",
+          "definition": "An additional amount of cheese added to a pizza or sandwich.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie pizzy",
+          "natural": "",
+          "forms": "",
+          "collocations": "add extra cheese",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can we get a large pepperoni with extra cheese?",
+              "pl": "Czy możemy zamówić dużą pepperoni z podwójnym serem?",
+              "focusEn": "extra cheese",
+              "focusPl": "podwójnym serem"
+            },
+            {
+              "en": "The guy on the phone said extra cheese costs two dollars more.",
+              "pl": "Facet przez telefon powiedział, że podwójny ser kosztuje dwa dolary więcej.",
+              "focusEn": "extra cheese",
+              "focusPl": "podwójny ser"
+            }
+          ],
+          "acceptedAnswers": [
+            "extra cheese"
+          ],
+          "acceptedTranslations": [
+            "podwójny ser",
+            "więcej sera",
+            "dodatkowy ser"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.pizza-box",
+          "term": "pizza box",
+          "ipa": "/ˈpiːtsə ˌbɑːks/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pudełko po pizzy",
+          "definition": "The flat square cardboard box that a pizza is delivered in.",
+          "register": "neutralny",
+          "contextPl": "Zamawianie pizzy",
+          "natural": "",
+          "forms": "pizza boxes",
+          "collocations": "stack of pizza boxes",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The driver handed me a pizza box that was still warm on the bottom.",
+              "pl": "Kurier podał mi pudełko z pizzą, które od spodu było jeszcze ciepłe.",
+              "focusEn": "pizza box",
+              "focusPl": "pudełko z pizzą"
+            },
+            {
+              "en": "By midnight, empty pizza boxes were piled next to the recycling bin.",
+              "pl": "O północy obok kosza na makulaturę piętrzyły się puste pudełka po pizzy.",
+              "focusEn": "pizza boxes",
+              "focusPl": "pudełka po pizzy"
+            }
+          ],
+          "acceptedAnswers": [
+            "pizza box"
+          ],
+          "acceptedTranslations": [
+            "pudełko po pizzy",
+            "karton po pizzy",
+            "pudełko z pizzą",
+            "pudełko na pizzę"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fast-food-takeaway.eating",
+      "namePl": "Jedzenie i wrażenia",
+      "scenePl": "Parking przed barem z burgerami: jedzenie w samochodzie po późnym seansie",
+      "entries": [
+        {
+          "id": "fast-food-takeaway.grab-a-bite",
+          "term": "grab a bite",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "przekąsić coś",
+          "definition": "To eat something quickly, usually a small or simple meal.",
+          "register": "potoczny",
+          "contextPl": "Rozmowa o jedzeniu z fast foodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "grab a bite to eat",
+          "synonyms": "",
+          "antonyms": "grab a bite to eat",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's grab a bite before the long drive home.",
+              "pl": "Przekąśmy coś przed długą drogą do domu.",
+              "focusEn": "grab a bite",
+              "focusPl": "Przekąśmy coś"
+            },
+            {
+              "en": "We grabbed a bite at the burger place across from the theater.",
+              "pl": "Przekąsiliśmy coś w barze z burgerami naprzeciwko kina.",
+              "focusEn": "grabbed a bite",
+              "focusPl": "Przekąsiliśmy coś"
+            }
+          ],
+          "acceptedAnswers": [
+            "grab a bite"
+          ],
+          "acceptedTranslations": [
+            "przekąsić coś",
+            "zjeść coś na szybko",
+            "coś przekąsić",
+            "przekąsić"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.greasy",
+          "term": "greasy",
+          "ipa": "/ˈɡriːsi/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "tłusty",
+          "definition": "Containing a lot of oil or fat, often too much.",
+          "register": "potoczny",
+          "contextPl": "Rozmowa o jedzeniu z fast foodu",
+          "natural": "",
+          "forms": "greasier – greasiest",
+          "collocations": "greasy food; greasy fries; greasy burger",
+          "synonyms": "oily",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The burger was so greasy that the paper bag turned see-through.",
+              "pl": "Burger był tak tłusty, że papierowa torba zrobiła się przezroczysta.",
+              "focusEn": "greasy",
+              "focusPl": "tłusty"
+            },
+            {
+              "en": "I love greasy food after a long night, but I always regret it.",
+              "pl": "Uwielbiam tłuste jedzenie po długiej nocy, ale zawsze tego żałuję.",
+              "focusEn": "greasy",
+              "focusPl": "tłuste"
+            }
+          ],
+          "acceptedAnswers": [
+            "greasy"
+          ],
+          "acceptedTranslations": [
+            "tłusty",
+            "ociekający tłuszczem"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.guilty-pleasure",
+          "term": "guilty pleasure",
+          "ipa": "/ˌɡɪlti ˈpleʒər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "grzeszna przyjemność",
+          "definition": "Something you enjoy even though you feel it is not good for you.",
+          "register": "neutralny",
+          "contextPl": "Rozmowa o jedzeniu z fast foodu",
+          "natural": "",
+          "forms": "guilty pleasures",
+          "collocations": "my guilty pleasure; a little guilty pleasure",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Drive-thru fries at midnight are my biggest guilty pleasure.",
+              "pl": "Frytki z drive-thru o północy to moja największa grzeszna przyjemność.",
+              "focusEn": "guilty pleasure",
+              "focusPl": "grzeszna przyjemność"
+            },
+            {
+              "en": "My dad calls his weekly cheeseburger a guilty pleasure, but he never feels guilty.",
+              "pl": "Tata nazywa cotygodniowego cheeseburgera grzeszną przyjemnością, ale nigdy nie ma wyrzutów sumienia.",
+              "focusEn": "guilty pleasure",
+              "focusPl": "grzeszną przyjemnością"
+            }
+          ],
+          "acceptedAnswers": [
+            "guilty pleasure"
+          ],
+          "acceptedTranslations": [
+            "grzeszna przyjemność",
+            "mała słabość",
+            "słabość"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.wolf-down",
+          "term": "wolf down",
+          "ipa": "/ˌwʊlf ˈdaʊn/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pochłonąć",
+          "definition": "To eat food very quickly and hungrily.",
+          "register": "potoczny",
+          "contextPl": "Rozmowa o jedzeniu z fast foodu",
+          "natural": "",
+          "forms": "wolfs down – wolfed down – wolfed down",
+          "collocations": "wolf down a burger",
+          "synonyms": "scarf down",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He wolfed down two burgers in the car before we left the parking lot.",
+              "pl": "Pochłonął dwa burgery w samochodzie, zanim wyjechaliśmy z parkingu.",
+              "focusEn": "wolfed down",
+              "focusPl": "Pochłonął"
+            },
+            {
+              "en": "Don't wolf down your fries like that, we're not in a hurry anymore.",
+              "pl": "Nie pochłaniaj tak tych frytek, już się nie spieszymy.",
+              "focusEn": "wolf down",
+              "focusPl": "pochłaniaj"
+            }
+          ],
+          "acceptedAnswers": [
+            "wolf down",
+            "scarf down"
+          ],
+          "acceptedTranslations": [
+            "pochłonąć",
+            "wsunąć",
+            "pożreć",
+            "pochłaniać",
+            "wcinać"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.filling",
+          "term": "filling",
+          "ipa": "/ˈfɪlɪŋ/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "sycący",
+          "definition": "Making you feel full quickly.",
+          "register": "neutralny",
+          "contextPl": "Rozmowa o jedzeniu z fast foodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "very filling; a filling meal",
+          "synonyms": "",
+          "antonyms": "light",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The chicken wrap was surprisingly filling for the price.",
+              "pl": "Wrap z kurczakiem był zaskakująco sycący jak na tę cenę.",
+              "focusEn": "filling",
+              "focusPl": "sycący"
+            },
+            {
+              "en": "Fries aren't very filling, so I was hungry again an hour later.",
+              "pl": "Frytki nie są zbyt sycące, więc godzinę później znowu byłem głodny.",
+              "focusEn": "filling",
+              "focusPl": "sycące"
+            }
+          ],
+          "acceptedAnswers": [
+            "filling"
+          ],
+          "acceptedTranslations": [
+            "sycący",
+            "pożywny"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.fast-food-joint",
+          "term": "fast-food joint",
+          "ipa": "/ˈfæst fuːd ˌdʒɔɪnt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bar szybkiej obsługi",
+          "definition": "A cheap, simple fast-food restaurant.",
+          "register": "potoczny",
+          "contextPl": "Rozmowa o jedzeniu z fast foodu",
+          "natural": "",
+          "forms": "fast-food joints",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a fast-food joint right next to the highway exit.",
+              "pl": "Tuż przy zjeździe z autostrady jest bar szybkiej obsługi.",
+              "focusEn": "fast-food joint",
+              "focusPl": "bar szybkiej obsługi"
+            },
+            {
+              "en": "We ended up at the same fast-food joint where we ate after every game in high school.",
+              "pl": "Wylądowaliśmy w tym samym barze szybkiej obsługi, do którego chodziliśmy po każdym meczu w liceum.",
+              "focusEn": "fast-food joint",
+              "focusPl": "barze szybkiej obsługi"
+            }
+          ],
+          "acceptedAnswers": [
+            "fast-food joint"
+          ],
+          "acceptedTranslations": [
+            "bar szybkiej obsługi",
+            "knajpka z fast foodem",
+            "fast food"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.chain-restaurant",
+          "term": "chain restaurant",
+          "ipa": "/ˈtʃeɪn ˌrestərɑːnt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "restauracja sieciowa",
+          "definition": "A restaurant that is one of many with the same name and menu.",
+          "register": "neutralny",
+          "contextPl": "Rozmowa o jedzeniu z fast foodu",
+          "natural": "",
+          "forms": "chain restaurants",
+          "collocations": "eat at a chain restaurant",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Every chain restaurant on this road serves almost the same burger.",
+              "pl": "Każda restauracja sieciowa przy tej drodze serwuje prawie tego samego burgera.",
+              "focusEn": "chain restaurant",
+              "focusPl": "restauracja sieciowa"
+            },
+            {
+              "en": "It was after midnight, and the only open place was a chain restaurant by the gas station.",
+              "pl": "Było po północy, a jedynym otwartym lokalem była restauracja sieciowa przy stacji benzynowej.",
+              "focusEn": "chain restaurant",
+              "focusPl": "restauracja sieciowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "chain restaurant"
+          ],
+          "acceptedTranslations": [
+            "restauracja sieciowa",
+            "sieciówka",
+            "lokal sieciowy"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.hangry",
+          "term": "hangry",
+          "ipa": "/ˈhæŋɡri/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zły z głodu",
+          "definition": "Angry or annoyed because you are hungry.",
+          "register": "potoczny",
+          "contextPl": "Rozmowa o jedzeniu z fast foodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "get hangry",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Połączenie słów „hungry” i „angry”.",
+          "examples": [
+            {
+              "en": "Get him some fries fast, because he gets hangry after work.",
+              "pl": "Daj mu szybko frytki, bo po pracy robi się zły z głodu.",
+              "focusEn": "hangry",
+              "focusPl": "zły z głodu"
+            },
+            {
+              "en": "I was so hangry in the drive-thru line that I snapped at my sister.",
+              "pl": "W kolejce do drive-thru byłem tak zły z głodu, że naskoczyłem na siostrę.",
+              "focusEn": "hangry",
+              "focusPl": "zły z głodu"
+            }
+          ],
+          "acceptedAnswers": [
+            "hangry"
+          ],
+          "acceptedTranslations": [
+            "zły z głodu",
+            "rozdrażniony z głodu",
+            "głodny i zły"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.on-the-go",
+          "term": "on the go",
+          "ipa": "/ˌɑːn ðə ˈɡoʊ/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "w biegu",
+          "definition": "While you are busy or moving from one place to another.",
+          "register": "neutralny",
+          "contextPl": "Rozmowa o jedzeniu z fast foodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "eat on the go; snacks on the go",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Breakfast burritos are easy to eat on the go.",
+              "pl": "Burrito śniadaniowe łatwo zjeść w biegu.",
+              "focusEn": "on the go",
+              "focusPl": "w biegu"
+            },
+            {
+              "en": "Most of my lunches this week were eaten on the go, right here in the car.",
+              "pl": "W tym tygodniu większość lunchów zjadłem w biegu, właśnie tu, w samochodzie.",
+              "focusEn": "on the go",
+              "focusPl": "w biegu"
+            }
+          ],
+          "acceptedAnswers": [
+            "on the go"
+          ],
+          "acceptedTranslations": [
+            "w biegu",
+            "w drodze",
+            "w pośpiechu"
+          ]
+        },
+        {
+          "id": "fast-food-takeaway.cheap-eats",
+          "term": "cheap eats",
+          "ipa": "/ˌtʃiːp ˈiːts/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "tanie jedzenie",
+          "definition": "Inexpensive places to eat or inexpensive food.",
+          "register": "potoczny",
+          "contextPl": "Rozmowa o jedzeniu z fast foodu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The street near the college is full of cheap eats that stay open late.",
+              "pl": "Ulica przy uczelni jest pełna lokali z tanim jedzeniem, otwartych do późna.",
+              "focusEn": "cheap eats",
+              "focusPl": "tanim jedzeniem"
+            },
+            {
+              "en": "When money was tight, we lived on cheap eats and drive-thru tacos.",
+              "pl": "Kiedy było krucho z pieniędzmi, żyliśmy tanim jedzeniem i tacos z drive-thru.",
+              "focusEn": "cheap eats",
+              "focusPl": "tanim jedzeniem"
+            }
+          ],
+          "acceptedAnswers": [
+            "cheap eats"
+          ],
+          "acceptedTranslations": [
+            "tanie jedzenie",
+            "tanie jedzenie na mieście",
+            "tanie knajpki"
+          ]
+        }
+      ]
+    }
+  ]
+}

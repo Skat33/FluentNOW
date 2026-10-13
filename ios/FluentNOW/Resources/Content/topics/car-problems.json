@@ -1,0 +1,2753 @@
+{
+  "schemaVersion": 1,
+  "id": "car-problems",
+  "namePl": "Awaria samochodu i mechanik",
+  "nameEn": "Car Trouble and the Mechanic",
+  "group": "travel",
+  "symbol": "wrench.and.screwdriver",
+  "summaryPl": "Awaria na drodze, niepokojące odgłosy i objawy, części samochodu, wizyta w warsztacie, drobne szkody i blacharka.",
+  "aliases": [
+    "awaria",
+    "awaria samochodu",
+    "mechanik",
+    "warsztat",
+    "usterka",
+    "naprawa auta",
+    "holowanie",
+    "części samochodowe",
+    "car trouble",
+    "mechanic",
+    "repair shop",
+    "breakdown"
+  ],
+  "categories": [
+    {
+      "id": "car-problems.roadside",
+      "namePl": "Awaria na drodze",
+      "scenePl": "Samochód staje na poboczu autostrady w deszczowy wieczór; kierowca dzwoni po pomoc",
+      "entries": [
+        {
+          "id": "car-problems.car-trouble",
+          "term": "car trouble",
+          "ipa": "/ˈkɑːr ˌtrʌbəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "problemy z samochodem",
+          "definition": "Problems with a car that stop it from working properly.",
+          "register": "neutralny",
+          "contextPl": "Ogólnie o awarii",
+          "natural": "car problems",
+          "forms": "",
+          "collocations": "have car trouble",
+          "synonyms": "engine trouble",
+          "antonyms": "",
+          "notePl": "Niepoliczalny: some car trouble, nie „a car trouble”.",
+          "examples": [
+            {
+              "en": "Sorry, I'll be late, I'm having car trouble on the highway.",
+              "pl": "Przepraszam, spóźnię się, mam problemy z samochodem na autostradzie.",
+              "focusEn": "car trouble",
+              "focusPl": "problemy z samochodem"
+            },
+            {
+              "en": "Car trouble always happens at the worst time, like tonight in the rain.",
+              "pl": "Awaria samochodu zawsze zdarza się w najgorszym momencie, jak dziś w deszczu.",
+              "focusEn": "Car trouble",
+              "focusPl": "Awaria samochodu"
+            }
+          ],
+          "acceptedAnswers": [
+            "car trouble",
+            "car problems"
+          ],
+          "acceptedTranslations": [
+            "problemy z samochodem",
+            "awaria samochodu",
+            "kłopoty z autem"
+          ]
+        },
+        {
+          "id": "car-problems.stall",
+          "term": "stall",
+          "ipa": "/stɔːl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zgasnąć",
+          "definition": "To stop running suddenly, used about an engine.",
+          "register": "neutralny",
+          "contextPl": "Nagłe zatrzymanie silnika",
+          "natural": "die",
+          "forms": "stalled; stalling",
+          "collocations": "the engine stalled; stall at a light",
+          "synonyms": "die; cut out",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The engine stalled twice before the car stopped completely.",
+              "pl": "Silnik zgasł dwa razy, zanim auto całkiem się zatrzymało.",
+              "focusEn": "stalled",
+              "focusPl": "zgasł"
+            },
+            {
+              "en": "If the car stalls again, put on your flashers and pull onto the shoulder.",
+              "pl": "Jeśli auto znowu zgaśnie, włącz awaryjne i zjedź na pobocze.",
+              "focusEn": "stalls",
+              "focusPl": "zgaśnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "stall",
+            "die",
+            "cut out"
+          ],
+          "acceptedTranslations": [
+            "zgasnąć",
+            "gasnąć",
+            "zgasnąć silnik"
+          ]
+        },
+        {
+          "id": "car-problems.wont-start",
+          "term": "won't start",
+          "ipa": "/ˌwoʊnt ˈstɑːrt/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "nie chce odpalić",
+          "definition": "Used when a car engine does not begin to run.",
+          "register": "neutralny",
+          "contextPl": "Problem z uruchomieniem",
+          "natural": "",
+          "forms": "",
+          "collocations": "my car won't start",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I turned the key, but the car won't start.",
+              "pl": "Przekręciłem kluczyk, ale auto nie chce odpalić.",
+              "focusEn": "won't start",
+              "focusPl": "nie chce odpalić"
+            },
+            {
+              "en": "It's freezing, and of course the car won't start again.",
+              "pl": "Jest mróz i oczywiście samochód znowu nie odpala.",
+              "focusEn": "won't start",
+              "focusPl": "nie odpala"
+            }
+          ],
+          "acceptedAnswers": [
+            "won't start",
+            "doesn't start",
+            "wouldn't start"
+          ],
+          "acceptedTranslations": [
+            "nie chce odpalić",
+            "nie zapala",
+            "nie odpala"
+          ]
+        },
+        {
+          "id": "car-problems.shoulder",
+          "term": "shoulder",
+          "ipa": "/ˈʃoʊldər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pobocze",
+          "definition": "The strip at the side of a highway where cars can stop in an emergency.",
+          "register": "neutralny",
+          "contextPl": "Zatrzymanie przy drodze",
+          "natural": "side of the road",
+          "forms": "shoulders",
+          "collocations": "pull onto the shoulder; on the shoulder",
+          "synonyms": "side of the road",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I pulled onto the shoulder as soon as the light came on.",
+              "pl": "Zjechałem na pobocze, gdy tylko zapaliła się kontrolka.",
+              "focusEn": "shoulder",
+              "focusPl": "pobocze"
+            },
+            {
+              "en": "Stay away from traffic while you wait on the shoulder.",
+              "pl": "Trzymaj się z dala od ruchu, kiedy czekasz na poboczu.",
+              "focusEn": "shoulder",
+              "focusPl": "poboczu"
+            }
+          ],
+          "acceptedAnswers": [
+            "shoulder",
+            "side of the road"
+          ],
+          "acceptedTranslations": [
+            "pobocze",
+            "pas awaryjny"
+          ]
+        },
+        {
+          "id": "car-problems.check-engine-light",
+          "term": "check engine light",
+          "ipa": "/ˌtʃek ˈendʒɪn ˌlaɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kontrolka silnika",
+          "definition": "A light on the dashboard that warns of an engine problem.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia na desce rozdzielczej",
+          "natural": "engine light",
+          "forms": "",
+          "collocations": "the check engine light came on",
+          "synonyms": "engine warning light",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The check engine light came on about ten miles ago.",
+              "pl": "Kontrolka silnika zapaliła się jakieś dziesięć mil temu.",
+              "focusEn": "check engine light",
+              "focusPl": "Kontrolka silnika"
+            },
+            {
+              "en": "Is it safe to keep driving with the check engine light on?",
+              "pl": "Czy można bezpiecznie jechać dalej z zapaloną kontrolką silnika?",
+              "focusEn": "check engine light",
+              "focusPl": "kontrolką silnika"
+            }
+          ],
+          "acceptedAnswers": [
+            "check engine light",
+            "engine light"
+          ],
+          "acceptedTranslations": [
+            "kontrolka silnika",
+            "kontrolka check engine"
+          ]
+        },
+        {
+          "id": "car-problems.overheat",
+          "term": "overheat",
+          "ipa": "/ˌoʊvərˈhiːt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przegrzać się",
+          "definition": "To become too hot, used about an engine.",
+          "register": "neutralny",
+          "contextPl": "Problemy z temperaturą silnika",
+          "natural": "",
+          "forms": "overheated; overheating",
+          "collocations": "engine overheats",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The engine overheated when we were stuck in traffic.",
+              "pl": "Silnik przegrzał się, kiedy staliśmy w korku.",
+              "focusEn": "overheated",
+              "focusPl": "przegrzał się"
+            },
+            {
+              "en": "Turn off the AC if the car starts to overheat.",
+              "pl": "Wyłącz klimatyzację, jeśli auto zacznie się przegrzewać.",
+              "focusEn": "overheat",
+              "focusPl": "się przegrzewać"
+            }
+          ],
+          "acceptedAnswers": [
+            "overheat"
+          ],
+          "acceptedTranslations": [
+            "przegrzać się",
+            "przegrzewać się"
+          ]
+        },
+        {
+          "id": "car-problems.jump-start",
+          "term": "jump-start",
+          "ipa": "/ˈdʒʌmp stɑːrt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odpalić na kable",
+          "definition": "To start a car with a dead battery using cables from another car.",
+          "register": "potoczny",
+          "contextPl": "Rozładowany akumulator",
+          "natural": "jump",
+          "forms": "jump-started; jump-starting",
+          "collocations": "jump-start a car; give someone a jump",
+          "synonyms": "jump",
+          "antonyms": "",
+          "notePl": "Potocznie: Can you give me a jump?",
+          "examples": [
+            {
+              "en": "A kind driver stopped and helped me jump-start the car.",
+              "pl": "Uprzejmy kierowca zatrzymał się i pomógł mi odpalić auto na kable.",
+              "focusEn": "jump-start",
+              "focusPl": "odpalić auto na kable"
+            },
+            {
+              "en": "Do you know how to jump-start a car in the dark?",
+              "pl": "Wiesz, jak odpalić na kable samochód po ciemku?",
+              "focusEn": "jump-start",
+              "focusPl": "odpalić na kable"
+            }
+          ],
+          "acceptedAnswers": [
+            "jump-start",
+            "jump",
+            "give a jump"
+          ],
+          "acceptedTranslations": [
+            "odpalić na kable",
+            "uruchomić z kabli",
+            "pożyczyć prądu"
+          ]
+        },
+        {
+          "id": "car-problems.jumper-cables",
+          "term": "jumper cables",
+          "ipa": "/ˈdʒʌmpər ˌkeɪbəlz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kable rozruchowe",
+          "definition": "Thick wires used to connect two car batteries.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt awaryjny",
+          "natural": "booster cables",
+          "forms": "",
+          "collocations": "a set of jumper cables",
+          "synonyms": "booster cables",
+          "antonyms": "",
+          "notePl": "W BrE „jump leads”.",
+          "examples": [
+            {
+              "en": "I always keep jumper cables in the trunk.",
+              "pl": "Zawsze wożę w bagażniku kable rozruchowe.",
+              "focusEn": "jumper cables",
+              "focusPl": "kable rozruchowe"
+            },
+            {
+              "en": "Connect the red jumper cables to the plus side first.",
+              "pl": "Najpierw podłącz czerwone kable rozruchowe do plusa.",
+              "focusEn": "jumper cables",
+              "focusPl": "kable rozruchowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "jumper cables",
+            "booster cables"
+          ],
+          "acceptedTranslations": [
+            "kable rozruchowe",
+            "kable do akumulatora"
+          ]
+        },
+        {
+          "id": "car-problems.flashers",
+          "term": "flashers",
+          "ipa": "/ˈflæʃərz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "światła awaryjne",
+          "definition": "Lights on a car that flash on and off to warn other drivers.",
+          "register": "potoczny",
+          "contextPl": "Sygnalizacja postoju awaryjnego",
+          "natural": "hazard lights",
+          "forms": "",
+          "collocations": "turn on your flashers",
+          "synonyms": "hazard lights",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Turn on your flashers so the trucks can see us.",
+              "pl": "Włącz światła awaryjne, żeby ciężarówki nas widziały.",
+              "focusEn": "flashers",
+              "focusPl": "światła awaryjne"
+            },
+            {
+              "en": "We waited with the flashers on for almost an hour.",
+              "pl": "Czekaliśmy z włączonymi światłami awaryjnymi prawie godzinę.",
+              "focusEn": "flashers",
+              "focusPl": "światłami awaryjnymi"
+            }
+          ],
+          "acceptedAnswers": [
+            "flashers",
+            "hazard lights",
+            "hazards"
+          ],
+          "acceptedTranslations": [
+            "światła awaryjne",
+            "awaryjne"
+          ]
+        },
+        {
+          "id": "car-problems.jack",
+          "term": "jack",
+          "ipa": "/dʒæk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "lewarek",
+          "definition": "A tool for lifting a car off the ground.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt w bagażniku",
+          "natural": "",
+          "forms": "jacks",
+          "collocations": "car jack; use a jack",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The jack is under the floor of the trunk, next to the spare.",
+              "pl": "Lewarek jest pod podłogą bagażnika, obok koła zapasowego.",
+              "focusEn": "jack",
+              "focusPl": "Lewarek"
+            },
+            {
+              "en": "Put the jack on solid ground, not on the wet grass.",
+              "pl": "Postaw lewarek na twardym podłożu, nie na mokrej trawie.",
+              "focusEn": "jack",
+              "focusPl": "lewarek"
+            }
+          ],
+          "acceptedAnswers": [
+            "jack",
+            "car jack"
+          ],
+          "acceptedTranslations": [
+            "lewarek",
+            "podnośnik"
+          ]
+        },
+        {
+          "id": "car-problems.lug-nuts",
+          "term": "lug nuts",
+          "ipa": "/ˈlʌɡ ˌnʌts/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "śruby koła",
+          "definition": "The large nuts that hold a wheel on a car.",
+          "register": "specjalistyczny",
+          "contextPl": "Zmiana koła",
+          "natural": "",
+          "forms": "lug nut (lp.)",
+          "collocations": "loosen the lug nuts; tighten the lug nuts",
+          "synonyms": "wheel nuts",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Loosen the lug nuts before you lift the car.",
+              "pl": "Poluzuj śruby koła, zanim podniesiesz samochód.",
+              "focusEn": "lug nuts",
+              "focusPl": "śruby koła"
+            },
+            {
+              "en": "One of the lug nuts rolled into the ditch.",
+              "pl": "Jedna ze śrub koła stoczyła się do rowu.",
+              "focusEn": "lug nuts",
+              "focusPl": "śrub koła"
+            }
+          ],
+          "acceptedAnswers": [
+            "lug nuts",
+            "lug nut",
+            "wheel nuts"
+          ],
+          "acceptedTranslations": [
+            "śruby koła",
+            "nakrętki koła",
+            "szpilki koła"
+          ]
+        },
+        {
+          "id": "car-problems.smoke",
+          "term": "smoke",
+          "ipa": "/smoʊk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dym",
+          "definition": "A gray or black cloud that comes from something burning.",
+          "register": "neutralny",
+          "contextPl": "Niepokojące objawy",
+          "natural": "",
+          "forms": "",
+          "collocations": "smoke coming from the engine; black smoke",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's white smoke coming from under the hood!",
+              "pl": "Spod maski wydobywa się biały dym!",
+              "focusEn": "smoke",
+              "focusPl": "dym"
+            },
+            {
+              "en": "Black smoke from the tailpipe usually means a serious problem.",
+              "pl": "Czarny dym z rury wydechowej zwykle oznacza poważny problem.",
+              "focusEn": "smoke",
+              "focusPl": "dym"
+            }
+          ],
+          "acceptedAnswers": [
+            "smoke"
+          ],
+          "acceptedTranslations": [
+            "dym"
+          ]
+        },
+        {
+          "id": "car-problems.conk-out",
+          "term": "conk out",
+          "ipa": "/ˌkɑːŋk ˈaʊt/",
+          "pos": "czasownik frazowy",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wysiąść",
+          "definition": "To suddenly stop working, used about engines and machines.",
+          "register": "slangowy",
+          "contextPl": "Potocznie o zepsuciu się auta",
+          "natural": "die",
+          "forms": "conked; conking",
+          "collocations": "",
+          "synonyms": "die; break down",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My old car finally conked out halfway up the mountain.",
+              "pl": "Moje stare auto w końcu wysiadło w połowie drogi pod górę.",
+              "focusEn": "conked out",
+              "focusPl": "wysiadło"
+            },
+            {
+              "en": "I hope this thing doesn't conk out before we get home.",
+              "pl": "Mam nadzieję, że ten grat nie padnie, zanim dojedziemy do domu.",
+              "focusEn": "conk out",
+              "focusPl": "padnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "conk out",
+            "die"
+          ],
+          "acceptedTranslations": [
+            "wysiąść",
+            "padnąć",
+            "nawalić"
+          ]
+        },
+        {
+          "id": "car-problems.call-a-tow-truck",
+          "term": "call a tow truck",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wezwać pomoc drogową",
+          "definition": "To phone for a truck to take your car to a repair shop.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie holowania",
+          "natural": "",
+          "forms": "called – called",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We had to call a tow truck because the car wouldn't move at all.",
+              "pl": "Musieliśmy wezwać lawetę, bo auto w ogóle nie chciało ruszyć.",
+              "focusEn": "call a tow truck",
+              "focusPl": "wezwać lawetę"
+            },
+            {
+              "en": "If it doesn't start in ten minutes, I'll call a tow truck.",
+              "pl": "Jeśli nie odpali w ciągu dziesięciu minut, wezwę pomoc drogową.",
+              "focusEn": "call a tow truck",
+              "focusPl": "wezwę pomoc drogową"
+            }
+          ],
+          "acceptedAnswers": [
+            "call a tow truck",
+            "call for a tow",
+            "get a tow"
+          ],
+          "acceptedTranslations": [
+            "wezwać pomoc drogową",
+            "wezwać lawetę",
+            "zadzwonić po lawetę"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "car-problems.symptoms",
+      "namePl": "Odgłosy i objawy",
+      "scenePl": "Lada w warsztacie samochodowym; klient opisuje mechanikowi, co dzieje się z autem",
+      "entries": [
+        {
+          "id": "car-problems.strange-noise",
+          "term": "strange noise",
+          "ipa": "/ˌstreɪndʒ ˈnɔɪz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dziwny odgłos",
+          "definition": "An unusual sound that may show something is wrong.",
+          "register": "neutralny",
+          "contextPl": "Opisywanie usterki",
+          "natural": "weird noise",
+          "forms": "strange noises",
+          "collocations": "make a strange noise",
+          "synonyms": "weird noise",
+          "antonyms": "",
+          "notePl": "Potocznie: the car is making a weird noise.",
+          "examples": [
+            {
+              "en": "The car makes a strange noise when I turn left.",
+              "pl": "Samochód wydaje dziwny odgłos, kiedy skręcam w lewo.",
+              "focusEn": "strange noise",
+              "focusPl": "dziwny odgłos"
+            },
+            {
+              "en": "I first heard the strange noise about a week ago.",
+              "pl": "Pierwszy raz usłyszałem ten dziwny odgłos jakiś tydzień temu.",
+              "focusEn": "strange noise",
+              "focusPl": "dziwny odgłos"
+            }
+          ],
+          "acceptedAnswers": [
+            "strange noise",
+            "weird noise",
+            "funny noise"
+          ],
+          "acceptedTranslations": [
+            "dziwny odgłos",
+            "dziwny dźwięk",
+            "dziwne odgłosy"
+          ]
+        },
+        {
+          "id": "car-problems.squeal",
+          "term": "squeal",
+          "ipa": "/skwiːl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "piszczeć",
+          "definition": "To make a long, high, loud sound.",
+          "register": "neutralny",
+          "contextPl": "Odgłosy hamulców i pasków",
+          "natural": "screech",
+          "forms": "squealed; squealing",
+          "collocations": "the brakes squeal",
+          "synonyms": "screech",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My brakes squeal every time I stop at a light.",
+              "pl": "Hamulce piszczą za każdym razem, gdy zatrzymuję się na światłach.",
+              "focusEn": "squeal",
+              "focusPl": "piszczą"
+            },
+            {
+              "en": "Something under the hood squeals when I start the car in the morning.",
+              "pl": "Coś pod maską piszczy, kiedy rano odpalam samochód.",
+              "focusEn": "squeals",
+              "focusPl": "piszczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "squeal",
+            "screech"
+          ],
+          "acceptedTranslations": [
+            "piszczeć",
+            "zapiszczeć",
+            "skrzypieć"
+          ]
+        },
+        {
+          "id": "car-problems.grinding-noise",
+          "term": "grinding noise",
+          "ipa": "/ˈɡraɪndɪŋ ˌnɔɪz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zgrzyt",
+          "definition": "A rough sound of metal rubbing against metal.",
+          "register": "neutralny",
+          "contextPl": "Odgłosy hamulców i skrzyni",
+          "natural": "",
+          "forms": "grinding noises",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Często oznacza całkowicie zużyte klocki hamulcowe.",
+          "examples": [
+            {
+              "en": "There's a grinding noise when I press the brakes.",
+              "pl": "Kiedy naciskam hamulec, słychać zgrzyt.",
+              "focusEn": "grinding noise",
+              "focusPl": "zgrzyt"
+            },
+            {
+              "en": "The grinding noise got louder on the way here.",
+              "pl": "W drodze tutaj zgrzytanie stało się głośniejsze.",
+              "focusEn": "grinding noise",
+              "focusPl": "zgrzytanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "grinding noise",
+            "grinding sound"
+          ],
+          "acceptedTranslations": [
+            "zgrzyt",
+            "zgrzytanie",
+            "tarcie metalu"
+          ]
+        },
+        {
+          "id": "car-problems.rattle",
+          "term": "rattle",
+          "ipa": "/ˈrætəl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "grzechotać",
+          "definition": "To make short, loud, knocking sounds again and again.",
+          "register": "neutralny",
+          "contextPl": "Luźne elementy",
+          "natural": "",
+          "forms": "rattled; rattling",
+          "collocations": "something is rattling",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Something rattles in the back when I drive over bumps.",
+              "pl": "Coś grzechocze z tyłu, kiedy jadę po wybojach.",
+              "focusEn": "rattles",
+              "focusPl": "grzechocze"
+            },
+            {
+              "en": "The rattling stops when I go faster than forty.",
+              "pl": "To stukanie ustaje, kiedy jadę szybciej niż czterdzieści.",
+              "focusEn": "rattling",
+              "focusPl": "stukanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "rattle"
+          ],
+          "acceptedTranslations": [
+            "grzechotać",
+            "stukać",
+            "telepać się"
+          ]
+        },
+        {
+          "id": "car-problems.knock",
+          "term": "knock",
+          "ipa": "/nɑːk/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "stukać",
+          "definition": "To make a regular hitting sound, often from the engine.",
+          "register": "neutralny",
+          "contextPl": "Odgłosy silnika",
+          "natural": "",
+          "forms": "knocked; knocking",
+          "collocations": "the engine is knocking",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The engine knocks when I go up hills.",
+              "pl": "Silnik stuka, kiedy wjeżdżam pod górę.",
+              "focusEn": "knocks",
+              "focusPl": "stuka"
+            },
+            {
+              "en": "A knocking engine can be very expensive to fix.",
+              "pl": "Stukający silnik może być bardzo drogi w naprawie.",
+              "focusEn": "knocking",
+              "focusPl": "Stukający"
+            }
+          ],
+          "acceptedAnswers": [
+            "knock"
+          ],
+          "acceptedTranslations": [
+            "stukać",
+            "pukać"
+          ]
+        },
+        {
+          "id": "car-problems.vibrate",
+          "term": "vibrate",
+          "ipa": "/ˈvaɪbreɪt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "drgać",
+          "definition": "To shake slightly and quickly.",
+          "register": "neutralny",
+          "contextPl": "Drgania auta",
+          "natural": "shake",
+          "forms": "vibrated; vibrating",
+          "collocations": "the steering wheel vibrates",
+          "synonyms": "shake",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The steering wheel vibrates when I drive on the highway.",
+              "pl": "Kierownica drga, kiedy jadę autostradą.",
+              "focusEn": "vibrates",
+              "focusPl": "drga"
+            },
+            {
+              "en": "The whole car vibrates when I brake hard.",
+              "pl": "Cały samochód się trzęsie, kiedy mocno hamuję.",
+              "focusEn": "vibrates",
+              "focusPl": "się trzęsie"
+            }
+          ],
+          "acceptedAnswers": [
+            "vibrate",
+            "shake"
+          ],
+          "acceptedTranslations": [
+            "drgać",
+            "wibrować",
+            "trząść się"
+          ]
+        },
+        {
+          "id": "car-problems.pull-to-one-side",
+          "term": "pull to one side",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "ściągać na bok",
+          "definition": "Used when a car moves left or right by itself while driving.",
+          "register": "neutralny",
+          "contextPl": "Problemy z prowadzeniem",
+          "natural": "",
+          "forms": "pulled – pulled",
+          "collocations": "pull to the left; pull to the right",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The car pulls to one side when I let go of the wheel.",
+              "pl": "Auto ściąga na bok, kiedy puszczam kierownicę.",
+              "focusEn": "pulls to one side",
+              "focusPl": "ściąga na bok"
+            },
+            {
+              "en": "If it pulls to one side, you probably need an alignment.",
+              "pl": "Jeśli ściąga na bok, pewnie potrzebujesz ustawienia zbieżności.",
+              "focusEn": "pulls to one side",
+              "focusPl": "ściąga na bok"
+            }
+          ],
+          "acceptedAnswers": [
+            "pull to one side",
+            "pull to the left",
+            "pull to the right"
+          ],
+          "acceptedTranslations": [
+            "ściągać na bok",
+            "ściągać w lewo",
+            "ściągać w prawo"
+          ]
+        },
+        {
+          "id": "car-problems.sputter",
+          "term": "sputter",
+          "ipa": "/ˈspʌtər/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "krztusić się",
+          "definition": "To make small popping sounds and not run smoothly, used about an engine.",
+          "register": "neutralny",
+          "contextPl": "Nierówna praca silnika",
+          "natural": "",
+          "forms": "sputtered; sputtering",
+          "collocations": "the engine sputtered",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The engine sputtered for a few seconds and then died.",
+              "pl": "Silnik krztusił się przez kilka sekund, a potem zgasł.",
+              "focusEn": "sputtered",
+              "focusPl": "krztusił się"
+            },
+            {
+              "en": "It sputters a lot when it's cold outside.",
+              "pl": "Mocno się krztusi, kiedy na zewnątrz jest zimno.",
+              "focusEn": "sputters",
+              "focusPl": "się krztusi"
+            }
+          ],
+          "acceptedAnswers": [
+            "sputter"
+          ],
+          "acceptedTranslations": [
+            "krztusić się",
+            "prychać",
+            "pracować nierówno"
+          ]
+        },
+        {
+          "id": "car-problems.burning-smell",
+          "term": "burning smell",
+          "ipa": "/ˌbɝːnɪŋ ˈsmel/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zapach spalenizny",
+          "definition": "The smell of something that is burning.",
+          "register": "neutralny",
+          "contextPl": "Niepokojące objawy",
+          "natural": "",
+          "forms": "",
+          "collocations": "notice a burning smell",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a burning smell when I turn on the heater.",
+              "pl": "Kiedy włączam ogrzewanie, czuć zapach spalenizny.",
+              "focusEn": "burning smell",
+              "focusPl": "zapach spalenizny"
+            },
+            {
+              "en": "A burning smell after driving downhill usually means hot brakes.",
+              "pl": "Zapach spalenizny po zjeździe z góry zwykle oznacza gorące hamulce.",
+              "focusEn": "burning smell",
+              "focusPl": "Zapach spalenizny"
+            }
+          ],
+          "acceptedAnswers": [
+            "burning smell"
+          ],
+          "acceptedTranslations": [
+            "zapach spalenizny",
+            "swąd",
+            "zapach spalenia"
+          ]
+        },
+        {
+          "id": "car-problems.oil-leak",
+          "term": "oil leak",
+          "ipa": "/ˈɔɪl ˌliːk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wyciek oleju",
+          "definition": "A problem where oil comes out of the engine.",
+          "register": "neutralny",
+          "contextPl": "Wycieki płynów",
+          "natural": "",
+          "forms": "oil leaks",
+          "collocations": "fix an oil leak",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a dark spot on my driveway, so I think it's an oil leak.",
+              "pl": "Na moim podjeździe jest ciemna plama, więc myślę, że to wyciek oleju.",
+              "focusEn": "oil leak",
+              "focusPl": "wyciek oleju"
+            },
+            {
+              "en": "A small oil leak isn't an emergency, but don't ignore it.",
+              "pl": "Mały wyciek oleju to nie nagły wypadek, ale nie lekceważ go.",
+              "focusEn": "oil leak",
+              "focusPl": "wyciek oleju"
+            }
+          ],
+          "acceptedAnswers": [
+            "oil leak",
+            "leak"
+          ],
+          "acceptedTranslations": [
+            "wyciek oleju",
+            "cieknący olej"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "car-problems.parts",
+      "namePl": "Części samochodu",
+      "scenePl": "Auto na podnośniku w warsztacie; mechanik pokazuje klientowi zużyte części",
+      "entries": [
+        {
+          "id": "car-problems.mechanic",
+          "term": "mechanic",
+          "ipa": "/məˈkænɪk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "mechanik",
+          "definition": "A person whose job is to repair cars.",
+          "register": "neutralny",
+          "contextPl": "Osoba naprawiająca auto",
+          "natural": "",
+          "forms": "mechanics",
+          "collocations": "auto mechanic; take the car to a mechanic",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The mechanic showed me the old brake pads, and they were almost gone.",
+              "pl": "Mechanik pokazał mi stare klocki hamulcowe i były prawie starte.",
+              "focusEn": "mechanic",
+              "focusPl": "Mechanik"
+            },
+            {
+              "en": "I trust this mechanic because he never charges for things I don't need.",
+              "pl": "Ufam temu mechanikowi, bo nigdy nie każe sobie płacić za niepotrzebne rzeczy.",
+              "focusEn": "mechanic",
+              "focusPl": "mechanikowi"
+            }
+          ],
+          "acceptedAnswers": [
+            "mechanic"
+          ],
+          "acceptedTranslations": [
+            "mechanik",
+            "mechanik samochodowy"
+          ]
+        },
+        {
+          "id": "car-problems.engine",
+          "term": "engine",
+          "ipa": "/ˈendʒɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "silnik",
+          "definition": "The part of a car that makes it move.",
+          "register": "neutralny",
+          "contextPl": "Najważniejsza część auta",
+          "natural": "motor",
+          "forms": "engines",
+          "collocations": "start the engine; engine problem",
+          "synonyms": "motor",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The engine itself is fine, the problem is a cheap part.",
+              "pl": "Sam silnik jest w porządku, problemem jest tania część.",
+              "focusEn": "engine",
+              "focusPl": "silnik"
+            },
+            {
+              "en": "Look under here, you can see oil around the engine.",
+              "pl": "Proszę spojrzeć tutaj na dół, widać olej wokół silnika.",
+              "focusEn": "engine",
+              "focusPl": "silnika"
+            }
+          ],
+          "acceptedAnswers": [
+            "engine",
+            "motor"
+          ],
+          "acceptedTranslations": [
+            "silnik"
+          ]
+        },
+        {
+          "id": "car-problems.battery",
+          "term": "battery",
+          "ipa": "/ˈbætəri/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "akumulator",
+          "definition": "The box that stores electricity to start a car.",
+          "register": "neutralny",
+          "contextPl": "Elektryka samochodu",
+          "natural": "",
+          "forms": "batteries",
+          "collocations": "car battery; dead battery; new battery",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your battery is six years old, so it's time for a new one.",
+              "pl": "Pana akumulator ma sześć lat, więc czas na nowy.",
+              "focusEn": "battery",
+              "focusPl": "akumulator"
+            },
+            {
+              "en": "We tested the battery, and it doesn't hold a charge.",
+              "pl": "Sprawdziliśmy akumulator i nie trzyma ładunku.",
+              "focusEn": "battery",
+              "focusPl": "akumulator"
+            }
+          ],
+          "acceptedAnswers": [
+            "battery"
+          ],
+          "acceptedTranslations": [
+            "akumulator"
+          ]
+        },
+        {
+          "id": "car-problems.brake-pads",
+          "term": "brake pads",
+          "ipa": "/ˈbreɪk ˌpædz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "klocki hamulcowe",
+          "definition": "The parts that press against the wheels to slow the car down.",
+          "register": "neutralny",
+          "contextPl": "Układ hamulcowy",
+          "natural": "",
+          "forms": "brake pad (lp.)",
+          "collocations": "replace the brake pads; worn brake pads",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your front brake pads are almost worn out.",
+              "pl": "Pana przednie klocki hamulcowe są prawie zużyte.",
+              "focusEn": "brake pads",
+              "focusPl": "klocki hamulcowe"
+            },
+            {
+              "en": "New brake pads will stop the squealing.",
+              "pl": "Nowe klocki hamulcowe zlikwidują piszczenie.",
+              "focusEn": "brake pads",
+              "focusPl": "klocki hamulcowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "brake pads",
+            "brake pad"
+          ],
+          "acceptedTranslations": [
+            "klocki hamulcowe",
+            "klocki"
+          ]
+        },
+        {
+          "id": "car-problems.alternator",
+          "term": "alternator",
+          "ipa": "/ˈɔːltərneɪtər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "alternator",
+          "definition": "The part that charges the battery while the engine runs.",
+          "register": "specjalistyczny",
+          "contextPl": "Elektryka samochodu",
+          "natural": "",
+          "forms": "alternators",
+          "collocations": "replace the alternator",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The battery is fine, it's the alternator that's broken.",
+              "pl": "Akumulator jest w porządku, zepsuty jest alternator.",
+              "focusEn": "alternator",
+              "focusPl": "alternator"
+            },
+            {
+              "en": "A new alternator costs about four hundred dollars with labor.",
+              "pl": "Nowy alternator kosztuje około czterystu dolarów z robocizną.",
+              "focusEn": "alternator",
+              "focusPl": "alternator"
+            }
+          ],
+          "acceptedAnswers": [
+            "alternator"
+          ],
+          "acceptedTranslations": [
+            "alternator"
+          ]
+        },
+        {
+          "id": "car-problems.spark-plugs",
+          "term": "spark plugs",
+          "ipa": "/ˈspɑːrk ˌplʌɡz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "świece zapłonowe",
+          "definition": "Small parts that make a spark to start the fuel burning in the engine.",
+          "register": "specjalistyczny",
+          "contextPl": "Zapłon silnika",
+          "natural": "",
+          "forms": "spark plug (lp.)",
+          "collocations": "change the spark plugs",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Old spark plugs can make the engine sputter.",
+              "pl": "Stare świece zapłonowe mogą powodować krztuszenie się silnika.",
+              "focusEn": "spark plugs",
+              "focusPl": "świece zapłonowe"
+            },
+            {
+              "en": "We'll change all four spark plugs while it's here.",
+              "pl": "Skoro auto już tu jest, wymienimy wszystkie cztery świece zapłonowe.",
+              "focusEn": "spark plugs",
+              "focusPl": "świece zapłonowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "spark plugs",
+            "spark plug"
+          ],
+          "acceptedTranslations": [
+            "świece zapłonowe",
+            "świece"
+          ]
+        },
+        {
+          "id": "car-problems.radiator",
+          "term": "radiator",
+          "ipa": "/ˈreɪdieɪtər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "chłodnica",
+          "definition": "The part at the front of a car that keeps the engine cool.",
+          "register": "neutralny",
+          "contextPl": "Układ chłodzenia",
+          "natural": "",
+          "forms": "radiators",
+          "collocations": "leaking radiator",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W domu „radiator” to kaloryfer.",
+          "examples": [
+            {
+              "en": "Your radiator has a small crack, that's why it overheated.",
+              "pl": "Pana chłodnica ma małe pęknięcie, dlatego silnik się przegrzał.",
+              "focusEn": "radiator",
+              "focusPl": "chłodnica"
+            },
+            {
+              "en": "Never open the radiator cap when the engine is hot.",
+              "pl": "Nigdy nie otwieraj korka chłodnicy, kiedy silnik jest gorący.",
+              "focusEn": "radiator",
+              "focusPl": "chłodnicy"
+            }
+          ],
+          "acceptedAnswers": [
+            "radiator"
+          ],
+          "acceptedTranslations": [
+            "chłodnica"
+          ]
+        },
+        {
+          "id": "car-problems.coolant",
+          "term": "coolant",
+          "ipa": "/ˈkuːlənt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "płyn chłodniczy",
+          "definition": "A liquid that keeps the engine from getting too hot.",
+          "register": "specjalistyczny",
+          "contextPl": "Płyny eksploatacyjne",
+          "natural": "antifreeze",
+          "forms": "",
+          "collocations": "coolant level; top off the coolant",
+          "synonyms": "antifreeze",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your coolant was almost empty, so I filled it up.",
+              "pl": "Pana płyn chłodniczy był prawie pusty, więc go uzupełniłem.",
+              "focusEn": "coolant",
+              "focusPl": "płyn chłodniczy"
+            },
+            {
+              "en": "Check the coolant before you drive through the desert.",
+              "pl": "Sprawdź płyn chłodniczy, zanim pojedziesz przez pustynię.",
+              "focusEn": "coolant",
+              "focusPl": "płyn chłodniczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "coolant",
+            "antifreeze"
+          ],
+          "acceptedTranslations": [
+            "płyn chłodniczy",
+            "płyn do chłodnicy"
+          ]
+        },
+        {
+          "id": "car-problems.brake-fluid",
+          "term": "brake fluid",
+          "ipa": "/ˈbreɪk ˌfluːɪd/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "płyn hamulcowy",
+          "definition": "The liquid that makes the brakes work when you press the pedal.",
+          "register": "specjalistyczny",
+          "contextPl": "Płyny eksploatacyjne",
+          "natural": "",
+          "forms": "",
+          "collocations": "low brake fluid; brake fluid leak",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your brake fluid is low, which could be a leak.",
+              "pl": "Ma pan za mało płynu hamulcowego, to może być wyciek.",
+              "focusEn": "brake fluid",
+              "focusPl": "płynu hamulcowego"
+            },
+            {
+              "en": "We changed the brake fluid because it was very old.",
+              "pl": "Wymieniliśmy płyn hamulcowy, bo był bardzo stary.",
+              "focusEn": "brake fluid",
+              "focusPl": "płyn hamulcowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "brake fluid"
+          ],
+          "acceptedTranslations": [
+            "płyn hamulcowy"
+          ]
+        },
+        {
+          "id": "car-problems.transmission",
+          "term": "transmission",
+          "ipa": "/trænzˈmɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skrzynia biegów",
+          "definition": "The system that moves power from the engine to the wheels.",
+          "register": "neutralny",
+          "contextPl": "Napęd",
+          "natural": "gearbox",
+          "forms": "transmissions",
+          "collocations": "automatic transmission; transmission problem",
+          "synonyms": "gearbox",
+          "antonyms": "",
+          "notePl": "W BrE także „gearbox”.",
+          "examples": [
+            {
+              "en": "Fixing the transmission could cost more than the car is worth.",
+              "pl": "Naprawa skrzyni biegów mogłaby kosztować więcej, niż wart jest samochód.",
+              "focusEn": "transmission",
+              "focusPl": "skrzyni biegów"
+            },
+            {
+              "en": "The transmission slips when you shift into third.",
+              "pl": "Skrzynia biegów się ślizga przy wrzucaniu trójki.",
+              "focusEn": "transmission",
+              "focusPl": "Skrzynia biegów"
+            }
+          ],
+          "acceptedAnswers": [
+            "transmission",
+            "gearbox"
+          ],
+          "acceptedTranslations": [
+            "skrzynia biegów",
+            "przekładnia"
+          ]
+        },
+        {
+          "id": "car-problems.clutch",
+          "term": "clutch",
+          "ipa": "/klʌtʃ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "sprzęgło",
+          "definition": "The pedal and part used to change gears in a manual car.",
+          "register": "neutralny",
+          "contextPl": "Napęd",
+          "natural": "",
+          "forms": "clutches",
+          "collocations": "burn out the clutch; press the clutch",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your clutch is burned out, so we need to replace it.",
+              "pl": "Pana sprzęgło jest spalone, więc musimy je wymienić.",
+              "focusEn": "clutch",
+              "focusPl": "sprzęgło"
+            },
+            {
+              "en": "The clutch pedal feels soft because there's air in the system.",
+              "pl": "Pedał sprzęgła jest miękki, bo w układzie jest powietrze.",
+              "focusEn": "clutch",
+              "focusPl": "sprzęgła"
+            }
+          ],
+          "acceptedAnswers": [
+            "clutch"
+          ],
+          "acceptedTranslations": [
+            "sprzęgło"
+          ]
+        },
+        {
+          "id": "car-problems.exhaust",
+          "term": "exhaust",
+          "ipa": "/ɪɡˈzɔːst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "układ wydechowy",
+          "definition": "The pipe and system that carry gases away from the engine.",
+          "register": "neutralny",
+          "contextPl": "Układ wydechowy",
+          "natural": "tailpipe",
+          "forms": "",
+          "collocations": "exhaust pipe; exhaust fumes",
+          "synonyms": "tailpipe",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a hole in your exhaust, that's why it's so loud.",
+              "pl": "W pana układzie wydechowym jest dziura, dlatego jest tak głośno.",
+              "focusEn": "exhaust",
+              "focusPl": "układzie wydechowym"
+            },
+            {
+              "en": "The exhaust pipe is hanging lower than it should.",
+              "pl": "Rura wydechowa wisi niżej, niż powinna.",
+              "focusEn": "exhaust",
+              "focusPl": "wydechowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "exhaust",
+            "exhaust pipe",
+            "tailpipe"
+          ],
+          "acceptedTranslations": [
+            "układ wydechowy",
+            "rura wydechowa",
+            "wydech"
+          ]
+        },
+        {
+          "id": "car-problems.suspension",
+          "term": "suspension",
+          "ipa": "/səˈspenʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zawieszenie",
+          "definition": "The springs and parts that make a car ride smoothly over bumps.",
+          "register": "specjalistyczny",
+          "contextPl": "Zawieszenie i komfort jazdy",
+          "natural": "",
+          "forms": "",
+          "collocations": "front suspension; suspension problem",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Those potholes on your street damaged your suspension.",
+              "pl": "Te dziury na pana ulicy uszkodziły panu zawieszenie.",
+              "focusEn": "suspension",
+              "focusPl": "zawieszenie"
+            },
+            {
+              "en": "The rattling comes from a loose part in the suspension.",
+              "pl": "Stukanie pochodzi od luźnej części w zawieszeniu.",
+              "focusEn": "suspension",
+              "focusPl": "zawieszeniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "suspension"
+          ],
+          "acceptedTranslations": [
+            "zawieszenie"
+          ]
+        },
+        {
+          "id": "car-problems.fuse",
+          "term": "fuse",
+          "ipa": "/fjuːz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "bezpiecznik",
+          "definition": "A small part that breaks an electric circuit if there is too much power.",
+          "register": "neutralny",
+          "contextPl": "Elektryka samochodu",
+          "natural": "",
+          "forms": "fuses",
+          "collocations": "blown fuse; replace a fuse",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your radio stopped working because of a blown fuse.",
+              "pl": "Radio przestało działać przez przepalony bezpiecznik.",
+              "focusEn": "fuse",
+              "focusPl": "bezpiecznik"
+            },
+            {
+              "en": "A new fuse costs less than a dollar.",
+              "pl": "Nowy bezpiecznik kosztuje mniej niż dolara.",
+              "focusEn": "fuse",
+              "focusPl": "bezpiecznik"
+            }
+          ],
+          "acceptedAnswers": [
+            "fuse"
+          ],
+          "acceptedTranslations": [
+            "bezpiecznik"
+          ]
+        },
+        {
+          "id": "car-problems.wiper-blades",
+          "term": "wiper blades",
+          "ipa": "/ˈwaɪpər ˌbleɪdz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pióra wycieraczek",
+          "definition": "The rubber parts of the windshield wipers.",
+          "register": "neutralny",
+          "contextPl": "Wyposażenie",
+          "natural": "",
+          "forms": "wiper blade (lp.)",
+          "collocations": "replace the wiper blades",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your wiper blades are cracked, so they leave lines on the glass.",
+              "pl": "Pana pióra wycieraczek są popękane, więc zostawiają smugi na szybie.",
+              "focusEn": "wiper blades",
+              "focusPl": "pióra wycieraczek"
+            },
+            {
+              "en": "New wiper blades only take five minutes to put on.",
+              "pl": "Założenie nowych piór wycieraczek zajmuje tylko pięć minut.",
+              "focusEn": "wiper blades",
+              "focusPl": "piór wycieraczek"
+            }
+          ],
+          "acceptedAnswers": [
+            "wiper blades",
+            "wiper blade",
+            "wipers"
+          ],
+          "acceptedTranslations": [
+            "pióra wycieraczek",
+            "wycieraczki"
+          ]
+        },
+        {
+          "id": "car-problems.hood",
+          "term": "hood",
+          "ipa": "/hʊd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "maska",
+          "definition": "The metal cover over the engine at the front of a car.",
+          "register": "neutralny",
+          "contextPl": "Karoseria",
+          "natural": "",
+          "forms": "hoods",
+          "collocations": "open the hood; under the hood",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W BrE „bonnet”.",
+          "examples": [
+            {
+              "en": "Can you pop the hood so I can take a look?",
+              "pl": "Może pan otworzyć maskę, żebym mógł zajrzeć?",
+              "focusEn": "hood",
+              "focusPl": "maskę"
+            },
+            {
+              "en": "The hood won't close properly after the accident.",
+              "pl": "Po wypadku maska nie zamyka się prawidłowo.",
+              "focusEn": "hood",
+              "focusPl": "maska"
+            }
+          ],
+          "acceptedAnswers": [
+            "hood",
+            "bonnet"
+          ],
+          "acceptedTranslations": [
+            "maska",
+            "pokrywa silnika"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "car-problems.shop",
+      "namePl": "W warsztacie",
+      "scenePl": "Warsztat samochodowy; rozmowa o naprawie, kosztach i terminie odbioru auta",
+      "entries": [
+        {
+          "id": "car-problems.auto-shop",
+          "term": "auto shop",
+          "ipa": "/ˈɔːtoʊ ˌʃɑːp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "warsztat samochodowy",
+          "definition": "A place where cars are repaired.",
+          "register": "neutralny",
+          "contextPl": "Miejsce naprawy auta",
+          "natural": "repair shop",
+          "forms": "auto shops",
+          "collocations": "take the car to the auto shop",
+          "synonyms": "repair shop; garage",
+          "antonyms": "",
+          "notePl": "Mówi się też „repair shop” lub „garage”.",
+          "examples": [
+            {
+              "en": "This auto shop is busy, so they can only look at it tomorrow.",
+              "pl": "Ten warsztat samochodowy jest zajęty, więc mogą zajrzeć do auta dopiero jutro.",
+              "focusEn": "auto shop",
+              "focusPl": "warsztat samochodowy"
+            },
+            {
+              "en": "My neighbor recommended this auto shop near the highway.",
+              "pl": "Sąsiad polecił mi ten warsztat przy autostradzie.",
+              "focusEn": "auto shop",
+              "focusPl": "warsztat"
+            }
+          ],
+          "acceptedAnswers": [
+            "auto shop",
+            "repair shop",
+            "garage",
+            "auto repair shop"
+          ],
+          "acceptedTranslations": [
+            "warsztat samochodowy",
+            "warsztat",
+            "serwis samochodowy"
+          ]
+        },
+        {
+          "id": "car-problems.oil-change",
+          "term": "oil change",
+          "ipa": "/ˈɔɪl ˌtʃeɪndʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wymiana oleju",
+          "definition": "Replacing the old engine oil with new oil.",
+          "register": "neutralny",
+          "contextPl": "Rutynowy serwis",
+          "natural": "",
+          "forms": "oil changes",
+          "collocations": "get an oil change; due for an oil change",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You're overdue for an oil change by about two thousand miles.",
+              "pl": "Spóźnia się pan z wymianą oleju o jakieś dwa tysiące mil.",
+              "focusEn": "oil change",
+              "focusPl": "wymianą oleju"
+            },
+            {
+              "en": "An oil change takes about thirty minutes if you want to wait.",
+              "pl": "Wymiana oleju zajmuje około trzydziestu minut, jeśli chce pan poczekać.",
+              "focusEn": "oil change",
+              "focusPl": "Wymiana oleju"
+            }
+          ],
+          "acceptedAnswers": [
+            "oil change"
+          ],
+          "acceptedTranslations": [
+            "wymiana oleju"
+          ]
+        },
+        {
+          "id": "car-problems.diagnose",
+          "term": "diagnose",
+          "ipa": "/ˌdaɪəɡˈnoʊs/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zdiagnozować",
+          "definition": "To find out what is wrong with something.",
+          "register": "neutralny",
+          "contextPl": "Szukanie przyczyny usterki",
+          "natural": "figure out",
+          "forms": "diagnosed; diagnosing",
+          "collocations": "diagnose the problem",
+          "synonyms": "identify",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need a day to diagnose the problem with the electrics.",
+              "pl": "Potrzebujemy dnia, żeby zdiagnozować problem z elektryką.",
+              "focusEn": "diagnose",
+              "focusPl": "zdiagnozować"
+            },
+            {
+              "en": "It took them three hours to diagnose the strange noise.",
+              "pl": "Zdiagnozowanie dziwnego odgłosu zajęło im trzy godziny.",
+              "focusEn": "diagnose",
+              "focusPl": "Zdiagnozowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "diagnose"
+          ],
+          "acceptedTranslations": [
+            "zdiagnozować",
+            "diagnozować",
+            "ustalić przyczynę"
+          ]
+        },
+        {
+          "id": "car-problems.wheel-alignment",
+          "term": "wheel alignment",
+          "ipa": "/ˈwiːl əˌlaɪnmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "ustawienie zbieżności",
+          "definition": "Adjusting the wheels so they point in the right direction.",
+          "register": "specjalistyczny",
+          "contextPl": "Regulacja kół",
+          "natural": "alignment",
+          "forms": "",
+          "collocations": "get a wheel alignment",
+          "synonyms": "alignment",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After hitting that curb, you'll need a wheel alignment.",
+              "pl": "Po uderzeniu w krawężnik będzie panu potrzebne ustawienie zbieżności.",
+              "focusEn": "wheel alignment",
+              "focusPl": "ustawienie zbieżności"
+            },
+            {
+              "en": "A wheel alignment costs eighty dollars and takes an hour.",
+              "pl": "Ustawienie zbieżności kosztuje osiemdziesiąt dolarów i trwa godzinę.",
+              "focusEn": "wheel alignment",
+              "focusPl": "Ustawienie zbieżności"
+            }
+          ],
+          "acceptedAnswers": [
+            "wheel alignment",
+            "alignment"
+          ],
+          "acceptedTranslations": [
+            "ustawienie zbieżności",
+            "geometria kół",
+            "zbieżność"
+          ]
+        },
+        {
+          "id": "car-problems.inspection",
+          "term": "inspection",
+          "ipa": "/ɪnˈspekʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przegląd techniczny",
+          "definition": "An official check to make sure a car is safe to drive.",
+          "register": "formalny",
+          "contextPl": "Obowiązkowe badania auta",
+          "natural": "",
+          "forms": "inspections",
+          "collocations": "state inspection; pass inspection; fail inspection",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W niektórych stanach USA wymagany corocznie.",
+          "examples": [
+            {
+              "en": "Your car won't pass inspection with that crack in the windshield.",
+              "pl": "Pana auto nie przejdzie przeglądu technicznego z tym pęknięciem szyby.",
+              "focusEn": "inspection",
+              "focusPl": "przeglądu technicznego"
+            },
+            {
+              "en": "The state inspection is due at the end of this month.",
+              "pl": "Termin stanowego przeglądu technicznego mija pod koniec miesiąca.",
+              "focusEn": "inspection",
+              "focusPl": "przeglądu technicznego"
+            }
+          ],
+          "acceptedAnswers": [
+            "inspection",
+            "state inspection"
+          ],
+          "acceptedTranslations": [
+            "przegląd techniczny",
+            "badanie techniczne",
+            "kontrola"
+          ]
+        },
+        {
+          "id": "car-problems.parts-and-labor",
+          "term": "parts and labor",
+          "ipa": "/ˌpɑːrts ən ˈleɪbər/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "części i robocizna",
+          "definition": "The cost of the new parts plus the cost of the work.",
+          "register": "neutralny",
+          "contextPl": "Koszt naprawy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W BrE „labour”.",
+          "examples": [
+            {
+              "en": "The total is six hundred dollars, parts and labor.",
+              "pl": "Razem sześćset dolarów, części i robocizna.",
+              "focusEn": "parts and labor",
+              "focusPl": "części i robocizna"
+            },
+            {
+              "en": "Does that price include parts and labor?",
+              "pl": "Czy ta cena obejmuje części i robociznę?",
+              "focusEn": "parts and labor",
+              "focusPl": "części i robociznę"
+            }
+          ],
+          "acceptedAnswers": [
+            "parts and labor",
+            "parts & labor"
+          ],
+          "acceptedTranslations": [
+            "części i robocizna",
+            "części plus robocizna"
+          ]
+        },
+        {
+          "id": "car-problems.under-the-hood",
+          "term": "under the hood",
+          "ipa": "/ˌʌndər ðə ˈhʊd/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pod maską",
+          "definition": "In the engine area of a car.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie silnika",
+          "natural": "",
+          "forms": "",
+          "collocations": "look under the hood; check under the hood",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przenośnie także: w środku, w działaniu czegoś.",
+          "examples": [
+            {
+              "en": "Let me take a quick look under the hood before I give you a price.",
+              "pl": "Pozwoli pan, że rzucę okiem pod maskę, zanim podam cenę.",
+              "focusEn": "under the hood",
+              "focusPl": "pod maskę"
+            },
+            {
+              "en": "I don't know anything about what's under the hood.",
+              "pl": "Nie mam pojęcia, co jest pod maską.",
+              "focusEn": "under the hood",
+              "focusPl": "pod maską"
+            }
+          ],
+          "acceptedAnswers": [
+            "under the hood"
+          ],
+          "acceptedTranslations": [
+            "pod maską",
+            "w silniku"
+          ]
+        },
+        {
+          "id": "car-problems.get-the-car-serviced",
+          "term": "get the car serviced",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oddać auto do serwisu",
+          "definition": "To take a car for regular checks and maintenance.",
+          "register": "neutralny",
+          "contextPl": "Regularna obsługa auta",
+          "natural": "",
+          "forms": "got – gotten",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You should get the car serviced every ten thousand miles.",
+              "pl": "Powinien pan oddawać auto do serwisu co dziesięć tysięcy mil.",
+              "focusEn": "get the car serviced",
+              "focusPl": "oddawać auto do serwisu"
+            },
+            {
+              "en": "I forgot to get the car serviced before our road trip.",
+              "pl": "Zapomniałem oddać auto do serwisu przed naszą podróżą.",
+              "focusEn": "get the car serviced",
+              "focusPl": "oddać auto do serwisu"
+            }
+          ],
+          "acceptedAnswers": [
+            "get the car serviced",
+            "get the car checked"
+          ],
+          "acceptedTranslations": [
+            "oddać auto do serwisu",
+            "zrobić przegląd auta",
+            "serwisować auto"
+          ]
+        },
+        {
+          "id": "car-problems.loaner-car",
+          "term": "loaner car",
+          "ipa": "/ˈloʊnər ˌkɑːr/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "samochód zastępczy",
+          "definition": "A car a repair shop lends you while yours is being fixed.",
+          "register": "neutralny",
+          "contextPl": "Transport na czas naprawy",
+          "natural": "courtesy car",
+          "forms": "loaner cars",
+          "collocations": "get a loaner car",
+          "synonyms": "courtesy car; replacement car",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Do you offer a loaner car while mine is in the shop?",
+              "pl": "Czy oferujecie samochód zastępczy, kiedy mój jest w warsztacie?",
+              "focusEn": "loaner car",
+              "focusPl": "samochód zastępczy"
+            },
+            {
+              "en": "The loaner car is small, but it's better than taking the bus.",
+              "pl": "Auto zastępcze jest małe, ale to lepsze niż jazda autobusem.",
+              "focusEn": "loaner car",
+              "focusPl": "Auto zastępcze"
+            }
+          ],
+          "acceptedAnswers": [
+            "loaner car",
+            "loaner",
+            "courtesy car"
+          ],
+          "acceptedTranslations": [
+            "samochód zastępczy",
+            "auto zastępcze"
+          ]
+        },
+        {
+          "id": "car-problems.recall",
+          "term": "recall",
+          "ipa": "/ˈriːkɔːl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "akcja serwisowa",
+          "definition": "An order from a company asking owners to return cars with a known problem.",
+          "register": "formalny",
+          "contextPl": "Wezwanie producenta do naprawy",
+          "natural": "",
+          "forms": "recalls",
+          "collocations": "safety recall; vehicle recall",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your model has a recall for the airbags, so we'll fix it for free.",
+              "pl": "Pana model jest objęty akcją serwisową dotyczącą poduszek powietrznych, więc naprawimy to za darmo.",
+              "focusEn": "recall",
+              "focusPl": "akcją serwisową"
+            },
+            {
+              "en": "I got a letter about a recall for the seat belts.",
+              "pl": "Dostałem list w sprawie akcji serwisowej dotyczącej pasów bezpieczeństwa.",
+              "focusEn": "recall",
+              "focusPl": "akcji serwisowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "recall"
+          ],
+          "acceptedTranslations": [
+            "akcja serwisowa",
+            "akcja przywoławcza"
+          ]
+        },
+        {
+          "id": "car-problems.rip-off",
+          "term": "rip-off",
+          "ipa": "/ˈrɪp ɔːf/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zdzierstwo",
+          "definition": "Something that costs much more than it should.",
+          "register": "slangowy",
+          "contextPl": "Za wysoka cena naprawy",
+          "natural": "",
+          "forms": "rip-offs",
+          "collocations": "total rip-off",
+          "synonyms": "",
+          "antonyms": "bargain",
+          "notePl": "Czasownik: rip someone off – oskubać kogoś.",
+          "examples": [
+            {
+              "en": "Eight hundred dollars for brakes? That's a rip-off!",
+              "pl": "Osiemset dolarów za hamulce? To zdzierstwo!",
+              "focusEn": "rip-off",
+              "focusPl": "zdzierstwo"
+            },
+            {
+              "en": "I got a second quote because the first one felt like a rip-off.",
+              "pl": "Poprosiłem o drugą wycenę, bo pierwsza wyglądała na naciąganie.",
+              "focusEn": "rip-off",
+              "focusPl": "naciąganie"
+            }
+          ],
+          "acceptedAnswers": [
+            "rip-off",
+            "rip off"
+          ],
+          "acceptedTranslations": [
+            "zdzierstwo",
+            "naciąganie",
+            "zdzierstwo cenowe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "car-problems.damage",
+      "namePl": "Szkody i blacharka",
+      "scenePl": "Warsztat blacharsko-lakierniczy po drobnej stłuczce na parkingu",
+      "entries": [
+        {
+          "id": "car-problems.body-shop",
+          "term": "body shop",
+          "ipa": "/ˈbɑːdi ˌʃɑːp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "warsztat blacharski",
+          "definition": "A shop that repairs the outside of cars after accidents.",
+          "register": "neutralny",
+          "contextPl": "Naprawa karoserii",
+          "natural": "",
+          "forms": "body shops",
+          "collocations": "auto body shop; take it to a body shop",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The body shop said they can fix the door in three days.",
+              "pl": "Warsztat blacharski powiedział, że naprawi drzwi w trzy dni.",
+              "focusEn": "body shop",
+              "focusPl": "Warsztat blacharski"
+            },
+            {
+              "en": "My insurance company sent me to this body shop.",
+              "pl": "Moja firma ubezpieczeniowa skierowała mnie do tego warsztatu blacharskiego.",
+              "focusEn": "body shop",
+              "focusPl": "warsztatu blacharskiego"
+            }
+          ],
+          "acceptedAnswers": [
+            "body shop",
+            "auto body shop"
+          ],
+          "acceptedTranslations": [
+            "warsztat blacharski",
+            "blacharz",
+            "warsztat blacharsko-lakierniczy"
+          ]
+        },
+        {
+          "id": "car-problems.bumper",
+          "term": "bumper",
+          "ipa": "/ˈbʌmpər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zderzak",
+          "definition": "A bar at the front and back of a car that protects it in small accidents.",
+          "register": "neutralny",
+          "contextPl": "Karoseria",
+          "natural": "",
+          "forms": "bumpers",
+          "collocations": "front bumper; rear bumper",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The back bumper is cracked and has to be replaced.",
+              "pl": "Tylny zderzak jest pęknięty i trzeba go wymienić.",
+              "focusEn": "bumper",
+              "focusPl": "zderzak"
+            },
+            {
+              "en": "Someone backed into my front bumper in the parking lot.",
+              "pl": "Ktoś cofając, uderzył w mój przedni zderzak na parkingu.",
+              "focusEn": "bumper",
+              "focusPl": "zderzak"
+            }
+          ],
+          "acceptedAnswers": [
+            "bumper"
+          ],
+          "acceptedTranslations": [
+            "zderzak"
+          ]
+        },
+        {
+          "id": "car-problems.side-mirror",
+          "term": "side mirror",
+          "ipa": "/ˈsaɪd ˌmɪrər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "lusterko boczne",
+          "definition": "A mirror on the outside of a car door.",
+          "register": "neutralny",
+          "contextPl": "Karoseria",
+          "natural": "wing mirror",
+          "forms": "side mirrors",
+          "collocations": "broken side mirror",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W BrE „wing mirror”.",
+          "examples": [
+            {
+              "en": "A truck hit my side mirror and drove away.",
+              "pl": "Ciężarówka uderzyła w moje lusterko boczne i odjechała.",
+              "focusEn": "side mirror",
+              "focusPl": "lusterko boczne"
+            },
+            {
+              "en": "A new side mirror with the heating costs more than I thought.",
+              "pl": "Nowe lusterko boczne z podgrzewaniem kosztuje więcej, niż myślałem.",
+              "focusEn": "side mirror",
+              "focusPl": "lusterko boczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "side mirror",
+            "wing mirror"
+          ],
+          "acceptedTranslations": [
+            "lusterko boczne",
+            "lusterko"
+          ]
+        },
+        {
+          "id": "car-problems.paint-job",
+          "term": "paint job",
+          "ipa": "/ˈpeɪnt ˌdʒɑːb/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "lakierowanie",
+          "definition": "The paint on a car, or the work of painting it.",
+          "register": "neutralny",
+          "contextPl": "Lakierowanie auta",
+          "natural": "",
+          "forms": "paint jobs",
+          "collocations": "new paint job; get a paint job",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After the repair, the door will need a new paint job.",
+              "pl": "Po naprawie drzwi będą wymagały nowego lakierowania.",
+              "focusEn": "paint job",
+              "focusPl": "lakierowania"
+            },
+            {
+              "en": "They matched the color perfectly, you can't even see the paint job.",
+              "pl": "Idealnie dopasowali kolor, nawet nie widać lakierowania.",
+              "focusEn": "paint job",
+              "focusPl": "lakierowania"
+            }
+          ],
+          "acceptedAnswers": [
+            "paint job"
+          ],
+          "acceptedTranslations": [
+            "lakierowanie",
+            "lakier"
+          ]
+        },
+        {
+          "id": "car-problems.rust",
+          "term": "rust",
+          "ipa": "/rʌst/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "rdza",
+          "definition": "A red-brown layer that forms on metal when it gets wet.",
+          "register": "neutralny",
+          "contextPl": "Korozja auta",
+          "natural": "",
+          "forms": "",
+          "collocations": "covered in rust; rust spots",
+          "synonyms": "corrosion",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's rust under the doors because of the salt on winter roads.",
+              "pl": "Pod drzwiami jest rdza przez sól na zimowych drogach.",
+              "focusEn": "rust",
+              "focusPl": "rdza"
+            },
+            {
+              "en": "We'll remove the rust before we paint it.",
+              "pl": "Usuniemy rdzę, zanim to polakierujemy.",
+              "focusEn": "rust",
+              "focusPl": "rdzę"
+            }
+          ],
+          "acceptedAnswers": [
+            "rust",
+            "corrosion"
+          ],
+          "acceptedTranslations": [
+            "rdza",
+            "korozja"
+          ]
+        },
+        {
+          "id": "car-problems.rear-end",
+          "term": "rear-end",
+          "ipa": "/ˌrɪr ˈend/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wjechać w tył",
+          "definition": "To hit the back of another car with the front of yours.",
+          "register": "potoczny",
+          "contextPl": "Najczęstsza stłuczka",
+          "natural": "",
+          "forms": "rear-ended; rear-ending",
+          "collocations": "get rear-ended",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I got rear-ended at a red light while I was waiting.",
+              "pl": "Ktoś wjechał mi w tył na czerwonym świetle, kiedy czekałem.",
+              "focusEn": "rear-ended",
+              "focusPl": "wjechał mi w tył"
+            },
+            {
+              "en": "If you rear-end someone, it's almost always your fault.",
+              "pl": "Jeśli wjedziesz komuś w tył, prawie zawsze to twoja wina.",
+              "focusEn": "rear-end",
+              "focusPl": "wjedziesz komuś w tył"
+            }
+          ],
+          "acceptedAnswers": [
+            "rear-end",
+            "rear end"
+          ],
+          "acceptedTranslations": [
+            "wjechać w tył",
+            "najechać na tył"
+          ]
+        },
+        {
+          "id": "car-problems.total",
+          "term": "total",
+          "ipa": "/ˈtoʊtəl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skasować",
+          "definition": "To damage a car so badly that it is not worth repairing.",
+          "register": "potoczny",
+          "contextPl": "Szkoda całkowita",
+          "natural": "wreck",
+          "forms": "totaled; totaling",
+          "collocations": "total a car; the car is totaled",
+          "synonyms": "wreck",
+          "antonyms": "",
+          "notePl": "W BrE: totalled.",
+          "examples": [
+            {
+              "en": "The insurance says my car is totaled, so they won't fix it.",
+              "pl": "Ubezpieczyciel mówi, że moje auto jest skasowane, więc go nie naprawią.",
+              "focusEn": "totaled",
+              "focusPl": "skasowane"
+            },
+            {
+              "en": "He totaled his new car only a week after he bought it.",
+              "pl": "Skasował swoje nowe auto zaledwie tydzień po zakupie.",
+              "focusEn": "totaled",
+              "focusPl": "Skasował"
+            }
+          ],
+          "acceptedAnswers": [
+            "total"
+          ],
+          "acceptedTranslations": [
+            "skasować",
+            "rozbić doszczętnie"
+          ]
+        },
+        {
+          "id": "car-problems.crack",
+          "term": "crack",
+          "ipa": "/kræk/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pęknięcie",
+          "definition": "A thin line on a surface where it has broken but not come apart.",
+          "register": "neutralny",
+          "contextPl": "Uszkodzenia szyb i karoserii",
+          "natural": "",
+          "forms": "cracks",
+          "collocations": "a crack in the windshield",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A small stone made a crack in the windshield.",
+              "pl": "Mały kamień zrobił pęknięcie w przedniej szybie.",
+              "focusEn": "crack",
+              "focusPl": "pęknięcie"
+            },
+            {
+              "en": "The crack got longer after the cold night.",
+              "pl": "Po zimnej nocy pęknięcie się wydłużyło.",
+              "focusEn": "crack",
+              "focusPl": "pęknięcie"
+            }
+          ],
+          "acceptedAnswers": [
+            "crack"
+          ],
+          "acceptedTranslations": [
+            "pęknięcie",
+            "rysa"
+          ]
+        },
+        {
+          "id": "car-problems.hubcap",
+          "term": "hubcap",
+          "ipa": "/ˈhʌbkæp/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "kołpak",
+          "definition": "A round metal or plastic cover on the center of a wheel.",
+          "register": "neutralny",
+          "contextPl": "Wygląd kół",
+          "natural": "wheel cover",
+          "forms": "hubcaps",
+          "collocations": "lose a hubcap",
+          "synonyms": "wheel cover",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I lost a hubcap when I hit the curb in the parking lot.",
+              "pl": "Zgubiłem kołpak, kiedy uderzyłem w krawężnik na parkingu.",
+              "focusEn": "hubcap",
+              "focusPl": "kołpak"
+            },
+            {
+              "en": "A new set of hubcaps will make it look less damaged.",
+              "pl": "Nowy komplet kołpaków sprawi, że auto będzie wyglądać na mniej uszkodzone.",
+              "focusEn": "hubcaps",
+              "focusPl": "kołpaków"
+            }
+          ],
+          "acceptedAnswers": [
+            "hubcap",
+            "wheel cover"
+          ],
+          "acceptedTranslations": [
+            "kołpak"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "car-problems.idioms",
+      "namePl": "Idiomy o samochodach",
+      "scenePl": "Rozmowa znajomych przy grillu o swoich starych samochodach",
+      "entries": [
+        {
+          "id": "car-problems.lemon",
+          "term": "lemon",
+          "ipa": "/ˈlemən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bubel",
+          "definition": "A car that has many problems right after you buy it.",
+          "register": "potoczny",
+          "contextPl": "Wadliwy samochód",
+          "natural": "piece of junk",
+          "forms": "lemons",
+          "collocations": "buy a lemon",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA istnieją „lemon laws” chroniące kupujących.",
+          "examples": [
+            {
+              "en": "My first car was a total lemon, it broke down every month.",
+              "pl": "Moje pierwsze auto to był totalny bubel, psuło się co miesiąc.",
+              "focusEn": "lemon",
+              "focusPl": "bubel"
+            },
+            {
+              "en": "Check everything before you buy it, or you might end up with a lemon.",
+              "pl": "Sprawdź wszystko przed zakupem, bo inaczej możesz kupić bubel.",
+              "focusEn": "lemon",
+              "focusPl": "bubel"
+            }
+          ],
+          "acceptedAnswers": [
+            "lemon"
+          ],
+          "acceptedTranslations": [
+            "bubel",
+            "trefny samochód",
+            "wadliwe auto"
+          ]
+        },
+        {
+          "id": "car-problems.on-its-last-legs",
+          "term": "on its last legs",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ledwo zipie",
+          "definition": "Very old and about to stop working.",
+          "register": "potoczny",
+          "contextPl": "Wyeksploatowane auto",
+          "natural": "about to die",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My van is on its last legs, but I love it.",
+              "pl": "Mój van ledwo zipie, ale go uwielbiam.",
+              "focusEn": "on its last legs",
+              "focusPl": "ledwo zipie"
+            },
+            {
+              "en": "The old truck was on its last legs when we sold it.",
+              "pl": "Stara furgonetka ledwo zipała, kiedy ją sprzedaliśmy.",
+              "focusEn": "on its last legs",
+              "focusPl": "ledwo zipała"
+            }
+          ],
+          "acceptedAnswers": [
+            "on its last legs",
+            "on their last legs"
+          ],
+          "acceptedTranslations": [
+            "ledwo zipie",
+            "dogorywa",
+            "na ostatnich nogach"
+          ]
+        },
+        {
+          "id": "car-problems.runs-like-a-dream",
+          "term": "runs like a dream",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "chodzi jak marzenie",
+          "definition": "Works perfectly, used about a car or machine.",
+          "register": "potoczny",
+          "contextPl": "Pochwała sprawnego auta",
+          "natural": "runs great",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "runs great; runs like new",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's twenty years old, but it still runs like a dream.",
+              "pl": "Ma dwadzieścia lat, ale wciąż chodzi jak marzenie.",
+              "focusEn": "runs like a dream",
+              "focusPl": "chodzi jak marzenie"
+            },
+            {
+              "en": "After the new transmission, my car runs like a dream.",
+              "pl": "Po wymianie skrzyni biegów moje auto chodzi jak złoto.",
+              "focusEn": "runs like a dream",
+              "focusPl": "chodzi jak złoto"
+            }
+          ],
+          "acceptedAnswers": [
+            "runs like a dream",
+            "run like a dream",
+            "runs like a charm"
+          ],
+          "acceptedTranslations": [
+            "chodzi jak marzenie",
+            "chodzi jak złoto",
+            "działa jak marzenie"
+          ]
+        },
+        {
+          "id": "car-problems.run-into-the-ground",
+          "term": "run into the ground",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zajeździć",
+          "definition": "To use something so much that it is completely worn out.",
+          "register": "potoczny",
+          "contextPl": "Eksploatacja do końca",
+          "natural": "wear out",
+          "forms": "ran – run",
+          "collocations": "",
+          "synonyms": "wear out",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I plan to run this car into the ground before I buy a new one.",
+              "pl": "Zamierzam zajeździć to auto, zanim kupię nowe.",
+              "focusEn": "run this car into the ground",
+              "focusPl": "zajeździć"
+            },
+            {
+              "en": "He ran his old pickup into the ground driving to work every day.",
+              "pl": "Zajeździł swojego starego pikapa, codziennie dojeżdżając do pracy.",
+              "focusEn": "ran his old pickup into the ground",
+              "focusPl": "Zajeździł"
+            }
+          ],
+          "acceptedAnswers": [
+            "run into the ground"
+          ],
+          "acceptedTranslations": [
+            "zajeździć",
+            "zajechać",
+            "wyeksploatować"
+          ]
+        },
+        {
+          "id": "car-problems.piece-of-junk",
+          "term": "piece of junk",
+          "ipa": "/ˌpiːs əv ˈdʒʌŋk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kupa złomu",
+          "definition": "Something old and in very bad condition.",
+          "register": "potoczny",
+          "contextPl": "Pogardliwie o starym aucie",
+          "natural": "heap",
+          "forms": "pieces of junk",
+          "collocations": "",
+          "synonyms": "heap; clunker",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Why do you keep fixing that piece of junk?",
+              "pl": "Dlaczego ciągle naprawiasz tę kupę złomu?",
+              "focusEn": "piece of junk",
+              "focusPl": "kupę złomu"
+            },
+            {
+              "en": "This piece of junk got me across the country twice.",
+              "pl": "Ten grat dwa razy przewiózł mnie przez cały kraj.",
+              "focusEn": "piece of junk",
+              "focusPl": "grat"
+            }
+          ],
+          "acceptedAnswers": [
+            "piece of junk",
+            "clunker"
+          ],
+          "acceptedTranslations": [
+            "kupa złomu",
+            "grat",
+            "rzęch"
+          ]
+        },
+        {
+          "id": "car-problems.running-on-fumes",
+          "term": "running on fumes",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "jechać na oparach",
+          "definition": "Driving with almost no gas left, or being very tired.",
+          "register": "potoczny",
+          "contextPl": "Pusty bak lub skrajne zmęczenie",
+          "natural": "exhausted",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przenośnie: ostatkiem sił.",
+          "examples": [
+            {
+              "en": "We made it to the gas station running on fumes.",
+              "pl": "Dotarliśmy na stację, jadąc na oparach.",
+              "focusEn": "running on fumes",
+              "focusPl": "jadąc na oparach"
+            },
+            {
+              "en": "After fixing cars all week, I'm running on fumes.",
+              "pl": "Po całym tygodniu naprawiania aut ledwo trzymam się na nogach.",
+              "focusEn": "running on fumes",
+              "focusPl": "ledwo trzymam się na nogach"
+            }
+          ],
+          "acceptedAnswers": [
+            "running on fumes"
+          ],
+          "acceptedTranslations": [
+            "jechać na oparach",
+            "jechać na rezerwie",
+            "ostatkiem sił"
+          ]
+        },
+        {
+          "id": "car-problems.kick-the-tires",
+          "term": "kick the tires",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "obejrzeć z grubsza",
+          "definition": "To check something quickly before buying it.",
+          "register": "potoczny",
+          "contextPl": "Pobieżne oględziny",
+          "natural": "check out",
+          "forms": "kicked – kicked",
+          "collocations": "",
+          "synonyms": "look over",
+          "antonyms": "",
+          "notePl": "W BrE „kick the tyres”.",
+          "examples": [
+            {
+              "en": "I'm just going to kick the tires on that used car, I won't buy it today.",
+              "pl": "Tylko obejrzę z grubsza to używane auto, dziś go nie kupię.",
+              "focusEn": "kick the tires",
+              "focusPl": "obejrzę z grubsza"
+            },
+            {
+              "en": "Lots of people came to kick the tires, but nobody made an offer.",
+              "pl": "Wiele osób przyszło pooglądać, ale nikt nie złożył oferty.",
+              "focusEn": "kick the tires",
+              "focusPl": "pooglądać"
+            }
+          ],
+          "acceptedAnswers": [
+            "kick the tires"
+          ],
+          "acceptedTranslations": [
+            "obejrzeć z grubsza",
+            "zrobić pobieżne oględziny",
+            "pooglądać"
+          ]
+        }
+      ]
+    }
+  ]
+}

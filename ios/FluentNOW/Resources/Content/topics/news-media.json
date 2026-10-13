@@ -1,0 +1,2601 @@
+{
+  "schemaVersion": 1,
+  "id": "news-media",
+  "namePl": "Wiadomości i media",
+  "nameEn": "News and Media",
+  "group": "society",
+  "symbol": "newspaper",
+  "summaryPl": "Śledzenie wiadomości, praca dziennikarzy, serwisy informacyjne w telewizji i radiu, wiarygodność źródeł i fałszywe informacje.",
+  "aliases": [
+    "wiadomości",
+    "media",
+    "dziennikarstwo",
+    "gazeta",
+    "nagłówek",
+    "dziennikarz",
+    "serwis informacyjny",
+    "fake news",
+    "news",
+    "media",
+    "journalism",
+    "newspaper"
+  ],
+  "categories": [
+    {
+      "id": "news-media.following-news",
+      "namePl": "Śledzenie wiadomości",
+      "scenePl": "Poranna kawa: małżeństwo przegląda wiadomości w telefonie i w gazecie przy kuchennym stole",
+      "entries": [
+        {
+          "id": "news-media.the-news",
+          "term": "the news",
+          "ipa": "/ðə ˈnuːz/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "wiadomości",
+          "definition": "Reports about recent events on TV, radio, the internet, or in newspapers.",
+          "register": "neutralny",
+          "contextPl": "Codzienne informacje",
+          "natural": "",
+          "forms": "",
+          "collocations": "watch the news; on the news; in the news",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„News” jest niepoliczalne: „the news is…”, „a piece of news”.",
+          "examples": [
+            {
+              "en": "Did you see the news about the bridge closing downtown?",
+              "pl": "Widziałaś wiadomości o zamknięciu mostu w centrum?",
+              "focusEn": "the news",
+              "focusPl": "wiadomości"
+            },
+            {
+              "en": "I try not to read the news before my first cup of coffee.",
+              "pl": "Staram się nie czytać wiadomości przed pierwszą kawą.",
+              "focusEn": "the news",
+              "focusPl": "wiadomości"
+            }
+          ],
+          "acceptedAnswers": [
+            "the news",
+            "news"
+          ],
+          "acceptedTranslations": [
+            "wiadomości",
+            "serwis informacyjny",
+            "informacje"
+          ]
+        },
+        {
+          "id": "news-media.newspaper",
+          "term": "newspaper",
+          "ipa": "/ˈnuːzpeɪpər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "gazeta",
+          "definition": "A set of printed pages with news, published every day or week.",
+          "register": "neutralny",
+          "contextPl": "Prasa drukowana",
+          "natural": "paper",
+          "forms": "newspapers",
+          "collocations": "read the newspaper; local newspaper; newspaper article",
+          "synonyms": "paper",
+          "antonyms": "",
+          "notePl": "Potocznie „the paper”.",
+          "examples": [
+            {
+              "en": "My dad still gets the Sunday newspaper delivered to his door.",
+              "pl": "Tata wciąż dostaje niedzielną gazetę pod drzwi.",
+              "focusEn": "newspaper",
+              "focusPl": "gazetę"
+            },
+            {
+              "en": "You left the newspaper open on the sports page again.",
+              "pl": "Znowu zostawiłeś gazetę otwartą na stronie sportowej.",
+              "focusEn": "newspaper",
+              "focusPl": "gazetę"
+            }
+          ],
+          "acceptedAnswers": [
+            "newspaper",
+            "paper"
+          ],
+          "acceptedTranslations": [
+            "gazeta",
+            "dziennik"
+          ]
+        },
+        {
+          "id": "news-media.headline",
+          "term": "headline",
+          "ipa": "/ˈhedlaɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "nagłówek",
+          "definition": "The title of a news story, printed in large letters.",
+          "register": "neutralny",
+          "contextPl": "Tytuły artykułów",
+          "natural": "",
+          "forms": "headlines",
+          "collocations": "read the headlines; front-page headline",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The headline says taxes are going up, but the article says something else.",
+              "pl": "Nagłówek mówi, że podatki rosną, ale artykuł mówi coś innego.",
+              "focusEn": "headline",
+              "focusPl": "Nagłówek"
+            },
+            {
+              "en": "I usually just skim the headlines while I eat breakfast.",
+              "pl": "Przy śniadaniu zwykle tylko przeglądam nagłówki.",
+              "focusEn": "headlines",
+              "focusPl": "nagłówki"
+            }
+          ],
+          "acceptedAnswers": [
+            "headline",
+            "headlines"
+          ],
+          "acceptedTranslations": [
+            "nagłówek",
+            "tytuł"
+          ]
+        },
+        {
+          "id": "news-media.article",
+          "term": "article",
+          "ipa": "/ˈɑːrtɪkəl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "artykuł",
+          "definition": "A piece of writing about a particular subject in a newspaper, magazine, or website.",
+          "register": "neutralny",
+          "contextPl": "Teksty prasowe",
+          "natural": "piece",
+          "forms": "articles",
+          "collocations": "read an article; write an article; news article",
+          "synonyms": "piece; story",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Listen to this article about the new park they're building.",
+              "pl": "Posłuchaj tego artykułu o nowym parku, który budują.",
+              "focusEn": "article",
+              "focusPl": "artykułu"
+            },
+            {
+              "en": "I'll send you the article; it's too long to read now.",
+              "pl": "Wyślę ci artykuł, jest za długi, żeby go teraz czytać.",
+              "focusEn": "article",
+              "focusPl": "artykuł"
+            }
+          ],
+          "acceptedAnswers": [
+            "article",
+            "piece"
+          ],
+          "acceptedTranslations": [
+            "artykuł",
+            "tekst"
+          ]
+        },
+        {
+          "id": "news-media.breaking-news",
+          "term": "breaking news",
+          "ipa": "/ˌbreɪkɪŋ ˈnuːz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "najnowsze wiadomości",
+          "definition": "Important news about something that is happening right now.",
+          "register": "neutralny",
+          "contextPl": "Pilne informacje z ostatniej chwili",
+          "natural": "",
+          "forms": "",
+          "collocations": "breaking news alert; this just in",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na pasku w TV: „Breaking News” – „Pilne”.",
+          "examples": [
+            {
+              "en": "My phone just buzzed with breaking news about the storm.",
+              "pl": "Telefon właśnie zawibrował, pokazując najnowsze wiadomości o burzy.",
+              "focusEn": "breaking news",
+              "focusPl": "najnowsze wiadomości"
+            },
+            {
+              "en": "Every app says \"breaking news\" now, even for small stories.",
+              "pl": "Teraz każda aplikacja pisze „pilne”, nawet przy drobnych sprawach.",
+              "focusEn": "breaking news",
+              "focusPl": "pilne"
+            }
+          ],
+          "acceptedAnswers": [
+            "breaking news"
+          ],
+          "acceptedTranslations": [
+            "najnowsze wiadomości",
+            "wiadomości z ostatniej chwili",
+            "pilne"
+          ]
+        },
+        {
+          "id": "news-media.front-page",
+          "term": "front page",
+          "ipa": "/ˌfrʌnt ˈpeɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pierwsza strona",
+          "definition": "The first page of a newspaper, where the most important news is.",
+          "register": "neutralny",
+          "contextPl": "Najważniejsze informacje dnia",
+          "natural": "",
+          "forms": "front pages",
+          "collocations": "on the front page; front-page news",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our neighbor's bakery is on the front page of the local paper!",
+              "pl": "Piekarnia naszej sąsiadki jest na pierwszej stronie lokalnej gazety!",
+              "focusEn": "front page",
+              "focusPl": "pierwszej stronie"
+            },
+            {
+              "en": "The election results took up the whole front page today.",
+              "pl": "Wyniki wyborów zajęły dziś całą pierwszą stronę.",
+              "focusEn": "front page",
+              "focusPl": "pierwszą stronę"
+            }
+          ],
+          "acceptedAnswers": [
+            "front page",
+            "front-page"
+          ],
+          "acceptedTranslations": [
+            "pierwsza strona",
+            "strona tytułowa"
+          ]
+        },
+        {
+          "id": "news-media.current-events",
+          "term": "current events",
+          "ipa": "/ˌkɝːənt ɪˈvents/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bieżące wydarzenia",
+          "definition": "Important things happening in the world now.",
+          "register": "neutralny",
+          "contextPl": "Aktualności",
+          "natural": "",
+          "forms": "",
+          "collocations": "keep up with current events; a current events quiz",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I need to read more about current events before my work trivia night.",
+              "pl": "Muszę więcej poczytać o bieżących wydarzeniach przed quizem w pracy.",
+              "focusEn": "current events",
+              "focusPl": "bieżących wydarzeniach"
+            },
+            {
+              "en": "My son's teacher gives a current events quiz every Friday.",
+              "pl": "Nauczyciel syna co piątek robi quiz z bieżących wydarzeń.",
+              "focusEn": "current events",
+              "focusPl": "bieżących wydarzeń"
+            }
+          ],
+          "acceptedAnswers": [
+            "current events"
+          ],
+          "acceptedTranslations": [
+            "bieżące wydarzenia",
+            "aktualności",
+            "wydarzenia bieżące"
+          ]
+        },
+        {
+          "id": "news-media.keep-up-with",
+          "term": "keep up with",
+          "ipa": "/ˌkiːp ˈʌp wɪð/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "być na bieżąco z",
+          "definition": "To stay informed about something that changes often.",
+          "register": "neutralny",
+          "contextPl": "Bycie poinformowanym",
+          "natural": "",
+          "forms": "keep – kept – kept",
+          "collocations": "keep up with the news; hard to keep up with",
+          "synonyms": "follow",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It's hard to keep up with the news when everything changes so fast.",
+              "pl": "Trudno być na bieżąco z wiadomościami, gdy wszystko zmienia się tak szybko.",
+              "focusEn": "keep up with",
+              "focusPl": "być na bieżąco z"
+            },
+            {
+              "en": "I keep up with local news through the paper's app.",
+              "pl": "Jestem na bieżąco z lokalnymi wiadomościami dzięki aplikacji gazety.",
+              "focusEn": "keep up with",
+              "focusPl": "Jestem na bieżąco z"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep up with",
+            "kept up with",
+            "keep up"
+          ],
+          "acceptedTranslations": [
+            "być na bieżąco z",
+            "nadążać za",
+            "śledzić"
+          ]
+        },
+        {
+          "id": "news-media.make-headlines",
+          "term": "make headlines",
+          "ipa": "/ˌmeɪk ˈhedlaɪnz/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "trafić na pierwsze strony gazet",
+          "definition": "To become an important news story.",
+          "register": "neutralny",
+          "contextPl": "Głośne wydarzenia",
+          "natural": "",
+          "forms": "make – made – made",
+          "collocations": "",
+          "synonyms": "hit the headlines",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "That high school robotics team made headlines all over the country.",
+              "pl": "Ta licealna drużyna robotyków trafiła na pierwsze strony gazet w całym kraju.",
+              "focusEn": "made headlines",
+              "focusPl": "trafiła na pierwsze strony gazet"
+            },
+            {
+              "en": "A story like that will make headlines for a week.",
+              "pl": "Taka historia będzie trafiać na czołówki przez tydzień.",
+              "focusEn": "make headlines",
+              "focusPl": "trafiać na czołówki"
+            }
+          ],
+          "acceptedAnswers": [
+            "make headlines",
+            "made headlines"
+          ],
+          "acceptedTranslations": [
+            "trafić na pierwsze strony gazet",
+            "trafiać na czołówki",
+            "być na czołówkach"
+          ]
+        },
+        {
+          "id": "news-media.local-news",
+          "term": "local news",
+          "ipa": "/ˌloʊkəl ˈnuːz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wiadomości lokalne",
+          "definition": "News about your own town or area.",
+          "register": "neutralny",
+          "contextPl": "Sprawy z okolicy",
+          "natural": "",
+          "forms": "",
+          "collocations": "local news station; on the local news",
+          "synonyms": "",
+          "antonyms": "national news",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The local news says the farmers' market opens next Saturday.",
+              "pl": "W wiadomościach lokalnych mówią, że targ rolny rusza w przyszłą sobotę.",
+              "focusEn": "local news",
+              "focusPl": "wiadomościach lokalnych"
+            },
+            {
+              "en": "I trust the local news more than the national channels.",
+              "pl": "Bardziej ufam lokalnym wiadomościom niż kanałom ogólnokrajowym.",
+              "focusEn": "local news",
+              "focusPl": "lokalnym wiadomościom"
+            }
+          ],
+          "acceptedAnswers": [
+            "local news"
+          ],
+          "acceptedTranslations": [
+            "wiadomości lokalne",
+            "lokalne wiadomości"
+          ]
+        },
+        {
+          "id": "news-media.section",
+          "term": "section",
+          "ipa": "/ˈsekʃən/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "dział",
+          "definition": "A separate part of a newspaper about one subject.",
+          "register": "neutralny",
+          "contextPl": "Części gazety",
+          "natural": "",
+          "forms": "sections",
+          "collocations": "sports section; business section; comment section",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Comment section” – sekcja komentarzy pod artykułem.",
+          "examples": [
+            {
+              "en": "Can you pass me the sports section when you're done?",
+              "pl": "Podasz mi dział sportowy, jak skończysz?",
+              "focusEn": "section",
+              "focusPl": "dział"
+            },
+            {
+              "en": "Don't read the comment section; it'll ruin your morning.",
+              "pl": "Nie czytaj sekcji komentarzy, popsuje ci to poranek.",
+              "focusEn": "section",
+              "focusPl": "sekcji"
+            }
+          ],
+          "acceptedAnswers": [
+            "section",
+            "sections"
+          ],
+          "acceptedTranslations": [
+            "dział",
+            "rubryka",
+            "sekcja"
+          ]
+        },
+        {
+          "id": "news-media.news-alert",
+          "term": "news alert",
+          "ipa": "/ˈnuːz əˌlɝːt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "powiadomienie o wiadomościach",
+          "definition": "A short message on your phone about an important news story.",
+          "register": "neutralny",
+          "contextPl": "Powiadomienia w telefonie",
+          "natural": "",
+          "forms": "news alerts",
+          "collocations": "turn off news alerts; get a news alert",
+          "synonyms": "notification",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I turned off every news alert because they stressed me out.",
+              "pl": "Wyłączyłam każde powiadomienie o wiadomościach, bo mnie stresowały.",
+              "focusEn": "news alert",
+              "focusPl": "powiadomienie o wiadomościach"
+            },
+            {
+              "en": "A news alert popped up just as I was pouring the coffee.",
+              "pl": "Alert informacyjny wyskoczył akurat, gdy nalewałam kawę.",
+              "focusEn": "news alert",
+              "focusPl": "Alert informacyjny"
+            }
+          ],
+          "acceptedAnswers": [
+            "news alert",
+            "alert"
+          ],
+          "acceptedTranslations": [
+            "powiadomienie o wiadomościach",
+            "alert informacyjny",
+            "powiadomienie"
+          ]
+        },
+        {
+          "id": "news-media.stay-informed",
+          "term": "stay informed",
+          "ipa": "/ˌsteɪ ɪnˈfɔːrmd/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "być dobrze poinformowanym",
+          "definition": "To keep getting information about what is happening.",
+          "register": "neutralny",
+          "contextPl": "Świadome śledzenie wydarzeń",
+          "natural": "",
+          "forms": "stay – stayed – stayed",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I want to stay informed without reading bad news all day.",
+              "pl": "Chcę być dobrze poinformowana, nie czytając złych wiadomości przez cały dzień.",
+              "focusEn": "stay informed",
+              "focusPl": "być dobrze poinformowana"
+            },
+            {
+              "en": "Ten minutes of news each morning is enough to stay informed.",
+              "pl": "Dziesięć minut wiadomości każdego ranka wystarczy, żeby być na bieżąco.",
+              "focusEn": "stay informed",
+              "focusPl": "być na bieżąco"
+            }
+          ],
+          "acceptedAnswers": [
+            "stay informed",
+            "keep informed"
+          ],
+          "acceptedTranslations": [
+            "być dobrze poinformowanym",
+            "być na bieżąco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "news-media.journalism",
+      "namePl": "Dziennikarstwo",
+      "scenePl": "Redakcja lokalnej gazety na godzinę przed zamknięciem wydania",
+      "entries": [
+        {
+          "id": "news-media.journalist",
+          "term": "journalist",
+          "ipa": "/ˈdʒɝːnəlɪst/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "dziennikarz",
+          "definition": "A person whose job is to collect and write news for newspapers, TV, or websites.",
+          "register": "neutralny",
+          "contextPl": "Zawód dziennikarza",
+          "natural": "",
+          "forms": "journalists",
+          "collocations": "a freelance journalist; an experienced journalist",
+          "synonyms": "reporter",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Every journalist in the newsroom is rushing to finish before eight.",
+              "pl": "Każdy dziennikarz w redakcji spieszy się, żeby skończyć przed ósmą.",
+              "focusEn": "journalist",
+              "focusPl": "dziennikarz"
+            },
+            {
+              "en": "The new journalist is writing her first front-page story tonight.",
+              "pl": "Nowa dziennikarka pisze dziś wieczorem swój pierwszy artykuł na pierwszą stronę.",
+              "focusEn": "journalist",
+              "focusPl": "dziennikarka"
+            }
+          ],
+          "acceptedAnswers": [
+            "journalist",
+            "reporter"
+          ],
+          "acceptedTranslations": [
+            "dziennikarz",
+            "dziennikarka"
+          ]
+        },
+        {
+          "id": "news-media.reporter",
+          "term": "reporter",
+          "ipa": "/rɪˈpɔːrtər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "reporter",
+          "definition": "A journalist who goes to places to find out and report the news.",
+          "register": "neutralny",
+          "contextPl": "Praca w terenie",
+          "natural": "",
+          "forms": "reporters",
+          "collocations": "news reporter; a reporter at the scene",
+          "synonyms": "journalist",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our reporter just called from the fire scene with new details.",
+              "pl": "Nasz reporter właśnie zadzwonił z miejsca pożaru z nowymi szczegółami.",
+              "focusEn": "reporter",
+              "focusPl": "reporter"
+            },
+            {
+              "en": "Send a reporter to city hall; the mayor is about to speak.",
+              "pl": "Wyślijcie reportera do ratusza, burmistrz zaraz zabierze głos.",
+              "focusEn": "reporter",
+              "focusPl": "reportera"
+            }
+          ],
+          "acceptedAnswers": [
+            "reporter",
+            "journalist"
+          ],
+          "acceptedTranslations": [
+            "reporter",
+            "reporterka",
+            "dziennikarz"
+          ]
+        },
+        {
+          "id": "news-media.editor",
+          "term": "editor",
+          "ipa": "/ˈedɪtər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "redaktor",
+          "definition": "A person who checks, corrects, and decides what goes into a newspaper.",
+          "register": "neutralny",
+          "contextPl": "Kierowanie redakcją",
+          "natural": "",
+          "forms": "editors",
+          "collocations": "editor in chief; news editor",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Editor in chief” – redaktor naczelny.",
+          "examples": [
+            {
+              "en": "The editor cut my story from eight hundred words to five hundred.",
+              "pl": "Redaktor skrócił mój tekst z ośmiuset do pięciuset słów.",
+              "focusEn": "editor",
+              "focusPl": "Redaktor"
+            },
+            {
+              "en": "Ask the editor if we still have room on page three.",
+              "pl": "Zapytaj redaktora, czy mamy jeszcze miejsce na trzeciej stronie.",
+              "focusEn": "editor",
+              "focusPl": "redaktora"
+            }
+          ],
+          "acceptedAnswers": [
+            "editor",
+            "editor in chief"
+          ],
+          "acceptedTranslations": [
+            "redaktor",
+            "redaktorka",
+            "wydawca"
+          ]
+        },
+        {
+          "id": "news-media.cover",
+          "term": "cover",
+          "ipa": "/ˈkʌvər/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "relacjonować",
+          "definition": "To report on an event or subject for news.",
+          "register": "neutralny",
+          "contextPl": "Relacje z wydarzeń",
+          "natural": "report on",
+          "forms": "cover – covered – covered",
+          "collocations": "cover a story; cover the election",
+          "synonyms": "report on",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Who's covering the school board meeting tonight?",
+              "pl": "Kto relacjonuje dzisiejsze posiedzenie rady szkolnej?",
+              "focusEn": "covering",
+              "focusPl": "relacjonuje"
+            },
+            {
+              "en": "I've covered city politics for this paper for twelve years.",
+              "pl": "Relacjonuję politykę miejską dla tej gazety od dwunastu lat.",
+              "focusEn": "covered",
+              "focusPl": "Relacjonuję"
+            }
+          ],
+          "acceptedAnswers": [
+            "cover",
+            "covered",
+            "covering"
+          ],
+          "acceptedTranslations": [
+            "relacjonować",
+            "opisywać",
+            "zrelacjonować"
+          ]
+        },
+        {
+          "id": "news-media.source",
+          "term": "source",
+          "ipa": "/sɔːrs/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "źródło",
+          "definition": "A person or document that gives a journalist information.",
+          "register": "neutralny",
+          "contextPl": "Skąd pochodzą informacje",
+          "natural": "",
+          "forms": "sources",
+          "collocations": "a reliable source; an anonymous source; protect your sources",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need a second source before we can print this.",
+              "pl": "Potrzebujemy drugiego źródła, zanim to wydrukujemy.",
+              "focusEn": "source",
+              "focusPl": "źródła"
+            },
+            {
+              "en": "My source at the hospital confirmed the numbers.",
+              "pl": "Moje źródło w szpitalu potwierdziło liczby.",
+              "focusEn": "source",
+              "focusPl": "źródło"
+            }
+          ],
+          "acceptedAnswers": [
+            "source",
+            "sources"
+          ],
+          "acceptedTranslations": [
+            "źródło",
+            "informator"
+          ]
+        },
+        {
+          "id": "news-media.interview",
+          "term": "interview",
+          "ipa": "/ˈɪntərvjuː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wywiad",
+          "definition": "A meeting in which a journalist asks someone questions.",
+          "register": "neutralny",
+          "contextPl": "Rozmowy z bohaterami tekstów",
+          "natural": "",
+          "forms": "interviews",
+          "collocations": "give an interview; an exclusive interview",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W temacie pracy: rozmowa kwalifikacyjna.",
+          "examples": [
+            {
+              "en": "My interview with the fire chief ran longer than expected.",
+              "pl": "Mój wywiad z komendantem straży trwał dłużej, niż się spodziewałem.",
+              "focusEn": "interview",
+              "focusPl": "wywiad"
+            },
+            {
+              "en": "She agreed to an interview, but only by phone.",
+              "pl": "Zgodziła się na wywiad, ale tylko przez telefon.",
+              "focusEn": "interview",
+              "focusPl": "wywiad"
+            }
+          ],
+          "acceptedAnswers": [
+            "interview",
+            "interviews"
+          ],
+          "acceptedTranslations": [
+            "wywiad",
+            "rozmowa"
+          ]
+        },
+        {
+          "id": "news-media.quote",
+          "term": "quote",
+          "ipa": "/kwoʊt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "cytować",
+          "definition": "To repeat the exact words someone said or wrote.",
+          "register": "neutralny",
+          "contextPl": "Cytowanie rozmówców",
+          "natural": "",
+          "forms": "quote – quoted – quoted",
+          "collocations": "quote someone; be quoted in the paper",
+          "synonyms": "cite",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can I quote you on that, or is it just between us?",
+              "pl": "Mogę to zacytować, czy to tylko między nami?",
+              "focusEn": "quote",
+              "focusPl": "zacytować"
+            },
+            {
+              "en": "The mayor was angry that we quoted him word for word.",
+              "pl": "Burmistrz był zły, że zacytowaliśmy go słowo w słowo.",
+              "focusEn": "quoted",
+              "focusPl": "zacytowaliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "quote",
+            "quoted"
+          ],
+          "acceptedTranslations": [
+            "cytować",
+            "zacytować",
+            "przytaczać"
+          ]
+        },
+        {
+          "id": "news-media.publish",
+          "term": "publish",
+          "ipa": "/ˈpʌblɪʃ/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "publikować",
+          "definition": "To make a story available for people to read in print or online.",
+          "register": "neutralny",
+          "contextPl": "Wydanie tekstu",
+          "natural": "",
+          "forms": "publish – published – published",
+          "collocations": "publish a story; publish online",
+          "synonyms": "print",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll publish the story online tonight and in print tomorrow.",
+              "pl": "Opublikujemy tekst w internecie dziś wieczorem, a w druku jutro.",
+              "focusEn": "publish",
+              "focusPl": "Opublikujemy"
+            },
+            {
+              "en": "Once it's published, we can't take it back.",
+              "pl": "Kiedy zostanie opublikowane, nie da się tego cofnąć.",
+              "focusEn": "published",
+              "focusPl": "opublikowane"
+            }
+          ],
+          "acceptedAnswers": [
+            "publish",
+            "published"
+          ],
+          "acceptedTranslations": [
+            "publikować",
+            "opublikować",
+            "wydrukować"
+          ]
+        },
+        {
+          "id": "news-media.scoop",
+          "term": "scoop",
+          "ipa": "/skuːp/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "sensacyjna wiadomość na wyłączność",
+          "definition": "An important story that one newspaper reports before all the others.",
+          "register": "potoczny",
+          "contextPl": "Rywalizacja redakcji",
+          "natural": "exclusive",
+          "forms": "scoops",
+          "collocations": "get the scoop; a big scoop",
+          "synonyms": "exclusive",
+          "antonyms": "",
+          "notePl": "Potocznie „What's the scoop?” – Co słychać? Jakie nowiny?",
+          "examples": [
+            {
+              "en": "This is a real scoop; nobody else has the story yet.",
+              "pl": "To prawdziwa sensacyjna wiadomość na wyłączność, nikt inny jeszcze tego nie ma.",
+              "focusEn": "scoop",
+              "focusPl": "sensacyjna wiadomość na wyłączność"
+            },
+            {
+              "en": "The TV station stole our scoop by twenty minutes.",
+              "pl": "Stacja telewizyjna podkradła nam materiał na wyłączność, wyprzedzając nas o dwadzieścia minut.",
+              "focusEn": "scoop",
+              "focusPl": "materiał na wyłączność"
+            }
+          ],
+          "acceptedAnswers": [
+            "scoop",
+            "exclusive"
+          ],
+          "acceptedTranslations": [
+            "sensacyjna wiadomość na wyłączność",
+            "news na wyłączność",
+            "materiał na wyłączność"
+          ]
+        },
+        {
+          "id": "news-media.off-the-record",
+          "term": "off the record",
+          "ipa": "/ˌɔːf ðə ˈrekərd/",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nieoficjalnie",
+          "definition": "Said privately and not to be published or reported.",
+          "register": "neutralny",
+          "contextPl": "Rozmowy bez cytowania",
+          "natural": "",
+          "forms": "",
+          "collocations": "speak off the record; this is off the record",
+          "synonyms": "unofficially",
+          "antonyms": "on the record",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The officer told me off the record that more arrests are coming.",
+              "pl": "Policjant powiedział mi nieoficjalnie, że będą kolejne aresztowania.",
+              "focusEn": "off the record",
+              "focusPl": "nieoficjalnie"
+            },
+            {
+              "en": "Everything she said off the record stays out of the article.",
+              "pl": "Wszystko, co powiedziała nieoficjalnie, zostaje poza artykułem.",
+              "focusEn": "off the record",
+              "focusPl": "nieoficjalnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "off the record"
+          ],
+          "acceptedTranslations": [
+            "nieoficjalnie",
+            "poza protokołem",
+            "nie do publikacji"
+          ]
+        },
+        {
+          "id": "news-media.investigative-journalism",
+          "term": "investigative journalism",
+          "ipa": "/ɪnˌvestɪɡətɪv ˈdʒɝːnəlɪzəm/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dziennikarstwo śledcze",
+          "definition": "Reporting that spends a long time uncovering hidden facts or wrongdoing.",
+          "register": "specjalistyczny",
+          "contextPl": "Głębokie śledztwa dziennikarskie",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Investigative journalism takes months, and our budget is tiny.",
+              "pl": "Dziennikarstwo śledcze zajmuje miesiące, a nasz budżet jest malutki.",
+              "focusEn": "Investigative journalism",
+              "focusPl": "Dziennikarstwo śledcze"
+            },
+            {
+              "en": "She won an award for investigative journalism about the water plant.",
+              "pl": "Dostała nagrodę za dziennikarstwo śledcze dotyczące stacji uzdatniania wody.",
+              "focusEn": "investigative journalism",
+              "focusPl": "dziennikarstwo śledcze"
+            }
+          ],
+          "acceptedAnswers": [
+            "investigative journalism"
+          ],
+          "acceptedTranslations": [
+            "dziennikarstwo śledcze"
+          ]
+        },
+        {
+          "id": "news-media.columnist",
+          "term": "columnist",
+          "ipa": "/ˈkɑːləmnɪst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "felietonista",
+          "definition": "A journalist who writes regular articles giving personal opinions.",
+          "register": "neutralny",
+          "contextPl": "Teksty opiniotwórcze",
+          "natural": "",
+          "forms": "columnists",
+          "collocations": "a newspaper columnist",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our columnist still hasn't sent her piece for tomorrow.",
+              "pl": "Nasza felietonistka wciąż nie przysłała tekstu na jutro.",
+              "focusEn": "columnist",
+              "focusPl": "felietonistka"
+            },
+            {
+              "en": "The new food columnist gets more letters than anyone else.",
+              "pl": "Nowy felietonista kulinarny dostaje więcej listów niż ktokolwiek inny.",
+              "focusEn": "columnist",
+              "focusPl": "felietonista"
+            }
+          ],
+          "acceptedAnswers": [
+            "columnist"
+          ],
+          "acceptedTranslations": [
+            "felietonista",
+            "felietonistka",
+            "publicysta"
+          ]
+        },
+        {
+          "id": "news-media.correction",
+          "term": "correction",
+          "ipa": "/kəˈrekʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "sprostowanie",
+          "definition": "A short notice admitting and fixing a mistake in an earlier story.",
+          "register": "formalny",
+          "contextPl": "Poprawianie błędów",
+          "natural": "",
+          "forms": "corrections",
+          "collocations": "print a correction; issue a correction",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We spelled the principal's name wrong, so we'll run a correction.",
+              "pl": "Przekręciliśmy nazwisko dyrektora, więc opublikujemy sprostowanie.",
+              "focusEn": "correction",
+              "focusPl": "sprostowanie"
+            },
+            {
+              "en": "The correction appeared on page two the next morning.",
+              "pl": "Sprostowanie ukazało się następnego ranka na drugiej stronie.",
+              "focusEn": "correction",
+              "focusPl": "Sprostowanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "correction"
+          ],
+          "acceptedTranslations": [
+            "sprostowanie",
+            "korekta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "news-media.broadcast",
+      "namePl": "Telewizja i radio",
+      "scenePl": "Studio wieczornego programu informacyjnego w lokalnej stacji telewizyjnej, minuty przed wejściem na antenę",
+      "entries": [
+        {
+          "id": "news-media.anchor",
+          "term": "anchor",
+          "ipa": "/ˈæŋkər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "prezenter wiadomości",
+          "definition": "The person who presents the news on TV and introduces reports.",
+          "register": "neutralny",
+          "contextPl": "Prowadzący serwis informacyjny",
+          "natural": "",
+          "forms": "anchors",
+          "collocations": "news anchor; evening anchor",
+          "synonyms": "newscaster",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The anchor is still in makeup, and we go live in five minutes.",
+              "pl": "Prezenterka wiadomości jest jeszcze u charakteryzatorki, a na żywo wchodzimy za pięć minut.",
+              "focusEn": "anchor",
+              "focusPl": "Prezenterka wiadomości"
+            },
+            {
+              "en": "Our evening anchor has read the news here for twenty years.",
+              "pl": "Nasz wieczorny prezenter wiadomości czyta tu wiadomości od dwudziestu lat.",
+              "focusEn": "anchor",
+              "focusPl": "prezenter wiadomości"
+            }
+          ],
+          "acceptedAnswers": [
+            "anchor",
+            "news anchor",
+            "newscaster"
+          ],
+          "acceptedTranslations": [
+            "prezenter wiadomości",
+            "prezenterka wiadomości",
+            "prowadzący"
+          ]
+        },
+        {
+          "id": "news-media.broadcast",
+          "term": "broadcast",
+          "ipa": "/ˈbrɔːdkæst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "emisja",
+          "definition": "A program on TV or radio.",
+          "register": "neutralny",
+          "contextPl": "Programy na antenie",
+          "natural": "",
+          "forms": "broadcasts",
+          "collocations": "live broadcast; news broadcast",
+          "synonyms": "program",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Tonight's broadcast starts with the story about the school fire.",
+              "pl": "Dzisiejsza emisja zaczyna się od materiału o pożarze szkoły.",
+              "focusEn": "broadcast",
+              "focusPl": "emisja"
+            },
+            {
+              "en": "The whole broadcast went off the air for a minute because of a power cut.",
+              "pl": "Cała transmisja na minutę zniknęła z anteny z powodu przerwy w dostawie prądu.",
+              "focusEn": "broadcast",
+              "focusPl": "transmisja"
+            }
+          ],
+          "acceptedAnswers": [
+            "broadcast"
+          ],
+          "acceptedTranslations": [
+            "emisja",
+            "transmisja",
+            "audycja",
+            "program"
+          ]
+        },
+        {
+          "id": "news-media.go-live",
+          "term": "go live",
+          "ipa": "/ˌɡoʊ ˈlaɪv/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wejść na żywo",
+          "definition": "To start broadcasting in real time.",
+          "register": "neutralny",
+          "contextPl": "Transmisja w czasie rzeczywistym",
+          "natural": "",
+          "forms": "go – went – gone",
+          "collocations": "go live from the scene; going live in five",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We go live in thirty seconds; everybody quiet, please.",
+              "pl": "Wchodzimy na żywo za trzydzieści sekund, wszyscy cisza, proszę.",
+              "focusEn": "go live",
+              "focusPl": "Wchodzimy na żywo"
+            },
+            {
+              "en": "Our reporter will go live from the hospital at 6:15.",
+              "pl": "Nasz reporter wejdzie na żywo ze szpitala o 6:15.",
+              "focusEn": "go live",
+              "focusPl": "wejdzie na żywo"
+            }
+          ],
+          "acceptedAnswers": [
+            "go live",
+            "going live",
+            "went live"
+          ],
+          "acceptedTranslations": [
+            "wejść na żywo",
+            "nadawać na żywo",
+            "zacząć transmisję"
+          ]
+        },
+        {
+          "id": "news-media.on-air",
+          "term": "on air",
+          "ipa": "/ˌɑːn ˈer/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "na antenie",
+          "definition": "Broadcasting on TV or radio at the moment.",
+          "register": "neutralny",
+          "contextPl": "Czas nadawania",
+          "natural": "",
+          "forms": "",
+          "collocations": "be on air; go on air; the \"on air\" light",
+          "synonyms": "",
+          "antonyms": "off air",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "When the red light is on, we're on air, so no talking.",
+              "pl": "Kiedy pali się czerwona lampka, jesteśmy na antenie, więc nie rozmawiamy.",
+              "focusEn": "on air",
+              "focusPl": "na antenie"
+            },
+            {
+              "en": "She was on air for six hours straight during the storm.",
+              "pl": "Podczas burzy była na antenie przez sześć godzin bez przerwy.",
+              "focusEn": "on air",
+              "focusPl": "na antenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "on air",
+            "on the air"
+          ],
+          "acceptedTranslations": [
+            "na antenie",
+            "w eterze"
+          ]
+        },
+        {
+          "id": "news-media.coverage",
+          "term": "coverage",
+          "ipa": "/ˈkʌvərɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "relacja",
+          "definition": "The reporting of a particular event in the news.",
+          "register": "neutralny",
+          "contextPl": "Sposób relacjonowania",
+          "natural": "",
+          "forms": "",
+          "collocations": "live coverage; news coverage; media coverage",
+          "synonyms": "reporting",
+          "antonyms": "",
+          "notePl": "W innym znaczeniu: zakres ubezpieczenia.",
+          "examples": [
+            {
+              "en": "Our coverage of the flood won an award last year.",
+              "pl": "Nasza relacja z powodzi zdobyła w zeszłym roku nagrodę.",
+              "focusEn": "coverage",
+              "focusPl": "relacja"
+            },
+            {
+              "en": "Viewers complained that our election coverage was too long.",
+              "pl": "Widzowie skarżyli się, że nasza relacja z wyborów była za długa.",
+              "focusEn": "coverage",
+              "focusPl": "relacja"
+            }
+          ],
+          "acceptedAnswers": [
+            "coverage",
+            "media coverage"
+          ],
+          "acceptedTranslations": [
+            "relacja",
+            "relacje",
+            "doniesienia"
+          ]
+        },
+        {
+          "id": "news-media.press-conference",
+          "term": "press conference",
+          "ipa": "/ˈpres ˌkɑːnfərəns/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "konferencja prasowa",
+          "definition": "A meeting where an official answers questions from journalists.",
+          "register": "neutralny",
+          "contextPl": "Oficjalne wystąpienia",
+          "natural": "",
+          "forms": "press conferences",
+          "collocations": "hold a press conference; at a press conference",
+          "synonyms": "news conference",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The police chief's press conference starts at the top of the hour.",
+              "pl": "Konferencja prasowa komendanta policji zaczyna się o pełnej godzinie.",
+              "focusEn": "press conference",
+              "focusPl": "Konferencja prasowa"
+            },
+            {
+              "en": "We'll cut away from the weather to show the press conference live.",
+              "pl": "Przerwiemy prognozę, żeby pokazać konferencję prasową na żywo.",
+              "focusEn": "press conference",
+              "focusPl": "konferencję prasową"
+            }
+          ],
+          "acceptedAnswers": [
+            "press conference",
+            "news conference"
+          ],
+          "acceptedTranslations": [
+            "konferencja prasowa"
+          ]
+        },
+        {
+          "id": "news-media.spokesperson",
+          "term": "spokesperson",
+          "ipa": "/ˈspoʊksˌpɝːsən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "rzecznik",
+          "definition": "A person who speaks officially for a company or organization.",
+          "register": "formalny",
+          "contextPl": "Oficjalne stanowiska",
+          "natural": "",
+          "forms": "spokespeople",
+          "collocations": "a company spokesperson; a police spokesperson",
+          "synonyms": "spokesman; spokeswoman",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A spokesperson for the hospital will join us by video.",
+              "pl": "Dołączy do nas przez wideo rzecznik szpitala.",
+              "focusEn": "spokesperson",
+              "focusPl": "rzecznik"
+            },
+            {
+              "en": "The company's spokesperson refused to answer any questions.",
+              "pl": "Rzeczniczka firmy odmówiła odpowiedzi na jakiekolwiek pytania.",
+              "focusEn": "spokesperson",
+              "focusPl": "Rzeczniczka"
+            }
+          ],
+          "acceptedAnswers": [
+            "spokesperson",
+            "spokesman",
+            "spokeswoman"
+          ],
+          "acceptedTranslations": [
+            "rzecznik",
+            "rzeczniczka",
+            "rzecznik prasowy"
+          ]
+        },
+        {
+          "id": "news-media.statement",
+          "term": "statement",
+          "ipa": "/ˈsteɪtmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "oświadczenie",
+          "definition": "An official written or spoken announcement.",
+          "register": "formalny",
+          "contextPl": "Oficjalne komunikaty",
+          "natural": "",
+          "forms": "statements",
+          "collocations": "release a statement; in a statement",
+          "synonyms": "announcement",
+          "antonyms": "",
+          "notePl": "W innym znaczeniu: wyciąg bankowy, zeznanie.",
+          "examples": [
+            {
+              "en": "The school district just released a statement about the closure.",
+              "pl": "Okręg szkolny właśnie wydał oświadczenie w sprawie zamknięcia.",
+              "focusEn": "statement",
+              "focusPl": "oświadczenie"
+            },
+            {
+              "en": "The anchor will read the statement at the end of the segment.",
+              "pl": "Prezenter przeczyta oświadczenie na końcu materiału.",
+              "focusEn": "statement",
+              "focusPl": "oświadczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "statement"
+          ],
+          "acceptedTranslations": [
+            "oświadczenie",
+            "komunikat"
+          ]
+        },
+        {
+          "id": "news-media.no-comment",
+          "term": "no comment",
+          "ipa": "/ˌnoʊ ˈkɑːment/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bez komentarza",
+          "definition": "Said when someone refuses to answer a journalist's question.",
+          "register": "neutralny",
+          "contextPl": "Odmowa odpowiedzi",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "On camera, the manager just said no comment and walked away.",
+              "pl": "Przed kamerą kierownik powiedział tylko „bez komentarza” i odszedł.",
+              "focusEn": "no comment",
+              "focusPl": "bez komentarza"
+            },
+            {
+              "en": "If they say no comment, we still mention that we asked.",
+              "pl": "Nawet jeśli powiedzą „bez komentarza”, wspominamy, że pytaliśmy.",
+              "focusEn": "no comment",
+              "focusPl": "bez komentarza"
+            }
+          ],
+          "acceptedAnswers": [
+            "no comment"
+          ],
+          "acceptedTranslations": [
+            "bez komentarza",
+            "nie komentuję"
+          ]
+        },
+        {
+          "id": "news-media.segment",
+          "term": "segment",
+          "ipa": "/ˈseɡmənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "materiał",
+          "definition": "One part of a TV or radio program about a particular subject.",
+          "register": "neutralny",
+          "contextPl": "Części programu",
+          "natural": "",
+          "forms": "segments",
+          "collocations": "a three-minute segment; the sports segment",
+          "synonyms": "report; piece",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need to cut the traffic segment to two minutes tonight.",
+              "pl": "Musimy dziś skrócić materiał o korkach do dwóch minut.",
+              "focusEn": "segment",
+              "focusPl": "materiał"
+            },
+            {
+              "en": "The weather segment comes right after the break.",
+              "pl": "Blok pogodowy jest zaraz po przerwie.",
+              "focusEn": "segment",
+              "focusPl": "Blok"
+            }
+          ],
+          "acceptedAnswers": [
+            "segment",
+            "piece"
+          ],
+          "acceptedTranslations": [
+            "materiał",
+            "blok",
+            "część programu"
+          ]
+        },
+        {
+          "id": "news-media.ratings",
+          "term": "ratings",
+          "ipa": "/ˈreɪtɪŋz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "oglądalność",
+          "definition": "Numbers that show how many people watch a TV program.",
+          "register": "neutralny",
+          "contextPl": "Popularność programu",
+          "natural": "",
+          "forms": "rating",
+          "collocations": "high ratings; ratings went up",
+          "synonyms": "viewership",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our ratings always go up when there's a big storm.",
+              "pl": "Nasza oglądalność zawsze rośnie, gdy jest duża burza.",
+              "focusEn": "ratings",
+              "focusPl": "oglądalność"
+            },
+            {
+              "en": "The station manager checks the ratings every morning.",
+              "pl": "Kierownik stacji co rano sprawdza oglądalność.",
+              "focusEn": "ratings",
+              "focusPl": "oglądalność"
+            }
+          ],
+          "acceptedAnswers": [
+            "ratings",
+            "viewership"
+          ],
+          "acceptedTranslations": [
+            "oglądalność",
+            "wskaźniki oglądalności"
+          ]
+        },
+        {
+          "id": "news-media.developing-story",
+          "term": "developing story",
+          "ipa": "/dɪˌveləpɪŋ ˈstɔːri/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "rozwijająca się sytuacja",
+          "definition": "A news story that is still happening, so new details keep coming.",
+          "register": "neutralny",
+          "contextPl": "Sprawy w toku",
+          "natural": "",
+          "forms": "developing stories",
+          "collocations": "this is a developing story",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This is a developing story, and we'll update you as we learn more.",
+              "pl": "To rozwijająca się sytuacja, będziemy informować na bieżąco.",
+              "focusEn": "developing story",
+              "focusPl": "rozwijająca się sytuacja"
+            },
+            {
+              "en": "The producer moved the developing story to the top of the show.",
+              "pl": "Producent przesunął temat rozwojowy na początek programu.",
+              "focusEn": "developing story",
+              "focusPl": "temat rozwojowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "developing story"
+          ],
+          "acceptedTranslations": [
+            "rozwijająca się sytuacja",
+            "temat rozwojowy",
+            "sprawa w toku"
+          ]
+        },
+        {
+          "id": "news-media.viewers",
+          "term": "viewers",
+          "ipa": "/ˈvjuːərz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "widzowie",
+          "definition": "People who watch a TV program.",
+          "register": "neutralny",
+          "contextPl": "Odbiorcy telewizji",
+          "natural": "audience",
+          "forms": "viewer",
+          "collocations": "millions of viewers; our viewers",
+          "synonyms": "audience",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our viewers sent hundreds of photos of the storm.",
+              "pl": "Nasi widzowie przysłali setki zdjęć burzy.",
+              "focusEn": "viewers",
+              "focusPl": "widzowie"
+            },
+            {
+              "en": "Fewer viewers watch the late news than ten years ago.",
+              "pl": "Późne wiadomości ogląda mniej widzów niż dziesięć lat temu.",
+              "focusEn": "viewers",
+              "focusPl": "widzów"
+            }
+          ],
+          "acceptedAnswers": [
+            "viewers",
+            "viewer"
+          ],
+          "acceptedTranslations": [
+            "widzowie",
+            "widz",
+            "telewidzowie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "news-media.fake-news",
+      "namePl": "Wiarygodność i fałszywe informacje",
+      "scenePl": "Lekcja edukacji medialnej w liceum: uczniowie sprawdzają, które wiadomości są prawdziwe",
+      "entries": [
+        {
+          "id": "news-media.fake-news",
+          "term": "fake news",
+          "ipa": "/ˌfeɪk ˈnuːz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "fałszywe wiadomości",
+          "definition": "False stories made to look like real news.",
+          "register": "neutralny",
+          "contextPl": "Nieprawdziwe informacje",
+          "natural": "",
+          "forms": "",
+          "collocations": "spread fake news; spot fake news",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku często też „fake news”.",
+          "examples": [
+            {
+              "en": "The teacher showed us three stories, and two were fake news.",
+              "pl": "Nauczycielka pokazała nam trzy artykuły, a dwa były fałszywymi wiadomościami.",
+              "focusEn": "fake news",
+              "focusPl": "fałszywymi wiadomościami"
+            },
+            {
+              "en": "Most fake news spreads because people share it without reading.",
+              "pl": "Większość fałszywych wiadomości rozprzestrzenia się, bo ludzie udostępniają je bez czytania.",
+              "focusEn": "fake news",
+              "focusPl": "fałszywych wiadomości"
+            }
+          ],
+          "acceptedAnswers": [
+            "fake news"
+          ],
+          "acceptedTranslations": [
+            "fałszywe wiadomości",
+            "fake news",
+            "nieprawdziwe informacje"
+          ]
+        },
+        {
+          "id": "news-media.reliable",
+          "term": "reliable",
+          "ipa": "/rɪˈlaɪəbəl/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wiarygodny",
+          "definition": "That you can trust to be correct.",
+          "register": "neutralny",
+          "contextPl": "Ocena źródeł",
+          "natural": "trustworthy",
+          "forms": "",
+          "collocations": "reliable source; reliable information",
+          "synonyms": "credible",
+          "antonyms": "unreliable",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How do you know this website is reliable?",
+              "pl": "Skąd wiesz, że ta strona jest wiarygodna?",
+              "focusEn": "reliable",
+              "focusPl": "wiarygodna"
+            },
+            {
+              "en": "The teacher made a list of reliable news sites for our projects.",
+              "pl": "Nauczycielka zrobiła listę rzetelnych serwisów informacyjnych do naszych projektów.",
+              "focusEn": "reliable",
+              "focusPl": "rzetelnych"
+            }
+          ],
+          "acceptedAnswers": [
+            "reliable",
+            "trustworthy"
+          ],
+          "acceptedTranslations": [
+            "wiarygodny",
+            "rzetelny",
+            "pewny"
+          ]
+        },
+        {
+          "id": "news-media.credible",
+          "term": "credible",
+          "ipa": "/ˈkredəbəl/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wiarygodny",
+          "definition": "Able to be believed and trusted.",
+          "register": "formalny",
+          "contextPl": "Wiarygodność informacji",
+          "natural": "believable",
+          "forms": "",
+          "collocations": "credible source; credible evidence",
+          "synonyms": "believable; reliable",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A post with no author and no date isn't very credible.",
+              "pl": "Wpis bez autora i daty nie jest zbyt wiarygodny.",
+              "focusEn": "credible",
+              "focusPl": "wiarygodny"
+            },
+            {
+              "en": "We compared the story with two credible sources before deciding.",
+              "pl": "Zanim zdecydowaliśmy, porównaliśmy tekst z dwoma wiarygodnymi źródłami.",
+              "focusEn": "credible",
+              "focusPl": "wiarygodnymi"
+            }
+          ],
+          "acceptedAnswers": [
+            "credible",
+            "believable"
+          ],
+          "acceptedTranslations": [
+            "wiarygodny",
+            "przekonujący"
+          ]
+        },
+        {
+          "id": "news-media.biased",
+          "term": "biased",
+          "ipa": "/ˈbaɪəst/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stronniczy",
+          "definition": "Unfairly favoring one side or opinion.",
+          "register": "neutralny",
+          "contextPl": "Brak obiektywizmu",
+          "natural": "one-sided",
+          "forms": "",
+          "collocations": "biased reporting; politically biased",
+          "synonyms": "one-sided; partial",
+          "antonyms": "unbiased; objective",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This article only quotes one side, so it might be biased.",
+              "pl": "Ten artykuł cytuje tylko jedną stronę, więc może być stronniczy.",
+              "focusEn": "biased",
+              "focusPl": "stronniczy"
+            },
+            {
+              "en": "Everyone thinks the other side's news is biased, the teacher said.",
+              "pl": "Nauczyciel powiedział, że każdy uważa wiadomości drugiej strony za stronnicze.",
+              "focusEn": "biased",
+              "focusPl": "stronnicze"
+            }
+          ],
+          "acceptedAnswers": [
+            "biased",
+            "one-sided"
+          ],
+          "acceptedTranslations": [
+            "stronniczy",
+            "tendencyjny",
+            "jednostronny"
+          ]
+        },
+        {
+          "id": "news-media.rumor",
+          "term": "rumor",
+          "ipa": "/ˈruːmər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "plotka",
+          "definition": "A story that people repeat, which may not be true.",
+          "register": "neutralny",
+          "contextPl": "Niesprawdzone pogłoski",
+          "natural": "",
+          "forms": "rumors",
+          "collocations": "spread a rumor; there's a rumor that",
+          "synonyms": "gossip",
+          "antonyms": "fact",
+          "notePl": "Pisownia brytyjska: rumour.",
+          "examples": [
+            {
+              "en": "One student found that the rumor started from a joke account.",
+              "pl": "Jeden uczeń odkrył, że plotka zaczęła się od żartobliwego konta.",
+              "focusEn": "rumor",
+              "focusPl": "plotka"
+            },
+            {
+              "en": "A rumor about school closing spread in an hour, but it was false.",
+              "pl": "Pogłoska o zamknięciu szkoły rozeszła się w godzinę, ale była fałszywa.",
+              "focusEn": "rumor",
+              "focusPl": "Pogłoska"
+            }
+          ],
+          "acceptedAnswers": [
+            "rumor",
+            "rumors"
+          ],
+          "acceptedTranslations": [
+            "plotka",
+            "pogłoska"
+          ]
+        },
+        {
+          "id": "news-media.tabloid",
+          "term": "tabloid",
+          "ipa": "/ˈtæbləɪd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "brukowiec",
+          "definition": "A newspaper with short stories, lots of photos, and shocking news about famous people.",
+          "register": "potoczny",
+          "contextPl": "Prasa bulwarowa",
+          "natural": "",
+          "forms": "tabloids",
+          "collocations": "tabloid newspaper; tabloid headlines",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The teacher held up a tabloid with a headline about aliens.",
+              "pl": "Nauczycielka pokazała brukowiec z nagłówkiem o kosmitach.",
+              "focusEn": "tabloid",
+              "focusPl": "brukowiec"
+            },
+            {
+              "en": "You can't use a tabloid as a source in your essay.",
+              "pl": "W wypracowaniu nie możesz używać brukowca jako źródła.",
+              "focusEn": "tabloid",
+              "focusPl": "brukowca"
+            }
+          ],
+          "acceptedAnswers": [
+            "tabloid"
+          ],
+          "acceptedTranslations": [
+            "brukowiec",
+            "tabloid",
+            "gazeta bulwarowa"
+          ]
+        },
+        {
+          "id": "news-media.propaganda",
+          "term": "propaganda",
+          "ipa": "/ˌprɑːpəˈɡændə/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "propaganda",
+          "definition": "False or one-sided information used to make people support an idea or group.",
+          "register": "neutralny",
+          "contextPl": "Manipulacja informacją",
+          "natural": "",
+          "forms": "",
+          "collocations": "war propaganda; spread propaganda",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We looked at old posters and talked about how propaganda works.",
+              "pl": "Oglądaliśmy stare plakaty i rozmawialiśmy o tym, jak działa propaganda.",
+              "focusEn": "propaganda",
+              "focusPl": "propaganda"
+            },
+            {
+              "en": "The teacher said propaganda often uses fear and simple slogans.",
+              "pl": "Nauczyciel powiedział, że propaganda często wykorzystuje strach i proste hasła.",
+              "focusEn": "propaganda",
+              "focusPl": "propaganda"
+            }
+          ],
+          "acceptedAnswers": [
+            "propaganda"
+          ],
+          "acceptedTranslations": [
+            "propaganda"
+          ]
+        },
+        {
+          "id": "news-media.mislead",
+          "term": "mislead",
+          "ipa": "/ˌmɪsˈliːd/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wprowadzać w błąd",
+          "definition": "To make someone believe something that is not true.",
+          "register": "neutralny",
+          "contextPl": "Celowe lub przypadkowe oszukiwanie",
+          "natural": "",
+          "forms": "mislead – misled – misled",
+          "collocations": "mislead readers; misleading headline",
+          "synonyms": "deceive",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This chart is designed to mislead you; look at the numbers on the side.",
+              "pl": "Ten wykres ma cię wprowadzić w błąd, spójrz na liczby z boku.",
+              "focusEn": "mislead",
+              "focusPl": "wprowadzić w błąd"
+            },
+            {
+              "en": "The headline misled half the class into thinking the law had passed.",
+              "pl": "Nagłówek wprowadził w błąd pół klasy, która myślała, że ustawa przeszła.",
+              "focusEn": "misled",
+              "focusPl": "wprowadził w błąd"
+            }
+          ],
+          "acceptedAnswers": [
+            "mislead",
+            "misleading",
+            "misled"
+          ],
+          "acceptedTranslations": [
+            "wprowadzać w błąd",
+            "wprowadzić w błąd",
+            "zmylić"
+          ]
+        },
+        {
+          "id": "news-media.misleading",
+          "term": "misleading",
+          "ipa": "/ˌmɪsˈliːdɪŋ/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wprowadzający w błąd",
+          "definition": "Giving the wrong idea or impression.",
+          "register": "neutralny",
+          "contextPl": "Mylące nagłówki",
+          "natural": "",
+          "forms": "",
+          "collocations": "misleading headline; misleading information",
+          "synonyms": "",
+          "antonyms": "accurate",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The photo isn't fake, but the caption is misleading.",
+              "pl": "Zdjęcie nie jest fałszywe, ale podpis jest mylący.",
+              "focusEn": "misleading",
+              "focusPl": "mylący"
+            },
+            {
+              "en": "We each had to find one misleading headline for homework.",
+              "pl": "Każdy z nas miał na zadanie domowe znaleźć jeden wprowadzający w błąd nagłówek.",
+              "focusEn": "misleading",
+              "focusPl": "wprowadzający w błąd"
+            }
+          ],
+          "acceptedAnswers": [
+            "misleading"
+          ],
+          "acceptedTranslations": [
+            "wprowadzający w błąd",
+            "mylący",
+            "zwodniczy"
+          ]
+        },
+        {
+          "id": "news-media.hoax",
+          "term": "hoax",
+          "ipa": "/hoʊks/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "mistyfikacja",
+          "definition": "A trick that makes people believe something false.",
+          "register": "neutralny",
+          "contextPl": "Celowe oszustwa",
+          "natural": "",
+          "forms": "hoaxes",
+          "collocations": "an internet hoax; turn out to be a hoax",
+          "synonyms": "fake",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The video of the shark in the subway was a hoax.",
+              "pl": "Nagranie rekina w metrze było mistyfikacją.",
+              "focusEn": "hoax",
+              "focusPl": "mistyfikacją"
+            },
+            {
+              "en": "The class guessed which story was a hoax and which was real.",
+              "pl": "Klasa zgadywała, która historia jest mistyfikacją, a która prawdziwa.",
+              "focusEn": "hoax",
+              "focusPl": "mistyfikacją"
+            }
+          ],
+          "acceptedAnswers": [
+            "hoax"
+          ],
+          "acceptedTranslations": [
+            "mistyfikacja",
+            "oszustwo",
+            "fałszywka"
+          ]
+        },
+        {
+          "id": "news-media.take-with-a-grain-of-salt",
+          "term": "take with a grain of salt",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "podchodzić z rezerwą",
+          "definition": "To not completely believe something.",
+          "register": "potoczny",
+          "contextPl": "Ostrożność wobec informacji",
+          "natural": "",
+          "forms": "take – took – taken",
+          "collocations": "",
+          "synonyms": "be skeptical",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'd take that with a grain of salt; the site has no sources.",
+              "pl": "Do tego podchodziłbym z rezerwą, ta strona nie podaje źródeł.",
+              "focusEn": "take that with a grain of salt",
+              "focusPl": "podchodziłbym z rezerwą"
+            },
+            {
+              "en": "The teacher said we should treat viral posts with a grain of salt.",
+              "pl": "Nauczycielka powiedziała, że do popularnych wpisów trzeba podchodzić z rezerwą.",
+              "focusEn": "with a grain of salt",
+              "focusPl": "z rezerwą"
+            }
+          ],
+          "acceptedAnswers": [
+            "take with a grain of salt",
+            "take it with a grain of salt"
+          ],
+          "acceptedTranslations": [
+            "podchodzić z rezerwą",
+            "brać z przymrużeniem oka",
+            "nie wierzyć do końca"
+          ]
+        },
+        {
+          "id": "news-media.verify",
+          "term": "verify",
+          "ipa": "/ˈverɪfaɪ/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zweryfikować",
+          "definition": "To check that something is true or correct.",
+          "register": "neutralny",
+          "contextPl": "Sprawdzanie informacji",
+          "natural": "check",
+          "forms": "verify – verified – verified",
+          "collocations": "verify a story; verify the facts; verified account",
+          "synonyms": "confirm; check",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Before you share it, try to verify the story on another site.",
+              "pl": "Zanim to udostępnisz, spróbuj zweryfikować tę informację na innej stronie.",
+              "focusEn": "verify",
+              "focusPl": "zweryfikować"
+            },
+            {
+              "en": "We couldn't verify who took the photo, so we left it out.",
+              "pl": "Nie mogliśmy zweryfikować, kto zrobił zdjęcie, więc je pominęliśmy.",
+              "focusEn": "verify",
+              "focusPl": "zweryfikować"
+            }
+          ],
+          "acceptedAnswers": [
+            "verify",
+            "verified"
+          ],
+          "acceptedTranslations": [
+            "zweryfikować",
+            "weryfikować",
+            "sprawdzić",
+            "potwierdzić"
+          ]
+        },
+        {
+          "id": "news-media.satire",
+          "term": "satire",
+          "ipa": "/ˈsætaɪər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "satyra",
+          "definition": "Humor that makes fun of people or events, sometimes written like real news.",
+          "register": "neutralny",
+          "contextPl": "Żartobliwe teksty",
+          "natural": "",
+          "forms": "",
+          "collocations": "political satire; a satire website",
+          "synonyms": "parody",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "That article is satire; it's from a comedy website.",
+              "pl": "Ten artykuł to satyra, pochodzi ze strony satyrycznej.",
+              "focusEn": "satire",
+              "focusPl": "satyra"
+            },
+            {
+              "en": "Some students didn't realize the story was satire at first.",
+              "pl": "Niektórzy uczniowie na początku nie zorientowali się, że tekst to satyra.",
+              "focusEn": "satire",
+              "focusPl": "satyra"
+            }
+          ],
+          "acceptedAnswers": [
+            "satire",
+            "parody"
+          ],
+          "acceptedTranslations": [
+            "satyra",
+            "parodia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "news-media.media",
+      "namePl": "Media i odbiorcy",
+      "scenePl": "Rozmowa przyjaciół przy piwie o tym, skąd biorą wiadomości i za które serwisy płacą",
+      "entries": [
+        {
+          "id": "news-media.media",
+          "term": "media",
+          "ipa": "/ˈmiːdiə/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "media",
+          "definition": "TV, radio, newspapers, and the internet as ways of giving information to people.",
+          "register": "neutralny",
+          "contextPl": "Ogół mediów",
+          "natural": "",
+          "forms": "",
+          "collocations": "the media; social media; media attention",
+          "synonyms": "the press",
+          "antonyms": "",
+          "notePl": "Może łączyć się z liczbą pojedynczą lub mnogą.",
+          "examples": [
+            {
+              "en": "My brother blames the media for everything, even the weather.",
+              "pl": "Mój brat obwinia media o wszystko, nawet o pogodę.",
+              "focusEn": "media",
+              "focusPl": "media"
+            },
+            {
+              "en": "Do you think the media makes things sound worse than they are?",
+              "pl": "Myślisz, że media przedstawiają wszystko gorzej, niż jest?",
+              "focusEn": "media",
+              "focusPl": "media"
+            }
+          ],
+          "acceptedAnswers": [
+            "media",
+            "the media"
+          ],
+          "acceptedTranslations": [
+            "media",
+            "środki przekazu"
+          ]
+        },
+        {
+          "id": "news-media.news-outlet",
+          "term": "news outlet",
+          "ipa": "/ˈnuːz ˌaʊtlet/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "serwis informacyjny",
+          "definition": "A company or website that publishes or broadcasts news.",
+          "register": "formalny",
+          "contextPl": "Redakcje i serwisy",
+          "natural": "",
+          "forms": "news outlets",
+          "collocations": "major news outlets; a local news outlet",
+          "synonyms": "news organization",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I compare at least two news outlets before I believe anything.",
+              "pl": "Porównuję co najmniej dwa serwisy informacyjne, zanim w coś uwierzę.",
+              "focusEn": "news outlets",
+              "focusPl": "serwisy informacyjne"
+            },
+            {
+              "en": "Which news outlet do you actually pay for?",
+              "pl": "Za który serwis informacyjny naprawdę płacisz?",
+              "focusEn": "news outlet",
+              "focusPl": "serwis informacyjny"
+            }
+          ],
+          "acceptedAnswers": [
+            "news outlet",
+            "outlet",
+            "news organization"
+          ],
+          "acceptedTranslations": [
+            "serwis informacyjny",
+            "medium",
+            "redakcja"
+          ]
+        },
+        {
+          "id": "news-media.paywall",
+          "term": "paywall",
+          "ipa": "/ˈpeɪwɔːl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "paywall",
+          "definition": "A system that stops you reading an article online until you pay.",
+          "register": "potoczny",
+          "contextPl": "Płatny dostęp do treści",
+          "natural": "",
+          "forms": "paywalls",
+          "collocations": "behind a paywall; hit a paywall",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku zwykle „paywall” albo „płatny dostęp”.",
+          "examples": [
+            {
+              "en": "I wanted to read that article, but it's behind a paywall.",
+              "pl": "Chciałem przeczytać ten artykuł, ale jest za paywallem.",
+              "focusEn": "paywall",
+              "focusPl": "paywallem"
+            },
+            {
+              "en": "Every good newspaper has a paywall now, and it adds up.",
+              "pl": "Teraz każda dobra gazeta ma płatny dostęp, i to się sumuje.",
+              "focusEn": "paywall",
+              "focusPl": "płatny dostęp"
+            }
+          ],
+          "acceptedAnswers": [
+            "paywall"
+          ],
+          "acceptedTranslations": [
+            "paywall",
+            "płatny dostęp",
+            "płatna blokada"
+          ]
+        },
+        {
+          "id": "news-media.podcast",
+          "term": "podcast",
+          "ipa": "/ˈpɑːdkæst/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "podcast",
+          "definition": "A recorded audio program you can download or stream.",
+          "register": "neutralny",
+          "contextPl": "Wiadomości w formie audio",
+          "natural": "",
+          "forms": "podcasts",
+          "collocations": "listen to a podcast; news podcast",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I get most of my news from a twenty-minute podcast on my commute.",
+              "pl": "Większość wiadomości czerpię z dwudziestominutowego podcastu w drodze do pracy.",
+              "focusEn": "podcast",
+              "focusPl": "podcastu"
+            },
+            {
+              "en": "She started a podcast about our city's history.",
+              "pl": "Założyła podcast o historii naszego miasta.",
+              "focusEn": "podcast",
+              "focusPl": "podcast"
+            }
+          ],
+          "acceptedAnswers": [
+            "podcast",
+            "podcasts"
+          ],
+          "acceptedTranslations": [
+            "podcast",
+            "audycja"
+          ]
+        },
+        {
+          "id": "news-media.the-press",
+          "term": "the press",
+          "ipa": "/ðə ˈpres/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "prasa",
+          "definition": "Newspapers, magazines, and journalists as a group.",
+          "register": "neutralny",
+          "contextPl": "Dziennikarze jako grupa",
+          "natural": "the media",
+          "forms": "",
+          "collocations": "freedom of the press; talk to the press",
+          "synonyms": "the media",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The family didn't want to talk to the press after the accident.",
+              "pl": "Rodzina nie chciała rozmawiać z prasą po wypadku.",
+              "focusEn": "the press",
+              "focusPl": "prasą"
+            },
+            {
+              "en": "The press gets blamed for a lot, but someone has to ask questions.",
+              "pl": "Prasę obwinia się o wiele, ale ktoś musi zadawać pytania.",
+              "focusEn": "The press",
+              "focusPl": "Prasę"
+            }
+          ],
+          "acceptedAnswers": [
+            "the press",
+            "press"
+          ],
+          "acceptedTranslations": [
+            "prasa",
+            "dziennikarze",
+            "media"
+          ]
+        },
+        {
+          "id": "news-media.freedom-of-the-press",
+          "term": "freedom of the press",
+          "ipa": "/ˌfriːdəm əv ðə ˈpres/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wolność prasy",
+          "definition": "The right of journalists to report news without control by the government.",
+          "register": "formalny",
+          "contextPl": "Prawa dziennikarzy",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "press freedom",
+          "antonyms": "censorship",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My friend from journalism school talks about freedom of the press a lot.",
+              "pl": "Mój przyjaciel ze studiów dziennikarskich często mówi o wolności prasy.",
+              "focusEn": "freedom of the press",
+              "focusPl": "wolności prasy"
+            },
+            {
+              "en": "Without freedom of the press, we'd only hear one side.",
+              "pl": "Bez wolności prasy słyszelibyśmy tylko jedną stronę.",
+              "focusEn": "freedom of the press",
+              "focusPl": "wolności prasy"
+            }
+          ],
+          "acceptedAnswers": [
+            "freedom of the press",
+            "press freedom"
+          ],
+          "acceptedTranslations": [
+            "wolność prasy",
+            "wolność mediów"
+          ]
+        },
+        {
+          "id": "news-media.censorship",
+          "term": "censorship",
+          "ipa": "/ˈsensərʃɪp/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "cenzura",
+          "definition": "Controlling what people can say, read, or watch.",
+          "register": "formalny",
+          "contextPl": "Ograniczanie informacji",
+          "natural": "",
+          "forms": "",
+          "collocations": "government censorship; online censorship",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She left her old job because of censorship by the owners.",
+              "pl": "Odeszła z poprzedniej pracy przez cenzurę ze strony właścicieli.",
+              "focusEn": "censorship",
+              "focusPl": "cenzurę"
+            },
+            {
+              "en": "We argued about whether deleting comments counts as censorship.",
+              "pl": "Kłóciliśmy się, czy usuwanie komentarzy to cenzura.",
+              "focusEn": "censorship",
+              "focusPl": "cenzura"
+            }
+          ],
+          "acceptedAnswers": [
+            "censorship",
+            "censor"
+          ],
+          "acceptedTranslations": [
+            "cenzura"
+          ]
+        },
+        {
+          "id": "news-media.audience",
+          "term": "audience",
+          "ipa": "/ˈɔːdiəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odbiorcy",
+          "definition": "The people who watch, read, or listen to something.",
+          "register": "neutralny",
+          "contextPl": "Kto odbiera media",
+          "natural": "",
+          "forms": "audiences",
+          "collocations": "a wide audience; target audience; young audience",
+          "synonyms": "viewers; readers",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Newspapers are losing their young audience to video apps.",
+              "pl": "Gazety tracą młodych odbiorców na rzecz aplikacji wideo.",
+              "focusEn": "audience",
+              "focusPl": "odbiorców"
+            },
+            {
+              "en": "His podcast has a bigger audience than our local paper.",
+              "pl": "Jego podcast ma więcej odbiorców niż nasza lokalna gazeta.",
+              "focusEn": "audience",
+              "focusPl": "odbiorców"
+            }
+          ],
+          "acceptedAnswers": [
+            "audience"
+          ],
+          "acceptedTranslations": [
+            "odbiorcy",
+            "publiczność",
+            "widownia"
+          ]
+        },
+        {
+          "id": "news-media.press-release",
+          "term": "press release",
+          "ipa": "/ˈpres rɪˌliːs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "komunikat prasowy",
+          "definition": "An official written statement given to journalists.",
+          "register": "formalny",
+          "contextPl": "Oficjalne informacje dla mediów",
+          "natural": "",
+          "forms": "press releases",
+          "collocations": "issue a press release",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Half the \"news\" you read is just a rewritten press release.",
+              "pl": "Połowa „wiadomości”, które czytasz, to przepisany komunikat prasowy.",
+              "focusEn": "press release",
+              "focusPl": "komunikat prasowy"
+            },
+            {
+              "en": "At my last job, I wrote a press release almost every week.",
+              "pl": "W poprzedniej pracy pisałam komunikat prasowy prawie co tydzień.",
+              "focusEn": "press release",
+              "focusPl": "komunikat prasowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "press release",
+            "news release"
+          ],
+          "acceptedTranslations": [
+            "komunikat prasowy",
+            "informacja prasowa"
+          ]
+        },
+        {
+          "id": "news-media.journalism",
+          "term": "journalism",
+          "ipa": "/ˈdʒɝːnəlɪzəm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "dziennikarstwo",
+          "definition": "The work of collecting and reporting news.",
+          "register": "neutralny",
+          "contextPl": "Zawód i dziedzina",
+          "natural": "",
+          "forms": "",
+          "collocations": "study journalism; local journalism; good journalism",
+          "synonyms": "reporting",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She studied journalism, but now she works in marketing.",
+              "pl": "Studiowała dziennikarstwo, ale teraz pracuje w marketingu.",
+              "focusEn": "journalism",
+              "focusPl": "dziennikarstwo"
+            },
+            {
+              "en": "I'd pay more for good local journalism if I knew it would survive.",
+              "pl": "Płaciłbym więcej za dobre lokalne dziennikarstwo, gdybym wiedział, że przetrwa.",
+              "focusEn": "journalism",
+              "focusPl": "dziennikarstwo"
+            }
+          ],
+          "acceptedAnswers": [
+            "journalism"
+          ],
+          "acceptedTranslations": [
+            "dziennikarstwo",
+            "żurnalistyka"
+          ]
+        },
+        {
+          "id": "news-media.independent",
+          "term": "independent",
+          "ipa": "/ˌɪndɪˈpendənt/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "niezależny",
+          "definition": "Not controlled or paid for by a government, company, or political group.",
+          "register": "neutralny",
+          "contextPl": "Niezależność mediów",
+          "natural": "",
+          "forms": "",
+          "collocations": "independent media; independent journalist",
+          "synonyms": "",
+          "antonyms": "state-owned",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My friend only reads independent news sites run by journalists.",
+              "pl": "Mój przyjaciel czyta tylko niezależne serwisy prowadzone przez dziennikarzy.",
+              "focusEn": "independent",
+              "focusPl": "niezależne"
+            },
+            {
+              "en": "It's hard for an independent paper to survive without ads.",
+              "pl": "Niezależnej gazecie trudno przetrwać bez reklam.",
+              "focusEn": "independent",
+              "focusPl": "Niezależnej"
+            }
+          ],
+          "acceptedAnswers": [
+            "independent"
+          ],
+          "acceptedTranslations": [
+            "niezależny",
+            "samodzielny"
+          ]
+        }
+      ]
+    }
+  ]
+}

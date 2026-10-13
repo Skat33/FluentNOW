@@ -202,7 +202,7 @@ const BRITISH_SPELLING_SUGGEST = {
 
 // Słownictwo typowo brytyjskie (często wieloznaczne → tylko ostrzeżenie).
 const BRITISH_VOCAB = [
-  [/\b(?:a|the|my|our|your|his|her|their|this|that|rented|shared|new|small|tiny|studio)\s+flat(?=\s*(?:[.!?;]|$)|\s+(?:in|on|at|near|with|is|was|has|had|for|downtown|upstairs|downstairs|above|below|and)\b)/,'apartment (jeśli „mieszkanie”)'],
+  [/(?<!\b(?:get|gets|got|gotten|getting|have|has|had)\s)\b(?:a|the|my|our|your|his|her|their|this|that|rented|shared|new|small|tiny|studio)\s+flat(?=\s*(?:[.!?;]|$)|\s+(?:in|on|at|near|with|is|was|has|had|for|downtown|upstairs|downstairs|above|below|and)\b)/,'apartment (jeśli „mieszkanie”)'],
   [/\bflat(?:mate|mates|share)\b/i, 'roommate'],
   [/\bblocks? of flats\b/i, 'apartment building'],
   [/\b(?:the|a)\s+lifts?\b/i, 'elevator / ride (jeśli „winda” / „podwózka”)'],
@@ -214,7 +214,7 @@ const BRITISH_VOCAB = [
   [/\btrousers\b/i, 'pants'],
   [/\bbiscuits?\b/i, 'cookie(s) / cracker(s)'],
   [/\bcar parks?\b/i, 'parking lot'],
-  [/\bchemist(?:'s|s)?\b/i, 'drugstore / pharmacy'],
+  [/\bchemist's\b|\b(?:at|to|from) the chemist\b/i, 'drugstore / pharmacy'],
   [/\bfortnights?\b/i, 'two weeks'],
   [/\bautumn\b/i, 'fall'],
   [/\bcooker\b/i, 'stove'],
@@ -232,7 +232,7 @@ const BRITISH_VOCAB = [
   [/\bsingle ticket\b/i, 'one-way ticket'],
   [/\btrolley\b/i, 'cart'],
   [/\bcurrent account\b/i, 'checking account'],
-  [/\bestate agents?\b/i, 'real estate agent'],
+  [/(?<!\breal )\bestate agents?\b/i, 'real estate agent'],
   [/\bA&E\b/, 'ER / emergency room'],
   [/\bGPs?\b/, 'doctor / primary care physician'],
   [/\bCVs?\b/, 'résumé'],
@@ -249,7 +249,7 @@ const BRITISH_VOCAB = [
   [/\b(?:the|to the)\s+cinema\b/i, 'movie theater / the movies'],
   [/\b(?:on|take|took|taking|by|ride|rode) the tube\b|\bthe tube (?:station|line|map)\b|\bthe underground\b/i, 'subway'],
   [/\b(?:pair of|running|gym|new|old|white|black) trainers\b/i, 'sneakers'],
-  [/\bjumpers?\b/i, 'sweater'],
+  [/\bjumpers?\b(?!\s+cables?\b)/i, 'sweater'],
   [/\btorch(?:es)?\b/i, 'flashlight'],
   [/\bsolicitors?\b/i, 'lawyer / attorney'],
   [/\bminced meat\b|\b(?:the|some|of|beef|pork|lamb) mince\b/i, 'ground beef / ground meat'],

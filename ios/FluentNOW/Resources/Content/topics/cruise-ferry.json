@@ -1,0 +1,2618 @@
+{
+  "schemaVersion": 1,
+  "id": "cruise-ferry",
+  "namePl": "Rejs i prom",
+  "nameEn": "Cruises and Ferries",
+  "group": "travel",
+  "symbol": "ferry",
+  "summaryPl": "Prom i statek, port i przeprawa, kajuta i pokład, bezpieczeństwo na morzu, choroba morska i wycieczki na ląd.",
+  "aliases": [
+    "rejs",
+    "prom",
+    "statek",
+    "wycieczkowiec",
+    "kajuta",
+    "pokład",
+    "port",
+    "przeprawa",
+    "choroba morska",
+    "cruise",
+    "ferry",
+    "ship",
+    "cabin",
+    "port"
+  ],
+  "categories": [
+    {
+      "id": "cruise-ferry.port",
+      "namePl": "Prom i port",
+      "scenePl": "Port promowy rano w dniu przeprawy; podróżni kupują bilety i czekają na wejście na prom",
+      "entries": [
+        {
+          "id": "cruise-ferry.ferry",
+          "term": "ferry",
+          "ipa": "/ˈferi/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "prom",
+          "definition": "A boat that carries people and vehicles across water, usually on a regular route.",
+          "register": "neutralny",
+          "contextPl": "Przeprawa przez wodę",
+          "natural": "",
+          "forms": "ferries",
+          "collocations": "take the ferry; car ferry; ferry ride",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The next ferry to the island leaves at nine fifteen.",
+              "pl": "Następny prom na wyspę odpływa o dziewiątej piętnaście.",
+              "focusEn": "ferry",
+              "focusPl": "prom"
+            },
+            {
+              "en": "We missed the first ferry, so we had coffee at the terminal.",
+              "pl": "Spóźniliśmy się na pierwszy prom, więc wypiliśmy kawę w terminalu.",
+              "focusEn": "ferry",
+              "focusPl": "prom"
+            }
+          ],
+          "acceptedAnswers": [
+            "ferry"
+          ],
+          "acceptedTranslations": [
+            "prom"
+          ]
+        },
+        {
+          "id": "cruise-ferry.ship",
+          "term": "ship",
+          "ipa": "/ʃɪp/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "statek",
+          "definition": "A large boat for carrying people or goods across the sea.",
+          "register": "neutralny",
+          "contextPl": "Duże jednostki pływające",
+          "natural": "vessel",
+          "forms": "ships",
+          "collocations": "on the ship; cargo ship",
+          "synonyms": "vessel",
+          "antonyms": "",
+          "notePl": "O dużych jednostkach „ship”, o mniejszych „boat”.",
+          "examples": [
+            {
+              "en": "That huge ship behind the ferry carries containers, not people.",
+              "pl": "Ten ogromny statek za promem przewozi kontenery, nie ludzi.",
+              "focusEn": "ship",
+              "focusPl": "statek"
+            },
+            {
+              "en": "You can see the ship coming into the harbor from the café window.",
+              "pl": "Z okna kawiarni widać statek wpływający do portu.",
+              "focusEn": "ship",
+              "focusPl": "statek"
+            }
+          ],
+          "acceptedAnswers": [
+            "ship",
+            "vessel"
+          ],
+          "acceptedTranslations": [
+            "statek",
+            "okręt"
+          ]
+        },
+        {
+          "id": "cruise-ferry.boat",
+          "term": "boat",
+          "ipa": "/boʊt/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "łódź",
+          "definition": "A vehicle for traveling on water, usually smaller than a ship.",
+          "register": "neutralny",
+          "contextPl": "Jednostki pływające",
+          "natural": "",
+          "forms": "boats",
+          "collocations": "by boat; small boat; get on the boat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Potocznie Amerykanie nazywają „boat” także prom czy statek.",
+          "examples": [
+            {
+              "en": "The small boats in the harbor belong to local fishermen.",
+              "pl": "Małe łodzie w porcie należą do miejscowych rybaków.",
+              "focusEn": "boats",
+              "focusPl": "łodzie"
+            },
+            {
+              "en": "Is it faster to get to the island by boat or by plane?",
+              "pl": "Na wyspę szybciej dostać się łodzią czy samolotem?",
+              "focusEn": "boat",
+              "focusPl": "łodzią"
+            }
+          ],
+          "acceptedAnswers": [
+            "boat"
+          ],
+          "acceptedTranslations": [
+            "łódź",
+            "łódka",
+            "statek"
+          ]
+        },
+        {
+          "id": "cruise-ferry.port",
+          "term": "port",
+          "ipa": "/pɔːrt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "port",
+          "definition": "A town or area by the sea where ships load and unload.",
+          "register": "neutralny",
+          "contextPl": "Miejsce postoju statków",
+          "natural": "harbor",
+          "forms": "ports",
+          "collocations": "in port; leave port; port city",
+          "synonyms": "harbor",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our ferry leaves from the main port, not the small marina.",
+              "pl": "Nasz prom odpływa z głównego portu, a nie z małej mariny.",
+              "focusEn": "port",
+              "focusPl": "portu"
+            },
+            {
+              "en": "The port is busy in the morning with trucks and tourists.",
+              "pl": "Rano port jest pełen ciężarówek i turystów.",
+              "focusEn": "port",
+              "focusPl": "port"
+            }
+          ],
+          "acceptedAnswers": [
+            "port"
+          ],
+          "acceptedTranslations": [
+            "port",
+            "port morski"
+          ]
+        },
+        {
+          "id": "cruise-ferry.harbor",
+          "term": "harbor",
+          "ipa": "/ˈhɑːrbər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przystań",
+          "definition": "An area of water near the coast where boats are safe.",
+          "register": "neutralny",
+          "contextPl": "Osłonięty akwen portowy",
+          "natural": "port",
+          "forms": "harbors",
+          "collocations": "in the harbor; harbor view",
+          "synonyms": "port",
+          "antonyms": "",
+          "notePl": "W BrE „harbour”.",
+          "examples": [
+            {
+              "en": "The ferry is still in the harbor waiting for the last cars.",
+              "pl": "Prom wciąż stoi w przystani i czeka na ostatnie samochody.",
+              "focusEn": "harbor",
+              "focusPl": "przystani"
+            },
+            {
+              "en": "The harbor looks beautiful with all the lights on.",
+              "pl": "Przystań wygląda pięknie z zapalonymi wszystkimi światłami.",
+              "focusEn": "harbor",
+              "focusPl": "Przystań"
+            }
+          ],
+          "acceptedAnswers": [
+            "harbor",
+            "port"
+          ],
+          "acceptedTranslations": [
+            "przystań",
+            "port"
+          ]
+        },
+        {
+          "id": "cruise-ferry.crossing",
+          "term": "crossing",
+          "ipa": "/ˈkrɔːsɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przeprawa",
+          "definition": "A trip across a sea, lake or river by boat.",
+          "register": "neutralny",
+          "contextPl": "Podróż promem",
+          "natural": "trip",
+          "forms": "crossings",
+          "collocations": "ferry crossing; rough crossing; a two-hour crossing",
+          "synonyms": "trip; passage",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The crossing takes about two hours if the weather is good.",
+              "pl": "Przeprawa trwa około dwóch godzin, jeśli pogoda jest dobra.",
+              "focusEn": "crossing",
+              "focusPl": "Przeprawa"
+            },
+            {
+              "en": "The morning crossing is cheaper than the evening one.",
+              "pl": "Poranna przeprawa jest tańsza niż wieczorna.",
+              "focusEn": "crossing",
+              "focusPl": "przeprawa"
+            }
+          ],
+          "acceptedAnswers": [
+            "crossing"
+          ],
+          "acceptedTranslations": [
+            "przeprawa",
+            "rejs",
+            "przeprawa promowa"
+          ]
+        },
+        {
+          "id": "cruise-ferry.ferry-terminal",
+          "term": "ferry terminal",
+          "ipa": "/ˈferi ˌtɝːmɪnəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "terminal promowy",
+          "definition": "The building where passengers wait for a ferry.",
+          "register": "neutralny",
+          "contextPl": "Odprawa pasażerów",
+          "natural": "",
+          "forms": "ferry terminals",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The ferry terminal has a café and free Wi-Fi.",
+              "pl": "Terminal promowy ma kawiarnię i darmowe Wi-Fi.",
+              "focusEn": "ferry terminal",
+              "focusPl": "Terminal promowy"
+            },
+            {
+              "en": "Please arrive at the ferry terminal forty-five minutes before departure.",
+              "pl": "Prosimy przybyć do terminalu promowego czterdzieści pięć minut przed odpłynięciem.",
+              "focusEn": "ferry terminal",
+              "focusPl": "terminalu promowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "ferry terminal",
+            "terminal"
+          ],
+          "acceptedTranslations": [
+            "terminal promowy",
+            "dworzec promowy"
+          ]
+        },
+        {
+          "id": "cruise-ferry.foot-passenger",
+          "term": "foot passenger",
+          "ipa": "/ˈfʊt ˌpæsɪndʒər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "pasażer pieszy",
+          "definition": "A ferry passenger traveling without a car.",
+          "register": "neutralny",
+          "contextPl": "Bilety na prom",
+          "natural": "walk-on passenger",
+          "forms": "foot passengers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A ticket for a foot passenger costs only eight dollars.",
+              "pl": "Bilet dla pasażera pieszego kosztuje tylko osiem dolarów.",
+              "focusEn": "foot passenger",
+              "focusPl": "pasażera pieszego"
+            },
+            {
+              "en": "Foot passengers board through the upper walkway.",
+              "pl": "Pasażerowie piesi wchodzą na pokład górnym przejściem.",
+              "focusEn": "Foot passengers",
+              "focusPl": "Pasażerowie piesi"
+            }
+          ],
+          "acceptedAnswers": [
+            "foot passenger",
+            "walk-on passenger"
+          ],
+          "acceptedTranslations": [
+            "pasażer pieszy",
+            "pasażer bez samochodu"
+          ]
+        },
+        {
+          "id": "cruise-ferry.car-deck",
+          "term": "car deck",
+          "ipa": "/ˈkɑːr ˌdek/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "pokład samochodowy",
+          "definition": "The lower part of a ferry where cars and trucks are parked.",
+          "register": "neutralny",
+          "contextPl": "Przewóz samochodów",
+          "natural": "vehicle deck",
+          "forms": "car decks",
+          "collocations": "",
+          "synonyms": "vehicle deck",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Passengers can't stay on the car deck during the crossing.",
+              "pl": "Pasażerowie nie mogą zostawać na pokładzie samochodowym podczas przeprawy.",
+              "focusEn": "car deck",
+              "focusPl": "pokładzie samochodowym"
+            },
+            {
+              "en": "Remember the stairs number, because the car deck all looks the same.",
+              "pl": "Zapamiętaj numer klatki schodowej, bo cały pokład samochodowy wygląda tak samo.",
+              "focusEn": "car deck",
+              "focusPl": "pokład samochodowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "car deck",
+            "vehicle deck"
+          ],
+          "acceptedTranslations": [
+            "pokład samochodowy",
+            "pokład dla aut"
+          ]
+        },
+        {
+          "id": "cruise-ferry.gangway",
+          "term": "gangway",
+          "ipa": "/ˈɡæŋweɪ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "trap",
+          "definition": "A bridge or board for walking between a ship and the land.",
+          "register": "specjalistyczny",
+          "contextPl": "Wchodzenie na statek",
+          "natural": "ramp",
+          "forms": "gangways",
+          "collocations": "walk up the gangway",
+          "synonyms": "ramp",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Hold the rail when you walk up the gangway.",
+              "pl": "Trzymaj się poręczy, kiedy wchodzisz po trapie.",
+              "focusEn": "gangway",
+              "focusPl": "trapie"
+            },
+            {
+              "en": "The crew pulled up the gangway right after the last passenger.",
+              "pl": "Załoga wciągnęła trap zaraz po ostatnim pasażerze.",
+              "focusEn": "gangway",
+              "focusPl": "trap"
+            }
+          ],
+          "acceptedAnswers": [
+            "gangway",
+            "ramp"
+          ],
+          "acceptedTranslations": [
+            "trap",
+            "kładka"
+          ]
+        },
+        {
+          "id": "cruise-ferry.embark",
+          "term": "embark",
+          "ipa": "/ɪmˈbɑːrk/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zaokrętować się",
+          "definition": "To get on a ship.",
+          "register": "formalny",
+          "contextPl": "Formalnie o wchodzeniu na pokład",
+          "natural": "board",
+          "forms": "embarked; embarking",
+          "collocations": "embark at; begin to embark",
+          "synonyms": "board; get on",
+          "antonyms": "disembark",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Passengers with cars will embark first.",
+              "pl": "Pasażerowie z samochodami wejdą na pokład pierwsi.",
+              "focusEn": "embark",
+              "focusPl": "wejdą na pokład"
+            },
+            {
+              "en": "We embarked at noon and left the harbor an hour later.",
+              "pl": "Zaokrętowaliśmy się w południe i godzinę później wypłynęliśmy z portu.",
+              "focusEn": "embarked",
+              "focusPl": "Zaokrętowaliśmy się"
+            }
+          ],
+          "acceptedAnswers": [
+            "embark",
+            "board"
+          ],
+          "acceptedTranslations": [
+            "zaokrętować się",
+            "wejść na pokład",
+            "wsiąść"
+          ]
+        },
+        {
+          "id": "cruise-ferry.disembark",
+          "term": "disembark",
+          "ipa": "/ˌdɪsɪmˈbɑːrk/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zejść na ląd",
+          "definition": "To leave a ship after a trip.",
+          "register": "formalny",
+          "contextPl": "Wysiadanie ze statku",
+          "natural": "get off",
+          "forms": "disembarked; disembarking",
+          "collocations": "disembark at; disembark the ship",
+          "synonyms": "get off",
+          "antonyms": "embark",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please wait in your car until it's time to disembark.",
+              "pl": "Prosimy czekać w samochodzie, dopóki nie nadejdzie czas zejścia na ląd.",
+              "focusEn": "disembark",
+              "focusPl": "zejścia na ląd"
+            },
+            {
+              "en": "Hundreds of people disembarked at once and filled the terminal.",
+              "pl": "Setki ludzi naraz zeszły ze statku i zapełniły terminal.",
+              "focusEn": "disembarked",
+              "focusPl": "zeszły ze statku"
+            }
+          ],
+          "acceptedAnswers": [
+            "disembark",
+            "get off"
+          ],
+          "acceptedTranslations": [
+            "zejść na ląd",
+            "zejść ze statku",
+            "wysiąść"
+          ]
+        },
+        {
+          "id": "cruise-ferry.set-sail",
+          "term": "set sail",
+          "ipa": "/ˌset ˈseɪl/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wypłynąć",
+          "definition": "To start a trip by ship.",
+          "register": "neutralny",
+          "contextPl": "Początek rejsu",
+          "natural": "leave",
+          "forms": "set – set",
+          "collocations": "set sail for",
+          "synonyms": "depart",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We set sail at exactly ten, and everyone waved from the deck.",
+              "pl": "Wypłynęliśmy dokładnie o dziesiątej i wszyscy machali z pokładu.",
+              "focusEn": "set sail",
+              "focusPl": "Wypłynęliśmy"
+            },
+            {
+              "en": "The ferry can't set sail until the fog clears.",
+              "pl": "Prom nie może wypłynąć, dopóki mgła się nie rozejdzie.",
+              "focusEn": "set sail",
+              "focusPl": "wypłynąć"
+            }
+          ],
+          "acceptedAnswers": [
+            "set sail"
+          ],
+          "acceptedTranslations": [
+            "wypłynąć",
+            "wyruszyć w rejs",
+            "podnieść kotwicę"
+          ]
+        },
+        {
+          "id": "cruise-ferry.dock",
+          "term": "dock",
+          "ipa": "/dɑːk/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przybić do brzegu",
+          "definition": "To arrive at a port and tie a ship to the land.",
+          "register": "neutralny",
+          "contextPl": "Przypływanie do portu",
+          "natural": "arrive",
+          "forms": "docked; docking",
+          "collocations": "dock at; the ship docked",
+          "synonyms": "moor",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The ferry will dock in about ten minutes, so please return to your cars.",
+              "pl": "Prom przybije do brzegu za około dziesięć minut, więc prosimy wrócić do samochodów.",
+              "focusEn": "dock",
+              "focusPl": "przybije do brzegu"
+            },
+            {
+              "en": "The cruise ship docked right next to our ferry.",
+              "pl": "Wycieczkowiec zacumował tuż obok naszego promu.",
+              "focusEn": "docked",
+              "focusPl": "zacumował"
+            }
+          ],
+          "acceptedAnswers": [
+            "dock",
+            "moor"
+          ],
+          "acceptedTranslations": [
+            "przybić do brzegu",
+            "zacumować",
+            "zawinąć do portu"
+          ]
+        },
+        {
+          "id": "cruise-ferry.aboard",
+          "term": "aboard",
+          "ipa": "/əˈbɔːrd/",
+          "pos": "przysłówek",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "na pokładzie",
+          "definition": "On or onto a ship.",
+          "register": "neutralny",
+          "contextPl": "Przebywanie na statku",
+          "natural": "on board",
+          "forms": "",
+          "collocations": "come aboard; welcome aboard; aboard the ship",
+          "synonyms": "on board",
+          "antonyms": "ashore",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Welcome aboard, the café on deck five is now open.",
+              "pl": "Witamy na pokładzie, kawiarnia na piątym pokładzie jest już otwarta.",
+              "focusEn": "aboard",
+              "focusPl": "na pokładzie"
+            },
+            {
+              "en": "There are over a thousand people aboard this ferry today.",
+              "pl": "Na pokładzie tego promu jest dziś ponad tysiąc osób.",
+              "focusEn": "aboard",
+              "focusPl": "pokładzie"
+            }
+          ],
+          "acceptedAnswers": [
+            "aboard",
+            "on board"
+          ],
+          "acceptedTranslations": [
+            "na pokładzie",
+            "na pokład"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cruise-ferry.onboard",
+      "namePl": "Na pokładzie",
+      "scenePl": "Pierwszy dzień rejsu wycieczkowcem; pasażerowie zwiedzają statek i szukają swoich kajut",
+      "entries": [
+        {
+          "id": "cruise-ferry.cruise",
+          "term": "cruise",
+          "ipa": "/kruːz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "rejs",
+          "definition": "A vacation on a large ship that stops at different places.",
+          "register": "neutralny",
+          "contextPl": "Wakacje na statku",
+          "natural": "",
+          "forms": "cruises",
+          "collocations": "go on a cruise; take a cruise; cruise vacation",
+          "synonyms": "voyage",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This is our first cruise, and we already love it.",
+              "pl": "To nasz pierwszy rejs i już go uwielbiamy.",
+              "focusEn": "cruise",
+              "focusPl": "rejs"
+            },
+            {
+              "en": "The cruise stops at four islands in seven days.",
+              "pl": "Rejs zawija na cztery wyspy w ciągu siedmiu dni.",
+              "focusEn": "cruise",
+              "focusPl": "Rejs"
+            }
+          ],
+          "acceptedAnswers": [
+            "cruise"
+          ],
+          "acceptedTranslations": [
+            "rejs",
+            "rejs wycieczkowy"
+          ]
+        },
+        {
+          "id": "cruise-ferry.cruise-ship",
+          "term": "cruise ship",
+          "ipa": "/ˈkruːz ˌʃɪp/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wycieczkowiec",
+          "definition": "A large ship that carries people on vacation.",
+          "register": "neutralny",
+          "contextPl": "Duże statki pasażerskie",
+          "natural": "cruise liner",
+          "forms": "cruise ships",
+          "collocations": "board a cruise ship",
+          "synonyms": "cruise liner",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This cruise ship has three pools and a climbing wall.",
+              "pl": "Ten wycieczkowiec ma trzy baseny i ściankę wspinaczkową.",
+              "focusEn": "cruise ship",
+              "focusPl": "wycieczkowiec"
+            },
+            {
+              "en": "I got lost twice on the cruise ship on the first day.",
+              "pl": "Pierwszego dnia dwa razy zgubiłem się na statku wycieczkowym.",
+              "focusEn": "cruise ship",
+              "focusPl": "statku wycieczkowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "cruise ship",
+            "cruise liner"
+          ],
+          "acceptedTranslations": [
+            "wycieczkowiec",
+            "statek wycieczkowy"
+          ]
+        },
+        {
+          "id": "cruise-ferry.deck",
+          "term": "deck",
+          "ipa": "/dek/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pokład",
+          "definition": "One of the floors of a ship, or the open area on top.",
+          "register": "neutralny",
+          "contextPl": "Poziomy statku",
+          "natural": "",
+          "forms": "decks",
+          "collocations": "on deck; upper deck; deck seven",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our cabin is on deck nine, near the elevators.",
+              "pl": "Nasza kajuta jest na pokładzie dziewiątym, przy windach.",
+              "focusEn": "deck",
+              "focusPl": "pokładzie"
+            },
+            {
+              "en": "Let's go up on deck and watch the city disappear.",
+              "pl": "Chodźmy na pokład i popatrzmy, jak znika miasto.",
+              "focusEn": "deck",
+              "focusPl": "pokład"
+            }
+          ],
+          "acceptedAnswers": [
+            "deck"
+          ],
+          "acceptedTranslations": [
+            "pokład"
+          ]
+        },
+        {
+          "id": "cruise-ferry.cabin",
+          "term": "cabin",
+          "ipa": "/ˈkæbɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kajuta",
+          "definition": "A small room for sleeping on a ship.",
+          "register": "neutralny",
+          "contextPl": "Zakwaterowanie na statku",
+          "natural": "stateroom",
+          "forms": "cabins",
+          "collocations": "inside cabin; ocean view cabin; cabin number",
+          "synonyms": "stateroom",
+          "antonyms": "",
+          "notePl": "Na wycieczkowcach często nazywana „stateroom”.",
+          "examples": [
+            {
+              "en": "Our cabin is small, but it has a window facing the sea.",
+              "pl": "Nasza kajuta jest mała, ale ma okno z widokiem na morze.",
+              "focusEn": "cabin",
+              "focusPl": "kajuta"
+            },
+            {
+              "en": "An inside cabin is cheaper because there's no window.",
+              "pl": "Wewnętrzna kajuta jest tańsza, bo nie ma okna.",
+              "focusEn": "cabin",
+              "focusPl": "kajuta"
+            }
+          ],
+          "acceptedAnswers": [
+            "cabin",
+            "stateroom"
+          ],
+          "acceptedTranslations": [
+            "kajuta",
+            "kabina"
+          ]
+        },
+        {
+          "id": "cruise-ferry.porthole",
+          "term": "porthole",
+          "ipa": "/ˈpɔːrthoʊl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "iluminator",
+          "definition": "A small round window in the side of a ship.",
+          "register": "specjalistyczny",
+          "contextPl": "Okna na statku",
+          "natural": "window",
+          "forms": "portholes",
+          "collocations": "look through the porthole",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Through the porthole we could see the waves just a few feet below.",
+              "pl": "Przez iluminator widzieliśmy fale zaledwie kilka stóp niżej.",
+              "focusEn": "porthole",
+              "focusPl": "iluminator"
+            },
+            {
+              "en": "Our cabin doesn't have a balcony, only a little porthole.",
+              "pl": "Nasza kajuta nie ma balkonu, tylko małe okienko.",
+              "focusEn": "porthole",
+              "focusPl": "okienko"
+            }
+          ],
+          "acceptedAnswers": [
+            "porthole",
+            "window"
+          ],
+          "acceptedTranslations": [
+            "iluminator",
+            "bulaj",
+            "okienko"
+          ]
+        },
+        {
+          "id": "cruise-ferry.bunk",
+          "term": "bunk",
+          "ipa": "/bʌŋk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "koja",
+          "definition": "A narrow bed fixed to the wall, often one above another.",
+          "register": "neutralny",
+          "contextPl": "Spanie w kajucie",
+          "natural": "berth",
+          "forms": "bunks",
+          "collocations": "top bunk; bottom bunk",
+          "synonyms": "berth",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kids are fighting about who gets the top bunk.",
+              "pl": "Dzieci kłócą się, kto dostanie górną koję.",
+              "focusEn": "bunk",
+              "focusPl": "koję"
+            },
+            {
+              "en": "The bunks in the cheap cabins are pretty narrow.",
+              "pl": "Koje w tanich kajutach są dość wąskie.",
+              "focusEn": "bunks",
+              "focusPl": "Koje"
+            }
+          ],
+          "acceptedAnswers": [
+            "bunk",
+            "berth"
+          ],
+          "acceptedTranslations": [
+            "koja",
+            "łóżko piętrowe"
+          ]
+        },
+        {
+          "id": "cruise-ferry.lounge-chair",
+          "term": "lounge chair",
+          "ipa": "/ˈlaʊndʒ ˌtʃer/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "leżak",
+          "definition": "A long chair for lying down outside, especially by a pool.",
+          "register": "neutralny",
+          "contextPl": "Wypoczynek na pokładzie",
+          "natural": "deck chair",
+          "forms": "lounge chairs",
+          "collocations": "",
+          "synonyms": "deck chair",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "People put towels on the lounge chairs at seven in the morning.",
+              "pl": "Ludzie kładą ręczniki na leżakach już o siódmej rano.",
+              "focusEn": "lounge chairs",
+              "focusPl": "leżakach"
+            },
+            {
+              "en": "I spent the whole afternoon on a lounge chair by the pool.",
+              "pl": "Całe popołudnie spędziłem na leżaku przy basenie.",
+              "focusEn": "lounge chair",
+              "focusPl": "leżaku"
+            }
+          ],
+          "acceptedAnswers": [
+            "lounge chair",
+            "deck chair"
+          ],
+          "acceptedTranslations": [
+            "leżak"
+          ]
+        },
+        {
+          "id": "cruise-ferry.railing",
+          "term": "railing",
+          "ipa": "/ˈreɪlɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "reling",
+          "definition": "A fence of metal or wood along the edge of a deck.",
+          "register": "neutralny",
+          "contextPl": "Krawędź pokładu",
+          "natural": "rail",
+          "forms": "railings",
+          "collocations": "lean on the railing; hold the railing",
+          "synonyms": "rail",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't let the kids climb on the railing.",
+              "pl": "Nie pozwól dzieciom wspinać się na reling.",
+              "focusEn": "railing",
+              "focusPl": "reling"
+            },
+            {
+              "en": "We stood at the railing and watched the dolphins.",
+              "pl": "Staliśmy przy relingu i obserwowaliśmy delfiny.",
+              "focusEn": "railing",
+              "focusPl": "relingu"
+            }
+          ],
+          "acceptedAnswers": [
+            "railing",
+            "rail"
+          ],
+          "acceptedTranslations": [
+            "reling",
+            "poręcz",
+            "barierka"
+          ]
+        },
+        {
+          "id": "cruise-ferry.bow",
+          "term": "bow",
+          "ipa": "/baʊ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dziób",
+          "definition": "The front part of a ship.",
+          "register": "specjalistyczny",
+          "contextPl": "Części statku",
+          "natural": "front",
+          "forms": "bows",
+          "collocations": "at the bow",
+          "synonyms": "front",
+          "antonyms": "stern",
+          "notePl": "Wymowa jak „how”, nie jak „bow” (łuk).",
+          "examples": [
+            {
+              "en": "The best photos are from the bow when the ship leaves port.",
+              "pl": "Najlepsze zdjęcia są z dziobu, kiedy statek wypływa z portu.",
+              "focusEn": "bow",
+              "focusPl": "dziobu"
+            },
+            {
+              "en": "It's really windy at the bow, so hold on to your hat.",
+              "pl": "Na dziobie mocno wieje, więc trzymaj kapelusz.",
+              "focusEn": "bow",
+              "focusPl": "dziobie"
+            }
+          ],
+          "acceptedAnswers": [
+            "bow",
+            "front of the ship"
+          ],
+          "acceptedTranslations": [
+            "dziób",
+            "dziób statku"
+          ]
+        },
+        {
+          "id": "cruise-ferry.stern",
+          "term": "stern",
+          "ipa": "/stɝːn/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "rufa",
+          "definition": "The back part of a ship.",
+          "register": "specjalistyczny",
+          "contextPl": "Części statku",
+          "natural": "back",
+          "forms": "sterns",
+          "collocations": "at the stern",
+          "synonyms": "back",
+          "antonyms": "bow",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our restaurant is at the stern, with a view of the wake.",
+              "pl": "Nasza restauracja jest na rufie, z widokiem na kilwater.",
+              "focusEn": "stern",
+              "focusPl": "rufie"
+            },
+            {
+              "en": "From the stern, you can watch the island get smaller.",
+              "pl": "Z rufy można patrzeć, jak wyspa robi się coraz mniejsza.",
+              "focusEn": "stern",
+              "focusPl": "rufy"
+            }
+          ],
+          "acceptedAnswers": [
+            "stern",
+            "back of the ship"
+          ],
+          "acceptedTranslations": [
+            "rufa"
+          ]
+        },
+        {
+          "id": "cruise-ferry.port-side",
+          "term": "port side",
+          "ipa": "/ˈpɔːrt ˌsaɪd/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "rare",
+          "translation": "lewa burta",
+          "definition": "The left side of a ship when you face the front.",
+          "register": "specjalistyczny",
+          "contextPl": "Strony statku",
+          "natural": "left side",
+          "forms": "",
+          "collocations": "on the port side",
+          "synonyms": "",
+          "antonyms": "starboard",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Whales were spotted on the port side, so everyone ran over.",
+              "pl": "Na lewej burcie zauważono wieloryby, więc wszyscy tam pobiegli.",
+              "focusEn": "port side",
+              "focusPl": "lewej burcie"
+            },
+            {
+              "en": "Cabins on the port side see the sunset tonight.",
+              "pl": "Kajuty po lewej burcie zobaczą dziś zachód słońca.",
+              "focusEn": "port side",
+              "focusPl": "lewej burcie"
+            }
+          ],
+          "acceptedAnswers": [
+            "port side",
+            "port"
+          ],
+          "acceptedTranslations": [
+            "lewa burta",
+            "bakburta"
+          ]
+        },
+        {
+          "id": "cruise-ferry.starboard",
+          "term": "starboard",
+          "ipa": "/ˈstɑːrbərd/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "rare",
+          "translation": "prawa burta",
+          "definition": "The right side of a ship when you face the front.",
+          "register": "specjalistyczny",
+          "contextPl": "Strony statku",
+          "natural": "right side",
+          "forms": "",
+          "collocations": "on the starboard side",
+          "synonyms": "",
+          "antonyms": "port side",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our cabin is on starboard, so we'll see the coast.",
+              "pl": "Nasza kajuta jest od strony prawej burty, więc zobaczymy wybrzeże.",
+              "focusEn": "starboard",
+              "focusPl": "prawej burty"
+            },
+            {
+              "en": "The lifeboats on starboard are numbered with odd numbers.",
+              "pl": "Szalupy na prawej burcie mają nieparzyste numery.",
+              "focusEn": "starboard",
+              "focusPl": "prawej burcie"
+            }
+          ],
+          "acceptedAnswers": [
+            "starboard",
+            "starboard side"
+          ],
+          "acceptedTranslations": [
+            "prawa burta",
+            "sterburta"
+          ]
+        },
+        {
+          "id": "cruise-ferry.captain",
+          "term": "captain",
+          "ipa": "/ˈkæptɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kapitan",
+          "definition": "The person in charge of a ship.",
+          "register": "neutralny",
+          "contextPl": "Dowodzenie statkiem",
+          "natural": "",
+          "forms": "captains",
+          "collocations": "ship's captain; the captain speaking",
+          "synonyms": "skipper",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The captain said we'll arrive an hour early tomorrow.",
+              "pl": "Kapitan powiedział, że jutro dopłyniemy godzinę wcześniej.",
+              "focusEn": "captain",
+              "focusPl": "Kapitan"
+            },
+            {
+              "en": "You can meet the captain at the welcome party tonight.",
+              "pl": "Można poznać kapitana na dzisiejszym przyjęciu powitalnym.",
+              "focusEn": "captain",
+              "focusPl": "kapitana"
+            }
+          ],
+          "acceptedAnswers": [
+            "captain",
+            "skipper"
+          ],
+          "acceptedTranslations": [
+            "kapitan"
+          ]
+        },
+        {
+          "id": "cruise-ferry.bridge",
+          "term": "bridge",
+          "ipa": "/brɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "mostek kapitański",
+          "definition": "The raised area of a ship from which it is controlled.",
+          "register": "specjalistyczny",
+          "contextPl": "Sterowanie statkiem",
+          "natural": "",
+          "forms": "bridges",
+          "collocations": "on the bridge; bridge tour",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Some guests can take a tour of the bridge on day three.",
+              "pl": "Niektórzy goście mogą trzeciego dnia zwiedzić mostek kapitański.",
+              "focusEn": "bridge",
+              "focusPl": "mostek kapitański"
+            },
+            {
+              "en": "The captain is on the bridge during bad weather.",
+              "pl": "Przy złej pogodzie kapitan jest na mostku.",
+              "focusEn": "bridge",
+              "focusPl": "mostku"
+            }
+          ],
+          "acceptedAnswers": [
+            "bridge"
+          ],
+          "acceptedTranslations": [
+            "mostek kapitański",
+            "mostek"
+          ]
+        },
+        {
+          "id": "cruise-ferry.crew-member",
+          "term": "crew member",
+          "ipa": "/ˈkruː ˌmembər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "członek załogi",
+          "definition": "A person who works on a ship.",
+          "register": "neutralny",
+          "contextPl": "Obsługa statku",
+          "natural": "",
+          "forms": "crew members",
+          "collocations": "ask a crew member",
+          "synonyms": "",
+          "antonyms": "passenger",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Ask any crew member if you can't find your cabin.",
+              "pl": "Zapytaj dowolnego członka załogi, jeśli nie możesz znaleźć kajuty.",
+              "focusEn": "crew member",
+              "focusPl": "członka załogi"
+            },
+            {
+              "en": "The crew members come from over forty countries.",
+              "pl": "Członkowie załogi pochodzą z ponad czterdziestu krajów.",
+              "focusEn": "crew members",
+              "focusPl": "Członkowie załogi"
+            }
+          ],
+          "acceptedAnswers": [
+            "crew member",
+            "crew"
+          ],
+          "acceptedTranslations": [
+            "członek załogi",
+            "marynarz"
+          ]
+        },
+        {
+          "id": "cruise-ferry.cabin-steward",
+          "term": "cabin steward",
+          "ipa": "/ˈkæbɪn ˌstuːərd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "steward kabinowy",
+          "definition": "A crew member who cleans and takes care of cabins.",
+          "register": "neutralny",
+          "contextPl": "Obsługa kajut",
+          "natural": "room attendant",
+          "forms": "cabin stewards",
+          "collocations": "",
+          "synonyms": "room attendant",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our cabin steward makes towel animals every night.",
+              "pl": "Nasz steward kabinowy co wieczór robi zwierzątka z ręczników.",
+              "focusEn": "cabin steward",
+              "focusPl": "steward kabinowy"
+            },
+            {
+              "en": "Ask the cabin steward for an extra pillow.",
+              "pl": "Poproś stewarda kabinowego o dodatkową poduszkę.",
+              "focusEn": "cabin steward",
+              "focusPl": "stewarda kabinowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "cabin steward",
+            "room attendant",
+            "steward"
+          ],
+          "acceptedTranslations": [
+            "steward kabinowy",
+            "stewardesa kabinowa",
+            "obsługa kajuty"
+          ]
+        },
+        {
+          "id": "cruise-ferry.at-sea",
+          "term": "at sea",
+          "ipa": "/æt ˈsiː/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "na morzu",
+          "definition": "On a ship far from land.",
+          "register": "neutralny",
+          "contextPl": "Dni bez postoju w porcie",
+          "natural": "",
+          "forms": "",
+          "collocations": "a day at sea; be at sea",
+          "synonyms": "",
+          "antonyms": "ashore",
+          "notePl": "„Sea day” to dzień rejsu bez zawijania do portu.",
+          "examples": [
+            {
+              "en": "Tomorrow we're at sea all day, so let's try the spa.",
+              "pl": "Jutro cały dzień jesteśmy na morzu, więc spróbujmy spa.",
+              "focusEn": "at sea",
+              "focusPl": "na morzu"
+            },
+            {
+              "en": "I love the days at sea when there's nothing to do.",
+              "pl": "Uwielbiam dni na morzu, kiedy nie ma nic do roboty.",
+              "focusEn": "at sea",
+              "focusPl": "na morzu"
+            }
+          ],
+          "acceptedAnswers": [
+            "at sea",
+            "sea day"
+          ],
+          "acceptedTranslations": [
+            "na morzu",
+            "na pełnym morzu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cruise-ferry.safety",
+      "namePl": "Bezpieczeństwo na morzu",
+      "scenePl": "Obowiązkowe ćwiczenia ewakuacyjne na wycieczkowcu w pierwszy wieczór rejsu",
+      "entries": [
+        {
+          "id": "cruise-ferry.life-jacket",
+          "term": "life jacket",
+          "ipa": "/ˈlaɪf ˌdʒækət/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kamizelka ratunkowa",
+          "definition": "A vest that keeps you floating in water.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt ratunkowy",
+          "natural": "life vest",
+          "forms": "life jackets",
+          "collocations": "put on a life jacket",
+          "synonyms": "life vest",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your life jacket is in the closet under the extra blanket.",
+              "pl": "Twoja kamizelka ratunkowa jest w szafie pod dodatkowym kocem.",
+              "focusEn": "life jacket",
+              "focusPl": "kamizelka ratunkowa"
+            },
+            {
+              "en": "The crew showed us how to tie the life jacket properly.",
+              "pl": "Załoga pokazała nam, jak prawidłowo zawiązać kamizelkę ratunkową.",
+              "focusEn": "life jacket",
+              "focusPl": "kamizelkę ratunkową"
+            }
+          ],
+          "acceptedAnswers": [
+            "life jacket",
+            "life vest"
+          ],
+          "acceptedTranslations": [
+            "kamizelka ratunkowa"
+          ]
+        },
+        {
+          "id": "cruise-ferry.lifeboat",
+          "term": "lifeboat",
+          "ipa": "/ˈlaɪfboʊt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "szalupa",
+          "definition": "A small boat on a ship used to save people in an emergency.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt ratunkowy",
+          "natural": "",
+          "forms": "lifeboats",
+          "collocations": "get into the lifeboats",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Each lifeboat can hold up to a hundred and fifty people.",
+              "pl": "Każda szalupa mieści do stu pięćdziesięciu osób.",
+              "focusEn": "lifeboat",
+              "focusPl": "szalupa"
+            },
+            {
+              "en": "Our group meets next to lifeboat number twelve.",
+              "pl": "Nasza grupa zbiera się przy szalupie numer dwanaście.",
+              "focusEn": "lifeboat",
+              "focusPl": "szalupie"
+            }
+          ],
+          "acceptedAnswers": [
+            "lifeboat"
+          ],
+          "acceptedTranslations": [
+            "szalupa",
+            "łódź ratunkowa"
+          ]
+        },
+        {
+          "id": "cruise-ferry.muster-drill",
+          "term": "muster drill",
+          "ipa": "/ˈmʌstər ˌdrɪl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "ćwiczenia ewakuacyjne",
+          "definition": "A required safety practice where passengers go to their emergency meeting points.",
+          "register": "specjalistyczny",
+          "contextPl": "Szkolenie bezpieczeństwa",
+          "natural": "safety drill",
+          "forms": "muster drills",
+          "collocations": "attend the muster drill",
+          "synonyms": "safety drill",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The muster drill starts at four, and everyone has to attend.",
+              "pl": "Ćwiczenia ewakuacyjne zaczynają się o czwartej i wszyscy muszą w nich uczestniczyć.",
+              "focusEn": "muster drill",
+              "focusPl": "Ćwiczenia ewakuacyjne"
+            },
+            {
+              "en": "They scanned our cards to check we went to the muster drill.",
+              "pl": "Zeskanowali nasze karty, żeby sprawdzić, czy byliśmy na ćwiczeniach ewakuacyjnych.",
+              "focusEn": "muster drill",
+              "focusPl": "ćwiczeniach ewakuacyjnych"
+            }
+          ],
+          "acceptedAnswers": [
+            "muster drill",
+            "safety drill",
+            "emergency drill"
+          ],
+          "acceptedTranslations": [
+            "ćwiczenia ewakuacyjne",
+            "alarm próbny",
+            "ćwiczenia alarmowe"
+          ]
+        },
+        {
+          "id": "cruise-ferry.muster-station",
+          "term": "muster station",
+          "ipa": "/ˈmʌstər ˌsteɪʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "punkt zbiórki",
+          "definition": "The place on a ship where you must go in an emergency.",
+          "register": "specjalistyczny",
+          "contextPl": "Szkolenie bezpieczeństwa",
+          "natural": "assembly point",
+          "forms": "muster stations",
+          "collocations": "go to your muster station",
+          "synonyms": "assembly point",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your muster station is printed on your cabin card.",
+              "pl": "Twój punkt zbiórki jest wydrukowany na karcie do kajuty.",
+              "focusEn": "muster station",
+              "focusPl": "punkt zbiórki"
+            },
+            {
+              "en": "When the alarm sounds, walk calmly to your muster station.",
+              "pl": "Kiedy rozlegnie się alarm, idź spokojnie do swojego punktu zbiórki.",
+              "focusEn": "muster station",
+              "focusPl": "punktu zbiórki"
+            }
+          ],
+          "acceptedAnswers": [
+            "muster station",
+            "assembly point"
+          ],
+          "acceptedTranslations": [
+            "punkt zbiórki",
+            "miejsce zbiórki"
+          ]
+        },
+        {
+          "id": "cruise-ferry.overboard",
+          "term": "overboard",
+          "ipa": "/ˈoʊvərbɔːrd/",
+          "pos": "przysłówek",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "za burtę",
+          "definition": "Over the side of a ship into the water.",
+          "register": "neutralny",
+          "contextPl": "Wypadnięcie ze statku",
+          "natural": "",
+          "forms": "",
+          "collocations": "fall overboard; man overboard",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Man overboard!” – człowiek za burtą!",
+          "examples": [
+            {
+              "en": "Never sit on the railing, people have fallen overboard that way.",
+              "pl": "Nigdy nie siadaj na relingu, w ten sposób ludzie wypadali za burtę.",
+              "focusEn": "overboard",
+              "focusPl": "za burtę"
+            },
+            {
+              "en": "The crew practices what to do if someone goes overboard.",
+              "pl": "Załoga ćwiczy, co robić, jeśli ktoś wypadnie za burtę.",
+              "focusEn": "overboard",
+              "focusPl": "za burtę"
+            }
+          ],
+          "acceptedAnswers": [
+            "overboard"
+          ],
+          "acceptedTranslations": [
+            "za burtę",
+            "za burtą"
+          ]
+        },
+        {
+          "id": "cruise-ferry.life-ring",
+          "term": "life ring",
+          "ipa": "/ˈlaɪf ˌrɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "koło ratunkowe",
+          "definition": "A ring you throw to a person in the water to keep them floating.",
+          "register": "neutralny",
+          "contextPl": "Sprzęt ratunkowy",
+          "natural": "life buoy",
+          "forms": "life rings",
+          "collocations": "throw a life ring",
+          "synonyms": "life buoy",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a life ring on the wall every few yards.",
+              "pl": "Co kilka jardów na ścianie wisi koło ratunkowe.",
+              "focusEn": "life ring",
+              "focusPl": "koło ratunkowe"
+            },
+            {
+              "en": "The crew member threw a life ring into the water during the demo.",
+              "pl": "Członek załogi rzucił koło ratunkowe do wody podczas pokazu.",
+              "focusEn": "life ring",
+              "focusPl": "koło ratunkowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "life ring",
+            "life buoy",
+            "life preserver"
+          ],
+          "acceptedTranslations": [
+            "koło ratunkowe"
+          ]
+        },
+        {
+          "id": "cruise-ferry.emergency-signal",
+          "term": "emergency signal",
+          "ipa": "/ɪˈmɝːdʒənsi ˌsɪɡnəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "sygnał alarmowy",
+          "definition": "A sound used to tell everyone there is danger.",
+          "register": "neutralny",
+          "contextPl": "Alarmy na statku",
+          "natural": "alarm",
+          "forms": "emergency signals",
+          "collocations": "general emergency signal",
+          "synonyms": "alarm",
+          "antonyms": "",
+          "notePl": "Na statkach to zwykle siedem krótkich i jeden długi sygnał.",
+          "examples": [
+            {
+              "en": "The emergency signal is seven short blasts and one long blast.",
+              "pl": "Sygnał alarmowy to siedem krótkich i jeden długi dźwięk.",
+              "focusEn": "emergency signal",
+              "focusPl": "Sygnał alarmowy"
+            },
+            {
+              "en": "If you hear the emergency signal, don't go back to your cabin.",
+              "pl": "Jeśli usłyszysz sygnał alarmowy, nie wracaj do kajuty.",
+              "focusEn": "emergency signal",
+              "focusPl": "sygnał alarmowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "emergency signal",
+            "alarm"
+          ],
+          "acceptedTranslations": [
+            "sygnał alarmowy",
+            "alarm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cruise-ferry.sea",
+      "namePl": "Morze i choroba morska",
+      "scenePl": "Wieczorna przeprawa promem przy wzburzonym morzu",
+      "entries": [
+        {
+          "id": "cruise-ferry.seasick",
+          "term": "seasick",
+          "ipa": "/ˈsiːsɪk/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "cierpiący na chorobę morską",
+          "definition": "Feeling sick because of the movement of a boat.",
+          "register": "neutralny",
+          "contextPl": "Złe samopoczucie na statku",
+          "natural": "",
+          "forms": "",
+          "collocations": "get seasick; feel seasick",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I always get seasick, so I sit in the middle of the ferry.",
+              "pl": "Zawsze dostaję choroby morskiej, więc siadam na środku promu.",
+              "focusEn": "seasick",
+              "focusPl": "dostaję choroby morskiej"
+            },
+            {
+              "en": "Half the passengers were seasick before we even left the harbor.",
+              "pl": "Połowa pasażerów miała chorobę morską, zanim jeszcze wypłynęliśmy z portu.",
+              "focusEn": "seasick",
+              "focusPl": "miała chorobę morską"
+            }
+          ],
+          "acceptedAnswers": [
+            "seasick"
+          ],
+          "acceptedTranslations": [
+            "cierpiący na chorobę morską",
+            "mieć chorobę morską",
+            "mieć mdłości"
+          ]
+        },
+        {
+          "id": "cruise-ferry.seasickness",
+          "term": "seasickness",
+          "ipa": "/ˈsiːsɪknəs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "choroba morska",
+          "definition": "Feeling sick because of the movement of a ship.",
+          "register": "neutralny",
+          "contextPl": "Złe samopoczucie na statku",
+          "natural": "motion sickness",
+          "forms": "",
+          "collocations": "seasickness pills; suffer from seasickness",
+          "synonyms": "motion sickness",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The shop at the front sells pills for seasickness.",
+              "pl": "Sklep z przodu sprzedaje tabletki na chorobę morską.",
+              "focusEn": "seasickness",
+              "focusPl": "chorobę morską"
+            },
+            {
+              "en": "Looking at the horizon helps with seasickness.",
+              "pl": "Patrzenie na horyzont pomaga na chorobę morską.",
+              "focusEn": "seasickness",
+              "focusPl": "chorobę morską"
+            }
+          ],
+          "acceptedAnswers": [
+            "seasickness",
+            "motion sickness"
+          ],
+          "acceptedTranslations": [
+            "choroba morska"
+          ]
+        },
+        {
+          "id": "cruise-ferry.rough",
+          "term": "rough",
+          "ipa": "/rʌf/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wzburzony",
+          "definition": "With big waves and strong wind.",
+          "register": "neutralny",
+          "contextPl": "Stan morza",
+          "natural": "choppy",
+          "forms": "rougher; roughest",
+          "collocations": "rough sea; rough crossing",
+          "synonyms": "choppy",
+          "antonyms": "calm",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The sea is too rough tonight, so the café is closed.",
+              "pl": "Morze jest dziś zbyt wzburzone, więc kawiarnia jest zamknięta.",
+              "focusEn": "rough",
+              "focusPl": "wzburzone"
+            },
+            {
+              "en": "It was the roughest crossing I've ever had.",
+              "pl": "To była najbardziej burzliwa przeprawa, jaką kiedykolwiek przeżyłem.",
+              "focusEn": "roughest",
+              "focusPl": "burzliwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "rough",
+            "choppy"
+          ],
+          "acceptedTranslations": [
+            "wzburzony",
+            "niespokojny"
+          ]
+        },
+        {
+          "id": "cruise-ferry.calm",
+          "term": "calm",
+          "ipa": "/kɑːm/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "spokojny",
+          "definition": "Without big waves.",
+          "register": "neutralny",
+          "contextPl": "Stan morza",
+          "natural": "still",
+          "forms": "calmer; calmest",
+          "collocations": "calm sea; calm water",
+          "synonyms": "smooth",
+          "antonyms": "rough",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The captain says the sea will be calm in an hour.",
+              "pl": "Kapitan mówi, że za godzinę morze będzie spokojne.",
+              "focusEn": "calm",
+              "focusPl": "spokojne"
+            },
+            {
+              "en": "On the way out, the water was totally calm.",
+              "pl": "W tamtą stronę woda była zupełnie spokojna.",
+              "focusEn": "calm",
+              "focusPl": "spokojna"
+            }
+          ],
+          "acceptedAnswers": [
+            "calm"
+          ],
+          "acceptedTranslations": [
+            "spokojny",
+            "gładki"
+          ]
+        },
+        {
+          "id": "cruise-ferry.waves",
+          "term": "waves",
+          "ipa": "/weɪvz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "fale",
+          "definition": "Lines of moving water on the surface of the sea.",
+          "register": "neutralny",
+          "contextPl": "Ruch wody",
+          "natural": "",
+          "forms": "wave (lp.)",
+          "collocations": "big waves; waves crash",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The waves are hitting the windows on the lower deck.",
+              "pl": "Fale uderzają w okna na dolnym pokładzie.",
+              "focusEn": "waves",
+              "focusPl": "Fale"
+            },
+            {
+              "en": "I've never seen waves this big from a ferry.",
+              "pl": "Nigdy nie widziałem z promu tak dużych fal.",
+              "focusEn": "waves",
+              "focusPl": "fal"
+            }
+          ],
+          "acceptedAnswers": [
+            "waves",
+            "wave"
+          ],
+          "acceptedTranslations": [
+            "fale",
+            "fala"
+          ]
+        },
+        {
+          "id": "cruise-ferry.sway",
+          "term": "sway",
+          "ipa": "/sweɪ/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kołysać się",
+          "definition": "To move slowly from side to side.",
+          "register": "neutralny",
+          "contextPl": "Ruch statku",
+          "natural": "rock",
+          "forms": "swayed; swaying",
+          "collocations": "sway from side to side",
+          "synonyms": "rock; roll",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The lamps above the bar started to sway.",
+              "pl": "Lampy nad barem zaczęły się kołysać.",
+              "focusEn": "sway",
+              "focusPl": "się kołysać"
+            },
+            {
+              "en": "I felt the ship swaying even after we got off.",
+              "pl": "Czułem, jak statek się kołysze, nawet po zejściu na ląd.",
+              "focusEn": "swaying",
+              "focusPl": "się kołysze"
+            }
+          ],
+          "acceptedAnswers": [
+            "sway",
+            "rock"
+          ],
+          "acceptedTranslations": [
+            "kołysać się",
+            "chwiać się",
+            "bujać się"
+          ]
+        },
+        {
+          "id": "cruise-ferry.anchor",
+          "term": "anchor",
+          "ipa": "/ˈæŋkər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kotwica",
+          "definition": "A heavy metal object dropped into the water to keep a ship in one place.",
+          "register": "neutralny",
+          "contextPl": "Postój statku",
+          "natural": "",
+          "forms": "anchors",
+          "collocations": "drop anchor; lift the anchor; at anchor",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The ship dropped anchor outside the bay because the port is too small.",
+              "pl": "Statek rzucił kotwicę przed zatoką, bo port jest za mały.",
+              "focusEn": "anchor",
+              "focusPl": "kotwicę"
+            },
+            {
+              "en": "You can hear the anchor chain from the lower cabins.",
+              "pl": "Z dolnych kajut słychać łańcuch kotwicy.",
+              "focusEn": "anchor",
+              "focusPl": "kotwicy"
+            }
+          ],
+          "acceptedAnswers": [
+            "anchor"
+          ],
+          "acceptedTranslations": [
+            "kotwica"
+          ]
+        },
+        {
+          "id": "cruise-ferry.horizon",
+          "term": "horizon",
+          "ipa": "/həˈraɪzən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "horyzont",
+          "definition": "The line where the sea seems to meet the sky.",
+          "register": "neutralny",
+          "contextPl": "Widok z pokładu",
+          "natural": "",
+          "forms": "",
+          "collocations": "on the horizon; look at the horizon",
+          "synonyms": "skyline",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Keep your eyes on the horizon, it'll help your stomach.",
+              "pl": "Patrz na horyzont, to pomoże twojemu żołądkowi.",
+              "focusEn": "horizon",
+              "focusPl": "horyzont"
+            },
+            {
+              "en": "We saw a storm on the horizon about an hour before it hit.",
+              "pl": "Widzieliśmy burzę na horyzoncie mniej więcej godzinę, zanim nas dopadła.",
+              "focusEn": "horizon",
+              "focusPl": "horyzoncie"
+            }
+          ],
+          "acceptedAnswers": [
+            "horizon"
+          ],
+          "acceptedTranslations": [
+            "horyzont"
+          ]
+        },
+        {
+          "id": "cruise-ferry.choppy",
+          "term": "choppy",
+          "ipa": "/ˈtʃɑːpi/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "pofalowany",
+          "definition": "With many small, rough waves.",
+          "register": "neutralny",
+          "contextPl": "Stan morza",
+          "natural": "rough",
+          "forms": "choppier; choppiest",
+          "collocations": "choppy water; choppy sea",
+          "synonyms": "rough",
+          "antonyms": "calm; smooth",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The water gets choppy once we leave the bay.",
+              "pl": "Woda robi się pofalowana, gdy tylko wypływamy z zatoki.",
+              "focusEn": "choppy",
+              "focusPl": "pofalowana"
+            },
+            {
+              "en": "It's a short trip, but choppy water makes it feel long.",
+              "pl": "To krótka przeprawa, ale przez niespokojną wodę wydaje się długa.",
+              "focusEn": "choppy",
+              "focusPl": "niespokojną"
+            }
+          ],
+          "acceptedAnswers": [
+            "choppy",
+            "rough"
+          ],
+          "acceptedTranslations": [
+            "pofalowany",
+            "wzburzony",
+            "niespokojny"
+          ]
+        },
+        {
+          "id": "cruise-ferry.knot",
+          "term": "knot",
+          "ipa": "/nɑːt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "węzeł",
+          "definition": "A unit for measuring the speed of ships, about 1.15 miles per hour.",
+          "register": "specjalistyczny",
+          "contextPl": "Prędkość statków",
+          "natural": "",
+          "forms": "knots",
+          "collocations": "twenty knots; at full speed",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The ferry is traveling at about twenty knots.",
+              "pl": "Prom płynie z prędkością około dwudziestu węzłów.",
+              "focusEn": "knots",
+              "focusPl": "węzłów"
+            },
+            {
+              "en": "The screen in the lounge shows our speed in knots.",
+              "pl": "Ekran w salonie pokazuje naszą prędkość w węzłach.",
+              "focusEn": "knots",
+              "focusPl": "węzłach"
+            }
+          ],
+          "acceptedAnswers": [
+            "knot"
+          ],
+          "acceptedTranslations": [
+            "węzeł"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cruise-ferry.excursions",
+      "namePl": "Wycieczki na ląd",
+      "scenePl": "Wycieczkowiec zawija do portu na wyspie; pasażerowie planują dzień na lądzie",
+      "entries": [
+        {
+          "id": "cruise-ferry.shore-excursion",
+          "term": "shore excursion",
+          "ipa": "/ˈʃɔːr ɪkˌskɝːʒən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wycieczka na ląd",
+          "definition": "A trip on land organized for cruise passengers when the ship is in port.",
+          "register": "neutralny",
+          "contextPl": "Zwiedzanie podczas postoju",
+          "natural": "excursion",
+          "forms": "shore excursions",
+          "collocations": "book a shore excursion",
+          "synonyms": "tour",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We booked a shore excursion to a waterfall in the rainforest.",
+              "pl": "Zarezerwowaliśmy wycieczkę na ląd do wodospadu w lesie deszczowym.",
+              "focusEn": "shore excursion",
+              "focusPl": "wycieczkę na ląd"
+            },
+            {
+              "en": "Shore excursions from the ship are expensive, but the ship waits for you.",
+              "pl": "Wycieczki na ląd organizowane przez statek są drogie, ale statek na ciebie czeka.",
+              "focusEn": "Shore excursions",
+              "focusPl": "Wycieczki na ląd"
+            }
+          ],
+          "acceptedAnswers": [
+            "shore excursion",
+            "excursion"
+          ],
+          "acceptedTranslations": [
+            "wycieczka na ląd",
+            "wycieczka fakultatywna"
+          ]
+        },
+        {
+          "id": "cruise-ferry.port-of-call",
+          "term": "port of call",
+          "ipa": "/ˌpɔːrt əv ˈkɔːl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "port docelowy",
+          "definition": "A place where a ship stops during a cruise.",
+          "register": "specjalistyczny",
+          "contextPl": "Postoje podczas rejsu",
+          "natural": "stop",
+          "forms": "ports of call",
+          "collocations": "",
+          "synonyms": "stop",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our first port of call is a small island with pink beaches.",
+              "pl": "Naszym pierwszym portem postoju jest mała wyspa z różowymi plażami.",
+              "focusEn": "port of call",
+              "focusPl": "portem postoju"
+            },
+            {
+              "en": "This port of call is famous for its old town and seafood.",
+              "pl": "Ten port docelowy słynie ze starego miasta i owoców morza.",
+              "focusEn": "port of call",
+              "focusPl": "port docelowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "port of call",
+            "stop"
+          ],
+          "acceptedTranslations": [
+            "port docelowy",
+            "port postoju",
+            "przystanek rejsu"
+          ]
+        },
+        {
+          "id": "cruise-ferry.go-ashore",
+          "term": "go ashore",
+          "ipa": "/ˌɡoʊ əˈʃɔːr/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zejść na ląd",
+          "definition": "To leave a ship and go onto land.",
+          "register": "neutralny",
+          "contextPl": "Wyjście ze statku w porcie",
+          "natural": "get off",
+          "forms": "went – gone",
+          "collocations": "",
+          "synonyms": "disembark",
+          "antonyms": "stay aboard",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll go ashore right after breakfast to beat the crowds.",
+              "pl": "Zejdziemy na ląd zaraz po śniadaniu, żeby uprzedzić tłumy.",
+              "focusEn": "go ashore",
+              "focusPl": "Zejdziemy na ląd"
+            },
+            {
+              "en": "Some passengers didn't go ashore at all and stayed by the pool.",
+              "pl": "Niektórzy pasażerowie w ogóle nie zeszli na ląd i zostali przy basenie.",
+              "focusEn": "go ashore",
+              "focusPl": "zeszli na ląd"
+            }
+          ],
+          "acceptedAnswers": [
+            "go ashore"
+          ],
+          "acceptedTranslations": [
+            "zejść na ląd",
+            "schodzić na ląd"
+          ]
+        },
+        {
+          "id": "cruise-ferry.tender",
+          "term": "tender",
+          "ipa": "/ˈtendər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "łódź motorowa",
+          "definition": "A small boat that carries passengers from a ship to the shore.",
+          "register": "specjalistyczny",
+          "contextPl": "Transport z statku na ląd",
+          "natural": "shuttle boat",
+          "forms": "tenders",
+          "collocations": "take the tender; tender port",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The port is too small, so we take a tender to the beach.",
+              "pl": "Port jest za mały, więc na plażę płyniemy łodzią motorową.",
+              "focusEn": "tender",
+              "focusPl": "łodzią motorową"
+            },
+            {
+              "en": "The last tender back to the ship leaves at five thirty.",
+              "pl": "Ostatnia łódź motorowa na statek odpływa o wpół do szóstej.",
+              "focusEn": "tender",
+              "focusPl": "łódź motorowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "tender"
+          ],
+          "acceptedTranslations": [
+            "łódź motorowa",
+            "łódź transportowa",
+            "tender"
+          ]
+        },
+        {
+          "id": "cruise-ferry.all-aboard-time",
+          "term": "all-aboard time",
+          "ipa": "/ˌɔːl əˈbɔːrd ˌtaɪm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "godzina powrotu na pokład",
+          "definition": "The latest time passengers must be back on the ship.",
+          "register": "neutralny",
+          "contextPl": "Powrót na statek",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zwykle pół godziny przed odpłynięciem.",
+          "examples": [
+            {
+              "en": "All-aboard time is four thirty, so don't go too far.",
+              "pl": "Godzina powrotu na pokład to wpół do piątej, więc nie oddalajcie się za bardzo.",
+              "focusEn": "All-aboard time",
+              "focusPl": "Godzina powrotu na pokład"
+            },
+            {
+              "en": "A couple missed the all-aboard time and watched the ship leave.",
+              "pl": "Jedna para spóźniła się na godzinę powrotu na pokład i patrzyła, jak statek odpływa.",
+              "focusEn": "all-aboard time",
+              "focusPl": "godzinę powrotu na pokład"
+            }
+          ],
+          "acceptedAnswers": [
+            "all-aboard time"
+          ],
+          "acceptedTranslations": [
+            "godzina powrotu na pokład",
+            "godzina zaokrętowania"
+          ]
+        },
+        {
+          "id": "cruise-ferry.cruise-line",
+          "term": "cruise line",
+          "ipa": "/ˈkruːz ˌlaɪn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "armator wycieczkowy",
+          "definition": "A company that operates cruise ships.",
+          "register": "neutralny",
+          "contextPl": "Firmy organizujące rejsy",
+          "natural": "",
+          "forms": "cruise lines",
+          "collocations": "",
+          "synonyms": "cruise company",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cruise line changed our route because of a storm.",
+              "pl": "Armator zmienił naszą trasę z powodu sztormu.",
+              "focusEn": "cruise line",
+              "focusPl": "Armator"
+            },
+            {
+              "en": "Each cruise line has different rules about drinks you can bring.",
+              "pl": "Każdy armator wycieczkowy ma inne zasady dotyczące napojów, które można wnieść.",
+              "focusEn": "cruise line",
+              "focusPl": "armator wycieczkowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "cruise line",
+            "cruise company"
+          ],
+          "acceptedTranslations": [
+            "armator wycieczkowy",
+            "linia wycieczkowa",
+            "firma rejsowa"
+          ]
+        },
+        {
+          "id": "cruise-ferry.gratuities",
+          "term": "gratuities",
+          "ipa": "/ɡrəˈtuːətiz/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "napiwki dla obsługi",
+          "definition": "Money given to staff as thanks, often added automatically on cruises.",
+          "register": "formalny",
+          "contextPl": "Napiwki na rejsach",
+          "natural": "tips",
+          "forms": "",
+          "collocations": "daily gratuities; prepaid gratuities",
+          "synonyms": "tips",
+          "antonyms": "",
+          "notePl": "Na rejsach często doliczane automatycznie za każdy dzień.",
+          "examples": [
+            {
+              "en": "The gratuities were added to our bill automatically.",
+              "pl": "Napiwki dla obsługi zostały automatycznie doliczone do naszego rachunku.",
+              "focusEn": "gratuities",
+              "focusPl": "Napiwki dla obsługi"
+            },
+            {
+              "en": "Are gratuities included in the price of the shore excursion?",
+              "pl": "Czy napiwki są wliczone w cenę wycieczki na ląd?",
+              "focusEn": "gratuities",
+              "focusPl": "napiwki"
+            }
+          ],
+          "acceptedAnswers": [
+            "gratuities",
+            "tips"
+          ],
+          "acceptedTranslations": [
+            "napiwki dla obsługi",
+            "napiwki"
+          ]
+        },
+        {
+          "id": "cruise-ferry.souvenir",
+          "term": "souvenir",
+          "ipa": "/ˌsuːvəˈnɪr/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "pamiątka",
+          "definition": "Something you buy to remember a place.",
+          "register": "neutralny",
+          "contextPl": "Zakupy w porcie",
+          "natural": "",
+          "forms": "souvenirs",
+          "collocations": "buy a souvenir; souvenir shop",
+          "synonyms": "keepsake",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Every shop near the port sells the same souvenirs.",
+              "pl": "Każdy sklep przy porcie sprzedaje te same pamiątki.",
+              "focusEn": "souvenirs",
+              "focusPl": "pamiątki"
+            },
+            {
+              "en": "I bought a little wooden boat as a souvenir for my son.",
+              "pl": "Kupiłem synowi małą drewnianą łódkę na pamiątkę.",
+              "focusEn": "souvenir",
+              "focusPl": "pamiątkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "souvenir"
+          ],
+          "acceptedTranslations": [
+            "pamiątka",
+            "suwenir"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cruise-ferry.idioms",
+      "namePl": "Idiomy morskie",
+      "scenePl": "Rozmowa przy kolacji w restauracji wycieczkowca pod koniec rejsu",
+      "entries": [
+        {
+          "id": "cruise-ferry.in-the-same-boat",
+          "term": "in the same boat",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "very_common",
+          "translation": "na tym samym wózku",
+          "definition": "In the same difficult situation as other people.",
+          "register": "potoczny",
+          "contextPl": "Wspólna trudna sytuacja",
+          "natural": "",
+          "forms": "",
+          "collocations": "be in the same boat",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Polski obraz to „wózek”, angielski – „łódź”.",
+          "examples": [
+            {
+              "en": "Don't worry about missing the excursion, we're all in the same boat.",
+              "pl": "Nie martw się, że przepadła wycieczka, wszyscy jedziemy na tym samym wózku.",
+              "focusEn": "in the same boat",
+              "focusPl": "na tym samym wózku"
+            },
+            {
+              "en": "Everyone at our table was seasick, so we were in the same boat.",
+              "pl": "Wszyscy przy naszym stole mieli chorobę morską, więc byliśmy w tej samej sytuacji.",
+              "focusEn": "in the same boat",
+              "focusPl": "w tej samej sytuacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "in the same boat"
+          ],
+          "acceptedTranslations": [
+            "na tym samym wózku",
+            "w tej samej sytuacji"
+          ]
+        },
+        {
+          "id": "cruise-ferry.rock-the-boat",
+          "term": "rock the boat",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wywoływać zamieszanie",
+          "definition": "To cause problems by changing things or complaining.",
+          "register": "potoczny",
+          "contextPl": "Unikanie konfliktu",
+          "natural": "make waves",
+          "forms": "rocked – rocked",
+          "collocations": "don't rock the boat",
+          "synonyms": "make waves",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The service is a bit slow, but I don't want to rock the boat.",
+              "pl": "Obsługa jest trochę powolna, ale nie chcę robić zamieszania.",
+              "focusEn": "rock the boat",
+              "focusPl": "robić zamieszania"
+            },
+            {
+              "en": "He always rocks the boat at family dinners.",
+              "pl": "Zawsze wywołuje zamieszanie na rodzinnych kolacjach.",
+              "focusEn": "rocks the boat",
+              "focusPl": "wywołuje zamieszanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "rock the boat"
+          ],
+          "acceptedTranslations": [
+            "wywoływać zamieszanie",
+            "mącić",
+            "robić zamieszanie"
+          ]
+        },
+        {
+          "id": "cruise-ferry.miss-the-boat",
+          "term": "miss the boat",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przegapić okazję",
+          "definition": "To lose a chance because you were too slow.",
+          "register": "potoczny",
+          "contextPl": "Stracone okazje",
+          "natural": "miss out",
+          "forms": "missed – missed",
+          "collocations": "",
+          "synonyms": "miss out",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cheap cabins sold out, so we missed the boat on those.",
+              "pl": "Tanie kajuty się wyprzedały, więc przegapiliśmy okazję.",
+              "focusEn": "missed the boat",
+              "focusPl": "przegapiliśmy okazję"
+            },
+            {
+              "en": "Book the next cruise now, or you'll miss the boat.",
+              "pl": "Zarezerwuj następny rejs teraz, bo inaczej przegapisz okazję.",
+              "focusEn": "miss the boat",
+              "focusPl": "przegapisz okazję"
+            }
+          ],
+          "acceptedAnswers": [
+            "miss the boat",
+            "miss out"
+          ],
+          "acceptedTranslations": [
+            "przegapić okazję",
+            "spóźnić się z decyzją"
+          ]
+        },
+        {
+          "id": "cruise-ferry.smooth-sailing",
+          "term": "smooth sailing",
+          "ipa": "/ˌsmuːð ˈseɪlɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bułka z masłem",
+          "definition": "Easy progress without problems.",
+          "register": "potoczny",
+          "contextPl": "Gdy wszystko idzie gładko",
+          "natural": "plain sailing",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W BrE częściej „plain sailing”.",
+          "examples": [
+            {
+              "en": "After the first rough night, it was smooth sailing all week.",
+              "pl": "Po pierwszej trudnej nocy przez cały tydzień szło gładko.",
+              "focusEn": "smooth sailing",
+              "focusPl": "gładko"
+            },
+            {
+              "en": "Once you've done the paperwork, it's smooth sailing.",
+              "pl": "Kiedy załatwisz formalności, dalej to już bułka z masłem.",
+              "focusEn": "smooth sailing",
+              "focusPl": "bułka z masłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "smooth sailing",
+            "plain sailing"
+          ],
+          "acceptedTranslations": [
+            "bułka z masłem",
+            "gładko",
+            "bez problemów"
+          ]
+        },
+        {
+          "id": "cruise-ferry.all-hands-on-deck",
+          "term": "all hands on deck",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wszyscy do pomocy",
+          "definition": "Used when everyone needs to help with something.",
+          "register": "potoczny",
+          "contextPl": "Mobilizacja wszystkich",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "When the kids' bags got lost, it was all hands on deck.",
+              "pl": "Kiedy zgubiły się torby dzieci, wszyscy ruszyli do pomocy.",
+              "focusEn": "all hands on deck",
+              "focusPl": "wszyscy ruszyli do pomocy"
+            },
+            {
+              "en": "Grandma's birthday party is tonight, so it's all hands on deck.",
+              "pl": "Dziś wieczorem są urodziny babci, więc wszyscy do pomocy.",
+              "focusEn": "all hands on deck",
+              "focusPl": "wszyscy do pomocy"
+            }
+          ],
+          "acceptedAnswers": [
+            "all hands on deck"
+          ],
+          "acceptedTranslations": [
+            "wszyscy do pomocy",
+            "wszystkie ręce na pokład"
+          ]
+        },
+        {
+          "id": "cruise-ferry.go-overboard",
+          "term": "go overboard",
+          "ipa": "/ˌɡoʊ ˈoʊvərbɔːrd/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przesadzić",
+          "definition": "To do too much of something.",
+          "register": "potoczny",
+          "contextPl": "Przesada",
+          "natural": "overdo it",
+          "forms": "went – gone",
+          "collocations": "go overboard with",
+          "synonyms": "overdo it",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I went overboard at the dessert buffet last night.",
+              "pl": "Wczoraj wieczorem przesadziłem przy bufecie z deserami.",
+              "focusEn": "went overboard",
+              "focusPl": "przesadziłem"
+            },
+            {
+              "en": "Let's not go overboard with souvenirs this time.",
+              "pl": "Tym razem nie przesadzajmy z pamiątkami.",
+              "focusEn": "go overboard",
+              "focusPl": "przesadzajmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "go overboard",
+            "overdo it"
+          ],
+          "acceptedTranslations": [
+            "przesadzić",
+            "przesadzać",
+            "przeholować"
+          ]
+        },
+        {
+          "id": "cruise-ferry.jump-ship",
+          "term": "jump ship",
+          "ipa": "/ˌdʒʌmp ˈʃɪp/",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zmienić obóz",
+          "definition": "To leave a group or company suddenly, especially for a competitor.",
+          "register": "potoczny",
+          "contextPl": "Odejście do konkurencji",
+          "natural": "leave",
+          "forms": "jumped – jumped",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "After this cruise, we might jump ship to a different cruise line.",
+              "pl": "Po tym rejsie może przejdziemy do konkurencji i wybierzemy innego armatora.",
+              "focusEn": "jump ship",
+              "focusPl": "przejdziemy do konkurencji"
+            },
+            {
+              "en": "Our waiter said half the crew jumped ship to a new company last year.",
+              "pl": "Nasz kelner powiedział, że połowa załogi w zeszłym roku przeszła do konkurencji.",
+              "focusEn": "jumped ship",
+              "focusPl": "przeszła do konkurencji"
+            }
+          ],
+          "acceptedAnswers": [
+            "jump ship"
+          ],
+          "acceptedTranslations": [
+            "zmienić obóz",
+            "uciec z tonącego statku",
+            "przejść do konkurencji"
+          ]
+        }
+      ]
+    }
+  ]
+}

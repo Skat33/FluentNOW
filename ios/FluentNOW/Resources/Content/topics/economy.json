@@ -1,0 +1,2550 @@
+{
+  "schemaVersion": 1,
+  "id": "economy",
+  "namePl": "Gospodarka",
+  "nameEn": "Economy",
+  "group": "society",
+  "symbol": "chart.line.uptrend.xyaxis",
+  "summaryPl": "Wzrost i recesja, ceny i inflacja, rynek pracy i bezrobocie, giełda, handel międzynarodowy i dług publiczny.",
+  "aliases": [
+    "gospodarka",
+    "ekonomia",
+    "inflacja",
+    "recesja",
+    "bezrobocie",
+    "rynek",
+    "ceny",
+    "PKB",
+    "economy",
+    "inflation",
+    "recession",
+    "unemployment"
+  ],
+  "categories": [
+    {
+      "id": "economy.basics",
+      "namePl": "Stan gospodarki",
+      "scenePl": "Para ogląda po pracy wieczorny serwis gospodarczy i komentuje wiadomości",
+      "entries": [
+        {
+          "id": "economy.economy",
+          "term": "economy",
+          "ipa": "/ɪˈkɑːnəmi/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "gospodarka",
+          "definition": "The system of money, trade, and industry in a country.",
+          "register": "neutralny",
+          "contextPl": "Kondycja kraju",
+          "natural": "",
+          "forms": "economies",
+          "collocations": "a strong economy; the global economy; the economy is growing",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W innym znaczeniu: klasa ekonomiczna w samolocie.",
+          "examples": [
+            {
+              "en": "The anchor says the economy grew faster than expected this year.",
+              "pl": "Prezenter mówi, że gospodarka rosła w tym roku szybciej, niż oczekiwano.",
+              "focusEn": "economy",
+              "focusPl": "gospodarka"
+            },
+            {
+              "en": "Every time they talk about the economy, my husband turns it up.",
+              "pl": "Za każdym razem, gdy mówią o gospodarce, mąż podgłaśnia telewizor.",
+              "focusEn": "economy",
+              "focusPl": "gospodarce"
+            }
+          ],
+          "acceptedAnswers": [
+            "economy",
+            "the economy"
+          ],
+          "acceptedTranslations": [
+            "gospodarka",
+            "ekonomia"
+          ]
+        },
+        {
+          "id": "economy.economic",
+          "term": "economic",
+          "ipa": "/ˌekəˈnɑːmɪk/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gospodarczy",
+          "definition": "Connected with the economy of a country or region.",
+          "register": "neutralny",
+          "contextPl": "Sprawy gospodarcze",
+          "natural": "",
+          "forms": "",
+          "collocations": "economic growth; economic crisis; economic news",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "„Economic” – gospodarczy; „economical” – oszczędny.",
+          "examples": [
+            {
+              "en": "Tonight's economic news is mostly about gas prices.",
+              "pl": "Dzisiejsze wiadomości gospodarcze dotyczą głównie cen benzyny.",
+              "focusEn": "economic",
+              "focusPl": "gospodarcze"
+            },
+            {
+              "en": "The reporter called it the best economic year since 2015.",
+              "pl": "Reporter nazwał go najlepszym rokiem gospodarczym od 2015 roku.",
+              "focusEn": "economic",
+              "focusPl": "gospodarczym"
+            }
+          ],
+          "acceptedAnswers": [
+            "economic"
+          ],
+          "acceptedTranslations": [
+            "gospodarczy",
+            "ekonomiczny"
+          ]
+        },
+        {
+          "id": "economy.recession",
+          "term": "recession",
+          "ipa": "/rɪˈseʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "recesja",
+          "definition": "A period when the economy gets smaller and many people lose jobs.",
+          "register": "neutralny",
+          "contextPl": "Spowolnienie i kryzys",
+          "natural": "downturn",
+          "forms": "recessions",
+          "collocations": "go into a recession; a deep recession; fear of a recession",
+          "synonyms": "downturn",
+          "antonyms": "boom",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Experts on the show disagree about whether a recession is coming.",
+              "pl": "Eksperci w programie nie zgadzają się, czy nadchodzi recesja.",
+              "focusEn": "recession",
+              "focusPl": "recesja"
+            },
+            {
+              "en": "We both lost our jobs in the last recession, so this makes me nervous.",
+              "pl": "W ostatniej recesji oboje straciliśmy pracę, więc to mnie niepokoi.",
+              "focusEn": "recession",
+              "focusPl": "recesji"
+            }
+          ],
+          "acceptedAnswers": [
+            "recession",
+            "downturn"
+          ],
+          "acceptedTranslations": [
+            "recesja",
+            "kryzys gospodarczy"
+          ]
+        },
+        {
+          "id": "economy.economic-growth",
+          "term": "economic growth",
+          "ipa": "/ˌekəˌnɑːmɪk ˈɡroʊθ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wzrost gospodarczy",
+          "definition": "An increase in the amount of goods and services a country produces.",
+          "register": "neutralny",
+          "contextPl": "Rozwój gospodarki",
+          "natural": "",
+          "forms": "",
+          "collocations": "strong economic growth; slow economic growth",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Economic growth slowed down this quarter, the anchor said.",
+              "pl": "Prezenter powiedział, że w tym kwartale wzrost gospodarczy zwolnił.",
+              "focusEn": "Economic growth",
+              "focusPl": "wzrost gospodarczy"
+            },
+            {
+              "en": "Without economic growth, it's hard to create new jobs.",
+              "pl": "Bez wzrostu gospodarczego trudno tworzyć nowe miejsca pracy.",
+              "focusEn": "economic growth",
+              "focusPl": "wzrostu gospodarczego"
+            }
+          ],
+          "acceptedAnswers": [
+            "economic growth",
+            "growth"
+          ],
+          "acceptedTranslations": [
+            "wzrost gospodarczy"
+          ]
+        },
+        {
+          "id": "economy.gdp",
+          "term": "GDP",
+          "ipa": "/ˌdʒiː diː ˈpiː/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "PKB",
+          "definition": "Gross domestic product: the total value of everything a country produces in a year.",
+          "register": "specjalistyczny",
+          "contextPl": "Miara wielkości gospodarki",
+          "natural": "",
+          "forms": "",
+          "collocations": "GDP growth; GDP per capita",
+          "synonyms": "gross domestic product",
+          "antonyms": "",
+          "notePl": "Pełna nazwa: gross domestic product.",
+          "examples": [
+            {
+              "en": "GDP rose by two percent last year, according to the report.",
+              "pl": "Według raportu PKB wzrósł w zeszłym roku o dwa procent.",
+              "focusEn": "GDP",
+              "focusPl": "PKB"
+            },
+            {
+              "en": "My husband asked what GDP actually means for regular people.",
+              "pl": "Mąż zapytał, co tak naprawdę PKB oznacza dla zwykłych ludzi.",
+              "focusEn": "GDP",
+              "focusPl": "PKB"
+            }
+          ],
+          "acceptedAnswers": [
+            "GDP",
+            "gross domestic product"
+          ],
+          "acceptedTranslations": [
+            "PKB",
+            "produkt krajowy brutto"
+          ]
+        },
+        {
+          "id": "economy.economist",
+          "term": "economist",
+          "ipa": "/ɪˈkɑːnəmɪst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ekonomista",
+          "definition": "An expert who studies how money, trade, and industry work.",
+          "register": "neutralny",
+          "contextPl": "Eksperci od gospodarki",
+          "natural": "",
+          "forms": "economists",
+          "collocations": "a leading economist; economists predict",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The economist on the show thinks prices will fall next year.",
+              "pl": "Ekonomistka w programie uważa, że w przyszłym roku ceny spadną.",
+              "focusEn": "economist",
+              "focusPl": "Ekonomistka"
+            },
+            {
+              "en": "Ask three economists, and you'll get four opinions, my husband joked.",
+              "pl": "Mąż zażartował, że jak zapytasz trzech ekonomistów, dostaniesz cztery opinie.",
+              "focusEn": "economists",
+              "focusPl": "ekonomistów"
+            }
+          ],
+          "acceptedAnswers": [
+            "economist",
+            "economists"
+          ],
+          "acceptedTranslations": [
+            "ekonomista",
+            "ekonomistka"
+          ]
+        },
+        {
+          "id": "economy.boom",
+          "term": "boom",
+          "ipa": "/buːm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "boom",
+          "definition": "A period of fast economic growth.",
+          "register": "neutralny",
+          "contextPl": "Szybki rozwój",
+          "natural": "",
+          "forms": "booms",
+          "collocations": "economic boom; housing boom; tech boom",
+          "synonyms": "upturn",
+          "antonyms": "recession",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our city had a building boom when the factory opened.",
+              "pl": "Kiedy otwarto fabrykę, nasze miasto przeżyło boom budowlany.",
+              "focusEn": "boom",
+              "focusPl": "boom"
+            },
+            {
+              "en": "The reporter said the boom in tech jobs is ending.",
+              "pl": "Reporter powiedział, że boom na stanowiska w branży technologicznej się kończy.",
+              "focusEn": "boom",
+              "focusPl": "boom"
+            }
+          ],
+          "acceptedAnswers": [
+            "boom"
+          ],
+          "acceptedTranslations": [
+            "boom",
+            "koniunktura",
+            "rozkwit"
+          ]
+        },
+        {
+          "id": "economy.downturn",
+          "term": "downturn",
+          "ipa": "/ˈdaʊntɝːn/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "spowolnienie gospodarcze",
+          "definition": "A drop in economic activity.",
+          "register": "formalny",
+          "contextPl": "Pogorszenie koniunktury",
+          "natural": "slowdown",
+          "forms": "downturns",
+          "collocations": "economic downturn; a sharp downturn",
+          "synonyms": "slowdown; recession",
+          "antonyms": "upturn",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Restaurants are usually the first to feel a downturn.",
+              "pl": "Restauracje zwykle najwcześniej odczuwają spowolnienie gospodarcze.",
+              "focusEn": "downturn",
+              "focusPl": "spowolnienie gospodarcze"
+            },
+            {
+              "en": "The company blamed the layoffs on the economic downturn.",
+              "pl": "Firma tłumaczyła zwolnienia spowolnieniem gospodarczym.",
+              "focusEn": "downturn",
+              "focusPl": "spowolnieniem gospodarczym"
+            }
+          ],
+          "acceptedAnswers": [
+            "downturn",
+            "slowdown"
+          ],
+          "acceptedTranslations": [
+            "spowolnienie gospodarcze",
+            "spadek koniunktury",
+            "dekoniunktura"
+          ]
+        },
+        {
+          "id": "economy.industry",
+          "term": "industry",
+          "ipa": "/ˈɪndəstri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przemysł",
+          "definition": "The businesses that produce a particular kind of goods or services.",
+          "register": "neutralny",
+          "contextPl": "Gałęzie gospodarki",
+          "natural": "",
+          "forms": "industries",
+          "collocations": "the car industry; heavy industry; tourism industry",
+          "synonyms": "sector",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The car industry is still the biggest employer in our state.",
+              "pl": "Przemysł samochodowy wciąż jest największym pracodawcą w naszym stanie.",
+              "focusEn": "industry",
+              "focusPl": "Przemysł"
+            },
+            {
+              "en": "Which industry is growing fastest right now?",
+              "pl": "Która branża rozwija się teraz najszybciej?",
+              "focusEn": "industry",
+              "focusPl": "branża"
+            }
+          ],
+          "acceptedAnswers": [
+            "industry",
+            "sector"
+          ],
+          "acceptedTranslations": [
+            "przemysł",
+            "branża"
+          ]
+        },
+        {
+          "id": "economy.manufacturing",
+          "term": "manufacturing",
+          "ipa": "/ˌmænjəˈfæktʃərɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "produkcja przemysłowa",
+          "definition": "The business of making goods in factories.",
+          "register": "neutralny",
+          "contextPl": "Fabryki i produkcja",
+          "natural": "",
+          "forms": "",
+          "collocations": "manufacturing jobs; manufacturing sector",
+          "synonyms": "production",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A lot of manufacturing jobs left this town in the nineties.",
+              "pl": "W latach dziewięćdziesiątych z tego miasta zniknęło wiele miejsc pracy w produkcji przemysłowej.",
+              "focusEn": "manufacturing",
+              "focusPl": "produkcji przemysłowej"
+            },
+            {
+              "en": "The report says manufacturing is slowly coming back.",
+              "pl": "Raport mówi, że produkcja przemysłowa powoli wraca.",
+              "focusEn": "manufacturing",
+              "focusPl": "produkcja przemysłowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "manufacturing",
+            "production"
+          ],
+          "acceptedTranslations": [
+            "produkcja przemysłowa",
+            "przemysł wytwórczy",
+            "produkcja"
+          ]
+        },
+        {
+          "id": "economy.sector",
+          "term": "sector",
+          "ipa": "/ˈsektər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "sektor",
+          "definition": "A part of the economy, such as health care or manufacturing.",
+          "register": "formalny",
+          "contextPl": "Części gospodarki",
+          "natural": "",
+          "forms": "sectors",
+          "collocations": "the private sector; the public sector; the service sector",
+          "synonyms": "industry",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've worked in the public sector my whole life.",
+              "pl": "Całe życie pracuję w sektorze publicznym.",
+              "focusEn": "sector",
+              "focusPl": "sektorze"
+            },
+            {
+              "en": "The service sector is hiring, but the pay is low.",
+              "pl": "Sektor usług zatrudnia, ale płace są niskie.",
+              "focusEn": "sector",
+              "focusPl": "Sektor"
+            }
+          ],
+          "acceptedAnswers": [
+            "sector"
+          ],
+          "acceptedTranslations": [
+            "sektor",
+            "dziedzina"
+          ]
+        },
+        {
+          "id": "economy.bounce-back",
+          "term": "bounce back",
+          "ipa": "/ˌbaʊns ˈbæk/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "odbić się",
+          "definition": "To return to a good condition after a difficult time.",
+          "register": "potoczny",
+          "contextPl": "Poprawa po kryzysie",
+          "natural": "recover",
+          "forms": "bounce – bounced – bounced",
+          "collocations": "the economy bounced back",
+          "synonyms": "recover; rebound",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The anchor thinks the economy will bounce back by spring.",
+              "pl": "Prezenter uważa, że gospodarka odbije się do wiosny.",
+              "focusEn": "bounce back",
+              "focusPl": "odbije się"
+            },
+            {
+              "en": "Tourism bounced back faster than anyone expected.",
+              "pl": "Turystyka odbiła się szybciej, niż ktokolwiek się spodziewał.",
+              "focusEn": "bounced back",
+              "focusPl": "odbiła się"
+            }
+          ],
+          "acceptedAnswers": [
+            "bounce back",
+            "bounced back"
+          ],
+          "acceptedTranslations": [
+            "odbić się",
+            "odbijać się",
+            "wrócić do formy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economy.prices",
+      "namePl": "Ceny i inflacja",
+      "scenePl": "Cotygodniowe zakupy w supermarkecie: para porównuje paragony i narzeka na rosnące ceny",
+      "entries": [
+        {
+          "id": "economy.inflation",
+          "term": "inflation",
+          "ipa": "/ɪnˈfleɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "very_common",
+          "translation": "inflacja",
+          "definition": "A general rise in prices over time, so money buys less.",
+          "register": "neutralny",
+          "contextPl": "Wzrost cen",
+          "natural": "",
+          "forms": "",
+          "collocations": "high inflation; inflation rate; fight inflation",
+          "synonyms": "",
+          "antonyms": "deflation",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Because of inflation, the same cart costs forty dollars more than last year.",
+              "pl": "Przez inflację ten sam koszyk kosztuje o czterdzieści dolarów więcej niż rok temu.",
+              "focusEn": "inflation",
+              "focusPl": "inflację"
+            },
+            {
+              "en": "The cashier said even the store owners are tired of inflation.",
+              "pl": "Kasjerka powiedziała, że nawet właściciele sklepu mają dość inflacji.",
+              "focusEn": "inflation",
+              "focusPl": "inflacji"
+            }
+          ],
+          "acceptedAnswers": [
+            "inflation",
+            "inflation rate"
+          ],
+          "acceptedTranslations": [
+            "inflacja"
+          ]
+        },
+        {
+          "id": "economy.prices",
+          "term": "prices",
+          "ipa": "/ˈpraɪsɪz/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "ceny",
+          "definition": "The amounts of money things cost.",
+          "register": "neutralny",
+          "contextPl": "Ile wszystko kosztuje",
+          "natural": "",
+          "forms": "price",
+          "collocations": "prices go up; rising prices; food prices",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Have you seen prices on coffee lately? It's crazy.",
+              "pl": "Widziałeś ostatnio ceny kawy? To jakieś szaleństwo.",
+              "focusEn": "prices",
+              "focusPl": "ceny"
+            },
+            {
+              "en": "Food prices went up again this month.",
+              "pl": "W tym miesiącu ceny żywności znowu wzrosły.",
+              "focusEn": "prices",
+              "focusPl": "ceny"
+            }
+          ],
+          "acceptedAnswers": [
+            "prices",
+            "price"
+          ],
+          "acceptedTranslations": [
+            "ceny",
+            "cena"
+          ]
+        },
+        {
+          "id": "economy.go-up",
+          "term": "go up",
+          "ipa": "/ˌɡoʊ ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "wzrosnąć",
+          "definition": "To increase.",
+          "register": "neutralny",
+          "contextPl": "Wzrost cen",
+          "natural": "rise",
+          "forms": "go – went – gone",
+          "collocations": "prices go up; go up by ten percent",
+          "synonyms": "rise; increase",
+          "antonyms": "go down",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Eggs have gone up almost a dollar since spring.",
+              "pl": "Jajka podrożały o prawie dolara od wiosny.",
+              "focusEn": "gone up",
+              "focusPl": "podrożały"
+            },
+            {
+              "en": "If milk goes up again, we'll switch to the store brand.",
+              "pl": "Jeśli mleko znowu pójdzie w górę, przerzucimy się na markę sklepową.",
+              "focusEn": "goes up",
+              "focusPl": "pójdzie w górę"
+            }
+          ],
+          "acceptedAnswers": [
+            "go up",
+            "went up",
+            "going up",
+            "gone up"
+          ],
+          "acceptedTranslations": [
+            "wzrosnąć",
+            "rosnąć",
+            "pójść w górę",
+            "podrożeć"
+          ]
+        },
+        {
+          "id": "economy.skyrocket",
+          "term": "skyrocket",
+          "ipa": "/ˈskaɪrɑːkɪt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wystrzelić w górę",
+          "definition": "To rise very quickly to a very high level.",
+          "register": "potoczny",
+          "contextPl": "Gwałtowny wzrost",
+          "natural": "soar",
+          "forms": "skyrocket – skyrocketed – skyrocketed",
+          "collocations": "prices skyrocketed",
+          "synonyms": "soar",
+          "antonyms": "plummet",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The price of beef has skyrocketed this year.",
+              "pl": "Cena wołowiny w tym roku wystrzeliła w górę.",
+              "focusEn": "skyrocketed",
+              "focusPl": "wystrzeliła w górę"
+            },
+            {
+              "en": "When rents skyrocket, people cut back on food first.",
+              "pl": "Kiedy czynsze szybują w górę, ludzie najpierw oszczędzają na jedzeniu.",
+              "focusEn": "skyrocket",
+              "focusPl": "szybują w górę"
+            }
+          ],
+          "acceptedAnswers": [
+            "skyrocket",
+            "skyrocketed"
+          ],
+          "acceptedTranslations": [
+            "wystrzelić w górę",
+            "poszybować w górę",
+            "gwałtownie wzrosnąć"
+          ]
+        },
+        {
+          "id": "economy.affordable",
+          "term": "affordable",
+          "ipa": "/əˈfɔːrdəbəl/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przystępny cenowo",
+          "definition": "Cheap enough for most people to buy.",
+          "register": "neutralny",
+          "contextPl": "Ceny w zasięgu ludzi",
+          "natural": "",
+          "forms": "",
+          "collocations": "affordable housing; affordable prices",
+          "synonyms": "reasonable",
+          "antonyms": "unaffordable",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This store used to be the affordable option in town.",
+              "pl": "Ten sklep był kiedyś przystępną cenowo opcją w mieście.",
+              "focusEn": "affordable",
+              "focusPl": "przystępną cenowo"
+            },
+            {
+              "en": "Fresh vegetables should be affordable for every family.",
+              "pl": "Świeże warzywa powinny być przystępne cenowo dla każdej rodziny.",
+              "focusEn": "affordable",
+              "focusPl": "przystępne cenowo"
+            }
+          ],
+          "acceptedAnswers": [
+            "affordable"
+          ],
+          "acceptedTranslations": [
+            "przystępny cenowo",
+            "przystępny",
+            "niedrogi"
+          ]
+        },
+        {
+          "id": "economy.consumer",
+          "term": "consumer",
+          "ipa": "/kənˈsuːmər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "konsument",
+          "definition": "A person who buys goods or services.",
+          "register": "neutralny",
+          "contextPl": "Kupujący w gospodarce",
+          "natural": "",
+          "forms": "consumers",
+          "collocations": "consumer prices; consumer confidence",
+          "synonyms": "customer; buyer",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Every consumer in this line is checking prices on their phone.",
+              "pl": "Każdy konsument w tej kolejce sprawdza ceny w telefonie.",
+              "focusEn": "consumer",
+              "focusPl": "konsument"
+            },
+            {
+              "en": "Stores say consumers are buying less meat and more rice.",
+              "pl": "Sklepy mówią, że konsumenci kupują mniej mięsa, a więcej ryżu.",
+              "focusEn": "consumers",
+              "focusPl": "konsumenci"
+            }
+          ],
+          "acceptedAnswers": [
+            "consumer",
+            "customer"
+          ],
+          "acceptedTranslations": [
+            "konsument",
+            "konsumentka",
+            "nabywca"
+          ]
+        },
+        {
+          "id": "economy.purchasing-power",
+          "term": "purchasing power",
+          "ipa": "/ˈpɝːtʃəsɪŋ ˌpaʊər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "siła nabywcza",
+          "definition": "How much a certain amount of money can buy.",
+          "register": "specjalistyczny",
+          "contextPl": "Wartość pieniądza",
+          "natural": "",
+          "forms": "",
+          "collocations": "lose purchasing power",
+          "synonyms": "buying power",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our salaries went up, but our purchasing power went down.",
+              "pl": "Nasze pensje wzrosły, ale siła nabywcza spadła.",
+              "focusEn": "purchasing power",
+              "focusPl": "siła nabywcza"
+            },
+            {
+              "en": "Inflation eats away at the purchasing power of your savings.",
+              "pl": "Inflacja zjada siłę nabywczą twoich oszczędności.",
+              "focusEn": "purchasing power",
+              "focusPl": "siłę nabywczą"
+            }
+          ],
+          "acceptedAnswers": [
+            "purchasing power",
+            "buying power"
+          ],
+          "acceptedTranslations": [
+            "siła nabywcza"
+          ]
+        },
+        {
+          "id": "economy.shortage",
+          "term": "shortage",
+          "ipa": "/ˈʃɔːrtɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "niedobór",
+          "definition": "A situation in which there is not enough of something.",
+          "register": "neutralny",
+          "contextPl": "Braki towarów",
+          "natural": "",
+          "forms": "shortages",
+          "collocations": "a shortage of; food shortage; labor shortage",
+          "synonyms": "lack",
+          "antonyms": "surplus",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's a shortage of eggs, so the shelf is almost empty.",
+              "pl": "Jest niedobór jajek, więc półka jest prawie pusta.",
+              "focusEn": "shortage",
+              "focusPl": "niedobór"
+            },
+            {
+              "en": "The sign says the baby formula shortage should end next week.",
+              "pl": "Na tabliczce napisano, że niedobór mleka modyfikowanego powinien skończyć się w przyszłym tygodniu.",
+              "focusEn": "shortage",
+              "focusPl": "niedobór"
+            }
+          ],
+          "acceptedAnswers": [
+            "shortage",
+            "lack"
+          ],
+          "acceptedTranslations": [
+            "niedobór",
+            "brak",
+            "deficyt"
+          ]
+        },
+        {
+          "id": "economy.supply-and-demand",
+          "term": "supply and demand",
+          "ipa": "/səˌplaɪ ən dɪˈmænd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "podaż i popyt",
+          "definition": "The idea that prices depend on how much is available and how much people want it.",
+          "register": "specjalistyczny",
+          "contextPl": "Mechanizm cen",
+          "natural": "",
+          "forms": "",
+          "collocations": "the law of supply and demand",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Strawberries are cheap now; it's just supply and demand.",
+              "pl": "Truskawki są teraz tanie, to po prostu podaż i popyt.",
+              "focusEn": "supply and demand",
+              "focusPl": "podaż i popyt"
+            },
+            {
+              "en": "My husband explained supply and demand using the avocado shelf.",
+              "pl": "Mąż wyjaśnił podaż i popyt na przykładzie półki z awokado.",
+              "focusEn": "supply and demand",
+              "focusPl": "podaż i popyt"
+            }
+          ],
+          "acceptedAnswers": [
+            "supply and demand"
+          ],
+          "acceptedTranslations": [
+            "podaż i popyt",
+            "prawo podaży i popytu"
+          ]
+        },
+        {
+          "id": "economy.interest-rates",
+          "term": "interest rates",
+          "ipa": "/ˈɪntrəst ˌreɪts/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stopy procentowe",
+          "definition": "The percentage that banks charge for borrowing money, set partly by the central bank.",
+          "register": "neutralny",
+          "contextPl": "Polityka pieniężna",
+          "natural": "",
+          "forms": "interest rate",
+          "collocations": "raise interest rates; cut interest rates; low interest rates",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The radio in the store said interest rates might go down soon.",
+              "pl": "Radio w sklepie mówiło, że stopy procentowe mogą wkrótce spaść.",
+              "focusEn": "interest rates",
+              "focusPl": "stopy procentowe"
+            },
+            {
+              "en": "High interest rates are supposed to slow down rising prices.",
+              "pl": "Wysokie stopy procentowe mają spowalniać wzrost cen.",
+              "focusEn": "interest rates",
+              "focusPl": "stopy procentowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "interest rates",
+            "interest rate",
+            "rates"
+          ],
+          "acceptedTranslations": [
+            "stopy procentowe",
+            "stopa procentowa"
+          ]
+        },
+        {
+          "id": "economy.central-bank",
+          "term": "central bank",
+          "ipa": "/ˌsentrəl ˈbæŋk/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "bank centralny",
+          "definition": "A country's main bank, which controls the money supply and interest rates.",
+          "register": "formalny",
+          "contextPl": "Instytucje finansowe państwa",
+          "natural": "",
+          "forms": "central banks",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA bank centralny to Fed (Federal Reserve).",
+          "examples": [
+            {
+              "en": "The central bank raised rates again to fight inflation.",
+              "pl": "Bank centralny znowu podniósł stopy, żeby walczyć z inflacją.",
+              "focusEn": "central bank",
+              "focusPl": "Bank centralny"
+            },
+            {
+              "en": "Everyone is waiting to see what the central bank does next month.",
+              "pl": "Wszyscy czekają, co bank centralny zrobi w przyszłym miesiącu.",
+              "focusEn": "central bank",
+              "focusPl": "bank centralny"
+            }
+          ],
+          "acceptedAnswers": [
+            "central bank",
+            "the Fed",
+            "Federal Reserve"
+          ],
+          "acceptedTranslations": [
+            "bank centralny"
+          ]
+        },
+        {
+          "id": "economy.cut-back-on",
+          "term": "cut back on",
+          "ipa": "/ˌkʌt ˈbæk ɑːn/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ograniczyć",
+          "definition": "To spend less on something or use less of it.",
+          "register": "neutralny",
+          "contextPl": "Oszczędzanie przez rodziny",
+          "natural": "",
+          "forms": "cut – cut – cut",
+          "collocations": "cut back on spending; cut back on eating out",
+          "synonyms": "reduce",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We've cut back on snacks and name-brand cereal.",
+              "pl": "Ograniczyliśmy przekąski i markowe płatki.",
+              "focusEn": "cut back on",
+              "focusPl": "Ograniczyliśmy"
+            },
+            {
+              "en": "A lot of families are cutting back on meat this year.",
+              "pl": "Wiele rodzin w tym roku ogranicza mięso.",
+              "focusEn": "cutting back on",
+              "focusPl": "ogranicza"
+            }
+          ],
+          "acceptedAnswers": [
+            "cut back on",
+            "cut back"
+          ],
+          "acceptedTranslations": [
+            "ograniczyć",
+            "ograniczać",
+            "oszczędzać na"
+          ]
+        },
+        {
+          "id": "economy.tighten-your-belt",
+          "term": "tighten your belt",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "zaciskać pasa",
+          "definition": "To spend less money because you have less than before.",
+          "register": "potoczny",
+          "contextPl": "Oszczędzanie w trudnych czasach",
+          "natural": "",
+          "forms": "tighten – tightened – tightened",
+          "collocations": "",
+          "synonyms": "cut back",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "With prices like this, we'll have to tighten our belts for a while.",
+              "pl": "Przy takich cenach będziemy musieli na jakiś czas zacisnąć pasa.",
+              "focusEn": "tighten our belts",
+              "focusPl": "zacisnąć pasa"
+            },
+            {
+              "en": "Everyone is tightening their belts, so the store is quieter than usual.",
+              "pl": "Wszyscy zaciskają pasa, więc w sklepie jest ciszej niż zwykle.",
+              "focusEn": "tightening their belts",
+              "focusPl": "zaciskają pasa"
+            }
+          ],
+          "acceptedAnswers": [
+            "tighten your belt",
+            "tighten our belts"
+          ],
+          "acceptedTranslations": [
+            "zaciskać pasa",
+            "zacisnąć pasa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economy.jobs",
+      "namePl": "Praca i dochody",
+      "scenePl": "Dwóch przyjaciół przy kawie rozmawia o sytuacji na rynku pracy w ich mieście",
+      "entries": [
+        {
+          "id": "economy.unemployment",
+          "term": "unemployment",
+          "ipa": "/ˌʌnɪmˈplɔɪmənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "bezrobocie",
+          "definition": "The situation when people who want to work cannot find a job.",
+          "register": "neutralny",
+          "contextPl": "Brak pracy",
+          "natural": "",
+          "forms": "",
+          "collocations": "high unemployment; unemployment rate",
+          "synonyms": "",
+          "antonyms": "employment",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Unemployment in our county is the lowest it's been in years.",
+              "pl": "Bezrobocie w naszym hrabstwie jest najniższe od lat.",
+              "focusEn": "Unemployment",
+              "focusPl": "Bezrobocie"
+            },
+            {
+              "en": "When the plant closed, unemployment here doubled in a year.",
+              "pl": "Po zamknięciu zakładu bezrobocie wzrosło tu dwukrotnie w ciągu roku.",
+              "focusEn": "unemployment",
+              "focusPl": "bezrobocie"
+            }
+          ],
+          "acceptedAnswers": [
+            "unemployment"
+          ],
+          "acceptedTranslations": [
+            "bezrobocie"
+          ]
+        },
+        {
+          "id": "economy.unemployment-rate",
+          "term": "unemployment rate",
+          "ipa": "/ˌʌnɪmˈplɔɪmənt ˌreɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stopa bezrobocia",
+          "definition": "The percentage of people who want to work but have no job.",
+          "register": "specjalistyczny",
+          "contextPl": "Statystyki zatrudnienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "the unemployment rate rose; a low unemployment rate",
+          "synonyms": "jobless rate",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The unemployment rate fell to four percent, but wages are still flat.",
+              "pl": "Stopa bezrobocia spadła do czterech procent, ale płace stoją w miejscu.",
+              "focusEn": "unemployment rate",
+              "focusPl": "Stopa bezrobocia"
+            },
+            {
+              "en": "I read that the unemployment rate for young people is twice as high.",
+              "pl": "Czytałem, że stopa bezrobocia wśród młodych ludzi jest dwa razy wyższa.",
+              "focusEn": "unemployment rate",
+              "focusPl": "stopa bezrobocia"
+            }
+          ],
+          "acceptedAnswers": [
+            "unemployment rate",
+            "jobless rate"
+          ],
+          "acceptedTranslations": [
+            "stopa bezrobocia"
+          ]
+        },
+        {
+          "id": "economy.job-market",
+          "term": "job market",
+          "ipa": "/ˈdʒɑːb ˌmɑːrkɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "rynek pracy",
+          "definition": "The number of jobs available and the people looking for them.",
+          "register": "neutralny",
+          "contextPl": "Szanse na zatrudnienie",
+          "natural": "labor market",
+          "forms": "",
+          "collocations": "a tough job market; a strong job market",
+          "synonyms": "labor market",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The job market for nurses here is amazing right now.",
+              "pl": "Rynek pracy dla pielęgniarek jest tu teraz świetny.",
+              "focusEn": "job market",
+              "focusPl": "Rynek pracy"
+            },
+            {
+              "en": "My nephew says the job market for graduates is really tough.",
+              "pl": "Mój siostrzeniec mówi, że rynek pracy dla absolwentów jest naprawdę trudny.",
+              "focusEn": "job market",
+              "focusPl": "rynek pracy"
+            }
+          ],
+          "acceptedAnswers": [
+            "job market",
+            "labor market"
+          ],
+          "acceptedTranslations": [
+            "rynek pracy"
+          ]
+        },
+        {
+          "id": "economy.layoffs",
+          "term": "layoffs",
+          "ipa": "/ˈleɪɔːfs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zwolnienia",
+          "definition": "When a company ends the jobs of many workers, usually to save money.",
+          "register": "neutralny",
+          "contextPl": "Masowe zwalnianie pracowników",
+          "natural": "cuts",
+          "forms": "layoff",
+          "collocations": "mass layoffs; announce layoffs",
+          "synonyms": "job cuts",
+          "antonyms": "hiring",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Did you hear about the layoffs at the distribution center?",
+              "pl": "Słyszałeś o zwolnieniach w centrum dystrybucyjnym?",
+              "focusEn": "layoffs",
+              "focusPl": "zwolnieniach"
+            },
+            {
+              "en": "After the layoffs, half my old team moved to other states.",
+              "pl": "Po zwolnieniach połowa mojego dawnego zespołu przeprowadziła się do innych stanów.",
+              "focusEn": "layoffs",
+              "focusPl": "zwolnieniach"
+            }
+          ],
+          "acceptedAnswers": [
+            "layoffs",
+            "job cuts",
+            "layoff"
+          ],
+          "acceptedTranslations": [
+            "zwolnienia",
+            "zwolnienia grupowe",
+            "redukcja etatów"
+          ]
+        },
+        {
+          "id": "economy.wages",
+          "term": "wages",
+          "ipa": "/ˈweɪdʒɪz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "płace",
+          "definition": "Money paid to workers, usually by the hour or week.",
+          "register": "neutralny",
+          "contextPl": "Zarobki pracowników",
+          "natural": "pay",
+          "forms": "wage",
+          "collocations": "low wages; raise wages; wages are rising",
+          "synonyms": "pay; earnings",
+          "antonyms": "",
+          "notePl": "„Wages” – zwykle godzinowe/tygodniowe; „salary” – stała pensja.",
+          "examples": [
+            {
+              "en": "Wages are going up, but so is everything else.",
+              "pl": "Płace rosną, ale wszystko inne też.",
+              "focusEn": "Wages",
+              "focusPl": "Płace"
+            },
+            {
+              "en": "Restaurants here had to raise wages to find workers.",
+              "pl": "Restauracje tutaj musiały podnieść płace, żeby znaleźć pracowników.",
+              "focusEn": "wages",
+              "focusPl": "płace"
+            }
+          ],
+          "acceptedAnswers": [
+            "wages",
+            "wage",
+            "pay"
+          ],
+          "acceptedTranslations": [
+            "płace",
+            "płaca",
+            "wynagrodzenie",
+            "zarobki"
+          ]
+        },
+        {
+          "id": "economy.labor-shortage",
+          "term": "labor shortage",
+          "ipa": "/ˈleɪbər ˌʃɔːrtɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "niedobór pracowników",
+          "definition": "A situation in which there are not enough workers for the jobs available.",
+          "register": "formalny",
+          "contextPl": "Brak rąk do pracy",
+          "natural": "",
+          "forms": "labor shortages",
+          "collocations": "",
+          "synonyms": "worker shortage",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "There's such a labor shortage that my café is closed on Mondays now.",
+              "pl": "Jest taki niedobór pracowników, że moja kawiarnia jest teraz zamknięta w poniedziałki.",
+              "focusEn": "labor shortage",
+              "focusPl": "niedobór pracowników"
+            },
+            {
+              "en": "Farmers here blame the labor shortage for the rotting crops.",
+              "pl": "Tutejsi rolnicy obwiniają brak rąk do pracy za gnijące plony.",
+              "focusEn": "labor shortage",
+              "focusPl": "brak rąk do pracy"
+            }
+          ],
+          "acceptedAnswers": [
+            "labor shortage",
+            "worker shortage"
+          ],
+          "acceptedTranslations": [
+            "niedobór pracowników",
+            "brak rąk do pracy"
+          ]
+        },
+        {
+          "id": "economy.job-security",
+          "term": "job security",
+          "ipa": "/ˈdʒɑːb sɪˌkjʊrəti/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "stabilność zatrudnienia",
+          "definition": "The feeling that you will not lose your job.",
+          "register": "neutralny",
+          "contextPl": "Pewność pracy",
+          "natural": "",
+          "forms": "",
+          "collocations": "good job security; lack of job security",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I took the government job for the job security, not the pay.",
+              "pl": "Wziąłem pracę w administracji dla stabilności zatrudnienia, a nie dla pensji.",
+              "focusEn": "job security",
+              "focusPl": "stabilności zatrudnienia"
+            },
+            {
+              "en": "Nobody in tech has real job security these days.",
+              "pl": "W dzisiejszych czasach nikt w branży technologicznej nie ma prawdziwej stabilności zatrudnienia.",
+              "focusEn": "job security",
+              "focusPl": "stabilności zatrudnienia"
+            }
+          ],
+          "acceptedAnswers": [
+            "job security"
+          ],
+          "acceptedTranslations": [
+            "stabilność zatrudnienia",
+            "pewność zatrudnienia"
+          ]
+        },
+        {
+          "id": "economy.gig-economy",
+          "term": "gig economy",
+          "ipa": "/ˈɡɪɡ ɪˌkɑːnəmi/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "gospodarka zleceń",
+          "definition": "Work made up of short-term jobs, often through apps, instead of permanent jobs.",
+          "register": "potoczny",
+          "contextPl": "Praca dorywcza przez aplikacje",
+          "natural": "",
+          "forms": "",
+          "collocations": "work in the gig economy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My brother has driven for delivery apps in the gig economy for three years.",
+              "pl": "Mój brat od trzech lat jeździ dla aplikacji dostawczych w gospodarce zleceń.",
+              "focusEn": "gig economy",
+              "focusPl": "gospodarce zleceń"
+            },
+            {
+              "en": "The gig economy is flexible, but there's no health insurance.",
+              "pl": "Gospodarka zleceń jest elastyczna, ale nie ma ubezpieczenia zdrowotnego.",
+              "focusEn": "gig economy",
+              "focusPl": "Gospodarka zleceń"
+            }
+          ],
+          "acceptedAnswers": [
+            "gig economy",
+            "gig work"
+          ],
+          "acceptedTranslations": [
+            "gospodarka zleceń",
+            "gig economy",
+            "praca dorywcza"
+          ]
+        },
+        {
+          "id": "economy.middle-class",
+          "term": "middle class",
+          "ipa": "/ˌmɪdəl ˈklæs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "klasa średnia",
+          "definition": "People who are neither rich nor poor, such as many office workers and teachers.",
+          "register": "neutralny",
+          "contextPl": "Grupy społeczne",
+          "natural": "",
+          "forms": "",
+          "collocations": "the middle class; middle-class family",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It feels like the middle class in this town is getting smaller.",
+              "pl": "Mam wrażenie, że klasa średnia w tym mieście się kurczy.",
+              "focusEn": "middle class",
+              "focusPl": "klasa średnia"
+            },
+            {
+              "en": "Our parents were solid middle class on one salary.",
+              "pl": "Nasi rodzice byli porządną klasą średnią, utrzymując się z jednej pensji.",
+              "focusEn": "middle class",
+              "focusPl": "klasą średnią"
+            }
+          ],
+          "acceptedAnswers": [
+            "middle class",
+            "middle-class"
+          ],
+          "acceptedTranslations": [
+            "klasa średnia"
+          ]
+        },
+        {
+          "id": "economy.poverty",
+          "term": "poverty",
+          "ipa": "/ˈpɑːvərti/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ubóstwo",
+          "definition": "The state of being very poor.",
+          "register": "neutralny",
+          "contextPl": "Bieda",
+          "natural": "",
+          "forms": "",
+          "collocations": "live in poverty; poverty line; reduce poverty",
+          "synonyms": "",
+          "antonyms": "wealth",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A lot of kids at my daughter's school live in poverty.",
+              "pl": "Wiele dzieci w szkole mojej córki żyje w ubóstwie.",
+              "focusEn": "poverty",
+              "focusPl": "ubóstwie"
+            },
+            {
+              "en": "The new jobs haven't really reduced poverty here.",
+              "pl": "Nowe miejsca pracy tak naprawdę nie zmniejszyły tu ubóstwa.",
+              "focusEn": "poverty",
+              "focusPl": "ubóstwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "poverty"
+          ],
+          "acceptedTranslations": [
+            "ubóstwo",
+            "bieda"
+          ]
+        },
+        {
+          "id": "economy.inequality",
+          "term": "inequality",
+          "ipa": "/ˌɪnɪˈkwɑːləti/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nierówności",
+          "definition": "An unfair difference in money or chances between groups of people.",
+          "register": "formalny",
+          "contextPl": "Różnice w zamożności",
+          "natural": "",
+          "forms": "inequalities",
+          "collocations": "income inequality; growing inequality",
+          "synonyms": "",
+          "antonyms": "equality",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You can see the inequality just by driving across town.",
+              "pl": "Nierówności widać już po przejechaniu przez miasto.",
+              "focusEn": "inequality",
+              "focusPl": "Nierówności"
+            },
+            {
+              "en": "We argued about whether a higher minimum wage reduces inequality.",
+              "pl": "Kłóciliśmy się, czy wyższa płaca minimalna zmniejsza nierówności.",
+              "focusEn": "inequality",
+              "focusPl": "nierówności"
+            }
+          ],
+          "acceptedAnswers": [
+            "inequality",
+            "income inequality"
+          ],
+          "acceptedTranslations": [
+            "nierówności",
+            "nierówność"
+          ]
+        },
+        {
+          "id": "economy.living-paycheck-to-paycheck",
+          "term": "living paycheck to paycheck",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "żyć od wypłaty do wypłaty",
+          "definition": "Spending all the money you earn, with nothing left to save.",
+          "register": "potoczny",
+          "contextPl": "Brak oszczędności",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Half the people I know are living paycheck to paycheck.",
+              "pl": "Połowa ludzi, których znam, żyje od wypłaty do wypłaty.",
+              "focusEn": "living paycheck to paycheck",
+              "focusPl": "żyje od wypłaty do wypłaty"
+            },
+            {
+              "en": "Even with two jobs, she's still living paycheck to paycheck.",
+              "pl": "Nawet z dwiema pracami wciąż żyje od wypłaty do wypłaty.",
+              "focusEn": "living paycheck to paycheck",
+              "focusPl": "żyje od wypłaty do wypłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "living paycheck to paycheck",
+            "paycheck to paycheck"
+          ],
+          "acceptedTranslations": [
+            "żyć od wypłaty do wypłaty",
+            "ledwo wiązać koniec z końcem"
+          ]
+        },
+        {
+          "id": "economy.wealth",
+          "term": "wealth",
+          "ipa": "/welθ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bogactwo",
+          "definition": "A large amount of money and property.",
+          "register": "neutralny",
+          "contextPl": "Majątek",
+          "natural": "",
+          "forms": "",
+          "collocations": "wealth gap; build wealth; share the wealth",
+          "synonyms": "riches; fortune",
+          "antonyms": "poverty",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Most of the wealth in this town is in the houses by the lake.",
+              "pl": "Większość bogactwa w tym mieście to domy nad jeziorem.",
+              "focusEn": "wealth",
+              "focusPl": "bogactwa"
+            },
+            {
+              "en": "It's hard to build wealth when rent takes half your pay.",
+              "pl": "Trudno budować majątek, gdy czynsz zabiera połowę pensji.",
+              "focusEn": "wealth",
+              "focusPl": "majątek"
+            }
+          ],
+          "acceptedAnswers": [
+            "wealth",
+            "riches"
+          ],
+          "acceptedTranslations": [
+            "bogactwo",
+            "majątek",
+            "zamożność"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economy.markets-trade",
+      "namePl": "Rynki i handel",
+      "scenePl": "Zajęcia z ekonomii w community college: wykładowca omawia aktualne wydarzenia na rynkach",
+      "entries": [
+        {
+          "id": "economy.stock-market",
+          "term": "stock market",
+          "ipa": "/ˈstɑːk ˌmɑːrkɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "giełda",
+          "definition": "The system where people buy and sell shares in companies.",
+          "register": "neutralny",
+          "contextPl": "Handel akcjami",
+          "natural": "the market",
+          "forms": "stock markets",
+          "collocations": "invest in the stock market; the stock market fell",
+          "synonyms": "stock exchange",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The stock market fell three percent yesterday; who can tell me why?",
+              "pl": "Wczoraj giełda spadła o trzy procent, kto mi powie dlaczego?",
+              "focusEn": "stock market",
+              "focusPl": "giełda"
+            },
+            {
+              "en": "The professor said most people own stocks through their retirement accounts, not by trading on the stock market daily.",
+              "pl": "Wykładowca powiedział, że większość ludzi ma akcje przez konta emerytalne, a nie przez codzienny handel na giełdzie.",
+              "focusEn": "stock market",
+              "focusPl": "giełdzie"
+            }
+          ],
+          "acceptedAnswers": [
+            "stock market",
+            "stock exchange",
+            "the market"
+          ],
+          "acceptedTranslations": [
+            "giełda",
+            "rynek akcji",
+            "giełda papierów wartościowych"
+          ]
+        },
+        {
+          "id": "economy.investors",
+          "term": "investors",
+          "ipa": "/ɪnˈvestərz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "inwestorzy",
+          "definition": "People who put money into companies or markets to make a profit.",
+          "register": "neutralny",
+          "contextPl": "Uczestnicy rynku",
+          "natural": "",
+          "forms": "investor",
+          "collocations": "nervous investors; foreign investors",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Investors got nervous after the news about interest rates.",
+              "pl": "Inwestorzy się zdenerwowali po wiadomościach o stopach procentowych.",
+              "focusEn": "Investors",
+              "focusPl": "Inwestorzy"
+            },
+            {
+              "en": "Foreign investors are building two new plants in our state.",
+              "pl": "Zagraniczni inwestorzy budują w naszym stanie dwie nowe fabryki.",
+              "focusEn": "investors",
+              "focusPl": "inwestorzy"
+            }
+          ],
+          "acceptedAnswers": [
+            "investors",
+            "investor"
+          ],
+          "acceptedTranslations": [
+            "inwestorzy",
+            "inwestor"
+          ]
+        },
+        {
+          "id": "economy.crash",
+          "term": "crash",
+          "ipa": "/kræʃ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "krach",
+          "definition": "A sudden, large fall in prices on the stock market.",
+          "register": "neutralny",
+          "contextPl": "Gwałtowne spadki",
+          "natural": "",
+          "forms": "crashes",
+          "collocations": "stock market crash; the crash of 1929",
+          "synonyms": "collapse",
+          "antonyms": "",
+          "notePl": "W innych tematach: wypadek, awaria programu.",
+          "examples": [
+            {
+              "en": "Today we're comparing the crash of 1929 with the one in 2008.",
+              "pl": "Dziś porównujemy krach z 1929 roku z tym z 2008.",
+              "focusEn": "crash",
+              "focusPl": "krach"
+            },
+            {
+              "en": "After the crash, many families lost their savings and homes.",
+              "pl": "Po krachu wiele rodzin straciło oszczędności i domy.",
+              "focusEn": "crash",
+              "focusPl": "krachu"
+            }
+          ],
+          "acceptedAnswers": [
+            "crash",
+            "market crash"
+          ],
+          "acceptedTranslations": [
+            "krach",
+            "załamanie",
+            "krach giełdowy"
+          ]
+        },
+        {
+          "id": "economy.bubble",
+          "term": "bubble",
+          "ipa": "/ˈbʌbəl/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "bańka",
+          "definition": "A situation in which prices rise far above the real value and later fall suddenly.",
+          "register": "specjalistyczny",
+          "contextPl": "Przegrzanie rynku",
+          "natural": "",
+          "forms": "bubbles",
+          "collocations": "housing bubble; the bubble burst",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A student asked if housing prices are in a bubble again.",
+              "pl": "Jeden ze studentów zapytał, czy ceny mieszkań znów są w bańce.",
+              "focusEn": "bubble",
+              "focusPl": "bańce"
+            },
+            {
+              "en": "When the bubble burst, prices fell by half in a year.",
+              "pl": "Kiedy bańka pękła, ceny spadły o połowę w ciągu roku.",
+              "focusEn": "bubble",
+              "focusPl": "bańka"
+            }
+          ],
+          "acceptedAnswers": [
+            "bubble",
+            "housing bubble"
+          ],
+          "acceptedTranslations": [
+            "bańka",
+            "bańka spekulacyjna"
+          ]
+        },
+        {
+          "id": "economy.trade",
+          "term": "trade",
+          "ipa": "/treɪd/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "handel",
+          "definition": "The buying and selling of goods between countries.",
+          "register": "neutralny",
+          "contextPl": "Wymiana międzynarodowa",
+          "natural": "",
+          "forms": "",
+          "collocations": "international trade; trade deal; free trade",
+          "synonyms": "commerce",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Trade with Mexico and Canada supports thousands of jobs in our state.",
+              "pl": "Handel z Meksykiem i Kanadą utrzymuje tysiące miejsc pracy w naszym stanie.",
+              "focusEn": "Trade",
+              "focusPl": "Handel"
+            },
+            {
+              "en": "Our homework is to write about one trade deal and its effects.",
+              "pl": "Zadanie domowe to opisanie jednej umowy handlowej i jej skutków.",
+              "focusEn": "trade",
+              "focusPl": "handlowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "trade",
+            "commerce"
+          ],
+          "acceptedTranslations": [
+            "handel",
+            "wymiana handlowa"
+          ]
+        },
+        {
+          "id": "economy.export",
+          "term": "export",
+          "ipa": "/ɪkˈspɔːrt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "eksportować",
+          "definition": "To sell and send goods to another country.",
+          "register": "neutralny",
+          "contextPl": "Sprzedaż za granicę",
+          "natural": "",
+          "forms": "export – exported – exported",
+          "collocations": "export goods; export to Asia",
+          "synonyms": "",
+          "antonyms": "import",
+          "notePl": "Rzeczownik: /ˈekspɔːrt/.",
+          "examples": [
+            {
+              "en": "Our state exports more soybeans than almost any other.",
+              "pl": "Nasz stan eksportuje więcej soi niż prawie każdy inny.",
+              "focusEn": "exports",
+              "focusPl": "eksportuje"
+            },
+            {
+              "en": "The professor showed a chart of what the country exports most.",
+              "pl": "Wykładowca pokazał wykres tego, co kraj najwięcej eksportuje.",
+              "focusEn": "exports",
+              "focusPl": "eksportuje"
+            }
+          ],
+          "acceptedAnswers": [
+            "export",
+            "exports",
+            "exported"
+          ],
+          "acceptedTranslations": [
+            "eksportować",
+            "wyeksportować",
+            "sprzedawać za granicę"
+          ]
+        },
+        {
+          "id": "economy.import",
+          "term": "import",
+          "ipa": "/ɪmˈpɔːrt/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "importować",
+          "definition": "To buy goods from another country and bring them in.",
+          "register": "neutralny",
+          "contextPl": "Zakupy z zagranicy",
+          "natural": "",
+          "forms": "import – imported – imported",
+          "collocations": "import goods; imported cars",
+          "synonyms": "",
+          "antonyms": "export",
+          "notePl": "Rzeczownik: /ˈɪmpɔːrt/.",
+          "examples": [
+            {
+              "en": "We import most of our electronics from Asia.",
+              "pl": "Większość elektroniki importujemy z Azji.",
+              "focusEn": "import",
+              "focusPl": "importujemy"
+            },
+            {
+              "en": "When we import cheaper steel, local mills struggle.",
+              "pl": "Kiedy sprowadzamy z zagranicy tańszą stal, lokalne huty mają kłopoty.",
+              "focusEn": "import",
+              "focusPl": "sprowadzamy z zagranicy"
+            }
+          ],
+          "acceptedAnswers": [
+            "import",
+            "imports",
+            "imported"
+          ],
+          "acceptedTranslations": [
+            "importować",
+            "sprowadzać z zagranicy"
+          ]
+        },
+        {
+          "id": "economy.tariff",
+          "term": "tariff",
+          "ipa": "/ˈtærɪf/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "cło",
+          "definition": "A tax on goods coming into a country.",
+          "register": "formalny",
+          "contextPl": "Opłaty w handlu zagranicznym",
+          "natural": "",
+          "forms": "tariffs",
+          "collocations": "impose tariffs; tariffs on steel",
+          "synonyms": "duty",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The professor asked who really pays a tariff in the end.",
+              "pl": "Wykładowca zapytał, kto tak naprawdę płaci w końcu cło.",
+              "focusEn": "tariff",
+              "focusPl": "cło"
+            },
+            {
+              "en": "A new tariff on steel made cars more expensive.",
+              "pl": "Nowe cło na stal podniosło ceny samochodów.",
+              "focusEn": "tariff",
+              "focusPl": "cło"
+            }
+          ],
+          "acceptedAnswers": [
+            "tariff",
+            "duty"
+          ],
+          "acceptedTranslations": [
+            "cło",
+            "taryfa celna"
+          ]
+        },
+        {
+          "id": "economy.supply-chain",
+          "term": "supply chain",
+          "ipa": "/səˈplaɪ ˌtʃeɪn/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "łańcuch dostaw",
+          "definition": "All the steps and companies involved in making and delivering a product.",
+          "register": "specjalistyczny",
+          "contextPl": "Logistyka towarów",
+          "natural": "",
+          "forms": "supply chains",
+          "collocations": "supply chain problems; global supply chain",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "One broken link in the supply chain can empty store shelves.",
+              "pl": "Jedno zerwane ogniwo w łańcuchu dostaw może opróżnić sklepowe półki.",
+              "focusEn": "supply chain",
+              "focusPl": "łańcuchu dostaw"
+            },
+            {
+              "en": "We traced the supply chain of a single T-shirt in class.",
+              "pl": "Na zajęciach prześledziliśmy łańcuch dostaw jednej koszulki.",
+              "focusEn": "supply chain",
+              "focusPl": "łańcuch dostaw"
+            }
+          ],
+          "acceptedAnswers": [
+            "supply chain",
+            "supply chains"
+          ],
+          "acceptedTranslations": [
+            "łańcuch dostaw"
+          ]
+        },
+        {
+          "id": "economy.currency",
+          "term": "currency",
+          "ipa": "/ˈkɝːənsi/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "waluta",
+          "definition": "The type of money a country uses.",
+          "register": "neutralny",
+          "contextPl": "Pieniądz różnych krajów",
+          "natural": "",
+          "forms": "currencies",
+          "collocations": "foreign currency; local currency; a strong currency",
+          "synonyms": "money",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "When the dollar is strong, our currency buys more abroad.",
+              "pl": "Kiedy dolar jest silny, nasza waluta kupuje więcej za granicą.",
+              "focusEn": "currency",
+              "focusPl": "waluta"
+            },
+            {
+              "en": "The professor showed how one currency lost half its value in a year.",
+              "pl": "Wykładowca pokazał, jak pewna waluta straciła połowę wartości w rok.",
+              "focusEn": "currency",
+              "focusPl": "waluta"
+            }
+          ],
+          "acceptedAnswers": [
+            "currency"
+          ],
+          "acceptedTranslations": [
+            "waluta"
+          ]
+        },
+        {
+          "id": "economy.exchange-rate",
+          "term": "exchange rate",
+          "ipa": "/ɪksˈtʃeɪndʒ ˌreɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kurs wymiany",
+          "definition": "The value of one currency compared to another.",
+          "register": "neutralny",
+          "contextPl": "Przeliczanie walut",
+          "natural": "",
+          "forms": "exchange rates",
+          "collocations": "a good exchange rate; the dollar exchange rate",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The exchange rate affects how much American farmers earn abroad.",
+              "pl": "Kurs wymiany wpływa na to, ile amerykańscy rolnicy zarabiają za granicą.",
+              "focusEn": "exchange rate",
+              "focusPl": "Kurs wymiany"
+            },
+            {
+              "en": "Look up today's exchange rate for the euro for tomorrow's quiz.",
+              "pl": "Sprawdźcie dzisiejszy kurs euro na jutrzejszą kartkówkę.",
+              "focusEn": "exchange rate",
+              "focusPl": "kurs"
+            }
+          ],
+          "acceptedAnswers": [
+            "exchange rate",
+            "rate"
+          ],
+          "acceptedTranslations": [
+            "kurs wymiany",
+            "kurs walut",
+            "kurs"
+          ]
+        },
+        {
+          "id": "economy.national-debt",
+          "term": "national debt",
+          "ipa": "/ˌnæʃənəl ˈdet/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dług publiczny",
+          "definition": "The total amount of money a country's government owes.",
+          "register": "formalny",
+          "contextPl": "Zadłużenie państwa",
+          "natural": "",
+          "forms": "",
+          "collocations": "the national debt; reduce the national debt",
+          "synonyms": "public debt",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The national debt is so big that the number is hard to imagine.",
+              "pl": "Dług publiczny jest tak duży, że trudno wyobrazić sobie tę liczbę.",
+              "focusEn": "national debt",
+              "focusPl": "Dług publiczny"
+            },
+            {
+              "en": "Students debated whether the national debt really matters.",
+              "pl": "Studenci debatowali, czy dług publiczny naprawdę ma znaczenie.",
+              "focusEn": "national debt",
+              "focusPl": "dług publiczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "national debt",
+            "public debt"
+          ],
+          "acceptedTranslations": [
+            "dług publiczny",
+            "zadłużenie państwa"
+          ]
+        },
+        {
+          "id": "economy.deficit",
+          "term": "deficit",
+          "ipa": "/ˈdefəsɪt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "deficyt",
+          "definition": "The amount by which spending is greater than income in a year.",
+          "register": "formalny",
+          "contextPl": "Brak równowagi w budżecie",
+          "natural": "",
+          "forms": "deficits",
+          "collocations": "budget deficit; trade deficit",
+          "synonyms": "shortfall",
+          "antonyms": "surplus",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A deficit means the government spends more than it collects.",
+              "pl": "Deficyt oznacza, że rząd wydaje więcej, niż zbiera.",
+              "focusEn": "deficit",
+              "focusPl": "Deficyt"
+            },
+            {
+              "en": "The country has had a trade deficit for decades, the professor said.",
+              "pl": "Wykładowca powiedział, że kraj od dziesięcioleci ma deficyt handlowy.",
+              "focusEn": "deficit",
+              "focusPl": "deficyt"
+            }
+          ],
+          "acceptedAnswers": [
+            "deficit",
+            "budget deficit"
+          ],
+          "acceptedTranslations": [
+            "deficyt",
+            "deficyt budżetowy"
+          ]
+        },
+        {
+          "id": "economy.subsidy",
+          "term": "subsidy",
+          "ipa": "/ˈsʌbsədi/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dotacja",
+          "definition": "Money the government pays to help a business or lower a price.",
+          "register": "formalny",
+          "contextPl": "Pomoc państwa dla branż",
+          "natural": "",
+          "forms": "subsidies",
+          "collocations": "farm subsidies; government subsidy",
+          "synonyms": "grant",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Farmers in this state depend on a federal subsidy for corn.",
+              "pl": "Rolnicy w tym stanie są zależni od federalnej dotacji do kukurydzy.",
+              "focusEn": "subsidy",
+              "focusPl": "dotacji"
+            },
+            {
+              "en": "Without the subsidy, electric cars would cost thousands more.",
+              "pl": "Bez dopłaty samochody elektryczne kosztowałyby o tysiące więcej.",
+              "focusEn": "subsidy",
+              "focusPl": "dopłaty"
+            }
+          ],
+          "acceptedAnswers": [
+            "subsidy",
+            "grant"
+          ],
+          "acceptedTranslations": [
+            "dotacja",
+            "subsydium",
+            "dopłata"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "economy.state",
+      "namePl": "Państwo i gospodarka",
+      "scenePl": "Zebranie mieszkańców w ratuszu: dyskusja o tym, na co miasto ma wydać pieniądze z budżetu",
+      "entries": [
+        {
+          "id": "economy.local-economy",
+          "term": "local economy",
+          "ipa": "/ˌloʊkəl ɪˈkɑːnəmi/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "lokalna gospodarka",
+          "definition": "The businesses, jobs, and money in a particular town or area.",
+          "register": "neutralny",
+          "contextPl": "Gospodarka miasta i regionu",
+          "natural": "",
+          "forms": "",
+          "collocations": "support the local economy; boost the local economy",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The new hospital has been great for the local economy.",
+              "pl": "Nowy szpital bardzo dobrze wpłynął na lokalną gospodarkę.",
+              "focusEn": "local economy",
+              "focusPl": "lokalną gospodarkę"
+            },
+            {
+              "en": "Shopping downtown keeps money in the local economy, one resident said.",
+              "pl": "Jedna z mieszkanek powiedziała, że zakupy w centrum zatrzymują pieniądze w lokalnej gospodarce.",
+              "focusEn": "local economy",
+              "focusPl": "lokalnej gospodarce"
+            }
+          ],
+          "acceptedAnswers": [
+            "local economy"
+          ],
+          "acceptedTranslations": [
+            "lokalna gospodarka",
+            "gospodarka lokalna"
+          ]
+        },
+        {
+          "id": "economy.create-jobs",
+          "term": "create jobs",
+          "ipa": "/kriˌeɪt ˈdʒɑːbz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "tworzyć miejsca pracy",
+          "definition": "To make new work positions available for people.",
+          "register": "neutralny",
+          "contextPl": "Zatrudnienie w regionie",
+          "natural": "",
+          "forms": "create – created – created",
+          "collocations": "create new jobs; create thousands of jobs",
+          "synonyms": "",
+          "antonyms": "cut jobs",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The mayor says the new warehouse will create jobs for three hundred people.",
+              "pl": "Burmistrz mówi, że nowy magazyn stworzy miejsca pracy dla trzystu osób.",
+              "focusEn": "create jobs",
+              "focusPl": "stworzy miejsca pracy"
+            },
+            {
+              "en": "Will this project really create jobs, or just move them from the next town?",
+              "pl": "Czy ten projekt naprawdę stworzy miejsca pracy, czy tylko przeniesie je z sąsiedniego miasta?",
+              "focusEn": "create jobs",
+              "focusPl": "stworzy miejsca pracy"
+            }
+          ],
+          "acceptedAnswers": [
+            "create jobs",
+            "created jobs",
+            "job creation"
+          ],
+          "acceptedTranslations": [
+            "tworzyć miejsca pracy",
+            "stworzyć miejsca pracy"
+          ]
+        },
+        {
+          "id": "economy.boost-the-economy",
+          "term": "boost the economy",
+          "ipa": "/ˌbuːst ði ɪˈkɑːnəmi/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pobudzić gospodarkę",
+          "definition": "To help the economy grow faster.",
+          "register": "neutralny",
+          "contextPl": "Działania prorozwojowe",
+          "natural": "",
+          "forms": "boost – boosted – boosted",
+          "collocations": "",
+          "synonyms": "stimulate the economy",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The council hopes the summer festival will boost the economy downtown.",
+              "pl": "Rada liczy, że letni festiwal ożywi gospodarkę w centrum.",
+              "focusEn": "boost the economy",
+              "focusPl": "ożywi gospodarkę"
+            },
+            {
+              "en": "Lower parking fees could boost the economy for small shops, a store owner argued.",
+              "pl": "Właścicielka sklepu przekonywała, że niższe opłaty za parkowanie mogłyby pobudzić gospodarkę małych sklepów.",
+              "focusEn": "boost the economy",
+              "focusPl": "pobudzić gospodarkę"
+            }
+          ],
+          "acceptedAnswers": [
+            "boost the economy",
+            "boosted the economy"
+          ],
+          "acceptedTranslations": [
+            "pobudzić gospodarkę",
+            "pobudzać gospodarkę",
+            "ożywić gospodarkę"
+          ]
+        },
+        {
+          "id": "economy.public-spending",
+          "term": "public spending",
+          "ipa": "/ˌpʌblɪk ˈspendɪŋ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wydatki publiczne",
+          "definition": "Money that the government spends on services such as schools and roads.",
+          "register": "formalny",
+          "contextPl": "Budżet państwa i miasta",
+          "natural": "government spending",
+          "forms": "",
+          "collocations": "cut public spending; increase public spending",
+          "synonyms": "government spending",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Some residents want less public spending and lower taxes.",
+              "pl": "Część mieszkańców chce mniejszych wydatków publicznych i niższych podatków.",
+              "focusEn": "public spending",
+              "focusPl": "wydatków publicznych"
+            },
+            {
+              "en": "The chart showed where every dollar of public spending goes.",
+              "pl": "Wykres pokazywał, na co idzie każdy dolar wydatków publicznych.",
+              "focusEn": "public spending",
+              "focusPl": "wydatków publicznych"
+            }
+          ],
+          "acceptedAnswers": [
+            "public spending",
+            "government spending"
+          ],
+          "acceptedTranslations": [
+            "wydatki publiczne",
+            "wydatki państwa"
+          ]
+        },
+        {
+          "id": "economy.infrastructure",
+          "term": "infrastructure",
+          "ipa": "/ˈɪnfrəˌstrʌktʃər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "common",
+          "translation": "infrastruktura",
+          "definition": "Basic systems a city needs, such as roads, bridges, water pipes, and power lines.",
+          "register": "formalny",
+          "contextPl": "Drogi, mosty, sieci",
+          "natural": "",
+          "forms": "",
+          "collocations": "invest in infrastructure; aging infrastructure",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our water pipes are a hundred years old; the infrastructure needs work.",
+              "pl": "Nasze rury wodociągowe mają sto lat, infrastruktura wymaga remontu.",
+              "focusEn": "infrastructure",
+              "focusPl": "infrastruktura"
+            },
+            {
+              "en": "Most of the new budget will go to infrastructure like bridges and sidewalks.",
+              "pl": "Większość nowego budżetu pójdzie na infrastrukturę, taką jak mosty i chodniki.",
+              "focusEn": "infrastructure",
+              "focusPl": "infrastrukturę"
+            }
+          ],
+          "acceptedAnswers": [
+            "infrastructure"
+          ],
+          "acceptedTranslations": [
+            "infrastruktura"
+          ]
+        },
+        {
+          "id": "economy.raise-taxes",
+          "term": "raise taxes",
+          "ipa": "/ˌreɪz ˈtæksɪz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "podnieść podatki",
+          "definition": "To make people or companies pay more in taxes.",
+          "register": "neutralny",
+          "contextPl": "Zmiany podatków",
+          "natural": "",
+          "forms": "raise – raised – raised",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "cut taxes",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Nobody at the meeting wanted to raise taxes, but the roads need fixing.",
+              "pl": "Nikt na zebraniu nie chciał podnosić podatków, ale drogi trzeba naprawić.",
+              "focusEn": "raise taxes",
+              "focusPl": "podnosić podatków"
+            },
+            {
+              "en": "If the city doesn't raise taxes, the library may close on weekends.",
+              "pl": "Jeśli miasto nie podniesie podatków, biblioteka może być zamknięta w weekendy.",
+              "focusEn": "raise taxes",
+              "focusPl": "podniesie podatków"
+            }
+          ],
+          "acceptedAnswers": [
+            "raise taxes",
+            "raised taxes"
+          ],
+          "acceptedTranslations": [
+            "podnieść podatki",
+            "podnosić podatki"
+          ]
+        },
+        {
+          "id": "economy.tax-revenue",
+          "term": "tax revenue",
+          "ipa": "/ˈtæks ˌrevənuː/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wpływy z podatków",
+          "definition": "The money a government receives from taxes.",
+          "register": "formalny",
+          "contextPl": "Dochody budżetu",
+          "natural": "",
+          "forms": "",
+          "collocations": "increase tax revenue; lose tax revenue",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The new stores brought in more tax revenue than expected.",
+              "pl": "Nowe sklepy przyniosły więcej wpływów z podatków, niż oczekiwano.",
+              "focusEn": "tax revenue",
+              "focusPl": "wpływów z podatków"
+            },
+            {
+              "en": "When the factory left, the town lost a lot of tax revenue.",
+              "pl": "Kiedy fabryka się wyniosła, miasto straciło sporo wpływów z podatków.",
+              "focusEn": "tax revenue",
+              "focusPl": "wpływów z podatków"
+            }
+          ],
+          "acceptedAnswers": [
+            "tax revenue",
+            "revenue"
+          ],
+          "acceptedTranslations": [
+            "wpływy z podatków",
+            "dochody podatkowe",
+            "wpływy podatkowe"
+          ]
+        },
+        {
+          "id": "economy.free-market",
+          "term": "free market",
+          "ipa": "/ˌfriː ˈmɑːrkɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "wolny rynek",
+          "definition": "An economy in which prices are set by competition, with little government control.",
+          "register": "neutralny",
+          "contextPl": "Model gospodarki",
+          "natural": "",
+          "forms": "",
+          "collocations": "free-market economy; believe in the free market",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "One man said the free market should decide which stores survive.",
+              "pl": "Jeden z mężczyzn powiedział, że to wolny rynek powinien decydować, które sklepy przetrwają.",
+              "focusEn": "free market",
+              "focusPl": "wolny rynek"
+            },
+            {
+              "en": "Others replied that the free market won't build sidewalks.",
+              "pl": "Inni odpowiedzieli, że wolny rynek nie zbuduje chodników.",
+              "focusEn": "free market",
+              "focusPl": "wolny rynek"
+            }
+          ],
+          "acceptedAnswers": [
+            "free market",
+            "free-market"
+          ],
+          "acceptedTranslations": [
+            "wolny rynek",
+            "gospodarka wolnorynkowa"
+          ]
+        },
+        {
+          "id": "economy.capitalism",
+          "term": "capitalism",
+          "ipa": "/ˈkæpɪtəlɪzəm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "kapitalizm",
+          "definition": "An economic system in which businesses are owned privately and run for profit.",
+          "register": "neutralny",
+          "contextPl": "Systemy gospodarcze",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "socialism",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The discussion turned into a debate about capitalism for a few minutes.",
+              "pl": "Dyskusja na kilka minut przerodziła się w debatę o kapitalizmie.",
+              "focusEn": "capitalism",
+              "focusPl": "kapitalizmie"
+            },
+            {
+              "en": "A student said capitalism works best with some rules.",
+              "pl": "Pewien student powiedział, że kapitalizm działa najlepiej z pewnymi zasadami.",
+              "focusEn": "capitalism",
+              "focusPl": "kapitalizm"
+            }
+          ],
+          "acceptedAnswers": [
+            "capitalism"
+          ],
+          "acceptedTranslations": [
+            "kapitalizm"
+          ]
+        },
+        {
+          "id": "economy.stimulus",
+          "term": "stimulus",
+          "ipa": "/ˈstɪmjələs/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "pakiet stymulacyjny",
+          "definition": "Money the government spends to help the economy grow during a difficult time.",
+          "register": "specjalistyczny",
+          "contextPl": "Pomoc państwa w kryzysie",
+          "natural": "",
+          "forms": "",
+          "collocations": "stimulus package; stimulus check; stimulus money",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Some of the federal stimulus money paid for the new park.",
+              "pl": "Część federalnych pieniędzy z pakietu stymulacyjnego poszła na nowy park.",
+              "focusEn": "stimulus",
+              "focusPl": "pakietu stymulacyjnego"
+            },
+            {
+              "en": "The stimulus helped, but the city still has a budget gap.",
+              "pl": "Pakiet stymulacyjny pomógł, ale miasto wciąż ma dziurę w budżecie.",
+              "focusEn": "stimulus",
+              "focusPl": "Pakiet stymulacyjny"
+            }
+          ],
+          "acceptedAnswers": [
+            "stimulus",
+            "stimulus package"
+          ],
+          "acceptedTranslations": [
+            "pakiet stymulacyjny",
+            "bodziec gospodarczy",
+            "pomoc rządowa"
+          ]
+        }
+      ]
+    }
+  ]
+}

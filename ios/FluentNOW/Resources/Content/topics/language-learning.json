@@ -1,0 +1,3336 @@
+{
+  "schemaVersion": 1,
+  "id": "language-learning",
+  "namePl": "Nauka języków",
+  "nameEn": "Language Learning",
+  "group": "education",
+  "symbol": "character.book.closed",
+  "summaryPl": "Znajomość języków, wymowa, gramatyka, słownictwo, porozumiewanie się mimo trudności i skuteczne metody nauki.",
+  "aliases": [
+    "nauka języków",
+    "język obcy",
+    "języki",
+    "gramatyka",
+    "wymowa",
+    "słownictwo",
+    "płynność",
+    "akcent",
+    "language learning",
+    "grammar",
+    "pronunciation",
+    "fluency",
+    "vocabulary"
+  ],
+  "categories": [
+    {
+      "id": "language-learning.languages",
+      "namePl": "Języki i ich znajomość",
+      "scenePl": "Spotkanie wymiany językowej w kawiarni, gdzie uczestnicy opowiadają o językach, którymi mówią",
+      "entries": [
+        {
+          "id": "language-learning.language",
+          "term": "language",
+          "ipa": "/ˈlæŋɡwɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "język",
+          "definition": "A system of words used by people of a particular country or group.",
+          "register": "neutralny",
+          "contextPl": "Mówienie o językach",
+          "natural": "",
+          "forms": "languages",
+          "collocations": "speak a language; learn a language; first language",
+          "synonyms": "tongue",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How many languages do you speak?",
+              "pl": "Iloma językami mówisz?",
+              "focusEn": "languages",
+              "focusPl": "językami"
+            },
+            {
+              "en": "Spanish was the first language I learned after English.",
+              "pl": "Hiszpański był pierwszym językiem, którego nauczyłem się po angielskim.",
+              "focusEn": "language",
+              "focusPl": "językiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "language"
+          ],
+          "acceptedTranslations": [
+            "język"
+          ]
+        },
+        {
+          "id": "language-learning.foreign-language",
+          "term": "foreign language",
+          "ipa": "/ˌfɔːrən ˈlæŋɡwɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "język obcy",
+          "definition": "A language that is not spoken in your own country.",
+          "register": "neutralny",
+          "contextPl": "Nauka innych języków",
+          "natural": "",
+          "forms": "foreign languages",
+          "collocations": "learn a foreign language; speak a foreign language",
+          "synonyms": "second language",
+          "antonyms": "native language",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Learning a foreign language after forty is harder, but it's possible.",
+              "pl": "Nauka języka obcego po czterdziestce jest trudniejsza, ale możliwa.",
+              "focusEn": "foreign language",
+              "focusPl": "języka obcego"
+            },
+            {
+              "en": "This group meets every Thursday to practice a foreign language over coffee.",
+              "pl": "Ta grupa spotyka się w każdy czwartek, żeby przy kawie ćwiczyć język obcy.",
+              "focusEn": "foreign language",
+              "focusPl": "język obcy"
+            }
+          ],
+          "acceptedAnswers": [
+            "foreign language",
+            "second language"
+          ],
+          "acceptedTranslations": [
+            "język obcy"
+          ]
+        },
+        {
+          "id": "language-learning.native-speaker",
+          "term": "native speaker",
+          "ipa": "/ˌneɪtɪv ˈspiːkər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "rodzimy użytkownik języka",
+          "definition": "A person who learned a language as a child as their first language.",
+          "register": "neutralny",
+          "contextPl": "Osoba, dla której język jest ojczysty",
+          "natural": "",
+          "forms": "native speakers",
+          "collocations": "native speaker of English; sound like a native speaker",
+          "synonyms": "",
+          "antonyms": "non-native speaker",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Talking to a native speaker every week helped me more than any app.",
+              "pl": "Rozmowy z rodzimym użytkownikiem języka co tydzień pomogły mi bardziej niż jakakolwiek aplikacja.",
+              "focusEn": "native speaker",
+              "focusPl": "rodzimym użytkownikiem języka"
+            },
+            {
+              "en": "Mark is a native speaker of English, and he's learning Polish here.",
+              "pl": "Mark jest rodzimym użytkownikiem angielskiego i uczy się tu polskiego.",
+              "focusEn": "native speaker",
+              "focusPl": "rodzimym użytkownikiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "native speaker"
+          ],
+          "acceptedTranslations": [
+            "rodzimy użytkownik języka",
+            "native speaker",
+            "osoba, dla której to język ojczysty"
+          ]
+        },
+        {
+          "id": "language-learning.native-language",
+          "term": "native language",
+          "ipa": "/ˌneɪtɪv ˈlæŋɡwɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "język ojczysty",
+          "definition": "The first language you learned as a child.",
+          "register": "neutralny",
+          "contextPl": "Pochodzenie językowe",
+          "natural": "first language",
+          "forms": "native languages",
+          "collocations": "",
+          "synonyms": "mother tongue; first language",
+          "antonyms": "foreign language",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My native language is Polish, but I use English at work every day.",
+              "pl": "Mój język ojczysty to polski, ale codziennie używam angielskiego w pracy.",
+              "focusEn": "native language",
+              "focusPl": "język ojczysty"
+            },
+            {
+              "en": "Try not to translate everything from your native language in your head.",
+              "pl": "Staraj się nie tłumaczyć w głowie wszystkiego ze swojego języka ojczystego.",
+              "focusEn": "native language",
+              "focusPl": "języka ojczystego"
+            }
+          ],
+          "acceptedAnswers": [
+            "native language",
+            "mother tongue",
+            "first language"
+          ],
+          "acceptedTranslations": [
+            "język ojczysty",
+            "pierwszy język"
+          ]
+        },
+        {
+          "id": "language-learning.bilingual",
+          "term": "bilingual",
+          "ipa": "/baɪˈlɪŋɡwəl/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "dwujęzyczny",
+          "definition": "Able to speak two languages equally well.",
+          "register": "neutralny",
+          "contextPl": "Biegłość w dwóch językach",
+          "natural": "",
+          "forms": "",
+          "collocations": "bilingual family; bilingual children; be bilingual",
+          "synonyms": "",
+          "antonyms": "monolingual",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Her kids are bilingual because their dad is American.",
+              "pl": "Jej dzieci są dwujęzyczne, bo ich tata jest Amerykaninem.",
+              "focusEn": "bilingual",
+              "focusPl": "dwujęzyczne"
+            },
+            {
+              "en": "I'm not bilingual, but I can hold a long conversation in English.",
+              "pl": "Nie jestem dwujęzyczny, ale potrafię prowadzić długą rozmowę po angielsku.",
+              "focusEn": "bilingual",
+              "focusPl": "dwujęzyczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "bilingual"
+          ],
+          "acceptedTranslations": [
+            "dwujęzyczny",
+            "dwujęzyczna"
+          ]
+        },
+        {
+          "id": "language-learning.fluent",
+          "term": "fluent",
+          "ipa": "/ˈfluːənt/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "płynny",
+          "definition": "Able to speak a language easily and well.",
+          "register": "neutralny",
+          "contextPl": "Swoboda mówienia w języku",
+          "natural": "",
+          "forms": "",
+          "collocations": "fluent in English; fluent speaker; become fluent",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "She's fluent in three languages and still comes here every week.",
+              "pl": "Ona mówi płynnie w trzech językach i nadal przychodzi tu co tydzień.",
+              "focusEn": "fluent",
+              "focusPl": "płynnie"
+            },
+            {
+              "en": "I want to be fluent enough to watch movies without subtitles.",
+              "pl": "Chcę być na tyle biegły, żeby oglądać filmy bez napisów.",
+              "focusEn": "fluent",
+              "focusPl": "biegły"
+            }
+          ],
+          "acceptedAnswers": [
+            "fluent",
+            "fluent in"
+          ],
+          "acceptedTranslations": [
+            "płynny",
+            "biegły",
+            "płynnie mówiący"
+          ]
+        },
+        {
+          "id": "language-learning.fluency",
+          "term": "fluency",
+          "ipa": "/ˈfluːənsi/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "płynność",
+          "definition": "The ability to speak a language easily and smoothly.",
+          "register": "neutralny",
+          "contextPl": "Ocena umiejętności mówienia",
+          "natural": "",
+          "forms": "",
+          "collocations": "improve your fluency; fluency in English",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "These conversations are great for your fluency, even if you make mistakes.",
+              "pl": "Te rozmowy świetnie wpływają na twoją płynność, nawet jeśli robisz błędy.",
+              "focusEn": "fluency",
+              "focusPl": "płynność"
+            },
+            {
+              "en": "Fluency comes from speaking a lot, not from reading grammar books.",
+              "pl": "Płynność bierze się z dużej ilości mówienia, a nie z czytania podręczników do gramatyki.",
+              "focusEn": "Fluency",
+              "focusPl": "Płynność"
+            }
+          ],
+          "acceptedAnswers": [
+            "fluency"
+          ],
+          "acceptedTranslations": [
+            "płynność",
+            "biegłość",
+            "płynność mówienia"
+          ]
+        },
+        {
+          "id": "language-learning.accent",
+          "term": "accent",
+          "ipa": "/ˈæksent/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "akcent",
+          "definition": "A way of pronouncing words that shows where someone is from.",
+          "register": "neutralny",
+          "contextPl": "Charakterystyczny sposób mówienia",
+          "natural": "",
+          "forms": "accents",
+          "collocations": "strong accent; American accent; foreign accent; lose your accent",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Nie myl z akcentem wyrazowym (stress).",
+          "examples": [
+            {
+              "en": "I love your accent, where are you from?",
+              "pl": "Uwielbiam twój akcent, skąd jesteś?",
+              "focusEn": "accent",
+              "focusPl": "akcent"
+            },
+            {
+              "en": "He has a strong Southern accent, so I don't always understand him.",
+              "pl": "Ma mocny południowy akcent, więc nie zawsze go rozumiem.",
+              "focusEn": "accent",
+              "focusPl": "akcent"
+            }
+          ],
+          "acceptedAnswers": [
+            "accent"
+          ],
+          "acceptedTranslations": [
+            "akcent",
+            "wymowa"
+          ]
+        },
+        {
+          "id": "language-learning.pick-up",
+          "term": "pick up",
+          "ipa": "/ˌpɪk ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "złapać",
+          "definition": "To learn a language or skill naturally, without formal study.",
+          "register": "potoczny",
+          "contextPl": "Uczenie się przez kontakt z językiem",
+          "natural": "learn",
+          "forms": "picked; picking",
+          "collocations": "pick up a language; pick up a few words",
+          "synonyms": "learn; acquire",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I picked up a little Italian while I was working in Rome.",
+              "pl": "Złapałem trochę włoskiego, kiedy pracowałem w Rzymie.",
+              "focusEn": "picked up",
+              "focusPl": "Złapałem"
+            },
+            {
+              "en": "Kids pick up languages much faster than adults.",
+              "pl": "Dzieci łapią języki dużo szybciej niż dorośli.",
+              "focusEn": "pick up",
+              "focusPl": "łapią"
+            }
+          ],
+          "acceptedAnswers": [
+            "pick up"
+          ],
+          "acceptedTranslations": [
+            "złapać",
+            "łapać",
+            "nauczyć się",
+            "podłapać"
+          ]
+        },
+        {
+          "id": "language-learning.rusty",
+          "term": "rusty",
+          "ipa": "/ˈrʌsti/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zardzewiały",
+          "definition": "Not as good as before because you have not practiced for a long time.",
+          "register": "potoczny",
+          "contextPl": "Wyjście z wprawy w języku",
+          "natural": "",
+          "forms": "rustier; rustiest",
+          "collocations": "my French is rusty; a bit rusty",
+          "synonyms": "out of practice",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My German is a bit rusty, so please be patient with me.",
+              "pl": "Mój niemiecki jest trochę zardzewiały, więc bądź dla mnie cierpliwy.",
+              "focusEn": "rusty",
+              "focusPl": "zardzewiały"
+            },
+            {
+              "en": "I haven't spoken Spanish in years, so I'm really rusty.",
+              "pl": "Od lat nie mówiłem po hiszpańsku, więc jestem naprawdę zardzewiały.",
+              "focusEn": "rusty",
+              "focusPl": "zardzewiały"
+            }
+          ],
+          "acceptedAnswers": [
+            "rusty",
+            "out of practice"
+          ],
+          "acceptedTranslations": [
+            "zardzewiały",
+            "wyszedłem z wprawy",
+            "zapomniany"
+          ]
+        },
+        {
+          "id": "language-learning.beginner",
+          "term": "beginner",
+          "ipa": "/bɪˈɡɪnər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "początkujący",
+          "definition": "A person who has just started learning a language.",
+          "register": "neutralny",
+          "contextPl": "Poziom zaawansowania",
+          "natural": "",
+          "forms": "beginners",
+          "collocations": "complete beginner; beginner level; course for beginners",
+          "synonyms": "novice",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I'm a complete beginner in Japanese, so I only know \"hello\" and \"thank you\" so far.",
+              "pl": "Jestem całkowicie początkujący z japońskiego, więc znam tylko „cześć” i „dziękuję”.",
+              "focusEn": "beginner",
+              "focusPl": "początkujący"
+            },
+            {
+              "en": "The table by the window is for beginners who want to practice basic phrases.",
+              "pl": "Stolik przy oknie jest dla początkujących, którzy chcą ćwiczyć podstawowe zwroty.",
+              "focusEn": "beginners",
+              "focusPl": "początkujących"
+            }
+          ],
+          "acceptedAnswers": [
+            "beginner"
+          ],
+          "acceptedTranslations": [
+            "początkujący",
+            "początkująca"
+          ]
+        },
+        {
+          "id": "language-learning.intermediate",
+          "term": "intermediate",
+          "ipa": "/ˌɪntərˈmiːdiət/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "średniozaawansowany",
+          "definition": "Having some knowledge of a language, between beginner and advanced.",
+          "register": "neutralny",
+          "contextPl": "Poziom zaawansowania",
+          "natural": "",
+          "forms": "",
+          "collocations": "intermediate level; intermediate students",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've been stuck at the intermediate level for two years.",
+              "pl": "Od dwóch lat utknąłem na poziomie średniozaawansowanym.",
+              "focusEn": "intermediate",
+              "focusPl": "średniozaawansowanym"
+            },
+            {
+              "en": "Most people at this meetup are intermediate learners.",
+              "pl": "Większość osób na tym spotkaniu to uczniowie średniozaawansowani.",
+              "focusEn": "intermediate",
+              "focusPl": "średniozaawansowani"
+            }
+          ],
+          "acceptedAnswers": [
+            "intermediate"
+          ],
+          "acceptedTranslations": [
+            "średniozaawansowany",
+            "na poziomie średnim"
+          ]
+        },
+        {
+          "id": "language-learning.advanced",
+          "term": "advanced",
+          "ipa": "/ədˈvænst/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zaawansowany",
+          "definition": "At a high level of knowledge or skill in a language.",
+          "register": "neutralny",
+          "contextPl": "Poziom zaawansowania",
+          "natural": "",
+          "forms": "",
+          "collocations": "advanced level; advanced learners",
+          "synonyms": "",
+          "antonyms": "beginner",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Her English is so advanced that people think she grew up in Chicago.",
+              "pl": "Jej angielski jest tak zaawansowany, że ludzie myślą, że dorastała w Chicago.",
+              "focusEn": "advanced",
+              "focusPl": "zaawansowany"
+            },
+            {
+              "en": "The advanced group talks about politics and news.",
+              "pl": "Grupa zaawansowana rozmawia o polityce i wiadomościach.",
+              "focusEn": "advanced",
+              "focusPl": "zaawansowana"
+            }
+          ],
+          "acceptedAnswers": [
+            "advanced"
+          ],
+          "acceptedTranslations": [
+            "zaawansowany"
+          ]
+        },
+        {
+          "id": "language-learning.dialect",
+          "term": "dialect",
+          "ipa": "/ˈdaɪəlekt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "dialekt",
+          "definition": "A form of a language spoken in one region.",
+          "register": "neutralny",
+          "contextPl": "Regionalne odmiany języka",
+          "natural": "",
+          "forms": "dialects",
+          "collocations": "local dialect; speak a dialect",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My grandparents speak a dialect that even I can't fully understand.",
+              "pl": "Moi dziadkowie mówią dialektem, którego nawet ja nie do końca rozumiem.",
+              "focusEn": "dialect",
+              "focusPl": "dialektem"
+            },
+            {
+              "en": "Is the Spanish in Mexico a different dialect?",
+              "pl": "Czy hiszpański w Meksyku to inny dialekt?",
+              "focusEn": "dialect",
+              "focusPl": "dialekt"
+            }
+          ],
+          "acceptedAnswers": [
+            "dialect"
+          ],
+          "acceptedTranslations": [
+            "dialekt",
+            "gwara"
+          ]
+        },
+        {
+          "id": "language-learning.polyglot",
+          "term": "polyglot",
+          "ipa": "/ˈpɑːliɡlɑːt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "rare",
+          "translation": "poliglota",
+          "definition": "A person who speaks many languages.",
+          "register": "formalny",
+          "contextPl": "Osoba znająca wiele języków",
+          "natural": "",
+          "forms": "polyglots",
+          "collocations": "",
+          "synonyms": "multilingual",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The organizer is a real polyglot who speaks seven languages.",
+              "pl": "Organizator to prawdziwy poliglota, który mówi w siedmiu językach.",
+              "focusEn": "polyglot",
+              "focusPl": "poliglota"
+            },
+            {
+              "en": "You don't need to be a polyglot to enjoy these evenings.",
+              "pl": "Nie musisz być poliglotą, żeby czerpać przyjemność z tych wieczorów.",
+              "focusEn": "polyglot",
+              "focusPl": "poliglotą"
+            }
+          ],
+          "acceptedAnswers": [
+            "polyglot"
+          ],
+          "acceptedTranslations": [
+            "poliglota",
+            "poliglotka"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "language-learning.pronunciation",
+      "namePl": "Wymowa",
+      "scenePl": "Lekcja wymowy online, podczas której lektorka nagrywa ucznia i poprawia jego dźwięki",
+      "entries": [
+        {
+          "id": "language-learning.pronunciation",
+          "term": "pronunciation",
+          "ipa": "/prəˌnʌnsiˈeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wymowa",
+          "definition": "The way a word or language is said.",
+          "register": "neutralny",
+          "contextPl": "Ćwiczenie poprawnego wymawiania",
+          "natural": "",
+          "forms": "",
+          "collocations": "good pronunciation; work on your pronunciation; American pronunciation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pisownia bez „o”: pronunciation, nie „pronounciation”.",
+          "examples": [
+            {
+              "en": "Your pronunciation has improved a lot since our last lesson.",
+              "pl": "Twoja wymowa bardzo się poprawiła od naszej ostatniej lekcji.",
+              "focusEn": "pronunciation",
+              "focusPl": "wymowa"
+            },
+            {
+              "en": "Let's work on the pronunciation of the words from today's list.",
+              "pl": "Popracujmy nad wymową słów z dzisiejszej listy.",
+              "focusEn": "pronunciation",
+              "focusPl": "wymową"
+            }
+          ],
+          "acceptedAnswers": [
+            "pronunciation"
+          ],
+          "acceptedTranslations": [
+            "wymowa"
+          ]
+        },
+        {
+          "id": "language-learning.mispronounce",
+          "term": "mispronounce",
+          "ipa": "/ˌmɪsprəˈnaʊns/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "źle wymawiać",
+          "definition": "To say a word in the wrong way.",
+          "register": "neutralny",
+          "contextPl": "Błędy w wymowie",
+          "natural": "",
+          "forms": "mispronounced; mispronouncing",
+          "collocations": "mispronounce a word; mispronounce a name",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Many Polish learners mispronounce the word \"comfortable\" at first.",
+              "pl": "Wielu Polaków na początku źle wymawia słowo „comfortable”.",
+              "focusEn": "mispronounce",
+              "focusPl": "źle wymawia"
+            },
+            {
+              "en": "I mispronounced \"island\" for years because of the silent S.",
+              "pl": "Przez lata źle wymawiałem „island” z powodu niemego S.",
+              "focusEn": "mispronounced",
+              "focusPl": "źle wymawiałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "mispronounce"
+          ],
+          "acceptedTranslations": [
+            "źle wymawiać",
+            "źle wymówić",
+            "przekręcać"
+          ]
+        },
+        {
+          "id": "language-learning.stress",
+          "term": "stress",
+          "ipa": "/stres/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "akcent wyrazowy",
+          "definition": "The force put on one part of a word when you say it.",
+          "register": "specjalistyczny",
+          "contextPl": "Akcentowanie sylab",
+          "natural": "",
+          "forms": "",
+          "collocations": "word stress; put the stress on; stress falls on",
+          "synonyms": "emphasis",
+          "antonyms": "",
+          "notePl": "W polskim akcent pada zwykle na przedostatnią sylabę, w angielskim nie ma stałej reguły.",
+          "examples": [
+            {
+              "en": "In \"photographer,\" the stress is on the second syllable.",
+              "pl": "W słowie „photographer” akcent wyrazowy pada na drugą sylabę.",
+              "focusEn": "stress",
+              "focusPl": "akcent wyrazowy"
+            },
+            {
+              "en": "Listen again and tell me where you hear the stress.",
+              "pl": "Posłuchaj jeszcze raz i powiedz, gdzie słyszysz akcent.",
+              "focusEn": "stress",
+              "focusPl": "akcent"
+            }
+          ],
+          "acceptedAnswers": [
+            "stress",
+            "word stress"
+          ],
+          "acceptedTranslations": [
+            "akcent wyrazowy",
+            "akcent",
+            "nacisk"
+          ]
+        },
+        {
+          "id": "language-learning.syllable",
+          "term": "syllable",
+          "ipa": "/ˈsɪləbəl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "sylaba",
+          "definition": "A part of a word that contains one vowel sound.",
+          "register": "neutralny",
+          "contextPl": "Budowa słowa",
+          "natural": "",
+          "forms": "syllables",
+          "collocations": "first syllable; stressed syllable",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"Comfortable\" has four syllables, but Americans often say only three.",
+              "pl": "„Comfortable” ma cztery sylaby, ale Amerykanie często wymawiają tylko trzy.",
+              "focusEn": "syllables",
+              "focusPl": "sylaby"
+            },
+            {
+              "en": "Clap for each syllable while you say the word.",
+              "pl": "Klaśnij przy każdej sylabie, kiedy mówisz to słowo.",
+              "focusEn": "syllable",
+              "focusPl": "sylabie"
+            }
+          ],
+          "acceptedAnswers": [
+            "syllable"
+          ],
+          "acceptedTranslations": [
+            "sylaba"
+          ]
+        },
+        {
+          "id": "language-learning.sound",
+          "term": "sound",
+          "ipa": "/saʊnd/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "dźwięk",
+          "definition": "One of the noises that make up the words of a language.",
+          "register": "neutralny",
+          "contextPl": "Głoski w wymowie",
+          "natural": "",
+          "forms": "sounds",
+          "collocations": "the th sound; vowel sound",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The \"th\" sound doesn't exist in Polish, so let's practice it slowly.",
+              "pl": "Dźwięk „th” nie istnieje w polskim, więc poćwiczmy go powoli.",
+              "focusEn": "sound",
+              "focusPl": "Dźwięk"
+            },
+            {
+              "en": "Those two words differ by only one sound.",
+              "pl": "Te dwa słowa różnią się tylko jedną głoską.",
+              "focusEn": "sound",
+              "focusPl": "głoską"
+            }
+          ],
+          "acceptedAnswers": [
+            "sound"
+          ],
+          "acceptedTranslations": [
+            "dźwięk",
+            "głoska"
+          ]
+        },
+        {
+          "id": "language-learning.vowel",
+          "term": "vowel",
+          "ipa": "/ˈvaʊəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "samogłoska",
+          "definition": "A sound like a, e, i, o or u made with the mouth open.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje głosek",
+          "natural": "",
+          "forms": "vowels",
+          "collocations": "short vowel; long vowel",
+          "synonyms": "",
+          "antonyms": "consonant",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "English has many more vowel sounds than Polish.",
+              "pl": "Angielski ma dużo więcej samogłoskowych dźwięków niż polski.",
+              "focusEn": "vowel",
+              "focusPl": "samogłoskowych"
+            },
+            {
+              "en": "The vowel in \"live\" is shorter than the one in \"leave\" on this recording.",
+              "pl": "Samogłoska w „live” jest na tym nagraniu krótsza niż w „leave”.",
+              "focusEn": "vowel",
+              "focusPl": "Samogłoska"
+            }
+          ],
+          "acceptedAnswers": [
+            "vowel"
+          ],
+          "acceptedTranslations": [
+            "samogłoska"
+          ]
+        },
+        {
+          "id": "language-learning.consonant",
+          "term": "consonant",
+          "ipa": "/ˈkɑːnsənənt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "spółgłoska",
+          "definition": "A speech sound that is not a vowel, like b, t or s.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje głosek",
+          "natural": "",
+          "forms": "consonants",
+          "collocations": "consonant sound; double consonant",
+          "synonyms": "",
+          "antonyms": "vowel",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't add an extra vowel between the two consonants at the start of \"street\" in this exercise.",
+              "pl": "Nie dodawaj dodatkowej samogłoski między spółgłoskami na początku „street”.",
+              "focusEn": "consonants",
+              "focusPl": "spółgłoskami"
+            },
+            {
+              "en": "Polish speakers usually pronounce final consonants well.",
+              "pl": "Polacy zwykle dobrze wymawiają końcowe spółgłoski.",
+              "focusEn": "consonants",
+              "focusPl": "spółgłoski"
+            }
+          ],
+          "acceptedAnswers": [
+            "consonant"
+          ],
+          "acceptedTranslations": [
+            "spółgłoska"
+          ]
+        },
+        {
+          "id": "language-learning.silent-letter",
+          "term": "silent letter",
+          "ipa": "/ˌsaɪlənt ˈletər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "niema litera",
+          "definition": "A letter that is written but not pronounced.",
+          "register": "neutralny",
+          "contextPl": "Pisownia a wymowa",
+          "natural": "",
+          "forms": "silent letters",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przykłady: k w „knife”, b w „comb”.",
+          "examples": [
+            {
+              "en": "The K in \"knife\" is a silent letter.",
+              "pl": "K w „knife” to niema litera.",
+              "focusEn": "silent letter",
+              "focusPl": "niema litera"
+            },
+            {
+              "en": "English has so many silent letters that spelling feels random.",
+              "pl": "Angielski ma tyle niemych liter, że pisownia wydaje się przypadkowa.",
+              "focusEn": "silent letters",
+              "focusPl": "niemych liter"
+            }
+          ],
+          "acceptedAnswers": [
+            "silent letter"
+          ],
+          "acceptedTranslations": [
+            "niema litera",
+            "litera niewymawiana"
+          ]
+        },
+        {
+          "id": "language-learning.intonation",
+          "term": "intonation",
+          "ipa": "/ˌɪntəˈneɪʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "intonacja",
+          "definition": "The way your voice goes up and down when you speak.",
+          "register": "specjalistyczny",
+          "contextPl": "Melodia zdania",
+          "natural": "",
+          "forms": "",
+          "collocations": "rising intonation; falling intonation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your intonation makes the question sound like a statement.",
+              "pl": "Twoja intonacja sprawia, że pytanie brzmi jak stwierdzenie.",
+              "focusEn": "intonation",
+              "focusPl": "intonacja"
+            },
+            {
+              "en": "Copy my intonation exactly, like you're singing a song.",
+              "pl": "Skopiuj dokładnie moją intonację, jakbyś śpiewał piosenkę.",
+              "focusEn": "intonation",
+              "focusPl": "intonację"
+            }
+          ],
+          "acceptedAnswers": [
+            "intonation"
+          ],
+          "acceptedTranslations": [
+            "intonacja",
+            "melodia zdania"
+          ]
+        },
+        {
+          "id": "language-learning.tongue-twister",
+          "term": "tongue twister",
+          "ipa": "/ˈtʌŋ ˌtwɪstər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "łamaniec językowy",
+          "definition": "A phrase that is hard to say quickly because of similar sounds.",
+          "register": "potoczny",
+          "contextPl": "Zabawa i ćwiczenie wymowy",
+          "natural": "",
+          "forms": "tongue twisters",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Polski przykład: „W Szczebrzeszynie chrząszcz brzmi w trzcinie”.",
+          "examples": [
+            {
+              "en": "Let's warm up with a tongue twister about sea shells.",
+              "pl": "Rozgrzejmy się łamańcem językowym o muszelkach.",
+              "focusEn": "tongue twister",
+              "focusPl": "łamańcem językowym"
+            },
+            {
+              "en": "I can't say this tongue twister fast without laughing.",
+              "pl": "Nie umiem szybko powiedzieć tego łamańca językowego bez śmiechu.",
+              "focusEn": "tongue twister",
+              "focusPl": "łamańca językowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "tongue twister"
+          ],
+          "acceptedTranslations": [
+            "łamaniec językowy",
+            "łamaniec",
+            "łamigłówka językowa"
+          ]
+        },
+        {
+          "id": "language-learning.sound-like",
+          "term": "sound like",
+          "ipa": "/ˈsaʊnd laɪk/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "brzmieć jak",
+          "definition": "To seem similar to something when you hear it.",
+          "register": "neutralny",
+          "contextPl": "Porównywanie brzmienia słów",
+          "natural": "",
+          "forms": "sounded; sounding",
+          "collocations": "sound like a native; sound alike",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "To me, \"ship\" and \"sheep\" sound like exactly the same word.",
+              "pl": "Dla mnie „ship” i „sheep” brzmią jak dokładnie to samo słowo.",
+              "focusEn": "sound like",
+              "focusPl": "brzmią jak"
+            },
+            {
+              "en": "You sound like an American when you say \"water\" like that.",
+              "pl": "Brzmisz jak Amerykanin, kiedy tak mówisz „water”.",
+              "focusEn": "sound like",
+              "focusPl": "Brzmisz jak"
+            }
+          ],
+          "acceptedAnswers": [
+            "sound like"
+          ],
+          "acceptedTranslations": [
+            "brzmieć jak",
+            "brzmieć podobnie do"
+          ]
+        },
+        {
+          "id": "language-learning.mumble",
+          "term": "mumble",
+          "ipa": "/ˈmʌmbəl/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "mamrotać",
+          "definition": "To speak quietly and unclearly.",
+          "register": "neutralny",
+          "contextPl": "Niewyraźne mówienie",
+          "natural": "",
+          "forms": "mumbled; mumbling",
+          "collocations": "mumble something; stop mumbling",
+          "synonyms": "mutter",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't mumble, open your mouth more on the vowels.",
+              "pl": "Nie mamrocz, bardziej otwieraj usta przy samogłoskach.",
+              "focusEn": "mumble",
+              "focusPl": "mamrocz"
+            },
+            {
+              "en": "I mumble when I'm not sure how to say a word.",
+              "pl": "Mamroczę, kiedy nie wiem, jak powiedzieć jakieś słowo.",
+              "focusEn": "mumble",
+              "focusPl": "Mamroczę"
+            }
+          ],
+          "acceptedAnswers": [
+            "mumble"
+          ],
+          "acceptedTranslations": [
+            "mamrotać",
+            "wymamrotać",
+            "mówić niewyraźnie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "language-learning.grammar",
+      "namePl": "Gramatyka",
+      "scenePl": "Zajęcia z gramatyki w szkole językowej; na tablicy wypisane przykładowe zdania",
+      "entries": [
+        {
+          "id": "language-learning.grammar",
+          "term": "grammar",
+          "ipa": "/ˈɡræmər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "gramatyka",
+          "definition": "The rules about how words change and combine into sentences.",
+          "register": "neutralny",
+          "contextPl": "Zasady języka",
+          "natural": "",
+          "forms": "",
+          "collocations": "English grammar; grammar rules; grammar mistake",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Today's grammar topic is the difference between \"for\" and \"since\" with dates.",
+              "pl": "Dzisiejszy temat z gramatyki to różnica między „for” a „since”.",
+              "focusEn": "grammar",
+              "focusPl": "gramatyki"
+            },
+            {
+              "en": "My grammar is fine, but I need more speaking practice.",
+              "pl": "Moja gramatyka jest w porządku, ale potrzebuję więcej ćwiczeń z mówienia.",
+              "focusEn": "grammar",
+              "focusPl": "gramatyka"
+            }
+          ],
+          "acceptedAnswers": [
+            "grammar"
+          ],
+          "acceptedTranslations": [
+            "gramatyka"
+          ]
+        },
+        {
+          "id": "language-learning.tense",
+          "term": "tense",
+          "ipa": "/tens/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czas gramatyczny",
+          "definition": "A form of a verb that shows when something happens.",
+          "register": "specjalistyczny",
+          "contextPl": "Czasy w angielskim",
+          "natural": "",
+          "forms": "tenses",
+          "collocations": "past tense; present tense; use the right tense",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Which tense do we use for actions that are finished?",
+              "pl": "Jakiego czasu używamy do zakończonych czynności?",
+              "focusEn": "tense",
+              "focusPl": "czasu"
+            },
+            {
+              "en": "English has more tenses than Polish, but they're logical.",
+              "pl": "Angielski ma więcej czasów niż polski, ale są logiczne.",
+              "focusEn": "tenses",
+              "focusPl": "czasów"
+            }
+          ],
+          "acceptedAnswers": [
+            "tense"
+          ],
+          "acceptedTranslations": [
+            "czas gramatyczny",
+            "czas"
+          ]
+        },
+        {
+          "id": "language-learning.verb",
+          "term": "verb",
+          "ipa": "/vɝːb/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "czasownik",
+          "definition": "A word that describes an action or state, for example run, eat or be.",
+          "register": "neutralny",
+          "contextPl": "Części mowy",
+          "natural": "",
+          "forms": "verbs",
+          "collocations": "main verb; modal verb; regular verb",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Underline the main verb in each sentence on the board.",
+              "pl": "Podkreśl główny czasownik w każdym zdaniu na tablicy.",
+              "focusEn": "verb",
+              "focusPl": "czasownik"
+            },
+            {
+              "en": "\"Have\" is a verb with many different meanings.",
+              "pl": "„Have” to czasownik o wielu różnych znaczeniach.",
+              "focusEn": "verb",
+              "focusPl": "czasownik"
+            }
+          ],
+          "acceptedAnswers": [
+            "verb"
+          ],
+          "acceptedTranslations": [
+            "czasownik"
+          ]
+        },
+        {
+          "id": "language-learning.noun",
+          "term": "noun",
+          "ipa": "/naʊn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "rzeczownik",
+          "definition": "A word that names a person, place or thing.",
+          "register": "neutralny",
+          "contextPl": "Części mowy",
+          "natural": "",
+          "forms": "nouns",
+          "collocations": "countable noun; uncountable noun",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"Advice\" is an uncountable noun, so we never say \"advices\" in English.",
+              "pl": "„Advice” to niepoliczalny rzeczownik, więc nigdy nie mówimy „advices”.",
+              "focusEn": "noun",
+              "focusPl": "rzeczownik"
+            },
+            {
+              "en": "Find every noun in the second sentence.",
+              "pl": "Znajdź każdy rzeczownik w drugim zdaniu.",
+              "focusEn": "noun",
+              "focusPl": "rzeczownik"
+            }
+          ],
+          "acceptedAnswers": [
+            "noun"
+          ],
+          "acceptedTranslations": [
+            "rzeczownik"
+          ]
+        },
+        {
+          "id": "language-learning.adjective",
+          "term": "adjective",
+          "ipa": "/ˈædʒɪktɪv/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "przymiotnik",
+          "definition": "A word that describes a noun, for example big, old or happy.",
+          "register": "neutralny",
+          "contextPl": "Części mowy",
+          "natural": "",
+          "forms": "adjectives",
+          "collocations": "comparative adjective; use an adjective",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "In English, the adjective usually comes before the noun.",
+              "pl": "W angielskim przymiotnik zwykle stoi przed rzeczownikiem.",
+              "focusEn": "adjective",
+              "focusPl": "przymiotnik"
+            },
+            {
+              "en": "Can you think of a stronger adjective than \"good\"?",
+              "pl": "Przychodzi ci do głowy mocniejszy przymiotnik niż „good”?",
+              "focusEn": "adjective",
+              "focusPl": "przymiotnik"
+            }
+          ],
+          "acceptedAnswers": [
+            "adjective"
+          ],
+          "acceptedTranslations": [
+            "przymiotnik"
+          ]
+        },
+        {
+          "id": "language-learning.preposition",
+          "term": "preposition",
+          "ipa": "/ˌprepəˈzɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przyimek",
+          "definition": "A word like \"in,\" \"on\" or \"at\" that shows place, time or direction.",
+          "register": "neutralny",
+          "contextPl": "Części mowy",
+          "natural": "",
+          "forms": "prepositions",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Polish learners often use the wrong preposition after \"arrive\" in these sentences.",
+              "pl": "Polacy często używają złego przyimka z „arrive”.",
+              "focusEn": "preposition",
+              "focusPl": "przyimka"
+            },
+            {
+              "en": "There's no simple rule for this preposition, so you have to memorize it.",
+              "pl": "Nie ma prostej reguły dla tego przyimka, więc trzeba go zapamiętać.",
+              "focusEn": "preposition",
+              "focusPl": "przyimka"
+            }
+          ],
+          "acceptedAnswers": [
+            "preposition"
+          ],
+          "acceptedTranslations": [
+            "przyimek"
+          ]
+        },
+        {
+          "id": "language-learning.article",
+          "term": "article",
+          "ipa": "/ˈɑːrtɪkəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przedimek",
+          "definition": "The words \"a,\" \"an\" and \"the\" used before nouns.",
+          "register": "specjalistyczny",
+          "contextPl": "Części mowy",
+          "natural": "",
+          "forms": "articles",
+          "collocations": "definite article; indefinite article",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Polski nie ma przedimków, dlatego są dla Polaków trudne.",
+          "examples": [
+            {
+              "en": "Polish doesn't have articles, so I always forget to write \"the\" in my sentences.",
+              "pl": "W polskim nie ma przedimków, więc zawsze zapominam o „the”.",
+              "focusEn": "articles",
+              "focusPl": "przedimków"
+            },
+            {
+              "en": "Do we need an article before \"breakfast\" in this sentence?",
+              "pl": "Czy w tym zdaniu potrzebujemy przedimka przed „breakfast”?",
+              "focusEn": "article",
+              "focusPl": "przedimka"
+            }
+          ],
+          "acceptedAnswers": [
+            "article"
+          ],
+          "acceptedTranslations": [
+            "przedimek",
+            "rodzajnik"
+          ]
+        },
+        {
+          "id": "language-learning.irregular-verb",
+          "term": "irregular verb",
+          "ipa": "/ɪˌreɡjələr ˈvɝːb/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "czasownik nieregularny",
+          "definition": "A verb whose past forms do not follow the usual -ed pattern.",
+          "register": "neutralny",
+          "contextPl": "Odmiana czasowników",
+          "natural": "",
+          "forms": "irregular verbs",
+          "collocations": "list of irregular verbs",
+          "synonyms": "",
+          "antonyms": "regular verb",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"Go, went, gone\" is the most common irregular verb.",
+              "pl": "„Go, went, gone” to najczęstszy czasownik nieregularny.",
+              "focusEn": "irregular verb",
+              "focusPl": "czasownik nieregularny"
+            },
+            {
+              "en": "We'll have a quiz on irregular verbs next Monday.",
+              "pl": "W przyszły poniedziałek będzie kartkówka z czasowników nieregularnych.",
+              "focusEn": "irregular verbs",
+              "focusPl": "czasowników nieregularnych"
+            }
+          ],
+          "acceptedAnswers": [
+            "irregular verb"
+          ],
+          "acceptedTranslations": [
+            "czasownik nieregularny"
+          ]
+        },
+        {
+          "id": "language-learning.plural",
+          "term": "plural",
+          "ipa": "/ˈplʊrəl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "liczba mnoga",
+          "definition": "The form of a word that shows more than one.",
+          "register": "neutralny",
+          "contextPl": "Liczba rzeczowników",
+          "natural": "",
+          "forms": "plurals",
+          "collocations": "plural form; in the plural",
+          "synonyms": "",
+          "antonyms": "singular",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The plural of \"child\" is \"children\" and never \"childs\" in English.",
+              "pl": "Liczba mnoga od „child” to „children”, a nie „childs”.",
+              "focusEn": "plural",
+              "focusPl": "Liczba mnoga"
+            },
+            {
+              "en": "Put all the nouns on the board into the plural.",
+              "pl": "Zamień wszystkie rzeczowniki z tablicy na liczbę mnogą.",
+              "focusEn": "plural",
+              "focusPl": "liczbę mnogą"
+            }
+          ],
+          "acceptedAnswers": [
+            "plural"
+          ],
+          "acceptedTranslations": [
+            "liczba mnoga"
+          ]
+        },
+        {
+          "id": "language-learning.sentence",
+          "term": "sentence",
+          "ipa": "/ˈsentəns/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "zdanie",
+          "definition": "A group of words with a subject and a verb that expresses a complete idea.",
+          "register": "neutralny",
+          "contextPl": "Budowa wypowiedzi",
+          "natural": "",
+          "forms": "sentences",
+          "collocations": "write a sentence; complete the sentence",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Write a sentence with each new word.",
+              "pl": "Napisz zdanie z każdym nowym słowem.",
+              "focusEn": "sentence",
+              "focusPl": "zdanie"
+            },
+            {
+              "en": "This sentence is correct, but it sounds a bit formal.",
+              "pl": "To zdanie jest poprawne, ale brzmi trochę oficjalnie.",
+              "focusEn": "sentence",
+              "focusPl": "zdanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "sentence"
+          ],
+          "acceptedTranslations": [
+            "zdanie"
+          ]
+        },
+        {
+          "id": "language-learning.word-order",
+          "term": "word order",
+          "ipa": "/ˈwɝːd ˌɔːrdər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "szyk zdania",
+          "definition": "The order in which words are placed in a sentence.",
+          "register": "neutralny",
+          "contextPl": "Kolejność wyrazów w zdaniu",
+          "natural": "",
+          "forms": "",
+          "collocations": "correct word order; word order in questions",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Angielski ma sztywniejszy szyk niż polski.",
+          "examples": [
+            {
+              "en": "In English, word order is much stricter than in Polish.",
+              "pl": "W angielskim szyk zdania jest dużo sztywniejszy niż w polskim.",
+              "focusEn": "word order",
+              "focusPl": "szyk zdania"
+            },
+            {
+              "en": "Check the word order in your questions, especially the ones with \"do\" at the start.",
+              "pl": "Sprawdź szyk zdania w pytaniach, zwłaszcza z „do”.",
+              "focusEn": "word order",
+              "focusPl": "szyk zdania"
+            }
+          ],
+          "acceptedAnswers": [
+            "word order"
+          ],
+          "acceptedTranslations": [
+            "szyk zdania",
+            "kolejność słów",
+            "szyk wyrazów"
+          ]
+        },
+        {
+          "id": "language-learning.conjugate",
+          "term": "conjugate",
+          "ipa": "/ˈkɑːndʒəɡeɪt/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "odmieniać",
+          "definition": "To list or use the different forms of a verb.",
+          "register": "specjalistyczny",
+          "contextPl": "Odmiana czasowników przez osoby",
+          "natural": "",
+          "forms": "conjugated; conjugating",
+          "collocations": "conjugate a verb",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Angielskie czasowniki odmieniają się bardzo słabo w porównaniu z polskimi.",
+          "examples": [
+            {
+              "en": "English verbs are easy to conjugate compared to Polish ones.",
+              "pl": "Angielskie czasowniki łatwo odmieniać w porównaniu z polskimi.",
+              "focusEn": "conjugate",
+              "focusPl": "odmieniać"
+            },
+            {
+              "en": "Can you conjugate \"to be\" in the past tense?",
+              "pl": "Potrafisz odmienić „to be” w czasie przeszłym?",
+              "focusEn": "conjugate",
+              "focusPl": "odmienić"
+            }
+          ],
+          "acceptedAnswers": [
+            "conjugate"
+          ],
+          "acceptedTranslations": [
+            "odmieniać",
+            "odmienić",
+            "koniugować"
+          ]
+        },
+        {
+          "id": "language-learning.phrasal-verb",
+          "term": "phrasal verb",
+          "ipa": "/ˌfreɪzəl ˈvɝːb/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czasownik frazowy",
+          "definition": "A verb with a small word like \"up\" or \"out\" that creates a new meaning.",
+          "register": "neutralny",
+          "contextPl": "Typowo angielskie konstrukcje",
+          "natural": "",
+          "forms": "phrasal verbs",
+          "collocations": "common phrasal verbs; learn phrasal verbs",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"Give up\" is a phrasal verb that means \"stop trying\" in most contexts.",
+              "pl": "„Give up” to czasownik frazowy, który znaczy „przestać się starać”.",
+              "focusEn": "phrasal verb",
+              "focusPl": "czasownik frazowy"
+            },
+            {
+              "en": "Native speakers use phrasal verbs all the time in casual conversation.",
+              "pl": "Rodzimi użytkownicy w swobodnej rozmowie cały czas używają czasowników frazowych.",
+              "focusEn": "phrasal verbs",
+              "focusPl": "czasowników frazowych"
+            }
+          ],
+          "acceptedAnswers": [
+            "phrasal verb"
+          ],
+          "acceptedTranslations": [
+            "czasownik frazowy"
+          ]
+        },
+        {
+          "id": "language-learning.grammatical",
+          "term": "grammatical",
+          "ipa": "/ɡrəˈmætɪkəl/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "poprawny gramatycznie",
+          "definition": "Following the rules of grammar.",
+          "register": "neutralny",
+          "contextPl": "Ocena poprawności zdań",
+          "natural": "correct",
+          "forms": "",
+          "collocations": "grammatical sentence; grammatical error",
+          "synonyms": "correct",
+          "antonyms": "ungrammatical",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Is this sentence grammatical, or does it just sound strange?",
+              "pl": "Czy to zdanie jest poprawne gramatycznie, czy tylko dziwnie brzmi?",
+              "focusEn": "grammatical",
+              "focusPl": "poprawne gramatycznie"
+            },
+            {
+              "en": "Your essay had only two grammatical errors this time.",
+              "pl": "Twoje wypracowanie miało tym razem tylko dwa błędy gramatyczne.",
+              "focusEn": "grammatical",
+              "focusPl": "gramatyczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "grammatical"
+          ],
+          "acceptedTranslations": [
+            "poprawny gramatycznie",
+            "gramatyczny"
+          ]
+        },
+        {
+          "id": "language-learning.exception",
+          "term": "exception",
+          "ipa": "/ɪkˈsepʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wyjątek",
+          "definition": "A case that does not follow the general rule.",
+          "register": "neutralny",
+          "contextPl": "Wyjątki od reguł",
+          "natural": "",
+          "forms": "exceptions",
+          "collocations": "an exception to the rule; with the exception of",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Every rule in this chapter has at least one exception.",
+              "pl": "Każda reguła w tym rozdziale ma co najmniej jeden wyjątek.",
+              "focusEn": "exception",
+              "focusPl": "wyjątek"
+            },
+            {
+              "en": "\"Fish\" is an exception because the plural is also \"fish\" on the board.",
+              "pl": "„Fish” to wyjątek, bo liczba mnoga to też „fish”.",
+              "focusEn": "exception",
+              "focusPl": "wyjątek"
+            }
+          ],
+          "acceptedAnswers": [
+            "exception"
+          ],
+          "acceptedTranslations": [
+            "wyjątek"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "language-learning.vocabulary",
+      "namePl": "Słownictwo i znaczenia",
+      "scenePl": "Uczeń czyta na tablecie artykuł po angielsku i sprawdza nieznane słowa",
+      "entries": [
+        {
+          "id": "language-learning.vocabulary",
+          "term": "vocabulary",
+          "ipa": "/voʊˈkæbjəleri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "słownictwo",
+          "definition": "All the words you know in a language.",
+          "register": "neutralny",
+          "contextPl": "Zasób słów",
+          "natural": "words",
+          "forms": "",
+          "collocations": "build your vocabulary; expand your vocabulary; vocabulary list",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na co dzień często skracane do „vocab”.",
+          "examples": [
+            {
+              "en": "Reading articles like this one is the best way to build your vocabulary.",
+              "pl": "Czytanie takich artykułów to najlepszy sposób na budowanie słownictwa.",
+              "focusEn": "vocabulary",
+              "focusPl": "słownictwa"
+            },
+            {
+              "en": "My vocabulary is good enough for news, but not for science articles.",
+              "pl": "Moje słownictwo wystarcza do wiadomości, ale nie do artykułów naukowych.",
+              "focusEn": "vocabulary",
+              "focusPl": "słownictwo"
+            }
+          ],
+          "acceptedAnswers": [
+            "vocabulary",
+            "vocab"
+          ],
+          "acceptedTranslations": [
+            "słownictwo",
+            "słówka",
+            "zasób słów"
+          ]
+        },
+        {
+          "id": "language-learning.word",
+          "term": "word",
+          "ipa": "/wɝːd/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "słowo",
+          "definition": "A single unit of language with a meaning.",
+          "register": "neutralny",
+          "contextPl": "Pojedyncze słowa",
+          "natural": "",
+          "forms": "words",
+          "collocations": "new word; learn words; key word",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I've underlined every word I don't know in this paragraph.",
+              "pl": "Podkreśliłem każde słowo, którego nie znam w tym akapicie.",
+              "focusEn": "word",
+              "focusPl": "słowo"
+            },
+            {
+              "en": "There's no Polish word that means exactly the same thing.",
+              "pl": "Nie ma polskiego słowa, które znaczy dokładnie to samo.",
+              "focusEn": "word",
+              "focusPl": "słowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "word"
+          ],
+          "acceptedTranslations": [
+            "słowo",
+            "wyraz"
+          ]
+        },
+        {
+          "id": "language-learning.meaning",
+          "term": "meaning",
+          "ipa": "/ˈmiːnɪŋ/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "znaczenie",
+          "definition": "What a word or phrase expresses.",
+          "register": "neutralny",
+          "contextPl": "Sens słowa",
+          "natural": "",
+          "forms": "meanings",
+          "collocations": "the meaning of a word; have two meanings",
+          "synonyms": "sense",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This word has three meanings, and only one fits the sentence.",
+              "pl": "To słowo ma trzy znaczenia, a do zdania pasuje tylko jedno.",
+              "focusEn": "meanings",
+              "focusPl": "znaczenia"
+            },
+            {
+              "en": "I guessed the meaning from the context before checking.",
+              "pl": "Odgadłem znaczenie z kontekstu, zanim sprawdziłem.",
+              "focusEn": "meaning",
+              "focusPl": "znaczenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "meaning"
+          ],
+          "acceptedTranslations": [
+            "znaczenie",
+            "sens"
+          ]
+        },
+        {
+          "id": "language-learning.mean",
+          "term": "mean",
+          "ipa": "/miːn/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "znaczyć",
+          "definition": "To have a particular meaning.",
+          "register": "neutralny",
+          "contextPl": "Pytanie o znaczenie słowa",
+          "natural": "",
+          "forms": "meant – meant",
+          "collocations": "what does it mean",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What does \"landslide\" mean in this headline?",
+              "pl": "Co znaczy „landslide” w tym nagłówku?",
+              "focusEn": "mean",
+              "focusPl": "znaczy"
+            },
+            {
+              "en": "I thought \"eventually\" meant \"maybe,\" but it doesn't.",
+              "pl": "Myślałem, że „eventually” znaczy „może”, ale tak nie jest.",
+              "focusEn": "meant",
+              "focusPl": "znaczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "mean"
+          ],
+          "acceptedTranslations": [
+            "znaczyć",
+            "oznaczać"
+          ]
+        },
+        {
+          "id": "language-learning.translate",
+          "term": "translate",
+          "ipa": "/trænsˈleɪt/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "tłumaczyć",
+          "definition": "To change words from one language into another.",
+          "register": "neutralny",
+          "contextPl": "Przekładanie słów i tekstów",
+          "natural": "",
+          "forms": "translated; translating",
+          "collocations": "translate into Polish; translate from English",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The app can translate the whole article, but I try not to use it.",
+              "pl": "Aplikacja potrafi przetłumaczyć cały artykuł, ale staram się z tego nie korzystać.",
+              "focusEn": "translate",
+              "focusPl": "przetłumaczyć"
+            },
+            {
+              "en": "How would you translate this sentence into Polish?",
+              "pl": "Jak byś przetłumaczył to zdanie na polski?",
+              "focusEn": "translate",
+              "focusPl": "przetłumaczył"
+            }
+          ],
+          "acceptedAnswers": [
+            "translate"
+          ],
+          "acceptedTranslations": [
+            "tłumaczyć",
+            "przetłumaczyć"
+          ]
+        },
+        {
+          "id": "language-learning.dictionary",
+          "term": "dictionary",
+          "ipa": "/ˈdɪkʃəneri/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "słownik",
+          "definition": "A book or app that lists words and explains their meanings.",
+          "register": "neutralny",
+          "contextPl": "Narzędzia do nauki",
+          "natural": "",
+          "forms": "dictionaries",
+          "collocations": "online dictionary; look something up in a dictionary",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My dictionary app shows the pronunciation, too.",
+              "pl": "Moja aplikacja ze słownikiem pokazuje też wymowę.",
+              "focusEn": "dictionary",
+              "focusPl": "słownikiem"
+            },
+            {
+              "en": "A good English-English dictionary helps you think in English.",
+              "pl": "Dobry słownik angielsko-angielski pomaga myśleć po angielsku.",
+              "focusEn": "dictionary",
+              "focusPl": "słownik"
+            }
+          ],
+          "acceptedAnswers": [
+            "dictionary"
+          ],
+          "acceptedTranslations": [
+            "słownik"
+          ]
+        },
+        {
+          "id": "language-learning.look-up",
+          "term": "look up",
+          "ipa": "/ˌlʊk ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "sprawdzić",
+          "definition": "To find information about a word in a dictionary.",
+          "register": "neutralny",
+          "contextPl": "Szukanie słowa w słowniku",
+          "natural": "check",
+          "forms": "looked; looking",
+          "collocations": "look up a word; look it up",
+          "synonyms": "check",
+          "antonyms": "",
+          "notePl": "Dopełnienie może stać w środku: look it up.",
+          "examples": [
+            {
+              "en": "I looked up \"ubiquitous\" three times this month and still forget it.",
+              "pl": "W tym miesiącu trzy razy sprawdzałem „ubiquitous” i wciąż je zapominam.",
+              "focusEn": "looked up",
+              "focusPl": "sprawdzałem"
+            },
+            {
+              "en": "Don't look up every word, just the ones you really need.",
+              "pl": "Nie sprawdzaj każdego słowa, tylko te naprawdę potrzebne.",
+              "focusEn": "look up",
+              "focusPl": "sprawdzaj"
+            }
+          ],
+          "acceptedAnswers": [
+            "look up"
+          ],
+          "acceptedTranslations": [
+            "sprawdzić",
+            "sprawdzać",
+            "poszukać w słowniku"
+          ]
+        },
+        {
+          "id": "language-learning.definition",
+          "term": "definition",
+          "ipa": "/ˌdefəˈnɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "definicja",
+          "definition": "An explanation of the meaning of a word.",
+          "register": "neutralny",
+          "contextPl": "Objaśnienie słowa",
+          "natural": "",
+          "forms": "definitions",
+          "collocations": "dictionary definition; give a definition",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The definition in this app is too complicated for me.",
+              "pl": "Definicja w tej aplikacji jest dla mnie zbyt skomplikowana.",
+              "focusEn": "definition",
+              "focusPl": "Definicja"
+            },
+            {
+              "en": "Read the definition first, then the example sentences.",
+              "pl": "Najpierw przeczytaj definicję, a potem przykładowe zdania.",
+              "focusEn": "definition",
+              "focusPl": "definicję"
+            }
+          ],
+          "acceptedAnswers": [
+            "definition"
+          ],
+          "acceptedTranslations": [
+            "definicja"
+          ]
+        },
+        {
+          "id": "language-learning.synonym",
+          "term": "synonym",
+          "ipa": "/ˈsɪnənɪm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "synonim",
+          "definition": "A word that has the same or almost the same meaning as another.",
+          "register": "neutralny",
+          "contextPl": "Słowa bliskoznaczne",
+          "natural": "",
+          "forms": "synonyms",
+          "collocations": "a synonym for",
+          "synonyms": "",
+          "antonyms": "antonym",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"Huge\" is a synonym for \"very big\" in this article.",
+              "pl": "„Huge” to synonim „very big”.",
+              "focusEn": "synonym",
+              "focusPl": "synonim"
+            },
+            {
+              "en": "The writer uses a different synonym for \"said\" in every line.",
+              "pl": "Autor w każdym wierszu używa innego synonimu słowa „said”.",
+              "focusEn": "synonym",
+              "focusPl": "synonimu"
+            }
+          ],
+          "acceptedAnswers": [
+            "synonym"
+          ],
+          "acceptedTranslations": [
+            "synonim",
+            "wyraz bliskoznaczny"
+          ]
+        },
+        {
+          "id": "language-learning.idiom",
+          "term": "idiom",
+          "ipa": "/ˈɪdiəm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "idiom",
+          "definition": "A group of words whose meaning is different from the meanings of the single words.",
+          "register": "neutralny",
+          "contextPl": "Wyrażenia o przenośnym znaczeniu",
+          "natural": "expression",
+          "forms": "idioms",
+          "collocations": "common idiom; use an idiom",
+          "synonyms": "expression",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This article is full of sports idioms I don't understand.",
+              "pl": "Ten artykuł jest pełen sportowych idiomów, których nie rozumiem.",
+              "focusEn": "idioms",
+              "focusPl": "idiomów"
+            },
+            {
+              "en": "\"Break the ice\" is an idiom, so don't translate it word by word.",
+              "pl": "„Break the ice” to idiom, więc nie tłumacz go słowo po słowie.",
+              "focusEn": "idiom",
+              "focusPl": "idiom"
+            }
+          ],
+          "acceptedAnswers": [
+            "idiom"
+          ],
+          "acceptedTranslations": [
+            "idiom",
+            "wyrażenie idiomatyczne",
+            "związek frazeologiczny"
+          ]
+        },
+        {
+          "id": "language-learning.slang",
+          "term": "slang",
+          "ipa": "/slæŋ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "slang",
+          "definition": "Very informal words used by a particular group of people.",
+          "register": "potoczny",
+          "contextPl": "Język nieformalny",
+          "natural": "",
+          "forms": "",
+          "collocations": "American slang; teen slang; slang word",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Rzeczownik niepoliczalny: a slang word, nie „a slang”.",
+          "examples": [
+            {
+              "en": "The comments under the article are full of slang.",
+              "pl": "Komentarze pod artykułem są pełne slangu.",
+              "focusEn": "slang",
+              "focusPl": "slangu"
+            },
+            {
+              "en": "Is \"lit\" slang, or can I use it at work?",
+              "pl": "Czy „lit” to slang, czy mogę tego używać w pracy?",
+              "focusEn": "slang",
+              "focusPl": "slang"
+            }
+          ],
+          "acceptedAnswers": [
+            "slang"
+          ],
+          "acceptedTranslations": [
+            "slang",
+            "żargon",
+            "język potoczny"
+          ]
+        },
+        {
+          "id": "language-learning.false-friend",
+          "term": "false friend",
+          "ipa": "/ˌfɔːls ˈfrend/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "fałszywy przyjaciel",
+          "definition": "A word that looks like a word in your language but has a different meaning.",
+          "register": "neutralny",
+          "contextPl": "Pułapki podobnych słów",
+          "natural": "",
+          "forms": "false friends",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Przykłady: „actually” to nie „aktualnie”, a „eventually” to nie „ewentualnie”.",
+          "examples": [
+            {
+              "en": "\"Actually\" is a false friend, because it doesn't mean \"aktualnie\" at all.",
+              "pl": "„Actually” to fałszywy przyjaciel, bo nie znaczy „aktualnie”.",
+              "focusEn": "false friend",
+              "focusPl": "fałszywy przyjaciel"
+            },
+            {
+              "en": "I misunderstood the whole paragraph because of one false friend.",
+              "pl": "Źle zrozumiałem cały akapit przez jednego fałszywego przyjaciela.",
+              "focusEn": "false friend",
+              "focusPl": "fałszywego przyjaciela"
+            }
+          ],
+          "acceptedAnswers": [
+            "false friend"
+          ],
+          "acceptedTranslations": [
+            "fałszywy przyjaciel",
+            "fałszywy przyjaciel tłumacza"
+          ]
+        },
+        {
+          "id": "language-learning.context",
+          "term": "context",
+          "ipa": "/ˈkɑːntekst/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "kontekst",
+          "definition": "The words around a word that help you understand its meaning.",
+          "register": "neutralny",
+          "contextPl": "Rozumienie słów w zdaniu",
+          "natural": "",
+          "forms": "contexts",
+          "collocations": "in context; out of context; from the context",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Try to guess the meaning from the context before you look it up.",
+              "pl": "Spróbuj odgadnąć znaczenie z kontekstu, zanim sprawdzisz w słowniku.",
+              "focusEn": "context",
+              "focusPl": "kontekstu"
+            },
+            {
+              "en": "This word means something else in a business context.",
+              "pl": "To słowo znaczy coś innego w kontekście biznesowym.",
+              "focusEn": "context",
+              "focusPl": "kontekście"
+            }
+          ],
+          "acceptedAnswers": [
+            "context"
+          ],
+          "acceptedTranslations": [
+            "kontekst"
+          ]
+        },
+        {
+          "id": "language-learning.collocation",
+          "term": "collocation",
+          "ipa": "/ˌkɑːləˈkeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "kolokacja",
+          "definition": "Words that are often used together, for example make and decision.",
+          "register": "specjalistyczny",
+          "contextPl": "Naturalne połączenia słów",
+          "natural": "word combination",
+          "forms": "collocations",
+          "collocations": "common collocations; learn collocations",
+          "synonyms": "word partnership",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"Heavy rain\" is a collocation, so don't say \"strong rain\" in your writing.",
+              "pl": "„Heavy rain” to kolokacja, więc nie mów „strong rain”.",
+              "focusEn": "collocation",
+              "focusPl": "kolokacja"
+            },
+            {
+              "en": "I write down every new collocation I find in articles.",
+              "pl": "Zapisuję każdą nową kolokację, którą znajdę w artykułach.",
+              "focusEn": "collocation",
+              "focusPl": "kolokację"
+            }
+          ],
+          "acceptedAnswers": [
+            "collocation"
+          ],
+          "acceptedTranslations": [
+            "kolokacja",
+            "związek wyrazowy"
+          ]
+        },
+        {
+          "id": "language-learning.abbreviation",
+          "term": "abbreviation",
+          "ipa": "/əˌbriːviˈeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "skrót",
+          "definition": "A short form of a word or phrase, for example Dr for Doctor.",
+          "register": "neutralny",
+          "contextPl": "Skróty w tekstach",
+          "natural": "",
+          "forms": "abbreviations",
+          "collocations": "common abbreviations; stand for",
+          "synonyms": "short form",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What does the abbreviation \"ASAP\" stand for?",
+              "pl": "Co oznacza skrót „ASAP”?",
+              "focusEn": "abbreviation",
+              "focusPl": "skrót"
+            },
+            {
+              "en": "The article uses so many abbreviations that I got lost.",
+              "pl": "Artykuł używa tylu skrótów, że się pogubiłem.",
+              "focusEn": "abbreviations",
+              "focusPl": "skrótów"
+            }
+          ],
+          "acceptedAnswers": [
+            "abbreviation"
+          ],
+          "acceptedTranslations": [
+            "skrót",
+            "skrótowiec"
+          ]
+        },
+        {
+          "id": "language-learning.literally",
+          "term": "literally",
+          "ipa": "/ˈlɪtərəli/",
+          "pos": "przysłówek",
+          "level": "B2",
+          "frequency": "very_common",
+          "translation": "dosłownie",
+          "definition": "In the exact, basic meaning of the words.",
+          "register": "neutralny",
+          "contextPl": "Tłumaczenie słowo w słowo",
+          "natural": "",
+          "forms": "",
+          "collocations": "translate literally; take something literally",
+          "synonyms": "word for word",
+          "antonyms": "figuratively",
+          "notePl": "W mowie potocznej używane też dla wzmocnienia: I literally died laughing.",
+          "examples": [
+            {
+              "en": "If you translate this phrase literally, it makes no sense in Polish.",
+              "pl": "Jeśli przetłumaczysz to wyrażenie dosłownie, po polsku nie ma sensu.",
+              "focusEn": "literally",
+              "focusPl": "dosłownie"
+            },
+            {
+              "en": "Don't take the headline literally, it's a joke.",
+              "pl": "Nie traktuj nagłówka dosłownie, to żart.",
+              "focusEn": "literally",
+              "focusPl": "dosłownie"
+            }
+          ],
+          "acceptedAnswers": [
+            "literally"
+          ],
+          "acceptedTranslations": [
+            "dosłownie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "language-learning.communication",
+      "namePl": "Porozumiewanie się",
+      "scenePl": "Polski turysta rozmawia z Amerykaninem przy barze i prosi o wyjaśnienia",
+      "entries": [
+        {
+          "id": "language-learning.how-do-you-say",
+          "term": "how do you say",
+          "ipa": "/ˌhaʊ də jə ˈseɪ/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "jak się mówi",
+          "definition": "Used to ask for the English word for something.",
+          "register": "neutralny",
+          "contextPl": "Prośba o słowo w innym języku",
+          "natural": "",
+          "forms": "",
+          "collocations": "how do you say this in English",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "How do you say \"piwo kraftowe\" in English?",
+              "pl": "Jak się mówi po angielsku „piwo kraftowe”?",
+              "focusEn": "How do you say",
+              "focusPl": "Jak się mówi"
+            },
+            {
+              "en": "Sorry, how do you say the thing you put under your glass?",
+              "pl": "Przepraszam, jak się mówi na to, co się kładzie pod szklankę?",
+              "focusEn": "how do you say",
+              "focusPl": "jak się mówi"
+            }
+          ],
+          "acceptedAnswers": [
+            "how do you say",
+            "how do you say it"
+          ],
+          "acceptedTranslations": [
+            "jak się mówi",
+            "jak powiedzieć"
+          ]
+        },
+        {
+          "id": "language-learning.i-didnt-catch-that",
+          "term": "I didn't catch that",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "nie dosłyszałem",
+          "definition": "Used to say politely that you did not hear or understand something.",
+          "register": "potoczny",
+          "contextPl": "Prośba o powtórzenie",
+          "natural": "sorry",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, I didn't catch that, could you say it one more time?",
+              "pl": "Przepraszam, nie dosłyszałem, możesz powtórzyć jeszcze raz?",
+              "focusEn": "I didn't catch that",
+              "focusPl": "nie dosłyszałem"
+            },
+            {
+              "en": "The music was so loud that I didn't catch that last part.",
+              "pl": "Muzyka była tak głośna, że nie dosłyszałem tej ostatniej części.",
+              "focusEn": "I didn't catch that",
+              "focusPl": "nie dosłyszałem"
+            }
+          ],
+          "acceptedAnswers": [
+            "I didn't catch that",
+            "I didn't catch it",
+            "sorry, I didn't catch that"
+          ],
+          "acceptedTranslations": [
+            "nie dosłyszałem",
+            "nie dosłyszałam",
+            "nie zrozumiałem"
+          ]
+        },
+        {
+          "id": "language-learning.speak-more-slowly",
+          "term": "speak more slowly",
+          "ipa": "/ˌspiːk mɔːr ˈsloʊli/",
+          "pos": "zwrot",
+          "level": "A1",
+          "frequency": "common",
+          "translation": "mówić wolniej",
+          "definition": "To talk at a slower speed so others can understand.",
+          "register": "neutralny",
+          "contextPl": "Prośba do rozmówcy",
+          "natural": "slow down",
+          "forms": "spoke – spoken",
+          "collocations": "could you speak more slowly",
+          "synonyms": "slow down",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Could you speak more slowly? My English isn't that good yet.",
+              "pl": "Czy możesz mówić wolniej? Mój angielski nie jest jeszcze aż tak dobry.",
+              "focusEn": "speak more slowly",
+              "focusPl": "mówić wolniej"
+            },
+            {
+              "en": "He kept forgetting to speak more slowly after his second beer.",
+              "pl": "Po drugim piwie ciągle zapominał, żeby mówić wolniej.",
+              "focusEn": "speak more slowly",
+              "focusPl": "mówić wolniej"
+            }
+          ],
+          "acceptedAnswers": [
+            "speak more slowly",
+            "speak slower",
+            "talk more slowly"
+          ],
+          "acceptedTranslations": [
+            "mówić wolniej",
+            "mówić wolno"
+          ]
+        },
+        {
+          "id": "language-learning.misunderstand",
+          "term": "misunderstand",
+          "ipa": "/ˌmɪsʌndərˈstænd/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "źle zrozumieć",
+          "definition": "To understand something wrongly.",
+          "register": "neutralny",
+          "contextPl": "Nieporozumienia w rozmowie",
+          "natural": "get it wrong",
+          "forms": "misunderstood – misunderstood",
+          "collocations": "misunderstand a question; don't misunderstand me",
+          "synonyms": "",
+          "antonyms": "understand",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I misunderstood his question and told him my age instead of my job.",
+              "pl": "Źle zrozumiałem jego pytanie i podałem mu swój wiek zamiast zawodu.",
+              "focusEn": "misunderstood",
+              "focusPl": "Źle zrozumiałem"
+            },
+            {
+              "en": "Sorry if I misunderstand you, but did you say you're from Ohio?",
+              "pl": "Przepraszam, jeśli źle rozumiem, ale czy powiedziałeś, że jesteś z Ohio?",
+              "focusEn": "misunderstand",
+              "focusPl": "źle rozumiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "misunderstand"
+          ],
+          "acceptedTranslations": [
+            "źle zrozumieć",
+            "źle rozumieć",
+            "opacznie zrozumieć"
+          ]
+        },
+        {
+          "id": "language-learning.language-barrier",
+          "term": "language barrier",
+          "ipa": "/ˈlæŋɡwɪdʒ ˌbæriər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "bariera językowa",
+          "definition": "A problem in communication because people speak different languages.",
+          "register": "neutralny",
+          "contextPl": "Trudności w porozumieniu",
+          "natural": "",
+          "forms": "language barriers",
+          "collocations": "overcome the language barrier",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Despite the language barrier, we talked for two hours.",
+              "pl": "Mimo bariery językowej rozmawialiśmy przez dwie godziny.",
+              "focusEn": "language barrier",
+              "focusPl": "bariery językowej"
+            },
+            {
+              "en": "The language barrier disappeared after we started drawing on napkins.",
+              "pl": "Bariera językowa zniknęła, gdy zaczęliśmy rysować na serwetkach.",
+              "focusEn": "language barrier",
+              "focusPl": "Bariera językowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "language barrier"
+          ],
+          "acceptedTranslations": [
+            "bariera językowa"
+          ]
+        },
+        {
+          "id": "language-learning.broken-english",
+          "term": "broken English",
+          "ipa": "/ˌbroʊkən ˈɪŋɡlɪʃ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "łamany angielski",
+          "definition": "English spoken with many mistakes by someone who does not know it well.",
+          "register": "neutralny",
+          "contextPl": "Słaba znajomość języka",
+          "natural": "",
+          "forms": "",
+          "collocations": "speak broken English; in broken English",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I explained everything in broken English, and he still understood.",
+              "pl": "Wszystko wytłumaczyłem łamanym angielskim, a on i tak zrozumiał.",
+              "focusEn": "broken English",
+              "focusPl": "łamanym angielskim"
+            },
+            {
+              "en": "Don't apologize for your broken English, it's better than my Polish.",
+              "pl": "Nie przepraszaj za swój łamany angielski, jest lepszy niż mój polski.",
+              "focusEn": "broken English",
+              "focusPl": "łamany angielski"
+            }
+          ],
+          "acceptedAnswers": [
+            "broken English"
+          ],
+          "acceptedTranslations": [
+            "łamany angielski",
+            "łamana angielszczyzna"
+          ]
+        },
+        {
+          "id": "language-learning.make-yourself-understood",
+          "term": "make yourself understood",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "porozumieć się",
+          "definition": "To succeed in communicating what you want to say.",
+          "register": "neutralny",
+          "contextPl": "Skuteczne porozumiewanie się",
+          "natural": "get by",
+          "forms": "made – made",
+          "collocations": "",
+          "synonyms": "get your point across",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I can make myself understood in English, but I still make lots of mistakes.",
+              "pl": "Potrafię porozumieć się po angielsku, ale nadal robię dużo błędów.",
+              "focusEn": "make myself understood",
+              "focusPl": "porozumieć się"
+            },
+            {
+              "en": "With a few gestures, you can make yourself understood almost anywhere.",
+              "pl": "Za pomocą kilku gestów można dogadać się prawie wszędzie.",
+              "focusEn": "make yourself understood",
+              "focusPl": "dogadać się"
+            }
+          ],
+          "acceptedAnswers": [
+            "make yourself understood",
+            "make myself understood"
+          ],
+          "acceptedTranslations": [
+            "porozumieć się",
+            "dogadać się",
+            "dać się zrozumieć"
+          ]
+        },
+        {
+          "id": "language-learning.mix-up",
+          "term": "mix up",
+          "ipa": "/ˌmɪks ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pomylić",
+          "definition": "To confuse two similar things.",
+          "register": "neutralny",
+          "contextPl": "Mylenie podobnych słów",
+          "natural": "confuse",
+          "forms": "mixed; mixing",
+          "collocations": "mix up words; get mixed up",
+          "synonyms": "confuse",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I always mix up \"borrow\" and \"lend\" when I'm tired.",
+              "pl": "Zawsze mylę „borrow” i „lend”, kiedy jestem zmęczony.",
+              "focusEn": "mix up",
+              "focusPl": "mylę"
+            },
+            {
+              "en": "Sorry, I mixed up \"thirteen\" and \"thirty\" when I told you my age.",
+              "pl": "Przepraszam, pomyliłem „thirteen” i „thirty”, kiedy podawałem ci swój wiek.",
+              "focusEn": "mixed up",
+              "focusPl": "pomyliłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "mix up"
+          ],
+          "acceptedTranslations": [
+            "pomylić",
+            "mylić",
+            "pomieszać"
+          ]
+        },
+        {
+          "id": "language-learning.what-do-you-call",
+          "term": "what do you call",
+          "ipa": "/ˌwɑːt də jə ˈkɔːl/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "jak się nazywa",
+          "definition": "Used to ask for the name of something.",
+          "register": "neutralny",
+          "contextPl": "Szukanie brakującego słowa",
+          "natural": "",
+          "forms": "",
+          "collocations": "what do you call it; what do you call this",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What do you call the little bowl of nuts on the bar?",
+              "pl": "Jak się nazywa ta mała miseczka orzeszków na barze?",
+              "focusEn": "What do you call",
+              "focusPl": "Jak się nazywa"
+            },
+            {
+              "en": "What do you call someone who doesn't drink alcohol?",
+              "pl": "Jak się nazywa kogoś, kto nie pije alkoholu?",
+              "focusEn": "What do you call",
+              "focusPl": "Jak się nazywa"
+            }
+          ],
+          "acceptedAnswers": [
+            "what do you call",
+            "what do you call it"
+          ],
+          "acceptedTranslations": [
+            "jak się nazywa",
+            "jak nazywacie"
+          ]
+        },
+        {
+          "id": "language-learning.lost-in-translation",
+          "term": "lost in translation",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "utracony w tłumaczeniu",
+          "definition": "Said when meaning or humor disappears when translated.",
+          "register": "neutralny",
+          "contextPl": "Żarty i niuanse trudne do przełożenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "get lost in translation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My Polish joke got lost in translation, and he just looked confused.",
+              "pl": "Mój polski żart zgubił się w tłumaczeniu, a on tylko patrzył zdezorientowany.",
+              "focusEn": "lost in translation",
+              "focusPl": "zgubił się w tłumaczeniu"
+            },
+            {
+              "en": "Some of the humor is always lost in translation.",
+              "pl": "Część humoru zawsze ginie w tłumaczeniu.",
+              "focusEn": "lost in translation",
+              "focusPl": "ginie w tłumaczeniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "lost in translation"
+          ],
+          "acceptedTranslations": [
+            "utracony w tłumaczeniu",
+            "zgubiony w tłumaczeniu",
+            "nieprzetłumaczalny"
+          ]
+        },
+        {
+          "id": "language-learning.in-other-words",
+          "term": "in other words",
+          "ipa": "/ɪn ˌʌðər ˈwɝːdz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "innymi słowy",
+          "definition": "Used to explain something again in a different, simpler way.",
+          "register": "neutralny",
+          "contextPl": "Wyjaśnianie innymi słowami",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "that is",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"Cheers\" can mean \"thanks\" too, in other words, it's not only for toasts.",
+              "pl": "„Cheers” może też znaczyć „dzięki”, innymi słowy nie służy tylko do toastów.",
+              "focusEn": "in other words",
+              "focusPl": "innymi słowy"
+            },
+            {
+              "en": "In other words, you're saying I should stop translating in my head?",
+              "pl": "Innymi słowy mówisz, że powinienem przestać tłumaczyć w głowie?",
+              "focusEn": "In other words",
+              "focusPl": "Innymi słowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "in other words"
+          ],
+          "acceptedTranslations": [
+            "innymi słowy",
+            "to znaczy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "language-learning.methods",
+      "namePl": "Metody nauki i postępy",
+      "scenePl": "Rozmowa z mentorem o postępach i planie nauki, przy laptopie z aplikacją do nauki",
+      "entries": [
+        {
+          "id": "language-learning.make-progress",
+          "term": "make progress",
+          "ipa": "/ˌmeɪk ˈprɑːɡres/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "robić postępy",
+          "definition": "To get better at something over time.",
+          "register": "neutralny",
+          "contextPl": "Ocena postępów w nauce",
+          "natural": "improve",
+          "forms": "made – made",
+          "collocations": "make good progress; make a lot of progress",
+          "synonyms": "improve",
+          "antonyms": "",
+          "notePl": "„Progress” jest niepoliczalny: nie mówi się „a progress”.",
+          "examples": [
+            {
+              "en": "You've made a lot of progress since September, especially in listening.",
+              "pl": "Zrobiłeś duże postępy od września, zwłaszcza w słuchaniu.",
+              "focusEn": "made a lot of progress",
+              "focusPl": "Zrobiłeś duże postępy"
+            },
+            {
+              "en": "I feel like I'm not making progress anymore.",
+              "pl": "Mam wrażenie, że już nie robię postępów.",
+              "focusEn": "making progress",
+              "focusPl": "robię postępów"
+            }
+          ],
+          "acceptedAnswers": [
+            "make progress"
+          ],
+          "acceptedTranslations": [
+            "robić postępy",
+            "zrobić postępy",
+            "czynić postępy"
+          ]
+        },
+        {
+          "id": "language-learning.immersion",
+          "term": "immersion",
+          "ipa": "/ɪˈmɝːʒən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zanurzenie w języku",
+          "definition": "Learning a language by being surrounded by it all the time.",
+          "register": "specjalistyczny",
+          "contextPl": "Nauka przez kontakt z językiem",
+          "natural": "",
+          "forms": "",
+          "collocations": "language immersion; total immersion",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Immersion works best, so switch your phone to English.",
+              "pl": "Zanurzenie w języku działa najlepiej, więc przestaw telefon na angielski.",
+              "focusEn": "Immersion",
+              "focusPl": "Zanurzenie w języku"
+            },
+            {
+              "en": "A month of immersion abroad helped me more than a year of classes.",
+              "pl": "Miesiąc zanurzenia w języku za granicą dał mi więcej niż rok zajęć.",
+              "focusEn": "immersion",
+              "focusPl": "zanurzenia w języku"
+            }
+          ],
+          "acceptedAnswers": [
+            "immersion"
+          ],
+          "acceptedTranslations": [
+            "zanurzenie w języku",
+            "immersja",
+            "nauka przez zanurzenie"
+          ]
+        },
+        {
+          "id": "language-learning.language-exchange",
+          "term": "language exchange",
+          "ipa": "/ˈlæŋɡwɪdʒ ɪksˌtʃeɪndʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wymiana językowa",
+          "definition": "An arrangement where two people teach each other their languages.",
+          "register": "neutralny",
+          "contextPl": "Nauka z partnerem językowym",
+          "natural": "",
+          "forms": "language exchanges",
+          "collocations": "do a language exchange; language exchange partner",
+          "synonyms": "tandem",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I found a language exchange partner from Texas online.",
+              "pl": "Znalazłem w internecie partnera do wymiany językowej z Teksasu.",
+              "focusEn": "language exchange",
+              "focusPl": "wymiany językowej"
+            },
+            {
+              "en": "A language exchange is free and much more fun than a textbook.",
+              "pl": "Wymiana językowa jest darmowa i dużo fajniejsza niż podręcznik.",
+              "focusEn": "language exchange",
+              "focusPl": "Wymiana językowa"
+            }
+          ],
+          "acceptedAnswers": [
+            "language exchange"
+          ],
+          "acceptedTranslations": [
+            "wymiana językowa",
+            "tandem językowy"
+          ]
+        },
+        {
+          "id": "language-learning.self-study",
+          "term": "self-study",
+          "ipa": "/ˌself ˈstʌdi/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "samodzielna nauka",
+          "definition": "Learning on your own without a teacher.",
+          "register": "neutralny",
+          "contextPl": "Nauka bez nauczyciela",
+          "natural": "",
+          "forms": "",
+          "collocations": "self-study materials; through self-study",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Twenty minutes of self-study a day is better than three hours on Sunday.",
+              "pl": "Dwadzieścia minut samodzielnej nauki dziennie jest lepsze niż trzy godziny w niedzielę.",
+              "focusEn": "self-study",
+              "focusPl": "samodzielnej nauki"
+            },
+            {
+              "en": "Most of my progress came from self-study with this app.",
+              "pl": "Większość postępów zawdzięczam samodzielnej nauce z tą aplikacją.",
+              "focusEn": "self-study",
+              "focusPl": "samodzielnej nauce"
+            }
+          ],
+          "acceptedAnswers": [
+            "self-study"
+          ],
+          "acceptedTranslations": [
+            "samodzielna nauka",
+            "samouczenie się",
+            "nauka na własną rękę"
+          ]
+        },
+        {
+          "id": "language-learning.target-language",
+          "term": "target language",
+          "ipa": "/ˈtɑːrɡɪt ˌlæŋɡwɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "język docelowy",
+          "definition": "The language you are trying to learn.",
+          "register": "specjalistyczny",
+          "contextPl": "Terminologia metodyki nauczania",
+          "natural": "",
+          "forms": "target languages",
+          "collocations": "in the target language",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Try to think in your target language, even for simple things.",
+              "pl": "Staraj się myśleć w języku docelowym, nawet o prostych rzeczach.",
+              "focusEn": "target language",
+              "focusPl": "języku docelowym"
+            },
+            {
+              "en": "Set your apps and games to your target language.",
+              "pl": "Ustaw aplikacje i gry na język docelowy.",
+              "focusEn": "target language",
+              "focusPl": "język docelowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "target language"
+          ],
+          "acceptedTranslations": [
+            "język docelowy"
+          ]
+        },
+        {
+          "id": "language-learning.motivation",
+          "term": "motivation",
+          "ipa": "/ˌmoʊtəˈveɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "motywacja",
+          "definition": "The feeling that makes you want to keep doing something.",
+          "register": "neutralny",
+          "contextPl": "Chęć do nauki",
+          "natural": "",
+          "forms": "",
+          "collocations": "lose motivation; stay motivated; lack of motivation",
+          "synonyms": "drive",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My motivation dropped in the winter, so I stopped studying for a month.",
+              "pl": "Moja motywacja spadła zimą, więc przestałem się uczyć na miesiąc.",
+              "focusEn": "motivation",
+              "focusPl": "motywacja"
+            },
+            {
+              "en": "Your trip to New York is great motivation to keep going.",
+              "pl": "Twój wyjazd do Nowego Jorku to świetna motywacja, żeby nie przestawać.",
+              "focusEn": "motivation",
+              "focusPl": "motywacja"
+            }
+          ],
+          "acceptedAnswers": [
+            "motivation"
+          ],
+          "acceptedTranslations": [
+            "motywacja"
+          ]
+        },
+        {
+          "id": "language-learning.spaced-repetition",
+          "term": "spaced repetition",
+          "ipa": "/ˌspeɪst ˌrepəˈtɪʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "powtórki w odstępach",
+          "definition": "A method of reviewing words at growing intervals so you remember them longer.",
+          "register": "specjalistyczny",
+          "contextPl": "Skuteczne zapamiętywanie słówek",
+          "natural": "",
+          "forms": "",
+          "collocations": "spaced repetition app; spaced repetition system",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Na tej metodzie opiera się ta aplikacja.",
+          "examples": [
+            {
+              "en": "This app uses spaced repetition, so it shows hard words more often.",
+              "pl": "Ta aplikacja wykorzystuje powtórki w odstępach, więc częściej pokazuje trudne słowa.",
+              "focusEn": "spaced repetition",
+              "focusPl": "powtórki w odstępach"
+            },
+            {
+              "en": "Thanks to spaced repetition, I still remember words from last spring.",
+              "pl": "Dzięki powtórkom w odstępach wciąż pamiętam słowa z zeszłej wiosny.",
+              "focusEn": "spaced repetition",
+              "focusPl": "powtórkom w odstępach"
+            }
+          ],
+          "acceptedAnswers": [
+            "spaced repetition"
+          ],
+          "acceptedTranslations": [
+            "powtórki w odstępach",
+            "powtarzanie w odstępach",
+            "metoda powtórek"
+          ]
+        },
+        {
+          "id": "language-learning.keep-at-it",
+          "term": "keep at it",
+          "ipa": "/ˌkiːp ˈæt ɪt/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "nie odpuszczać",
+          "definition": "To continue working hard at something.",
+          "register": "potoczny",
+          "contextPl": "Zachęta do wytrwałości",
+          "natural": "keep going",
+          "forms": "kept – kept",
+          "collocations": "",
+          "synonyms": "stick with it; keep going",
+          "antonyms": "give up",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Learning English takes time, so just keep at it.",
+              "pl": "Nauka angielskiego wymaga czasu, więc po prostu nie odpuszczaj.",
+              "focusEn": "keep at it",
+              "focusPl": "nie odpuszczaj"
+            },
+            {
+              "en": "If you keep at it for another six months, you'll be ready for B2.",
+              "pl": "Jeśli nie odpuścisz przez kolejne pół roku, będziesz gotowy na B2.",
+              "focusEn": "keep at it",
+              "focusPl": "nie odpuścisz"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep at it",
+            "stick with it",
+            "keep going"
+          ],
+          "acceptedTranslations": [
+            "nie odpuszczać",
+            "nie poddawać się",
+            "wytrwać"
+          ]
+        },
+        {
+          "id": "language-learning.practice-speaking",
+          "term": "practice speaking",
+          "ipa": "/ˌpræktɪs ˈspiːkɪŋ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "ćwiczyć mówienie",
+          "definition": "To improve your speaking by talking as often as you can.",
+          "register": "neutralny",
+          "contextPl": "Ćwiczenie umiejętności mówienia",
+          "natural": "",
+          "forms": "practiced – practiced",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W BrE czasownik pisze się „practise”.",
+          "examples": [
+            {
+              "en": "You need to practice speaking at least twice a week.",
+              "pl": "Musisz ćwiczyć mówienie co najmniej dwa razy w tygodniu.",
+              "focusEn": "practice speaking",
+              "focusPl": "ćwiczyć mówienie"
+            },
+            {
+              "en": "I practice speaking by describing my day out loud in the car.",
+              "pl": "Ćwiczę mówienie, opisując na głos swój dzień w samochodzie.",
+              "focusEn": "practice speaking",
+              "focusPl": "Ćwiczę mówienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "practice speaking"
+          ],
+          "acceptedTranslations": [
+            "ćwiczyć mówienie",
+            "ćwiczyć konwersację"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "language-learning.idioms",
+      "namePl": "Idiomy o języku i mówieniu",
+      "scenePl": "Spotkanie wymiany językowej w kawiarni, gdy rozmowa schodzi na zabawne wpadki językowe",
+      "entries": [
+        {
+          "id": "language-learning.its-all-greek-to-me",
+          "term": "it's all Greek to me",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "to dla mnie czarna magia",
+          "definition": "Used to say you cannot understand something at all.",
+          "register": "potoczny",
+          "contextPl": "Coś całkowicie niezrozumiałego",
+          "natural": "I don't understand a thing",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Po polsku też: „to dla mnie chińszczyzna”.",
+          "examples": [
+            {
+              "en": "Legal English? Sorry, it's all Greek to me.",
+              "pl": "Prawniczy angielski? Sorry, to dla mnie czarna magia.",
+              "focusEn": "it's all Greek to me",
+              "focusPl": "to dla mnie czarna magia"
+            },
+            {
+              "en": "My cousin tried to explain the rules of baseball, but it's all Greek to me.",
+              "pl": "Kuzyn próbował mi wyjaśnić zasady baseballu, ale to dla mnie czarna magia.",
+              "focusEn": "it's all Greek to me",
+              "focusPl": "to dla mnie czarna magia"
+            }
+          ],
+          "acceptedAnswers": [
+            "it's all Greek to me",
+            "it's Greek to me"
+          ],
+          "acceptedTranslations": [
+            "to dla mnie czarna magia",
+            "to dla mnie chińszczyzna",
+            "nic z tego nie rozumiem"
+          ]
+        },
+        {
+          "id": "language-learning.on-the-tip-of-my-tongue",
+          "term": "on the tip of my tongue",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "na końcu języka",
+          "definition": "Used when you almost remember a word but can't say it.",
+          "register": "potoczny",
+          "contextPl": "Chwilowe zapomnienie słowa",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Polski odpowiednik ma identyczny obraz.",
+          "examples": [
+            {
+              "en": "The word is on the tip of my tongue, give me a second.",
+              "pl": "Mam to słowo na końcu języka, daj mi sekundę.",
+              "focusEn": "on the tip of my tongue",
+              "focusPl": "na końcu języka"
+            },
+            {
+              "en": "Her name was on the tip of my tongue all evening.",
+              "pl": "Przez cały wieczór miałem jej imię na końcu języka.",
+              "focusEn": "on the tip of my tongue",
+              "focusPl": "na końcu języka"
+            }
+          ],
+          "acceptedAnswers": [
+            "on the tip of my tongue",
+            "on the tip of your tongue"
+          ],
+          "acceptedTranslations": [
+            "na końcu języka",
+            "mam to na końcu języka"
+          ]
+        },
+        {
+          "id": "language-learning.slip-of-the-tongue",
+          "term": "slip of the tongue",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przejęzyczenie",
+          "definition": "A small mistake when you say a word you did not mean to say.",
+          "register": "neutralny",
+          "contextPl": "Pomyłka w mowie",
+          "natural": "",
+          "forms": "slips of the tongue",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sorry, I said \"kitchen\" but meant \"chicken,\" it was a slip of the tongue.",
+              "pl": "Przepraszam, powiedziałem „kitchen”, a chodziło mi o „chicken”, to było przejęzyczenie.",
+              "focusEn": "slip of the tongue",
+              "focusPl": "przejęzyczenie"
+            },
+            {
+              "en": "Everyone laughed at my slip of the tongue, including me.",
+              "pl": "Wszyscy śmiali się z mojego przejęzyczenia, łącznie ze mną.",
+              "focusEn": "slip of the tongue",
+              "focusPl": "przejęzyczenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "slip of the tongue"
+          ],
+          "acceptedTranslations": [
+            "przejęzyczenie",
+            "lapsus"
+          ]
+        },
+        {
+          "id": "language-learning.speak-the-same-language",
+          "term": "speak the same language",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "nadawać na tych samych falach",
+          "definition": "To have similar ideas and understand each other easily.",
+          "register": "potoczny",
+          "contextPl": "Dobre porozumienie z kimś",
+          "natural": "be on the same page",
+          "forms": "spoke – spoken",
+          "collocations": "",
+          "synonyms": "be on the same page",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We met last month, but we already speak the same language.",
+              "pl": "Poznaliśmy się w zeszłym miesiącu, a już nadajemy na tych samych falach.",
+              "focusEn": "speak the same language",
+              "focusPl": "nadajemy na tych samych falach"
+            },
+            {
+              "en": "It's easy to talk to her because we speak the same language about learning.",
+              "pl": "Łatwo mi z nią rozmawiać, bo mówimy tym samym językiem o nauce.",
+              "focusEn": "speak the same language",
+              "focusPl": "mówimy tym samym językiem"
+            }
+          ],
+          "acceptedAnswers": [
+            "speak the same language"
+          ],
+          "acceptedTranslations": [
+            "nadawać na tych samych falach",
+            "mówić tym samym językiem",
+            "rozumieć się"
+          ]
+        },
+        {
+          "id": "language-learning.lost-for-words",
+          "term": "lost for words",
+          "ipa": "/ˌlɔːst fər ˈwɝːdz/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zaniemówić",
+          "definition": "So surprised that you cannot think what to say.",
+          "register": "neutralny",
+          "contextPl": "Brak słów ze zdziwienia",
+          "natural": "speechless",
+          "forms": "",
+          "collocations": "be lost for words",
+          "synonyms": "speechless",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "When he answered me in perfect Polish, I was lost for words.",
+              "pl": "Kiedy odpowiedział mi doskonałą polszczyzną, zaniemówiłem.",
+              "focusEn": "lost for words",
+              "focusPl": "zaniemówiłem"
+            },
+            {
+              "en": "For once, our talkative organizer was lost for words.",
+              "pl": "Pierwszy raz nasz gadatliwy organizator zaniemówił.",
+              "focusEn": "lost for words",
+              "focusPl": "zaniemówił"
+            }
+          ],
+          "acceptedAnswers": [
+            "lost for words",
+            "at a loss for words"
+          ],
+          "acceptedTranslations": [
+            "zaniemówić",
+            "brak mi słów",
+            "oniemieć"
+          ]
+        }
+      ]
+    }
+  ]
+}

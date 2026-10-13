@@ -1,0 +1,3023 @@
+{
+  "schemaVersion": 1,
+  "id": "math",
+  "namePl": "Matematyka",
+  "nameEn": "Math",
+  "group": "education",
+  "symbol": "function",
+  "summaryPl": "Działania, ułamki i procenty, równania, geometria, wykresy i statystyka oraz liczbowe idiomy.",
+  "aliases": [
+    "matematyka",
+    "matma",
+    "działania",
+    "ułamki",
+    "procenty",
+    "równanie",
+    "geometria",
+    "wykres",
+    "liczenie",
+    "math",
+    "mathematics",
+    "fractions",
+    "equation",
+    "graph"
+  ],
+  "categories": [
+    {
+      "id": "math.operations",
+      "namePl": "Działania",
+      "scenePl": "Lekcja matematyki w szóstej klasie; uczniowie liczą przy tablicy i w zeszytach",
+      "entries": [
+        {
+          "id": "math.add",
+          "term": "add",
+          "ipa": "/æd/",
+          "pos": "czasownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "dodawać",
+          "definition": "To put numbers together to find the total.",
+          "register": "neutralny",
+          "contextPl": "Podstawowe działanie",
+          "natural": "",
+          "forms": "added; adding",
+          "collocations": "add up; add two numbers; add to",
+          "synonyms": "",
+          "antonyms": "subtract",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you add seven and five, you get twelve.",
+              "pl": "Jeśli dodasz siedem i pięć, otrzymasz dwanaście.",
+              "focusEn": "add",
+              "focusPl": "dodasz"
+            },
+            {
+              "en": "Add the numbers in the first column before you start the second one.",
+              "pl": "Dodaj liczby z pierwszej kolumny, zanim zaczniesz drugą.",
+              "focusEn": "Add",
+              "focusPl": "Dodaj"
+            }
+          ],
+          "acceptedAnswers": [
+            "add"
+          ],
+          "acceptedTranslations": [
+            "dodawać",
+            "dodać"
+          ]
+        },
+        {
+          "id": "math.subtract",
+          "term": "subtract",
+          "ipa": "/səbˈtrækt/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "odejmować",
+          "definition": "To take one number away from another.",
+          "register": "neutralny",
+          "contextPl": "Podstawowe działanie",
+          "natural": "take away",
+          "forms": "subtracted; subtracting",
+          "collocations": "subtract from",
+          "synonyms": "take away",
+          "antonyms": "add",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Subtract fifteen from forty and write the answer in the box.",
+              "pl": "Odejmij piętnaście od czterdziestu i wpisz wynik w kratkę.",
+              "focusEn": "Subtract",
+              "focusPl": "Odejmij"
+            },
+            {
+              "en": "She forgot to subtract the last number, so her answer was too big.",
+              "pl": "Zapomniała odjąć ostatnią liczbę, więc jej wynik był za duży.",
+              "focusEn": "subtract",
+              "focusPl": "odjąć"
+            }
+          ],
+          "acceptedAnswers": [
+            "subtract",
+            "take away"
+          ],
+          "acceptedTranslations": [
+            "odejmować",
+            "odjąć"
+          ]
+        },
+        {
+          "id": "math.multiply",
+          "term": "multiply",
+          "ipa": "/ˈmʌltɪplaɪ/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "mnożyć",
+          "definition": "To add a number to itself a certain number of times.",
+          "register": "neutralny",
+          "contextPl": "Podstawowe działanie",
+          "natural": "times",
+          "forms": "multiplied; multiplying",
+          "collocations": "multiply by; multiply two numbers",
+          "synonyms": "",
+          "antonyms": "divide",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Multiply six by eight without a calculator.",
+              "pl": "Pomnóż sześć przez osiem bez kalkulatora.",
+              "focusEn": "Multiply",
+              "focusPl": "Pomnóż"
+            },
+            {
+              "en": "When you multiply any number by zero, the answer is always zero.",
+              "pl": "Kiedy mnożysz dowolną liczbę przez zero, wynik zawsze wynosi zero.",
+              "focusEn": "multiply",
+              "focusPl": "mnożysz"
+            }
+          ],
+          "acceptedAnswers": [
+            "multiply"
+          ],
+          "acceptedTranslations": [
+            "mnożyć",
+            "pomnożyć"
+          ]
+        },
+        {
+          "id": "math.divide",
+          "term": "divide",
+          "ipa": "/dɪˈvaɪd/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "dzielić",
+          "definition": "To find how many times one number fits into another.",
+          "register": "neutralny",
+          "contextPl": "Podstawowe działanie",
+          "natural": "",
+          "forms": "divided; dividing",
+          "collocations": "divide by; divide evenly",
+          "synonyms": "",
+          "antonyms": "multiply",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Divide twenty-four by three and check your answer.",
+              "pl": "Podziel dwadzieścia cztery przez trzy i sprawdź wynik.",
+              "focusEn": "Divide",
+              "focusPl": "Podziel"
+            },
+            {
+              "en": "You can't divide by zero, that's the rule.",
+              "pl": "Nie można dzielić przez zero, taka jest zasada.",
+              "focusEn": "divide",
+              "focusPl": "dzielić"
+            }
+          ],
+          "acceptedAnswers": [
+            "divide"
+          ],
+          "acceptedTranslations": [
+            "dzielić",
+            "podzielić"
+          ]
+        },
+        {
+          "id": "math.plus",
+          "term": "plus",
+          "ipa": "/plʌs/",
+          "pos": "przyimek",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "plus",
+          "definition": "Used between two numbers when you add them.",
+          "register": "neutralny",
+          "contextPl": "Odczytywanie działań",
+          "natural": "and",
+          "forms": "",
+          "collocations": "two plus two",
+          "synonyms": "",
+          "antonyms": "minus",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Who knows what nine plus six is without counting on their fingers?",
+              "pl": "Kto wie, ile to dziewięć plus sześć, bez liczenia na palcach?",
+              "focusEn": "plus",
+              "focusPl": "plus"
+            },
+            {
+              "en": "Write eighty plus twenty on the board and solve it.",
+              "pl": "Zapisz na tablicy osiemdziesiąt plus dwadzieścia i rozwiąż.",
+              "focusEn": "plus",
+              "focusPl": "plus"
+            }
+          ],
+          "acceptedAnswers": [
+            "plus"
+          ],
+          "acceptedTranslations": [
+            "plus",
+            "dodać"
+          ]
+        },
+        {
+          "id": "math.minus",
+          "term": "minus",
+          "ipa": "/ˈmaɪnəs/",
+          "pos": "przyimek",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "minus",
+          "definition": "Used between two numbers when you subtract one from the other.",
+          "register": "neutralny",
+          "contextPl": "Odczytywanie działań",
+          "natural": "",
+          "forms": "",
+          "collocations": "ten minus three",
+          "synonyms": "",
+          "antonyms": "plus",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "On the board, twelve minus four equals eight.",
+              "pl": "Na tablicy dwanaście minus cztery równa się osiem.",
+              "focusEn": "minus",
+              "focusPl": "minus"
+            },
+            {
+              "en": "Write the problem on the board: fifty minus nineteen.",
+              "pl": "Zapisz działanie na tablicy: pięćdziesiąt minus dziewiętnaście.",
+              "focusEn": "minus",
+              "focusPl": "minus"
+            }
+          ],
+          "acceptedAnswers": [
+            "minus"
+          ],
+          "acceptedTranslations": [
+            "minus",
+            "odjąć"
+          ]
+        },
+        {
+          "id": "math.times",
+          "term": "times",
+          "ipa": "/taɪmz/",
+          "pos": "przyimek",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "razy",
+          "definition": "Used between two numbers when you multiply them.",
+          "register": "neutralny",
+          "contextPl": "Odczytywanie działań",
+          "natural": "",
+          "forms": "",
+          "collocations": "three times four",
+          "synonyms": "multiplied by",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Seven times eight is fifty-six, so don't write fifty-four.",
+              "pl": "Siedem razy osiem to pięćdziesiąt sześć, więc nie pisz pięćdziesiąt cztery.",
+              "focusEn": "times",
+              "focusPl": "razy"
+            },
+            {
+              "en": "Three times what number equals twenty-seven, class?",
+              "pl": "Trzy razy jaka liczba równa się dwadzieścia siedem, klaso?",
+              "focusEn": "times",
+              "focusPl": "razy"
+            }
+          ],
+          "acceptedAnswers": [
+            "times",
+            "multiplied by"
+          ],
+          "acceptedTranslations": [
+            "razy",
+            "pomnożone przez"
+          ]
+        },
+        {
+          "id": "math.divided-by",
+          "term": "divided by",
+          "ipa": "/dɪˈvaɪdɪd ˌbaɪ/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "podzielone przez",
+          "definition": "Used between two numbers when you divide them.",
+          "register": "neutralny",
+          "contextPl": "Odczytywanie działań",
+          "natural": "over",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Forty-five divided by nine is five.",
+              "pl": "Czterdzieści pięć podzielone przez dziewięć to pięć.",
+              "focusEn": "divided by",
+              "focusPl": "podzielone przez"
+            },
+            {
+              "en": "What's one hundred divided by four?",
+              "pl": "Ile to sto podzielone przez cztery?",
+              "focusEn": "divided by",
+              "focusPl": "podzielone przez"
+            }
+          ],
+          "acceptedAnswers": [
+            "divided by"
+          ],
+          "acceptedTranslations": [
+            "podzielone przez",
+            "przez"
+          ]
+        },
+        {
+          "id": "math.equal",
+          "term": "equal",
+          "ipa": "/ˈiːkwəl/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "równać się",
+          "definition": "To be the same amount as something.",
+          "register": "neutralny",
+          "contextPl": "Wynik działania",
+          "natural": "be",
+          "forms": "equaled; equaling",
+          "collocations": "two plus two equals four",
+          "synonyms": "make",
+          "antonyms": "",
+          "notePl": "W mowie częściej „is”: Two plus two is four.",
+          "examples": [
+            {
+              "en": "In the second row, five times five equals twenty-five.",
+              "pl": "W drugim rzędzie pięć razy pięć równa się dwadzieścia pięć.",
+              "focusEn": "equals",
+              "focusPl": "równa się"
+            },
+            {
+              "en": "The two sides of the problem should equal each other.",
+              "pl": "Obie strony działania powinny równać się sobie.",
+              "focusEn": "equal",
+              "focusPl": "równać się"
+            }
+          ],
+          "acceptedAnswers": [
+            "equal",
+            "equals"
+          ],
+          "acceptedTranslations": [
+            "równać się",
+            "wynosić"
+          ]
+        },
+        {
+          "id": "math.sum",
+          "term": "sum",
+          "ipa": "/sʌm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "suma",
+          "definition": "The number you get when you add numbers together.",
+          "register": "neutralny",
+          "contextPl": "Wynik dodawania",
+          "natural": "total",
+          "forms": "sums",
+          "collocations": "the sum of; find the sum",
+          "synonyms": "total",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What's the sum of all the numbers from one to ten?",
+              "pl": "Ile wynosi suma wszystkich liczb od jednego do dziesięciu?",
+              "focusEn": "sum",
+              "focusPl": "suma"
+            },
+            {
+              "en": "Write the sum at the bottom of the column.",
+              "pl": "Wpisz sumę na dole kolumny.",
+              "focusEn": "sum",
+              "focusPl": "sumę"
+            }
+          ],
+          "acceptedAnswers": [
+            "sum",
+            "total"
+          ],
+          "acceptedTranslations": [
+            "suma"
+          ]
+        },
+        {
+          "id": "math.difference",
+          "term": "difference",
+          "ipa": "/ˈdɪfrəns/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "różnica",
+          "definition": "The number you get when you subtract one number from another.",
+          "register": "specjalistyczny",
+          "contextPl": "Wynik odejmowania",
+          "natural": "",
+          "forms": "differences",
+          "collocations": "the difference between",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Ogólnie „difference” to też różnica w znaczeniu niepodobieństwa.",
+          "examples": [
+            {
+              "en": "The difference between twenty and eight is twelve.",
+              "pl": "Różnica między dwudziestką a ósemką wynosi dwanaście.",
+              "focusEn": "difference",
+              "focusPl": "Różnica"
+            },
+            {
+              "en": "Find the difference and then multiply it by two.",
+              "pl": "Znajdź różnicę, a potem pomnóż ją przez dwa.",
+              "focusEn": "difference",
+              "focusPl": "różnicę"
+            }
+          ],
+          "acceptedAnswers": [
+            "difference"
+          ],
+          "acceptedTranslations": [
+            "różnica"
+          ]
+        },
+        {
+          "id": "math.product",
+          "term": "product",
+          "ipa": "/ˈprɑːdʌkt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "iloczyn",
+          "definition": "The number you get when you multiply numbers together.",
+          "register": "specjalistyczny",
+          "contextPl": "Wynik mnożenia",
+          "natural": "",
+          "forms": "products",
+          "collocations": "the product of",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The product of four and nine is thirty-six.",
+              "pl": "Iloczyn czterech i dziewięciu wynosi trzydzieści sześć.",
+              "focusEn": "product",
+              "focusPl": "Iloczyn"
+            },
+            {
+              "en": "Is the product of two negative numbers positive or negative?",
+              "pl": "Czy iloczyn dwóch liczb ujemnych jest dodatni czy ujemny?",
+              "focusEn": "product",
+              "focusPl": "iloczyn"
+            }
+          ],
+          "acceptedAnswers": [
+            "product"
+          ],
+          "acceptedTranslations": [
+            "iloczyn"
+          ]
+        },
+        {
+          "id": "math.calculate",
+          "term": "calculate",
+          "ipa": "/ˈkælkjəleɪt/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "obliczyć",
+          "definition": "To find an amount using numbers.",
+          "register": "neutralny",
+          "contextPl": "Liczenie wyniku",
+          "natural": "figure out",
+          "forms": "calculated; calculating",
+          "collocations": "calculate the total; calculate in your head",
+          "synonyms": "work out",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Calculate the answer in your head first, then check it on paper.",
+              "pl": "Najpierw oblicz wynik w pamięci, a potem sprawdź go na kartce.",
+              "focusEn": "Calculate",
+              "focusPl": "oblicz"
+            },
+            {
+              "en": "I calculated it twice and got two different answers.",
+              "pl": "Obliczyłem to dwa razy i dostałem dwa różne wyniki.",
+              "focusEn": "calculated",
+              "focusPl": "Obliczyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "calculate",
+            "figure out",
+            "work out"
+          ],
+          "acceptedTranslations": [
+            "obliczyć",
+            "obliczać",
+            "wyliczyć",
+            "policzyć"
+          ]
+        },
+        {
+          "id": "math.calculator",
+          "term": "calculator",
+          "ipa": "/ˈkælkjəleɪtər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "kalkulator",
+          "definition": "A small machine or app that does math.",
+          "register": "neutralny",
+          "contextPl": "Narzędzia do liczenia",
+          "natural": "",
+          "forms": "calculators",
+          "collocations": "use a calculator; calculator app",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "No calculators during this part of the lesson, please.",
+              "pl": "Na tej części lekcji proszę bez kalkulatorów.",
+              "focusEn": "calculators",
+              "focusPl": "kalkulatorów"
+            },
+            {
+              "en": "My calculator battery died in the middle of the test.",
+              "pl": "W połowie sprawdzianu padła mi bateria w kalkulatorze.",
+              "focusEn": "calculator",
+              "focusPl": "kalkulatorze"
+            }
+          ],
+          "acceptedAnswers": [
+            "calculator"
+          ],
+          "acceptedTranslations": [
+            "kalkulator"
+          ]
+        },
+        {
+          "id": "math.solve",
+          "term": "solve",
+          "ipa": "/sɑːlv/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "rozwiązać",
+          "definition": "To find the answer to a math problem.",
+          "register": "neutralny",
+          "contextPl": "Rozwiązywanie zadań",
+          "natural": "figure out",
+          "forms": "solved; solving",
+          "collocations": "solve a problem; solve an equation",
+          "synonyms": "work out",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Can anyone solve this problem without writing anything down?",
+              "pl": "Czy ktoś potrafi rozwiązać to zadanie bez zapisywania czegokolwiek?",
+              "focusEn": "solve",
+              "focusPl": "rozwiązać"
+            },
+            {
+              "en": "It took me twenty minutes to solve the last one.",
+              "pl": "Żeby rozwiązać ostatnie, potrzebowałem dwudziestu minut.",
+              "focusEn": "solve",
+              "focusPl": "rozwiązać"
+            }
+          ],
+          "acceptedAnswers": [
+            "solve",
+            "figure out"
+          ],
+          "acceptedTranslations": [
+            "rozwiązać",
+            "rozwiązywać"
+          ]
+        },
+        {
+          "id": "math.word-problem",
+          "term": "word problem",
+          "ipa": "/ˈwɝːd ˌprɑːbləm/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zadanie tekstowe",
+          "definition": "A math question written as a short story.",
+          "register": "neutralny",
+          "contextPl": "Typ zadań matematycznych",
+          "natural": "story problem",
+          "forms": "word problems",
+          "collocations": "solve a word problem",
+          "synonyms": "story problem",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Read the word problem twice before you start writing numbers.",
+              "pl": "Przeczytaj zadanie tekstowe dwa razy, zanim zaczniesz pisać liczby.",
+              "focusEn": "word problem",
+              "focusPl": "zadanie tekstowe"
+            },
+            {
+              "en": "This word problem is about two trains leaving at different times.",
+              "pl": "To zadanie tekstowe jest o dwóch pociągach odjeżdżających o różnych godzinach.",
+              "focusEn": "word problem",
+              "focusPl": "zadanie tekstowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "word problem",
+            "story problem"
+          ],
+          "acceptedTranslations": [
+            "zadanie tekstowe",
+            "zadanie z treścią"
+          ]
+        },
+        {
+          "id": "math.remainder",
+          "term": "remainder",
+          "ipa": "/rɪˈmeɪndər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "reszta",
+          "definition": "The amount left over when one number does not divide evenly into another.",
+          "register": "specjalistyczny",
+          "contextPl": "Dzielenie z resztą",
+          "natural": "",
+          "forms": "remainders",
+          "collocations": "with a remainder of",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Seventeen divided by five is three with a remainder of two.",
+              "pl": "Siedemnaście podzielone przez pięć to trzy z resztą dwa.",
+              "focusEn": "remainder",
+              "focusPl": "resztą"
+            },
+            {
+              "en": "Don't forget to write the remainder next to your answer.",
+              "pl": "Nie zapomnij zapisać reszty obok wyniku.",
+              "focusEn": "remainder",
+              "focusPl": "reszty"
+            }
+          ],
+          "acceptedAnswers": [
+            "remainder"
+          ],
+          "acceptedTranslations": [
+            "reszta",
+            "reszta z dzielenia"
+          ]
+        },
+        {
+          "id": "math.times-table",
+          "term": "times table",
+          "ipa": "/ˈtaɪmz ˌteɪbəl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "tabliczka mnożenia",
+          "definition": "A list showing the results of multiplying numbers from one to ten or twelve.",
+          "register": "neutralny",
+          "contextPl": "Nauka mnożenia",
+          "natural": "multiplication table",
+          "forms": "times tables",
+          "collocations": "learn your times tables",
+          "synonyms": "multiplication table",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We'll practice the times table for seven and eight today.",
+              "pl": "Dziś poćwiczymy tabliczkę mnożenia przez siedem i osiem.",
+              "focusEn": "times table",
+              "focusPl": "tabliczkę mnożenia"
+            },
+            {
+              "en": "She knows the whole times table by heart.",
+              "pl": "Ona zna całą tabliczkę mnożenia na pamięć.",
+              "focusEn": "times table",
+              "focusPl": "tabliczkę mnożenia"
+            }
+          ],
+          "acceptedAnswers": [
+            "times table",
+            "multiplication table"
+          ],
+          "acceptedTranslations": [
+            "tabliczka mnożenia"
+          ]
+        },
+        {
+          "id": "math.long-division",
+          "term": "long division",
+          "ipa": "/ˌlɔːŋ dɪˈvɪʒən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "less_common",
+          "translation": "dzielenie pisemne",
+          "definition": "A way of dividing large numbers on paper step by step.",
+          "register": "neutralny",
+          "contextPl": "Liczenie pisemne",
+          "natural": "",
+          "forms": "",
+          "collocations": "do long division",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Long division is hard at first, but it gets easier with practice.",
+              "pl": "Dzielenie pisemne jest na początku trudne, ale z praktyką staje się łatwiejsze.",
+              "focusEn": "Long division",
+              "focusPl": "Dzielenie pisemne"
+            },
+            {
+              "en": "Show every step of the long division in your notebook.",
+              "pl": "Pokaż w zeszycie każdy krok dzielenia pisemnego.",
+              "focusEn": "long division",
+              "focusPl": "dzielenia pisemnego"
+            }
+          ],
+          "acceptedAnswers": [
+            "long division"
+          ],
+          "acceptedTranslations": [
+            "dzielenie pisemne",
+            "dzielenie w słupku"
+          ]
+        },
+        {
+          "id": "math.square-root",
+          "term": "square root",
+          "ipa": "/ˌskwer ˈruːt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "pierwiastek kwadratowy",
+          "definition": "A number that gives a certain number when multiplied by itself.",
+          "register": "neutralny",
+          "contextPl": "Pierwiastkowanie",
+          "natural": "",
+          "forms": "square roots",
+          "collocations": "find the square root; the square root of",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The square root of eighty-one is nine.",
+              "pl": "Pierwiastek kwadratowy z osiemdziesięciu jeden to dziewięć.",
+              "focusEn": "square root",
+              "focusPl": "Pierwiastek kwadratowy"
+            },
+            {
+              "en": "Use the calculator to find the square root of two.",
+              "pl": "Użyj kalkulatora, żeby obliczyć pierwiastek kwadratowy z dwóch.",
+              "focusEn": "square root",
+              "focusPl": "pierwiastek kwadratowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "square root",
+            "root"
+          ],
+          "acceptedTranslations": [
+            "pierwiastek kwadratowy",
+            "pierwiastek"
+          ]
+        },
+        {
+          "id": "math.squared",
+          "term": "squared",
+          "ipa": "/skwerd/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "do kwadratu",
+          "definition": "Multiplied by itself.",
+          "register": "neutralny",
+          "contextPl": "Potęgowanie",
+          "natural": "",
+          "forms": "",
+          "collocations": "five squared; x squared",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Six squared is thirty-six, not twelve, so check your notebook.",
+              "pl": "Sześć do kwadratu to trzydzieści sześć, a nie dwanaście, więc sprawdź zeszyt.",
+              "focusEn": "squared",
+              "focusPl": "do kwadratu"
+            },
+            {
+              "en": "Write x squared with a small two above the x.",
+              "pl": "Zapisz x do kwadratu z małą dwójką nad iksem.",
+              "focusEn": "squared",
+              "focusPl": "do kwadratu"
+            }
+          ],
+          "acceptedAnswers": [
+            "squared",
+            "to the power of two"
+          ],
+          "acceptedTranslations": [
+            "do kwadratu",
+            "podniesiony do kwadratu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math.fractions",
+      "namePl": "Ułamki, procenty i liczby",
+      "scenePl": "Kuchenny stół wieczorem: uczeń odrabia zadanie z ułamków z pomocą mamy",
+      "entries": [
+        {
+          "id": "math.fraction",
+          "term": "fraction",
+          "ipa": "/ˈfrækʃən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ułamek",
+          "definition": "A part of a whole number, like one half or two thirds.",
+          "register": "neutralny",
+          "contextPl": "Części całości",
+          "natural": "",
+          "forms": "fractions",
+          "collocations": "add fractions; simplify a fraction",
+          "synonyms": "",
+          "antonyms": "whole number",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I still don't get how to add two fractions with different bottoms.",
+              "pl": "Nadal nie rozumiem, jak dodać dwa ułamki z różnymi mianownikami.",
+              "focusEn": "fractions",
+              "focusPl": "ułamki"
+            },
+            {
+              "en": "Draw a pizza to show the fraction three eighths.",
+              "pl": "Narysuj pizzę, żeby pokazać ułamek trzy ósme.",
+              "focusEn": "fraction",
+              "focusPl": "ułamek"
+            }
+          ],
+          "acceptedAnswers": [
+            "fraction"
+          ],
+          "acceptedTranslations": [
+            "ułamek"
+          ]
+        },
+        {
+          "id": "math.numerator",
+          "term": "numerator",
+          "ipa": "/ˈnuːməreɪtər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "licznik",
+          "definition": "The number above the line in a fraction.",
+          "register": "specjalistyczny",
+          "contextPl": "Budowa ułamka",
+          "natural": "top number",
+          "forms": "numerators",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "denominator",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "In three quarters, the numerator is three.",
+              "pl": "W trzech czwartych licznikiem jest trzy.",
+              "focusEn": "numerator",
+              "focusPl": "licznikiem"
+            },
+            {
+              "en": "Multiply only the numerator in this step, honey.",
+              "pl": "Kochanie, w tym kroku pomnóż tylko licznik.",
+              "focusEn": "numerator",
+              "focusPl": "licznik"
+            }
+          ],
+          "acceptedAnswers": [
+            "numerator",
+            "top number"
+          ],
+          "acceptedTranslations": [
+            "licznik"
+          ]
+        },
+        {
+          "id": "math.denominator",
+          "term": "denominator",
+          "ipa": "/dɪˈnɑːmɪneɪtər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "mianownik",
+          "definition": "The number below the line in a fraction.",
+          "register": "specjalistyczny",
+          "contextPl": "Budowa ułamka",
+          "natural": "bottom number",
+          "forms": "denominators",
+          "collocations": "common denominator; lowest common denominator",
+          "synonyms": "",
+          "antonyms": "numerator",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "First find a common denominator for both fractions.",
+              "pl": "Najpierw znajdź wspólny mianownik dla obu ułamków.",
+              "focusEn": "denominator",
+              "focusPl": "mianownik"
+            },
+            {
+              "en": "The denominator tells you how many pieces the pizza is cut into.",
+              "pl": "Mianownik mówi, na ile kawałków jest pokrojona pizza.",
+              "focusEn": "denominator",
+              "focusPl": "Mianownik"
+            }
+          ],
+          "acceptedAnswers": [
+            "denominator",
+            "bottom number"
+          ],
+          "acceptedTranslations": [
+            "mianownik"
+          ]
+        },
+        {
+          "id": "math.decimal",
+          "term": "decimal",
+          "ipa": "/ˈdesəməl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ułamek dziesiętny",
+          "definition": "A number with a point that shows parts of a whole, like 0.5.",
+          "register": "neutralny",
+          "contextPl": "Zapis dziesiętny",
+          "natural": "",
+          "forms": "decimals",
+          "collocations": "convert to a decimal; decimal number",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Change one quarter into a decimal and you get zero point two five.",
+              "pl": "Zamień jedną czwartą na ułamek dziesiętny, a otrzymasz zero przecinek dwadzieścia pięć.",
+              "focusEn": "decimal",
+              "focusPl": "ułamek dziesiętny"
+            },
+            {
+              "en": "Is it easier to work with decimals or with fractions?",
+              "pl": "Łatwiej ci pracować z ułamkami dziesiętnymi czy zwykłymi?",
+              "focusEn": "decimals",
+              "focusPl": "ułamkami dziesiętnymi"
+            }
+          ],
+          "acceptedAnswers": [
+            "decimal"
+          ],
+          "acceptedTranslations": [
+            "ułamek dziesiętny",
+            "liczba dziesiętna"
+          ]
+        },
+        {
+          "id": "math.decimal-point",
+          "term": "decimal point",
+          "ipa": "/ˌdesəməl ˈpɔɪnt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "przecinek dziesiętny",
+          "definition": "The dot in a decimal number, which separates whole numbers from parts.",
+          "register": "neutralny",
+          "contextPl": "Zapis dziesiętny",
+          "natural": "point",
+          "forms": "decimal points",
+          "collocations": "move the decimal point",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W angielskim zapisuje się kropkę (2.5), a czyta „point”, nie przecinek.",
+          "examples": [
+            {
+              "en": "In English, you write a dot as the decimal point, not a comma.",
+              "pl": "Po angielsku jako przecinek dziesiętny pisze się kropkę, a nie przecinek.",
+              "focusEn": "decimal point",
+              "focusPl": "przecinek dziesiętny"
+            },
+            {
+              "en": "You put the decimal point in the wrong place, so the answer is ten times too big.",
+              "pl": "Postawiłeś przecinek dziesiętny w złym miejscu, więc wynik jest dziesięć razy za duży.",
+              "focusEn": "decimal point",
+              "focusPl": "przecinek dziesiętny"
+            }
+          ],
+          "acceptedAnswers": [
+            "decimal point",
+            "point"
+          ],
+          "acceptedTranslations": [
+            "przecinek dziesiętny",
+            "przecinek",
+            "kropka dziesiętna"
+          ]
+        },
+        {
+          "id": "math.percent",
+          "term": "percent",
+          "ipa": "/pərˈsent/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "procent",
+          "definition": "One part in every hundred.",
+          "register": "neutralny",
+          "contextPl": "Procenty",
+          "natural": "",
+          "forms": "",
+          "collocations": "fifty percent; ten percent of",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W AmE zwykle pisane łącznie: percent.",
+          "examples": [
+            {
+              "en": "Mom, how do I find twenty percent of eighty?",
+              "pl": "Mamo, jak obliczyć dwadzieścia procent z osiemdziesięciu?",
+              "focusEn": "percent",
+              "focusPl": "procent"
+            },
+            {
+              "en": "Half of the pizza means fifty percent, remember?",
+              "pl": "Połowa pizzy to pięćdziesiąt procent, pamiętasz?",
+              "focusEn": "percent",
+              "focusPl": "procent"
+            }
+          ],
+          "acceptedAnswers": [
+            "percent",
+            "per cent"
+          ],
+          "acceptedTranslations": [
+            "procent"
+          ]
+        },
+        {
+          "id": "math.percentage",
+          "term": "percentage",
+          "ipa": "/pərˈsentɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odsetek",
+          "definition": "An amount shown as a part of one hundred.",
+          "register": "neutralny",
+          "contextPl": "Procenty",
+          "natural": "",
+          "forms": "percentages",
+          "collocations": "a high percentage; calculate a percentage",
+          "synonyms": "proportion",
+          "antonyms": "",
+          "notePl": "Po „percentage” nie podaje się liczby: a large percentage, ale 20 percent.",
+          "examples": [
+            {
+              "en": "What percentage of the class got the answer right?",
+              "pl": "Jaki odsetek klasy podał poprawną odpowiedź?",
+              "focusEn": "percentage",
+              "focusPl": "odsetek"
+            },
+            {
+              "en": "Turn each fraction on the worksheet into a percentage.",
+              "pl": "Zamień każdy ułamek z karty pracy na wartość procentową.",
+              "focusEn": "percentage",
+              "focusPl": "wartość procentową"
+            }
+          ],
+          "acceptedAnswers": [
+            "percentage"
+          ],
+          "acceptedTranslations": [
+            "odsetek",
+            "procent",
+            "wartość procentowa"
+          ]
+        },
+        {
+          "id": "math.ratio",
+          "term": "ratio",
+          "ipa": "/ˈreɪʃioʊ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "stosunek",
+          "definition": "The relationship between two amounts, shown as two numbers.",
+          "register": "specjalistyczny",
+          "contextPl": "Porównywanie ilości",
+          "natural": "",
+          "forms": "ratios",
+          "collocations": "a ratio of two to one",
+          "synonyms": "proportion",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The ratio of boys to girls in your class is three to two.",
+              "pl": "Stosunek chłopców do dziewczynek w twojej klasie wynosi trzy do dwóch.",
+              "focusEn": "ratio",
+              "focusPl": "Stosunek"
+            },
+            {
+              "en": "Mix the juice and water in a ratio of one to four.",
+              "pl": "Wymieszaj sok z wodą w stosunku jeden do czterech.",
+              "focusEn": "ratio",
+              "focusPl": "stosunku"
+            }
+          ],
+          "acceptedAnswers": [
+            "ratio"
+          ],
+          "acceptedTranslations": [
+            "stosunek",
+            "proporcja"
+          ]
+        },
+        {
+          "id": "math.round-up",
+          "term": "round up",
+          "ipa": "/ˌraʊnd ˈʌp/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zaokrąglić w górę",
+          "definition": "To change a number to the next higher whole number or ten.",
+          "register": "neutralny",
+          "contextPl": "Zaokrąglanie wyników",
+          "natural": "",
+          "forms": "rounded; rounding",
+          "collocations": "round up to the nearest ten",
+          "synonyms": "",
+          "antonyms": "round down",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Round up 4.6 to the nearest whole number.",
+              "pl": "Zaokrąglij w górę 4,6 do najbliższej liczby całkowitej.",
+              "focusEn": "Round up",
+              "focusPl": "Zaokrąglij w górę"
+            },
+            {
+              "en": "The book says to round up if the last digit is five or more.",
+              "pl": "W książce jest napisane, żeby zaokrąglić w górę, jeśli ostatnia cyfra to pięć lub więcej.",
+              "focusEn": "round up",
+              "focusPl": "zaokrąglić w górę"
+            }
+          ],
+          "acceptedAnswers": [
+            "round up"
+          ],
+          "acceptedTranslations": [
+            "zaokrąglić w górę",
+            "zaokrąglać w górę"
+          ]
+        },
+        {
+          "id": "math.round-down",
+          "term": "round down",
+          "ipa": "/ˌraʊnd ˈdaʊn/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zaokrąglić w dół",
+          "definition": "To change a number to the next lower whole number or ten.",
+          "register": "neutralny",
+          "contextPl": "Zaokrąglanie wyników",
+          "natural": "",
+          "forms": "rounded; rounding",
+          "collocations": "round down to the nearest dollar",
+          "synonyms": "",
+          "antonyms": "round up",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You round down 3.2 to three.",
+              "pl": "3,2 zaokrąglasz w dół do trzech.",
+              "focusEn": "round down",
+              "focusPl": "zaokrąglasz w dół"
+            },
+            {
+              "en": "Why did you round down here? The last digit is seven.",
+              "pl": "Dlaczego tu zaokrągliłeś w dół? Ostatnia cyfra to siedem.",
+              "focusEn": "round down",
+              "focusPl": "zaokrągliłeś w dół"
+            }
+          ],
+          "acceptedAnswers": [
+            "round down"
+          ],
+          "acceptedTranslations": [
+            "zaokrąglić w dół",
+            "zaokrąglać w dół"
+          ]
+        },
+        {
+          "id": "math.even-number",
+          "term": "even number",
+          "ipa": "/ˌiːvən ˈnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "liczba parzysta",
+          "definition": "A number that can be divided by two exactly.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje liczb",
+          "natural": "",
+          "forms": "even numbers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "odd number",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Circle every even number in this row.",
+              "pl": "Zakreśl każdą liczbę parzystą w tym rzędzie.",
+              "focusEn": "even number",
+              "focusPl": "liczbę parzystą"
+            },
+            {
+              "en": "Is zero an even number or not?",
+              "pl": "Czy zero jest liczbą parzystą, czy nie?",
+              "focusEn": "even number",
+              "focusPl": "liczbą parzystą"
+            }
+          ],
+          "acceptedAnswers": [
+            "even number"
+          ],
+          "acceptedTranslations": [
+            "liczba parzysta"
+          ]
+        },
+        {
+          "id": "math.odd-number",
+          "term": "odd number",
+          "ipa": "/ˌɑːd ˈnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "liczba nieparzysta",
+          "definition": "A number that cannot be divided by two exactly.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje liczb",
+          "natural": "",
+          "forms": "odd numbers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "even number",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Seven is an odd number, so it can't be split into two equal groups.",
+              "pl": "Siedem to liczba nieparzysta, więc nie da się jej podzielić na dwie równe grupy.",
+              "focusEn": "odd number",
+              "focusPl": "liczba nieparzysta"
+            },
+            {
+              "en": "Add up all the odd numbers from one to nine.",
+              "pl": "Zsumuj wszystkie liczby nieparzyste od jednego do dziewięciu.",
+              "focusEn": "odd numbers",
+              "focusPl": "liczby nieparzyste"
+            }
+          ],
+          "acceptedAnswers": [
+            "odd number"
+          ],
+          "acceptedTranslations": [
+            "liczba nieparzysta"
+          ]
+        },
+        {
+          "id": "math.negative-number",
+          "term": "negative number",
+          "ipa": "/ˌneɡətɪv ˈnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "liczba ujemna",
+          "definition": "A number less than zero.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje liczb",
+          "natural": "",
+          "forms": "negative numbers",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "positive number",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Minus five is a negative number, so it's to the left of zero.",
+              "pl": "Minus pięć to liczba ujemna, więc jest na lewo od zera.",
+              "focusEn": "negative number",
+              "focusPl": "liczba ujemna"
+            },
+            {
+              "en": "Negative numbers are easier if you think about temperature in winter.",
+              "pl": "Liczby ujemne są łatwiejsze, jeśli pomyślisz o temperaturze zimą.",
+              "focusEn": "Negative numbers",
+              "focusPl": "Liczby ujemne"
+            }
+          ],
+          "acceptedAnswers": [
+            "negative number"
+          ],
+          "acceptedTranslations": [
+            "liczba ujemna"
+          ]
+        },
+        {
+          "id": "math.whole-number",
+          "term": "whole number",
+          "ipa": "/ˌhoʊl ˈnʌmbər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "liczba całkowita",
+          "definition": "A number without fractions or decimals, like 3 or 10.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje liczb",
+          "natural": "",
+          "forms": "whole numbers",
+          "collocations": "round to the nearest whole number",
+          "synonyms": "integer",
+          "antonyms": "fraction",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The answer should be a whole number, so check your work.",
+              "pl": "Wynik powinien być liczbą całkowitą, więc sprawdź swoje obliczenia.",
+              "focusEn": "whole number",
+              "focusPl": "liczbą całkowitą"
+            },
+            {
+              "en": "Five and a half is not a whole number.",
+              "pl": "Pięć i pół to nie jest liczba całkowita.",
+              "focusEn": "whole number",
+              "focusPl": "liczba całkowita"
+            }
+          ],
+          "acceptedAnswers": [
+            "whole number",
+            "integer"
+          ],
+          "acceptedTranslations": [
+            "liczba całkowita",
+            "liczba naturalna"
+          ]
+        },
+        {
+          "id": "math.average",
+          "term": "average",
+          "ipa": "/ˈævərɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "średnia",
+          "definition": "The number you get by adding amounts and dividing by how many there are.",
+          "register": "neutralny",
+          "contextPl": "Wyliczanie średniej",
+          "natural": "mean",
+          "forms": "averages",
+          "collocations": "on average; calculate the average; above average",
+          "synonyms": "mean",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Your average for this month is eighty-five, which is great.",
+              "pl": "Twoja średnia w tym miesiącu wynosi osiemdziesiąt pięć, co jest świetne.",
+              "focusEn": "average",
+              "focusPl": "średnia"
+            },
+            {
+              "en": "To find the average, add the scores and divide by four.",
+              "pl": "Żeby obliczyć średnią, dodaj wyniki i podziel przez cztery.",
+              "focusEn": "average",
+              "focusPl": "średnią"
+            }
+          ],
+          "acceptedAnswers": [
+            "average",
+            "mean"
+          ],
+          "acceptedTranslations": [
+            "średnia",
+            "średnia arytmetyczna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math.equations",
+      "namePl": "Równania i algebra",
+      "scenePl": "Zajęcia wyrównawcze z algebry w liceum, po lekcjach, z nauczycielem przy tablicy",
+      "entries": [
+        {
+          "id": "math.equation",
+          "term": "equation",
+          "ipa": "/ɪˈkweɪʒən/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "równanie",
+          "definition": "A math statement that shows two amounts are equal.",
+          "register": "neutralny",
+          "contextPl": "Rozwiązywanie równań",
+          "natural": "",
+          "forms": "equations",
+          "collocations": "solve an equation; balance an equation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Copy the equation from the board and solve it.",
+              "pl": "Przepisz równanie z tablicy i je rozwiąż.",
+              "focusEn": "equation",
+              "focusPl": "równanie"
+            },
+            {
+              "en": "This equation has two possible answers.",
+              "pl": "To równanie ma dwa możliwe rozwiązania.",
+              "focusEn": "equation",
+              "focusPl": "równanie"
+            }
+          ],
+          "acceptedAnswers": [
+            "equation"
+          ],
+          "acceptedTranslations": [
+            "równanie"
+          ]
+        },
+        {
+          "id": "math.solve-for-x",
+          "term": "solve for x",
+          "ipa": "/ˌsɑːlv fər ˈeks/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wyznaczyć x",
+          "definition": "To find the value of the unknown number x.",
+          "register": "neutralny",
+          "contextPl": "Polecenia w zadaniach",
+          "natural": "",
+          "forms": "solved – solved",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Solve for x and then check your answer by plugging it back in.",
+              "pl": "Wyznacz x, a potem sprawdź wynik, podstawiając go z powrotem.",
+              "focusEn": "Solve for x",
+              "focusPl": "Wyznacz x"
+            },
+            {
+              "en": "I can solve for x, but I don't understand why it works.",
+              "pl": "Potrafię wyznaczyć x, ale nie rozumiem, dlaczego to działa.",
+              "focusEn": "solve for x",
+              "focusPl": "wyznaczyć x"
+            }
+          ],
+          "acceptedAnswers": [
+            "solve for x",
+            "find x"
+          ],
+          "acceptedTranslations": [
+            "wyznaczyć x",
+            "obliczyć x",
+            "rozwiązać dla x"
+          ]
+        },
+        {
+          "id": "math.unknown",
+          "term": "unknown",
+          "ipa": "/ʌnˈnoʊn/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "niewiadoma",
+          "definition": "A letter that stands for a number you need to find.",
+          "register": "specjalistyczny",
+          "contextPl": "Elementy równania",
+          "natural": "variable",
+          "forms": "unknowns",
+          "collocations": "equation with two unknowns",
+          "synonyms": "variable",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This equation has two unknowns, so we need a second equation.",
+              "pl": "To równanie ma dwie niewiadome, więc potrzebujemy drugiego równania.",
+              "focusEn": "unknowns",
+              "focusPl": "niewiadome"
+            },
+            {
+              "en": "The letter y is the unknown in this problem.",
+              "pl": "Litera y to niewiadoma w tym zadaniu.",
+              "focusEn": "unknown",
+              "focusPl": "niewiadoma"
+            }
+          ],
+          "acceptedAnswers": [
+            "unknown"
+          ],
+          "acceptedTranslations": [
+            "niewiadoma"
+          ]
+        },
+        {
+          "id": "math.formula",
+          "term": "formula",
+          "ipa": "/ˈfɔːrmjələ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wzór",
+          "definition": "A rule written with numbers and letters that shows how to calculate something.",
+          "register": "neutralny",
+          "contextPl": "Wzory matematyczne",
+          "natural": "",
+          "forms": "formulas",
+          "collocations": "use a formula; memorize a formula",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You need this formula for every problem on the next page.",
+              "pl": "Ten wzór będzie ci potrzebny do każdego zadania na następnej stronie.",
+              "focusEn": "formula",
+              "focusPl": "wzór"
+            },
+            {
+              "en": "I wrote the formula on a sticky note above my desk.",
+              "pl": "Zapisałem wzór na karteczce nad biurkiem.",
+              "focusEn": "formula",
+              "focusPl": "wzór"
+            }
+          ],
+          "acceptedAnswers": [
+            "formula"
+          ],
+          "acceptedTranslations": [
+            "wzór"
+          ]
+        },
+        {
+          "id": "math.algebra",
+          "term": "algebra",
+          "ipa": "/ˈældʒəbrə/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "algebra",
+          "definition": "Math that uses letters to stand for numbers.",
+          "register": "neutralny",
+          "contextPl": "Dział matematyki",
+          "natural": "",
+          "forms": "",
+          "collocations": "basic algebra; algebra class",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Algebra got easier once I understood what x really means.",
+              "pl": "Algebra stała się łatwiejsza, kiedy zrozumiałem, co naprawdę oznacza x.",
+              "focusEn": "Algebra",
+              "focusPl": "Algebra"
+            },
+            {
+              "en": "I'm here after school because I failed my last algebra quiz.",
+              "pl": "Jestem tu po lekcjach, bo oblałem ostatnią kartkówkę z algebry.",
+              "focusEn": "algebra",
+              "focusPl": "algebry"
+            }
+          ],
+          "acceptedAnswers": [
+            "algebra"
+          ],
+          "acceptedTranslations": [
+            "algebra"
+          ]
+        },
+        {
+          "id": "math.both-sides",
+          "term": "both sides",
+          "ipa": "/ˌboʊθ ˈsaɪdz/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "obie strony",
+          "definition": "The parts of an equation on the left and right of the equals sign.",
+          "register": "neutralny",
+          "contextPl": "Przekształcanie równań",
+          "natural": "",
+          "forms": "",
+          "collocations": "do the same to both sides; divide both sides",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Whatever you do, do it to both sides of the equation.",
+              "pl": "Cokolwiek robisz, rób to z obiema stronami równania.",
+              "focusEn": "both sides",
+              "focusPl": "obiema stronami"
+            },
+            {
+              "en": "Now divide both sides by three.",
+              "pl": "Teraz podziel obie strony przez trzy.",
+              "focusEn": "both sides",
+              "focusPl": "obie strony"
+            }
+          ],
+          "acceptedAnswers": [
+            "both sides",
+            "both sides of the equation"
+          ],
+          "acceptedTranslations": [
+            "obie strony",
+            "obie strony równania"
+          ]
+        },
+        {
+          "id": "math.simplify",
+          "term": "simplify",
+          "ipa": "/ˈsɪmplɪfaɪ/",
+          "pos": "czasownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "uprościć",
+          "definition": "To make an expression or fraction shorter and easier.",
+          "register": "neutralny",
+          "contextPl": "Przekształcenia",
+          "natural": "",
+          "forms": "simplified; simplifying",
+          "collocations": "simplify an expression; simplify a fraction",
+          "synonyms": "reduce",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Simplify the expression before you put in any numbers.",
+              "pl": "Uprość wyrażenie, zanim podstawisz jakiekolwiek liczby.",
+              "focusEn": "Simplify",
+              "focusPl": "Uprość"
+            },
+            {
+              "en": "You can simplify six eighths to three quarters.",
+              "pl": "Sześć ósmych możesz skrócić do trzech czwartych.",
+              "focusEn": "simplify",
+              "focusPl": "skrócić"
+            }
+          ],
+          "acceptedAnswers": [
+            "simplify",
+            "reduce"
+          ],
+          "acceptedTranslations": [
+            "uprościć",
+            "upraszczać",
+            "skrócić"
+          ]
+        },
+        {
+          "id": "math.plug-in",
+          "term": "plug in",
+          "ipa": "/ˌplʌɡ ˈɪn/",
+          "pos": "czasownik frazowy",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "podstawić",
+          "definition": "To put a number into a formula or equation in place of a letter.",
+          "register": "potoczny",
+          "contextPl": "Podstawianie wartości",
+          "natural": "substitute",
+          "forms": "plugged; plugging",
+          "collocations": "plug in a number; plug it back in",
+          "synonyms": "substitute",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Plug in five for x and see if both sides are equal.",
+              "pl": "Podstaw pięć za x i sprawdź, czy obie strony są równe.",
+              "focusEn": "Plug in",
+              "focusPl": "Podstaw"
+            },
+            {
+              "en": "I plugged in the wrong number and got a crazy answer.",
+              "pl": "Podstawiłem złą liczbę i wyszedł mi kosmiczny wynik.",
+              "focusEn": "plugged in",
+              "focusPl": "Podstawiłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "plug in",
+            "substitute"
+          ],
+          "acceptedTranslations": [
+            "podstawić",
+            "podstawiać"
+          ]
+        },
+        {
+          "id": "math.show-your-work",
+          "term": "show your work",
+          "ipa": "/ˌʃoʊ jər ˈwɝːk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "pokaż obliczenia",
+          "definition": "Used to tell students to write down every step of their solution.",
+          "register": "neutralny",
+          "contextPl": "Polecenia nauczyciela",
+          "natural": "",
+          "forms": "showed – shown",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Please show your work, or I can't give you full points.",
+              "pl": "Proszę pokazać obliczenia, bo inaczej nie mogę dać pełnej liczby punktów.",
+              "focusEn": "show your work",
+              "focusPl": "pokazać obliczenia"
+            },
+            {
+              "en": "Even if the answer is right, you lose points if you don't show your work.",
+              "pl": "Nawet przy dobrym wyniku tracisz punkty, jeśli nie pokażesz obliczeń.",
+              "focusEn": "show your work",
+              "focusPl": "pokażesz obliczeń"
+            }
+          ],
+          "acceptedAnswers": [
+            "show your work",
+            "show all your work"
+          ],
+          "acceptedTranslations": [
+            "pokaż obliczenia",
+            "zapisz obliczenia",
+            "pokaż tok rozumowania"
+          ]
+        },
+        {
+          "id": "math.exponent",
+          "term": "exponent",
+          "ipa": "/ɪkˈspoʊnənt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "wykładnik potęgi",
+          "definition": "The small number written above another number that shows a power.",
+          "register": "specjalistyczny",
+          "contextPl": "Potęgowanie",
+          "natural": "power",
+          "forms": "exponents",
+          "collocations": "",
+          "synonyms": "power",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "In two to the third, the exponent is three.",
+              "pl": "W dwóch do trzeciej wykładnikiem potęgi jest trzy.",
+              "focusEn": "exponent",
+              "focusPl": "wykładnikiem potęgi"
+            },
+            {
+              "en": "Write the exponent smaller and a bit higher than the number.",
+              "pl": "Zapisz wykładnik mniejszy i trochę wyżej niż liczbę.",
+              "focusEn": "exponent",
+              "focusPl": "wykładnik"
+            }
+          ],
+          "acceptedAnswers": [
+            "exponent",
+            "power"
+          ],
+          "acceptedTranslations": [
+            "wykładnik potęgi",
+            "wykładnik"
+          ]
+        },
+        {
+          "id": "math.to-the-power-of",
+          "term": "to the power of",
+          "ipa": "/tə ðə ˈpaʊər əv/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "do potęgi",
+          "definition": "Used to say how many times a number is multiplied by itself.",
+          "register": "neutralny",
+          "contextPl": "Odczytywanie potęg",
+          "natural": "",
+          "forms": "",
+          "collocations": "two to the power of ten",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Two to the power of ten is one thousand twenty-four.",
+              "pl": "Dwa do potęgi dziesiątej to tysiąc dwadzieścia cztery.",
+              "focusEn": "to the power of",
+              "focusPl": "do potęgi"
+            },
+            {
+              "en": "How do you say ten to the power of six in words?",
+              "pl": "Jak powiedzieć słownie dziesięć do potęgi szóstej?",
+              "focusEn": "to the power of",
+              "focusPl": "do potęgi"
+            }
+          ],
+          "acceptedAnswers": [
+            "to the power of",
+            "to the power"
+          ],
+          "acceptedTranslations": [
+            "do potęgi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math.geometry",
+      "namePl": "Geometria",
+      "scenePl": "Ojciec z synem mierzą ogród za domem i rysują plan nowego płotu i rabat",
+      "entries": [
+        {
+          "id": "math.angle",
+          "term": "angle",
+          "ipa": "/ˈæŋɡəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kąt",
+          "definition": "The space between two lines that meet, measured in degrees.",
+          "register": "neutralny",
+          "contextPl": "Kąty i ich miary",
+          "natural": "",
+          "forms": "angles",
+          "collocations": "sharp angle; at an angle",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The fence makes a strange angle at the back corner of the yard.",
+              "pl": "Płot tworzy dziwny kąt w tylnym rogu ogrodu.",
+              "focusEn": "angle",
+              "focusPl": "kąt"
+            },
+            {
+              "en": "Measure the angle where the two flower beds meet.",
+              "pl": "Zmierz kąt w miejscu, gdzie stykają się dwie rabaty.",
+              "focusEn": "angle",
+              "focusPl": "kąt"
+            }
+          ],
+          "acceptedAnswers": [
+            "angle"
+          ],
+          "acceptedTranslations": [
+            "kąt"
+          ]
+        },
+        {
+          "id": "math.right-angle",
+          "term": "right angle",
+          "ipa": "/ˌraɪt ˈæŋɡəl/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kąt prosty",
+          "definition": "An angle of ninety degrees, like the corner of a square.",
+          "register": "neutralny",
+          "contextPl": "Kąty i ich miary",
+          "natural": "",
+          "forms": "right angles",
+          "collocations": "at a right angle",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The corner of the shed should be a perfect right angle.",
+              "pl": "Narożnik szopy powinien być idealnym kątem prostym.",
+              "focusEn": "right angle",
+              "focusPl": "kątem prostym"
+            },
+            {
+              "en": "The path meets the fence at a right angle.",
+              "pl": "Ścieżka styka się z płotem pod kątem prostym.",
+              "focusEn": "right angle",
+              "focusPl": "kątem prostym"
+            }
+          ],
+          "acceptedAnswers": [
+            "right angle"
+          ],
+          "acceptedTranslations": [
+            "kąt prosty"
+          ]
+        },
+        {
+          "id": "math.degree",
+          "term": "degree",
+          "ipa": "/dɪˈɡriː/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "stopień",
+          "definition": "A unit for measuring angles.",
+          "register": "neutralny",
+          "contextPl": "Miara kątów",
+          "natural": "",
+          "forms": "degrees",
+          "collocations": "ninety degrees; a forty-five degree angle",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A right angle has ninety degrees.",
+              "pl": "Kąt prosty ma dziewięćdziesiąt stopni.",
+              "focusEn": "degrees",
+              "focusPl": "stopni"
+            },
+            {
+              "en": "Turn the board about forty-five degrees to the left.",
+              "pl": "Obróć deskę o mniej więcej czterdzieści pięć stopni w lewo.",
+              "focusEn": "degrees",
+              "focusPl": "stopni"
+            }
+          ],
+          "acceptedAnswers": [
+            "degree"
+          ],
+          "acceptedTranslations": [
+            "stopień"
+          ]
+        },
+        {
+          "id": "math.area",
+          "term": "area",
+          "ipa": "/ˈeriə/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "pole powierzchni",
+          "definition": "The size of a flat surface, measured in square units.",
+          "register": "neutralny",
+          "contextPl": "Obliczanie powierzchni",
+          "natural": "",
+          "forms": "areas",
+          "collocations": "calculate the area; area of a rectangle",
+          "synonyms": "surface area",
+          "antonyms": "",
+          "notePl": "Nie myl z „okolicą” (the area around the house).",
+          "examples": [
+            {
+              "en": "The area of the lawn is about four hundred square feet.",
+              "pl": "Pole powierzchni trawnika to około czterystu stóp kwadratowych.",
+              "focusEn": "area",
+              "focusPl": "Pole powierzchni"
+            },
+            {
+              "en": "To find the area, multiply the length by the width.",
+              "pl": "Żeby obliczyć pole powierzchni, pomnóż długość przez szerokość.",
+              "focusEn": "area",
+              "focusPl": "pole powierzchni"
+            }
+          ],
+          "acceptedAnswers": [
+            "area"
+          ],
+          "acceptedTranslations": [
+            "pole powierzchni",
+            "powierzchnia",
+            "pole"
+          ]
+        },
+        {
+          "id": "math.perimeter",
+          "term": "perimeter",
+          "ipa": "/pəˈrɪmɪtər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "obwód",
+          "definition": "The total length of the edges of a flat shape.",
+          "register": "specjalistyczny",
+          "contextPl": "Obliczanie obwodu",
+          "natural": "",
+          "forms": "perimeters",
+          "collocations": "measure the perimeter; perimeter of the yard",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We need to know the perimeter to buy enough fence.",
+              "pl": "Musimy znać obwód, żeby kupić wystarczająco dużo płotu.",
+              "focusEn": "perimeter",
+              "focusPl": "obwód"
+            },
+            {
+              "en": "Walk along the perimeter and count your steps.",
+              "pl": "Przejdź wzdłuż obwodu i policz kroki.",
+              "focusEn": "perimeter",
+              "focusPl": "obwodu"
+            }
+          ],
+          "acceptedAnswers": [
+            "perimeter"
+          ],
+          "acceptedTranslations": [
+            "obwód"
+          ]
+        },
+        {
+          "id": "math.volume",
+          "term": "volume",
+          "ipa": "/ˈvɑːljuːm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "objętość",
+          "definition": "The amount of space inside a three-dimensional object.",
+          "register": "neutralny",
+          "contextPl": "Bryły i pojemność",
+          "natural": "capacity",
+          "forms": "",
+          "collocations": "calculate the volume",
+          "synonyms": "capacity",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "What's the volume of the new garden box in cubic feet?",
+              "pl": "Jaka jest objętość nowej skrzyni ogrodowej w stopach sześciennych?",
+              "focusEn": "volume",
+              "focusPl": "objętość"
+            },
+            {
+              "en": "We need the volume to know how much soil to buy.",
+              "pl": "Potrzebujemy objętości, żeby wiedzieć, ile ziemi kupić.",
+              "focusEn": "volume",
+              "focusPl": "objętości"
+            }
+          ],
+          "acceptedAnswers": [
+            "volume",
+            "capacity"
+          ],
+          "acceptedTranslations": [
+            "objętość",
+            "pojemność"
+          ]
+        },
+        {
+          "id": "math.diameter",
+          "term": "diameter",
+          "ipa": "/daɪˈæmɪtər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "średnica",
+          "definition": "A straight line across a circle through its center.",
+          "register": "neutralny",
+          "contextPl": "Okręgi i koła",
+          "natural": "",
+          "forms": "diameters",
+          "collocations": "measure the diameter",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The round pond has a diameter of eight feet.",
+              "pl": "Okrągły staw ma średnicę ośmiu stóp.",
+              "focusEn": "diameter",
+              "focusPl": "średnicę"
+            },
+            {
+              "en": "Measure the diameter of the tree trunk at chest height.",
+              "pl": "Zmierz średnicę pnia drzewa na wysokości klatki piersiowej.",
+              "focusEn": "diameter",
+              "focusPl": "średnicę"
+            }
+          ],
+          "acceptedAnswers": [
+            "diameter"
+          ],
+          "acceptedTranslations": [
+            "średnica"
+          ]
+        },
+        {
+          "id": "math.radius",
+          "term": "radius",
+          "ipa": "/ˈreɪdiəs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "promień",
+          "definition": "The distance from the center of a circle to its edge.",
+          "register": "neutralny",
+          "contextPl": "Okręgi i koła",
+          "natural": "",
+          "forms": "radii; radiuses",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The sprinkler covers a radius of about ten feet.",
+              "pl": "Zraszacz obejmuje promień około dziesięciu stóp.",
+              "focusEn": "radius",
+              "focusPl": "promień"
+            },
+            {
+              "en": "The radius is always half the diameter.",
+              "pl": "Promień to zawsze połowa średnicy.",
+              "focusEn": "radius",
+              "focusPl": "Promień"
+            }
+          ],
+          "acceptedAnswers": [
+            "radius"
+          ],
+          "acceptedTranslations": [
+            "promień"
+          ]
+        },
+        {
+          "id": "math.parallel",
+          "term": "parallel",
+          "ipa": "/ˈperəlel/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "równoległy",
+          "definition": "Running side by side at the same distance apart and never meeting.",
+          "register": "neutralny",
+          "contextPl": "Położenie linii",
+          "natural": "",
+          "forms": "",
+          "collocations": "parallel lines; parallel to",
+          "synonyms": "",
+          "antonyms": "perpendicular",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The two rows of tomatoes should be parallel to the fence.",
+              "pl": "Dwa rzędy pomidorów powinny być równoległe do płotu.",
+              "focusEn": "parallel",
+              "focusPl": "równoległe"
+            },
+            {
+              "en": "These boards aren't parallel, so the gate won't close.",
+              "pl": "Te deski nie są równoległe, więc furtka się nie zamknie.",
+              "focusEn": "parallel",
+              "focusPl": "równoległe"
+            }
+          ],
+          "acceptedAnswers": [
+            "parallel"
+          ],
+          "acceptedTranslations": [
+            "równoległy"
+          ]
+        },
+        {
+          "id": "math.perpendicular",
+          "term": "perpendicular",
+          "ipa": "/ˌpɝːpənˈdɪkjələr/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "prostopadły",
+          "definition": "At an angle of ninety degrees to another line.",
+          "register": "specjalistyczny",
+          "contextPl": "Położenie linii",
+          "natural": "at right angles",
+          "forms": "",
+          "collocations": "perpendicular to",
+          "synonyms": "",
+          "antonyms": "parallel",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The new path will be perpendicular to the driveway.",
+              "pl": "Nowa ścieżka będzie prostopadła do podjazdu.",
+              "focusEn": "perpendicular",
+              "focusPl": "prostopadła"
+            },
+            {
+              "en": "Make sure the post is perpendicular to the ground.",
+              "pl": "Upewnij się, że słupek jest prostopadły do ziemi.",
+              "focusEn": "perpendicular",
+              "focusPl": "prostopadły"
+            }
+          ],
+          "acceptedAnswers": [
+            "perpendicular"
+          ],
+          "acceptedTranslations": [
+            "prostopadły"
+          ]
+        },
+        {
+          "id": "math.protractor",
+          "term": "protractor",
+          "ipa": "/proʊˈtræktər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "kątomierz",
+          "definition": "A half-circle tool for measuring angles.",
+          "register": "neutralny",
+          "contextPl": "Przybory geometryczne",
+          "natural": "",
+          "forms": "protractors",
+          "collocations": "use a protractor",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Bring me the protractor from your school bag.",
+              "pl": "Przynieś mi kątomierz z twojego plecaka.",
+              "focusEn": "protractor",
+              "focusPl": "kątomierz"
+            },
+            {
+              "en": "Line up the protractor with the edge of the drawing.",
+              "pl": "Wyrównaj kątomierz z krawędzią rysunku.",
+              "focusEn": "protractor",
+              "focusPl": "kątomierz"
+            }
+          ],
+          "acceptedAnswers": [
+            "protractor"
+          ],
+          "acceptedTranslations": [
+            "kątomierz"
+          ]
+        },
+        {
+          "id": "math.geometry",
+          "term": "geometry",
+          "ipa": "/dʒiˈɑːmətri/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "geometria",
+          "definition": "The part of math that studies shapes, lines and angles.",
+          "register": "neutralny",
+          "contextPl": "Dział matematyki",
+          "natural": "",
+          "forms": "",
+          "collocations": "geometry class; basic geometry",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "See, you use geometry even when you build a fence.",
+              "pl": "Widzisz, geometrii używasz nawet przy budowie płotu.",
+              "focusEn": "geometry",
+              "focusPl": "geometrii"
+            },
+            {
+              "en": "This is the first time geometry has felt useful to me.",
+              "pl": "Pierwszy raz geometria wydaje mi się przydatna.",
+              "focusEn": "geometry",
+              "focusPl": "geometria"
+            }
+          ],
+          "acceptedAnswers": [
+            "geometry"
+          ],
+          "acceptedTranslations": [
+            "geometria"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math.graphs",
+      "namePl": "Wykresy i statystyka",
+      "scenePl": "Szkolny projekt: uczniowie przedstawiają klasie wyniki ankiety na wykresach",
+      "entries": [
+        {
+          "id": "math.graph",
+          "term": "graph",
+          "ipa": "/ɡræf/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wykres",
+          "definition": "A drawing that shows how numbers are related, often with lines.",
+          "register": "neutralny",
+          "contextPl": "Prezentowanie danych",
+          "natural": "chart",
+          "forms": "graphs",
+          "collocations": "draw a graph; line graph; on the graph",
+          "synonyms": "chart",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "This graph shows how many hours students sleep each night.",
+              "pl": "Ten wykres pokazuje, ile godzin uczniowie śpią każdej nocy.",
+              "focusEn": "graph",
+              "focusPl": "wykres"
+            },
+            {
+              "en": "Look at the graph, and you'll see a big jump in March.",
+              "pl": "Spójrzcie na wykres, a zobaczycie duży skok w marcu.",
+              "focusEn": "graph",
+              "focusPl": "wykres"
+            }
+          ],
+          "acceptedAnswers": [
+            "graph",
+            "chart"
+          ],
+          "acceptedTranslations": [
+            "wykres"
+          ]
+        },
+        {
+          "id": "math.bar-chart",
+          "term": "bar chart",
+          "ipa": "/ˈbɑːr ˌtʃɑːrt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wykres słupkowy",
+          "definition": "A chart that uses bars of different lengths to compare amounts.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje wykresów",
+          "natural": "bar graph",
+          "forms": "bar charts",
+          "collocations": "",
+          "synonyms": "bar graph",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our bar chart compares the favorite sports of boys and girls.",
+              "pl": "Nasz wykres słupkowy porównuje ulubione sporty chłopców i dziewczyn.",
+              "focusEn": "bar chart",
+              "focusPl": "wykres słupkowy"
+            },
+            {
+              "en": "The tallest bar in the bar chart is soccer.",
+              "pl": "Najwyższy słupek na wykresie słupkowym to piłka nożna.",
+              "focusEn": "bar chart",
+              "focusPl": "wykresie słupkowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "bar chart",
+            "bar graph"
+          ],
+          "acceptedTranslations": [
+            "wykres słupkowy",
+            "diagram słupkowy"
+          ]
+        },
+        {
+          "id": "math.pie-chart",
+          "term": "pie chart",
+          "ipa": "/ˈpaɪ ˌtʃɑːrt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wykres kołowy",
+          "definition": "A round chart divided into slices that show parts of a whole.",
+          "register": "neutralny",
+          "contextPl": "Rodzaje wykresów",
+          "natural": "",
+          "forms": "pie charts",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The pie chart shows that half the class walks to school.",
+              "pl": "Wykres kołowy pokazuje, że połowa klasy chodzi do szkoły pieszo.",
+              "focusEn": "pie chart",
+              "focusPl": "Wykres kołowy"
+            },
+            {
+              "en": "Each slice of the pie chart has a different color.",
+              "pl": "Każdy wycinek wykresu kołowego ma inny kolor.",
+              "focusEn": "pie chart",
+              "focusPl": "wykresu kołowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "pie chart"
+          ],
+          "acceptedTranslations": [
+            "wykres kołowy",
+            "diagram kołowy"
+          ]
+        },
+        {
+          "id": "math.axis",
+          "term": "axis",
+          "ipa": "/ˈæksɪs/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "oś",
+          "definition": "A line on a graph used to show measurements.",
+          "register": "specjalistyczny",
+          "contextPl": "Elementy wykresu",
+          "natural": "",
+          "forms": "axes",
+          "collocations": "x-axis; y-axis; along the axis",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Liczba mnoga: axes /ˈæksiːz/.",
+          "examples": [
+            {
+              "en": "The bottom axis shows the months of the year.",
+              "pl": "Dolna oś pokazuje miesiące roku.",
+              "focusEn": "axis",
+              "focusPl": "oś"
+            },
+            {
+              "en": "You forgot to label the vertical axis.",
+              "pl": "Zapomnieliście podpisać pionowej osi.",
+              "focusEn": "axis",
+              "focusPl": "osi"
+            }
+          ],
+          "acceptedAnswers": [
+            "axis",
+            "x-axis",
+            "y-axis"
+          ],
+          "acceptedTranslations": [
+            "oś",
+            "oś wykresu"
+          ]
+        },
+        {
+          "id": "math.statistics",
+          "term": "statistics",
+          "ipa": "/stəˈtɪstɪks/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "statystyka",
+          "definition": "The science of collecting and analyzing numbers.",
+          "register": "neutralny",
+          "contextPl": "Analiza danych",
+          "natural": "stats",
+          "forms": "",
+          "collocations": "basic statistics; crime statistics",
+          "synonyms": "stats",
+          "antonyms": "",
+          "notePl": "Jako dziedzina: statistics is; jako dane: statistics are.",
+          "examples": [
+            {
+              "en": "We used simple statistics to analyze our survey.",
+              "pl": "Do analizy ankiety użyliśmy prostej statystyki.",
+              "focusEn": "statistics",
+              "focusPl": "statystyki"
+            },
+            {
+              "en": "The statistics show that most students skip breakfast.",
+              "pl": "Statystyki pokazują, że większość uczniów nie je śniadania.",
+              "focusEn": "statistics",
+              "focusPl": "Statystyki"
+            }
+          ],
+          "acceptedAnswers": [
+            "statistics",
+            "stats"
+          ],
+          "acceptedTranslations": [
+            "statystyka",
+            "statystyki",
+            "dane statystyczne"
+          ]
+        },
+        {
+          "id": "math.probability",
+          "term": "probability",
+          "ipa": "/ˌprɑːbəˈbɪləti/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "prawdopodobieństwo",
+          "definition": "How likely it is that something will happen, often as a number.",
+          "register": "neutralny",
+          "contextPl": "Rachunek prawdopodobieństwa",
+          "natural": "chance",
+          "forms": "probabilities",
+          "collocations": "high probability; the probability of",
+          "synonyms": "chance; likelihood",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The probability of picking a student who plays guitar is one in five.",
+              "pl": "Prawdopodobieństwo wylosowania ucznia, który gra na gitarze, wynosi jeden do pięciu.",
+              "focusEn": "probability",
+              "focusPl": "Prawdopodobieństwo"
+            },
+            {
+              "en": "We explained probability using a coin and a die.",
+              "pl": "Wyjaśniliśmy prawdopodobieństwo na przykładzie monety i kostki.",
+              "focusEn": "probability",
+              "focusPl": "prawdopodobieństwo"
+            }
+          ],
+          "acceptedAnswers": [
+            "probability",
+            "chance"
+          ],
+          "acceptedTranslations": [
+            "prawdopodobieństwo",
+            "szansa"
+          ]
+        },
+        {
+          "id": "math.median",
+          "term": "median",
+          "ipa": "/ˈmiːdiən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "mediana",
+          "definition": "The middle number in a list of numbers in order.",
+          "register": "specjalistyczny",
+          "contextPl": "Miary statystyczne",
+          "natural": "",
+          "forms": "medians",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The median is seven hours, so half the class sleeps less.",
+              "pl": "Mediana to siedem godzin, więc połowa klasy śpi mniej.",
+              "focusEn": "median",
+              "focusPl": "Mediana"
+            },
+            {
+              "en": "We used the median because one student said he sleeps fifteen hours.",
+              "pl": "Użyliśmy mediany, bo jeden uczeń powiedział, że śpi piętnaście godzin.",
+              "focusEn": "median",
+              "focusPl": "mediany"
+            }
+          ],
+          "acceptedAnswers": [
+            "median"
+          ],
+          "acceptedTranslations": [
+            "mediana"
+          ]
+        },
+        {
+          "id": "math.increase",
+          "term": "increase",
+          "ipa": "/ɪnˈkriːs/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "very_common",
+          "translation": "wzrosnąć",
+          "definition": "To become larger in number or amount.",
+          "register": "neutralny",
+          "contextPl": "Opisywanie zmian na wykresie",
+          "natural": "go up",
+          "forms": "increased; increasing",
+          "collocations": "increase sharply; increase by ten percent",
+          "synonyms": "rise; go up",
+          "antonyms": "decrease",
+          "notePl": "Rzeczownik ma akcent na pierwszej sylabie: an INcrease.",
+          "examples": [
+            {
+              "en": "The number of students with phones increased every year.",
+              "pl": "Liczba uczniów z telefonami wzrastała każdego roku.",
+              "focusEn": "increased",
+              "focusPl": "wzrastała"
+            },
+            {
+              "en": "Screen time increases sharply on weekends.",
+              "pl": "Czas przed ekranem gwałtownie rośnie w weekendy.",
+              "focusEn": "increases",
+              "focusPl": "rośnie"
+            }
+          ],
+          "acceptedAnswers": [
+            "increase",
+            "go up",
+            "rise"
+          ],
+          "acceptedTranslations": [
+            "wzrosnąć",
+            "wzrastać",
+            "zwiększyć się",
+            "rosnąć"
+          ]
+        },
+        {
+          "id": "math.decrease",
+          "term": "decrease",
+          "ipa": "/dɪˈkriːs/",
+          "pos": "czasownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "spaść",
+          "definition": "To become smaller in number or amount.",
+          "register": "neutralny",
+          "contextPl": "Opisywanie zmian na wykresie",
+          "natural": "go down",
+          "forms": "decreased; decreasing",
+          "collocations": "decrease slightly; decrease by half",
+          "synonyms": "fall; drop; go down",
+          "antonyms": "increase",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Sleep time decreases as students get older.",
+              "pl": "Czas snu spada wraz z wiekiem uczniów.",
+              "focusEn": "decreases",
+              "focusPl": "spada"
+            },
+            {
+              "en": "After March, the number decreased by about ten percent.",
+              "pl": "Po marcu liczba spadła o około dziesięć procent.",
+              "focusEn": "decreased",
+              "focusPl": "spadła"
+            }
+          ],
+          "acceptedAnswers": [
+            "decrease",
+            "go down",
+            "drop"
+          ],
+          "acceptedTranslations": [
+            "spaść",
+            "spadać",
+            "zmniejszyć się",
+            "maleć"
+          ]
+        },
+        {
+          "id": "math.survey",
+          "term": "survey",
+          "ipa": "/ˈsɝːveɪ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "ankieta",
+          "definition": "A set of questions asked to many people to collect data.",
+          "register": "neutralny",
+          "contextPl": "Zbieranie danych",
+          "natural": "poll",
+          "forms": "surveys",
+          "collocations": "do a survey; fill out a survey; survey results",
+          "synonyms": "poll; questionnaire",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We asked a hundred students to fill out our survey.",
+              "pl": "Poprosiliśmy stu uczniów o wypełnienie naszej ankiety.",
+              "focusEn": "survey",
+              "focusPl": "ankiety"
+            },
+            {
+              "en": "The survey had only five questions, so it was quick.",
+              "pl": "Ankieta miała tylko pięć pytań, więc szła szybko.",
+              "focusEn": "survey",
+              "focusPl": "Ankieta"
+            }
+          ],
+          "acceptedAnswers": [
+            "survey",
+            "questionnaire"
+          ],
+          "acceptedTranslations": [
+            "ankieta",
+            "badanie ankietowe",
+            "sondaż"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math.phrases",
+      "namePl": "Zwroty i idiomy",
+      "scenePl": "Rodzice rozmawiają przy kuchennym stole o domowym budżecie i rachunkach",
+      "entries": [
+        {
+          "id": "math.do-the-math",
+          "term": "do the math",
+          "ipa": "/ˌduː ðə ˈmæθ/",
+          "pos": "zwrot",
+          "level": "B2",
+          "frequency": "very_common",
+          "translation": "policzyć",
+          "definition": "To calculate something to understand the real situation.",
+          "register": "potoczny",
+          "contextPl": "Szybkie przeliczenie w rozmowie",
+          "natural": "figure it out",
+          "forms": "did – done",
+          "collocations": "",
+          "synonyms": "work it out",
+          "antonyms": "",
+          "notePl": "W BrE „do the maths”.",
+          "examples": [
+            {
+              "en": "Do the math, and you'll see we spend too much on takeout.",
+              "pl": "Policz, a zobaczysz, że wydajemy za dużo na jedzenie na wynos.",
+              "focusEn": "Do the math",
+              "focusPl": "Policz"
+            },
+            {
+              "en": "I did the math, and the bigger box is actually cheaper.",
+              "pl": "Przeliczyłem to i większe opakowanie jest w sumie tańsze.",
+              "focusEn": "did the math",
+              "focusPl": "Przeliczyłem"
+            }
+          ],
+          "acceptedAnswers": [
+            "do the math"
+          ],
+          "acceptedTranslations": [
+            "policzyć",
+            "przeliczyć",
+            "sam sobie policz"
+          ]
+        },
+        {
+          "id": "math.it-doesnt-add-up",
+          "term": "it doesn't add up",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "coś się nie zgadza",
+          "definition": "Used to say something does not make sense or seem right.",
+          "register": "potoczny",
+          "contextPl": "Wątpliwości co do liczb lub historii",
+          "natural": "something's wrong",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We paid all the bills, but the balance is still low, it doesn't add up.",
+              "pl": "Zapłaciliśmy wszystkie rachunki, a saldo wciąż jest niskie, coś się nie zgadza.",
+              "focusEn": "it doesn't add up",
+              "focusPl": "coś się nie zgadza"
+            },
+            {
+              "en": "Twelve dollars for two coffees? It doesn't add up.",
+              "pl": "Dwanaście dolarów za dwie kawy? Coś się nie zgadza.",
+              "focusEn": "It doesn't add up",
+              "focusPl": "Coś się nie zgadza"
+            }
+          ],
+          "acceptedAnswers": [
+            "it doesn't add up",
+            "it does not add up"
+          ],
+          "acceptedTranslations": [
+            "coś się nie zgadza",
+            "to się nie trzyma kupy",
+            "to się nie sumuje"
+          ]
+        },
+        {
+          "id": "math.crunch-the-numbers",
+          "term": "crunch the numbers",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "przeanalizować liczby",
+          "definition": "To do detailed calculations, often with money.",
+          "register": "potoczny",
+          "contextPl": "Dokładne wyliczenia",
+          "natural": "do the math",
+          "forms": "crunched – crunched",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Let's crunch the numbers before we decide on the new car.",
+              "pl": "Zanim zdecydujemy o nowym aucie, przeanalizujmy liczby.",
+              "focusEn": "crunch the numbers",
+              "focusPl": "przeanalizujmy liczby"
+            },
+            {
+              "en": "I crunched the numbers last night, and we can afford a trip in August.",
+              "pl": "Wczoraj wieczorem przeliczyłem wszystko i stać nas na wyjazd w sierpniu.",
+              "focusEn": "crunched the numbers",
+              "focusPl": "przeliczyłem wszystko"
+            }
+          ],
+          "acceptedAnswers": [
+            "crunch the numbers"
+          ],
+          "acceptedTranslations": [
+            "przeanalizować liczby",
+            "przeliczyć wszystko",
+            "zrobić wyliczenia"
+          ]
+        },
+        {
+          "id": "math.numbers-person",
+          "term": "numbers person",
+          "ipa": "/ˈnʌmbərz ˌpɝːsən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "osoba z głową do liczb",
+          "definition": "Someone who is good with numbers and likes working with them.",
+          "register": "potoczny",
+          "contextPl": "Mówienie o predyspozycjach",
+          "natural": "",
+          "forms": "numbers people",
+          "collocations": "not a numbers person",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "You handle the budget, you're the numbers person here.",
+              "pl": "Ty ogarnij budżet, to ty tu jesteś osobą z głową do liczb.",
+              "focusEn": "numbers person",
+              "focusPl": "osobą z głową do liczb"
+            },
+            {
+              "en": "I'm not a numbers person, so these tax forms scare me.",
+              "pl": "Nie jestem ścisłowcem, więc te formularze podatkowe mnie przerażają.",
+              "focusEn": "numbers person",
+              "focusPl": "ścisłowcem"
+            }
+          ],
+          "acceptedAnswers": [
+            "numbers person"
+          ],
+          "acceptedTranslations": [
+            "osoba z głową do liczb",
+            "umysł ścisły",
+            "ścisłowiec"
+          ]
+        },
+        {
+          "id": "math.put-two-and-two-together",
+          "term": "put two and two together",
+          "ipa": "",
+          "pos": "idiom",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "skojarzyć fakty",
+          "definition": "To understand something by connecting the facts you know.",
+          "register": "potoczny",
+          "contextPl": "Dojście do wniosku",
+          "natural": "figure out",
+          "forms": "put – put",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I saw the empty fridge and the pizza receipt, and I put two and two together.",
+              "pl": "Zobaczyłem pustą lodówkę i paragon za pizzę, i skojarzyłem fakty.",
+              "focusEn": "put two and two together",
+              "focusPl": "skojarzyłem fakty"
+            },
+            {
+              "en": "It took me a while to put two and two together about the missing twenty dollars.",
+              "pl": "Trochę mi zajęło, zanim połapałem się w sprawie brakujących dwudziestu dolarów.",
+              "focusEn": "put two and two together",
+              "focusPl": "połapałem się"
+            }
+          ],
+          "acceptedAnswers": [
+            "put two and two together"
+          ],
+          "acceptedTranslations": [
+            "skojarzyć fakty",
+            "dodać dwa do dwóch",
+            "połapać się"
+          ]
+        },
+        {
+          "id": "math.math-whiz",
+          "term": "math whiz",
+          "ipa": "/ˈmæθ ˌwɪz/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "geniusz matematyczny",
+          "definition": "A person who is extremely good at math.",
+          "register": "potoczny",
+          "contextPl": "Pochwała zdolności",
+          "natural": "",
+          "forms": "math whizzes",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Ask our daughter, she's the math whiz in this family.",
+              "pl": "Zapytaj naszą córkę, ona jest geniuszem matematycznym w tej rodzinie.",
+              "focusEn": "math whiz",
+              "focusPl": "geniuszem matematycznym"
+            },
+            {
+              "en": "You don't have to be a math whiz to understand our electric bill.",
+              "pl": "Nie trzeba być orłem z matmy, żeby zrozumieć nasz rachunek za prąd.",
+              "focusEn": "math whiz",
+              "focusPl": "orłem z matmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "math whiz",
+            "math genius"
+          ],
+          "acceptedTranslations": [
+            "geniusz matematyczny",
+            "orzeł z matmy",
+            "matematyczny talent"
+          ]
+        }
+      ]
+    }
+  ]
+}
