@@ -197,7 +197,8 @@ const BRITISH_SPELLING_SUGGEST = {
   diarrhoea: 'diarrhea', oesophagus: 'esophagus', leukaemia: 'leukemia', gynaecologist: 'gynecologist', gynaecology: 'gynecology',
   encyclopaedia: 'encyclopedia', whilst: 'while', amongst: 'among', learnt: 'learned', spelt: 'spelled', dreamt: 'dreamed',
   spoilt: 'spoiled', ageing: 'aging', cosy: 'cozy', moustache: 'mustache', sulphur: 'sulfur', yoghurt: 'yogurt', gaol: 'jail',
-  mum: 'mom', mummy: 'mommy', mums: 'moms',
+  // „mummy” pominięte: w AmE to też egipska mumia (temat history) — zbyt wiele fałszywych alarmów.
+  mum: 'mom', mums: 'moms',
 };
 
 // Słownictwo typowo brytyjskie (często wieloznaczne → tylko ostrzeżenie).
