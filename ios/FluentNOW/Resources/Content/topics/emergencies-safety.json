@@ -1,0 +1,2915 @@
+{
+  "schemaVersion": 1,
+  "id": "emergencies-safety",
+  "namePl": "Bezpieczeństwo i sytuacje awaryjne",
+  "nameEn": "Emergencies and Safety",
+  "group": "services",
+  "symbol": "exclamationmark.triangle",
+  "summaryPl": "Telefon pod 911, pożar i ewakuacja, zagrożenia w domu, ostrzeżenia, ćwiczenia alarmowe i pierwsza pomoc na miejscu.",
+  "aliases": [
+    "bezpieczeństwo",
+    "sytuacje awaryjne",
+    "numer alarmowy",
+    "911",
+    "pożar",
+    "ewakuacja",
+    "alarm",
+    "emergency",
+    "safety"
+  ],
+  "categories": [
+    {
+      "id": "emergencies-safety.calling",
+      "namePl": "Telefon pod numer alarmowy",
+      "scenePl": "Rozmowa z dyspozytorem numeru 911 po wypadku na skrzyżowaniu",
+      "entries": [
+        {
+          "id": "emergencies-safety.911",
+          "term": "911",
+          "ipa": "/ˌnaɪn wʌn ˈwʌn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "numer alarmowy 911",
+          "definition": "The phone number for police, fire and ambulance in the US.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "",
+          "collocations": "call 911; dial 911",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA jeden numer do wszystkich służb; czyta się „nine-one-one”.",
+          "examples": [
+            {
+              "en": "I saw the two cars crash and dialed 911 right away.",
+              "pl": "Widziałem zderzenie dwóch aut i od razu wybrałem numer alarmowy 911.",
+              "focusEn": "911",
+              "focusPl": "numer alarmowy 911"
+            },
+            {
+              "en": "The woman on 911 told me to stay away from the smoking car.",
+              "pl": "Kobieta pod numerem alarmowym kazała mi trzymać się z dala od dymiącego samochodu.",
+              "focusEn": "911",
+              "focusPl": "numerem alarmowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "911",
+            "nine-one-one"
+          ],
+          "acceptedTranslations": [
+            "numer alarmowy 911",
+            "numer alarmowy",
+            "911",
+            "telefon alarmowy"
+          ]
+        },
+        {
+          "id": "emergencies-safety.whats-your-emergency",
+          "term": "what's your emergency",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "co się stało?",
+          "definition": "The first question a 911 dispatcher asks when they answer a call.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Standardowe pierwsze pytanie dyspozytora.",
+          "examples": [
+            {
+              "en": "\"911, what's your emergency?\" the calm voice asked.",
+              "pl": "„911, co się stało?” – zapytał spokojny głos.",
+              "focusEn": "what's your emergency",
+              "focusPl": "co się stało"
+            },
+            {
+              "en": "When she asked \"What's your emergency?\" I could barely speak.",
+              "pl": "Kiedy zapytała: „Co się stało?”, ledwo mogłem mówić.",
+              "focusEn": "What's your emergency",
+              "focusPl": "Co się stało"
+            }
+          ],
+          "acceptedAnswers": [
+            "what's your emergency",
+            "what is your emergency"
+          ],
+          "acceptedTranslations": [
+            "co się stało?",
+            "w czym problem?",
+            "jakie jest zgłoszenie?"
+          ]
+        },
+        {
+          "id": "emergencies-safety.stay-on-the-line",
+          "term": "stay on the line",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "nie rozłączać się",
+          "definition": "To keep the phone call connected and not hang up.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "hold on",
+          "antonyms": "hang up",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Help is on the way; please stay on the line with me.",
+              "pl": "Pomoc jest w drodze, proszę się nie rozłączać.",
+              "focusEn": "stay on the line",
+              "focusPl": "nie rozłączać"
+            },
+            {
+              "en": "The dispatcher asked me to stay on the line until the ambulance arrived.",
+              "pl": "Dyspozytor poprosił, żebym nie rozłączał się, dopóki nie przyjedzie karetka.",
+              "focusEn": "stay on the line",
+              "focusPl": "nie rozłączał się"
+            }
+          ],
+          "acceptedAnswers": [
+            "stay on the line"
+          ],
+          "acceptedTranslations": [
+            "nie rozłączać się",
+            "zostać na linii",
+            "proszę się nie rozłączać"
+          ]
+        },
+        {
+          "id": "emergencies-safety.cross-street",
+          "term": "cross street",
+          "ipa": "/ˈkrɔːs ˌstriːt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przecznica",
+          "definition": "A street that crosses the one you are on, used to describe an exact location.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "cross streets",
+          "collocations": "the nearest cross street",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Dyspozytor często pyta: „What's the nearest cross street?”.",
+          "examples": [
+            {
+              "en": "I didn't know the address, so I gave her the nearest cross street.",
+              "pl": "Nie znałem adresu, więc podałem jej najbliższą przecznicę.",
+              "focusEn": "cross street",
+              "focusPl": "przecznicę"
+            },
+            {
+              "en": "The accident is on Oak Avenue, and the cross street is Fifth.",
+              "pl": "Wypadek jest na Oak Avenue, a przecznica to Piąta.",
+              "focusEn": "cross street",
+              "focusPl": "przecznica"
+            }
+          ],
+          "acceptedAnswers": [
+            "cross street"
+          ],
+          "acceptedTranslations": [
+            "przecznica",
+            "najbliższa przecznica",
+            "ulica poprzeczna"
+          ]
+        },
+        {
+          "id": "emergencies-safety.emergency-services",
+          "term": "emergency services",
+          "ipa": "/ɪˈmɜːrdʒənsi ˌsɜːrvɪsɪz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "służby ratunkowe",
+          "definition": "The police, fire department and ambulance service.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "",
+          "collocations": "call emergency services",
+          "synonyms": "first responders",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Emergency services arrived in less than six minutes.",
+              "pl": "Służby ratunkowe przyjechały w niecałe sześć minut.",
+              "focusEn": "Emergency services",
+              "focusPl": "Służby ratunkowe"
+            },
+            {
+              "en": "Don't move the driver; wait for emergency services.",
+              "pl": "Nie ruszaj kierowcy, poczekaj na służby ratunkowe.",
+              "focusEn": "emergency services",
+              "focusPl": "służby ratunkowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "emergency services"
+          ],
+          "acceptedTranslations": [
+            "służby ratunkowe",
+            "służby ratownicze",
+            "służby"
+          ]
+        },
+        {
+          "id": "emergencies-safety.first-responder",
+          "term": "first responder",
+          "ipa": "/ˌfɜːrst rɪˈspɑːndər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ratownik",
+          "definition": "A police officer, firefighter or paramedic who is first to arrive at an emergency.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "first responders",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The first responders closed the intersection and checked everyone for injuries.",
+              "pl": "Ratownicy zamknęli skrzyżowanie i sprawdzili, czy nikt nie jest ranny.",
+              "focusEn": "first responders",
+              "focusPl": "Ratownicy"
+            },
+            {
+              "en": "A first responder asked me what I had seen before the crash.",
+              "pl": "Jeden z ratowników zapytał mnie, co widziałem przed zderzeniem.",
+              "focusEn": "first responder",
+              "focusPl": "ratowników"
+            }
+          ],
+          "acceptedAnswers": [
+            "first responder"
+          ],
+          "acceptedTranslations": [
+            "ratownik",
+            "pierwszy na miejscu",
+            "służby pierwszej pomocy"
+          ]
+        },
+        {
+          "id": "emergencies-safety.emt",
+          "term": "EMT",
+          "ipa": "/ˌiː em ˈtiː/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ratownik medyczny",
+          "definition": "A trained person who gives medical help in an ambulance; emergency medical technician.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "EMTs",
+          "collocations": "",
+          "synonyms": "paramedic",
+          "antonyms": "",
+          "notePl": "Skrót od emergency medical technician.",
+          "examples": [
+            {
+              "en": "Two EMTs put the driver on a stretcher.",
+              "pl": "Dwóch ratowników medycznych położyło kierowcę na noszach.",
+              "focusEn": "EMTs",
+              "focusPl": "ratowników medycznych"
+            },
+            {
+              "en": "The EMT asked me whether the woman had hit her head.",
+              "pl": "Ratownik medyczny zapytał mnie, czy kobieta uderzyła się w głowę.",
+              "focusEn": "EMT",
+              "focusPl": "Ratownik medyczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "EMT",
+            "emergency medical technician"
+          ],
+          "acceptedTranslations": [
+            "ratownik medyczny",
+            "sanitariusz"
+          ]
+        },
+        {
+          "id": "emergencies-safety.fire-department",
+          "term": "fire department",
+          "ipa": "/ˈfaɪər dɪˌpɑːrtmənt/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "straż pożarna",
+          "definition": "The organization of firefighters in a town or city.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "fire departments",
+          "collocations": "call the fire department",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The fire department came because one of the cars was leaking gas.",
+              "pl": "Przyjechała straż pożarna, bo z jednego auta wyciekała benzyna.",
+              "focusEn": "fire department",
+              "focusPl": "straż pożarna"
+            },
+            {
+              "en": "The fire department cleaned the oil off the road after the crash.",
+              "pl": "Po wypadku straż pożarna usunęła olej z jezdni.",
+              "focusEn": "fire department",
+              "focusPl": "straż pożarna"
+            }
+          ],
+          "acceptedAnswers": [
+            "fire department",
+            "fire service"
+          ],
+          "acceptedTranslations": [
+            "straż pożarna"
+          ]
+        },
+        {
+          "id": "emergencies-safety.non-emergency-line",
+          "term": "non-emergency line",
+          "ipa": "",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "numer dla zgłoszeń niepilnych",
+          "definition": "A phone number for the police for problems that are not urgent.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "",
+          "collocations": "call the non-emergency line",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "For a fender bender with no injuries, you can call the non-emergency line.",
+              "pl": "Przy drobnej stłuczce bez rannych można zadzwonić pod numer dla zgłoszeń niepilnych.",
+              "focusEn": "non-emergency line",
+              "focusPl": "numer dla zgłoszeń niepilnych"
+            },
+            {
+              "en": "The dispatcher gave me the non-emergency line for reporting the broken traffic light.",
+              "pl": "Dyspozytor podał mi numer dla zgłoszeń niepilnych, żeby zgłosić zepsutą sygnalizację.",
+              "focusEn": "non-emergency line",
+              "focusPl": "numer dla zgłoszeń niepilnych"
+            }
+          ],
+          "acceptedAnswers": [
+            "non-emergency line",
+            "non-emergency number"
+          ],
+          "acceptedTranslations": [
+            "numer dla zgłoszeń niepilnych",
+            "numer niealarmowy"
+          ]
+        },
+        {
+          "id": "emergencies-safety.prank-call",
+          "term": "prank call",
+          "ipa": "/ˈpræŋk ˌkɔːl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "głupi żart telefoniczny",
+          "definition": "A phone call made as a joke to trick someone.",
+          "register": "potoczny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "prank calls",
+          "collocations": "make a prank call",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Fałszywe zgłoszenia pod 911 są w USA przestępstwem.",
+          "examples": [
+            {
+              "en": "The dispatcher said prank calls to 911 can delay help for real accidents.",
+              "pl": "Dyspozytor powiedział, że głupie żarty telefoniczne pod 911 mogą opóźnić pomoc przy prawdziwych wypadkach.",
+              "focusEn": "prank calls",
+              "focusPl": "głupie żarty telefoniczne"
+            },
+            {
+              "en": "At first, she thought my call was a prank call because I was laughing nervously.",
+              "pl": "Na początku myślała, że to głupi żart telefoniczny, bo nerwowo się śmiałem.",
+              "focusEn": "prank call",
+              "focusPl": "głupi żart telefoniczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "prank call"
+          ],
+          "acceptedTranslations": [
+            "głupi żart telefoniczny",
+            "fałszywe zgłoszenie",
+            "dowcip telefoniczny"
+          ]
+        },
+        {
+          "id": "emergencies-safety.bystander",
+          "term": "bystander",
+          "ipa": "/ˈbaɪˌstændər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "świadek zdarzenia",
+          "definition": "A person who is near an accident or event but not involved in it.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "bystanders",
+          "collocations": "",
+          "synonyms": "onlooker",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A bystander directed traffic until the police arrived.",
+              "pl": "Przypadkowy przechodzień kierował ruchem, dopóki nie przyjechała policja.",
+              "focusEn": "bystander",
+              "focusPl": "Przypadkowy przechodzień"
+            },
+            {
+              "en": "The police asked the bystanders to step back onto the sidewalk.",
+              "pl": "Policja poprosiła gapiów, żeby cofnęli się na chodnik.",
+              "focusEn": "bystanders",
+              "focusPl": "gapiów"
+            }
+          ],
+          "acceptedAnswers": [
+            "bystander"
+          ],
+          "acceptedTranslations": [
+            "świadek zdarzenia",
+            "przypadkowy przechodzień",
+            "gapie"
+          ]
+        },
+        {
+          "id": "emergencies-safety.good-samaritan",
+          "term": "good Samaritan",
+          "ipa": "/ˌɡʊd səˈmerɪtən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "dobry samarytanin",
+          "definition": "A stranger who stops to help someone in trouble.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "good Samaritans",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A good Samaritan pulled over and gave the driver a blanket.",
+              "pl": "Dobry samarytanin zatrzymał się i dał kierowcy koc.",
+              "focusEn": "good Samaritan",
+              "focusPl": "Dobry samarytanin"
+            },
+            {
+              "en": "The news thanked the good Samaritan who called 911 and stayed until help came.",
+              "pl": "W wiadomościach podziękowano dobremu samarytaninowi, który zadzwonił pod 911 i został do przyjazdu pomocy.",
+              "focusEn": "good Samaritan",
+              "focusPl": "dobremu samarytaninowi"
+            }
+          ],
+          "acceptedAnswers": [
+            "good Samaritan"
+          ],
+          "acceptedTranslations": [
+            "dobry samarytanin",
+            "dobry człowiek",
+            "osoba pomagająca obcym"
+          ]
+        },
+        {
+          "id": "emergencies-safety.emergency-contact",
+          "term": "emergency contact",
+          "ipa": "/ɪˈmɜːrdʒənsi ˌkɑːntækt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "kontakt alarmowy",
+          "definition": "The person who should be called if something happens to you.",
+          "register": "neutralny",
+          "contextPl": "Wzywanie pomocy przez telefon",
+          "natural": "",
+          "forms": "emergency contacts",
+          "collocations": "list an emergency contact",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The EMT found my emergency contact on my phone's lock screen.",
+              "pl": "Ratownik znalazł mój kontakt alarmowy na ekranie blokady telefonu.",
+              "focusEn": "emergency contact",
+              "focusPl": "kontakt alarmowy"
+            },
+            {
+              "en": "They called her husband because he was her emergency contact.",
+              "pl": "Zadzwonili do jej męża, bo był jej kontaktem alarmowym.",
+              "focusEn": "emergency contact",
+              "focusPl": "kontaktem alarmowym"
+            }
+          ],
+          "acceptedAnswers": [
+            "emergency contact",
+            "ICE contact"
+          ],
+          "acceptedTranslations": [
+            "kontakt alarmowy",
+            "osoba do kontaktu w nagłych wypadkach"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emergencies-safety.fire",
+      "namePl": "Pożar w budynku",
+      "scenePl": "Nocny alarm pożarowy w bloku mieszkalnym",
+      "entries": [
+        {
+          "id": "emergencies-safety.fire",
+          "term": "fire",
+          "ipa": "/ˈfaɪər/",
+          "pos": "rzeczownik",
+          "level": "A1",
+          "frequency": "very_common",
+          "translation": "pożar",
+          "definition": "Flames that burn and destroy things, such as a building.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "fires",
+          "collocations": "start a fire; put out a fire; a house fire",
+          "synonyms": "blaze",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The fire started in a kitchen on the third floor.",
+              "pl": "Pożar wybuchł w kuchni na drugim piętrze.",
+              "focusEn": "fire",
+              "focusPl": "Pożar"
+            },
+            {
+              "en": "We could see the fire from the parking lot across the street.",
+              "pl": "Pożar było widać z parkingu po drugiej stronie ulicy.",
+              "focusEn": "fire",
+              "focusPl": "Pożar"
+            }
+          ],
+          "acceptedAnswers": [
+            "fire"
+          ],
+          "acceptedTranslations": [
+            "pożar",
+            "ogień"
+          ]
+        },
+        {
+          "id": "emergencies-safety.fire-alarm",
+          "term": "fire alarm",
+          "ipa": "/ˈfaɪər əˌlɑːrm/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "alarm pożarowy",
+          "definition": "A loud bell or siren that warns people about a fire in a building.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "fire alarms",
+          "collocations": "the fire alarm goes off; pull the fire alarm",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The fire alarm went off at 2 a.m. and woke up the whole building.",
+              "pl": "O drugiej w nocy włączył się alarm pożarowy i obudził cały budynek.",
+              "focusEn": "fire alarm",
+              "focusPl": "alarm pożarowy"
+            },
+            {
+              "en": "Someone pulled the fire alarm in the hallway when they saw smoke.",
+              "pl": "Ktoś zobaczył dym i uruchomił alarm pożarowy na korytarzu.",
+              "focusEn": "fire alarm",
+              "focusPl": "alarm pożarowy"
+            }
+          ],
+          "acceptedAnswers": [
+            "fire alarm"
+          ],
+          "acceptedTranslations": [
+            "alarm pożarowy",
+            "syrena pożarowa"
+          ]
+        },
+        {
+          "id": "emergencies-safety.smoke-detector",
+          "term": "smoke detector",
+          "ipa": "/ˈsmoʊk dɪˌtektər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czujka dymu",
+          "definition": "A small device on the ceiling that beeps loudly when it senses smoke.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "smoke detectors",
+          "collocations": "test the smoke detector; the smoke detector is beeping",
+          "synonyms": "smoke alarm",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Our smoke detector beeped before we even smelled anything.",
+              "pl": "Nasza czujka dymu zapiszczała, zanim w ogóle poczuliśmy zapach.",
+              "focusEn": "smoke detector",
+              "focusPl": "czujka dymu"
+            },
+            {
+              "en": "The firefighter said the smoke detector in the burned apartment had no battery.",
+              "pl": "Strażak powiedział, że czujka dymu w spalonym mieszkaniu nie miała baterii.",
+              "focusEn": "smoke detector",
+              "focusPl": "czujka dymu"
+            }
+          ],
+          "acceptedAnswers": [
+            "smoke detector",
+            "smoke alarm"
+          ],
+          "acceptedTranslations": [
+            "czujka dymu",
+            "wykrywacz dymu",
+            "czujnik dymu"
+          ]
+        },
+        {
+          "id": "emergencies-safety.fire-extinguisher",
+          "term": "fire extinguisher",
+          "ipa": "/ˈfaɪər ɪkˌstɪŋɡwɪʃər/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "gaśnica",
+          "definition": "A red metal container that sprays a substance to put out a small fire.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "fire extinguishers",
+          "collocations": "use a fire extinguisher; grab the fire extinguisher",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "My neighbor grabbed the fire extinguisher from the hallway wall.",
+              "pl": "Sąsiad zdjął gaśnicę ze ściany na korytarzu.",
+              "focusEn": "fire extinguisher",
+              "focusPl": "gaśnicę"
+            },
+            {
+              "en": "The fire extinguisher only works on small fires, so we got out.",
+              "pl": "Gaśnica działa tylko przy małych pożarach, więc wyszliśmy z budynku.",
+              "focusEn": "fire extinguisher",
+              "focusPl": "Gaśnica"
+            }
+          ],
+          "acceptedAnswers": [
+            "fire extinguisher",
+            "extinguisher"
+          ],
+          "acceptedTranslations": [
+            "gaśnica"
+          ]
+        },
+        {
+          "id": "emergencies-safety.fire-exit",
+          "term": "fire exit",
+          "ipa": "/ˈfaɪər ˌeɡzɪt/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wyjście ewakuacyjne",
+          "definition": "A door you use to leave a building if there is a fire.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "fire exits",
+          "collocations": "use the fire exit",
+          "synonyms": "emergency exit",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We followed the green signs to the fire exit at the end of the hall.",
+              "pl": "Szliśmy za zielonymi znakami do wyjścia ewakuacyjnego na końcu korytarza.",
+              "focusEn": "fire exit",
+              "focusPl": "wyjścia ewakuacyjnego"
+            },
+            {
+              "en": "Somebody had blocked the fire exit with old furniture.",
+              "pl": "Ktoś zastawił wyjście ewakuacyjne starymi meblami.",
+              "focusEn": "fire exit",
+              "focusPl": "wyjście ewakuacyjne"
+            }
+          ],
+          "acceptedAnswers": [
+            "fire exit",
+            "emergency exit"
+          ],
+          "acceptedTranslations": [
+            "wyjście ewakuacyjne",
+            "wyjście pożarowe"
+          ]
+        },
+        {
+          "id": "emergencies-safety.stairwell",
+          "term": "stairwell",
+          "ipa": "/ˈsterwel/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "klatka schodowa",
+          "definition": "The part of a building that contains the stairs.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "stairwells",
+          "collocations": "the stairwell filled with smoke",
+          "synonyms": "staircase",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The stairwell was full of people in pajamas walking down.",
+              "pl": "Na klatce schodowej było pełno ludzi w piżamach schodzących w dół.",
+              "focusEn": "stairwell",
+              "focusPl": "klatce schodowej"
+            },
+            {
+              "en": "Never take the elevator during a fire; use the stairwell.",
+              "pl": "Podczas pożaru nigdy nie jedź windą, korzystaj z klatki schodowej.",
+              "focusEn": "stairwell",
+              "focusPl": "klatki schodowej"
+            }
+          ],
+          "acceptedAnswers": [
+            "stairwell",
+            "staircase"
+          ],
+          "acceptedTranslations": [
+            "klatka schodowa",
+            "schody",
+            "klatka"
+          ]
+        },
+        {
+          "id": "emergencies-safety.flames",
+          "term": "flames",
+          "ipa": "/fleɪmz/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "płomienie",
+          "definition": "The bright, hot moving parts of a fire.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "flame",
+          "collocations": "in flames; flames shot out",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Flames were coming out of the kitchen window on the third floor.",
+              "pl": "Z okna kuchni na drugim piętrze buchały płomienie.",
+              "focusEn": "Flames",
+              "focusPl": "płomienie"
+            },
+            {
+              "en": "By the time the trucks arrived, the flames had reached the roof.",
+              "pl": "Zanim przyjechały wozy, płomienie dotarły do dachu.",
+              "focusEn": "flames",
+              "focusPl": "płomienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "flames",
+            "flame"
+          ],
+          "acceptedTranslations": [
+            "płomienie",
+            "ogień"
+          ]
+        },
+        {
+          "id": "emergencies-safety.catch-fire",
+          "term": "catch fire",
+          "ipa": "/ˌkætʃ ˈfaɪər/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zapalić się",
+          "definition": "To start burning.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "catches – caught – caught",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A frying pan caught fire while my neighbor was on the phone.",
+              "pl": "Patelnia zapaliła się, kiedy sąsiadka rozmawiała przez telefon.",
+              "focusEn": "caught fire",
+              "focusPl": "zapaliła się"
+            },
+            {
+              "en": "The curtains caught fire in seconds.",
+              "pl": "Zasłony zajęły się ogniem w kilka sekund.",
+              "focusEn": "caught fire",
+              "focusPl": "zajęły się ogniem"
+            }
+          ],
+          "acceptedAnswers": [
+            "catch fire"
+          ],
+          "acceptedTranslations": [
+            "zapalić się",
+            "zająć się ogniem"
+          ]
+        },
+        {
+          "id": "emergencies-safety.on-fire",
+          "term": "on fire",
+          "ipa": "/ɑːn ˈfaɪər/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "w ogniu",
+          "definition": "Burning.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "",
+          "collocations": "be on fire; set something on fire",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Someone was screaming that the apartment next door was on fire.",
+              "pl": "Ktoś krzyczał, że mieszkanie obok się pali.",
+              "focusEn": "on fire",
+              "focusPl": "się pali"
+            },
+            {
+              "en": "From the street, it looked like the whole floor was on fire.",
+              "pl": "Z ulicy wyglądało, jakby całe piętro było w ogniu.",
+              "focusEn": "on fire",
+              "focusPl": "w ogniu"
+            }
+          ],
+          "acceptedAnswers": [
+            "on fire"
+          ],
+          "acceptedTranslations": [
+            "w ogniu",
+            "płonący",
+            "palić się"
+          ]
+        },
+        {
+          "id": "emergencies-safety.evacuation",
+          "term": "evacuation",
+          "ipa": "/ɪˌvækjuˈeɪʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ewakuacja",
+          "definition": "Moving people out of a dangerous place to a safe one.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "evacuations",
+          "collocations": "evacuation plan; evacuation order",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Czasownik: evacuate (ewakuować się).",
+          "examples": [
+            {
+              "en": "The building manager posted an evacuation map by every elevator.",
+              "pl": "Zarządca budynku powiesił przy każdej windzie plan ewakuacji.",
+              "focusEn": "evacuation",
+              "focusPl": "ewakuacji"
+            },
+            {
+              "en": "The evacuation took about ten minutes, and everyone got out safely.",
+              "pl": "Ewakuacja trwała około dziesięciu minut i wszyscy bezpiecznie wyszli.",
+              "focusEn": "evacuation",
+              "focusPl": "Ewakuacja"
+            }
+          ],
+          "acceptedAnswers": [
+            "evacuation"
+          ],
+          "acceptedTranslations": [
+            "ewakuacja"
+          ]
+        },
+        {
+          "id": "emergencies-safety.fire-truck",
+          "term": "fire truck",
+          "ipa": "/ˈfaɪər ˌtrʌk/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "wóz strażacki",
+          "definition": "A large red vehicle that carries firefighters and equipment.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "fire trucks",
+          "collocations": "",
+          "synonyms": "fire engine",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Three fire trucks blocked the street in front of our building.",
+              "pl": "Trzy wozy strażackie zablokowały ulicę przed naszym blokiem.",
+              "focusEn": "fire trucks",
+              "focusPl": "wozy strażackie"
+            },
+            {
+              "en": "The kids watched the fire truck raise its ladder to the roof.",
+              "pl": "Dzieci patrzyły, jak wóz strażacki podnosi drabinę na dach.",
+              "focusEn": "fire truck",
+              "focusPl": "wóz strażacki"
+            }
+          ],
+          "acceptedAnswers": [
+            "fire truck",
+            "fire engine"
+          ],
+          "acceptedTranslations": [
+            "wóz strażacki",
+            "samochód strażacki"
+          ]
+        },
+        {
+          "id": "emergencies-safety.fire-hydrant",
+          "term": "fire hydrant",
+          "ipa": "/ˈfaɪər ˌhaɪdrənt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "hydrant",
+          "definition": "A pipe in the street that firefighters connect hoses to.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "fire hydrants",
+          "collocations": "park next to a fire hydrant",
+          "synonyms": "hydrant",
+          "antonyms": "",
+          "notePl": "Przy hydrancie w USA nie wolno parkować.",
+          "examples": [
+            {
+              "en": "A car was parked in front of the fire hydrant, so the firefighters had to work around it.",
+              "pl": "Przed hydrantem stał samochód, więc strażacy musieli go obejść.",
+              "focusEn": "fire hydrant",
+              "focusPl": "hydrantem"
+            },
+            {
+              "en": "Firefighters connected their hose to the fire hydrant on the corner.",
+              "pl": "Strażacy podłączyli wąż do hydrantu na rogu.",
+              "focusEn": "fire hydrant",
+              "focusPl": "hydrantu"
+            }
+          ],
+          "acceptedAnswers": [
+            "fire hydrant"
+          ],
+          "acceptedTranslations": [
+            "hydrant",
+            "hydrant przeciwpożarowy"
+          ]
+        },
+        {
+          "id": "emergencies-safety.smoke-inhalation",
+          "term": "smoke inhalation",
+          "ipa": "/ˈsmoʊk ɪnhəˌleɪʃən/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "zatrucie dymem",
+          "definition": "Injury caused by breathing in smoke.",
+          "register": "specjalistyczny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "",
+          "collocations": "treated for smoke inhalation",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Two people were treated for smoke inhalation after the fire.",
+              "pl": "Dwie osoby po pożarze leczono z powodu zatrucia dymem.",
+              "focusEn": "smoke inhalation",
+              "focusPl": "zatrucia dymem"
+            },
+            {
+              "en": "The paramedics gave the old man oxygen for smoke inhalation.",
+              "pl": "Ratownicy podali staruszkowi tlen z powodu zatrucia dymem.",
+              "focusEn": "smoke inhalation",
+              "focusPl": "zatrucia dymem"
+            }
+          ],
+          "acceptedAnswers": [
+            "smoke inhalation"
+          ],
+          "acceptedTranslations": [
+            "zatrucie dymem",
+            "nawdychanie się dymu"
+          ]
+        },
+        {
+          "id": "emergencies-safety.fire-escape",
+          "term": "fire escape",
+          "ipa": "/ˈfaɪər ɪˌskeɪp/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "schody przeciwpożarowe",
+          "definition": "Metal stairs on the outside of a building for escaping a fire.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "fire escapes",
+          "collocations": "climb down the fire escape",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Typowe dla starych kamienic w USA.",
+          "examples": [
+            {
+              "en": "The people on the top floor climbed down the fire escape.",
+              "pl": "Ludzie z ostatniego piętra zeszli po schodach przeciwpożarowych.",
+              "focusEn": "fire escape",
+              "focusPl": "schodach przeciwpożarowych"
+            },
+            {
+              "en": "Our window opens onto the fire escape, so that's our way out.",
+              "pl": "Nasze okno wychodzi na schody przeciwpożarowe, więc tamtędy możemy uciec.",
+              "focusEn": "fire escape",
+              "focusPl": "schody przeciwpożarowe"
+            }
+          ],
+          "acceptedAnswers": [
+            "fire escape"
+          ],
+          "acceptedTranslations": [
+            "schody przeciwpożarowe",
+            "schody ewakuacyjne"
+          ]
+        },
+        {
+          "id": "emergencies-safety.escape-route",
+          "term": "escape route",
+          "ipa": "/ɪˈskeɪp ˌruːt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "droga ucieczki",
+          "definition": "A planned way to get out of a dangerous place.",
+          "register": "neutralny",
+          "contextPl": "Pożar i ewakuacja z budynku",
+          "natural": "",
+          "forms": "escape routes",
+          "collocations": "plan an escape route",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Every family should know two escape routes from their apartment.",
+              "pl": "Każda rodzina powinna znać dwie drogi ucieczki ze swojego mieszkania.",
+              "focusEn": "escape routes",
+              "focusPl": "drogi ucieczki"
+            },
+            {
+              "en": "Smoke blocked our main escape route, so we used the back stairs.",
+              "pl": "Dym zablokował naszą główną drogę ucieczki, więc skorzystaliśmy z tylnych schodów.",
+              "focusEn": "escape route",
+              "focusPl": "drogę ucieczki"
+            }
+          ],
+          "acceptedAnswers": [
+            "escape route"
+          ],
+          "acceptedTranslations": [
+            "droga ucieczki",
+            "droga ewakuacyjna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emergencies-safety.home",
+      "namePl": "Zagrożenia w domu",
+      "scenePl": "Sobotni przegląd bezpieczeństwa domu z całą rodziną",
+      "entries": [
+        {
+          "id": "emergencies-safety.hazard",
+          "term": "hazard",
+          "ipa": "/ˈhæzərd/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zagrożenie",
+          "definition": "Something that could hurt people or cause damage.",
+          "register": "neutralny",
+          "contextPl": "Zagrożenia i bezpieczeństwo w domu",
+          "natural": "",
+          "forms": "hazards",
+          "collocations": "a fire hazard; a safety hazard; a health hazard",
+          "synonyms": "danger",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "That pile of newspapers next to the heater is a fire hazard.",
+              "pl": "Ten stos gazet obok grzejnika to zagrożenie pożarowe.",
+              "focusEn": "hazard",
+              "focusPl": "zagrożenie"
+            },
+            {
+              "en": "We walked through every room and wrote down each hazard we found.",
+              "pl": "Obeszliśmy wszystkie pokoje i zapisaliśmy każde zagrożenie, które znaleźliśmy.",
+              "focusEn": "hazard",
+              "focusPl": "zagrożenie"
+            }
+          ],
+          "acceptedAnswers": [
+            "hazard"
+          ],
+          "acceptedTranslations": [
+            "zagrożenie",
+            "niebezpieczeństwo",
+            "ryzyko"
+          ]
+        },
+        {
+          "id": "emergencies-safety.gas-leak",
+          "term": "gas leak",
+          "ipa": "/ˈɡæs ˌliːk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wyciek gazu",
+          "definition": "Gas escaping from a pipe or stove, which can be very dangerous.",
+          "register": "neutralny",
+          "contextPl": "Zagrożenia i bezpieczeństwo w domu",
+          "natural": "",
+          "forms": "gas leaks",
+          "collocations": "report a gas leak",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "If you ever suspect a gas leak, get out first and call from outside.",
+              "pl": "Jeśli kiedykolwiek podejrzewasz wyciek gazu, najpierw wyjdź, a dopiero potem dzwoń z zewnątrz.",
+              "focusEn": "gas leak",
+              "focusPl": "wyciek gazu"
+            },
+            {
+              "en": "We checked the stove connection because our neighbor had a gas leak last winter.",
+              "pl": "Sprawdziliśmy podłączenie kuchenki, bo sąsiad miał zeszłej zimy wyciek gazu.",
+              "focusEn": "gas leak",
+              "focusPl": "wyciek gazu"
+            }
+          ],
+          "acceptedAnswers": [
+            "gas leak"
+          ],
+          "acceptedTranslations": [
+            "wyciek gazu",
+            "ulatnianie się gazu"
+          ]
+        },
+        {
+          "id": "emergencies-safety.smell-gas",
+          "term": "smell gas",
+          "ipa": "/ˌsmel ˈɡæs/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "czuć gaz",
+          "definition": "To notice the smell of gas in the air.",
+          "register": "neutralny",
+          "contextPl": "Zagrożenia i bezpieczeństwo w domu",
+          "natural": "",
+          "forms": "smells – smelled – smelled",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Gaz ziemny ma dodany zapach, żeby łatwo go wyczuć.",
+          "examples": [
+            {
+              "en": "If you smell gas, don't turn on any lights or switches.",
+              "pl": "Jeśli czujesz gaz, nie włączaj żadnych świateł ani przełączników.",
+              "focusEn": "smell gas",
+              "focusPl": "czujesz gaz"
+            },
+            {
+              "en": "I thought I smelled gas near the water heater, so we called the gas company.",
+              "pl": "Wydawało mi się, że czuję gaz przy bojlerze, więc zadzwoniliśmy do gazowni.",
+              "focusEn": "smelled gas",
+              "focusPl": "czuję gaz"
+            }
+          ],
+          "acceptedAnswers": [
+            "smell gas"
+          ],
+          "acceptedTranslations": [
+            "czuć gaz",
+            "poczuć gaz"
+          ]
+        },
+        {
+          "id": "emergencies-safety.carbon-monoxide-detector",
+          "term": "carbon monoxide detector",
+          "ipa": "",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "czujnik czadu",
+          "definition": "A device that warns you when there is dangerous carbon monoxide gas in the air.",
+          "register": "neutralny",
+          "contextPl": "Zagrożenia i bezpieczeństwo w domu",
+          "natural": "",
+          "forms": "carbon monoxide detectors",
+          "collocations": "install a carbon monoxide detector",
+          "synonyms": "CO detector",
+          "antonyms": "",
+          "notePl": "Czad (tlenek węgla) nie ma zapachu ani koloru.",
+          "examples": [
+            {
+              "en": "We put a carbon monoxide detector next to the bedrooms.",
+              "pl": "Zamontowaliśmy czujnik czadu obok sypialni.",
+              "focusEn": "carbon monoxide detector",
+              "focusPl": "czujnik czadu"
+            },
+            {
+              "en": "The carbon monoxide detector in the basement needed new batteries.",
+              "pl": "Czujnik czadu w piwnicy potrzebował nowych baterii.",
+              "focusEn": "carbon monoxide detector",
+              "focusPl": "Czujnik czadu"
+            }
+          ],
+          "acceptedAnswers": [
+            "carbon monoxide detector",
+            "CO detector"
+          ],
+          "acceptedTranslations": [
+            "czujnik czadu",
+            "czujka tlenku węgla",
+            "detektor czadu"
+          ]
+        },
+        {
+          "id": "emergencies-safety.poison-control",
+          "term": "poison control",
+          "ipa": "/ˈpɔɪzən kənˌtroʊl/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "centrum toksykologiczne",
+          "definition": "A phone service that gives advice when someone swallows something dangerous.",
+          "register": "neutralny",
+          "contextPl": "Zagrożenia i bezpieczeństwo w domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "call poison control; the poison control number",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA jeden ogólnokrajowy numer.",
+          "examples": [
+            {
+              "en": "We taped the poison control number inside the kitchen cabinet.",
+              "pl": "Przykleiliśmy numer centrum toksykologicznego wewnątrz szafki kuchennej.",
+              "focusEn": "poison control",
+              "focusPl": "centrum toksykologicznego"
+            },
+            {
+              "en": "When our son swallowed a battery, poison control told us to go straight to the hospital.",
+              "pl": "Kiedy syn połknął baterię, centrum toksykologiczne kazało nam jechać prosto do szpitala.",
+              "focusEn": "poison control",
+              "focusPl": "centrum toksykologiczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "poison control"
+          ],
+          "acceptedTranslations": [
+            "centrum toksykologiczne",
+            "informacja toksykologiczna"
+          ]
+        },
+        {
+          "id": "emergencies-safety.space-heater",
+          "term": "space heater",
+          "ipa": "/ˈspeɪs ˌhiːtər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "grzejnik elektryczny",
+          "definition": "A small portable heater for warming one room.",
+          "register": "neutralny",
+          "contextPl": "Zagrożenia i bezpieczeństwo w domu",
+          "natural": "",
+          "forms": "space heaters",
+          "collocations": "turn off the space heater",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Never leave a space heater on when you go to bed.",
+              "pl": "Nigdy nie zostawiaj włączonego grzejnika elektrycznego, kiedy idziesz spać.",
+              "focusEn": "space heater",
+              "focusPl": "grzejnika elektrycznego"
+            },
+            {
+              "en": "We moved the space heater away from the curtains.",
+              "pl": "Odsunęliśmy grzejnik elektryczny od zasłon.",
+              "focusEn": "space heater",
+              "focusPl": "grzejnik elektryczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "space heater"
+          ],
+          "acceptedTranslations": [
+            "grzejnik elektryczny",
+            "farelka",
+            "przenośny grzejnik"
+          ]
+        },
+        {
+          "id": "emergencies-safety.unattended",
+          "term": "unattended",
+          "ipa": "/ˌʌnəˈtendɪd/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "bez nadzoru",
+          "definition": "Not being watched or looked after.",
+          "register": "formalny",
+          "contextPl": "Zagrożenia i bezpieczeństwo w domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "leave something unattended",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Most kitchen fires start when cooking is left unattended.",
+              "pl": "Większość pożarów w kuchni wybucha, gdy gotowanie zostaje bez nadzoru.",
+              "focusEn": "unattended",
+              "focusPl": "bez nadzoru"
+            },
+            {
+              "en": "Don't leave candles unattended, especially with the cat around.",
+              "pl": "Nie zostawiaj świeczek bez nadzoru, zwłaszcza gdy kręci się kot.",
+              "focusEn": "unattended",
+              "focusPl": "bez nadzoru"
+            }
+          ],
+          "acceptedAnswers": [
+            "unattended"
+          ],
+          "acceptedTranslations": [
+            "bez nadzoru",
+            "pozostawiony bez opieki",
+            "bez dozoru"
+          ]
+        },
+        {
+          "id": "emergencies-safety.frayed",
+          "term": "frayed",
+          "ipa": "/freɪd/",
+          "pos": "przymiotnik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "przetarty",
+          "definition": "Worn and damaged, with threads or wires showing.",
+          "register": "neutralny",
+          "contextPl": "Zagrożenia i bezpieczeństwo w domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "a frayed cord; frayed wires",
+          "synonyms": "worn",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The lamp had a frayed cord, so we threw it away.",
+              "pl": "Lampa miała przetarty kabel, więc ją wyrzuciliśmy.",
+              "focusEn": "frayed",
+              "focusPl": "przetarty"
+            },
+            {
+              "en": "My dad found two frayed chargers behind the couch.",
+              "pl": "Tata znalazł za kanapą dwie przetarte ładowarki.",
+              "focusEn": "frayed",
+              "focusPl": "przetarte"
+            }
+          ],
+          "acceptedAnswers": [
+            "frayed"
+          ],
+          "acceptedTranslations": [
+            "przetarty",
+            "postrzępiony"
+          ]
+        },
+        {
+          "id": "emergencies-safety.overload",
+          "term": "overload",
+          "ipa": "/ˌoʊvərˈloʊd/",
+          "pos": "czasownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "przeciążyć",
+          "definition": "To put too much on something, like too many plugs in one outlet.",
+          "register": "neutralny",
+          "contextPl": "Zagrożenia i bezpieczeństwo w domu",
+          "natural": "",
+          "forms": "overloads – overloaded – overloaded",
+          "collocations": "overload an outlet; overload a circuit",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Plugging three heaters into one outlet can overload it.",
+              "pl": "Podłączenie trzech grzejników do jednego gniazdka może je przeciążyć.",
+              "focusEn": "overload",
+              "focusPl": "przeciążyć"
+            },
+            {
+              "en": "We had overloaded the power strip behind the TV.",
+              "pl": "Przeciążyliśmy listwę zasilającą za telewizorem.",
+              "focusEn": "overloaded",
+              "focusPl": "Przeciążyliśmy"
+            }
+          ],
+          "acceptedAnswers": [
+            "overload"
+          ],
+          "acceptedTranslations": [
+            "przeciążyć",
+            "przeciążać"
+          ]
+        },
+        {
+          "id": "emergencies-safety.fire-blanket",
+          "term": "fire blanket",
+          "ipa": "/ˈfaɪər ˌblæŋkɪt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "less_common",
+          "translation": "koc gaśniczy",
+          "definition": "A special blanket you throw over a small fire to put it out.",
+          "register": "neutralny",
+          "contextPl": "Zagrożenia i bezpieczeństwo w domu",
+          "natural": "",
+          "forms": "fire blankets",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We hung a fire blanket next to the stove.",
+              "pl": "Obok kuchenki powiesiliśmy koc gaśniczy.",
+              "focusEn": "fire blanket",
+              "focusPl": "koc gaśniczy"
+            },
+            {
+              "en": "If oil catches fire, cover the pan with a fire blanket, never water.",
+              "pl": "Jeśli olej się zapali, przykryj patelnię kocem gaśniczym, nigdy nie lej wody.",
+              "focusEn": "fire blanket",
+              "focusPl": "kocem gaśniczym"
+            }
+          ],
+          "acceptedAnswers": [
+            "fire blanket"
+          ],
+          "acceptedTranslations": [
+            "koc gaśniczy"
+          ]
+        },
+        {
+          "id": "emergencies-safety.electric-shock",
+          "term": "electric shock",
+          "ipa": "/ɪˌlektrɪk ˈʃɑːk/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "porażenie prądem",
+          "definition": "A sudden, painful feeling when electricity goes through your body.",
+          "register": "neutralny",
+          "contextPl": "Zagrożenia i bezpieczeństwo w domu",
+          "natural": "",
+          "forms": "electric shocks",
+          "collocations": "get an electric shock",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Plastic outlet covers protect toddlers from an electric shock.",
+              "pl": "Plastikowe zaślepki do gniazdek chronią maluchy przed porażeniem prądem.",
+              "focusEn": "electric shock",
+              "focusPl": "porażeniem prądem"
+            },
+            {
+              "en": "My dad got a small electric shock while changing the light switch.",
+              "pl": "Tatę lekko kopnął prąd, kiedy wymieniał włącznik światła.",
+              "focusEn": "electric shock",
+              "focusPl": "kopnął prąd"
+            }
+          ],
+          "acceptedAnswers": [
+            "electric shock"
+          ],
+          "acceptedTranslations": [
+            "porażenie prądem",
+            "kopnięcie prądem"
+          ]
+        },
+        {
+          "id": "emergencies-safety.stop-drop-and-roll",
+          "term": "stop, drop, and roll",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zatrzymaj się, padnij i turlaj się",
+          "definition": "What to do if your clothes catch fire: stop, lie down and roll over.",
+          "register": "neutralny",
+          "contextPl": "Zagrożenia i bezpieczeństwo w domu",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Zasada, której uczy się dzieci w amerykańskich szkołach.",
+          "examples": [
+            {
+              "en": "We practiced stop, drop, and roll on the living room carpet with the kids.",
+              "pl": "Ćwiczyliśmy z dziećmi na dywanie w salonie zasadę „zatrzymaj się, padnij i turlaj się”.",
+              "focusEn": "stop, drop, and roll",
+              "focusPl": "zatrzymaj się, padnij i turlaj się"
+            },
+            {
+              "en": "My daughter already knew stop, drop, and roll from school.",
+              "pl": "Córka znała już zasadę „stój, padnij, turlaj się” ze szkoły.",
+              "focusEn": "stop, drop, and roll",
+              "focusPl": "stój, padnij, turlaj się"
+            }
+          ],
+          "acceptedAnswers": [
+            "stop, drop, and roll"
+          ],
+          "acceptedTranslations": [
+            "zatrzymaj się, padnij i turlaj się",
+            "stój, padnij, turlaj się"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emergencies-safety.warnings",
+      "namePl": "Ostrzeżenia i okrzyki",
+      "scenePl": "Teren budowy i śliski chodnik w centrum miasta",
+      "entries": [
+        {
+          "id": "emergencies-safety.look-out",
+          "term": "look out",
+          "ipa": "/ˌlʊk ˈaʊt/",
+          "pos": "wykrzyknik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "uważaj!",
+          "definition": "Used to warn someone of danger right now.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia i szybkie reakcje",
+          "natural": "",
+          "forms": "",
+          "collocations": "look out for something",
+          "synonyms": "watch out",
+          "antonyms": "",
+          "notePl": "Krzyczy się „Look out!” w nagłym niebezpieczeństwie.",
+          "examples": [
+            {
+              "en": "Look out! There's a beam falling from the scaffolding!",
+              "pl": "Uważaj! Z rusztowania spada belka!",
+              "focusEn": "Look out",
+              "focusPl": "Uważaj"
+            },
+            {
+              "en": "I shouted \"Look out!\" when I saw the bike coming off the curb.",
+              "pl": "Krzyknąłem „Uwaga!”, kiedy zobaczyłem rower zjeżdżający z krawężnika.",
+              "focusEn": "Look out",
+              "focusPl": "Uwaga"
+            }
+          ],
+          "acceptedAnswers": [
+            "look out",
+            "look out!",
+            "watch out"
+          ],
+          "acceptedTranslations": [
+            "uważaj!",
+            "uwaga!",
+            "ostrożnie!"
+          ]
+        },
+        {
+          "id": "emergencies-safety.danger",
+          "term": "danger",
+          "ipa": "/ˈdeɪndʒər/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "niebezpieczeństwo",
+          "definition": "The possibility of being hurt or killed.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia i szybkie reakcje",
+          "natural": "",
+          "forms": "dangers",
+          "collocations": "in danger; out of danger",
+          "synonyms": "risk",
+          "antonyms": "safety",
+          "notePl": "Napis „DANGER” oznacza najwyższy stopień zagrożenia.",
+          "examples": [
+            {
+              "en": "A sign on the fence said \"Danger: Do Not Enter.\"",
+              "pl": "Na płocie wisiała tabliczka „Niebezpieczeństwo: wstęp wzbroniony”.",
+              "focusEn": "Danger",
+              "focusPl": "Niebezpieczeństwo"
+            },
+            {
+              "en": "The workers didn't see the danger until the wall started to crack.",
+              "pl": "Robotnicy nie widzieli niebezpieczeństwa, dopóki ściana nie zaczęła pękać.",
+              "focusEn": "danger",
+              "focusPl": "niebezpieczeństwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "danger"
+          ],
+          "acceptedTranslations": [
+            "niebezpieczeństwo",
+            "zagrożenie"
+          ]
+        },
+        {
+          "id": "emergencies-safety.dangerous",
+          "term": "dangerous",
+          "ipa": "/ˈdeɪndʒərəs/",
+          "pos": "przymiotnik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "niebezpieczny",
+          "definition": "Likely to hurt someone.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia i szybkie reakcje",
+          "natural": "",
+          "forms": "more dangerous – most dangerous",
+          "collocations": "",
+          "synonyms": "risky",
+          "antonyms": "safe",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Walking under the scaffolding is dangerous while they're working.",
+              "pl": "Chodzenie pod rusztowaniem jest niebezpieczne, kiedy trwają prace.",
+              "focusEn": "dangerous",
+              "focusPl": "niebezpieczne"
+            },
+            {
+              "en": "The ice on this corner makes the sidewalk really dangerous.",
+              "pl": "Przez lód na tym rogu chodnik jest naprawdę niebezpieczny.",
+              "focusEn": "dangerous",
+              "focusPl": "niebezpieczny"
+            }
+          ],
+          "acceptedAnswers": [
+            "dangerous"
+          ],
+          "acceptedTranslations": [
+            "niebezpieczny",
+            "groźny"
+          ]
+        },
+        {
+          "id": "emergencies-safety.caution",
+          "term": "caution",
+          "ipa": "/ˈkɔːʃən/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ostrożność",
+          "definition": "Great care to avoid danger; also a word on warning signs.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia i szybkie reakcje",
+          "natural": "",
+          "forms": "",
+          "collocations": "use caution; proceed with caution; caution tape",
+          "synonyms": "care",
+          "antonyms": "",
+          "notePl": "Żółta taśma „caution tape” oznacza teren zagrożony.",
+          "examples": [
+            {
+              "en": "The workers put up yellow caution tape around the hole.",
+              "pl": "Robotnicy rozciągnęli żółtą taśmę ostrzegawczą wokół dziury.",
+              "focusEn": "caution",
+              "focusPl": "ostrzegawczą"
+            },
+            {
+              "en": "Please use caution when walking near the construction site.",
+              "pl": "Prosimy o zachowanie ostrożności w pobliżu placu budowy.",
+              "focusEn": "caution",
+              "focusPl": "ostrożności"
+            }
+          ],
+          "acceptedAnswers": [
+            "caution"
+          ],
+          "acceptedTranslations": [
+            "ostrożność",
+            "uwaga"
+          ]
+        },
+        {
+          "id": "emergencies-safety.warning-sign",
+          "term": "warning sign",
+          "ipa": "/ˈwɔːrnɪŋ ˌsaɪn/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "znak ostrzegawczy",
+          "definition": "A sign that tells people about a danger.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia i szybkie reakcje",
+          "natural": "",
+          "forms": "warning signs",
+          "collocations": "put up a warning sign; ignore a warning sign",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "He walked right past the warning sign and stepped into wet cement.",
+              "pl": "Przeszedł tuż obok znaku ostrzegawczego i wdepnął w mokry beton.",
+              "focusEn": "warning sign",
+              "focusPl": "znaku ostrzegawczego"
+            },
+            {
+              "en": "The city put a warning sign at the corner after two people slipped.",
+              "pl": "Miasto postawiło znak ostrzegawczy na rogu po tym, jak dwie osoby się poślizgnęły.",
+              "focusEn": "warning sign",
+              "focusPl": "znak ostrzegawczy"
+            }
+          ],
+          "acceptedAnswers": [
+            "warning sign"
+          ],
+          "acceptedTranslations": [
+            "znak ostrzegawczy",
+            "tablica ostrzegawcza"
+          ]
+        },
+        {
+          "id": "emergencies-safety.wet-floor",
+          "term": "wet floor",
+          "ipa": "/ˌwet ˈflɔːr/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "mokra podłoga",
+          "definition": "A floor that has just been cleaned and may be slippery.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia i szybkie reakcje",
+          "natural": "",
+          "forms": "",
+          "collocations": "wet floor sign",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Żółta tabliczka „Caution: Wet Floor”.",
+          "examples": [
+            {
+              "en": "I didn't see the wet floor sign in the lobby and almost fell.",
+              "pl": "Nie zauważyłem tabliczki „Mokra podłoga” w holu i prawie się przewróciłem.",
+              "focusEn": "wet floor",
+              "focusPl": "Mokra podłoga"
+            },
+            {
+              "en": "Watch your step, there's a wet floor by the entrance.",
+              "pl": "Uważaj, przy wejściu jest mokra podłoga.",
+              "focusEn": "wet floor",
+              "focusPl": "mokra podłoga"
+            }
+          ],
+          "acceptedAnswers": [
+            "wet floor"
+          ],
+          "acceptedTranslations": [
+            "mokra podłoga",
+            "śliska podłoga"
+          ]
+        },
+        {
+          "id": "emergencies-safety.keep-out",
+          "term": "keep out",
+          "ipa": "/ˌkiːp ˈaʊt/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "wstęp wzbroniony",
+          "definition": "A sign or warning telling people not to enter a place.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia i szybkie reakcje",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "no entry",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The fence around the site had big red letters saying KEEP OUT.",
+              "pl": "Na płocie wokół budowy wielkie czerwone litery głosiły: WSTĘP WZBRONIONY.",
+              "focusEn": "KEEP OUT",
+              "focusPl": "WSTĘP WZBRONIONY"
+            },
+            {
+              "en": "The workers told us to keep out of the area until the crane was finished.",
+              "pl": "Robotnicy kazali nam nie wchodzić na ten teren, dopóki dźwig nie skończy pracy.",
+              "focusEn": "keep out",
+              "focusPl": "nie wchodzić"
+            }
+          ],
+          "acceptedAnswers": [
+            "keep out"
+          ],
+          "acceptedTranslations": [
+            "wstęp wzbroniony",
+            "nie wchodzić",
+            "zakaz wstępu"
+          ]
+        },
+        {
+          "id": "emergencies-safety.high-voltage",
+          "term": "high voltage",
+          "ipa": "/ˌhaɪ ˈvoʊltɪdʒ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "wysokie napięcie",
+          "definition": "A very strong electric current that can kill.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia i szybkie reakcje",
+          "natural": "",
+          "forms": "",
+          "collocations": "high voltage sign; high voltage lines",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A yellow sign on the metal box said \"High Voltage.\"",
+              "pl": "Na metalowej skrzynce był żółty znak „Wysokie napięcie”.",
+              "focusEn": "High Voltage",
+              "focusPl": "Wysokie napięcie"
+            },
+            {
+              "en": "The kids know to stay away from anything marked high voltage.",
+              "pl": "Dzieci wiedzą, żeby trzymać się z dala od wszystkiego, co jest oznaczone jako wysokie napięcie.",
+              "focusEn": "high voltage",
+              "focusPl": "wysokie napięcie"
+            }
+          ],
+          "acceptedAnswers": [
+            "high voltage"
+          ],
+          "acceptedTranslations": [
+            "wysokie napięcie"
+          ]
+        },
+        {
+          "id": "emergencies-safety.unsafe",
+          "term": "unsafe",
+          "ipa": "/ʌnˈseɪf/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "niebezpieczny",
+          "definition": "Not safe; dangerous.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia i szybkie reakcje",
+          "natural": "",
+          "forms": "",
+          "collocations": "unsafe conditions; feel unsafe",
+          "synonyms": "",
+          "antonyms": "safe",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The building was declared unsafe after the crack appeared.",
+              "pl": "Po pojawieniu się pęknięcia budynek uznano za niebezpieczny.",
+              "focusEn": "unsafe",
+              "focusPl": "niebezpieczny"
+            },
+            {
+              "en": "Walking on the street because the sidewalk is closed feels unsafe.",
+              "pl": "Chodzenie ulicą, bo chodnik jest zamknięty, wydaje się niebezpieczne.",
+              "focusEn": "unsafe",
+              "focusPl": "niebezpieczne"
+            }
+          ],
+          "acceptedAnswers": [
+            "unsafe"
+          ],
+          "acceptedTranslations": [
+            "niebezpieczny",
+            "niezabezpieczony",
+            "zagrażający bezpieczeństwu"
+          ]
+        },
+        {
+          "id": "emergencies-safety.stand-back",
+          "term": "stand back",
+          "ipa": "/ˌstænd ˈbæk/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "odsuń się",
+          "definition": "Move away to a safe distance.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia i szybkie reakcje",
+          "natural": "",
+          "forms": "stands – stood – stood",
+          "collocations": "",
+          "synonyms": "step back",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Stand back, the crane is about to lift the steel beam.",
+              "pl": "Odsuńcie się, dźwig zaraz podniesie stalową belkę.",
+              "focusEn": "Stand back",
+              "focusPl": "Odsuńcie się"
+            },
+            {
+              "en": "The worker told the crowd to stand back from the broken glass.",
+              "pl": "Robotnik kazał tłumowi odsunąć się od potłuczonego szkła.",
+              "focusEn": "stand back",
+              "focusPl": "odsunąć się"
+            }
+          ],
+          "acceptedAnswers": [
+            "stand back",
+            "step back"
+          ],
+          "acceptedTranslations": [
+            "odsuń się",
+            "cofnij się",
+            "odsunąć się"
+          ]
+        },
+        {
+          "id": "emergencies-safety.heads-up",
+          "term": "heads up",
+          "ipa": "/ˈhedz ʌp/",
+          "pos": "wykrzyknik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "uwaga!",
+          "definition": "A shout to warn someone that something is coming toward them.",
+          "register": "potoczny",
+          "contextPl": "Ostrzeżenia i szybkie reakcje",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "look out",
+          "antonyms": "",
+          "notePl": "Rzeczownik „a heads-up” = uprzedzenie, ostrzeżenie.",
+          "examples": [
+            {
+              "en": "\"Heads up!\" yelled a worker as a bucket slipped off the roof.",
+              "pl": "„Uwaga!” – krzyknął robotnik, gdy z dachu zsunęło się wiadro.",
+              "focusEn": "Heads up",
+              "focusPl": "Uwaga"
+            },
+            {
+              "en": "Someone on the scaffolding shouted \"Heads up!\" and we jumped back.",
+              "pl": "Ktoś z rusztowania krzyknął „Uwaga!”, a my odskoczyliśmy.",
+              "focusEn": "Heads up",
+              "focusPl": "Uwaga"
+            }
+          ],
+          "acceptedAnswers": [
+            "heads up",
+            "heads-up"
+          ],
+          "acceptedTranslations": [
+            "uwaga!",
+            "uważaj!"
+          ]
+        },
+        {
+          "id": "emergencies-safety.trip-over",
+          "term": "trip over",
+          "ipa": "/ˌtrɪp ˈoʊvər/",
+          "pos": "czasownik frazowy",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "potknąć się o",
+          "definition": "To hit your foot on something and almost fall.",
+          "register": "neutralny",
+          "contextPl": "Ostrzeżenia i szybkie reakcje",
+          "natural": "",
+          "forms": "trips over – tripped over – tripped over",
+          "collocations": "trip over a cable; trip over the curb",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I tripped over a loose cable outside the construction site.",
+              "pl": "Potknąłem się o luźny kabel przed placem budowy.",
+              "focusEn": "tripped over",
+              "focusPl": "Potknąłem się o"
+            },
+            {
+              "en": "Watch out, you'll trip over that broken piece of sidewalk.",
+              "pl": "Uważaj, potkniesz się o ten wyłamany kawałek chodnika.",
+              "focusEn": "trip over",
+              "focusPl": "potkniesz się o"
+            }
+          ],
+          "acceptedAnswers": [
+            "trip over"
+          ],
+          "acceptedTranslations": [
+            "potknąć się o",
+            "potykać się o"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emergencies-safety.drills",
+      "namePl": "Ćwiczenia i procedury",
+      "scenePl": "Próbny alarm i ćwiczenia ewakuacyjne w szkole",
+      "entries": [
+        {
+          "id": "emergencies-safety.safety",
+          "term": "safety",
+          "ipa": "/ˈseɪfti/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "very_common",
+          "translation": "bezpieczeństwo",
+          "definition": "The state of being protected from danger or harm.",
+          "register": "neutralny",
+          "contextPl": "Procedury bezpieczeństwa i ćwiczenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "for your safety; safety first; safety rules",
+          "synonyms": "",
+          "antonyms": "danger",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The principal said the drill was for everyone's safety.",
+              "pl": "Dyrektorka powiedziała, że ćwiczenia są dla bezpieczeństwa wszystkich.",
+              "focusEn": "safety",
+              "focusPl": "bezpieczeństwa"
+            },
+            {
+              "en": "Our teacher went over the safety rules before the alarm rang.",
+              "pl": "Nauczyciel omówił zasady bezpieczeństwa, zanim zadzwonił alarm.",
+              "focusEn": "safety",
+              "focusPl": "bezpieczeństwa"
+            }
+          ],
+          "acceptedAnswers": [
+            "safety"
+          ],
+          "acceptedTranslations": [
+            "bezpieczeństwo"
+          ]
+        },
+        {
+          "id": "emergencies-safety.fire-drill",
+          "term": "fire drill",
+          "ipa": "/ˈfaɪər ˌdrɪl/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "próbny alarm pożarowy",
+          "definition": "A practice of leaving a building as if there were a fire.",
+          "register": "neutralny",
+          "contextPl": "Procedury bezpieczeństwa i ćwiczenia",
+          "natural": "",
+          "forms": "fire drills",
+          "collocations": "have a fire drill",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We had a fire drill right in the middle of the math test.",
+              "pl": "Mieliśmy próbny alarm pożarowy w samym środku sprawdzianu z matematyki.",
+              "focusEn": "fire drill",
+              "focusPl": "próbny alarm pożarowy"
+            },
+            {
+              "en": "The whole school was outside in three minutes during the fire drill.",
+              "pl": "Podczas próbnego alarmu pożarowego cała szkoła była na zewnątrz w trzy minuty.",
+              "focusEn": "fire drill",
+              "focusPl": "próbnego alarmu pożarowego"
+            }
+          ],
+          "acceptedAnswers": [
+            "fire drill"
+          ],
+          "acceptedTranslations": [
+            "próbny alarm pożarowy",
+            "ćwiczenia przeciwpożarowe",
+            "ćwiczenia ewakuacyjne"
+          ]
+        },
+        {
+          "id": "emergencies-safety.exit-sign",
+          "term": "exit sign",
+          "ipa": "/ˈeɡzɪt ˌsaɪn/",
+          "pos": "rzeczownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "znak wyjścia",
+          "definition": "A lit sign above a door that shows the way out of a building.",
+          "register": "neutralny",
+          "contextPl": "Procedury bezpieczeństwa i ćwiczenia",
+          "natural": "",
+          "forms": "exit signs",
+          "collocations": "follow the exit signs",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W USA zwykle czerwony napis EXIT.",
+          "examples": [
+            {
+              "en": "Follow the red exit signs and don't stop for your backpacks.",
+              "pl": "Idźcie za czerwonymi znakami wyjścia i nie zatrzymujcie się po plecaki.",
+              "focusEn": "exit signs",
+              "focusPl": "znakami wyjścia"
+            },
+            {
+              "en": "The light in the exit sign above the gym door was broken.",
+              "pl": "Światło w znaku wyjścia nad drzwiami sali gimnastycznej było zepsute.",
+              "focusEn": "exit sign",
+              "focusPl": "znaku wyjścia"
+            }
+          ],
+          "acceptedAnswers": [
+            "exit sign"
+          ],
+          "acceptedTranslations": [
+            "znak wyjścia",
+            "oznaczenie wyjścia"
+          ]
+        },
+        {
+          "id": "emergencies-safety.single-file",
+          "term": "single file",
+          "ipa": "/ˌsɪŋɡəl ˈfaɪl/",
+          "pos": "przysłówek",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "gęsiego",
+          "definition": "In a line, one person behind another.",
+          "register": "neutralny",
+          "contextPl": "Procedury bezpieczeństwa i ćwiczenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "walk in single file",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The kids walked out of the classroom in single file.",
+              "pl": "Dzieci wyszły z klasy gęsiego.",
+              "focusEn": "single file",
+              "focusPl": "gęsiego"
+            },
+            {
+              "en": "Line up in single file and keep one hand on the wall.",
+              "pl": "Ustawcie się jeden za drugim i trzymajcie jedną rękę na ścianie.",
+              "focusEn": "single file",
+              "focusPl": "jeden za drugim"
+            }
+          ],
+          "acceptedAnswers": [
+            "single file"
+          ],
+          "acceptedTranslations": [
+            "gęsiego",
+            "jeden za drugim",
+            "rzędem"
+          ]
+        },
+        {
+          "id": "emergencies-safety.assembly-point",
+          "term": "assembly point",
+          "ipa": "/əˈsembli ˌpɔɪnt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "punkt zbiórki",
+          "definition": "The place where everyone meets after leaving a building in an emergency.",
+          "register": "neutralny",
+          "contextPl": "Procedury bezpieczeństwa i ćwiczenia",
+          "natural": "",
+          "forms": "assembly points",
+          "collocations": "go to the assembly point",
+          "synonyms": "meeting point",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Each class has its own assembly point on the soccer field.",
+              "pl": "Każda klasa ma swój punkt zbiórki na boisku.",
+              "focusEn": "assembly point",
+              "focusPl": "punkt zbiórki"
+            },
+            {
+              "en": "The teachers counted the students at the assembly point.",
+              "pl": "Nauczyciele policzyli uczniów w punkcie zbiórki.",
+              "focusEn": "assembly point",
+              "focusPl": "punkcie zbiórki"
+            }
+          ],
+          "acceptedAnswers": [
+            "assembly point",
+            "meeting point"
+          ],
+          "acceptedTranslations": [
+            "punkt zbiórki",
+            "miejsce zbiórki"
+          ]
+        },
+        {
+          "id": "emergencies-safety.headcount",
+          "term": "headcount",
+          "ipa": "/ˈhedkaʊnt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "liczenie osób",
+          "definition": "The act of counting people to make sure everyone is there.",
+          "register": "neutralny",
+          "contextPl": "Procedury bezpieczeństwa i ćwiczenia",
+          "natural": "",
+          "forms": "headcounts",
+          "collocations": "do a headcount; take a headcount",
+          "synonyms": "roll call",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The teacher did a quick headcount and realized one boy was missing.",
+              "pl": "Nauczycielka szybko policzyła uczniów i zorientowała się, że brakuje jednego chłopca.",
+              "focusEn": "headcount",
+              "focusPl": "policzyła uczniów"
+            },
+            {
+              "en": "We stood in the cold for ten minutes while they did a headcount.",
+              "pl": "Staliśmy na zimnie dziesięć minut, podczas gdy robiono sprawdzenie obecności.",
+              "focusEn": "headcount",
+              "focusPl": "sprawdzenie obecności"
+            }
+          ],
+          "acceptedAnswers": [
+            "headcount",
+            "head count"
+          ],
+          "acceptedTranslations": [
+            "liczenie osób",
+            "sprawdzenie obecności"
+          ]
+        },
+        {
+          "id": "emergencies-safety.lockdown",
+          "term": "lockdown",
+          "ipa": "/ˈlɑːkdaʊn/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "zamknięcie szkoły",
+          "definition": "A safety procedure where everyone stays locked inside rooms because of danger outside.",
+          "register": "neutralny",
+          "contextPl": "Procedury bezpieczeństwa i ćwiczenia",
+          "natural": "",
+          "forms": "lockdowns",
+          "collocations": "go into lockdown; a lockdown drill",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "W szkołach w USA ćwiczy się też „lockdown drills”.",
+          "examples": [
+            {
+              "en": "During the lockdown drill, we turned off the lights and stayed quiet.",
+              "pl": "Podczas ćwiczeń zamknięcia szkoły zgasiliśmy światło i siedzieliśmy cicho.",
+              "focusEn": "lockdown",
+              "focusPl": "zamknięcia szkoły"
+            },
+            {
+              "en": "The school went into lockdown because of a police search nearby.",
+              "pl": "Szkołę zamknięto z powodu policyjnej obławy w okolicy.",
+              "focusEn": "lockdown",
+              "focusPl": "zamknięto"
+            }
+          ],
+          "acceptedAnswers": [
+            "lockdown"
+          ],
+          "acceptedTranslations": [
+            "zamknięcie szkoły",
+            "blokada",
+            "procedura zamknięcia"
+          ]
+        },
+        {
+          "id": "emergencies-safety.shelter-in-place",
+          "term": "shelter in place",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "pozostać w budynku",
+          "definition": "To stay inside where you are until it is safe to leave.",
+          "register": "formalny",
+          "contextPl": "Procedury bezpieczeństwa i ćwiczenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "a shelter-in-place order",
+          "synonyms": "",
+          "antonyms": "evacuate",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "During the chemical spill, we were told to shelter in place.",
+              "pl": "Podczas wycieku chemikaliów kazano nam pozostać w budynku.",
+              "focusEn": "shelter in place",
+              "focusPl": "pozostać w budynku"
+            },
+            {
+              "en": "The principal announced that all classes should shelter in place until further notice.",
+              "pl": "Dyrektor ogłosił, że wszystkie klasy mają pozostać w budynku do odwołania.",
+              "focusEn": "shelter in place",
+              "focusPl": "pozostać w budynku"
+            }
+          ],
+          "acceptedAnswers": [
+            "shelter in place"
+          ],
+          "acceptedTranslations": [
+            "pozostać w budynku",
+            "schronić się w budynku",
+            "nie wychodzić"
+          ]
+        },
+        {
+          "id": "emergencies-safety.false-alarm",
+          "term": "false alarm",
+          "ipa": "/ˌfɔːls əˈlɑːrm/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "fałszywy alarm",
+          "definition": "A warning about a danger that turns out not to be real.",
+          "register": "neutralny",
+          "contextPl": "Procedury bezpieczeństwa i ćwiczenia",
+          "natural": "",
+          "forms": "false alarms",
+          "collocations": "it was just a false alarm",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "It turned out to be a false alarm; someone burned popcorn in the teachers' lounge.",
+              "pl": "Okazało się, że to fałszywy alarm, ktoś przypalił popcorn w pokoju nauczycielskim.",
+              "focusEn": "false alarm",
+              "focusPl": "fałszywy alarm"
+            },
+            {
+              "en": "After three false alarms this month, nobody hurries anymore.",
+              "pl": "Po trzech fałszywych alarmach w tym miesiącu nikt już się nie spieszy.",
+              "focusEn": "false alarms",
+              "focusPl": "fałszywych alarmach"
+            }
+          ],
+          "acceptedAnswers": [
+            "false alarm"
+          ],
+          "acceptedTranslations": [
+            "fałszywy alarm"
+          ]
+        },
+        {
+          "id": "emergencies-safety.all-clear",
+          "term": "all clear",
+          "ipa": "/ˌɔːl ˈklɪr/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "odwołanie alarmu",
+          "definition": "A signal that danger has passed and people can return.",
+          "register": "neutralny",
+          "contextPl": "Procedury bezpieczeństwa i ćwiczenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "give the all clear; get the all clear",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "We waited on the field until the firefighters gave the all clear.",
+              "pl": "Czekaliśmy na boisku, aż strażacy ogłoszą odwołanie alarmu.",
+              "focusEn": "all clear",
+              "focusPl": "odwołanie alarmu"
+            },
+            {
+              "en": "When we got the all clear, everyone went back to class.",
+              "pl": "Kiedy przyszło odwołanie alarmu, wszyscy wrócili do klas.",
+              "focusEn": "all clear",
+              "focusPl": "odwołanie alarmu"
+            }
+          ],
+          "acceptedAnswers": [
+            "all clear"
+          ],
+          "acceptedTranslations": [
+            "odwołanie alarmu",
+            "sygnał, że niebezpieczeństwo minęło"
+          ]
+        },
+        {
+          "id": "emergencies-safety.dont-panic",
+          "term": "don't panic",
+          "ipa": "/ˌdoʊnt ˈpænɪk/",
+          "pos": "zwrot",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "nie panikuj",
+          "definition": "Used to tell someone to stay calm in a frightening situation.",
+          "register": "neutralny",
+          "contextPl": "Procedury bezpieczeństwa i ćwiczenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "stay calm",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "Don't panic, just walk calmly to the nearest exit.",
+              "pl": "Nie panikujcie, po prostu idźcie spokojnie do najbliższego wyjścia.",
+              "focusEn": "Don't panic",
+              "focusPl": "Nie panikujcie"
+            },
+            {
+              "en": "The teacher kept saying \"Don't panic\" as the alarm got louder.",
+              "pl": "Nauczyciel powtarzał „Bez paniki”, gdy alarm robił się coraz głośniejszy.",
+              "focusEn": "Don't panic",
+              "focusPl": "Bez paniki"
+            }
+          ],
+          "acceptedAnswers": [
+            "don't panic"
+          ],
+          "acceptedTranslations": [
+            "nie panikuj",
+            "bez paniki",
+            "spokojnie"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emergencies-safety.firstaid",
+      "namePl": "Pierwsza pomoc na miejscu",
+      "scenePl": "Wypadek rowerzysty w parku, zanim przyjedzie karetka",
+      "entries": [
+        {
+          "id": "emergencies-safety.get-down",
+          "term": "get down",
+          "ipa": "/ˌɡet ˈdaʊn/",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "padnij",
+          "definition": "Used to tell someone to drop to the ground quickly.",
+          "register": "potoczny",
+          "contextPl": "Pierwsza pomoc na miejscu zdarzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "duck",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"Get down!\" someone yelled when the loose tree branch cracked.",
+              "pl": "„Na ziemię!” – ktoś krzyknął, kiedy pękła obluzowana gałąź.",
+              "focusEn": "Get down",
+              "focusPl": "Na ziemię"
+            },
+            {
+              "en": "I told the kids to get down behind the bench until the dog was caught.",
+              "pl": "Kazałem dzieciom schylić się za ławką, dopóki psa nie złapano.",
+              "focusEn": "get down",
+              "focusPl": "schylić się"
+            }
+          ],
+          "acceptedAnswers": [
+            "get down"
+          ],
+          "acceptedTranslations": [
+            "padnij",
+            "na ziemię",
+            "schyl się"
+          ]
+        },
+        {
+          "id": "emergencies-safety.bleeding",
+          "term": "bleeding",
+          "ipa": "/ˈbliːdɪŋ/",
+          "pos": "rzeczownik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "krwawienie",
+          "definition": "The flow of blood from a cut or wound.",
+          "register": "neutralny",
+          "contextPl": "Pierwsza pomoc na miejscu zdarzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "stop the bleeding; heavy bleeding",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "I pressed my scarf on his knee to stop the bleeding.",
+              "pl": "Przycisnąłem mu szalik do kolana, żeby zatamować krwawienie.",
+              "focusEn": "bleeding",
+              "focusPl": "krwawienie"
+            },
+            {
+              "en": "The bleeding slowed down after a few minutes of pressure.",
+              "pl": "Po kilku minutach ucisku krwawienie osłabło.",
+              "focusEn": "bleeding",
+              "focusPl": "krwawienie"
+            }
+          ],
+          "acceptedAnswers": [
+            "bleeding"
+          ],
+          "acceptedTranslations": [
+            "krwawienie",
+            "krew"
+          ]
+        },
+        {
+          "id": "emergencies-safety.breathing",
+          "term": "breathing",
+          "ipa": "/ˈbriːðɪŋ/",
+          "pos": "przymiotnik",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "oddychający",
+          "definition": "Taking air in and out of the lungs.",
+          "register": "neutralny",
+          "contextPl": "Pierwsza pomoc na miejscu zdarzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "is he breathing; still breathing",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "Pytanie dyspozytora: „Is he breathing?”.",
+          "examples": [
+            {
+              "en": "The dispatcher asked me if the cyclist was breathing.",
+              "pl": "Dyspozytor zapytał mnie, czy rowerzysta oddycha.",
+              "focusEn": "breathing",
+              "focusPl": "oddycha"
+            },
+            {
+              "en": "He's breathing, but he isn't answering me.",
+              "pl": "Oddycha, ale mi nie odpowiada.",
+              "focusEn": "breathing",
+              "focusPl": "Oddycha"
+            }
+          ],
+          "acceptedAnswers": [
+            "breathing"
+          ],
+          "acceptedTranslations": [
+            "oddychający",
+            "oddycha"
+          ]
+        },
+        {
+          "id": "emergencies-safety.conscious",
+          "term": "conscious",
+          "ipa": "/ˈkɑːnʃəs/",
+          "pos": "przymiotnik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "przytomny",
+          "definition": "Awake and able to understand what is happening.",
+          "register": "neutralny",
+          "contextPl": "Pierwsza pomoc na miejscu zdarzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "stay conscious; fully conscious",
+          "synonyms": "awake",
+          "antonyms": "unconscious",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "The cyclist was conscious but very confused.",
+              "pl": "Rowerzysta był przytomny, ale bardzo zdezorientowany.",
+              "focusEn": "conscious",
+              "focusPl": "przytomny"
+            },
+            {
+              "en": "Keep talking to her so she stays conscious.",
+              "pl": "Mów do niej cały czas, żeby pozostała przytomna.",
+              "focusEn": "conscious",
+              "focusPl": "przytomna"
+            }
+          ],
+          "acceptedAnswers": [
+            "conscious"
+          ],
+          "acceptedTranslations": [
+            "przytomny",
+            "świadomy"
+          ]
+        },
+        {
+          "id": "emergencies-safety.stay-with-me",
+          "term": "stay with me",
+          "ipa": "",
+          "pos": "zwrot",
+          "level": "B1",
+          "frequency": "common",
+          "translation": "zostań ze mną",
+          "definition": "Said to an injured person to keep them awake and talking.",
+          "register": "potoczny",
+          "contextPl": "Pierwsza pomoc na miejscu zdarzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "\"Stay with me, help is almost here,\" I told him.",
+              "pl": "„Zostań ze mną, pomoc zaraz tu będzie” – powiedziałem mu.",
+              "focusEn": "Stay with me",
+              "focusPl": "Zostań ze mną"
+            },
+            {
+              "en": "The woman kept her eyes on him and said, \"Hey, stay with me.\"",
+              "pl": "Kobieta nie spuszczała go z oczu i mówiła: „Hej, zostań ze mną”.",
+              "focusEn": "stay with me",
+              "focusPl": "zostań ze mną"
+            }
+          ],
+          "acceptedAnswers": [
+            "stay with me"
+          ],
+          "acceptedTranslations": [
+            "zostań ze mną",
+            "nie odpływaj",
+            "nie zasypiaj"
+          ]
+        },
+        {
+          "id": "emergencies-safety.heimlich-maneuver",
+          "term": "Heimlich maneuver",
+          "ipa": "/ˈhaɪmlɪk məˌnuːvər/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "rękoczyn Heimlicha",
+          "definition": "A way to help a choking person by pushing hard on their stomach from behind.",
+          "register": "specjalistyczny",
+          "contextPl": "Pierwsza pomoc na miejscu zdarzenia",
+          "natural": "",
+          "forms": "",
+          "collocations": "do the Heimlich maneuver",
+          "synonyms": "abdominal thrusts",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A jogger did the Heimlich maneuver on a boy choking on candy by the playground.",
+              "pl": "Biegacz wykonał rękoczyn Heimlicha u chłopca, który zakrztusił się cukierkiem przy placu zabaw.",
+              "focusEn": "Heimlich maneuver",
+              "focusPl": "rękoczyn Heimlicha"
+            },
+            {
+              "en": "I learned the Heimlich maneuver in a first aid class but never used it before.",
+              "pl": "Nauczyłem się rękoczynu Heimlicha na kursie pierwszej pomocy, ale nigdy wcześniej go nie użyłem.",
+              "focusEn": "Heimlich maneuver",
+              "focusPl": "rękoczynu Heimlicha"
+            }
+          ],
+          "acceptedAnswers": [
+            "Heimlich maneuver",
+            "Heimlich"
+          ],
+          "acceptedTranslations": [
+            "rękoczyn Heimlicha",
+            "chwyt Heimlicha"
+          ]
+        },
+        {
+          "id": "emergencies-safety.aed",
+          "term": "AED",
+          "ipa": "/ˌeɪ iː ˈdiː/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "defibrylator AED",
+          "definition": "A portable machine that gives an electric shock to restart a person's heart.",
+          "register": "specjalistyczny",
+          "contextPl": "Pierwsza pomoc na miejscu zdarzenia",
+          "natural": "",
+          "forms": "AEDs",
+          "collocations": "use an AED",
+          "synonyms": "defibrillator",
+          "antonyms": "",
+          "notePl": "Skrót od automated external defibrillator; urządzenie samo podaje instrukcje głosem.",
+          "examples": [
+            {
+              "en": "Someone ran to the park office to get the AED.",
+              "pl": "Ktoś pobiegł do biura parku po defibrylator AED.",
+              "focusEn": "AED",
+              "focusPl": "defibrylator AED"
+            },
+            {
+              "en": "The AED talks you through every step, so you don't need training.",
+              "pl": "Defibrylator AED prowadzi cię głosem krok po kroku, więc nie trzeba szkolenia.",
+              "focusEn": "AED",
+              "focusPl": "Defibrylator AED"
+            }
+          ],
+          "acceptedAnswers": [
+            "AED",
+            "automated external defibrillator"
+          ],
+          "acceptedTranslations": [
+            "defibrylator AED",
+            "automatyczny defibrylator"
+          ]
+        },
+        {
+          "id": "emergencies-safety.tourniquet",
+          "term": "tourniquet",
+          "ipa": "/ˈtɜːrnɪkɪt/",
+          "pos": "rzeczownik",
+          "level": "C1",
+          "frequency": "less_common",
+          "translation": "opaska uciskowa",
+          "definition": "A tight band tied around an arm or leg to stop serious bleeding.",
+          "register": "specjalistyczny",
+          "contextPl": "Pierwsza pomoc na miejscu zdarzenia",
+          "natural": "",
+          "forms": "tourniquets",
+          "collocations": "apply a tourniquet",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            {
+              "en": "A nurse who was jogging by made a tourniquet from her belt.",
+              "pl": "Przebiegająca obok pielęgniarka zrobiła opaskę uciskową z paska.",
+              "focusEn": "tourniquet",
+              "focusPl": "opaskę uciskową"
+            },
+            {
+              "en": "The EMTs replaced the belt with a proper tourniquet.",
+              "pl": "Ratownicy zastąpili pasek prawdziwą opaską uciskową.",
+              "focusEn": "tourniquet",
+              "focusPl": "opaską uciskową"
+            }
+          ],
+          "acceptedAnswers": [
+            "tourniquet"
+          ],
+          "acceptedTranslations": [
+            "opaska uciskowa",
+            "staza"
+          ]
+        },
+        {
+          "id": "emergencies-safety.seizure",
+          "term": "seizure",
+          "ipa": "/ˈsiːʒər/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "atak drgawek",
+          "definition": "A sudden attack of illness, when a person shakes and cannot control their body.",
+          "register": "neutralny",
+          "contextPl": "Pierwsza pomoc na miejscu zdarzenia",
+          "natural": "",
+          "forms": "seizures",
+          "collocations": "have a seizure",
+          "synonyms": "fit",
+          "antonyms": "",
+          "notePl": "Nie wkładaj niczego do ust osobie z drgawkami.",
+          "examples": [
+            {
+              "en": "A man on the bench started having a seizure, so I moved the bike away from him.",
+              "pl": "Mężczyzna na ławce dostał ataku drgawek, więc odsunąłem od niego rower.",
+              "focusEn": "seizure",
+              "focusPl": "ataku drgawek"
+            },
+            {
+              "en": "During the seizure, we just kept his head safe and timed it.",
+              "pl": "W czasie ataku drgawek po prostu chroniliśmy mu głowę i mierzyliśmy czas.",
+              "focusEn": "seizure",
+              "focusPl": "ataku drgawek"
+            }
+          ],
+          "acceptedAnswers": [
+            "seizure"
+          ],
+          "acceptedTranslations": [
+            "atak drgawek",
+            "napad padaczkowy",
+            "drgawki"
+          ]
+        }
+      ]
+    }
+  ]
+}
