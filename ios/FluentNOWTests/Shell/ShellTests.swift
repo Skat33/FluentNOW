@@ -21,7 +21,9 @@ final class DeepLinkTests: XCTestCase {
     func testLibrary() {
         XCTAssertEqual(link("fluentnow://words"), .library(.words, nil))
         XCTAssertEqual(link("fluentnow://words/w-123"), .library(.words, .word(id: "w-123")))
-        XCTAssertEqual(link("fluentnow://topics/airport"), .library(.topics, .topic(id: "airport")))
+        // F1: tematy otwierają wyszukiwanie tematu (arkusz „+”), nie katalog w Słowniku.
+        XCTAssertEqual(link("fluentnow://topics/airport"), .topicSearch(query: nil, topicID: "airport"))
+        XCTAssertEqual(link("fluentnow://topics?q=na%20lotnisku"), .topicSearch(query: "na lotnisku", topicID: nil))
         XCTAssertEqual(link("fluentnow://collections/Lotnisko%20i%20podr%C3%B3%C5%BCe"),
                        .library(.collections, .collection(name: "Lotnisko i podróże")))
     }
@@ -75,10 +77,14 @@ final class AppRouterTests: XCTestCase {
 
     func testHandleURL() throws {
         let router = AppRouter()
-        XCTAssertTrue(router.handle(url: try XCTUnwrap(URL(string: "fluentnow://topics/airport"))))
+        XCTAssertTrue(router.handle(url: try XCTUnwrap(URL(string: "fluentnow://words/w-1"))))
         XCTAssertEqual(router.selectedTab, .words)
-        XCTAssertEqual(router.librarySection, .topics)
-        XCTAssertEqual(router.consumeLibraryDestination(), .topic(id: "airport"))
+        XCTAssertEqual(router.librarySection, .words)
+        XCTAssertEqual(router.consumeLibraryDestination(), .word(id: "w-1"))
+        XCTAssertTrue(router.handle(url: try XCTUnwrap(URL(string: "fluentnow://topics/airport"))))
+        XCTAssertEqual(router.activeSheet, .topicSearch(query: nil, topicID: "airport"))
+        router.openLibrary(.topics)
+        XCTAssertEqual(router.activeSheet, .topicSearch(query: nil, topicID: nil), "Stary segment Tematy → wyszukiwanie tematu")
         XCTAssertFalse(router.handle(url: try XCTUnwrap(URL(string: "fluentnow://nope"))))
     }
 

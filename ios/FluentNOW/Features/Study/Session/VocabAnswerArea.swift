@@ -30,7 +30,7 @@ struct VocabAnswerArea: View {
                 VocabMeaningVariants(model: model)
             }
             if model.hintShown && model.phase != .checking {
-                StudyHintBox(text: model.content.hintText)
+                StudyHintBox(lines: model.visibleHints)
             }
             if model.phase == .checking {
                 VocabAssistantChecking(onSkip: model.skipAssistant)
@@ -92,15 +92,26 @@ private struct VocabAnswerActions: View {
         }
     }
 
-    @ViewBuilder
     private var leading: some View {
+        ViewThatFits(in: .horizontal) {
+            HStack(spacing: Spacing.m) { helpButtons }
+            VStack(alignment: .leading, spacing: 0) { helpButtons }
+        }
+    }
+
+    /// „Podpowiedź” → „Więcej podpowiedzi” (kolejny poziom) i w drugiej próbie „Pokaż odpowiedź”.
+    @ViewBuilder
+    private var helpButtons: some View {
+        if model.canShowMoreHints {
+            StudyHintButton(title: model.hintShown ? "Więcej podpowiedzi" : "Podpowiedź") {
+                model.showHint()
+            }
+        }
         if model.phase == .retry {
             Button("Pokaż odpowiedź", action: model.giveUp)
                 .font(FluentFont.subheadline.weight(.semibold))
                 .foregroundStyle(Palette.accent)
                 .frame(minHeight: HitTarget.minimum)
-        } else if !model.hintShown {
-            StudyHintButton(action: model.showHint)
         }
     }
 

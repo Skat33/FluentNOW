@@ -47,9 +47,13 @@ enum AssistantError: Error, LocalizedError, Equatable {
     case timeout
     case missingKey
     case cancelled
+    /// Przekroczony dłuższy limit czasu (generowanie tematu).
+    case timeoutAfter(seconds: Int)
 
     var errorDescription: String? {
         switch self {
+        case .timeoutAfter(let seconds):
+            return "Asystent nie odpowiedział w ciągu \(seconds) sekund. Spróbuj ponownie — to, co już przygotowano, zostało zapisane."
         case .unavailable(let reason):
             return reason
         case .notFound(let term):
@@ -77,6 +81,28 @@ protocol LanguageAssistant: Sendable {
     func lookup(term: String) async throws -> Lookup
     /// Ocena niejednoznacznej odpowiedzi. `nil` = brak zdania (zostaje ocena lokalna).
     func grade(_ request: GradeRequest) async throws -> Grade?
+    /// Szybka lista haseł tematu dla zapytania (etap 1, bez szczegółów). Surowa odpowiedź —
+    /// walidację robi `TopicGeneration.buildTopic`.
+    func topicDraft(query: String) async throws -> TopicDraft
+    /// Szczegóły (IPA, definicja, 2 przykłady, warianty) dla partii haseł (etap 2, ≤ 5 haseł).
+    /// Surowa odpowiedź — walidację robi `TopicGeneration.applyHydration`.
+    func topicDetails(topicName: String, items: [TopicHydrationRequestItem]) async throws -> [TopicHydrationItem]
+}
+
+extension LanguageAssistant {
+    /// Domyślnie (np. tryb bez AI) tematów nie da się generować.
+    func topicDraft(query: String) async throws -> TopicDraft {
+        throw AssistantError.unavailable(AssistantError.topicsNeedAI)
+    }
+
+    func topicDetails(topicName: String, items: [TopicHydrationRequestItem]) async throws -> [TopicHydrationItem] {
+        throw AssistantError.unavailable(AssistantError.topicsNeedAI)
+    }
+}
+
+extension AssistantError {
+    /// Komunikat, gdy AI jest wyłączone, a temat trzeba wygenerować.
+    static let topicsNeedAI = "Włącz AI w Ustawieniach, żeby tworzyć nowe tematy."
 }
 
 /// Dane do oceny odpowiedzi przez AI (wartości `Sendable`).

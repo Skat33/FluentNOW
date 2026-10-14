@@ -4,7 +4,8 @@ import FluentKit
 /// Karta zadania słownikowego — wspólna dla sesji słownictwa i sesji łączonej.
 ///
 /// - `confidence`: wybór pewności (sesja słownictwa); `nil` w sesji łączonej (pewność 2 jak strona);
-/// - `onFlashcardDecision`: wołane po „Pamiętam” / „Jeszcze nie pamiętam” (sesja słownictwa od razu zapisuje).
+/// - `onFlashcardDecision`: wołane po „Pamiętam” / „Jeszcze nie pamiętam” — obie sesje od razu zapisują
+///   odpowiedź i przechodzą do następnego zadania (bez panelu wyniku i przewijania).
 struct VocabExerciseView: View {
     let model: VocabExerciseModel
     var confidence: Binding<ConfidenceLevel>?
@@ -66,6 +67,8 @@ struct VocabExerciseView: View {
     }
 
     private func announceResult() {
+        // Fiszka z obsługą decyzji przechodzi od razu dalej — bez komunikatu wyniku.
+        if model.type == .flashcard && onFlashcardDecision != nil { return }
         let summary = VocabFeedbackSummary(model: model)
         AccessibilityNotification.Announcement(summary.title).post()
     }
@@ -143,9 +146,7 @@ private struct VocabFlashcardSwipe: ViewModifier {
     let onDecision: (() -> Void)?
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
-    @Environment(AppPreferences.self) private var preferences
     @State private var offset: CGFloat = 0
-    @State private var committed = 0
 
     private static let threshold: CGFloat = 110
 
@@ -159,7 +160,7 @@ private struct VocabFlashcardSwipe: ViewModifier {
             .rotationEffect(.degrees(reduceMotion ? 0 : Double(offset / 40)))
             .opacity(1 - min(0.4, Double(abs(offset)) / 600))
             .simultaneousGesture(drag, including: isActive ? .all : .subviews)
-            .sensoryFeedback(FluentHaptic.swipeCommit, trigger: committed) { _, _ in preferences.hapticsEnabled }
+        // Haptyka przejścia jest na ekranie sesji (karta znika od razu po decyzji).
     }
 
     private var drag: some Gesture {
@@ -172,7 +173,6 @@ private struct VocabFlashcardSwipe: ViewModifier {
             .onEnded { value in
                 let width = value.translation.width
                 if abs(width) >= VocabFlashcardSwipe.threshold && abs(width) > abs(value.translation.height) {
-                    committed += 1
                     model.finishFlashcard(remembered: width > 0)
                     offset = 0
                     onDecision?()

@@ -4,6 +4,7 @@ import FluentKit
 /// Korzeń karty „Postępy”. Kontrakt powłoki: inicjalizator bez argumentów, bez własnego `NavigationStack`.
 /// Wszystkie liczby z `ProgressStatistics` (FluentKit), liczone poza `body` i poza głównym wątkiem.
 struct StatsRootScreen: View {
+    @Environment(AppEnvironment.self) private var env
     @Environment(LearningStore.self) private var store
     @Environment(AppRouter.self) private var router
 
@@ -18,9 +19,9 @@ struct StatsRootScreen: View {
                             systemImage: "chart.bar.xaxis",
                             title: "Tu zobaczysz swój postęp",
                             message: "Dodaj słowa i zrób pierwszą sesję — wykresy pojawią się od razu.",
-                            actionTitle: "Przeglądaj tematy"
+                            actionTitle: "Szukaj tematu"
                         ) {
-                            router.openLibrary(.topics)
+                            router.presentTopicSearch()
                         }
                     } else {
                         StatsContent(snapshot: snapshot)
@@ -36,14 +37,19 @@ struct StatsRootScreen: View {
         .background(Palette.background)
         .navigationTitle("Postępy")
         .libraryNavigationDestinations()
-        .task(id: store.revision) {
-            let now = store.now()
-            let computed = await store.compute { state in
-                StatsSnapshot.make(state: state, now: now)
-            }
-            guard !Task.isCancelled else { return }
-            snapshot = computed
+        .task(id: store.revision) { await refreshSnapshot() }
+    }
+
+    /// Migawka (z analizą `LearnerAnalyzer`) liczona poza głównym wątkiem; indeks tematów
+    /// tylko po nazwy obszarów tematycznych (brak indeksu = obszary według kolekcji).
+    private func refreshSnapshot() async {
+        let now: Timestamp = store.now()
+        let topics: TopicIndex? = try? await env.content.topicIndex()
+        let computed: StatsSnapshot = await store.compute { (state: LearnerState) -> StatsSnapshot in
+            StatsSnapshot.make(state: state, now: now, topics: topics)
         }
+        guard !Task.isCancelled else { return }
+        snapshot = computed
     }
 }
 
@@ -54,7 +60,7 @@ private struct StatsContent: View {
 
     var body: some View {
         StatsOverviewGrid(overview: snapshot.overview)
-        StatsLevelEstimateCard(estimate: snapshot.estimate)
+        StatsAnalysisSection(analysis: snapshot.analysis)
         TodayWeekCard(week: snapshot.week, goal: snapshot.goal)
         StatsActivityCalendar(days: snapshot.calendar)
         StatsHardWordsCard(rows: snapshot.hardWords) {
@@ -82,32 +88,6 @@ private struct StatsOverviewGrid: View {
             StatTile(title: "Do powtórki", value: "\(overview.dueMeanings)", systemImage: "arrow.clockwise",
                      caption: overview.newMeanings > 0 ? "+ \(overview.newMeanings) nowych" : nil, tone: .info)
         }
-    }
-}
-
-/// Szacowany poziom CEFR z uczciwym opisem pewności.
-private struct StatsLevelEstimateCard: View {
-    let estimate: LevelEstimate
-
-    var body: some View {
-        Card {
-            SectionHeader("Szacowany poziom")
-            HStack(spacing: Spacing.s) {
-                Text(estimate.count > 0 ? estimate.level : "—")
-                    .font(FluentFont.numberLarge)
-                    .foregroundStyle(Palette.ink)
-                VStack(alignment: .leading, spacing: Spacing.xxs) {
-                    Text("Następny cel: \(estimate.targetLevel)")
-                        .font(FluentFont.headline)
-                        .foregroundStyle(Palette.ink)
-                    Text(StatsText.confidence(estimate))
-                        .font(FluentFont.footnote)
-                        .foregroundStyle(Palette.inkSecondary)
-                        .fixedSize(horizontal: false, vertical: true)
-                }
-            }
-        }
-        .accessibilityElement(children: .combine)
     }
 }
 

@@ -25,19 +25,32 @@ actor ContentLibrary {
     private var practiceCache: [String: PracticeContent] = [:]
 
     private var searchIndex: ContentSearch?
-    private var searchBuild: Task<ContentSearch?, Never>?
+    private var searchBuild: Task<[DictionaryIndex.Entry]?, Never>?
     private var searchBuildFailed = false
+    /// Rekordy `dictionary-index.json` (baza do przebudowy indeksu po zapisaniu tematu AI).
+    private var baseDictionary: [DictionaryIndex.Entry]?
+
+    // Wyszukiwanie tematów i lokalna pamięć tematów (F1)
+    private let localStore: LocalTopicStore?
+    private var generatedCache: [String: GeneratedTopicRecord]?
+    private var aliasCache: TopicAliasBook?
+    private var baseTopicDocuments: [TopicSearchDocument]?
+    private var baseTopicDocumentsBuild: Task<[TopicSearchDocument], Never>?
+    private var catalogCache: TopicSearchCatalog?
 
     private static let log = Logger(subsystem: "pl.fluentnow.app", category: "ContentLibrary")
 
     /// Treść z bundla aplikacji (`Content/` jako referencja folderowa).
-    init(bundle: Bundle = .main) {
+    /// - Parameter localTopics: pamięć tematów AI i zapytań (`nil` = tylko w pamięci, np. podgląd).
+    init(bundle: Bundle = .main, localTopics: LocalTopicStore? = nil) {
         root = bundle.url(forResource: "Content", withExtension: nil)
+        localStore = localTopics
     }
 
     /// Treść z dowolnego katalogu (testy). `nil` = brak treści (podgląd bez bundla).
-    init(rootURL: URL?) {
+    init(rootURL: URL?, localTopics: LocalTopicStore? = nil) {
         root = rootURL
+        localStore = localTopics
     }
 
     /// Czy katalog treści istnieje.
@@ -54,6 +67,7 @@ actor ContentLibrary {
     }
 
     func topic(id: String) async throws -> TopicFile {
+        if let generated = loadGenerated()[id] { return generated.topic }
         if let cached = topicCache[id] { return cached }
         guard Self.isSafeFileName(id) else { throw ContentError.unreadable(file: "topics/\(id).json") }
         let data = try read("topics/\(id).json")
@@ -145,10 +159,10 @@ actor ContentLibrary {
     private func startSearchBuild() {
         guard searchBuild == nil, !searchBuildFailed else { return }
         let url = fileURL("dictionary-index.json")
-        let build = Task.detached(priority: .utility) { () -> ContentSearch? in
+        let build = Task.detached(priority: .utility) { () -> [DictionaryIndex.Entry]? in
             guard let url, let data = try? Data(contentsOf: url) else { return nil }
             guard let index = try? ContentDecoder.dictionaryIndex(from: data) else { return nil }
-            return ContentSearch(index: index)
+            return index.entries
         }
         searchBuild = build
         Task { [weak self] in
@@ -157,14 +171,177 @@ actor ContentLibrary {
         }
     }
 
-    private func install(_ built: ContentSearch?) {
+    private func install(_ entries: [DictionaryIndex.Entry]?) {
         guard searchIndex == nil else { return }
-        if let built {
-            searchIndex = built
+        if let entries {
+            baseDictionary = entries
         } else if !searchBuildFailed {
             searchBuildFailed = true
-            Self.log.error("dictionary-index.json missing or invalid — search disabled")
+            baseDictionary = []
+            Self.log.error("dictionary-index.json missing or invalid — built-in search disabled")
         }
+        rebuildSearchIndex()
+    }
+
+    /// Indeks szybkiego dodawania = słownik wbudowany + kompletne wpisy tematów AI.
+    private func rebuildSearchIndex() {
+        guard let base = baseDictionary else { return }
+        let local = loadGenerated().values
+            .sorted { $0.createdAt < $1.createdAt }
+            .flatMap { $0.dictionaryEntries }
+        if base.isEmpty && local.isEmpty { return }
+        searchIndex = local.isEmpty ? ContentSearch(entries: base) : ContentSearch(entries: base + local)
+    }
+
+    // MARK: - Wyszukiwanie tematów (F1)
+
+    /// Katalog wyszukiwania tematów: wszystkie pliki `topics/*.json` z bundla (bez polegania na
+    /// `index.json`) + tematy AI z pamięci lokalnej + zapamiętane zapytania. Budowany raz, w tle;
+    /// po zapisie tematu lub zapytania przebudowywana jest tylko część lokalna.
+    func topicCatalog() async -> TopicSearchCatalog {
+        if let catalogCache { return catalogCache }
+        let base = await loadBaseTopicDocuments()
+        if let catalogCache { return catalogCache }
+        let generated = loadGenerated().values
+            .sorted { $0.createdAt < $1.createdAt }
+            .map { TopicSearchDocument(topic: $0.topic, isGenerated: true) }
+        let saved = loadAliases().aliases
+        let documents = base + generated
+        let catalog = await Task.detached(priority: .userInitiated) { () -> TopicSearchCatalog in
+            TopicSearchCatalog(documents: documents, savedQueries: saved)
+        }.value
+        catalogCache = catalog
+        return catalog
+    }
+
+    /// Tematy dla zapytania (najlepszy pierwszy).
+    func rankTopics(_ query: String, limit: Int = 8) async -> [TopicMatch] {
+        let catalog = await topicCatalog()
+        return TopicSearch.rank(query, in: catalog, limit: limit)
+    }
+
+    /// Dane do wyświetlenia propozycji tematów.
+    func topicSuggestions(for matches: [TopicMatch]) async -> [TopicSuggestion] {
+        await topicCatalog().suggestions(for: matches)
+    }
+
+    /// Sekcje wyniku: najlepsza kategoria tematu → reszta tematu → powiązane tematy.
+    func topicResultSections(primary: TopicMatch, matches: [TopicMatch]) async throws -> [TopicResultSection] {
+        let primaryTopic = try await self.topic(id: primary.topicID)
+        var related: [(match: TopicMatch, topic: TopicFile)] = []
+        for match in TopicSearch.relatedMatches(matches, primary: primary) {
+            guard let file = try? await self.topic(id: match.topicID) else { continue }
+            related.append((match: match, topic: file))
+        }
+        return TopicSearch.sections(primary: primary, topic: primaryTopic, related: related)
+    }
+
+    /// Identyfikatory wszystkich znanych tematów (do nadania unikalnego id tematowi AI).
+    func knownTopicIDs() async -> Set<String> {
+        let base = await loadBaseTopicDocuments()
+        return Set(base.map { $0.id }).union(loadGenerated().keys)
+    }
+
+    /// Zapisany temat AI (z pamięci lokalnej).
+    func generatedTopic(id: String) async -> GeneratedTopicRecord? {
+        loadGenerated()[id]
+    }
+
+    /// Zapisuje temat AI (nowy lub po uzupełnieniu kolejnej partii szczegółów). Zapis atomowy;
+    /// bez pamięci na dysku (podgląd) temat zostaje tylko w pamięci.
+    func saveGeneratedTopic(_ record: GeneratedTopicRecord) async throws {
+        var records = loadGenerated()
+        records[record.topic.id] = record
+        generatedCache = records
+        topicCache[record.topic.id] = nil
+        catalogCache = nil
+        rebuildSearchIndex()
+        try localStore?.save(record)
+    }
+
+    /// Zapamiętuje, że zapytanie oznacza dany temat (kolejne wyszukiwanie jest natychmiastowe).
+    func rememberQuery(_ query: String, topicID: String, categoryID: String?, now: Timestamp) async {
+        var book = loadAliases()
+        guard book.record(query: query, topicID: topicID, categoryID: categoryID, now: now) else { return }
+        aliasCache = book
+        catalogCache = nil
+        do {
+            try localStore?.saveAliases(book)
+        } catch {
+            Self.log.error("aliases.json: \(error.localizedDescription, privacy: .public)")
+        }
+    }
+
+    /// Zapomina zapytanie („To nie ten temat”).
+    func forgetQuery(_ query: String) async {
+        var book = loadAliases()
+        guard book.remove(query: query) else { return }
+        aliasCache = book
+        catalogCache = nil
+        try? localStore?.saveAliases(book)
+    }
+
+    /// Usuwa wszystkie tematy AI i zapamiętane zapytania („Usuń wszystkie dane”).
+    func removeGeneratedTopics() async {
+        localStore?.removeAll()
+        let hadGenerated = !(generatedCache ?? [:]).isEmpty
+        generatedCache = [:]
+        aliasCache = TopicAliasBook()
+        catalogCache = nil
+        if hadGenerated { rebuildSearchIndex() }
+    }
+
+    private func loadGenerated() -> [String: GeneratedTopicRecord] {
+        if let generatedCache { return generatedCache }
+        var records: [String: GeneratedTopicRecord] = [:]
+        for record in localStore?.loadRecords() ?? [] {
+            records[record.topic.id] = record
+        }
+        generatedCache = records
+        return records
+    }
+
+    private func loadAliases() -> TopicAliasBook {
+        if let aliasCache { return aliasCache }
+        let book = localStore?.loadAliases() ?? TopicAliasBook()
+        aliasCache = book
+        return book
+    }
+
+    private func loadBaseTopicDocuments() async -> [TopicSearchDocument] {
+        if let baseTopicDocuments { return baseTopicDocuments }
+        let build: Task<[TopicSearchDocument], Never>
+        if let existing = baseTopicDocumentsBuild {
+            build = existing
+        } else {
+            let directory = fileURL("topics")
+            build = Task.detached(priority: .userInitiated) { () -> [TopicSearchDocument] in
+                ContentLibrary.decodeTopicDocuments(in: directory)
+            }
+            baseTopicDocumentsBuild = build
+        }
+        let documents = await build.value
+        baseTopicDocuments = documents
+        return documents
+    }
+
+    /// Dekoduje lekką wersję każdego pliku tematu (uszkodzone pliki pomija).
+    nonisolated static func decodeTopicDocuments(in directory: URL?) -> [TopicSearchDocument] {
+        guard let directory,
+              let names = try? FileManager.default.contentsOfDirectory(atPath: directory.path) else { return [] }
+        var documents: [TopicSearchDocument] = []
+        for name in names.sorted() where name.hasSuffix(".json") && name != "index.json" {
+            let url = directory.appendingPathComponent(name)
+            guard let data = try? Data(contentsOf: url, options: [.mappedIfSafe]) else { continue }
+            do {
+                let document = try ContentDecoder.topicSearchDocument(from: data)
+                guard name == "\(document.id).json" else { continue }
+                documents.append(document)
+            } catch {
+                log.error("topics/\(name, privacy: .public): \(error.localizedDescription, privacy: .public)")
+            }
+        }
+        return documents
     }
 
     // MARK: - Ocenianie
@@ -290,6 +467,8 @@ actor ContentLibrary {
         if let build = searchBuild {
             install(await build.value)
         }
+        // Katalog wyszukiwania tematów (~130 plików, lekkie dekodowanie) — po słowniku.
+        _ = await topicCatalog()
     }
 
     /// Sprawdza, że każdy plik treści da się zdekodować. Zwraca listę błędów (pusta = OK).

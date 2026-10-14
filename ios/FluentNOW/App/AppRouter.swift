@@ -5,10 +5,13 @@ import Observation
 enum AppSheet: Identifiable, Hashable {
     /// Szybkie dodawanie słowa (opcjonalnie z wypełnionym polem).
     case quickAdd(prefill: String?)
+    /// Ten sam arkusz „+” w trybie „Szukaj tematu” (opcjonalnie z zapytaniem lub konkretnym tematem).
+    case topicSearch(query: String?, topicID: String?)
 
     var id: String {
         switch self {
         case .quickAdd: return "quickAdd"
+        case .topicSearch: return "topicSearch"
         }
     }
 }
@@ -112,7 +115,17 @@ final class AppRouter {
     }
 
     /// Otwiera Słownik na danym segmencie (i opcjonalnie konkretnym celu).
+    /// Tematy nie są już publicznym katalogiem (F1): `.topics` i cel `.topic(id:)` otwierają
+    /// wyszukiwanie tematu w arkuszu „+”.
     func openLibrary(_ section: LibrarySection, destination: LibraryDestination? = nil) {
+        if case .topic(let id)? = destination {
+            presentTopicSearch(topicID: id)
+            return
+        }
+        if section == .topics {
+            presentTopicSearch()
+            return
+        }
         activeSheet = nil
         librarySection = section
         if destination != nil {
@@ -131,6 +144,11 @@ final class AppRouter {
 
     func presentQuickAdd(prefill: String? = nil) {
         activeSheet = .quickAdd(prefill: prefill)
+    }
+
+    /// Arkusz „+” w trybie „Szukaj tematu” (zapytanie lub konkretny temat — np. z deep linku).
+    func presentTopicSearch(query: String? = nil, topicID: String? = nil) {
+        activeSheet = .topicSearch(query: query, topicID: topicID)
     }
 
     func dismissSheet() {
@@ -158,6 +176,8 @@ final class AppRouter {
             startStudy(request)
         case .quickAdd(let prefill):
             presentQuickAdd(prefill: prefill)
+        case .topicSearch(let query, let topicID):
+            presentTopicSearch(query: query, topicID: topicID)
         }
     }
 }

@@ -63,7 +63,9 @@ final class AppEnvironment {
         let syncMonitor = SyncMonitor(mode: setup.syncMode)
         let store = LearningStore(persistence: setup.persistence, syncMonitor: syncMonitor)
         let preferences = AppPreferences()
-        let content = ContentLibrary()
+        // Tematy wygenerowane przez AI i zapamiętane zapytania — Application Support (F1).
+        let localTopics = LocalTopicStore.defaultDirectory().map { LocalTopicStore(directory: $0) }
+        let content = ContentLibrary(localTopics: localTopics)
         let speech = SpeechService(settingsProvider: { [weak store] in
             store?.settings ?? LearnerSettings()
         })
@@ -212,11 +214,13 @@ final class AppEnvironment {
         let assistant = assistant
         let preferences = preferences
         let reminders = reminders
+        let content = content
         store.onDeleteAll = {
             reports.removeAll()
             assistant.disconnectGemini()
             preferences.resetToDefaults()
             await reminders.cancelAll()
+            await content.removeGeneratedTopics()
         }
     }
 }

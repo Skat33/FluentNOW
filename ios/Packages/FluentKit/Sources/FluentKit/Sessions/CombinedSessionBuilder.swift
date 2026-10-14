@@ -4,16 +4,24 @@ import Foundation
 public enum CombinedSessionBuilder {
     /// Number of tasks per 5 minutes.
     public static let tasksPerFiveMinutes = 8
+    /// A reading in a session always brings at least this many questions (all of them when the
+    /// passage has fewer) …
+    public static let minReadingQuestions = 3
+    /// … and at most this many.
+    public static let maxReadingQuestions = 6
 
     /// `orderCombinedTasks`: when `random`, interleaves modes so the same mode never follows itself
     /// while another is available; order inside a mode is kept. Otherwise returns tasks unchanged.
+    /// The questions of one reading are a block: they always stay together, in order
+    /// (deviation from the web, which could split a passage between other tasks).
     public static func orderTasks<G: RandomNumberGenerator>(_ tasks: [CombinedTask], random: Bool, using rng: inout G) -> [CombinedTask] {
         guard random else { return tasks }
         var modes: [StudyMode] = []
-        var buckets: [StudyMode: [CombinedTask]] = [:]
-        for task in tasks {
-            if buckets[task.mode] == nil { modes.append(task.mode) }
-            buckets[task.mode, default: []].append(task)
+        var buckets: [StudyMode: [[CombinedTask]]] = [:]
+        for block in taskBlocks(tasks) {
+            guard let mode = block.first?.mode else { continue }
+            if buckets[mode] == nil { modes.append(mode) }
+            buckets[mode, default: []].append(block)
         }
         var heads: [StudyMode: Int] = [:]
         var result: [CombinedTask] = []
@@ -25,7 +33,7 @@ public enum CombinedSessionBuilder {
             let mode = choices[rng.nextIndex(below: choices.count)]
             let head = heads[mode] ?? 0
             if let bucket = buckets[mode], head < bucket.count {
-                result.append(bucket[head])
+                result.append(contentsOf: bucket[head])
                 heads[mode] = head + 1
                 if head + 1 >= bucket.count { modes.removeAll { $0 == mode } }
             } else {
@@ -35,9 +43,88 @@ public enum CombinedSessionBuilder {
         return result
     }
 
+    /// Splits tasks into blocks: consecutive questions of the same reading form one block,
+    /// every other task is a block of its own.
+    static func taskBlocks(_ tasks: [CombinedTask]) -> [[CombinedTask]] {
+        var blocks: [[CombinedTask]] = []
+        for task in tasks {
+            if let id = readingID(task), let lastBlock = blocks.last, let lastTask = lastBlock.last,
+               readingID(lastTask) == id {
+                blocks[blocks.count - 1].append(task)
+            } else {
+                blocks.append([task])
+            }
+        }
+        return blocks
+    }
+
+    static func readingID(_ task: CombinedTask) -> String? {
+        task.questionTask?.reading?.id
+    }
+
+    /// Reading blocks for a budget of `budget` tasks: the first passage always comes whole
+    /// (3–6 questions, never cut to the budget); another passage is added only while at least
+    /// `minReadingQuestions` tasks of the budget are left. The same passage is never used twice.
+    static func readingTasks(budget: Int, level: String, history: [ReadingHistoryEntry], bank: ReadingBank, now: Timestamp) -> [CombinedTask] {
+        guard budget > 0 else { return [] }
+        var tasks: [CombinedTask] = []
+        var readHistory = history
+        var used = Set<String>()
+        var remaining = budget
+        while remaining > 0 {
+            if !tasks.isEmpty && remaining < minReadingQuestions { break }
+            guard let reading = ReadingSelector.selectBankReading(level: level, history: readHistory, bank: bank),
+                  !reading.questions.isEmpty, !used.contains(reading.id) else { break }
+            used.insert(reading.id)
+            readHistory.append(ReadingHistoryEntry(id: reading.id, at: now, level: level, correct: 0, total: reading.questions.count, title: reading.title))
+            let questions = Array(reading.questions.prefix(maxReadingQuestions))
+            for (index, question) in questions.enumerated() {
+                let practice = PracticeQuestion(
+                    category: .grammar,
+                    prompt: question.question,
+                    context: "",
+                    options: question.options,
+                    answer: question.answer,
+                    explanation: question.explanation + " " + question.evidence,
+                    translation: ""
+                )
+                tasks.append(.question(CombinedQuestionTask(mode: .reading, question: practice, level: level, reading: reading, readingIndex: index)))
+            }
+            remaining -= questions.count
+        }
+        return tasks
+    }
+
+    /// Moves `delta` tasks of budget from (delta > 0) or to (delta < 0) the modes other than
+    /// `fixed`: taking from the largest budget first (never below 1), giving round-robin.
+    static func rebalance(_ counts: inout [Int], fixed: Int, delta: Int) {
+        let others = counts.indices.filter { $0 != fixed }
+        guard !others.isEmpty, delta != 0 else { return }
+        if delta > 0 {
+            var left = delta
+            while left > 0 {
+                var best: Int?
+                for index in others where counts[index] > 1 {
+                    if let current = best, counts[current] >= counts[index] { continue }
+                    best = index
+                }
+                guard let chosen = best else { break }
+                counts[chosen] -= 1
+                left -= 1
+            }
+        } else {
+            for step in 0..<(-delta) {
+                counts[others[step % others.count]] += 1
+            }
+        }
+    }
+
     /// `makeCombinedSession`: `max(modes, round(minutes / 5) × 8)` tasks split evenly between the
     /// selected modes. Vocabulary modes use `makeSession`; the others use the offline banks at the
     /// learner's target level, without repeating grammar tasks already seen or reserved.
+    /// Readings come as whole blocks (see `readingTasks`); the difference between the reading
+    /// block and its share of the budget is taken from / given to the other modes, so the session
+    /// keeps its length.
     public static func makeSession<G: RandomNumberGenerator>(
         state: LearnerState,
         modes: [StudyMode],
@@ -57,9 +144,24 @@ public enum CombinedSessionBuilder {
         let level = LevelEstimator.estimatedLevel(state).targetLevel
         var tasks: [CombinedTask] = []
         var seen = GrammarSelector.selectionSeen(state, now: now)
-        var readings = state.readingHistory
+        var counts = selected.indices.map { (modeIndex: Int) -> Int in
+            total / selected.count + (modeIndex < total % selected.count ? 1 : 0)
+        }
+        var readingBlock: [CombinedTask] = []
+        if let readingIndex = selected.firstIndex(of: .reading) {
+            readingBlock = readingTasks(budget: counts[readingIndex], level: level, history: state.readingHistory, bank: content.readings, now: now)
+            // Bez czytanki (pusty bank) budżet trybu przepada jak w pozostałych trybach.
+            if !readingBlock.isEmpty {
+                rebalance(&counts, fixed: readingIndex, delta: readingBlock.count - counts[readingIndex])
+                counts[readingIndex] = readingBlock.count
+            }
+        }
         for (modeIndex, mode) in selected.enumerated() {
-            let count = total / selected.count + (modeIndex < total % selected.count ? 1 : 0)
+            let count = counts[modeIndex]
+            if mode == .reading {
+                tasks.append(contentsOf: readingBlock)
+                continue
+            }
             if mode.isVocabulary {
                 let session = SessionBuilder.makeSession(state: state, minutes: minutes, mode: mode, using: &rng)
                 for task in session.tasks.prefix(count) {
@@ -71,26 +173,6 @@ public enum CombinedSessionBuilder {
             var variant = state.practiceHistory.count + state.productionHistory.count
             while remaining > 0 {
                 switch mode {
-                case .reading:
-                    guard let reading = ReadingSelector.selectBankReading(level: level, history: readings, bank: content.readings),
-                          !reading.questions.isEmpty else {
-                        remaining = 0
-                        continue
-                    }
-                    readings.append(ReadingHistoryEntry(id: reading.id, at: now, level: level, correct: 0, total: reading.questions.count, title: reading.title))
-                    for (index, question) in reading.questions.prefix(remaining).enumerated() {
-                        let practice = PracticeQuestion(
-                            category: .grammar,
-                            prompt: question.question,
-                            context: "",
-                            options: question.options,
-                            answer: question.answer,
-                            explanation: question.explanation + " " + question.evidence,
-                            translation: ""
-                        )
-                        tasks.append(.question(CombinedQuestionTask(mode: mode, question: practice, level: level, reading: reading, readingIndex: index)))
-                    }
-                    remaining -= min(remaining, reading.questions.count)
                 case .production:
                     let set = PracticeBuilder.starterProduction(level: level, variant: variant, count: 6, seen: seen, content: content)
                     variant += 1

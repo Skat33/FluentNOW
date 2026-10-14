@@ -15,12 +15,14 @@ struct StatsSnapshot: Hashable, Sendable {
     var practice: ExerciseTotals
     var estimate: LevelEstimate
     var goal: Int
+    /// Pełna analiza (poziom z zakresem pewności, umiejętności, tempo, obszary) — `StatsAnalysisSection`.
+    var analysis: LearnerAnalysis
 
     static let calendarDays = 84
     static let gainWeeks = 8
     static let hardLimit = 5
 
-    static func make(state: LearnerState, now: Timestamp) -> StatsSnapshot {
+    static func make(state: LearnerState, now: Timestamp, topics: TopicIndex? = nil) -> StatsSnapshot {
         let hard = ProgressStatistics.hardWords(state, limit: hardLimit, now: now).map { word -> WordListRow in
             let status = word.status(now: now)
             return WordListRow(
@@ -49,7 +51,8 @@ struct StatsSnapshot: Hashable, Sendable {
             reading: ProgressStatistics.readingTotals(state),
             practice: ProgressStatistics.practiceTotals(state),
             estimate: LevelEstimator.estimatedLevel(state),
-            goal: state.settings.goal
+            goal: state.settings.goal,
+            analysis: LearnerAnalyzer.analyze(state, topics: topics, now: now)
         )
     }
 }

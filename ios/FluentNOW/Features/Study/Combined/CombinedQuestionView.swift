@@ -13,7 +13,7 @@ struct CombinedQuestionView: View {
                 ReadingPassageCard(reading: reading, collapsible: true)
             }
             Card(spacing: Spacing.m) {
-                StudyExerciseKindBanner(kind, detail: model.isInput ? "Wpisz odpowiedź" : "Wybierz odpowiedź")
+                StudyExerciseKindBanner(kind, detail: bannerDetail)
                 HStack {
                     LevelBadge(level: model.task.level)
                     Spacer(minLength: Spacing.xs)
@@ -64,6 +64,15 @@ struct CombinedQuestionView: View {
         if model.task.reading != nil { return .reading }
         return model.question.category == .idiom ? .idioms : .grammar
     }
+
+    /// Czytanka: „Pytanie 2 z 4 do tekstu” (pytania jednego tekstu idą po kolei).
+    private var bannerDetail: String {
+        if let reading = model.task.reading, let index = model.task.readingIndex {
+            let total = min(reading.questions.count, CombinedSessionBuilder.maxReadingQuestions)
+            return "Pytanie \(index + 1) z \(max(total, index + 1)) do tekstu"
+        }
+        return model.isInput ? "Wpisz odpowiedź" : "Wybierz odpowiedź"
+    }
 }
 
 /// Wpisywanie odpowiedzi (miks językowy, produkcja w sesji łączonej).
@@ -82,12 +91,14 @@ private struct CombinedInputArea: View {
                 onSubmit: model.checkWritten
             )
             if model.hintShown && !model.isAnswered {
-                StudyHintBox(text: model.hintText)
+                StudyHintBox(lines: model.visibleHints)
             }
             if !model.isAnswered {
                 HStack(spacing: Spacing.s) {
-                    if !model.hintShown {
-                        StudyHintButton(action: model.showHint)
+                    if model.canShowMoreHints {
+                        StudyHintButton(title: model.hintShown ? "Więcej podpowiedzi" : "Podpowiedź") {
+                            model.showHint()
+                        }
                     }
                     Spacer(minLength: Spacing.xs)
                     PrimaryButton("Sprawdź", systemImage: "arrow.right", fillsWidth: false, action: model.checkWritten)

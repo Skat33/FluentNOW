@@ -1,6 +1,7 @@
 import SwiftUI
 
-/// Korzeń karty „Słownik” (segmenty Słowa / Kolekcje / Tematy — `AppRouter.librarySection`).
+/// Korzeń karty „Słownik” (segmenty Słowa / Kolekcje — `AppRouter.librarySection`).
+/// Tematy nie są publicznym katalogiem (F1): szuka się ich w arkuszu „+” → „Szukaj tematu”.
 /// Kontrakt powłoki: inicjalizator bez argumentów, bez własnego `NavigationStack`.
 /// Rejestruje trasy Słownika dla całej karty i konsumuje cele z deep linków.
 struct WordsRootScreen: View {
@@ -10,7 +11,7 @@ struct WordsRootScreen: View {
         @Bindable var router = router
         VStack(spacing: 0) {
             Picker("Widok słownika", selection: $router.librarySection) {
-                ForEach(LibrarySection.allCases) { section in
+                ForEach(LibrarySection.browsable) { section in
                     Text(section.title).tag(section)
                 }
             }
@@ -40,7 +41,7 @@ struct WordsRootScreen: View {
         case .collection(let name):
             router.push(CollectionRoute.detail(name: name), on: .words)
         case .topic(let id):
-            router.push(TopicRoute.detail(id: id), on: .words)
+            router.presentTopicSearch(topicID: id)
         }
     }
 }
@@ -51,12 +52,10 @@ private struct WordsSectionContent: View {
 
     var body: some View {
         switch section {
-        case .words:
+        case .words, .topics:
             WordListView()
         case .collections:
             CollectionsRootScreen()
-        case .topics:
-            TopicsRootScreen()
         }
     }
 }

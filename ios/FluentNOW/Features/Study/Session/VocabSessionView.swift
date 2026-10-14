@@ -37,6 +37,8 @@ private struct VocabSessionContent: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var isExtending = false
     @State private var notice: String?
+    /// Licznik decyzji na fiszkach — krótka haptyka przy przejściu dalej.
+    @State private var flashcardCommits = 0
 
     var body: some View {
         ScrollViewReader { proxy in
@@ -52,7 +54,8 @@ private struct VocabSessionContent: View {
             }
             .scrollDismissesKeyboard(.interactively)
             .onChange(of: model.exercise?.phase) { _, phase in
-                guard phase == .finished else { return }
+                // Fiszka przechodzi dalej od razu — bez przewijania do wyniku.
+                guard phase == .finished, model.exercise?.type != ExerciseType.flashcard else { return }
                 scroll(proxy, to: StudyScrollID.feedback, anchor: .top)
             }
             .onChange(of: model.exercise?.key) { _, _ in
@@ -62,6 +65,7 @@ private struct VocabSessionContent: View {
         .onChange(of: model.store.revision) { _, _ in
             model.sync()
         }
+        .fluentSensoryFeedback(FluentHaptic.swipeCommit, trigger: flashcardCommits)
     }
 
     @ViewBuilder
@@ -86,7 +90,7 @@ private struct VocabSessionContent: View {
                     VocabExerciseView(
                         model: exercise,
                         confidence: $model.confidence,
-                        onFlashcardDecision: { advance() }
+                        onFlashcardDecision: { flashcardDecided() }
                     )
                     .id(exercise.key)
                     .transition(Motion.contentTransition(reduceMotion: reduceMotion))
@@ -118,6 +122,12 @@ private struct VocabSessionContent: View {
         withAnimation(Motion.resolved(Motion.emphasized, reduceMotion: reduceMotion, fallback: Motion.reducedFade)) {
             model.commit()
         }
+    }
+
+    /// „Pamiętam” / „Jeszcze nie” — zapis (`Scheduler.recordAnswer`) i od razu następne zadanie.
+    private func flashcardDecided() {
+        flashcardCommits += 1
+        advance()
     }
 
     private func extend() {

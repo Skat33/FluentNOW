@@ -119,7 +119,7 @@ private struct VocabRecallPrompt: View {
                 .foregroundStyle(Palette.ink)
                 .fixedSize(horizontal: false, vertical: true)
             StudyPairTranslation(pair: content.pair)
-            Text("Podaj słowo lub pasujący zwrot. Kontekst: \(content.meaning.context.isEmpty ? content.word.collection : content.meaning.context)")
+            Text("Podaj słowo lub pasujący zwrot. Kontekst: \(content.promptContext)")
                 .font(FluentFont.footnote)
                 .foregroundStyle(Palette.inkSecondary)
                 .fixedSize(horizontal: false, vertical: true)

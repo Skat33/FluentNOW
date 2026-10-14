@@ -112,6 +112,57 @@ final class AssistantService {
         }
     }
 
+    // MARK: - Tematy (F1)
+
+    /// Limit całej operacji „lista haseł tematu” (z ponowieniami Gemini).
+    static let topicDraftTimeoutSeconds: Double = 150
+    /// Limit jednej partii szczegółów (5 haseł).
+    static let topicDetailsTimeoutSeconds: Double = 100
+
+    /// Czy można generować nowe tematy (Gemini połączone albo model Apple dostępny i wybrany).
+    var canGenerateTopics: Bool { activeProvider != .offline }
+
+    /// Lista haseł tematu dla zapytania (etap 1). Surowa propozycja AI — walidacja:
+    /// `TopicGeneration.buildTopic`. Anulowanie zadania przerywa zapytanie (`AssistantError.cancelled`).
+    func generateTopicDraft(query: String) async throws -> TopicDraft {
+        let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { throw AssistantError.notFound(query) }
+        guard canGenerateTopics else { throw AssistantError.unavailable(AssistantError.topicsNeedAI) }
+        let assistant = try makeAssistant(for: activeProvider)
+        isWorking = true
+        defer { isWorking = false }
+        return try await Self.withTopicTimeout(Self.topicDraftTimeoutSeconds) {
+            try await assistant.topicDraft(query: trimmed)
+        }
+    }
+
+    /// Szczegóły jednej partii haseł (etap 2, ≤ `TopicGeneration.hydrationBatchSize`).
+    /// Surowa propozycja AI — walidacja: `TopicGeneration.applyHydration`.
+    func generateTopicDetails(topicName: String, items: [TopicHydrationRequestItem]) async throws -> [TopicHydrationItem] {
+        guard !items.isEmpty else { return [] }
+        guard canGenerateTopics else { throw AssistantError.unavailable(AssistantError.topicsNeedAI) }
+        let assistant = try makeAssistant(for: activeProvider)
+        isWorking = true
+        defer { isWorking = false }
+        return try await Self.withTopicTimeout(Self.topicDetailsTimeoutSeconds) {
+            try await assistant.topicDetails(topicName: topicName, items: items)
+        }
+    }
+
+    /// `withTimeout` z komunikatem podającym dłuższy limit (zamiast „20 sekund”).
+    nonisolated static func withTopicTimeout<T: Sendable>(
+        _ seconds: Double,
+        _ operation: @escaping @Sendable () async throws -> T
+    ) async throws -> T {
+        do {
+            return try await withTimeout(seconds, operation)
+        } catch AssistantError.timeout {
+            throw AssistantError.timeoutAfter(seconds: Int(seconds))
+        } catch is CancellationError {
+            throw AssistantError.cancelled
+        }
+    }
+
     // MARK: - Gemini
 
     /// Sprawdza klucz (lista modeli Google), zapisuje go w pęku kluczy i ustawia dostawcę na Gemini.

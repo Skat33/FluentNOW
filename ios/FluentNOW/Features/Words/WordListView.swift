@@ -30,10 +30,10 @@ struct WordListView: View {
                     EmptyStateView(
                         systemImage: "text.book.closed",
                         title: "Twój słownik jest pusty",
-                        message: "Dodaj pierwsze słowo lub cały temat — nauka zacznie się od razu.",
-                        actionTitle: "Przeglądaj tematy"
+                        message: "Dodaj pierwsze słowo albo znajdź temat, np. „w restauracji” — nauka zacznie się od razu.",
+                        actionTitle: "Szukaj tematu"
                     ) {
-                        router.openLibrary(.topics)
+                        router.presentTopicSearch()
                     }
                 }
             } else {

@@ -17,6 +17,8 @@ struct TodaySnapshot: Hashable, Sendable {
     var recent: [WordListRow]
     var resume: TodayResume?
     var recommendations: [Recommendation]
+    /// Analiza w tle (poziom z pewnością, tempo, mocne/słabe strony) — karta `TodayAnalysisCard`.
+    var analysis: LearnerAnalysis
 
     static let collectionLimit = 3
     static let recentLimit = 4
@@ -43,7 +45,8 @@ struct TodaySnapshot: Hashable, Sendable {
             collections: Array(collections.prefix(collectionLimit)),
             recent: Array(recent.prefix(recentLimit)),
             resume: resume(state),
-            recommendations: candidates.isEmpty ? [] : LevelEstimator.recommendations(state, candidates: candidates)
+            recommendations: candidates.isEmpty ? [] : LevelEstimator.recommendations(state, candidates: candidates),
+            analysis: LearnerAnalyzer.analyze(state, topics: nil, now: now)
         )
     }
 

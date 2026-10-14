@@ -91,6 +91,146 @@ struct AppleOnDeviceAssistant: LanguageAssistant {
             return nil
         }
     }
+
+    // MARK: Tematy (F1) — krótsza lista (mały kontekst modelu), walidacja jak dla Gemini
+
+    func topicDraft(query: String) async throws -> TopicDraft {
+        guard Self.modelIsAvailable else { throw AssistantError.unavailable(Self.unavailableReasonPl) }
+        let session = LanguageModelSession(instructions: AssistantPrompts.system + AssistantPrompts.topicListCompact)
+        do {
+            let response = try await session.respond(
+                to: AssistantPrompts.topicListPayload(query: query),
+                generating: GeneratedTopicList.self
+            )
+            return response.content.draft
+        } catch is CancellationError {
+            throw AssistantError.cancelled
+        } catch {
+            throw AssistantError.invalidResponse(error.localizedDescription)
+        }
+    }
+
+    func topicDetails(topicName: String, items: [TopicHydrationRequestItem]) async throws -> [TopicHydrationItem] {
+        guard Self.modelIsAvailable else { throw AssistantError.unavailable(Self.unavailableReasonPl) }
+        guard !items.isEmpty else { return [] }
+        let session = LanguageModelSession(instructions: AssistantPrompts.system + AssistantPrompts.topicDetails)
+        do {
+            let response = try await session.respond(
+                to: AssistantPrompts.topicDetailsPayload(topicName: topicName, items: items),
+                generating: GeneratedTopicDetails.self
+            )
+            return response.content.items.map { $0.item }
+        } catch is CancellationError {
+            throw AssistantError.cancelled
+        } catch {
+            throw AssistantError.invalidResponse(error.localizedDescription)
+        }
+    }
+}
+
+@available(iOS 26.0, *)
+@Generable(description: "Vocabulary inventory of a situation for a Polish learner of American English")
+struct GeneratedTopicList {
+    @Guide(description: "Canonical Polish topic name in nominative")
+    var topic: String
+    @Guide(description: "English topic name")
+    var nameEn: String
+    @Guide(description: "One short Polish sentence describing the topic")
+    var summaryPl: String
+    @Guide(description: "Group id: basics, travel, food, home, health, work, education, technology, money, services, people, daily, leisure, nature, society or communication")
+    var group: String
+    @Guide(description: "4-6 categories named in Polish, essential vocabulary first")
+    var categories: [GeneratedTopicCategory]
+
+    var draft: TopicDraft {
+        TopicDraft(
+            topic: topic,
+            nameEn: nameEn,
+            summaryPl: summaryPl,
+            group: group,
+            categories: categories.map { $0.draft }
+        )
+    }
+}
+
+@available(iOS 26.0, *)
+@Generable(description: "A category of the topic")
+struct GeneratedTopicCategory {
+    @Guide(description: "Category name in Polish")
+    var name: String
+    @Guide(description: "One Polish sentence describing the place and moment")
+    var scene: String
+    @Guide(description: "5-10 items, most common first")
+    var items: [GeneratedTopicItem]
+
+    var draft: TopicDraftCategory {
+        TopicDraftCategory(name: name, scene: scene, items: items.map { $0.draft })
+    }
+}
+
+@available(iOS 26.0, *)
+@Generable(description: "An English word or phrase of the topic")
+struct GeneratedTopicItem {
+    @Guide(description: "English dictionary form in lowercase")
+    var term: String
+    @Guide(description: "Short Polish translation of this sense")
+    var pl: String
+    @Guide(description: "Polish part of speech: rzeczownik, czasownik, czasownik frazowy, przymiotnik, przysłówek, zwrot or idiom")
+    var pos: String
+    @Guide(description: "CEFR level: A1, A2, B1, B2, C1 or C2")
+    var level: String
+    @Guide(description: "very_common, common, less_common or rare")
+    var spokenFrequency: String
+
+    var draft: TopicDraftItem {
+        TopicDraftItem(term: term, translation: pl, pos: pos, level: level, frequency: spokenFrequency)
+    }
+}
+
+@available(iOS 26.0, *)
+@Generable(description: "Details of the supplied topic items, one per item in the same order")
+struct GeneratedTopicDetails {
+    var items: [GeneratedTopicDetail]
+}
+
+@available(iOS 26.0, *)
+@Generable(description: "Details of one topic item")
+struct GeneratedTopicDetail {
+    @Guide(description: "The supplied term, unchanged")
+    var term: String
+    @Guide(description: "General American IPA in slashes, or empty")
+    var ipa: String
+    @Guide(description: "Simple English definition, one sentence, at most 140 characters")
+    var definition: String
+    @Guide(description: "neutralny, potoczny, formalny, specjalistyczny or slangowy")
+    var register: String
+    @Guide(description: "When it is used, in Polish, at most 80 characters")
+    var contextPl: String
+    @Guide(description: "Irregular forms or plural, or empty")
+    var forms: String
+    @Guide(description: "Common collocations separated by semicolons, or empty")
+    var collocations: String
+    @Guide(description: "Exactly two example sentences set in the supplied scene")
+    var examples: [GeneratedExample]
+    @Guide(description: "English recall variants including the term")
+    var acceptedAnswers: [String]
+    @Guide(description: "1-8 natural Polish equivalents including the supplied translation")
+    var acceptedTranslations: [String]
+
+    var item: TopicHydrationItem {
+        TopicHydrationItem(
+            term: term,
+            ipa: ipa,
+            definition: definition,
+            register: register,
+            contextPl: contextPl,
+            forms: forms,
+            collocations: collocations,
+            examples: examples.map { ExamplePair(en: $0.en, pl: $0.pl, focusEn: $0.focusEn, focusPl: $0.focusPl) },
+            acceptedAnswers: acceptedAnswers,
+            acceptedTranslations: acceptedTranslations
+        )
+    }
 }
 
 @available(iOS 26.0, *)

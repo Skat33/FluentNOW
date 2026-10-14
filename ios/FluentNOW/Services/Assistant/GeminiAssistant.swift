@@ -164,7 +164,51 @@ struct GeminiAssistant: LanguageAssistant {
 
     // MARK: - Generowanie
 
-    private func generate(instructions: String, input: String, schema: [String: Any]) async throws -> Data {
+    // MARK: - Tematy (F1)
+
+    /// Limit pojedynczego żądania listy tematu (długa odpowiedź: 80–120 haseł).
+    static let topicListRequestTimeout: TimeInterval = 100
+    /// Limit pojedynczego żądania partii szczegółów (5 haseł).
+    static let topicDetailsRequestTimeout: TimeInterval = 70
+
+    func topicDraft(query: String) async throws -> TopicDraft {
+        let output = try await generate(
+            instructions: AssistantPrompts.topicList,
+            input: AssistantPrompts.topicListPayload(query: query),
+            schema: Self.topicListSchema,
+            maxOutputTokens: 16_384,
+            requestTimeout: Self.topicListRequestTimeout
+        )
+        do {
+            return try JSONDecoder().decode(TopicDraft.self, from: output)
+        } catch {
+            throw AssistantError.invalidResponse("niepoprawna lista słów tematu")
+        }
+    }
+
+    func topicDetails(topicName: String, items: [TopicHydrationRequestItem]) async throws -> [TopicHydrationItem] {
+        guard !items.isEmpty else { return [] }
+        let output = try await generate(
+            instructions: AssistantPrompts.topicDetails,
+            input: AssistantPrompts.topicDetailsPayload(topicName: topicName, items: items),
+            schema: Self.topicDetailsSchema,
+            maxOutputTokens: 8_192,
+            requestTimeout: Self.topicDetailsRequestTimeout
+        )
+        do {
+            return try JSONDecoder().decode(TopicHydrationResponse.self, from: output).items
+        } catch {
+            throw AssistantError.invalidResponse("niepoprawne szczegóły słów")
+        }
+    }
+
+    private func generate(
+        instructions: String,
+        input: String,
+        schema: [String: Any],
+        maxOutputTokens: Int = 8_192,
+        requestTimeout: TimeInterval = GeminiAssistant.timeout
+    ) async throws -> Data {
         guard !apiKey.isEmpty else { throw AssistantError.missingKey }
         var transientAttempts = 0
         var lastError: Error = AssistantError.http(status: 404, message: "Brak zgodnego modelu.")
@@ -172,7 +216,14 @@ struct GeminiAssistant: LanguageAssistant {
             var rateLimitRetried = false
             while true {
                 do {
-                    return try await generateOnce(model: model, instructions: instructions, input: input, schema: schema)
+                    return try await generateOnce(
+                        model: model,
+                        instructions: instructions,
+                        input: input,
+                        schema: schema,
+                        maxOutputTokens: maxOutputTokens,
+                        requestTimeout: requestTimeout
+                    )
                 } catch let error as AssistantError {
                     lastError = error
                     guard case .http(let status, _) = error else { throw error }
@@ -203,12 +254,19 @@ struct GeminiAssistant: LanguageAssistant {
         }
     }
 
-    private func generateOnce(model: String, instructions: String, input: String, schema: [String: Any]) async throws -> Data {
+    private func generateOnce(
+        model: String,
+        instructions: String,
+        input: String,
+        schema: [String: Any],
+        maxOutputTokens: Int,
+        requestTimeout: TimeInterval
+    ) async throws -> Data {
         guard let url = URL(string: "\(Self.baseURL)/models/\(model):generateContent") else {
             throw AssistantError.invalidResponse("adres modelu")
         }
         var generationConfig: [String: Any] = [
-            "maxOutputTokens": 8192,
+            "maxOutputTokens": maxOutputTokens,
             "responseMimeType": "application/json",
             "responseJsonSchema": schema
         ]
@@ -221,7 +279,7 @@ struct GeminiAssistant: LanguageAssistant {
             "contents": [["role": "user", "parts": [["text": input]]]],
             "generationConfig": generationConfig
         ]
-        var request = URLRequest(url: url, timeoutInterval: Self.timeout)
+        var request = URLRequest(url: url, timeoutInterval: requestTimeout)
         request.httpMethod = "POST"
         request.setValue(apiKey, forHTTPHeaderField: "x-goog-api-key")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -342,6 +400,61 @@ struct GeminiAssistant: LanguageAssistant {
             "alternatives": array(stringType),
             "meanings": array(meaning)
         ])
+    }
+
+    /// Lista tematu (jak `topicListSchema` strony + `scene`, `nameEn`, `summaryPl`, `group`).
+    static var topicListSchema: [String: Any] {
+        let levels: [String: Any] = ["type": "string", "enum": CEFR.levels]
+        let frequencies: [String: Any] = ["type": "string", "enum": ["very_common", "common", "less_common", "rare"]]
+        let partsOfSpeech: [String: Any] = ["type": "string", "enum": TopicGeneration.partsOfSpeech]
+        let groupIDs: [String] = TopicGeneration.groups.map { $0.id }
+        let groups: [String: Any] = ["type": "string", "enum": groupIDs]
+        let itemProperties: [String: [String: Any]] = [
+            "term": stringType,
+            "pl": stringType,
+            "pos": partsOfSpeech,
+            "level": levels,
+            "spokenFrequency": frequencies
+        ]
+        let item: [String: Any] = object(itemProperties)
+        let categoryProperties: [String: [String: Any]] = [
+            "name": stringType,
+            "scene": stringType,
+            "items": array(item)
+        ]
+        let category: [String: Any] = object(categoryProperties)
+        let topicProperties: [String: [String: Any]] = [
+            "topic": stringType,
+            "nameEn": stringType,
+            "summaryPl": stringType,
+            "group": groups,
+            "categories": array(category)
+        ]
+        return object(topicProperties)
+    }
+
+    /// Szczegóły partii haseł tematu.
+    static var topicDetailsSchema: [String: Any] {
+        let registers: [String: Any] = ["type": "string", "enum": TopicGeneration.registers]
+        let itemProperties: [String: [String: Any]] = [
+            "term": stringType,
+            "ipa": stringType,
+            "definition": stringType,
+            "register": registers,
+            "contextPl": stringType,
+            "natural": stringType,
+            "forms": stringType,
+            "collocations": stringType,
+            "synonyms": stringType,
+            "antonyms": stringType,
+            "notePl": stringType,
+            "examples": array(pairSchema),
+            "acceptedAnswers": array(stringType),
+            "acceptedTranslations": array(stringType)
+        ]
+        let item: [String: Any] = object(itemProperties)
+        let responseProperties: [String: [String: Any]] = ["items": array(item)]
+        return object(responseProperties)
     }
 
     static var gradeSchema: [String: Any] {

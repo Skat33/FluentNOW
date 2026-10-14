@@ -1,26 +1,22 @@
 import SwiftUI
 import FluentKit
 
-/// Dolny pasek ekranu tematu: „Dodaj N słów do nauki”, postęp dodawania, podsumowanie.
+/// Dolny pasek wyników tematu: „Dodaj N słów do nauki”, postęp (z przerwaniem), podsumowanie.
 struct TopicAddBar: View {
     let selectedCount: Int
     let isAdding: Bool
     let progress: Double
+    let progressLabel: String
     let outcome: TopicAddOutcome?
     let onAdd: () -> Void
+    let onCancel: () -> Void
     let onPractice: () -> Void
     let onDismissOutcome: () -> Void
 
     var body: some View {
         VStack(spacing: Spacing.s) {
             if isAdding {
-                VStack(alignment: .leading, spacing: Spacing.xs) {
-                    Text("Dodawanie słów… \(Int((ProgressMath.clamped(progress) * 100).rounded()))%")
-                        .font(FluentFont.subheadline)
-                        .foregroundStyle(Palette.ink)
-                    LinearProgressBar(progress: progress)
-                }
-                .accessibilityElement(children: .combine)
+                TopicAddProgressView(label: progressLabel, progress: progress, onCancel: onCancel)
             } else if let outcome, selectedCount == 0 {
                 TopicOutcomeView(outcome: outcome, onPractice: onPractice, onDismiss: onDismissOutcome)
             } else {
@@ -37,6 +33,33 @@ struct TopicAddBar: View {
         selectedCount == 0
             ? "Zaznacz słowa do nauki"
             : "Dodaj \(LibraryText.words(selectedCount)) do nauki"
+    }
+}
+
+private struct TopicAddProgressView: View {
+    let label: String
+    let progress: Double
+    let onCancel: () -> Void
+
+    private var percent: Int {
+        Int((ProgressMath.clamped(progress) * 100).rounded())
+    }
+
+    var body: some View {
+        HStack(alignment: .center, spacing: Spacing.s) {
+            VStack(alignment: .leading, spacing: Spacing.xs) {
+                Text("\(label.isEmpty ? "Dodawanie słów…" : label) \(percent)%")
+                    .font(FluentFont.subheadline)
+                    .foregroundStyle(Palette.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                LinearProgressBar(progress: progress)
+            }
+            .accessibilityElement(children: .combine)
+            Button("Przerwij", action: onCancel)
+                .font(FluentFont.button)
+                .frame(minHeight: HitTarget.minimum)
+                .accessibilityHint(Text("Gotowe partie zostają zapisane"))
+        }
     }
 }
 

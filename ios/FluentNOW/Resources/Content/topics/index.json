@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-13T16:55:29Z",
+  "generatedAt": "2026-10-14T17:35:57Z",
   "groups": [
     {
       "id": "basics",
@@ -4928,6 +4928,65 @@
       ]
     },
     {
+      "id": "shopping-mall",
+      "namePl": "Galeria handlowa",
+      "nameEn": "Shopping Mall",
+      "group": "money",
+      "symbol": "bag",
+      "summaryPl": "Orientacja w galerii, rodzaje sklepów, świąteczne promocje, food court, spędzanie czasu i usługi dla klientów.",
+      "aliases": [
+        "galeria handlowa",
+        "centrum handlowe",
+        "galeria",
+        "mall",
+        "shopping mall",
+        "sklepy",
+        "food court",
+        "zakupy"
+      ],
+      "entryCount": 62,
+      "levels": {
+        "A1": 1,
+        "A2": 12,
+        "B1": 20,
+        "B2": 17,
+        "C1": 12,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "shopping-mall.layout",
+          "namePl": "Orientacja w galerii",
+          "entryCount": 15
+        },
+        {
+          "id": "shopping-mall.stores",
+          "namePl": "Sklepy w galerii",
+          "entryCount": 13
+        },
+        {
+          "id": "shopping-mall.deals",
+          "namePl": "Świąteczne promocje",
+          "entryCount": 11
+        },
+        {
+          "id": "shopping-mall.food",
+          "namePl": "Food court i przerwy",
+          "entryCount": 7
+        },
+        {
+          "id": "shopping-mall.fun",
+          "namePl": "Spędzanie czasu w galerii",
+          "entryCount": 9
+        },
+        {
+          "id": "shopping-mall.services",
+          "namePl": "Usługi i obsługa klienta",
+          "entryCount": 7
+        }
+      ]
+    },
+    {
       "id": "post-office",
       "namePl": "Poczta i przesyłki",
       "nameEn": "Post Office and Mail",
@@ -7477,6 +7536,64 @@
           "id": "city-life.going-out",
           "namePl": "Weekend w mieście",
           "entryCount": 9
+        }
+      ]
+    },
+    {
+      "id": "volunteering-charity",
+      "namePl": "Wolontariat i pomoc",
+      "nameEn": "Volunteering and Charity",
+      "group": "society",
+      "symbol": "hands.sparkles",
+      "summaryPl": "Praca wolontariusza, organizacje charytatywne i darowizny, zbiórki i akcje pomocowe oraz wsparcie dla osób w potrzebie.",
+      "aliases": [
+        "wolontariat",
+        "wolontariusz",
+        "pomoc",
+        "dobroczynność",
+        "organizacja charytatywna",
+        "zbiórka",
+        "darowizna",
+        "bank żywności",
+        "volunteering",
+        "charity",
+        "donation",
+        "nonprofit"
+      ],
+      "entryCount": 61,
+      "levels": {
+        "A1": 0,
+        "A2": 2,
+        "B1": 23,
+        "B2": 27,
+        "C1": 9,
+        "C2": 0
+      },
+      "categories": [
+        {
+          "id": "volunteering-charity.volunteering",
+          "namePl": "Praca wolontariusza",
+          "entryCount": 13
+        },
+        {
+          "id": "volunteering-charity.charity",
+          "namePl": "Organizacje i darowizny",
+          "entryCount": 13
+        },
+        {
+          "id": "volunteering-charity.drives",
+          "namePl": "Zbiórki i akcje",
+          "entryCount": 11
+        },
+        {
+          "id": "volunteering-charity.helping",
+          "namePl": "Pomoc potrzebującym",
+          "entryCount": 12
+        },
+        {
+          "id": "volunteering-charity.organizing",
+          "namePl": "Organizacja i motywacja",
+          "entryCount": 12
         }
       ]
     },

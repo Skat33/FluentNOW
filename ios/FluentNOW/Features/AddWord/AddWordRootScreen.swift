@@ -1,18 +1,96 @@
 import SwiftUI
 import FluentKit
 
-/// Arkusz szybkiego dodawania (prezentowany przez `RootView` dla `AppSheet.quickAdd`).
+/// Co dodajemy w arkuszu „+”.
+enum AddSheetMode: String, CaseIterable, Identifiable, Hashable {
+    case word
+    case topic
+
+    var id: String { rawValue }
+
+    var title: String {
+        switch self {
+        case .word: return "Dodaj słowo"
+        case .topic: return "Szukaj tematu"
+        }
+    }
+}
+
+/// Wspólny punkt wejścia „+” (prezentowany przez `RootView` dla `AppSheet.quickAdd` i
+/// `AppSheet.topicSearch`): przełącznik „Dodaj słowo” / „Szukaj tematu” w pasku nawigacji.
 /// Kontrakt powłoki: `init(prefill: String?)`; arkusz ma WŁASNY `NavigationStack`.
-///
-/// Przepływ: wpisz słowo (EN lub PL) → natychmiastowe propozycje z wbudowanego słownika →
-/// wybierz jedno lub kilka znaczeń (nic nie jest zaznaczone automatycznie) → „Dodaj”.
-/// Brak w bazie → asystent AI (jeśli skonfigurowany, oznaczony jako propozycja) albo formularz ręczny.
 struct AddWordRootScreen: View {
     let prefill: String?
+    let topicID: String?
 
-    init(prefill: String? = nil) {
+    @State private var mode: AddSheetMode
+    @State private var detent: PresentationDetent
+
+    init(prefill: String? = nil, mode: AddSheetMode = .word, topicID: String? = nil) {
         self.prefill = prefill
+        self.topicID = topicID
+        _mode = State(initialValue: mode)
+        _detent = State(initialValue: mode == .topic ? .large : .medium)
     }
+
+    var body: some View {
+        NavigationStack {
+            AddSheetModeContent(mode: mode, prefill: prefill, topicID: topicID, detent: $detent)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        AddSheetModePicker(mode: $mode)
+                    }
+                }
+        }
+        .presentationDetents([.medium, .large], selection: $detent)
+        .presentationDragIndicator(.visible)
+        .onChange(of: mode) { (_: AddSheetMode, newMode: AddSheetMode) in
+            if newMode == .topic { detent = .large }
+        }
+    }
+}
+
+/// Przełącznik trybu arkusza.
+private struct AddSheetModePicker: View {
+    @Binding var mode: AddSheetMode
+
+    var body: some View {
+        Picker("Co dodajesz", selection: $mode) {
+            ForEach(AddSheetMode.allCases) { item in
+                Text(item.title).tag(item)
+            }
+        }
+        .pickerStyle(.segmented)
+        .fixedSize()
+        .fluentSensoryFeedback(FluentHaptic.selection, trigger: mode)
+    }
+}
+
+/// Treść wybranego trybu (osobny widok — krótkie `body`).
+private struct AddSheetModeContent: View {
+    let mode: AddSheetMode
+    let prefill: String?
+    let topicID: String?
+    @Binding var detent: PresentationDetent
+
+    var body: some View {
+        switch mode {
+        case .word:
+            AddWordQuickForm(prefill: prefill, detent: $detent)
+        case .topic:
+            TopicSearchView(initialQuery: prefill, initialTopicID: topicID)
+        }
+    }
+}
+
+/// Szybkie dodawanie pojedynczego słowa.
+///
+/// Przepływ: wpisz słowo (EN lub PL) → natychmiastowe propozycje z wbudowanego słownika (i tematów
+/// wygenerowanych wcześniej przez AI) → wybierz jedno lub kilka znaczeń (nic nie jest zaznaczone
+/// automatycznie) → „Dodaj”. Brak w bazie → asystent AI (jeśli skonfigurowany) albo formularz ręczny.
+struct AddWordQuickForm: View {
+    let prefill: String?
+    @Binding var detent: PresentationDetent
 
     @Environment(AppEnvironment.self) private var env
     @Environment(LearningStore.self) private var store
@@ -32,7 +110,6 @@ struct AddWordRootScreen: View {
     @State private var outcome: AddWordOutcome?
     @State private var assistantError: String?
     @State private var isAskingAssistant = false
-    @State private var detent: PresentationDetent = .medium
     @State private var confirmDiscard = false
     @State private var addedTrigger = 0
     @FocusState private var isFieldFocused: Bool
@@ -49,25 +126,7 @@ struct AddWordRootScreen: View {
     }
 
     var body: some View {
-        NavigationStack {
-            Form {
-                AddWordSearchField(query: $query, isFocused: $isFieldFocused, onSubmit: submitSearch)
-                if let outcome {
-                    Section {
-                        Label(outcome.message, systemImage: "checkmark.circle.fill")
-                            .foregroundStyle(outcome.added > 0 ? Palette.success : Palette.inkSecondary)
-                    }
-                }
-                content
-                if lookup != nil || manual != nil {
-                    AddWordCollectionSection(
-                        selection: $collectionOverride,
-                        collections: WordListBuilder.allCollections(store.state)
-                    )
-                }
-            }
-            .scrollContentBackground(.hidden)
-            .background(Palette.background)
+        form
             .navigationTitle("Dodaj słowo")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { toolbar }
@@ -75,22 +134,40 @@ struct AddWordRootScreen: View {
                 Button("Porzuć", role: .destructive) { dismiss() }
                 Button("Wróć", role: .cancel) {}
             }
+            .interactiveDismissDisabled(hasUnsavedInput)
+            .fluentSensoryFeedback(FluentHaptic.answerCorrect, trigger: addedTrigger)
+            .task(id: query) { await search() }
+            .onChange(of: query) { (_: String, _: String) in
+                lookup = nil
+                manual = nil
+                selected = []
+                assistantError = nil
+            }
+            .onAppear {
+                if let prefill, query.isEmpty { query = prefill }
+                isFieldFocused = true
+            }
+    }
+
+    private var form: some View {
+        Form {
+            AddWordSearchField(query: $query, isFocused: $isFieldFocused, onSubmit: submitSearch)
+            if let outcome {
+                Section {
+                    Label(outcome.message, systemImage: "checkmark.circle.fill")
+                        .foregroundStyle(outcome.added > 0 ? Palette.success : Palette.inkSecondary)
+                }
+            }
+            content
+            if lookup != nil || manual != nil {
+                AddWordCollectionSection(
+                    selection: $collectionOverride,
+                    collections: WordListBuilder.allCollections(store.state)
+                )
+            }
         }
-        .presentationDetents([.medium, .large], selection: $detent)
-        .presentationDragIndicator(.visible)
-        .interactiveDismissDisabled(hasUnsavedInput)
-        .fluentSensoryFeedback(FluentHaptic.answerCorrect, trigger: addedTrigger)
-        .task(id: query) { await search() }
-        .onChange(of: query) { _, _ in
-            lookup = nil
-            manual = nil
-            selected = []
-            assistantError = nil
-        }
-        .onAppear {
-            if let prefill, query.isEmpty { query = prefill }
-            isFieldFocused = true
-        }
+        .scrollContentBackground(.hidden)
+        .background(Palette.background)
     }
 
     @ViewBuilder
@@ -245,6 +322,14 @@ struct AddWordRootScreen: View {
     Color.clear
         .sheet(isPresented: .constant(true)) {
             AddWordRootScreen(prefill: "borrow")
+        }
+        .fluentPreviewEnvironment()
+}
+
+#Preview("Szukaj tematu") {
+    Color.clear
+        .sheet(isPresented: .constant(true)) {
+            AddWordRootScreen(prefill: "zamawianie w restauracji", mode: .topic)
         }
         .fluentPreviewEnvironment()
 }

@@ -139,6 +139,8 @@ private struct AppSheetContent: View {
         switch sheet {
         case .quickAdd(let prefill):
             AddWordRootScreen(prefill: prefill)
+        case .topicSearch(let query, let topicID):
+            AddWordRootScreen(prefill: query, mode: .topic, topicID: topicID)
         }
     }
 }

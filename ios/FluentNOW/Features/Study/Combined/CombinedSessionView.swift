@@ -35,6 +35,8 @@ private struct CombinedSessionContent: View {
 
     @Environment(\.dismiss) private var dismiss
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    /// Licznik decyzji na fiszkach — krótka haptyka przy przejściu dalej.
+    @State private var flashcardCommits = 0
 
     var body: some View {
         ScrollViewReader { proxy in
@@ -50,7 +52,8 @@ private struct CombinedSessionContent: View {
             }
             .scrollDismissesKeyboard(.interactively)
             .onChange(of: model.canAdvance) { _, ready in
-                guard ready else { return }
+                // Fiszka przechodzi dalej sama — nie przewijamy do (nieistniejącego) wyniku.
+                guard ready, model.vocabulary?.type != ExerciseType.flashcard else { return }
                 Task { @MainActor in
                     try? await Task.sleep(nanoseconds: 180_000_000)
                     withAnimation(Motion.resolved(Motion.standard, reduceMotion: reduceMotion)) {
@@ -65,6 +68,7 @@ private struct CombinedSessionContent: View {
         .onChange(of: model.store.revision) { _, _ in
             model.sync()
         }
+        .fluentSensoryFeedback(FluentHaptic.swipeCommit, trigger: flashcardCommits)
     }
 
     @ViewBuilder
@@ -108,7 +112,8 @@ private struct CombinedSessionContent: View {
     @ViewBuilder
     private func currentTaskView(for session: CombinedSession) -> some View {
         if let vocabulary = model.vocabulary {
-            VocabExerciseView(model: vocabulary)
+            // Fiszka: „Pamiętam” / „Jeszcze nie” zapisuje i od razu przechodzi dalej (bez panelu wyniku).
+            VocabExerciseView(model: vocabulary, onFlashcardDecision: { flashcardDecided() })
                 .id(vocabulary.key)
                 .transition(Motion.contentTransition(reduceMotion: reduceMotion))
         } else if let question = model.question {
@@ -126,6 +131,11 @@ private struct CombinedSessionContent: View {
         withAnimation(Motion.resolved(Motion.emphasized, reduceMotion: reduceMotion, fallback: Motion.reducedFade)) {
             model.advance()
         }
+    }
+
+    private func flashcardDecided() {
+        flashcardCommits += 1
+        advance()
     }
 
     private func finish() {

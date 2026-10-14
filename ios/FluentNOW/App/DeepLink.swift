@@ -45,7 +45,7 @@ enum LibraryDestination: Hashable, Sendable {
 /// | `fluentnow://today` | karta Dzisiaj |
 /// | `fluentnow://words` · `fluentnow://words/<id>` | Słownik / szczegóły słowa |
 /// | `fluentnow://collections` · `fluentnow://collections/<nazwa>` | Kolekcje / kolekcja |
-/// | `fluentnow://topics` · `fluentnow://topics/<id>` | Tematy / temat |
+/// | `fluentnow://topics` · `fluentnow://topics/<id>` · `fluentnow://topics?q=na%20lotnisku` | „Szukaj tematu” (arkusz „+”) |
 /// | `fluentnow://study` | karta Nauka |
 /// | `fluentnow://study/start?mode=mixed&mode=reading&minutes=10&collection=Lotnisko` | start sesji |
 /// | `fluentnow://study/resume` | wznowienie sesji |
@@ -56,6 +56,8 @@ enum DeepLink: Hashable, Sendable {
     case library(LibrarySection, LibraryDestination?)
     case study(StudyLaunchRequest)
     case quickAdd(prefill: String?)
+    /// Wyszukiwanie tematu (tematy nie są publicznym katalogiem — F1).
+    case topicSearch(query: String?, topicID: String?)
 
     static let scheme = "fluentnow"
     /// Ochrona przed absurdalnie długimi parametrami z zewnątrz.
@@ -83,7 +85,8 @@ enum DeepLink: Hashable, Sendable {
         case "collections":
             self = .library(.collections, first.map { LibraryDestination.collection(name: $0) })
         case "topics":
-            self = .library(.topics, first.map { LibraryDestination.topic(id: $0) })
+            let query = items.first(where: { $0.name == "q" || $0.name == "text" })?.value.flatMap(DeepLink.sanitized)
+            self = .topicSearch(query: query, topicID: first)
         case "progress", "stats":
             self = .tab(.progress)
         case "settings":

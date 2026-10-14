@@ -195,7 +195,7 @@ Każdy ekran ma wszystkie trzy:
 Pięć kart (`AppTab`): **Dzisiaj · Słownik · Nauka · Postępy · Ustawienia**.
 
 Dlaczego tak (zamiast 6 pozycji strony: Dzisiaj, Mój słownik, Kolekcje, Ćwiczenia, Postępy + Ustawienia):
-- iPhone mieści wygodnie 5 kart; Kolekcje i Tematy to **sposoby przeglądania tego samego zasobu słów**, więc trafiają do karty **Słownik** jako segmenty `Słowa / Kolekcje / Tematy` (`AppRouter.librarySection`). Użytkownik ma jedno miejsce „moje słowa i skąd je biorę”.
+- iPhone mieści wygodnie 5 kart; Kolekcje i Tematy to **sposoby przeglądania tego samego zasobu słów**, więc trafiają do karty **Słownik** jako segmenty `Słowa / Kolekcje` (`AppRouter.librarySection`). **F1:** tematy nie są katalogiem — szuka się ich opisem sytuacji w arkuszu „+” → „Szukaj tematu”. Użytkownik ma jedno miejsce „moje słowa i skąd je biorę”.
 - **Nauka** (strona: „Ćwiczenia”) — wybór trybów i czasu, wznowienie sesji; sama sesja jako pełny ekran.
 - **Szybkie dodawanie** to akcja, nie miejsce: `+` w pasku Dzisiaj/Słownika i deep link `fluentnow://add` → arkusz globalny (`AppSheet.quickAdd`).
 - **Ustawienia** jako karta (na stronie stopka paska bocznego) — na iPhonie nie ma paska bocznego, a ustawienia (cel, przypomnienia, głos, iCloud, AI) są często odwiedzane na początku.
@@ -225,7 +225,7 @@ Korzenie kart (kontrakt): `TodayRootScreen()`, `WordsRootScreen()`, `StudyRootSc
 | Edycja wpisu / edytor wielu znaczeń | arkusz `.large` z formularzem | `interactiveDismissDisabled` przy zmianach |
 | Szybkie dodawanie, propozycje znaczeń | arkusz **Dodaj słowo** (`+`, ⌘N, deep link) | `.medium` → `.large` po wynikach |
 | Kolekcje | **Słownik → Kolekcje** → kolekcja (push) → „Ćwicz tę kolekcję” (`startStudy(… collection:)`) | |
-| Tematy / przygotowanie słownictwa | **Słownik → Tematy** → temat (push) → „Dodaj N słów” | dodawanie w tle z postępem |
+| Tematy / przygotowanie słownictwa | **„+” → Szukaj tematu** (opis sytuacji) → wyniki → „Dodaj N słów” | baza → pamięć tematów AI → generowanie AI; dodawanie w tle z postępem |
 | Ćwiczenia (wybór trybów, 5/10/15 min) | karta **Nauka** | kafelek wznowienia |
 | Sesja, typy zadań, podpowiedź, pewność, feedback, podsumowanie | `.fullScreenCover` sesji | `HighlightedText`, `ConfidencePicker`, `FeedbackPanel`, `SpeakButton` |
 | Czytanie, gramatyka, idiomy, produkcja | z karty Nauka (tryby) lub push z Postępów | czytanka: `FluentFont.reading`, kolumna `readableWidth` |

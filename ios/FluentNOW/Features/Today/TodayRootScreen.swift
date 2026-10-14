@@ -148,14 +148,16 @@ private struct TodayContent: View {
             EmptyStateView(
                 systemImage: "text.book.closed",
                 title: "Pierwsze słowo zaczyna historię",
-                message: "Dodaj cały temat w kilka sekund albo pojedyncze słowo przyciskiem +.",
-                actionTitle: "Przeglądaj tematy"
+                message: "Opisz sytuację, np. „w restauracji”, i dodaj jej słowa w kilka sekund — albo pojedyncze słowo przyciskiem +.",
+                actionTitle: "Szukaj tematu"
             ) {
-                router.openLibrary(.topics)
+                router.presentTopicSearch()
             }
         } else {
             TodayStatsGrid(overview: snapshot.overview)
             TodayWeekCard(week: snapshot.week, goal: snapshot.goal.goal)
+            TodayAnalysisCard(analysis: snapshot.analysis)
+            TodayRecommendedWordsSection()
             TodayRecommendationsSection(recommendations: snapshot.recommendations)
             TodayCollectionsSection(collections: snapshot.collections)
             TodayRecentSection(rows: snapshot.recent)

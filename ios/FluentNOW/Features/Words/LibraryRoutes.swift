@@ -2,7 +2,8 @@ import SwiftUI
 
 /// Trasy obszaru Słownika (ui-library). Rejestrowane raz na stos karty przez
 /// `.libraryNavigationDestinations()` w korzeniach: Dzisiaj, Słownik, Postępy.
-/// Ekrany osadzone (Kolekcje, Tematy) NIE rejestrują ich ponownie.
+/// Ekrany osadzone (Kolekcje) NIE rejestrują ich ponownie.
+/// Tematy nie mają już trasy (F1) — otwiera się je w arkuszu „+” (`router.presentTopicSearch`).
 enum WordRoute: Hashable {
     case detail(id: String)
 }
@@ -11,12 +12,8 @@ enum CollectionRoute: Hashable {
     case detail(name: String)
 }
 
-enum TopicRoute: Hashable {
-    case detail(id: String)
-}
-
 extension View {
-    /// Rejestruje cele nawigacji Słownika (słowo, kolekcja, temat) w bieżącym `NavigationStack`.
+    /// Rejestruje cele nawigacji Słownika (słowo, kolekcja) w bieżącym `NavigationStack`.
     func libraryNavigationDestinations() -> some View {
         self
             .navigationDestination(for: WordRoute.self) { route in
@@ -29,12 +26,6 @@ extension View {
                 switch route {
                 case .detail(let name):
                     CollectionDetailScreen(name: name)
-                }
-            }
-            .navigationDestination(for: TopicRoute.self) { route in
-                switch route {
-                case .detail(let id):
-                    TopicDetailScreen(topicID: id)
                 }
             }
     }

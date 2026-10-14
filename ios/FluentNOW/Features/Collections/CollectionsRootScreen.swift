@@ -19,9 +19,9 @@ struct CollectionsRootScreen: View {
                             systemImage: "square.stack.3d.up",
                             title: "Nie masz jeszcze kolekcji",
                             message: "Dodaj temat słówek — kolekcja powstanie automatycznie. Możesz też założyć własną.",
-                            actionTitle: "Przeglądaj tematy"
+                            actionTitle: "Szukaj tematu"
                         ) {
-                            router.openLibrary(.topics)
+                            router.presentTopicSearch()
                         }
                     } else {
                         SectionHeader("Twoje kolekcje", subtitle: "Porządkuj słowa tak, jak myślisz o świecie.")

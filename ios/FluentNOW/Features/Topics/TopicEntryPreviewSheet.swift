@@ -7,6 +7,8 @@ struct TopicEntryPreviewSheet: View {
     let isAdded: Bool
     let isSelected: Bool
     let onToggle: () -> Void
+    /// Szkic AI — szczegóły (wymowa, przykłady) powstaną przy dodawaniu.
+    var isDraft: Bool = false
 
     @Environment(SpeechService.self) private var speech
     @Environment(\.dismiss) private var dismiss
@@ -16,6 +18,12 @@ struct TopicEntryPreviewSheet: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: Spacing.l) {
                     TopicEntryPreviewHeader(entry: entry)
+                    if isDraft {
+                        Label("Propozycja AI. Wymowę, definicję i przykłady asystent przygotuje, gdy dodasz to słowo do nauki.", systemImage: "sparkles")
+                            .font(FluentFont.footnote)
+                            .foregroundStyle(Palette.inkSecondary)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                     if !entry.examples.isEmpty {
                         Card {
                             SectionHeader("Przykłady")

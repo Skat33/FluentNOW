@@ -176,3 +176,34 @@ struct ExerciseReport: Codable, Identifiable, Hashable {
 - Komponenty wspólne: tylko z `DesignSystem/` (design-shell). Brakujący komponent wspólny → zrób lokalny `private` i opisz w raporcie.
 - Raport końcowy: jeśli zapis pliku `.md` jest zablokowany, **nie obchodź blokady** — zwróć pełną treść raportu w odpowiedzi końcowej, koordynator go zapisze.
 - Nie uruchamiaj poleceń git — commituje koordynator.
+
+## 8. Wyszukiwanie tematu (F1, topic-search) — dodatki addytywne
+
+Tematy nie są publicznym katalogiem: brak segmentu „Tematy” w Słowniku i trasy `TopicRoute`. Wejście: arkusz „+” z przełącznikiem „Dodaj słowo” / „Szukaj tematu”.
+
+```swift
+// AppRouter
+func presentTopicSearch(query: String? = nil, topicID: String? = nil)   // AppSheet.topicSearch(query:topicID:)
+// openLibrary(.topics) i cel .topic(id:) → presentTopicSearch (zgodność starych wywołań)
+// DeepLink: fluentnow://topics[/<id>][?q=…] → .topicSearch(query:topicID:)
+
+// ContentLibrary (actor)
+init(bundle: Bundle = .main, localTopics: LocalTopicStore? = nil); init(rootURL: URL?, localTopics: LocalTopicStore? = nil)
+func topicCatalog() async -> TopicSearchCatalog
+func rankTopics(_ query: String, limit: Int = 8) async -> [TopicMatch]
+func topicSuggestions(for matches: [TopicMatch]) async -> [TopicSuggestion]
+func topicResultSections(primary: TopicMatch, matches: [TopicMatch]) async throws -> [TopicResultSection]
+func knownTopicIDs() async -> Set<String>
+func generatedTopic(id: String) async -> GeneratedTopicRecord?
+func saveGeneratedTopic(_ record: GeneratedTopicRecord) async throws
+func rememberQuery(_ query: String, topicID: String, categoryID: String?, now: Timestamp) async
+func forgetQuery(_ query: String) async
+func removeGeneratedTopics() async
+// topic(id:), entry(reference:), search, lookup obejmują też tematy AI (id z prefiksem „ai-”).
+
+// AssistantService
+var canGenerateTopics: Bool
+func generateTopicDraft(query: String) async throws -> TopicDraft
+func generateTopicDetails(topicName: String, items: [TopicHydrationRequestItem]) async throws -> [TopicHydrationItem]
+```
+FluentKit: `TopicSearch`, `TopicSearchCatalog`, `TopicSearchDocument`, `TopicMatch`, `TopicResultSection`, `TopicGeneration`, `TopicEntryValidator`, `TopicAliasBook`, `GeneratedTopicRecord` — szczegóły w `docs/reports/topic-search.md`.

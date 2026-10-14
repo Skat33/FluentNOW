@@ -1,22 +1,33 @@
 import SwiftUI
 
-/// „Mała podpowiedź” pod polem odpowiedzi.
+/// „Mała podpowiedź” pod polem odpowiedzi. Kolejne poziomy podpowiedzi (`HintSet` z FluentKit)
+/// pojawiają się jeden pod drugim.
 struct StudyHintBox: View {
-    let text: String
+    let lines: [String]
+
+    init(lines: [String]) {
+        self.lines = lines
+    }
+
+    init(text: String) {
+        self.lines = [text]
+    }
 
     var body: some View {
         HStack(alignment: .top, spacing: Spacing.s) {
             Image(systemName: "lightbulb.fill")
                 .foregroundStyle(Palette.warning)
                 .accessibilityHidden(true)
-            VStack(alignment: .leading, spacing: Spacing.xxs) {
+            VStack(alignment: .leading, spacing: Spacing.xs) {
                 Text("Mała podpowiedź")
                     .font(FluentFont.headline)
                     .foregroundStyle(Palette.ink)
-                Text(text)
-                    .font(FluentFont.callout)
-                    .foregroundStyle(Palette.inkSecondary)
-                    .fixedSize(horizontal: false, vertical: true)
+                ForEach(lines.indices, id: \.self) { (index: Int) in
+                    Text(lines[index])
+                        .font(FluentFont.callout)
+                        .foregroundStyle(Palette.inkSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
             }
             Spacer(minLength: 0)
         }
@@ -26,13 +37,15 @@ struct StudyHintBox: View {
     }
 }
 
-/// Przycisk tekstowy „Podpowiedź” (rozwija `StudyHintBox`; użycie oznacza odpowiedź z podpowiedzią).
+/// Przycisk tekstowy „Podpowiedź” / „Więcej podpowiedzi” (rozwija `StudyHintBox`;
+/// użycie oznacza odpowiedź z podpowiedzią).
 struct StudyHintButton: View {
+    var title: String = "Podpowiedź"
     let action: () -> Void
 
     var body: some View {
         Button(action: action) {
-            Label("Podpowiedź", systemImage: "lightbulb")
+            Label(title, systemImage: "lightbulb")
                 .font(FluentFont.subheadline.weight(.semibold))
                 .foregroundStyle(Palette.accent)
                 .frame(minHeight: HitTarget.minimum)
@@ -103,8 +116,9 @@ struct StudyExplanationDisclosure<Content: View>: View {
 #Preview("Pomoce w ćwiczeniu") {
     ScrollView {
         VStack(alignment: .leading, spacing: Spacing.m) {
-            StudyHintBox(text: "Zaczyna się od „bo…” i ma 6 znaków.")
+            StudyHintBox(lines: ["Część mowy: czasownik.\nLiczba słów: 1.\nAngielska definicja: To take something that you will give back.", "Pierwsze litery: b _ _ _ _ _"])
             StudyHintButton {}
+            StudyHintButton(title: "Więcej podpowiedzi") {}
             StudySentenceAudioButton(text: "Can I [[gap]] your pen?", solved: false)
             StudyExplanationDisclosure(correct: false) {
                 Text("„Borrow” = pożyczyć od kogoś.")

@@ -96,6 +96,28 @@ struct ProductionPracticeView: View {
     }
 }
 
+/// Stopniowane podpowiedzi do zadania produkcji (FluentKit `HintBuilder` — nigdy nie zawierają odpowiedzi):
+/// pierwsza prośba — konstrukcja i polskie zdanie, kolejna — pierwsze litery.
+private struct ProductionHintRow: View {
+    let item: ProductionItem
+
+    @State private var hintLevel = 0
+
+    var body: some View {
+        let hints: HintSet = HintBuilder.practiceHints(question: PracticeBuilder.practiceQuestion(from: item), production: item)
+        VStack(alignment: .leading, spacing: Spacing.s) {
+            if hintLevel > 0 {
+                StudyHintBox(lines: hints.visible(upTo: hintLevel))
+            }
+            if hintLevel < hints.count {
+                StudyHintButton(title: hintLevel > 0 ? "Więcej podpowiedzi" : "Podpowiedź") {
+                    hintLevel += 1
+                }
+            }
+        }
+    }
+}
+
 /// Jedno zadanie produkcji.
 private struct ProductionItemView: View {
     let production: ProductionSession
@@ -142,6 +164,8 @@ private struct ProductionItemView: View {
                         onSubmit: check
                     )
                     if result == nil {
+                        ProductionHintRow(item: item)
+                            .id(item.bankId ?? item.context)
                         PrimaryButton("Sprawdź", systemImage: "arrow.right", action: check)
                             .disabled(answer.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                     }

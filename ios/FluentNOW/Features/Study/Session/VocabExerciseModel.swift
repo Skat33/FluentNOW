@@ -25,7 +25,8 @@ final class VocabExerciseModel {
 
     var answer: String = ""
     private(set) var phase: VocabExercisePhase = .answering
-    private(set) var hintShown = false
+    /// Ile poziomów podpowiedzi jest odsłoniętych (0 — żaden; 1 — znaczenie; 2 — pierwsze litery).
+    private(set) var hintLevel = 0
     private(set) var variantsShown = false
     private(set) var revealed = false
     private(set) var grade: Grade?
@@ -51,6 +52,13 @@ final class VocabExerciseModel {
 
     var type: ExerciseType { content.type }
     var isFinished: Bool { phase == .finished }
+    var hintShown: Bool { hintLevel > 0 }
+    /// Teksty odsłoniętych poziomów podpowiedzi (nigdy nie zawierają odpowiedzi — FluentKit `HintBuilder`).
+    var visibleHints: [String] { content.hints.visible(upTo: hintLevel) }
+    /// Jest jeszcze kolejny poziom podpowiedzi do odsłonięcia.
+    var canShowMoreHints: Bool {
+        (phase == .answering || phase == .retry) && hintLevel < content.hints.count
+    }
     /// Podpowiedź lub warianty = odpowiedź z pomocą (strona: `hint`).
     var usedHelp: Bool { hintShown || variantsShown }
     var canCheck: Bool {
@@ -59,9 +67,10 @@ final class VocabExerciseModel {
 
     // MARK: Akcje
 
+    /// Odsłania kolejny poziom podpowiedzi (pierwsza prośba — znaczenie, kolejna — pierwsze litery).
     func showHint() {
-        guard phase != .finished else { return }
-        hintShown = true
+        guard canShowMoreHints else { return }
+        hintLevel += 1
     }
 
     func showVariants() {
@@ -189,11 +198,11 @@ final class VocabExerciseModel {
         }
     }
 
-    /// Błędna odpowiedź: pierwsza — druga próba z podpowiedzią; kolejna — wynik.
+    /// Błędna odpowiedź: pierwsza — druga próba z kolejnym poziomem podpowiedzi; kolejna — wynik.
     private func failed(_ grade: Grade) {
         if phase == .answering || (phase == .checking && retryGrade == nil) {
             retryGrade = grade
-            hintShown = true
+            hintLevel = min(content.hints.count, hintLevel + 1)
             phase = .retry
             return
         }

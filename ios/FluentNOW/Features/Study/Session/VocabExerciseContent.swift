@@ -18,6 +18,10 @@ struct VocabExerciseContent {
     let gradingWord: Word
     /// Akceptowane odpowiedzi (do „Pokaż warianty” po sprawdzeniu).
     let accepted: [String]
+    /// Stopniowane podpowiedzi (FluentKit `HintBuilder`): 1 — znaczenie, 2 — pierwsze litery.
+    let hints: HintSet
+    /// Wszystko, czego tekst pomocniczy przed odpowiedzią nie może pokazać (hasło, formy, warianty).
+    let maskTerms: [String]
 
     init?(task: VocabTask, mode: StudyMode, state: LearnerState, variants: AnswerVariants) {
         guard let word = state.word(id: task.wordId), let meaning = word.meaning(id: task.meaningId) else {
@@ -41,6 +45,8 @@ struct VocabExerciseContent {
         self.focus = Cloze.span(in: example, focus: baseFocus)?.match ?? baseFocus
         self.gradingWord = gradingWord
         self.accepted = VocabularyGrader.vocabularyAnswers(word: gradingWord, meaning: meaning, type: task.type, variants: variants)
+        self.hints = HintBuilder.vocabularyHints(word: word, meaning: meaning, type: task.type, exampleIndex: index, variants: variants)
+        self.maskTerms = HintBuilder.vocabularyMaskTerms(word: word, meaning: meaning, type: task.type, exampleIndex: index, variants: variants)
     }
 
     var type: ExerciseType { task.type }
@@ -51,12 +57,22 @@ struct VocabExerciseContent {
     }
 
     /// Zdanie z luką; w trybie par z polską podpowiedzią w nawiasie (jak strona).
+    /// Tłumaczenie bywa takie samo jak hasło (np. „pizza”) — wtedy jest zamaskowane albo pominięte.
     var clozeSentence: String {
+        let translation = HintBuilder.mask(meaning.translation, answers: maskTerms)
+        let hasTranslation = translation.contains(where: { (character: Character) -> Bool in character.isLetter })
+        let suffix = hasTranslation ? " (\(translation))" : ""
         guard let gapped = Cloze.text(example, focus: focus) else {
-            return Cloze.gap + " (\(meaning.translation))"
+            return Cloze.gap + suffix
         }
         guard mode == .pairs else { return gapped }
-        return gapped.replacingOccurrences(of: Cloze.gap, with: Cloze.gap + " (\(meaning.translation))")
+        return gapped.replacingOccurrences(of: Cloze.gap, with: Cloze.gap + suffix)
+    }
+
+    /// Kontekst pod pytaniem „Jak powiesz to po angielsku?” — bez hasła i jego form.
+    var promptContext: String {
+        let context = meaning.context.isEmpty ? word.collection : meaning.context
+        return HintBuilder.mask(context, answers: maskTerms)
     }
 
     /// Odpowiedź wzorcowa pokazywana po sprawdzeniu.
@@ -66,21 +82,6 @@ struct VocabExerciseContent {
         case .cloze: return gradingWord.en
         default: return word.en
         }
-    }
-
-    /// Tekst podpowiedzi (strona: definicja dla znaczenia, początek słowa dla pozostałych).
-    var hintText: String {
-        if type == .meaning {
-            if !meaning.definition.isEmpty { return meaning.definition }
-            return meaning.context.isEmpty ? "Pomyśl o kontekście zdania." : "Kontekst: \(meaning.context)"
-        }
-        let target = type == .cloze ? gradingWord.en : word.en
-        let start = String(target.prefix(2))
-        var text = "Zaczyna się od „\(start)…” i ma \(StudyFormat.characters(target.count))."
-        if !word.note.isEmpty {
-            text += " \(word.note)"
-        }
-        return text
     }
 
     /// Tekst do odsłuchu zdania: przed sprawdzeniem luka tam, gdzie zdanie zdradza odpowiedź.

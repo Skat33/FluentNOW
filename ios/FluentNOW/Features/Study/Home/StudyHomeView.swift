@@ -81,7 +81,7 @@ struct StudyHomeView: View {
         }
         if store.activeWords.isEmpty {
             StudyNoWordsCard(
-                onBrowseTopics: { router.openLibrary(.topics) },
+                onBrowseTopics: { router.presentTopicSearch() },
                 onQuickAdd: { router.presentQuickAdd() }
             )
         }
@@ -303,7 +303,7 @@ private struct StudyNoWordsCard: View {
 
     @ViewBuilder
     private var buttons: some View {
-        SecondaryButton("Przeglądaj tematy", systemImage: "square.grid.2x2", action: onBrowseTopics)
+        SecondaryButton("Szukaj tematu", systemImage: "magnifyingglass", action: onBrowseTopics)
         SecondaryButton("Dodaj słowo", systemImage: "plus", action: onQuickAdd)
     }
 }

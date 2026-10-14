@@ -131,7 +131,8 @@ private struct PracticeItemView: View {
     @Environment(LearningStore.self) private var store
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var written = ""
-    @State private var hintShown = false
+    /// Odsłonięte poziomy podpowiedzi (0 — żaden; FluentKit `HintBuilder.practiceHints`).
+    @State private var hintLevel = 0
     @State private var startedAt = Date()
     @State private var stoppedSeconds: Double?
     @State private var marked = false
@@ -205,6 +206,7 @@ private struct PracticeItemView: View {
 
     @ViewBuilder
     private func inputArea(_ item: PracticeQuestion) -> some View {
+        let hints: HintSet = HintBuilder.practiceHints(question: item)
         StudyAnswerField(
             text: answered ? Binding.constant(practice.writtenAnswers?.studyItem(at: practice.index) ?? written) : $written,
             placeholder: "Wpisz odpowiedź…",
@@ -213,13 +215,15 @@ private struct PracticeItemView: View {
             focus: $focused,
             onSubmit: checkWritten
         )
-        if hintShown && !answered {
-            StudyHintBox(text: (item.inputHint ?? "").isEmpty ? "Dobierz formę do kontekstu zdania." : (item.inputHint ?? ""))
+        if hintLevel > 0 && !answered {
+            StudyHintBox(lines: hints.visible(upTo: hintLevel))
         }
         if !answered {
             HStack(spacing: Spacing.s) {
-                if !hintShown {
-                    StudyHintButton { hintShown = true }
+                if hintLevel < hints.count {
+                    StudyHintButton(title: hintLevel > 0 ? "Więcej podpowiedzi" : "Podpowiedź") {
+                        hintLevel += 1
+                    }
                 }
                 Spacer(minLength: Spacing.xs)
                 PrimaryButton("Sprawdź", systemImage: "arrow.right", fillsWidth: false, action: checkWritten)

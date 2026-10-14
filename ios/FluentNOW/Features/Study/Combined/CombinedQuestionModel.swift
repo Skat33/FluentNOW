@@ -14,18 +14,22 @@ final class CombinedQuestionModel {
 
     var written: String = ""
     private(set) var selected: Int?
-    private(set) var hintShown = false
+    /// Ile poziomów podpowiedzi jest odsłoniętych (0 — żaden).
+    private(set) var hintLevel = 0
     private(set) var outcome: StudyAnswerOutcome?
     private(set) var production: ProductionResult?
     private(set) var stoppedSeconds: Double?
 
     private let variants: AnswerVariants
+    /// Stopniowane podpowiedzi do wpisywania (FluentKit `HintBuilder`; bez odpowiedzi).
+    let hints: HintSet
 
     init(task: CombinedQuestionTask, key: String, variants: AnswerVariants, saved: CombinedAnswer?) {
         self.task = task
         self.key = key
         self.variants = variants
         self.startedAt = Date()
+        self.hints = HintBuilder.practiceHints(question: task.question, production: task.production)
         if let saved {
             written = saved.value
             selected = Int(saved.value)
@@ -58,15 +62,14 @@ final class CombinedQuestionModel {
         return [question.correctOption] + (question.acceptedAnswers ?? [])
     }
 
-    /// Podpowiedź do wpisywania (reguła lub wskazówka z banku).
-    var hintText: String {
-        let hint = question.inputHint ?? ""
-        return hint.isEmpty ? "Dobierz formę do kontekstu zdania." : hint
-    }
+    var hintShown: Bool { hintLevel > 0 }
+    var visibleHints: [String] { hints.visible(upTo: hintLevel) }
+    var canShowMoreHints: Bool { !isAnswered && hintLevel < hints.count }
 
+    /// Odsłania kolejny poziom podpowiedzi (znaczenie → pierwsze litery).
     func showHint() {
-        guard !isAnswered else { return }
-        hintShown = true
+        guard canShowMoreHints else { return }
+        hintLevel += 1
     }
 
     func choose(_ index: Int) {
