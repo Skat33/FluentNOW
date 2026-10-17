@@ -50,6 +50,50 @@ public enum TextNormalizer {
         return TextScanning.trim(value)
     }
 
+    /// Loose comparison keys of one accepted variant (fallback after the exact `key` match):
+    /// variants glued with `;` are split, parenthetical notes like „(o połączeniu)” are dropped
+    /// (both with and without them are accepted) and inner punctuation is ignored, so „było minęło”
+    /// matches „było, minęło”.
+    public static func looseKeys(_ text: String, using key: (String) -> String) -> [String] {
+        var results: [String] = []
+        for part in text.split(separator: ";") {
+            let piece = String(part)
+            for candidate in [piece, removingParentheticals(piece)] {
+                let loose = stripInnerPunctuation(key(candidate))
+                if !loose.isEmpty && !results.contains(loose) {
+                    results.append(loose)
+                }
+            }
+        }
+        return results
+    }
+
+    /// Removes `( … )` segments (nested parentheses included).
+    public static func removingParentheticals(_ text: String) -> String {
+        var out = ""
+        var depth = 0
+        for character in text {
+            if character == "(" {
+                depth += 1
+            } else if character == ")" {
+                if depth > 0 { depth -= 1 }
+            } else if depth == 0 {
+                out.append(character)
+            }
+        }
+        return out
+    }
+
+    /// Replaces inner punctuation (commas, quotes, dashes, …) with spaces and collapses whitespace.
+    /// Hyphens and apostrophes are kept (e-mail, don't).
+    public static func stripInnerPunctuation(_ text: String) -> String {
+        let punctuation: Set<Character> = [",", ";", ":", "!", "?", ".", "\"", "“", "”", "„", "«", "»", "—", "–", "…"]
+        let mapped = String(text.map { (character: Character) -> Character in
+            punctuation.contains(character) ? " " : character
+        })
+        return TextScanning.collapseWhitespace(TextScanning.trim(mapped))
+    }
+
     /// `englishAnswerKey`: `answerKey` plus expansion of unambiguous contractions
     /// (won't, can't, shan't, n't, 're, 've, 'll, 'm). Ambiguous 's / 'd stay untouched.
     public static func englishAnswerKey(_ value: String) -> String {

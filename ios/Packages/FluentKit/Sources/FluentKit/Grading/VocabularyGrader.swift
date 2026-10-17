@@ -118,6 +118,22 @@ public enum VocabularyGrader {
                 source: .local
             )
         }
+        // Fallback: inner punctuation, notes in parentheses and `;`-glued variants in the content
+        // (e.g. „zerwać się (o połączeniu)”, „było, minęło”) must not make a correct answer fail.
+        let looseActual = TextNormalizer.stripInnerPunctuation(actual)
+        if !looseActual.isEmpty {
+            let looseAccepted: [String] = accepted.flatMap { (variant: String) -> [String] in
+                TextNormalizer.looseKeys(variant, using: key)
+            }
+            if looseAccepted.contains(looseActual) {
+                return Grade(
+                    verdict: .correct,
+                    explanation: "To poprawny wariant dla tego znaczenia. Interpunkcja, wielkość liter i polskie znaki nie wpływają na ocenę.",
+                    spellingCorrect: true,
+                    source: .local
+                )
+            }
+        }
         let enKey = TextNormalizer.normalize(word.en)
         let swapped = (enKey == "lend" && actual.hasPrefix("borrow")) || (enKey == "borrow" && actual.hasPrefix("lend"))
         var closest: String?

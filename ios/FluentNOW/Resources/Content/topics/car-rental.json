@@ -32,7 +32,7 @@
           "register": "neutralny",
           "contextPl": "Wynajem auta",
           "natural": "",
-          "forms": "rents – rented – rented",
+          "forms": "rent – rented – rented",
           "collocations": "rent a car; rent for a week",
           "synonyms": "",
           "antonyms": "",
@@ -87,9 +87,9 @@
             },
             {
               "en": "I booked the rental car online to get a better price.",
-              "pl": "Zarezerwowałem wypożyczony samochód przez internet, żeby dostać lepszą cenę.",
+              "pl": "Zarezerwowałem auto z wypożyczalni przez internet, żeby dostać lepszą cenę.",
               "focusEn": "rental car",
-              "focusPl": "wypożyczony samochód"
+              "focusPl": "auto z wypożyczalni"
             }
           ],
           "acceptedAnswers": [
@@ -564,7 +564,7 @@
           "register": "neutralny",
           "contextPl": "Odbiór auta",
           "natural": "",
-          "forms": "picks up – picked up – picked up",
+          "forms": "pick up – picked up – picked up",
           "collocations": "pick up the car; pick-up time; pick-up location",
           "synonyms": "",
           "antonyms": "drop off",
@@ -644,7 +644,7 @@
           "register": "neutralny",
           "contextPl": "Odbiór auta",
           "natural": "",
-          "forms": "signs – signed – signed",
+          "forms": "sign – signed – signed",
           "collocations": "sign here; sign the contract; initial here",
           "synonyms": "",
           "antonyms": "",
@@ -802,7 +802,7 @@
           "register": "neutralny",
           "contextPl": "Oględziny auta",
           "natural": "",
-          "forms": "inspects – inspected – inspected",
+          "forms": "inspect – inspected – inspected",
           "collocations": "inspect the car; inspect for damage",
           "synonyms": "check, look over",
           "antonyms": "",
@@ -1294,7 +1294,7 @@
           "register": "formalny",
           "contextPl": "Ubezpieczenie auta",
           "natural": "",
-          "forms": "declines – declined – declined",
+          "forms": "decline – declined – declined",
           "collocations": "decline insurance; decline the upgrade",
           "synonyms": "refuse, turn down",
           "antonyms": "accept",
@@ -1302,15 +1302,15 @@
           "examples": [
             {
               "en": "I'd like to decline the extra insurance, thank you.",
-              "pl": "Chciałbym odmówić dodatkowego ubezpieczenia, dziękuję.",
+              "pl": "Chciałbym zrezygnować z dodatkowego ubezpieczenia, dziękuję.",
               "focusEn": "decline",
-              "focusPl": "odmówić"
+              "focusPl": "zrezygnować"
             },
             {
               "en": "If you decline the coverage, please initial here.",
-              "pl": "Jeśli pan odmawia ochrony, proszę tu parafować.",
+              "pl": "Jeśli rezygnuje pan z ochrony, proszę tu parafować.",
               "focusEn": "decline",
-              "focusPl": "odmawia"
+              "focusPl": "rezygnuje"
             }
           ],
           "acceptedAnswers": [
@@ -1320,6 +1320,7 @@
           "acceptedTranslations": [
             "odmówić",
             "zrezygnować",
+            "rezygnować",
             "nie przyjąć"
           ]
         },
@@ -1411,7 +1412,7 @@
           "frequency": "common",
           "translation": "drobny druk",
           "definition": "The small text in a contract with important details.",
-          "register": "potoczny",
+          "register": "neutralny",
           "contextPl": "Ubezpieczenie auta",
           "natural": "",
           "forms": "",
@@ -1654,7 +1655,7 @@
         {
           "id": "car-rental.pair-your-phone",
           "term": "pair your phone",
-          "ipa": "/ˌper jʊr ˈfoʊn/",
+          "ipa": "/ˌper jər ˈfoʊn/",
           "pos": "zwrot",
           "level": "B1",
           "frequency": "common",
@@ -1825,7 +1826,7 @@
           "register": "neutralny",
           "contextPl": "Wyposażenie auta",
           "natural": "",
-          "forms": "adjusts – adjusted – adjusted",
+          "forms": "adjust – adjusted – adjusted",
           "collocations": "adjust the seat; adjust the mirrors",
           "synonyms": "",
           "antonyms": "",
@@ -1872,7 +1873,7 @@
           "register": "neutralny",
           "contextPl": "Zwrot auta",
           "natural": "",
-          "forms": "returns – returned – returned",
+          "forms": "return – returned – returned",
           "collocations": "return the car; return it on time; return location",
           "synonyms": "give back",
           "antonyms": "",
@@ -1914,7 +1915,7 @@
           "register": "neutralny",
           "contextPl": "Zwrot auta",
           "natural": "",
-          "forms": "drops off – dropped off – dropped off",
+          "forms": "drop off – dropped off – dropped off",
           "collocations": "drop off the car; drop-off location; drop-off time",
           "synonyms": "return",
           "antonyms": "pick up",
@@ -1995,7 +1996,7 @@
           "register": "neutralny",
           "contextPl": "Zwrot auta",
           "natural": "",
-          "forms": "refuels – refueled – refueled",
+          "forms": "refuel – refueled – refueled",
           "collocations": "refuel before returning",
           "synonyms": "fill up",
           "antonyms": "",
@@ -2070,7 +2071,7 @@
           "pos": "rzeczownik",
           "level": "C1",
           "frequency": "less_common",
-          "translation": "okres karencji",
+          "translation": "okres tolerancji",
           "definition": "A short extra time after a deadline when you do not pay a penalty.",
           "register": "formalny",
           "contextPl": "Opłaty",
@@ -2083,23 +2084,24 @@
           "examples": [
             {
               "en": "There's a thirty-minute grace period for returns.",
-              "pl": "Przy zwrocie auta obowiązuje trzydziestominutowy okres karencji.",
+              "pl": "Przy zwrocie auta obowiązuje trzydziestominutowy okres tolerancji.",
               "focusEn": "grace period",
-              "focusPl": "okres karencji"
+              "focusPl": "okres tolerancji"
             },
             {
               "en": "We arrived just inside the grace period, so we didn't pay extra.",
-              "pl": "Zdążyliśmy w okresie karencji, więc nie dopłacaliśmy.",
+              "pl": "Zdążyliśmy w ramach okresu tolerancji, więc nie dopłacaliśmy.",
               "focusEn": "grace period",
-              "focusPl": "okresie karencji"
+              "focusPl": "okresu tolerancji"
             }
           ],
           "acceptedAnswers": [
             "grace period"
           ],
           "acceptedTranslations": [
-            "okres karencji",
-            "czas tolerancji"
+            "okres tolerancji",
+            "czas tolerancji",
+            "okres karencji"
           ]
         },
         {
@@ -2107,7 +2109,7 @@
           "term": "after-hours drop box",
           "ipa": "/ˌæftər aʊrz ˈdrɑːp ˌbɑːks/",
           "pos": "rzeczownik",
-          "level": "C1",
+          "level": "B2",
           "frequency": "less_common",
           "translation": "skrzynka na kluczyki",
           "definition": "A locked box where you leave keys when the office is closed.",
@@ -2268,14 +2270,14 @@
           "term": "dispute",
           "ipa": "/dɪˈspjuːt/",
           "pos": "czasownik",
-          "level": "C1",
+          "level": "B2",
           "frequency": "less_common",
           "translation": "zakwestionować",
           "definition": "To say officially that something, like a charge, is wrong.",
           "register": "formalny",
           "contextPl": "Opłaty",
           "natural": "",
-          "forms": "disputes – disputed – disputed",
+          "forms": "dispute – disputed – disputed",
           "collocations": "dispute a charge; dispute the bill",
           "synonyms": "challenge",
           "antonyms": "",
@@ -2331,9 +2333,9 @@
           "examples": [
             {
               "en": "We got a flat tire on a dirt road two hours from the city.",
-              "pl": "Złapaliśmy przebitą oponę na drodze gruntowej dwie godziny od miasta.",
+              "pl": "Złapaliśmy gumę na drodze gruntowej dwie godziny od miasta.",
               "focusEn": "flat tire",
-              "focusPl": "przebitą oponę"
+              "focusPl": "gumę"
             },
             {
               "en": "The rental company sent someone to change the flat tire.",
@@ -2364,7 +2366,7 @@
           "register": "neutralny",
           "contextPl": "Problemy z autem",
           "natural": "",
-          "forms": "breaks down – broke down – broken down",
+          "forms": "break down – broke down – broken down",
           "collocations": "the car broke down; break down on the highway",
           "synonyms": "",
           "antonyms": "",
@@ -2441,7 +2443,7 @@
           "frequency": "common",
           "translation": "rozładowany akumulator",
           "definition": "A car battery with no power left, so the car will not start.",
-          "register": "potoczny",
+          "register": "neutralny",
           "contextPl": "Problemy z autem",
           "natural": "",
           "forms": "dead batteries",
@@ -2683,7 +2685,7 @@
           "register": "neutralny",
           "contextPl": "Problemy z autem",
           "natural": "",
-          "forms": "reports – reported – reported",
+          "forms": "report – reported – reported",
           "collocations": "report damage; report an accident; report a problem",
           "synonyms": "",
           "antonyms": "",
