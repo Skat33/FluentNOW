@@ -13,6 +13,8 @@ enum StudyFlow: Identifiable, Hashable {
     case practice(PracticeKind, autoStart: Bool)
     /// Produkcja gramatyczna (`state.production`).
     case production(autoStart: Bool)
+    /// Osobny tryb „Fiszki” (G3): talia w pamięci, każda odpowiedź zapisywana od razu.
+    case flashcards(collection: String?)
 
     var id: String {
         switch self {
@@ -21,6 +23,7 @@ enum StudyFlow: Identifiable, Hashable {
         case .reading: return "reading"
         case .practice(let kind, _): return "practice-\(kind.rawValue)"
         case .production: return "production"
+        case .flashcards: return "flashcards"
         }
     }
 
@@ -31,6 +34,7 @@ enum StudyFlow: Identifiable, Hashable {
         case .reading: return "Czytanie"
         case .practice(let kind, _): return kind.studyTitle
         case .production: return "Produkcja gramatyczna"
+        case .flashcards: return "Fiszki"
         }
     }
 }
@@ -63,6 +67,7 @@ extension StudyMode {
         case .idioms: return "Znaczenie, kontekst i ważne różnice w użyciu."
         case .production: return "Wpisz formę czasownika, odczytując wskazówki ze zdania."
         case .languageMix: return "Gramatyka i idiomy: pytania ABCD i samodzielne wpisywanie."
+        case .flashcards: return "Talia fiszek: odwróć kartę i przesuń — pamiętam albo jeszcze nie."
         }
     }
 
@@ -76,6 +81,7 @@ extension StudyMode {
         case .idioms: return "text.bubble"
         case .production: return "character.cursor.ibeam"
         case .languageMix: return "sparkles"
+        case .flashcards: return "rectangle.on.rectangle.angled"
         }
     }
 

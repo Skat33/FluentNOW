@@ -17,6 +17,8 @@ struct StatsSnapshot: Hashable, Sendable {
     var goal: Int
     /// Pełna analiza (poziom z zakresem pewności, umiejętności, tempo, obszary) — `StatsAnalysisSection`.
     var analysis: LearnerAnalysis
+    /// XP i poziom (G5) — `StatsProgressionSection`.
+    var progression: ProgressionSummary
 
     static let calendarDays = 84
     static let gainWeeks = 8
@@ -52,7 +54,8 @@ struct StatsSnapshot: Hashable, Sendable {
             practice: ProgressStatistics.practiceTotals(state),
             estimate: LevelEstimator.estimatedLevel(state),
             goal: state.settings.goal,
-            analysis: LearnerAnalyzer.analyze(state, topics: topics, now: now)
+            analysis: LearnerAnalyzer.analyze(state, topics: topics, now: now),
+            progression: Progression.summary(state, now: now)
         )
     }
 }

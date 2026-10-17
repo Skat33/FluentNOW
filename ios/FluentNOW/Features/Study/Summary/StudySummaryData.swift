@@ -31,6 +31,10 @@ struct StudySummaryData: Equatable {
     /// Słowa do powtórki (błędne odpowiedzi w tej sesji).
     var toReview: [WordLine]
     var modeLines: [ModeLine]
+    /// Odpowiedzi tej sesji i prefiks wpisów historii sesji łączonej — do „+XP” (G5,
+    /// `Progression.sessionGain`, liczone w tle przez `StudySummaryXPBadge`).
+    var reviewIDs: [String] = []
+    var historyIDPrefix: String?
 
     var percent: Int { StudyFormat.percent(correct, of: total) }
 
@@ -85,7 +89,15 @@ struct StudySummaryData: Equatable {
             skills: skills,
             grown: Array(grown),
             toReview: Array(toReview),
-            modeLines: modeLines
+            modeLines: modeLines,
+            reviewIDs: reviewIDs,
+            historyIDPrefix: combinedHistoryPrefix(state, modeLines: modeLines)
         )
+    }
+
+    /// Sesja łączona zapisuje wpisy historii o id `"<id sesji>:<tryb>"` przy zakończeniu.
+    private static func combinedHistoryPrefix(_ state: LearnerState, modeLines: [ModeLine]) -> String? {
+        guard !modeLines.isEmpty, let combined = state.combined, combined.completedAt != nil else { return nil }
+        return "\(combined.id):"
     }
 }

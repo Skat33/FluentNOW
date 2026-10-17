@@ -16,15 +16,18 @@ final class CombinedSessionModel {
 
     private let content: ContentLibrary
     private let assistant: AssistantService
+    /// Zdjęcia do zadań „Słowo i zdjęcie” (G2, practice-modes).
+    private let images: WordImageService?
     @ObservationIgnored private var resources = StudyResources.fallback
     @ObservationIgnored private var resourcesLoaded = false
     @ObservationIgnored private var currentKey: String?
     @ObservationIgnored private var markedKeys: Set<String> = []
 
-    init(store: LearningStore, content: ContentLibrary, assistant: AssistantService) {
+    init(store: LearningStore, content: ContentLibrary, assistant: AssistantService, images: WordImageService? = nil) {
         self.store = store
         self.content = content
         self.assistant = assistant
+        self.images = images
     }
 
     var session: CombinedSession? { store.state.combined }
@@ -65,15 +68,28 @@ final class CombinedSessionModel {
                 missingTask = true
                 return
             }
-            vocabulary = VocabExerciseModel(
+            let created = VocabExerciseModel(
                 content: content,
                 key: key,
                 options: vocabTask.type == .meaning ? options(for: content) : [],
                 variants: resources.variants,
                 assistant: assistant
             )
+            vocabulary = created
+            if vocabTask.type == .picture {
+                loadPictures(for: created)
+            }
         case .question(let questionTask):
-            question = CombinedQuestionModel(task: questionTask, key: key, variants: resources.variants, saved: saved)
+            // Czytanka (G1): blok pytań jednego tekstu — tekst przed pierwszym, wyniki po ostatnim.
+            let readingBlock = questionTask.reading == nil ? nil : CombinedReadingBlock.block(in: session, at: session.index)
+            question = CombinedQuestionModel(
+                task: questionTask,
+                key: key,
+                variants: resources.variants,
+                saved: saved,
+                readingBlock: readingBlock,
+                readingEarlier: ReadingRecapItem.earlier(in: session, block: readingBlock)
+            )
             markSeen(questionTask, key: key)
         }
     }
@@ -194,5 +210,30 @@ final class CombinedSessionModel {
             starterWords: resources.starterWords,
             answerIndex: resources.answerIndex
         )
+    }
+
+    /// „Słowo i zdjęcie”: zdjęcia z dysku; bez nich (lub z VoiceOver) — „Wybierz znaczenie”.
+    /// Zapis idzie przez zadanie z sesji (`saveAnswer`), więc umiejętność się nie zmienia.
+    private func loadPictures(for created: VocabExerciseModel) {
+        let state = store.state
+        let images = images
+        Task { @MainActor [weak self] in
+            var loaded: [StudyPictureOption]?
+            if let images, !StudyPictureAccessibility.prefersTextExercise {
+                loaded = await StudyPictureLoader.options(for: created.content, key: created.key, state: state, images: images)
+            }
+            guard let self, self.vocabulary === created else { return }
+            if let loaded {
+                created.setPictures(loaded)
+            } else if let fallback = created.content.asMeaningTask(state: self.store.state, variants: self.resources.variants) {
+                self.vocabulary = VocabExerciseModel(
+                    content: fallback,
+                    key: created.key,
+                    options: self.options(for: fallback),
+                    variants: self.resources.variants,
+                    assistant: self.assistant
+                )
+            }
+        }
     }
 }

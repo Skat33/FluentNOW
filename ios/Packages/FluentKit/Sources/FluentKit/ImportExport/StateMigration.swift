@@ -113,6 +113,11 @@ public enum StateMigration {
             }
         }
         state.collections = state.collections.filter { !TextScanning.trim($0).isEmpty }.uniqued()
+        // Study profile (G4, optional): valid values only; an empty profile is kept (it records
+        // that the interview was answered/skipped on some device).
+        if let profile = state.settings.profile {
+            state.settings.profile = profile.normalized()
+        }
         return state
     }
 

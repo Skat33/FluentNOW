@@ -13,6 +13,9 @@ public struct LearnerSettings: Codable, Sendable, Hashable {
     /// Selected voice identifier, if any.
     public var voice: String?
     public var voiceRevision: Int?
+    /// Study profile from the first-run interview (G4). Optional and backward compatible:
+    /// older exports and the web app simply do not have it.
+    public var profile: LearnerProfile?
 
     public static let goalRange: ClosedRange<Int> = 5...100
     public static let defaultReminder = "19:00"
@@ -24,7 +27,8 @@ public struct LearnerSettings: Codable, Sendable, Hashable {
         accent: String = "en-US",
         slow: Bool = false,
         voice: String? = nil,
-        voiceRevision: Int? = 2
+        voiceRevision: Int? = 2,
+        profile: LearnerProfile? = nil
     ) {
         self.goal = min(LearnerSettings.goalRange.upperBound, max(LearnerSettings.goalRange.lowerBound, goal))
         self.reminder = LearnerSettings.isValidReminder(reminder) ? reminder : LearnerSettings.defaultReminder
@@ -32,10 +36,11 @@ public struct LearnerSettings: Codable, Sendable, Hashable {
         self.slow = slow
         self.voice = voice
         self.voiceRevision = voiceRevision
+        self.profile = profile
     }
 
     enum CodingKeys: String, CodingKey {
-        case goal, reminder, accent, slow, voice, voiceRevision
+        case goal, reminder, accent, slow, voice, voiceRevision, profile
     }
 
     public init(from decoder: Decoder) throws {
@@ -46,7 +51,8 @@ public struct LearnerSettings: Codable, Sendable, Hashable {
             accent: c.lenientString(.accent, default: "en-US"),
             slow: c.lenientBool(.slow),
             voice: c.lenientOptionalString(.voice),
-            voiceRevision: c.lenientOptionalInt(.voiceRevision)
+            voiceRevision: c.lenientOptionalInt(.voiceRevision),
+            profile: c.lenientOptional(LearnerProfile.self, forKey: .profile)
         )
     }
 

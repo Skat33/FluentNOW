@@ -21,25 +21,33 @@ enum StudyStarter {
         random: Bool,
         collection: String?,
         store: LearningStore,
-        content: ContentLibrary
+        content: ContentLibrary,
+        images: WordImageService? = nil
     ) async -> Outcome {
         var unique: [StudyMode] = []
         for mode in modes where !unique.contains(mode) {
             unique.append(mode)
         }
+        // Fiszki to osobny tryb (G3) — nigdy nie łączymy ich z innymi.
+        if unique.contains(.flashcards) {
+            return .flow(.flashcards(collection: collection))
+        }
         guard let first = unique.first else {
             return .message("Zaznacz jeden lub kilka rodzajów ćwiczeń.")
         }
         if unique.count == 1 {
-            return await startSingle(first, minutes: minutes, collection: collection, store: store)
+            return await startSingle(first, minutes: minutes, collection: collection, store: store, images: images)
         }
-        return await startCombined(unique, minutes: minutes, random: random, store: store, content: content)
+        return await startCombined(unique, minutes: minutes, random: random, store: store, content: content, images: images)
     }
 
     /// Nowa sesja słownictwa (`makeSession`) zapisana w `state.session`.
-    static func startVocabulary(mode: StudyMode, minutes: Int, collection: String?, store: LearningStore) async -> Outcome {
-        let session = await store.compute { state in
-            SessionBuilder.makeSession(state: state, minutes: minutes, mode: mode, collection: collection)
+    /// `images`: zadania „Słowo i zdjęcie” tylko dla słów, których zdjęcia są już na dysku (G2).
+    static func startVocabulary(mode: StudyMode, minutes: Int, collection: String?, store: LearningStore, images: WordImageService? = nil) async -> Outcome {
+        let cached = await cachedPictureIDs(images)
+        let session = await store.compute { (state: LearnerState) -> VocabSession in
+            let ready = PictureExercise.readyMeaningIDs(state: state, cached: cached)
+            return SessionBuilder.makeSession(state: state, minutes: minutes, mode: mode, collection: collection, pictureMeaningIDs: ready)
         }
         guard !session.tasks.isEmpty else {
             return .message(emptyVocabularyMessage(mode: mode, collection: collection, hasWords: !store.activeWords.isEmpty))
@@ -59,9 +67,18 @@ enum StudyStarter {
 
     // MARK: - Prywatne
 
-    private static func startSingle(_ mode: StudyMode, minutes: Int, collection: String?, store: LearningStore) async -> Outcome {
+    /// Znaczenia ze zdjęciem na dysku (pusty zbiór bez serwisu / bez zdjęć).
+    private static func cachedPictureIDs(_ images: WordImageService?) async -> Set<String> {
+        guard let images else { return [] }
+        return await images.cachedMeaningIDs()
+    }
+
+    private static func startSingle(_ mode: StudyMode, minutes: Int, collection: String?, store: LearningStore, images: WordImageService?) async -> Outcome {
+        if mode == .flashcards {
+            return .flow(.flashcards(collection: collection))
+        }
         if mode.isVocabulary {
-            return await startVocabulary(mode: mode, minutes: minutes, collection: collection, store: store)
+            return await startVocabulary(mode: mode, minutes: minutes, collection: collection, store: store, images: images)
         }
         if mode == .reading {
             return .flow(.reading(autoStart: true))
@@ -80,7 +97,8 @@ enum StudyStarter {
         minutes: Int,
         random: Bool,
         store: LearningStore,
-        content: ContentLibrary
+        content: ContentLibrary,
+        images: WordImageService?
     ) async -> Outcome {
         let needsBanks = modes.contains { !$0.isVocabulary }
         var practice = PracticeContent.empty
@@ -97,8 +115,10 @@ enum StudyStarter {
         }
         let now = store.now()
         let banks = practice
+        let cached = await cachedPictureIDs(images)
         let draft = await store.compute { (state: LearnerState) -> CombinedSession in
             var rng = SystemRandomNumberGenerator()
+            let ready = PictureExercise.readyMeaningIDs(state: state, cached: cached)
             return CombinedSessionBuilder.makeSession(
                 state: state,
                 modes: modes,
@@ -106,6 +126,7 @@ enum StudyStarter {
                 random: random,
                 content: banks,
                 now: now,
+                pictureMeaningIDs: ready,
                 using: &rng
             )
         }

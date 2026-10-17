@@ -22,7 +22,7 @@ struct CombinedSessionView: View {
         }
         .task {
             if model == nil {
-                let created = CombinedSessionModel(store: store, content: env.content, assistant: assistant)
+                let created = CombinedSessionModel(store: store, content: env.content, assistant: assistant, images: env.images)
                 model = created
                 await created.prepare()
             }
@@ -62,6 +62,11 @@ private struct CombinedSessionContent: View {
                 }
             }
             .onChange(of: model.session?.index) { _, _ in
+                proxy.scrollTo(StudyScrollID.top, anchor: .top)
+            }
+            // Czytanka (G1): po „Jestem gotowy na pytania” tekst znika — pytanie od góry ekranu.
+            .onChange(of: model.question?.isReadingPassage ?? false) { (_: Bool, reading: Bool) in
+                guard !reading else { return }
                 proxy.scrollTo(StudyScrollID.top, anchor: .top)
             }
         }

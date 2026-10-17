@@ -127,11 +127,11 @@ private struct TopicSearchScreen: View {
     }
 
     private func refreshAdded() async {
-        let references: Set<String> = await store.compute { (state: LearnerState) -> Set<String> in
-            VocabularyMerger.addedContentReferences(state)
+        let owned: OwnedVocabulary = await store.compute { (state: LearnerState) -> OwnedVocabulary in
+            OwnedVocabulary(state)
         }
         guard !Task.isCancelled else { return }
-        model.added = references
+        model.applyOwned(owned)
     }
 
     private func practice() {

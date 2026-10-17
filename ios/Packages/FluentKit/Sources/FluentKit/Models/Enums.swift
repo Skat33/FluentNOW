@@ -25,7 +25,10 @@ public enum Skill: String, Codable, CaseIterable, Sendable, Hashable {
     public static let masterySkills: [Skill] = [.recognition, .recall, .usage, .listening, .spelling]
 }
 
-/// The five vocabulary exercise types. Raw values are the web `Task.type` numbers.
+/// The vocabulary exercise types. Raw values 0–4 are the web `Task.type` numbers; 5 is iOS-only.
+///
+/// Flashcards (0) are no longer drawn into sessions (FEEDBACK-2 G3) — they live in the separate
+/// „Fiszki” mode; the case stays so that paused sessions and old exports still decode and play.
 public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
     /// 0 — „Fiszka w kontekście”.
     case flashcard = 0
@@ -37,6 +40,12 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
     case meaning = 3
     /// 4 — „Posłuchaj i zapisz” (dictation).
     case dictation = 4
+    /// 5 — „Słowo i zdjęcie”: the English word, four photos, pick the right one (iOS only,
+    /// concrete nouns with a cached internet photo).
+    case picture = 5
+
+    /// Types that a session may draw (everything except flashcards).
+    public static let sessionTypes: [ExerciseType] = [.recall, .cloze, .meaning, .dictation, .picture]
 
     /// Polish exercise name (`exerciseNames`).
     public var namePl: String {
@@ -46,6 +55,7 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
         case .cloze: return "Uzupełnij zdanie"
         case .meaning: return "Wybierz znaczenie"
         case .dictation: return "Posłuchaj i zapisz"
+        case .picture: return "Słowo i zdjęcie"
         }
     }
 
@@ -57,6 +67,7 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
         case .cloze: return "Uzupełnianie zdania"
         case .meaning: return "Rozpoznawanie znaczenia"
         case .dictation: return "Dyktando"
+        case .picture: return "Rozpoznawanie ze zdjęcia"
         }
     }
 
@@ -68,6 +79,7 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
         case .cloze: return .usage
         case .meaning: return .recognition
         case .dictation: return .listening
+        case .picture: return .recognition
         }
     }
 
@@ -79,6 +91,7 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
         case .cloze: return 42
         case .meaning: return 24
         case .dictation: return 48
+        case .picture: return 20
         }
     }
 
@@ -90,17 +103,20 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
         case .cloze: return 24
         case .meaning: return 12
         case .dictation: return 25
+        case .picture: return 10
         }
     }
 
     /// Format used when a failed task returns at the end of a session (`nextExerciseType`).
+    /// Never a flashcard (G3): dictation falls back to the meaning exercise.
     public var retryType: ExerciseType {
         switch self {
         case .flashcard: return .meaning
         case .recall: return .cloze
         case .cloze: return .recall
         case .meaning: return .dictation
-        case .dictation: return .flashcard
+        case .dictation: return .meaning
+        case .picture: return .meaning
         }
     }
 
@@ -108,7 +124,7 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
     /// Recall and cloze hide the English target, so no audio before checking.
     public var promptAudioAllowed: Bool {
         switch self {
-        case .flashcard, .meaning, .dictation: return true
+        case .flashcard, .meaning, .dictation, .picture: return true
         case .recall, .cloze: return false
         }
     }
@@ -208,7 +224,12 @@ public enum PracticeKind: String, Codable, CaseIterable, Sendable, Hashable {
     }
 }
 
-/// The eight study modes of the exercise picker / combined sessions.
+/// The study modes of the exercise picker / combined sessions (the web's eight) plus the
+/// iOS-only flashcard deck (G3).
+///
+/// Decoding stays tolerant: `CombinedSession.modes` drops unknown raw values, `VocabSession.mode`
+/// is a plain string (unknown → `.mixed`), and a combined task with an unknown mode only discards
+/// that paused session (never the import).
 public enum StudyMode: String, Codable, CaseIterable, Sendable, Hashable {
     case mixed
     case mistakes
@@ -218,6 +239,13 @@ public enum StudyMode: String, Codable, CaseIterable, Sendable, Hashable {
     case idioms
     case production
     case languageMix = "language-mix"
+    /// „Fiszki”: separate deck mode (due → new → hard, swipe to answer). Never part of a
+    /// combined session.
+    case flashcards
+
+    /// Modes offered in the multi-select picker and combined sessions (everything except
+    /// flashcards).
+    public static let combinableModes: [StudyMode] = allCases.filter { $0.isCombinable }
 
     /// Polish label (`studyLabels`).
     public var namePl: String {
@@ -230,12 +258,18 @@ public enum StudyMode: String, Codable, CaseIterable, Sendable, Hashable {
         case .idioms: return "Idiomy"
         case .production: return "Produkcja gramatyczna"
         case .languageMix: return "Miks językowy"
+        case .flashcards: return "Fiszki"
         }
     }
 
     /// Modes built from the learner's own vocabulary (`makeSession`).
     public var isVocabulary: Bool {
         self == .mixed || self == .mistakes || self == .pairs
+    }
+
+    /// `false` for the flashcard deck, which has its own screen and never joins a combined session.
+    public var isCombinable: Bool {
+        self != .flashcards
     }
 }
 

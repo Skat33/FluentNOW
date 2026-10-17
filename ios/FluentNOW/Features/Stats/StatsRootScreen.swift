@@ -58,11 +58,23 @@ private struct StatsContent: View {
 
     @Environment(AppRouter.self) private var router
 
+    // Dwie grupy — `ViewBuilder` przyjmuje najwyżej 10 widoków w jednym bloku.
     var body: some View {
+        topSection
+        bottomSection
+    }
+
+    @ViewBuilder
+    private var topSection: some View {
         StatsOverviewGrid(overview: snapshot.overview)
+        StatsProgressionSection(progression: snapshot.progression)
         StatsAnalysisSection(analysis: snapshot.analysis)
         TodayWeekCard(week: snapshot.week, goal: snapshot.goal)
         StatsActivityCalendar(days: snapshot.calendar)
+    }
+
+    @ViewBuilder
+    private var bottomSection: some View {
         StatsHardWordsCard(rows: snapshot.hardWords) {
             router.startStudy(.mistakes)
         }

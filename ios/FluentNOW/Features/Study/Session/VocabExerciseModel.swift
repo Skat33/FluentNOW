@@ -35,9 +35,15 @@ final class VocabExerciseModel {
     private(set) var outcome: StudyAnswerOutcome?
     private(set) var options: [String]
     private(set) var stoppedSeconds: Double?
+    /// „Słowo i zdjęcie”: cztery zdjęcia w kolejności wyświetlania (puste, dopóki się wczytują).
+    private(set) var pictures: [StudyPictureOption] = []
+    /// Indeks wybranego zdjęcia (po odpowiedzi).
+    private(set) var selectedPicture: Int?
 
     private let variants: AnswerVariants
     private let assistant: AssistantService?
+    /// Opcje znaczeń pokazane od razu przy pierwszym kontakcie — nie liczą się jako pomoc.
+    private let variantsAreFree: Bool
     @ObservationIgnored private var assistantTask: Task<Void, Never>?
     @ObservationIgnored private var pendingLocal: Grade?
 
@@ -48,6 +54,8 @@ final class VocabExerciseModel {
         self.variants = variants
         self.assistant = assistant
         self.startedAt = Date()
+        self.variantsAreFree = content.showsMeaningOptionsAtOnce
+        self.variantsShown = content.showsMeaningOptionsAtOnce
     }
 
     var type: ExerciseType { content.type }
@@ -59,8 +67,13 @@ final class VocabExerciseModel {
     var canShowMoreHints: Bool {
         (phase == .answering || phase == .retry) && hintLevel < content.hints.count
     }
-    /// Podpowiedź lub warianty = odpowiedź z pomocą (strona: `hint`).
-    var usedHelp: Bool { hintShown || variantsShown }
+    /// Podpowiedź lub warianty = odpowiedź z pomocą (strona: `hint`). Opcje pokazane od razu
+    /// przy pierwszym kontakcie ze słowem nie są pomocą.
+    var usedHelp: Bool { hintShown || (variantsShown && !variantsAreFree) }
+    /// Zdjęcie poprawnej odpowiedzi (po wczytaniu).
+    var correctPicture: StudyPictureOption? {
+        pictures.first { (option: StudyPictureOption) -> Bool in option.isCorrect }
+    }
     var canCheck: Bool {
         (phase == .answering || phase == .retry) && !answer.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
@@ -83,10 +96,39 @@ final class VocabExerciseModel {
         answer = option
     }
 
-    /// Wymienia dystraktory, gdy zasoby treści dotarły później (tylko przed pokazaniem wariantów).
+    /// Wymienia dystraktory, gdy zasoby treści dotarły później (przed pokazaniem wariantów albo —
+    /// przy opcjach widocznych od razu — zanim użytkownik coś wybrał).
     func replaceOptions(_ newOptions: [String]) {
-        guard !variantsShown, !newOptions.isEmpty else { return }
+        guard !newOptions.isEmpty else { return }
+        guard !variantsShown || (variantsAreFree && answer.isEmpty && phase == .answering) else { return }
         options = newOptions
+    }
+
+    /// „Słowo i zdjęcie”: zdjęcia gotowe do pokazania.
+    func setPictures(_ newPictures: [StudyPictureOption]) {
+        guard type == .picture, phase == .answering, selectedPicture == nil else { return }
+        pictures = newPictures
+    }
+
+    /// „Słowo i zdjęcie”: dotknięcie zdjęcia = odpowiedź (jedna próba, bez podpowiedzi).
+    func choosePicture(at index: Int) {
+        guard type == .picture, phase == .answering, let option = pictures.studyItem(at: index) else { return }
+        selectedPicture = index
+        let seconds = elapsed()
+        stoppedSeconds = seconds
+        answer = option.term
+        let correct = option.isCorrect
+        let explanation = correct ? "" : "Wybrane zdjęcie to „\(option.term)” — \(option.translation)."
+        grade = Grade(verdict: correct ? .correct : .incorrect, explanation: explanation, spellingCorrect: correct)
+        outcome = StudyAnswerOutcome(
+            value: option.term,
+            correct: correct,
+            hinted: false,
+            spellingCorrect: correct,
+            seconds: seconds,
+            explanation: ""
+        )
+        phase = .finished
     }
 
     /// Fiszka: odsłonięcie znaczenia zatrzymuje licznik.
@@ -114,7 +156,7 @@ final class VocabExerciseModel {
 
     /// Sprawdza wpisaną odpowiedź (Enter / „Sprawdź”).
     func check() {
-        guard type != .flashcard, canCheck else { return }
+        guard type != .flashcard, type != .picture, canCheck else { return }
         let value = answer.trimmingCharacters(in: .whitespacesAndNewlines)
         stoppedSeconds = elapsed()
         let local = VocabularyGrader.localGrade(

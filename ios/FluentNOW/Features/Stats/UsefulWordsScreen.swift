@@ -15,6 +15,8 @@ struct UsefulWordsScreen: View {
     @State private var addingIDs: Set<String> = []
     @State private var message: String?
     @State private var addTrigger = 0
+    /// Dodane na tym ekranie — zostają na liście jako „Masz już” (G6).
+    @State private var ownedIDs: Set<String> = []
 
     // Krótkie `body` (lekcja z pierwszej kompilacji): treść i haptyka w osobnych typach.
     var body: some View {
@@ -32,6 +34,7 @@ struct UsefulWordsScreen: View {
             phase: phase,
             selection: selection,
             addingIDs: addingIDs,
+            ownedIDs: ownedIDs,
             message: message,
             onToggle: { (id: String) -> Void in toggle(id) },
             onToggleAll: { () -> Void in toggleAll() },
@@ -65,18 +68,20 @@ struct UsefulWordsScreen: View {
 
     private var selectedItems: [UsefulWordSuggestion] {
         guard let result else { return [] }
-        return result.suggestions.filter { selection.contains($0.id) }
+        return result.suggestions.filter { selection.contains($0.id) && !ownedIDs.contains($0.id) }
     }
 
     private func refresh() async {
         let loaded: UsefulWordsResult = await UsefulWordsLoader.load(store: store, content: env.content, limit: Self.limit)
         guard !Task.isCancelled else { return }
-        result = loaded
-        let visible = Set(loaded.suggestions.map { $0.id })
+        let merged = UsefulWordsOwnership.merged(previous: result, fresh: loaded, kept: ownedIDs, limit: Self.limit)
+        result = merged
+        let visible = Set(merged.suggestions.map { $0.id }).subtracting(ownedIDs)
         selection = selection.intersection(visible)
     }
 
     private func toggle(_ id: String) {
+        guard !ownedIDs.contains(id) else { return }
         if selection.contains(id) {
             selection.remove(id)
         } else {
@@ -86,7 +91,7 @@ struct UsefulWordsScreen: View {
 
     private func toggleAll() {
         guard let result else { return }
-        let all = Set(result.suggestions.map { $0.id })
+        let all = Set(result.suggestions.map { $0.id }).subtracting(ownedIDs)
         selection = selection.isSuperset(of: all) ? [] : all
     }
 
@@ -99,7 +104,10 @@ struct UsefulWordsScreen: View {
             addingIDs = []
             selection.subtract(ids)
             message = UsefulWordsScreenText.summary(outcome, items: items)
-            if outcome.addedMeanings > 0 { addTrigger += 1 }
+            if outcome.addedMeanings > 0 {
+                ownedIDs.formUnion(ids)
+                addTrigger += 1
+            }
         }
     }
 }
@@ -128,6 +136,7 @@ private struct UsefulWordsScreenContent: View {
     let phase: UsefulWordsPhase
     let selection: Set<String>
     let addingIDs: Set<String>
+    let ownedIDs: Set<String>
     let message: String?
     let onToggle: (String) -> Void
     let onToggleAll: () -> Void
@@ -164,6 +173,7 @@ private struct UsefulWordsScreenContent: View {
                 result: result,
                 selection: selection,
                 addingIDs: addingIDs,
+                ownedIDs: ownedIDs,
                 onToggle: onToggle,
                 onToggleAll: onToggleAll,
                 onAdd: onAdd
@@ -195,12 +205,14 @@ private struct UsefulWordsSelectableList: View {
     let result: UsefulWordsResult
     let selection: Set<String>
     let addingIDs: Set<String>
+    let ownedIDs: Set<String>
     let onToggle: (String) -> Void
     let onToggleAll: () -> Void
     let onAdd: (UsefulWordSuggestion) -> Void
 
     private var allSelected: Bool {
-        !result.suggestions.isEmpty && result.suggestions.allSatisfy { selection.contains($0.id) }
+        let open = result.suggestions.filter { !ownedIDs.contains($0.id) }
+        return !open.isEmpty && open.allSatisfy { selection.contains($0.id) }
     }
 
     var body: some View {
@@ -218,6 +230,7 @@ private struct UsefulWordsSelectableList: View {
                         detail: result.details[item.id],
                         isSelected: selection.contains(item.id),
                         isAdding: addingIDs.contains(item.id),
+                        isOwned: ownedIDs.contains(item.id),
                         onToggle: { onToggle(item.id) },
                         onAdd: { onAdd(item) }
                     )
@@ -236,31 +249,48 @@ private struct UsefulWordSelectableRow: View {
     let detail: UsefulWordDetail?
     let isSelected: Bool
     let isAdding: Bool
+    let isOwned: Bool
     let onToggle: () -> Void
     let onAdd: () -> Void
 
     @Environment(SpeechService.self) private var speech
 
+    private var indicator: String {
+        if isOwned { return "checkmark.circle.fill" }
+        return isSelected ? "checkmark.circle.fill" : "circle"
+    }
+
+    private var indicatorColor: Color {
+        if isOwned { return Palette.success }
+        return isSelected ? Palette.accent : Palette.inkTertiary
+    }
+
     var body: some View {
         HStack(alignment: .center, spacing: Spacing.xs) {
             Button(action: onToggle) {
                 HStack(alignment: .center, spacing: Spacing.s) {
-                    Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
+                    Image(systemName: indicator)
                         .font(.system(.title3, design: .default, weight: .regular))
-                        .foregroundStyle(isSelected ? Palette.accent : Palette.inkTertiary)
+                        .foregroundStyle(indicatorColor)
                         .accessibilityHidden(true)
                     UsefulWordText(suggestion: suggestion, detail: detail, showsExample: true)
+                        .ownedVocabularyDimmed(isOwned)
                     Spacer(minLength: 0)
                 }
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
-            .accessibilityAddTraits(isSelected ? [.isSelected] : [])
+            .disabled(isOwned)
+            .accessibilityAddTraits(isSelected || isOwned ? [.isSelected] : [])
             .accessibilityHint(Text(isSelected ? "Dotknij, aby odznaczyć" : "Dotknij, aby zaznaczyć"))
             SpeakButton(size: .small, accessibilityLabel: "Odtwórz wymowę „\(suggestion.candidate.term)”") {
                 speech.speak(suggestion.candidate.term)
             }
-            UsefulWordAddButton(term: suggestion.candidate.term, isAdding: isAdding, action: onAdd)
+            if isOwned {
+                OwnedVocabularyBadge()
+            } else {
+                UsefulWordAddButton(term: suggestion.candidate.term, isAdding: isAdding, action: onAdd)
+            }
         }
         .padding(.vertical, Spacing.xs)
     }

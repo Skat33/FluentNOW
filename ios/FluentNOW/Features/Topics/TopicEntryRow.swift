@@ -12,8 +12,7 @@ struct TopicEntryRow: View {
     let onPreview: () -> Void
 
     private var detail: String {
-        if isAdded { return "\(entry.translation) · już w słowniku" }
-        if isDraft { return "\(entry.translation) · propozycja AI" }
+        if isDraft && !isAdded { return "\(entry.translation) · propozycja AI" }
         return entry.translation
     }
 
@@ -25,20 +24,25 @@ struct TopicEntryRow: View {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(entry.term)
                             .font(FluentFont.bodyEmphasized)
-                            .foregroundStyle(Palette.ink)
+                            .foregroundStyle(isAdded ? Palette.inkSecondary : Palette.ink)
                         Text(detail)
                             .font(FluentFont.subheadline)
                             .foregroundStyle(Palette.inkSecondary)
                     }
+                    .ownedVocabularyDimmed(isAdded)
                     Spacer(minLength: Spacing.xs)
-                    LevelBadge(level: entry.level)
+                    if isAdded {
+                        OwnedVocabularyBadge()
+                    } else {
+                        LevelBadge(level: entry.level)
+                    }
                 }
                 .contentShape(Rectangle())
             }
             .buttonStyle(.borderless)
             .disabled(isAdded)
-            .accessibilityAddTraits(isSelected ? .isSelected : [])
-            .accessibilityHint(Text(isAdded ? "Już dodane do nauki" : "Zaznacz do dodania"))
+            .accessibilityAddTraits(isSelected || isAdded ? .isSelected : [])
+            .accessibilityHint(Text(isAdded ? "Masz już to słowo — nie można dodać ponownie" : "Zaznacz do dodania"))
             Button(action: onPreview) {
                 Image(systemName: "info.circle")
                     .font(FluentFont.headline)

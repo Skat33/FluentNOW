@@ -19,14 +19,16 @@ final class VocabSessionModel {
 
     private let content: ContentLibrary
     private let assistant: AssistantService
+    private let images: WordImageService?
     @ObservationIgnored private var resources = StudyResources.fallback
     @ObservationIgnored private var resourcesLoaded = false
     @ObservationIgnored private var optionCache: [String: [String]] = [:]
 
-    init(store: LearningStore, content: ContentLibrary, assistant: AssistantService) {
+    init(store: LearningStore, content: ContentLibrary, assistant: AssistantService, images: WordImageService? = nil) {
         self.store = store
         self.content = content
         self.assistant = assistant
+        self.images = images
     }
 
     var session: VocabSession? { store.state.session }
@@ -71,14 +73,48 @@ final class VocabSessionModel {
         }
         missingTask = false
         confidence = .fair
-        exercise = VocabExerciseModel(
+        let created = VocabExerciseModel(
             content: content,
             key: key,
             options: task.type == .meaning ? options(for: content) : [],
             variants: resources.variants,
             assistant: assistant
         )
+        exercise = created
+        if task.type == .picture {
+            loadPictures(for: created)
+        }
         preloadNext(after: session)
+    }
+
+    /// „Słowo i zdjęcie”: zdjęcia z dysku (bez sieci). Gdy ich nie ma (wyczyszczony cache) albo
+    /// działa VoiceOver — to samo zadanie jako „Wybierz znaczenie” (ta sama umiejętność).
+    private func loadPictures(for created: VocabExerciseModel) {
+        let state = store.state
+        let images = images
+        Task { @MainActor [weak self] in
+            var loaded: [StudyPictureOption]?
+            if let images, !StudyPictureAccessibility.prefersTextExercise {
+                loaded = await StudyPictureLoader.options(for: created.content, key: created.key, state: state, images: images)
+            }
+            guard let self, self.exercise === created else { return }
+            if let loaded {
+                created.setPictures(loaded)
+            } else {
+                self.replaceWithMeaning(created)
+            }
+        }
+    }
+
+    private func replaceWithMeaning(_ current: VocabExerciseModel) {
+        guard let fallback = current.content.asMeaningTask(state: store.state, variants: resources.variants) else { return }
+        exercise = VocabExerciseModel(
+            content: fallback,
+            key: current.key,
+            options: options(for: fallback),
+            variants: resources.variants,
+            assistant: assistant
+        )
     }
 
     /// Zapisuje wynik bieżącego zadania i przechodzi dalej.
@@ -130,7 +166,7 @@ final class VocabSessionModel {
     /// „Jeszcze 5 minut” — nowa krótka sesja w tym samym trybie. Zwraca komunikat, gdy nie ma zadań.
     func extend() async -> String? {
         let currentMode = mode
-        let outcome = await StudyStarter.startVocabulary(mode: currentMode, minutes: 5, collection: nil, store: store)
+        let outcome = await StudyStarter.startVocabulary(mode: currentMode, minutes: 5, collection: nil, store: store, images: images)
         switch outcome {
         case .message(let text):
             return text

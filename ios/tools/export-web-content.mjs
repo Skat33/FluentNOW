@@ -12,6 +12,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { importWeb } from './lib/web-loader.mjs';
 import { DEFAULT_ROOT, kebab } from './validate-content.mjs';
+import { loadGlossarySource, mergeGlossary } from './lib/reading-glossary.mjs';
 
 const SOURCE = 'web-v42';
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
@@ -268,8 +269,12 @@ export async function exportAll(root = DEFAULT_ROOT) {
   }
   for (let i = 0; i < readings.length; i++) readings[i] = applyReadingFixes(readings[i], fixes);
   readings.sort((a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level));
-  counts.readings = { bank: rb.readingBank.length, legacy: legacy.length, total: readings.length };
-  write(root, 'readings.json', { schemaVersion: 1, source: SOURCE, readings }, log);
+  // Słowniczki kontekstowe (G1) nie pochodzą ze strony — źródło: ios/tools/data/reading-glossary.json.
+  // Scalane tutaj, żeby ponowny eksport ich nie skasował (szczegóły: lib/reading-glossary.mjs).
+  const glossary = mergeGlossary(readings, loadGlossarySource());
+  for (const id of glossary.unknown) fixes.push(`słowniczek: brak czytanki "${id}" (pominięty)`);
+  counts.readings = { bank: rb.readingBank.length, legacy: legacy.length, total: readings.length, withGlossary: glossary.merged };
+  write(root, 'readings.json', { schemaVersion: 1, source: SOURCE, readings: glossary.readings }, log);
 
   // 5. Słowa startowe (format Entry §1).
   const words = starterEntries(tl, av, fixes);
@@ -309,6 +314,6 @@ if (isMain) {
     for (const l of log) console.log(l);
     if (fixes.length) { console.log(`Poprawki w eksporcie (${fixes.length}):`); for (const f of fixes) console.log('  ' + f); }
     console.log('Liczności:', JSON.stringify(counts));
-    console.log('UWAGA: eksport nadpisał korekty english-qa. Uruchom teraz dwukrotnie: node ios/tools/fixes/english-qa-banks-fix.mjs, potem node ios/tools/build-index.mjs');
+    console.log('UWAGA: eksport nadpisał korekty english-qa. Uruchom teraz dwukrotnie: node ios/tools/fixes/english-qa-banks-fix.mjs, potem node ios/tools/apply-reading-glossary.mjs (słowniczki czytanek względem poprawionego tekstu) i node ios/tools/build-index.mjs');
   }, (err) => { console.error(err); process.exitCode = 1; });
 }

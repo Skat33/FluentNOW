@@ -22,6 +22,9 @@ struct VocabExerciseContent {
     let hints: HintSet
     /// Wszystko, czego tekst pomocniczy przed odpowiedzią nie może pokazać (hasło, formy, warianty).
     let maskTerms: [String]
+    /// Pierwsze spotkanie ze znaczeniem (G3: zamiast fiszki „Wybierz znaczenie” z od razu
+    /// widocznymi opcjami, bez liczenia ich jako podpowiedzi).
+    let isFirstContact: Bool
 
     init?(task: VocabTask, mode: StudyMode, state: LearnerState, variants: AnswerVariants) {
         guard let word = state.word(id: task.wordId), let meaning = word.meaning(id: task.meaningId) else {
@@ -47,9 +50,19 @@ struct VocabExerciseContent {
         self.accepted = VocabularyGrader.vocabularyAnswers(word: gradingWord, meaning: meaning, type: task.type, variants: variants)
         self.hints = HintBuilder.vocabularyHints(word: word, meaning: meaning, type: task.type, exampleIndex: index, variants: variants)
         self.maskTerms = HintBuilder.vocabularyMaskTerms(word: word, meaning: meaning, type: task.type, exampleIndex: index, variants: variants)
+        self.isFirstContact = SessionBuilder.isFirstContact(meaning)
     }
 
     var type: ExerciseType { task.type }
+
+    /// Opcje „Wybierz znaczenie” widoczne od razu (pierwszy kontakt ze słowem).
+    var showsMeaningOptionsAtOnce: Bool { type == .meaning && isFirstContact }
+
+    /// To samo zadanie jako „Wybierz znaczenie” — gdy zdjęć nie da się pokazać (brak w cache).
+    func asMeaningTask(state: LearnerState, variants: AnswerVariants) -> VocabExerciseContent? {
+        let fallback = VocabTask(wordId: task.wordId, meaningId: task.meaningId, type: .meaning, example: task.example)
+        return VocabExerciseContent(task: fallback, mode: mode, state: state, variants: variants)
+    }
 
     /// Klucz zadania (zmiana = nowe zadanie na ekranie).
     static func key(index: Int, task: VocabTask) -> String {

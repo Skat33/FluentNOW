@@ -8,9 +8,33 @@ struct CombinedQuestionView: View {
     @FocusState private var focused: Bool
 
     var body: some View {
+        Group {
+            // Czytanka (G1): najpierw sam tekst; pytania potem bez tekstu (wraca po ostatnim pytaniu bloku).
+            if model.isReadingPassage, let reading = model.task.reading {
+                ReadingFirstStage(reading: reading, questionCount: model.readingBlock?.taskIndices.count ?? 1) {
+                    model.beginReadingQuestions()
+                }
+            } else {
+                questionContent
+            }
+        }
+        .task(id: model.key) {
+            guard model.isInput, !model.isAnswered else { return }
+            try? await Task.sleep(nanoseconds: 120_000_000)
+            focused = true
+        }
+        .onChange(of: model.isAnswered) { _, answered in
+            guard answered else { return }
+            focused = false
+            let correct = model.outcome?.correct ?? false
+            AccessibilityNotification.Announcement(correct ? "Dobrze" : "Nie tym razem. Poprawnie: \(model.expected)").post()
+        }
+    }
+
+    private var questionContent: some View {
         VStack(alignment: .leading, spacing: Spacing.m) {
-            if let reading = model.task.reading {
-                ReadingPassageCard(reading: reading, collapsible: true)
+            if model.task.reading != nil, model.readingBlock?.opensBlock == true, !model.isAnswered {
+                ReadingMemoryNotice(title: model.task.reading?.title ?? "Tekst")
             }
             Card(spacing: Spacing.m) {
                 StudyExerciseKindBanner(kind, detail: bannerDetail)
@@ -46,17 +70,10 @@ struct CombinedQuestionView: View {
                     .id(StudyScrollID.feedback)
                     .transition(.opacity)
             }
-        }
-        .task(id: model.key) {
-            guard model.isInput, !model.isAnswered else { return }
-            try? await Task.sleep(nanoseconds: 120_000_000)
-            focused = true
-        }
-        .onChange(of: model.isAnswered) { _, answered in
-            guard answered else { return }
-            focused = false
-            let correct = model.outcome?.correct ?? false
-            AccessibilityNotification.Announcement(correct ? "Dobrze" : "Nie tym razem. Poprawnie: \(model.expected)").post()
+            if let reading = model.task.reading, let recap = model.readingRecap {
+                ReadingRecapView(reading: reading, items: recap)
+                    .transition(.opacity)
+            }
         }
     }
 

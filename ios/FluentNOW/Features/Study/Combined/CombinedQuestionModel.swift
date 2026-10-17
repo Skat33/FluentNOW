@@ -10,7 +10,14 @@ import FluentKit
 final class CombinedQuestionModel {
     let task: CombinedQuestionTask
     let key: String
-    let startedAt: Date
+    /// Start odliczania odpowiedzi (dla czytanki — od „Jestem gotowy na pytania”, nie od tekstu).
+    private(set) var startedAt: Date
+    /// Czytanka (G1): pozycja pytania w bloku tekstu; `nil` dla innych zadań.
+    let readingBlock: CombinedReadingBlock?
+    /// Czytanka: odpowiedzi wcześniejszych pytań bloku (podsumowanie po ostatnim pytaniu).
+    let readingEarlier: [ReadingRecapItem]
+    /// Czytanka: etap 1 — sam tekst przed pierwszym pytaniem bloku.
+    private(set) var isReadingPassage: Bool
 
     var written: String = ""
     private(set) var selected: Int?
@@ -24,11 +31,21 @@ final class CombinedQuestionModel {
     /// Stopniowane podpowiedzi do wpisywania (FluentKit `HintBuilder`; bez odpowiedzi).
     let hints: HintSet
 
-    init(task: CombinedQuestionTask, key: String, variants: AnswerVariants, saved: CombinedAnswer?) {
+    init(
+        task: CombinedQuestionTask,
+        key: String,
+        variants: AnswerVariants,
+        saved: CombinedAnswer?,
+        readingBlock: CombinedReadingBlock? = nil,
+        readingEarlier: [ReadingRecapItem] = []
+    ) {
         self.task = task
         self.key = key
         self.variants = variants
         self.startedAt = Date()
+        self.readingBlock = readingBlock
+        self.readingEarlier = readingEarlier
+        self.isReadingPassage = task.reading != nil && saved == nil && (readingBlock?.opensBlock ?? false)
         self.hints = HintBuilder.practiceHints(question: task.question, production: task.production)
         if let saved {
             written = saved.value
@@ -46,6 +63,21 @@ final class CombinedQuestionModel {
     }
 
     var question: PracticeQuestion { task.question }
+
+    /// Czytanka: koniec etapu czytania — tekst znika, odliczanie zaczyna się od teraz.
+    func beginReadingQuestions() {
+        guard isReadingPassage else { return }
+        isReadingPassage = false
+        startedAt = Date()
+    }
+
+    /// Czytanka: wyniki bloku po odpowiedzi na ostatnie pytanie (wtedy tekst wraca z dowodami).
+    var readingRecap: [ReadingRecapItem]? {
+        guard let readingBlock, readingBlock.closesBlock, let outcome, let index = task.readingIndex else { return nil }
+        let current = ReadingRecapItem(questionIndex: index, chosen: Int(outcome.value), correct: outcome.correct)
+        return readingEarlier + [current]
+    }
+
     var isInput: Bool { task.production != nil || question.isInput }
     var isAnswered: Bool { outcome != nil }
     var canCheck: Bool { !isAnswered && !written.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }

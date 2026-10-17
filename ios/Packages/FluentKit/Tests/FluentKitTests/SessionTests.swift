@@ -12,16 +12,19 @@ final class SessionTests: XCTestCase {
         var generator = SeededGenerator(seed: 5)
         let session = SessionBuilder.makeSession(state: state, minutes: 10, mode: .mixed, using: &generator)
         XCTAssertGreaterThanOrEqual(session.tasks.count, 2)
-        XCTAssertEqual(Set(session.tasks.map { $0.type }), [.flashcard])
+        // G3: flashcards are not drawn into sessions — the first contact is „Wybierz znaczenie”.
+        XCTAssertEqual(Set(session.tasks.map { $0.type }), [.meaning])
         XCTAssertEqual(session.mode, "mixed")
         XCTAssertEqual(session.minutes, 10)
     }
 
     func testAllowedTaskTypesProgression() {
         var meaning = Meaning(id: "m", translation: "t")
-        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.flashcard])
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.meaning])
+        XCTAssertTrue(SessionBuilder.isFirstContact(meaning))
         meaning.scores[.recognition] = Score(correct: 1)
-        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.meaning, .flashcard])
+        XCTAssertFalse(SessionBuilder.isFirstContact(meaning))
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.meaning])
         meaning.scores[.recognition] = Score(correct: 2)
         XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.recall, .meaning])
         meaning.scores[.recall] = Score()
@@ -120,7 +123,12 @@ final class SessionTests: XCTestCase {
         var generator = ConstantGenerator(value: UInt64.max / 2)
         let session = SessionBuilder.makeSession(state: state, minutes: 10, using: &generator)
         let fresh = session.tasks.filter { task in state.words.first { $0.id == task.wordId }?.meanings[0].scores.isEmpty ?? false }
+        // 16 reviews × 24 s („Wybierz znaczenie”) leave 216 s — room for all 8 new meanings.
+        let perTask = ExerciseType.meaning.estimatedSeconds
+        XCTAssertEqual(fresh.count, min(8, (600 - 16 * perTask) / perTask))
         XCTAssertEqual(fresh.count, 8)
+        XCTAssertEqual(session.tasks.count, 24)
+        XCTAssertTrue(session.tasks.allSatisfy { $0.type == .meaning })
         XCTAssertLessThanOrEqual(session.tasks.reduce(0) { $0 + $1.type.estimatedSeconds }, 600)
     }
 
@@ -135,9 +143,10 @@ final class SessionTests: XCTestCase {
             let types = session.tasks.map { $0.type }
             var counts: [ExerciseType: Int] = [:]
             for type in types { counts[type, default: 0] += 1 }
+            XCTAssertFalse(types.contains(.flashcard), "round \(round): flashcards never enter a session")
             if round == 0 {
-                XCTAssertEqual(types.count, 600 / ExerciseType.flashcard.estimatedSeconds)
-                XCTAssertEqual(Set(types), [.flashcard])
+                XCTAssertEqual(types.count, 600 / ExerciseType.meaning.estimatedSeconds)
+                XCTAssertEqual(Set(types), [.meaning])
             }
             let majority = counts.values.max() ?? 0
             if counts.count > 1 && majority <= (types.count + 1) / 2 {

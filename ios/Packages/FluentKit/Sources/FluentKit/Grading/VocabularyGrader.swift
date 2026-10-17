@@ -64,7 +64,7 @@ public enum VocabularyGrader {
         switch type {
         case .meaning:
             return polishAnswers(term: word.en, translation: meaning.translation, saved: meaning.acceptedTranslations ?? [], variants: variants)
-        case .flashcard, .cloze, .dictation:
+        case .flashcard, .cloze, .dictation, .picture:
             return [word.en]
         case .recall:
             var answers = [word.en] + (meaning.acceptedAnswers ?? [])

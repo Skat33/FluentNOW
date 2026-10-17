@@ -8,6 +8,8 @@ enum SettingsRoute: Hashable {
     case importData
     case exportData
     case about
+    /// „Twój profil nauki” (G4).
+    case learningProfile
 }
 
 /// Korzeń karty „Ustawienia”. Kontrakt powłoki: inicjalizator bez argumentów, bez własnego `NavigationStack`.
@@ -16,6 +18,7 @@ struct SettingsRootScreen: View {
 
     var body: some View {
         Form {
+            SettingsProfileLinkSection()
             SettingsLearningSection()
             SettingsVoiceSection()
             SettingsAppearanceSection()
@@ -55,6 +58,7 @@ private struct SettingsDestination: View {
         case .importData: SettingsImportScreen()
         case .exportData: SettingsExportScreen()
         case .about: SettingsAboutScreen()
+        case .learningProfile: SettingsProfileScreen()
         }
     }
 }

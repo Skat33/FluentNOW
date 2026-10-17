@@ -5,6 +5,15 @@
     {"id":"r-1","title":"Test","level":"Z9","topic":"","paragraphs":["Mia is at the airport. Her bag is blue."],"questions":[
       {"question":"What color is the bag?","options":["Blue","Red","Blue"],"answer":5,"explanation":"Torba jest niebieska.","evidence":"Her bag is green."}
     ],"source":"starter"},
-    {"id":"r-1","title":"Test","level":"A1","topic":"","paragraphs":[],"questions":[],"source":"starter"}
+    {"id":"r-1","title":"Test","level":"A1","topic":"","paragraphs":[],"questions":[],"source":"starter"},
+    {"id":"r-glossary","title":"Glossary test","level":"A2","topic":"","paragraphs":["Ruby booked a table by the window."],"questions":[
+      {"question":"What did Ruby book?","options":["A table","A room","A taxi","A flight"],"answer":0,"explanation":"Zarezerwowała stolik.","evidence":"Ruby booked a table"}
+    ],"source":"starter","glossary":[
+      {"form":"booked","lemma":"book","translation":"zarezerwować","ipa":"/bʊk/"},
+      {"form":"Booked","lemma":"book","translation":"zarezerwować"},
+      {"form":"book","lemma":"book","translation":"zarezerwować"},
+      {"form":"window","lemma":"window","translation":"okno","ipa":"ˈwɪndoʊ","ref":"Bad Ref"},
+      {"form":"table","lemma":"","translation":"stolik"}
+    ]}
   ]
 }

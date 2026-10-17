@@ -42,6 +42,8 @@ public enum UsefulWordReason: Sendable, Hashable {
     case learnedTopic(String)
     /// From an everyday topic group.
     case everyday
+    /// From a topic that matches the learner's goals or interests (topic name) — G4 profile.
+    case interest(String)
 
     /// Polish text, e.g. „z tematu Restauracja, którego się uczysz”.
     public var textPl: String {
@@ -56,6 +58,8 @@ public enum UsefulWordReason: Sendable, Hashable {
             return "z tematu \(name), którego się uczysz"
         case .everyday:
             return "przydatne na co dzień"
+        case .interest(let name):
+            return "z tematu \(name), który pasuje do Twoich celów"
         }
     }
 }
@@ -96,19 +100,29 @@ public struct UsefulWordProfile: Sendable, Hashable {
     public var topicCounts: [String: Int]
     /// Normalised collection names of non-archived words (fallback topic signal).
     public var collectionKeys: Set<String>
+    /// Topic id → bonus from the learner's goals and interests (G4 `LearnerProfile.topicWeights`).
+    public var topicPreferences: [String: Int]
+    /// Topic group → bonus from goals and interests (`LearnerProfile.groupWeights`).
+    public var groupPreferences: [String: Int]
 
-    public init(level: String, targetLevel: String, ownedKeys: Set<String> = [], ownedReferences: Set<String> = [], topicCounts: [String: Int] = [:], collectionKeys: Set<String> = []) {
+    public init(level: String, targetLevel: String, ownedKeys: Set<String> = [], ownedReferences: Set<String> = [], topicCounts: [String: Int] = [:], collectionKeys: Set<String> = [], topicPreferences: [String: Int] = [:], groupPreferences: [String: Int] = [:]) {
         self.level = level
         self.targetLevel = targetLevel
         self.ownedKeys = ownedKeys
         self.ownedReferences = ownedReferences
         self.topicCounts = topicCounts
         self.collectionKeys = collectionKeys
+        self.topicPreferences = topicPreferences
+        self.groupPreferences = groupPreferences
     }
 
-    /// Profile of a learner state (level from `LevelEstimator.estimatedLevel` unless given).
-    public static func make(_ state: LearnerState, estimate: LevelEstimate? = nil) -> UsefulWordProfile {
-        let level = estimate ?? LevelEstimator.estimatedLevel(state)
+    /// Profile of a learner state. Level: `estimate` if given, otherwise `ProfileLevel.estimate`
+    /// (the interview's start level until there is practice history) — or plain
+    /// `LevelEstimator.estimatedLevel` with `usesLearnerProfile: false`, which also ignores goals
+    /// and interests.
+    public static func make(_ state: LearnerState, estimate: LevelEstimate? = nil, usesLearnerProfile: Bool = true) -> UsefulWordProfile {
+        let learner: LearnerProfile? = usesLearnerProfile ? state.settings.profile : nil
+        let level = estimate ?? (usesLearnerProfile ? ProfileLevel.estimate(state) : LevelEstimator.estimatedLevel(state))
         var keys = Set<String>()
         var references = Set<String>()
         var counts: [String: Int] = [:]
@@ -133,8 +147,17 @@ public struct UsefulWordProfile: Sendable, Hashable {
             ownedKeys: keys,
             ownedReferences: references,
             topicCounts: counts,
-            collectionKeys: collections
+            collectionKeys: collections,
+            topicPreferences: learner?.topicWeights() ?? [:],
+            groupPreferences: learner?.groupWeights() ?? [:]
         )
+    }
+
+    /// Bonus of a candidate's topic: capped so goals/interests never outweigh frequency.
+    func preferenceBonus(topicID: String, group: String) -> (topic: Int, group: Int) {
+        let topic = min(14, topicPreferences[topicID] ?? 0)
+        let groupBonus = min(6, groupPreferences[group] ?? 0)
+        return (topic, groupBonus)
     }
 }
 
@@ -263,8 +286,11 @@ public enum UsefulWordRecommender {
                   !profile.ownedReferences.contains(candidate.reference),
                   !options.excludedReferences.contains(candidate.reference) else { continue }
             let learned = learnedCount(candidate)
+            // A topic chosen by goals/interests counts like a learned one for the register rule
+            // (e.g. „praca” allows office vocabulary marked as specialist).
+            let preferred = profile.preferenceBonus(topicID: candidate.topicID, group: candidate.group).topic > 0
             if let register = options.registers[candidate.reference],
-               !isAllowedRegister(register, learnedTopic: learned > 0) {
+               !isAllowedRegister(register, learnedTopic: learned > 0 || preferred) {
                 continue
             }
             let suggestion = evaluate(candidate, levelIndex: levelIndex, userIndex: userIndex, targetIndex: targetIndex, learned: learned, profile: profile)
@@ -297,6 +323,12 @@ public enum UsefulWordRecommender {
             score += 18 + min(12, learned / 2)
             reasons.append(.learnedTopic(candidate.topicName))
         }
+        let preference = profile.preferenceBonus(topicID: candidate.topicID, group: candidate.group)
+        if preference.topic > 0 {
+            score += preference.topic
+            if learned == 0 { reasons.append(.interest(candidate.topicName)) }
+        }
+        score += preference.group
         score += candidate.frequency == .veryCommon ? 40 : 26
         reasons.append(.frequent(candidate.frequency))
         if levelIndex == userIndex {

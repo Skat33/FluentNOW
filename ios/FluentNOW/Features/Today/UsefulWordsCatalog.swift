@@ -87,8 +87,10 @@ actor UsefulWordsCatalog {
 
     private static func isFromLearnedTopic(_ item: UsefulWordSuggestion) -> Bool {
         item.reasons.contains { (reason: UsefulWordReason) -> Bool in
-            if case .learnedTopic = reason { return true }
-            return false
+            switch reason {
+            case .learnedTopic, .interest: return true
+            case .frequent, .fitsLevel, .nextLevel, .everyday: return false
+            }
         }
     }
 

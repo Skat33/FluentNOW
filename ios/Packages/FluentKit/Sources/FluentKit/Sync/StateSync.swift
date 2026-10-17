@@ -184,6 +184,9 @@ public enum StateSync {
         merged.collections = (remote.collections + local.collections).uniqued()
         merged.practice = local.practice ?? remote.practice
         merged.production = local.production ?? remote.production
+        // Study profile (G4): the more recently edited copy wins (a profile set up on another
+        // device is never lost because this device has none).
+        merged.settings.profile = LearnerProfile.newer(local.settings.profile, remote.settings.profile)
         return merged
     }
 

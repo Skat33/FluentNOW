@@ -34,6 +34,7 @@ struct SettingsExportScreen: View {
                                       systemImage: "exclamationmark.bubble", file: reportsFile, isPreparing: isPreparing)
                     Button("Usuń zgłoszenia", role: .destructive) { confirmClearReports = true }
                 }
+                StudyImageReportsExportRow()  // G2: zgłoszenia zdjęć (practice-modes)
             } header: {
                 Text("Zgłoszenia")
             }

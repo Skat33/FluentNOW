@@ -266,7 +266,7 @@ final class PracticeTests: XCTestCase {
         guard let combined = state.combined else { return XCTFail("no session") }
         XCTAssertGreaterThanOrEqual(combined.tasks.count, 20)
         XCTAssertEqual(combined.answers.count, combined.tasks.count)
-        XCTAssertEqual(Set(combined.tasks.map { $0.mode }), Set(StudyMode.allCases.filter { $0 != .mistakes && $0 != .pairs }))
+        XCTAssertEqual(Set(combined.tasks.map { $0.mode }), Set(StudyMode.combinableModes.filter { $0 != .mistakes && $0 != .pairs }))
         let order = combined.tasks
         let answer = CombinedAnswer(value: "test", correct: true, seconds: 3, explanation: "Test")
         let before = state.reviews.count

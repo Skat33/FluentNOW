@@ -141,7 +141,9 @@ PracticeQuestion { format?: "choice"|"input", inputHint?: String, acceptedAnswer
                    category: "grammar"|"idiom", prompt: String, context: String, options: [String] (4), answer: Int (0..3),
                    explanation: String, translation: String }
 Reading          { id: String, title: String, level: "A1".."C2", topic: String, paragraphs: [String],
-                   questions: [{ question, options: [String] (4), answer: Int, explanation, evidence, meaningId? }], source: "starter" }
+                   questions: [{ question, options: [String] (4), answer: Int, explanation, evidence, meaningId? }], source: "starter",
+                   glossary?: [GlossaryEntry] }            ← słowniczek kontekstowy, §5.4 (nie pochodzi ze strony)
+GlossaryEntry    { form: String, lemma: String, translation: String, ipa?: String, ref?: String }
 ```
 
 ### 5.1 Gramatyka — `grammar/A1.json` … `grammar/C2.json` (decyzja: podział)
@@ -194,6 +196,33 @@ Zadanie wyboru tworzy się z `ProductionItem` jak `starterPractice` na stronie: 
 - `topic` = słowa kluczowe PL/EN do dopasowania tematu (strona: `selectBankReading`); może być `""`.
 - `answer` w zakresie `options`; `evidence` to (zwykle dosłowny) fragment tekstu. Strona przy ponownym przejściu rotuje odpowiedzi o `historyLength % 4`.
 
+#### 5.4.1 Słowniczek kontekstowy — `glossary` (FEEDBACK-2 G1)
+
+Każda czytanka ma pole `glossary` (ostatnie pole obiektu): 8–20 słów przydatnych i trudniejszych dla poziomu tekstu, z tłumaczeniem **w znaczeniu z tego tekstu**. Aplikacja podświetla je w tekście (kropkowane podkreślenie; słowa z mojego słownika — tło i linia ciągła) i po dotknięciu pokazuje arkusz z tłumaczeniem w kontekście, formą bazową, IPA, odsłuchem i „Dodaj do nauki”.
+
+```json
+"glossary": [
+  {"form":"booked","lemma":"book","translation":"zarezerwować","ipa":"/bʊk/","ref":"restaurant/restaurant.book"},
+  {"form":"in a hurry","lemma":"be in a hurry","translation":"spieszyć się","ipa":"/bi ɪn ə ˈhɝːi/"}
+]
+```
+
+| Pole | Wymagane | Znaczenie |
+|---|---|---|
+| `form` | tak | forma **dokładnie** jak w akapicie (podciąg z zachowaniem wielkości liter, na granicy słów); może być wyrażeniem („took a photo”) |
+| `lemma` | tak | forma bazowa („take a photo”); brak w JSON → dekoder używa `form` |
+| `translation` | tak | polskie tłumaczenie w znaczeniu z tego tekstu (np. *minutes* → „protokół”, *chair* → „przewodniczący”) |
+| `ipa` | nie | wymowa formy bazowej, General American, w `/…/` |
+| `ref` | nie | `r` z `dictionary-index.json` (`<plik tematu>/<id>` lub `starter/<id>`) — tylko gdy wpis bazy ma **to samo znaczenie**; wtedy „Dodaj do nauki” dodaje pełny wpis bazy |
+
+Zasady: brak duplikatów `form` w czytance (bez względu na wielkość liter); dłuższa forma wygrywa przy nakładaniu (podświetlanie jak `ReadingTokenizer`: najdłuższe dopasowanie, nigdy wewnątrz słowa). Pole opcjonalne i wstecznie zgodne — dekoder Swift: brak/`null` → `[]`, uszkodzona pozycja jest pomijana (bez `form` lub `translation`). Zapisane sesje ze starszym `Reading` (bez słowniczka) dostają słowniczek z banku po `id` w chwili wyświetlenia.
+
+**Źródło i scalanie.** `readings.json` jest generowany ze strony, więc słowniczek **nie jest edytowany w `readings.json`**. Źródło prawdy: `ios/tools/data/reading-glossary.json` (`{ "schemaVersion": 1, "readings": { "<id czytanki>": [GlossaryEntry…] } }`). Scalanie:
+- `node ios/tools/apply-reading-glossary.mjs` — wpisuje słowniczki do `readings.json` (idempotentne; `--check` = kod 1, gdy `readings.json` jest nieaktualny);
+- `export-web-content.mjs` scala słowniczki sam (ponowny eksport ich nie kasuje). Poprawki english-qa zmieniają potem akapity, więc pełna kolejność: eksport → `fixes/english-qa-banks-fix.mjs` (2×) → `apply-reading-glossary.mjs` → `build-index.mjs` → `validate-content.mjs`.
+
+Walidator (`lib/reading-glossary.mjs`, wołany z `validateReadings`): błędy `glossary-form` (forma nie występuje dosłownie w akapicie), `glossary-duplicate`, `glossary-empty`, `glossary-type`, `ipa-format`, `glossary-ref` (zły format lub brak `ref` w `dictionary-index.json`); ostrzeżenia `glossary-count` (poza 8–20), `glossary-missing`, `glossary-stale` (`readings.json` różni się od pliku źródłowego).
+
 ### 5.5 Słowa startowe — `starter-words.json`
 
 `{ "schemaVersion": 1, "source": "web-v42", "words": [Entry…] }` — **Entry dokładnie jak §1**, `id` = `starter.<kebab-term>` (kolejne znaczenia: `-2`, `-3`). Źródło: `seed()` + `starterLookup()` (przykłady z `pairs`, warianty EN z `aliases`, PL z `polishAnswers`). Uzupełnione przez eksport: IPA General American, `frequency`, `forms` w formacie `do – did – done`, listy oddzielone `; `. Pominięte: wyniki/recenzje demo, kolekcje, tagi. Walidowane tak samo jak tematy.
@@ -227,7 +256,7 @@ Generuje `node ios/tools/build-index.mjs` (idempotentny; `--check` zwraca 1, gdy
 | Plik | Rozmiar | Ładowanie |
 |---|---|---|
 | `grammar/<poziom>.json` | 285–402 KB | leniwie, tylko bieżący poziom |
-| `readings.json` | ~120 KB | leniwie (ekran czytania) |
+| `readings.json` | ~205 KB (ze słowniczkami, 765 pozycji) | leniwie (ekran czytania) |
 | `exercises.json`, `idioms.json` | ~68 / ~57 KB | leniwie (ćwiczenia) |
 | `starter-words.json`, `recommendations.json`, `answer-variants.json` | < 20 KB | przy starcie (tanie) |
 | `topics/index.json`, `dictionary-index.json` | rośnie z tematami | indeks przy starcie w tle; pliki tematów leniwie |

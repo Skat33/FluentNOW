@@ -207,7 +207,7 @@ private struct AddWordSenseRow: View {
             }
             .buttonStyle(.borderless)
             .disabled(isKnown)
-            .accessibilityAddTraits(isSelected ? .isSelected : [])
+            .accessibilityAddTraits(isSelected || isKnown ? .isSelected : [])
             if showsEdit {
                 Button(action: onEdit) {
                     Image(systemName: "pencil")
@@ -229,10 +229,13 @@ private struct AddWordSenseText: View {
             HStack(spacing: Spacing.xs) {
                 Text(sense.translation)
                     .font(FluentFont.bodyEmphasized)
-                    .foregroundStyle(Palette.ink)
+                    .foregroundStyle(isKnown ? Palette.inkSecondary : Palette.ink)
                 LevelBadge(level: sense.level)
+                if isKnown {
+                    OwnedVocabularyBadge()
+                }
             }
-            let meta = [sense.pos, sense.topic ?? "", isKnown ? "już w słowniku" : ""]
+            let meta = [sense.pos, sense.topic ?? ""]
                 .filter { !$0.isEmpty }
                 .joined(separator: " · ")
             if !meta.isEmpty {

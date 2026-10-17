@@ -11,6 +11,9 @@ struct StudyHomeView: View {
     @AppStorage("study.minutes") private var storedMinutes = 10
     @AppStorage("study.modes") private var storedModes = StudyMode.mixed.rawValue
     @AppStorage("study.random") private var random = false
+    /// `updatedAt` profilu nauki (G4), którego domyślne tryby i czas już zastosowano — po edycji
+    /// profilu domyślne wartości wracają, a między edycjami zostaje wybór użytkownika.
+    @AppStorage("study.profileApplied") private var profileApplied: Double = 0
 
     @State private var collection: String?
     @State private var isStarting = false
@@ -19,6 +22,7 @@ struct StudyHomeView: View {
     @State private var activeFlow: StudyFlow?
     @State private var combinedDraft: CombinedSession?
     @State private var flowAfterSheet: StudyFlow?
+    @State private var deckCounts: FlashcardDeckCounts?
 
     var body: some View {
         ScrollView {
@@ -69,6 +73,30 @@ struct StudyHomeView: View {
         .task(id: estimateKey) {
             await updateEstimate()
         }
+        .task(id: deckKey) {
+            await updateDeckCounts()
+        }
+        .task(id: store.loadPhase) {
+            // Zdjęcia do „Słowo i zdjęcie” pobierają się w tle przed sesją (G2).
+            env.prefetchWordImages()
+        }
+        .onChange(of: store.settings.profile?.updatedAt, initial: true) { (_: Double?, _: Double?) in
+            applyProfileDefaults()
+        }
+    }
+
+    /// Domyślne tryby i czas z profilu nauki (G4, `LearnerProfile.dailyMixModes` / `sessionMinutes`).
+    private func applyProfileDefaults() {
+        guard let profile = store.settings.profile, profile.updatedAt > profileApplied else { return }
+        profileApplied = profile.updatedAt
+        let minutes = profile.sessionMinutes
+        if StudyLaunchRequest.allowedMinutes.contains(minutes) {
+            storedMinutes = minutes
+        }
+        let modes = profile.dailyMixModes(limit: 3)
+        if !modes.isEmpty {
+            storedModes = modes.map(\.rawValue).joined(separator: ",")
+        }
     }
 
     @ViewBuilder
@@ -85,6 +113,9 @@ struct StudyHomeView: View {
                 onQuickAdd: { router.presentQuickAdd() }
             )
         }
+        if prefersFlashcards && !store.activeWords.isEmpty {
+            flashcardsCard
+        }
         StudySetupCard(
             minutes: minutesBinding,
             selected: modesBinding,
@@ -96,7 +127,21 @@ struct StudyHomeView: View {
             onClearCollection: { collection = nil },
             onStart: { start(modes: modesBinding.wrappedValue) }
         )
+        if !prefersFlashcards && !store.activeWords.isEmpty {
+            flashcardsCard
+        }
         StudyRecentHistoryCard(state: store.state)
+    }
+
+    /// Profil nauki (G4): „Fiszki” wśród ulubionych → karta talii nad wyborem trybów.
+    private var prefersFlashcards: Bool {
+        store.settings.profile?.styles.contains(.flashcards) ?? false
+    }
+
+    private var flashcardsCard: some View {
+        StudyFlashcardsCard(counts: deckCounts) {
+            activeFlow = .flashcards(collection: collection)
+        }
     }
 
     private var loadError: String? {
@@ -115,7 +160,7 @@ struct StudyHomeView: View {
 
     private var modesBinding: Binding<[StudyMode]> {
         Binding(
-            get: { StudyHomeView.decodeModes(storedModes) },
+            get: { StudyHomeView.decodeModes(storedModes).filter { (mode: StudyMode) -> Bool in mode.isCombinable } },
             set: { storedModes = $0.map(\.rawValue).joined(separator: ",") }
         )
     }
@@ -132,6 +177,20 @@ struct StudyHomeView: View {
 
     private var estimateKey: String {
         "\(storedModes)|\(minutesBinding.wrappedValue)|\(collection ?? "")|\(store.activeWords.count)"
+    }
+
+    private var deckKey: String {
+        "\(store.revision)|\(collection ?? "")"
+    }
+
+    /// Liczniki talii fiszek (do powtórki / nowe / trudne) — liczone poza głównym wątkiem.
+    private func updateDeckCounts() async {
+        guard store.loadPhase == .ready else { return }
+        let limitedTo = collection
+        let now = store.now()
+        deckCounts = await store.compute { (state: LearnerState) -> FlashcardDeckCounts in
+            FlashcardDeckBuilder.counts(state: state, collection: limitedTo, now: now)
+        }
     }
 
     // MARK: Start
@@ -156,7 +215,8 @@ struct StudyHomeView: View {
                 random: shuffle,
                 collection: limitedTo,
                 store: store,
-                content: env.content
+                content: env.content,
+                images: env.images
             )
             isStarting = false
             switch outcome {
@@ -190,6 +250,12 @@ struct StudyHomeView: View {
             return
         }
         var modes = request.modes.compactMap { StudyMode(rawValue: $0) }
+        // Fiszki to osobny ekran (G3) — bez zmiany zapamiętanego wyboru trybów.
+        if modes.contains(.flashcards) {
+            collection = request.collection
+            activeFlow = .flashcards(collection: request.collection)
+            return
+        }
         if modes.isEmpty { modes = [.mixed] }
         modesBinding.wrappedValue = modes
         if let minutes = request.minutes, StudyLaunchRequest.allowedMinutes.contains(minutes) {
@@ -216,6 +282,8 @@ struct StudyHomeView: View {
             estimate = "Około \(minutes) min · tekst i 3–6 pytań"
         case .grammar, .idioms, .languageMix, .production:
             estimate = "Około \(minutes) min · zestaw \(StudyFormat.tasks(6))"
+        case .flashcards:
+            estimate = "Talia fiszek — we własnym tempie"
         default:
             let limitedTo = collection
             let count = await store.compute { state in

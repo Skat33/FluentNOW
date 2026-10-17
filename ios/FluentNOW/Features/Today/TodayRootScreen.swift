@@ -21,9 +21,7 @@ struct TodayRootScreen: View {
     // `body` jest celowo krótki: łańcuch warunków i modyfikatory z domknięciami w jednym wyrażeniu
     // przekraczały limit czasu sprawdzania typów kompilatora („unable to type-check … in reasonable time”).
     var body: some View {
-        ScrollView {
-            scrollContent
-        }
+        rootContent
         .background(Palette.background)
         .navigationTitle("Dzisiaj")
         .toolbar { toolbarContent }
@@ -31,6 +29,18 @@ struct TodayRootScreen: View {
         .task { await loadCandidates() }
         .task(id: refreshKey) { await refreshSnapshot() }
         .modifier(TodayGoalHaptic(isReached: snapshot?.goal.isReached, enabled: preferences.hapticsEnabled))
+    }
+
+    /// Pierwsze uruchomienie: kreator (G4) ma własny `ScrollView` (przewija na górę przy każdym kroku).
+    @ViewBuilder
+    private var rootContent: some View {
+        if showsOnboarding {
+            OnboardingWizardView(isActive: $onboardingInProgress)
+        } else {
+            ScrollView {
+                scrollContent
+            }
+        }
     }
 
     private var scrollContent: some View {
@@ -54,7 +64,8 @@ struct TodayRootScreen: View {
         case .loading:
             TodaySkeleton()
         case .onboarding:
-            TodayOnboardingView(isAdding: $onboardingInProgress)
+            // Kreator zastępuje cały `ScrollView` (`rootContent`).
+            EmptyView()
         case .content(let current):
             TodayContent(snapshot: current, isEmpty: store.state.words.isEmpty)
         }
@@ -154,6 +165,7 @@ private struct TodayContent: View {
                 router.presentTopicSearch()
             }
         } else {
+            TodayXPCard(progression: snapshot.progression)
             TodayStatsGrid(overview: snapshot.overview)
             TodayWeekCard(week: snapshot.week, goal: snapshot.goal.goal)
             TodayAnalysisCard(analysis: snapshot.analysis)

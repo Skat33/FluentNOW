@@ -45,6 +45,8 @@ struct StudyFlowView: View {
             PracticeSetView(kind: kind, autoStart: autoStart)
         case .production(let autoStart):
             ProductionPracticeView(autoStart: autoStart)
+        case .flashcards(let collection):
+            FlashcardDeckScreen(collection: collection)
         }
     }
 }

@@ -14,6 +14,8 @@ struct TodayRecommendedWordsSection: View {
     @State private var addingID: String?
     @State private var lastAdded: String?
     @State private var addTrigger = 0
+    /// Dodane z tej listy — zostają widoczne jako „Masz już” do opuszczenia ekranu (G6).
+    @State private var ownedIDs: Set<String> = []
 
     var body: some View {
         VStack(alignment: .leading, spacing: Spacing.s) {
@@ -22,11 +24,13 @@ struct TodayRecommendedWordsSection: View {
                     result: result,
                     addingID: addingID,
                     lastAdded: lastAdded,
+                    ownedIDs: ownedIDs,
                     onAdd: { (item: UsefulWordSuggestion) in add(item) }
                 )
             }
         }
         .task(id: store.revision) { await refresh() }
+        .onDisappear { ownedIDs = [] }
         .fluentSensoryFeedback(FluentHaptic.answerCorrect, trigger: addTrigger)
     }
 
@@ -38,7 +42,7 @@ struct TodayRecommendedWordsSection: View {
         }
         let loaded: UsefulWordsResult = await UsefulWordsLoader.load(store: store, content: env.content, limit: Self.limit)
         guard !Task.isCancelled else { return }
-        result = loaded
+        result = UsefulWordsOwnership.merged(previous: result, fresh: loaded, kept: ownedIDs, limit: Self.limit)
     }
 
     private func add(_ item: UsefulWordSuggestion) {
@@ -49,6 +53,7 @@ struct TodayRecommendedWordsSection: View {
             addingID = nil
             if outcome.addedMeanings > 0 {
                 lastAdded = item.candidate.term
+                ownedIDs.insert(item.id)
                 addTrigger += 1
             }
         }
@@ -60,6 +65,7 @@ private struct TodayRecommendedWordsList: View {
     let result: UsefulWordsResult
     let addingID: String?
     let lastAdded: String?
+    let ownedIDs: Set<String>
     let onAdd: (UsefulWordSuggestion) -> Void
 
     var body: some View {
@@ -70,6 +76,7 @@ private struct TodayRecommendedWordsList: View {
                     suggestion: item,
                     detail: result.details[item.id],
                     isAdding: addingID == item.id,
+                    isOwned: ownedIDs.contains(item.id),
                     onAdd: { onAdd(item) }
                 )
                 if item.id != result.suggestions.last?.id {
@@ -117,6 +124,7 @@ struct UsefulWordRow: View {
     let suggestion: UsefulWordSuggestion
     let detail: UsefulWordDetail?
     let isAdding: Bool
+    var isOwned: Bool = false
     let onAdd: () -> Void
 
     @Environment(SpeechService.self) private var speech
@@ -124,11 +132,16 @@ struct UsefulWordRow: View {
     var body: some View {
         HStack(alignment: .center, spacing: Spacing.xs) {
             UsefulWordText(suggestion: suggestion, detail: detail, showsExample: false)
+                .ownedVocabularyDimmed(isOwned)
             Spacer(minLength: 0)
             SpeakButton(size: .small, accessibilityLabel: "Odtwórz wymowę „\(suggestion.candidate.term)”") {
                 speech.speak(suggestion.candidate.term)
             }
-            UsefulWordAddButton(term: suggestion.candidate.term, isAdding: isAdding, action: onAdd)
+            if isOwned {
+                OwnedVocabularyBadge()
+            } else {
+                UsefulWordAddButton(term: suggestion.candidate.term, isAdding: isAdding, action: onAdd)
+            }
         }
         .padding(.vertical, Spacing.xs)
     }

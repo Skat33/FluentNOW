@@ -21,6 +21,10 @@ final class AppEnvironment {
     let assistant: AssistantService
     let preferences: AppPreferences
     let reports: ExerciseReportStore
+    /// Zdjęcia do ćwiczenia „Słowo i zdjęcie” (aktor; Openverse, cache na dysku) — G2.
+    let images: WordImageService
+    /// Zgłoszenia „Zdjęcie nie pasuje” (osobny plik `image-reports.json`) — G2.
+    let imageReports: ImageReportStore
 
     /// Tryb podglądu (bez usług systemowych).
     let isPreview: Bool
@@ -40,7 +44,9 @@ final class AppEnvironment {
         assistant: AssistantService,
         preferences: AppPreferences,
         reports: ExerciseReportStore,
-        isPreview: Bool
+        isPreview: Bool,
+        images: WordImageService? = nil,
+        imageReports: ImageReportStore? = nil
     ) {
         self.store = store
         self.content = content
@@ -50,6 +56,8 @@ final class AppEnvironment {
         self.assistant = assistant
         self.preferences = preferences
         self.reports = reports
+        self.images = images ?? WordImageService.offline()
+        self.imageReports = imageReports ?? ImageReportStore(fileURL: nil)
         self.isPreview = isPreview
         wireDeleteAll()
     }
@@ -78,7 +86,9 @@ final class AppEnvironment {
             assistant: AssistantService(preferences: preferences, content: content),
             preferences: preferences,
             reports: ExerciseReportStore(fileURL: ExerciseReportStore.defaultFileURL()),
-            isPreview: false
+            isPreview: false,
+            images: WordImageService(),
+            imageReports: ImageReportStore(fileURL: ImageReportStore.defaultFileURL())
         )
         if let notice = setup.notice {
             store.setStartupNotice(notice, backupURL: setup.backupURL)
@@ -142,6 +152,22 @@ final class AppEnvironment {
         await sync.refresh()
         await reminders.refreshAuthorization()
         assistant.refreshAvailability()
+        prefetchWordImages()
+    }
+
+    /// Pobiera w tle zdjęcia do ćwiczenia „Słowo i zdjęcie” (G2): kandydaci liczeni poza głównym
+    /// wątkiem, pobieranie w aktorze z limitem zapytań. Bez internetu nic się nie dzieje.
+    func prefetchWordImages() {
+        guard !isPreview, store.loadPhase == .ready else { return }
+        let images = images
+        let store = store
+        Task(priority: .utility) {
+            let settled = await images.settledMeaningIDs()
+            let candidates = await store.compute { (state: LearnerState) -> [PictureCandidate] in
+                PictureExercise.prefetchCandidates(state: state, excluding: settled, limit: 24)
+            }
+            await images.prefetch(candidates)
+        }
     }
 
     /// Reakcja na zmianę fazy sceny: zapis przy przejściu w tło, odświeżenie przypomnień i iCloud.
@@ -215,8 +241,12 @@ final class AppEnvironment {
         let preferences = preferences
         let reminders = reminders
         let content = content
+        let images = images
+        let imageReports = imageReports
         store.onDeleteAll = {
             reports.removeAll()
+            imageReports.removeAll()
+            await images.removeAll()
             assistant.disconnectGemini()
             preferences.resetToDefaults()
             await reminders.cancelAll()

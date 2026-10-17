@@ -25,8 +25,11 @@ struct VocabFeedbackView: View {
                 StudyExplanationDisclosure(correct: model.outcome?.correct ?? false) {
                     VocabExplanationDetails(content: model.content)
                 }
-                if model.content.accepted.count > 1 && model.type != .flashcard {
+                if model.content.accepted.count > 1 && model.type != .flashcard && model.type != .picture {
                     VocabAcceptedVariants(answers: model.content.accepted)
+                }
+                if model.type == .picture {
+                    VocabPictureFeedbackActions(model: model)
                 }
                 StudyPronunciationButton(expected: model.content.word.en)
                 StudyReportButton(draft: model.content.reportDraft(answer: model.outcome?.value ?? model.answer))

@@ -22,17 +22,18 @@ struct VocabExerciseView: View {
                 )
                 VocabMetaRow(model: model)
                 VocabPromptView(model: model)
-                if model.type != .dictation {
+                if model.type != .dictation && model.type != .picture {
                     StudySentenceAudioButton(
                         text: model.content.sentenceAudio(solved: model.isFinished || model.revealed),
                         solved: model.isFinished || model.revealed
                     )
                 }
-                if model.type == .flashcard {
-                    VocabFlashcardActions(model: model, confidence: confidence, onDecision: onFlashcardDecision)
-                } else if !model.isFinished {
-                    VocabAnswerArea(model: model, focus: $answerFocused)
-                }
+                VocabExerciseInput(
+                    model: model,
+                    confidence: confidence,
+                    onFlashcardDecision: onFlashcardDecision,
+                    focus: $answerFocused
+                )
             }
             .modifier(VocabFlashcardSwipe(model: model, onDecision: onFlashcardDecision))
 
@@ -48,7 +49,7 @@ struct VocabExerciseView: View {
             }
         }
         .task(id: model.key) {
-            guard model.type != .flashcard, !model.isFinished else { return }
+            guard model.type != .flashcard, model.type != .picture, !model.isFinished else { return }
             // Fokus po pojawieniu się zadania (klawiatura gotowa od razu).
             try? await Task.sleep(nanoseconds: 120_000_000)
             answerFocused = true
@@ -71,6 +72,28 @@ struct VocabExerciseView: View {
         if model.type == .flashcard && onFlashcardDecision != nil { return }
         let summary = VocabFeedbackSummary(model: model)
         AccessibilityNotification.Announcement(summary.title).post()
+    }
+}
+
+/// Część odpowiedzi zależna od typu: fiszka (odsłoń / pamiętam), zdjęcia (wybór w siatce —
+/// nic więcej), pozostałe — pole odpowiedzi.
+private struct VocabExerciseInput: View {
+    let model: VocabExerciseModel
+    let confidence: Binding<ConfidenceLevel>?
+    let onFlashcardDecision: (() -> Void)?
+    let focus: FocusState<Bool>.Binding
+
+    var body: some View {
+        switch model.type {
+        case .flashcard:
+            VocabFlashcardActions(model: model, confidence: confidence, onDecision: onFlashcardDecision)
+        case .picture:
+            EmptyView()
+        case .recall, .cloze, .meaning, .dictation:
+            if !model.isFinished {
+                VocabAnswerArea(model: model, focus: focus)
+            }
+        }
     }
 }
 

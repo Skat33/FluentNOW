@@ -51,10 +51,11 @@ public enum HintBuilder {
 
     // MARK: Vocabulary
 
-    /// Hints for a vocabulary exercise (recall, cloze, meaning, dictation). Flashcards have none.
+    /// Hints for a vocabulary exercise (recall, cloze, meaning, dictation). Flashcards and the
+    /// picture exercise (one tap, no typing) have none.
     /// `exampleIndex` is the index of the example shown (the cloze answer is the form used there).
     public static func vocabularyHints(word: Word, meaning: Meaning, type: ExerciseType, exampleIndex: Int, variants: AnswerVariants = .builtIn) -> HintSet {
-        guard type != .flashcard else { return .empty }
+        guard type != .flashcard, type != .picture else { return .empty }
         let answers = vocabularyMaskTerms(word: word, meaning: meaning, type: type, exampleIndex: exampleIndex, variants: variants)
         let primary = primaryVocabularyAnswer(word: word, meaning: meaning, type: type, exampleIndex: exampleIndex)
         var lines: [String] = []
@@ -113,7 +114,7 @@ public enum HintBuilder {
             return first.isEmpty ? translation : first
         case .cloze:
             return withoutParentheses(gradingWord(word: word, meaning: meaning, type: type, exampleIndex: exampleIndex).en)
-        case .flashcard, .recall, .dictation:
+        case .flashcard, .recall, .dictation, .picture:
             return withoutParentheses(TextNormalizer.withoutDialectLabel(word.en))
         }
     }

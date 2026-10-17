@@ -16,6 +16,7 @@ struct StudySummaryView: View {
     var body: some View {
         VStack(spacing: Spacing.l) {
             StudySummaryHeader()
+            StudySummaryXPBadge(reviewIDs: data.reviewIDs, historyIDPrefix: data.historyIDPrefix)
             StudySummaryStats(data: data)
             if !data.modeLines.isEmpty {
                 StudySummaryModes(lines: data.modeLines)

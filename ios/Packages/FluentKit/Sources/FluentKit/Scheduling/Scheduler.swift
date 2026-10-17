@@ -70,6 +70,7 @@ public enum Scheduler {
             switch type {
             case .dictation: return "Słuchanie i pisownia"
             case .meaning: return "Znaczenie w kontekście"
+            case .picture: return "Rozpoznawanie ze zdjęcia"
             default: return "Przypominanie lub pisownia"
             }
         }
@@ -171,7 +172,9 @@ public enum Scheduler {
             session.index += 1
             session.correct += (correct && !hint) ? 1 : 0
             if !correct && session.tasks.count < maxSessionTasks {
-                let retryType: ExerciseType = session.mode == StudyMode.pairs.rawValue ? .cloze : task.type.retryType
+                let retryType: ExerciseType = session.mode == StudyMode.pairs.rawValue
+                    ? .cloze
+                    : SessionBuilder.retryType(after: task.type, meaning: meaning)
                 session.tasks.append(VocabTask(
                     wordId: task.wordId,
                     meaningId: task.meaningId,

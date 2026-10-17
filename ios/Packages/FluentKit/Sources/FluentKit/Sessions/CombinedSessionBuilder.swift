@@ -133,9 +133,11 @@ public enum CombinedSessionBuilder {
         content: PracticeContent,
         now: Timestamp,
         id: String = UUID().uuidString.lowercased(),
+        pictureMeaningIDs: Set<String> = [],
         using rng: inout G
     ) -> CombinedSession {
-        let selected = modes.uniqued()
+        // The flashcard deck has its own screen and never joins a combined session (G3).
+        let selected = modes.uniqued().filter { (mode: StudyMode) -> Bool in mode.isCombinable }
         guard !selected.isEmpty else {
             return CombinedSession(id: id, modes: [], random: random, minutes: minutes, tasks: [], updatedAt: now)
         }
@@ -163,7 +165,7 @@ public enum CombinedSessionBuilder {
                 continue
             }
             if mode.isVocabulary {
-                let session = SessionBuilder.makeSession(state: state, minutes: minutes, mode: mode, using: &rng)
+                let session = SessionBuilder.makeSession(state: state, minutes: minutes, mode: mode, pictureMeaningIDs: pictureMeaningIDs, using: &rng)
                 for task in session.tasks.prefix(count) {
                     tasks.append(.vocabulary(mode: mode, task: task))
                 }

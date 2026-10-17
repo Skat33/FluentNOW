@@ -22,7 +22,7 @@ struct VocabSessionView: View {
         }
         .task {
             if model == nil {
-                let created = VocabSessionModel(store: store, content: env.content, assistant: assistant)
+                let created = VocabSessionModel(store: store, content: env.content, assistant: assistant, images: env.images)
                 model = created
                 await created.prepare()
             }

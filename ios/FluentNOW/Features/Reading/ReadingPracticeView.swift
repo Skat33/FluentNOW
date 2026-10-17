@@ -1,14 +1,16 @@
 import SwiftUI
 import FluentKit
 
-/// Czytanie ze zrozumieniem (`state.reading`): tekst z banku na poziomie docelowym, pytania ABCD,
-/// wynik z fragmentem-dowodem. Zapis przez `PracticeFlow.submitReading` (pytania o słowo w kontekście
+/// Czytanie ze zrozumieniem (`state.reading`): tekst z banku na poziomie docelowym. Etapy (G1):
+/// sam tekst → pytania ABCD z pamięci (tekst ukryty, `ReadingSession.questionsStartedAt`) →
+/// wynik i tekst z fragmentami-dowodami. Zapis przez `PracticeFlow.submitReading` (pytania o słowo w kontekście
 /// delikatnie aktualizują rozpoznawanie — waga czytania, nie podnosi automatycznie wyniku słów).
 struct ReadingPracticeView: View {
     let autoStart: Bool
 
     @Environment(LearningStore.self) private var store
     @Environment(AppEnvironment.self) private var env
+    @Environment(SpeechService.self) private var speech
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var isStarting = false
     @State private var error: String?
@@ -52,41 +54,24 @@ struct ReadingPracticeView: View {
         }
     }
 
+    /// G1: najpierw sam tekst → pytania z pamięci (tekst ukryty) → wyniki i tekst z dowodami.
     @ViewBuilder
     private func content(proxy: ScrollViewProxy) -> some View {
         if let current {
-            ReadingPassageCard(reading: current.reading)
-            ForEach(Array(current.reading.questions.enumerated()), id: \.offset) { index, question in
-                ReadingQuestionCard(
-                    number: index + 1,
-                    question: question,
-                    chosen: current.answers.studyItem(at: index) ?? -1,
-                    submitted: current.submitted
-                ) { choice in
+            switch current.stage {
+            case .reading:
+                ReadingFirstStage(reading: current.reading, questionCount: current.reading.questions.count) {
+                    beginQuestions(proxy: proxy)
+                }
+            case .questions:
+                ReadingQuestionsStage(session: current, onSelect: { (index: Int, choice: Int) in
                     select(question: index, choice: choice)
-                }
-            }
-            if current.submitted {
-                PracticeResultCard(
-                    correct: current.correctCount,
-                    total: current.reading.questions.count,
-                    message: "Pytania o słowo w kontekście delikatnie aktualizują jego rozpoznawanie.",
-                    buttonTitle: "Następny tekst",
-                    isLoading: isStarting
-                ) {
-                    start(proxy: proxy)
-                }
-                .id(StudyScrollID.feedback)
-            } else {
-                let unanswered = current.reading.questions.indices.filter { (current.answers.studyItem(at: $0) ?? -1) < 0 }.count
-                PrimaryButton("Sprawdź odpowiedzi", systemImage: "arrow.right") {
+                }, onSubmit: {
                     submit(proxy: proxy)
-                }
-                .disabled(unanswered > 0)
-                if unanswered > 0 {
-                    Text("Odpowiedz na wszystkie pytania (zostało: \(unanswered)).")
-                        .font(FluentFont.footnote)
-                        .foregroundStyle(Palette.inkSecondary)
+                })
+            case .results:
+                ReadingResultsStage(session: current, isStarting: isStarting) {
+                    start(proxy: proxy)
                 }
             }
         } else {
@@ -102,13 +87,22 @@ struct ReadingPracticeView: View {
         }
     }
 
+    private func beginQuestions(proxy: ScrollViewProxy) {
+        let now = store.now()
+        store.update(.answer) { (state: inout LearnerState) -> Void in
+            guard var reading = state.reading else { return }
+            reading.beginQuestions(at: now)
+            state.reading = reading
+        }
+        speech.stop()
+        AccessibilityNotification.Announcement("Tekst ukryty. Odpowiadaj z pamięci.").post()
+        proxy.scrollTo(StudyScrollID.top, anchor: .top)
+    }
+
     private func select(question index: Int, choice: Int) {
         store.update(.answer) { (state: inout LearnerState) -> Void in
-            guard var reading = state.reading, !reading.submitted, index < reading.reading.questions.count else { return }
-            while reading.answers.count < reading.reading.questions.count {
-                reading.answers.append(-1)
-            }
-            reading.answers[index] = choice
+            guard var reading = state.reading else { return }
+            reading.answer(question: index, choice: choice)
             state.reading = reading
         }
     }

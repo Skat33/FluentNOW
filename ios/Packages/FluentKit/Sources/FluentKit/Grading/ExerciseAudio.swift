@@ -72,14 +72,22 @@ public enum ExerciseAudio {
     }
 }
 
-/// A piece of a reading passage; `wordId` is set for saved vocabulary.
+/// A piece of a reading passage; `wordId` is set for saved vocabulary, `glossaryIndex` for an
+/// entry of the reading's contextual glossary (both can be set).
 public struct ReadingToken: Sendable, Hashable {
     public var text: String
     public var wordId: String?
+    public var glossaryIndex: Int?
 
-    public init(text: String, wordId: String? = nil) {
+    public init(text: String, wordId: String? = nil, glossaryIndex: Int? = nil) {
         self.text = text
         self.wordId = wordId
+        self.glossaryIndex = glossaryIndex
+    }
+
+    /// `true` when the token can be tapped (saved word or glossary entry).
+    public var isHighlighted: Bool {
+        wordId != nil || glossaryIndex != nil
     }
 }
 

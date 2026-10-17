@@ -114,16 +114,14 @@ struct AddWordOutcome: Equatable {
 enum AddWordLogic {
     static let manualSource = "Dodane ręcznie"
 
-    /// Indeksy znaczeń, które użytkownik już ma (to samo hasło i tłumaczenie, poza archiwum).
+    /// Indeksy znaczeń, które użytkownik już ma (G6): to samo hasło i tłumaczenie albo ten sam
+    /// wpis bazy (`contentRef`), poza archiwum — `OwnedVocabulary`.
     static func knownSenseIndices(_ lookup: Lookup, words: [Word]) -> Set<Int> {
-        let termKey = TextNormalizer.normalize(lookup.term)
-        let existing = words.filter { !$0.archived && TextNormalizer.normalize($0.en) == termKey }
+        let owned = OwnedVocabulary(words: words)
         var result = Set<Int>()
-        for (index, sense) in lookup.meanings.enumerated() {
-            let key = TextNormalizer.normalize(TextNormalizer.withoutDialectLabel(sense.translation))
-            if existing.contains(where: { word in word.meanings.contains { TextNormalizer.normalize($0.translation) == key } }) {
-                result.insert(index)
-            }
+        for (index, sense) in lookup.meanings.enumerated()
+        where owned.contains(reference: sense.contentRef, term: lookup.term, translation: sense.translation) {
+            result.insert(index)
         }
         return result
     }

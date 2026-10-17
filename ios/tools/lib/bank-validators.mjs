@@ -6,6 +6,7 @@ import path from 'node:path';
 import {
   LEVELS, GROUPS, typeOf, checkShape, checkPlainString, englishHeuristics, bracketsBalanced, normalizeKey,
 } from '../validate-content.mjs';
+import { validateGlossary, loadGlossarySource, staleGlossaries } from './reading-glossary.mjs';
 
 const DIAGNOSES = ['wrong_tense', 'wrong_aspect', 'wrong_voice', 'wrong_agreement', 'wrong_word'];
 const AME_BRE_TAG = /\((?:AmE|BrE)\)/i;
@@ -171,8 +172,9 @@ function validateReadings(data, ctx) {
   data.readings.forEach((r, ri) => {
     const id = nonEmpty(r?.id) ? r.id : `reading#${ri + 1}`;
     const c = { ...ctx, id };
-    checkShape(r, { id: 'string', title: 'string', level: 'string', topic: 'string', paragraphs: 'array', questions: 'array', source: 'string' }, c, 'czytanka');
+    checkShape(r, { id: 'string', title: 'string', level: 'string', topic: 'string', paragraphs: 'array', questions: 'array', source: 'string' }, c, 'czytanka', { optional: { glossary: 'array' } });
     if (typeOf(r) !== 'object') return;
+    validateGlossary(r, c, { checkPlainString, typeOf });
     if (ids.has(id)) report.error(file, id, 'duplicate-id', `zdublowane id "${id}"`);
     ids.add(id);
     if (nonEmpty(r.title)) {
@@ -205,6 +207,12 @@ function validateReadings(data, ctx) {
       polishText(q.explanation, c, `${lbl}.explanation`);
     });
   });
+  // Słowniczki w readings.json muszą odpowiadać źródłu (ios/tools/data/reading-glossary.json).
+  const source = loadGlossarySource();
+  const known = data.readings.filter((r) => typeOf(r) === 'object' && r.id in source);
+  for (const id of staleGlossaries(known, source)) {
+    report.warn(file, id, 'glossary-stale', 'słowniczek różni się od ios/tools/data/reading-glossary.json — uruchom node ios/tools/apply-reading-glossary.mjs');
+  }
 }
 
 // ---------------------------------------------------------------------------

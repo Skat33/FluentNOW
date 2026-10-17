@@ -51,8 +51,11 @@ final class TopicSearchModel {
     var selection: Set<String> = []
     /// Widoczne poziomy CEFR.
     var levels: Set<String> = Set(CEFR.levels)
-    /// Wpisy już dodane do nauki (`Meaning.contentRef`).
+    /// Wpisy, które użytkownik już ma (G6): po `Meaning.contentRef` albo po haśle + tłumaczeniu.
+    /// Liczone z `owned` dla widocznych sekcji (`applyOwned`, `refreshAdded`).
     var added: Set<String> = []
+    /// Słownik użytkownika (migawka) — do dopasowania wpisów po haśle i tłumaczeniu.
+    @ObservationIgnored private var owned = OwnedVocabulary.empty
 
     private(set) var isAdding = false
     private(set) var progress: Double = 0
@@ -209,6 +212,7 @@ final class TopicSearchModel {
             }
             topicFiles = files
             sections = loaded
+            refreshAdded()
             var shown = suggestions.first { $0.match.topicID == match.topicID }
             if shown == nil {
                 let fallback = await content.topicSuggestions(for: [match])
@@ -300,6 +304,28 @@ final class TopicSearchModel {
     // MARK: Zaznaczanie
 
     func isAdded(_ reference: String) -> Bool { added.contains(reference) }
+
+    /// Nowa migawka słownika użytkownika → ponowne oznaczenie posiadanych wpisów.
+    func applyOwned(_ vocabulary: OwnedVocabulary) {
+        owned = vocabulary
+        refreshAdded()
+    }
+
+    /// Posiadane = referencja w słowniku albo to samo hasło z tym samym tłumaczeniem; takich
+    /// wpisów nie da się zaznaczyć, a licznik „Dodaj N słów” ich nie liczy.
+    private func refreshAdded() {
+        var result = owned.references
+        for section in sections {
+            for entry in section.entries {
+                let reference = section.reference(of: entry)
+                if owned.contains(reference: reference, term: entry.term, translation: entry.translation) {
+                    result.insert(reference)
+                }
+            }
+        }
+        added = result
+        selection.subtract(result)
+    }
 
     func toggle(_ reference: String) {
         guard !isAdded(reference) else { return }
@@ -393,6 +419,7 @@ final class TopicSearchModel {
         }
         selection.subtract(addedReferences)
         added.formUnion(addedReferences)
+        owned.references.formUnion(addedReferences)
         if let hydrationFailed {
             addError = hydrationFailed
         }

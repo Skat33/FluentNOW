@@ -35,7 +35,8 @@ struct StudySetupCard: View {
             }
 
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 150), spacing: Spacing.s)], spacing: Spacing.s) {
-                ForEach(StudyMode.allCases, id: \.self) { mode in
+                // Fiszki mają własną kartę (osobny tryb, G3) — tu tylko tryby do łączenia.
+                ForEach(StudyMode.combinableModes, id: \.self) { mode in
                     StudyModeCard(
                         mode: mode,
                         isSelected: selected.contains(mode),
