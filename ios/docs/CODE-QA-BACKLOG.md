@@ -15,3 +15,11 @@ Każdy punkt sprawdzić i naprawić lub uzasadnić w raporcie code-qa.
 - [ ] Testy jednostkowe czystych funkcji z obszaru ui-library (lista w raporcie ui-library).
 - [ ] Drobne (opcjonalne): wspólny wiersz-checkbox i tokeny kolorów heatmapy w DesignSystem (zgłoszenie ui-library).
 - [ ] platform-services prośby i ryzyka: raport platform-services §4–§5 (powiadomienia synchronizacji SwiftData, FoundationModels vs SDK iOS 26.0, import JSON na głównym wątku).
+
+## Runda 2 (po FEEDBACK-1/2)
+- [ ] XP/seria/cel dzienny liczone w dniach UTC — nauka 0:00–2:00 czasu PL wpada w następny dzień; przejść na kalendarz użytkownika (onboarding-progress §6).
+- [ ] Sesja łączona: etap „tylko tekst” czytanki nie jest zapisywany — po wznowieniu tekst pokazuje się ponownie (reading-redesign).
+- [ ] `verify-export.mjs` powinien ignorować pole `glossary` czytanek.
+- [ ] Filtr „rzeczownik do sfotografowania” przepuszcza abstrakcje (voucher, spreadsheet) — dopracować na podstawie `image-reports.json`.
+- [ ] Profil: `preferredExerciseTypes()` i `ProfileLevel.estimate` niepodpięte do budowania sesji / czytania / gramatyki (opcjonalne).
+- [ ] Ryzyka kompilacji rundy 1–2: raporty topic-search §, learning-fixes, recommendations, practice-modes §4, onboarding-progress §6, reading-redesign (AttributedString w ReadingHighlighting.swift).
