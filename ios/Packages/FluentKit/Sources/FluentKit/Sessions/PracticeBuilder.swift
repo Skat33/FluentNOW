@@ -109,10 +109,9 @@ public enum PracticeBuilder {
         if wrong.count < 3 {
             wrong.append(extraDistractors[item.answer] ?? "to \(item.answer)")
         }
-        var context = item.context
-        if !item.hintPl.isEmpty, let range = context.range(of: " (\(item.hintPl))") {
-            context.replaceSubrange(range, with: "")
-        }
+        // Polski bezokolicznik „(wynegocjować)” zostaje w zdaniu: w sesji łączonej zadanie bywa
+        // wpisywane ręcznie i bez niego jest niejednoznaczne (strona go wycinała, bo miała tylko ABCD).
+        let context = item.context
         return PracticeQuestion(
             format: nil,
             inputHint: gapHint(item.context) ?? item.rule,
