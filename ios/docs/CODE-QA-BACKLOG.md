@@ -23,3 +23,4 @@ Każdy punkt sprawdzić i naprawić lub uzasadnić w raporcie code-qa.
 - [ ] Filtr „rzeczownik do sfotografowania” przepuszcza abstrakcje (voucher, spreadsheet) — dopracować na podstawie `image-reports.json`.
 - [ ] Profil: `preferredExerciseTypes()` i `ProfileLevel.estimate` niepodpięte do budowania sesji / czytania / gramatyki (opcjonalne).
 - [ ] Ryzyka kompilacji rundy 1–2: raporty topic-search §, learning-fixes, recommendations, practice-modes §4, onboarding-progress §6, reading-redesign (AttributedString w ReadingHighlighting.swift).
+- [ ] Dystraktory w „Wybierz znaczenie”: pomijać hasła z identycznym `translation` jak poprawna odpowiedź (np. keep someone posted / keep someone in the loop) — zgłoszenie english-qa-T3; sprawdzić, czy `PolishAnswerIndex` już to pokrywa.
