@@ -49,15 +49,21 @@ struct VocabExerciseView: View {
             }
         }
         .task(id: model.key) {
-            guard model.type != .flashcard, model.type != .picture, !model.isFinished else { return }
+            guard model.inputStyle == .typing, !model.isFinished else { return }
             // Fokus po pojawieniu się zadania (klawiatura gotowa od razu).
             try? await Task.sleep(nanoseconds: 120_000_000)
             answerFocused = true
         }
+        .onChange(of: model.inputStyle) { (_: VocabInputStyle, style: VocabInputStyle) in
+            // „Pokaż warianty” chowa pole — klawiatura znika razem z nim.
+            if style != .typing {
+                answerFocused = false
+            }
+        }
         .onChange(of: model.phase) { _, phase in
             switch phase {
             case .retry:
-                answerFocused = true
+                answerFocused = model.inputStyle == .typing
             case .finished:
                 answerFocused = false
                 announceResult()
@@ -84,12 +90,15 @@ private struct VocabExerciseInput: View {
     let focus: FocusState<Bool>.Binding
 
     var body: some View {
-        switch model.type {
+        // Zawsze jeden mechanizm odpowiedzi (H1): opcje znaczenia widoczne → tylko wybór.
+        switch model.inputStyle {
         case .flashcard:
             VocabFlashcardActions(model: model, confidence: confidence, onDecision: onFlashcardDecision)
         case .picture:
             EmptyView()
-        case .recall, .cloze, .meaning, .dictation:
+        case .choice:
+            VocabMeaningChoiceArea(model: model)
+        case .typing:
             if !model.isFinished {
                 VocabAnswerArea(model: model, focus: focus)
             }

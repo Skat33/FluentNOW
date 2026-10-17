@@ -8,11 +8,14 @@ enum WordImageError: Error, LocalizedError, Equatable {
     case http(Int)
     case invalidResponse
     case notAnImage
+    case timedOut
 
     var errorDescription: String? {
         switch self {
         case .offline:
             return "Brak połączenia z internetem — zdjęcia pobierzemy później."
+        case .timedOut:
+            return "Serwis zdjęć odpowiada zbyt wolno — spróbujemy później."
         case .rateLimited:
             return "Serwis zdjęć prosi o chwilę przerwy. Spróbujemy później."
         case .http(let code):
@@ -27,7 +30,8 @@ enum WordImageError: Error, LocalizedError, Equatable {
 
 /// Openverse API (https://api.openverse.org/v1/, anonymous, no key).
 ///
-/// Verified 2026-10-15: `GET /v1/images/?q=…&license=cc0,by,by-sa&category=photograph&extension=jpg,png&mature=false&page_size=…`
+/// Verified 2026-10-15 and again 2026-10-17 (FEEDBACK-3 H2: search 200 with 240 results for
+/// „apple” / „cutting board”, `/thumb/` 200 `image/jpeg` with exactly our headers): `GET /v1/images/?q=…&license=cc0,by,by-sa&category=photograph&extension=jpg,png&mature=false&page_size=…`
 /// returns `results[]` with `id, title, url, thumbnail, foreign_landing_url, creator, creator_url,
 /// license, license_version, license_url, provider, source, width, height, filetype, mature`.
 /// Anonymous limits (response headers): searches 20/min and 200/day, thumbnails 1000/day;
@@ -48,8 +52,9 @@ struct OpenverseClient: Sendable {
     /// Session with short timeouts, no cookies, no waiting for connectivity (offline = fail fast).
     static func makeSession() -> URLSession {
         let configuration = URLSessionConfiguration.ephemeral
-        configuration.timeoutIntervalForRequest = 12
-        configuration.timeoutIntervalForResource = 25
+        // Searches measured on 2026-10-17 took 0.05–7 s; thumbnails 0.05–1 s.
+        configuration.timeoutIntervalForRequest = 20
+        configuration.timeoutIntervalForResource = 40
         configuration.waitsForConnectivity = false
         configuration.httpCookieStorage = nil
         configuration.httpShouldSetCookies = false
@@ -198,8 +203,14 @@ struct OpenverseClient: Sendable {
             result = try await session.data(for: request)
         } catch let error as URLError {
             switch error.code {
+            case .cancelled:
+                // The prefetch task was cancelled (app in the background) — not an error.
+                throw CancellationError()
+            case .timedOut:
+                // One slow answer (searches sometimes take 4–7 s) skips the word, not the whole run.
+                throw WordImageError.timedOut
             case .notConnectedToInternet, .networkConnectionLost, .dataNotAllowed, .internationalRoamingOff,
-                 .cannotFindHost, .cannotConnectToHost, .dnsLookupFailed, .timedOut:
+                 .cannotFindHost, .cannotConnectToHost, .dnsLookupFailed:
                 throw WordImageError.offline
             default:
                 throw WordImageError.invalidResponse

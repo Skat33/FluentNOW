@@ -97,6 +97,9 @@ public enum SessionBuilder {
         pictureMeaningIDs: Set<String> = [],
         using rng: inout G
     ) -> VocabSession {
+        if mode == .pictures {
+            return makePictureSession(state: state, minutes: minutes, collection: collection, pictureMeaningIDs: pictureMeaningIDs, using: &rng)
+        }
         let safeMinutes = max(1, minutes)
         var choices: [WordMeaning] = []
         for word in state.words where !word.archived && (collection == nil || word.collection == collection) {
@@ -161,6 +164,58 @@ public enum SessionBuilder {
             correct: 0,
             minutes: safeMinutes,
             mode: (mode.isVocabulary ? mode : .mixed).rawValue
+        )
+    }
+
+    /// „Słowa i obrazki” (FEEDBACK-3 H2): only „Słowo i zdjęcie” tasks, for meanings in
+    /// `pictureMeaningIDs` (photo and three distractor photos already cached). The mode is chosen
+    /// explicitly, so new meanings may take part too. Practiced meanings first (earliest due), then
+    /// new ones; at most `minutes × 60 / 20 s` tasks, shown in random order. Empty when no photo is
+    /// ready (the screen then explains that photos are still downloading).
+    public static func makePictureSession<G: RandomNumberGenerator>(
+        state: LearnerState,
+        minutes: Int,
+        collection: String? = nil,
+        pictureMeaningIDs: Set<String>,
+        using rng: inout G
+    ) -> VocabSession {
+        let safeMinutes = max(1, minutes)
+        var practiced: [(item: WordMeaning, due: Timestamp)] = []
+        var fresh: [WordMeaning] = []
+        if !pictureMeaningIDs.isEmpty {
+            for word in state.words where !word.archived && (collection == nil || word.collection == collection) {
+                for meaning in word.meanings where pictureMeaningIDs.contains(meaning.id) {
+                    let item = WordMeaning(word: word, meaning: meaning)
+                    if meaning.scores.isEmpty {
+                        fresh.append(item)
+                    } else {
+                        practiced.append((item: item, due: Mastery.due(meaning)))
+                    }
+                }
+            }
+        }
+        let ordered = practiced.stableSorted { $0.due < $1.due }.map { $0.item } + fresh
+        let limit = max(1, safeMinutes * 60 / ExerciseType.picture.estimatedSeconds)
+        var seenCounts: [String: Int] = [:]
+        for review in state.reviews {
+            seenCounts[review.meaningId, default: 0] += 1
+        }
+        var tasks: [VocabTask] = ordered.prefix(limit).map { (item: WordMeaning) -> VocabTask in
+            let example = ExamplePool.nextUnusedExample(item.meaning, fallback: seenCounts[item.meaning.id] ?? 0)
+            return VocabTask(wordId: item.word.id, meaningId: item.meaning.id, type: .picture, example: example)
+        }
+        var index = tasks.count - 1
+        while index > 0 {
+            let other = rng.nextIndex(below: index + 1)
+            tasks.swapAt(index, other)
+            index -= 1
+        }
+        return VocabSession(
+            tasks: tasks,
+            index: 0,
+            correct: 0,
+            minutes: safeMinutes,
+            mode: StudyMode.pictures.rawValue
         )
     }
 

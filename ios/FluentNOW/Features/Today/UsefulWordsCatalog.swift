@@ -35,9 +35,17 @@ actor UsefulWordsCatalog {
         let result: UsefulWordsResult
     }
 
+    /// Kandydaci (z `less_common` — tylko dla rodzin wyrazów) i indeks rodzin wyrazów (H4).
+    private struct Pool: Sendable {
+        let candidates: [UsefulWordCandidate]
+        let families: WordFamilyIndex?
+
+        static let empty = Pool(candidates: [], families: nil)
+    }
+
     private let root: URL?
-    private var candidates: [UsefulWordCandidate]?
-    private var candidatesTask: Task<[UsefulWordCandidate], Never>?
+    private var pool: Pool?
+    private var poolTask: Task<Pool, Never>?
     private var details: [String: UsefulWordDetail] = [:]
     private var unavailable: Set<String> = []
     private var cachedResults: [Int: CachedResult] = [:]
@@ -54,8 +62,9 @@ actor UsefulWordsCatalog {
         if let cached = cachedResults[limit], cached.seed == seed, cached.profile == profile {
             return cached.result
         }
-        let pool = await loadCandidates(content: content)
-        guard !pool.isEmpty else {
+        let loaded = await loadPool(content: content)
+        let candidates = loaded.candidates
+        guard !candidates.isEmpty else {
             return UsefulWordsResult(suggestions: [], details: [:], level: profile.level, targetLevel: profile.targetLevel)
         }
         var registers: [String: String] = [:]
@@ -65,7 +74,7 @@ actor UsefulWordsCatalog {
                 registers[reference] = detail.register
             }
             let options = UsefulWordOptions(limit: limit, registers: registers, excludedReferences: unavailable, seed: seed)
-            suggestions = UsefulWordRecommender.recommend(pool, profile: profile, options: options)
+            suggestions = UsefulWordRecommender.recommend(candidates, profile: profile, options: options, families: loaded.families)
             let unknown = suggestions.map { $0.id }.filter { details[$0] == nil && !unavailable.contains($0) }
             if unknown.isEmpty { break }
             await loadDetails(unknown)
@@ -89,36 +98,38 @@ actor UsefulWordsCatalog {
         item.reasons.contains { (reason: UsefulWordReason) -> Bool in
             switch reason {
             case .learnedTopic, .interest: return true
-            case .frequent, .fitsLevel, .nextLevel, .everyday: return false
+            case .frequent, .fitsLevel, .nextLevel, .everyday, .wordFamily: return false
             }
         }
     }
 
     // MARK: - Kandydaci
 
-    private func loadCandidates(content: ContentLibrary) async -> [UsefulWordCandidate] {
-        if let candidates { return candidates }
-        if let running = candidatesTask { return await running.value }
-        guard let root else { return [] }
+    /// Kandydaci i indeks rodzin wyrazów — budowane raz, w tle (`Task.detached`).
+    private func loadPool(content: ContentLibrary) async -> Pool {
+        if let pool { return pool }
+        if let running = poolTask { return await running.value }
+        guard let root else { return .empty }
         let topics: TopicIndex
         do {
             topics = try await content.topicIndex()
         } catch {
-            return []
+            return .empty
         }
         // Po `await` inny wywołujący mógł już zacząć budowę.
-        if let candidates { return candidates }
-        if let running = candidatesTask { return await running.value }
+        if let pool { return pool }
+        if let running = poolTask { return await running.value }
         let url = root.appendingPathComponent("dictionary-index.json")
-        let task = Task.detached(priority: .utility) { () -> [UsefulWordCandidate] in
+        let task = Task.detached(priority: .utility) { () -> Pool in
             guard let data = try? Data(contentsOf: url, options: [.mappedIfSafe]),
-                  let index = try? ContentDecoder.dictionaryIndex(from: data) else { return [] }
-            return UsefulWordRecommender.candidates(index: index, topics: topics)
+                  let index = try? ContentDecoder.dictionaryIndex(from: data) else { return .empty }
+            let candidates = UsefulWordRecommender.candidates(index: index, topics: topics, includeLessCommon: true)
+            return Pool(candidates: candidates, families: WordFamilyIndex(entries: index.entries))
         }
-        candidatesTask = task
+        poolTask = task
         let built = await task.value
-        candidatesTask = nil
-        if !built.isEmpty { candidates = built }
+        poolTask = nil
+        if !built.candidates.isEmpty { pool = built }
         return built
     }
 

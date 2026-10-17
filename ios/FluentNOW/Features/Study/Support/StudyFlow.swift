@@ -68,6 +68,7 @@ extension StudyMode {
         case .production: return "Wpisz formę czasownika, odczytując wskazówki ze zdania."
         case .languageMix: return "Gramatyka i idiomy: pytania ABCD i samodzielne wpisywanie."
         case .flashcards: return "Talia fiszek: odwróć kartę i przesuń — pamiętam albo jeszcze nie."
+        case .pictures: return "Angielskie słowo i cztery zdjęcia — wskaż właściwe."
         }
     }
 
@@ -82,6 +83,7 @@ extension StudyMode {
         case .production: return "character.cursor.ibeam"
         case .languageMix: return "sparkles"
         case .flashcards: return "rectangle.on.rectangle.angled"
+        case .pictures: return "photo.on.rectangle"
         }
     }
 

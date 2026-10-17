@@ -37,7 +37,12 @@ enum StudyPictureLoader {
         let target = WordMeaning(word: content.word, meaning: content.meaning)
         let pool = PictureExercise.cachedItems(state: state, cached: cached)
         var generator = SeededGenerator(seed: key)
-        let distractors = PictureExercise.distractors(for: target, pool: pool, using: &generator)
+        var distractors = PictureExercise.distractors(for: target, pool: pool, using: &generator)
+        if distractors.count < PictureExercise.optionCount - 1 {
+            // Losowanie trafiło na zestaw bez trzech wzajemnie różnych zdjęć — ten sam test co
+            // `readyMeaningIDs` (kolejność stała), więc zadanie uznane za gotowe zawsze się pokaże.
+            distractors = PictureExercise.greedyDistractors(for: target, pool: pool)
+        }
         guard distractors.count == PictureExercise.optionCount - 1 else { return nil }
         let order = PictureExercise.optionOrder(
             target: target.meaning.id,

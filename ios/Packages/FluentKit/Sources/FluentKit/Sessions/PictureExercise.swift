@@ -187,21 +187,40 @@ public enum PictureExercise {
 
     /// Meanings that can be asked right now: a cached photo and at least three clearly different
     /// distractors with cached photos. Passed to `SessionBuilder.makeSession(pictureMeaningIDs:)`.
+    /// The three distractors must also be clearly different from each other (the same rule as
+    /// `distractors`), so a meaning counted as ready can always be shown — the screen falls back to
+    /// `greedyDistractors` when the random draw of `distractors` comes up short.
     public static func readyMeaningIDs(state: LearnerState, cached: Set<String>) -> Set<String> {
         let items = cachedItems(state: state, cached: cached)
         guard items.count >= optionCount else { return [] }
         var ready = Set<String>()
-        for item in items {
-            var valid = 0
-            for other in items where isClearlyDifferent(item, other) {
-                valid += 1
-                if valid >= optionCount - 1 { break }
-            }
-            if valid >= optionCount - 1 {
-                ready.insert(item.meaning.id)
-            }
+        for item in items where greedyDistractors(for: item, pool: items).count >= optionCount - 1 {
+            ready.insert(item.meaning.id)
         }
         return ready
+    }
+
+    /// Deterministic distractors in pool order: each one clearly different from the target and
+    /// from the ones already taken. Used to decide readiness and as the fallback of `distractors`.
+    public static func greedyDistractors(for target: WordMeaning, pool: [WordMeaning], count: Int = optionCount - 1) -> [WordMeaning] {
+        var chosen: [WordMeaning] = []
+        for item in pool where chosen.count < count && isClearlyDifferent(target, item) {
+            guard chosen.allSatisfy({ (other: WordMeaning) -> Bool in isClearlyDifferent(other, item) }) else { continue }
+            chosen.append(item)
+        }
+        return chosen
+    }
+
+    /// Number of meanings that can still get a photo (picturable, not settled) — the queue shown in
+    /// the settings diagnostics.
+    public static func pendingCount(state: LearnerState, excluding: Set<String>) -> Int {
+        var count = 0
+        for word in state.words where !word.archived {
+            for meaning in word.meanings where !excluding.contains(meaning.id) && isPicturable(word: word, meaning: meaning) {
+                count += 1
+            }
+        }
+        return count
     }
 
     /// `true` when two meanings make an unambiguous pair of photos: different words, terms not

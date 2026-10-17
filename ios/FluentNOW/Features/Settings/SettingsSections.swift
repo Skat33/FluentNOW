@@ -252,6 +252,7 @@ struct SettingsDataSection: View {
             NavigationLink(value: SettingsRoute.exportData) {
                 Label("Eksportuj dane", systemImage: "square.and.arrow.up")
             }
+            StudyImageDiagnosticsRow()  // H2: zdjęcia do ćwiczeń — liczby, kolejka, ostatni błąd (study-polish)
             Button(role: .destructive) {
                 confirmStep1 = true
             } label: {

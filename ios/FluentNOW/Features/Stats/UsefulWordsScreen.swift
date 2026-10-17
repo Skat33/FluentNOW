@@ -192,7 +192,7 @@ private struct UsefulWordsIntro: View {
             Text("Słowa, które naprawdę przydają się w życiu")
                 .font(FluentFont.headline)
                 .foregroundStyle(Palette.ink)
-            Text("Tylko często używane w codziennym angielskim, do poziomu \(targetLevel) (Twój szacowany poziom: \(level)). Najpierw tematy, których się uczysz, i sytuacje z codzienności. Bez słów, które już masz.")
+            Text("Tylko często używane w codziennym angielskim, do poziomu \(targetLevel) (Twój szacowany poziom: \(level)). Najpierw tematy, których się uczysz, i sytuacje z codzienności. Do tego słowa z rodzin wyrazów, które znasz (np. decide → decision) — te mogą być rzadsze i o poziom trudniejsze. Bez słów, które już masz.")
                 .font(FluentFont.footnote)
                 .foregroundStyle(Palette.inkSecondary)
                 .fixedSize(horizontal: false, vertical: true)

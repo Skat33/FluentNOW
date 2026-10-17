@@ -41,26 +41,13 @@ struct VocabAnswerArea: View {
     }
 }
 
-/// „Pokaż warianty” w zadaniu „Wybierz znaczenie” — cztery opcje (`MeaningOptions`).
+/// „Pokaż warianty” w zadaniu „Wybierz znaczenie” wpisywanym z pamięci. Po dotknięciu pole
+/// tekstowe znika i zostaje sam wybór opcji (`VocabMeaningChoiceArea`, H1).
 private struct VocabMeaningVariants: View {
     let model: VocabExerciseModel
 
     var body: some View {
-        if model.variantsShown {
-            StudyChoiceList(
-                options: model.options,
-                selected: model.options.firstIndex(of: model.answer),
-                correct: nil,
-                isRevealed: false,
-                isEnabled: model.phase == .answering || model.phase == .retry,
-                marker: .numbers,
-                usesKeyboardShortcuts: false
-            ) { index in
-                if let option = model.options.studyItem(at: index) {
-                    model.choose(option)
-                }
-            }
-        } else if !model.options.isEmpty {
+        if !model.variantsShown && model.options.count >= 2 {
             Button(action: model.showVariants) {
                 Label("Pokaż warianty", systemImage: "list.bullet")
                     .font(FluentFont.subheadline.weight(.semibold))
@@ -118,6 +105,103 @@ private struct VocabAnswerActions: View {
     private func checkButton(fillsWidth: Bool) -> some View {
         PrimaryButton("Sprawdź", systemImage: "arrow.right", fillsWidth: fillsWidth, action: model.check)
             .disabled(!model.canCheck)
+    }
+}
+
+/// „Wybierz znaczenie” z widocznymi opcjami (H1): tylko wybór dotknięciem albo klawiszem 1–4 —
+/// bez pola tekstowego. Po pierwszym błędzie: druga próba z podpowiedzią, błędna opcja zablokowana.
+/// Po odpowiedzi lista zostaje z zaznaczeniem poprawnej i błędnej opcji.
+struct VocabMeaningChoiceArea: View {
+    let model: VocabExerciseModel
+
+    @Environment(AppPreferences.self) private var preferences
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: Spacing.s) {
+            if model.phase == .retry {
+                FeedbackPanel(
+                    kind: .almost,
+                    title: "Jeszcze nie",
+                    message: "Wybierz inną odpowiedź — podpowiedź masz poniżej.",
+                    playsHaptic: preferences.hapticsEnabled
+                )
+            }
+            VocabMeaningChoiceList(model: model)
+            if model.hintShown && !model.isFinished {
+                StudyHintBox(lines: model.visibleHints)
+            }
+            if !model.isFinished {
+                VocabChoiceHelpButtons(model: model)
+            }
+        }
+    }
+}
+
+/// Opcje znaczenia (1–4).
+private struct VocabMeaningChoiceList: View {
+    let model: VocabExerciseModel
+
+    var body: some View {
+        VStack(spacing: Spacing.xs) {
+            ForEach(Array(model.options.enumerated()), id: \.offset) { index, option in
+                StudyChoiceRow(
+                    marker: "\(index + 1)",
+                    text: option,
+                    state: rowState(index),
+                    isEnabled: isEnabled(index),
+                    shortcut: shortcut(index)
+                ) {
+                    model.chooseOption(at: index)
+                }
+            }
+        }
+    }
+
+    private var isAnswering: Bool {
+        model.phase == .answering || model.phase == .retry
+    }
+
+    private func isEnabled(_ index: Int) -> Bool {
+        isAnswering && !model.wrongOptions.contains(index)
+    }
+
+    private func shortcut(_ index: Int) -> KeyEquivalent? {
+        guard isEnabled(index), index < 9 else { return nil }
+        return KeyEquivalent(Character("\(index + 1)"))
+    }
+
+    private func rowState(_ index: Int) -> StudyChoiceRow.RowState {
+        if model.isFinished {
+            if index == model.correctOption { return .correct }
+            if index == model.chosenOption || model.wrongOptions.contains(index) { return .wrong }
+            return .idle
+        }
+        return model.wrongOptions.contains(index) ? .wrong : .idle
+    }
+}
+
+/// Podpowiedź (kolejne poziomy) i — w drugiej próbie — „Pokaż odpowiedź”. Bez „Sprawdź”:
+/// dotknięcie opcji jest odpowiedzią.
+private struct VocabChoiceHelpButtons: View {
+    let model: VocabExerciseModel
+
+    var body: some View {
+        if model.canShowMoreHints || model.phase == .retry {
+            HStack(spacing: Spacing.m) {
+                if model.canShowMoreHints {
+                    StudyHintButton(title: model.hintShown ? "Więcej podpowiedzi" : "Podpowiedź") {
+                        model.showHint()
+                    }
+                }
+                if model.phase == .retry {
+                    Button("Pokaż odpowiedź", action: model.giveUp)
+                        .font(FluentFont.subheadline.weight(.semibold))
+                        .foregroundStyle(Palette.accent)
+                        .frame(minHeight: HitTarget.minimum)
+                }
+                Spacer(minLength: 0)
+            }
+        }
     }
 }
 

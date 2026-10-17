@@ -225,7 +225,7 @@ public enum PracticeKind: String, Codable, CaseIterable, Sendable, Hashable {
 }
 
 /// The study modes of the exercise picker / combined sessions (the web's eight) plus the
-/// iOS-only flashcard deck (G3).
+/// iOS-only flashcard deck (G3) and picture mode (FEEDBACK-3 H2).
 ///
 /// Decoding stays tolerant: `CombinedSession.modes` drops unknown raw values, `VocabSession.mode`
 /// is a plain string (unknown → `.mixed`), and a combined task with an unknown mode only discards
@@ -242,9 +242,13 @@ public enum StudyMode: String, Codable, CaseIterable, Sendable, Hashable {
     /// „Fiszki”: separate deck mode (due → new → hard, swipe to answer). Never part of a
     /// combined session.
     case flashcards
+    /// „Słowa i obrazki” (FEEDBACK-3 H2): only „Słowo i zdjęcie” tasks for meanings whose photos
+    /// are already cached. Its own card on the study screen, never part of a combined session.
+    /// Old app versions decode the stored session mode as `.mixed` (plain string, see `VocabSession`).
+    case pictures
 
     /// Modes offered in the multi-select picker and combined sessions (everything except
-    /// flashcards).
+    /// flashcards and pictures).
     public static let combinableModes: [StudyMode] = allCases.filter { $0.isCombinable }
 
     /// Polish label (`studyLabels`).
@@ -259,17 +263,19 @@ public enum StudyMode: String, Codable, CaseIterable, Sendable, Hashable {
         case .production: return "Produkcja gramatyczna"
         case .languageMix: return "Miks językowy"
         case .flashcards: return "Fiszki"
+        case .pictures: return "Słowa i obrazki"
         }
     }
 
     /// Modes built from the learner's own vocabulary (`makeSession`).
     public var isVocabulary: Bool {
-        self == .mixed || self == .mistakes || self == .pairs
+        self == .mixed || self == .mistakes || self == .pairs || self == .pictures
     }
 
-    /// `false` for the flashcard deck, which has its own screen and never joins a combined session.
+    /// `false` for the flashcard deck and the picture mode, which have their own cards on the
+    /// study screen and never join a combined session.
     public var isCombinable: Bool {
-        self != .flashcards
+        self != .flashcards && self != .pictures
     }
 }
 

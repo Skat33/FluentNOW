@@ -173,6 +173,21 @@ struct UsefulWordAddButton: View {
     }
 }
 
+/// Uzasadnienie polecenia; słowo, z którego rodziny pochodzi propozycja (H4), kursywą:
+/// „Z rodziny słowa *decide*, które znasz · często używane”.
+enum UsefulWordSummaryText {
+    static func attributed(_ suggestion: UsefulWordSuggestion) -> AttributedString {
+        let summary = suggestion.summaryPl
+        var text = AttributedString(summary)
+        guard let source = suggestion.familySource, !source.isEmpty else { return text }
+        let marker = UsefulWordReason.wordFamilyPrefixPl + source
+        guard let found = text.range(of: marker, options: [.caseInsensitive]) else { return text }
+        let start = text.characters.index(found.upperBound, offsetBy: -source.count)
+        text[start..<found.upperBound].inlinePresentationIntent = .emphasized
+        return text
+    }
+}
+
 /// Tekst wiersza: hasło + poziom, tłumaczenie, uzasadnienie (i opcjonalnie przykład).
 struct UsefulWordText: View {
     let suggestion: UsefulWordSuggestion
@@ -192,7 +207,7 @@ struct UsefulWordText: View {
                 .foregroundStyle(Palette.inkSecondary)
                 .fixedSize(horizontal: false, vertical: true)
             if !suggestion.summaryPl.isEmpty {
-                Text(suggestion.summaryPl)
+                Text(UsefulWordSummaryText.attributed(suggestion))
                     .font(FluentFont.footnote)
                     .foregroundStyle(Palette.accentSoftInk)
                     .fixedSize(horizontal: false, vertical: true)

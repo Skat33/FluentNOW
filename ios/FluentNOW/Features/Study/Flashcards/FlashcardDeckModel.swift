@@ -28,6 +28,10 @@ final class FlashcardDeckModel {
     private(set) var run = FlashcardRun(cards: [])
     /// Tył bieżącej karty jest widoczny.
     private(set) var revealed = false
+    /// Przód bieżącej karty po polsku (losowo dla każdej karty — H3); tył w drugim języku.
+    private(set) var frontIsPolish = false
+    /// „Pokaż przykład” — zdanie z tłumaczeniem, tylko na życzenie (H3).
+    private(set) var exampleShown = false
     /// Licznik decyzji (haptyka, animacja przejścia).
     private(set) var decisions = 0
     private(set) var isPreparing = false
@@ -106,11 +110,22 @@ final class FlashcardDeckModel {
         phase = .setup
         run = FlashcardRun(cards: [])
         revealed = false
+        exampleShown = false
     }
 
+    /// Dotknięcie karty: obrót na drugą stronę (i z powrotem).
     func flip() {
         guard phase == .running, currentCard != nil else { return }
         revealed.toggle()
+        if !revealed {
+            exampleShown = false
+        }
+    }
+
+    /// „Pokaż przykład” / „Ukryj przykład” (dostępne po odwróceniu karty).
+    func toggleExample() {
+        guard phase == .running, revealed else { return }
+        exampleShown.toggle()
     }
 
     /// Pamiętam / nie pamiętam: zapis i od razu następna karta (jak F3).
@@ -125,9 +140,8 @@ final class FlashcardDeckModel {
         runSeconds += seconds
         run.answer(remembered: remembered)
         run.dropMissing(in: store.state)
-        revealed = false
         decisions += 1
-        cardShownAt = Date()
+        showNextCard()
         if run.isFinished {
             phase = .finished
         }
@@ -160,10 +174,17 @@ final class FlashcardDeckModel {
 
     private func begin(with cards: [FlashcardCard]) {
         run = FlashcardRun(cards: cards)
-        revealed = false
         runSeconds = 0
-        cardShownAt = Date()
+        showNextCard()
         phase = .running
+    }
+
+    /// Nowa karta: przód zakryty, bez przykładu, język przodu losowany (PL albo EN).
+    private func showNextCard() {
+        revealed = false
+        exampleShown = false
+        frontIsPolish = Bool.random()
+        cardShownAt = Date()
     }
 }
 

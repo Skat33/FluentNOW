@@ -87,7 +87,7 @@ private struct FlashcardSetupView: View {
                     .font(FluentFont.display)
                     .foregroundStyle(Palette.ink)
                     .accessibilityAddTraits(.isHeader)
-                Text("Najpierw słowa do powtórki, potem nowe, na końcu trudne. W prawo — pamiętam, w lewo — jeszcze nie.")
+                Text("Na przodzie słowo po polsku albo po angielsku — dotknij, żeby obrócić kartę. W prawo — pamiętam, w lewo — jeszcze nie. Najpierw powtórki, potem nowe, na końcu trudne.")
                     .font(FluentFont.callout)
                     .foregroundStyle(Palette.inkSecondary)
             }
@@ -196,11 +196,16 @@ private struct FlashcardRunView: View {
                 FlashcardCardView(
                     card: card,
                     revealed: model.revealed,
+                    frontIsPolish: model.frontIsPolish,
                     onFlip: { flip() },
                     onDecision: { (remembered: Bool) in decide(remembered) }
                 )
                 .id(card.id)
                 .transition(Motion.contentTransition(reduceMotion: reduceMotion))
+                if model.revealed {
+                    FlashcardExampleView(card: card, isShown: model.exampleShown, onToggle: { toggleExample() })
+                        .transition(.opacity)
+                }
                 FlashcardDecisionButtons(onDecision: { (remembered: Bool) in decide(remembered) })
             }
             Text("Każdą odpowiedź zapisujemy od razu — możesz przerwać w dowolnej chwili.")
@@ -211,9 +216,16 @@ private struct FlashcardRunView: View {
         }
     }
 
+    /// Obrót karty: płynny, bez sprężynowania (sprężyna „przekręcałaby” kartę ponad 180°).
     private func flip() {
-        withAnimation(Motion.resolved(Motion.standard, reduceMotion: reduceMotion, fallback: Motion.reducedFade)) {
+        withAnimation(Motion.resolved(Animation.easeInOut(duration: 0.4), reduceMotion: reduceMotion, fallback: Motion.reducedFade)) {
             model.flip()
+        }
+    }
+
+    private func toggleExample() {
+        withAnimation(Motion.resolved(Motion.standard, reduceMotion: reduceMotion, fallback: Motion.reducedFade)) {
+            model.toggleExample()
         }
     }
 
@@ -247,7 +259,7 @@ private struct FlashcardProgressHeader: View {
     }
 }
 
-/// „Nie pamiętam” / „Pamiętam” (Enter = pamiętam, strzałki ← →).
+/// „Jeszcze nie” / „Pamiętam” (Enter = pamiętam, ← = jeszcze nie).
 private struct FlashcardDecisionButtons: View {
     let onDecision: (Bool) -> Void
 
@@ -260,7 +272,7 @@ private struct FlashcardDecisionButtons: View {
 
     @ViewBuilder
     private var buttons: some View {
-        SecondaryButton("Nie pamiętam", systemImage: "arrow.left") { onDecision(false) }
+        SecondaryButton("Jeszcze nie", systemImage: "arrow.left") { onDecision(false) }
             .keyboardShortcut(.leftArrow, modifiers: [])
         PrimaryButton("Pamiętam", systemImage: "checkmark") { onDecision(true) }
             .keyboardShortcut(.defaultAction)

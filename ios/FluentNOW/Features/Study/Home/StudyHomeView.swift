@@ -23,6 +23,7 @@ struct StudyHomeView: View {
     @State private var combinedDraft: CombinedSession?
     @State private var flowAfterSheet: StudyFlow?
     @State private var deckCounts: FlashcardDeckCounts?
+    @State private var picturesSnapshot: StudyPicturesSnapshot?
 
     var body: some View {
         ScrollView {
@@ -77,8 +78,11 @@ struct StudyHomeView: View {
             await updateDeckCounts()
         }
         .task(id: store.loadPhase) {
-            // Zdjęcia do „Słowo i zdjęcie” pobierają się w tle przed sesją (G2).
+            // Zdjęcia do „Słowo i zdjęcie” pobierają się w tle przed sesją (G2, H2).
             env.prefetchWordImages()
+        }
+        .task(id: picturesKey) {
+            await updatePicturesSnapshot()
         }
         .onChange(of: store.settings.profile?.updatedAt, initial: true) { (_: Double?, _: Double?) in
             applyProfileDefaults()
@@ -116,6 +120,9 @@ struct StudyHomeView: View {
         if prefersFlashcards && !store.activeWords.isEmpty {
             flashcardsCard
         }
+        if prefersPictures && !store.activeWords.isEmpty {
+            picturesCard
+        }
         StudySetupCard(
             minutes: minutesBinding,
             selected: modesBinding,
@@ -130,6 +137,9 @@ struct StudyHomeView: View {
         if !prefersFlashcards && !store.activeWords.isEmpty {
             flashcardsCard
         }
+        if !prefersPictures && !store.activeWords.isEmpty {
+            picturesCard
+        }
         StudyRecentHistoryCard(state: store.state)
     }
 
@@ -138,10 +148,40 @@ struct StudyHomeView: View {
         store.settings.profile?.styles.contains(.flashcards) ?? false
     }
 
+    /// Profil nauki (G4): „Obrazki” wśród ulubionych → karta „Słowa i obrazki” nad wyborem trybów.
+    private var prefersPictures: Bool {
+        store.settings.profile?.styles.contains(.pictures) ?? false
+    }
+
     private var flashcardsCard: some View {
         StudyFlashcardsCard(counts: deckCounts) {
             activeFlow = .flashcards(collection: collection)
         }
+    }
+
+    private var prefetcher: WordImagePrefetcher {
+        WordImagePrefetcher.shared(store: store, images: env.images)
+    }
+
+    private var picturesCard: some View {
+        let photos = prefetcher
+        return StudyPicturesCard(
+            snapshot: picturesSnapshot,
+            status: photos.status,
+            statusText: photos.statusText,
+            isStarting: isStarting,
+            onStart: { start(modes: [.pictures]) }
+        )
+    }
+
+    /// Klucz odświeżenia karty zdjęć: zmiana słów/wyników albo nowe zdjęcia na dysku.
+    private var picturesKey: String {
+        "\(store.revision)|\(prefetcher.cachedCount)|\(store.loadPhase == .ready)"
+    }
+
+    private func updatePicturesSnapshot() async {
+        guard store.loadPhase == .ready else { return }
+        picturesSnapshot = await StudyPicturesSnapshot.make(store: store, images: env.images)
     }
 
     private var loadError: String? {
@@ -254,6 +294,12 @@ struct StudyHomeView: View {
         if modes.contains(.flashcards) {
             collection = request.collection
             activeFlow = .flashcards(collection: request.collection)
+            return
+        }
+        // „Słowa i obrazki” (H2) — osobny tryb, bez zmiany zapamiętanego wyboru trybów.
+        if modes.contains(.pictures) {
+            collection = request.collection
+            start(modes: [.pictures])
             return
         }
         if modes.isEmpty { modes = [.mixed] }

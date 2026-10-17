@@ -155,19 +155,12 @@ final class AppEnvironment {
         prefetchWordImages()
     }
 
-    /// Pobiera w tle zdjęcia do ćwiczenia „Słowo i zdjęcie” (G2): kandydaci liczeni poza głównym
-    /// wątkiem, pobieranie w aktorze z limitem zapytań. Bez internetu nic się nie dzieje.
+    /// Pobiera w tle zdjęcia do ćwiczenia „Słowo i zdjęcie” (G2, H2): `WordImagePrefetcher` startuje
+    /// po pierwszej klatce, pracuje seriami w limitach Openverse, wznawia się po dodaniu słów,
+    /// zatrzymuje w tle. Kandydaci liczeni poza głównym wątkiem. Bez internetu nic się nie dzieje.
     func prefetchWordImages() {
         guard !isPreview, store.loadPhase == .ready else { return }
-        let images = images
-        let store = store
-        Task(priority: .utility) {
-            let settled = await images.settledMeaningIDs()
-            let candidates = await store.compute { (state: LearnerState) -> [PictureCandidate] in
-                PictureExercise.prefetchCandidates(state: state, excluding: settled, limit: 24)
-            }
-            await images.prefetch(candidates)
-        }
+        WordImagePrefetcher.shared(store: store, images: images).request()
     }
 
     /// Reakcja na zmianę fazy sceny: zapis przy przejściu w tło, odświeżenie przypomnień i iCloud.

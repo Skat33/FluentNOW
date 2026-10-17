@@ -104,7 +104,8 @@ final class PracticeModesTests: XCTestCase {
         var onlyDeck = SeededGenerator(seed: 1)
         XCTAssertTrue(CombinedSessionBuilder.makeSession(state: state, modes: [.flashcards], minutes: 5, random: false, content: .empty, now: testNow, using: &onlyDeck).tasks.isEmpty)
         XCTAssertFalse(StudyMode.combinableModes.contains(.flashcards))
-        XCTAssertEqual(StudyMode.combinableModes.count, StudyMode.allCases.count - 1)
+        XCTAssertFalse(StudyMode.combinableModes.contains(.pictures))
+        XCTAssertEqual(StudyMode.combinableModes.count, StudyMode.allCases.count - 2)
     }
 
     // MARK: G3 — the deck

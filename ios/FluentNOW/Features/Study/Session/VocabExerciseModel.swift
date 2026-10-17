@@ -14,6 +14,18 @@ enum VocabExercisePhase: Equatable {
     case finished
 }
 
+/// Sposób odpowiadania na zadanie — zawsze dokładnie jeden naraz (FEEDBACK-3 H1).
+enum VocabInputStyle: Equatable {
+    /// Fiszka: odsłoń → pamiętam / jeszcze nie.
+    case flashcard
+    /// „Słowo i zdjęcie”: dotknięcie zdjęcia.
+    case picture
+    /// „Wybierz znaczenie” z widocznymi opcjami: tylko dotknięcie opcji (klawisze 1–4), bez pola.
+    case choice
+    /// Pole tekstowe (tłumaczenie, luka, dyktando, znaczenie bez pokazanych wariantów).
+    case typing
+}
+
 /// Stan jednego zadania słownikowego (fiszka, tłumaczenie, luka, znaczenie, dyktando).
 /// Ocena wyłącznie przez FluentKit (`VocabularyGrader.localGrade`) i opcjonalnie `AssistantService`.
 @MainActor
@@ -39,6 +51,10 @@ final class VocabExerciseModel {
     private(set) var pictures: [StudyPictureOption] = []
     /// Indeks wybranego zdjęcia (po odpowiedzi).
     private(set) var selectedPicture: Int?
+    /// „Wybierz znaczenie” z opcjami: ostatnio wybrana opcja.
+    private(set) var chosenOption: Int?
+    /// Opcje wybrane błędnie (w drugiej próbie zablokowane i oznaczone).
+    private(set) var wrongOptions: [Int] = []
 
     private let variants: AnswerVariants
     private let assistant: AssistantService?
@@ -78,6 +94,22 @@ final class VocabExerciseModel {
         (phase == .answering || phase == .retry) && !answer.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 
+    /// Jeden mechanizm odpowiedzi naraz (H1): gdy opcje znaczenia są widoczne — tylko wybór.
+    var inputStyle: VocabInputStyle {
+        switch type {
+        case .flashcard: return .flashcard
+        case .picture: return .picture
+        case .meaning: return variantsShown && options.count >= 2 ? .choice : .typing
+        case .recall, .cloze, .dictation: return .typing
+        }
+    }
+
+    /// Indeks poprawnej opcji (tłumaczenie znaczenia) albo `nil`, gdy go wśród opcji nie ma.
+    var correctOption: Int? {
+        let key = TextNormalizer.normalize(content.meaning.translation)
+        return options.firstIndex { (option: String) -> Bool in TextNormalizer.normalize(option) == key }
+    }
+
     // MARK: Akcje
 
     /// Odsłania kolejny poziom podpowiedzi (pierwsza prośba — znaczenie, kolejna — pierwsze litery).
@@ -86,14 +118,42 @@ final class VocabExerciseModel {
         hintLevel += 1
     }
 
+    /// „Pokaż warianty”: od teraz odpowiedź tylko wyborem opcji (wpisany tekst znika — H1).
     func showVariants() {
-        guard phase != .finished else { return }
+        guard phase == .answering || phase == .retry else { return }
         variantsShown = true
+        if inputStyle == .choice {
+            answer = ""
+        }
     }
 
-    func choose(_ option: String) {
-        guard phase == .answering || phase == .retry else { return }
+    /// Dotknięcie opcji (lub klawisz 1–4) = odpowiedź. Ocena po tożsamości opcji, nie po tekście —
+    /// dystraktor nigdy nie zostanie uznany za „literówkę” poprawnej odpowiedzi. Pierwszy błąd daje
+    /// drugą próbę z podpowiedzią (błędna opcja zostaje oznaczona i zablokowana), jak przy wpisywaniu.
+    func chooseOption(at index: Int) {
+        guard inputStyle == .choice, phase == .answering || phase == .retry,
+              let option = options.studyItem(at: index), !wrongOptions.contains(index) else { return }
         answer = option
+        chosenOption = index
+        stoppedSeconds = elapsed()
+        let correct: Bool
+        if let expected = correctOption {
+            correct = index == expected
+        } else {
+            correct = VocabularyGrader.localGrade(
+                answer: option,
+                word: content.gradingWord,
+                meaning: content.meaning,
+                type: type,
+                variants: variants
+            ).isCorrect
+        }
+        if correct {
+            finish(with: Grade(verdict: .correct, explanation: "", spellingCorrect: true))
+            return
+        }
+        wrongOptions.append(index)
+        failed(Grade(verdict: .incorrect, explanation: "Wybrano „\(option)”.", spellingCorrect: false))
     }
 
     /// Wymienia dystraktory, gdy zasoby treści dotarły później (przed pokazaniem wariantów albo —
@@ -156,7 +216,7 @@ final class VocabExerciseModel {
 
     /// Sprawdza wpisaną odpowiedź (Enter / „Sprawdź”).
     func check() {
-        guard type != .flashcard, type != .picture, canCheck else { return }
+        guard inputStyle == .typing, canCheck else { return }
         let value = answer.trimmingCharacters(in: .whitespacesAndNewlines)
         stoppedSeconds = elapsed()
         let local = VocabularyGrader.localGrade(

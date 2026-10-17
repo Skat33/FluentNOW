@@ -82,15 +82,39 @@ struct WordImageStoreFile: Codable, Sendable {
     var assignments: [WordImageAssignment]
     /// Openverse asked us to slow down (HTTP 429) — no searches before this time (ms).
     var blockedUntil: Timestamp
+    /// Day number (`FluentClock` ms / day) the counters below belong to (H2: daily limits).
+    var counterDay: Int
+    /// Searches made on `counterDay` (anonymous Openverse limit: 200 per day).
+    var searchesToday: Int
+    /// Thumbnails downloaded on `counterDay` (anonymous limit: 1000 per day).
+    var downloadsToday: Int
+    /// End of the last background run (ms, 0 = never).
+    var lastRunAt: Timestamp
+    /// Polish description of the last problem (`nil` = the last run went fine).
+    var lastError: String?
 
-    init(version: Int = 1, assignments: [WordImageAssignment] = [], blockedUntil: Timestamp = 0) {
+    init(
+        version: Int = 2,
+        assignments: [WordImageAssignment] = [],
+        blockedUntil: Timestamp = 0,
+        counterDay: Int = 0,
+        searchesToday: Int = 0,
+        downloadsToday: Int = 0,
+        lastRunAt: Timestamp = 0,
+        lastError: String? = nil
+    ) {
         self.version = version
         self.assignments = assignments
         self.blockedUntil = blockedUntil
+        self.counterDay = counterDay
+        self.searchesToday = searchesToday
+        self.downloadsToday = downloadsToday
+        self.lastRunAt = lastRunAt
+        self.lastError = lastError
     }
 
     enum CodingKeys: String, CodingKey {
-        case version, assignments, blockedUntil
+        case version, assignments, blockedUntil, counterDay, searchesToday, downloadsToday, lastRunAt, lastError
     }
 
     init(from decoder: Decoder) throws {
@@ -100,7 +124,56 @@ struct WordImageStoreFile: Codable, Sendable {
         let lossy = (try? c.decode([FailableImageAssignment].self, forKey: .assignments)) ?? []
         assignments = lossy.compactMap { $0.value }
         blockedUntil = (try? c.decode(Double.self, forKey: .blockedUntil)) ?? 0
+        // Fields added in FEEDBACK-3 H2 — missing in files written by the first version.
+        counterDay = (try? c.decode(Int.self, forKey: .counterDay)) ?? 0
+        searchesToday = (try? c.decode(Int.self, forKey: .searchesToday)) ?? 0
+        downloadsToday = (try? c.decode(Int.self, forKey: .downloadsToday)) ?? 0
+        lastRunAt = (try? c.decode(Double.self, forKey: .lastRunAt)) ?? 0
+        lastError = try? c.decode(String.self, forKey: .lastError)
     }
+}
+
+/// Result of one background run (`WordImageService.prefetch`).
+struct WordImagePrefetchReport: Sendable, Equatable {
+    enum Stop: Sendable, Equatable {
+        /// Every candidate handled.
+        case finished
+        /// Another run is in progress — nothing done.
+        case busy
+        /// No network service (previews, tests).
+        case disabled
+        /// No internet connection.
+        case offline
+        /// Openverse asked to slow down (HTTP 429) or we are still waiting after one.
+        case rateLimited
+        /// Daily search / download budget used up.
+        case dailyLimit
+        /// Per-run limit reached — more candidates are waiting for the next run.
+        case runLimit
+        /// The task was cancelled (app went to the background).
+        case cancelled
+    }
+
+    var searches = 0
+    var downloads = 0
+    var stop: Stop = .finished
+}
+
+/// Numbers for the settings diagnostics (H2).
+struct WordImageDiagnostics: Sendable, Equatable {
+    /// Meanings whose photo is on disk.
+    var cachedCount: Int
+    /// Meanings searched without a usable photo (retried after 14 days).
+    var emptyCount: Int
+    var searchesToday: Int
+    var downloadsToday: Int
+    /// End of the last background run (ms, 0 = never).
+    var lastRunAt: Timestamp
+    var lastError: String?
+    /// No searches before this time (ms) after an HTTP 429.
+    var blockedUntil: Timestamp
+    /// `false` in previews and tests.
+    var networkEnabled: Bool
 }
 
 /// Decodes one assignment or `nil` (tolerant array decoding).

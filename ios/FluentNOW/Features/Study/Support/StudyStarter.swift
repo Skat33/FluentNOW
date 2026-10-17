@@ -24,6 +24,8 @@ enum StudyStarter {
         content: ContentLibrary,
         images: WordImageService? = nil
     ) async -> Outcome {
+        // Zdjęcia na kolejne sesje dociągają się w tle już teraz (H2) — nigdy nie czekamy na nie.
+        requestPhotos(store: store, images: images)
         var unique: [StudyMode] = []
         for mode in modes where !unique.contains(mode) {
             unique.append(mode)
@@ -44,12 +46,16 @@ enum StudyStarter {
     /// Nowa sesja słownictwa (`makeSession`) zapisana w `state.session`.
     /// `images`: zadania „Słowo i zdjęcie” tylko dla słów, których zdjęcia są już na dysku (G2).
     static func startVocabulary(mode: StudyMode, minutes: Int, collection: String?, store: LearningStore, images: WordImageService? = nil) async -> Outcome {
+        requestPhotos(store: store, images: images)
         let cached = await cachedPictureIDs(images)
         let session = await store.compute { (state: LearnerState) -> VocabSession in
             let ready = PictureExercise.readyMeaningIDs(state: state, cached: cached)
             return SessionBuilder.makeSession(state: state, minutes: minutes, mode: mode, collection: collection, pictureMeaningIDs: ready)
         }
         guard !session.tasks.isEmpty else {
+            if mode == .pictures {
+                return .message(await emptyPicturesMessage(store: store, images: images, cachedCount: cached.count))
+            }
             return .message(emptyVocabularyMessage(mode: mode, collection: collection, hasWords: !store.activeWords.isEmpty))
         }
         store.update(.session) { state in
@@ -66,6 +72,36 @@ enum StudyStarter {
     }
 
     // MARK: - Prywatne
+
+    /// Uruchamia (lub kontynuuje) pobieranie zdjęć w tle — bez czekania na wynik.
+    private static func requestPhotos(store: LearningStore, images: WordImageService?) {
+        guard let images else { return }
+        WordImagePrefetcher.shared(store: store, images: images).request()
+    }
+
+    /// „Słowa i obrazki” bez gotowych zdjęć: co się dzieje i co zrobić.
+    private static func emptyPicturesMessage(store: LearningStore, images: WordImageService?, cachedCount: Int) async -> String {
+        let picturable = await store.compute { (state: LearnerState) -> Int in
+            PictureExercise.pendingCount(state: state, excluding: [])
+        }
+        if picturable == 0 {
+            return "Wśród Twoich słów nie ma jeszcze rzeczy, które da się pokazać na zdjęciu. Dodaj np. temat „Owoce i warzywa”, „Dom” albo „Zwierzęta”."
+        }
+        guard let images else {
+            return "Zdjęcia nie są dostępne w tym trybie aplikacji."
+        }
+        let status = WordImagePrefetcher.shared(store: store, images: images).status
+        switch status {
+        case .offline:
+            return "Brak internetu — zdjęcia do ćwiczenia pobierzemy, gdy połączysz się z siecią. Zdjęcia pobrane wcześniej działają też offline."
+        case .waiting:
+            return "Serwis zdjęć prosi o przerwę. Gotowe zdjęcia: \(cachedCount). Dokończymy pobieranie za jakiś czas."
+        case .disabled:
+            return "Pobieranie zdjęć jest wyłączone."
+        case .idle, .working:
+            return "Zdjęcia jeszcze się pobierają (gotowe: \(cachedCount), potrzebne co najmniej \(PictureExercise.optionCount) różne). Zajrzyj za minutę."
+        }
+    }
 
     /// Znaczenia ze zdjęciem na dysku (pusty zbiór bez serwisu / bez zdjęć).
     private static func cachedPictureIDs(_ images: WordImageService?) async -> Set<String> {

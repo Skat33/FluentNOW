@@ -44,12 +44,18 @@ public enum UsefulWordReason: Sendable, Hashable {
     case everyday
     /// From a topic that matches the learner's goals or interests (topic name) — G4 profile.
     case interest(String)
+    /// From the word family of a word the learner has (that word's key) — H4, e.g. decide → decision.
+    case wordFamily(String)
 
     /// Polish text, e.g. „z tematu Restauracja, którego się uczysz”.
     public var textPl: String {
         switch self {
         case .frequent(let frequency):
-            return frequency == .veryCommon ? "bardzo często używane" : "często używane"
+            switch frequency {
+            case .veryCommon: return "bardzo często używane"
+            case .common: return "często używane"
+            case .lessCommon, .rare: return "rzadziej używane"
+            }
         case .fitsLevel(let level):
             return "pasuje do Twojego poziomu \(level)"
         case .nextLevel(let level):
@@ -60,8 +66,13 @@ public enum UsefulWordReason: Sendable, Hashable {
             return "przydatne na co dzień"
         case .interest(let name):
             return "z tematu \(name), który pasuje do Twoich celów"
+        case .wordFamily(let word):
+            return Self.wordFamilyPrefixPl + word + ", które znasz"
         }
     }
+
+    /// Text before the source word of `.wordFamily` (the app sets the word in italics).
+    public static let wordFamilyPrefixPl = "z rodziny słowa "
 }
 
 /// A ranked recommendation.
@@ -85,6 +96,14 @@ public struct UsefulWordSuggestion: Sendable, Hashable, Identifiable {
         guard let first = text.first else { return "" }
         return first.uppercased() + String(text.dropFirst())
     }
+
+    /// The learner's word whose family this suggestion comes from (H4), if any.
+    public var familySource: String? {
+        for reason in reasons {
+            if case .wordFamily(let word) = reason { return word }
+        }
+        return nil
+    }
 }
 
 /// What the learner already has and studies — the input of the ranking.
@@ -104,8 +123,11 @@ public struct UsefulWordProfile: Sendable, Hashable {
     public var topicPreferences: [String: Int]
     /// Topic group → bonus from goals and interests (`LearnerProfile.groupWeights`).
     public var groupPreferences: [String: Int]
+    /// Past participles from the `forms` of the learner's words → the word's key
+    /// („broken” → „break”) — extra word-family members (H4).
+    public var ownedForms: [String: String]
 
-    public init(level: String, targetLevel: String, ownedKeys: Set<String> = [], ownedReferences: Set<String> = [], topicCounts: [String: Int] = [:], collectionKeys: Set<String> = [], topicPreferences: [String: Int] = [:], groupPreferences: [String: Int] = [:]) {
+    public init(level: String, targetLevel: String, ownedKeys: Set<String> = [], ownedReferences: Set<String> = [], topicCounts: [String: Int] = [:], collectionKeys: Set<String> = [], topicPreferences: [String: Int] = [:], groupPreferences: [String: Int] = [:], ownedForms: [String: String] = [:]) {
         self.level = level
         self.targetLevel = targetLevel
         self.ownedKeys = ownedKeys
@@ -114,6 +136,7 @@ public struct UsefulWordProfile: Sendable, Hashable {
         self.collectionKeys = collectionKeys
         self.topicPreferences = topicPreferences
         self.groupPreferences = groupPreferences
+        self.ownedForms = ownedForms
     }
 
     /// Profile of a learner state. Level: `estimate` if given, otherwise `ProfileLevel.estimate`
@@ -127,9 +150,16 @@ public struct UsefulWordProfile: Sendable, Hashable {
         var references = Set<String>()
         var counts: [String: Int] = [:]
         var collections = Set<String>()
+        var forms: [String: String] = [:]
         for word in state.words {
             let key = TextNormalizer.searchKey(word.en)
             if !key.isEmpty { keys.insert(key) }
+            if WordFamily.isWordKey(key) {
+                for form in WordFamily.participles(fromForms: word.forms, of: key) {
+                    if let existing = forms[form], existing <= key { continue }
+                    forms[form] = key
+                }
+            }
             for meaning in word.meanings {
                 if let reference = meaning.contentRef { references.insert(reference) }
             }
@@ -149,7 +179,8 @@ public struct UsefulWordProfile: Sendable, Hashable {
             topicCounts: counts,
             collectionKeys: collections,
             topicPreferences: learner?.topicWeights() ?? [:],
-            groupPreferences: learner?.groupWeights() ?? [:]
+            groupPreferences: learner?.groupWeights() ?? [:],
+            ownedForms: forms
         )
     }
 
@@ -174,13 +205,22 @@ public struct UsefulWordOptions: Sendable, Hashable {
     /// Order of equally scored words (stable hash of `seed` + term, not alphabetical). The app
     /// passes the week number, so the list changes week to week but stays stable within a week.
     public var seed: Int
+    /// Word-family suggestions (H4) may be this many levels above the target (target + 1).
+    public var familyLevelSlack: Int
+    /// Maximum word-family suggestions; `nil` = derived from `limit` (20 → 5, 5 → 2).
+    public var maxFamilySuggestions: Int?
+    /// Maximum suggestions from the family of one word.
+    public var maxPerFamily: Int
 
-    public init(limit: Int = 20, maxPerTopic: Int? = nil, registers: [String: String] = [:], excludedReferences: Set<String> = [], seed: Int = 0) {
+    public init(limit: Int = 20, maxPerTopic: Int? = nil, registers: [String: String] = [:], excludedReferences: Set<String> = [], seed: Int = 0, familyLevelSlack: Int = 1, maxFamilySuggestions: Int? = nil, maxPerFamily: Int = 2) {
         self.limit = limit
         self.maxPerTopic = maxPerTopic
         self.registers = registers
         self.excludedReferences = excludedReferences
         self.seed = seed
+        self.familyLevelSlack = familyLevelSlack
+        self.maxFamilySuggestions = maxFamilySuggestions
+        self.maxPerFamily = maxPerFamily
     }
 }
 
@@ -191,6 +231,10 @@ public struct UsefulWordOptions: Sendable, Hashable {
 /// already has; topics the learner studies and everyday groups preferred; one meaning per term;
 /// variety (a cap per topic and per group). Deterministic: the same input gives the same output
 /// regardless of the candidate order.
+///
+/// Word families (FEEDBACK-3 H4, `WordFamilyIndex`): relatives of the learner's words
+/// (decide → decision) are preferred with the reason „Z rodziny słowa decide, które znasz”;
+/// they may also be `less_common` and one level above the target; capped per list and per word.
 public enum UsefulWordRecommender {
     /// Everyday topic groups (podstawy, codzienność, komunikacja, jedzenie, podróże, zdrowie, zakupy).
     public static let everydayGroups: Set<String> = ["basics", "daily", "communication", "food", "travel", "health", "money"]
@@ -201,12 +245,14 @@ public enum UsefulWordRecommender {
 
     // MARK: Candidates
 
-    public static func candidates(index: DictionaryIndex, topics: TopicIndex) -> [UsefulWordCandidate] {
-        candidates(entries: index.entries, topics: topics)
+    public static func candidates(index: DictionaryIndex, topics: TopicIndex, includeLessCommon: Bool = false) -> [UsefulWordCandidate] {
+        candidates(entries: index.entries, topics: topics, includeLessCommon: includeLessCommon)
     }
 
     /// Frequent entries with a valid level and a known topic (topics missing from the index are skipped).
-    public static func candidates(entries: [DictionaryIndex.Entry], topics: TopicIndex) -> [UsefulWordCandidate] {
+    /// `includeLessCommon`: also `less_common` entries — `recommend` uses them only as word-family
+    /// suggestions (H4), never as plain recommendations.
+    public static func candidates(entries: [DictionaryIndex.Entry], topics: TopicIndex, includeLessCommon: Bool = false) -> [UsefulWordCandidate] {
         var summaries: [String: TopicSummary] = [:]
         for topic in topics.topics where summaries[topic.id] == nil {
             summaries[topic.id] = topic
@@ -214,7 +260,8 @@ public enum UsefulWordRecommender {
         var result: [UsefulWordCandidate] = []
         result.reserveCapacity(entries.count)
         for entry in entries {
-            guard let frequency = entry.spokenFrequency, isFrequent(frequency) else { continue }
+            guard let frequency = entry.spokenFrequency,
+                  isFrequent(frequency) || (includeLessCommon && frequency == .lessCommon) else { continue }
             guard CEFR.isValid(entry.level), !TextScanning.trim(entry.translation).isEmpty else { continue }
             guard let reference = entry.contentReference else { continue }
             let name: String
@@ -248,6 +295,11 @@ public enum UsefulWordRecommender {
         frequency == .veryCommon || frequency == .common
     }
 
+    /// Frequent enough for a word-family suggestion: `very_common`, `common` or `less_common`.
+    public static func isUsefulFamilyFrequency(_ frequency: SpokenFrequency) -> Bool {
+        frequency != .rare
+    }
+
     /// Slang never; specialist register only for a topic the learner studies.
     public static func isAllowedRegister(_ register: String, learnedTopic: Bool) -> Bool {
         switch TextNormalizer.searchKey(register) {
@@ -260,12 +312,24 @@ public enum UsefulWordRecommender {
     // MARK: Ranking
 
     /// Ranked, varied suggestions (at most `options.limit`).
-    public static func recommend(_ candidates: [UsefulWordCandidate], profile: UsefulWordProfile, options: UsefulWordOptions = UsefulWordOptions()) -> [UsefulWordSuggestion] {
+    ///
+    /// `families` (H4): words from the word family of a word the learner has („Z rodziny słowa
+    /// decide, które znasz”) are preferred, may be `less_common` and up to
+    /// `options.familyLevelSlack` levels above the target; at most `options.maxFamilySuggestions`
+    /// of them, `options.maxPerFamily` per source word. `nil` = no family suggestions.
+    public static func recommend(_ candidates: [UsefulWordCandidate], profile: UsefulWordProfile, options: UsefulWordOptions = UsefulWordOptions(), families: WordFamilyIndex? = nil) -> [UsefulWordSuggestion] {
         let limit = max(0, options.limit)
         guard limit > 0, !candidates.isEmpty else { return [] }
         let maxIndex = CEFR.levels.count - 1
         let userIndex = CEFR.index(of: profile.level) ?? 0
         let targetIndex = max(userIndex, CEFR.index(of: profile.targetLevel) ?? min(maxIndex, userIndex + 1))
+        let familyLevelIndex = min(maxIndex, targetIndex + max(0, options.familyLevelSlack))
+        let sources: [String: FamilySource]
+        if let families {
+            sources = familySources(profile: profile, families: families)
+        } else {
+            sources = [:]
+        }
 
         var learnedCache: [String: Int] = [:]
         func learnedCount(_ candidate: UsefulWordCandidate) -> Int {
@@ -280,8 +344,11 @@ public enum UsefulWordRecommender {
 
         var best: [String: Ranked] = [:]
         for candidate in candidates {
-            guard isFrequent(candidate.frequency),
-                  let levelIndex = CEFR.index(of: candidate.level), levelIndex <= targetIndex,
+            let family = sources[candidate.key]
+            let frequent = family == nil ? isFrequent(candidate.frequency) : isUsefulFamilyFrequency(candidate.frequency)
+            let levelLimit = family == nil ? targetIndex : familyLevelIndex
+            guard frequent,
+                  let levelIndex = CEFR.index(of: candidate.level), levelIndex <= levelLimit,
                   !profile.ownedKeys.contains(candidate.key),
                   !profile.ownedReferences.contains(candidate.reference),
                   !options.excludedReferences.contains(candidate.reference) else { continue }
@@ -293,7 +360,7 @@ public enum UsefulWordRecommender {
                !isAllowedRegister(register, learnedTopic: learned > 0 || preferred) {
                 continue
             }
-            let suggestion = evaluate(candidate, levelIndex: levelIndex, userIndex: userIndex, targetIndex: targetIndex, learned: learned, profile: profile)
+            let suggestion = evaluate(candidate, levelIndex: levelIndex, userIndex: userIndex, targetIndex: targetIndex, learned: learned, family: family, profile: profile)
             let ranked = Ranked(suggestion: suggestion, level: levelIndex, tie: tieBreak(candidate.key, seed: options.seed))
             if let existing = best[candidate.key], !ranksBefore(ranked, existing) { continue }
             best[candidate.key] = ranked
@@ -301,7 +368,54 @@ public enum UsefulWordRecommender {
         let pool = best.values.sorted { (lhs: Ranked, rhs: Ranked) -> Bool in
             ranksBefore(lhs, rhs)
         }
-        return diversify(pool, limit: limit, maxPerTopic: options.maxPerTopic)
+        let caps = DiversityCaps(
+            limit: limit,
+            maxPerTopic: options.maxPerTopic,
+            maxFamily: options.maxFamilySuggestions ?? defaultMaxFamilySuggestions(limit: limit),
+            maxPerFamily: options.maxPerFamily
+        )
+        return diversify(pool, caps: caps)
+    }
+
+    /// Default cap of word-family suggestions in a list of `limit` items (20 → 5, 5 → 2, 30 → 8).
+    public static func defaultMaxFamilySuggestions(limit: Int) -> Int {
+        max(1, (limit + 3) / 4)
+    }
+
+    /// The learner's word a family suggestion comes from (`distance` 1 = direct derivation).
+    struct FamilySource: Sendable, Hashable {
+        let word: String
+        let distance: Int
+
+        /// Closer first, then the shorter (more basic) word, then alphabetical.
+        func isBetter(than other: FamilySource) -> Bool {
+            if distance != other.distance { return distance < other.distance }
+            if word.count != other.word.count { return word.count < other.word.count }
+            return word < other.word
+        }
+    }
+
+    /// Candidate key → the learner's word whose family it belongs to. Owned words are never
+    /// targets. Past participles from the learner's `forms` (broken ← break) count as distance 1.
+    static func familySources(profile: UsefulWordProfile, families: WordFamilyIndex) -> [String: FamilySource] {
+        var result: [String: FamilySource] = [:]
+        func offer(_ key: String, source: FamilySource) {
+            guard key != source.word, !profile.ownedKeys.contains(key) else { return }
+            if let existing = result[key], !source.isBetter(than: existing) { return }
+            result[key] = source
+        }
+        for owned in profile.ownedKeys where WordFamily.isWordKey(owned) {
+            for member in families.family(of: owned) {
+                offer(member.key, source: FamilySource(word: owned, distance: member.distance))
+            }
+        }
+        for (form, owner) in profile.ownedForms where WordFamily.isWordKey(form) {
+            offer(form, source: FamilySource(word: owner, distance: 1))
+            for member in families.family(of: form, maxDistance: 1) {
+                offer(member.key, source: FamilySource(word: owner, distance: 2))
+            }
+        }
+        return result
     }
 
     /// A scored suggestion with precomputed sort keys.
@@ -316,9 +430,18 @@ public enum UsefulWordRecommender {
         FNV1a.hash32("\(seed)|\(key)")
     }
 
-    private static func evaluate(_ candidate: UsefulWordCandidate, levelIndex: Int, userIndex: Int, targetIndex: Int, learned: Int, profile: UsefulWordProfile) -> UsefulWordSuggestion {
+    /// Bonus of a word-family suggestion (direct derivation / through one other word).
+    static func familyBonus(distance: Int) -> Int {
+        distance <= 1 ? 26 : 20
+    }
+
+    private static func evaluate(_ candidate: UsefulWordCandidate, levelIndex: Int, userIndex: Int, targetIndex: Int, learned: Int, family: FamilySource?, profile: UsefulWordProfile) -> UsefulWordSuggestion {
         var score = 0
         var reasons: [UsefulWordReason] = []
+        if let family {
+            score += familyBonus(distance: family.distance)
+            reasons.append(.wordFamily(family.word))
+        }
         if learned > 0 {
             score += 18 + min(12, learned / 2)
             reasons.append(.learnedTopic(candidate.topicName))
@@ -329,8 +452,17 @@ public enum UsefulWordRecommender {
             if learned == 0 { reasons.append(.interest(candidate.topicName)) }
         }
         score += preference.group
-        score += candidate.frequency == .veryCommon ? 40 : 26
-        reasons.append(.frequent(candidate.frequency))
+        switch candidate.frequency {
+        case .veryCommon:
+            score += 40
+            reasons.append(.frequent(.veryCommon))
+        case .common:
+            score += 26
+            reasons.append(.frequent(.common))
+        case .lessCommon, .rare:
+            // Only word-family suggestions get here (`recommend` filters the rest).
+            score += 14
+        }
         if levelIndex == userIndex {
             score += 20
             reasons.append(.fitsLevel(profile.level))
@@ -340,7 +472,7 @@ public enum UsefulWordRecommender {
         } else if levelIndex == userIndex - 1 {
             score += 10
             reasons.append(.fitsLevel(profile.level))
-        } else {
+        } else if levelIndex <= targetIndex {
             score += 2
         }
         if everydayGroups.contains(candidate.group) {
@@ -369,15 +501,29 @@ public enum UsefulWordRecommender {
         max(2, (limit + 4) / 5)
     }
 
+    /// Hard caps of the greedy selection.
+    struct DiversityCaps {
+        let limit: Int
+        let maxPerTopic: Int?
+        let maxFamily: Int
+        let maxPerFamily: Int
+    }
+
     /// Greedy selection with penalties for repeated topics / groups and hard caps.
     /// `pool` must be sorted with `ranksBefore`.
-    private static func diversify(_ ranked: [Ranked], limit: Int, maxPerTopic: Int?) -> [UsefulWordSuggestion] {
-        let pool = ranked.map { $0.suggestion }
-        let topicCap = max(1, maxPerTopic ?? defaultMaxPerTopic(limit: limit))
+    private static func diversify(_ ranked: [Ranked], caps: DiversityCaps) -> [UsefulWordSuggestion] {
+        let pool = ranked.map { (item: Ranked) -> UsefulWordSuggestion in item.suggestion }
+        let sources = pool.map { (item: UsefulWordSuggestion) -> String? in item.familySource }
+        let limit = caps.limit
+        let topicCap = max(1, caps.maxPerTopic ?? defaultMaxPerTopic(limit: limit))
         let groupCap = max(topicCap, (limit * 2 + 4) / 5)
+        let familyCap = max(0, caps.maxFamily)
+        let perFamilyCap = max(1, caps.maxPerFamily)
         var taken = [Bool](repeating: false, count: pool.count)
         var topicUsed: [String: Int] = [:]
         var groupUsed: [String: Int] = [:]
+        var familyUsed = 0
+        var perFamilyUsed: [String: Int] = [:]
         var result: [UsefulWordSuggestion] = []
         while result.count < limit {
             var bestIndex: Int?
@@ -391,6 +537,9 @@ public enum UsefulWordRecommender {
                 if topicCount >= topicCap { continue }
                 let groupCount = groupUsed[item.candidate.group] ?? 0
                 if groupCount >= groupCap { continue }
+                if let source = sources[index] {
+                    if familyUsed >= familyCap || (perFamilyUsed[source] ?? 0) >= perFamilyCap { continue }
+                }
                 let adjusted = item.score - 6 * topicCount - 3 * groupCount
                 if adjusted > bestValue {
                     bestValue = adjusted
@@ -402,6 +551,10 @@ public enum UsefulWordRecommender {
             let item = pool[chosen]
             topicUsed[item.candidate.topicID, default: 0] += 1
             groupUsed[item.candidate.group, default: 0] += 1
+            if let source = sources[chosen] {
+                familyUsed += 1
+                perFamilyUsed[source, default: 0] += 1
+            }
             result.append(item)
         }
         return result

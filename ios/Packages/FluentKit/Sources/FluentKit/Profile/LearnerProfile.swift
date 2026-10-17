@@ -379,8 +379,8 @@ public struct LearnerProfile: Codable, Sendable, Hashable {
             switch style {
             case .writing: raw.append(StudyMode.production.rawValue)
             case .listening: raw.append(StudyMode.mixed.rawValue)
-            // „Słowo i zdjęcie” (ExerciseType.picture) jest częścią sesji słówek.
-            case .pictures: raw.append(StudyMode.mixed.rawValue)
+            // Osobny tryb „Słowa i obrazki” (nie łączy się z innymi — `dailyMixModes` go pomija).
+            case .pictures: raw.append(StudyMode.pictures.rawValue)
             case .reading: raw.append(StudyMode.reading.rawValue)
             case .flashcards: raw.append(StudyMode.flashcards.rawValue)
             case .grammar:
