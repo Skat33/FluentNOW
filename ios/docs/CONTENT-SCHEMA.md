@@ -73,11 +73,43 @@ Reguły (sprawdzane walidatorem):
 | `register` | `neutralny`, `potoczny`, `formalny`, `specjalistyczny`, `slangowy` |
 | `contextPl` | kiedy się tego używa, po polsku, ≤ 80 znaków |
 | `natural` | opcjonalnie: bardziej potoczny odpowiednik angielski, inaczej `""` |
-| `forms` | formy nieregularne / liczba mnoga / odmiana czasownika (`go – went – gone`), inaczej `""` |
+| `forms` | odmiana według konwencji poniżej (czasownik: `go – went – gone`; rzeczownik: `boarding passes`; przymiotnik: `cozier – coziest`), inaczej `""` |
 | `examples` | **dokładnie 2**; `focusEn` ⊂ `en`, `focusPl` ⊂ `pl` (dokładny podciąg, wielkość liter też); `en` kończy się `.`, `?` lub `!` |
 | `acceptedAnswers` | angielskie warianty akceptowane przy przypominaniu (zawiera `term`) |
 | `acceptedTranslations` | 1–8 polskich odpowiedników tego znaczenia (zawiera `translation` lub jego rdzeń), z parami aspektowymi gdy równoważne (`pożyczyć`, `pożyczać`) |
 | Puste pola | zawsze `""` lub `[]`, nigdy `null` ani brak klucza |
+
+#### Konwencja `forms` (ujednolicona przez content-final, sprawdzana walidatorem jako ostrzeżenie `forms-base`)
+
+Znaki: ` – ` (półpauza ze spacjami) oddziela kolejne formy jednej odmiany; `; ` (średnik) oddziela grupy dodatkowe; `/` (bez spacji) oddziela warianty tej samej formy; nawias zawiera tylko polską etykietę.
+
+| Część mowy | Zapis | Przykłady |
+|---|---|---|
+| `czasownik`, `czasownik frazowy` | zawsze trzy formy: **forma hasła** – czas przeszły – imiesłów bierny; pierwsza forma jest dokładnie hasłem (nigdy 3. os. lp.). Opcjonalna grupa `; -ing` tylko wtedy, gdy pisownia -ing nie jest prostym dodaniem końcówki: podwojenie spółgłoski, `-ie → -ying`, `-c → -cking` | `go – went – gone`; `cancel – canceled – canceled`; `check in – checked in – checked in`; `stop – stopped – stopped; stopping`; `dive – dove/dived – dived`; `lie – lay – lain; lying` |
+| `zwrot`, `idiom` z czasownikiem | jak czasownik, ale formy całego wyrażenia zaczynające się od hasła; grupa `; -ing` (jeśli jest) podaje sam czasownik | `take a nap – took a nap – taken a nap`; `get the ball rolling – got the ball rolling – gotten the ball rolling; getting` |
+| hasła, które nie są formą bazową | pierwsza forma to forma bazowa wyrażenia | `killing it` → `kill it – killed it – killed it; killing it`; `running late` → `be running late – was/were running late – been running late`; `can't sleep` → `can't sleep – couldn't sleep` |
+| `rzeczownik` (też rzeczownikowe zwroty i idiomy) | liczba mnoga; warianty przez `/`; hasło w lm. → forma lp. z etykietą `(lp.)`; bez lm. → `(niepoliczalny)`; tylko lm. → `(liczba mnoga)`; lm. = lp. → samo hasło | `boarding passes`; `couch potatoes`; `radii/radiuses`; `departure (lp.)`; `(niepoliczalny); a piece of luggage`; `sheep` |
+| `przymiotnik`, `przysłówek` | stopień wyższy – najwyższy | `cozier – coziest`; `more polite – most polite`; `sooner – soonest` |
+| pozostałe | zwykle `""` | |
+
+AmE: `canceled`, `traveled`, `gotten`, `dove/dived`, `fit – fit – fit`, `burned/burnt`, `snuck/sneaked`.
+
+#### Konwencja IPA (Oxford Learner's US)
+
+- `/e/` zamiast `/ɛ/`; akcentowane `/ɜːr/`, nieakcentowane `/ər/` — bez `ɝ`, `ɚ`; `/iː uː ɑː ɔː oʊ/`; przed r: `/ɪr er ʊr ɑːr ɔːr/`; trójgłoski `/aɪər aʊər/`; `/æ/` przed r w wyrazach typu *carry, marry, character, clarify, parallel* (`/ˈkærəktər/`, `/ˈklærəfaɪ/`), ale `/er/` w *parent, area, -ary* (`/ˈperənt/`, `/ˈdɪkʃəneri/`).
+- Sylaby zredukowane zapisujemy z jawnym `/ə/`: `-ʃən`, `-ʒən`, `-bəl`, `-təl`, `-dəl`, `-kəl`, `-tən`, `-dən`, `-zən` (`/ˌkænsəˈleɪʃən/`, `/ˈteɪbəl/`, `/ˈbʌtən/`), nie `-ʃn`, `-bl`, `-tn` ani `n̩`/`l̩`.
+- W jednym wyrazie oznaczamy akcent główny i ewentualny poboczny **przed** nim (`/ˌkænsəˈleɪʃən/`); akcentu pobocznego po głównym w obrębie wyrazu nie zapisujemy (`/ˈɔːrɡənaɪz/`, `/ˈfiːdbæk/`). W zwrotach: jeden akcent główny na słowie nośnym, pozostałe akcentowane słowa z `ˌ` (`/ˈduː ˌdeɪt/`, `/ˌfaɪn ˈprɪnt/`); nieakcentowane *your* → `/jər/`, przyimki na końcu czasowników przyimkowych w formie słabej (`/ˈlʊk fər/`).
+- To samo hasło w tym samym znaczeniu ma tę samą transkrypcję we wszystkich tematach (różnice tylko dla różnych części mowy: *record* n./v., *close* adj./v.). Słowniczki czytanek (`tools/data/reading-glossary.json`) kopiują IPA z wpisu bazy wskazanego w `ref`.
+
+#### Ostrzeżenia redakcyjne walidatora (nie blokują, ale każde trafienie trzeba przejrzeć)
+
+| Reguła | Co zgłasza |
+|---|---|
+| `comma-splice` | zdanie EN, w którym przecinek łączy dwa zdania główne (`He's so sweet, he left…`); wyjątki: zdanie podrzędne lub wstęp przed przecinkiem, wołacz/krótki wykrzyknik, zdanie relacjonujące (`…, she told us.`), kontrast po przeczeniu (`I didn't block him, I just muted him.`, `It's not X, it's Y.`), cytaty. Poprawka: `;`, kropka/wykrzyknik albo spójnik |
+| `forms-base` | `forms` czasownika bez trzech form albo zaczynające się od 3. os. lp. / innej formy niż hasło (zob. konwencję wyżej) |
+| `pl-english` | angielskie „Sorry/OK/okay” w polskim zdaniu przykładu (po polsku: *przepraszam, wybacz, dobrze, w porządku, okej*) |
+| `pl-imperial-units` | liczba + mila/stopa/cal/funt/jard/uncja/galon, `mph`, `°F`/Fahrenheit w polskim zdaniu — przeliczamy na km, m, kg, °C (z naturalnym zaokrągleniem); nie dotyczy haseł, których tematem jest sama jednostka lub pomiar (*inch, foot, pound, mile, degree, width, area, altitude…*) |
+| `accepted-format` | pozycja `acceptedAnswers`/`acceptedTranslations` ze średnikiem — dwa warianty sklejone w jedną pozycję (grader porównuje pozycje w całości) |
 
 Na temat: 60–120 wpisów, 4–9 kategorii, w kategorii od najczęstszych do najrzadszych; najpierw rdzeń bez którego nie da się funkcjonować w sytuacji. Pełny zakres A1–C2 bez sztucznego wyrównywania.
 

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "fixture-rules",
+  "namePl": "Reguły redakcyjne (fixture)",
+  "nameEn": "Editorial rules (fixture)",
+  "group": "travel",
+  "symbol": "airplane.departure",
+  "summaryPl": "Poprawny strukturalnie plik, który ma wywołać ostrzeżenia reguł redakcyjnych.",
+  "aliases": ["fixture"],
+  "categories": [
+    {
+      "id": "fixture-rules.flights",
+      "namePl": "Loty",
+      "scenePl": "Hala odlotów",
+      "entries": [
+        {
+          "id": "fixture-rules.cancel",
+          "term": "cancel",
+          "ipa": "/ˈkænsəl/",
+          "pos": "czasownik",
+          "level": "A2",
+          "frequency": "common",
+          "translation": "odwołać",
+          "definition": "To say that a planned event will not happen.",
+          "register": "neutralny",
+          "contextPl": "Odwołany lot",
+          "natural": "",
+          "forms": "cancels – canceled – canceled",
+          "collocations": "cancel a flight",
+          "synonyms": "",
+          "antonyms": "",
+          "notePl": "",
+          "examples": [
+            { "en": "The airline canceled my flight, I need to find a new one.", "pl": "Sorry, linia odwołała mój lot i muszę znaleźć nowy.", "focusEn": "canceled", "focusPl": "odwołała" },
+            { "en": "They canceled the shuttle to the hotel near the airport.", "pl": "Odwołali autobus do hotelu, który jest dziesięć mil od lotniska.", "focusEn": "canceled", "focusPl": "Odwołali" }
+          ],
+          "acceptedAnswers": ["cancel"],
+          "acceptedTranslations": ["odwołać", "odwołać; anulować"]
+        }
+      ]
+    }
+  ]
+}

@@ -333,6 +333,82 @@ export function englishHeuristics(text, ctx, label, { article = true, repeat = t
 
 const AME_BRE_TAG = /\((?:AmE|BrE)\)/i;
 
+// --- Heurystyki redakcyjne (z raportów english-qa; tylko ostrzeżenia) --------
+
+// Comma splice: dwa zdania główne połączone samym przecinkiem („Hurry up, the bus…”, „He's so sweet, he left…”).
+// Wyjątki: zdanie podrzędne lub wstęp przed przecinkiem, wtrącenia, zdanie relacjonujące („…, she told us.”),
+// kontrast po przeczeniu („I didn't block him, I just muted him.”, „It's not X, it's Y.”), cytaty w cudzysłowie.
+const SPLICE_SUBORD = /^(?:if|when|whenever|because|since|although|though|even|while|before|after|once|unless|as|until|till|now that|by the time|so that|in case|whether|where|wherever|whatever|whoever|however|no matter|every time|the moment|the minute|next time|last time|the first time|the last time|like i said|like you said|given that|considering|assuming|provided)\b/i;
+const SPLICE_INTRO = /^(?:yes|yeah|yep|no|nope|oh|ah|well|ok|okay|sorry|please|thanks|thank you|honestly|actually|luckily|sadly|unfortunately|fortunately|hopefully|apparently|seriously|basically|anyway|besides|also|plus|first|second|third|finally|lastly|next|then|so|but|and|or|today|tonight|tomorrow|yesterday|usually|sometimes|normally|again|of course|excuse me|hey|hi|hello|wow|ugh|look|listen|trust me|believe me|in fact|for example|for instance|to be honest|to be fair|in my opinion|personally|frankly|by the way|at first|at least|after all|on the other hand|meanwhile|still|instead|otherwise|ideally|technically|in short|in general|generally|overall|right|sure|fine|great|perfect|alright|all right|this time|that way|either way|on second thought|come on|mark my words|between you and me|for what it's worth|if anything|last week|last year|last night|last month|this morning|this week|this weekend|this year|every morning|every day|every year|away from|the other day|one day|the next day|that day|that night|the next morning|the next thing i knew)\b/i;
+const SPLICE_PREP = /^(?:in|on|off|at|after|before|during|for|from|to|with|without|by|like|unlike|despite|through|throughout|around|over|under|between|among|across|along|behind|beyond|near|outside|inside|within|upon|toward|towards|against|about|according to|thanks to|due to|because of|instead of|apart from|other than|compared to|compared with|as for)\b/i;
+const SPLICE_AFTER = /,\s+(?:(?:I|you|we|they|he|she|it|that|there|this)(?:'s|'re|'m|'ll|'ve|'d)\b|(?:I|you|we|they|he|she|it|that|there|this)\s+(?:is|are|was|were|am|will|won't|have|has|had|can|can't|could|couldn't|should|shouldn't|must|need|needs|do|does|did|don't|doesn't|didn't|just|really|always|never|also|probably|still|already|totally|definitely|usually|look|looks|seem|seems|want|wants|think|know|love|hate|get|got|go|went|made|left|came)\b)/g;
+const SPLICE_COMMENT = /^\s*(?:(?:I|you|he|she|we|they)\s+(?:said|says|told|tells|explained|added|admitted|joked|insisted|replied|warned|wrote|asked|promised|swear|bet|guess|think|mean|know|recall|remember|hope)\b[^,.;!?]{0,30}|you'll see|you know|I promise|I swear|I bet|I guess|I think|I hope)[.!?]["”]?$/;
+
+/** Fragmenty zdania EN, w których przecinek łączy dwa zdania główne. */
+export function commaSplices(text) {
+  const out = [];
+  if (typeof text !== 'string') return out;
+  const clean = text.replace(/"[^"]*"|“[^”]*”/g, (m) => ' '.repeat(m.length));
+  for (const m of clean.matchAll(SPLICE_AFTER)) {
+    const before = clean.slice(0, m.index);
+    const cut = Math.max(...['. ', '? ', '! ', '; ', ': ', ' — ', ' – '].map((p) => before.lastIndexOf(p)));
+    const seg = before.slice(cut >= 0 ? cut + 2 : 0).trim();
+    const lastComma = seg.lastIndexOf(',');
+    const clause = lastComma >= 0 ? seg.slice(lastComma + 1).trim() : seg;
+    const after = clean.slice(m.index + 1);
+    if (seg.split(/\s+/).length < 3) continue; // „Yes, I…”, „Mom, we…”, „Hurry up, …”
+    if ([seg, clause].some((x) => SPLICE_SUBORD.test(x) || SPLICE_INTRO.test(x) || SPLICE_PREP.test(x) || /^\w+ing\b/i.test(x))) continue;
+    if (/\b(?:ago|later|earlier)$/i.test(seg)) continue; // „Five years ago, …”
+    if (/^(?:the|my|our|your) (?:thing|problem|point|truth|fact|good news|bad news|best part|catch|question|idea|plan) is$/i.test(seg)) continue;
+    if (/\b(?:if|when|because|since|although|though|while|unless|until|before|after|once|whenever|so that)\b/i.test(clause)) continue;
+    if (SPLICE_COMMENT.test(after)) continue; // „…, she told us.” / „…, you know.”
+    if (/^\s*(?:you know|I mean),/.test(after)) continue; // wtrącenie „…, you know, …”
+    if (/^\w+ or \w+$/i.test(seg)) continue; // „Cabin or hotel, I…”
+    const neg = /n't\b|\b(?:not|never|no longer)\b/i.test(clause);
+    if (neg && /^\s*(?:\S+\s+){1,2}(?:just|only|simply|actually|rather)\b/i.test(after)) continue; // „I didn't X, I just Y”
+    if (neg && /^(?:it|that|this)\b/i.test(clause) && /^\s*(?:it|that|this)\b/i.test(after)) continue; // „It's not X, it's Y”
+    out.push(text.slice(Math.max(0, m.index - 30), m.index + 25).trim());
+  }
+  return out;
+}
+
+function thirdPersonOf(base) {
+  const irregular = { have: 'has', be: 'is', do: 'does', go: 'goes' };
+  if (irregular[base]) return irregular[base];
+  if (/(s|sh|ch|x|z|o)$/.test(base)) return base + 'es';
+  if (/[^aeiou]y$/.test(base)) return base.slice(0, -1) + 'ies';
+  return base + 's';
+}
+
+/**
+ * `forms` czasownika (CONTENT-SCHEMA §1): „forma bazowa – czas przeszły – imiesłów” od formy hasła.
+ * Zwraca opis problemu albo null. Dla zwrotów/idiomów sprawdza tylko zapis trzech form zaczynający się od 3. os. lp.
+ */
+export function verbFormsIssue(term, pos, forms) {
+  if (typeof forms !== 'string' || !forms || typeof term !== 'string') return null;
+  const isVerb = pos === 'czasownik' || pos === 'czasownik frazowy';
+  const verbal = isVerb || ((pos === 'zwrot' || pos === 'idiom') && (forms.match(/\s–\s/g) || []).length >= 2);
+  if (!verbal) return null;
+  const first = forms.split(/\s*;\s*/)[0].split(/\s+–\s+/)[0].trim();
+  const words = term.split(' ');
+  const third = [thirdPersonOf(words[0].toLowerCase()), ...words.slice(1)].join(' ');
+  if (first.toLowerCase() !== term.toLowerCase() && first.toLowerCase() === third.toLowerCase()) return `zaczyna się od 3. os. lp. („${first}”) zamiast formy bazowej „${term}”`;
+  if (!isVerb) return null;
+  if (!/\s–\s/.test(forms)) return `brak zapisu „forma bazowa – czas przeszły – imiesłów” („${forms}”)`;
+  if (first.toLowerCase() !== term.toLowerCase()) return `pierwsza forma „${first}” nie jest formą hasła „${term}”`;
+  return null;
+}
+
+// Angielskie „Sorry/OK” w polskim zdaniu (po polsku: przepraszam, wybacz, dobrze, w porządku, okej).
+export const PL_ENGLISH_WORD = /(?<![\p{L}])(?:Sorry|sorry|Okay|okay|OK|Ok|ok)(?![\p{L}])/u;
+
+// Nieprzeliczone jednostki imperialne w polskim zdaniu (liczba + mila/stopa/cal/funt/jard/uncja/galon, mph, °F).
+const PL_NUM = '(?:\\d+(?:[.,]\\d+)?|pół|półtorej|półtora|jed\\p{L}*|dw\\p{L}*|trz\\p{L}*|czter\\p{L}*|pię\\p{L}*|sze\\p{L}*|sied\\p{L}*|osi\\p{L}*|dziew\\p{L}*|dzies\\p{L}*|kilk\\p{L}*|par\\p{L}*|wiel\\p{L}*|set\\p{L}*|sto|stu|tysi\\p{L}*)';
+const PL_UNIT = '(?:mil[ae]?|mili|milach|stóp|stopy|stopach|cal[ae]?|cali|calach|funt(?:ów|y|a|ach)?|jard(?:ów|y|a|ach)?|uncj[ie]|uncji|galon(?:ów|y|a|ach)?)';
+export const PL_IMPERIAL = new RegExp(`(?<![\\p{L}])${PL_NUM}\\s+${PL_UNIT}(?![\\p{L}])|\\bmph\\b|°F|Fahrenheit\\p{L}*`, 'iu');
+// Hasła, w których sama jednostka / pomiar jest tematem — wtedy jednostka zostaje w tłumaczeniu.
+const UNIT_TERM = /\b(?:inch(?:es)?|foot|feet|pounds?|miles?|yards?|ounces?|gallons?|fahrenheit|mph|degrees?|width|depth|height|length|area|radius|volume|altitude|boiling point)\b/i;
+
 // ---------------------------------------------------------------------------
 // Entry (§1)
 // ---------------------------------------------------------------------------
@@ -432,6 +508,9 @@ export function validateEntry(e, prefix, ctx, loc) {
   for (const key of ['natural', 'forms', 'collocations']) {
     if (typeof e[key] === 'string' && e[key]) englishHeuristics(e[key], c, key, { article: key !== 'forms', repeat: key !== 'forms' });
   }
+  const formsIssue = verbFormsIssue(e.term, e.pos, e.forms);
+  if (formsIssue) report.warn(file, id, 'forms-base', `forms: ${formsIssue}`);
+  const unitTopic = typeof e.term === 'string' && UNIT_TERM.test(e.term);
 
   // examples
   if (Array.isArray(e.examples)) {
@@ -448,7 +527,14 @@ export function validateEntry(e, prefix, ctx, loc) {
       }
       checkSentence(ex.en, 'en', c, `${lbl}.en`);
       checkSentence(ex.pl, 'pl', c, `${lbl}.pl`);
+      if (typeof ex.pl === 'string') {
+        const en = ex.pl.match(PL_ENGLISH_WORD);
+        if (en) report.warn(file, id, 'pl-english', `${lbl}.pl: angielskie „${en[0]}” w polskim zdaniu (przepraszam / wybacz / dobrze / w porządku): "${ex.pl}"`);
+        const unit = ex.pl.match(PL_IMPERIAL);
+        if (unit && !unitTopic) report.warn(file, id, 'pl-imperial-units', `${lbl}.pl: nieprzeliczona jednostka „${unit[0]}” — w polskim zdaniu użyj km, m, kg, °C: "${ex.pl}"`);
+      }
       if (typeof ex.en === 'string') {
+        for (const sp of commaSplices(ex.en)) report.warn(file, id, 'comma-splice', `${lbl}.en: przecinek łączy dwa zdania główne („${sp}”) — użyj ; . lub spójnika`);
         englishHeuristics(ex.en, c, `${lbl}.en`);
         const words = ex.en.split(/\s+/).filter(Boolean).length;
         if (words < 4 || words > 25) report.warn(file, id, 'example-length', `${lbl}.en ma ${words} słów (zalecane 6–20)`);
@@ -466,7 +552,10 @@ export function validateEntry(e, prefix, ctx, loc) {
     if (e.acceptedAnswers.length === 0) report.error(file, id, 'accepted-answers', 'acceptedAnswers: pusta lista (musi zawierać term)');
     if (e.acceptedAnswers.some((a) => typeof a !== 'string' || !a.trim())) report.error(file, id, 'accepted-answers', 'acceptedAnswers: elementy muszą być niepustymi tekstami');
     else {
-      e.acceptedAnswers.forEach((a, i) => checkPlainString(a, c, `acceptedAnswers[${i}]`));
+      e.acceptedAnswers.forEach((a, i) => {
+        checkPlainString(a, c, `acceptedAnswers[${i}]`);
+        if (a.includes(';')) report.warn(file, id, 'accepted-format', `acceptedAnswers[${i}] "${a}": średnik — każdy wariant musi być osobną pozycją (grader nie dzieli pozycji)`);
+      });
       const norm = e.acceptedAnswers.map(normalizeKey);
       if (typeof e.term === 'string' && e.term && !norm.includes(normalizeKey(e.term))) report.error(file, id, 'accepted-answers-term', `acceptedAnswers nie zawiera hasła "${e.term}"`);
       if (new Set(norm).size !== norm.length) report.warn(file, id, 'accepted-duplicates', 'acceptedAnswers: zdublowane warianty');
@@ -482,6 +571,7 @@ export function validateEntry(e, prefix, ctx, loc) {
       e.acceptedTranslations.forEach((a, i) => {
         checkPlainString(a, c, `acceptedTranslations[${i}]`);
         if (AME_BRE_TAG.test(a)) report.error(file, id, 'ame-bre-tag', `acceptedTranslations[${i}] zawiera (AmE)/(BrE)`);
+        if (a.includes(';')) report.warn(file, id, 'accepted-format', `acceptedTranslations[${i}] "${a}": średnik — każdy wariant musi być osobną pozycją (grader nie dzieli pozycji)`);
       });
       const norm = e.acceptedTranslations.map((a) => a.toLowerCase().replace(/\s+/g, ' ').trim());
       if (new Set(norm).size !== norm.length) report.warn(file, id, 'accepted-duplicates', 'acceptedTranslations: zdublowane warianty');
@@ -823,6 +913,28 @@ async function selfTest() {
   check(repeatedWords('She had had enough.').length === 0, '„had had” jest dozwolone');
   check(bracketsBalanced('He said "hi" (twice).') && !bracketsBalanced('He said "hi (twice).'), 'nawiasy i cudzysłowy');
   check(bracketsBalanced('Powiedział „cześć”.') && !bracketsBalanced('Powiedział „cześć.'), 'polskie cudzysłowy');
+  // Reguły redakcyjne (comma splice, forms, „Sorry/OK” po polsku, średnik w wariantach, jednostki)
+  check(commaSplices('Hurry up, the bus leaves soon. He is so sweet, he left me a note.').length === 1, 'comma splice: „He is so sweet, he left…”');
+  check(commaSplices("He's so cheap, he won't pay his share.").length === 1, 'comma splice: „He\'s so cheap, he won\'t…”');
+  check(commaSplices("Don't touch that plant, it's poison ivy.").length === 1, 'comma splice: tryb rozkazujący + uzasadnienie');
+  check(commaSplices("I didn't block him, I just muted him.").length === 0, 'comma splice: wyjątek kontrastu „I didn\'t…, I just…”');
+  check(commaSplices("It's not a bug, it's a feature.").length === 0, 'comma splice: wyjątek „It\'s not X, it\'s Y”');
+  check(commaSplices('If you need help, I can stay late.').length === 0, 'comma splice: zdanie podrzędne przed przecinkiem');
+  check(commaSplices('Yes, I saw it. Mom, we are home.').length === 0, 'comma splice: krótki wstęp / wołacz');
+  check(commaSplices('Ten publishers rejected her first book, she told us.').length === 0, 'comma splice: zdanie relacjonujące');
+  check(commaSplices('"Wait, I forgot my keys," she said.').length === 0, 'comma splice: cytat pomijany');
+  check(commaSplices('After dinner, we watched a movie, and then we went to bed.').length === 0, 'comma splice: wstęp + spójnik');
+  check(verbFormsIssue('cancel', 'czasownik', 'cancels – canceled – canceled') !== null, 'forms: 3. os. lp. zamiast formy bazowej');
+  check(verbFormsIssue('hurry up', 'czasownik frazowy', 'hurries up – hurried up – hurried up') !== null, 'forms: 3. os. lp. w czasowniku frazowym');
+  check(verbFormsIssue('watch', 'czasownik', 'watched; watching') !== null, 'forms: brak trzech form („past; -ing”)');
+  check(verbFormsIssue('go', 'czasownik', 'go – went – gone') === null, 'forms: „go – went – gone” poprawne');
+  check(verbFormsIssue('stop', 'czasownik', 'stop – stopped – stopped; stopping') === null, 'forms: grupa -ing po średniku poprawna');
+  check(verbFormsIssue('take a nap', 'zwrot', 'takes a nap – took a nap – taken a nap') !== null, 'forms: zwrot od 3. os. lp.');
+  check(verbFormsIssue('couch potato', 'idiom', 'couch potatoes') === null && verbFormsIssue('boarding pass', 'rzeczownik', 'boarding passes') === null, 'forms: liczba mnoga rzeczownika bez uwag');
+  check(PL_ENGLISH_WORD.test('Sorry, kochanie, dziś nie mogę.') && PL_ENGLISH_WORD.test('Czy dżinsy są OK?'), 'pl: „Sorry” / „OK” w polskim zdaniu');
+  check(!PL_ENGLISH_WORD.test('Przepraszam, w porządku, okej.') && !PL_ENGLISH_WORD.test('Okno w pokoju było otwarte.'), 'pl: brak fałszywych trafień „ok” w wyrazach');
+  check(PL_IMPERIAL.test('Nasz dom jest dwie mile stąd.') && PL_IMPERIAL.test('Poproszę pięć funtów ziemniaków.') && PL_IMPERIAL.test('Jest siedemdziesiąt stopni Fahrenheita.'), 'pl: jednostki imperialne');
+  check(!PL_IMPERIAL.test('Mile widziani są wszyscy goście.') && !PL_IMPERIAL.test('Bolą mnie stopy po dwóch godzinach marszu.') && !PL_IMPERIAL.test('Dom jest trzy kilometry stąd.'), 'pl: „mile widziany”, „stopy” (część ciała) i km bez uwag');
   check(normalizeKey(' Żółć  Don’t ') === "zolc don't", 'normalizeKey');
   check(kebab('check-in desk') === 'check-in-desk' && kebab("don't") === 'dont', 'kebab');
 
@@ -840,6 +952,7 @@ async function selfTest() {
       for (const r of exp.errors || []) check(gotE.has(r), `${f}: oczekiwano błędu "${r}"`);
       for (const r of exp.warnings || []) check(gotW.has(r), `${f}: oczekiwano ostrzeżenia "${r}"`);
       for (const r of exp.notErrors || []) check(!gotE.has(r), `${f}: nieoczekiwany błąd "${r}"`);
+      for (const r of exp.notWarnings || []) check(!gotW.has(r), `${f}: nieoczekiwane ostrzeżenie "${r}"`);
       if (exp.exactErrorRules) {
         const extra = [...gotE].filter((r) => !(exp.errors || []).includes(r));
         check(extra.length === 0, `${f}: nieoczekiwane reguły błędów: ${extra.join(', ')}`);
