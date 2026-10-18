@@ -22,6 +22,13 @@ public struct PictureCandidate: Sendable, Hashable, Identifiable {
 /// search for, which distractors are clearly different. The photos themselves come from the app
 /// (internet only, cached on disk) — FluentKit only gets the set of meanings with a cached photo.
 public enum PictureExercise {
+    /// FEEDBACK-4 I2: „Słowo i zdjęcie” is „W budowie” — photos will come back as AI-generated
+    /// illustrations stored with every word (docs/FUTURE.md). While `false`: no picture task is
+    /// ever drawn into a session (`SessionBuilder`), the „Słowa i obrazki” mode returns an empty
+    /// session, the study-screen card is greyed out and the Openverse prefetcher does nothing.
+    /// The code stays: setting this to `true` brings the whole feature back.
+    public static let isEnabled = false
+
     /// Number of photos shown (the right one + 3 distractors).
     public static let optionCount = 4
 

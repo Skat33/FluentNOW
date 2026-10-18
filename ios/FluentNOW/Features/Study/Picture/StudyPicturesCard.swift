@@ -69,6 +69,52 @@ struct StudyPicturesCard: View {
     }
 }
 
+/// „Słowa i obrazki” — „W budowie” (FEEDBACK-4 I2, `PictureExercise.isEnabled == false`): karta
+/// widoczna, ale wyszarzona; dotknięcie pokazuje krótką informację. Wróci z ilustracjami AI.
+struct StudyPicturesLockedCard: View {
+    let onTap: () -> Void
+
+    static let message = "„Słowa i obrazki” są w budowie. Wkrótce każde słowo dostanie własną ilustrację — do tego czasu ćwicz z Codzienną mieszanką."
+
+    var body: some View {
+        Button(action: onTap) {
+            HStack(alignment: .top, spacing: Spacing.s) {
+                Image(systemName: StudyMode.pictures.studySystemImage)
+                    .font(FluentFont.title)
+                    .foregroundStyle(Palette.inkTertiary)
+                    .frame(width: 32)
+                    .accessibilityHidden(true)
+                VStack(alignment: .leading, spacing: Spacing.xxs) {
+                    HStack(alignment: .firstTextBaseline, spacing: Spacing.xs) {
+                        Text(StudyMode.pictures.namePl)
+                            .font(FluentFont.headline)
+                            .foregroundStyle(Palette.inkSecondary)
+                        TagChip("W budowie", systemImage: "hammer", tone: .warning)
+                    }
+                    Text("Angielskie słowo i obrazek. Pracujemy nad ilustracjami do każdego słowa.")
+                        .font(FluentFont.footnote)
+                        .foregroundStyle(Palette.inkTertiary)
+                        .multilineTextAlignment(.leading)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Spacer(minLength: 0)
+                Image(systemName: "info.circle")
+                    .foregroundStyle(Palette.inkTertiary)
+                    .accessibilityHidden(true)
+            }
+            .padding(Spacing.m)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: Radius.card, style: .continuous))
+            .contentShape(RoundedRectangle(cornerRadius: Radius.card, style: .continuous))
+        }
+        .buttonStyle(.plain)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text("\(StudyMode.pictures.namePl), w budowie"))
+        .accessibilityHint(Text("Pokazuje informację o planowanych ilustracjach"))
+        .accessibilityAddTraits(.isButton)
+    }
+}
+
 /// „Zdjęcia: 12 z 40 słów” + pasek.
 private struct StudyPicturesProgress: View {
     let snapshot: StudyPicturesSnapshot

@@ -4,7 +4,7 @@ import Foundation
 public struct Score: Codable, Sendable, Hashable {
     /// Displayed value 0–100, always `masteryFromInterval(interval)`.
     public var value: Int
-    /// Current interval in days (0…90).
+    /// Current interval in days (0…365 since FSRS; web/legacy data 0…90). 10 minutes after a wrong answer.
     public var interval: Double
     /// Next due time (ms since 1970).
     public var due: Timestamp
@@ -19,6 +19,19 @@ public struct Score: Codable, Sendable, Hashable {
     /// Number of slow answers.
     public var slow: Int
 
+    // FSRS memory state (I1). Optional and backward compatible: the web app, older exports and
+    // older iCloud records do not have these keys; such a score gets its FSRS state at its next
+    // answer (`Scheduler.legacyMemory`). Encoded only when present.
+
+    /// FSRS stability in days (recall probability 90% after this many days).
+    public var stability: Double?
+    /// FSRS difficulty 1…10.
+    public var difficulty: Double?
+    /// Number of FSRS reviews (answers) of this skill.
+    public var reps: Int?
+    /// Number of lapses (Again after the skill had been learned).
+    public var lapses: Int?
+
     public init(
         value: Int = 0,
         interval: Double = 0,
@@ -27,7 +40,11 @@ public struct Score: Codable, Sendable, Hashable {
         wrong: Int = 0,
         hinted: Int = 0,
         last: Timestamp = 0,
-        slow: Int = 0
+        slow: Int = 0,
+        stability: Double? = nil,
+        difficulty: Double? = nil,
+        reps: Int? = nil,
+        lapses: Int? = nil
     ) {
         self.value = value
         self.interval = interval
@@ -37,13 +54,24 @@ public struct Score: Codable, Sendable, Hashable {
         self.hinted = hinted
         self.last = last
         self.slow = slow
+        self.stability = stability
+        self.difficulty = difficulty
+        self.reps = reps
+        self.lapses = lapses
     }
 
     /// Empty starting score used when a skill is answered for the first time.
     public static let empty = Score()
 
+    /// The FSRS memory state when both values are present and valid.
+    public var memoryState: FSRS.MemoryState? {
+        guard let stability, let difficulty else { return nil }
+        return FSRS.validated(FSRS.MemoryState(stability: stability, difficulty: difficulty))
+    }
+
     enum CodingKeys: String, CodingKey {
         case value, interval, due, correct, wrong, hinted, last, slow
+        case stability, difficulty, reps, lapses
     }
 
     public init(from decoder: Decoder) throws {
@@ -56,6 +84,35 @@ public struct Score: Codable, Sendable, Hashable {
         hinted = max(0, c.lenientInt(.hinted))
         last = c.lenientDouble(.last)
         slow = max(0, c.lenientInt(.slow))
+        // FSRS state: both values or none (a half state is treated as legacy).
+        let decodedStability = c.lenientOptionalDouble(.stability)
+        let decodedDifficulty = c.lenientOptionalDouble(.difficulty)
+        if let decodedStability, let decodedDifficulty,
+           let memory = FSRS.validated(FSRS.MemoryState(stability: decodedStability, difficulty: decodedDifficulty)) {
+            stability = memory.stability
+            difficulty = memory.difficulty
+        } else {
+            stability = nil
+            difficulty = nil
+        }
+        reps = c.lenientOptionalInt(.reps).map { max(0, $0) }
+        lapses = c.lenientOptionalInt(.lapses).map { max(0, $0) }
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var c = encoder.container(keyedBy: CodingKeys.self)
+        try c.encode(value, forKey: .value)
+        try c.encode(interval, forKey: .interval)
+        try c.encode(due, forKey: .due)
+        try c.encode(correct, forKey: .correct)
+        try c.encode(wrong, forKey: .wrong)
+        try c.encode(hinted, forKey: .hinted)
+        try c.encode(last, forKey: .last)
+        try c.encode(slow, forKey: .slow)
+        try c.encodeIfPresent(stability, forKey: .stability)
+        try c.encodeIfPresent(difficulty, forKey: .difficulty)
+        try c.encodeIfPresent(reps, forKey: .reps)
+        try c.encodeIfPresent(lapses, forKey: .lapses)
     }
 }
 

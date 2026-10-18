@@ -277,7 +277,8 @@ final class PracticeModesTests: XCTestCase {
             }
             XCTAssertFalse(session.tasks.contains { $0.type == .flashcard })
         }
-        XCTAssertTrue(sawPicture)
+        // FEEDBACK-4 I2: while „W budowie” no picture task is ever drawn.
+        XCTAssertEqual(sawPicture, PictureExercise.isEnabled)
     }
 
     func testPrefetchOrderPracticedFirstThenNew() {

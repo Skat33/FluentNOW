@@ -46,7 +46,15 @@ final class StudyPolishTests: XCTestCase {
         let state = objectsState()
         let ready: Set<String> = ["m-apple", "m-chair", "m-car", "m-lamp"]
         var generator = SeededGenerator(seed: 7)
-        let session = SessionBuilder.makeSession(state: state, minutes: 5, mode: .pictures, pictureMeaningIDs: ready, using: &generator)
+        // FEEDBACK-4 I2: the mode is „W budowie” — `makeSession(mode: .pictures)` builds nothing
+        // while disabled; the builder itself stays and is tested directly.
+        var disabledGenerator = SeededGenerator(seed: 7)
+        let viaMode = SessionBuilder.makeSession(state: state, minutes: 5, mode: .pictures, pictureMeaningIDs: ready, using: &disabledGenerator)
+        XCTAssertEqual(viaMode.mode, "pictures")
+        if !PictureExercise.isEnabled {
+            XCTAssertTrue(viaMode.tasks.isEmpty)
+        }
+        let session = SessionBuilder.makePictureSession(state: state, minutes: 5, pictureMeaningIDs: ready, using: &generator)
         XCTAssertEqual(session.mode, "pictures")
         XCTAssertEqual(session.tasks.count, 4)
         XCTAssertTrue(session.tasks.allSatisfy { $0.type == .picture })

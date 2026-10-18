@@ -25,6 +25,13 @@ struct VocabExerciseContent {
     /// Pierwsze spotkanie ze znaczeniem (G3: zamiast fiszki „Wybierz znaczenie” z od razu
     /// widocznymi opcjami, bez liczenia ich jako podpowiedzi).
     let isFirstContact: Bool
+    /// „Ułóż zdanie”: kafelki (stałe dla zadania); `nil`, gdy zdania nie da się ułożyć.
+    let scramble: ScrambleBoard?
+    /// „Dopasuj pary”: plansza z kolumnami w stałej kolejności; `nil`, gdy zostało mniej niż 3 par.
+    let pairs: MatchPairBoard?
+    /// „Zrozum ze słuchu”: cztery tłumaczenia zdania w stałej kolejności (mniej niż 2 — zadanie
+    /// zastępuje dyktando).
+    let listeningOptions: [String]
 
     init?(task: VocabTask, mode: StudyMode, state: LearnerState, variants: AnswerVariants) {
         guard let word = state.word(id: task.wordId), let meaning = word.meaning(id: task.meaningId) else {
@@ -51,9 +58,55 @@ struct VocabExerciseContent {
         self.hints = HintBuilder.vocabularyHints(word: word, meaning: meaning, type: task.type, exampleIndex: index, variants: variants)
         self.maskTerms = HintBuilder.vocabularyMaskTerms(word: word, meaning: meaning, type: task.type, exampleIndex: index, variants: variants)
         self.isFirstContact = SessionBuilder.isFirstContact(meaning)
+        // Ziarno bez indeksu w sesji — wznowione zadanie pokazuje te same kafelki i opcje.
+        let seed = "\(task.wordId):\(task.meaningId):\(index)"
+        switch task.type {
+        case .scramble:
+            self.scramble = SentenceScramble.board(word: word, meaning: meaning, exampleIndex: index, seed: seed)
+            self.pairs = nil
+            self.listeningOptions = []
+        case .matchPairs:
+            let items = MatchPairsExercise.items(for: task, state: state)
+            self.scramble = nil
+            self.pairs = items.count >= MatchPairsExercise.minimumPairs ? MatchPairsExercise.board(items, seed: seed) : nil
+            self.listeningOptions = []
+        case .listeningChoice:
+            self.scramble = nil
+            self.pairs = nil
+            self.listeningOptions = ListeningChoice.options(state: state, meaning: meaning, exampleIndex: index, seed: seed)
+        case .flashcard, .recall, .cloze, .meaning, .dictation, .picture:
+            self.scramble = nil
+            self.pairs = nil
+            self.listeningOptions = []
+        }
     }
 
     var type: ExerciseType { task.type }
+
+    /// Zastępstwo, gdy nowego typu nie da się pokazać (I2): rozsypanka bez zdania → luka albo
+    /// tłumaczenie, za mało par → „Wybierz znaczenie”, za mało tłumaczeń → dyktando. Ta sama
+    /// umiejętność (poza rozsypanką bez luki). `nil` — zadanie można pokazać bez zmian.
+    func displayFallback(state: LearnerState, variants: AnswerVariants) -> VocabExerciseContent? {
+        let replacement: ExerciseType
+        switch type {
+        case .scramble:
+            guard scramble == nil else { return nil }
+            replacement = SessionBuilder.canCloze(word: word, meaning: meaning, exampleIndex: exampleIndex) ? .cloze : .recall
+        case .matchPairs:
+            guard pairs == nil else { return nil }
+            replacement = .meaning
+        case .listeningChoice:
+            guard listeningOptions.count < 2 else { return nil }
+            replacement = .dictation
+        case .flashcard, .recall, .cloze, .meaning, .dictation, .picture:
+            return nil
+        }
+        let fallback = VocabTask(wordId: task.wordId, meaningId: task.meaningId, type: replacement, example: task.example)
+        return VocabExerciseContent(task: fallback, mode: mode, state: state, variants: variants)
+    }
+
+    /// „Dopasuj pary”: kolejność par do zapisu (lewa kolumna).
+    var pairItems: [MatchPairItem] { pairs?.english ?? [] }
 
     /// Opcje „Wybierz znaczenie” widoczne od razu (pierwszy kontakt ze słowem).
     var showsMeaningOptionsAtOnce: Bool { type == .meaning && isFirstContact }
@@ -93,6 +146,8 @@ struct VocabExerciseContent {
         switch type {
         case .meaning: return meaning.translation
         case .cloze: return gradingWord.en
+        case .scramble: return example
+        case .listeningChoice: return ListeningChoice.translation(meaning: meaning, exampleIndex: exampleIndex) ?? meaning.translation
         default: return word.en
         }
     }

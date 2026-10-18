@@ -9,6 +9,8 @@ public enum Mastery {
     public static let hardWrongCount = 3
 
     /// `masteryFromInterval`: 0–100 on a logarithmic scale where 90 days = 100.
+    /// FSRS (I1): `interval` is the FSRS interval at the desired retention (≈ stability at 90%),
+    /// so 85% ≈ 45 days of stability; intervals above 90 days stay at 100.
     public static func fromInterval(_ interval: Double) -> Int {
         let safe = interval.isFinite ? Swift.max(0, interval) : 0
         let value = log1p(safe) / log(91.0) * 100

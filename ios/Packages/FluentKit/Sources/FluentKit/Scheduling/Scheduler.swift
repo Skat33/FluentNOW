@@ -1,18 +1,48 @@
 import Foundation
 
-/// The spaced-repetition algorithm (learning.ts `schedule`, `recordAnswer`, `applyReadingResults`).
-/// Pure functions: state in → new state out. Time and identifiers are injected.
+/// The spaced-repetition scheduler (learning.ts `schedule`, `recordAnswer`, `applyReadingResults`).
+/// Since round 4 (I1) the interval comes from the FSRS-6 memory model (`FSRS`) instead of the
+/// web heuristic. Pure functions: state in → new state out. Time and identifiers are injected.
 public enum Scheduler {
     /// Weight of word-in-context answers from readings.
     public static let readingWeight = 0.35
     /// A failed task is re-queued only while the session has fewer tasks than this.
     public static let maxSessionTasks = 100
+    /// Longest interval in days (the web heuristic stopped at 90).
+    public static let maximumInterval: Double = 365
+    /// A wrong answer comes back after 10 minutes (relearning step, as before).
+    public static let relearningInterval: Double = 10.0 / 1440.0
+    /// A correct answer is „fast” (may be rated Easy) up to this share of `slowSeconds`.
+    public static let easySpeedShare = 0.5
 
-    /// `schedule`: next score of one skill after an answer.
+    /// FSRS rating of an answer:
+    /// - wrong → Again;
+    /// - correct after a hint, with an accepted typo, slow (`> type.slowSeconds`) or marked
+    ///   „Niepewnie” (confidence 1) → Hard;
+    /// - correct, fast (`≤ easySpeedShare × slowSeconds`) and „Bardzo pewnie” (confidence 3) → Easy;
+    /// - other correct answers → Good.
+    public static func rating(
+        correct: Bool,
+        hint: Bool,
+        typo: Bool = false,
+        seconds: Double,
+        confidence: Int,
+        type: ExerciseType
+    ) -> FSRS.Rating {
+        guard correct else { return .again }
+        let safeSeconds = finiteNonNegative(seconds)
+        if hint || typo || confidence <= 1 || safeSeconds > type.slowSeconds { return .hard }
+        if confidence >= 3 && safeSeconds <= type.slowSeconds * easySpeedShare { return .easy }
+        return .good
+    }
+
+    /// `schedule`: next score of one skill after an answer (FSRS-6, default retention 0.90).
     ///
-    /// - independent correct answer: interval × factor (+ small bonus for real elapsed time), 1…90 days;
-    /// - correct after a hint: 12 hours; wrong: 10 minutes;
-    /// - `weight < 1` (readings) moves the interval only part of the way and never shortens it.
+    /// - the answer is rated with `rating(correct:hint:seconds:confidence:type:)`;
+    /// - Hard / Good / Easy: the interval is the FSRS interval of the new stability, 1…365 days;
+    /// - wrong: 10 minutes (the new, lower stability is kept for the next answer);
+    /// - `weight < 1` (readings) moves the memory state only part of the way and never shortens
+    ///   the interval.
     public static func schedule(
         _ old: Score?,
         correct: Bool,
@@ -23,34 +53,59 @@ public enum Scheduler {
         type: ExerciseType = .recall,
         weight: Double = 1
     ) -> Score {
-        let score = old ?? Score.empty
         let safeSeconds = finiteNonNegative(seconds)
-        let slow = safeSeconds > type.slowSeconds
-        let independent = correct && !hint
-        let confidencePenalty: Double = confidence == 1 ? 0.65 : (confidence == 2 ? 0.25 : 0)
-        let factor = max(
-            1.15,
-            2.5 - confidencePenalty - (slow ? 0.65 : 0) - min(0.45, Double(score.wrong) * 0.04)
+        return review(
+            old,
+            rating: rating(correct: correct, hint: hint, seconds: safeSeconds, confidence: confidence, type: type),
+            hint: hint,
+            slow: safeSeconds > type.slowSeconds,
+            now: now,
+            weight: weight
         )
-        var elapsed: Double = 0
+    }
+
+    /// FSRS step for an already rated answer. `hint` and `slow` only update the counters
+    /// (`hinted`, `slow`, `wrong`) that the rest of the app reads.
+    public static func review(
+        _ old: Score?,
+        rating: FSRS.Rating,
+        hint: Bool,
+        slow: Bool,
+        now: Timestamp,
+        weight: Double = 1,
+        retention: Double = FSRS.defaultRetention
+    ) -> Score {
+        let score = old ?? Score.empty
+        let correct = rating != .again
+        let independent = correct && !hint
+        var elapsedDays: Double = 0
         if score.last != 0, now.isFinite, score.last.isFinite {
-            elapsed = max(0, (now - score.last) / TimeConstants.dayMs)
+            elapsedDays = max(0, ((now - score.last) / TimeConstants.dayMs).rounded(.down))
         }
-        let previousInterval = finiteNonNegative(score.interval)
-        var interval: Double
-        if independent {
-            let base = previousInterval == 0 ? 0.5 : previousInterval
-            interval = min(90, max(1, base * factor + min(elapsed * 0.08, 2)))
-        } else if correct {
-            interval = 0.5
-        } else {
-            interval = 10.0 / 1440.0
-        }
+        let previous = memory(of: score)
+        let full = FSRS.nextState(previous, elapsedDays: elapsedDays, rating: rating)
+        var state = full
+        var interval = correct
+            ? FSRS.interval(stability: full.stability, retention: retention, maximum: maximumInterval)
+            : relearningInterval
+
         let safeWeight = weight.isFinite ? min(1, max(0, weight)) : 1
         if safeWeight < 1 && correct {
-            interval = max(previousInterval, previousInterval + (interval - previousInterval) * safeWeight)
+            // Readings: part of the way, never backwards.
+            let baseStability = previous?.stability ?? 0
+            let baseDifficulty = previous?.difficulty ?? full.difficulty
+            let stability = max(baseStability, baseStability + (full.stability - baseStability) * safeWeight)
+            let difficulty = baseDifficulty + (full.difficulty - baseDifficulty) * safeWeight
+            state = FSRS.validated(FSRS.MemoryState(stability: stability, difficulty: difficulty)) ?? full
+            let previousInterval = min(maximumInterval, finiteNonNegative(score.interval))
+            interval = max(
+                previousInterval,
+                FSRS.interval(stability: state.stability, retention: retention, maximum: maximumInterval)
+            )
         }
+
         let wrong = correct ? max(0, score.wrong - (independent ? 1 : 0)) : score.wrong + 1
+        let wasLearned = previous != nil && score.correct > 0
         return Score(
             value: Mastery.fromInterval(interval),
             interval: interval,
@@ -59,8 +114,42 @@ public enum Scheduler {
             wrong: wrong,
             hinted: score.hinted + (hint ? 1 : 0),
             last: now,
-            slow: score.slow + (slow ? 1 : 0)
+            slow: score.slow + (slow ? 1 : 0),
+            stability: state.stability,
+            difficulty: state.difficulty,
+            reps: (score.reps ?? legacyReps(score)) + 1,
+            lapses: (score.lapses ?? legacyLapses(score)) + (!correct && wasLearned ? 1 : 0)
         )
+    }
+
+    /// FSRS state of a score: the stored one, or one derived from a legacy (web / pre-FSRS)
+    /// score, or `nil` for a skill that was never answered.
+    public static func memory(of score: Score) -> FSRS.MemoryState? {
+        score.memoryState ?? legacyMemory(score)
+    }
+
+    /// Migration of a pre-FSRS score at its first FSRS answer:
+    /// - stability = the old interval (the old scheduler aimed at reviewing just before forgetting,
+    ///   which is what FSRS stability means at 90%), at least S0(Again), at most 90 days;
+    /// - difficulty = D0(Good) + 1.2 per current error (max 6) + 0.4 per hinted/slow answer (max 5),
+    ///   clamped to 1…10 — words with ≥ 3 errors („Trudne”) start around 5.7 or more.
+    /// A score with no answer at all returns `nil` (treated as new).
+    public static func legacyMemory(_ score: Score) -> FSRS.MemoryState? {
+        guard score.last != 0 || score.correct > 0 || score.wrong > 0 || score.interval > 0 else { return nil }
+        let interval = min(90, finiteNonNegative(score.interval))
+        let stability = max(FSRS.initialStability(.again), interval)
+        let errors = Double(min(6, max(0, score.wrong)))
+        let assisted = Double(min(5, max(0, score.hinted) + max(0, score.slow)))
+        let difficulty = FSRS.initialDifficulty(.good) + 1.2 * errors + 0.4 * assisted
+        return FSRS.validated(FSRS.MemoryState(stability: stability, difficulty: difficulty))
+    }
+
+    static func legacyReps(_ score: Score) -> Int {
+        max(0, score.correct) + max(0, score.wrong)
+    }
+
+    static func legacyLapses(_ score: Score) -> Int {
+        max(0, score.wrong)
     }
 
     /// Polish error category stored in the review.
@@ -71,6 +160,9 @@ public enum Scheduler {
             case .dictation: return "Słuchanie i pisownia"
             case .meaning: return "Znaczenie w kontekście"
             case .picture: return "Rozpoznawanie ze zdjęcia"
+            case .scramble: return "Szyk zdania"
+            case .matchPairs: return "Dopasowanie znaczenia"
+            case .listeningChoice: return "Rozumienie ze słuchu"
             default: return "Przypominanie lub pisownia"
             }
         }
@@ -124,26 +216,46 @@ public enum Scheduler {
         word.updatedAt = now
         let skill = task.type.skill
         let before = Mastery.of(meaning)
-        meaning.scores[skill] = schedule(
-            meaning.scores[skill],
-            correct: correct,
-            seconds: safeSeconds,
-            confidence: safeConfidence,
-            hint: hint,
-            now: now,
-            type: task.type,
-            weight: weight
-        )
-        if task.type.scoresSpelling {
-            meaning.scores[.spelling] = schedule(
-                meaning.scores[.spelling],
-                correct: spelling,
+        let retention = state.settings.effectiveRetention
+        let slow = safeSeconds > task.type.slowSeconds
+        // An accepted typo („Uznaj moją odpowiedź”) is Hard for the tested skill; the spelling
+        // skill itself fails, as before. Reading questions carry no real answer time or
+        // confidence (fixed 15 s / 2), so a correct one is Good, never Hard — otherwise every
+        // reading would raise the word's FSRS difficulty.
+        let primaryRating: FSRS.Rating = source == .reading
+            ? (correct ? (hint ? .hard : .good) : .again)
+            : rating(
+                correct: correct,
+                hint: hint,
+                typo: correct && !spelling,
                 seconds: safeSeconds,
                 confidence: safeConfidence,
+                type: task.type
+            )
+        meaning.scores[skill] = review(
+            meaning.scores[skill],
+            rating: primaryRating,
+            hint: hint,
+            slow: slow,
+            now: now,
+            weight: weight,
+            retention: retention
+        )
+        if task.type.scoresSpelling {
+            meaning.scores[.spelling] = review(
+                meaning.scores[.spelling],
+                rating: rating(
+                    correct: spelling,
+                    hint: hint,
+                    seconds: safeSeconds,
+                    confidence: safeConfidence,
+                    type: task.type
+                ),
                 hint: hint,
+                slow: slow,
                 now: now,
-                type: task.type,
-                weight: weight
+                weight: weight,
+                retention: retention
             )
         }
         let after = Mastery.of(meaning)

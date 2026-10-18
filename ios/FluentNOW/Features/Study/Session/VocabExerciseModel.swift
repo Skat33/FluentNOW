@@ -24,6 +24,19 @@ enum VocabInputStyle: Equatable {
     case choice
     /// Pole tekstowe (tłumaczenie, luka, dyktando, znaczenie bez pokazanych wariantów).
     case typing
+    /// „Ułóż zdanie”: kafelki słów (I2).
+    case scramble
+    /// „Dopasuj pary”: dwie kolumny do połączenia (I2).
+    case pairs
+    /// „Zrozum ze słuchu”: odsłuch + wybór tłumaczenia (I2).
+    case listening
+}
+
+/// Błędna para na planszy „Dopasuj pary” (krótkie mignięcie).
+struct VocabPairFlash: Equatable {
+    let id: Int
+    let englishID: String
+    let polishID: String
 }
 
 /// Stan jednego zadania słownikowego (fiszka, tłumaczenie, luka, znaczenie, dyktando).
@@ -55,6 +68,30 @@ final class VocabExerciseModel {
     private(set) var chosenOption: Int?
     /// Opcje wybrane błędnie (w drugiej próbie zablokowane i oznaczone).
     private(set) var wrongOptions: [Int] = []
+    /// Była druga próba (typy bez podpowiedzi tekstowych liczą ją jako pomoc).
+    private(set) var retried = false
+
+    // „Ułóż zdanie”
+    /// Identyfikatory kafelków ułożonych w zdaniu (po kolei).
+    private(set) var placedTiles: [Int] = []
+    /// Tłumaczenie zdania odsłonięte (podpowiedź).
+    private(set) var scrambleHintShown = false
+
+    // „Dopasuj pary”
+    /// Zaznaczone słowo angielskie / tłumaczenie (identyfikator znaczenia).
+    private(set) var selectedEnglish: String?
+    private(set) var selectedPolish: String?
+    /// Znaczenia już połączone w pary.
+    private(set) var matchedPairs: [String] = []
+    /// Liczba błędnych par, w których brało udział znaczenie.
+    private(set) var pairMistakes: [String: Int] = [:]
+    /// Ostatnia błędna para (mignięcie); `id` rośnie z każdym błędem.
+    private(set) var pairFlash: VocabPairFlash?
+    private(set) var pairMistakeCount = 0
+
+    // „Zrozum ze słuchu”
+    /// Liczba odsłuchów przed odpowiedzią.
+    private(set) var plays = 0
 
     private let variants: AnswerVariants
     private let assistant: AssistantService?
@@ -66,7 +103,7 @@ final class VocabExerciseModel {
     init(content: VocabExerciseContent, key: String, options: [String], variants: AnswerVariants, assistant: AssistantService?) {
         self.content = content
         self.key = key
-        self.options = options
+        self.options = content.type == .listeningChoice ? content.listeningOptions : options
         self.variants = variants
         self.assistant = assistant
         self.startedAt = Date()
@@ -85,7 +122,9 @@ final class VocabExerciseModel {
     }
     /// Podpowiedź lub warianty = odpowiedź z pomocą (strona: `hint`). Opcje pokazane od razu
     /// przy pierwszym kontakcie ze słowem nie są pomocą.
-    var usedHelp: Bool { hintShown || (variantsShown && !variantsAreFree) }
+    var usedHelp: Bool {
+        hintShown || (variantsShown && !variantsAreFree) || scrambleHintShown || (retried && !type.hasTextHints)
+    }
     /// Zdjęcie poprawnej odpowiedzi (po wczytaniu).
     var correctPicture: StudyPictureOption? {
         pictures.first { (option: StudyPictureOption) -> Bool in option.isCorrect }
@@ -99,15 +138,54 @@ final class VocabExerciseModel {
         switch type {
         case .flashcard: return .flashcard
         case .picture: return .picture
-        case .meaning: return variantsShown && options.count >= 2 ? .choice : .typing
+        case .meaning: return (variantsShown && options.count >= 2) ? .choice : .typing
         case .recall, .cloze, .dictation: return .typing
+        case .scramble: return .scramble
+        case .matchPairs: return .pairs
+        case .listeningChoice: return .listening
         }
     }
 
-    /// Indeks poprawnej opcji (tłumaczenie znaczenia) albo `nil`, gdy go wśród opcji nie ma.
+    /// Indeks poprawnej opcji (tłumaczenie znaczenia, a w słuchaniu — tłumaczenie zdania) albo
+    /// `nil`, gdy go wśród opcji nie ma.
     var correctOption: Int? {
+        if type == .listeningChoice {
+            return ListeningChoice.correctIndex(options: options, meaning: content.meaning, exampleIndex: content.exampleIndex)
+        }
         let key = TextNormalizer.normalize(content.meaning.translation)
         return options.firstIndex { (option: String) -> Bool in TextNormalizer.normalize(option) == key }
+    }
+
+    /// Kafelki ułożone w zdaniu (w kolejności).
+    var placedScrambleTiles: [ScrambleTile] {
+        guard let board = content.scramble else { return [] }
+        return placedTiles.compactMap { (id: Int) -> ScrambleTile? in
+            board.tiles.first { (tile: ScrambleTile) -> Bool in tile.id == id }
+        }
+    }
+
+    /// Kafelki jeszcze do wyboru (w kolejności planszy).
+    var availableScrambleTiles: [ScrambleTile] {
+        guard let board = content.scramble else { return [] }
+        return board.tiles.filter { (tile: ScrambleTile) -> Bool in !placedTiles.contains(tile.id) }
+    }
+
+    /// „Sprawdź” w rozsypance: ułożono tyle słów, ile ma zdanie.
+    var canCheckScramble: Bool {
+        guard let board = content.scramble else { return false }
+        return (phase == .answering || phase == .retry) && placedTiles.count == board.answer.count
+    }
+
+    /// Wynik „Dopasuj pary” per znaczenie (kolejność lewej kolumny).
+    var pairResults: [MatchPairResult] {
+        content.pairItems.map { (item: MatchPairItem) -> MatchPairResult in
+            MatchPairResult(wordId: item.wordId, meaningId: item.meaningId, mistakes: pairMistakes[item.meaningId] ?? 0)
+        }
+    }
+
+    /// Odsłuch w „Zrozum ze słuchu” jest jeszcze możliwy (po odpowiedzi — bez limitu).
+    var canPlay: Bool {
+        isFinished || plays < ListeningChoice.maxPlays
     }
 
     // MARK: Akcje
@@ -131,7 +209,7 @@ final class VocabExerciseModel {
     /// dystraktor nigdy nie zostanie uznany za „literówkę” poprawnej odpowiedzi. Pierwszy błąd daje
     /// drugą próbę z podpowiedzią (błędna opcja zostaje oznaczona i zablokowana), jak przy wpisywaniu.
     func chooseOption(at index: Int) {
-        guard inputStyle == .choice, phase == .answering || phase == .retry,
+        guard inputStyle == .choice || inputStyle == .listening, phase == .answering || phase == .retry,
               let option = options.studyItem(at: index), !wrongOptions.contains(index) else { return }
         answer = option
         chosenOption = index
@@ -139,6 +217,8 @@ final class VocabExerciseModel {
         let correct: Bool
         if let expected = correctOption {
             correct = index == expected
+        } else if type == .listeningChoice {
+            correct = false
         } else {
             correct = VocabularyGrader.localGrade(
                 answer: option,
@@ -189,6 +269,125 @@ final class VocabExerciseModel {
             explanation: ""
         )
         phase = .finished
+    }
+
+    // MARK: „Ułóż zdanie”
+
+    /// Dotknięcie kafelka z puli — trafia na koniec zdania.
+    func placeTile(_ id: Int) {
+        guard type == .scramble, phase == .answering || phase == .retry, !placedTiles.contains(id),
+              content.scramble?.tiles.contains(where: { (tile: ScrambleTile) -> Bool in tile.id == id }) == true else { return }
+        placedTiles.append(id)
+    }
+
+    /// Dotknięcie kafelka w zdaniu — wraca do puli.
+    func removeTile(_ id: Int) {
+        guard type == .scramble, phase == .answering || phase == .retry else { return }
+        placedTiles.removeAll { (placed: Int) -> Bool in placed == id }
+    }
+
+    /// „Wyczyść” — wszystkie kafelki wracają do puli.
+    func clearTiles() {
+        guard type == .scramble, phase == .answering || phase == .retry else { return }
+        placedTiles = []
+    }
+
+    /// Podpowiedź rozsypanki: polskie tłumaczenie zdania (odpowiedź z pomocą).
+    func showScrambleHint() {
+        guard type == .scramble, phase == .answering || phase == .retry else { return }
+        scrambleHintShown = true
+    }
+
+    /// Sprawdza ułożone zdanie (wielkość liter i interpunkcja bez znaczenia). Pierwszy błąd:
+    /// druga próba — poprawny początek zostaje, reszta wraca do puli, tłumaczenie się odsłania.
+    func checkScramble() {
+        guard canCheckScramble, let board = content.scramble else { return }
+        let texts = placedScrambleTiles.map { (tile: ScrambleTile) -> String in tile.text }
+        answer = texts.joined(separator: " ")
+        stoppedSeconds = elapsed()
+        if SentenceScramble.isCorrect(texts, board: board) {
+            finish(with: Grade(verdict: .correct, explanation: "", spellingCorrect: true))
+            return
+        }
+        if phase == .answering {
+            let kept = SentenceScramble.correctPrefixCount(texts, board: board)
+            placedTiles = Array(placedTiles.prefix(kept))
+            retried = true
+            scrambleHintShown = scrambleHintShown || !board.translation.isEmpty
+            phase = .retry
+            return
+        }
+        finish(with: Grade(verdict: .incorrect, explanation: "Ułożono: „\(answer)”.", spellingCorrect: false))
+    }
+
+    // MARK: „Dopasuj pary”
+
+    /// Dotknięcie słowa angielskiego (ponowne — odznacza).
+    func tapEnglish(_ meaningID: String) {
+        guard type == .matchPairs, phase == .answering, !matchedPairs.contains(meaningID) else { return }
+        selectedEnglish = selectedEnglish == meaningID ? nil : meaningID
+        resolvePair()
+    }
+
+    /// Dotknięcie tłumaczenia (ponowne — odznacza).
+    func tapPolish(_ meaningID: String) {
+        guard type == .matchPairs, phase == .answering, !matchedPairs.contains(meaningID) else { return }
+        selectedPolish = selectedPolish == meaningID ? nil : meaningID
+        resolvePair()
+    }
+
+    /// Koniec mignięcia błędnej pary (wołane przez widok po chwili).
+    func clearPairFlash(_ id: Int) {
+        guard pairFlash?.id == id else { return }
+        pairFlash = nil
+    }
+
+    private func resolvePair() {
+        guard let english = selectedEnglish, let polish = selectedPolish else { return }
+        selectedEnglish = nil
+        selectedPolish = nil
+        if english == polish {
+            matchedPairs.append(english)
+            if matchedPairs.count >= content.pairItems.count {
+                finishPairs()
+            }
+            return
+        }
+        // Błędna para liczy pomyłkę dla obu znaczeń.
+        pairMistakes[english, default: 0] += 1
+        pairMistakes[polish, default: 0] += 1
+        pairMistakeCount += 1
+        pairFlash = VocabPairFlash(id: pairMistakeCount, englishID: english, polishID: polish)
+    }
+
+    private func finishPairs() {
+        let seconds = elapsed()
+        stoppedSeconds = seconds
+        let total = content.pairItems.count
+        let missed = pairResults.filter { (result: MatchPairResult) -> Bool in !result.correct }.count
+        answer = "\(total - missed)/\(total)"
+        let correct = missed == 0
+        grade = Grade(verdict: correct ? .correct : .incorrect, explanation: "", spellingCorrect: correct)
+        outcome = StudyAnswerOutcome(
+            value: answer,
+            correct: correct,
+            hinted: false,
+            spellingCorrect: correct,
+            seconds: seconds,
+            explanation: correct ? "" : "Pomyłki w parach: \(pairMistakeCount)."
+        )
+        phase = .finished
+    }
+
+    // MARK: „Zrozum ze słuchu”
+
+    /// Rejestruje odsłuch; `false`, gdy limit przed odpowiedzią jest wyczerpany.
+    func registerPlay() -> Bool {
+        guard type == .listeningChoice else { return false }
+        if isFinished { return true }
+        guard plays < ListeningChoice.maxPlays else { return false }
+        plays += 1
+        return true
     }
 
     /// Fiszka: odsłonięcie znaczenia zatrzymuje licznik.
@@ -305,6 +504,7 @@ final class VocabExerciseModel {
         if phase == .answering || (phase == .checking && retryGrade == nil) {
             retryGrade = grade
             hintLevel = min(content.hints.count, hintLevel + 1)
+            retried = true
             phase = .retry
             return
         }

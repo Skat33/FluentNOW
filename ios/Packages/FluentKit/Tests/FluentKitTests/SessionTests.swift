@@ -28,9 +28,10 @@ final class SessionTests: XCTestCase {
         meaning.scores[.recognition] = Score(correct: 2)
         XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.recall, .meaning])
         meaning.scores[.recall] = Score()
-        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.cloze, .recall])
+        // FEEDBACK-4 I2: the scramble joins cloze, the listening choice joins dictation.
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.cloze, .scramble, .recall])
         meaning.scores[.usage] = Score()
-        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.dictation, .meaning])
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.listeningChoice, .dictation, .meaning])
         meaning.scores[.listening] = Score()
         XCTAssertNil(SessionBuilder.allowedTaskTypes(meaning))
     }

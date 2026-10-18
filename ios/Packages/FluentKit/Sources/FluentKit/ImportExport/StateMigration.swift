@@ -27,8 +27,19 @@ public enum StateMigration {
                 var scores = meaning.scores
                 for (skill, score) in meaning.scores.entries {
                     var fixed = score
-                    fixed.interval = min(90, finiteNonNegative(score.interval))
+                    // FSRS (I1) schedules up to 365 days; legacy scores stay ≤ 90 anyway.
+                    fixed.interval = min(Scheduler.maximumInterval, finiteNonNegative(score.interval))
                     fixed.value = Mastery.fromInterval(fixed.interval)
+                    // FSRS state: both values valid or none (legacy scores get theirs at the next answer).
+                    if let memory = score.memoryState {
+                        fixed.stability = memory.stability
+                        fixed.difficulty = memory.difficulty
+                    } else {
+                        fixed.stability = nil
+                        fixed.difficulty = nil
+                    }
+                    fixed.reps = score.reps.map { max(0, $0) }
+                    fixed.lapses = score.lapses.map { max(0, $0) }
                     scores[skill] = fixed
                 }
                 meaning.scores = scores

@@ -107,12 +107,53 @@ final class ReminderService {
         }
     }
 
-    /// Usuwa wszystkie zaplanowane przypomnienia.
+    /// Usuwa wszystkie zaplanowane przypomnienia (także cotygodniowe powiadomienie o raporcie).
     func cancelAll() async {
         guard enabled else { return }
         let center = UNUserNotificationCenter.current()
         let pending = await center.pendingNotificationRequests()
-        center.removePendingNotificationRequests(withIdentifiers: pending.map(\.identifier).filter { $0.hasPrefix(Self.identifierPrefix) })
+        let ours = pending.map(\.identifier).filter { $0.hasPrefix(Self.identifierPrefix) || $0 == Self.weeklyReportIdentifier }
+        center.removePendingNotificationRequests(withIdentifiers: ours)
+    }
+
+    // MARK: - Raport tygodniowy (I3)
+
+    /// Osobny identyfikator (bez prefiksu codziennych), więc `reschedule` go nie usuwa.
+    nonisolated static let weeklyReportIdentifier = "fluent.weekly-report"
+    nonisolated static let weeklyReportDeepLink = "fluentnow://progress"
+    /// Niedziela (1 w `Calendar.weekday`), 20:00 czasu lokalnego — godzinę po domyślnym przypomnieniu.
+    nonisolated static let weeklyReportWeekday = 1
+    nonisolated static let weeklyReportHour = 20
+    nonisolated static let weeklyReportMinute = 0
+
+    /// Planuje (opt-in) albo usuwa cotygodniowe powiadomienie „Twój raport tygodniowy”.
+    /// Wyzwalacz powtarzalny (`repeats: true`) — działa bez otwierania aplikacji. Zgodę trzeba
+    /// uzyskać wcześniej (`requestAuthorization()` po włączeniu przełącznika).
+    func scheduleWeeklyReport(enabled isOn: Bool) async {
+        guard enabled else { return }
+        let center = UNUserNotificationCenter.current()
+        center.removePendingNotificationRequests(withIdentifiers: [Self.weeklyReportIdentifier])
+        guard isOn else { return }
+        await refreshAuthorization()
+        guard authorization == .authorized else { return }
+        let content = UNMutableNotificationContent()
+        content.title = "Twój raport tygodniowy"
+        content.body = "Zobacz, ile udało się w tym tygodniu i które słowa warto powtórzyć."
+        content.sound = .default
+        content.userInfo = [Self.deepLinkKey: Self.weeklyReportDeepLink]
+        content.threadIdentifier = "fluent.weekly-report"
+        let trigger = UNCalendarNotificationTrigger(dateMatching: Self.weeklyReportComponents(), repeats: true)
+        let request = UNNotificationRequest(identifier: Self.weeklyReportIdentifier, content: content, trigger: trigger)
+        try? await center.add(request)
+    }
+
+    /// Niedziela 20:00 (dowolny tydzień).
+    nonisolated static func weeklyReportComponents() -> DateComponents {
+        var components = DateComponents()
+        components.weekday = weeklyReportWeekday
+        components.hour = weeklyReportHour
+        components.minute = weeklyReportMinute
+        return components
     }
 
     // MARK: - Logika (testowalna)

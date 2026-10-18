@@ -79,6 +79,8 @@ struct SettingsLearningSection: View {
                     Label("Pora", systemImage: "clock")
                 }
             }
+            SettingsWeeklyReportToggle()  // I3: cotygodniowe powiadomienie o raporcie (opt-in)
+            SettingsRetentionPicker()  // I1: docelowa retencja FSRS (fsrs)
         } header: {
             Text("Twój rytm nauki")
         } footer: {

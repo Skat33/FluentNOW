@@ -166,6 +166,7 @@ private struct TodayContent: View {
             }
         } else {
             TodayXPCard(progression: snapshot.progression)
+            TodayWeeklyReportCard()  // I3: tylko w niedzielę i poniedziałek
             TodayStatsGrid(overview: snapshot.overview)
             TodayWeekCard(week: snapshot.week, goal: snapshot.goal.goal)
             TodayAnalysisCard(analysis: snapshot.analysis)

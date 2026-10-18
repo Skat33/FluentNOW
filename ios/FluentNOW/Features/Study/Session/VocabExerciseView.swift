@@ -17,12 +17,12 @@ struct VocabExerciseView: View {
         VStack(alignment: .leading, spacing: Spacing.m) {
             Card(spacing: Spacing.m) {
                 StudyExerciseKindBanner(
-                    model.type == .dictation ? .listening : .vocabulary,
+                    (model.type == .dictation || model.type == .listeningChoice) ? StudyExerciseKindBanner.Kind.listening : .vocabulary,
                     detail: model.content.mode == .pairs ? StudyMode.pairs.namePl : model.type.shortNamePl
                 )
                 VocabMetaRow(model: model)
                 VocabPromptView(model: model)
-                if model.type != .dictation && model.type != .picture {
+                if showsSentenceAudio {
                     StudySentenceAudioButton(
                         text: model.content.sentenceAudio(solved: model.isFinished || model.revealed),
                         solved: model.isFinished || model.revealed
@@ -73,6 +73,16 @@ struct VocabExerciseView: View {
         }
     }
 
+    /// „Posłuchaj zadania” pod treścią: nie przy dyktandzie i słuchaniu (własne odtwarzanie), zdjęciach
+    /// i parach (bez zdania); w rozsypance dopiero po odpowiedzi (nagranie zdradziłoby kolejność).
+    private var showsSentenceAudio: Bool {
+        switch model.type {
+        case .dictation, .picture, .matchPairs, .listeningChoice: return false
+        case .scramble: return model.isFinished
+        case .flashcard, .recall, .cloze, .meaning: return true
+        }
+    }
+
     private func announceResult() {
         // Fiszka z obsługą decyzji przechodzi od razu dalej — bez komunikatu wyniku.
         if model.type == .flashcard && onFlashcardDecision != nil { return }
@@ -102,6 +112,12 @@ private struct VocabExerciseInput: View {
             if !model.isFinished {
                 VocabAnswerArea(model: model, focus: focus)
             }
+        case .scramble:
+            VocabScrambleArea(model: model)
+        case .pairs:
+            VocabPairsBoard(model: model)
+        case .listening:
+            VocabListeningChoiceArea(model: model)
         }
     }
 }

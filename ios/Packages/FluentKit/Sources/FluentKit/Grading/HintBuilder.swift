@@ -55,7 +55,7 @@ public enum HintBuilder {
     /// picture exercise (one tap, no typing) have none.
     /// `exampleIndex` is the index of the example shown (the cloze answer is the form used there).
     public static func vocabularyHints(word: Word, meaning: Meaning, type: ExerciseType, exampleIndex: Int, variants: AnswerVariants = .builtIn) -> HintSet {
-        guard type != .flashcard, type != .picture else { return .empty }
+        guard type.hasTextHints else { return .empty }
         let answers = vocabularyMaskTerms(word: word, meaning: meaning, type: type, exampleIndex: exampleIndex, variants: variants)
         let primary = primaryVocabularyAnswer(word: word, meaning: meaning, type: type, exampleIndex: exampleIndex)
         var lines: [String] = []
@@ -114,7 +114,7 @@ public enum HintBuilder {
             return first.isEmpty ? translation : first
         case .cloze:
             return withoutParentheses(gradingWord(word: word, meaning: meaning, type: type, exampleIndex: exampleIndex).en)
-        case .flashcard, .recall, .dictation, .picture:
+        case .flashcard, .recall, .dictation, .picture, .scramble, .matchPairs, .listeningChoice:
             return withoutParentheses(TextNormalizer.withoutDialectLabel(word.en))
         }
     }

@@ -26,6 +26,7 @@ struct WordsRootScreen: View {
         .navigationTitle("Słownik")
         .toolbar {
             ToolbarItem(placement: .primaryAction) { QuickAddButton() }
+            ToolbarItem(placement: .topBarTrailing) { ScanToolbarButton() }  // I3: skanowanie tekstu
         }
         .libraryNavigationDestinations()
         .onChange(of: router.pendingLibraryDestination, initial: true) { _, newValue in

@@ -27,7 +27,8 @@ final class SchedulingTests: XCTestCase {
         let hinted = Scheduler.schedule(score, correct: true, seconds: 4, confidence: 2, hint: true, now: 4, type: .recall)
         XCTAssertEqual(hinted.wrong, 3)
         XCTAssertEqual(hinted.hinted, 1)
-        XCTAssertEqual(hinted.interval, 0.5)
+        // FSRS (I1): a hinted answer is Hard → at least one whole day (the web heuristic gave 12 h).
+        XCTAssertEqual(hinted.interval, 1)
         let recovered = Scheduler.schedule(hinted, correct: true, seconds: 4, confidence: 3, hint: false, now: 5, type: .recall)
         XCTAssertEqual(recovered.wrong, 2)
         var word = TestData.freshWord("hard", "recover", "odzyskać")
@@ -48,12 +49,13 @@ final class SchedulingTests: XCTestCase {
         for index in 0..<20 {
             let next = Scheduler.schedule(score, correct: true, seconds: 2, confidence: 3, hint: false, now: testNow + Double(index) * 30 * day, type: .recall)
             XCTAssertGreaterThanOrEqual(next.interval, previous)
-            XCTAssertLessThanOrEqual(next.interval, 90)
+            // FSRS (I1): the cap is 365 days (the web heuristic stopped at 90).
+            XCTAssertLessThanOrEqual(next.interval, Scheduler.maximumInterval)
             XCTAssertGreaterThanOrEqual(next.interval, 1)
             previous = next.interval
             score = next
         }
-        XCTAssertEqual(score?.interval, 90)
+        XCTAssertEqual(score?.interval, 365)
         XCTAssertEqual(score?.value, 100)
     }
 
@@ -69,9 +71,12 @@ final class SchedulingTests: XCTestCase {
         XCTAssertEqual(nanSeconds.slow, 0)
         XCTAssertTrue(nanSeconds.interval.isFinite)
         let old = Score(value: 31, interval: 3, due: testNow, correct: 1, wrong: 0, hinted: 0, last: testNow + 10 * day, slow: 0)
-        // Last answer in the future (clock moved back): no negative elapsed bonus.
+        // Last answer in the future (clock moved back): elapsed time is 0, never negative.
+        // FSRS (I1): legacy stability 3 → same-day Easy (fast, „Bardzo pewnie”) → S 5.0445 → 5 days
+        // (Node reference port; the web heuristic gave 7.5).
         let next = Scheduler.schedule(old, correct: true, seconds: -4, confidence: 3, hint: false, now: testNow)
-        XCTAssertEqual(next.interval, 7.5, accuracy: 1e-9)
+        XCTAssertEqual(next.interval, 5)
+        XCTAssertEqual(next.stability ?? 0, 5.044505, accuracy: 1e-4)
     }
 
     func testReadingWeightNeverShortensInterval() {

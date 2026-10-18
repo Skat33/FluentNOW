@@ -64,19 +64,22 @@ final class CombinedSessionModel {
         let saved = session.currentAnswer
         switch task {
         case .vocabulary(let mode, let vocabTask):
-            guard let content = VocabExerciseContent(task: vocabTask, mode: mode, state: store.state, variants: resources.variants) else {
+            guard let base = VocabExerciseContent(task: vocabTask, mode: mode, state: store.state, variants: resources.variants) else {
                 missingTask = true
                 return
             }
+            // Rozsypanka / pary / słuchanie, których nie da się pokazać → zadanie zastępcze (I2).
+            // Zapis i tak idzie przez zadanie z sesji (`saveAnswer`).
+            let content = base.displayFallback(state: store.state, variants: resources.variants) ?? base
             let created = VocabExerciseModel(
                 content: content,
                 key: key,
-                options: vocabTask.type == .meaning ? options(for: content) : [],
+                options: content.type == .meaning ? options(for: content) : [],
                 variants: resources.variants,
                 assistant: assistant
             )
             vocabulary = created
-            if vocabTask.type == .picture {
+            if content.type == .picture {
                 loadPictures(for: created)
             }
         case .question(let questionTask):
@@ -101,14 +104,21 @@ final class CombinedSessionModel {
         let answer = pendingAnswer()
         let reviewID = UUID().uuidString.lowercased()
         let isVocabulary = session.currentTask?.vocabularyTask != nil
+        // „Dopasuj pary” (I2): wynik każdego znaczenia planszy (pusto — zwykłe zadanie).
+        let pairResults: [MatchPairResult] = vocabulary?.type == .matchPairs ? (vocabulary?.pairResults ?? []) : []
+        let alreadySaved = session.currentAnswer != nil
         store.update(.answer) { (state: inout LearnerState) -> Void in
             if let answer, state.combined?.currentAnswer == nil {
-                state = CombinedSessionBuilder.saveAnswer(state, answer: answer, now: now, reviewID: reviewID)
+                state = CombinedSessionBuilder.saveAnswer(state, answer: answer, now: now, reviewID: reviewID, matchResults: pairResults)
             }
             state = CombinedSessionBuilder.advance(state, now: now)
         }
-        if answer != nil && isVocabulary {
-            runReviewIDs.append(reviewID)
+        if answer != nil && isVocabulary && !alreadySaved {
+            if pairResults.isEmpty {
+                runReviewIDs.append(reviewID)
+            } else {
+                runReviewIDs.append(contentsOf: MatchPairsExercise.reviewIDs(base: reviewID, count: pairResults.count))
+            }
         }
         sync()
     }
@@ -219,7 +229,8 @@ final class CombinedSessionModel {
         let images = images
         Task { @MainActor [weak self] in
             var loaded: [StudyPictureOption]?
-            if let images, !StudyPictureAccessibility.prefersTextExercise {
+            // „W budowie” (I2): stare przerwane zadania zdjęciowe idą jako „Wybierz znaczenie”.
+            if let images, PictureExercise.isEnabled, !StudyPictureAccessibility.prefersTextExercise {
                 loaded = await StudyPictureLoader.options(for: created.content, key: created.key, state: state, images: images)
             }
             guard let self, self.vocabulary === created else { return }

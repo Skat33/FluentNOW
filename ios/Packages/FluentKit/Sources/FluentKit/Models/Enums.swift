@@ -43,9 +43,20 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
     /// 5 — „Słowo i zdjęcie”: the English word, four photos, pick the right one (iOS only,
     /// concrete nouns with a cached internet photo).
     case picture = 5
+    /// 6 — „Ułóż zdanie” (rozsypanka, FEEDBACK-4 I2): the words of an example sentence as tiles in
+    /// random order (plus 1–2 decoys on higher levels); skill usage.
+    case scramble = 6
+    /// 7 — „Dopasuj pary” (I2): five English words ↔ five Polish translations; one task covers
+    /// five meanings (`VocabTask.partners`), every meaning is scored for recognition.
+    case matchPairs = 7
+    /// 8 — „Zrozum ze słuchu” (I2): the example sentence is read aloud (text hidden, at most three
+    /// plays), pick its Polish translation out of four; skill listening (no spelling).
+    case listeningChoice = 8
 
-    /// Types that a session may draw (everything except flashcards).
-    public static let sessionTypes: [ExerciseType] = [.recall, .cloze, .meaning, .dictation, .picture]
+    /// Types that a session may draw for a single meaning (everything except flashcards and the
+    /// five-meaning „Dopasuj pary”, which `SessionBuilder` builds from finished choices). The
+    /// picture exercise is drawn only while `PictureExercise.isEnabled`.
+    public static let sessionTypes: [ExerciseType] = [.recall, .cloze, .meaning, .dictation, .picture, .scramble, .listeningChoice]
 
     /// Polish exercise name (`exerciseNames`).
     public var namePl: String {
@@ -56,6 +67,9 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
         case .meaning: return "Wybierz znaczenie"
         case .dictation: return "Posłuchaj i zapisz"
         case .picture: return "Słowo i zdjęcie"
+        case .scramble: return "Ułóż zdanie"
+        case .matchPairs: return "Dopasuj pary"
+        case .listeningChoice: return "Zrozum ze słuchu"
         }
     }
 
@@ -68,6 +82,9 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
         case .meaning: return "Rozpoznawanie znaczenia"
         case .dictation: return "Dyktando"
         case .picture: return "Rozpoznawanie ze zdjęcia"
+        case .scramble: return "Rozsypanka"
+        case .matchPairs: return "Dopasowywanie par"
+        case .listeningChoice: return "Rozumienie ze słuchu"
         }
     }
 
@@ -80,10 +97,14 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
         case .meaning: return .recognition
         case .dictation: return .listening
         case .picture: return .recognition
+        case .scramble: return .usage
+        case .matchPairs: return .recognition
+        case .listeningChoice: return .listening
         }
     }
 
-    /// Estimated duration in seconds used for session budgets (`taskSeconds`).
+    /// Estimated duration in seconds used for session budgets (`taskSeconds`). „Dopasuj pary” is
+    /// the whole board of five pairs.
     public var estimatedSeconds: Int {
         switch self {
         case .flashcard: return 18
@@ -92,10 +113,14 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
         case .meaning: return 24
         case .dictation: return 48
         case .picture: return 20
+        case .scramble: return 36
+        case .matchPairs: return 50
+        case .listeningChoice: return 28
         }
     }
 
-    /// Answers slower than this count as slow (`slowSeconds`).
+    /// Answers slower than this count as slow (`slowSeconds`). „Dopasuj pary” is recorded per
+    /// meaning (board time divided by the number of pairs), so its threshold is per pair.
     public var slowSeconds: Double {
         switch self {
         case .flashcard: return 10
@@ -104,11 +129,15 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
         case .meaning: return 12
         case .dictation: return 25
         case .picture: return 10
+        case .scramble: return 25
+        case .matchPairs: return 8
+        case .listeningChoice: return 18
         }
     }
 
     /// Format used when a failed task returns at the end of a session (`nextExerciseType`).
-    /// Never a flashcard (G3): dictation falls back to the meaning exercise.
+    /// Never a flashcard (G3): dictation falls back to the meaning exercise. The new types keep
+    /// their skill in another format (scramble → cloze, pairs → meaning, listening → dictation).
     public var retryType: ExerciseType {
         switch self {
         case .flashcard: return .meaning
@@ -117,21 +146,39 @@ public enum ExerciseType: Int, Codable, CaseIterable, Sendable, Hashable {
         case .meaning: return .dictation
         case .dictation: return .meaning
         case .picture: return .meaning
+        case .scramble: return .cloze
+        case .matchPairs: return .meaning
+        case .listeningChoice: return .dictation
         }
     }
 
     /// Whether the prompt may be read aloud before answering (`exercisePromptAudioAllowed`).
-    /// Recall and cloze hide the English target, so no audio before checking.
+    /// Recall and cloze hide the English target, so no audio before checking; the scrambled
+    /// sentence would be given away by its audio; the pairs board has no sentence.
     public var promptAudioAllowed: Bool {
         switch self {
-        case .flashcard, .meaning, .dictation, .picture: return true
-        case .recall, .cloze: return false
+        case .flashcard, .meaning, .dictation, .picture, .listeningChoice: return true
+        case .recall, .cloze, .scramble, .matchPairs: return false
         }
     }
 
     /// Whether this exercise also scores spelling.
     public var scoresSpelling: Bool {
         self == .recall || self == .dictation
+    }
+
+    /// `true` for the exercise that scores several meanings at once („Dopasuj pary”).
+    public var coversSeveralMeanings: Bool {
+        self == .matchPairs
+    }
+
+    /// `true` when `HintBuilder` builds text hints for this type (typed answers and the meaning
+    /// choice). Tap-only exercises have none; the scramble has its own hint (the translation).
+    public var hasTextHints: Bool {
+        switch self {
+        case .recall, .cloze, .meaning, .dictation: return true
+        case .flashcard, .picture, .scramble, .matchPairs, .listeningChoice: return false
+        }
     }
 }
 

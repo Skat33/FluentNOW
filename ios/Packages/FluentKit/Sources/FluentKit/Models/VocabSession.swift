@@ -1,5 +1,16 @@
 import Foundation
 
+/// A word + meaning reference (the other meanings of a „Dopasuj pary” task).
+public struct VocabTaskRef: Codable, Sendable, Hashable {
+    public var wordId: String
+    public var meaningId: String
+
+    public init(wordId: String, meaningId: String) {
+        self.wordId = wordId
+        self.meaningId = meaningId
+    }
+}
+
 /// One vocabulary exercise in a session (web `Task`).
 public struct VocabTask: Codable, Sendable, Hashable {
     public var wordId: String
@@ -7,16 +18,26 @@ public struct VocabTask: Codable, Sendable, Hashable {
     public var type: ExerciseType
     /// Index of the example sentence used by the task.
     public var example: Int
+    /// „Dopasuj pary” (I2): the other meanings of the board (`wordId`/`meaningId` is the first
+    /// pair). `nil` for every other type — then the key is not written, so the JSON of the old
+    /// types is unchanged; old JSON without the key decodes as `nil`.
+    public var partners: [VocabTaskRef]?
 
-    public init(wordId: String, meaningId: String, type: ExerciseType, example: Int) {
+    public init(wordId: String, meaningId: String, type: ExerciseType, example: Int, partners: [VocabTaskRef]? = nil) {
         self.wordId = wordId
         self.meaningId = meaningId
         self.type = type
         self.example = example
+        self.partners = partners
+    }
+
+    /// Every meaning of the task: the task's own meaning first, then the partners.
+    public var allRefs: [VocabTaskRef] {
+        [VocabTaskRef(wordId: wordId, meaningId: meaningId)] + (partners ?? [])
     }
 
     enum CodingKeys: String, CodingKey {
-        case wordId, meaningId, type, example
+        case wordId, meaningId, type, example, partners
     }
 
     public init(from decoder: Decoder) throws {
@@ -33,6 +54,18 @@ public struct VocabTask: Codable, Sendable, Hashable {
         }
         type = parsed
         example = max(0, c.lenientInt(.example))
+        // Tolerant: a damaged list only loses the partners (the board then falls back to the
+        // meaning exercise of the first pair), never the session.
+        partners = try? c.decodeIfPresent([VocabTaskRef].self, forKey: .partners)
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var c = encoder.container(keyedBy: CodingKeys.self)
+        try c.encode(wordId, forKey: .wordId)
+        try c.encode(meaningId, forKey: .meaningId)
+        try c.encode(type, forKey: .type)
+        try c.encode(example, forKey: .example)
+        try c.encodeIfPresent(partners, forKey: .partners)
     }
 }
 

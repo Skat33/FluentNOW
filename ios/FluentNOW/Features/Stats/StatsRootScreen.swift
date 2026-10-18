@@ -37,6 +37,7 @@ struct StatsRootScreen: View {
         .background(Palette.background)
         .navigationTitle("Postępy")
         .libraryNavigationDestinations()
+        .statsNavigationDestinations()
         .task(id: store.revision) { await refreshSnapshot() }
     }
 
@@ -67,6 +68,7 @@ private struct StatsContent: View {
     @ViewBuilder
     private var topSection: some View {
         StatsOverviewGrid(overview: snapshot.overview)
+        StatsWeeklyReportEntry()
         StatsProgressionSection(progression: snapshot.progression)
         StatsAnalysisSection(analysis: snapshot.analysis)
         TodayWeekCard(week: snapshot.week, goal: snapshot.goal)

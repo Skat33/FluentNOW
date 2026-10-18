@@ -93,6 +93,12 @@ final class WordImagePrefetcher {
     /// Starts (or continues) background downloading. Cheap and safe to call often: a request
     /// during a run only marks that another pass is needed.
     func request() {
+        // „Słowo i zdjęcie” jest „W budowie” (FEEDBACK-4 I2): żadnych zapytań do Openverse.
+        // Powrót: `PictureExercise.isEnabled = true` (FluentKit).
+        guard PictureExercise.isEnabled else {
+            status = .disabled
+            return
+        }
         startObservingIfNeeded()
         guard !isInBackground else { return }
         if task != nil {

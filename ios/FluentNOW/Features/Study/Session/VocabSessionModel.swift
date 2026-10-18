@@ -66,22 +66,24 @@ final class VocabSessionModel {
         }
         if exercise?.key == key { return }
         exercise?.cancelPendingWork()
-        guard let content = VocabExerciseContent(task: task, mode: session.studyMode, state: store.state, variants: resources.variants) else {
+        guard let base = VocabExerciseContent(task: task, mode: session.studyMode, state: store.state, variants: resources.variants) else {
             exercise = nil
             missingTask = true
             return
         }
+        // Rozsypanka / pary / słuchanie, których nie da się pokazać → zadanie zastępcze (I2).
+        let content = base.displayFallback(state: store.state, variants: resources.variants) ?? base
         missingTask = false
         confidence = .fair
         let created = VocabExerciseModel(
             content: content,
             key: key,
-            options: task.type == .meaning ? options(for: content) : [],
+            options: content.type == .meaning ? options(for: content) : [],
             variants: resources.variants,
             assistant: assistant
         )
         exercise = created
-        if task.type == .picture {
+        if content.type == .picture {
             loadPictures(for: created)
         }
         preloadNext(after: session)
@@ -94,7 +96,8 @@ final class VocabSessionModel {
         let images = images
         Task { @MainActor [weak self] in
             var loaded: [StudyPictureOption]?
-            if let images, !StudyPictureAccessibility.prefersTextExercise {
+            // „W budowie” (I2): stare przerwane zadania zdjęciowe idą jako „Wybierz znaczenie”.
+            if let images, PictureExercise.isEnabled, !StudyPictureAccessibility.prefersTextExercise {
                 loaded = await StudyPictureLoader.options(for: created.content, key: created.key, state: state, images: images)
             }
             guard let self, self.exercise === created else { return }
@@ -125,18 +128,32 @@ final class VocabSessionModel {
         let task = exercise.content.task
         let confidenceValue = confidence.rawValue
         let expectedIndex = session?.index
+        // „Dopasuj pary” (I2): każde znaczenie planszy dostaje własną recenzję.
+        let pairResults = task.type == .matchPairs ? exercise.pairResults : []
         store.update(.answer) { (state: inout LearnerState) -> Void in
-            state = Scheduler.recordAnswer(
-                state,
-                task: task,
-                correct: outcome.correct,
-                seconds: outcome.seconds,
-                confidence: confidenceValue,
-                hint: outcome.hinted,
-                spellingCorrect: outcome.spellingCorrect,
-                now: now,
-                reviewID: reviewID
-            )
+            if !pairResults.isEmpty {
+                state = MatchPairsExercise.record(
+                    state,
+                    task: task,
+                    results: pairResults,
+                    seconds: outcome.seconds,
+                    confidence: confidenceValue,
+                    now: now,
+                    reviewID: reviewID
+                )
+            } else {
+                state = Scheduler.recordAnswer(
+                    state,
+                    task: task,
+                    correct: outcome.correct,
+                    seconds: outcome.seconds,
+                    confidence: confidenceValue,
+                    hint: outcome.hinted,
+                    spellingCorrect: outcome.spellingCorrect,
+                    now: now,
+                    reviewID: reviewID
+                )
+            }
             // `recordAnswer` nie zmienia stanu, gdy słowa/znaczenia już nie ma (usunięte w międzyczasie) —
             // wtedy sesja nie przesunęłaby się dalej i ekran by utknął. Przesuwamy indeks sami.
             if let expectedIndex, var current = state.session, current.index == expectedIndex,
@@ -145,7 +162,11 @@ final class VocabSessionModel {
                 state.session = current
             }
         }
-        runReviewIDs.append(reviewID)
+        if pairResults.isEmpty {
+            runReviewIDs.append(reviewID)
+        } else {
+            runReviewIDs.append(contentsOf: MatchPairsExercise.reviewIDs(base: reviewID, count: pairResults.count))
+        }
         runSeconds += outcome.seconds
         sync()
     }

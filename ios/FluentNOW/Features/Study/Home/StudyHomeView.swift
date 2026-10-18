@@ -149,8 +149,9 @@ struct StudyHomeView: View {
     }
 
     /// Profil nauki (G4): „Obrazki” wśród ulubionych → karta „Słowa i obrazki” nad wyborem trybów.
+    /// Gdy tryb jest „W budowie” (I2), preferencja niczego nie zmienia — karta zostaje na dole.
     private var prefersPictures: Bool {
-        store.settings.profile?.styles.contains(.pictures) ?? false
+        PictureExercise.isEnabled && (store.settings.profile?.styles.contains(.pictures) ?? false)
     }
 
     private var flashcardsCard: some View {
@@ -163,15 +164,22 @@ struct StudyHomeView: View {
         WordImagePrefetcher.shared(store: store, images: env.images)
     }
 
+    @ViewBuilder
     private var picturesCard: some View {
-        let photos = prefetcher
-        return StudyPicturesCard(
-            snapshot: picturesSnapshot,
-            status: photos.status,
-            statusText: photos.statusText,
-            isStarting: isStarting,
-            onStart: { start(modes: [.pictures]) }
-        )
+        if PictureExercise.isEnabled {
+            StudyPicturesCard(
+                snapshot: picturesSnapshot,
+                status: prefetcher.status,
+                statusText: prefetcher.statusText,
+                isStarting: isStarting,
+                onStart: { start(modes: [.pictures]) }
+            )
+        } else {
+            // „W budowie” (I2): karta wyszarzona, dotknięcie — krótka informacja.
+            StudyPicturesLockedCard {
+                notice = StudyPicturesLockedCard.message
+            }
+        }
     }
 
     /// Klucz odświeżenia karty zdjęć: zmiana słów/wyników albo nowe zdjęcia na dysku.
@@ -180,7 +188,7 @@ struct StudyHomeView: View {
     }
 
     private func updatePicturesSnapshot() async {
-        guard store.loadPhase == .ready else { return }
+        guard PictureExercise.isEnabled, store.loadPhase == .ready else { return }
         picturesSnapshot = await StudyPicturesSnapshot.make(store: store, images: env.images)
     }
 
@@ -298,6 +306,10 @@ struct StudyHomeView: View {
         }
         // „Słowa i obrazki” (H2) — osobny tryb, bez zmiany zapamiętanego wyboru trybów.
         if modes.contains(.pictures) {
+            guard PictureExercise.isEnabled else {
+                notice = StudyPicturesLockedCard.message
+                return
+            }
             collection = request.collection
             start(modes: [.pictures])
             return

@@ -225,13 +225,32 @@ public enum CombinedSessionBuilder {
 
     /// `saveCombinedAnswer`: stores the answer of the current task once (a second call is ignored).
     /// Vocabulary answers are also scored with `recordAnswer` (confidence 2); the paused
-    /// vocabulary session is not touched.
-    public static func saveAnswer(_ state: LearnerState, answer: CombinedAnswer, now: Timestamp, reviewID: String = UUID().uuidString.lowercased()) -> LearnerState {
+    /// vocabulary session is not touched. A „Dopasuj pary” board passes `matchResults` — every
+    /// meaning of the board is then scored (`MatchPairsExercise.record`, review IDs `reviewID`,
+    /// `reviewID-2`…); `answer.correct` is the whole board.
+    public static func saveAnswer(
+        _ state: LearnerState,
+        answer: CombinedAnswer,
+        now: Timestamp,
+        reviewID: String = UUID().uuidString.lowercased(),
+        matchResults: [MatchPairResult] = []
+    ) -> LearnerState {
         guard var session = state.combined, session.completedAt == nil,
               session.index < session.tasks.count, session.index < session.answers.count,
               session.answers[session.index] == nil else { return state }
         var next = state
-        if let task = session.tasks[session.index].vocabularyTask,
+        if let task = session.tasks[session.index].vocabularyTask, task.type == .matchPairs, !matchResults.isEmpty {
+            next = MatchPairsExercise.record(
+                state,
+                task: task,
+                results: matchResults,
+                seconds: answer.seconds,
+                confidence: 2,
+                now: now,
+                reviewID: reviewID,
+                advancesSession: false
+            )
+        } else if let task = session.tasks[session.index].vocabularyTask,
            state.word(id: task.wordId)?.meaning(id: task.meaningId) != nil {
             var scratch = state
             scratch.session = nil

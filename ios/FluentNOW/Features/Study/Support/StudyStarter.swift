@@ -53,6 +53,9 @@ enum StudyStarter {
             return SessionBuilder.makeSession(state: state, minutes: minutes, mode: mode, collection: collection, pictureMeaningIDs: ready)
         }
         guard !session.tasks.isEmpty else {
+            if mode == .pictures && !PictureExercise.isEnabled {
+                return .message(StudyPicturesLockedCard.message)
+            }
             if mode == .pictures {
                 return .message(await emptyPicturesMessage(store: store, images: images, cachedCount: cached.count))
             }
@@ -105,7 +108,8 @@ enum StudyStarter {
 
     /// Znaczenia ze zdjęciem na dysku (pusty zbiór bez serwisu / bez zdjęć).
     private static func cachedPictureIDs(_ images: WordImageService?) async -> Set<String> {
-        guard let images else { return [] }
+        // „W budowie” (I2): bez zdjęć w sesjach (FluentKit i tak ich nie losuje).
+        guard let images, PictureExercise.isEnabled else { return [] }
         return await images.cachedMeaningIDs()
     }
 

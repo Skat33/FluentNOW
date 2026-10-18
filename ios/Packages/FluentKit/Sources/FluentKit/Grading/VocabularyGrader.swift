@@ -62,9 +62,9 @@ public enum VocabularyGrader {
     /// - recall (1): the word, saved alternatives, reviewed aliases and `to …` for verbs.
     public static func vocabularyAnswers(word: Word, meaning: Meaning, type: ExerciseType, variants: AnswerVariants = .builtIn) -> [String] {
         switch type {
-        case .meaning:
+        case .meaning, .matchPairs:
             return polishAnswers(term: word.en, translation: meaning.translation, saved: meaning.acceptedTranslations ?? [], variants: variants)
-        case .flashcard, .cloze, .dictation, .picture:
+        case .flashcard, .cloze, .dictation, .picture, .scramble, .listeningChoice:
             return [word.en]
         case .recall:
             var answers = [word.en] + (meaning.acceptedAnswers ?? [])

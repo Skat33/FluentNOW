@@ -16,6 +16,15 @@ public struct LearnerSettings: Codable, Sendable, Hashable {
     /// Study profile from the first-run interview (G4). Optional and backward compatible:
     /// older exports and the web app simply do not have it.
     public var profile: LearnerProfile?
+    /// Desired retention of the FSRS scheduler (I1): `nil` = default 0.90. Optional and backward
+    /// compatible (older exports and the web app do not have it). Values are clamped to
+    /// `FSRS.retentionRange` when used.
+    public var desiredRetention: Double?
+
+    /// Retention used by the scheduler.
+    public var effectiveRetention: Double {
+        desiredRetention.map { FSRS.clampedRetention($0) } ?? FSRS.defaultRetention
+    }
 
     public static let goalRange: ClosedRange<Int> = 5...100
     public static let defaultReminder = "19:00"
@@ -28,7 +37,8 @@ public struct LearnerSettings: Codable, Sendable, Hashable {
         slow: Bool = false,
         voice: String? = nil,
         voiceRevision: Int? = 2,
-        profile: LearnerProfile? = nil
+        profile: LearnerProfile? = nil,
+        desiredRetention: Double? = nil
     ) {
         self.goal = min(LearnerSettings.goalRange.upperBound, max(LearnerSettings.goalRange.lowerBound, goal))
         self.reminder = LearnerSettings.isValidReminder(reminder) ? reminder : LearnerSettings.defaultReminder
@@ -37,10 +47,11 @@ public struct LearnerSettings: Codable, Sendable, Hashable {
         self.voice = voice
         self.voiceRevision = voiceRevision
         self.profile = profile
+        self.desiredRetention = desiredRetention.flatMap { $0.isFinite ? FSRS.clampedRetention($0) : nil }
     }
 
     enum CodingKeys: String, CodingKey {
-        case goal, reminder, accent, slow, voice, voiceRevision, profile
+        case goal, reminder, accent, slow, voice, voiceRevision, profile, desiredRetention
     }
 
     public init(from decoder: Decoder) throws {
@@ -52,7 +63,8 @@ public struct LearnerSettings: Codable, Sendable, Hashable {
             slow: c.lenientBool(.slow),
             voice: c.lenientOptionalString(.voice),
             voiceRevision: c.lenientOptionalInt(.voiceRevision),
-            profile: c.lenientOptional(LearnerProfile.self, forKey: .profile)
+            profile: c.lenientOptional(LearnerProfile.self, forKey: .profile),
+            desiredRetention: c.lenientOptionalDouble(.desiredRetention)
         )
     }
 

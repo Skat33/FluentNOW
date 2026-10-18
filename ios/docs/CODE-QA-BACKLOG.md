@@ -26,3 +26,8 @@ Każdy punkt sprawdzić i naprawić lub uzasadnić w raporcie code-qa.
 - [x] (naprawione: identyczne tłumaczenia były już wykluczone; dodano kierunek odwrotny — akceptowane odpowiedzi dystraktora vs tłumaczenie celu) Dystraktory w „Wybierz znaczenie”: pomijać hasła z identycznym `translation` jak poprawna odpowiedź (np. keep someone posted / keep someone in the loop) — zgłoszenie english-qa-T3; sprawdzić, czy `PolishAnswerIndex` już to pokrywa.
 - [ ] **starter-words.json:** ponowny eksport (`export-web-content.mjs`) skasuje poprawki english-qa i content-final w słowach startowych — przenieść je do nadpisań eksportu (lista w `reports/content-final.md` §7).
 - [ ] Przenieść listę wykluczeń zdjęć (`WordImageEligibility`) do `PictureExercise.isPicturable` w FluentKit, żeby sesja nie losowała zadań zdjęciowych dla haseł „bez zdjęcia” (prośba image-verify). Dostroić progi pewności Vision na prawdziwych zdjęciach.
+
+## Runda 4 (FEEDBACK-4)
+- [ ] Deep link `fluentnow://progress/weekly` — powiadomienie o raporcie tygodniowym otwiera dziś tylko kartę Postępy (insights-scan).
+- [ ] `StudyLaunchRequest.wordIDs` — „Powtórz je” w raporcie tygodniowym uruchamia ogólną sesję pomyłek zamiast słów z danego tygodnia (insights-scan).
+- [ ] Testy jednostkowe logiki skanowania (`Features/Scan/`) w FluentNOWTests; etykiety metod delegata `DataScannerViewController` sprawdzić na prawdziwym iPhonie (insights-scan).

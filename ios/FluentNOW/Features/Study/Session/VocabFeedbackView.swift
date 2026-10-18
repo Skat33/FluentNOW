@@ -22,16 +22,22 @@ struct VocabFeedbackView: View {
                     SecondaryButton("Uznaj moją odpowiedź", systemImage: "checkmark", fillsWidth: false, action: model.acceptTypo)
                         .accessibilityHint(Text("Zadanie zostanie zaliczone z błędem pisowni."))
                 }
-                StudyExplanationDisclosure(correct: model.outcome?.correct ?? false) {
-                    VocabExplanationDetails(content: model.content)
+                if model.type == .matchPairs {
+                    VocabPairsResultList(model: model)
+                } else {
+                    StudyExplanationDisclosure(correct: model.outcome?.correct ?? false) {
+                        VocabExplanationDetails(content: model.content)
+                    }
                 }
-                if model.content.accepted.count > 1 && model.type != .flashcard && model.type != .picture {
+                if model.content.accepted.count > 1 && model.type.hasTextHints && model.type != .flashcard {
                     VocabAcceptedVariants(answers: model.content.accepted)
                 }
                 if model.type == .picture {
                     VocabPictureFeedbackActions(model: model)
                 }
-                StudyPronunciationButton(expected: model.content.word.en)
+                if model.type != .matchPairs {
+                    StudyPronunciationButton(expected: model.content.word.en)
+                }
                 StudyReportButton(draft: model.content.reportDraft(answer: model.outcome?.value ?? model.answer))
             }
         }
@@ -63,6 +69,19 @@ struct VocabFeedbackSummary {
             return
         }
 
+        if model.type == .matchPairs {
+            let mistakes = model.pairMistakeCount
+            let total = content.pairItems.count
+            kind = mistakes == 0 ? .correct : .almost
+            title = mistakes == 0 ? "Wszystkie pary bez błędu!" : "Pary dopasowane"
+            message = mistakes == 0
+                ? "\(total) z \(total) par za pierwszym razem."
+                : "Pomyłki: \(mistakes). Słowa z pomyłką wrócą jeszcze w tej sesji."
+            explanation = nil
+            offersTypoAcceptance = false
+            return
+        }
+
         let expected = VocabFeedbackSummary.escaped(content.expectedAnswer)
         if let closest = grade?.closestAnswer, grade?.isFailure == true {
             kind = .almost
@@ -85,17 +104,38 @@ struct VocabFeedbackSummary {
                 kind = .correct
                 title = "Dokładnie tak!"
             }
-            message = pairLine
+            message = VocabFeedbackSummary.correctMessage(model: model, pairLine: pairLine)
             explanation = grade?.source == .ai ? grade?.explanation : nil
         } else {
             kind = .incorrect
             title = "Nie tym razem"
-            message = model.type == .meaning
-                ? "Poprawnie: **\(expected)**"
-                : "Poprawnie: **\(expected)** — \(VocabFeedbackSummary.escaped(content.meaning.translation))"
+            switch model.type {
+            case .meaning:
+                message = "Poprawnie: **\(expected)**"
+            case .scramble, .listeningChoice:
+                message = VocabFeedbackSummary.sentenceLine(content: content)
+            default:
+                message = "Poprawnie: **\(expected)** — \(VocabFeedbackSummary.escaped(content.meaning.translation))"
+            }
             let text = grade?.explanation ?? ""
             explanation = text.isEmpty ? "Sprawdź znaczenie użyte w tym kontekście." : text
         }
+    }
+
+    /// Linia po poprawnej odpowiedzi: przy rozsypance i słuchaniu — całe zdanie z tłumaczeniem.
+    @MainActor
+    static func correctMessage(model: VocabExerciseModel, pairLine: String) -> String {
+        switch model.type {
+        case .scramble, .listeningChoice: return sentenceLine(content: model.content)
+        default: return pairLine
+        }
+    }
+
+    /// „**Zdanie**” — tłumaczenie (rozsypanka, słuchanie).
+    static func sentenceLine(content: VocabExerciseContent) -> String {
+        let sentence = "**\(escaped(content.example))**"
+        let translation = ListeningChoice.translation(meaning: content.meaning, exampleIndex: content.exampleIndex) ?? ""
+        return translation.isEmpty ? sentence : "\(sentence) — \(escaped(translation))"
     }
 
     /// Znaki Markdown w treści użytkownika nie mogą zmienić formatowania.

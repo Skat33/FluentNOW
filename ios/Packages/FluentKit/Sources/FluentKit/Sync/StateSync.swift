@@ -85,12 +85,18 @@ public enum StateSync {
         return merged
     }
 
-    /// Per skill: the score with the later `last` answer (ties keep `primary`).
+    /// Per skill: the score with the later `last` answer, carrying its whole FSRS state
+    /// (stability, difficulty, reps, lapses) — states of two devices are never mixed field by field.
+    /// Ties keep `primary`, unless only `secondary` already has an FSRS state (the same answer
+    /// saved by a newer app version).
     static func mergeScores(_ primary: SkillScores, _ secondary: SkillScores) -> SkillScores {
         var result = primary
         for (skill, score) in secondary.entries {
             if let mine = result[skill] {
-                if score.last > mine.last { result[skill] = score }
+                if score.last > mine.last
+                    || (score.last == mine.last && mine.memoryState == nil && score.memoryState != nil) {
+                    result[skill] = score
+                }
             } else {
                 result[skill] = score
             }

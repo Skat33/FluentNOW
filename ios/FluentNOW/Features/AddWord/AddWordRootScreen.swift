@@ -159,6 +159,7 @@ struct AddWordQuickForm: View {
     private var form: some View {
         Form {
             AddWordSearchField(query: $query, isFocused: $isFieldFocused, onSubmit: submitSearch)
+            AddWordScanSection { (term: String) in query = term }  // I3: skanowanie tekstu
             if let outcome {
                 Section {
                     Label(outcome.message, systemImage: "checkmark.circle.fill")

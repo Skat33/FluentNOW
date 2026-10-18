@@ -19,6 +19,12 @@ struct VocabPromptView: View {
             VocabDictationPrompt(content: model.content)
         case .picture:
             VocabPicturePrompt(model: model)
+        case .scramble:
+            VocabScramblePrompt(model: model)
+        case .matchPairs:
+            VocabPairsPrompt(model: model)
+        case .listeningChoice:
+            VocabListeningPrompt(model: model)
         }
     }
 }
