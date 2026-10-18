@@ -19,12 +19,21 @@ public enum MeaningOptions {
         // iOS improvement: a distractor that is itself an accepted answer of the target sense
         // (e.g. make „zrobić, stworzyć” vs do „robić, wykonywać”) would make the question ambiguous.
         let acceptedKeys = answerIndex.keys(term: word.en, translation: meaning.translation, saved: meaning.acceptedTranslations ?? [])
+        // …and the other way round: a distractor whose own accepted answers include the target's
+        // translation (back down „wycofać się” vs back out) is a second correct option.
+        let correctBaseKeys = PolishAnswerIndex.baseKeys(translation: meaning.translation)
         var pool: [WordMeaning] = []
         var seenKeys = Set<String>()
         func consider(_ item: WordMeaning) {
             let key = TextNormalizer.normalize(item.meaning.translation)
             guard key != correctKey, !key.isEmpty, !seenKeys.contains(key) else { return }
             guard PolishAnswerIndex.baseKeys(translation: item.meaning.translation).isDisjoint(with: acceptedKeys) else { return }
+            let candidateAccepted = answerIndex.keys(
+                term: item.word.en,
+                translation: item.meaning.translation,
+                saved: item.meaning.acceptedTranslations ?? []
+            )
+            guard correctBaseKeys.isDisjoint(with: candidateAccepted) else { return }
             seenKeys.insert(key)
             pool.append(item)
         }
