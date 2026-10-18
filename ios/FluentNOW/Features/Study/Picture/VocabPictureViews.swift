@@ -402,6 +402,7 @@ struct StudyPictureReportSheet: View {
             wordId: option.wordId,
             meaningId: option.meaningId,
             record: option.image.record,
+            verification: option.image.verification,
             comment: comment.trimmingCharacters(in: .whitespacesAndNewlines)
         )
         env.imageReports.add(report)

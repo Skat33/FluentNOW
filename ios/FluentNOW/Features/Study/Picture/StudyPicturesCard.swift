@@ -13,9 +13,11 @@ struct StudyPicturesSnapshot: Sendable, Equatable {
     @MainActor
     static func make(store: LearningStore, images: WordImageService) async -> StudyPicturesSnapshot {
         let cachedIDs = await images.cachedMeaningIDs()
+        // Words marked „bez zdjęcia” (excluded or nothing verified) do not count as waiting.
+        let unavailable = await images.unavailableMeaningIDs()
         return await store.compute { (state: LearnerState) -> StudyPicturesSnapshot in
             StudyPicturesSnapshot(
-                picturable: PictureExercise.pendingCount(state: state, excluding: []),
+                picturable: PictureExercise.pendingCount(state: state, excluding: unavailable),
                 cached: PictureExercise.cachedItems(state: state, cached: cachedIDs).count,
                 ready: PictureExercise.readyMeaningIDs(state: state, cached: cachedIDs).count
             )

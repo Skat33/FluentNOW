@@ -125,15 +125,16 @@ final class WordImagePrefetcher {
             guard store.loadPhase == .ready else { break }
             let settled = await images.settledMeaningIDs()
             let limit = Self.candidatesPerRun
-            let candidates = await store.compute { (state: LearnerState) -> [PictureCandidate] in
-                PictureExercise.prefetchCandidates(state: state, excluding: settled, limit: limit)
+            let batch = await store.compute { (state: LearnerState) -> WordImagePrefetchBatch in
+                WordImagePrefetchBatch.make(state: state, excluding: settled, limit: limit)
             }
+            let candidates = batch.candidates
             guard !candidates.isEmpty, !Task.isCancelled else {
                 status = .idle
                 break
             }
             status = .working
-            let report = await images.prefetch(candidates)
+            let report = await images.prefetch(candidates, contexts: batch.contexts)
             runs += 1
             lastStop = report.stop
             await refreshCount()
@@ -173,9 +174,9 @@ final class WordImagePrefetcher {
         case .offline, .rateLimited, .dailyLimit, .cancelled, .disabled:
             return nil
         case .finished, .runLimit:
-            // No search and no download — nothing more can be done now (broken results wait
-            // for the next trigger instead of looping).
-            guard report.searches > 0 || report.downloads > 0 else { return nil }
+            // No search, no download and no verification — nothing more can be done now (broken
+            // results wait for the next trigger instead of looping).
+            guard report.searches > 0 || report.downloads > 0 || report.checks > 0 else { return nil }
             if report.stop == .runLimit || candidateCount >= limit || rerun {
                 return pauseNanoseconds
             }
@@ -234,5 +235,26 @@ final class WordImagePrefetcher {
         if added {
             request()
         }
+    }
+}
+
+/// Candidates of one background run plus the context (topic, translation) of each meaning —
+/// computed together on a state snapshot off the main thread (`LearningStore.compute`).
+struct WordImagePrefetchBatch: Sendable {
+    var candidates: [PictureCandidate]
+    var contexts: [String: WordImageContext]
+
+    static func make(state: LearnerState, excluding: Set<String>, limit: Int) -> WordImagePrefetchBatch {
+        let candidates = PictureExercise.prefetchCandidates(state: state, excluding: excluding, limit: limit)
+        let wanted = Set(candidates.map { (candidate: PictureCandidate) -> String in candidate.meaningId })
+        var contexts: [String: WordImageContext] = [:]
+        if !wanted.isEmpty {
+            for word in state.words {
+                for meaning in word.meanings where wanted.contains(meaning.id) {
+                    contexts[meaning.id] = WordImageContext(meaning: meaning)
+                }
+            }
+        }
+        return WordImagePrefetchBatch(candidates: candidates, contexts: contexts)
     }
 }

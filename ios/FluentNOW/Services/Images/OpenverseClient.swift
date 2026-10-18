@@ -68,9 +68,12 @@ struct OpenverseClient: Sendable {
     }
 
     /// Search URL for a query.
-    static func searchURL(query: String) -> URL? {
+    /// - Parameter sources: Openverse source names (`stocksnap`, `rawpixel`, `wikimedia`…), `nil`
+    ///   = all. Verified live on 2026-10-18: `source=stocksnap,rawpixel,wikimedia` returns clean
+    ///   captioned stock photos („Mobile Phone”, „Crane Bird”, „Mouse Computer”).
+    static func searchURL(query: String, sources: [String]? = nil) -> URL? {
         guard var components = URLComponents(string: baseURL) else { return nil }
-        components.queryItems = [
+        var items = [
             URLQueryItem(name: "q", value: String(query.prefix(200))),
             URLQueryItem(name: "license", value: "cc0,by,by-sa"),
             URLQueryItem(name: "category", value: "photograph"),
@@ -78,12 +81,16 @@ struct OpenverseClient: Sendable {
             URLQueryItem(name: "mature", value: "false"),
             URLQueryItem(name: "page_size", value: String(pageSize))
         ]
+        if let sources, !sources.isEmpty {
+            items.append(URLQueryItem(name: "source", value: sources.joined(separator: ",")))
+        }
+        components.queryItems = items
         return components.url
     }
 
     /// Searches photos and returns usable records in relevance order.
-    func search(query: String) async throws -> [WordImageRecord] {
-        guard let url = Self.searchURL(query: query) else { throw WordImageError.invalidResponse }
+    func search(query: String, sources: [String]? = nil) async throws -> [WordImageRecord] {
+        guard let url = Self.searchURL(query: query, sources: sources) else { throw WordImageError.invalidResponse }
         let data = try await fetch(url)
         return try Self.parseSearch(data, query: query)
     }
@@ -126,7 +133,12 @@ struct OpenverseClient: Sendable {
 
     private struct Tag: Decodable {
         var name: String?
+        /// `null` for tags given by the author, 0…1 for machine tags (Clarifai, Rekognition).
+        var accuracy: Double?
     }
+
+    /// Machine tags below this accuracy are ignored.
+    static let machineTagAccuracy = 0.9
 
     /// Keeps CC0 / BY / BY-SA photos with a thumbnail, a sane size and aspect ratio, never mature;
     /// results whose title or tags mention the searched word come first.
@@ -169,6 +181,18 @@ struct OpenverseClient: Sendable {
             let ratio = Double(max(width, height)) / Double(min(width, height))
             guard ratio <= 2.4 else { return nil }
         }
+        var userTags: [String] = []
+        var machineTags: [String] = []
+        for tag in item.tags ?? [] {
+            guard let name = tag.name?.trimmingCharacters(in: .whitespacesAndNewlines).lowercased(), !name.isEmpty else { continue }
+            if let accuracy = tag.accuracy {
+                if accuracy >= machineTagAccuracy && !machineTags.contains(name) {
+                    machineTags.append(name)
+                }
+            } else if !userTags.contains(name) {
+                userTags.append(name)
+            }
+        }
         return WordImageRecord(
             id: id,
             title: item.title ?? "",
@@ -181,7 +205,9 @@ struct OpenverseClient: Sendable {
             licenseVersion: item.license_version ?? "",
             licenseURL: item.license_url ?? "",
             provider: item.provider ?? item.source ?? "",
-            service: "openverse"
+            service: "openverse",
+            tags: Array(userTags.prefix(60)),
+            machineTags: machineTags
         )
     }
 

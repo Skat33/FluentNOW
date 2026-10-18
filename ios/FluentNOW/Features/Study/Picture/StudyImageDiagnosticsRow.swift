@@ -39,6 +39,7 @@ struct StudyImageDiagnosticsRow: View {
         guard let info else { return ["Sprawdzam…"] }
         var result = [
             "Ze zdjęciem: \(StudyPicturesCard.words(info.diagnostics.cachedCount)) · w kolejce: \(info.queued) · bez pasującego zdjęcia: \(info.diagnostics.emptyCount)",
+            Self.verificationLine(info.diagnostics),
             "Dziś: \(info.diagnostics.searchesToday) z \(WordImageService.maxSearchesPerDay) wyszukiwań, \(info.diagnostics.downloadsToday) pobrań"
         ]
         if !info.diagnostics.networkEnabled {
@@ -61,6 +62,15 @@ struct StudyImageDiagnosticsRow: View {
             result.append("Przerwa serwisu do \(until.formatted(date: .omitted, time: .shortened))")
         }
         return result
+    }
+
+    /// „Weryfikacja: odrzucone 12 · bez zdjęcia na stałe 40 · do sprawdzenia 3”.
+    static func verificationLine(_ diagnostics: WordImageDiagnostics) -> String {
+        var line = "Weryfikacja: odrzucone \(diagnostics.verificationRejections) · bez zdjęcia na stałe \(diagnostics.noPhotoCount)"
+        if diagnostics.awaitingCheckCount > 0 {
+            line += " · do sprawdzenia \(diagnostics.awaitingCheckCount)"
+        }
+        return line
     }
 }
 
