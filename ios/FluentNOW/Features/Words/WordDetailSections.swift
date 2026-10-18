@@ -42,7 +42,7 @@ private struct WordHeaderChips: View {
                 WordStatusLabel(status: word.status(now: now))
                     .padding(.horizontal, Spacing.xs)
                 if word.important {
-                    TagChip("Ważne", systemImage: "star.fill", tone: .warning)
+                    TagChip("Z gwiazdką", systemImage: "star.fill", tone: .warning)
                 }
                 TagChip(word.collection, systemImage: "square.stack.3d.up", tone: Palette.collectionTone(named: word.collection))
                 ForEach(word.tags, id: \.self) { tag in

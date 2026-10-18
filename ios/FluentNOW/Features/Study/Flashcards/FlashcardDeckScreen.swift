@@ -87,7 +87,7 @@ private struct FlashcardSetupView: View {
                     .font(FluentFont.display)
                     .foregroundStyle(Palette.ink)
                     .accessibilityAddTraits(.isHeader)
-                Text("Na przodzie słowo po polsku albo po angielsku — dotknij, żeby obrócić kartę. W prawo — pamiętam, w lewo — jeszcze nie. Najpierw powtórki, potem nowe, na końcu trudne.")
+                Text("Na przodzie słowo po polsku albo po angielsku — dotknij, żeby obrócić kartę. W prawo — pamiętam, w lewo — jeszcze nie. Do talii trafiają najpierw powtórki, potem nowe (z gwiazdką na początku), na końcu trudne.")
                     .font(FluentFont.callout)
                     .foregroundStyle(Palette.inkSecondary)
             }
@@ -112,6 +112,7 @@ private struct FlashcardSetupView: View {
                 }
                 .pickerStyle(.segmented)
                 .fluentSensoryFeedback(FluentHaptic.selection, trigger: model.size)
+                FlashcardShuffleToggle(model: model)
                 PrimaryButton("Zacznij", systemImage: "play.fill", isLoading: model.isPreparing) {
                     Task { await model.start() }
                 }
@@ -121,6 +122,30 @@ private struct FlashcardSetupView: View {
         .task(id: model.collection ?? "") {
             await model.refreshCounts()
         }
+    }
+}
+
+/// „Tasuj karty” — domyślnie włączone, zapamiętane na urządzeniu (`FlashcardDeckModel.shuffled`).
+private struct FlashcardShuffleToggle: View {
+    let model: FlashcardDeckModel
+
+    var body: some View {
+        Toggle(isOn: Binding(
+            get: { model.shuffled },
+            set: { (value: Bool) -> Void in model.setShuffled(value) }
+        )) {
+            VStack(alignment: .leading, spacing: 2) {
+                Label("Tasuj karty", systemImage: "shuffle")
+                    .font(FluentFont.bodyEmphasized)
+                    .foregroundStyle(Palette.ink)
+                Text(model.shuffled ? "Za każdym razem inna kolejność." : "Kolejność: powtórki, nowe, trudne.")
+                    .font(FluentFont.caption)
+                    .foregroundStyle(Palette.inkSecondary)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+        .tint(Palette.accentFill)
+        .fluentSensoryFeedback(FluentHaptic.selection, trigger: model.shuffled)
     }
 }
 

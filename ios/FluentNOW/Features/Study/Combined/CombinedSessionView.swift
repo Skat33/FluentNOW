@@ -69,6 +69,11 @@ private struct CombinedSessionContent: View {
                 guard !reading else { return }
                 proxy.scrollTo(StudyScrollID.top, anchor: .top)
             }
+            // „Sprawdź odpowiedzi” po bloku czytanki: przegląd (tekst z dowodami) od góry ekranu.
+            .onChange(of: model.question?.isShowingReadingReview ?? false) { (_: Bool, review: Bool) in
+                guard review else { return }
+                proxy.scrollTo(StudyScrollID.top, anchor: .top)
+            }
         }
         .onChange(of: model.store.revision) { _, _ in
             model.sync()
@@ -88,7 +93,8 @@ private struct CombinedSessionContent: View {
                     total: session.tasks.count
                 )
                 currentTaskView(for: session)
-                if model.canAdvance {
+                // Koniec bloku czytanki: „Przejdź dalej” / „Dalej” są w karcie wyniku i w przeglądzie.
+                if model.canAdvance && !(model.question?.ownsReadingAdvance ?? false) {
                     PrimaryButton(
                         session.index + 1 < session.tasks.count ? "Następne zadanie" : "Zakończ sesję",
                         systemImage: "arrow.right"
@@ -122,7 +128,7 @@ private struct CombinedSessionContent: View {
                 .id(vocabulary.key)
                 .transition(Motion.contentTransition(reduceMotion: reduceMotion))
         } else if let question = model.question {
-            CombinedQuestionView(model: question)
+            CombinedQuestionView(model: question, onAdvance: { advance() })
                 .id(question.key)
                 .transition(Motion.contentTransition(reduceMotion: reduceMotion))
         } else if model.missingTask {

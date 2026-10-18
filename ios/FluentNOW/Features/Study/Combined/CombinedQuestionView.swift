@@ -4,16 +4,21 @@ import FluentKit
 /// Pytanie sesji łączonej: kontekst, odsłuch, odpowiedzi ABCD lub wpisywanie, wynik.
 struct CombinedQuestionView: View {
     @Bindable var model: CombinedQuestionModel
+    /// Przejście do następnego zadania z karty wyniku czytanki / przeglądu (zapis jak zwykle w `advance`).
+    var onAdvance: () -> Void = {}
 
     @FocusState private var focused: Bool
 
     var body: some View {
         Group {
-            // Czytanka (G1): najpierw sam tekst; pytania potem bez tekstu (wraca po ostatnim pytaniu bloku).
+            // Czytanka (G1): najpierw sam tekst; pytania potem bez tekstu. Po ostatnim pytaniu bloku:
+            // wynik z wyborem „Sprawdź odpowiedzi” (przegląd zamiast pytania) / „Przejdź dalej”.
             if model.isReadingPassage, let reading = model.task.reading {
                 ReadingFirstStage(reading: reading, questionCount: model.readingBlock?.taskIndices.count ?? 1) {
                     model.beginReadingQuestions()
                 }
+            } else if model.isShowingReadingReview, let reading = model.task.reading, let recap = model.readingRecap {
+                ReadingReviewView(reading: reading, items: recap, doneTitle: "Dalej", onDone: onAdvance)
             } else {
                 questionContent
             }
@@ -70,9 +75,15 @@ struct CombinedQuestionView: View {
                     .id(StudyScrollID.feedback)
                     .transition(.opacity)
             }
-            if let reading = model.task.reading, let recap = model.readingRecap {
-                ReadingRecapView(reading: reading, items: recap)
-                    .transition(.opacity)
+            if let recap = model.readingRecap {
+                ReadingOutcomeCard(
+                    correct: recap.filter { (item: ReadingRecapItem) -> Bool in item.correct }.count,
+                    total: recap.count,
+                    continueTitle: "Przejdź dalej",
+                    onReview: { model.showReadingReview() },
+                    onContinue: onAdvance
+                )
+                .transition(.opacity)
             }
         }
     }

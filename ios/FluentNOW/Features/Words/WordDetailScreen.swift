@@ -18,6 +18,12 @@ struct WordDetailScreen: View {
             if let word = store.word(id: wordID) {
                 WordDetailContent(word: word, now: store.now())
                     .toolbar {
+                        // Gwiazdka widoczna od razu (priorytet w sesjach i fiszkach), obok menu akcji.
+                        ToolbarItem(placement: .primaryAction) {
+                            WordStarButton(isStarred: word.important, term: word.en) {
+                                setImportant(!word.important)
+                            }
+                        }
                         ToolbarItem(placement: .primaryAction) {
                             WordDetailMenu(
                                 word: word,
@@ -95,7 +101,7 @@ private struct WordDetailMenu: View {
                 Label("Edytuj", systemImage: "pencil")
             }
             Button(action: onToggleImportant) {
-                Label(word.important ? "Usuń z ważnych" : "Oznacz jako ważne", systemImage: word.important ? "star.slash" : "star")
+                Label(word.important ? "Usuń gwiazdkę" : "Dodaj gwiazdkę", systemImage: word.important ? "star.slash" : "star")
             }
             Button(action: onToggleHard) {
                 Label(word.hard ? "Usuń oznaczenie „trudne”" : "Oznacz jako trudne", systemImage: "flame")

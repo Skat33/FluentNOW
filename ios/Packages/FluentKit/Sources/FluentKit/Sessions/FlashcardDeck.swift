@@ -122,6 +122,10 @@ public struct FlashcardRun: Sendable, Hashable {
 
 /// Builds the flashcard deck (G3): cards due for review first (earliest due), then new meanings
 /// (at most `newLimit`), then hard ones (most errors first); optionally one collection.
+/// Starred words (`Word.important`) win ties inside each pool and come first among new meanings
+/// (`StudyPriority`). With `shuffled: true` the cards are still drawn from the pools in that
+/// priority, but the new pool is randomized after the starred ones (a different selection each
+/// time) and the final deck order is shuffled (Quizlet-style).
 public enum FlashcardDeckBuilder {
     /// Default deck size.
     public static let defaultLimit = 30
@@ -136,7 +140,7 @@ public enum FlashcardDeckBuilder {
         return FlashcardDeckCounts(due: groups.due.count, new: groups.new.count, hard: groups.hard.count)
     }
 
-    /// The deck: due → new → hard, at most `limit` cards (`newLimit` new ones).
+    /// The deck: due → new → hard, at most `limit` cards (`newLimit` new ones), in pool order.
     public static func makeDeck(
         state: LearnerState,
         collection: String? = nil,
@@ -144,9 +148,42 @@ public enum FlashcardDeckBuilder {
         newLimit: Int = defaultNewLimit,
         now: Timestamp
     ) -> [FlashcardCard] {
+        var generator = SystemRandomNumberGenerator()
+        return makeDeck(state: state, collection: collection, limit: limit, newLimit: newLimit, now: now, shuffled: false, using: &generator)
+    }
+
+    /// The deck with the system random number generator (`shuffled` — see the type comment).
+    public static func makeDeck(
+        state: LearnerState,
+        collection: String? = nil,
+        limit: Int = defaultLimit,
+        newLimit: Int = defaultNewLimit,
+        now: Timestamp,
+        shuffled: Bool
+    ) -> [FlashcardCard] {
+        var generator = SystemRandomNumberGenerator()
+        return makeDeck(state: state, collection: collection, limit: limit, newLimit: newLimit, now: now, shuffled: shuffled, using: &generator)
+    }
+
+    /// The deck with an injected generator (tests). `shuffled: false` never touches `rng`.
+    public static func makeDeck<G: RandomNumberGenerator>(
+        state: LearnerState,
+        collection: String? = nil,
+        limit: Int = defaultLimit,
+        newLimit: Int = defaultNewLimit,
+        now: Timestamp,
+        shuffled: Bool,
+        using rng: inout G
+    ) -> [FlashcardCard] {
         let safeLimit = max(0, limit)
         guard safeLimit > 0 else { return [] }
-        let groups = grouped(state: state, collection: collection, now: now)
+        var groups = grouped(state: state, collection: collection, now: now)
+        if shuffled {
+            // Starred new meanings stay first; the rest of the new pool in random order.
+            let starred = groups.new.filter { (item: WordMeaning) -> Bool in item.word.important }
+            let others = groups.new.filter { (item: WordMeaning) -> Bool in !item.word.important }
+            groups.new = starred + StudyPriority.shuffled(others, using: &rng)
+        }
         var seenCounts: [String: Int] = [:]
         for review in state.reviews {
             seenCounts[review.meaningId, default: 0] += 1
@@ -166,7 +203,7 @@ public enum FlashcardDeckBuilder {
         add(groups.due, group: .due, max: safeLimit)
         add(groups.new, group: .new, max: max(0, newLimit))
         add(groups.hard, group: .hard, max: safeLimit)
-        return cards
+        return shuffled ? StudyPriority.shuffled(cards, using: &rng) : cards
     }
 
     /// Saves one flashcard answer (`Scheduler.recordAnswer`, skill recognition, confidence 2,
@@ -221,8 +258,19 @@ public enum FlashcardDeckBuilder {
                 }
             }
         }
-        let dueSorted = due.stableSorted { $0.due < $1.due }.map { $0.item }
-        let hardSorted = hard.stableSorted { $0.errors > $1.errors }.map { $0.item }
-        return (due: dueSorted, new: fresh, hard: hardSorted)
+        // Starred words: tie-break only for due/hard (review order by date / errors stays),
+        // first among new meanings.
+        let dueSorted = due.stableSorted { (a: (item: WordMeaning, due: Timestamp), b: (item: WordMeaning, due: Timestamp)) -> Bool in
+            if a.due != b.due { return a.due < b.due }
+            return StudyPriority.starredFirst(a.item.word, b.item.word)
+        }.map { $0.item }
+        let hardSorted = hard.stableSorted { (a: (item: WordMeaning, errors: Int), b: (item: WordMeaning, errors: Int)) -> Bool in
+            if a.errors != b.errors { return a.errors > b.errors }
+            return StudyPriority.starredFirst(a.item.word, b.item.word)
+        }.map { $0.item }
+        let freshSorted = fresh.stableSorted { (a: WordMeaning, b: WordMeaning) -> Bool in
+            StudyPriority.starredFirst(a.word, b.word)
+        }
+        return (due: dueSorted, new: freshSorted, hard: hardSorted)
     }
 }

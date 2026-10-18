@@ -219,8 +219,10 @@ private struct StatsAreaRow: View {
     }
 }
 
-/// Wejście do pełnej listy „Polecane słówka”.
+/// Wejście do pełnej listy „Polecane słówka” (Słownik → segment „Polecane”).
 private struct StatsUsefulWordsLink: View {
+    @Environment(AppRouter.self) private var router
+
     var body: some View {
         Card(style: .tinted(.accent)) {
             Text("Polecane słówka")
@@ -230,10 +232,13 @@ private struct StatsUsefulWordsLink: View {
                 .font(FluentFont.footnote)
                 .foregroundStyle(Palette.inkSecondary)
                 .fixedSize(horizontal: false, vertical: true)
-            NavigationLink(destination: UsefulWordsScreen()) {
+            Button {
+                router.openLibrary(.recommended)
+            } label: {
                 UsefulWordsMoreLabel(title: "Zobacz propozycje")
             }
             .buttonStyle(.plain)
+            .accessibilityHint(Text("Otwiera Słownik, segment Polecane"))
         }
     }
 }

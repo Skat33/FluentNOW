@@ -108,8 +108,9 @@ struct ReadingTermLink: Hashable {
     }
 }
 
-/// Wygląd podświetleń w tekście. Rozróżnienie nie tylko kolorem: słowa z mojego słownika mają tło
-/// i ciągłe podkreślenie, słowa przydatne — podkreślenie kropkowane; dowody — tło markera.
+/// Wygląd podświetleń w tekście. Rozróżnienie nie tylko kolorem: słowa z mojego słownika są
+/// pogrubione na fioletowym tle (z ciągłym podkreśleniem), słowa przydatne — zwykłe na jasnym
+/// niebieskim tle (z podkreśleniem kropkowanym); dowody — tło markera. Szczegóły: `piece`.
 enum ReadingHighlightStyle {
     enum Kind: Hashable {
         case own
@@ -162,6 +163,15 @@ enum ReadingHighlightStyle {
         return result
     }
 
+    /// Odcinek tekstu z wyglądem podświetlenia (ui-tweaks, weryfikacja na iOS 26):
+    /// - SwiftUI `Text` rysuje linki kolorem `tint` (akcent) i może pominąć `ForegroundColorAttribute`;
+    /// - wzór kropkowany podkreślenia (`Text.LineStyle(pattern: .dot)`) na odcinku-linku nie jest
+    ///   pewny w `Text` — dlatego nie jest jedynym wyróżnikiem.
+    /// Pewne cechy, które `Text` zawsze rysuje: tło (`BackgroundColorAttribute`) i pogrubienie
+    /// (`inlinePresentationIntent`). Rozróżnienie rodzajów nie tylko kolorem:
+    /// - mój słownik: fioletowe tło (`accentSoft`) + **pogrubienie** + ciągłe podkreślenie;
+    /// - przydatne: jasne niebieskie tło (`infoSoft`) + zwykła grubość + podkreślenie kropkowane;
+    /// - dowód: tło markera (`warningSoft`) zastępuje tło słowa; grubość i linia zostają.
     static func piece(_ text: String, kind: Kind?, link: URL?, isEvidence: Bool) -> AttributedString {
         var piece = AttributedString(text)
         if let link {
@@ -171,14 +181,14 @@ enum ReadingHighlightStyle {
         case nil:
             break
         case .own:
+            piece.inlinePresentationIntent = .stronglyEmphasized
             piece[AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute.self] = Text.LineStyle.single
             piece[AttributeScopes.SwiftUIAttributes.ForegroundColorAttribute.self] = Palette.accent
-            if !isEvidence {
-                piece[AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute.self] = Palette.accentSoft
-            }
+            piece[AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute.self] = Palette.accentSoft
         case .useful:
             piece[AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute.self] = Text.LineStyle(pattern: .dot, color: Palette.accent)
-            piece[AttributeScopes.SwiftUIAttributes.ForegroundColorAttribute.self] = Palette.accentSoftInk
+            piece[AttributeScopes.SwiftUIAttributes.ForegroundColorAttribute.self] = Palette.accent
+            piece[AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute.self] = Palette.infoSoft
         }
         if isEvidence {
             piece[AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute.self] = Palette.warningSoft

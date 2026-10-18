@@ -1,7 +1,7 @@
 import Foundation
 
 /// Karty głównej nawigacji. Architektura informacji (uzasadnienie w docs/DESIGN.md):
-/// Dzisiaj · Słownik (Słowa / Kolekcje) · Nauka · Postępy · Ustawienia.
+/// Dzisiaj · Słownik (Słowa / Kolekcje / Polecane) · Nauka · Postępy · Ustawienia.
 enum AppTab: String, CaseIterable, Identifiable, Hashable, Sendable {
     case today
     case words
@@ -36,22 +36,26 @@ enum AppTab: String, CaseIterable, Identifiable, Hashable, Sendable {
 ///
 /// `topics` nie jest już segmentem (F1: tematy nie są publicznym katalogiem) — zostaje tylko dla
 /// zgodności wywołań `router.openLibrary(.topics)`, które `AppRouter` zamienia na wyszukiwanie
-/// tematu w arkuszu „+”. Segmenty widoczne w Słowniku: `browsable`.
+/// tematu w arkuszu „+”. `recommended` — „Polecane”: lista polecanych słówek (`UsefulWordsScreen`
+/// osadzony w Słowniku). Segmenty widoczne w Słowniku: `browsable`. Surowe wartości są stabilne
+/// (dopisujemy nowe przypadki, nie zmieniamy istniejących).
 enum LibrarySection: String, CaseIterable, Identifiable, Hashable, Sendable {
     case words
     case collections
     case topics
+    case recommended
 
     var id: String { rawValue }
 
     /// Segmenty pokazywane w przełączniku Słownika.
-    static let browsable: [LibrarySection] = [.words, .collections]
+    static let browsable: [LibrarySection] = [.words, .collections, .recommended]
 
     var title: String {
         switch self {
         case .words: return "Słowa"
         case .collections: return "Kolekcje"
         case .topics: return "Tematy"
+        case .recommended: return "Polecane"
         }
     }
 }

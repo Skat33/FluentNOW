@@ -22,6 +22,13 @@ final class FlashcardDeckModel {
     let store: LearningStore
     var collection: String?
     var size: Int = 20
+    /// „Tasuj karty” (jak w Quizlet): domyślnie włączone, zapamiętane na tym urządzeniu.
+    /// Włączone — inna kolejność (i inne nowe karty po tych z gwiazdką) przy każdej talii;
+    /// wyłączone — kolejność puli: powtórki → nowe → trudne.
+    private(set) var shuffled: Bool
+
+    static let shuffleKey = "flashcards.shuffle"
+    @ObservationIgnored private let defaults: UserDefaults?
 
     private(set) var phase: FlashcardDeckPhase = .setup
     private(set) var counts = FlashcardDeckCounts()
@@ -40,9 +47,11 @@ final class FlashcardDeckModel {
     @ObservationIgnored private var cardShownAt = Date()
     @ObservationIgnored private var runSeconds: Double = 0
 
-    init(store: LearningStore, collection: String?) {
+    init(store: LearningStore, collection: String?, defaults: UserDefaults? = .standard) {
         self.store = store
         self.collection = collection
+        self.defaults = defaults
+        self.shuffled = (defaults?.object(forKey: Self.shuffleKey) as? Bool) ?? true
     }
 
     var currentCard: FlashcardCard? { run.currentCard }
@@ -75,8 +84,10 @@ final class FlashcardDeckModel {
         let limitedTo = collection
         let limit = max(1, size)
         let now = store.now()
+        let shuffle = shuffled
+        // Losowość z systemowego generatora (bez stałego ziarna) — każda talia inna.
         let cards = await store.compute { (state: LearnerState) -> [FlashcardCard] in
-            FlashcardDeckBuilder.makeDeck(state: state, collection: limitedTo, limit: limit, now: now)
+            FlashcardDeckBuilder.makeDeck(state: state, collection: limitedTo, limit: limit, now: now, shuffled: shuffle)
         }
         isPreparing = false
         guard !cards.isEmpty else {
@@ -103,7 +114,13 @@ final class FlashcardDeckModel {
             ))
         }
         guard !cards.isEmpty else { return }
-        begin(with: cards)
+        begin(with: shuffled ? cards.shuffled() : cards)
+    }
+
+    /// Przełącznik „Tasuj karty” (zapis w UserDefaults tego urządzenia).
+    func setShuffled(_ value: Bool) {
+        shuffled = value
+        defaults?.set(value, forKey: Self.shuffleKey)
     }
 
     func backToSetup() {

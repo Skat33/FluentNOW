@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Korzeń karty „Słownik” (segmenty Słowa / Kolekcje — `AppRouter.librarySection`).
+/// Korzeń karty „Słownik” (segmenty Słowa / Kolekcje / Polecane — `AppRouter.librarySection`).
 /// Tematy nie są publicznym katalogiem (F1): szuka się ich w arkuszu „+” → „Szukaj tematu”.
 /// Kontrakt powłoki: inicjalizator bez argumentów, bez własnego `NavigationStack`.
 /// Rejestruje trasy Słownika dla całej karty i konsumuje cele z deep linków.
@@ -56,6 +56,10 @@ private struct WordsSectionContent: View {
             WordListView()
         case .collections:
             CollectionsRootScreen()
+        case .recommended:
+            // Ten sam ekran co „Polecane słówka” (zaznaczanie, dodawanie, uzasadnienia, „Masz już”),
+            // bez własnego tytułu nawigacji — tytuł „Słownik” zostaje.
+            UsefulWordsScreen(embedded: true)
         }
     }
 }

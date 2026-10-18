@@ -55,7 +55,7 @@ struct WordListView: View {
                 Section {
                     ForEach(section.rows) { row in
                         NavigationLink(value: WordRoute.detail(id: row.id)) {
-                            WordRowView(row: row)
+                            WordRowView(row: row, onToggleStar: { toggleStar(row) })
                         }
                         .swipeActions(edge: .leading, allowsFullSwipe: true) {
                             Button {
@@ -70,6 +70,12 @@ struct WordListView: View {
                                 Label(row.isHard ? "Nie trudne" : "Trudne", systemImage: "flame")
                             }
                             .tint(Palette.warning)
+                            Button {
+                                toggleStar(row)
+                            } label: {
+                                Label(row.isImportant ? "Bez gwiazdki" : "Gwiazdka", systemImage: row.isImportant ? "star.slash" : "star.fill")
+                            }
+                            .tint(Palette.accentFill)
                         }
                         .swipeActions(edge: .trailing, allowsFullSwipe: true) {
                             Button {
@@ -85,6 +91,11 @@ struct WordListView: View {
                                 speech.speak(row.en)
                             } label: {
                                 Label("Odtwórz wymowę", systemImage: "speaker.wave.2")
+                            }
+                            Button {
+                                toggleStar(row)
+                            } label: {
+                                Label(row.isImportant ? "Usuń gwiazdkę" : "Dodaj gwiazdkę", systemImage: row.isImportant ? "star.slash" : "star")
                             }
                             Button {
                                 toggleHard(row)
@@ -134,6 +145,14 @@ struct WordListView: View {
         let now = store.now()
         store.update(.edit) { state in
             WordMutations.setHard(&state, id: row.id, hard: !row.isHard, now: now)
+        }
+    }
+
+    /// Gwiazdka (`Word.important`): słowa z gwiazdką mają pierwszeństwo w sesjach i fiszkach.
+    private func toggleStar(_ row: WordListRow) {
+        let now = store.now()
+        store.update(.edit) { state in
+            WordMutations.setImportant(&state, id: row.id, important: !row.isImportant, now: now)
         }
     }
 

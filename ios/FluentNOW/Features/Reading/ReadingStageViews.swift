@@ -17,7 +17,7 @@ struct ReadingFirstStage: View {
             )
             ReadingPassageCard(reading: reading)
             PrimaryButton("Jestem gotowy na pytania", systemImage: "checkmark", action: onReady)
-            Text("Do tekstu wrócisz po odpowiedziach — z zaznaczonymi fragmentami, które je potwierdzają.")
+            Text("Po odpowiedziach zobaczysz wynik i możesz wrócić do tekstu — z zaznaczonymi fragmentami, które potwierdzają odpowiedzi.")
                 .font(FluentFont.footnote)
                 .foregroundStyle(Palette.inkSecondary)
                 .fixedSize(horizontal: false, vertical: true)
@@ -33,7 +33,7 @@ struct ReadingMemoryNotice: View {
         ReadingStageNotice(
             systemImage: "eye.slash",
             title: "Odpowiadaj z pamięci",
-            message: "„\(title)” jest teraz ukryty. Zobaczysz go ponownie z fragmentami-dowodami po odpowiedziach."
+            message: "„\(title)” jest teraz ukryty. Po odpowiedziach możesz go przejrzeć z fragmentami-dowodami."
         )
     }
 }
@@ -86,7 +86,7 @@ struct ReadingEvidenceSection: View {
     }
 }
 
-/// Odpowiedź na jedno pytanie bloku czytanki (podsumowanie w sesji łączonej).
+/// Odpowiedź na jedno pytanie czytanki (wynik i przegląd: blok w sesji łączonej i samodzielnie).
 struct ReadingRecapItem: Hashable {
     /// Indeks pytania w `reading.questions`.
     let questionIndex: Int
@@ -108,60 +108,5 @@ struct ReadingRecapItem: Hashable {
             ))
         }
         return items
-    }
-}
-
-/// Koniec bloku czytanki w sesji łączonej: wynik i tekst z fragmentami-dowodami.
-struct ReadingRecapView: View {
-    let reading: Reading
-    let items: [ReadingRecapItem]
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: Spacing.m) {
-            Card(spacing: Spacing.xs) {
-                Text("Czytanka: \(correctCount) z \(items.count) poprawnie")
-                    .font(FluentFont.headline)
-                    .foregroundStyle(Palette.ink)
-                    .accessibilityAddTraits(.isHeader)
-                ForEach(items, id: \.questionIndex) { item in
-                    ReadingRecapRow(item: item, question: reading.questions.studyItem(at: item.questionIndex))
-                }
-            }
-            ReadingEvidenceSection(reading: reading, evidence: evidence)
-        }
-    }
-
-    private var correctCount: Int {
-        items.filter { $0.correct }.count
-    }
-
-    private var evidence: [String] {
-        items.compactMap { item in reading.questions.studyItem(at: item.questionIndex)?.evidence }
-            .filter { !$0.isEmpty }
-    }
-}
-
-private struct ReadingRecapRow: View {
-    let item: ReadingRecapItem
-    let question: ReadingQuestion?
-
-    var body: some View {
-        HStack(alignment: .firstTextBaseline, spacing: Spacing.xs) {
-            Image(systemName: item.correct ? "checkmark.circle.fill" : "xmark.circle.fill")
-                .foregroundStyle(item.correct ? Palette.success : Palette.danger)
-                .accessibilityLabel(Text(item.correct ? "Dobrze" : "Źle"))
-            VStack(alignment: .leading, spacing: 2) {
-                Text(question?.question ?? "Pytanie \(item.questionIndex + 1)")
-                    .font(FluentFont.subheadline)
-                    .foregroundStyle(Palette.ink)
-                if let question, !item.correct {
-                    Text("Poprawnie: \(question.correctOption)")
-                        .font(FluentFont.footnote)
-                        .foregroundStyle(Palette.inkSecondary)
-                }
-            }
-            .fixedSize(horizontal: false, vertical: true)
-        }
-        .accessibilityElement(children: .combine)
     }
 }

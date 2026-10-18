@@ -3,7 +3,7 @@ import FluentKit
 
 /// Czytanie ze zrozumieniem (`state.reading`): tekst z banku na poziomie docelowym. Etapy (G1):
 /// sam tekst → pytania ABCD z pamięci (tekst ukryty, `ReadingSession.questionsStartedAt`) →
-/// wynik i tekst z fragmentami-dowodami. Zapis przez `PracticeFlow.submitReading` (pytania o słowo w kontekście
+/// krótki wynik z wyborem „Sprawdź odpowiedzi” (tekst z dowodami + odpowiedzi) / „Przejdź dalej”. Zapis przez `PracticeFlow.submitReading` (pytania o słowo w kontekście
 /// delikatnie aktualizują rozpoznawanie — waga czytania, nie podnosi automatycznie wyniku słów).
 struct ReadingPracticeView: View {
     let autoStart: Bool
@@ -70,9 +70,12 @@ struct ReadingPracticeView: View {
                     submit(proxy: proxy)
                 })
             case .results:
-                ReadingResultsStage(session: current, isStarting: isStarting) {
-                    start(proxy: proxy)
-                }
+                ReadingResultsStage(
+                    session: current,
+                    isStarting: isStarting,
+                    onNext: { start(proxy: proxy) },
+                    onPhaseChange: { scrollToResults(proxy: proxy) }
+                )
             }
         } else {
             PracticeIntroCard(
@@ -115,6 +118,11 @@ struct ReadingPracticeView: View {
         let correct = store.state.reading?.correctCount ?? 0
         let total = store.state.reading?.reading.questions.count ?? 0
         AccessibilityNotification.Announcement("\(correct) z \(total) poprawnych odpowiedzi").post()
+        scrollToResults(proxy: proxy)
+    }
+
+    /// Po wyniku i po przejściu wynik → przegląd → podsumowanie: początek etapu wyników na górze.
+    private func scrollToResults(proxy: ScrollViewProxy) {
         Task { @MainActor in
             try? await Task.sleep(nanoseconds: 150_000_000)
             withAnimation(Motion.resolved(Motion.standard, reduceMotion: reduceMotion)) {

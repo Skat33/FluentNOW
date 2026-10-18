@@ -3,9 +3,13 @@ import FluentKit
 
 /// Ekran „Polecane słówka”: dłuższa lista przydatnych słów z bazy (często używane, do poziomu
 /// docelowego, z tematów użytkownika i codziennych). Dodawanie jednym dotknięciem („+”) albo
-/// zaznacz kilka → „Dodaj”. Otwierany z Dzisiaj i z Postępów (`NavigationLink`).
+/// zaznacz kilka → „Dodaj”. Osadzony w Słowniku jako segment „Polecane” (`embedded: true`);
+/// skróty z Dzisiaj i z Postępów prowadzą do tego segmentu (`router.openLibrary(.recommended)`).
 struct UsefulWordsScreen: View {
     static let limit = 30
+
+    /// `true` — segment Słownika: bez własnego tytułu nawigacji (zostaje „Słownik”).
+    var embedded: Bool = false
 
     @Environment(AppEnvironment.self) private var env
     @Environment(LearningStore.self) private var store
@@ -22,8 +26,7 @@ struct UsefulWordsScreen: View {
     var body: some View {
         ScrollView { screenContent }
             .background(Palette.background)
-            .navigationTitle("Polecane słówka")
-            .navigationBarTitleDisplayMode(.inline)
+            .modifier(UsefulWordsNavigationTitle(embedded: embedded))
             .safeAreaInset(edge: .bottom) { bottomBar }
             .task(id: store.revision) { await refresh() }
             .modifier(UsefulWordsFeedback(addTrigger: addTrigger, selectionCount: selection.count))
@@ -108,6 +111,22 @@ struct UsefulWordsScreen: View {
                 ownedIDs.formUnion(ids)
                 addTrigger += 1
             }
+        }
+    }
+}
+
+/// Tytuł nawigacji tylko dla samodzielnego ekranu (osadzony segment zostawia tytuł „Słownik”).
+private struct UsefulWordsNavigationTitle: ViewModifier {
+    let embedded: Bool
+
+    @ViewBuilder
+    func body(content: Content) -> some View {
+        if embedded {
+            content
+        } else {
+            content
+                .navigationTitle("Polecane słówka")
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
@@ -320,6 +339,14 @@ enum UsefulWordsScreenText {
 #Preview("Polecane słówka") {
     NavigationStack {
         UsefulWordsScreen()
+    }
+    .fluentPreviewEnvironment()
+}
+
+#Preview("Słownik → Polecane") {
+    NavigationStack {
+        UsefulWordsScreen(embedded: true)
+            .navigationTitle("Słownik")
     }
     .fluentPreviewEnvironment()
 }

@@ -68,6 +68,8 @@ private struct TodayRecommendedWordsList: View {
     let ownedIDs: Set<String>
     let onAdd: (UsefulWordSuggestion) -> Void
 
+    @Environment(AppRouter.self) private var router
+
     var body: some View {
         SectionHeader("Polecane słówka", subtitle: "Często używane na co dzień, dobrane do Twojego poziomu \(result.level).")
         Card(spacing: 0) {
@@ -89,10 +91,14 @@ private struct TodayRecommendedWordsList: View {
                 .font(FluentFont.footnote)
                 .foregroundStyle(Palette.success)
         }
-        NavigationLink(destination: UsefulWordsScreen()) {
+        // Pełna lista mieszka w Słowniku (segment „Polecane”).
+        Button {
+            router.openLibrary(.recommended)
+        } label: {
             UsefulWordsMoreLabel(title: "Zobacz więcej polecanych słówek")
         }
         .buttonStyle(.plain)
+        .accessibilityHint(Text("Otwiera Słownik, segment Polecane"))
     }
 }
 

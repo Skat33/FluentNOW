@@ -17,7 +17,7 @@ enum AddSheetMode: String, CaseIterable, Identifiable, Hashable {
 }
 
 /// Wspólny punkt wejścia „+” (prezentowany przez `RootView` dla `AppSheet.quickAdd` i
-/// `AppSheet.topicSearch`): przełącznik „Dodaj słowo” / „Szukaj tematu” w pasku nawigacji.
+/// `AppSheet.topicSearch`): przełącznik „Dodaj słowo” / „Szukaj tematu” na górze treści arkusza.
 /// Kontrakt powłoki: `init(prefill: String?)`; arkusz ma WŁASNY `NavigationStack`.
 struct AddWordRootScreen: View {
     let prefill: String?
@@ -35,11 +35,11 @@ struct AddWordRootScreen: View {
 
     var body: some View {
         NavigationStack {
+            // Przełącznik NIE w pasku nawigacji: na szerokości iPhone'a „Anuluj” + segmenty + „Dodaj”
+            // nachodziły na siebie. Pasek: „Anuluj”/„Zamknij”, tytuł inline trybu, przycisk zatwierdzenia.
             AddSheetModeContent(mode: mode, prefill: prefill, topicID: topicID, detent: $detent)
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        AddSheetModePicker(mode: $mode)
-                    }
+                .safeAreaInset(edge: .top, spacing: 0) {
+                    AddSheetModePicker(mode: $mode)
                 }
         }
         .presentationDetents([.medium, .large], selection: $detent)
@@ -50,18 +50,25 @@ struct AddWordRootScreen: View {
     }
 }
 
-/// Przełącznik trybu arkusza.
+/// Przełącznik trybu arkusza — na górze treści, na pełną szerokość, pod paskiem nawigacji.
+/// Segmenty ograniczone do xxxLarge (przy rozmiarach dostępności `UISegmentedControl` ucina
+/// etykiety); reszta arkusza skaluje się dalej.
 private struct AddSheetModePicker: View {
     @Binding var mode: AddSheetMode
 
     var body: some View {
         Picker("Co dodajesz", selection: $mode) {
-            ForEach(AddSheetMode.allCases) { item in
+            ForEach(AddSheetMode.allCases) { (item: AddSheetMode) in
                 Text(item.title).tag(item)
             }
         }
         .pickerStyle(.segmented)
-        .fixedSize()
+        .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+        .frame(maxWidth: Spacing.readableWidth)
+        .frame(maxWidth: .infinity)
+        .padding(.horizontal, Spacing.screen)
+        .padding(.vertical, Spacing.xs)
+        .background(Palette.background)
         .fluentSensoryFeedback(FluentHaptic.selection, trigger: mode)
     }
 }

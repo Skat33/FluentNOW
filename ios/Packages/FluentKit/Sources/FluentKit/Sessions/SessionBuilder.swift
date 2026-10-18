@@ -115,14 +115,22 @@ public enum SessionBuilder {
         if mode == .pairs {
             choices = ConfusableDetector.itemsWithPartners(choices)
         }
+        // Starred words (`StudyPriority`): tie-break only — reviews keep their order by due date /
+        // errors; new meanings (all due 0) get starred ones first.
         if mode == .mistakes {
             let keyed = choices.map { item in
                 (item: item, errors: item.meaning.scores.values.reduce(0) { $0 + $1.wrong + $1.slow })
             }
-            choices = keyed.stableSorted { $0.errors > $1.errors }.map { $0.item }
+            choices = keyed.stableSorted { (a: (item: WordMeaning, errors: Int), b: (item: WordMeaning, errors: Int)) -> Bool in
+                if a.errors != b.errors { return a.errors > b.errors }
+                return StudyPriority.starredFirst(a.item.word, b.item.word)
+            }.map { $0.item }
         } else {
             let keyed = choices.map { (item: $0, due: Mastery.due($0.meaning)) }
-            choices = keyed.stableSorted { $0.due < $1.due }.map { $0.item }
+            choices = keyed.stableSorted { (a: (item: WordMeaning, due: Timestamp), b: (item: WordMeaning, due: Timestamp)) -> Bool in
+                if a.due != b.due { return a.due < b.due }
+                return StudyPriority.starredFirst(a.item.word, b.item.word)
+            }.map { $0.item }
         }
         let ordered: [WordMeaning]
         if mode == .pairs {

@@ -2,8 +2,9 @@ import SwiftUI
 import FluentKit
 
 /// Tekst czytanki: czytelna typografia (krój szeryfowy, Dynamic Type, kolumna `readableWidth`).
-/// Podświetlenia (G1): słowa z mojego słownika — tło i ciągłe podkreślenie; słowa przydatne ze
-/// słowniczka kontekstowego — podkreślenie kropkowane. Dotknięcie otwiera arkusz z tłumaczeniem
+/// Podświetlenia (G1): słowa z mojego słownika — pogrubione na fioletowym tle (+ ciągłe podkreślenie);
+/// słowa przydatne ze słowniczka kontekstowego — zwykłe na jasnoniebieskim tle (+ podkreślenie
+/// kropkowane), z legendą. Używane na etapie czytania (obu trybów) i w przeglądzie. Dotknięcie otwiera arkusz z tłumaczeniem
 /// w kontekście tego tekstu. Po pytaniach fragmenty-dowody (`evidence`) są wyróżnione markerem.
 struct ReadingPassageCard: View {
     let reading: Reading
@@ -116,10 +117,10 @@ private struct ReadingHighlightLegend: View {
     var body: some View {
         VStack(alignment: .leading, spacing: Spacing.xxs) {
             if hasOwnWords {
-                legendRow(sample: ReadingHighlightStyle.sample("słowo", kind: .own), text: "z Twojego słownika")
+                legendRow(sample: ReadingHighlightStyle.sample("słowo", kind: .own), text: "pogrubione, fioletowe tło — z Twojego słownika")
             }
             if hasUsefulWords {
-                legendRow(sample: ReadingHighlightStyle.sample("słowo", kind: .useful), text: "warte nauki")
+                legendRow(sample: ReadingHighlightStyle.sample("słowo", kind: .useful), text: "zwykłe, jasnoniebieskie tło — warte nauki")
             }
             Text("Dotknij wyróżnionego słowa, aby zobaczyć tłumaczenie w tym tekście.")
                 .font(FluentFont.caption)

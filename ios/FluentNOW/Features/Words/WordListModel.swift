@@ -15,7 +15,7 @@ enum WordStatusFilter: String, CaseIterable, Identifiable, Hashable, Sendable {
         case .hard: return "Trudne"
         case .mastered: return "Opanowane"
         case .needsRefresh: return "Do odświeżenia"
-        case .important: return "Ważne"
+        case .important: return "Z gwiazdką"
         case .archived: return "Archiwum"
         }
     }
@@ -23,7 +23,7 @@ enum WordStatusFilter: String, CaseIterable, Identifiable, Hashable, Sendable {
     var systemImage: String? {
         switch self {
         case .hard: return "flame"
-        case .important: return "star"
+        case .important: return "star.fill"
         case .archived: return "archivebox"
         default: return nil
         }

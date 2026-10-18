@@ -26,6 +26,18 @@ final class DeepLinkTests: XCTestCase {
         XCTAssertEqual(link("fluentnow://topics?q=na%20lotnisku"), .topicSearch(query: "na lotnisku", topicID: nil))
         XCTAssertEqual(link("fluentnow://collections/Lotnisko%20i%20podr%C3%B3%C5%BCe"),
                        .library(.collections, .collection(name: "Lotnisko i podróże")))
+        XCTAssertEqual(link("fluentnow://recommended"), .library(.recommended, nil))
+        XCTAssertEqual(link("fluentnow://useful"), .library(.recommended, nil))
+    }
+
+    func testLibrarySectionsStayBackwardCompatible() {
+        // Surowe wartości są kontraktem (deep linki, ewentualny zapis wyboru) — nie zmieniamy istniejących.
+        XCTAssertEqual(LibrarySection(rawValue: "words"), .words)
+        XCTAssertEqual(LibrarySection(rawValue: "collections"), .collections)
+        XCTAssertEqual(LibrarySection(rawValue: "topics"), .topics)
+        XCTAssertEqual(LibrarySection(rawValue: "recommended"), .recommended)
+        XCTAssertEqual(LibrarySection.browsable, [.words, .collections, .recommended])
+        XCTAssertFalse(LibrarySection.browsable.contains(.topics))
     }
 
     func testStudyStart() {
@@ -86,6 +98,23 @@ final class AppRouterTests: XCTestCase {
         router.openLibrary(.topics)
         XCTAssertEqual(router.activeSheet, .topicSearch(query: nil, topicID: nil), "Stary segment Tematy → wyszukiwanie tematu")
         XCTAssertFalse(router.handle(url: try XCTUnwrap(URL(string: "fluentnow://nope"))))
+    }
+
+    func testOpenRecommendedSegmentFromRoot() throws {
+        let router = AppRouter()
+        router.push(WordRoute.detail(id: "w-1"), on: .words)
+        router.select(.today)
+        router.presentQuickAdd()
+        router.openLibrary(.recommended)
+        XCTAssertEqual(router.selectedTab, .words)
+        XCTAssertEqual(router.librarySection, .recommended)
+        XCTAssertTrue(router.wordsPath.isEmpty, "Polecane zawsze od korzenia Słownika")
+        XCTAssertNil(router.activeSheet)
+        XCTAssertNil(router.consumeLibraryDestination())
+
+        router.librarySection = .words
+        XCTAssertTrue(router.handle(url: try XCTUnwrap(URL(string: "fluentnow://recommended"))))
+        XCTAssertEqual(router.librarySection, .recommended)
     }
 
     func testPushAndPop() {

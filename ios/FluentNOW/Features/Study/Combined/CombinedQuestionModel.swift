@@ -71,11 +71,24 @@ final class CombinedQuestionModel {
         startedAt = Date()
     }
 
-    /// Czytanka: wyniki bloku po odpowiedzi na ostatnie pytanie (wtedy tekst wraca z dowodami).
+    /// Czytanka: wyniki bloku po odpowiedzi na ostatnie pytanie (wynik z wyborem przegląd / dalej).
     var readingRecap: [ReadingRecapItem]? {
         guard let readingBlock, readingBlock.closesBlock, let outcome, let index = task.readingIndex else { return nil }
         let current = ReadingRecapItem(questionIndex: index, chosen: Int(outcome.value), correct: outcome.correct)
         return readingEarlier + [current]
+    }
+
+    /// Czytanka: po ostatnim pytaniu bloku — `true`, gdy użytkownik wybrał „Sprawdź odpowiedzi”
+    /// (tekst z dowodami i odpowiedzi zamiast pytania). Stan UI, bez zapisu.
+    private(set) var isShowingReadingReview = false
+
+    /// Czytanka: po ostatnim pytaniu bloku przejście dalej obsługuje karta wyniku / przegląd
+    /// („Przejdź dalej”, „Dalej”) — ogólny przycisk sesji jest wtedy ukryty.
+    var ownsReadingAdvance: Bool { readingRecap != nil }
+
+    func showReadingReview() {
+        guard readingRecap != nil else { return }
+        isShowingReadingReview = true
     }
 
     var isInput: Bool { task.production != nil || question.isInput }

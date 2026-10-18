@@ -1,9 +1,31 @@
 import SwiftUI
 import FluentKit
 
-/// Wiersz słownika: hasło, tłumaczenia, poziom, status i opanowanie.
+/// Wiersz słownika: hasło, tłumaczenia, poziom, status i opanowanie. Z `onToggleStar` — dotykalna
+/// gwiazdka (`Word.important`) na końcu wiersza; bez niego (listy tylko do odczytu) gwiazdka
+/// jest widoczna jedynie przy słowach z gwiazdką.
 struct WordRowView: View {
     let row: WordListRow
+    var onToggleStar: (() -> Void)? = nil
+
+    var body: some View {
+        HStack(alignment: .center, spacing: Spacing.s) {
+            WordRowSummary(row: row, showsInlineStar: onToggleStar == nil)
+                .accessibilityElement(children: .combine)
+                .accessibilityValue(Text(row.isImportant ? "Z gwiazdką" : ""))
+                .accessibilityHint(Text("Pokazuje szczegóły słowa"))
+            if let onToggleStar {
+                WordStarButton(isStarred: row.isImportant, term: row.en, action: onToggleStar)
+            }
+        }
+        .padding(.vertical, Spacing.xxs)
+    }
+}
+
+/// Treść wiersza (bez przycisku gwiazdki).
+private struct WordRowSummary: View {
+    let row: WordListRow
+    let showsInlineStar: Bool
 
     var body: some View {
         HStack(alignment: .center, spacing: Spacing.s) {
@@ -12,7 +34,7 @@ struct WordRowView: View {
                     Text(row.en)
                         .font(FluentFont.bodyEmphasized)
                         .foregroundStyle(Palette.ink)
-                    if row.isImportant {
+                    if showsInlineStar && row.isImportant {
                         Image(systemName: "star.fill")
                             .font(FluentFont.caption)
                             .foregroundStyle(Palette.warning)
@@ -37,9 +59,28 @@ struct WordRowView: View {
                 }
             }
         }
-        .padding(.vertical, Spacing.xxs)
-        .accessibilityElement(children: .combine)
-        .accessibilityHint(Text("Pokazuje szczegóły słowa"))
+    }
+}
+
+/// Gwiazdka (priorytet w nauce): wypełniona = z gwiazdką. `.borderless`, żeby w wierszu `List`
+/// z `NavigationLink` dotknięcie gwiazdki nie otwierało szczegółów.
+struct WordStarButton: View {
+    let isStarred: Bool
+    let term: String
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            Image(systemName: isStarred ? "star.fill" : "star")
+                .font(FluentFont.body)
+                .foregroundStyle(isStarred ? Palette.warning : Palette.inkSecondary)
+                .frame(width: HitTarget.minimum, height: HitTarget.minimum)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.borderless)
+        .fluentSensoryFeedback(FluentHaptic.selection, trigger: isStarred)
+        .accessibilityLabel(Text(isStarred ? "Usuń gwiazdkę: \(term)" : "Dodaj gwiazdkę: \(term)"))
+        .accessibilityAddTraits(isStarred ? [.isSelected] : [])
     }
 }
 

@@ -116,7 +116,8 @@ final class AppRouter {
 
     /// Otwiera Słownik na danym segmencie (i opcjonalnie konkretnym celu).
     /// Tematy nie są już publicznym katalogiem (F1): `.topics` i cel `.topic(id:)` otwierają
-    /// wyszukiwanie tematu w arkuszu „+”.
+    /// wyszukiwanie tematu w arkuszu „+”. Segment „Polecane” (`.recommended`) zawsze od korzenia
+    /// stosu Słownika — inaczej przełącznik zmieniłby się pod otwartymi szczegółami słowa.
     func openLibrary(_ section: LibrarySection, destination: LibraryDestination? = nil) {
         if case .topic(let id)? = destination {
             presentTopicSearch(topicID: id)
@@ -128,7 +129,7 @@ final class AppRouter {
         }
         activeSheet = nil
         librarySection = section
-        if destination != nil {
+        if destination != nil || section == .recommended {
             popToRoot(.words)
         }
         pendingLibraryDestination = destination
