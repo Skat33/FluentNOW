@@ -36,6 +36,15 @@ struct FlashcardCardView: View {
             front: faces.front,
             back: faces.back
         )
+        // Głośnik poza obracaną kartą: przycisk (Liquid Glass) w warstwie z transformacją 3D przy
+        // 90° dostawał pozycję NaN → crash `CALayerInvalidGeometry`. Widoczny zawsze, gdy widać
+        // angielską stronę (przód albo tył).
+        .overlay(alignment: .bottom) {
+            if visibleFace(faces).isEnglish {
+                SpeakButton(isSpeaking: speech.isSpeaking) { speech.speak(faces.englishText) }
+                    .padding(.bottom, Spacing.m)
+            }
+        }
         .overlay(alignment: .topTrailing) {
             FlashcardSwipeBadge(offset: offset)
                 .padding(Spacing.m)
@@ -55,6 +64,10 @@ struct FlashcardCardView: View {
         .accessibilityAction(named: Text("Odtwórz wymowę")) { speech.speak(faces.englishText) }
         .accessibilityAction(named: Text("Pamiętam")) { onDecision(true) }
         .accessibilityAction(named: Text("Jeszcze nie")) { onDecision(false) }
+    }
+
+    private func visibleFace(_ faces: FlashcardFaces) -> FlashcardFace {
+        revealed ? faces.back : faces.front
     }
 
     private var drag: some Gesture {
@@ -117,27 +130,33 @@ private struct FlashcardFlip: View, Animatable {
         reduceMotion ? revealed : angle >= 90
     }
 
+    /// Kąt bez wartości zdegenerowanych: dokładnie 90° (karta „na krawędzi”) daje osobliwą
+    /// projekcję 3D i NaN w geometrii warstw. Omijamy ±1° wokół 90° (niewidoczne w animacji).
+    private var safeAngle: Double {
+        let value = angle.isFinite ? angle : 0
+        if abs(value - 90) < 1 { return value < 90 ? 89 : 91 }
+        return value
+    }
+
     var body: some View {
         ZStack {
-            FlashcardSideView(face: front, showsAudio: false, isFront: true)
+            FlashcardSideView(face: front, isFront: true)
                 .opacity(showsBack ? 0 : 1)
                 .allowsHitTesting(!showsBack)
-            FlashcardSideView(face: back, showsAudio: back.isEnglish, isFront: false)
+            FlashcardSideView(face: back, isFront: false)
                 .rotation3DEffect(.degrees(reduceMotion ? 0 : 180), axis: (x: 0, y: 1, z: 0))
                 .opacity(showsBack ? 1 : 0)
                 .allowsHitTesting(showsBack)
         }
-        .rotation3DEffect(.degrees(angle), axis: (x: 0, y: 1, z: 0), perspective: 0.4)
+        .rotation3DEffect(.degrees(safeAngle), axis: (x: 0, y: 1, z: 0), perspective: 0.4)
     }
 }
 
-/// Strona karty: sam wyraz dużą czcionką; na angielskim tyle — przycisk odsłuchu.
+/// Strona karty: sam wyraz dużą czcionką. Przycisk odsłuchu jest poza obracaną kartą
+/// (`FlashcardCardView.cardBody`), żeby nie podlegał transformacji 3D.
 private struct FlashcardSideView: View {
     let face: FlashcardFace
-    let showsAudio: Bool
     let isFront: Bool
-
-    @Environment(SpeechService.self) private var speech
 
     var body: some View {
         VStack(spacing: Spacing.m) {
@@ -147,9 +166,8 @@ private struct FlashcardSideView: View {
                 .multilineTextAlignment(.center)
                 .minimumScaleFactor(0.6)
                 .fixedSize(horizontal: false, vertical: true)
-            if showsAudio {
-                SpeakButton(isSpeaking: speech.isSpeaking) { speech.speak(face.text) }
-            }
+            // Miejsce na przycisk odsłuchu nakładany z zewnątrz (stała wysokość karty).
+            Color.clear.frame(height: HitTarget.minimum)
         }
         .frame(maxWidth: .infinity, minHeight: 260)
         .padding(Spacing.l)
