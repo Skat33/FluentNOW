@@ -219,7 +219,7 @@ Zasady: brak duplikatów `form` w czytance (bez względu na wielkość liter); d
 
 **Źródło i scalanie.** `readings.json` jest generowany ze strony, więc słowniczek **nie jest edytowany w `readings.json`**. Źródło prawdy: `ios/tools/data/reading-glossary.json` (`{ "schemaVersion": 1, "readings": { "<id czytanki>": [GlossaryEntry…] } }`). Scalanie:
 - `node ios/tools/apply-reading-glossary.mjs` — wpisuje słowniczki do `readings.json` (idempotentne; `--check` = kod 1, gdy `readings.json` jest nieaktualny);
-- `export-web-content.mjs` scala słowniczki sam (ponowny eksport ich nie kasuje). Poprawki english-qa zmieniają potem akapity, więc pełna kolejność: eksport → `fixes/english-qa-banks-fix.mjs` (2×) → `apply-reading-glossary.mjs` → `build-index.mjs` → `validate-content.mjs`.
+- `export-web-content.mjs` scala słowniczki sam (ponowny eksport ich nie kasuje). Poprawki english-qa zmieniają potem akapity, więc pełna kolejność: eksport → `fixes/english-qa-banks-fix.mjs` (2×) → `fixes/readings-ame-fix.mjs` → `apply-reading-glossary.mjs` → `build-index.mjs` → `validate-content.mjs`.
 
 Walidator (`lib/reading-glossary.mjs`, wołany z `validateReadings`): błędy `glossary-form` (forma nie występuje dosłownie w akapicie), `glossary-duplicate`, `glossary-empty`, `glossary-type`, `ipa-format`, `glossary-ref` (zły format lub brak `ref` w `dictionary-index.json`); ostrzeżenia `glossary-count` (poza 8–20), `glossary-missing`, `glossary-stale` (`readings.json` różni się od pliku źródłowego).
 

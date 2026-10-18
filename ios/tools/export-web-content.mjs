@@ -314,6 +314,6 @@ if (isMain) {
     for (const l of log) console.log(l);
     if (fixes.length) { console.log(`Poprawki w eksporcie (${fixes.length}):`); for (const f of fixes) console.log('  ' + f); }
     console.log('Liczności:', JSON.stringify(counts));
-    console.log('UWAGA: eksport nadpisał korekty english-qa. Uruchom teraz dwukrotnie: node ios/tools/fixes/english-qa-banks-fix.mjs, potem node ios/tools/apply-reading-glossary.mjs (słowniczki czytanek względem poprawionego tekstu) i node ios/tools/build-index.mjs');
+    console.log('UWAGA: eksport nadpisał korekty english-qa. Uruchom teraz dwukrotnie: node ios/tools/fixes/english-qa-banks-fix.mjs, potem node ios/tools/fixes/readings-ame-fix.mjs, potem node ios/tools/apply-reading-glossary.mjs (słowniczki czytanek względem poprawionego tekstu) i node ios/tools/build-index.mjs');
   }, (err) => { console.error(err); process.exitCode = 1; });
 }
