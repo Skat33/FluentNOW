@@ -75,7 +75,11 @@ struct SpeakButton: View {
                 .symbolEffect(.variableColor.iterative, isActive: isSpeaking && !reduceMotion && style == .normal)
                 .foregroundStyle(Palette.accent)
                 .frame(width: size.diameter, height: size.diameter)
-                .fluentGlass(in: Circle(), tint: Palette.accentSoft, interactive: true)
+                // Pełne kółko zamiast Liquid Glass: przycisk występuje w treści list (wiersze,
+                // karty, strony przewijane w bok), a szkło w takich miejscach dwukrotnie
+                // wywróciło renderer iOS 26 (NaN w geometrii warstwy SDF, `SDFStyle.distanceRange`).
+                // HIG i tak zaleca szkło tylko dla warstwy nawigacji / pływających kontrolek.
+                .background(Circle().fill(Palette.accentSoft))
                 .frame(minWidth: HitTarget.minimum, minHeight: HitTarget.minimum)
                 .contentShape(Circle())
         }
