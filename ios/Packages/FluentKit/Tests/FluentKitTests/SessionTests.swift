@@ -13,7 +13,10 @@ final class SessionTests: XCTestCase {
         let session = SessionBuilder.makeSession(state: state, minutes: 10, mode: .mixed, using: &generator)
         XCTAssertGreaterThanOrEqual(session.tasks.count, 2)
         // G3: flashcards are not drawn into sessions — the first contact is „Wybierz znaczenie”.
-        XCTAssertEqual(Set(session.tasks.map { $0.type }), [.meaning])
+        // FEEDBACK-5 J1: the session then ends with „Dopasuj pary” of the words it introduced
+        // (a session is never only „Wybierz znaczenie”).
+        XCTAssertEqual(Set(session.tasks.dropLast().map { $0.type }), [.meaning])
+        XCTAssertEqual(session.tasks.last?.type, .matchPairs)
         XCTAssertEqual(session.mode, "mixed")
         XCTAssertEqual(session.minutes, 10)
     }
@@ -22,14 +25,20 @@ final class SessionTests: XCTestCase {
         var meaning = Meaning(id: "m", translation: "t")
         XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.meaning])
         XCTAssertTrue(SessionBuilder.isFirstContact(meaning))
-        meaning.scores[.recognition] = Score(correct: 1)
+        // Seen, never right yet: still the meaning exercise.
+        meaning.scores[.recognition] = Score(wrong: 1)
         XCTAssertFalse(SessionBuilder.isFirstContact(meaning))
         XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.meaning])
+        // FEEDBACK-5 J1 (owner: the new exercises did not show up for days): the recognition-style
+        // „Zrozum ze słuchu” and „Ułóż zdanie” come right after the first correct recognition
+        // (before: two correct recognitions and a recall answer).
+        meaning.scores[.recognition] = Score(correct: 1)
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.listeningChoice, .scramble, .meaning])
         meaning.scores[.recognition] = Score(correct: 2)
-        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.recall, .meaning])
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.recall, .listeningChoice, .scramble, .meaning])
         meaning.scores[.recall] = Score()
-        // FEEDBACK-4 I2: the scramble joins cloze, the listening choice joins dictation.
-        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.cloze, .scramble, .recall])
+        // FEEDBACK-4 I2: the scramble joins cloze; J1: the listening choice stays in the mix.
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.cloze, .scramble, .recall, .listeningChoice])
         meaning.scores[.usage] = Score()
         XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.listeningChoice, .dictation, .meaning])
         meaning.scores[.listening] = Score()
@@ -121,15 +130,21 @@ final class SessionTests: XCTestCase {
         for index in 0..<16 {
             state.words[index].meanings[0].scores[.recognition] = Scheduler.schedule(nil, correct: true, seconds: 3, confidence: 3, hint: false, now: 1, type: .flashcard)
         }
-        var generator = ConstantGenerator(value: UInt64.max / 2)
+        // J1: `UInt64.max` (was `max / 2`) — the generator picks the last drawable type of the
+        // reviews' stage, `[.scramble, .meaning]` → „Wybierz znaczenie”, as the budget below assumes.
+        var generator = ConstantGenerator(value: UInt64.max)
         let session = SessionBuilder.makeSession(state: state, minutes: 10, using: &generator)
         let fresh = session.tasks.filter { task in state.words.first { $0.id == task.wordId }?.meanings[0].scores.isEmpty ?? false }
         // 16 reviews × 24 s („Wybierz znaczenie”) leave 216 s — room for all 8 new meanings.
         let perTask = ExerciseType.meaning.estimatedSeconds
         XCTAssertEqual(fresh.count, min(8, (600 - 16 * perTask) / perTask))
         XCTAssertEqual(fresh.count, 8)
-        XCTAssertEqual(session.tasks.count, 24)
-        XCTAssertTrue(session.tasks.allSatisfy { $0.type == .meaning })
+        // FEEDBACK-5 J1: one correct recognition is enough for „Dopasuj pary” — five of the 16
+        // reviews become one board (the freed time has nothing left to refill).
+        let boards = session.tasks.filter { $0.type == .matchPairs }
+        XCTAssertEqual(boards.count, 1)
+        XCTAssertEqual(session.tasks.count, 24 - MatchPairsExercise.pairCount + 1)
+        XCTAssertTrue(session.tasks.allSatisfy { $0.type == .meaning || $0.type == .matchPairs })
         XCTAssertLessThanOrEqual(session.tasks.reduce(0) { $0 + $1.type.estimatedSeconds }, 600)
     }
 
@@ -141,12 +156,22 @@ final class SessionTests: XCTestCase {
         let ids = IDGenerator()
         for round in 0..<5 {
             let session = SessionBuilder.makeSession(state: state, minutes: 10, using: &generator)
-            let types = session.tasks.map { $0.type }
+            XCTAssertFalse(session.tasks.contains { $0.type == .flashcard }, "round \(round): flashcards never enter a session")
+            // FEEDBACK-5 J1: an introduction board („Dopasuj pary” of meanings met for the first
+            // time) is appended after the interleaved tasks on purpose — the checks of the
+            // interleaving below skip it.
+            let introduction = session.tasks.last.map { (task: VocabTask) -> Bool in
+                task.type == .matchPairs && task.allRefs.allSatisfy { (ref: VocabTaskRef) -> Bool in
+                    state.word(id: ref.wordId)?.meaning(id: ref.meaningId)?.scores[.recognition] == nil
+                }
+            } ?? false
+            let types = (introduction ? Array(session.tasks.dropLast()) : session.tasks).map { $0.type }
             var counts: [ExerciseType: Int] = [:]
             for type in types { counts[type, default: 0] += 1 }
-            XCTAssertFalse(types.contains(.flashcard), "round \(round): flashcards never enter a session")
             if round == 0 {
-                XCTAssertEqual(types.count, 600 / ExerciseType.meaning.estimatedSeconds)
+                // 25 × 24 s would fill 600 s; the 50 s board takes the place of three new words.
+                XCTAssertTrue(introduction)
+                XCTAssertEqual(types.count, (600 - ExerciseType.matchPairs.estimatedSeconds) / ExerciseType.meaning.estimatedSeconds)
                 XCTAssertEqual(Set(types), [.meaning])
             }
             let majority = counts.values.max() ?? 0

@@ -129,6 +129,10 @@ public enum StateMigration {
         if let profile = state.settings.profile {
             state.settings.profile = profile.normalized()
         }
+        // Avatar (J3, optional): trimmed nickname, non-empty ids; unknown ids are kept.
+        if let avatar = state.settings.avatar {
+            state.settings.avatar = avatar.normalized()
+        }
         return state
     }
 

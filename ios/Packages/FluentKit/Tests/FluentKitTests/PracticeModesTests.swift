@@ -66,8 +66,12 @@ final class PracticeModesTests: XCTestCase {
         var generator = SeededGenerator(seed: 2)
         for minutes in SessionBuilder.durations {
             let session = SessionBuilder.makeSession(state: state, minutes: minutes, using: &generator)
-            XCTAssertEqual(session.tasks.count, min(40, minutes * 60 / ExerciseType.meaning.estimatedSeconds))
-            XCTAssertTrue(session.tasks.allSatisfy { $0.type == .meaning })
+            // FEEDBACK-5 J1: the session ends with an introduction board („Dopasuj pary” of the
+            // new words, 50 s) — it takes the place of the last new words that would not fit.
+            let budget = minutes * 60 - ExerciseType.matchPairs.estimatedSeconds
+            XCTAssertEqual(session.tasks.count, min(40, budget / ExerciseType.meaning.estimatedSeconds) + 1)
+            XCTAssertTrue(session.tasks.dropLast().allSatisfy { $0.type == .meaning })
+            XCTAssertEqual(session.tasks.last?.type, .matchPairs)
         }
     }
 

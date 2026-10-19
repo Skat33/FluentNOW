@@ -69,27 +69,73 @@ final class NewExercisesTests: XCTestCase {
 
     // MARK: Progression
 
-    func testNewTypesComeOnlyAfterSeveralCorrectContacts() {
+    /// FEEDBACK-5 J1 (supersedes the I2 progression, where the new types needed two correct
+    /// recognitions — separate days with FSRS — and a recall answer): the new types come right
+    /// after the first correct contact.
+    func testNewTypesComeAfterTheFirstCorrectContact() {
         var meaning = Meaning(id: "m", translation: "t")
-        XCTAssertFalse(SessionBuilder.allowedTaskTypes(meaning)?.contains(.scramble) ?? true)
-        meaning.scores[.recognition] = Score(correct: 1)
-        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.meaning])
-        meaning.scores[.recognition] = Score(correct: 2)
-        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.recall, .meaning])
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.meaning], "first contact")
+        meaning.scores[.recognition] = Score(wrong: 1)
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.meaning], "seen, never right yet")
         meaning.scores[.recall] = Score(correct: 1)
-        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.cloze, .scramble, .recall])
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.scramble, .meaning], "a correct recall unlocks the scramble")
+        meaning.scores[.recall] = nil
+        meaning.scores[.recognition] = Score(correct: 1)
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.listeningChoice, .scramble, .meaning])
+        meaning.scores[.recognition] = Score(correct: 2)
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.recall, .listeningChoice, .scramble, .meaning])
+        meaning.scores[.recall] = Score(correct: 1)
+        XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.cloze, .scramble, .recall, .listeningChoice])
         meaning.scores[.usage] = Score(correct: 1)
         XCTAssertEqual(SessionBuilder.allowedTaskTypes(meaning), [.listeningChoice, .dictation, .meaning])
+        XCTAssertEqual(MatchPairsExercise.minimumRecognitionCorrect, 1, "pairs from the first correct recognition")
     }
 
-    func testFreshWordsNeverGetTheNewTypes() {
+    func testFreshWordsGetTheMeaningExerciseAndAnIntroductionBoard() throws {
         var state = TestData.emptyState()
         state.words = (0..<30).map { word("w\($0)", "term\($0)", "sens \($0)", examples: ["I use term\($0) at work every day."], translations: ["Używam tego codziennie w pracy \($0)."]) }
         for seed in 0..<10 {
             var generator = SeededGenerator(seed: UInt64(seed))
             let session = SessionBuilder.makeSession(state: state, minutes: 15, using: &generator)
-            XCTAssertTrue(session.tasks.allSatisfy { $0.type == .meaning }, "seed \(seed)")
+            XCTAssertTrue(session.tasks.dropLast().allSatisfy { $0.type == .meaning }, "seed \(seed)")
+            // J1: the session is not only „Wybierz znaczenie” — it ends with the pairs of the
+            // meanings it has just introduced.
+            let board = try XCTUnwrap(session.tasks.last)
+            XCTAssertEqual(board.type, .matchPairs)
+            XCTAssertEqual(board.allRefs.count, MatchPairsExercise.pairCount)
+            let introduced = Set(session.tasks.dropLast().map { $0.meaningId })
+            XCTAssertTrue(board.allRefs.allSatisfy { introduced.contains($0.meaningId) }, "only meanings met earlier in this session")
+            XCTAssertLessThanOrEqual(session.tasks.reduce(0) { $0 + $1.type.estimatedSeconds }, 15 * 60)
         }
+    }
+
+    func testStageTwoDrawsTheNewTypesButNeverDictation() {
+        var state = TestData.emptyState()
+        state.words = (0..<20).map { (index: Int) -> Word in
+            let item = word("w\(index)", "term\(index)", "sens \(index)",
+                            examples: ["We always use term\(index) on busy days."],
+                            translations: ["Zawsze używamy tego w pracowite dni \(index)."])
+            return known(item, correct: 1)
+        }
+        var seen = Set<ExerciseType>()
+        for seed in 0..<20 {
+            var generator = SeededGenerator(seed: UInt64(seed))
+            let session = SessionBuilder.makeSession(state: state, minutes: 10, using: &generator)
+            seen.formUnion(session.tasks.map { $0.type })
+            XCTAssertFalse(session.tasks.contains { $0.type == .dictation || $0.type == .recall || $0.type == .cloze }, "seed \(seed)")
+            XCTAssertLessThanOrEqual(session.tasks.reduce(0) { $0 + $1.type.estimatedSeconds }, 600)
+        }
+        XCTAssertTrue(seen.isSuperset(of: [.meaning, .scramble, .listeningChoice, .matchPairs]), "\(seen)")
+    }
+
+    func testFailedRecognitionInStageTwoIsRetriedAsRecognition() {
+        var meaning = Meaning(id: "m", translation: "t")
+        meaning.scores[.recognition] = Score(correct: 1, wrong: 1)
+        XCTAssertEqual(SessionBuilder.retryType(after: .meaning, meaning: meaning), .meaning)
+        XCTAssertEqual(SessionBuilder.retryType(after: .matchPairs, meaning: meaning), .meaning)
+        XCTAssertEqual(SessionBuilder.retryType(after: .scramble, meaning: meaning), .scramble, "another sentence, same exercise")
+        meaning.scores[.recall] = Score(correct: 1)
+        XCTAssertEqual(SessionBuilder.retryType(after: .scramble, meaning: meaning), .cloze, "the usual rotation when allowed")
     }
 
     func testScrambleAndListeningAreDrawnAndFallBackWhenImpossible() {
@@ -273,12 +319,18 @@ final class NewExercisesTests: XCTestCase {
         XCTAssertLessThanOrEqual(session.tasks.reduce(0) { $0 + $1.type.estimatedSeconds }, 600)
     }
 
-    func testNoBoardForNewWordsOrTheirFirstContacts() {
+    /// J1: one correct recognition is now enough (was two); a meaning that was seen but never
+    /// answered correctly still gets no board — neither a regular nor an introduction one.
+    func testNoBoardBeforeTheFirstCorrectRecognition() {
         var state = TestData.emptyState()
-        state.words = (0..<20).map { known(TestData.freshWord("w\($0)", "term\($0)", "sens \($0)"), correct: 1) }
+        state.words = (0..<20).map { known(TestData.freshWord("w\($0)", "term\($0)", "sens \($0)"), correct: 0) }
         var generator = ConstantGenerator(value: UInt64.max)
         let session = SessionBuilder.makeSession(state: state, minutes: 10, using: &generator)
-        XCTAssertFalse(session.tasks.contains { $0.type == .matchPairs }, "one correct recognition is not enough")
+        XCTAssertFalse(session.tasks.contains { $0.type == .matchPairs }, "no correct recognition yet")
+        var once = TestData.emptyState()
+        once.words = (0..<20).map { known(TestData.freshWord("w\($0)", "term\($0)", "sens \($0)"), correct: 1) }
+        var onceGenerator = ConstantGenerator(value: UInt64.max)
+        XCTAssertEqual(SessionBuilder.makeSession(state: once, minutes: 10, using: &onceGenerator).tasks.filter { $0.type == .matchPairs }.count, 1, "one correct recognition is enough")
         var pairsMode = SeededGenerator(seed: 1)
         XCTAssertFalse(SessionBuilder.makeSession(state: pairsState(), minutes: 10, mode: .pairs, using: &pairsMode).tasks.contains { $0.type == .matchPairs })
     }

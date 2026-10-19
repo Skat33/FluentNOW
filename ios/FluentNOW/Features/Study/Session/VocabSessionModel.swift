@@ -34,6 +34,10 @@ final class VocabSessionModel {
     var session: VocabSession? { store.state.session }
     var isFinished: Bool { session?.isFinished ?? false }
     var mode: StudyMode { session?.studyMode ?? .mixed }
+    /// Typ sesji „Ćwicz wybrany typ” (J1); `nil` dla zwykłych sesji.
+    var singleType: ExerciseType? { session.flatMap { SingleTypeSession.type(ofMode: $0.mode) } }
+    /// Tytuł nagłówka sesji.
+    var headerTitle: String { singleType?.practiceTitle ?? "Twój mały krok" }
 
     /// Wczytuje zasoby oceniania i ustawia bieżące zadanie.
     func prepare() async {
@@ -131,6 +135,7 @@ final class VocabSessionModel {
         // „Dopasuj pary” (I2): każde znaczenie planszy dostaje własną recenzję.
         let pairResults = task.type == .matchPairs ? exercise.pairResults : []
         store.update(.answer) { (state: inout LearnerState) -> Void in
+            let tasksBefore = state.session?.tasks.count ?? 0
             if !pairResults.isEmpty {
                 state = MatchPairsExercise.record(
                     state,
@@ -154,6 +159,8 @@ final class VocabSessionModel {
                     reviewID: reviewID
                 )
             }
+            // „Ćwicz wybrany typ” (J1): powtórka błędnego zadania zostaje w wybranym typie.
+            state = SingleTypeSession.alignRetries(state, from: tasksBefore)
             // `recordAnswer` nie zmienia stanu, gdy słowa/znaczenia już nie ma (usunięte w międzyczasie) —
             // wtedy sesja nie przesunęłaby się dalej i ekran by utknął. Przesuwamy indeks sami.
             if let expectedIndex, var current = state.session, current.index == expectedIndex,
@@ -187,7 +194,13 @@ final class VocabSessionModel {
     /// „Jeszcze 5 minut” — nowa krótka sesja w tym samym trybie. Zwraca komunikat, gdy nie ma zadań.
     func extend() async -> String? {
         let currentMode = mode
-        let outcome = await StudyStarter.startVocabulary(mode: currentMode, minutes: 5, collection: nil, store: store, images: images)
+        let outcome: StudyStarter.Outcome
+        if let type = singleType {
+            // „Ćwicz wybrany typ” (J1): kolejne 5 minut tym samym typem.
+            outcome = await StudyStarter.startSingleType(type, minutes: 5, collection: nil, store: store)
+        } else {
+            outcome = await StudyStarter.startVocabulary(mode: currentMode, minutes: 5, collection: nil, store: store, images: images)
+        }
         switch outcome {
         case .message(let text):
             return text

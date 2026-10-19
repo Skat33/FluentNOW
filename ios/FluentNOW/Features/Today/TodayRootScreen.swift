@@ -73,6 +73,8 @@ struct TodayRootScreen: View {
 
     @ToolbarContentBuilder
     private var toolbarContent: some ToolbarContent {
+        // Awatar → panel użytkownika (FEEDBACK-5 J3, arkusz `AppSheet.profile`).
+        ToolbarItem(placement: .topBarLeading) { ProfileAvatarButton() }
         ToolbarItem(placement: .primaryAction) { QuickAddButton() }
     }
 
@@ -170,7 +172,7 @@ private struct TodayContent: View {
             TodayStatsGrid(overview: snapshot.overview)
             TodayWeekCard(week: snapshot.week, goal: snapshot.goal.goal)
             TodayAnalysisCard(analysis: snapshot.analysis)
-            TodayRecommendedWordsSection()
+            TodayRecommendedWordsLink()  // J2: lista polecanych jest w Słowniku → Polecane
             TodayRecommendationsSection(recommendations: snapshot.recommendations)
             TodayCollectionsSection(collections: snapshot.collections)
             TodayRecentSection(rows: snapshot.recent)

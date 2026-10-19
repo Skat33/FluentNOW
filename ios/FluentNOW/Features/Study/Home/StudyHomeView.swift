@@ -24,6 +24,10 @@ struct StudyHomeView: View {
     @State private var flowAfterSheet: StudyFlow?
     @State private var deckCounts: FlashcardDeckCounts?
     @State private var picturesSnapshot: StudyPicturesSnapshot?
+    /// „Ćwicz wybrany typ” (J1): długość (5 / 10 min, pamiętana), uruchamiany typ, komunikat przy kafelkach.
+    @AppStorage("study.singleTypeMinutes") private var singleTypeMinutes = 5
+    @State private var startingType: ExerciseType?
+    @State private var typeNotice: String?
 
     var body: some View {
         ScrollView {
@@ -134,6 +138,9 @@ struct StudyHomeView: View {
             onClearCollection: { collection = nil },
             onStart: { start(modes: modesBinding.wrappedValue) }
         )
+        if !store.activeWords.isEmpty {
+            exerciseTypesCard
+        }
         if !prefersFlashcards && !store.activeWords.isEmpty {
             flashcardsCard
         }
@@ -152,6 +159,63 @@ struct StudyHomeView: View {
     /// Gdy tryb jest „W budowie” (I2), preferencja niczego nie zmienia — karta zostaje na dole.
     private var prefersPictures: Bool {
         PictureExercise.isEnabled && (store.settings.profile?.styles.contains(.pictures) ?? false)
+    }
+
+    /// „Ćwicz wybrany typ” (FEEDBACK-5 J1).
+    private var exerciseTypesCard: some View {
+        StudyExerciseTypesCard(
+            minutes: singleTypeMinutesBinding,
+            collection: collection,
+            startingType: startingType,
+            notice: typeNotice,
+            onStart: { (type: ExerciseType) -> Void in startSingleType(type, noticeInline: true) },
+            onPictures: { () -> Void in openPicturesFromTypes() },
+            onDismissNotice: { () -> Void in typeNotice = nil }
+        )
+    }
+
+    private var singleTypeMinutesBinding: Binding<Int> {
+        Binding(
+            get: { SingleTypeSession.durations.contains(singleTypeMinutes) ? singleTypeMinutes : 5 },
+            set: { singleTypeMinutes = $0 }
+        )
+    }
+
+    /// Kafelek „Słowo i zdjęcie”: w budowie — informacja przy kafelkach; po odblokowaniu tryb zdjęć.
+    private func openPicturesFromTypes() {
+        guard PictureExercise.isEnabled else {
+            typeNotice = StudyPicturesLockedCard.message
+            return
+        }
+        start(modes: [.pictures])
+    }
+
+    /// Sesja jednego typu. `noticeInline` — komunikat przy kafelkach (dotknięcie kafelka);
+    /// prośba z routera (deep link) pokazuje go na górze ekranu.
+    private func startSingleType(_ type: ExerciseType, noticeInline: Bool) {
+        // Osobny stan od `isStarting` — przycisk „Rozpocznij sesję” nie pokazuje wtedy ładowania.
+        guard !isStarting, startingType == nil else { return }
+        startingType = type
+        typeNotice = nil
+        notice = nil
+        let minutes = singleTypeMinutesBinding.wrappedValue
+        let limitedTo = collection
+        Task { @MainActor in
+            let outcome = await StudyStarter.startSingleType(type, minutes: minutes, collection: limitedTo, store: store)
+            startingType = nil
+            switch outcome {
+            case .flow(let flow):
+                activeFlow = flow
+            case .combinedDraft(let draft):
+                combinedDraft = draft
+            case .message(let text):
+                if noticeInline {
+                    typeNotice = text
+                } else {
+                    notice = text
+                }
+            }
+        }
     }
 
     private var flashcardsCard: some View {
@@ -244,7 +308,7 @@ struct StudyHomeView: View {
     // MARK: Start
 
     private func start(modes requested: [StudyMode]) {
-        guard !isStarting else { return }
+        guard !isStarting, startingType == nil else { return }
         let hasWords = !store.activeWords.isEmpty
         let modes = hasWords ? requested : requested.filter { !$0.isVocabulary }
         guard !modes.isEmpty else {
@@ -295,6 +359,15 @@ struct StudyHomeView: View {
             } else {
                 notice = "Nie ma przerwanej sesji — wybierz, co chcesz poćwiczyć."
             }
+            return
+        }
+        // „Ćwicz wybrany typ” (J1): `exercise-<typ>` (np. `fluentnow://study/start?mode=exercise-scramble`).
+        if let type = request.modes.compactMap({ (raw: String) -> ExerciseType? in SingleTypeSession.type(ofMode: raw) }).first {
+            collection = request.collection
+            if let minutes = request.minutes, SingleTypeSession.durations.contains(minutes) {
+                singleTypeMinutes = minutes
+            }
+            startSingleType(type, noticeInline: false)
             return
         }
         var modes = request.modes.compactMap { StudyMode(rawValue: $0) }

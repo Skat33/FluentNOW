@@ -20,6 +20,9 @@ public struct LearnerSettings: Codable, Sendable, Hashable {
     /// compatible (older exports and the web app do not have it). Values are clamped to
     /// `FSRS.retentionRange` when used.
     public var desiredRetention: Double?
+    /// Avatar and nickname of the profile panel (FEEDBACK-5 J3). Optional and backward compatible;
+    /// merged by its own `updatedAt` (`LearnerAvatar.newer`).
+    public var avatar: LearnerAvatar?
 
     /// Retention used by the scheduler.
     public var effectiveRetention: Double {
@@ -38,7 +41,8 @@ public struct LearnerSettings: Codable, Sendable, Hashable {
         voice: String? = nil,
         voiceRevision: Int? = 2,
         profile: LearnerProfile? = nil,
-        desiredRetention: Double? = nil
+        desiredRetention: Double? = nil,
+        avatar: LearnerAvatar? = nil
     ) {
         self.goal = min(LearnerSettings.goalRange.upperBound, max(LearnerSettings.goalRange.lowerBound, goal))
         self.reminder = LearnerSettings.isValidReminder(reminder) ? reminder : LearnerSettings.defaultReminder
@@ -48,10 +52,11 @@ public struct LearnerSettings: Codable, Sendable, Hashable {
         self.voiceRevision = voiceRevision
         self.profile = profile
         self.desiredRetention = desiredRetention.flatMap { $0.isFinite ? FSRS.clampedRetention($0) : nil }
+        self.avatar = avatar
     }
 
     enum CodingKeys: String, CodingKey {
-        case goal, reminder, accent, slow, voice, voiceRevision, profile, desiredRetention
+        case goal, reminder, accent, slow, voice, voiceRevision, profile, desiredRetention, avatar
     }
 
     public init(from decoder: Decoder) throws {
@@ -64,7 +69,8 @@ public struct LearnerSettings: Codable, Sendable, Hashable {
             voice: c.lenientOptionalString(.voice),
             voiceRevision: c.lenientOptionalInt(.voiceRevision),
             profile: c.lenientOptional(LearnerProfile.self, forKey: .profile),
-            desiredRetention: c.lenientOptionalDouble(.desiredRetention)
+            desiredRetention: c.lenientOptionalDouble(.desiredRetention),
+            avatar: c.lenientOptional(LearnerAvatar.self, forKey: .avatar)
         )
     }
 

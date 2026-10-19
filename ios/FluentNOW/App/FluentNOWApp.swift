@@ -10,12 +10,19 @@ struct FluentNOWApp: App {
     var body: some Scene {
         WindowGroup {
             AppearanceRoot {
-                RootView()
+                // Logowanie (J3) → wywiad (G4, ekran Dzisiaj przy pustym słowniku) → aplikacja.
+                AuthGate {
+                    RootView()
+                }
             }
             .environment(router)
             .fluentEnvironment(environment)
             .onOpenURL { url in
                 _ = router.handle(url: url)
+            }
+            .task {
+                // Sesja z pęku kluczy (ułamek sekundy) — przed wczytaniem danych nauki.
+                await environment.auth.bootstrap(hasExistingInstall: environment.preferences.hasCompletedOnboarding)
             }
             .task {
                 // Dotknięcie przypomnienia → sesja nauki (także przy zimnym starcie — link czeka w serwisie).

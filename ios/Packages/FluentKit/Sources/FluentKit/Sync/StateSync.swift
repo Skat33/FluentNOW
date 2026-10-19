@@ -193,6 +193,8 @@ public enum StateSync {
         // Study profile (G4): the more recently edited copy wins (a profile set up on another
         // device is never lost because this device has none).
         merged.settings.profile = LearnerProfile.newer(local.settings.profile, remote.settings.profile)
+        // Avatar and nickname (J3): merged on their own `updatedAt`, independently of the profile.
+        merged.settings.avatar = LearnerAvatar.newer(local.settings.avatar, remote.settings.avatar)
         return merged
     }
 

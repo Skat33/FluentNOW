@@ -67,6 +67,22 @@ enum StudyStarter {
         return .flow(.vocabulary)
     }
 
+    /// „Ćwicz wybrany typ” (FEEDBACK-5 J1): krótka sesja tylko z jednym typem ćwiczenia
+    /// (`SingleTypeSession`) zapisana w `state.session` — wznawia się i liczy jak zwykła sesja.
+    static func startSingleType(_ type: ExerciseType, minutes: Int, collection: String?, store: LearningStore) async -> Outcome {
+        let now = store.now()
+        let session = await store.compute { (state: LearnerState) -> VocabSession in
+            SingleTypeSession.makeSession(state: state, type: type, minutes: minutes, collection: collection, now: now)
+        }
+        guard !session.tasks.isEmpty else {
+            return .message(StudySingleTypeText.emptyMessage(type: type, hasWords: !store.activeWords.isEmpty, collection: collection))
+        }
+        store.update(.session) { (state: inout LearnerState) -> Void in
+            state.session = session
+        }
+        return .flow(.vocabulary)
+    }
+
     /// Zatwierdza szkic sesji łączonej (po potwierdzeniu w arkuszu).
     static func commitCombined(_ draft: CombinedSession, store: LearningStore) {
         store.update(.session) { state in

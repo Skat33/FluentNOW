@@ -7,11 +7,14 @@ enum AppSheet: Identifiable, Hashable {
     case quickAdd(prefill: String?)
     /// Ten sam arkusz „+” w trybie „Szukaj tematu” (opcjonalnie z zapytaniem lub konkretnym tematem).
     case topicSearch(query: String?, topicID: String?)
+    /// Panel użytkownika (FEEDBACK-5 J3) — otwierany awatarem w nagłówku Dzisiaj.
+    case profile
 
     var id: String {
         switch self {
         case .quickAdd: return "quickAdd"
         case .topicSearch: return "topicSearch"
+        case .profile: return "profile"
         }
     }
 }
@@ -150,6 +153,11 @@ final class AppRouter {
     /// Arkusz „+” w trybie „Szukaj tematu” (zapytanie lub konkretny temat — np. z deep linku).
     func presentTopicSearch(query: String? = nil, topicID: String? = nil) {
         activeSheet = .topicSearch(query: query, topicID: topicID)
+    }
+
+    /// Panel użytkownika (awatar, poziom, konto).
+    func presentProfile() {
+        activeSheet = .profile
     }
 
     func dismissSheet() {

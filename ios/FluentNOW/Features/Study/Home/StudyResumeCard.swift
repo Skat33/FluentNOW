@@ -22,10 +22,12 @@ struct StudyResumeItem: Identifiable, Hashable {
             ))
         }
         if let session = state.session, !session.isFinished, !session.tasks.isEmpty {
+            // „Ćwicz wybrany typ” (J1) — nazwa typu zamiast „Codziennej mieszanki”.
+            let name = StudySingleTypeText.sessionTitle(mode: session.mode) ?? session.studyMode.namePl
             result.append(StudyResumeItem(
                 flow: .vocabulary,
                 title: "Twoja sesja czeka",
-                detail: "\(session.studyMode.namePl) · ukończono \(session.index) z \(StudyFormat.exercises(session.tasks.count)).",
+                detail: "\(name) · ukończono \(session.index) z \(StudyFormat.exercises(session.tasks.count)).",
                 progress: ProgressMath.fraction(session.index, of: session.tasks.count)
             ))
         }

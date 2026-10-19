@@ -141,6 +141,8 @@ private struct AppSheetContent: View {
             AddWordRootScreen(prefill: prefill)
         case .topicSearch(let query, let topicID):
             AddWordRootScreen(prefill: query, mode: .topic, topicID: topicID)
+        case .profile:
+            ProfileScreen()
         }
     }
 }

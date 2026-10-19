@@ -25,6 +25,8 @@ final class AppEnvironment {
     let images: WordImageService
     /// Zgłoszenia „Zdjęcie nie pasuje” (osobny plik `image-reports.json`) — G2.
     let imageReports: ImageReportStore
+    /// Logowanie i konto (FEEDBACK-5 J3): Apple / Google / e-mail / gość, sesja w pęku kluczy.
+    let auth: AuthController
 
     /// Tryb podglądu (bez usług systemowych).
     let isPreview: Bool
@@ -46,7 +48,8 @@ final class AppEnvironment {
         reports: ExerciseReportStore,
         isPreview: Bool,
         images: WordImageService? = nil,
-        imageReports: ImageReportStore? = nil
+        imageReports: ImageReportStore? = nil,
+        auth: AuthController? = nil
     ) {
         self.store = store
         self.content = content
@@ -58,6 +61,7 @@ final class AppEnvironment {
         self.reports = reports
         self.images = images ?? WordImageService.offline()
         self.imageReports = imageReports ?? ImageReportStore(fileURL: nil)
+        self.auth = auth ?? AuthController.inMemory(status: .guest)
         self.isPreview = isPreview
         wireDeleteAll()
     }
@@ -88,7 +92,8 @@ final class AppEnvironment {
             reports: ExerciseReportStore(fileURL: ExerciseReportStore.defaultFileURL()),
             isPreview: false,
             images: WordImageService(),
-            imageReports: ImageReportStore(fileURL: ImageReportStore.defaultFileURL())
+            imageReports: ImageReportStore(fileURL: ImageReportStore.defaultFileURL()),
+            auth: AuthController.live()
         )
         if let notice = setup.notice {
             store.setStartupNotice(notice, backupURL: setup.backupURL)
@@ -281,6 +286,7 @@ extension View {
             .environment(environment.reminders)
             .environment(environment.assistant)
             .environment(environment.reports)
+            .environment(environment.auth)
     }
 
     /// Podgląd SwiftUI: `AppEnvironment.preview` (dane przykładowe w pamięci) + nowy `AppRouter`.

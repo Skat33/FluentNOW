@@ -85,7 +85,7 @@ private struct VocabSessionContent: View {
                         .fixedSize(horizontal: false, vertical: true)
                 }
             } else {
-                StudySessionHeader(title: "Twój mały krok", index: session.index, total: session.tasks.count)
+                StudySessionHeader(title: model.headerTitle, index: session.index, total: session.tasks.count)
                 if let exercise = model.exercise {
                     VocabExerciseView(
                         model: exercise,

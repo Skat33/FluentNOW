@@ -85,6 +85,11 @@ targets:
           - CFBundleURLName: pl.fluentnow.app
             CFBundleURLSchemes:
               - fluentnow
+        # Logowanie Google bez SDK (FEEDBACK-5 J3): identyfikator klienta iOS z ustawienia
+        # FLUENT_GOOGLE_CLIENT_ID niżej. Puste = przycisk Google pokazuje „dostępne po konfiguracji”.
+        # Przekierowanie OAuth (com.googleusercontent.apps.<id>:/oauth2redirect) przechwytuje
+        # ASWebAuthenticationSession — schematu nie trzeba rejestrować w CFBundleURLTypes.
+        FluentGoogleClientID: $(FLUENT_GOOGLE_CLIENT_ID)
     entitlements:
       path: FluentNOW/FluentNOW.entitlements
       properties:
@@ -93,10 +98,16 @@ targets:
           - iCloud.pl.fluentnow.app
         com.apple.developer.icloud-services:
           - CloudKit
+        # Zaloguj przez Apple (FEEDBACK-5 J3) — wymaga płatnego konta deweloperskiego (README).
+        com.apple.developer.applesignin:
+          - Default
     settings:
       base:
         PRODUCT_NAME: FluentNOW
         PRODUCT_BUNDLE_IDENTIFIER: pl.fluentnow.app
+        # Identyfikator klienta OAuth typu iOS z Google Cloud Console, np.
+        # 1234567890-abcdef.apps.googleusercontent.com (README → „Logowanie Google”).
+        FLUENT_GOOGLE_CLIENT_ID: ""
         TARGETED_DEVICE_FAMILY: "1,2"
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: FluentNOW

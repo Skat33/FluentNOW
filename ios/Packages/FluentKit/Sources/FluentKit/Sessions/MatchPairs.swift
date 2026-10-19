@@ -56,16 +56,24 @@ public enum MatchPairsExercise {
     public static let pairCount = 5
     /// A board with fewer pairs (words deleted meanwhile) falls back to the meaning exercise.
     public static let minimumPairs = 3
-    /// A meaning joins a board after this many correct recognition answers („a few correct
-    /// contacts”) — never at the first contact.
-    public static let minimumRecognitionCorrect = 2
+    /// A meaning joins a regular board after this many correct recognition answers. FEEDBACK-5 J1:
+    /// the board is a recognition task, so it starts right after the first correct recognition
+    /// (it was two before — new users waited days for it). The first contact itself never joins a
+    /// regular board; a session of new words ends with an introduction board instead
+    /// (`SessionBuilder.introductionBoard`).
+    public static let minimumRecognitionCorrect = 1
 
     // MARK: Building
 
-    /// `true` for a meaning that may join a board.
+    /// `true` for a meaning that may join a regular board.
     public static func isEligible(_ item: WordMeaning) -> Bool {
         guard (item.meaning.scores[.recognition]?.correct ?? 0) >= minimumRecognitionCorrect else { return false }
-        return !termKey(item.word.en).isEmpty && !translationKey(item.meaning.translation).isEmpty
+        return canJoinBoard(item)
+    }
+
+    /// `true` when the meaning can be shown on a board at all (a term and a Polish translation).
+    public static func canJoinBoard(_ item: WordMeaning) -> Bool {
+        !termKey(item.word.en).isEmpty && !translationKey(item.meaning.translation).isEmpty
     }
 
     /// Two meanings can share a board: different words, terms and Polish translations (no pair
@@ -81,19 +89,55 @@ public enum MatchPairsExercise {
         return polishA != termKey(b.word.en) && polishB != termKey(a.word.en)
     }
 
-    /// Indices (in `tasks`) of up to `pairCount` „Wybierz znaczenie” tasks whose meanings make a
-    /// board; `nil` when fewer than `pairCount` qualify. `items` maps meaning IDs to the meanings.
+    /// Indices (in `tasks`) of `pairCount` tasks whose meanings make a board; `nil` when fewer
+    /// qualify. `items` maps meaning IDs to the meanings. „Wybierz znaczenie” tasks are taken
+    /// first (the board replaces them — same skill); FEEDBACK-5 J1: when there are not enough of
+    /// them, meanings practiced in this session in another skill (recall, usage, listening) fill
+    /// the board — their own tasks stay, so no meaning gets two recognition reviews.
     static func groupIndices(tasks: [VocabTask], items: [String: WordMeaning]) -> [Int]? {
         var chosen: [Int] = []
         var members: [WordMeaning] = []
+        for pass in 0..<2 {
+            for (index, task) in tasks.enumerated() {
+                let fits = pass == 0 ? task.type == .meaning : task.type.skill != .recognition
+                guard fits, !chosen.contains(index), let item = items[task.meaningId], isEligible(item),
+                      members.allSatisfy({ (other: WordMeaning) -> Bool in areDistinct(other, item) }) else { continue }
+                chosen.append(index)
+                members.append(item)
+                if chosen.count == pairCount { return chosen }
+            }
+        }
+        return nil
+    }
+
+    /// Indices of up to `pairCount` „Wybierz znaczenie” tasks of meanings met for the first time in
+    /// this session (FEEDBACK-5 J1 introduction board); `nil` when fewer than `minimumPairs`.
+    static func introductionIndices(tasks: [VocabTask], items: [String: WordMeaning]) -> [Int]? {
+        var chosen: [Int] = []
+        var members: [WordMeaning] = []
         for (index, task) in tasks.enumerated() where task.type == .meaning {
-            guard let item = items[task.meaningId], isEligible(item),
+            guard let item = items[task.meaningId], SessionBuilder.isFirstContact(item.meaning), canJoinBoard(item),
                   members.allSatisfy({ (other: WordMeaning) -> Bool in areDistinct(other, item) }) else { continue }
             chosen.append(index)
             members.append(item)
-            if chosen.count == pairCount { return chosen }
+            if chosen.count == pairCount { break }
         }
-        return nil
+        return chosen.count >= minimumPairs ? chosen : nil
+    }
+
+    /// One board task: the first member is the anchor, the others its partners.
+    static func boardTask(_ members: [VocabTask]) -> VocabTask? {
+        guard let anchor = members.first else { return nil }
+        let partners = members.dropFirst().map { (task: VocabTask) -> VocabTaskRef in
+            VocabTaskRef(wordId: task.wordId, meaningId: task.meaningId)
+        }
+        return VocabTask(
+            wordId: anchor.wordId,
+            meaningId: anchor.meaningId,
+            type: .matchPairs,
+            example: anchor.example,
+            partners: Array(partners)
+        )
     }
 
     /// The pairs of a task that still exist (deleted words are skipped; a later meaning that now

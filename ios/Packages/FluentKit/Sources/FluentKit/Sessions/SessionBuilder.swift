@@ -6,19 +6,35 @@ public enum SessionBuilder {
     public static let durations = [5, 10, 15]
 
     /// Exercise types allowed by the progression of a meaning, or `nil` when every session type is
-    /// allowed: the meaning exercise first (G3 — flashcards are no longer drawn into sessions; the
-    /// first contact shows the four Polish options straight away), then recall, cloze and
-    /// dictation as skills get practiced. FEEDBACK-4 I2: the scramble („Ułóż zdanie”) joins cloze
-    /// and the listening choice joins dictation — both only after a few correct contacts (two
-    /// correct recognitions and a recall answer). „Dopasuj pary” is built from finished meaning
-    /// tasks (`MatchPairsExercise`); the picture exercise is added by `chooseType` wherever the
-    /// meaning exercise is allowed after the first contact (only while `PictureExercise.isEnabled`).
+    /// allowed. Stages:
+    /// 1. first contact (no recognition answer yet) and until the first correct one → the meaning
+    ///    exercise (G3: the first contact shows the four Polish options straight away);
+    /// 2. FEEDBACK-5 J1 — right after the first correct recognition: the recognition-style new
+    ///    exercises „Zrozum ze słuchu” and „Ułóż zdanie” (the sentence is built from tiles, with
+    ///    the translation on demand) next to „Wybierz znaczenie”; „Dopasuj pary” joins through the
+    ///    board built from the session (`MatchPairsExercise.minimumRecognitionCorrect == 1`);
+    /// 3. from the second correct recognition until the first recall answer: recall joins;
+    /// 4. recall answered, usage not yet: cloze, scramble, recall, listening;
+    /// 5. usage answered, listening not yet: listening choice, dictation, meaning;
+    /// 6. `nil` — every type, the earliest-due skill first.
+    /// A correct recall (e.g. from imported progress) also unlocks the scramble before the first
+    /// correct recognition. Before J1 the new types needed two correct recognitions (separate days
+    /// with FSRS) and a recall answer, the listening choice even a usage answer. `.meaning` stays
+    /// last in stages 2–3: a constant generator in tests picks it (boards are built from it).
+    /// Types that cannot be built for the drawn sentence are filtered out by `chooseType`.
     public static func allowedTaskTypes(_ meaning: Meaning) -> [ExerciseType]? {
         let scores = meaning.scores
-        if scores[.recognition] == nil { return [.meaning] }
-        if (scores[.recognition]?.correct ?? 0) < 2 { return [.meaning] }
-        if scores[.recall] == nil { return [.recall, .meaning] }
-        if scores[.usage] == nil { return [.cloze, .scramble, .recall] }
+        guard let recognition = scores[.recognition] else { return [.meaning] }
+        let recognized = recognition.correct >= MatchPairsExercise.minimumRecognitionCorrect
+        if !recognized {
+            let recalled = (scores[.recall]?.correct ?? 0) >= 1
+            return recalled ? [.scramble, .meaning] : [.meaning]
+        }
+        if scores[.recall] == nil {
+            if recognition.correct < 2 { return [.listeningChoice, .scramble, .meaning] }
+            return [.recall, .listeningChoice, .scramble, .meaning]
+        }
+        if scores[.usage] == nil { return [.cloze, .scramble, .recall, .listeningChoice] }
         if scores[.listening] == nil { return [.listeningChoice, .dictation, .meaning] }
         return nil
     }
@@ -30,13 +46,18 @@ public enum SessionBuilder {
     }
 
     /// Format of a failed task when it returns at the end of the session: the usual rotation
-    /// (`ExerciseType.retryType`) while the meaning's progression allows it, otherwise another
-    /// allowed type (a new word that failed its first meaning exercise gets the meaning exercise
-    /// again with another sentence, not a dictation).
+    /// (`ExerciseType.retryType`) while the meaning's progression allows it; otherwise another
+    /// allowed type of the same skill, then the same exercise again (another sentence — a new word
+    /// that failed its first meaning exercise gets the meaning exercise again, not a dictation;
+    /// J1: a failed recognition in stage 2 is not retried as listening), then any allowed type.
     public static func retryType(after type: ExerciseType, meaning: Meaning) -> ExerciseType {
         let rotated = type.retryType
         guard let allowed = allowedTaskTypes(meaning), !allowed.isEmpty else { return rotated }
         if allowed.contains(rotated) { return rotated }
+        if let sameSkill = allowed.first(where: { (candidate: ExerciseType) -> Bool in candidate != type && candidate.skill == type.skill }) {
+            return sameSkill
+        }
+        if allowed.contains(type) { return type }
         return allowed.first(where: { $0 != type }) ?? allowed[0]
     }
 
@@ -61,11 +82,21 @@ public enum SessionBuilder {
     static func chooseType<G: RandomNumberGenerator>(word: Word, meaning: Meaning, exampleIndex: Int, pictureReady: Bool = false, listeningReady: Bool = false, using rng: inout G) -> ExerciseType {
         let photos = pictureReady && PictureExercise.isEnabled
         var type: ExerciseType
-        if var progression = allowedTaskTypes(meaning), !progression.isEmpty {
-            if photos && !isFirstContact(meaning) && progression.contains(.meaning) {
-                progression.append(.picture)
+        if let progression = allowedTaskTypes(meaning), !progression.isEmpty {
+            // J1: types that cannot be built for this sentence are not drawn at all (otherwise a
+            // word met once could get a dictation in place of the listening choice).
+            var drawable = progression.filter { (candidate: ExerciseType) -> Bool in
+                switch candidate {
+                case .scramble: return SentenceScramble.canBuild(meaning: meaning, exampleIndex: exampleIndex)
+                case .listeningChoice: return listeningReady && ListeningChoice.canBuild(meaning: meaning, exampleIndex: exampleIndex)
+                default: return true
+                }
             }
-            type = progression[rng.nextIndex(below: progression.count)]
+            if drawable.isEmpty { drawable = progression }
+            if photos && !isFirstContact(meaning) && drawable.contains(.meaning) {
+                drawable.append(.picture)
+            }
+            type = drawable[rng.nextIndex(below: drawable.count)]
         } else {
             // Earliest-due skill first; ties broken randomly (valid ordering via pre-drawn keys).
             let scrambleReady = SentenceScramble.canBuild(meaning: meaning, exampleIndex: exampleIndex)
@@ -200,11 +231,22 @@ public enum SessionBuilder {
             chosenItems[item.meaning.id] = item
             budget -= type.estimatedSeconds
         }
+        var boardAdded = false
         if mode == .mixed || mode == .mistakes {
-            addPairsBoard(to: &tasks, budget: &budget, items: chosenItems, overflow: overflow)
+            boardAdded = addPairsBoard(to: &tasks, budget: &budget, items: chosenItems, overflow: overflow)
+        }
+        // J1: a session of only new words would be nothing but „Wybierz znaczenie” — it ends with
+        // „Dopasuj pary” of the meanings it has just introduced (after them, never interleaved).
+        var introduction: VocabTask?
+        if mode == .mixed && !boardAdded {
+            introduction = introductionBoard(tasks: &tasks, budget: &budget, items: chosenItems)
+        }
+        var sessionTasks = TaskInterleaver.interleave(tasks)
+        if let introduction {
+            sessionTasks.append(introduction)
         }
         return VocabSession(
-            tasks: TaskInterleaver.interleave(tasks),
+            tasks: sessionTasks,
             index: 0,
             correct: 0,
             minutes: safeMinutes,
@@ -212,33 +254,33 @@ public enum SessionBuilder {
         )
     }
 
-    /// „Dopasuj pary” (FEEDBACK-4 I2): five „Wybierz znaczenie” tasks of practiced meanings (at
-    /// least two correct recognitions, different terms and translations — `MatchPairsExercise`)
-    /// become one board in the middle of the session. Recognition is then scored once per meaning
-    /// (no meaning gets two recognition reviews in one session). The board is shorter than the
-    /// five tasks, so the time freed is refilled with tasks that did not fit the budget.
-    static func addPairsBoard(to tasks: inout [VocabTask], budget: inout Int, items: [String: WordMeaning], overflow: [VocabTask]) {
+    /// „Dopasuj pary” (FEEDBACK-4 I2): five practiced meanings (at least one correct recognition
+    /// since FEEDBACK-5 J1, different terms and translations — `MatchPairsExercise`) become one
+    /// board in the middle of the session. Their „Wybierz znaczenie” tasks are replaced (recognition
+    /// is scored once per meaning — no meaning gets two recognition reviews in one session); when
+    /// there are fewer than five of them, meanings practiced here in another skill fill the board
+    /// and keep their own tasks (J1 — the board shows up in most sessions with practiced words).
+    /// When the board does not fit the budget, the lowest-priority tasks (end of the list, not on
+    /// the board) make room; time freed is refilled with tasks that did not fit. `false` — no board.
+    @discardableResult
+    static func addPairsBoard(to tasks: inout [VocabTask], budget: inout Int, items: [String: WordMeaning], overflow: [VocabTask]) -> Bool {
         let current = tasks
-        guard let indices = MatchPairsExercise.groupIndices(tasks: current, items: items) else { return }
+        guard let indices = MatchPairsExercise.groupIndices(tasks: current, items: items) else { return false }
         let members = indices.compactMap { (index: Int) -> VocabTask? in current[safe: index] }
-        guard members.count == MatchPairsExercise.pairCount, let anchor = members.first else { return }
-        let partners = members.dropFirst().map { (task: VocabTask) -> VocabTaskRef in
-            VocabTaskRef(wordId: task.wordId, meaningId: task.meaningId)
-        }
-        let board = VocabTask(
-            wordId: anchor.wordId,
-            meaningId: anchor.meaningId,
-            type: .matchPairs,
-            example: anchor.example,
-            partners: Array(partners)
-        )
-        let removed = Set(indices)
+        guard members.count == MatchPairsExercise.pairCount, let board = MatchPairsExercise.boardTask(members) else { return false }
+        let replaced = Set(indices.filter { (index: Int) -> Bool in current[safe: index]?.type.skill == .recognition })
         var kept: [VocabTask] = []
-        for (index, task) in current.enumerated() where !removed.contains(index) {
-            kept.append(task)
+        var freed = 0
+        for (index, task) in current.enumerated() {
+            if replaced.contains(index) {
+                freed += task.type.estimatedSeconds
+            } else {
+                kept.append(task)
+            }
         }
-        let freed = members.reduce(0) { (sum: Int, task: VocabTask) -> Int in sum + task.type.estimatedSeconds }
         var left = budget + freed - ExerciseType.matchPairs.estimatedSeconds
+        let memberIDs = Set(members.map { (task: VocabTask) -> String in task.meaningId })
+        guard makeRoom(in: &kept, left: &left, keeping: memberIDs) else { return false }
         kept.insert(board, at: kept.count / 2)
         for task in overflow {
             let cost = task.type.estimatedSeconds
@@ -249,6 +291,42 @@ public enum SessionBuilder {
         }
         budget = left
         tasks = kept
+        return true
+    }
+
+    /// J1 introduction board: up to five „Wybierz znaczenie” tasks of meanings met for the first
+    /// time in this session (at least `MatchPairsExercise.minimumPairs`) — their tasks stay, the
+    /// board comes after all of them as a quick consolidation. Room is made by dropping the
+    /// lowest-priority tasks that are not on the board; `nil` when nothing qualifies or fits.
+    static func introductionBoard(tasks: inout [VocabTask], budget: inout Int, items: [String: WordMeaning]) -> VocabTask? {
+        let current = tasks
+        guard let indices = MatchPairsExercise.introductionIndices(tasks: current, items: items) else { return nil }
+        let members = indices.compactMap { (index: Int) -> VocabTask? in current[safe: index] }
+        guard members.count >= MatchPairsExercise.minimumPairs, let board = MatchPairsExercise.boardTask(members) else { return nil }
+        var kept = current
+        var left = budget - ExerciseType.matchPairs.estimatedSeconds
+        let memberIDs = Set(members.map { (task: VocabTask) -> String in task.meaningId })
+        guard makeRoom(in: &kept, left: &left, keeping: memberIDs) else { return nil }
+        budget = left
+        tasks = kept
+        return board
+    }
+
+    /// Drops tasks from the end of the list (lowest priority) that are not on a board until
+    /// `left` is not negative. `false` (and nothing changed) when that is impossible.
+    private static func makeRoom(in tasks: inout [VocabTask], left: inout Int, keeping memberIDs: Set<String>) -> Bool {
+        var trimmed = tasks
+        var remaining = left
+        while remaining < 0 {
+            guard let index = trimmed.lastIndex(where: { (task: VocabTask) -> Bool in !memberIDs.contains(task.meaningId) }) else {
+                return false
+            }
+            remaining += trimmed[index].type.estimatedSeconds
+            trimmed.remove(at: index)
+        }
+        tasks = trimmed
+        left = remaining
+        return true
     }
 
     /// „Słowa i obrazki” (FEEDBACK-3 H2): only „Słowo i zdjęcie” tasks, for meanings in
