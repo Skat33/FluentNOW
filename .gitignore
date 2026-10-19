@@ -31,3 +31,7 @@ node_modules/
 # Archiwa lokalne
 *.rar
 *.zip
+
+# Generowane przez XcodeGen z ios/project.yml (info/entitlements) — nie śledzić, inaczej git pull na Macu się blokuje
+ios/FluentNOW/Info.plist
+ios/FluentNOW/FluentNOW.entitlements
