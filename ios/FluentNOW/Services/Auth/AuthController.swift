@@ -156,7 +156,7 @@ final class AuthController {
             return message(for: AppleSignIn.mapError(error))
         case .success(let authorization):
             guard let identity = AppleSignIn.identity(from: authorization) else {
-                return message(for: .appleFailed("Nieobsługiwany rodzaj poświadczenia."))
+                return message(for: AuthError.appleFailed("Nieobsługiwany rodzaj poświadczenia."))
             }
             return await perform { [service] in
                 try await service.signInWithApple(identity)
@@ -169,9 +169,9 @@ final class AuthController {
     /// Logowanie Google w przeglądarce systemowej (SwiftUI `WebAuthenticationSession`, czyli
     /// `ASWebAuthenticationSession`, sesja efemeryczna). Zwraca komunikat błędu albo `nil`.
     func signInWithGoogle(using webSession: WebAuthenticationSession) async -> String? {
-        guard google.isConfigured else { return message(for: .googleNotConfigured) }
+        guard google.isConfigured else { return message(for: AuthError.googleNotConfigured) }
         guard let request = GoogleOAuth.makeRequest(configuration: google) else {
-            return message(for: .googleFailed("Nie udało się przygotować żądania."))
+            return message(for: AuthError.googleFailed("Nie udało się przygotować żądania."))
         }
         isWorking = true
         defer { isWorking = false }
@@ -224,7 +224,7 @@ final class AuthController {
     }
 
     func register(email: String, password: String, confirmation: String, displayName: String?, replaceExisting: Bool = false) async -> String? {
-        guard password == confirmation else { return message(for: .passwordMismatch) }
+        guard password == confirmation else { return message(for: AuthError.passwordMismatch) }
         return await perform { [service] in
             try await service.register(email: email, password: password, displayName: displayName, replaceExisting: replaceExisting)
         }
@@ -253,7 +253,7 @@ final class AuthController {
 
     /// Usuwa konto (dane nauki usuwa osobno wywołujący, jeśli użytkownik tego chce).
     func deleteAccount() async -> String? {
-        guard let session else { return message(for: .notSignedIn) }
+        guard let session else { return message(for: AuthError.notSignedIn) }
         isWorking = true
         defer { isWorking = false }
         do {
