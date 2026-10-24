@@ -1,46 +1,43 @@
 import Foundation
 import FluentKit
 
-/// Uruchamianie sesji z ekranu Nauka (logika strony `start()` / `makeCombinedSession`).
+/// Uruchamianie sesji z ekranu Nauka (logika strony `start()`).
 /// Ciężkie budowanie sesji liczone na migawce stanu poza głównym wątkiem (`store.compute`),
 /// zapis jednym `store.update(.session)`.
+///
+/// FEEDBACK-6 K1: ekran Nauka nie łączy już kilku trybów w jednej sesji (sekcja „Ile masz
+/// czasu?” zniknęła). Każda prośba uruchamia jeden tryb; przerwana sesja łączona nadal wznawia się
+/// z Dzisiaj („Wznów sesję”), bo kod `CombinedSessionView` zostaje.
 @MainActor
 enum StudyStarter {
     enum Outcome {
         /// Gotowe — pokaż ekran sesji.
         case flow(StudyFlow)
-        /// Sesja łączona, w której część trybów nie ma zadań — pokaż podsumowanie przed startem.
-        case combinedDraft(CombinedSession)
         /// Nie da się rozpocząć — spokojny komunikat dla użytkownika.
         case message(String)
     }
 
-    static func start(
-        modes: [StudyMode],
-        minutes: Int,
-        random: Bool,
-        collection: String?,
-        store: LearningStore,
-        content: ContentLibrary,
-        images: WordImageService? = nil
-    ) async -> Outcome {
+    /// Jeden tryb (`StudyMode`): fiszki, słownictwo (codzienna mieszanka, pomyłki, pary, zdjęcia),
+    /// czytanie, gramatyka / idiomy / miks, produkcja.
+    static func startMode(_ mode: StudyMode, minutes: Int, collection: String?, store: LearningStore, images: WordImageService? = nil) async -> Outcome {
         // Zdjęcia na kolejne sesje dociągają się w tle już teraz (H2) — nigdy nie czekamy na nie.
         requestPhotos(store: store, images: images)
-        var unique: [StudyMode] = []
-        for mode in modes where !unique.contains(mode) {
-            unique.append(mode)
-        }
-        // Fiszki to osobny tryb (G3) — nigdy nie łączymy ich z innymi.
-        if unique.contains(.flashcards) {
+        if mode == .flashcards {
             return .flow(.flashcards(collection: collection))
         }
-        guard let first = unique.first else {
-            return .message("Zaznacz jeden lub kilka rodzajów ćwiczeń.")
+        if mode.isVocabulary {
+            return await startVocabulary(mode: mode, minutes: minutes, collection: collection, store: store, images: images)
         }
-        if unique.count == 1 {
-            return await startSingle(first, minutes: minutes, collection: collection, store: store, images: images)
+        if mode == .reading {
+            return .flow(.reading(autoStart: true))
         }
-        return await startCombined(unique, minutes: minutes, random: random, store: store, content: content, images: images)
+        if mode == .production {
+            return .flow(.production(autoStart: true))
+        }
+        if let kind = mode.studyPracticeKind {
+            return .flow(.practice(kind, autoStart: true))
+        }
+        return .message("Ten rodzaj ćwiczeń nie jest jeszcze dostępny.")
     }
 
     /// Nowa sesja słownictwa (`makeSession`) zapisana w `state.session`.
@@ -69,10 +66,14 @@ enum StudyStarter {
 
     /// „Ćwicz wybrany typ” (FEEDBACK-5 J1): krótka sesja tylko z jednym typem ćwiczenia
     /// (`SingleTypeSession`) zapisana w `state.session` — wznawia się i liczy jak zwykła sesja.
-    static func startSingleType(_ type: ExerciseType, minutes: Int, collection: String?, store: LearningStore) async -> Outcome {
+    /// `fresh` (FEEDBACK-6 K1, „Zacznij od nowa”): zastępuje przerwaną sesję nową, z innymi
+    /// zdaniami niż w przerwanej (`FreshStart.singleTypeSession`).
+    static func startSingleType(_ type: ExerciseType, minutes: Int, collection: String?, store: LearningStore, fresh: Bool = false) async -> Outcome {
         let now = store.now()
         let session = await store.compute { (state: LearnerState) -> VocabSession in
-            SingleTypeSession.makeSession(state: state, type: type, minutes: minutes, collection: collection, now: now)
+            fresh
+                ? FreshStart.singleTypeSession(state: state, type: type, minutes: minutes, collection: collection, now: now)
+                : SingleTypeSession.makeSession(state: state, type: type, minutes: minutes, collection: collection, now: now)
         }
         guard !session.tasks.isEmpty else {
             return .message(StudySingleTypeText.emptyMessage(type: type, hasWords: !store.activeWords.isEmpty, collection: collection))
@@ -83,10 +84,52 @@ enum StudyStarter {
         return .flow(.vocabulary)
     }
 
-    /// Zatwierdza szkic sesji łączonej (po potwierdzeniu w arkuszu).
-    static func commitCombined(_ draft: CombinedSession, store: LearningStore) {
-        store.update(.session) { state in
-            state.combined = draft
+    /// „Zacznij od nowa” dla czytania, gramatyki / idiomów / miksu i produkcji (K1): nowy tekst
+    /// lub zestaw w miejsce przerwanego (inne zadania — `FreshStart`), potem ekran zajęcia.
+    static func restartBank(_ activity: StudyActivity, store: LearningStore, content: ContentLibrary) async -> Outcome {
+        let loaded: PracticeContentLoader.Loaded
+        do {
+            loaded = try await PracticeContentLoader.load(store: store, library: content)
+        } catch {
+            return .message(PracticeContentLoader.errorMessage(error))
+        }
+        let now = store.now()
+        switch activity {
+        case .reading:
+            let started = store.update(.session) { (state: inout LearnerState) -> Bool in
+                let previous = state.reading?.reading.id
+                let next = FreshStart.restartReading(state, bank: loaded.content.readings, now: now)
+                guard let reading = next.reading, !reading.submitted, reading.reading.id != previous else { return false }
+                state = next
+                return true
+            }
+            return started
+                ? .flow(.reading(autoStart: false))
+                : .message("Nie mamy teraz innej czytanki na Twoim poziomie. Możesz dokończyć przerwaną.")
+        case .practice(let kind):
+            let started = store.update(.session) { (state: inout LearnerState) -> Bool in
+                let next = FreshStart.restartPractice(state, kind: kind, level: loaded.level, content: loaded.content, now: now)
+                guard let practice = next.practice, practice.set.kind == kind, practice.completedAt == nil,
+                      practice.set.id != state.practice?.set.id else { return false }
+                state = next
+                return true
+            }
+            return started
+                ? .flow(.practice(kind, autoStart: false))
+                : .message("Na poziomie \(loaded.level) nie ma jeszcze zadań tego rodzaju.")
+        case .production:
+            let started = store.update(.session) { (state: inout LearnerState) -> Bool in
+                let next = FreshStart.restartProduction(state, level: loaded.level, content: loaded.content, now: now)
+                guard let production = next.production, production.completedAt == nil,
+                      production.id != state.production?.id else { return false }
+                state = next
+                return true
+            }
+            return started
+                ? .flow(.production(autoStart: false))
+                : .message("Na poziomie \(loaded.level) nie ma jeszcze zadań produkcji.")
+        case .singleType, .flashcards:
+            return .message("Ten rodzaj ćwiczeń zaczyna się od nowa na swoim ekranie.")
         }
     }
 
@@ -127,76 +170,6 @@ enum StudyStarter {
         // „W budowie” (I2): bez zdjęć w sesjach (FluentKit i tak ich nie losuje).
         guard let images, PictureExercise.isEnabled else { return [] }
         return await images.cachedMeaningIDs()
-    }
-
-    private static func startSingle(_ mode: StudyMode, minutes: Int, collection: String?, store: LearningStore, images: WordImageService?) async -> Outcome {
-        if mode == .flashcards {
-            return .flow(.flashcards(collection: collection))
-        }
-        if mode.isVocabulary {
-            return await startVocabulary(mode: mode, minutes: minutes, collection: collection, store: store, images: images)
-        }
-        if mode == .reading {
-            return .flow(.reading(autoStart: true))
-        }
-        if mode == .production {
-            return .flow(.production(autoStart: true))
-        }
-        if let kind = mode.studyPracticeKind {
-            return .flow(.practice(kind, autoStart: true))
-        }
-        return .message("Ten rodzaj ćwiczeń nie jest jeszcze dostępny.")
-    }
-
-    private static func startCombined(
-        _ modes: [StudyMode],
-        minutes: Int,
-        random: Bool,
-        store: LearningStore,
-        content: ContentLibrary,
-        images: WordImageService?
-    ) async -> Outcome {
-        let needsBanks = modes.contains { !$0.isVocabulary }
-        var practice = PracticeContent.empty
-        var contentProblem = false
-        if needsBanks {
-            let level = await store.compute { state in
-                LevelEstimator.estimatedLevel(state).targetLevel
-            }
-            do {
-                practice = try await content.practiceContent(level: level)
-            } catch {
-                contentProblem = true
-            }
-        }
-        let now = store.now()
-        let banks = practice
-        let cached = await cachedPictureIDs(images)
-        let draft = await store.compute { (state: LearnerState) -> CombinedSession in
-            var rng = SystemRandomNumberGenerator()
-            let ready = PictureExercise.readyMeaningIDs(state: state, cached: cached)
-            return CombinedSessionBuilder.makeSession(
-                state: state,
-                modes: modes,
-                minutes: minutes,
-                random: random,
-                content: banks,
-                now: now,
-                pictureMeaningIDs: ready,
-                using: &rng
-            )
-        }
-        guard !draft.tasks.isEmpty else {
-            return .message(contentProblem
-                ? "Nie udało się wczytać zadań z banku. Spróbuj ponownie za chwilę — Twoje dane są bezpieczne."
-                : "Wybrane ćwiczenia nie mają jeszcze gotowych zadań.")
-        }
-        let skipped = modes.contains { mode in !draft.tasks.contains { $0.mode == mode } }
-        if skipped {
-            return .combinedDraft(draft)
-        }
-        commitCombined(draft, store: store)
-        return .flow(.combined)
     }
 
     private static func emptyVocabularyMessage(mode: StudyMode, collection: String?, hasWords: Bool) -> String {

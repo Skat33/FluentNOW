@@ -1,30 +1,29 @@
 import SwiftUI
 import FluentKit
 
-/// Ekran „Na co masz dziś ochotę?” — wybór trybów i czasu, wznowienie przerwanych sesji,
-/// historia. Sesja otwiera się jako pełny ekran (`StudyFlowView`).
+/// Ekran Nauka (FEEDBACK-6 K1): od góry **Fiszki**, **Ćwiczenia** (kafelki pojedynczych typów),
+/// **Test** (`StudyTestCard`, agent test-mode), niżej czytanie i gramatyka oraz historia.
+/// Bez sekcji „Ile masz czasu?” (łączenia trybów i losowania) i bez kart „Kontynuuj”: postęp
+/// przerwanej sesji zapisuje się w tle, a dotknięcie kafelka z przerwaną sesją pokazuje wybór
+/// „Kontynuuj, gdzie skończyłem” / „Zacznij od nowa”. Sesja otwiera się jako pełny ekran
+/// (`StudyFlowView`).
 struct StudyHomeView: View {
     @Environment(LearningStore.self) private var store
     @Environment(AppEnvironment.self) private var env
     @Environment(AppRouter.self) private var router
 
-    @AppStorage("study.minutes") private var storedMinutes = 10
-    @AppStorage("study.modes") private var storedModes = StudyMode.mixed.rawValue
-    @AppStorage("study.random") private var random = false
-    /// `updatedAt` profilu nauki (G4), którego domyślne tryby i czas już zastosowano — po edycji
-    /// profilu domyślne wartości wracają, a między edycjami zostaje wybór użytkownika.
-    @AppStorage("study.profileApplied") private var profileApplied: Double = 0
-
     @State private var collection: String?
-    @State private var isStarting = false
     @State private var notice: String?
-    @State private var estimate = ""
     @State private var activeFlow: StudyFlow?
-    @State private var combinedDraft: CombinedSession?
-    @State private var flowAfterSheet: StudyFlow?
     @State private var deckCounts: FlashcardDeckCounts?
+    @State private var pausedDeck: FlashcardPausedDeck?
     @State private var picturesSnapshot: StudyPicturesSnapshot?
-    /// „Ćwicz wybrany typ” (J1): długość (5 / 10 min, pamiętana), uruchamiany typ, komunikat przy kafelkach.
+    @State private var resumePrompt: StudyResumePrompt?
+    /// Prośba z routera (codzienna mieszanka, pomyłki, pary…) w przygotowaniu.
+    @State private var isStarting = false
+    /// Zajęcie z „Czytanie i gramatyka”, którego nowy zestaw się przygotowuje („Zacznij od nowa”).
+    @State private var startingActivity: StudyActivity?
+    /// „Ćwiczenia” (J1): długość (5 / 10 min, pamiętana), uruchamiany typ, komunikat przy kafelkach.
     @AppStorage("study.singleTypeMinutes") private var singleTypeMinutes = 5
     @State private var startingType: ExerciseType?
     @State private var typeNotice: String?
@@ -52,31 +51,26 @@ struct StudyHomeView: View {
         }
         .background(Palette.background)
         .navigationTitle("Nauka")
-        .navigationDestination(for: StudyRoute.self) { route in
+        .navigationDestination(for: StudyRoute.self) { (route: StudyRoute) in
             switch route {
             case .history:
                 StudyHistoryScreen()
             }
         }
-        .fullScreenCover(item: $activeFlow) { flow in
+        .fullScreenCover(item: $activeFlow, onDismiss: refreshPausedDeck) { (flow: StudyFlow) in
             StudyFlowView(flow: flow)
         }
-        .sheet(item: $combinedDraft, onDismiss: presentFlowAfterSheet) { draft in
-            StudyCombinedDraftSheet(draft: draft) {
-                StudyStarter.commitCombined(draft, store: store)
-                flowAfterSheet = .combined
-                combinedDraft = nil
-            }
-        }
-        .onChange(of: router.pendingStudyLaunch, initial: true) { _, request in
+        .modifier(StudyResumeDialog(
+            prompt: $resumePrompt,
+            onContinue: { (activity: StudyActivity) -> Void in resume(activity) },
+            onRestart: { (activity: StudyActivity) -> Void in restart(activity) }
+        ))
+        .onChange(of: router.pendingStudyLaunch, initial: true) { (_: StudyLaunchRequest?, request: StudyLaunchRequest?) in
             guard request != nil else { return }
             consumeLaunchIfReady()
         }
-        .onChange(of: store.loadPhase) { _, _ in
+        .onChange(of: store.loadPhase) { (_: StoreLoadPhase, _: StoreLoadPhase) in
             consumeLaunchIfReady()
-        }
-        .task(id: estimateKey) {
-            await updateEstimate()
         }
         .task(id: deckKey) {
             await updateDeckCounts()
@@ -88,98 +82,180 @@ struct StudyHomeView: View {
         .task(id: picturesKey) {
             await updatePicturesSnapshot()
         }
-        .onChange(of: store.settings.profile?.updatedAt, initial: true) { (_: Double?, _: Double?) in
-            applyProfileDefaults()
-        }
-    }
-
-    /// Domyślne tryby i czas z profilu nauki (G4, `LearnerProfile.dailyMixModes` / `sessionMinutes`).
-    private func applyProfileDefaults() {
-        guard let profile = store.settings.profile, profile.updatedAt > profileApplied else { return }
-        profileApplied = profile.updatedAt
-        let minutes = profile.sessionMinutes
-        if StudyLaunchRequest.allowedMinutes.contains(minutes) {
-            storedMinutes = minutes
-        }
-        let modes = profile.dailyMixModes(limit: 3)
-        if !modes.isEmpty {
-            storedModes = modes.map(\.rawValue).joined(separator: ",")
-        }
+        .onAppear(perform: refreshPausedDeck)
     }
 
     @ViewBuilder
     private var loadedContent: some View {
-        let resumeItems = StudyResumeItem.items(in: store.state)
-        ForEach(resumeItems) { item in
-            StudyResumeCard(item: item) {
-                activeFlow = item.flow
-            }
-        }
-        if store.activeWords.isEmpty {
+        let hasWords = !store.activeWords.isEmpty
+        if !hasWords {
             StudyNoWordsCard(
                 onBrowseTopics: { router.presentTopicSearch() },
                 onQuickAdd: { router.presentQuickAdd() }
             )
         }
-        if prefersFlashcards && !store.activeWords.isEmpty {
+        if let collection {
+            TagChip("Kolekcja: \(collection) ✕", systemImage: "folder", isSelected: true) {
+                self.collection = nil
+            }
+            .accessibilityHint(Text("Usuwa ograniczenie do kolekcji"))
+        }
+        if hasWords {
             flashcardsCard
-        }
-        if prefersPictures && !store.activeWords.isEmpty {
-            picturesCard
-        }
-        StudySetupCard(
-            minutes: minutesBinding,
-            selected: modesBinding,
-            random: $random,
-            hasWords: !store.activeWords.isEmpty,
-            collection: collection,
-            estimate: estimate,
-            isStarting: isStarting,
-            onClearCollection: { collection = nil },
-            onStart: { start(modes: modesBinding.wrappedValue) }
-        )
-        if !store.activeWords.isEmpty {
             exerciseTypesCard
         }
-        if !prefersFlashcards && !store.activeWords.isEmpty {
-            flashcardsCard
-        }
-        if !prefersPictures && !store.activeWords.isEmpty {
+        // K4 (agent test-mode): karta testu — widok `StudyTestCard` z `Features/Study/Test/`.
+        StudyTestCard()
+        StudyMoreActivitiesCard(
+            paused: pausedActivities,
+            starting: startingActivity,
+            onOpen: { (activity: StudyActivity) -> Void in open(activity) }
+        )
+        if hasWords && PictureExercise.isEnabled {
             picturesCard
         }
         StudyRecentHistoryCard(state: store.state)
     }
 
-    /// Profil nauki (G4): „Fiszki” wśród ulubionych → karta talii nad wyborem trybów.
-    private var prefersFlashcards: Bool {
-        store.settings.profile?.styles.contains(.flashcards) ?? false
+    // MARK: Karty
+
+    private var flashcardsCard: some View {
+        StudyFlashcardsCard(counts: deckCounts, pausedText: pausedDeck?.positionText) {
+            open(.flashcards)
+        }
     }
 
-    /// Profil nauki (G4): „Obrazki” wśród ulubionych → karta „Słowa i obrazki” nad wyborem trybów.
-    /// Gdy tryb jest „W budowie” (I2), preferencja niczego nie zmienia — karta zostaje na dole.
-    private var prefersPictures: Bool {
-        PictureExercise.isEnabled && (store.settings.profile?.styles.contains(.pictures) ?? false)
-    }
-
-    /// „Ćwicz wybrany typ” (FEEDBACK-5 J1).
+    /// „Ćwiczenia” (FEEDBACK-5 J1): kafelki pojedynczych typów.
     private var exerciseTypesCard: some View {
         StudyExerciseTypesCard(
             minutes: singleTypeMinutesBinding,
             collection: collection,
             startingType: startingType,
             notice: typeNotice,
-            onStart: { (type: ExerciseType) -> Void in startSingleType(type, noticeInline: true) },
+            pausedType: pausedSingleType,
+            onStart: { (type: ExerciseType) -> Void in open(.singleType(type)) },
             onPictures: { () -> Void in openPicturesFromTypes() },
             onDismissNotice: { () -> Void in typeNotice = nil }
+        )
+    }
+
+    private var prefetcher: WordImagePrefetcher {
+        WordImagePrefetcher.shared(store: store, images: env.images)
+    }
+
+    /// „Słowa i obrazki” — tylko po odblokowaniu trybu (I2); „W budowie” pokazuje kafelek w „Ćwiczeniach”.
+    private var picturesCard: some View {
+        StudyPicturesCard(
+            snapshot: picturesSnapshot,
+            status: prefetcher.status,
+            statusText: prefetcher.statusText,
+            isStarting: isStarting,
+            onStart: { startMode(.pictures) }
         )
     }
 
     private var singleTypeMinutesBinding: Binding<Int> {
         Binding(
             get: { SingleTypeSession.durations.contains(singleTypeMinutes) ? singleTypeMinutes : 5 },
-            set: { singleTypeMinutes = $0 }
+            set: { (value: Int) -> Void in singleTypeMinutes = value }
         )
     }
+
+    // MARK: Przerwane sesje
+
+    /// Typ przerwanej sesji jednego typu (znacznik na kafelku).
+    private var pausedSingleType: ExerciseType? {
+        guard let session = store.state.session, !session.isFinished, !session.tasks.isEmpty else { return nil }
+        return SingleTypeSession.type(ofMode: session.mode)
+    }
+
+    /// Zajęcia z „Czytanie i gramatyka” z przerwaną sesją.
+    private var pausedActivities: Set<StudyActivity> {
+        var result: Set<StudyActivity> = []
+        for item in StudyMoreActivity.all where StudyResumePrompt.make(for: item.activity, state: store.state, pausedDeck: nil) != nil {
+            result.insert(item.activity)
+        }
+        return result
+    }
+
+    private func refreshPausedDeck() {
+        pausedDeck = FlashcardPauseStore.load()
+    }
+
+    /// Dotknięcie kafelka: przerwana sesja → okno wyboru; inaczej od razu nowa sesja.
+    private func open(_ activity: StudyActivity) {
+        guard !isStarting, startingType == nil, startingActivity == nil else { return }
+        let paused = FlashcardPauseStore.load()
+        pausedDeck = paused
+        if let prompt = StudyResumePrompt.make(for: activity, state: store.state, pausedDeck: paused) {
+            resumePrompt = prompt
+            return
+        }
+        startNew(activity)
+    }
+
+    /// „Kontynuuj, gdzie skończyłem”.
+    private func resume(_ activity: StudyActivity) {
+        switch activity {
+        case .singleType:
+            activeFlow = .vocabulary
+        case .flashcards:
+            if let paused = FlashcardPauseStore.load() {
+                activeFlow = .resumedFlashcards(paused)
+            } else {
+                activeFlow = .flashcards(collection: collection)
+            }
+        case .reading:
+            activeFlow = .reading(autoStart: false)
+        case .practice(let kind):
+            activeFlow = .practice(kind, autoStart: false)
+        case .production:
+            activeFlow = .production(autoStart: false)
+        }
+    }
+
+    /// „Zacznij od nowa”: nowa sesja z innymi zdaniami / zadaniami; przerwana zostaje porzucona
+    /// (udzielone odpowiedzi są już zapisane).
+    private func restart(_ activity: StudyActivity) {
+        switch activity {
+        case .singleType(let type):
+            startSingleType(type, noticeInline: true, fresh: true)
+        case .flashcards:
+            FlashcardPauseStore.abandon()
+            refreshPausedDeck()
+            activeFlow = .flashcards(collection: collection)
+        case .reading, .practice, .production:
+            restartBank(activity)
+        }
+    }
+
+    /// Nowa sesja zajęcia bez przerwanej.
+    private func startNew(_ activity: StudyActivity) {
+        switch activity {
+        case .singleType(let type):
+            startSingleType(type, noticeInline: true, fresh: false)
+        case .flashcards:
+            activeFlow = .flashcards(collection: collection)
+        case .reading:
+            activeFlow = .reading(autoStart: true)
+        case .practice(let kind):
+            activeFlow = .practice(kind, autoStart: true)
+        case .production:
+            activeFlow = .production(autoStart: true)
+        }
+    }
+
+    private func restartBank(_ activity: StudyActivity) {
+        startingActivity = activity
+        notice = nil
+        Task { @MainActor in
+            let outcome = await StudyStarter.restartBank(activity, store: store, content: env.content)
+            startingActivity = nil
+            show(outcome, noticeInline: false)
+        }
+    }
+
+    // MARK: Start
 
     /// Kafelek „Słowo i zdjęcie”: w budowie — informacja przy kafelkach; po odblokowaniu tryb zdjęć.
     private func openPicturesFromTypes() {
@@ -187,62 +263,143 @@ struct StudyHomeView: View {
             typeNotice = StudyPicturesLockedCard.message
             return
         }
-        start(modes: [.pictures])
+        startMode(.pictures)
     }
 
     /// Sesja jednego typu. `noticeInline` — komunikat przy kafelkach (dotknięcie kafelka);
     /// prośba z routera (deep link) pokazuje go na górze ekranu.
-    private func startSingleType(_ type: ExerciseType, noticeInline: Bool) {
-        // Osobny stan od `isStarting` — przycisk „Rozpocznij sesję” nie pokazuje wtedy ładowania.
-        guard !isStarting, startingType == nil else { return }
+    private func startSingleType(_ type: ExerciseType, noticeInline: Bool, fresh: Bool) {
+        guard !isStarting, startingType == nil, startingActivity == nil else { return }
         startingType = type
         typeNotice = nil
         notice = nil
         let minutes = singleTypeMinutesBinding.wrappedValue
         let limitedTo = collection
         Task { @MainActor in
-            let outcome = await StudyStarter.startSingleType(type, minutes: minutes, collection: limitedTo, store: store)
+            let outcome = await StudyStarter.startSingleType(type, minutes: minutes, collection: limitedTo, store: store, fresh: fresh)
             startingType = nil
-            switch outcome {
-            case .flow(let flow):
-                activeFlow = flow
-            case .combinedDraft(let draft):
-                combinedDraft = draft
-            case .message(let text):
-                if noticeInline {
-                    typeNotice = text
-                } else {
-                    notice = text
-                }
+            show(outcome, noticeInline: noticeInline)
+        }
+    }
+
+    /// Jeden tryb z prośby routera (codzienna mieszanka z Dzisiaj, pomyłki, pary, czytanie…).
+    private func startMode(_ mode: StudyMode, minutes requested: Int? = nil) {
+        guard !isStarting, startingType == nil else { return }
+        let hasWords = !store.activeWords.isEmpty
+        if mode.isVocabulary && !hasWords {
+            notice = "Najpierw dodaj kilka słów lub cały temat — albo wybierz czytanie, gramatykę lub idiomy."
+            return
+        }
+        isStarting = true
+        notice = nil
+        let minutes = sessionMinutes(requested)
+        let limitedTo = collection
+        Task { @MainActor in
+            let outcome = await StudyStarter.startMode(mode, minutes: minutes, collection: limitedTo, store: store, images: env.images)
+            isStarting = false
+            show(outcome, noticeInline: false)
+        }
+    }
+
+    private func show(_ outcome: StudyStarter.Outcome, noticeInline: Bool) {
+        switch outcome {
+        case .flow(let flow):
+            activeFlow = flow
+        case .message(let text):
+            if noticeInline {
+                typeNotice = text
+            } else {
+                notice = text
             }
         }
     }
 
-    private var flashcardsCard: some View {
-        StudyFlashcardsCard(counts: deckCounts) {
-            activeFlow = .flashcards(collection: collection)
+    /// Długość codziennej sesji: z prośby, potem z profilu nauki (G4), domyślnie 10 minut.
+    private func sessionMinutes(_ requested: Int?) -> Int {
+        if let requested, StudyLaunchRequest.allowedMinutes.contains(requested) {
+            return requested
+        }
+        if let minutes = store.settings.profile?.sessionMinutes, StudyLaunchRequest.allowedMinutes.contains(minutes) {
+            return minutes
+        }
+        return 10
+    }
+
+    /// Prośba z routera (Dzisiaj, deep link, przypomnienie) — po wczytaniu danych.
+    private func consumeLaunchIfReady() {
+        guard router.pendingStudyLaunch != nil, store.loadPhase != .loading else { return }
+        guard let request = router.consumeStudyLaunch() else { return }
+        guard activeFlow == nil else { return }
+        if request.resume {
+            if let item = StudyResumeItem.items(in: store.state).first {
+                activeFlow = item.flow
+            } else {
+                notice = "Nie ma przerwanej sesji — wybierz, co chcesz poćwiczyć."
+            }
+            return
+        }
+        collection = request.collection
+        // „Ćwiczenia” (J1): `exercise-<typ>` (np. `fluentnow://study/start?mode=exercise-scramble`).
+        if let type = request.modes.compactMap({ (raw: String) -> ExerciseType? in SingleTypeSession.type(ofMode: raw) }).first {
+            if let minutes = request.minutes, SingleTypeSession.durations.contains(minutes) {
+                singleTypeMinutes = minutes
+            }
+            startSingleType(type, noticeInline: false, fresh: false)
+            return
+        }
+        // Bez sesji łączonej (K1): z kilku trybów prośby uruchamiamy pierwszy znany —
+        // codzienna mieszanka, gdy prośba jej nie określa.
+        let mode = StudyHomeView.decodeModes(request.modes.joined(separator: ",")).first ?? .mixed
+        if mode == .pictures && !PictureExercise.isEnabled {
+            notice = StudyPicturesLockedCard.message
+            return
+        }
+        // Zajęcia z kafelków — przez to samo okno wyboru, gdy czeka przerwana sesja.
+        if let activity = StudyHomeView.activity(for: mode) {
+            open(activity)
+            return
+        }
+        startMode(mode, minutes: request.minutes)
+    }
+
+    /// Kafelek odpowiadający trybowi z prośby (fiszki, czytanie, gramatyka…); `nil` dla sesji
+    /// słownictwa (codzienna mieszanka, pomyłki, pary, zdjęcia).
+    static func activity(for mode: StudyMode) -> StudyActivity? {
+        switch mode {
+        case .flashcards: return .flashcards
+        case .reading: return .reading
+        case .production: return .production
+        case .grammar: return .practice(.grammar)
+        case .idioms: return .practice(.idioms)
+        case .languageMix: return .practice(.mixed)
+        case .mixed, .mistakes, .pairs, .pictures: return nil
         }
     }
 
-    private var prefetcher: WordImagePrefetcher {
-        WordImagePrefetcher.shared(store: store, images: env.images)
+    /// Tryby z zapisu „mixed,reading” (bez nieznanych i powtórzeń).
+    static func decodeModes(_ raw: String) -> [StudyMode] {
+        var result: [StudyMode] = []
+        for part in raw.split(separator: ",") {
+            if let mode = StudyMode(rawValue: String(part)), !result.contains(mode) {
+                result.append(mode)
+            }
+        }
+        return result
     }
 
-    @ViewBuilder
-    private var picturesCard: some View {
-        if PictureExercise.isEnabled {
-            StudyPicturesCard(
-                snapshot: picturesSnapshot,
-                status: prefetcher.status,
-                statusText: prefetcher.statusText,
-                isStarting: isStarting,
-                onStart: { start(modes: [.pictures]) }
-            )
-        } else {
-            // „W budowie” (I2): karta wyszarzona, dotknięcie — krótka informacja.
-            StudyPicturesLockedCard {
-                notice = StudyPicturesLockedCard.message
-            }
+    // MARK: Liczniki
+
+    private var deckKey: String {
+        "\(store.revision)|\(collection ?? "")"
+    }
+
+    /// Liczniki talii fiszek (do powtórki / nowe / trudne) — liczone poza głównym wątkiem.
+    private func updateDeckCounts() async {
+        guard store.loadPhase == .ready else { return }
+        let limitedTo = collection
+        let now = store.now()
+        deckCounts = await store.compute { (state: LearnerState) -> FlashcardDeckCounts in
+            FlashcardDeckBuilder.counts(state: state, collection: limitedTo, now: now)
         }
     }
 
@@ -260,167 +417,40 @@ struct StudyHomeView: View {
         if case .failed(let message) = store.loadPhase { return message }
         return nil
     }
+}
 
-    // MARK: Wybór (pamiętany na urządzeniu)
+/// Okno „Kontynuuj, gdzie skończyłem” / „Zacznij od nowa” (FEEDBACK-6 K1) — systemowy arkusz
+/// akcji (bez własnego szkła).
+private struct StudyResumeDialog: ViewModifier {
+    @Binding var prompt: StudyResumePrompt?
+    let onContinue: (StudyActivity) -> Void
+    let onRestart: (StudyActivity) -> Void
 
-    private var minutesBinding: Binding<Int> {
+    private var isPresented: Binding<Bool> {
         Binding(
-            get: { StudyLaunchRequest.allowedMinutes.contains(storedMinutes) ? storedMinutes : 10 },
-            set: { storedMinutes = $0 }
+            get: { prompt != nil },
+            set: { (shown: Bool) -> Void in
+                if !shown { prompt = nil }
+            }
         )
     }
 
-    private var modesBinding: Binding<[StudyMode]> {
-        Binding(
-            get: { StudyHomeView.decodeModes(storedModes).filter { (mode: StudyMode) -> Bool in mode.isCombinable } },
-            set: { storedModes = $0.map(\.rawValue).joined(separator: ",") }
-        )
-    }
-
-    static func decodeModes(_ raw: String) -> [StudyMode] {
-        var result: [StudyMode] = []
-        for part in raw.split(separator: ",") {
-            if let mode = StudyMode(rawValue: String(part)), !result.contains(mode) {
-                result.append(mode)
+    func body(content: Content) -> some View {
+        content.confirmationDialog(
+            Text(prompt?.title ?? "Przerwana sesja"),
+            isPresented: isPresented,
+            titleVisibility: .visible,
+            presenting: prompt
+        ) { (shown: StudyResumePrompt) in
+            Button("Kontynuuj, gdzie skończyłem") {
+                onContinue(shown.activity)
             }
-        }
-        return result
-    }
-
-    private var estimateKey: String {
-        "\(storedModes)|\(minutesBinding.wrappedValue)|\(collection ?? "")|\(store.activeWords.count)"
-    }
-
-    private var deckKey: String {
-        "\(store.revision)|\(collection ?? "")"
-    }
-
-    /// Liczniki talii fiszek (do powtórki / nowe / trudne) — liczone poza głównym wątkiem.
-    private func updateDeckCounts() async {
-        guard store.loadPhase == .ready else { return }
-        let limitedTo = collection
-        let now = store.now()
-        deckCounts = await store.compute { (state: LearnerState) -> FlashcardDeckCounts in
-            FlashcardDeckBuilder.counts(state: state, collection: limitedTo, now: now)
-        }
-    }
-
-    // MARK: Start
-
-    private func start(modes requested: [StudyMode]) {
-        guard !isStarting, startingType == nil else { return }
-        let hasWords = !store.activeWords.isEmpty
-        let modes = hasWords ? requested : requested.filter { !$0.isVocabulary }
-        guard !modes.isEmpty else {
-            notice = "Najpierw dodaj kilka słów lub cały temat — albo wybierz czytanie, gramatykę lub idiomy."
-            return
-        }
-        isStarting = true
-        notice = nil
-        let minutes = minutesBinding.wrappedValue
-        let shuffle = random
-        let limitedTo = collection
-        Task { @MainActor in
-            let outcome = await StudyStarter.start(
-                modes: modes,
-                minutes: minutes,
-                random: shuffle,
-                collection: limitedTo,
-                store: store,
-                content: env.content,
-                images: env.images
-            )
-            isStarting = false
-            switch outcome {
-            case .flow(let flow):
-                activeFlow = flow
-            case .combinedDraft(let draft):
-                combinedDraft = draft
-            case .message(let text):
-                notice = text
+            Button("Zacznij od nowa") {
+                onRestart(shown.activity)
             }
-        }
-    }
-
-    private func presentFlowAfterSheet() {
-        guard let flow = flowAfterSheet else { return }
-        flowAfterSheet = nil
-        activeFlow = flow
-    }
-
-    /// Prośba z routera (Dzisiaj, deep link, przypomnienie) — po wczytaniu danych.
-    private func consumeLaunchIfReady() {
-        guard router.pendingStudyLaunch != nil, store.loadPhase != .loading else { return }
-        guard let request = router.consumeStudyLaunch() else { return }
-        guard activeFlow == nil else { return }
-        if request.resume {
-            if let item = StudyResumeItem.items(in: store.state).first {
-                activeFlow = item.flow
-            } else {
-                notice = "Nie ma przerwanej sesji — wybierz, co chcesz poćwiczyć."
-            }
-            return
-        }
-        // „Ćwicz wybrany typ” (J1): `exercise-<typ>` (np. `fluentnow://study/start?mode=exercise-scramble`).
-        if let type = request.modes.compactMap({ (raw: String) -> ExerciseType? in SingleTypeSession.type(ofMode: raw) }).first {
-            collection = request.collection
-            if let minutes = request.minutes, SingleTypeSession.durations.contains(minutes) {
-                singleTypeMinutes = minutes
-            }
-            startSingleType(type, noticeInline: false)
-            return
-        }
-        var modes = request.modes.compactMap { StudyMode(rawValue: $0) }
-        // Fiszki to osobny ekran (G3) — bez zmiany zapamiętanego wyboru trybów.
-        if modes.contains(.flashcards) {
-            collection = request.collection
-            activeFlow = .flashcards(collection: request.collection)
-            return
-        }
-        // „Słowa i obrazki” (H2) — osobny tryb, bez zmiany zapamiętanego wyboru trybów.
-        if modes.contains(.pictures) {
-            guard PictureExercise.isEnabled else {
-                notice = StudyPicturesLockedCard.message
-                return
-            }
-            collection = request.collection
-            start(modes: [.pictures])
-            return
-        }
-        if modes.isEmpty { modes = [.mixed] }
-        modesBinding.wrappedValue = modes
-        if let minutes = request.minutes, StudyLaunchRequest.allowedMinutes.contains(minutes) {
-            storedMinutes = minutes
-        }
-        collection = request.collection
-        start(modes: modes)
-    }
-
-    private func updateEstimate() async {
-        let modes = modesBinding.wrappedValue
-        let minutes = minutesBinding.wrappedValue
-        guard let first = modes.first else {
-            estimate = "Wybierz rodzaj ćwiczeń"
-            return
-        }
-        if modes.count > 1 {
-            let count = max(modes.count, Int((Double(minutes) / 5).rounded()) * CombinedSessionBuilder.tasksPerFiveMinutes)
-            estimate = "Około \(minutes) min · \(StudyFormat.tasks(count))"
-            return
-        }
-        switch first {
-        case .reading:
-            estimate = "Około \(minutes) min · tekst i 3–6 pytań"
-        case .grammar, .idioms, .languageMix, .production:
-            estimate = "Około \(minutes) min · zestaw \(StudyFormat.tasks(6))"
-        case .flashcards:
-            estimate = "Talia fiszek — we własnym tempie"
-        default:
-            let limitedTo = collection
-            let count = await store.compute { state in
-                SessionBuilder.makeSession(state: state, minutes: minutes, mode: first, collection: limitedTo).tasks.count
-            }
-            estimate = "Około \(minutes) min · \(StudyFormat.exercises(count))"
+            Button("Anuluj", role: .cancel) {}
+        } message: { (shown: StudyResumePrompt) in
+            Text(shown.detail + "\n" + StudyResumePrompt.restartNote)
         }
     }
 }
@@ -436,7 +466,7 @@ private struct StudyHomeHeader: View {
                 .font(FluentFont.display)
                 .foregroundStyle(Palette.ink)
                 .accessibilityAddTraits(.isHeader)
-            Text("Wybierz swój rytm. Możesz zrobić przerwę w dowolnej chwili — postęp zostaje zapisany.")
+            Text("Fiszki, ćwiczenia jednego typu albo test. Możesz zrobić przerwę w dowolnej chwili — postęp zostaje zapisany.")
                 .font(FluentFont.callout)
                 .foregroundStyle(Palette.inkSecondary)
         }
@@ -479,7 +509,7 @@ private struct StudyNoticeCard: View {
     }
 }
 
-/// Stan pusty: brak słów — nauka słownictwa wymaga słów, reszta trybów działa.
+/// Stan pusty: brak słów — fiszki i ćwiczenia wymagają słów, czytanie, gramatyka i test działają.
 private struct StudyNoWordsCard: View {
     let onBrowseTopics: () -> Void
     let onQuickAdd: () -> Void
@@ -489,7 +519,7 @@ private struct StudyNoWordsCard: View {
             Label("Zacznij od kilku słów", systemImage: "text.book.closed")
                 .font(FluentFont.headline)
                 .foregroundStyle(Palette.ink)
-            Text("Dodaj pojedyncze słowa albo cały temat — wtedy przygotujemy sesje słownictwa. Czytanie, gramatyka i idiomy działają od razu.")
+            Text("Dodaj pojedyncze słowa albo cały temat — wtedy przygotujemy fiszki i ćwiczenia. Czytanie, gramatyka i idiomy działają od razu.")
                 .font(FluentFont.callout)
                 .foregroundStyle(Palette.inkSecondary)
                 .fixedSize(horizontal: false, vertical: true)

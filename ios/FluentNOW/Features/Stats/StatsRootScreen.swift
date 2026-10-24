@@ -71,6 +71,7 @@ private struct StatsContent: View {
         StatsWeeklyReportEntry()
         StatsProgressionSection(progression: snapshot.progression)
         StatsAnalysisSection(analysis: snapshot.analysis)
+        StatsTestHistorySection()
         TodayWeekCard(week: snapshot.week, goal: snapshot.goal)
         StatsActivityCalendar(days: snapshot.calendar)
     }

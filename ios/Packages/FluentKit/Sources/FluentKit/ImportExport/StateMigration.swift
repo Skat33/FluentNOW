@@ -104,6 +104,19 @@ public enum StateMigration {
             state.combined = combined.tasks.isEmpty ? nil : combined
         }
 
+        // Level test (K4, optional): invariants restored, the current question drawn again when it
+        // is missing (e.g. after a merge); an empty or inconsistent test is dropped.
+        if var assessment = state.assessment {
+            assessment.repair()
+            if assessment.completedAt == nil {
+                assessment = AssessmentEngine.prepareCurrent(assessment, state: state)
+            }
+            let unusable = assessment.slots.isEmpty
+                || (assessment.completedAt == nil && assessment.isFinished)
+                || (assessment.completedAt != nil && assessment.answers.isEmpty)
+            state.assessment = unusable ? nil : assessment
+        }
+
         if let reading = state.reading, reading.reading.questions.isEmpty {
             state.reading = nil
         }

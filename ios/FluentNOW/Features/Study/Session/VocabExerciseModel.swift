@@ -93,6 +93,10 @@ final class VocabExerciseModel {
     /// Liczba odsłuchów przed odpowiedzią.
     private(set) var plays = 0
 
+    /// Tryb testu (FEEDBACK-6 K4): bez podpowiedzi, bez „Pokaż warianty”, jedna próba, wybór opcji
+    /// zatwierdzany dopiero przez „Dalej” (`submitAssessment`), bez informacji poprawne/błędne.
+    let isAssessment: Bool
+
     private let variants: AnswerVariants
     private let assistant: AssistantService?
     /// Opcje znaczeń pokazane od razu przy pierwszym kontakcie — nie liczą się jako pomoc.
@@ -100,15 +104,18 @@ final class VocabExerciseModel {
     @ObservationIgnored private var assistantTask: Task<Void, Never>?
     @ObservationIgnored private var pendingLocal: Grade?
 
-    init(content: VocabExerciseContent, key: String, options: [String], variants: AnswerVariants, assistant: AssistantService?) {
+    init(content: VocabExerciseContent, key: String, options: [String], variants: AnswerVariants, assistant: AssistantService?, assessment: Bool = false) {
         self.content = content
         self.key = key
         self.options = content.type == .listeningChoice ? content.listeningOptions : options
         self.variants = variants
-        self.assistant = assistant
+        self.assistant = assessment ? nil : assistant
         self.startedAt = Date()
-        self.variantsAreFree = content.showsMeaningOptionsAtOnce
-        self.variantsShown = content.showsMeaningOptionsAtOnce
+        self.isAssessment = assessment
+        // W teście „Wybierz znaczenie” to zawsze wybór z czterech opcji (bez „Pokaż warianty”).
+        let optionsAtOnce = content.showsMeaningOptionsAtOnce || (assessment && content.type == .meaning)
+        self.variantsAreFree = optionsAtOnce
+        self.variantsShown = optionsAtOnce
     }
 
     var type: ExerciseType { content.type }
@@ -118,7 +125,7 @@ final class VocabExerciseModel {
     var visibleHints: [String] { content.hints.visible(upTo: hintLevel) }
     /// Jest jeszcze kolejny poziom podpowiedzi do odsłonięcia.
     var canShowMoreHints: Bool {
-        (phase == .answering || phase == .retry) && hintLevel < content.hints.count
+        !isAssessment && (phase == .answering || phase == .retry) && hintLevel < content.hints.count
     }
     /// Podpowiedź lub warianty = odpowiedź z pomocą (strona: `hint`). Opcje pokazane od razu
     /// przy pierwszym kontakcie ze słowem nie są pomocą.
@@ -213,6 +220,8 @@ final class VocabExerciseModel {
               let option = options.studyItem(at: index), !wrongOptions.contains(index) else { return }
         answer = option
         chosenOption = index
+        // Test: wybór można zmienić aż do „Dalej” (ocena w `submitAssessment`).
+        if isAssessment { return }
         stoppedSeconds = elapsed()
         let correct: Bool
         if let expected = correctOption {
@@ -309,7 +318,7 @@ final class VocabExerciseModel {
             finish(with: Grade(verdict: .correct, explanation: "", spellingCorrect: true))
             return
         }
-        if phase == .answering {
+        if phase == .answering && !isAssessment {
             let kept = SentenceScramble.correctPrefixCount(texts, board: board)
             placedTiles = Array(placedTiles.prefix(kept))
             retried = true
@@ -460,6 +469,68 @@ final class VocabExerciseModel {
         outcome = current
     }
 
+    // MARK: Test (K4)
+
+    /// „Dalej” w teście jest aktywne: wybrano opcję, wpisano odpowiedź, ułożono całe zdanie.
+    var assessmentReady: Bool {
+        guard isAssessment, !isFinished else { return false }
+        switch inputStyle {
+        case .choice, .listening: return chosenOption != nil
+        case .typing: return canCheck
+        case .scramble: return canCheckScramble
+        case .pairs, .flashcard, .picture: return false
+        }
+    }
+
+    /// „Dalej” w teście: ocena bieżącej odpowiedzi jedną próbą (bez pokazywania wyniku).
+    func submitAssessment() {
+        guard assessmentReady else { return }
+        switch inputStyle {
+        case .choice, .listening:
+            gradeChosenOption()
+        case .typing:
+            check()
+        case .scramble:
+            checkScramble()
+        case .pairs, .flashcard, .picture:
+            break
+        }
+    }
+
+    /// „Nie wiem” w teście: odpowiedź błędna (na planszy par — niepołączone pary jako pomyłki).
+    func giveUpAssessment() {
+        guard isAssessment, !isFinished else { return }
+        if type == .matchPairs {
+            for item in content.pairItems where !matchedPairs.contains(item.meaningId) {
+                pairMistakes[item.meaningId, default: 0] += 1
+            }
+            finishPairs()
+            return
+        }
+        stoppedSeconds = elapsed()
+        finish(with: Grade(verdict: .incorrect, explanation: "", spellingCorrect: false))
+    }
+
+    private func gradeChosenOption() {
+        guard let index = chosenOption, let option = options.studyItem(at: index) else { return }
+        stoppedSeconds = elapsed()
+        let correct: Bool
+        if let expected = correctOption {
+            correct = index == expected
+        } else if type == .listeningChoice {
+            correct = false
+        } else {
+            correct = VocabularyGrader.localGrade(
+                answer: option,
+                word: content.gradingWord,
+                meaning: content.meaning,
+                type: type,
+                variants: variants
+            ).isCorrect
+        }
+        finish(with: Grade(verdict: correct ? .correct : .incorrect, explanation: "", spellingCorrect: correct))
+    }
+
     func cancelPendingWork() {
         assistantTask?.cancel()
         assistantTask = nil
@@ -501,6 +572,11 @@ final class VocabExerciseModel {
 
     /// Błędna odpowiedź: pierwsza — druga próba z kolejnym poziomem podpowiedzi; kolejna — wynik.
     private func failed(_ grade: Grade) {
+        // Test: jedna próba, bez drugiej szansy i podpowiedzi.
+        if isAssessment {
+            finish(with: grade)
+            return
+        }
         if phase == .answering || (phase == .checking && retryGrade == nil) {
             retryGrade = grade
             hintLevel = min(content.hints.count, hintLevel + 1)

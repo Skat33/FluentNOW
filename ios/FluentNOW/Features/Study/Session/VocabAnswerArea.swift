@@ -34,7 +34,8 @@ struct VocabAnswerArea: View {
             }
             if model.phase == .checking {
                 VocabAssistantChecking(onSkip: model.skipAssistant)
-            } else {
+            } else if !model.isAssessment {
+                // Test (K4): zamiast „Sprawdź” jest „Dalej” ekranu testu.
                 VocabAnswerActions(model: model)
             }
         }
@@ -171,6 +172,10 @@ private struct VocabMeaningChoiceList: View {
     }
 
     private func rowState(_ index: Int) -> StudyChoiceRow.RowState {
+        // Test (K4): tylko zaznaczenie wyboru, bez poprawnej/błędnej.
+        if model.isAssessment {
+            return index == model.chosenOption ? .chosen : .idle
+        }
         if model.isFinished {
             if index == model.correctOption { return .correct }
             if index == model.chosenOption || model.wrongOptions.contains(index) { return .wrong }

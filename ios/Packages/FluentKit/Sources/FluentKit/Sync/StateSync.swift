@@ -169,6 +169,9 @@ public enum StateSync {
         merged.readingHistory = unionByID(remote.readingHistory, local.readingHistory, id: { $0.id }).stableSorted { $0.at < $1.at }
         merged.practiceHistory = unionByID(remote.practiceHistory, local.practiceHistory, id: { $0.id }).stableSorted { $0.at < $1.at }
         merged.productionHistory = unionByID(remote.productionHistory, local.productionHistory, id: { $0.id }).stableSorted { $0.at < $1.at }
+        // Level test (K4): histories united by id; the test in progress chosen by progress.
+        merged.assessmentHistory = unionByID(remote.assessmentHistory, local.assessmentHistory, id: { $0.id }).stableSorted { $0.at < $1.at }
+        merged.assessment = mergeAssessment(local: local.assessment, remote: remote.assessment, history: merged.assessmentHistory)
 
         var summaries: [String: ReviewSummary] = [:]
         for item in remote.reviewSummaries { summaries[item.day] = item }
@@ -196,6 +199,31 @@ public enum StateSync {
         // Avatar and nickname (J3): merged on their own `updatedAt`, independently of the profile.
         merged.settings.avatar = LearnerAvatar.newer(local.settings.avatar, remote.settings.avatar)
         return merged
+    }
+
+    /// The level test of two copies: the same test → a finished copy wins, then more answers, then
+    /// the newer edit; different tests → the newer one. An unfinished copy of a test that is already
+    /// in the history (finished on the other device) is dropped.
+    static func mergeAssessment(local: AssessmentSession?, remote: AssessmentSession?, history: [AssessmentHistoryEntry]) -> AssessmentSession? {
+        let chosen: AssessmentSession?
+        if let a = local, let b = remote, a.id == b.id {
+            if (a.completedAt != nil) != (b.completedAt != nil) {
+                chosen = a.completedAt != nil ? a : b
+            } else if a.index != b.index {
+                chosen = a.index > b.index ? a : b
+            } else {
+                chosen = a.updatedAt >= b.updatedAt ? a : b
+            }
+        } else if (local?.updatedAt ?? 0) >= (remote?.updatedAt ?? 0) {
+            chosen = local ?? remote
+        } else {
+            chosen = remote
+        }
+        guard let session = chosen else { return nil }
+        if session.completedAt == nil && history.contains(where: { (entry: AssessmentHistoryEntry) -> Bool in entry.id == session.id }) {
+            return nil
+        }
+        return session
     }
 
     /// Union keyed by id; entries of `preferred` replace those of `base` in place.

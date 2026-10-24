@@ -189,4 +189,79 @@ final class RepositoryTests: XCTestCase {
         XCTAssertEqual(result.removedWordIDs, ["b"])
         XCTAssertEqual(result.state.words.map(\.id), ["a"])
     }
+
+    // MARK: Test poziomu (FEEDBACK-6 K4)
+
+    private func sampleAssessment() -> AssessmentSession {
+        let question = PracticeQuestion(category: .grammar, prompt: "Wybierz formę.", context: "I ________ (iść) home.", options: ["went", "go"], answer: 0)
+        return AssessmentSession(
+            id: "test-1",
+            band: AssessmentBand(base: "B1"),
+            startedAt: 100,
+            slots: [.grammar, .grammar],
+            questions: [.text(AssessmentTextQuestion(block: .grammar, question: question, level: "B1"))],
+            grammar: [question, question]
+        )
+    }
+
+    private func historyEntry(_ id: String, at: Timestamp) -> AssessmentHistoryEntry {
+        AssessmentHistoryEntry(id: id, at: at, baseLevel: "B1", level: "B1", percent: 70, points: 21, total: 30, seconds: 1000, readingId: "r1", skills: ["grammar": 75])
+    }
+
+    func testAssessmentAndHistoryRoundTrip() async throws {
+        let (repository, container) = try ServicesTestSupport.makeRepository()
+        var state = LearnerState()
+        state.assessment = sampleAssessment()
+        state.assessmentHistory = [historyEntry("h1", at: 10), historyEntry("h2", at: 20)]
+        try await repository.save(state)
+
+        let loaded = try await LearningRepository(modelContainer: container).load(now: PreviewData.now)
+        XCTAssertEqual(loaded.state.assessment, state.assessment)
+        XCTAssertEqual(loaded.state.assessmentHistory, state.assessmentHistory)
+        XCTAssertEqual(loaded.skippedRecords, 0)
+
+        // Zamknięty test: rekord sesji bez treści, historia zostaje.
+        state.assessment = nil
+        try await repository.save(state)
+        let after = try await LearningRepository(modelContainer: container).load(now: PreviewData.now)
+        XCTAssertNil(after.state.assessment)
+        XCTAssertEqual(after.state.assessmentHistory.map(\.id), ["h1", "h2"])
+    }
+
+    func testRemoteAssessmentHistorySurvivesReloadMergeAndSave() async throws {
+        let container = try PersistenceController.makeInMemoryContainer()
+        let persistence = SwiftDataPersistence(container: container)
+        _ = try await persistence.load(now: PreviewData.now)
+        var local = LearnerState()
+        local.assessmentHistory = [historyEntry("local", at: 10)]
+        try await persistence.save(local)
+
+        // „Inne urządzenie” dopisuje swój wynik testu.
+        let context = ModelContext(container)
+        let payload = try JSONEncoder().encode(historyEntry("remote", at: 20))
+        context.insert(HistoryRecord(kind: HistoryKind.assessment.rawValue, entryId: "remote", at: 20, payload: payload))
+        try context.save()
+
+        let reloaded = try await persistence.reloadAfterRemoteChange(now: PreviewData.now)
+        XCTAssertEqual(Set(reloaded.state.assessmentHistory.map(\.id)), ["local", "remote"])
+        let merged = StateSync.mergeStates(local: local, remote: reloaded.state)
+        XCTAssertEqual(merged.assessmentHistory.map(\.id), ["local", "remote"])
+        try await persistence.save(merged)
+
+        let records = try ModelContext(container).fetch(FetchDescriptor<HistoryRecord>())
+            .filter { $0.kind == HistoryKind.assessment.rawValue }
+        XCTAssertEqual(Set(records.map(\.entryId)), ["local", "remote"])
+        let fresh = try await LearningRepository(modelContainer: container).load(now: PreviewData.now)
+        XCTAssertEqual(fresh.state.assessmentHistory.map(\.id), ["local", "remote"])
+    }
+
+    @MainActor
+    func testPreloadChangesKeepTheSavedTest() {
+        var loaded = LearnerState()
+        loaded.assessment = sampleAssessment()
+        loaded.assessmentHistory = [historyEntry("h1", at: 10)]
+        let merged = LearningStore.mergePreloadChanges(preload: LearnerState.empty, loaded: loaded)
+        XCTAssertEqual(merged.assessment?.id, "test-1")
+        XCTAssertEqual(merged.assessmentHistory.map(\.id), ["h1"])
+    }
 }

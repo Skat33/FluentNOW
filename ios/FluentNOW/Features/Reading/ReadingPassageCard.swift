@@ -2,9 +2,9 @@ import SwiftUI
 import FluentKit
 
 /// Tekst czytanki: czytelna typografia (krój szeryfowy, Dynamic Type, kolumna `readableWidth`).
-/// Podświetlenia (G1): słowa z mojego słownika — pogrubione na fioletowym tle (+ ciągłe podkreślenie);
-/// słowa przydatne ze słowniczka kontekstowego — zwykłe na jasnoniebieskim tle (+ podkreślenie
-/// kropkowane), z legendą. Używane na etapie czytania (obu trybów) i w przeglądzie. Dotknięcie otwiera arkusz z tłumaczeniem
+/// Podświetlenia (G1, FEEDBACK-6 K3): słowa z mojego słownika — fioletowe na fioletowym tle
+/// (+ ciągłe podkreślenie); słowa przydatne ze słowniczka kontekstowego — pogrubione, morskie (teal)
+/// na jasnym tle, z legendą (`ReadingHighlightStyle`). Używane na etapie czytania (obu trybów) i w przeglądzie. Dotknięcie otwiera arkusz z tłumaczeniem
 /// w kontekście tego tekstu. Po pytaniach fragmenty-dowody (`evidence`) są wyróżnione markerem.
 struct ReadingPassageCard: View {
     let reading: Reading
@@ -43,6 +43,7 @@ struct ReadingPassageCard: View {
             ForEach(Array(reading.paragraphs.enumerated()), id: \.offset) { index, paragraph in
                 ReadingParagraphView(
                     text: layout?.attributed.studyItem(at: index) ?? AttributedString(paragraph),
+                    links: layout?.links.studyItem(at: index),
                     plain: paragraph
                 )
             }
@@ -109,7 +110,7 @@ private struct ReadingPassageHeader: View {
     }
 }
 
-/// Legenda podświetleń (nie tylko kolorem: tło + linia ciągła vs linia kropkowana).
+/// Legenda podświetleń (FEEDBACK-6 K3; nie tylko kolorem: podkreślenie vs pogrubienie).
 private struct ReadingHighlightLegend: View {
     let hasOwnWords: Bool
     let hasUsefulWords: Bool
@@ -117,10 +118,10 @@ private struct ReadingHighlightLegend: View {
     var body: some View {
         VStack(alignment: .leading, spacing: Spacing.xxs) {
             if hasOwnWords {
-                legendRow(sample: ReadingHighlightStyle.sample("słowo", kind: .own), text: "pogrubione, fioletowe tło — z Twojego słownika")
+                legendRow(sample: ReadingHighlightStyle.sample("słowo", kind: .own), text: ReadingHighlightStyle.legendText(.own))
             }
             if hasUsefulWords {
-                legendRow(sample: ReadingHighlightStyle.sample("słowo", kind: .useful), text: "zwykłe, jasnoniebieskie tło — warte nauki")
+                legendRow(sample: ReadingHighlightStyle.sample("słowo", kind: .useful), text: ReadingHighlightStyle.legendText(.useful))
             }
             Text("Dotknij wyróżnionego słowa, aby zobaczyć tłumaczenie w tym tekście.")
                 .font(FluentFont.caption)
@@ -141,16 +142,19 @@ private struct ReadingHighlightLegend: View {
     }
 }
 
-/// Akapit z przyciskiem odsłuchu.
+/// Akapit z przyciskiem odsłuchu. Z podświetleniami — dwie warstwy (`ReadingHighlightedText`,
+/// K3): kolory słów nie znikają pod kolorem linków.
 private struct ReadingParagraphView: View {
     let text: AttributedString
+    /// Warstwa linków (`nil` — tekst jeszcze bez podświetleń).
+    let links: AttributedString?
     let plain: String
 
     @Environment(SpeechService.self) private var speech
 
     var body: some View {
         HStack(alignment: .top, spacing: Spacing.xs) {
-            Text(text)
+            paragraphText
                 .font(FluentFont.reading)
                 .foregroundStyle(Palette.ink)
                 .lineSpacing(4)
@@ -167,6 +171,15 @@ private struct ReadingParagraphView: View {
             }
             .buttonStyle(.plain)
             .accessibilityLabel(Text("Odsłuchaj akapit"))
+        }
+    }
+
+    @ViewBuilder
+    private var paragraphText: some View {
+        if let links {
+            ReadingHighlightedText(display: text, links: links)
+        } else {
+            Text(text)
         }
     }
 }

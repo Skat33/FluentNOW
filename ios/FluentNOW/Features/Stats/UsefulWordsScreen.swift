@@ -6,11 +6,17 @@ import FluentKit
 /// (`embedded: true`); skróty z Dzisiaj i z Postępów prowadzą do tego segmentu
 /// (`router.openLibrary(.recommended)`).
 ///
-/// FEEDBACK-5 J2: bez nieskończonego przewijania — zestaw najwyżej 3 stron po 6 słów
-/// (`UsefulWordsPaging`), przewijanych poziomo (przesunięcie, strzałki, kropki; VoiceOver: akcja
-/// „dostosuj”). „Odśwież propozycje” losuje nowy zestaw z tej samej puli rankingu, z pominięciem
-/// słów pokazanych w tym tygodniu (pamiętane na urządzeniu). Zaznaczanie i dodawanie bez zmian:
-/// dotknięcie zaznacza, „+” dodaje od razu, dolny przycisk dodaje zaznaczone ze wszystkich stron.
+/// FEEDBACK-5 J2: bez nieskończonego przewijania — zestaw `UsefulWordsPaging.setSize` słów
+/// w stronach przewijanych poziomo (przesunięcie, strzałki, kropki; VoiceOver: akcja „dostosuj”).
+/// „Odśwież propozycje” losuje nowy zestaw z tej samej puli rankingu, z pominięciem słów
+/// pokazanych w tym tygodniu (pamiętane na urządzeniu).
+///
+/// FEEDBACK-6 K2: strona mieści się na ekranie **bez przewijania w pionie** — liczba słów na
+/// stronie (3–6) dobrana do dostępnej wysokości (`UsefulWordsPageArea`, `GeometryReader`);
+/// wiersze zwięzłe (hasło, poziom, tłumaczenie, uzasadnienie w 1 linii; przykład, wymowa i pełny
+/// opis pod „i”); „Odśwież propozycje” w nagłówku na górze. Dolny pasek ma stałą wysokość
+/// (przycisk dodawania / komunikat / wskazówka), żeby zaznaczanie nie zmieniało podziału stron.
+/// Tylko przy bardzo dużej czcionce, gdy nie mieszczą się nawet 3 słowa, strona się przewija.
 struct UsefulWordsScreen: View {
     /// `true` — segment Słownika: bez własnego tytułu nawigacji (zostaje „Słownik”).
     var embedded: Bool = false
@@ -33,6 +39,10 @@ struct UsefulWordsScreen: View {
     @State private var forward = true
     /// Numer wylosowanego zestawu (nowy zestaw = nowa karta strony, także na stronie 1).
     @State private var setNumber = 0
+    /// Słów na stronie — z dostępnej wysokości (K2).
+    @State private var pageSize = UsefulWordsPaging.pageSize
+    /// Nie mieszczą się nawet 3 słowa — strona przewijana w pionie (bardzo duża czcionka).
+    @State private var pageScrolls = false
     @State private var selection: Set<String> = []
     @State private var addingIDs: Set<String> = []
     @State private var message: String?
@@ -43,10 +53,9 @@ struct UsefulWordsScreen: View {
 
     // Krótkie `body` (lekcja z pierwszej kompilacji): treść i haptyka w osobnych typach.
     var body: some View {
-        ScrollView { screenContent }
+        screenContent
             .background(Palette.background)
             .modifier(UsefulWordsNavigationTitle(embedded: embedded))
-            .safeAreaInset(edge: .bottom) { bottomBar }
             .task(id: store.revision) { await refresh() }
             .modifier(UsefulWordsFeedback(addTrigger: addTrigger, selectionCount: selection.count, page: page))
     }
@@ -54,20 +63,37 @@ struct UsefulWordsScreen: View {
     private var screenContent: UsefulWordsScreenContent {
         UsefulWordsScreenContent(
             phase: phase,
+            view: viewState,
+            selectedCount: selectedItems.count,
+            actions: actions
+        )
+    }
+
+    private var viewState: UsefulWordsViewState {
+        UsefulWordsViewState(
             page: page,
             forward: forward,
             setNumber: setNumber,
+            pageSize: pageSize,
+            pageScrolls: pageScrolls,
             selection: selection,
             addingIDs: addingIDs,
             ownedIDs: ownedIDs,
             message: message,
             note: note,
-            canDrawNewSet: canDrawNewSet,
+            canDrawNewSet: canDrawNewSet
+        )
+    }
+
+    private var actions: UsefulWordsActions {
+        UsefulWordsActions(
             onToggle: { (id: String) -> Void in toggle(id) },
             onTogglePage: { (pageItems: [UsefulWordSuggestion]) -> Void in togglePage(pageItems) },
             onAdd: { (item: UsefulWordSuggestion) -> Void in add([item]) },
+            onAddSelected: { () -> Void in add(selectedItems) },
             onPage: { (target: Int) -> Void in goToPage(target) },
-            onDrawNewSet: { () -> Void in drawNewSet() }
+            onDrawNewSet: { () -> Void in drawNewSet() },
+            onFit: { (size: Int?) -> Void in fit(size) }
         )
     }
 
@@ -82,26 +108,12 @@ struct UsefulWordsScreen: View {
         (pool?.suggestions.count ?? 0) > items.count
     }
 
-    @ViewBuilder
-    private var bottomBar: some View {
-        if !selectedItems.isEmpty {
-            PrimaryButton(
-                "Dodaj do nauki: \(LibraryText.words(selectedItems.count))",
-                systemImage: "plus",
-                isLoading: !addingIDs.isEmpty
-            ) {
-                add(selectedItems)
-            }
-            .padding(.horizontal, Spacing.screen)
-            .padding(.vertical, Spacing.s)
-            .frame(maxWidth: Spacing.readableWidth)
-            .frame(maxWidth: .infinity)
-            .background(Palette.background)
-        }
-    }
-
     private var selectedItems: [UsefulWordSuggestion] {
         items.filter { selection.contains($0.id) && !ownedIDs.contains($0.id) }
+    }
+
+    private var pageCount: Int {
+        UsefulWordsPaging.pages(items, size: pageSize).count
     }
 
     // MARK: Zestaw
@@ -158,16 +170,16 @@ struct UsefulWordsScreen: View {
     private func show(_ set: [UsefulWordSuggestion]) {
         items = set
         currentRaw = UsefulWordsPaging.raw(set.map { $0.id })
-        let pageCount = UsefulWordsPaging.pages(set).count
-        if page >= pageCount {
-            page = max(0, pageCount - 1)
+        let count = UsefulWordsPaging.pages(set, size: pageSize).count
+        if page >= count {
+            page = max(0, count - 1)
         }
         let visible = Set(set.map { $0.id }).subtracting(ownedIDs)
         selection = selection.intersection(visible)
     }
 
     private func goToPage(_ target: Int) {
-        let count = UsefulWordsPaging.pages(items).count
+        let count = pageCount
         guard count > 0 else { return }
         let clamped = min(max(0, target), count - 1)
         guard clamped != page else { return }
@@ -175,6 +187,21 @@ struct UsefulWordsScreen: View {
         withAnimation(Motion.resolved(Motion.standard, reduceMotion: reduceMotion, fallback: Motion.reducedFade)) {
             page = clamped
         }
+    }
+
+    /// Nowa wysokość obszaru listy → liczba słów na stronie (pierwsze widoczne słowo zostaje
+    /// widoczne). `nil` — nie mieszczą się 3 słowa: strona po 3, przewijana.
+    private func fit(_ size: Int?) {
+        let scrolls = size == nil
+        if pageScrolls != scrolls {
+            pageScrolls = scrolls
+        }
+        let newSize = size ?? UsefulWordsPaging.minPageSize
+        guard newSize != pageSize else { return }
+        let firstVisible = page * pageSize
+        pageSize = newSize
+        let count = UsefulWordsPaging.pages(items, size: newSize).count
+        page = min(UsefulWordsPaging.page(containing: firstVisible, size: newSize), max(0, count - 1))
     }
 
     // MARK: Zaznaczanie i dodawanie (bez zmian)
@@ -207,12 +234,40 @@ struct UsefulWordsScreen: View {
             addingIDs = []
             selection.subtract(ids)
             message = UsefulWordsScreenText.summary(outcome, items: toAdd)
+            note = nil
             if outcome.addedMeanings > 0 {
                 ownedIDs.formUnion(ids)
                 addTrigger += 1
             }
         }
     }
+}
+
+/// Stan widoku przekazywany do treści (jedna wartość zamiast wielu parametrów).
+struct UsefulWordsViewState {
+    var page: Int
+    var forward: Bool
+    var setNumber: Int
+    var pageSize: Int
+    var pageScrolls: Bool
+    var selection: Set<String>
+    var addingIDs: Set<String>
+    var ownedIDs: Set<String>
+    var message: String?
+    var note: String?
+    var canDrawNewSet: Bool
+}
+
+/// Akcje ekranu.
+struct UsefulWordsActions {
+    let onToggle: (String) -> Void
+    let onTogglePage: ([UsefulWordSuggestion]) -> Void
+    let onAdd: (UsefulWordSuggestion) -> Void
+    let onAddSelected: () -> Void
+    let onPage: (Int) -> Void
+    let onDrawNewSet: () -> Void
+    /// Liczba słów mieszczących się na stronie (`nil` — mniej niż 3).
+    let onFit: (Int?) -> Void
 }
 
 /// Tytuł nawigacji tylko dla samodzielnego ekranu (osadzony segment zostawia tytuł „Słownik”).
@@ -252,42 +307,49 @@ enum UsefulWordsPhase {
     case list(UsefulWordsResult)
 }
 
-/// Treść ekranu (osobny widok — krótkie `body`, `switch` zamiast łańcucha `if`).
+/// Treść ekranu: nagłówek z „Odśwież propozycje”, obszar strony (elastyczny), dolny pasek
+/// o stałej wysokości. Całość mieści się w wysokości ekranu — bez przewijania w pionie.
 private struct UsefulWordsScreenContent: View {
     let phase: UsefulWordsPhase
-    let page: Int
-    let forward: Bool
-    let setNumber: Int
-    let selection: Set<String>
-    let addingIDs: Set<String>
-    let ownedIDs: Set<String>
-    let message: String?
-    let note: String?
-    let canDrawNewSet: Bool
-    let onToggle: (String) -> Void
-    let onTogglePage: ([UsefulWordSuggestion]) -> Void
-    let onAdd: (UsefulWordSuggestion) -> Void
-    let onPage: (Int) -> Void
-    let onDrawNewSet: () -> Void
+    let view: UsefulWordsViewState
+    let selectedCount: Int
+    let actions: UsefulWordsActions
 
     var body: some View {
-        VStack(alignment: .leading, spacing: Spacing.l) {
-            if let message {
-                Label(message, systemImage: "checkmark.circle.fill")
-                    .font(FluentFont.subheadline)
-                    .foregroundStyle(Palette.success)
-            }
-            if let note {
-                Label(note, systemImage: "info.circle")
-                    .font(FluentFont.subheadline)
-                    .foregroundStyle(Palette.inkSecondary)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
+        VStack(alignment: .leading, spacing: Spacing.s) {
+            UsefulWordsTopBar(
+                level: level,
+                canDrawNewSet: view.canDrawNewSet,
+                onDrawNewSet: actions.onDrawNewSet
+            )
             phaseView
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            UsefulWordsBottomBar(
+                selectedCount: selectedCount,
+                isAdding: !view.addingIDs.isEmpty,
+                message: view.message,
+                note: view.note,
+                hasList: hasList,
+                onAddSelected: actions.onAddSelected
+            )
         }
+        .padding(.horizontal, Spacing.screen)
+        .padding(.top, Spacing.xs)
+        .padding(.bottom, Spacing.s)
         .frame(maxWidth: Spacing.readableWidth)
-        .padding(Spacing.screen)
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+    }
+
+    private var level: (level: String, target: String)? {
+        if case .list(let result) = phase {
+            return (result.level, result.targetLevel)
+        }
+        return nil
+    }
+
+    private var hasList: Bool {
+        if case .list = phase { return true }
+        return false
     }
 
     @ViewBuilder
@@ -302,116 +364,257 @@ private struct UsefulWordsScreenContent: View {
                 message: "Masz już najczęstsze słowa na swoim poziomie. Wróć po kolejnych sesjach — gdy poziom wzrośnie, pojawią się nowe."
             )
         case .list(let result):
-            UsefulWordsIntro(level: result.level, targetLevel: result.targetLevel)
-            UsefulWordsPager(
-                result: result,
-                page: page,
-                forward: forward,
-                setNumber: setNumber,
-                selection: selection,
-                addingIDs: addingIDs,
-                ownedIDs: ownedIDs,
-                canDrawNewSet: canDrawNewSet,
-                onToggle: onToggle,
-                onTogglePage: onTogglePage,
-                onAdd: onAdd,
-                onPage: onPage,
-                onDrawNewSet: onDrawNewSet
-            )
+            UsefulWordsPager(result: result, view: view, actions: actions)
         }
     }
 }
 
-/// Wyjaśnienie, skąd lista.
-private struct UsefulWordsIntro: View {
-    let level: String
-    let targetLevel: String
+/// Nagłówek: tytuł z poziomem, „i” (skąd lista) i „Odśwież propozycje” (K2: na górze).
+private struct UsefulWordsTopBar: View {
+    let level: (level: String, target: String)?
+    let canDrawNewSet: Bool
+    let onDrawNewSet: () -> Void
 
     var body: some View {
-        Card(style: .tinted(.accent)) {
+        HStack(alignment: .center, spacing: Spacing.xs) {
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Przydatne słowa")
+                    .font(FluentFont.headline)
+                    .foregroundStyle(Palette.ink)
+                    .lineLimit(1)
+                Text(subtitle)
+                    .font(FluentFont.caption)
+                    .foregroundStyle(Palette.inkSecondary)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+            }
+            .accessibilityElement(children: .combine)
+            .accessibilityAddTraits(.isHeader)
+            Spacer(minLength: Spacing.xxs)
+            UsefulWordsAboutButton(level: level)
+            UsefulWordsRefreshButton(isEnabled: canDrawNewSet, action: onDrawNewSet)
+        }
+    }
+
+    private var subtitle: String {
+        guard let level else { return "Często używane, na Twoim poziomie" }
+        return "Do poziomu \(level.target) · Twój poziom: \(level.level)"
+    }
+}
+
+/// „Odśwież propozycje” — pełny napis, gdy się mieści, inaczej „Odśwież”.
+private struct UsefulWordsRefreshButton: View {
+    let isEnabled: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            ViewThatFits(in: .horizontal) {
+                label("Odśwież propozycje")
+                label("Odśwież")
+            }
+            .font(FluentFont.subheadline.weight(.semibold))
+            .foregroundStyle(isEnabled ? Palette.accentSoftInk : Palette.inkTertiary)
+            .padding(.horizontal, Spacing.s)
+            .frame(minHeight: HitTarget.minimum)
+            .background(isEnabled ? Palette.accentSoft : Palette.surfaceMuted, in: Capsule())
+            .contentShape(Capsule())
+        }
+        .buttonStyle(.plain)
+        .disabled(!isEnabled)
+        .accessibilityLabel(Text("Odśwież propozycje"))
+        .accessibilityHint(Text("Losuje nowy zestaw słów, których w tym tygodniu jeszcze nie było"))
+    }
+
+    private func label(_ title: String) -> some View {
+        Label(title, systemImage: "arrow.clockwise")
+            .lineLimit(1)
+            .fixedSize()
+    }
+}
+
+/// „i” w nagłówku: skąd te propozycje (dawny opis nad listą — teraz na życzenie).
+private struct UsefulWordsAboutButton: View {
+    let level: (level: String, target: String)?
+
+    @State private var isShown = false
+
+    var body: some View {
+        Button {
+            isShown = true
+        } label: {
+            Image(systemName: "info.circle")
+                .font(FluentFont.headline)
+                .foregroundStyle(Palette.accent)
+                .frame(width: HitTarget.minimum, height: HitTarget.minimum)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(Text("Skąd te propozycje"))
+        .popover(isPresented: $isShown) {
+            UsefulWordsAboutText(level: level)
+                .presentationCompactAdaptation(.popover)
+        }
+    }
+}
+
+private struct UsefulWordsAboutText: View {
+    let level: (level: String, target: String)?
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: Spacing.xs) {
             Text("Słowa, które naprawdę przydają się w życiu")
                 .font(FluentFont.headline)
                 .foregroundStyle(Palette.ink)
-            Text("Tylko często używane w codziennym angielskim, do poziomu \(targetLevel) (Twój szacowany poziom: \(level)). Najpierw tematy, których się uczysz, i sytuacje z codzienności. Do tego słowa z rodzin wyrazów, które znasz (np. decide → decision) — te mogą być rzadsze i o poziom trudniejsze. Bez słów, które już masz.")
+            Text(text)
                 .font(FluentFont.footnote)
                 .foregroundStyle(Palette.inkSecondary)
-                .fixedSize(horizontal: false, vertical: true)
+            Text("Dotknij słowa, aby je zaznaczyć, albo dodaj od razu przyciskiem +. Przesuń w bok, aby zobaczyć kolejną stronę.")
+                .font(FluentFont.footnote)
+                .foregroundStyle(Palette.inkSecondary)
         }
+        .fixedSize(horizontal: false, vertical: true)
+        .padding(Spacing.m)
+        .frame(idealWidth: 320, maxWidth: 360)
+    }
+
+    private var text: String {
+        let range = level.map { (value: (level: String, target: String)) -> String in
+            "do poziomu \(value.target) (Twój szacowany poziom: \(value.level))"
+        } ?? "na Twoim poziomie"
+        return "Tylko często używane w codziennym angielskim, \(range). Najpierw tematy, których się uczysz, i sytuacje z codzienności. Do tego słowa z rodzin wyrazów, które znasz (np. decide → decision) — te mogą być rzadsze i o poziom trudniejsze. Bez słów, które już masz."
     }
 }
 
-/// Zestaw w stronach: nagłówek z „Zaznacz stronę”, karta bieżącej strony (przesunięcie w bok
-/// zmienia stronę), wskaźnik stron i „Odśwież propozycje”.
+/// Zestaw w stronach: wiersz z „Zaznacz stronę”, obszar strony (przesunięcie w bok zmienia
+/// stronę), wskaźnik stron.
 private struct UsefulWordsPager: View {
     let result: UsefulWordsResult
-    let page: Int
-    let forward: Bool
-    let setNumber: Int
-    let selection: Set<String>
-    let addingIDs: Set<String>
-    let ownedIDs: Set<String>
-    let canDrawNewSet: Bool
-    let onToggle: (String) -> Void
-    let onTogglePage: ([UsefulWordSuggestion]) -> Void
-    let onAdd: (UsefulWordSuggestion) -> Void
-    let onPage: (Int) -> Void
-    let onDrawNewSet: () -> Void
+    let view: UsefulWordsViewState
+    let actions: UsefulWordsActions
 
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    private var pages: [[UsefulWordSuggestion]] {
+        UsefulWordsPaging.pages(result.suggestions, size: view.pageSize)
+    }
 
-    private var pages: [[UsefulWordSuggestion]] { UsefulWordsPaging.pages(result.suggestions) }
-
-    private var current: Int { min(max(0, page), max(0, pages.count - 1)) }
+    private var current: Int { min(max(0, view.page), max(0, pages.count - 1)) }
 
     private var pageItems: [UsefulWordSuggestion] {
         pages.indices.contains(current) ? pages[current] : []
     }
 
     private var pageSelected: Bool {
-        let open = pageItems.filter { !ownedIDs.contains($0.id) }
-        return !open.isEmpty && open.allSatisfy { selection.contains($0.id) }
+        let open = pageItems.filter { !view.ownedIDs.contains($0.id) }
+        return !open.isEmpty && open.allSatisfy { view.selection.contains($0.id) }
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: Spacing.s) {
-            SectionHeader(
-                "Propozycje",
-                subtitle: "Dotknij, aby zaznaczyć, albo dodaj od razu przyciskiem +. Przesuń w bok, aby zobaczyć kolejną stronę.",
-                actionTitle: pageSelected ? "Odznacz" : "Zaznacz stronę",
-                action: { onTogglePage(pageItems) }
+        VStack(alignment: .leading, spacing: Spacing.xs) {
+            HStack(spacing: Spacing.xs) {
+                Text("Przesuń w bok — kolejna strona")
+                    .font(FluentFont.caption)
+                    .foregroundStyle(Palette.inkSecondary)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+                Spacer(minLength: Spacing.xs)
+                Button {
+                    actions.onTogglePage(pageItems)
+                } label: {
+                    Text(pageSelected ? "Odznacz" : "Zaznacz stronę")
+                        .font(FluentFont.subheadline.weight(.semibold))
+                        .foregroundStyle(Palette.accent)
+                        .lineLimit(1)
+                        .frame(minHeight: HitTarget.minimum)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+            }
+            UsefulWordsPageArea(
+                items: pageItems,
+                details: result.details,
+                pageKey: "\(view.setNumber)-\(current)-\(view.pageSize)",
+                view: view,
+                current: current,
+                actions: actions
             )
-            ZStack(alignment: .top) {
-                UsefulWordsPageCard(
-                    items: pageItems,
-                    details: result.details,
-                    selection: selection,
-                    addingIDs: addingIDs,
-                    ownedIDs: ownedIDs,
-                    onToggle: onToggle,
-                    onAdd: onAdd
-                )
-                .id("\(setNumber)-\(current)")
-                .transition(pageTransition)
+            if pages.count > 1 {
+                UsefulWordsPageControl(page: current, count: pages.count, onPage: actions.onPage)
+            }
+        }
+    }
+}
+
+/// Obszar bieżącej strony: zajmuje całą wolną wysokość, mierzy ją (`GeometryReader`) i zgłasza,
+/// ile wierszy się mieści (`actions.onFit`). Strona nie przewija się w pionie — chyba że nie
+/// mieszczą się nawet 3 wiersze (bardzo duża czcionka).
+private struct UsefulWordsPageArea: View {
+    let items: [UsefulWordSuggestion]
+    let details: [String: UsefulWordDetail]
+    let pageKey: String
+    let view: UsefulWordsViewState
+    let current: Int
+    let actions: UsefulWordsActions
+
+    /// Wysokość zwięzłego wiersza z podziałem (3 linie tekstu + odstępy), skalowana z czcionką.
+    @ScaledMetric(relativeTo: .body) private var rowHeight: CGFloat = 78
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    var body: some View {
+        GeometryReader { (proxy: GeometryProxy) in
+            pageContent
+                .frame(width: proxy.size.width, height: proxy.size.height, alignment: .top)
+                .onAppear { report(proxy.size.height) }
+                .onChange(of: proxy.size.height) { (_: CGFloat, height: CGFloat) in report(height) }
+                .onChange(of: rowHeight) { (_: CGFloat, _: CGFloat) in report(proxy.size.height) }
+        }
+        .clipped()
+    }
+
+    @ViewBuilder
+    private var pageContent: some View {
+        if view.pageScrolls {
+            ScrollView {
+                card
             }
             .simultaneousGesture(swipe)
-            if pages.count > 1 {
-                UsefulWordsPageControl(page: current, count: pages.count, onPage: onPage)
+        } else {
+            ZStack(alignment: .top) {
+                card
+                    .id(pageKey)
+                    .transition(pageTransition)
             }
-            SecondaryButton("Odśwież propozycje", systemImage: "arrow.clockwise", action: onDrawNewSet)
-                .disabled(!canDrawNewSet)
-                .accessibilityHint(Text("Losuje nowy zestaw słów, których w tym tygodniu jeszcze nie było"))
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .contentShape(Rectangle())
+            .simultaneousGesture(swipe)
         }
     }
 
-    /// Przesunięcie w lewo — następna strona, w prawo — poprzednia (tylko wyraźnie poziome, żeby
-    /// nie przeszkadzać w przewijaniu ekranu).
+    private var card: some View {
+        UsefulWordsPageCard(
+            items: items,
+            details: details,
+            selection: view.selection,
+            addingIDs: view.addingIDs,
+            ownedIDs: view.ownedIDs,
+            onToggle: actions.onToggle,
+            onAdd: actions.onAdd
+        )
+    }
+
+    /// Wysokość na wiersze = obszar minus wewnętrzny margines karty.
+    private func report(_ height: CGFloat) {
+        let available = Double(height - 2 * Spacing.xs)
+        actions.onFit(UsefulWordsPaging.pageSize(forHeight: available, rowHeight: Double(rowHeight)))
+    }
+
+    /// Przesunięcie w lewo — następna strona, w prawo — poprzednia (tylko wyraźnie poziome).
     private var swipe: some Gesture {
         DragGesture(minimumDistance: 24)
             .onEnded { (value: DragGesture.Value) -> Void in
                 let dx = value.translation.width
                 let dy = value.translation.height
                 guard abs(dx) > 60, abs(dx) > abs(dy) * 1.5 else { return }
-                onPage(dx < 0 ? current + 1 : current - 1)
+                actions.onPage(dx < 0 ? current + 1 : current - 1)
             }
     }
 
@@ -420,13 +623,13 @@ private struct UsefulWordsPager: View {
             return .opacity
         }
         return .asymmetric(
-            insertion: .move(edge: forward ? .trailing : .leading).combined(with: .opacity),
-            removal: .move(edge: forward ? .leading : .trailing).combined(with: .opacity)
+            insertion: .move(edge: view.forward ? .trailing : .leading).combined(with: .opacity),
+            removal: .move(edge: view.forward ? .leading : .trailing).combined(with: .opacity)
         )
     }
 }
 
-/// Karta jednej strony (wiersze z polem wyboru).
+/// Karta jednej strony (zwięzłe wiersze z polem wyboru).
 private struct UsefulWordsPageCard: View {
     let items: [UsefulWordSuggestion]
     let details: [String: UsefulWordDetail]
@@ -437,7 +640,7 @@ private struct UsefulWordsPageCard: View {
     let onAdd: (UsefulWordSuggestion) -> Void
 
     var body: some View {
-        Card(spacing: 0) {
+        Card(padding: Spacing.xs, spacing: 0) {
             ForEach(items) { (item: UsefulWordSuggestion) in
                 UsefulWordSelectableRow(
                     suggestion: item,
@@ -456,6 +659,64 @@ private struct UsefulWordsPageCard: View {
     }
 }
 
+/// Dolny pasek o stałej wysokości: przycisk dodawania zaznaczonych, komunikat po dodaniu albo
+/// wskazówka. Stała wysokość = zaznaczanie nie zmienia liczby słów na stronie.
+private struct UsefulWordsBottomBar: View {
+    let selectedCount: Int
+    let isAdding: Bool
+    let message: String?
+    let note: String?
+    let hasList: Bool
+    let onAddSelected: () -> Void
+
+    @ScaledMetric(relativeTo: .body) private var height: CGFloat = 52
+
+    var body: some View {
+        content
+            .frame(maxWidth: .infinity, minHeight: height, maxHeight: height, alignment: .center)
+    }
+
+    @ViewBuilder
+    private var content: some View {
+        if selectedCount > 0 {
+            PrimaryButton(
+                "Dodaj do nauki: \(LibraryText.words(selectedCount))",
+                systemImage: "plus",
+                isLoading: isAdding,
+                action: onAddSelected
+            )
+        } else if let message {
+            UsefulWordsStatusLabel(text: message, systemImage: "checkmark.circle.fill", color: Palette.success)
+        } else if let note {
+            UsefulWordsStatusLabel(text: note, systemImage: "info.circle", color: Palette.inkSecondary)
+        } else if hasList {
+            UsefulWordsStatusLabel(
+                text: "Dotknij słowa, aby je zaznaczyć, albo dodaj od razu przyciskiem +.",
+                systemImage: "hand.tap",
+                color: Palette.inkSecondary
+            )
+        } else {
+            Color.clear
+        }
+    }
+}
+
+private struct UsefulWordsStatusLabel: View {
+    let text: String
+    let systemImage: String
+    let color: Color
+
+    var body: some View {
+        Label(text, systemImage: systemImage)
+            .font(FluentFont.footnote)
+            .foregroundStyle(color)
+            .lineLimit(2)
+            .minimumScaleFactor(0.8)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .accessibilityElement(children: .combine)
+    }
+}
+
 /// „‹ • • • ›” + „Strona 2 z 3”. VoiceOver: jeden element z akcją „dostosuj” (w górę / w dół).
 private struct UsefulWordsPageControl: View {
     let page: Int
@@ -470,6 +731,7 @@ private struct UsefulWordsPageControl: View {
             Text("Strona \(page + 1) z \(count)")
                 .font(FluentFont.footnote.monospacedDigit())
                 .foregroundStyle(Palette.inkSecondary)
+                .lineLimit(1)
             Spacer(minLength: 0)
             UsefulWordsPageArrow(systemImage: "chevron.right", isEnabled: page < count - 1) { onPage(page + 1) }
         }
@@ -525,7 +787,8 @@ private struct UsefulWordsPageDots: View {
     }
 }
 
-/// Wiersz z polem wyboru, przykładem, wymową i „+”.
+/// Zwięzły wiersz: pole wyboru, hasło z poziomem, tłumaczenie, uzasadnienie (1 linia),
+/// „i” (przykład, wymowa, pełny opis) i „+”.
 private struct UsefulWordSelectableRow: View {
     let suggestion: UsefulWordSuggestion
     let detail: UsefulWordDetail?
@@ -534,8 +797,6 @@ private struct UsefulWordSelectableRow: View {
     let isOwned: Bool
     let onToggle: () -> Void
     let onAdd: () -> Void
-
-    @Environment(SpeechService.self) private var speech
 
     private var indicator: String {
         if isOwned { return "checkmark.circle.fill" }
@@ -548,14 +809,14 @@ private struct UsefulWordSelectableRow: View {
     }
 
     var body: some View {
-        HStack(alignment: .center, spacing: Spacing.xs) {
+        HStack(alignment: .center, spacing: Spacing.xxs) {
             Button(action: onToggle) {
-                HStack(alignment: .center, spacing: Spacing.s) {
+                HStack(alignment: .center, spacing: Spacing.xs) {
                     Image(systemName: indicator)
                         .font(.system(.title3, design: .default, weight: .regular))
                         .foregroundStyle(indicatorColor)
                         .accessibilityHidden(true)
-                    UsefulWordText(suggestion: suggestion, detail: detail, showsExample: true)
+                    UsefulWordCompactText(suggestion: suggestion)
                         .ownedVocabularyDimmed(isOwned)
                     Spacer(minLength: 0)
                 }
@@ -565,16 +826,80 @@ private struct UsefulWordSelectableRow: View {
             .disabled(isOwned)
             .accessibilityAddTraits(isSelected || isOwned ? [.isSelected] : [])
             .accessibilityHint(Text(isSelected ? "Dotknij, aby odznaczyć" : "Dotknij, aby zaznaczyć"))
-            SpeakButton(size: .small, accessibilityLabel: "Odtwórz wymowę „\(suggestion.candidate.term)”") {
-                speech.speak(suggestion.candidate.term)
-            }
+            UsefulWordInfoButton(suggestion: suggestion, detail: detail)
             if isOwned {
                 OwnedVocabularyBadge()
             } else {
                 UsefulWordAddButton(term: suggestion.candidate.term, isAdding: isAdding, action: onAdd)
             }
         }
-        .padding(.vertical, Spacing.xs)
+        .padding(.vertical, Spacing.xxs)
+    }
+}
+
+/// „i” przy słowie: pełny opis, wymowa i przykład (K2: przykład tylko na życzenie).
+private struct UsefulWordInfoButton: View {
+    let suggestion: UsefulWordSuggestion
+    let detail: UsefulWordDetail?
+
+    @State private var isShown = false
+
+    var body: some View {
+        Button {
+            isShown = true
+        } label: {
+            Image(systemName: "info.circle")
+                .font(FluentFont.body)
+                .foregroundStyle(Palette.accent)
+                .frame(width: HitTarget.minimum, height: HitTarget.minimum)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(Text("Więcej o „\(suggestion.candidate.term)”"))
+        .accessibilityHint(Text("Przykład, wymowa i pełny opis"))
+        .popover(isPresented: $isShown) {
+            UsefulWordDetailPopover(suggestion: suggestion, detail: detail)
+                .presentationCompactAdaptation(.popover)
+        }
+    }
+}
+
+private struct UsefulWordDetailPopover: View {
+    let suggestion: UsefulWordSuggestion
+    let detail: UsefulWordDetail?
+
+    @Environment(SpeechService.self) private var speech
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: Spacing.s) {
+            HStack(alignment: .center, spacing: Spacing.xs) {
+                UsefulWordText(suggestion: suggestion, detail: detail, showsExample: false)
+                Spacer(minLength: Spacing.xs)
+                SpeakButton(size: .small, accessibilityLabel: "Odtwórz wymowę „\(suggestion.candidate.term)”") {
+                    speech.speak(suggestion.candidate.term)
+                }
+            }
+            if let ipa = detail?.ipa, !ipa.isEmpty {
+                Text(ipa)
+                    .font(FluentFont.footnote)
+                    .foregroundStyle(Palette.inkSecondary)
+            }
+            if let example = detail?.example {
+                VStack(alignment: .leading, spacing: Spacing.xxs) {
+                    HighlightedText(example.en, focus: example.focusEn)
+                        .font(FluentFont.callout)
+                        .foregroundStyle(Palette.ink)
+                    if !example.pl.isEmpty {
+                        Text(example.pl)
+                            .font(FluentFont.footnote)
+                            .foregroundStyle(Palette.inkSecondary)
+                    }
+                }
+            }
+        }
+        .fixedSize(horizontal: false, vertical: true)
+        .padding(Spacing.m)
+        .frame(idealWidth: 320, maxWidth: 360)
     }
 }
 

@@ -2,8 +2,10 @@ import SwiftUI
 import FluentKit
 
 /// Pełny ekran trybu „Fiszki” (G3): wybór talii → karty → krótkie podsumowanie.
+/// `resume` (FEEDBACK-6 K1): przerwana talia — od razu karty od miejsca przerwy.
 struct FlashcardDeckScreen: View {
     let collection: String?
+    var resume: FlashcardPausedDeck? = nil
 
     @Environment(LearningStore.self) private var store
     @State private var model: FlashcardDeckModel?
@@ -18,7 +20,7 @@ struct FlashcardDeckScreen: View {
         }
         .task {
             if model == nil {
-                let created = FlashcardDeckModel(store: store, collection: collection)
+                let created = FlashcardDeckModel(store: store, collection: collection, resume: resume)
                 model = created
                 await created.refreshCounts()
             }
@@ -233,7 +235,7 @@ private struct FlashcardRunView: View {
                 }
                 FlashcardDecisionButtons(onDecision: { (remembered: Bool) in decide(remembered) })
             }
-            Text("Każdą odpowiedź zapisujemy od razu — możesz przerwać w dowolnej chwili.")
+            Text("Każdą odpowiedź zapisujemy od razu — możesz przerwać w dowolnej chwili i wrócić do tej talii.")
                 .font(FluentFont.caption)
                 .foregroundStyle(Palette.inkSecondary)
                 .frame(maxWidth: .infinity)

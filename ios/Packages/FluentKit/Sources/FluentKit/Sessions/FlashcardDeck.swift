@@ -60,8 +60,9 @@ public struct FlashcardDeckCounts: Sendable, Hashable {
 }
 
 /// A running deck: position, answers and returning cards. Pure value — the screen keeps it in
-/// memory; every answer is saved immediately with `FlashcardDeckBuilder.record`.
-public struct FlashcardRun: Sendable, Hashable {
+/// memory; every answer is saved immediately with `FlashcardDeckBuilder.record`. `Codable`
+/// (FEEDBACK-6 K1): the app keeps a paused deck on the device so it can be continued later.
+public struct FlashcardRun: Codable, Sendable, Hashable {
     public var cards: [FlashcardCard]
     public var index: Int
     public var remembered: Int
@@ -153,16 +154,28 @@ public enum FlashcardDeckBuilder {
     }
 
     /// The deck with the system random number generator (`shuffled` — see the type comment).
+    /// `avoidingExamples` (meaning id → example indexes): sentences of an abandoned deck, skipped
+    /// when the meaning has another one („Zacznij od nowa”, `FreshStart`).
     public static func makeDeck(
         state: LearnerState,
         collection: String? = nil,
         limit: Int = defaultLimit,
         newLimit: Int = defaultNewLimit,
         now: Timestamp,
-        shuffled: Bool
+        shuffled: Bool,
+        avoidingExamples: [String: Set<Int>] = [:]
     ) -> [FlashcardCard] {
         var generator = SystemRandomNumberGenerator()
-        return makeDeck(state: state, collection: collection, limit: limit, newLimit: newLimit, now: now, shuffled: shuffled, using: &generator)
+        return makeDeck(
+            state: state,
+            collection: collection,
+            limit: limit,
+            newLimit: newLimit,
+            now: now,
+            shuffled: shuffled,
+            avoidingExamples: avoidingExamples,
+            using: &generator
+        )
     }
 
     /// The deck with an injected generator (tests). `shuffled: false` never touches `rng`.
@@ -173,6 +186,7 @@ public enum FlashcardDeckBuilder {
         newLimit: Int = defaultNewLimit,
         now: Timestamp,
         shuffled: Bool,
+        avoidingExamples: [String: Set<Int>] = [:],
         using rng: inout G
     ) -> [FlashcardCard] {
         let safeLimit = max(0, limit)
@@ -193,8 +207,9 @@ public enum FlashcardDeckBuilder {
             var added = 0
             for item in items where cards.count < safeLimit && added < count {
                 let seen = seenCounts[item.meaning.id] ?? 0
+                let avoided = avoidingExamples[item.meaning.id] ?? []
                 let example = ExamplePool.availableCount(item.meaning) > 0
-                    ? ExamplePool.nextUnusedExample(item.meaning, fallback: seen)
+                    ? FreshStart.preferredExample(item.meaning, fallback: seen, avoiding: avoided)
                     : 0
                 cards.append(FlashcardCard(wordId: item.word.id, meaningId: item.meaning.id, example: example, group: group))
                 added += 1

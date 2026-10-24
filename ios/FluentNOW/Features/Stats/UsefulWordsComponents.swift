@@ -69,6 +69,39 @@ enum UsefulWordSummaryText {
     }
 }
 
+/// Zwięzły tekst wiersza (FEEDBACK-6 K2): hasło + poziom, tłumaczenie i uzasadnienie — każde
+/// w jednej linii, żeby strona polecanych mieściła się bez przewijania. Pełny tekst i przykład
+/// są pod „i” (`UsefulWordText` w okienku).
+struct UsefulWordCompactText: View {
+    let suggestion: UsefulWordSuggestion
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 2) {
+            HStack(alignment: .firstTextBaseline, spacing: Spacing.xs) {
+                Text(suggestion.candidate.term)
+                    .font(FluentFont.headline)
+                    .foregroundStyle(Palette.ink)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.75)
+                LevelBadge(level: suggestion.candidate.level)
+            }
+            Text(suggestion.candidate.translation)
+                .font(FluentFont.subheadline)
+                .foregroundStyle(Palette.inkSecondary)
+                .lineLimit(1)
+                .minimumScaleFactor(0.85)
+            if !suggestion.summaryPl.isEmpty {
+                Text(UsefulWordSummaryText.attributed(suggestion))
+                    .font(FluentFont.footnote)
+                    .foregroundStyle(Palette.accentSoftInk)
+                    .lineLimit(1)
+                    .truncationMode(.tail)
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+}
+
 /// Tekst wiersza: hasło + poziom, tłumaczenie, uzasadnienie (i opcjonalnie przykład).
 struct UsefulWordText: View {
     let suggestion: UsefulWordSuggestion

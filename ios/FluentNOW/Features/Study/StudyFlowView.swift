@@ -47,6 +47,8 @@ struct StudyFlowView: View {
             ProductionPracticeView(autoStart: autoStart)
         case .flashcards(let collection):
             FlashcardDeckScreen(collection: collection)
+        case .resumedFlashcards(let paused):
+            FlashcardDeckScreen(collection: paused.collection, resume: paused)
         }
     }
 }

@@ -166,7 +166,8 @@ private struct VocabScrambleActions: View {
 
     @ViewBuilder
     private var helpButtons: some View {
-        if !model.scrambleHintShown, let translation = model.content.scramble?.translation, !translation.isEmpty {
+        // Test (K4): bez podpowiedzi (tłumaczenia).
+        if !model.isAssessment, !model.scrambleHintShown, let translation = model.content.scramble?.translation, !translation.isEmpty {
             StudyHintButton(title: "Podpowiedź") { model.showScrambleHint() }
         }
         if !model.placedTiles.isEmpty {
@@ -184,10 +185,14 @@ private struct VocabScrambleActions: View {
         }
     }
 
+    /// W teście (K4) bez „Sprawdź” — zdanie zatwierdza „Dalej” ekranu testu.
+    @ViewBuilder
     private func checkButton(fillsWidth: Bool) -> some View {
-        PrimaryButton("Sprawdź", systemImage: "arrow.right", fillsWidth: fillsWidth, action: model.checkScramble)
-            .disabled(!model.canCheckScramble)
-            .keyboardShortcut(.defaultAction)
+        if !model.isAssessment {
+            PrimaryButton("Sprawdź", systemImage: "arrow.right", fillsWidth: fillsWidth, action: model.checkScramble)
+                .disabled(!model.canCheckScramble)
+                .keyboardShortcut(.defaultAction)
+        }
     }
 }
 

@@ -128,6 +128,11 @@ public struct LearnerState: Codable, Sendable, Hashable {
     public var practiceHistory: [PracticeHistoryEntry]
     /// `true` for the web demo starter set.
     public var demo: Bool
+    /// iOS (FEEDBACK-6 K4): the level test in progress, or finished until its result is closed.
+    /// Optional in JSON — older states and the web export decode with `nil`.
+    public var assessment: AssessmentSession?
+    /// iOS: finished level tests (date, score, level). Optional in JSON (`[]`).
+    public var assessmentHistory: [AssessmentHistoryEntry]
 
     public init(
         combined: CombinedSession? = nil,
@@ -144,7 +149,9 @@ public struct LearnerState: Codable, Sendable, Hashable {
         production: ProductionSession? = nil,
         productionHistory: [ProductionHistoryEntry] = [],
         practiceHistory: [PracticeHistoryEntry] = [],
-        demo: Bool = false
+        demo: Bool = false,
+        assessment: AssessmentSession? = nil,
+        assessmentHistory: [AssessmentHistoryEntry] = []
     ) {
         self.combined = combined
         self.grammarSeen = grammarSeen
@@ -161,6 +168,8 @@ public struct LearnerState: Codable, Sendable, Hashable {
         self.productionHistory = productionHistory
         self.practiceHistory = practiceHistory
         self.demo = demo
+        self.assessment = assessment
+        self.assessmentHistory = assessmentHistory
     }
 
     /// A clean state for a new learner.
@@ -169,6 +178,7 @@ public struct LearnerState: Codable, Sendable, Hashable {
     enum CodingKeys: String, CodingKey {
         case combined, grammarSeen, words, collections, reviews, reviewSummaries, settings, session, reading
         case readingHistory, practice, production, productionHistory, practiceHistory, demo
+        case assessment, assessmentHistory
     }
 
     public init(from decoder: Decoder) throws {
@@ -188,6 +198,9 @@ public struct LearnerState: Codable, Sendable, Hashable {
         productionHistory = c.lossyArray(ProductionHistoryEntry.self, forKey: .productionHistory)
         practiceHistory = c.lossyArray(PracticeHistoryEntry.self, forKey: .practiceHistory)
         demo = c.lenientBool(.demo)
+        // A damaged test is dropped (like the other transient sessions), never the document.
+        assessment = c.lenientOptional(AssessmentSession.self, forKey: .assessment)
+        assessmentHistory = c.lossyArray(AssessmentHistoryEntry.self, forKey: .assessmentHistory)
     }
 
     private static func decodeGrammarSeen(_ c: KeyedDecodingContainer<CodingKeys>) -> [String: Double] {
@@ -238,6 +251,13 @@ public struct LearnerState: Codable, Sendable, Hashable {
         try c.encode(productionHistory, forKey: .productionHistory)
         try c.encode(practiceHistory, forKey: .practiceHistory)
         try c.encode(demo, forKey: .demo)
+        // Nullable like `combined`: always written, `null` when there is no test.
+        if let assessment {
+            try c.encode(assessment, forKey: .assessment)
+        } else {
+            try c.encodeNil(forKey: .assessment)
+        }
+        try c.encode(assessmentHistory, forKey: .assessmentHistory)
     }
 
     // MARK: - Lookup helpers

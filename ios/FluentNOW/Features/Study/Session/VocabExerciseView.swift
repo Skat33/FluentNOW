@@ -37,7 +37,8 @@ struct VocabExerciseView: View {
             }
             .modifier(VocabFlashcardSwipe(model: model, onDecision: onFlashcardDecision))
 
-            if model.isFinished && !(model.type == .flashcard && onFlashcardDecision != nil) {
+            // Test (K4): bez panelu wyniku — ekran testu od razu przechodzi dalej.
+            if model.isFinished && !model.isAssessment && !(model.type == .flashcard && onFlashcardDecision != nil) {
                 VStack(alignment: .leading, spacing: Spacing.m) {
                     VocabFeedbackView(model: model)
                     if let confidence, model.type != .flashcard {
@@ -86,6 +87,8 @@ struct VocabExerciseView: View {
     private func announceResult() {
         // Fiszka z obsługą decyzji przechodzi od razu dalej — bez komunikatu wyniku.
         if model.type == .flashcard && onFlashcardDecision != nil { return }
+        // Test: bez informacji poprawne/błędne.
+        if model.isAssessment { return }
         let summary = VocabFeedbackSummary(model: model)
         AccessibilityNotification.Announcement(summary.title).post()
     }

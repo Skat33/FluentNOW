@@ -133,6 +133,7 @@ actor LearningRepository {
         var readingHistory: [ReadingHistoryEntry] = []
         var practiceHistory: [PracticeHistoryEntry] = []
         var productionHistory: [ProductionHistoryEntry] = []
+        var assessmentHistory: [AssessmentHistoryEntry] = []
         var summaries: [String: ReviewSummary] = [:]
         var grammarSeen: [String: Double] = [:]
         for row in try modelContext.fetch(FetchDescriptor<HistoryRecord>()) {
@@ -151,6 +152,10 @@ actor LearningRepository {
             case .production:
                 if let entry = try? decoder.decode(ProductionHistoryEntry.self, from: row.payload) {
                     if !isDuplicate { productionHistory.append(entry) }
+                } else { readable = false }
+            case .assessment:
+                if let entry = try? decoder.decode(AssessmentHistoryEntry.self, from: row.payload) {
+                    if !isDuplicate { assessmentHistory.append(entry) }
                 } else { readable = false }
             case .summary:
                 if let entry = try? decoder.decode(ReviewSummary.self, from: row.payload) {
@@ -240,6 +245,7 @@ actor LearningRepository {
         let reading = decode(ReadingSession.self, sessionData[.reading], decoder, &skipped)
         let practice = decode(PracticeSession.self, sessionData[.practice], decoder, &skipped)
         let production = decode(ProductionSession.self, sessionData[.production], decoder, &skipped)
+        let assessment = decode(AssessmentSession.self, sessionData[.assessment], decoder, &skipped)
         let state = LearnerState(
             combined: combined,
             grammarSeen: grammarSeen,
@@ -255,7 +261,9 @@ actor LearningRepository {
             production: production,
             productionHistory: productionHistory.sorted { $0.at < $1.at },
             practiceHistory: practiceHistory.sorted { $0.at < $1.at },
-            demo: settingsValue.demo
+            demo: settingsValue.demo,
+            assessment: assessment,
+            assessmentHistory: assessmentHistory.sorted { $0.at < $1.at }
         )
         return Snapshot(state: state, skipped: skipped, duplicates: duplicates)
     }
@@ -394,6 +402,9 @@ actor LearningRepository {
         for entry in state.productionHistory {
             try upsertHistory(kind: .production, entryID: entry.id, at: entry.at, payload: try encoder.encode(entry))
         }
+        for entry in state.assessmentHistory {
+            try upsertHistory(kind: .assessment, entryID: entry.id, at: entry.at, payload: try encoder.encode(entry))
+        }
         for summary in state.reviewSummaries {
             try upsertHistory(kind: .summary, entryID: summary.day, at: 0, payload: try encoder.encode(summary))
         }
@@ -414,6 +425,7 @@ actor LearningRepository {
         try upsertSession(.reading, state.reading.map { try encoder.encode($0) }, now: now)
         try upsertSession(.practice, state.practice.map { try encoder.encode($0) }, now: now)
         try upsertSession(.production, state.production.map { try encoder.encode($0) }, now: now)
+        try upsertSession(.assessment, state.assessment.map { try encoder.encode($0) }, now: now)
 
         // Ustawienia
         let settings = try encoder.encode(SettingsPayload(settings: state.settings, collections: state.collections, demo: state.demo))

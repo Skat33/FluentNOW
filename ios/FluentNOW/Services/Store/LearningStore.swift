@@ -408,6 +408,8 @@ final class LearningStore {
         merged.practice = preload.practice ?? loaded.practice
         merged.production = preload.production ?? loaded.production
         merged.combined = preload.combined ?? loaded.combined
+        // Test poziomu (K4); historia testów jest już scalona przez `mergeStates`.
+        merged.assessment = preload.assessment ?? loaded.assessment
         merged.demo = preload.demo || loaded.demo
         return StateMigration.migrate(merged)
     }

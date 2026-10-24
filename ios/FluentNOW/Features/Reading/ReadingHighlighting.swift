@@ -20,25 +20,31 @@ struct ReadingPassageTokens: Sendable, Hashable {
 }
 
 /// Gotowy do wyświetlenia tekst czytanki (budowany na głównym wątku z `ReadingPassageTokens`).
+/// Każdy akapit w dwóch warstwach (FEEDBACK-6 K3, `ReadingHighlightedText`): `attributed` —
+/// wygląd (kolory, tła, linie; bez linków), `links` — te same znaki i grubość z linkami słów.
 struct ReadingPassageLayout {
     let tokens: ReadingPassageTokens
     let attributed: [AttributedString]
+    let links: [AttributedString]
     let hasOwnWords: Bool
     let hasUsefulWords: Bool
 
     init(tokens: ReadingPassageTokens) {
         self.tokens = tokens
         var built: [AttributedString] = []
+        var linked: [AttributedString] = []
         var own = false
         var useful = false
         for (index, paragraph) in tokens.paragraphs.enumerated() {
             let ranges = tokens.evidence.studyItem(at: index) ?? []
             built.append(ReadingHighlightStyle.attributed(tokens: paragraph, paragraph: index, evidence: ranges))
+            linked.append(ReadingHighlightStyle.attributed(tokens: paragraph, paragraph: index, evidence: [], layer: .links))
             for token in paragraph {
                 if token.wordId != nil { own = true } else if token.glossaryIndex != nil { useful = true }
             }
         }
         attributed = built
+        links = linked
         hasOwnWords = own
         hasUsefulWords = useful
     }
@@ -108,13 +114,33 @@ struct ReadingTermLink: Hashable {
     }
 }
 
-/// Wygląd podświetleń w tekście. Rozróżnienie nie tylko kolorem: słowa z mojego słownika są
-/// pogrubione na fioletowym tle (z ciągłym podkreśleniem), słowa przydatne — zwykłe na jasnym
-/// niebieskim tle (z podkreśleniem kropkowanym); dowody — tło markera. Szczegóły: `piece`.
+/// Kolory podświetleń (FEEDBACK-6 K3). Pary tekst/tło ≥ 4,5:1 (WCAG AA) w obu motywach, także
+/// na tle markera dowodu (`Palette.warningSoft`): słowo z mojego słownika 5,8 / 6,4 na swoim tle
+/// (6,3 / 5,7 na markerze), słowo przydatne (teal) 5,6 / 7,3 (5,9 / 6,9 na markerze).
+enum ReadingHighlightColors {
+    /// Słowo z mojego słownika: fiolet na delikatnym fioletowym tle.
+    static let ownInk = Palette.accentSoftInk
+    static let ownFill = Palette.accentSoft
+    /// Słowo przydatne (słowniczek): pogrubiony teal na delikatnym morskim tle.
+    static let usefulInk = Palette.dynamic(light: 0x0B6870, dark: 0x7DD8D3)
+    static let usefulFill = Palette.dynamic(light: 0xDDF2F1, dark: 0x173B3E)
+}
+
+/// Wygląd podświetleń w tekście (FEEDBACK-6 K3). Rozróżnienie nie tylko kolorem:
+/// - słowo z mojego słownika: fioletowy tekst na fioletowym tle, zwykła grubość, ciągłe podkreślenie;
+/// - słowo przydatne: **pogrubiony** teal na jasnym morskim tle, bez podkreślenia;
+/// - dowód: tło markera zastępuje tło słowa; kolor, grubość i linia zostają.
+/// Szczegóły i powód dwóch warstw: `piece`, `ReadingHighlightedText`.
 enum ReadingHighlightStyle {
     enum Kind: Hashable {
         case own
         case useful
+    }
+
+    /// Warstwa akapitu: wygląd (bez linków) albo linki (te same znaki i grubość, bez kolorów).
+    enum Layer: Hashable {
+        case display
+        case links
     }
 
     static func kind(of token: ReadingToken) -> Kind? {
@@ -123,7 +149,7 @@ enum ReadingHighlightStyle {
         return nil
     }
 
-    static func attributed(tokens: [ReadingToken], paragraph: Int, evidence: [Range<Int>]) -> AttributedString {
+    static func attributed(tokens: [ReadingToken], paragraph: Int, evidence: [Range<Int>], layer: Layer = .display) -> AttributedString {
         var result = AttributedString()
         var offset = 0
         for (index, token) in tokens.enumerated() {
@@ -135,7 +161,12 @@ enum ReadingHighlightStyle {
             let link: URL? = tokenKind == nil ? nil : ReadingTermLink(paragraph: paragraph, token: index).url
             for segment in segments(start: start, end: end, evidence: evidence) {
                 let text = String(chars[(segment.range.lowerBound - start)..<(segment.range.upperBound - start)])
-                result.append(piece(text, kind: tokenKind, link: link, isEvidence: segment.isEvidence))
+                switch layer {
+                case .display:
+                    result.append(piece(text, kind: tokenKind, link: nil, isEvidence: segment.isEvidence))
+                case .links:
+                    result.append(linkPiece(text, kind: tokenKind, link: link))
+                }
             }
         }
         return result
@@ -163,32 +194,26 @@ enum ReadingHighlightStyle {
         return result
     }
 
-    /// Odcinek tekstu z wyglądem podświetlenia (ui-tweaks, weryfikacja na iOS 26):
-    /// - SwiftUI `Text` rysuje linki kolorem `tint` (akcent) i może pominąć `ForegroundColorAttribute`;
-    /// - wzór kropkowany podkreślenia (`Text.LineStyle(pattern: .dot)`) na odcinku-linku nie jest
-    ///   pewny w `Text` — dlatego nie jest jedynym wyróżnikiem.
-    /// Pewne cechy, które `Text` zawsze rysuje: tło (`BackgroundColorAttribute`) i pogrubienie
-    /// (`inlinePresentationIntent`). Rozróżnienie rodzajów nie tylko kolorem:
-    /// - mój słownik: fioletowe tło (`accentSoft`) + **pogrubienie** + ciągłe podkreślenie;
-    /// - przydatne: jasne niebieskie tło (`infoSoft`) + zwykła grubość + podkreślenie kropkowane;
-    /// - dowód: tło markera (`warningSoft`) zastępuje tło słowa; grubość i linia zostają.
+    /// Odcinek warstwy wyglądu. SwiftUI `Text` rysuje odcinki-linki kolorem `tint` i pomija ich
+    /// `ForegroundColorAttribute` (ui-tweaks) — dlatego ta warstwa **nie ma linków** (`link` jest
+    /// ignorowany, parametr zostaje dla zgodności), a kolory tekstu, tła i linie rysują się zawsze.
+    /// Linki są w osobnej, przezroczystej warstwie (`linkPiece`, `ReadingHighlightedText`).
+    /// - mój słownik: `ReadingHighlightColors.ownInk` na `ownFill`, zwykła grubość, ciągłe podkreślenie;
+    /// - przydatne: **pogrubiony** `usefulInk` (teal) na `usefulFill`, bez podkreślenia;
+    /// - dowód: tło markera (`warningSoft`) zastępuje tło słowa; kolor, grubość i linia zostają.
     static func piece(_ text: String, kind: Kind?, link: URL?, isEvidence: Bool) -> AttributedString {
         var piece = AttributedString(text)
-        if let link {
-            piece.link = link
-        }
         switch kind {
         case nil:
             break
         case .own:
-            piece.inlinePresentationIntent = .stronglyEmphasized
-            piece[AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute.self] = Text.LineStyle.single
-            piece[AttributeScopes.SwiftUIAttributes.ForegroundColorAttribute.self] = Palette.accent
-            piece[AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute.self] = Palette.accentSoft
+            piece[AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute.self] = Text.LineStyle(pattern: .solid, color: ReadingHighlightColors.ownInk)
+            piece[AttributeScopes.SwiftUIAttributes.ForegroundColorAttribute.self] = ReadingHighlightColors.ownInk
+            piece[AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute.self] = ReadingHighlightColors.ownFill
         case .useful:
-            piece[AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute.self] = Text.LineStyle(pattern: .dot, color: Palette.accent)
-            piece[AttributeScopes.SwiftUIAttributes.ForegroundColorAttribute.self] = Palette.accent
-            piece[AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute.self] = Palette.infoSoft
+            piece.inlinePresentationIntent = .stronglyEmphasized
+            piece[AttributeScopes.SwiftUIAttributes.ForegroundColorAttribute.self] = ReadingHighlightColors.usefulInk
+            piece[AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute.self] = ReadingHighlightColors.usefulFill
         }
         if isEvidence {
             piece[AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute.self] = Palette.warningSoft
@@ -196,8 +221,56 @@ enum ReadingHighlightStyle {
         return piece
     }
 
+    /// Odcinek warstwy linków: te same znaki i ta sama grubość co w warstwie wyglądu (identyczny
+    /// układ wierszy), link słowa, bez kolorów i teł.
+    static func linkPiece(_ text: String, kind: Kind?, link: URL?) -> AttributedString {
+        var piece = AttributedString(text)
+        if let link {
+            piece.link = link
+        }
+        if kind == .useful {
+            piece.inlinePresentationIntent = .stronglyEmphasized
+        }
+        return piece
+    }
+
     /// Próbka do legendy.
     static func sample(_ text: String, kind: Kind) -> AttributedString {
         piece(text, kind: kind, link: nil, isEvidence: false)
+    }
+
+    /// Opis rodzaju w legendzie (zgodny z `piece`).
+    static func legendText(_ kind: Kind) -> String {
+        switch kind {
+        case .own:
+            return "fioletowe na fioletowym tle, podkreślone — z Twojego słownika"
+        case .useful:
+            return "pogrubione, morskie na jasnym tle — warte nauki"
+        }
+    }
+}
+
+/// Akapit z podświetleniami w dwóch warstwach (FEEDBACK-6 K3):
+/// - spód: `links` — te same znaki z linkami słów, przezroczyste (`tint` i tekst `.clear`);
+///   obsługuje dotknięcia (`openURL` karty) i VoiceOver (rotor linków);
+/// - wierzch: `display` — kolory, tła i linie bez linków (SwiftUI nie przemalowuje ich `tint`),
+///   bez dotknięć i ukryty dla VoiceOver.
+/// Obie warstwy mają tę samą czcionkę (z otoczenia), te same znaki i grubość, więc wiersze łamią
+/// się identycznie.
+struct ReadingHighlightedText: View {
+    let display: AttributedString
+    let links: AttributedString
+
+    var body: some View {
+        Text(links)
+            .foregroundStyle(Color.clear)
+            .tint(Color.clear)
+            .contentShape(Rectangle())
+            .overlay(alignment: .topLeading) {
+                Text(display)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .allowsHitTesting(false)
+                    .accessibilityHidden(true)
+            }
     }
 }

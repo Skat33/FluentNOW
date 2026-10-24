@@ -12,7 +12,7 @@ struct VocabPromptView: View {
         case .recall:
             VocabRecallPrompt(content: model.content)
         case .cloze:
-            VocabClozePrompt(content: model.content)
+            VocabClozePrompt(content: model.content, inAssessment: model.isAssessment)
         case .meaning:
             VocabMeaningPrompt(content: model.content)
         case .dictation:
@@ -137,10 +137,12 @@ private struct VocabRecallPrompt: View {
 
 private struct VocabClozePrompt: View {
     let content: VocabExerciseContent
+    /// Test (K4): słowo może pochodzić z bazy, nie ze słownika ucznia.
+    var inAssessment: Bool = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: Spacing.s) {
-            StudyQuestionLabel(text: "Uzupełnij zdanie słowem ze swojego słownika")
+            StudyQuestionLabel(text: inAssessment ? "Uzupełnij zdanie brakującym słowem" : "Uzupełnij zdanie słowem ze swojego słownika")
             Text(content.clozeSentence)
                 .font(FluentFont.sentence)
                 .foregroundStyle(Palette.ink)

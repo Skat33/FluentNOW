@@ -1,15 +1,30 @@
 import Foundation
 import FluentKit
 
-/// Słownik → Polecane (FEEDBACK-5 J2): zamiast nieskończonej listy — zestaw najwyżej
-/// `maxPages` stron po `pageSize` słów, przewijanych poziomo. „Odśwież propozycje” losuje nowy
-/// zestaw z najlepszej części tej samej puli rankingu (`UsefulWordsCatalog`, ziarno = tydzień),
-/// z pominięciem słów pokazanych już w tym tygodniu. Czyste funkcje — stan trzyma ekran.
+/// Słownik → Polecane (FEEDBACK-5 J2): zamiast nieskończonej listy — zestaw `setSize` słów
+/// w stronach przewijanych poziomo. „Odśwież propozycje” losuje nowy zestaw z najlepszej części
+/// tej samej puli rankingu (`UsefulWordsCatalog`, ziarno = tydzień), z pominięciem słów
+/// pokazanych już w tym tygodniu. Czyste funkcje — stan trzyma ekran.
+///
+/// FEEDBACK-6 K2: strona mieści się na ekranie bez przewijania w pionie — liczba słów na stronie
+/// (`minPageSize`…`pageSize`) zależy od dostępnej wysokości (`pageSize(forHeight:rowHeight:)`).
 enum UsefulWordsPaging {
+    /// Najwięcej słów na stronie.
     static let pageSize = 6
+    /// Najmniej słów na stronie (mniej się nie mieści — wtedy strona się przewija).
+    static let minPageSize = 3
     static let maxPages = 3
     /// Słów w jednym zestawie (wszystkie strony).
     static let setSize = pageSize * maxPages
+
+    /// Słów na stronie dla wysokości obszaru listy (`rowHeight` — wysokość wiersza z odstępem);
+    /// `nil`, gdy nie mieści się nawet `minPageSize` (bardzo duża czcionka — strona przewijana).
+    static func pageSize(forHeight height: Double, rowHeight: Double) -> Int? {
+        guard height.isFinite, rowHeight.isFinite, rowHeight > 0, height > 0 else { return nil }
+        let fitting = Int((height / rowHeight).rounded(.down))
+        guard fitting >= minPageSize else { return nil }
+        return min(pageSize, fitting)
+    }
     /// Pula rankingu, z której losowane są kolejne zestawy (kilka odświeżeń na tydzień).
     static let poolLimit = 72
 
@@ -107,11 +122,20 @@ enum UsefulWordsPaging {
         return Draw(items: items, shown: seen, startedOver: startedOver)
     }
 
-    /// Podział na strony po `pageSize`.
-    static func pages(_ items: [UsefulWordSuggestion]) -> [[UsefulWordSuggestion]] {
+    /// Podział na strony po `size` słów (domyślnie `pageSize`; poza zakresem — przycięte do
+    /// `minPageSize…pageSize`).
+    static func pages(_ items: [UsefulWordSuggestion], size: Int = pageSize) -> [[UsefulWordSuggestion]] {
         guard !items.isEmpty else { return [] }
-        return stride(from: 0, to: items.count, by: pageSize).map { (start: Int) -> [UsefulWordSuggestion] in
-            Array(items[start..<min(start + pageSize, items.count)])
+        let step = min(pageSize, max(minPageSize, size))
+        return stride(from: 0, to: items.count, by: step).map { (start: Int) -> [UsefulWordSuggestion] in
+            Array(items[start..<min(start + step, items.count)])
         }
+    }
+
+    /// Strona, na której jest słowo o indeksie `firstIndex` zestawu, po zmianie rozmiaru strony
+    /// (pierwsze widoczne słowo zostaje widoczne).
+    static func page(containing firstIndex: Int, size: Int) -> Int {
+        let step = min(pageSize, max(minPageSize, size))
+        return max(0, firstIndex) / step
     }
 }

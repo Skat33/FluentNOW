@@ -10,6 +10,8 @@ struct StudyExerciseTypesCard: View {
     let collection: String?
     let startingType: ExerciseType?
     let notice: String?
+    /// Typ z przerwaną sesją (FEEDBACK-6 K1) — znacznik „Przerwane” na kafelku.
+    var pausedType: ExerciseType? = nil
     let onStart: (ExerciseType) -> Void
     let onPictures: () -> Void
     let onDismissNotice: () -> Void
@@ -19,11 +21,12 @@ struct StudyExerciseTypesCard: View {
 
     var body: some View {
         Card(spacing: Spacing.m) {
-            SectionHeader("Ćwicz wybrany typ", subtitle: subtitle)
+            SectionHeader("Ćwiczenia", subtitle: subtitle)
             StudyExerciseMinutesPicker(minutes: $minutes)
             StudyExerciseTypeGrid(
                 availability: availability,
                 startingType: startingType,
+                pausedType: pausedType,
                 onStart: onStart,
                 onPictures: onPictures
             )
@@ -75,6 +78,7 @@ private struct StudyExerciseMinutesPicker: View {
 private struct StudyExerciseTypeGrid: View {
     let availability: SingleTypeAvailability?
     let startingType: ExerciseType?
+    let pausedType: ExerciseType?
     let onStart: (ExerciseType) -> Void
     let onPictures: () -> Void
 
@@ -85,7 +89,8 @@ private struct StudyExerciseTypeGrid: View {
                     type: type,
                     count: availability?.count(for: type),
                     isStarting: startingType == type,
-                    isBusy: startingType != nil
+                    isBusy: startingType != nil,
+                    isPaused: pausedType == type
                 ) {
                     onStart(type)
                 }
@@ -102,6 +107,7 @@ private struct StudyExerciseTypeTile: View {
     let count: Int?
     let isStarting: Bool
     let isBusy: Bool
+    let isPaused: Bool
     let action: () -> Void
 
     private var isEmpty: Bool { count == 0 }
@@ -132,6 +138,9 @@ private struct StudyExerciseTypeTile: View {
                 Text(countText)
                     .font(FluentFont.caption.weight(.semibold))
                     .foregroundStyle(isEmpty ? Palette.inkSecondary : Palette.accent)
+                if isPaused {
+                    TagChip("Przerwane", systemImage: "pause.circle", tone: .accent)
+                }
             }
             .fixedSize(horizontal: false, vertical: true)
             .frame(maxWidth: .infinity, minHeight: 120, alignment: .topLeading)
@@ -147,15 +156,20 @@ private struct StudyExerciseTypeTile: View {
         .buttonStyle(.plain)
         .disabled(isBusy)
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel(Text(type.practiceTitle))
+        .accessibilityLabel(Text(isPaused ? "\(type.practiceTitle), przerwane" : type.practiceTitle))
         .accessibilityValue(Text(countText))
-        .accessibilityHint(Text(isEmpty ? "Wyjaśnia, czego brakuje do tego ćwiczenia" : type.practiceDescription))
+        .accessibilityHint(Text(accessibilityHintText))
         .accessibilityAddTraits(.isButton)
     }
 
     private var countText: String {
         guard let count else { return "Liczę słowa…" }
         return StudySingleTypeText.availability(count)
+    }
+
+    private var accessibilityHintText: String {
+        if isPaused { return "Pozwala dokończyć przerwaną sesję albo zacząć od nowa" }
+        return isEmpty ? "Wyjaśnia, czego brakuje do tego ćwiczenia" : type.practiceDescription
     }
 }
 

@@ -15,6 +15,8 @@ enum StudyFlow: Identifiable, Hashable {
     case production(autoStart: Bool)
     /// Osobny tryb „Fiszki” (G3): talia w pamięci, każda odpowiedź zapisywana od razu.
     case flashcards(collection: String?)
+    /// Przerwana talia fiszek (FEEDBACK-6 K1, „Kontynuuj, gdzie skończyłem”).
+    case resumedFlashcards(FlashcardPausedDeck)
 
     var id: String {
         switch self {
@@ -23,7 +25,7 @@ enum StudyFlow: Identifiable, Hashable {
         case .reading: return "reading"
         case .practice(let kind, _): return "practice-\(kind.rawValue)"
         case .production: return "production"
-        case .flashcards: return "flashcards"
+        case .flashcards, .resumedFlashcards: return "flashcards"
         }
     }
 
@@ -34,7 +36,29 @@ enum StudyFlow: Identifiable, Hashable {
         case .reading: return "Czytanie"
         case .practice(let kind, _): return kind.studyTitle
         case .production: return "Produkcja gramatyczna"
+        case .flashcards, .resumedFlashcards: return "Fiszki"
+        }
+    }
+}
+
+/// Zajęcie na ekranie Nauka, które można przerwać i wznowić (FEEDBACK-6 K1). Dotknięcie kafelka
+/// z przerwaną sesją pokazuje wybór „Kontynuuj, gdzie skończyłem” / „Zacznij od nowa”.
+enum StudyActivity: Hashable {
+    /// „Ćwicz wybrany typ” (sesja jednego typu w `state.session`).
+    case singleType(ExerciseType)
+    /// Talia fiszek (przerwa zapisana na urządzeniu, `FlashcardPauseStore`).
+    case flashcards
+    case reading
+    case practice(PracticeKind)
+    case production
+
+    var title: String {
+        switch self {
+        case .singleType(let type): return type.practiceTitle
         case .flashcards: return "Fiszki"
+        case .reading: return "Czytanie"
+        case .practice(let kind): return kind.studyTitle
+        case .production: return "Produkcja gramatyczna"
         }
     }
 }

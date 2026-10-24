@@ -103,6 +103,8 @@ enum SessionKind: String, CaseIterable {
     case reading
     case practice
     case production
+    /// Test poziomu (FEEDBACK-6 K4). Starsze wersje pomijają nieznany rodzaj sesji.
+    case assessment
 }
 
 /// Rodzaje wpisów w `HistoryRecord.kind`.
@@ -112,4 +114,6 @@ enum HistoryKind: String, CaseIterable {
     case production
     case summary
     case grammarSeen
+    /// Ukończony test poziomu (`AssessmentHistoryEntry`, K4). Starsze wersje liczą go jako pominięty rekord.
+    case assessment
 }

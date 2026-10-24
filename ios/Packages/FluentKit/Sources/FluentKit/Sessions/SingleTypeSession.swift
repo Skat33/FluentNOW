@@ -126,12 +126,22 @@ public enum SingleTypeSession {
 
     /// A one-type session; empty when the type is not offered or no meaning can carry it (the
     /// screen then explains why). Due → known → new; at most `taskLimit` tasks.
-    public static func makeSession(state: LearnerState, type: ExerciseType, minutes: Int, collection: String? = nil, now: Timestamp) -> VocabSession {
+    /// `avoidingExamples` (meaning id → example indexes): sentences of an abandoned session that
+    /// are skipped whenever the meaning has another sentence for the type („Zacznij od nowa”,
+    /// FEEDBACK-6 K1; `FreshStart.singleTypeSession`). Empty — the usual choice.
+    public static func makeSession(
+        state: LearnerState,
+        type: ExerciseType,
+        minutes: Int,
+        collection: String? = nil,
+        now: Timestamp,
+        avoidingExamples: [String: Set<Int>] = [:]
+    ) -> VocabSession {
         let safeMinutes = max(1, minutes)
         guard let sessionMode = SingleTypeSession.mode(for: type) else {
             return VocabSession(tasks: [], minutes: safeMinutes, mode: StudyMode.mixed.rawValue)
         }
-        let ordered = prioritized(state: state, type: type, collection: collection, now: now)
+        let ordered = prioritized(state: state, type: type, collection: collection, now: now, avoiding: avoidingExamples)
         let limit = taskLimit(for: type, minutes: safeMinutes)
         let tasks: [VocabTask]
         if type == .matchPairs {
@@ -186,9 +196,33 @@ public enum SingleTypeSession {
         return result
     }
 
+    /// Like the public `buildableExample`, but skipping the sentences in `avoid` while another
+    /// sentence can carry the type; when none can, the usual choice (the meaning stays in the
+    /// session with a sentence already seen rather than dropping out).
+    static func buildableExample(
+        _ type: ExerciseType,
+        word: Word,
+        meaning: Meaning,
+        preferred: Int,
+        listeningReady: Bool,
+        avoiding avoid: Set<Int>
+    ) -> Int? {
+        let count = ExamplePool.availableCount(meaning)
+        if !avoid.isEmpty && count > 0 {
+            let start = ((preferred % count) + count) % count
+            for step in 0..<min(count, exampleScanLimit + avoid.count) {
+                let index = (start + step) % count
+                if !avoid.contains(index) && canBuild(type, word: word, meaning: meaning, exampleIndex: index, listeningReady: listeningReady) {
+                    return index
+                }
+            }
+        }
+        return buildableExample(type, word: word, meaning: meaning, preferred: preferred, listeningReady: listeningReady)
+    }
+
     /// Buildable tasks: due reviews (earliest first), known meanings (soonest due first), new
     /// meanings — starred words first within each group.
-    static func prioritized(state: LearnerState, type: ExerciseType, collection: String?, now: Timestamp) -> [Entry] {
+    static func prioritized(state: LearnerState, type: ExerciseType, collection: String?, now: Timestamp, avoiding: [String: Set<Int>] = [:]) -> [Entry] {
         let listeningReady = type == .listeningChoice && ListeningChoice.hasDistractorPool(state)
         var seenCounts: [String: Int] = [:]
         for review in state.reviews {
@@ -198,8 +232,16 @@ public enum SingleTypeSession {
         var known: [Entry] = []
         var fresh: [Entry] = []
         for item in candidates(state: state, collection: collection) {
-            let preferred = ExamplePool.nextUnusedExample(item.meaning, fallback: seenCounts[item.meaning.id] ?? 0)
-            guard let example = buildableExample(type, word: item.word, meaning: item.meaning, preferred: preferred, listeningReady: listeningReady) else { continue }
+            let avoided = avoiding[item.meaning.id] ?? []
+            let preferred = FreshStart.preferredExample(item.meaning, fallback: seenCounts[item.meaning.id] ?? 0, avoiding: avoided)
+            guard let example = buildableExample(
+                type,
+                word: item.word,
+                meaning: item.meaning,
+                preferred: preferred,
+                listeningReady: listeningReady,
+                avoiding: avoided
+            ) else { continue }
             let task = VocabTask(wordId: item.word.id, meaningId: item.meaning.id, type: type, example: example)
             if item.meaning.scores.isEmpty {
                 fresh.append(Entry(item: item, task: task, due: 0))

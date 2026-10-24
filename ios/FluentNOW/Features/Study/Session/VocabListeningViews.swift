@@ -115,6 +115,10 @@ struct VocabListeningChoiceArea: View {
     }
 
     private func rowState(_ index: Int) -> StudyChoiceRow.RowState {
+        // Test (K4): tylko zaznaczenie wyboru, bez poprawnej/błędnej.
+        if model.isAssessment {
+            return index == model.chosenOption ? .chosen : .idle
+        }
         if model.isFinished {
             if index == model.correctOption { return .correct }
             if index == model.chosenOption || model.wrongOptions.contains(index) { return .wrong }

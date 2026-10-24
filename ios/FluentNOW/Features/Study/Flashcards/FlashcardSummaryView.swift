@@ -81,8 +81,11 @@ private struct FlashcardForgottenList: View {
 }
 
 /// Karta „Fiszki” na ekranie Nauka: liczniki talii i wejście w osobny tryb.
+/// `pausedText` (FEEDBACK-6 K1): przerwana talia — znacznik „Przerwane”; dotknięcie „Otwórz
+/// fiszki” pokazuje wtedy wybór „Kontynuuj” / „Zacznij od nowa”.
 struct StudyFlashcardsCard: View {
     let counts: FlashcardDeckCounts?
+    var pausedText: String? = nil
     let onOpen: () -> Void
 
     var body: some View {
@@ -90,6 +93,9 @@ struct StudyFlashcardsCard: View {
             SectionHeader("Fiszki", subtitle: subtitle)
             if let counts {
                 FlashcardCountsRow(counts: counts)
+            }
+            if let pausedText {
+                TagChip("Przerwane · \(pausedText)", systemImage: "pause.circle", tone: .accent)
             }
             SecondaryButton("Otwórz fiszki", systemImage: "rectangle.on.rectangle.angled", action: onOpen)
         }

@@ -47,11 +47,23 @@ final class FlashcardDeckModel {
     @ObservationIgnored private var cardShownAt = Date()
     @ObservationIgnored private var runSeconds: Double = 0
 
-    init(store: LearningStore, collection: String?, defaults: UserDefaults? = .standard) {
+    /// `resume` — przerwana talia (FEEDBACK-6 K1, „Kontynuuj, gdzie skończyłem”): od razu karty,
+    /// od miejsca przerwy.
+    init(store: LearningStore, collection: String?, resume: FlashcardPausedDeck? = nil, defaults: UserDefaults? = .standard) {
         self.store = store
-        self.collection = collection
+        self.collection = resume?.collection ?? collection
         self.defaults = defaults
         self.shuffled = (defaults?.object(forKey: Self.shuffleKey) as? Bool) ?? true
+        if let resume {
+            var restored = resume.run
+            restored.dropMissing(in: store.state)
+            if !restored.isFinished {
+                run = restored
+                runSeconds = max(0, resume.seconds)
+                showNextCard()
+                phase = .running
+            }
+        }
     }
 
     var currentCard: FlashcardCard? { run.currentCard }
@@ -85,9 +97,12 @@ final class FlashcardDeckModel {
         let limit = max(1, size)
         let now = store.now()
         let shuffle = shuffled
+        // Nowa talia zastępuje przerwaną (K1): jej zdania pomijamy, żeby karty miały inne przykłady.
+        FlashcardPauseStore.abandon(defaults)
+        let avoided = FlashcardPauseStore.takeAvoidedExamples(defaults)
         // Losowość z systemowego generatora (bez stałego ziarna) — każda talia inna.
         let cards = await store.compute { (state: LearnerState) -> [FlashcardCard] in
-            FlashcardDeckBuilder.makeDeck(state: state, collection: limitedTo, limit: limit, now: now, shuffled: shuffle)
+            FlashcardDeckBuilder.makeDeck(state: state, collection: limitedTo, limit: limit, now: now, shuffled: shuffle, avoidingExamples: avoided)
         }
         isPreparing = false
         guard !cards.isEmpty else {
@@ -162,6 +177,7 @@ final class FlashcardDeckModel {
         if run.isFinished {
             phase = .finished
         }
+        savePause()
     }
 
     /// Karty usunięte w międzyczasie (inne urządzenie) — wypadają z talii.
@@ -170,7 +186,18 @@ final class FlashcardDeckModel {
         run.dropMissing(in: store.state)
         if run.isFinished {
             phase = .finished
+            savePause()
         }
+    }
+
+    /// Talia w toku zapisana na urządzeniu (K1: wznowienie po przerwie); skończona — usunięta.
+    private func savePause() {
+        guard phase == .running, !run.isFinished, run.index > 0 else {
+            FlashcardPauseStore.clear(defaults)
+            return
+        }
+        let paused = FlashcardPausedDeck(run: run, collection: collection, seconds: runSeconds, savedAt: store.now())
+        FlashcardPauseStore.save(paused, defaults)
     }
 
     // MARK: Podsumowanie
