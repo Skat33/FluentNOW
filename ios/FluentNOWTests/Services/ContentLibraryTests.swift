@@ -113,6 +113,42 @@ final class ContentLibraryTests: XCTestCase {
         XCTAssertFalse(variants.polishSenseVariants.isEmpty)
     }
 
+    /// Słownik rdzeniowy (CONTENT-SCHEMA §6): `core-cNN/core.<hasło>` rozwiązuje się przez istniejące API,
+    /// także gdy wpis trafił do innego sharda; core nie jest tematem wyszukiwania.
+    func testCoreReferencesResolveAndCoreIsNotATopic() async throws {
+        let library = try repositoryLibrary()
+        let ids = await library.coreFileIDs()
+        guard let firstID = ids.first else { throw XCTSkip("Brak plików core/") }
+        let core = try await library.topic(id: firstID)
+        XCTAssertEqual(core.group, CoreVocabulary.group)
+        let entry = try XCTUnwrap(core.allEntries.first)
+
+        let resolved = try await library.entry(reference: "\(core.id)/\(entry.id)")
+        XCTAssertEqual(resolved.id, entry.id)
+        XCTAssertEqual(resolved.examples.count, entry.examples.count)
+        // Stara referencja do innego sharda: wpis odnajdywany po id.
+        let moved = try await library.entry(reference: "core-c99/\(entry.id)")
+        XCTAssertEqual(moved.id, entry.id)
+        do {
+            _ = try await library.entry(reference: "\(core.id)/core.no-such-word")
+            XCTFail("Oczekiwano błędu")
+        } catch is ContentError {
+        }
+
+        await library.warmUp()
+        let found = await library.lookup(term: entry.term)
+        let lookup = try XCTUnwrap(found)
+        let sense = try XCTUnwrap(lookup.meanings.first { $0.contentRef == "\(core.id)/\(entry.id)" })
+        XCTAssertEqual(sense.collection, CoreVocabulary.collectionName)
+        XCTAssertEqual(sense.examples.count, entry.examples.count)
+        XCTAssertNil(sense.topic)
+
+        let catalog = await library.topicCatalog()
+        XCTAssertNil(catalog.document(id: core.id))
+        let matches = await library.rankTopics("słownictwo ogólne")
+        XCTAssertFalse(matches.contains { CoreVocabulary.isCoreFile($0.topicID) })
+    }
+
     func testAddingTopicThroughStore() async throws {
         let library = try repositoryLibrary()
         let index = try await library.topicIndex()

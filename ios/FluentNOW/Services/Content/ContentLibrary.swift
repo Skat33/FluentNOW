@@ -23,6 +23,8 @@ actor ContentLibrary {
     private var idiomsCache: IdiomBank?
     private var readingsCache: ReadingBank?
     private var practiceCache: [String: PracticeContent] = [:]
+    /// Identyfikatory plików `core/core-cNN.json` (słownik rdzeniowy).
+    private var coreIDsCache: [String]?
 
     private var searchIndex: ContentSearch?
     private var searchBuild: Task<[DictionaryIndex.Entry]?, Never>?
@@ -66,17 +68,27 @@ actor ContentLibrary {
         return index
     }
 
+    /// Plik tematu `topics/<id>.json` albo — dla `core-cNN` — plik słownika rdzeniowego
+    /// `core/<id>.json` (ten sam format `TopicFile`, CONTENT-SCHEMA §6).
     func topic(id: String) async throws -> TopicFile {
         if let generated = loadGenerated()[id] { return generated.topic }
         if let cached = topicCache[id] { return cached }
-        guard Self.isSafeFileName(id) else { throw ContentError.unreadable(file: "topics/\(id).json") }
-        let data = try read("topics/\(id).json")
-        let topic = try ContentDecoder.topicFile(from: data)
+        let isCore = CoreVocabulary.isCoreFile(id)
+        let path = isCore ? CoreVocabulary.relativePath(file: id) : "topics/\(id).json"
+        guard Self.isSafeFileName(id) else { throw ContentError.unreadable(file: path) }
+        let data = try read(path)
+        let topic: TopicFile
+        if isCore {
+            topic = try ContentDecoder.coreFile(from: data)
+        } else {
+            topic = try ContentDecoder.topicFile(from: data)
+        }
         topicCache[id] = topic
         return topic
     }
 
-    /// Wpis po referencji `plik/id`, np. `airport/airport.boarding-pass` lub `starter/starter.do`.
+    /// Wpis po referencji `plik/id`, np. `airport/airport.boarding-pass`, `starter/starter.do`
+    /// lub `core-c01/core.attain`.
     func entry(reference: String) async throws -> TopicEntry {
         guard let ref = ContentReference(reference) else {
             throw ContentError.unreadable(file: reference)
@@ -88,11 +100,45 @@ actor ContentLibrary {
             }
             return entry
         }
-        let file = try await topic(id: ref.file)
-        guard let found = file.entry(id: ref.entryID) else {
+        if !ref.isCore {
+            // Tematy: błąd odczytu pliku przekazujemy dalej bez zmian.
+            let file = try await topic(id: ref.file)
+            guard let found = file.entry(id: ref.entryID) else {
+                throw ContentError.unreadable(file: reference)
+            }
+            return found.entry
+        }
+        guard let found = await locate(ref) else {
             throw ContentError.unreadable(file: reference)
         }
         return found.entry
+    }
+
+    /// Identyfikatory plików słownika rdzeniowego (`core-c01`, …), posortowane. Pusta lista,
+    /// gdy katalogu `core/` nie ma.
+    func coreFileIDs() -> [String] {
+        if let coreIDsCache { return coreIDsCache }
+        var ids: [String] = []
+        if let directory = fileURL(CoreVocabulary.directory),
+           let names = try? FileManager.default.contentsOfDirectory(atPath: directory.path) {
+            ids = CoreVocabulary.fileIDs(fromFileNames: names)
+        }
+        coreIDsCache = ids
+        return ids
+    }
+
+    /// Wpis tematu lub core wraz z kategorią i plikiem. Wpis core przeniesiony do innego sharda
+    /// odnajdujemy po id (`core.<hasło>` nie zależy od sharda), więc stare `contentRef` działają.
+    private func locate(_ ref: ContentReference) async -> (entry: TopicEntry, category: TopicCategory, file: TopicFile)? {
+        if let file = try? await topic(id: ref.file), let found = file.entry(id: ref.entryID) {
+            return (found.entry, found.category, file)
+        }
+        guard ref.isCore, CoreVocabulary.isCoreEntryID(ref.entryID) else { return nil }
+        for id in coreFileIDs() where id != ref.file {
+            guard let file = try? await topic(id: id), let found = file.entry(id: ref.entryID) else { continue }
+            return (found.entry, found.category, file)
+        }
+        return nil
     }
 
     // MARK: - Wyszukiwanie i słownik
@@ -135,14 +181,15 @@ actor ContentLibrary {
             )
             return (entry, suggestion)
         }
-        guard let file = try? await topic(id: ref.file),
-              let found = file.entry(id: ref.entryID) else { return nil }
+        guard let found = await locate(ref) else { return nil }
+        // Core: kolekcja „Słownictwo ogólne”, bez kategorii/sceny (to pasma CEFR, nie sytuacje).
+        let isCore = CoreVocabulary.isCore(found.file)
         let suggestion = VocabularyMerger.suggestion(
             from: found.entry,
-            topicName: file.namePl,
-            categoryName: found.category.namePl,
-            scene: found.category.scenePl.isEmpty ? nil : found.category.scenePl,
-            reference: ref.rawValue
+            topicName: found.file.namePl,
+            categoryName: isCore ? nil : found.category.namePl,
+            scene: isCore || found.category.scenePl.isEmpty ? nil : found.category.scenePl,
+            reference: ContentReference(file: found.file.id, entryID: found.entry.id).rawValue
         )
         return (found.entry, suggestion)
     }
@@ -335,7 +382,8 @@ actor ContentLibrary {
             guard let data = try? Data(contentsOf: url, options: [.mappedIfSafe]) else { continue }
             do {
                 let document = try ContentDecoder.topicSearchDocument(from: data)
-                guard name == "\(document.id).json" else { continue }
+                // Słownik rdzeniowy nie jest tematem (leży w core/, ale na wszelki wypadek też tutaj).
+                guard name == "\(document.id).json", !CoreVocabulary.isCoreFile(document.id) else { continue }
                 documents.append(document)
             } catch {
                 log.error("topics/\(name, privacy: .public): \(error.localizedDescription, privacy: .public)")
@@ -486,6 +534,15 @@ actor ContentLibrary {
                     if topic.id != summary.id {
                         throw ContentError.invalidJSON(file: "topics/\(summary.id).json", detail: "id \(topic.id) ≠ \(summary.id)")
                     }
+                }
+            }
+        }
+        for id in coreFileIDs() {
+            let path = CoreVocabulary.relativePath(file: id)
+            check(path) {
+                let core = try ContentDecoder.coreFile(from: read(path))
+                if core.id != id || core.group != CoreVocabulary.group {
+                    throw ContentError.invalidJSON(file: path, detail: "id \(core.id) / group \(core.group) ≠ \(id) / \(CoreVocabulary.group)")
                 }
             }
         }

@@ -141,7 +141,7 @@ Do szybkiego dodawania słowa (wpisz hasło → natychmiastowe propozycje znacze
 { "schemaVersion": 1,
   "entries": [ { "t": "boarding pass", "k": "boarding pass", "p": "karta pokładowa", "l": "A2", "f": "common", "r": "airport/airport.boarding-pass" } ] }
 ```
-`k` = klucz znormalizowany (małe litery, bez diakrytyków, `’`→`'`, pojedyncze spacje). `r` = `<plik tematu bez .json>/<entry id>` albo `starter/<id>`. Wiele znaczeń jednego hasła = wiele rekordów z tym samym `k`. Posortowane po `k`.
+`k` = klucz znormalizowany (małe litery, bez diakrytyków, `’`→`'`, pojedyncze spacje). `r` = `<plik tematu bez .json>/<entry id>`, `starter/<id>` albo — dla słownika rdzeniowego (§6) — `core-c01/core.attain`. Wiele znaczeń jednego hasła = wiele rekordów z tym samym `k`. Posortowane po `k`.
 
 ## 4. Banki przeniesione ze strony (data-pipeline)
 
@@ -292,3 +292,30 @@ Generuje `node ios/tools/build-index.mjs` (idempotentny; `--check` zwraca 1, gdy
 | `exercises.json`, `idioms.json` | ~68 / ~57 KB | leniwie (ćwiczenia) |
 | `starter-words.json`, `recommendations.json`, `answer-variants.json` | < 20 KB | przy starcie (tanie) |
 | `topics/index.json`, `dictionary-index.json` | rośnie z tematami | indeks przy starcie w tle; pliki tematów leniwie |
+| `core/core-cNN.json` | ~0,9 MB na shard (~500 wpisów × 3–5 przykładów; ok. 1,8 KB na wpis) | leniwie: plik sharda przy rozwiązywaniu `core-cNN/…` (szybkie dodawanie, polecane, słowniczki, test) |
+
+## 6. Słownik rdzeniowy — `core/core-c01.json` … (FEEDBACK-7)
+
+Ogólne słownictwo języka (np. *attain, ensure, despite, whereas*), którego nie dają tematy sytuacyjne. Lista lematów, statusy „już w bazie” i przydział do shardów: `ios/docs/CORE-MASTER.json` / `.md` (generuje `node ios/tools/build-core-master.mjs`). Instrukcja autorów: `ios/docs/agents/03b-core-content.md`. Wzór: `core/core-c01.json`.
+
+**Format = `TopicFile` z §1**, z różnicami:
+
+| Pole | Reguła dla core (walidator: `core-*`) |
+|---|---|
+| plik / `id` | `core/core-c01.json`, `id` = `core-c01` (= nazwa pliku; `core-c` + cyfry). Id tematów `core` i `core-*` są **zarezerwowane** (`topic-id-reserved`) |
+| `group` | zawsze `"core"` (poza listą grup §2 — core nie jest tematem) |
+| `namePl` / `nameEn` | `"Słownictwo ogólne"` / `"Core vocabulary"` — `namePl` staje się kolekcją dodanych słów |
+| `symbol`, `summaryPl` | jak §1 (`character.book.closed`) ; `aliases` = `[]` (nie są wyszukiwane) |
+| kategorie | pasma CEFR: `core-c01.a1` … `core-c01.c2`, `namePl` „Słownictwo ogólne B2”; `scenePl` = `""` (przykłady dzieją się w różnych sytuacjach). Do słowa nie trafia ani „temat”, ani scena |
+| `id` wpisu | `core.<kebab-term>`, kolejne **ważne znaczenia** tego samego hasła: `core.<kebab>-2`, `-3` (osobne wpisy). Id nie zależy od sharda — unikalne w całej bazie |
+| `examples` | **3–5** na znaczenie (`examples-count`), wszystkie różne w obrębie wpisu i w całej bazie (`duplicate-example`); przy 4–5 co najmniej jedno pytanie lub przeczenie (ostrzeżenie `core-example-variety`) |
+| `level` | CEFR **tego znaczenia** (wpis trafia do kategorii swojego poziomu) |
+| term + translation | unikalne w całym core (`duplicate-term-translation`, także między shardami); to samo znaczenie co we wpisie tematu/startera → ostrzeżenie `core-in-base` (pomiń albo opisz inne znaczenie) |
+| pozostałe pola | dokładnie jak §1 (w tym konwencje `forms` i IPA oraz ostrzeżenia redakcyjne) |
+| rozmiar | ostrzeżenie `core-size` powyżej 650 wpisów na plik (shard ~450–550) |
+
+**Indeksy.** `build-index.mjs` dopisuje wpisy core do `dictionary-index.json` z `r` = `core-c01/core.attain`; `topics/index.json` **nie** obejmuje core. Słowniczki czytanek (§5.4.1) mogą wskazywać wpis core w `ref`.
+
+**Aplikacja.** FluentKit: `CoreVocabulary` (stałe, `isCoreFile`, `isCoreEntryID`, `relativePath(file:)`, `fileIDs(fromFileNames:)`, `entryIssues`), `ContentReference.isCore` / `.relativePath`, `ContentDecoder.coreFile(from:)`, `TopicEntryValidator.issues(_:exampleCounts:)`. `ContentLibrary.topic(id:)` czyta `core/<id>.json` dla `core-cNN`; `entry(reference:)` i `lookup(term:)` rozwiązują `core-…/…` — wpis przeniesiony do innego sharda znajdowany jest po id; `coreFileIDs()` listuje shardy. Katalog wyszukiwania tematów czyta tylko `topics/`, więc core nie pojawia się jako temat. Wpisy core dodawane są bez `enrichment` z **wszystkimi** przykładami (`ExamplePool` rotuje 3–5 zdań), kolekcja „Słownictwo ogólne”, `contentRef` = `core-cNN/core.<hasło>`.
+
+**Kolejność narzędzi po zmianie core:** `node ios/tools/validate-content.mjs --file <plik>` → `node ios/tools/build-index.mjs` → `node ios/tools/build-core-master.mjs` (przelicza statusy; przydział shardów zostaje) → `node ios/tools/validate-content.mjs`.

@@ -210,14 +210,16 @@ public enum VocabularyMerger {
         let wanted = entryIDs.map { Set($0) }
         var groups: [String: [(entry: TopicEntry, suggestion: SenseSuggestion)]] = [:]
         var order: [String] = []
+        // Core vocabulary (CoreVocabulary): categories are CEFR bands, not situations — no topic/scene.
+        let isCore = CoreVocabulary.isCore(topic)
         for category in topic.categories {
             for entry in category.entries where wanted?.contains(entry.id) ?? true {
                 let key = TextNormalizer.normalize(entry.term)
                 let sense = Self.suggestion(
                     from: entry,
                     topicName: topic.namePl,
-                    categoryName: category.namePl,
-                    scene: category.scenePl.isEmpty ? nil : category.scenePl,
+                    categoryName: isCore ? nil : category.namePl,
+                    scene: isCore || category.scenePl.isEmpty ? nil : category.scenePl,
                     reference: ContentReference(file: topic.id, entryID: entry.id).rawValue
                 )
                 if groups[key] == nil { order.append(key) }

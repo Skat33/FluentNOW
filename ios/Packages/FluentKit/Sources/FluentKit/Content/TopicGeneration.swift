@@ -573,7 +573,9 @@ public enum TopicGeneration {
 /// Hard schema rules of a topic entry (the error level of `validate-content.mjs` that can be
 /// checked without the English heuristics). Messages in Polish; empty list = valid.
 public enum TopicEntryValidator {
-    public static func issues(_ entry: TopicEntry) -> [String] {
+    /// - Parameter exampleCounts: allowed number of examples — exactly 2 for topics (default),
+    ///   `CoreVocabulary.exampleRange` (3–5) for core entries (`CoreVocabulary.entryIssues`).
+    public static func issues(_ entry: TopicEntry, exampleCounts: ClosedRange<Int> = 2...2) -> [String] {
         var result: [String] = []
         if !isValidEntryID(entry.id) { result.append("Niepoprawny identyfikator „\(entry.id)”.") }
         if TextScanning.trim(entry.term).isEmpty { result.append("Puste hasło.") }
@@ -588,14 +590,19 @@ public enum TopicEntryValidator {
         if TextScanning.trim(entry.definition).isEmpty { result.append("Pusta definicja.") }
         if entry.definition.count > 140 { result.append("Definicja dłuższa niż 140 znaków.") }
         if entry.contextPl.count > 80 { result.append("Kontekst dłuższy niż 80 znaków.") }
-        if entry.examples.count != 2 {
-            result.append("Wymagane dokładnie 2 przykłady.")
+        if !exampleCounts.contains(entry.examples.count) {
+            if exampleCounts.lowerBound == exampleCounts.upperBound {
+                result.append("Wymagane dokładnie \(exampleCounts.lowerBound) przykłady.")
+            } else {
+                result.append("Wymagane \(exampleCounts.lowerBound)–\(exampleCounts.upperBound) przykładów.")
+            }
         }
         for pair in entry.examples {
             result.append(contentsOf: exampleIssues(pair))
         }
-        if entry.examples.count == 2, entry.examples[0].en == entry.examples[1].en {
-            result.append("Oba przykłady są identyczne.")
+        let sentences = entry.examples.map { TextScanning.trim($0.en) }
+        if Set(sentences).count < sentences.count {
+            result.append(entry.examples.count == 2 ? "Oba przykłady są identyczne." : "Przykłady się powtarzają.")
         }
         let termKey = TextNormalizer.searchKey(entry.term)
         if entry.acceptedAnswers.isEmpty || entry.acceptedAnswers.contains(where: { TextScanning.trim($0).isEmpty }) {

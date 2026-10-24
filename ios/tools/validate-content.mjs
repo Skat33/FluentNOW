@@ -50,6 +50,17 @@ const CATEGORY_SCHEMA = { id: 'string', namePl: 'string', scenePl: 'string', ent
 
 const KEBAB = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
+// Słownik rdzeniowy (CONTENT-SCHEMA §6): core/core-c01.json …, format TopicFile, group "core",
+// id wpisów "core.<kebab>" (niezależne od sharda), 3–5 przykładów na znaczenie.
+export const CORE_DIR = 'core';
+export const CORE_GROUP = 'core';
+export const CORE_ENTRY_PREFIX = 'core';
+export const CORE_FILE_ID = /^core-c\d{2}$/;
+export const CORE_EXAMPLES = { min: 3, max: 5 };
+const TOPIC_EXAMPLES = { min: 2, max: 2 };
+/** Maks. liczba wpisów w jednym pliku core (ostrzeżenie — shard ~450–550). */
+const CORE_MAX_ENTRIES = 650;
+
 // ---------------------------------------------------------------------------
 // Raportowanie
 // ---------------------------------------------------------------------------
@@ -427,9 +438,10 @@ function ipaIssues(ipa, term) {
 
 /**
  * Waliduje pojedynczy wpis Entry.
- * @param prefix — oczekiwany prefiks id (topicId lub "starter")
+ * @param prefix — oczekiwany prefiks id (topicId, "starter" lub "core")
+ * @param opts.examples — dozwolona liczba przykładów { min, max } (tematy: dokładnie 2; core: 3–5)
  */
-export function validateEntry(e, prefix, ctx, loc) {
+export function validateEntry(e, prefix, ctx, loc, { examples: exampleRange = TOPIC_EXAMPLES } = {}) {
   const { report, file } = ctx;
   const id = typeOf(e) === 'object' && typeof e.id === 'string' && e.id ? e.id : loc;
   const c = { report, file, id };
@@ -514,7 +526,11 @@ export function validateEntry(e, prefix, ctx, loc) {
 
   // examples
   if (Array.isArray(e.examples)) {
-    if (e.examples.length !== 2) report.error(file, id, 'examples-count', `examples: musi być dokładnie 2, jest ${e.examples.length}`);
+    const n = e.examples.length;
+    if (n < exampleRange.min || n > exampleRange.max) {
+      const want = exampleRange.min === exampleRange.max ? `dokładnie ${exampleRange.min}` : `${exampleRange.min}–${exampleRange.max}`;
+      report.error(file, id, 'examples-count', `examples: musi być ${want}, jest ${n}`);
+    }
     e.examples.forEach((ex, i) => {
       const lbl = `przykład ${i + 1}`;
       if (!checkShape(ex, EXAMPLE_SCHEMA, c, lbl)) { if (typeOf(ex) !== 'object') return; }
@@ -542,9 +558,13 @@ export function validateEntry(e, prefix, ctx, loc) {
       if (typeof ex.pl === 'string' && AME_BRE_TAG.test(ex.pl)) report.error(file, id, 'ame-bre-tag', `${lbl}.pl zawiera (AmE)/(BrE)`);
       if (typeof ex.en === 'string' && typeof ex.pl === 'string' && ex.en.trim() && ex.en.trim() === ex.pl.trim()) report.error(file, id, 'example-untranslated', `${lbl}: pl identyczne z en`);
     });
-    if (e.examples.length === 2 && typeof e.examples[0]?.en === 'string' && e.examples[0]?.en === e.examples[1]?.en) {
-      report.error(file, id, 'duplicate-example', 'oba przykłady są identyczne');
-    }
+    const seenEn = new Set();
+    e.examples.forEach((ex, i) => {
+      if (typeof ex?.en !== 'string' || !ex.en.trim()) return;
+      const key = ex.en.trim().replace(/\s+/g, ' ');
+      if (seenEn.has(key)) report.error(file, id, 'duplicate-example', e.examples.length === 2 ? 'oba przykłady są identyczne' : `przykład ${i + 1} powtarza wcześniejszy przykład tego wpisu`);
+      seenEn.add(key);
+    });
   }
 
   // acceptedAnswers
@@ -612,6 +632,7 @@ function validateTopic(data, ctx, expectedId) {
   if (typeof data.id === 'string') {
     if (!KEBAB.test(data.id)) report.error(file, c.id, 'topic-id', `id tematu "${data.id}" musi być kebab-case (a-z, 0-9, -)`);
     if (expectedId && data.id !== expectedId) report.error(file, c.id, 'topic-id-filename', `id tematu "${data.id}" musi być równe nazwie pliku "${expectedId}.json"`);
+    if (data.id === CORE_ENTRY_PREFIX || data.id.startsWith(`${CORE_ENTRY_PREFIX}-`)) report.error(file, c.id, 'topic-id-reserved', `id tematu "${data.id}" jest zarezerwowane dla słownika rdzeniowego (core/)`);
   }
   for (const k of ['namePl', 'nameEn', 'summaryPl', 'symbol']) {
     checkPlainString(data[k], c, k, { allowEmpty: false });
@@ -661,6 +682,65 @@ function validateTopic(data, ctx, expectedId) {
 
 function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
+const NEGATION = /n't\b|\b(?:not|never|no|nobody|nothing|none|neither|nor|nowhere)\b/i;
+
+/** Plik słownika rdzeniowego core/core-cNN.json (CONTENT-SCHEMA §6). */
+function validateCore(data, ctx, expectedId) {
+  const { report, file } = ctx;
+  const fid = typeof data?.id === 'string' ? data.id : '';
+  const c = { report, file, id: fid || '(core)' };
+  checkShape(data, TOPIC_SCHEMA, c, 'core');
+  if (typeOf(data) !== 'object') return;
+  if (data.schemaVersion !== 1) report.error(file, c.id, 'schema-version', `schemaVersion musi być 1, jest ${JSON.stringify(data.schemaVersion)}`);
+  if (typeof data.id === 'string') {
+    if (!CORE_FILE_ID.test(data.id)) report.error(file, c.id, 'core-id', `id pliku core "${data.id}" musi mieć postać core-c01, core-c02, …`);
+    if (expectedId && data.id !== expectedId) report.error(file, c.id, 'topic-id-filename', `id "${data.id}" musi być równe nazwie pliku "${expectedId}.json"`);
+  }
+  if (data.group !== CORE_GROUP) report.error(file, c.id, 'core-group', `group musi być "${CORE_GROUP}", jest ${JSON.stringify(data.group)}`);
+  for (const k of ['namePl', 'nameEn', 'summaryPl', 'symbol']) checkPlainString(data[k], c, k, { allowEmpty: false });
+  if (typeof data.symbol === 'string' && data.symbol && !/^[a-z0-9]+(?:\.[a-z0-9]+)*$/.test(data.symbol)) report.error(file, c.id, 'symbol-format', `symbol "${data.symbol}" nie wygląda jak nazwa SF Symbol`);
+  if (Array.isArray(data.aliases)) data.aliases.forEach((a, i) => { if (typeof a !== 'string' || !a.trim()) report.error(file, c.id, 'aliases', `aliases[${i}]: musi być niepustym tekstem`); });
+  if (!Array.isArray(data.categories)) return;
+  if (data.categories.length === 0) report.error(file, c.id, 'category-empty', 'plik core nie ma kategorii');
+  const catIds = new Set();
+  const termTr = new Map();
+  let total = 0;
+  data.categories.forEach((cat, ci) => {
+    const cid = typeof cat?.id === 'string' && cat.id ? cat.id : `${c.id}#kategoria${ci + 1}`;
+    const cc = { report, file, id: cid };
+    checkShape(cat, CATEGORY_SCHEMA, cc, 'kategoria');
+    if (typeOf(cat) !== 'object') return;
+    if (typeof cat.id === 'string') {
+      if (!new RegExp(`^${escapeRe(fid)}\\.[a-z0-9]+(?:-[a-z0-9]+)*$`).test(cat.id)) report.error(file, cid, 'category-id', `id kategorii "${cat.id}" musi mieć postać ${fid}.<kebab-case> (np. ${fid}.b2)`);
+      if (catIds.has(cat.id)) report.error(file, cid, 'duplicate-id', `zdublowane id kategorii "${cat.id}"`);
+      catIds.add(cat.id);
+    }
+    checkPlainString(cat.namePl, cc, 'namePl', { allowEmpty: false });
+    checkPlainString(cat.scenePl, cc, 'scenePl'); // core: zwykle "" (przykłady w różnych sytuacjach)
+    if (!Array.isArray(cat.entries)) return;
+    if (cat.entries.length === 0) report.error(file, cid, 'category-empty', 'kategoria nie ma wpisów');
+    total += cat.entries.length;
+    cat.entries.forEach((e, ei) => {
+      validateEntry(e, CORE_ENTRY_PREFIX, ctx, `${cid}#wpis${ei + 1}`, { examples: CORE_EXAMPLES });
+      if (typeOf(e) !== 'object') return;
+      const id = e.id || cid;
+      if (typeof e.term === 'string' && typeof e.translation === 'string') {
+        const key = normalizeKey(e.term) + '|' + normalizeKey(e.translation);
+        if (termTr.has(key)) report.error(file, id, 'duplicate-term-translation', `powtórzone term+translation "${e.term}" / "${e.translation}" (już w ${termTr.get(key)})`);
+        else termTr.set(key, id);
+      }
+      // Różnorodność: przy 4–5 przykładach co najmniej jedno pytanie albo przeczenie.
+      if (Array.isArray(e.examples) && e.examples.length >= 4) {
+        const ens = e.examples.map((x) => (typeof x?.en === 'string' ? x.en : ''));
+        if (!ens.some((s) => /\?["'”’)]*$/.test(s.trim())) && !ens.some((s) => NEGATION.test(s))) {
+          report.warn(file, id, 'core-example-variety', 'przykłady: same zdania twierdzące — dodaj pytanie lub przeczenie (03b-core-content.md)');
+        }
+      }
+    });
+  });
+  if (total > CORE_MAX_ENTRIES) report.warn(file, c.id, 'core-size', `plik core ma ${total} wpisów (zalecane ≤ ${CORE_MAX_ENTRIES}; shard ~450–550)`);
+}
+
 function validateStarterWords(data, ctx) {
   const { report, file } = ctx;
   const c = { report, file, id: '(plik)' };
@@ -700,8 +780,9 @@ function classify(absPath, data) {
   if (base === 'starter-words.json') return 'starter-words';
   if (BANK_FILES.includes(base)) return base.replace('.json', '');
   if (parent === 'grammar' && /^(A1|A2|B1|B2|C1|C2)\.json$/.test(base)) return 'grammar-level';
+  if (parent === CORE_DIR) return 'core';
   if (parent === 'topics') return 'topic';
-  if (typeOf(data) === 'object' && Array.isArray(data.categories)) return 'topic';
+  if (typeOf(data) === 'object' && Array.isArray(data.categories)) return data.group === CORE_GROUP ? 'core' : 'topic';
   if (typeOf(data) === 'object' && Array.isArray(data.words)) return 'starter-words';
   // Rozpoznanie po kształcie (fixtures poza katalogiem treści).
   if (typeOf(data) === 'object') {
@@ -733,13 +814,18 @@ async function validateFile(absPath, data, report, rel) {
   if (nulls.length > 20) report.error(rel, '', 'null', `… i jeszcze ${nulls.length - 20} wartości null`);
   const kind = classify(absPath, data);
   const ctx = { report, file: rel, absPath };
-  if (kind !== 'topic' && kind !== 'unknown' && typeOf(data) === 'object' && data.schemaVersion !== 1) {
+  if (kind !== 'topic' && kind !== 'core' && kind !== 'unknown' && typeOf(data) === 'object' && data.schemaVersion !== 1) {
     report.error(rel, '', 'schema-version', `schemaVersion musi być 1, jest ${JSON.stringify(data.schemaVersion)}`);
   }
   switch (kind) {
     case 'topic': {
       const inTopics = path.basename(path.dirname(absPath)) === 'topics';
       validateTopic(data, ctx, inTopics ? path.basename(absPath, '.json') : null);
+      break;
+    }
+    case 'core': {
+      const inCore = path.basename(path.dirname(absPath)) === CORE_DIR;
+      validateCore(data, ctx, inCore ? path.basename(absPath, '.json') : null);
       break;
     }
     case 'starter-words': validateStarterWords(data, ctx); break;
@@ -757,7 +843,7 @@ async function validateFile(absPath, data, report, rel) {
 function collectEntries(data, kind) {
   const out = [];
   if (typeOf(data) !== 'object') return out;
-  if (kind === 'topic' && Array.isArray(data.categories)) {
+  if ((kind === 'topic' || kind === 'core') && Array.isArray(data.categories)) {
     for (const cat of data.categories) if (cat && Array.isArray(cat.entries)) for (const e of cat.entries) if (typeOf(e) === 'object') out.push(e);
   } else if (kind === 'starter-words' && Array.isArray(data.words)) {
     for (const e of data.words) if (typeOf(e) === 'object') out.push(e);
@@ -801,7 +887,7 @@ export async function validate({ root = DEFAULT_ROOT, files = null } = {}) {
     const data = readJson(abs, report, rel);
     if (data === undefined) continue;
     const kind = await validateFile(abs, data, report, rel);
-    pool.push({ file: rel, entries: collectEntries(data, kind), isTarget: true });
+    pool.push({ file: rel, kind, entries: collectEntries(data, kind), isTarget: true });
   }
   if (files) {
     const inRoot = targets.some((t) => !path.relative(absRoot, t).startsWith('..'));
@@ -811,10 +897,12 @@ export async function validate({ root = DEFAULT_ROOT, files = null } = {}) {
         const base = path.basename(abs);
         const parent = path.basename(path.dirname(abs));
         const isTopic = parent === 'topics' && base !== 'index.json';
-        if (!isTopic && base !== 'starter-words.json') continue;
+        const isCore = parent === CORE_DIR;
+        if (!isTopic && !isCore && base !== 'starter-words.json') continue;
         let data;
         try { data = JSON.parse(fs.readFileSync(abs, 'utf8').replace(/^﻿/, '')); } catch { continue; } // cudzy plik w trakcie zapisu
-        pool.push({ file: relPath(abs, absRoot), entries: collectEntries(data, isTopic ? 'topic' : 'starter-words'), isTarget: false });
+        const kind = isCore ? 'core' : isTopic ? 'topic' : 'starter-words';
+        pool.push({ file: relPath(abs, absRoot), kind, entries: collectEntries(data, kind), isTarget: false });
       }
     }
   }
@@ -842,6 +930,27 @@ export async function validate({ root = DEFAULT_ROOT, files = null } = {}) {
           if (!prev) examples.set(key, { file, id: e.id });
         });
       }
+    }
+  }
+
+  // Słownik rdzeniowy: to samo hasło + tłumaczenie w dwóch plikach core = błąd; to samo znaczenie
+  // co we wpisie tematu/startera = ostrzeżenie (FEEDBACK-7: pomiń albo dopisz tylko brakujące znaczenie).
+  const baseSenses = new Map();
+  const coreSenses = new Map();
+  const senseKey = (e) => (typeof e.term === 'string' && typeof e.translation === 'string' ? normalizeKey(e.term) + '|' + normalizeKey(e.translation) : null);
+  for (const { file, kind, entries } of ordered) {
+    if (kind === 'core') continue;
+    for (const e of entries) { const k = senseKey(e); if (k && !baseSenses.has(k)) baseSenses.set(k, `${file}:${e.id}`); }
+  }
+  for (const { file, kind, entries, isTarget } of ordered) {
+    if (kind !== 'core') continue;
+    for (const e of entries) {
+      const k = senseKey(e);
+      if (!k) continue;
+      const prev = coreSenses.get(k);
+      if (prev && prev.file !== file && isTarget) report.error(file, e.id, 'duplicate-term-translation', `term+translation "${e.term}" / "${e.translation}" jest już w ${prev.file}:${prev.id}`);
+      if (!prev) coreSenses.set(k, { file, id: e.id });
+      if (isTarget && baseSenses.has(k)) report.warn(file, e.id, 'core-in-base', `to samo znaczenie jest już w bazie (${baseSenses.get(k)}) — pomiń wpis albo opisz inne znaczenie`);
     }
   }
   return report;
@@ -937,6 +1046,12 @@ async function selfTest() {
   check(!PL_IMPERIAL.test('Mile widziani są wszyscy goście.') && !PL_IMPERIAL.test('Bolą mnie stopy po dwóch godzinach marszu.') && !PL_IMPERIAL.test('Dom jest trzy kilometry stąd.'), 'pl: „mile widziany”, „stopy” (część ciała) i km bez uwag');
   check(normalizeKey(' Żółć  Don’t ') === "zolc don't", 'normalizeKey');
   check(kebab('check-in desk') === 'check-in-desk' && kebab("don't") === 'dont', 'kebab');
+  {
+    const r = new Report();
+    validateTopic({ schemaVersion: 1, id: 'core-c01', namePl: 'x', nameEn: 'x', group: 'travel', symbol: 'a', summaryPl: 'x', aliases: ['x'], categories: [] }, { report: r, file: 't' }, null);
+    check(r.errors.some((i) => i.rule === 'topic-id-reserved'), 'temat: id core-* jest zarezerwowane dla słownika rdzeniowego');
+    check(classify('x/core/core-c01.json', {}) === 'core' && classify('x/fixtures/a.json', { group: 'core', categories: [] }) === 'core', 'classify: core/ i group "core"');
+  }
 
   // Fixtures
   const fixtures = fs.existsSync(FIXTURES_DIR) ? fs.readdirSync(FIXTURES_DIR).filter((f) => f.endsWith('.json') && !f.endsWith('.expected.json')).sort() : [];

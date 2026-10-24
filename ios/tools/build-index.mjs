@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// FluentNOW — generator indeksów: topics/index.json (§2) i dictionary-index.json (§3).
+// FluentNOW — generator indeksów: topics/index.json (§2) i dictionary-index.json (§3, także core/ — §6).
 // Idempotentny i deterministyczny: przy niezmienionej treści pliki nie są przepisywane (zachowuje generatedAt).
 //
 // Użycie: node ios/tools/build-index.mjs [--root <katalog treści>] [--check]
@@ -8,7 +8,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { DEFAULT_ROOT, GROUPS, LEVELS, normalizeKey } from './validate-content.mjs';
+import { DEFAULT_ROOT, GROUPS, LEVELS, normalizeKey, CORE_DIR, CORE_FILE_ID } from './validate-content.mjs';
 
 const TOOLS_DIR = path.dirname(fileURLToPath(import.meta.url));
 const MASTER = path.resolve(TOOLS_DIR, '../docs/TOPICS-MASTER.md');
@@ -84,6 +84,30 @@ export function buildIndexes(root = DEFAULT_ROOT) {
     }
   }
 
+  // Słownik rdzeniowy (CONTENT-SCHEMA §6): tylko do dictionary-index (r: core-c01/core.attain),
+  // nigdy do topics/index.json — core nie jest tematem.
+  const coreDir = path.join(root, CORE_DIR);
+  const coreFiles = fs.existsSync(coreDir)
+    ? fs.readdirSync(coreDir).filter((f) => f.endsWith('.json') && !f.startsWith('_')).sort()
+    : [];
+  let coreEntries = 0;
+  for (const f of coreFiles) {
+    const data = readJsonSafe(path.join(coreDir, f));
+    const fileId = f.replace(/\.json$/, '');
+    if (!data || typeof data !== 'object' || !Array.isArray(data.categories) || data.id !== fileId || !CORE_FILE_ID.test(fileId)) {
+      skipped.push(`${CORE_DIR}/${f}: niepoprawny JSON, kształt lub nazwa (pominięto)`);
+      continue;
+    }
+    for (const cat of data.categories) {
+      for (const e of Array.isArray(cat?.entries) ? cat.entries : []) {
+        if (e && typeof e.term === 'string' && e.term.trim() && typeof e.id === 'string') {
+          dict.push({ t: e.term, k: normalizeKey(e.term), p: String(e.translation ?? ''), l: String(e.level ?? ''), f: String(e.frequency ?? ''), r: `${fileId}/${e.id}` });
+          coreEntries++;
+        }
+      }
+    }
+  }
+
   const groupIds = Object.keys(GROUPS);
   const order = masterOrder();
   topics.sort((a, b) => {
@@ -96,7 +120,7 @@ export function buildIndexes(root = DEFAULT_ROOT) {
   dict.sort((a, b) => cmpStr(a.k, b.k) || cmpStr(a.r, b.r));
 
   const groups = groupIds.map((id) => ({ id, namePl: GROUPS[id], symbol: GROUP_SYMBOLS[id] }));
-  return { topicsIndex: { schemaVersion: 1, generatedAt: '', groups, topics }, dictionaryIndex: { schemaVersion: 1, entries: dict }, skipped };
+  return { topicsIndex: { schemaVersion: 1, generatedAt: '', groups, topics }, dictionaryIndex: { schemaVersion: 1, entries: dict }, skipped, coreEntries };
 }
 
 function serializeTopicsIndex(idx) { return JSON.stringify(idx, null, 2) + '\n'; }
@@ -115,7 +139,7 @@ function main(argv) {
     else { console.error('Użycie: node ios/tools/build-index.mjs [--root <katalog>] [--check]'); return 2; }
   }
   root = path.resolve(root);
-  const { topicsIndex, dictionaryIndex, skipped } = buildIndexes(root);
+  const { topicsIndex, dictionaryIndex, skipped, coreEntries } = buildIndexes(root);
   for (const s of skipped) console.warn(`UWAGA ${s}`);
 
   const topicsPath = path.join(root, 'topics', 'index.json');
@@ -138,7 +162,7 @@ function main(argv) {
     console.log(`zapisano: ${path.relative(root, p)} (${(Buffer.byteLength(text) / 1024).toFixed(1)} KB)`);
   }
   const total = topicsIndex.topics.reduce((s, t) => s + t.entryCount, 0);
-  console.log(`tematów: ${topicsIndex.topics.length}, wpisów w tematach: ${total}, rekordów słownika: ${dictionaryIndex.entries.length}`);
+  console.log(`tematów: ${topicsIndex.topics.length}, wpisów w tematach: ${total}, rekordów słownika: ${dictionaryIndex.entries.length} (w tym core: ${coreEntries})`);
   return check && stale ? 1 : 0;
 }
 
