@@ -487,7 +487,7 @@
             { "en": "I saw your brother at the store the other day.", "pl": "Parę dni temu widziałem twojego brata w sklepie.", "focusEn": "the other day", "focusPl": "Parę dni temu" }
           ],
           "acceptedAnswers": ["other"],
-          "acceptedTranslations": ["inny", "pozostały", "kiedy indziej"]
+          "acceptedTranslations": ["inny", "pozostały"]
         },
         {
           "id": "core.good",
@@ -800,7 +800,7 @@
           "examples": [
             { "en": "She speaks Spanish and also a little French.", "pl": "Mówi po hiszpańsku, a także trochę po francusku.", "focusEn": "also", "focusPl": "także" },
             { "en": "The hotel has a pool. It also has a small gym.", "pl": "Hotel ma basen. Ma też małą siłownię.", "focusEn": "also", "focusPl": "też" },
-            { "en": "I'm also not sure about the date.", "pl": "Ja też nie jestem pewien daty.", "focusEn": "also", "focusPl": "też" },
+            { "en": "I'm also not sure about the date.", "pl": "Nie jestem też pewien daty.", "focusEn": "also", "focusPl": "też" },
             { "en": "We need milk, eggs, and also some bread.", "pl": "Potrzebujemy mleka, jajek, a także trochę chleba.", "focusEn": "also", "focusPl": "także" }
           ],
           "acceptedAnswers": ["also"],
@@ -827,7 +827,7 @@
             { "en": "I only have ten dollars on me.", "pl": "Mam przy sobie tylko dziesięć dolarów.", "focusEn": "only", "focusPl": "tylko" },
             { "en": "The store is only open until noon on Sundays.", "pl": "W niedziele sklep jest czynny tylko do południa.", "focusEn": "only", "focusPl": "tylko" },
             { "en": "It only took us twenty minutes to get here.", "pl": "Dotarcie tutaj zajęło nam tylko dwadzieścia minut.", "focusEn": "only", "focusPl": "tylko" },
-            { "en": "Is that the only reason you called?", "pl": "To jedyny powód, dla którego zadzwoniłeś?", "focusEn": "only", "focusPl": "jedyny" }
+            { "en": "Don't worry. It only takes five minutes.", "pl": "Nie martw się. To zajmie tylko pięć minut.", "focusEn": "only", "focusPl": "tylko" }
           ],
           "acceptedAnswers": ["only"],
           "acceptedTranslations": ["tylko", "jedynie", "zaledwie"]
@@ -1831,7 +1831,7 @@
             { "en": "We have very little time before the train leaves.", "pl": "Mamy bardzo mało czasu do odjazdu pociągu.", "focusEn": "very little", "focusPl": "bardzo mało" },
             { "en": "Don't worry. Just add a little salt.", "pl": "Nie przejmuj się. Dodaj tylko trochę soli.", "focusEn": "a little", "focusPl": "trochę" }
           ],
-          "acceptedAnswers": ["little", "a little bit"],
+          "acceptedAnswers": ["little", "a little", "a little bit"],
           "acceptedTranslations": ["trochę (a little)", "trochę", "nieco", "niewiele", "mało"]
         },
         {
@@ -2037,7 +2037,7 @@
           "notePl": "Put on = założyć (ubranie), put away = odłożyć na miejsce.",
           "examples": [
             { "en": "Where did you put my keys?", "pl": "Gdzie położyłeś moje klucze?", "focusEn": "put", "focusPl": "położyłeś" },
-            { "en": "Put the milk back in the fridge, please.", "pl": "Wstaw, proszę, mleko z powrotem do lodówki.", "focusEn": "Put", "focusPl": "Wstaw" },
+            { "en": "Put the groceries on the counter, please.", "pl": "Połóż, proszę, zakupy na blacie.", "focusEn": "Put", "focusPl": "Połóż" },
             { "en": "I put some sugar in your tea.", "pl": "Wsypałem ci trochę cukru do herbaty.", "focusEn": "put", "focusPl": "Wsypałem" },
             { "en": "Don't put your feet on the table!", "pl": "Nie kładź nóg na stole!", "focusEn": "Don't put", "focusPl": "Nie kładź" },
             { "en": "Have you put the kids to bed yet?", "pl": "Położyłeś już dzieci spać?", "focusEn": "put", "focusPl": "Położyłeś" }
@@ -2091,11 +2091,11 @@
           "examples": [
             { "en": "Are you interested in art?", "pl": "Interesujesz się sztuką?", "focusEn": "interested in", "focusPl": "Interesujesz się" },
             { "en": "I'm not interested in buying a new car right now.", "pl": "Nie jestem teraz zainteresowany kupnem nowego samochodu.", "focusEn": "interested in", "focusPl": "zainteresowany" },
-            { "en": "She's very interested in learning to cook.", "pl": "Bardzo chce nauczyć się gotować.", "focusEn": "very interested in", "focusPl": "Bardzo chce" },
+            { "en": "She's very interested in learning to cook.", "pl": "Jest bardzo zainteresowana nauką gotowania.", "focusEn": "very interested in", "focusPl": "bardzo zainteresowana" },
             { "en": "We'd be interested to hear your opinion.", "pl": "Chętnie poznamy twoją opinię.", "focusEn": "interested to hear", "focusPl": "Chętnie poznamy" }
           ],
           "acceptedAnswers": ["interested"],
-          "acceptedTranslations": ["zainteresowany", "interesować się", "ciekawy"]
+          "acceptedTranslations": ["zainteresowany", "interesować się"]
         },
         {
           "id": "core.old",
@@ -2142,7 +2142,7 @@
           "antonyms": "early",
           "notePl": "Later = później; lately = ostatnio (nie: późno).",
           "examples": [
-            { "en": "I worked late every day last week.", "pl": "W zeszłym tygodniu codziennie pracowałem do późna.", "focusEn": "late", "focusPl": "do późna" },
+            { "en": "My dad often works late on Fridays.", "pl": "Tata w piątki często pracuje do późna.", "focusEn": "late", "focusPl": "do późna" },
             { "en": "Our flight arrived two hours late.", "pl": "Nasz samolot przyleciał z dwugodzinnym opóźnieniem.", "focusEn": "two hours late", "focusPl": "z dwugodzinnym opóźnieniem" },
             { "en": "Don't stay up too late. You have school tomorrow.", "pl": "Nie siedź za długo w nocy. Jutro masz szkołę.", "focusEn": "stay up too late", "focusPl": "siedź za długo w nocy" },
             { "en": "Why did you get home so late?", "pl": "Dlaczego wróciłeś do domu tak późno?", "focusEn": "late", "focusPl": "późno" }
@@ -2724,7 +2724,7 @@
             { "en": "I love you more than anything.", "pl": "Kocham cię nad życie.", "focusEn": "love", "focusPl": "Kocham" },
             { "en": "My kids love going to the zoo.", "pl": "Moje dzieci uwielbiają chodzić do zoo.", "focusEn": "love", "focusPl": "uwielbiają" },
             { "en": "Would you like to join us? – I'd love to!", "pl": "Chcesz do nas dołączyć? – Bardzo chętnie!", "focusEn": "I'd love to", "focusPl": "Bardzo chętnie" },
-            { "en": "She didn't love the movie, but she liked the music.", "pl": "Film nie zachwycił jej, ale podobała jej się muzyka.", "focusEn": "didn't love", "focusPl": "nie zachwycił" },
+            { "en": "She didn't love the movie, but she liked the music.", "pl": "Film jej nie zachwycił, ale podobała jej się muzyka.", "focusEn": "didn't love", "focusPl": "nie zachwycił" },
             { "en": "He loved his grandmother very much.", "pl": "Bardzo kochał babcię.", "focusEn": "loved", "focusPl": "kochał" }
           ],
           "acceptedAnswers": ["love"],
@@ -2749,7 +2749,7 @@
           "notePl": "",
           "examples": [
             { "en": "Do you have any plans for the weekend?", "pl": "Masz jakieś plany na weekend?", "focusEn": "plans", "focusPl": "plany" },
-            { "en": "Our plan is to drive to Florida in March.", "pl": "Planujemy pojechać do Florydy w marcu.", "focusEn": "Our plan", "focusPl": "Planujemy" },
+            { "en": "Our plan is to drive to Florida in March.", "pl": "Planujemy w marcu pojechać na Florydę.", "focusEn": "Our plan", "focusPl": "Planujemy" },
             { "en": "There's been a change of plans. The meeting is tomorrow.", "pl": "Zmiana planów. Zebranie jest jutro.", "focusEn": "change of plans", "focusPl": "Zmiana planów" },
             { "en": "We don't have a plan B.", "pl": "Nie mamy planu awaryjnego.", "focusEn": "plan B", "focusPl": "planu awaryjnego" }
           ],
@@ -3120,10 +3120,10 @@
             { "en": "Let's have dinner together on Friday.", "pl": "Zjedzmy razem kolację w piątek.", "focusEn": "together", "focusPl": "razem" },
             { "en": "Mix the flour and sugar together in a bowl.", "pl": "Wymieszaj razem mąkę i cukier w misce.", "focusEn": "together", "focusPl": "razem" },
             { "en": "Are you two still together?", "pl": "Jesteście jeszcze razem?", "focusEn": "together", "focusPl": "razem" },
-            { "en": "All together, the trip cost about two thousand dollars.", "pl": "W sumie wycieczka kosztowała około dwóch tysięcy dolarów.", "focusEn": "All together", "focusPl": "W sumie" }
+            { "en": "It's so nice to have the whole family together again.", "pl": "Tak miło, że cała rodzina znowu jest razem.", "focusEn": "together", "focusPl": "razem" }
           ],
           "acceptedAnswers": ["together"],
-          "acceptedTranslations": ["razem", "wspólnie", "w sumie"]
+          "acceptedTranslations": ["razem", "wspólnie"]
         },
         {
           "id": "core.hard",
@@ -3227,7 +3227,7 @@
             { "en": "Is the hotel near the city center?", "pl": "Czy hotel jest blisko centrum miasta?", "focusEn": "center", "focusPl": "centrum" }
           ],
           "acceptedAnswers": ["center"],
-          "acceptedTranslations": ["centrum, środek", "centrum", "środek", "ośrodek", "dom kultury"]
+          "acceptedTranslations": ["centrum, środek", "centrum", "środek", "ośrodek"]
         },
         {
           "id": "core.walk",
@@ -3250,7 +3250,7 @@
             { "en": "I usually walk to work when the weather is nice.", "pl": "Kiedy jest ładna pogoda, zwykle chodzę pieszo do pracy.", "focusEn": "walk", "focusPl": "chodzę pieszo" },
             { "en": "Can you walk the dog tonight?", "pl": "Możesz wieczorem wyprowadzić psa?", "focusEn": "walk the dog", "focusPl": "wyprowadzić psa" },
             { "en": "We walked along the beach for hours.", "pl": "Godzinami spacerowaliśmy wzdłuż plaży.", "focusEn": "walked", "focusPl": "spacerowaliśmy" },
-            { "en": "Don't walk home alone so late.", "pl": "Nie wracaj do domu sama tak późno.", "focusEn": "Don't walk home", "focusPl": "Nie wracaj do domu" }
+            { "en": "Don't walk home alone so late.", "pl": "Nie wracaj sama pieszo do domu tak późno.", "focusEn": "Don't walk home", "focusPl": "Nie wracaj sama pieszo do domu" }
           ],
           "acceptedAnswers": ["walk"],
           "acceptedTranslations": ["iść pieszo, spacerować", "iść pieszo", "chodzić", "spacerować", "przejść się"]
@@ -3692,7 +3692,7 @@
           "antonyms": "easy",
           "notePl": "",
           "examples": [
-            { "en": "Japanese is a difficult language to learn.", "pl": "Japoński to trudny do nauczenia się język.", "focusEn": "difficult", "focusPl": "trudny" },
+            { "en": "Japanese is a difficult language to learn.", "pl": "Japoński to trudny język do nauki.", "focusEn": "difficult", "focusPl": "trudny" },
             { "en": "It was a difficult decision for our family.", "pl": "To była trudna decyzja dla naszej rodziny.", "focusEn": "difficult", "focusPl": "trudna" },
             { "en": "My boss can be very difficult sometimes.", "pl": "Mój szef bywa czasem bardzo trudny.", "focusEn": "difficult", "focusPl": "trudny" },
             { "en": "Is it difficult to get tickets for the game?", "pl": "Czy trudno dostać bilety na mecz?", "focusEn": "difficult", "focusPl": "trudno" }
@@ -3935,7 +3935,7 @@
             { "en": "I'll check with my boss and call you back.", "pl": "Zapytam szefa i oddzwonię.", "focusEn": "check with", "focusPl": "Zapytam" }
           ],
           "acceptedAnswers": ["check"],
-          "acceptedTranslations": ["sprawdzić, sprawdzać", "sprawdzić", "sprawdzać", "skontrolować", "zapytać"]
+          "acceptedTranslations": ["sprawdzić, sprawdzać", "sprawdzić", "sprawdzać", "skontrolować"]
         },
         {
           "id": "core.animal",
@@ -3982,7 +3982,7 @@
           "notePl": "How are you? – Fine, thanks. That's fine = W porządku / Nie ma problemu.",
           "examples": [
             { "en": "How are you? – I'm fine, thanks.", "pl": "Jak się masz? – Dobrze, dzięki.", "focusEn": "fine", "focusPl": "Dobrze" },
-            { "en": "Is it fine if I bring a friend?", "pl": "Czy mogę przyprowadzić znajomego? Nie będzie problemu?", "focusEn": "fine", "focusPl": "Nie będzie problemu" },
+            { "en": "Is it fine if I bring a friend?", "pl": "Czy to w porządku, jeśli przyprowadzę znajomego?", "focusEn": "fine", "focusPl": "w porządku" },
             { "en": "Don't worry. Everything will be fine.", "pl": "Nie martw się. Wszystko będzie dobrze.", "focusEn": "fine", "focusPl": "dobrze" },
             { "en": "The food was fine, but nothing special.", "pl": "Jedzenie było w porządku, ale nic szczególnego.", "focusEn": "fine", "focusPl": "w porządku" }
           ],
@@ -5190,7 +5190,7 @@
           "notePl": "Point out = zwrócić uwagę na coś.",
           "examples": [
             { "en": "The little boy pointed at the cake in the window.", "pl": "Chłopczyk pokazał palcem ciasto na wystawie.", "focusEn": "pointed at", "focusPl": "pokazał palcem" },
-            { "en": "It's rude to point at people.", "pl": "Pokazywanie palcem na ludzi jest niegrzeczne.", "focusEn": "point at", "focusPl": "Pokazywanie palcem" },
+            { "en": "It's rude to point at people.", "pl": "Nieładnie jest pokazywać ludzi palcem.", "focusEn": "point at", "focusPl": "pokazywać ludzi palcem" },
             { "en": "Can you point to the place on the map?", "pl": "Możesz wskazać to miejsce na mapie?", "focusEn": "point to", "focusPl": "wskazać" },
             { "en": "My teacher pointed out a few mistakes in my essay.", "pl": "Nauczyciel zwrócił uwagę na kilka błędów w moim wypracowaniu.", "focusEn": "pointed out", "focusPl": "zwrócił uwagę" }
           ],
@@ -5392,7 +5392,7 @@
           "register": "neutralny",
           "contextPl": "A while: pewien, zwykle niedługi, czas",
           "natural": "",
-          "forms": "(lp.)",
+          "forms": "a while (tylko lp.)",
           "collocations": "a while; for a while; after a while; in a while; a while ago",
           "synonyms": "moment",
           "antonyms": "",
@@ -5431,7 +5431,7 @@
             { "en": "Everyone came to the party, including my boss.", "pl": "Na imprezę przyszli wszyscy, łącznie z moim szefem.", "focusEn": "including", "focusPl": "łącznie z" }
           ],
           "acceptedAnswers": ["include"],
-          "acceptedTranslations": ["zawierać, obejmować", "zawierać", "obejmować", "uwzględnić", "wliczać", "dopisać"]
+          "acceptedTranslations": ["zawierać, obejmować", "zawierać", "obejmować", "uwzględnić", "wliczać"]
         },
         {
           "id": "core.course",
@@ -5884,7 +5884,7 @@
           "pos": "przysłówek",
           "level": "A2",
           "frequency": "very_common",
-          "translation": "(oddalony) stąd, daleko",
+          "translation": "daleko, z dala",
           "definition": "At a distance from a place, or not at home or at work.",
           "register": "neutralny",
           "contextPl": "O odległości lub o tym, że ktoś wyjechał albo odchodzi",
@@ -5896,13 +5896,13 @@
           "notePl": "Często tworzy czasowniki frazowe: go away – odejść, put away – odłożyć, give away – rozdać.",
           "examples": [
             { "en": "The beach is only five minutes away.", "pl": "Plaża jest tylko pięć minut stąd.", "focusEn": "away", "focusPl": "stąd" },
-            { "en": "My parents are away for the weekend.", "pl": "Rodziców nie ma w ten weekend, wyjechali.", "focusEn": "are away", "focusPl": "nie ma" },
+            { "en": "My parents are away for the weekend.", "pl": "Rodzice wyjechali na weekend.", "focusEn": "are away", "focusPl": "wyjechali" },
             { "en": "Go away! I'm trying to sleep.", "pl": "Idź sobie! Próbuję spać.", "focusEn": "Go away", "focusPl": "Idź sobie" },
             { "en": "Please put your toys away before dinner.", "pl": "Przed kolacją odłóż zabawki na miejsce, proszę.", "focusEn": "put your toys away", "focusPl": "odłóż zabawki na miejsce" },
             { "en": "How far away is the nearest hospital?", "pl": "Jak daleko jest najbliższy szpital?", "focusEn": "far away", "focusPl": "daleko" }
           ],
           "acceptedAnswers": ["away"],
-          "acceptedTranslations": ["(oddalony) stąd, daleko", "stąd", "daleko", "z dala", "nie ma (kogoś)"]
+          "acceptedTranslations": ["daleko, z dala", "daleko", "z dala", "stąd", "oddalony"]
         },
         {
           "id": "core.less",
@@ -5929,7 +5929,7 @@
             { "en": "The movie was more or less what I expected.", "pl": "Film był mniej więcej taki, jak się spodziewałem.", "focusEn": "more or less", "focusPl": "mniej więcej" }
           ],
           "acceptedAnswers": ["less"],
-          "acceptedTranslations": ["mniej", "mniejszy"]
+          "acceptedTranslations": ["mniej"]
         },
         {
           "id": "core.until",
@@ -6053,7 +6053,7 @@
           "antonyms": "",
           "notePl": "",
           "examples": [
-            { "en": "She isn't old enough to drive.", "pl": "Nie jest wystarczająco dorosła, żeby prowadzić.", "focusEn": "old enough", "focusPl": "wystarczająco dorosła" },
+            { "en": "Is the water warm enough for swimming?", "pl": "Czy woda jest wystarczająco ciepła, żeby pływać?", "focusEn": "warm enough", "focusPl": "wystarczająco ciepła" },
             { "en": "Is this bag big enough for all my things?", "pl": "Czy ta torba jest wystarczająco duża na wszystkie moje rzeczy?", "focusEn": "big enough", "focusPl": "wystarczająco duża" },
             { "en": "He didn't run fast enough to catch the bus.", "pl": "Nie biegł wystarczająco szybko, żeby zdążyć na autobus.", "focusEn": "fast enough", "focusPl": "wystarczająco szybko" },
             { "en": "Your English is good enough for this job.", "pl": "Twój angielski jest wystarczająco dobry do tej pracy.", "focusEn": "good enough", "focusPl": "wystarczająco dobry" }
@@ -6318,7 +6318,7 @@
           "notePl": "Take care of = opiekować się, zająć się. Take care! = Trzymaj się!",
           "examples": [
             { "en": "Who takes care of your dog when you travel?", "pl": "Kto opiekuje się twoim psem, kiedy wyjeżdżasz?", "focusEn": "takes care of", "focusPl": "opiekuje się" },
-            { "en": "Handle the box with care. It's glass.", "pl": "Obchodź się z pudłem ostrożnie. W środku jest szkło.", "focusEn": "with care", "focusPl": "ostrożnie" },
+            { "en": "Handle the box with care. There's glass inside.", "pl": "Obchodź się z pudłem ostrożnie. W środku jest szkło.", "focusEn": "with care", "focusPl": "ostrożnie" },
             { "en": "She works in health care.", "pl": "Pracuje w służbie zdrowia.", "focusEn": "health care", "focusPl": "służbie zdrowia" },
             { "en": "Don't worry, I'll take care of everything.", "pl": "Nie martw się, wszystkim się zajmę.", "focusEn": "take care of", "focusPl": "się zajmę" },
             { "en": "See you next week, and take care!", "pl": "Do zobaczenia w przyszłym tygodniu i trzymaj się!", "focusEn": "take care", "focusPl": "trzymaj się" }
@@ -6346,7 +6346,7 @@
           "examples": [
             { "en": "I don't care what other people think.", "pl": "Nie obchodzi mnie, co myślą inni.", "focusEn": "don't care", "focusPl": "Nie obchodzi" },
             { "en": "He really cares about his students.", "pl": "Naprawdę zależy mu na uczniach.", "focusEn": "cares about", "focusPl": "zależy mu na" },
-            { "en": "Do you care if I open the window?", "pl": "Przeszkadza ci, jeśli otworzę okno?", "focusEn": "care", "focusPl": "Przeszkadza ci" },
+            { "en": "She doesn't care about money at all.", "pl": "Pieniądze w ogóle jej nie obchodzą.", "focusEn": "doesn't care about", "focusPl": "nie obchodzą" },
             { "en": "We lost the game, but who cares?", "pl": "Przegraliśmy mecz, ale kogo to obchodzi?", "focusEn": "who cares", "focusPl": "kogo to obchodzi" }
           ],
           "acceptedAnswers": ["care"],
@@ -6416,7 +6416,7 @@
           "register": "neutralny",
           "contextPl": "O czasie, który już minął",
           "natural": "",
-          "forms": "(lp.)",
+          "forms": "the past (tylko lp.)",
           "collocations": "in the past; the recent past; a thing of the past; my past",
           "synonyms": "",
           "antonyms": "future",
@@ -6428,7 +6428,7 @@
             { "en": "Paper maps are becoming a thing of the past.", "pl": "Papierowe mapy odchodzą w przeszłość.", "focusEn": "a thing of the past", "focusPl": "odchodzą w przeszłość" }
           ],
           "acceptedAnswers": ["past"],
-          "acceptedTranslations": ["przeszłość", "dawniej"]
+          "acceptedTranslations": ["przeszłość"]
         },
         {
           "id": "core.past-2",
@@ -6532,7 +6532,7 @@
             { "en": "Never mind. I'll do it myself.", "pl": "Nieważne. Zrobię to sam.", "focusEn": "Never mind", "focusPl": "Nieważne" }
           ],
           "acceptedAnswers": ["mind"],
-          "acceptedTranslations": ["mieć coś przeciwko", "przeszkadzać", "nieważne"]
+          "acceptedTranslations": ["mieć coś przeciwko", "przeszkadzać"]
         },
         {
           "id": "core.stay",
@@ -6576,13 +6576,13 @@
           "collocations": "a bit; a little bit; a bit of; bit by bit; quite a bit",
           "synonyms": "piece; a little",
           "antonyms": "",
-          "notePl": "A bit + przymiotnik = trochę (a bit tired); not a bit = ani trochę.",
+          "notePl": "A bit + przymiotnik = trochę (a bit tired); a bit of + rzeczownik = trochę czegoś, kawałek.",
           "examples": [
             { "en": "I'm a bit tired today.", "pl": "Jestem dziś trochę zmęczony.", "focusEn": "a bit", "focusPl": "trochę" },
             { "en": "Can I have a bit of your sandwich?", "pl": "Mogę kawałek twojej kanapki?", "focusEn": "a bit of", "focusPl": "kawałek" },
             { "en": "Wait a bit. He'll be here soon.", "pl": "Poczekaj chwilę. Zaraz tu będzie.", "focusEn": "a bit", "focusPl": "chwilę" },
             { "en": "There were bits of glass all over the floor.", "pl": "Na całej podłodze były kawałki szkła.", "focusEn": "bits", "focusPl": "kawałki" },
-            { "en": "The test wasn't a bit difficult.", "pl": "Test nie był ani trochę trudny.", "focusEn": "wasn't a bit", "focusPl": "nie był ani trochę" }
+            { "en": "Could you turn the music down a bit?", "pl": "Możesz trochę ściszyć muzykę?", "focusEn": "a bit", "focusPl": "trochę" }
           ],
           "acceptedAnswers": ["bit"],
           "acceptedTranslations": ["kawałek (a bit – trochę)", "trochę", "kawałek", "odrobina", "chwila"]
@@ -6612,7 +6612,7 @@
             { "en": "It's not real leather. It's plastic.", "pl": "To nie jest prawdziwa skóra. To plastik.", "focusEn": "real", "focusPl": "prawdziwa" }
           ],
           "acceptedAnswers": ["real"],
-          "acceptedTranslations": ["prawdziwy", "rzeczywisty", "prawdziwie"]
+          "acceptedTranslations": ["prawdziwy", "rzeczywisty"]
         },
         {
           "id": "core.break",
@@ -6770,7 +6770,7 @@
             { "en": "Can you reach the top shelf?", "pl": "Sięgniesz do najwyższej półki?", "focusEn": "top", "focusPl": "najwyższej" }
           ],
           "acceptedAnswers": ["top"],
-          "acceptedTranslations": ["góra, szczyt", "góra", "szczyt", "wierzch", "najwyższy"]
+          "acceptedTranslations": ["góra, szczyt", "góra", "szczyt", "wierzch"]
         },
         {
           "id": "core.top-2",
@@ -6947,7 +6947,7 @@
           "notePl": "Sounds good! = Brzmi dobrze! / Pasuje!",
           "examples": [
             { "en": "Pizza tonight? That sounds great!", "pl": "Pizza dziś wieczorem? Brzmi świetnie!", "focusEn": "sounds", "focusPl": "Brzmi" },
-            { "en": "You sound tired. Are you okay?", "pl": "Brzmisz na zmęczonego. Wszystko w porządku?", "focusEn": "sound", "focusPl": "Brzmisz" },
+            { "en": "You sound tired. Are you okay?", "pl": "Masz zmęczony głos. Wszystko w porządku?", "focusEn": "sound", "focusPl": "Masz zmęczony głos" },
             { "en": "It sounds like you had a wonderful trip.", "pl": "Wygląda na to, że mieliście wspaniałą podróż.", "focusEn": "sounds like", "focusPl": "Wygląda na to" },
             { "en": "That doesn't sound like a good idea.", "pl": "To nie brzmi jak dobry pomysł.", "focusEn": "doesn't sound", "focusPl": "nie brzmi" }
           ],
@@ -7053,7 +7053,7 @@
             { "en": "Perhaps we should leave a little earlier.", "pl": "Może powinniśmy wyjść trochę wcześniej.", "focusEn": "Perhaps", "focusPl": "Może" },
             { "en": "She's late. Perhaps she missed the train.", "pl": "Spóźnia się. Być może uciekł jej pociąg.", "focusEn": "Perhaps", "focusPl": "Być może" },
             { "en": "Perhaps you could help me with this form?", "pl": "Może mógłbyś mi pomóc z tym formularzem?", "focusEn": "Perhaps", "focusPl": "Może" },
-            { "en": "It wasn't perhaps the best idea.", "pl": "To nie był chyba najlepszy pomysł.", "focusEn": "perhaps", "focusPl": "chyba" }
+            { "en": "That perhaps wasn't the best idea.", "pl": "To chyba nie był najlepszy pomysł.", "focusEn": "perhaps", "focusPl": "chyba" }
           ],
           "acceptedAnswers": ["perhaps"],
           "acceptedTranslations": ["może, być może", "może", "być może", "chyba"]
@@ -7344,7 +7344,7 @@
             { "en": "Don't park in front of the garage, please.", "pl": "Proszę nie parkować przed garażem.", "focusEn": "in front of", "focusPl": "przed" }
           ],
           "acceptedAnswers": ["front"],
-          "acceptedTranslations": ["przód", "przed", "z przodu"]
+          "acceptedTranslations": ["przód", "z przodu"]
         },
         {
           "id": "core.front-2",
@@ -7370,7 +7370,7 @@
             { "en": "Ask at the front desk for an extra towel.", "pl": "Poproś w recepcji o dodatkowy ręcznik.", "focusEn": "front desk", "focusPl": "recepcji" }
           ],
           "acceptedAnswers": ["front"],
-          "acceptedTranslations": ["przedni, frontowy", "przedni", "frontowy", "wejściowy", "pierwszy"]
+          "acceptedTranslations": ["przedni, frontowy", "przedni", "frontowy", "wejściowy"]
         },
         {
           "id": "core.explain",
@@ -7471,7 +7471,7 @@
             { "en": "There's a small garden behind our house.", "pl": "Za naszym domem jest mały ogród.", "focusEn": "behind", "focusPl": "Za" },
             { "en": "Who's that standing behind you?", "pl": "Kto to stoi za tobą?", "focusEn": "behind", "focusPl": "za" },
             { "en": "The keys fell behind the sofa.", "pl": "Klucze spadły za kanapę.", "focusEn": "behind", "focusPl": "za" },
-            { "en": "Our team was behind by ten points at halftime.", "pl": "Do przerwy nasza drużyna przegrywała dziesięcioma punktami.", "focusEn": "behind", "focusPl": "przegrywała" }
+            { "en": "Is there any parking behind the building?", "pl": "Czy za budynkiem jest jakiś parking?", "focusEn": "behind", "focusPl": "za" }
           ],
           "acceptedAnswers": ["behind"],
           "acceptedTranslations": ["za, z tyłu", "za", "z tyłu", "w tyle"]
@@ -7516,7 +7516,7 @@
           "natural": "",
           "forms": "(niepoliczalny)",
           "collocations": "air travel; travel agent; travel insurance; business travel",
-          "synonyms": "trip; travelling",
+          "synonyms": "traveling",
           "antonyms": "",
           "notePl": "Travel to zwykle podróżowanie ogólnie; konkretna podróż to trip lub journey.",
           "examples": [
@@ -7604,7 +7604,7 @@
             { "en": "Don't worry. A little cold won't kill you!", "pl": "Nie przejmuj się. Odrobina zimna cię nie zabije!", "focusEn": "won't kill", "focusPl": "nie zabije" }
           ],
           "acceptedAnswers": ["kill"],
-          "acceptedTranslations": ["zabić", "zabijać", "zginąć"]
+          "acceptedTranslations": ["zabić", "zabijać"]
         },
         {
           "id": "core.certainly",
@@ -7656,7 +7656,7 @@
             { "en": "The kids threw their hats in the air.", "pl": "Dzieci wyrzuciły czapki w powietrze.", "focusEn": "air", "focusPl": "powietrze" }
           ],
           "acceptedAnswers": ["air"],
-          "acceptedTranslations": ["powietrze", "lotniczo"]
+          "acceptedTranslations": ["powietrze"]
         },
         {
           "id": "core.instead",
@@ -7887,10 +7887,10 @@
             { "en": "Pick a card, any card.", "pl": "Wybierz kartę, dowolną kartę.", "focusEn": "Pick", "focusPl": "Wybierz" },
             { "en": "Which restaurant did you pick for Friday?", "pl": "Którą restaurację wybrałeś na piątek?", "focusEn": "pick", "focusPl": "wybrałeś" },
             { "en": "She was picked to lead the project.", "pl": "Wybrano ją do prowadzenia projektu.", "focusEn": "was picked", "focusPl": "Wybrano ją" },
-            { "en": "I'll pick you up at the station at six.", "pl": "Odbiorę cię z dworca o szóstej.", "focusEn": "pick you up", "focusPl": "Odbiorę cię" }
+            { "en": "Did you pick a date for the wedding yet?", "pl": "Wybraliście już datę ślubu?", "focusEn": "pick", "focusPl": "Wybraliście" }
           ],
           "acceptedAnswers": ["pick"],
-          "acceptedTranslations": ["wybrać, wybierać", "wybrać", "wybierać", "odebrać", "podnieść"]
+          "acceptedTranslations": ["wybrać, wybierać", "wybrać", "wybierać"]
         },
         {
           "id": "core.personal",
@@ -8020,7 +8020,7 @@
             { "en": "The school will contact parents by email.", "pl": "Szkoła skontaktuje się z rodzicami mailowo.", "focusEn": "will contact", "focusPl": "skontaktuje się" }
           ],
           "acceptedAnswers": ["contact"],
-          "acceptedTranslations": ["skontaktować się", "kontaktować się", "kontakt"]
+          "acceptedTranslations": ["skontaktować się", "kontaktować się"]
         },
         {
           "id": "core.prepare",
@@ -8121,10 +8121,10 @@
             { "en": "Do you speak any foreign languages?", "pl": "Mówisz w jakimś języku obcym?", "focusEn": "foreign", "focusPl": "obcym" },
             { "en": "Many foreign students study at this university.", "pl": "Na tej uczelni studiuje wielu zagranicznych studentów.", "focusEn": "foreign", "focusPl": "zagranicznych" },
             { "en": "I've never lived in a foreign country.", "pl": "Nigdy nie mieszkałem za granicą.", "focusEn": "foreign country", "focusPl": "za granicą" },
-            { "en": "You can change foreign money at the airport.", "pl": "Na lotnisku można wymienić walutę obcą.", "focusEn": "foreign", "focusPl": "obcą" }
+            { "en": "You can exchange foreign currency at the airport.", "pl": "Na lotnisku można wymienić obcą walutę.", "focusEn": "foreign", "focusPl": "obcą" }
           ],
           "acceptedAnswers": ["foreign"],
-          "acceptedTranslations": ["zagraniczny, obcy", "zagraniczny", "obcy", "za granicą"]
+          "acceptedTranslations": ["zagraniczny, obcy", "zagraniczny", "obcy"]
         },
         {
           "id": "core.surprise",
@@ -8176,7 +8176,7 @@
             { "en": "We've pretty much finished the project.", "pl": "Właściwie skończyliśmy już projekt.", "focusEn": "pretty much", "focusPl": "Właściwie" }
           ],
           "acceptedAnswers": ["pretty"],
-          "acceptedTranslations": ["dość, całkiem", "dość", "całkiem", "dosyć", "właściwie"]
+          "acceptedTranslations": ["dość, całkiem", "dość", "całkiem", "dosyć"]
         },
         {
           "id": "core.drop",
@@ -8199,10 +8199,10 @@
             { "en": "Be careful! Don't drop the plates.", "pl": "Uważaj! Nie upuść talerzy.", "focusEn": "Don't drop", "focusPl": "Nie upuść" },
             { "en": "I dropped my phone and the screen broke.", "pl": "Upuściłem telefon i ekran się rozbił.", "focusEn": "dropped", "focusPl": "Upuściłem" },
             { "en": "Temperatures dropped below zero last night.", "pl": "W nocy temperatura spadła poniżej zera.", "focusEn": "dropped", "focusPl": "spadła" },
-            { "en": "Can you drop me off at the station?", "pl": "Możesz podrzucić mnie na dworzec?", "focusEn": "drop me off", "focusPl": "podrzucić mnie" }
+            { "en": "Did you drop something? I heard a noise.", "pl": "Upuściłeś coś? Słyszałem jakiś hałas.", "focusEn": "drop", "focusPl": "Upuściłeś" }
           ],
           "acceptedAnswers": ["drop"],
-          "acceptedTranslations": ["upuścić, spaść", "upuścić", "upuszczać", "spaść", "spadać", "podrzucić"]
+          "acceptedTranslations": ["upuścić, spaść", "upuścić", "upuszczać", "spaść", "spadać"]
         },
         {
           "id": "core.worry",
@@ -8254,7 +8254,7 @@
             { "en": "Can we wait inside, please?", "pl": "Możemy poczekać w środku?", "focusEn": "inside", "focusPl": "w środku" }
           ],
           "acceptedAnswers": ["inside"],
-          "acceptedTranslations": ["do środka, wewnątrz", "do środka", "w środku", "wewnątrz", "w domu"]
+          "acceptedTranslations": ["do środka, wewnątrz", "do środka", "w środku", "wewnątrz"]
         },
         {
           "id": "core.nature",
@@ -8276,7 +8276,7 @@
           "examples": [
             { "en": "I love spending time in nature.", "pl": "Uwielbiam spędzać czas na łonie natury.", "focusEn": "nature", "focusPl": "natury" },
             { "en": "We watched a nature documentary about bears.", "pl": "Obejrzeliśmy film przyrodniczy o niedźwiedziach.", "focusEn": "nature documentary", "focusPl": "film przyrodniczy" },
-            { "en": "Is it safe to drink water in nature?", "pl": "Czy można bezpiecznie pić wodę ze źródeł w przyrodzie?", "focusEn": "nature", "focusPl": "przyrodzie" },
+            { "en": "Is there a nature trail near the campsite?", "pl": "Czy w pobliżu kempingu jest ścieżka przyrodnicza?", "focusEn": "nature trail", "focusPl": "ścieżka przyrodnicza" },
             { "en": "My grandfather taught me a lot about nature.", "pl": "Dziadek nauczył mnie wiele o przyrodzie.", "focusEn": "nature", "focusPl": "przyrodzie" }
           ],
           "acceptedAnswers": ["nature"],
@@ -8306,7 +8306,7 @@
             { "en": "How many workers does the company have?", "pl": "Ilu pracowników ma firma?", "focusEn": "workers", "focusPl": "pracowników" }
           ],
           "acceptedAnswers": ["worker"],
-          "acceptedTranslations": ["pracownik", "robotnik", "pracowity"]
+          "acceptedTranslations": ["pracownik", "robotnik"]
         },
         {
           "id": "core.necessary",
@@ -8358,7 +8358,7 @@
             { "en": "Her dream of becoming a doctor came true.", "pl": "Jej marzenie o zostaniu lekarką się spełniło.", "focusEn": "came true", "focusPl": "się spełniło" }
           ],
           "acceptedAnswers": ["true"],
-          "acceptedTranslations": ["prawdziwy, zgodny z prawdą", "prawdziwy", "prawda", "zgodny z prawdą", "spełnić się"]
+          "acceptedTranslations": ["prawdziwy, zgodny z prawdą", "prawdziwy", "prawda", "zgodny z prawdą"]
         },
         {
           "id": "core.phone-2",
@@ -8436,7 +8436,7 @@
             { "en": "She's never held a baby before.", "pl": "Nigdy wcześniej nie trzymała niemowlęcia.", "focusEn": "held", "focusPl": "trzymała" }
           ],
           "acceptedAnswers": ["hold"],
-          "acceptedTranslations": ["trzymać", "potrzymać", "przytrzymać", "poczekać"]
+          "acceptedTranslations": ["trzymać", "potrzymać", "przytrzymać"]
         },
         {
           "id": "core.follow",
@@ -8457,7 +8457,7 @@
           "notePl": "Follow to też stosować się (do rad) i obserwować (w mediach społecznościowych).",
           "examples": [
             { "en": "Follow me. I'll show you the way.", "pl": "Chodź za mną. Pokażę ci drogę.", "focusEn": "Follow me", "focusPl": "Chodź za mną" },
-            { "en": "Just follow the signs to the airport.", "pl": "Po prostu jedź za znakami na lotnisko.", "focusEn": "follow the signs", "focusPl": "jedź za znakami" },
+            { "en": "Just follow the signs to the airport.", "pl": "Po prostu kieruj się znakami na lotnisko.", "focusEn": "follow the signs", "focusPl": "kieruj się znakami" },
             { "en": "I think that car is following us.", "pl": "Chyba ten samochód jedzie za nami.", "focusEn": "following", "focusPl": "jedzie za" },
             { "en": "Dinner was followed by a short speech.", "pl": "Po kolacji wygłoszono krótkie przemówienie.", "focusEn": "was followed by", "focusPl": "Po" },
             { "en": "Did the dog follow you home?", "pl": "Czy pies przyszedł za tobą do domu?", "focusEn": "follow", "focusPl": "przyszedł za" }
@@ -8563,7 +8563,7 @@
           "examples": [
             { "en": "My grandfather died when I was ten.", "pl": "Mój dziadek zmarł, kiedy miałem dziesięć lat.", "focusEn": "died", "focusPl": "zmarł" },
             { "en": "All my plants died while I was on vacation.", "pl": "Podczas mojego urlopu zwiędły wszystkie rośliny.", "focusEn": "died", "focusPl": "zwiędły" },
-            { "en": "I'm dying to see the new movie!", "pl": "Umieram z ciekawości, żeby zobaczyć nowy film!", "focusEn": "dying to", "focusPl": "Umieram z ciekawości" },
+            { "en": "I'm dying to see the new movie!", "pl": "Strasznie chcę zobaczyć ten nowy film!", "focusEn": "dying to", "focusPl": "Strasznie chcę" },
             { "en": "Don't let the fish die. Feed them every day.", "pl": "Nie pozwól, żeby rybki zdechły. Karm je codziennie.", "focusEn": "die", "focusPl": "zdechły" }
           ],
           "acceptedAnswers": ["die"],
@@ -8801,7 +8801,7 @@
           "examples": [
             { "en": "There's no need to shout. I can hear you.", "pl": "Nie ma potrzeby krzyczeć. Słyszę cię.", "focusEn": "no need", "focusPl": "Nie ma potrzeby" },
             { "en": "The school is trying to meet the needs of every student.", "pl": "Szkoła stara się zaspokoić potrzeby każdego ucznia.", "focusEn": "needs", "focusPl": "potrzeby" },
-            { "en": "Is there a need for more volunteers this year?", "pl": "Czy w tym roku jest potrzeba więcej wolontariuszy?", "focusEn": "need", "focusPl": "potrzeba" },
+            { "en": "Is there a need for more volunteers this year?", "pl": "Czy w tym roku potrzeba więcej wolontariuszy?", "focusEn": "need", "focusPl": "potrzeba" },
             { "en": "We collect food for families in need.", "pl": "Zbieramy żywność dla potrzebujących rodzin.", "focusEn": "in need", "focusPl": "potrzebujących" }
           ],
           "acceptedAnswers": ["need"],
@@ -8857,7 +8857,7 @@
             { "en": "We meant to leave early, but the traffic was terrible.", "pl": "Zamierzaliśmy wyjechać wcześnie, ale korki były okropne.", "focusEn": "meant to", "focusPl": "Zamierzaliśmy" }
           ],
           "acceptedAnswers": ["mean"],
-          "acceptedTranslations": ["zamierzać, chcieć", "zamierzać", "chcieć", "mieć zamiar", "zbierać się"]
+          "acceptedTranslations": ["zamierzać, chcieć", "zamierzać", "chcieć", "mieć zamiar"]
         },
         {
           "id": "core.last-3",
@@ -8909,7 +8909,7 @@
             { "en": "Dogs are great company for older people.", "pl": "Psy to wspaniałe towarzystwo dla starszych osób.", "focusEn": "company", "focusPl": "towarzystwo" }
           ],
           "acceptedAnswers": ["company"],
-          "acceptedTranslations": ["towarzystwo", "goście"]
+          "acceptedTranslations": ["towarzystwo"]
         },
         {
           "id": "core.place-2",
@@ -9027,7 +9027,7 @@
           "register": "neutralny",
           "contextPl": "What's the point? – o sensie robienia czegoś",
           "natural": "",
-          "forms": "(niepoliczalny)",
+          "forms": "points",
           "collocations": "what's the point; there's no point; the point is; miss the point",
           "synonyms": "purpose",
           "antonyms": "",
@@ -9171,7 +9171,7 @@
             { "en": "Is that really the case?", "pl": "Czy tak jest naprawdę?", "focusEn": "the case", "focusPl": "tak jest" }
           ],
           "acceptedAnswers": ["case"],
-          "acceptedTranslations": ["przypadek", "sytuacja", "wypadek", "razie"]
+          "acceptedTranslations": ["przypadek", "sytuacja", "wypadek"]
         },
         {
           "id": "core.seem",
@@ -9219,7 +9219,7 @@
           "notePl": "",
           "examples": [
             { "en": "Please keep the door closed. The cat might get out.", "pl": "Proszę nie otwierać drzwi. Kot może uciec.", "focusEn": "keep the door closed", "focusPl": "nie otwierać drzwi" },
-            { "en": "This jacket will keep you warm in the mountains.", "pl": "Ta kurtka zapewni ci ciepło w górach.", "focusEn": "keep you warm", "focusPl": "zapewni ci ciepło" },
+            { "en": "This jacket will keep you warm in the mountains.", "pl": "W tej kurtce będzie ci ciepło w górach.", "focusEn": "keep you warm", "focusPl": "będzie ci ciepło" },
             { "en": "Try to keep calm and listen to me.", "pl": "Postaraj się zachować spokój i mnie posłuchać.", "focusEn": "keep calm", "focusPl": "zachować spokój" },
             { "en": "How do you keep your kitchen so clean?", "pl": "Jak ty utrzymujesz kuchnię w takiej czystości?", "focusEn": "keep", "focusPl": "utrzymujesz" }
           ],
@@ -9273,7 +9273,7 @@
             { "en": "I set my alarm for six, but I didn't hear it.", "pl": "Nastawiłem budzik na szóstą, ale go nie usłyszałem.", "focusEn": "set", "focusPl": "Nastawiłem" },
             { "en": "Can you set the table for dinner?", "pl": "Możesz nakryć do stołu?", "focusEn": "set the table", "focusPl": "nakryć do stołu" },
             { "en": "She set the oven to two hundred degrees.", "pl": "Ustawiła piekarnik na dwieście stopni.", "focusEn": "set", "focusPl": "Ustawiła" },
-            { "en": "We're setting up a new office in Denver.", "pl": "Otwieramy nowe biuro w Denver.", "focusEn": "setting up", "focusPl": "Otwieramy" }
+            { "en": "Don't forget to set the timer for the pizza.", "pl": "Nie zapomnij nastawić minutnika na pizzę.", "focusEn": "set", "focusPl": "nastawić" }
           ],
           "acceptedAnswers": ["set"],
           "acceptedTranslations": ["ustawić, nastawić", "ustawić", "ustawiać", "nastawić", "nastawiać", "nakryć"]
@@ -9369,7 +9369,7 @@
           "contextPl": "O tym, w jakim stanie lub sytuacji ktoś lub coś jest",
           "natural": "",
           "forms": "states",
-          "collocations": "in good state; state of mind; a state of emergency; in a terrible state",
+          "collocations": "state of mind; a state of emergency; in a terrible state; a state of shock",
           "synonyms": "condition",
           "antonyms": "",
           "notePl": "",
@@ -9454,7 +9454,7 @@
           "examples": [
             { "en": "Most people in town are against the new highway.", "pl": "Większość mieszkańców miasta jest przeciwko nowej autostradzie.", "focusEn": "against", "focusPl": "przeciwko" },
             { "en": "We're playing against a really strong team on Saturday.", "pl": "W sobotę gramy z naprawdę silną drużyną.", "focusEn": "against", "focusPl": "z" },
-            { "en": "Don't lean against the door. It's wet paint.", "pl": "Nie opieraj się o drzwi. Są świeżo pomalowane.", "focusEn": "against", "focusPl": "o" },
+            { "en": "Don't lean against the door. The paint is still wet.", "pl": "Nie opieraj się o drzwi. Farba jeszcze nie wyschła.", "focusEn": "against", "focusPl": "o" },
             { "en": "Is it against the law to drive without shoes?", "pl": "Czy prowadzenie samochodu bez butów jest niezgodne z prawem?", "focusEn": "against the law", "focusPl": "niezgodne z prawem" }
           ],
           "acceptedAnswers": ["against"],
@@ -9484,7 +9484,7 @@
             { "en": "Even though I studied, I didn't pass the test.", "pl": "Mimo że się uczyłem, nie zdałem testu.", "focusEn": "Even though", "focusPl": "Mimo że" }
           ],
           "acceptedAnswers": ["though"],
-          "acceptedTranslations": ["chociaż, mimo że", "chociaż", "choć", "mimo że", "jakby"]
+          "acceptedTranslations": ["chociaż, mimo że", "chociaż", "choć", "mimo że"]
         },
         {
           "id": "core.though-2",
@@ -9581,7 +9581,7 @@
           "antonyms": "avoid",
           "notePl": "Let's face it = spójrzmy prawdzie w oczy. My room faces the park = okna wychodzą na park.",
           "examples": [
-            { "en": "We're facing a lot of problems at work right now.", "pl": "Obecnie mamy w pracy dużo problemów.", "focusEn": "facing", "focusPl": "mamy" },
+            { "en": "We're facing a lot of problems at work right now.", "pl": "Musimy teraz w pracy zmierzyć się z wieloma problemami.", "focusEn": "facing", "focusPl": "zmierzyć się" },
             { "en": "You need to face the truth.", "pl": "Musisz spojrzeć prawdzie w oczy.", "focusEn": "face the truth", "focusPl": "spojrzeć prawdzie w oczy" },
             { "en": "Our bedroom faces the ocean.", "pl": "Okna naszej sypialni wychodzą na ocean.", "focusEn": "faces", "focusPl": "wychodzą" },
             { "en": "She couldn't face going back to the office after the argument.", "pl": "Po kłótni nie miała siły wracać do biura.", "focusEn": "couldn't face", "focusPl": "nie miała siły" }
@@ -9769,7 +9769,7 @@
             { "en": "The present situation is not easy for anyone.", "pl": "Obecna sytuacja nie jest łatwa dla nikogo.", "focusEn": "present", "focusPl": "Obecna" }
           ],
           "acceptedAnswers": ["present"],
-          "acceptedTranslations": ["obecny", "teraźniejszy", "obecnie"]
+          "acceptedTranslations": ["obecny", "teraźniejszy"]
         },
         {
           "id": "core.present-2",
@@ -9862,7 +9862,7 @@
           "register": "neutralny",
           "contextPl": "The public: zwykli ludzie, społeczeństwo; in public – publicznie",
           "natural": "",
-          "forms": "(lp.)",
+          "forms": "the public (tylko lp.)",
           "collocations": "the general public; in public; open to the public; members of the public",
           "synonyms": "people",
           "antonyms": "",
@@ -9870,11 +9870,11 @@
           "examples": [
             { "en": "The museum is open to the public every day except Monday.", "pl": "Muzeum jest otwarte dla zwiedzających codziennie oprócz poniedziałku.", "focusEn": "the public", "focusPl": "zwiedzających" },
             { "en": "He doesn't like to sing in public.", "pl": "Nie lubi śpiewać publicznie.", "focusEn": "in public", "focusPl": "publicznie" },
-            { "en": "The new park will open to the public in May.", "pl": "Nowy park zostanie otwarty dla mieszkańców w maju.", "focusEn": "the public", "focusPl": "mieszkańców" },
+            { "en": "The public has a right to know the truth.", "pl": "Społeczeństwo ma prawo znać prawdę.", "focusEn": "The public", "focusPl": "Społeczeństwo" },
             { "en": "Members of the public can ask questions at the end.", "pl": "Na końcu pytania mogą zadawać osoby z publiczności.", "focusEn": "Members of the public", "focusPl": "osoby z publiczności" }
           ],
           "acceptedAnswers": ["public"],
-          "acceptedTranslations": ["publiczność, ludzie", "publiczność", "ludzie", "społeczeństwo", "publicznie"]
+          "acceptedTranslations": ["publiczność, ludzie", "publiczność", "ludzie", "społeczeństwo"]
         },
         {
           "id": "core.rather",
@@ -9952,7 +9952,7 @@
             { "en": "Who has the remote control?", "pl": "Kto ma pilota?", "focusEn": "remote control", "focusPl": "pilota" }
           ],
           "acceptedAnswers": ["control"],
-          "acceptedTranslations": ["kontrola", "panowanie", "władza", "pilot"]
+          "acceptedTranslations": ["kontrola", "panowanie", "władza"]
         },
         {
           "id": "core.control-2",
@@ -10104,10 +10104,10 @@
             { "en": "What sort of food do they serve there?", "pl": "Jakie jedzenie tam podają?", "focusEn": "What sort of", "focusPl": "Jakie" },
             { "en": "We sell all sorts of things, from books to bikes.", "pl": "Sprzedajemy różne rzeczy, od książek po rowery.", "focusEn": "all sorts of", "focusPl": "różne" },
             { "en": "I don't usually watch this sort of movie.", "pl": "Zwykle nie oglądam tego rodzaju filmów.", "focusEn": "this sort of", "focusPl": "tego rodzaju" },
-            { "en": "I'm sort of tired. Can we go home?", "pl": "Jestem jakby zmęczony. Możemy iść do domu?", "focusEn": "sort of", "focusPl": "jakby" }
+            { "en": "I'm sort of tired. Can we go home?", "pl": "Jestem trochę zmęczony. Możemy iść do domu?", "focusEn": "sort of", "focusPl": "trochę" }
           ],
           "acceptedAnswers": ["sort"],
-          "acceptedTranslations": ["rodzaj", "typ", "jakby"]
+          "acceptedTranslations": ["rodzaj", "typ"]
         },
         {
           "id": "core.cause",
@@ -10186,7 +10186,7 @@
             { "en": "Don't let the glass fall. Hold it with both hands.", "pl": "Nie upuść szklanki. Trzymaj ją oburącz.", "focusEn": "Don't let the glass fall", "focusPl": "Nie upuść szklanki" }
           ],
           "acceptedAnswers": ["fall"],
-          "acceptedTranslations": ["spaść, spadać", "spaść", "spadać", "opaść", "zasnąć"]
+          "acceptedTranslations": ["spaść, spadać", "spaść", "spadać", "opaść"]
         },
         {
           "id": "core.allow",
@@ -10290,7 +10290,7 @@
             { "en": "She has the power to make people laugh.", "pl": "Ma dar rozśmieszania ludzi.", "focusEn": "power", "focusPl": "dar" }
           ],
           "acceptedAnswers": ["power"],
-          "acceptedTranslations": ["władza, moc", "władza", "moc", "siła", "dar"]
+          "acceptedTranslations": ["władza, moc", "władza", "moc", "siła"]
         },
         {
           "id": "core.return-2",
@@ -10312,7 +10312,7 @@
           "examples": [
             { "en": "We'll have a party on your return from Japan.", "pl": "Zrobimy imprezę po twoim powrocie z Japonii.", "focusEn": "return", "focusPl": "powrocie" },
             { "en": "I helped him move, and in return he fixed my car.", "pl": "Pomogłem mu w przeprowadzce, a w zamian naprawił mi samochód.", "focusEn": "in return", "focusPl": "w zamian" },
-            { "en": "The kids are excited about the return of their dad.", "pl": "Dzieci nie mogą się doczekać powrotu taty.", "focusEn": "return", "focusPl": "powrotu" },
+            { "en": "The kids can't wait for their dad's return.", "pl": "Dzieci nie mogą się doczekać powrotu taty.", "focusEn": "return", "focusPl": "powrotu" },
             { "en": "Did the store accept your return without a receipt?", "pl": "Czy sklep przyjął zwrot bez paragonu?", "focusEn": "return", "focusPl": "zwrot" }
           ],
           "acceptedAnswers": ["return"],
@@ -10339,7 +10339,7 @@
             { "en": "It doesn't matter what you wear. It's a casual party.", "pl": "Nie ma znaczenia, w co się ubierzesz. To luźna impreza.", "focusEn": "doesn't matter", "focusPl": "Nie ma znaczenia" },
             { "en": "What matters most is that everyone is safe.", "pl": "Najważniejsze, że wszyscy są bezpieczni.", "focusEn": "What matters most", "focusPl": "Najważniejsze" },
             { "en": "Does it matter if I'm a few minutes late?", "pl": "Czy to ma znaczenie, jeśli spóźnię się kilka minut?", "focusEn": "matter", "focusPl": "ma znaczenie" },
-            { "en": "Your opinion really matters to me.", "pl": "Twoja opinia naprawdę liczy się dla mnie.", "focusEn": "matters", "focusPl": "liczy się" }
+            { "en": "Your opinion really matters to me.", "pl": "Twoja opinia naprawdę się dla mnie liczy.", "focusEn": "matters", "focusPl": "liczy" }
           ],
           "acceptedAnswers": ["matter"],
           "acceptedTranslations": ["mieć znaczenie", "liczyć się", "być ważnym"]
@@ -10394,7 +10394,7 @@
             { "en": "She has a lot on her mind right now.", "pl": "Ma teraz dużo na głowie.", "focusEn": "on her mind", "focusPl": "na głowie" }
           ],
           "acceptedAnswers": ["mind"],
-          "acceptedTranslations": ["umysł, głowa", "umysł", "głowa", "myśli", "zdanie"]
+          "acceptedTranslations": ["umysł, głowa", "umysł", "głowa", "myśli"]
         },
         {
           "id": "core.value",
@@ -10446,7 +10446,7 @@
             { "en": "Don't force the window. It's broken.", "pl": "Nie otwieraj na siłę tego okna. Jest zepsute.", "focusEn": "Don't force", "focusPl": "Nie otwieraj na siłę" }
           ],
           "acceptedAnswers": ["force"],
-          "acceptedTranslations": ["zmusić, zmuszać", "zmusić", "zmuszać", "musieć", "na siłę"]
+          "acceptedTranslations": ["zmusić, zmuszać", "zmusić", "zmuszać"]
         },
         {
           "id": "core.develop",
@@ -10524,7 +10524,7 @@
             { "en": "What's our share of the profit?", "pl": "Jaki jest nasz udział w zysku?", "focusEn": "share", "focusPl": "udział" }
           ],
           "acceptedAnswers": ["share"],
-          "acceptedTranslations": ["część, udział", "część", "udział", "akcja"]
+          "acceptedTranslations": ["część, udział", "część", "udział"]
         },
         {
           "id": "core.figure",
@@ -10651,7 +10651,7 @@
             { "en": "Can you help me clear the table?", "pl": "Pomożesz mi sprzątnąć ze stołu?", "focusEn": "clear the table", "focusPl": "sprzątnąć ze stołu" },
             { "en": "They cleared the snow from the road this morning.", "pl": "Rano odśnieżyli drogę.", "focusEn": "cleared the snow", "focusPl": "odśnieżyli" },
             { "en": "I need to clear some space on my phone.", "pl": "Muszę zwolnić trochę miejsca w telefonie.", "focusEn": "clear", "focusPl": "zwolnić" },
-            { "en": "The weather cleared up in the afternoon.", "pl": "Po południu się przejaśniło.", "focusEn": "cleared up", "focusPl": "się przejaśniło" }
+            { "en": "Don't forget to clear your desk before you leave.", "pl": "Nie zapomnij uprzątnąć biurka przed wyjściem.", "focusEn": "clear", "focusPl": "uprzątnąć" }
           ],
           "acceptedAnswers": ["clear"],
           "acceptedTranslations": ["sprzątnąć, uprzątnąć", "sprzątnąć", "sprzątać", "uprzątnąć", "oczyścić", "zwolnić"]
@@ -10706,7 +10706,7 @@
             { "en": "Either way, we'll need a car.", "pl": "Tak czy inaczej, będziemy potrzebować samochodu.", "focusEn": "Either way", "focusPl": "Tak czy inaczej" }
           ],
           "acceptedAnswers": ["either"],
-          "acceptedTranslations": ["jeden z dwóch, którykolwiek", "jeden z dwóch", "którykolwiek", "dowolny", "żaden", "albo"]
+          "acceptedTranslations": ["jeden z dwóch, którykolwiek", "jeden z dwóch", "którykolwiek", "dowolny", "żaden"]
         },
         {
           "id": "core.per",
@@ -10732,7 +10732,7 @@
             { "en": "You should drink about two liters of water per day.", "pl": "Należy pić około dwóch litrów wody dziennie.", "focusEn": "per day", "focusPl": "dziennie" }
           ],
           "acceptedAnswers": ["per"],
-          "acceptedTranslations": ["na, za (każdy)", "na", "za", "od", "dziennie"]
+          "acceptedTranslations": ["na, za (każdy)", "na", "za", "od"]
         },
         {
           "id": "core.remain",
@@ -11042,10 +11042,10 @@
             { "en": "The dog ran toward me when I opened the gate.", "pl": "Kiedy otworzyłem furtkę, pies pobiegł w moją stronę.", "focusEn": "toward me", "focusPl": "w moją stronę" },
             { "en": "We're driving toward the mountains.", "pl": "Jedziemy w kierunku gór.", "focusEn": "toward", "focusPl": "w kierunku" },
             { "en": "It started to rain toward the end of the game.", "pl": "Pod koniec meczu zaczęło padać.", "focusEn": "toward the end", "focusPl": "Pod koniec" },
-            { "en": "How do you feel toward your old school?", "pl": "Co czujesz do swojej dawnej szkoły?", "focusEn": "toward", "focusPl": "do" }
+            { "en": "Why is she so unfriendly toward her neighbors?", "pl": "Dlaczego jest taka nieżyczliwa wobec sąsiadów?", "focusEn": "toward", "focusPl": "wobec" }
           ],
           "acceptedAnswers": ["toward"],
-          "acceptedTranslations": ["w kierunku, w stronę", "w kierunku", "w stronę", "ku", "pod koniec", "do"]
+          "acceptedTranslations": ["w kierunku, w stronę", "w kierunku", "w stronę", "ku", "pod koniec", "wobec"]
         },
         {
           "id": "core.individual",
@@ -11111,13 +11111,13 @@
           "register": "neutralny",
           "contextPl": "Make sense: o tym, czy coś jest logiczne i zrozumiałe",
           "natural": "",
-          "forms": "(lp.)",
+          "forms": "(niepoliczalny)",
           "collocations": "make sense; it makes sense; no sense; in a sense",
           "synonyms": "meaning; point",
           "antonyms": "",
           "notePl": "It makes sense = to ma sens; in a sense = w pewnym sensie.",
           "examples": [
-            { "en": "Your plan makes a lot of sense.", "pl": "Twój plan ma dużo sensu.", "focusEn": "makes a lot of sense", "focusPl": "ma dużo sensu" },
+            { "en": "Your plan makes a lot of sense.", "pl": "Twój plan jest bardzo sensowny.", "focusEn": "makes a lot of sense", "focusPl": "jest bardzo sensowny" },
             { "en": "This sentence doesn't make sense.", "pl": "To zdanie nie ma sensu.", "focusEn": "doesn't make sense", "focusPl": "nie ma sensu" },
             { "en": "Does it make sense to buy a car if we live downtown?", "pl": "Czy jest sens kupować samochód, jeśli mieszkamy w centrum?", "focusEn": "make sense", "focusPl": "jest sens" },
             { "en": "In a sense, you're right.", "pl": "W pewnym sensie masz rację.", "focusEn": "In a sense", "focusPl": "W pewnym sensie" }
@@ -11330,7 +11330,7 @@
             { "en": "He got the job on the condition that he moves to Dallas.", "pl": "Dostał pracę pod warunkiem, że przeprowadzi się do Dallas.", "focusEn": "on the condition that", "focusPl": "pod warunkiem, że" }
           ],
           "acceptedAnswers": ["condition"],
-          "acceptedTranslations": ["warunek", "regulamin"]
+          "acceptedTranslations": ["warunek"]
         },
         {
           "id": "core.certain",
@@ -11356,7 +11356,7 @@
             { "en": "It's almost certain that prices will go up.", "pl": "Jest prawie pewne, że ceny wzrosną.", "focusEn": "certain", "focusPl": "pewne" }
           ],
           "acceptedAnswers": ["certain"],
-          "acceptedTranslations": ["pewny, pewien", "pewny", "pewien", "przekonany", "na pewno"]
+          "acceptedTranslations": ["pewny, pewien", "pewny", "pewien", "przekonany"]
         },
         {
           "id": "core.certain-2",
@@ -11409,7 +11409,7 @@
             { "en": "I'm not looking forward to Monday.", "pl": "Wcale nie czekam na poniedziałek.", "focusEn": "not looking forward to", "focusPl": "nie czekam na" }
           ],
           "acceptedAnswers": ["forward"],
-          "acceptedTranslations": ["naprzód, do przodu", "naprzód", "do przodu", "dalej", "cieszyć się na"]
+          "acceptedTranslations": ["naprzód, do przodu", "naprzód", "do przodu", "dalej"]
         },
         {
           "id": "core.especially",
@@ -11435,7 +11435,7 @@
             { "en": "It's not especially cold today.", "pl": "Dziś nie jest szczególnie zimno.", "focusEn": "not especially", "focusPl": "nie jest szczególnie" }
           ],
           "acceptedAnswers": ["especially"],
-          "acceptedTranslations": ["szczególnie, zwłaszcza", "szczególnie", "zwłaszcza", "specjalnie", "szczególny"]
+          "acceptedTranslations": ["szczególnie, zwłaszcza", "szczególnie", "zwłaszcza", "specjalnie"]
         },
         {
           "id": "core.rise",
@@ -11591,7 +11591,7 @@
             { "en": "Is there parking on site?", "pl": "Czy na miejscu jest parking?", "focusEn": "on site", "focusPl": "na miejscu" }
           ],
           "acceptedAnswers": ["site"],
-          "acceptedTranslations": ["teren, miejsce", "teren", "miejsce", "plac", "budowa", "strona"]
+          "acceptedTranslations": ["teren, miejsce", "teren", "miejsce", "plac"]
         },
         {
           "id": "core.land",
@@ -11795,10 +11795,10 @@
             { "en": "Stop acting like a child!", "pl": "Przestań zachowywać się jak dziecko!", "focusEn": "acting like", "focusPl": "zachowywać się jak" },
             { "en": "He's been acting strange all week.", "pl": "Cały tydzień dziwnie się zachowuje.", "focusEn": "acting strange", "focusPl": "dziwnie się zachowuje" },
             { "en": "Just act normal. Nobody will notice.", "pl": "Po prostu zachowuj się normalnie. Nikt nie zauważy.", "focusEn": "act normal", "focusPl": "zachowuj się normalnie" },
-            { "en": "Why is she acting so nervous today?", "pl": "Czemu ona jest taka zdenerwowana dzisiaj?", "focusEn": "acting so nervous", "focusPl": "jest taka zdenerwowana" }
+            { "en": "Why is she acting so nervous today?", "pl": "Czemu ona się dziś tak nerwowo zachowuje?", "focusEn": "acting so nervous", "focusPl": "tak nerwowo zachowuje" }
           ],
           "acceptedAnswers": ["act"],
-          "acceptedTranslations": ["zachowywać się", "zachować się", "udawać"]
+          "acceptedTranslations": ["zachowywać się", "zachować się"]
         },
         {
           "id": "core.range",
@@ -11951,10 +11951,10 @@
             { "en": "Breakfast is served from seven to ten.", "pl": "Śniadanie jest podawane od siódmej do dziesiątej.", "focusEn": "is served", "focusPl": "jest podawane" },
             { "en": "Serve the fish with rice and salad.", "pl": "Podawaj rybę z ryżem i sałatką.", "focusEn": "Serve", "focusPl": "Podawaj" },
             { "en": "Do they serve vegetarian food here?", "pl": "Czy podają tu jedzenie wegetariańskie?", "focusEn": "serve", "focusPl": "podają" },
-            { "en": "The waiter served us very quickly.", "pl": "Kelner bardzo szybko nas obsłużył.", "focusEn": "served", "focusPl": "obsłużył" }
+            { "en": "What time do you stop serving lunch?", "pl": "Do której podajecie lunch?", "focusEn": "serving", "focusPl": "podajecie" }
           ],
           "acceptedAnswers": ["serve"],
-          "acceptedTranslations": ["podawać (jedzenie)", "podawać", "podać", "serwować", "obsłużyć"]
+          "acceptedTranslations": ["podawać (jedzenie)", "podawać", "podać", "serwować"]
         },
         {
           "id": "core.serve-2",
@@ -12055,7 +12055,7 @@
             { "en": "The two countries have traded for centuries.", "pl": "Te dwa kraje handlują ze sobą od wieków.", "focusEn": "have traded", "focusPl": "handlują" },
             { "en": "I traded my old bike for a skateboard.", "pl": "Wymieniłem stary rower na deskorolkę.", "focusEn": "traded", "focusPl": "Wymieniłem" },
             { "en": "Do you want to trade seats?", "pl": "Chcesz zamienić się miejscami?", "focusEn": "trade seats", "focusPl": "zamienić się miejscami" },
-            { "en": "We traded in our old car at the dealership.", "pl": "Oddaliśmy w rozliczeniu u dealera nasz stary samochód.", "focusEn": "traded in", "focusPl": "Oddaliśmy w rozliczeniu" }
+            { "en": "We traded in our old car at the dealership.", "pl": "W salonie oddaliśmy w rozliczeniu nasz stary samochód.", "focusEn": "traded in", "focusPl": "oddaliśmy w rozliczeniu" }
           ],
           "acceptedAnswers": ["trade"],
           "acceptedTranslations": ["handlować, wymienić się", "handlować", "wymienić", "wymienić się", "zamienić się"]
@@ -12162,7 +12162,7 @@
             { "en": "How many votes did he get?", "pl": "Ile głosów dostał?", "focusEn": "votes", "focusPl": "głosów" }
           ],
           "acceptedAnswers": ["vote"],
-          "acceptedTranslations": ["głos (w głosowaniu), głosowanie", "głos", "głosowanie", "zagłosować"]
+          "acceptedTranslations": ["głos (w głosowaniu), głosowanie", "głos", "głosowanie"]
         },
         {
           "id": "core.focus",
@@ -12418,7 +12418,7 @@
           "examples": [
             { "en": "Please pay attention. This is important.", "pl": "Proszę uważać. To ważne.", "focusEn": "pay attention", "focusPl": "uważać" },
             { "en": "Attention, please! The train is arriving.", "pl": "Proszę o uwagę! Pociąg wjeżdża na stację.", "focusEn": "Attention", "focusPl": "uwagę" },
-            { "en": "The kids didn't pay any attention to me.", "pl": "Dzieci w ogóle nie zwracały uwagi na mnie.", "focusEn": "pay any attention", "focusPl": "nie zwracały uwagi" },
+            { "en": "The kids didn't pay any attention to me.", "pl": "Dzieci w ogóle nie zwracały na mnie uwagi.", "focusEn": "pay any attention", "focusPl": "nie zwracały na mnie uwagi" },
             { "en": "She waved to get the waiter's attention.", "pl": "Pomachała, żeby zwrócić uwagę kelnera.", "focusEn": "attention", "focusPl": "uwagę" }
           ],
           "acceptedAnswers": ["attention"],
@@ -12546,7 +12546,7 @@
           "antonyms": "",
           "notePl": "Not particularly = niespecjalnie.",
           "examples": [
-            { "en": "I'm not particularly hungry right now.", "pl": "Nie jestem specjalnie głodny w tej chwili.", "focusEn": "not particularly", "focusPl": "Nie jestem specjalnie" },
+            { "en": "I'm not particularly hungry right now.", "pl": "W tej chwili nie jestem specjalnie głodny.", "focusEn": "not particularly", "focusPl": "nie jestem specjalnie" },
             { "en": "The roads are dangerous, particularly in winter.", "pl": "Drogi są niebezpieczne, zwłaszcza zimą.", "focusEn": "particularly", "focusPl": "zwłaszcza" },
             { "en": "She was particularly good at math.", "pl": "Była szczególnie dobra z matematyki.", "focusEn": "particularly", "focusPl": "szczególnie" },
             { "en": "Was there anything you particularly liked about the city?", "pl": "Czy coś szczególnie podobało ci się w tym mieście?", "focusEn": "particularly", "focusPl": "szczególnie" }
@@ -12578,7 +12578,7 @@
             { "en": "Can we go now? – I suppose so.", "pl": "Możemy już iść? – Chyba tak.", "focusEn": "I suppose so", "focusPl": "Chyba tak" }
           ],
           "acceptedAnswers": ["suppose"],
-          "acceptedTranslations": ["przypuszczać, sądzić", "przypuszczać", "sądzić", "chyba", "mieć (coś zrobić)"]
+          "acceptedTranslations": ["przypuszczać, sądzić", "przypuszczać", "sądzić", "chyba"]
         },
         {
           "id": "core.knowledge",
@@ -12627,10 +12627,10 @@
             { "en": "She has a really loud laugh.", "pl": "Ma naprawdę głośny śmiech.", "focusEn": "laugh", "focusPl": "śmiech" },
             { "en": "We did it just for a laugh.", "pl": "Zrobiliśmy to tylko dla żartu.", "focusEn": "for a laugh", "focusPl": "dla żartu" },
             { "en": "His speech got a big laugh from the crowd.", "pl": "Jego przemówienie wywołało salwę śmiechu.", "focusEn": "a big laugh", "focusPl": "salwę śmiechu" },
-            { "en": "Isn't that a funny laugh?", "pl": "Czy to nie jest zabawny śmiech?", "focusEn": "laugh", "focusPl": "śmiech" }
+            { "en": "Her laugh isn't loud, but it's contagious.", "pl": "Jej śmiech nie jest głośny, ale za to zaraźliwy.", "focusEn": "laugh", "focusPl": "śmiech" }
           ],
           "acceptedAnswers": ["laugh"],
-          "acceptedTranslations": ["śmiech", "żart"]
+          "acceptedTranslations": ["śmiech"]
         },
         {
           "id": "core.manage",
@@ -12705,7 +12705,7 @@
             { "en": "I simply don't have time to cook every day.", "pl": "Po prostu nie mam czasu codziennie gotować.", "focusEn": "simply", "focusPl": "Po prostu" },
             { "en": "The instructions are simply written.", "pl": "Instrukcja jest prosto napisana.", "focusEn": "simply", "focusPl": "prosto" },
             { "en": "Why don't you simply ask him?", "pl": "Czemu po prostu go nie zapytasz?", "focusEn": "simply", "focusPl": "po prostu" },
-            { "en": "She left simply because she was bored.", "pl": "Wyszła zwyczajnie dlatego, że się nudziła.", "focusEn": "simply", "focusPl": "zwyczajnie" }
+            { "en": "She left simply because she was bored.", "pl": "Wyszła po prostu dlatego, że się nudziła.", "focusEn": "simply", "focusPl": "po prostu" }
           ],
           "acceptedAnswers": ["simply"],
           "acceptedTranslations": ["po prostu, zwyczajnie", "po prostu", "zwyczajnie", "prosto", "wręcz"]
@@ -12734,7 +12734,7 @@
             { "en": "Was it a dog attack?", "pl": "Czy to był atak psa?", "focusEn": "attack", "focusPl": "atak" }
           ],
           "acceptedAnswers": ["attack"],
-          "acceptedTranslations": ["atak", "napaść", "zawał"]
+          "acceptedTranslations": ["atak", "napaść"]
         },
         {
           "id": "core.attack-2",
@@ -12812,7 +12812,7 @@
             { "en": "The movie had a surprising ending.", "pl": "Film miał zaskakujące zakończenie.", "focusEn": "surprising", "focusPl": "zaskakujące" }
           ],
           "acceptedAnswers": ["surprising"],
-          "acceptedTranslations": ["zaskakujący", "nic dziwnego", "dziwny"]
+          "acceptedTranslations": ["zaskakujący", "nic dziwnego"]
         },
         {
           "id": "core.feature",
@@ -12859,7 +12859,7 @@
           "notePl": "Affect (czasownik) ≠ effect (rzeczownik: skutek).",
           "examples": [
             { "en": "The cold weather affected the price of oranges.", "pl": "Chłody wpłynęły na cenę pomarańczy.", "focusEn": "affected", "focusPl": "wpłynęły" },
-            { "en": "How will the new rules affect us?", "pl": "Jak nowe przepisy wpłyną na nas?", "focusEn": "affect", "focusPl": "wpłyną" },
+            { "en": "How will the new rules affect us?", "pl": "Jak nowe przepisy na nas wpłyną?", "focusEn": "affect", "focusPl": "wpłyną" },
             { "en": "Lack of sleep affects your mood.", "pl": "Brak snu wpływa na nastrój.", "focusEn": "affects", "focusPl": "wpływa" },
             { "en": "The storm didn't affect our flight.", "pl": "Burza nie miała wpływu na nasz lot.", "focusEn": "didn't affect", "focusPl": "nie miała wpływu" }
           ],
@@ -13112,7 +13112,7 @@
           "register": "neutralny",
           "contextPl": "O gazetach, dziennikarzach i mediach",
           "natural": "",
-          "forms": "(lp.)",
+          "forms": "the press (tylko lp.)",
           "collocations": "the press; press conference; freedom of the press; press release",
           "synonyms": "media",
           "antonyms": "",
@@ -13302,11 +13302,11 @@
           "examples": [
             { "en": "Put the names in alphabetical order.", "pl": "Ułóż nazwiska w kolejności alfabetycznej.", "focusEn": "order", "focusPl": "kolejności" },
             { "en": "The elevator is out of order again.", "pl": "Winda znowu jest nieczynna.", "focusEn": "out of order", "focusPl": "nieczynna" },
-            { "en": "I left early in order to catch the train.", "pl": "Wyszedłem wcześnie, żeby zdążyć na pociąg.", "focusEn": "in order to", "focusPl": "żeby" },
+            { "en": "The books on this shelf are in no particular order.", "pl": "Książki na tej półce nie są ułożone w żadnej konkretnej kolejności.", "focusEn": "order", "focusPl": "kolejności" },
             { "en": "Is everything in order with my passport?", "pl": "Czy z moim paszportem wszystko jest w porządku?", "focusEn": "in order", "focusPl": "w porządku" }
           ],
           "acceptedAnswers": ["order"],
-          "acceptedTranslations": ["kolejność, porządek", "kolejność", "porządek", "nieczynny", "żeby"]
+          "acceptedTranslations": ["kolejność, porządek", "kolejność", "porządek"]
         }
       ]
     },
@@ -13339,7 +13339,7 @@
             { "en": "How can we ensure the safety of our guests?", "pl": "Jak możemy zapewnić bezpieczeństwo naszym gościom?", "focusEn": "ensure", "focusPl": "zapewnić" }
           ],
           "acceptedAnswers": ["ensure", "make sure"],
-          "acceptedTranslations": ["zapewnić", "zapewniać", "dopilnować", "zagwarantować", "upewnić się"]
+          "acceptedTranslations": ["zapewnić", "zapewniać", "dopilnować", "zagwarantować"]
         },
         {
           "id": "core.maintain",
@@ -13827,11 +13827,11 @@
           "examples": [
             { "en": "I figured you'd be hungry, so I made sandwiches.", "pl": "Pomyślałem, że będziesz głodny, więc zrobiłem kanapki.", "focusEn": "figured", "focusPl": "Pomyślałem" },
             { "en": "We figured it would be faster to take the train.", "pl": "Uznaliśmy, że szybciej będzie pojechać pociągiem.", "focusEn": "figured", "focusPl": "Uznaliśmy" },
-            { "en": "I can't figure out how this machine works.", "pl": "Nie mogę rozgryźć, jak działa ta maszyna.", "focusEn": "figure out", "focusPl": "rozgryźć" },
-            { "en": "Did you figure out what was wrong with the car?", "pl": "Rozgryzłeś, co było nie tak z samochodem?", "focusEn": "figure out", "focusPl": "Rozgryzłeś" }
+            { "en": "I figured it would rain, so I didn't bring my bike.", "pl": "Doszedłem do wniosku, że będzie padać, więc nie wziąłem roweru.", "focusEn": "figured", "focusPl": "Doszedłem do wniosku" },
+            { "en": "Why didn't you call? – I figured you were busy.", "pl": "Czemu nie zadzwoniłeś? – Uznałem, że jesteś zajęty.", "focusEn": "figured", "focusPl": "Uznałem" }
           ],
           "acceptedAnswers": ["figure"],
-          "acceptedTranslations": ["sądzić, uznać", "sądzić", "uznać", "pomyśleć", "rozgryźć", "dojść do wniosku"]
+          "acceptedTranslations": ["sądzić, uznać", "sądzić", "uznać", "pomyśleć", "dojść do wniosku"]
         },
         {
           "id": "core.involved",
@@ -13927,13 +13927,13 @@
           "antonyms": "",
           "notePl": "Can't bear = nie znoszę. Bear in mind = pamiętać, mieć na uwadze.",
           "examples": [
-            { "en": "I can't bear to watch scary movies.", "pl": "Nie potrafię oglądać horrorów.", "focusEn": "can't bear", "focusPl": "Nie potrafię" },
+            { "en": "I can't bear to watch scary movies.", "pl": "Nie jestem w stanie oglądać horrorów.", "focusEn": "can't bear", "focusPl": "Nie jestem w stanie" },
             { "en": "She couldn't bear the pain any longer.", "pl": "Nie mogła dłużej znieść bólu.", "focusEn": "couldn't bear", "focusPl": "Nie mogła dłużej znieść" },
             { "en": "Please bear in mind that the office closes early today.", "pl": "Proszę pamiętać, że dziś biuro zamykają wcześniej.", "focusEn": "bear in mind", "focusPl": "pamiętać" },
             { "en": "How do you bear the cold winters here?", "pl": "Jak znosisz tutejsze mroźne zimy?", "focusEn": "bear", "focusPl": "znosisz" }
           ],
           "acceptedAnswers": ["bear"],
-          "acceptedTranslations": ["znieść, wytrzymać", "znieść", "znosić", "wytrzymać", "pamiętać"]
+          "acceptedTranslations": ["znieść, wytrzymać", "znieść", "znosić", "wytrzymać"]
         },
         {
           "id": "core.approach",
@@ -14264,7 +14264,7 @@
             { "en": "Can teenagers relate to this book?", "pl": "Czy nastolatkowie mogą odnaleźć się w tej książce?", "focusEn": "relate to", "focusPl": "odnaleźć się w" }
           ],
           "acceptedAnswers": ["relate"],
-          "acceptedTranslations": ["odnosić się, wiązać się", "odnosić się", "wiązać się", "utożsamiać się", "rozumieć"]
+          "acceptedTranslations": ["odnosić się, wiązać się", "odnosić się", "wiązać się", "utożsamiać się"]
         },
         {
           "id": "core.represent",
