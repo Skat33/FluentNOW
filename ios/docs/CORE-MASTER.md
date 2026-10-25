@@ -46,13 +46,13 @@ Listy NGSL i NAWL zweryfikowano na stronie projektu (WebFetch, 2026-10-24): obie
 ## Podsumowanie
 
 - Hasła: **5367** (NGSL: 2730, NAWL: 792, tylko uzupełnienie FluentNOW: 1845).
-- Status: nowe **1885**, częściowe 83, do sprawdzenia 2010, gotowe w core 1389.
-- Szacowane wpisy do napisania: **2011**.
+- Status: nowe **1097**, częściowe 39, do sprawdzenia 1893, gotowe w core 2338.
+- Szacowane wpisy do napisania: **1156**.
 
 | CEFR | A1 | A2 | B1 | B2 | C1 | C2 |
 |---|---|---|---|---|---|---|
 | wszystkie hasła | 484 | 688 | 1320 | 1426 | 1246 | 203 |
-| do napisania (new + partial) | 9 | 59 | 246 | 553 | 903 | 198 |
+| do napisania (new + partial) | 4 | 3 | 8 | 115 | 809 | 197 |
 
 | Część mowy (główna) | Hasła |
 |---|---|
@@ -74,9 +74,9 @@ Listy NGSL i NAWL zweryfikowano na stronie projektu (WebFetch, 2026-10-24): obie
 | C01 | `core/core-c01.json` | 620 | 6 | 219 | 395 | 6 | 249 | 186 | 163 | 22 | 0 | 0 |
 | C02 | `core/core-c02.json` | 850 | 3 | 394 | 453 | 3 | 146 | 176 | 345 | 175 | 8 | 0 |
 | C03 | `core/core-c03.json` | 768 | 0 | 291 | 477 | 0 | 52 | 120 | 264 | 235 | 97 | 0 |
-| C04 | `core/core-c04.json` | 865 | 337 | 468 | 60 | 345 | 37 | 206 | 358 | 151 | 111 | 2 |
-| C05 | `core/core-c05.json` | 778 | 422 | 353 | 3 | 433 | 0 | 0 | 190 | 588 | 0 | 0 |
-| C06 | `core/core-c06.json` | 621 | 470 | 151 | 0 | 487 | 0 | 0 | 0 | 255 | 366 | 0 |
+| C04 | `core/core-c04.json` | 865 | 4 | 407 | 454 | 4 | 37 | 206 | 358 | 151 | 111 | 2 |
+| C05 | `core/core-c05.json` | 778 | 116 | 322 | 340 | 119 | 0 | 0 | 190 | 588 | 0 | 0 |
+| C06 | `core/core-c06.json` | 621 | 277 | 126 | 218 | 287 | 0 | 0 | 0 | 255 | 366 | 0 |
 | C07 | `core/core-c07.json` | 613 | 486 | 126 | 1 | 492 | 0 | 0 | 0 | 0 | 613 | 0 |
 | C08 | `core/core-c08.json` | 252 | 244 | 8 | 0 | 245 | 0 | 0 | 0 | 0 | 51 | 201 |
 
