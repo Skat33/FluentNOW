@@ -46,13 +46,13 @@ Listy NGSL i NAWL zweryfikowano na stronie projektu (WebFetch, 2026-10-24): obie
 ## Podsumowanie
 
 - Hasła: **5367** (NGSL: 2730, NAWL: 792, tylko uzupełnienie FluentNOW: 1845).
-- Status: nowe **814**, częściowe 32, do sprawdzenia 1868, gotowe w core 2653.
-- Szacowane wpisy do napisania: **855**.
+- Status: nowe **415**, częściowe 28, do sprawdzenia 1848, gotowe w core 3076.
+- Szacowane wpisy do napisania: **450**.
 
 | CEFR | A1 | A2 | B1 | B2 | C1 | C2 |
 |---|---|---|---|---|---|---|
 | wszystkie hasła | 484 | 688 | 1320 | 1426 | 1246 | 203 |
-| do napisania (new + partial) | 4 | 3 | 8 | 8 | 626 | 197 |
+| do napisania (new + partial) | 4 | 3 | 8 | 8 | 268 | 152 |
 
 | Część mowy (główna) | Hasła |
 |---|---|
@@ -76,8 +76,8 @@ Listy NGSL i NAWL zweryfikowano na stronie projektu (WebFetch, 2026-10-24): obie
 | C03 | `core/core-c03.json` | 768 | 0 | 291 | 477 | 0 | 52 | 120 | 264 | 235 | 97 | 0 |
 | C04 | `core/core-c04.json` | 865 | 4 | 407 | 454 | 4 | 37 | 206 | 358 | 151 | 111 | 2 |
 | C05 | `core/core-c05.json` | 778 | 9 | 317 | 452 | 9 | 0 | 0 | 190 | 588 | 0 | 0 |
-| C06 | `core/core-c06.json` | 621 | 154 | 117 | 350 | 156 | 0 | 0 | 0 | 255 | 366 | 0 |
-| C07 | `core/core-c07.json` | 613 | 426 | 115 | 72 | 432 | 0 | 0 | 0 | 0 | 613 | 0 |
-| C08 | `core/core-c08.json` | 252 | 244 | 8 | 0 | 245 | 0 | 0 | 0 | 0 | 51 | 201 |
+| C06 | `core/core-c06.json` | 621 | 1 | 102 | 518 | 1 | 0 | 0 | 0 | 255 | 366 | 0 |
+| C07 | `core/core-c07.json` | 613 | 268 | 111 | 234 | 274 | 0 | 0 | 0 | 0 | 613 | 0 |
+| C08 | `core/core-c08.json` | 252 | 152 | 7 | 93 | 153 | 0 | 0 | 0 | 0 | 51 | 201 |
 
 Lista robocza sharda: `node ios/tools/build-core-master.mjs --shard C03` (z `--all` także hasła gotowe i do sprawdzenia).
