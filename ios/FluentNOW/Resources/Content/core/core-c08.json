@@ -33,7 +33,7 @@
           "examples": [
             { "en": "After the night shift, she was close to exhaustion.", "pl": "Po nocnej zmianie była bliska wyczerpania.", "focusEn": "exhaustion", "focusPl": "wyczerpania" },
             { "en": "Two runners collapsed from exhaustion near the finish line.", "pl": "Dwóch biegaczy zasłabło z wyczerpania tuż przed metą.", "focusEn": "exhaustion", "focusPl": "wyczerpania" },
-            { "en": "Is this real exhaustion, or do you just need a weekend off?", "pl": "To prawdziwe wyczerpanie, czy po prostu potrzebujesz wolnego weekendu?", "focusEn": "exhaustion", "focusPl": "wyczerpanie" },
+            { "en": "Is this real exhaustion, or do you just need a weekend off?", "pl": "To prawdziwe wyczerpanie czy po prostu potrzebujesz wolnego weekendu?", "focusEn": "exhaustion", "focusPl": "wyczerpanie" },
             { "en": "Working three jobs led to complete mental exhaustion.", "pl": "Praca w trzech miejscach doprowadziła do całkowitego wyczerpania psychicznego.", "focusEn": "mental exhaustion", "focusPl": "wyczerpania psychicznego" }
           ],
           "acceptedAnswers": ["exhaustion"],
@@ -284,7 +284,7 @@
           "examples": [
             { "en": "She wants to run the project without interference from her boss.", "pl": "Chce prowadzić projekt bez ingerencji szefa.", "focusEn": "without interference", "focusPl": "bez ingerencji" },
             { "en": "My parents' constant interference in my life drove me crazy.", "pl": "Ciągłe wtrącanie się rodziców w moje życie doprowadzało mnie do szału.", "focusEn": "constant interference", "focusPl": "Ciągłe wtrącanie się" },
-            { "en": "The referee's decision was final, with no interference allowed.", "pl": "Decyzja sędziego była ostateczna i nie dopuszczano żadnej ingerencji.", "focusEn": "no interference", "focusPl": "żadnej ingerencji" }
+            { "en": "I don't appreciate your interference in my private life.", "pl": "Nie życzę sobie, żebyś wtrącał się w moje prywatne życie.", "focusEn": "interference", "focusPl": "wtrącał się" }
           ],
           "acceptedAnswers": ["interference"],
           "acceptedTranslations": ["ingerencja", "wtrącanie się", "mieszanie się", "ingerowanie"]
@@ -359,7 +359,7 @@
           "examples": [
             { "en": "This cream may cause mild skin irritation.", "pl": "Ten krem może powodować lekkie podrażnienie skóry.", "focusEn": "skin irritation", "focusPl": "podrażnienie skóry" },
             { "en": "Smoke from the fire caused eye irritation for hours.", "pl": "Dym z ogniska godzinami podrażniał oczy.", "focusEn": "caused eye irritation", "focusPl": "podrażniał oczy" },
-            { "en": "Does the new soap give you any irritation?", "pl": "Czy to nowe mydło cię podrażnia?", "focusEn": "give you any irritation", "focusPl": "cię podrażnia" }
+            { "en": "Does the new soap cause any irritation?", "pl": "Czy nowe mydło powoduje jakieś podrażnienia?", "focusEn": "cause any irritation", "focusPl": "powoduje jakieś podrażnienia" }
           ],
           "acceptedAnswers": ["irritation"],
           "acceptedTranslations": ["podrażnienie", "podrażniać", "swędzenie", "zaczerwienienie"]
@@ -786,7 +786,7 @@
             { "en": "According to an old superstition, breaking a mirror brings bad luck.", "pl": "Według starego przesądu stłuczenie lustra przynosi pecha.", "focusEn": "an old superstition", "focusPl": "starego przesądu" },
             { "en": "My grandma knows a superstition for every occasion.", "pl": "Moja babcia zna przesąd na każdą okazję.", "focusEn": "a superstition", "focusPl": "przesąd" },
             { "en": "Do you actually believe in superstitions like that?", "pl": "Naprawdę wierzysz w takie przesądy?", "focusEn": "superstitions", "focusPl": "przesądy" },
-            { "en": "The hotel doesn't have a thirteenth floor, out of superstition.", "pl": "Hotel nie ma trzynastego piętra, z przesądu.", "focusEn": "out of superstition", "focusPl": "z przesądu" }
+            { "en": "The hotel doesn't have a thirteenth floor, out of superstition.", "pl": "Hotel z przesądu nie ma trzynastego piętra.", "focusEn": "out of superstition", "focusPl": "z przesądu" }
           ],
           "acceptedAnswers": ["superstition"],
           "acceptedTranslations": ["przesąd", "przesądy", "zabobon", "zabobony"]
@@ -861,10 +861,10 @@
           "examples": [
             { "en": "Admitting you need help isn't weakness; it's healthy vulnerability.", "pl": "Przyznanie się, że potrzebujesz pomocy, to nie słabość, tylko zdrowe okazanie wrażliwości.", "focusEn": "healthy vulnerability", "focusPl": "zdrowe okazanie wrażliwości" },
             { "en": "Living alone in a new country gave her a sense of vulnerability.", "pl": "Samotne życie w nowym kraju dawało jej poczucie bezbronności.", "focusEn": "a sense of vulnerability", "focusPl": "poczucie bezbronności" },
-            { "en": "Older people have a greater vulnerability to the flu.", "pl": "Osoby starsze są bardziej podatne na grypę.", "focusEn": "have a greater vulnerability to", "focusPl": "są bardziej podatne na" }
+            { "en": "Older people have a greater vulnerability to the flu.", "pl": "Osoby starsze wykazują większą podatność na grypę.", "focusEn": "vulnerability to", "focusPl": "podatność na" }
           ],
           "acceptedAnswers": ["vulnerability"],
-          "acceptedTranslations": ["bezbronność", "wrażliwość", "słabość", "podatność", "podatny"]
+          "acceptedTranslations": ["bezbronność", "wrażliwość", "słabość", "podatność"]
         },
         {
           "id": "core.vulnerability-2",
@@ -1539,7 +1539,7 @@
             { "en": "I had a hunch that she would say yes.", "pl": "Miałem przeczucie, że się zgodzi.", "focusEn": "I had a hunch", "focusPl": "Miałem przeczucie" },
             { "en": "The detective followed his hunch and checked the garage.", "pl": "Detektyw poszedł za głosem intuicji i sprawdził garaż.", "focusEn": "followed his hunch", "focusPl": "poszedł za głosem intuicji" },
             { "en": "My hunch is that the store will close by the end of the year.", "pl": "Coś mi mówi, że do końca roku ten sklep zostanie zamknięty.", "focusEn": "My hunch", "focusPl": "Coś mi mówi" },
-            { "en": "Was it just a hunch, or did someone tell you?", "pl": "To było tylko przeczucie, czy ktoś ci powiedział?", "focusEn": "a hunch", "focusPl": "przeczucie" }
+            { "en": "Was it just a hunch, or did someone tell you?", "pl": "To było tylko przeczucie czy ktoś ci powiedział?", "focusEn": "a hunch", "focusPl": "przeczucie" }
           ],
           "acceptedAnswers": ["hunch"],
           "acceptedTranslations": ["przeczucie", "intuicja", "coś mi mówi", "przeczuwać"]
@@ -1567,7 +1567,7 @@
             { "en": "Writers often need solitude to do their best work.", "pl": "Pisarze często potrzebują samotności, żeby jak najlepiej pracować.", "focusEn": "solitude", "focusPl": "samotności" }
           ],
           "acceptedAnswers": ["solitude"],
-          "acceptedTranslations": ["samotność", "odosobnienie", "samotnia", "bycie samemu"]
+          "acceptedTranslations": ["samotność", "odosobnienie", "bycie samemu"]
         },
         {
           "id": "core.scrutinize",
@@ -1774,7 +1774,7 @@
             { "en": "Learning isn't a set of discrete steps; it's a continuous process.", "pl": "Nauka to nie zbiór osobnych kroków, tylko ciągły proces.", "focusEn": "discrete steps", "focusPl": "osobnych kroków" }
           ],
           "acceptedAnswers": ["discrete"],
-          "acceptedTranslations": ["odrębny", "oddzielny", "osobny", "dyskretny"]
+          "acceptedTranslations": ["odrębny", "oddzielny", "osobny"]
         },
         {
           "id": "core.equilibrium",
@@ -1896,7 +1896,7 @@
           "examples": [
             { "en": "She has an innate talent for music.", "pl": "Ma wrodzony talent muzyczny.", "focusEn": "an innate talent", "focusPl": "wrodzony talent" },
             { "en": "Babies have an innate curiosity about the world.", "pl": "Niemowlęta mają wrodzoną ciekawość świata.", "focusEn": "an innate curiosity", "focusPl": "wrodzoną ciekawość" },
-            { "en": "Is the ability to learn languages innate or learned?", "pl": "Czy zdolność uczenia się języków jest wrodzona, czy nabyta?", "focusEn": "innate", "focusPl": "wrodzona" }
+            { "en": "Is the ability to learn languages innate or learned?", "pl": "Czy zdolność uczenia się języków jest wrodzona czy nabyta?", "focusEn": "innate", "focusPl": "wrodzona" }
           ],
           "acceptedAnswers": ["innate"],
           "acceptedTranslations": ["wrodzony", "naturalny", "przyrodzony"]
@@ -2033,7 +2033,7 @@
           "pos": "przymiotnik",
           "level": "C2",
           "frequency": "less_common",
-          "translation": "zmysłowy",
+          "translation": "sensoryczny",
           "definition": "Connected with the physical senses of sight, hearing, smell, taste or touch.",
           "register": "specjalistyczny",
           "contextPl": "Psychologia, wychowanie dzieci, nauka: odbieranie bodźców",
@@ -2049,7 +2049,7 @@
             { "en": "Good writers use sensory details to bring a scene to life.", "pl": "Dobrzy pisarze ożywiają scenę szczegółami, które działają na zmysły.", "focusEn": "sensory details", "focusPl": "szczegółami, które działają na zmysły" }
           ],
           "acceptedAnswers": ["sensory"],
-          "acceptedTranslations": ["zmysłowy", "sensoryczny", "czuciowy"]
+          "acceptedTranslations": ["sensoryczny", "zmysłowy", "czuciowy", "związany ze zmysłami"]
         },
         {
           "id": "core.subset",
@@ -2171,7 +2171,7 @@
           "examples": [
             { "en": "The business is growing, albeit slowly.", "pl": "Firma się rozwija, choć powoli.", "focusEn": "albeit slowly", "focusPl": "choć powoli" },
             { "en": "She agreed to help, albeit with some hesitation.", "pl": "Zgodziła się pomóc, aczkolwiek z pewnym wahaniem.", "focusEn": "albeit with some hesitation", "focusPl": "aczkolwiek z pewnym wahaniem" },
-            { "en": "We finally found an apartment, albeit a very small one.", "pl": "W końcu znaleźliśmy mieszkanie, wprawdzie bardzo małe.", "focusEn": "albeit a very small one", "focusPl": "wprawdzie bardzo małe" }
+            { "en": "We finally found an apartment, albeit a very small one.", "pl": "W końcu znaleźliśmy mieszkanie, chociaż bardzo małe.", "focusEn": "albeit a very small one", "focusPl": "chociaż bardzo małe" }
           ],
           "acceptedAnswers": ["albeit"],
           "acceptedTranslations": ["aczkolwiek", "choć", "chociaż", "wprawdzie", "jakkolwiek"]
@@ -2395,7 +2395,7 @@
           "notePl": "W fotografii candid photo = zdjęcie spontaniczne, robione z ukrycia.",
           "examples": [
             { "en": "Thanks for being so candid about your experience.", "pl": "Dziękuję, że tak szczerze opowiedziałeś o swoich doświadczeniach.", "focusEn": "so candid", "focusPl": "tak szczerze" },
-            { "en": "To be candid, I don't think the plan will work.", "pl": "Szczerze mówiąc, nie sądzę, żeby ten plan się udał.", "focusEn": "To be candid", "focusPl": "Szczerze mówiąc" },
+            { "en": "To be candid, I don't think the plan will work.", "pl": "Mówiąc szczerze, nie sądzę, żeby ten plan się udał.", "focusEn": "To be candid", "focusPl": "Mówiąc szczerze" },
             { "en": "In a candid interview, the actor talked about his anxiety.", "pl": "W szczerym wywiadzie aktor opowiedział o swoich lękach.", "focusEn": "a candid interview", "focusPl": "szczerym wywiadzie" }
           ],
           "acceptedAnswers": ["candid"],
@@ -2449,7 +2449,7 @@
             { "en": "Successful companies sometimes grow complacent and stop innovating.", "pl": "Firmy, którym się wiedzie, czasem osiadają na laurach i przestają wprowadzać innowacje.", "focusEn": "grow complacent", "focusPl": "osiadają na laurach" }
           ],
           "acceptedAnswers": ["complacent"],
-          "acceptedTranslations": ["zbyt pewny siebie", "zadowolony z siebie", "popadać w samozadowolenie", "osiadać na laurach", "tracić czujność", "uśpiony"]
+          "acceptedTranslations": ["zbyt pewny siebie", "zadowolony z siebie", "popadać w samozadowolenie", "osiadać na laurach", "tracić czujność"]
         },
         {
           "id": "core.conundrum",
@@ -2521,7 +2521,7 @@
           "examples": [
             { "en": "This old church perfectly exemplifies the local style of building.", "pl": "Ten stary kościół jest doskonałym przykładem miejscowego stylu budowania.", "focusEn": "perfectly exemplifies", "focusPl": "jest doskonałym przykładem" },
             { "en": "The problem is exemplified by the long lines at the clinic.", "pl": "Dobrze ilustrują ten problem długie kolejki w przychodni.", "focusEn": "is exemplified by", "focusPl": "Dobrze ilustrują" },
-            { "en": "Can you exemplify this rule with a sentence of your own?", "pl": "Czy możesz zilustrować tę zasadę własnym zdaniem?", "focusEn": "exemplify", "focusPl": "zilustrować" }
+            { "en": "Her career exemplifies what hard work can achieve.", "pl": "Jej kariera jest przykładem tego, co można osiągnąć ciężką pracą.", "focusEn": "exemplifies", "focusPl": "jest przykładem" }
           ],
           "acceptedAnswers": ["exemplify"],
           "acceptedTranslations": ["stanowić przykład", "być przykładem", "ilustrować", "zilustrować", "egzemplifikować", "uosabiać"]
@@ -2571,10 +2571,10 @@
           "examples": [
             { "en": "I inadvertently deleted the whole folder.", "pl": "Niechcący usunąłem cały folder.", "focusEn": "inadvertently deleted", "focusPl": "Niechcący usunąłem" },
             { "en": "He inadvertently revealed the surprise party to his wife.", "pl": "Nieumyślnie zdradził żonie, że szykuje się impreza niespodzianka.", "focusEn": "inadvertently revealed", "focusPl": "Nieumyślnie zdradził" },
-            { "en": "The new rules may inadvertently hurt small businesses.", "pl": "Nowe przepisy mogą mimowolnie zaszkodzić małym firmom.", "focusEn": "inadvertently hurt", "focusPl": "mimowolnie zaszkodzić" }
+            { "en": "The new rules may inadvertently hurt small businesses.", "pl": "Nowe przepisy mogą niezamierzenie zaszkodzić małym firmom.", "focusEn": "inadvertently hurt", "focusPl": "niezamierzenie zaszkodzić" }
           ],
           "acceptedAnswers": ["inadvertently"],
-          "acceptedTranslations": ["niechcący", "nieumyślnie", "przypadkowo", "mimowolnie", "bezwiednie"]
+          "acceptedTranslations": ["niechcący", "nieumyślnie", "przypadkowo", "niezamierzenie", "mimowolnie", "bezwiednie"]
         },
         {
           "id": "core.incessant",
@@ -2624,7 +2624,7 @@
             { "en": "Humor is intrinsic to the way our family communicates.", "pl": "Humor jest nieodłączną częścią tego, jak porozumiewamy się w rodzinie.", "focusEn": "intrinsic to", "focusPl": "nieodłączną częścią" }
           ],
           "acceptedAnswers": ["intrinsic"],
-          "acceptedTranslations": ["wewnętrzny", "nieodłączny", "samoistny", "wrodzony", "istotny"]
+          "acceptedTranslations": ["wewnętrzny", "nieodłączny", "samoistny", "wrodzony"]
         },
         {
           "id": "core.jeopardize",
@@ -2713,7 +2713,7 @@
           "register": "neutralny",
           "contextPl": "Ciągłe stany, problemy, uczucia; wieczne zjawiska",
           "natural": "",
-          "forms": "more perpetual – most perpetual",
+          "forms": "",
           "collocations": "perpetual motion; a perpetual state of; perpetual fear; perpetual snow",
           "synonyms": "constant; endless; eternal",
           "antonyms": "temporary",
@@ -2745,7 +2745,7 @@
           "notePl": "",
           "examples": [
             { "en": "Without a steady income, their situation became precarious.", "pl": "Bez stałego dochodu ich sytuacja stała się niepewna.", "focusEn": "precarious", "focusPl": "niepewna" },
-            { "en": "A tower of plates stood in a precarious pile next to the sink.", "pl": "Obok zlewu stała chwiejna wieża talerzy.", "focusEn": "a precarious pile", "focusPl": "chwiejna wieża" },
+            { "en": "The plates were stacked in a precarious pile next to the sink.", "pl": "Talerze stały obok zlewu w chwiejnym stosie.", "focusEn": "a precarious pile", "focusPl": "chwiejnym stosie" },
             { "en": "Many young people work in precarious jobs with no benefits.", "pl": "Wielu młodych ludzi pracuje na niepewnych posadach bez żadnych świadczeń.", "focusEn": "precarious jobs", "focusPl": "niepewnych posadach" }
           ],
           "acceptedAnswers": ["precarious"],
@@ -3069,7 +3069,7 @@
           "antonyms": "strict; harsh; severe",
           "notePl": "",
           "examples": [
-            { "en": "My parents were much more lenient with my little brother.", "pl": "Moi rodzice byli dużo bardziej pobłażliwi dla mojego młodszego brata.", "focusEn": "more lenient with", "focusPl": "bardziej pobłażliwi dla" },
+            { "en": "My parents were much more lenient with my little brother.", "pl": "Moi rodzice byli dużo bardziej pobłażliwi wobec mojego młodszego brata.", "focusEn": "more lenient with", "focusPl": "bardziej pobłażliwi wobec" },
             { "en": "Many people thought the sentence was too lenient.", "pl": "Wiele osób uważało, że wyrok był zbyt łagodny.", "focusEn": "too lenient", "focusPl": "zbyt łagodny" },
             { "en": "The library is lenient about late returns for students.", "pl": "Biblioteka łagodnie traktuje studentów, którzy spóźniają się ze zwrotem książek.", "focusEn": "is lenient about", "focusPl": "łagodnie traktuje" }
           ],
@@ -3094,7 +3094,7 @@
           "antonyms": "easy; effortless",
           "notePl": "",
           "examples": [
-            { "en": "Avoid strenuous exercise for a week after the surgery.", "pl": "Przez tydzień po operacji unikaj forsownego wysiłku.", "focusEn": "strenuous exercise", "focusPl": "forsownego wysiłku" },
+            { "en": "Avoid strenuous activity for a few days after the vaccine.", "pl": "Przez kilka dni po szczepieniu unikaj forsownego wysiłku.", "focusEn": "strenuous activity", "focusPl": "forsownego wysiłku" },
             { "en": "The hike was more strenuous than we expected.", "pl": "Wędrówka była bardziej męcząca, niż się spodziewaliśmy.", "focusEn": "more strenuous", "focusPl": "bardziej męcząca" },
             { "en": "Moving furniture all day is strenuous work.", "pl": "Przenoszenie mebli przez cały dzień to ciężka praca.", "focusEn": "strenuous work", "focusPl": "ciężka praca" }
           ],
@@ -3271,7 +3271,7 @@
           "examples": [
             { "en": "Fallen trees impeded traffic for hours.", "pl": "Powalone drzewa przez wiele godzin utrudniały ruch.", "focusEn": "impeded", "focusPl": "utrudniały" },
             { "en": "Poor internet can seriously impede online learning.", "pl": "Słaby internet może poważnie utrudniać naukę zdalną.", "focusEn": "seriously impede", "focusPl": "poważnie utrudniać" },
-            { "en": "Nothing should impede the ambulance on its way to the hospital.", "pl": "Nic nie powinno hamować karetki w drodze do szpitala.", "focusEn": "impede", "focusPl": "hamować" }
+            { "en": "Nothing should impede the ambulance on its way to the hospital.", "pl": "Nic nie powinno utrudniać przejazdu karetki do szpitala.", "focusEn": "impede", "focusPl": "utrudniać" }
           ],
           "acceptedAnswers": ["impede"],
           "acceptedTranslations": ["utrudniać", "utrudnić", "hamować", "zahamować", "przeszkadzać", "blokować"]
@@ -3519,7 +3519,7 @@
           "antonyms": "inconspicuous; hidden",
           "notePl": "",
           "examples": [
-            { "en": "Put the sign in a conspicuous place near the door.", "pl": "Umieść tabliczkę w widocznym miejscu przy drzwiach.", "focusEn": "a conspicuous place", "focusPl": "widocznym miejscu" },
+            { "en": "Put the sign in a conspicuous place near the door.", "pl": "Umieść tabliczkę przy drzwiach w dobrze widocznym miejscu.", "focusEn": "a conspicuous place", "focusPl": "dobrze widocznym miejscu" },
             { "en": "In my bright yellow coat, I felt very conspicuous.", "pl": "W jaskrawożółtym płaszczu czułam się, jakby wszyscy na mnie patrzyli.", "focusEn": "felt very conspicuous", "focusPl": "czułam się, jakby wszyscy na mnie patrzyli" },
             { "en": "His name was conspicuous by its absence on the list.", "pl": "Brak jego nazwiska na liście rzucał się w oczy.", "focusEn": "conspicuous by its absence", "focusPl": "rzucał się w oczy" }
           ],
@@ -4045,7 +4045,7 @@
           "notePl": "",
           "examples": [
             { "en": "The idea was derided at first but later became a big success.", "pl": "Z pomysłu początkowo drwiono, ale później odniósł wielki sukces.", "focusEn": "was derided", "focusPl": "drwiono" },
-            { "en": "Critics derided the movie as boring and too long.", "pl": "Krytycy wyśmiali film jako nudny i za długi.", "focusEn": "derided", "focusPl": "wyśmiali" },
+            { "en": "Critics derided the movie as boring and too long.", "pl": "Krytycy wyśmiali film, nazywając go nudnym i za długim.", "focusEn": "derided", "focusPl": "wyśmiali" },
             { "en": "Don't deride other people's dreams just because they seem unusual.", "pl": "Nie wyśmiewaj cudzych marzeń tylko dlatego, że wydają się nietypowe.", "focusEn": "Don't deride", "focusPl": "Nie wyśmiewaj" }
           ],
           "acceptedAnswers": ["deride"],
@@ -4469,7 +4469,7 @@
           "antonyms": "indifferent; lukewarm",
           "notePl": "",
           "examples": [
-            { "en": "It's my fervent hope that we'll all meet again next summer.", "pl": "Gorąco wierzę, że wszyscy spotkamy się znowu przyszłego lata.", "focusEn": "my fervent hope", "focusPl": "Gorąco wierzę" },
+            { "en": "It's my fervent hope that we'll all meet again next summer.", "pl": "Mam gorącą nadzieję, że wszyscy spotkamy się znowu przyszłego lata.", "focusEn": "my fervent hope", "focusPl": "Mam gorącą nadzieję" },
             { "en": "She's a fervent believer in public libraries.", "pl": "Jest żarliwą orędowniczką bibliotek publicznych.", "focusEn": "a fervent believer", "focusPl": "żarliwą orędowniczką" },
             { "en": "The team has some of the most fervent fans in the league.", "pl": "Drużyna ma jednych z najbardziej zagorzałych kibiców w lidze.", "focusEn": "most fervent fans", "focusPl": "najbardziej zagorzałych kibiców" }
           ],
@@ -4545,11 +4545,11 @@
           "notePl": "",
           "examples": [
             { "en": "Buying another pair of shoes feels a bit frivolous right now.", "pl": "Kupowanie kolejnej pary butów wydaje się teraz trochę lekkomyślne.", "focusEn": "a bit frivolous", "focusPl": "trochę lekkomyślne" },
-            { "en": "The court dismissed the lawsuit as frivolous.", "pl": "Sąd oddalił pozew jako bezzasadny.", "focusEn": "frivolous", "focusPl": "bezzasadny" },
+            { "en": "The court dismissed the lawsuit as frivolous.", "pl": "Sąd oddalił pozew, uznając go za bezzasadny.", "focusEn": "frivolous", "focusPl": "bezzasadny" },
             { "en": "This isn't a frivolous question; I really need to know.", "pl": "To nie jest błahe pytanie; naprawdę muszę wiedzieć.", "focusEn": "a frivolous question", "focusPl": "błahe pytanie" }
           ],
           "acceptedAnswers": ["frivolous"],
-          "acceptedTranslations": ["błahy", "niepoważny", "lekkomyślny", "frywolny", "bezzasadny", "zbędny"]
+          "acceptedTranslations": ["błahy", "niepoważny", "lekkomyślny", "frywolny", "bezzasadny"]
         },
         {
           "id": "core.futile",
@@ -4669,7 +4669,7 @@
           "antonyms": "sincerity; honesty",
           "notePl": "",
           "examples": [
-            { "en": "It's pure hypocrisy to tell kids not to use phones and then use yours all day.", "pl": "To czysta hipokryzja zabraniać dzieciom telefonów, a samemu korzystać z niego cały dzień.", "focusEn": "pure hypocrisy", "focusPl": "czysta hipokryzja" },
+            { "en": "It's pure hypocrisy to tell kids not to use phones and then use yours all day.", "pl": "To czysta hipokryzja zabraniać dzieciom telefonów, a samemu nie wypuszczać swojego z ręki przez cały dzień.", "focusEn": "pure hypocrisy", "focusPl": "czysta hipokryzja" },
             { "en": "She accused her boss of hypocrisy for leaving early every day.", "pl": "Zarzuciła szefowi hipokryzję, bo sam codziennie wychodził wcześniej.", "focusEn": "of hypocrisy", "focusPl": "hipokryzję" },
             { "en": "I can't stand the hypocrisy of people who complain but never help.", "pl": "Nie znoszę obłudy ludzi, którzy narzekają, ale nigdy nie pomagają.", "focusEn": "the hypocrisy", "focusPl": "obłudy" }
           ],
@@ -4695,7 +4695,7 @@
           "notePl": "",
           "examples": [
             { "en": "The writer has a very idiosyncratic style that some readers love.", "pl": "Ten pisarz ma bardzo specyficzny styl, który niektórzy czytelnicy uwielbiają.", "focusEn": "very idiosyncratic style", "focusPl": "bardzo specyficzny styl" },
-            { "en": "My uncle has some idiosyncratic habits, like eating dessert first.", "pl": "Mój wujek ma kilka osobliwych nawyków, na przykład je deser na początku.", "focusEn": "idiosyncratic habits", "focusPl": "osobliwych nawyków" },
+            { "en": "My uncle has some idiosyncratic habits, like reading the newspaper backward.", "pl": "Mój wujek ma kilka osobliwych nawyków, na przykład czyta gazetę od końca.", "focusEn": "idiosyncratic habits", "focusPl": "osobliwych nawyków" },
             { "en": "Their taste in music is pretty idiosyncratic.", "pl": "Ich gust muzyczny jest dość nietypowy.", "focusEn": "pretty idiosyncratic", "focusPl": "dość nietypowy" }
           ],
           "acceptedAnswers": ["idiosyncratic"],
@@ -4924,7 +4924,7 @@
             { "en": "Their meager savings didn't last long after he lost his job.", "pl": "Ich skromne oszczędności nie wystarczyły na długo po tym, jak stracił pracę.", "focusEn": "meager savings", "focusPl": "skromne oszczędności" }
           ],
           "acceptedAnswers": ["meager"],
-          "acceptedTranslations": ["skromny", "skąpy", "marny", "niewielki", "niewystarczający"]
+          "acceptedTranslations": ["skromny", "skąpy", "marny", "nędzny", "niewielki", "niewystarczający"]
         },
         {
           "id": "core.negligible",
@@ -5196,10 +5196,10 @@
           "examples": [
             { "en": "There was no overt hostility, but you could feel the tension.", "pl": "Nie było jawnej wrogości, ale dało się wyczuć napięcie.", "focusEn": "no overt hostility", "focusPl": "Nie było jawnej wrogości" },
             { "en": "Her criticism of the plan became more overt over time.", "pl": "Z czasem jej krytyka planu stawała się coraz bardziej otwarta.", "focusEn": "more overt", "focusPl": "coraz bardziej otwarta" },
-            { "en": "The ad doesn't use overt sales language.", "pl": "Ta reklama nie posługuje się wprost językiem sprzedażowym.", "focusEn": "overt sales language", "focusPl": "wprost językiem sprzedażowym" }
+            { "en": "The ad doesn't use overt sales language.", "pl": "Ta reklama nie posługuje się jawnie sprzedażowym językiem.", "focusEn": "overt sales language", "focusPl": "jawnie sprzedażowym językiem" }
           ],
           "acceptedAnswers": ["overt"],
-          "acceptedTranslations": ["jawny", "otwarty", "widoczny", "nieukrywany", "wprost"]
+          "acceptedTranslations": ["jawny", "otwarty", "widoczny", "nieukrywany", "jawnie"]
         },
         {
           "id": "core.palpable",
@@ -5249,7 +5249,7 @@
             { "en": "Is that paltry amount really all they're paying you?", "pl": "Czy naprawdę płacą ci tylko tę nędzną sumę?", "focusEn": "that paltry amount", "focusPl": "tę nędzną sumę" }
           ],
           "acceptedAnswers": ["paltry"],
-          "acceptedTranslations": ["marny", "nędzny", "śmieszny", "żałosny", "mizerny"]
+          "acceptedTranslations": ["marny", "nędzny", "skromny", "śmieszny", "żałosny", "mizerny"]
         },
         {
           "id": "core.pervasive",
@@ -5596,7 +5596,7 @@
           "examples": [
             { "en": "The survey results were skewed because only young people answered.", "pl": "Wyniki ankiety były zniekształcone, bo odpowiadali tylko młodzi ludzie.", "focusEn": "were skewed", "focusPl": "były zniekształcone" },
             { "en": "Movies often give us a skewed view of what life in New York is like.", "pl": "Filmy często dają nam wypaczony obraz życia w Nowym Jorku.", "focusEn": "a skewed view", "focusPl": "wypaczony obraz" },
-            { "en": "Isn't the prize list a little skewed toward older players?", "pl": "Czy lista nagród nie faworyzuje trochę starszych zawodników?", "focusEn": "skewed toward", "focusPl": "faworyzuje" }
+            { "en": "Isn't the schedule a little skewed toward morning people?", "pl": "Czy ten grafik nie jest trochę ustawiony pod rannych ptaszków?", "focusEn": "skewed toward", "focusPl": "ustawiony pod" }
           ],
           "acceptedAnswers": ["skewed"],
           "acceptedTranslations": ["wypaczony", "zniekształcony", "przekłamany", "stronniczy", "zafałszowany"]
@@ -5671,7 +5671,7 @@
           "examples": [
             { "en": "Mosquitoes lay their eggs in stagnant water.", "pl": "Komary składają jaja w stojącej wodzie.", "focusEn": "stagnant water", "focusPl": "stojącej wodzie" },
             { "en": "The air in the basement was stagnant and damp.", "pl": "Powietrze w piwnicy było zastałe i wilgotne.", "focusEn": "stagnant", "focusPl": "zastałe" },
-            { "en": "Don't let the water in the bird bath get stagnant.", "pl": "Nie pozwól, żeby woda w poidełku dla ptaków się zastała.", "focusEn": "get stagnant", "focusPl": "się zastała" }
+            { "en": "Don't let the water in the bird bath get stagnant.", "pl": "Nie pozwól, żeby woda w poidełku dla ptaków zrobiła się stęchła.", "focusEn": "get stagnant", "focusPl": "zrobiła się stęchła" }
           ],
           "acceptedAnswers": ["stagnant"],
           "acceptedTranslations": ["stojący", "zastały", "nieruchomy", "stęchły"]
@@ -5874,7 +5874,7 @@
             { "en": "Some saw his silence as tantamount to an admission of guilt.", "pl": "Niektórzy uznali jego milczenie za jednoznaczne z przyznaniem się do winy.", "focusEn": "tantamount to", "focusPl": "jednoznaczne z" }
           ],
           "acceptedAnswers": ["tantamount"],
-          "acceptedTranslations": ["równoznaczny", "równoznaczny z", "jednoznaczny z", "równający się", "właściwie"]
+          "acceptedTranslations": ["równoznaczny", "równoznaczny z", "jednoznaczny z", "równający się"]
         },
         {
           "id": "core.tedium",
