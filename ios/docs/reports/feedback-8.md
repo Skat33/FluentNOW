@@ -187,3 +187,82 @@ Palette.readingGlossaryInk / readingRecommendedInk / readingOwnInk
 
 - **design-shell:** nowe role `readingGlossaryInk`, `readingRecommendedInk` i `readingOwnInk` dopisałem do `Palette`. Warto dodać je do `DesignSystemGallery` i do tabeli w `DESIGN.md` §2.
 - **core-engine / dokumentacja:** `CONTRACTS.md` / `CONTENT-SCHEMA.md` mogą wspomnieć `Meaning.mergedContentRefs` (dodatek iOS, ignorowany przez stronę).
+
+---
+
+## Tura 2 (M4–M7)
+
+Te same zasady co w turze 1: bez kompilatora, bez git i bez `build-index`. Skrypt kontrolny przeszedł dla wszystkich zmienionych plików. Część ustaleń z tury 1 jest nieaktualna. Polecane słowa w czytance są teraz zielone i podkreślone, a nie morskie bez podkreśleń. Siatka „Ćwiczeń” nie ma już nagłówków grup, tylko przełącznik. Okno wyboru jest teraz alertem.
+
+### Zmiany
+
+**M4 — podgląd przykładów w „Dodaj słowo”**
+- `Features/AddWord/AddWordSections.swift`:
+  - Wiersz znaczenia pokazuje do 2 zdań (`AddWordSenseText.previewCount`) jako cytaty z wyróżnionym słowem.
+  - Liczba przykładów jest w linii metadanych, np. „czasownik frazowy · Spotkania · 4 przykłady”.
+  - Przy większej liczbie zdań pod wierszem jest przycisk „Pokaż wszystkie przykłady (N)”. Leży poza przyciskiem zaznaczenia, więc przyciski nie są zagnieżdżone.
+  - Przycisk otwiera nowy `AddWordExamplesSheet`:
+    - arkusz `.medium` → `.large` z uchwytem;
+    - lista: zdanie EN z wyróżnieniem, tłumaczenie PL i odsłuch każdego zdania;
+    - nagłówek „hasło — tłumaczenie”, przycisk „Gotowe”.
+  - Nagłówek sekcji wydzieliłem do `AddWordSenseHeader`, żeby `body` było krótkie.
+- `AddWordRootScreen.swift`: arkusz prezentuje formularz (`@State examplesPreview`, `.sheet(item:)`), a nie `Section`. Modyfikatory dołożone do `Section` w `Form` trafiają do każdego wiersza.
+- Wybrałem arkusz `.medium`, bo przy 5–12 zdaniach z tłumaczeniem rozwijanie w wierszu wydłużało formularz. Poziome karty ucinają długie zdania przy Dynamic Type.
+
+**M5 — przełączane grupy „Ćwiczeń”**
+- `Home/StudyExerciseCatalog.swift`:
+  - `StudyExerciseGroup` ma stałe `types`, `review` i `bank`.
+  - Krótkie tytuły segmentów: „Słówka”, „Powtórki”, „Czytanie i gramatyka”.
+  - Każda grupa ma jednozdaniowy opis (`detail`) i flagę `usesWords`.
+  - Nowe pomocnicze: `group(id:)` (nieznany zapis daje pierwszą grupę), `group(containing:)`, `activities`.
+- `Home/StudyExerciseTypesCard.swift`:
+  - Przełącznik grup `StudyExerciseGroupPicker` stoi nad jedną siatką z kafelkami wybranej grupy.
+    - Jest własny, bo systemowy segment ucina „Czytanie i gramatyka”.
+    - Mieści się w jednym rzędzie, a gdy brak miejsca (`ViewThatFits`), segmenty układają się jeden pod drugim.
+    - Segment z przerwanym ćwiczeniem ma ikonę pauzy, a VoiceOver mówi „jest przerwane ćwiczenie”.
+  - Wybór grupy zapamiętuje `@AppStorage("study.exerciseGroup")`.
+  - Wybór 5/10 min pokazuje się tylko w grupach ze słówkami.
+- `Home/StudyHomeView.swift`: `open(_:)` przełącza zapamiętaną grupę na grupę otwieranego zajęcia. Dotyczy np. prośby z routera o czytanie, gdy widoczne są „Słówka”.
+
+**M6 — okno wyboru na środku ekranu**
+- `StudyResumeDialog` (`StudyHomeView.swift`) używa teraz `.alert(_:isPresented:presenting:actions:message:)` zamiast `confirmationDialog`. To jedno miejsce wyboru „Kontynuuj, gdzie skończyłem / Zacznij od nowa / Anuluj” dla fiszek, wszystkich kafelków „Ćwiczeń” i prośby z routera.
+- Test: „Porzucić test?” (`Test/StudyTestCard.swift`) i „Przerwać test?” z wyborem „Wyjdź — dokończę później / Porzuć test / Wróć do testu” (`Test/StudyTestScreen.swift`) też są teraz alertami na środku ekranu.
+- Inne `confirmationDialog` w aplikacji (usuwanie słowa, kolekcji, danych, wylogowanie, porzucenie zmian) zostawiłem bez zmian. To potwierdzenia akcji niszczących, a nie wybór kontynuacji.
+
+**M7 — polecane słowa w czytance**
+- `Palette.readingRecommendedInk` to teraz zieleń: `0x1D6B35` / `0x6FD98E`.
+  - Kontrast na `surface`: 6,6 (jasny) / 9,4 (ciemny).
+  - Kontrast na markerze dowodu: 6,0 / 6,5.
+  - Wszystko ≥ AA. Zieleń jest wyraźnie inna od fioletu słowniczka i pomarańczu moich słów.
+- `ReadingHighlighting.swift` `piece`: polecane słowo ma ciągłe podkreślenie (`Text.LineStyle(pattern: .solid, color: ink)`), tylko w warstwie wyglądu. Podkreślenie nie zmienia łamania wierszy, a warstwa linków nie dostaje go wcale, bo na odcinkach-linkach rysowanie jest niepewne. Legenda (próbka zawiera podkreślenie, opis „pogrubione, podkreślone — warte nauki”) i etykieta VoiceOver są zaktualizowane.
+
+### Testy (tura 2)
+- `StudyLayoutTests`:
+  - podkreślenie jest tylko pod polecanym słowem i tylko w warstwie wyglądu;
+  - `testExerciseGroupsAreSwitchable`: tytuły segmentów, zapis nieznanej grupy, `group(containing:)`, `usesWords`.
+
+### Ryzyka kompilacji (tura 2)
+1. `ReadingHighlighting.swift:258`: `UnderlineStyleAttribute` = `Text.LineStyle(pattern: .solid, color:)` (iOS 16+).
+2. `StudyExerciseTypesCard.swift:28` i `StudyHomeView.swift:33`: `@AppStorage(StudyExerciseTypesCard.groupStorageKey)`, czyli stała statyczna w argumencie wrappera. Ten sam klucz w dwóch widokach.
+3. `StudyExerciseTypesCard.swift:87`: `ViewThatFits` z tą samą właściwością `segments` (`ForEach`) w `HStack` i `VStack`.
+4. `StudyExerciseTypesCard.swift:116`: `Radius.small - 2` (`CGFloat`).
+5. `StudyExerciseTypesCard.swift:140`: `accessibilityAddTraits(isSelected ? [.isSelected] : [])`.
+6. `StudyExerciseCatalog.swift:78`: `static let types` / `review` / `bank` użyte w `static let all`.
+7. `StudyHomeView.swift:482`: `content.alert(Text, isPresented:presenting:actions:message:)` z domknięciami `(StudyResumePrompt) in`.
+8. `AddWordSections.swift:293` i `:354`: `ForEach(Array(….enumerated()), id: \.offset)` z jawnie typowanym parametrem-krotką `(item: (offset: Int, element: ExamplePair))`.
+9. `AddWordRootScreen.swift:148`: `.sheet(item:)` w zagnieżdżonym arkuszu (arkusz w arkuszu „+”).
+
+### Do sprawdzenia w symulatorze (tura 2)
+1. **„Dodaj słowo” → *catch up***:
+   - wiersz pokazuje 2 zdania i „Pokaż wszystkie przykłady (N)”;
+   - arkusz otwiera się na połowie ekranu i daje się rozciągnąć;
+   - odsłuch działa;
+   - dotknięcie przycisku nie zaznacza znaczenia.
+2. **Nauka → Ćwiczenia**:
+   - przełączanie grup działa;
+   - wybór grupy zostaje po zamknięciu aplikacji;
+   - przy AX3 segmenty układają się pionowo;
+   - ikona pauzy jest na segmencie z przerwanym ćwiczeniem;
+   - w „Czytanie i gramatyka” nie ma wyboru minut.
+3. **Okno „Kontynuuj / Zacznij od nowa”** jest na środku ekranu: dla fiszek, typu ćwiczenia, mieszanki, czytanki i gramatyki. Alerty testu też są na środku.
+4. **Czytanka**: zielone, pogrubione i podkreślone polecane słowa są czytelne w obu motywach, także na markerze dowodu. Legenda jest zgodna z tekstem.

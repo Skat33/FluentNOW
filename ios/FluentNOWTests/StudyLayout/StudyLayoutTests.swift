@@ -76,6 +76,17 @@ final class StudyLayoutTests: XCTestCase {
         XCTAssertTrue(StudyExerciseGroup.all.contains { $0.tiles.contains(.pictures) }, "the „W budowie” tile stays")
     }
 
+    /// M5: trzy grupy przełączane segmentem; nieznany zapis → pierwsza grupa.
+    func testExerciseGroupsAreSwitchable() {
+        XCTAssertEqual(StudyExerciseGroup.all.map { $0.title }, ["Słówka", "Powtórki", "Czytanie i gramatyka"])
+        XCTAssertEqual(StudyExerciseGroup.group(id: "nieznana").id, StudyExerciseGroup.types.id)
+        XCTAssertEqual(StudyExerciseGroup.group(containing: .reading)?.id, StudyExerciseGroup.bank.id)
+        XCTAssertEqual(StudyExerciseGroup.group(containing: .vocabulary(.pairs))?.id, StudyExerciseGroup.review.id)
+        XCTAssertNil(StudyExerciseGroup.group(containing: .flashcards))
+        XCTAssertTrue(StudyExerciseGroup.types.usesWords)
+        XCTAssertFalse(StudyExerciseGroup.bank.usesWords, "no 5 / 10 min picker for reading and grammar")
+    }
+
     func testPausedDailyMixPromptsOnlyOnItsTile() {
         var state = LearnerState()
         state.session = VocabSession(tasks: [VocabTask(wordId: "a", meaningId: "a.m1", type: .meaning, example: 0)], minutes: 5, mode: StudyMode.mistakes.rawValue)
@@ -190,8 +201,13 @@ final class StudyLayoutTests: XCTestCase {
                 run[AttributeScopes.SwiftUIAttributes.FontAttribute.self] == nil ? nil : String(layer[run.range].characters)
             }
             XCTAssertEqual(styled, ["board", "plane", "gate"], "highlighted words use the same font in both layers (same line breaks)")
-            XCTAssertTrue(layer.runs.allSatisfy { $0[AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute.self] == nil }, "no underlines (FEEDBACK-8 M1)")
         }
+        // M7: ciągłe podkreślenie tylko pod polecanym słowem i tylko w warstwie wyglądu.
+        let underlined = display.runs.compactMap { (run: AttributedString.Runs.Run) -> String? in
+            run[AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute.self] == nil ? nil : String(display[run.range].characters)
+        }
+        XCTAssertEqual(underlined, ["gate"], "only the recommended word is underlined (FEEDBACK-8 M7)")
+        XCTAssertTrue(links.runs.allSatisfy { $0[AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute.self] == nil })
         let filled = display.runs.compactMap { (run: AttributedString.Runs.Run) -> String? in
             run[AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute.self] == nil ? nil : String(display[run.range].characters)
         }

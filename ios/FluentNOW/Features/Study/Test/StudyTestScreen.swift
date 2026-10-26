@@ -34,7 +34,8 @@ struct StudyTestScreen: View {
                     .accessibilityHint(Text("Test jest zapisany — możesz go dokończyć później."))
                 }
             }
-            .confirmationDialog("Przerwać test?", isPresented: $confirmsExit, titleVisibility: .visible) {
+            // FEEDBACK-8 M6: wybór na środku ekranu (alert).
+            .alert("Przerwać test?", isPresented: $confirmsExit) {
                 Button("Wyjdź — dokończę później") { close() }
                 Button("Porzuć test", role: .destructive) {
                     model?.abandon()

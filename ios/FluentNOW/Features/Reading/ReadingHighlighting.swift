@@ -116,7 +116,8 @@ struct ReadingTermLink: Hashable {
     }
 }
 
-/// Kolory wyróżnień (FEEDBACK-8 M1) — role z `Palette`; sam kolor tekstu, bez teł i podkreśleń.
+/// Kolory wyróżnień (FEEDBACK-8 M1, M7) — role z `Palette`; kolor tekstu, bez teł (polecane:
+/// zieleń + ciągłe podkreślenie).
 /// Kontrast ≥ 4,5:1 (WCAG AA) w obu motywach, także na markerze dowodu (`Palette.warningSoft`).
 enum ReadingHighlightColors {
     static let glossaryInk = Palette.readingGlossaryInk
@@ -132,11 +133,11 @@ enum ReadingHighlightColors {
     }
 }
 
-/// Wygląd wyróżnień w tekście (FEEDBACK-8 M1). Bez podkreśleń i bez teł — tylko kolor i grubość,
-/// więc tekst nie przypomina podkreślenia błędów pisowni. Rozróżnienie nie tylko kolorem:
+/// Wygląd wyróżnień w tekście (FEEDBACK-8 M1, M7). Bez teł i bez linii przerywanych/kropkowanych
+/// (nie przypominają podkreślenia błędów pisowni). Rozróżnienie nie tylko kolorem:
 /// - słowo ze słowniczka (dotknij → tłumaczenie): przyciemniony akcent, grubość średnia;
 /// - słowo polecane do nauki (słowniczek z odwołaniem `ref` do wpisu bazy — „Dodaj do nauki”
-///   jednym dotknięciem z przykładami): **pogrubione**, morskie;
+///   jednym dotknięciem z przykładami): **pogrubione**, zielone, z **ciągłym** podkreśleniem;
 /// - słowo z mojego słownika: półgrube, ciepły pomarańczowy brąz;
 /// - dowód (etap wyników): tło markera; kolor i grubość słowa zostają.
 /// Legenda z próbkami jest nad tekstem (`ReadingHighlightLegend`). Powód dwóch warstw:
@@ -245,12 +246,17 @@ enum ReadingHighlightStyle {
     /// `ForegroundColorAttribute` (ui-tweaks) — dlatego ta warstwa **nie ma linków** (`link` jest
     /// ignorowany, parametr zostaje dla zgodności), a kolory tekstu i marker rysują się zawsze.
     /// Linki są w osobnej, przezroczystej warstwie (`linkPiece`, `ReadingHighlightedText`).
-    /// Bez `UnderlineStyleAttribute` i bez tła słowa (FEEDBACK-8 M1).
+    /// Bez tła słowa (FEEDBACK-8 M1); polecane — ciągłe podkreślenie w kolorze słowa (M7).
+    /// Podkreślenie nie zmienia układu wierszy, więc warstwa linków go nie potrzebuje.
     static func piece(_ text: String, kind: Kind?, link: URL?, isEvidence: Bool, size: TextSize = .passage) -> AttributedString {
         var piece = AttributedString(text)
         if let kind {
+            let ink: Color = ReadingHighlightColors.ink(for: kind)
             piece[AttributeScopes.SwiftUIAttributes.FontAttribute.self] = font(for: kind, size: size)
-            piece[AttributeScopes.SwiftUIAttributes.ForegroundColorAttribute.self] = ReadingHighlightColors.ink(for: kind)
+            piece[AttributeScopes.SwiftUIAttributes.ForegroundColorAttribute.self] = ink
+            if kind == .recommended {
+                piece[AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute.self] = Text.LineStyle(pattern: .solid, color: ink)
+            }
         }
         if isEvidence {
             piece[AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute.self] = Palette.warningSoft
@@ -291,7 +297,7 @@ enum ReadingHighlightStyle {
         case .glossary:
             return "tłumaczenie w tym tekście"
         case .recommended:
-            return "pogrubione — warte nauki"
+            return "pogrubione, podkreślone — warte nauki"
         case .own:
             return "półgrube — z Twojego słownika"
         }
@@ -303,7 +309,7 @@ enum ReadingHighlightStyle {
         case .glossary:
             return "Słowa ze słowniczka, fioletowe: tłumaczenie w tym tekście"
         case .recommended:
-            return "Słowa polecane, pogrubione, morskie: warte nauki"
+            return "Słowa polecane, pogrubione, zielone, podkreślone: warte nauki"
         case .own:
             return "Twoje słowa, półgrube, pomarańczowe: z Twojego słownika"
         }

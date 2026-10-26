@@ -64,49 +64,75 @@ enum StudyExerciseTile: Hashable, Identifiable {
     }
 }
 
-/// Grupa kafelków — nagłówek wewnątrz jednej siatki „Ćwiczenia”.
+/// Grupa kafelków „Ćwiczeń” — przełączana segmentem nad jedną siatką (FEEDBACK-8 M5).
 struct StudyExerciseGroup: Identifiable, Hashable {
     let id: String
+    /// Krótka nazwa segmentu.
     let title: String
+    /// Jedno zdanie pod przełącznikiem.
+    let detail: String
     let tiles: [StudyExerciseTile]
+    /// Grupa ćwiczeń ze słówkami (pokazuje wybór 5 / 10 min).
+    let usesWords: Bool
 
-    /// Kolejność jak w FEEDBACK-8 M2: typy słownictwa, potem powtórki ze słownika, potem czytanie
-    /// i gramatyka (działają także bez słów).
-    static let all: [StudyExerciseGroup] = [
-        StudyExerciseGroup(
-            id: "types",
-            title: "Słownictwo — jeden rodzaj zadania",
-            tiles: SingleTypeSession.types.map { (type: ExerciseType) -> StudyExerciseTile in
-                .activity(.singleType(type))
-            } + [.pictures]
-        ),
-        StudyExerciseGroup(
-            id: "review",
-            title: "Powtórki z Twojego słownika",
-            tiles: [
-                .activity(.vocabulary(.mixed)),
-                .activity(.vocabulary(.mistakes)),
-                .activity(.vocabulary(.pairs))
-            ]
-        ),
-        StudyExerciseGroup(
-            id: "bank",
-            title: "Czytanie i gramatyka",
-            tiles: [
-                .activity(.reading),
-                .activity(.practice(.grammar)),
-                .activity(.practice(.idioms)),
-                .activity(.practice(.mixed)),
-                .activity(.production)
-            ]
-        )
-    ]
+    static let types = StudyExerciseGroup(
+        id: "types",
+        title: "Słówka",
+        detail: "Jeden rodzaj zadania ze słówkami: najpierw powtórki, potem znane, na końcu nowe.",
+        tiles: SingleTypeSession.types.map { (type: ExerciseType) -> StudyExerciseTile in
+            .activity(.singleType(type))
+        } + [.pictures],
+        usesWords: true
+    )
+
+    static let review = StudyExerciseGroup(
+        id: "review",
+        title: "Powtórki",
+        detail: "Sesje z Twojego słownika: mieszanka zadań, słowa z pomyłkami albo słowa łatwe do pomylenia.",
+        tiles: [
+            .activity(.vocabulary(.mixed)),
+            .activity(.vocabulary(.mistakes)),
+            .activity(.vocabulary(.pairs))
+        ],
+        usesWords: true
+    )
+
+    static let bank = StudyExerciseGroup(
+        id: "bank",
+        title: "Czytanie i gramatyka",
+        detail: "Teksty i zestawy z banku na Twoim poziomie — działają od razu, także bez słów i bez internetu.",
+        tiles: [
+            .activity(.reading),
+            .activity(.practice(.grammar)),
+            .activity(.practice(.idioms)),
+            .activity(.practice(.mixed)),
+            .activity(.production)
+        ],
+        usesWords: false
+    )
+
+    /// Kolejność segmentów jak w FEEDBACK-8 M5: Słówka / Powtórki / Czytanie i gramatyka.
+    static let all: [StudyExerciseGroup] = [types, review, bank]
+
+    /// Grupa o zapamiętanym `id`; nieznane — pierwsza.
+    static func group(id: String) -> StudyExerciseGroup {
+        all.first { (group: StudyExerciseGroup) -> Bool in group.id == id } ?? types
+    }
+
+    /// Grupa, w której jest kafelek zajęcia (np. by pokazać przerwane po prośbie z routera).
+    static func group(containing activity: StudyActivity) -> StudyExerciseGroup? {
+        all.first { (group: StudyExerciseGroup) -> Bool in
+            group.tiles.contains(.activity(activity))
+        }
+    }
+
+    var activities: [StudyActivity] {
+        tiles.compactMap { (tile: StudyExerciseTile) -> StudyActivity? in tile.activity }
+    }
 
     /// Wszystkie zajęcia z kafelków (do znaczników „Przerwane”).
     static var allActivities: [StudyActivity] {
-        all.flatMap { (group: StudyExerciseGroup) -> [StudyActivity] in
-            group.tiles.compactMap { (tile: StudyExerciseTile) -> StudyActivity? in tile.activity }
-        }
+        all.flatMap { (group: StudyExerciseGroup) -> [StudyActivity] in group.activities }
     }
 }
 

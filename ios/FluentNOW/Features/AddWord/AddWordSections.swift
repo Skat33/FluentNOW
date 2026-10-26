@@ -137,6 +137,9 @@ struct AddWordSenseSection: View {
     @Binding var selected: Set<Int>
     let known: Set<Int>
     let onEdit: (SenseSuggestion) -> Void
+    /// „Pokaż wszystkie przykłady” (FEEDBACK-8 M4) — arkusz prezentuje formularz (`AddWordQuickForm`),
+    /// nie sekcja listy (modyfikatory na `Section` trafiają do każdego wiersza).
+    let onShowExamples: (AddWordExamplesItem) -> Void
 
     @Environment(SpeechService.self) private var speech
 
@@ -149,25 +152,13 @@ struct AddWordSenseSection: View {
                     isKnown: known.contains(index),
                     showsEdit: source == .assistant,
                     onToggle: { toggle(index) },
-                    onEdit: { onEdit(sense) }
+                    onEdit: { onEdit(sense) },
+                    onShowExamples: { onShowExamples(AddWordExamplesItem(id: index, term: lookup.term, sense: sense)) }
                 )
             }
         } header: {
-            HStack(spacing: Spacing.xs) {
-                VStack(alignment: .leading, spacing: 2) {
-                    Text(lookup.term)
-                        .font(FluentFont.title)
-                        .foregroundStyle(Palette.ink)
-                        .textCase(nil)
-                    if !lookup.ipa.isEmpty {
-                        Text(lookup.ipa)
-                            .font(FluentFont.ipa)
-                            .foregroundStyle(Palette.inkSecondary)
-                            .textCase(nil)
-                    }
-                }
-                Spacer()
-                SpeakButton(size: .small, isSpeaking: speech.isSpeaking) { speech.speak(lookup.term) }
+            AddWordSenseHeader(term: lookup.term, ipa: lookup.ipa, isSpeaking: speech.isSpeaking) {
+                speech.speak(lookup.term)
             }
         } footer: {
             if source == .assistant {
@@ -184,6 +175,36 @@ struct AddWordSenseSection: View {
     }
 }
 
+/// Hasło, wymowa i odsłuch w nagłówku sekcji znaczeń.
+private struct AddWordSenseHeader: View {
+    let term: String
+    let ipa: String
+    let isSpeaking: Bool
+    let onSpeak: () -> Void
+
+    var body: some View {
+        HStack(spacing: Spacing.xs) {
+            VStack(alignment: .leading, spacing: 2) {
+                Text(term)
+                    .font(FluentFont.title)
+                    .foregroundStyle(Palette.ink)
+                    .textCase(nil)
+                if !ipa.isEmpty {
+                    Text(ipa)
+                        .font(FluentFont.ipa)
+                        .foregroundStyle(Palette.inkSecondary)
+                        .textCase(nil)
+                }
+            }
+            Spacer()
+            SpeakButton(size: .small, isSpeaking: isSpeaking, action: onSpeak)
+        }
+    }
+}
+
+/// Wiersz znaczenia: zaznaczenie (całe pole tekstu), opcjonalna edycja propozycji AI i — gdy
+/// przykładów jest więcej niż widać w wierszu — „Pokaż wszystkie przykłady (N)” (M4).
+/// Przycisk podglądu jest poza przyciskiem zaznaczenia (bez zagnieżdżonych przycisków).
 private struct AddWordSenseRow: View {
     let sense: SenseSuggestion
     let isSelected: Bool
@@ -191,38 +212,61 @@ private struct AddWordSenseRow: View {
     let showsEdit: Bool
     let onToggle: () -> Void
     let onEdit: () -> Void
+    let onShowExamples: () -> Void
 
     var body: some View {
-        HStack(alignment: .top, spacing: Spacing.s) {
-            Button(action: onToggle) {
-                HStack(alignment: .top, spacing: Spacing.s) {
-                    Image(systemName: isKnown ? "checkmark.circle.fill" : (isSelected ? "checkmark.square.fill" : "square"))
-                        .font(FluentFont.headline)
-                        .foregroundStyle(isKnown ? Palette.success : (isSelected ? Palette.accent : Palette.inkSecondary))
-                        .accessibilityHidden(true)
-                    AddWordSenseText(sense: sense, isKnown: isKnown)
-                    Spacer(minLength: 0)
+        VStack(alignment: .leading, spacing: Spacing.xs) {
+            HStack(alignment: .top, spacing: Spacing.s) {
+                toggleButton
+                if showsEdit {
+                    Button(action: onEdit) {
+                        Image(systemName: "pencil")
+                            .frame(minWidth: HitTarget.minimum, minHeight: HitTarget.minimum)
+                    }
+                    .buttonStyle(.borderless)
+                    .accessibilityLabel(Text("Popraw przed dodaniem"))
                 }
-                .contentShape(Rectangle())
             }
-            .buttonStyle(.borderless)
-            .disabled(isKnown)
-            .accessibilityAddTraits(isSelected || isKnown ? .isSelected : [])
-            if showsEdit {
-                Button(action: onEdit) {
-                    Image(systemName: "pencil")
-                        .frame(minWidth: HitTarget.minimum, minHeight: HitTarget.minimum)
+            if sense.examples.count > AddWordSenseText.previewCount {
+                Button(action: onShowExamples) {
+                    Label("Pokaż wszystkie przykłady (\(sense.examples.count))", systemImage: "text.quote")
+                        .font(FluentFont.footnote.weight(.semibold))
+                        .frame(minHeight: HitTarget.minimum, alignment: .leading)
                 }
                 .buttonStyle(.borderless)
-                .accessibilityLabel(Text("Popraw przed dodaniem"))
+                .padding(.leading, AddWordSenseRow.textInset)
+                .accessibilityHint(Text("Otwiera listę zdań z tłumaczeniem i odsłuchem"))
             }
         }
+    }
+
+    /// Wcięcie pod pola zaznaczenia (ikona + odstęp), by przycisk zaczynał się pod tekstem.
+    static let textInset: CGFloat = 28
+
+    private var toggleButton: some View {
+        Button(action: onToggle) {
+            HStack(alignment: .top, spacing: Spacing.s) {
+                Image(systemName: isKnown ? "checkmark.circle.fill" : (isSelected ? "checkmark.square.fill" : "square"))
+                    .font(FluentFont.headline)
+                    .foregroundStyle(isKnown ? Palette.success : (isSelected ? Palette.accent : Palette.inkSecondary))
+                    .accessibilityHidden(true)
+                AddWordSenseText(sense: sense, isKnown: isKnown)
+                Spacer(minLength: 0)
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.borderless)
+        .disabled(isKnown)
+        .accessibilityAddTraits(isSelected || isKnown ? .isSelected : [])
     }
 }
 
 private struct AddWordSenseText: View {
     let sense: SenseSuggestion
     let isKnown: Bool
+
+    /// Ile zdań widać w wierszu (FEEDBACK-8 M4: zwięzły podgląd, reszta w arkuszu).
+    static let previewCount = 2
 
     var body: some View {
         VStack(alignment: .leading, spacing: Spacing.xxs) {
@@ -235,9 +279,6 @@ private struct AddWordSenseText: View {
                     OwnedVocabularyBadge()
                 }
             }
-            let meta = [sense.pos, sense.topic ?? ""]
-                .filter { !$0.isEmpty }
-                .joined(separator: " · ")
             if !meta.isEmpty {
                 Text(meta)
                     .font(FluentFont.footnote)
@@ -249,25 +290,117 @@ private struct AddWordSenseText: View {
                     .foregroundStyle(Palette.inkSecondary)
                     .fixedSize(horizontal: false, vertical: true)
             }
-            if let example = sense.examples.first {
-                HighlightedText(example.en, focus: example.focusEn)
-                    .font(FluentFont.subheadline)
-                    .foregroundStyle(Palette.ink)
-                    .fixedSize(horizontal: false, vertical: true)
-            }
-            if !sense.examples.isEmpty {
-                Label(AddWordSenseText.examplesText(sense.examples.count), systemImage: "text.quote")
-                    .font(FluentFont.caption)
-                    .foregroundStyle(Palette.inkSecondary)
+            ForEach(Array(sense.examples.prefix(AddWordSenseText.previewCount).enumerated()), id: \.offset) { (item: (offset: Int, element: ExamplePair)) in
+                AddWordExamplePreviewLine(example: item.element)
             }
         }
         .multilineTextAlignment(.leading)
+    }
+
+    /// Część mowy · kategoria · liczba przykładów („4 przykłady”).
+    private var meta: String {
+        var parts: [String] = [sense.pos, sense.topic ?? ""].filter { (part: String) -> Bool in !part.isEmpty }
+        if !sense.examples.isEmpty {
+            parts.append(AddWordSenseText.examplesText(sense.examples.count))
+        }
+        return parts.joined(separator: " · ")
     }
 
     /// „1 przykład”, „4 przykłady”, „5 przykładów” — wszystkie zdania, które dostanie znaczenie
     /// (ze wszystkich zgrupowanych wpisów, FEEDBACK-8 M3).
     static func examplesText(_ count: Int) -> String {
         LibraryText.count(count, one: "przykład", few: "przykłady", many: "przykładów")
+    }
+}
+
+/// Jedno zdanie w podglądzie wiersza: cytat z wyróżnionym słowem, z delikatną linią po lewej.
+private struct AddWordExamplePreviewLine: View {
+    let example: ExamplePair
+
+    var body: some View {
+        HighlightedText(example.en, focus: example.focusEn)
+            .font(FluentFont.subheadline)
+            .foregroundStyle(Palette.ink)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding(.leading, Spacing.xs)
+            .overlay(alignment: .leading) {
+                Capsule()
+                    .fill(Palette.separator)
+                    .frame(width: 2)
+                    .accessibilityHidden(true)
+            }
+    }
+}
+
+/// Znaczenie, którego przykłady pokazuje arkusz.
+struct AddWordExamplesItem: Identifiable {
+    let id: Int
+    let term: String
+    let sense: SenseSuggestion
+}
+
+/// Wszystkie przykłady znaczenia (FEEDBACK-8 M4): arkusz `.medium` → `.large`, zdanie EN
+/// z wyróżnieniem, tłumaczenie PL, odsłuch. Zwykła lista (bez szkła).
+struct AddWordExamplesSheet: View {
+    let item: AddWordExamplesItem
+
+    @Environment(SpeechService.self) private var speech
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        NavigationStack {
+            List {
+                Section {
+                    ForEach(Array(item.sense.examples.enumerated()), id: \.offset) { (entry: (offset: Int, element: ExamplePair)) in
+                        AddWordExampleRow(example: entry.element) {
+                            speech.speak(entry.element.en)
+                        }
+                    }
+                } header: {
+                    Text("\(item.term) — \(item.sense.translation)")
+                        .textCase(nil)
+                } footer: {
+                    Text("Wszystkie zdania trafią do słowa po dodaniu znaczenia.")
+                }
+            }
+            .scrollContentBackground(.hidden)
+            .background(Palette.background)
+            .navigationTitle("Przykłady (\(item.sense.examples.count))")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Gotowe") { dismiss() }
+                }
+            }
+        }
+        .presentationDetents([.medium, .large])
+        .presentationDragIndicator(.visible)
+    }
+}
+
+/// Wiersz arkusza przykładów: EN (wyróżnione słowo), PL, odsłuch.
+private struct AddWordExampleRow: View {
+    let example: ExamplePair
+    let onSpeak: () -> Void
+
+    var body: some View {
+        HStack(alignment: .top, spacing: Spacing.s) {
+            VStack(alignment: .leading, spacing: Spacing.xxs) {
+                HighlightedText(example.en, focus: example.focusEn)
+                    .font(FluentFont.body)
+                    .foregroundStyle(Palette.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                if !example.pl.isEmpty {
+                    Text(example.pl)
+                        .font(FluentFont.footnote)
+                        .foregroundStyle(Palette.inkSecondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            Spacer(minLength: Spacing.xs)
+            SpeakButton(size: .small, accessibilityLabel: "Odtwórz przykład", action: onSpeak)
+        }
+        .padding(.vertical, Spacing.xxs)
     }
 }
 

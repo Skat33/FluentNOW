@@ -30,7 +30,8 @@ struct StudyTestCard: View {
         .fullScreenCover(isPresented: $isPresented) {
             StudyTestScreen()
         }
-        .confirmationDialog("Porzucić test?", isPresented: $confirmsAbandon, titleVisibility: .visible) {
+        // FEEDBACK-8 M6: wybór na środku ekranu (alert), jak „Kontynuuj / Zacznij od nowa”.
+        .alert("Porzucić test?", isPresented: $confirmsAbandon) {
             Button("Porzuć test", role: .destructive) { abandon() }
             Button("Anuluj", role: .cancel) {}
         } message: {

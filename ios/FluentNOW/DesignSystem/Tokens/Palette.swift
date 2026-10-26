@@ -59,9 +59,10 @@ enum Palette {
     /// Słowo ze słowniczka czytanki (dotknij → tłumaczenie): przyciemniony akcent.
     /// Kontrast: 7,4 / 8,5 na `surface`, 6,7 / 5,9 na markerze dowodu (`warningSoft`).
     static let readingGlossaryInk = dynamic(light: 0x5B3FB8, dark: 0xC4AEFF)
-    /// Słowo polecane do nauki (pogrubione): morski.
-    /// Kontrast: 6,5 / 9,9 na `surface`, 5,9 / 6,9 na markerze dowodu.
-    static let readingRecommendedInk = dynamic(light: 0x0B6870, dark: 0x7DD8D3)
+    /// Słowo polecane do nauki (pogrubione + ciągłe podkreślenie, FEEDBACK-8 M7): zieleń, wyraźnie
+    /// inna niż fioletowy słowniczek i pomarańczowe moje słowa.
+    /// Kontrast: 6,6 / 9,4 na `surface`, 6,0 / 6,5 na markerze dowodu.
+    static let readingRecommendedInk = dynamic(light: 0x1D6B35, dark: 0x6FD98E)
     /// Słowo z mojego słownika (półgrube): ciepły pomarańczowy brąz.
     /// Kontrast: 6,5 / 8,4 na `surface`, 5,9 / 5,8 na markerze dowodu.
     static let readingOwnInk = dynamic(light: 0x9A4510, dark: 0xF5A86A)

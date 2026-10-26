@@ -29,6 +29,8 @@ struct StudyHomeView: View {
     @State private var startingMode: StudyMode?
     /// „Ćwiczenia” (J1): długość (5 / 10 min, pamiętana), uruchamiany typ, komunikat przy kafelkach.
     @AppStorage("study.singleTypeMinutes") private var singleTypeMinutes = 5
+    /// Wybrana grupa „Ćwiczeń” (M5) — przełączana na grupę zajęcia otwieranego z prośby routera.
+    @AppStorage(StudyExerciseTypesCard.groupStorageKey) private var exerciseGroupID = StudyExerciseGroup.types.id
     @State private var startingType: ExerciseType?
     @State private var typeNotice: String?
 
@@ -197,6 +199,9 @@ struct StudyHomeView: View {
     /// Dotknięcie kafelka: przerwana sesja → okno wyboru; inaczej od razu nowa sesja.
     private func open(_ activity: StudyActivity) {
         guard !isBusy else { return }
+        if let group = StudyExerciseGroup.group(containing: activity), group.id != exerciseGroupID {
+            exerciseGroupID = group.id
+        }
         let paused = FlashcardPauseStore.load()
         pausedDeck = paused
         if let prompt = StudyResumePrompt.make(for: activity, state: store.state, pausedDeck: paused) {
@@ -456,8 +461,9 @@ struct StudyHomeView: View {
     }
 }
 
-/// Okno „Kontynuuj, gdzie skończyłem” / „Zacznij od nowa” (FEEDBACK-6 K1) — systemowy arkusz
-/// akcji (bez własnego szkła).
+/// Okno „Kontynuuj, gdzie skończyłem” / „Zacznij od nowa” (FEEDBACK-6 K1) — systemowy alert na
+/// środku ekranu (FEEDBACK-8 M6; wcześniej arkusz akcji u dołu). Jedno miejsce dla fiszek,
+/// ćwiczeń, powtórek, czytania, gramatyki i produkcji.
 private struct StudyResumeDialog: ViewModifier {
     @Binding var prompt: StudyResumePrompt?
     let onContinue: (StudyActivity) -> Void
@@ -473,10 +479,9 @@ private struct StudyResumeDialog: ViewModifier {
     }
 
     func body(content: Content) -> some View {
-        content.confirmationDialog(
+        content.alert(
             Text(prompt?.title ?? "Przerwana sesja"),
             isPresented: isPresented,
-            titleVisibility: .visible,
             presenting: prompt
         ) { (shown: StudyResumePrompt) in
             Button("Kontynuuj, gdzie skończyłem") {

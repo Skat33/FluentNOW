@@ -2,8 +2,8 @@ import SwiftUI
 import FluentKit
 
 /// Tekst czytanki: czytelna typografia (krój szeryfowy, Dynamic Type, kolumna `readableWidth`).
-/// Wyróżnienia (FEEDBACK-8 M1, `ReadingHighlightStyle`): sam kolor i grubość, bez podkreśleń i teł —
-/// słowniczek (akcent), polecane do nauki (pogrubione, morskie), moje słowa (półgrube, pomarańczowe);
+/// Wyróżnienia (FEEDBACK-8 M1, M7, `ReadingHighlightStyle`): kolor i grubość, bez teł —
+/// słowniczek (akcent), polecane do nauki (pogrubione, zielone, ciągłe podkreślenie — M7), moje słowa (półgrube, pomarańczowe);
 /// legenda z próbkami pod tytułem. Używane na etapie czytania (obu trybów) i w przeglądzie. Dotknięcie otwiera arkusz z tłumaczeniem
 /// w kontekście tego tekstu. Po pytaniach fragmenty-dowody (`evidence`) są wyróżnione markerem.
 struct ReadingPassageCard: View {

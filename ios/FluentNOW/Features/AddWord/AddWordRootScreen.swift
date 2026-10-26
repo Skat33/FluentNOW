@@ -119,6 +119,8 @@ struct AddWordQuickForm: View {
     @State private var isAskingAssistant = false
     @State private var confirmDiscard = false
     @State private var addedTrigger = 0
+    /// Arkusz wszystkich przykładów znaczenia (FEEDBACK-8 M4).
+    @State private var examplesPreview: AddWordExamplesItem?
     @FocusState private var isFieldFocused: Bool
 
     private var hasUnsavedInput: Bool {
@@ -143,6 +145,9 @@ struct AddWordQuickForm: View {
             }
             .interactiveDismissDisabled(hasUnsavedInput)
             .fluentSensoryFeedback(FluentHaptic.answerCorrect, trigger: addedTrigger)
+            .sheet(item: $examplesPreview) { (item: AddWordExamplesItem) in
+                AddWordExamplesSheet(item: item)
+            }
             .task(id: query) { await search() }
             .onChange(of: query) { (_: String, _: String) in
                 lookup = nil
@@ -193,7 +198,8 @@ struct AddWordQuickForm: View {
                 known: known,
                 onEdit: { sense in
                     self.manual = AddWordManualDraft(term: lookup.term, sense: sense)
-                }
+                },
+                onShowExamples: { (item: AddWordExamplesItem) -> Void in examplesPreview = item }
             )
         } else if isLoadingLookup {
             Section { ProgressView("Wczytywanie znaczeń…") }

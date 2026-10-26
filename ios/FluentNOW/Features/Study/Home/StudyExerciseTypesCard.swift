@@ -1,13 +1,15 @@
 import SwiftUI
 import FluentKit
 
-/// „Ćwiczenia” (FEEDBACK-8 M2): jedna siatka wszystkich rodzajów zajęć — typy słownictwa,
-/// „Słowo i zdjęcie” (W budowie), codzienna mieszanka, tryb pomyłek, słowa w parach, czytanie,
-/// gramatyka, idiomy, miks językowy, produkcja. **Wybór pojedynczy**: dotknięcie kafelka = start
-/// tego jednego ćwiczenia (łączenie rodzajów jest tylko w Teście). Kafelek z przerwaną sesją ma
-/// znacznik „Przerwane” (okno „Kontynuuj / Zacznij od nowa” obsługuje `StudyHomeView`). Kafelek
-/// słownictwa bez słów nie jest wyłączony: pokazuje „Brak słów”, a dotknięcie wyjaśnia, czego
-/// brakuje. Długość 5 / 10 min dotyczy ćwiczeń słownictwa.
+/// „Ćwiczenia” (FEEDBACK-8 M2, M5): wszystkie rodzaje zajęć jako osobne kafelki, w trzech grupach
+/// przełączanych segmentem nad jedną siatką — „Słówka” (typy zadań + „Słowo i zdjęcie” W budowie),
+/// „Powtórki” (codzienna mieszanka, tryb pomyłek, słowa w parach), „Czytanie i gramatyka”
+/// (czytanie, gramatyka, idiomy, miks językowy, produkcja). Wybrana grupa jest zapamiętana
+/// (`@AppStorage`). **Wybór pojedynczy**: dotknięcie kafelka = start tego jednego ćwiczenia
+/// (łączenie rodzajów jest tylko w Teście). Kafelek z przerwaną sesją ma znacznik „Przerwane”
+/// (segment jego grupy — ikonę pauzy); okno „Kontynuuj / Zacznij od nowa” obsługuje
+/// `StudyHomeView`. Kafelek słownictwa bez słów nie jest wyłączony: pokazuje „Brak słów”,
+/// a dotknięcie wyjaśnia, czego brakuje. Długość 5 / 10 min — tylko w grupach ze słówkami.
 struct StudyExerciseTypesCard: View {
     @Binding var minutes: Int
     let collection: String?
@@ -23,16 +25,24 @@ struct StudyExerciseTypesCard: View {
     let onDismissNotice: () -> Void
 
     @Environment(LearningStore.self) private var store
+    @AppStorage(StudyExerciseTypesCard.groupStorageKey) private var groupID = StudyExerciseGroup.types.id
     @State private var availability: StudyExerciseAvailability?
+
+    /// Klucz zapamiętanej grupy (także dla `StudyHomeView` — przełączenie na grupę z prośby routera).
+    static let groupStorageKey = "study.exerciseGroup"
+
+    private var group: StudyExerciseGroup { StudyExerciseGroup.group(id: groupID) }
 
     var body: some View {
         Card(spacing: Spacing.m) {
             SectionHeader("Ćwiczenia", subtitle: subtitle)
-            StudyExerciseMinutesPicker(minutes: $minutes)
+            StudyExerciseGroupPicker(selection: $groupID, paused: paused)
+            StudyExerciseGroupDetail(group: group, minutes: $minutes)
             if let notice {
                 StudyExerciseTypeNotice(message: notice, onDismiss: onDismissNotice)
             }
             StudyExerciseGrid(
+                group: group,
                 availability: availability,
                 starting: starting,
                 isBusy: isBusy,
@@ -66,29 +76,98 @@ struct StudyExerciseTypesCard: View {
     }
 }
 
-/// 5 / 10 minut (ćwiczenia słownictwa).
-private struct StudyExerciseMinutesPicker: View {
-    @Binding var minutes: Int
+/// Przełącznik grup (FEEDBACK-8 M5): trzy segmenty w jednym rzędzie; gdy się nie mieszczą
+/// (wąski ekran, duża czcionka) — jeden pod drugim. Własny, bo systemowy segment ucina
+/// „Czytanie i gramatyka”. Bez szkła (treść karty).
+private struct StudyExerciseGroupPicker: View {
+    @Binding var selection: String
+    let paused: Set<StudyActivity>
 
     var body: some View {
-        VStack(alignment: .leading, spacing: Spacing.xxs) {
-            Picker("Długość ćwiczeń słownictwa", selection: $minutes) {
-                ForEach(SingleTypeSession.durations, id: \.self) { (value: Int) in
-                    Text("\(value) minut").tag(value)
-                }
+        ViewThatFits(in: .horizontal) {
+            HStack(spacing: Spacing.xxs) { segments }
+            VStack(spacing: Spacing.xxs) { segments }
+        }
+        .padding(Spacing.xxs)
+        .background(Palette.surfaceMuted, in: RoundedRectangle(cornerRadius: Radius.small, style: .continuous))
+        .fluentSensoryFeedback(FluentHaptic.selection, trigger: selection)
+    }
+
+    private var segments: some View {
+        ForEach(StudyExerciseGroup.all) { (group: StudyExerciseGroup) in
+            StudyExerciseGroupSegment(
+                title: group.title,
+                isSelected: group.id == selection,
+                hasPaused: group.activities.contains { (activity: StudyActivity) -> Bool in paused.contains(activity) }
+            ) {
+                selection = group.id
             }
-            .pickerStyle(.segmented)
-            .fluentSensoryFeedback(FluentHaptic.selection, trigger: minutes)
-            Text("Długość dotyczy ćwiczeń ze słówkami.")
-                .font(FluentFont.caption)
-                .foregroundStyle(Palette.inkSecondary)
-                .fixedSize(horizontal: false, vertical: true)
         }
     }
 }
 
-/// Jedna siatka z nagłówkami grup.
+/// Jeden segment przełącznika grup.
+private struct StudyExerciseGroupSegment: View {
+    let title: String
+    let isSelected: Bool
+    let hasPaused: Bool
+    let action: () -> Void
+
+    private let shape = RoundedRectangle(cornerRadius: Radius.small - 2, style: .continuous)
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: Spacing.xxs) {
+                Text(title)
+                    .font(FluentFont.subheadline.weight(isSelected ? .semibold : .regular))
+                    .lineLimit(1)
+                    .fixedSize(horizontal: true, vertical: false)
+                if hasPaused {
+                    Image(systemName: "pause.circle.fill")
+                        .font(FluentFont.caption)
+                        .foregroundStyle(Palette.accent)
+                        .accessibilityHidden(true)
+                }
+            }
+            .foregroundStyle(isSelected ? Palette.ink : Palette.inkSecondary)
+            .frame(maxWidth: .infinity, minHeight: HitTarget.minimum)
+            .padding(.horizontal, Spacing.xs)
+            .background(isSelected ? Palette.surfaceElevated : Color.clear, in: shape)
+            .contentShape(shape)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(Text(hasPaused ? "\(title), jest przerwane ćwiczenie" : title))
+        .accessibilityAddTraits(isSelected ? [.isSelected] : [])
+    }
+}
+
+/// Opis wybranej grupy i — dla grup ze słówkami — długość 5 / 10 min.
+private struct StudyExerciseGroupDetail: View {
+    let group: StudyExerciseGroup
+    @Binding var minutes: Int
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: Spacing.s) {
+            Text(group.detail)
+                .font(FluentFont.footnote)
+                .foregroundStyle(Palette.inkSecondary)
+                .fixedSize(horizontal: false, vertical: true)
+            if group.usesWords {
+                Picker("Długość ćwiczeń ze słówkami", selection: $minutes) {
+                    ForEach(SingleTypeSession.durations, id: \.self) { (value: Int) in
+                        Text("\(value) minut").tag(value)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .fluentSensoryFeedback(FluentHaptic.selection, trigger: minutes)
+            }
+        }
+    }
+}
+
+/// Siatka kafelków wybranej grupy.
 private struct StudyExerciseGrid: View {
+    let group: StudyExerciseGroup
     let availability: StudyExerciseAvailability?
     let starting: StudyActivity?
     let isBusy: Bool
@@ -100,16 +179,11 @@ private struct StudyExerciseGrid: View {
 
     var body: some View {
         LazyVGrid(columns: columns, alignment: .leading, spacing: Spacing.s) {
-            ForEach(StudyExerciseGroup.all) { (group: StudyExerciseGroup) in
-                Section {
-                    ForEach(group.tiles) { (tile: StudyExerciseTile) in
-                        tileView(tile)
-                    }
-                } header: {
-                    StudyExerciseGroupHeader(title: group.title)
-                }
+            ForEach(group.tiles) { (tile: StudyExerciseTile) in
+                tileView(tile)
             }
         }
+        .id(group.id)
     }
 
     private func tileView(_ tile: StudyExerciseTile) -> some View {
@@ -130,21 +204,6 @@ private struct StudyExerciseGrid: View {
                 onPictures()
             }
         }
-    }
-}
-
-/// Nagłówek grupy w siatce.
-private struct StudyExerciseGroupHeader: View {
-    let title: String
-
-    var body: some View {
-        Text(title)
-            .fluentEyebrow()
-            .foregroundStyle(Palette.inkSecondary)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .fixedSize(horizontal: false, vertical: true)
-            .padding(.top, Spacing.xs)
-            .accessibilityAddTraits(.isHeader)
     }
 }
 
