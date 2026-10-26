@@ -270,7 +270,7 @@
             { "en": "We didn't plan to stay overnight, but the last train was canceled.", "pl": "Nie planowaliśmy zostawać na noc, ale ostatni pociąg odwołano.", "focusEn": "stay overnight", "focusPl": "zostawać na noc" }
           ],
           "acceptedAnswers": ["overnight"],
-          "acceptedTranslations": ["na noc", "przez noc", "w nocy", "na noc w"]
+          "acceptedTranslations": ["na noc", "przez noc", "w nocy", "przez całą noc"]
         },
         {
           "id": "core.bumpy",
@@ -371,7 +371,7 @@
             { "en": "We spent the whole day at the amusement park.", "pl": "Spędziliśmy cały dzień w parku rozrywki.", "focusEn": "amusement park", "focusPl": "parku rozrywki" },
             { "en": "The amusement park closes for the winter in October.", "pl": "Park rozrywki zamykają na zimę w październiku.", "focusEn": "amusement park", "focusPl": "Park rozrywki" },
             { "en": "Have you ever been to an amusement park with a water slide?", "pl": "Byłeś kiedyś w parku rozrywki ze zjeżdżalnią wodną?", "focusEn": "amusement park", "focusPl": "parku rozrywki" },
-            { "en": "I don't like amusement park rides that go upside down.", "pl": "Nie lubię karuzeli w parkach rozrywki, które kręcą do góry nogami.", "focusEn": "amusement park rides", "focusPl": "karuzeli w parkach rozrywki" }
+            { "en": "I don't like amusement park rides that go upside down.", "pl": "Nie lubię takich atrakcji w parkach rozrywki, na których wisi się do góry nogami.", "focusEn": "amusement park rides", "focusPl": "atrakcji w parkach rozrywki" }
           ],
           "acceptedAnswers": ["amusement park"],
           "acceptedTranslations": ["park rozrywki", "wesołe miasteczko", "lunapark"]
@@ -716,7 +716,7 @@
             { "en": "I feel a lot of sympathy for people who lose their jobs.", "pl": "Bardzo współczuję ludziom, którzy tracą pracę.", "focusEn": "feel a lot of sympathy", "focusPl": "Bardzo współczuję" },
             { "en": "We sent a sympathy card to her family.", "pl": "Wysłaliśmy jej rodzinie kartkę z kondolencjami.", "focusEn": "sympathy card", "focusPl": "kartkę z kondolencjami" },
             { "en": "Don't expect any sympathy from me; you knew the risks.", "pl": "Nie licz na moje współczucie, przecież znałeś ryzyko.", "focusEn": "sympathy", "focusPl": "współczucie" },
-            { "en": "Please accept our deepest sympathy for your loss.", "pl": "Przyjmij wyrazy głębokiego współczucia z powodu twojej straty.", "focusEn": "deepest sympathy", "focusPl": "wyrazy głębokiego współczucia" }
+            { "en": "Please accept our deepest sympathy for your loss.", "pl": "Przyjmij nasze wyrazy głębokiego współczucia.", "focusEn": "deepest sympathy", "focusPl": "wyrazy głębokiego współczucia" }
           ],
           "acceptedAnswers": ["sympathy"],
           "acceptedTranslations": ["współczucie", "wyrazy współczucia", "kondolencje", "zrozumienie"]
@@ -1293,6 +1293,32 @@
           "acceptedTranslations": ["zaalarmować", "alarmować", "ostrzec", "ostrzegać", "powiadomić", "powiadamiać"]
         },
         {
+          "id": "core.alert-3",
+          "term": "alert",
+          "ipa": "/əˈlɜːrt/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "alert (ostrzeżenie)",
+          "definition": "A warning or message that tells people about a danger or something important, often on a phone.",
+          "register": "neutralny",
+          "contextPl": "Powiadomienia w telefonie, ostrzeżenia pogodowe, stan gotowości",
+          "natural": "",
+          "forms": "alerts",
+          "collocations": "weather alert; get an alert; text alert; on high alert",
+          "synonyms": "warning; notification",
+          "antonyms": "",
+          "notePl": "On alert / on high alert = w stanie (podwyższonej) gotowości.",
+          "examples": [
+            { "en": "I got an alert on my phone about a big storm tonight.", "pl": "Dostałem w telefonie ostrzeżenie o silnej burzy dziś w nocy.", "focusEn": "alert", "focusPl": "ostrzeżenie" },
+            { "en": "The bank sends me a text alert for every payment.", "pl": "Bank wysyła mi SMS-owe powiadomienie o każdej płatności.", "focusEn": "text alert", "focusPl": "SMS-owe powiadomienie" },
+            { "en": "Police are on high alert during the big game.", "pl": "Podczas wielkiego meczu policja jest w stanie podwyższonej gotowości.", "focusEn": "on high alert", "focusPl": "w stanie podwyższonej gotowości" },
+            { "en": "Why didn't I get an alert when my package arrived?", "pl": "Dlaczego nie dostałem powiadomienia, kiedy przyszła moja paczka?", "focusEn": "an alert", "focusPl": "powiadomienia" }
+          ],
+          "acceptedAnswers": ["alert"],
+          "acceptedTranslations": ["alert", "ostrzeżenie", "powiadomienie", "alarm", "stan gotowości"]
+        },
+        {
           "id": "core.amuse",
           "term": "amuse",
           "ipa": "/əˈmjuːz/",
@@ -1858,7 +1884,7 @@
           "examples": [
             { "en": "We're renovating our kitchen, so we eat out a lot.", "pl": "Remontujemy kuchnię, więc często jemy na mieście.", "focusEn": "renovating", "focusPl": "Remontujemy" },
             { "en": "They bought an old farmhouse and renovated it themselves.", "pl": "Kupili stary dom na wsi i sami go wyremontowali.", "focusEn": "renovated", "focusPl": "wyremontowali" },
-            { "en": "The museum has been closed for two years while it's renovated.", "pl": "Muzeum jest zamknięte od dwóch lat z powodu remontu.", "focusEn": "renovated", "focusPl": "remontu" },
+            { "en": "The museum has been closed for two years while it's being renovated.", "pl": "Muzeum jest zamknięte od dwóch lat z powodu remontu.", "focusEn": "renovated", "focusPl": "remontu" },
             { "en": "How much does it cost to renovate a bathroom?", "pl": "Ile kosztuje remont łazienki?", "focusEn": "to renovate", "focusPl": "remont" }
           ],
           "acceptedAnswers": ["renovate"],
@@ -2191,7 +2217,7 @@
           "antonyms": "",
           "notePl": "",
           "examples": [
-            { "en": "I have an itch on my back that I can't reach.", "pl": "Swędzi mnie plecy w miejscu, do którego nie mogę sięgnąć.", "focusEn": "have an itch", "focusPl": "Swędzi mnie" },
+            { "en": "I have an itch on my back that I can't reach.", "pl": "Swędzą mnie plecy w miejscu, do którego nie mogę sięgnąć.", "focusEn": "have an itch", "focusPl": "Swędzą mnie" },
             { "en": "This cream helps stop the itch from insect bites.", "pl": "Ten krem łagodzi swędzenie po ukąszeniach owadów.", "focusEn": "the itch", "focusPl": "swędzenie" },
             { "en": "Don't scratch the itch, or it will get worse.", "pl": "Nie drap swędzącego miejsca, bo będzie gorzej.", "focusEn": "the itch", "focusPl": "swędzącego miejsca" }
           ],
@@ -2892,7 +2918,7 @@
             { "en": "My dad was not amused when I painted the cat.", "pl": "Tacie wcale nie było do śmiechu, kiedy pomalowałem kota.", "focusEn": "was not amused", "focusPl": "wcale nie było do śmiechu" }
           ],
           "acceptedAnswers": ["amused"],
-          "acceptedTranslations": ["rozbawiony", "z rozbawieniem", "ubawiony", "zajęty"]
+          "acceptedTranslations": ["rozbawiony", "z rozbawieniem", "ubawiony"]
         },
         {
           "id": "core.bare",
@@ -2996,7 +3022,7 @@
             { "en": "Are the restrooms accessible for disabled guests?", "pl": "Czy toalety są dostępne dla gości z niepełnosprawnościami?", "focusEn": "disabled guests", "focusPl": "gości z niepełnosprawnościami" }
           ],
           "acceptedAnswers": ["disabled"],
-          "acceptedTranslations": ["niepełnosprawny", "z niepełnosprawnością", "z niepełnosprawnościami", "inwalida"]
+          "acceptedTranslations": ["niepełnosprawny", "z niepełnosprawnością", "z niepełnosprawnościami"]
         },
         {
           "id": "core.dreadful",
@@ -3126,7 +3152,7 @@
             { "en": "The movie isn't fictional; it's based on real events.", "pl": "Ten film to nie fikcja, opiera się na prawdziwych wydarzeniach.", "focusEn": "isn't fictional", "focusPl": "to nie fikcja" }
           ],
           "acceptedAnswers": ["fictional"],
-          "acceptedTranslations": ["fikcyjny", "zmyślony", "wymyślony", "literacki"]
+          "acceptedTranslations": ["fikcyjny", "zmyślony", "wymyślony"]
         },
         {
           "id": "core.fixed",
@@ -3643,7 +3669,7 @@
             { "en": "The numbers are meaningless without some context.", "pl": "Bez kontekstu te liczby nic nie znaczą.", "focusEn": "meaningless", "focusPl": "nic nie znaczą" },
             { "en": "His apology felt empty and meaningless.", "pl": "Jego przeprosiny wydawały się puste i bez znaczenia.", "focusEn": "meaningless", "focusPl": "bez znaczenia" },
             { "en": "She quit because her job felt meaningless.", "pl": "Odeszła, bo jej praca wydawała się jej bezsensowna.", "focusEn": "meaningless", "focusPl": "bezsensowna" },
-            { "en": "Isn't a promise meaningless if you never keep it?", "pl": "Czy obietnica nie traci sensu, jeśli nigdy jej nie dotrzymujesz?", "focusEn": "meaningless", "focusPl": "nie traci sensu" }
+            { "en": "Isn't a promise meaningless if you never keep it?", "pl": "Czy obietnica nie traci sensu, jeśli nigdy jej nie dotrzymujesz?", "focusEn": "meaningless", "focusPl": "traci sensu" }
           ],
           "acceptedAnswers": ["meaningless"],
           "acceptedTranslations": ["bez znaczenia", "bezsensowny", "bez sensu", "pusty", "nic nieznaczący"]
@@ -3877,10 +3903,10 @@
             { "en": "The town gets most of its power from renewable sources.", "pl": "Miasto czerpie większość energii ze źródeł odnawialnych.", "focusEn": "renewable sources", "focusPl": "źródeł odnawialnych" },
             { "en": "Wood is a renewable material if forests are managed well.", "pl": "Drewno jest surowcem odnawialnym, jeśli lasami dobrze się gospodaruje.", "focusEn": "renewable", "focusPl": "odnawialnym" },
             { "en": "I have a one-year contract that's renewable every January.", "pl": "Mam roczną umowę, którą można przedłużać co styczeń.", "focusEn": "renewable", "focusPl": "można przedłużać" },
-            { "en": "Is wind power more renewable than solar?", "pl": "Czy energia wiatrowa jest bardziej odnawialna niż słoneczna?", "focusEn": "more renewable", "focusPl": "bardziej odnawialna" }
+            { "en": "Is a driver's license renewable online, or do you have to go in person?", "pl": "Czy prawo jazdy można przedłużyć przez internet, czy trzeba iść osobiście?", "focusEn": "renewable", "focusPl": "można przedłużyć" }
           ],
           "acceptedAnswers": ["renewable"],
-          "acceptedTranslations": ["odnawialny", "z możliwością przedłużenia", "ekologiczny"]
+          "acceptedTranslations": ["odnawialny", "z możliwością przedłużenia", "do przedłużenia"]
         },
         {
           "id": "core.respected",
@@ -4006,7 +4032,7 @@
             { "en": "The news of the factory closing was shocking for the whole town.", "pl": "Wiadomość o zamknięciu fabryki wstrząsnęła całym miastem.", "focusEn": "shocking", "focusPl": "wstrząsnęła" },
             { "en": "It's shocking how expensive child care has become.", "pl": "To szokujące, jak droga stała się opieka nad dziećmi.", "focusEn": "It's shocking", "focusPl": "To szokujące" },
             { "en": "The ending of the book was shocking.", "pl": "Zakończenie książki było szokujące.", "focusEn": "shocking", "focusPl": "szokujące" },
-            { "en": "Weren't you shocked by the results? The numbers were shocking.", "pl": "Nie zaskoczyły cię wyniki? Liczby były szokujące.", "focusEn": "shocking", "focusPl": "szokujące" }
+            { "en": "Wasn't it shocking how quickly the store closed?", "pl": "Czy to nie szokujące, jak szybko zamknięto ten sklep?", "focusEn": "shocking", "focusPl": "szokujące" }
           ],
           "acceptedAnswers": ["shocking"],
           "acceptedTranslations": ["szokujący", "wstrząsający", "skandaliczny", "bulwersujący"]
@@ -4472,7 +4498,7 @@
             { "en": "You don't have to be well-educated to be wise.", "pl": "Nie trzeba być wykształconym, żeby być mądrym.", "focusEn": "well-educated", "focusPl": "wykształconym" }
           ],
           "acceptedAnswers": ["well-educated"],
-          "acceptedTranslations": ["wykształcony", "dobrze wykształcony", "oczytany"]
+          "acceptedTranslations": ["wykształcony", "dobrze wykształcony"]
         },
         {
           "id": "core.allowance",
@@ -4493,7 +4519,7 @@
           "notePl": "",
           "examples": [
             { "en": "The company gives us a monthly allowance for phone bills.", "pl": "Firma daje nam co miesiąc dodatek na rachunki za telefon.", "focusEn": "allowance", "focusPl": "dodatek" },
-            { "en": "Soldiers living off the base get a housing allowance.", "pl": "Żołnierze mieszkający poza bazą dostają dodatek mieszkaniowy.", "focusEn": "housing allowance", "focusPl": "dodatek mieszkaniowy" },
+            { "en": "Soldiers living off base get a housing allowance.", "pl": "Żołnierze mieszkający poza bazą dostają dodatek mieszkaniowy.", "focusEn": "housing allowance", "focusPl": "dodatek mieszkaniowy" },
             { "en": "Is there a daily allowance for meals when we travel for work?", "pl": "Czy w podróży służbowej przysługuje nam dieta na posiłki?", "focusEn": "daily allowance", "focusPl": "dieta" },
             { "en": "My new job doesn't include a travel allowance.", "pl": "Moja nowa praca nie obejmuje dodatku na dojazdy.", "focusEn": "travel allowance", "focusPl": "dodatku na dojazdy" }
           ],
@@ -5009,7 +5035,7 @@
           "antonyms": "",
           "notePl": "",
           "examples": [
-            { "en": "The steak was cooked to perfection.", "pl": "Stek był upieczony do perfekcji.", "focusEn": "to perfection", "focusPl": "do perfekcji" },
+            { "en": "The steak was cooked to perfection.", "pl": "Stek był przyrządzony do perfekcji.", "focusEn": "to perfection", "focusPl": "do perfekcji" },
             { "en": "Don't wait for perfection; just start.", "pl": "Nie czekaj na ideał, po prostu zacznij.", "focusEn": "perfection", "focusPl": "ideał" },
             { "en": "She expects perfection from everyone on her team.", "pl": "Od wszystkich w zespole oczekuje doskonałości.", "focusEn": "perfection", "focusPl": "doskonałości" },
             { "en": "Is perfection really possible in art?", "pl": "Czy w sztuce doskonałość jest w ogóle możliwa?", "focusEn": "perfection", "focusPl": "doskonałość" }
@@ -5064,7 +5090,7 @@
             { "en": "What do you do for relaxation after work?", "pl": "Co robisz po pracy, żeby się zrelaksować?", "focusEn": "for relaxation", "focusPl": "żeby się zrelaksować" },
             { "en": "The spa is a place of peace and relaxation.", "pl": "Spa to miejsce spokoju i relaksu.", "focusEn": "relaxation", "focusPl": "relaksu" },
             { "en": "I learned some breathing and relaxation techniques for stress.", "pl": "Nauczyłem się kilku technik oddechowych i relaksacyjnych na stres.", "focusEn": "relaxation techniques", "focusPl": "relaksacyjnych" },
-            { "en": "Our vacation wasn't much relaxation with three small kids.", "pl": "Z trojgiem maluchów urlop nie był zbyt relaksujący.", "focusEn": "wasn't much relaxation", "focusPl": "nie był zbyt relaksujący" }
+            { "en": "With three small kids, there wasn't much time for relaxation on our vacation.", "pl": "Z trojgiem maluchów na urlopie nie było wiele czasu na relaks.", "focusEn": "relaxation", "focusPl": "relaks" }
           ],
           "acceptedAnswers": ["relaxation"],
           "acceptedTranslations": ["relaks", "odpoczynek", "odprężenie", "rozluźnienie"]
@@ -5321,7 +5347,7 @@
             { "en": "With so many people, something is bound to go wrong.", "pl": "Przy tylu ludziach coś na pewno pójdzie nie tak.", "focusEn": "is bound to", "focusPl": "na pewno" },
             { "en": "You're bound to make mistakes when you start a new job.", "pl": "Zaczynając nową pracę, na pewno będziesz popełniać błędy.", "focusEn": "You're bound to", "focusPl": "na pewno" },
             { "en": "It was bound to happen sooner or later.", "pl": "Prędzej czy później musiało do tego dojść.", "focusEn": "was bound to", "focusPl": "musiało" },
-            { "en": "Isn't the price bound to go up after the holidays?", "pl": "Czy cena nie musi pójść w górę po świętach?", "focusEn": "bound to", "focusPl": "musi" }
+            { "en": "Isn't the price bound to go up after the holidays?", "pl": "Czy po świętach cena na pewno nie pójdzie w górę?", "focusEn": "bound to", "focusPl": "na pewno" }
           ],
           "acceptedAnswers": ["bound"],
           "acceptedTranslations": ["na pewno", "z pewnością", "musieć", "pewny"]
@@ -5505,7 +5531,7 @@
             { "en": "Is the bike path a loop, or do we have to come back the same way?", "pl": "Czy ścieżka rowerowa to pętla, czy musimy wracać tą samą drogą?", "focusEn": "a loop", "focusPl": "pętla" }
           ],
           "acceptedAnswers": ["loop"],
-          "acceptedTranslations": ["pętla", "pętelka", "kółko", "obwód", "w kółko"]
+          "acceptedTranslations": ["pętla", "pętelka", "kółko", "w kółko"]
         },
         {
           "id": "core.lump",
@@ -5610,6 +5636,32 @@
           ],
           "acceptedAnswers": ["sniff"],
           "acceptedTranslations": ["pociągać nosem", "pociągnąć nosem", "wąchać", "powąchać", "niuchać"]
+        },
+        {
+          "id": "core.slash-2",
+          "term": "slash",
+          "ipa": "/slæʃ/",
+          "pos": "rzeczownik",
+          "level": "B2",
+          "frequency": "common",
+          "translation": "ukośnik",
+          "definition": "The symbol /, used in web addresses and dates, or between words to show a choice.",
+          "register": "neutralny",
+          "contextPl": "Adresy stron, daty, alternatywy (and/or); w mowie czytany na głos jako slash",
+          "natural": "",
+          "forms": "slashes",
+          "collocations": "forward slash; backslash; and/or",
+          "synonyms": "forward slash",
+          "antonyms": "",
+          "notePl": "W AmE slash czyta się też na głos między dwiema rolami: a writer slash director = pisarz, a zarazem reżyser.",
+          "examples": [
+            { "en": "Type the name of the website, then a slash and the word help.", "pl": "Wpisz nazwę strony, potem ukośnik i słowo help.", "focusEn": "a slash", "focusPl": "ukośnik" },
+            { "en": "In the US, dates are usually written with slashes between the numbers.", "pl": "W USA daty zapisuje się zwykle z ukośnikami między liczbami.", "focusEn": "slashes", "focusPl": "ukośnikami" },
+            { "en": "She's a singer slash actress, and she's great at both.", "pl": "Jest piosenkarką, a zarazem aktorką, i świetnie radzi sobie w obu rolach.", "focusEn": "slash", "focusPl": "a zarazem" },
+            { "en": "Is that a slash or a backslash in the file name?", "pl": "Czy w nazwie pliku jest ukośnik, czy ukośnik wsteczny?", "focusEn": "a slash", "focusPl": "ukośnik" }
+          ],
+          "acceptedAnswers": ["slash", "forward slash"],
+          "acceptedTranslations": ["ukośnik", "slash", "ukośnik prawy"]
         }
       ]
     },
@@ -5963,7 +6015,7 @@
           "notePl": "",
           "examples": [
             { "en": "He went to the hospital with acute pain in his stomach.", "pl": "Trafił do szpitala z ostrym bólem brzucha.", "focusEn": "acute pain", "focusPl": "ostrym bólem" },
-            { "en": "There's an acute shortage of nurses in rural areas.", "pl": "Na terenach wiejskich brakuje dramatycznie pielęgniarek.", "focusEn": "acute shortage", "focusPl": "brakuje dramatycznie" },
+            { "en": "There's an acute shortage of nurses in rural areas.", "pl": "Na terenach wiejskich dramatycznie brakuje pielęgniarek.", "focusEn": "acute shortage", "focusPl": "dramatycznie brakuje" },
             { "en": "The housing problem has become more acute in recent years.", "pl": "W ostatnich latach problem mieszkaniowy stał się bardziej palący.", "focusEn": "more acute", "focusPl": "bardziej palący" }
           ],
           "acceptedAnswers": ["acute"],
@@ -6139,7 +6191,7 @@
           "examples": [
             { "en": "The court affirmed the earlier decision.", "pl": "Sąd podtrzymał wcześniejszą decyzję.", "focusEn": "affirmed", "focusPl": "podtrzymał" },
             { "en": "The company affirmed its commitment to protecting customer data.", "pl": "Firma potwierdziła swoje zaangażowanie w ochronę danych klientów.", "focusEn": "affirmed", "focusPl": "potwierdziła" },
-            { "en": "She didn't affirm or deny the rumors.", "pl": "Nie potwierdziła ani nie zaprzeczyła plotkom.", "focusEn": "didn't affirm", "focusPl": "Nie potwierdziła" }
+            { "en": "She didn't affirm or deny the rumors.", "pl": "Ani nie potwierdziła plotek, ani im nie zaprzeczyła.", "focusEn": "didn't affirm", "focusPl": "nie potwierdziła" }
           ],
           "acceptedAnswers": ["affirm"],
           "acceptedTranslations": ["potwierdzić", "potwierdzać", "podtrzymać", "zapewnić", "oświadczyć"]
@@ -6863,7 +6915,7 @@
           "notePl": "",
           "examples": [
             { "en": "Rumors are circulating that the store will close.", "pl": "Krążą plotki, że sklep zostanie zamknięty.", "focusEn": "are circulating", "focusPl": "Krążą" },
-            { "en": "Please circulate this email to everyone in your team.", "pl": "Proszę roześlij ten mail do wszystkich w zespole.", "focusEn": "circulate", "focusPl": "roześlij" },
+            { "en": "Please circulate this email to everyone in your team.", "pl": "Proszę, roześlij ten mail do wszystkich w zespole.", "focusEn": "circulate", "focusPl": "roześlij" },
             { "en": "A fan helps the air circulate in the room.", "pl": "Wentylator pomaga w cyrkulacji powietrza w pokoju.", "focusEn": "circulate", "focusPl": "cyrkulacji" }
           ],
           "acceptedAnswers": ["circulate"],
@@ -6937,7 +6989,7 @@
           "antonyms": "",
           "notePl": "",
           "examples": [
-            { "en": "The first animal clone was a sheep.", "pl": "Pierwszym sklonowanym zwierzęciem była owca.", "focusEn": "animal clone", "focusPl": "sklonowanym zwierzęciem" },
+            { "en": "The most famous animal clone was a sheep named Dolly.", "pl": "Najsłynniejszym sklonowanym zwierzęciem była owca Dolly.", "focusEn": "animal clone", "focusPl": "sklonowanym zwierzęciem" },
             { "en": "This app is just a cheap clone of a much better one.", "pl": "Ta aplikacja to tylko tania podróbka dużo lepszej.", "focusEn": "a cheap clone", "focusPl": "tania podróbka" },
             { "en": "He's a clone of his father; they even laugh the same way.", "pl": "Jest kopią swojego ojca, nawet śmieją się tak samo.", "focusEn": "a clone", "focusPl": "kopią" }
           ],
@@ -7231,7 +7283,7 @@
           "register": "neutralny",
           "contextPl": "O umiejętnościach i fachowości w pracy",
           "natural": "",
-          "forms": "competences",
+          "forms": "(niepoliczalny)",
           "collocations": "professional competence; level of competence; competence in; demonstrate competence",
           "synonyms": "ability; skill; expertise",
           "antonyms": "incompetence",
@@ -7842,7 +7894,7 @@
             { "en": "Does his story have any credibility?", "pl": "Czy jego historia jest w ogóle wiarygodna?", "focusEn": "have any credibility", "focusPl": "jest w ogóle wiarygodna" }
           ],
           "acceptedAnswers": ["credibility"],
-          "acceptedTranslations": ["wiarygodność", "zaufanie", "prawdopodobieństwo"]
+          "acceptedTranslations": ["wiarygodność", "zaufanie"]
         },
         {
           "id": "core.critically",
@@ -7987,12 +8039,12 @@
           "antonyms": "",
           "notePl": "",
           "examples": [
-            { "en": "The actor missed his cue and walked on stage late.", "pl": "Aktor przegapił swoją kwestię i wszedł na scenę za późno.", "focusEn": "missed his cue", "focusPl": "przegapił swoją kwestię" },
+            { "en": "The actor missed his cue and walked on stage late.", "pl": "Aktor przegapił moment swojego wejścia i pojawił się na scenie za późno.", "focusEn": "missed his cue", "focusPl": "przegapił moment swojego wejścia" },
             { "en": "Right on cue, the bus arrived just as we got to the stop.", "pl": "Jak na zawołanie autobus przyjechał, gdy tylko doszliśmy na przystanek.", "focusEn": "Right on cue", "focusPl": "Jak na zawołanie" },
             { "en": "Some kids have trouble reading social cues.", "pl": "Niektóre dzieci mają trudność z odczytywaniem sygnałów społecznych.", "focusEn": "social cues", "focusPl": "sygnałów społecznych" }
           ],
           "acceptedAnswers": ["cue"],
-          "acceptedTranslations": ["sygnał", "znak", "wskazówka", "kwestia", "jak na zawołanie"]
+          "acceptedTranslations": ["sygnał", "znak", "wskazówka", "jak na zawołanie"]
         },
         {
           "id": "core.cylinder",
@@ -8263,7 +8315,7 @@
           "notePl": "",
           "examples": [
             { "en": "The country wants to reduce its dependence on imported oil.", "pl": "Kraj chce zmniejszyć swoją zależność od importowanej ropy.", "focusEn": "dependence on", "focusPl": "zależność od" },
-            { "en": "Many young adults still have financial dependence on their parents.", "pl": "Wielu młodych dorosłych wciąż jest finansowo zależnych od rodziców.", "focusEn": "financial dependence", "focusPl": "finansowo zależnych" },
+            { "en": "His dependence on painkillers worried his doctor.", "pl": "Jego uzależnienie od leków przeciwbólowych niepokoiło lekarza.", "focusEn": "dependence on", "focusPl": "uzależnienie od" },
             { "en": "Is our dependence on smartphones a problem?", "pl": "Czy nasze uzależnienie od smartfonów to problem?", "focusEn": "dependence on", "focusPl": "uzależnienie od" }
           ],
           "acceptedAnswers": ["dependence"],
@@ -8688,7 +8740,7 @@
           "notePl": "",
           "examples": [
             { "en": "Police were called because of a disturbance at the bar.", "pl": "Policję wezwano z powodu awantury w barze.", "focusEn": "disturbance", "focusPl": "awantury" },
-            { "en": "Please work quietly to avoid any disturbance to other guests.", "pl": "Prosimy o ciszę, żeby nie przeszkadzać innym gościom.", "focusEn": "disturbance", "focusPl": "przeszkadzać" },
+            { "en": "Please keep your voices down to avoid any disturbance to other guests.", "pl": "Prosimy o ciszę, żeby nie przeszkadzać innym gościom.", "focusEn": "disturbance", "focusPl": "przeszkadzać" },
             { "en": "Is noise from the street a common cause of sleep disturbance?", "pl": "Czy hałas z ulicy to częsta przyczyna zaburzeń snu?", "focusEn": "sleep disturbance", "focusPl": "zaburzeń snu" }
           ],
           "acceptedAnswers": ["disturbance"],
@@ -9038,7 +9090,7 @@
           "notePl": "",
           "examples": [
             { "en": "Only the elite could afford to travel abroad back then.", "pl": "Wtedy tylko elita mogła sobie pozwolić na wyjazdy za granicę.", "focusEn": "the elite", "focusPl": "elita" },
-            { "en": "She trains with the country's athletic elite.", "pl": "Trenuje z krajową elitą lekkoatletyczną.", "focusEn": "elite", "focusPl": "elitą" },
+            { "en": "She trains with the country's athletic elite.", "pl": "Trenuje z krajową elitą sportową.", "focusEn": "elite", "focusPl": "elitą" },
             { "en": "Is the college only for the wealthy elite?", "pl": "Czy ta uczelnia jest tylko dla bogatej elity?", "focusEn": "elite", "focusPl": "elity" }
           ],
           "acceptedAnswers": ["elite"],
@@ -9517,7 +9569,7 @@
             { "en": "My grandmother is ninety, but she still has all her faculties.", "pl": "Babcia ma dziewięćdziesiąt lat, ale wciąż jest w pełni sprawna umysłowo.", "focusEn": "all her faculties", "focusPl": "w pełni sprawna umysłowo" }
           ],
           "acceptedAnswers": ["faculty"],
-          "acceptedTranslations": ["kadra dydaktyczna", "grono pedagogiczne", "wykładowcy", "nauczyciele", "zdolności"]
+          "acceptedTranslations": ["kadra dydaktyczna", "kadra", "grono pedagogiczne", "wykładowcy", "nauczyciele", "zdolności"]
         },
         {
           "id": "core.fatigue",
@@ -9589,7 +9641,7 @@
           "examples": [
             { "en": "Scoop out the flesh of the avocado with a spoon.", "pl": "Wydrąż łyżką miąższ awokado.", "focusEn": "flesh", "focusPl": "miąższ" },
             { "en": "I finally saw my favorite singer in the flesh.", "pl": "W końcu zobaczyłem na żywo mojego ulubionego piosenkarza.", "focusEn": "in the flesh", "focusPl": "na żywo" },
-            { "en": "He's my own flesh and blood, so of course I'll help him.", "pl": "To moja rodzona krew, więc oczywiście mu pomogę.", "focusEn": "flesh and blood", "focusPl": "rodzona krew" }
+            { "en": "He's my own flesh and blood, so of course I'll help him.", "pl": "To przecież moja rodzina, więc oczywiście mu pomogę.", "focusEn": "flesh and blood", "focusPl": "moja rodzina" }
           ],
           "acceptedAnswers": ["flesh"],
           "acceptedTranslations": ["ciało", "mięso", "miąższ", "na żywo"]
@@ -10442,7 +10494,7 @@
             { "en": "Do big changes at work inevitably cause stress?", "pl": "Czy duże zmiany w pracy zawsze muszą wywoływać stres?", "focusEn": "inevitably", "focusPl": "zawsze muszą" }
           ],
           "acceptedAnswers": ["inevitably"],
-          "acceptedTranslations": ["nieuchronnie", "nieuniknienie", "siłą rzeczy", "oczywiście", "nieodwołalnie"]
+          "acceptedTranslations": ["nieuchronnie", "siłą rzeczy", "oczywiście"]
         },
         {
           "id": "core.infectious",
@@ -10688,7 +10740,7 @@
           "notePl": "",
           "examples": [
             { "en": "Economic instability makes people afraid to spend money.", "pl": "Niestabilność gospodarcza sprawia, że ludzie boją się wydawać pieniądze.", "focusEn": "instability", "focusPl": "Niestabilność" },
-            { "en": "Moving schools often can cause instability for children.", "pl": "Częste zmiany szkoły mogą wywoływać u dzieci poczucie niestabilności.", "focusEn": "instability", "focusPl": "niestabilności" },
+            { "en": "Changing schools too often can cause instability for children.", "pl": "Częste zmiany szkoły mogą wywoływać u dzieci poczucie niestabilności.", "focusEn": "instability", "focusPl": "niestabilności" },
             { "en": "Did the political instability affect tourism?", "pl": "Czy niestabilna sytuacja polityczna wpłynęła na turystykę?", "focusEn": "instability", "focusPl": "niestabilna sytuacja" }
           ],
           "acceptedAnswers": ["instability"],
@@ -10913,7 +10965,7 @@
           "notePl": "",
           "examples": [
             { "en": "Reading my messages is an invasion of privacy.", "pl": "Czytanie moich wiadomości to naruszenie prywatności.", "focusEn": "invasion of privacy", "focusPl": "naruszenie prywatności" },
-            { "en": "Farmers are worried about an invasion of grasshoppers this summer.", "pl": "Rolnicy obawiają się tego lata inwazji szarańczy.", "focusEn": "invasion", "focusPl": "inwazji" },
+            { "en": "Farmers are worried about an invasion of grasshoppers this summer.", "pl": "Rolnicy obawiają się tego lata inwazji koników polnych.", "focusEn": "invasion", "focusPl": "inwazji" },
             { "en": "The history class studied the invasion of England in 1066.", "pl": "Na lekcji historii omawiano najazd na Anglię w 1066 roku.", "focusEn": "invasion", "focusPl": "najazd" }
           ],
           "acceptedAnswers": ["invasion"],
@@ -12188,11 +12240,11 @@
           "notePl": "",
           "examples": [
             { "en": "The picture is an optical illusion; the lines are actually straight.", "pl": "Ten obrazek to złudzenie optyczne, linie są w rzeczywistości proste.", "focusEn": "optical illusion", "focusPl": "złudzenie optyczne" },
-            { "en": "Our town finally has optical fiber internet.", "pl": "W naszym miasteczku w końcu jest internet światłowodowy.", "focusEn": "optical fiber", "focusPl": "światłowodowy" },
+            { "en": "Optical sensors in the camera can detect even small movements.", "pl": "Czujniki optyczne w kamerze wykrywają nawet drobne ruchy.", "focusEn": "Optical sensors", "focusPl": "Czujniki optyczne" },
             { "en": "Is there an optical store near here where I can fix my glasses?", "pl": "Czy jest tu w pobliżu zakład optyczny, gdzie naprawię okulary?", "focusEn": "optical store", "focusPl": "zakład optyczny" }
           ],
           "acceptedAnswers": ["optical"],
-          "acceptedTranslations": ["optyczny", "wzrokowy", "światłowodowy"]
+          "acceptedTranslations": ["optyczny", "wzrokowy"]
         },
         {
           "id": "core.optimal",
@@ -12687,7 +12739,7 @@
           "antonyms": "",
           "notePl": "",
           "examples": [
-            { "en": "I saw a nurse practitioner instead of a doctor.", "pl": "Zamiast lekarza przyjęła mnie wykwalifikowana pielęgniarka.", "focusEn": "nurse practitioner", "focusPl": "wykwalifikowana pielęgniarka" },
+            { "en": "I saw a nurse practitioner instead of a doctor.", "pl": "Zamiast lekarza przyjęła mnie pielęgniarka z uprawnieniami do leczenia.", "focusEn": "nurse practitioner", "focusPl": "pielęgniarka z uprawnieniami do leczenia" },
             { "en": "The book is written for teachers and other practitioners.", "pl": "Książka jest napisana dla nauczycieli i innych praktyków.", "focusEn": "practitioners", "focusPl": "praktyków" },
             { "en": "Is he a licensed medical practitioner?", "pl": "Czy ma prawo wykonywania zawodu lekarza?", "focusEn": "medical practitioner", "focusPl": "prawo wykonywania zawodu lekarza" }
           ],
@@ -13267,7 +13319,7 @@
             { "en": "Is this problem even on the manager's radar?", "pl": "Czy kierownik w ogóle zwraca uwagę na ten problem?", "focusEn": "on the manager's radar", "focusPl": "zwraca uwagę" }
           ],
           "acceptedAnswers": ["radar"],
-          "acceptedTranslations": ["radar", "pole widzenia", "niezauważony"]
+          "acceptedTranslations": ["radar"]
         },
         {
           "id": "core.radiation",
@@ -13337,7 +13389,7 @@
           "antonyms": "",
           "notePl": "",
           "examples": [
-            { "en": "The first rays of sunlight came through the curtains.", "pl": "Przez zasłony przedostały się pierwsze promienie słońca.", "focusEn": "rays", "focusPl": "promienie" },
+            { "en": "The first rays of sunlight came through the curtains.", "pl": "Przez zasłony wpadły pierwsze promienie słońca.", "focusEn": "rays", "focusPl": "promienie" },
             { "en": "The good news was a ray of hope for the family.", "pl": "Dobra wiadomość była dla rodziny promykiem nadziei.", "focusEn": "a ray of hope", "focusPl": "promykiem nadziei" },
             { "en": "Do the sun's rays really damage your eyes?", "pl": "Czy promienie słoneczne naprawdę szkodzą oczom?", "focusEn": "rays", "focusPl": "promienie" }
           ],
@@ -13389,7 +13441,7 @@
           "examples": [
             { "en": "Her optimism is balanced by a healthy dose of realism.", "pl": "Jej optymizm równoważy zdrowa dawka realizmu.", "focusEn": "realism", "focusPl": "realizmu" },
             { "en": "The movie is praised for its realism.", "pl": "Film jest chwalony za realizm.", "focusEn": "realism", "focusPl": "realizm" },
-            { "en": "Is there enough realism in the new budget?", "pl": "Czy w nowym budżecie jest dość realizmu?", "focusEn": "realism", "focusPl": "realizmu" }
+            { "en": "Doesn't the plan need a bit more realism?", "pl": "Czy temu planowi nie przydałoby się trochę więcej realizmu?", "focusEn": "realism", "focusPl": "realizmu" }
           ],
           "acceptedAnswers": ["realism"],
           "acceptedTranslations": ["realizm", "realistyczne podejście", "trzeźwość"]
@@ -13417,7 +13469,7 @@
             { "en": "Is music therapy still in the realm of experiments?", "pl": "Czy muzykoterapia wciąż należy do dziedziny eksperymentów?", "focusEn": "the realm", "focusPl": "dziedziny" }
           ],
           "acceptedAnswers": ["realm"],
-          "acceptedTranslations": ["sfera", "dziedzina", "obszar", "królestwo"]
+          "acceptedTranslations": ["sfera", "dziedzina", "obszar"]
         },
         {
           "id": "core.reconstruct",
@@ -13687,7 +13739,7 @@
           "antonyms": "",
           "notePl": "",
           "examples": [
-            { "en": "I went back to the restaurant to retrieve my umbrella.", "pl": "Wróciłem do restauracji po parasol.", "focusEn": "to retrieve", "focusPl": "po" },
+            { "en": "I went back to the restaurant to retrieve my umbrella.", "pl": "Wróciłem do restauracji, żeby odebrać parasol.", "focusEn": "to retrieve", "focusPl": "odebrać" },
             { "en": "The technician retrieved all the photos from my old phone.", "pl": "Technik odzyskał wszystkie zdjęcia z mojego starego telefonu.", "focusEn": "retrieved", "focusPl": "odzyskał" },
             { "en": "Can deleted emails be retrieved from the server?", "pl": "Czy usunięte maile da się odzyskać z serwera?", "focusEn": "be retrieved", "focusPl": "da się odzyskać" }
           ],
@@ -13739,7 +13791,7 @@
           "examples": [
             { "en": "The Earth rotates once every twenty-four hours.", "pl": "Ziemia obraca się raz na dwadzieścia cztery godziny.", "focusEn": "rotates", "focusPl": "obraca się" },
             { "en": "Nurses rotate between day and night shifts.", "pl": "Pielęgniarki pracują na zmianę na dziennych i nocnych dyżurach.", "focusEn": "rotate", "focusPl": "pracują na zmianę" },
-            { "en": "How often should you rotate your car's tires?", "pl": "Jak często należy zamieniać opony w samochodzie?", "focusEn": "rotate", "focusPl": "zamieniać" }
+            { "en": "How often should you rotate your car's tires?", "pl": "Jak często należy przekładać opony w samochodzie?", "focusEn": "rotate", "focusPl": "przekładać" }
           ],
           "acceptedAnswers": ["rotate"],
           "acceptedTranslations": ["obracać się", "obrócić", "obracać", "zmieniać się", "rotować"]
@@ -14062,7 +14114,7 @@
           "antonyms": "",
           "notePl": "",
           "examples": [
-            { "en": "Young kids have a short attention span.", "pl": "Małe dzieci mają krótką zdolność skupienia uwagi.", "focusEn": "attention span", "focusPl": "zdolność skupienia uwagi" },
+            { "en": "Young kids have a short attention span.", "pl": "Małe dzieci potrafią skupić uwagę tylko na krótko.", "focusEn": "attention span", "focusPl": "skupić uwagę" },
             { "en": "The average life span of a cat is about fifteen years.", "pl": "Przeciętna długość życia kota to około piętnastu lat.", "focusEn": "life span", "focusPl": "długość życia" },
             { "en": "All these changes happened in a span of five years.", "pl": "Wszystkie te zmiany nastąpiły w ciągu pięciu lat.", "focusEn": "a span of", "focusPl": "w ciągu" }
           ],
@@ -14288,7 +14340,7 @@
           "notePl": "",
           "examples": [
             { "en": "What's the company's stance on working from home?", "pl": "Jakie jest stanowisko firmy w sprawie pracy zdalnej?", "focusEn": "stance", "focusPl": "stanowisko" },
-            { "en": "The mayor took a firm stance against the new casino.", "pl": "Burmistrz zajął stanowcze stanowisko przeciwko nowemu kasynu.", "focusEn": "firm stance", "focusPl": "stanowcze stanowisko" },
+            { "en": "The mayor took a firm stance against the new casino.", "pl": "Burmistrz zdecydowanie sprzeciwił się budowie nowego kasyna.", "focusEn": "firm stance", "focusPl": "zdecydowanie sprzeciwił się" },
             { "en": "The coach told him to change his batting stance.", "pl": "Trener kazał mu zmienić postawę przy odbijaniu.", "focusEn": "stance", "focusPl": "postawę" }
           ],
           "acceptedAnswers": ["stance"],
