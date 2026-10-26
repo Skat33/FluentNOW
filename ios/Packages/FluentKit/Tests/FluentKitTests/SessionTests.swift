@@ -286,6 +286,58 @@ final class SessionTests: XCTestCase {
         XCTAssertEqual(MeaningOptions.options(state: state, word: word, meaning: word.meanings[0], task: task, starterWords: starter).count, 4)
     }
 
+    /// Core vocabulary near-synonyms (FEEDBACK-7): a distractor never shares a translation or an
+    /// accepted answer with the target — in either direction, also through loose keys.
+    func testMeaningOptionsNeverOfferASecondCorrectAnswer() {
+        var redundant = TestData.freshWord("redundant", "redundant", "nadmiarowy")
+        redundant.meanings[0].acceptedTranslations = ["zbędny"]
+        var superfluous = TestData.freshWord("superfluous", "superfluous", "zbyteczny")
+        superfluous.meanings[0].acceptedTranslations = ["zbędny"]
+        let pity = TestData.freshWord("pity", "pity", "szkoda")
+        let shame = TestData.freshWord("shame", "shame", "szkoda")
+        var appease = TestData.freshWord("appease", "appease", "udobruchać")
+        appease.meanings[0].acceptedTranslations = ["załagodzić"]
+        var placate = TestData.freshWord("placate", "placate", "uspokoić")
+        placate.meanings[0].acceptedTranslations = ["załagodzić (czyjś gniew)"]
+        let onceInAWhile = TestData.freshWord("once", "once in a while", "od czasu do czasu")
+        let nowAndThen = TestData.freshWord("now", "now and then", "od czasu do czasu")
+        var regret = TestData.freshWord("regret", "regret", "żal")
+        regret.meanings[0].acceptedTranslations = ["szkoda (że)"]
+        let fillers = [
+            TestData.freshWord("swim", "swim", "pływać"),
+            TestData.freshWord("run", "run", "biegać"),
+            TestData.freshWord("eat", "eat", "jeść"),
+            TestData.freshWord("read", "read", "czytać")
+        ]
+        var state = TestData.emptyState()
+        state.words = [redundant, superfluous, pity, shame, appease, placate, onceInAWhile, nowAndThen, regret] + fillers
+
+        func options(_ word: Word) -> [String] {
+            let task = VocabTask(wordId: word.id, meaningId: word.meanings[0].id, type: .meaning, example: 0)
+            return MeaningOptions.options(state: state, word: word, meaning: word.meanings[0], task: task)
+        }
+        let forRedundant = options(redundant)
+        XCTAssertEqual(forRedundant.count, 4)
+        XCTAssertFalse(forRedundant.contains("zbyteczny"), "shared accepted answer „zbędny” — a second correct option")
+        let forSuperfluous = options(superfluous)
+        XCTAssertFalse(forSuperfluous.contains("nadmiarowy"))
+        let forPity = options(pity)
+        XCTAssertEqual(forPity.filter { $0 == "szkoda" }.count, 1, "shame „szkoda” is not a distractor of pity")
+        XCTAssertFalse(forPity.contains("żal"), "regret accepts „szkoda (że)” — loose key „szkoda”")
+        XCTAssertFalse(options(regret).contains("szkoda"), "the other direction")
+        XCTAssertFalse(options(appease).contains("uspokoić"), "placate accepts „załagodzić (czyjś gniew)”")
+        XCTAssertFalse(options(placate).contains("udobruchać"))
+        XCTAssertEqual(options(onceInAWhile).filter { $0 == "od czasu do czasu" }.count, 1)
+        XCTAssertTrue(forRedundant.contains("nadmiarowy"))
+
+        let item = { (word: Word) -> WordMeaning in WordMeaning(word: word, meaning: word.meanings[0]) }
+        XCTAssertTrue(MeaningOptions.overlaps(item(superfluous), target: item(redundant)))
+        XCTAssertTrue(MeaningOptions.overlaps(item(redundant), target: item(superfluous)))
+        XCTAssertTrue(MeaningOptions.overlaps(item(regret), target: item(pity)))
+        XCTAssertFalse(MeaningOptions.overlaps(item(fillers[0]), target: item(redundant)))
+        XCTAssertTrue(MeaningOptions.comparisonKeys(["szkoda (ze)"]).contains("szkoda"))
+    }
+
     func testMakeSessionPerformanceOn5000Words() {
         var state = TestData.emptyState()
         state.words = (0..<5_000).map { index in

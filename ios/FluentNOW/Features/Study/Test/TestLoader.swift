@@ -33,26 +33,46 @@ enum TestLoader {
         return .success(built)
     }
 
-    /// Słowa z bazy: tematy ucznia i profilu, potem tematy z największą liczbą słów z pasma.
+    /// Słowa z bazy: tematy ucznia i profilu, potem tematy z największą liczbą słów z pasma,
+    /// oraz słownik rdzeniowy (FEEDBACK-7) — ogólne słowa z pasma, nie „z tematu ucznia”.
     private static func bankEntries(state: LearnerState, band: AssessmentBand, content: ContentLibrary) async -> [AssessmentBankEntry] {
-        guard let index = try? await content.topicIndex() else { return [] }
-        let ids: [String] = AssessmentBuilder.topicIDs(state: state, index: index, band: band)
-        var learnerTopics = Set(AssessmentBuilder.learnerTopicIDs(state))
-        if let profile = state.settings.profile {
-            for topicID in profile.topicWeights().keys {
-                learnerTopics.insert(topicID)
+        var entries: [AssessmentBankEntry] = []
+        if let index = try? await content.topicIndex() {
+            let ids: [String] = AssessmentBuilder.topicIDs(state: state, index: index, band: band)
+            var learnerTopics = Set(AssessmentBuilder.learnerTopicIDs(state))
+            if let profile = state.settings.profile {
+                for topicID in profile.topicWeights().keys {
+                    learnerTopics.insert(topicID)
+                }
+            }
+            for topicID in ids {
+                guard let topic = try? await content.topic(id: topicID) else { continue }
+                entries.append(contentsOf: AssessmentBuilder.bankEntries(topic: topic, band: band, fromLearnerTopics: learnerTopics.contains(topicID)))
             }
         }
+        entries.append(contentsOf: await coreBankEntries(band: band, content: content))
+        return entries
+    }
+
+    /// Wpisy słownika rdzeniowego z pasma: shardy najbogatsze w częste słowa z pasma (wybrane po
+    /// `dictionary-index.json`, bez dekodowania), wczytane równolegle w tle i cache'owane
+    /// w `ContentLibrary` — kolejny test startuje bez ponownego dekodowania.
+    private static func coreBankEntries(band: AssessmentBand, content: ContentLibrary) async -> [AssessmentBankEntry] {
+        let available: [String] = await content.coreFileIDs()
+        guard !available.isEmpty else { return [] }
+        let indexEntries: [DictionaryIndex.Entry] = await content.coreDictionaryEntries()
+        let ids: [String] = AssessmentBuilder.coreFileIDs(entries: indexEntries, band: band, available: available)
+        let files: [TopicFile] = await content.coreFiles(ids: ids)
         var entries: [AssessmentBankEntry] = []
-        for topicID in ids {
-            guard let topic = try? await content.topic(id: topicID) else { continue }
-            entries.append(contentsOf: AssessmentBuilder.bankEntries(topic: topic, band: band, fromLearnerTopics: learnerTopics.contains(topicID)))
+        for file in files {
+            entries.append(contentsOf: AssessmentBuilder.bankEntries(topic: file, band: band, fromLearnerTopics: false))
         }
         return entries
     }
 
     /// „Dodaj nowe słowa do nauki”: wpisy z bazy (po referencjach) dodane do słownika, każdy do
-    /// kolekcji swojego tematu. Zwraca liczbę dodanych znaczeń.
+    /// kolekcji swojego tematu (core: „Słownictwo ogólne”), z pełnego pliku — więc ze wszystkimi
+    /// przykładami wpisu, nie tylko z trzema zapisanymi w teście. Zwraca liczbę dodanych znaczeń.
     @MainActor
     static func addBankWords(references: [String], store: LearningStore, content: ContentLibrary) async -> Int {
         var byTopic: [String: [String]] = [:]

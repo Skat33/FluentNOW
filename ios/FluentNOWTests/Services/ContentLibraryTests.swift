@@ -149,6 +149,83 @@ final class ContentLibraryTests: XCTestCase {
         XCTAssertFalse(matches.contains { CoreVocabulary.isCoreFile($0.topicID) })
     }
 
+    /// Shardy core dekodowane równolegle, poza aktorem, z cache; indeks core bez dekodowania shardów.
+    func testCoreFilesLoadOnceAndCoreDictionaryEntries() async throws {
+        let library = try repositoryLibrary()
+        let ids = await library.coreFileIDs()
+        guard let firstID = ids.first else { throw XCTSkip("Brak plików core/") }
+        let wanted = Array(ids.prefix(3))
+        async let single: TopicFile = library.topic(id: firstID)
+        async let many: [TopicFile] = library.coreFiles(ids: wanted + ["core-c99", "airport"])
+        let (one, files) = try await (single, many)
+        XCTAssertEqual(files.map { $0.id }, wanted, "missing shards and topics are skipped")
+        XCTAssertEqual(files.first, one)
+        let again = await library.coreFiles(ids: wanted)
+        XCTAssertEqual(again, files)
+
+        let records = await library.coreDictionaryEntries()
+        XCTAssertFalse(records.isEmpty)
+        XCTAssertTrue(records.allSatisfy { $0.contentReference?.isCore == true })
+        let band = AssessmentBand(base: "B1")
+        let chosen = AssessmentBuilder.coreFileIDs(entries: records, band: band, available: ids)
+        XCTAssertEqual(chosen.count, min(AssessmentBuilder.coreFileLimit, ids.count))
+        XCTAssertTrue(chosen.allSatisfy { ids.contains($0) })
+    }
+
+    /// Polecane (FEEDBACK-7): wpisy core w puli rankingu, szczegóły z `core/`, dodanie ze wszystkimi przykładami.
+    func testCoreRecommendationsHaveDetailsAndAddAllExamples() async throws {
+        let library = try repositoryLibrary()
+        guard !(await library.coreFileIDs()).isEmpty else { throw XCTSkip("Brak plików core/") }
+        let catalog = UsefulWordsCatalog(rootURL: ServicesTestSupport.contentRoot)
+        let profile = UsefulWordProfile(level: "B1", targetLevel: "B2")
+        let result = await catalog.recommendations(profile: profile, limit: UsefulWordsPaging.poolLimit, seed: 1, content: library)
+        let core = result.suggestions.filter { $0.candidate.isCore }
+        XCTAssertFalse(core.isEmpty, "core is a source of recommendations")
+        for item in core {
+            let detail = try XCTUnwrap(result.details[item.id], item.id)
+            XCTAssertNotNil(detail.example, item.id)
+            XCTAssertNotEqual(detail.register, "slangowy")
+        }
+
+        let pick = try XCTUnwrap(core.first)
+        let entry = try await library.entry(reference: pick.id)
+        let store = await ServicesTestSupport.makeStore(initial: LearnerState())
+        let outcome = await UsefulWordsAdder.add([pick.candidate], store: store, content: library)
+        XCTAssertEqual(outcome.failed, 0)
+        XCTAssertEqual(outcome.addedMeanings, 1)
+        let added = await MainActor.run { () -> (collection: String, examples: Int)? in
+            for word in store.state.words {
+                if let meaning = word.meanings.first(where: { $0.contentRef == pick.id }) {
+                    return (collection: word.collection, examples: meaning.examples.count)
+                }
+            }
+            return nil
+        }
+        let found = try XCTUnwrap(added)
+        XCTAssertEqual(found.collection, CoreVocabulary.collectionName)
+        XCTAssertEqual(found.examples, entry.examples.count, "all 3–5 examples of the core entry")
+        XCTAssertGreaterThanOrEqual(found.examples, CoreVocabulary.exampleRange.lowerBound)
+    }
+
+    /// Test poziomujący (FEEDBACK-7): słowa z bazy pochodzą także ze słownika rdzeniowego, tylko z pasma.
+    func testLevelTestDrawsBaseWordsFromCore() async throws {
+        let library = try repositoryLibrary()
+        guard !(await library.coreFileIDs()).isEmpty else { throw XCTSkip("Brak plików core/") }
+        var state = LearnerState()
+        state.settings.profile = LearnerProfile(startLevel: "B1", levelSource: .selfAssessment)
+        let store = await ServicesTestSupport.makeStore(initial: state)
+        let built = await TestLoader.makeSession(store: store, content: library)
+        guard case .success(let session) = built else { return XCTFail("no test built") }
+        XCTAssertEqual(session.band.base, "B1")
+        let coreWords = session.bankWords.filter { (word: Word) -> Bool in
+            ContentReference(word.meanings.first?.contentRef ?? "")?.isCore == true
+        }
+        XCTAssertFalse(coreWords.isEmpty, "base words include core vocabulary")
+        XCTAssertTrue(coreWords.allSatisfy { $0.collection == CoreVocabulary.collectionName && $0.meanings.first?.topic == nil })
+        XCTAssertTrue(session.candidates.allSatisfy { ["A2", "B1", "B2"].contains($0.level) })
+        XCTAssertEqual(Set(session.slots), Set(AssessmentBlock.allCases), "every task type")
+    }
+
     func testAddingTopicThroughStore() async throws {
         let library = try repositoryLibrary()
         let index = try await library.topicIndex()

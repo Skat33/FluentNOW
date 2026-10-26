@@ -178,9 +178,104 @@ final class UsefulWordRecommenderTests: XCTestCase {
         XCTAssertEqual(result.first?.reasons.first, .learnedTopic("Lotnisko"), "a collection named like the topic counts as studying it")
     }
 
+    // MARK: Core vocabulary (FEEDBACK-7)
+
+    private func coreCandidate(_ term: String, _ level: String = "B1", _ frequency: SpokenFrequency = .common, shard: String = "core-c01") -> UsefulWordCandidate {
+        UsefulWordCandidate(
+            reference: "\(shard)/core.\(term.replacingOccurrences(of: " ", with: "-"))",
+            term: term,
+            translation: "ogólne \(term)",
+            level: level,
+            frequency: frequency,
+            topicID: shard,
+            topicName: CoreVocabulary.collectionName,
+            group: UsefulWordRecommender.coreGroup
+        )
+    }
+
+    func testCoreEntriesAreCandidates() {
+        let topics = TopicIndex(topics: [TopicSummary(id: "restaurant", namePl: "Restauracja", group: "food")])
+        let entries = [
+            DictionaryIndex.Entry(term: "attain", translation: "osiągnąć", level: "C1", frequency: "common", reference: "core-c06/core.attain"),
+            DictionaryIndex.Entry(term: "despite", translation: "pomimo", level: "B1", frequency: "very_common", reference: "core-c01/core.despite"),
+            DictionaryIndex.Entry(term: "thorough", translation: "dokładny", level: "B2", frequency: "less_common", reference: "core-c03/core.thorough"),
+            DictionaryIndex.Entry(term: "menu", translation: "menu", level: "A1", frequency: "very_common", reference: "restaurant/restaurant.menu"),
+            DictionaryIndex.Entry(term: "core", translation: "rdzeń", level: "B2", frequency: "common", reference: "core/core.core")
+        ]
+        let candidates = UsefulWordRecommender.candidates(entries: entries, topics: topics)
+        XCTAssertEqual(candidates.map { $0.reference }, ["core-c06/core.attain", "core-c01/core.despite", "restaurant/restaurant.menu"],
+                       "core shards are candidates although they are not topics; `core` alone is not a shard")
+        let attain = candidates[0]
+        XCTAssertTrue(attain.isCore)
+        XCTAssertEqual(attain.topicID, "core-c06")
+        XCTAssertEqual(attain.topicName, CoreVocabulary.collectionName)
+        XCTAssertEqual(attain.group, "basics")
+        XCTAssertFalse(candidates[2].isCore)
+        let withLessCommon = UsefulWordRecommender.candidates(entries: entries, topics: topics, includeLessCommon: true)
+        XCTAssertTrue(withLessCommon.contains { $0.reference == "core-c03/core.thorough" }, "less_common core words feed word families")
+    }
+
+    func testCoreFollowsTheLearnersLevelPlusMinusOne() {
+        let candidates = [
+            coreCandidate("basic", "A1"),
+            coreCandidate("simple", "A2"),
+            coreCandidate("despite", "B1"),
+            coreCandidate("ensure", "B2", .veryCommon),
+            coreCandidate("attain", "C1"),
+            coreCandidate("esoteric", "C2"),
+            candidate("menu", "A1", .common)
+        ]
+        let result = UsefulWordRecommender.recommend(candidates, profile: profile("B2"), options: UsefulWordOptions(limit: 10, maxPerTopic: 10))
+        let terms = Set(result.map { $0.candidate.term })
+        XCTAssertEqual(terms, ["despite", "ensure", "attain", "menu"], "core: B1–C1 for a B2 learner; topic words keep the old rule")
+        XCTAssertEqual(result.first?.candidate.term, "ensure", "the learner's level and the higher frequency first")
+        let newcomer = UsefulWordRecommender.recommend(candidates, profile: profile("A1"), options: UsefulWordOptions(limit: 10, maxPerTopic: 10))
+        XCTAssertEqual(Set(newcomer.map { $0.candidate.term }), ["basic", "simple", "menu"])
+    }
+
+    func testCoreSkipsOwnedWordsAndHasItsOwnReason() {
+        var state = TestData.emptyState()
+        var owned = TestData.freshWord("w1", "despite", "pomimo")
+        owned.collection = CoreVocabulary.collectionName
+        owned.meanings[0].contentRef = "core-c01/core.despite"
+        var ownedSense = TestData.freshWord("w2", "require", "wymagać")
+        ownedSense.collection = CoreVocabulary.collectionName
+        ownedSense.meanings[0].contentRef = "core-c02/core.require-2"
+        state.words = [owned, ownedSense]
+        let made = UsefulWordProfile.make(state, estimate: LevelEstimate(level: "B1", targetLevel: "B2", count: 40, confidence: .high))
+        XCTAssertTrue(made.topicCounts.isEmpty, "core shards are not topics the learner studies")
+
+        let candidates = [
+            coreCandidate("despite", "B1", .veryCommon),
+            coreCandidate("require", "B1", .veryCommon, shard: "core-c02"),
+            coreCandidate("whereas", "B1", .common),
+            coreCandidate("achieve", "B2", .common)
+        ]
+        let result = UsefulWordRecommender.recommend(candidates, profile: made, options: UsefulWordOptions(limit: 10))
+        XCTAssertEqual(result.map { $0.candidate.term }, ["whereas", "achieve"])
+        guard let first = result.first else { return XCTFail("no core suggestion") }
+        XCTAssertEqual(first.reasons, [.frequent(.common), .fitsLevel("B1"), .coreVocabulary])
+        XCTAssertFalse(first.reasons.contains(.learnedTopic(CoreVocabulary.collectionName)), "the collection „Słownictwo ogólne” is not a topic")
+        XCTAssertEqual(UsefulWordReason.coreVocabulary.textPl, "słownictwo ogólne, przydatne w wielu sytuacjach")
+    }
+
+    func testCoreWordFamilyIgnoresTheLowerLevelLimit() {
+        let families = WordFamilyIndex(translations: ["happy": ["szczęśliwy"], "happiness": ["szczęście"], "basic": ["podstawowy"]])
+        let candidates = [
+            coreCandidate("happiness", "A2"),
+            coreCandidate("basic", "A2"),
+            coreCandidate("attain", "C1")
+        ]
+        let learner = UsefulWordProfile(level: "C1", targetLevel: "C2", ownedKeys: ["happy"])
+        let result = UsefulWordRecommender.recommend(candidates, profile: learner, options: UsefulWordOptions(limit: 10), families: families)
+        XCTAssertEqual(Set(result.map { $0.candidate.term }), ["happiness", "attain"], "a family member may be below the core level window")
+        XCTAssertEqual(result.first(where: { $0.candidate.term == "happiness" })?.familySource, "happy")
+    }
+
     // MARK: Real content
 
-    /// Registers of the given references read from the real topic files (the app does the same lazily).
+    /// Registers of the given references read from the real topic and core files (the app does the
+    /// same lazily, `UsefulWordsCatalog`).
     private func registers(for references: [String], cache: inout [String: TopicFile], starter: [TopicEntry]) throws -> [String: String] {
         var result: [String: String] = [:]
         for raw in references {
@@ -190,7 +285,12 @@ final class UsefulWordRecommenderTests: XCTestCase {
                 continue
             }
             if cache[reference.file] == nil {
-                cache[reference.file] = try ContentDecoder.topicFile(from: TestData.contentData("topics/\(reference.file).json"))
+                let data = try TestData.contentData(reference.relativePath)
+                if reference.isCore {
+                    cache[reference.file] = try ContentDecoder.coreFile(from: data)
+                } else {
+                    cache[reference.file] = try ContentDecoder.topicFile(from: data)
+                }
             }
             if let found = cache[reference.file]?.entry(id: reference.entryID) {
                 result[raw] = found.entry.register
@@ -288,5 +388,28 @@ final class UsefulWordRecommenderTests: XCTestCase {
         let start = Date()
         _ = UsefulWordRecommender.recommend(candidates, profile: profile, options: UsefulWordOptions(limit: 60))
         XCTAssertLessThan(Date().timeIntervalSince(start), 2.0, "debug build margin; release target < 50 ms")
+    }
+
+    /// Core vocabulary is an important source of the real pool (the app ranks 72 for the pager).
+    func testRealCoreVocabularyIsRecommendedAtTheLearnersLevel() throws {
+        let index = try ContentDecoder.dictionaryIndex(from: TestData.contentData("dictionary-index.json"))
+        let topics = try ContentDecoder.topicIndex(from: TestData.contentData("topics/index.json"))
+        let candidates = UsefulWordRecommender.candidates(index: index, topics: topics, includeLessCommon: true)
+        let core = candidates.filter { $0.isCore }
+        guard core.count > 1000 else { throw XCTSkip("Słownik rdzeniowy jeszcze niekompletny") }
+        XCTAssertTrue(core.allSatisfy { $0.group == UsefulWordRecommender.coreGroup && $0.topicName == CoreVocabulary.collectionName })
+        let families = WordFamilyIndex(entries: index.entries)
+        for level in ["A2", "B1", "B2", "C1"] {
+            let learner = UsefulWordProfile(level: level, targetLevel: CEFR.next(after: level))
+            let result = UsefulWordRecommender.recommend(candidates, profile: learner, options: UsefulWordOptions(limit: 72, seed: 3), families: families)
+            let fromCore = result.filter { $0.candidate.isCore }
+            XCTAssertGreaterThanOrEqual(fromCore.count, 10, "core in the pool for \(level)")
+            let user = CEFR.index(of: level) ?? 0
+            for item in fromCore where item.familySource == nil {
+                let index = CEFR.index(of: item.candidate.level) ?? -1
+                XCTAssertTrue(index >= user - 1 && index <= user + 1, "\(item.candidate.term) \(item.candidate.level) for \(level)")
+                XCTAssertTrue(UsefulWordRecommender.isFrequent(item.candidate.frequency), item.candidate.term)
+            }
+        }
     }
 }

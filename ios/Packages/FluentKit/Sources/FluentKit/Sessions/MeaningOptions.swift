@@ -16,24 +16,24 @@ public enum MeaningOptions {
         answerIndex: PolishAnswerIndex = PolishAnswerIndex()
     ) -> [String] {
         let correctKey = TextNormalizer.normalize(meaning.translation)
-        // iOS improvement: a distractor that is itself an accepted answer of the target sense
-        // (e.g. make „zrobić, stworzyć” vs do „robić, wykonywać”) would make the question ambiguous.
-        let acceptedKeys = answerIndex.keys(term: word.en, translation: meaning.translation, saved: meaning.acceptedTranslations ?? [])
-        // …and the other way round: a distractor whose own accepted answers include the target's
-        // translation (back down „wycofać się” vs back out) is a second correct option.
-        let correctBaseKeys = PolishAnswerIndex.baseKeys(translation: meaning.translation)
+        // iOS improvement: a distractor must never be a second correct answer. Its translation and
+        // accepted answers (with reviewed variants and aspect pairs) must not share any key with the
+        // translation and accepted answers of the target — in both directions. Covers make
+        // „zrobić, stworzyć” vs do „robić, wykonywać”, back down „wycofać się” vs back out, and the
+        // near-synonyms of the core vocabulary (pity / shame „szkoda”, redundant / superfluous
+        // „zbędny”, appease / placate „udobruchać”) also when they only share an accepted answer.
+        let targetKeys = MeaningOptions.comparisonKeys(answerIndex.keys(term: word.en, translation: meaning.translation, saved: meaning.acceptedTranslations ?? []))
         var pool: [WordMeaning] = []
         var seenKeys = Set<String>()
         func consider(_ item: WordMeaning) {
             let key = TextNormalizer.normalize(item.meaning.translation)
             guard key != correctKey, !key.isEmpty, !seenKeys.contains(key) else { return }
-            guard PolishAnswerIndex.baseKeys(translation: item.meaning.translation).isDisjoint(with: acceptedKeys) else { return }
-            let candidateAccepted = answerIndex.keys(
+            let candidateKeys = MeaningOptions.comparisonKeys(answerIndex.keys(
                 term: item.word.en,
                 translation: item.meaning.translation,
                 saved: item.meaning.acceptedTranslations ?? []
-            )
-            guard correctBaseKeys.isDisjoint(with: candidateAccepted) else { return }
+            ))
+            guard candidateKeys.isDisjoint(with: targetKeys) else { return }
             seenKeys.insert(key)
             pool.append(item)
         }
@@ -70,5 +70,35 @@ public enum MeaningOptions {
             index -= 1
         }
         return selected
+    }
+
+    /// Answer keys plus their loose forms (`TextNormalizer.looseKeys`: without parenthetical notes
+    /// and inner punctuation), so „szkoda (że)” and „szkoda” count as the same answer.
+    public static func comparisonKeys(_ keys: Set<String>) -> Set<String> {
+        var result = keys
+        for key in keys {
+            // Letters, spaces, hyphens and apostrophes only: the loose form is the key itself.
+            let plain = key.allSatisfy { (character: Character) -> Bool in
+                character.isLetter || character.isNumber || character == " " || character == "-" || character == "'"
+            }
+            if plain { continue }
+            for loose in TextNormalizer.looseKeys(key, using: TextNormalizer.answerKey) {
+                result.insert(loose)
+            }
+        }
+        result.remove("")
+        return result
+    }
+
+    /// `true` when a distractor sense could be a correct answer for the target sense: any shared
+    /// key of translations and accepted answers, in either direction (see `options`).
+    public static func overlaps(
+        _ candidate: WordMeaning,
+        target: WordMeaning,
+        answerIndex: PolishAnswerIndex = PolishAnswerIndex()
+    ) -> Bool {
+        let targetKeys = comparisonKeys(answerIndex.keys(term: target.word.en, translation: target.meaning.translation, saved: target.meaning.acceptedTranslations ?? []))
+        let candidateKeys = comparisonKeys(answerIndex.keys(term: candidate.word.en, translation: candidate.meaning.translation, saved: candidate.meaning.acceptedTranslations ?? []))
+        return !candidateKeys.isDisjoint(with: targetKeys)
     }
 }

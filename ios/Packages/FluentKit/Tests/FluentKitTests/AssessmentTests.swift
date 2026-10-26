@@ -220,6 +220,126 @@ final class AssessmentTests: XCTestCase {
         XCTAssertNil(makeTest(stateAt("B1"), content: empty))
     }
 
+    // MARK: Core vocabulary (FEEDBACK-7)
+
+    /// A core shard (`core-cNN`) with `perLevel` entries per CEFR band category, 3 examples each.
+    private func coreShard(_ id: String, levels: [String], perLevel: Int, frequency: SpokenFrequency = .common) -> TopicFile {
+        let tag = id.replacingOccurrences(of: "core-c", with: "s")
+        let categories = levels.map { (level: String) -> TopicCategory in
+            let entries = (0..<perLevel).map { (index: Int) -> TopicEntry in
+                let term = "gen\(tag)\(level.lowercased())x\(index)"
+                return TopicEntry(
+                    id: "core.\(term)",
+                    term: term,
+                    pos: "czasownik",
+                    level: level,
+                    frequency: frequency,
+                    translation: "ogólne \(tag) \(level) \(index)",
+                    examples: [
+                        ExamplePair(en: "People \(term) more often than you think.", pl: "Ludzie robią to częściej, niż myślisz.", focusEn: term, focusPl: "robią"),
+                        ExamplePair(en: "Did you \(term) yesterday after work?", pl: "Czy zrobiłeś to wczoraj po pracy?", focusEn: term, focusPl: "zrobiłeś"),
+                        ExamplePair(en: "We do not \(term) on Sundays at all.", pl: "W niedziele w ogóle tego nie robimy.", focusEn: term, focusPl: "robimy")
+                    ]
+                )
+            }
+            return TopicCategory(id: "\(id).\(level.lowercased())", namePl: "Słownictwo ogólne \(level)", scenePl: "", entries: entries)
+        }
+        return TopicFile(id: id, namePl: CoreVocabulary.collectionName, nameEn: "Core vocabulary", group: CoreVocabulary.group, symbol: "character.book.closed", categories: categories)
+    }
+
+    func testCoreShardGivesGeneralBankWordsWithoutCategory() {
+        var shard = coreShard("core-c01", levels: ["A2", "B1", "C1"], perLevel: 3)
+        shard.categories[0].entries[0].frequency = .lessCommon
+        let entries = AssessmentBuilder.bankEntries(topic: shard, band: AssessmentBand(base: "B1"), fromLearnerTopics: false)
+        XCTAssertEqual(entries.count, 5, "A2 (frequent) and B1 only — C1 is outside the band, less_common is skipped")
+        XCTAssertTrue(entries.allSatisfy { ["A2", "B1"].contains($0.entry.level) })
+        XCTAssertTrue(entries.allSatisfy { $0.categoryName == nil && $0.scene == nil && !$0.fromLearnerTopics })
+        XCTAssertTrue(entries.allSatisfy { $0.topicName == CoreVocabulary.collectionName })
+        XCTAssertTrue(entries.allSatisfy { ContentReference($0.reference)?.isCore == true })
+        guard let first = entries.first else { return XCTFail("no core entries") }
+        let word = AssessmentBuilder.bankWord(first)
+        XCTAssertEqual(word.collection, CoreVocabulary.collectionName)
+        XCTAssertNil(word.meanings.first?.topic, "a CEFR band is not a situation")
+        XCTAssertEqual(word.meanings.first?.contentRef, first.reference)
+    }
+
+    func testCoreFilesRichestInTheBandAreLoaded() {
+        func record(_ shard: String, _ index: Int, level: String, frequency: String = "common") -> DictionaryIndex.Entry {
+            DictionaryIndex.Entry(term: "t\(shard)\(level)\(index)", translation: "p", level: level, frequency: frequency, reference: "\(shard)/core.t\(shard)\(level)\(index)")
+        }
+        var entries: [DictionaryIndex.Entry] = []
+        entries += (0..<40).map { record("core-c01", $0, level: "A1") }
+        entries += (0..<10).map { record("core-c01", $0, level: "A2") }
+        entries += (0..<30).map { record("core-c02", $0, level: "B1") }
+        entries += (0..<20).map { record("core-c02", $0, level: "A2", frequency: "very_common") }
+        entries += (0..<60).map { record("core-c03", $0, level: "B2") }
+        entries += (0..<70).map { record("core-c04", $0, level: "B1", frequency: "less_common") }
+        entries += (0..<90).map { record("travel", $0, level: "B1") }
+        let available = ["core-c01", "core-c02", "core-c03", "core-c04"]
+        let b1 = AssessmentBand(base: "B1")
+        XCTAssertEqual(AssessmentBuilder.coreFileIDs(entries: entries, band: b1, available: available, limit: 3), ["core-c02", "core-c01"],
+                       "stretch (B2) and less_common entries do not count; topic records are ignored")
+        XCTAssertEqual(AssessmentBuilder.coreFileIDs(entries: entries, band: b1, available: available, limit: 1), ["core-c02"])
+        XCTAssertEqual(AssessmentBuilder.coreFileIDs(entries: entries, band: AssessmentBand(base: "A1"), available: available), ["core-c01"])
+        XCTAssertEqual(AssessmentBuilder.coreFileIDs(entries: entries, band: AssessmentBand(base: "C1"), available: available), ["core-c03"])
+        XCTAssertEqual(AssessmentBuilder.coreFileIDs(entries: entries, band: b1, available: ["core-c01"]), ["core-c01"], "only shards that exist")
+        XCTAssertEqual(AssessmentBuilder.coreFileIDs(entries: [], band: b1, available: ["core-c03", "core-c01", "notes"], limit: 1), ["core-c01"],
+                       "without index records: the most frequent shards first")
+        XCTAssertTrue(AssessmentBuilder.coreFileIDs(entries: entries, band: b1, available: [], limit: 3).isEmpty)
+    }
+
+    func testCoreVocabularyAloneGivesAFullTestInTheBand() throws {
+        let state = stateAt("B1")
+        let shard = coreShard("core-c02", levels: ["A1", "A2", "B1", "B2", "C1"], perLevel: 25)
+        let bank = AssessmentBuilder.bankEntries(topic: shard, band: AssessmentBand(base: "B1"), fromLearnerTopics: false)
+        let content = AssessmentContent(
+            bankEntries: bank,
+            grammarPool: (0..<6).map { (index: Int) -> ProductionItem in grammarItem("\(index)") },
+            readings: readingBank(level: "B1")
+        )
+        let session = try XCTUnwrap(makeTest(state, content: content))
+        let expected: [AssessmentBlock] = AssessmentBlock.allCases.flatMap { (block: AssessmentBlock) -> [AssessmentBlock] in
+            Array(repeating: block, count: block.plannedCount)
+        }
+        XCTAssertEqual(session.slots, expected, "every task type, ~18 minutes")
+        XCTAssertTrue(session.candidates.allSatisfy { ["A2", "B1", "B2"].contains($0.level) }, "no A1 or C1 — no jumps")
+        XCTAssertLessThanOrEqual(session.candidates.filter { $0.level == "B2" }.count, AssessmentBuilder.maxBankStretch)
+        XCTAssertTrue(session.bankWords.allSatisfy { $0.collection == CoreVocabulary.collectionName })
+        XCTAssertTrue(session.bankWords.allSatisfy { ($0.meanings.first?.examples.count ?? 0) <= AssessmentBuilder.maxBankExamples })
+        XCTAssertGreaterThanOrEqual(session.plannedSeconds, 15 * 60)
+        XCTAssertLessThanOrEqual(session.plannedSeconds, 22 * 60)
+    }
+
+    /// The real core shards give a wide general pool on every level the test covers (A1–C1).
+    func testRealCoreVocabularyFillsEveryBand() throws {
+        let index = try ContentDecoder.dictionaryIndex(from: TestData.contentData("dictionary-index.json"))
+        let names = (try? FileManager.default.contentsOfDirectory(atPath: TestData.contentDirectory.appendingPathComponent(CoreVocabulary.directory).path)) ?? []
+        let available = CoreVocabulary.fileIDs(fromFileNames: names)
+        guard !available.isEmpty else { throw XCTSkip("Brak katalogu core/") }
+        var shards: [String: TopicFile] = [:]
+        for base in ["A1", "A2", "B1", "B2", "C1"] {
+            let band = AssessmentBand(base: base)
+            let ids = AssessmentBuilder.coreFileIDs(entries: index.entries, band: band, available: available)
+            XCTAssertEqual(ids.count, min(AssessmentBuilder.coreFileLimit, available.count), base)
+            var bank: [AssessmentBankEntry] = []
+            for id in ids {
+                if shards[id] == nil {
+                    shards[id] = try ContentDecoder.coreFile(from: TestData.contentData(CoreVocabulary.relativePath(file: id)))
+                }
+                if let shard = shards[id] {
+                    bank += AssessmentBuilder.bankEntries(topic: shard, band: band, fromLearnerTopics: false)
+                }
+            }
+            // On A1 the band is a single level (upper).
+            let tiers: [AssessmentTier] = band.lower == band.base ? [.upper] : [.lower, .upper]
+            for tier in tiers {
+                let count = bank.filter { band.tier(of: $0.entry.level) == tier }.count
+                XCTAssertGreaterThanOrEqual(count, AssessmentBuilder.maxBankPerTier, "\(base) \(tier)")
+            }
+            XCTAssertTrue(bank.allSatisfy { $0.entry.examples.count >= 3 }, base)
+        }
+    }
+
     // MARK: Answering
 
     func testAnsweringRecordsOwnWordsOnlyAndNeverTouchesTheVocabularySession() throws {

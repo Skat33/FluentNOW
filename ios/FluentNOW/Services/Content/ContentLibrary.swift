@@ -25,6 +25,10 @@ actor ContentLibrary {
     private var practiceCache: [String: PracticeContent] = [:]
     /// Identyfikatory plików `core/core-cNN.json` (słownik rdzeniowy).
     private var coreIDsCache: [String]?
+    /// Trwające dekodowania shardów core (~0,8 MB każdy) — poza aktorem, bez dublowania pracy.
+    private var coreLoads: [String: Task<TopicFile, Error>] = [:]
+    /// Rekordy słownika rdzeniowego z `dictionary-index.json`.
+    private var coreDictionaryCache: [DictionaryIndex.Entry]?
 
     private var searchIndex: ContentSearch?
     private var searchBuild: Task<[DictionaryIndex.Entry]?, Never>?
@@ -73,18 +77,89 @@ actor ContentLibrary {
     func topic(id: String) async throws -> TopicFile {
         if let generated = loadGenerated()[id] { return generated.topic }
         if let cached = topicCache[id] { return cached }
-        let isCore = CoreVocabulary.isCoreFile(id)
-        let path = isCore ? CoreVocabulary.relativePath(file: id) : "topics/\(id).json"
+        if CoreVocabulary.isCoreFile(id) {
+            return try await coreFile(id: id)
+        }
+        let path = "topics/\(id).json"
         guard Self.isSafeFileName(id) else { throw ContentError.unreadable(file: path) }
         let data = try read(path)
-        let topic: TopicFile
-        if isCore {
-            topic = try ContentDecoder.coreFile(from: data)
-        } else {
-            topic = try ContentDecoder.topicFile(from: data)
-        }
+        let topic = try ContentDecoder.topicFile(from: data)
         topicCache[id] = topic
         return topic
+    }
+
+    /// Shardy słownika rdzeniowego (`core-cNN`) — dekodowane **równolegle** i poza aktorem
+    /// (inne zapytania do treści nie czekają), potem w cache. Pomija pliki, których nie da się
+    /// wczytać; kolejność jak w `ids`.
+    func coreFiles(ids: [String]) async -> [TopicFile] {
+        var pending: [(id: String, task: Task<TopicFile, Error>)] = []
+        for id in ids where CoreVocabulary.isCoreFile(id) && topicCache[id] == nil {
+            if let task = coreLoadTask(id: id) {
+                pending.append((id: id, task: task))
+            }
+        }
+        for item in pending {
+            do {
+                let file = try await item.task.value
+                finishCoreLoad(id: item.id, file: file)
+            } catch {
+                coreLoads[item.id] = nil
+                let message = "\(CoreVocabulary.relativePath(file: item.id)): \(Self.describe(error))"
+                Self.log.error("\(message, privacy: .public)")
+            }
+        }
+        return ids.compactMap { (id: String) -> TopicFile? in topicCache[id] }
+    }
+
+    /// Jeden shard core (z cache albo dekodowany w tle).
+    private func coreFile(id: String) async throws -> TopicFile {
+        if let cached = topicCache[id] { return cached }
+        guard let task = coreLoadTask(id: id) else {
+            throw ContentError.unreadable(file: CoreVocabulary.relativePath(file: id))
+        }
+        do {
+            let file = try await task.value
+            finishCoreLoad(id: id, file: file)
+            return file
+        } catch {
+            coreLoads[id] = nil
+            throw error
+        }
+    }
+
+    /// Trwające albo nowe dekodowanie shardu (`nil` — brak katalogu treści).
+    private func coreLoadTask(id: String) -> Task<TopicFile, Error>? {
+        if let running = coreLoads[id] { return running }
+        let path = CoreVocabulary.relativePath(file: id)
+        guard Self.isSafeFileName(id), let url = fileURL(path) else { return nil }
+        let task = Task.detached(priority: .userInitiated) { () throws -> TopicFile in
+            let data: Data
+            do {
+                data = try Data(contentsOf: url, options: [.mappedIfSafe])
+            } catch {
+                throw ContentError.unreadable(file: path)
+            }
+            return try ContentDecoder.coreFile(from: data)
+        }
+        coreLoads[id] = task
+        return task
+    }
+
+    private func finishCoreLoad(id: String, file: TopicFile) {
+        if topicCache[id] == nil { topicCache[id] = file }
+        coreLoads[id] = nil
+    }
+
+    /// Rekordy słownika rdzeniowego z `dictionary-index.json` (poziom, częstość, referencja) —
+    /// bez dekodowania shardów. Pusta lista, gdy indeksu nie ma.
+    func coreDictionaryEntries() async -> [DictionaryIndex.Entry] {
+        if let coreDictionaryCache { return coreDictionaryCache }
+        _ = await readySearchIndex()
+        if let coreDictionaryCache { return coreDictionaryCache }
+        guard let base = baseDictionary else { return [] }
+        let entries = base.filter { (entry: DictionaryIndex.Entry) -> Bool in entry.contentReference?.isCore == true }
+        coreDictionaryCache = entries
+        return entries
     }
 
     /// Wpis po referencji `plik/id`, np. `airport/airport.boarding-pass`, `starter/starter.do`

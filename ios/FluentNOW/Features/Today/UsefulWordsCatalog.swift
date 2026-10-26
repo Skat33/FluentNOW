@@ -26,6 +26,10 @@ struct UsefulWordsResult: Sendable, Hashable {
 /// a słowa slangowe / specjalistyczne spoza tematów użytkownika odpadają. Szczegóły zostają w cache,
 /// więc kolejne przeliczenia są natychmiastowe. Pliki tematów czytane są bezpośrednio (bez cache
 /// `ContentLibrary`), żeby nie trzymać w pamięci całych tematów tylko dla rejestru.
+///
+/// Słownik rdzeniowy (FEEDBACK-7): kandydaci core przychodzą z `dictionary-index.json` (bez
+/// dekodowania shardów); szczegóły czytane są dopiero dla wyników rankingu, z `core/core-cNN.json`
+/// (`ContentReference.relativePath` + `ContentDecoder.coreFile`), pliki równolegle w tle.
 actor UsefulWordsCatalog {
     static let shared = UsefulWordsCatalog()
 
@@ -55,6 +59,11 @@ actor UsefulWordsCatalog {
 
     init(bundle: Bundle = .main) {
         root = bundle.url(forResource: "Content", withExtension: nil)
+    }
+
+    /// Treść z dowolnego katalogu (testy).
+    init(rootURL: URL?) {
+        root = rootURL
     }
 
     /// Polecane słówka dla profilu. `seed` = numer tygodnia (lista zmienia się co tydzień).
@@ -98,7 +107,7 @@ actor UsefulWordsCatalog {
         item.reasons.contains { (reason: UsefulWordReason) -> Bool in
             switch reason {
             case .learnedTopic, .interest: return true
-            case .frequent, .fitsLevel, .nextLevel, .everyday, .wordFamily: return false
+            case .frequent, .fitsLevel, .nextLevel, .everyday, .wordFamily, .coreVocabulary: return false
             }
         }
     }
@@ -146,36 +155,58 @@ actor UsefulWordsCatalog {
             byFile[reference.file, default: []].append(reference.entryID)
         }
         let request = byFile
-        let loaded = await Task.detached(priority: .utility) { () -> [String: UsefulWordDetail] in
-            UsefulWordsCatalog.readDetails(root: root, byFile: request)
+        let loaded = await Task.detached(priority: .utility) { () async -> [String: UsefulWordDetail] in
+            await UsefulWordsCatalog.readDetails(root: root, byFile: request)
         }.value
+        // Shard core daje szczegóły wszystkich swoich wpisów — zostają w cache na kolejne przebiegi.
+        for (reference, detail) in loaded where details[reference] == nil {
+            details[reference] = detail
+        }
         for raw in references where details[raw] == nil {
-            if let detail = loaded[raw] {
-                details[raw] = detail
-            } else {
-                unavailable.insert(raw)
-            }
+            unavailable.insert(raw)
         }
     }
 
-    private static func readDetails(root: URL, byFile: [String: [String]]) -> [String: UsefulWordDetail] {
+    /// Szczegóły wpisów z wielu plików — każdy plik dekodowany równolegle, poza aktorem.
+    private static func readDetails(root: URL, byFile: [String: [String]]) async -> [String: UsefulWordDetail] {
+        await withTaskGroup(of: [String: UsefulWordDetail].self, returning: [String: UsefulWordDetail].self) { (group: inout TaskGroup<[String: UsefulWordDetail]>) async -> [String: UsefulWordDetail] in
+            for (file, ids) in byFile {
+                let wanted = Set(ids)
+                group.addTask { () -> [String: UsefulWordDetail] in
+                    UsefulWordsCatalog.readFileDetails(root: root, file: file, wanted: wanted)
+                }
+            }
+            var result: [String: UsefulWordDetail] = [:]
+            for await partial in group {
+                result.merge(partial) { (current: UsefulWordDetail, _: UsefulWordDetail) -> UsefulWordDetail in current }
+            }
+            return result
+        }
+    }
+
+    /// Szczegóły wpisów jednego pliku: `starter-words.json`, `topics/<id>.json` albo — dla
+    /// słownika rdzeniowego — `core/core-cNN.json` (ścieżka z `ContentReference.relativePath`).
+    /// Shard core (~0,8 MB) zwraca szczegóły **wszystkich** swoich wpisów (są małe), żeby kolejne
+    /// przebiegi rankingu i „Odśwież propozycje” nie dekodowały go ponownie.
+    private static func readFileDetails(root: URL, file: String, wanted: Set<String>) -> [String: UsefulWordDetail] {
+        let location = ContentReference(file: file, entryID: wanted.first ?? "")
+        guard let data = try? Data(contentsOf: root.appendingPathComponent(location.relativePath), options: [.mappedIfSafe]) else { return [:] }
+        let entries: [TopicEntry]
+        if location.isStarter {
+            guard let starter = try? ContentDecoder.starterWords(from: data) else { return [:] }
+            entries = starter.words
+        } else if location.isCore {
+            guard let core = try? ContentDecoder.coreFile(from: data) else { return [:] }
+            entries = core.allEntries
+        } else {
+            guard let topic = try? ContentDecoder.topicFile(from: data) else { return [:] }
+            entries = topic.allEntries
+        }
+        let keepAll = location.isCore
         var result: [String: UsefulWordDetail] = [:]
-        for file in byFile.keys.sorted() {
-            let wanted = Set(byFile[file] ?? [])
-            let entries: [TopicEntry]
-            if file == "starter" {
-                guard let data = try? Data(contentsOf: root.appendingPathComponent("starter-words.json")),
-                      let starter = try? ContentDecoder.starterWords(from: data) else { continue }
-                entries = starter.words
-            } else {
-                guard let data = try? Data(contentsOf: root.appendingPathComponent("topics/\(file).json")),
-                      let topic = try? ContentDecoder.topicFile(from: data) else { continue }
-                entries = topic.allEntries
-            }
-            for entry in entries where wanted.contains(entry.id) {
-                let reference = ContentReference(file: file, entryID: entry.id).rawValue
-                result[reference] = UsefulWordDetail(register: entry.register, pos: entry.pos, ipa: entry.ipa, example: entry.examples.first)
-            }
+        for entry in entries where keepAll || wanted.contains(entry.id) {
+            let reference = ContentReference(file: file, entryID: entry.id).rawValue
+            result[reference] = UsefulWordDetail(register: entry.register, pos: entry.pos, ipa: entry.ipa, example: entry.examples.first)
         }
         return result
     }
@@ -200,8 +231,10 @@ struct UsefulWordsAddOutcome: Equatable {
     var failed: Int
 }
 
-/// Dodawanie polecanych słówek: wpisy tematów przez `VocabularyMerger.addTopicEntries`
-/// (kolekcja = nazwa tematu, jak przy dodawaniu tematu), słowa startowe przez `mergeSuggestions`.
+/// Dodawanie polecanych słówek: wpisy tematów i słownika rdzeniowego przez
+/// `VocabularyMerger.addTopicEntries` (kolekcja = nazwa tematu, dla core „Słownictwo ogólne”;
+/// z pełnego pliku, więc znaczenie dostaje **wszystkie** przykłady wpisu — core 3–5), słowa
+/// startowe przez `mergeSuggestions`.
 /// Wszystko w jednej zmianie `store.update(.bulk)`; znane znaczenia zachowują postęp.
 @MainActor
 enum UsefulWordsAdder {
@@ -235,6 +268,11 @@ enum UsefulWordsAdder {
                     failed += 1
                     continue
                 }
+            }
+            // Wpis, którego nie ma w pliku (np. przeniesiony do innego sharda core), to błąd — nie cisza.
+            guard topicFiles[reference.file]?.entry(id: reference.entryID) != nil else {
+                failed += 1
+                continue
             }
             entryIDs[reference.file, default: []].append(reference.entryID)
         }

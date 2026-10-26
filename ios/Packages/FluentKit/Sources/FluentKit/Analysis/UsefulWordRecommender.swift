@@ -18,6 +18,9 @@ public struct UsefulWordCandidate: Sendable, Hashable, Identifiable {
     public var group: String
     public var id: String { reference }
 
+    /// `true` for an entry of the core vocabulary (`topicID` = shard `core-cNN`, CONTENT-SCHEMA §6).
+    public var isCore: Bool { CoreVocabulary.isCoreFile(topicID) }
+
     public init(reference: String, term: String, key: String? = nil, translation: String, level: String, frequency: SpokenFrequency, topicID: String, topicName: String, group: String) {
         self.reference = reference
         self.term = term
@@ -46,6 +49,8 @@ public enum UsefulWordReason: Sendable, Hashable {
     case interest(String)
     /// From the word family of a word the learner has (that word's key) — H4, e.g. decide → decision.
     case wordFamily(String)
+    /// From the core vocabulary — general English useful in many situations (FEEDBACK-7).
+    case coreVocabulary
 
     /// Polish text, e.g. „z tematu Restauracja, którego się uczysz”.
     public var textPl: String {
@@ -68,6 +73,8 @@ public enum UsefulWordReason: Sendable, Hashable {
             return "z tematu \(name), który pasuje do Twoich celów"
         case .wordFamily(let word):
             return Self.wordFamilyPrefixPl + word + ", które znasz"
+        case .coreVocabulary:
+            return "słownictwo ogólne, przydatne w wielu sytuacjach"
         }
     }
 
@@ -167,7 +174,8 @@ public struct UsefulWordProfile: Sendable, Hashable {
             let collection = TextNormalizer.searchKey(word.collection)
             if !collection.isEmpty { collections.insert(collection) }
             for meaning in word.meanings {
-                guard let raw = meaning.contentRef, let reference = ContentReference(raw), !reference.isStarter else { continue }
+                // Starter and core are not topics (core shards are frequency bands).
+                guard let raw = meaning.contentRef, let reference = ContentReference(raw), !reference.isStarter, !reference.isCore else { continue }
                 counts[reference.file, default: 0] += 1
             }
         }
@@ -235,6 +243,12 @@ public struct UsefulWordOptions: Sendable, Hashable {
 /// Word families (FEEDBACK-3 H4, `WordFamilyIndex`): relatives of the learner's words
 /// (decide → decision) are preferred with the reason „Z rodziny słowa decide, które znasz”;
 /// they may also be `less_common` and one level above the target; capped per list and per word.
+///
+/// Core vocabulary (FEEDBACK-7, `CoreVocabulary`): entries of `core/core-cNN.json` are candidates
+/// of the everyday group `basics` named „Słownictwo ogólne” (each shard counts as a „topic” for
+/// the variety caps). Outside word families they must fit the learner's level ±1 (from one level
+/// below the learner up to the target) — no A1 basics for a B2 learner — and they never count as
+/// a topic the learner studies.
 public enum UsefulWordRecommender {
     /// Everyday topic groups (podstawy, codzienność, komunikacja, jedzenie, podróże, zdrowie, zakupy).
     public static let everydayGroups: Set<String> = ["basics", "daily", "communication", "food", "travel", "health", "money"]
@@ -242,6 +256,10 @@ public enum UsefulWordRecommender {
     public static let starterTopicName = "Podstawowe słowa"
     /// Group of starter entries.
     public static let starterGroup = "basics"
+    /// Group of core vocabulary entries (an everyday group).
+    public static let coreGroup = "basics"
+    /// Core entries (outside word families) may be at most this many levels below the learner.
+    public static let coreLevelsBelow = 1
 
     // MARK: Candidates
 
@@ -249,7 +267,8 @@ public enum UsefulWordRecommender {
         candidates(entries: index.entries, topics: topics, includeLessCommon: includeLessCommon)
     }
 
-    /// Frequent entries with a valid level and a known topic (topics missing from the index are skipped).
+    /// Frequent entries with a valid level and a known topic (topics missing from the index are skipped),
+    /// starter words and core vocabulary entries (`core-cNN/core.<term>`, never in the topic index).
     /// `includeLessCommon`: also `less_common` entries — `recommend` uses them only as word-family
     /// suggestions (H4), never as plain recommendations.
     public static func candidates(entries: [DictionaryIndex.Entry], topics: TopicIndex, includeLessCommon: Bool = false) -> [UsefulWordCandidate] {
@@ -269,6 +288,9 @@ public enum UsefulWordRecommender {
             if reference.isStarter {
                 name = starterTopicName
                 group = starterGroup
+            } else if reference.isCore {
+                name = CoreVocabulary.collectionName
+                group = coreGroup
             } else if let summary = summaries[reference.file] {
                 name = summary.namePl
                 group = summary.group
@@ -331,8 +353,11 @@ public enum UsefulWordRecommender {
             sources = [:]
         }
 
+        let coreMinIndex = max(0, userIndex - max(0, coreLevelsBelow))
         var learnedCache: [String: Int] = [:]
         func learnedCount(_ candidate: UsefulWordCandidate) -> Int {
+            // Core is not a topic: its collection „Słownictwo ogólne” never counts as studying it.
+            if candidate.isCore { return 0 }
             if let cached = learnedCache[candidate.topicID] { return cached }
             var value = profile.topicCounts[candidate.topicID] ?? 0
             if value == 0 && profile.collectionKeys.contains(TextNormalizer.searchKey(candidate.topicName)) {
@@ -352,6 +377,8 @@ public enum UsefulWordRecommender {
                   !profile.ownedKeys.contains(candidate.key),
                   !profile.ownedReferences.contains(candidate.reference),
                   !options.excludedReferences.contains(candidate.reference) else { continue }
+            // Core outside word families: the learner's level ±1 (not far below the learner).
+            if family == nil && candidate.isCore && levelIndex < coreMinIndex { continue }
             let learned = learnedCount(candidate)
             // A topic chosen by goals/interests counts like a learned one for the register rule
             // (e.g. „praca” allows office vocabulary marked as specialist).
@@ -477,7 +504,7 @@ public enum UsefulWordRecommender {
         }
         if everydayGroups.contains(candidate.group) {
             score += 12
-            if learned == 0 { reasons.append(.everyday) }
+            if learned == 0 { reasons.append(candidate.isCore ? .coreVocabulary : .everyday) }
         }
         return UsefulWordSuggestion(candidate: candidate, score: score, reasons: reasons)
     }

@@ -109,12 +109,13 @@ public enum AssessmentBuilder {
         return ordered
     }
 
-    /// Topics of the learner's own words (content references), most words first.
+    /// Topics of the learner's own words (content references), most words first. Starter and core
+    /// vocabulary shards are not topics.
     public static func learnerTopicIDs(_ state: LearnerState) -> [String] {
         var counts: [String: Int] = [:]
         for word in state.words where !word.archived {
             for meaning in word.meanings {
-                guard let raw = meaning.contentRef, let reference = ContentReference(raw), !reference.isStarter else { continue }
+                guard let raw = meaning.contentRef, let reference = ContentReference(raw), !reference.isStarter, !reference.isCore else { continue }
                 counts[reference.file, default: 0] += 1
             }
         }
@@ -126,8 +127,11 @@ public enum AssessmentBuilder {
     }
 
     /// Entries of a topic that may appear in the test: level in the band (or one above), frequent
-    /// in spoken English, with at least one example.
+    /// in spoken English, with at least one example. Also for a core vocabulary shard
+    /// (`CoreVocabulary`): its categories are CEFR bands, not situations, so core words get no
+    /// category nor scene (like `VocabularyMerger.addTopicEntries`).
     public static func bankEntries(topic: TopicFile, band: AssessmentBand, fromLearnerTopics: Bool) -> [AssessmentBankEntry] {
+        let isCore = CoreVocabulary.isCore(topic)
         var result: [AssessmentBankEntry] = []
         for category in topic.categories {
             for entry in category.entries where isUsable(entry, band: band) {
@@ -135,13 +139,44 @@ public enum AssessmentBuilder {
                     entry: entry,
                     reference: ContentReference(file: topic.id, entryID: entry.id).rawValue,
                     topicName: topic.namePl,
-                    categoryName: category.namePl.isEmpty ? nil : category.namePl,
-                    scene: category.scenePl.isEmpty ? nil : category.scenePl,
+                    categoryName: isCore || category.namePl.isEmpty ? nil : category.namePl,
+                    scene: isCore || category.scenePl.isEmpty ? nil : category.scenePl,
                     fromLearnerTopics: fromLearnerTopics
                 ))
             }
         }
         return result
+    }
+
+    // MARK: Core vocabulary
+
+    /// Core shards loaded for a test (each ~500 entries; three give hundreds of words per tier).
+    public static let coreFileLimit = 3
+
+    /// Core shards (`core-cNN`) to load for base words: those with the most frequent entries of the
+    /// band's lower and upper tier according to the dictionary index (no shard is decoded for
+    /// this), most first; shards without such entries are skipped. Without index records for the
+    /// available shards: the first `limit` shards (they hold the most frequent words).
+    public static func coreFileIDs(entries: [DictionaryIndex.Entry], band: AssessmentBand, available: [String], limit: Int = coreFileLimit) -> [String] {
+        let files = available.filter { (id: String) -> Bool in CoreVocabulary.isCoreFile(id) }
+        guard limit > 0, !files.isEmpty else { return [] }
+        let known = Set(files)
+        var counts: [String: Int] = [:]
+        var indexed = Set<String>()
+        for entry in entries {
+            guard let reference = entry.contentReference, reference.isCore, known.contains(reference.file) else { continue }
+            indexed.insert(reference.file)
+            guard let tier = band.tier(of: entry.level), tier != .stretch,
+                  let frequency = entry.spokenFrequency, frequency == .veryCommon || frequency == .common else { continue }
+            counts[reference.file, default: 0] += 1
+        }
+        guard !indexed.isEmpty else { return Array(files.sorted().prefix(limit)) }
+        let ranked = counts.keys.sorted { (a: String, b: String) -> Bool in
+            let ca = counts[a] ?? 0
+            let cb = counts[b] ?? 0
+            return ca != cb ? ca > cb : a < b
+        }
+        return Array(ranked.prefix(limit))
     }
 
     static func isUsable(_ entry: TopicEntry, band: AssessmentBand) -> Bool {
