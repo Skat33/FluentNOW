@@ -50,6 +50,10 @@ public struct SenseSuggestion: Codable, Sendable, Hashable {
     public var acceptedAnswers: [String]
     /// iOS addition: built-in content reference (`<file>/<entry id>`).
     public var contentRef: String?
+    /// iOS addition (FEEDBACK-8 M3): references of other built-in entries grouped into this
+    /// sense (the same meaning in several topics / core) — kept on the created `Meaning`, so the
+    /// grouped entries count as owned. `nil` when nothing was grouped.
+    public var mergedContentRefs: [String]?
 
     public init(
         needsDetails: Bool? = nil,
@@ -69,8 +73,10 @@ public struct SenseSuggestion: Codable, Sendable, Hashable {
         examples: [ExamplePair] = [],
         acceptedTranslations: [String]? = nil,
         acceptedAnswers: [String] = [],
-        contentRef: String? = nil
+        contentRef: String? = nil,
+        mergedContentRefs: [String]? = nil
     ) {
+        self.mergedContentRefs = mergedContentRefs
         self.needsDetails = needsDetails
         self.topic = topic
         self.scene = scene
@@ -94,6 +100,7 @@ public struct SenseSuggestion: Codable, Sendable, Hashable {
     enum CodingKeys: String, CodingKey {
         case needsDetails, topic, scene, translation, definition, pos, level, levelConfidence, levelReason
         case spokenFrequency, context, register, natural, collection, examples, acceptedTranslations, acceptedAnswers, contentRef
+        case mergedContentRefs
     }
 
     public init(from decoder: Decoder) throws {
@@ -116,6 +123,7 @@ public struct SenseSuggestion: Codable, Sendable, Hashable {
         acceptedTranslations = c.lenientOptionalStrings(.acceptedTranslations)
         acceptedAnswers = c.lenientStrings(.acceptedAnswers)
         contentRef = c.lenientOptionalString(.contentRef)
+        mergedContentRefs = c.lenientOptionalStrings(.mergedContentRefs)
     }
 }
 

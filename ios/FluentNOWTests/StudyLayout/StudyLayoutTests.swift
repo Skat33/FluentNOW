@@ -53,8 +53,47 @@ final class StudyLayoutTests: XCTestCase {
         XCTAssertEqual(StudyHomeView.activity(for: .flashcards), .flashcards)
         XCTAssertEqual(StudyHomeView.activity(for: .reading), .reading)
         XCTAssertEqual(StudyHomeView.activity(for: .languageMix), .practice(.mixed))
-        XCTAssertNil(StudyHomeView.activity(for: .mixed), "the daily mix starts directly")
-        XCTAssertEqual(StudyMoreActivity.all.count, 5)
+        XCTAssertEqual(StudyHomeView.activity(for: .mixed), .vocabulary(.mixed), "the daily mix has its own tile (FEEDBACK-8 M2)")
+        XCTAssertEqual(StudyHomeView.activity(for: .mistakes), .vocabulary(.mistakes))
+        XCTAssertNil(StudyHomeView.activity(for: .pictures), "pictures — the „W budowie” tile")
+    }
+
+    // MARK: FEEDBACK-8 M2 — jedna siatka „Ćwiczenia”
+
+    func testOneGridHasEveryActivityOnce() {
+        let activities = StudyExerciseGroup.allActivities
+        XCTAssertEqual(Set(activities).count, activities.count, "no duplicates")
+        for type in SingleTypeSession.types {
+            XCTAssertTrue(activities.contains(.singleType(type)), "\(type)")
+        }
+        for mode in [StudyMode.mixed, .mistakes, .pairs] {
+            XCTAssertTrue(activities.contains(.vocabulary(mode)), "\(mode)")
+        }
+        for activity in [StudyActivity.reading, .practice(.grammar), .practice(.idioms), .practice(.mixed), .production] {
+            XCTAssertTrue(activities.contains(activity), "\(activity)")
+        }
+        XCTAssertFalse(activities.contains(.flashcards), "flashcards keep their own card at the top")
+        XCTAssertTrue(StudyExerciseGroup.all.contains { $0.tiles.contains(.pictures) }, "the „W budowie” tile stays")
+    }
+
+    func testPausedDailyMixPromptsOnlyOnItsTile() {
+        var state = LearnerState()
+        state.session = VocabSession(tasks: [VocabTask(wordId: "a", meaningId: "a.m1", type: .meaning, example: 0)], minutes: 5, mode: StudyMode.mistakes.rawValue)
+        XCTAssertEqual(StudyResumePrompt.make(for: .vocabulary(.mistakes), state: state, pausedDeck: nil)?.title, "Masz przerwane ćwiczenie „Tryb pomyłek”")
+        XCTAssertNil(StudyResumePrompt.make(for: .vocabulary(.mixed), state: state, pausedDeck: nil))
+        XCTAssertNil(StudyResumePrompt.make(for: .singleType(.meaning), state: state, pausedDeck: nil))
+        state.session?.mode = "exercise-meaning"
+        XCTAssertNil(StudyResumePrompt.make(for: .vocabulary(.mixed), state: state, pausedDeck: nil), "a one-type session is not the daily mix")
+    }
+
+    func testTileAvailabilityOnlyForVocabularyTiles() {
+        let availability = StudyExerciseAvailability(types: SingleTypeAvailability(counts: [.cloze: 4]), modes: [.mistakes: 0, .mixed: 7])
+        XCTAssertEqual(availability.count(for: .activity(.singleType(.cloze))), 4)
+        XCTAssertEqual(availability.count(for: .activity(.singleType(.recall))), 0)
+        XCTAssertEqual(availability.count(for: .activity(.vocabulary(.mixed))), 7)
+        XCTAssertEqual(availability.count(for: .activity(.vocabulary(.pairs))), 0)
+        XCTAssertNil(availability.count(for: .activity(.reading)))
+        XCTAssertNil(availability.count(for: .pictures))
     }
 
     // MARK: K1 — przerwana talia fiszek
@@ -129,27 +168,51 @@ final class StudyLayoutTests: XCTestCase {
             ReadingToken(text: "board", wordId: "w1"),
             ReadingToken(text: " the "),
             ReadingToken(text: "plane", glossaryIndex: 0),
+            ReadingToken(text: " at the "),
+            ReadingToken(text: "gate", glossaryIndex: 1),
             ReadingToken(text: ".")
         ]
-        let display = ReadingHighlightStyle.attributed(tokens: tokens, paragraph: 0, evidence: [0..<5])
-        let links = ReadingHighlightStyle.attributed(tokens: tokens, paragraph: 0, evidence: [], layer: .links)
-        XCTAssertEqual(String(display.characters), "I board the plane.")
+        let glossary = [
+            ReadingGlossaryEntry(form: "plane", lemma: "plane", translation: "samolot"),
+            ReadingGlossaryEntry(form: "gate", lemma: "gate", translation: "wyjście", ref: "airport/airport.gate")
+        ]
+        let display = ReadingHighlightStyle.attributed(tokens: tokens, paragraph: 0, evidence: [0..<5], glossary: glossary)
+        let links = ReadingHighlightStyle.attributed(tokens: tokens, paragraph: 0, evidence: [], layer: .links, glossary: glossary)
+        XCTAssertEqual(String(display.characters), "I board the plane at the gate.")
         XCTAssertEqual(String(links.characters), String(display.characters), "both layers wrap the same way")
         XCTAssertTrue(display.runs.allSatisfy { $0.link == nil }, "colours of the display layer are not repainted with the tint")
         let linked = links.runs.compactMap { (run: AttributedString.Runs.Run) -> String? in
             run.link == nil ? nil : String(links[run.range].characters)
         }
-        XCTAssertEqual(linked, ["board", "plane"])
+        XCTAssertEqual(linked, ["board", "plane", "gate"])
         for layer in [display, links] {
-            let bold = layer.runs.compactMap { (run: AttributedString.Runs.Run) -> String? in
-                run.inlinePresentationIntent == .stronglyEmphasized ? String(layer[run.range].characters) : nil
+            let styled = layer.runs.compactMap { (run: AttributedString.Runs.Run) -> String? in
+                run[AttributeScopes.SwiftUIAttributes.FontAttribute.self] == nil ? nil : String(layer[run.range].characters)
             }
-            XCTAssertEqual(bold, ["plane"], "useful words are bold in both layers (same line breaks)")
+            XCTAssertEqual(styled, ["board", "plane", "gate"], "highlighted words use the same font in both layers (same line breaks)")
+            XCTAssertTrue(layer.runs.allSatisfy { $0[AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute.self] == nil }, "no underlines (FEEDBACK-8 M1)")
         }
+        let filled = display.runs.compactMap { (run: AttributedString.Runs.Run) -> String? in
+            run[AttributeScopes.SwiftUIAttributes.BackgroundColorAttribute.self] == nil ? nil : String(display[run.range].characters)
+        }
+        XCTAssertEqual(filled.joined(), "I boa", "only the evidence marker has a background")
     }
 
-    func testLegendDescribesBothKinds() {
-        XCTAssertTrue(ReadingHighlightStyle.legendText(.useful).contains("pogrubione"))
+    func testHighlightKinds() {
+        let glossary = [
+            ReadingGlossaryEntry(form: "plane", lemma: "plane", translation: "samolot"),
+            ReadingGlossaryEntry(form: "gate", lemma: "gate", translation: "wyjście", ref: "airport/airport.gate")
+        ]
+        XCTAssertEqual(ReadingHighlightStyle.kind(of: ReadingToken(text: "plane", glossaryIndex: 0), glossary: glossary), .glossary)
+        XCTAssertEqual(ReadingHighlightStyle.kind(of: ReadingToken(text: "gate", glossaryIndex: 1), glossary: glossary), .recommended)
+        XCTAssertEqual(ReadingHighlightStyle.kind(of: ReadingToken(text: "gate", wordId: "w", glossaryIndex: 1), glossary: glossary), .own)
+        XCTAssertNil(ReadingHighlightStyle.kind(of: ReadingToken(text: "the"), glossary: glossary))
+        XCTAssertEqual(ReadingHighlightStyle.kind(of: ReadingToken(text: "x", glossaryIndex: 9), glossary: glossary), .glossary, "index out of range is safe")
+    }
+
+    func testLegendDescribesAllKinds() {
+        XCTAssertTrue(ReadingHighlightStyle.legendText(.recommended).contains("pogrubione"))
         XCTAssertTrue(ReadingHighlightStyle.legendText(.own).contains("słownika"))
+        XCTAssertTrue(ReadingHighlightStyle.legendText(.glossary).contains("tłumaczenie"))
     }
 }

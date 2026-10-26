@@ -54,6 +54,18 @@ enum Palette {
     static let info = dynamic(light: 0x3F6FAE, dark: 0xABC4E8)
     static let infoSoft = dynamic(light: 0xEAF1FA, dark: 0x26354A)
 
+    // MARK: Czytanka — wyróżnione słowa (FEEDBACK-8 M1: sam kolor tekstu, bez tła i podkreśleń)
+
+    /// Słowo ze słowniczka czytanki (dotknij → tłumaczenie): przyciemniony akcent.
+    /// Kontrast: 7,4 / 8,5 na `surface`, 6,7 / 5,9 na markerze dowodu (`warningSoft`).
+    static let readingGlossaryInk = dynamic(light: 0x5B3FB8, dark: 0xC4AEFF)
+    /// Słowo polecane do nauki (pogrubione): morski.
+    /// Kontrast: 6,5 / 9,9 na `surface`, 5,9 / 6,9 na markerze dowodu.
+    static let readingRecommendedInk = dynamic(light: 0x0B6870, dark: 0x7DD8D3)
+    /// Słowo z mojego słownika (półgrube): ciepły pomarańczowy brąz.
+    /// Kontrast: 6,5 / 8,4 na `surface`, 5,9 / 5,8 na markerze dowodu.
+    static let readingOwnInk = dynamic(light: 0x9A4510, dark: 0xF5A86A)
+
     // MARK: Karta sesji (hero)
 
     /// Kolory gradientu fioletowej karty sesji (biały tekst ≥ 4.5:1 na obu końcach).

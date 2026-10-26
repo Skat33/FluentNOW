@@ -87,6 +87,16 @@ struct StudyResumePrompt: Identifiable, Hashable {
                 title: "Masz przerwane ćwiczenie „\(type.practiceTitle)”",
                 detail: "Ukończono \(min(session.index, session.tasks.count)) z \(StudyFormat.exercises(session.tasks.count))."
             )
+        case .vocabulary(let mode):
+            // Sesja jednego typu ma tryb „exercise-…” (jej `studyMode` to `.mixed`) — nie liczy się.
+            guard let session = state.session, !session.isFinished, !session.tasks.isEmpty,
+                  SingleTypeSession.type(ofMode: session.mode) == nil,
+                  session.studyMode == mode else { return nil }
+            return StudyResumePrompt(
+                activity: activity,
+                title: "Masz przerwane ćwiczenie „\(mode.namePl)”",
+                detail: "Ukończono \(min(session.index, session.tasks.count)) z \(StudyFormat.exercises(session.tasks.count))."
+            )
         case .flashcards:
             guard let pausedDeck, !pausedDeck.run.isFinished else { return nil }
             return StudyResumePrompt(

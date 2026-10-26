@@ -285,11 +285,16 @@ struct AddWordQuickForm: View {
         }
     }
 
+    /// FEEDBACK-8 M3: jedno znaczenie na unikalne tłumaczenie — wpisy tego samego znaczenia
+    /// z kilku tematów i core są zgrupowane (`SenseGrouping`); dodanie zgrupowanego znaczenia
+    /// dołącza przykłady ze wszystkich wpisów (bez powtórzeń), a ich odwołania zapisuje w
+    /// `mergedContentRefs`. Wybór zostaje tylko między różnymi znaczeniami.
     private func show(_ result: Lookup, source: AddWordLookupSource) {
-        lookup = result
+        let grouped: Lookup = SenseGrouping.grouped(result).lookup
+        lookup = grouped
         lookupSource = source
         selected = []
-        known = AddWordLogic.knownSenseIndices(result, words: store.state.words)
+        known = AddWordLogic.knownSenseIndices(grouped, words: store.state.words)
         detent = .large
     }
 

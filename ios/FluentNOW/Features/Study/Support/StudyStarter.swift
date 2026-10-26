@@ -42,11 +42,16 @@ enum StudyStarter {
 
     /// Nowa sesja słownictwa (`makeSession`) zapisana w `state.session`.
     /// `images`: zadania „Słowo i zdjęcie” tylko dla słów, których zdjęcia są już na dysku (G2).
-    static func startVocabulary(mode: StudyMode, minutes: Int, collection: String?, store: LearningStore, images: WordImageService? = nil) async -> Outcome {
+    /// `fresh` (FEEDBACK-8 M2, „Zacznij od nowa” na kafelku codziennej mieszanki / pomyłek / par):
+    /// nowa sesja z innymi zdaniami niż przerwana (`FreshStart.vocabularySession`).
+    static func startVocabulary(mode: StudyMode, minutes: Int, collection: String?, store: LearningStore, images: WordImageService? = nil, fresh: Bool = false) async -> Outcome {
         requestPhotos(store: store, images: images)
         let cached = await cachedPictureIDs(images)
         let session = await store.compute { (state: LearnerState) -> VocabSession in
             let ready = PictureExercise.readyMeaningIDs(state: state, cached: cached)
+            if fresh {
+                return FreshStart.vocabularySession(state: state, mode: mode, minutes: minutes, collection: collection, pictureMeaningIDs: ready)
+            }
             return SessionBuilder.makeSession(state: state, minutes: minutes, mode: mode, collection: collection, pictureMeaningIDs: ready)
         }
         guard !session.tasks.isEmpty else {
@@ -128,7 +133,7 @@ enum StudyStarter {
             return started
                 ? .flow(.production(autoStart: false))
                 : .message("Na poziomie \(loaded.level) nie ma jeszcze zadań produkcji.")
-        case .singleType, .flashcards:
+        case .singleType, .vocabulary, .flashcards:
             return .message("Ten rodzaj ćwiczeń zaczyna się od nowa na swoim ekranie.")
         }
     }
@@ -181,11 +186,11 @@ enum StudyStarter {
         }
         switch mode {
         case .mistakes:
-            return "Nie masz jeszcze słów wymagających trybu pomyłek."
+            return "„Tryb pomyłek” zbiera słowa z błędną lub bardzo wolną odpowiedzią i słowa oznaczone jako trudne. Na razie takich nie masz."
         case .pairs:
-            return "Nie znaleźliśmy jeszcze podobnych słów do ćwiczenia w parach. Dodaj więcej słów."
+            return "„Słowa w parach” potrzebuje słów o podobnych znaczeniach (np. borrow i lend). Nie znaleźliśmy jeszcze takich par — dodaj więcej słów z tematów."
         default:
-            return "Na teraz wszystko powtórzone. Dodaj nowe słowa albo wybierz inny rodzaj ćwiczeń."
+            return "Na teraz wszystko powtórzone. Dodaj nowe słowa albo dotknij innego kafelka w „Ćwiczeniach”."
         }
     }
 }

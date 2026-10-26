@@ -21,8 +21,10 @@ struct AddWordCandidate: Identifiable, Hashable, Sendable {
         }
         return order.compactMap { key -> AddWordCandidate? in
             guard let group = grouped[key], let first = group.first else { return nil }
+            // To samo tłumaczenie z kilku tematów / core — raz (FEEDBACK-8 M3).
             var translations: [String] = []
-            for hit in group where !translations.contains(hit.entry.translation) {
+            var keys = Set<String>()
+            for hit in group where keys.insert(SenseGrouping.translationKey(hit.entry.translation)).inserted {
                 translations.append(hit.entry.translation)
             }
             return AddWordCandidate(
@@ -119,9 +121,12 @@ enum AddWordLogic {
     static func knownSenseIndices(_ lookup: Lookup, words: [Word]) -> Set<Int> {
         let owned = OwnedVocabulary(words: words)
         var result = Set<Int>()
-        for (index, sense) in lookup.meanings.enumerated()
-        where owned.contains(reference: sense.contentRef, term: lookup.term, translation: sense.translation) {
-            result.insert(index)
+        for (index, sense) in lookup.meanings.enumerated() {
+            // Zgrupowane wpisy (FEEDBACK-8 M3): wystarczy, że użytkownik ma którykolwiek z nich.
+            let mergedOwned = (sense.mergedContentRefs ?? []).contains { (reference: String) -> Bool in owned.references.contains(reference) }
+            if mergedOwned || owned.contains(reference: sense.contentRef, term: lookup.term, translation: sense.translation) {
+                result.insert(index)
+            }
         }
         return result
     }

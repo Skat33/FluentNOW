@@ -1,8 +1,10 @@
 import SwiftUI
 import FluentKit
 
-/// Ekran Nauka (FEEDBACK-6 K1): od góry **Fiszki**, **Ćwiczenia** (kafelki pojedynczych typów),
-/// **Test** (`StudyTestCard`, agent test-mode), niżej czytanie i gramatyka oraz historia.
+/// Ekran Nauka (FEEDBACK-6 K1, FEEDBACK-8 M2): od góry **Fiszki**, **Ćwiczenia** (jedna siatka:
+/// każdy rodzaj zajęć to osobny kafelek — typy słownictwa, codzienna mieszanka, pomyłki, pary,
+/// czytanie, gramatyka, idiomy, miks, produkcja; wybór pojedynczy), **Test** (`StudyTestCard`,
+/// jedyne miejsce łączenia rodzajów zadań), niżej historia.
 /// Bez sekcji „Ile masz czasu?” (łączenia trybów i losowania) i bez kart „Kontynuuj”: postęp
 /// przerwanej sesji zapisuje się w tle, a dotknięcie kafelka z przerwaną sesją pokazuje wybór
 /// „Kontynuuj, gdzie skończyłem” / „Zacznij od nowa”. Sesja otwiera się jako pełny ekran
@@ -21,8 +23,10 @@ struct StudyHomeView: View {
     @State private var resumePrompt: StudyResumePrompt?
     /// Prośba z routera (codzienna mieszanka, pomyłki, pary…) w przygotowaniu.
     @State private var isStarting = false
-    /// Zajęcie z „Czytanie i gramatyka”, którego nowy zestaw się przygotowuje („Zacznij od nowa”).
+    /// Zajęcie z czytania / gramatyki, którego nowy zestaw się przygotowuje („Zacznij od nowa”).
     @State private var startingActivity: StudyActivity?
+    /// Tryb słownictwa (mieszanka, pomyłki, pary, zdjęcia), którego sesja się przygotowuje.
+    @State private var startingMode: StudyMode?
     /// „Ćwiczenia” (J1): długość (5 / 10 min, pamiętana), uruchamiany typ, komunikat przy kafelkach.
     @AppStorage("study.singleTypeMinutes") private var singleTypeMinutes = 5
     @State private var startingType: ExerciseType?
@@ -102,15 +106,12 @@ struct StudyHomeView: View {
         }
         if hasWords {
             flashcardsCard
-            exerciseTypesCard
         }
+        // M2: wszystkie ćwiczenia w jednej siatce (także bez słów — kafelki słownictwa wyjaśniają,
+        // czego brakuje; czytanie i gramatyka działają od razu).
+        exerciseTypesCard
         // K4 (agent test-mode): karta testu — widok `StudyTestCard` z `Features/Study/Test/`.
         StudyTestCard()
-        StudyMoreActivitiesCard(
-            paused: pausedActivities,
-            starting: startingActivity,
-            onOpen: { (activity: StudyActivity) -> Void in open(activity) }
-        )
         if hasWords && PictureExercise.isEnabled {
             picturesCard
         }
@@ -125,18 +126,34 @@ struct StudyHomeView: View {
         }
     }
 
-    /// „Ćwiczenia” (FEEDBACK-5 J1): kafelki pojedynczych typów.
+    /// „Ćwiczenia” (FEEDBACK-8 M2): jedna siatka, dotknięcie kafelka = start jednego ćwiczenia.
     private var exerciseTypesCard: some View {
         StudyExerciseTypesCard(
             minutes: singleTypeMinutesBinding,
             collection: collection,
-            startingType: startingType,
+            starting: startingTile,
+            isBusy: isBusy,
             notice: typeNotice,
-            pausedType: pausedSingleType,
-            onStart: { (type: ExerciseType) -> Void in open(.singleType(type)) },
+            paused: pausedActivities,
+            onOpen: { (activity: StudyActivity) -> Void in open(activity) },
             onPictures: { () -> Void in openPicturesFromTypes() },
             onDismissNotice: { () -> Void in typeNotice = nil }
         )
+    }
+
+    /// Zajęcie, którego sesja się przygotowuje (wskaźnik na kafelku).
+    private var startingTile: StudyActivity? {
+        if let startingType { return .singleType(startingType) }
+        if let startingActivity { return startingActivity }
+        if let startingMode, StudyExerciseAvailability.reviewModes.contains(startingMode) {
+            return .vocabulary(startingMode)
+        }
+        return nil
+    }
+
+    /// Coś się uruchamia — kolejne dotknięcia czekają.
+    private var isBusy: Bool {
+        isStarting || startingType != nil || startingActivity != nil
     }
 
     private var prefetcher: WordImagePrefetcher {
@@ -163,17 +180,12 @@ struct StudyHomeView: View {
 
     // MARK: Przerwane sesje
 
-    /// Typ przerwanej sesji jednego typu (znacznik na kafelku).
-    private var pausedSingleType: ExerciseType? {
-        guard let session = store.state.session, !session.isFinished, !session.tasks.isEmpty else { return nil }
-        return SingleTypeSession.type(ofMode: session.mode)
-    }
-
-    /// Zajęcia z „Czytanie i gramatyka” z przerwaną sesją.
+    /// Zajęcia z kafelków „Ćwiczeń” z przerwaną sesją (znacznik „Przerwane”).
     private var pausedActivities: Set<StudyActivity> {
         var result: Set<StudyActivity> = []
-        for item in StudyMoreActivity.all where StudyResumePrompt.make(for: item.activity, state: store.state, pausedDeck: nil) != nil {
-            result.insert(item.activity)
+        let state = store.state
+        for activity in StudyExerciseGroup.allActivities where StudyResumePrompt.make(for: activity, state: state, pausedDeck: nil) != nil {
+            result.insert(activity)
         }
         return result
     }
@@ -184,7 +196,7 @@ struct StudyHomeView: View {
 
     /// Dotknięcie kafelka: przerwana sesja → okno wyboru; inaczej od razu nowa sesja.
     private func open(_ activity: StudyActivity) {
-        guard !isStarting, startingType == nil, startingActivity == nil else { return }
+        guard !isBusy else { return }
         let paused = FlashcardPauseStore.load()
         pausedDeck = paused
         if let prompt = StudyResumePrompt.make(for: activity, state: store.state, pausedDeck: paused) {
@@ -197,7 +209,7 @@ struct StudyHomeView: View {
     /// „Kontynuuj, gdzie skończyłem”.
     private func resume(_ activity: StudyActivity) {
         switch activity {
-        case .singleType:
+        case .singleType, .vocabulary:
             activeFlow = .vocabulary
         case .flashcards:
             if let paused = FlashcardPauseStore.load() {
@@ -220,6 +232,8 @@ struct StudyHomeView: View {
         switch activity {
         case .singleType(let type):
             startSingleType(type, noticeInline: true, fresh: true)
+        case .vocabulary(let mode):
+            startMode(mode, minutes: singleTypeMinutesBinding.wrappedValue, noticeInline: true, fresh: true)
         case .flashcards:
             FlashcardPauseStore.abandon()
             refreshPausedDeck()
@@ -234,6 +248,8 @@ struct StudyHomeView: View {
         switch activity {
         case .singleType(let type):
             startSingleType(type, noticeInline: true, fresh: false)
+        case .vocabulary(let mode):
+            startMode(mode, minutes: singleTypeMinutesBinding.wrappedValue, noticeInline: true)
         case .flashcards:
             activeFlow = .flashcards(collection: collection)
         case .reading:
@@ -269,7 +285,7 @@ struct StudyHomeView: View {
     /// Sesja jednego typu. `noticeInline` — komunikat przy kafelkach (dotknięcie kafelka);
     /// prośba z routera (deep link) pokazuje go na górze ekranu.
     private func startSingleType(_ type: ExerciseType, noticeInline: Bool, fresh: Bool) {
-        guard !isStarting, startingType == nil, startingActivity == nil else { return }
+        guard !isBusy else { return }
         startingType = type
         typeNotice = nil
         notice = nil
@@ -282,22 +298,37 @@ struct StudyHomeView: View {
         }
     }
 
-    /// Jeden tryb z prośby routera (codzienna mieszanka z Dzisiaj, pomyłki, pary, czytanie…).
-    private func startMode(_ mode: StudyMode, minutes requested: Int? = nil) {
-        guard !isStarting, startingType == nil else { return }
+    /// Jeden tryb: z kafelka (codzienna mieszanka, pomyłki, pary — `noticeInline`, komunikat przy
+    /// siatce) albo z prośby routera (Dzisiaj, deep link — komunikat na górze ekranu).
+    /// `fresh` — „Zacznij od nowa”: inne zdania niż w przerwanej sesji.
+    private func startMode(_ mode: StudyMode, minutes requested: Int? = nil, noticeInline: Bool = false, fresh: Bool = false) {
+        guard !isBusy else { return }
         let hasWords = !store.activeWords.isEmpty
         if mode.isVocabulary && !hasWords {
-            notice = "Najpierw dodaj kilka słów lub cały temat — albo wybierz czytanie, gramatykę lub idiomy."
+            let message = "„\(mode.namePl)” ćwiczy słowa z Twojego słownika — najpierw dodaj kilka słów lub cały temat. Czytanie, gramatyka i idiomy działają od razu."
+            if noticeInline {
+                typeNotice = message
+            } else {
+                notice = message
+            }
             return
         }
         isStarting = true
+        startingMode = mode
         notice = nil
+        typeNotice = nil
         let minutes = sessionMinutes(requested)
         let limitedTo = collection
         Task { @MainActor in
-            let outcome = await StudyStarter.startMode(mode, minutes: minutes, collection: limitedTo, store: store, images: env.images)
+            let outcome: StudyStarter.Outcome
+            if fresh && mode.isVocabulary {
+                outcome = await StudyStarter.startVocabulary(mode: mode, minutes: minutes, collection: limitedTo, store: store, images: env.images, fresh: true)
+            } else {
+                outcome = await StudyStarter.startMode(mode, minutes: minutes, collection: limitedTo, store: store, images: env.images)
+            }
             isStarting = false
-            show(outcome, noticeInline: false)
+            startingMode = nil
+            show(outcome, noticeInline: noticeInline)
         }
     }
 
@@ -354,25 +385,31 @@ struct StudyHomeView: View {
             notice = StudyPicturesLockedCard.message
             return
         }
-        // Zajęcia z kafelków — przez to samo okno wyboru, gdy czeka przerwana sesja.
+        // Zajęcia z kafelków — przez to samo okno wyboru, gdy czeka przerwana sesja. Sesja
+        // słownictwa bez przerwanej startuje od razu z długością z prośby.
         if let activity = StudyHomeView.activity(for: mode) {
+            if case .vocabulary = activity, StudyResumePrompt.make(for: activity, state: store.state, pausedDeck: nil) == nil {
+                startMode(mode, minutes: request.minutes)
+                return
+            }
             open(activity)
             return
         }
         startMode(mode, minutes: request.minutes)
     }
 
-    /// Kafelek odpowiadający trybowi z prośby (fiszki, czytanie, gramatyka…); `nil` dla sesji
-    /// słownictwa (codzienna mieszanka, pomyłki, pary, zdjęcia).
+    /// Kafelek odpowiadający trybowi z prośby (fiszki, codzienna mieszanka, pomyłki, pary,
+    /// czytanie, gramatyka…); `nil` dla zdjęć (kafelek „W budowie”).
     static func activity(for mode: StudyMode) -> StudyActivity? {
         switch mode {
         case .flashcards: return .flashcards
+        case .mixed, .mistakes, .pairs: return .vocabulary(mode)
         case .reading: return .reading
         case .production: return .production
         case .grammar: return .practice(.grammar)
         case .idioms: return .practice(.idioms)
         case .languageMix: return .practice(.mixed)
-        case .mixed, .mistakes, .pairs, .pictures: return nil
+        case .pictures: return nil
         }
     }
 
@@ -466,7 +503,7 @@ private struct StudyHomeHeader: View {
                 .font(FluentFont.display)
                 .foregroundStyle(Palette.ink)
                 .accessibilityAddTraits(.isHeader)
-            Text("Fiszki, ćwiczenia jednego typu albo test. Możesz zrobić przerwę w dowolnej chwili — postęp zostaje zapisany.")
+            Text("Fiszki, jedno wybrane ćwiczenie albo test, który łączy wszystkie rodzaje zadań. Możesz zrobić przerwę w dowolnej chwili — postęp zostaje zapisany.")
                 .font(FluentFont.callout)
                 .foregroundStyle(Palette.inkSecondary)
         }

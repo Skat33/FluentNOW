@@ -112,7 +112,7 @@ private struct CombinedSessionContent: View {
             EmptyStateView(
                 systemImage: "checkmark.circle",
                 title: "Brak aktywnej sesji",
-                message: "Wybierz rodzaje ćwiczeń na ekranie Nauka.",
+                message: "Wróć do ekranu Nauka i dotknij kafelka ćwiczenia, aby zacząć.",
                 actionTitle: "Wróć"
             ) {
                 dismiss()

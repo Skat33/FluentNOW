@@ -121,6 +121,26 @@ final class FeaturePureFunctionTests: XCTestCase {
         XCTAssertEqual(AddWordLogic.knownSenseIndices(lookup, words: [archived]), [])
     }
 
+    /// FEEDBACK-8 M3: zgrupowane znaczenie jest „Masz już”, gdy użytkownik ma którykolwiek z wpisów.
+    func testKnownSenseIndicesSeeGroupedEntries() {
+        var owned = ServicesTestSupport.word("w", en: "weigh", pl: "zważyć")
+        owned.meanings[0].contentRef = "b/b.weigh"
+        let lookup = Lookup(term: "weigh", meanings: [
+            SenseSuggestion(translation: "ważyć", contentRef: "a/a.weigh", mergedContentRefs: ["b/b.weigh"]),
+            SenseSuggestion(translation: "przeważać", contentRef: "c/c.weigh")
+        ])
+        XCTAssertEqual(AddWordLogic.knownSenseIndices(lookup, words: [owned]), [0])
+    }
+
+    func testAddWordCandidateTranslationsAreUniqueAfterNormalisation() {
+        let hits = [
+            SearchHit(entry: DictionaryIndex.Entry(term: "catch up", translation: "nadrobić zaległości", level: "B1", reference: "a/1"), match: .exact),
+            SearchHit(entry: DictionaryIndex.Entry(term: "catch up", translation: "Nadrobić zaległości.", level: "B1", reference: "b/2"), match: .exact),
+            SearchHit(entry: DictionaryIndex.Entry(term: "catch up", translation: "dogonić", level: "A2", reference: "c/3"), match: .exact)
+        ]
+        XCTAssertEqual(AddWordCandidate.group(hits).first?.translations, ["nadrobić zaległości", "dogonić"])
+    }
+
     func testSanitizedAssistantLookupMarksAIAndDropsBrokenFocus() {
         let lookup = Lookup(term: "gate", meanings: [
             SenseSuggestion(translation: "bramka", level: "X9", examples: [

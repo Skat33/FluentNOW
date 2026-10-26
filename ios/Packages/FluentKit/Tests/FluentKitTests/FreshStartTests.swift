@@ -149,6 +149,52 @@ final class FreshStartTests: XCTestCase {
         XCTAssertEqual(restarted.readingHistory, state.readingHistory, "the paused text is not written to history")
     }
 
+    // MARK: Vocabulary modes (FEEDBACK-8 M2)
+
+    func testFreshDailyMixUsesOtherSentences() {
+        var state = state(words: 6)
+        var rng = SeededGenerator(seed: 7)
+        let paused = SessionBuilder.makeSession(state: state, minutes: 5, mode: .mixed, using: &rng)
+        XCTAssertFalse(paused.tasks.isEmpty)
+        state.session = paused
+        var freshRNG = SeededGenerator(seed: 7)
+        let fresh = FreshStart.vocabularySession(state: state, mode: .mixed, minutes: 5, using: &freshRNG)
+        XCTAssertFalse(fresh.tasks.isEmpty)
+        XCTAssertEqual(fresh.mode, StudyMode.mixed.rawValue)
+        let before = FreshStart.examples(in: paused)
+        for task in fresh.tasks where !task.type.coversSeveralMeanings {
+            let avoided = before[task.meaningId] ?? []
+            guard avoided.count < 3 else { continue }
+            XCTAssertFalse(avoided.contains(task.example), "\(task.meaningId) repeats sentence \(task.example)")
+        }
+        XCTAssertEqual(state.words, self.state(words: 6).words, "the saved words are not changed")
+    }
+
+    func testFreshVocabularySessionWithoutPausedSessionIsTheUsualOne() {
+        let state = state(words: 4)
+        var a = SeededGenerator(seed: 3)
+        var b = SeededGenerator(seed: 3)
+        XCTAssertEqual(
+            FreshStart.vocabularySession(state: state, mode: .mixed, minutes: 5, using: &a),
+            SessionBuilder.makeSession(state: state, minutes: 5, mode: .mixed, using: &b)
+        )
+    }
+
+    func testVocabularyModeAvailability() {
+        var state = state(words: 4)
+        XCTAssertEqual(VocabularyModeAvailability.count(state: state, mode: .mixed), 4)
+        XCTAssertEqual(VocabularyModeAvailability.count(state: state, mode: .mistakes), 0, "no errors yet")
+        state.words[1].hard = true
+        XCTAssertEqual(VocabularyModeAvailability.count(state: state, mode: .mistakes), 1)
+        state.words[2].archived = true
+        XCTAssertEqual(VocabularyModeAvailability.count(state: state, mode: .mixed), 3, "archived words are skipped")
+        XCTAssertEqual(VocabularyModeAvailability.count(state: state, mode: .mixed, collection: "Inna"), 0)
+        let all = VocabularyModeAvailability.candidates(state: state, mode: .mixed)
+        XCTAssertEqual(VocabularyModeAvailability.count(state: state, mode: .pairs), ConfusableDetector.itemsWithPartners(all).count)
+        let counts = VocabularyModeAvailability.counts(state: state, modes: [.mixed, .mistakes, .mixed])
+        XCTAssertEqual(counts, [.mixed: 3, .mistakes: 1])
+    }
+
     func testRestartWithoutBankTasksKeepsTheState() {
         let empty = PracticeContent.empty
         let state = TestData.emptyState()

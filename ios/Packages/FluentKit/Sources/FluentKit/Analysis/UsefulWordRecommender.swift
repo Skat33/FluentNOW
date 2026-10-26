@@ -168,7 +168,7 @@ public struct UsefulWordProfile: Sendable, Hashable {
                 }
             }
             for meaning in word.meanings {
-                if let reference = meaning.contentRef { references.insert(reference) }
+                for reference in meaning.allContentRefs { references.insert(reference) }
             }
             guard !word.archived else { continue }
             let collection = TextNormalizer.searchKey(word.collection)

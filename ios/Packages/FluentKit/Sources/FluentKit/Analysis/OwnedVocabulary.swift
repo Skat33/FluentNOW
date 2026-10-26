@@ -29,7 +29,7 @@ public struct OwnedVocabulary: Sendable, Hashable {
             let term = OwnedVocabulary.termKey(word.en)
             if !term.isEmpty { terms.insert(term) }
             for meaning in word.meanings {
-                if let reference = meaning.contentRef, !reference.isEmpty { references.insert(reference) }
+                for reference in meaning.allContentRefs { references.insert(reference) }
                 pairs.insert(term + "|" + OwnedVocabulary.translationKey(meaning.translation))
             }
         }

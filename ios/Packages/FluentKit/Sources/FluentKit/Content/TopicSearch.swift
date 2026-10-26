@@ -808,7 +808,9 @@ public enum TopicSearch {
         return result
     }
 
+    /// The same term with the same translation (also without a dialect label — the key of
+    /// `OwnedVocabulary` and `SenseGrouping`, FEEDBACK-8 M3) is shown once.
     static func duplicateKey(_ entry: TopicEntry) -> String {
-        TextNormalizer.normalize(entry.term) + "|" + TextNormalizer.normalize(entry.translation)
+        OwnedVocabulary.termKey(entry.term) + "|" + OwnedVocabulary.translationKey(entry.translation)
     }
 }

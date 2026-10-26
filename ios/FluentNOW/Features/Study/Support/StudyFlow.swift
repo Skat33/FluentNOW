@@ -46,6 +46,9 @@ enum StudyFlow: Identifiable, Hashable {
 enum StudyActivity: Hashable {
     /// „Ćwicz wybrany typ” (sesja jednego typu w `state.session`).
     case singleType(ExerciseType)
+    /// Sesja słownictwa w `state.session` (FEEDBACK-8 M2): codzienna mieszanka, tryb pomyłek,
+    /// słowa w parach — każda jako osobny kafelek w „Ćwiczeniach”.
+    case vocabulary(StudyMode)
     /// Talia fiszek (przerwa zapisana na urządzeniu, `FlashcardPauseStore`).
     case flashcards
     case reading
@@ -55,6 +58,7 @@ enum StudyActivity: Hashable {
     var title: String {
         switch self {
         case .singleType(let type): return type.practiceTitle
+        case .vocabulary(let mode): return mode.namePl
         case .flashcards: return "Fiszki"
         case .reading: return "Czytanie"
         case .practice(let kind): return kind.studyTitle

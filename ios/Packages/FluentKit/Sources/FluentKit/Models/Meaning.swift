@@ -96,6 +96,11 @@ public struct Meaning: Codable, Sendable, Hashable, Identifiable {
     /// iOS addition: reference to the built-in content entry this meaning came from
     /// (`<topic file>/<entry id>`, see `ContentReference`). Ignored by the web app.
     public var contentRef: String?
+    /// iOS addition (FEEDBACK-8 M3): references of other built-in entries with the same meaning
+    /// that were grouped into this one when it was added (e.g. *catch up* „nadrobić zaległości”
+    /// from three topics). They count as owned (`OwnedVocabulary`). Ignored by the web app;
+    /// absent in older data (`nil`).
+    public var mergedContentRefs: [String]?
 
     public init(
         id: String,
@@ -120,8 +125,10 @@ public struct Meaning: Codable, Sendable, Hashable, Identifiable {
         register: String = "neutralny",
         natural: String = "",
         scores: SkillScores = SkillScores(),
-        contentRef: String? = nil
+        contentRef: String? = nil,
+        mergedContentRefs: [String]? = nil
     ) {
+        self.mergedContentRefs = mergedContentRefs
         self.id = id
         self.topic = topic
         self.scene = scene
@@ -151,6 +158,7 @@ public struct Meaning: Codable, Sendable, Hashable, Identifiable {
         case id, topic, scene, usedExamples, enrichment, exampleTranslations, exampleFocusEn, exampleFocusPl
         case acceptedAnswers, acceptedTranslations, level, levelConfidence, levelReason, spokenFrequency, pos
         case translation, definition, examples, context, register, natural, scores, contentRef
+        case mergedContentRefs
     }
 
     public init(from decoder: Decoder) throws {
@@ -178,6 +186,17 @@ public struct Meaning: Codable, Sendable, Hashable, Identifiable {
         natural = c.lenientString(.natural)
         scores = c.lenientOptional(SkillScores.self, forKey: .scores) ?? SkillScores()
         contentRef = c.lenientOptionalString(.contentRef)
+        mergedContentRefs = c.lenientOptionalStrings(.mergedContentRefs)
+    }
+
+    /// `contentRef` and `mergedContentRefs` (built-in entries this meaning stands for).
+    public var allContentRefs: [String] {
+        var result: [String] = []
+        if let contentRef, !contentRef.isEmpty { result.append(contentRef) }
+        for reference in mergedContentRefs ?? [] where !reference.isEmpty && !result.contains(reference) {
+            result.append(reference)
+        }
+        return result
     }
 
     /// CEFR level of this sense, falling back to the word level.

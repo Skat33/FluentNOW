@@ -72,6 +72,50 @@ public enum FreshStart {
         )
     }
 
+    /// A new vocabulary session („Codzienna mieszanka”, „Tryb pomyłek”, „Słowa w parach”,
+    /// FEEDBACK-8 M2) avoiding the sentences of the paused `state.session`: in a temporary copy of
+    /// the state those sentences count as used, so `ExamplePool.nextUnusedExample` picks other ones
+    /// whenever a meaning has them. The saved state is not changed. Without a paused session —
+    /// exactly `SessionBuilder.makeSession`.
+    public static func vocabularySession<G: RandomNumberGenerator>(
+        state: LearnerState,
+        mode: StudyMode,
+        minutes: Int,
+        collection: String? = nil,
+        pictureMeaningIDs: Set<String> = [],
+        using rng: inout G
+    ) -> VocabSession {
+        let avoid = examples(in: state.session)
+        guard !avoid.isEmpty else {
+            return SessionBuilder.makeSession(state: state, minutes: minutes, mode: mode, collection: collection, pictureMeaningIDs: pictureMeaningIDs, using: &rng)
+        }
+        var copy = state
+        for wordIndex in copy.words.indices {
+            for meaningIndex in copy.words[wordIndex].meanings.indices {
+                let meaningID = copy.words[wordIndex].meanings[meaningIndex].id
+                guard let indexes = avoid[meaningID] else { continue }
+                var used = copy.words[wordIndex].meanings[meaningIndex].usedExamples ?? []
+                for index in indexes.sorted() where !used.contains(index) {
+                    used.append(index)
+                }
+                copy.words[wordIndex].meanings[meaningIndex].usedExamples = used
+            }
+        }
+        return SessionBuilder.makeSession(state: copy, minutes: minutes, mode: mode, collection: collection, pictureMeaningIDs: pictureMeaningIDs, using: &rng)
+    }
+
+    /// `vocabularySession` with the system random generator.
+    public static func vocabularySession(
+        state: LearnerState,
+        mode: StudyMode,
+        minutes: Int,
+        collection: String? = nil,
+        pictureMeaningIDs: Set<String> = []
+    ) -> VocabSession {
+        var generator = SystemRandomNumberGenerator()
+        return vocabularySession(state: state, mode: mode, minutes: minutes, collection: collection, pictureMeaningIDs: pictureMeaningIDs, using: &generator)
+    }
+
     // MARK: Grammar, idioms, production, reading
 
     /// A new grammar / idioms / mixed set instead of the paused one: every bank task of the

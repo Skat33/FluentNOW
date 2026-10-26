@@ -2,9 +2,9 @@ import SwiftUI
 import FluentKit
 
 /// Tekst czytanki: czytelna typografia (krój szeryfowy, Dynamic Type, kolumna `readableWidth`).
-/// Podświetlenia (G1, FEEDBACK-6 K3): słowa z mojego słownika — fioletowe na fioletowym tle
-/// (+ ciągłe podkreślenie); słowa przydatne ze słowniczka kontekstowego — pogrubione, morskie (teal)
-/// na jasnym tle, z legendą (`ReadingHighlightStyle`). Używane na etapie czytania (obu trybów) i w przeglądzie. Dotknięcie otwiera arkusz z tłumaczeniem
+/// Wyróżnienia (FEEDBACK-8 M1, `ReadingHighlightStyle`): sam kolor i grubość, bez podkreśleń i teł —
+/// słowniczek (akcent), polecane do nauki (pogrubione, morskie), moje słowa (półgrube, pomarańczowe);
+/// legenda z próbkami pod tytułem. Używane na etapie czytania (obu trybów) i w przeglądzie. Dotknięcie otwiera arkusz z tłumaczeniem
 /// w kontekście tego tekstu. Po pytaniach fragmenty-dowody (`evidence`) są wyróżnione markerem.
 struct ReadingPassageCard: View {
     let reading: Reading
@@ -23,7 +23,7 @@ struct ReadingPassageCard: View {
                 speech.speak(reading.paragraphs.joined(separator: "\n"))
             }
             if let layout, layout.hasHighlights {
-                ReadingHighlightLegend(hasOwnWords: layout.hasOwnWords, hasUsefulWords: layout.hasUsefulWords)
+                ReadingHighlightLegend(kinds: layout.kinds)
             }
             paragraphList
         }
@@ -110,34 +110,69 @@ private struct ReadingPassageHeader: View {
     }
 }
 
-/// Legenda podświetleń (FEEDBACK-6 K3; nie tylko kolorem: podkreślenie vs pogrubienie).
+/// Legenda wyróżnień pod tytułem (FEEDBACK-8 M1): kolorowe próbki (kolor + grubość) i jedna
+/// wskazówka „dotknij słowa”. W wąskim miejscu lub przy rozmiarach dostępności — próbki w kolumnie
+/// z krótkim opisem.
 private struct ReadingHighlightLegend: View {
-    let hasOwnWords: Bool
-    let hasUsefulWords: Bool
+    let kinds: [ReadingHighlightStyle.Kind]
+
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
     var body: some View {
-        VStack(alignment: .leading, spacing: Spacing.xxs) {
-            if hasOwnWords {
-                legendRow(sample: ReadingHighlightStyle.sample("słowo", kind: .own), text: ReadingHighlightStyle.legendText(.own))
-            }
-            if hasUsefulWords {
-                legendRow(sample: ReadingHighlightStyle.sample("słowo", kind: .useful), text: ReadingHighlightStyle.legendText(.useful))
-            }
+        VStack(alignment: .leading, spacing: Spacing.xs) {
+            samples
             Text("Dotknij wyróżnionego słowa, aby zobaczyć tłumaczenie w tym tekście.")
                 .font(FluentFont.caption)
                 .foregroundStyle(Palette.inkSecondary)
                 .fixedSize(horizontal: false, vertical: true)
         }
-        .accessibilityElement(children: .combine)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text(accessibilityText))
     }
 
-    private func legendRow(sample: AttributedString, text: String) -> some View {
-        HStack(spacing: Spacing.xs) {
-            Text(sample)
-                .font(FluentFont.footnote)
-            Text("— \(text)")
+    @ViewBuilder
+    private var samples: some View {
+        if dynamicTypeSize.isAccessibilitySize {
+            describedColumn
+        } else {
+            ViewThatFits(in: .horizontal) {
+                HStack(spacing: Spacing.m) {
+                    ForEach(kinds, id: \.self) { (kind: ReadingHighlightStyle.Kind) in
+                        Text(ReadingHighlightStyle.sample(ReadingHighlightStyle.sampleWord(kind), kind: kind))
+                    }
+                }
+                describedColumn
+            }
+        }
+    }
+
+    private var describedColumn: some View {
+        VStack(alignment: .leading, spacing: Spacing.xxs) {
+            ForEach(kinds, id: \.self) { (kind: ReadingHighlightStyle.Kind) in
+                ReadingLegendRow(kind: kind)
+            }
+        }
+    }
+
+    private var accessibilityText: String {
+        let parts: [String] = kinds.map { (kind: ReadingHighlightStyle.Kind) -> String in
+            ReadingHighlightStyle.accessibilityText(kind)
+        }
+        return (parts + ["Dotknij wyróżnionego słowa, aby zobaczyć tłumaczenie w tym tekście."]).joined(separator: ". ")
+    }
+}
+
+/// Wiersz legendy: próbka + krótki opis.
+private struct ReadingLegendRow: View {
+    let kind: ReadingHighlightStyle.Kind
+
+    var body: some View {
+        HStack(alignment: .firstTextBaseline, spacing: Spacing.xs) {
+            Text(ReadingHighlightStyle.sample(ReadingHighlightStyle.sampleWord(kind), kind: kind))
+            Text("— \(ReadingHighlightStyle.legendText(kind))")
                 .font(FluentFont.footnote)
                 .foregroundStyle(Palette.inkSecondary)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 }

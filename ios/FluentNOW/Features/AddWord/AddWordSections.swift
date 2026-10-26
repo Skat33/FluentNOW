@@ -173,7 +173,7 @@ struct AddWordSenseSection: View {
             if source == .assistant {
                 Label("Propozycja AI — sprawdź znaczenia przed dodaniem. Możesz je poprawić.", systemImage: "sparkles")
             } else {
-                Text("Zaznacz znaczenia, których chcesz się uczyć. Każde ma osobny postęp.")
+                Text("Zaznacz znaczenia, których chcesz się uczyć. Każde ma osobny postęp. To samo znaczenie z kilku tematów jest pokazane raz — dostaje przykłady ze wszystkich.")
             }
         }
     }
@@ -255,8 +255,19 @@ private struct AddWordSenseText: View {
                     .foregroundStyle(Palette.ink)
                     .fixedSize(horizontal: false, vertical: true)
             }
+            if !sense.examples.isEmpty {
+                Label(AddWordSenseText.examplesText(sense.examples.count), systemImage: "text.quote")
+                    .font(FluentFont.caption)
+                    .foregroundStyle(Palette.inkSecondary)
+            }
         }
         .multilineTextAlignment(.leading)
+    }
+
+    /// „1 przykład”, „4 przykłady”, „5 przykładów” — wszystkie zdania, które dostanie znaczenie
+    /// (ze wszystkich zgrupowanych wpisów, FEEDBACK-8 M3).
+    static func examplesText(_ count: Int) -> String {
+        LibraryText.count(count, one: "przykład", few: "przykłady", many: "przykładów")
     }
 }
 

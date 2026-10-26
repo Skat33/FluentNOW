@@ -2,8 +2,11 @@ import Foundation
 
 /// Prośba o rozpoczęcie sesji nauki (z deep linku, przypomnienia, Dzisiaj).
 /// Tryby to surowe wartości `FluentKit.StudyMode` (`mixed`, `mistakes`, `pairs`, `reading`,
-/// `grammar`, `idioms`, `production`, `language-mix`) — mapowanie: `StudyMode(rawValue:)`,
-/// nieznane wartości ekran Nauki pomija.
+/// `grammar`, `idioms`, `production`, `language-mix`) lub `exercise-<typ>` (jedno ćwiczenie) —
+/// mapowanie: `StudyMode(rawValue:)` / `SingleTypeSession.type(ofMode:)`, nieznane wartości ekran
+/// Nauki pomija. Każdy tryb ma kafelek w „Ćwiczeniach” (FEEDBACK-8 M2); z kilku trybów prośby
+/// uruchamiany jest pierwszy znany (bez łączenia — łączy tylko Test), przez to samo okno
+/// „Kontynuuj / Zacznij od nowa”, gdy czeka przerwana sesja.
 struct StudyLaunchRequest: Hashable, Sendable {
     /// Pusta lista = codzienna mieszanka (`mixed`).
     var modes: [String]
@@ -48,7 +51,7 @@ enum LibraryDestination: Hashable, Sendable {
 /// | `fluentnow://recommended` (alias `fluentnow://useful`) | Słownik → segment „Polecane” |
 /// | `fluentnow://topics` · `fluentnow://topics/<id>` · `fluentnow://topics?q=na%20lotnisku` | „Szukaj tematu” (arkusz „+”) |
 /// | `fluentnow://study` | karta Nauka |
-/// | `fluentnow://study/start?mode=mixed&mode=reading&minutes=10&collection=Lotnisko` | start sesji |
+/// | `fluentnow://study/start?mode=mistakes&minutes=10&collection=Lotnisko` · `?mode=exercise-cloze` | start jednego ćwiczenia |
 /// | `fluentnow://study/resume` | wznowienie sesji |
 /// | `fluentnow://add?text=borrow` | szybkie dodawanie (z wypełnionym polem) |
 /// | `fluentnow://progress` · `fluentnow://settings` | Postępy / Ustawienia |

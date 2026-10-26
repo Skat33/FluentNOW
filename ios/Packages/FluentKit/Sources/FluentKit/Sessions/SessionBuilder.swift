@@ -156,20 +156,8 @@ public enum SessionBuilder {
             return makePictureSession(state: state, minutes: minutes, collection: collection, pictureMeaningIDs: pictureMeaningIDs, using: &rng)
         }
         let safeMinutes = max(1, minutes)
-        var choices: [WordMeaning] = []
-        for word in state.words where !word.archived && (collection == nil || word.collection == collection) {
-            for meaning in word.meanings where ExamplePool.availableCount(meaning) > 0 {
-                choices.append(WordMeaning(word: word, meaning: meaning))
-            }
-        }
-        if mode == .mistakes {
-            choices = choices.filter { item in
-                item.word.hard || item.meaning.scores.values.contains { $0.wrong > 0 || $0.slow > 0 }
-            }
-        }
-        if mode == .pairs {
-            choices = ConfusableDetector.itemsWithPartners(choices)
-        }
+        // Candidate filters shared with the tiles of the study screen (FEEDBACK-8 M2).
+        var choices: [WordMeaning] = VocabularyModeAvailability.candidates(state: state, mode: mode, collection: collection)
         // Starred words (`StudyPriority`): tie-break only — reviews keep their order by due date /
         // errors; new meanings (all due 0) get starred ones first.
         if mode == .mistakes {

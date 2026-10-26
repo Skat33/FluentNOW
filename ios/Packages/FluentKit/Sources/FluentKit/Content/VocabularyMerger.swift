@@ -146,7 +146,8 @@ public enum VocabularyMerger {
                 register: sense.register,
                 natural: sense.natural,
                 scores: SkillScores(),
-                contentRef: sense.contentRef
+                contentRef: sense.contentRef,
+                mergedContentRefs: sense.mergedContentRefs
             )
             next.words[index].meanings.append(meaning)
             next.words[index].updatedAt = now
@@ -290,7 +291,7 @@ public enum VocabularyMerger {
         var result = Set<String>()
         for word in state.words where !word.archived {
             for meaning in word.meanings {
-                if let reference = meaning.contentRef { result.insert(reference) }
+                for reference in meaning.allContentRefs { result.insert(reference) }
             }
         }
         return result
