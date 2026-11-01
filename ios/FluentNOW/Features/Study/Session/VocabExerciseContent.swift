@@ -33,7 +33,12 @@ struct VocabExerciseContent {
     /// zastępuje dyktando).
     let listeningOptions: [String]
 
-    init?(task: VocabTask, mode: StudyMode, state: LearnerState, variants: AnswerVariants) {
+    /// Ziarno sesji dla rozsypanki (`SentenceScramble.sessionSeed`, w teście i sesji mieszanej —
+    /// identyfikator sesji); puste — tylko zadanie.
+    let sessionSeed: String
+
+    /// `sessionSeed` — wznowione zadanie pokazuje te same kafelki, inna sesja tasuje od nowa.
+    init?(task: VocabTask, mode: StudyMode, state: LearnerState, variants: AnswerVariants, sessionSeed: String = "") {
         guard let word = state.word(id: task.wordId), let meaning = word.meaning(id: task.meaningId) else {
             return nil
         }
@@ -60,9 +65,13 @@ struct VocabExerciseContent {
         self.isFirstContact = SessionBuilder.isFirstContact(meaning)
         // Ziarno bez indeksu w sesji — wznowione zadanie pokazuje te same kafelki i opcje.
         let seed = "\(task.wordId):\(task.meaningId):\(index)"
+        self.sessionSeed = sessionSeed
         switch task.type {
         case .scramble:
-            self.scramble = SentenceScramble.board(word: word, meaning: meaning, exampleIndex: index, seed: seed)
+            // Ziarno sesji + zadania (FEEDBACK-9 N1): te same kafelki i dystraktory po wznowieniu.
+            let scrambleSeed = sessionSeed.isEmpty ? seed : "\(sessionSeed)|\(seed)"
+            let pool = SentenceScramble.poolSentences(state: state, excludingWordID: word.id, seed: scrambleSeed)
+            self.scramble = SentenceScramble.board(word: word, meaning: meaning, exampleIndex: index, seed: scrambleSeed, pool: pool)
             self.pairs = nil
             self.listeningOptions = []
         case .matchPairs:
@@ -102,7 +111,7 @@ struct VocabExerciseContent {
             return nil
         }
         let fallback = VocabTask(wordId: task.wordId, meaningId: task.meaningId, type: replacement, example: task.example)
-        return VocabExerciseContent(task: fallback, mode: mode, state: state, variants: variants)
+        return VocabExerciseContent(task: fallback, mode: mode, state: state, variants: variants, sessionSeed: sessionSeed)
     }
 
     /// „Dopasuj pary”: kolejność par do zapisu (lewa kolumna).
@@ -114,7 +123,7 @@ struct VocabExerciseContent {
     /// To samo zadanie jako „Wybierz znaczenie” — gdy zdjęć nie da się pokazać (brak w cache).
     func asMeaningTask(state: LearnerState, variants: AnswerVariants) -> VocabExerciseContent? {
         let fallback = VocabTask(wordId: task.wordId, meaningId: task.meaningId, type: .meaning, example: task.example)
-        return VocabExerciseContent(task: fallback, mode: mode, state: state, variants: variants)
+        return VocabExerciseContent(task: fallback, mode: mode, state: state, variants: variants, sessionSeed: sessionSeed)
     }
 
     /// Klucz zadania (zmiana = nowe zadanie na ekranie).

@@ -213,7 +213,7 @@ final class NewExercisesTests: XCTestCase {
         let board = try XCTUnwrap(SentenceScramble.board(word: item, meaning: item.meanings[0], exampleIndex: 0, seed: "task-1"))
         XCTAssertEqual(board, SentenceScramble.board(word: item, meaning: item.meanings[0], exampleIndex: 0, seed: "task-1"), "resume shows the same tiles")
         XCTAssertEqual(board.answer, ["can", "I", "borrow", "your", "pen", "for", "a", "minute", "please"], "a function word at the start is lower-cased")
-        XCTAssertEqual(board.decoyCount, 0, "no decoys before the first usage answer")
+        XCTAssertEqual(board.decoyCount, 0, "no safe decoy: no grammar trigger, no other example, no pool")
         XCTAssertEqual(board.tiles.map { $0.text }.sorted(), board.answer.sorted())
         XCTAssertNotEqual(board.tiles.map { $0.text }, board.answer, "never shown already in order")
         XCTAssertEqual(board.translation, "Mogę pożyczyć twój długopis na minutę?")
@@ -230,24 +230,27 @@ final class NewExercisesTests: XCTestCase {
     func testScrambleDecoysGrowWithLevelAndAreContentWords() throws {
         let examples = [borrowSentence, "She wanted to borrow money from her brother yesterday.", "Libraries borrow rare books from other cities."]
         var item = word("b", "borrow", "pożyczyć", level: "C1", examples: examples, translations: ["", "", ""])
-        XCTAssertEqual(SentenceScramble.decoyCount(word: item, meaning: item.meanings[0]), 0)
-        item.meanings[0].scores[.usage] = Score(correct: 1)
-        XCTAssertEqual(SentenceScramble.decoyCount(word: item, meaning: item.meanings[0]), 2)
+        let meaning = item.meanings[0]
+        XCTAssertEqual(SentenceScramble.decoyCount(word: item, meaning: meaning, wordCount: 12), 3, "C → 3 on a long sentence")
+        XCTAssertEqual(SentenceScramble.decoyCount(word: item, meaning: meaning, wordCount: 8), 2, "the length caps the count")
+        XCTAssertEqual(SentenceScramble.decoyCount(word: item, meaning: meaning, wordCount: 5), 1)
         item.level = "A2"
-        XCTAssertEqual(SentenceScramble.decoyCount(word: item, meaning: item.meanings[0]), 0)
+        XCTAssertEqual(SentenceScramble.decoyCount(word: item, meaning: item.meanings[0], wordCount: 12), 1, "always at least one")
         item.meanings[0].scores[.usage] = Score(correct: 3)
-        XCTAssertEqual(SentenceScramble.decoyCount(word: item, meaning: item.meanings[0]), 1, "practiced usage gets one decoy")
+        XCTAssertEqual(SentenceScramble.decoyCount(word: item, meaning: item.meanings[0], wordCount: 12), 2, "practiced usage gets one more")
         item.level = "B2"
+        // 9 words → at most 2; the decoys come from the other examples (no grammar trigger here).
         let board = try XCTUnwrap(SentenceScramble.board(word: item, meaning: item.meanings[0], exampleIndex: 0, seed: "k"))
         let decoys = board.tiles.filter { $0.isDecoy }.map { $0.text }
-        XCTAssertEqual(decoys.count, 1)
+        XCTAssertEqual(decoys.count, 2)
         let sentenceKeys = Set(board.answer.map { SentenceScramble.key($0) })
         for decoy in decoys {
             XCTAssertFalse(sentenceKeys.contains(SentenceScramble.key(decoy)))
             XCTAssertFalse(SentenceScramble.functionWords.contains(SentenceScramble.key(decoy)))
             XCTAssertGreaterThanOrEqual(decoy.count, 4)
+            XCTAssertNotEqual(SentenceScramble.key(decoy), "borrowed", "another form of a sentence word is never a content decoy")
         }
-        XCTAssertEqual(board.tiles.count, board.answer.count + 1)
+        XCTAssertEqual(board.tiles.count, board.answer.count + 2)
     }
 
     func testScrambleNeedsFourToFourteenWords() {

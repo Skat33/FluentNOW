@@ -64,7 +64,7 @@ final class CombinedSessionModel {
         let saved = session.currentAnswer
         switch task {
         case .vocabulary(let mode, let vocabTask):
-            guard let base = VocabExerciseContent(task: vocabTask, mode: mode, state: store.state, variants: resources.variants) else {
+            guard let base = VocabExerciseContent(task: vocabTask, mode: mode, state: store.state, variants: resources.variants, sessionSeed: session.id) else {
                 missingTask = true
                 return
             }

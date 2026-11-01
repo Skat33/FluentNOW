@@ -76,15 +76,38 @@ final class StudyLayoutTests: XCTestCase {
         XCTAssertTrue(StudyExerciseGroup.all.contains { $0.tiles.contains(.pictures) }, "the „W budowie” tile stays")
     }
 
-    /// M5: trzy grupy przełączane segmentem; nieznany zapis → pierwsza grupa.
+    /// M5 / FEEDBACK-9 N2: cztery grupy z krótką nazwą i ikoną; nieznany zapis → pierwsza grupa,
+    /// dawny „bank” → „Czytanie”.
     func testExerciseGroupsAreSwitchable() {
-        XCTAssertEqual(StudyExerciseGroup.all.map { $0.title }, ["Słówka", "Powtórki", "Czytanie i gramatyka"])
+        XCTAssertEqual(StudyExerciseGroup.all.map { $0.title }, ["Słówka", "Powtórki", "Czytanie", "Gramatyka"])
+        for group in StudyExerciseGroup.all {
+            XCTAssertFalse(group.title.contains(" "), "one short word — never truncated")
+            XCTAssertFalse(group.systemImage.isEmpty)
+            XCTAssertFalse(group.tiles.isEmpty)
+        }
+        XCTAssertEqual(Set(StudyExerciseGroup.all.map { $0.id }).count, StudyExerciseGroup.all.count)
         XCTAssertEqual(StudyExerciseGroup.group(id: "nieznana").id, StudyExerciseGroup.types.id)
-        XCTAssertEqual(StudyExerciseGroup.group(containing: .reading)?.id, StudyExerciseGroup.bank.id)
+        XCTAssertEqual(StudyExerciseGroup.group(id: "bank").id, StudyExerciseGroup.reading.id, "the old saved group still opens")
+        XCTAssertEqual(StudyExerciseGroup.group(containing: .reading)?.id, StudyExerciseGroup.reading.id)
+        XCTAssertEqual(StudyExerciseGroup.group(containing: .practice(.grammar))?.id, StudyExerciseGroup.grammar.id)
         XCTAssertEqual(StudyExerciseGroup.group(containing: .vocabulary(.pairs))?.id, StudyExerciseGroup.review.id)
         XCTAssertNil(StudyExerciseGroup.group(containing: .flashcards))
         XCTAssertTrue(StudyExerciseGroup.types.usesWords)
-        XCTAssertFalse(StudyExerciseGroup.bank.usesWords, "no 5 / 10 min picker for reading and grammar")
+        XCTAssertFalse(StudyExerciseGroup.reading.usesWords, "no 5 / 10 min picker for reading")
+        XCTAssertFalse(StudyExerciseGroup.grammar.usesWords, "no 5 / 10 min picker for grammar")
+        XCTAssertTrue(StudyExerciseGroup.review.hasPaused(in: [.vocabulary(.mistakes)]))
+        XCTAssertFalse(StudyExerciseGroup.grammar.hasPaused(in: [.reading]))
+        XCTAssertEqual(StudyExerciseGroup.types.countText, "8 ćwiczeń")
+        XCTAssertEqual(StudyExerciseGroup.review.countText, "3 ćwiczenia")
+        XCTAssertEqual(StudyExerciseGroup.reading.countText, "2 ćwiczenia")
+    }
+
+    /// FEEDBACK-9 N1: polskie zdanie i odmiana „zbędnych” słów w rozsypance.
+    func testScrambleTexts() {
+        XCTAssertFalse(VocabScrambleText.instruction(decoys: 0).contains("zbędne"))
+        XCTAssertTrue(VocabScrambleText.instruction(decoys: 1).contains("Jedno słowo jest zbędne"))
+        XCTAssertTrue(VocabScrambleText.instruction(decoys: 3).contains("3 słowa są zbędne"))
+        XCTAssertEqual(VocabScrambleText.poolLabel(decoys: 2), "Słowa do ułożenia, w tym 2 zbędne")
     }
 
     func testPausedDailyMixPromptsOnlyOnItsTile() {

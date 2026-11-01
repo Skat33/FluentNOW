@@ -116,7 +116,7 @@ final class TestSessionModel {
 
     private func makeVocabulary(_ item: AssessmentVocabQuestion, key: String, session: AssessmentSession) {
         let working = AssessmentEngine.workingState(store.state, session: session)
-        guard let base = VocabExerciseContent(task: item.task, mode: .mixed, state: working, variants: resources.variants) else {
+        guard let base = VocabExerciseContent(task: item.task, mode: .mixed, state: working, variants: resources.variants, sessionSeed: session.id) else {
             missingQuestion = true
             return
         }

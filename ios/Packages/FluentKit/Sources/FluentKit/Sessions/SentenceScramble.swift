@@ -40,22 +40,24 @@ public struct ScrambleBoard: Sendable, Hashable {
 }
 
 /// „Ułóż zdanie” (rozsypanka, FEEDBACK-4 I2): the words of an example sentence with the learned
-/// word as tiles in random order, plus 1–2 decoys on higher levels. Punctuation and letter case
-/// never matter when checking.
+/// word as tiles in random order, plus 1–3 decoys (FEEDBACK-9 N1, `ScrambleDecoys`). The Polish
+/// translation is always shown above the tiles. Punctuation and letter case never matter when
+/// checking; the sentence is right only with exactly its own words in order (decoys stay unused).
 public enum SentenceScramble {
     /// Sentences shorter or longer than this are not scrambled (≈ 96 % of the built-in examples
     /// have 6–14 words).
     public static let minWords = 4
     public static let maxWords = 14
     /// Most decoys on one board.
-    public static let maxDecoys = 2
+    public static let maxDecoys = 3
 
     /// Characters kept at the edge of a tile besides letters and digits.
     private static let keptEdgeCharacters: Set<Character> = ["$", "€", "£", "%", "&", "+", "#"]
 
     /// Sentence starters shown in lower case on the tile (any other first word keeps its case —
-    /// it may be a name). Also never used as decoys: a pronoun or article as a decoy could build
-    /// another correct sentence.
+    /// it may be a name). Never used as content-word decoys: a pronoun or article taken from
+    /// another sentence could build another correct sentence (prepositions and „a/an” come only
+    /// from the safe rules in `ScrambleDecoys`).
     static let functionWords: Set<String> = [
         "a", "an", "the", "this", "that", "these", "those", "my", "your", "his", "her", "its", "our",
         "their", "we", "you", "they", "he", "she", "it", "there", "here", "what", "where", "when",
@@ -124,23 +126,59 @@ public enum SentenceScramble {
         return count >= minWords && count <= maxWords
     }
 
-    /// Number of decoys for a meaning: none before the first usage answer; then by CEFR level
-    /// (A → 0, B → 1, C → 2) and at least one once usage was answered correctly three times.
-    public static func decoyCount(word: Word, meaning: Meaning) -> Int {
-        guard let usage = meaning.scores[.usage] else { return 0 }
+    /// Number of decoys (FEEDBACK-9 N1): 1–3 by the CEFR level of the meaning (A → 1, B → 2,
+    /// C → 3), one more once usage was answered correctly three times, never more than the
+    /// sentence length allows (≤ 6 words → 1, 7–9 → 2, longer → 3).
+    public static func decoyCount(word: Word, meaning: Meaning, wordCount: Int) -> Int {
         let level = meaning.effectiveLevel(in: word).uppercased()
-        var count = 0
-        if level.hasPrefix("B") { count = 1 }
-        if level.hasPrefix("C") { count = 2 }
-        if usage.correct >= 3 { count = max(count, 1) }
-        return min(maxDecoys, count)
+        var count = 1
+        if level.hasPrefix("B") { count = 2 }
+        if level.hasPrefix("C") { count = 3 }
+        if let usage = meaning.scores[.usage], usage.correct >= 3 { count += 1 }
+        let lengthCap: Int
+        if wordCount <= 6 {
+            lengthCap = 1
+        } else if wordCount <= 9 {
+            lengthCap = 2
+        } else {
+            lengthCap = 3
+        }
+        return max(1, min(maxDecoys, min(count, lengthCap)))
+    }
+
+    /// Seed of a vocabulary session for its boards: stable while the session lasts (its first task
+    /// never changes), so a resumed task shows the same tiles; another session shuffles anew.
+    public static func sessionSeed(tasks: [VocabTask], mode: String) -> String {
+        guard let first = tasks.first else { return mode }
+        return "\(mode):\(first.wordId):\(first.meaningId):\(first.type.rawValue):\(first.example)"
+    }
+
+    /// A few example sentences of other words (deterministic for `seed`) — the last-resort source
+    /// of decoys when the sentence and the entry give none.
+    public static func poolSentences(state: LearnerState, excludingWordID: String, seed: String, limit: Int = 6) -> [String] {
+        let words = state.words
+        guard words.count > 1, limit > 0 else { return [] }
+        var generator = SeededGenerator(seed: "scramble-pool:" + seed)
+        var result: [String] = []
+        var attempts = 0
+        while result.count < limit && attempts < limit * 4 {
+            attempts += 1
+            guard let candidate = words[safe: generator.nextIndex(below: words.count)], candidate.id != excludingWordID else { continue }
+            let sentences: [String] = candidate.meanings.flatMap { (other: Meaning) -> [String] in other.examples }
+            guard let sentence = sentences[safe: generator.nextIndex(below: sentences.count)],
+                  !result.contains(sentence) else { continue }
+            result.append(sentence)
+        }
+        return result
     }
 
     // MARK: Board
 
-    /// The board of a task. Deterministic for `seed` (the task key) — a resumed task shows the
-    /// same tiles. `nil` when the sentence cannot be scrambled.
-    public static func board(word: Word, meaning: Meaning, exampleIndex: Int, seed: String) -> ScrambleBoard? {
+    /// The board of a task. Deterministic for `seed` (session seed + task) — a resumed task shows
+    /// the same tiles and decoys. `pool` — sentences of other words (`poolSentences`), used only
+    /// when the sentence and the entry give too few decoys. `nil` when the sentence cannot be
+    /// scrambled.
+    public static func board(word: Word, meaning: Meaning, exampleIndex: Int, seed: String, pool: [String] = []) -> ScrambleBoard? {
         guard canBuild(meaning: meaning, exampleIndex: exampleIndex),
               let example = example(meaning: meaning, exampleIndex: exampleIndex) else { return nil }
         var answer = tokens(example.sentence)
@@ -149,16 +187,16 @@ public enum SentenceScramble {
             answer[0] = first.lowercased()
         }
         var generator = SeededGenerator(seed: "scramble:" + seed)
-        let decoys = decoyWords(
+        let decoys = self.decoys(
             word: word,
             meaning: meaning,
             exampleIndex: example.index,
-            excluding: Set(answer.map { (token: String) -> String in key(token) }),
-            count: decoyCount(word: word, meaning: meaning),
+            answer: answer,
+            pool: pool,
             using: &generator
         )
-        var texts: [(text: String, isDecoy: Bool)] = answer.map { (text: $0, isDecoy: false) }
-        texts.append(contentsOf: decoys.map { (text: $0, isDecoy: true) })
+        var texts: [(text: String, isDecoy: Bool)] = answer.map { (text: String) -> (text: String, isDecoy: Bool) in (text: text, isDecoy: false) }
+        texts.append(contentsOf: decoys.map { (decoy: ScrambleDecoy) -> (text: String, isDecoy: Bool) in (text: decoy.text, isDecoy: true) })
         var order = Array(texts.indices)
         var position = order.count - 1
         while position > 0 {
@@ -179,32 +217,27 @@ public enum SentenceScramble {
         return ScrambleBoard(sentence: example.sentence, translation: translation, answer: answer, tiles: tiles)
     }
 
-    /// Content words from the other examples of the word (any of its meanings) that are not in the
-    /// sentence: lower-case, at least four letters, never a function word.
-    static func decoyWords<G: RandomNumberGenerator>(word: Word, meaning: Meaning, exampleIndex: Int, excluding: Set<String>, count: Int, using rng: inout G) -> [String] {
-        guard count > 0 else { return [] }
-        var candidates: [String] = []
-        var seen = excluding
-        let sentences: [String] = word.meanings.flatMap { (other: Meaning) -> [String] in
+    /// Decoys of a board (`ScrambleDecoys.choose`): 1–3 words that are never words of the sentence
+    /// and never build another correct sentence — wrong verb forms and prepositions first (the
+    /// focus expression before other words), then words from the entry's other examples, then
+    /// words from `pool`.
+    static func decoys<G: RandomNumberGenerator>(word: Word, meaning: Meaning, exampleIndex: Int, answer: [String], pool: [String], using rng: inout G) -> [ScrambleDecoy] {
+        let entrySentences: [String] = word.meanings.flatMap { (other: Meaning) -> [String] in
             other.examples.enumerated().compactMap { (entry: (offset: Int, element: String)) -> String? in
                 other.id == meaning.id && entry.offset == exampleIndex ? nil : entry.element
             }
         }
-        for sentence in sentences {
-            for token in tokens(sentence) {
-                let tokenKey = key(token)
-                guard tokenKey.count >= 4, !functionWords.contains(tokenKey),
-                      let firstCharacter = token.first, firstCharacter.isLowercase,
-                      token.allSatisfy({ (character: Character) -> Bool in character.isLetter || character == "'" || character == "-" }),
-                      seen.insert(tokenKey).inserted else { continue }
-                candidates.append(token)
-            }
-        }
-        var chosen: [String] = []
-        while chosen.count < count && !candidates.isEmpty {
-            chosen.append(candidates.remove(at: rng.nextIndex(below: candidates.count)))
-        }
-        return chosen
+        let savedFocus = meaning.exampleFocusEn?[safe: exampleIndex] ?? ""
+        let focusText = savedFocus.isEmpty ? word.en : savedFocus
+        let focusKeys = Set(tokens(focusText).map { (token: String) -> String in key(token) })
+        return ScrambleDecoys.choose(
+            answer: answer,
+            focusKeys: focusKeys,
+            entrySentences: entrySentences,
+            pool: pool,
+            count: decoyCount(word: word, meaning: meaning, wordCount: answer.count),
+            using: &rng
+        )
     }
 
     // MARK: Checking

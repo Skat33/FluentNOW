@@ -70,7 +70,8 @@ final class VocabSessionModel {
         }
         if exercise?.key == key { return }
         exercise?.cancelPendingWork()
-        guard let base = VocabExerciseContent(task: task, mode: session.studyMode, state: store.state, variants: resources.variants) else {
+        let sessionSeed = SentenceScramble.sessionSeed(tasks: session.tasks, mode: session.mode)
+        guard let base = VocabExerciseContent(task: task, mode: session.studyMode, state: store.state, variants: resources.variants, sessionSeed: sessionSeed) else {
             exercise = nil
             missingTask = true
             return

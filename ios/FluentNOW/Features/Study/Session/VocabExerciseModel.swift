@@ -72,10 +72,9 @@ final class VocabExerciseModel {
     private(set) var retried = false
 
     // „Ułóż zdanie”
-    /// Identyfikatory kafelków ułożonych w zdaniu (po kolei).
+    /// Identyfikatory kafelków ułożonych w zdaniu (po kolei). Polskie zdanie jest zawsze widoczne
+    /// (FEEDBACK-9 N1) — nie jest podpowiedzią.
     private(set) var placedTiles: [Int] = []
-    /// Tłumaczenie zdania odsłonięte (podpowiedź).
-    private(set) var scrambleHintShown = false
 
     // „Dopasuj pary”
     /// Zaznaczone słowo angielskie / tłumaczenie (identyfikator znaczenia).
@@ -130,7 +129,7 @@ final class VocabExerciseModel {
     /// Podpowiedź lub warianty = odpowiedź z pomocą (strona: `hint`). Opcje pokazane od razu
     /// przy pierwszym kontakcie ze słowem nie są pomocą.
     var usedHelp: Bool {
-        hintShown || (variantsShown && !variantsAreFree) || scrambleHintShown || (retried && !type.hasTextHints)
+        hintShown || (variantsShown && !variantsAreFree) || (retried && !type.hasTextHints)
     }
     /// Zdjęcie poprawnej odpowiedzi (po wczytaniu).
     var correctPicture: StudyPictureOption? {
@@ -301,14 +300,14 @@ final class VocabExerciseModel {
         placedTiles = []
     }
 
-    /// Podpowiedź rozsypanki: polskie tłumaczenie zdania (odpowiedź z pomocą).
-    func showScrambleHint() {
-        guard type == .scramble, phase == .answering || phase == .retry else { return }
-        scrambleHintShown = true
+    /// Kafelki-pułapki leżące jeszcze w puli (VoiceOver: „w tym 2 zbędne”).
+    var scrambleDecoyCount: Int {
+        content.scramble?.decoyCount ?? 0
     }
 
-    /// Sprawdza ułożone zdanie (wielkość liter i interpunkcja bez znaczenia). Pierwszy błąd:
-    /// druga próba — poprawny początek zostaje, reszta wraca do puli, tłumaczenie się odsłania.
+    /// Sprawdza ułożone zdanie (wielkość liter i interpunkcja bez znaczenia; poprawne tylko
+    /// dokładnie słowa zdania — pułapki zostają w puli). Pierwszy błąd: druga próba — poprawny
+    /// początek zostaje, reszta wraca do puli.
     func checkScramble() {
         guard canCheckScramble, let board = content.scramble else { return }
         let texts = placedScrambleTiles.map { (tile: ScrambleTile) -> String in tile.text }
@@ -322,7 +321,6 @@ final class VocabExerciseModel {
             let kept = SentenceScramble.correctPrefixCount(texts, board: board)
             placedTiles = Array(placedTiles.prefix(kept))
             retried = true
-            scrambleHintShown = scrambleHintShown || !board.translation.isEmpty
             phase = .retry
             return
         }

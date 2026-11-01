@@ -64,11 +64,14 @@ enum StudyExerciseTile: Hashable, Identifiable {
     }
 }
 
-/// Grupa kafelków „Ćwiczeń” — przełączana segmentem nad jedną siatką (FEEDBACK-8 M5).
+/// Grupa kafelków „Ćwiczeń” — przełączana nad jedną siatką (FEEDBACK-8 M5, FEEDBACK-9 N2:
+/// cztery krótkie nazwy z ikoną — Słówka · Powtórki · Czytanie · Gramatyka).
 struct StudyExerciseGroup: Identifiable, Hashable {
     let id: String
-    /// Krótka nazwa segmentu.
+    /// Krótka nazwa w przełączniku (jedno słowo — nie ucina się przy Dynamic Type).
     let title: String
+    /// Symbol SF w przełączniku.
+    let systemImage: String
     /// Jedno zdanie pod przełącznikiem.
     let detail: String
     let tiles: [StudyExerciseTile]
@@ -78,6 +81,7 @@ struct StudyExerciseGroup: Identifiable, Hashable {
     static let types = StudyExerciseGroup(
         id: "types",
         title: "Słówka",
+        systemImage: "textformat.abc",
         detail: "Jeden rodzaj zadania ze słówkami: najpierw powtórki, potem znane, na końcu nowe.",
         tiles: SingleTypeSession.types.map { (type: ExerciseType) -> StudyExerciseTile in
             .activity(.singleType(type))
@@ -88,6 +92,7 @@ struct StudyExerciseGroup: Identifiable, Hashable {
     static let review = StudyExerciseGroup(
         id: "review",
         title: "Powtórki",
+        systemImage: "arrow.triangle.2.circlepath",
         detail: "Sesje z Twojego słownika: mieszanka zadań, słowa z pomyłkami albo słowa łatwe do pomylenia.",
         tiles: [
             .activity(.vocabulary(.mixed)),
@@ -97,26 +102,51 @@ struct StudyExerciseGroup: Identifiable, Hashable {
         usesWords: true
     )
 
-    static let bank = StudyExerciseGroup(
-        id: "bank",
-        title: "Czytanie i gramatyka",
-        detail: "Teksty i zestawy z banku na Twoim poziomie — działają od razu, także bez słów i bez internetu.",
+    static let reading = StudyExerciseGroup(
+        id: "reading",
+        title: "Czytanie",
+        systemImage: "book",
+        detail: "Czytanki na Twoim poziomie i idiomy w kontekście — działają od razu, także bez słów i bez internetu.",
         tiles: [
             .activity(.reading),
-            .activity(.practice(.grammar)),
-            .activity(.practice(.idioms)),
-            .activity(.practice(.mixed)),
-            .activity(.production)
+            .activity(.practice(.idioms))
         ],
         usesWords: false
     )
 
-    /// Kolejność segmentów jak w FEEDBACK-8 M5: Słówka / Powtórki / Czytanie i gramatyka.
-    static let all: [StudyExerciseGroup] = [types, review, bank]
+    static let grammar = StudyExerciseGroup(
+        id: "grammar",
+        title: "Gramatyka",
+        systemImage: "pencil.line",
+        detail: "Zestawy z banku gramatyki na Twoim poziomie: reguły w zdaniach, formy czasowników i miks z idiomami.",
+        tiles: [
+            .activity(.practice(.grammar)),
+            .activity(.production),
+            .activity(.practice(.mixed))
+        ],
+        usesWords: false
+    )
 
-    /// Grupa o zapamiętanym `id`; nieznane — pierwsza.
+    /// Kolejność w przełączniku (FEEDBACK-9 N2): Słówka · Powtórki · Czytanie · Gramatyka.
+    static let all: [StudyExerciseGroup] = [types, review, reading, grammar]
+
+    /// Zapisy sprzed FEEDBACK-9 („bank” = dawne „Czytanie i gramatyka”).
+    private static let legacyIDs: [String: String] = ["bank": "reading"]
+
+    /// Grupa o zapamiętanym `id`; dawne — jej następczyni; nieznane — pierwsza.
     static func group(id: String) -> StudyExerciseGroup {
-        all.first { (group: StudyExerciseGroup) -> Bool in group.id == id } ?? types
+        let resolved = legacyIDs[id] ?? id
+        return all.first { (group: StudyExerciseGroup) -> Bool in group.id == resolved } ?? types
+    }
+
+    /// „8 ćwiczeń”, „3 ćwiczenia”, „2 ćwiczenia” (VoiceOver przełącznika).
+    var countText: String {
+        let count = tiles.count
+        let lastTwo = count % 100
+        let last = count % 10
+        if count == 1 { return "1 ćwiczenie" }
+        if (2...4).contains(last) && !(12...14).contains(lastTwo) { return "\(count) ćwiczenia" }
+        return "\(count) ćwiczeń"
     }
 
     /// Grupa, w której jest kafelek zajęcia (np. by pokazać przerwane po prośbie z routera).
@@ -128,6 +158,11 @@ struct StudyExerciseGroup: Identifiable, Hashable {
 
     var activities: [StudyActivity] {
         tiles.compactMap { (tile: StudyExerciseTile) -> StudyActivity? in tile.activity }
+    }
+
+    /// W grupie jest zajęcie z przerwaną sesją (znaczek pauzy w przełączniku).
+    func hasPaused(in paused: Set<StudyActivity>) -> Bool {
+        activities.contains { (activity: StudyActivity) -> Bool in paused.contains(activity) }
     }
 
     /// Wszystkie zajęcia z kafelków (do znaczników „Przerwane”).

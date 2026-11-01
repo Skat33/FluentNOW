@@ -1,40 +1,109 @@
 import SwiftUI
 import FluentKit
 
-// „Ułóż zdanie” (rozsypanka, FEEDBACK-4 I2): kafelki słów → zdanie. Wielkość liter i interpunkcja
-// nie mają znaczenia (FluentKit `SentenceScramble`).
+// „Ułóż zdanie” (rozsypanka, FEEDBACK-4 I2, FEEDBACK-9 N1): polskie zdanie zawsze nad kafelkami,
+// kafelki słów (z 1–3 słowami-pułapkami) → zdanie po angielsku. Wielkość liter i interpunkcja
+// nie mają znaczenia; poprawne są dokładnie słowa zdania (FluentKit `SentenceScramble`).
 
-/// Treść zadania: polecenie, liczba słów-pułapek, po odpowiedzi — zdanie z tłumaczeniem.
+/// Treść zadania: polecenie, polskie zdanie do przełożenia, liczba zbędnych słów; po odpowiedzi —
+/// angielskie zdanie (polskie zostaje nad nim).
 struct VocabScramblePrompt: View {
     let model: VocabExerciseModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: Spacing.s) {
-            StudyQuestionLabel(text: "Ułóż zdanie ze słowem „\(model.content.word.en)”")
-            if !model.isFinished {
-                Text(instruction)
+            StudyQuestionLabel(text: "Ułóż po angielsku zdanie ze słowem „\(model.content.word.en)”")
+            VocabScrambleSource(content: model.content)
+            if model.isFinished {
+                StudyExampleSentence(text: model.content.example, focus: model.content.focus)
+            } else {
+                Text(VocabScrambleText.instruction(decoys: model.scrambleDecoyCount))
                     .font(FluentFont.footnote)
                     .foregroundStyle(Palette.inkSecondary)
                     .fixedSize(horizontal: false, vertical: true)
-            } else {
-                StudyExampleSentence(text: model.content.example, focus: model.content.focus)
-                StudyPairTranslation(pair: model.content.pair)
             }
-        }
-    }
-
-    private var instruction: String {
-        let decoys = model.content.scramble?.decoyCount ?? 0
-        let base = "Dotykaj słów w odpowiedniej kolejności. Dotknięcie słowa w zdaniu odkłada je z powrotem."
-        switch decoys {
-        case 0: return base
-        case 1: return base + " Uwaga: jedno słowo nie pasuje do zdania."
-        default: return base + " Uwaga: \(decoys) słowa nie pasują do zdania."
         }
     }
 }
 
-/// Zdanie w budowie, pula kafelków, podpowiedź (tłumaczenie), „Wyczyść” i „Sprawdź”.
+/// Teksty rozsypanki (polska odmiana liczebnika).
+enum VocabScrambleText {
+    static func instruction(decoys: Int) -> String {
+        let base = "Dotykaj słów w kolejności zdania. Dotknięcie słowa w zdaniu odkłada je z powrotem."
+        switch decoys {
+        case ..<1: return base
+        case 1: return base + " Jedno słowo jest zbędne — zostaw je w puli."
+        default: return base + " \(decoys) słowa są zbędne — zostaw je w puli."
+        }
+    }
+
+    /// Etykieta VoiceOver puli: „Słowa do ułożenia, w tym 2 zbędne”.
+    static func poolLabel(decoys: Int) -> String {
+        switch decoys {
+        case ..<1: return "Słowa do ułożenia"
+        case 1: return "Słowa do ułożenia, w tym jedno zbędne"
+        default: return "Słowa do ułożenia, w tym \(decoys) zbędne"
+        }
+    }
+
+    /// Polskie zdanie do przełożenia: tłumaczenie przykładu, a bez niego — znaczenie słowa.
+    static func sourceSentence(content: VocabExerciseContent) -> String {
+        if let pair = content.pair, !pair.pl.isEmpty { return pair.pl }
+        let translation = content.scramble?.translation ?? ""
+        return translation.isEmpty ? content.meaning.translation : translation
+    }
+}
+
+/// Polskie zdanie nad kafelkami — zawsze widoczne (także w teście); nie jest podpowiedzią.
+private struct VocabScrambleSource: View {
+    let content: VocabExerciseContent
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: Spacing.xxs) {
+            Text(eyebrow)
+                .fluentEyebrow()
+                .foregroundStyle(Palette.inkSecondary)
+            sentence
+        }
+        .padding(Spacing.s)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        // Lekko zabarwione tło — odróżnia zdanie do przełożenia od pola „Twoje zdanie”.
+        .fluentCardBackground(.tinted(.accent), cornerRadius: Radius.medium)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text(accessibilityText))
+    }
+
+    private var eyebrow: String {
+        hasSentence ? "Po polsku" : "Znaczenie słowa"
+    }
+
+    private var hasSentence: Bool {
+        if let pair = content.pair, !pair.pl.isEmpty { return true }
+        return !(content.scramble?.translation ?? "").isEmpty
+    }
+
+    @ViewBuilder
+    private var sentence: some View {
+        if let pair = content.pair, !pair.pl.isEmpty {
+            HighlightedText(pair.pl, focus: pair.focusPl, highlight: Palette.accentSoftInk)
+                .font(FluentFont.sentence)
+                .foregroundStyle(Palette.ink)
+                .fixedSize(horizontal: false, vertical: true)
+        } else {
+            Text(VocabScrambleText.sourceSentence(content: content))
+                .font(FluentFont.sentence)
+                .foregroundStyle(Palette.ink)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+    }
+
+    private var accessibilityText: String {
+        let text = VocabScrambleText.sourceSentence(content: content)
+        return hasSentence ? "Zdanie po polsku: \(text)" : "Znaczenie słowa: \(text)"
+    }
+}
+
+/// Zdanie w budowie, pula kafelków (ze słowami-pułapkami), „Wyczyść” i „Sprawdź”.
 struct VocabScrambleArea: View {
     let model: VocabExerciseModel
 
@@ -47,20 +116,22 @@ struct VocabScrambleArea: View {
                 FeedbackPanel(
                     kind: .almost,
                     title: "Jeszcze nie",
-                    message: "Poprawny początek został — ułóż resztę zdania.",
+                    message: retryMessage,
                     playsHaptic: preferences.hapticsEnabled
                 )
             }
             VocabScrambleAnswerLine(model: model, onRemove: remove)
             if !model.isFinished {
-                VocabScramblePool(tiles: model.availableScrambleTiles, onPlace: place)
-                if model.scrambleHintShown, let translation = model.content.scramble?.translation, !translation.isEmpty {
-                    StudyHintBox(lines: ["Tłumaczenie: \(translation)"])
-                }
+                VocabScramblePool(tiles: model.availableScrambleTiles, decoys: model.scrambleDecoyCount, onPlace: place)
                 VocabScrambleActions(model: model)
             }
         }
         .fluentSensoryFeedback(FluentHaptic.selection, trigger: model.placedTiles.count)
+    }
+
+    private var retryMessage: String {
+        let base = "Poprawny początek został — ułóż resztę zdania."
+        return model.scrambleDecoyCount > 0 ? base + " Zbędne słowa zostaw w puli." : base
     }
 
     private func place(_ id: Int) {
@@ -91,19 +162,19 @@ private struct VocabScrambleAnswerLine: View {
                 if model.placedTiles.isEmpty {
                     Text("Dotknij pierwszego słowa poniżej.")
                         .font(FluentFont.callout)
-                        .foregroundStyle(Palette.inkTertiary)
+                        .foregroundStyle(Palette.inkSecondary)
                         .frame(maxWidth: .infinity, minHeight: HitTarget.minimum, alignment: .leading)
                 } else {
                     StudyTileFlow(spacing: Spacing.xs) {
-                        ForEach(Array(model.placedScrambleTiles.enumerated()), id: \.element.id) { index, tile in
+                        ForEach(Array(model.placedScrambleTiles.enumerated()), id: \.element.id) { (entry: (offset: Int, element: ScrambleTile)) in
                             StudyWordTile(
-                                text: tile.text,
+                                text: entry.element.text,
                                 style: tileStyle,
                                 isEnabled: !model.isFinished,
-                                accessibilityText: "\(tile.text), słowo \(index + 1) w zdaniu",
-                                accessibilityHintText: "Odkłada słowo z powrotem"
+                                accessibilityText: "\(entry.element.text), słowo \(entry.offset + 1) w zdaniu",
+                                accessibilityHintText: "Odkłada słowo z powrotem do puli"
                             ) {
-                                onRemove(tile.id)
+                                onRemove(entry.element.id)
                             }
                         }
                     }
@@ -121,9 +192,10 @@ private struct VocabScrambleAnswerLine: View {
     }
 }
 
-/// Kafelki do wyboru.
+/// Kafelki do wyboru (słowa zdania i pułapki — nieodróżnialne przed sprawdzeniem).
 private struct VocabScramblePool: View {
     let tiles: [ScrambleTile]
+    let decoys: Int
     let onPlace: (Int) -> Void
 
     var body: some View {
@@ -142,11 +214,11 @@ private struct VocabScramblePool: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .accessibilityElement(children: .contain)
-        .accessibilityLabel(Text("Słowa do ułożenia"))
+        .accessibilityLabel(Text(VocabScrambleText.poolLabel(decoys: decoys)))
     }
 }
 
-/// „Podpowiedź” (tłumaczenie), „Wyczyść”, w drugiej próbie „Pokaż odpowiedź”, „Sprawdź”.
+/// „Wyczyść”, w drugiej próbie „Pokaż odpowiedź”, „Sprawdź”.
 private struct VocabScrambleActions: View {
     let model: VocabExerciseModel
 
@@ -166,17 +238,17 @@ private struct VocabScrambleActions: View {
 
     @ViewBuilder
     private var helpButtons: some View {
-        // Test (K4): bez podpowiedzi (tłumaczenia).
-        if !model.isAssessment, !model.scrambleHintShown, let translation = model.content.scramble?.translation, !translation.isEmpty {
-            StudyHintButton(title: "Podpowiedź") { model.showScrambleHint() }
-        }
-        if !model.placedTiles.isEmpty {
-            Button("Wyczyść", action: model.clearTiles)
+        // Zawsze w tym samym miejscu (nieaktywne przy pustym zdaniu) — układ nie skacze.
+        Button(action: model.clearTiles) {
+            Label("Wyczyść", systemImage: "arrow.uturn.backward")
                 .font(FluentFont.subheadline.weight(.semibold))
-                .foregroundStyle(Palette.accent)
+                .foregroundStyle(model.placedTiles.isEmpty ? Palette.inkSecondary : Palette.accent)
                 .frame(minHeight: HitTarget.minimum)
-                .accessibilityHint(Text("Wszystkie słowa wracają do puli"))
+                .contentShape(Rectangle())
         }
+        .buttonStyle(.plain)
+        .disabled(model.placedTiles.isEmpty)
+        .accessibilityHint(Text("Wszystkie słowa wracają do puli"))
         if model.phase == .retry {
             Button("Pokaż odpowiedź", action: model.giveUp)
                 .font(FluentFont.subheadline.weight(.semibold))

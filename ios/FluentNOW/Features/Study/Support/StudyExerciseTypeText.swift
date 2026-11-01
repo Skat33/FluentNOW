@@ -23,7 +23,7 @@ extension ExerciseType {
         case .meaning: return "Słowo w zdaniu — wybierz polskie znaczenie."
         case .recall: return "Polskie znaczenie — wpisz angielskie słowo."
         case .cloze: return "Wpisz brakujące słowo w zdaniu."
-        case .scramble: return "Ułóż zdanie z rozsypanych słów."
+        case .scramble: return "Przełóż polskie zdanie, układając angielskie słowa."
         case .matchPairs: return "Połącz słowa z ich tłumaczeniami."
         case .listeningChoice: return "Posłuchaj zdania i wybierz tłumaczenie."
         case .dictation: return "Posłuchaj i zapisz, co słyszysz."
