@@ -61,6 +61,8 @@ private struct TopicSearchScreen: View {
     @Environment(\.dismiss) private var dismiss
 
     @State private var previewItem: TopicPreviewItem?
+    /// Wyszukiwanie głosowe (FEEDBACK-9 N3; domyślnie po polsku — sytuację opisuje się po polsku).
+    @State private var voice = VoiceSearchController()
     @FocusState private var isFieldFocused: Bool
 
     var body: some View {
@@ -74,6 +76,7 @@ private struct TopicSearchScreen: View {
                 previewSheet(item)
             }
             .fluentSensoryFeedback(FluentHaptic.answerCorrect, trigger: model.addedTrigger)
+            .voiceSearchLifecycle(voice)
             .onAppear { isFieldFocused = model.query.isEmpty }
     }
 
@@ -83,6 +86,7 @@ private struct TopicSearchScreen: View {
                 query: $model.query,
                 isFocused: $isFieldFocused,
                 isSearching: model.isSearching,
+                voice: voice,
                 onSubmit: { Task { await model.submit() } }
             )
             TopicSearchPhaseContent(model: model, onPreview: { (item: TopicPreviewItem) in previewItem = item })
@@ -151,6 +155,7 @@ private struct TopicSearchFieldSection: View {
     @Binding var query: String
     var isFocused: FocusState<Bool>.Binding
     let isSearching: Bool
+    let voice: VoiceSearchController
     let onSubmit: () -> Void
 
     var body: some View {
@@ -159,14 +164,14 @@ private struct TopicSearchFieldSection: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundStyle(Palette.inkSecondary)
                     .accessibilityHidden(true)
-                TextField("Opisz sytuację, np. zamawianie w restauracji", text: $query)
+                TextField(voice.isListening ? "Słucham…" : "Opisz sytuację, np. zamawianie w restauracji", text: $query)
                     .autocorrectionDisabled()
                     .submitLabel(.search)
                     .focused(isFocused)
                     .onSubmit(onSubmit)
-                if isSearching {
+                if isSearching && !voice.isActive {
                     ProgressView()
-                } else if !query.isEmpty {
+                } else if !query.isEmpty && !voice.isActive {
                     Button {
                         query = ""
                     } label: {
@@ -177,9 +182,12 @@ private struct TopicSearchFieldSection: View {
                     .buttonStyle(.borderless)
                     .accessibilityLabel(Text("Wyczyść pole"))
                 }
+                VoiceSearchControls(voice: voice, text: $query, field: .topic) {
+                    isFocused.wrappedValue = false
+                }
             }
         } footer: {
-            Text("Po polsku lub po angielsku. Pokażemy wszystkie słowa i zwroty tej sytuacji — najważniejsze na górze.")
+            VoiceSearchFooter(voice: voice, hint: "Po polsku lub po angielsku — wpisz albo powiedz. Pokażemy wszystkie słowa i zwroty tej sytuacji, najważniejsze na górze.")
         }
     }
 }

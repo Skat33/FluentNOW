@@ -2,6 +2,8 @@ import Foundation
 import FluentKit
 
 /// Propozycja hasła z wbudowanego słownika (rekordy tego samego hasła zgrupowane).
+/// Od FEEDBACK-9 N3 arkusz używa `SearchSuggestion` (FluentKit, te same zasady grupowania);
+/// typ zostaje dla zgodności (testy aplikacji).
 struct AddWordCandidate: Identifiable, Hashable, Sendable {
     let term: String
     let translations: [String]
@@ -31,7 +33,7 @@ struct AddWordCandidate: Identifiable, Hashable, Sendable {
                 term: first.entry.term,
                 translations: translations,
                 level: first.entry.level,
-                isPolishMatch: first.match == .polish
+                isPolishMatch: first.match.isPolish
             )
         }
     }

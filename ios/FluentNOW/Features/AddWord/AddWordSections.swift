@@ -1,10 +1,11 @@
 import SwiftUI
 import FluentKit
 
-/// Pole wyszukiwania (EN lub PL).
+/// Pole wyszukiwania (EN lub PL) z mikrofonem (FEEDBACK-9 N3).
 struct AddWordSearchField: View {
     @Binding var query: String
     var isFocused: FocusState<Bool>.Binding
+    let voice: VoiceSearchController
     let onSubmit: () -> Void
 
     var body: some View {
@@ -13,13 +14,13 @@ struct AddWordSearchField: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundStyle(Palette.inkSecondary)
                     .accessibilityHidden(true)
-                TextField("Wpisz słowo po angielsku lub po polsku", text: $query)
+                TextField(voice.isListening ? "Słucham…" : "Wpisz słowo po angielsku lub po polsku", text: $query)
                     .textInputAutocapitalization(.never)
                     .autocorrectionDisabled()
                     .submitLabel(.search)
                     .focused(isFocused)
                     .onSubmit(onSubmit)
-                if !query.isEmpty {
+                if !query.isEmpty && !voice.isActive {
                     Button {
                         query = ""
                     } label: {
@@ -30,43 +31,37 @@ struct AddWordSearchField: View {
                     .buttonStyle(.borderless)
                     .accessibilityLabel(Text("Wyczyść pole"))
                 }
+                VoiceSearchControls(voice: voice, text: $query, field: .addWord) {
+                    isFocused.wrappedValue = false
+                }
             }
         } footer: {
-            Text("Propozycje znaczeń pojawiają się od razu, także bez internetu.")
+            VoiceSearchFooter(voice: voice, hint: "Propozycje pojawiają się od razu, także bez internetu. Możesz też powiedzieć słowo.")
         }
     }
 }
 
-/// Propozycje z wbudowanego słownika albo opcje, gdy hasła nie ma w bazie.
+/// Podpowiedzi z wbudowanego słownika („Czy chodziło Ci o…?”, propozycje, podobne słowa) albo
+/// opcje, gdy hasła nie ma w bazie (asystent AI, jeśli włączony; dodanie ręczne).
 struct AddWordResultsSection: View {
     let query: String
     let searchedQuery: String
-    let candidates: [AddWordCandidate]
+    let result: SearchSuggestionResult
+    let owned: OwnedVocabulary
     let assistantAvailable: Bool
     let isAskingAssistant: Bool
     let assistantError: String?
-    let onSelect: (AddWordCandidate) -> Void
+    let onSelect: (SearchSuggestion) -> Void
     let onAskAssistant: () -> Void
     let onManual: () -> Void
 
     private var trimmed: String { query.trimmingCharacters(in: .whitespacesAndNewlines) }
 
     var body: some View {
-        if !candidates.isEmpty {
-            Section("Propozycje") {
-                ForEach(candidates) { candidate in
-                    Button {
-                        onSelect(candidate)
-                    } label: {
-                        AddWordCandidateRow(candidate: candidate)
-                    }
-                    .buttonStyle(.plain)
-                }
-            }
-        }
+        WordSuggestionSections(result: result, owned: owned, query: trimmed, onSelect: onSelect)
         if !trimmed.isEmpty && searchedQuery == trimmed {
             Section {
-                if candidates.isEmpty {
+                if result.isEmpty {
                     Text("Nie ma „\(trimmed)” we wbudowanym słowniku.")
                         .font(FluentFont.callout)
                         .foregroundStyle(Palette.inkSecondary)
@@ -92,41 +87,13 @@ struct AddWordResultsSection: View {
                     Label("Dodaj ręcznie", systemImage: "square.and.pencil")
                 }
             } header: {
-                Text(candidates.isEmpty ? "Brak w bazie" : "Nie ma tu tego znaczenia?")
+                Text(result.matches.isEmpty ? "Brak w bazie" : "Nie ma tu tego znaczenia?")
             } footer: {
                 if !assistantAvailable {
                     Text("Asystenta AI możesz włączyć w Ustawieniach. Bez niego dodasz słowo ręcznie.")
                 }
             }
         }
-    }
-}
-
-private struct AddWordCandidateRow: View {
-    let candidate: AddWordCandidate
-
-    var body: some View {
-        HStack(spacing: Spacing.s) {
-            VStack(alignment: .leading, spacing: 2) {
-                Text(candidate.term)
-                    .font(FluentFont.bodyEmphasized)
-                    .foregroundStyle(Palette.ink)
-                Text(candidate.translations.joined(separator: " · "))
-                    .font(FluentFont.subheadline)
-                    .foregroundStyle(Palette.inkSecondary)
-                    .lineLimit(2)
-            }
-            Spacer(minLength: Spacing.xs)
-            LevelBadge(level: candidate.level)
-            Image(systemName: "chevron.right")
-                .font(FluentFont.footnote.weight(.semibold))
-                .foregroundStyle(Palette.inkTertiary)
-                .accessibilityHidden(true)
-        }
-        .contentShape(Rectangle())
-        .frame(minHeight: HitTarget.minimum)
-        .accessibilityElement(children: .combine)
-        .accessibilityHint(Text("Pokazuje znaczenia do wyboru"))
     }
 }
 

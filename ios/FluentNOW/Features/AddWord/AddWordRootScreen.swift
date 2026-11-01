@@ -105,7 +105,12 @@ struct AddWordQuickForm: View {
     @Environment(\.dismiss) private var dismiss
 
     @State private var query = ""
-    @State private var candidates: [AddWordCandidate] = []
+    /// Podpowiedzi podczas pisania (FEEDBACK-9 N3).
+    @State private var suggestions: SearchSuggestionResult = .empty
+    /// Słownik użytkownika (migawka) — „Masz już” w podpowiedziach.
+    @State private var owned: OwnedVocabulary = .empty
+    /// Wyszukiwanie głosowe w polu.
+    @State private var voice = VoiceSearchController()
     @State private var searchedQuery = ""
     @State private var lookup: Lookup?
     @State private var lookupSource: AddWordLookupSource = .builtIn
@@ -149,6 +154,8 @@ struct AddWordQuickForm: View {
                 AddWordExamplesSheet(item: item)
             }
             .task(id: query) { await search() }
+            .task(id: store.revision) { await refreshOwned() }
+            .voiceSearchLifecycle(voice)
             .onChange(of: query) { (_: String, _: String) in
                 lookup = nil
                 manual = nil
@@ -163,7 +170,7 @@ struct AddWordQuickForm: View {
 
     private var form: some View {
         Form {
-            AddWordSearchField(query: $query, isFocused: $isFieldFocused, onSubmit: submitSearch)
+            AddWordSearchField(query: $query, isFocused: $isFieldFocused, voice: voice, onSubmit: submitSearch)
             AddWordScanSection { (term: String) in query = term }  // I3: skanowanie tekstu
             if let outcome {
                 Section {
@@ -207,11 +214,12 @@ struct AddWordQuickForm: View {
             AddWordResultsSection(
                 query: query,
                 searchedQuery: searchedQuery,
-                candidates: candidates,
+                result: suggestions,
+                owned: owned,
                 assistantAvailable: assistant.activeProvider != .offline,
                 isAskingAssistant: isAskingAssistant,
                 assistantError: assistantError,
-                onSelect: { candidate in Task { await select(candidate) } },
+                onSelect: { (suggestion: SearchSuggestion) -> Void in Task { await select(term: suggestion.term) } },
                 onAskAssistant: { Task { await askAssistant() } },
                 onManual: { manual = AddWordManualDraft(term: query.trimmingCharacters(in: .whitespacesAndNewlines), sense: nil) }
             )
@@ -234,39 +242,44 @@ struct AddWordQuickForm: View {
     // MARK: Wyszukiwanie
 
     private func submitSearch() {
-        if let first = candidates.first, lookup == nil, manual == nil {
-            Task { await select(first) }
+        if let first = suggestions.matches.first ?? suggestions.corrections.first, lookup == nil, manual == nil {
+            Task { await select(term: first.term) }
         }
     }
 
     private func search() async {
         let text = query.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !text.isEmpty else {
-            candidates = []
+            suggestions = .empty
             searchedQuery = ""
             return
         }
+        // Debounce pisania (i kolejnych wyników częściowych dyktowania).
         try? await Task.sleep(for: .milliseconds(120))
         guard !Task.isCancelled else { return }
-        var hits = await env.content.search(text, limit: 30)
-        if hits.isEmpty {
-            // Indeks mógł się jeszcze budować przy pierwszym wyszukiwaniu — jedna ponowna próba.
-            try? await Task.sleep(for: .milliseconds(500))
-            guard !Task.isCancelled else { return }
-            hits = await env.content.search(text, limit: 30)
-        }
+        // Liczone na aktorze `ContentLibrary` (poza głównym wątkiem); pierwsze wywołanie czeka
+        // na zbudowanie indeksu.
+        let result = await env.content.suggestions(text, limit: 8)
         guard !Task.isCancelled else { return }
-        candidates = AddWordCandidate.group(hits)
+        suggestions = result
         searchedQuery = text
-        if !candidates.isEmpty { detent = .large }
+        if !result.isEmpty { detent = .large }
     }
 
-    private func select(_ candidate: AddWordCandidate) async {
+    private func refreshOwned() async {
+        let snapshot: OwnedVocabulary = await store.compute { (state: LearnerState) -> OwnedVocabulary in
+            OwnedVocabulary(state)
+        }
+        guard !Task.isCancelled else { return }
+        owned = snapshot
+    }
+
+    private func select(term: String) async {
         isLoadingLookup = true
-        let result = await env.content.lookup(term: candidate.term)
+        let result = await env.content.lookup(term: term)
         isLoadingLookup = false
         guard let result, !result.meanings.isEmpty else {
-            manual = AddWordManualDraft(term: candidate.term, sense: nil)
+            manual = AddWordManualDraft(term: term, sense: nil)
             return
         }
         show(result, source: .builtIn)
@@ -332,7 +345,7 @@ struct AddWordQuickForm: View {
         lookup = nil
         manual = nil
         selected = []
-        candidates = []
+        suggestions = .empty
         isFieldFocused = true
     }
 }

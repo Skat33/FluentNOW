@@ -2,8 +2,11 @@ import SwiftUI
 import FluentKit
 
 /// Segment „Słowa” karty Słownik: wyszukiwanie (PL i EN), filtry, sortowanie, akcje przesunięcia.
-/// Lista liczona poza głównym wątkiem (`store.compute`) z debounce.
+/// Lista liczona poza głównym wątkiem (`store.compute`) z debounce. FEEDBACK-9 N3: mikrofon
+/// w pasku (pole `.searchable` należy do systemu), „Czy chodziło Ci o…?” wśród własnych słów
+/// i podpowiedzi z wbudowanego słownika.
 struct WordListView: View {
+    @Environment(AppEnvironment.self) private var env
     @Environment(LearningStore.self) private var store
     @Environment(SpeechService.self) private var speech
     @Environment(AppRouter.self) private var router
@@ -11,6 +14,8 @@ struct WordListView: View {
     @State private var searchText = ""
     @State private var filter = WordListFilter()
     @State private var result: WordListResult?
+    @State private var extras: WordSearchExtras = .empty
+    @State private var voice = VoiceSearchController()
 
     private var query: WordListQuery {
         WordListQuery(revision: store.revision, text: searchText, filter: filter)
@@ -18,8 +23,17 @@ struct WordListView: View {
 
     var body: some View {
         content
-            .searchable(text: $searchText, prompt: Text("Szukaj po angielsku lub po polsku"))
+            .searchable(text: $searchText, prompt: Text(voice.isListening ? "Słucham…" : "Szukaj po angielsku lub po polsku"))
             .task(id: query) { await reload() }
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    VoiceSearchToolbarButton(voice: voice, text: $searchText, field: .dictionary)
+                }
+            }
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                VoiceSearchBanner(voice: voice, text: $searchText, field: .dictionary)
+            }
+            .voiceSearchLifecycle(voice)
     }
 
     @ViewBuilder
@@ -116,6 +130,14 @@ struct WordListView: View {
                     }
                 }
             }
+            if !searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                WordSearchExtrasSections(
+                    extras: extras,
+                    hasOwnMatches: result.matchCount > 0,
+                    onUseCorrection: { (term: String) -> Void in searchText = term },
+                    onAddBuiltIn: { (item: SearchSuggestion) -> Void in router.presentQuickAdd(prefill: item.term) }
+                )
+            }
             if result.matchCount == 0 {
                 Section {
                     WordListNoResults {
@@ -176,6 +198,23 @@ struct WordListView: View {
         }
         guard !Task.isCancelled else { return }
         result = computed
+        await reloadExtras(text: current.text, hasOwnMatches: computed.matchCount > 0)
+    }
+
+    /// „Czy chodziło Ci o…?” (własne słowa) i podpowiedzi z bazy — tylko przy wpisanym tekście.
+    private func reloadExtras(text raw: String, hasOwnMatches: Bool) async {
+        let text = raw.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !text.isEmpty else {
+            extras = .empty
+            return
+        }
+        var computed: WordSearchExtras = await store.compute { (state: LearnerState) -> WordSearchExtras in
+            WordSearchExtras.local(state: state, query: text, needsCorrections: !hasOwnMatches)
+        }
+        guard !Task.isCancelled else { return }
+        computed.builtIn = await env.content.suggestions(text, limit: 8)
+        guard !Task.isCancelled else { return }
+        extras = computed
     }
 }
 

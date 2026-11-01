@@ -230,6 +230,14 @@ actor ContentLibrary {
     /// Czy indeks wyszukiwania jest gotowy.
     var isSearchReady: Bool { searchIndex != nil }
 
+    /// Podpowiedzi podczas pisania (FEEDBACK-9 N3): zgrupowane hasła (dokładne → prefiks EN →
+    /// PL → słowo wewnątrz frazy), „Czy chodziło Ci o…?” i podobne słowa. Liczone na aktorze
+    /// (poza głównym wątkiem); przy pierwszym wywołaniu czeka na zbudowanie indeksu.
+    func suggestions(_ query: String, limit: Int = 8) async -> SearchSuggestionResult {
+        guard let index = await readySearchIndex() else { return .empty }
+        return index.suggestions(query, limit: limit)
+    }
+
     /// Wszystkie znaczenia hasła z bazy (`VocabularyMerger.lookup`), `nil` gdy brak.
     func lookup(term: String) async -> Lookup? {
         guard let index = await readySearchIndex() else { return nil }

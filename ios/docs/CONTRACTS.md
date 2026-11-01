@@ -89,6 +89,7 @@ actor ContentLibrary {
     func topic(id: String) async throws -> TopicFile
     func entry(reference: String) async throws -> TopicEntry      // "airport/airport.boarding-pass" lub "starter/starter.do"
     func search(_ query: String, limit: Int) async -> [SearchHit]   // ContentSearch zbudowany raz; pusty wynik, jeśli indeks się jeszcze buduje
+    func suggestions(_ query: String, limit: Int = 8) async -> SearchSuggestionResult  // N3: podpowiedzi + „Czy chodziło Ci o…?”; czeka na indeks
     func lookup(term: String) async -> Lookup?                      // wszystkie znaczenia hasła z bazy (VocabularyMerger.lookup), nil gdy brak
     func answerVariants() async -> AnswerVariants
     func polishAnswerIndex() async -> PolishAnswerIndex

@@ -116,8 +116,8 @@ targets:
         INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
         INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
-        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: "FluentNOW rozpoznaje Twoją wymowę na urządzeniu, gdy sam włączysz ćwiczenie wymowy. Nagrania nie są zapisywane."
-        INFOPLIST_KEY_NSMicrophoneUsageDescription: "Mikrofon jest potrzebny tylko w ćwiczeniu wymowy, gdy naciśniesz „Powiedz to”. Nagranie nie opuszcza urządzenia i nie jest zapisywane."
+        INFOPLIST_KEY_NSSpeechRecognitionUsageDescription: "FluentNOW zamienia mowę na tekst, gdy sam dotkniesz mikrofonu: w ćwiczeniu wymowy i przy wyszukiwaniu słów głosem (po angielsku lub po polsku). Rozpoznawanie odbywa się na urządzeniu, jeśli to możliwe; w przeciwnym razie przez usługę rozpoznawania mowy Apple. Nagrania nie są zapisywane."
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: "Mikrofon włącza się tylko po dotknięciu przycisku: w ćwiczeniu wymowy („Powiedz to”) i przy wyszukiwaniu słów głosem. Nagranie nie jest zapisywane."
         INFOPLIST_KEY_NSCameraUsageDescription: "Aparat jest potrzebny tylko do skanowania tekstu, gdy wybierzesz „Skanuj tekst”. Tekst jest rozpoznawany na urządzeniu, a obraz nie jest zapisywany."
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
