@@ -337,6 +337,23 @@ struct StudyHomeView: View {
         }
     }
 
+    /// Sesja słownictwa tylko ze wskazanych słów (`StudyLaunchRequest.wordIDs`) — wszystkie
+    /// słowa z listy, najpierw najbardziej zaległe (tryb `mixed` na zawężonym stanie).
+    private func startWords(_ wordIDs: Set<String>, minutes requested: Int?) {
+        guard !isBusy else { return }
+        isStarting = true
+        startingMode = .mixed
+        notice = nil
+        let minutes = sessionMinutes(requested)
+        let limitedTo = collection
+        Task { @MainActor in
+            let outcome = await StudyStarter.startVocabulary(mode: .mixed, minutes: minutes, collection: limitedTo, store: store, images: env.images, wordIDs: wordIDs)
+            isStarting = false
+            startingMode = nil
+            show(outcome, noticeInline: false)
+        }
+    }
+
     private func show(_ outcome: StudyStarter.Outcome, noticeInline: Bool) {
         switch outcome {
         case .flow(let flow):
@@ -375,6 +392,12 @@ struct StudyHomeView: View {
             return
         }
         collection = request.collection
+        // „Powtórz je” (raport tygodniowy): sesja tylko z tych słów. Przerwanej sesji słownictwa nie
+        // nadpisujemy — wtedy zwykła ścieżka z oknem „Kontynuuj / Zacznij od nowa”.
+        if !request.wordIDs.isEmpty && store.state.session == nil {
+            startWords(Set(request.wordIDs), minutes: request.minutes)
+            return
+        }
         // „Ćwiczenia” (J1): `exercise-<typ>` (np. `fluentnow://study/start?mode=exercise-scramble`).
         if let type = request.modes.compactMap({ (raw: String) -> ExerciseType? in SingleTypeSession.type(ofMode: raw) }).first {
             if let minutes = request.minutes, SingleTypeSession.durations.contains(minutes) {

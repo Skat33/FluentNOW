@@ -32,7 +32,7 @@ struct StudySummaryXPBadge: View {
         let ids = reviewIDs
         let prefix = historyIDPrefix
         let computed: XPSessionGain = await store.compute { (state: LearnerState) -> XPSessionGain in
-            Progression.sessionGain(state, reviewIDs: ids, historyIDPrefix: prefix)
+            Progression.sessionGain(state, reviewIDs: ids, historyIDPrefix: prefix, timeZone: TimeZone.current)
         }
         guard !Task.isCancelled else { return }
         gain = computed

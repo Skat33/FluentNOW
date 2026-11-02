@@ -275,9 +275,13 @@ struct AddWordQuickForm: View {
     }
 
     private func select(term: String) async {
+        guard !isLoadingLookup else { return }
+        let typed = query
         isLoadingLookup = true
         let result = await env.content.lookup(term: term)
         isLoadingLookup = false
+        // Pole zmieniło się w trakcie wczytywania (pisanie, dyktowanie) — wynik jest nieaktualny.
+        guard query == typed else { return }
         guard let result, !result.meanings.isEmpty else {
             manual = AddWordManualDraft(term: term, sense: nil)
             return

@@ -205,6 +205,11 @@ final class AppEnvironment {
             dueCount: summary.dueCount,
             goalReachedToday: summary.goalReached
         )
+        // Raport tygodniowy (opt-in): ponowne zaplanowanie podmienia link starszych powiadomień
+        // (`fluentnow://progress` → `fluentnow://progress/weekly`, code-qa-9).
+        if UserDefaults.standard.bool(forKey: SettingsWeeklyReportToggle.storageKey) {
+            await reminders.scheduleWeeklyReport(enabled: true)
+        }
     }
 
     // MARK: - Implementacja

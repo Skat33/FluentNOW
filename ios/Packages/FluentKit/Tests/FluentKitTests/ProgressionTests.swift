@@ -224,6 +224,31 @@ final class ProgressionTests: XCTestCase {
         XCTAssertEqual(ProgressionSummary.empty.level.level, 1)
     }
 
+    /// code-qa-9 (backlog: XP / seria w dniach UTC): with the user's time zone, learning shortly
+    /// after local midnight counts for the local „today” and as a separate local day of a streak.
+    func testDaysFollowTheUsersTimeZone() throws {
+        let warsaw = try XCTUnwrap(TimeZone(identifier: "Europe/Warsaw"))
+        let hour: Double = 3_600_000
+        // testNow = 2026-09-01 12:00 UTC; Warsaw is UTC+2 in September.
+        let lateNight = testNow + 11.5 * hour   // 23:30 UTC = 01:30 on 2 September in Warsaw
+        let now = testNow + 12.5 * hour         // 00:30 UTC = 02:30 on 2 September in Warsaw
+        let learner = state([review("night", at: lateNight)])
+        XCTAssertEqual(Progression.summary(learner, now: now).todayXP, 0, "UTC: the answer was yesterday")
+        XCTAssertGreaterThan(Progression.summary(learner, now: now, timeZone: warsaw).todayXP, 0, "Warsaw: the answer was today")
+        XCTAssertEqual(Progression.dayNumber(lateNight, timeZone: warsaw), Progression.dayNumber(now, timeZone: warsaw))
+        XCTAssertEqual(Progression.dayNumber(lateNight, timeZone: nil), Progression.dayNumber(lateNight))
+        XCTAssertEqual(Progression.dayNumber(lateNight, timeZone: warsaw), Progression.dayNumber(lateNight) + 1)
+
+        // 23:00 and 00:30 Warsaw time are one UTC day but two local days (a 2-day streak).
+        let evening = testNow + 9 * hour        // 21:00 UTC = 23:00 Warsaw, 1 September
+        let afterMidnight = testNow + 10.5 * hour // 22:30 UTC = 00:30 Warsaw, 2 September
+        let twoNights = state([review("a", word: "w1", at: evening), review("b", word: "w2", at: afterMidnight)])
+        XCTAssertEqual(Progression.ledger(twoNights).days.count, 1)
+        let local = Progression.ledger(twoNights, timeZone: warsaw)
+        XCTAssertEqual(local.days.count, 2)
+        XCTAssertEqual(local.days.last?.streak, XPRules.streakBonus(length: 2))
+    }
+
     // MARK: Balance simulation (results in docs/reports/onboarding-progress.md)
 
     func testBalanceSimulationThirtyAndNinetyDays() {

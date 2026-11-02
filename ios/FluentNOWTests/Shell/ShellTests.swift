@@ -18,6 +18,26 @@ final class DeepLinkTests: XCTestCase {
         XCTAssertEqual(link("FLUENTNOW://TODAY"), .tab(.today))
     }
 
+    /// code-qa-9: powiadomienie o raporcie tygodniowym otwiera sam raport, nie tylko kartę Postępy.
+    func testWeeklyReportLink() {
+        XCTAssertEqual(link("fluentnow://progress/weekly"), .weeklyReport(weekOffset: 0))
+        XCTAssertEqual(link("fluentnow://stats/Weekly?week=2"), .weeklyReport(weekOffset: 2))
+        XCTAssertEqual(link("fluentnow://progress/weekly?week=-4"), .weeklyReport(weekOffset: 0))
+        XCTAssertEqual(link("fluentnow://progress/weekly?week=99"), .weeklyReport(weekOffset: DeepLink.maxWeekOffset))
+        XCTAssertEqual(link("fluentnow://progress/other"), .tab(.progress))
+        XCTAssertEqual(link(ReminderService.weeklyReportDeepLink), .weeklyReport(weekOffset: 0))
+    }
+
+    @MainActor
+    func testRouterOpensWeeklyReportOnProgressTab() {
+        let router = AppRouter(selectedTab: .today)
+        router.presentQuickAdd()
+        router.open(.weeklyReport(weekOffset: 1))
+        XCTAssertEqual(router.selectedTab, .progress)
+        XCTAssertNil(router.activeSheet)
+        XCTAssertEqual(router.progressPath.count, 1)
+    }
+
     func testLibrary() {
         XCTAssertEqual(link("fluentnow://words"), .library(.words, nil))
         XCTAssertEqual(link("fluentnow://words/w-123"), .library(.words, .word(id: "w-123")))

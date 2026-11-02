@@ -169,7 +169,7 @@ actor UsefulWordsCatalog {
 
     /// Szczegóły wpisów z wielu plików — każdy plik dekodowany równolegle, poza aktorem.
     private static func readDetails(root: URL, byFile: [String: [String]]) async -> [String: UsefulWordDetail] {
-        await withTaskGroup(of: [String: UsefulWordDetail].self, returning: [String: UsefulWordDetail].self) { (group: inout TaskGroup<[String: UsefulWordDetail]>) async -> [String: UsefulWordDetail] in
+        await withTaskGroup(of: [String: UsefulWordDetail].self, returning: [String: UsefulWordDetail].self) { group in
             for (file, ids) in byFile {
                 let wanted = Set(ids)
                 group.addTask { () -> [String: UsefulWordDetail] in

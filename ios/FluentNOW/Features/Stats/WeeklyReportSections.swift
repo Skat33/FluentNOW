@@ -232,7 +232,7 @@ private struct WeeklyReportTrendIcon: View {
     }
 }
 
-/// Najtrudniejsze słowa tygodnia + „Powtórz je” (sesja pomyłek).
+/// Najtrudniejsze słowa tygodnia + „Powtórz je” (sesja tylko z tych słów — `StudyLaunchRequest.wordIDs`).
 struct WeeklyReportHardWordsCard: View {
     let words: [WeeklyHardWord]
     let onPractice: () -> Void

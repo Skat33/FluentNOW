@@ -55,7 +55,7 @@ struct StatsSnapshot: Hashable, Sendable {
             estimate: LevelEstimator.estimatedLevel(state),
             goal: state.settings.goal,
             analysis: LearnerAnalyzer.analyze(state, topics: topics, now: now),
-            progression: Progression.summary(state, now: now)
+            progression: Progression.summary(state, now: now, timeZone: TimeZone.current)
         )
     }
 }

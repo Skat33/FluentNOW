@@ -44,10 +44,13 @@ enum StudyStarter {
     /// `images`: zadania „Słowo i zdjęcie” tylko dla słów, których zdjęcia są już na dysku (G2).
     /// `fresh` (FEEDBACK-8 M2, „Zacznij od nowa” na kafelku codziennej mieszanki / pomyłek / par):
     /// nowa sesja z innymi zdaniami niż przerwana (`FreshStart.vocabularySession`).
-    static func startVocabulary(mode: StudyMode, minutes: Int, collection: String?, store: LearningStore, images: WordImageService? = nil, fresh: Bool = false) async -> Outcome {
+    /// `wordIDs` (code-qa-9, „Powtórz je” w raporcie tygodniowym): sesja budowana tylko z tych słów
+    /// (pusty zbiór = wszystkie słowa); zadania wskazują prawdziwe słowa stanu.
+    static func startVocabulary(mode: StudyMode, minutes: Int, collection: String?, store: LearningStore, images: WordImageService? = nil, fresh: Bool = false, wordIDs: Set<String> = []) async -> Outcome {
         requestPhotos(store: store, images: images)
         let cached = await cachedPictureIDs(images)
-        let session = await store.compute { (state: LearnerState) -> VocabSession in
+        let session = await store.compute { (full: LearnerState) -> VocabSession in
+            let state: LearnerState = StudyStarter.scoped(full, to: wordIDs)
             let ready = PictureExercise.readyMeaningIDs(state: state, cached: cached)
             if fresh {
                 return FreshStart.vocabularySession(state: state, mode: mode, minutes: minutes, collection: collection, pictureMeaningIDs: ready)
@@ -136,6 +139,15 @@ enum StudyStarter {
         case .singleType, .vocabulary, .flashcards:
             return .message("Ten rodzaj ćwiczeń zaczyna się od nowa na swoim ekranie.")
         }
+    }
+
+    /// Kopia stanu tylko ze wskazanymi słowami (pusty zbiór — stan bez zmian). Czysta funkcja,
+    /// wołana poza głównym wątkiem (`store.compute`), więc `nonisolated`.
+    nonisolated static func scoped(_ state: LearnerState, to wordIDs: Set<String>) -> LearnerState {
+        guard !wordIDs.isEmpty else { return state }
+        var copy = state
+        copy.words = state.words.filter { (word: Word) -> Bool in wordIDs.contains(word.id) }
+        return copy
     }
 
     // MARK: - Prywatne

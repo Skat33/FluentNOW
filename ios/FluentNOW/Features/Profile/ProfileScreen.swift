@@ -19,9 +19,10 @@ struct ProfileSnapshot: Sendable, Equatable {
     var achievements: [ProfileAchievement]
 
     static func make(state: LearnerState, now: Timestamp) -> ProfileSnapshot {
-        let summary = Progression.summary(state, now: now)
+        // Dni XP w strefie czasowej użytkownika (nauka 0:00–2:00 to „dziś”, nie dzień UTC).
+        let summary = Progression.summary(state, now: now, timeZone: TimeZone.current)
         let overview = ProgressStatistics.overview(state, now: now)
-        var input = ProfileAchievements.input(from: state)
+        var input = ProfileAchievements.input(from: state, timeZone: TimeZone.current)
         input.level = summary.level.level
         return ProfileSnapshot(
             level: summary.level,

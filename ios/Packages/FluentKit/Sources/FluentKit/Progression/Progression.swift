@@ -40,7 +40,8 @@ public enum XPSource: String, CaseIterable, Sendable, Hashable, Identifiable {
 
 /// XP earned on one UTC day.
 public struct XPDay: Sendable, Hashable, Identifiable {
-    /// Days since 1970-01-01 (UTC).
+    /// Days since 1970-01-01 — UTC days, or local days of the time zone passed to
+    /// `Progression.ledger(_:timeZone:)` (the app passes the user's).
     public var day: Int
     public var vocabulary: Int
     public var reading: Int
@@ -285,14 +286,26 @@ public struct ProgressionSummary: Sendable, Hashable {
 
 /// XP and levels (G5), computed deterministically from the history: vocabulary `reviews`,
 /// compacted `reviewSummaries`, and reading / practice / production histories. No counter is
-/// stored, so iCloud merges cannot conflict and nothing can be lost. Days are UTC days (the same
-/// keys as `reviewSummaries`), so every device computes the same total.
+/// stored, so iCloud merges cannot conflict and nothing can be lost.
+///
+/// Days: `timeZone == nil` — UTC days (the same keys as `reviewSummaries`; default, used by tests);
+/// the app passes the user's time zone (code-qa-9: learning between 0:00 and 2:00 Polish time
+/// used to count for the previous / next UTC day — „today's XP”, the daily goal bonus and the
+/// streak bonus now follow the user's calendar day). Compacted summaries keep their UTC day keys.
 public enum Progression {
     /// Days since 1970-01-01 in UTC.
     public static func dayNumber(_ timestamp: Timestamp) -> Int {
         let days = (timestamp / TimeConstants.dayMs).rounded(.down)
         guard days.isFinite, abs(days) < 1_000_000_000 else { return 0 }
         return Int(days)
+    }
+
+    /// Day number of `timestamp` in `timeZone` (local calendar day, counted like UTC days so
+    /// consecutive local days differ by 1); `nil` — UTC.
+    public static func dayNumber(_ timestamp: Timestamp, timeZone: TimeZone?) -> Int {
+        guard let timeZone, timestamp.isFinite else { return dayNumber(timestamp) }
+        let offsetSeconds = timeZone.secondsFromGMT(for: Date(timeIntervalSince1970: timestamp / 1000))
+        return dayNumber(timestamp + Double(offsetSeconds) * 1000)
     }
 
     /// Day number of a `yyyy-MM-dd` summary key, `nil` when malformed.
@@ -329,13 +342,13 @@ public enum Progression {
     }
 
     /// XP of every active day.
-    public static func ledger(_ state: LearnerState) -> XPLedger {
+    public static func ledger(_ state: LearnerState, timeZone: TimeZone? = nil) -> XPLedger {
         var totals: [Int: DayTotals] = [:]
-        addReviews(state.reviews, to: &totals)
+        addReviews(state.reviews, timeZone: timeZone, to: &totals)
         addSummaries(state.reviewSummaries, to: &totals)
-        addReadings(state.readingHistory, to: &totals)
-        addPractice(state.practiceHistory, to: &totals)
-        addProduction(state.productionHistory, to: &totals)
+        addReadings(state.readingHistory, timeZone: timeZone, to: &totals)
+        addPractice(state.practiceHistory, timeZone: timeZone, to: &totals)
+        addProduction(state.productionHistory, timeZone: timeZone, to: &totals)
 
         let goalThreshold = XPRules.goalThreshold(goal: state.settings.goal)
         var days: [XPDay] = []
@@ -360,7 +373,7 @@ public enum Progression {
         return XPLedger(days: days)
     }
 
-    private static func addReviews(_ reviews: [Review], to totals: inout [Int: DayTotals]) {
+    private static func addReviews(_ reviews: [Review], timeZone: TimeZone?, to totals: inout [Int: DayTotals]) {
         let ordered = reviews
             .filter { !$0.demo && $0.at.isFinite }
             .sorted { (lhs: Review, rhs: Review) -> Bool in
@@ -368,7 +381,7 @@ public enum Progression {
             }
         var repetitions: [String: Int] = [:]
         for review in ordered {
-            let day = dayNumber(review.at)
+            let day = dayNumber(review.at, timeZone: timeZone)
             totals[day, default: DayTotals()].answers += 1
             // Reading questions are rewarded with the reading itself.
             guard review.source == .exercise else { continue }
@@ -394,12 +407,12 @@ public enum Progression {
         }
     }
 
-    private static func addReadings(_ entries: [ReadingHistoryEntry], to totals: inout [Int: DayTotals]) {
+    private static func addReadings(_ entries: [ReadingHistoryEntry], timeZone: TimeZone?, to totals: inout [Int: DayTotals]) {
         let ordered = entries.sorted { (lhs: ReadingHistoryEntry, rhs: ReadingHistoryEntry) -> Bool in
             lhs.at != rhs.at ? lhs.at < rhs.at : lhs.id < rhs.id
         }
         for entry in ordered where entry.at.isFinite && entry.at > 0 {
-            let day = dayNumber(entry.at)
+            let day = dayNumber(entry.at, timeZone: timeZone)
             var value = totals[day] ?? DayTotals()
             if value.readingSets < XPRules.maxRewardedSetsPerDay {
                 let correct = min(max(0, entry.correct), max(0, entry.total))
@@ -411,12 +424,12 @@ public enum Progression {
         }
     }
 
-    private static func addPractice(_ entries: [PracticeHistoryEntry], to totals: inout [Int: DayTotals]) {
+    private static func addPractice(_ entries: [PracticeHistoryEntry], timeZone: TimeZone?, to totals: inout [Int: DayTotals]) {
         let ordered = entries.sorted { (lhs: PracticeHistoryEntry, rhs: PracticeHistoryEntry) -> Bool in
             lhs.at != rhs.at ? lhs.at < rhs.at : lhs.id < rhs.id
         }
         for entry in ordered where entry.at.isFinite && entry.at > 0 {
-            let day = dayNumber(entry.at)
+            let day = dayNumber(entry.at, timeZone: timeZone)
             var value = totals[day] ?? DayTotals()
             if value.practiceSets < XPRules.maxRewardedSetsPerDay {
                 let correct = min(max(0, entry.correct), max(0, entry.total))
@@ -428,12 +441,12 @@ public enum Progression {
         }
     }
 
-    private static func addProduction(_ entries: [ProductionHistoryEntry], to totals: inout [Int: DayTotals]) {
+    private static func addProduction(_ entries: [ProductionHistoryEntry], timeZone: TimeZone?, to totals: inout [Int: DayTotals]) {
         let ordered = entries.sorted { (lhs: ProductionHistoryEntry, rhs: ProductionHistoryEntry) -> Bool in
             lhs.at != rhs.at ? lhs.at < rhs.at : lhs.id < rhs.id
         }
         for entry in ordered where entry.at.isFinite && entry.at > 0 {
-            let day = dayNumber(entry.at)
+            let day = dayNumber(entry.at, timeZone: timeZone)
             var value = totals[day] ?? DayTotals()
             if value.productionSets < XPRules.maxRewardedSetsPerDay {
                 let correct = min(max(0, entry.correct), max(0, entry.total))
@@ -447,8 +460,8 @@ public enum Progression {
 
     // MARK: Totals and levels
 
-    public static func totalXP(_ state: LearnerState) -> Int {
-        ledger(state).total
+    public static func totalXP(_ state: LearnerState, timeZone: TimeZone? = nil) -> Int {
+        ledger(state, timeZone: timeZone).total
     }
 
     /// Total XP needed to reach `level` (level 1 = 0).
@@ -467,16 +480,16 @@ public enum Progression {
         return XPLevel(level: level, totalXP: total, levelStartXP: start, nextLevelXP: next)
     }
 
-    public static func level(_ state: LearnerState) -> XPLevel {
-        level(forXP: totalXP(state))
+    public static func level(_ state: LearnerState, timeZone: TimeZone? = nil) -> XPLevel {
+        level(forXP: totalXP(state, timeZone: timeZone))
     }
 
     /// XP earned by a session: the total with the session's answers minus the total without them
     /// (so repetition discounts and the daily goal bonus are counted exactly). `historyIDPrefix`
     /// also removes history entries written by that session (combined sessions use
     /// `"<session id>:"`).
-    public static func sessionGain(_ state: LearnerState, reviewIDs: [String], historyIDPrefix: String? = nil) -> XPSessionGain {
-        let after = totalXP(state)
+    public static func sessionGain(_ state: LearnerState, reviewIDs: [String], historyIDPrefix: String? = nil, timeZone: TimeZone? = nil) -> XPSessionGain {
+        let after = totalXP(state, timeZone: timeZone)
         var before = state
         let removed = Set(reviewIDs)
         before.reviews = state.reviews.filter { !removed.contains($0.id) }
@@ -484,7 +497,7 @@ public enum Progression {
             before.practiceHistory = state.practiceHistory.filter { !$0.id.hasPrefix(prefix) }
             before.productionHistory = state.productionHistory.filter { !$0.id.hasPrefix(prefix) }
         }
-        let previous = totalXP(before)
+        let previous = totalXP(before, timeZone: timeZone)
         return XPSessionGain(
             xp: max(0, after - previous),
             levelBefore: level(forXP: previous).level,
@@ -493,9 +506,9 @@ public enum Progression {
     }
 
     /// Summary for Today and Progress.
-    public static func summary(_ state: LearnerState, now: Timestamp) -> ProgressionSummary {
-        let book: XPLedger = ledger(state)
-        let today = dayNumber(now)
+    public static func summary(_ state: LearnerState, now: Timestamp, timeZone: TimeZone? = nil) -> ProgressionSummary {
+        let book: XPLedger = ledger(state, timeZone: timeZone)
+        let today = dayNumber(now, timeZone: timeZone)
         var byDay: [Int: XPDay] = [:]
         for item in book.days { byDay[item.day] = item }
         let recent = (0..<14).map { (offset: Int) -> XPDay in

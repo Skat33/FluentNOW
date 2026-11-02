@@ -266,9 +266,11 @@ public enum WeeklyReportBuilder {
         var current = period(context, state: state, from: start.timestamp, to: end.timestamp, calendar: calendar)
         var previous = period(context, state: state, from: previousStart.timestamp, to: start.timestamp, calendar: calendar)
 
-        let xpBeforePrevious = xpTotal(state, before: previousStart.timestamp)
-        let xpBeforeStart = xpTotal(state, before: start.timestamp)
-        let xpBeforeEnd = xpTotal(state, before: end.timestamp)
+        // XP days in the report's calendar (the user's time zone) — like the week boundaries.
+        let zone: TimeZone = calendar.timeZone
+        let xpBeforePrevious = xpTotal(state, before: previousStart.timestamp, timeZone: zone)
+        let xpBeforeStart = xpTotal(state, before: start.timestamp, timeZone: zone)
+        let xpBeforeEnd = xpTotal(state, before: end.timestamp, timeZone: zone)
         current.xp = max(0, xpBeforeEnd - xpBeforeStart)
         previous.xp = max(0, xpBeforeStart - xpBeforePrevious)
 
@@ -410,7 +412,7 @@ public enum WeeklyReportBuilder {
     }
 
     /// XP total of the history strictly before `cutoff`.
-    static func xpTotal(_ state: LearnerState, before cutoff: Timestamp) -> Int {
+    static func xpTotal(_ state: LearnerState, before cutoff: Timestamp, timeZone: TimeZone? = nil) -> Int {
         var past = state
         past.reviews = state.reviews.filter { $0.at < cutoff }
         past.reviewSummaries = state.reviewSummaries.filter { (summary: ReviewSummary) -> Bool in
@@ -420,7 +422,7 @@ public enum WeeklyReportBuilder {
         past.readingHistory = state.readingHistory.filter { $0.at < cutoff }
         past.practiceHistory = state.practiceHistory.filter { $0.at < cutoff }
         past.productionHistory = state.productionHistory.filter { $0.at < cutoff }
-        return Progression.totalXP(past)
+        return Progression.totalXP(past, timeZone: timeZone)
     }
 
     private static func skillTrends(_ context: Context, current: (Timestamp, Timestamp), previous: (Timestamp, Timestamp)) -> [WeeklySkillTrend] {

@@ -98,8 +98,8 @@ public enum ProfileAchievements {
     }
 
     /// Input computed from the state (one pass over the XP ledger).
-    public static func input(from state: LearnerState) -> AchievementInput {
-        let ledger = Progression.ledger(state)
+    public static func input(from state: LearnerState, timeZone: TimeZone? = nil) -> AchievementInput {
+        let ledger = Progression.ledger(state, timeZone: timeZone)
         let activeDays = ledger.days
             .filter { (day: XPDay) -> Bool in day.answers > 0 || day.total > 0 }
             .map { (day: XPDay) -> Int in day.day }

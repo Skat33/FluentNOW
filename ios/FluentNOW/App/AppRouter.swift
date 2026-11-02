@@ -187,6 +187,16 @@ final class AppRouter {
             presentQuickAdd(prefill: prefill)
         case .topicSearch(let query, let topicID):
             presentTopicSearch(query: query, topicID: topicID)
+        case .weeklyReport(let weekOffset):
+            openWeeklyReport(weekOffset: weekOffset)
         }
+    }
+
+    /// Raport tygodniowy (powiadomienie niedzielne, `fluentnow://progress/weekly`): karta Postępy
+    /// od korzenia + ekran raportu.
+    func openWeeklyReport(weekOffset: Int = 0) {
+        activeSheet = nil
+        popToRoot(.progress)
+        push(StatsRoute.weeklyReport(weekOffset: max(0, weekOffset)), on: .progress)
     }
 }

@@ -16,12 +16,16 @@ struct StudyLaunchRequest: Hashable, Sendable {
     var resume: Bool
     /// Ograniczenie do kolekcji (np. „Ćwicz tę kolekcję”), `nil` = wszystkie słowa.
     var collection: String?
+    /// Sesja tylko z tych słów (np. „Powtórz je” w raporcie tygodniowym) — pusta lista = bez
+    /// ograniczenia. Nie pochodzi z deep linków (identyfikatory są wewnętrzne).
+    var wordIDs: [String]
 
-    init(modes: [String] = [], minutes: Int? = nil, resume: Bool = false, collection: String? = nil) {
+    init(modes: [String] = [], minutes: Int? = nil, resume: Bool = false, collection: String? = nil, wordIDs: [String] = []) {
         self.modes = modes
         self.minutes = minutes
         self.resume = resume
         self.collection = collection
+        self.wordIDs = wordIDs
     }
 
     /// Codzienna mieszanka jednym dotknięciem.
@@ -55,6 +59,7 @@ enum LibraryDestination: Hashable, Sendable {
 /// | `fluentnow://study/resume` | wznowienie sesji |
 /// | `fluentnow://add?text=borrow` | szybkie dodawanie (z wypełnionym polem) |
 /// | `fluentnow://progress` · `fluentnow://settings` | Postępy / Ustawienia |
+/// | `fluentnow://progress/weekly` · `?week=1` | raport tygodniowy (0 = bieżący tydzień) — powiadomienie niedzielne |
 enum DeepLink: Hashable, Sendable {
     case tab(AppTab)
     case library(LibrarySection, LibraryDestination?)
@@ -62,6 +67,11 @@ enum DeepLink: Hashable, Sendable {
     case quickAdd(prefill: String?)
     /// Wyszukiwanie tematu (tematy nie są publicznym katalogiem — F1).
     case topicSearch(query: String?, topicID: String?)
+    /// Raport tygodniowy na karcie Postępy (`weekOffset`: 0 = bieżący, 1 = poprzedni, …).
+    case weeklyReport(weekOffset: Int)
+
+    /// Najdalszy tydzień wstecz w linku (jak wybór tygodnia w raporcie).
+    static let maxWeekOffset = 11
 
     static let scheme = "fluentnow"
     /// Ochrona przed absurdalnie długimi parametrami z zewnątrz.
@@ -94,7 +104,12 @@ enum DeepLink: Hashable, Sendable {
             let query = items.first(where: { $0.name == "q" || $0.name == "text" })?.value.flatMap(DeepLink.sanitized)
             self = .topicSearch(query: query, topicID: first)
         case "progress", "stats":
-            self = .tab(.progress)
+            if let section = segments.first?.lowercased(), section == "weekly" {
+                let week = items.first(where: { $0.name == "week" })?.value.flatMap { Int($0) } ?? 0
+                self = .weeklyReport(weekOffset: min(max(0, week), DeepLink.maxWeekOffset))
+            } else {
+                self = .tab(.progress)
+            }
         case "settings":
             self = .tab(.settings)
         case "add":

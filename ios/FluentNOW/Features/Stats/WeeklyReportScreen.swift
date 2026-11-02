@@ -100,7 +100,9 @@ private struct WeeklyReportContent: View {
         TodayWeekCard(week: report.days, goal: goal)
         WeeklyReportSkillsCard(skills: report.skills)
         WeeklyReportHardWordsCard(words: report.hardestWords) {
-            router.startStudy(.mistakes)
+            // Sesja z tych słów (code-qa-9), nie ogólny tryb pomyłek.
+            let ids: [String] = report.hardestWords.map { (word: WeeklyHardWord) -> String in word.wordId }
+            router.startStudy(StudyLaunchRequest(modes: ["mixed"], wordIDs: ids))
         }
         WeeklyReportFootnote()
     }

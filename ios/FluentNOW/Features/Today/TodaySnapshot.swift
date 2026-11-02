@@ -49,7 +49,7 @@ struct TodaySnapshot: Hashable, Sendable {
             resume: resume(state),
             recommendations: candidates.isEmpty ? [] : LevelEstimator.recommendations(state, candidates: candidates),
             analysis: LearnerAnalyzer.analyze(state, topics: nil, now: now),
-            progression: Progression.summary(state, now: now)
+            progression: Progression.summary(state, now: now, timeZone: TimeZone.current)
         )
     }
 

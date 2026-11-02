@@ -120,7 +120,8 @@ final class ReminderService {
 
     /// Osobny identyfikator (bez prefiksu codziennych), więc `reschedule` go nie usuwa.
     nonisolated static let weeklyReportIdentifier = "fluent.weekly-report"
-    nonisolated static let weeklyReportDeepLink = "fluentnow://progress"
+    /// Otwiera od razu ekran raportu (bieżący tydzień), nie tylko kartę Postępy (code-qa-9).
+    nonisolated static let weeklyReportDeepLink = "fluentnow://progress/weekly"
     /// Niedziela (1 w `Calendar.weekday`), 20:00 czasu lokalnego — godzinę po domyślnym przypomnieniu.
     nonisolated static let weeklyReportWeekday = 1
     nonisolated static let weeklyReportHour = 20
