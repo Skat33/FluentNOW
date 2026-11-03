@@ -67,12 +67,47 @@ final class PronunciationService {
     @ObservationIgnored private var maxTimer: Task<Void, Never>?
     @ObservationIgnored private var silenceTimer: Task<Void, Never>?
     @ObservationIgnored private var finalTimer: Task<Void, Never>?
+    /// Inne źródło dźwięku (mowa, wyszukiwanie głosowe) i przerwania (połączenie) kończą nagranie.
+    @ObservationIgnored private var focusObserver: NSObjectProtocol?
+    @ObservationIgnored private var interruptionObserver: NSObjectProtocol?
 
     /// - Parameter enabled: `false` w podglądzie i testach (bez mikrofonu, `permission = .unavailable`).
     init(enabled: Bool = true) {
         self.enabled = enabled
         recognizer = enabled ? SFSpeechRecognizer(locale: Locale(identifier: "en-US")) : nil
         permission = enabled ? Self.currentPermission(recognizer: recognizer) : .unavailable
+        guard enabled else { return }
+        focusObserver = AudioFocus.observe(owner: self) { [weak self] in
+            self?.stopIfListening()
+        }
+        interruptionObserver = NotificationCenter.default.addObserver(
+            forName: AVAudioSession.interruptionNotification,
+            object: AVAudioSession.sharedInstance(),
+            queue: .main
+        ) { [weak self] (_: Notification) in
+            Task { @MainActor in
+                self?.stopIfListening()
+            }
+        }
+    }
+
+    deinit {
+        if let focusObserver {
+            NotificationCenter.default.removeObserver(focusObserver)
+        }
+        if let interruptionObserver {
+            NotificationCenter.default.removeObserver(interruptionObserver)
+        }
+    }
+
+    /// Dostęp do mikrofonu jest teraz możliwy (np. nie trwa rozmowa telefoniczna).
+    var isInputAvailable: Bool {
+        enabled && AVAudioSession.sharedInstance().isInputAvailable
+    }
+
+    private func stopIfListening() {
+        guard isListening || continuation != nil else { return }
+        stopRecording()
     }
 
     // MARK: - Zgody
@@ -128,7 +163,9 @@ final class PronunciationService {
     // MARK: - Słuchanie
 
     /// Nagrywa i rozpoznaje wypowiedź. Kończy się sama po ciszy lub po 6 s; `stop()` kończy wcześniej.
-    func listen(expected: String) async throws -> PronunciationResult {
+    /// `maxDuration` — dłuższe zdania (etap wymowy w sesji, P2) potrzebują więcej niż 6 s.
+    func listen(expected: String, maxDuration: TimeInterval = 6) async throws -> PronunciationResult {
+        let limit = max(1, maxDuration)
         guard enabled, let recognizer else { throw PronunciationError.unavailable }
         guard !isListening, continuation == nil else { throw PronunciationError.alreadyListening }
         if permission != .granted {
@@ -140,6 +177,8 @@ final class PronunciationService {
         self.expected = expected
         liveTranscript = ""
 
+        // Mowa i wyszukiwanie głosowe kończą się i zwalniają sesję, zanim ją przejmiemy.
+        AudioFocus.claim(by: self)
         let session = AVAudioSession.sharedInstance()
         do {
             try session.setCategory(.playAndRecord, mode: .measurement, options: [.duckOthers, .defaultToSpeaker])
@@ -185,7 +224,7 @@ final class PronunciationService {
             }
             self.task = recognizer.recognitionTask(with: request, resultHandler: Self.resultHandler(sink))
             self.maxTimer = Task { [weak self] in
-                try? await Task.sleep(nanoseconds: UInt64(PronunciationService.maxDuration * 1_000_000_000))
+                try? await Task.sleep(nanoseconds: UInt64(limit * 1_000_000_000))
                 guard !Task.isCancelled else { return }
                 self?.stopRecording()
             }

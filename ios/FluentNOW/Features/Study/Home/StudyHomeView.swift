@@ -354,6 +354,21 @@ struct StudyHomeView: View {
         }
     }
 
+    /// Sesja z dziennika błędów (`MistakePractice`) — komunikat na górze ekranu, gdy się nie da.
+    private func startMistakePractice(_ kind: MistakeKind?, minutes requested: Int?) {
+        guard !isBusy else { return }
+        isStarting = true
+        startingMode = .mistakes
+        notice = nil
+        let minutes = sessionMinutes(requested)
+        Task { @MainActor in
+            let outcome = await StudyStarter.startMistakePractice(kind: kind, minutes: minutes, store: store)
+            isStarting = false
+            startingMode = nil
+            show(outcome, noticeInline: false)
+        }
+    }
+
     private func show(_ outcome: StudyStarter.Outcome, noticeInline: Bool) {
         switch outcome {
         case .flow(let flow):
@@ -396,6 +411,11 @@ struct StudyHomeView: View {
         // nadpisujemy — wtedy zwykła ścieżka z oknem „Kontynuuj / Zacznij od nowa”.
         if !request.wordIDs.isEmpty && store.state.session == nil {
             startWords(Set(request.wordIDs), minutes: request.minutes)
+            return
+        }
+        // „Przećwicz” w „Twoich typowych błędach” (FEEDBACK-10 P1): `mistake-patterns[:<rodzaj>]`.
+        if let practice = request.modes.compactMap({ (raw: String) -> MistakePracticeRequest? in MistakePractice.request(fromLaunchMode: raw) }).first {
+            startMistakePractice(practice.kind, minutes: request.minutes)
             return
         }
         // „Ćwiczenia” (J1): `exercise-<typ>` (np. `fluentnow://study/start?mode=exercise-scramble`).

@@ -137,6 +137,8 @@ public enum StateMigration {
             }
         }
         state.collections = state.collections.filter { !TextScanning.trim($0).isEmpty }.uniqued()
+        // Mistake log (FEEDBACK-10 P1, optional): unique, in order, at most `MistakeLog.limit`.
+        state.mistakes = MistakeLog.normalized(state.mistakes)
         // Study profile (G4, optional): valid values only; an empty profile is kept (it records
         // that the interview was answered/skipped on some device).
         if let profile = state.settings.profile {

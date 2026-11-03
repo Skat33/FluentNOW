@@ -238,6 +238,12 @@ actor ContentLibrary {
         return index.suggestions(query, limit: limit)
     }
 
+    /// Rozgrzanie indeksu podpowiedzi przy otwarciu arkusza „+” (FEEDBACK-10 P3): buduje go w tle
+    /// (albo czeka na trwającą budowę). `false` — słownika nie da się wczytać.
+    func prepareSuggestions() async -> Bool {
+        await readySearchIndex() != nil
+    }
+
     /// Wszystkie znaczenia hasła z bazy (`VocabularyMerger.lookup`), `nil` gdy brak.
     func lookup(term: String) async -> Lookup? {
         guard let index = await readySearchIndex() else { return nil }

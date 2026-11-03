@@ -35,7 +35,8 @@ struct VocabFeedbackView: View {
                 if model.type == .picture {
                     VocabPictureFeedbackActions(model: model)
                 }
-                if model.type != .matchPairs {
+                // Przy etapie „Powiedz to zdanie” (P2) jeden mikrofon na ekranie — bez przycisku słowa.
+                if model.type != .matchPairs && !VocabPronunciationSlot.applies(to: model, enabled: preferences.pronunciationPracticeEnabled) {
                     StudyPronunciationButton(expected: model.content.word.en)
                 }
                 StudyReportButton(draft: model.content.reportDraft(answer: model.outcome?.value ?? model.answer))

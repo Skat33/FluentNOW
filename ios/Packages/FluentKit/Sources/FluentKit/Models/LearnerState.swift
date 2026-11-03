@@ -133,6 +133,9 @@ public struct LearnerState: Codable, Sendable, Hashable {
     public var assessment: AssessmentSession?
     /// iOS: finished level tests (date, score, level). Optional in JSON (`[]`).
     public var assessmentHistory: [AssessmentHistoryEntry]
+    /// iOS (FEEDBACK-10 P1): the latest wrong answers (`MistakeLog`, at most 500, oldest first).
+    /// Optional in JSON — older states and the web export decode with `[]`.
+    public var mistakes: [MistakeEntry]
 
     public init(
         combined: CombinedSession? = nil,
@@ -151,7 +154,8 @@ public struct LearnerState: Codable, Sendable, Hashable {
         practiceHistory: [PracticeHistoryEntry] = [],
         demo: Bool = false,
         assessment: AssessmentSession? = nil,
-        assessmentHistory: [AssessmentHistoryEntry] = []
+        assessmentHistory: [AssessmentHistoryEntry] = [],
+        mistakes: [MistakeEntry] = []
     ) {
         self.combined = combined
         self.grammarSeen = grammarSeen
@@ -170,6 +174,7 @@ public struct LearnerState: Codable, Sendable, Hashable {
         self.demo = demo
         self.assessment = assessment
         self.assessmentHistory = assessmentHistory
+        self.mistakes = mistakes
     }
 
     /// A clean state for a new learner.
@@ -178,7 +183,7 @@ public struct LearnerState: Codable, Sendable, Hashable {
     enum CodingKeys: String, CodingKey {
         case combined, grammarSeen, words, collections, reviews, reviewSummaries, settings, session, reading
         case readingHistory, practice, production, productionHistory, practiceHistory, demo
-        case assessment, assessmentHistory
+        case assessment, assessmentHistory, mistakes
     }
 
     public init(from decoder: Decoder) throws {
@@ -201,6 +206,8 @@ public struct LearnerState: Codable, Sendable, Hashable {
         // A damaged test is dropped (like the other transient sessions), never the document.
         assessment = c.lenientOptional(AssessmentSession.self, forKey: .assessment)
         assessmentHistory = c.lossyArray(AssessmentHistoryEntry.self, forKey: .assessmentHistory)
+        // Mistake log (P1): damaged entries are skipped, never the document.
+        mistakes = c.lossyArray(MistakeEntry.self, forKey: .mistakes)
     }
 
     private static func decodeGrammarSeen(_ c: KeyedDecodingContainer<CodingKeys>) -> [String: Double] {
@@ -258,6 +265,7 @@ public struct LearnerState: Codable, Sendable, Hashable {
             try c.encodeNil(forKey: .assessment)
         }
         try c.encode(assessmentHistory, forKey: .assessmentHistory)
+        try c.encode(mistakes, forKey: .mistakes)
     }
 
     // MARK: - Lookup helpers

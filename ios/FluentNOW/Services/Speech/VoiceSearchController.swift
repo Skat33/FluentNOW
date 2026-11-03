@@ -136,6 +136,8 @@ final class VoiceSearchController {
     @ObservationIgnored private var silenceTimer: Task<Void, Never>?
     @ObservationIgnored private var finalTimer: Task<Void, Never>?
     @ObservationIgnored private var interruptionObserver: NSObjectProtocol?
+    /// Etap wymowy w sesji albo mowa przejmują dźwięk — nagranie wyszukiwania kończy się (FEEDBACK-10 P2).
+    @ObservationIgnored private var focusObserver: NSObjectProtocol?
     @ObservationIgnored private var sessionActive = false
     /// Numer nagrania — wyniki spóźnione z poprzedniego nagrania są ignorowane.
     @ObservationIgnored private var generation = 0
@@ -260,6 +262,8 @@ final class VoiceSearchController {
     // MARK: - Nagrywanie
 
     private func begin(with recognizer: SFSpeechRecognizer, generation current: Int) throws {
+        // Mowa i sprawdzanie wymowy kończą się i zwalniają sesję, zanim ją przejmiemy.
+        AudioFocus.claim(by: self)
         let session = AVAudioSession.sharedInstance()
         try session.setCategory(.playAndRecord, mode: .measurement, options: [.duckOthers, .defaultToSpeaker])
         try session.setActive(true, options: [.notifyOthersOnDeactivation])
@@ -425,6 +429,10 @@ final class VoiceSearchController {
             NotificationCenter.default.removeObserver(interruptionObserver)
         }
         interruptionObserver = nil
+        if let focusObserver {
+            NotificationCenter.default.removeObserver(focusObserver)
+        }
+        focusObserver = nil
     }
 
     private func stopAudio() {
@@ -441,6 +449,11 @@ final class VoiceSearchController {
 
     /// Połączenie telefoniczne, Siri itp. — kończymy nagranie z tym, co już rozpoznano.
     private func observeInterruptions() {
+        if focusObserver == nil {
+            focusObserver = AudioFocus.observe(owner: self) { [weak self] in
+                self?.cancel()
+            }
+        }
         guard interruptionObserver == nil else { return }
         interruptionObserver = NotificationCenter.default.addObserver(
             forName: AVAudioSession.interruptionNotification,

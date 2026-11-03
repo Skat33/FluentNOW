@@ -92,6 +92,16 @@ final class VocabExerciseModel {
     /// Liczba odsłuchów przed odpowiedzią.
     private(set) var plays = 0
 
+    // „Twoje typowe błędy” (FEEDBACK-10 P1) — pierwsza błędna odpowiedź zadania (zapis przy „Dalej”).
+    /// Wpisany tekst / wybrana opcja / wybrane zdjęcie.
+    private(set) var firstWrongAnswer: String?
+    /// Pierwsza błędna odpowiedź była wyborem opcji (nie wpisanym tekstem).
+    private(set) var firstWrongWasChoice = false
+    /// „Ułóż zdanie”: słowa pierwszego błędnie ułożonego zdania.
+    private(set) var firstWrongTiles: [String]?
+    /// „Dopasuj pary”: pierwsze błędne tłumaczenie dla znaczenia (identyfikator lewej kolumny → prawej).
+    private(set) var wrongPairs: [String: String] = [:]
+
     /// Tryb testu (FEEDBACK-6 K4): bez podpowiedzi, bez „Pokaż warianty”, jedna próba, wybór opcji
     /// zatwierdzany dopiero przez „Dalej” (`submitAssessment`), bez informacji poprawne/błędne.
     let isAssessment: Bool
@@ -241,6 +251,7 @@ final class VocabExerciseModel {
             return
         }
         wrongOptions.append(index)
+        noteWrong(option, choice: true)
         failed(Grade(verdict: .incorrect, explanation: "Wybrano „\(option)”.", spellingCorrect: false))
     }
 
@@ -266,6 +277,9 @@ final class VocabExerciseModel {
         stoppedSeconds = seconds
         answer = option.term
         let correct = option.isCorrect
+        if !correct {
+            noteWrong(option.term, choice: true)
+        }
         let explanation = correct ? "" : "Wybrane zdjęcie to „\(option.term)” — \(option.translation)."
         grade = Grade(verdict: correct ? .correct : .incorrect, explanation: explanation, spellingCorrect: correct)
         outcome = StudyAnswerOutcome(
@@ -317,6 +331,9 @@ final class VocabExerciseModel {
             finish(with: Grade(verdict: .correct, explanation: "", spellingCorrect: true))
             return
         }
+        if firstWrongTiles == nil && !isAssessment {
+            firstWrongTiles = texts
+        }
         if phase == .answering && !isAssessment {
             let kept = SentenceScramble.correctPrefixCount(texts, board: board)
             placedTiles = Array(placedTiles.prefix(kept))
@@ -361,6 +378,9 @@ final class VocabExerciseModel {
             return
         }
         // Błędna para liczy pomyłkę dla obu znaczeń.
+        if wrongPairs[english] == nil && !isAssessment {
+            wrongPairs[english] = polish
+        }
         pairMistakes[english, default: 0] += 1
         pairMistakes[polish, default: 0] += 1
         pairMistakeCount += 1
@@ -432,6 +452,9 @@ final class VocabExerciseModel {
             type: type,
             variants: variants
         )
+        if !local.isCorrect {
+            noteWrong(value, choice: false)
+        }
         if local.isCorrect || local.closestAnswer != nil {
             finish(with: local)
             return
@@ -536,6 +559,13 @@ final class VocabExerciseModel {
 
     // MARK: Prywatne
 
+    /// Zapamiętuje pierwszą błędną odpowiedź zadania (P1). Test (K4) nie zapisuje błędów.
+    private func noteWrong(_ value: String, choice: Bool) {
+        guard !isAssessment, firstWrongAnswer == nil else { return }
+        firstWrongAnswer = value
+        firstWrongWasChoice = choice
+    }
+
     private func elapsed() -> Double {
         max(0.1, Date().timeIntervalSince(startedAt))
     }
@@ -562,6 +592,10 @@ final class VocabExerciseModel {
         guard phase == .checking else { return }
         assistantTask = nil
         if let remote, !remote.isFailure {
+            // Asystent uznał pierwszą odpowiedź — to nie był błąd (P1).
+            if retryGrade == nil {
+                firstWrongAnswer = nil
+            }
             finish(with: remote)
         } else {
             failed(remote ?? local)

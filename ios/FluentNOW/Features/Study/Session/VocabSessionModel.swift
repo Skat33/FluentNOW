@@ -22,7 +22,8 @@ final class VocabSessionModel {
     private let images: WordImageService?
     @ObservationIgnored private var resources = StudyResources.fallback
     @ObservationIgnored private var resourcesLoaded = false
-    @ObservationIgnored private var optionCache: [String: [String]] = [:]
+    /// Opcje „Wybierz znaczenie” z indeksu liczonego w tle (FEEDBACK-10 P3).
+    private let optionsCache = StudyMeaningOptionsCache()
 
     init(store: LearningStore, content: ContentLibrary, assistant: AssistantService, images: WordImageService? = nil) {
         self.store = store
@@ -45,7 +46,8 @@ final class VocabSessionModel {
         guard !resourcesLoaded else { return }
         resources = await StudyResources.load(from: content)
         resourcesLoaded = true
-        optionCache.removeAll()
+        optionsCache.reset()
+        optionsCache.refresh(store: store, resources: resources)
         if let exercise, exercise.type == .meaning {
             exercise.replaceOptions(options(for: exercise.content))
         }
@@ -71,7 +73,9 @@ final class VocabSessionModel {
         if exercise?.key == key { return }
         exercise?.cancelPendingWork()
         let sessionSeed = SentenceScramble.sessionSeed(tasks: session.tasks, mode: session.mode)
-        guard let base = VocabExerciseContent(task: task, mode: session.studyMode, state: store.state, variants: resources.variants, sessionSeed: sessionSeed) else {
+        // FEEDBACK-10 P1: dystraktory rozsypanki według najczęstszych błędów (zapisane w sesji przy starcie).
+        let decoyFocus = session.decoyFocus?.decoyKind
+        guard let base = VocabExerciseContent(task: task, mode: session.studyMode, state: store.state, variants: resources.variants, sessionSeed: sessionSeed, decoyFocus: decoyFocus) else {
             exercise = nil
             missingTask = true
             return
@@ -135,8 +139,13 @@ final class VocabSessionModel {
         let expectedIndex = session?.index
         // „Dopasuj pary” (I2): każde znaczenie planszy dostaje własną recenzję.
         let pairResults = task.type == .matchPairs ? exercise.pairResults : []
+        // „Twoje typowe błędy” (P1): pierwsza błędna odpowiedź zadania, zapisana razem z odpowiedzią.
+        let mistakes = StudyMistakeCapture.entries(from: exercise, now: now, idBase: reviewID)
         store.update(.answer) { (state: inout LearnerState) -> Void in
             let tasksBefore = state.session?.tasks.count ?? 0
+            if !mistakes.isEmpty {
+                state = MistakeLog.recording(mistakes, in: state)
+            }
             if !pairResults.isEmpty {
                 state = MatchPairsExercise.record(
                     state,
@@ -242,28 +251,27 @@ final class VocabSessionModel {
 
     // MARK: Prywatne
 
-    private func options(for content: VocabExerciseContent) -> [String] {
-        let cacheKey = "\(content.meaning.id):\(content.task.example)"
-        if let cached = optionCache[cacheKey] { return cached }
-        let computed = MeaningOptions.options(
+    private func options(for content: VocabExerciseContent, sessionIndex: Int? = nil) -> [String] {
+        optionsCache.options(
+            for: content,
             state: store.state,
-            word: content.word,
-            meaning: content.meaning,
-            task: content.task,
-            starterWords: resources.starterWords,
-            answerIndex: resources.answerIndex
+            resources: resources,
+            sessionIndex: sessionIndex ?? (store.state.session?.index ?? -1)
         )
-        optionCache[cacheKey] = computed
-        return computed
     }
 
-    /// Następne zadanie „znaczenia” liczy dystraktory zawczasu (bez opóźnienia przy przejściu).
+    /// Następne zadanie „znaczenia” liczy dystraktory zawczasu (bez opóźnienia przy przejściu);
+    /// indeks kluczy odpowiedzi odświeża się w tle po zmianie stanu (P3).
     private func preloadNext(after session: VocabSession) {
+        if resourcesLoaded {
+            optionsCache.refresh(store: store, resources: resources)
+        }
         guard let next = session.tasks.studyItem(at: session.index + 1), next.type == .meaning else { return }
+        let nextIndex = session.index + 1
         Task { @MainActor [weak self] in
             await Task.yield()
             guard let self, let content = VocabExerciseContent(task: next, mode: session.studyMode, state: self.store.state, variants: self.resources.variants) else { return }
-            _ = self.options(for: content)
+            _ = self.options(for: content, sessionIndex: nextIndex)
         }
     }
 }

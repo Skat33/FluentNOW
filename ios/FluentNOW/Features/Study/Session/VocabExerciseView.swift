@@ -41,6 +41,8 @@ struct VocabExerciseView: View {
             if model.isFinished && !model.isAssessment && !(model.type == .flashcard && onFlashcardDecision != nil) {
                 VStack(alignment: .leading, spacing: Spacing.m) {
                     VocabFeedbackView(model: model)
+                    // FEEDBACK-10 P2: „Powiedz to zdanie na głos” po poprawnej rozsypance / luce.
+                    VocabPronunciationSlot(model: model)
                     if let confidence, model.type != .flashcard {
                         ConfidencePicker(selection: confidence)
                     }

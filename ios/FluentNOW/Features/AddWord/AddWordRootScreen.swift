@@ -107,6 +107,8 @@ struct AddWordQuickForm: View {
     @State private var query = ""
     /// Podpowiedzi podczas pisania (FEEDBACK-9 N3).
     @State private var suggestions: SearchSuggestionResult = .empty
+    /// Indeks podpowiedzi jeszcze się buduje (P3: szkielet listy zamiast pustki).
+    @State private var isIndexLoading = true
     /// Słownik użytkownika (migawka) — „Masz już” w podpowiedziach.
     @State private var owned: OwnedVocabulary = .empty
     /// Wyszukiwanie głosowe w polu.
@@ -154,6 +156,7 @@ struct AddWordQuickForm: View {
                 AddWordExamplesSheet(item: item)
             }
             .task(id: query) { await search() }
+            .task { await warmSuggestions() }
             .task(id: store.revision) { await refreshOwned() }
             .voiceSearchLifecycle(voice)
             .onChange(of: query) { (_: String, _: String) in
@@ -210,6 +213,8 @@ struct AddWordQuickForm: View {
             )
         } else if isLoadingLookup {
             Section { ProgressView("Wczytywanie znaczeń…") }
+        } else if isIndexLoading && !query.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            AddWordSuggestionSkeleton()
         } else {
             AddWordResultsSection(
                 query: query,
@@ -260,10 +265,18 @@ struct AddWordQuickForm: View {
         // Liczone na aktorze `ContentLibrary` (poza głównym wątkiem); pierwsze wywołanie czeka
         // na zbudowanie indeksu.
         let result = await env.content.suggestions(text, limit: 8)
+        isIndexLoading = false
         guard !Task.isCancelled else { return }
         suggestions = result
         searchedQuery = text
         if !result.isEmpty { detent = .large }
+    }
+
+    /// FEEDBACK-10 P3: indeks podpowiedzi budowany już przy otwarciu arkusza (pierwsze litery nie
+    /// czekają na dekodowanie słownika).
+    private func warmSuggestions() async {
+        _ = await env.content.prepareSuggestions()
+        isIndexLoading = false
     }
 
     private func refreshOwned() async {

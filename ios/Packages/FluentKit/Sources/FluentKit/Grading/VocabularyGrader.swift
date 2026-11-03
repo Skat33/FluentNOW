@@ -136,15 +136,23 @@ public enum VocabularyGrader {
         }
         let enKey = TextNormalizer.normalize(word.en)
         let swapped = (enKey == "lend" && actual.hasPrefix("borrow")) || (enKey == "borrow" && actual.hasPrefix("lend"))
+        // FEEDBACK-10 P1: a typo uses the thresholds of `FuzzyMatcher` (search „Czy chodziło Ci
+        // o…?”): 1 edit for 3–5 letters, 2 for 6+, adjacent letters swapped = one edit. Another form
+        // of a verb (went ↔ gone) is never a typo — it gets its own hint below.
         var closest: String?
+        let isVerb: Bool = {
+            let pos = meaning.effectivePos(in: word).lowercased()
+            return pos.contains("czasownik") || pos.contains("verb")
+        }()
         if !actual.isEmpty && !swapped {
             var best = Int.max
             for (index, candidate) in acceptedKeys.enumerated() {
-                let length = candidate.count
-                let allowed = length >= 8 ? 2 : (length >= 4 ? 1 : 0)
-                guard allowed > 0 else { continue }
-                let distance = TextNormalizer.levenshtein(actual, candidate)
-                if distance > 0 && distance <= allowed && distance < best {
+                let allowed = FuzzyMatcher.maxDistance(forLength: candidate.utf8.count)
+                guard allowed > 0, let distance = FuzzyMatcher.distance(actual, candidate, limit: allowed) else { continue }
+                if type != .meaning, MistakeClassifier.classify(expected: candidate, given: actual, focusIsVerb: isVerb)?.kind == .verbForm {
+                    continue
+                }
+                if distance > 0 && distance < best {
                     best = distance
                     closest = accepted[index]
                 }
@@ -154,7 +162,12 @@ public enum VocabularyGrader {
         if swapped {
             explanation = "Lend oznacza pożyczyć coś komuś, a borrow — pożyczyć coś od kogoś."
         } else if let closest {
-            explanation = "Prawie dobrze — to wygląda na literówkę. Poprawna pisownia: „\(closest)”."
+            explanation = "Prawie — to literówka. Poprawna pisownia: „\(closest)”."
+        } else if type != .meaning, !actual.isEmpty,
+                  let expected = MistakeClassifier.closest(to: actual, among: accepted),
+                  let analysis = MistakeClassifier.classify(expected: expected, given: actual, focusIsVerb: isVerb),
+                  let hint = MistakeClassifier.feedbackPl(analysis) {
+            explanation = hint
         } else {
             explanation = "Odpowiedź nie pasuje do zapisanych poprawnych wariantów tego zadania. Jeśli brakuje prawidłowego wariantu, zgłoś błąd."
         }

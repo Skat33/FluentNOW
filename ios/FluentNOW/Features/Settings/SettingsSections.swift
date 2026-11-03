@@ -125,6 +125,7 @@ struct SettingsLearningSection: View {
 struct SettingsVoiceSection: View {
     @Environment(LearningStore.self) private var store
     @Environment(SpeechService.self) private var speech
+    @Environment(AppPreferences.self) private var preferences
 
     private var slowBinding: Binding<Bool> {
         Binding(
@@ -134,7 +135,8 @@ struct SettingsVoiceSection: View {
     }
 
     var body: some View {
-        Section("Wymowa") {
+        @Bindable var preferences = preferences
+        Section {
             NavigationLink(value: SettingsRoute.voice) {
                 LabeledContent {
                     Text(SettingsVoiceText.voiceName(store.settings, voices: speech.availableVoices()))
@@ -150,6 +152,14 @@ struct SettingsVoiceSection: View {
             } label: {
                 Label("Wypróbuj głos", systemImage: "speaker.wave.2")
             }
+            // FEEDBACK-10 P2: etap mówienia po poprawnej rozsypance / luce (per urządzenie).
+            Toggle(isOn: $preferences.pronunciationPracticeEnabled) {
+                Label("Ćwicz wymowę w sesjach", systemImage: "mic")
+            }
+        } header: {
+            Text("Wymowa")
+        } footer: {
+            Text("Po ułożonym zdaniu możesz je powiedzieć na głos i zobaczyć, które słowa rozpoznało urządzenie. Wynik nie wpływa na postęp. Bez zgody na mikrofon etap jest pomijany.")
         }
     }
 }

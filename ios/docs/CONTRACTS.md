@@ -90,6 +90,7 @@ actor ContentLibrary {
     func entry(reference: String) async throws -> TopicEntry      // "airport/airport.boarding-pass" lub "starter/starter.do"
     func search(_ query: String, limit: Int) async -> [SearchHit]   // ContentSearch zbudowany raz; pusty wynik, jeśli indeks się jeszcze buduje
     func suggestions(_ query: String, limit: Int = 8) async -> SearchSuggestionResult  // N3: podpowiedzi + „Czy chodziło Ci o…?”; czeka na indeks
+    func prepareSuggestions() async -> Bool                       // FEEDBACK-10 P3: rozgrzanie indeksu przy otwarciu arkusza „+”
     func lookup(term: String) async -> Lookup?                      // wszystkie znaczenia hasła z bazy (VocabularyMerger.lookup), nil gdy brak
     func answerVariants() async -> AnswerVariants
     func polishAnswerIndex() async -> PolishAnswerIndex
@@ -127,7 +128,8 @@ struct VoiceOption: Identifiable, Hashable { let id: String; let name: String; l
     private(set) var isListening: Bool
     private(set) var liveTranscript: String
     func requestPermission() async -> Permission
-    func listen(expected: String) async throws -> PronunciationResult   // kończy się sama po ciszy lub maks. 6 s
+    func listen(expected: String, maxDuration: TimeInterval = 6) async throws -> PronunciationResult   // kończy się sama po ciszy lub po maxDuration
+    var isInputAvailable: Bool                                          // P2: mikrofon dostępny (np. nie trwa rozmowa)
     func stop()
 }
 struct PronunciationResult: Equatable { let transcript: String; let expected: String; let similarity: Double; let verdictPl: String }

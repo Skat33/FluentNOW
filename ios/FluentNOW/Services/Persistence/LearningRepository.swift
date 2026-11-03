@@ -134,6 +134,7 @@ actor LearningRepository {
         var practiceHistory: [PracticeHistoryEntry] = []
         var productionHistory: [ProductionHistoryEntry] = []
         var assessmentHistory: [AssessmentHistoryEntry] = []
+        var mistakes: [MistakeEntry] = []
         var summaries: [String: ReviewSummary] = [:]
         var grammarSeen: [String: Double] = [:]
         for row in try modelContext.fetch(FetchDescriptor<HistoryRecord>()) {
@@ -156,6 +157,10 @@ actor LearningRepository {
             case .assessment:
                 if let entry = try? decoder.decode(AssessmentHistoryEntry.self, from: row.payload) {
                     if !isDuplicate { assessmentHistory.append(entry) }
+                } else { readable = false }
+            case .mistake:
+                if let entry = try? decoder.decode(MistakeEntry.self, from: row.payload) {
+                    if !isDuplicate { mistakes.append(entry) }
                 } else { readable = false }
             case .summary:
                 if let entry = try? decoder.decode(ReviewSummary.self, from: row.payload) {
@@ -263,7 +268,9 @@ actor LearningRepository {
             practiceHistory: practiceHistory.sorted { $0.at < $1.at },
             demo: settingsValue.demo,
             assessment: assessment,
-            assessmentHistory: assessmentHistory.sorted { $0.at < $1.at }
+            assessmentHistory: assessmentHistory.sorted { $0.at < $1.at },
+            // Kolejność, duplikaty i limit 500 — jak po synchronizacji (`MistakeLog.normalized`).
+            mistakes: MistakeLog.normalized(mistakes)
         )
         return Snapshot(state: state, skipped: skipped, duplicates: duplicates)
     }
@@ -404,6 +411,16 @@ actor LearningRepository {
         }
         for entry in state.assessmentHistory {
             try upsertHistory(kind: .assessment, entryID: entry.id, at: entry.at, payload: try encoder.encode(entry))
+        }
+        for entry in state.mistakes {
+            // Wpisy dziennika błędów się nie zmieniają — zapisany rekord pomijamy bez kodowania
+            // (do 500 wpisów przy każdej odpowiedzi).
+            let key = Self.historyKey(HistoryKind.mistake.rawValue, entry.id)
+            if let saved = historyPayloads[key], !saved.isEmpty, historyRecords[key] != nil {
+                historyKeys.insert(key)
+                continue
+            }
+            try upsertHistory(kind: .mistake, entryID: entry.id, at: entry.at, payload: try encoder.encode(entry))
         }
         for summary in state.reviewSummaries {
             try upsertHistory(kind: .summary, entryID: summary.day, at: 0, payload: try encoder.encode(summary))

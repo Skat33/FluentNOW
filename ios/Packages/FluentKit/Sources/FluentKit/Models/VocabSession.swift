@@ -80,13 +80,18 @@ public struct VocabSession: Codable, Sendable, Hashable {
     public var minutes: Int
     /// Mode raw value (`mixed`, `mistakes`, `pairs`).
     public var mode: String
+    /// FEEDBACK-10 P1: the mistake kind whose decoys „Ułóż zdanie” prefers in this session
+    /// (`MistakeLog.decoyFocus`, chosen when the session starts — a resumed task shows the same
+    /// tiles). Optional in JSON: older sessions and the web decode with `nil`; `nil` is not written.
+    public var decoyFocus: MistakeKind?
 
-    public init(tasks: [VocabTask], index: Int = 0, correct: Int = 0, minutes: Int, mode: String) {
+    public init(tasks: [VocabTask], index: Int = 0, correct: Int = 0, minutes: Int, mode: String, decoyFocus: MistakeKind? = nil) {
         self.tasks = tasks
         self.index = index
         self.correct = correct
         self.minutes = minutes
         self.mode = mode
+        self.decoyFocus = decoyFocus
     }
 
     /// The current task, or `nil` when the session is finished.
@@ -105,7 +110,7 @@ public struct VocabSession: Codable, Sendable, Hashable {
     }
 
     enum CodingKeys: String, CodingKey {
-        case tasks, index, correct, minutes, mode
+        case tasks, index, correct, minutes, mode, decoyFocus
     }
 
     public init(from decoder: Decoder) throws {
@@ -115,5 +120,6 @@ public struct VocabSession: Codable, Sendable, Hashable {
         correct = max(0, c.lenientInt(.correct))
         minutes = c.lenientInt(.minutes, default: 10)
         mode = c.lenientString(.mode, default: "mixed")
+        decoyFocus = MistakeKind(rawValue: c.lenientString(.decoyFocus))
     }
 }

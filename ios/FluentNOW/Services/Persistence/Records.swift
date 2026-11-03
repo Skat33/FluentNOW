@@ -116,4 +116,7 @@ enum HistoryKind: String, CaseIterable {
     case grammarSeen
     /// Ukończony test poziomu (`AssessmentHistoryEntry`, K4). Starsze wersje liczą go jako pominięty rekord.
     case assessment
+    /// Błędna odpowiedź z dziennika „Twoje typowe błędy” (`MistakeEntry`, FEEDBACK-10 P1), jeden rekord
+    /// na wpis (tylko dopisywane; najstarsze ponad limit 500 są usuwane). Starsze wersje je pomijają.
+    case mistake
 }

@@ -172,6 +172,9 @@ public enum StateSync {
         // Level test (K4): histories united by id; the test in progress chosen by progress.
         merged.assessmentHistory = unionByID(remote.assessmentHistory, local.assessmentHistory, id: { $0.id }).stableSorted { $0.at < $1.at }
         merged.assessment = mergeAssessment(local: local.assessment, remote: remote.assessment, history: merged.assessmentHistory)
+        // Mistake log (FEEDBACK-10 P1): union by id, ordered by time then id, the newest 500 —
+        // both devices converge to the same entries whatever the merge direction.
+        merged.mistakes = MistakeLog.merge(local: local.mistakes, remote: remote.mistakes)
 
         var summaries: [String: ReviewSummary] = [:]
         for item in remote.reviewSummaries { summaries[item.day] = item }

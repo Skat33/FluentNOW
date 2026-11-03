@@ -19,6 +19,8 @@ struct StatsSnapshot: Hashable, Sendable {
     var analysis: LearnerAnalysis
     /// XP i poziom (G5) — `StatsProgressionSection`.
     var progression: ProgressionSummary
+    /// „Twoje typowe błędy” (FEEDBACK-10 P1) — grupy z dziennika błędów, najczęstsze pierwsze.
+    var mistakes: [MistakePattern]
 
     static let calendarDays = 84
     static let gainWeeks = 8
@@ -55,7 +57,8 @@ struct StatsSnapshot: Hashable, Sendable {
             estimate: LevelEstimator.estimatedLevel(state),
             goal: state.settings.goal,
             analysis: LearnerAnalyzer.analyze(state, topics: topics, now: now),
-            progression: Progression.summary(state, now: now, timeZone: TimeZone.current)
+            progression: Progression.summary(state, now: now, timeZone: TimeZone.current),
+            mistakes: MistakeLog.patterns(state.mistakes)
         )
     }
 }

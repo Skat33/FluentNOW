@@ -316,12 +316,15 @@ enum ScrambleDecoys {
     /// Decoys for a sentence (`answer` — the tile texts in order), at most `count`, in priority
     /// order: grammatical decoys first (forms of the focus expression before other words), then
     /// words from the entry's other examples, then words from `pool` (other words' examples).
+    /// `prefer` (FEEDBACK-10 P1, adaptive decoys): the kind the learner confuses most often goes
+    /// first — with one decoy the board shows that kind whenever the sentence allows it.
     static func choose<G: RandomNumberGenerator>(
         answer: [String],
         focusKeys: Set<String>,
         entrySentences: [String],
         pool: [String],
         count: Int,
+        prefer: ScrambleDecoyKind? = nil,
         using rng: inout G
     ) -> [ScrambleDecoy] {
         guard count > 0 else { return [] }
@@ -356,6 +359,9 @@ enum ScrambleDecoys {
         var poolWords = contentWords(from: pool, sentenceKeys: sentenceKeys, used: &used)
         shuffle(&poolWords, using: &rng)
         groups.append(poolWords.map { (text: String) -> ScrambleDecoy in ScrambleDecoy(text: text, kind: .otherWord) })
+        if let prefer {
+            groups = preferring(prefer, in: groups)
+        }
 
         // Round robin over the groups: a board with two decoys shows two different kinds when it can.
         var chosen: [ScrambleDecoy] = []
@@ -372,6 +378,18 @@ enum ScrambleDecoys {
             round += 1
         }
         return chosen
+    }
+
+    /// The groups with the group of `kind` moved to the front (other groups keep their order).
+    /// No change when the sentence gives no decoy of that kind.
+    static func preferring(_ kind: ScrambleDecoyKind, in groups: [[ScrambleDecoy]]) -> [[ScrambleDecoy]] {
+        guard let index = groups.firstIndex(where: { (group: [ScrambleDecoy]) -> Bool in
+            group.first?.kind == kind
+        }), index > 0 else { return groups }
+        var reordered = groups
+        let preferred = reordered.remove(at: index)
+        reordered.insert(preferred, at: 0)
+        return reordered
     }
 
     private static func shuffle<T, G: RandomNumberGenerator>(_ items: inout [T], using rng: inout G) {

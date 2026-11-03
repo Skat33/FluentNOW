@@ -22,6 +22,8 @@ final class CombinedSessionModel {
     @ObservationIgnored private var resourcesLoaded = false
     @ObservationIgnored private var currentKey: String?
     @ObservationIgnored private var markedKeys: Set<String> = []
+    /// Opcje „Wybierz znaczenie” z indeksu liczonego w tle (FEEDBACK-10 P3).
+    private let optionsCache = StudyMeaningOptionsCache()
 
     init(store: LearningStore, content: ContentLibrary, assistant: AssistantService, images: WordImageService? = nil) {
         self.store = store
@@ -46,6 +48,8 @@ final class CombinedSessionModel {
         guard !resourcesLoaded else { return }
         resources = await StudyResources.load(from: content)
         resourcesLoaded = true
+        optionsCache.reset()
+        optionsCache.refresh(store: store, resources: resources)
         if let vocabulary, vocabulary.type == .meaning {
             vocabulary.replaceOptions(options(for: vocabulary.content))
         }
@@ -107,7 +111,15 @@ final class CombinedSessionModel {
         // „Dopasuj pary” (I2): wynik każdego znaczenia planszy (pusto — zwykłe zadanie).
         let pairResults: [MatchPairResult] = vocabulary?.type == .matchPairs ? (vocabulary?.pairResults ?? []) : []
         let alreadySaved = session.currentAnswer != nil
+        // „Twoje typowe błędy” (P1): pierwsza błędna odpowiedź zadania słownikowego.
+        var mistakes: [MistakeEntry] = []
+        if let vocabulary, isVocabulary, !alreadySaved, answer != nil {
+            mistakes = StudyMistakeCapture.entries(from: vocabulary, now: now, idBase: reviewID)
+        }
         store.update(.answer) { (state: inout LearnerState) -> Void in
+            if !mistakes.isEmpty {
+                state = MistakeLog.recording(mistakes, in: state)
+            }
             if let answer, state.combined?.currentAnswer == nil {
                 state = CombinedSessionBuilder.saveAnswer(state, answer: answer, now: now, reviewID: reviewID, matchResults: pairResults)
             }
@@ -212,13 +224,14 @@ final class CombinedSessionModel {
     }
 
     private func options(for content: VocabExerciseContent) -> [String] {
-        MeaningOptions.options(
+        if resourcesLoaded {
+            optionsCache.refresh(store: store, resources: resources)
+        }
+        return optionsCache.options(
+            for: content,
             state: store.state,
-            word: content.word,
-            meaning: content.meaning,
-            task: content.task,
-            starterWords: resources.starterWords,
-            answerIndex: resources.answerIndex
+            resources: resources,
+            sessionIndex: store.state.session?.index ?? -1
         )
     }
 

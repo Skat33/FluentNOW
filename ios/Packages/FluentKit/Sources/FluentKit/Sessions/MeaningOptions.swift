@@ -15,6 +15,28 @@ public enum MeaningOptions {
         starterWords: [Word] = [],
         answerIndex: PolishAnswerIndex = PolishAnswerIndex()
     ) -> [String] {
+        options(
+            index: MeaningOptionsIndex(state: state, starterWords: starterWords, answerIndex: answerIndex),
+            word: word,
+            meaning: meaning,
+            task: task,
+            sessionIndex: state.session?.index ?? -1,
+            answerIndex: answerIndex
+        )
+    }
+
+    /// The same as `options(state:…)` on a prebuilt `MeaningOptionsIndex` (FEEDBACK-10 P3): the
+    /// answer keys of every candidate are computed once per state revision (off the main thread),
+    /// so one task only compares sets. `sessionIndex` — `state.session?.index ?? -1` of the state
+    /// the task belongs to (part of the shuffle seed).
+    public static func options(
+        index source: MeaningOptionsIndex,
+        word: Word,
+        meaning: Meaning,
+        task: VocabTask,
+        sessionIndex: Int,
+        answerIndex: PolishAnswerIndex = PolishAnswerIndex()
+    ) -> [String] {
         let correctKey = TextNormalizer.normalize(meaning.translation)
         // iOS improvement: a distractor must never be a second correct answer. Its translation and
         // accepted answers (with reviewed variants and aspect pairs) must not share any key with the
@@ -23,46 +45,30 @@ public enum MeaningOptions {
         // near-synonyms of the core vocabulary (pity / shame „szkoda”, redundant / superfluous
         // „zbędny”, appease / placate „udobruchać”) also when they only share an accepted answer.
         let targetKeys = MeaningOptions.comparisonKeys(answerIndex.keys(term: word.en, translation: meaning.translation, saved: meaning.acceptedTranslations ?? []))
-        var pool: [WordMeaning] = []
+        var pool: [MeaningOptionsIndex.Candidate] = []
         var seenKeys = Set<String>()
-        func consider(_ item: WordMeaning) {
-            let key = TextNormalizer.normalize(item.meaning.translation)
-            guard key != correctKey, !key.isEmpty, !seenKeys.contains(key) else { return }
-            let candidateKeys = MeaningOptions.comparisonKeys(answerIndex.keys(
-                term: item.word.en,
-                translation: item.meaning.translation,
-                saved: item.meaning.acceptedTranslations ?? []
-            ))
-            guard candidateKeys.isDisjoint(with: targetKeys) else { return }
-            seenKeys.insert(key)
-            pool.append(item)
-        }
-        for candidateWord in state.words {
-            for candidateMeaning in candidateWord.meanings where candidateMeaning.id != meaning.id {
-                consider(WordMeaning(word: candidateWord, meaning: candidateMeaning))
-            }
-        }
-        for candidateWord in starterWords {
-            for candidateMeaning in candidateWord.meanings {
-                consider(WordMeaning(word: candidateWord, meaning: candidateMeaning))
-            }
+        for candidate in source.candidates {
+            if !candidate.isStarter && candidate.meaningID == meaning.id { continue }
+            guard candidate.key != correctKey, !candidate.key.isEmpty, !seenKeys.contains(candidate.key) else { continue }
+            guard candidate.answerKeys.isDisjoint(with: targetKeys) else { continue }
+            seenKeys.insert(candidate.key)
+            pool.append(candidate)
         }
         let targetPos = meaning.effectivePos(in: word)
         let targetLevel = CEFR.jsIndex(of: meaning.effectiveLevel(in: word))
-        func sameCollection(_ item: WordMeaning) -> Int { item.word.collection == word.collection ? 1 : 0 }
-        func samePos(_ item: WordMeaning) -> Int { item.meaning.effectivePos(in: item.word) == targetPos ? 1 : 0 }
-        func levelDistance(_ item: WordMeaning) -> Int {
-            abs(CEFR.jsIndex(of: item.meaning.effectiveLevel(in: item.word)) - targetLevel)
-        }
-        let sorted = pool.stableSorted { a, b in
+        let targetCollection = word.collection
+        func sameCollection(_ item: MeaningOptionsIndex.Candidate) -> Int { item.collection == targetCollection ? 1 : 0 }
+        func samePos(_ item: MeaningOptionsIndex.Candidate) -> Int { item.pos == targetPos ? 1 : 0 }
+        func levelDistance(_ item: MeaningOptionsIndex.Candidate) -> Int { abs(item.level - targetLevel) }
+        let sorted = pool.stableSorted { (a: MeaningOptionsIndex.Candidate, b: MeaningOptionsIndex.Candidate) -> Bool in
             let collection = sameCollection(b) - sameCollection(a)
             if collection != 0 { return collection < 0 }
             let pos = samePos(b) - samePos(a)
             if pos != 0 { return pos < 0 }
             return levelDistance(a) < levelDistance(b)
         }
-        var selected = [meaning.translation] + sorted.prefix(3).map { $0.meaning.translation }
-        var generator = SeededGenerator(seed: "\(task.wordId)\(task.meaningId)\(task.type.rawValue)\(task.example)\(state.session?.index ?? -1)")
+        var selected = [meaning.translation] + sorted.prefix(3).map { (item: MeaningOptionsIndex.Candidate) -> String in item.translation }
+        var generator = SeededGenerator(seed: "\(task.wordId)\(task.meaningId)\(task.type.rawValue)\(task.example)\(sessionIndex)")
         var index = selected.count - 1
         while index > 0 {
             let target = generator.nextIndex(below: index + 1)
@@ -100,5 +106,62 @@ public enum MeaningOptions {
         let targetKeys = comparisonKeys(answerIndex.keys(term: target.word.en, translation: target.meaning.translation, saved: target.meaning.acceptedTranslations ?? []))
         let candidateKeys = comparisonKeys(answerIndex.keys(term: candidate.word.en, translation: candidate.meaning.translation, saved: candidate.meaning.acceptedTranslations ?? []))
         return !candidateKeys.isDisjoint(with: targetKeys)
+    }
+}
+
+/// Precomputed distractor candidates of „Wybierz znaczenie” (FEEDBACK-10 P3): the learner's
+/// meanings, then the starter words, each with its normalised translation, answer keys
+/// (`PolishAnswerIndex` + loose forms), collection, part of speech and level. Building it walks
+/// every meaning once — do it off the main thread (`LearningStore.compute`) once per state
+/// revision; `MeaningOptions.options(index:…)` then only compares sets.
+public struct MeaningOptionsIndex: Sendable {
+    public struct Candidate: Sendable, Hashable {
+        public var meaningID: String
+        public var translation: String
+        /// `TextNormalizer.normalize(translation)`.
+        public var key: String
+        /// `MeaningOptions.comparisonKeys` of the accepted answers.
+        public var answerKeys: Set<String>
+        public var collection: String
+        public var pos: String
+        /// `CEFR.jsIndex` of the effective level.
+        public var level: Int
+        /// From the starter words (never excluded by meaning id).
+        public var isStarter: Bool
+    }
+
+    public let candidates: [Candidate]
+
+    public var count: Int { candidates.count }
+
+    public init(state: LearnerState, starterWords: [Word] = [], answerIndex: PolishAnswerIndex = PolishAnswerIndex()) {
+        var items: [Candidate] = []
+        func add(_ word: Word, _ meaning: Meaning, starter: Bool) {
+            items.append(Candidate(
+                meaningID: meaning.id,
+                translation: meaning.translation,
+                key: TextNormalizer.normalize(meaning.translation),
+                answerKeys: MeaningOptions.comparisonKeys(answerIndex.keys(
+                    term: word.en,
+                    translation: meaning.translation,
+                    saved: meaning.acceptedTranslations ?? []
+                )),
+                collection: word.collection,
+                pos: meaning.effectivePos(in: word),
+                level: CEFR.jsIndex(of: meaning.effectiveLevel(in: word)),
+                isStarter: starter
+            ))
+        }
+        for word in state.words {
+            for meaning in word.meanings {
+                add(word, meaning, starter: false)
+            }
+        }
+        for word in starterWords {
+            for meaning in word.meanings {
+                add(word, meaning, starter: true)
+            }
+        }
+        candidates = items
     }
 }

@@ -6,6 +6,8 @@ import FluentKit
 enum StatsRoute: Hashable {
     /// 0 = bieżący tydzień, 1 = poprzedni, …
     case weeklyReport(weekOffset: Int)
+    /// „Twoje typowe błędy” (FEEDBACK-10 P1).
+    case mistakes
 }
 
 extension View {
@@ -15,6 +17,8 @@ extension View {
             switch route {
             case .weeklyReport(let weekOffset):
                 WeeklyReportScreen(initialOffset: weekOffset)
+            case .mistakes:
+                MistakePatternsScreen()
             }
         }
     }

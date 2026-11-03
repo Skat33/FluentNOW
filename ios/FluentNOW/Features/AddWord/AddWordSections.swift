@@ -419,3 +419,40 @@ struct AddWordCollectionSection: View {
         }
     }
 }
+
+/// Szkielet listy podpowiedzi, dopóki indeks słownika się buduje (FEEDBACK-10 P3) — zamiast
+/// pustego formularza. Bez animacji (Ogranicz ruch), VoiceOver czyta jeden komunikat.
+struct AddWordSuggestionSkeleton: View {
+    private static let rows: [(term: String, translation: String)] = [
+        (term: "placeholder", translation: "tłumaczenie słowa"),
+        (term: "word", translation: "krótkie tłumaczenie"),
+        (term: "longer phrase", translation: "dłuższe tłumaczenie wyrażenia"),
+        (term: "term", translation: "znaczenie")
+    ]
+
+    var body: some View {
+        Section {
+            ForEach(0..<AddWordSuggestionSkeleton.rows.count, id: \.self) { (index: Int) in
+                HStack(alignment: .firstTextBaseline, spacing: Spacing.s) {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(AddWordSuggestionSkeleton.rows[index].term)
+                            .font(FluentFont.bodyEmphasized)
+                        Text(AddWordSuggestionSkeleton.rows[index].translation)
+                            .font(FluentFont.subheadline)
+                    }
+                    Spacer(minLength: Spacing.xs)
+                    Text("B1")
+                        .font(FluentFont.caption)
+                }
+                .foregroundStyle(Palette.inkSecondary)
+                .redacted(reason: .placeholder)
+                .accessibilityHidden(true)
+            }
+        } header: {
+            Text("Propozycje")
+        } footer: {
+            Text("Przygotowuję słownik…")
+                .accessibilityLabel(Text("Wczytywanie podpowiedzi ze słownika"))
+        }
+    }
+}

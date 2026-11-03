@@ -22,6 +22,10 @@ final class AppPreferences {
     var hapticsEnabled: Bool {
         didSet { write(hapticsEnabled, for: Keys.haptics) }
     }
+    /// FEEDBACK-10 P2: etap „Powiedz to zdanie na głos” po poprawnej rozsypance / luce (domyślnie wł.).
+    var pronunciationPracticeEnabled: Bool {
+        didSet { write(pronunciationPracticeEnabled, for: Keys.pronunciationPractice) }
+    }
 
     @ObservationIgnored private let defaults: UserDefaults?
 
@@ -31,6 +35,7 @@ final class AppPreferences {
         static let assistantProvider = "fluent.assistantProvider"
         static let onboarding = "fluent.hasCompletedOnboarding"
         static let haptics = "fluent.hapticsEnabled"
+        static let pronunciationPractice = "fluent.pronunciationPracticeEnabled"
     }
 
     /// - Parameter defaults: `nil` = tylko w pamięci (podgląd, testy).
@@ -42,6 +47,7 @@ final class AppPreferences {
         assistantProvider = stored?.string(forKey: Keys.assistantProvider).flatMap(AssistantProvider.init(rawValue:)) ?? .offline
         hasCompletedOnboarding = stored?.object(forKey: Keys.onboarding) as? Bool ?? false
         hapticsEnabled = stored?.object(forKey: Keys.haptics) as? Bool ?? true
+        pronunciationPracticeEnabled = stored?.object(forKey: Keys.pronunciationPractice) as? Bool ?? true
     }
 
     /// Prefiksy kluczy UserDefaults innych obszarów, czyszczone przy „Usuń wszystkie dane”
@@ -56,6 +62,7 @@ final class AppPreferences {
         assistantProvider = .offline
         hasCompletedOnboarding = false
         hapticsEnabled = true
+        pronunciationPracticeEnabled = true
         guard let defaults else { return }
         for key in defaults.dictionaryRepresentation().keys
         where Self.resettableKeyPrefixes.contains(where: { key.hasPrefix($0) }) {

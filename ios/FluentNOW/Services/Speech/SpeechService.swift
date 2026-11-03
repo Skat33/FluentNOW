@@ -30,6 +30,8 @@ final class SpeechService {
     @ObservationIgnored private let audioEnabled: Bool
     @ObservationIgnored private var pendingUtterances: Set<ObjectIdentifier> = []
     @ObservationIgnored private var interruptionObserver: NSObjectProtocol?
+    /// Nagrywanie (wymowa, wyszukiwanie głosowe) przejmuje dźwięk — mowa milknie (FEEDBACK-10 P2).
+    @ObservationIgnored private var focusObserver: NSObjectProtocol?
     @ObservationIgnored private var voicesCache: [VoiceOption]?
 
     /// Tempo normalne i wolne (skala `AVSpeechUtterance.rate`, domyślna 0,5).
@@ -60,12 +62,18 @@ final class SpeechService {
                     self?.stop()
                 }
             }
+            focusObserver = AudioFocus.observe(owner: self) { [weak self] in
+                self?.stop()
+            }
         }
     }
 
     deinit {
         if let interruptionObserver {
             NotificationCenter.default.removeObserver(interruptionObserver)
+        }
+        if let focusObserver {
+            NotificationCenter.default.removeObserver(focusObserver)
         }
     }
 
@@ -132,6 +140,8 @@ final class SpeechService {
         let segments = Self.segments(for: text)
         guard !segments.isEmpty else { return }
         guard audioEnabled else { return }
+        // Mikrofon (wymowa, wyszukiwanie) kończy nagranie i zwalnia sesję, zanim ustawimy `.playback`.
+        AudioFocus.claim(by: self)
         activateAudioSession()
         let rate = slow ? Self.slowRate : Self.normalRate
         for (index, segment) in segments.enumerated() {

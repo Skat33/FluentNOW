@@ -52,10 +52,11 @@ enum StudyStarter {
         let session = await store.compute { (full: LearnerState) -> VocabSession in
             let state: LearnerState = StudyStarter.scoped(full, to: wordIDs)
             let ready = PictureExercise.readyMeaningIDs(state: state, cached: cached)
-            if fresh {
-                return FreshStart.vocabularySession(state: state, mode: mode, minutes: minutes, collection: collection, pictureMeaningIDs: ready)
-            }
-            return SessionBuilder.makeSession(state: state, minutes: minutes, mode: mode, collection: collection, pictureMeaningIDs: ready)
+            let built: VocabSession = fresh
+                ? FreshStart.vocabularySession(state: state, mode: mode, minutes: minutes, collection: collection, pictureMeaningIDs: ready)
+                : SessionBuilder.makeSession(state: state, minutes: minutes, mode: mode, collection: collection, pictureMeaningIDs: ready)
+            // FEEDBACK-10 P1: dystraktory rozsypanki według najczęstszych błędów — ustalone na całą sesję.
+            return MistakeLog.withDecoyFocus(built, state: full)
         }
         guard !session.tasks.isEmpty else {
             if mode == .pictures && !PictureExercise.isEnabled {
@@ -79,12 +80,32 @@ enum StudyStarter {
     static func startSingleType(_ type: ExerciseType, minutes: Int, collection: String?, store: LearningStore, fresh: Bool = false) async -> Outcome {
         let now = store.now()
         let session = await store.compute { (state: LearnerState) -> VocabSession in
-            fresh
+            let built: VocabSession = fresh
                 ? FreshStart.singleTypeSession(state: state, type: type, minutes: minutes, collection: collection, now: now)
                 : SingleTypeSession.makeSession(state: state, type: type, minutes: minutes, collection: collection, now: now)
+            return MistakeLog.withDecoyFocus(built, state: state)
         }
         guard !session.tasks.isEmpty else {
             return .message(StudySingleTypeText.emptyMessage(type: type, hasWords: !store.activeWords.isEmpty, collection: collection))
+        }
+        store.update(.session) { (state: inout LearnerState) -> Void in
+            state.session = session
+        }
+        return .flow(.vocabulary)
+    }
+
+    /// „Przećwicz” w „Twoich typowych błędach” (FEEDBACK-10 P1): krótka sesja z błędów jednego
+    /// rodzaju (`kind == nil` — wszystkich), `MistakePractice`. Przerwanej sesji słownictwa nie
+    /// nadpisujemy — wtedy spokojny komunikat.
+    static func startMistakePractice(kind: MistakeKind?, minutes: Int, store: LearningStore) async -> Outcome {
+        if let paused = store.state.session, !paused.isFinished {
+            return .message("Masz przerwaną sesję słówek. Dokończ ją albo zacznij od nowa w „Ćwiczeniach”, a potem wróć do „Twoich typowych błędów”.")
+        }
+        let session = await store.compute { (state: LearnerState) -> VocabSession in
+            MistakePractice.session(state: state, kind: kind, minutes: minutes)
+        }
+        guard !session.tasks.isEmpty else {
+            return .message("Słów z tymi błędami nie ma już w Twoim słowniku (mogły zostać usunięte lub zarchiwizowane).")
         }
         store.update(.session) { (state: inout LearnerState) -> Void in
             state.session = session

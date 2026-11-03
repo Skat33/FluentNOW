@@ -177,8 +177,9 @@ public enum SentenceScramble {
     /// The board of a task. Deterministic for `seed` (session seed + task) — a resumed task shows
     /// the same tiles and decoys. `pool` — sentences of other words (`poolSentences`), used only
     /// when the sentence and the entry give too few decoys. `nil` when the sentence cannot be
-    /// scrambled.
-    public static func board(word: Word, meaning: Meaning, exampleIndex: Int, seed: String, pool: [String] = []) -> ScrambleBoard? {
+    /// scrambled. `prefer` (FEEDBACK-10 P1): the decoy kind the learner confuses most often
+    /// (`VocabSession.decoyFocus`) goes first; stored in the session, so the board stays the same.
+    public static func board(word: Word, meaning: Meaning, exampleIndex: Int, seed: String, pool: [String] = [], prefer: ScrambleDecoyKind? = nil) -> ScrambleBoard? {
         guard canBuild(meaning: meaning, exampleIndex: exampleIndex),
               let example = example(meaning: meaning, exampleIndex: exampleIndex) else { return nil }
         var answer = tokens(example.sentence)
@@ -193,6 +194,7 @@ public enum SentenceScramble {
             exampleIndex: example.index,
             answer: answer,
             pool: pool,
+            prefer: prefer,
             using: &generator
         )
         var texts: [(text: String, isDecoy: Bool)] = answer.map { (text: String) -> (text: String, isDecoy: Bool) in (text: text, isDecoy: false) }
@@ -221,7 +223,7 @@ public enum SentenceScramble {
     /// and never build another correct sentence — wrong verb forms and prepositions first (the
     /// focus expression before other words), then words from the entry's other examples, then
     /// words from `pool`.
-    static func decoys<G: RandomNumberGenerator>(word: Word, meaning: Meaning, exampleIndex: Int, answer: [String], pool: [String], using rng: inout G) -> [ScrambleDecoy] {
+    static func decoys<G: RandomNumberGenerator>(word: Word, meaning: Meaning, exampleIndex: Int, answer: [String], pool: [String], prefer: ScrambleDecoyKind? = nil, using rng: inout G) -> [ScrambleDecoy] {
         let entrySentences: [String] = word.meanings.flatMap { (other: Meaning) -> [String] in
             other.examples.enumerated().compactMap { (entry: (offset: Int, element: String)) -> String? in
                 other.id == meaning.id && entry.offset == exampleIndex ? nil : entry.element
@@ -236,6 +238,7 @@ public enum SentenceScramble {
             entrySentences: entrySentences,
             pool: pool,
             count: decoyCount(word: word, meaning: meaning, wordCount: answer.count),
+            prefer: prefer,
             using: &rng
         )
     }

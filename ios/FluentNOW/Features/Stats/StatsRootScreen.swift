@@ -78,6 +78,7 @@ private struct StatsContent: View {
 
     @ViewBuilder
     private var bottomSection: some View {
+        StatsMistakesCard(patterns: snapshot.mistakes)  // FEEDBACK-10 P1: „Twoje typowe błędy”
         StatsHardWordsCard(rows: snapshot.hardWords) {
             router.startStudy(.mistakes)
         }
