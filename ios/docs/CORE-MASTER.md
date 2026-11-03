@@ -46,7 +46,7 @@ Listy NGSL i NAWL zweryfikowano na stronie projektu (WebFetch, 2026-10-24): obie
 ## Podsumowanie
 
 - Hasła: **5367** (NGSL: 2730, NAWL: 792, tylko uzupełnienie FluentNOW: 1845).
-- Status: nowe **19**, częściowe 23, do sprawdzenia 1826, gotowe w core 3499.
+- Status: nowe **19**, częściowe 23, do sprawdzenia 1820, gotowe w core 3505.
 - Szacowane wpisy do napisania: **43**.
 
 | CEFR | A1 | A2 | B1 | B2 | C1 | C2 |
@@ -71,8 +71,8 @@ Listy NGSL i NAWL zweryfikowano na stronie projektu (WebFetch, 2026-10-24): obie
 
 | Shard | Plik | Hasła | Do napisania | Do sprawdzenia | Gotowe | Szac. wpisy | A1 | A2 | B1 | B2 | C1 | C2 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| C01 | `core/core-c01.json` | 620 | 6 | 211 | 403 | 6 | 249 | 186 | 163 | 22 | 0 | 0 |
-| C02 | `core/core-c02.json` | 850 | 3 | 394 | 453 | 3 | 146 | 176 | 345 | 175 | 8 | 0 |
+| C01 | `core/core-c01.json` | 620 | 6 | 207 | 407 | 6 | 249 | 186 | 163 | 22 | 0 | 0 |
+| C02 | `core/core-c02.json` | 850 | 3 | 392 | 455 | 3 | 146 | 176 | 345 | 175 | 8 | 0 |
 | C03 | `core/core-c03.json` | 768 | 0 | 291 | 477 | 0 | 52 | 120 | 264 | 235 | 97 | 0 |
 | C04 | `core/core-c04.json` | 865 | 4 | 407 | 454 | 4 | 37 | 206 | 358 | 151 | 111 | 2 |
 | C05 | `core/core-c05.json` | 778 | 9 | 317 | 452 | 9 | 0 | 0 | 190 | 588 | 0 | 0 |
